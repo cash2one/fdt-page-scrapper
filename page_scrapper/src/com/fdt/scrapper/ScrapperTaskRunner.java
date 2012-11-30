@@ -127,7 +127,7 @@ public class ScrapperTaskRunner {
 			//save success tasks
 			try {
 				//Construct the BufferedWriter object
-				bufferedWriter = new BufferedWriter(new FileWriter("errors_links.txt",false));
+				bufferedWriter = new BufferedWriter(new FileWriter("../errors_links.txt",false));
 				for(PageTasks tasks : taskFactory.getErrorQueue()){
 					String domainName = tasks.getDomain().getName();
 					for(int i = 0; i < tasks.getDomain().getCount(); i++){

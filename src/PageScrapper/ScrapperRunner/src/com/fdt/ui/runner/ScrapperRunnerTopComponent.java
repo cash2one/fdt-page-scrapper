@@ -47,7 +47,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
 
     public ScrapperRunnerTopComponent() {
         initComponents();
-        DOMConfigurator.configure("log4j.xml");
+        DOMConfigurator.configure("../log4j.xml");
         setName(Bundle.CTL_ScrapperRunnerTopComponent());
         setToolTipText(Bundle.HINT_ScrapperRunnerTopComponent());
 
@@ -264,7 +264,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
         }
 
         //TODO save previous results
-        String resultFileName = "success_result";
+        String resultFileName = "../success_result";
         String extension = ".csv";
         File resultFile = new File(resultFileName+extension);
         if(resultFile.exists()){
@@ -275,7 +275,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
         }
         //TODO Start scrapper
         try {
-            ScrapperTaskRunner taskRunner = new ScrapperTaskRunner(login, pass, proxyFilePath, urlsFilePath, maxThreadCount, proxyDelay, "success_result.csv");
+            ScrapperTaskRunner taskRunner = new ScrapperTaskRunner(login, pass, proxyFilePath, urlsFilePath, maxThreadCount, proxyDelay, "../success_result.csv");
             taskRunner.run();
         } catch (Throwable e) {
             log.error("Error occured during page scrap",e);

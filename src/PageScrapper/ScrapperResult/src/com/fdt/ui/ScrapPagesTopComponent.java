@@ -46,28 +46,33 @@ public final class ScrapPagesTopComponent extends TopComponent {
 
     private static final Logger log = Logger.getLogger(ScrapPagesTopComponent.class);
     private static ArrayList<PageTasks> scrappResults = new ArrayList<PageTasks>();
+    public static final String SUCCESS_FILE_NAME = "success_result.csv";
     public ScrapPagesTopComponent() {
         initComponents();
-        DOMConfigurator.configure("log4j.xml");
+        DOMConfigurator.configure("../log4j.xml");
         reload();
         setName(Bundle.CTL_FBrowserTopComponent());
         setToolTipText(Bundle.HINT_FBrowserTopComponent());
     }
     
     private void reload(){
-        ResultParser rp = new ResultParser();
-        scrappResults = rp.parseResultFile("success_result.csv");
-        TreeModel treeMdl = new FileTreeModel(scrappResults);
-        OutlineModel mdl = DefaultOutlineModel.createOutlineModel(treeMdl, new FileRowModel(), true);
-        outline1.setRootVisible(false);
-        outline1.setRenderDataProvider(new DomainRenderer());  
-        outline1.setModel(mdl);
-        
-        TreeModel treeMdl2 = new FileTreeModel(rp.parseResultFile("success_result.csv"));
-        OutlineModel mdl2 = DefaultOutlineModel.createOutlineModel(treeMdl2, new FileRowModel(), true);
-        outline2.setRootVisible(false);
-        outline2.setRenderDataProvider(new DomainRenderer());  
-        outline2.setModel(mdl2);
+        try{
+            ResultParser rp = new ResultParser();
+            scrappResults = rp.parseResultFile("../"+SUCCESS_FILE_NAME);
+            TreeModel treeMdl = new FileTreeModel(scrappResults);
+            OutlineModel mdl = DefaultOutlineModel.createOutlineModel(treeMdl, new FileRowModel(), true);
+            outline1.setRootVisible(false);
+            outline1.setRenderDataProvider(new DomainRenderer());  
+            outline1.setModel(mdl);
+
+            TreeModel treeMdl2 = new FileTreeModel(scrappResults);
+            OutlineModel mdl2 = DefaultOutlineModel.createOutlineModel(treeMdl2, new FileRowModel(), true);
+            outline2.setRootVisible(false);
+            outline2.setRenderDataProvider(new DomainRenderer());  
+            outline2.setModel(mdl2);
+        }catch(Exception e){
+            log.error("Error occured during loading result from success file",e);
+        }
     }
 
     /**
