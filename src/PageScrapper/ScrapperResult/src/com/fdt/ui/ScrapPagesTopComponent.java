@@ -58,6 +58,8 @@ public final class ScrapPagesTopComponent extends TopComponent {
     private void reload(){
         try{
             ResultParser rp = new ResultParser();
+            String current = new java.io.File( "." ).getCanonicalPath();
+            System.out.println("Current dir:"+current);
             scrappResults = rp.parseResultFile("../"+SUCCESS_FILE_NAME);
             TreeModel treeMdl = new FileTreeModel(scrappResults);
             OutlineModel mdl = DefaultOutlineModel.createOutlineModel(treeMdl, new FileRowModel(), true);

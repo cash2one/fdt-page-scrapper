@@ -106,7 +106,7 @@ public class ResultParser {
 					int alexaIndex =  Integer.valueOf(task.getTasks().get(0).getResult());
 					int googleAll =  Integer.valueOf(task.getTasks().get(0).getResult());
 					int googleWeek =  Integer.valueOf(task.getTasks().get(0).getResult());
-					if(alexaIndex <= filter.getMaxAlexaRank() && 
+					if(alexaIndex <= filter.getMaxAlexaRank() && alexaIndex > 0 &&
 							googleAll >= filter.getMinAllIndex() &&
 							googleWeek >= filter.getMinWeekIndex()){
 						filtered.add(task);
