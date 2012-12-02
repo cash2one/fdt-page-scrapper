@@ -6,7 +6,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import org.apache.log4j.Logger;
+
 import com.fdt.scrapper.Domain;
+import com.fdt.scrapper.ScrapperTaskRunner;
 import com.fdt.scrapper.task.AlexaTask;
 import com.fdt.scrapper.task.GoogleAllTimeTask;
 import com.fdt.scrapper.task.GoogleWeekTask;
@@ -14,6 +17,8 @@ import com.fdt.scrapper.task.PageTasks;
 import com.fdt.scrapper.task.Task;
 
 public class ResultParser {
+	
+	private static final Logger log = Logger.getLogger(ResultParser.class);
 
 	public static void main(String[] args){
 		ResultParser rp = new ResultParser();
@@ -40,9 +45,9 @@ public class ResultParser {
 				line = bufferedReader.readLine();
 			}
 		} catch (FileNotFoundException ex) {
-			ex.printStackTrace();
+			log.error("Error occured during parsing results",ex);
 		} catch (IOException ex) {
-			ex.printStackTrace();
+			log.error("Error occured during parsing results",ex);
 		} finally {
 			//Close the BufferedWriter
 			try {
@@ -50,7 +55,7 @@ public class ResultParser {
 					bufferedReader.close();
 				}
 			} catch (IOException ex) {
-				ex.printStackTrace();
+				log.error("Error occured during closing input streams during parsing results",ex);
 			}
 		}
 		return tasksList;

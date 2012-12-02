@@ -222,7 +222,7 @@ public class TaskFactory {
 		return resultQueue;
 	}
 
-	public int getRunThreadsCount() {
+	public synchronized int getRunThreadsCount() {
 		return runThreadsCount;
 	}
 }

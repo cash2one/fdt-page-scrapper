@@ -80,6 +80,11 @@ public class ScrapperTaskRunner {
 				if(null != tasks){
 					newThread = new ScrapperThread(tasks, taskFactory, proxyFactory);
 					newThread.start();
+					try {
+						newThread.join();
+					} catch (InterruptedException e) {
+						log.error("Error occured during ");
+					}
 				}
 				else{
 					try {
@@ -90,28 +95,23 @@ public class ScrapperTaskRunner {
 				}
 			}
 
-			try {
-				if(newThread != null && newThread.isAlive())
-					newThread.join();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-
 			BufferedWriter bufferedWriter = null;
 
 			//save success tasks
 			try {
+				log.debug("Starting saving success results...");
 				//Construct the BufferedWriter object
 				bufferedWriter = new BufferedWriter(new FileWriter(resultFile,false));
 				for(PageTasks tasks : taskFactory.getResultQueue()){
 					bufferedWriter.write(tasks.toCsv());
 					bufferedWriter.newLine();
 				}
+				log.debug("Success results was saved successfully.");
 
 			} catch (FileNotFoundException ex) {
-				ex.printStackTrace();
+				log.error("Error occured during saving sucess result",ex);
 			} catch (IOException ex) {
-				ex.printStackTrace();
+				log.error("Error occured during saving sucess result",ex);
 			} finally {
 				//Close the BufferedWriter
 				try {
@@ -120,13 +120,14 @@ public class ScrapperTaskRunner {
 						bufferedWriter.close();
 					}
 				} catch (IOException ex) {
-					ex.printStackTrace();
+					log.error("Error occured during closing output streams during saving success results",ex);
 				}
 			}
 
 			//save success tasks
 			try {
 				//Construct the BufferedWriter object
+				log.debug("Starting saving error results...");
 				bufferedWriter = new BufferedWriter(new FileWriter("../errors_links.txt",false));
 				for(PageTasks tasks : taskFactory.getErrorQueue()){
 					String domainName = tasks.getDomain().getName();
@@ -142,12 +143,12 @@ public class ScrapperTaskRunner {
 							bufferedWriter.newLine();
 						}
 					}
-
 				}
+				log.debug("Error results was saved successfully.");
 			} catch (FileNotFoundException ex) {
-				ex.printStackTrace();
+				log.error("Error occured during saving error results",ex);
 			} catch (IOException ex) {
-				ex.printStackTrace();
+				log.error("Error occured during saving error results",ex);
 			} finally {
 				//Close the BufferedWriter
 				try {
@@ -156,7 +157,7 @@ public class ScrapperTaskRunner {
 						bufferedWriter.close();
 					}
 				} catch (IOException ex) {
-					ex.printStackTrace();
+					log.error("Error occured during closing output streams during saving error results",ex);
 				}
 			}
 		}
