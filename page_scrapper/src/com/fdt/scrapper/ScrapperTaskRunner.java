@@ -33,6 +33,8 @@ public class ScrapperTaskRunner {
 	private long proxyDelay;
 	private String resultFile;
 
+	private ArrayList<Thread> threads = new ArrayList<Thread>();
+
 	public ScrapperTaskRunner(final String login, final char[] pass, String proxyFilePath, String urlsFilePath, int maxThreadCount, long proxyDelay, String resultFile){
 		this.proxyFilePath = proxyFilePath;
 		this.urlsFilePath = urlsFilePath;
@@ -80,17 +82,24 @@ public class ScrapperTaskRunner {
 				if(null != tasks){
 					newThread = new ScrapperThread(tasks, taskFactory, proxyFactory);
 					newThread.start();
-					try {
-						newThread.join();
-					} catch (InterruptedException e) {
-						log.error("Error occured during ");
-					}
+					threads.add(newThread);
+
 				}
 				else{
 					try {
 						this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
 					} catch (InterruptedException e) {
 						log.error("InterruptedException occured during RequestRunner process: " + e.getMessage());
+					}
+				}
+			}
+
+			for(Thread thread : threads){
+				if(thread != null && newThread.isAlive()){
+					try {
+						thread.join();
+					} catch (InterruptedException e) {
+						log.error("Error occured during ");
 					}
 				}
 			}
