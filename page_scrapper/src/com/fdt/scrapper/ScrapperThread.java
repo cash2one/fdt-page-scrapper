@@ -38,25 +38,29 @@ public class ScrapperThread extends Thread{
 					try {
 						if(task.isResultEmpty()){
 							proxyConnector = proxyFactory.getProxyConnector();
+							log.debug("Free proxy count: " + (proxyFactory.getFreeProxyCount()-1));
 							log.debug("Task (" + task.toString() +") is using proxy connection: " +proxyConnector.getProxyKey());
 							Proxy proxy = proxyConnector.getConnect();
 							PageScrapper ps;
 							ps = new PageScrapper(task, proxy);
 							task.setResult(ps.extractResult());
+							taskFactory.putTaskInSuccessQueue(tasks);
 						}
+						
 					}
 					catch (Exception e) {
-						taskReturned = taskFactory.putRequest(tasks);
+						taskFactory.reprocessingTask(tasks);
 						log.error("Error occured during process task: " + task.toString(), e);
 						break;
 					}finally{
+					    if(proxyConnector != null){
 						proxyFactory.releaseProxy(proxyConnector);
+						proxyConnector = null;
+					    }
 					}
 				}
 			} finally {
-				if(!taskReturned){
-					taskFactory.putTaskInResultQueue(tasks);
-				}
+
 				taskFactory.decRunThreadsCount(tasks);
 			}
 		}

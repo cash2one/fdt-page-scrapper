@@ -10,7 +10,6 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URL;
-import java.net.URLConnection;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -85,7 +84,7 @@ public class PageScrapper {
 		DocumentBuilder db = dbf.newDocumentBuilder();
 		//parse using builder to get DOM representation of the XML file
 		URL url = new URL(task.getUrlToScrap());
-		URLConnection conn =  url.openConnection(proxy);
+		HttpURLConnection conn =  (HttpURLConnection)url.openConnection(proxy);
 		InputStream is = conn.getInputStream();
 
 		Document dom = db.parse(is);

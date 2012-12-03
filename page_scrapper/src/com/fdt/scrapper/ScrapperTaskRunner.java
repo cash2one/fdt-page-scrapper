@@ -1,22 +1,17 @@
 package com.fdt.scrapper;
 
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
-import java.text.MessageFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import org.apache.log4j.Logger;
 
-import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.PageTasks;
-import com.fdt.scrapper.task.Task;
 import com.fdt.scrapper.util.ResultParser;
 
 /**
@@ -25,7 +20,7 @@ import com.fdt.scrapper.util.ResultParser;
 public class ScrapperTaskRunner {
 	private static final Logger log = Logger.getLogger(ScrapperTaskRunner.class);
 
-	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 100L;
+	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
 
 	private String proxyFilePath;
 	private String urlsFilePath;
@@ -33,7 +28,7 @@ public class ScrapperTaskRunner {
 	private long proxyDelay;
 	private String resultFile;
 
-	private ArrayList<Thread> threads = new ArrayList<Thread>();
+	//private ArrayList<Thread> threads = new ArrayList<Thread>();
 
 	public ScrapperTaskRunner(final String login, final char[] pass, String proxyFilePath, String urlsFilePath, int maxThreadCount, long proxyDelay, String resultFile){
 		this.proxyFilePath = proxyFilePath;
@@ -76,33 +71,39 @@ public class ScrapperTaskRunner {
 			proxyFactory.init(proxyFilePath);
 
 			ScrapperThread newThread = null;
+			log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
 			while(!taskFactory.isTaskFactoryEmpty() || taskFactory.runThreadsCount > 0){
 				log.debug("Try to get request from RequestFactory queue.");
 				PageTasks tasks = taskFactory.getTask();
 				if(null != tasks){
+				    	log.debug("Pending tasts: " + taskFactory.getTaskQueue().size()+ ". Success tasks: "+taskFactory.getResultQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
 					newThread = new ScrapperThread(tasks, taskFactory, proxyFactory);
 					newThread.start();
-					threads.add(newThread);
+					//threads.add(newThread);
 
 				}
 				else{
 					try {
 						this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
 					} catch (InterruptedException e) {
-						log.error("InterruptedException occured during RequestRunner process: " + e.getMessage());
+						log.error("InterruptedException occured during RequestRunner process: ",e);
 					}
 				}
 			}
+			
+			log.debug("Task factory is empty: "+taskFactory.isTaskFactoryEmpty()+". Current working threads count is " + taskFactory.runThreadsCount);
+			log.debug("Success tasks: "+taskFactory.getResultQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
 
-			for(Thread thread : threads){
+			/*for(Thread thread : threads){
 				if(thread != null && newThread.isAlive()){
 					try {
 						thread.join();
+						log.debug("Run join method for next thread: " + thread.getName());
 					} catch (InterruptedException e) {
-						log.error("Error occured during ");
+						log.error("Error occured during join method",e);
 					}
 				}
-			}
+			}*/
 
 			BufferedWriter bufferedWriter = null;
 

@@ -55,7 +55,7 @@ public final class ScrapPagesTopComponent extends TopComponent {
         setToolTipText(Bundle.HINT_FBrowserTopComponent());
     }
     
-    private void reload(){
+    private synchronized void reload(){
         try{
             ResultParser rp = new ResultParser();
             String current = new java.io.File( "." ).getCanonicalPath();

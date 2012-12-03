@@ -280,6 +280,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
         } catch (Throwable e) {
             log.error("Error occured during page scrap",e);
         }
+
     }//GEN-LAST:event_jButton1ActionPerformed
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

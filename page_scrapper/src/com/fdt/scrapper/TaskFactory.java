@@ -24,8 +24,11 @@ public class TaskFactory {
 	}
 
 	public static Integer MAX_THREAD_COUNT = 100;
-	public static Integer MAX_ATTEMP_COUNT = 10;
+	public static Integer MAX_ATTEMP_COUNT = 50;
 	protected int runThreadsCount = 0;
+	
+	private static final String pattern = "(http[s]?://)?(www[\\d]{0,1}\\.)?([^/]*)/(.*)";
+	private static final String ipPattern="[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}";
 
 	/**
 	 * HashMap<process_program,queue_for_process_program>
@@ -79,7 +82,7 @@ public class TaskFactory {
 	 * 
 	 * @param request
 	 */
-	public synchronized boolean putRequest(PageTasks task){
+	public synchronized boolean reprocessingTask(PageTasks task){
 		synchronized (this) {
 			if(task.getAttempsCount() < MAX_ATTEMP_COUNT){
 				task.incAttempsCount();
@@ -100,7 +103,7 @@ public class TaskFactory {
 	 * 
 	 * @param request
 	 */
-	public synchronized void putTaskInResultQueue(PageTasks result){
+	public synchronized void putTaskInSuccessQueue(PageTasks result){
 		synchronized (this) {
 			resultQueue.add(result);
 		}
@@ -126,10 +129,10 @@ public class TaskFactory {
 		return taskQueue.isEmpty();
 	}
 
-	public synchronized HashMap<String, Domain> loadTaskQueue(String pathToTaskList) {
+	public void loadTaskQueue(String pathToTaskList) {
 		HashMap<String, Domain> domainList = loadDomainsList(pathToTaskList);
 		fillTaskQueue(domainList);
-		return domainList;
+		domainList.clear();
 	}
 
 	private synchronized HashMap<String, Domain> loadDomainsList(String cfgFilePath) {
@@ -138,17 +141,15 @@ public class TaskFactory {
 			FileReader fr = null;
 			BufferedReader br = null;
 			Domain domain = null;
+			String line = null;
 			try {
 				fr = new FileReader(new File(cfgFilePath));
 				br = new BufferedReader(fr);
 
-				String pattern = "(http[s]?://)?(www[\\d]{0,1}\\.)?([^/]*)/(.*)";
-				String ipPattern="[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}";
-
 				Pattern r = Pattern.compile(pattern);
 				Pattern ip = Pattern.compile(ipPattern);
 
-				String line = br.readLine();
+				line = br.readLine();
 				while(line != null){
 					String mainDomain = null;
 					String subDomain = null;

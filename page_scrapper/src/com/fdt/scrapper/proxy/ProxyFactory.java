@@ -104,4 +104,8 @@ public class ProxyFactory
 		proxyList.add(proxyConnector);
 		notifyAll();
 	}
+	
+	public int getFreeProxyCount(){
+	    return proxyList.size();
+	}
 }
