@@ -30,10 +30,10 @@ public class ScrapperThread extends Thread{
 
 	@Override
 	public void run() {
-		boolean taskReturned = false;
 		ProxyConnector proxyConnector = null;
 		synchronized (this) {
 			try{
+			    boolean errorExist = false;
 				for(Task task : tasks.getTasks()){
 					try {
 						if(task.isResultEmpty()){
@@ -44,11 +44,11 @@ public class ScrapperThread extends Thread{
 							PageScrapper ps;
 							ps = new PageScrapper(task, proxy);
 							task.setResult(ps.extractResult());
-							taskFactory.putTaskInSuccessQueue(tasks);
 						}
 						
 					}
 					catch (Exception e) {
+					    	errorExist = true;
 						taskFactory.reprocessingTask(tasks);
 						log.error("Error occured during process task: " + task.toString(), e);
 						break;
@@ -58,6 +58,9 @@ public class ScrapperThread extends Thread{
 						proxyConnector = null;
 					    }
 					}
+				}
+				if(!errorExist){
+				    	taskFactory.putTaskInSuccessQueue(tasks);
 				}
 			} finally {
 
