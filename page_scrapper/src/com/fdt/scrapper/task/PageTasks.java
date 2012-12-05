@@ -40,7 +40,7 @@ public class PageTasks
 	}
 
 	public String toString(){
-		return domain.getName();
+		return "http://" + domain.getName() + "/";
 		/*StringBuilder sb = new StringBuilder();
 		sb.append("---Tasks for URL: ").append(domain.getName()).append("\r\n");
 		for(Task task:tasks){
