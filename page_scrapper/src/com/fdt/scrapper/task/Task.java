@@ -4,7 +4,8 @@ public abstract class Task{
 	private String url = "";
 	private String xPath = "";
 	private boolean xmlParce = false;
-	protected String result = "";
+	//empty result
+	protected String result = null;
 
 	public String getResult() {
 		return result;
@@ -55,12 +56,12 @@ public abstract class Task{
 			this.result = result;
 		}
 		else{
-			this.result = "-1";
+			this.result = null;
 		}
 	}
 
 	public boolean isResultEmpty(){
-		if(result == null || "".equals(result)){
+		if(result == null){
 			return true;
 		}
 		return false;

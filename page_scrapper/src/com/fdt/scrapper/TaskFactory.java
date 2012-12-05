@@ -58,7 +58,7 @@ public class TaskFactory {
 	public synchronized void decRunThreadsCount(PageTasks tasks) {
 		runThreadsCount--;
 		log.debug("DEC thread: " + runThreadsCount);
-		this.notify();
+		this.notifyAll();
 	}
 
 	/**

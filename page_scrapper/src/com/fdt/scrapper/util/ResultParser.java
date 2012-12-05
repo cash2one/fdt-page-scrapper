@@ -108,9 +108,9 @@ public class ResultParser {
 		}else{
 			for(PageTasks task:tasks){
 				if(task.getDomain().getCount() >= filter.getMinDomainCount()){
-					int alexaIndex =  Integer.valueOf(task.getTasks().get(0).getResult());
-					int googleAll =  Integer.valueOf(task.getTasks().get(0).getResult());
-					int googleWeek =  Integer.valueOf(task.getTasks().get(0).getResult());
+					int alexaIndex =  task.getTasks().get(0).getResult()==null?-1:Integer.valueOf(task.getTasks().get(0).getResult());
+					int googleAll =  task.getTasks().get(0).getResult()==null?-1:Integer.valueOf(task.getTasks().get(1).getResult());
+					int googleWeek =  task.getTasks().get(0).getResult()==null?-1:Integer.valueOf(task.getTasks().get(2).getResult());
 					if(alexaIndex <= filter.getMaxAlexaRank() && alexaIndex > 0 &&
 							googleAll >= filter.getMinAllIndex() &&
 							googleWeek >= filter.getMinWeekIndex()){
