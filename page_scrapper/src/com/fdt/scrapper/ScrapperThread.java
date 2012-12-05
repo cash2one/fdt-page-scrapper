@@ -63,7 +63,6 @@ public class ScrapperThread extends Thread{
 				    	taskFactory.putTaskInSuccessQueue(tasks);
 				}
 			} finally {
-
 				taskFactory.decRunThreadsCount(tasks);
 			}
 		}

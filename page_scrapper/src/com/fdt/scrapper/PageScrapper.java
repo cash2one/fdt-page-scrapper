@@ -61,6 +61,7 @@ public class PageScrapper {
 		InputStream is = conn.getInputStream();
 		org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", task.getUrlToScrap());
 		is.close();
+		conn.disconnect();
 		return page;
 	}
 
@@ -89,6 +90,7 @@ public class PageScrapper {
 
 		Document dom = db.parse(is);
 		is.close();
+		conn.disconnect();
 		XPath xpathInst = XPathFactory.newInstance().newXPath();
 		// XPath Query for showing all nodes value
 		XPathExpression expr = xpathInst.compile(task.getxPath());
@@ -98,7 +100,7 @@ public class PageScrapper {
 		if(nodes.getLength() > 0){
 			return nodes.item(0).getNodeValue();
 		}else{
-			return null;
+			return "";
 		}
 	}
 }

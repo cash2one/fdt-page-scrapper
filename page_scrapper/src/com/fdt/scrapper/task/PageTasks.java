@@ -40,12 +40,13 @@ public class PageTasks
 	}
 
 	public String toString(){
-		StringBuilder sb = new StringBuilder();
+		return domain.getName();
+		/*StringBuilder sb = new StringBuilder();
 		sb.append("---Tasks for URL: ").append(domain.getName()).append("\r\n");
 		for(Task task:tasks){
 			sb.append(task.toString()).append("\r\n");
 		}
-		return sb.toString();
+		return sb.toString();*/
 	}
 
 	public int getAttempsCount() {
