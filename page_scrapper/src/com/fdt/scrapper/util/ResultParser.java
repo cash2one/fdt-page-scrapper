@@ -108,17 +108,19 @@ public class ResultParser {
 		}else{
 			for(PageTasks task:tasks){
 				if(task.getDomain().getCount() >= filter.getMinDomainCount()){
-					int alexaIndex =  task.getTasks().get(0).getResult()==null?-1:Integer.valueOf(task.getTasks().get(0).getResult());
-					int googleAll =  task.getTasks().get(0).getResult()==null?-1:Integer.valueOf(task.getTasks().get(1).getResult());
-					int googleWeek =  task.getTasks().get(0).getResult()==null?-1:Integer.valueOf(task.getTasks().get(2).getResult());
+					long alexaIndex =  task.getTasks().get(0).getResult()==null?-1:Long.valueOf(task.getTasks().get(0).getResult());
+					long googleAll =  task.getTasks().get(1).getResult()==null?-1:Long.valueOf(task.getTasks().get(1).getResult());
+					long googleWeek =  task.getTasks().get(2).getResult()==null?-1:Long.valueOf(task.getTasks().get(2).getResult());
 					if(alexaIndex <= filter.getMaxAlexaRank() && alexaIndex > 0 &&
 							googleAll >= filter.getMinAllIndex() &&
 							googleWeek >= filter.getMinWeekIndex()){
+						log.debug("Task filtered: " + task);
 						filtered.add(task);
 					}
 				}
 			}
 		}
+		log.debug("Total task ["+tasks.size()+"]; filtered task["+filtered.size()+"]");
 		return filtered;
 	}
 

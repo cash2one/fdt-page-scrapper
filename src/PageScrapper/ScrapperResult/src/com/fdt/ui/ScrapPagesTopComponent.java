@@ -285,7 +285,6 @@ public final class ScrapPagesTopComponent extends TopComponent {
     }//GEN-LAST:event_jPanel1ComponentResized
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ResultParser rp = new ResultParser();
         TreeModel treeMdl = new FileTreeModel(scrappResults);
         OutlineModel mdl = DefaultOutlineModel.createOutlineModel(treeMdl, new FileRowModel(), true);
         outline2.setRootVisible(false);
@@ -333,11 +332,22 @@ public final class ScrapPagesTopComponent extends TopComponent {
             minWeekIndex = Integer.MIN_VALUE;
         }
         
+        log.debug("Apply filter:");
+        log.debug("minDomainCount: " + minDomainCount);
+        log.debug("maxAlexaRank: " + maxAlexaRank);
+        log.debug("minAllIndex: " + minAllIndex);
+        log.debug("minWeekIndex: " + minWeekIndex);
+        
+        try{
         TreeModel treeMdl = new FileTreeModel(rp.filterResults(scrappResults, new ResultParserFilter(minDomainCount, maxAlexaRank, minAllIndex, minWeekIndex)));
         OutlineModel mdl = DefaultOutlineModel.createOutlineModel(treeMdl, new FileRowModel(), true);
+        outline2.removeAll();
         outline2.setRootVisible(false);
         outline2.setRenderDataProvider(new DomainRenderer());  
         outline2.setModel(mdl);
+        }catch(Throwable e){
+            log.error("Error occured during filtering tasks",e);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed

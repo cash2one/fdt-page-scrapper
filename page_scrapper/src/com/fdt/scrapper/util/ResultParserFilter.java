@@ -2,20 +2,20 @@ package com.fdt.scrapper.util;
 
 public class ResultParserFilter
 {
-    private int minDomainCount = Integer.MIN_VALUE;
-    private int maxAlexaRank = Integer.MAX_VALUE;
-    private int minAllIndex = Integer.MIN_VALUE;
-    private int minWeekIndex = Integer.MIN_VALUE;
+    private long minDomainCount = Long.MIN_VALUE;
+    private long maxAlexaRank = Long.MAX_VALUE;
+    private long minAllIndex = Long.MIN_VALUE;
+    private long minWeekIndex = Long.MIN_VALUE;
 
     public ResultParserFilter() {
 	super();
-	minDomainCount = Integer.MIN_VALUE;
-	maxAlexaRank = Integer.MAX_VALUE;
-	minAllIndex = Integer.MIN_VALUE;
-	minWeekIndex = Integer.MIN_VALUE;
+	minDomainCount = Long.MIN_VALUE;
+	maxAlexaRank = Long.MAX_VALUE;
+	minAllIndex = Long.MIN_VALUE;
+	minWeekIndex = Long.MIN_VALUE;
     }
 
-    public ResultParserFilter(int minDomainCount, int maxAlexaRank, int minAllIndex, int minWeekIndex) {
+    public ResultParserFilter(long minDomainCount, long maxAlexaRank, long minAllIndex, long minWeekIndex) {
 	super();
 	this.minDomainCount = minDomainCount;
 	this.maxAlexaRank = maxAlexaRank;
@@ -23,7 +23,7 @@ public class ResultParserFilter
 	this.minWeekIndex = minWeekIndex;
     }
 
-    public int getMinDomainCount() {
+    public long getMinDomainCount() {
 	return minDomainCount;
     }
 
@@ -31,7 +31,7 @@ public class ResultParserFilter
 	this.minDomainCount = minDomainCount;
     }
 
-    public int getMaxAlexaRank() {
+    public long getMaxAlexaRank() {
 	return maxAlexaRank;
     }
 
@@ -39,7 +39,7 @@ public class ResultParserFilter
 	this.maxAlexaRank = maxAlexaRank;
     }
 
-    public int getMinAllIndex() {
+    public long getMinAllIndex() {
 	return minAllIndex;
     }
 
@@ -47,7 +47,7 @@ public class ResultParserFilter
 	this.minAllIndex = minAllIndex;
     }
 
-    public int getMinWeekIndex() {
+    public long getMinWeekIndex() {
 	return minWeekIndex;
     }
 
@@ -56,10 +56,10 @@ public class ResultParserFilter
     }
 
     public boolean filterExist() {
-	if(minDomainCount == Integer.MIN_VALUE &&
-		maxAlexaRank == Integer.MAX_VALUE &&
-		minAllIndex == Integer.MIN_VALUE &&
-		minWeekIndex == Integer.MIN_VALUE){
+	if(minDomainCount == Long.MIN_VALUE &&
+		maxAlexaRank == Long.MAX_VALUE &&
+		minAllIndex == Long.MIN_VALUE &&
+		minWeekIndex == Long.MIN_VALUE){
 	    return false;
 	}
 	return true;
