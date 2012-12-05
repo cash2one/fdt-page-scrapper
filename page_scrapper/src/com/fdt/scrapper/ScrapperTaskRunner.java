@@ -142,7 +142,7 @@ public class ScrapperTaskRunner {
 				for(PageTasks tasks : taskFactory.getErrorQueue()){
 					String domainName = tasks.getDomain().getName();
 					for(int i = 0; i < tasks.getDomain().getCount(); i++){
-						bufferedWriter.write(domainName);
+						bufferedWriter.write("http://" + domainName + "/");
 						bufferedWriter.newLine();
 					}
 					domainName = "." + domainName;
