@@ -59,12 +59,12 @@ public class NewsTask{
 		this.password = password;
 	}
 
-	public String getNewsTitle() {
+	public String getKeyWords() {
 		return keyWords;
 	}
 
-	public void setNewsTitle(String newsTitle) {
-		this.keyWords = newsTitle;
+	public void setKeyWords(String keyWords) {
+		this.keyWords = keyWords;
 	}
 
 	public String getNewsContent() {

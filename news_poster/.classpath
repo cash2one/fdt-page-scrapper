@@ -5,5 +5,9 @@
 	<classpathentry kind="var" path="JAVA_LIB/jsoup-1.7.1-sources.jar"/>
 	<classpathentry kind="var" path="JAVA_LIB/jsoup-1.7.1.jar"/>
 	<classpathentry kind="var" path="JAVA_LIB/log4j-1.2.15.jar"/>
+	<classpathentry kind="var" path="JAVA_LIB"/>
+	<classpathentry kind="var" path="JAVA_LIB/commons-logging-1.1.jar"/>
+	<classpathentry kind="var" path="JAVA_LIB/httpclient-4.1.2.jar"/>
+	<classpathentry kind="var" path="JAVA_LIB/httpcore-4.1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

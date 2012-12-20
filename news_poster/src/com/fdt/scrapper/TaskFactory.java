@@ -6,9 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
 
@@ -26,9 +23,6 @@ public class TaskFactory {
 	public static Integer MAX_THREAD_COUNT = 100;
 	public static Integer MAX_ATTEMP_COUNT = 50;
 	protected int runThreadsCount = 0;
-	
-	private static final String pattern = "(http[s]?://)?(www[\\d]{0,1}\\.)?([^/]*)/(.*)";
-	private static final String ipPattern="[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}";
 
 	/**
 	 * HashMap<process_program,queue_for_process_program>

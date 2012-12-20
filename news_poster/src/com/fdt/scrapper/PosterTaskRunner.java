@@ -49,7 +49,7 @@ public class PosterTaskRunner {
 
 	public static void main(String[] args) {
 		try{
-			PosterTaskRunner taskRunner = new PosterTaskRunner("VIPUAoVrs68fdmb", "TC3aH96sAR".toCharArray(),"proxy.txt","links_small.txt", 1, 5000L, "success_result.csv","udryfgtsukry@yopmail.com","lol200");
+			PosterTaskRunner taskRunner = new PosterTaskRunner("VIPUAoVrs68fdmb", "TC3aH96sAR".toCharArray(),"proxy.txt","keywords.txt", 1, 5000L, "success_result.csv","udryfgtsukry@yopmail.com","lol200");
 			taskRunner.run();
 
 			/*ResultParser rp = new ResultParser();
