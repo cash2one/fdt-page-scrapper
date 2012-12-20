@@ -17,7 +17,6 @@ import java.util.Random;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xpath.XPathExpressionException;
 
-import org.apache.http.Header;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
@@ -32,6 +31,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.xml.sax.SAXException;
 
+import com.fdt.scrapper.task.Constants;
 import com.fdt.scrapper.task.NewsTask;
 import com.fdt.scrapper.task.Snippet;
 
@@ -41,23 +41,23 @@ import com.fdt.scrapper.task.Snippet;
  */
 public class NewsPoster {
     private static final Logger log = Logger.getLogger(NewsPoster.class);
-    
+
     private int MIN_SNIPPET_COUNT=3;
     private int MAX_SNIPPET_COUNT=10;
-    
-    private String cookie = "";
-    
+
     Random rnd = new Random();
 
-    NewsTask task;
-    Proxy proxy = null;
+    private NewsTask task = null;
+    private Proxy proxy = null;
+    private Account account = null;
 
-    public NewsPoster(NewsTask task, Proxy proxy) {
+    public NewsPoster(NewsTask task, Proxy proxy, Account account) {
 	this.task = task;
 	this.proxy = proxy;
+	this.account = account;
     }
 
-    public String postNews() throws MalformedURLException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
+    public String executePostNews() throws MalformedURLException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
 	//get snippets
 	ArrayList<Snippet> snippets = parseHtml(task.getKeyWords());
 	//TODO calculate snippets count
@@ -74,44 +74,32 @@ public class NewsPoster {
 	}
 	log.debug("Keywords: task.getKeyWords(). Snippet count: " + snipCount);
 	//TODO post news
-	postNews(snippets);
-	return "";
+	return postNews(snippets);
     }
-    
-    private void postNews(ArrayList<Snippet> snippets){
+
+    private String postNews(ArrayList<Snippet> snippets){
 	HttpClient httpclient = new DefaultHttpClient();
-	HttpPost httppost = new HttpPost("http://subscribe.ru/MEMBERLOGIN");
+	HttpPost httppost = new HttpPost(Constants.MAIN_ULR + Constants.POST_NEWS_ULR);
 
 	try {
-	    // Add your data
-	    List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-	    nameValuePairs.add(new BasicNameValuePair("destination", "/"));
-	    nameValuePairs.add(new BasicNameValuePair("credential_0", "udryfgtsukry@yopmail.com"));
-	    nameValuePairs.add(new BasicNameValuePair("credential_1", "lol200"));
-	    httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-
-	    // Execute HTTP Post Request
-	    HttpResponse response = httpclient.execute(httppost);
-	    cookie = response.getFirstHeader("Set-Cookie").getValue();
-	    System.out.println(cookie);
-	    
 	    //post news
-	    httppost = new HttpPost("http://subscribe.ru/member/group/write/");
-	    httppost.setHeader("Cookie", cookie);
+	    List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+	    httppost.setHeader("Cookie", account.getCookie());
 	    nameValuePairs.clear();
-	    nameValuePairs.add(new BasicNameValuePair("groups", "12215"));
+	    nameValuePairs.add(new BasicNameValuePair("groups", account.getGroupId()));
 	    nameValuePairs.add(new BasicNameValuePair("interests", ""));
-	    nameValuePairs.add(new BasicNameValuePair("subject", "He 3"));
+	    nameValuePairs.add(new BasicNameValuePair("subject", task.getKeyWords()));
+	    //TODO Insert news content here
 	    nameValuePairs.add(new BasicNameValuePair("body", "<p>He 3</p>"));
 	    nameValuePairs.add(new BasicNameValuePair("file", ""));
 	    httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-	    
+
 	    httpclient = new DefaultHttpClient();
-	    response = httpclient.execute(httppost);
-	    org.jsoup.nodes.Document page = Jsoup.parse(response.getEntity().getContent(), "UTF-8", "http://subscribe.ru/member/group/write/");
+	    HttpResponse response = httpclient.execute(httppost);
+	    org.jsoup.nodes.Document page = Jsoup.parse(response.getEntity().getContent(), "UTF-8", Constants.MAIN_ULR + Constants.POST_NEWS_ULR);
 	    Elements elements = page.select("a[href]");
 	    System.out.println(elements.attr("href"));
-	    
+	    return elements.attr("href");
 	} catch (ClientProtocolException e) {
 	    // TODO Auto-generated catch block
 	    e.printStackTrace();
@@ -119,6 +107,8 @@ public class NewsPoster {
 	    // TODO Auto-generated catch block
 	    e.printStackTrace();
 	}
+
+	return "";
     }
 
     private org.jsoup.nodes.Document getUrlContent(String keyWords) throws MalformedURLException, IOException {

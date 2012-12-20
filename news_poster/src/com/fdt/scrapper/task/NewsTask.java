@@ -1,91 +1,74 @@
 package com.fdt.scrapper.task;
 
+import com.fdt.scrapper.Account;
+
 public class NewsTask{
-	private String login = "";
-	private String password = "";
-	private String keyWords = "";
-	private String newsContent = "";
-	
-	private int attempsCount = 1;
-	//empty result
-	protected String result = null;
-	
-	public NewsTask(String login, String password, String keyWords, String newsContent) {
-		super();
-		this.login = login;
-		this.password = password;
-		this.keyWords = keyWords;
-		this.newsContent = newsContent;
-	}
+    private String keyWords = "";
+    private String newsContent = "";
 
-	public String getResult() {
-		return result;
-	}
+    private int attempsCount = 1;
+    //empty result
+    protected String result = null;
 
-	//Parse result there
-	public void setResult(String result){
-		this.result = result;
-	}
+    public NewsTask(String keyWords, String newsContent) {
+	super();
+	this.keyWords = keyWords;
+	this.newsContent = newsContent;
+    }
 
-	public  void setResultAsIs(String result){
-		if(result != null){
-			this.result = result;
-		}
-		else{
-			this.result = null;
-		}
-	}
+    public String getResult() {
+	return result;
+    }
 
-	public boolean isResultEmpty(){
-		if(result == null){
-			return true;
-		}
-		return false;
-	}
+    //Parse result there
+    public void setResult(String result){
+	this.result = result;
+    }
 
-	public String getLogin() {
-		return login;
+    public  void setResultAsIs(String result){
+	if(result != null){
+	    this.result = result;
 	}
+	else{
+	    this.result = null;
+	}
+    }
 
-	public void setLogin(String login) {
-		this.login = login;
-	}
+    public String getKeyWords() {
+	return keyWords;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public void setKeyWords(String keyWords) {
+	this.keyWords = keyWords;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getNewsContent() {
+	return newsContent;
+    }
 
-	public String getKeyWords() {
-		return keyWords;
-	}
+    public void setNewsContent(String newsContent) {
+	this.newsContent = newsContent;
+    }
 
-	public void setKeyWords(String keyWords) {
-		this.keyWords = keyWords;
-	}
+    public int getAttempsCount() {
+	return attempsCount;
+    }
 
-	public String getNewsContent() {
-		return newsContent;
-	}
+    public void incAttempsCount() {
+	this.attempsCount++;
+    }
 
-	public void setNewsContent(String newsContent) {
-		this.newsContent = newsContent;
-	}
-	
-	public int getAttempsCount() {
-		return attempsCount;
-	}
 
-	public void incAttempsCount() {
-		this.attempsCount++;
+    public boolean isResultEmpty(){
+	if(result == null || "".equals(result.trim())){
+	    return true;
 	}
+	return false;
+    }
 
-	public String toString(){
-		StringBuilder sb = new StringBuilder();
-		//TODO Insert code here
-		return sb.toString();
-	}
+    public String toString(){
+	StringBuilder sb = new StringBuilder();
+	//TODO Insert code here
+	return sb.toString();
+    }
 }
