@@ -26,20 +26,16 @@ public class PosterTaskRunner {
     private int maxThreadCount;
     private long proxyDelay;
     private String resultFile;
-    private String siteLogin;
-    private String sitePass;
 
     //private ArrayList<Thread> threads = new ArrayList<Thread>();
 
-    public PosterTaskRunner(final String login, final char[] pass, String proxyFilePath, String keyWordsFilePath, String accListFilePath, int maxThreadCount, long proxyDelay, String resultFile, String siteLogin, String sitePass){
+    public PosterTaskRunner(final String login, final char[] pass, String proxyFilePath, String keyWordsFilePath, String accListFilePath, int maxThreadCount, long proxyDelay, String resultFile){
 	this.proxyFilePath = proxyFilePath;
 	this.keyWordsFilePath = keyWordsFilePath;
 	this.accListFilePath = accListFilePath;
 	this.maxThreadCount = maxThreadCount;
 	this.proxyDelay = proxyDelay;
 	this.resultFile = resultFile;
-	this.siteLogin = siteLogin;
-	this.sitePass = sitePass;
 	Authenticator.setDefault(new Authenticator() {
 	    @Override
 	    protected PasswordAuthentication getPasswordAuthentication() {
@@ -50,7 +46,7 @@ public class PosterTaskRunner {
 
     public static void main(String[] args) {
 	try{
-	    PosterTaskRunner taskRunner = new PosterTaskRunner("VIPUAoVrs68fdmb", "TC3aH96sAR".toCharArray(),"proxy.txt","keywords.txt", "acclist.txt", 1, 5000L, "success_result.csv","udryfgtsukry@yopmail.com","lol200");
+	    PosterTaskRunner taskRunner = new PosterTaskRunner("VIPUAoVrs68fdmb", "TC3aH96sAR".toCharArray(),"proxy.txt","keywords.txt", "acclist.txt", 1, 5000L, "success_result.csv");
 	    taskRunner.run();
 	}catch(Throwable e){
 	    e.printStackTrace();
@@ -75,7 +71,7 @@ public class PosterTaskRunner {
 
 	    PosterThread newThread = null;
 	    log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
-	    while(!taskFactory.isTaskFactoryEmpty() || taskFactory.runThreadsCount > 0){
+	    while((!taskFactory.isTaskFactoryEmpty() && accountFactory.isCanGetNewAccounts()) || taskFactory.runThreadsCount > 0){
 		log.debug("Try to get request from RequestFactory queue.");
 		//getting account
 		Account account = accountFactory.getAccount();
@@ -93,10 +89,6 @@ public class PosterTaskRunner {
 			    log.error("InterruptedException occured during RequestRunner process",e);
 			}
 		    }
-		}
-		else{
-		    log.warn("Max news per account excided. Add new account fort posting.");
-		    break;
 		}
 	    }
 
