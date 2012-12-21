@@ -5,24 +5,39 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.Properties;
 
 import org.apache.log4j.Logger;
+import org.apache.velocity.Template;
+import org.apache.velocity.VelocityContext;
+import org.apache.velocity.app.Velocity;
 
+import com.fdt.scrapper.task.Constants;
 import com.fdt.scrapper.task.NewsTask;
+import com.fdt.scrapper.task.Snippet;
 
 public class TaskFactory {
 
     private static final Logger log = Logger.getLogger(TaskFactory.class);
 
     private static TaskFactory instance = null;
-    public ArrayList<NewsTask> getErrorQueue() {
-	return errorQueue;
-    }
+    private String templateFilePath = "";
 
     public static Integer MAX_THREAD_COUNT = 100;
     public static Integer MAX_ATTEMP_COUNT = 50;
     protected int runThreadsCount = 0;
+    
+    private Template  bottomTemplate;
+    
+    private static final String ORG_APACHE_VELOCITY_RUNTIME_LOG_NULL_LOG_SYSTEM = "org.apache.velocity.runtime.log.NullLogSystem";
+    private static final String RUNTIME_LOG_LOGSYSTEM_CLASS = "runtime.log.logsystem.class";
+    
+    private final static String NEWS_CONTENT_TEMPLATE_FILE_PATH_LABEL = "news_content_template_file_path";
+    
+    private final static String PROMO_URL_LABEL = "promo_url";
+    private final static String IMAGE_URL_LABEL = "image_url";
 
     /**
      * HashMap<process_program,queue_for_process_program>
@@ -42,6 +57,20 @@ public class TaskFactory {
 	taskQueue.clear();
 	resultQueue.clear();
 	errorQueue.clear();
+    }
+    
+    public String getTemplateFilePath()
+    {
+        return templateFilePath;
+    }
+
+    public void setTemplateFilePath(String templateFilePath)
+    {
+        this.templateFilePath = templateFilePath;
+    }
+
+    public ArrayList<NewsTask> getErrorQueue() {
+	return errorQueue;
     }
 
     public synchronized void incRunThreadsCount() {
@@ -146,7 +175,8 @@ public class TaskFactory {
 
 		line = br.readLine();
 		while(line != null){
-		    keyWordsList.add(line.trim());
+		    String utf8Line = new String(line.getBytes(),"UTF-8");
+		    keyWordsList.add(utf8Line.trim());
 		    line = br.readLine();
 		}
 	    } catch (FileNotFoundException e) {
@@ -172,9 +202,31 @@ public class TaskFactory {
     }
 
     private synchronized void fillTaskQueue(ArrayList<String> keyWordsList){
+	String content = generateTemplateContent();
 	for(String keyWords : keyWordsList){
-	    taskQueue.add(new NewsTask(keyWords, "CONTENT MUST BE HERE"));
+	    taskQueue.add(new NewsTask(keyWords, content));
 	}
+    }
+    
+    private String generateTemplateContent(){
+	/*StringBuilder
+	<a href="http://google.com"><img src="http://cs416921.userapi.com/v416921156/996/nY079jvC44A.jpg" /></a>*/
+
+	//disable velocity log
+	Properties props = new Properties();
+	props.setProperty(RUNTIME_LOG_LOGSYSTEM_CLASS,ORG_APACHE_VELOCITY_RUNTIME_LOG_NULL_LOG_SYSTEM);
+	Velocity.init(props);
+	VelocityContext vc = new VelocityContext();
+	this.bottomTemplate = Velocity.getTemplate(Constants.getInstance().getProperty(NEWS_CONTENT_TEMPLATE_FILE_PATH_LABEL), "UTF8");
+
+	//init context
+	vc.put("PROMO_URL", Constants.getInstance().getProperty(PROMO_URL_LABEL));
+	vc.put("IMAGE_URL", Constants.getInstance().getProperty(IMAGE_URL_LABEL));
+
+	//subject
+	StringWriter writer = new StringWriter();
+	bottomTemplate.merge(vc, writer);
+	return writer.toString();
     }
 
     public synchronized ArrayList<NewsTask> getTaskQueue() {

@@ -1,7 +1,5 @@
 package com.fdt.scrapper.task;
 
-import com.fdt.scrapper.Account;
-
 public class NewsTask{
     private String keyWords = "";
     private String newsContent = "";

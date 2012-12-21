@@ -30,4 +30,11 @@ public class Snippet {
     {
         this.content = content;
     }
+    
+    @Override
+    public String toString(){
+	StringBuilder result = new StringBuilder();
+	result.append("<h3>").append(title).append("</h3>\r\n").append(content);
+	return result.toString();
+    }
 }
