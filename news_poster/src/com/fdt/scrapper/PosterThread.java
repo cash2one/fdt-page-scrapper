@@ -45,7 +45,7 @@ public class PosterThread extends Thread{
 			log.debug("Task (" + task.toString() +") is using proxy connection: " +proxyConnector.getProxyKey());
 			Proxy proxy = proxyConnector.getConnect();
 			NewsPoster ps;
-			ps = new NewsPoster(task, proxy, account);
+			ps = new NewsPoster(task, proxy, account, taskFactory);
 			String newsResult = ps.executePostNews();
 			task.setResult(newsResult);
 		    }

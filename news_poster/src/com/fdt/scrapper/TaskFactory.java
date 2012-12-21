@@ -16,7 +16,6 @@ import org.apache.velocity.app.Velocity;
 
 import com.fdt.scrapper.task.Constants;
 import com.fdt.scrapper.task.NewsTask;
-import com.fdt.scrapper.task.Snippet;
 
 public class TaskFactory {
 
@@ -25,7 +24,7 @@ public class TaskFactory {
     private static TaskFactory instance = null;
     private String templateFilePath = "";
 
-    public static Integer MAX_THREAD_COUNT = 100;
+    private static Integer MAX_THREAD_COUNT = 100;
     public static Integer MAX_ATTEMP_COUNT = 50;
     protected int runThreadsCount = 0;
     
@@ -44,22 +43,30 @@ public class TaskFactory {
      * 
      */
     private ArrayList<NewsTask> taskQueue;
-    private ArrayList<NewsTask> resultQueue;
+    private ArrayList<NewsTask> successQueue;
     private ArrayList<NewsTask> errorQueue;
 
     private TaskFactory(){
 	taskQueue = new ArrayList<NewsTask>();
-	resultQueue = new ArrayList<NewsTask>();
+	successQueue = new ArrayList<NewsTask>();
 	errorQueue = new ArrayList<NewsTask>();
     }
 
     public void clear(){
 	taskQueue.clear();
-	resultQueue.clear();
+	successQueue.clear();
 	errorQueue.clear();
     }
     
-    public String getTemplateFilePath()
+    public synchronized static Integer getMAX_THREAD_COUNT() {
+		return MAX_THREAD_COUNT;
+	}
+
+	public synchronized static void setMAX_THREAD_COUNT(Integer mAXTHREADCOUNT) {
+		MAX_THREAD_COUNT = mAXTHREADCOUNT;
+	}
+
+	public String getTemplateFilePath()
     {
         return templateFilePath;
     }
@@ -128,7 +135,7 @@ public class TaskFactory {
      */
     public synchronized void putTaskInSuccessQueue(NewsTask result){
 	synchronized (this) {
-	    resultQueue.add(result);
+	    successQueue.add(result);
 	}
     }
 
@@ -233,8 +240,8 @@ public class TaskFactory {
 	return taskQueue;
     }
 
-    public synchronized ArrayList<NewsTask> getResultQueue() {
-	return resultQueue;
+    public synchronized ArrayList<NewsTask> getSuccessQueue() {
+	return successQueue;
     }
 
     public synchronized int getRunThreadsCount() {
