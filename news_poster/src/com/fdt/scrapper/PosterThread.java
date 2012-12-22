@@ -54,7 +54,6 @@ public class PosterThread extends Thread{
 		catch (Exception e) {
 		    errorExist = true;
 		    taskFactory.reprocessingTask(task);
-		    e.printStackTrace();
 		    log.error("Error occured during process task: " + task.toString(), e);
 		}finally{
 		    if(proxyConnector != null){
@@ -65,10 +64,13 @@ public class PosterThread extends Thread{
 		if(!errorExist){
 		    if(!task.isResultEmpty()){
 			taskFactory.putTaskInSuccessQueue(task);
-			accountFactory.incrementCounter(account);
+			accountFactory.incrementPostedCounter(account);
 		    }else{
 			taskFactory.reprocessingTask(task);
+			accountFactory.decrementUsedCounter(account);
 		    }
+		}else{
+		    accountFactory.decrementUsedCounter(account);
 		}
 	    } finally {
 		taskFactory.decRunThreadsCount(task);

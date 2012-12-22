@@ -71,10 +71,13 @@ public class NewsPoster {
 		this.taskFactory = taskFactory;
 	}
 
-	public String executePostNews() throws MalformedURLException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
+	public String executePostNews() throws Exception {
 		//get snippets
 		ArrayList<Snippet> snippets = parseHtml(task.getKeyWords());
-		//TODO post news
+		if(snippets == null || snippets.size() == 0){
+		    throw new Exception("Snippets size is 0. Will try to use another proxy server");
+		}
+		//post news
 		return postNews(snippets);
 	}
 
@@ -95,8 +98,10 @@ public class NewsPoster {
 
 
 			nameValuePairs.add(new BasicNameValuePair("subject", task.getKeyWords()));
-			//TODO Insert news content here
-			nameValuePairs.add(new BasicNameValuePair("body", addSnippets(task.getNewsContent(),snippets)));
+			//Insert news content here
+			String snippetsContent = getSnippetsContent(snippets);
+			task.getNewsContent().put("SNIPPETS", snippetsContent);
+			nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
 			nameValuePairs.add(new BasicNameValuePair("file", ""));
 			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs, HTTP.UTF_8));
 
@@ -107,17 +112,22 @@ public class NewsPoster {
 			System.out.println(elements.attr("href"));
 			return elements.attr("href");
 		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		    log.error("Error occured during posting news",e);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		    log.error("Error occured during posting news",e);
 		}
 
 		return "";
 	}
+	
+	private String mergeTemplate(NewsTask task){
+		//subject
+		StringWriter writer = new StringWriter();
+		taskFactory.getBottomTemplate().merge(task.getNewsContent(), writer);
+		return writer.toString();
+	}
 
-	private String addSnippets(String mainContent, ArrayList<Snippet> snippets) {
+	private String getSnippetsContent(ArrayList<Snippet> snippets) {
 		//calculate snippets count
 		int snipCount = 0;
 		int linkCount = 0;
@@ -132,8 +142,7 @@ public class NewsPoster {
 			}
 		}
 		log.debug("Keywords: task.getKeyWords(). Snippet count: " + snipCount);
-		StringBuilder content = new StringBuilder(mainContent);
-		content.append("<p>&nbsp;</p>").append("<p>&nbsp;</p>").append("<p>&nbsp;</p>").append("<p>&nbsp;</p>");
+		StringBuilder snippetsContent = new StringBuilder();
 
 		//get links count
 		int randomValue = getRandomValue(MIN_LINK_COUNT, MAX_LINK_COUNT);
@@ -149,25 +158,25 @@ public class NewsPoster {
 				//add snippet link
 				int randomSuccessLink = getRandomValue(1,taskFactory.getSuccessQueue().size());
 				addLinkToSnippetContent(snippets.get(i), Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + taskFactory.getSuccessQueue().get(randomSuccessLink-1).getResult());
-				content.append(snippets.get(i).toString()).append("\r\n");
+				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
 				snippetLinked++;
 			}else{
-				content.append(snippets.get(i).toString()).append("\r\n");
+				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
 			}
 		}
 
-		return content.toString();
+		return snippetsContent.toString();
 	}
 
 	private org.jsoup.nodes.Document getUrlContent(String keyWords) throws MalformedURLException, IOException {
-		String strUrl = "http://search.tut.by/?str="+keyWords.replace(" ", "+");
+		String strUrl = "http://search.tut.by/?status=1&ru=1&encoding=1&page=0&how=rlv&query="+keyWords.replace(" ", "+");
 		URL url = new URL(strUrl);
 		//TODO using proxy
-		//HttpURLConnection conn = (HttpURLConnection)url.openConnection(proxy);
+		HttpURLConnection conn = (HttpURLConnection)url.openConnection(proxy);
 		//TODO using proxy
-		HttpURLConnection conn = (HttpURLConnection)url.openConnection();
-		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-		conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
+		//HttpURLConnection conn = (HttpURLConnection)url.openConnection();
+		//conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+		//conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 		InputStream is = conn.getInputStream();
 		org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", strUrl);
 		is.close();
@@ -191,7 +200,7 @@ public class NewsPoster {
 			newContent.append("</a>");
 		}else if(words.length > 2){
 			int randomValue = getRandomValue(MIN_WORDS_COUNT, MAX_WORDS_COUNT);
-			int startStringIndex = getRandomValue(0, words.length);
+			int startStringIndex = getRandomValue(0, words.length-randomValue);
 			newContent = new StringBuilder();
 			for(int i = 0; i < words.length; i++){
 				if(startStringIndex == i){
@@ -217,7 +226,7 @@ public class NewsPoster {
 	private ArrayList<Snippet> parseHtml(String keyWords) throws MalformedURLException, IOException{
 		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
 		org.jsoup.nodes.Document page = getUrlContent(keyWords);
-
+		
 		Elements elements = page.select("li[class=b-results__li]");
 		if(!elements.isEmpty()){
 			for(Element element : elements){

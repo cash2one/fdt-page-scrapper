@@ -1,14 +1,16 @@
 package com.fdt.scrapper.task;
 
+import org.apache.velocity.VelocityContext;
+
 public class NewsTask{
     private String keyWords = "";
-    private String newsContent = "";
+    private VelocityContext newsContent = null;
 
     private int attempsCount = 1;
     //empty result
     protected String result = null;
 
-    public NewsTask(String keyWords, String newsContent) {
+    public NewsTask(String keyWords, VelocityContext newsContent) {
 	super();
 	this.keyWords = keyWords;
 	this.newsContent = newsContent;
@@ -40,11 +42,11 @@ public class NewsTask{
 	this.keyWords = keyWords;
     }
 
-    public String getNewsContent() {
+    public VelocityContext getNewsContent() {
 	return newsContent;
     }
 
-    public void setNewsContent(String newsContent) {
+    public void setNewsContent(VelocityContext newsContent) {
 	this.newsContent = newsContent;
     }
 

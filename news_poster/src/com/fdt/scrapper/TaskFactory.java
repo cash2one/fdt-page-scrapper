@@ -28,7 +28,7 @@ public class TaskFactory {
     public static Integer MAX_ATTEMP_COUNT = 50;
     protected int runThreadsCount = 0;
     
-    private Template  bottomTemplate;
+    private Template bottomTemplate;
     
     private static final String ORG_APACHE_VELOCITY_RUNTIME_LOG_NULL_LOG_SYSTEM = "org.apache.velocity.runtime.log.NullLogSystem";
     private static final String RUNTIME_LOG_LOGSYSTEM_CLASS = "runtime.log.logsystem.class";
@@ -37,6 +37,8 @@ public class TaskFactory {
     
     private final static String PROMO_URL_LABEL = "promo_url";
     private final static String IMAGE_URL_LABEL = "image_url";
+    
+    private final static String FAKE_IMAGE_URL_LABEL = "fake_image_url";
 
     /**
      * HashMap<process_program,queue_for_process_program>
@@ -50,6 +52,7 @@ public class TaskFactory {
 	taskQueue = new ArrayList<NewsTask>();
 	successQueue = new ArrayList<NewsTask>();
 	errorQueue = new ArrayList<NewsTask>();
+	this.bottomTemplate = Velocity.getTemplate(Constants.getInstance().getProperty(NEWS_CONTENT_TEMPLATE_FILE_PATH_LABEL), "UTF8");
     }
 
     public void clear(){
@@ -58,6 +61,11 @@ public class TaskFactory {
 	errorQueue.clear();
     }
     
+    public Template getBottomTemplate()
+    {
+        return bottomTemplate;
+    }
+
     public synchronized static Integer getMAX_THREAD_COUNT() {
 		return MAX_THREAD_COUNT;
 	}
@@ -209,31 +217,23 @@ public class TaskFactory {
     }
 
     private synchronized void fillTaskQueue(ArrayList<String> keyWordsList){
-	String content = generateTemplateContent();
+	VelocityContext content = generateTemplateContent();
 	for(String keyWords : keyWordsList){
 	    taskQueue.add(new NewsTask(keyWords, content));
 	}
     }
     
-    private String generateTemplateContent(){
-	/*StringBuilder
-	<a href="http://google.com"><img src="http://cs416921.userapi.com/v416921156/996/nY079jvC44A.jpg" /></a>*/
-
+    private VelocityContext generateTemplateContent(){
 	//disable velocity log
 	Properties props = new Properties();
 	props.setProperty(RUNTIME_LOG_LOGSYSTEM_CLASS,ORG_APACHE_VELOCITY_RUNTIME_LOG_NULL_LOG_SYSTEM);
 	Velocity.init(props);
 	VelocityContext vc = new VelocityContext();
-	this.bottomTemplate = Velocity.getTemplate(Constants.getInstance().getProperty(NEWS_CONTENT_TEMPLATE_FILE_PATH_LABEL), "UTF8");
-
 	//init context
 	vc.put("PROMO_URL", Constants.getInstance().getProperty(PROMO_URL_LABEL));
 	vc.put("IMAGE_URL", Constants.getInstance().getProperty(IMAGE_URL_LABEL));
-
-	//subject
-	StringWriter writer = new StringWriter();
-	bottomTemplate.merge(vc, writer);
-	return writer.toString();
+	vc.put("FAKE_IMAGE_URL", Constants.getInstance().getProperty(FAKE_IMAGE_URL_LABEL));
+	return vc;
     }
 
     public synchronized ArrayList<NewsTask> getTaskQueue() {
