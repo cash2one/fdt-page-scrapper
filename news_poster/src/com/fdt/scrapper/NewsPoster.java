@@ -110,6 +110,7 @@ public class NewsPoster {
 			org.jsoup.nodes.Document page = Jsoup.parse(response.getEntity().getContent(), "UTF-8", postUrl);
 			Elements elements = page.select("a[href]");
 			System.out.println(elements.attr("href"));
+			log.info(elements.attr("href"));
 			return elements.attr("href");
 		} catch (ClientProtocolException e) {
 			log.error("Error occured during posting news",e);
