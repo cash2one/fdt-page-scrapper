@@ -47,6 +47,7 @@ import com.fdt.scrapper.task.Snippet;
  */
 public class NewsPoster {
 	private static final Logger log = Logger.getLogger(NewsPoster.class);
+	private static final Logger logExtarnal = Logger.getLogger(PosterTaskRunner.class);
 
 	private int MIN_SNIPPET_COUNT=3;
 	private int MAX_SNIPPET_COUNT=10;
@@ -82,7 +83,7 @@ public class NewsPoster {
 	}
 
 	private String postNews(ArrayList<Snippet> snippets){
-		HttpClient httpclient = new DefaultHttpClient();
+		HttpClient httpclient = null;
 		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + Constants.getInstance().getProperty(AccountFactory.POST_NEWS_URL_LABEL);
 		HttpPost httppost = new HttpPost(postUrl);
 
@@ -92,7 +93,6 @@ public class NewsPoster {
 			httppost.setHeader("Cookie", account.getCookie());
 			//httppost.setHeader("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			//httppost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
-			nameValuePairs.clear();
 			nameValuePairs.add(new BasicNameValuePair("groups", account.getGroupId()));
 			nameValuePairs.add(new BasicNameValuePair("interests", ""));
 
@@ -113,9 +113,9 @@ public class NewsPoster {
 			log.info(elements.attr("href"));
 			return elements.attr("href");
 		} catch (ClientProtocolException e) {
-			log.error("Error occured during posting news",e);
+			logExtarnal.error("Error occured during posting news",e);
 		} catch (IOException e) {
-			log.error("Error occured during posting news",e);
+			logExtarnal.error("Error occured during posting news",e);
 		}
 
 		return "";
@@ -142,7 +142,7 @@ public class NewsPoster {
 				snipCount = snippets.size();
 			}
 		}
-		log.debug("Keywords: task.getKeyWords(). Snippet count: " + snipCount);
+		logExtarnal.debug("Keywords: task.getKeyWords(). Snippet count: " + snipCount);
 		StringBuilder snippetsContent = new StringBuilder();
 
 		//get links count
