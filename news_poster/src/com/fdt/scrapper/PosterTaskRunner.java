@@ -104,14 +104,13 @@ public class PosterTaskRunner {
 				PosterThread newThread = null;
 				log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
 
+				Account account = null;
 				TaskFactory.setMAX_THREAD_COUNT(1);
-				while((!taskFactory.isTaskFactoryEmpty() && accountFactory.isCanGetNewAccounts()) || taskFactory.runThreadsCount > 0){
+				while((!taskFactory.isTaskFactoryEmpty() && ((account = accountFactory.getAccount()) != null)) || taskFactory.runThreadsCount > 0){
 					if(taskFactory.getSuccessQueue().size() >= 3){
 						TaskFactory.setMAX_THREAD_COUNT(maxThreadCount);
 					}
 					log.debug("Try to get request from RequestFactory queue.");
-					//getting account
-					Account account = accountFactory.getAccount();
 					log.debug("Account: " + account);
 					if(account != null){
 						NewsTask task = taskFactory.getTask();
@@ -122,7 +121,7 @@ public class PosterTaskRunner {
 							newThread.start();
 							continue;
 						}else{
-							accountFactory.decrementUsedCounter(account);
+							accountFactory.releaseAccount(account);
 						}
 					}
 					try {

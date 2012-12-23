@@ -127,30 +127,28 @@ public class AccountFactory
 		count++;
 		newsPostedCount.put(account.getLogin(), count);
 		log.debug("Posted account news incremented: " + count);
-		count = accountUsedInThreadCount.get(account.getLogin());
-		count--;
-		//releace account
-		accountUsedInThreadCount.put(account.getLogin(), count);
-		log.debug("Used account size decremented: " + count);
+		releaseAccount(account);
 	}
 
 	/**
 	 * Release account using
 	 * @param account
 	 */
-	public synchronized void decrementUsedCounter(Account account){
+	public synchronized void releaseAccount(Account account){
 		int count = accountUsedInThreadCount.get(account.getLogin());
 		count--;
 		accountUsedInThreadCount.put(account.getLogin(), count);
 		log.debug("Used account size decremented: " + count);
 	}
 
-	public synchronized boolean isCanGetNewAccounts(){
-		for(Integer count : newsPostedCount.values()){
-			if(count < NEWS_PER_ACCOUNT){
+/*	public synchronized boolean isCanGetNewAccounts(){
+		for(String login : accountUsedInThreadCount.keySet()){
+			int runningCount = accountUsedInThreadCount.get(login);
+			int postedCount = newsPostedCount.get(login);
+			if( runningCount < (NEWS_PER_ACCOUNT-postedCount)){
 				return true;
 			}
 		}
 		return false;
-	}
+	}*/
 }

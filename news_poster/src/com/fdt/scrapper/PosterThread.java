@@ -67,10 +67,10 @@ public class PosterThread extends Thread{
 						accountFactory.incrementPostedCounter(account);
 					}else{
 						taskFactory.reprocessingTask(task);
-						accountFactory.decrementUsedCounter(account);
+						accountFactory.releaseAccount(account);
 					}
 				}else{
-					accountFactory.decrementUsedCounter(account);
+					accountFactory.releaseAccount(account);
 				}
 			} finally {
 				taskFactory.decRunThreadsCount(task);
