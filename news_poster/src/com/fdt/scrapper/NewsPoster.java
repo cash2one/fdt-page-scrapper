@@ -75,7 +75,7 @@ public class NewsPoster {
 		//get snippets
 		ArrayList<Snippet> snippets = parseHtml(task.getKeyWords());
 		if(snippets == null || snippets.size() == 0){
-		    throw new Exception("Snippets size is 0. Will try to use another proxy server");
+			throw new Exception("Snippets size is 0. Will try to use another proxy server");
 		}
 		//post news
 		return postNews(snippets);
@@ -112,14 +112,14 @@ public class NewsPoster {
 			System.out.println(elements.attr("href"));
 			return elements.attr("href");
 		} catch (ClientProtocolException e) {
-		    log.error("Error occured during posting news",e);
+			log.error("Error occured during posting news",e);
 		} catch (IOException e) {
-		    log.error("Error occured during posting news",e);
+			log.error("Error occured during posting news",e);
 		}
 
 		return "";
 	}
-	
+
 	private String mergeTemplate(NewsTask task){
 		//subject
 		StringWriter writer = new StringWriter();
@@ -169,19 +169,32 @@ public class NewsPoster {
 	}
 
 	private org.jsoup.nodes.Document getUrlContent(String keyWords) throws MalformedURLException, IOException {
-		String strUrl = "http://search.tut.by/?status=1&ru=1&encoding=1&page=0&how=rlv&query="+keyWords.replace(" ", "+");
-		URL url = new URL(strUrl);
-		//TODO using proxy
-		HttpURLConnection conn = (HttpURLConnection)url.openConnection(proxy);
-		//TODO using proxy
-		//HttpURLConnection conn = (HttpURLConnection)url.openConnection();
-		//conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-		//conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
-		InputStream is = conn.getInputStream();
-		org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", strUrl);
-		is.close();
-		conn.disconnect();
-		return page;
+		HttpURLConnection conn = null;
+		InputStream is = null;
+		try{
+			String strUrl = "http://search.tut.by/?status=1&ru=1&encoding=1&page=0&how=rlv&query="+keyWords.replace(" ", "+");
+			URL url = new URL(strUrl);
+			//using proxy
+			conn = (HttpURLConnection)url.openConnection(proxy);
+			//using proxy
+			//HttpURLConnection conn = (HttpURLConnection)url.openConnection();
+			//conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			//conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
+			is = conn.getInputStream();
+			org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", strUrl);
+			is.close();
+			is = null;
+			conn.disconnect();
+			conn = null;
+			return page;
+		}finally{
+			if(conn != null){
+				try{conn.disconnect();}catch(Throwable e){}
+			}
+			if(is != null){
+				try{is.close();}catch(Throwable e){}
+			}
+		}
 	}
 
 	private void addLinkToSnippetContent(Snippet snippet, String link){
@@ -226,7 +239,7 @@ public class NewsPoster {
 	private ArrayList<Snippet> parseHtml(String keyWords) throws MalformedURLException, IOException{
 		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
 		org.jsoup.nodes.Document page = getUrlContent(keyWords);
-		
+
 		Elements elements = page.select("li[class=b-results__li]");
 		if(!elements.isEmpty()){
 			for(Element element : elements){
