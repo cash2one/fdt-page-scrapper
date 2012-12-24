@@ -81,6 +81,7 @@ public class AccountFactory
 		}
 		//getting cookie for each account
 		try {
+			ArrayList<Account> accountToRemove = new ArrayList<Account>();
 			for(Account account : accounts.values()){
 				HttpClient httpclient = new DefaultHttpClient();
 				HttpPost httppost = new HttpPost(Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL));
@@ -93,8 +94,20 @@ public class AccountFactory
 
 				// Execute HTTP Post Request
 				HttpResponse response = httpclient.execute(httppost);
-				account.setCookie(response.getFirstHeader("Set-Cookie").getValue());
+				String cookies = response.getFirstHeader("Set-Cookie").getValue();
+				if(cookies.contains("notexists")){
+					log.error("Account doesn't exist: \""+ account.getLogin() + "\". Please check email and password.");
+					accountToRemove.add(account);
+					continue;
+				}
+				account.setCookie(cookies);
 				nameValuePairs.clear();
+			}
+			
+			for(Account account : accountToRemove){
+				accounts.remove(account.getLogin());
+				newsPostedCount.remove(account.getLogin());
+				accountUsedInThreadCount.remove(account.getLogin());
 			}
 		} catch (ClientProtocolException e) {
 			log.error("Error during filling account from list and getting cookies for account",e);
