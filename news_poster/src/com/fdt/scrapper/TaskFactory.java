@@ -36,6 +36,7 @@ public class TaskFactory {
     private final static String NEWS_CONTENT_TEMPLATE_FILE_PATH_LABEL = "news_content_template_file_path";
     
     private final static String PROMO_URL_LABEL = "promo_url";
+    private final static String PROMO_URL_LABEL_2 = "promo_url_2";
     private final static String IMAGE_URL_LABEL = "image_url";
     
     private final static String FAKE_IMAGE_URL_LABEL = "fake_image_url";
@@ -218,8 +219,18 @@ public class TaskFactory {
 
     private synchronized void fillTaskQueue(ArrayList<String> keyWordsList){
 	VelocityContext content = generateTemplateContent();
+	VelocityContext content2 = generateTemplateContent();
+	
+	content.put("PROMO_URL", Constants.getInstance().getProperty(PROMO_URL_LABEL));
+	content2.put("PROMO_URL", Constants.getInstance().getProperty(PROMO_URL_LABEL_2));
+	boolean flag = true;
 	for(String keyWords : keyWordsList){
-	    taskQueue.add(new NewsTask(keyWords, content));
+	    if(flag){
+	    	taskQueue.add(new NewsTask(keyWords, content));
+	    }else{
+	    	taskQueue.add(new NewsTask(keyWords, content2));	
+	    }
+	    flag = !flag;
 	}
     }
     
@@ -230,7 +241,6 @@ public class TaskFactory {
 	Velocity.init(props);
 	VelocityContext vc = new VelocityContext();
 	//init context
-	vc.put("PROMO_URL", Constants.getInstance().getProperty(PROMO_URL_LABEL));
 	vc.put("IMAGE_URL", Constants.getInstance().getProperty(IMAGE_URL_LABEL));
 	vc.put("FAKE_IMAGE_URL", Constants.getInstance().getProperty(FAKE_IMAGE_URL_LABEL));
 	return vc;

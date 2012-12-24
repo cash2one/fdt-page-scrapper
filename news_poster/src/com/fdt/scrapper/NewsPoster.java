@@ -177,9 +177,9 @@ public class NewsPoster {
 			String strUrl = "http://search.tut.by/?status=1&ru=1&encoding=1&page=0&how=rlv&query="+keyWords.replace(" ", "+");
 			URL url = new URL(strUrl);
 			//using proxy
-			conn = (HttpURLConnection)url.openConnection(proxy);
+			//conn = (HttpURLConnection)url.openConnection(proxy);
 			//don't using proxy
-			//conn = (HttpURLConnection)url.openConnection();
+			conn = (HttpURLConnection)url.openConnection();
 			//conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			//conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 			is = conn.getInputStream();
