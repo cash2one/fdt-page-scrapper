@@ -101,6 +101,7 @@ public class NewsPoster {
 			//Insert news content here
 			String snippetsContent = getSnippetsContent(snippets);
 			task.getNewsContent().put("SNIPPETS", snippetsContent);
+			task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
 			nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
 			nameValuePairs.add(new BasicNameValuePair("file", ""));
 			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs, HTTP.UTF_8));
@@ -177,8 +178,8 @@ public class NewsPoster {
 			URL url = new URL(strUrl);
 			//using proxy
 			conn = (HttpURLConnection)url.openConnection(proxy);
-			//using proxy
-			//HttpURLConnection conn = (HttpURLConnection)url.openConnection();
+			//don't using proxy
+			//conn = (HttpURLConnection)url.openConnection();
 			//conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			//conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 			is = conn.getInputStream();
