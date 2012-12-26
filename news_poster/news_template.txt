@@ -1,4 +1,4 @@
-<a href="$PROMO_URL$KEY_WORDS"><img src="$IMAGE_URL" /></a>
+<a href="$PROMO_URL_START$KEY_WORDS$PROMO_URL_END"><img src="$IMAGE_URL" /></a>
 <br>
 <br>
 <br>

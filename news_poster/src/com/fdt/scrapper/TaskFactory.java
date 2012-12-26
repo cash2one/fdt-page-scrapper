@@ -35,8 +35,10 @@ public class TaskFactory {
     
     private final static String NEWS_CONTENT_TEMPLATE_FILE_PATH_LABEL = "news_content_template_file_path";
     
-    private final static String PROMO_URL_LABEL = "promo_url";
-    private final static String PROMO_URL_LABEL_2 = "promo_url_2";
+    private final static String PROMO_URL_START_LABEL = "promo_url_start";
+    private final static String PROMO_URL_END_LABEL = "promo_url_end";
+    private final static String PROMO_URL_START_LABEL_2 = "promo_url_start_2";
+    private final static String PROMO_URL_END_LABEL_2 = "promo_url_end_2";
     private final static String IMAGE_URL_LABEL = "image_url";
     
     private final static String FAKE_IMAGE_URL_LABEL = "fake_image_url";
@@ -221,8 +223,10 @@ public class TaskFactory {
 	VelocityContext content = generateTemplateContent();
 	VelocityContext content2 = generateTemplateContent();
 	
-	content.put("PROMO_URL", Constants.getInstance().getProperty(PROMO_URL_LABEL));
-	content2.put("PROMO_URL", Constants.getInstance().getProperty(PROMO_URL_LABEL_2));
+	content.put("PROMO_URL_START", Constants.getInstance().getProperty(PROMO_URL_START_LABEL));
+	content.put("PROMO_URL_END", Constants.getInstance().getProperty(PROMO_URL_END_LABEL));
+	content2.put("PROMO_URL_START", Constants.getInstance().getProperty(PROMO_URL_START_LABEL_2));
+	content2.put("PROMO_URL_END", Constants.getInstance().getProperty(PROMO_URL_END_LABEL_2));
 	boolean flag = true;
 	for(String keyWords : keyWordsList){
 	    if(flag){
