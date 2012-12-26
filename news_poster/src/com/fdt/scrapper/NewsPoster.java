@@ -50,7 +50,7 @@ public class NewsPoster {
 	private static final Logger logExtarnal = Logger.getLogger(PosterTaskRunner.class);
 
 	private int MIN_SNIPPET_COUNT=3;
-	private int MAX_SNIPPET_COUNT=10;
+	private int MAX_SNIPPET_COUNT=5;
 
 	private int MIN_LINK_COUNT=3;
 	private int MAX_LINK_COUNT=5;
