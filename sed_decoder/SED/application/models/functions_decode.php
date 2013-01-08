@@ -4,13 +4,13 @@ class Functions
     public $_abfbd198884bed65b698b74d62c54cd47f44e048;
     
     public $_22b5520d76531e17f66ecd8a4c3c3980a5464e65570c2ae698cd887d;
-    function __construct($_63d1c85e = '')
+    function __construct($www_folder = '')
     {
-        require_once $_63d1c85e . 'config.php';
-        require_once $_63d1c85e . 'application/libraries/parser.php';
-        $this->Base($_63d1c85e);
+        require_once $www_folder . 'config.php';
+        require_once $www_folder . 'application/libraries/parser.php';
+        $this->Base($www_folder);
         $this->host = 'http://' . $_SERVER['HTTP_HOST'] . ROOT;
-        $this->path = $_63d1c85e;
+        $this->path = $www_folder;
     }
     
     
@@ -19,20 +19,20 @@ class Functions
     }
     
     
-    private function Base($_24c827e28343fa0f7484e4987c25b8b556cbe1a1)
+    private function Base($base_ww_folder)
     {
-        $_ddc3e8112f079c21b8a7d1ce3a788d71bccd932c4ee489d6ece63eda = array(
+        $content_labels_array = array(
             'base',
             'cache'
         );
-        foreach ($_ddc3e8112f079c21b8a7d1ce3a788d71bccd932c4ee489d6ece63eda as $_8a104cec3b1b9e82b179cce4cf51ec8ab1f20ee875b34ef8eede74e3) {
-            if (!is_dir($_24c827e28343fa0f7484e4987c25b8b556cbe1a1 . "content/$_8a104cec3b1b9e82b179cce4cf51ec8ab1f20ee875b34ef8eede74e3")) {
-                if (@!mkdir($_24c827e28343fa0f7484e4987c25b8b556cbe1a1 . "content/$_8a104cec3b1b9e82b179cce4cf51ec8ab1f20ee875b34ef8eede74e3", 0755)) {
-                    exit("Невозможно создать папку $_8a104cec3b1b9e82b179cce4cf51ec8ab1f20ee875b34ef8eede74e3. Установите 777 права доступа на папку content.");
+        foreach ($content_labels_array as $content_source) {
+            if (!is_dir($base_ww_folder . "content/$content_source")) {
+                if (@!mkdir($base_ww_folder . "content/$content_source", 0755)) {
+                    exit("Невозможно создать папку $content_source. Установите 777 права доступа на папку content.");
                 }
             }
         }
-        $_0faf0081 = array(
+        $hex_labels_array = array(
             '0',
             '1',
             '2',
@@ -50,11 +50,11 @@ class Functions
             'e',
             'f'
         );
-        for ($_1ec0ed674764b534ec639744ad096db49851a83f48b0a2fd = 0; $_1ec0ed674764b534ec639744ad096db49851a83f48b0a2fd < count($_0faf0081); $_1ec0ed674764b534ec639744ad096db49851a83f48b0a2fd++) {
-            if (!is_dir($_24c827e28343fa0f7484e4987c25b8b556cbe1a1 . "content/base/$_0faf0081[$_1ec0ed674764b534ec639744ad096db49851a83f48b0a2fd]")) {
-                if (mkdir($_24c827e28343fa0f7484e4987c25b8b556cbe1a1 . "content/base/$_0faf0081[$_1ec0ed674764b534ec639744ad096db49851a83f48b0a2fd]", 0755)) {
-                    foreach ($_0faf0081 as $_945d185c101b015232adee6625c2a4f0) {
-                        touch($_24c827e28343fa0f7484e4987c25b8b556cbe1a1 . "content/base/$_0faf0081[$_1ec0ed674764b534ec639744ad096db49851a83f48b0a2fd]/$_945d185c101b015232adee6625c2a4f0.txt");
+        for ($i = 0; $i < count($hex_labels_array); $i++) {
+            if (!is_dir($base_ww_folder . "content/base/$hex_labels_array[$i]")) {
+                if (mkdir($base_ww_folder . "content/base/$hex_labels_array[$i]", 0755)) {
+                    foreach ($hex_labels_array as $hex_element) {
+                        touch($base_ww_folder . "content/base/$hex_labels_array[$i]/$hex_element.txt");
                     }
                 }
             }
@@ -64,29 +64,29 @@ class Functions
     private function BaseWriter($_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c, $_af523a2d8918ae60810bbc6b30799223)
     {
         $_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c = $this->Clear($_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c);
-        $_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8                                                                 = md5($_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c);
-        $_e49563feca0fe402d064339724899474                                                                                                 = array(
+        $_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8 = md5($_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c);
+        $json_values_array = array(
             'md5' => $_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8,
             'query' => $_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c,
             'translit' => $this->Convert($_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c)
         );
-        $_091db10488a55a1e6d20b517be60b85b345b47cce4d475df91b6325b62aa98cb                                                                 = file("content/base/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[0]/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[1].txt", FILE_IGNORE_NEW_LINES);
-        if (!in_array(json_encode($_e49563feca0fe402d064339724899474), $_091db10488a55a1e6d20b517be60b85b345b47cce4d475df91b6325b62aa98cb)) {
-            file_put_contents("content/base/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[0]/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[1].txt", json_encode($_e49563feca0fe402d064339724899474) . "", FILE_APPEND | LOCK_EX);
+        $_091db10488a55a1e6d20b517be60b85b345b47cce4d475df91b6325b62aa98cb = file("content/base/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[0]/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[1].txt", FILE_IGNORE_NEW_LINES);
+        if (!in_array(json_encode($json_values_array), $_091db10488a55a1e6d20b517be60b85b345b47cce4d475df91b6325b62aa98cb)) {
+            file_put_contents("content/base/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[0]/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[1].txt", json_encode($json_values_array) . "", FILE_APPEND | LOCK_EX);
         }
         if (ONLY_EXISTING_KEYWORDS == 'false') {
             foreach ($_af523a2d8918ae60810bbc6b30799223 as $_cac236123dd68b35ed08f1be3b9479a8e2d16980) {
                 $_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c = $_cac236123dd68b35ed08f1be3b9479a8e2d16980['words'];
                 if (!empty($_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c)) {
                     $_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8 = md5($_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c);
-                    $_e49563feca0fe402d064339724899474                                 = array(
+                    $json_values_array                                 = array(
                         'md5' => $_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8,
                         'query' => $_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c,
                         'translit' => $this->Convert($_9e34c7cd15222976fd4def6b8fb0500c715c9b0665fbd0c797fe91bb2155e17f2e9e917a96aeb49dae219b8beaee0068fcfb5d9b5a70064e658faf12fd44013c)
                     );
                     $_091db10488a55a1e6d20b517be60b85b345b47cce4d475df91b6325b62aa98cb = file("content/base/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[0]/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[1].txt", FILE_IGNORE_NEW_LINES);
-                    if (!in_array(json_encode($_e49563feca0fe402d064339724899474), $_091db10488a55a1e6d20b517be60b85b345b47cce4d475df91b6325b62aa98cb)) {
-                        file_put_contents("content/base/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[0]/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[1].txt", json_encode($_e49563feca0fe402d064339724899474) . "", FILE_APPEND | LOCK_EX);
+                    if (!in_array(json_encode($json_values_array), $_091db10488a55a1e6d20b517be60b85b345b47cce4d475df91b6325b62aa98cb)) {
+                        file_put_contents("content/base/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[0]/$_124700b96720d08c6c125908c8d1f253a60c5915b7e69b3a1f3554be142d11a8[1].txt", json_encode($json_values_array) . "", FILE_APPEND | LOCK_EX);
                     }
                 }
             }
@@ -95,29 +95,29 @@ class Functions
     public function CheckQuery($_a986c8931418c3e11b53dae8b42eec29cef321a0a52500bb, $_d88696a833553e3d75affcbefb72fbbf)
     {
         $_5ce19675f36a08ad9e5f914bbe2e79e92842ccc3afe7b62d49267fc693967eb4 = md5($_a986c8931418c3e11b53dae8b42eec29cef321a0a52500bb);
-        $_c7410b428bdb0d8b3be050bf7d7622d6677d5fba                         = array(
+        $json_values_array = array(
             'md5' => $_5ce19675f36a08ad9e5f914bbe2e79e92842ccc3afe7b62d49267fc693967eb4,
             'query' => $_a986c8931418c3e11b53dae8b42eec29cef321a0a52500bb,
             'translit' => $this->Convert($_a986c8931418c3e11b53dae8b42eec29cef321a0a52500bb)
         );
         $_0ceb14a690a0d94a59f362047ea1d6c548b42204                         = file("content/base/$_5ce19675f36a08ad9e5f914bbe2e79e92842ccc3afe7b62d49267fc693967eb4[0]/$_5ce19675f36a08ad9e5f914bbe2e79e92842ccc3afe7b62d49267fc693967eb4[1].txt", FILE_IGNORE_NEW_LINES);
         if (SUPPORT_32 == 'false') {
-            if (!in_array(json_encode($_c7410b428bdb0d8b3be050bf7d7622d6677d5fba), $_0ceb14a690a0d94a59f362047ea1d6c548b42204)) {
+            if (!in_array(json_encode($json_values_array), $_0ceb14a690a0d94a59f362047ea1d6c548b42204)) {
                 $this->View('404', $_d88696a833553e3d75affcbefb72fbbf);
                 exit;
             }
         }
     }
-    public function CheckUrl($_4cd6fca0168fbc49aece7aa52bcf87d8dd01021f)
+    public function CheckUrl($url_for_check)
     {
-        if (strpos($_4cd6fca0168fbc49aece7aa52bcf87d8dd01021f, '?') == 1)
+        if (strpos($url_for_check, '?') == 1)
             return true;
         else
             return false;
     }
-    public function Clear($_76d4c47e4bbd2ef931fa0b28b6a3b65947eda8dc)
+    public function Clear($str_for_clear)
     {
-        $_079537787a26759cf6663fc7b5670cc547eec08bbf334835809227f6a2940cbd = array(
+        $chars_for_replace_array = array(
             '+',
             '—',
             '.',
@@ -166,13 +166,13 @@ class Functions
             '›',
             ''
         );
-        $_76d4c47e4bbd2ef931fa0b28b6a3b65947eda8dc                         = str_replace($_079537787a26759cf6663fc7b5670cc547eec08bbf334835809227f6a2940cbd, ' ', $_76d4c47e4bbd2ef931fa0b28b6a3b65947eda8dc);
-        return preg_replace('|s+|', ' ', trim($_76d4c47e4bbd2ef931fa0b28b6a3b65947eda8dc));
+        $str_for_clear = str_replace($chars_for_replace_array, ' ', $str_for_clear);
+        return preg_replace('|s+|', ' ', trim($str_for_clear));
     }
-    public function Convert($_0fd42b3f73c448b34940b339f87d07adf116b05c0227aad72e8f0ee90533e699)
+    public function Convert($string_for_decode)
     {
-        $_0fd42b3f73c448b34940b339f87d07adf116b05c0227aad72e8f0ee90533e699                                                                 = mb_strtolower($this->Clear($_0fd42b3f73c448b34940b339f87d07adf116b05c0227aad72e8f0ee90533e699), 'UTF-8');
-        $_45cf72471551f6e7f68688a6f08bf68b12b1f581d0e9a46ed355c373378e2e32e4863e9abe45a9f79fb50194a9ed627ae0d7f38bea317510d991ee05280a9f1c = array(
+        $string_for_decode = mb_strtolower($this->Clear($string_for_decode), 'UTF-8');
+        $chars_mapping_array = array(
             'а' => 'a',
             'б' => 'b',
             'в' => 'v',
@@ -207,7 +207,7 @@ class Functions
             'ю' => 'yu',
             'я' => 'ya'
         );
-        return str_replace(' ', '-', strtr($_0fd42b3f73c448b34940b339f87d07adf116b05c0227aad72e8f0ee90533e699, $_45cf72471551f6e7f68688a6f08bf68b12b1f581d0e9a46ed355c373378e2e32e4863e9abe45a9f79fb50194a9ed627ae0d7f38bea317510d991ee05280a9f1c));
+        return str_replace(' ', '-', strtr($string_for_decode, $chars_mapping_array));
     }
     
     private function CreateCache($_bce54819, $_04d4ebf41f750ecc954f20b5a40037124c27570162678b90dd4fb5f54cb2cf3f9286bb2296c4a155c8b92e9ef77d120f720f64ba901ec6847912c5e7691e6581)
@@ -219,40 +219,40 @@ class Functions
     public function CreateUrl($_6e9bd5804d79ab41904a7ceec2ff0457f1bea6701a885b88)
     {
         if (isset($_POST['referer']) and !empty($_POST['referer'])) {
-            $_469aa1d0feda03efad9c67f4487e3db635f6cdfe                 = $_POST['referer'];
-            $_01432255a2039d84a4dcbb82135e73d87798c6db3e1ad9927c20bb4b = $this->GetContents('txt/kids.txt');
-            if (in_array($_469aa1d0feda03efad9c67f4487e3db635f6cdfe, $_01432255a2039d84a4dcbb82135e73d87798c6db3e1ad9927c20bb4b)) {
-                $_50ced2b2a9b5561721c65554bf9231a37429662f932b47d6 = "http://$_469aa1d0feda03efad9c67f4487e3db635f6cdfe";
+            $referer_url_value = $_POST['referer'];
+            $kids_lines = $this->GetContents('txt/kids.txt');
+            if (in_array($referer_url_value, $kids_lines)) {
+                $referer_http_url = "http://$referer_url_value";
             }
         } else {
-            $_50ced2b2a9b5561721c65554bf9231a37429662f932b47d6 = $this->host;
+            $referer_http_url = $this->host;
         }
-        $_c1b2d5ca812288348925331707a306d7688ff8ba3ace6d22786afa5b = $this->GetQuery($_6e9bd5804d79ab41904a7ceec2ff0457f1bea6701a885b88);
-        $_87319e1ceb28e02d31264e1d7f561ece3f17a35d59b647a8e466a1f6 = $this->GetController($_6e9bd5804d79ab41904a7ceec2ff0457f1bea6701a885b88);
+        $query_value = $this->GetQuery($_6e9bd5804d79ab41904a7ceec2ff0457f1bea6701a885b88);
+        $controller_value = $this->GetController($_6e9bd5804d79ab41904a7ceec2ff0457f1bea6701a885b88);
         switch (FU_STATUS) {
             case 'ON':
-                if (!empty($_c1b2d5ca812288348925331707a306d7688ff8ba3ace6d22786afa5b)) {
+                if (!empty($query_value)) {
                     switch (substr(FU_TYPE, 0, 4)) {
                         case 'FULL':
-                            $_50ced2b2a9b5561721c65554bf9231a37429662f932b47d6 .= "/$_87319e1ceb28e02d31264e1d7f561ece3f17a35d59b647a8e466a1f6/" . $this->Convert($_c1b2d5ca812288348925331707a306d7688ff8ba3ace6d22786afa5b) . "-" . substr(md5($_c1b2d5ca812288348925331707a306d7688ff8ba3ace6d22786afa5b), 0, 2) . substr(FU_TYPE, 4);
+                            $referer_http_url .= "/$controller_value/" . $this->Convert($query_value) . "-" . substr(md5($query_value), 0, 2) . substr(FU_TYPE, 4);
                             break;
                         case 'RAND':
-                            $_50ced2b2a9b5561721c65554bf9231a37429662f932b47d6 .= "/$_87319e1ceb28e02d31264e1d7f561ece3f17a35d59b647a8e466a1f6/" . md5($_c1b2d5ca812288348925331707a306d7688ff8ba3ace6d22786afa5b) . substr(FU_TYPE, 4);
+                            $referer_http_url .= "/$controller_value/" . md5($query_value) . substr(FU_TYPE, 4);
                             break;
                     }
                 } else {
-                    $_50ced2b2a9b5561721c65554bf9231a37429662f932b47d6 .= "/$_87319e1ceb28e02d31264e1d7f561ece3f17a35d59b647a8e466a1f6";
+                    $referer_http_url .= "/$controller_value";
                 }
                 break;
             case 'OFF':
-                if (!empty($_c1b2d5ca812288348925331707a306d7688ff8ba3ace6d22786afa5b)) {
-                    $_50ced2b2a9b5561721c65554bf9231a37429662f932b47d6 .= !empty($_87319e1ceb28e02d31264e1d7f561ece3f17a35d59b647a8e466a1f6) ? "/?" . CONTROLLER . "=$_87319e1ceb28e02d31264e1d7f561ece3f17a35d59b647a8e466a1f6&" . QUERY . "=" . urlencode($_c1b2d5ca812288348925331707a306d7688ff8ba3ace6d22786afa5b) : "";
+                if (!empty($query_value)) {
+                    $referer_http_url .= !empty($controller_value) ? "/?" . CONTROLLER . "=$controller_value&" . QUERY . "=" . urlencode($query_value) : "";
                 } else {
-                    $_50ced2b2a9b5561721c65554bf9231a37429662f932b47d6 .= !empty($_87319e1ceb28e02d31264e1d7f561ece3f17a35d59b647a8e466a1f6) ? "/?" . CONTROLLER . "=$_87319e1ceb28e02d31264e1d7f561ece3f17a35d59b647a8e466a1f6" : "";
+                    $referer_http_url .= !empty($controller_value) ? "/?" . CONTROLLER . "=$controller_value" : "";
                 }
                 break;
         }
-        return $_50ced2b2a9b5561721c65554bf9231a37429662f932b47d6;
+        return $referer_http_url;
     }
     public function Dublier($_0b1dff4d63eba63737e7c5623c3884389416cdce736a31c91b87a309780145c0458f6c8fd9b42cc1)
     {
@@ -268,40 +268,40 @@ class Functions
         }
         return array_values($_a98235b1e79b5558fa8f96dfb57bb12b);
     }
-    public function Error($_0573b907732c058ed854711ddc56e4955c6818fe)
+    public function Error($error_msg)
     {
-        $_d88a5792aad8ffc0c9cb2668b70d947bda0d94ac45476735914d485e394fd12c86e01137470da3c8efb382949e7f8b706c0968e916a2ed5d1d250208f1c6611a = $this->path . 'content/errors.log';
-        if (file_exists($_d88a5792aad8ffc0c9cb2668b70d947bda0d94ac45476735914d485e394fd12c86e01137470da3c8efb382949e7f8b706c0968e916a2ed5d1d250208f1c6611a)) {
-            $_db3f5f980935a420f80ad7328c9b1e0e10a5a0e3f4811bec43cc1ff8823a69aa6cfe0301ede43416 = file($_d88a5792aad8ffc0c9cb2668b70d947bda0d94ac45476735914d485e394fd12c86e01137470da3c8efb382949e7f8b706c0968e916a2ed5d1d250208f1c6611a);
-            if (count($_db3f5f980935a420f80ad7328c9b1e0e10a5a0e3f4811bec43cc1ff8823a69aa6cfe0301ede43416) >= 1000) {
-                unlink($_d88a5792aad8ffc0c9cb2668b70d947bda0d94ac45476735914d485e394fd12c86e01137470da3c8efb382949e7f8b706c0968e916a2ed5d1d250208f1c6611a);
+        $error_log_file_path = $this->path . 'content/errors.log';
+        if (file_exists($error_log_file_path)) {
+            $lines = file($error_log_file_path);
+            if (count($lines) >= 1000) {
+                unlink($error_log_file_path);
             }
         }
-        $_c6335a93d067f3a1e8118da3273cd88f = gmdate("d.m.y H:i:s", time() + 10800);
-        file_put_contents($_d88a5792aad8ffc0c9cb2668b70d947bda0d94ac45476735914d485e394fd12c86e01137470da3c8efb382949e7f8b706c0968e916a2ed5d1d250208f1c6611a, "$_c6335a93d067f3a1e8118da3273cd88f - $_0573b907732c058ed854711ddc56e4955c6818fe", FILE_APPEND | LOCK_EX);
+        $current_date = gmdate("d.m.y H:i:s", time() + 10800);
+        file_put_contents($error_log_file_path, "$current_date - $error_msg", FILE_APPEND | LOCK_EX);
     }
     private function Filter($_48a53cf6b064de94dc2cb47968394dc6)
     {
-        $_28e112792272d388bb6d573dc22a057f = $this->GetContents('txt/stop-words.txt');
-        if (!empty($_28e112792272d388bb6d573dc22a057f)) {
-            foreach ($_28e112792272d388bb6d573dc22a057f as $_020600ce => $_9667f0087c3b892e3e24c3db1653e092) {
-                if (preg_match('|^[*]|', $_9667f0087c3b892e3e24c3db1653e092))
-                    $_28e112792272d388bb6d573dc22a057f[$_020600ce] = str_replace('*', '', $_9667f0087c3b892e3e24c3db1653e092) . '$';
-                if (preg_match('|[*]$|', $_9667f0087c3b892e3e24c3db1653e092))
-                    $_28e112792272d388bb6d573dc22a057f[$_020600ce] = '^' . str_replace('*', '', $_9667f0087c3b892e3e24c3db1653e092);
+        $stop_words_array = $this->GetContents('txt/stop-words.txt');
+        if (!empty($stop_words_array)) {
+            foreach ($stop_words_array as $stop_word_index => $stop_word_value) {
+                if (preg_match('|^[*]|', $stop_word_value))
+                    $stop_words_array[$stop_word_index] = str_replace('*', '', $stop_word_value) . '$';
+                if (preg_match('|[*]$|', $stop_word_value))
+                    $stop_words_array[$stop_word_index] = '^' . str_replace('*', '', $stop_word_value);
             }
-            $_9667f0087c3b892e3e24c3db1653e092 = implode('|', $_28e112792272d388bb6d573dc22a057f);
+            $stop_word_value = implode('|', $stop_words_array);
         }
         foreach ($_48a53cf6b064de94dc2cb47968394dc6 as $_c771d53a60957f9483ecd2f19406c4efcf8b77b3a47ff22d => $_b5802d64dc3214e02f00716b3f1460df2840456628713ae4c6dadf2fb247c91f) {
-            $_23dabaf7bf78d57dd387f3b980ca0857968cb6b5                                                      = str_replace('...', '', $_b5802d64dc3214e02f00716b3f1460df2840456628713ae4c6dadf2fb247c91f['title']);
-            $_28e112792272d388bb6d573dc22a057f                                                              = explode(' ', $this->Clear($_23dabaf7bf78d57dd387f3b980ca0857968cb6b5));
-            $_28e112792272d388bb6d573dc22a057f                                                              = array_slice($_28e112792272d388bb6d573dc22a057f, 0, WORDS);
-            $_28e112792272d388bb6d573dc22a057f                                                              = implode(' ', $_28e112792272d388bb6d573dc22a057f);
+            $_23dabaf7bf78d57dd387f3b980ca0857968cb6b5 = str_replace('...', '', $_b5802d64dc3214e02f00716b3f1460df2840456628713ae4c6dadf2fb247c91f['title']);
+            $stop_words_array = explode(' ', $this->Clear($_23dabaf7bf78d57dd387f3b980ca0857968cb6b5));
+            $stop_words_array = array_slice($stop_words_array, 0, WORDS);
+            $stop_words_array = implode(' ', $stop_words_array);
             $_48a53cf6b064de94dc2cb47968394dc6[$_c771d53a60957f9483ecd2f19406c4efcf8b77b3a47ff22d]['title'] = $_23dabaf7bf78d57dd387f3b980ca0857968cb6b5;
-            $_48a53cf6b064de94dc2cb47968394dc6[$_c771d53a60957f9483ecd2f19406c4efcf8b77b3a47ff22d]['words'] = $_28e112792272d388bb6d573dc22a057f;
-            if (!empty($_9667f0087c3b892e3e24c3db1653e092)) {
-                $_77ae380258ac12b2c117cc78c99eed17 = mb_strtolower($_9667f0087c3b892e3e24c3db1653e092, 'UTF-8');
-                $_c921d1aa8e5e8c89848aff9d136fb9c9 = mb_strtolower($_28e112792272d388bb6d573dc22a057f, 'UTF-8');
+            $_48a53cf6b064de94dc2cb47968394dc6[$_c771d53a60957f9483ecd2f19406c4efcf8b77b3a47ff22d]['words'] = $stop_words_array;
+            if (!empty($stop_word_value)) {
+                $_77ae380258ac12b2c117cc78c99eed17 = mb_strtolower($stop_word_value, 'UTF-8');
+                $_c921d1aa8e5e8c89848aff9d136fb9c9 = mb_strtolower($stop_words_array, 'UTF-8');
                 if (preg_match("/$_77ae380258ac12b2c117cc78c99eed17/", $_c921d1aa8e5e8c89848aff9d136fb9c9)) {
                     $_48a53cf6b064de94dc2cb47968394dc6[$_c771d53a60957f9483ecd2f19406c4efcf8b77b3a47ff22d]['words'] = '';
                 }
@@ -309,29 +309,29 @@ class Functions
         }
         return $_48a53cf6b064de94dc2cb47968394dc6;
     }
-    public function GetCache($_deb5b9c7613e92fb7b56e86004292aa5)
+    public function GetCache($cache_file_path)
     {
-        if (file_exists($_deb5b9c7613e92fb7b56e86004292aa5)) {
-            touch($_deb5b9c7613e92fb7b56e86004292aa5);
-            $_deb5b9c7613e92fb7b56e86004292aa5                                 = file_get_contents($_deb5b9c7613e92fb7b56e86004292aa5);
-            $_aa629748189aaa5a1bdb99dfc2f1c23bf1698147da42c4138964bd6f2842e5ca = json_decode($_deb5b9c7613e92fb7b56e86004292aa5, true);
-            return $_aa629748189aaa5a1bdb99dfc2f1c23bf1698147da42c4138964bd6f2842e5ca;
+        if (file_exists($cache_file_path)) {
+            touch($cache_file_path);
+            $cache_file_path = file_get_contents($cache_file_path);
+            $json_array_values = json_decode($cache_file_path, true);
+            return $json_array_values;
         }
     }
-    public function GetContent($_481e3772098759cdfd15bb7f566871354aa2f813100289ee)
+    public function GetContent($content_file_path)
     {
-        $_d4d5318bf7654f828ad43a8013b98372 = $this->getContents($_481e3772098759cdfd15bb7f566871354aa2f813100289ee);
-        if (!empty($_d4d5318bf7654f828ad43a8013b98372)) {
-            $_e918203bc64978b94158287160722b564b5ea63526e81bc42964a4fae63ded97 = array_rand($_d4d5318bf7654f828ad43a8013b98372);
-            return $_d4d5318bf7654f828ad43a8013b98372[$_e918203bc64978b94158287160722b564b5ea63526e81bc42964a4fae63ded97];
+        $content_lines = $this->getContents($content_file_path);
+        if (!empty($content_lines)) {
+            $rand_line = array_rand($content_lines);
+            return $content_lines[$rand_line];
         }
     }
-    public function GetContents($_526d34745e1edb26983173332c579c2d)
+    public function GetContents($file_name)
     {
-        $_b7b03d2e46ed926ebe1bdf4dac23ea790f5b945b7706535cca7a1b9757ffde26 = $this->path . $_526d34745e1edb26983173332c579c2d;
-        if (file_exists($_b7b03d2e46ed926ebe1bdf4dac23ea790f5b945b7706535cca7a1b9757ffde26) and filesize($_b7b03d2e46ed926ebe1bdf4dac23ea790f5b945b7706535cca7a1b9757ffde26) > 0) {
-            $_3f5b474d12c9595d516fcdfcea45add901f845c74d045a17c53c50612ab986bf7ba7ee825d411f360b23ee09424327d5 = file($_b7b03d2e46ed926ebe1bdf4dac23ea790f5b945b7706535cca7a1b9757ffde26, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-            return array_values(array_unique($_3f5b474d12c9595d516fcdfcea45add901f845c74d045a17c53c50612ab986bf7ba7ee825d411f360b23ee09424327d5));
+        $path_to_file = $this->path . $file_name;
+        if (file_exists($path_to_file) and filesize($path_to_file) > 0) {
+            $lines = file($path_to_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            return array_values(array_unique($lines));
         }
     }
     public function GetController($_7d51ecf6483ef83dad413133b992d964408af3d924936683079ae94ebb29f9f0)
@@ -361,9 +361,9 @@ class Functions
                     $_830c64617d808c22cbac79542c109a508a7e41a1 = "content/cache/$_dc6fa59d3c5c707ac5f380ccb815aeb2f00b671352726e3aa6ff9808.json";
                     break;
                 case 'disc':
-                    $_acb85238                                                                                                                         = implode('/', str_split($_dc6fa59d3c5c707ac5f380ccb815aeb2f00b671352726e3aa6ff9808, 1));
+                    $_acb85238 = implode('/', str_split($_dc6fa59d3c5c707ac5f380ccb815aeb2f00b671352726e3aa6ff9808, 1));
                     $_b8cb84225212fa57a73e186766644e9369e02c9925d03b656e0e2103c7e73ae36735d33fa1b8cceefe78afa8064a882c6e1cab3608a9cf1bb6ae427eec04f3e7 = pathinfo($_acb85238, PATHINFO_DIRNAME);
-                    $_646d8196                                                                                                                         = "content/cache/$_b8cb84225212fa57a73e186766644e9369e02c9925d03b656e0e2103c7e73ae36735d33fa1b8cceefe78afa8064a882c6e1cab3608a9cf1bb6ae427eec04f3e7";
+                    $_646d8196 = "content/cache/$_b8cb84225212fa57a73e186766644e9369e02c9925d03b656e0e2103c7e73ae36735d33fa1b8cceefe78afa8064a882c6e1cab3608a9cf1bb6ae427eec04f3e7";
                     if (!is_dir($_646d8196)) {
                         if (!mkdir($_646d8196, 0755, true)) {
                             $this->Error("Can't create directory $_646d8196.");
@@ -378,58 +378,58 @@ class Functions
     }
     public function GetFolders()
     {
-        $_c7c341277cb0c87d85dc4fd8e04ce54974794f6975543e7cac75ed3657798016 = array();
-        $_9e2b176976724abfe5b274f25d23e05a11006e2d8315c54b9fde1293cab62bbe = array(
+        $extra_folders_in_tempate_folder_array = array();
+        $standart_folders_array = array(
             'userinc',
             'img',
             'css',
             'js'
         );
-        $_2bf9b23157be3163a731e06cf344f3fe9775ad7b87a4cfcb                 = glob("templates/" . TEMPLATE . "/*", GLOB_ONLYDIR);
-        foreach ($_2bf9b23157be3163a731e06cf344f3fe9775ad7b87a4cfcb as $_1e4d5021803ec7f87cbc31bcea7d7949b29487dd25d8a3899d6ebb8d0f91aa56a811c33cc4b6a0c5bef173aacc0fc49413c0d079861fc783645828f3984389c9) {
-            $_be41fef6bae4f85b74de16000ba02ddf = pathinfo($_1e4d5021803ec7f87cbc31bcea7d7949b29487dd25d8a3899d6ebb8d0f91aa56a811c33cc4b6a0c5bef173aacc0fc49413c0d079861fc783645828f3984389c9, PATHINFO_FILENAME);
-            if (!in_array($_be41fef6bae4f85b74de16000ba02ddf, $_9e2b176976724abfe5b274f25d23e05a11006e2d8315c54b9fde1293cab62bbe)) {
-                $_c7c341277cb0c87d85dc4fd8e04ce54974794f6975543e7cac75ed3657798016[] = $_be41fef6bae4f85b74de16000ba02ddf;
+        $template_folder_array = glob("templates/" . TEMPLATE . "/*", GLOB_ONLYDIR);
+        foreach ($template_folder_array as $template_folder) {
+            $filename_value = pathinfo($template_folder, PATHINFO_FILENAME);
+            if (!in_array($filename_value, $standart_folders_array)) {
+                $extra_folders_in_tempate_folder_array[] = $filename_value;
             }
         }
-        return $_c7c341277cb0c87d85dc4fd8e04ce54974794f6975543e7cac75ed3657798016;
+        return $extra_folders_in_tempate_folder_array;
     }
-    public function GetHTML($_d5d95599389f1efbadea727fd5354be542e9a22d0d2e39034bd21552, $_22e3f969)
+    public function GetHTML($url_value, $host_value)
     {
-        $_12f5e7547880cda6b32fbf0592aba5425584ae1fb81ad963186a09ecf6eb04125f544e3b2cb42303be9a3fd41c4c56a94634a61e337807f2e5b0c659ec278308 = $this->GetContent('txt/browsers.txt');
+        $browsers_lines = $this->GetContent('txt/browsers.txt');
         if (in_array('curl', get_loaded_extensions())) {
-            $_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a = curl_init();
-            curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_URL, $_d5d95599389f1efbadea727fd5354be542e9a22d0d2e39034bd21552);
-            curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_USERAGENT, $_12f5e7547880cda6b32fbf0592aba5425584ae1fb81ad963186a09ecf6eb04125f544e3b2cb42303be9a3fd41c4c56a94634a61e337807f2e5b0c659ec278308);
-            $_d40546bd122c921a2182b4e0e2ea5ee6 = $this->GetContent('txt/proxies.txt');
-            if ($_d40546bd122c921a2182b4e0e2ea5ee6) {
-                curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_PROXY, $_d40546bd122c921a2182b4e0e2ea5ee6);
-                curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
+            $curl_descriptor = curl_init();
+            curl_setopt($curl_descriptor, CURLOPT_URL, $url_value);
+            curl_setopt($curl_descriptor, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($curl_descriptor, CURLOPT_USERAGENT, $browsers_lines);
+            $proxy_list = $this->GetContent('txt/proxies.txt');
+            if ($proxy_list) {
+                curl_setopt($curl_descriptor, CURLOPT_PROXY, $proxy_list);
+                curl_setopt($curl_descriptor, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
             }
-            curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_TIMEOUT, 15);
-            $_04dd72e973847607c7d4e6cd938f170c49d14a9e78bedb7c2158d4c2 = curl_exec($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a);
-            curl_close($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a);
-            $_9b9540098da4f542604041ec8927619e4d00f84cf84223de20e7a88d18c0752fe525178a650f9f6e3818a80714305e53 = str_get_html($_04dd72e973847607c7d4e6cd938f170c49d14a9e78bedb7c2158d4c2);
-            if (is_bool($_9b9540098da4f542604041ec8927619e4d00f84cf84223de20e7a88d18c0752fe525178a650f9f6e3818a80714305e53)) {
-                $this->Error("Proxy $_d40546bd122c921a2182b4e0e2ea5ee6 does not work. Please remove it.");
+            curl_setopt($curl_descriptor, CURLOPT_TIMEOUT, 15);
+            $url_content = curl_exec($curl_descriptor);
+            curl_close($curl_descriptor);
+            $html_dom = str_get_html($url_content);
+            if (is_bool($html_dom)) {
+                $this->Error("Proxy $proxy_list does not work. Please remove it.");
             }
         } else {
-            $_cf9bbb7ed922b875cad68bfc1bae3f950a75a194985c8c1fcaf3c76a954f6f1a3eb1e50021cb5a187fe615b6eb27ff17ebaf0990546c441edd13f1447a1f952b = array(
+            $request_params_array = array(
                 'http' => array(
                     'method' => "GET",
-                    'header' => "Host: $_22e3f969" . "User-Agent: $_12f5e7547880cda6b32fbf0592aba5425584ae1fb81ad963186a09ecf6eb04125f544e3b2cb42303be9a3fd41c4c56a94634a61e337807f2e5b0c659ec278308"
+                    'header' => "Host: $host_value" . "User-Agent: $browsers_lines"
                 )
             );
-            $_f7afe154ad13c034c053d8ff862e861eaa953834827fd725ee6c9303e7e82cdc                                                                 = stream_context_create($_cf9bbb7ed922b875cad68bfc1bae3f950a75a194985c8c1fcaf3c76a954f6f1a3eb1e50021cb5a187fe615b6eb27ff17ebaf0990546c441edd13f1447a1f952b);
-            $_9b9540098da4f542604041ec8927619e4d00f84cf84223de20e7a88d18c0752fe525178a650f9f6e3818a80714305e53                                 = file_get_html($_d5d95599389f1efbadea727fd5354be542e9a22d0d2e39034bd21552, false, $_f7afe154ad13c034c053d8ff862e861eaa953834827fd725ee6c9303e7e82cdc);
+            $html_file_content = stream_context_create($request_params_array);
+            $html_dom = file_get_html($url_value, false, $html_file_content);
         }
-        return $_9b9540098da4f542604041ec8927619e4d00f84cf84223de20e7a88d18c0752fe525178a650f9f6e3818a80714305e53;
+        return $html_dom;
     }
-    public function GetImage($_2bb2d272f5ece767095f2ae4ed4540ec)
+    public function GetImage($image_content)
     {
-        $_1f5f5b265100daad35b3a491e1c55351 = $this->host . '/image.php?' . base64_encode($_2bb2d272f5ece767095f2ae4ed4540ec);
-        return $_1f5f5b265100daad35b3a491e1c55351;
+        $encoded_image = $this->host . '/image.php?' . base64_encode($image_content);
+        return $encoded_image;
     }
     public function GetKeyword()
     {
@@ -510,77 +510,78 @@ class Functions
         }
         return array_reverse($_9d333506902e2269952a26ae595c223c7e6c184e5ab1dfcc);
     }
-    public function GetPage($_0d16bb215d8dc885d3d525a314af36ae72730c782a3616e67df4b97a410364db)
+    public function GetPage($folder_name)
     {
-        $_b4e4afecb1a4ad3d4700fa8088e85617acd4fdceea05ae70 = $this->GetFolders();
-        if (in_array($_0d16bb215d8dc885d3d525a314af36ae72730c782a3616e67df4b97a410364db, $_b4e4afecb1a4ad3d4700fa8088e85617acd4fdceea05ae70)) {
-            $_3e1c1c3c88a4b996390eafbc3720be28 = glob("templates/" . TEMPLATE . "/$_0d16bb215d8dc885d3d525a314af36ae72730c782a3616e67df4b97a410364db/*.php", GLOB_NOSORT);
-            if (empty($_3e1c1c3c88a4b996390eafbc3720be28)) {
-                $_3e1c1c3c88a4b996390eafbc3720be28                                 = glob("templates/" . TEMPLATE . "/result/*.php", GLOB_NOSORT);
-                $_0d16bb215d8dc885d3d525a314af36ae72730c782a3616e67df4b97a410364db = 'result';
+        $folders_array = $this->GetFolders();
+        if (in_array($folder_name, $folders_array)) {
+            $php_file_descriptor_list = glob("templates/" . TEMPLATE . "/$folder_name/*.php", GLOB_NOSORT);
+            if (empty($php_file_descriptor_list)) {
+                $php_file_descriptor_list = glob("templates/" . TEMPLATE . "/result/*.php", GLOB_NOSORT);
+                $folder_name = 'result';
             }
         } else {
-            $_3e1c1c3c88a4b996390eafbc3720be28                                 = glob("templates/" . TEMPLATE . "/result/*.php", GLOB_NOSORT);
-            $_0d16bb215d8dc885d3d525a314af36ae72730c782a3616e67df4b97a410364db = 'result';
+            $php_file_descriptor_list  glob("templates/" . TEMPLATE . "/result/*.php", GLOB_NOSORT);
+            $folder_name = 'result';
         }
-        $_a350da74412ca741d07ab86e847badc1 = array();
-        foreach ($_3e1c1c3c88a4b996390eafbc3720be28 as $_eb04716e063f60d082bc85a23c86141f1266a326f71cd6e5) {
-            $_2436d80a0d005509e23101ca51db99483569686d = pathinfo($_eb04716e063f60d082bc85a23c86141f1266a326f71cd6e5, PATHINFO_FILENAME);
-            if ($_2436d80a0d005509e23101ca51db99483569686d !== 'index') {
-                $_a350da74412ca741d07ab86e847badc1[] = $_2436d80a0d005509e23101ca51db99483569686d;
+        $php_file_names_list_not_index = array();
+        foreach ($php_file_descriptor_list as $php_file_descriptor) {
+            $php_file_name = pathinfo($php_file_descriptor, PATHINFO_FILENAME);
+            if ($php_file_name !== 'index') {
+                $php_file_names_list_not_index[] = $php_file_name;
             }
         }
-        $_2436d80a0d005509e23101ca51db99483569686d = $_a350da74412ca741d07ab86e847badc1[array_rand($_a350da74412ca741d07ab86e847badc1)];
-        return "$_0d16bb215d8dc885d3d525a314af36ae72730c782a3616e67df4b97a410364db/$_2436d80a0d005509e23101ca51db99483569686d";
+        $php_file_name = $php_file_names_list_not_index[array_rand($php_file_names_list_not_index)];
+        return "$folder_name/$php_file_name";
     }
+	
     public function GetPages()
     {
-        $_3ce553f1b6cb49103bf55f430a933ac0999f27df                 = array();
-        $_f78b913cbaa45d46af1cc61c6f436acf405f706bf60ed736e8f260a1 = array(
+        $php_file_name_list = array();
+        $predefined_names = array(
             'base',
             'home'
         );
-        $_055f5d97                                                 = glob('templates/' . TEMPLATE . '/*.php', GLOB_NOSORT);
-        foreach ($_055f5d97 as $_d7d8bc782ae1643b6fabf261332ee4a32683713c) {
-            $_d497205f9bbb4ff229717ce2cc831599b2afd711b2457309fa95d556 = pathinfo($_d7d8bc782ae1643b6fabf261332ee4a32683713c, PATHINFO_FILENAME);
-            if (!in_array($_d497205f9bbb4ff229717ce2cc831599b2afd711b2457309fa95d556, $_f78b913cbaa45d46af1cc61c6f436acf405f706bf60ed736e8f260a1)) {
-                $_3ce553f1b6cb49103bf55f430a933ac0999f27df[] = $_d497205f9bbb4ff229717ce2cc831599b2afd711b2457309fa95d556;
+        $php_file_descriptor_list = glob('templates/' . TEMPLATE . '/*.php', GLOB_NOSORT);
+        foreach ($php_file_descriptor_list as $php_file_descriptor) {
+            $php_file_name = pathinfo($php_file_descriptor, PATHINFO_FILENAME);
+            if (!in_array($php_file_name, $predefined_names)) {
+                $php_file_name_list[] = $php_file_name;
             }
         }
-        return $_3ce553f1b6cb49103bf55f430a933ac0999f27df;
+        return $php_file_name_list;
     }
-    public function GetPluginObject($_6ffd3bb3dc9612915eefa0d60b27921aed811474, $_5866db2005a6e7ce2e3073c8bf09e05c)
+    public function GetPluginObject($plugin_name, $plugin_folder)
     {
-        require_once $this->path . "application/plugins/$_5866db2005a6e7ce2e3073c8bf09e05c/$_6ffd3bb3dc9612915eefa0d60b27921aed811474.php";
-        $_243d57c7adf74a735417366273a728ad7573d74b = new ReflectionClass($_6ffd3bb3dc9612915eefa0d60b27921aed811474);
-        if ($_243d57c7adf74a735417366273a728ad7573d74b->getConstructor() === NULL) {
-            $_95196c95ae919ba5a83d3717fddb8e28 = new $_6ffd3bb3dc9612915eefa0d60b27921aed811474();
-            return $_95196c95ae919ba5a83d3717fddb8e28;
+        require_once $this->path . "application/plugins/$plugin_folder/$plugin_name.php";
+        $my_reflection_class = new ReflectionClass($plugin_name);
+        if ($my_reflection_class->getConstructor() === NULL) {
+            $my_plugin = new $plugin_name();
+            return $my_plugin;
         }
     }
-    public function GetQueries($_895dcdee271bdae8ce1ea437591499fe20fa31813c21f814473d6c6bbf2b33db)
+    public function GetQueries($input_query_list)
     {
-        $_db3156b54d7cee17c9a848bf7c01b6a617f94c82 = glob('content/base/*/*', GLOB_NOSORT);
-        if (!empty($_db3156b54d7cee17c9a848bf7c01b6a617f94c82)) {
-            $_109786267d6aff856324e181b83a403c0cf28a7b06fe07f5 = array();
-            foreach ($_db3156b54d7cee17c9a848bf7c01b6a617f94c82 as $_7f93ae6489d2f836d740ed69c95f52a8c2ab4f64514dea9e) {
-                if (filesize($_7f93ae6489d2f836d740ed69c95f52a8c2ab4f64514dea9e) > 0) {
-                    $_109786267d6aff856324e181b83a403c0cf28a7b06fe07f5[] = $_7f93ae6489d2f836d740ed69c95f52a8c2ab4f64514dea9e;
+        $query_descriptor_file_array = glob('content/base/*/*', GLOB_NOSORT);
+        if (!empty($query_descriptor_file_array)) {
+            $query_descriptor_file_with_not_zero_size_copy = array();
+            foreach ($query_descriptor_file_array as $query_descriptor_file) {
+                if (filesize($query_descriptor_file) > 0) {
+                    $query_descriptor_file_with_not_zero_size_copy[] = $query_descriptor_file;
                 }
             }
-            if (!empty($_109786267d6aff856324e181b83a403c0cf28a7b06fe07f5)) {
-                $_fec963fe25da0f592279c214f47cc146103dd8e3156f2bc8 = array();
-                while (count($_fec963fe25da0f592279c214f47cc146103dd8e3156f2bc8) < $_895dcdee271bdae8ce1ea437591499fe20fa31813c21f814473d6c6bbf2b33db) {
-                    $_7f93ae6489d2f836d740ed69c95f52a8c2ab4f64514dea9e                                                                                 = $_109786267d6aff856324e181b83a403c0cf28a7b06fe07f5[array_rand($_109786267d6aff856324e181b83a403c0cf28a7b06fe07f5)];
-                    $_c64cacf21cce73c5478d6447fba5341c6e6f6d8532bfeddf9d4952afaf2cfa3fd4f8d3dafede2c1c49e89d7622673669477c37899a3260b3fdf866cf598886d4 = file($_7f93ae6489d2f836d740ed69c95f52a8c2ab4f64514dea9e, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-                    shuffle($_c64cacf21cce73c5478d6447fba5341c6e6f6d8532bfeddf9d4952afaf2cfa3fd4f8d3dafede2c1c49e89d7622673669477c37899a3260b3fdf866cf598886d4);
-                    foreach ($_c64cacf21cce73c5478d6447fba5341c6e6f6d8532bfeddf9d4952afaf2cfa3fd4f8d3dafede2c1c49e89d7622673669477c37899a3260b3fdf866cf598886d4 as $_fc4eb322602e7ebac57b25568168ad39) {
-                        if (count($_fec963fe25da0f592279c214f47cc146103dd8e3156f2bc8) < $_895dcdee271bdae8ce1ea437591499fe20fa31813c21f814473d6c6bbf2b33db) {
-                            $_fec963fe25da0f592279c214f47cc146103dd8e3156f2bc8[] = json_decode($_fc4eb322602e7ebac57b25568168ad39)->query;
+            if (!empty($query_descriptor_file_with_not_zero_size_copy)) {
+                $output_query_list = array();
+                while (count($output_query_list) < $input_query_list) {
+                    $query_descriptor_file = $query_descriptor_file_with_not_zero_size_copy[array_rand($query_descriptor_file_with_not_zero_size_copy)];
+                    $query_file_lines = file($query_descriptor_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+                    shuffle($query_file_lines);
+                    foreach ($query_file_lines as $query_file_line) {
+                        if (count($output_query_list) < $input_query_list) {
+                            $output_query_list[] = json_decode($query_file_line)->query;
                         }
                     }
                 }
-                return $_fec963fe25da0f592279c214f47cc146103dd8e3156f2bc8;
+                return $output_query_list;
             }
         }
     }
@@ -637,27 +638,27 @@ class Functions
         }
         return $_f2f68331352ee0eecc83761341db7c7e6196ac02fbcee5ca;
     }
-    private function GetSnippets($_22541c8c0e7d3f47a1e88ff50882af5a03f132135bbf4a5866aee36e6a9a9a31889fed51a512e7466b8a242c3ad153a1fa21d55b45a9c0d64b4d511e7280bd57, $_2333641c600b77573d1a03df3234ba6ba06d650280d9310de18b8efaed64f76ae79fdbdc316b2ddaabe87e0024e2e2e6838e8372020b945bb4a673ac09ba5333, $_644e9393b50247621f2ac8b742d82bca)
+    private function GetSnippets($snippet_array, $key_words, $new_snippets_count)
     {
-        foreach (glob('application/plugins/snippets/*.php') as $_b15b341b28412c5c2d989d4c9f4e8a4c61887e28e4822c54) {
-            $_b15b341b28412c5c2d989d4c9f4e8a4c61887e28e4822c54 = pathinfo($_b15b341b28412c5c2d989d4c9f4e8a4c61887e28e4822c54, PATHINFO_FILENAME);
-            if (!in_array($_b15b341b28412c5c2d989d4c9f4e8a4c61887e28e4822c54, $_22541c8c0e7d3f47a1e88ff50882af5a03f132135bbf4a5866aee36e6a9a9a31889fed51a512e7466b8a242c3ad153a1fa21d55b45a9c0d64b4d511e7280bd57)) {
-                $_766825cd89dbaf318b1f82205b9c0b5223ec2acc4ce7aef4b5f754c422380710[] = $_b15b341b28412c5c2d989d4c9f4e8a4c61887e28e4822c54;
+        foreach (glob('application/plugins/snippets/*.php') as $snippet_name) {
+            $snippet_name = pathinfo($snippet_name, PATHINFO_FILENAME);
+            if (!in_array($snippet_name, $snippet_array)) {
+                $extra_snippet_array[] = $snippet_name;
             }
         }
-        $_b15b341b28412c5c2d989d4c9f4e8a4c61887e28e4822c54         = $_766825cd89dbaf318b1f82205b9c0b5223ec2acc4ce7aef4b5f754c422380710[array_rand($_766825cd89dbaf318b1f82205b9c0b5223ec2acc4ce7aef4b5f754c422380710)];
-        $_ff4fb8014b021536959088600fb82fbd11099d4ecd924b57c37296f8 = $this->GetPluginObject($_b15b341b28412c5c2d989d4c9f4e8a4c61887e28e4822c54, 'snippets');
-        $_644e9393b50247621f2ac8b742d82bca                         = COUNT_SNIPPETS - $_644e9393b50247621f2ac8b742d82bca;
-        $_ab5718577dba7411e6360ad11e69a886c7783262e4ecd7e61b4528d7 = $_ff4fb8014b021536959088600fb82fbd11099d4ecd924b57c37296f8->Start($_2333641c600b77573d1a03df3234ba6ba06d650280d9310de18b8efaed64f76ae79fdbdc316b2ddaabe87e0024e2e2e6838e8372020b945bb4a673ac09ba5333, LANGUAGE, $_644e9393b50247621f2ac8b742d82bca, $this);
-        return $_ab5718577dba7411e6360ad11e69a886c7783262e4ecd7e61b4528d7;
+        $snippet_name = $extra_snippet_array[array_rand($extra_snippet_array)];
+        $my_snippet = $this->GetPluginObject($snippet_name, 'snippets');
+        $new_snippets_count = COUNT_SNIPPETS - $new_snippets_count;
+        $snippets_array = $my_snippet->Start($key_words, LANGUAGE, $new_snippets_count, $this);
+        return $snippets_array;
     }
-    public function Ping($_7a9e800f5606ae4fca16e95ce4220d39f81308cf3fa83bf582846da8caba62ab601106ccfdf3db99f204d223a70bcda4172b305ecd3c674f8d264ceaf1d8dca0, $_b12a34b13e42d833b95cdecf1ed08f4f7dd817348d5ce26b)
+    public function Ping($url_for_ping, $query_for_ping)
     {
         if (strlen(PINGERS) > 0) {
-            $_e4663075aeb7735b7f820ea0c37c0067015e2616fe72c23ca3442aab0418ac53 = explode(' | ', PINGERS);
-            foreach ($_e4663075aeb7735b7f820ea0c37c0067015e2616fe72c23ca3442aab0418ac53 as $_957b4de48fd8d8a83cc5be1ca9d34338fd748a3b16f96ba286894f220eb67a63) {
-                $_9244c78f80042674d2bc2a5d8d1fccf3fa6c463800c590eb99552cff = $this->GetPluginObject($_957b4de48fd8d8a83cc5be1ca9d34338fd748a3b16f96ba286894f220eb67a63, 'pingers');
-                $_9244c78f80042674d2bc2a5d8d1fccf3fa6c463800c590eb99552cff->Start($_7a9e800f5606ae4fca16e95ce4220d39f81308cf3fa83bf582846da8caba62ab601106ccfdf3db99f204d223a70bcda4172b305ecd3c674f8d264ceaf1d8dca0, $_b12a34b13e42d833b95cdecf1ed08f4f7dd817348d5ce26b, $this);
+            $pingers_array = explode(' | ', PINGERS);
+            foreach ($pingers_array as $pinger_name) {
+                $my_pinger = $this->GetPluginObject($pinger_name, 'pingers');
+                $my_pinger->Start($url_for_ping, $query_for_ping, $this);
             }
         }
     }
@@ -665,19 +666,19 @@ class Functions
     {
         switch (CACHE) {
             case 'index':
-                $_a908108927b64fb6ffd67df098c977ec32c8cbfd6f6b394c = glob("content/cache/*.json", GLOB_NOSORT);
-                if (!empty($_a908108927b64fb6ffd67df098c977ec32c8cbfd6f6b394c)) {
-                    $_d3fec7709e289ab2feaec2443e030e882773a6e087505ae29150c0509cc6d16b = $_a908108927b64fb6ffd67df098c977ec32c8cbfd6f6b394c[array_rand($_a908108927b64fb6ffd67df098c977ec32c8cbfd6f6b394c)];
-                    $_d8473e479b1342d802bc2c984cd9b005f94ba7e5e04364fc2bcb3db6         = pathinfo($_d3fec7709e289ab2feaec2443e030e882773a6e087505ae29150c0509cc6d16b, PATHINFO_FILENAME);
-                    $_4cc66e33b18797d3d3858fd8be8d95886d747e95d23925d52229d681         = $this->GetQuery("/result/$_d8473e479b1342d802bc2c984cd9b005f94ba7e5e04364fc2bcb3db6");
-                    return $_4cc66e33b18797d3d3858fd8be8d95886d747e95d23925d52229d681;
+                $json_cache_index_file_list = glob("content/cache/*.json", GLOB_NOSORT);
+                if (!empty($json_cache_index_file_list)) {
+                    $random_json_cache_index_file_list = $json_cache_index_file_list[array_rand($json_cache_index_file_list)];
+                    $cache_file_name         = pathinfo($random_json_cache_index_file_list, PATHINFO_FILENAME);
+                    $query_string         = $this->GetQuery("/result/$cache_file_name");
+                    return $query_string;
                 }
                 break;
             case 'disc':
-                $_d8473e479b1342d802bc2c984cd9b005f94ba7e5e04364fc2bcb3db6 = $this->GetContent('content/cache/disc.txt');
-                if (!empty($_d8473e479b1342d802bc2c984cd9b005f94ba7e5e04364fc2bcb3db6)) {
-                    $_4cc66e33b18797d3d3858fd8be8d95886d747e95d23925d52229d681 = $this->GetQuery("/result/$_d8473e479b1342d802bc2c984cd9b005f94ba7e5e04364fc2bcb3db6");
-                    return $_4cc66e33b18797d3d3858fd8be8d95886d747e95d23925d52229d681;
+                $cache_file_name = $this->GetContent('content/cache/disc.txt');
+                if (!empty($cache_file_name)) {
+                    $query_string = $this->GetQuery("/result/$cache_file_name");
+                    return $query_string;
                 }
                 break;
         }
@@ -721,35 +722,35 @@ CONTENT;
     private function RemoveCache()
     {
         if (CACHE == 'index') {
-            $_e6dde855d475ea028531318458dbff203af2979082229273a0c64646ab188d8d = glob("content/cache/*.json", GLOB_NOSORT);
-            if (count($_e6dde855d475ea028531318458dbff203af2979082229273a0c64646ab188d8d) > COUNT_FILES) {
-                $_a8ccde601ab45a4e801148ef3b682d62b3afe39c6ef8d8ef2da2646110eb8015 = array();
-                foreach ($_e6dde855d475ea028531318458dbff203af2979082229273a0c64646ab188d8d as $_de6c23dc90b9221fe0150f8a68ec733b796edddca14b69d2fff8f472a4ec797f416319202533dcbdef69a4ee654fab8d => $_107efea6c91609d2ad416bddba15a8a8) {
-                    $_a8ccde601ab45a4e801148ef3b682d62b3afe39c6ef8d8ef2da2646110eb8015[$_de6c23dc90b9221fe0150f8a68ec733b796edddca14b69d2fff8f472a4ec797f416319202533dcbdef69a4ee654fab8d]['time'] = time() - filemtime($_107efea6c91609d2ad416bddba15a8a8);
-                    $_a8ccde601ab45a4e801148ef3b682d62b3afe39c6ef8d8ef2da2646110eb8015[$_de6c23dc90b9221fe0150f8a68ec733b796edddca14b69d2fff8f472a4ec797f416319202533dcbdef69a4ee654fab8d]['name'] = $_107efea6c91609d2ad416bddba15a8a8;
+            $json_cache_index_file_list = glob("content/cache/*.json", GLOB_NOSORT);
+            if (count($json_cache_index_file_list) > COUNT_FILES) {
+                $file_to_delete_list = array();
+                foreach ($json_cache_index_file_list as $json_cache_index_file_index => $cache_file_name) {
+                    $file_to_delete_list[$json_cache_index_file_index]['time'] = time() - filemtime($cache_file_name);
+                    $file_to_delete_list[$json_cache_index_file_index]['name'] = $cache_file_name;
                 }
-                arsort($_a8ccde601ab45a4e801148ef3b682d62b3afe39c6ef8d8ef2da2646110eb8015);
-                $_de6c23dc90b9221fe0150f8a68ec733b796edddca14b69d2fff8f472a4ec797f416319202533dcbdef69a4ee654fab8d = 1;
-                $_f7b2383990085a67de60b6ea18137d4c                                                                 = count($_e6dde855d475ea028531318458dbff203af2979082229273a0c64646ab188d8d) - COUNT_FILES;
-                foreach ($_a8ccde601ab45a4e801148ef3b682d62b3afe39c6ef8d8ef2da2646110eb8015 as $_705dfcb39e717508f1841d6907e2b4da) {
-                    if ($_de6c23dc90b9221fe0150f8a68ec733b796edddca14b69d2fff8f472a4ec797f416319202533dcbdef69a4ee654fab8d <= $_f7b2383990085a67de60b6ea18137d4c) {
-                        unlink($_705dfcb39e717508f1841d6907e2b4da['name']);
-                        $_de6c23dc90b9221fe0150f8a68ec733b796edddca14b69d2fff8f472a4ec797f416319202533dcbdef69a4ee654fab8d++;
+                arsort($file_to_delete_list);
+                $json_cache_index_file_index = 1;
+                $file_count_for_delete = count($json_cache_index_file_list) - COUNT_FILES;
+                foreach ($file_to_delete_list as $file_to_delete) {
+                    if ($json_cache_index_file_index <= $file_count_for_delete) {
+                        unlink($file_to_delete['name']);
+                        $json_cache_index_file_index++;
                     }
                 }
             }
         }
     }
-    public function RemoveDirectory($_69f106769fa8487f68cd1f61fd9f189802df3325904a2a256ba5b559e132dc6fdbb7074b0a4ccf576435982b56af0464bd5e31a36a01c036ccc30295f91b88d9)
+    public function RemoveDirectory($dir_to_remove)
     {
-        if ($_b792a60520c778f0b55c8f5ddeb3a1b4031fecbb337e68a6966f2ae7 = glob($_69f106769fa8487f68cd1f61fd9f189802df3325904a2a256ba5b559e132dc6fdbb7074b0a4ccf576435982b56af0464bd5e31a36a01c036ccc30295f91b88d9 . "/*")) {
-            foreach ($_b792a60520c778f0b55c8f5ddeb3a1b4031fecbb337e68a6966f2ae7 as $_29708e134ec9079f1d5f191db42c1b6a933efe72eed057b0fef463212fbeda7b7ebaba03f6b709f9ee29c75ec5a612fc58879badacc843c6b4391ad3382cd460) {
-                if (file_exists("$_69f106769fa8487f68cd1f61fd9f189802df3325904a2a256ba5b559e132dc6fdbb7074b0a4ccf576435982b56af0464bd5e31a36a01c036ccc30295f91b88d9/.htaccess"))
-                    unlink("$_69f106769fa8487f68cd1f61fd9f189802df3325904a2a256ba5b559e132dc6fdbb7074b0a4ccf576435982b56af0464bd5e31a36a01c036ccc30295f91b88d9/.htaccess");
-                is_dir($_29708e134ec9079f1d5f191db42c1b6a933efe72eed057b0fef463212fbeda7b7ebaba03f6b709f9ee29c75ec5a612fc58879badacc843c6b4391ad3382cd460) ? $this->RemoveDirectory($_29708e134ec9079f1d5f191db42c1b6a933efe72eed057b0fef463212fbeda7b7ebaba03f6b709f9ee29c75ec5a612fc58879badacc843c6b4391ad3382cd460) : unlink($_29708e134ec9079f1d5f191db42c1b6a933efe72eed057b0fef463212fbeda7b7ebaba03f6b709f9ee29c75ec5a612fc58879badacc843c6b4391ad3382cd460);
+        if ($file_descriptor_list = glob($dir_to_remove . "/*")) {
+            foreach ($file_descriptor_list as $file_descriptor) {
+                if (file_exists("$dir_to_remove/.htaccess"))
+                    unlink("$dir_to_remove/.htaccess");
+                is_dir($file_descriptor) ? $this->RemoveDirectory($file_descriptor) : unlink($file_descriptor);
             }
         }
-        rmdir($_69f106769fa8487f68cd1f61fd9f189802df3325904a2a256ba5b559e132dc6fdbb7074b0a4ccf576435982b56af0464bd5e31a36a01c036ccc30295f91b88d9);
+        rmdir($dir_to_remove);
     }
     public function Run($_db8a5b5600156c1efdeaeb38444c4e9c)
     {
@@ -848,25 +849,25 @@ CONTENT;
             }
         }
     }
-    public function Url($_93eb41f1d63972e544bc719e8bfcc395)
+    public function Url($key_words)
     {
-        $_4fe64b3ba974b24c973080fd951538364ad24a81 = $this->GetContent('txt/urls.txt');
-        if (!empty($_4fe64b3ba974b24c973080fd951538364ad24a81)) {
-            if (preg_match('|#KEYWORD#|', $_4fe64b3ba974b24c973080fd951538364ad24a81)) {
-                $_4fe64b3ba974b24c973080fd951538364ad24a81 = str_replace('#KEYWORD#', $_93eb41f1d63972e544bc719e8bfcc395, $_4fe64b3ba974b24c973080fd951538364ad24a81);
+        $url_lines = $this->GetContent('txt/urls.txt');
+        if (!empty($url_lines)) {
+            if (preg_match('|#KEYWORD#|', $url_lines)) {
+                $url_lines = str_replace('#KEYWORD#', $key_words, $url_lines);
             }
-            return $_4fe64b3ba974b24c973080fd951538364ad24a81;
+            return $url_lines;
         }
     }
-    public function View($_f7f580e11d00a75814d2ded41fe8e8fe, $_3cc7e66bd2bf4b7a0773db81d1d9dd60279115e1da1081830750eb5a140dddd8 = array())
+    public function View($file_name, $_3cc7e66bd2bf4b7a0773db81d1d9dd60279115e1da1081830750eb5a140dddd8 = array())
     {
         foreach ($_3cc7e66bd2bf4b7a0773db81d1d9dd60279115e1da1081830750eb5a140dddd8 as $_bb55e73870b8452738bbd58e0318ff43268c583270f64978fa666b5fc4e676ca => $_769ac34a4012ab69c069de0bab7d9e81) {
             $$_bb55e73870b8452738bbd58e0318ff43268c583270f64978fa666b5fc4e676ca = $_769ac34a4012ab69c069de0bab7d9e81;
         }
-        if (file_exists("templates/" . TEMPLATE . "/$_f7f580e11d00a75814d2ded41fe8e8fe.php")) {
-            require "templates/" . TEMPLATE . "/$_f7f580e11d00a75814d2ded41fe8e8fe.php";
+        if (file_exists("templates/" . TEMPLATE . "/$file_name.php")) {
+            require "templates/" . TEMPLATE . "/$file_name.php";
         } else {
-            echo "<h1>Error 404 - File not found.</h1>$_f7f580e11d00a75814d2ded41fe8e8fe.php file does not exist in the directory templates/" . TEMPLATE . "<br>";
+            echo "<h1>Error 404 - File not found.</h1>$file_name.php file does not exist in the directory templates/" . TEMPLATE . "<br>";
         }
     }
 }

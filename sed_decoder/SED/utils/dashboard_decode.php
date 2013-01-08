@@ -15,25 +15,25 @@ if (!isset ($_COOKIE['password']) or $_COOKIE['password'] !== PASSWORD)
 		}
 	}
 }
-$_2952aeca0fe15cf310ede96c437acb94b2b208f1 = array ();
+$config_params = array ();
 $config_file = file('../config.php');
 foreach ($config_file as $config_file_element)
 {
-	preg_match_all('|"(.+?)"|', $config_file_element, $_5405112e5244c3fc172074fed023e5336640ec496bd0bf5e60a43165d593ea21);
-	if (!empty ($_5405112e5244c3fc172074fed023e5336640ec496bd0bf5e60a43165d593ea21[1]))
+	preg_match_all('|"(.+?)"|', $config_file_element, $matches_array);
+	if (!empty ($matches_array[1]))
 	{
-		$_2952aeca0fe15cf310ede96c437acb94b2b208f1[$_5405112e5244c3fc172074fed023e5336640ec496bd0bf5e60a43165d593ea21[1][0]] = !empty ($_5405112e5244c3fc172074fed023e5336640ec496bd0bf5e60a43165d593ea21[1][1]) ? $_5405112e5244c3fc172074fed023e5336640ec496bd0bf5e60a43165d593ea21[1][1] : '';
+		$config_params[$matches_array[1][0]] = !empty ($matches_array[1][1]) ? $matches_array[1][1] : '';
 	}
 }
-function Parameter($_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d, $_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a)
+function Parameter($config_param_label, $_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a)
 {
-	$_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0 = '<a href="http://autosed.com/manual/#' . strtolower($_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d) . '" target="_blank"><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNy8xNi8xMjRk/+8AAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABG0lEQVQokZ2SoW6DUBSGP9gVICrIFBUTCLJkEosoCbJJVe0kdnXlEZBgeYumciTrC2ArJhAVJZkhS5u0WZowsV7SUliW/fK/57v3nP8epa5rpMIwGwEzYMK1FkAcRf5KGooEwzCLgRd+VxJF/qwB25CuC0xzAEBRVJ2wMp+/joA36bruA+Ox3VSV5Y40zTkcTpewd+e6zzHwKB0hVKrqSJYVgIJt37Pff7HZfF6ChmgHURRV056uCxzHRNNEu92J2pfCcDhgOn3ieDyR5+XNeS8YBA4AaZpTVYe/gZZloGmC5fKd7XbXebHKz+deSSa5Xn/0NbRQgbjrxSBwsCyjD4zV8xolfRUdSqLIX/175ZpwzoZHx8xnz5MQwDf542taOuWMsAAAAABJRU5ErkJggg=="></a>';
-	switch ($_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d)
+	$_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0 = '<a href="http://autosed.com/manual/#' . strtolower($config_param_label) . '" target="_blank"><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNy8xNi8xMjRk/+8AAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABG0lEQVQokZ2SoW6DUBSGP9gVICrIFBUTCLJkEosoCbJJVe0kdnXlEZBgeYumciTrC2ArJhAVJZkhS5u0WZowsV7SUliW/fK/57v3nP8epa5rpMIwGwEzYMK1FkAcRf5KGooEwzCLgRd+VxJF/qwB25CuC0xzAEBRVJ2wMp+/joA36bruA+Ox3VSV5Y40zTkcTpewd+e6zzHwKB0hVKrqSJYVgIJt37Pff7HZfF6ChmgHURRV056uCxzHRNNEu92J2pfCcDhgOn3ieDyR5+XNeS8YBA4AaZpTVYe/gZZloGmC5fKd7XbXebHKz+deSSa5Xn/0NbRQgbjrxSBwsCyjD4zV8xolfRUdSqLIX/175ZpwzoZHx8xnz5MQwDf542taOuWMsAAAAABJRU5ErkJggg=="></a>';
+	switch ($config_param_label)
 	{
 		case 'LANGUAGE' :
 			$xml =<<<XML<?xml version="1.0" encoding="UTF-8"?><methodCall><methodName>weblogUpdates.ping</methodName><params><param><value>$query</value></param><param><value>$url</value></param></params></methodCall> 
 XML;
-			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML<td><span>$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><select name="$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d"><option value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a">$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a</option>
+			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML<td><span>$config_param_label $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><select name="$config_param_label"><option value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a">$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a</option>
 HTML;
 			$_0c681102171ef4e7866515ea28a20fb38ce683f6f519bbb62d70850502c17ad7dab00f9d01c12e472455f283a9652cbabf6182884feaff6352026dcb4fac7e2a = array (
 				'ar',
@@ -94,7 +94,7 @@ HTML;
 					$_d5aca39dd5a5513e857577b1b1ad4f8bd9e1b722[] = $_403a10fe6b60c5723057ad99b56c71531937dc7e200e4b0d11561000cb6d5e9e;
 				}
 			}
-			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML <td><span>$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><select name="$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d"><option value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a">$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a</option>
+			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML <td><span>$config_param_label $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><select name="$config_param_label"><option value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a">$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a</option>
 HTML;
 			if (!empty ($_d5aca39dd5a5513e857577b1b1ad4f8bd9e1b722))
 			{
@@ -108,7 +108,7 @@ HTML;
 HTML;
 			return $_ef88d01f391a9f53244d58c4facd028fc8717591;
 			break;
-		case in_array($_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d, array (
+		case in_array($config_param_label, array (
 				'SNIPPETS',
 				'IMAGES',
 				'VIDEOS',
@@ -116,7 +116,7 @@ HTML;
 				'COMMENTS'
 			)) :
 			$_8662a077fa77c35e47dde5702d6eeef077b45b5e = explode(' | ', $_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a);
-			foreach (glob('../application/plugins/' . strtolower($_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d) . '/*.php') as $_f389806657737af74ef14d2dac7d6312b78672f9965ff2f4)
+			foreach (glob('../application/plugins/' . strtolower($config_param_label) . '/*.php') as $_f389806657737af74ef14d2dac7d6312b78672f9965ff2f4)
 			{
 				$_f389806657737af74ef14d2dac7d6312b78672f9965ff2f4 = pathinfo($_f389806657737af74ef14d2dac7d6312b78672f9965ff2f4, PATHINFO_FILENAME);
 				if (!in_array($_f389806657737af74ef14d2dac7d6312b78672f9965ff2f4, $_8662a077fa77c35e47dde5702d6eeef077b45b5e))
@@ -124,8 +124,8 @@ HTML;
 					$_55dac98276c003764d486bf4476867a62772ffe64d10f81d01802dd7[] = $_f389806657737af74ef14d2dac7d6312b78672f9965ff2f4;
 				}
 			}
-			$_1a26c4802573853c0947945bb6c5bb611b06e05d5a309b85db987948 = $_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d . '[]';
-			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML <td><span>$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><p>
+			$_1a26c4802573853c0947945bb6c5bb611b06e05d5a309b85db987948 = $config_param_label . '[]';
+			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML <td><span>$config_param_label $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><p>
 HTML;
 			if (!empty ($_8662a077fa77c35e47dde5702d6eeef077b45b5e[0]))
 			{
@@ -147,7 +147,7 @@ HTML;
 HTML;
 			return $_ef88d01f391a9f53244d58c4facd028fc8717591;
 			break;
-		case in_array($_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d, array (
+		case in_array($config_param_label, array (
 				'STOP_GROWING',
 				'SUBJECT_LIMITATION',
 				'ONLY_EXISTING_KEYWORDS',
@@ -155,24 +155,24 @@ HTML;
 				'SUPPORT_32'
 			)) :
 			$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5 = ($_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a == 'true') ? 'false' : 'true';
-			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML <td><span>$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><select name="$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d"><option value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a">$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a</option><option value="$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5">$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5</option></select></td>
+			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML <td><span>$config_param_label $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><select name="$config_param_label"><option value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a">$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a</option><option value="$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5">$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5</option></select></td>
 HTML;
 			return $_ef88d01f391a9f53244d58c4facd028fc8717591;
 			break;
 		case 'FU_STATUS' :
 			$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5 = ($_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a == 'ON') ? 'OFF' : 'ON';
-			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML <td><span>$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><select name="$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d"><option value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a">$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a</option><option value="$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5">$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5</option></select></td>
+			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML <td><span>$config_param_label $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><select name="$config_param_label"><option value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a">$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a</option><option value="$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5">$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5</option></select></td>
 HTML;
 			return $_ef88d01f391a9f53244d58c4facd028fc8717591;
 			break;
 		case 'CACHE' :
 			$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5 = ($_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a == 'index') ? 'disc' : 'index';
-			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML<td><span>$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><select name="$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d"><option value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a">$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a</option><option value="$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5">$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5</option></select></td>
+			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML<td><span>$config_param_label $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><select name="$config_param_label"><option value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a">$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a</option><option value="$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5">$_1a787afe36e8b07f7babe1a50aacc851dbef48cc0f913d66ad771bb46563ccd5</option></select></td>
 HTML;
 			return $_ef88d01f391a9f53244d58c4facd028fc8717591;
 			break;
 		default :
-			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML <td><span>$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><input type="text" name="$_303288683b581f4eef4089c3f6cd14126c13b35cc88aeb7d" value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a"></td>
+			$_ef88d01f391a9f53244d58c4facd028fc8717591 =<<<HTML <td><span>$config_param_label $_f1344667fbc0e8e5cbf8715bd22e24ca5801bc99b1c59b6a11abafa0</span></td><td><input type="text" name="$config_param_label" value="$_d60f6c1d98e6f90c314d39beb47c3cd93ace40bc99ab296a"></td>
 HTML;
 			return $_ef88d01f391a9f53244d58c4facd028fc8717591;
 	}
@@ -193,7 +193,7 @@ if (isset ($_COOKIE['password']) and $_COOKIE['password'] == PASSWORD)
 		{
 			if (!empty ($config_file_element))
 			{
-				foreach ($_2952aeca0fe15cf310ede96c437acb94b2b208f1 as $_3bbcaca1801da2103ea0fd65696191bcad03fe392f5b0ae6d3d54660ef565fc69a0e8f5bee32cc8ab2351f95c05227fd913407a510f298247458d540640cb6dd => $_c209fc0acaa6247bc09fe3478defcc083c60f001a403b7a26522c52f3355a5a5fbe71405ab98cec5bcfb9513b161c9fe8cf7edfd5ff18166a0c751b3186e7ee1)
+				foreach ($config_params as $_3bbcaca1801da2103ea0fd65696191bcad03fe392f5b0ae6d3d54660ef565fc69a0e8f5bee32cc8ab2351f95c05227fd913407a510f298247458d540640cb6dd => $_c209fc0acaa6247bc09fe3478defcc083c60f001a403b7a26522c52f3355a5a5fbe71405ab98cec5bcfb9513b161c9fe8cf7edfd5ff18166a0c751b3186e7ee1)
 				{
 					if (preg_match("|$_3bbcaca1801da2103ea0fd65696191bcad03fe392f5b0ae6d3d54660ef565fc69a0e8f5bee32cc8ab2351f95c05227fd913407a510f298247458d540640cb6dd|", $config_file_element))
 					{
@@ -251,7 +251,7 @@ if (isset ($_COOKIE['password']) and $_COOKIE['password'] == PASSWORD)
 <legend>Панель управления</legend> 
 <form action="dashboard.php" method="post"> 
 <table> 
-<?php foreach ($_2952aeca0fe15cf310ede96c437acb94b2b208f1 as $_3bbcaca1801da2103ea0fd65696191bcad03fe392f5b0ae6d3d54660ef565fc69a0e8f5bee32cc8ab2351f95c05227fd913407a510f298247458d540640cb6dd => $_3a183bec0fd356f0ce413bb087095b4e8714879372b05e817d8982d21d30b3bcbcd1823c7b67cf57ab02bf61e791ff90ffd4c6685a93ca19e4a02c1a1f0cebd8): ?> 
+<?php foreach ($config_params as $_3bbcaca1801da2103ea0fd65696191bcad03fe392f5b0ae6d3d54660ef565fc69a0e8f5bee32cc8ab2351f95c05227fd913407a510f298247458d540640cb6dd => $_3a183bec0fd356f0ce413bb087095b4e8714879372b05e817d8982d21d30b3bcbcd1823c7b67cf57ab02bf61e791ff90ffd4c6685a93ca19e4a02c1a1f0cebd8): ?> 
 <tr> 
 <?php echo Parameter($_3bbcaca1801da2103ea0fd65696191bcad03fe392f5b0ae6d3d54660ef565fc69a0e8f5bee32cc8ab2351f95c05227fd913407a510f298247458d540640cb6dd, $_3a183bec0fd356f0ce413bb087095b4e8714879372b05e817d8982d21d30b3bcbcd1823c7b67cf57ab02bf61e791ff90ffd4c6685a93ca19e4a02c1a1f0cebd8); ?> 
 </tr> 
