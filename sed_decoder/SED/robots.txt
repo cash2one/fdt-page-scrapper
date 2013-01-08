@@ -1,0 +1,10 @@
+User-agent: Yandex
+Disallow: /application/libraries/
+Crawl-delay: 5
+
+User-agent: Googlebot
+Disallow: /application/libraries/
+Crawl-delay: 7
+
+User-agent: *
+Disallow: /

@@ -1,0 +1,23 @@
+<Files "checker.php">
+	Allow from all
+</Files>
+
+<Files "filter.php">
+	Allow from all
+</Files>
+
+<Files "generator.php">
+	Allow from all
+</Files>
+
+<Files "revmethod.php">
+	Allow from all
+</Files>
+
+<Files "pluginer.php">
+	Allow from all
+</Files>
+
+<Files "dashboard.php">
+	Allow from all
+</Files>

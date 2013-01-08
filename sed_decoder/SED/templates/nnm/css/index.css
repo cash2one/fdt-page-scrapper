@@ -1,0 +1,93 @@
+/* ::::: http://nnm-club.ru/forum/templates/smartBlue/20101011.css ::::: */
+
+body { background-color: rgb(255, 255, 255); color: rgb(43, 65, 87); margin: 0px; }
+font, th, td, p { font-family: Tahoma; }
+p, td { font-size: 9pt; }
+a:link, a:active, a:visited { color: rgb(43, 65, 87); }
+a:hover { text-decoration: underline; color: rgb(69, 104, 139); }
+hr { height: 0px; border-right: medium solid rgb(80, 96, 112); border-left: medium solid rgb(80, 96, 112); border-style: solid; border-color: rgb(80, 96, 112); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-width: 1px medium 0px; }
+.forumline { background-color: rgb(198, 217, 236); }
+.row1 { background-color: rgb(244, 248, 251); }
+.row2 { background-color: rgb(232, 239, 247); }
+.row3 { background-color: rgb(208, 223, 239); }
+td.row1 { background-color: rgb(244, 248, 251); }
+td.row2 { background-color: rgb(232, 239, 247); }
+th, .top { color: rgb(43, 65, 87); font-size: 9pt; font-weight: bold; background-image: url("../img/linebg.jpg")/*tpa=http://gdz9klass.ru/templates/nnm-club/img/linebg.jpg*/; background-repeat: repeat-x; }
+.header { color: rgb(43, 65, 87); font-size: 9pt; background-color: rgb(102, 153, 204); }
+td.cat, td.catHead, td.catSides, td.catLeft, td.catRight, td.catBottom { background-color: rgb(174, 201, 228); font-weight: bold; }
+td.spaceRow { background-color: rgb(174, 201, 228); }
+.maintitle, h1, h2 { font-weight: bold; font-size: 22px; font-family: Tahoma; text-decoration: none; line-height: 120%; color: rgb(69, 104, 139); }
+.gen { font-size: 10pt; }
+.genmed, .premed { font-size: 9pt; }
+.gensmall { font-size: 8pt; }
+.gen, .genmed, .gensmall { color: rgb(43, 65, 87); }
+a.gen, a.genmed, a.gensmall { color: rgb(43, 65, 87); text-decoration: none; }
+a.gen:hover, a.genmed:hover, a.gensmall:hover { color: rgb(69, 104, 139); text-decoration: underline; }
+.menutable { background-image: url("../img/menu.png")/*tpa=http://gdz9klass.ru/templates/nnm-club/img/menu.png*/; background-repeat: no-repeat; background-position: center center; width: 707px; height: 91px; border: 0px none; }
+.mainmenu { font-size: 9pt; color: rgb(255, 255, 255); }
+a.mainmenu { text-decoration: none; color: rgb(255, 255, 255); }
+a.mainmenu:visited { text-decoration: none; color: rgb(255, 255, 255); }
+a.mainmenu:hover { text-decoration: underline; color: rgb(255, 255, 255); }
+.nav { font-weight: bold; font-size: 9pt; color: rgb(43, 65, 87); }
+a.nav { text-decoration: none; color: rgb(43, 65, 87); }
+a.nav:hover { text-decoration: underline; }
+.postdetails { font-size: 8pt; color: rgb(43, 65, 87); }
+.postbody { font-size: 9pt; line-height: 150%; }
+.copyright { font-size: 8pt; font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; color: rgb(43, 65, 87); letter-spacing: -1px; }
+input, textarea, select { color: rgb(43, 65, 87); font: 10pt Verdana,Arial,Helvetica,sans-serif; border-color: rgb(174, 201, 228); }
+input.hint { color: rgb(244, 248, 251); font-style: italic; text-indent: 0.3em; background-color: rgb(102, 153, 204); }
+select { background-color: rgb(244, 248, 251); }
+input { text-indent: 2px; }
+input.liteoption { background-color: rgb(244, 248, 251); font-weight: normal; }
+input, textarea, select { border-width: 1px; }
+input { text-indent: 2px; }
+.postbody { line-height: 18px; }
+.seed, .leech, .seed_bonus { font-size: 12px; }
+.seedmed, .leechmed, .bonusmed { font-size: 11px; }
+.seed, .seedmed, .seedsmall { color: rgb(0, 102, 0); }
+.leech, .leechmed, .leechsmall { color: rgb(128, 0, 0); }
+.seed_bonus, .bonusmed, .bonussmall { color: rgb(0, 0, 160); }
+optgroup, option, fieldset, legend { font-size: 11px; font-family: Verdana,Arial,Helvetica,sans-serif; }
+option { background-color: rgb(255, 255, 255); font-size: 11px; }
+.bold { font-weight: bold; }
+.normal { font-weight: normal; }
+.btTbl { background-color: rgb(102, 153, 204); border: 0px solid rgb(152, 170, 177); }
+input { text-indent: 2px; }
+input.liteoption { background-color: rgb(250, 250, 250); font-weight: normal; }
+.spoiler-wrap { width: 95%; margin: 6px auto; clear: both; padding: 0px; background: none repeat scroll 0% 0% rgb(233, 233, 230); }
+.spoiler-wrap, .spoiler-head, .spoiler-body { border-style: solid; border-color: rgb(195, 203, 209); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-width: 1px 1px 1px 2px; clear: both; }
+.spoiler-body { padding: 2px 6px; }
+.spoiler-body { border-width: 1px 0px 0px; display: none; font-weight: normal; background: none repeat scroll 0% 0% rgb(245, 245, 245); }
+var.postImgAligned { display: block; }
+img { border: 0px none; }
+img.postImg { vertical-align: text-bottom; }
+img.postImg { margin: 2px 2px 0px 0px; }
+img.postImgAligned { margin: 4px 4px 2px; }
+var.img-right { float: right; clear: right; }
+.clear { clear: both; height: 0px; font-size: 0px; line-height: 0; overflow: hidden; }
+.ui-tooltip:not(.ie9haxors) div.ui-tooltip-content, .ui-tooltip:not(.ie9haxors) div.ui-tooltip-titlebar { filter: none; }
+@font-face {
+  font-family: "Cuprum";  font-style: normal;  font-weight: 400;  src: local("Cuprum"), local("Cuprum-Regular"), url("../img/z4swj-i0vckrk9bdfoms5w.eot")/*tpa=http://gdz9klass.ru/templates/nnm-club/img/z4swj-i0vckrk9bdfoms5w.eot*/ format("embedded-opentype"), url("../img/whbezcjwni3hn2fd1rqjgw.woff")/*tpa=http://gdz9klass.ru/templates/nnm-club/img/whbezcjwni3hn2fd1rqjgw.woff*/ format("woff");}
+.rank_progress_bar { border: 1.5px solid rgb(198, 217, 236); clear: right; margin: 3px 0px; border-radius: 4px 4px 4px 4px; width: 105px; height: 14px; padding: 1px 2px 1px 1px; text-align: center; cursor: help; }
+.rank_progress_bar span { z-index: 2; position: relative; top: -14px; }
+.rank_progress_bar .bar { background: linear-gradient(to right, rgb(245, 255, 237) 31%, rgb(222, 248, 194) 57%, rgb(174, 232, 104) 87%) repeat scroll 0% 0% transparent; border: 1px solid rgb(198, 217, 236); height: 12px; z-index: 0; border-radius: 3px 3px 3px 3px; display: block; position: relative; top: 0px; right: 0px; }
+/* ::::: http://nnm-club.ru/forum/highslide/highslide.css ::::: */
+
+.highslide-container div { font-family: Verdana,Helvetica; font-size: 10pt; }
+.highslide-container table { background: none repeat scroll 0% 0% transparent; }
+.highslide { outline: medium none; text-decoration: none; }
+.highslide img { border: 0px solid silver; }
+.highslide:hover img { border-color: gray; }
+.highslide-wrapper, .highslide-outline { background: none repeat scroll 0% 0% white; }
+.highslide-loading { display: block; color: black; font-size: 9px; font-weight: bold; text-transform: uppercase; text-decoration: none; padding: 3px 3px 3px 22px; border: 1px solid white; background-color: white; background-image: url("../img/loader.white.gif")/*tpa=http://gdz9klass.ru/templates/nnm-club/img/loader.white.gif*/; background-repeat: no-repeat; background-position: 3px 1px; }
+.highslide-viewport { display: none; position: fixed; width: 100%; height: 100%; z-index: 1; background: none repeat scroll 0% 0% transparent; left: 0px; top: 0px; }
+.highslide img { cursor: url("../img/zoomin.cur")/*tpa=http://gdz9klass.ru/templates/nnm-club/img/zoomin.cur*/, pointer ! important; }
+.highslide-viewport-size { position: fixed; width: 100%; height: 100%; left: 0px; top: 0px; }
+.a1b {width:700px; margin-top: 0px; margin-left: -2px; position: absolute; z-index:1; font-size:10px;}
+.a1 {display: block; margin-top: -4px; margin-left: -19px; float:center; width:888px; z-index: 2; height: 235px; background: url("../img/a1.jpg")/*tpa=http://gdz9klass.ru/templates/nnm-club/img/a1.jpg*/ center top no-repeat; text-decoration: none; position: relative;}
+.a2 {display: block; margin-top: -4px; margin-left: -10px; float:center; width:888px; z-index: 2; height: 239px; background: url("../img/a2.jpg")/*tpa=http://gdz9klass.ru/templates/nnm-club/img/a2.jpg*/ center top no-repeat; text-decoration: none; position: relative;}
+.a3 {display: block; margin-top: -3px; margin-left: -5px; float:center; width:888px; z-index: 2; height: 239px; background: url("../img/a3.jpg")/*tpa=http://gdz9klass.ru/templates/nnm-club/img/a3.jpg*/ center top no-repeat; text-decoration: none; position: relative;}
+.a4 {display: block; margin-top: -3px; margin-left: -5px; float:center; width:888px; z-index: 2; height: 239px; background: url("../img/a4.jpg")/*tpa=http://gdz9klass.ru/templates/nnm-club/img/a4.jpg*/ center top no-repeat; text-decoration: none; position: relative;}
+#link {text-align:center; padding-left:30px;}
+
+.imagest img {width:150px !important;}
