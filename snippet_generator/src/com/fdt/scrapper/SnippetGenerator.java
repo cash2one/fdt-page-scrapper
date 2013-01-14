@@ -90,7 +90,7 @@ public class SnippetGenerator {
 				SnippetTask task = new GoogleSnippetTask(args[0]);
 				task.setLanguage(args[1]);
 				String generatedContent = generator.getFixedSnippets(task);
-				//TODO save content
+				//save content
 				//System.out.println(generatedContent);
 				saveResultToFile(generatedContent,task.getKeyWords().replace('+', ' '));
 			}
