@@ -48,7 +48,7 @@ public class ProxyFactory
 	}
 
 	public synchronized ArrayList<ProxyConnector> loadProxyList(String cfgFilePath){
-		ArrayList<ProxyConnector> proxyList = new ArrayList<ProxyConnector>();
+		proxyList = new ArrayList<ProxyConnector>();
 		FileReader fr = null;
 		BufferedReader br = null;
 		try {
