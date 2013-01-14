@@ -10,13 +10,13 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.StringWriter;
+import java.net.Authenticator;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
+import java.net.PasswordAuthentication;
 import java.net.Proxy;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 import javax.xml.xpath.XPath;
@@ -24,23 +24,11 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
-
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.protocol.HTTP;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.tidy.Tidy;
 
-import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.GoogleSnippetTask;
 import com.fdt.scrapper.task.Snippet;
@@ -74,16 +62,28 @@ public class SnippetGenerator {
      * args[2] - path to link file
      * args[3] - path to proxy list file
      */
+    //TODO add credentials into program
     public static void main(String[] args){
+	final String login = "VIPUAmgVUDvotVF";
+	final String pwd = "EYyxNMkxzl";
 	if(args.length < 4){
 	    System.out.print("Not enought arguments....");
 	}
 	try {
-	    SnippetGenerator generator = new SnippetGenerator(args[3], args[2]);
+	    Authenticator.setDefault(new Authenticator() {
+		@Override
+		protected PasswordAuthentication getPasswordAuthentication() {
+		    return new PasswordAuthentication(
+			    login, pwd.toCharArray()
+		    );
+		}
+	    });
+	    SnippetGenerator generator = new SnippetGenerator(args[2], args[3]);
 	    SnippetTask task = new GoogleSnippetTask(args[0]);
 	    task.setLanguage(args[1]);
 	    String generatedContent = generator.getFixedSnippets(task);
 	    //TODO save content
+	    System.out.println(generatedContent);
 	}
 	catch (Exception e) {
 	    e.printStackTrace();
@@ -131,14 +131,21 @@ public class SnippetGenerator {
 	return linkList;
     }
 
-    public String getFixedSnippets(SnippetTask snippetTask) throws Exception {
+    public String getFixedSnippets(SnippetTask snippetTask) {
 	//get snippets
-	ArrayList<Snippet> snippets = extractSnippets(snippetTask);
-	if(snippets == null || snippets.size() == 0){
-	    throw new Exception("Snippets size is 0. Will try to use another proxy server");
-	}
-	String snippetContent = getSnippetsContent(snippets);
-	//post news
+	String snippetContent = null;
+	do{
+	    try{
+		ArrayList<Snippet> snippets = extractSnippets(snippetTask);
+		if(snippets == null || snippets.size() == 0){
+		    throw new Exception("Snippets size is 0. Will try to use another proxy server");
+		}
+		snippetContent = getSnippetsContent(snippets);
+	    }catch(Exception e){
+		log.error("Error during getting snippets content",e);
+	    }
+	    //post news
+	}while(snippetContent == null || "".equals(snippetContent.trim()));
 	return snippetContent;
     }
 
@@ -191,15 +198,13 @@ public class SnippetGenerator {
 	    URL url = new URL(strUrl);
 	    //using proxy
 	    conn = (HttpURLConnection)url.openConnection(proxy);
+	    conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+	    conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 	    Tidy tidy = new Tidy();
 	    tidy.setQuiet(true);
 	    tidy.setShowWarnings(false);
 	    is = conn.getInputStream();
 	    Document doc = tidy.parseDOM(is, null);
-	    //don't using proxy
-	    //conn = (HttpURLConnection)url.openConnection();
-	    //conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-	    //conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 	    conn.disconnect();
 	    return doc;
 	}finally{
@@ -262,6 +267,7 @@ public class SnippetGenerator {
 	NodeList tableOfSnippets = (NodeList) xpath.evaluate(snippetTask.getXpathSnipper(), page, XPathConstants.NODESET);
 
 	//search titles
+	//TODO error must be here
 	NodeList titleNodes= (NodeList) xpath.evaluate(snippetTask.getXpathSnipper(), tableOfSnippets, XPathConstants.NODESET);
 	//search snippets
 	NodeList snippetsNodes= (NodeList) xpath.evaluate(snippetTask.getXpathSnipper(), tableOfSnippets, XPathConstants.NODESET);
