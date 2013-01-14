@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.PageTasks;
+import com.fdt.scrapper.task.Task;
 import com.fdt.scrapper.util.ResultParser;
 
 /**
@@ -27,15 +28,17 @@ public class ScrapperTaskRunner {
 	private int maxThreadCount;
 	private long proxyDelay;
 	private String resultFile;
+	private boolean scrapResultViaProxy;
 
 	//private ArrayList<Thread> threads = new ArrayList<Thread>();
 
-	public ScrapperTaskRunner(final String login, final char[] pass, String proxyFilePath, String urlsFilePath, int maxThreadCount, long proxyDelay, String resultFile){
+	public ScrapperTaskRunner(final String login, final char[] pass, String proxyFilePath, String urlsFilePath, int maxThreadCount, long proxyDelay, String resultFile, boolean scrapResultViaProxy){
 		this.proxyFilePath = proxyFilePath;
 		this.urlsFilePath = urlsFilePath;
 		this.maxThreadCount = maxThreadCount;
 		this.proxyDelay = proxyDelay;
 		this.resultFile = resultFile;
+		this.scrapResultViaProxy = scrapResultViaProxy;
 		Authenticator.setDefault(new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
@@ -46,7 +49,7 @@ public class ScrapperTaskRunner {
 
 	public static void main(String[] args) {
 		try{
-			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("VIPUAoVrs68fdmb", "TC3aH96sAR".toCharArray(),"proxy.txt","links_small.txt", 1, 5000L, "success_result.csv");
+			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("VIPUAoVrs68fdmb", "TC3aH96sAR".toCharArray(),"proxy.txt","links_small.txt", 1, 5000L, "success_result.csv", true);
 			taskRunner.run();
 
 			ResultParser rp = new ResultParser();
@@ -66,35 +69,36 @@ public class ScrapperTaskRunner {
 			//taskFactory.loadTaskQueue(urlsFilePath);
 			taskFactory.loadTaskQueue(urlsFilePath);
 
-			ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
-			ProxyFactory proxyFactory = ProxyFactory.getInstance();
-			proxyFactory.init(proxyFilePath);
+			if(scrapResultViaProxy){
+				ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
+				ProxyFactory proxyFactory = ProxyFactory.getInstance();
+				proxyFactory.init(proxyFilePath);
 
-			ScrapperThread newThread = null;
-			log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
-			while(!taskFactory.isTaskFactoryEmpty() || taskFactory.runThreadsCount > 0){
-				log.debug("Try to get request from RequestFactory queue.");
-				PageTasks tasks = taskFactory.getTask();
-				if(null != tasks){
-				    	log.debug("Pending tasts: " + taskFactory.getTaskQueue().size()+ ". Success tasks: "+taskFactory.getResultQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
-					newThread = new ScrapperThread(tasks, taskFactory, proxyFactory);
-					newThread.start();
-					//threads.add(newThread);
+				ScrapperThread newThread = null;
+				log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
+				while(!taskFactory.isTaskFactoryEmpty() || taskFactory.runThreadsCount > 0){
+					log.debug("Try to get request from RequestFactory queue.");
+					PageTasks tasks = taskFactory.getTask();
+					if(null != tasks){
+						log.debug("Pending tasts: " + taskFactory.getTaskQueue().size()+ ". Success tasks: "+taskFactory.getResultQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
+						newThread = new ScrapperThread(tasks, taskFactory, proxyFactory);
+						newThread.start();
+						//threads.add(newThread);
 
-				}
-				else{
-					try {
-						this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
-					} catch (InterruptedException e) {
-						log.error("InterruptedException occured during RequestRunner process: ",e);
+					}
+					else{
+						try {
+							this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
+						} catch (InterruptedException e) {
+							log.error("InterruptedException occured during RequestRunner process: ",e);
+						}
 					}
 				}
-			}
-			
-			log.debug("Task factory is empty: "+taskFactory.isTaskFactoryEmpty()+". Current working threads count is " + taskFactory.runThreadsCount);
-			log.debug("Success tasks: "+taskFactory.getResultQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
 
-			/*for(Thread thread : threads){
+				log.debug("Task factory is empty: "+taskFactory.isTaskFactoryEmpty()+". Current working threads count is " + taskFactory.runThreadsCount);
+				log.debug("Success tasks: "+taskFactory.getResultQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
+
+				/*for(Thread thread : threads){
 				if(thread != null && newThread.isAlive()){
 					try {
 						thread.join();
@@ -104,7 +108,15 @@ public class ScrapperTaskRunner {
 					}
 				}
 			}*/
-
+			}else{
+				for(PageTasks pageTask:taskFactory.getTaskQueue()){
+					for(Task task:pageTask.getTasks()){
+						task.setResultAsIs("1");
+					}
+					taskFactory.putTaskInSuccessQueue(pageTask);
+				}
+			}
+			
 			BufferedWriter bufferedWriter = null;
 
 			//save success tasks

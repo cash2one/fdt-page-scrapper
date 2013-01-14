@@ -58,6 +58,10 @@
             </module-dependencies>
             <public-packages/>
             <class-path-extension>
+                <runtime-relative-path>ext/proxy_factory.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/proxy_factory.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
                 <runtime-relative-path>ext/page_scrapper.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/page_scrapper.jar</binary-origin>
             </class-path-extension>
