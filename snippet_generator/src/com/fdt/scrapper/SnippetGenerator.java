@@ -4,6 +4,10 @@
  */
 package com.fdt.scrapper;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
@@ -36,6 +40,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.tidy.Tidy;
 
+import com.fdt.scrapper.proxy.ProxyConnector;
+import com.fdt.scrapper.proxy.ProxyFactory;
+import com.fdt.scrapper.task.GoogleSnippetTask;
 import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTask;
 
@@ -44,7 +51,7 @@ import com.fdt.scrapper.task.SnippetTask;
  * @author Administrator
  */
 public class SnippetGenerator {
-    private static final Logger logExtarnal = Logger.getLogger(SnippetGenerator.class);
+    private static final Logger log = Logger.getLogger(SnippetGenerator.class);
 
     private int MIN_SNIPPET_COUNT=3;
     private int MAX_SNIPPET_COUNT=5;
@@ -59,10 +66,69 @@ public class SnippetGenerator {
 
     Random rnd = new Random();
 
-    private Proxy proxy = null;
+    private ProxyFactory proxyFactory = null;
+    private ArrayList<String> linkList = null;
+    /**
+     * args[0] - keyword
+     * args[1] - language
+     * args[2] - path to link file
+     * args[3] - path to proxy list file
+     */
+    public static void main(String[] args){
+	if(args.length < 4){
+	    System.out.print("Not enought arguments....");
+	}
+	try {
+	    SnippetGenerator generator = new SnippetGenerator(args[3], args[2]);
+	    SnippetTask task = new GoogleSnippetTask(args[0]);
+	    task.setLanguage(args[1]);
+	    String generatedContent = generator.getFixedSnippets(task);
+	    //TODO save content
+	}
+	catch (Exception e) {
+	    e.printStackTrace();
+	}
+    }
 
-    public SnippetGenerator(Proxy proxy) {
-	this.proxy = proxy;
+    public SnippetGenerator(String pathToLinksFile, String pathToProxyListFile) {
+	super();
+	proxyFactory = ProxyFactory.getInstance();
+	proxyFactory.loadProxyList(pathToProxyListFile);
+	linkList = loadLinkList(pathToLinksFile);
+    }
+
+    public synchronized ArrayList<String> loadLinkList(String cfgFilePath){
+	ArrayList<String> linkList = new ArrayList<String>();
+	FileReader fr = null;
+	BufferedReader br = null;
+	try {
+	    fr = new FileReader(new File(cfgFilePath));
+	    br = new BufferedReader(fr);
+
+	    String line = br.readLine();
+	    while(line != null){
+		linkList.add(line.trim());
+		line = br.readLine();
+	    }
+	} catch (FileNotFoundException e) {
+	    log.error("Reading PROPERTIES file: FileNotFoundException exception occured",e);
+	} catch (IOException e) {
+	    log.error("Reading PROPERTIES file: IOException exception occured", e);
+	} finally {
+	    try {
+		if(br != null)
+		    br.close();
+	    } catch (Throwable e) {
+		log.warn("Error while initializtion", e);
+	    }
+	    try {
+		if(fr != null)
+		    fr.close();
+	    } catch (Throwable e) {
+		log.warn("Error while initializtion", e);
+	    }
+	}
+	return linkList;
     }
 
     public String getFixedSnippets(SnippetTask snippetTask) throws Exception {
@@ -90,7 +156,7 @@ public class SnippetGenerator {
 		snipCount = snippets.size();
 	    }
 	}
-	logExtarnal.debug("Keywords: task.getKeyWords(). Snippet count: " + snipCount);
+	log.debug("Keywords: task.getKeyWords(). Snippet count: " + snipCount);
 	StringBuilder snippetsContent = new StringBuilder();
 
 	//get links count
@@ -105,8 +171,8 @@ public class SnippetGenerator {
 	    //add link to snipper
 	    if(snippetLinked < linkCount){
 		//add snippet link
-		int randomSuccessLink = getRandomValue(1,LINKS_COUNT);
-		addLinkToSnippetContent(snippets.get(i), RANDOM_LINK);
+		int randomSuccessLink = getRandomValue(1,linkList.size()-1);
+		addLinkToSnippetContent(snippets.get(i), linkList.get(randomSuccessLink));
 		snippetsContent.append(snippets.get(i).toString()).append("\r\n");
 		snippetLinked++;
 	    }else{
@@ -117,7 +183,7 @@ public class SnippetGenerator {
 	return snippetsContent.toString();
     }
 
-    private Document getUrlContent(SnippetTask snippetTask) throws MalformedURLException, IOException {
+    private Document getUrlContent(SnippetTask snippetTask, Proxy proxy) throws MalformedURLException, IOException {
 	HttpURLConnection conn = null;
 	InputStream is = null;
 	try{
@@ -187,7 +253,7 @@ public class SnippetGenerator {
 
     private ArrayList<Snippet> extractSnippets(SnippetTask snippetTask) throws MalformedURLException, IOException, XPathExpressionException{
 	ArrayList<Snippet> snippets = new ArrayList<Snippet>();
-	Document page = getUrlContent(snippetTask);
+	Document page = getUrlContent(snippetTask,proxyFactory.getRandomProxyConnector().getConnect());
 
 	XPathFactory xpf = XPathFactory.newInstance();
 	XPath xpath = xpf.newXPath();

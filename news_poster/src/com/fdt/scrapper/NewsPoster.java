@@ -122,7 +122,7 @@ public class NewsPoster {
 		return writer.toString();
 	}
 
-	private String getSnippetsContent(ArrayList<Snippet> snippets) {
+	/*private String getSnippetsContent(ArrayList<Snippet> snippets) {
 		//calculate snippets count
 		int snipCount = 0;
 		int linkCount = 0;
@@ -153,6 +153,49 @@ public class NewsPoster {
 				//add snippet link
 				int randomSuccessLink = getRandomValue(1,taskFactory.getSuccessQueue().size());
 				addLinkToSnippetContent(snippets.get(i), Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + taskFactory.getSuccessQueue().get(randomSuccessLink-1).getResult());
+				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
+				snippetLinked++;
+			}else{
+				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
+			}
+		}
+
+		return snippetsContent.toString();
+	}*/
+	
+	private String getSnippetsContent(ArrayList<Snippet> snippets) {
+		//calculate snippets count
+		int snipCount = 0;
+		int linkCount = 0;
+		if(snippets.size() <= MIN_SNIPPET_COUNT){
+			snipCount = snippets.size();
+		}else{
+			int randomValue = getRandomValue(MIN_SNIPPET_COUNT, MAX_SNIPPET_COUNT);
+			if(randomValue <= snippets.size()){
+				snipCount = randomValue;
+			}else{
+				snipCount = snippets.size();
+			}
+		}
+		logExtarnal.debug("Keywords: task.getKeyWords(). Snippet count: " + snipCount);
+		StringBuilder snippetsContent = new StringBuilder();
+
+		//get links count
+		int randomValue = getRandomValue(MIN_LINK_COUNT, MAX_LINK_COUNT);
+		if(randomValue > taskFactory.getSuccessQueue().size()){
+			linkCount = taskFactory.getSuccessQueue().size();
+		}else{
+			linkCount = randomValue;
+		}
+		int snippetLinked = 0;
+		for(int i = 0; i < snipCount; i++){
+			//add link to snipper
+			if(snippetLinked < linkCount){
+				//add snippet link
+				int randomSuccessLink = getRandomValue(1,taskFactory.getSuccessQueue().size());
+				String titleLink = "<a href=\""+Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + taskFactory.getSuccessQueue().get(randomSuccessLink-1).getResult()+"\">" + snippets.get(i).getTitle()+"</a>";
+				snippets.get(i).setTitle(titleLink);
+				//addLinkToSnippetContent(snippets.get(i), Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + taskFactory.getSuccessQueue().get(randomSuccessLink-1).getResult());
 				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
 				snippetLinked++;
 			}else{

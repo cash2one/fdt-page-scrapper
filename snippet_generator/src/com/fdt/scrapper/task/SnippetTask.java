@@ -39,7 +39,11 @@ public abstract class SnippetTask
 
     public void setLanguage(String language)
     {
-        this.language = language;
+	if(language != null && !"".equals(language.trim())){
+	    this.language = language;
+	}else{
+	    this.language = "en";
+	}
     }
 
     public String getKeyWords()
