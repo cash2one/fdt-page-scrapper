@@ -122,7 +122,8 @@ public class NewsPoster {
 		return writer.toString();
 	}
 
-	/*private String getSnippetsContent(ArrayList<Snippet> snippets) {
+	//random links
+	private String getSnippetsContent(ArrayList<Snippet> snippets) {
 		//calculate snippets count
 		int snipCount = 0;
 		int linkCount = 0;
@@ -161,9 +162,10 @@ public class NewsPoster {
 		}
 
 		return snippetsContent.toString();
-	}*/
+	}
 	
-	private String getSnippetsContent(ArrayList<Snippet> snippets) {
+	//titles as links
+	/*private String getSnippetsContent(ArrayList<Snippet> snippets) {
 		//calculate snippets count
 		int snipCount = 0;
 		int linkCount = 0;
@@ -204,7 +206,7 @@ public class NewsPoster {
 		}
 
 		return snippetsContent.toString();
-	}
+	}*/
 
 	private org.jsoup.nodes.Document getUrlContent(String keyWords) throws MalformedURLException, IOException {
 		HttpURLConnection conn = null;
