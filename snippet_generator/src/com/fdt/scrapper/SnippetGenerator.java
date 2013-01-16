@@ -209,9 +209,10 @@ public class SnippetGenerator {
 	    conn = (HttpURLConnection)url.openConnection(proxy);
 	    conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 	    conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
+	    conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
 	    HtmlCleaner cleaner = new HtmlCleaner();
 	    is = conn.getInputStream();
-	    return cleaner.clean(is);
+	    return cleaner.clean(is,"UTF-8");
 	}finally{
 	    if(conn != null){
 		try{conn.disconnect();}catch(Throwable e){}
