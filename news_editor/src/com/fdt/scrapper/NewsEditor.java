@@ -6,7 +6,6 @@ package com.fdt.scrapper;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.StringWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.Proxy;
@@ -15,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import javax.net.ssl.HttpsURLConnection;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -27,12 +27,10 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import com.fdt.scrapper.task.Constants;
 import com.fdt.scrapper.task.NewsTask;
-import com.fdt.scrapper.task.Snippet;
 
 /**
  *
@@ -68,14 +66,15 @@ public class NewsEditor {
 	public String executePostNews() throws Exception {
 		//get snippets
 		org.jsoup.nodes.Document page = getUrlContent(task.getKeyWords());
-		Elements body = page.select("textarea[id=id_body]");
-		Elements title = page.select("input[id=id_subject]");
-		String titleValue = title.attr("value");
-		
-		String newsContent = body.get(0).text();
-		newsContent = newsContent.replaceAll("http://directnow.me/\\?az44292", "http://directnow.me/ddpromo/\\?az44399");
-		
-		return postNews(titleValue,newsContent);
+		//Elements body = page.select("textarea[id=id_body]");
+		//Elements title = page.select("input[id=id_subject]");
+		//String titleValue = title.attr("value");
+
+		//String newsContent = body.get(0).text();
+		//newsContent = newsContent.replaceAll("http://directnow.me/\\?az44292", "http://directnow.me/ddpromo/\\?az44399");
+
+		//return postNews(titleValue,newsContent);
+		return "";
 	}
 
 	private String postNews(String title, String newsContent){
@@ -121,25 +120,39 @@ public class NewsEditor {
 	}
 
 	private org.jsoup.nodes.Document getUrlContent(String keyWords) throws MalformedURLException, IOException {
-		HttpURLConnection conn = null;
+		HttpsURLConnection conn = null;
 		InputStream is = null;
 		try{
-			String strUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL)+ keyWords + "edit/";
+			//String strUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL)+ keyWords + "edit/";
+			String strUrl = "https://www.google.com/search?q=\"Date+Registered:\"+\"Last+Active:\"+\"ICQ:\"+\"AIM:\"+\"MSN:\"+\"YIM:\"+\"Email:\"+\"Website:\"+\"Login+with+username\"+\"" + keyWords +"\"&num=100&hl=en&tbo=d&adtest=on&ip=0.0.0.0&noj=1&nomo=1&nota=1&igu=1&tci=g:2112,p:30000&glp=1&uule=w+CAIQICIHQmVsYXJ1cw&ei=hXX6UNH_DdCM4gTsn4CoDA&start=10&sa=N&biw=1903&bih=3200";
 			URL url = new URL(strUrl);
 			//using proxy
-			conn = (HttpURLConnection)url.openConnection(proxy);
-			conn.setRequestProperty("Cookie", account.getCookie());
+			//conn = (HttpURLConnection)url.openConnection(proxy);
+			conn = (HttpsURLConnection)url.openConnection();
+			//conn.setRequestProperty("Cookie", account.getCookie());
 			//don't using proxy
 			//conn = (HttpURLConnection)url.openConnection();
-			//conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			//conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
-			is = conn.getInputStream();
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+			try{
+				is = conn.getInputStream();
+			}catch(IOException e){
+				throw e;
+			}finally{
+				if(conn.getResponseCode() != 200){
+					System.exit(-1);
+				}
+				String msg = "RESPONCE CODE: " + conn.getResponseCode() + "[" + strUrl + "]";
+				log.fatal(msg);
+				System.out.println(msg);
+			}
+
 			org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", strUrl);
 			is.close();
 			is = null;
 			conn.disconnect();
 			conn = null;
-			System.out.println(page);
+			//System.out.println(page);
 			return page;
 		}finally{
 			if(conn != null){

@@ -15,17 +15,17 @@
 		<param name="file" value="news_posted_links.log"/>
 		<param name="append" value="false"/>
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="%m%n"/>
+			<param name="ConversionPattern" value="%d[%t] - %m%n"/>
 		</layout>
 	</appender>
 	
-	<logger name="com.fdt.scrapper.NewsPoster" >
-		<level value="INFO" />
+	<logger name="com.fdt.scrapper.NewsEditor" >
+		<level value="DEBUG" />
 		<appender-ref ref="posted_links"/>
 	</logger>
 	
 	<root>
-		<level value="INFO" />
+		<level value="DEBUG" />
 		<appender-ref ref="logfile" />
 	</root>
 	
