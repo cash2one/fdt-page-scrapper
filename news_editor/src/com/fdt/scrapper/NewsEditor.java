@@ -139,12 +139,12 @@ public class NewsEditor {
 			}catch(IOException e){
 				throw e;
 			}finally{
-				if(conn.getResponseCode() != 200){
+				/*if(conn.getResponseCode() != 200){
 					System.exit(-1);
-				}
+				}*/
 				String msg = "RESPONCE CODE: " + conn.getResponseCode() + "[" + strUrl + "]";
 				log.fatal(msg);
-				System.out.println(msg);
+				//System.out.println(msg);
 			}
 
 			org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", strUrl);
