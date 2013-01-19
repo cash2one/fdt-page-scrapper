@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="JAVA_LIB/jsoup-1.7.1-sources.jar"/>
+	<classpathentry kind="var" path="JAVA_LIB/jsoup-1.7.1.jar"/>
+	<classpathentry kind="var" path="JAVA_LIB/log4j-1.2.15.jar"/>
+	<classpathentry kind="var" path="JAVA_LIB"/>
+	<classpathentry kind="var" path="JAVA_LIB/commons-logging-1.1.jar"/>
+	<classpathentry kind="var" path="JAVA_LIB/httpclient-4.1.2.jar"/>
+	<classpathentry kind="var" path="JAVA_LIB/httpcore-4.1.2.jar"/>
+	<classpathentry kind="var" path="JAVA_LIB/velocity-1.7.jar"/>
+	<classpathentry kind="var" path="JAVA_LIB/commons-collections-3.2.jar"/>
+	<classpathentry kind="var" path="JAVA_LIB/commons-lang-2.4.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/proxy_factory"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
