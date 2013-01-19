@@ -286,7 +286,7 @@ public class NewsPoster {
 				String h3Value = element.select("h3").text();
 				String pValue = element.select("p").text();
 				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim())){
-					snippets.add(new Snippet(h3Value, pValue));
+					snippets.add(new Snippet(h3Value.trim(), pValue.trim()));
 				}
 			}
 		}
