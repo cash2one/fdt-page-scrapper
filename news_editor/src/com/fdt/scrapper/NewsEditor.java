@@ -139,9 +139,10 @@ public class NewsEditor {
 			}catch(IOException e){
 				throw e;
 			}finally{
-				/*if(conn.getResponseCode() != 200){
-					System.exit(-1);
-				}*/
+				if(conn.getResponseCode() != 200){
+					//System.exit(-1);
+					log.fatal("****************************");
+				}
 				String msg = "RESPONCE CODE: " + conn.getResponseCode() + "[" + strUrl + "]";
 				log.fatal(msg);
 				//System.out.println(msg);
