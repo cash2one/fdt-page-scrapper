@@ -92,7 +92,7 @@ public class ProxyFactory
 	}
 	
 	public synchronized ProxyConnector getRandomProxyConnector(){
-	    int proxyIndex = rand.nextInt(proxyList.size());
+	    int proxyIndex = rand.nextInt(proxyList.size()-1);
 	    return getProxyConnector(proxyIndex);
 	}
 	
@@ -106,8 +106,8 @@ public class ProxyFactory
 			}
 			curTime = System.currentTimeMillis();
 		}
-		proxyDelay.remove(0);
-		return proxyList.remove(0);
+		proxyDelay.remove(index);
+		return proxyList.remove(index);
 	}
 
 	public synchronized void releaseProxy(ProxyConnector proxyConnector){
