@@ -19,6 +19,7 @@ import java.net.MalformedURLException;
 import java.net.PasswordAuthentication;
 import java.net.Proxy;
 import java.net.URL;
+import java.net.Proxy.Type;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -272,9 +273,10 @@ public class SnippetGenerator {
 
 	private ArrayList<Snippet> extractSnippets(SnippetTask snippetTask) throws MalformedURLException, IOException, XPathExpressionException{
 		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
-		TagNode page = getPageContent(snippetTask,proxyFactory.getRandomProxyConnector().getConnect());
-
 		
+		String proxyTypeStr = ConfigManager.getInstance().getProperty("proxy_type");
+		
+		TagNode page = getPageContent(snippetTask,proxyFactory.getRandomProxyConnector().getConnect(proxyTypeStr));
 		
 		Object[] titles = null;
 		Object[] descs= null;
