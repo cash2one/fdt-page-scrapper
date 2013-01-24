@@ -41,6 +41,8 @@ import com.fdt.scrapper.task.SnippetTask;
  * @author Administrator
  */
 public class SnippetGenerator {
+	private static final String LOAD_PROXY_FILE_FROM_INET_LABEL = "load_proxy_file_from_inet";
+
 	private static final String MAX_ATTEMPT_COUNT_LABEL = "max_attempt_count";
 
 	private static final Logger log = Logger.getLogger(SnippetGenerator.class);
@@ -103,10 +105,23 @@ public class SnippetGenerator {
 		}
 	}
 
-	public SnippetGenerator(String pathToLinksFile, String pathToProxyListFile) {
-		super();
+	public SnippetGenerator(String pathToLinksFile, String pathToProxyListFile) throws MalformedURLException, IOException {
+	    	super();
+	    
+	    	String loadProxyFromInetStr = ConfigManager.getInstance().getProperty(LOAD_PROXY_FILE_FROM_INET_LABEL);
+	    	boolean loadProxyFromInet = false;
+	    	if(loadProxyFromInetStr != null && !"".equals(loadProxyFromInetStr.trim())){
+	    	    loadProxyFromInet = Boolean.valueOf(loadProxyFromInetStr) ;
+	    	}
+	    	
 		proxyFactory = ProxyFactory.getInstance();
-		proxyFactory.loadProxyList(pathToProxyListFile);
+		
+		if(loadProxyFromInet){
+		    proxyFactory.loadProxyListFromIten(pathToProxyListFile);
+		}else{
+		    proxyFactory.loadProxyList(pathToProxyListFile);
+		}
+		
 		linkList = loadLinkList(pathToLinksFile);
 	}
 

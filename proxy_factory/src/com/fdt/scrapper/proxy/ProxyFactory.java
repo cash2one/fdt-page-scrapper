@@ -1,13 +1,18 @@
 package com.fdt.scrapper.proxy;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Random;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 
 public class ProxyFactory 
@@ -45,6 +50,16 @@ public class ProxyFactory
 			}
 		}
 		return instance;
+	}
+	
+	public synchronized ArrayList<ProxyConnector> loadProxyListFromIten(String fileURL) throws MalformedURLException, IOException{
+	    ArrayList<ProxyConnector> proxyList = null;
+	    String fileNameProxy = String.valueOf(System.currentTimeMillis());
+	    File proxyFile = new File(fileNameProxy);
+	    FileUtils.copyURLToFile(new URL(fileURL), proxyFile);
+	    proxyList = loadProxyList(fileNameProxy);
+	    proxyFile.deleteOnExit();
+	    return proxyList;
 	}
 
 	public synchronized ArrayList<ProxyConnector> loadProxyList(String cfgFilePath){
