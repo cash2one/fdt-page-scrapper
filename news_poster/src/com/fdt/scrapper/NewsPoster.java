@@ -22,6 +22,7 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.conn.ClientConnectionManager;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
@@ -105,6 +106,7 @@ public class NewsPoster {
 			Elements elements = page.select("a[href]");
 			System.out.println(elements.attr("href"));
 			log.info(elements.attr("href"));
+			httpclient.getConnectionManager().shutdown();
 			return elements.attr("href");
 		} catch (ClientProtocolException e) {
 			logExtarnal.error("Error occured during posting news",e);
