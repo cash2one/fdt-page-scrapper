@@ -52,13 +52,15 @@ public class ProxyFactory
 		return instance;
 	}
 	
-	public synchronized ArrayList<ProxyConnector> loadProxyListFromIten(String fileURL) throws MalformedURLException, IOException{
+	public synchronized ArrayList<ProxyConnector> loadProxyListFromInet(String fileURL) throws MalformedURLException, IOException{
 	    ArrayList<ProxyConnector> proxyList = null;
 	    String fileNameProxy = String.valueOf(System.currentTimeMillis());
 	    File proxyFile = new File(fileNameProxy);
 	    FileUtils.copyURLToFile(new URL(fileURL), proxyFile);
 	    proxyList = loadProxyList(fileNameProxy);
-	    proxyFile.deleteOnExit();
+	    if(proxyFile.exists()){
+		proxyFile.delete();
+	    }
 	    return proxyList;
 	}
 
