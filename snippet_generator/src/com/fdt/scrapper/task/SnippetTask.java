@@ -71,7 +71,7 @@ public abstract class SnippetTask
     {
         return xpathSnippets;
     }
-    public void setXpathSnipper(String xpathSnipper)
+    public void setXpathSnippet(String xpathSnipper)
     {
         this.xpathSnippets = xpathSnipper;
     }

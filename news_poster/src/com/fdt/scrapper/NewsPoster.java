@@ -24,6 +24,9 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
+import org.htmlcleaner.HtmlCleaner;
+import org.htmlcleaner.TagNode;
+import org.htmlcleaner.XPatherException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -80,12 +83,14 @@ public class NewsPoster {
 	try {
 	    //post news
 	    URL url = new URL(postUrl);
+	    HttpURLConnection.setFollowRedirects(false);
 	    HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
 	    conn.setReadTimeout(60000);
 	    conn.setConnectTimeout(60000);
 	    conn.setRequestMethod("POST");
 	    conn.setDoInput(true);
 	    conn.setDoOutput(true);
+	    
 	    conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 	    conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 	    conn.setRequestProperty("Cookie", account.getCookie());
@@ -110,8 +115,6 @@ public class NewsPoster {
 	    writer.close();
 	    os.close();
 
-
-	    InputStream is = null;
 	    //if(returnCode == HttpStatus.SC_OK){
 	    /*conn.disconnect();
 	    conn = (HttpURLConnection) url.openConnection(proxy);
@@ -122,13 +125,22 @@ public class NewsPoster {
 	    conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*//*;q=0.8");
 	    conn.setRequestProperty("Cookie", account.getCookie());*/
 
-	    is = conn.getInputStream();
-	    String groupUrl  = conn.getURL().toString();
-
+	    //conn.getRequestProperties()
+	    int code = conn.getResponseCode();
+	    
+	    HtmlCleaner cleaner = new HtmlCleaner();
+		InputStream is = conn.getInputStream();
+		TagNode responceBody = cleaner.clean(is,"UTF-8");
+		Object[] link = responceBody.evaluateXPath("//a/@href");
+		String groupUrl = "";
+		if(link != null && link.length > 0){
+			groupUrl =  ((String)link[0]);
+		}
+	    
 	    System.out.println(groupUrl);
 	    log.info(groupUrl);
 	    if(is != null){
-		is.close();
+	    	is.close();
 	    }
 	    conn.disconnect();
 	    return groupUrl;
@@ -136,6 +148,8 @@ public class NewsPoster {
 	    logExtarnal.error("Error occured during posting news",e);
 	} catch (IOException e) {
 	    logExtarnal.error("Error occured during posting news",e);
+	} catch (XPatherException e) {
+		logExtarnal.error("Error occured during posting news",e);
 	}
 
 	return "";
