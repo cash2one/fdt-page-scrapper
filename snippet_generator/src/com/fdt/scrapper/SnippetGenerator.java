@@ -31,6 +31,7 @@ import org.htmlcleaner.TagNode;
 import org.htmlcleaner.XPatherException;
 
 import com.fdt.scrapper.proxy.ProxyFactory;
+import com.fdt.scrapper.task.BingSnippetTask;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.GoogleSnippetTask;
 import com.fdt.scrapper.task.Snippet;
@@ -41,6 +42,8 @@ import com.fdt.scrapper.task.SnippetTask;
  * @author Administrator
  */
 public class SnippetGenerator {
+	private static final String SOURCE_LABEL = "source";
+
 	private static final String LOAD_PROXY_FILE_FROM_INET_LABEL = "load_proxy_file_from_inet";
 
 	private static final String MAX_ATTEMPT_COUNT_LABEL = "max_attempt_count";
@@ -90,7 +93,16 @@ public class SnippetGenerator {
 					}
 				});
 				SnippetGenerator generator = new SnippetGenerator(ConfigManager.getInstance().getProperty(LINKS_LIST_FILE_PATH_LABEL),ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL));
-				SnippetTask task = new GoogleSnippetTask(args[0]);
+				//getting source for snippets
+				String source = ConfigManager.getInstance().getProperty(SOURCE_LABEL);
+				SnippetTask task = null;
+				if("google".equals(source.toLowerCase().trim())){
+				    task = new GoogleSnippetTask(args[0]);
+				}
+				if("bing".equals(source.toLowerCase().trim())){
+				    task = new BingSnippetTask(args[0]);
+				}
+				
 				task.setLanguage(args[1]);
 				String generatedContent = generator.getFixedSnippets(task);
 				//save content
