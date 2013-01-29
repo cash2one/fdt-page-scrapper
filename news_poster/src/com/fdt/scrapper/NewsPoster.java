@@ -90,7 +90,7 @@ public class NewsPoster {
 	    conn.setRequestMethod("POST");
 	    conn.setDoInput(true);
 	    conn.setDoOutput(true);
-	    
+
 	    conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 	    conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 	    conn.setRequestProperty("Cookie", account.getCookie());
@@ -102,10 +102,11 @@ public class NewsPoster {
 	    nameValuePairs.add(new BasicNameValuePair("interests", ""));
 	    nameValuePairs.add(new BasicNameValuePair("subject", task.getKeyWords()));
 	    //Insert news content here
-	    String snippetsContent = getSnippetsContent(snippets);
-	    task.getNewsContent().put("SNIPPETS", snippetsContent);
+	    //String snippetsContent = getSnippetsContent(snippets);
+	    /*task.getNewsContent().put("SNIPPETS", snippetsContent);
 	    task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
-	    nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
+	    nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));*/
+	    nameValuePairs.add(new BasicNameValuePair("body", ""));
 	    nameValuePairs.add(new BasicNameValuePair("file", ""));
 
 	    OutputStream os = conn.getOutputStream();
@@ -127,29 +128,67 @@ public class NewsPoster {
 
 	    //conn.getRequestProperties()
 	    int code = conn.getResponseCode();
-	    
+
 	    HtmlCleaner cleaner = new HtmlCleaner();
-		InputStream is = conn.getInputStream();
-		TagNode responceBody = cleaner.clean(is,"UTF-8");
-		Object[] link = responceBody.evaluateXPath("//a/@href");
-		String groupUrl = "";
-		if(link != null && link.length > 0){
-			groupUrl =  ((String)link[0]);
-		}
-	    
-	    System.out.println(groupUrl);
-	    log.info(groupUrl);
+	    InputStream is = conn.getInputStream();
+	    TagNode responceBody = cleaner.clean(is,"UTF-8");
+	    Object[] link = responceBody.evaluateXPath("//a/@href");
+	    String groupUrl = "";
+	    if(link != null && link.length > 0){
+		groupUrl =  ((String)link[0]);
+	    }
 	    if(is != null){
-	    	is.close();
+		is.close();
 	    }
 	    conn.disconnect();
+	    
+	    //edit news
+	    url = new URL(Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + groupUrl + "edit/");
+	    HttpURLConnection.setFollowRedirects(false);
+	    conn = (HttpURLConnection) url.openConnection(proxy);
+	    conn.setReadTimeout(60000);
+	    conn.setConnectTimeout(60000);
+	    conn.setRequestMethod("POST");
+	    conn.setDoInput(true);
+	    conn.setDoOutput(true);
+
+	    conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+	    conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+	    conn.setRequestProperty("Cookie", account.getCookie());
+
+	    //httppost.setHeader("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+	    //httppost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
+	    nameValuePairs = new ArrayList<NameValuePair>(2);
+	    nameValuePairs.add(new BasicNameValuePair("subject", task.getKeyWords()));
+	    //Insert news content here
+	    String snippetsContent = getSnippetsContent(snippets);
+	    task.getNewsContent().put("SNIPPETS", snippetsContent);
+	    task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
+	    nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
+	    nameValuePairs.add(new BasicNameValuePair("file", ""));
+	    nameValuePairs.add(new BasicNameValuePair("ttype", "0"));
+
+	    os = conn.getOutputStream();
+	    writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+	    writer.write(getQuery(nameValuePairs));
+	    writer.flush();
+	    writer.close();
+	    os.close();
+	    code = conn.getResponseCode();
+	    conn.disconnect();
+	    //END edit news
+	    
+
+	    System.out.println(groupUrl);
+	    log.info(groupUrl);
+	    
 	    return groupUrl;
 	} catch (ClientProtocolException e) {
 	    logExtarnal.error("Error occured during posting news",e);
 	} catch (IOException e) {
 	    logExtarnal.error("Error occured during posting news",e);
 	} catch (XPatherException e) {
-		logExtarnal.error("Error occured during posting news",e);
+	    logExtarnal.error("Error occured during posting news",e);
 	}
 
 	return "";
