@@ -35,6 +35,7 @@ import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.GoogleSnippetTask;
 import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTask;
+import com.fdt.scrapper.task.TutSnippetTask;
 
 /**
  *
@@ -172,7 +173,11 @@ public class SnippetGeneratorThread implements Runnable {
 			linkCount = randomValue;
 		}
 		int snippetLinked = 0;
-		for(int i = 0; i < snipCount; i++){
+		
+		//int indexShift = getRandomValue(0,snippets.size()-snipCount);
+		int indexShift = 0; 
+		
+		for(int i = indexShift; i < (snipCount+indexShift); i++){
 			//add link to snipper
 			if(snippetLinked < linkCount){
 				//add snippet link
@@ -326,6 +331,9 @@ public class SnippetGeneratorThread implements Runnable {
 				}
 				if("bing".equals(source.toLowerCase().trim())){
 					task = new BingSnippetTask(args[0]);
+				}
+				if("tut".equals(source.toLowerCase().trim())){
+					task = new TutSnippetTask(args[0]);
 				}
 
 				task.setLanguage(args[1]);
