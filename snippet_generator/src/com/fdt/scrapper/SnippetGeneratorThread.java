@@ -12,7 +12,9 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.Reader;
 import java.net.Authenticator;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -21,6 +23,7 @@ import java.net.Proxy;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.zip.GZIPInputStream;
 
 import javax.xml.xpath.XPathExpressionException;
 
@@ -28,6 +31,7 @@ import org.apache.log4j.Logger;
 import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.TagNode;
 import org.htmlcleaner.XPatherException;
+import org.jsoup.Jsoup;
 
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.BingSnippetTask;
@@ -36,6 +40,7 @@ import com.fdt.scrapper.task.GoogleSnippetTask;
 import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTask;
 import com.fdt.scrapper.task.TutSnippetTask;
+import com.fdt.scrapper.task.UkrnetSnippetTask;
 
 /**
  *
@@ -202,12 +207,36 @@ public class SnippetGeneratorThread implements Runnable {
 			URL url = new URL(strUrl);
 			//using proxy
 			conn = (HttpURLConnection)url.openConnection(proxy);
+			conn.addRequestProperty("Host","search.ukr.net");
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 			conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+			conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.addRequestProperty("Accept-Encoding","gzip, deflate");
 			HtmlCleaner cleaner = new HtmlCleaner();
 			is = conn.getInputStream();
-			return cleaner.clean(is,"UTF-8");
+			
+			//TODO working with gzip encoding
+			/*GZIPInputStream gzip = new GZIPInputStream(conn.getInputStream());
+			Reader  reader = new InputStreamReader(gzip, "UTF-8");
+			    int value = -1;
+			    String pageStr = "";
+
+			    while ((value = reader.read()) != -1) {
+			        char c = (char) value;
+			        pageStr += c;
+			    }
+			    gzip.close();
+			
+			    System.out.println(pageStr);
+			String encoding = conn.getContentEncoding();
+			
+			org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", strUrl);
+			System.out.println(page);*/
+			
+			TagNode html = cleaner.clean(is,"UTF-8");
+			int code = conn.getResponseCode();
+			return html;
 		}finally{
 			if(conn != null){
 				try{conn.disconnect();}catch(Throwable e){}
@@ -334,6 +363,9 @@ public class SnippetGeneratorThread implements Runnable {
 				}
 				if("tut".equals(source.toLowerCase().trim())){
 					task = new TutSnippetTask(args[0]);
+				}
+				if("ukrnet".equals(source.toLowerCase().trim())){
+					task = new UkrnetSnippetTask(args[0]);
 				}
 
 				task.setLanguage(args[1]);

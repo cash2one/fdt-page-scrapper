@@ -102,10 +102,10 @@ public class NewsPoster {
 	    nameValuePairs.add(new BasicNameValuePair("interests", ""));
 	    nameValuePairs.add(new BasicNameValuePair("subject", task.getKeyWords()));
 	    //Insert news content here
-	    //String snippetsContent = getSnippetsContent(snippets);
-	    /*task.getNewsContent().put("SNIPPETS", snippetsContent);
+	    String snippetsContent = getSnippetsContent(snippets);
+	    task.getNewsContent().put("SNIPPETS", snippetsContent);
 	    task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
-	    nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));*/
+	    nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
 	    nameValuePairs.add(new BasicNameValuePair("body", ""));
 	    nameValuePairs.add(new BasicNameValuePair("file", ""));
 
@@ -153,15 +153,15 @@ public class NewsPoster {
 	    conn.setDoOutput(true);
 
 	    conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-	    conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+	    conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*//*;q=0.8");
 	    conn.setRequestProperty("Cookie", account.getCookie());
 
 	    //httppost.setHeader("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-	    //httppost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
+	    //httppost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*//*;q=0.8"); 
 	    nameValuePairs = new ArrayList<NameValuePair>(2);
 	    nameValuePairs.add(new BasicNameValuePair("subject", task.getKeyWords()));
 	    //Insert news content here
-	    String snippetsContent = getSnippetsContent(snippets);
+	    //String snippetsContent = getSnippetsContent(snippets);
 	    task.getNewsContent().put("SNIPPETS", snippetsContent);
 	    task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
 	    nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
@@ -227,7 +227,9 @@ public class NewsPoster {
 	    linkCount = randomValue;
 	}
 	int snippetLinked = 0;
-	for(int i = 0; i < snipCount; i++){
+	int indexShift = getRandomValue(0,snippets.size()-snipCount);
+	
+	for(int i = indexShift; i < (snipCount+indexShift); i++){
 	    //add link to snipper
 	    if(snippetLinked < linkCount){
 		//add snippet link
