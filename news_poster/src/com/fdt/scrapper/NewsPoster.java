@@ -141,47 +141,48 @@ public class NewsPoster {
 		is.close();
 	    }
 	    conn.disconnect();
-	    
-	    //edit news
-	    url = new URL(Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + groupUrl + "edit/");
-	    HttpURLConnection.setFollowRedirects(false);
-	    conn = (HttpURLConnection) url.openConnection(proxy);
-	    conn.setReadTimeout(60000);
-	    conn.setConnectTimeout(60000);
-	    conn.setRequestMethod("POST");
-	    conn.setDoInput(true);
-	    conn.setDoOutput(true);
 
-	    conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-	    conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*//*;q=0.8");
-	    conn.setRequestProperty("Cookie", account.getCookie());
+	    if(rnd.nextInt(20) == 10){
+		//edit news
+		url = new URL(Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + groupUrl + "edit/");
+		HttpURLConnection.setFollowRedirects(false);
+		conn = (HttpURLConnection) url.openConnection(proxy);
+		conn.setReadTimeout(60000);
+		conn.setConnectTimeout(60000);
+		conn.setRequestMethod("POST");
+		conn.setDoInput(true);
+		conn.setDoOutput(true);
 
-	    //httppost.setHeader("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-	    //httppost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*//*;q=0.8"); 
-	    nameValuePairs = new ArrayList<NameValuePair>(2);
-	    nameValuePairs.add(new BasicNameValuePair("subject", task.getKeyWords()));
-	    //Insert news content here
-	    //String snippetsContent = getSnippetsContent(snippets);
-	    task.getNewsContent().put("SNIPPETS", snippetsContent);
-	    task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
-	    nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
-	    nameValuePairs.add(new BasicNameValuePair("file", ""));
-	    nameValuePairs.add(new BasicNameValuePair("ttype", "0"));
+		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*//*;q=0.8");
+		conn.setRequestProperty("Cookie", account.getCookie());
 
-	    os = conn.getOutputStream();
-	    writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-	    writer.write(getQuery(nameValuePairs));
-	    writer.flush();
-	    writer.close();
-	    os.close();
-	    code = conn.getResponseCode();
-	    conn.disconnect();
-	    //END edit news
-	    
+		//httppost.setHeader("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+		//httppost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*//*;q=0.8"); 
+		nameValuePairs = new ArrayList<NameValuePair>(2);
+		nameValuePairs.add(new BasicNameValuePair("subject", task.getKeyWords()));
+		//Insert news content here
+		//String snippetsContent = getSnippetsContent(snippets);
+		task.getNewsContent().put("SNIPPETS", snippetsContent);
+		task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
+		nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
+		nameValuePairs.add(new BasicNameValuePair("file", ""));
+		nameValuePairs.add(new BasicNameValuePair("ttype", "0"));
+
+		os = conn.getOutputStream();
+		writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+		writer.write(getQuery(nameValuePairs));
+		writer.flush();
+		writer.close();
+		os.close();
+		code = conn.getResponseCode();
+		conn.disconnect();
+		//END edit news
+	    }
 
 	    System.out.println(groupUrl);
 	    log.info(groupUrl);
-	    
+
 	    return groupUrl;
 	} catch (ClientProtocolException e) {
 	    logExtarnal.error("Error occured during posting news",e);
@@ -228,7 +229,7 @@ public class NewsPoster {
 	}
 	int snippetLinked = 0;
 	int indexShift = getRandomValue(0,snippets.size()-snipCount);
-	
+
 	for(int i = indexShift; i < (snipCount+indexShift); i++){
 	    //add link to snipper
 	    if(snippetLinked < linkCount){
