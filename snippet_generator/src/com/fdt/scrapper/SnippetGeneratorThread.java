@@ -207,12 +207,13 @@ public class SnippetGeneratorThread implements Runnable {
 			URL url = new URL(strUrl);
 			//using proxy
 			conn = (HttpURLConnection)url.openConnection(proxy);
+			conn.setConnectTimeout(30000);
 			conn.addRequestProperty("Host","search.ukr.net");
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 			conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
 			conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-			conn.addRequestProperty("Accept-Encoding","gzip, deflate");
+			//conn.addRequestProperty("Accept-Encoding","gzip, deflate");
 			HtmlCleaner cleaner = new HtmlCleaner();
 			is = conn.getInputStream();
 			
@@ -229,13 +230,13 @@ public class SnippetGeneratorThread implements Runnable {
 			    gzip.close();
 			
 			    System.out.println(pageStr);
-			String encoding = conn.getContentEncoding();
+			String encoding = conn.getContentEncoding();*/
 			
-			org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", strUrl);
+			/*org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", strUrl);
 			System.out.println(page);*/
 			
 			TagNode html = cleaner.clean(is,"UTF-8");
-			int code = conn.getResponseCode();
+			//int code = conn.getResponseCode();
 			return html;
 		}finally{
 			if(conn != null){
