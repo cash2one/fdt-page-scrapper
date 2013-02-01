@@ -77,9 +77,9 @@ public class NewsPoster {
     }
 
     private String postNews(ArrayList<Snippet> snippets){
-	String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + Constants.getInstance().getProperty(AccountFactory.POST_NEWS_URL_LABEL);
+	//String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + Constants.getInstance().getProperty(AccountFactory.POST_NEWS_URL_LABEL);
 
-
+    	String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + task.getKeyWords() + "delete/";
 	try {
 	    //post news
 	    URL url = new URL(postUrl);
@@ -142,7 +142,7 @@ public class NewsPoster {
 	    }
 	    conn.disconnect();
 
-	    if(rnd.nextInt(20) == 10){
+	   /* if(rnd.nextInt(20) == 10){
 		//edit news
 		url = new URL(Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + groupUrl + "edit/");
 		HttpURLConnection.setFollowRedirects(false);
@@ -179,7 +179,7 @@ public class NewsPoster {
 		conn.disconnect();
 		//END edit news
 	    }
-
+*/
 	    System.out.println(groupUrl);
 	    log.info(groupUrl);
 
