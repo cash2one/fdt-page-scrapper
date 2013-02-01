@@ -77,9 +77,10 @@ public class NewsPoster {
     }
 
     private String postNews(ArrayList<Snippet> snippets){
-	//String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + Constants.getInstance().getProperty(AccountFactory.POST_NEWS_URL_LABEL);
+	String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + Constants.getInstance().getProperty(AccountFactory.POST_NEWS_URL_LABEL);
+	
+	//String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + task.getKeyWords() + "delete/";
 
-    	String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + task.getKeyWords() + "delete/";
 	try {
 	    //post news
 	    URL url = new URL(postUrl);
@@ -106,7 +107,6 @@ public class NewsPoster {
 	    task.getNewsContent().put("SNIPPETS", snippetsContent);
 	    task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
 	    nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
-	    nameValuePairs.add(new BasicNameValuePair("body", ""));
 	    nameValuePairs.add(new BasicNameValuePair("file", ""));
 
 	    OutputStream os = conn.getOutputStream();

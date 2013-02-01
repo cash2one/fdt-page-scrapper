@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Properties;
+import java.util.Random;
 
 import org.apache.log4j.Logger;
 import org.apache.velocity.Template;
@@ -50,6 +51,8 @@ public class TaskFactory {
     private ArrayList<NewsTask> taskQueue;
     private ArrayList<NewsTask> successQueue;
     private ArrayList<NewsTask> errorQueue;
+    
+    private Random rnd = new Random();
 
     private TaskFactory(){
 	taskQueue = new ArrayList<NewsTask>();
@@ -159,7 +162,7 @@ public class TaskFactory {
 	synchronized (this) {
 	    if(runThreadsCount < MAX_THREAD_COUNT){
 		if(!isTaskFactoryEmpty()){
-		    return taskQueue.remove(0);
+		    return taskQueue.remove(rnd.nextInt(taskQueue.size()));
 		}
 	    }
 	    return null;

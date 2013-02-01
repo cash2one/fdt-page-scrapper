@@ -61,13 +61,13 @@ public class SnippetGeneratorThread implements Runnable {
 	private final static String LINKS_LIST_FILE_PATH_LABEL = "links_list_file_path";
 
 	private int MIN_SNIPPET_COUNT=3;
-	private int MAX_SNIPPET_COUNT=5;
+	private int MAX_SNIPPET_COUNT=9;
 
 	private int MIN_LINK_COUNT=3;
-	private int MAX_LINK_COUNT=5;
+	private int MAX_LINK_COUNT=9;
 
 	private int MIN_WORDS_COUNT=2;
-	private int MAX_WORDS_COUNT=3;
+	private int MAX_WORDS_COUNT=5;
 
 	private int LINKS_COUNT = 100;
 
