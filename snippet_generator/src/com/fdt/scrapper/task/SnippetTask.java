@@ -93,6 +93,6 @@ public abstract class SnippetTask
     }
     
     public String getFullUrl(){
-	return scrapperUrl.replace(KEY_WORDS_KEY, keyWords).replace(LANGUAGE_KEY, language);
+    	return scrapperUrl.replace(KEY_WORDS_KEY, keyWords).replace(LANGUAGE_KEY, language);
     }
 }
