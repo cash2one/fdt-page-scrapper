@@ -37,6 +37,7 @@ public class SnippetGeneratorRunner{
 	if(args.length < 3){
 	    System.out.print("Not enought arguments....");
 	}else{
+	    System.out.println("Working Directory = " +  System.getProperty("user.dir")); 
 	    ConfigManager.getInstance().loadProperties(args[2]);
 	    System.out.println(args[0] + " " + args[1] + " " + args[2]);
 	    ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
