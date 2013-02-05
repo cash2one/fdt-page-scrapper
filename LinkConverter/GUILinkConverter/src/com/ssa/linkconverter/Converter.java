@@ -73,16 +73,19 @@ public class Converter {
     }
 
     private void readKeys() {
-        FileReader fr = null;
-        BufferedReader br = null;
+        FileInputStream fis = null;
+        InputStreamReader in = null;
+        BufferedReader bri = null;
+            
         try {
-            fr = new FileReader(new File(keysFilePath));
-            br = new BufferedReader(fr);
-
-            String line = br.readLine();
+            fis = new FileInputStream(new File(keysFilePath));
+            in = new InputStreamReader(fis, "UTF-8");
+            bri = new BufferedReader(in);
+   
+            String line = bri.readLine();
             while (line != null) {
                 keysCollection.add(line.trim());
-                line = br.readLine();
+                line = bri.readLine();
             }
         } catch (FileNotFoundException e) {
             log.error("Reading PROPERTIES file: FileNotFoundException exception occured", e);
@@ -90,15 +93,22 @@ public class Converter {
             log.error("Reading PROPERTIES file: IOException exception occured", e);
         } finally {
             try {
-                if (br != null) {
-                    br.close();
+                if (bri != null) {
+                    bri.close();
                 }
             } catch (Throwable e) {
                 log.warn("Error while initializtion", e);
             }
             try {
-                if (fr != null) {
-                    fr.close();
+                if (in != null) {
+                    in.close();
+                }
+            } catch (Throwable e) {
+                log.warn("Error while initializtion", e);
+            }
+            try {
+                if (fis != null) {
+                    fis.close();
                 }
             } catch (Throwable e) {
                 log.warn("Error while initializtion", e);
