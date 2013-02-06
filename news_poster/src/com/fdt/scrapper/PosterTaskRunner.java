@@ -98,7 +98,7 @@ public class PosterTaskRunner {
 				proxyFactory.init(proxyFilePath);
 
 				//load account list
-				AccountFactory accountFactory = new AccountFactory();
+				AccountFactory accountFactory = new AccountFactory(proxyFactory);
 				accountFactory.fillAccounts(accListFilePath);
 
 				PosterThread newThread = null;

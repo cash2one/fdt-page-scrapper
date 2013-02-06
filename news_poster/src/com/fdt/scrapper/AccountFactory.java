@@ -1,24 +1,30 @@
 package com.fdt.scrapper;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.Proxy;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import org.apache.http.HttpResponse;
+import javax.xml.xpath.XPathExpressionException;
+
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
 
+import com.fdt.scrapper.proxy.ProxyConnector;
+import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.Constants;
 
 public class AccountFactory
@@ -37,8 +43,11 @@ public class AccountFactory
 
 	private static int NEWS_PER_ACCOUNT = 200;
 
-	public AccountFactory(){
+	private ProxyFactory proxyFactory = null;
+
+	public AccountFactory(ProxyFactory proxy){
 		super();
+		this.proxyFactory = proxy;
 		NEWS_PER_ACCOUNT = Integer.valueOf(Constants.getInstance().getProperty(NEWS_PER_ACCOUNT_LABEL));
 	}
 
@@ -82,28 +91,51 @@ public class AccountFactory
 		//getting cookie for each account
 		try {
 			ArrayList<Account> accountToRemove = new ArrayList<Account>();
+			ProxyConnector proxy = proxyFactory.getProxyConnector();
 			for(Account account : accounts.values()){
-				HttpClient httpclient = new DefaultHttpClient();
-				HttpPost httppost = new HttpPost(Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL));
-				// Add your data
+				String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL);
+				URL url = new URL(postUrl);
+				HttpURLConnection.setFollowRedirects(false);
+				HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy.getConnect());
+				conn.setReadTimeout(60000);
+				conn.setConnectTimeout(60000);
+				conn.setRequestMethod("POST");
+				conn.setDoInput(true);
+				conn.setDoOutput(true);
+
 				List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 				nameValuePairs.add(new BasicNameValuePair("destination", "/"));
 				nameValuePairs.add(new BasicNameValuePair("credential_0", account.getLogin()));
 				nameValuePairs.add(new BasicNameValuePair("credential_1", account.getPass()));
-				httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+
+				OutputStream os = conn.getOutputStream();
+				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+				writer.write(NewsPoster.getQuery(nameValuePairs));
+				writer.flush();
+				writer.close();
+				os.close();
 
 				// Execute HTTP Post Request
-				HttpResponse response = httpclient.execute(httppost);
-				String cookies = response.getFirstHeader("Set-Cookie").getValue();
-				if(cookies.contains("notexists")){
+				Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
+				if(cookies.get("Set-Cookie").toString().contains("notexists")){
 					log.error("Account doesn't exist: \""+ account.getLogin() + "\". Please check email and password.");
 					accountToRemove.add(account);
 					continue;
 				}
-				account.setCookie(cookies);
-				nameValuePairs.clear();
+
+				String cookieValue = "";
+				for(String cookieOne: cookies.get("Set-Cookie"))
+				{
+					if(cookieOne.contains("SSO_login")){
+						cookieValue = cookieOne;
+					}
+				}
+
+				account.setCookie(cookieValue);
+				conn.disconnect();
 			}
-			
+			proxyFactory.releaseProxy(proxy);
+
 			for(Account account : accountToRemove){
 				accounts.remove(account.getLogin());
 				newsPostedCount.remove(account.getLogin());
@@ -112,6 +144,8 @@ public class AccountFactory
 		} catch (ClientProtocolException e) {
 			log.error("Error during filling account from list and getting cookies for account",e);
 		} catch (IOException e) {
+			log.error("Error during filling account from list and getting cookies for account",e);
+		} catch (XPathExpressionException e) {
 			log.error("Error during filling account from list and getting cookies for account",e);
 		}
 	}
@@ -154,7 +188,7 @@ public class AccountFactory
 		log.debug("Used account size decremented: " + count);
 	}
 
-/*	public synchronized boolean isCanGetNewAccounts(){
+	/*	public synchronized boolean isCanGetNewAccounts(){
 		for(String login : accountUsedInThreadCount.keySet()){
 			int runningCount = accountUsedInThreadCount.get(login);
 			int postedCount = newsPostedCount.get(login);
