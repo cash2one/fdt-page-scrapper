@@ -10,6 +10,8 @@ import java.util.Random;
 
 import org.apache.log4j.Logger;
 
+import com.fdt.scrapper.SnippetExtractor;
+
 public class TaskFactory {
 
 	private static final Logger log = Logger.getLogger(TaskFactory.class);
@@ -20,8 +22,6 @@ public class TaskFactory {
 	public static Integer MAX_ATTEMP_COUNT = 50;
 	protected int runThreadsCount = 0;
 
-	private static final String SOURCE_LABEL = "source";
-	
 	/**
 	 * HashMap<process_program,queue_for_process_program>
 	 * 
@@ -135,9 +135,9 @@ public class TaskFactory {
 		return taskQueue.isEmpty();
 	}
 
-	public void loadTaskQueue(String pathToTaskList) {
+	public void loadTaskQueue(String pathToTaskList, String source, String lang) {
 		ArrayList<String> keyWordsList = loadKeyWordsList(pathToTaskList);
-		fillTaskQueue(keyWordsList);
+		fillTaskQueue(keyWordsList, source, lang);
 		keyWordsList.clear();
 	}
 
@@ -184,24 +184,28 @@ public class TaskFactory {
 		return keyWordsList;
 	}
 
-	private synchronized void fillTaskQueue(ArrayList<String> keyWordsList){
+	private synchronized void fillTaskQueue(ArrayList<String> keyWordsList, String source, String lang){
 		for(String keyWords : keyWordsList){
-			String source = ConfigManager.getInstance().getProperty(SOURCE_LABEL);
-			SnippetTask task = null;
-			if("google".equals(source.toLowerCase().trim())){
-				task = new GoogleSnippetTask(keyWords);
-			}
-			if("bing".equals(source.toLowerCase().trim())){
-				task = new BingSnippetTask(keyWords);
-			}
-			if("tut".equals(source.toLowerCase().trim())){
-				task = new TutSnippetTask(keyWords);
-			}
-			if("ukrnet".equals(source.toLowerCase().trim())){
-				task = new UkrnetSnippetTask(keyWords);
-			}
-			taskQueue.add(task);
+			taskQueue.add(initSnippetTask( keyWords, source, lang));
 		}
+	}
+	
+	private SnippetTask initSnippetTask(String key, String source, String lang){
+		SnippetTask task = null;
+		if("google".equals(source.toLowerCase().trim())){
+			task = new GoogleSnippetTask(key);
+		}
+		if("bing".equals(source.toLowerCase().trim())){
+			task = new BingSnippetTask(key);
+		}
+		if("tut".equals(source.toLowerCase().trim())){
+			task = new TutSnippetTask(key);
+		}
+		if("ukrnet".equals(source.toLowerCase().trim())){
+			task = new UkrnetSnippetTask(key);
+		}
+		task.setLanguage(lang);
+		return task;
 	}
 
 	public synchronized ArrayList<SnippetTask> getTaskQueue() {

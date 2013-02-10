@@ -24,14 +24,11 @@ import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.TagNode;
 import org.htmlcleaner.XPatherException;
 
+import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
-import com.fdt.scrapper.task.BingSnippetTask;
 import com.fdt.scrapper.task.ConfigManager;
-import com.fdt.scrapper.task.GoogleSnippetTask;
 import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTask;
-import com.fdt.scrapper.task.TutSnippetTask;
-import com.fdt.scrapper.task.UkrnetSnippetTask;
 
 /**
  *
@@ -43,8 +40,6 @@ public class SnippetExtractor {
 
 	private static final String MAX_SNIPPET_COUNT_LABEL = "MAX_SNIPPET_COUNT";
 	private static final String MIN_SNIPPET_COUNT_LABEL = "MIN_SNIPPET_COUNT";
-
-	private static final String SOURCE_LABEL = "source";
 
 	private static final String MAX_ATTEMPT_COUNT_LABEL = "max_attempt_count";
 
@@ -63,61 +58,25 @@ public class SnippetExtractor {
 
 	Random rnd = new Random();
 
-	private String key;
-	private String lang;
 	private ProxyFactory proxyFactory = null;
 	private ArrayList<String> linkList = null;
 	
+	private SnippetTask task= null;
+	
 
-	public SnippetExtractor(String key, String lang, ProxyFactory proxyFactory, ArrayList<String> linkList) throws MalformedURLException, IOException {
+	public SnippetExtractor(SnippetTask snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList) throws MalformedURLException, IOException {
 		super();
 		MIN_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
 		MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
 		MIN_LINK_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_LINK_COUNT_LABEL));
 		MAX_LINK_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_LINK_COUNT_LABEL));
 		
-		this.key = key;
-		this.lang = lang;
 		this.proxyFactory = proxyFactory;
 		this.linkList = linkList;
+		task = snippetTask;
 	}
 
-	/*public synchronized ArrayList<String> loadLinkList(String cfgFilePath){
-		ArrayList<String> linkList = new ArrayList<String>();
-		FileReader fr = null;
-		BufferedReader br = null;
-		try {
-			fr = new FileReader(new File(cfgFilePath));
-			br = new BufferedReader(fr);
-
-			String line = br.readLine();
-			while(line != null){
-				String utf8Line = new String(line.getBytes(),"UTF-8");
-				linkList.add(utf8Line.trim());
-				line = br.readLine();
-			}
-		} catch (FileNotFoundException e) {
-			log.error("Reading PROPERTIES file: FileNotFoundException exception occured",e);
-		} catch (IOException e) {
-			log.error("Reading PROPERTIES file: IOException exception occured", e);
-		} finally {
-			try {
-				if(br != null)
-					br.close();
-			} catch (Throwable e) {
-				log.warn("Error while initializtion", e);
-			}
-			try {
-				if(fr != null)
-					fr.close();
-			} catch (Throwable e) {
-				log.warn("Error while initializtion", e);
-			}
-		}
-		return linkList;
-	}*/
-
-	public synchronized String insertLinksToSnippets(SnippetTask snippetTask) {
+	public synchronized void insertLinksToSnippets(SnippetTask snippetTask) {
 		//get snippets
 		String snippetContent = null;
 		int attempt = 0;
@@ -135,7 +94,8 @@ public class SnippetExtractor {
 			}
 			attempt++;
 		}while((snippetContent == null || "".equals(snippetContent.trim())) && attempt < maxAttemptCount);
-		return snippetContent;
+		
+		task.setResult(snippetContent);
 	}
 
 	private String getSnippetsContent(ArrayList<Snippet> snippets) {
@@ -286,7 +246,15 @@ public class SnippetExtractor {
 
 		String proxyTypeStr = ConfigManager.getInstance().getProperty("proxy_type");
 
-		TagNode page = loadPageContent(snippetTask,proxyFactory.getRandomProxyConnector().getConnect(proxyTypeStr));
+		ProxyConnector proxyConnector = proxyFactory.getProxyConnector();
+		TagNode page = null;
+		try{
+			page = loadPageContent(snippetTask,proxyConnector.getConnect(proxyTypeStr));
+		}finally{
+			if(proxyConnector != null){
+				proxyFactory.releaseProxy(proxyConnector);
+			}
+		}
 
 		Object[] titles = null;
 		Object[] descs= null;
@@ -312,67 +280,18 @@ public class SnippetExtractor {
 
 		return snippets;
 	}
-
-	/*private void saveResultToFile(String content, String fileName){
-		ArrayList<String> contentArray = new ArrayList<>();
-		contentArray.add(content);
-		saveResultToFile(contentArray,fileName);
+	
+	public SnippetTask getTask() {
+		return task;
 	}
 
-	private void saveResultToFile(ArrayList<String> content, String fileName){
-		BufferedWriter bufferedWriter = null;
-		//save success tasks
-		try {
-			//Construct the BufferedWriter object
-			log.debug("Starting saving success results...");
-			bufferedWriter = new BufferedWriter(bufferedWriter = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(new File("output/"+fileName)), "UTF8")));
-			for(String line:content){
-				bufferedWriter.write(line);
-				bufferedWriter.newLine();
-			}
-			log.debug("Success results was saved successfully.");
-		} catch (FileNotFoundException ex) {
-			log.error("Error occured during saving Success results",ex);
-		} catch (IOException ex) {
-			log.error("Error occured during saving Success results",ex);
-		} finally {
-			//Close the BufferedWriter
-			try {
-				if (bufferedWriter != null) {
-					bufferedWriter.flush();
-					bufferedWriter.close();
-				}
-			} catch (IOException ex) {
-				log.error("Error occured during closing output streams during saving Success results",ex);
-			}
-		}
-	}*/
-
-	public String getSnippets()
+	public SnippetTask extractSnippets()
 	{
 		synchronized (this)
 		{
 			try {
-				//getting source for snippets
-				String source = ConfigManager.getInstance().getProperty(SOURCE_LABEL);
-				SnippetTask task = null;
-				if("google".equals(source.toLowerCase().trim())){
-					task = new GoogleSnippetTask(key);
-				}
-				if("bing".equals(source.toLowerCase().trim())){
-					task = new BingSnippetTask(key);
-				}
-				if("tut".equals(source.toLowerCase().trim())){
-					task = new TutSnippetTask(key);
-				}
-				if("ukrnet".equals(source.toLowerCase().trim())){
-					task = new UkrnetSnippetTask(key);
-				}
-				task.setLanguage(lang);
-				
-				return insertLinksToSnippets(task);
-				
+				insertLinksToSnippets(task);
+				return task;
 			}
 			catch (Exception e) {
 				log.error("Error occured during getting snippets",e);

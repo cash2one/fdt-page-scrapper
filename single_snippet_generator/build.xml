@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="snippet_extractor_lib" basedir="." default="clean">
-	<description>snippet_extractor_lib</description>
+<project name="single_snippet_generator" basedir="." default="clean">
+	<description>single_snippet_generator</description>
 	<property environment="env" />
 	<property file="build.properties" />
 	<property name="debuglevel" value="source,lines,vars" />
@@ -30,7 +30,7 @@
 	</target>
 
 	<target depends="compile" name="build" description="Jar creating">
-		<jar destfile="deploy/snippet_extractor_lib.jar" basedir="classes" whenmanifestonly="fail"
+		<jar destfile="deploy/single_snippet_generator.jar" basedir="classes" whenmanifestonly="fail"
 			defaultexcludes="true" includes="**/*.class, **/*.xml, **/*.xsl, **/*.class">
 			<manifest>
 				<attribute name="Class-Path" value="." />
