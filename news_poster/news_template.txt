@@ -1,3 +1,5 @@
-<a href="$PROMO_URL_START$PROMO_URL_END" rel='nofollow' size=1><img src="$IMAGE_URL" /></a>
+<noindex><a href="$PROMO_URL_START$PROMO_URL_END" rel="nofollow"><img src="$IMAGE_URL" /></a><noindex>
 <br>
 $SNIPPETS
+
+<noindex><a href="$PROMO_URL_START$PROMO_URL_END" rel="nofollow">Читать полностью</a><noindex>

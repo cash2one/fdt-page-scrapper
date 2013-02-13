@@ -34,7 +34,7 @@ public class Snippet {
     @Override
     public String toString(){
 	StringBuilder result = new StringBuilder();
-	result.append("<p>").append("<h3>").append(title).append("</h3><br>").append(content).append("</p>");
+	result.append("<p>").append("<h3>").append(title).append("</h3>").append(content).append("</p>");
 	return result.toString();
     }
 }

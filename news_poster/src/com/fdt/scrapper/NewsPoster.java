@@ -43,11 +43,11 @@ public class NewsPoster {
 	private static final Logger log = Logger.getLogger(NewsPoster.class);
 	private static final Logger logExtarnal = Logger.getLogger(PosterTaskRunner.class);
 
-	private int MIN_SNIPPET_COUNT=3;
-	private int MAX_SNIPPET_COUNT=7;
+	private int MIN_SNIPPET_COUNT=2;
+	private int MAX_SNIPPET_COUNT=5;
 
-	private int MIN_LINK_COUNT=0;
-	private int MAX_LINK_COUNT=0;
+	private int MIN_LINK_COUNT=2;
+	private int MAX_LINK_COUNT=5;
 
 	private int MIN_WORDS_COUNT=2;
 	private int MAX_WORDS_COUNT=3;
@@ -92,6 +92,7 @@ public class NewsPoster {
 			conn.setDoInput(true);
 			conn.setDoOutput(true);
 
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.setRequestProperty("Cookie", account.getCookie());
@@ -231,7 +232,9 @@ public class NewsPoster {
 		}else{
 			linkCount = randomValue;
 		}
+		
 		linkCount = 0;
+
 		int snippetLinked = 0;
 		int indexShift = getRandomValue(0,snippets.size()-snipCount);
 
@@ -241,10 +244,10 @@ public class NewsPoster {
 				//add snippet link
 				int randomSuccessLink = getRandomValue(1,taskFactory.getSuccessQueue().size());
 				addLinkToSnippetContent(snippets.get(i), Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + taskFactory.getSuccessQueue().get(randomSuccessLink-1).getResult());
-				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
+				snippetsContent.append(snippets.get(i).toString());
 				snippetLinked++;
 			}else{
-				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
+				snippetsContent.append(snippets.get(i).toString());
 			}
 		}
 
