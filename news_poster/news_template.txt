@@ -2,4 +2,12 @@
 <br>
 $SNIPPETS
 
-<noindex><a href="$PROMO_URL_START$PROMO_URL_END" rel="nofollow">Читать полностью</a><noindex>
+<br>
+<noindex>Другие новости:
+<br>
+<a href="$POSTED_LINK_1">$POSTED_KEYWORD_1</a>
+<br>
+<a href="$POSTED_LINK_2">$POSTED_KEYWORD_2</a>
+<br>
+<a href="$POSTED_LINK_3">$POSTED_KEYWORD_3</a>
+<noindex>

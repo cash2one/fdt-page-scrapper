@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
-import java.net.Proxy;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -103,8 +102,9 @@ public class AccountFactory
 				conn.setDoInput(true);
 				conn.setDoOutput(true);
 				
-				conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-				conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+				conn.addRequestProperty("Referer","http://subscribe.ru/");
+				conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"); 
+				//conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 				conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 
 				List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
@@ -119,6 +119,7 @@ public class AccountFactory
 				writer.close();
 				os.close();
 
+				
 				// Execute HTTP Post Request
 				Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
 				if(cookies.get("Set-Cookie").toString().contains("notexists")){
