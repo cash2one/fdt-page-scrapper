@@ -43,10 +43,10 @@ public class NewsPoster {
     private static final Logger log = Logger.getLogger(NewsPoster.class);
     private static final Logger logExtarnal = Logger.getLogger(PosterTaskRunner.class);
 
-    private int MIN_SNIPPET_COUNT=2;
+    private int MIN_SNIPPET_COUNT=3;
     private int MAX_SNIPPET_COUNT=5;
 
-    private int MIN_LINK_COUNT=2;
+    private int MIN_LINK_COUNT=3;
     private int MAX_LINK_COUNT=5;
 
     private int MIN_WORDS_COUNT=2;
@@ -104,12 +104,13 @@ public class NewsPoster {
 	    nameValuePairs.add(new BasicNameValuePair("interests", ""));
 	    nameValuePairs.add(new BasicNameValuePair("subject", task.getKeyWords()));
 	    //Insert news content here
-	    String snippetsContent = getSnippetsContent(snippets);
-	    task.getNewsContent().put("SNIPPETS", snippetsContent);
+	    String[] snippetsContent = getSnippetsContent(snippets);
+	    task.getNewsContent().put("SNIPPETS_1", snippetsContent[0]);
+	    task.getNewsContent().put("SNIPPETS_2", snippetsContent[1]);
 	    task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
 
 	    //add snippets news
-	    
+
 	    if(taskFactory.getSuccessQueue().size() > 0){
 		int randLink = getRandomValue(0, taskFactory.getSuccessQueue().size()-1);
 		task.getNewsContent().put("POSTED_LINK_1", taskFactory.getSuccessQueue().get(randLink).getResult());
@@ -169,7 +170,9 @@ public class NewsPoster {
 	    }
 	    conn.disconnect();
 
-	    /* if(rnd.nextInt(20) == 10){
+	    //edit news
+	    if(rnd.nextInt(5) == 4){
+		log.info("Edit post: " + groupUrl);
 		//edit news
 		url = new URL(Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + groupUrl + "edit/");
 		HttpURLConnection.setFollowRedirects(false);
@@ -180,18 +183,40 @@ public class NewsPoster {
 		conn.setDoInput(true);
 		conn.setDoOutput(true);
 
+		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*//*;q=0.8");
+		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 		conn.setRequestProperty("Cookie", account.getCookie());
 
 		//httppost.setHeader("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-		//httppost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*//*;q=0.8"); 
+		//httppost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 		nameValuePairs = new ArrayList<NameValuePair>(2);
 		nameValuePairs.add(new BasicNameValuePair("subject", task.getKeyWords()));
 		//Insert news content here
-		//String snippetsContent = getSnippetsContent(snippets);
-		task.getNewsContent().put("SNIPPETS", snippetsContent);
+		task.getNewsContent().put("SNIPPETS_1", snippetsContent[0]);
+		task.getNewsContent().put("SNIPPETS_2", snippetsContent[1]);
 		task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
+
+		//add snippets news
+
+		if(taskFactory.getSuccessQueue().size() > 0){
+		    int randLink = getRandomValue(0, taskFactory.getSuccessQueue().size()-1);
+		    task.getNewsContent().put("POSTED_LINK_1", taskFactory.getSuccessQueue().get(randLink).getResult());
+		    task.getNewsContent().put("POSTED_KEYWORD_1", taskFactory.getSuccessQueue().get(randLink).getKeyWords());
+		    randLink = getRandomValue(0, taskFactory.getSuccessQueue().size()-1);
+		    task.getNewsContent().put("POSTED_LINK_2", taskFactory.getSuccessQueue().get(randLink).getResult());
+		    task.getNewsContent().put("POSTED_KEYWORD_2", taskFactory.getSuccessQueue().get(randLink).getKeyWords());
+		    randLink = getRandomValue(0, taskFactory.getSuccessQueue().size()-1);
+		    task.getNewsContent().put("POSTED_LINK_3", taskFactory.getSuccessQueue().get(randLink).getResult());
+		    task.getNewsContent().put("POSTED_KEYWORD_3", taskFactory.getSuccessQueue().get(randLink).getKeyWords());
+		}else{
+		    task.getNewsContent().put("POSTED_LINK_1", "#");
+		    task.getNewsContent().put("POSTED_KEYWORD_1", task.getKeyWords());
+		    task.getNewsContent().put("POSTED_LINK_2", "#");
+		    task.getNewsContent().put("POSTED_KEYWORD_2", task.getKeyWords());
+		    task.getNewsContent().put("POSTED_LINK_3", "#");
+		    task.getNewsContent().put("POSTED_KEYWORD_3", task.getKeyWords());
+		}
 		nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
 		nameValuePairs.add(new BasicNameValuePair("file", ""));
 		nameValuePairs.add(new BasicNameValuePair("ttype", "0"));
@@ -206,7 +231,7 @@ public class NewsPoster {
 		conn.disconnect();
 		//END edit news
 	    }
-		 */
+
 	    System.out.println(groupUrl);
 	    log.info(groupUrl);
 
@@ -230,8 +255,10 @@ public class NewsPoster {
     }
 
     //random links
-    private String getSnippetsContent(ArrayList<Snippet> snippets) {
+    private String[] getSnippetsContent(ArrayList<Snippet> snippets) {
 	//calculate snippets count
+	String[] result = new String[]{"",""};
+
 	int snipCount = 0;
 	int linkCount = 0;
 	if(snippets.size() <= MIN_SNIPPET_COUNT){
@@ -260,20 +287,26 @@ public class NewsPoster {
 	int snippetLinked = 0;
 	int indexShift = getRandomValue(0,snippets.size()-snipCount);
 
+	int resCounter = 0;
 	for(int i = indexShift; i < (snipCount+indexShift); i++){
 	    //add link to snipper
 	    if(snippetLinked < linkCount){
 		//add snippet link
 		int randomSuccessLink = getRandomValue(1,taskFactory.getSuccessQueue().size());
 		addLinkToSnippetContent(snippets.get(i), Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + taskFactory.getSuccessQueue().get(randomSuccessLink-1).getResult());
-		snippetsContent.append(snippets.get(i).toString());
 		snippetLinked++;
-	    }else{
-		snippetsContent.append(snippets.get(i).toString());
+	    }
+	    snippetsContent.append(snippets.get(i).toString());
+	    resCounter++;
+	    if(resCounter == 2){
+		result[0] = snippetsContent.toString();
+		snippetsContent = new StringBuilder();
 	    }
 	}
 
-	return snippetsContent.toString();
+	result[1] = snippetsContent.toString();
+
+	return result;
     }
 
     //titles as links

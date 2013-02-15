@@ -1,7 +1,8 @@
+$SNIPPETS_1
+<br>
 <noindex><a href="$PROMO_URL_START$PROMO_URL_END" rel="nofollow"><img src="$IMAGE_URL" /></a><noindex>
 <br>
-$SNIPPETS
-
+$SNIPPETS_2
 <br>
 <noindex>Другие новости:
 <br>
