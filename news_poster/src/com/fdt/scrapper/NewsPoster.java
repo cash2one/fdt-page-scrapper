@@ -51,7 +51,13 @@ public class NewsPoster {
 
     private int MIN_WORDS_COUNT=2;
     private int MAX_WORDS_COUNT=3;
+    
+    private static final String MIN_SNIPPET_COUNT_LABEL = "MIN_SNIPPET_COUNT";
+    private static final String MAX_SNIPPET_COUNT_LABEL = "MAX_SNIPPET_COUNT";
 
+    private static final String MIN_LINK_COUNT_LABEL = "MIN_LINK_COUNT";
+    private static final String MAX_LINK_COUNT_LABEL = "MAX_LINK_COUNT";
+    
     Random rnd = new Random();
 
     private NewsTask task = null;
@@ -64,6 +70,11 @@ public class NewsPoster {
 	this.proxy = proxy;
 	this.account = account;
 	this.taskFactory = taskFactory;
+	
+	MIN_SNIPPET_COUNT = Integer.valueOf(Constants.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
+	MAX_SNIPPET_COUNT = Integer.valueOf(Constants.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
+	MIN_LINK_COUNT = Integer.valueOf(Constants.getInstance().getProperty(MIN_LINK_COUNT_LABEL));
+	MAX_LINK_COUNT = Integer.valueOf(Constants.getInstance().getProperty(MAX_LINK_COUNT_LABEL));
     }
 
     public String executePostNews() throws Exception {
@@ -111,7 +122,7 @@ public class NewsPoster {
 
 	    //add snippets news
 
-	    if(taskFactory.getSuccessQueue().size() > 0){
+	    /*if(taskFactory.getSuccessQueue().size() > 0){
 		int randLink = getRandomValue(0, taskFactory.getSuccessQueue().size()-1);
 		task.getNewsContent().put("POSTED_LINK_1", taskFactory.getSuccessQueue().get(randLink).getResult());
 		task.getNewsContent().put("POSTED_KEYWORD_1", taskFactory.getSuccessQueue().get(randLink).getKeyWords());
@@ -128,7 +139,7 @@ public class NewsPoster {
 		task.getNewsContent().put("POSTED_KEYWORD_2", task.getKeyWords());
 		task.getNewsContent().put("POSTED_LINK_3", "#");
 		task.getNewsContent().put("POSTED_KEYWORD_3", task.getKeyWords());
-	    }
+	    }*/
 
 	    nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
 	    nameValuePairs.add(new BasicNameValuePair("file", ""));
@@ -171,7 +182,7 @@ public class NewsPoster {
 	    conn.disconnect();
 
 	    //edit news
-	    if(rnd.nextInt(5) == 4){
+	    if(rnd.nextInt(3) == 1){
 		log.info("Edit post: " + groupUrl);
 		//edit news
 		url = new URL(Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + groupUrl + "edit/");
@@ -199,7 +210,7 @@ public class NewsPoster {
 
 		//add snippets news
 
-		if(taskFactory.getSuccessQueue().size() > 0){
+		/*if(taskFactory.getSuccessQueue().size() > 0){
 		    int randLink = getRandomValue(0, taskFactory.getSuccessQueue().size()-1);
 		    task.getNewsContent().put("POSTED_LINK_1", taskFactory.getSuccessQueue().get(randLink).getResult());
 		    task.getNewsContent().put("POSTED_KEYWORD_1", taskFactory.getSuccessQueue().get(randLink).getKeyWords());
@@ -216,7 +227,7 @@ public class NewsPoster {
 		    task.getNewsContent().put("POSTED_KEYWORD_2", task.getKeyWords());
 		    task.getNewsContent().put("POSTED_LINK_3", "#");
 		    task.getNewsContent().put("POSTED_KEYWORD_3", task.getKeyWords());
-		}
+		}*/
 		nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
 		nameValuePairs.add(new BasicNameValuePair("file", ""));
 		nameValuePairs.add(new BasicNameValuePair("ttype", "0"));
@@ -282,7 +293,7 @@ public class NewsPoster {
 	    linkCount = randomValue;
 	}
 
-	linkCount = 0;
+	//linkCount = 0;
 
 	int snippetLinked = 0;
 	int indexShift = getRandomValue(0,snippets.size()-snipCount);

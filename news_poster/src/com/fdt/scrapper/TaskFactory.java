@@ -28,20 +28,20 @@ public class TaskFactory {
     private static Integer MAX_THREAD_COUNT = 100;
     public static Integer MAX_ATTEMP_COUNT = 50;
     protected int runThreadsCount = 0;
-    
+
     private Template bottomTemplate;
-    
+
     private static final String ORG_APACHE_VELOCITY_RUNTIME_LOG_NULL_LOG_SYSTEM = "org.apache.velocity.runtime.log.NullLogSystem";
     private static final String RUNTIME_LOG_LOGSYSTEM_CLASS = "runtime.log.logsystem.class";
-    
+
     private final static String NEWS_CONTENT_TEMPLATE_FILE_PATH_LABEL = "news_content_template_file_path";
-    
+
     private final static String PROMO_URL_START_LABEL = "promo_url_start";
     private final static String PROMO_URL_END_LABEL = "promo_url_end";
     private final static String PROMO_URL_START_LABEL_2 = "promo_url_start_2";
     private final static String PROMO_URL_END_LABEL_2 = "promo_url_end_2";
     private final static String IMAGE_URL_LABEL = "image_url";
-    
+
     private final static String FAKE_IMAGE_URL_LABEL = "fake_image_url";
 
     /**
@@ -51,7 +51,7 @@ public class TaskFactory {
     private ArrayList<NewsTask> taskQueue;
     private ArrayList<NewsTask> successQueue;
     private ArrayList<NewsTask> errorQueue;
-    
+
     private Random rnd = new Random();
 
     private TaskFactory(){
@@ -66,28 +66,28 @@ public class TaskFactory {
 	successQueue.clear();
 	errorQueue.clear();
     }
-    
+
     public Template getBottomTemplate()
     {
-        return bottomTemplate;
+	return bottomTemplate;
     }
 
     public synchronized static Integer getMAX_THREAD_COUNT() {
-		return MAX_THREAD_COUNT;
-	}
+	return MAX_THREAD_COUNT;
+    }
 
-	public synchronized static void setMAX_THREAD_COUNT(Integer mAXTHREADCOUNT) {
-		MAX_THREAD_COUNT = mAXTHREADCOUNT;
-	}
+    public synchronized static void setMAX_THREAD_COUNT(Integer mAXTHREADCOUNT) {
+	MAX_THREAD_COUNT = mAXTHREADCOUNT;
+    }
 
-	public String getTemplateFilePath()
+    public String getTemplateFilePath()
     {
-        return templateFilePath;
+	return templateFilePath;
     }
 
     public void setTemplateFilePath(String templateFilePath)
     {
-        this.templateFilePath = templateFilePath;
+	this.templateFilePath = templateFilePath;
     }
 
     public ArrayList<NewsTask> getErrorQueue() {
@@ -173,10 +173,19 @@ public class TaskFactory {
 	return taskQueue.isEmpty();
     }
 
-    public void loadTaskQueue(String pathToTaskList) {
+    public void loadTaskQueue(String pathToTaskList, String pathToInputLinks) {
 	ArrayList<String> keyWordsList = loadKeyWordsList(pathToTaskList);
-	fillTaskQueue(keyWordsList);
+	
+	ArrayList<String> inputLinksList = new ArrayList<String>();
+	if(pathToInputLinks != null && !"".equals(pathToInputLinks.trim())){
+	    inputLinksList = loadKeyWordsList(pathToInputLinks);
+	}
+
+	fillTaskQueue(keyWordsList,false);
+	fillTaskQueue(inputLinksList,true);
+	
 	keyWordsList.clear();
+	inputLinksList.clear();
     }
 
     /**
@@ -223,24 +232,35 @@ public class TaskFactory {
     }
 
     private synchronized void fillTaskQueue(ArrayList<String> keyWordsList){
+	fillTaskQueue(keyWordsList, false);
+    }
+
+    private synchronized void fillTaskQueue(ArrayList<String> keyWordsList, boolean loadToSuccessQueue){
 	VelocityContext content = generateTemplateContent();
 	VelocityContext content2 = generateTemplateContent();
-	
+
 	content.put("PROMO_URL_START", Constants.getInstance().getProperty(PROMO_URL_START_LABEL));
 	content.put("PROMO_URL_END", Constants.getInstance().getProperty(PROMO_URL_END_LABEL));
 	content2.put("PROMO_URL_START", Constants.getInstance().getProperty(PROMO_URL_START_LABEL_2));
 	content2.put("PROMO_URL_END", Constants.getInstance().getProperty(PROMO_URL_END_LABEL_2));
 	boolean flag = true;
 	for(String keyWords : keyWordsList){
-	    if(flag){
-	    	taskQueue.add(new NewsTask(keyWords, content));
+	    if(!loadToSuccessQueue){
+		if(flag){
+		    taskQueue.add(new NewsTask(keyWords, content));
+		}else{
+		    taskQueue.add(new NewsTask(keyWords, content2));	
+		}
+		flag = !flag;
 	    }else{
-	    	taskQueue.add(new NewsTask(keyWords, content2));	
+		//load links from file
+		NewsTask task = new NewsTask("", null);
+		task.setResult(keyWords);
+		successQueue.add(task);
 	    }
-	    flag = !flag;
 	}
     }
-    
+
     private VelocityContext generateTemplateContent(){
 	//disable velocity log
 	Properties props = new Properties();

@@ -30,6 +30,7 @@ public class PosterTaskRunner {
 
 	private String proxyFilePath;
 	private String keyWordsFilePath;
+	private String inputLinksFilePath;
 	private String accListFilePath;
 	private int maxThreadCount;
 	private long proxyDelay;
@@ -47,6 +48,7 @@ public class PosterTaskRunner {
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
 	private final static String RESULT_FILE_LABEL = "result_file";
+	private final static String INPUT_LINKS_FILE_PATH_LABEL = "input_links_file_path";
 
 	private TaskFactory taskFactory;
 
@@ -56,6 +58,7 @@ public class PosterTaskRunner {
 		taskFactory = TaskFactory.getInstance();
 		this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 		this.keyWordsFilePath = Constants.getInstance().getProperty(KEY_WORDS_FILE_PATH_LABEL);
+		this.inputLinksFilePath = Constants.getInstance().getProperty(INPUT_LINKS_FILE_PATH_LABEL);
 		this.accListFilePath = Constants.getInstance().getProperty(ACCOUNTS_LIST_FILE_PATH_LABEL);
 		this.maxThreadCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
 		this.proxyDelay = Integer.valueOf(Constants.getInstance().getProperty(PROXY_DELAY_LABEL));
@@ -91,7 +94,7 @@ public class PosterTaskRunner {
 				taskFactory = TaskFactory.getInstance();
 				taskFactory.clear();
 				//taskFactory.loadTaskQueue(urlsFilePath);
-				taskFactory.loadTaskQueue(keyWordsFilePath);
+				taskFactory.loadTaskQueue(keyWordsFilePath,inputLinksFilePath);
 
 				ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
 				ProxyFactory proxyFactory = ProxyFactory.getInstance();
@@ -105,7 +108,7 @@ public class PosterTaskRunner {
 				log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
 
 				Account account = null;
-				TaskFactory.setMAX_THREAD_COUNT(1);
+				//TaskFactory.setMAX_THREAD_COUNT(1);
 				while((!taskFactory.isTaskFactoryEmpty() && ((account = accountFactory.getAccount()) != null)) || taskFactory.runThreadsCount > 0){
 					if(taskFactory.getSuccessQueue().size() >= 3){
 						TaskFactory.setMAX_THREAD_COUNT(maxThreadCount);
