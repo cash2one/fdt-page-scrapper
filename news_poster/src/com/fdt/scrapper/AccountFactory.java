@@ -36,6 +36,7 @@ public class AccountFactory
 	private HashMap<String, Integer> accountUsedInThreadCount = new HashMap<String, Integer>();
 
 	public final static String MAIN_URL_LABEL = "main_url";
+	public final static String MAIN_LINKS_URL_LABEL = "main_links_url";
 	private final static String LOGIN_URL_LABEL = "login_url";
 	public final static String POST_NEWS_URL_LABEL = "post_news_url";
 	private final static String NEWS_PER_ACCOUNT_LABEL = "news_per_account";
