@@ -304,7 +304,7 @@ public class NewsPoster {
 	    if(snippetLinked < linkCount){
 		//add snippet link
 		int randomSuccessLink = getRandomValue(1,taskFactory.getSuccessQueue().size());
-		addLinkToSnippetContent(snippets.get(i), Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + taskFactory.getSuccessQueue().get(randomSuccessLink-1).getResult());
+		addLinkToSnippetContent(snippets.get(i), Constants.getInstance().getProperty(AccountFactory.MAIN_LINKS_URL_LABEL) + taskFactory.getSuccessQueue().get(randomSuccessLink-1).getResult());
 		snippetLinked++;
 	    }
 	    snippetsContent.append(snippets.get(i).toString());
