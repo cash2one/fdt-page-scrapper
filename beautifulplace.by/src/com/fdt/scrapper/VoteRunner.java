@@ -57,9 +57,9 @@ public class VoteRunner{
     private Properties config = new Properties();
 
     private ProxyFactory proxyFactory;
-    
+
     private Random rnd = new Random();
-    
+
     private String ID = "19";
 
     //private ArrayList<Thread> threads = new ArrayList<Thread>();
@@ -101,7 +101,7 @@ public class VoteRunner{
     public void run(){
 	try{
 	    synchronized (this) {
-		
+
 
 		ProxyFactory.DELAY_FOR_PROXY = 20000L; 
 		proxyFactory = ProxyFactory.getInstance();
@@ -115,11 +115,14 @@ public class VoteRunner{
 
 		while(account != null){
 		    ID = "19";
-		    int rndValue = rnd.nextInt(5);
+		    int rndValue = rnd.nextInt(6);
 		    if(rndValue == 0 || rndValue == 1){
 			ID = "9";
 		    }
 		    getCookie(account);
+		    if(account.getCookie() == null || "".equals(account.getCookie().trim())){
+			continue;
+		    }
 		    signIn(account);
 		    openPage(account);
 		    String resultVote = vote(account);
@@ -242,18 +245,21 @@ public class VoteRunner{
 	    writer.close();
 	    os.close();
 
-
+	    String cookieValue = "";
 	    // Execute HTTP Post Request
 	    Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
-	    if(cookies.get("Set-Cookie").toString().contains("notexists")){
-		log.error("Account doesn't exist: \""+ account.getLogin() + "\". Please check email and password.");
-	    }
+	    if(cookies != null) {
+		if(cookies.get("Set-Cookie").toString().contains("notexists")){
+		    log.error("Account doesn't exist: \""+ account.getLogin() + "\". Please check email and password.");
+		}
 
-	    String cookieValue = "";
-	    for(String cookieOne: cookies.get("Set-Cookie"))
-	    {
-		if(cookieOne.contains("29247347af66cd4c162d459012dd90e4")){
-		    cookieValue = cookieOne;
+
+
+		for(String cookieOne: cookies.get("Set-Cookie"))
+		{
+		    if(cookieOne.contains("29247347af66cd4c162d459012dd90e4")){
+			cookieValue = cookieOne;
+		    }
 		}
 	    }
 
@@ -283,7 +289,7 @@ public class VoteRunner{
 	    log.error("Error during filling account from list and getting cookies for account",e);
 	}
     }
-    
+
     public void signIn(Account account){
 	//getting cookie for each account
 	try {
@@ -339,8 +345,8 @@ public class VoteRunner{
     public String vote(Account account){
 	//getting cookie for each account
 	try {
-	    
-	    
+
+
 	    String postUrl = "http://www.beautifulplace.by/articles?&task=vote_article&id="+ID;
 	    //String postUrl = ConfigManager.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL);
 	    URL url = new URL(postUrl);
@@ -398,7 +404,7 @@ public class VoteRunner{
 	    String msg = "ID="+ID+"|"+account.getLogin()+":"+account.getPass()+"|"+account.getProxyConnector().getProxyKey()+"|"+sb.toString().trim();
 	    logNew.info(msg);
 	    System.out.println(msg);
-	    
+
 	    return sb.toString().trim();
 	} catch (ClientProtocolException e) {
 	    log.error("Error during filling account from list and getting cookies for account",e);
