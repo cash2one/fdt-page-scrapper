@@ -249,16 +249,16 @@ public class VoteRunner{
 	    // Execute HTTP Post Request
 	    Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
 	    if(cookies != null) {
-		if(cookies.get("Set-Cookie").toString().contains("notexists")){
+		if(cookies.get("Set-Cookie") != null && cookies.get("Set-Cookie").toString().contains("notexists")){
 		    log.error("Account doesn't exist: \""+ account.getLogin() + "\". Please check email and password.");
 		}
 
-
-
-		for(String cookieOne: cookies.get("Set-Cookie"))
-		{
-		    if(cookieOne.contains("29247347af66cd4c162d459012dd90e4")){
-			cookieValue = cookieOne;
+		if(cookies.get("Set-Cookie") != null){
+		    for(String cookieOne: cookies.get("Set-Cookie"))
+		    {
+			if(cookieOne.contains("29247347af66cd4c162d459012dd90e4")){
+			    cookieValue = cookieOne;
+			}
 		    }
 		}
 	    }
