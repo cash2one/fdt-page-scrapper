@@ -3,7 +3,7 @@
 	<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 	
 	<appender name="logfile" class="org.apache.log4j.RollingFileAppender"> 
-		<param name="file" value="news_poster.log"/>
+		<param name="file" value="voter.log"/>
 		<param name="MaxFileSize" value="50MB"/>
 		<param name="MaxBackupIndex" value="10"/>
 		<layout class="org.apache.log4j.PatternLayout"> 
@@ -12,10 +12,10 @@
   	</appender>
 	
 	<appender name="posted_links" class="org.apache.log4j.FileAppender">
-		<param name="file" value="news_posted_links.log"/>
-		<param name="append" value="false"/>
+		<param name="file" value="results_vote.log"/>
+		<param name="append" value="true"/>
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="%m%n"/>
+			<param name="ConversionPattern" value="[%d]  %m%n"/>
 		</layout>
 	</appender>
 	

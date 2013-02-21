@@ -45,16 +45,22 @@ import com.fdt.scrapper.task.ConfigManager;
 public class VoteRunner{
 
     private static final Logger log = Logger.getLogger(VoteRunner.class);
+    private static final Logger logNew = Logger.getLogger("com.fdt.scrapper.NewsPoster");
 
     protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
 
-    protected static Long WAIT_TIME = 900000L;
+    protected static Long WAIT_TIME_SUCCESS = 900000L;
+    protected static Long WAIT_TIME = 103137L;
 
     private String proxyFilePath;
     private String accListFilePath;
     private Properties config = new Properties();
 
     private ProxyFactory proxyFactory;
+    
+    private Random rnd = new Random();
+    
+    private String ID = "19";
 
     //private ArrayList<Thread> threads = new ArrayList<Thread>();
 
@@ -64,7 +70,6 @@ public class VoteRunner{
     private final static String ACCOUNTS_LIST_FILE_PATH_LABEL = "accounts_file_path";
 
     public VoteRunner(String cfgFilePath){
-
 	ConfigManager.getInstance().loadProperties(cfgFilePath);
 	this.proxyFilePath = ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 	this.accListFilePath = ConfigManager.getInstance().getProperty(ACCOUNTS_LIST_FILE_PATH_LABEL);
@@ -96,7 +101,7 @@ public class VoteRunner{
     public void run(){
 	try{
 	    synchronized (this) {
-		Random rnd = new Random();
+		
 
 		ProxyFactory.DELAY_FOR_PROXY = 20000L; 
 		proxyFactory = ProxyFactory.getInstance();
@@ -109,6 +114,11 @@ public class VoteRunner{
 		Account account = accountFactory.getAccount();
 
 		while(account != null){
+		    ID = "19";
+		    int rndValue = rnd.nextInt(5);
+		    if(rndValue == 0 || rndValue == 1){
+			ID = "9";
+		    }
 		    getCookie(account);
 		    signIn(account);
 		    openPage(account);
@@ -116,7 +126,11 @@ public class VoteRunner{
 
 		    if("Ваш голос принят!".equals(resultVote)){
 			//wait ~15 min
-			wait(WAIT_TIME + rnd.nextInt(120000));
+			System.out.println("Start waiting after success...");
+			wait(WAIT_TIME_SUCCESS + rnd.nextInt(112314));
+		    }else{
+			System.out.println("Start waiting after error...");
+			wait(WAIT_TIME);
 		    }
 		    account = accountFactory.getAccount();
 		}
@@ -325,7 +339,9 @@ public class VoteRunner{
     public String vote(Account account){
 	//getting cookie for each account
 	try {
-	    String postUrl = "http://www.beautifulplace.by/articles?&task=vote_article&id=19";
+	    
+	    
+	    String postUrl = "http://www.beautifulplace.by/articles?&task=vote_article&id="+ID;
 	    //String postUrl = ConfigManager.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL);
 	    URL url = new URL(postUrl);
 	    HttpURLConnection.setFollowRedirects(false);
@@ -343,7 +359,7 @@ public class VoteRunner{
 	    conn.addRequestProperty("Accept","*/*");
 	    conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 	    conn.addRequestProperty("X-Requested-With","XMLHttpRequest");
-	    conn.addRequestProperty("Referer","http://www.beautifulplace.by/articles?&task=article&id=19");
+	    conn.addRequestProperty("Referer","http://www.beautifulplace.by/articles?&task=article&id="+ID);
 	    conn.addRequestProperty("Connection","keep-alive");
 	    conn.addRequestProperty("Pragma","no-cache");
 	    conn.addRequestProperty("Cache-Control","no-cache");
@@ -379,7 +395,10 @@ public class VoteRunner{
 	    //release proxy
 	    proxyFactory.releaseProxy(account.getProxyConnector());
 	    account.setProxyConnector(proxyFactory.getProxyConnector());
-
+	    String msg = "ID="+ID+"|"+account.getLogin()+":"+account.getPass()+"|"+account.getProxyConnector().getProxyKey()+"|"+sb.toString().trim();
+	    logNew.info(msg);
+	    System.out.println(msg);
+	    
 	    return sb.toString().trim();
 	} catch (ClientProtocolException e) {
 	    log.error("Error during filling account from list and getting cookies for account",e);
@@ -394,7 +413,7 @@ public class VoteRunner{
     public void openPage(Account account){
 	//getting cookie for each account
 	try {
-	    String postUrl = "http://www.beautifulplace.by/articles?&task=article&id=9";
+	    String postUrl = "http://www.beautifulplace.by/articles?&task=article&id="+ID;
 	    //String postUrl = ConfigManager.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL);
 	    URL url = new URL(postUrl);
 	    HttpURLConnection.setFollowRedirects(false);
