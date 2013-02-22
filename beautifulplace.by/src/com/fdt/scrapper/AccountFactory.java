@@ -89,6 +89,10 @@ public class AccountFactory
 	    return null;
 	}
     }
+    
+    public synchronized void releaseAccount(Account account){
+	accounts.add(account);
+    }
 
     public static String getQuery(List<NameValuePair> params) throws UnsupportedEncodingException
     {

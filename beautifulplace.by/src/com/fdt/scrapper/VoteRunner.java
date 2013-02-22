@@ -114,10 +114,10 @@ public class VoteRunner{
 		Account account = accountFactory.getAccount();
 
 		while(account != null){
-		    ID = "19";
+		    ID = "9";
 		    int rndValue = rnd.nextInt(6);
 		    if(rndValue == 0 || rndValue == 1){
-			ID = "9";
+			ID = "19";
 		    }
 		    getCookie(account);
 		    if(account.getCookie() == null || "".equals(account.getCookie().trim())){
@@ -135,6 +135,7 @@ public class VoteRunner{
 			System.out.println("Start waiting after error...");
 			wait(WAIT_TIME);
 		    }
+		    accountFactory.releaseAccount(account);
 		    account = accountFactory.getAccount();
 		}
 
