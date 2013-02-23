@@ -114,10 +114,10 @@ public class VoteRunner{
 		Account account = accountFactory.getAccount();
 
 		while(account != null){
-		    ID = "9";
+		    ID = "19";
 		    int rndValue = rnd.nextInt(7);
 		    if(rndValue == 0 || rndValue == 1 || rndValue == 2 || rndValue == 3){
-			ID = "19";
+			ID = "9";
 		    }
 		    getCookie(account);
 		    if(account.getCookie() == null || "".equals(account.getCookie().trim())){
