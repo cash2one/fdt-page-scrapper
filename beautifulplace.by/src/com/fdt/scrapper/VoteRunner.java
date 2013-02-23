@@ -115,7 +115,7 @@ public class VoteRunner{
 
 		while(account != null){
 		    ID = "9";
-		    int rndValue = rnd.nextInt(6);
+		    int rndValue = rnd.nextInt(4);
 		    if(rndValue == 0 || rndValue == 1){
 			ID = "19";
 		    }
