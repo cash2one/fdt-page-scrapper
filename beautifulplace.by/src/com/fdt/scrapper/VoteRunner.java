@@ -49,7 +49,7 @@ public class VoteRunner{
 
     protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
 
-    protected static Long WAIT_TIME_SUCCESS = 900000L;
+    protected static Long WAIT_TIME_SUCCESS = 500000L;
     protected static Long WAIT_TIME = 103137L;
 
     private String proxyFilePath;
@@ -116,7 +116,7 @@ public class VoteRunner{
 		while(account != null){
 		    ID = "19";
 		    int rndValue = rnd.nextInt(7);
-		    if(rndValue == 0 || rndValue == 1 || rndValue == 2 || rndValue == 3){
+		    if(rndValue == 0 || rndValue == 1){
 			ID = "9";
 		    }
 		    getCookie(account);
