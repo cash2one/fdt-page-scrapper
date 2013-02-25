@@ -115,10 +115,10 @@ public class VoteRunner{
 
 		while(account != null){
 		    ID = "19";
-		    int rndValue = rnd.nextInt(7);
+		    /*int rndValue = rnd.nextInt(7);
 		    if(rndValue == 0 || rndValue == 1){
 			ID = "9";
-		    }
+		    }*/
 		    getCookie(account);
 		    if(account.getCookie() == null || "".equals(account.getCookie().trim())){
 			continue;
