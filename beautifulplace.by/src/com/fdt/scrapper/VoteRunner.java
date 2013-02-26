@@ -49,8 +49,8 @@ public class VoteRunner{
 
     protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
 
-    protected static Long WAIT_TIME_SUCCESS = 240000L;
-    protected static Long WAIT_TIME = 73137L;
+    protected static Long WAIT_TIME_SUCCESS = 60000L;
+    protected static Long WAIT_TIME = 33137L;
 
     private String proxyFilePath;
     private String accListFilePath;
