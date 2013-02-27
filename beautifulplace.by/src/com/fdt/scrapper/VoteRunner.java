@@ -61,6 +61,40 @@ public class VoteRunner{
 	private Random rnd = new Random();
 
 	private String ID = "19";
+	
+	private static String[] USER_AGENTS = new String[]{"Opera/9.25 (Windows NT 5.1; U; ru",
+	    "Opera/9.26 (Windows NT 5.1; U; ru)",
+	    "Opera/9.20 (Windows NT 5.1; U; ru)",
+	    "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; MathPlayer 2.10b; .NET CLR 2.0.50727; .NET CLR 1.1.4322)",
+	    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)",
+	    "Opera/9.52 (Windows NT 5.1; U; ru)",
+	    "Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7",
+	    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)",
+	    "Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.8.0.9) Gecko/20070204 Firefox/1.5.0.9",
+	    "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90) ",
+	    "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727; InfoPath.2) ",
+	    "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.6) Gecko/20040206 Firefox/0.8 Mnenhy/0.6.0.103 ",
+	    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ru) Opera 8.50 ",
+	    "Opera/9.0 (Windows NT 5.1; U; en) ",
+	    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; .NET CLR 1.1.4322) ",
+	    "Mozilla/1.22 (compatible; MSIE 2.0d; Windows NT) ",
+	    "Opera/9.52 (Windows NT 6.0; U; ru) ",
+	    "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1 ",
+	    "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506) ",
+	    "Mozilla/5.0 (X11; I; Linux 2.6.22-gentoo-r8 x86_64) Gecko/20071115 Firefox/2.0.0.10 ",
+	    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; MRA 5.0 (build 02094)) ",
+	    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) ",
+	    "Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1 ",
+	    "Mozilla/5.0 (compatible; Refer.Ru; +http://www.refer.ru) ",
+	    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FREE; .NET CLR 1.1.4322) ",
+	    "Opera/8.54 (Windows NT 5.1; U; en) ",
+	    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30) ",
+	    "Opera/9.02 (Windows NT 5.1; U; ru) ",
+	    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; Q312461) ",
+	    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727) ",
+	    "Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.8.1.4) Gecko/20070515 Firefox/2.0.0.4"};
+	
+	private static String userAgent = USER_AGENTS[0];
 
 	//private ArrayList<Thread> threads = new ArrayList<Thread>();
 
@@ -118,7 +152,7 @@ public class VoteRunner{
 					/*int rndValue = rnd.nextInt(7);
 				    if(rndValue == 0 || rndValue == 1){
 					ID = "9";
-				    }*/
+				    }*/userAgent = USER_AGENTS[rnd.nextInt(USER_AGENTS.length)];
 					getCookie(account);
 					if(account.getCookie() == null || "".equals(account.getCookie().trim())){
 						accountFactory.releaseAccount(account);
@@ -229,7 +263,7 @@ public class VoteRunner{
 			conn.setDoOutput(true);
 
 			conn.addRequestProperty("Host","beautifulplace.by");
-			conn.addRequestProperty("User-Agent","Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0");
+			conn.addRequestProperty("User-Agent",userAgent);
 			conn.addRequestProperty("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			conn.addRequestProperty("Referer","http://beautifulplace.by/");
@@ -309,7 +343,7 @@ public class VoteRunner{
 			conn.setDoOutput(true);
 
 			conn.addRequestProperty("Host","beautifulplace.by");
-			conn.addRequestProperty("User-Agent","Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0");
+			conn.addRequestProperty("User-Agent",userAgent);
 			conn.addRequestProperty("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			conn.addRequestProperty("Referer","http://beautifulplace.by/");
@@ -364,7 +398,7 @@ public class VoteRunner{
 			conn.setDoOutput(true);
 
 			conn.addRequestProperty("Host","www.beautifulplace.by");
-			conn.addRequestProperty("User-Agent","Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0");
+			conn.addRequestProperty("User-Agent",userAgent);
 			conn.addRequestProperty("Accept","*/*");
 			conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			conn.addRequestProperty("X-Requested-With","XMLHttpRequest");
@@ -436,7 +470,7 @@ public class VoteRunner{
 			conn.setDoOutput(false);
 
 			conn.addRequestProperty("Host","beautifulplace.by");
-			conn.addRequestProperty("User-Agent","Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0");
+			conn.addRequestProperty("User-Agent",userAgent);
 			conn.addRequestProperty("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			conn.addRequestProperty("Referer","http://beautifulplace.by/");
