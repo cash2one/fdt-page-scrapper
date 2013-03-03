@@ -1,0 +1,686 @@
+2013-03-03 21:18:43,911-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:19:34,502-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:19:36,672- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: hdfhdg
+2013-03-03 21:19:36,672-ERROR(PosterThread.java:53)-Error occured during process task: hdfhdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:19:36,942- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:19:36,942-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:19:37,972- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfadf
+2013-03-03 21:19:37,972-ERROR(PosterThread.java:53)-Error occured during process task: asdfadf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:19:38,982- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: agsfhga
+2013-03-03 21:19:38,982-ERROR(PosterThread.java:53)-Error occured during process task: agsfhga
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:19:39,352- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfadf
+2013-03-03 21:19:39,352-ERROR(PosterThread.java:53)-Error occured during process task: asdfadf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:19:40,552- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asfdasdfa
+2013-03-03 21:19:40,552-ERROR(PosterThread.java:53)-Error occured during process task: asfdasdfa
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:19:41,002- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: aksljfas
+2013-03-03 21:19:41,002-ERROR(PosterThread.java:53)-Error occured during process task: aksljfas
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:20:56,704-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:23:17,316-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:23:19,896- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asfdasdfa
+2013-03-03 21:23:19,896-ERROR(PosterThread.java:53)-Error occured during process task: asfdasdfa
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:23:20,136- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:23:20,136-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:23:20,656- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:23:20,656-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:23:21,216- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: aksljfas
+2013-03-03 21:23:21,216-ERROR(PosterThread.java:53)-Error occured during process task: aksljfas
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:23:21,306- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: agsfhga
+2013-03-03 21:23:21,306-ERROR(PosterThread.java:53)-Error occured during process task: agsfhga
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:23:22,566- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfasfd
+2013-03-03 21:23:22,566-ERROR(PosterThread.java:53)-Error occured during process task: asdfasfd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:23:22,686- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:23:22,686-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:23:23,346- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: aksljfas
+2013-03-03 21:23:23,346-ERROR(PosterThread.java:53)-Error occured during process task: aksljfas
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:23:23,426- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdg
+2013-03-03 21:23:23,426-ERROR(PosterThread.java:53)-Error occured during process task: sdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:23:24,736- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: hdfhdg
+2013-03-03 21:23:24,736-ERROR(PosterThread.java:53)-Error occured during process task: hdfhdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:23:24,856- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfasfd
+2013-03-03 21:23:24,856-ERROR(PosterThread.java:53)-Error occured during process task: asdfasfd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:23:36,316-ERROR(NewsPoster.java:140)-<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>Create your Blog and Photo Album with Postbit.</title><meta name="description" content="Create your blog or photo album now. The easiest way to post and share your ideas, messages and pictures. Free!"><link rel="alternate" hreflang="pt" href="http://br.postbit.com" /><link rel="alternate" hreflang="es" href="http://es.postbit.com" /><link rel="alternate" hreflang="fr" href="http://fr.postbit.com" /><link rel="stylesheet" type="text/css" media="all" href="http://postbit.com/in-framework/main.css" /><script src="http://postbit.com/js_/jquery.min.js"></script><script src="http://postbit.com/in-framework/main.js"></script><script src="//twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script><link rel="stylesheet" href="http://postbit.com/bootstrap_/css/bootstrap.min.css"><style type="text/css">footer a { color: #ffffff;}footer a:hover { color: #ffffff;}footer a:visited { color: #ffffff;}footer ul { list-style: none;}footer ul li { display: inline; line-height: 40px; height: 140px; padding-right: 20px; padding-left: 20px;}footer ul li:hover { background-color: #383838;}</style><script>var cpx = 'none';var cpx2 = 'none';var cap_pos2 = 'none';function srp() { scroll(0,0); document.cookie = "pb_cap=pb; path=/"; cpx = 'xKr4';}function register_new_user_save() {  var url = '/mod_perl/admin.pl';//         'user_username': $('#form_register input:[name=user_username]').val(),//            'user_email': $('#form_register input:[name=user_email]').val(),//         'user_password': $('#form_register input:[name=user_password]').val(),  POST({       'url': url,      'data': {                'action': 'register',         'user_username': $('#form_register_user_username').val(),            'user_email': $('#form_register_user_email').val(),         'user_password': $('#form_register_user_password').val(),                   'cpx': cpx              },  'callback':     function(res) {       document.location.href = res.url_redirect;     }  });}</script></head><body style=" background-color: #303030;        -background-size: cover;     -o-background-size: cover;   -moz-background-size: cover;-webkit-background-size: cover;background-image:url(http://postbit.com/images_/bg/blog-background-1.jpg);background-repeat: no-repeat;"><noscript><div class="alert-message error">Please enable Javascript <small>(it's required)</small></div></noscript><div class="container"style="width: 850px;"><!-- div lang --><div class="btn-group" style="margin-top: 15px;float: left;">  <span class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA65JREFUeNqsVEtoG1cUfTOakTSyJY2tsSX5VxN/BC5exAvHpURVMF25dNEsskgpZGEIMeTTkixCIPsESghNKBSyCOm2gS6aFIp/idO6rh0c27HdKMZx5OiDPUhyNBppfjnX5FM32zx4zJv37ufcc897nOM47EMMYXJy8u0Pz/MslUqx+/fui0NfDJmjo6Onw+FwjuM4O5PJROLx+JXxsXFh4JMBIxqNMtu23wXaE1UQWD6f7w9Hwl9ub2/PViqV771e748c46yKXhkpFotroVCor1Ao/Nra2jpbrVbfgXizcLlcbHl5+cjiwuJUT09PEutzzGEGshqWbZkOc4zV1dVvu7u71+fn5x+srKwcJp89gagkraQ1ZbPZkzC86/F4koFAwEHWGVmWN+SgvEkIfD4fAHqfdnR0jKZfpM9qmhYl310gw8PDrFwuS3Nzc6ckSSq2tbX9pKpqG5rguATXZk1NzSwyqyhDEEXxme3YBfB2t6SVZCTe19DQ8Df2LYEIy+Vyn6eepy5SB5uamv5Ye7p2Bnx8jDO30+UQj1zySfI4slcDwcCnvb29l/A/Qvuwn29ubr4jwKEdnfoK2UsgW8MslPVyBFl2TMuU4GyAKx7nZcElaLquR7EuonwV3HnIF6jXBUBuhXNQCSnr+JbgaIOXPFpuWpblg1EeSMX6+vo0StQd2+ER0ET3Nugc9gpifARfIQNi7yDDPyCSUK03NjbeooBUWm1t7QPiMhKJ6AheBToOaNdgcxMJvIIoZIk7QtQMeN9AN30IshMMBhcxzsPJMk3Thy5eo4DJZHKYSmMcc+Q6+eHCwsIF7EtKgzIN1Fm+rq7uMVT6F8GFM9C7LKCgLBW3260juEUT67LoFqv+Wn+W9INJvNkgexplL/IoKdfS0nIbra+iNGaZloz6/5W8kuWTfBTMoPZiXYWtHVJCy4Zh1GOf0Tl8f4G+NriJiQkSJLe1tTWE+7Tf7/f/iall0pk4lReUg9PgyI2r0wcUHDQ09rL0UoaA+xVFeQg0v6HEXY0wEh/KmQFXlwv5wonEocTXS4+XvjMN0x2LxX5Am33QzTGP11NCR2em7k39DNSb7e3t153Xzwf/OhBDWdnBwcEjqFkFuv6uzq7fgUBCV3YH7+JrYt2x21DzZxBgOpFIHEV56ptn6O2lJYXD/tHB+MFDaEChs6vzKrpRws0XYOyBRFQguAEkKtmA6KX/PiO7HP1/UFcoE1R8AF8dWyJdTtIaR8RZ1nuv4SsBBgAtx82iGsNPuAAAAABJRU5ErkJggg==" style="margin-top: 0px;"/>language <span class="caret"></span> </span>  <ul class="dropdown-menu"><li><a href="http://postbit.com/">English</a></li><li><a href="http://es.postbit.com/">EspaГ±ol</a></li><li><a href="http://fr.postbit.com/">FranГ§ais</a></li><li><a href="http://br.postbit.com/">PortuguГЄs</a></li>  </ul></div> <!-- /btn-group --><divstyle=" display:inline; float: left; margin-top: 17px; margin-left: 20px; padding: 0;"><form action="http://www.gogole.com" style="display: inline" id="cse-search-box">    <input type="hidden" name="cx" value="partner-pub-8949154439106523:2746133797" />    <input type="hidden" name="ie" value="UTF-8" />    <input type="text" name="q" id="google_custom_search_q">    <input type="submit" name="sa" value="Search" class="btn btn-small" style="margin-top: -8px;"/></form><script>$(document).ready( function() {  $('#google_custom_search_q').css({'width': '140px'}); });</script></div><script>var lang = 'en';// zxc // $('#select_lang option[value="'+lang+'"]').attr('selected', true);</script><!-- div login --><div style="text-align: right;margin-top: 15px;margin-bottom: 16px;"><!-- TODO: no /mod_perl here --><form method=POST action="http://postbit.com/mod_perl/admin.pl" name="form_login" id="form_login"onSubmit="$('#login_referer').val(document.location);"style=" margin: 0px;  padding: 0px; margin-top: 8px;"><input type=hidden name="login_referer" value="" id="login_referer"><input type=hidden name="acao" value="login"><div class="input-append"><input name="username_or_email" id="username_or_email" type=text placeholder="username or email" style=" width: 130px;"><input name="user_password" type="password" placeholder="password" style=" border-left: 0; -webkit-border-radius: 0;    -moz-border-radius: 0;         border-radius: 0; width: 86px;"><input type=submit class="btn" value="Login"></div></form><!--Registered users:&nbsp;Login<input style="width: 90px; margin:0" type=text>Password<input style="width: 90px; margin:0" type="password">--></div><!-- div left --><div class="well"style=" width: 399px; height: 375px; float: left; background: rgba(255,255,255,0.8);"><img src="http://postbit.com/images_/logo-postbit-raw.gif" alt="Blog logo" style="width: 273px; height: 76px"><br><h1 style="font-size: 155%; margin: 0px; white-space: nowrap;color: #d80000;">Create your free blog with photo album</h1><!--<img src="http://rsiqueira.postbit.com/upload/2/20110818/DSC0006-Estrada-na-Toscana-small-postbit-384.jpg"style="height: 130px; width: 431px;">--><br><b>Why Postbit?</b><br>Create a free blog, post your ideas, images, photos.<br>Upload with drag-and-drop.<br>Instant setup, easy to post, professional-looking.<br><br><br><div class=""><g:plusone></g:plusone><br><br><iframe src="http://www.facebook.com/plugins/like.php?href=http://postbit.com"style="border: none; overflow: hidden;"></iframe></div><!--<img src="http://rsiqueira.postbit.com/upload/2/20110819/Girl-taking-a-picture-thumb-postbit-441.jpg"style="height: 70px;"><img src="http://rsiqueira.postbit.com/upload/2/20121020/fossilized-jurassic-perisphinctes-ammonite-cephalopod-marine-snail-fossil-spiral-thumb-postbit-10466.jpg" style="height: 70px;"><img src="http://rsiqueira.postbit.com/upload/2/20110824/DSC09292-Larissa-Eiffel-Tower-sunglass-reflection-thumb-postbit-1266.jpg"style="height: 70px;"><img src="http://rsiqueira.postbit.com/upload/2/20120208/DSC09481-Sergio-Siqueira-Nikon-D300-thumb-postbit-2997.jpg" style="height: 70px;"><p style="margin: 4px"></p><img src="http://rsiqueira.postbit.com/upload/2/20110819/DSC09808-Camila-em-Stonehenge-thumb-postbit-480.jpg"style="height: 70px;"><img src="http://rsiqueira.postbit.com/upload/2/20110826/DSC09500-Moulin-Rouge-Rotating-blades-small-postbit-1452.jpg"style="height: 70px;"><img src="http://rsiqueira.postbit.com/upload/2/20110823/Venice-Costume-Venetian-at-Ponte-dell'Accademia-thumb-postbit-1045.jpg"style="height: 70px;"><img src="http://rsiqueira.postbit.com/upload/2/20110826/Space-Invaders-by-molotov-arts-thumb-postbit-1408.jpg"style="height: 70px;">--><br></div> <!-- /div left --><!-- div right --><div style=" background: rgba(255,255,255,0.8); float: right; width: 350px; height: 375px;"class="well"><div class="alert fade in" id='alert_message' style="margin-left: 10px;  display: none; position: absolute; margin: 0 auto; z-index: 2010;"></div><!--<a href="javascript:;" onClick="register_new_user();return(false);" class=buy>CREATE NOW YOUR PHOTO ALBUM & BLOG</a>--><form method=POSTonSubmit="return(false)" name="form_register"   id="form_register"><input type=hidden name=acao value="register"><h3 style="margin-top: 0px;color: #d80000;">Sign-in, start now, it's free!</h4><table><tr><td colspan=2><h4>1.Choose your own web address</h4></td></tr><tr style="height: 40px"> <td style="text-align: right; vertical-align: top;"><div style="margin-top: 5px;">Username:</div></td> <td><input type=text name=user_username id=form_register_user_username maxlength=50 placeholder="username"style="width: 121px;text-align: right;">.postbit.com<br></td></tr><tr><td colspan=2><h4>2. Your information</h4></td></tr><tr style="height: 40px"> <td style="text-align: right; vertical-align: top;"><div style="margin-top: 5px;">Email:</div></td> <td style="vertical-align: top;"><input type=text id="form_register_user_email"style="margin: 0"placeholder="your email"><br></td> </tr><tr style="height: 40px"> <td style="text-align: right; vertical-align: top;"><div style="margin-top: 5px;">Password:</div></td>  <td style="vertical-align: top;"><input type=password name="user_password" id="form_register_user_password"placeholder="choose a password"></td></tr><tr><td colspan=2><h4>3. Click here to start posting now</h4></td></tr><tr><td colspan=2><div style=" text-align: center;"><input type=button value="Create my free blog!"class="btn btn-danger"style=' font-size: 1.2em;'onClick="srp();register_new_user_save();"></div></td></tr> </table></form></div> <!-- /div right --><br style="clear: both;"><!-- div footer --><footerclass="round5"style="opacity:.60;background-color: #000000;text-align: center;"><ul><li><a href="http://postbit.com/explore" rel="nofollow">explore users</a></li><!--<a href="http://postbit.com/news/posts" rel="nofollow">New posts</a>--><li><a href="http://info.postbit.com/">about</a></li><li><a href="javascript:;"onClick=" alert('Login or register to use your blog!'); return(false);">your blog</a></li><li><a href="http://blog.postbit.com/">our blog</a></li><li><a href="http://info.postbit.com/postbit-terms-of-use.html" rel="nofollow">terms of use</a></li><li><a href="http://info.postbit.com/contact-us.html" rel="nofollow">contact</a></li></ul></footer></div> <!-- /container --><script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-27589254-1']);  _gaq.push(['_setDomainName', 'postbit.com']);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script><script type="text/javascript">(function() {var po = document.createElement('script');po.type = 'text/javascript';po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(po,s);})();</script><!--<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>--><script>$(window).load(function () {  $.getScript('http://platform.twitter.com/widgets.js');});</script><script>// Bootstrap dropdown mobile bug$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });</script><script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script><!--<script type="text/javascript" src="http://track.sitetag.us/tracking.js?hash=3e13d39f2c909f6eb2cb4f2c76d829bc"></script>-->
+2013-03-03 21:25:20,847-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:25:31,497- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: aksljfas
+2013-03-03 21:25:31,497-ERROR(PosterThread.java:53)-Error occured during process task: aksljfas
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:25:31,847- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfasfd
+2013-03-03 21:25:31,847-ERROR(PosterThread.java:53)-Error occured during process task: asdfasfd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:25:32,387- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:25:32,397-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:25:32,727- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:25:32,727-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:25:32,797- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: hdfhdg
+2013-03-03 21:25:32,797-ERROR(PosterThread.java:53)-Error occured during process task: hdfhdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:25:33,337- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdg
+2013-03-03 21:25:33,337-ERROR(PosterThread.java:53)-Error occured during process task: sdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:25:33,867- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: aksljfas
+2013-03-03 21:25:33,867-ERROR(PosterThread.java:53)-Error occured during process task: aksljfas
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:25:34,577- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:25:34,577-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:25:34,707- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfasfd
+2013-03-03 21:25:34,707-ERROR(PosterThread.java:53)-Error occured during process task: asdfasfd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:25:35,057- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdg
+2013-03-03 21:25:35,057-ERROR(PosterThread.java:53)-Error occured during process task: sdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:25:36,327- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asfdasdfa
+2013-03-03 21:25:36,327-ERROR(PosterThread.java:53)-Error occured during process task: asfdasdfa
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:25:59,909-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:26:02,219- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:26:02,219-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:26:02,699- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: hdfhdg
+2013-03-03 21:26:02,699-ERROR(PosterThread.java:53)-Error occured during process task: hdfhdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:26:02,799- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:26:02,799-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:26:04,229- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:26:04,229-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:26:04,239- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfadf
+2013-03-03 21:26:04,239-ERROR(PosterThread.java:53)-Error occured during process task: asdfadf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:26:04,579- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: aksljfas
+2013-03-03 21:26:04,579-ERROR(PosterThread.java:53)-Error occured during process task: aksljfas
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:26:04,589- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfasfd
+2013-03-03 21:26:04,589-ERROR(PosterThread.java:53)-Error occured during process task: asdfasfd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:26:06,649- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:26:06,649-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:26:08,529- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfadf
+2013-03-03 21:26:08,529-ERROR(PosterThread.java:53)-Error occured during process task: asdfadf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:15,737-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:28:18,527- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: hdfhdg
+2013-03-03 21:28:18,527-ERROR(PosterThread.java:53)-Error occured during process task: hdfhdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:18,777- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asfdasdfa
+2013-03-03 21:28:18,777-ERROR(PosterThread.java:53)-Error occured during process task: asfdasdfa
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:19,227- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:28:19,227-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:19,397- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: aksljfas
+2013-03-03 21:28:19,397-ERROR(PosterThread.java:53)-Error occured during process task: aksljfas
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:19,477- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:28:19,477-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:20,177- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfadf
+2013-03-03 21:28:20,177-ERROR(PosterThread.java:53)-Error occured during process task: asdfadf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:20,447- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdg
+2013-03-03 21:28:20,457-ERROR(PosterThread.java:53)-Error occured during process task: sdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:20,987- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:28:20,987-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:22,217- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:28:22,217-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:22,367- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: agsfhga
+2013-03-03 21:28:22,367-ERROR(PosterThread.java:53)-Error occured during process task: agsfhga
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:23,307- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfasfd
+2013-03-03 21:28:23,307-ERROR(PosterThread.java:53)-Error occured during process task: asdfasfd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:23,327- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdg
+2013-03-03 21:28:23,327-ERROR(PosterThread.java:53)-Error occured during process task: sdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:28:23,817- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:28:23,817-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:26,198-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:29:32,998- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:29:32,998-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:33,998- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:29:33,998-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:34,138- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfasfd
+2013-03-03 21:29:34,138-ERROR(PosterThread.java:53)-Error occured during process task: asdfasfd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:34,528- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asfdasdfa
+2013-03-03 21:29:34,528-ERROR(PosterThread.java:53)-Error occured during process task: asfdasdfa
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:34,838- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdg
+2013-03-03 21:29:34,848-ERROR(PosterThread.java:53)-Error occured during process task: sdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:35,458- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: agsfhga
+2013-03-03 21:29:35,458-ERROR(PosterThread.java:53)-Error occured during process task: agsfhga
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:36,248- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: hdfhdg
+2013-03-03 21:29:36,248-ERROR(PosterThread.java:53)-Error occured during process task: hdfhdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:36,578- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:29:36,578-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:36,578- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfadf
+2013-03-03 21:29:36,578-ERROR(PosterThread.java:53)-Error occured during process task: asdfadf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:39,998- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfasfd
+2013-03-03 21:29:39,998-ERROR(PosterThread.java:53)-Error occured during process task: asdfasfd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:42,428-ERROR(NewsPoster.java:144)-{"error":"Please try again later.\n"}
+2013-03-03 21:29:42,428- INFO(NewsPoster.java:156)-Edit post: 
+2013-03-03 21:29:42,708- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:29:42,708-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:42,758- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:29:42,758-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:42,888- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: agsfhga
+2013-03-03 21:29:42,888-ERROR(PosterThread.java:53)-Error occured during process task: agsfhga
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:42,918- INFO(NewsPoster.java:216)-
+2013-03-03 21:29:42,918- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: aksljfas
+2013-03-03 21:29:43,099- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asfdasdfa
+2013-03-03 21:29:43,099-ERROR(PosterThread.java:53)-Error occured during process task: asfdasdfa
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:44,229- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:29:44,229-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:44,469- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:29:44,469-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:44,679- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asfdasdfa
+2013-03-03 21:29:44,679-ERROR(PosterThread.java:53)-Error occured during process task: asfdasdfa
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:45,339- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdg
+2013-03-03 21:29:45,339-ERROR(PosterThread.java:53)-Error occured during process task: sdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:47,589- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: aksljfas
+2013-03-03 21:29:47,589-ERROR(PosterThread.java:53)-Error occured during process task: aksljfas
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:47,669- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:29:47,669-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:48,299- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfadf
+2013-03-03 21:29:48,299-ERROR(PosterThread.java:53)-Error occured during process task: asdfadf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:48,359- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:29:48,359-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:29:48,459- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:29:48,459-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:30:03,870-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:30:07,120- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: aksljfas
+2013-03-03 21:30:07,120-ERROR(PosterThread.java:53)-Error occured during process task: aksljfas
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:30:07,490- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asfdasdfa
+2013-03-03 21:30:07,490-ERROR(PosterThread.java:53)-Error occured during process task: asfdasdfa
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:30:08,120- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdg
+2013-03-03 21:30:08,120-ERROR(PosterThread.java:53)-Error occured during process task: sdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:30:08,280- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfasfd
+2013-03-03 21:30:08,280-ERROR(PosterThread.java:53)-Error occured during process task: asdfasfd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:30:09,320- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:30:09,320-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:30:10,900- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: hdfhdg
+2013-03-03 21:30:10,900-ERROR(PosterThread.java:53)-Error occured during process task: hdfhdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:30:26,880- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:30:26,880-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.http.HttpClient.privilegedOpenServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at com.fdt.scrapper.NewsPoster.getUrlContent(NewsPoster.java:367)
+	at com.fdt.scrapper.NewsPoster.parseHtml(NewsPoster.java:425)
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:82)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:30:30,070- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:30:30,070-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.http.HttpClient.privilegedOpenServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at com.fdt.scrapper.NewsPoster.getUrlContent(NewsPoster.java:367)
+	at com.fdt.scrapper.NewsPoster.parseHtml(NewsPoster.java:425)
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:82)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:35:26,259-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:35:29,329- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:35:29,329-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:35:29,329- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdg
+2013-03-03 21:35:29,359-ERROR(PosterThread.java:53)-Error occured during process task: sdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:35:30,009- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:35:30,009-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:35:30,079- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asfdasdfa
+2013-03-03 21:35:30,079-ERROR(PosterThread.java:53)-Error occured during process task: asfdasdfa
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:35:31,419- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: hdfhdg
+2013-03-03 21:35:31,419-ERROR(PosterThread.java:53)-Error occured during process task: hdfhdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:35:31,609- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:35:31,609-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:35:31,919- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfasfd
+2013-03-03 21:35:31,929-ERROR(PosterThread.java:53)-Error occured during process task: asdfasfd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:35:33,829- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfadf
+2013-03-03 21:35:33,829-ERROR(PosterThread.java:53)-Error occured during process task: asdfadf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:36:02,797-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:36:04,637- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdg
+2013-03-03 21:36:04,637-ERROR(PosterThread.java:53)-Error occured during process task: sdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:36:04,737- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: aksljfas
+2013-03-03 21:36:04,737-ERROR(PosterThread.java:53)-Error occured during process task: aksljfas
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:36:05,547- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:36:05,547-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:36:06,077- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: agsfhga
+2013-03-03 21:36:06,077-ERROR(PosterThread.java:53)-Error occured during process task: agsfhga
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:36:06,287- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdgsgd
+2013-03-03 21:36:06,287-ERROR(PosterThread.java:53)-Error occured during process task: sdgsgd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:36:07,277- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:36:07,277-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:84)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:53:09,213-ERROR(TaskFactory.java:213)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.scrapper.TaskFactory.loadKeyWordsList(TaskFactory.java:203)
+	at com.fdt.scrapper.TaskFactory.loadTaskQueue(TaskFactory.java:181)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:94)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:78)
+2013-03-03 21:53:11,583- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: hdfhdg
+2013-03-03 21:53:11,583-ERROR(PosterThread.java:53)-Error occured during process task: hdfhdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:90)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:53:12,043- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:53:12,043-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:90)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:53:12,953- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfadf
+2013-03-03 21:53:12,953-ERROR(PosterThread.java:53)-Error occured during process task: asdfadf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:90)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:53:12,983- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdg
+2013-03-03 21:53:12,983-ERROR(PosterThread.java:53)-Error occured during process task: sdg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:90)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:53:13,163- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:53:13,163-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:90)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:53:14,353- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asfdasdfa
+2013-03-03 21:53:14,353-ERROR(PosterThread.java:53)-Error occured during process task: asfdasdfa
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:90)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:53:15,203- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: sdfg
+2013-03-03 21:53:15,203-ERROR(PosterThread.java:53)-Error occured during process task: sdfg
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:90)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:53:16,593- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: asdfasfd
+2013-03-03 21:53:16,593-ERROR(PosterThread.java:53)-Error occured during process task: asdfasfd
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:90)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
+2013-03-03 21:53:18,023- INFO(TaskFactory.java:134)-Task returned to queue for reprocessing: adf
+2013-03-03 21:53:18,023-ERROR(PosterThread.java:53)-Error occured during process task: adf
+java.lang.Exception: Snippets size is 0. Will try to use another proxy server
+	at com.fdt.scrapper.NewsPoster.executePostNews(NewsPoster.java:90)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:45)
