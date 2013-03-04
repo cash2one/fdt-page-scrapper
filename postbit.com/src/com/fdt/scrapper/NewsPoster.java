@@ -23,18 +23,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import javax.xml.xpath.XPathExpressionException;
-
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
-import org.htmlcleaner.HtmlCleaner;
-import org.htmlcleaner.TagNode;
-import org.htmlcleaner.XPatherException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import sun.security.krb5.Config;
 
 import com.fdt.scrapper.task.Constants;
 import com.fdt.scrapper.task.NewsTask;
@@ -65,12 +62,21 @@ public class NewsPoster {
 
 	public final static String MAIN_URL_LABEL = "main_url";
 	public final static String MAIN_LINKS_URL_LABEL = "main_links_url";
+	public final static String POST_NEWS_URL_LABEL = "post_news_url";
+	private final static String LOGIN_URL_LABEL = "login_url";
 
 	Random rnd = new Random();
 
 	private NewsTask task = null;
 	private Proxy proxy = null;
 	private TaskFactory taskFactory = null;
+
+	private ArrayList<String> cookiesArray = new ArrayList<String>();
+	
+	private String userPage = "";
+	private String userID = "";
+	private String newsUrl = "";
+	private String newsID = "";
 
 	public NewsPoster(NewsTask task, Proxy proxy, TaskFactory taskFactory) {
 		this.task = task;
@@ -83,6 +89,17 @@ public class NewsPoster {
 		MAX_LINK_COUNT = Integer.valueOf(Constants.getInstance().getProperty(MAX_LINK_COUNT_LABEL));
 	}
 
+	private String cookiesToStr(ArrayList<String> cookies){
+		StringBuilder strBld = new StringBuilder();
+		for(String cookie:cookies){
+			strBld.append(cookie).append("; ");
+		}
+		if(strBld.length() > 0){
+			strBld.setLength(strBld.length()-2);
+		}
+		return strBld.toString();
+	}
+
 	public String executePostNews() throws Exception {
 		//get snippets
 		ArrayList<Snippet> snippets = parseHtml(task.getKeyWords());
@@ -92,7 +109,7 @@ public class NewsPoster {
 		//post news
 		return postNews(snippets);
 	}
-	
+
 	public void getCookie(){
 		//getting cookie for each account
 		try {
@@ -168,7 +185,7 @@ public class NewsPoster {
 	}
 
 	private void registration(){
-		String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL);
+		String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL);;
 
 		//String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + task.getKeyWords() + "delete/";
 
@@ -192,14 +209,17 @@ public class NewsPoster {
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+			conn.setRequestProperty("Pragma", "no-cache");
+			conn.setRequestProperty("Cache-Control", "no-cache");
+			conn.setRequestProperty("Cookie",cookiesToStr(cookiesArray));
 
 			//httppost.setHeader("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			//httppost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("action","register"));
-			nameValuePairs.add(new BasicNameValuePair("user_username","varenik8"));
-			nameValuePairs.add(new BasicNameValuePair("user_email","varenik8@gmail.com"));
-			nameValuePairs.add(new BasicNameValuePair("user_password","varenik8@gmail.com"));
+			nameValuePairs.add(new BasicNameValuePair("user_username","varenik29"));
+			nameValuePairs.add(new BasicNameValuePair("user_email","varenik29@gmail.com"));
+			nameValuePairs.add(new BasicNameValuePair("user_password","varenik10@gmail.com"));
 			nameValuePairs.add(new BasicNameValuePair("cpx","xKr4"));
 			//Insert news content here
 			/*String[] snippetsContent = getSnippetsContent(snippets);
@@ -207,9 +227,11 @@ public class NewsPoster {
 			task.getNewsContent().put("SNIPPETS_2", snippetsContent[1]);
 			task.getNewsContent().put("KEY_WORDS", task.getKeyWords());*/
 
+			String query = getQuery(nameValuePairs);
+			conn.setRequestProperty("Content-Length",String.valueOf(query.length()));
 			OutputStream os = conn.getOutputStream();
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-			writer.write(getQuery(nameValuePairs));
+			writer.write(query);
 			writer.flush();
 			writer.close();
 			os.close();
@@ -222,9 +244,129 @@ public class NewsPoster {
 			/*org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", "");
 			System.out.println(page);*/
 
+			userPage = "";
+			userID = "";
 			String respUrl = convertResponceToString(is);
-			log.error(respUrl);
-			String groupUrl = "";
+			String[] jsonValues = respUrl.split(",");
+			if(jsonValues.length >= 2){
+				userPage = jsonValues[1].split(":",2)[1];
+				userPage = userPage.substring(8, userPage.length()-2);
+				userID = jsonValues[2].split(":")[1];
+				userID = userID.substring(1, userID.length()-2);
+			}else{
+				log.error("Error occured during registration. Responce: " + respUrl);
+			}
+
+			//read cookies
+			// Execute HTTP Post Request
+			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
+			if(cookies.get("Set-cookie") != null){
+				for(String cookieOne: cookies.get("Set-cookie"))
+				{
+					cookiesArray.add(cookieOne);
+				}
+			}
+
+			/*if(link != null && link.length > 0){
+				groupUrl =  ((String)link[0]);
+			}*/
+			if(is != null){
+				is.close();
+			}
+			conn.disconnect();
+
+		} catch (ClientProtocolException e) {
+			logExtarnal.error("Error occured during posting news",e);
+		} catch (IOException e) {
+			logExtarnal.error("Error occured during posting news",e);
+		}
+	}
+
+	private void post(ArrayList<Snippet> snippets){
+		String postUrl = "http://"+userPage + Constants.getInstance().getProperty(POST_NEWS_URL_LABEL);
+
+		//String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + task.getKeyWords() + "delete/";
+
+		try {
+			//registration
+			URL url = new URL(postUrl);
+			HttpURLConnection.setFollowRedirects(true);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("POST");
+			conn.setDoInput(true);
+			conn.setDoOutput(true);
+
+			conn.addRequestProperty("Host", userPage);
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.addRequestProperty("Accept", "*/*");	
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+			//conn.addRequestProperty("Referer", "http://"+userPage+"/");
+			conn.addRequestProperty("X-Requested-With", "XMLHttpRequest");
+			conn.addRequestProperty("Connection", "keep-alive");
+			conn.setRequestProperty("Pragma", "no-cache");
+			conn.setRequestProperty("Cache-Control", "no-cache");
+			conn.setRequestProperty("Cookie",cookiesToStr(cookiesArray));
+
+			String[] snippetsContent = getSnippetsContent(snippets);
+			task.getNewsContent().put("SNIPPETS_1", snippetsContent[0]);
+			task.getNewsContent().put("SNIPPETS_2", snippetsContent[1]);
+			task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
+
+			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+			nameValuePairs.add(new BasicNameValuePair("acao","post_save_ok"));
+			nameValuePairs.add(new BasicNameValuePair("cap_pos","xk"));
+			nameValuePairs.add(new BasicNameValuePair("post_id",""));
+			nameValuePairs.add(new BasicNameValuePair("post_title",task.getKeyWords()));
+			nameValuePairs.add(new BasicNameValuePair("post_text",mergeTemplate(task)));
+			nameValuePairs.add(new BasicNameValuePair("post_category",""));
+			nameValuePairs.add(new BasicNameValuePair("post_date_year",""));
+			nameValuePairs.add(new BasicNameValuePair("post_date_month",""));
+			nameValuePairs.add(new BasicNameValuePair("post_date_day",""));
+			nameValuePairs.add(new BasicNameValuePair("post_date_hour",""));
+			nameValuePairs.add(new BasicNameValuePair("post_date_min",""));
+			//Insert news content here
+
+			String query = getQuery(nameValuePairs);
+			conn.setRequestProperty("Content-Length",String.valueOf(query.length()));
+			OutputStream os = conn.getOutputStream();
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			writer.write(query);
+			writer.flush();
+			writer.close();
+			os.close();
+
+			//conn.getRequestProperties()
+			int code = conn.getResponseCode();
+
+			InputStream is = conn.getInputStream();
+
+			/*org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", "");
+			System.out.println(page);*/
+
+			newsUrl = "";
+			newsID = "";
+			String respUrl = convertResponceToString(is);
+			String[] jsonValues = respUrl.split(",");
+			if(jsonValues.length >= 2){
+				newsUrl = jsonValues[1].split(":",2)[1];
+				newsUrl = newsUrl.substring(1, newsUrl.length()-1);
+				newsID = jsonValues[2].split(":")[1];
+				newsID = newsID.substring(1, newsID.length()-2);
+			}else{
+				log.error("Error occured during registration. Responce: " + respUrl);
+			}
+
+			//read cookies
+			// Execute HTTP Post Request
+			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
+			for(String cookieOne: cookies.get("Set-Cookie"))
+			{
+				cookiesArray.add(cookieOne);
+			}
+
 			/*if(link != null && link.length > 0){
 				groupUrl =  ((String)link[0]);
 			}*/
@@ -241,8 +383,10 @@ public class NewsPoster {
 	}
 
 	private String postNews(ArrayList<Snippet> snippets){
+		cookiesArray.add("__utma=; __utmb=; __utmc=; __utmz=; pb_cap=pb");
 		getCookie();
 		registration();
+		post(snippets);
 		return "";
 	}
 
