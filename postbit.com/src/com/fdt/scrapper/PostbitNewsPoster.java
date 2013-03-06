@@ -67,7 +67,7 @@ public class PostbitNewsPoster {
 
     private NewsTask task = null;
     private Proxy proxy = null;
-    private TaskFactory taskFactory = null;
+    private PostbitTaskFactory taskFactory = null;
 
     private ArrayList<String> cookiesArray = new ArrayList<String>();
 
@@ -114,7 +114,7 @@ public class PostbitNewsPoster {
 
     private static String userAgent = USER_AGENTS[0];
 
-    public PostbitNewsPoster(NewsTask task, Proxy proxy, TaskFactory taskFactory) {
+    public PostbitNewsPoster(NewsTask task, Proxy proxy, PostbitTaskFactory taskFactory) {
 	this.task = task;
 	this.proxy = proxy;
 	this.taskFactory = taskFactory;
@@ -272,14 +272,95 @@ public class PostbitNewsPoster {
 	    userID = "";
 	    String respContent = convertResponceToString(is);
 	    String[] jsonValues = respContent.split(",");
+
+	    boolean tryToLogin = false;
 	    if(jsonValues.length >= 2){
 		userPage = jsonValues[1].split(":",2)[1];
 		userPage = userPage.substring(8, userPage.length()-2);
 		userID = jsonValues[2].split(":")[1];
 		userID = userID.substring(1, userID.length()-2);
 	    }else{
-		throw new Exception("Error occured during registration. Responce: " + respContent);
+		if(respContent.contains("Unfortunately this username is already taken.")){
+		    tryToLogin = true;
+		    login();
+		}else{
+		    throw new Exception("Error occured during registration. Responce: " + respContent);
+		}
 	    }
+
+	    //read cookies
+	    Map<String,List<String>> cookies = conn.getHeaderFields();
+
+	    if(!tryToLogin){
+		if(!tryToLogin && cookies.get("Set-cookie") != null){
+		    for(String cookieOne: cookies.get("Set-cookie"))
+		    {
+			cookiesArray.add(cookieOne);
+		    }
+		}else{
+		    throw new Exception("Registration failed for user " + respContent);
+		}
+	    }
+	    
+	    if(is != null){
+		is.close();
+	    }
+	    conn.disconnect();
+
+	} catch (ClientProtocolException e) {
+	    logExternal.error("Error occured during posting news",e);
+	} catch (IOException e) {
+	    logExternal.error("Error occured during posting news",e);
+	}
+    }
+
+    private void login() throws Exception{
+	String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL);;
+
+	//String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + task.getKeyWords() + "delete/";
+
+	try {
+	    //registration
+	    URL url = new URL(postUrl);
+	    HttpURLConnection.setFollowRedirects(false);
+	    HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+	    conn.setReadTimeout(60000);
+	    conn.setConnectTimeout(60000);
+	    conn.setRequestMethod("POST");
+	    conn.setDoInput(true);
+	    conn.setDoOutput(true);
+
+	    conn.addRequestProperty("Host", "postbit.com");
+	    conn.addRequestProperty("Accept", "*/*");	
+	    conn.addRequestProperty("Referer", "http://postbit.com");
+	    conn.addRequestProperty("X-Requested-With", "XMLHttpRequest");
+	    conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+	    conn.addRequestProperty("Connection", "keep-alive");
+	    conn.addRequestProperty("User-Agent", userAgent); 
+	    conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+	    conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+	    conn.setRequestProperty("Pragma", "no-cache");
+	    conn.setRequestProperty("Cache-Control", "no-cache");
+	    conn.setRequestProperty("Cookie",cookiesToStr(cookiesArray));
+
+	    //httppost.setHeader("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+	    //httppost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
+	    List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+	    nameValuePairs.add(new BasicNameValuePair("login_referer","http://postbit.com/"));
+	    nameValuePairs.add(new BasicNameValuePair("acao","login"));
+	    nameValuePairs.add(new BasicNameValuePair("username_or_email",workingKeyWord+"@gmail.com"));
+	    nameValuePairs.add(new BasicNameValuePair("user_password",workingKeyWord));
+
+	    String query = getQuery(nameValuePairs);
+	    conn.setRequestProperty("Content-Length",String.valueOf(query.length()));
+	    OutputStream os = conn.getOutputStream();
+	    BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+	    writer.write(query);
+	    writer.flush();
+	    writer.close();
+	    os.close();
+
+	    InputStream is = conn.getInputStream();
 
 	    //read cookies
 	    Map<String,List<String>> cookies = conn.getHeaderFields();
@@ -289,7 +370,7 @@ public class PostbitNewsPoster {
 		    cookiesArray.add(cookieOne);
 		}
 	    }else{
-		throw new Exception("Registration failed for user " + respContent);
+		throw new Exception("Login failed for user " + workingKeyWord);
 	    }
 	    if(is != null){
 		is.close();
@@ -304,7 +385,9 @@ public class PostbitNewsPoster {
     }
 
     private void post(ArrayList<Snippet> snippets) throws Exception{
-	String postUrl = "http://"+userPage + Constants.getInstance().getProperty(POST_NEWS_URL_LABEL);
+	userPage = "http://"+workingKeyWord + ".postbit.com";
+	
+	String postUrl = "http://"+workingKeyWord + ".postbit.com/" + Constants.getInstance().getProperty(POST_NEWS_URL_LABEL);
 
 	try {
 	    //posting news

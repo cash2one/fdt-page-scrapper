@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
@@ -46,12 +45,14 @@ public class PosterTaskRunner {
     private final static String PROXY_DELAY_LABEL = "proxy_delay";
     private final static String INPUT_LINKS_FILE_PATH_LABEL = "input_links_file_path";
 
-    private TaskFactory taskFactory;
+    private PostbitTaskFactory taskFactory;
+    
+    private PostbitSaverThread saver;
 
     public PosterTaskRunner(String cfgFilePath){
 
 	Constants.getInstance().loadProperties(cfgFilePath);
-	taskFactory = TaskFactory.getInstance();
+	taskFactory = PostbitTaskFactory.getInstance();
 	this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 	this.keyWordsFilePath = Constants.getInstance().getProperty(KEY_WORDS_FILE_PATH_LABEL);
 	this.inputLinksFilePath = Constants.getInstance().getProperty(INPUT_LINKS_FILE_PATH_LABEL);
@@ -84,8 +85,8 @@ public class PosterTaskRunner {
     public void run(){
 	try{
 	    synchronized (this) {
-		TaskFactory.setMAX_THREAD_COUNT(maxThreadCount);
-		taskFactory = TaskFactory.getInstance();
+		PostbitTaskFactory.setMAX_THREAD_COUNT(maxThreadCount);
+		taskFactory = PostbitTaskFactory.getInstance();
 		taskFactory.clear();
 		//taskFactory.loadTaskQueue(urlsFilePath);
 		taskFactory.loadTaskQueue(keyWordsFilePath,inputLinksFilePath);
@@ -93,6 +94,10 @@ public class PosterTaskRunner {
 		ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
 		ProxyFactory proxyFactory = ProxyFactory.getInstance();
 		proxyFactory.init(proxyFilePath);
+		
+		//run saver thread
+		saver = new PostbitSaverThread(taskFactory, Constants.getInstance().getProperty(KEY_WORDS_FILE_PATH_LABEL));
+		saver.start();
 
 		PosterThread newThread = null;
 		log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
@@ -100,7 +105,7 @@ public class PosterTaskRunner {
 		//TaskFactory.setMAX_THREAD_COUNT(1);
 		while(!taskFactory.isTaskFactoryEmpty() || taskFactory.runThreadsCount > 0){
 		    if(taskFactory.getSuccessQueue().size() >= 3){
-			TaskFactory.setMAX_THREAD_COUNT(maxThreadCount);
+			PostbitTaskFactory.setMAX_THREAD_COUNT(maxThreadCount);
 		    }
 		    log.debug("Try to get request from RequestFactory queue.");
 
@@ -119,6 +124,7 @@ public class PosterTaskRunner {
 			log.error("InterruptedException occured during RequestRunner process",e);
 		    }
 		}
+		saver.running = false;
 
 		log.debug("Task factory is empty: "+taskFactory.isTaskFactoryEmpty()+". Current working threads count is " + taskFactory.runThreadsCount);
 		log.debug("Success tasks: "+taskFactory.getSuccessQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());

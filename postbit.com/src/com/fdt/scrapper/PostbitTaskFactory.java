@@ -17,11 +17,11 @@ import org.apache.velocity.app.Velocity;
 import com.fdt.scrapper.task.Constants;
 import com.fdt.scrapper.task.NewsTask;
 
-public class TaskFactory {
+public class PostbitTaskFactory {
 
-    private static final Logger log = Logger.getLogger(TaskFactory.class);
+    private static final Logger log = Logger.getLogger(PostbitTaskFactory.class);
 
-    private static TaskFactory instance = null;
+    private static PostbitTaskFactory instance = null;
     private String templateFilePath = "";
 
     private static Integer MAX_THREAD_COUNT = 100;
@@ -53,7 +53,7 @@ public class TaskFactory {
 
     private Random rnd = new Random();
 
-    private TaskFactory(){
+    private PostbitTaskFactory(){
 	taskQueue = new ArrayList<NewsTask>();
 	successQueue = new ArrayList<NewsTask>();
 	errorQueue = new ArrayList<NewsTask>();
@@ -109,11 +109,11 @@ public class TaskFactory {
      * 
      * @return
      */
-    public static TaskFactory getInstance(){
+    public static PostbitTaskFactory getInstance(){
 	if(null == instance){
-	    synchronized (TaskFactory.class) {
+	    synchronized (PostbitTaskFactory.class) {
 		if(null == instance){
-		    instance = new TaskFactory(); 
+		    instance = new PostbitTaskFactory(); 
 		}
 	    }
 	}

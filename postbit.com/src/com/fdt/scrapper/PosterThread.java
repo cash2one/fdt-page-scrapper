@@ -13,10 +13,10 @@ public class PosterThread extends Thread{
     private static final Logger log = Logger.getLogger(PosterThread.class);
 
     private NewsTask task;
-    private TaskFactory taskFactory;
+    private PostbitTaskFactory taskFactory;
     private ProxyFactory proxyFactory;
 
-    public PosterThread(NewsTask task, TaskFactory taskFactory, ProxyFactory proxyFactory) {
+    public PosterThread(NewsTask task, PostbitTaskFactory taskFactory, ProxyFactory proxyFactory) {
 	this.task = task;
 	this.taskFactory = taskFactory;
 	this.proxyFactory = proxyFactory;
