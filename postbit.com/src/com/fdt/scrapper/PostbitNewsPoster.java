@@ -138,16 +138,16 @@ public class PostbitNewsPoster {
 
     public String executePostNews() throws Exception {
 	//get snippets
-	/*ArrayList<Snippet> snippets = parseHtml(task.getKeyWords());
+	ArrayList<Snippet> snippets = parseHtml(task.getKeyWords());
 	if(snippets == null || snippets.size() == 0){
 	    throw new Exception("Snippets size is 0. Will try to use another proxy server");
 	}
 	//post news
-	return postNews(snippets);*/
-	ArrayList<Snippet> test = new ArrayList<Snippet>();
+	return postNews(snippets);
+	/*ArrayList<Snippet> test = new ArrayList<Snippet>();
 	test.add(new Snippet("1", "1"));
 	test.add(new Snippet("2", "2"));
-	return postNews(test);
+	return postNews(test);*/
     }
 
     private String preprocessingKeyWord(String key){
