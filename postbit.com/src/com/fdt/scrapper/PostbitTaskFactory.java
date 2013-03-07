@@ -172,19 +172,10 @@ public class PostbitTaskFactory {
 	return taskQueue.isEmpty();
     }
 
-    public void loadTaskQueue(String pathToTaskList, String pathToInputLinks) {
+    public void loadTaskQueue(String pathToTaskList) {
 	ArrayList<String> keyWordsList = loadKeyWordsList(pathToTaskList);
-	
-	ArrayList<String> inputLinksList = new ArrayList<String>();
-	if(pathToInputLinks != null && !"".equals(pathToInputLinks.trim())){
-	    inputLinksList = loadKeyWordsList(pathToInputLinks);
-	}
-
-	fillTaskQueue(keyWordsList,false);
-	fillTaskQueue(inputLinksList,true);
-	
+	fillTaskQueue(keyWordsList);
 	keyWordsList.clear();
-	inputLinksList.clear();
     }
 
     /**
@@ -231,10 +222,6 @@ public class PostbitTaskFactory {
     }
 
     private synchronized void fillTaskQueue(ArrayList<String> keyWordsList){
-	fillTaskQueue(keyWordsList, false);
-    }
-
-    private synchronized void fillTaskQueue(ArrayList<String> keyWordsList, boolean loadToSuccessQueue){
 	VelocityContext content = generateTemplateContent();
 	VelocityContext content2 = generateTemplateContent();
 
@@ -244,19 +231,12 @@ public class PostbitTaskFactory {
 	content2.put("PROMO_URL_END", Constants.getInstance().getProperty(PROMO_URL_END_LABEL_2));
 	boolean flag = true;
 	for(String keyWords : keyWordsList){
-	    if(!loadToSuccessQueue){
-		if(flag){
-		    taskQueue.add(new NewsTask(keyWords, content));
-		}else{
-		    taskQueue.add(new NewsTask(keyWords, content2));	
-		}
-		flag = !flag;
+	    if(flag){
+		taskQueue.add(new NewsTask(keyWords, content));
 	    }else{
-		//load links from file
-		NewsTask task = new NewsTask("", null);
-		task.setResult(keyWords);
-		successQueue.add(task);
+		taskQueue.add(new NewsTask(keyWords, content2));	
 	    }
+	    flag = !flag;
 	}
     }
 

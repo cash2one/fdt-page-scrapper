@@ -1,15 +1,18 @@
 package com.fdt.scrapper;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
+import java.util.ArrayList;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
@@ -29,9 +32,11 @@ public class PosterTaskRunner {
 
     private String proxyFilePath;
     private String keyWordsFilePath;
-    private String inputLinksFilePath;
+    private String linksListFilePath;
     private int maxThreadCount;
     private long proxyDelay;
+    
+   
 
     private Properties config = new Properties();
 
@@ -43,11 +48,13 @@ public class PosterTaskRunner {
     private final static String KEY_WORDS_FILE_PATH_LABEL = "key_words_file_path";
     private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
     private final static String PROXY_DELAY_LABEL = "proxy_delay";
-    private final static String INPUT_LINKS_FILE_PATH_LABEL = "input_links_file_path";
+    private final static String LINKS_LIST_FILE_PATH_LABEL = "links_list_file_path";
 
     private PostbitTaskFactory taskFactory;
     
     private PostbitSaverThread saver;
+    
+    private ArrayList<String> linksList = new ArrayList<String>();
 
     public PosterTaskRunner(String cfgFilePath){
 
@@ -55,9 +62,9 @@ public class PosterTaskRunner {
 	taskFactory = PostbitTaskFactory.getInstance();
 	this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 	this.keyWordsFilePath = Constants.getInstance().getProperty(KEY_WORDS_FILE_PATH_LABEL);
-	this.inputLinksFilePath = Constants.getInstance().getProperty(INPUT_LINKS_FILE_PATH_LABEL);
 	this.maxThreadCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
 	this.proxyDelay = Integer.valueOf(Constants.getInstance().getProperty(PROXY_DELAY_LABEL));
+	this.linksListFilePath = Constants.getInstance().getProperty(LINKS_LIST_FILE_PATH_LABEL);
 
 	Authenticator.setDefault(new Authenticator() {
 	    @Override
@@ -89,7 +96,7 @@ public class PosterTaskRunner {
 		taskFactory = PostbitTaskFactory.getInstance();
 		taskFactory.clear();
 		//taskFactory.loadTaskQueue(urlsFilePath);
-		taskFactory.loadTaskQueue(keyWordsFilePath,inputLinksFilePath);
+		taskFactory.loadTaskQueue(keyWordsFilePath);
 
 		ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
 		ProxyFactory proxyFactory = ProxyFactory.getInstance();
@@ -98,6 +105,9 @@ public class PosterTaskRunner {
 		//run saver thread
 		saver = new PostbitSaverThread(taskFactory, Constants.getInstance().getProperty(KEY_WORDS_FILE_PATH_LABEL));
 		saver.start();
+		
+		//load links from file
+		this.linksList= loadLinkList(linksListFilePath) ;
 
 		PosterThread newThread = null;
 		log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
@@ -113,7 +123,7 @@ public class PosterTaskRunner {
 		    log.debug("Task: " + task);
 		    if(task != null){
 			log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Success tasks: "+taskFactory.getSuccessQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
-			newThread = new PosterThread(task, taskFactory, proxyFactory);
+			newThread = new PosterThread(task, taskFactory, proxyFactory, linksList);
 			newThread.start();
 			continue;
 
@@ -188,5 +198,40 @@ public class PosterTaskRunner {
 	    }
 	}
     }
+    
+    public synchronized ArrayList<String> loadLinkList(String cfgFilePath){
+	ArrayList<String> linkList = new ArrayList<String>();
+	FileReader fr = null;
+	BufferedReader br = null;
+	try {
+		fr = new FileReader(new File(cfgFilePath));
+		br = new BufferedReader(fr);
+
+		String line = br.readLine();
+		while(line != null){
+			String utf8Line = new String(line.getBytes(),"UTF-8");
+			linkList.add(utf8Line.trim());
+			line = br.readLine();
+		}
+	} catch (FileNotFoundException e) {
+		log.error("Reading PROPERTIES file: FileNotFoundException exception occured",e);
+	} catch (IOException e) {
+		log.error("Reading PROPERTIES file: IOException exception occured", e);
+	} finally {
+		try {
+			if(br != null)
+				br.close();
+		} catch (Throwable e) {
+			log.warn("Error while initializtion", e);
+		}
+		try {
+			if(fr != null)
+				fr.close();
+		} catch (Throwable e) {
+			log.warn("Error while initializtion", e);
+		}
+	}
+	return linkList;
+}
 
 }

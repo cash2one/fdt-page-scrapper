@@ -10,8 +10,6 @@ import java.util.Random;
 
 import org.apache.log4j.Logger;
 
-import com.fdt.scrapper.SnippetExtractor;
-
 public class TaskFactory {
 
 	private static final Logger log = Logger.getLogger(TaskFactory.class);

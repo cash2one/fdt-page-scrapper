@@ -114,7 +114,7 @@ public class MultipleSnippetGeneratorRunner{
 		proxyFactory.init(proxyFilePath);
 		
 		//run saver thread
-		saver = new SaverThread(taskFactory);
+		saver = new SaverThread(taskFactory, ConfigManager.getInstance().getProperty(KEY_WORDS_FILE_PATH_LABEL));
 		saver.start();
 
 		//load links from file

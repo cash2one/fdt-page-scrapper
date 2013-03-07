@@ -77,6 +77,8 @@ public class PostbitNewsPoster {
     private String newsID = "";
 
     private String workingKeyWord = "";
+    
+    private ArrayList<String> linkList = null;
 
     private int MAX_KEY_LENGHT = 30;
 
@@ -114,10 +116,11 @@ public class PostbitNewsPoster {
 
     private static String userAgent = USER_AGENTS[0];
 
-    public PostbitNewsPoster(NewsTask task, Proxy proxy, PostbitTaskFactory taskFactory) {
+    public PostbitNewsPoster(NewsTask task, Proxy proxy, PostbitTaskFactory taskFactory, ArrayList<String> linkList) {
 	this.task = task;
 	this.proxy = proxy;
 	this.taskFactory = taskFactory;
+	this.linkList = linkList;
 
 	MIN_SNIPPET_COUNT = Integer.valueOf(Constants.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
 	MAX_SNIPPET_COUNT = Integer.valueOf(Constants.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
@@ -533,7 +536,8 @@ public class PostbitNewsPoster {
 	    //add link to snipper
 	    if(snippetLinked < linkCount){
 		//add snippet link
-		int randomSuccessLink = getRandomValue(1,taskFactory.getSuccessQueue().size());
+		int randomSuccessLink = getRandomValue(1,linkList.size()-1);
+		addLinkToSnippetContent(snippets.get(i), linkList.get(randomSuccessLink));
 		addLinkToSnippetContent(snippets.get(i), Constants.getInstance().getProperty("") + taskFactory.getSuccessQueue().get(randomSuccessLink-1).getResult());
 		snippetLinked++;
 	    }

@@ -1,6 +1,7 @@
 package com.fdt.scrapper;
 
 import java.net.Proxy;
+import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
 
@@ -15,11 +16,13 @@ public class PosterThread extends Thread{
     private NewsTask task;
     private PostbitTaskFactory taskFactory;
     private ProxyFactory proxyFactory;
+    private ArrayList<String> linkList = null;
 
-    public PosterThread(NewsTask task, PostbitTaskFactory taskFactory, ProxyFactory proxyFactory) {
+    public PosterThread(NewsTask task, PostbitTaskFactory taskFactory, ProxyFactory proxyFactory, ArrayList<String> linkList) {
 	this.task = task;
 	this.taskFactory = taskFactory;
 	this.proxyFactory = proxyFactory;
+	this.linkList = linkList;
     }
 
     @Override
@@ -41,7 +44,7 @@ public class PosterThread extends Thread{
 			log.debug("Task (" + task.toString() +") is using proxy connection: " +proxyConnector.getProxyKey());
 			Proxy proxy = proxyConnector.getConnect();
 			PostbitNewsPoster ps;
-			ps = new PostbitNewsPoster(task, proxy, taskFactory);
+			ps = new PostbitNewsPoster(task, proxy, taskFactory, linkList);
 			String newsResult = ps.executePostNews();
 			task.setResult(newsResult);
 		    }
