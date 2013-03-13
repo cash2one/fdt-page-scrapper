@@ -42,7 +42,7 @@ public class PosterThread extends Thread{
 			proxyConnector = proxyFactory.getProxyConnector();
 			log.debug("Free proxy count: " + (proxyFactory.getFreeProxyCount()-1));
 			log.debug("Task (" + task.toString() +") is using proxy connection: " +proxyConnector.getProxyKey());
-			Proxy proxy = proxyConnector.getConnect();
+			Proxy proxy = proxyConnector.getConnect("SOCKS");
 			PostbitNewsPoster ps;
 			ps = new PostbitNewsPoster(task, proxy, taskFactory, linkList);
 			String newsResult = ps.executePostNews();
