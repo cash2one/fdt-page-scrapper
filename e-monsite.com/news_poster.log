@@ -1,0 +1,16 @@
+2013-03-13 14:25:41,249-ERROR(PosterTaskRunner.java:217)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at java.io.FileReader.<init>(FileReader.java:55)
+	at com.fdt.scrapper.PosterTaskRunner.loadLinkList(PosterTaskRunner.java:207)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:110)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:83)
+2013-03-13 14:28:17,640-ERROR(PosterTaskRunner.java:217)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at java.io.FileReader.<init>(FileReader.java:55)
+	at com.fdt.scrapper.PosterTaskRunner.loadLinkList(PosterTaskRunner.java:207)
+	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:110)
+	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:83)

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+	<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	
+	<appender name="logfile" class="org.apache.log4j.RollingFileAppender"> 
+		<param name="file" value="news_poster.log"/>
+		<param name="MaxFileSize" value="50MB"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout"> 
+			<param name="ConversionPattern" value="%d-%5p(%F:%L)-%m%n"/> 
+		</layout> 
+  	</appender>
+	
+	<appender name="posted_links" class="org.apache.log4j.FileAppender">
+		<param name="file" value="posted_links.log"/>
+		<param name="append" value="true"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n"/>
+		</layout>
+	</appender>
+	
+	<logger name="com.fdt.scrapper.PostbitNewsPoster" >
+		<level value="INFO" />
+		<appender-ref ref="posted_links"/>
+	</logger>
+	
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="logfile" />
+	</root>
+	
+</log4j:configuration>
