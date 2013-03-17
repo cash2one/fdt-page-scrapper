@@ -144,7 +144,7 @@ public class PostbitNewsPoster {
     public String executePostNews() throws Exception {
 	//get snippets
 	ArrayList<Snippet> snippets = null;
-	
+
 	String searchEngine = Constants.getInstance().getProperty(SEARCH_ENGINE_LABEL);
 	if(searchEngine.equalsIgnoreCase("google")){
 	    snippets = parseHtmlGoogle(task.getKeyWords());
@@ -152,7 +152,7 @@ public class PostbitNewsPoster {
 	if(searchEngine.equalsIgnoreCase("bing")){
 	    snippets = parseHtmlBing(task.getKeyWords());
 	}
-	
+
 	if(snippets == null || snippets.size() == 0){
 	    throw new Exception("Snippets size is 0. Will try to use another proxy server");
 	}
@@ -175,35 +175,37 @@ public class PostbitNewsPoster {
     }
 
     private String postNews(ArrayList<Snippet> snippets) throws Exception{
-	cookiesArray.add("__utma=; __utmb=; __utmc=; __utmz=; pb_cap=pb");
+	//cookiesArray.add("__utma=; __utmb=; __utmc=; __utmz=; pb_cap=pb");
 	userAgent = USER_AGENTS[rnd.nextInt(USER_AGENTS.length)];
 	workingKeyWord = preprocessingKeyWord(task.getKeyWords());
 
-	//getCookie();
+	getCookie();
 	registration();
 	post(snippets);
 	return userPage;
     }
 
-    private void getCookie(){
+    private void getCookie() throws Exception{
 	//getting cookie for each account
 	try {
 	    String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL);
 	    URL url = new URL(postUrl);
 	    HttpURLConnection.setFollowRedirects(false);
-	    HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+	    //TODO Uncomment
+	    //HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+	    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 	    conn.setReadTimeout(60000);
 	    conn.setConnectTimeout(60000);
 	    conn.setRequestMethod("GET");
 	    conn.setDoInput(true);
 	    conn.setDoOutput(true);
 
-	    conn.addRequestProperty("Host","postbit.com");
+	    conn.addRequestProperty("Host","manager.e-monsite.com");
 	    conn.addRequestProperty("User-Agent",userAgent);
 	    conn.addRequestProperty("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 	    conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+	    conn.addRequestProperty("Cookie","managersid=5142f81de71b5639f7959ad3");
 	    conn.addRequestProperty("Connection","keep-alive");
-	    conn.addRequestProperty("Content-Type","application/x-www-form-urlencoded");
 
 	    List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 
@@ -213,6 +215,18 @@ public class PostbitNewsPoster {
 	    writer.flush();
 	    writer.close();
 	    os.close();
+
+	    Map<String,List<String>> cookies = conn.getHeaderFields();
+
+	    String setCookieLabel = "Set-Cookie";
+	    if(cookies.get(setCookieLabel) != null){
+		for(String cookieOne: cookies.get(setCookieLabel))
+		{
+		    cookiesArray.add(cookieOne);
+		}
+	    }else{
+		throw new Exception("Failed getting cookies for user");
+	    }
 
 	    conn.disconnect();
 	} catch (ClientProtocolException e) {
