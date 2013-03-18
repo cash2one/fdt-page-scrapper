@@ -58,7 +58,10 @@ public class NewsTask{
 		this.attempsCount++;
 	}
 
-
+	public void resetAttemptsCount(){
+		this.attempsCount = 0;
+	}
+	
 	public boolean isResultEmpty(){
 		if(result == null || "".equals(result.trim())){
 			return true;
