@@ -1,438 +1,1042 @@
-2013-03-13 14:25:41,249-ERROR(PosterTaskRunner.java:217)-Reading PROPERTIES file: FileNotFoundException exception occured
-java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
-	at java.io.FileInputStream.open(Native Method)
-	at java.io.FileInputStream.<init>(FileInputStream.java:120)
-	at java.io.FileReader.<init>(FileReader.java:55)
-	at com.fdt.scrapper.PosterTaskRunner.loadLinkList(PosterTaskRunner.java:207)
-	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:110)
-	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:83)
-2013-03-13 14:28:17,640-ERROR(PosterTaskRunner.java:217)-Reading PROPERTIES file: FileNotFoundException exception occured
-java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
-	at java.io.FileInputStream.open(Native Method)
-	at java.io.FileInputStream.<init>(FileInputStream.java:120)
-	at java.io.FileReader.<init>(FileReader.java:55)
-	at com.fdt.scrapper.PosterTaskRunner.loadLinkList(PosterTaskRunner.java:207)
-	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:110)
-	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:83)
-2013-03-19 21:38:56,911- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:38:56,926-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+2013-03-19 23:41:42,646-ERROR(PostbitNewsPoster.java:470)-http://granularpharyngitistreatment.postbit.com
+2013-03-19 23:41:42,646-ERROR(PostbitNewsPoster.java:470)-http://depressiontypes.postbit.com
+2013-03-19 23:41:42,662-ERROR(PostbitNewsPoster.java:470)-http://lefthipandlegpain.postbit.com
+2013-03-19 23:41:42,724-ERROR(PostbitNewsPoster.java:470)-http://descriptionofhotflashes.postbit.com
+2013-03-19 23:41:42,724-ERROR(PostbitNewsPoster.java:470)-http://whatstopsacidreflux.postbit.com
+2013-03-19 23:41:42,740-ERROR(PostbitNewsPoster.java:470)-http://feverbackacheheadache.postbit.com
+2013-03-19 23:41:42,771-ERROR(PostbitNewsPoster.java:470)-http://pukinggreen.postbit.com
+2013-03-19 23:41:42,787-ERROR(PostbitNewsPoster.java:470)-http://causesofkneepainandswelling.postbit.com
+2013-03-19 23:41:42,833-ERROR(PostbitNewsPoster.java:470)-http://numbnessinlittletoe.postbit.com
+2013-03-19 23:41:42,911-ERROR(PostbitNewsPoster.java:470)-http://severeneckandshoulderpain.postbit.com
+2013-03-19 23:41:44,300-ERROR(PostbitNewsPoster.java:327)-Error occured during posting news
+java.net.SocketException: Malformed reply from SOCKS server
+	at java.net.SocksSocketImpl.readSocksReply(SocksSocketImpl.java:128)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:273)
 	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
 	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
 	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:38:59,266- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:38:59,266-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:01,497- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:01,497-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:03,681- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:03,681-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:05,584- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:05,584-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:07,503- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:07,503-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:09,640- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:09,640-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:11,700- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:11,700-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:13,743- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:13,743-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:16,005- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:16,005-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:17,846- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:17,846-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:19,718- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:19,718-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:21,200- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:21,200-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:22,994- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:22,994-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:25,256- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:25,256-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:27,034- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:27,034-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:29,187- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:29,187-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:31,122- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:31,122-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:33,462- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:33,462-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:33,493-ERROR(PostbitNewsPoster.java:470)-http://ff1.postbit.com
-2013-03-19 21:39:35,380- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:35,380-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:37,346- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:37,346-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:39,421- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:39,421-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:41,511- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:41,511-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:43,898- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:43,898-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:45,754- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:45,754-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:47,751- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:47,751-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:51,339- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:51,339-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:53,570- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:53,570-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:55,239- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:55,239-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:56,940- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:56,940-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:39:59,014- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:39:59,014-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:01,089- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:01,089-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:03,648- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:03,648-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:05,832- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:05,832-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:08,109- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:08,109-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:09,825- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:09,825-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:12,103- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:12,103-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:15,036- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:15,036-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:16,814- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:16,814-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:20,106- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:20,106-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:22,336- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:22,336-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:24,130- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:24,130-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:26,080- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:26,080-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:27,734- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:27,734-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:31,213- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:31,213-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:33,022- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:33,022-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:34,957- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:34,957-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:37,094- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:40:37,094-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
-	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
-	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
-	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:38,919-ERROR(PostbitNewsPoster.java:397)-Error occured during posting news
+2013-03-19 23:41:44,471-ERROR(PostbitNewsPoster.java:327)-Error occured during posting news
 java.net.SocketException: SOCKS: Network unreachable
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at sun.net.NetworkClient.doConnect(Unknown Source)
-	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-	at sun.net.www.http.HttpClient.<init>(Unknown Source)
-	at sun.net.www.http.HttpClient.New(Unknown Source)
-	at sun.net.www.http.HttpClient.New(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
-	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:370)
-	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:556)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:273)
 	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
 	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
 	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:40:44,130-ERROR(PostbitNewsPoster.java:470)-http://ee1.postbit.com
-2013-03-19 21:41:33,067- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
-2013-03-19 21:41:33,067-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+2013-03-19 23:41:44,674-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: Malformed reply from SOCKS server
+	at java.net.SocksSocketImpl.readSocksReply(SocksSocketImpl.java:128)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:41:45,813-ERROR(PostbitNewsPoster.java:470)-http://psychophysiologicalinsomnia.postbit.com
+2013-03-19 23:41:45,860-ERROR(PostbitNewsPoster.java:470)-http://bloodinurinesample.postbit.com
+2013-03-19 23:41:45,860-ERROR(PostbitNewsPoster.java:470)-http://measurebodyfatcalculator.postbit.com
+2013-03-19 23:41:46,078-ERROR(PostbitNewsPoster.java:470)-http://whatcancausebadbreath.postbit.com
+2013-03-19 23:41:46,156-ERROR(PostbitNewsPoster.java:470)-http://instantconstipationrelief.postbit.com
+2013-03-19 23:41:46,234-ERROR(PostbitNewsPoster.java:470)-http://frequentfarting.postbit.com
+2013-03-19 23:41:46,250-ERROR(PostbitNewsPoster.java:470)-http://severelossofappetite.postbit.com
+2013-03-19 23:41:46,811-ERROR(PostbitNewsPoster.java:470)-http://painlessswollenlymphnodes.postbit.com
+2013-03-19 23:41:47,638-ERROR(PostbitNewsPoster.java:470)-http://howtocurebadbreathfast.postbit.com
+2013-03-19 23:41:48,215-ERROR(PostbitNewsPoster.java:470)-http://helpforsuicidalthoughts.postbit.com
+2013-03-19 23:41:48,325-ERROR(PostbitNewsPoster.java:470)-http://hearinglossaftersurgery.postbit.com
+2013-03-19 23:41:48,356-ERROR(PostbitNewsPoster.java:470)-http://vomitingmucus.postbit.com
+2013-03-19 23:41:48,855-ERROR(PostbitNewsPoster.java:470)-http://allergicreactiontosun.postbit.com
+2013-03-19 23:41:49,120-ERROR(PostbitNewsPoster.java:470)-http://chestpainwithdeepbreath.postbit.com
+2013-03-19 23:41:49,822-ERROR(PostbitNewsPoster.java:470)-http://swollenjointsindogs.postbit.com
+2013-03-19 23:41:50,462-ERROR(PostbitNewsPoster.java:470)-http://abdominalpaininthemorning.postbit.com
+2013-03-19 23:41:50,618-ERROR(PostbitNewsPoster.java:470)-http://leginfectionswelling.postbit.com
+2013-03-19 23:41:50,696-ERROR(PostbitNewsPoster.java:470)-http://upperbacklowerneckpain.postbit.com
+2013-03-19 23:41:50,821-ERROR(PostbitNewsPoster.java:470)-http://laxativesandconstipation.postbit.com
+2013-03-19 23:41:51,289-ERROR(PostbitNewsPoster.java:470)-http://sleepdisordertreatments.postbit.com
+2013-03-19 23:41:51,523-ERROR(PostbitNewsPoster.java:470)-http://cachexiacauses.postbit.com
+2013-03-19 23:41:51,554-ERROR(PostbitNewsPoster.java:470)-http://drywhitebumpsonskin.postbit.com
+2013-03-19 23:41:51,554-ERROR(PostbitNewsPoster.java:470)-http://7bodyfat.postbit.com
+2013-03-19 23:41:51,897-ERROR(PostbitNewsPoster.java:470)-http://painincalfandshin.postbit.com
+2013-03-19 23:41:52,521-ERROR(PostbitNewsPoster.java:470)-http://stomachpainwithbackpain.postbit.com
+2013-03-19 23:41:52,771-ERROR(PostbitNewsPoster.java:470)-http://neurocardiogenicsyncopesymptom616.postbit.com
+2013-03-19 23:41:52,973-ERROR(PostbitNewsPoster.java:470)-http://handsfeetalwayscold.postbit.com
+2013-03-19 23:41:53,270-ERROR(PostbitNewsPoster.java:470)-http://memorylossnames.postbit.com
+2013-03-19 23:41:53,285-ERROR(PostbitNewsPoster.java:470)-http://entericfever.postbit.com
+2013-03-19 23:41:53,379-ERROR(PostbitNewsPoster.java:470)-http://paininupperankle.postbit.com
+2013-03-19 23:41:53,909-ERROR(PostbitNewsPoster.java:470)-http://canlackofsleepcausechestpain.postbit.com
+2013-03-19 23:41:53,925-ERROR(PostbitNewsPoster.java:470)-http://whatdoesacidrefluxfeellike.postbit.com
+2013-03-19 23:41:54,065- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: perimenopause and memory loss
+2013-03-19 23:41:54,065-ERROR(PosterThread.java:55)-Error occured during process task: perimenopause and memory loss
 java.lang.Exception: Error occured during registration. Responce: {"alert":"Please log in to post."}
 	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:473)
 	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
 	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
 	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:41:34,611-ERROR(PostbitTaskFactory.java:138)-Task was put to error queue: aaa
-2013-03-19 21:41:34,611-ERROR(PosterThread.java:55)-Error occured during process task: aaa
-java.lang.Exception: Login failed for user aaa
+2013-03-19 23:41:54,237-ERROR(PostbitNewsPoster.java:470)-http://whatfoodscauseacidreflux.postbit.com
+2013-03-19 23:41:54,409-ERROR(PostbitNewsPoster.java:470)-http://nervepaininshin.postbit.com
+2013-03-19 23:41:54,830-ERROR(PostbitNewsPoster.java:470)-http://treatmentofabdominalpain.postbit.com
+2013-03-19 23:41:54,939-ERROR(PostbitNewsPoster.java:470)-http://highestsuiciderate.postbit.com
+2013-03-19 23:41:55,391-ERROR(PostbitNewsPoster.java:470)-http://smoothierecipesforweightloss.postbit.com
+2013-03-19 23:41:55,922-ERROR(PostbitNewsPoster.java:470)-http://causesofleftfootswelling.postbit.com
+2013-03-19 23:41:55,953-ERROR(PostbitNewsPoster.java:470)-http://bloodinstoolduringpregnancy.postbit.com
+2013-03-19 23:41:56,000-ERROR(PostbitNewsPoster.java:470)-http://difficultybreathingin.postbit.com
+2013-03-19 23:41:56,031-ERROR(PostbitNewsPoster.java:470)-http://ramdevyogaforbackpain.postbit.com
+2013-03-19 23:41:56,140-ERROR(PostbitNewsPoster.java:470)-http://homeremedyforsoregums.postbit.com
+2013-03-19 23:41:56,733-ERROR(PostbitNewsPoster.java:470)-http://myelodysplasiaanemia.postbit.com
+2013-03-19 23:41:56,764-ERROR(PostbitNewsPoster.java:470)-http://zincupsetstomach.postbit.com
+2013-03-19 23:41:56,998-ERROR(PostbitNewsPoster.java:470)-http://hometreatmentsforpinkeye.postbit.com
+2013-03-19 23:41:57,794-ERROR(PostbitNewsPoster.java:470)-http://alcoholheartburn.postbit.com
+2013-03-19 23:41:57,934-ERROR(PostbitNewsPoster.java:470)-http://treatmentforallergicreactionto15.postbit.com
+2013-03-19 23:41:58,028-ERROR(PostbitNewsPoster.java:470)-http://pregnancyandbreastpain.postbit.com
+2013-03-19 23:41:58,199-ERROR(PostbitNewsPoster.java:470)-http://paininyourear.postbit.com
+2013-03-19 23:41:58,277-ERROR(PostbitNewsPoster.java:470)-http://mouthsorestreatment.postbit.com
+2013-03-19 23:41:58,636-ERROR(PostbitNewsPoster.java:470)-http://sticksuicide.postbit.com
+2013-03-19 23:41:58,886-ERROR(PostbitNewsPoster.java:470)-http://obesitychart.postbit.com
+2013-03-19 23:41:59,011-ERROR(PostbitNewsPoster.java:470)-http://lowbackpaininchildren.postbit.com
+2013-03-19 23:41:59,026-ERROR(PostbitNewsPoster.java:470)-http://hoarsenesslungcancer.postbit.com
+2013-03-19 23:41:59,089-ERROR(PostbitNewsPoster.java:470)-http://muscleweaknessinlegs.postbit.com
+2013-03-19 23:42:00,134-ERROR(PostbitNewsPoster.java:470)-http://symptomsofdrymouth.postbit.com
+2013-03-19 23:42:00,306-ERROR(PostbitNewsPoster.java:470)-http://pinkyandringfingernumbness.postbit.com
+2013-03-19 23:42:00,352-ERROR(PostbitNewsPoster.java:470)-http://menopauseinsomnia.postbit.com
+2013-03-19 23:42:00,820-ERROR(PostbitNewsPoster.java:470)-http://suddenonsetjointpainandstiffne479.postbit.com
+2013-03-19 23:42:01,351-ERROR(PostbitNewsPoster.java:470)-http://whatisastuffynose.postbit.com
+2013-03-19 23:42:01,600-ERROR(PostbitNewsPoster.java:470)-http://freebodyfatcalculator.postbit.com
+2013-03-19 23:42:01,600-ERROR(PostbitNewsPoster.java:470)-http://childrenstomachpain.postbit.com
+2013-03-19 23:42:01,616-ERROR(PostbitNewsPoster.java:470)-http://allergicreactiontofruit.postbit.com
+2013-03-19 23:42:01,788-ERROR(PostbitNewsPoster.java:470)-http://jasondandruffshampoo.postbit.com
+2013-03-19 23:42:02,380-ERROR(PostbitNewsPoster.java:470)-http://swellingbelowanklebone.postbit.com
+2013-03-19 23:42:02,568-ERROR(PostbitNewsPoster.java:470)-http://abdominalpainweightloss.postbit.com
+2013-03-19 23:42:02,802-ERROR(PostbitNewsPoster.java:470)-http://lumpinsideofbreast.postbit.com
+2013-03-19 23:42:02,864-ERROR(PostbitNewsPoster.java:470)-http://sinusitisneckpain.postbit.com
+2013-03-19 23:42:03,238-ERROR(PostbitNewsPoster.java:470)-http://childhoodaphasia.postbit.com
+2013-03-19 23:42:03,316-ERROR(PostbitNewsPoster.java:470)-http://pregnancycrampsvsmenstrualcram131.postbit.com
+2013-03-19 23:42:03,956-ERROR(PostbitNewsPoster.java:470)-http://swollencollarbonelymphnodes.postbit.com
+2013-03-19 23:42:03,987-ERROR(PostbitNewsPoster.java:470)-http://causesofbloodinurinemen.postbit.com
+2013-03-19 23:42:03,987-ERROR(PostbitNewsPoster.java:470)-http://chronicneckpainsymptoms.postbit.com
+2013-03-19 23:42:04,393-ERROR(PostbitNewsPoster.java:470)-http://stopexcessivesweating.postbit.com
+2013-03-19 23:42:04,689-ERROR(PostbitNewsPoster.java:470)-http://antibioticsandtiredness.postbit.com
+2013-03-19 23:42:04,814-ERROR(PostbitNewsPoster.java:470)-http://sorethroatbloodymucus.postbit.com
+2013-03-19 23:42:04,970-ERROR(PostbitNewsPoster.java:470)-http://paranoiabook.postbit.com
+2013-03-19 23:42:04,986-ERROR(PostbitNewsPoster.java:470)-http://migrainevisionloss.postbit.com
+2013-03-19 23:42:05,438-ERROR(PostbitNewsPoster.java:470)-http://toothpaininchildren.postbit.com
+2013-03-19 23:42:05,563-ERROR(PostbitNewsPoster.java:470)-http://handheldbodyfatanalyzer.postbit.com
+2013-03-19 23:42:05,937-ERROR(PostbitNewsPoster.java:470)-http://drychestycough.postbit.com
+2013-03-19 23:42:06,031-ERROR(PostbitNewsPoster.java:470)-http://dogwithfever.postbit.com
+2013-03-19 23:42:06,046-ERROR(PostbitNewsPoster.java:470)-http://lumbarspinepainsymptoms.postbit.com
+2013-03-19 23:42:06,546-ERROR(PostbitNewsPoster.java:470)-http://estrogenandbreasttenderness.postbit.com
+2013-03-19 23:42:06,982-ERROR(PostbitNewsPoster.java:470)-http://swollenhandjoints.postbit.com
+2013-03-19 23:42:07,045-ERROR(PostbitNewsPoster.java:470)-http://remediesforundereyepuffiness.postbit.com
+2013-03-19 23:42:07,076-ERROR(PostbitNewsPoster.java:470)-http://obesityinchildren.postbit.com
+2013-03-19 23:42:07,404-ERROR(PostbitNewsPoster.java:470)-http://anklepaincauses.postbit.com
+2013-03-19 23:42:07,560-ERROR(PostbitNewsPoster.java:470)-http://treatmentbadbreath.postbit.com
+2013-03-19 23:42:07,716-ERROR(PostbitNewsPoster.java:470)-http://causesofupsetstomachanddiarrhe592.postbit.com
+2013-03-19 23:42:08,199-ERROR(PostbitNewsPoster.java:470)-http://whatisanyeastinfection.postbit.com
+2013-03-19 23:42:08,277-ERROR(PostbitNewsPoster.java:470)-http://feelingtiredandshortofbreath.postbit.com
+2013-03-19 23:42:08,402-ERROR(PostbitNewsPoster.java:470)-http://painintheshin.postbit.com
+2013-03-19 23:42:08,776-ERROR(PostbitNewsPoster.java:470)-http://menstruationvedio.postbit.com
+2013-03-19 23:42:09,213-ERROR(PostbitNewsPoster.java:470)-http://dogsdryskintreatment.postbit.com
+2013-03-19 23:42:09,447-ERROR(PostbitNewsPoster.java:470)-http://pronouncesyncope.postbit.com
+2013-03-19 23:42:09,634-ERROR(PostbitNewsPoster.java:470)-http://leftsidelowerbackpain.postbit.com
+2013-03-19 23:42:09,728-ERROR(PostbitNewsPoster.java:470)-http://anemiamanagement.postbit.com
+2013-03-19 23:42:09,759-ERROR(PostbitNewsPoster.java:470)-http://kneepaincartilage.postbit.com
+2013-03-19 23:42:09,790-ERROR(PostbitNewsPoster.java:470)-http://paininelbowandshoulder.postbit.com
+2013-03-19 23:42:10,087-ERROR(PostbitNewsPoster.java:470)-http://whitetonguesorethroat.postbit.com
+2013-03-19 23:42:10,430-ERROR(PostbitNewsPoster.java:470)-http://treatjointpain.postbit.com
+2013-03-19 23:42:10,773-ERROR(PostbitNewsPoster.java:470)-http://neurocardiacsyncope.postbit.com
+2013-03-19 23:42:11,319-ERROR(PostbitNewsPoster.java:470)-http://earandeyepain.postbit.com
+2013-03-19 23:42:11,725-ERROR(PostbitNewsPoster.java:470)-http://chairsforlowerbackpain.postbit.com
+2013-03-19 23:42:11,725-ERROR(PostbitNewsPoster.java:470)-http://babydiaperrash.postbit.com
+2013-03-19 23:42:11,756-ERROR(PostbitNewsPoster.java:470)-http://anorexianhs.postbit.com
+2013-03-19 23:42:11,959-ERROR(PostbitNewsPoster.java:470)-http://skindepigmentationtreatment.postbit.com
+2013-03-19 23:42:12,084-ERROR(PostbitNewsPoster.java:470)-http://sorethroatnotonsils.postbit.com
+2013-03-19 23:42:12,208-ERROR(PostbitNewsPoster.java:470)-http://hearinglossyoungadults.postbit.com
+2013-03-19 23:42:12,692- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: forearm pain
+2013-03-19 23:42:12,692-ERROR(PosterThread.java:55)-Error occured during process task: forearm pain
+java.io.IOException: Premature EOF
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:556)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:600)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:687)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3052)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3046)
+	at org.jsoup.helper.DataUtil.readToByteBuffer(DataUtil.java:113)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:54)
+	at org.jsoup.Jsoup.parse(Jsoup.java:118)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:694)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:785)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:153)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:12,723-ERROR(PostbitNewsPoster.java:470)-http://legshinpain.postbit.com
+2013-03-19 23:42:12,895-ERROR(PostbitNewsPoster.java:470)-http://primarycardiomyopathy.postbit.com
+2013-03-19 23:42:13,378-ERROR(PostbitNewsPoster.java:470)-http://whatcausesweightgain.postbit.com
+2013-03-19 23:42:13,675- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: help with nausea
+2013-03-19 23:42:13,675-ERROR(PosterThread.java:55)-Error occured during process task: help with nausea
+java.io.IOException: Premature EOF
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:556)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:600)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:687)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3052)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3046)
+	at org.jsoup.helper.DataUtil.readToByteBuffer(DataUtil.java:113)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:54)
+	at org.jsoup.Jsoup.parse(Jsoup.java:118)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:694)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:785)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:153)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:13,784-ERROR(PostbitNewsPoster.java:470)-http://moderateanemia.postbit.com
+2013-03-19 23:42:13,800-ERROR(PostbitNewsPoster.java:470)-http://nauseakidneystones.postbit.com
+2013-03-19 23:42:13,831-ERROR(PostbitNewsPoster.java:470)-http://metallictasteinmouthpregnancys692.postbit.com
+2013-03-19 23:42:14,314-ERROR(PostbitNewsPoster.java:470)-http://reliefforbackpain.postbit.com
+2013-03-19 23:42:14,330-ERROR(PostbitNewsPoster.java:470)-http://flatulenceandburping.postbit.com
+2013-03-19 23:42:14,424-ERROR(PostbitNewsPoster.java:470)-http://feverlondon.postbit.com
+2013-03-19 23:42:14,736-ERROR(PostbitNewsPoster.java:470)-http://mygumsarebleeding.postbit.com
+2013-03-19 23:42:14,782-ERROR(PostbitNewsPoster.java:470)-http://catslimping.postbit.com
+2013-03-19 23:42:15,422-ERROR(PostbitNewsPoster.java:470)-http://paininrightsideofchest.postbit.com
+2013-03-19 23:42:15,828-ERROR(PostbitNewsPoster.java:470)-http://jawpainicd9code.postbit.com
+2013-03-19 23:42:15,906-ERROR(PostbitNewsPoster.java:470)-http://stuffynoseafterdrinkingalcohol.postbit.com
+2013-03-19 23:42:16,015-ERROR(PostbitNewsPoster.java:470)-http://bestfeverthermometer.postbit.com
+2013-03-19 23:42:16,186-ERROR(PostbitNewsPoster.java:470)-http://signsandsymptomsofinfluenzab.postbit.com
+2013-03-19 23:42:16,280-ERROR(PostbitNewsPoster.java:470)-http://initialinsomnia.postbit.com
+2013-03-19 23:42:16,342-ERROR(PostbitNewsPoster.java:470)-http://curingindigestion.postbit.com
+2013-03-19 23:42:16,452-ERROR(PostbitNewsPoster.java:470)-http://blackwaterystools.postbit.com
+2013-03-19 23:42:16,998-ERROR(PostbitNewsPoster.java:470)-http://backachesymptoms.postbit.com
+2013-03-19 23:42:17,029-ERROR(PostbitNewsPoster.java:470)-http://frequenturinationandpregnancy.postbit.com
+2013-03-19 23:42:17,388-ERROR(PostbitNewsPoster.java:470)-http://unexplainedpaininfoot.postbit.com
+2013-03-19 23:42:17,934-ERROR(PostbitNewsPoster.java:470)-http://treatingoveractivebladder.postbit.com
+2013-03-19 23:42:18,152-ERROR(PostbitNewsPoster.java:470)-http://blurredvisionwhilepregnant.postbit.com
+2013-03-19 23:42:18,339-ERROR(PostbitNewsPoster.java:470)-http://weightlosscamp.postbit.com
+2013-03-19 23:42:18,480-ERROR(PostbitNewsPoster.java:470)-http://netipotearache.postbit.com
+2013-03-19 23:42:18,542-ERROR(PostbitNewsPoster.java:470)-http://heartdizziness.postbit.com
+2013-03-19 23:42:18,807-ERROR(PostbitNewsPoster.java:470)-http://acheinupperback.postbit.com
+2013-03-19 23:42:18,838-ERROR(PostbitNewsPoster.java:470)-http://paininupperthigharea.postbit.com
+2013-03-19 23:42:19,041-ERROR(PostbitNewsPoster.java:470)-http://whatisskinpeeling.postbit.com
+2013-03-19 23:42:19,572-ERROR(PostbitNewsPoster.java:470)-http://yeastinfectioninchildren.postbit.com
+2013-03-19 23:42:20,055-ERROR(PostbitNewsPoster.java:470)-http://amenorrheameaning.postbit.com
+2013-03-19 23:42:20,414-ERROR(PostbitNewsPoster.java:470)-http://sorethroatwhilepregnant.postbit.com
+2013-03-19 23:42:20,414-ERROR(PostbitNewsPoster.java:470)-http://abdominalpaincauses.postbit.com
+2013-03-19 23:42:20,664-ERROR(PostbitNewsPoster.java:470)-http://bloodinyourvomit.postbit.com
+2013-03-19 23:42:20,788-ERROR(PostbitNewsPoster.java:470)-http://irondeficiencymemoryloss.postbit.com
+2013-03-19 23:42:20,851-ERROR(PostbitNewsPoster.java:470)-http://allergydiet.postbit.com
+2013-03-19 23:42:21,132-ERROR(PostbitNewsPoster.java:470)-http://chestwallpain.postbit.com
+2013-03-19 23:42:21,397-ERROR(PostbitNewsPoster.java:470)-http://tinnitusmiraclecure.postbit.com
+2013-03-19 23:42:21,600-ERROR(PostbitNewsPoster.java:470)-http://abdominalpainnauseaaftereating.postbit.com
+2013-03-19 23:42:21,974-ERROR(PostbitNewsPoster.java:470)-http://homeremedyforanklepain.postbit.com
+2013-03-19 23:42:22,770-ERROR(PostbitNewsPoster.java:470)-http://overalljointpain.postbit.com
+2013-03-19 23:42:22,770-ERROR(PostbitNewsPoster.java:470)-http://lowerlegswellingandredness.postbit.com
+2013-03-19 23:42:22,848-ERROR(PostbitNewsPoster.java:470)-http://headrashpictures.postbit.com
+2013-03-19 23:42:23,191-ERROR(PostbitNewsPoster.java:470)-http://homeremediesfortoenailfungus.postbit.com
+2013-03-19 23:42:23,300-ERROR(PostbitNewsPoster.java:470)-http://milkdiarrhea.postbit.com
+2013-03-19 23:42:23,347-ERROR(PostbitNewsPoster.java:470)-http://acidrefluxandsorethroat.postbit.com
+2013-03-19 23:42:23,596-ERROR(PostbitNewsPoster.java:470)-http://obesitypeople.postbit.com
+2013-03-19 23:42:23,768-ERROR(PostbitNewsPoster.java:470)-http://reasonsfordrooling.postbit.com
+2013-03-19 23:42:24,938-ERROR(PostbitNewsPoster.java:470)-http://howtogainweightonface.postbit.com
+2013-03-19 23:42:24,954-ERROR(PostbitNewsPoster.java:470)-http://reasonforchestpain.postbit.com
+2013-03-19 23:42:25,297-ERROR(PostbitNewsPoster.java:470)-http://acidrefluxwhenpregnant.postbit.com
+2013-03-19 23:42:25,515-ERROR(PostbitNewsPoster.java:470)-http://toothpainandheadache.postbit.com
+2013-03-19 23:42:25,578-ERROR(PostbitNewsPoster.java:470)-http://suddenonsethippain.postbit.com
+2013-03-19 23:42:25,702-ERROR(PostbitNewsPoster.java:470)-http://confusionanddisorientation.postbit.com
+2013-03-19 23:42:25,921-ERROR(PostbitNewsPoster.java:470)-http://amnesiaending.postbit.com
+2013-03-19 23:42:26,482-ERROR(PostbitNewsPoster.java:470)-http://pathophysiologyofalteredmental250.postbit.com
+2013-03-19 23:42:26,592-ERROR(PostbitNewsPoster.java:470)-http://abdominalpainbelching.postbit.com
+2013-03-19 23:42:26,732-ERROR(PostbitNewsPoster.java:470)-http://mentaleffectsofsleepdeprivatio546.postbit.com
+2013-03-19 23:42:27,684-ERROR(PostbitNewsPoster.java:470)-http://moldallergicreaction.postbit.com
+2013-03-19 23:42:27,715-ERROR(PostbitNewsPoster.java:470)-http://statisticsanorexianervosa.postbit.com
+2013-03-19 23:42:27,777-ERROR(PostbitNewsPoster.java:470)-http://bestfacemoisturizerfordryskin.postbit.com
+2013-03-19 23:42:28,042-ERROR(PostbitNewsPoster.java:470)-http://treatmenthippain.postbit.com
+2013-03-19 23:42:28,183-ERROR(PostbitNewsPoster.java:470)-http://thighpainafterhipreplacement.postbit.com
+2013-03-19 23:42:28,198-ERROR(PostbitNewsPoster.java:470)-http://paininbottomofleftfoot.postbit.com
+2013-03-19 23:42:28,744-ERROR(PostbitNewsPoster.java:470)-http://lowerabdominalpainonleftside.postbit.com
+2013-03-19 23:42:28,963-ERROR(PostbitNewsPoster.java:470)-http://severepainontopoffoot.postbit.com
+2013-03-19 23:42:29,478-ERROR(PostbitNewsPoster.java:470)-http://nauseaandburping.postbit.com
+2013-03-19 23:42:30,053-ERROR(PostbitNewsPoster.java:470)-http://pilatesneckpain.postbit.com
+2013-03-19 23:42:30,203-ERROR(PostbitNewsPoster.java:470)-http://wristpainduringpregnancy.postbit.com
+2013-03-19 23:42:30,433-ERROR(PostbitNewsPoster.java:470)-http://curepuffyeyes.postbit.com
+2013-03-19 23:42:30,703-ERROR(PostbitNewsPoster.java:470)-http://armpainbelowelbow.postbit.com
+2013-03-19 23:42:30,723-ERROR(PostbitNewsPoster.java:470)-http://eyepainandredness.postbit.com
+2013-03-19 23:42:30,753-ERROR(PostbitNewsPoster.java:470)-http://excessivedroolingdogs.postbit.com
+2013-03-19 23:42:31,123-ERROR(PostbitNewsPoster.java:470)-http://whyaremyhandssocold.postbit.com
+2013-03-19 23:42:31,233-ERROR(PostbitNewsPoster.java:470)-http://flatfeetkneepain.postbit.com
+2013-03-19 23:42:31,722-ERROR(PostbitNewsPoster.java:470)-http://randomkneepain.postbit.com
+2013-03-19 23:42:32,257-ERROR(PostbitNewsPoster.java:470)-http://overweightcats.postbit.com
+2013-03-19 23:42:32,527-ERROR(PostbitNewsPoster.java:470)-http://naturalcuresacidreflux.postbit.com
+2013-03-19 23:42:32,547-ERROR(PostbitNewsPoster.java:470)-http://hearinglossaging.postbit.com
+2013-03-19 23:42:32,557-ERROR(PostbitNewsPoster.java:470)-http://memorylosstreatments.postbit.com
+2013-03-19 23:42:32,637-ERROR(PostbitNewsPoster.java:470)-http://cystontesticlepain.postbit.com
+2013-03-19 23:42:32,987-ERROR(PostbitNewsPoster.java:470)-http://runningdiarrhea.postbit.com
+2013-03-19 23:42:33,197-ERROR(PostbitNewsPoster.java:470)-http://sorethroatwithbumps.postbit.com
+2013-03-19 23:42:33,387-ERROR(PostbitNewsPoster.java:470)-http://causeofdiarrhea.postbit.com
+2013-03-19 23:42:33,697-ERROR(PostbitNewsPoster.java:470)-http://tenniselbowtendonitis.postbit.com
+2013-03-19 23:42:34,477-ERROR(PostbitNewsPoster.java:470)-http://causesofbloodinvomit.postbit.com
+2013-03-19 23:42:34,657-ERROR(PostbitNewsPoster.java:470)-http://tabletsforflatulence.postbit.com
+2013-03-19 23:42:34,677-ERROR(PostbitNewsPoster.java:470)-http://footpaincenter.postbit.com
+2013-03-19 23:42:34,717-ERROR(PostbitNewsPoster.java:470)-http://painleftsideunderbreast.postbit.com
+2013-03-19 23:42:34,947-ERROR(PostbitNewsPoster.java:470)-http://getridofdryskin.postbit.com
+2013-03-19 23:42:35,147-ERROR(PostbitNewsPoster.java:470)-http://middleearhearingloss.postbit.com
+2013-03-19 23:42:35,237-ERROR(PostbitNewsPoster.java:470)-http://braintumordizziness.postbit.com
+2013-03-19 23:42:35,657-ERROR(PostbitNewsPoster.java:470)-http://shinmusclecramps.postbit.com
+2013-03-19 23:42:35,667-ERROR(PostbitNewsPoster.java:470)-http://ultrasoundtenniselbow.postbit.com
+2013-03-19 23:42:36,617-ERROR(PostbitNewsPoster.java:470)-http://lowerabdominalandlowerbackpain.postbit.com
+2013-03-19 23:42:36,707-ERROR(PostbitNewsPoster.java:470)-http://headacheanddisorientation.postbit.com
+2013-03-19 23:42:36,777-ERROR(PostbitNewsPoster.java:470)-http://effectsoflackofsleeponthebody.postbit.com
+2013-03-19 23:42:36,787-ERROR(PostbitNewsPoster.java:470)-http://earandjawpaincauses.postbit.com
+2013-03-19 23:42:36,997-ERROR(PostbitNewsPoster.java:470)-http://severeyeastinfectionsymptoms.postbit.com
+2013-03-19 23:42:37,017-ERROR(PostbitNewsPoster.java:470)-http://ridofbadbreath.postbit.com
+2013-03-19 23:42:37,581-ERROR(PostbitNewsPoster.java:470)-http://ispalpitationsdangerous.postbit.com
+2013-03-19 23:42:37,628-ERROR(PostbitNewsPoster.java:470)-http://thighpainwhilesitting.postbit.com
+2013-03-19 23:42:37,862-ERROR(PostbitNewsPoster.java:470)-http://treatmentsforhotflashes.postbit.com
+2013-03-19 23:42:38,330- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: tingling numb toes
+2013-03-19 23:42:38,330-ERROR(PosterThread.java:55)-Error occured during process task: tingling numb toes
+java.io.IOException: Premature EOF
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:556)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:600)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:687)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3052)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3046)
+	at org.jsoup.helper.DataUtil.readToByteBuffer(DataUtil.java:113)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:54)
+	at org.jsoup.Jsoup.parse(Jsoup.java:118)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:694)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:785)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:153)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:38,345-ERROR(PostbitNewsPoster.java:327)-Error occured during posting news
+java.net.SocketException: Malformed reply from SOCKS server
+	at java.net.SocksSocketImpl.readSocksReply(SocksSocketImpl.java:128)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:273)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:38,579-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: Malformed reply from SOCKS server
+	at java.net.SocksSocketImpl.readSocksReply(SocksSocketImpl.java:128)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:38,579-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: Malformed reply from SOCKS server
+	at java.net.SocksSocketImpl.readSocksReply(SocksSocketImpl.java:128)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:38,751-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: SOCKS: Network unreachable
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:556)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:38,938-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: Malformed reply from SOCKS server
+	at java.net.SocksSocketImpl.readSocksReply(SocksSocketImpl.java:128)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:38,985-ERROR(PostbitNewsPoster.java:327)-Error occured during posting news
+java.net.SocketException: Malformed reply from SOCKS server
+	at java.net.SocksSocketImpl.readSocksReply(SocksSocketImpl.java:128)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:273)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:39,047-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: Malformed reply from SOCKS server
+	at java.net.SocksSocketImpl.readSocksReply(SocksSocketImpl.java:128)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:39,983-ERROR(PostbitNewsPoster.java:327)-Error occured during posting news
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:273)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:40,139-ERROR(PostbitNewsPoster.java:470)-http://smallreddryspotsonskin.postbit.com
+2013-03-19 23:42:40,311-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:40,482-ERROR(PostbitNewsPoster.java:470)-http://paindownrightarm.postbit.com
+2013-03-19 23:42:40,966-ERROR(PostbitNewsPoster.java:470)-http://hotflashestreatment.postbit.com
+2013-03-19 23:42:41,138-ERROR(PostbitNewsPoster.java:470)-http://croupcoughsound.postbit.com
+2013-03-19 23:42:41,262-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:41,543-ERROR(PostbitNewsPoster.java:470)-http://edemacauses.postbit.com
+2013-03-19 23:42:42,702-ERROR(PostbitNewsPoster.java:470)-http://menstruationcyclepictures.postbit.com
+2013-03-19 23:42:42,892-ERROR(PostbitNewsPoster.java:470)-http://bloodinurineformale.postbit.com
+2013-03-19 23:42:42,912-ERROR(PostbitNewsPoster.java:470)-http://icd9testicularpain.postbit.com
+2013-03-19 23:42:43,512-ERROR(PostbitNewsPoster.java:470)-http://symptomdizziness.postbit.com
+2013-03-19 23:42:43,582-ERROR(PostbitNewsPoster.java:470)-http://causeofacidreflux.postbit.com
+2013-03-19 23:42:43,992-ERROR(PostbitNewsPoster.java:470)-http://neckpainatnight.postbit.com
+2013-03-19 23:42:44,282-ERROR(PostbitNewsPoster.java:470)-http://homedicsbodyfatscale.postbit.com
+2013-03-19 23:42:45,012-ERROR(PostbitNewsPoster.java:470)-http://toothachenaturalremedies.postbit.com
+2013-03-19 23:42:46,082-ERROR(PostbitNewsPoster.java:470)-http://hipjointspopping.postbit.com
+2013-03-19 23:42:46,142-ERROR(PostbitNewsPoster.java:470)-http://childrenwithinsomnia.postbit.com
+2013-03-19 23:42:46,152-ERROR(PostbitNewsPoster.java:470)-http://paininlowerjawandteeth.postbit.com
+2013-03-19 23:42:46,212-ERROR(PostbitNewsPoster.java:470)-http://burningbigtoepain.postbit.com
+2013-03-19 23:42:46,222-ERROR(PostbitNewsPoster.java:470)-http://bipolaranddepression.postbit.com
+2013-03-19 23:42:46,292-ERROR(PostbitNewsPoster.java:470)-http://swollenjointsandrash.postbit.com
+2013-03-19 23:42:46,362-ERROR(PostbitNewsPoster.java:470)-http://belchinggirls.postbit.com
+2013-03-19 23:42:47,252-ERROR(PostbitNewsPoster.java:470)-http://leftchestpainabovebreast.postbit.com
+2013-03-19 23:42:48,382-ERROR(PostbitNewsPoster.java:327)-Error occured during posting news
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:273)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:48,452-ERROR(PostbitNewsPoster.java:470)-http://depressionandlackofsleep.postbit.com
+2013-03-19 23:42:48,572-ERROR(PostbitNewsPoster.java:470)-http://perimenopausebloating.postbit.com
+2013-03-19 23:42:48,602-ERROR(PostbitNewsPoster.java:470)-http://epilepsyanddriving.postbit.com
+2013-03-19 23:42:48,722-ERROR(PostbitNewsPoster.java:470)-http://3bodyfat.postbit.com
+2013-03-19 23:42:48,782-ERROR(PostbitNewsPoster.java:470)-http://heatrashpictures.postbit.com
+2013-03-19 23:42:49,242-ERROR(PostbitNewsPoster.java:470)-http://anorexiaisabellecaro.postbit.com
+2013-03-19 23:42:49,802-ERROR(PostbitNewsPoster.java:470)-http://chronictirednesssymptoms.postbit.com
+2013-03-19 23:42:50,272-ERROR(PostbitNewsPoster.java:470)-http://remedyforbadbreathinhumans.postbit.com
+2013-03-19 23:42:50,732-ERROR(PostbitNewsPoster.java:470)-http://stopneckpain.postbit.com
+2013-03-19 23:42:50,832-ERROR(PostbitNewsPoster.java:470)-http://paleskinwomen.postbit.com
+2013-03-19 23:42:50,862-ERROR(PostbitNewsPoster.java:470)-http://petechialrash.postbit.com
+2013-03-19 23:42:51,142-ERROR(PostbitNewsPoster.java:470)-http://buttockandhippain.postbit.com
+2013-03-19 23:42:51,472-ERROR(PostbitNewsPoster.java:470)-http://earachethroatpain.postbit.com
+2013-03-19 23:42:51,522-ERROR(PostbitNewsPoster.java:470)-http://definitionofpustule.postbit.com
+2013-03-19 23:42:51,822-ERROR(PostbitNewsPoster.java:470)-http://jawandearache.postbit.com
+2013-03-19 23:42:52,102-ERROR(PostbitNewsPoster.java:470)-http://mouldallergysymptoms.postbit.com
+2013-03-19 23:42:52,812-ERROR(PostbitNewsPoster.java:470)-http://whatcausesswellingunderthetong502.postbit.com
+2013-03-19 23:42:53,162-ERROR(PostbitNewsPoster.java:470)-http://homeremedypuffyeyes.postbit.com
+2013-03-19 23:42:53,502-ERROR(PostbitNewsPoster.java:470)-http://symptomsofjawpain.postbit.com
+2013-03-19 23:42:53,762-ERROR(PostbitNewsPoster.java:470)-http://howtostopexcessivesweating.postbit.com
+2013-03-19 23:42:53,912-ERROR(PostbitNewsPoster.java:470)-http://foodforinfertility.postbit.com
+2013-03-19 23:42:53,932-ERROR(PostbitNewsPoster.java:470)-http://eyedischargedogs.postbit.com
+2013-03-19 23:42:54,102-ERROR(PostbitNewsPoster.java:470)-http://florastordiarrhea.postbit.com
+2013-03-19 23:42:54,212-ERROR(PostbitNewsPoster.java:470)-http://whitelesionontongue.postbit.com
+2013-03-19 23:42:54,896-ERROR(PostbitNewsPoster.java:470)-http://catwithdryskin.postbit.com
+2013-03-19 23:42:55,099-ERROR(PostbitNewsPoster.java:470)-http://lackofappetiteincats.postbit.com
+2013-03-19 23:42:55,208-ERROR(PostbitNewsPoster.java:470)-http://eczemastress.postbit.com
+2013-03-19 23:42:55,504-ERROR(PostbitNewsPoster.java:470)-http://rightsidedlowbackpain.postbit.com
+2013-03-19 23:42:56,036-ERROR(PostbitNewsPoster.java:470)-http://citalopramandtiredness.postbit.com
+2013-03-19 23:42:56,046-ERROR(PostbitNewsPoster.java:470)-http://nervepaininshoulderandarm.postbit.com
+2013-03-19 23:42:56,046-ERROR(PostbitNewsPoster.java:470)-http://frequentsoftbowelmovements.postbit.com
+2013-03-19 23:42:56,166-ERROR(PostbitNewsPoster.java:470)-http://vitaminbmemoryloss.postbit.com
+2013-03-19 23:42:56,316-ERROR(PostbitNewsPoster.java:470)-http://pinkeyeremedy.postbit.com
+2013-03-19 23:42:57,026- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: drowsiness after meals
+2013-03-19 23:42:57,026-ERROR(PosterThread.java:55)-Error occured during process task: drowsiness after meals
+java.io.IOException: Premature EOF
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:556)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:600)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:687)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3052)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3046)
+	at org.jsoup.helper.DataUtil.readToByteBuffer(DataUtil.java:113)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:54)
+	at org.jsoup.Jsoup.parse(Jsoup.java:118)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:694)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:785)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:153)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:42:57,096-ERROR(PostbitNewsPoster.java:470)-http://logemanndysphagia.postbit.com
+2013-03-19 23:42:57,126-ERROR(PostbitNewsPoster.java:470)-http://neurogenichyperventilation.postbit.com
+2013-03-19 23:42:57,516-ERROR(PostbitNewsPoster.java:470)-http://stomachupsetcure.postbit.com
+2013-03-19 23:42:57,556-ERROR(PostbitNewsPoster.java:470)-http://viralpinkeyesymptoms.postbit.com
+2013-03-19 23:42:58,186-ERROR(PostbitNewsPoster.java:470)-http://bloodymucusinstools.postbit.com
+2013-03-19 23:42:58,226-ERROR(PostbitNewsPoster.java:470)-http://sleepdeprivationexperiment.postbit.com
+2013-03-19 23:42:58,446-ERROR(PostbitNewsPoster.java:470)-http://ferretdiarrhea.postbit.com
+2013-03-19 23:42:59,006-ERROR(PostbitNewsPoster.java:470)-http://ocdanorexia.postbit.com
+2013-03-19 23:42:59,076-ERROR(PostbitNewsPoster.java:470)-http://treatmentforlossofappetite.postbit.com
+2013-03-19 23:42:59,206-ERROR(PostbitNewsPoster.java:470)-http://stabbingpaininelbow.postbit.com
+2013-03-19 23:42:59,346-ERROR(PostbitNewsPoster.java:470)-http://cyclingelbowpain.postbit.com
+2013-03-19 23:42:59,566-ERROR(PostbitNewsPoster.java:470)-http://hairyleukoplakiatonguepictures.postbit.com
+2013-03-19 23:43:00,056-ERROR(PostbitNewsPoster.java:470)-http://infantwheezing.postbit.com
+2013-03-19 23:43:00,396-ERROR(PostbitNewsPoster.java:470)-http://hayfevertiredness.postbit.com
+2013-03-19 23:43:00,786-ERROR(PostbitNewsPoster.java:470)-http://alwayshavecoldfeet.postbit.com
+2013-03-19 23:43:00,976-ERROR(PostbitNewsPoster.java:470)-http://lupusneckpain.postbit.com
+2013-03-19 23:43:01,126-ERROR(PostbitNewsPoster.java:470)-http://lossofappetiteduringpregnancyt956.postbit.com
+2013-03-19 23:43:01,166-ERROR(PostbitNewsPoster.java:470)-http://partialmemoryloss.postbit.com
+2013-03-19 23:43:01,584-ERROR(PostbitNewsPoster.java:470)-http://pictureofconjunctivitis.postbit.com
+2013-03-19 23:43:01,786-ERROR(PostbitNewsPoster.java:470)-http://nervepainarm.postbit.com
+2013-03-19 23:43:02,937-ERROR(PostbitNewsPoster.java:470)-http://tryingtogainweight.postbit.com
+2013-03-19 23:43:03,091-ERROR(PostbitNewsPoster.java:470)-http://curesforbackache.postbit.com
+2013-03-19 23:43:03,135-ERROR(PostbitNewsPoster.java:470)-http://tinnituslaser.postbit.com
+2013-03-19 23:43:03,167-ERROR(PostbitNewsPoster.java:470)-http://vasopressorsyncope.postbit.com
+2013-03-19 23:43:03,531-ERROR(PostbitNewsPoster.java:470)-http://palmoplantarhyperhidrosis.postbit.com
+2013-03-19 23:43:03,754-ERROR(PostbitNewsPoster.java:470)-http://menstrualcrampsafterexercise.postbit.com
+2013-03-19 23:43:04,178-ERROR(PostbitNewsPoster.java:470)-http://nonpainfulmouthsores.postbit.com
+2013-03-19 23:43:04,548-ERROR(PostbitNewsPoster.java:470)-http://migraineandmemoryloss.postbit.com
+2013-03-19 23:43:05,324-ERROR(PostbitNewsPoster.java:470)-http://depressionshorttermmemoryloss.postbit.com
+2013-03-19 23:43:05,340-ERROR(PostbitNewsPoster.java:470)-http://paininheelbone.postbit.com
+2013-03-19 23:43:05,418-ERROR(PostbitNewsPoster.java:470)-http://redbumpsonskinfromsun.postbit.com
+2013-03-19 23:43:05,449-ERROR(PostbitNewsPoster.java:470)-http://dogvomitinglossofappetite.postbit.com
+2013-03-19 23:43:05,777-ERROR(PostbitNewsPoster.java:470)-http://strongmenstrualcramps.postbit.com
+2013-03-19 23:43:05,777-ERROR(PostbitNewsPoster.java:470)-http://careplanforchronicpain.postbit.com
+2013-03-19 23:43:06,207-ERROR(PostbitNewsPoster.java:470)-http://canineeyedischarge.postbit.com
+2013-03-19 23:43:06,647- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: chronic low back pain icd 9
+2013-03-19 23:43:06,647-ERROR(PosterThread.java:55)-Error occured during process task: chronic low back pain icd 9
+java.io.IOException: Premature EOF
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:556)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:600)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:687)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3052)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3046)
+	at org.jsoup.helper.DataUtil.readToByteBuffer(DataUtil.java:113)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:54)
+	at org.jsoup.Jsoup.parse(Jsoup.java:118)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:694)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:785)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:153)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:43:07,127-ERROR(PostbitNewsPoster.java:470)-http://paralysisoflimbs.postbit.com
+2013-03-19 23:43:07,127-ERROR(PostbitNewsPoster.java:470)-http://breasttendernesspostmenopause.postbit.com
+2013-03-19 23:43:07,747-ERROR(PostbitNewsPoster.java:470)-http://sensitivitytolightineyes.postbit.com
+2013-03-19 23:43:07,767-ERROR(PostbitNewsPoster.java:470)-http://numbnessinfingersandarm.postbit.com
+2013-03-19 23:43:07,787-ERROR(PostbitNewsPoster.java:470)-http://whatmakesbadbreath.postbit.com
+2013-03-19 23:43:08,357-ERROR(PostbitNewsPoster.java:470)-http://hippainandswelling.postbit.com
+2013-03-19 23:43:08,677-ERROR(PostbitNewsPoster.java:470)-http://allergiesrunnynose.postbit.com
+2013-03-19 23:43:09,457-ERROR(PostbitNewsPoster.java:470)-http://periodweightgain.postbit.com
+2013-03-19 23:43:09,557-ERROR(PostbitNewsPoster.java:470)-http://headandearpain.postbit.com
+2013-03-19 23:43:09,617-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:43:09,847-ERROR(PostbitNewsPoster.java:470)-http://severesorethroat.postbit.com
+2013-03-19 23:43:10,167-ERROR(PostbitNewsPoster.java:470)-http://chestpainanddizziness.postbit.com
+2013-03-19 23:43:10,187-ERROR(PostbitNewsPoster.java:470)-http://diarrheaeveryday.postbit.com
+2013-03-19 23:43:10,867-ERROR(PostbitNewsPoster.java:470)-http://sharplowerleftabdominalpain.postbit.com
+2013-03-19 23:43:11,597-ERROR(PostbitNewsPoster.java:470)-http://pinkeyefromfarting.postbit.com
+2013-03-19 23:43:11,657-ERROR(PostbitNewsPoster.java:470)-http://sigmoidcolonpain.postbit.com
+2013-03-19 23:43:11,697-ERROR(PostbitNewsPoster.java:470)-http://meningitishearingloss.postbit.com
+2013-03-19 23:43:11,797-ERROR(PostbitNewsPoster.java:470)-http://breathlessnesscauses.postbit.com
+2013-03-19 23:43:11,947-ERROR(PostbitNewsPoster.java:470)-http://whatcausetinnitus.postbit.com
+2013-03-19 23:43:12,207-ERROR(PostbitNewsPoster.java:470)-http://sorethroateverymorning.postbit.com
+2013-03-19 23:43:12,217-ERROR(PostbitNewsPoster.java:470)-http://metallictasteinmouthheartattac97.postbit.com
+2013-03-19 23:43:12,827-ERROR(PostbitNewsPoster.java:470)-http://fatigueupsetstomach.postbit.com
+2013-03-19 23:43:12,837-ERROR(PostbitNewsPoster.java:470)-http://symptonsofanxiety.postbit.com
+2013-03-19 23:43:13,677-ERROR(PostbitNewsPoster.java:470)-http://chronicthoracicpain.postbit.com
+2013-03-19 23:43:13,757-ERROR(PostbitNewsPoster.java:470)-http://anxietyinkids.postbit.com
+2013-03-19 23:43:13,807-ERROR(PostbitNewsPoster.java:470)-http://dysuriaicd9.postbit.com
+2013-03-19 23:43:13,917-ERROR(PostbitNewsPoster.java:470)-http://breastdischargegreen.postbit.com
+2013-03-19 23:43:14,227-ERROR(PostbitNewsPoster.java:470)-http://testicularcancerlegpain.postbit.com
+2013-03-19 23:43:14,377-ERROR(PostbitNewsPoster.java:470)-http://howtocuredogbadbreath.postbit.com
+2013-03-19 23:43:14,597-ERROR(PostbitNewsPoster.java:470)-http://exerciseforlowerbackpainrelief.postbit.com
+2013-03-19 23:43:14,677-ERROR(PostbitNewsPoster.java:470)-http://stressandstomachpain.postbit.com
+2013-03-19 23:43:14,897-ERROR(PostbitNewsPoster.java:470)-http://menstruationphotos.postbit.com
+2013-03-19 23:43:15,777-ERROR(PostbitNewsPoster.java:470)-http://mykittenkeepsthrowingup.postbit.com
+2013-03-19 23:43:15,807-ERROR(PostbitNewsPoster.java:470)-http://alackofsleep.postbit.com
+2013-03-19 23:43:15,847-ERROR(PostbitNewsPoster.java:470)-http://deepbelching.postbit.com
+2013-03-19 23:43:15,917-ERROR(PostbitNewsPoster.java:470)-http://painbetweenshoulderbladesandch707.postbit.com
+2013-03-19 23:43:16,167-ERROR(PostbitNewsPoster.java:470)-http://sleepandhairloss.postbit.com
+2013-03-19 23:43:16,227-ERROR(PostbitNewsPoster.java:470)-http://hearinglossprevention.postbit.com
+2013-03-19 23:43:16,677-ERROR(PostbitNewsPoster.java:470)-http://compressiongarmentsforweightlo557.postbit.com
+2013-03-19 23:43:16,917-ERROR(PostbitNewsPoster.java:470)-http://anklesprainswelling.postbit.com
+2013-03-19 23:43:17,057-ERROR(PostbitNewsPoster.java:470)-http://megaloblasticanemiappt.postbit.com
+2013-03-19 23:43:18,017-ERROR(PostbitNewsPoster.java:470)-http://tensmachinebackpain.postbit.com
+2013-03-19 23:43:18,017-ERROR(PostbitNewsPoster.java:470)-http://sharppaindownleftarm.postbit.com
+2013-03-19 23:43:18,057-ERROR(PostbitNewsPoster.java:470)-http://scalpflaky.postbit.com
+2013-03-19 23:43:18,247-ERROR(PostbitNewsPoster.java:470)-http://severedryskintreatment.postbit.com
+2013-03-19 23:43:18,287-ERROR(PostbitNewsPoster.java:470)-http://swellinginrightleg.postbit.com
+2013-03-19 23:43:18,387-ERROR(PostbitNewsPoster.java:470)-http://ingrowntoenailpain.postbit.com
+2013-03-19 23:43:18,717-ERROR(PostbitNewsPoster.java:470)-http://coffeesorethroat.postbit.com
+2013-03-19 23:43:19,247-ERROR(PostbitNewsPoster.java:470)-http://definethirst.postbit.com
+2013-03-19 23:43:20,307-ERROR(PostbitNewsPoster.java:470)-http://treatmentfordrymouthatnight.postbit.com
+2013-03-19 23:43:20,357-ERROR(PostbitNewsPoster.java:470)-http://mildfever.postbit.com
+2013-03-19 23:43:20,367-ERROR(PostbitNewsPoster.java:470)-http://influenzaah5n1.postbit.com
+2013-03-19 23:43:20,447-ERROR(PostbitNewsPoster.java:470)-http://complexchronicpainsyndrome.postbit.com
+2013-03-19 23:43:20,477-ERROR(PostbitNewsPoster.java:470)-http://doublevisionandstroke.postbit.com
+2013-03-19 23:43:20,947-ERROR(PostbitNewsPoster.java:470)-http://paininleftlumbarregion.postbit.com
+2013-03-19 23:43:21,447-ERROR(PostbitNewsPoster.java:470)-http://sharppaininmyhand.postbit.com
+2013-03-19 23:43:22,157-ERROR(PostbitNewsPoster.java:470)-http://zoloftstomachupset.postbit.com
+2013-03-19 23:43:22,337-ERROR(PostbitNewsPoster.java:470)-http://curemaleyeastinfection.postbit.com
+2013-03-19 23:43:22,387-ERROR(PostbitNewsPoster.java:470)-http://excessivesweatingforehead.postbit.com
+2013-03-19 23:43:22,427-ERROR(PostbitNewsPoster.java:470)-http://lefthandpaincauses.postbit.com
+2013-03-19 23:43:22,667-ERROR(PostbitNewsPoster.java:327)-Error occured during posting news
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:273)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:43:22,697-ERROR(PostbitNewsPoster.java:470)-http://definecerebralpalsy.postbit.com
+2013-03-19 23:43:22,847-ERROR(PostbitNewsPoster.java:470)-http://musclecrampscure.postbit.com
+2013-03-19 23:43:23,317-ERROR(PostbitNewsPoster.java:470)-http://hepatitiscitching.postbit.com
+2013-03-19 23:43:23,807-ERROR(PostbitNewsPoster.java:470)-http://suddensensorineuralhearingloss.postbit.com
+2013-03-19 23:43:24,297-ERROR(PostbitNewsPoster.java:470)-http://bottomofmyfeetitch.postbit.com
+2013-03-19 23:43:24,337-ERROR(PostbitNewsPoster.java:470)-http://whatcausesulcersonyourtongue.postbit.com
+2013-03-19 23:43:24,517-ERROR(PostbitNewsPoster.java:470)-http://nauseaeverynight.postbit.com
+2013-03-19 23:43:24,597-ERROR(PostbitNewsPoster.java:470)-http://anorexiahelpline.postbit.com
+2013-03-19 23:43:24,697-ERROR(PostbitNewsPoster.java:470)-http://musculoskeletalpaininchest.postbit.com
+2013-03-19 23:43:24,927-ERROR(PostbitNewsPoster.java:470)-http://progressiveprimaryaphasia.postbit.com
+2013-03-19 23:43:25,517-ERROR(PostbitNewsPoster.java:470)-http://allergicreactiontoseptra.postbit.com
+2013-03-19 23:43:26,297-ERROR(PostbitNewsPoster.java:470)-http://howtorelieveacidreflux.postbit.com
+2013-03-19 23:43:26,307-ERROR(PostbitNewsPoster.java:470)-http://painrightsideabovehip.postbit.com
+2013-03-19 23:43:26,407-ERROR(PostbitNewsPoster.java:470)-http://sorethroatandbackache.postbit.com
+2013-03-19 23:43:26,757-ERROR(PostbitNewsPoster.java:470)-http://flushotsavailable.postbit.com
+2013-03-19 23:43:26,807-ERROR(PostbitNewsPoster.java:470)-http://irregularmenstruationpregnancy.postbit.com
+2013-03-19 23:43:26,888-ERROR(PostbitNewsPoster.java:470)-http://leftsideabdominalpain.postbit.com
+2013-03-19 23:43:27,138-ERROR(PostbitNewsPoster.java:470)-http://skincoloredbumpsonlegs.postbit.com
+2013-03-19 23:43:27,834-ERROR(PostbitNewsPoster.java:470)-http://swinefluorigin.postbit.com
+2013-03-19 23:43:28,294-ERROR(PostbitNewsPoster.java:470)-http://fruitsforconstipation.postbit.com
+2013-03-19 23:43:28,394-ERROR(PostbitNewsPoster.java:470)-http://teenobesitystatistics.postbit.com
+2013-03-19 23:43:28,724-ERROR(PostbitNewsPoster.java:470)-http://definepleurisy.postbit.com
+2013-03-19 23:43:28,824-ERROR(PostbitNewsPoster.java:470)-http://paininheadneckandshoulder.postbit.com
+2013-03-19 23:43:28,994-ERROR(PostbitNewsPoster.java:470)-http://candidayeastinfection.postbit.com
+2013-03-19 23:43:29,214-ERROR(PostbitNewsPoster.java:470)-http://lowerabdominalcrampsbutnoperio134.postbit.com
+2013-03-19 23:43:29,834-ERROR(PostbitNewsPoster.java:470)-http://tremblingfinger.postbit.com
+2013-03-19 23:43:30,270-ERROR(PostbitNewsPoster.java:470)-http://upperleftarmpain.postbit.com
+2013-03-19 23:43:30,317-ERROR(PostbitNewsPoster.java:470)-http://droolingcats.postbit.com
+2013-03-19 23:43:30,847-ERROR(PostbitNewsPoster.java:470)-http://causesofbreastmass.postbit.com
+2013-03-19 23:43:31,549-ERROR(PostbitNewsPoster.java:470)-http://esaanemia.postbit.com
+2013-03-19 23:43:31,565-ERROR(PostbitNewsPoster.java:470)-http://bestchairforbackpain.postbit.com
+2013-03-19 23:43:31,565-ERROR(PostbitNewsPoster.java:470)-http://glenohumeraljointpain.postbit.com
+2013-03-19 23:43:31,814-ERROR(PostbitNewsPoster.java:470)-http://infertilityacupuncture.postbit.com
+2013-03-19 23:43:32,298-ERROR(PostbitNewsPoster.java:470)-http://menstruationandconstipation.postbit.com
+2013-03-19 23:43:32,937-ERROR(PostbitNewsPoster.java:470)-http://insomniareasons.postbit.com
+2013-03-19 23:43:32,937-ERROR(PostbitNewsPoster.java:470)-http://woopingcoughsymptoms.postbit.com
+2013-03-19 23:43:32,969-ERROR(PostbitNewsPoster.java:470)-http://worrymeaning.postbit.com
+2013-03-19 23:43:33,437-ERROR(PostbitNewsPoster.java:470)-http://howtocureatenniselbow.postbit.com
+2013-03-19 23:43:33,561-ERROR(PostbitNewsPoster.java:470)-http://badbreathinbabies.postbit.com
+2013-03-19 23:43:33,608-ERROR(PostbitNewsPoster.java:470)-http://cerebralpalsytreatments.postbit.com
+2013-03-19 23:43:33,983-ERROR(PostbitNewsPoster.java:470)-http://hairlossinolderwomen.postbit.com
+2013-03-19 23:43:34,794-ERROR(PostbitNewsPoster.java:470)-http://pallorskin.postbit.com
+2013-03-19 23:43:35,043-ERROR(PostbitNewsPoster.java:470)-http://peelingskinaroundmouth.postbit.com
+2013-03-19 23:43:35,262-ERROR(PostbitNewsPoster.java:470)-http://slightdizzinesscauses.postbit.com
+2013-03-19 23:43:35,745-ERROR(PostbitNewsPoster.java:470)-http://paininthumbandwrist.postbit.com
+2013-03-19 23:43:35,855-ERROR(PostbitNewsPoster.java:470)-http://paininlowerhead.postbit.com
+2013-03-19 23:43:35,948-ERROR(PostbitNewsPoster.java:470)-http://whitecoatedtonguesymptoms.postbit.com
+2013-03-19 23:43:36,167-ERROR(PostbitNewsPoster.java:470)-http://periodontitisppt.postbit.com
+2013-03-19 23:43:37,337-ERROR(PostbitNewsPoster.java:470)-http://painonhead.postbit.com
+2013-03-19 23:43:37,337-ERROR(PostbitNewsPoster.java:470)-http://vitaminforhairloss.postbit.com
+2013-03-19 23:43:37,695-ERROR(PostbitNewsPoster.java:470)-http://mildperiodontitis.postbit.com
+2013-03-19 23:43:37,758-ERROR(PostbitNewsPoster.java:470)-http://memorylossnaturalremedies.postbit.com
+2013-03-19 23:43:37,914-ERROR(PostbitNewsPoster.java:470)-http://infertilitynewyork.postbit.com
+2013-03-19 23:43:37,961-ERROR(PostbitNewsPoster.java:470)-http://menstruationafterchildbirth.postbit.com
+2013-03-19 23:43:38,101-ERROR(PostbitNewsPoster.java:470)-http://grandmalseizures.postbit.com
+2013-03-19 23:43:38,504-ERROR(PostbitNewsPoster.java:470)-http://footpaininbigtoe.postbit.com
+2013-03-19 23:43:39,384-ERROR(PostbitNewsPoster.java:470)-http://coughsuppresant.postbit.com
+2013-03-19 23:43:39,504-ERROR(PostbitNewsPoster.java:470)-http://causesofsevereabdominalpain.postbit.com
+2013-03-19 23:43:39,874-ERROR(PostbitNewsPoster.java:470)-http://bilateralanteriorthighpain.postbit.com
+2013-03-19 23:43:39,994-ERROR(PostbitNewsPoster.java:470)-http://fungalinfectionofnailstreatmen794.postbit.com
+2013-03-19 23:43:40,024-ERROR(PostbitNewsPoster.java:470)-http://blurredvisionafterheadinjury.postbit.com
+2013-03-19 23:43:40,094-ERROR(PostbitNewsPoster.java:327)-Error occured during posting news
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:273)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:43:40,124- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: pain in back
+2013-03-19 23:43:40,124-ERROR(PosterThread.java:55)-Error occured during process task: pain in back
+java.lang.Exception: Login failed for user paininback
 	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
 	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
 	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
 	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
 	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
-2013-03-19 21:42:02,036-ERROR(PostbitNewsPoster.java:470)-http://aa1.postbit.com
-2013-03-19 21:45:08,135-ERROR(PostbitNewsPoster.java:470)-http://dd1.postbit.com
+2013-03-19 23:43:40,344-ERROR(PostbitNewsPoster.java:470)-http://abdominalburningpain.postbit.com
+2013-03-19 23:43:40,794-ERROR(PostbitNewsPoster.java:470)-http://chronicdentalpain.postbit.com
+2013-03-19 23:43:41,314-ERROR(PostbitNewsPoster.java:470)-http://foulodorurine.postbit.com
+2013-03-19 23:43:41,724-ERROR(PostbitNewsPoster.java:470)-http://tremblinghandssymptoms.postbit.com
+2013-03-19 23:43:41,794-ERROR(PostbitNewsPoster.java:470)-http://painrightbreast.postbit.com
+2013-03-19 23:43:41,914-ERROR(PostbitNewsPoster.java:470)-http://exercisestoreducekneepain.postbit.com
+2013-03-19 23:43:42,594-ERROR(PostbitNewsPoster.java:470)-http://alcoholandabdominalpain.postbit.com
+2013-03-19 23:43:42,714-ERROR(PostbitNewsPoster.java:470)-http://chestpainnhs.postbit.com
+2013-03-19 23:43:42,714-ERROR(PostbitNewsPoster.java:470)-http://paininfrontthighmuscle.postbit.com
+2013-03-19 23:43:42,914-ERROR(PostbitNewsPoster.java:470)-http://stressarticle.postbit.com
+2013-03-19 23:43:43,754-ERROR(PostbitNewsPoster.java:470)-http://anorexiacenter.postbit.com
+2013-03-19 23:43:43,784-ERROR(PostbitNewsPoster.java:470)-http://frequenturinationafterovulatio634.postbit.com
+2013-03-19 23:43:43,794-ERROR(PostbitNewsPoster.java:470)-http://developmentaldyspraxiatreatmen644.postbit.com
+2013-03-19 23:43:43,954-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:43:44,134-ERROR(PostbitNewsPoster.java:327)-Error occured during posting news
+java.net.SocketException: SOCKS: Network unreachable
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:556)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:273)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:43:44,304-ERROR(PostbitNewsPoster.java:470)-http://cervicalorlymphadenopathy.postbit.com
+2013-03-19 23:43:44,344-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: Malformed reply from SOCKS server
+	at java.net.SocksSocketImpl.readSocksReply(SocksSocketImpl.java:128)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:43:44,684-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: SOCKS: Network unreachable
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:556)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:43:44,744-ERROR(PostbitNewsPoster.java:470)-http://homeremediesforacidreflux.postbit.com
+2013-03-19 23:43:44,764-ERROR(PostbitNewsPoster.java:327)-Error occured during posting news
+java.net.SocketException: Malformed reply from SOCKS server
+	at java.net.SocksSocketImpl.readSocksReply(SocksSocketImpl.java:128)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:273)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:43:45,164-ERROR(PostbitNewsPoster.java:470)-http://allergicreactiontodogsrash.postbit.com
+2013-03-19 23:43:46,074-ERROR(PostbitNewsPoster.java:470)-http://whitecoattongue.postbit.com
+2013-03-19 23:43:46,121-ERROR(PostbitNewsPoster.java:470)-http://howtocuretongueulcers.postbit.com
+2013-03-19 23:43:46,542-ERROR(PostbitNewsPoster.java:470)-http://cervicogenicdizzinesssymptoms.postbit.com
+2013-03-19 23:43:46,745-ERROR(PostbitNewsPoster.java:470)-http://iodineallergy.postbit.com
+2013-03-19 23:43:46,916-ERROR(PostbitNewsPoster.java:470)-http://sharppaininrighttesticle.postbit.com
+2013-03-19 23:43:47,642-ERROR(PostbitNewsPoster.java:470)-http://bighardlumpinbreast.postbit.com
+2013-03-19 23:43:48,452- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: eyes turning blue
+2013-03-19 23:43:48,452-ERROR(PosterThread.java:55)-Error occured during process task: eyes turning blue
+java.lang.Exception: Error occured during registration. Responce: {"alert":"Please log in to post."}
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:473)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:43:48,502-ERROR(PostbitNewsPoster.java:470)-http://orlandopainmanagement.postbit.com
+2013-03-19 23:43:48,672-ERROR(PostbitNewsPoster.java:470)-http://largemassinbreast.postbit.com
+2013-03-19 23:43:48,782-ERROR(PostbitNewsPoster.java:470)-http://fibromyalgiamusclecramps.postbit.com
+2013-03-19 23:43:48,902-ERROR(PostbitNewsPoster.java:470)-http://stopsnoringhomeremedy.postbit.com
+2013-03-19 23:43:49,022-ERROR(PostbitNewsPoster.java:470)-http://fugueamnesia.postbit.com
+2013-03-19 23:43:49,292-ERROR(PostbitNewsPoster.java:470)-http://fluvaccine2011.postbit.com
+2013-03-19 23:43:49,682-ERROR(PostbitNewsPoster.java:470)-http://nervepainbehindknee.postbit.com
+2013-03-19 23:43:50,232-ERROR(PostbitNewsPoster.java:470)-http://utivsyeastinfection.postbit.com
+2013-03-19 23:43:50,472-ERROR(PostbitNewsPoster.java:470)-http://solutionforobesity.postbit.com
+2013-03-19 23:43:50,922-ERROR(PostbitNewsPoster.java:470)-http://swollenupperlipsymptom.postbit.com
+2013-03-19 23:43:51,032-ERROR(PostbitNewsPoster.java:470)-http://catallergycure.postbit.com
+2013-03-19 23:43:51,192-ERROR(PostbitNewsPoster.java:470)-http://coughingupdarkredblood.postbit.com
+2013-03-19 23:43:51,385-ERROR(PostbitNewsPoster.java:470)-http://noworry.postbit.com
+2013-03-19 23:43:51,489-ERROR(PostbitNewsPoster.java:470)-http://toenailfungus.postbit.com
+2013-03-19 23:43:51,599-ERROR(PostbitNewsPoster.java:470)-http://babyhaswhitetongue.postbit.com
+2013-03-19 23:43:51,939-ERROR(PostbitNewsPoster.java:470)-http://dizzinessheartpalpitations.postbit.com
+2013-03-19 23:43:52,439-ERROR(PostbitNewsPoster.java:470)-http://faintingfirstaid.postbit.com
+2013-03-19 23:43:52,639-ERROR(PostbitNewsPoster.java:470)-http://hairitching.postbit.com
+2013-03-19 23:43:52,999-ERROR(PostbitNewsPoster.java:470)-http://21weekspregnantweightgain.postbit.com
+2013-03-19 23:43:53,189-ERROR(PostbitNewsPoster.java:470)-http://whitepimpleonsideoftongue.postbit.com
+2013-03-19 23:43:53,569-ERROR(PostbitNewsPoster.java:470)-http://viralpharyngitistreatment.postbit.com
+2013-03-19 23:43:53,569-ERROR(PostbitNewsPoster.java:470)-http://blackstoolsinchildren.postbit.com
+2013-03-19 23:43:53,959-ERROR(PostbitNewsPoster.java:470)-http://paininrighttesticleandabdomen.postbit.com
+2013-03-19 23:43:54,177-ERROR(PostbitNewsPoster.java:470)-http://dogpoopingbloodandvomiting.postbit.com
+2013-03-19 23:43:54,458-ERROR(PostbitNewsPoster.java:470)-http://beepollenweightloss.postbit.com
+2013-03-19 23:43:55,035-ERROR(PostbitNewsPoster.java:470)-http://rightarmpainheartattack.postbit.com
+2013-03-19 23:43:55,269-ERROR(PostbitNewsPoster.java:470)-http://whattodoforwateryeyes.postbit.com
+2013-03-19 23:43:55,394-ERROR(PostbitNewsPoster.java:470)-http://paininfrontthigh.postbit.com
+2013-03-19 23:43:55,535-ERROR(PostbitNewsPoster.java:470)-http://newglassesheadache.postbit.com
+2013-03-19 23:43:55,566-ERROR(PostbitNewsPoster.java:470)-http://yogamenstruation.postbit.com
+2013-03-19 23:43:56,361-ERROR(PostbitNewsPoster.java:470)-http://shootingpainbreast.postbit.com
+2013-03-19 23:43:56,463-ERROR(PostbitNewsPoster.java:470)-http://foodmenstrualcramps.postbit.com
+2013-03-19 23:43:56,833-ERROR(PostbitNewsPoster.java:470)-http://lumpinthroatandchestpain.postbit.com
+2013-03-19 23:43:57,003-ERROR(PostbitNewsPoster.java:470)-http://jointpainmusclepain.postbit.com
+2013-03-19 23:43:57,053-ERROR(PostbitNewsPoster.java:470)-http://shoulderneckandjawpain.postbit.com
+2013-03-19 23:43:57,453-ERROR(PostbitNewsPoster.java:470)-http://backacheleftside.postbit.com
+2013-03-19 23:43:57,513-ERROR(PostbitNewsPoster.java:470)-http://swollenhandpain.postbit.com
+2013-03-19 23:43:57,513-ERROR(PostbitNewsPoster.java:470)-http://dogupsetstomachpepto.postbit.com
+2013-03-19 23:43:57,643-ERROR(PostbitNewsPoster.java:470)-http://howtomanagebackpain.postbit.com
+2013-03-19 23:43:58,533-ERROR(PostbitNewsPoster.java:470)-http://snoringnoseclip.postbit.com
+2013-03-19 23:43:58,773-ERROR(PostbitNewsPoster.java:470)-http://hippainandnausea.postbit.com
+2013-03-19 23:43:59,083-ERROR(PostbitNewsPoster.java:470)-http://cayennepepperforsorethroat.postbit.com
+2013-03-19 23:43:59,343-ERROR(PostbitNewsPoster.java:470)-http://paininmytoe.postbit.com
+2013-03-19 23:43:59,593-ERROR(PostbitNewsPoster.java:470)-http://expressivedysarthria.postbit.com
+2013-03-19 23:43:59,693-ERROR(PostbitNewsPoster.java:470)-http://armsupportfortenniselbow.postbit.com
+2013-03-19 23:43:59,713-ERROR(PostbitNewsPoster.java:470)-http://icdtesticularpain.postbit.com
+2013-03-19 23:44:01,023-ERROR(PostbitNewsPoster.java:470)-http://hazelnutallergy.postbit.com
+2013-03-19 23:44:01,053-ERROR(PostbitNewsPoster.java:470)-http://whatcancausetesticlepain.postbit.com
+2013-03-19 23:44:01,063-ERROR(PostbitNewsPoster.java:470)-http://backpainsorethroat.postbit.com
+2013-03-19 23:44:01,273-ERROR(PostbitNewsPoster.java:484)-Error occured during posting news
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1090)
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:449)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 23:44:01,773-ERROR(PostbitNewsPoster.java:470)-http://suicidebombings.postbit.com
+2013-03-19 23:44:01,983-ERROR(PostbitNewsPoster.java:470)-http://getridmetallictastemouth.postbit.com
+2013-03-19 23:44:01,983-ERROR(PostbitNewsPoster.java:470)-http://americaoverweight.postbit.com
+2013-03-19 23:44:02,243-ERROR(PostbitNewsPoster.java:470)-http://sleepdeprivationandseizures.postbit.com
+2013-03-19 23:44:02,942-ERROR(PostbitNewsPoster.java:470)-http://anemiasickle.postbit.com
+2013-03-19 23:44:03,114-ERROR(PostbitNewsPoster.java:470)-http://vasovagalfainting.postbit.com
+2013-03-19 23:44:03,161-ERROR(PostbitNewsPoster.java:470)-http://magnesiummenstrualcramps.postbit.com
+2013-03-19 23:44:03,535-ERROR(PostbitNewsPoster.java:470)-http://stressmanagementpdf.postbit.com
+2013-03-19 23:44:04,065-ERROR(PostbitNewsPoster.java:470)-http://avoidingflatulence.postbit.com
+2013-03-19 23:44:04,315-ERROR(PostbitNewsPoster.java:470)-http://pregnancyrash.postbit.com
+2013-03-19 23:44:04,331-ERROR(PostbitNewsPoster.java:470)-http://depressionandteenagers.postbit.com
+2013-03-19 23:44:04,440-ERROR(PostbitNewsPoster.java:470)-http://chestheartpain.postbit.com
