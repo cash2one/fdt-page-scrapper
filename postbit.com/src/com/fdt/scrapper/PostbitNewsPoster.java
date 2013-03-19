@@ -44,10 +44,10 @@ public class PostbitNewsPoster {
     private static final Logger logExternal = Logger.getLogger(PosterTaskRunner.class);
 
     private int MIN_SNIPPET_COUNT=3;
-    private int MAX_SNIPPET_COUNT=5;
+    private int MAX_SNIPPET_COUNT=17;
 
     private int MIN_LINK_COUNT=3;
-    private int MAX_LINK_COUNT=5;
+    private int MAX_LINK_COUNT=15;
 
     private int MIN_WORDS_COUNT=2;
     private int MAX_WORDS_COUNT=3;
