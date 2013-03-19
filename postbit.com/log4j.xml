@@ -12,7 +12,7 @@
   	</appender>
 	
 	<appender name="posted_links" class="org.apache.log4j.FileAppender">
-		<param name="file" value="links.txt"/>
+		<param name="file" value="d:\\Work\\SVN\\links.txt"/>
 		<param name="append" value="true"/>
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%m%n"/>
