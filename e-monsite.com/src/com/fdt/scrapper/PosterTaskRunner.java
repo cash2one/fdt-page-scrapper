@@ -130,6 +130,8 @@ public class PosterTaskRunner {
 							NewsTask task = taskFactory.getTask();
 							log.debug("Task: " + task);
 							if(task != null){
+								//load new links
+								this.linksList= loadLinkList(linksListFilePath) ;
 								log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Success tasks: "+taskFactory.getSuccessQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
 								newThread = new PosterThread(task, taskFactory, proxyFactory, account, accountFactory, linksList);
 								newThread.start();
