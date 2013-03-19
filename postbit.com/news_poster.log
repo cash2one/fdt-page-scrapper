@@ -14,3 +14,425 @@ java.io.FileNotFoundException: links.txt (Не удается найти указанный файл)
 	at com.fdt.scrapper.PosterTaskRunner.loadLinkList(PosterTaskRunner.java:207)
 	at com.fdt.scrapper.PosterTaskRunner.run(PosterTaskRunner.java:110)
 	at com.fdt.scrapper.PosterTaskRunner.main(PosterTaskRunner.java:83)
+2013-03-19 21:38:56,911- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:38:56,926-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:38:59,266- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:38:59,266-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:01,497- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:01,497-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:03,681- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:03,681-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:05,584- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:05,584-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:07,503- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:07,503-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:09,640- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:09,640-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:11,700- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:11,700-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:13,743- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:13,743-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:16,005- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:16,005-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:17,846- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:17,846-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:19,718- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:19,718-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:21,200- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:21,200-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:22,994- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:22,994-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:25,256- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:25,256-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:27,034- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:27,034-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:29,187- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:29,187-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:31,122- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:31,122-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:33,462- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:33,462-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:33,493-ERROR(PostbitNewsPoster.java:470)-http://ff1.postbit.com
+2013-03-19 21:39:35,380- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:35,380-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:37,346- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:37,346-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:39,421- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:39,421-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:41,511- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:41,511-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:43,898- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:43,898-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:45,754- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:45,754-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:47,751- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:47,751-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:51,339- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:51,339-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:53,570- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:53,570-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:55,239- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:55,239-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:56,940- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:56,940-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:39:59,014- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:39:59,014-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:01,089- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:01,089-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:03,648- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:03,648-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:05,832- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:05,832-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:08,109- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:08,109-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:09,825- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:09,825-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:12,103- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:12,103-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:15,036- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:15,036-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:16,814- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:16,814-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:20,106- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:20,106-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:22,336- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:22,336-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:24,130- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:24,130-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:26,080- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:26,080-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:27,734- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:27,734-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:31,213- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:31,213-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:33,022- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:33,022-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:34,957- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:34,957-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:37,094- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:40:37,094-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:38,919-ERROR(PostbitNewsPoster.java:397)-Error occured during posting news
+java.net.SocketException: SOCKS: Network unreachable
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:370)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:40:44,130-ERROR(PostbitNewsPoster.java:470)-http://ee1.postbit.com
+2013-03-19 21:41:33,067- INFO(PostbitTaskFactory.java:133)-Task returned to queue for reprocessing: aaa
+2013-03-19 21:41:33,067-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Error occured during registration. Responce: {"alert":"Please log in to post."}
+	at com.fdt.scrapper.PostbitNewsPoster.post(PostbitNewsPoster.java:473)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:184)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:41:34,611-ERROR(PostbitTaskFactory.java:138)-Task was put to error queue: aaa
+2013-03-19 21:41:34,611-ERROR(PosterThread.java:55)-Error occured during process task: aaa
+java.lang.Exception: Login failed for user aaa
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:387)
+	at com.fdt.scrapper.PostbitNewsPoster.registration(PostbitNewsPoster.java:299)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:183)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:160)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:48)
+2013-03-19 21:42:02,036-ERROR(PostbitNewsPoster.java:470)-http://aa1.postbit.com
+2013-03-19 21:45:08,135-ERROR(PostbitNewsPoster.java:470)-http://dd1.postbit.com
