@@ -492,3 +492,58 @@ java.io.IOException: Premature EOF
 	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:146)
 	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
 2013-03-19 00:42:13,919-ERROR(PostbitNewsPoster.java:304)-http://tifencoisie.e-monsite.com/blog/abdominal-cramps-back-pain.html
+2013-03-19 21:43:14,921-ERROR(PostbitNewsPoster.java:304)-http://agobanic.e-monsite.com/blog/abdominal-cramps-and-nausea.html
+2013-03-19 21:44:38,136-ERROR(PostbitNewsPoster.java:304)-http://agobanic.e-monsite.com/blog/abdominal-cramps-and-nausea.html
+2013-03-19 23:14:21,040-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: pancoachiare
+2013-03-19 23:14:26,180- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: abdominal cramps and nausea
+2013-03-19 23:14:26,780-ERROR(PosterThread.java:59)-Error occured during process task: abdominal cramps and nausea
+java.lang.Exception: Login failed for user abdominal cramps and nausea
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:16:20,041-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: pancoachiare
+2013-03-19 23:16:54,793-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: pancoachiare
+2013-03-19 23:17:02,063- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: nausea abdominal cramps
+2013-03-19 23:17:02,063-ERROR(PosterThread.java:59)-Error occured during process task: nausea abdominal cramps
+java.lang.Exception: Login failed for user nausea abdominal cramps
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:19:09,618-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: pancoachiare
+2013-03-19 23:19:09,628- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: nausea abdominal cramps
+2013-03-19 23:19:09,638-ERROR(PosterThread.java:59)-Error occured during process task: nausea abdominal cramps
+java.lang.Exception: Login failed for user nausea abdominal cramps
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:22:45,744-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: pancoachiare
+2013-03-19 23:22:45,760- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: nausea and abdominal cramps
+2013-03-19 23:22:45,760-ERROR(PosterThread.java:59)-Error occured during process task: nausea and abdominal cramps
+java.lang.Exception: Login failed for user nausea and abdominal cramps
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:23:12,108-ERROR(PostbitNewsPoster.java:319)-http://tifencoisie.e-monsite.com/blog/early-pregnancy-abdominal-cramps.html
+2013-03-19 23:25:31,170-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: pancoachiare
+2013-03-19 23:25:31,185- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: nausea abdominal cramps
+2013-03-19 23:25:31,185-ERROR(PosterThread.java:59)-Error occured during process task: nausea abdominal cramps
+java.lang.Exception: Login failed for user nausea abdominal cramps
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:25:33,635-ERROR(PostbitNewsPoster.java:319)-http://tifencoisie.e-monsite.com/blog/nausea-and-abdominal-cramps.html
+2013-03-19 23:25:38,861-ERROR(PostbitNewsPoster.java:319)-http://tifencoisie.e-monsite.com/blog/lower-abdominal-cramps-pregnancy.html
+2013-03-19 23:27:05,622-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: pancoachiare
+2013-03-19 23:27:05,622- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: abdominal cramps in early pregnancy
+2013-03-19 23:27:05,622-ERROR(PosterThread.java:59)-Error occured during process task: abdominal cramps in early pregnancy
+java.lang.Exception: Login failed for user abdominal cramps in early pregnancy
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:27:07,042-ERROR(PostbitNewsPoster.java:319)-http://tifencoisie.e-monsite.com/blog/abdominal-cramps-nausea.html

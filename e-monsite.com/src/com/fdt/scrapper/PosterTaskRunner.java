@@ -122,8 +122,8 @@ public class PosterTaskRunner {
 
 				Account account = null;
 				//TaskFactory.setMAX_THREAD_COUNT(1);
-				while(!taskFactory.isTaskFactoryEmpty()){
-					while((!taskFactory.isTaskFactoryEmpty() && ((account = accountFactory.getAccount()) != null)) || taskFactory.runThreadsCount > 0){
+				while(!taskFactory.isTaskFactoryEmpty() && accountFactory.getAccountCount() > 0){
+					while((!taskFactory.isTaskFactoryEmpty() && ((account = accountFactory.getAccount()) != null) && accountFactory.getAccountCount() > 0) || taskFactory.runThreadsCount > 0){
 						log.debug("Try to get request from RequestFactory queue.");
 
 						if(account != null){

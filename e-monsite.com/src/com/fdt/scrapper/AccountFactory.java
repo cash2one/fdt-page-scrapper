@@ -89,11 +89,13 @@ public class AccountFactory
 	 * @param account
 	 */
 	public synchronized void incrementPostedCounter(Account account){
-		Integer count = newsPostedCount.get(account.getLogin());
-		count++;
-		newsPostedCount.put(account.getLogin(), count);
-		log.debug("Posted account news incremented: " + count);
-		releaseAccount(account);
+		if(accountUsedInThreadCount.containsKey(account.getLogin())){
+			Integer count = newsPostedCount.get(account.getLogin());
+			count++;
+			newsPostedCount.put(account.getLogin(), count);
+			log.debug("Posted account news incremented: " + count);
+			releaseAccount(account);
+		}
 	}
 
 	/**
@@ -101,15 +103,33 @@ public class AccountFactory
 	 * @param account
 	 */
 	public synchronized void releaseAccount(Account account){
-		int count = accountUsedInThreadCount.get(account.getLogin());
-		count--;
-		accountUsedInThreadCount.put(account.getLogin(), count);
-		log.debug("Used account size decremented: " + count);
+		if(accountUsedInThreadCount.containsKey(account.getLogin())){
+			int count = accountUsedInThreadCount.get(account.getLogin());
+			count--;
+			accountUsedInThreadCount.put(account.getLogin(), count);
+			log.debug("Used account size decremented: " + count);
+		}
 	}
-	
+
 	public void resetPostedCount(){
 		for(String login:newsPostedCount.keySet()){
 			newsPostedCount.put(login, 0);
+		}
+	}
+	
+	public int getAccountCount(){
+		return accounts.size();
+	}
+	
+	public void deleteAccount(Account account){
+		if(accountUsedInThreadCount.containsKey(account.getLogin())){
+			accountUsedInThreadCount.remove(account.getLogin());
+		}
+		if(accounts.containsKey(account.getLogin())){
+			accounts.remove(account.getLogin());
+		}
+		if(newsPostedCount.containsKey(account.getLogin())){
+			newsPostedCount.remove(account.getLogin());
 		}
 	}
 }

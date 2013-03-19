@@ -17,6 +17,7 @@ import java.net.Proxy;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -32,6 +33,7 @@ import org.jsoup.select.Elements;
 import com.fdt.scrapper.task.Constants;
 import com.fdt.scrapper.task.NewsTask;
 import com.fdt.scrapper.task.Snippet;
+import com.sun.org.apache.bcel.internal.generic.ACONST_NULL;
 
 /**
  *
@@ -71,6 +73,7 @@ public class PostbitNewsPoster {
 	private Proxy proxy = null;
 	private PostbitTaskFactory taskFactory = null;
 	private Account account = null;
+	private AccountFactory accountFactory = null;
 
 	private ArrayList<String> cookiesArray = new ArrayList<String>();
 
@@ -110,12 +113,13 @@ public class PostbitNewsPoster {
 
 	private static String userAgent = USER_AGENTS[0];
 
-	public PostbitNewsPoster(NewsTask task, Proxy proxy, PostbitTaskFactory taskFactory, Account account, ArrayList<String> linkList) {
+	public PostbitNewsPoster(NewsTask task, Proxy proxy, PostbitTaskFactory taskFactory, Account account, AccountFactory accountFactory, ArrayList<String> linkList) {
 		this.task = task;
 		this.proxy = proxy;
 		this.taskFactory = taskFactory;
 		this.linkList = linkList;
 		this.account = account;
+		this.accountFactory = accountFactory;
 
 		MIN_SNIPPET_COUNT = Integer.valueOf(Constants.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
 		MAX_SNIPPET_COUNT = Integer.valueOf(Constants.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
@@ -202,19 +206,27 @@ public class PostbitNewsPoster {
 
 			//read cookies
 			Map<String,List<String>> cookies = conn.getHeaderFields();
-			if(cookies.get(SET_COOKIES_LABEL) != null){
-				for(String cookieOne: cookies.get(SET_COOKIES_LABEL))
-				{
-					cookiesArray.add(cookieOne);
-				}
-			}else{
-				throw new Exception("Login failed for user " + task.getKeyWords());
-			}
-			if(is != null){
-				is.close();
-			}
-			conn.disconnect();
 
+
+			if(cookies.get("Location") != null && cookies.get("Location").toString().contains("http://manager.e-monsite.com/sessions/start")){
+				logExternal.error("ACCOUNT BANED: " + account.getLogin());
+				accountFactory.deleteAccount(account);
+				throw new Exception("Login failed for user " + task.getKeyWords());
+			}else{
+				if(cookies.get(SET_COOKIES_LABEL) != null){
+					for(String cookieOne: cookies.get(SET_COOKIES_LABEL))
+					{
+						cookiesArray.add(cookieOne);
+					}
+				}else{
+					throw new Exception("Login failed for user " + task.getKeyWords());
+				}
+
+				if(is != null){
+					is.close();
+				}
+				conn.disconnect();
+			}
 		} catch (ClientProtocolException e) {
 			logExternal.error("Error occured during posting news",e);
 		} catch (IOException e) {
@@ -255,7 +267,7 @@ public class PostbitNewsPoster {
 			task.getNewsContent().put("SNIPPETS_1", snippetsContent[0]);
 			task.getNewsContent().put("SNIPPETS_2", snippetsContent[1]);
 			task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
-
+			Calendar calendar = Calendar.getInstance();
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("active_fr","1"));
 			nameValuePairs.add(new BasicNameValuePair("title_fr",task.getKeyWords()));
@@ -267,8 +279,8 @@ public class PostbitNewsPoster {
 			nameValuePairs.add(new BasicNameValuePair("content_end_fr",""));
 			nameValuePairs.add(new BasicNameValuePair("published","1"));
 			nameValuePairs.add(new BasicNameValuePair("status","published"));
-			nameValuePairs.add(new BasicNameValuePair("publish_from_d","18"));
-			nameValuePairs.add(new BasicNameValuePair("publish_from_m","03"));
+			nameValuePairs.add(new BasicNameValuePair("publish_from_d",String.valueOf(calendar.get(Calendar.DAY_OF_MONTH))));
+			nameValuePairs.add(new BasicNameValuePair("publish_from_m",String.valueOf(calendar.get(Calendar.MONTH)+1)));
 			nameValuePairs.add(new BasicNameValuePair("seo_title_fr",""));
 			nameValuePairs.add(new BasicNameValuePair("seo_keywords_fr",""));
 			nameValuePairs.add(new BasicNameValuePair("seo_description_fr",""));
@@ -298,27 +310,29 @@ public class PostbitNewsPoster {
 			writer.close();
 			os.close();
 
-			InputStream is = conn.getInputStream();
+			int code = conn.getResponseCode();
 
-			postedUrl = "http://"+account.getBlogName()+".e-monsite.com/blog/"+task.getKeyWords().replaceAll(" ", "-")+".html";
-			logSaveLinks.error(postedUrl);
-			
+			Map<String,List<String>> cookies = conn.getHeaderFields();
+
+			if(cookies.get("Location") != null && cookies.get("Location").toString().contains("http://manager.e-monsite.com/cms/blog/browse/blogpost")){
+				postedUrl = "http://"+account.getBlogName()+".e-monsite.com/blog/"+task.getKeyWords().replaceAll(" ", "-")+".html";
+				logSaveLinks.error(postedUrl);
+			}else{
+				postedUrl = null;
+			}
+
 			/*Map<String,List<String>> cookies = conn.getHeaderFields();
-			
+
 			org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", "");*/
 			//TODO find how to get posted url
-			
+
 			/*Elements links = page.select("div[class=browserItemButtons] a[class=browserItemButtonView] href");
-			
+
 			if(links != null && links.size() > 0){
 				//save link
 				postedUrl = links.get(0).text();
 				logSaveLinks.error(postedUrl);
 			}*/
-
-			if(is != null){
-				is.close();
-			}
 			conn.disconnect();
 		} catch (ClientProtocolException e) {
 			logExternal.error("Error occured during posting news",e);
