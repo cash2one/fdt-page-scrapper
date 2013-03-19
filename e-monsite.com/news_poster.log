@@ -784,3 +784,778 @@ java.net.SocketException: Network is unreachable: connect
 2013-03-19 23:44:00,563-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/pleurisy-images.html
 2013-03-19 23:44:01,883- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: causes for runny nose
 2013-03-19 23:44:01,923- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: is a white tongue normal
+2013-03-19 23:49:11,446- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: discolored tongue yellow
+2013-03-19 23:49:11,456- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: flu shots dallas
+2013-03-19 23:49:11,486- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: migraine cephalgia
+2013-03-19 23:49:11,486- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: neck pain with sore throat
+2013-03-19 23:49:11,496- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: does labor feel like menstrual cramps
+2013-03-19 23:49:11,496- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: toe tip pain
+2013-03-19 23:49:11,496- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: causes for depression
+2013-03-19 23:49:11,656- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: morbid obesity treatment
+2013-03-19 23:49:11,706- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: dyspraxia definition
+2013-03-19 23:49:11,996-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/edema-during-pregnancy.html
+2013-03-19 23:49:12,906- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: vitamin b insomnia
+2013-03-19 23:49:12,996- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: hip bone pain
+2013-03-19 23:49:13,046- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: citalopram and insomnia
+2013-03-19 23:49:13,166- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: esophagus chest pain
+2013-03-19 23:49:13,206- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: bitter after taste
+2013-03-19 23:49:13,236- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: twitch under my eye
+2013-03-19 23:49:13,376- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: burn body fat workouts
+2013-03-19 23:49:13,716-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/abdominal-pain-and-testicle-pain.html
+2013-03-19 23:49:13,926- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: high blood pressure blurred vision
+2013-03-19 23:49:14,146-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/sleep-deprivation-seizures.html
+2013-03-19 23:49:14,656-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/tingling-numb-toes.html
+2013-03-19 23:49:14,656- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: apraxia and autism
+2013-03-19 23:49:14,666- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: face wash for dry sensitive skin
+2013-03-19 23:49:15,076- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: dry skin on face
+2013-03-19 23:49:15,136- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: earache toddler
+2013-03-19 23:49:15,176- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: lower back pain swollen lymph nodes
+2013-03-19 23:49:15,246-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/chronic-pain-syndrome.html
+2013-03-19 23:49:15,606- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: low back and stomach pain
+2013-03-19 23:49:15,736-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/stabbing-pain-in-throat.html
+2013-03-19 23:49:16,196-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/example-of-aphasia.html
+2013-03-19 23:49:16,256- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: throwing up feces
+2013-03-19 23:49:16,606- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: lack of energy symptoms
+2013-03-19 23:49:16,746-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/anxiety-difficulty-concentrating.html
+2013-03-19 23:49:16,776- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: sudden upper back pain
+2013-03-19 23:49:17,126- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: lower back left hip pain
+2013-03-19 23:49:17,126-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/causes-of-metallic-taste-on-tongue.html
+2013-03-19 23:49:17,166- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: dog food allergy
+2013-03-19 23:49:17,586-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/bad-muscle-cramps.html
+2013-03-19 23:49:17,636- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: blisters on eyelids
+2013-03-19 23:49:18,336- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: groin and abdominal pain
+2013-03-19 23:49:18,336- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: ear ringing dizziness
+2013-03-19 23:49:18,466- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: definition nausea
+2013-03-19 23:49:18,466-ERROR(PosterThread.java:59)-Error occured during process task: definition nausea
+java.io.IOException: Premature EOF
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:556)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:600)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:687)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3052)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3046)
+	at org.jsoup.helper.DataUtil.readToByteBuffer(DataUtil.java:113)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:54)
+	at org.jsoup.Jsoup.parse(Jsoup.java:118)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:550)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:641)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:150)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:49:18,466- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: can migraines cause memory loss
+2013-03-19 23:49:18,696-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/thigh-pain-in-early-pregnancy.html
+2013-03-19 23:49:18,696-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/remidies-for-heartburn.html
+2013-03-19 23:49:18,936-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/newborn-stuffy-nose.html
+2013-03-19 23:49:19,316- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: abdominal pain women
+2013-03-19 23:49:19,326-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/family-guy-throwing-up.html
+2013-03-19 23:49:19,836-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/men-with-blood-in-urine.html
+2013-03-19 23:49:19,926- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: anemia and exercise
+2013-03-19 23:49:19,996- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: amenorrhea meaning
+2013-03-19 23:49:20,226- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: memory loss age 40
+2013-03-19 23:49:20,326-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/meal-plans-for-weight-gain.html
+2013-03-19 23:49:20,376- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: bad low back pain
+2013-03-19 23:49:20,956-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/allergy-levels.html
+2013-03-19 23:49:21,436- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: painkillers for toothache
+2013-03-19 23:49:21,466- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: cat is throwing up
+2013-03-19 23:49:21,596- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: abdominal pain and diarrhea after eating
+2013-03-19 23:49:21,726- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: symptoms sleep deprivation
+2013-03-19 23:49:21,766- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: localized juvenile periodontitis
+2013-03-19 23:49:21,796- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: female menstruation
+2013-03-19 23:49:21,876- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: fluid retention pregnancy
+2013-03-19 23:49:22,276-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/tendonitis-ankle-pain.html
+2013-03-19 23:49:22,576-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/golden-retriever-limping.html
+2013-03-19 23:49:22,786-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/first-dose-syncope.html
+2013-03-19 23:49:22,896- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: dry eye at night
+2013-03-19 23:49:22,996- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: homemade face mask for dry skin
+2013-03-19 23:49:23,176- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: ovarian cysts and weight gain
+2013-03-19 23:49:23,446- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: neck pain near throat
+2013-03-19 23:49:23,946-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/scalp-itching-after-hair-color.html
+2013-03-19 23:49:23,946-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/myoclonic-seizures-video.html
+2013-03-19 23:49:23,956-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/dyspnea-at-rest.html
+2013-03-19 23:49:23,956- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: low back pain guidelines
+2013-03-19 23:49:24,456-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/quench-thirst.html
+2013-03-19 23:49:24,936-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/does-sam-e-cause-weight-gain.html
+2013-03-19 23:49:25,256- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: canker sores on the throat
+2013-03-19 23:49:25,596- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: sharp pain upper thigh
+2013-03-19 23:49:25,966- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: english bulldog limping
+2013-03-19 23:49:26,016- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: tide allergic reaction
+2013-03-19 23:49:26,046-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/kitten-fever.html
+2013-03-19 23:49:26,166- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: medial knee pain running
+2013-03-19 23:49:26,676-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/stomach-is-always-upset.html
+2013-03-19 23:49:26,756- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: trouble swallowing food
+2013-03-19 23:49:26,836-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/pain-behind-the-ear-lobe.html
+2013-03-19 23:49:27,306-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/hearing-loss-at-work.html
+2013-03-19 23:49:27,346-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/puppy-throwing-up-white-foam.html
+2013-03-19 23:49:27,596- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: secondary dysmenorrhea
+2013-03-19 23:49:27,706-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/back-hip-and-leg-pain.html
+2013-03-19 23:49:28,046- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: full moon menstruation
+2013-03-19 23:49:28,056-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/treatment-for-conjunctivitis.html
+2013-03-19 23:49:28,136- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: skin peeling off hands and fingers
+2013-03-19 23:49:28,476-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/aphasia-center.html
+2013-03-19 23:49:28,646- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: temporary vision loss in one eye
+2013-03-19 23:49:28,646-ERROR(PosterThread.java:59)-Error occured during process task: temporary vision loss in one eye
+java.io.IOException: Premature EOF
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:556)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:600)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:687)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3052)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3046)
+	at org.jsoup.helper.DataUtil.readToByteBuffer(DataUtil.java:113)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:54)
+	at org.jsoup.Jsoup.parse(Jsoup.java:118)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:550)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:641)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:150)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:49:28,836- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: ear pain brain tumor
+2013-03-19 23:49:28,936- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: remedy for vomiting
+2013-03-19 23:49:28,956-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/high-calorie-foods-for-weight-gain.html
+2013-03-19 23:49:29,496-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/back-pain-lower-left-side.html
+2013-03-19 23:49:29,526- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: natural cure for stuffy nose
+2013-03-19 23:49:29,566-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/outside-foot-pain.html
+2013-03-19 23:49:29,646- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: wiki insomnia
+2013-03-19 23:49:30,156-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/blood-and-mucus-in-dog-stool.html
+2013-03-19 23:49:30,226- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: how to cure hot flashes
+2013-03-19 23:49:30,576-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/weight-loss-injections.html
+2013-03-19 23:49:30,876- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: fever and teething
+2013-03-19 23:49:31,116- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: numbness in one toe
+2013-03-19 23:49:31,206- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: cures for cold sores in mouth
+2013-03-19 23:49:31,266-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/3-year-old-tooth-pain.html
+2013-03-19 23:49:31,636- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: menstrual cramps and pregnant
+2013-03-19 23:49:31,656-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/upper-thigh-groin-pain.html
+2013-03-19 23:49:31,666- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: upset stomach and diarrhea during pregnancy
+2013-03-19 23:49:31,806- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: yeast infection when pregnant
+2013-03-19 23:49:32,176-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/palpitations-icd-9.html
+2013-03-19 23:49:32,496- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: recipes for people with acid reflux
+2013-03-19 23:49:32,536- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: what can cause jaw pain
+2013-03-19 23:49:32,616- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: weight gain after surgery
+2013-03-19 23:49:32,986- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: burning white tongue
+2013-03-19 23:49:33,086-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/sharp-pain-upper-stomach.html
+2013-03-19 23:49:33,426-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/vomiting-reasons.html
+2013-03-19 23:49:33,566- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: palsy definition
+2013-03-19 23:49:33,606-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/laser-nail-fungus-treatment-cost.html
+2013-03-19 23:49:33,626- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: ear ache pain relief
+2013-03-19 23:49:35,796-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/knee-pain-children.html
+2013-03-19 23:49:36,586-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/left-ventricular-cardiomyopathy.html
+2013-03-19 23:49:36,596-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/fainting-and-alcohol.html
+2013-03-19 23:49:36,596-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/altered-mental-status-differential.html
+2013-03-19 23:49:36,616-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/chronic-pain-acceptance-questionnaire.html
+2013-03-19 23:49:36,626-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/sickness-and-tiredness.html
+2013-03-19 23:49:36,626-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/treatment-for-acid-reflux-disease.html
+2013-03-19 23:49:36,636-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/stuffy-nose-yellow-mucus.html
+2013-03-19 23:49:36,646-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/treatments-for-excessive-sweating.html
+2013-03-19 23:49:36,646-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/finger-joint-pain-swelling.html
+2013-03-19 23:49:37,496-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/lower-abdominal-pain-pregnancy.html
+2013-03-19 23:49:38,056- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: swelling in left testicle
+2013-03-19 23:49:38,106- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: causes of urine odor
+2013-03-19 23:49:38,136- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: headache nausea chills
+2013-03-19 23:49:38,146- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: neck pain sinus infection
+2013-03-19 23:49:38,186- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: tired loss of appetite
+2013-03-19 23:49:38,226- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: symptoms for a yeast infection
+2013-03-19 23:49:38,236- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: childhood obesity rate
+2013-03-19 23:49:38,246- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: nerve pain in hip
+2013-03-19 23:49:38,646-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/how-to-get-rid-of-fungal-nail-infection.html
+2013-03-19 23:49:39,906-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/left-knee-joint-pain.html
+2013-03-19 23:49:39,926- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: arm pain numbness
+2013-03-19 23:49:40,016- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: sore toes in cold weather
+2013-03-19 23:49:40,026- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: night diarrhea
+2013-03-19 23:49:40,036- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: biofeedback stress
+2013-03-19 23:49:40,416-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/thirst-2008.html
+2013-03-19 23:49:40,436-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/easy-skin-bruising.html
+2013-03-19 23:49:40,676- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: diarrhea tiredness
+2013-03-19 23:49:40,806-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/eating-plan-for-weight-loss.html
+2013-03-19 23:49:41,086- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: what s good for dry skin
+2013-03-19 23:49:41,646-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/myofascial-pain.html
+2013-03-19 23:49:42,026- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: mariah carey weight gain
+2013-03-19 23:49:42,056- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: what causes stiff neck pain
+2013-03-19 23:49:42,076- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: insomnia effects
+2013-03-19 23:49:42,326- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: joint pain thumb
+2013-03-19 23:49:42,576- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: causes back pain
+2013-03-19 23:49:42,726- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: lack of sleep seizures
+2013-03-19 23:49:44,446-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/treatment-for-swollen-lymph-nodes.html
+2013-03-19 23:49:44,456-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/alcohol-and-short-term-memory-loss.html
+2013-03-19 23:49:45,306-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/obesity-and-cancer.html
+2013-03-19 23:49:45,326-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/strep-throat-or-sore-throat.html
+2013-03-19 23:49:45,326-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/barbie-fashion-fever.html
+2013-03-19 23:49:45,336-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/products-for-alopecia.html
+2013-03-19 23:49:45,346-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/progressive-non-fluent-aphasia.html
+2013-03-19 23:49:45,346-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/dysarthria-assessment.html
+2013-03-19 23:49:45,366-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/what-strep-throat-looks-like.html
+2013-03-19 23:49:45,896-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/risk-factors-for-hearing-loss.html
+2013-03-19 23:49:46,286-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/cure-for-bad-breath-in-dogs.html
+2013-03-19 23:49:46,846-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/ear-pain-dizziness.html
+2013-03-19 23:49:46,976- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: causes of numb tongue
+2013-03-19 23:49:47,136- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: esophagus problems swallowing
+2013-03-19 23:49:47,166-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/depression-loss-of-appetite.html
+2013-03-19 23:49:47,166- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: rashes and itching
+2013-03-19 23:49:47,166- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: nosebleed section lyrics
+2013-03-19 23:49:47,366- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: chest pain left side
+2013-03-19 23:49:47,836-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/cure-cat-diarrhea.html
+2013-03-19 23:49:48,086-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/children-stuffy-nose.html
+2013-03-19 23:49:48,686- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: irritating cough
+2013-03-19 23:49:49,156-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/physical-therapy-exercises-for-low-back-pain.html
+2013-03-19 23:49:49,176-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/leg-pain-after-lumbar-fusion.html
+2013-03-19 23:49:49,936- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: l-lysine for canker sores
+2013-03-19 23:49:50,196- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: breast milk allergy
+2013-03-19 23:49:50,336-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/blood-in-urine-woman.html
+2013-03-19 23:49:50,836-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/menstruation-bleeding.html
+2013-03-19 23:49:51,276- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: yeast infection on face pictures
+2013-03-19 23:49:51,456- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: home flu remedies
+2013-03-19 23:49:51,526- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: gift infertility
+2013-03-19 23:49:51,726- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: chest pain tooth pain
+2013-03-19 23:49:51,896- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: left testicle in pain
+2013-03-19 23:49:52,166-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/cold-feet-dvd-box-set.html
+2013-03-19 23:49:52,476-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/separation-anxiety-dogs.html
+2013-03-19 23:49:52,826-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/foot-pain-in-the-arch.html
+2013-03-19 23:49:52,876- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: jaw and ear pain causes
+2013-03-19 23:49:53,286-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/ammonia-smell-urine.html
+2013-03-19 23:49:53,306-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/lack-of-appetite-symptoms.html
+2013-03-19 23:49:53,486- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: new tinnitus treatment
+2013-03-19 23:49:53,606- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: amitriptyline for insomnia
+2013-03-19 23:49:53,716- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: carpopedal spasm hyperventilation
+2013-03-19 23:49:55,136-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/heart-fluid-retention.html
+2013-03-19 23:49:55,136-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/recovery-from-aphasia.html
+2013-03-19 23:49:55,136-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/douching-after-menstruation.html
+2013-03-19 23:49:55,136-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/honey-for-heartburn.html
+2013-03-19 23:49:55,476-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/anorexia-hospitals.html
+2013-03-19 23:49:55,486-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/vitamin-e-hot-flashes.html
+2013-03-19 23:49:55,496-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/natural-remedies-insomnia.html
+2013-03-19 23:49:56,486-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/bloating-stomach-causes.html
+2013-03-19 23:49:56,856- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: head trauma memory loss
+2013-03-19 23:49:56,986- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: natural snoring solutions
+2013-03-19 23:49:56,986- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: abscessed tooth pain relief
+2013-03-19 23:49:57,076- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: anxiety trembling
+2013-03-19 23:49:57,076- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: what happens if you have blood in your urine
+2013-03-19 23:49:57,216-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/excessive-burping-nausea.html
+2013-03-19 23:49:57,426-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/best-remedy-for-menstrual-cramps.html
+2013-03-19 23:50:00,726-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/pain-in-my-left-arm.html
+2013-03-19 23:50:00,746-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/heavy-bleeding-menstruation.html
+2013-03-19 23:50:00,766-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/dogs-diarrhea.html
+2013-03-19 23:50:00,999-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/health-problems-due-to-lack-of-sleep.html
+2013-03-19 23:50:00,999-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/chronic-stress-syndrome.html
+2013-03-19 23:50:01,015-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/pediatric-hip-pain.html
+2013-03-19 23:50:01,171-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/dental-implants-pain-after.html
+2013-03-19 23:50:01,171-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/aspirin-stomach-upset.html
+2013-03-19 23:50:01,935- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: dysphagia nos
+2013-03-19 23:50:01,935-ERROR(PosterThread.java:59)-Error occured during process task: dysphagia nos
+java.io.IOException: Premature EOF
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:556)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:600)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:687)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3052)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3046)
+	at org.jsoup.helper.DataUtil.readToByteBuffer(DataUtil.java:113)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:54)
+	at org.jsoup.Jsoup.parse(Jsoup.java:118)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:550)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:641)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:150)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:02,481- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: depression postpartum
+2013-03-19 23:50:02,590- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: what causes pink eye in humans
+2013-03-19 23:50:02,606- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: when is pink eye contagious
+2013-03-19 23:50:02,653- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: causes of arthralgia
+2013-03-19 23:50:03,199-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/signs-of-periodontitis.html
+2013-03-19 23:50:03,667-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/ayurvedic-medicine-for-weight-gain.html
+2013-03-19 23:50:04,010- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: digestive enzymes acid reflux
+2013-03-19 23:50:04,166- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: lack of appetite diarrhea
+2013-03-19 23:50:04,166- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: xanax weight gain
+2013-03-19 23:50:04,244- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: burning sensation in chest and throat
+2013-03-19 23:50:04,369- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: anorexia quizzes
+2013-03-19 23:50:04,665-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/want-to-gain-weight.html
+2013-03-19 23:50:05,102-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/what-to-use-for-puffy-eyes.html
+2013-03-19 23:50:05,835- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: differential diagnosis low back pain
+2013-03-19 23:50:05,882-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/allergic-reaction-to-peanuts.html
+2013-03-19 23:50:05,898- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: what causes sores in mouth
+2013-03-19 23:50:05,944- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: snoring in pregnancy
+2013-03-19 23:50:06,428-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/cellulitis-leg-swelling.html
+2013-03-19 23:50:06,646- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: picture of sore throat
+2013-03-19 23:50:06,709- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: symptoms menstruation
+2013-03-19 23:50:07,134- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: anti flatulence diet
+2013-03-19 23:50:07,234-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/sore-throat-symptom-checker.html
+2013-03-19 23:50:07,774- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: sinus causing tooth pain
+2013-03-19 23:50:07,884-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/fainting-symptom.html
+2013-03-19 23:50:07,894-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/severe-abdominal-pain-with-diarrhea.html
+2013-03-19 23:50:08,194-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/treating-ear-pain.html
+2013-03-19 23:50:09,094- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: tennis elbow uk
+2013-03-19 23:50:09,094-ERROR(PosterThread.java:59)-Error occured during process task: tennis elbow uk
+java.io.IOException: Server returned HTTP response code: 503 for URL: http://www.bing.com/search?q=tennis+elbow+uk
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1625)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:549)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:641)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:150)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:09,374- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: constipation in baby
+2013-03-19 23:50:09,374- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: anemia hypothyroidism
+2013-03-19 23:50:09,404-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/tinnitus-ibuprofen.html
+2013-03-19 23:50:09,414-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/leg-infection-swelling.html
+2013-03-19 23:50:09,434-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/neck-pain-dizziness.html
+2013-03-19 23:50:09,874-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/best-pain-reliever-for-tooth-pain.html
+2013-03-19 23:50:10,254-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/natural-ways-to-help-menstrual-cramps.html
+2013-03-19 23:50:10,630- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: daily bloody nose
+2013-03-19 23:50:10,630-ERROR(PosterThread.java:59)-Error occured during process task: daily bloody nose
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:549)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:641)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:150)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:10,723-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/constant-calf-pain.html
+2013-03-19 23:50:10,957- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: food for stomach upset
+2013-03-19 23:50:11,020- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: obesity check
+2013-03-19 23:50:11,425-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/tiredness-pregnancy.html
+2013-03-19 23:50:11,503- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: strain b flu
+2013-03-19 23:50:11,597-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/dry-skin-under-nails.html
+2013-03-19 23:50:11,628- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: sharp pain toe
+2013-03-19 23:50:12,252-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/breathlessness-while-talking.html
+2013-03-19 23:50:12,314- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: anesthesia amnesia
+2013-03-19 23:50:12,704-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/hyperventilation-exercise.html
+2013-03-19 23:50:12,767- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: shampoo for flaky scalp
+2013-03-19 23:50:12,954-ERROR(PostbitNewsPoster.java:319)-http://pendionere.e-monsite.com/blog/foot-pain-balls-of-feet.html
+2013-03-19 23:50:13,297-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/right-upper-back-pain.html
+2013-03-19 23:50:13,438-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/shooting-pain-in-throat.html
+2013-03-19 23:50:13,594- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: nosebleed qr
+2013-03-19 23:50:13,640- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: sore stiff fingers
+2013-03-19 23:50:13,828- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: upset stomach in dog
+2013-03-19 23:50:13,999-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/infertility-iui.html
+2013-03-19 23:50:14,202-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/nosebleed-meaning.html
+2013-03-19 23:50:15,232- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: causes of nausea and loss of appetite
+2013-03-19 23:50:15,419-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/how-to-relieve-hot-flashes.html
+2013-03-19 23:50:15,450- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: lower right stomach pain
+2013-03-19 23:50:15,481- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: burning diarrhea
+2013-03-19 23:50:15,575- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: allergic reaction on skin pictures
+2013-03-19 23:50:15,934- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: dog allergic reaction
+2013-03-19 23:50:15,949- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: knee pain during running
+2013-03-19 23:50:16,043- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: relief of constipation
+2013-03-19 23:50:16,136- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: heel pain solutions
+2013-03-19 23:50:16,854-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/treating-anxiety-naturally.html
+2013-03-19 23:50:17,197- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: estrogen joint pain
+2013-03-19 23:50:17,228- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: chronic eye pain
+2013-03-19 23:50:17,322- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: aching thigh pain
+2013-03-19 23:50:17,462- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: electrolytes muscle cramps
+2013-03-19 23:50:17,494- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: cerebral palsy signs
+2013-03-19 23:50:17,634- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: bad breath cure
+2013-03-19 23:50:18,102-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/broken-blood-vessels-after-vomiting.html
+2013-03-19 23:50:18,492- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: blurred vision and nausea
+2013-03-19 23:50:18,586- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: burning in throat and esophagus
+2013-03-19 23:50:18,976-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/what-causes-blood-in-urine-for-males.html
+2013-03-19 23:50:19,147- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: insomnia after surgery
+2013-03-19 23:50:19,179- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: fever and menstruation
+2013-03-19 23:50:19,631- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: symptoms of fainting
+2013-03-19 23:50:19,693-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/post-dental-pain.html
+2013-03-19 23:50:20,161-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/nursing-diagnosis-dysphagia.html
+2013-03-19 23:50:20,333- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: dry skin around the eyes
+2013-03-19 23:50:20,489-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/tified-fever-symptoms.html
+2013-03-19 23:50:20,551- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: 7th nerve palsy
+2013-03-19 23:50:20,614- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: nappy rash blisters
+2013-03-19 23:50:20,723- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: chest neck pain
+2013-03-19 23:50:21,331-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/coffee-and-acid-reflux.html
+2013-03-19 23:50:22,439- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: chronic sore throat and cough
+2013-03-19 23:50:22,439- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: severe hair loss in women
+2013-03-19 23:50:22,533- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: nocturnal epilepsy
+2013-03-19 23:50:22,564- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: chronic neck pain symptoms
+2013-03-19 23:50:22,657- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: diabetes ankle swelling
+2013-03-19 23:50:23,063-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/hemingway-suicide.html
+2013-03-19 23:50:23,328-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/outside-calf-muscle-pain.html
+2013-03-19 23:50:23,328-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/root-canal-toothache.html
+2013-03-19 23:50:24,264-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/what-to-do-for-nasal-congestion.html
+2013-03-19 23:50:24,389- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: swelling behind testicle
+2013-03-19 23:50:24,420- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: quick weight loss
+2013-03-19 23:50:24,748-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/blood-in-urine-running.html
+2013-03-19 23:50:24,982-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/toddler-ear-ache.html
+2013-03-19 23:50:24,982-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/curing-vertigo-naturally.html
+2013-03-19 23:50:25,450-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/leg-swelling-after-hip-surgery.html
+2013-03-19 23:50:25,512- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: home remedies tooth ache
+2013-03-19 23:50:25,590- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: treatment for urinary retention
+2013-03-19 23:50:25,699- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: nausea patch
+2013-03-19 23:50:26,183-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/mouth-odor-causes.html
+2013-03-19 23:50:26,511- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: controlling excessive sweating
+2013-03-19 23:50:26,682-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/sudden-ankle-pain.html
+2013-03-19 23:50:26,698-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/sudden-blurred-vision-in-both-eyes.html
+2013-03-19 23:50:26,823-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/knee-pain-lyme-disease.html
+2013-03-19 23:50:26,979- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: heel pain from running
+2013-03-19 23:50:27,400-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/menopause-hot-flashes-cause.html
+2013-03-19 23:50:27,649-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/vesicular-pharyngitis.html
+2013-03-19 23:50:27,961- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: multiple sclerosis numbness
+2013-03-19 23:50:28,383- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: cause of leg muscle cramps
+2013-03-19 23:50:28,461-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/weight-loss-simulator.html
+2013-03-19 23:50:28,741- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: how to increase fat in body
+2013-03-19 23:50:28,851-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/causes-of-loss-of-memory.html
+2013-03-19 23:50:29,022- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: best diet for weight gain
+2013-03-19 23:50:29,022-ERROR(PosterThread.java:59)-Error occured during process task: best diet for weight gain
+java.io.IOException: Premature EOF
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:556)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:600)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:687)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3052)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3046)
+	at org.jsoup.helper.DataUtil.readToByteBuffer(DataUtil.java:113)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:54)
+	at org.jsoup.Jsoup.parse(Jsoup.java:118)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:550)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:641)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:150)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:29,147- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: sharp pain in back and chest
+2013-03-19 23:50:29,272-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/youtube-amnesia.html
+2013-03-19 23:50:29,475- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: swelling joint pain
+2013-03-19 23:50:31,659-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/symptoms-alopecia.html
+2013-03-19 23:50:32,797-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/corporate-flu-shots.html
+2013-03-19 23:50:32,797-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/zithromax-upset-stomach.html
+2013-03-19 23:50:32,797-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/tingling-finger.html
+2013-03-19 23:50:32,813-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/extreme-low-back-pain.html
+2013-03-19 23:50:32,813-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/jaw-and-throat-pain.html
+2013-03-19 23:50:32,844-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/sore-throat-for-a-month.html
+2013-03-19 23:50:32,938-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/painful-belching.html
+2013-03-19 23:50:32,969-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/ear-pain-in-flight.html
+2013-03-19 23:50:34,779-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/back-ache-yoga.html
+2013-03-19 23:50:34,997- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: chronic heartburn
+2013-03-19 23:50:35,013- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: eye muscle twitch
+2013-03-19 23:50:35,122- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: wisdom teeth ear pain
+2013-03-19 23:50:35,122- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: sinuses and dizziness
+2013-03-19 23:50:35,153- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: viral mouth sores
+2013-03-19 23:50:35,169- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: persistent eye twitch
+2013-03-19 23:50:38,491-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/books-on-infertility.html
+2013-03-19 23:50:39,318- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: double vision symptom checker
+2013-03-19 23:50:39,318-ERROR(PosterThread.java:59)-Error occured during process task: double vision symptom checker
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:549)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:641)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:150)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:39,568- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: tingling in left hand and fingers
+2013-03-19 23:50:39,568-ERROR(PosterThread.java:59)-Error occured during process task: tingling in left hand and fingers
+java.net.SocketException: Malformed reply from SOCKS server
+	at java.net.SocksSocketImpl.readSocksReply(SocksSocketImpl.java:128)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:459)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:549)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:641)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:150)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:39,708-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/gerd-belching.html
+2013-03-19 23:50:39,786-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/girl-throwing-up.html
+2013-03-19 23:50:39,802-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/lower-abdominal-cramps-men.html
+2013-03-19 23:50:39,817-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/herpes-blisters-pictures.html
+2013-03-19 23:50:39,864-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/cat-with-fever.html
+2013-03-19 23:50:39,864-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/pain-in-jaw-by-ear.html
+2013-03-19 23:50:39,880-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/post-menopausal-hot-flashes.html
+2013-03-19 23:50:39,942-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/mouthguard-for-snoring.html
+2013-03-19 23:50:41,050-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/protein-flatulence.html
+2013-03-19 23:50:41,565- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: implantation nausea
+2013-03-19 23:50:41,565- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: menopause heart palpitations
+2013-03-19 23:50:41,627- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: how to relieve leg cramps
+2013-03-19 23:50:41,643- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: cerabral palsy
+2013-03-19 23:50:41,658-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/feline-alopecia.html
+2013-03-19 23:50:42,126-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/frequent-heartburn-symptoms.html
+2013-03-19 23:50:42,360- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: astigmatism and double vision
+2013-03-19 23:50:42,625-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/chest-throat-pain.html
+2013-03-19 23:50:43,187- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: deltoid ligament ankle sprain
+2013-03-19 23:50:43,187-ERROR(PosterThread.java:59)-Error occured during process task: deltoid ligament ankle sprain
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:549)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:641)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:150)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:43,561-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/joint-pain-in-finger.html
+2013-03-19 23:50:44,092-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/causes-of-loss-of-vision.html
+2013-03-19 23:50:44,263- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: chest arm pain
+2013-03-19 23:50:44,295- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: the best weight loss program
+2013-03-19 23:50:44,388- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: sharp pain upper thigh
+2013-03-19 23:50:44,560- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: how to treat fungal nail infection
+2013-03-19 23:50:45,059-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/vertigo-disease-symptoms.html
+2013-03-19 23:50:45,527-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/palmar-hyperhidrosis-treatment.html
+2013-03-19 23:50:45,761-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/best-makeup-for-dry-flaky-skin.html
+2013-03-19 23:50:45,917- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: immediate relief from acid reflux
+2013-03-19 23:50:45,948- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: laptop infertility
+2013-03-19 23:50:46,011- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: lump in mans breast
+2013-03-19 23:50:46,213- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: noise related hearing loss
+2013-03-19 23:50:46,432- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: hip pain causes
+2013-03-19 23:50:46,479-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/appendix-location-pain.html
+2013-03-19 23:50:46,884-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/pain-after-tooth-removal.html
+2013-03-19 23:50:47,321-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/upset-stomach-diarrhea-headache.html
+2013-03-19 23:50:47,461- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: breast lumps types
+2013-03-19 23:50:47,898-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/skin-rash-pictures.html
+2013-03-19 23:50:47,945- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: what causes pink eye in adults
+2013-03-19 23:50:48,070-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/insomnia-books.html
+2013-03-19 23:50:48,351- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: swollen ankle no pain
+2013-03-19 23:50:48,460-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/medial-knee-pain.html
+2013-03-19 23:50:48,912-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/ocd-and-anorexia.html
+2013-03-19 23:50:49,037- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: menstrual cramps in third trimester
+2013-03-19 23:50:49,458-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/eye-lid-swelling.html
+2013-03-19 23:50:49,630-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/memory-loss-test.html
+2013-03-19 23:50:49,723- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: how to cut an ingrown toenail
+2013-03-19 23:50:49,770- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: diverticulitis symptoms back pain
+2013-03-19 23:50:50,285-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/baby-dry-skin-rash.html
+2013-03-19 23:50:50,628-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/disability-for-hearing-loss.html
+2013-03-19 23:50:50,706- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: foot pain in pregnancy
+2013-03-19 23:50:50,847-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/pain-in-arm-joint.html
+2013-03-19 23:50:51,081- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: infertility depression
+2013-03-19 23:50:51,127-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/causes-of-microscopic-blood-in-urine.html
+2013-03-19 23:50:51,502-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/painless-jaundice.html
+2013-03-19 23:50:51,564-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/tooth-pain-after-crown-prep.html
+2013-03-19 23:50:51,736-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/migrane-headache.html
+2013-03-19 23:50:51,970-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: ultathecomp
+2013-03-19 23:50:51,970- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: body fat menstruation
+2013-03-19 23:50:51,970-ERROR(PosterThread.java:59)-Error occured during process task: body fat menstruation
+java.lang.Exception: Login failed for user body fat menstruation
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:52,110-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: ultathecomp
+2013-03-19 23:50:52,110- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: yeast infection cures at home
+2013-03-19 23:50:52,110-ERROR(PosterThread.java:59)-Error occured during process task: yeast infection cures at home
+java.lang.Exception: Login failed for user yeast infection cures at home
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:52,219-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: ultathecomp
+2013-03-19 23:50:52,219- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: muscle cramps all over my body
+2013-03-19 23:50:52,219-ERROR(PosterThread.java:59)-Error occured during process task: muscle cramps all over my body
+java.lang.Exception: Login failed for user muscle cramps all over my body
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:52,703-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: ultathecomp
+2013-03-19 23:50:52,703- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: amnesia super secret
+2013-03-19 23:50:52,703-ERROR(PosterThread.java:59)-Error occured during process task: amnesia super secret
+java.lang.Exception: Login failed for user amnesia super secret
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:52,921-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: ultathecomp
+2013-03-19 23:50:52,921- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: is loss of appetite normal in early pregnancy
+2013-03-19 23:50:52,921-ERROR(PosterThread.java:59)-Error occured during process task: is loss of appetite normal in early pregnancy
+java.lang.Exception: Login failed for user is loss of appetite normal in early pregnancy
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:52,921-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/epistaxis-definition.html
+2013-03-19 23:50:53,031-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: ultathecomp
+2013-03-19 23:50:53,031- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: chronic back pain
+2013-03-19 23:50:53,031-ERROR(PosterThread.java:59)-Error occured during process task: chronic back pain
+java.lang.Exception: Login failed for user chronic back pain
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:53,483-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/what-does-a-white-tongue-mean.html
+2013-03-19 23:50:53,577-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: ultathecomp
+2013-03-19 23:50:53,577- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: pain behind the ear
+2013-03-19 23:50:53,577-ERROR(PosterThread.java:59)-Error occured during process task: pain behind the ear
+java.lang.Exception: Login failed for user pain behind the ear
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:53,701-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: risnewsbildo
+2013-03-19 23:50:53,701- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: inner thigh and knee pain
+2013-03-19 23:50:53,701-ERROR(PosterThread.java:59)-Error occured during process task: inner thigh and knee pain
+java.lang.Exception: Login failed for user inner thigh and knee pain
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:53,733-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: risnewsbildo
+2013-03-19 23:50:53,733- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: non regenerative anemia
+2013-03-19 23:50:53,733-ERROR(PosterThread.java:59)-Error occured during process task: non regenerative anemia
+java.lang.Exception: Login failed for user non regenerative anemia
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:53,889-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: risnewsbildo
+2013-03-19 23:50:53,889- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: lower lumbar back pain treatment
+2013-03-19 23:50:53,889-ERROR(PosterThread.java:59)-Error occured during process task: lower lumbar back pain treatment
+java.lang.Exception: Login failed for user lower lumbar back pain treatment
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:54,247-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: risnewsbildo
+2013-03-19 23:50:54,247- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: pictures of conjunctivitis
+2013-03-19 23:50:54,247-ERROR(PosterThread.java:59)-Error occured during process task: pictures of conjunctivitis
+java.lang.Exception: Login failed for user pictures of conjunctivitis
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:54,762-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: risnewsbildo
+2013-03-19 23:50:54,762- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: persistent chest pain
+2013-03-19 23:50:54,762-ERROR(PosterThread.java:59)-Error occured during process task: persistent chest pain
+java.lang.Exception: Login failed for user persistent chest pain
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:54,856-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: risnewsbildo
+2013-03-19 23:50:54,856- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: cure toothache pain
+2013-03-19 23:50:54,856-ERROR(PosterThread.java:59)-Error occured during process task: cure toothache pain
+java.lang.Exception: Login failed for user cure toothache pain
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:54,918-ERROR(PostbitNewsPoster.java:212)-ACCOUNT BANED: risnewsbildo
+2013-03-19 23:50:54,918- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: stop a cough
+2013-03-19 23:50:54,918-ERROR(PosterThread.java:59)-Error occured during process task: stop a cough
+java.lang.Exception: Login failed for user stop a cough
+	at com.fdt.scrapper.PostbitNewsPoster.login(PostbitNewsPoster.java:214)
+	at com.fdt.scrapper.PostbitNewsPoster.postNews(PostbitNewsPoster.java:164)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:157)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:50:55,308- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: swelling left leg
+2013-03-19 23:50:55,355- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: what does blood in urine mean when pregnant
+2013-03-19 23:50:55,355- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: causes of paranoia
+2013-03-19 23:50:55,776- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: vision loss stroke
+2013-03-19 23:50:56,463-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/tongue-numbness-causes.html
+2013-03-19 23:50:56,494-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/vaso-vagel-syncope.html
+2013-03-19 23:50:56,650-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/types-of-periodontitis.html
+2013-03-19 23:50:56,681-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/what-causes-dry-skin-on-face.html
+2013-03-19 23:50:56,977-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/frequent-urination-anxiety.html
+2013-03-19 23:50:57,648-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/stabbing-pain-on-top-of-head.html
+2013-03-19 23:50:58,007-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/bloody-sinus-mucus.html
+2013-03-19 23:50:58,038-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/death-lack-of-sleep.html
+2013-03-19 23:50:58,101-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/pain-numbness-in-right-arm.html
+2013-03-19 23:50:58,350- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: ankle pain plantar fasciitis
+2013-03-19 23:50:58,366- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: snoring chinstrap
+2013-03-19 23:50:58,522- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: vasovagal syncope causes
+2013-03-19 23:50:59,193-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/pathophysiology-of-dysphagia.html
+2013-03-19 23:50:59,349- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: blindness in dogs
+2013-03-19 23:50:59,427- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: mild memory loss
+2013-03-19 23:50:59,427- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: how to stop tooth pain
+2013-03-19 23:50:59,973-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/rash-on-skin.html
+2013-03-19 23:51:00,675-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/cure-sleep-deprivation.html
+2013-03-19 23:51:00,675-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/pale-skin-blonde-hair-blue-eyes.html
+2013-03-19 23:51:00,799- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: infertility blood tests
+2013-03-19 23:51:00,815- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: sudden sharp pain in thigh
+2013-03-19 23:51:00,893- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: how to treat bad dog breath
+2013-03-19 23:51:01,033- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: knee pain when bending and kneeling
+2013-03-19 23:51:01,501-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/outgrow-ingrown-toenail.html
+2013-03-19 23:51:01,517-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/does-bipolar-cause-memory-loss.html
+2013-03-19 23:51:01,876-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/trembling-face.html
+2013-03-19 23:51:01,923- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: back of the ankle pain
+2013-03-19 23:51:02,391-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/dog-leg-swelling.html
+2013-03-19 23:51:02,437- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: human chorionic gonadotropin weight loss
+2013-03-19 23:51:02,874-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/pain-in-outer-ear-cartilage.html
+2013-03-19 23:51:03,124- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: hip pain and fibromyalgia
+2013-03-19 23:51:03,124-ERROR(PosterThread.java:59)-Error occured during process task: hip pain and fibromyalgia
+java.net.SocketException: Network is unreachable: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:435)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:974)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:549)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:641)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:150)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:51:03,264- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: fluid retention in legs causes
+2013-03-19 23:51:03,327-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/pain-in-upper-arm-and-shoulder.html
+2013-03-19 23:51:03,389- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: memory loss after car accident
+2013-03-19 23:51:03,514- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: upper right chest pain
+2013-03-19 23:51:03,997-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/dry-skin-dog.html
+2013-03-19 23:51:04,107- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: symptoms of allergic rhinitis
+2013-03-19 23:51:04,122- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: neck pain nausea dizziness
+2013-03-19 23:51:04,559-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/arm-pain-and-pregnancy.html
+2013-03-19 23:51:05,043-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/bone-pain-in-chest.html
+2013-03-19 23:51:05,183- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: treatment for angioedema
+2013-03-19 23:51:05,214- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: vasovagal syncope nhs
+2013-03-19 23:51:05,323-ERROR(PostbitNewsPoster.java:319)-http://bibhoosuasearch.e-monsite.com/blog/heal-ankle-sprain.html
+2013-03-19 23:51:05,729-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/pain-in-foot-joints.html
+2013-03-19 23:51:05,760- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: blue discharge from breast
+2013-03-19 23:51:05,979- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: lasix for fluid retention
+2013-03-19 23:51:06,041- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: causes for night sweats in men
+2013-03-19 23:51:06,181-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/pain-outer-ear.html
+2013-03-19 23:51:06,525-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/tinnitus-treatment-australia.html
+2013-03-19 23:51:06,977- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: stress anxiety relief
+2013-03-19 23:51:07,086- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: pleurisy rheumatoid arthritis
+2013-03-19 23:51:07,086-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/anemia-ppt.html
+2013-03-19 23:51:07,086- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: joint pain and thyroid
+2013-03-19 23:51:07,258- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: pain in right side of foot
+2013-03-19 23:51:07,445- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: diagnosis of abdominal pain
+2013-03-19 23:51:07,445-ERROR(PosterThread.java:59)-Error occured during process task: diagnosis of abdominal pain
+java.io.IOException: Premature EOF
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:556)
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:600)
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:687)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3052)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3046)
+	at org.jsoup.helper.DataUtil.readToByteBuffer(DataUtil.java:113)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:54)
+	at org.jsoup.Jsoup.parse(Jsoup.java:118)
+	at com.fdt.scrapper.PostbitNewsPoster.getUrlContentBing(PostbitNewsPoster.java:550)
+	at com.fdt.scrapper.PostbitNewsPoster.parseHtmlBing(PostbitNewsPoster.java:641)
+	at com.fdt.scrapper.PostbitNewsPoster.executePostNews(PostbitNewsPoster.java:150)
+	at com.fdt.scrapper.PosterThread.run(PosterThread.java:52)
+2013-03-19 23:51:07,882-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/keeping-feet-warm-in-cold-weather.html
+2013-03-19 23:51:08,147-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/pregnancy-and-acid-reflux.html
+2013-03-19 23:51:08,584-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/mold-allergy-symptoms.html
+2013-03-19 23:51:08,693- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: what is the best treatment for dark circles under eyes
+2013-03-19 23:51:08,787- INFO(PostbitTaskFactory.java:131)-Task returned to queue for reprocessing: constant heel pain
+2013-03-19 23:51:08,802-ERROR(PostbitNewsPoster.java:319)-http://ezumorter.e-monsite.com/blog/flatulence-natural-remedy.html
