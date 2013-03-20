@@ -168,8 +168,8 @@ public class PostbitNewsPoster {
 	key = key.replaceAll(" ", "");
 	if(key.length() > MAX_KEY_LENGHT){
 	    key = key.substring(0,MAX_KEY_LENGHT);
-	    key = key + (System.currentTimeMillis() % 1000);
 	}
+	key = key + rnd.nextInt(1000);
 
 	return key;
     }
@@ -683,8 +683,8 @@ public class PostbitNewsPoster {
 	    URL url = new URL(strUrl);
 
 	    //using proxy
-	    //conn = (HttpURLConnection)url.openConnection(proxy);
-	    conn = (HttpURLConnection)url.openConnection();
+	    conn = (HttpURLConnection)url.openConnection(proxy);
+	    //conn = (HttpURLConnection)url.openConnection();
 	    conn.addRequestProperty("User-Agent", userAgent); 
 	    //don't using proxy
 	    //conn = (HttpURLConnection)url.openConnection();
