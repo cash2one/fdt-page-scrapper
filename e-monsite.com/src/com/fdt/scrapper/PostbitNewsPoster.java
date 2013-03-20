@@ -209,10 +209,14 @@ public class PostbitNewsPoster {
 
 
 			if(cookies.get("Location") != null && cookies.get("Location").toString().contains("http://manager.e-monsite.com/sessions/start")){
-				logExternal.error("ACCOUNT BANED: " + account.getLogin());
-				accountFactory.deleteAccount(account);
+				account.incBan();
+				if(account.isTotallyBaned()){
+					logExternal.error("ACCOUNT BANED: " + account.getLogin());
+					accountFactory.deleteAccount(account);
+				}
 				throw new Exception("Login failed for user " + task.getKeyWords());
 			}else{
+				account.resetBan();
 				if(cookies.get(SET_COOKIES_LABEL) != null){
 					for(String cookieOne: cookies.get(SET_COOKIES_LABEL))
 					{

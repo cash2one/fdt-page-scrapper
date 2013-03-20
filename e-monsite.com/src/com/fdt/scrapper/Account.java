@@ -4,6 +4,8 @@ public class Account {
     private String login = "";
     private String pass = "";
     private String blogName = "";
+    private int banCount = 0;
+    private static final int MAX_BAN_COUNT = 10;
     
     public Account(String login, String pass, String blogName) {
 	super();
@@ -40,5 +42,17 @@ public class Account {
     public void setBlogName(String blogName)
     {
         this.blogName = blogName;
+    }
+    
+    public void incBan(){
+    	banCount++;
+    }
+    
+    public void resetBan(){
+    	banCount = 0;
+    }
+    
+    public boolean isTotallyBaned(){
+    	return banCount > MAX_BAN_COUNT;
     }
 }
