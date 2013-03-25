@@ -173,19 +173,10 @@ public class TaskFactory {
 	return taskQueue.isEmpty();
     }
 
-    public void loadTaskQueue(String pathToTaskList, String pathToInputLinks) {
+    public void loadTaskQueue(String pathToTaskList) {
 	ArrayList<String> keyWordsList = loadKeyWordsList(pathToTaskList);
-	
-	ArrayList<String> inputLinksList = new ArrayList<String>();
-	if(pathToInputLinks != null && !"".equals(pathToInputLinks.trim())){
-	    inputLinksList = loadKeyWordsList(pathToInputLinks);
-	}
-
 	fillTaskQueue(keyWordsList,false);
-	fillTaskQueue(inputLinksList,true);
-	
 	keyWordsList.clear();
-	inputLinksList.clear();
     }
 
     /**

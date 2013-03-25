@@ -64,12 +64,15 @@ public class NewsPoster {
 	private Proxy proxy = null;
 	private Account account = null;
 	private TaskFactory taskFactory = null;
+	private ArrayList<String> linkList = null;
+	
 
-	public NewsPoster(NewsTask task, Proxy proxy, Account account, TaskFactory taskFactory) {
+	public NewsPoster(NewsTask task, Proxy proxy, Account account, TaskFactory taskFactory, ArrayList<String> linkList) {
 		this.task = task;
 		this.proxy = proxy;
 		this.account = account;
 		this.taskFactory = taskFactory;
+		this.linkList = linkList;
 
 		MIN_SNIPPET_COUNT = Integer.valueOf(Constants.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
 		MAX_SNIPPET_COUNT = Integer.valueOf(Constants.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
@@ -287,10 +290,10 @@ public class NewsPoster {
 
 		//get links count
 		int randomValue = getRandomValue(MIN_LINK_COUNT, MAX_LINK_COUNT);
-		if(randomValue > taskFactory.getSuccessQueue().size()){
-			linkCount = taskFactory.getSuccessQueue().size();
+		if(randomValue > linkList.size()){
+		    linkCount = linkList.size();
 		}else{
-			linkCount = randomValue;
+		    linkCount = randomValue;
 		}
 
 		//linkCount = 0;
@@ -303,8 +306,7 @@ public class NewsPoster {
 			//add link to snipper
 			if(snippetLinked < linkCount){
 				//add snippet link
-				int randomSuccessLink = getRandomValue(1,taskFactory.getSuccessQueue().size());
-				addLinkToSnippetContent(snippets.get(i), Constants.getInstance().getProperty(AccountFactory.MAIN_LINKS_URL_LABEL) + taskFactory.getSuccessQueue().get(randomSuccessLink-1).getResult());
+				addLinkToSnippetContent(snippets.get(i), linkList.get(rnd.nextInt(linkList.size())));
 				snippetLinked++;
 			}
 			snippetsContent.append(snippets.get(i).toString());
