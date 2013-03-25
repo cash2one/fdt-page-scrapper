@@ -44,10 +44,10 @@ public class NewsPoster {
 	private static final Logger logExtarnal = Logger.getLogger(PosterTaskRunner.class);
 
 	private int MIN_SNIPPET_COUNT=3;
-	private int MAX_SNIPPET_COUNT=5;
+	private int MAX_SNIPPET_COUNT=17;
 
 	private int MIN_LINK_COUNT=3;
-	private int MAX_LINK_COUNT=5;
+	private int MAX_LINK_COUNT=15;
 
 	private int MIN_WORDS_COUNT=2;
 	private int MAX_WORDS_COUNT=3;
@@ -186,7 +186,7 @@ public class NewsPoster {
 
 			//edit news
 			if(rnd.nextInt(3) == 1){
-				log.info("Edit post: " + groupUrl);
+				//log.info("Edit post: " + groupUrl);
 				//edit news
 				url = new URL(Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + groupUrl + "edit/");
 				HttpURLConnection.setFollowRedirects(false);
@@ -246,6 +246,7 @@ public class NewsPoster {
 				//END edit news
 			}
 
+			groupUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL)+groupUrl;
 			System.out.println(groupUrl);
 			log.info(groupUrl);
 
