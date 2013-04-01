@@ -8,6 +8,7 @@ public abstract class SnippetTask
 	private String scrapperUrl = "";
 	private String xpathSnippets = "";
 	private String xpathTitle = "";
+	private String xpathLink = "";
 	private String xpathDesc = "";
 	private String keyWords = "";
 	private String language = "en";
@@ -92,6 +93,16 @@ public abstract class SnippetTask
 	public void setXpathDesc(String xpathDesc)
 	{
 		this.xpathDesc = xpathDesc;
+	}
+
+	public String getXpathLink()
+	{
+	    return xpathLink;
+	}
+
+	public void setXpathLink(String xpathLink)
+	{
+	    this.xpathLink = xpathLink;
 	}
 
 	public String getFullUrl(){

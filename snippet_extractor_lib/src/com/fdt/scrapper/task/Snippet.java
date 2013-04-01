@@ -3,12 +3,21 @@ package com.fdt.scrapper.task;
 public class Snippet {
     private String title = "";
     private String content = "";
+    private String link = "";
     
     public Snippet(String title, String content)
     {
 	super();
 	this.title = title;
 	this.content = content;
+    }
+    
+    public Snippet(String title, String content, String link)
+    {
+	super();
+	this.title = title;
+	this.content = content;
+	this.link = link;
     }
 
     public String getTitle()
@@ -31,6 +40,16 @@ public class Snippet {
         this.content = content;
     }
     
+    public String getLink()
+    {
+        return link;
+    }
+
+    public void setLink(String link)
+    {
+        this.link = link;
+    }
+
     @Override
     public String toString(){
 	StringBuilder result = new StringBuilder();

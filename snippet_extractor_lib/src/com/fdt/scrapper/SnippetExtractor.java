@@ -241,7 +241,7 @@ public class SnippetExtractor {
 		return  minValue + rnd.nextInt(maxValue - minValue+1);
 	}
 
-	private ArrayList<Snippet> extractSnippetsFromPageContent(SnippetTask snippetTask) throws MalformedURLException, IOException, XPathExpressionException{
+	public ArrayList<Snippet> extractSnippetsFromPageContent(SnippetTask snippetTask) throws MalformedURLException, IOException, XPathExpressionException{
 		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
 
 		String proxyTypeStr = ConfigManager.getInstance().getProperty("proxy_type");
