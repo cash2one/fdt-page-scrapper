@@ -173,8 +173,8 @@ public class SnippetExtractor {
 			for(int i = 0; i < minLenght; i++){
 				String h3Value = ((TagNode)titles[i]).getText().toString();
 				String pValue = ((TagNode)descs[i]).getText().toString();
-				String linkValue = ((TagNode)links[i]).getText().toString();
-				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim())){
+				String linkValue = (String)links[i];
+				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim()) && linkValue != null && !"".equals(linkValue.trim())){
 					snippets.add(new Snippet(h3Value, pValue, linkValue));
 				}
 			}

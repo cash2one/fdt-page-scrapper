@@ -104,7 +104,6 @@ public class SaverThread extends Thread
 		    new FileOutputStream(new File(outputLinksFilePath),true), "UTF8")));
 	    for(String line:content){
 		bufferedWriter.write(line);
-		bufferedWriter.newLine();
 	    }
 	    log.debug("Success results was saved successfully.");
 	} catch (FileNotFoundException ex) {
