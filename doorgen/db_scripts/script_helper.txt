@@ -2,4 +2,4 @@
 
 \1,9,\2,\3
 
-INSERT `doorgen_banks`.`case` (`city_id`,`ref_code_value`,`case_value`) select ct.city_id, \2, '\3' from `doorgen_banks`.`city` ct, `doorgen_banks`.`region` rt where ct.city_name = '\1' and rt.region_id = ct.region_id and rt.region_name='\4';
+INSERT `doorgen_banks`.`case` (`city_id`,`location_type_code_value`,`ref_code_value`,`case_value`) select ct.region_id, 2, \2, '\3' from `doorgen_banks`.`region` rt where rt.region_name = '\1';
