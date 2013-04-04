@@ -22,8 +22,9 @@ CREATE TABLE `doorgen_banks`.`region` (
 CREATE TABLE `doorgen_banks`.`city` (
 	city_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	region_id INT,
-	city_name VARCHAR(200)  UNIQUE KEY,
-	CONSTRAINT FOREIGN KEY (`region_id`) REFERENCES `region` (`region_id`) ON DELETE CASCADE ON UPDATE CASCADE
+	city_name VARCHAR(200),
+	CONSTRAINT FOREIGN KEY (`region_id`) REFERENCES `region` (`region_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+	UNIQUE KEY `city_name` (`city_name`,`region_id`)
 ) Type=InnoDB;
 
 CREATE TABLE `doorgen_banks`.`case` (
