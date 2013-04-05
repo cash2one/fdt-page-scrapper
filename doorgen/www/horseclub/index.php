@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 //заводим массивы ключей и городов
 $city=file("city.txt");
 $keys=file("keys.txt");
@@ -86,7 +86,7 @@ if ($_GET['url']==1)
 		exit;
 	}	
 
-$template=file_get_contents("main.html");	
+$template=file_get_contents("main_region.html");	
 
 	
 //замена макросов в шаблоне с обработкой главной страницы
@@ -96,7 +96,7 @@ if ($url==$url1[0])
 	$template=preg_replace("/\[KEY\]/", "Кредиты и займы онлайн", $template);
 	$template=preg_replace("/<title>.*<\/title>/", "<title>Кредиты в России, Банки России, Области, Регионы и Округи | ".$_SERVER["SERVER_NAME"]."</title>", $template);
 	$template=preg_replace("/name=\"keywords\" content=\".*\"/", "name=\"keywords\" content=\"Денежный кредит, кредит без залога, кредит наличными без поручителей, оформление кредита, кредиты малому бизнесу, коммерческий кредит в городе Москва | ".$_SERVER["SERVER_NAME"]."\"", $template);
-	$template=preg_replace("/name=\"description\" content=\".*\"/", "name=\"description\" content=\"Займы и кредиты онлайн - Денежный кредит, кредит без залога, кредит наличными без поручителей, оформление кредита, кредиты малому бизнесу, коммерческий кредит в городе Москва | rabotarua.ru\"", $template);
+	$template=preg_replace("/name=\"description\" content=\".*\"/", "name=\"description\" content=\"Займы и кредиты онлайн - Денежный кредит, кредит без залога, кредит наличными без поручителей, оформление кредита, кредиты малому бизнесу, коммерческий кредит в городе Москва | ".$_SERVER["SERVER_NAME"]."\"", $template);
 }
 
 else
@@ -113,25 +113,44 @@ $template=preg_replace("/\[URL\]/", "http://$url", $template);
 $template=preg_replace("/\[URLMAIN\]/", "http://$url1[0]", $template);
 $template=preg_replace("/\[LINKS\]/", "$random", $template);
 
-$con=mysqli_connect("localhost","root@localhost","hw6cGD6X","doorgen_banks");
+//fetch regions
+$con=mysqli_connect("localhost","root","hw6cGD6X","doorgen_banks");
 
 if (mysqli_connect_errno())
 {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-mysqli_close($con);
+//mysql_query("set character_set_client='utf8'");
+//mysql_query("set character_set_results='utf8'");
+//mysql_query("set collation_connection='utf8_general_ci'");
 
-$result = mysqli_query($con,"SELECT * FROM doorgen_banks.region");
+$result = mysqli_query($con,"SELECT COUNT(*) as row_count FROM doorgen_banks.region");
+$row = mysqli_fetch_assoc($result);
+$row_count = $row['row_count'];
 
-$regions = "Start: ";
+$reg_section_count = 4;
+$reg_per_section = ($row_count - $row_count % $reg_section_count) / $reg_section_count;
+
+$result = mysqli_query($con,"SELECT region_name FROM doorgen_banks.region");
+
+$regions = "";
+$posted = 0;
+$page = 1;
 while($row = mysqli_fetch_array($result))
 {
-	$regions = $regions."new";
-	$regions = $regions.$row['region_name']."<br>";
+	if($posted != 0 && ($posted%$reg_per_section == 0)){
+		$template=preg_replace("/\[REGIONS_".$page."\]/", $regions, $template);
+		$regions = "";
+		$page = $page+1;
+	}
+	$posted = $posted + 1;
+	$regions = $regions."<a href = \"/".str_replace(" ","-",encodestring($row['region_name']))."/\">".$row['region_name']."</a>&nbsp;";
 }
 
-$template=preg_replace("/\[REGIONS\]/", $regions, $template);
+mysqli_close($con);
+
+$template=preg_replace("/\[REGIONS_".$page."\]/", $regions, $template);
 
 echo $template;	
 ?>
