@@ -57,6 +57,7 @@ public class SaverThread extends Thread
 							task = taskFactory.getSuccessQueue().remove(0);
 							if(task != null){
 								keysBuffer.add(task.getKeyWords().replace('+', ' '));
+								taskFactory.getSavedTaskList().add(task);
 							}
 
 							if(keysBuffer.size() >= KEYS_BUFFER_SIZE){
