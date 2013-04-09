@@ -51,6 +51,7 @@ public class TaskFactory {
     private ArrayList<NewsTask> taskQueue;
     private ArrayList<NewsTask> successQueue;
     private ArrayList<NewsTask> errorQueue;
+    private ArrayList<NewsTask> savedTaskList;
 
     private Random rnd = new Random();
 
@@ -58,6 +59,7 @@ public class TaskFactory {
 	taskQueue = new ArrayList<NewsTask>();
 	successQueue = new ArrayList<NewsTask>();
 	errorQueue = new ArrayList<NewsTask>();
+	savedTaskList = new ArrayList<NewsTask>();
 	this.bottomTemplate = Velocity.getTemplate(Constants.getInstance().getProperty(NEWS_CONTENT_TEMPLATE_FILE_PATH_LABEL), "UTF8");
     }
 
@@ -274,5 +276,10 @@ public class TaskFactory {
 
     public synchronized int getRunThreadsCount() {
 	return runThreadsCount;
+    }
+
+    public ArrayList<NewsTask> getSavedTaskList()
+    {
+        return savedTaskList;
     }
 }
