@@ -47,6 +47,19 @@ preg_match("/[a-z0-9]*\.[a-z0-9]*$/",$url,$url1);
 preg_match("/[0-9]+-[0-9]+/",$url,$match);
 list($keys_num, $city_num) = split('-', $match[0]);
 
+$url = $_SERVER["REQUEST_URI"];
+echo $url.'<br>';
+preg_match("/[\-a-zA-Z0-9]*\/[\.\-a-zA-Z0-9]*$/",$url,$request_uri);
+echo $request_uri.'<br>';
+echo 'Count: '.count($request_uri).'<br>';
+echo $request_uri[0].'<br>';
+
+if(count($request_uri)>=1){
+	list($url_region,$url_city) = explode('/', $request_uri[0]);
+}
+
+echo "url_region".$url_region.'<br>';
+echo "url_city".$url_city.'<br>';
 
 //формирование блока навигации
 $max_k=count($keys)-1;
@@ -87,6 +100,25 @@ if ($_GET['url']==1)
 	}	
 
 $template=file_get_contents("main_region.html");	
+
+$template = null;
+
+if( $url_city && $url_region){
+	$template = null;
+	echo "CITY_PAGE";
+} elseif(!$url_city && $url_region){
+	$template = file_get_contents("tmpl_region.html");
+	echo "REGION_PAGE";
+} elseif($url_city == 'index.php' && !$url_region){
+	//TODO Обработка региона
+	$template=file_get_contents("tmpl_main.html");
+	echo "MAIN _PAGE";
+}else{
+	$template=file_get_contents("tmpl_main.html");
+	echo "MAIN_PAGE";
+}
+
+
 
 	
 //замена макросов в шаблоне с обработкой главной страницы
