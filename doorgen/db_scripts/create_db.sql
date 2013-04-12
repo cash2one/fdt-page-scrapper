@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS `doorgen_banks`;
+
 CREATE DATABASE IF NOT EXISTS `doorgen_banks` CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 CREATE TABLE IF NOT EXISTS `doorgen_banks`.`ref_attr` (
@@ -16,13 +18,15 @@ CREATE TABLE IF NOT EXISTS `doorgen_banks`.`ref_code` (
 
 CREATE TABLE IF NOT EXISTS `doorgen_banks`.`region` (
 	region_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	region_name VARCHAR(200) UNIQUE KEY
+	region_name VARCHAR(200) UNIQUE KEY,
+	region_name_latin VARCHAR(200) UNIQUE KEY
 ) Type=InnoDB;
 
 CREATE TABLE IF NOT EXISTS `doorgen_banks`.`city` (
 	city_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	region_id INT,
 	city_name VARCHAR(200),
+	city_name_latin VARCHAR(200),
 	CONSTRAINT FOREIGN KEY (`region_id`) REFERENCES `region` (`region_id`) ON DELETE CASCADE ON UPDATE CASCADE,
 	UNIQUE KEY `city_name` (`city_name`,`region_id`)
 ) Type=InnoDB;
@@ -37,7 +41,8 @@ CREATE TABLE IF NOT EXISTS `doorgen_banks`.`case` (
 
 CREATE TABLE IF NOT EXISTS `doorgen_banks`.`extra_key` (
 	key_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	key_value VARCHAR(200)
+	key_value VARCHAR(200),
+	key_value_latin VARCHAR(200)
 ) Type=InnoDB;
 
 CREATE TABLE IF NOT EXISTS `doorgen_banks`.`city_page` (
@@ -50,13 +55,6 @@ CREATE TABLE IF NOT EXISTS `doorgen_banks`.`city_page` (
 	UNIQUE KEY `city_page_id` (`key_id`,`city_id`)
 ) Type=InnoDB;
 
-CREATE FUNCTION encodeName (input VARCHAR(200)) returns varchar(255)
-BEGIN
-	declare fieldresult varchar(255);
-	set xmlTagBegin = concat('<', xmlTag, '>');
-	set xmlTagEnd = concat('</', xmlTag, '>');
-	set lenField = length(xmlTag) + 2;
-	set fieldresult = case when locate(xmlTagBegin,message) = 0 then ''
-	else substring(message,locate(xmlTagBegin,message) + lenField,locate(xmlTagEnd,message) - (locate(xmlTagBegin,message) + lenField)) end;
-RETURN fieldresult;
-END
+CREATE FUNCTION `doorgen_banks`.`encodestring` (input_string VARCHAR(200))
+RETURNS VARCHAR(255) DETERMINISTIC
+RETURN REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(LOWER(input_string),'а','a'),'б','b'),'в','v'),'г','g'),'д','d'),'е','e'),'ё','e'),'ж','j'),'з','z'),'и','i'),'й','y'),'к','k'),'л','l'),'м','m'),'н','n'),'о','o'),'п','p'),'р','r'),'с','s'),'т','t'),'у','u'),'ф','f'),'х','h'),'ц','ts'),'ч','ch'),'ш','sh'),'щ','sch'),'ъ','y'),'ы','yi'),'ь',''),'э','e'),'ю','yu'),'я','ya');
