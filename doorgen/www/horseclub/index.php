@@ -2,7 +2,8 @@
 //заводим массивы ключей и городов
 $city=file("city.txt");
 $keys=file("keys.txt");
-
+echo "Starting...";
+$current_page="MAIN_PAGE";
 
 
 //фунцкия генерации урлов
@@ -105,16 +106,20 @@ $template = null;
 
 if( $url_city && $url_region){
 	$template = null;
+	$current_page = "CITY_PAGE";
 	echo "CITY_PAGE";
 } elseif(!$url_city && $url_region){
 	$template = file_get_contents("tmpl_region.html");
+	$current_page = "REGION_PAGE";
 	echo "REGION_PAGE";
 } elseif($url_city == 'index.php' && !$url_region){
 	//TODO Обработка региона
 	$template=file_get_contents("tmpl_main.html");
-	echo "MAIN _PAGE";
+	$current_page = "MAIN_PAGE";
+	echo "MAIN_PAGE";
 }else{
 	$template=file_get_contents("tmpl_main.html");
+	$current_page = "MAIN_PAGE";
 	echo "MAIN_PAGE";
 }
 
@@ -147,7 +152,7 @@ $template=preg_replace("/\[LINKS\]/", "$random", $template);
 
 //fetch regions
 $con=mysqli_connect("localhost","root","hw6cGD6X","doorgen_banks");
-
+echo "Connecting...";
 if (mysqli_connect_errno())
 {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -156,28 +161,62 @@ if (mysqli_connect_errno())
 //mysql_query("set character_set_client='utf8'");
 //mysql_query("set character_set_results='utf8'");
 //mysql_query("set collation_connection='utf8_general_ci'");
+echo "<rb>".$current_page."<rb>";
+if($current_page == "MAIN_PAGE"){
+	echo "Main page processing...";
+	$result = mysqli_query($con,"SELECT COUNT(*) as row_count FROM doorgen_banks.region");
+	$row = mysqli_fetch_assoc($result);
+	$row_count = $row['row_count'];
 
-$result = mysqli_query($con,"SELECT COUNT(*) as row_count FROM doorgen_banks.region");
-$row = mysqli_fetch_assoc($result);
-$row_count = $row['row_count'];
+	$reg_section_count = 4;
+	$reg_per_section = ($row_count - $row_count % $reg_section_count) / $reg_section_count;
 
-$reg_section_count = 4;
-$reg_per_section = ($row_count - $row_count % $reg_section_count) / $reg_section_count;
+	$result = mysqli_query($con,"SELECT region_name, region_name_latin FROM doorgen_banks.region");
 
-$result = mysqli_query($con,"SELECT region_name FROM doorgen_banks.region");
-
-$regions = "";
-$posted = 0;
-$page = 1;
-while($row = mysqli_fetch_array($result))
-{
-	if($posted != 0 && ($posted%$reg_per_section == 0)){
-		$template=preg_replace("/\[REGIONS_".$page."\]/", $regions, $template);
-		$regions = "";
-		$page = $page+1;
+	$regions = "";
+	$posted = 0;
+	$page = 1;
+	while($row = mysqli_fetch_array($result))
+	{
+		if($posted != 0 && ($posted%$reg_per_section == 0)){
+			$template=preg_replace("/\[REGIONS_".$page."\]/", $regions, $template);
+			$regions = "";
+			$page = $page+1;
+		}
+		$posted = $posted + 1;
+		$regions = $regions."<a href = \"/".str_replace(" ","-",$row['region_name_latin'])."/\">".$row['region_name']."</a>&nbsp;";
 	}
-	$posted = $posted + 1;
-	$regions = $regions."<a href = \"/".str_replace(" ","-",encodestring($row['region_name']))."/\">".$row['region_name']."</a>&nbsp;";
+}
+
+if($current_page == "REGION_PAGE"){
+	echo "Region page processing...";
+	//prepare statement
+	if (!($stmt = $mysqli->prepare("SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(?,'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id"))) {
+		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+	}
+	
+	//set values
+	echo "set value...";
+	if (!$stmt->bind_param($url_region, 1)) {
+		echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
+	}
+	
+	echo "execute...";
+	$stmt->execute();
+
+    /* instead of bind_result: */
+	echo "get result...";
+    $result = $stmt->get_result();
+
+	/* now you can fetch the results into an array - NICE */
+	echo "print...";
+    while ($myrow = $result->mysqli_fetch_array()) {
+        // use your $myrow array as you would with any other fetch
+        echo "City name: ".$myrow['city_name']."; key: ".$myrow['key_value'];
+    }
+	
+	/* explicit close recommended */
+	$stmt->close();
 }
 
 mysqli_close($con);
