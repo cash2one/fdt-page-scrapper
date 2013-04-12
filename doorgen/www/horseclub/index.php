@@ -188,10 +188,11 @@ if($current_page == "MAIN_PAGE"){
 	}
 }
 
+#http://php.net/manual/en/mysqli.prepare.php
 if($current_page == "REGION_PAGE"){
 	echo "Region page processing...";
 	//prepare statement
-	if (!($stmt = $mysqli->prepare("SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(?,'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id"))) {
+	if (!($stmt = mysqli_prepare("SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(?,'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id"))) {
 		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
 	}
 	
