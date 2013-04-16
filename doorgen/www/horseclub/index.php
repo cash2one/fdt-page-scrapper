@@ -2,7 +2,9 @@
 //заводим массивы ключей и городов
 $city=file("city.txt");
 $keys=file("keys.txt");
-echo "Starting...";
+$city_news_per_page=1;
+$page=1;
+echo "Starting...<br>";
 $current_page="MAIN_PAGE";
 
 
@@ -43,16 +45,16 @@ function encodestring($str)
 
 
 //определяем имя домена и сабдомена и записываем номер ключа и номер города
-$url = $_SERVER["HTTP_HOST"];
-preg_match("/[a-z0-9]*\.[a-z0-9]*$/",$url,$url1);
-preg_match("/[0-9]+-[0-9]+/",$url,$match);
-list($keys_num, $city_num) = split('-', $match[0]);
+//$url = $_SERVER["HTTP_HOST"];
+//echo "HTTP_HOST".$url.'<br>';
+//preg_match("/[a-z0-9]*\.[a-z0-9]*$/",$url,$url1);
+//preg_match("/[0-9]+-[0-9]+/",$url,$match);
+//list($keys_num, $city_num) = split('-', $match[0]);
 
 $url = $_SERVER["REQUEST_URI"];
-echo $url.'<br>';
-preg_match("/[\-a-zA-Z0-9]*\/[\.\-a-zA-Z0-9]*$/",$url,$request_uri);
-echo $request_uri.'<br>';
-echo 'Count: '.count($request_uri).'<br>';
+echo "REQUEST_URI".$url.'<br>';
+preg_match("/[\-a-zA-Z0-9]+\/[\-a-zA-Z0-9]*/",$url,$request_uri);
+echo "request_uri".$request_uri[0].'<br>';
 echo $request_uri[0].'<br>';
 
 if(count($request_uri)>=1){
@@ -62,49 +64,16 @@ if(count($request_uri)>=1){
 echo "url_region".$url_region.'<br>';
 echo "url_city".$url_city.'<br>';
 
-//формирование блока навигации
-$max_k=count($keys)-1;
-$max_c=count($city)-1;
-
-$random="<table>";
-
-for ($coun=1;$coun<=10;$coun++)
-{
-	$i=rand(0,$max_k);
-	$j=rand(0,$max_c);
-	$res=encodestring(trim($keys[$i])."-".trim($city[$j])."-$i-$j");
-	$res="http://".str_replace(" ","-",$res).".$url1[0]";
-	$random.="<tr><td><a href=\"$res\">".trim($city[$j])."</a></td>";
-	
-	$i=rand(0,$max_k);
-	$j=rand(0,$max_c);
-	$res=encodestring(trim($keys[$i])."-".trim($city[$j])."-$i-$j");
-	$res="http://".str_replace(" ","-",$res).".$url1[0]";
-	$random.="<td><a href=\"$res\">".trim($city[$j])."</a></td>";
-
-	$i=rand(0,$max_k);
-	$j=rand(0,$max_c);
-	$res=encodestring(trim($keys[$i])."-".trim($city[$j])."-$i-$j");
-	$res="http://".str_replace(" ","-",$res).".$url1[0]";
-	$random.="<td><a href=\"$res\">".trim($city[$j])."</a></td></tr>";
-
-}
-
-$random.="</table>";
-
-
 //обрабатываем запрос генерации урлов
-if ($_GET['url']==1) 
-	{
-		urlgenerator($keys, $city, $url1[0]);
-		exit;
-	}	
 
 $template=file_get_contents("main_region.html");	
 
-$template = null;
-
-if( $url_city && $url_region){
+if( $url_city && is_numeric($url_city) && $url_region){
+	$template = null;
+	$page = $url_city;
+	$current_page = "REGION_PAGE_PAGING";
+	echo "REGION_PAGE_PAGING";
+} elseif ($url_city && $url_region){
 	$template = null;
 	$current_page = "CITY_PAGE";
 	echo "CITY_PAGE";
@@ -122,9 +91,6 @@ if( $url_city && $url_region){
 	$current_page = "MAIN_PAGE";
 	echo "MAIN_PAGE";
 }
-
-
-
 	
 //замена макросов в шаблоне с обработкой главной страницы
 if ($url==$url1[0])	
@@ -192,32 +158,42 @@ if($current_page == "MAIN_PAGE"){
 if($current_page == "REGION_PAGE"){
 	echo "Region page processing...";
 	//prepare statement
-	if (!($stmt = mysqli_prepare("SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(?,'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id"))) {
-		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+	if (!($stmt = mysqli_prepare($con,"SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id"))) {
+		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 	}
 	
 	//set values
 	echo "set value...";
-	if (!$stmt->bind_param($url_region, 1)) {
-		echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
+	$id=1;
+	if (!mysqli_stmt_bind_param($stmt, "s", $url_region)) {
+		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 	}
 	
 	echo "execute...";
-	$stmt->execute();
+	if (!mysqli_stmt_execute($stmt)){
+		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+	}
 
     /* instead of bind_result: */
 	echo "get result...";
-    $result = $stmt->get_result();
-
+    if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin)){
+		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+	}
+	
 	/* now you can fetch the results into an array - NICE */
 	echo "print...";
-    while ($myrow = $result->mysqli_fetch_array()) {
+	$num_rows = mysqli_num_rows($result);
+	echo "Num rows: " . $num_rows;
+	
+    while (mysqli_stmt_fetch($stmt)) {
         // use your $myrow array as you would with any other fetch
-        echo "City name: ".$myrow['city_name']."; key: ".$myrow['key_value'];
+        echo "City name: ".$city_name."; key: ".$key_value;
     }
 	
+	$result = mysqli_query($con,"SELECT count(*) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id");
+	
 	/* explicit close recommended */
-	$stmt->close();
+	mysqli_stmt_close($stmt);
 }
 
 mysqli_close($con);
