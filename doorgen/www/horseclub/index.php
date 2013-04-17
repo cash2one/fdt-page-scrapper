@@ -155,11 +155,18 @@ if($current_page == "MAIN_PAGE"){
 		$posted = $posted + 1;
 		$regions = $regions."<a href = \"/".str_replace(" ","-",$row['region_name_latin'])."/\">".$row['region_name']."</a>&nbsp;";
 	}
+	
+	$bread_crumbs = "<a href =\"/\">".Главная."</a>";
 }
 
 #http://php.net/manual/en/mysqli.prepare.php
 
 if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
+	//get region names
+	$result = mysqli_query($con,"SELECT region_name FROM doorgen_banks.region r where r.region_name_latin like replace(LOWER('".$url_region."'),'-','_')");
+	$row = mysqli_fetch_assoc($result);
+	$region_name = $row['region_name'];
+	echo "region_name: " . $region_name . "<br>";
 	//getting city new count
 	$query_count = "SELECT count(*) as row_count FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER('".$url_region."'),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id";
 	$result = mysqli_query($con,$query_count);
@@ -168,60 +175,65 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	$city_news_count = $row['row_count'];
 	echo "city_news_count: " . $city_news_count . "<br>";
 	
-	//вычисляем последнюю страницы
-	$max_page_number = floor($city_news_count/$city_news_per_page);
-	
-	if($city_news_page_number > $max_page_number){
-		$city_news_page_number = $max_page_number;
-	}
-	
-	echo "max_page_number: ".$max_page_number."<br>";
-	echo "final city_news_page_number: ".$city_news_page_number."<br>";
-	
-	$start_position = $city_news_per_page*($city_news_page_number-1);
-	echo "start_position: ".$start_position."<br>";
+	if($city_news_count>0){
+		//вычисляем последнюю страницы
+		$max_page_number = floor($city_news_count/$city_news_per_page);
+		
+		if($city_news_page_number > $max_page_number){
+			$city_news_page_number = $max_page_number;
+		}
+		
+		echo "max_page_number: ".$max_page_number."<br>";
+		echo "final city_news_page_number: ".$city_news_page_number."<br>";
+		
+		$start_position = $city_news_per_page*($city_news_page_number-1);
+		echo "start_position: ".$start_position."<br>";
 
-	echo "Region page processing...";
-	//prepare statement
-	$query_city_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id LIMIT ".$start_position.",".$city_news_per_page;
-	echo "query_city_list: ".$query_city_list."<br>";
-	if (!($stmt = mysqli_prepare($con,$query_city_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
-	}
-	
-	//set values
-	echo "set value...";
-	$id=1;
-	if (!mysqli_stmt_bind_param($stmt, "s", $url_region)) {
-		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
-	}
-	
-	echo "execute...";
-	if (!mysqli_stmt_execute($stmt)){
-		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
-	}
+		echo "Region page processing...";
+		//prepare statement
+		$query_city_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id LIMIT ".$start_position.",".$city_news_per_page;
+		echo "query_city_list: ".$query_city_list."<br>";
+		if (!($stmt = mysqli_prepare($con,$query_city_list))) {
+			echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+		}
+		
+		//set values
+		echo "set value...";
+		$id=1;
+		if (!mysqli_stmt_bind_param($stmt, "s", $url_region)) {
+			echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+		}
+		
+		echo "execute...";
+		if (!mysqli_stmt_execute($stmt)){
+			echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+		}
 
-    /* instead of bind_result: */
-	echo "get result...";
-    if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin)){
-		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+		/* instead of bind_result: */
+		echo "get result...";
+		if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin)){
+			echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+		}
+		
+		$index = 1;
+		while (mysqli_stmt_fetch($stmt)) {
+			// use your $myrow array as you would with any other fetch
+			echo "City name: ".$city_name."; key: ".$key_value;
+			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$city_name." ".$key_value."</a>&nbsp;";
+			$template=preg_replace("/\[CITY_NEWS_".$index."\]/", $city_href, $template);
+			$index = $index+1;
+		}
+		
+		/* explicit close recommended */
+		mysqli_stmt_close($stmt);
 	}
-	
-	$index = 1;
-    while (mysqli_stmt_fetch($stmt)) {
-        // use your $myrow array as you would with any other fetch
-        echo "City name: ".$city_name."; key: ".$key_value;
-		$city_href = "<a href = \"/".$region_name_latin."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$city_name." ".$key_value."</a>&nbsp;";
-		$template=preg_replace("/\[CITY_NEWS_".$index."\]/", $city_href, $template);
-		$index = $index+1;
-    }
-	
-	/* explicit close recommended */
-	mysqli_stmt_close($stmt);
+	//fill [BREAD_CRUMBS]
+	$bread_crumbs = "<a href =\"/\">".Главная."</a>&nbsp;>&nbsp;<a href =\"#\">".$region_name."</a>&nbsp;";
 }
 
 mysqli_close($con);
 
+$template=preg_replace("/\[BREAD_CRUMBS\]/", $bread_crumbs, $template);
 $template=preg_replace("/\[REGIONS_".$page."\]/", $regions, $template);
 
 echo $template;	
