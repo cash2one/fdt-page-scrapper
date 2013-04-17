@@ -3,7 +3,7 @@
 $city=file("city.txt");
 $keys=file("keys.txt");
 $city_news_per_page=1;
-$page=1;
+$city_news_page_number=1;
 echo "Starting...<br>";
 $current_page="MAIN_PAGE";
 
@@ -69,8 +69,8 @@ echo "url_city".$url_city.'<br>';
 $template=file_get_contents("main_region.html");	
 
 if( $url_city && is_numeric($url_city) && $url_region){
-	$template = null;
-	$page = $url_city;
+	$template = file_get_contents("tmpl_region.html");
+	$city_news_page_number = $url_city;
 	$current_page = "REGION_PAGE_PAGING";
 	echo "REGION_PAGE_PAGING";
 } elseif ($url_city && $url_region){
@@ -80,6 +80,7 @@ if( $url_city && is_numeric($url_city) && $url_region){
 } elseif(!$url_city && $url_region){
 	$template = file_get_contents("tmpl_region.html");
 	$current_page = "REGION_PAGE";
+	$city_news_page_number = 1;
 	echo "REGION_PAGE";
 } elseif($url_city == 'index.php' && !$url_region){
 	//TODO Обработка региона
@@ -127,7 +128,7 @@ if (mysqli_connect_errno())
 //mysql_query("set character_set_client='utf8'");
 //mysql_query("set character_set_results='utf8'");
 //mysql_query("set collation_connection='utf8_general_ci'");
-echo "<rb>".$current_page."<rb>";
+echo "Processing page: ".$current_page."<br>";
 if($current_page == "MAIN_PAGE"){
 	echo "Main page processing...";
 	$result = mysqli_query($con,"SELECT COUNT(*) as row_count FROM doorgen_banks.region");
@@ -144,21 +145,47 @@ if($current_page == "MAIN_PAGE"){
 	$page = 1;
 	while($row = mysqli_fetch_array($result))
 	{
+		//print result to page
 		if($posted != 0 && ($posted%$reg_per_section == 0)){
 			$template=preg_replace("/\[REGIONS_".$page."\]/", $regions, $template);
 			$regions = "";
 			$page = $page+1;
 		}
+		//fill result with region list
 		$posted = $posted + 1;
 		$regions = $regions."<a href = \"/".str_replace(" ","-",$row['region_name_latin'])."/\">".$row['region_name']."</a>&nbsp;";
 	}
 }
 
 #http://php.net/manual/en/mysqli.prepare.php
-if($current_page == "REGION_PAGE"){
+
+if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
+	//getting city new count
+	$query_count = "SELECT count(*) as row_count FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER('".$url_region."'),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id";
+	$result = mysqli_query($con,$query_count);
+	
+	$row = mysqli_fetch_assoc($result);
+	$city_news_count = $row['row_count'];
+	echo "city_news_count: " . $city_news_count . "<br>";
+	
+	//вычисляем последнюю страницы
+	$max_page_number = floor($city_news_count/$city_news_per_page);
+	
+	if($city_news_page_number > $max_page_number){
+		$city_news_page_number = $max_page_number;
+	}
+	
+	echo "max_page_number: ".$max_page_number."<br>";
+	echo "final city_news_page_number: ".$city_news_page_number."<br>";
+	
+	$start_position = $city_news_per_page*($city_news_page_number-1);
+	echo "start_position: ".$start_position."<br>";
+
 	echo "Region page processing...";
 	//prepare statement
-	if (!($stmt = mysqli_prepare($con,"SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id"))) {
+	$query_city_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id LIMIT ".$start_position.",".$city_news_per_page;
+	echo "query_city_list: ".$query_city_list."<br>";
+	if (!($stmt = mysqli_prepare($con,$query_city_list))) {
 		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 	}
 	
@@ -180,17 +207,14 @@ if($current_page == "REGION_PAGE"){
 		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 	}
 	
-	/* now you can fetch the results into an array - NICE */
-	echo "print...";
-	$num_rows = mysqli_num_rows($result);
-	echo "Num rows: " . $num_rows;
-	
+	$index = 1;
     while (mysqli_stmt_fetch($stmt)) {
         // use your $myrow array as you would with any other fetch
         echo "City name: ".$city_name."; key: ".$key_value;
+		$city_href = "<a href = \"/".$region_name_latin."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$city_name." ".$key_value."</a>&nbsp;";
+		$template=preg_replace("/\[CITY_NEWS_".$index."\]/", $city_href, $template);
+		$index = $index+1;
     }
-	
-	$result = mysqli_query($con,"SELECT count(*) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id");
 	
 	/* explicit close recommended */
 	mysqli_stmt_close($stmt);
