@@ -6,6 +6,7 @@ require_once "pager.php";
 require_once "application/models/functions_decode.php";
 require_once "application/libraries/parser.php";
 require_once "application/plugins/snippets/Google.php";
+require_once "utils/title_generator.php";
 
 //заводим массивы ключей и городов
 $CITY_NEWS_PER_PAGE=1;
@@ -138,9 +139,15 @@ if (mysqli_connect_errno())
 //mysql_query("set character_set_results='utf8'");
 //mysql_query("set collation_connection='utf8_general_ci'");
 echo "Processing page: ".$current_page."<br>";
+
+
 if($current_page == "MAIN_PAGE"){
 	echo "Main page processing...";
-	$page_title = $title_template." | ".$_SERVER[HTTP_HOST];
+	
+	$pager = new TitleGenerator; $pager->getRandomTitle();	
+	
+	
+	$page_title = $pager->getRandomTitle()." | ".$_SERVER[HTTP_HOST];
 	$result = mysqli_query($con,"SELECT COUNT(*) as row_count FROM doorgen_banks.region");
 	$row = mysqli_fetch_assoc($result);
 	$row_count = $row['row_count'];

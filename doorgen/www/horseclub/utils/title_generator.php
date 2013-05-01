@@ -1,28 +1,25 @@
 <?php
-
 class TitleGenerator
 {
-	
-	#return "<a href =\"/\">".Главная."</a>&nbsp;>&nbsp;<a href =\"#\">".$region_name."</a>&nbsp;";
-	function getRandomTitle($url,$page_number, $max_page_number)
+	function getRandomTitle()
 	{
-		$phrase_array = array("взять кредит", "получить кредит", "оформить кредит", "онлайн кредит", "получить займ", "взять займ");
-		$phrase_end = "у нас на сайте";
+		$phrase_array = array("РІР·СЏС‚СЊ РєСЂРµРґРёС‚", "РїРѕР»СѓС‡РёС‚СЊ РєСЂРµРґРёС‚", "РѕС„РѕСЂРјРёС‚СЊ РєСЂРµРґРёС‚", "РѕРЅР»Р°Р№РЅ РєСЂРµРґРёС‚", "РїРѕР»СѓС‡РёС‚СЊ Р·Р°Р№Рј", "РІР·СЏС‚СЊ Р·Р°Р№Рј");
+		$phrase_end = "Сѓ РЅР°СЃ РЅР° СЃР°Р№С‚Рµ";
 		
-		if($page_number == 1 && $max_page_number == 1){
-			return "";
-		}elseif($page_number == $max_page_number){
-			return "<a href =\"".$url.($page_number-1)."/\">".$prev_page_label."</a>";
-		}elseif($page_number < $max_page_number && $page_number != 1){
-			return "<a href =\"".$url.($page_number-1)."/\">".$prev_page_label."</a>&nbsp;<a href =\"".$url.($page_number+1)."/\">".$next_page_label."</a>";
-		}elseif($page_number < $max_page_number && $page_number == 1){
-			return "<a href =\"".$url.($page_number+1)."/\">".$next_page_label."</a>";
+		$size = count($phrase_array);
+		$phrase = "";
+		while($size > 0) {
+			$rand_phrase_index = rand(0,$size-1);
+			if($size != 1){
+				$phrase = $phrase.$phrase_array[$rand_phrase_index].', ';
+			}else{
+				$phrase = $phrase.$phrase_array[$rand_phrase_index].' '.$phrase_end;
+			}
+			
+			array_splice($phrase_array, $rand_phrase_index, 1);
+			$size = count($phrase_array);
 		}
+		return $phrase;
 	}
 }
-#$pager = new Pager; 
-#echo $pager->getPageNavigation("http://url/",1,1)."\n";
-#echo $pager->getPageNavigation("http://url/",3,3)."\n";
-#echo $pager->getPageNavigation("http://url/",2,3)."\n";
-#echo $pager->getPageNavigation("http://url/",1,3)."\n";
 ?>
