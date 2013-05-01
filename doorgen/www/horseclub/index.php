@@ -73,7 +73,7 @@ if(count($request_uri)>=1){
 	list($url_region,$url_city) = explode('/', $request_uri[0]);
 }
 
-#echo "url_region".$url_region.'<br>';
+echo "url_region".$url_region.'<br>';
 #echo "url_city".$url_city.'<br>';
 
 //обрабатываем запрос генерации урлов
