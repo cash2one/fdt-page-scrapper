@@ -1,5 +1,7 @@
 <?php
 
+
+
 error_reporting(E_ALL ^ E_NOTICE);
 
 require_once "pager.php";
@@ -8,6 +10,20 @@ require_once "application/libraries/parser.php";
 require_once "application/plugins/snippets/Google.php";
 require_once "utils/title_generator.php";
 require_once "utils/case_value_selector.php";
+
+function rusdate($d, $format = 'j %MONTH% Y', $offset = 0)
+{
+    $montharr = array('января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря');
+    $dayarr = array('понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье');
+ 
+    $d += 3600 * $offset;
+ 
+    $sarr = array('/%MONTH%/i', '/%DAYWEEK%/i');
+    $rarr = array( $montharr[date("m", $d) - 1], $dayarr[date("N", $d) - 1] );
+ 
+    $format = preg_replace($sarr, $rarr, $format); 
+    return date($format, $d);
+}
 
 //заводим массивы ключей и городов
 $CITY_NEWS_PER_PAGE=1;
@@ -218,7 +234,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 
 		#echo "Region page processing...";
 		//prepare statement
-		$query_city_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
+		$query_city_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
 		#echo "query_city_list: ".$query_city_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_city_list))) {
 			echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
@@ -238,7 +254,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 
 		/* instead of bind_result: */
 		#echo "get result...";
-		if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin)){
+		if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time)){
 			echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
@@ -246,7 +262,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 		while (mysqli_stmt_fetch($stmt)) {
 			// use your $myrow array as you would with any other fetch
 			#echo "City name: ".$city_name."; key: ".$key_value;
-			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$city_name." ".$key_value."</a>&nbsp;";
+			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$city_name." ".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a>&nbsp;";
 			$template=preg_replace("/\[CITY_NEWS_".$index."\]/", $city_href, $template);
 			$index = $index+1;
 		}
