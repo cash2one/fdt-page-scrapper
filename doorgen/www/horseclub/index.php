@@ -7,6 +7,7 @@ require_once "application/models/functions_decode.php";
 require_once "application/libraries/parser.php";
 require_once "application/plugins/snippets/Google.php";
 require_once "utils/title_generator.php";
+require_once "utils/case_value_selector.php";
 
 //заводим массивы ключей и городов
 $CITY_NEWS_PER_PAGE=1;
@@ -58,7 +59,7 @@ function encodestring($str)
 
 //определяем имя домена и сабдомена и записываем номер ключа и номер города
 $url = $_SERVER["HTTP_HOST"];
-echo "HTTP_HOST: ".$url.'<br>';
+#echo "HTTP_HOST: ".$url.'<br>';
 //preg_match("/[a-z0-9]*\.[a-z0-9]*$/",$url,$url1);
 //preg_match("/[0-9]+-[0-9]+/",$url,$match);
 //list($keys_num, $city_num) = split('-', $match[0]);
@@ -73,7 +74,7 @@ if(count($request_uri)>=1){
 	list($url_region,$url_city) = explode('/', $request_uri[0]);
 }
 
-echo "url_region".$url_region.'<br>';
+#echo "url_region".$url_region.'<br>';
 #echo "url_city".$url_city.'<br>';
 
 //обрабатываем запрос генерации урлов
@@ -82,25 +83,25 @@ if( $url_city && is_numeric($url_city) && $url_region){
 	$template = file_get_contents("tmpl_region.html");
 	$city_news_page_number = $url_city;
 	$current_page = "REGION_PAGE_PAGING";
-	echo "REGION_PAGE_PAGING";
+	#echo "REGION_PAGE_PAGING";
 } elseif ($url_city && $url_region){
 	$template = null;
 	$current_page = "CITY_PAGE";
-	echo "CITY_PAGE";
+	#echo "CITY_PAGE";
 } elseif(!$url_city && $url_region){
 	$template = file_get_contents("tmpl_region.html");
 	$current_page = "REGION_PAGE";
 	$city_news_page_number = 1;
-	echo "REGION_PAGE";
+	#echo "REGION_PAGE";
 } elseif($url_city == 'index.php' && !$url_region){
 	//TODO Обработка региона
 	$template=file_get_contents("tmpl_main.html");
 	$current_page = "MAIN_PAGE";
-	echo "MAIN_PAGE";
+	#echo "MAIN_PAGE";
 }else{
 	$template=file_get_contents("tmpl_main.html");
 	$current_page = "MAIN_PAGE";
-	echo "MAIN_PAGE";
+	#echo "MAIN_PAGE";
 }
 	
 //замена макросов в шаблоне с обработкой главной страницы
@@ -129,7 +130,7 @@ $template=preg_replace("/\[LINKS\]/", "$random", $template);
 
 //fetch regions
 $con=mysqli_connect("localhost","root","hw6cGD6X","doorgen_banks");
-echo "Connecting...";
+#echo "Connecting...";
 if (mysqli_connect_errno())
 {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -138,11 +139,11 @@ if (mysqli_connect_errno())
 //mysql_query("set character_set_client='utf8'");
 //mysql_query("set character_set_results='utf8'");
 //mysql_query("set collation_connection='utf8_general_ci'");
-echo "Processing page: ".$current_page."<br>";
+#echo "Processing page: ".$current_page."<br>";
 
 
 if($current_page == "MAIN_PAGE"){
-	echo "Main page processing...";
+	#echo "Main page processing...";
 	
 	$pager = new TitleGenerator; $pager->getRandomTitle();	
 	
@@ -183,15 +184,20 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	$result = mysqli_query($con,"SELECT region_name FROM doorgen_banks.region r where r.region_name_latin like replace(LOWER('".$url_region."'),'-','_')");
 	$row = mysqli_fetch_assoc($result);
 	$region_name = $row['region_name'];
+	
+	//generate header menu
+	$caseSelector = new CaseValueSelector;
+	$header_menu = $caseSelector->getRandomTitle($con,2,7,$url_region);
+	
 	$page_title = $region_name." - ".$title_template." | ".$_SERVER[HTTP_HOST];
-	echo "region_name: " . $region_name . "<br>";
+	#echo "region_name: " . $region_name . "<br>";
 	//getting city new count
 	$query_count = "SELECT count(*) as row_count FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER('".$url_region."'),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id";
 	$result = mysqli_query($con,$query_count);
 	
 	$row = mysqli_fetch_assoc($result);
 	$city_news_count = $row['row_count'];
-	echo "city_news_count: " . $city_news_count . "<br>";
+	#echo "city_news_count: " . $city_news_count . "<br>";
 	
 	if($city_news_count>0){
 		//вычисляем последнюю страницы
@@ -204,13 +210,13 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 			$city_news_page_number = $max_page_number;
 		}
 		
-		echo "max_page_number: ".$max_page_number."<br>";
-		echo "final city_news_page_number: ".$city_news_page_number."<br>";
+		#echo "max_page_number: ".$max_page_number."<br>";
+		#echo "final city_news_page_number: ".$city_news_page_number."<br>";
 		
 		$start_position = $CITY_NEWS_PER_PAGE*($city_news_page_number-1);
-		echo "start_position: ".$start_position."<br>";
+		#echo "start_position: ".$start_position."<br>";
 
-		echo "Region page processing...";
+		#echo "Region page processing...";
 		//prepare statement
 		$query_city_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
 		#echo "query_city_list: ".$query_city_list."<br>";
@@ -219,19 +225,19 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 		}
 		
 		//set values
-		echo "set value...";
+		#echo "set value...";
 		$id=1;
 		if (!mysqli_stmt_bind_param($stmt, "s", $url_region)) {
 			echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
-		echo "execute...";
+		#echo "execute...";
 		if (!mysqli_stmt_execute($stmt)){
 			echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 
 		/* instead of bind_result: */
-		echo "get result...";
+		#echo "get result...";
 		if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin)){
 			echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
@@ -239,7 +245,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 		$index = 1;
 		while (mysqli_stmt_fetch($stmt)) {
 			// use your $myrow array as you would with any other fetch
-			echo "City name: ".$city_name."; key: ".$key_value;
+			#echo "City name: ".$city_name."; key: ".$key_value;
 			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$city_name." ".$key_value."</a>&nbsp;";
 			$template=preg_replace("/\[CITY_NEWS_".$index."\]/", $city_href, $template);
 			$index = $index+1;
@@ -253,12 +259,16 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	}
 	//fill [BREAD_CRUMBS]
 	$bread_crumbs = "<a href =\"/\">".Главная."</a>&nbsp;>&nbsp;<a href =\"#\">".$region_name."</a>&nbsp;";
+	
+	//
+	
 }
 
 mysqli_close($con);
 
+$template=preg_replace("/\[REGION_2_7\]/", $header_menu, $template);
 $template=preg_replace("/\[BREAD_CRUMBS\]/", $bread_crumbs, $template);
-$template=preg_replace("/\[REGIONS_".$page."\]/", $regions, $template);
+#$template=preg_replace("/\[REGIONS_".$page."\]/", $regions, $template);
 
 $snippet_array = $google_snippet->Start($page_title,'ru',1,$function);
 $template=preg_replace("/\[TITLE\]/", $page_title, $template);
