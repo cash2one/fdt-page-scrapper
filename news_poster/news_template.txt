@@ -1,10 +1,10 @@
-$SNIPPETS_1
 <noindex><a href="$PROMO_URL_START$PROMO_URL_END" rel="nofollow"><img src="$IMAGE_URL" /></a><noindex>
 <br>
+$SNIPPETS_1
 $SNIPPETS_2
 <br>
 <br>
-<noindex>Другие новости:
+<noindex>Р”СЂСѓРіРёРµ РЅРѕРІРѕСЃС‚Рё:
 <br>
 <a href="$POSTED_LINK_1">$POSTED_KEYWORD_1</a>
 <br>
