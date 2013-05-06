@@ -6,3 +6,44 @@
 [25-Apr-2013 15:19:21] PHP Parse error:  syntax error, unexpected '[' in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 261
 [25-Apr-2013 15:20:57] PHP Parse error:  syntax error, unexpected '[' in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 261
 [25-Apr-2013 15:23:26] PHP Fatal error:  Call to undefined function mb_strtolower() in C:\Work\scrapper\doorgen\www\horseclub\application\plugins\snippets\Google.php on line 10
+[02-May-2013 13:21:52] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 190
+[02-May-2013 13:22:10] PHP Parse error:  syntax error, unexpected T_VARIABLE in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 192
+[02-May-2013 13:22:22] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/2003): Can't connect to MySQL server on 'localhost' (10061) in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 132
+[02-May-2013 13:22:22] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 152
+[02-May-2013 13:22:22] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 153
+[02-May-2013 13:22:22] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 159
+[02-May-2013 13:22:22] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 164
+[02-May-2013 13:22:22] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 267
+[02-May-2013 13:22:22] PHP Fatal error:  Call to undefined function mb_strtolower() in C:\Work\scrapper\doorgen\www\horseclub\application\plugins\snippets\Google.php on line 10
+[02-May-2013 14:31:15] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/2003): Can't connect to MySQL server on 'localhost' (10061) in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 148
+[02-May-2013 14:31:15] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 168
+[02-May-2013 14:31:15] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 169
+[02-May-2013 14:31:15] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 175
+[02-May-2013 14:31:15] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 180
+[02-May-2013 14:31:15] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 283
+[02-May-2013 14:31:15] PHP Fatal error:  Call to undefined function mb_strtolower() in C:\Work\scrapper\doorgen\www\horseclub\application\plugins\snippets\Google.php on line 10
+[02-May-2013 14:39:35] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 265
+[02-May-2013 14:40:13] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/2003): Can't connect to MySQL server on 'localhost' (10061) in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 148
+[02-May-2013 14:40:13] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 168
+[02-May-2013 14:40:13] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 169
+[02-May-2013 14:40:13] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 175
+[02-May-2013 14:40:13] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 180
+[02-May-2013 14:40:13] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 283
+[02-May-2013 14:40:13] PHP Fatal error:  Call to undefined function mb_strtolower() in C:\Work\scrapper\doorgen\www\horseclub\application\plugins\snippets\Google.php on line 10
+[06-May-2013 16:55:45] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting '(' in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 60
+[06-May-2013 16:55:58] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/2003): Can't connect to MySQL server on 'localhost' (10061) in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 187
+[06-May-2013 16:55:58] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 207
+[06-May-2013 16:55:58] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 208
+[06-May-2013 16:55:58] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 214
+[06-May-2013 16:55:58] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 219
+[06-May-2013 16:55:58] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 407
+[06-May-2013 16:55:58] PHP Fatal error:  Call to undefined function mb_strtolower() in C:\Work\scrapper\doorgen\www\horseclub\application\plugins\snippets\Google.php on line 10
+[06-May-2013 18:29:54] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/2003): Can't connect to MySQL server on 'localhost' (10061) in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 252
+[06-May-2013 18:29:54] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 272
+[06-May-2013 18:29:54] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 273
+[06-May-2013 18:29:54] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 279
+[06-May-2013 18:29:54] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 284
+[06-May-2013 18:29:54] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 478
+[06-May-2013 18:29:54] PHP Fatal error:  Call to undefined function mb_strtolower() in C:\Work\scrapper\doorgen\www\horseclub\application\plugins\snippets\Google.php on line 10
+[06-May-2013 18:41:13] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (HY000/2003): Can't connect to MySQL server on 'localhost' (10061) in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 252
+[06-May-2013 18:41:13] PHP Fatal error:  Call to undefined function vardump() in C:\Work\scrapper\doorgen\www\horseclub\index.php on line 261

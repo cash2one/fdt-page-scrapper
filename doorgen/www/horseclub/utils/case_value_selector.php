@@ -25,6 +25,7 @@ class CaseValueSelector
 			echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		}
 		
+		//TODO Возвращать массив всех возможных падежей, а затем уже из массива извлекать нужное.
 		if (mysqli_stmt_fetch($stmt)) {
 		}
 		mysqli_stmt_close($stmt);
