@@ -1,7 +1,7 @@
 <?php
 class CaseValueSelector
 {
-	function getRandomTitle($con,$reg_type,$case,$region_name)
+	function getCaseTitle($con,$reg_type,$case,$region_name)
 	{
 		$query_case_list = "select c.case_value from `doorgen_banks`.`case` c where c.location_type_code_value = ? AND c.case_code_value = ? and c.location_id = (select region_id from `doorgen_banks`.`region` r where r.region_name_latin like replace(LOWER(?),'-','_'))";
 		if (!($stmt = mysqli_prepare($con,$query_case_list))) {
