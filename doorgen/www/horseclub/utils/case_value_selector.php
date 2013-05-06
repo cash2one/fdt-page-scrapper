@@ -3,7 +3,8 @@ class CaseValueSelector
 {
 	function getCaseTitle($con,$reg_type,$case,$region_name)
 	{
-		$query_case_list = "select c.case_value from `doorgen_banks`.`case` c where c.location_type_code_value = ? AND c.case_code_value = ? and c.location_id = (select region_id from `doorgen_banks`.`region` r where r.region_name_latin like replace(LOWER(?),'-','_'))";
+		$result = array();
+		$query_case_list = "select c.case_code_value, c.case_value from `doorgen_banks`.`case` c where c.location_type_code_value = ? AND c.location_id = (select region_id from `doorgen_banks`.`region` r where r.region_name_latin like replace(LOWER(?),'-','_')) ORDER BY c.case_code_value ASC";
 		if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 			echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		}
@@ -21,16 +22,17 @@ class CaseValueSelector
 
 		/* instead of bind_result: */
 		#echo "get result...";
-		if(!mysqli_stmt_bind_result($stmt, $case_region_name)){
+		if(!mysqli_stmt_bind_result($stmt, $case_code_value, $case_region_name)){
 			echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		}
 		
 		//TODO Возвращать массив всех возможных падежей, а затем уже из массива извлекать нужное.
-		if (mysqli_stmt_fetch($stmt)) {
+		while(mysqli_stmt_fetch($stmt)) {
+			$result[$case_code_value] = $case_region_name;
 		}
 		mysqli_stmt_close($stmt);
 		
-		return $case_region_name;
+		return $result;
 	}
 }
 ?>
