@@ -186,7 +186,7 @@ $url = $_SERVER["HTTP_HOST"];
 //list($keys_num, $city_num) = split('-', $match[0]);
 
 $url = $_SERVER["REQUEST_URI"];
-echo "REQUEST_URI".$url.'<br>';
+#echo "REQUEST_URI".$url.'<br>';
 preg_match("/[\-a-zA-Z0-9]+\/[\-a-zA-Z0-9]*/",$url,$request_uri);
 #echo "request_uri".$request_uri[0].'<br>';
 #echo $request_uri[0].'<br>';
@@ -260,7 +260,6 @@ if (mysqli_connect_errno())
 //get page info
 $page_info = getPageInfo($con,$url);
 if($page_info){
-	var_dump($page_info);
 	$is_cached = true;
 	$page_title = $page_info['cached_page_title'];
 	$page_meta_keywords = $page_info['cached_page_meta_keywords'];
@@ -323,7 +322,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	
 	//generate header menu
 	$caseSelector = new CaseValueSelector;
-	$header_menu = $caseSelector->getCaseTitle($con,2,7,$url_region);
+	$region_cases = $caseSelector->getCaseTitle($con,2,$url_region);
 	
 	if(!$is_cached){
 		$page_title = $region_name." - ".$title_template." | ".$_SERVER[HTTP_HOST];
@@ -405,19 +404,18 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 if($current_page == "CITY_PAGE"){
 	//get region names
 	$key_info = getKeyInfo($con,$url_city);
-	echo "var_dump: ". var_dump($key_info)."<br/>";
+	#echo "var_dump: ". var_dump($key_info)."<br/>";
 
 	if($key_info){
 		$region_name = $key_info['region_name'];
 		
 		//generate header menu
 		$caseSelector = new CaseValueSelector;
-		$header_menu = $caseSelector->getCaseTitle($con,1,7,$city_name);
-		
-		echo "header_menu: ".$header_menu."<br/>";
+		$city_cases = $caseSelector->getCaseTitle($con,1,$caseSelector->getCityValueByNewsKey($con,$url_city));
 		
 		if(!$is_cached){
-			$page_title = $key_info['city_name']." ".$key_info['key_value']." | ".$_SERVER[HTTP_HOST];
+			$pager = new TitleGenerator; 	
+			$page_title = $pager->getCityRandomTitle();
 		}
 		#echo "region_name: " . $region_name . "<br>";
 		//getting city new count
@@ -495,25 +493,30 @@ if($current_page == "CITY_PAGE"){
 	
 }
 
-
+for($i=1; $i <= 9; $i++){
+	$page_title=preg_replace("/\[REGION_CASE_".$i."\]/", $region_cases["$i"], $page_title);
+	$page_title=preg_replace("/\[CITY_CASE_".$i."\]/", $city_cases["$i"], $page_title);
+}
 
 if(!$is_cached){
-	echo "Caching page..."."<br/>";
-	$snippet_array = $google_snippet->Start($page_title,'ru',1,$function);
-	$page_meta_description = $snippet_array[0]["description"];
+	while(!$page_meta_description){
+		$snippet_array = $google_snippet->Start($page_title,'ru',1,$function);
+		$page_meta_description = $snippet_array[0]["description"];
+	}
 	savePageInfo($con,$url,$page_title,$page_title,$page_meta_description);
 }
 
 mysqli_close($con);
-
-$template=preg_replace("/\[REGION_CASE_2_7\]/", $header_menu, $template);
 $template=preg_replace("/\[BREAD_CRUMBS\]/", $bread_crumbs, $template);
-#$template=preg_replace("/\[REGIONS_".$page."\]/", $regions, $template);
-
 
 $template=preg_replace("/\[TITLE\]/", $page_title, $template);
 $template=preg_replace("/\[REGION_NAME\]/", $region_name, $template);
 $template=preg_replace("/\[DESCRIPTION\]/", $page_meta_description, $template);
+
+for($i=1; $i <= 9; $i++){
+	$template=preg_replace("/\[REGION_CASE_".$i."\]/", $region_cases["$i"], $template);
+	$template=preg_replace("/\[CITY_CASE_".$i."\]/", $city_cases["$i"], $template);
+}
 
 echo $template;	
 ?>
