@@ -296,18 +296,30 @@ if($current_page == "MAIN_PAGE"){
 	$regions = "";
 	$posted = 0;
 	$page = 1;
+	$firstRegNmChr = "";
 	while($row = mysqli_fetch_array($result))
 	{
 		//print result to page
-		if($posted != 0 && ($posted%$reg_per_section == 0)){
+		/*if($posted != 0 && ($posted%$reg_per_section == 0)){
 			$template=preg_replace("/\[REGIONS_".$page."\]/", $regions, $template);
 			$regions = "";
 			$page = $page+1;
 		}
 		//fill result with region list
 		$posted = $posted + 1;
-		$regions = $regions."<a href = \"/".str_replace(" ","-",$row['region_name_latin'])."/\">".$row['region_name']."</a>&nbsp;";
+		$regions = $regions."<a href = \"/".str_replace(" ","-",$row['region_name_latin'])."/\">".$row['region_name']."</a>&nbsp;";*/
+		//print result to page
+		$curentFrstChr = mb_substr($row['region_name'],0,1, 'UTF-8');
+		if($firstRegNmChr != $curentFrstChr){
+			$firstRegNmChr = $curentFrstChr;
+			$regions = $regions."<br><h2>$firstRegNmChr</h2><br/>";
+		}
+		//fill result with region list
+		$posted = $posted + 1;
+		$regions = $regions."<a href = \"/".str_replace(" ","-",$row['region_name_latin'])."/\">".$row['region_name']."</a>&nbsp;<br/>";
 	}
+	//apply template
+	$template=preg_replace("/\[REGIONS_1\]/", $regions, $template);
 	
 	$bread_crumbs = "<a href =\"/\">".Главная."</a>";
 }
