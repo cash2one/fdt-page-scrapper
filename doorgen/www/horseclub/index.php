@@ -5,6 +5,7 @@ require_once "pager.php";
 require_once "application/models/functions_decode.php";
 require_once "application/libraries/parser.php";
 require_once "application/plugins/snippets/Google.php";
+require_once "application/plugins/images/ImagesGoogle.php"; 
 require_once "utils/title_generator.php";
 require_once "utils/case_value_selector.php";
 
@@ -175,6 +176,7 @@ $title_template = "Кредиты в России, Банки России, Об
 
 $function = new Functions;
 $google_snippet = new Google;
+$google_image = new ImagesGoogle;
 
 print_r(error_get_last());
 
@@ -521,14 +523,21 @@ if(!$is_cached){
 mysqli_close($con);
 $template=preg_replace("/\[BREAD_CRUMBS\]/", $bread_crumbs, $template);
 
-$template=preg_replace("/\[TITLE\]/", $page_title, $template);
+$page_title=preg_replace("/\[REGION_NAME\]/", $region_name, $page_title);
+
 $template=preg_replace("/\[REGION_NAME\]/", $region_name, $template);
+$template=preg_replace("/\[TITLE\]/", $page_title, $template);
 $template=preg_replace("/\[DESCRIPTION\]/", $page_meta_description, $template);
 
 for($i=1; $i <= 9; $i++){
 	$template=preg_replace("/\[REGION_CASE_".$i."\]/", $region_cases["$i"], $template);
 	$template=preg_replace("/\[CITY_CASE_".$i."\]/", $city_cases["$i"], $template);
 }
+
+$snippet_image_result = $google_image->Start($page_title,3,$function);
+
+echo "page_title: ".$page_title;
+echo var_dump($snippet_image_result);
 
 echo $template;	
 ?>

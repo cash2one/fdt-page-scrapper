@@ -356,5 +356,38 @@ class Functions
         }
         return $_9b9540098da4f542604041ec8927619e4d00f84cf84223de20e7a88d18c0752fe525178a650f9f6e3818a80714305e53;
     }
+	
+	public function GetKeyword()
+    {
+        $_01f300c5 = implode($this->GetQueries(1));
+        return $_01f300c5;
+    }
+	
+	public function GetQueries($_895dcdee271bdae8ce1ea437591499fe20fa31813c21f814473d6c6bbf2b33db)
+    {
+        $_db3156b54d7cee17c9a848bf7c01b6a617f94c82 = glob('content/base/*/*', GLOB_NOSORT);
+        if (!empty($_db3156b54d7cee17c9a848bf7c01b6a617f94c82)) {
+            $_109786267d6aff856324e181b83a403c0cf28a7b06fe07f5 = array();
+            foreach ($_db3156b54d7cee17c9a848bf7c01b6a617f94c82 as $_7f93ae6489d2f836d740ed69c95f52a8c2ab4f64514dea9e) {
+                if (filesize($_7f93ae6489d2f836d740ed69c95f52a8c2ab4f64514dea9e) > 0) {
+                    $_109786267d6aff856324e181b83a403c0cf28a7b06fe07f5[] = $_7f93ae6489d2f836d740ed69c95f52a8c2ab4f64514dea9e;
+                }
+            }
+            if (!empty($_109786267d6aff856324e181b83a403c0cf28a7b06fe07f5)) {
+                $_fec963fe25da0f592279c214f47cc146103dd8e3156f2bc8 = array();
+                while (count($_fec963fe25da0f592279c214f47cc146103dd8e3156f2bc8) < $_895dcdee271bdae8ce1ea437591499fe20fa31813c21f814473d6c6bbf2b33db) {
+                    $_7f93ae6489d2f836d740ed69c95f52a8c2ab4f64514dea9e                                                                                 = $_109786267d6aff856324e181b83a403c0cf28a7b06fe07f5[array_rand($_109786267d6aff856324e181b83a403c0cf28a7b06fe07f5)];
+                    $_c64cacf21cce73c5478d6447fba5341c6e6f6d8532bfeddf9d4952afaf2cfa3fd4f8d3dafede2c1c49e89d7622673669477c37899a3260b3fdf866cf598886d4 = file($_7f93ae6489d2f836d740ed69c95f52a8c2ab4f64514dea9e, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+                    shuffle($_c64cacf21cce73c5478d6447fba5341c6e6f6d8532bfeddf9d4952afaf2cfa3fd4f8d3dafede2c1c49e89d7622673669477c37899a3260b3fdf866cf598886d4);
+                    foreach ($_c64cacf21cce73c5478d6447fba5341c6e6f6d8532bfeddf9d4952afaf2cfa3fd4f8d3dafede2c1c49e89d7622673669477c37899a3260b3fdf866cf598886d4 as $_fc4eb322602e7ebac57b25568168ad39) {
+                        if (count($_fec963fe25da0f592279c214f47cc146103dd8e3156f2bc8) < $_895dcdee271bdae8ce1ea437591499fe20fa31813c21f814473d6c6bbf2b33db) {
+                            $_fec963fe25da0f592279c214f47cc146103dd8e3156f2bc8[] = json_decode($_fc4eb322602e7ebac57b25568168ad39)->query;
+                        }
+                    }
+                }
+                return $_fec963fe25da0f592279c214f47cc146103dd8e3156f2bc8;
+            }
+        }
+    }
 }
 ?>
