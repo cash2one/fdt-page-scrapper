@@ -499,7 +499,7 @@ if($current_page == "CITY_PAGE"){
 			mysqli_stmt_close($stmt);
 		}
 		//fill [BREAD_CRUMBS]
-		$bread_crumbs = "<a href =\"/\">".Главная."</a>&nbsp;>&nbsp;<a href =\"#\">".$region_name."</a>&nbsp;";
+		$bread_crumbs = "<a href =\"/\">".Главная."</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;>&nbsp;<a href =\"#\">".$city_name." ".$key_value."</a>";
 	}else{
 		#TODO PAGE NOT FOUND REDIRECT
 	}
@@ -534,10 +534,21 @@ for($i=1; $i <= 9; $i++){
 	$template=preg_replace("/\[CITY_CASE_".$i."\]/", $city_cases["$i"], $template);
 }
 
-$snippet_image_result = $google_image->Start($page_title,3,$function);
+//TODO Getting random images
+while(!$snippet_image_array || !$snippet_array){
+	$snippet_image_array = $google_image->Start($page_title,6,$function);
+	$snippet_array = $google_snippet->Start($page_title,'ru',6,$function);
+}
+
+for($i=0; $i < 6; $i++){
+	$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", $snippet_array["$i"]["title"], $template);
+	$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", $snippet_array["$i"]["description"], $template);
+	$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", $snippet_image_array["$i"]["large"], $template);
+	$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", $snippet_image_array["$i"]["small"], $template);
+}
 
 echo "page_title: ".$page_title;
-echo var_dump($snippet_image_result);
+
 
 echo $template;	
 ?>
