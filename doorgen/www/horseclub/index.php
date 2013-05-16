@@ -167,6 +167,89 @@ function savePageInfo($con,$page_url, $title, $keywords, $description)
 	mysqli_stmt_close($stmt);
 }
 
+function fillSnippetsContent($template, $key_value){
+	$function = new Functions;
+	$google_snippet = new Google;
+	$google_image = new ImagesGoogle;
+
+	$rand_index_array = array();
+	$snippets_array = array();
+	$index = 0;
+	while(count($rand_index_array) < 3){
+		$rand_value = rand(0,8);
+		if(!$rand_index_array[$rand_value]){
+			$rand_index_array[$index] = $rand_value;
+			$index++;
+		}
+	}
+	
+	echo var_dump($rand_index_array)."<br/><br/>";
+	
+	//TODO check for snippets content existence
+	if(!$snippets_array) {
+		while(!$snippet_image_array || !$snippet_array){
+			$snippet_image_array = $google_image->Start($key_value,count($rand_index_array),$function);
+			$snippet_array = $google_snippet->Start($key_value,'ru',count($rand_index_array),$function);
+		}
+		
+		for($i=0; $i < count($rand_index_array); $i++){
+			$snippets_array[$rand_index_array[$i]]['title'] = $snippet_array[$i]['title'];
+			$snippets_array[$rand_index_array[$i]]['description'] = $snippet_array[$i]['description'];
+			$snippets_array[$rand_index_array[$i]]['small'] = $snippet_image_array[$i]['small'];
+			$snippets_array[$rand_index_array[$i]]['large'] = $snippet_image_array[$i]['large'];
+		}
+	}else{
+		//TODO read snippets from DB to $snippets_array
+	}
+	
+	$SNIPPET_BLOCK_1 = "<img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt=''><p class='text-1 top-2 p3'>[SNIPPET_TITLE_[INDEX]]</p><p>[SNIPPET_CONTENT_[INDEX]]</p><br/>";
+	$start_block_index = 1;
+	for($i=1; $i <=3; $i++){
+		if($snippets_array[$i-1]){
+			$template=preg_replace("/\[SNIPPET_BLOCK_1_".$start_block_index."\]/", preg_replace("/\[INDEX\]/", $i, $SNIPPET_BLOCK_1), $template);
+			$start_block_index++;
+		}
+	}
+	
+	$SNIPPET_BLOCK_2 = "<div class='wrap'><div class='number'>1</div><p class='extra-wrap border-bot-1'><span class='clr-1'>[SNIPPET_TITLE_[INDEX]]</span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
+	$start_block_index = 1;
+	for($i=4; $i <=6; $i++){
+		if($snippets_array[$i-1]){
+			$template=preg_replace("/\[SNIPPET_BLOCK_2_".$start_block_index."\]/", preg_replace("/\[INDEX\]/", $i, $SNIPPET_BLOCK_2), $template);
+			$start_block_index++;
+		}
+	}
+	
+	$SNIPPET_BLOCK_3 = "<div class='wrap border-bot-1'><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt='' class='img-indent'><p class='extra-wrap'><span class='clr-1'>[SNIPPET_TITLE_[INDEX]]</span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
+	$start_block_index = 1;
+	for($i=7; $i <=9; $i++){
+		if($snippets_array[$i-1]){
+			$template=preg_replace("/\[SNIPPET_BLOCK_3_".$start_block_index."\]/", preg_replace("/\[INDEX\]/", $i, $SNIPPET_BLOCK_3), $template);
+			$start_block_index++;
+		}
+	}
+	
+	//clear empty blocks
+	for($i=1; $i <=3; $i++){
+		for($j=1; $j <=3; $j++){
+			$template=preg_replace("/\[SNIPPET_BLOCK_".$i."_".$j."\]/", "", $template);
+		}
+	}
+	
+	for($i=0; $i < 9; $i++){
+		if($snippets_array[$i]){
+			$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", $snippets_array[$i]["title"], $template);
+			$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", $snippets_array[$i]["description"], $template);
+			$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", $snippets_array[$i]["large"], $template);
+			$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", $snippets_array[$i]["small"], $template);
+		}
+	}
+	
+	echo var_dump($snippets_array);
+	
+	return $template;
+}
+
 //заводим массивы ключей и городов
 $CITY_NEWS_PER_PAGE=1;
 $city_news_page_number=1;
@@ -534,21 +617,14 @@ for($i=1; $i <= 9; $i++){
 	$template=preg_replace("/\[CITY_CASE_".$i."\]/", $city_cases["$i"], $template);
 }
 
-//TODO Getting random images
-while(!$snippet_image_array || !$snippet_array){
-	$snippet_image_array = $google_image->Start($page_title,6,$function);
-	$snippet_array = $google_snippet->Start($page_title,'ru',6,$function);
-}
-
-for($i=0; $i < 6; $i++){
+//delete all unnecessary templates anchors
+for($i=0; $i < 9; $i++){
 	$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", $snippet_array["$i"]["title"], $template);
 	$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", $snippet_array["$i"]["description"], $template);
 	$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", $snippet_image_array["$i"]["large"], $template);
 	$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", $snippet_image_array["$i"]["small"], $template);
 }
-
-echo "page_title: ".$page_title;
-
+$template = fillSnippetsContent($template,$city_name." ".$key_value);
 
 echo $template;	
 ?>
