@@ -108,7 +108,7 @@ function getKeyInfo($con,$city_page_key)
 
 function getPageInfo($con,$page_url)
 {
-	$query_case_list = "SELECT cp.cached_page_title, cp.cached_page_meta_keywords, cp.cached_page_meta_description, cp.cached_time FROM `cached_page` cp WHERE 1 AND cp.cached_page_url = ?";
+	$query_case_list = "SELECT cp.cached_page_id, cp.cached_page_title, cp.cached_page_meta_keywords, cp.cached_page_meta_description, cp.cached_time FROM `cached_page` cp WHERE 1 AND cp.cached_page_url = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
@@ -126,12 +126,14 @@ function getPageInfo($con,$page_url)
 
 	/* instead of bind_result: */
 	#echo "get result...";
-	if(!mysqli_stmt_bind_result($stmt, $cached_page_title, $cached_page_meta_keywords, $cached_page_meta_description, $cached_time)){
+	if(!mysqli_stmt_bind_result($stmt, $cached_page_id, $cached_page_title, $cached_page_meta_keywords, $cached_page_meta_description, $cached_time)){
 		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	if(mysqli_stmt_fetch($stmt)) {
-		$result_array = array(	"cached_page_title"=>$cached_page_title,
+		$result_array = array(	
+						"cached_page_id"=>$cached_page_id,
+						"cached_page_title"=>$cached_page_title,
 						"cached_page_meta_keywords"=>$cached_page_meta_keywords,
 						"cached_page_meta_description"=>$cached_page_meta_description, 
 						"cached_time"=>$cached_time
@@ -167,7 +169,7 @@ function savePageInfo($con,$page_url, $title, $keywords, $description)
 	mysqli_stmt_close($stmt);
 }
 
-function fillSnippetsContent($template, $key_value){
+function fillSnippetsContent($template, $key_value, $conn, $page_url){
 	$function = new Functions;
 	$google_snippet = new Google;
 	$google_image = new ImagesGoogle;
@@ -247,7 +249,36 @@ function fillSnippetsContent($template, $key_value){
 	
 	echo var_dump($snippets_array);
 	
+	//savePageSnippets($conn, $page_url, $snippets_array)
+	
 	return $template;
+}
+
+function savePageSnippets($conn, $page_url, $snippets_array)
+{
+	$saved_page_info = getPageInfo($conn,$url);
+	
+	for($i = 0; $i < 9; $i++){
+		if($snippets_array[$i]){
+			$query_case_list = "INSERT INTO `snippets` (cached_page_id, snippets_index, snippets_title, snippets_content, snippets_image_large, snippets_image_small, cached_time) VALUES (SELECT cp.cached_page_id FROM cached_page cp WHERE cp.cached_page_url = ?,?,?,?,?,?,now())";
+			if (!($stmt = mysqli_prepare($con,$query_case_list))) {
+				echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+			}
+			//set values
+			#echo "set value...";
+			$id=1;
+			if (!mysqli_stmt_bind_param($stmt, "sssss", $page_url, $snippets_array[$i]["title"],$snippets_array[$i]["description"],$snippets_array[$i]["large"],$snippets_array[$i]["small"])) {
+				echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+			}
+			
+			#echo "execute...";
+			if (!mysqli_stmt_execute($stmt)){
+				echo "Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+			}
+
+			mysqli_stmt_close($stmt);
+		}
+	}
 }
 
 //заводим массивы ключей и городов
@@ -587,7 +618,15 @@ if($current_page == "CITY_PAGE"){
 		#TODO PAGE NOT FOUND REDIRECT
 	}
 	//
-	
+	//$template = fillSnippetsContent($template,$city_name." ".$key_value,$con, $url);
+
+	//delete all unnecessary templates anchors
+	for($i=0; $i < 9; $i++){
+		$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", $snippet_array["$i"]["title"], $template);
+		$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", $snippet_array["$i"]["description"], $template);
+		$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", $snippet_image_array["$i"]["large"], $template);
+		$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", $snippet_image_array["$i"]["small"], $template);
+	}
 }
 
 for($i=1; $i <= 9; $i++){
@@ -603,7 +642,6 @@ if(!$is_cached){
 	savePageInfo($con,$url,$page_title,$page_title,$page_meta_description);
 }
 
-mysqli_close($con);
 $template=preg_replace("/\[BREAD_CRUMBS\]/", $bread_crumbs, $template);
 
 $page_title=preg_replace("/\[REGION_NAME\]/", $region_name, $page_title);
@@ -617,14 +655,7 @@ for($i=1; $i <= 9; $i++){
 	$template=preg_replace("/\[CITY_CASE_".$i."\]/", $city_cases["$i"], $template);
 }
 
-//delete all unnecessary templates anchors
-for($i=0; $i < 9; $i++){
-	$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", $snippet_array["$i"]["title"], $template);
-	$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", $snippet_array["$i"]["description"], $template);
-	$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", $snippet_image_array["$i"]["large"], $template);
-	$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", $snippet_image_array["$i"]["small"], $template);
-}
-$template = fillSnippetsContent($template,$city_name." ".$key_value);
+mysqli_close($con);
 
 echo $template;	
 ?>
