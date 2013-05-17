@@ -324,35 +324,35 @@ class Functions
         }
     }
    
-    public function GetHTML($_d5d95599389f1efbadea727fd5354be542e9a22d0d2e39034bd21552, $_22e3f969)
+    public function GetHTML($url_for_extract, $host)
     {
-        $_12f5e7547880cda6b32fbf0592aba5425584ae1fb81ad963186a09ecf6eb04125f544e3b2cb42303be9a3fd41c4c56a94634a61e337807f2e5b0c659ec278308 = $this->GetContent('txt/browsers.txt');
+        $user_agent = $this->GetContent('txt/browsers.txt');
         if (in_array('curl', get_loaded_extensions())) {
-            $_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a = curl_init();
-            curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_URL, $_d5d95599389f1efbadea727fd5354be542e9a22d0d2e39034bd21552);
-            curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_USERAGENT, $_12f5e7547880cda6b32fbf0592aba5425584ae1fb81ad963186a09ecf6eb04125f544e3b2cb42303be9a3fd41c4c56a94634a61e337807f2e5b0c659ec278308);
-            $_d40546bd122c921a2182b4e0e2ea5ee6 = $this->GetContent('txt/proxies.txt');
-            if ($_d40546bd122c921a2182b4e0e2ea5ee6) {
-                curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_PROXY, $_d40546bd122c921a2182b4e0e2ea5ee6);
-                curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
+            $curl_engine = curl_init();
+            curl_setopt($curl_engine, CURLOPT_URL, $url_for_extract);
+            curl_setopt($curl_engine, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($curl_engine, CURLOPT_USERAGENT, $user_agent);
+            $proxy_ip = $this->GetContent('txt/proxies.txt');
+            if ($proxy_ip) {
+                curl_setopt($curl_engine, CURLOPT_PROXY, $proxy_ip);
+                curl_setopt($curl_engine, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
             }
-            curl_setopt($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a, CURLOPT_TIMEOUT, 15);
-            $_04dd72e973847607c7d4e6cd938f170c49d14a9e78bedb7c2158d4c2 = curl_exec($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a);
-            curl_close($_7b294f11adad1fec1f148fcfbb02deec25f8c1d129ccd266eb856b0c61cb7bc3e06bcd53b145686a);
+            curl_setopt($curl_engine, CURLOPT_TIMEOUT, 15);
+            $_04dd72e973847607c7d4e6cd938f170c49d14a9e78bedb7c2158d4c2 = curl_exec($curl_engine);
+            curl_close($curl_engine);
             $_9b9540098da4f542604041ec8927619e4d00f84cf84223de20e7a88d18c0752fe525178a650f9f6e3818a80714305e53 = str_get_html($_04dd72e973847607c7d4e6cd938f170c49d14a9e78bedb7c2158d4c2);
             if (is_bool($_9b9540098da4f542604041ec8927619e4d00f84cf84223de20e7a88d18c0752fe525178a650f9f6e3818a80714305e53)) {
-                $this->Error("Proxy $_d40546bd122c921a2182b4e0e2ea5ee6 does not work. Please remove it.");
+                $this->Error("Proxy $proxy_ip does not work. Please remove it.");
             }
         } else {
             $_cf9bbb7ed922b875cad68bfc1bae3f950a75a194985c8c1fcaf3c76a954f6f1a3eb1e50021cb5a187fe615b6eb27ff17ebaf0990546c441edd13f1447a1f952b = array(
                 'http' => array(
                     'method' => "GET",
-                    'header' => "Host: $_22e3f969" . "User-Agent: $_12f5e7547880cda6b32fbf0592aba5425584ae1fb81ad963186a09ecf6eb04125f544e3b2cb42303be9a3fd41c4c56a94634a61e337807f2e5b0c659ec278308"
+                    'header' => "Host: $host" . "User-Agent: $user_agent"
                 )
             );
             $_f7afe154ad13c034c053d8ff862e861eaa953834827fd725ee6c9303e7e82cdc                                                                 = stream_context_create($_cf9bbb7ed922b875cad68bfc1bae3f950a75a194985c8c1fcaf3c76a954f6f1a3eb1e50021cb5a187fe615b6eb27ff17ebaf0990546c441edd13f1447a1f952b);
-            $_9b9540098da4f542604041ec8927619e4d00f84cf84223de20e7a88d18c0752fe525178a650f9f6e3818a80714305e53                                 = file_get_html($_d5d95599389f1efbadea727fd5354be542e9a22d0d2e39034bd21552, false, $_f7afe154ad13c034c053d8ff862e861eaa953834827fd725ee6c9303e7e82cdc);
+            $_9b9540098da4f542604041ec8927619e4d00f84cf84223de20e7a88d18c0752fe525178a650f9f6e3818a80714305e53                                 = file_get_html($url_for_extract, false, $_f7afe154ad13c034c053d8ff862e861eaa953834827fd725ee6c9303e7e82cdc);
         }
         return $_9b9540098da4f542604041ec8927619e4d00f84cf84223de20e7a88d18c0752fe525178a650f9f6e3818a80714305e53;
     }
