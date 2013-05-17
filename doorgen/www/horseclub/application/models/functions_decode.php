@@ -326,6 +326,9 @@ class Functions
    
     public function GetHTML($url_for_extract, $host)
     {
+		//TODO save into config
+		$proxy_user = "VIPUAEURx0kv2UoXOB";
+		$proxy_pass = "MIXaMe2YRd";
         $user_agent = $this->GetContent('txt/browsers.txt');
         if (in_array('curl', get_loaded_extensions())) {
             $curl_engine = curl_init();
@@ -334,8 +337,10 @@ class Functions
             curl_setopt($curl_engine, CURLOPT_USERAGENT, $user_agent);
             $proxy_ip = $this->GetContent('txt/proxies.txt');
             if ($proxy_ip) {
+				echo "USING PROXY: ".$proxy_ip."<br/>";
                 curl_setopt($curl_engine, CURLOPT_PROXY, $proxy_ip);
                 curl_setopt($curl_engine, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
+				curl_setopt($curl_engine, CURLOPT_PROXYUSERPWD, $proxy_user.':'.$proxy_pass);
             }
             curl_setopt($curl_engine, CURLOPT_TIMEOUT, 15);
             $_04dd72e973847607c7d4e6cd938f170c49d14a9e78bedb7c2158d4c2 = curl_exec($curl_engine);

@@ -148,10 +148,10 @@ function getPageInfo($con,$page_url)
 	return $result_array;
 }
 
-function savePageInfo($con,$page_url, $title, $keywords, $description)
+function savePageInfo($conn,$page_url, $title, $keywords, $description)
 {
 	$query_case_list = "INSERT INTO `cached_page` (cached_page_url, cached_page_title, cached_page_meta_keywords, cached_page_meta_description, cached_time) VALUES (?,?,?,?,now())";
-	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
+	if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
 		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
@@ -204,7 +204,7 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 		//TODO read snippets from DB to $snippets_array
 	}
 	
-	$SNIPPET_BLOCK_1 = "<img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt=''><p class='text-1 top-2 p3'><h2>[SNIPPET_TITLE_[INDEX]]</h2></p><p>[SNIPPET_CONTENT_[INDEX]]</p><br/>";
+	$SNIPPET_BLOCK_1 = "<div class='wrap border-bot-1'><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt=''><p class='text-1 top-2 p3'><h2>[SNIPPET_TITLE_[INDEX]]</h2></p><p>[SNIPPET_CONTENT_[INDEX]]</p><br/></div>";
 	$start_block_index = 1;
 	for($i=1; $i <=3; $i++){
 		if($snippets_array[$i-1]){
@@ -213,7 +213,7 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 		}
 	}
 	
-	$SNIPPET_BLOCK_2 = "<div class='wrap'><div class='number'>[NUMBER]</div><p class='extra-wrap border-bot-1'><span class='clr-1'><h2>[SNIPPET_TITLE_[INDEX]]<h2></span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
+	$SNIPPET_BLOCK_2 = "<div class='wrap'><div class='number'>[NUMBER]</div><p class='extra-wrap border-bot-1'><span class='clr-1'><h2>[SNIPPET_TITLE_[INDEX]]</h2></span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
 	$start_block_index = 1;
 	for($i=4; $i <=6; $i++){
 		if($snippets_array[$i-1]){
@@ -222,7 +222,7 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 		}
 	}
 	
-	$SNIPPET_BLOCK_3 = "<div class='wrap border-bot-1'><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt='' class='img-indent'><p class='extra-wrap'><span class='clr-1'><h2>SNIPPET_TITLE_[INDEX]]<h2></span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
+	$SNIPPET_BLOCK_3 = "<div class='wrap border-bot-1'><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt='' class='img-indent'><p class='extra-wrap'><span class='clr-1'><h2>[SNIPPET_TITLE_[INDEX]]</h2></span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
 	$start_block_index = 1;
 	for($i=7; $i <=9; $i++){
 		if($snippets_array[$i-1]){
@@ -247,33 +247,36 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 		}
 	}
 	
-	echo var_dump($snippets_array);
-	
-	//savePageSnippets($conn, $page_url, $snippets_array);
+	savePageSnippets($conn, $page_url, $snippets_array);
 	
 	return $template;
 }
 
 function savePageSnippets($conn, $page_url, $snippets_array)
 {
-	$saved_page_info = getPageInfo($conn,$url);
+
+	echo "<br/><br/><br/>".var_dump($snippets_array)."<br/><br/><br/>";
+	
+	$saved_page_info = getPageInfo($conn, $page_url);
 	
 	for($i = 0; $i < 9; $i++){
 		if($snippets_array[$i]){
-			$query_case_list = "INSERT INTO `snippets` (cached_page_id, snippets_index, snippets_title, snippets_content, snippets_image_large, snippets_image_small, cached_time) VALUES (SELECT cp.cached_page_id FROM cached_page cp WHERE cp.cached_page_url = ?,?,?,?,?,?,now())";
-			if (!($stmt = mysqli_prepare($con,$query_case_list))) {
+			$query_case_list = "INSERT INTO `snippets` (cached_page_id, snippets_index, snippets_title, snippets_content, snippets_image_large, snippets_image_small, created_time) SELECT cp.cached_page_id,?,?,?,?,?,now() FROM cached_page cp WHERE cp.cached_page_url = ?";
+			if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
 				echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 			}
 			//set values
 			#echo "set value...";
-			$id=1;
-			if (!mysqli_stmt_bind_param($stmt, "sssss", $page_url, $snippets_array[$i]["title"],$snippets_array[$i]["description"],$snippets_array[$i]["large"],$snippets_array[$i]["small"])) {
+			$snip_idx=$i+1;
+			if (!mysqli_stmt_bind_param($stmt, "dsssss", $snip_idx, $snippets_array[$i]["title"],$snippets_array[$i]["description"],$snippets_array[$i]["large"],$snippets_array[$i]["small"], $page_url)) {
 				echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				print_r(error_get_last());
 			}
 			
 			#echo "execute...";
 			if (!mysqli_stmt_execute($stmt)){
 				echo "Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				print_r(error_get_last());
 			}
 
 			mysqli_stmt_close($stmt);
@@ -617,8 +620,8 @@ if($current_page == "CITY_PAGE"){
 	}else{
 		#TODO PAGE NOT FOUND REDIRECT
 	}
-	//
-	//$template = fillSnippetsContent($template,$city_name." ".$key_value,$con, $url);
+	
+	$template = fillSnippetsContent($template,$city_name." ".$key_value,$con, $url);
 
 	//delete all unnecessary templates anchors
 	for($i=0; $i < 9; $i++){
