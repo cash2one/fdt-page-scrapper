@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -57,6 +55,11 @@
             /* Site Structure */
             #header {height: 101px; margin-bottom: 50px;}
             .logo {float: left;}
+			#content {float: left; width: 670px; border: 0px solid red}
+
+			.post {clear: both; height: auto; margin-bottom: 45px; border: 0px solid blue}
+
+			#sidebar_right {float: right; width: 270px; border: 0px solid red;}
             #container {width: 960px; margin: auto}
             #navcontainer {height: 55px; padding-top: 20px; 55px; padding-bottom: 20px; text-align: left}
             .logo {float: left;}
@@ -118,6 +121,21 @@
             background: url(http://vrikl.com/shabs/1/images/seperator.png) repeat-x bottom;
             padding-bottom: 10px;
             }
+			#submit {
+				background:url(http://vrikl.com/shabs/1/images/submit.png);
+				height: 39px;
+				width: 99px;
+				text-indent: -9999px;
+				border: none;
+				cursor: pointer;
+				float: right
+			}
+
+			.image_post {border: 10px solid white; float: left; margin-right: 10px;}
+
+			.sidebar_img_left {float: left; padding: 0px; border: 4px solid #f7f9fb; margin-bottom: 4px;}
+
+			.sidebar_img_right {float: right; padding: 0px; border: 4px solid #f7f9fb; margin-bottom: 4px;}
         </style>
     </head>
     <body>
@@ -161,34 +179,6 @@
                     </table>
                 </div>
             </div>
-            <!--nav>  
-                <ul class="menu">
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="breeding.html">Breeding</a></li>
-                    <li><a href="sale.html">Horse Sale</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
-                </ul>
-                <div class="clear"></div>
-                </nav-->
-            <!--==============================content================================-->
-            <!--div class="container_12 top-1">
-                <!--div class="grid_4 box-1">
-                	<img src="images/page1-img1.jpg" alt="">
-                    <a href="#"><span class="clr-1">Horse</span> Breeding</a>
-                </div>
-                <div class="grid_4 box-1">
-                	<img src="images/page1-img2.jpg" alt="">
-                    <a href="#"><span class="clr-1">Horse</span> Sale</a>
-                </div>
-                <div class="grid_4 box-1">
-                	<img src="images/page1-img3.jpg" alt="">
-                    <a href="#"><span class="clr-1">Horse</span> Events</a>
-                </div>
-                <div class="grid_12">
-                	<div class="line pad-1"></div>
-                </div-->
             <div class="pathline">
                 [BREAD_CRUMBS]<br/><br/>
             </div>
@@ -252,8 +242,12 @@
                     <p>[LINKS]</p>
                 </div>
             </div>
-            <!--==============================footer=================================-->
-            <div id="footer">
+            <script>
+                Cufon.now();
+            </script>  
+        </div>
+		<!--==============================footer=================================-->
+            <footer>
                 <div class="footer-col-1">
                     <h3>Poclednie 5-10 linkov ( fixirovanno )</h3>
                     <ul class="list-1">
@@ -281,11 +275,7 @@
                         <a href="http://www.artlebedev.ru/" target="_blank" class="link">Дизайн</a> >Студия Артемия Лебедева | <a rel="nofollow" href="http://www.html5xcss3.com/" target="_blank" class="link">html5xcss3.com<a/>
                     </p>
                 </div>
-            </div>
-            <script>
-                Cufon.now();
-            </script>  
-        </div>
+            </footer>
     </body>
 </html>
 
