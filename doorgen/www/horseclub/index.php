@@ -170,38 +170,38 @@ function savePageInfo($conn,$page_url, $title, $keywords, $description)
 }
 
 function fillSnippetsContent($template, $key_value, $conn, $page_url){
-	$function = new Functions;
-	$google_snippet = new Google;
-	$google_image = new ImagesGoogle;
 
-	$rand_index_array = array();
-	$snippets_array = array();
-	$index = 0;
-	while(count($rand_index_array) < 3){
-		$rand_value = rand(0,8);
-		if(!in_array($rand_value,$rand_index_array)){
-			$rand_index_array[$index] = $rand_value;
-			$index++;
+	$snippets_array = getPageSnippets($conn,$page_url);
+	
+	if(!$snippets_array){
+		$function = new Functions;
+		$google_snippet = new Google;
+		$google_image = new ImagesGoogle;
+
+		$rand_index_array = array();
+		$snippets_array = array();
+		$index = 0;
+		while(count($rand_index_array) < 3){
+			$rand_value = rand(0,8);
+			if(!in_array($rand_value,$rand_index_array)){
+				$rand_index_array[$index] = $rand_value;
+				$index++;
+			}
 		}
-	}
-	
-	echo var_dump($rand_index_array)."<br/><br/>";
-	
-	//TODO check for snippets content existence
-	if(!$snippets_array) {
+		
 		while(!$snippet_image_array || !$snippet_array){
 			$snippet_image_array = $google_image->Start($key_value,count($rand_index_array),$function);
 			$snippet_array = $google_snippet->Start($key_value,'ru',count($rand_index_array),$function);
 		}
 		
 		for($i=0; $i < count($rand_index_array); $i++){
-			$snippets_array[$rand_index_array[$i]]['title'] = $snippet_array[$i]['title'];
-			$snippets_array[$rand_index_array[$i]]['description'] = $snippet_array[$i]['description'];
+			$snippets_array[$rand_index_array[$i]]['title'] = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[$i]['title']);
+			$snippets_array[$rand_index_array[$i]]['description'] = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[$i]['description']);
 			$snippets_array[$rand_index_array[$i]]['small'] = $snippet_image_array[$i]['small'];
 			$snippets_array[$rand_index_array[$i]]['large'] = $snippet_image_array[$i]['large'];
 		}
-	}else{
-		//TODO read snippets from DB to $snippets_array
+		
+		savePageSnippets($conn, $page_url, $snippets_array);
 	}
 	
 	$SNIPPET_BLOCK_1 = "<div class='wrap border-bot-1'><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt=''><p class='text-1 top-2 p3'><h2>[SNIPPET_TITLE_[INDEX]]</h2></p><p>[SNIPPET_CONTENT_[INDEX]]</p><br/></div>";
@@ -247,16 +247,11 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 		}
 	}
 	
-	savePageSnippets($conn, $page_url, $snippets_array);
-	
 	return $template;
 }
 
 function savePageSnippets($conn, $page_url, $snippets_array)
 {
-
-	echo "<br/><br/><br/>".var_dump($snippets_array)."<br/><br/><br/>";
-	
 	$saved_page_info = getPageInfo($conn, $page_url);
 	
 	for($i = 0; $i < 9; $i++){
@@ -267,8 +262,7 @@ function savePageSnippets($conn, $page_url, $snippets_array)
 			}
 			//set values
 			#echo "set value...";
-			$snip_idx=$i+1;
-			if (!mysqli_stmt_bind_param($stmt, "dsssss", $snip_idx, $snippets_array[$i]["title"],$snippets_array[$i]["description"],$snippets_array[$i]["large"],$snippets_array[$i]["small"], $page_url)) {
+			if (!mysqli_stmt_bind_param($stmt, "dsssss", $i, $snippets_array[$i]["title"],$snippets_array[$i]["description"],$snippets_array[$i]["large"],$snippets_array[$i]["small"], $page_url)) {
 				echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 				print_r(error_get_last());
 			}
@@ -284,6 +278,44 @@ function savePageSnippets($conn, $page_url, $snippets_array)
 	}
 }
 
+function getPageSnippets($conn,$page_url)
+{
+	$query_case_list = "select snp.snippets_index, snp.cached_page_id, snp.snippets_title, snp.snippets_content, snp.snippets_image_large, snp.snippets_image_small from snippets snp where snp.cached_page_id IN (select cp.cached_page_id from cached_page cp where cp.cached_page_url = ?)";
+	if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
+		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+	//set values
+	#echo "set value...";
+	if (!mysqli_stmt_bind_param($stmt, "s", $page_url)) {
+		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+	
+	#echo "execute...";
+	if (!mysqli_stmt_execute($stmt)){
+		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+
+	/* instead of bind_result: */
+	#echo "get result...";
+	if(!mysqli_stmt_bind_result($stmt, $snippets_index, $cached_page_id, $snippets_title, $snippets_content, $snippets_image_large, $snippets_image_small)){
+		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+	
+	while(mysqli_stmt_fetch($stmt)) {
+		$snippets_array[$snippets_index] = array(	
+						"cached_page_id"=>$cached_page_id,
+						"title"=>$snippets_title,
+						"description"=>$snippets_content, 
+						"large"=>$snippets_image_large,
+						"small"=>$snippets_image_small
+					);	
+	}
+		
+	mysqli_stmt_close($stmt);
+	
+	return $snippets_array;
+}
+
 //заводим массивы ключей и городов
 $CITY_NEWS_PER_PAGE=1;
 $city_news_page_number=1;
@@ -294,8 +326,6 @@ $title_template = "Кредиты в России, Банки России, Об
 $function = new Functions;
 $google_snippet = new Google;
 $google_image = new ImagesGoogle;
-
-print_r(error_get_last());
 
 //определяем имя домена и сабдомена и записываем номер ключа и номер города
 $url = $_SERVER["HTTP_HOST"];
@@ -337,11 +367,11 @@ if( $url_city && is_numeric($url_city) && $url_region){
 	#echo "REGION_PAGE";
 } elseif($url_city == 'index.php' && !$url_region){
 	//TODO Обработка региона
-	$template=file_get_contents("tmpl_main.html");
+	$template=file_get_contents("tmpl_main_new.html");
 	$current_page = "MAIN_PAGE";
 	#echo "MAIN_PAGE";
 }else{
-	$template=file_get_contents("tmpl_main.html");
+	$template=file_get_contents("tmpl_main_new.html");
 	$current_page = "MAIN_PAGE";
 	#echo "MAIN_PAGE";
 }
@@ -365,7 +395,7 @@ else
 $template=preg_replace("/\[RANDKEY\]/e", 'trim($keys[rand(0,$max_k)])', $template);
 $template=preg_replace("/\[RANDCITY\]/e", 'trim($city[rand(0,$max_c)])', $template);
 $template=preg_replace("/\[URL\]/", "http://$url", $template);
-$template=preg_replace("/\[URLMAIN\]/", "http://$url1[0]", $template);
+$template=preg_replace("/\[URLMAIN\]/", "http://$url", $template);
 
 //fetch regions
 $con=mysqli_connect("localhost","root","hw6cGD6X","doorgen_banks");
@@ -535,7 +565,6 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 if($current_page == "CITY_PAGE"){
 	//get region names
 	$key_info = getKeyInfo($con,$url_city);
-	#echo "var_dump: ". var_dump($key_info)."<br/>";
 
 	if($key_info){
 		$region_name = $key_info['region_name'];
