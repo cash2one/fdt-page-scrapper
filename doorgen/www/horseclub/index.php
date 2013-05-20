@@ -461,7 +461,7 @@ if($current_page == "MAIN_PAGE"){
 		$curentFrstChr = mb_substr($row['region_name'],0,1, 'UTF-8');
 		if($firstRegNmChr != $curentFrstChr){
 			$firstRegNmChr = $curentFrstChr;
-			$regions = $regions."<br><h2>$firstRegNmChr</h2><br/>";
+			$regions = $regions."<br><h2>$firstRegNmChr</h2>";
 		}
 		//fill result with region list
 		$posted = $posted + 1;
