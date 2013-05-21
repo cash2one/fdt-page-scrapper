@@ -350,7 +350,7 @@ if(count($request_uri)>=1){
 //обрабатываем запрос генерации урлов
 
 if( $url_city && is_numeric($url_city) && $url_region){
-	$template = file_get_contents("tmpl_region.html");
+	$template = file_get_contents("tmpl_region_new.html");
 	$city_news_page_number = $url_city;
 	$current_page = "REGION_PAGE_PAGING";
 	#echo "REGION_PAGE_PAGING";
@@ -361,7 +361,7 @@ if( $url_city && is_numeric($url_city) && $url_region){
 	$current_page = "CITY_PAGE";
 	#echo "CITY_PAGE";
 } elseif(!$url_city && $url_region){
-	$template = file_get_contents("tmpl_region.html");
+	$template = file_get_contents("tmpl_region_new.html");
 	$current_page = "REGION_PAGE";
 	$city_news_page_number = 1;
 	#echo "REGION_PAGE";
@@ -489,7 +489,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 		$page_title = $region_name." - ".$title_template." | ".$_SERVER[HTTP_HOST];
 	}
 	#echo "region_name: " . $region_name . "<br>";
-	//getting city new count
+	//getting city news count
 	$query_count = "SELECT count(*) as row_count FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER('".$url_region."'),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id";
 	$result = mysqli_query($con,$query_count);
 	
@@ -669,7 +669,7 @@ for($i=1; $i <= 9; $i++){
 if(!$is_cached){
 	while(!$page_meta_description){
 		$snippet_array = $google_snippet->Start($page_title,'ru',1,$function);
-		$page_meta_description = $snippet_array[0]["description"];
+		$page_meta_description = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[0]["description"]);
 	}
 	savePageInfo($con,$url,$page_title,$page_title,$page_meta_description);
 }
