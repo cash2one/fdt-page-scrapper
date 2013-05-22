@@ -9,12 +9,15 @@ class Pager
 		$prev_page_label = "Предыдущая";
 		
 		if($page_number == 1 && $max_page_number == 1){
+			//если только одна страница
 			return "";
 		}elseif($page_number == $max_page_number){
-			return "<a href =\"".$url.($page_number-1)."/\">".$prev_page_label."</a>";
+			//только предыдущая
+			return "<a href =\"".(($page_number-1==1)?$url:$url.($page_number-1)."/")."\">".$prev_page_label."</a>";
 		}elseif($page_number < $max_page_number && $page_number != 1){
-			return "<a href =\"".$url.($page_number-1)."/\">".$prev_page_label."</a>&nbsp;<a href =\"".$url.($page_number+1)."/\">".$next_page_label."</a>";
+			return "<a href =\"".(($page_number-1==1)?$url:$url.($page_number-1)."/")."\">".$prev_page_label."</a>&nbsp;<a href =\"".$url.($page_number+1)."/\">".$next_page_label."</a>";
 		}elseif($page_number < $max_page_number && $page_number == 1){
+			//если страница первая
 			return "<a href =\"".$url.($page_number+1)."/\">".$next_page_label."</a>";
 		}
 	}

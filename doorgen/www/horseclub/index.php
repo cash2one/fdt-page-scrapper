@@ -317,7 +317,7 @@ function getPageSnippets($conn,$page_url)
 }
 
 //заводим массивы ключей и городов
-$CITY_NEWS_PER_PAGE=1;
+$CITY_NEWS_PER_PAGE=10;
 $city_news_page_number=1;
 $current_page="MAIN_PAGE";
 
@@ -461,7 +461,7 @@ if($current_page == "MAIN_PAGE"){
 		$curentFrstChr = mb_substr($row['region_name'],0,1, 'UTF-8');
 		if($firstRegNmChr != $curentFrstChr){
 			$firstRegNmChr = $curentFrstChr;
-			$regions = $regions."<br><h2>$firstRegNmChr</h2>";
+			$regions = $regions."<br><h3>$firstRegNmChr</h3>";
 		}
 		//fill result with region list
 		$posted = $posted + 1;
@@ -495,12 +495,12 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	
 	$row = mysqli_fetch_assoc($result);
 	$city_news_count = $row['row_count'];
-	#echo "city_news_count: " . $city_news_count . "<br>";
+	echo "city_news_count: " . $city_news_count . "<br>";
 	
 	if($city_news_count>0){
 		//вычисляем последнюю страницы
 		$max_page_number = floor($city_news_count/$CITY_NEWS_PER_PAGE);
-		if(city_news_count%$CITY_NEWS_PER_PAGE != 0){
+		if($city_news_count%$CITY_NEWS_PER_PAGE != 0){
 			$max_page_number = $max_page_number + 1;
 		}
 		
@@ -508,11 +508,11 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 			$city_news_page_number = $max_page_number;
 		}
 		
-		#echo "max_page_number: ".$max_page_number."<br>";
-		#echo "final city_news_page_number: ".$city_news_page_number."<br>";
+		echo "max_page_number: ".$max_page_number."<br>";
+		echo "final city_news_page_number: ".$city_news_page_number."<br>";
 		
 		$start_position = $CITY_NEWS_PER_PAGE*($city_news_page_number-1);
-		#echo "start_position: ".$start_position."<br>";
+		echo "start_position: ".$start_position."<br>";
 
 		#echo "Region page processing...";
 		//prepare statement
@@ -540,20 +540,28 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 			echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
-		$index = 1;
+		$news_block = "";
+		$cur_news_posted_time = "";
 		while (mysqli_stmt_fetch($stmt)) {
+			if($cur_news_posted_time != rusdate($posted_time,'j %MONTH% Y')){
+				$cur_news_posted_time = rusdate($posted_time,'j %MONTH% Y');
+				$news_block = $news_block."<br/><h3>".$cur_news_posted_time."</h3>";
+			}
 			// use your $myrow array as you would with any other fetch
 			#echo "City name: ".$city_name."; key: ".$key_value;
-			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$city_name." ".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a>&nbsp;";
-			$template=preg_replace("/\[CITY_NEWS_".$index."\]/", $city_href, $template);
-			$index = $index+1;
+			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$city_name." ".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
+			$news_block = $news_block.$city_href;
 		}
+		$template=preg_replace("/\[CITY_NEWS_1\]/", $news_block, $template);
 
 		$pager = new Pager;
 		$template=preg_replace("/\[PAGER\]/", $pager->getPageNavigation("/".str_replace(" ","-",$region_name_latin)."/",$city_news_page_number, $max_page_number), $template);
 		
 		/* explicit close recommended */
 		mysqli_stmt_close($stmt);
+	}else{
+		$template=preg_replace("/\[CITY_NEWS_1\]/", "Новостей по данному региону не найдео", $template);
+		$template=preg_replace("/\[PAGER\]/","", $template);
 	}
 	//fill [BREAD_CRUMBS]
 	$bread_crumbs = "<a href =\"/\">".Главная."</a>&nbsp;>&nbsp;<a href =\"#\">".$region_name."</a>&nbsp;";
