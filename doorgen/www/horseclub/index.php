@@ -115,6 +115,7 @@ function getKeyInfo($con,$city_page_key)
 
 function getPageInfo($con,$page_url)
 {
+	$result_array = array();
 	$query_case_list = "SELECT cp.cached_page_id, cp.cached_page_title, cp.cached_page_meta_keywords, cp.cached_page_meta_description, cp.cached_time FROM `cached_page` cp WHERE 1 AND cp.cached_page_url = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -157,6 +158,7 @@ function getPageInfo($con,$page_url)
 
 function savePageInfo($conn,$page_url, $title, $keywords, $description)
 {
+	#echo "Saving page info..<br/>";
 	$query_case_list = "INSERT INTO `cached_page` (cached_page_url, cached_page_title, cached_page_meta_keywords, cached_page_meta_description, cached_time) VALUES (?,?,?,?,now())";
 	if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -174,6 +176,10 @@ function savePageInfo($conn,$page_url, $title, $keywords, $description)
 	}
 
 	mysqli_stmt_close($stmt);
+	
+	$conn->commit();
+	
+	unset($query_case_list);
 }
 
 function fillSnippetsContent($template, $key_value, $conn, $page_url){
@@ -182,9 +188,8 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 	$snippets_array = getPageSnippets($conn,$page_url);
 	
 	if(!$snippets_array){
-		echo "Saving snippets.";
+		#echo "Saving snippets.";
 		$rand_index_array = array();
-		$snippets_array = array();
 		$index = 0;
 		while(count($rand_index_array) < 3){
 			$rand_value = rand(0,8);
@@ -195,20 +200,18 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 		}
 		
 		$snippet_image_array = $google_image->Start($key_value,count($rand_index_array),$function);
-		$iterator_i = 0;
+		$snippet_array = array();
 		while(!$snippet_array){
-			$iterator_i++;
-			echo "Iterator index: ".$iterator_i."<br/>";
-			echo "key_value: ".$key_value."<br/>";
 			$snippet_array = $snippet_extractor->Start($key_value,'ru',count($rand_index_array),$function);
-			echo var_dump($snippet_array);
 		}
 		
 		for($i=0; $i < count($rand_index_array); $i++){
 			$snippets_array[$rand_index_array[$i]]['title'] = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[$i]['title']);
 			$snippets_array[$rand_index_array[$i]]['description'] = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[$i]['description']);
-			$snippets_array[$rand_index_array[$i]]['small'] = $snippet_image_array[$i]['small'];
-			$snippets_array[$rand_index_array[$i]]['large'] = $snippet_image_array[$i]['large'];
+			if($snippet_image_array && $snippet_image_array[$i]){
+				$snippets_array[$rand_index_array[$i]]['small'] = $snippet_image_array[$i]['small'];
+				$snippets_array[$rand_index_array[$i]]['large'] = $snippet_image_array[$i]['large'];
+			}
 		}
 		
 		savePageSnippets($conn, $page_url, $snippets_array);
@@ -217,7 +220,7 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 	$SNIPPET_BLOCK_1 = "<div class='wrap border-bot-1'><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt=''><p class='text-1 top-2 p3'><h2>[SNIPPET_TITLE_[INDEX]]</h2></p><p>[SNIPPET_CONTENT_[INDEX]]</p><br/></div>";
 	$start_block_index = 1;
 	for($i=1; $i <=3; $i++){
-		if($snippets_array[$i-1]){
+		if(isset($snippets_array[$i-1])){
 			$template=preg_replace("/\[SNIPPET_BLOCK_1_".$start_block_index."\]/", preg_replace("/\[INDEX\]/", $i, $SNIPPET_BLOCK_1), $template);
 			$start_block_index++;
 		}
@@ -226,7 +229,7 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 	$SNIPPET_BLOCK_2 = "<div class='wrap'><div class='number'>[NUMBER]</div><p class='extra-wrap border-bot-1'><span class='clr-1'><h2>[SNIPPET_TITLE_[INDEX]]</h2></span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
 	$start_block_index = 1;
 	for($i=4; $i <=6; $i++){
-		if($snippets_array[$i-1]){
+		if(isset($snippets_array[$i-1])){
 			$template=preg_replace("/\[SNIPPET_BLOCK_2_".$start_block_index."\]/", preg_replace("/\[INDEX\]/", $i, preg_replace("/\[NUMBER\]/", $start_block_index, $SNIPPET_BLOCK_2)), $template);
 			$start_block_index++;
 		}
@@ -235,7 +238,7 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 	$SNIPPET_BLOCK_3 = "<div class='wrap border-bot-1'><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt='' class='img-indent'><p class='extra-wrap'><span class='clr-1'><h2>[SNIPPET_TITLE_[INDEX]]</h2></span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
 	$start_block_index = 1;
 	for($i=7; $i <=9; $i++){
-		if($snippets_array[$i-1]){
+		if(isset($snippets_array[$i-1])){
 			$template=preg_replace("/\[SNIPPET_BLOCK_3_".$start_block_index."\]/", preg_replace("/\[INDEX\]/", $i, $SNIPPET_BLOCK_3), $template);
 			$start_block_index++;
 		}
@@ -249,11 +252,16 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 	}
 	
 	for($i=0; $i < 9; $i++){
-		if($snippets_array[$i]){
+		if(isset($snippets_array[$i])){
 			$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", $snippets_array[$i]["title"], $template);
 			$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", $snippets_array[$i]["description"], $template);
-			$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", $snippets_array[$i]["large"], $template);
-			$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", $snippets_array[$i]["small"], $template);
+			$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", isset($snippets_array[$i]["large"])?$snippets_array[$i]["large"]:"", $template);
+			$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", isset($snippets_array[$i]["small"])?$snippets_array[$i]["small"]:"", $template);
+		}else{
+			$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", "", $template);
+			$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", "", $template);
+			$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", "", $template);
+			$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", "", $template);
 		}
 	}
 	
@@ -263,11 +271,9 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 }
 
 function savePageSnippets($conn, $page_url, $snippets_array)
-{
-	$saved_page_info = getPageInfo($conn, $page_url);
-	
+{	
 	for($i = 0; $i < 9; $i++){
-		if($snippets_array[$i]){
+		if(isset($snippets_array[$i])){
 			$query_case_list = "INSERT INTO `snippets` (cached_page_id, snippets_index, snippets_title, snippets_content, snippets_image_large, snippets_image_small, created_time) SELECT cp.cached_page_id,?,?,?,?,?,now() FROM cached_page cp WHERE cp.cached_page_url = ?";
 			if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
 				#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -286,12 +292,15 @@ function savePageSnippets($conn, $page_url, $snippets_array)
 			}
 
 			mysqli_stmt_close($stmt);
+			
+			$conn->commit();
 		}
 	}
 }
 
 function getPageSnippets($conn,$page_url)
 {
+	$snippets_array = array();
 	$query_case_list = "select snp.snippets_index, snp.cached_page_id, snp.snippets_title, snp.snippets_content, snp.snippets_image_large, snp.snippets_image_small from snippets snp where snp.cached_page_id IN (select cp.cached_page_id from cached_page cp where cp.cached_page_url = ?)";
 	if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -337,7 +346,7 @@ $title_template = "Кредиты в России, Банки России, Об
 
 //определяем имя домена и сабдомена и записываем номер ключа и номер города
 $url = $_SERVER["HTTP_HOST"];
-echo "HTTP_HOST: ".$url.'<br>';
+#echo "HTTP_HOST: ".$url.'<br>';
 //preg_match("/[a-z0-9]*\.[a-z0-9]*$/",$url,$url1);
 //preg_match("/[0-9]+-[0-9]+/",$url,$match);
 //list($keys_num, $city_num) = split('-', $match[0]);
@@ -352,8 +361,8 @@ if(count($request_uri)>=1){
 	list($url_region,$url_city) = explode('/', $request_uri[0]);
 }
 
-echo "url_region".$url_region.'<br>';
-echo "url_city".$url_city.'<br>';
+#echo "url_region".$url_region.'<br>';
+#echo "url_city".$url_city.'<br>';
 
 //обрабатываем запрос генерации урлов
 
@@ -367,7 +376,7 @@ if( $url_city && is_numeric($url_city) && $url_region){
 	#echo "url_region: ".$url_region."<br/>";
 	$template = file_get_contents("tmpl_key.html");
 	$current_page = "CITY_PAGE";
-	echo "CITY_PAGE";
+	#echo "CITY_PAGE";
 } elseif(!$url_city && $url_region){
 	$template = file_get_contents("tmpl_region_new.html");
 	$current_page = "REGION_PAGE";
@@ -405,9 +414,9 @@ if($page_info){
 	$page_title = $page_info['cached_page_title'];
 	$page_meta_keywords = $page_info['cached_page_meta_keywords'];
 	$page_meta_description = $page_info['cached_page_meta_description'];
-	echo "Page $url is CACHED."."<br/>";
+	#echo "Page $url is CACHED."."<br/>";
 }else{
-	echo "Page $url is NOT CACHED."."<br/>";
+	#echo "Page $url is NOT CACHED."."<br/>";
 	$is_cached = false;
 }
 
@@ -459,7 +468,7 @@ if($current_page == "MAIN_PAGE"){
 	//apply template
 	$template=preg_replace("/\[REGIONS_1\]/", $regions, $template);
 	
-	$bread_crumbs = "<a href =\"/\">".Главная."</a>";
+	$bread_crumbs = "<a href =\"/\">Главная</a>";
 }
 
 if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
@@ -470,6 +479,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	
 	//generate header menu
 	$caseSelector = new CaseValueSelector;
+	$region_cases = array();
 	$region_cases = $caseSelector->getCaseTitle($con,2,$url_region);
 	
 	if(!$is_cached){
@@ -551,17 +561,18 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 		$template=preg_replace("/\[PAGER\]/","", $template);
 	}
 	//fill [BREAD_CRUMBS]
-	$bread_crumbs = "<a href =\"/\">".Главная."</a>&nbsp;>&nbsp;<a href =\"#\">".$region_name."</a>&nbsp;";
+	$bread_crumbs = "<a href =\"/\">Главная</a>&nbsp;>&nbsp;<a href =\"#\">".$region_name."</a>&nbsp;";
 	
 	//
 	
 }
 
+$key_info = array();
 if($current_page == "CITY_PAGE"){
 	//get city page info
 	$key_info = getKeyInfo($con,$url_city);
 	
-	echo "url_city: ".$url_city."<br/>";
+	#echo "url_city: ".$url_city."<br/>";
 	
 	/*"city_name"=>$city_name,
 						"city_name_latin"=>$city_name_latin,
@@ -571,7 +582,7 @@ if($current_page == "CITY_PAGE"){
 						"region_name_latin"=>$region_name_latin, 
 						"posted_time"=>$posted_time*/
 						
-	echo var_dump($key_info);
+	#echo var_dump($key_info);
 
 	//if page exist
 	if($key_info){
@@ -579,59 +590,62 @@ if($current_page == "CITY_PAGE"){
 		
 		//generate header menu
 		$caseSelector = new CaseValueSelector;
+		$city_cases = array();
 		$city_cases = $caseSelector->getCaseTitle($con,1,$caseSelector->getCityValueByNewsKey($con,$url_city));
 		
 		if(!$is_cached){
 			$page_title = $title_generator->getCityRandomTitle();
 		}
 		//fill [BREAD_CRUMBS]
-		$bread_crumbs = "<a href =\"/\">".Главная."</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['city_name']." ".$key_info['key_value']."</a>";
+		$bread_crumbs = "<a href =\"/\">Главная</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['city_name']." ".$key_info['key_value']."</a>";
 	}else{
 		#TODO PAGE NOT FOUND REDIRECT
 	}
-	
-	//$template = fillSnippetsContent($template,$key_info['city_name']." ".$key_info['key_value'],$con, $url);
-
-	//delete all unnecessary templates anchors
-	/*for($i=0; $i < 9; $i++){
-		$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", '', $template);
-		$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", '', $template);
-		$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", '', $template);
-		$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", '', $template);
-	}*/
-	
-	unset($key_info);
 }
 
 for($i=1; $i <= 9; $i++){
-	$page_title=preg_replace("/\[REGION_CASE_".$i."\]/", $region_cases["$i"], $page_title);
-	$page_title=preg_replace("/\[CITY_CASE_".$i."\]/", $city_cases["$i"], $page_title);
+	$page_title=preg_replace("/\[REGION_CASE_".$i."\]/", isset($region_cases["$i"])?$region_cases["$i"]:"", $page_title);
+	$page_title=preg_replace("/\[CITY_CASE_".$i."\]/", isset($city_cases["$i"])?$city_cases["$i"]:"", $page_title);
 }
+
+$page_title=preg_replace("/\[REGION_NAME\]/", $region_name, $page_title);
 
 if(!$is_cached){
 	$iterator_i = 0;	
-	while(!$page_meta_description){
+	if(!$page_meta_description){
 		#echo "Page_title: ".$page_title."<br/>";
 		#echo "Iterator index: ".$iterator_i."<br/>";
 		$iterator_i++;
-		$snippet_array = $snippet_extractor->Start($page_title,'ru',1,$function);
+		$snippet_array = $snippet_extractor->Start(preg_replace('/\|/',' ',$page_title),'ru',1,$function);
 		$page_meta_description = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[0]["description"]);
 	}
 	$page_title = $page_title." | ".$_SERVER['HTTP_HOST'];
 	savePageInfo($con,$url, $page_title, $page_title, $page_meta_description);
 }
 
-$template=preg_replace("/\[BREAD_CRUMBS\]/", $bread_crumbs, $template);
+if($current_page == "CITY_PAGE"){
+	$template = fillSnippetsContent($template,$key_info['city_name']." ".$key_info['key_value'],$con, $url);
 
-$page_title=preg_replace("/\[REGION_NAME\]/", $region_name, $page_title);
+	//delete all unnecessary templates anchors
+	for($i=0; $i < 9; $i++){
+		$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", '', $template);
+		$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", '', $template);
+		$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", '', $template);
+		$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", '', $template);
+	}
+	
+	unset($key_info);
+}
+
+$template=preg_replace("/\[BREAD_CRUMBS\]/", $bread_crumbs, $template);
 
 $template=preg_replace("/\[REGION_NAME\]/", $region_name, $template);
 $template=preg_replace("/\[TITLE\]/", $page_title, $template);
 $template=preg_replace("/\[DESCRIPTION\]/", $page_meta_description, $template);
 
 for($i=1; $i <= 9; $i++){
-	$template=preg_replace("/\[REGION_CASE_".$i."\]/", $region_cases["$i"], $template);
-	$template=preg_replace("/\[CITY_CASE_".$i."\]/", $city_cases["$i"], $template);
+	$template=preg_replace("/\[REGION_CASE_".$i."\]/", isset($region_cases["$i"])?$region_cases["$i"]:"", $template);
+	$template=preg_replace("/\[CITY_CASE_".$i."\]/", isset($city_cases["$i"])?$city_cases["$i"]:"", $template);
 }
 
 unset($city_cases, $region_cases, $page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator);
