@@ -25,7 +25,7 @@ class TitleGenerator
 	function getCityRandomTitle()
 	{
 		$phrase_array = array("Частный кредит [CITY_CASE_7]","Частный кредит в городе [CITY_CASE_1]","Частный кредит в г.[CITY_CASE_6]","Частный кредит [CITY_CASE_1]");
-		$phrase_end = "| [REGION_NAME] - Кредиты в России, Банки России, Области, Регионы и Округи | ".$_SERVER[HTTP_HOST];
+		$phrase_end = "| [REGION_NAME] - Кредиты в России, Банки России, Области, Регионы и Округи";
 		
 		$size = count($phrase_array);
 		$phrase = "";

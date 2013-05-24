@@ -5,10 +5,15 @@ class Ukr
 	# Функция парсинга выдачи из Ukr.
 	public function Start($string, $language, $count, $F)
 	{
+		$get_count = 50;
 		$snippets = array();
-
+		$init_snippets = array();
+		$page = rand(1,20);
 		$query = urlencode(mb_strtolower($string, 'UTF-8'));
-		$url = "http://search.ukr.net/yandex/search.php?search_mode=ordinal&lang=$language&engine=1&search_query=$query&q=$query";
+		//$url = "http://search.ukr.net/yandex/search.php?search_mode=ordinal&lang=$language&engine=1&search_query=$query&q=$query";
+		$url = "http://search.ukr.net/yandex/search.php?search_mode=advanced&date=&lang=&search_query=$query&spcctx=notfar&zone=all&wordforms=all&lang=$language&within=0&from_day=&from_month=&from_year=&to_day=24&to_month=5&to_year=2013&mime=all&site=&rstr=&ds=&numdoc=$get_count&page=$page";
+		#echo "url : ".$url."<br/>";
+		
 		$html = $F->GetHTML($url, 'search.ukr.net');
 
 		if (!is_bool($html))
@@ -28,7 +33,6 @@ class Ukr
 				{
 					$description = $e->find($d, 0)->plaintext;
 				}
-
 				if ($i < $count)
 				{
 					if (!empty($title) and !empty($description))
@@ -41,7 +45,8 @@ class Ukr
 			}
 
 			$html->clear();
-			$html = null; $e = null;
+			$html = null; 
+			$e = null;
 			unset($html, $e);
 		}
 		else

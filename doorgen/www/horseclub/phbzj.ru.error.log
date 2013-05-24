@@ -3420,3 +3420,301 @@
 [Fri May 24 01:09:18 2013] [error] [client 46.53.195.35] PHP Notice:  Undefined variable: key_value in /home/lol/data/www/phbzj.ru/index.php on line 597, referer: http://phbzj.ru/altayskiy-kray/2/
 [Fri May 24 01:09:18 2013] [error] [client 46.53.195.35] PHP Notice:  Undefined variable: snippets_array in /home/lol/data/www/phbzj.ru/index.php on line 317, referer: http://phbzj.ru/altayskiy-kray/2/
 [Fri May 24 01:09:18 2013] [error] [client 46.53.195.35] PHP Notice:  Undefined variable: snippet_image_array in /home/lol/data/www/phbzj.ru/index.php on line 193, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 353
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 358
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 364
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_region in /home/lol/data/www/phbzj.ru/index.php on line 364
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 369
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: result_array in /home/lol/data/www/phbzj.ru/index.php on line 148
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home/lol/data/www/phbzj.ru/index.php on line 419
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant \xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f - assumed '\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f' in /home/lol/data/www/phbzj.ru/index.php on line 458
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:48:51 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:48:53 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined offset: 0 in /home/lol/data/www/phbzj.ru/index.php on line 616
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_name in /home/lol/data/www/phbzj.ru/index.php on line 623
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_name in /home/lol/data/www/phbzj.ru/index.php on line 625
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:48:57 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 353
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 358
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 364
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_region in /home/lol/data/www/phbzj.ru/index.php on line 364
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 369
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant \xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f - assumed '\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f' in /home/lol/data/www/phbzj.ru/index.php on line 458
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_name in /home/lol/data/www/phbzj.ru/index.php on line 623
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_name in /home/lol/data/www/phbzj.ru/index.php on line 625
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:00 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant \xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f - assumed '\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f' in /home/lol/data/www/phbzj.ru/index.php on line 552, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:49:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 353
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 358
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 364
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_region in /home/lol/data/www/phbzj.ru/index.php on line 364
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 369
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: result_array in /home/lol/data/www/phbzj.ru/index.php on line 148
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home/lol/data/www/phbzj.ru/index.php on line 419
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant \xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f - assumed '\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f' in /home/lol/data/www/phbzj.ru/index.php on line 458
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 609
+[Fri May 24 03:49:06 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610
+[Fri May 24 03:49:08 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined offset: 0 in /home/lol/data/www/phbzj.ru/index.php on line 616
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_name in /home/lol/data/www/phbzj.ru/index.php on line 623
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_name in /home/lol/data/www/phbzj.ru/index.php on line 625
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 630
+[Fri May 24 03:49:10 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631
+[Fri May 24 03:49:11 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: result_array in /home/lol/data/www/phbzj.ru/index.php on line 148, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:49:12 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home/lol/data/www/phbzj.ru/utils/title_generator.php on line 28, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:49:12 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant \xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f - assumed '\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f' in /home/lol/data/www/phbzj.ru/index.php on line 592, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:49:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_name in /home/lol/data/www/phbzj.ru/index.php on line 597, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:49:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: key_value in /home/lol/data/www/phbzj.ru/index.php on line 597, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:49:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: snippets_array in /home/lol/data/www/phbzj.ru/index.php on line 317, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:49:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: snippet_image_array in /home/lol/data/www/phbzj.ru/index.php on line 193, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant \xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f - assumed '\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f' in /home/lol/data/www/phbzj.ru/index.php on line 552, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:50:21 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant \xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f - assumed '\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f' in /home/lol/data/www/phbzj.ru/index.php on line 552, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 610, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:30 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 631, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:50:35 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: result_array in /home/lol/data/www/phbzj.ru/index.php on line 148, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:50:35 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home/lol/data/www/phbzj.ru/utils/title_generator.php on line 28, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:50:35 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant \xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f - assumed '\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f' in /home/lol/data/www/phbzj.ru/index.php on line 592, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:50:35 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_name in /home/lol/data/www/phbzj.ru/index.php on line 597, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:50:35 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: key_value in /home/lol/data/www/phbzj.ru/index.php on line 597, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:50:35 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: snippets_array in /home/lol/data/www/phbzj.ru/index.php on line 317, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:50:35 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: snippet_image_array in /home/lol/data/www/phbzj.ru/index.php on line 193, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:52:04 2013] [error] [client 86.57.247.149] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 322, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 03:52:27 2013] [error] [client 86.57.247.149] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/lol/data/www/phbzj.ru/application/libraries/parser.php on line 1779, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:56:04 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: result_array in /home/lol/data/www/phbzj.ru/index.php on line 148, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:56:05 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home/lol/data/www/phbzj.ru/utils/title_generator.php on line 28, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:56:05 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant \xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f - assumed '\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f' in /home/lol/data/www/phbzj.ru/index.php on line 592, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:56:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_name in /home/lol/data/www/phbzj.ru/index.php on line 597, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:56:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: key_value in /home/lol/data/www/phbzj.ru/index.php on line 597, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:56:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: snippets_array in /home/lol/data/www/phbzj.ru/index.php on line 317, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 03:56:05 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: snippet_image_array in /home/lol/data/www/phbzj.ru/index.php on line 193, referer: http://phbzj.ru/altayskiy-kray/2/
+[Fri May 24 04:23:11 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 349
+[Fri May 24 04:23:11 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 354
+[Fri May 24 04:23:11 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 360
+[Fri May 24 04:23:11 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_region in /home/lol/data/www/phbzj.ru/index.php on line 360
+[Fri May 24 04:23:11 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 365
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: result_array in /home/lol/data/www/phbzj.ru/index.php on line 153
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home/lol/data/www/phbzj.ru/index.php on line 415
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant \xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f - assumed '\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f' in /home/lol/data/www/phbzj.ru/index.php on line 454
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:12 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:14 2013] [error] [client 86.57.247.149] PHP Fatal error:  Function name must be a string in /home/lol/data/www/phbzj.ru/application/plugins/snippets/Ukr.php on line 42
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 349
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 354
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 360
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_region in /home/lol/data/www/phbzj.ru/index.php on line 360
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: url_city in /home/lol/data/www/phbzj.ru/index.php on line 365
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: result_array in /home/lol/data/www/phbzj.ru/index.php on line 153
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home/lol/data/www/phbzj.ru/index.php on line 415
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Use of undefined constant \xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f - assumed '\xd0\x93\xd0\xbb\xd0\xb0\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f' in /home/lol/data/www/phbzj.ru/index.php on line 454
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: region_cases in /home/lol/data/www/phbzj.ru/index.php on line 605
+[Fri May 24 04:23:54 2013] [error] [client 86.57.247.149] PHP Notice:  Undefined variable: city_cases in /home/lol/data/www/phbzj.ru/index.php on line 606
+[Fri May 24 04:23:56 2013] [error] [client 86.57.247.149] PHP Fatal error:  Function name must be a string in /home/lol/data/www/phbzj.ru/application/plugins/snippets/Ukr.php on line 42
+[Fri May 24 04:24:26 2013] [error] [client 86.57.247.149] PHP Fatal error:  Function name must be a string in /home/lol/data/www/phbzj.ru/application/plugins/snippets/Ukr.php on line 42
+[Fri May 24 04:27:17 2013] [error] [client 86.57.247.149] PHP Fatal error:  Function name must be a string in /home/lol/data/www/phbzj.ru/application/plugins/snippets/Ukr.php on line 42
+[Fri May 24 04:27:56 2013] [error] [client 86.57.247.149] PHP Fatal error:  Function name must be a string in /home/lol/data/www/phbzj.ru/application/plugins/snippets/Ukr.php on line 42
+[Fri May 24 04:33:51 2013] [error] [client 86.57.247.149] PHP Fatal error:  Call to a member function Start() on a non-object in /home/lol/data/www/phbzj.ru/index.php on line 193, referer: http://phbzj.ru/respublika-hakasiya/
+[Fri May 24 04:34:48 2013] [error] [client 86.57.247.149] PHP Fatal error:  Call to a member function Start() on a non-object in /home/lol/data/www/phbzj.ru/index.php on line 193, referer: http://phbzj.ru/respublika-hakasiya/
+[Fri May 24 04:36:33 2013] [error] [client 86.57.247.149] PHP Fatal error:  Call to a member function Start() on a non-object in /home/lol/data/www/phbzj.ru/index.php on line 193, referer: http://phbzj.ru/respublika-hakasiya/
+[Fri May 24 04:42:46 2013] [error] [client 86.57.247.149] PHP Parse error:  syntax error, unexpected $end in /home/lol/data/www/phbzj.ru/index.php on line 170
+[Fri May 24 05:15:08 2013] [error] [client 86.57.247.149] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/lol/data/www/phbzj.ru/application/libraries/parser.php on line 1607, referer: http://phbzj.ru/
+[Fri May 24 05:19:07 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 05:19:07 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 05:19:07 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 05:21:26 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 05:21:26 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 05:21:26 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 05:22:29 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 05:22:29 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 05:22:29 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/altayskiy-kray/
+[Fri May 24 05:34:20 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/vladimirskaya-oblast/3/
+[Fri May 24 05:34:20 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/vladimirskaya-oblast/3/
+[Fri May 24 05:34:20 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/vladimirskaya-oblast/3/
+[Fri May 24 05:35:08 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/vladimirskaya-oblast/5/
+[Fri May 24 05:35:08 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/vladimirskaya-oblast/5/
+[Fri May 24 05:35:08 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/vladimirskaya-oblast/5/
+[Fri May 24 05:38:21 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/vladimirskaya-oblast/6/
+[Fri May 24 05:38:21 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/vladimirskaya-oblast/6/
+[Fri May 24 05:38:21 2013] [error] [client 86.57.247.149] PHP Warning:  implode(): Argument must be an array in /home/lol/data/www/phbzj.ru/application/models/functions_decode.php on line 367, referer: http://phbzj.ru/vladimirskaya-oblast/6/
