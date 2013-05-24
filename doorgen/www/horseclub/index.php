@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL ^ E_NOTICE);
+#error_reporting(E_ALL ^ E_NOTICE);
 
 require_once "pager.php";
 require_once "application/models/functions_decode.php";
@@ -36,7 +36,7 @@ function urlgenerator($fkeys, $fcity, $fdomain)
 	{
 		$res=encodestring(trim($fkeys[$i])."-".trim($fcity[$j])."-$i-$j");
 		$res="http://".str_replace(" ","-",$res).".$fdomain";
-		echo "&lta href=\"$res\"&gt".trim($fkeys[$i])." ".trim($fcity[$j])."&lt/a&gt<br>";
+		#echo "&lta href=\"$res\"&gt".trim($fkeys[$i])." ".trim($fcity[$j])."&lt/a&gt<br>";
 	}}
 	
 	
@@ -67,24 +67,24 @@ function getKeyInfo($con,$city_page_key)
 {
 	$query_case_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND cp.city_page_key = ? AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
 	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "s", $city_page_key)) {
-		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 
 	/* instead of bind_result: */
 	#echo "get result...";
 	if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time)){
-		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	if(mysqli_stmt_fetch($stmt)) {
@@ -97,7 +97,7 @@ function getKeyInfo($con,$city_page_key)
 						"posted_time"=>$posted_time
 					);	
 	}else{
-		echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		print_r(error_get_last());
 	}
 	
@@ -110,24 +110,24 @@ function getPageInfo($con,$page_url)
 {
 	$query_case_list = "SELECT cp.cached_page_id, cp.cached_page_title, cp.cached_page_meta_keywords, cp.cached_page_meta_description, cp.cached_time FROM `cached_page` cp WHERE 1 AND cp.cached_page_url = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
 	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "s", $page_url)) {
-		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 
 	/* instead of bind_result: */
 	#echo "get result...";
 	if(!mysqli_stmt_bind_result($stmt, $cached_page_id, $cached_page_title, $cached_page_meta_keywords, $cached_page_meta_description, $cached_time)){
-		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	if(mysqli_stmt_fetch($stmt)) {
@@ -139,7 +139,7 @@ function getPageInfo($con,$page_url)
 						"cached_time"=>$cached_time
 					);	
 	}else{
-		echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		print_r(error_get_last());
 	}
 		
@@ -152,18 +152,18 @@ function savePageInfo($conn,$page_url, $title, $keywords, $description)
 {
 	$query_case_list = "INSERT INTO `cached_page` (cached_page_url, cached_page_title, cached_page_meta_keywords, cached_page_meta_description, cached_time) VALUES (?,?,?,?,now())";
 	if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
 	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "ssss", $page_url,$title,$keywords,$description)) {
-		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		echo "Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 
 	mysqli_stmt_close($stmt);
@@ -189,7 +189,8 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 			}
 		}
 		
-		while(!$snippet_image_array || !$snippet_array){
+		//TODO change on while
+		while(!$snippet_image_array || $snippet_array){
 			$snippet_image_array = $google_image->Start($key_value,count($rand_index_array),$function);
 			$snippet_array = $google_snippet->Start($key_value,'ru',count($rand_index_array),$function);
 		}
@@ -258,18 +259,18 @@ function savePageSnippets($conn, $page_url, $snippets_array)
 		if($snippets_array[$i]){
 			$query_case_list = "INSERT INTO `snippets` (cached_page_id, snippets_index, snippets_title, snippets_content, snippets_image_large, snippets_image_small, created_time) SELECT cp.cached_page_id,?,?,?,?,?,now() FROM cached_page cp WHERE cp.cached_page_url = ?";
 			if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
-				echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 			}
 			//set values
 			#echo "set value...";
 			if (!mysqli_stmt_bind_param($stmt, "dsssss", $i, $snippets_array[$i]["title"],$snippets_array[$i]["description"],$snippets_array[$i]["large"],$snippets_array[$i]["small"], $page_url)) {
-				echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 				print_r(error_get_last());
 			}
 			
 			#echo "execute...";
 			if (!mysqli_stmt_execute($stmt)){
-				echo "Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				#echo "Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 				print_r(error_get_last());
 			}
 
@@ -282,23 +283,23 @@ function getPageSnippets($conn,$page_url)
 {
 	$query_case_list = "select snp.snippets_index, snp.cached_page_id, snp.snippets_title, snp.snippets_content, snp.snippets_image_large, snp.snippets_image_small from snippets snp where snp.cached_page_id IN (select cp.cached_page_id from cached_page cp where cp.cached_page_url = ?)";
 	if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
 	if (!mysqli_stmt_bind_param($stmt, "s", $page_url)) {
-		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 
 	/* instead of bind_result: */
 	#echo "get result...";
 	if(!mysqli_stmt_bind_result($stmt, $snippets_index, $cached_page_id, $snippets_title, $snippets_content, $snippets_image_large, $snippets_image_small)){
-		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	while(mysqli_stmt_fetch($stmt)) {
@@ -355,8 +356,8 @@ if( $url_city && is_numeric($url_city) && $url_region){
 	$current_page = "REGION_PAGE_PAGING";
 	#echo "REGION_PAGE_PAGING";
 } elseif ($url_city && $url_region){
-	echo "url_city: ".$url_city."<br/>";
-	echo "url_region: ".$url_region."<br/>";
+	#echo "url_city: ".$url_city."<br/>";
+	#echo "url_region: ".$url_region."<br/>";
 	$template = file_get_contents("tmpl_key.html");
 	$current_page = "CITY_PAGE";
 	#echo "CITY_PAGE";
@@ -375,22 +376,6 @@ if( $url_city && is_numeric($url_city) && $url_region){
 	$current_page = "MAIN_PAGE";
 	#echo "MAIN_PAGE";
 }
-	
-//замена макросов в шаблоне с обработкой главной страницы
-if ($url==$url1[0])	
-{
-	$template=preg_replace("/<title>.*<\/title>/", "<title>Кредиты в России, Банки России, Области, Регионы и Округи | ".$_SERVER["SERVER_NAME"]."</title>", $template);
-	$template=preg_replace("/name=\"keywords\" content=\".*\"/", "name=\"keywords\" content=\"Денежный кредит, кредит без залога, кредит наличными без поручителей, оформление кредита, кредиты малому бизнесу, коммерческий кредит в городе Москва | ".$_SERVER["SERVER_NAME"]."\"", $template);
-	$template=preg_replace("/name=\"description\" content=\".*\"/", "name=\"description\" content=\"Займы и кредиты онлайн - Денежный кредит, кредит без залога, кредит наличными без поручителей, оформление кредита, кредиты малому бизнесу, коммерческий кредит в городе Москва | ".$_SERVER["SERVER_NAME"]."\"", $template);
-}
-
-else
-
-{
-	$template=preg_replace("/\[CITY\]/", trim($city[$city_num]), $template);
-	$template=preg_replace("/\[KEY\]/", trim($keys[$keys_num]), $template);
-}
-
 
 $template=preg_replace("/\[RANDKEY\]/e", 'trim($keys[rand(0,$max_k)])', $template);
 $template=preg_replace("/\[RANDCITY\]/e", 'trim($city[rand(0,$max_c)])', $template);
@@ -402,7 +387,7 @@ $con=mysqli_connect("localhost","root","hw6cGD6X","doorgen_banks");
 #echo "Connecting...";
 if (mysqli_connect_errno())
 {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  #echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
 
@@ -413,9 +398,9 @@ if($page_info){
 	$page_title = $page_info['cached_page_title'];
 	$page_meta_keywords = $page_info['cached_page_meta_keywords'];
 	$page_meta_description = $page_info['cached_page_meta_description'];
-	echo "Page $url is CACHED."."<br/>";
+	#echo "Page $url is CACHED."."<br/>";
 }else{
-	echo "Page $url is NOT CACHED."."<br/>";
+	#echo "Page $url is NOT CACHED."."<br/>";
 	$is_cached = false;
 }
 
@@ -495,7 +480,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	
 	$row = mysqli_fetch_assoc($result);
 	$city_news_count = $row['row_count'];
-	echo "city_news_count: " . $city_news_count . "<br>";
+	#echo "city_news_count: " . $city_news_count . "<br>";
 	
 	if($city_news_count>0){
 		//вычисляем последнюю страницы
@@ -508,36 +493,36 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 			$city_news_page_number = $max_page_number;
 		}
 		
-		echo "max_page_number: ".$max_page_number."<br>";
-		echo "final city_news_page_number: ".$city_news_page_number."<br>";
+		#echo "max_page_number: ".$max_page_number."<br>";
+		#echo "final city_news_page_number: ".$city_news_page_number."<br>";
 		
 		$start_position = $CITY_NEWS_PER_PAGE*($city_news_page_number-1);
-		echo "start_position: ".$start_position."<br>";
+		#echo "start_position: ".$start_position."<br>";
 
 		#echo "Region page processing...";
 		//prepare statement
-		$query_city_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
+		$query_city_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id ORDER BY cp.posted_time DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
 		#echo "query_city_list: ".$query_city_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_city_list))) {
-			echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
 		//set values
 		#echo "set value...";
 		$id=1;
 		if (!mysqli_stmt_bind_param($stmt, "s", $url_region)) {
-			echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+			#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
 		#echo "execute...";
 		if (!mysqli_stmt_execute($stmt)){
-			echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+			#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 
 		/* instead of bind_result: */
 		#echo "get result...";
 		if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time)){
-			echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+			#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
 		$news_block = "";
@@ -571,8 +556,17 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 }
 
 if($current_page == "CITY_PAGE"){
-	//get region names
+	//get city page info
 	$key_info = getKeyInfo($con,$url_city);
+	echo var_dump($key_info);
+	
+	/*"city_name"=>$city_name,
+						"city_name_latin"=>$city_name_latin,
+						"key_value"=>$key_value, 
+						"key_value_latin"=>$key_value_latin, 
+						"region_name"=>$region_name, 
+						"region_name_latin"=>$region_name_latin, 
+						"posted_time"=>$posted_time*/
 
 	if($key_info){
 		$region_name = $key_info['region_name'];
@@ -586,6 +580,7 @@ if($current_page == "CITY_PAGE"){
 			$page_title = $pager->getCityRandomTitle();
 		}
 		#echo "region_name: " . $region_name . "<br>";
+		#echo "key_value_latin: " . $key_info['key_value_latin'] . "<br>";
 		//getting city new count
 		$query_count = "SELECT count(*) as row_count FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER('".$url_region."'),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id";
 		$result = mysqli_query($con,$query_count);
@@ -593,67 +588,8 @@ if($current_page == "CITY_PAGE"){
 		$row = mysqli_fetch_assoc($result);
 		$city_news_count = $row['row_count'];
 		#echo "city_news_count: " . $city_news_count . "<br>";
-		
-		if($city_news_count>0){
-			//вычисляем последнюю страницы
-			$max_page_number = floor($city_news_count/$CITY_NEWS_PER_PAGE);
-			if(city_news_count%$CITY_NEWS_PER_PAGE != 0){
-				$max_page_number = $max_page_number + 1;
-			}
-			
-			if($city_news_page_number > $max_page_number){
-				$city_news_page_number = $max_page_number;
-			}
-			
-			#echo "max_page_number: ".$max_page_number."<br>";
-			#echo "final city_news_page_number: ".$city_news_page_number."<br>";
-			
-			$start_position = $CITY_NEWS_PER_PAGE*($city_news_page_number-1);
-			#echo "start_position: ".$start_position."<br>";
-
-			#echo "Region page processing...";
-			//prepare statement
-			$query_city_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
-			#echo "query_city_list: ".$query_city_list."<br>";
-			if (!($stmt = mysqli_prepare($con,$query_city_list))) {
-				echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
-			}
-			
-			//set values
-			#echo "set value...";
-			$id=1;
-			if (!mysqli_stmt_bind_param($stmt, "s", $url_region)) {
-				echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
-			}
-			
-			#echo "execute...";
-			if (!mysqli_stmt_execute($stmt)){
-				echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
-			}
-
-			/* instead of bind_result: */
-			#echo "get result...";
-			if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time)){
-				echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
-			}
-			
-			$index = 1;
-			while (mysqli_stmt_fetch($stmt)) {
-				// use your $myrow array as you would with any other fetch
-				#echo "City name: ".$city_name."; key: ".$key_value;
-				$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$city_name." ".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a>&nbsp;";
-				$template=preg_replace("/\[CITY_NEWS_".$index."\]/", $city_href, $template);
-				$index = $index+1;
-			}
-
-			$pager = new Pager;
-			$template=preg_replace("/\[PAGER\]/", $pager->getPageNavigation("/".str_replace(" ","-",$region_name_latin)."/",$city_news_page_number, $max_page_number), $template);
-			
-			/* explicit close recommended */
-			mysqli_stmt_close($stmt);
-		}
 		//fill [BREAD_CRUMBS]
-		$bread_crumbs = "<a href =\"/\">".Главная."</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;>&nbsp;<a href =\"#\">".$city_name." ".$key_value."</a>";
+		$bread_crumbs = "<a href =\"/\">".Главная."</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['city_name']." ".$key_info['key_value']."</a>";
 	}else{
 		#TODO PAGE NOT FOUND REDIRECT
 	}

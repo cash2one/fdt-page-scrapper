@@ -337,7 +337,7 @@ class Functions
             curl_setopt($curl_engine, CURLOPT_USERAGENT, $user_agent);
             $proxy_ip = $this->GetContent('txt/proxies.txt');
             if ($proxy_ip) {
-				echo "USING PROXY: ".$proxy_ip."<br/>";
+				#echo "USING PROXY: ".$proxy_ip."<br/>";
                 curl_setopt($curl_engine, CURLOPT_PROXY, $proxy_ip);
                 curl_setopt($curl_engine, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
 				curl_setopt($curl_engine, CURLOPT_PROXYUSERPWD, $proxy_user.':'.$proxy_pass);
