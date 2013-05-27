@@ -395,8 +395,8 @@ if( $url_city && is_numeric($url_city) && $url_region){
 
 $template=preg_replace("/\[RANDKEY\]/e", 'trim($keys[rand(0,$max_k)])', $template);
 $template=preg_replace("/\[RANDCITY\]/e", 'trim($city[rand(0,$max_c)])', $template);
-$template=preg_replace("/\[URL\]/", "http://$url", $template);
-$template=preg_replace("/\[URLMAIN\]/", "http://$url", $template);
+$template=preg_replace("/\[URL\]/",$_SERVER["HTTP_HOST"], $template);
+$template=preg_replace("/\[URLMAIN\]/",$_SERVER["HTTP_HOST"], $template);
 
 //fetch regions
 $con=mysqli_connect("localhost","root","hw6cGD6X","doorgen_banks");
