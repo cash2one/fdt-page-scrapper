@@ -8,16 +8,17 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
-	<link href="/css/dimm.css" rel="stylesheet">    
-    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
-	<link href="/images/css" rel="stylesheet" type="text/css">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+	<link href="./css/dimm.css" rel="stylesheet">    
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="./images/css" rel="stylesheet" type="text/css">
 	
-	<script src="/js/cufon-yui.js"></script>
-	<script src="/js/cufon-replace.js"></script>
-	<script src="/js/Kozuka_L_300.font.js"></script>
-	<script src="/js/Kozuka_B_700.font.js"></script>
-	<script src="/js/Helvetica_Light-Normal_400.font.js"></script>
+	<script src="./js/jquery-1.7.min.js"></script>
+	<script src="./js/cufon-yui.js"></script>
+	<script src="./js/cufon-replace.js"></script>
+	<script src="./js/Kozuka_L_300.font.js"></script>
+	<script src="./js/Kozuka_B_700.font.js"></script>
+	<script src="./js/Helvetica_Light-Normal_400.font.js"></script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -69,19 +70,28 @@
 				</td></tr></tbody></table>
 			</div>
 		</div>
+		<div class="row">
+			<div class="span3 offset1">
+				<a id='btn_1' href="#" class="btn btn-large btn-block" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;"><strong>Потребительские кредиты</strong></a>
+			</div>
+			<div class="span3 offset1">
+				<a id='btn_2' href="#" class="btn btn-large btn-block" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;"><strong>Кредитные карты</strong></a>
+			</div>
+			<div class="span3 offset1">
+				<a id='btn_3' href="#" class="btn btn-large btn-block" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;"><strong>Быстрые займы</strong></a>
+			</div>
+		</div>
 		<div class="row MainText">
 			<div class="span10 offset1">
 				<h3>Онлайн-заявка на кредит - это удобный и быстрый способ получить необходимые средства. Воспользуйтесь онлайн-заявкой прямо сейчас!</h3>				
 			</div>
 		</div>
-		<div class="row">
-			<div class="span10 offset1">
-				<h3>Тут будут кнопки</h3>				
-			</div>
-		</div>
 	</div>
 	<script>
-            Cufon.now();
-        </script>
+		Cufon.now();
+		$('#btn_1,#btn_2,#btn_3').bind('click', function(){
+			$(".container").replaceWith("<iframe id='content_frame' src='/frame_2.html' height='465px' width='1264px' scrolling='no'></iframe>");
+		});
+    </script>
 </body>	
 </html>
