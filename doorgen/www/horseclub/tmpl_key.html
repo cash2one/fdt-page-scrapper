@@ -19,10 +19,10 @@
         <script src="/js/Kozuka_B_700.font.js"></script>
         <script src="/js/Helvetica_Light-Normal_400.font.js"></script>
 		
-		<link href="./css/bootstrap.css" rel="stylesheet">
-		<link href="./css/dimm.css" rel="stylesheet">    
-		<link href="./css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="./images/css" rel="stylesheet" type="text/css">
+		<link href="/css/dimm.css" rel="stylesheet"> 
+		<link href="/css/bootstrap.css" rel="stylesheet"> 
+		<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="/images/css" rel="stylesheet" type="text/css">
 		
 		<!--link rel="stylesheet" type="text/css" href="/css/default.css" media="all" />
 		<link rel="stylesheet" href="/css/flexslider.css" type="text/css" />
@@ -38,23 +38,14 @@
 		<script src="/js/default.js"></script-->
 		
         <script>
-            $(document).ready(function(){
-            	$('.slider')._TMS({
-            		show:0,
-            		pauseOnHover:true,
-            		playBu:false,
-            		duration:10000,
-            		preset:'zoomer',
-            		pagination:true,
-            		pagNums:false,
-            		slideshow:7000,
-            		numStatus:false,
-            		banners:'fade',
-            		waitBannerAnimation:false,
-            		progressBar:false
-            	});			
+			$(document).ready(function(){
+				$("#frame_123").load('/frame.html');
             });
-        </script>
+            $(window).load(function(){
+				Cufon.refresh();
+				Cufon.now();
+            });
+		</script>
         <!--[if lt IE 8]>
         <div style=' clear: both; text-align:center; position: relative;'>
             <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -70,7 +61,6 @@
         <style>
             @charset "utf-8";
             /* CSS Document */
-            * {margin: 0; padding: 0;}
             /* Site Structure */
             #header {height: 101px; margin-bottom: 50px;}
             .logo {float: left;}
@@ -109,7 +99,7 @@
             top: 14px;
             right: 12px;
             }
-            a {color: #ef6f53; text-decoration: underline;}
+            a {color: #ef6f53; text-decoration: none;}
         </style>
     </head>
     <body>
@@ -149,10 +139,10 @@
                 </ul>
                 <div class="clear"></div>
                 </nav-->
-                <div id="frame_123" style="overflow: hidden; padding: 1px">
-					<iframe id='content_frame' src="/frame.html" height="465px" width="1264px" scrolling="no"></iframe>
+                <div id="frame_123" style="overflow:hidden;height:465px;width:1264px">
+					<!--iframe id='content_frame' src="/frame.html" height="465px" width="1264px" scrolling="no"></iframe-->
+					<div id="divpage">Сюда будет загрузен контент из файла</div>
 				</div>
-
             <!--==============================content================================-->
             <section id="content">
                 <div class="ic">More Website Templates @ TemplateMonster.com. May 21, 2012! </div>
@@ -235,8 +225,5 @@
                 </div>
             </footer>
         </div>
-        <script>
-            Cufon.now();
-        </script>
     </body>
 </html>

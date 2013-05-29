@@ -204,12 +204,12 @@ textarea {
   }
 }
 body {
+  background:url('/images/bg.png') repeat;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
-  background-color: #ffffff;
+  color: #333333;	
 }
 a {
   color: #0088cc;
