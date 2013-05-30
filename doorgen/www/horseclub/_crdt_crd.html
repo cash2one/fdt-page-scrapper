@@ -1,0 +1,69 @@
+<div class="container">
+	<div class="row">
+		<div class="span12  dimmCaption" style="margin-top:0px">
+		<a name="top1"></a>
+			<div class="leftUgol">
+			</div>
+			<p class="capt">КРЕДИТНЫЕ КАРТЫ</p>				
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="span10 offset1">
+		<table class="table table-hover">
+		  <thead>
+			<tr>
+			  <th>Банк</th>
+			  <th>Сумма кредита (рублей)</th>
+			  <th>Рассмотрение</th>
+			  <th>Льготный период</th>
+			  <th></th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td><img src="/images/homecredit.png" alt="home credit logo" title="Home Credit" width="150px"></td>
+			  <td><p class="creditSumm">до 300 000 ₶</p></td>
+			  <td><p class="creditPercent">30 минут</p></td>
+			  <td><p><strong>51 день</strong></p></td>
+			  <td><a href="" target="_blank" class="btn btn-success">Оформить заявку</a></td>
+			</tr>
+			<tr>
+			  <td><img src="/images/renessans.png" alt="Ренессанс Кредит" title="Ренессанс Кредит" width="150px"></td>
+			  <td><p class="creditSumm">до 300 000 ₶</p></td>
+			  <td><p class="creditPercent">10 минут</p></td>
+			  <td><p><strong>55 дней</strong></p></td>
+			  <td><a href="" target="_blank" class="btn btn-success">Оформить заявку</a></td>
+			</tr>  			
+			 <tr>
+			  <td><img src="/images/tink.png" alt="Кредитные карты Тинькофф" title="Кредитные карты Тинькофф" width="150px"></td>
+			  <td><p class="creditSumm">до 300 000 ₶</p></td>
+			  <td><p class="creditPercent">10 минут</p></td>
+			  <td><p><strong>55 дней</strong></p></td>
+			  <td><a href="" target="_blank" class="btn btn-success">Оформить заявку</a></td>
+			</tr>               
+		  </tbody>
+		</table>				
+		</div>
+	</div>
+	<div class="row">
+	<div class="span1 offset10">
+		<a id="prvs_btn" href="#" class="btn" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;">Вернуться</a>
+	</div>
+	<script>
+		$('#prvs_btn').bind('click ', function(){
+			$("#crd_area").fadeTo("slow", 0.01, function(){
+				$("#crd_area").load('/_crd_area.html', function(){
+					$("#crd_area").fadeTo("slow",1.0);
+				});
+			});
+		});
+		Cufon.refresh();
+		Cufon.now();
+	</script>
+	</div>
+</div>
+<script>
+	Cufon.refresh();
+	Cufon.now();
+</script>
