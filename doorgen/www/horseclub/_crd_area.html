@@ -63,6 +63,11 @@
 	$('#btn_ptrb_crdt,#btn_crdt_crd,#btn_fst_zm').bind('click ', function(event){
 		var crdt_wnd = '/_ptrb_crdt.html';
 		var elem_id = this.id;
+		
+		//$.cookie('_fst_zm', '_fst_zm');
+		//$.cookie('_crdt_crd', '_crdt_crd');
+		//$.cookie('_ptrb_crdt', '_ptrb_crdt');
+		
 		if(elem_id == 'btn_ptrb_crdt'){
 			crdt_wnd = '/_ptrb_crdt.html';
 		}else if(elem_id == 'btn_crdt_crd'){
@@ -70,31 +75,40 @@
 		}else if(elem_id == 'btn_fst_zm'){
 			crdt_wnd = '/_fst_zm.html';
 		}
-		$.blockUI({ 
-			message: message_prgbr,
-			timeout:   10000, 			
-			css: { width: '60%', right: '20%', left:'20%', padding:'0px 20px 0px 20px'} ,
-			onBlock: function(){
-				Cufon.refresh();
-				Cufon.now();
-				$('#progress_bar .ui-progress').animateProgress(45, function() {
-					$(this).animateProgress(78, function() {
-					  setTimeout(function() {
-						$('#progress_bar .ui-progress').animateProgress(100, function() {
-							;
+		
+		if( (elem_id == 'btn_ptrb_crdt' && !$.cookie('_ptrb_crdt')) || (elem_id == 'btn_crdt_crd' && !$.cookie('_crdt_crd')) || (elem_id == 'btn_fst_zm' && !$.cookie('_fst_zm'))){
+			$.blockUI({ 
+				message: message_prgbr,
+				timeout:   10000, 			
+				css: { width: '60%', right: '20%', left:'20%', padding:'0px 20px 0px 20px'} ,
+				onBlock: function(){
+					Cufon.refresh();
+					Cufon.now();
+					$('#progress_bar .ui-progress').animateProgress(45, function() {
+						$(this).animateProgress(78, function() {
+						  setTimeout(function() {
+							$('#progress_bar .ui-progress').animateProgress(100, function() {
+								;
+							});
+						  }, 2000);
 						});
-					  }, 2000);
 					});
-				});
-			},
-			onUnblock: function(){
-				$("#crd_area").fadeTo("slow", 0.01, function(){
-					$("#crd_area").load(crdt_wnd, function(){
-						$("#crd_area").fadeTo("slow",1.0);
+				},
+				onUnblock: function(){
+					$("#crd_area").fadeTo("slow", 0.01, function(){
+						$("#crd_area").load(crdt_wnd, function(){
+							$("#crd_area").fadeTo("slow",1.0);
+						});
 					});
+				}
+			});
+		}else{
+			$("#crd_area").fadeTo("slow", 0.01, function(){
+				$("#crd_area").load(crdt_wnd, function(){
+					$("#crd_area").fadeTo("slow",1.0);
 				});
-			}
-		});
+			});
+		}
 	});
 	Cufon.refresh();
 	Cufon.now();
