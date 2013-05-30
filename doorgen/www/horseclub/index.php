@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL ^ E_NOTICE);
+#error_reporting(E_ALL ^ E_NOTICE);
 
 require_once "pager.php";
 require_once "application/models/functions_decode.php";
@@ -599,7 +599,12 @@ if($current_page == "CITY_PAGE"){
 		//fill [BREAD_CRUMBS]
 		$bread_crumbs = "<a href =\"/\">Главная</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['city_name']." ".$key_info['key_value']."</a>";
 	}else{
-		#TODO PAGE NOT FOUND REDIRECT
+		#PAGE NOT FOUND REDIRECT
+		header('HTTP/1.1 404 Not Found');
+		#header('Location: /');
+		$_GET['e'] = 404;
+		include ($_SERVER['DOCUMENT_ROOT'] . '/404.html');
+		exit;
 	}
 }
 
