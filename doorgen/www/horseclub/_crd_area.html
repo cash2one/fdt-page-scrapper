@@ -59,7 +59,7 @@
 	</div>
 </div>
 <script>
-	var message_prgbr = "<div class='content_pb' style='padding:20px 20px 20px 20px;'><h1 style='width: 100%; text-align:center'>Получение списка кредитных линий<h1></div><div id='progress_bar' class='ui-progress-bar ui-container'><div class='ui-progress' style='width: 0%;'><span class='ui-label' style='display:none;'>Выполнение запроса <b class='value'>0%</b></span></div></div>";
+	var message_prgbr = "<div class='content_pb' style='padding:20px 20px 20px 20px;'><h1 style='width: 100%; text-align:center'>Обработка запроса...<h1></div><div id='progress_bar' class='ui-progress-bar ui-container'><div class='ui-progress' style='width: 0%;'><span class='ui-label' style='display:none;'>Выполнение запроса <b class='value'>0%</b></span></div></div>";
 	$('#btn_ptrb_crdt,#btn_crdt_crd,#btn_fst_zm').bind('click ', function(event){
 		var crdt_wnd = '/_ptrb_crdt.html';
 		var elem_id = this.id;
@@ -72,7 +72,7 @@
 		}
 		$.blockUI({ 
 			message: message_prgbr,
-			timeout:   2000, 			
+			timeout:   10000, 			
 			css: { width: '60%', right: '20%', left:'20%', padding:'0px 20px 0px 20px'} ,
 			onBlock: function(){
 				Cufon.refresh();
@@ -83,7 +83,7 @@
 						$('#progress_bar .ui-progress').animateProgress(100, function() {
 							;
 						});
-					  }, 300);
+					  }, 2000);
 					});
 				});
 			},
