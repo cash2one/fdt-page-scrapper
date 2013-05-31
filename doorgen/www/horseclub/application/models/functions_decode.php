@@ -327,8 +327,8 @@ class Functions
     public function GetHTML($url_for_extract, $host)
     {
 		//TODO save into config
-		$proxy_user = "VIPUAEURx0kv2UoXOB";
-		$proxy_pass = "MIXaMe2YRd";
+		$proxy_user = "VIPUAEUR1abRTDMxFu";
+		$proxy_pass = "EAibrYVnJr";
         $user_agent = $this->GetContent('txt/browsers.txt');
         if (in_array('curl', get_loaded_extensions())) {
             $curl_engine = curl_init();

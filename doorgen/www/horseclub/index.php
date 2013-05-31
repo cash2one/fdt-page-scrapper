@@ -514,7 +514,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 
 		#echo "Region page processing...";
 		//prepare statement
-		$query_city_list = "SELECT cp.city_id, cp.key_id, c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id ORDER BY cp.posted_time DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
+		$query_city_list = "SELECT cp.anchor_name, c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id ORDER BY cp.posted_time DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
 		#echo "query_city_list: ".$query_city_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_city_list))) {
 			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
@@ -534,7 +534,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 
 		/* instead of bind_result: */
 		#echo "get result...";
-		if(!mysqli_stmt_bind_result($stmt, $city_id, $key_id, $city_name, $city_name_latin, $key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time)){
+		if(!mysqli_stmt_bind_result($stmt, $anchor_name, $city_name, $city_name_latin, $key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time)){
 			#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
@@ -551,7 +551,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 			//generate link name
 			
 			
-			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$city_name." ".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
+			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$anchor_name." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
 			$news_block = $news_block.$city_href;
 		}
 		$template=preg_replace("/\[CITY_NEWS_1\]/", $news_block, $template);

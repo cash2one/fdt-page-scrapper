@@ -101,7 +101,7 @@ BEGIN
   DECLARE done INT DEFAULT FALSE;
   DECLARE city_id, key_id, mod_value INT;
   DECLARE city_name, key_value, anchor_name, case_value VARCHAR(200);
-  DECLARE prep_0, prep_1, prep_2 VARCHAR(9);
+  DECLARE prep_0, prep_1, prep_2 VARCHAR(10);
   
   DECLARE city_key_list CURSOR FOR SELECT c.city_id,ek.key_id from doorgen_banks.city c, doorgen_banks.extra_key ek ORDER BY c.city_id,ek.key_id ASC;
   
@@ -123,14 +123,14 @@ BEGIN
 	SET mod_value = (city_id + key_id) % 3;
 	
 	IF mod_value = 0 THEN begin
-			set anchor_name = CONCAT(key_value, prep_0, city_name);
+			set anchor_name = CONCAT(UPPER(SUBSTR(key_value,0,1)),SUBSTR(key_value,1), prep_0, city_name);
 		end;
     ELSEIF mod_value = 1 THEN begin
-			set anchor_name = CONCAT(key_value, prep_1, city_name);
+			set anchor_name = CONCAT(UPPER(SUBSTR(key_value,0,1)),SUBSTR(key_value,1), prep_1, city_name);
 		end;
 	ELSE begin
 			SELECT cs.case_value INTO case_value FROM doorgen_banks.case cs WHERE cs.location_type_code_value = 1 AND cs.location_id = 1 AND case_code_value = 6;
-			set anchor_name = CONCAT(key_value, prep_2, case_value);
+			set anchor_name = CONCAT(UPPER(SUBSTR(key_value,0,1)),SUBSTR(key_value,1), prep_2, case_value);
 		end;
     END IF;
 	
