@@ -94,45 +94,48 @@ END
 //
 delimiter;
 
+DROP PROCEDURE IF EXISTS `doorgen_banks`.`fill_city_news`;
 delimiter //
-CREATE PROCEDURE `doorgen_banks`.`update_anchor_names`()
+CREATE PROCEDURE `doorgen_banks`.`fill_city_news`()
 BEGIN
   DECLARE done INT DEFAULT FALSE;
+  DECLARE city_id, key_id, mod_value INT;
   DECLARE city_name, key_value, anchor_name, case_value VARCHAR(200);
-  DECLARE mod_value, city_id, key_id, region_id INT;
-  
   DECLARE prep_0, prep_1, prep_2 VARCHAR(9);
   
-  DECLARE page_news CURSOR FOR SELECT ((cp.city_id + cp.key_id) % 3) mod_value, cp.city_id, cp.key_id, c.city_name, ek.key_value, r.region_id FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id;
+  DECLARE city_key_list CURSOR FOR SELECT c.city_id,ek.key_id from doorgen_banks.city c, doorgen_banks.extra_key ek ORDER BY c.city_id,ek.key_id ASC;
+  
   DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
   
-  set prep_0 = "в городе ";
-  set prep_1 = "в г. ";
-  set prep_2 = "в ";
-
-  OPEN page_news;
-
-  news_loop: LOOP
-    FETCH page_news INTO mod_value, city_id, key_id, city_name, key_value, region_id;
-	
-    IF done THEN
-      LEAVE news_loop;
+  set prep_0 = " в городе ";
+  set prep_1 = " в г. ";
+  set prep_2 = " в ";
+  
+  OPEN city_key_list;
+  
+  city_key_list_loop: LOOP
+    FETCH city_key_list INTO city_id,key_id;
+	IF done THEN
+		LEAVE city_key_list_loop;
     END IF;
 	
-    IF mod_value = 0 THEN begin
+	SELECT c.city_name, ek.key_value INTO city_name, key_value FROM `city` c, `extra_key` ek WHERE c.city_id = city_id AND ek.key_id = key_id;
+	SET mod_value = (city_id + key_id) % 3;
+	
+	IF mod_value = 0 THEN begin
 			set anchor_name = CONCAT(key_value, prep_0, city_name);
 		end;
     ELSEIF mod_value = 1 THEN begin
 			set anchor_name = CONCAT(key_value, prep_1, city_name);
 		end;
 	ELSE begin
-			SELECT cs.case_value INTO case_value FROM doorgen_banks.case cs WHERE cs.location_type_code_value = 1 AND cs.location_id = 1 AND case_code_value = 6
+			SELECT cs.case_value INTO case_value FROM doorgen_banks.case cs WHERE cs.location_type_code_value = 1 AND cs.location_id = 1 AND case_code_value = 6;
 			set anchor_name = CONCAT(key_value, prep_2, case_value);
 		end;
     END IF;
 	
+	INSERT INTO `doorgen_banks`.`city_page` (`key_id`,`city_id`,`city_page_key`,`posted_time`,`anchor_name`) select key_id,city_id,`doorgen_banks`.gen_city_page_key(key_id,city_id),now() - INTERVAL FLOOR( RAND() *14 )DAY,anchor_name;		
   END LOOP;
-
-  CLOSE page_news;
+  CLOSE city_key_list;
 END//
 delimiter ;
