@@ -1,5 +1,5 @@
 <?php
-#error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(E_ALL ^ E_NOTICE);
 
 require_once "pager.php";
 require_once "application/models/functions_decode.php";
@@ -9,6 +9,7 @@ require_once "application/plugins/snippets/Ukr.php";
 require_once "application/plugins/images/ImagesGoogle.php"; 
 require_once "utils/title_generator.php";
 require_once "utils/case_value_selector.php";
+require_once "utils/ya_news_extractor.php";
 
 $page_title="";
 $page_meta_keywords="";
@@ -513,7 +514,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 
 		#echo "Region page processing...";
 		//prepare statement
-		$query_city_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id ORDER BY cp.posted_time DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
+		$query_city_list = "SELECT cp.city_id, cp.key_id, c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id ORDER BY cp.posted_time DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
 		#echo "query_city_list: ".$query_city_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_city_list))) {
 			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
@@ -533,7 +534,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 
 		/* instead of bind_result: */
 		#echo "get result...";
-		if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time)){
+		if(!mysqli_stmt_bind_result($stmt, $city_id, $key_id, $city_name, $city_name_latin, $key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time)){
 			#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
@@ -546,6 +547,10 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 			}
 			// use your $myrow array as you would with any other fetch
 			#echo "City name: ".$city_name."; key: ".$key_value;
+			
+			//generate link name
+			
+			
 			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$city_name." ".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
 			$news_block = $news_block.$city_href;
 		}
@@ -653,10 +658,14 @@ for($i=1; $i <= 9; $i++){
 	$template=preg_replace("/\[CITY_CASE_".$i."\]/", isset($city_cases["$i"])?$city_cases["$i"]:"", $template);
 }
 
-$new_content = $function->GetHTML('http://news.yandex.ru/ru/finances5.utf8.js','news.yandex.ru');
-echo $new_content;
+//print last news
+if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING" || $current_page == "MAIN_PAGE"){
+	$news_extractor = new YaNewsExtractor;
+	$extractd_news = $news_extractor->getYandexNewsContent($function);
+	$template=preg_replace("/\[LAST_NEWS\]/", $extractd_news, $template);
+}
 
-unset($city_cases, $region_cases, $page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator);
+unset($city_cases, $region_cases, $page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator, $extractd_news, $news_extractor);
 mysqli_close($con);
 
 echo $template;	
