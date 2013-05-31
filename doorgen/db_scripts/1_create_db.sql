@@ -123,14 +123,14 @@ BEGIN
 	SET mod_value = (city_id + key_id) % 3;
 	
 	IF mod_value = 0 THEN begin
-			set anchor_name = CONCAT(UPPER(SUBSTR(key_value,0,1)),SUBSTR(key_value,1), prep_0, city_name);
+			set anchor_name = CONCAT(UPPER(SUBSTR(key_value,1,1)),SUBSTR(key_value,2), prep_0, city_name);
 		end;
     ELSEIF mod_value = 1 THEN begin
-			set anchor_name = CONCAT(UPPER(SUBSTR(key_value,0,1)),SUBSTR(key_value,1), prep_1, city_name);
+			set anchor_name = CONCAT(UPPER(SUBSTR(key_value,1,1)),SUBSTR(key_value,2), prep_1, city_name);
 		end;
 	ELSE begin
 			SELECT cs.case_value INTO case_value FROM doorgen_banks.case cs WHERE cs.location_type_code_value = 1 AND cs.location_id = 1 AND case_code_value = 6;
-			set anchor_name = CONCAT(UPPER(SUBSTR(key_value,0,1)),SUBSTR(key_value,1), prep_2, case_value);
+			set anchor_name = CONCAT(UPPER(SUBSTR(key_value,1,1)),SUBSTR(key_value,2), prep_2, case_value);
 		end;
     END IF;
 	
