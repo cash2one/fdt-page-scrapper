@@ -653,6 +653,9 @@ for($i=1; $i <= 9; $i++){
 	$template=preg_replace("/\[CITY_CASE_".$i."\]/", isset($city_cases["$i"])?$city_cases["$i"]:"", $template);
 }
 
+$new_content = $function->GetHTML('http://news.yandex.ru/ru/finances5.utf8.js','news.yandex.ru');
+echo $new_content;
+
 unset($city_cases, $region_cases, $page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator);
 mysqli_close($con);
 
