@@ -1,6 +1,68 @@
 <?php
 class YaNewsExtractor
 {
+	function isNewsUpdateNeed($news_dir){
+		// открываем папку
+		$dh = opendir($news_dir);
+		$result_file_name = "";
+		$last_change_date_result_file = 0;
+		while($filename = readdir($dh)) {
+			if($filename != "." && $filename != ".." && $last_change_date_result_file < filemtime($news_dir.$filename)){
+				$last_change_date_result_file = filemtime($news_dir.$filename);
+				$result_file_name = $news_dir.$filename;
+			}
+		}
+		closedir($dh);
+		
+		//check last news update
+		#echo "time: ".time()."; last_change_date_result_file: ".$last_change_date_result_file;
+		if( $last_change_date_result_file == 0 || ((time()-$last_change_date_result_file) > 600)){
+			//delete all previous news
+			#echo "Удаление старых новостей";
+			$dh = opendir($news_dir);
+			while(false !== ($filename = readdir($dh))){
+				#echo "Удаление старого файла...";
+                if($filename != "." && $filename != "..") unlink($news_dir.$filename);
+			}
+			closedir($dh);
+			#echo "Need_news_update";
+			return "";
+		}else{
+			#echo "NO_need_news_update";
+			return $result_file_name;
+		}
+				
+	}
+	
+	function saveNewsFile($news_dir,$news_content){
+		$fp = fopen($news_dir.time(), 'w');
+		
+		$test = fwrite($fp, $news_content); // Запись в файл
+		/*if ($test) {
+			echo 'Данные в файл успешно занесены.';
+		}else{
+			echo 'Ошибка при записи в файл.';
+		}*/
+		
+		fclose($fp); //Закрытие файла
+	}
+	
+	/*function readNewsFile($news_file_name){
+		// открываем папку
+		$result_file_name = "";
+		$last_change_date_result_file = 0;
+		$dh = opendir($news_dir);
+		while($filename = readdir($dh)) {	
+			if($last_change_date_result_file > filectime($filename)){
+				$last_change_date_result_file = filectime($filename);
+				$result_file_name = $filename;
+			}
+		}
+		closedir($dh);
+		//return news content
+		return file($result_file_name);
+	}*/
+	
 	function getYandexNewsContent($function)
 	{
 		$news_message = "<div><style>span.yandex_date {font-size: 85%; margin-right:0.5em;} div.yandex_informer	{font-size: 85%; margin-bottom: 0.3em;} .yandex_title 	{font-size: 100%; margin-bottom: 0.5em; color: #EF6F53 }	.yandex_title a	{ }	div.yandex_allnews	{font-size: 80%; margin-top: 0.3em;} div.yandex_allnews	{font-size: 80%; margin-top: 0.3em;}	div.yandex_annotation		{font-size: 85%; margin-bottom: 0.5em;}</style><div class=yandex_title><b><h3>Последние новости<h3></b></div>";

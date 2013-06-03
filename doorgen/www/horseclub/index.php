@@ -660,8 +660,16 @@ for($i=1; $i <= 9; $i++){
 
 //print last news
 if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING" || $current_page == "MAIN_PAGE"){
+	$news_content_folder = './news_content/';
 	$news_extractor = new YaNewsExtractor;
-	$extractd_news = $news_extractor->getYandexNewsContent($function);
+	$news_file_name = $news_extractor->isNewsUpdateNeed($news_content_folder);
+	#echo "news_file_name: ".$news_file_name;
+	if($news_file_name == ""){
+		$extractd_news = $news_extractor->getYandexNewsContent($function);
+		$news_extractor->saveNewsFile($news_content_folder, $extractd_news);
+	}else{
+		$extractd_news = file_get_contents($news_file_name);
+	}
 	$template=preg_replace("/\[LAST_NEWS\]/", $extractd_news, $template);
 }
 
