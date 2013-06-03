@@ -129,12 +129,12 @@ BEGIN
 			set anchor_name = CONCAT(UPPER(SUBSTR(key_value,1,1)),SUBSTR(key_value,2), prep_1, city_name);
 		end;
 	ELSE begin
-			SELECT cs.case_value INTO case_value FROM doorgen_banks.case cs WHERE cs.location_type_code_value = 1 AND cs.location_id = 1 AND case_code_value = 6;
+			SELECT cs.case_value INTO case_value FROM doorgen_banks.case cs WHERE cs.location_type_code_value = 1 AND cs.location_id = city_id AND case_code_value = 6;
 			set anchor_name = CONCAT(UPPER(SUBSTR(key_value,1,1)),SUBSTR(key_value,2), prep_2, case_value);
 		end;
     END IF;
 	
-	INSERT INTO `doorgen_banks`.`city_page` (`key_id`,`city_id`,`city_page_key`,`posted_time`,`anchor_name`) select key_id,city_id,`doorgen_banks`.gen_city_page_key(key_id,city_id),now() - INTERVAL FLOOR( RAND() *14 )DAY,anchor_name;		
+	INSERT INTO `doorgen_banks`.`city_page` (`key_id`,`city_id`,`city_page_key`,`posted_time`,`anchor_name`) select key_id,city_id,`doorgen_banks`.gen_city_page_key(key_id,city_id),now() + INTERVAL 1 YEAR,anchor_name;		
   END LOOP;
   CLOSE city_key_list;
 END//
