@@ -47,3 +47,4 @@ INSERT INTO `doorgen_banks`.`extra_key` (`key_value`,`key_value_latin`) values
 ('кредит без первоначального взноса',encodestring('кредит без первоначального взноса')),
 ('деньги в кредит',encodestring('деньги в кредит')),
 ('заявка на кредит',encodestring('заявка на кредит'));
+('ипотека',encodestring('ипотека'));

@@ -103,7 +103,7 @@ BEGIN
   DECLARE city_name, key_value, anchor_name, case_value VARCHAR(200);
   DECLARE prep_0, prep_1, prep_2 VARCHAR(10);
   
-  DECLARE city_key_list CURSOR FOR SELECT c.city_id,ek.key_id from doorgen_banks.city c, doorgen_banks.extra_key ek ORDER BY c.city_id,ek.key_id ASC;
+  DECLARE city_key_list CURSOR FOR select c.city_id, ek.key_id  from city c, extra_key ek where (ek.key_id, c.city_id) not in (select cp.key_id, cp.city_id from city_page cp) ORDER BY c.city_id,ek.key_id ASC;
   
   DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
   
@@ -134,7 +134,7 @@ BEGIN
 		end;
     END IF;
 	
-	INSERT INTO `doorgen_banks`.`city_page` (`key_id`,`city_id`,`city_page_key`,`posted_time`,`anchor_name`) select key_id,city_id,`doorgen_banks`.gen_city_page_key(key_id,city_id),now() + INTERVAL 1 YEAR,anchor_name;		
+	INSERT INTO `doorgen_banks`.`city_page` (`key_id`,`city_id`,`city_page_key`,`posted_time`,`anchor_name`) select key_id,city_id,`doorgen_banks`.gen_city_page_key(key_id,city_id),now() + INTERVAL 10 YEAR,anchor_name;		
   END LOOP;
   CLOSE city_key_list;
 END//

@@ -200,3 +200,7 @@
 [22-May-2013 16:39:22] PHP Fatal error:  Call to undefined function mb_strtolower() in C:\Work\scrapper\doorgen\www\horseclub\application\plugins\snippets\Google.php on line 10
 [24-May-2013 14:22:11] PHP Fatal error:  Call to undefined function mb_strtolower() in C:\Work\scrapper\doorgen\www\horseclub\application\plugins\snippets\Ukr.php on line 12
 [24-May-2013 14:22:25] PHP Fatal error:  Call to undefined function mb_strtolower() in C:\Work\scrapper\doorgen\www\horseclub\application\plugins\snippets\Ukr.php on line 12
+[31-May-2013 13:52:11] PHP Fatal error:  Call to undefined function mb_strtolower() in C:\Work\scrapper\doorgen\www\horseclub\application\plugins\snippets\Ukr.php on line 12
+[03-Jun-2013 15:54:12] PHP Parse error:  syntax error, unexpected T_ELSE in C:\Work\scrapper\doorgen\www\horseclub\news_poster.php on line 24
+[03-Jun-2013 17:27:03] PHP Parse error:  syntax error, unexpected T_INC, expecting ')' in C:\Work\scrapper\doorgen\www\horseclub\news_poster.php on line 62
+[03-Jun-2013 17:46:10] PHP Parse error:  syntax error, unexpected '{' in C:\Work\scrapper\doorgen\www\horseclub\news_poster.php on line 80

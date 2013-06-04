@@ -1,0 +1,1 @@
+00 2 * * * /usr/local/bin/php /home/lol/data/www/<site>/news_poster.php >/dev/null 2>&1

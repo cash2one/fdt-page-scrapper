@@ -1,6 +1,6 @@
 <?php
 
-require_once "../config.php";
+require_once "config.php";
 
 function getTablesRecordCount($con)
 {
@@ -76,17 +76,17 @@ function postNews($con,$news_id)
 	$count_array = array();
 	$query_case_list = "UPDATE city_page cp SET cp.posted_time = (now() + INTERVAL ".rand(0,86400)." SECOND) WHERE cp.city_page_id = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	if (!mysqli_stmt_bind_param($stmt, "d", $news_id)) {
-		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		print_r(error_get_last());
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 		
 	mysqli_stmt_close($stmt);
