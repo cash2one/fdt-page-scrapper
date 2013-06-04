@@ -10,7 +10,7 @@ ErrorDocument 404 /404.html
 RewriteCond %{HTTP_HOST} ^www\.(.*)$
 RewriteRule ^(.*)$ http://phbzj.ru/$1 [R=301,L]
 
-RewriteRule ^([\_\-a-zA-Z0-9]+)\.html$ http://phbzj.ru/ [R=404,L]
+#RewriteRule ^([\_\-a-zA-Z0-9]+)\.html$ http://phbzj.ru/ [R=404,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
