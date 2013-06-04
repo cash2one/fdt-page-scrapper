@@ -74,9 +74,7 @@ function getNewsIdForPostingArray($con, $news_for_posting)
 function postNews($con,$news_id)
 {
 	$count_array = array();
-
-	$query_case_list = "UPDATE city_page cp, (SELECT MAX(cp_t.posted_time) mv FROM `city_page` cp_t WHERE 1 AND posted_time <= (now() + INTERVAL 1 DAY)) tt SET cp.posted_time = (tt.mv + INTERVAL ".rand(0,86400)." SECOND) WHERE cp.city_page_id = ?";
-	
+	$query_case_list = "UPDATE city_page cp SET cp.posted_time = (now() + INTERVAL ".rand(0,86400)." SECOND) WHERE cp.city_page_id = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
