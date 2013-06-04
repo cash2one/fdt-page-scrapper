@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
 
-require_once "pager.php";
+require_once "utils/pager.php";
 require_once "application/models/functions_decode.php";
 require_once "application/libraries/parser.php";
 require_once "application/plugins/snippets/Google.php";
@@ -10,7 +10,7 @@ require_once "application/plugins/images/ImagesGoogle.php";
 require_once "utils/title_generator.php";
 require_once "utils/case_value_selector.php";
 require_once "utils/ya_news_extractor.php";
-require_once "config.php";
+require_once "utils/config.php";
 
 $page_title="";
 $page_meta_keywords="";
