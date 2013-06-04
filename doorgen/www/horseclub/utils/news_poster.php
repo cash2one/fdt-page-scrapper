@@ -1,5 +1,7 @@
 <?php
 
+require_once "../config.php";
+
 function getTablesRecordCount($con)
 {
 	$count_array = array();
@@ -101,9 +103,9 @@ function object2file($value, $filename)
 }
 
 //читаем из файла значение, в котором храниться кол-во новостей, необходимых для добавления
-$news_per_region = 1;
-$news_per_region_min = 1;
-$news_per_region_max = 1;
+$news_per_region = 5;
+$news_per_region_min = 5;
+$news_per_region_max = 5;
 $posting_time_table_file_path = "time_table.txt";
 if (file_exists($posting_time_table_file_path) and filesize($posting_time_table_file_path) > 0) {
 	$time_table_array = file($posting_time_table_file_path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -124,7 +126,7 @@ echo "news_per_region: ".$news_per_region."<br/>";
 echo "news_per_region_min: ".$news_per_region_min."<br/>";
 echo "news_per_region_max: ".$news_per_region_max."<br/>";
 
-$con=mysqli_connect("localhost","root","hw6cGD6X","doorgen_banks");
+$con=mysqli_connect(DB_HOST,DB_USER_NAME,DB_USER_PWD,DB_NAME);
 /*echo "Connecting...";
 if (mysqli_connect_errno())
 {
@@ -147,7 +149,7 @@ $news_for_posting_array  = getNewsIdForPostingArray($con,$news_count_for_posting
 echo var_dump($news_for_posting_array);
 
 for($i = 0; $i < count($news_for_posting_array); $i++){
-	//postNews($con,$news_for_posting_array[$i]);
+	postNews($con,$news_for_posting_array[$i]);
 }
 //случайно выбараем
 

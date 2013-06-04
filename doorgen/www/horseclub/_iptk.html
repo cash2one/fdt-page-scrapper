@@ -1,0 +1,56 @@
+<div class="container">
+	<div class="row">
+		<div class="span12  dimmCaption" style="margin-top:0px">
+		<a name="top1"></a>
+			<div class="leftUgol">
+			</div>
+			<p class="capt">ИПОТЕКА</p>				
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="span10 offset1">
+		<table class="table table-hover">
+		  <thead>
+			<tr>
+			  <th>Банк</th>
+			  <th>Годовая ставка</th>
+			  <th>Срок займа</th>
+			  <th>Рассмотрение</th>
+			  <th></th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td><img src="/images/delta_credit.jpg" alt="delta credit logo" title=" DeltaCredit" width="150px"></td>
+			  <td><p class="creditPercent2">от 10,25%</p></td>
+			  <td><p class="creditPercent">до 25 лет</p></td>
+			  <td><p><strong>рассмотрение от 1 дня</strong></p></td>
+			  <td><a href="" target="_blank" class="btn btn-success">Оформить заявку</a></td>
+			</tr>              
+		  </tbody>
+		</table>				
+		</div>
+	</div>
+	<div class="row">
+	<div class="span1 offset10">
+		<a id="prvs_btn" href="#" class="btn" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;">Вернуться</a>
+	</div>
+	<script>
+		$('#prvs_btn').bind('click ', function(){
+			$("#crd_area").fadeTo("slow", 0.01, function(){
+				$("#crd_area").load('/_crd_area.html', function(){
+					$("#crd_area").fadeTo("slow",1.0);
+				});
+			});
+		});
+		Cufon.refresh();
+		Cufon.now();
+	</script>
+	</div>
+</div>
+<script>
+	Cufon.refresh();
+	Cufon.now();
+	$.cookie('_iptk', '_iptk',{ expires: 7, path: '/' });
+</script>

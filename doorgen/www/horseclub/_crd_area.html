@@ -45,11 +45,17 @@
 		<div class="span3 offset1">
 			<a id='btn_ptrb_crdt' href="#" class="btn btn-large btn-block" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;"><strong>Потребительские кредиты</strong></a>
 		</div>
-		<div class="span3 offset1">
+		<div class="span2">
 			<a id='btn_crdt_crd' href="#" class="btn btn-large btn-block" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;"><strong>Кредитные карты</strong></a>
 		</div>
-		<div class="span3 offset1">
+		<div class="span2">
 			<a id='btn_fst_zm' href="#" class="btn btn-large btn-block" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;"><strong>Быстрые займы</strong></a>
+		</div>
+		<div class="span2">
+			<a id='btn_iptk' href="#" class="btn btn-large btn-block" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;"><strong>Ипотека</strong></a>
+		</div>
+		<div class="span2">
+			<a id='btn_avt_crdt' href="#" class="btn btn-large btn-block" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;"><strong>Автокредит</strong></a>
 		</div>
 	</div>
 	<div class="row MainText">
@@ -60,7 +66,7 @@
 </div>
 <script>
 	var message_prgbr = "<div class='content_pb' style='padding:20px 20px 20px 20px;'><h1 style='width: 100%; text-align:center'>Обработка запроса...<h1></div><div id='progress_bar' class='ui-progress-bar ui-container'><div class='ui-progress' style='width: 0%;'><span class='ui-label' style='display:none;'>Выполнение запроса <b class='value'>0%</b></span></div></div>";
-	$('#btn_ptrb_crdt,#btn_crdt_crd,#btn_fst_zm').bind('click ', function(event){
+	$('#btn_ptrb_crdt,#btn_crdt_crd,#btn_fst_zm,#btn_avt_crdt,#btn_iptk').bind('click ', function(event){
 		var crdt_wnd = '/_ptrb_crdt.html';
 		var elem_id = this.id;
 		
@@ -74,18 +80,26 @@
 			crdt_wnd = '/_crdt_crd.html';
 		}else if(elem_id == 'btn_fst_zm'){
 			crdt_wnd = '/_fst_zm.html';
+		}else if(elem_id == 'btn_avt_crdt'){
+			crdt_wnd = '/_avt_crdt.html';
+		}else if(elem_id == 'btn_iptk'){
+			crdt_wnd = '/_iptk.html';
 		}
 		
-		if( (elem_id == 'btn_ptrb_crdt' && !$.cookie('_ptrb_crdt')) || (elem_id == 'btn_crdt_crd' && !$.cookie('_crdt_crd')) || (elem_id == 'btn_fst_zm' && !$.cookie('_fst_zm'))){
+		if( (elem_id == 'btn_ptrb_crdt' && !$.cookie('_ptrb_crdt')) || 
+			(elem_id == 'btn_crdt_crd' && !$.cookie('_crdt_crd')) || 
+			(elem_id == 'btn_fst_zm' && !$.cookie('_fst_zm')) ||
+			(elem_id == 'btn_avt_crdt' && !$.cookie('_avt_crdt')) ||
+			(elem_id == 'btn_iptk' && !$.cookie('_iptk'))){
 			$.blockUI({ 
 				message: message_prgbr,
-				timeout:   10000, 			
+				timeout:   Math.floor(Math.random() * 5000) + 10000, 			
 				css: { width: '60%', right: '20%', left:'20%', padding:'0px 20px 0px 20px'} ,
 				onBlock: function(){
 					Cufon.refresh();
 					Cufon.now();
-					$('#progress_bar .ui-progress').animateProgress(45, function() {
-						$(this).animateProgress(78, function() {
+					$('#progress_bar .ui-progress').animateProgress(Math.floor(Math.random() * 40) + 20, function() {
+						$(this).animateProgress(Math.floor(Math.random() * 30) + 60, function() {
 						  setTimeout(function() {
 							$('#progress_bar .ui-progress').animateProgress(100, function() {
 								;
