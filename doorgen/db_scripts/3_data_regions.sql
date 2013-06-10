@@ -1,4 +1,4 @@
-INSERT INTO `doorgen_banks`.`region` (`region_name`,`region_name_latin`) values
+INSERT INTO `region` (`region_name`,`region_name_latin`) values
 ('Алтайский край',encodestring('Алтайский край')),
 ('Архангельская область',encodestring('Архангельская область')),
 ('Астраханская область',encodestring('Астраханская область')),

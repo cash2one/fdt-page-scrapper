@@ -1,2 +1,2 @@
-DELETE FROM `doorgen_banks`.`city_page`;
-call `doorgen_banks`.`fill_city_news`;
+DELETE FROM `city_page`;
+call `fill_city_news`;
