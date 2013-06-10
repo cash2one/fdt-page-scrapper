@@ -1,7 +1,7 @@
 <?php
 class TitleGenerator
 {
-	function getRandomString($elements_array)
+	/*function getRandomString($elements_array)
 	{
 		$phrase_array = $elements_array;
 		
@@ -19,7 +19,7 @@ class TitleGenerator
 			$size = count($phrase_array);
 		}
 		return $phrase;
-	}
+	}*/
 	
 	function getRegionRandomTitle()
 	{
@@ -42,10 +42,9 @@ class TitleGenerator
 		return $phrase;
 	}
 	
-	function getCityRandomTitle()
+	function getCityRandomTitle($mix_region)
 	{
 		$phrase_array = array("Частный кредит [CITY_CASE_7]","Частный кредит в городе [CITY_CASE_1]","Частный кредит в г.[CITY_CASE_6]","Частный кредит [CITY_CASE_1]");
-		$mix_region = $this->getRandomString(array("Кредиты в России","Банки России","Области","Регионы и Округи"));
 		$phrase_end = "| [REGION_NAME] - ".$mix_region;
 		
 		$size = count($phrase_array);

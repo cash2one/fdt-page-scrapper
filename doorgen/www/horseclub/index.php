@@ -74,7 +74,7 @@ function encodestring($str)
 function getKeyInfo($con,$city_page_key)
 {
 	$result_array = array();
-	$query_case_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND cp.city_page_key = ? AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time <= now()";
+	$query_case_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time), r.region_id FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND cp.city_page_key = ? AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time <= now()";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
@@ -92,7 +92,7 @@ function getKeyInfo($con,$city_page_key)
 
 	/* instead of bind_result: */
 	#echo "get result...";
-	if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time)){
+	if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time, $region_id)){
 		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
@@ -103,7 +103,8 @@ function getKeyInfo($con,$city_page_key)
 						"key_value_latin"=>$key_value_latin, 
 						"region_name"=>$region_name, 
 						"region_name_latin"=>$region_name_latin, 
-						"posted_time"=>$posted_time
+						"posted_time"=>$posted_time, 
+						"region_id"=>$region_id
 					);	
 	}else{
 		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -339,12 +340,16 @@ function getPageSnippets($conn,$page_url)
 	return $snippets_array;
 }
 
+function getRegionPageRandomTitle($region_id){
+	$titles_array = array("Регионы и Округи, Области, Банки России, Кредиты в России","Кредиты в России, Области, Банки России, Регионы и Округи","Регионы и Округи, Банки России, Области, Кредиты в России","Кредиты в России, Регионы и Округи, Области, Банки России","Области, Регионы и Округи, Банки России, Кредиты в России","Кредиты в России, Области, Регионы и Округи, Банки России","Банки России, Регионы и Округи, Области, Кредиты в России","Области, Кредиты в России, Регионы и Округи, Банки России","Области, Кредиты в России, Банки России, Регионы и Округи","Банки России, Регионы и Округи, Кредиты в России, Области","Регионы и Округи, Области, Кредиты в России, Банки России","Кредиты в России, Банки России, Области, Регионы и Округи","Регионы и Округи, Банки России, Кредиты в России, Области","Области, Регионы и Округи, Кредиты в России, Банки России","Кредиты в России, Банки России, Регионы и Округи, Области","Области, Банки России, Кредиты в России, Регионы и Округи","Области, Банки России, Регионы и Округи, Кредиты в России","Банки России, Кредиты в России, Области, Регионы и Округи","Банки России, Области, Регионы и Округи, Кредиты в России","Банки России, Кредиты в России, Регионы и Округи, Области","Банки России, Области, Кредиты в России, Регионы и Округи","Кредиты в России, Регионы и Округи, Банки России, Области","Регионы и Округи, Кредиты в России, Области, Банки России","Регионы и Округи, Кредиты в России, Банки России, Области");
+	$title_id = $region_id % count($titles_array);
+	return $titles_array[$title_id];
+}
+
 //заводим массивы ключей и городов
 $CITY_NEWS_PER_PAGE=10;
 $city_news_page_number=1;
 $current_page="MAIN_PAGE";
-
-$title_template = "Кредиты в России, Банки России, Области, Регионы и Округи";
 
 //определяем имя домена и сабдомена и записываем номер ключа и номер города
 #$url = $_SERVER["HTTP_HOST"];
@@ -402,6 +407,7 @@ $template=preg_replace("/\[RANDKEY\]/e", 'trim($keys[rand(0,$max_k)])', $templat
 $template=preg_replace("/\[RANDCITY\]/e", 'trim($city[rand(0,$max_c)])', $template);
 $template=preg_replace("/\[URL\]/",$_SERVER["HTTP_HOST"], $template);
 $template=preg_replace("/\[URLMAIN\]/",$_SERVER["HTTP_HOST"], $template);
+$template=preg_replace("/\[HEADER_KEYS\]/",HEADER_KEYS, $template);
 
 //fetch regions
 $con=mysqli_connect(DB_HOST,DB_USER_NAME,DB_USER_PWD,DB_NAME);
@@ -444,7 +450,7 @@ if($current_page == "MAIN_PAGE"){
 	$reg_section_count = 4;
 	$reg_per_section = ($row_count - $row_count % $reg_section_count) / $reg_section_count;
 
-	$result = mysqli_query($con,"SELECT region_name, region_name_latin FROM doorgen_banks.region");
+	$result = mysqli_query($con,"SELECT region_name, region_name_latin, region_id FROM doorgen_banks.region");
 
 	$regions = "";
 	$posted = 0;
@@ -477,9 +483,11 @@ if($current_page == "MAIN_PAGE"){
 	$bread_crumbs = "<a href =\"/\">Главная</a>";
 }
 
+$title_template = "Кредиты в России, Банки России, Области, Регионы и Округи";
+
 if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	//get region names
-	$result = mysqli_query($con,"SELECT region_name FROM doorgen_banks.region r where r.region_name_latin like replace(LOWER('".$url_region."'),'-','_')");
+	$result = mysqli_query($con,"SELECT region_name, region_id FROM doorgen_banks.region r where r.region_name_latin like replace(LOWER('".$url_region."'),'-','_')");
 	$row = mysqli_fetch_assoc($result);
 	$region_name = $row['region_name'];
 	
@@ -489,7 +497,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	$region_cases = $caseSelector->getCaseTitle($con,2,$url_region);
 	
 	if(!$is_cached){
-		$page_title = $region_name." - ".$title_template;
+		$page_title = $region_name." - ".getRegionPageRandomTitle($row['region_id']);
 	}
 	#echo "region_name: " . $region_name . "<br>";
 	//getting city news count
@@ -519,7 +527,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 
 		#echo "Region page processing...";
 		//prepare statement
-		$query_city_list = "SELECT cp.anchor_name, c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time) FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time < now() ORDER BY cp.posted_time DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
+		$query_city_list = "SELECT cp.anchor_name, c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time), r.region_id FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time < now() ORDER BY cp.posted_time DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
 		#echo "query_city_list: ".$query_city_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_city_list))) {
 			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
@@ -539,7 +547,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 
 		/* instead of bind_result: */
 		#echo "get result...";
-		if(!mysqli_stmt_bind_result($stmt, $anchor_name, $city_name, $city_name_latin, $key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time)){
+		if(!mysqli_stmt_bind_result($stmt, $anchor_name, $city_name, $city_name_latin, $key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time, $region_id)){
 			#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
@@ -604,7 +612,7 @@ if($current_page == "CITY_PAGE"){
 		$city_cases = $caseSelector->getCaseTitle($con,1,$caseSelector->getCityValueByNewsKey($con,$url_city));
 		
 		if(!$is_cached){
-			$page_title = $title_generator->getCityRandomTitle();
+			$page_title = $title_generator->getCityRandomTitle(getRegionPageRandomTitle($key_info['region_id']));
 		}
 		//fill [BREAD_CRUMBS]
 		$bread_crumbs = "<a href =\"/\">Главная</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['city_name']." ".$key_info['key_value']."</a>";
