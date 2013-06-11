@@ -575,7 +575,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 		/* explicit close recommended */
 		mysqli_stmt_close($stmt);
 	}else{
-		$template=preg_replace("/\[CITY_NEWS_1\]/", "Новостей по данному региону не найдео", $template);
+		$template=preg_replace("/\[CITY_NEWS_1\]/", "<br/>Новостей по данному региону не найдено", $template);
 		$template=preg_replace("/\[PAGER\]/","", $template);
 	}
 	//fill [BREAD_CRUMBS]

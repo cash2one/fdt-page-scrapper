@@ -7,7 +7,7 @@ class YaNewsExtractor
 		$result_file_name = "";
 		$last_change_date_result_file = 0;
 		while($filename = readdir($dh)) {
-			if($filename != "." && $filename != ".." && $last_change_date_result_file < filemtime($news_dir.$filename)){
+			if($filename != "." && $filename != ".." && $filename != ".htaccess" && $last_change_date_result_file < filemtime($news_dir.$filename)){
 				$last_change_date_result_file = filemtime($news_dir.$filename);
 				$result_file_name = $news_dir.$filename;
 			}
