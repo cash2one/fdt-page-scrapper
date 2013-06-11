@@ -7,10 +7,8 @@ DirectoryIndex index.php
 
 ErrorDocument 404 /404.html
 
-RewriteCond %{HTTP_HOST} ^www\.(.*)$
-RewriteRule ^(.*)$ http://phbzj.ru/$1 [R=301,L]
-
-#RewriteRule ^([\_\-a-zA-Z0-9]+)\.html$ http://phbzj.ru/ [R=404,L]
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
