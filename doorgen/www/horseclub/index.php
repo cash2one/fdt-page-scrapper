@@ -480,7 +480,7 @@ if($current_page == "MAIN_PAGE"){
 	//apply template
 	$template=preg_replace("/\[REGIONS_1\]/", $regions, $template);
 	
-	$bread_crumbs = "<a href =\"/\">Главная</a>";
+	$bread_crumbs = "<a href =\"#\">Главная</a>";
 }
 
 $title_template = "Кредиты в России, Банки России, Области, Регионы и Округи";
@@ -579,7 +579,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 		$template=preg_replace("/\[PAGER\]/","", $template);
 	}
 	//fill [BREAD_CRUMBS]
-	$bread_crumbs = "<a href =\"/\">Главная</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;";
+	$bread_crumbs = "<a href =\"/\">Главная</a>&nbsp;>&nbsp;<a href =\"#\">".$region_name."</a>&nbsp;";
 	
 	//
 	

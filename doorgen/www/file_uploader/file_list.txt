@@ -1,0 +1,5 @@
+application/.htaccess
+news_content/.htaccess
+txt/.htaccess
+utils/.htaccess
+webstat/.htaccess
