@@ -56,7 +56,7 @@ public class KeyExtractor
 	    keyContainsRegion = false;
 	    StringBuffer str = null;
 
-	    /*for(int i = 2; i > 0; i--){
+	    for(int i = keyElements.length; i > 0; i--){
 		for(int j = 0; j <= keyElements.length-i; j++){
 		    str = new StringBuffer();
 		    for(int k = j; k < j+i; k++){
@@ -67,7 +67,7 @@ public class KeyExtractor
 		    }
 		    if(regionList.contains(str.toString())){
 			keyContainsRegion = true;
-			keyWithoutRegion = key.replaceAll(str.toString(), "");
+			keyWithoutRegion = key.replaceAll(str.toString(), "").trim();
 			break;
 		    }
 		    if(keyContainsRegion){
@@ -77,16 +77,16 @@ public class KeyExtractor
 		if(keyContainsRegion){
 		    break;
 		}
-	    }*/
+	    }
 
-	    for(String region : regionList){
+	    /*for(String region : regionList){
 		if(key.contains(region)){
 		    //key contains region name
 		    keyContainsRegion = true;
 		    keyWithoutRegion = key.replaceAll(region, "");
 		    break;
 		}
-	    }
+	    }*/
 
 	    if(keyContainsRegion){
 		regionResultKeysWithRegion.add(key);
