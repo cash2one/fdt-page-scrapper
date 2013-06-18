@@ -11,6 +11,7 @@ require_once "utils/title_generator.php";
 require_once "utils/case_value_selector.php";
 require_once "utils/ya_news_extractor.php";
 require_once "utils/config.php";
+require_once "utils/proxy_config.php";
 
 $page_title="";
 $page_meta_keywords="";

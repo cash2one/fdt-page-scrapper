@@ -327,15 +327,15 @@ class Functions
     public function GetHTML($url_for_extract, $host)
     {
 		//TODO save into config
-		$proxy_user = "VIPUAEUR1abRTDMxFu";
-		$proxy_pass = "EAibrYVnJr";
+		$proxy_user = PROXY_USER;
+		$proxy_pass = PROXY_PWD;
         $user_agent = $this->GetContent('txt/browsers.txt');
         if (in_array('curl', get_loaded_extensions())) {
             $curl_engine = curl_init();
             curl_setopt($curl_engine, CURLOPT_URL, $url_for_extract);
             curl_setopt($curl_engine, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($curl_engine, CURLOPT_USERAGENT, $user_agent);
-            $proxy_ip = $this->GetContent('txt/proxies.txt');
+            $proxy_ip = $this->GetContent(PROXY_LIST_PWD);
             if ($proxy_ip) {
 				#echo "USING PROXY: ".$proxy_ip."<br/>";
                 curl_setopt($curl_engine, CURLOPT_PROXY, $proxy_ip);
