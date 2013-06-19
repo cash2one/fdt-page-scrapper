@@ -1,0 +1,143 @@
+﻿/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/cdeou.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/cxzoa.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/dsaya.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/ewqye.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/fghao.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/hgfyu.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/jklua.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/lkjoa.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/nbvyi.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/nmbia.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/oiuyo.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/qweae.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/rtyai.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/uioya.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/vbnea.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/wsxoy.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/ytryy.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/zaqoe.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/* /var/www/thedavidas/data/www/zxcau.ru
+
+chmod 666 /var/www/thedavidas/data/www/cdeou.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/cxzoa.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/dsaya.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/ewqye.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/fghao.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/hgfyu.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/jklua.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/lkjoa.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/nbvyi.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/nmbia.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/oiuyo.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/qweae.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/rtyai.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/uioya.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/vbnea.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/wsxoy.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/ytryy.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/zaqoe.ru/utils/config.php
+chmod 666 /var/www/thedavidas/data/www/zxcau.ru/utils/config.php
+
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/cdeou.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/cxzoa.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/dsaya.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/ewqye.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/fghao.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/hgfyu.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/jklua.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/lkjoa.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/nbvyi.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/nmbia.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/oiuyo.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/qweae.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/rtyai.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/uioya.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/vbnea.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/wsxoy.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/ytryy.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/zaqoe.ru
+/bin/cp -rf /var/www/thedavidas/data/www/asday.ru/.htaccess /var/www/thedavidas/data/www/zxcau.ru
+
+chmod 755 /var/www/thedavidas/data/www/asday.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/cdeou.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/cxzoa.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/dsaya.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/ewqye.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/fghao.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/hgfyu.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/jklua.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/lkjoa.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/nbvyi.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/nmbia.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/oiuyo.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/qweae.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/rtyai.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/uioya.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/vbnea.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/wsxoy.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/ytryy.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/zaqoe.ru/news_content
+chmod 755 /var/www/thedavidas/data/www/zxcau.ru/news_content
+
+chmod -R 777 /var/www/thedavidas/data/www/asday.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/cdeou.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/cxzoa.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/dsaya.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/ewqye.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/fghao.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/hgfyu.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/jklua.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/lkjoa.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/nbvyi.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/nmbia.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/oiuyo.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/qweae.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/rtyai.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/uioya.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/vbnea.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/wsxoy.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/ytryy.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/zaqoe.ru/news_content
+chmod -R 777 /var/www/thedavidas/data/www/zxcau.ru/news_content
+
+chmod -R 777 /var/www/thedavidas/data/www/asday.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/cdeou.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/cxzoa.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/dsaya.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/ewqye.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/fghao.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/hgfyu.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/jklua.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/lkjoa.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/nbvyi.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/nmbia.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/oiuyo.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/qweae.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/rtyai.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/uioya.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/vbnea.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/wsxoy.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/ytryy.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/zaqoe.ru/news_content/*
+chmod -R 777 /var/www/thedavidas/data/www/zxcau.ru/news_content/*
+
+chmod 777 /var/www/thedavidas/data/www/asday.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/cdeou.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/cxzoa.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/dsaya.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/ewqye.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/fghao.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/hgfyu.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/jklua.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/lkjoa.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/nbvyi.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/nmbia.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/oiuyo.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/qweae.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/rtyai.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/uioya.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/vbnea.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/wsxoy.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/ytryy.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/zaqoe.ru/utils/time_table.txt
+chmod 777 /var/www/thedavidas/data/www/zxcau.ru/utils/time_table.txt
