@@ -418,6 +418,9 @@ if (mysqli_connect_errno())
   #echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
+mysqli_query($con,"set character_set_client='utf8'");
+mysqli_query($con,"set character_set_results='utf8'");
+mysqli_query($con,"set collation_connection='utf8_general_ci'");
 
 //get page info
 $page_info = getPageInfo($con,$url_for_cache);
@@ -432,26 +435,19 @@ if($page_info){
 	$is_cached = false;
 }
 
-//mysql_query("set character_set_client='utf8'");
-//mysql_query("set character_set_results='utf8'");
-//mysql_query("set collation_connection='utf8_general_ci'");
-#echo "Processing page: ".$current_page."<br>";
-
-
-
 if($current_page == "MAIN_PAGE"){
 	#echo "Main page processing...";
 	if(!$is_cached){
 		$page_title = $title_generator->getRegionRandomTitle();
 	}
-	$result = mysqli_query($con,"SELECT COUNT(*) as row_count FROM doorgen_banks.region");
+	$result = mysqli_query($con,"SELECT COUNT(*) as row_count FROM region");
 	$row = mysqli_fetch_assoc($result);
 	$row_count = $row['row_count'];
 
 	$reg_section_count = 4;
 	$reg_per_section = ($row_count - $row_count % $reg_section_count) / $reg_section_count;
 
-	$result = mysqli_query($con,"SELECT region_name, region_name_latin, region_id FROM doorgen_banks.region");
+	$result = mysqli_query($con,"SELECT region_name, region_name_latin, region_id FROM region");
 
 	$regions = "";
 	$posted = 0;
@@ -488,7 +484,7 @@ $title_template = "Кредиты в России, Банки России, Об
 
 if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	//get region names
-	$result = mysqli_query($con,"SELECT region_name, region_id FROM doorgen_banks.region r where r.region_name_latin like replace(LOWER('".$url_region."'),'-','_')");
+	$result = mysqli_query($con,"SELECT region_name, region_id FROM region r where r.region_name_latin like replace(LOWER('".$url_region."'),'-','_')");
 	$row = mysqli_fetch_assoc($result);
 	$region_name = $row['region_name'];
 	

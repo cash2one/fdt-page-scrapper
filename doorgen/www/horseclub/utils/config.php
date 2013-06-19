@@ -7,7 +7,7 @@
 	define("DB_USER_NAME", "root");
 
 	#Параметр корня сайта.
-	define("DB_USER_PWD", "hw6cGD6X");
+	define("DB_USER_PWD", "pqONJtKD");
 
 	#Параметр названия сайта.
 	define("DB_NAME", "doorgen_banks");

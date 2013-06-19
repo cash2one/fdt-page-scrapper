@@ -3,7 +3,7 @@ class CaseValueSelector
 {
 	function getCityValueByNewsKey($con,$news_key)
 	{
-		$query_case_list = "select c.city_name_latin from `doorgen_banks`.`city_page` cp,  `doorgen_banks`.`city` c where c.city_id = cp.city_id AND cp.city_page_key = LOWER(?)";
+		$query_case_list = "select c.city_name_latin from `city_page` cp,  `city` c where c.city_id = cp.city_id AND cp.city_page_key = LOWER(?)";
 		
 		if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 			echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -41,10 +41,10 @@ class CaseValueSelector
 		$result = array();
 		if($reg_type == 2){
 			#region name
-			$query_case_list = "select DISTINCT c.case_code_value, c.case_value from `doorgen_banks`.`case` c where c.location_type_code_value = 2 AND c.location_id = (select region_id from `doorgen_banks`.`region` r where r.region_name_latin like replace(LOWER(?),'-','_')) ORDER BY c.case_code_value ASC";
+			$query_case_list = "select DISTINCT c.case_code_value, c.case_value from `case` c where c.location_type_code_value = 2 AND c.location_id = (select region_id from `region` r where r.region_name_latin like replace(LOWER(?),'-','_')) ORDER BY c.case_code_value ASC";
 		}else{
 			#city name
-			$query_case_list = "select DISTINCT c.case_code_value, c.case_value from `doorgen_banks`.`case` c where c.location_type_code_value = 1 AND c.location_id in (select city_id from `doorgen_banks`.`city` r where r.city_name_latin like replace(LOWER(?),'-','_')) ORDER BY c.case_code_value ASC";
+			$query_case_list = "select DISTINCT c.case_code_value, c.case_value from `case` c where c.location_type_code_value = 1 AND c.location_id in (select city_id from `city` r where r.city_name_latin like replace(LOWER(?),'-','_')) ORDER BY c.case_code_value ASC";
 		}
 		if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 			echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
