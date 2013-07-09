@@ -42,15 +42,10 @@ class TitleGenerator
 		return $phrase;
 	}
 	
-	function getCityRandomTitle($mix_region)
+	function getCityRandomTitle($mix_region, $anchor_value)
 	{
-		$phrase_array = array("Частный кредит [CITY_CASE_7]","Частный кредит в городе [CITY_CASE_1]","Частный кредит в г.[CITY_CASE_6]","Частный кредит [CITY_CASE_1]");
 		$phrase_end = "| [REGION_NAME] - ".$mix_region;
-		
-		$size = count($phrase_array);
-		$phrase = "";
-		$rand_phrase_index = rand(0,$size-1);
-		$phrase = $phrase.$phrase_array[$rand_phrase_index].' '.$phrase_end;
+		$phrase =  $anchor_value.' '.$phrase_end;
 		return $phrase;
 	}
 }

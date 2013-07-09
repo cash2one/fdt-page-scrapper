@@ -75,7 +75,7 @@ function encodestring($str)
 function getKeyInfo($con,$city_page_key)
 {
 	$result_array = array();
-	$query_case_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time), r.region_id FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND cp.city_page_key = ? AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time <= now()";
+	$query_case_list = "SELECT c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time), r.region_id, cp.anchor_name FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND cp.city_page_key = ? AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time <= now()";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
@@ -93,7 +93,7 @@ function getKeyInfo($con,$city_page_key)
 
 	/* instead of bind_result: */
 	#echo "get result...";
-	if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time, $region_id)){
+	if(!mysqli_stmt_bind_result($stmt, $city_name,$city_name_latin,$key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time, $region_id, $anchor_name)){
 		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
@@ -105,7 +105,8 @@ function getKeyInfo($con,$city_page_key)
 						"region_name"=>$region_name, 
 						"region_name_latin"=>$region_name_latin, 
 						"posted_time"=>$posted_time, 
-						"region_id"=>$region_id
+						"region_id"=>$region_id,
+						"anchor_name"=>$anchor_name
 					);	
 	}else{
 		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -609,7 +610,7 @@ if($current_page == "CITY_PAGE"){
 		$city_cases = $caseSelector->getCaseTitle($con,1,$caseSelector->getCityValueByNewsKey($con,$url_city));
 		
 		if(!$is_cached){
-			$page_title = $title_generator->getCityRandomTitle(getRegionPageRandomTitle($key_info['region_id']));
+			$page_title = $title_generator->getCityRandomTitle(getRegionPageRandomTitle($key_info['region_id']), $key_info['anchor_name']);
 		}
 		//fill [BREAD_CRUMBS]
 		$bread_crumbs = "<a href =\"/\">Главная</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['city_name']." ".$key_info['key_value']."</a>";
