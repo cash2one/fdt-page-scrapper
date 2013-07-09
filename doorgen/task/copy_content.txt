@@ -141,3 +141,45 @@ chmod 777 /var/www/thedavidas/data/www/wsxoy.ru/utils/time_table.txt
 chmod 777 /var/www/thedavidas/data/www/ytryy.ru/utils/time_table.txt
 chmod 777 /var/www/thedavidas/data/www/zaqoe.ru/utils/time_table.txt
 chmod 777 /var/www/thedavidas/data/www/zxcau.ru/utils/time_table.txt
+
+---------------PROXY UPDATE---------------------------
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/cdeou.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/cxzoa.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/dsaya.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/ewqye.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/fghao.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/hgfyu.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/jklua.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/lkjoa.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/nbvyi.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/nmbia.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/oiuyo.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/qweae.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/rtyai.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/uioya.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/vbnea.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/wsxoy.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/ytryy.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/zaqoe.ru/txt/proxies.txt 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/txt/proxies.txt /var/www/thedavidas/data/www/zxcau.ru/txt/proxies.txt 
+
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/cdeou.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/cxzoa.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/dsaya.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/ewqye.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/fghao.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/hgfyu.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/jklua.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/lkjoa.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/nbvyi.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/nmbia.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/oiuyo.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/qweae.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/rtyai.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/uioya.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/vbnea.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/wsxoy.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/ytryy.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/zaqoe.ru/utils/proxy_config.php 
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/zxcau.ru/utils/proxy_config.php 
+---------------PROXY UPDATE---------------------------
