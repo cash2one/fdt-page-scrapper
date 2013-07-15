@@ -5,13 +5,14 @@ public abstract class SnippetTask
 	public final static String KEY_WORDS_KEY = "#KEY_WORDS#";
 	public final static String LANGUAGE_KEY = "#LANGUAGE#";
 
-	private String scrapperUrl = "";
+	protected String scrapperUrl = "";
 	private String xpathSnippets = "";
 	private String xpathTitle = "";
 	private String xpathLink = "";
 	private String xpathDesc = "";
-	private String keyWords = "";
-	private String language = "en";
+	protected String keyWords = "";
+	protected String keyWordsNative = "";
+	protected String language = "en";
 
 	private int attemptCount = 1;
 
@@ -20,6 +21,7 @@ public abstract class SnippetTask
 	public SnippetTask(String keyWords)
 	{
 		super();
+		this.keyWordsNative = keyWords;
 		this.keyWords = keyWords.replace(' ', '+');
 	}
 
