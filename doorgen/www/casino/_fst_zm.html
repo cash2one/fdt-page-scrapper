@@ -1,0 +1,79 @@
+<div class="container" style="padding-top:0px;">
+	<div class="row">
+		<div class="span12  dimmCaption" style="margin-top:0px">
+		<a name="top1"></a>
+			<div class="leftUgol">
+			</div>
+			<p class="capt">БЫСТРЫЕ ЗАЙМЫ</p>				
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="span10 offset1">
+			<p><strong>Быстрый заём</strong> - вид кредитования при котором вы можете быстро получить необходимую сумму на личные нужды без предоставления дополнительных документов.</p>
+			<p><strong>Можно отметить основные отличия данного вида заёма:</strong></p>
+			<ul>
+				<li>Быстрое оформление: мгновенный ответ после отправки онлайн-заявки</li>
+				<li>Минимальный пакет документов</li>
+				<li>Короткие сроки кредитования: позволяют быстро рассчитаться</li>
+				<li>Удобный график погашения заёма: ежедневные, еженедельные расчеты</li>
+				<li>Идеальный вариант занять деньги "до зарплаты"</li>
+			</ul>
+			
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="span10 offset1">
+		<h3>Список организаций, предоставляющих данный вид заёма</h3>
+		<table class="table table-hover">
+		  <thead>
+			<tr>
+			  <th>Банк</th>
+			  <th>Сумма займа (рублей)</th>
+			  <th>Срок займа</th>
+			  <th>Результат</th>
+			  <th></th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td><img src="/images/vivus.png" alt="vivus logo" title="vivus.ru" width="150px"></td>
+			  <td><p class="creditSumm">до 30 000 ₶</p></td>
+			  <td><p class="creditPercent">до 30 дней</p></td>
+			  <td><p><strong>мгновенный ответ на заявку</strong></p></td>
+			  <td><a href="http://www.cityads.ru/click-MIQLWX3F-SLZKVXTQ" target="_blank" class="btn btn-success">Оформить заявку</a></td>
+			</tr>
+			<!--tr>
+			  <td><img src="/images/mig.png" alt="mig logo" title="mig logo" width="150px"></td>
+			  <td><p class="creditSumm">до 30 000 ₶</p></td>
+			  <td><p class="creditPercent">до 6 месяцев</p></td>
+			  <td><p><strong>мгновенный ответ на заявку</strong></p></td>
+			  <td><a href="http://www.cityads.ru/click-HEQDZLOF-SLZKVXTQ" target="_blank" class="btn btn-success">Оформить заявку</a></td>
+			</tr-->
+		  </tbody>
+		</table>				
+		</div>
+	</div>
+	<div class="row">
+		<div class="span1 offset10">
+			<a id="prvs_btn" href="#" class="btn" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;">Вернуться</a>
+		</div>
+		<script>
+			$('#prvs_btn').bind('click ', function(){
+				$("#crd_area").fadeTo("slow", 0.01, function(){
+					$("#crd_area").load('/_crd_area.html', function(){
+						$("#crd_area").fadeTo("slow",1.0);
+					});
+				});
+			});
+			Cufon.refresh();
+			Cufon.now();
+		</script>
+	</div>
+</div>
+<script>
+	Cufon.refresh();
+	Cufon.now();
+	$.cookie('_fst_zm', '_fst_zm',{ expires: 7, path: '/' });
+</script>

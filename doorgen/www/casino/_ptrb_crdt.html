@@ -1,0 +1,84 @@
+<div class="container" style="padding-top:0px;">
+	<div class="row">
+		<div class="span12  dimmCaption" style="margin-top:0px">
+		<a name="top1"></a>
+			<div class="leftUgol">
+			</div>
+			<p class="capt">ПОТРЕБИТЕЛЬСКИЕ КРЕДИТЫ</p>
+			
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="span10 offset1">
+		<table class="table table-hover">
+		  <thead>
+			<tr>
+			  <th>Банк</th>
+			  <th>Сумма кредита (рублей)</th>
+			  <th>Годовая ставка</th>
+			  <th>Срок займа</th>
+			  <th>Преимущества</th>
+			  <th></th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+				<!--style for buttons style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;" -->
+			  <td><img src="/images/homecredit.png" alt="home credit logo" title="Home Credit" width="150px"></td>
+			  <td><p class="creditSumm">до 700 000 ₶</p></td>
+			  <td><p class="creditPercent2">от 19,9%</p></td>
+			  <td><p class="creditPercent">до 5 лет</p></td>
+			  <td><p><strong>рассмотрение от 1 дня</strong></p></td>
+			  <td><a href="http://www.cityads.ru/click-JFQCXU55-URNKHQZ7" target="_blank" class="btn btn-success">Оформить заявку</a></td>
+			</tr>
+			<tr>
+			  <td><img src="/images/renessans.png" alt="Ренессанс Кредит" title="Ренессанс Кредит" width="150px"></td>
+			  <td><p class="creditSumm">от 500 000 ₶</p></td>
+			  <td><p class="creditPercent2">от 19,9%</p></td>
+			  <td><p class="creditPercent">до 5 лет</p></td>
+			  <td><p><strong>рассмотрение 10 минут</strong></p></td>
+			  <td><a href="http://www.cityads.ru/click-IGQCXU6F-SLZKVXTQ" target="_blank" class="btn btn-success">Оформить заявку</a></td>
+			</tr>  				
+			 <tr>
+			  <td><img src="/images/moskva.png" alt="Банк Москвы" title="Банк Москвы" width="150px"></td>
+			  <td><p class="creditSumm">до 3 000 000 ₶</p></td>
+			  <td><p class="creditPercent2">от 16,0%</p></td>
+			  <td><p class="creditPercent">до 5 лет</p></td>
+			  <td><p><strong>без комиссий</strong></p></td>
+			  <td><a href="http://www.cityads.ru/click-FDQLWXTF-KHEBQIO0" target="_blank" class="btn btn-success">Оформить заявку</a></td>
+			</tr>
+			<tr>
+			  <td><img src="/images/prom.png" alt="Промсвязьбанк" title="Промсвязьбанк" width="150px"></td>
+			  <td><p class="creditSumm">до 750 000 ₶</p></td>
+			  <td><p class="creditPercent2">от 16,9%</p></td>
+			  <td><p class="creditPercent">до 5 лет</p></td>
+			  <td><p><strong>рассмотрение от 1 часа</strong></p></td>
+			  <td><a href="http://www.cityads.ru/click-LJQLWXX0-SLZKVXTQ" target="_blank" class="btn btn-success">Оформить заявку</a></td>
+			</tr>
+		  </tbody>
+		</table>				
+		</div>
+	</div>	
+	<div class="row">
+		<div class="span1 offset10">
+			<a id="prvs_btn" href="#" class="btn" style="color: #444444; background-color:#EB3F16; background-image: linear-gradient(to bottom, #E6E6E6, #EB3F16); background-repeat: repeat-x;">Вернуться</a>
+		</div>
+		<script>
+			$('#prvs_btn').bind('click ', function(){
+				$("#crd_area").fadeTo("slow", 0.01, function(){
+					$("#crd_area").load('/_crd_area.html', function(){
+						$("#crd_area").fadeTo("slow",1.0);
+					});
+				});
+			});
+			Cufon.refresh();
+			Cufon.now();
+		</script>
+	</div>
+</div>
+<script>
+	Cufon.refresh();
+	Cufon.now();
+	$.cookie('_ptrb_crdt', '_ptrb_crdt',{ expires: 7, path: '/' });
+</script>
