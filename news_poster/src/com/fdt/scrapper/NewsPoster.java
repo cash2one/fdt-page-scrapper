@@ -27,12 +27,7 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
-import org.htmlcleaner.HtmlCleaner;
-import org.htmlcleaner.TagNode;
-import org.htmlcleaner.XPatherException;
-import org.json.JSONArray;
 import org.json.JSONObject;
-import org.json.JSONTokener;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -173,14 +168,7 @@ public class NewsPoster {
 	    //conn.getRequestProperties()
 	    int code = conn.getResponseCode();
 
-	    HtmlCleaner cleaner = new HtmlCleaner();
 	    InputStream is = conn.getInputStream();
-
-	    /*org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", "");
-			System.out.println(page);*/
-
-	    /*  TagNode responceBody = cleaner.clean(is,"UTF-8");
-	    Object[] link = responceBody.evaluateXPath("//a/@href");*/
 
 	    String link = "";
 	    BufferedReader reader = null;
