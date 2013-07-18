@@ -4,9 +4,11 @@
  */
 package com.fdt.scrapper;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.StringWriter;
@@ -16,6 +18,7 @@ import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -27,6 +30,9 @@ import org.apache.log4j.Logger;
 import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.TagNode;
 import org.htmlcleaner.XPatherException;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -173,11 +179,31 @@ public class NewsPoster {
 	    /*org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", "");
 			System.out.println(page);*/
 
-	    TagNode responceBody = cleaner.clean(is,"UTF-8");
-	    Object[] link = responceBody.evaluateXPath("//a/@href");
+	    /*  TagNode responceBody = cleaner.clean(is,"UTF-8");
+	    Object[] link = responceBody.evaluateXPath("//a/@href");*/
+
+	    String link = "";
+	    BufferedReader reader = null;
+	    try
+	    {
+		reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+		String json = reader.readLine();
+		
+		JSONObject jsonObject = new JSONObject( json );
+		link = (String)jsonObject.get("id");
+	    }
+	    catch (ParseException e) {
+		logExtarnal.error("Error occured during posting news",e);
+	    }
+	    finally{
+		if(reader != null){
+		    reader.close();
+		}
+	    }
+
 	    String groupUrl = "";
-	    if(link != null && link.length > 0){
-		groupUrl =  ((String)link[0]);
+	    if(link != null && link.length() > 0){
+		groupUrl =  ((String)link);
 	    }
 	    if(is != null){
 		is.close();
@@ -246,7 +272,7 @@ public class NewsPoster {
 		//END edit news
 	    }
 
-	    groupUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL)+groupUrl;
+	    groupUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL)+"/"+groupUrl;
 	    System.out.println(groupUrl);
 	    log.info(groupUrl);
 
@@ -254,8 +280,6 @@ public class NewsPoster {
 	} catch (ClientProtocolException e) {
 	    logExtarnal.error("Error occured during posting news",e);
 	} catch (IOException e) {
-	    logExtarnal.error("Error occured during posting news",e);
-	} catch (XPatherException e) {
 	    logExtarnal.error("Error occured during posting news",e);
 	}
 
