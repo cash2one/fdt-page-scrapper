@@ -260,7 +260,7 @@ public class NewsPoster {
 		//END edit news
 	    }
 
-	    groupUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL)+"/"+groupUrl;
+	    groupUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL)+"/"+groupUrl + "/";
 	    System.out.println(groupUrl);
 	    log.info(groupUrl);
 
