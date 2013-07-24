@@ -92,6 +92,46 @@ function postNews($con,$news_id)
 	mysqli_stmt_close($stmt);
 }
 
+function getPageInfo($con,$city_page_id)
+{
+	$result_array = array();
+	$query_case_list = "SELECT r.region_name_latin, cp.city_page_key, c.city_name_latin FROM `city` c, `city_page` cp, `region` r WHERE 1 AND cp.city_page_id = ? AND c.city_id = cp.city_id AND c.region_id = r.region_id";
+	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+	//set values
+	#echo "set value...";
+	$id=1;
+	if (!mysqli_stmt_bind_param($stmt, "s", $city_page_id)) {
+		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+	
+	#echo "execute...";
+	if (!mysqli_stmt_execute($stmt)){
+		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+
+	/* instead of bind_result: */
+	#echo "get result...";
+	if(!mysqli_stmt_bind_result($stmt, $region_name_latin, $city_page_key, $city_name_latin)){
+		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+	
+	if(mysqli_stmt_fetch($stmt)) {
+		$result_array = array(	"region_name_latin"=>$region_name_latin,
+						"city_page_key"=>$city_page_key,
+						"city_name_latin"=>$city_name_latin
+					);	
+	}else{
+		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		print_r(error_get_last());
+	}
+	
+	mysqli_stmt_close($stmt);
+	
+	return $result_array;
+}
+
 function object2file($value, $filename)
 {
     $f = fopen($filename, 'w');
@@ -149,7 +189,10 @@ $news_for_posting_array  = getNewsIdForPostingArray($con,$news_count_for_posting
 echo var_dump($news_for_posting_array);
 
 for($i = 0; $i < count($news_for_posting_array); $i++){
-	postNews($con,$news_for_posting_array[$i]);
+	//postNews($con,$news_for_posting_array[$i]);
+	$result_array = getPageInfo($con,$news_for_posting_array[$i]);
+	$href = "/".str_replace(" ","-",$result_array["region_name_latin"])."/".str_replace(" ","-",$result_array["city_page_key"]).".html";
+	echo $href;
 }
 //случайно выбараем
 
