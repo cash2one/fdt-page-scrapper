@@ -191,7 +191,7 @@ echo var_dump($news_for_posting_array);
 $flag = true;
 $server_name = $_SERVER["SERVER_NAME"];
 for($i = 0; $i < count($news_for_posting_array); $i++){
-	//postNews($con,$news_for_posting_array[$i]);
+	postNews($con,$news_for_posting_array[$i]);
 	$result_array = getPageInfo($con,$news_for_posting_array[$i]);
 	$href = "/".str_replace(" ","-",$result_array["region_name_latin"])."/".str_replace(" ","-",$result_array["city_page_key"]).".html";
 	$url="http://".$server_name.$href;
