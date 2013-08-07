@@ -183,3 +183,67 @@ chmod 777 /var/www/thedavidas/data/www/zxcau.ru/utils/time_table.txt
 /bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/zaqoe.ru/utils/proxy_config.php 
 /bin/cp -f /var/www/thedavidas/data/www/asday.ru/utils/proxy_config.php /var/www/thedavidas/data/www/zxcau.ru/utils/proxy_config.php 
 ---------------PROXY UPDATE---------------------------
+
+
+
+
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/cdeou.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/cxzoa.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/dsaya.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/ewqye.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/fghao.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/hgfyu.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/jklua.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/lkjoa.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/nbvyi.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/nmbia.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/oiuyo.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/qweae.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/rtyai.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/uioya.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/vbnea.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/wsxoy.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/ytryy.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/zaqoe.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img1.jpg /var/www/thedavidas/data/www/zxcau.ru/images/
+
+
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/cdeou.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/cxzoa.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/dsaya.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/ewqye.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/fghao.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/hgfyu.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/jklua.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/lkjoa.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/nbvyi.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/nmbia.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/oiuyo.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/qweae.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/rtyai.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/uioya.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/vbnea.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/wsxoy.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/ytryy.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/zaqoe.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img2.jpg /var/www/thedavidas/data/www/zxcau.ru/images/
+
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/cdeou.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/cxzoa.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/dsaya.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/ewqye.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/fghao.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/hgfyu.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/jklua.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/lkjoa.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/nbvyi.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/nmbia.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/oiuyo.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/qweae.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/rtyai.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/uioya.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/vbnea.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/wsxoy.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/ytryy.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/zaqoe.ru/images/
+/bin/cp -f /var/www/thedavidas/data/www/asday.ru/images/page1-img3.jpg /var/www/thedavidas/data/www/zxcau.ru/images/
