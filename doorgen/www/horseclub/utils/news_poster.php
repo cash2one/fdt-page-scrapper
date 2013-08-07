@@ -186,10 +186,10 @@ $news_count_for_posting = $region_count * $news_per_region;
 echo "news_count_for_posting: ".$news_count_for_posting."<br/>";
 //получаем список всех новостей, у которых время постинга больше текущего времени на 5 мин
 $news_for_posting_array  = getNewsIdForPostingArray($con,$news_count_for_posting);
+
 echo var_dump($news_for_posting_array);
 
-$flag = true;
-$server_name = SERVER_NAME;
+$server_name = $argv[1];
 
 for($i = 0; $i < count($news_for_posting_array); $i++){
 	postNews($con,$news_for_posting_array[$i]);
