@@ -189,28 +189,19 @@ $news_for_posting_array  = getNewsIdForPostingArray($con,$news_count_for_posting
 echo var_dump($news_for_posting_array);
 
 $flag = true;
-$server_name = $_SERVER["SERVER_NAME"];
-
-$ctx = stream_context_create(array(
-    'http' => array(
-		'method'  => 'GET',
-        'timeout' => 5
-        )
-    )
-); 
+$server_name = SERVER_NAME;
 
 for($i = 0; $i < count($news_for_posting_array); $i++){
 	postNews($con,$news_for_posting_array[$i]);
 	$result_array = getPageInfo($con,$news_for_posting_array[$i]);
 	$href = "/".str_replace(" ","-",$result_array["region_name_latin"])."/".str_replace(" ","-",$result_array["city_page_key"]).".html";
 	$url="http://".$server_name.$href;
-	file_get_contents($url, false, $ctx); 
-	#$ch = curl_init();
-	#curl_setopt( $ch, CURLOPT_TIMEOUT, 5);
-	#curl_setopt( $ch, CURLOPT_URL, $url );  
-	#curl_exec( $ch );
+	$ch = curl_init();
+	curl_setopt( $ch, CURLOPT_TIMEOUT, 1);
+	curl_setopt( $ch, CURLOPT_URL, $url );  
+	curl_exec( $ch );
 	echo "curl_exec executed..."."<br/>";
-	#curl_close ( $ch );
+	curl_close ( $ch );
 	echo $url."<br/>";
 }
 //случайно выбараем

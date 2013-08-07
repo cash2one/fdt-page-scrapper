@@ -1,6 +1,8 @@
 <?php
 
 	define("DB_HOST", "localhost");
+	
+	define("SERVER_NAME", "site_name");
 
 	#Параметр md5 пароля для доступа к панели управления.
 	#password
