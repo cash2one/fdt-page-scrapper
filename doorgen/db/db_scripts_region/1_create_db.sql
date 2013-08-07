@@ -2,48 +2,6 @@ DROP TABLE IF EXISTS `snippets`;
 DROP TABLE IF EXISTS `cached_page`;
 DROP TABLE IF EXISTS `city_page`;
 DROP TABLE IF EXISTS `extra_key`;
-DROP TABLE IF EXISTS `case`;
-DROP TABLE IF EXISTS `city`;
-DROP TABLE IF EXISTS `region`;
-DROP TABLE IF EXISTS `ref_code`;
-DROP TABLE IF EXISTS `ref_attr`;
-
-CREATE TABLE IF NOT EXISTS `ref_attr` (
-	ref_attr_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	attr_name VARCHAR(100),
-	attr_name_desc VARCHAR(300)
-) Type=InnoDB;
-
-CREATE TABLE IF NOT EXISTS `ref_code` (
-	ref_code_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	ref_attr_id INT,
-	code_value INT,
-	code_desc VARCHAR(100),
-	CONSTRAINT FOREIGN KEY (`ref_attr_id`) REFERENCES `ref_attr` (`ref_attr_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) Type=InnoDB;
-
-CREATE TABLE IF NOT EXISTS `region` (
-	region_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	region_name VARCHAR(200) UNIQUE KEY,
-	region_name_latin VARCHAR(200) UNIQUE KEY
-) Type=InnoDB;
-
-CREATE TABLE IF NOT EXISTS `city` (
-	city_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	region_id INT,
-	city_name VARCHAR(200),
-	city_name_latin VARCHAR(200),
-	CONSTRAINT FOREIGN KEY (`region_id`) REFERENCES `region` (`region_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-	UNIQUE KEY `city_name` (`city_name`,`region_id`)
-) Type=InnoDB;
-
-CREATE TABLE IF NOT EXISTS `case` (
-	case_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	location_id INT,
-	case_code_value INT,
-	location_type_code_value INT,
-	case_value VARCHAR(100)
-) Type=InnoDB;
 
 CREATE TABLE IF NOT EXISTS `extra_key` (
 	key_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
