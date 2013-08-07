@@ -194,7 +194,7 @@ $server_name = $_SERVER["SERVER_NAME"];
 $ctx = stream_context_create(array(
     'http' => array(
 		'method'  => 'GET',
-        'timeout' => 1
+        'timeout' => 5
         )
     )
 ); 
