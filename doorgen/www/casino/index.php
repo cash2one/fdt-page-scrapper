@@ -123,7 +123,7 @@ function getPageInfo($con,$page_url)
 	$result_array = array();
 	$query_case_list = "SELECT cp.cached_page_id, cp.cached_page_title, cp.cached_page_meta_keywords, cp.cached_page_meta_description, cp.cached_time FROM `cached_page` cp WHERE 1 AND cp.cached_page_url = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
@@ -349,22 +349,13 @@ function getRegionPageRandomTitle($region_id){
 }
 
 //заводим массивы ключей и городов
-$CITY_NEWS_PER_PAGE=10;
-$city_news_page_number=1;
+$KEY_PER_PAGE=10;
+$key_page_number=1;
 $current_page="MAIN_PAGE";
 
-//определяем имя домена и сабдомена и записываем номер ключа и номер города
-#$url = $_SERVER["HTTP_HOST"];
-#echo "HTTP_HOST: ".$url.'<br>';
-//preg_match("/[a-z0-9]*\.[a-z0-9]*$/",$url,$url1);
-//preg_match("/[0-9]+-[0-9]+/",$url,$match);
-//list($keys_num, $city_num) = split('-', $match[0]);
-
 $url = $_SERVER["REQUEST_URI"];
-#echo "REQUEST_URI: ".$url.'<br>';
+echo "REQUEST_URI: ".$url.'<br>';
 preg_match("/[\-a-zA-Z0-9]+\/[\-a-zA-Z0-9]*/",$url,$request_uri);
-#echo "request_uri".$request_uri[0].'<br>';
-#echo $request_uri[0].'<br>';
 
 $url_region = "";
 $url_city = "";
@@ -372,41 +363,44 @@ if(count($request_uri)>=1){
 	list($url_region,$url_city) = explode('/', $request_uri[0]);
 }
 
-#echo "url_region: ".$url_region.'<br>';
-#echo "url_city".$url_city.'<br>';
+//определяем имя домена и сабдомена и записываем номер ключа и номер города
+$domain = $_SERVER["HTTP_HOST"];
+echo "HTTP_HOST: ".$domain.'<br>';
+
+list($page_key,$dm1,$dm2) = explode('.', $domain);
+echo "page_key: ".$page_key."<br/>";
+echo "dm1: ".$dm1."<br/>";
+echo "dm2: ".$dm2."<br/>";
 
 //обрабатываем запрос генерации урлов
 $url_for_cache = "";
+$page_number = "";
 
-if( $url_city && is_numeric($url_city) && $url_region){
-	$template = file_get_contents("tmpl_region_new.html");
-	$city_news_page_number = $url_city;
-	$current_page = "REGION_PAGE_PAGING";
-	$url_for_cache = "/".$url_region."/";
-	#echo "REGION_PAGE_PAGING";
-} elseif ($url_city && $url_region){
-	#echo "url_city: ".$url_city."<br/>";
-	#echo "url_region: ".$url_region."<br/>";
+if( ($page_key && $dm1 && $dm2)){
 	$template = file_get_contents("tmpl_key.html");
-	$current_page = "CITY_PAGE";
-	$url_for_cache = $url;
-	#echo "CITY_PAGE";
-} elseif(!$url_city && $url_region){
-	$template = file_get_contents("tmpl_region_new.html");
-	$current_page = "REGION_PAGE";
-	$city_news_page_number = 1;
-	$url_for_cache = $url;
-	#echo "REGION_PAGE";
-} elseif(($url_city == 'index.php' || $url_city == '') && !$url_region){
-	//TODO Обработка региона
-	$template=file_get_contents("tmpl_main_new.html");
-	$current_page = "MAIN_PAGE";
-	$url_for_cache = $url;
-	#echo "MAIN_PAGE";
+	$key_page_number = $url_city;
+	$current_page = "KEY_PAGE";
+} else{
+	//check for main_page paging
+	$url = $_SERVER["REQUEST_URI"];
+	preg_match("/[\-a-zA-Z0-9]+\/",$url,$request_uri);
+	
+	if(count($request_uri)>=1){
+		list($page_number) = explode('/', $request_uri[0]);
+	}
+	echo "page_number: ".$page_number."<br/>";
+	if($page_number && is_numeric($page_number)){
+		$current_page = "MAIN_PAGE_PAGING";
+	}else{
+		$current_page = "MAIN_PAGE";
+	}
+	$template = file_get_contents("tmpl_main_new.html");
+	
 }
+$url_for_cache = $domain;
+echo "url_for_cache: ".$url_for_cache."<br/>";
+echo "current_page: ".$current_page."<br/>";
 
-$template=preg_replace("/\[RANDKEY\]/e", 'trim($keys[rand(0,$max_k)])', $template);
-$template=preg_replace("/\[RANDCITY\]/e", 'trim($city[rand(0,$max_c)])', $template);
 $template=preg_replace("/\[URL\]/",$_SERVER["HTTP_HOST"], $template);
 $template=preg_replace("/\[URLMAIN\]/",$_SERVER["HTTP_HOST"], $template);
 $template=preg_replace("/\[HEADER_KEYS\]/",HEADER_KEYS, $template);
@@ -425,6 +419,7 @@ mysqli_query($con,"set collation_connection='utf8_general_ci'");
 
 //get page info
 $page_info = getPageInfo($con,$url_for_cache);
+var_dump($page_info);
 if($page_info){
 	$is_cached = true;
 	$page_title = $page_info['cached_page_title'];
@@ -436,106 +431,48 @@ if($page_info){
 	$is_cached = false;
 }
 
-if($current_page == "MAIN_PAGE"){
-	#echo "Main page processing...";
+$title_template = "Кредиты в России, Банки России, Области, Регионы и Округи";
+
+if($current_page == "MAIN_PAGE" || $current_page == "MAIN_PAGE_PAGING"){
+	echo "Main page processing...";
 	if(!$is_cached){
 		$page_title = $title_generator->getRegionRandomTitle();
 	}
-	$result = mysqli_query($con,"SELECT COUNT(*) as row_count FROM region");
-	$row = mysqli_fetch_assoc($result);
-	$row_count = $row['row_count'];
 
-	$reg_section_count = 4;
-	$reg_per_section = ($row_count - $row_count % $reg_section_count) / $reg_section_count;
-
-	$result = mysqli_query($con,"SELECT region_name, region_name_latin, region_id FROM region");
-
-	$regions = "";
-	$posted = 0;
-	$page = 1;
-	$firstRegNmChr = "";
-	while($row = mysqli_fetch_array($result))
-	{
-		//print result to page
-		/*if($posted != 0 && ($posted%$reg_per_section == 0)){
-			$template=preg_replace("/\[REGIONS_".$page."\]/", $regions, $template);
-			$regions = "";
-			$page = $page+1;
-		}
-		//fill result with region list
-		$posted = $posted + 1;
-		$regions = $regions."<a href = \"/".str_replace(" ","-",$row['region_name_latin'])."/\">".$row['region_name']."</a>&nbsp;";*/
-		//print result to page
-		$curentFrstChr = mb_substr($row['region_name'],0,1, 'UTF-8');
-		if($firstRegNmChr != $curentFrstChr){
-			$firstRegNmChr = $curentFrstChr;
-			$regions = $regions."<br><h3>$firstRegNmChr</h3>";
-		}
-		//fill result with region list
-		$posted = $posted + 1;
-		$regions = $regions."<a href = \"/".str_replace(" ","-",$row['region_name_latin'])."/\">".$row['region_name']."</a>&nbsp;<br/>";
-	}
-	//apply template
-	$template=preg_replace("/\[REGIONS_1\]/", $regions, $template);
+	$result = mysqli_query($con,"SELECT key_value, key_value_latin, posted_time FROM page WHERE posted_time < now() ORDER BY posted_time DESC LIMIT 50");
 	
-	$bread_crumbs = "<a href =\"#\">Главная</a>";
-}
-
-$title_template = "Кредиты в России, Банки России, Области, Регионы и Округи";
-
-if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
-	//get region names
-	$result = mysqli_query($con,"SELECT region_name, region_id FROM region r where r.region_name_latin like replace(LOWER('".$url_region."'),'-','_')");
-	$row = mysqli_fetch_assoc($result);
-	$region_name = $row['region_name'];
-	
-	//generate header menu
-	$caseSelector = new CaseValueSelector;
-	$region_cases = array();
-	$region_cases = $caseSelector->getCaseTitle($con,2,$url_region);
-	
-	if(!$is_cached){
-		$page_title = $region_name." - ".getRegionPageRandomTitle($row['region_id']);
-	}
 	#echo "region_name: " . $region_name . "<br>";
 	//getting city news count
-	$query_count = "SELECT count(*) as row_count FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER('".$url_region."'),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time < now()";
+	$query_count = "SELECT count(*) row_count FROM page WHERE posted_time < now()";
 	$result = mysqli_query($con,$query_count);
 	
 	$row = mysqli_fetch_assoc($result);
-	$city_news_count = $row['row_count'];
+	$page_key_count = $row['row_count'];
 	#echo "city_news_count: " . $city_news_count . "<br>";
 	
-	if($city_news_count>0){
+	if($page_key_count>0){
 		//вычисляем последнюю страницы
-		$max_page_number = floor($city_news_count/$CITY_NEWS_PER_PAGE);
-		if($city_news_count%$CITY_NEWS_PER_PAGE != 0){
+		$max_page_number = floor($page_key_count/$KEY_PER_PAGE);
+		if($page_key_count%$KEY_PER_PAGE != 0){
 			$max_page_number = $max_page_number + 1;
 		}
 		
-		if($city_news_page_number > $max_page_number){
-			$city_news_page_number = $max_page_number;
+		if($key_page_number > $max_page_number){
+			$key_page_number = $max_page_number;
 		}
 		
-		#echo "max_page_number: ".$max_page_number."<br>";
-		#echo "final city_news_page_number: ".$city_news_page_number."<br>";
+		echo "max_page_number: ".$max_page_number."<br>";
+		echo "final key_page_number: ".$key_page_number."<br>";
 		
-		$start_position = $CITY_NEWS_PER_PAGE*($city_news_page_number-1);
-		#echo "start_position: ".$start_position."<br>";
+		$start_position = $KEY_PER_PAGE*($key_page_number-1);
+		echo "start_position: ".$start_position."<br>";
 
-		#echo "Region page processing...";
+		echo "Page processing...";
 		//prepare statement
-		$query_city_list = "SELECT cp.anchor_name, c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time), r.region_id FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time < now() ORDER BY cp.posted_time DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
-		#echo "query_city_list: ".$query_city_list."<br>";
-		if (!($stmt = mysqli_prepare($con,$query_city_list))) {
+		$query_key_page_list = "SELECT key_value, key_value_latin, posted_time FROM page WHERE posted_time < now() ORDER BY posted_time DESC LIMIT ".$start_position.",".$KEY_PER_PAGE;
+		#echo "query_city_list: ".$query_key_page_list."<br>";
+		if (!($stmt = mysqli_prepare($con,$query_key_page_list))) {
 			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
-		}
-		
-		//set values
-		#echo "set value...";
-		$id=1;
-		if (!mysqli_stmt_bind_param($stmt, "s", $url_region)) {
-			#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
 		#echo "execute...";
@@ -545,7 +482,7 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 
 		/* instead of bind_result: */
 		#echo "get result...";
-		if(!mysqli_stmt_bind_result($stmt, $anchor_name, $city_name, $city_name_latin, $key_value, $key_value_latin, $region_name, $region_name_latin, $posted_time, $region_id)){
+		if(!mysqli_stmt_bind_result($stmt, $key_value, $key_value_latin, $posted_time )){
 			#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
@@ -562,13 +499,14 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 			//generate link name
 			
 			
-			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$city_name_latin." ".$key_value_latin).".html\">".$anchor_name." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
+			$city_href = "<a href = \"/".str_replace(" ","-",$key_value_latin).".html\">".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
 			$news_block = $news_block.$city_href;
 		}
 		$template=preg_replace("/\[CITY_NEWS_1\]/", $news_block, $template);
+		echo "news_block: ".$news_block."<br>";
 
 		$pager = new Pager;
-		$template=preg_replace("/\[PAGER\]/", $pager->getPageNavigation("/".str_replace(" ","-",$region_name_latin)."/",$city_news_page_number, $max_page_number), $template);
+		$template=preg_replace("/\[PAGER\]/", $pager->getPageNavigation("/".str_replace(" ","-",$region_name_latin)."/",$key_page_number, $max_page_number), $template);
 		
 		/* explicit close recommended */
 		mysqli_stmt_close($stmt);
@@ -580,8 +518,9 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	$bread_crumbs = "<a href =\"/\">Главная</a>&nbsp;>&nbsp;<a href =\"#\">".$region_name."</a>&nbsp;";
 	
 	//
-	
 }
+
+exit;
 
 $key_info = array();
 if($current_page == "CITY_PAGE"){
