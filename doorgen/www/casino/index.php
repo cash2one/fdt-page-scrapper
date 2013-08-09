@@ -349,7 +349,7 @@ function getRegionPageRandomTitle($region_id){
 }
 
 //заводим массивы ключей и городов
-$KEY_PER_PAGE=10;
+$KEY_PER_PAGE=5;
 $key_page_number=1;
 $current_page="MAIN_PAGE";
 
@@ -374,22 +374,21 @@ echo "dm2: ".$dm2."<br/>";
 
 //обрабатываем запрос генерации урлов
 $url_for_cache = "";
-$page_number = "";
+$key_page_number = "";
 
 if( ($page_key && $dm1 && $dm2)){
 	$template = file_get_contents("tmpl_key.html");
-	$key_page_number = $url_city;
 	$current_page = "KEY_PAGE";
 } else{
 	//check for main_page paging
 	$url = $_SERVER["REQUEST_URI"];
-	preg_match("/[\-a-zA-Z0-9]+\/",$url,$request_uri);
+	preg_match("/[0-9]+/",$url,$request_uri);
 	
 	if(count($request_uri)>=1){
-		list($page_number) = explode('/', $request_uri[0]);
+		list($key_page_number) = explode('/', $request_uri[0]);
 	}
-	echo "page_number: ".$page_number."<br/>";
-	if($page_number && is_numeric($page_number)){
+	echo "key_page_number: ".$key_page_number."<br/>";
+	if($key_page_number && is_numeric($key_page_number)){
 		$current_page = "MAIN_PAGE_PAGING";
 	}else{
 		$current_page = "MAIN_PAGE";
