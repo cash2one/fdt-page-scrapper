@@ -466,7 +466,7 @@ if($current_page == "MAIN_PAGE" || $current_page == "MAIN_PAGE_PAGING"){
 
 		#echo "Page processing...";
 		//prepare statement
-		$query_key_page_list = "SELECT key_value, key_value_latin, nix_timestamp(posted_time) posted_time FROM page WHERE posted_time < now() ORDER BY posted_time DESC LIMIT ".$start_position.",".$KEY_PER_PAGE;
+		$query_key_page_list = "SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE posted_time < now() ORDER BY posted_time DESC LIMIT ".$start_position.",".$KEY_PER_PAGE;
 		#echo "query_city_list: ".$query_key_page_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_key_page_list))) {
 			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
@@ -525,7 +525,7 @@ if($current_page == "KEY_PAGE"){
 	echo "page_key: ".$page_key."<br/>";
 	
 	$key_info = getKeyInfo($con,$page_key);
-	exit;
+
 	/*"city_name"=>$city_name,
 						"city_name_latin"=>$city_name_latin,
 						"key_value"=>$key_value, 
