@@ -8,7 +8,6 @@ require_once "application/plugins/snippets/Google.php";
 require_once "application/plugins/snippets/Ukr.php";
 require_once "application/plugins/images/ImagesGoogle.php"; 
 require_once "utils/title_generator.php";
-require_once "utils/case_value_selector.php";
 require_once "utils/ya_news_extractor.php";
 require_once "utils/config.php";
 require_once "utils/proxy_config.php";
@@ -77,24 +76,24 @@ function getKeyInfo($con,$city_page_key)
 	$result_array = array();
 	$query_case_list = "SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE key_value_latin = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
 	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "s", $city_page_key)) {
-		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 
 	/* instead of bind_result: */
 	#echo "get result...";
 	if(!mysqli_stmt_bind_result($stmt, $key_value,$key_value_latin,$posted_time)){
-		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	if(mysqli_stmt_fetch($stmt)) {
@@ -271,8 +270,11 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 
 function savePageSnippets($conn, $page_url, $snippets_array)
 {	
+	#echo "Saving snippets procdedure..";
+	#var_dump($snippets_array);
 	for($i = 0; $i < 9; $i++){
 		if(isset($snippets_array[$i])){
+			
 			$query_case_list = "INSERT INTO `snippets` (cached_page_id, snippets_index, snippets_title, snippets_content, snippets_image_large, snippets_image_small, created_time) SELECT cp.cached_page_id,?,?,?,?,?,now() FROM cached_page cp WHERE cp.cached_page_url = ?";
 			if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
 				#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -292,6 +294,7 @@ function savePageSnippets($conn, $page_url, $snippets_array)
 
 			mysqli_stmt_close($stmt);
 			
+			#echo "commit...";
 			$conn->commit();
 		}
 	}
@@ -348,7 +351,7 @@ $key_page_number=1;
 $current_page="MAIN_PAGE";
 
 $url = $_SERVER["REQUEST_URI"];
-echo "REQUEST_URI: ".$url.'<br>';
+#echo "REQUEST_URI: ".$url.'<br>';
 preg_match("/[\-a-zA-Z0-9]+\/[\-a-zA-Z0-9]*/",$url,$request_uri);
 
 $url_region = "";
@@ -359,12 +362,13 @@ if(count($request_uri)>=1){
 
 //определяем имя домена и сабдомена и записываем номер ключа и номер города
 $domain = $_SERVER["HTTP_HOST"];
-echo "HTTP_HOST: ".$domain.'<br>';
+#echo "HTTP_HOST: ".$domain.'<br>';
 
 list($page_key,$dm1,$dm2) = explode('.', $domain);
-echo "page_key: ".$page_key."<br/>";
-echo "dm1: ".$dm1."<br/>";
-echo "dm2: ".$dm2."<br/>";
+#echo "page_key: ".$page_key."<br/>";
+#echo "dm1: ".$dm1."<br/>";
+#echo "dm2: ".$dm2."<br/>";
+$site_main_domain = "";
 
 //обрабатываем запрос генерации урлов
 $url_for_cache = "";
@@ -373,6 +377,7 @@ $key_page_number = "";
 if( ($page_key && $dm1 && $dm2)){
 	$template = file_get_contents("tmpl_key.html");
 	$current_page = "KEY_PAGE";
+	$site_main_domain = $dm1.".".$dm2;
 } else{
 	//check for main_page paging
 	$url = $_SERVER["REQUEST_URI"];
@@ -391,12 +396,13 @@ if( ($page_key && $dm1 && $dm2)){
 	}else{
 		$current_page = "MAIN_PAGE";
 	}
+	$site_main_domain = $page_key.".".$dm1;
 	$template = file_get_contents("tmpl_main_new.html");
 	
 }
 $url_for_cache = $domain;
-echo "url_for_cache: ".$url_for_cache."<br/>";
-echo "current_page: ".$current_page."<br/>";
+#echo "url_for_cache: ".$url_for_cache."<br/>";
+#echo "current_page: ".$current_page."<br/>";
 
 $template=preg_replace("/\[URL\]/",$_SERVER["HTTP_HOST"], $template);
 $template=preg_replace("/\[URLMAIN\]/",$_SERVER["HTTP_HOST"], $template);
@@ -416,7 +422,7 @@ mysqli_query($con,"set collation_connection='utf8_general_ci'");
 
 //get page info
 $page_info = getPageInfo($con,$url_for_cache);
-var_dump($page_info);
+#var_dump($page_info);
 if($page_info){
 	$is_cached = true;
 	$page_title = $page_info['cached_page_title'];
@@ -433,7 +439,7 @@ $title_template = "Кредиты в России, Банки России, Об
 if($current_page == "MAIN_PAGE" || $current_page == "MAIN_PAGE_PAGING"){
 	#echo "Main page processing...";
 	if(!$is_cached){
-		$page_title = $title_generator->getRegionRandomTitle();
+		$page_title = $title_generator->getRandomTitle();
 	}
 
 	$result = mysqli_query($con,"SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE posted_time < now() ORDER BY posted_time DESC LIMIT 50");
@@ -522,34 +528,26 @@ $key_info = array();
 
 if($current_page == "KEY_PAGE"){
 	//get city page info
-	echo "page_key: ".$page_key."<br/>";
+	#echo "page_key: ".$page_key."<br/>";
 	
 	$key_info = getKeyInfo($con,$page_key);
 
-	/*"city_name"=>$city_name,
-						"city_name_latin"=>$city_name_latin,
-						"key_value"=>$key_value, 
-						"key_value_latin"=>$key_value_latin, 
-						"region_name"=>$region_name, 
-						"region_name_latin"=>$region_name_latin, 
-						"posted_time"=>$posted_time*/
+	/*
+	$result_array = array(	"key_value"=>$key_value,
+						"key_value_latin"=>$key_value_latin,
+						"posted_time"=>$posted_time
+					);	
+	*/
 						
-	echo var_dump($key_info);
+	#var_dump($key_info);
 	
 	//if page exist
 	if($key_info){
-		$region_name = $key_info['region_name'];
-		
-		//generate header menu
-		$caseSelector = new CaseValueSelector;
-		$city_cases = array();
-		$city_cases = $caseSelector->getCaseTitle($con,1,$caseSelector->getCityValueByNewsKey($con,$url_city));
-		
 		if(!$is_cached){
-			$page_title = $title_generator->getCityRandomTitle(getRegionPageRandomTitle($key_info['region_id']), $key_info['anchor_name']);
+			$page_title = $key_info['key_value']." - ".$title_generator->getRandomTitle();
 		}
 		//fill [BREAD_CRUMBS]
-		$bread_crumbs = "<a href =\"/\">Главная</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['city_name']." ".$key_info['key_value']."</a>";
+		$bread_crumbs = "<a href =\"http://".$site_main_domain."\">Главная</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['key_value']."</a>";
 	}else{
 		#PAGE NOT FOUND REDIRECT
 		header('HTTP/1.1 404 Not Found');
@@ -569,12 +567,12 @@ if(!$is_cached){
 		$snippet_array = $snippet_extractor->Start(preg_replace('/\|/',' ',$page_title),'ru',1,$function);
 		$page_meta_description = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[0]["description"]);
 	}
-	$page_title = $page_title." | ".$_SERVER['HTTP_HOST'];
+	$page_title = $page_title." | ".$site_main_domain;
 	savePageInfo($con,$url_for_cache, $page_title, $page_title, $page_meta_description);
 }
 
-if($current_page == "CITY_PAGE"){
-	$template = fillSnippetsContent($template,$key_info['city_name']." ".$key_info['key_value'],$con, $url);
+if($current_page == "KEY_PAGE"){
+	$template = fillSnippetsContent($template,$key_info['key_value'],$con, $domain);
 
 	//delete all unnecessary templates anchors
 	for($i=0; $i < 9; $i++){
@@ -589,7 +587,6 @@ if($current_page == "CITY_PAGE"){
 
 $template=preg_replace("/\[BREAD_CRUMBS\]/", $bread_crumbs, $template);
 
-$template=preg_replace("/\[REGION_NAME\]/", $region_name, $template);
 $template=preg_replace("/\[TITLE\]/", $page_title, $template);
 $template=preg_replace("/\[DESCRIPTION\]/", $page_meta_description, $template);
 
@@ -608,7 +605,7 @@ if($current_page == "MAIN_PAGE" || $current_page == "MAIN_PAGE_PAGING"){
 	$template=preg_replace("/\[LAST_NEWS\]/", $extractd_news, $template);
 }
 
-unset($city_cases, $region_cases, $page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator, $extractd_news, $news_extractor, $url_for_cache);
+unset($page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator, $extractd_news, $news_extractor, $url_for_cache);
 mysqli_close($con);
 
 echo $template;	
