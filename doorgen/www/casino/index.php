@@ -439,7 +439,8 @@ $title_template = "Кредиты в России, Банки России, Об
 if($current_page == "MAIN_PAGE" || $current_page == "MAIN_PAGE_PAGING"){
 	#echo "Main page processing...";
 	if(!$is_cached){
-		$page_title = $title_generator->getRandomTitle();
+		//$page_title = $title_generator->getRandomTitle();
+		$page_title = MAIN_TITLE;
 	}
 
 	$result = mysqli_query($con,"SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE posted_time < now() ORDER BY posted_time DESC LIMIT 50");
@@ -544,7 +545,7 @@ if($current_page == "KEY_PAGE"){
 	//if page exist
 	if($key_info){
 		if(!$is_cached){
-			$page_title = $key_info['key_value']." - ".$title_generator->getRandomTitle();
+			$page_title = $key_info['key_value']." | ".MAIN_TITLE;
 		}
 		//fill [BREAD_CRUMBS]
 		$bread_crumbs = "<a href =\"http://".$site_main_domain."\">Главная</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['key_value']."</a>";
@@ -588,6 +589,7 @@ if($current_page == "KEY_PAGE"){
 $template=preg_replace("/\[BREAD_CRUMBS\]/", $bread_crumbs, $template);
 
 $template=preg_replace("/\[TITLE\]/", $page_title, $template);
+$template=preg_replace("/\[MAIN_TITLE\]/", MAIN_TITLE, $template);
 $template=preg_replace("/\[DESCRIPTION\]/", $page_meta_description, $template);
 
 //print last news

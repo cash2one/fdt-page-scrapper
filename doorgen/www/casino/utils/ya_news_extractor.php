@@ -1,4 +1,6 @@
 <?php
+require_once "config.php";
+
 class YaNewsExtractor
 {
 	function isNewsUpdateNeed($news_dir){
@@ -72,7 +74,7 @@ class YaNewsExtractor
 		$lines = array();
 		
 		while(count($lines) != 6){
-			$news_content = $function->GetHTML('http://news.yandex.ru/ru/finances5.utf8.js','news.yandex.ru');
+			$news_content = $function->GetHTML(NEWS_FEED,NEWS_FEED_DOMAIN);
 			$lines = preg_split('/m\_finances\[m\_finances\.length\]\=new\ f/', $news_content);
 			#echo var_dump($lines);
 		}
