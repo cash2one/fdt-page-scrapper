@@ -346,7 +346,7 @@ function getRegionPageRandomTitle($region_id){
 }
 
 //заводим массивы ключей и городов
-$KEY_PER_PAGE=5;
+$KEY_PER_PAGE=25;
 $key_page_number=1;
 $current_page="MAIN_PAGE";
 
