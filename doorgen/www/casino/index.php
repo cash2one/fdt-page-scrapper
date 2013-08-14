@@ -404,8 +404,8 @@ $url_for_cache = $domain;
 #echo "url_for_cache: ".$url_for_cache."<br/>";
 #echo "current_page: ".$current_page."<br/>";
 
-$template=preg_replace("/\[URL\]/",$_SERVER["HTTP_HOST"], $template);
-$template=preg_replace("/\[URLMAIN\]/",$_SERVER["HTTP_HOST"], $template);
+$template=preg_replace("/\[URL\]/",$site_main_domain, $template);
+$template=preg_replace("/\[URLMAIN\]/",$site_main_domain, $template);
 $template=preg_replace("/\[HEADER_KEYS\]/",HEADER_KEYS, $template);
 
 //fetch regions
