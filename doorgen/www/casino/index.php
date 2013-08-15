@@ -71,7 +71,7 @@ function encodestring($str)
     return strtr($str,$tr);
 }
 
-function getKeyInfo($con,$city_page_key)
+function getKeyInfo($con,$page_key)
 {
 	$result_array = array();
 	$query_case_list = "SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE key_value_latin = ?";
@@ -81,7 +81,7 @@ function getKeyInfo($con,$city_page_key)
 	//set values
 	#echo "set value...";
 	$id=1;
-	if (!mysqli_stmt_bind_param($stmt, "s", $city_page_key)) {
+	if (!mysqli_stmt_bind_param($stmt, "s", $page_key)) {
 		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
@@ -364,7 +364,20 @@ if(count($request_uri)>=1){
 $domain = $_SERVER["HTTP_HOST"];
 #echo "HTTP_HOST: ".$domain.'<br>';
 
-list($page_key,$dm1,$dm2) = explode('.', $domain);
+$domain_array_piece = explode('.', $domain);
+$page_key  = "";
+$dm1  = "";
+$dm2  = "";
+if(isset($domain_array_piece[0])){
+	$page_key = $domain_array_piece[0];
+}
+if(isset($domain_array_piece[1])){
+	$dm1 = $domain_array_piece[1];
+}
+if(isset($domain_array_piece[2])){
+	$dm2 = $domain_array_piece[2];
+}
+#list($page_key,$dm1,$dm2) = explode('.', $domain);
 #echo "page_key: ".$page_key."<br/>";
 #echo "dm1: ".$dm1."<br/>";
 #echo "dm2: ".$dm2."<br/>";

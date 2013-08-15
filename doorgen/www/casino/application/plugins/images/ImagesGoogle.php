@@ -17,7 +17,7 @@ class ImagesGoogle
 			{
 				if ($i < $count)
 				{
-					$images[$i]['title'] = $F->GetKeyword();
+					#$images[$i]['title'] = $F->GetKeyword();
 					$images[$i]['small'] = $e->find('a img', 0)->src;
 					preg_match('|imgurl=(.+?)&|', $e->find('a', 0)->href, $large);
 					$images[$i]['large'] = urldecode($large[1]);

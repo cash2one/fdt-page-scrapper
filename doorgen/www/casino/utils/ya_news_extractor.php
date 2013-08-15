@@ -24,7 +24,7 @@ class YaNewsExtractor
 			$dh = opendir($news_dir);
 			while(false !== ($filename = readdir($dh))){
 				#echo "Удаление старого файла...";
-                if($filename != "." && $filename != "..") unlink($news_dir.$filename);
+                if($filename != "." && $filename != ".." && $filename != ".htaccess" ) unlink($news_dir.$filename);
 			}
 			closedir($dh);
 			#echo "Need_news_update";
