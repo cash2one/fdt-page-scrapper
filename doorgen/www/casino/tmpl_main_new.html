@@ -170,7 +170,10 @@
                 [LAST_NEWS]
             </div>
             <script>
-                Cufon.now();
+                $(window).load(function(){
+					Cufon.refresh();
+					Cufon.now();
+				});
             </script>  
 			<footer>
                 <div style="float:left; padding:3px 0px 0 0px;">
