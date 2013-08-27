@@ -156,21 +156,24 @@ function getPageInfo($con,$page_url)
 
 function savePageInfo($conn,$page_url, $title, $keywords, $description)
 {
-	#echo "Saving page info..<br/>";
+	echo "Saving page info..<br/>";
 	$query_case_list = "INSERT INTO `cached_page` (cached_page_url, cached_page_title, cached_page_meta_keywords, cached_page_meta_description, cached_time) VALUES (?,?,?,?,now())";
 	if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
-		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		print_r(error_get_last());
+		echo "End prepare field.";
 	}
 	//set values
 	#echo "set value...";
-	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "ssss", $page_url,$title,$keywords,$description)) {
-		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		print_r(error_get_last());
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		#echo "Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		print_r(error_get_last());
 	}
 
 	mysqli_stmt_close($stmt);
@@ -271,25 +274,26 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 function savePageSnippets($conn, $page_url, $snippets_array)
 {	
 	#echo "Saving snippets procdedure..";
-	#var_dump($snippets_array);
+	var_dump($snippets_array);
 	for($i = 0; $i < 9; $i++){
 		if(isset($snippets_array[$i])){
 			
 			$query_case_list = "INSERT INTO `snippets` (cached_page_id, snippets_index, snippets_title, snippets_content, snippets_image_large, snippets_image_small, created_time) SELECT cp.cached_page_id,?,?,?,?,?,now() FROM cached_page cp WHERE cp.cached_page_url = ?";
 			if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
-				#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				#echo "savePageSnippets: Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				#print_r(error_get_last());
 			}
 			//set values
 			#echo "set value...";
 			if (!mysqli_stmt_bind_param($stmt, "dsssss", $i, $snippets_array[$i]["title"],$snippets_array[$i]["description"],$snippets_array[$i]["large"],$snippets_array[$i]["small"], $page_url)) {
-				#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-				print_r(error_get_last());
+				#echo "savePageSnippets: Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				#print_r(error_get_last());
 			}
 			
 			#echo "execute...";
 			if (!mysqli_stmt_execute($stmt)){
-				#echo "Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-				print_r(error_get_last());
+				#echo "savePageSnippets: Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				#print_r(error_get_last());
 			}
 
 			mysqli_stmt_close($stmt);
@@ -306,22 +310,26 @@ function getPageSnippets($conn,$page_url)
 	$query_case_list = "select snp.snippets_index, snp.cached_page_id, snp.snippets_title, snp.snippets_content, snp.snippets_image_large, snp.snippets_image_small from snippets snp where snp.cached_page_id IN (select cp.cached_page_id from cached_page cp where cp.cached_page_url = ?)";
 	if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#print_r(error_get_last());
 	}
 	//set values
 	#echo "set value...";
 	if (!mysqli_stmt_bind_param($stmt, "s", $page_url)) {
 		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#print_r(error_get_last());
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
 		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#print_r(error_get_last());
 	}
 
 	/* instead of bind_result: */
 	#echo "get result...";
 	if(!mysqli_stmt_bind_result($stmt, $snippets_index, $cached_page_id, $snippets_title, $snippets_content, $snippets_image_large, $snippets_image_small)){
 		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#print_r(error_get_last());
 	}
 	
 	while(mysqli_stmt_fetch($stmt)) {
@@ -573,13 +581,14 @@ if($current_page == "KEY_PAGE"){
 }
 
 if(!$is_cached){
-	$iterator_i = 0;	
+	$page_meta_description = false;
 	while(!$page_meta_description){
 		#echo "Page_title: ".$page_title."<br/>";
-		#echo "Iterator index: ".$iterator_i."<br/>";
-		$iterator_i++;
 		$snippet_array = $snippet_extractor->Start(preg_replace('/\|/',' ',$page_title),'ru',1,$function);
-		$page_meta_description = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[0]["description"]);
+		var_dump($snippet_array);
+		if(isset($snippet_array[0])){
+			$page_meta_description = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[0]["description"]);
+		}
 	}
 	$page_title = $page_title." | ".$site_main_domain;
 	savePageInfo($con,$url_for_cache, $page_title, $page_title, $page_meta_description);
