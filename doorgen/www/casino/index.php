@@ -159,8 +159,12 @@ function savePageInfo($conn,$page_url, $title, $keywords, $description)
 	echo "Saving page info..<br/>";
 	$query_case_list = "INSERT INTO `cached_page` (cached_page_url, cached_page_title, cached_page_meta_keywords, cached_page_meta_description, cached_time) VALUES (?,?,?,?,now())";
 	if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
+	/* check connection */
+		if (mysqli_connect_errno()) {
+			echo "Connect failed: $mysqli_connect_error()";
+			exit();
+		}
 		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-		print_r(error_get_last());
 		echo "End prepare field.";
 	}
 	//set values
