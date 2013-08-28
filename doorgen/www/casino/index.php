@@ -18,7 +18,8 @@ $page_meta_description="";
 $is_cached = false;
 
 $function = new Functions;
-$snippet_extractor = new Ukr;
+#$snippet_extractor = new Ukr;
+$snippet_extractor = new Google;
 $google_image = new ImagesGoogle;
 $title_generator = new TitleGenerator;
 
@@ -277,32 +278,32 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 
 function savePageSnippets($conn, $page_url, $snippets_array)
 {	
-	#echo "Saving snippets procdedure..";
+	echo "Saving snippets procdedure..";
 	var_dump($snippets_array);
 	for($i = 0; $i < 9; $i++){
 		if(isset($snippets_array[$i])){
 			
 			$query_case_list = "INSERT INTO `snippets` (cached_page_id, snippets_index, snippets_title, snippets_content, snippets_image_large, snippets_image_small, created_time) SELECT cp.cached_page_id,?,?,?,?,?,now() FROM cached_page cp WHERE cp.cached_page_url = ?";
 			if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
-				#echo "savePageSnippets: Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-				#print_r(error_get_last());
+				echo "savePageSnippets: Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				print_r(error_get_last());
 			}
 			//set values
-			#echo "set value...";
+			echo "set value...";
 			if (!mysqli_stmt_bind_param($stmt, "dsssss", $i, $snippets_array[$i]["title"],$snippets_array[$i]["description"],$snippets_array[$i]["large"],$snippets_array[$i]["small"], $page_url)) {
-				#echo "savePageSnippets: Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-				#print_r(error_get_last());
+				echo "savePageSnippets: Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				print_r(error_get_last());
 			}
 			
-			#echo "execute...";
+			echo "execute...";
 			if (!mysqli_stmt_execute($stmt)){
-				#echo "savePageSnippets: Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-				#print_r(error_get_last());
+				echo "savePageSnippets: Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				print_r(error_get_last());
 			}
 
 			mysqli_stmt_close($stmt);
 			
-			#echo "commit...";
+			echo "commit...";
 			$conn->commit();
 		}
 	}
