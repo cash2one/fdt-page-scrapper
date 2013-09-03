@@ -184,9 +184,11 @@ function savePageInfo($conn,$page_url, $title, $keywords, $description)
 function fillSnippetsContent($template, $key_value, $conn, $page_url){
 
 	global $function, $google_image, $snippet_extractor;
-	$snippets_array = getPageSnippets($conn,$page_url);
+	$snippets_array = array();
+	#$snippets_array = getPageSnippets($conn,$page_url);
 	
-	if(count($snippets_array) == 0){
+	#if(count($snippets_array) == 0){
+	if(count($snippets_array) == 1){
 		#echo "Saving snippets.";
 		$rand_index_array = array();
 		$index = 0;
