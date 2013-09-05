@@ -358,71 +358,58 @@ $key_page_number=1;
 $current_page="MAIN_PAGE";
 
 $url = $_SERVER["REQUEST_URI"];
-#echo "REQUEST_URI: ".$url.'<br>';
-preg_match("/[\-a-zA-Z0-9]+\/[\-a-zA-Z0-9]*/",$url,$request_uri);
+echo "REQUEST_URI: ".$url.'<br>';
 
-$url_region = "";
-$url_city = "";
-if(count($request_uri)>=1){
-	list($url_region,$url_city) = explode('/', $request_uri[0]);
+$page_key = "";
+if(strcmp("/",$url) != 0){
+	$request_uri = explode('/', $url);
+	if(isset($request_uri[1])){
+		$page_key = $request_uri[1];
+		var_dump($request_uri);
+		echo "request_uri[1]: ".$request_uri[1].'<br>';
+	}
 }
+
+echo "page_key: ".$page_key.'<br>';
 
 //определяем имя домена и сабдомена и записываем номер ключа и номер города
-$domain = $_SERVER["HTTP_HOST"];
+#$domain = $_SERVER["HTTP_HOST"];
 #echo "HTTP_HOST: ".$domain.'<br>';
 
-$domain_array_piece = explode('.', $domain);
-$page_key  = "";
-$dm1  = "";
-$dm2  = "";
-if(isset($domain_array_piece[0])){
-	$page_key = $domain_array_piece[0];
-}
-if(isset($domain_array_piece[1])){
-	$dm1 = $domain_array_piece[1];
-}
-if(isset($domain_array_piece[2])){
-	$dm2 = $domain_array_piece[2];
-}
-#list($page_key,$dm1,$dm2) = explode('.', $domain);
-#echo "page_key: ".$page_key."<br/>";
-#echo "dm1: ".$dm1."<br/>";
-#echo "dm2: ".$dm2."<br/>";
 $site_main_domain = "";
+
 
 //обрабатываем запрос генерации урлов
 $url_for_cache = "";
 $key_page_number = "";
 
-if( ($page_key && $dm1 && $dm2)){
+if( $page_key && !is_numeric($page_key)){
 	$template = file_get_contents("tmpl_key.html");
 	$current_page = "KEY_PAGE";
-	$site_main_domain = $dm1.".".$dm2;
+	#$site_main_domain = $dm1.".".$dm2;
 } else{
 	//check for main_page paging
-	$url = $_SERVER["REQUEST_URI"];
-	preg_match("/[0-9]+/",$url,$request_uri);
-	
-	if(count($request_uri)>=1){
-		list($key_page_number) = explode('/', $request_uri[0]);
+	if(is_numeric($page_key)){
+		$key_page_number = $page_key;
 	}
 	if(!$key_page_number){
 		$key_page_number = 1;
 	}
 	
-	#echo "key_page_number: ".$key_page_number."<br/>";
+	
 	if($key_page_number && is_numeric($key_page_number)){
 		$current_page = "MAIN_PAGE_PAGING";
 	}else{
 		$current_page = "MAIN_PAGE";
 	}
-	$site_main_domain = $page_key.".".$dm1;
+	echo "key_page_number: ".$key_page_number."<br/>";
+	#$site_main_domain = $page_key.".".$dm1;
 	$template = file_get_contents("tmpl_main_new.html");
 	
 }
 $url_for_cache = $domain;
-#echo "url_for_cache: ".$url_for_cache."<br/>";
-#echo "current_page: ".$current_page."<br/>";
+echo "url_for_cache: ".$url_for_cache."<br/>";
+echo "current_page: ".$current_page."<br/>";
 
 $template=preg_replace("/\[URL\]/",$site_main_domain, $template);
 $template=preg_replace("/\[URLMAIN\]/",$site_main_domain, $template);
@@ -517,7 +504,7 @@ if($current_page == "MAIN_PAGE" || $current_page == "MAIN_PAGE_PAGING"){
 			//generate link name
 			
 			
-			$city_href = "<a href = \"http://".$key_value_latin.".".$domain."\">".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
+			$city_href = "<a href = \"http://".$domain."/".$key_value_latin."/\">".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
 			$news_block = $news_block.$city_href;
 		}
 		$template=preg_replace("/\[CITY_NEWS_1\]/", $news_block, $template);
