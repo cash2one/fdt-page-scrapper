@@ -358,19 +358,17 @@ $key_page_number=1;
 $current_page="MAIN_PAGE";
 
 $url = $_SERVER["REQUEST_URI"];
-echo "REQUEST_URI: ".$url.'<br>';
+#echo "REQUEST_URI: ".$url.'<br>';
 
 $page_key = "";
 if(strcmp("/",$url) != 0){
 	$request_uri = explode('/', $url);
 	if(isset($request_uri[1])){
 		$page_key = $request_uri[1];
-		var_dump($request_uri);
-		echo "request_uri[1]: ".$request_uri[1].'<br>';
 	}
 }
 
-echo "page_key: ".$page_key.'<br>';
+#echo "page_key: ".$page_key.'<br>';
 
 //определяем имя домена и сабдомена и записываем номер ключа и номер города
 #$domain = $_SERVER["HTTP_HOST"];
@@ -395,18 +393,16 @@ if( $page_key && !is_numeric($page_key)){
 	if(!$key_page_number){
 		$key_page_number = 1;
 	}
+	$current_page = "MAIN_PAGE_PAGING";
 	
-	
-	if($key_page_number && is_numeric($key_page_number)){
-		$current_page = "MAIN_PAGE_PAGING";
-	}else{
-		$current_page = "MAIN_PAGE";
-	}
-	echo "key_page_number: ".$key_page_number."<br/>";
+	#echo "key_page_number: ".$key_page_number."<br/>";
 	#$site_main_domain = $page_key.".".$dm1;
 	$template = file_get_contents("tmpl_main_new.html");
 	
 }
+
+exit;
+
 $url_for_cache = $domain;
 echo "url_for_cache: ".$url_for_cache."<br/>";
 echo "current_page: ".$current_page."<br/>";
@@ -437,7 +433,7 @@ if($page_info){
 
 $title_template = "Кредиты в России, Банки России, Области, Регионы и Округи";
 
-if($current_page == "MAIN_PAGE" || $current_page == "MAIN_PAGE_PAGING"){
+if($current_page == "MAIN_PAGE_PAGING"){
 	#echo "Main page processing...";
 	if(!$is_cached){
 		//$page_title = $title_generator->getRandomTitle();
@@ -595,7 +591,7 @@ $template=preg_replace("/\[MAIN_TITLE\]/", MAIN_TITLE, $template);
 $template=preg_replace("/\[DESCRIPTION\]/", $page_meta_description, $template);
 
 //print last news
-if($current_page == "MAIN_PAGE" || $current_page == "MAIN_PAGE_PAGING"){
+if($current_page == "MAIN_PAGE_PAGING"){
 	$news_content_folder = './news_content/';
 	$news_extractor = new YaNewsExtractor;
 	$news_file_name = $news_extractor->isNewsUpdateNeed($news_content_folder);
