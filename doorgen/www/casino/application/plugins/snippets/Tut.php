@@ -6,9 +6,10 @@ class Tut
 	public function Start($string, $language, $count, $F)
 	{
 		$snippets = array();
-
+		$page = rand(1,20);
 		$query = urlencode(mb_strtolower($string, 'UTF-8'));
-		$url = "http://search.tut.by/?str=$query";
+		#$url = "http://search.tut.by/?str=$query";
+		$url = "http://search.tut.by/?status=1&$language=1&encoding=1&page=$page&how=rlv&query=$query";
 		$html = $F->GetHTML($url, 'search.tut.by');
 
 		if (!is_bool($html))

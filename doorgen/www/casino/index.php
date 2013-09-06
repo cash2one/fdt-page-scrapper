@@ -6,6 +6,7 @@ require_once "application/models/functions_decode.php";
 require_once "application/libraries/parser.php";
 require_once "application/plugins/snippets/Google.php";
 require_once "application/plugins/snippets/Ukr.php";
+require_once "application/plugins/snippets/Tut.php";
 require_once "application/plugins/images/ImagesGoogle.php"; 
 require_once "utils/title_generator.php";
 require_once "utils/ya_news_extractor.php";
@@ -18,8 +19,9 @@ $page_meta_description="";
 $is_cached = false;
 
 $function = new Functions;
-#$snippet_extractor = new Ukr;
-$snippet_extractor = new Google;
+$snippet_extractor = new Ukr;
+#$snippet_extractor = new Google;
+#$snippet_extractor = new Tut;
 $google_image = new ImagesGoogle;
 $title_generator = new TitleGenerator;
 
@@ -188,7 +190,7 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 	$snippets_array = getPageSnippets($conn,$page_url);
 	
 	if(count($snippets_array) == 0){
-		#echo "Saving snippets.";
+		echo "Saving snippets.";
 		$rand_index_array = array();
 		$index = 0;
 		while(count($rand_index_array) < 3){
@@ -272,30 +274,30 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 
 function savePageSnippets($conn, $page_url, $snippets_array)
 {	
-	#echo "Saving snippets procdedure..";
-	#var_dump($snippets_array);
+	echo "Saving snippets procdedure..";
+	var_dump($snippets_array);
 	for($i = 0; $i < 9; $i++){
 		if(isset($snippets_array[$i])){
 			
 			$query_case_list = "INSERT INTO snippets (cached_page_id, snippets_index, snippets_title, snippets_content, snippets_image_large, snippets_image_small, created_time) SELECT cp.cached_page_id,?,?,?,?,?,now() FROM cached_page cp WHERE cp.cached_page_url = ?";
 			if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
-				#echo "savePageSnippets: Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-				#print_r(error_get_last());
+				echo "savePageSnippets: Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				print_r(error_get_last());
 			}
 			//set values
-			#echo "set value...";
+			echo "set value...";
 			if (!mysqli_stmt_bind_param($stmt, "dsssss", $i, $snippets_array[$i]["title"],$snippets_array[$i]["description"],$snippets_array[$i]["large"],$snippets_array[$i]["small"], $page_url)) {
-				#echo "savePageSnippets: Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-				#print_r(error_get_last());
+				echo "savePageSnippets: Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				print_r(error_get_last());
 			}
 			
-			#echo "execute...";
+			echo "execute...";
 			if (!mysqli_stmt_execute($stmt)){
-				#echo "savePageSnippets: Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-				#print_r(error_get_last());
+				echo "savePageSnippets: Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+				print_r(error_get_last());
 			}
 
-			#echo "commit...";
+			echo "commit...";
 			$conn->commit();
 			
 			mysqli_stmt_close($stmt);
@@ -369,13 +371,7 @@ if(strcmp("/",$url) != 0){
 }
 
 #echo "page_key: ".$page_key.'<br>';
-
-//определяем имя домена и сабдомена и записываем номер ключа и номер города
-#$domain = $_SERVER["HTTP_HOST"];
-#echo "HTTP_HOST: ".$domain.'<br>';
-
-$site_main_domain = "";
-
+$site_main_domain = $_SERVER["HTTP_HOST"];;
 
 //обрабатываем запрос генерации урлов
 $url_for_cache = "";
@@ -384,28 +380,28 @@ $key_page_number = "";
 if( $page_key && !is_numeric($page_key)){
 	$template = file_get_contents("tmpl_key.html");
 	$current_page = "KEY_PAGE";
-	#$site_main_domain = $dm1.".".$dm2;
+	$url_for_cache = $page_key;
 } else{
 	//check for main_page paging
 	if(is_numeric($page_key)){
 		$key_page_number = $page_key;
+		if($page_key != 1){
+			$url_for_cache = $page_key;
+		}else{
+			$url_for_cache = "/";
+		}
 	}
 	if(!$key_page_number){
 		$key_page_number = 1;
+		$url_for_cache = "/";
 	}
 	$current_page = "MAIN_PAGE_PAGING";
-	
 	#echo "key_page_number: ".$key_page_number."<br/>";
-	#$site_main_domain = $page_key.".".$dm1;
 	$template = file_get_contents("tmpl_main_new.html");
-	
 }
 
-exit;
-
-$url_for_cache = $domain;
-echo "url_for_cache: ".$url_for_cache."<br/>";
-echo "current_page: ".$current_page."<br/>";
+#echo "url_for_cache: ".$url_for_cache."<br/>";
+#echo "current_page: ".$current_page."<br/>";
 
 $template=preg_replace("/\[URL\]/",$site_main_domain, $template);
 $template=preg_replace("/\[URLMAIN\]/",$site_main_domain, $template);
@@ -420,6 +416,7 @@ mysqli_query($con,"set collation_connection='utf8_general_ci'");
 //get page info
 $page_info = getPageInfo($con,$url_for_cache);
 #var_dump($page_info);
+
 if($page_info){
 	$is_cached = true;
 	$page_title = $page_info['cached_page_title'];
@@ -430,7 +427,6 @@ if($page_info){
 	#echo "Page $url is NOT CACHED."."<br/>";
 	$is_cached = false;
 }
-
 $title_template = "Кредиты в России, Банки России, Области, Регионы и Округи";
 
 if($current_page == "MAIN_PAGE_PAGING"){
@@ -442,14 +438,13 @@ if($current_page == "MAIN_PAGE_PAGING"){
 
 	$result = mysqli_query($con,"SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE posted_time < now() ORDER BY posted_time DESC LIMIT 50");
 	
-	#echo "region_name: " . $region_name . "<br>";
 	//getting city news count
 	$query_count = "SELECT count(*) row_count FROM page WHERE posted_time < now()";
 	$result = mysqli_query($con,$query_count);
 	
 	$row = mysqli_fetch_assoc($result);
 	$page_key_count = $row['row_count'];
-	#echo "city_news_count: " . $city_news_count . "<br>";
+	#echo "page_key_count: " . $page_key_count . "<br>";
 	
 	if($page_key_count>0){
 		//вычисляем последнюю страницы
@@ -500,7 +495,7 @@ if($current_page == "MAIN_PAGE_PAGING"){
 			//generate link name
 			
 			
-			$city_href = "<a href = \"http://".$domain."/".$key_value_latin."/\">".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
+			$city_href = "<a href = \"http://".$site_main_domain."/".$key_value_latin."/\">".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
 			$news_block = $news_block.$city_href;
 		}
 		$template=preg_replace("/\[CITY_NEWS_1\]/", $news_block, $template);
@@ -522,7 +517,6 @@ if($current_page == "MAIN_PAGE_PAGING"){
 }
 
 $key_info = array();
-
 
 if($current_page == "KEY_PAGE"){
 	//get city page info
@@ -556,6 +550,7 @@ if($current_page == "KEY_PAGE"){
 	}
 }
 
+#echo "Snippet extraction....";
 if(!$is_cached){
 	$page_meta_description = false;
 	while(!$page_meta_description){

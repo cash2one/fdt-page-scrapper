@@ -7,7 +7,6 @@ class Ukr
 	{
 		$get_count = 50;
 		$snippets = array();
-		$init_snippets = array();
 		$page = rand(1,20);
 		$query = urlencode(mb_strtolower($string, 'UTF-8'));
 		//$url = "http://search.ukr.net/yandex/search.php?search_mode=ordinal&lang=$language&engine=1&search_query=$query&q=$query";

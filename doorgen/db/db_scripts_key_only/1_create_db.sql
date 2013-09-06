@@ -11,11 +11,12 @@ CREATE TABLE IF NOT EXISTS `page` (
 
 CREATE TABLE IF NOT EXISTS `cached_page` (
 	cached_page_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	cached_page_url VARCHAR(1024) NOT NULL,
+	cached_page_url VARCHAR(255) NOT NULL,
 	cached_page_title VARCHAR(1024) NOT NULL,
 	cached_page_meta_keywords VARCHAR(1024) NOT NULL,
 	cached_page_meta_description VARCHAR(2048) NOT NULL,
-	cached_time TIMESTAMP
+	cached_time TIMESTAMP,
+	UNIQUE KEY cached_page_url (cached_page_url)
 ) Type=InnoDB;
 
 CREATE TABLE IF NOT EXISTS `snippets` (
