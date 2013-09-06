@@ -154,7 +154,7 @@ for($i = 0; $i < count($news_for_posting_array); $i++){
 	postNews($con,$news_for_posting_array[$i]);
 	$result_array = getPageInfo($con,$news_for_posting_array[$i]);
 	$href = $result_array["key_value_latin"];
-	$url="http://".$href.".".$server_name;
+	$url="http://".$server_name."/".$href."/";
 	$ch = curl_init();
 	curl_setopt( $ch, CURLOPT_TIMEOUT, 1);
 	curl_setopt( $ch, CURLOPT_URL, $url );  
