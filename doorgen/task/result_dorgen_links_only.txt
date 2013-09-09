@@ -1,0 +1,48 @@
+akybank.ru
+brnbank.ru
+ertbank.ru
+ircbank.ru
+lojbank.ru
+opibank.ru
+qwwbank.ru
+tyubank.ru
+zxebank.ru
+
+/bin/cp akybank.ru/* ./brnbank.ru -r
+/bin/cp akybank.ru/* ./ertbank.ru -r
+/bin/cp akybank.ru/* ./ircbank.ru -r
+/bin/cp akybank.ru/* ./lojbank.ru -r
+/bin/cp akybank.ru/* ./opibank.ru -r
+/bin/cp akybank.ru/* ./qwwbank.ru -r
+/bin/cp akybank.ru/* ./tyubank.ru -r
+/bin/cp akybank.ru/* ./zxebank.ru -r
+
+http://news.yandex.ru/ru/world5.utf8.js
+http://news.yandex.ru/ru/internet5.utf8.js
+http://news.yandex.ru/ru/fashion5.utf8.js
+http://news.yandex.ru/ru/realty5.utf8.js
+http://news.yandex.ru/ru/society5.utf8.js
+http://news.yandex.ru/ru/insurance5.utf8.js
+http://news.yandex.ru/ru/finances5.utf8.js
+http://news.yandex.ru/ru/business5.utf8.js
+http://news.yandex.ru/ru/energy5.utf8.js
+
+chown -hR thedavidas:thedavidas ./akybank.ru
+chown -hR thedavidas:thedavidas ./brnbank.ru
+chown -hR thedavidas:thedavidas ./ertbank.ru
+chown -hR thedavidas:thedavidas ./ircbank.ru
+chown -hR thedavidas:thedavidas ./lojbank.ru
+chown -hR thedavidas:thedavidas ./opibank.ru
+chown -hR thedavidas:thedavidas ./qwwbank.ru
+chown -hR thedavidas:thedavidas ./tyubank.ru
+chown -hR thedavidas:thedavidas ./zxebank.ru
+
+chmod -R 777 ./akybank.ru/news_content/
+chmod -R 777 ./brnbank.ru/news_content/
+chmod -R 777 ./ertbank.ru/news_content/
+chmod -R 777 ./ircbank.ru/news_content/
+chmod -R 777 ./lojbank.ru/news_content/
+chmod -R 777 ./opibank.ru/news_content/
+chmod -R 777 ./qwwbank.ru/news_content/
+chmod -R 777 ./tyubank.ru/news_content/
+chmod -R 777 ./zxebank.ru/news_content/
