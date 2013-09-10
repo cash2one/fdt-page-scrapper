@@ -76,3 +76,13 @@ chown -hR thedavidas:thedavidas ./ertbank.ru/.htaccess
 /bin/cp -f /var/www/thedavidas/data/www/akybank.ru/content /var/www/thedavidas/data/www/tyubank.ru/content -r
 /bin/cp -f /var/www/thedavidas/data/www/akybank.ru/content /var/www/thedavidas/data/www/zxebank.ru/content -r
 
+
+
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/tmpl_main_new.html /var/www/thedavidas/data/www/brnbank.ru/tmpl_main_new.html
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/tmpl_main_new.html /var/www/thedavidas/data/www/ertbank.ru/tmpl_main_new.html
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/tmpl_main_new.html /var/www/thedavidas/data/www/ircbank.ru/tmpl_main_new.html
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/tmpl_main_new.html /var/www/thedavidas/data/www/lojbank.ru/tmpl_main_new.html
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/tmpl_main_new.html /var/www/thedavidas/data/www/opibank.ru/tmpl_main_new.html
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/tmpl_main_new.html /var/www/thedavidas/data/www/qwwbank.ru/tmpl_main_new.html
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/tmpl_main_new.html /var/www/thedavidas/data/www/tyubank.ru/tmpl_main_new.html
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/tmpl_main_new.html /var/www/thedavidas/data/www/zxebank.ru/tmpl_main_new.html

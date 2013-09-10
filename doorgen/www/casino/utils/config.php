@@ -7,10 +7,10 @@
 	define("DB_USER_NAME", "root");
 
 	#Параметр корня сайта.
-	define("DB_USER_PWD", "pqONJtKD");
+	define("DB_USER_PWD", "ap/Yx4uB");
 
 	#Параметр названия сайта.
-	define("DB_NAME", "lo_1_sddrinkspecials");
+	define("DB_NAME", " dg_2_akadx");
 	
 	#Параметр названия сайта.
 	define("HEADER_KEYS", "");
