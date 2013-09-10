@@ -73,9 +73,13 @@ class YaNewsExtractor
 		$needed = "var m_finances = new Array()";
 		$lines = array();
 		
+		preg_match("@^http://news\.yandex\.ru/ru/(.*)5\.utf8\.js@",NEWS_FEED,$request_uri);
+		$news_content_field = $request_uri[1];
+		
 		while(count($lines) != 6){
 			$news_content = $function->GetHTML(NEWS_FEED,NEWS_FEED_DOMAIN);
-			$lines = preg_split('/m\_finances\[m\_finances\.length\]\=new\ f/', $news_content);
+			$split_expr = '/m\_'.$news_content_field.'\[m\_'.$news_content_field.'\.length\]\=new\ f/';
+			$lines = preg_split($split_expr, $news_content);
 			#echo var_dump($lines);
 		}
 		
