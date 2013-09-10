@@ -46,3 +46,33 @@ chmod -R 777 ./opibank.ru/news_content/
 chmod -R 777 ./qwwbank.ru/news_content/
 chmod -R 777 ./tyubank.ru/news_content/
 chmod -R 777 ./zxebank.ru/news_content/
+
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/.htaccess /var/www/thedavidas/data/www/akybank.ru/.htaccess
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/.htaccess /var/www/thedavidas/data/www/brnbank.ru/.htaccess
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/.htaccess /var/www/thedavidas/data/www/ertbank.ru/.htaccess
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/.htaccess /var/www/thedavidas/data/www/ircbank.ru/.htaccess
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/.htaccess /var/www/thedavidas/data/www/lojbank.ru/.htaccess
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/.htaccess /var/www/thedavidas/data/www/opibank.ru/.htaccess
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/.htaccess /var/www/thedavidas/data/www/qwwbank.ru/.htaccess
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/.htaccess /var/www/thedavidas/data/www/tyubank.ru/.htaccess
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/.htaccess /var/www/thedavidas/data/www/zxebank.ru/.htaccess
+
+chown -hR thedavidas:thedavidas ./zxebank.ru/.htaccess
+chown -hR thedavidas:thedavidas ./lojbank.ru/.htaccess
+chown -hR thedavidas:thedavidas ./brnbank.ru/.htaccess
+chown -hR thedavidas:thedavidas ./opibank.ru/.htaccess
+chown -hR thedavidas:thedavidas ./tyubank.ru/.htaccess
+chown -hR thedavidas:thedavidas ./ircbank.ru/.htaccess
+chown -hR thedavidas:thedavidas ./qwwbank.ru/.htaccess
+chown -hR thedavidas:thedavidas ./ertbank.ru/.htaccess
+
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/content /var/www/thedavidas/data/www/akybank.ru/content -r
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/content /var/www/thedavidas/data/www/brnbank.ru/content -r
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/content /var/www/thedavidas/data/www/ertbank.ru/content -r
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/content /var/www/thedavidas/data/www/ircbank.ru/content -r
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/content /var/www/thedavidas/data/www/lojbank.ru/content -r
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/content /var/www/thedavidas/data/www/opibank.ru/content -r
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/content /var/www/thedavidas/data/www/qwwbank.ru/content -r
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/content /var/www/thedavidas/data/www/tyubank.ru/content -r
+/bin/cp -f /var/www/thedavidas/data/www/akybank.ru/content /var/www/thedavidas/data/www/zxebank.ru/content -r
+
