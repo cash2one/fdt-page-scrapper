@@ -8,6 +8,20 @@ qwwbank.ru
 tyubank.ru
 zxebank.ru
 
+akadx.ru
+akafd.ru
+akagf.ru
+akahg.ru
+akajh.ru
+akakj.ru
+akalk.ru
+akapo.ru
+akass.ru
+akaxd.ru
+
+mysql -u root -p dg_2_akadx < /root/5_data_extra_key.sql
+
+
 /bin/cp akybank.ru/* ./brnbank.ru -r
 /bin/cp akybank.ru/* ./ertbank.ru -r
 /bin/cp akybank.ru/* ./ircbank.ru -r
@@ -86,3 +100,86 @@ chown -hR thedavidas:thedavidas ./ertbank.ru/.htaccess
 /bin/cp -f /var/www/thedavidas/data/www/akybank.ru/tmpl_main_new.html /var/www/thedavidas/data/www/qwwbank.ru/tmpl_main_new.html
 /bin/cp -f /var/www/thedavidas/data/www/akybank.ru/tmpl_main_new.html /var/www/thedavidas/data/www/tyubank.ru/tmpl_main_new.html
 /bin/cp -f /var/www/thedavidas/data/www/akybank.ru/tmpl_main_new.html /var/www/thedavidas/data/www/zxebank.ru/tmpl_main_new.html
+
+
+
+05	0	*	*	*	cd /var/www/main/data/www/akadx.ru/utils ; /usr/bin/php news_poster.php akadx.ru >/dev/null 2>&1
+25	0	*	*	*	cd /var/www/main/data/www/akafd.ru/utils ; /usr/bin/php news_poster.php akafd.ru >/dev/null 2>&1
+45	0	*	*	*	cd /var/www/main/data/www/akagf.ru/utils ; /usr/bin/php news_poster.php akagf.ru >/dev/null 2>&1
+02	1	*	*	*	cd /var/www/main/data/www/akahg.ru/utils ; /usr/bin/php news_poster.php akahg.ru >/dev/null 2>&1
+25	1	*	*	*	cd /var/www/main/data/www/akajh.ru/utils ; /usr/bin/php news_poster.php akajh.ru >/dev/null 2>&1
+45	1	*	*	*	cd /var/www/main/data/www/akakj.ru/utils ; /usr/bin/php news_poster.php akakj.ru >/dev/null 2>&1
+05	2	*	*	*	cd /var/www/main/data/www/akalk.ru/utils ; /usr/bin/php news_poster.php akalk.ru >/dev/null 2>&1
+25	2	*	*	*	cd /var/www/main/data/www/akapo.ru/utils ; /usr/bin/php news_poster.php akapo.ru >/dev/null 2>&1
+45	2	*	*	*	cd /var/www/main/data/www/akass.ru/utils ; /usr/bin/php news_poster.php akass.ru >/dev/null 2>&1
+05	3	*	*	*	cd /var/www/main/data/www/akaxd.ru/utils ; /usr/bin/php news_poster.php akaxd.ru >/dev/null 2>&1
+
+
+/bin/cp /var/www/main/data/www/akadx.ru/* /var/www/main/data/www/akafd.ru -rf 
+/bin/cp /var/www/main/data/www/akadx.ru/* /var/www/main/data/www/akagf.ru -rf 
+/bin/cp /var/www/main/data/www/akadx.ru/* /var/www/main/data/www/akahg.ru -rf 
+/bin/cp /var/www/main/data/www/akadx.ru/* /var/www/main/data/www/akajh.ru -rf
+/bin/cp /var/www/main/data/www/akadx.ru/* /var/www/main/data/www/akakj.ru -rf 
+/bin/cp /var/www/main/data/www/akadx.ru/* /var/www/main/data/www/akalk.ru -rf 
+/bin/cp /var/www/main/data/www/akadx.ru/* /var/www/main/data/www/akapo.ru -rf 
+/bin/cp /var/www/main/data/www/akadx.ru/* /var/www/main/data/www/akass.ru -rf 
+/bin/cp /var/www/main/data/www/akadx.ru/* /var/www/main/data/www/akaxd.ru -rf 
+
+
+
+rm -rf /var/www/main/data/www/akafd.ru/akadx.ru
+rm -rf /var/www/main/data/www/akagf.ru/akadx.ru
+rm -rf /var/www/main/data/www/akahg.ru/akadx.ru
+rm -rf /var/www/main/data/www/akajh.ru/akadx.ru
+rm -rf /var/www/main/data/www/akakj.ru/akadx.ru
+rm -rf /var/www/main/data/www/akalk.ru/akadx.ru
+rm -rf /var/www/main/data/www/akapo.ru/akadx.ru
+rm -rf /var/www/main/data/www/akass.ru/akadx.ru
+rm -rf /var/www/main/data/www/akaxd.ru/akadx.ru
+
+
+/bin/cp -f /var/www/main/data/www/akadx.ru/.htaccess /var/www/main/data/www/akafd.ru/.htaccess
+/bin/cp -f /var/www/main/data/www/akadx.ru/.htaccess /var/www/main/data/www/akagf.ru/.htaccess
+/bin/cp -f /var/www/main/data/www/akadx.ru/.htaccess /var/www/main/data/www/akahg.ru/.htaccess
+/bin/cp -f /var/www/main/data/www/akadx.ru/.htaccess /var/www/main/data/www/akajh.ru/.htaccess
+/bin/cp -f /var/www/main/data/www/akadx.ru/.htaccess /var/www/main/data/www/akakj.ru/.htaccess
+/bin/cp -f /var/www/main/data/www/akadx.ru/.htaccess /var/www/main/data/www/akalk.ru/.htaccess
+/bin/cp -f /var/www/main/data/www/akadx.ru/.htaccess /var/www/main/data/www/akapo.ru/.htaccess
+/bin/cp -f /var/www/main/data/www/akadx.ru/.htaccess /var/www/main/data/www/akass.ru/.htaccess
+/bin/cp -f /var/www/main/data/www/akadx.ru/.htaccess /var/www/main/data/www/akaxd.ru/.htaccess
+
+
+chown -hR main:main ./akadx.ru
+chown -hR main:main ./akafd.ru
+chown -hR main:main ./akagf.ru
+chown -hR main:main ./akahg.ru
+chown -hR main:main ./akajh.ru
+chown -hR main:main ./akakj.ru
+chown -hR main:main ./akalk.ru
+chown -hR main:main ./akapo.ru
+chown -hR main:main ./akass.ru
+chown -hR main:main ./akaxd.ru
+
+
+chmod -R 777 /var/www/main/data/www/akadx.ru/news_content
+chmod -R 777 /var/www/main/data/www/akafd.ru/news_content
+chmod -R 777 /var/www/main/data/www/akagf.ru/news_content
+chmod -R 777 /var/www/main/data/www/akahg.ru/news_content
+chmod -R 777 /var/www/main/data/www/akajh.ru/news_content
+chmod -R 777 /var/www/main/data/www/akakj.ru/news_content
+chmod -R 777 /var/www/main/data/www/akalk.ru/news_content
+chmod -R 777 /var/www/main/data/www/akapo.ru/news_content
+chmod -R 777 /var/www/main/data/www/akass.ru/news_content
+chmod -R 777 /var/www/main/data/www/akaxd.ru/news_content
+
+
+
+/bin/cp /var/www/main/data/www/akadx.ru/utils/news_poster.php /var/www/main/data/www/akafd.ru/utils/news_poster.php -rf
+/bin/cp /var/www/main/data/www/akadx.ru/utils/news_poster.php /var/www/main/data/www/akagf.ru/utils/news_poster.php -rf
+/bin/cp /var/www/main/data/www/akadx.ru/utils/news_poster.php /var/www/main/data/www/akahg.ru/utils/news_poster.php -rf
+/bin/cp /var/www/main/data/www/akadx.ru/utils/news_poster.php /var/www/main/data/www/akajh.ru/utils/news_poster.php -rf
+/bin/cp /var/www/main/data/www/akadx.ru/utils/news_poster.php /var/www/main/data/www/akakj.ru/utils/news_poster.php -rf
+/bin/cp /var/www/main/data/www/akadx.ru/utils/news_poster.php /var/www/main/data/www/akalk.ru/utils/news_poster.php -rf
+/bin/cp /var/www/main/data/www/akadx.ru/utils/news_poster.php /var/www/main/data/www/akapo.ru/utils/news_poster.php -rf
+/bin/cp /var/www/main/data/www/akadx.ru/utils/news_poster.php /var/www/main/data/www/akass.ru/utils/news_poster.php -rf
+/bin/cp /var/www/main/data/www/akadx.ru/utils/news_poster.php /var/www/main/data/www/akaxd.ru/utils/news_poster.php -rf
