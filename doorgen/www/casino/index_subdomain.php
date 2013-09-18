@@ -181,41 +181,11 @@ function savePageInfo($conn,$page_url, $title, $keywords, $description)
 	mysqli_stmt_close($stmt);
 }
 
-function fillSnippetsContent($template, $key_value, $conn, $page_url){
-
-	global $function, $google_image, $snippet_extractor;
+unction fillSnippetsContent($template, $key_value, $conn, $page_url){
 	$snippets_array = array();
-	$snippets_array = getPageSnippets($conn,$page_url);
 	
-	if(count($snippets_array) == 0){
-		#echo "Saving snippets.";
-		$rand_index_array = array();
-		$index = 0;
-		while(count($rand_index_array) < 3){
-			$rand_value = rand(0,8);
-			if(!in_array($rand_value,$rand_index_array)){
-				$rand_index_array[$index] = $rand_value;
-				$index++;
-			}
-		}
-		
-		$snippet_image_array = $google_image->Start($key_value,count($rand_index_array),$function);
-		$snippet_array = array();
-		while(!$snippet_array){
-			$snippet_array = $snippet_extractor->Start($key_value,'ru',count($rand_index_array),$function);
-		}
-		
-		for($i=0; $i < count($rand_index_array); $i++){
-			$snippets_array[$rand_index_array[$i]]['title'] = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[$i]['title']);
-			$snippets_array[$rand_index_array[$i]]['description'] = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[$i]['description']);
-			if($snippet_image_array && $snippet_image_array[$i]){
-				$snippets_array[$rand_index_array[$i]]['small'] = $snippet_image_array[$i]['small'];
-				$snippets_array[$rand_index_array[$i]]['large'] = $snippet_image_array[$i]['large'];
-			}
-		}
-		
-		savePageSnippets($conn, $page_url, $snippets_array);
-	}
+	#scrap snippets for page
+	scrapPageSnippets($snippets_array, $key_value, $conn, $page_url);
 	
 	$SNIPPET_BLOCK_1 = "<div class='wrap border-bot-1'><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt=''><p class='text-1 top-2 p3'><h2>[SNIPPET_TITLE_[INDEX]]</h2></p><p>[SNIPPET_CONTENT_[INDEX]]</p><br/></div>";
 	$start_block_index = 1;
@@ -268,6 +238,41 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 	unset($snippets_array);
 	
 	return $template;
+}
+
+function scrapPageSnippets(&$snippets_array, $key_value, $conn, $page_url){
+	global $function, $google_image, $snippet_extractor;
+	$snippets_array = getPageSnippets($conn,$page_url);
+	
+	if(count($snippets_array) == 0){
+		#echo "Saving snippets.";
+		$rand_index_array = array();
+		$index = 0;
+		while(count($rand_index_array) < 3){
+			$rand_value = rand(0,8);
+			if(!in_array($rand_value,$rand_index_array)){
+				$rand_index_array[$index] = $rand_value;
+				$index++;
+			}
+		}
+		
+		$snippet_image_array = $google_image->Start($key_value,count($rand_index_array),$function);
+		$snippet_array = array();
+		while(!$snippet_array){
+			$snippet_array = $snippet_extractor->Start($key_value,'ru',count($rand_index_array),$function);
+		}
+		
+		for($i=0; $i < count($rand_index_array); $i++){
+			$snippets_array[$rand_index_array[$i]]['title'] = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[$i]['title']);
+			$snippets_array[$rand_index_array[$i]]['description'] = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[$i]['description']);
+			if($snippet_image_array && $snippet_image_array[$i]){
+				$snippets_array[$rand_index_array[$i]]['small'] = $snippet_image_array[$i]['small'];
+				$snippets_array[$rand_index_array[$i]]['large'] = $snippet_image_array[$i]['large'];
+			}
+		}
+		
+		savePageSnippets($conn, $page_url, $snippets_array);
+	}
 }
 
 function savePageSnippets($conn, $page_url, $snippets_array)
