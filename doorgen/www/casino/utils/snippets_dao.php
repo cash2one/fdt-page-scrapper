@@ -168,7 +168,10 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 }
 
 function scrapPageSnippets(&$snippets_array, $key_value, $conn, $page_url){
-	global $function, $google_image, $snippet_extractor;
+	$function = new Functions;
+	$snippet_extractor = new Google;
+	$google_image = new ImagesGoogle;
+
 	$snippets_array = getPageSnippets($conn,$page_url);
 	
 	if(count($snippets_array) == 0){

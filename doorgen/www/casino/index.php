@@ -8,10 +8,10 @@ require_once "application/plugins/snippets/Google.php";
 require_once "application/plugins/snippets/Ukr.php";
 require_once "application/plugins/snippets/Tut.php";
 require_once "application/plugins/images/ImagesGoogle.php"; 
-require_once "utils/title_generator.php";
 require_once "utils/ya_news_extractor.php";
 require_once "utils/config.php";
 require_once "utils/proxy_config.php";
+require_once "utils/snippets_dao.php";
 
 $page_title="";
 $page_meta_keywords="";
@@ -23,7 +23,6 @@ $snippet_extractor = new Ukr;
 #$snippet_extractor = new Google;
 #$snippet_extractor = new Tut;
 $google_image = new ImagesGoogle;
-$title_generator = new TitleGenerator;
 
 function rusdate($d, $format = 'j %MONTH% Y', $offset = 0)
 {
@@ -37,47 +36,6 @@ function rusdate($d, $format = 'j %MONTH% Y', $offset = 0)
  
     $format = preg_replace($sarr, $rarr, $format); 
     return date($format, $d);
-}
-
-//фунцкия генерации урлов
-function urlgenerator($fkeys, $fcity, $fdomain) 
-{
-	for ($i=0;$i<count($fkeys);$i++)
-	{for ($j=0;$j<count($fcity);$j++)
-	{
-		$res=encodestring(trim($fkeys[$i])."-".trim($fcity[$j])."-$i-$j");
-		$res="http://".str_replace(" ","-",$res).".$fdomain";
-		#echo "&lta href=\"$res\"&gt".trim($fkeys[$i])." ".trim($fcity[$j])."&lt/a&gt<br>";
-	}}
-	
-	
-}
-
-  // функция превода текста с кириллицы в траскрипт
-function encodestring($str) 
-{
-    $tr = array(
-        "А"=>"A","Б"=>"B","В"=>"V","Г"=>"G",
-        "Д"=>"D","Е"=>"E","Ж"=>"J","З"=>"Z","И"=>"I",
-        "Й"=>"Y","К"=>"K","Л"=>"L","М"=>"M","Н"=>"N",
-        "О"=>"O","П"=>"P","Р"=>"R","С"=>"S","Т"=>"T",
-        "У"=>"U","Ф"=>"F","Х"=>"H","Ц"=>"TS","Ч"=>"CH",
-        "Ш"=>"SH","Щ"=>"SCH","Ъ"=>"","Ы"=>"YI","Ь"=>"",
-        "Э"=>"E","Ю"=>"YU","Я"=>"YA","а"=>"a","б"=>"b",
-        "в"=>"v","г"=>"g","д"=>"d","е"=>"e","ж"=>"j",
-        "з"=>"z","и"=>"i","й"=>"y","к"=>"k","л"=>"l",
-        "м"=>"m","н"=>"n","о"=>"o","п"=>"p","р"=>"r",
-        "с"=>"s","т"=>"t","у"=>"u","ф"=>"f","х"=>"h",
-        "ц"=>"ts","ч"=>"ch","ш"=>"sh","щ"=>"sch","ъ"=>"y",
-        "ы"=>"yi","ь"=>"","э"=>"e","ю"=>"yu","я"=>"ya"
-    );
-    return strtr($str,$tr);
-}
-
-function getRegionPageRandomTitle($region_id){
-	$titles_array = array("Регионы и Округи, Области, Банки России, Кредиты в России","Кредиты в России, Области, Банки России, Регионы и Округи","Регионы и Округи, Банки России, Области, Кредиты в России","Кредиты в России, Регионы и Округи, Области, Банки России","Области, Регионы и Округи, Банки России, Кредиты в России","Кредиты в России, Области, Регионы и Округи, Банки России","Банки России, Регионы и Округи, Области, Кредиты в России","Области, Кредиты в России, Регионы и Округи, Банки России","Области, Кредиты в России, Банки России, Регионы и Округи","Банки России, Регионы и Округи, Кредиты в России, Области","Регионы и Округи, Области, Кредиты в России, Банки России","Кредиты в России, Банки России, Области, Регионы и Округи","Регионы и Округи, Банки России, Кредиты в России, Области","Области, Регионы и Округи, Кредиты в России, Банки России","Кредиты в России, Банки России, Регионы и Округи, Области","Области, Банки России, Кредиты в России, Регионы и Округи","Области, Банки России, Регионы и Округи, Кредиты в России","Банки России, Кредиты в России, Области, Регионы и Округи","Банки России, Области, Регионы и Округи, Кредиты в России","Банки России, Кредиты в России, Регионы и Округи, Области","Банки России, Области, Кредиты в России, Регионы и Округи","Кредиты в России, Регионы и Округи, Банки России, Области","Регионы и Округи, Кредиты в России, Области, Банки России","Регионы и Округи, Кредиты в России, Банки России, Области");
-	$title_id = $region_id % count($titles_array);
-	return $titles_array[$title_id];
 }
 
 //заводим массивы ключей и городов
@@ -158,7 +116,6 @@ $title_template = "Кредиты в России, Банки России, Об
 if($current_page == "MAIN_PAGE_PAGING"){
 	#echo "Main page processing...";
 	if(!$is_cached){
-		//$page_title = $title_generator->getRandomTitle();
 		$page_title = MAIN_TITLE;
 	}
 
@@ -326,7 +283,7 @@ if($current_page == "MAIN_PAGE_PAGING"){
 	$template=preg_replace("/\[LAST_NEWS\]/", $extractd_news, $template);
 }
 
-unset($page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator, $extractd_news, $news_extractor, $url_for_cache);
+unset($page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $extractd_news, $news_extractor, $url_for_cache);
 mysqli_close($con);
 
 echo $template;	
