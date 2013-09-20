@@ -1,6 +1,13 @@
 <?php
 
 require_once "config.php";
+require_once "snippets_dao.php";
+require_once "../application/models/functions_decode.php";
+require_once "../application/libraries/parser.php";
+require_once "../application/plugins/snippets/Google.php";
+require_once "../application/plugins/snippets/Ukr.php";
+require_once "../application/plugins/snippets/Tut.php";
+require_once "../application/plugins/images/ImagesGoogle.php"; 
 
 function getNewsIdForPostingArray($con, $news_for_posting)
 {
@@ -67,7 +74,7 @@ function postNews($con,$news_id)
 function getPageInfo($con,$page_id)
 {
 	$result_array = array();
-	$query_case_list = "SELECT key_value_latin FROM page WHERE page_id = ?";
+	$query_case_list = "SELECT key_value_latin, key_value FROM page WHERE page_id = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
@@ -85,12 +92,14 @@ function getPageInfo($con,$page_id)
 
 	/* instead of bind_result: */
 	#echo "get result...";
-	if(!mysqli_stmt_bind_result($stmt, $key_value_latin)){
+	if(!mysqli_stmt_bind_result($stmt, $key_value_latin, $key_value)){
 		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	if(mysqli_stmt_fetch($stmt)) {
-		$result_array = array(	"key_value_latin"=>$key_value_latin	);	
+		$result_array = array(	"key_value_latin"=>$key_value_latin,
+								"key_value"=>$key_value
+							);	
 	}else{
 		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		print_r(error_get_last());
@@ -109,6 +118,19 @@ function object2file($value, $filename)
 		fwrite($f, $output."\r\n");
 	}
     fclose($f);
+}
+
+function getDescriptionByKey($key){
+	$page_meta_description = false;
+	while(!$page_meta_description){
+		#echo "Page_title: ".$page_title."<br/>";
+		$snippet_array = $snippet_extractor->Start(preg_replace('/\|/',' ',$page_title),'ru',1,$function);
+		#var_dump($snippet_array);
+		if(isset($snippet_array[0])){
+			$page_meta_description = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[0]["description"]);
+		}
+	}
+	return $page_meta_description;
 }
 
 //читаем из файла значение, в котором храниться кол-во новостей, необходимых для добавления
@@ -149,22 +171,41 @@ $news_for_posting_array  = getNewsIdForPostingArray($con,$news_count_for_posting
 echo var_dump($news_for_posting_array);
 
 $server_name = $argv[1];
+$site_main_domain = $argv[1];
+
+//get connection
+$conn=mysqli_connect(DB_HOST,DB_USER_NAME,DB_USER_PWD,DB_NAME);
+mysqli_query($conn,"set character_set_client='utf8'");
+mysqli_query($conn,"set character_set_results='utf8'");
+mysqli_query($conn,"set collation_connection='utf8_general_ci'");
 
 for($i = 0; $i < count($news_for_posting_array); $i++){
-	postNews($con,$news_for_posting_array[$i]);
-	$result_array = getPageInfo($con,$news_for_posting_array[$i]);
-	$href = $result_array["key_value_latin"];
-	$url="http://".$server_name."/".$href."/";
-	$ch = curl_init();
-	curl_setopt( $ch, CURLOPT_TIMEOUT, 1);
-	curl_setopt( $ch, CURLOPT_URL, $url );  
-	curl_exec( $ch );
-	echo "curl_exec executed..."."<br/>";
-	curl_close ( $ch );
-	echo $url."<br/>";
+	postNews($conn,$news_for_posting_array[$i]);
+	$key_info = getPageInfo($conn,$news_for_posting_array[$i]);
+	//TODO GET conn,title,keywords,description
+	$page_title = $key_info['key_value']." | ".MAIN_TITLE;
+	$page_url = $key_info['key_value_latin'];
+	$keywords = $page_url;
+	$description = getDescriptionByKey($page_title);
+	$page_title = $page_title." | ".$site_main_domain;
+	
+	$key_value = $key_info['key_value'];
+	$snippets_array = array();]
+	
+	echo "title: ".$title."<br/>";
+	echo "page_url: ".$page_url."<br/>";
+	echo "keywords: ".$keywords."<br/>";
+	echo "description: ".$description."<br/>";
+	echo "page_title: ".$page_title."<br/>";
+	echo "key_value: ".$key_value."<br/>";
+	
+	savePageInfo($conn,$page_url, $page_title, $keywords, $description);
+	
+	//getting snippets array
+	scrapPageSnippets($snippets_array, $key_value, $conn, $page_url);
 }
 
-mysqli_close($con);
+mysqli_close($conn);
 
-unset($con);
+unset($conn);
 ?>
