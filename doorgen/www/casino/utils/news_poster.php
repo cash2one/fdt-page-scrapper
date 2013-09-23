@@ -1,6 +1,7 @@
 <?php
 
 require_once "config.php";
+require_once "proxy_config.php";
 require_once "snippets_dao.php";
 require_once "../application/models/functions_decode.php";
 require_once "../application/libraries/parser.php";
@@ -71,7 +72,7 @@ function postNews($con,$news_id)
 	mysqli_stmt_close($stmt);
 }
 
-function getPageInfo($con,$page_id)
+function getPageInfoByNewsPoster($con,$page_id)
 {
 	$result_array = array();
 	$query_case_list = "SELECT key_value_latin, key_value FROM page WHERE page_id = ?";
@@ -121,6 +122,7 @@ function object2file($value, $filename)
 }
 
 function getDescriptionByKey($key){
+	global $snippet_extractor, $function, $page_title;
 	$page_meta_description = false;
 	while(!$page_meta_description){
 		#echo "Page_title: ".$page_title."<br/>";
@@ -157,7 +159,15 @@ echo "news_per_day: ".$news_per_day."<br/>";
 echo "news_per_day_min: ".$news_per_day_min."<br/>";
 echo "news_per_day_max: ".$news_per_day_max."<br/>";
 
-$con=mysqli_connect(DB_HOST,DB_USER_NAME,DB_USER_PWD,DB_NAME);
+$snippet_extractor = new Ukr;
+$function = new Functions;
+$page_title = "";
+
+//get connection
+$conn=mysqli_connect(DB_HOST,DB_USER_NAME,DB_USER_PWD,DB_NAME);
+mysqli_query($conn,"set character_set_client='utf8'");
+mysqli_query($conn,"set character_set_results='utf8'");
+mysqli_query($conn,"set collation_connection='utf8_general_ci'");
 /*echo "Connecting...";
 if (mysqli_connect_errno())
 {
@@ -167,21 +177,14 @@ if (mysqli_connect_errno())
 $news_count_for_posting = $news_per_day;
 echo "news_count_for_posting: ".$news_count_for_posting."<br/>";
 //получаем список всех новостей, у которых время постинга больше текущего времени на 5 мин
-$news_for_posting_array  = getNewsIdForPostingArray($con,$news_count_for_posting);
+$news_for_posting_array  = getNewsIdForPostingArray($conn,$news_count_for_posting);
 echo var_dump($news_for_posting_array);
 
-$server_name = $argv[1];
 $site_main_domain = $argv[1];
-
-//get connection
-$conn=mysqli_connect(DB_HOST,DB_USER_NAME,DB_USER_PWD,DB_NAME);
-mysqli_query($conn,"set character_set_client='utf8'");
-mysqli_query($conn,"set character_set_results='utf8'");
-mysqli_query($conn,"set collation_connection='utf8_general_ci'");
 
 for($i = 0; $i < count($news_for_posting_array); $i++){
 	postNews($conn,$news_for_posting_array[$i]);
-	$key_info = getPageInfo($conn,$news_for_posting_array[$i]);
+	$key_info = getPageInfoByNewsPoster($conn,$news_for_posting_array[$i]);
 	//TODO GET conn,title,keywords,description
 	$page_title = $key_info['key_value']." | ".MAIN_TITLE;
 	$page_url = $key_info['key_value_latin'];
@@ -190,11 +193,9 @@ for($i = 0; $i < count($news_for_posting_array); $i++){
 	$page_title = $page_title." | ".$site_main_domain;
 	
 	$key_value = $key_info['key_value'];
-	$snippets_array = array();]
+	$snippets_array = array();
 	
-	echo "title: ".$title."<br/>";
 	echo "page_url: ".$page_url."<br/>";
-	echo "keywords: ".$keywords."<br/>";
 	echo "description: ".$description."<br/>";
 	echo "page_title: ".$page_title."<br/>";
 	echo "key_value: ".$key_value."<br/>";
