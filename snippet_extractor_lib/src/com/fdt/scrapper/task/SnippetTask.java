@@ -1,5 +1,7 @@
 package com.fdt.scrapper.task;
 
+import java.net.URLEncoder;
+
 public abstract class SnippetTask
 {
 	public final static String KEY_WORDS_KEY = "#KEY_WORDS#";
@@ -111,6 +113,10 @@ public abstract class SnippetTask
 		return scrapperUrl.replace(KEY_WORDS_KEY, keyWords).replace(LANGUAGE_KEY, language);
 	}
 
+	public String getFullEncodedUrl(){
+		return scrapperUrl.replace(KEY_WORDS_KEY, URLEncoder.encode(keyWords.replace('+', ' ')).replace(LANGUAGE_KEY, language));
+	}
+	
 	public String toString(){
 		return getFullUrl();
 	}

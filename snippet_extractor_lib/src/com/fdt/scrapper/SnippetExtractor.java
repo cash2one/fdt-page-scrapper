@@ -60,9 +60,9 @@ public class SnippetExtractor {
 
 	private ProxyFactory proxyFactory = null;
 	private ArrayList<String> linkList = null;
-	
+
 	private SnippetTask task= null;
-	
+
 
 	public SnippetExtractor(SnippetTask snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList) throws MalformedURLException, IOException {
 		super();
@@ -70,7 +70,7 @@ public class SnippetExtractor {
 		MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
 		MIN_LINK_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_LINK_COUNT_LABEL));
 		MAX_LINK_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_LINK_COUNT_LABEL));
-		
+
 		this.proxyFactory = proxyFactory;
 		this.linkList = linkList;
 		task = snippetTask;
@@ -94,7 +94,7 @@ public class SnippetExtractor {
 			}
 			attempt++;
 		}while((snippetContent == null || "".equals(snippetContent.trim())) && attempt < maxAttemptCount);
-		
+
 		task.setResult(snippetContent);
 	}
 
@@ -145,15 +145,15 @@ public class SnippetExtractor {
 	private TagNode loadPageContent(SnippetTask snippetTask, Proxy proxy) throws MalformedURLException, IOException {
 		HttpURLConnection conn = null;
 		InputStream is = null;
-		System.out.println("Using proxy: " + proxy.toString());
+		log.info("Using proxy: " + proxy.toString());
 		try{
-			String strUrl = snippetTask.getFullUrl();
+			String strUrl = snippetTask.getFullEncodedUrl();
 			URL url = new URL(strUrl);
 			System.out.println(strUrl);
 			//using proxy
 			conn = (HttpURLConnection)url.openConnection(proxy);
 			conn.setConnectTimeout(30000);
-			conn.addRequestProperty("Host","search.ukr.net");
+			conn.addRequestProperty("Host","www.google.ru");
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 			conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
@@ -163,6 +163,8 @@ public class SnippetExtractor {
 			HtmlCleaner cleaner = new HtmlCleaner();
 
 			is = conn.getInputStream();
+			
+			int code = conn.getResponseCode();
 
 			String encoding = conn.getContentEncoding();
 
@@ -185,11 +187,14 @@ public class SnippetExtractor {
 				/*org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", strUrl);
 		System.out.println(page);*/
 				html = cleaner.clean(new ByteArrayInputStream(pageStr.toString().getBytes()));
-				//System.out.println(pageStr.toString());
+				System.out.println(pageStr.toString());
 			}else{
-				html = cleaner.clean(is,"UTF-8");
+				//TODO Uncomment
+				//html = cleaner.clean(is,"UTF-8");
+				//TODO Delete me
+				log.debug(inputStreamToStr(is));
 			}
-			//int code = conn.getResponseCode();
+
 			return html;
 		}finally{
 			if(conn != null){
@@ -199,6 +204,19 @@ public class SnippetExtractor {
 				try{is.close();}catch(Throwable e){}
 			}
 		}
+	}
+
+	private String inputStreamToStr(InputStream is) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(is));
+
+		StringBuffer result = new StringBuffer();
+
+		String line;
+		while ((line = br.readLine()) != null) {
+			result.append(line);
+		}
+
+		return result.toString();
 	}
 
 
@@ -258,29 +276,32 @@ public class SnippetExtractor {
 
 		Object[] titles = null;
 		Object[] descs= null;
+		
+		if(page != null){
 
-		try {
-			titles = page.evaluateXPath(snippetTask.getXpathTitle());
-			descs = page.evaluateXPath(snippetTask.getXpathDesc());
-		}
-		catch (XPatherException e) {
-			log.error("Error occured during getting titles and their desc",e);
-		}
+			try {
+				titles = page.evaluateXPath(snippetTask.getXpathTitle());
+				descs = page.evaluateXPath(snippetTask.getXpathDesc());
+			}
+			catch (XPatherException e) {
+				log.error("Error occured during getting titles and their desc",e);
+			}
 
-		int minLenght = titles.length > descs.length?descs.length:titles.length;
-		if(titles.length > 0){
-			for(int i = 0; i < minLenght; i++){
-				String h3Value = ((TagNode)titles[i]).getText().toString();
-				String pValue = ((TagNode)descs[i]).getText().toString();
-				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim())){
-					snippets.add(new Snippet(h3Value, pValue));
+			int minLenght = titles.length > descs.length?descs.length:titles.length;
+			if(titles.length > 0){
+				for(int i = 0; i < minLenght; i++){
+					String h3Value = ((TagNode)titles[i]).getText().toString();
+					String pValue = ((TagNode)descs[i]).getText().toString();
+					if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim())){
+						snippets.add(new Snippet(h3Value, pValue));
+					}
 				}
 			}
 		}
 
 		return snippets;
 	}
-	
+
 	public SnippetTask getTask() {
 		return task;
 	}
