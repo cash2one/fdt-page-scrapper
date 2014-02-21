@@ -65,8 +65,9 @@ public class MultipleSnippetGeneratorRunner{
 	/**
 	 * args[0] - language
 	 * args[1] - path to config file
+	 * @throws Exception 
 	 */
-	public static void main(String[] args){
+	public static void main(String[] args) throws Exception{
 		if(args.length < 1){
 			System.out.print("Not enought arguments....");
 		}else{
@@ -88,7 +89,7 @@ public class MultipleSnippetGeneratorRunner{
 		}
 	}
 
-	public MultipleSnippetGeneratorRunner(String cfgFilePath){
+	public MultipleSnippetGeneratorRunner(String cfgFilePath) throws Exception{
 
 		ConfigManager.getInstance().loadProperties(cfgFilePath);
 		this.taskFactory = TaskFactory.getInstance();
