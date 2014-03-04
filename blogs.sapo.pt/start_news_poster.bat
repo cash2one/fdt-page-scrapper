@@ -1,0 +1,2 @@
+java -cp libs/proxy_factory.jar;libs/commons-io-2.0.1.jar;libs/htmlcleaner-2.2.jar;libs/commons-collections-3.2.jar;libs/commons-httpclient-3.1.jar;libs/commons-lang-2.4.jar;libs/commons-logging-1.1.jar;libs/httpclient-4.1.2.jar;libs/httpcore-4.1.2.jar;libs/jsoup-1.7.1.jar;libs/jsoup-1.7.1-sources.jar;libs/log4j-1.2.15.jar;libs/velocity-1.7.jar;deploy/page_scrapper.jar com.fdt.scrapper.PosterTaskRunner
+pause 
