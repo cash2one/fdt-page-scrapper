@@ -1,7 +1,5 @@
 package com.fdt.scrapper.task;
 
-import java.net.URLEncoder;
-
 public abstract class SnippetTask
 {
 	public final static String KEY_WORDS_KEY = "#KEY_WORDS#";
@@ -15,6 +13,8 @@ public abstract class SnippetTask
 	protected String keyWords = "";
 	protected String keyWordsNative = "";
 	protected String language = "en";
+	
+	protected String source = "";
 
 	private int attemptCount = 1;
 
@@ -113,10 +113,6 @@ public abstract class SnippetTask
 		return scrapperUrl.replace(KEY_WORDS_KEY, keyWords).replace(LANGUAGE_KEY, language);
 	}
 
-	public String getFullEncodedUrl(){
-		return scrapperUrl.replace(KEY_WORDS_KEY, URLEncoder.encode(keyWords.replace('+', ' ')).replace(LANGUAGE_KEY, language));
-	}
-	
 	public String toString(){
 		return getFullUrl();
 	}
@@ -127,5 +123,13 @@ public abstract class SnippetTask
 
 	public void incAttemptCount() {
 		this.attemptCount++;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
 	}
 }

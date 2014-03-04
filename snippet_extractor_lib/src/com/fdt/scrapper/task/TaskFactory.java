@@ -133,7 +133,7 @@ public class TaskFactory {
 		return taskQueue.isEmpty();
 	}
 
-	public void loadTaskQueue(String pathToTaskList, String source, String lang) {
+	public void loadTaskQueue(String pathToTaskList, String source, String lang) throws Exception {
 		ArrayList<String> keyWordsList = loadKeyWordsList(pathToTaskList);
 		fillTaskQueue(keyWordsList, source, lang);
 		keyWordsList.clear();
@@ -182,27 +182,30 @@ public class TaskFactory {
 		return keyWordsList;
 	}
 
-	private synchronized void fillTaskQueue(ArrayList<String> keyWordsList, String source, String lang){
+	private synchronized void fillTaskQueue(ArrayList<String> keyWordsList, String source, String lang) throws Exception{
 		for(String keyWords : keyWordsList){
 			taskQueue.add(initSnippetTask( keyWords, source, lang));
 		}
 	}
 	
-	private SnippetTask initSnippetTask(String key, String source, String lang){
+	private SnippetTask initSnippetTask(String key, String source, String lang) throws Exception{
 		SnippetTask task = null;
 		if("google".equals(source.toLowerCase().trim())){
 			task = new GoogleSnippetTask(key);
-		}
+		} else
 		if("bing".equals(source.toLowerCase().trim())){
 			task = new BingSnippetTask(key);
-		}
+		} else
 		if("tut".equals(source.toLowerCase().trim())){
 			task = new TutSnippetTask(key);
-		}
+		} else
 		if("ukrnet".equals(source.toLowerCase().trim())){
 			task = new UkrnetSnippetTask(key);
+		}else{
+			throw new Exception("Can't find assosiated task for source: " + source);
 		}
 		task.setLanguage(lang);
+		task.setSource(source);
 		return task;
 	}
 
