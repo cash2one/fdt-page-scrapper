@@ -6,5 +6,4 @@ public class RegistratorRunner {
 		// TODO Auto-generated method stub
 
 	}
-
 }
