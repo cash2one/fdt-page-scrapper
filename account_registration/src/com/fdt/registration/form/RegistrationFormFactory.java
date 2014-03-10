@@ -1,6 +1,8 @@
 package com.fdt.registration.form;
 
-import java.util.HashMap;
+import java.util.List;
+
+import org.apache.http.NameValuePair;
 
 import com.fdt.registration.account.Account;
 
@@ -11,7 +13,7 @@ public class RegistrationFormFactory {
 		super();
 	}
 	
-	public HashMap<String, String> getRegFormParams(Account account){
+	public List<NameValuePair> getRegFormParams(Account account){
 		return regForm.getRegFormParams(account);
 	}
 

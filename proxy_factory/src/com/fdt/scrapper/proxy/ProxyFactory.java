@@ -28,6 +28,13 @@ public class ProxyFactory
 	private ProxyFactory() {
 		super();
 	}
+	
+	public ProxyFactory(String pathToProxyList) {
+		if(instance == null){
+			proxyList = loadProxyList(pathToProxyList);
+			instance = this;
+		}
+	}
 
 	public void init(String pathToProxyList){
 		proxyList = loadProxyList(pathToProxyList);

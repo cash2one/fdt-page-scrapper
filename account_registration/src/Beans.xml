@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="proxyAuthenticator" class="com.fdt.scrapper.proxy.ProxyAuthenticator">
+    	<constructor-arg type="java.lang.String" value="VIPUAEUR65620"/>
+    	<constructor-arg type="java.lang.String" value="SA5Tlrnhq6"/>
+   	</bean>
+   	
+   	<bean id="proxyFactory" class="com.fdt.scrapper.proxy.ProxyFactory">
+		<constructor-arg type="java.lang.String" value="proxy.txt"/>
+	</bean>
+	
+	<bean id="regForm" class="com.fdt.registration.form.impl.SapoRegistrationForm">
+	</bean>
+	
+	<bean id="regFormFactory" class="com.fdt.registration.form.RegistrationFormFactory">
+		<property name="regForm" ref="regForm"/>
+	</bean>
+	
+   	
+	<bean id="sapoRegistrator" class="com.fdt.registration.impl.SapoRegistrator">
+		<property name="proxyFactory" ref="proxyFactory"/>
+		<property name="regFormFactory" ref="regFormFactory"/>
+   	</bean>
+
+</beans>
