@@ -28,7 +28,7 @@ public class TempMailWorker extends MailWorker {
 	private Random rnd = new Random();
 
 	private String DOMAIN_GETTER_API_PATH = "http://api.temp-mail.ru/request/domains/format/xml/";
-	private String EMAIL_CHECK_API_PATH = "http://api.temp-mail.ru/request/domains/format/xml/";
+	private String EMAIL_CHECK_API_PATH = "http://api.temp-mail.ru/request/mail/id/";
 
 	private List<String> emailDomains= new ArrayList<String>();
 
@@ -101,21 +101,76 @@ public class TempMailWorker extends MailWorker {
 
 	@Override
 	public List<Email> checkEmail(String address) {
-		// TODO Auto-generated method stub
-		return null;
+		InputStream inputStreamPage = null;
+		ProxyConnector proxyCnctr = this.getProxyFactory().getProxyConnector();
+		List<Email> emailsLst = new ArrayList<Email>();
+
+		try {
+			//post news
+			URL url = new URL(EMAIL_CHECK_API_PATH + str2md5(address) + "/");
+			HttpURLConnection.setFollowRedirects(true);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("GET");
+			conn.setDoInput(true);
+			conn.setDoOutput(false);
+
+			conn.setRequestProperty("Host", "api.temp-mail.ru");
+			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+
+			//conn.getRequestProperties()
+			int code = conn.getResponseCode();
+
+			HtmlCleaner cleaner = new HtmlCleaner();
+
+			inputStreamPage = conn.getInputStream();
+
+			TagNode html = null;
+
+			html = cleaner.clean(inputStreamPage,"UTF-8");
+
+			Object[] emails = html.evaluateXPath("//xml/error/text()");
+			for(Object email : emails){
+				emailDomains.add(email.toString());
+			}
+
+
+		} catch (ClientProtocolException e) {
+			log.error("Error occured during posting news",e);
+		} catch (IOException e) {
+			log.error("Error occured during posting news",e);
+		} catch (XPathExpressionException e) {
+			log.error("Error occured during posting news",e);
+		} catch (XPatherException e) {
+			log.error("Error occured during posting news",e);
+		}
+		finally{
+			this.getProxyFactory().releaseProxy(proxyCnctr);
+		}
+
+		return emailsLst;
 	}
 
-	private String str2md5(String str) throws NoSuchAlgorithmException{
+	private String str2md5(String str) {
 
-		MessageDigest md = MessageDigest.getInstance("MD5");
-		md.update(str.getBytes());
-
-		byte byteData[] = md.digest();
-
-		//convert the byte to hex format method 1
+		MessageDigest md;
 		StringBuffer sb = new StringBuffer();
-		for (int i = 0; i < byteData.length; i++) {
-			sb.append(Integer.toString((byteData[i] & 0xff) + 0x100, 16).substring(1));
+		
+		try {
+			md = MessageDigest.getInstance("MD5");
+			md.update(str.getBytes());
+
+			byte byteData[] = md.digest();
+
+			//convert the byte to hex format method 1
+			sb = new StringBuffer();
+			for (int i = 0; i < byteData.length; i++) {
+				sb.append(Integer.toString((byteData[i] & 0xff) + 0x100, 16).substring(1));
+			}
+		} catch (NoSuchAlgorithmException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
 		return sb.toString();

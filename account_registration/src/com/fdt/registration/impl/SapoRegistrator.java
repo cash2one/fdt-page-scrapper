@@ -104,6 +104,8 @@ public class SapoRegistrator extends IRegistrator{
 		finally{
 			this.getProxyFactory().releaseProxy(proxyCnctr);
 		}
+		
+		this.getMailWorker().checkEmail(email);
 
 		return "";
 	}
