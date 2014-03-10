@@ -13,6 +13,10 @@
    	<bean id="proxyFactory" class="com.fdt.scrapper.proxy.ProxyFactory">
 		<constructor-arg type="java.lang.String" value="proxy.txt"/>
 	</bean>
+   	
+   	<bean id="mailWorker" class="com.fdt.registration.email.TempMailWorker">
+   		<property name="proxyFactory" ref="proxyFactory"/>
+	</bean>
 	
 	<bean id="regForm" class="com.fdt.registration.form.impl.SapoRegistrationForm">
 	</bean>
@@ -25,6 +29,7 @@
 	<bean id="sapoRegistrator" class="com.fdt.registration.impl.SapoRegistrator">
 		<property name="proxyFactory" ref="proxyFactory"/>
 		<property name="regFormFactory" ref="regFormFactory"/>
+		<property name="mailWorker" ref="mailWorker"/>
    	</bean>
 
 </beans>
