@@ -126,6 +126,12 @@ public class SapoRegistrator extends IRegistrator{
 		
 		return true;
 	}
+
+	@Override
+	public boolean postVerifyAction(Account account) throws NoRegisteredException {
+		// TODO Implement blog refistration
+		return false;
+	}
 	
 	private int submitLink(String link){
 		int code = -1;
@@ -204,7 +210,4 @@ public class SapoRegistrator extends IRegistrator{
 
 		return result.toString();
 	}
-
-
-
 }

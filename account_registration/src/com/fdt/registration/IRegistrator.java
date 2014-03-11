@@ -16,6 +16,7 @@ public abstract class IRegistrator {
 	
 	public abstract boolean register(Account account) throws NoRegisteredException;
 	public abstract boolean verify(Account account) throws NoRegisteredException;
+	public abstract boolean postVerifyAction(Account account) throws NoRegisteredException;
 	
 	public ProxyFactory getProxyFactory() {
 		return proxyFactory;
