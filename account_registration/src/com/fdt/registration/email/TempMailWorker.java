@@ -29,7 +29,7 @@ public class TempMailWorker extends MailWorker {
 
 	private final String DOMAIN_GETTER_API_PATH = "http://api.temp-mail.ru/request/domains/format/xml/";
 	private final String EMAIL_CHECK_API_PATH = "http://api.temp-mail.ru/request/mail/id/";
-	
+
 	private final String ALFABET_STR = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	private List<String> emailDomains= new ArrayList<String>();
@@ -95,14 +95,17 @@ public class TempMailWorker extends MailWorker {
 
 	@Override
 	public String getEmail() {
-		while(emailDomains.size() == 0){
-			log.debug("Getting emails domain...");
-			this.emailDomains = getEmailDomains();
+		synchronized(emailDomains){
+			while(emailDomains.size() == 0){
+				log.debug("Getting emails domain...");
+				this.emailDomains = getEmailDomains();
+			}
 		}
 		String email =  ALFABET_STR.charAt(rnd.nextInt(ALFABET_STR.length())) + 
 				String.valueOf(System.currentTimeMillis()) + 
 				ALFABET_STR.charAt(rnd.nextInt(ALFABET_STR.length())) +
 				emailDomains.get(rnd.nextInt(emailDomains.size()));
+
 		return email;
 	}
 
@@ -139,7 +142,7 @@ public class TempMailWorker extends MailWorker {
 			html = cleaner.clean(inputStreamPage,"UTF-8");
 
 			Object[] emails = html.evaluateXPath("//xml/item");
-			
+
 			for(Object email : emails){
 				emailsLst.add(parseXml2Email((TagNode)email));
 			}
@@ -165,18 +168,18 @@ public class TempMailWorker extends MailWorker {
 
 	private Email parseXml2Email(TagNode emailTagNode) throws XPatherException{
 		Email email = new Email();
-		
+
 		email.setHtmlBody(emailTagNode.evaluateXPath("//mail_html/text()")[0].toString().replaceAll("&lt;","<").replaceAll("&gt;", ">"));
 		email.setMessageFrom(emailTagNode.evaluateXPath("//mail_from/text()")[0].toString());
-		
+
 		return email;
 	}
-	
+
 	private String str2md5(String str) {
 
 		MessageDigest md;
 		StringBuffer sb = new StringBuffer();
-		
+
 		try {
 			md = MessageDigest.getInstance("MD5");
 			md.update(str.getBytes());
