@@ -7,6 +7,10 @@ public class Email {
 	private String title;
 	private String htmlBody;
 	
+	public Email(){
+		super();
+	}
+	
 	public Email(String address, String messageFrom, String title,
 			String htmlBody) {
 		super();

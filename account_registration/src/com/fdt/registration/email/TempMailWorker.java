@@ -38,10 +38,11 @@ public class TempMailWorker extends MailWorker {
 
 	private List<String> getEmailDomains(){
 		InputStream inputStreamPage = null;
-		ProxyConnector proxyCnctr = this.getProxyFactory().getProxyConnector();
+		ProxyConnector proxyCnctr = null;
 		List<String> emailDomains = new ArrayList<String>();
 
 		try {
+			proxyCnctr = this.getProxyFactory().getProxyConnector();
 			//post news
 			URL url = new URL(DOMAIN_GETTER_API_PATH);
 			HttpURLConnection.setFollowRedirects(true);
@@ -73,16 +74,18 @@ public class TempMailWorker extends MailWorker {
 
 
 		} catch (ClientProtocolException e) {
-			log.error("Error occured during posting news",e);
+			log.error("Error occured during getting email domains",e);
 		} catch (IOException e) {
-			log.error("Error occured during posting news",e);
+			log.error("Error occured during getting email domains",e);
 		} catch (XPathExpressionException e) {
-			log.error("Error occured during posting news",e);
+			log.error("Error occured during getting email domains",e);
 		} catch (XPatherException e) {
-			log.error("Error occured during posting news",e);
+			log.error("Error occured during getting email domains",e);
 		}
 		finally{
-			this.getProxyFactory().releaseProxy(proxyCnctr);
+			if(proxyCnctr != null){
+				this.getProxyFactory().releaseProxy(proxyCnctr);
+			}
 		}
 
 		return emailDomains;
@@ -93,7 +96,6 @@ public class TempMailWorker extends MailWorker {
 		while(emailDomains.size() == 0){
 			log.debug("Getting emails domain...");
 			this.emailDomains = getEmailDomains();
-
 		}
 		String email =  String.valueOf(System.currentTimeMillis()) + emailDomains.get(rnd.nextInt(emailDomains.size()));
 		return email;
@@ -102,10 +104,11 @@ public class TempMailWorker extends MailWorker {
 	@Override
 	public List<Email> checkEmail(String address) {
 		InputStream inputStreamPage = null;
-		ProxyConnector proxyCnctr = this.getProxyFactory().getProxyConnector();
+		ProxyConnector proxyCnctr = null;
 		List<Email> emailsLst = new ArrayList<Email>();
 
 		try {
+			proxyCnctr = this.getProxyFactory().getProxyConnector();
 			//post news
 			URL url = new URL(EMAIL_CHECK_API_PATH + str2md5(address) + "/");
 			HttpURLConnection.setFollowRedirects(true);
@@ -130,28 +133,40 @@ public class TempMailWorker extends MailWorker {
 
 			html = cleaner.clean(inputStreamPage,"UTF-8");
 
-			Object[] emails = html.evaluateXPath("//xml/error/text()");
+			Object[] emails = html.evaluateXPath("//xml/item");
+			
 			for(Object email : emails){
-				emailDomains.add(email.toString());
+				emailsLst.add(parseXml2Email((TagNode)email));
 			}
 
 
 		} catch (ClientProtocolException e) {
-			log.error("Error occured during posting news",e);
+			log.error("Error occured during checking emails",e);
 		} catch (IOException e) {
-			log.error("Error occured during posting news",e);
+			log.error("Error occured during checking emails",e);
 		} catch (XPathExpressionException e) {
-			log.error("Error occured during posting news",e);
+			log.error("Error occured during checking emails",e);
 		} catch (XPatherException e) {
-			log.error("Error occured during posting news",e);
+			log.error("Error occured during checking emails",e);
 		}
 		finally{
-			this.getProxyFactory().releaseProxy(proxyCnctr);
+			if(proxyCnctr != null){
+				this.getProxyFactory().releaseProxy(proxyCnctr);
+			}
 		}
 
 		return emailsLst;
 	}
 
+	private Email parseXml2Email(TagNode emailTagNode) throws XPatherException{
+		Email email = new Email();
+		
+		email.setHtmlBody(emailTagNode.evaluateXPath("//mail_html/text()")[0].toString().replaceAll("&lt;","<").replaceAll("&gt;", ">"));
+		email.setMessageFrom(emailTagNode.evaluateXPath("//mail_from/text()")[0].toString());
+		
+		return email;
+	}
+	
 	private String str2md5(String str) {
 
 		MessageDigest md;

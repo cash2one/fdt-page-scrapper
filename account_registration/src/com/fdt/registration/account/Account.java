@@ -44,5 +44,15 @@ public class Account {
     {
         this.pass = pass;
     }
+
+	@Override
+	public String toString() {
+		return "Account [login=" + login + ", pass=" + pass + ", email="
+				+ email + "]";
+	}
+    
+	public String toResultString() {
+		return login + ":" + pass + ":" +email;
+	}
 }
 

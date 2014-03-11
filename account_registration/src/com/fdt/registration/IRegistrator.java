@@ -2,16 +2,20 @@ package com.fdt.registration;
 
 import com.fdt.registration.account.Account;
 import com.fdt.registration.email.MailWorker;
+import com.fdt.registration.exception.NoRegisteredException;
 import com.fdt.registration.form.RegistrationFormFactory;
 import com.fdt.scrapper.proxy.ProxyFactory;
 
 public abstract class IRegistrator {
 	
+	protected static final int MAX_EMAIL_CHECK_ATTEMPT_COUNT = 10;
+	
 	private ProxyFactory proxyFactory;
 	private RegistrationFormFactory regFormFactory;
 	private MailWorker mailWorker;
 	
-	public abstract String register(Account account);
+	public abstract boolean register(Account account) throws NoRegisteredException;
+	public abstract boolean verify(Account account) throws NoRegisteredException;
 	
 	public ProxyFactory getProxyFactory() {
 		return proxyFactory;
