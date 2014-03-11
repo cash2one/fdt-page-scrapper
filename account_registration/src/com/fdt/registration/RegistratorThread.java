@@ -29,6 +29,7 @@ public class RegistratorThread implements Callable<Account>{
 				registrator.verify(account);
 			}else{
 				log.error("Can't submit form for registration account: " + account);
+				return null;
 			}
 		} catch (NoRegisteredException e) {
 			log.error("Can't register account for user: " + account.toString());

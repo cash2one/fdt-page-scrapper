@@ -2,6 +2,7 @@ package com.fdt.registration.email;
 
 import java.util.List;
 
+import com.fdt.registration.account.Account;
 import com.fdt.scrapper.proxy.ProxyFactory;
 
 public abstract class MailWorker {
@@ -13,7 +14,7 @@ public abstract class MailWorker {
 	}
 	
 	public abstract String getEmail();
-	public abstract List<Email> checkEmail(String address);
+	public abstract List<Email> checkEmail(Account account);
 	
 	public ProxyFactory getProxyFactory() {
 		return proxyFactory;

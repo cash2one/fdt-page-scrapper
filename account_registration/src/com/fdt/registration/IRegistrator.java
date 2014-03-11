@@ -8,7 +8,7 @@ import com.fdt.scrapper.proxy.ProxyFactory;
 
 public abstract class IRegistrator {
 	
-	protected static final int MAX_EMAIL_CHECK_ATTEMPT_COUNT = 10;
+	protected static final int MAX_EMAIL_CHECK_ATTEMPT_COUNT = 1;
 	
 	private ProxyFactory proxyFactory;
 	private RegistrationFormFactory regFormFactory;

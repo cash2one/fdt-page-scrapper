@@ -19,6 +19,7 @@ import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.TagNode;
 import org.htmlcleaner.XPatherException;
 
+import com.fdt.registration.account.Account;
 import com.fdt.scrapper.proxy.ProxyConnector;
 
 public class TempMailWorker extends MailWorker {
@@ -30,12 +31,15 @@ public class TempMailWorker extends MailWorker {
 	private final String DOMAIN_GETTER_API_PATH = "http://api.temp-mail.ru/request/domains/format/xml/";
 	private final String EMAIL_CHECK_API_PATH = "http://api.temp-mail.ru/request/mail/id/";
 
-	private final String ALFABET_STR = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	private final String ALFABET_STR = "abcdefghijklmnopqrstuvwxyz";
 
 	private List<String> emailDomains= new ArrayList<String>();
 
 	public TempMailWorker(){
 		super();
+		emailDomains.add("@postalmail.biz");
+		emailDomains.add("@rainmail.biz");
+		emailDomains.add("@mailblog.biz");
 	}
 
 	private List<String> getEmailDomains(){
@@ -94,23 +98,21 @@ public class TempMailWorker extends MailWorker {
 	}
 
 	@Override
-	public String getEmail() {
-		synchronized(emailDomains){
-			while(emailDomains.size() == 0){
-				log.debug("Getting emails domain...");
-				this.emailDomains = getEmailDomains();
-			}
+	public synchronized String getEmail() {
+		while(emailDomains.size() == 0){
+			log.debug("Getting emails domain...");
+			this.emailDomains = getEmailDomains();
 		}
 		String email =  ALFABET_STR.charAt(rnd.nextInt(ALFABET_STR.length())) + 
 				String.valueOf(System.currentTimeMillis()) + 
 				ALFABET_STR.charAt(rnd.nextInt(ALFABET_STR.length())) +
 				emailDomains.get(rnd.nextInt(emailDomains.size()));
-
+		log.debug("Generated email: " + email);
 		return email;
 	}
 
 	@Override
-	public List<Email> checkEmail(String address) {
+	public List<Email> checkEmail(Account account) {
 		InputStream inputStreamPage = null;
 		ProxyConnector proxyCnctr = null;
 		List<Email> emailsLst = new ArrayList<Email>();
@@ -118,7 +120,7 @@ public class TempMailWorker extends MailWorker {
 		try {
 			proxyCnctr = this.getProxyFactory().getProxyConnector();
 			//post news
-			URL url = new URL(EMAIL_CHECK_API_PATH + str2md5(address) + "/");
+			URL url = new URL(EMAIL_CHECK_API_PATH + str2md5(account.getEmail()) + "/");
 			HttpURLConnection.setFollowRedirects(true);
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
 			conn.setReadTimeout(60000);
@@ -149,13 +151,13 @@ public class TempMailWorker extends MailWorker {
 
 
 		} catch (ClientProtocolException e) {
-			log.error("Error occured during checking emails",e);
+			log.error("Error occured during checking emails ("+account+")",e);
 		} catch (IOException e) {
-			log.error("Error occured during checking emails",e);
+			log.error("Error occured during checking emails ("+account+")",e);
 		} catch (XPathExpressionException e) {
-			log.error("Error occured during checking emails",e);
+			log.error("Error occured during checking emails ("+account+")",e);
 		} catch (XPatherException e) {
-			log.error("Error occured during checking emails",e);
+			log.error("Error occured during checking emails ("+account+")",e);
 		}
 		finally{
 			if(proxyCnctr != null){

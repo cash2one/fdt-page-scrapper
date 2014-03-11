@@ -20,12 +20,13 @@ import com.fdt.registration.account.Account;
 
 public class RegistratorRunner {
 
-	private final int MAX_THREAD_COUNT = 10;
+	private final int MAX_THREAD_COUNT = 100;
 
 	private static final Logger log = Logger.getLogger(RegistratorRunner.class);
 	private final ExecutorService pool = Executors.newFixedThreadPool(MAX_THREAD_COUNT);
 
 	private BlockingQueue <Future<Account>> threadResultList = new ArrayBlockingQueue<Future<Account>>(MAX_THREAD_COUNT);
+	//private List<Future<Account>> threadResultList = new ArrayList<Future<Account>>(MAX_THREAD_COUNT);
 
 	public static void main(String[] args) {
 		RegistratorRunner runner = new RegistratorRunner();
@@ -45,11 +46,9 @@ public class RegistratorRunner {
 
 		while(true){
 			try {
-				synchronized(threadResultList){
-					Account account = new Account();
-					Future<Account> task = pool.submit(new RegistratorThread(sapoRegistrator, account));
-					threadResultList.put(task);
-				}
+				Account account = new Account();
+				Future<Account> task = pool.submit(new RegistratorThread(sapoRegistrator, account));
+				threadResultList.put(task);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -70,41 +69,39 @@ public class RegistratorRunner {
 			FileWriter fileWritter = new FileWriter(file.getName(),true);
 			BufferedWriter bufferWritter = new BufferedWriter(fileWritter);
 			bufferWritter.write(account.toResultString());
+			bufferWritter.flush();
 			bufferWritter.close();
-
 		}catch(IOException e){
 			log.error("Error during saving account to result file.");
 		}
 	}
 
 	private class ResultHandler implements Runnable{
-		BlockingQueue<Future<Account>> threadResultList; 
+		BlockingQueue<Future<Account>> threadResult; 
 
 		public ResultHandler(BlockingQueue<Future<Account>> threadResultList){
-			this.threadResultList = threadResultList;
+			this.threadResult = threadResultList;
 		}
 
 		@Override
 		public void run(){
-			while(true){
+			while(true)
+			{
 				try {
-					synchronized(threadResultList){
-						Future<Account> result = threadResultList.take();
-						if(result.isDone()){
+					Future<Account> result = threadResult.peek();
+					if(result != null && result.isDone()){
+						result = threadResult.take();
+						if(result.get() != null){
 							appendAccountToFile(result.get());
-						}else{
-							threadResultList.put(result);
 						}
-						wait(500L);
 					}
-				} catch (InterruptedException e) {
+				}
+				catch (InterruptedException e) {
 					log.error("Thread was interrupted.");
 				} catch (ExecutionException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+					log.error("Error occured during getting registration result.", e);
 				}
 			}
 		}
 	}
-
 }

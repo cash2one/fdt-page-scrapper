@@ -68,6 +68,8 @@ public class SapoRegistrator extends IRegistrator{
 
 			//conn.getRequestProperties()
 			int code = conn.getResponseCode();
+			
+			log.debug("Responce code for submit form (" + account + "): " + code);
 
 			isFormSubmit = true;
 		} catch (ClientProtocolException e) {
@@ -90,12 +92,12 @@ public class SapoRegistrator extends IRegistrator{
 	@Override
 	public synchronized boolean verify(Account account) throws NoRegisteredException {
 		
-		List<Email> emails = this.getMailWorker().checkEmail(account.getEmail());
+		List<Email> emails = this.getMailWorker().checkEmail(account);
 
 		int attemptCount = 0;
 		while(emails.size() == 0 && attemptCount < MAX_EMAIL_CHECK_ATTEMPT_COUNT){
 			log.debug("#" + attemptCount + ": Try to check verification email for account: " + account.toString());
-			emails = this.getMailWorker().checkEmail(account.getEmail());
+			emails = this.getMailWorker().checkEmail(account);
 			attemptCount++;
 			try {
 				wait(500L);

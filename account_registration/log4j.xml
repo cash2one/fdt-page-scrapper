@@ -7,12 +7,12 @@
 		<param name="MaxFileSize" value="50MB"/>
 		<param name="MaxBackupIndex" value="10"/>
 		<layout class="org.apache.log4j.PatternLayout"> 
-			<param name="ConversionPattern" value="%d-%5p(%F:%L)-%m%n"/> 
+			<param name="ConversionPattern" value="%d-%5p[%t](%F:%L)-%m%n"/> 
 		</layout> 
   	</appender>
 	
 	<root>
-		<level value="INFO" />
+		<level value="DEBUG" />
 		<appender-ref ref="logfile" />
 	</root>
 	
