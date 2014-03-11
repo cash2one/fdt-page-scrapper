@@ -27,8 +27,10 @@ public class TempMailWorker extends MailWorker {
 
 	private Random rnd = new Random();
 
-	private String DOMAIN_GETTER_API_PATH = "http://api.temp-mail.ru/request/domains/format/xml/";
-	private String EMAIL_CHECK_API_PATH = "http://api.temp-mail.ru/request/mail/id/";
+	private final String DOMAIN_GETTER_API_PATH = "http://api.temp-mail.ru/request/domains/format/xml/";
+	private final String EMAIL_CHECK_API_PATH = "http://api.temp-mail.ru/request/mail/id/";
+	
+	private final String ALFABET_STR = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	private List<String> emailDomains= new ArrayList<String>();
 
@@ -97,7 +99,10 @@ public class TempMailWorker extends MailWorker {
 			log.debug("Getting emails domain...");
 			this.emailDomains = getEmailDomains();
 		}
-		String email =  String.valueOf(System.currentTimeMillis()) + emailDomains.get(rnd.nextInt(emailDomains.size()));
+		String email =  ALFABET_STR.charAt(rnd.nextInt(ALFABET_STR.length())) + 
+				String.valueOf(System.currentTimeMillis()) + 
+				ALFABET_STR.charAt(rnd.nextInt(ALFABET_STR.length())) +
+				emailDomains.get(rnd.nextInt(emailDomains.size()));
 		return email;
 	}
 

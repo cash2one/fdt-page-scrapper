@@ -52,7 +52,7 @@ public class Account {
 	}
     
 	public String toResultString() {
-		return login + ":" + pass + ":" +email;
+		return login + ":" + pass + ":" +email + "\r\n";
 	}
 }
 
