@@ -5,8 +5,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.Authenticator;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -25,8 +25,9 @@ public class RegistratorRunner {
 	private static final Logger log = Logger.getLogger(RegistratorRunner.class);
 	private final ExecutorService pool = Executors.newFixedThreadPool(MAX_THREAD_COUNT);
 
-	private BlockingQueue <Future<Account>> threadResultList = new ArrayBlockingQueue<Future<Account>>(MAX_THREAD_COUNT);
-	//private List<Future<Account>> threadResultList = new ArrayList<Future<Account>>(MAX_THREAD_COUNT);
+	//private BlockingQueue <Future<Account>> threadResultList = new ArrayBlockingQueue<Future<Account>>(MAX_THREAD_COUNT);
+	private List<Future<Account>> threadResultList = new ArrayList<Future<Account>>(MAX_THREAD_COUNT);
+	private Object arrayLock = new Object();
 
 	public static void main(String[] args) {
 		RegistratorRunner runner = new RegistratorRunner();
@@ -44,14 +45,25 @@ public class RegistratorRunner {
 
 		(new Thread(new ResultHandler(threadResultList))).start();
 
+		Future<Account> task = null;
 		while(true){
-			try {
-				Account account = new Account();
-				Future<Account> task = pool.submit(new RegistratorThread(sapoRegistrator, account));
-				threadResultList.put(task);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			synchronized(arrayLock){
+				try {
+					if(task == null){
+						Account account = new Account();
+						task = pool.submit(new RegistratorThread(sapoRegistrator, account));
+					}
+
+					if(threadResultList.size() < MAX_THREAD_COUNT){
+						threadResultList.add(task);
+						task = null;
+					}else{
+						arrayLock.wait(500L);
+					}
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		}
 	}
@@ -77,9 +89,9 @@ public class RegistratorRunner {
 	}
 
 	private class ResultHandler implements Runnable{
-		BlockingQueue<Future<Account>> threadResult; 
+		List<Future<Account>> threadResult; 
 
-		public ResultHandler(BlockingQueue<Future<Account>> threadResultList){
+		public ResultHandler(List<Future<Account>> threadResultList){
 			this.threadResult = threadResultList;
 		}
 
@@ -88,11 +100,23 @@ public class RegistratorRunner {
 			while(true)
 			{
 				try {
-					Future<Account> result = threadResult.peek();
-					if(result != null && result.isDone()){
-						result = threadResult.take();
-						if(result.get() != null){
-							appendAccountToFile(result.get());
+					synchronized(arrayLock){
+
+						if(threadResult.size() > 0)
+						{
+							Future<Account> result = threadResult.remove(0);
+
+							if(result.isDone()){
+								if(result.get() != null){
+									appendAccountToFile(result.get());
+								}
+								threadResult.remove(0);
+							}else{
+								threadResult.add(result);
+							}
+						}
+						else{
+							arrayLock.wait(500L);
 						}
 					}
 				}

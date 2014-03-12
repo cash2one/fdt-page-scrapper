@@ -33,7 +33,8 @@ public class RegistratorThread implements Callable<Account>{
 				return null;
 			}
 		} catch (NoRegisteredException e) {
-			log.error("Can't register account for user: " + account.toString());
+			log.error("Can't register account for user: " + account.toString() ,e);
+			return null;
 		}
 		return account;
 	}

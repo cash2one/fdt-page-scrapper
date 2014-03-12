@@ -9,6 +9,7 @@ import java.net.Proxy.Type;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.List;
+import java.util.Map;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.xml.xpath.XPathExpressionException;
@@ -23,12 +24,15 @@ import org.htmlcleaner.XPatherException;
 import com.fdt.registration.IRegistrator;
 import com.fdt.registration.account.Account;
 import com.fdt.registration.email.Email;
+import com.fdt.registration.exception.AuthorizationException;
 import com.fdt.registration.exception.NoRegisteredException;
 import com.fdt.scrapper.proxy.ProxyConnector;
 
 
 public class SapoRegistrator extends IRegistrator{
 
+	private static final String HTTPS_LOGIN_SAPO_PT_USER_REGISTER_DO = "https://login.sapo.pt/UserRegister.do";
+	private static final String HTTPS_LOGIN_SAPO_PT_LOGIN_DO = "https://login.sapo.pt/Login.do";
 	private static final Logger log = Logger.getLogger(SapoRegistrator.class);
 
 	@Override
@@ -46,7 +50,7 @@ public class SapoRegistrator extends IRegistrator{
 		try {
 			proxyCnctr = this.getProxyFactory().getProxyConnector();
 			//post news
-			URL url = new URL("https://login.sapo.pt/UserRegister.do");
+			URL url = new URL(HTTPS_LOGIN_SAPO_PT_USER_REGISTER_DO);
 			HttpsURLConnection.setFollowRedirects(false);
 			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
 			conn.setReadTimeout(60000);
@@ -68,7 +72,7 @@ public class SapoRegistrator extends IRegistrator{
 
 			//conn.getRequestProperties()
 			int code = conn.getResponseCode();
-			
+
 			log.debug("Responce code for submit form (" + account + "): " + code);
 
 			isFormSubmit = true;
@@ -84,35 +88,43 @@ public class SapoRegistrator extends IRegistrator{
 				this.getProxyFactory().releaseProxy(proxyCnctr);
 			}
 		}
-		
+
 		return isFormSubmit;
 	}
 
-	
+
 	@Override
-	public synchronized boolean verify(Account account) throws NoRegisteredException {
-		
+	public boolean verify(Account account) throws NoRegisteredException {
+
 		List<Email> emails = this.getMailWorker().checkEmail(account);
 
 		int attemptCount = 0;
-		while(emails.size() == 0 && attemptCount < MAX_EMAIL_CHECK_ATTEMPT_COUNT){
+		while(emails.size() == 0 && attemptCount < MAX_EMAIL_CHECK_ATTEMPT_COUNT)
+		{
 			log.debug("#" + attemptCount + ": Try to check verification email for account: " + account.toString());
 			emails = this.getMailWorker().checkEmail(account);
 			attemptCount++;
-			try {
-				wait(500L);
-			} catch (InterruptedException e) {
+			
+			if(emails.size() > 0){
+				break;
+			}else{
+				synchronized(this){
+					try {
+						wait(500L);
+					} catch (InterruptedException e) {
+					}
+				}
 			}
 		}
-		
+
 		if(emails.size() == 0){
 			throw new NoRegisteredException("Can't getting verification email from mail box 'temp-mail.ru' for email: '" + account.getEmail() + "'");
 		}
-		
+
 		//submit verify email
 		String  verifyLink = getVerifyLink(emails);
 		log.info("Verification link (for account" + account.toString() + "): " + verifyLink);
-		
+
 		if(verifyLink != null && !verifyLink.trim().isEmpty()){
 			int code = submitLink(verifyLink);
 			while(code != 200){
@@ -123,16 +135,83 @@ public class SapoRegistrator extends IRegistrator{
 		}else{
 			throw new NoRegisteredException("Can't get verification link for email: " + account.getEmail());
 		}
-		
+
 		return true;
 	}
 
 	@Override
-	public boolean postVerifyAction(Account account) throws NoRegisteredException {
+	public boolean postVerifyAction(Account account) throws Exception {
 		// TODO Implement blog refistration
+
+
+
 		return false;
 	}
-	
+
+	private void userLogin(Account account) throws AuthorizationException{
+		ProxyConnector proxyCnctr = null;
+		//Get email for account
+		String email = this.getMailWorker().getEmail();
+		account.setEmail(email);
+		account.setLogin(email);
+		account.setPass(email);
+		boolean isFormSubmit = false;
+
+		try {
+			proxyCnctr = this.getProxyFactory().getProxyConnector();
+			//post news
+			URL url = new URL(HTTPS_LOGIN_SAPO_PT_LOGIN_DO);
+			HttpsURLConnection.setFollowRedirects(false);
+			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("POST");
+			conn.setDoInput(true);
+			conn.setDoOutput(true);
+
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU");
+			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+
+			OutputStream os = conn.getOutputStream();
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			writer.write(getQuery(this.getRegFormFactory().getRegFormParams(account)));
+			writer.flush();
+			writer.close();
+			os.close();
+
+			//conn.getRequestProperties()
+			int code = conn.getResponseCode();
+
+			//read cookies
+			Map<String,List<String>> cookies = conn.getHeaderFields();
+
+			if(cookies.get("Set-Cookie") != null){
+				for(String cookieOne: cookies.get("Set-cookie"))
+				{
+					account.addCookie(cookieOne);
+				}
+			}else{
+				throw new AuthorizationException("Registration failed for user: " + code);
+			}
+
+			log.debug("Responce code for submit form (" + account + "): " + code);
+
+			isFormSubmit = true;
+		} catch (ClientProtocolException e) {
+			log.error("Error occured during posting news",e);
+		} catch (IOException e) {
+			log.error("Error occured during posting news",e);
+		} catch (XPathExpressionException e) {
+			log.error("Error occured during posting news",e);
+		}
+		finally{
+			if(proxyCnctr != null){
+				this.getProxyFactory().releaseProxy(proxyCnctr);
+			}
+		}
+	}
+
 	private int submitLink(String link){
 		int code = -1;
 		ProxyConnector proxyCnctr = null;
@@ -166,11 +245,9 @@ public class SapoRegistrator extends IRegistrator{
 				this.getProxyFactory().releaseProxy(proxyCnctr);
 			}
 		}
-		
+
 		return code;
 	}
-	
-	
 
 	private String getVerifyLink(List<Email> emails){
 		String verifyLink = "";
@@ -182,6 +259,7 @@ public class SapoRegistrator extends IRegistrator{
 
 				try {
 					verifyLink = html.evaluateXPath("//a/text()")[0].toString();
+					return verifyLink;
 				} catch (XPatherException e) {
 					log.error("Error occured during check emails");
 				}
