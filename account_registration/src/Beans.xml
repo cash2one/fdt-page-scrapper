@@ -15,7 +15,6 @@
 	</bean>
    	
    	<bean id="mailWorker" class="com.fdt.registration.email.TempMailWorker">
-   		<property name="proxyFactory" ref="proxyFactory"/>
 	</bean>
 	
 	<bean id="regForm" class="com.fdt.registration.form.impl.SapoRegistrationForm">

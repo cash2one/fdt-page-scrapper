@@ -50,7 +50,8 @@ public class RegistratorRunner {
 			synchronized(arrayLock){
 				try {
 					if(task == null){
-						Account account = new Account();
+						String email = sapoRegistrator.getMailWorker().getEmail();
+						Account account = new Account(email,email,email);
 						task = pool.submit(new RegistratorThread(sapoRegistrator, account));
 					}
 

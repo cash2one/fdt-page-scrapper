@@ -1,7 +1,10 @@
 package com.fdt.registration.impl;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
@@ -39,12 +42,7 @@ public class SapoRegistrator extends IRegistrator{
 	public boolean register(Account account) throws NoRegisteredException{
 		//String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + task.getKeyWords() + "delete/";
 
-		ProxyConnector proxyCnctr = null;
 		//Get email for account
-		String email = this.getMailWorker().getEmail();
-		account.setEmail(email);
-		account.setLogin(email);
-		account.setPass(email);
 		boolean isFormSubmit = false;
 
 		try {
@@ -62,9 +60,11 @@ public class SapoRegistrator extends IRegistrator{
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			conn.setRequestProperty("Accept-Language", "ru-RU");
 			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+			conn.setRequestProperty("Host", "login.sapo.pt");
 
 			OutputStream os = conn.getOutputStream();
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			log.trace("---------------Register string:" + this.getRegFormFactory().getRegFormParams(account).toString());
 			writer.write(getQuery(this.getRegFormFactory().getRegFormParams(account)));
 			writer.flush();
 			writer.close();
@@ -72,6 +72,18 @@ public class SapoRegistrator extends IRegistrator{
 
 			//conn.getRequestProperties()
 			int code = conn.getResponseCode();
+			
+			conn.getInputStream();
+			
+			InputStream is = conn.getInputStream();
+			
+			log.trace("HTML:-------------------------------------------------------------\r\n" 
+			+ is2srt(is)
+			+ "\r\nHTML:-------------------------------------------------------------\r\n");
+			
+			if(is != null){
+				is.close();
+			}
 
 			log.debug("Responce code for submit form (" + account + "): " + code);
 
@@ -83,11 +95,6 @@ public class SapoRegistrator extends IRegistrator{
 		} catch (XPathExpressionException e) {
 			log.error("Error occured during posting news",e);
 		}
-		finally{
-			if(proxyCnctr != null){
-				this.getProxyFactory().releaseProxy(proxyCnctr);
-			}
-		}
 
 		return isFormSubmit;
 	}
@@ -96,13 +103,13 @@ public class SapoRegistrator extends IRegistrator{
 	@Override
 	public boolean verify(Account account) throws NoRegisteredException {
 
-		List<Email> emails = this.getMailWorker().checkEmail(account);
+		List<Email> emails = this.getMailWorker().checkEmail(account, proxyCnctr);
 
 		int attemptCount = 0;
 		while(emails.size() == 0 && attemptCount < MAX_EMAIL_CHECK_ATTEMPT_COUNT)
 		{
 			log.debug("#" + attemptCount + ": Try to check verification email for account: " + account.toString());
-			emails = this.getMailWorker().checkEmail(account);
+			emails = this.getMailWorker().checkEmail(account, proxyCnctr);
 			attemptCount++;
 			
 			if(emails.size() > 0){
@@ -147,18 +154,24 @@ public class SapoRegistrator extends IRegistrator{
 
 		return false;
 	}
+	
+	private String is2srt(InputStream is) throws IOException{
+		// read it with BufferedReader
+		BufferedReader br = new BufferedReader(new InputStreamReader(is));
+	 
+		String line;
+		StringBuffer strBuf =  new StringBuffer();
+		while ((line = br.readLine()) != null) {
+			strBuf.append(line);
+		}
+		return strBuf.toString();
+	}
 
 	private void userLogin(Account account) throws AuthorizationException{
-		ProxyConnector proxyCnctr = null;
 		//Get email for account
-		String email = this.getMailWorker().getEmail();
-		account.setEmail(email);
-		account.setLogin(email);
-		account.setPass(email);
 		boolean isFormSubmit = false;
 
 		try {
-			proxyCnctr = this.getProxyFactory().getProxyConnector();
 			//post news
 			URL url = new URL(HTTPS_LOGIN_SAPO_PT_LOGIN_DO);
 			HttpsURLConnection.setFollowRedirects(false);

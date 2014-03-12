@@ -42,13 +42,11 @@ public class TempMailWorker extends MailWorker {
 		emailDomains.add("@mailblog.biz");
 	}
 
-	private List<String> getEmailDomains(){
+	private List<String> getEmailDomains(ProxyConnector proxyCnctr){
 		InputStream inputStreamPage = null;
-		ProxyConnector proxyCnctr = null;
 		List<String> emailDomains = new ArrayList<String>();
 
 		try {
-			proxyCnctr = this.getProxyFactory().getProxyConnector();
 			//post news
 			URL url = new URL(DOMAIN_GETTER_API_PATH);
 			HttpURLConnection.setFollowRedirects(true);
@@ -88,11 +86,6 @@ public class TempMailWorker extends MailWorker {
 		} catch (XPatherException e) {
 			log.error("Error occured during getting email domains",e);
 		}
-		finally{
-			if(proxyCnctr != null){
-				this.getProxyFactory().releaseProxy(proxyCnctr);
-			}
-		}
 
 		return emailDomains;
 	}
@@ -101,7 +94,7 @@ public class TempMailWorker extends MailWorker {
 	public synchronized String getEmail() {
 		while(emailDomains.size() == 0){
 			log.debug("Getting emails domain...");
-			this.emailDomains = getEmailDomains();
+			//this.emailDomains = getEmailDomains(proxyCnctr);
 		}
 		String email =  ALFABET_STR.charAt(rnd.nextInt(ALFABET_STR.length())) + 
 				String.valueOf(System.currentTimeMillis()) + 
@@ -112,13 +105,11 @@ public class TempMailWorker extends MailWorker {
 	}
 
 	@Override
-	public List<Email> checkEmail(Account account) {
+	public List<Email> checkEmail(Account account, ProxyConnector proxyCnctr) {
 		InputStream inputStreamPage = null;
-		ProxyConnector proxyCnctr = null;
 		List<Email> emailsLst = new ArrayList<Email>();
 
 		try {
-			proxyCnctr = this.getProxyFactory().getProxyConnector();
 			//post news
 			URL url = new URL(EMAIL_CHECK_API_PATH + str2md5(account.getEmail()) + "/");
 			HttpURLConnection.setFollowRedirects(true);
@@ -158,11 +149,6 @@ public class TempMailWorker extends MailWorker {
 			log.error("Error occured during checking emails ("+account+")",e);
 		} catch (XPatherException e) {
 			log.error("Error occured during checking emails ("+account+")",e);
-		}
-		finally{
-			if(proxyCnctr != null){
-				this.getProxyFactory().releaseProxy(proxyCnctr);
-			}
 		}
 
 		return emailsLst;

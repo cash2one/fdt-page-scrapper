@@ -15,7 +15,7 @@ public abstract class IRegistrator {
 	private RegistrationFormFactory regFormFactory;
 	private MailWorker mailWorker;
 	
-	private ProxyConnector proxyCnctr;
+	protected ProxyConnector proxyCnctr;
 	
 	public abstract boolean register(Account account) throws NoRegisteredException;
 	public abstract boolean verify(Account account) throws NoRegisteredException;
