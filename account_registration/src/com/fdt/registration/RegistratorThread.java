@@ -24,10 +24,14 @@ public class RegistratorThread implements Callable<Account>{
 	public Account call() throws Exception {
 		boolean isRegistered = false;
 		try {
+			//TODO After test
+			registrator.postVerifyAction(account);
+			
 			isRegistered = registrator.register(account);
 			if(isRegistered){
 				registrator.verify(account);
 				//TODO blog registration
+				registrator.postVerifyAction(account);
 			}else{
 				log.error("Can't submit form for registration account: " + account);
 				return null;

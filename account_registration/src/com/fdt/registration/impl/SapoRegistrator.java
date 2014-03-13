@@ -11,6 +11,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.Proxy.Type;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -19,6 +20,7 @@ import javax.xml.xpath.XPathExpressionException;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
+import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
 import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.TagNode;
@@ -34,8 +36,10 @@ import com.fdt.scrapper.proxy.ProxyConnector;
 
 public class SapoRegistrator extends IRegistrator{
 
+	private static final String CSRF_IDENTIFIER_LABEL = "csrf_identifier";
 	private static final String HTTPS_LOGIN_SAPO_PT_USER_REGISTER_DO = "https://login.sapo.pt/UserRegister.do";
 	private static final String HTTPS_LOGIN_SAPO_PT_LOGIN_DO = "https://login.sapo.pt/Login.do";
+	private static final String HTTPS_LOGIN_SAPO_PT = "https://login.sapo.pt/";
 	private static final Logger log = Logger.getLogger(SapoRegistrator.class);
 
 	@Override
@@ -44,6 +48,7 @@ public class SapoRegistrator extends IRegistrator{
 
 		//Get email for account
 		boolean isFormSubmit = false;
+		ProxyConnector proxyCnctr = null;
 
 		try {
 			proxyCnctr = this.getProxyFactory().getProxyConnector();
@@ -72,15 +77,15 @@ public class SapoRegistrator extends IRegistrator{
 
 			//conn.getRequestProperties()
 			int code = conn.getResponseCode();
-			
+
 			conn.getInputStream();
-			
+
 			InputStream is = conn.getInputStream();
-			
+
 			log.trace("HTML:-------------------------------------------------------------\r\n" 
-			+ is2srt(is)
-			+ "\r\nHTML:-------------------------------------------------------------\r\n");
-			
+					+ is2srt(is)
+					+ "\r\nHTML:-------------------------------------------------------------\r\n");
+
 			if(is != null){
 				is.close();
 			}
@@ -94,6 +99,10 @@ public class SapoRegistrator extends IRegistrator{
 			log.error("Error occured during posting news",e);
 		} catch (XPathExpressionException e) {
 			log.error("Error occured during posting news",e);
+		}finally{
+			if(proxyCnctr != null){
+				this.getProxyFactory().releaseProxy(proxyCnctr);
+			}
 		}
 
 		return isFormSubmit;
@@ -103,44 +112,54 @@ public class SapoRegistrator extends IRegistrator{
 	@Override
 	public boolean verify(Account account) throws NoRegisteredException {
 
-		List<Email> emails = this.getMailWorker().checkEmail(account, proxyCnctr);
+		ProxyConnector proxyCnctr = null;
 
-		int attemptCount = 0;
-		while(emails.size() == 0 && attemptCount < MAX_EMAIL_CHECK_ATTEMPT_COUNT)
-		{
-			log.debug("#" + attemptCount + ": Try to check verification email for account: " + account.toString());
-			emails = this.getMailWorker().checkEmail(account, proxyCnctr);
-			attemptCount++;
-			
-			if(emails.size() > 0){
-				break;
-			}else{
-				synchronized(this){
-					try {
-						wait(500L);
-					} catch (InterruptedException e) {
+		try{
+			proxyCnctr = this.getProxyFactory().getProxyConnector();
+			List<Email> emails = this.getMailWorker().checkEmail(account, proxyCnctr);
+
+			int attemptCount = 0;
+			while(emails.size() == 0 && attemptCount < MAX_EMAIL_CHECK_ATTEMPT_COUNT)
+			{
+				log.debug("#" + attemptCount + ": Try to check verification email for account: " + account.toString());
+				emails = this.getMailWorker().checkEmail(account, proxyCnctr);
+				attemptCount++;
+
+				if(emails.size() > 0){
+					break;
+				}else{
+					synchronized(this){
+						try {
+							wait(500L);
+						} catch (InterruptedException e) {
+						}
 					}
 				}
 			}
-		}
 
-		if(emails.size() == 0){
-			throw new NoRegisteredException("Can't getting verification email from mail box 'temp-mail.ru' for email: '" + account.getEmail() + "'");
-		}
-
-		//submit verify email
-		String  verifyLink = getVerifyLink(emails);
-		log.info("Verification link (for account" + account.toString() + "): " + verifyLink);
-
-		if(verifyLink != null && !verifyLink.trim().isEmpty()){
-			int code = submitLink(verifyLink);
-			while(code != 200){
-				log.info("Server responces for verification link(" + verifyLink + "): " + code);
-				code = submitLink(verifyLink);
+			if(emails.size() == 0){
+				throw new NoRegisteredException("Can't getting verification email from mail box 'temp-mail.ru' for email: '" + account.getEmail() + "'");
 			}
-			log.info("Server responces for verification link(" + verifyLink + "): " + code);
-		}else{
-			throw new NoRegisteredException("Can't get verification link for email: " + account.getEmail());
+
+			//submit verify email
+			String  verifyLink = getVerifyLink(emails);
+			log.info("Verification link (for account" + account.toString() + "): " + verifyLink);
+
+			if(verifyLink != null && !verifyLink.trim().isEmpty()){
+				int code = submitLink(verifyLink);
+				while(code != 200){
+					log.info("Server responces for verification link(" + verifyLink + "): " + code);
+					code = submitLink(verifyLink);
+				}
+				log.info("Server responces for verification link(" + verifyLink + "): " + code);
+			}else{
+				throw new NoRegisteredException("Can't get verification link for email: " + account.getEmail());
+			}
+		}
+		finally{
+			if(proxyCnctr != null){
+				this.getProxyFactory().releaseProxy(proxyCnctr);
+			}
 		}
 
 		return true;
@@ -149,16 +168,17 @@ public class SapoRegistrator extends IRegistrator{
 	@Override
 	public boolean postVerifyAction(Account account) throws Exception {
 		// TODO Implement blog refistration
-
+		getCookie(account);
+		userLogin(account);
 
 
 		return false;
 	}
-	
+
 	private String is2srt(InputStream is) throws IOException{
 		// read it with BufferedReader
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
-	 
+
 		String line;
 		StringBuffer strBuf =  new StringBuffer();
 		while ((line = br.readLine()) != null) {
@@ -169,24 +189,35 @@ public class SapoRegistrator extends IRegistrator{
 
 	private void userLogin(Account account) throws AuthorizationException{
 		//Get email for account
-		boolean isFormSubmit = false;
+		ProxyConnector proxyCnctr = null;
 
 		try {
 			//post news
+			proxyCnctr = this.getProxyFactory().getProxyConnector();
+
 			URL url = new URL(HTTPS_LOGIN_SAPO_PT_LOGIN_DO);
 			HttpsURLConnection.setFollowRedirects(false);
 			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
-			conn.setRequestMethod("POST");
+			conn.setRequestMethod("GET");
 			conn.setDoInput(true);
-			conn.setDoOutput(true);
+			conn.setDoOutput(false);
 
+			conn.setRequestProperty("Host", "login.sapo.pt");
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			conn.setRequestProperty("Accept-Language", "ru-RU");
 			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+			conn.setRequestProperty("Cookie", account.cookiesToStr());
 
 			OutputStream os = conn.getOutputStream();
+			
+			List<NameValuePair> params = new ArrayList<NameValuePair>();
+			params.add(new BasicNameValuePair(CSRF_IDENTIFIER_LABEL, ));
+			params.add(new BasicNameValuePair("SAPO_LOGIN_USERNAME", account.getLogin()));
+			params.add(new BasicNameValuePair("SAPO_LOGIN_PASSWORD", account.getPass()));
+			params.add(new BasicNameValuePair("sapo_widget_login_form_submit", ""));
+			
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
 			writer.write(getQuery(this.getRegFormFactory().getRegFormParams(account)));
 			writer.flush();
@@ -200,7 +231,7 @@ public class SapoRegistrator extends IRegistrator{
 			Map<String,List<String>> cookies = conn.getHeaderFields();
 
 			if(cookies.get("Set-Cookie") != null){
-				for(String cookieOne: cookies.get("Set-cookie"))
+				for(String cookieOne: cookies.get("Set-Cookie"))
 				{
 					account.addCookie(cookieOne);
 				}
@@ -210,13 +241,81 @@ public class SapoRegistrator extends IRegistrator{
 
 			log.debug("Responce code for submit form (" + account + "): " + code);
 
-			isFormSubmit = true;
 		} catch (ClientProtocolException e) {
 			log.error("Error occured during posting news",e);
 		} catch (IOException e) {
 			log.error("Error occured during posting news",e);
 		} catch (XPathExpressionException e) {
 			log.error("Error occured during posting news",e);
+		}
+		finally{
+			if(proxyCnctr != null){
+				this.getProxyFactory().releaseProxy(proxyCnctr);
+			}
+		}
+	}
+
+	private void getCookie(Account account) throws AuthorizationException{
+		//Get cookie for account
+		ProxyConnector proxyCnctr = null;
+		InputStream inputStreamPage = null;
+
+		try {
+			//post news
+			proxyCnctr = this.getProxyFactory().getProxyConnector();
+
+			URL url = new URL(HTTPS_LOGIN_SAPO_PT);
+			HttpsURLConnection.setFollowRedirects(false);
+			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("GET");
+			conn.setDoInput(true);
+			conn.setDoOutput(false);
+
+			conn.setRequestProperty("Host", "login.sapo.pt");
+			//conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			//conn.setRequestProperty("Accept-Language", "ru-RU");
+			//conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+
+
+			//conn.getRequestProperties()
+			int code = conn.getResponseCode();
+
+			//read cookies
+			Map<String,List<String>> cookies = conn.getHeaderFields();
+
+			if(cookies.get("Set-Cookie") != null){
+				for(String cookieOne: cookies.get("Set-Cookie"))
+				{
+					account.addCookie(cookieOne);
+				}
+			}else{
+				throw new AuthorizationException("Registration failed for user: " + code);
+			}
+
+			log.debug("Responce code for submit form (" + account + "): " + code);
+			
+			TagNode csrf = null;
+			HtmlCleaner cleaner = new HtmlCleaner();
+
+			csrf = cleaner.clean(inputStreamPage,"UTF-8");
+
+			Object[] csrfIdnfr = csrf.evaluateXPath("//form/fieldset/input[@name]/@value");
+
+			if(csrfIdnfr.length > 0){
+				account.addExtraParam(CSRF_IDENTIFIER_LABEL, (String)csrfIdnfr[0]);
+			}else{
+				throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
+			}
+		} catch (ClientProtocolException e) {
+			log.error("Error occured during getting cookies",e);
+		} catch (IOException e) {
+			log.error("Error occured during getting cookies",e);
+		} catch (XPathExpressionException e) {
+			log.error("Error occured during getting cookies",e);
+		} catch (XPatherException e) {
+			log.error("Error occured during getting cookies",e);
 		}
 		finally{
 			if(proxyCnctr != null){

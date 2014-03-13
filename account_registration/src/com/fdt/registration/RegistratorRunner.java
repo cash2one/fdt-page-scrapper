@@ -20,7 +20,7 @@ import com.fdt.registration.account.Account;
 
 public class RegistratorRunner {
 
-	private final int MAX_THREAD_COUNT = 100;
+	private final int MAX_THREAD_COUNT = 1;
 
 	private static final Logger log = Logger.getLogger(RegistratorRunner.class);
 	private final ExecutorService pool = Executors.newFixedThreadPool(MAX_THREAD_COUNT);

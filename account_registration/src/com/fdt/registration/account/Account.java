@@ -1,13 +1,17 @@
 package com.fdt.registration.account;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Account {
 	private String login = "";
 	private String pass = "";
 	private String email = "";
 	private String groupId = "";
+	
+	private Map<String, String> extraParams = new HashMap<String, String>();
 
 	private List<String> cookiesArray = new ArrayList<String>();
 
@@ -80,6 +84,14 @@ public class Account {
 			strBld.setLength(strBld.length()-2);
 		}
 		return strBld.toString();
+	}
+	
+	public void addExtraParam(String key, String value){
+		extraParams.put(key, value);
+	}
+	
+	public String getExtraParam(String key){
+		return extraParams.get(key);
 	}
 
 	@Override

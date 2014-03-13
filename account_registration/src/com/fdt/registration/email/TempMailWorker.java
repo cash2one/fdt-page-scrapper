@@ -150,6 +150,16 @@ public class TempMailWorker extends MailWorker {
 		} catch (XPatherException e) {
 			log.error("Error occured during checking emails ("+account+")",e);
 		}
+		finally{
+			if(inputStreamPage != null){
+				try {
+					inputStreamPage.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
 
 		return emailsLst;
 	}

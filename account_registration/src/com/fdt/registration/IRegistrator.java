@@ -15,21 +15,9 @@ public abstract class IRegistrator {
 	private RegistrationFormFactory regFormFactory;
 	private MailWorker mailWorker;
 	
-	protected ProxyConnector proxyCnctr;
-	
 	public abstract boolean register(Account account) throws NoRegisteredException;
 	public abstract boolean verify(Account account) throws NoRegisteredException;
 	public abstract boolean postVerifyAction(Account account) throws Exception;
-	
-	public void init(){
-		proxyCnctr = proxyFactory.getProxyConnector();
-	}
-	
-	public void deinit(){
-		if(proxyCnctr != null){
-			this.getProxyFactory().releaseProxy(proxyCnctr);
-		}
-	}
 	
 	public ProxyFactory getProxyFactory() {
 		return proxyFactory;
