@@ -168,9 +168,15 @@ public class SapoRegistrator extends IRegistrator{
 	@Override
 	public boolean postVerifyAction(Account account) throws Exception {
 		// TODO Implement blog refistration
-		getCookie(account);
-		userLogin(account);
-
+		boolean signed = false;
+		while(!signed){
+			signed = getCookie(account);
+		}
+		
+		signed = false;
+		while(!signed){
+			signed = userLogin(account);
+		}
 
 		return false;
 	}
@@ -187,9 +193,10 @@ public class SapoRegistrator extends IRegistrator{
 		return strBuf.toString();
 	}
 
-	private void userLogin(Account account) throws AuthorizationException{
+	private boolean userLogin(Account account) throws AuthorizationException{
 		//Get email for account
 		ProxyConnector proxyCnctr = null;
+		boolean signed = false;
 
 		try {
 			//post news
@@ -200,20 +207,22 @@ public class SapoRegistrator extends IRegistrator{
 			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
-			conn.setRequestMethod("GET");
+			conn.setRequestMethod("POST");
 			conn.setDoInput(true);
-			conn.setDoOutput(false);
+			conn.setDoOutput(true);
 
-			conn.setRequestProperty("Host", "login.sapo.pt");
-			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			conn.setRequestProperty("Accept-Language", "ru-RU");
 			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+			conn.setRequestProperty("Accept-Language", "ru-RU");
+			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
+			conn.setRequestProperty("Host", "login.sapo.pt");
+			conn.setRequestProperty("Content-Length","177");
 			conn.setRequestProperty("Cookie", account.cookiesToStr());
 
 			OutputStream os = conn.getOutputStream();
 			
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
-			params.add(new BasicNameValuePair(CSRF_IDENTIFIER_LABEL, ));
+			params.add(new BasicNameValuePair(CSRF_IDENTIFIER_LABEL, account.getExtraParam(CSRF_IDENTIFIER_LABEL)));
 			params.add(new BasicNameValuePair("SAPO_LOGIN_USERNAME", account.getLogin()));
 			params.add(new BasicNameValuePair("SAPO_LOGIN_PASSWORD", account.getPass()));
 			params.add(new BasicNameValuePair("sapo_widget_login_form_submit", ""));
@@ -226,8 +235,7 @@ public class SapoRegistrator extends IRegistrator{
 
 			//conn.getRequestProperties()
 			int code = conn.getResponseCode();
-
-			//read cookies
+			
 			Map<String,List<String>> cookies = conn.getHeaderFields();
 
 			if(cookies.get("Set-Cookie") != null){
@@ -236,11 +244,21 @@ public class SapoRegistrator extends IRegistrator{
 					account.addCookie(cookieOne);
 				}
 			}else{
-				throw new AuthorizationException("Registration failed for user: " + code);
+				throw new AuthorizationException("SignIn failed for user: " + code);
+			}
+
+			InputStream is = conn.getInputStream();
+
+			log.trace("HTML:-------------------------------------------------------------\r\n" 
+					+ is2srt(is)
+					+ "\r\nHTML:-------------------------------------------------------------\r\n");
+
+			if(is != null){
+				is.close();
 			}
 
 			log.debug("Responce code for submit form (" + account + "): " + code);
-
+			signed = true;
 		} catch (ClientProtocolException e) {
 			log.error("Error occured during posting news",e);
 		} catch (IOException e) {
@@ -253,12 +271,16 @@ public class SapoRegistrator extends IRegistrator{
 				this.getProxyFactory().releaseProxy(proxyCnctr);
 			}
 		}
+		
+		return signed;
 	}
 
-	private void getCookie(Account account) throws AuthorizationException{
+	private boolean getCookie(Account account) throws AuthorizationException{
 		//Get cookie for account
 		ProxyConnector proxyCnctr = null;
 		InputStream inputStreamPage = null;
+		
+		boolean signed = false;
 
 		try {
 			//post news
@@ -290,6 +312,7 @@ public class SapoRegistrator extends IRegistrator{
 				{
 					account.addCookie(cookieOne);
 				}
+				account.addCookie("lastUsedTab=sapo");
 			}else{
 				throw new AuthorizationException("Registration failed for user: " + code);
 			}
@@ -298,6 +321,7 @@ public class SapoRegistrator extends IRegistrator{
 			
 			TagNode csrf = null;
 			HtmlCleaner cleaner = new HtmlCleaner();
+			inputStreamPage = conn.getInputStream();
 
 			csrf = cleaner.clean(inputStreamPage,"UTF-8");
 
@@ -308,6 +332,8 @@ public class SapoRegistrator extends IRegistrator{
 			}else{
 				throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
 			}
+			
+			signed = true;
 		} catch (ClientProtocolException e) {
 			log.error("Error occured during getting cookies",e);
 		} catch (IOException e) {
@@ -322,6 +348,8 @@ public class SapoRegistrator extends IRegistrator{
 				this.getProxyFactory().releaseProxy(proxyCnctr);
 			}
 		}
+		
+		return signed;
 	}
 
 	private int submitLink(String link){
