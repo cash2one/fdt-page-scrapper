@@ -243,9 +243,9 @@ public class SapoRegistrator extends IRegistrator{
 				{
 					account.addCookie(cookieOne);
 				}
-			}else{
+			}/*else{
 				throw new AuthorizationException("SignIn failed for user: " + code);
-			}
+			}*/
 
 			InputStream is = conn.getInputStream();
 
@@ -256,6 +256,8 @@ public class SapoRegistrator extends IRegistrator{
 			if(is != null){
 				is.close();
 			}
+			
+			conn.disconnect();
 
 			log.debug("Responce code for submit form (" + account + "): " + code);
 			signed = true;
@@ -332,6 +334,8 @@ public class SapoRegistrator extends IRegistrator{
 			}else{
 				throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
 			}
+			
+			conn.disconnect();
 			
 			signed = true;
 		} catch (ClientProtocolException e) {
