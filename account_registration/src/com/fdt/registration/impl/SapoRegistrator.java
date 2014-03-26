@@ -169,13 +169,29 @@ public class SapoRegistrator extends IRegistrator{
 	public boolean postVerifyAction(Account account) throws Exception {
 		// TODO Implement blog refistration
 		boolean signed = false;
-		while(!signed){
-			signed = getCookie(account);
-		}
+		ProxyConnector proxyCnctr = null;
 		
-		signed = false;
-		while(!signed){
-			signed = userLogin(account);
+		//TODO Delete after test
+		account = new Account("w1394625826897l@mailblog.biz", "w1394625826897l@mailblog.biz", "w1394625826897l@mailblog.biz");
+		
+		try{
+			while(!signed){
+				if(proxyCnctr != null){
+					this.getProxyFactory().releaseProxy(proxyCnctr);
+				}
+				proxyCnctr = this.getProxyFactory().getProxyConnector();
+				signed = getCookie(account, proxyCnctr);
+			}
+
+			signed = false;
+			while(!signed){
+				signed = userLogin(account, proxyCnctr);
+			}
+
+		}finally{
+			if(proxyCnctr != null){
+				this.getProxyFactory().releaseProxy(proxyCnctr);
+			}
 		}
 
 		return false;
@@ -193,15 +209,12 @@ public class SapoRegistrator extends IRegistrator{
 		return strBuf.toString();
 	}
 
-	private boolean userLogin(Account account) throws AuthorizationException{
+	private boolean userLogin(Account account, ProxyConnector proxyCnctr) throws AuthorizationException{
 		//Get email for account
-		ProxyConnector proxyCnctr = null;
+		
 		boolean signed = false;
 
 		try {
-			//post news
-			proxyCnctr = this.getProxyFactory().getProxyConnector();
-
 			URL url = new URL(HTTPS_LOGIN_SAPO_PT_LOGIN_DO);
 			HttpsURLConnection.setFollowRedirects(false);
 			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
@@ -210,32 +223,36 @@ public class SapoRegistrator extends IRegistrator{
 			conn.setRequestMethod("POST");
 			conn.setDoInput(true);
 			conn.setDoOutput(true);
-
-			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
-			conn.setRequestProperty("Accept-Language", "ru-RU");
-			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
-			conn.setRequestProperty("Host", "login.sapo.pt");
-			conn.setRequestProperty("Content-Length","177");
-			conn.setRequestProperty("Cookie", account.cookiesToStr());
-
-			OutputStream os = conn.getOutputStream();
 			
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			params.add(new BasicNameValuePair(CSRF_IDENTIFIER_LABEL, account.getExtraParam(CSRF_IDENTIFIER_LABEL)));
 			params.add(new BasicNameValuePair("SAPO_LOGIN_USERNAME", account.getLogin()));
 			params.add(new BasicNameValuePair("SAPO_LOGIN_PASSWORD", account.getPass()));
+			params.add(new BasicNameValuePair("persistent","1"));
 			params.add(new BasicNameValuePair("sapo_widget_login_form_submit", ""));
 			
+			String queryParams = getQuery(params);
+
+			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+			conn.setRequestProperty("Accept-Language", "ru-RU");
+			conn.setRequestProperty("Referer","https://login.sapo.pt/");
+			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
+			conn.setRequestProperty("Host", "login.sapo.pt");
+			conn.setRequestProperty("Content-Length",String.valueOf(queryParams.length()));
+			conn.setRequestProperty("Cookie", account.cookiesToStr());
+
+			OutputStream os = conn.getOutputStream();
+
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-			writer.write(getQuery(this.getRegFormFactory().getRegFormParams(account)));
+			writer.write(queryParams);
 			writer.flush();
 			writer.close();
 			os.close();
 
 			//conn.getRequestProperties()
 			int code = conn.getResponseCode();
-			
+
 			Map<String,List<String>> cookies = conn.getHeaderFields();
 
 			if(cookies.get("Set-Cookie") != null){
@@ -256,7 +273,7 @@ public class SapoRegistrator extends IRegistrator{
 			if(is != null){
 				is.close();
 			}
-			
+
 			conn.disconnect();
 
 			log.debug("Responce code for submit form (" + account + "): " + code);
@@ -268,26 +285,17 @@ public class SapoRegistrator extends IRegistrator{
 		} catch (XPathExpressionException e) {
 			log.error("Error occured during posting news",e);
 		}
-		finally{
-			if(proxyCnctr != null){
-				this.getProxyFactory().releaseProxy(proxyCnctr);
-			}
-		}
-		
+
 		return signed;
 	}
 
-	private boolean getCookie(Account account) throws AuthorizationException{
+	private boolean getCookie(Account account, ProxyConnector proxyCnctr) throws AuthorizationException{
 		//Get cookie for account
-		ProxyConnector proxyCnctr = null;
 		InputStream inputStreamPage = null;
-		
+
 		boolean signed = false;
 
 		try {
-			//post news
-			proxyCnctr = this.getProxyFactory().getProxyConnector();
-
 			URL url = new URL(HTTPS_LOGIN_SAPO_PT);
 			HttpsURLConnection.setFollowRedirects(false);
 			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
@@ -320,7 +328,7 @@ public class SapoRegistrator extends IRegistrator{
 			}
 
 			log.debug("Responce code for submit form (" + account + "): " + code);
-			
+
 			TagNode csrf = null;
 			HtmlCleaner cleaner = new HtmlCleaner();
 			inputStreamPage = conn.getInputStream();
@@ -334,9 +342,9 @@ public class SapoRegistrator extends IRegistrator{
 			}else{
 				throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
 			}
-			
+
 			conn.disconnect();
-			
+
 			signed = true;
 		} catch (ClientProtocolException e) {
 			log.error("Error occured during getting cookies",e);
@@ -347,12 +355,7 @@ public class SapoRegistrator extends IRegistrator{
 		} catch (XPatherException e) {
 			log.error("Error occured during getting cookies",e);
 		}
-		finally{
-			if(proxyCnctr != null){
-				this.getProxyFactory().releaseProxy(proxyCnctr);
-			}
-		}
-		
+
 		return signed;
 	}
 
@@ -425,9 +428,12 @@ public class SapoRegistrator extends IRegistrator{
 			else
 				result.append("&");
 
-			result.append(URLEncoder.encode(pair.getName(), "UTF-8"));
+			/*result.append(URLEncoder.encode(pair.getName(), "UTF-8"));
 			result.append("=");
-			result.append(URLEncoder.encode(pair.getValue(), "UTF-8"));
+			result.append(URLEncoder.encode(pair.getValue(), "UTF-8"));*/
+			result.append(pair.getName());
+			result.append("=");
+			result.append(pair.getValue());
 		}
 
 		return result.toString();
