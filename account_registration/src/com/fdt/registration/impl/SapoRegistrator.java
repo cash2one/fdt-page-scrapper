@@ -216,7 +216,7 @@ public class SapoRegistrator extends IRegistrator{
 
 		try {
 			URL url = new URL(HTTPS_LOGIN_SAPO_PT_LOGIN_DO);
-			HttpsURLConnection.setFollowRedirects(false);
+			HttpsURLConnection.setFollowRedirects(true);
 			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
@@ -233,14 +233,14 @@ public class SapoRegistrator extends IRegistrator{
 			
 			String queryParams = getQuery(params);
 
-			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
-			conn.setRequestProperty("Accept-Language", "ru-RU");
-			conn.setRequestProperty("Referer","https://login.sapo.pt/");
-			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
-			conn.setRequestProperty("Host", "login.sapo.pt");
-			conn.setRequestProperty("Content-Length",String.valueOf(queryParams.length()));
-			conn.setRequestProperty("Cookie", account.cookiesToStr());
+			conn.addRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+			conn.addRequestProperty("Accept-Language", "ru-RU");
+			conn.addRequestProperty("Referer","https://login.sapo.pt/");
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.addRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
+			conn.addRequestProperty("Host", "login.sapo.pt");
+			conn.addRequestProperty("Content-Length",String.valueOf(queryParams.length()));
+			conn.addRequestProperty("Cookie", account.cookiesToStr());
 
 			OutputStream os = conn.getOutputStream();
 
@@ -428,12 +428,12 @@ public class SapoRegistrator extends IRegistrator{
 			else
 				result.append("&");
 
-			/*result.append(URLEncoder.encode(pair.getName(), "UTF-8"));
+			result.append(URLEncoder.encode(pair.getName(), "UTF-8"));
 			result.append("=");
-			result.append(URLEncoder.encode(pair.getValue(), "UTF-8"));*/
-			result.append(pair.getName());
+			result.append(URLEncoder.encode(pair.getValue(), "UTF-8"));
+			/*result.append(pair.getName());
 			result.append("=");
-			result.append(pair.getValue());
+			result.append(pair.getValue());*/
 		}
 
 		return result.toString();
