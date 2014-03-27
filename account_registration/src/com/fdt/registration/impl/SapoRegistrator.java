@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
 import java.net.Proxy.Type;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -16,6 +17,9 @@ import java.util.List;
 import java.util.Map;
 
 import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 import javax.xml.xpath.XPathExpressionException;
 
 import org.apache.http.NameValuePair;
@@ -41,6 +45,32 @@ public class SapoRegistrator extends IRegistrator{
 	private static final String HTTPS_LOGIN_SAPO_PT_LOGIN_DO = "https://login.sapo.pt/Login.do";
 	private static final String HTTPS_LOGIN_SAPO_PT = "https://login.sapo.pt/";
 	private static final Logger log = Logger.getLogger(SapoRegistrator.class);
+	
+	static {
+		//Code below needed for remove SSLHandshakeException during singOn login
+		// Create a trust manager that does not validate certificate chains
+		TrustManager[] trustAllCerts = new TrustManager[]
+				{new X509TrustManager() {
+					public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+						return null;
+					}
+
+					public void checkClientTrusted(java.security.cert.X509Certificate[] certs, String authType) {
+					}
+
+					public void checkServerTrusted(java.security.cert.X509Certificate[] certs, String authType) {
+					}
+				}};
+
+		// Install the all-trusting trust manager
+		try {
+			SSLContext sc = SSLContext.getInstance("SSL");
+			sc.init(null, trustAllCerts, new java.security.SecureRandom());
+			HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+		} catch (Exception e) {
+		}
+
+	}
 
 	@Override
 	public boolean register(Account account) throws NoRegisteredException{
@@ -187,6 +217,11 @@ public class SapoRegistrator extends IRegistrator{
 			while(!signed){
 				signed = userLogin(account, proxyCnctr);
 			}
+			
+			signed = false;
+			while(!signed){
+				signed = loadCreationBlogPage(account, proxyCnctr);
+			}
 
 		}finally{
 			if(proxyCnctr != null){
@@ -215,14 +250,17 @@ public class SapoRegistrator extends IRegistrator{
 		boolean signed = false;
 
 		try {
+			//proxyCnctr = new ProxyConnector("127.0.0.1", 8888);
 			URL url = new URL(HTTPS_LOGIN_SAPO_PT_LOGIN_DO);
-			HttpsURLConnection.setFollowRedirects(true);
-			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
+			HttpsURLConnection.setFollowRedirects(false);
+			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.HTTP.toString()));
+			
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
 			conn.setRequestMethod("POST");
 			conn.setDoInput(true);
 			conn.setDoOutput(true);
+			conn.setInstanceFollowRedirects(false);
 			
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			params.add(new BasicNameValuePair(CSRF_IDENTIFIER_LABEL, account.getExtraParam(CSRF_IDENTIFIER_LABEL)));
@@ -233,23 +271,115 @@ public class SapoRegistrator extends IRegistrator{
 			
 			String queryParams = getQuery(params);
 
-			conn.addRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
-			conn.addRequestProperty("Accept-Language", "ru-RU");
-			conn.addRequestProperty("Referer","https://login.sapo.pt/");
-			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			conn.addRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
-			conn.addRequestProperty("Host", "login.sapo.pt");
-			conn.addRequestProperty("Content-Length",String.valueOf(queryParams.length()));
-			conn.addRequestProperty("Cookie", account.cookiesToStr());
-
+			//conn.setRequestProperty("Host", "login.sapo.pt");
+			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+			conn.setRequestProperty("Accept-Language", "ru-RU");
+			conn.setRequestProperty("Referer","https://login.sapo.pt/");
+			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)"); 
+			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
+			conn.setRequestProperty("Connection", "Keep-Alive");
+			//conn.setRequestProperty("Content-Length",String.valueOf(queryParams.getBytes("UTF-8").length));
+			conn.setRequestProperty("Cookie", account.cookiesToStr());
+			
 			OutputStream os = conn.getOutputStream();
 
-			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			//BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os));
 			writer.write(queryParams);
 			writer.flush();
 			writer.close();
 			os.close();
+			
+			//conn.getRequestProperties()
+			int code = conn.getResponseCode();
+			
+			if(code != 302){
+				signed = false;
+			}else{
+				signed = true;
+			}
 
+			Map<String,List<String>> cookies = conn.getHeaderFields();
+
+			if(cookies.get("Set-Cookie") != null){
+				for(String cookieOne: cookies.get("Set-Cookie"))
+				{
+					account.addCookie(cookieOne);
+				}
+			}/*else{
+				throw new AuthorizationException("SignIn failed for user: " + code);
+			}*/
+
+			InputStream is = conn.getInputStream();
+
+			//get csrf_identifier
+			/*HtmlCleaner cleaner = new HtmlCleaner();
+			TagNode csrf = cleaner.clean(is,"UTF-8");
+			Object[] csrfIdnfr = csrf.evaluateXPath("//form/fieldset/input[@name]/@value");
+			if(csrfIdnfr.length > 0){
+				account.addExtraParam(CSRF_IDENTIFIER_LABEL, (String)csrfIdnfr[0]);
+			}else{
+				throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
+			}*/
+			
+			log.trace("HTML:-------------------------------------------------------------\r\n" 
+					+ is2srt(is)
+					+ "\r\nHTML:-------------------------------------------------------------\r\n");
+
+			if(is != null){
+				is.close();
+			}
+
+			conn.disconnect();
+
+			log.debug("Responce code for submit form (" + account + "): " + code);
+			
+		} catch (ClientProtocolException e) {
+			log.error("Error occured during sign in",e);
+			signed = false;
+		} catch (IOException e) {
+			log.error("Error occured during sign in",e);
+			signed = false;
+		} catch (XPathExpressionException e) {
+			log.error("Error occured during sign in",e);
+			signed = false;
+		} /*catch (XPatherException e) {
+			log.error("Error occured during sign in",e);
+			signed = false;
+		}*/
+
+		return signed;
+	}
+	
+	private boolean loadCreationBlogPage(Account account, ProxyConnector proxyCnctr) throws AuthorizationException{
+		//Get email for account
+		
+		boolean signed = false;
+
+		try {
+			
+			proxyCnctr = new ProxyConnector("127.0.0.1", 8888);
+			
+			URL url = new URL("http://blogs.sapo.pt/create.bml");
+			HttpURLConnection.setFollowRedirects(true);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxyCnctr.getConnect(Type.HTTP.toString()));
+			
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("GET");
+			conn.setDoInput(true);
+			conn.setDoOutput(false);
+			conn.setInstanceFollowRedirects(true);
+
+			//conn.setRequestProperty("Host", "login.sapo.pt");
+			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+			conn.setRequestProperty("Accept-Language", "ru-RU");
+			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)"); 
+			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
+			conn.setRequestProperty("Connection", "Keep-Alive");
+			//conn.setRequestProperty("Content-Length",String.valueOf(queryParams.getBytes("UTF-8").length));
+			conn.setRequestProperty("Cookie", account.cookiesToStr());
+			
 			//conn.getRequestProperties()
 			int code = conn.getResponseCode();
 
@@ -266,6 +396,16 @@ public class SapoRegistrator extends IRegistrator{
 
 			InputStream is = conn.getInputStream();
 
+			//get csrf_identifier
+			/*HtmlCleaner cleaner = new HtmlCleaner();
+			TagNode csrf = cleaner.clean(is,"UTF-8");
+			Object[] csrfIdnfr = csrf.evaluateXPath("//form/fieldset/input[@name]/@value");
+			if(csrfIdnfr.length > 0){
+				account.addExtraParam(CSRF_IDENTIFIER_LABEL, (String)csrfIdnfr[0]);
+			}else{
+				throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
+			}*/
+			
 			log.trace("HTML:-------------------------------------------------------------\r\n" 
 					+ is2srt(is)
 					+ "\r\nHTML:-------------------------------------------------------------\r\n");
@@ -277,14 +417,20 @@ public class SapoRegistrator extends IRegistrator{
 			conn.disconnect();
 
 			log.debug("Responce code for submit form (" + account + "): " + code);
-			signed = true;
+			
 		} catch (ClientProtocolException e) {
-			log.error("Error occured during posting news",e);
+			log.error("Error occured during sign in",e);
+			signed = false;
 		} catch (IOException e) {
-			log.error("Error occured during posting news",e);
+			log.error("Error occured during sign in",e);
+			signed = false;
 		} catch (XPathExpressionException e) {
-			log.error("Error occured during posting news",e);
-		}
+			log.error("Error occured during sign in",e);
+			signed = false;
+		} /*catch (XPatherException e) {
+			log.error("Error occured during sign in",e);
+			signed = false;
+		}*/
 
 		return signed;
 	}
@@ -298,17 +444,20 @@ public class SapoRegistrator extends IRegistrator{
 		try {
 			URL url = new URL(HTTPS_LOGIN_SAPO_PT);
 			HttpsURLConnection.setFollowRedirects(false);
-			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.SOCKS.toString()));
+			
+			//proxyCnctr = new ProxyConnector("127.0.0.1", 8888);
+			
+			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.HTTP.toString()));
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
 			conn.setRequestMethod("GET");
 			conn.setDoInput(true);
 			conn.setDoOutput(false);
 
-			conn.setRequestProperty("Host", "login.sapo.pt");
-			//conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			//conn.setRequestProperty("Accept-Language", "ru-RU");
-			//conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+			//conn.setRequestProperty("Host", "login.sapo.pt");
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU");
+			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
 
 
 			//conn.getRequestProperties()
@@ -323,6 +472,7 @@ public class SapoRegistrator extends IRegistrator{
 					account.addCookie(cookieOne);
 				}
 				account.addCookie("lastUsedTab=sapo");
+				account.addCookie("lastSessionTab=sapo");
 			}else{
 				throw new AuthorizationException("Registration failed for user: " + code);
 			}
