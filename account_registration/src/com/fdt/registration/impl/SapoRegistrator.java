@@ -367,7 +367,7 @@ public class SapoRegistrator extends IRegistrator{
 
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
-			conn.setRequestMethod("POST");
+			conn.setRequestMethod("GET");
 			conn.setDoInput(true);
 			conn.setDoOutput(false);
 			conn.setInstanceFollowRedirects(false);
