@@ -376,7 +376,6 @@ public class SapoRegistrator extends IRegistrator{
 			//conn.setRequestProperty("Host", "login.sapo.pt");
 			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
 			conn.setRequestProperty("Accept-Language", "ru-RU");
-			conn.setRequestProperty("Referer","https://login.sapo.pt/");
 			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)"); 
 			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
 			conn.setRequestProperty("Connection", "Keep-Alive");
