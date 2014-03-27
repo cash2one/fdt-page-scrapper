@@ -40,12 +40,13 @@ import com.fdt.scrapper.proxy.ProxyConnector;
 
 public class SapoRegistrator extends IRegistrator{
 
+	private static final String LOCATION = "Location";
 	private static final String CSRF_IDENTIFIER_LABEL = "csrf_identifier";
 	private static final String HTTPS_LOGIN_SAPO_PT_USER_REGISTER_DO = "https://login.sapo.pt/UserRegister.do";
-	private static final String HTTPS_LOGIN_SAPO_PT_LOGIN_DO = "https://login.sapo.pt/Login.do";
+	private static final String HTTPS_LOGIN_SAPO_PT_LOGIN_DO = "https://login.sapo.pt/Login.do?to=%2Fshibboleth-idp%2FSSO%3Fshire%3Dhttp%253A%252F%252Fblogs.sapo.pt%252FShibboleth.sso%252FSAML%252FArtifact%26time%3D1395929478%26target%3Dhttp%253A%252F%252Fblogs.sapo.pt%252Fcreate.bml%26providerId%3Dhttp%253A%252F%252Fblogs.sapo.pt&providerId=http%3A%2F%2Fblogs.sapo.pt";
 	private static final String HTTPS_LOGIN_SAPO_PT = "https://login.sapo.pt/";
 	private static final Logger log = Logger.getLogger(SapoRegistrator.class);
-	
+
 	static {
 		//Code below needed for remove SSLHandshakeException during singOn login
 		// Create a trust manager that does not validate certificate chains
@@ -200,10 +201,10 @@ public class SapoRegistrator extends IRegistrator{
 		// TODO Implement blog refistration
 		boolean signed = false;
 		ProxyConnector proxyCnctr = null;
-		
+
 		//TODO Delete after test
 		account = new Account("w1394625826897l@mailblog.biz", "w1394625826897l@mailblog.biz", "w1394625826897l@mailblog.biz");
-		
+
 		try{
 			while(!signed){
 				if(proxyCnctr != null){
@@ -217,12 +218,10 @@ public class SapoRegistrator extends IRegistrator{
 			while(!signed){
 				signed = userLogin(account, proxyCnctr);
 			}
-			
-			signed = false;
-			while(!signed){
-				signed = loadCreationBlogPage(account, proxyCnctr);
-			}
 
+			while(account.getExtraParam(LOCATION) != null){
+				followToRedirect(account, proxyCnctr);
+			}
 		}finally{
 			if(proxyCnctr != null){
 				this.getProxyFactory().releaseProxy(proxyCnctr);
@@ -246,7 +245,7 @@ public class SapoRegistrator extends IRegistrator{
 
 	private boolean userLogin(Account account, ProxyConnector proxyCnctr) throws AuthorizationException{
 		//Get email for account
-		
+
 		boolean signed = false;
 
 		try {
@@ -254,21 +253,21 @@ public class SapoRegistrator extends IRegistrator{
 			URL url = new URL(HTTPS_LOGIN_SAPO_PT_LOGIN_DO);
 			HttpsURLConnection.setFollowRedirects(false);
 			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.HTTP.toString()));
-			
+
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
 			conn.setRequestMethod("POST");
 			conn.setDoInput(true);
 			conn.setDoOutput(true);
 			conn.setInstanceFollowRedirects(false);
-			
+
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			params.add(new BasicNameValuePair(CSRF_IDENTIFIER_LABEL, account.getExtraParam(CSRF_IDENTIFIER_LABEL)));
 			params.add(new BasicNameValuePair("SAPO_LOGIN_USERNAME", account.getLogin()));
 			params.add(new BasicNameValuePair("SAPO_LOGIN_PASSWORD", account.getPass()));
 			params.add(new BasicNameValuePair("persistent","1"));
 			params.add(new BasicNameValuePair("sapo_widget_login_form_submit", ""));
-			
+
 			String queryParams = getQuery(params);
 
 			//conn.setRequestProperty("Host", "login.sapo.pt");
@@ -280,7 +279,7 @@ public class SapoRegistrator extends IRegistrator{
 			conn.setRequestProperty("Connection", "Keep-Alive");
 			//conn.setRequestProperty("Content-Length",String.valueOf(queryParams.getBytes("UTF-8").length));
 			conn.setRequestProperty("Cookie", account.cookiesToStr());
-			
+
 			OutputStream os = conn.getOutputStream();
 
 			//BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
@@ -289,26 +288,31 @@ public class SapoRegistrator extends IRegistrator{
 			writer.flush();
 			writer.close();
 			os.close();
-			
+
 			//conn.getRequestProperties()
 			int code = conn.getResponseCode();
-			
+
 			if(code != 302){
 				signed = false;
 			}else{
 				signed = true;
 			}
 
-			Map<String,List<String>> cookies = conn.getHeaderFields();
+			Map<String,List<String>> headers = conn.getHeaderFields();
 
-			if(cookies.get("Set-Cookie") != null){
-				for(String cookieOne: cookies.get("Set-Cookie"))
+			if(headers.get("Set-Cookie") != null){
+				for(String cookieOne: headers.get("Set-Cookie"))
 				{
 					account.addCookie(cookieOne);
 				}
-			}/*else{
-				throw new AuthorizationException("SignIn failed for user: " + code);
-			}*/
+			}
+
+			if(headers.get(LOCATION) != null){
+				for(String cookieOne: headers.get(LOCATION))
+				{
+					account.addExtraParam(LOCATION, cookieOne);
+				}
+			}
 
 			InputStream is = conn.getInputStream();
 
@@ -321,7 +325,7 @@ public class SapoRegistrator extends IRegistrator{
 			}else{
 				throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
 			}*/
-			
+
 			log.trace("HTML:-------------------------------------------------------------\r\n" 
 					+ is2srt(is)
 					+ "\r\nHTML:-------------------------------------------------------------\r\n");
@@ -333,7 +337,7 @@ public class SapoRegistrator extends IRegistrator{
 			conn.disconnect();
 
 			log.debug("Responce code for submit form (" + account + "): " + code);
-			
+
 		} catch (ClientProtocolException e) {
 			log.error("Error occured during sign in",e);
 			signed = false;
@@ -350,20 +354,116 @@ public class SapoRegistrator extends IRegistrator{
 
 		return signed;
 	}
-	
-	private boolean loadCreationBlogPage(Account account, ProxyConnector proxyCnctr) throws AuthorizationException{
+
+	private boolean followToRedirect(Account account, ProxyConnector proxyCnctr) throws AuthorizationException{
 		//Get email for account
-		
 		boolean signed = false;
 
 		try {
+			//proxyCnctr = new ProxyConnector("127.0.0.1", 8888);
+			URL url = new URL(account.getExtraParam(LOCATION));
+			HttpURLConnection.setFollowRedirects(false);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxyCnctr.getConnect(Type.HTTP.toString()));
+
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("POST");
+			conn.setDoInput(true);
+			conn.setDoOutput(false);
+			conn.setInstanceFollowRedirects(false);
+
+
+			//conn.setRequestProperty("Host", "login.sapo.pt");
+			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+			conn.setRequestProperty("Accept-Language", "ru-RU");
+			conn.setRequestProperty("Referer","https://login.sapo.pt/");
+			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)"); 
+			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
+			conn.setRequestProperty("Connection", "Keep-Alive");
+			//conn.setRequestProperty("Content-Length",String.valueOf(queryParams.getBytes("UTF-8").length));
+			conn.setRequestProperty("Cookie", account.cookiesToStr());
+
+			//conn.getRequestProperties()
+			int code = conn.getResponseCode();
+
+			if(code != 302){
+				signed = false;
+			}else{
+				signed = true;
+			}
+
+			Map<String,List<String>> headers = conn.getHeaderFields();
+
+			if(headers.get("Set-Cookie") != null){
+				for(String cookieOne: headers.get("Set-Cookie"))
+				{
+					account.addCookie(cookieOne);
+				}
+			}
+
+			//account.addExtraParam(LOCATION, null);
 			
+			if(headers.get(LOCATION) != null){
+				for(String cookieOne: headers.get(LOCATION))
+				{
+					account.addExtraParam(LOCATION, cookieOne);
+				}
+			}
+
+			InputStream is = conn.getInputStream();
+
+			//get csrf_identifier
+			/*HtmlCleaner cleaner = new HtmlCleaner();
+					TagNode csrf = cleaner.clean(is,"UTF-8");
+					Object[] csrfIdnfr = csrf.evaluateXPath("//form/fieldset/input[@name]/@value");
+					if(csrfIdnfr.length > 0){
+						account.addExtraParam(CSRF_IDENTIFIER_LABEL, (String)csrfIdnfr[0]);
+					}else{
+						throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
+					}*/
+
+			log.trace("HTML:-------------------------------------------------------------\r\n" 
+					+ is2srt(is)
+					+ "\r\nHTML:-------------------------------------------------------------\r\n");
+
+			if(is != null){
+				is.close();
+			}
+
+			conn.disconnect();
+
+			log.debug("Responce code for submit form (" + account + "): " + code);
+
+		} catch (ClientProtocolException e) {
+			log.error("Error occured during sign in",e);
+			signed = false;
+		} catch (IOException e) {
+			log.error("Error occured during sign in",e);
+			signed = false;
+		} catch (XPathExpressionException e) {
+			log.error("Error occured during sign in",e);
+			signed = false;
+		} /*catch (XPatherException e) {
+					log.error("Error occured during sign in",e);
+					signed = false;
+				}*/
+
+		return signed;
+	}
+
+	private boolean loadCreationBlogPage(Account account, ProxyConnector proxyCnctr) throws AuthorizationException{
+		//Get email for account
+
+		boolean signed = false;
+
+		try {
+
 			proxyCnctr = new ProxyConnector("127.0.0.1", 8888);
-			
+
 			URL url = new URL("http://blogs.sapo.pt/create.bml");
 			HttpURLConnection.setFollowRedirects(true);
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxyCnctr.getConnect(Type.HTTP.toString()));
-			
+
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
 			conn.setRequestMethod("GET");
@@ -379,7 +479,7 @@ public class SapoRegistrator extends IRegistrator{
 			conn.setRequestProperty("Connection", "Keep-Alive");
 			//conn.setRequestProperty("Content-Length",String.valueOf(queryParams.getBytes("UTF-8").length));
 			conn.setRequestProperty("Cookie", account.cookiesToStr());
-			
+
 			//conn.getRequestProperties()
 			int code = conn.getResponseCode();
 
@@ -405,7 +505,7 @@ public class SapoRegistrator extends IRegistrator{
 			}else{
 				throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
 			}*/
-			
+
 			log.trace("HTML:-------------------------------------------------------------\r\n" 
 					+ is2srt(is)
 					+ "\r\nHTML:-------------------------------------------------------------\r\n");
@@ -417,7 +517,7 @@ public class SapoRegistrator extends IRegistrator{
 			conn.disconnect();
 
 			log.debug("Responce code for submit form (" + account + "): " + code);
-			
+
 		} catch (ClientProtocolException e) {
 			log.error("Error occured during sign in",e);
 			signed = false;
@@ -444,9 +544,9 @@ public class SapoRegistrator extends IRegistrator{
 		try {
 			URL url = new URL(HTTPS_LOGIN_SAPO_PT);
 			HttpsURLConnection.setFollowRedirects(false);
-			
+
 			//proxyCnctr = new ProxyConnector("127.0.0.1", 8888);
-			
+
 			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxyCnctr.getConnect(Type.HTTP.toString()));
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
