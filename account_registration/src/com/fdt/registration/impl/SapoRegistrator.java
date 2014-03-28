@@ -49,6 +49,7 @@ public class SapoRegistrator extends IRegistrator{
 
 	private static final String BLOG_ID = "BLOG_ID";
 	private static final String CAPTCHA_URL = "CAPTCHA_URL";
+	private static final String CAPTCHA_VAL = "CAPTCHA_VAL";
 	private static final String LOCATION = "Location";
 	private static final String CSRF_IDENTIFIER_LABEL = "csrf_identifier";
 	private static final String HTTPS_LOGIN_SAPO_PT_USER_REGISTER_DO = "https://login.sapo.pt/UserRegister.do";
@@ -436,8 +437,14 @@ public class SapoRegistrator extends IRegistrator{
 				HtmlCleaner cleaner = new HtmlCleaner();
 				TagNode csrf = cleaner.clean(is,"UTF-8");
 				Object[] csrfIdnfr = csrf.evaluateXPath("//form[@action='create.bml']//img/@src");
+				Object[] captchaValue = csrf.evaluateXPath("//input[@name='captcha_chal']/@value");
 				if(csrfIdnfr.length > 0){
-					account.addExtraParam(CAPTCHA_URL, "http://http://blogs.sapo.pt" + (String)csrfIdnfr[0]);
+					account.addExtraParam(CAPTCHA_URL, "http://blogs.sapo.pt" + (String)csrfIdnfr[0]);
+				}else{
+					throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
+				}
+				if(captchaValue.length > 0){
+					account.addExtraParam(CAPTCHA_VAL, (String)captchaValue[0]);
 				}else{
 					throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
 				}
@@ -478,20 +485,25 @@ public class SapoRegistrator extends IRegistrator{
 		boolean signed = false;
 
 		try {
+
+
 			AntigateConfig config = new DefaultAntigateConfig();
 			config.setKey("8119acd015a60fa9e6fa69cc31727fcd");
 			AntigateFacade antigate = new AntigateFacade(config);
-			SendFileResponse sendFileResponse = antigate.sendFile(new URL(account.getExtraParam(CAPTCHA_URL)));
-			String captchaID = sendFileResponse.getCaptchaID();
-			Thread.sleep(15000L);
-			GetCaptchaStatusResponse getCaptchaStatusResponse = antigate.getCaptchaStatus(captchaID);
-			
-			while(getCaptchaStatusResponse.getCaptchaStatus() != AntigateCaptchaStatus.OK){
-				Thread.sleep(5000L);
+			GetCaptchaStatusResponse getCaptchaStatusResponse = null;
+			while(getCaptchaStatusResponse == null || getCaptchaStatusResponse.getCaptchaStatus() != AntigateCaptchaStatus.OK){
+				try{
+					SendFileResponse sendFileResponse = antigate.sendFile(new URL(account.getExtraParam(CAPTCHA_URL)));
+					String captchaID = sendFileResponse.getCaptchaID();
+					Thread.sleep(15000L);
+					getCaptchaStatusResponse = antigate.getCaptchaStatus(captchaID);
+				}catch(AntigateException e){
+					log.error("Error occured during antigate using",e);
+				}
 			}
-			
-			getCaptchaStatusResponse.getCaptchaWord();
-			
+
+			String captchaAnswer = getCaptchaStatusResponse.getCaptchaWord();
+
 			//create blog
 			URL url = new URL("http://blogs.sapo.pt/create.bml");
 			HttpURLConnection.setFollowRedirects(false);
@@ -505,12 +517,19 @@ public class SapoRegistrator extends IRegistrator{
 			conn.setInstanceFollowRedirects(false);
 
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
-			params.add(new BasicNameValuePair(CSRF_IDENTIFIER_LABEL, account.getExtraParam(CSRF_IDENTIFIER_LABEL)));
-			params.add(new BasicNameValuePair("SAPO_LOGIN_USERNAME", account.getLogin()));
-			params.add(new BasicNameValuePair("SAPO_LOGIN_PASSWORD", account.getPass()));
-			params.add(new BasicNameValuePair("persistent","1"));
-			params.add(new BasicNameValuePair("sapo_widget_login_form_submit", ""));
-
+			params.add(new BasicNameValuePair("mode", "submit"));
+			params.add(new BasicNameValuePair("code", ""));
+			params.add(new BasicNameValuePair("ssl", ""));
+			//new blog id
+			params.add(new BasicNameValuePair("user", account.getLogin().split("@")[0]));
+			params.add(new BasicNameValuePair("agree_tos", "1"));
+			//captcha answer
+			params.add(new BasicNameValuePair("answer", captchaAnswer));
+			//captcha id
+			params.add(new BasicNameValuePair("captcha_chal", account.getExtraParam(CAPTCHA_VAL)));
+			params.add(new BasicNameValuePair("", "ok &raquo;"));
+			params.add(new BasicNameValuePair("_fp", ""));
+			
 			String queryParams = getQuery(params);
 
 			//conn.setRequestProperty("Host", "login.sapo.pt");
@@ -536,9 +555,10 @@ public class SapoRegistrator extends IRegistrator{
 
 			log.debug("Responce code for submit form (" + account + "): " + code);
 
-			TagNode csrf = null;
+			InputStream is = conn.getInputStream();
+			/*TagNode csrf = null;
 			HtmlCleaner cleaner = new HtmlCleaner();
-			InputStream inputStreamPage = conn.getInputStream();
+			
 
 			csrf = cleaner.clean(inputStreamPage,"UTF-8");
 
@@ -548,6 +568,14 @@ public class SapoRegistrator extends IRegistrator{
 				account.addExtraParam(BLOG_ID, (String)csrfIdnfr[0]);
 			}else{
 				throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
+			}*/
+			
+			log.trace("HTML:-------------------------------------------------------------\r\n" 
+					+ is2srt(is)
+					+ "\r\nHTML:-------------------------------------------------------------\r\n");
+
+			if(is != null){
+				is.close();
 			}
 
 			conn.disconnect();
@@ -560,19 +588,16 @@ public class SapoRegistrator extends IRegistrator{
 		} catch (IOException e) {
 			log.error("Error occured during sign in",e);
 			signed = false;
-		} catch (AntigateException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InterruptedException e) {
+		}  catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (XPathExpressionException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (XPatherException e) {
+		} /*catch (XPatherException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (Exception e) {
+		}*/ catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
