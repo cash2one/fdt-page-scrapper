@@ -33,7 +33,6 @@ import org.jsoup.select.Elements;
 import com.fdt.scrapper.task.Constants;
 import com.fdt.scrapper.task.NewsTask;
 import com.fdt.scrapper.task.Snippet;
-import com.sun.org.apache.bcel.internal.generic.ACONST_NULL;
 
 /**
  *

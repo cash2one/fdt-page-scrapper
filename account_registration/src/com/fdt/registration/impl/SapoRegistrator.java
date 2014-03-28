@@ -30,6 +30,13 @@ import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.TagNode;
 import org.htmlcleaner.XPatherException;
 
+import com.antigate.AntigateFacade;
+import com.antigate.config.AntigateConfig;
+import com.antigate.config.DefaultAntigateConfig;
+import com.antigate.exception.AntigateException;
+import com.antigate.response.AntigateCaptchaStatus;
+import com.antigate.responses.GetCaptchaStatusResponse;
+import com.antigate.responses.SendFileResponse;
 import com.fdt.registration.IRegistrator;
 import com.fdt.registration.account.Account;
 import com.fdt.registration.email.Email;
@@ -40,6 +47,8 @@ import com.fdt.scrapper.proxy.ProxyConnector;
 
 public class SapoRegistrator extends IRegistrator{
 
+	private static final String BLOG_ID = "BLOG_ID";
+	private static final String CAPTCHA_URL = "CAPTCHA_URL";
 	private static final String LOCATION = "Location";
 	private static final String CSRF_IDENTIFIER_LABEL = "csrf_identifier";
 	private static final String HTTPS_LOGIN_SAPO_PT_USER_REGISTER_DO = "https://login.sapo.pt/UserRegister.do";
@@ -222,6 +231,10 @@ public class SapoRegistrator extends IRegistrator{
 			while(account.getExtraParam(LOCATION) != null){
 				followToRedirect(account, proxyCnctr);
 			}
+
+			//Creation blog 
+			createBlog(account, proxyCnctr);
+			//TODO Save account data here
 		}finally{
 			if(proxyCnctr != null){
 				this.getProxyFactory().releaseProxy(proxyCnctr);
@@ -400,8 +413,15 @@ public class SapoRegistrator extends IRegistrator{
 				}
 			}
 
-			//account.addExtraParam(LOCATION, null);
-			
+			//TODO Check for session cookie
+			String sapoSession = account.isCookieContained("shibsession");
+			if(sapoSession != null){
+				account.cleanCookieArray();
+				account.addCookie(sapoSession);
+			}
+
+			account.addExtraParam(LOCATION, null);
+
 			if(headers.get(LOCATION) != null){
 				for(String cookieOne: headers.get(LOCATION))
 				{
@@ -411,15 +431,17 @@ public class SapoRegistrator extends IRegistrator{
 
 			InputStream is = conn.getInputStream();
 
-			//get csrf_identifier
-			/*HtmlCleaner cleaner = new HtmlCleaner();
-					TagNode csrf = cleaner.clean(is,"UTF-8");
-					Object[] csrfIdnfr = csrf.evaluateXPath("//form/fieldset/input[@name]/@value");
-					if(csrfIdnfr.length > 0){
-						account.addExtraParam(CSRF_IDENTIFIER_LABEL, (String)csrfIdnfr[0]);
-					}else{
-						throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
-					}*/
+			//find capcha value
+			if(sapoSession != null && account.getExtraParam(LOCATION) == null){
+				HtmlCleaner cleaner = new HtmlCleaner();
+				TagNode csrf = cleaner.clean(is,"UTF-8");
+				Object[] csrfIdnfr = csrf.evaluateXPath("//form[@action='create.bml']//img/@src");
+				if(csrfIdnfr.length > 0){
+					account.addExtraParam(CAPTCHA_URL, "http://http://blogs.sapo.pt" + (String)csrfIdnfr[0]);
+				}else{
+					throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
+				}
+			}
 
 			log.trace("HTML:-------------------------------------------------------------\r\n" 
 					+ is2srt(is)
@@ -442,75 +464,90 @@ public class SapoRegistrator extends IRegistrator{
 		} catch (XPathExpressionException e) {
 			log.error("Error occured during sign in",e);
 			signed = false;
-		} /*catch (XPatherException e) {
-					log.error("Error occured during sign in",e);
-					signed = false;
-				}*/
+		} catch (XPatherException e) {
+			log.error("Error occured during sign in",e);
+			signed = false;
+		}
 
 		return signed;
 	}
 
-	private boolean loadCreationBlogPage(Account account, ProxyConnector proxyCnctr) throws AuthorizationException{
+	private boolean createBlog(Account account, ProxyConnector proxyCnctr) throws AuthorizationException{
 		//Get email for account
 
 		boolean signed = false;
 
 		try {
-
-			proxyCnctr = new ProxyConnector("127.0.0.1", 8888);
-
+			AntigateConfig config = new DefaultAntigateConfig();
+			config.setKey("8119acd015a60fa9e6fa69cc31727fcd");
+			AntigateFacade antigate = new AntigateFacade(config);
+			SendFileResponse sendFileResponse = antigate.sendFile(new URL(account.getExtraParam(CAPTCHA_URL)));
+			String captchaID = sendFileResponse.getCaptchaID();
+			Thread.sleep(15000L);
+			GetCaptchaStatusResponse getCaptchaStatusResponse = antigate.getCaptchaStatus(captchaID);
+			
+			while(getCaptchaStatusResponse.getCaptchaStatus() != AntigateCaptchaStatus.OK){
+				Thread.sleep(5000L);
+			}
+			
+			getCaptchaStatusResponse.getCaptchaWord();
+			
+			//create blog
 			URL url = new URL("http://blogs.sapo.pt/create.bml");
-			HttpURLConnection.setFollowRedirects(true);
+			HttpURLConnection.setFollowRedirects(false);
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxyCnctr.getConnect(Type.HTTP.toString()));
 
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
-			conn.setRequestMethod("GET");
+			conn.setRequestMethod("POST");
 			conn.setDoInput(true);
-			conn.setDoOutput(false);
-			conn.setInstanceFollowRedirects(true);
+			conn.setDoOutput(true);
+			conn.setInstanceFollowRedirects(false);
+
+			List<NameValuePair> params = new ArrayList<NameValuePair>();
+			params.add(new BasicNameValuePair(CSRF_IDENTIFIER_LABEL, account.getExtraParam(CSRF_IDENTIFIER_LABEL)));
+			params.add(new BasicNameValuePair("SAPO_LOGIN_USERNAME", account.getLogin()));
+			params.add(new BasicNameValuePair("SAPO_LOGIN_PASSWORD", account.getPass()));
+			params.add(new BasicNameValuePair("persistent","1"));
+			params.add(new BasicNameValuePair("sapo_widget_login_form_submit", ""));
+
+			String queryParams = getQuery(params);
 
 			//conn.setRequestProperty("Host", "login.sapo.pt");
 			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
 			conn.setRequestProperty("Accept-Language", "ru-RU");
+			conn.setRequestProperty("Referer","http://blogs.sapo.pt/create.bml");
 			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)"); 
 			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded"); 
 			conn.setRequestProperty("Connection", "Keep-Alive");
-			//conn.setRequestProperty("Content-Length",String.valueOf(queryParams.getBytes("UTF-8").length));
 			conn.setRequestProperty("Cookie", account.cookiesToStr());
+
+			OutputStream os = conn.getOutputStream();
+
+			//BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os));
+			writer.write(queryParams);
+			writer.flush();
+			writer.close();
+			os.close();
 
 			//conn.getRequestProperties()
 			int code = conn.getResponseCode();
 
-			Map<String,List<String>> cookies = conn.getHeaderFields();
+			log.debug("Responce code for submit form (" + account + "): " + code);
 
-			if(cookies.get("Set-Cookie") != null){
-				for(String cookieOne: cookies.get("Set-Cookie"))
-				{
-					account.addCookie(cookieOne);
-				}
-			}/*else{
-				throw new AuthorizationException("SignIn failed for user: " + code);
-			}*/
+			TagNode csrf = null;
+			HtmlCleaner cleaner = new HtmlCleaner();
+			InputStream inputStreamPage = conn.getInputStream();
 
-			InputStream is = conn.getInputStream();
+			csrf = cleaner.clean(inputStreamPage,"UTF-8");
 
-			//get csrf_identifier
-			/*HtmlCleaner cleaner = new HtmlCleaner();
-			TagNode csrf = cleaner.clean(is,"UTF-8");
-			Object[] csrfIdnfr = csrf.evaluateXPath("//form/fieldset/input[@name]/@value");
+			Object[] csrfIdnfr = csrf.evaluateXPath("//div[@id='blogID']/strong/text()");
+
 			if(csrfIdnfr.length > 0){
-				account.addExtraParam(CSRF_IDENTIFIER_LABEL, (String)csrfIdnfr[0]);
+				account.addExtraParam(BLOG_ID, (String)csrfIdnfr[0]);
 			}else{
 				throw new AuthorizationException("Can't getting params '"+CSRF_IDENTIFIER_LABEL+"'");
-			}*/
-
-			log.trace("HTML:-------------------------------------------------------------\r\n" 
-					+ is2srt(is)
-					+ "\r\nHTML:-------------------------------------------------------------\r\n");
-
-			if(is != null){
-				is.close();
 			}
 
 			conn.disconnect();
@@ -523,13 +560,22 @@ public class SapoRegistrator extends IRegistrator{
 		} catch (IOException e) {
 			log.error("Error occured during sign in",e);
 			signed = false;
+		} catch (AntigateException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		} catch (XPathExpressionException e) {
-			log.error("Error occured during sign in",e);
-			signed = false;
-		} /*catch (XPatherException e) {
-			log.error("Error occured during sign in",e);
-			signed = false;
-		}*/
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (XPatherException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
 
 		return signed;
 	}

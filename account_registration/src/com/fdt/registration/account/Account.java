@@ -74,6 +74,15 @@ public class Account {
 	public void cleanCookieArray(){
 		this.cookiesArray.clear();
 	}
+	
+	public String isCookieContained(String cookie){
+		for(String cookieStr : cookiesArray){
+			if(cookieStr.contains(cookie)){
+				return cookieStr;
+			}
+		}
+		return null;
+	}
 
 	public String cookiesToStr(){
 		StringBuilder strBld = new StringBuilder();

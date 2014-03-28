@@ -23,5 +23,8 @@
 	<classpathentry kind="var" path="FDT_LIBS/org.springframework.jdbc-3.0.3.RELEASE.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/org.springframework.transaction-3.0.3.RELEASE.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/log4j-1.2.15.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/antigate-java-api-master"/>
+	<classpathentry kind="var" path="FDT_LIBS/antigate-java-api-master.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/apache-mime4j-0.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
