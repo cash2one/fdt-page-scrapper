@@ -213,7 +213,7 @@ public class SapoRegistrator extends IRegistrator{
 		ProxyConnector proxyCnctr = null;
 
 		//TODO Delete after test
-		account = new Account("w1394625826897l@mailblog.biz", "w1394625826897l@mailblog.biz", "w1394625826897l@mailblog.biz");
+		account = new Account("d1394635168961z@mailblog.biz", "d1394635168961z@mailblog.biz", "d1394635168961z@mailblog.biz");
 
 		try{
 			while(!signed){
@@ -233,6 +233,8 @@ public class SapoRegistrator extends IRegistrator{
 				followToRedirect(account, proxyCnctr);
 			}
 
+			//get cookies for blog creation
+			getCookieCreation(account, proxyCnctr);
 			//Creation blog 
 			createBlog(account, proxyCnctr);
 			//TODO Save account data here
@@ -485,8 +487,7 @@ public class SapoRegistrator extends IRegistrator{
 		boolean signed = false;
 
 		try {
-
-
+			proxyCnctr = new ProxyConnector("127.0.0.1", 8888);
 			AntigateConfig config = new DefaultAntigateConfig();
 			config.setKey("8119acd015a60fa9e6fa69cc31727fcd");
 			AntigateFacade antigate = new AntigateFacade(config);
@@ -676,6 +677,61 @@ public class SapoRegistrator extends IRegistrator{
 			log.error("Error occured during getting cookies",e);
 		}
 
+		return signed;
+	}
+	
+	private boolean getCookieCreation(Account account, ProxyConnector proxyCnctr) throws AuthorizationException{
+		//Get cookie for account
+		InputStream inputStreamPage = null;
+
+		boolean signed = false;
+
+		try {
+			URL url = new URL("http://blogs.sapo.pt/create.bml");
+			HttpURLConnection.setFollowRedirects(false);
+
+			//proxyCnctr = new ProxyConnector("127.0.0.1", 8888);
+
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxyCnctr.getConnect(Type.HTTP.toString()));
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("GET");
+			conn.setDoInput(true);
+			conn.setDoOutput(false);
+
+			//conn.setRequestProperty("Host", "login.sapo.pt");
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU");
+			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+
+
+			//conn.getRequestProperties()
+			int code = conn.getResponseCode();
+
+			//read cookies
+			Map<String,List<String>> cookies = conn.getHeaderFields();
+
+			if(cookies.get("Set-Cookie") != null){
+				for(String cookieOne: cookies.get("Set-Cookie"))
+				{
+					account.addCookie(cookieOne);
+				}
+			}else{
+				throw new AuthorizationException("Registration failed for user: " + code);
+			}
+
+			log.debug("Responce code for submit form (" + account + "): " + code);
+
+			conn.disconnect();
+
+			signed = true;
+		} catch (ClientProtocolException e) {
+			log.error("Error occured during getting cookies",e);
+		} catch (IOException e) {
+			log.error("Error occured during getting cookies",e);
+		} catch (XPathExpressionException e) {
+			log.error("Error occured during getting cookies",e);
+		} 
 		return signed;
 	}
 
