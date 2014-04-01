@@ -522,7 +522,7 @@ public class SapoRegistrator extends IRegistrator{
 			params.add(new BasicNameValuePair("code", ""));
 			params.add(new BasicNameValuePair("ssl", ""));
 			//new blog id
-			params.add(new BasicNameValuePair("user", account.getLogin().split("@")[0]));
+			params.add(new BasicNameValuePair("user", account.getLogin().split("@")[0] + System.currentTimeMillis()));
 			params.add(new BasicNameValuePair("agree_tos", "1"));
 			//captcha answer
 			params.add(new BasicNameValuePair("answer", captchaAnswer));
@@ -690,7 +690,7 @@ public class SapoRegistrator extends IRegistrator{
 			URL url = new URL("http://blogs.sapo.pt/create.bml");
 			HttpURLConnection.setFollowRedirects(false);
 
-			//proxyCnctr = new ProxyConnector("127.0.0.1", 8888);
+			proxyCnctr = new ProxyConnector("127.0.0.1", 8888);
 
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxyCnctr.getConnect(Type.HTTP.toString()));
 			conn.setReadTimeout(60000);
@@ -698,11 +698,14 @@ public class SapoRegistrator extends IRegistrator{
 			conn.setRequestMethod("GET");
 			conn.setDoInput(true);
 			conn.setDoOutput(false);
+			conn.setFollowRedirects(false);
 
 			//conn.setRequestProperty("Host", "login.sapo.pt");
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			conn.setRequestProperty("Accept-Language", "ru-RU");
 			conn.setRequestProperty("Accept", "text/html, application/xhtml+xml, */*");
+			conn.setRequestProperty("Proxy-Connection", "");
+			conn.setRequestProperty("Cookie", account.cookiesToStr());
 
 
 			//conn.getRequestProperties()
@@ -716,8 +719,17 @@ public class SapoRegistrator extends IRegistrator{
 				{
 					account.addCookie(cookieOne);
 				}
-			}else{
+			}/*else{
 				throw new AuthorizationException("Registration failed for user: " + code);
+			}*/
+			InputStream is = conn.getInputStream();
+			
+			log.trace("HTML:-------------------------------------------------------------\r\n" 
+					+ is2srt(is)
+					+ "\r\nHTML:-------------------------------------------------------------\r\n");
+
+			if(is != null){
+				is.close();
 			}
 
 			log.debug("Responce code for submit form (" + account + "): " + code);
