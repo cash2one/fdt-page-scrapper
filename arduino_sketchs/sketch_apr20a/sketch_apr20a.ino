@@ -32,7 +32,7 @@ int symbolRusSpace[8][5] = {{0,0,0,0,0},
                             {0,0,0,0,0},
                             {0,0,0,0,0}};
 
-int symbolRusA[8][5] = {{0,1,1,1,0},
+int symbolRusA[8][5] = {{0,2,2,2,0},
                         {1,0,0,0,1},
                         {1,0,0,0,1},
                         {1,0,0,0,1},
@@ -41,13 +41,23 @@ int symbolRusA[8][5] = {{0,1,1,1,0},
                         {1,0,0,0,1},
                         {1,0,0,0,1}};
                         
+int symbolRusB[8][5] = {{1,1,1,1,0},
+                        {1,0,0,0,0},
+                        {1,0,0,0,0},
+                        {1,0,0,0,0},
+                        {1,1,1,1,1},
+                        {1,0,0,0,1},
+                        {1,0,0,0,1},
+                        {1,1,1,1,1}};
+                        
 struct alfabetEntry entryA = {'A',5,8,(int**)symbolRusA};
+struct alfabetEntry entryB = {'B',5,8,(int**)symbolRusB};
 struct alfabetEntry entrySpace = {' ',5,8,(int**)symbolRusSpace};
 
-alfabetEntry alfabetList[] = {entryA, entrySpace};
-int alfabetListLenght = 2;
+alfabetEntry alfabetList[] = {entryA, entryB, entrySpace};
+int alfabetListLenght = 3;
 
-char workString[] = "AAAAA A A A A";
+char workString[] = "A B A B A B A";
 int curCharIndex = 0;
 int curCharPartIndex = 0;
 
@@ -97,6 +107,8 @@ void setup() {
   //memset(showMatrix, 0, sizeof(int)*SHOW_MATRIX_HEIGHT*SHOW_MATRIX_LENGHT);
   zeroingShwMtrx();
   //showMatrix[3][3] = 1;
+  //showMatrix[1][1] = 1;
+  //showMatrix[2][2] = 1;
 }
 
 void loop() {
@@ -116,16 +128,16 @@ void loop() {
   
   //frameCycle(5);
   
-  //shwMtrxPnrt++;
   if(shwMtrxPnrt == SHOW_MATRIX_LENGHT){
     shwMtrxPnrt = 0;
   }
   
   addColumnToShwMtrx();
+  shwMtrxPnrt++;
   printShowMatrix(2,2,strip.Color(10, 0, 0));
- 
+  
   strip.show();
-  delay(1000);
+  delay(100);
 }
 
 int getPixelNumber(int x, int y){
@@ -165,16 +177,16 @@ void addColumnToShwMtrx(){
     wrkAE = findAlfabetEntryByChar(curChr);
   
     if(curCharPartIndex == wrkAE.lenght){
-      ++curCharIndex;
+      curCharIndex++;
       curChr = workString[curCharIndex];
       wrkAE = findAlfabetEntryByChar(curChr);
       curCharPartIndex = 0;
     }
     
     for(j = 0; j < SHOW_MATRIX_HEIGHT; j++){
-      showMatrix[j][shwMtrxPnrt] = wrkAE.alfabetMatrix[j][curCharPartIndex];
+      showMatrix[j][shwMtrxPnrt] = **(wrkAE.alfabetMatrix + j*wrkAE.lenght + curCharPartIndex)>0?0:1;
+      //showMatrix[j][shwMtrxPnrt] = wrkAE.alfabetMatrix[j][curCharPartIndex];//>0?0:1;
     }
-    shwMtrxPnrt++;
     curCharPartIndex++;
 }
 
