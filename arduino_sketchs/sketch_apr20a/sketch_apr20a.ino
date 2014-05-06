@@ -32,7 +32,7 @@ int symbolRusA[8][5] = {{0,1,1,1,0},
                         {1,0,0,0,1},
                         {1,0,0,0,1}};
                         
-struct alfabetEntry entryA = {'F',5,8,symbolRusA};
+struct alfabetEntry entryA = {'F',5,8,(int**)symbolRusA};
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
