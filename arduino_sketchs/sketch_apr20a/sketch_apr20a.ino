@@ -23,6 +23,15 @@ struct alfabetEntry
   int** alfabetMatrix;
 };
 
+int symbolRusSpace[8][5] = {{0,0,0,0,0},
+                            {0,0,0,0,0},
+                            {0,0,0,0,0},
+                            {0,0,0,0,0},
+                            {0,0,0,0,0},
+                            {0,0,0,0,0},
+                            {0,0,0,0,0},
+                            {0,0,0,0,0}};
+
 int symbolRusA[8][5] = {{0,1,1,1,0},
                         {1,0,0,0,1},
                         {1,0,0,0,1},
@@ -32,7 +41,15 @@ int symbolRusA[8][5] = {{0,1,1,1,0},
                         {1,0,0,0,1},
                         {1,0,0,0,1}};
                         
-struct alfabetEntry entryA = {'F',5,8,(int**)symbolRusA};
+struct alfabetEntry entryA = {'A',5,8,(int**)symbolRusA};
+struct alfabetEntry entrySpace = {' ',5,8,(int**)symbolRusSpace};
+
+alfabetEntry alfabetList[] = {entryA, entrySpace};
+int alfabetListLenght = 2;
+
+char workString[] = "AAAAA A A A A";
+int curCharIndex = 0;
+int curCharPartIndex = 0;
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
@@ -48,6 +65,8 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(LENGHT * HEIGHT, PIN, NEO_GRB + NEO_
 // stripPixel tempArray[] = {{1,0},{2,0},{3,0},{0,1},{4,1},{0,2},{4,2},{0,3},{4,3},{0,4},{1,4},{2,4},{3,4},{4,4},{0,5},{4,5},{0,6},{4,6},{0,7},{4,7}};
 
 int showMatrix[SHOW_MATRIX_HEIGHT][SHOW_MATRIX_LENGHT];
+
+int shwMtrxPnrt = 0;
 
 stripPixel frameCoordinate[52] = {{0,0},{1,0},{2,0},{3,0},{4,0},{5,0},{6,0},{7,0},{8,0},{9,0},{10,0},{11,0},{12,0},{13,0},{14,0},{15,0},{15,1},{15,2},{15,3},{15,4},{15,5},{15,6},{15,7},{15,8},{15,9},{15,10},{15,11},{14,11},{13,11},{12,11},{11,11},{10,11},{9,11},{8,11},{7,11},{6,11},{5,11},{4,11},{3,11},{2,11},{1,11},{0,11},{0,10},{0,9},{0,8},{0,7},{0,6},{0,5},{0,4},{0,3},{0,2},{0,1}};
 
@@ -75,10 +94,10 @@ void setup() {
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
   //zeroing showMatrix
-  memset(showMatrix, 0, sizeof(showMatrix));
+  //memset(showMatrix, 0, sizeof(int)*SHOW_MATRIX_HEIGHT*SHOW_MATRIX_LENGHT);
+  zeroingShwMtrx();
+  //showMatrix[3][3] = 1;
 }
-
-
 
 void loop() {
   // Some example procedures showing how to display to the pixels:
@@ -95,7 +114,18 @@ void loop() {
   //rainbow(10);
   //theaterChaseRainbow(50);
   
-  frameCycle(1000);
+  //frameCycle(5);
+  
+  //shwMtrxPnrt++;
+  if(shwMtrxPnrt == SHOW_MATRIX_LENGHT){
+    shwMtrxPnrt = 0;
+  }
+  
+  addColumnToShwMtrx();
+  printShowMatrix(2,2,strip.Color(10, 0, 0));
+ 
+  strip.show();
+  delay(1000);
 }
 
 int getPixelNumber(int x, int y){
@@ -104,6 +134,59 @@ int getPixelNumber(int x, int y){
   }else{
     return LENGHT * HEIGHT;
   }
+}
+
+void printShowMatrix(uint8_t shiftX, uint8_t shiftY, uint32_t color){
+  int i, j;
+  for(i = 0; i < SHOW_MATRIX_LENGHT; i++){
+      for(j = 0; j < SHOW_MATRIX_HEIGHT; j++){
+          if(showMatrix[j][(i + shwMtrxPnrt) % SHOW_MATRIX_LENGHT] > 0){
+            strip.setPixelColor(getPixelNumber(i + shiftX, j + shiftY), color);
+          }else{
+            strip.setPixelColor(getPixelNumber(i + shiftX, j + shiftY), strip.Color(0, 0, 0));
+          }
+      }
+  }
+}
+
+void zeroingShwMtrx(){
+  int i,j;
+  for(j = 0; j < SHOW_MATRIX_HEIGHT; j++){
+    for(i = 0; i < SHOW_MATRIX_LENGHT; i++){
+      showMatrix[j][i] = 0;
+    }
+  }
+}
+  
+void addColumnToShwMtrx(){
+    int i,j;
+    alfabetEntry wrkAE;
+    char curChr = workString[curCharIndex];
+    wrkAE = findAlfabetEntryByChar(curChr);
+  
+    if(curCharPartIndex == wrkAE.lenght){
+      ++curCharIndex;
+      curChr = workString[curCharIndex];
+      wrkAE = findAlfabetEntryByChar(curChr);
+      curCharPartIndex = 0;
+    }
+    
+    for(j = 0; j < SHOW_MATRIX_HEIGHT; j++){
+      showMatrix[j][shwMtrxPnrt] = wrkAE.alfabetMatrix[j][curCharPartIndex];
+    }
+    shwMtrxPnrt++;
+    curCharPartIndex++;
+}
+
+struct alfabetEntry findAlfabetEntryByChar(char chr){
+  int i;
+  for(i = 0; i < alfabetListLenght; i++){
+    if(alfabetList[i].strValue == chr){
+      return alfabetList[i];
+    }
+  }
+  
+  return alfabetList[0];
 }
 
 // Fill the dots one after the other with a color
@@ -122,8 +205,8 @@ void rainbow(uint8_t wait) {
     for(i=0; i<strip.numPixels(); i++) {
       strip.setPixelColor(i, Wheel((i+j) & 255));
     }
-    strip.show();
-    delay(wait);
+    //strip.show();
+    //delay(wait);
   }
 }
 
@@ -145,8 +228,8 @@ void frameCycle(uint8_t wait) {
       strip.setPixelColor(getPixelNumber(frameCoordinate[i].x, frameCoordinate[i].y), Wheel(((i * 256 / 52) + j) & 255));
     }
         
-    strip.show();
-    delay(wait);
+    //strip.show();
+    //delay(wait);
   }
 }
 
