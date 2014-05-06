@@ -20,13 +20,19 @@ struct alfabetEntry
   char strValue;
   int lenght;
   int height;
-  int alfabetEntryMatrixArrayIndex;
-  int stripPixelCount;
+  int** alfabetMatrix;
 };
 
-alfabetEntry alfabetEntryArray[AFLFABET_COUNT];
-
-stripPixel **alfabetEntryMatrixArray;
+int symbolRusA[8][5] = {{0,1,1,1,0},
+                        {1,0,0,0,1},
+                        {1,0,0,0,1},
+                        {1,0,0,0,1},
+                        {1,1,1,1,1},
+                        {1,0,0,0,1},
+                        {1,0,0,0,1},
+                        {1,0,0,0,1}};
+                        
+struct alfabetEntry entryA = {'F',5,8,symbolRusA};
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
@@ -38,6 +44,9 @@ stripPixel **alfabetEntryMatrixArray;
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(LENGHT * HEIGHT, PIN, NEO_GRB + NEO_KHZ800);
 
 //area for data output
+
+// stripPixel tempArray[] = {{1,0},{2,0},{3,0},{0,1},{4,1},{0,2},{4,2},{0,3},{4,3},{0,4},{1,4},{2,4},{3,4},{4,4},{0,5},{4,5},{0,6},{4,6},{0,7},{4,7}};
+
 int showMatrix[SHOW_MATRIX_HEIGHT][SHOW_MATRIX_LENGHT];
 
 stripPixel frameCoordinate[52] = {{0,0},{1,0},{2,0},{3,0},{4,0},{5,0},{6,0},{7,0},{8,0},{9,0},{10,0},{11,0},{12,0},{13,0},{14,0},{15,0},{15,1},{15,2},{15,3},{15,4},{15,5},{15,6},{15,7},{15,8},{15,9},{15,10},{15,11},{14,11},{13,11},{12,11},{11,11},{10,11},{9,11},{8,11},{7,11},{6,11},{5,11},{4,11},{3,11},{2,11},{1,11},{0,11},{0,10},{0,9},{0,8},{0,7},{0,6},{0,5},{0,4},{0,3},{0,2},{0,1}};
@@ -66,15 +75,10 @@ void setup() {
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
   //zeroing showMatrix
-  alfabetEntryMatrixArray = new struct stripPixel * [AFLFABET_COUNT];
   memset(showMatrix, 0, sizeof(showMatrix));
-  initAlfabetEntryMatrixArray();
 }
 
-void initAlfabetEntryMatrixArray(){
-  // 20
-  alfabetEntryMatrixArray[0] = {{1,0},{2,0},{3,0},{0,1},{4,1},{0,2},{4,2},{0,3},{4,3},{0,4},{1,4},{2,4},{3,4},{4,4},{0,5},{4,5},{0,6},{4,6},{0,7},{4,7}};
-}
+
 
 void loop() {
   // Some example procedures showing how to display to the pixels:
