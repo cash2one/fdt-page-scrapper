@@ -23,14 +23,14 @@ struct alfabetEntry
   int** alfabetMatrix;
 };
 
-int symbolRusSpace[8][5] = {{0,0,0,0,0},
-                            {0,0,0,0,0},
-                            {0,0,0,0,0},
-                            {0,0,0,0,0},
-                            {0,0,0,0,0},
-                            {0,0,0,0,0},
-                            {0,0,0,0,0},
-                            {0,0,0,0,0}};
+int symbolRusSpace[8][2] = {{0,0},
+                            {0,0},
+                            {0,0},
+                            {0,0},
+                            {0,0},
+                            {0,0},
+                            {0,0},
+                            {0,0}};
 
 int symbolRusA[8][5] = {{0,2,2,2,0},
                         {1,0,0,0,1},
@@ -44,20 +44,30 @@ int symbolRusA[8][5] = {{0,2,2,2,0},
 int symbolRusB[8][5] = {{1,1,1,1,0},
                         {1,0,0,0,0},
                         {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,1,1,1,1},
+                        {1,1,1,1,0},
+                        {1,0,0,0,1},
                         {1,0,0,0,1},
                         {1,0,0,0,1},
                         {1,1,1,1,1}};
                         
-struct alfabetEntry entryA = {'A',5,8,(int**)symbolRusA};
-struct alfabetEntry entryB = {'B',5,8,(int**)symbolRusB};
-struct alfabetEntry entrySpace = {' ',5,8,(int**)symbolRusSpace};
+int symbolRusV[8][5] = {{1,1,1,1,0},
+                        {1,0,0,0,1},
+                        {1,0,0,0,1},
+                        {1,1,1,1,0},
+                        {1,0,0,0,1},
+                        {1,0,0,0,1},
+                        {1,0,0,0,1},
+                        {1,1,1,1,1}};
+   
+struct alfabetEntry entrySpace = {' ',2,8,(int**)symbolRusSpace};                     
+struct alfabetEntry entryA = {'A',5,8,(int**)symbolRusA};//А
+struct alfabetEntry entryB = {'B',5,8,(int**)symbolRusB};//Б
+struct alfabetEntry entryV = {'V',5,8,(int**)symbolRusV};//В
 
-alfabetEntry alfabetList[] = {entryA, entryB, entrySpace};
-int alfabetListLenght = 3;
+alfabetEntry alfabetList[] = {entryA, entryB, entryV, entrySpace};
+int alfabetListLenght = 4;
 
-char workString[] = "A B A B A B A";
+char workString[] = "V  A  B  A  B  A  B  A  ";
 int curCharIndex = 0;
 int curCharPartIndex = 0;
 
@@ -125,19 +135,7 @@ void loop() {
 
   //rainbow(10);
   //theaterChaseRainbow(50);
-  
-  //frameCycle(5);
-  
-  if(shwMtrxPnrt == SHOW_MATRIX_LENGHT){
-    shwMtrxPnrt = 0;
-  }
-  
-  addColumnToShwMtrx();
-  shwMtrxPnrt++;
-  printShowMatrix(2,2,strip.Color(10, 0, 0));
-  
-  strip.show();
-  delay(100);
+  frameCycle(10);
 }
 
 int getPixelNumber(int x, int y){
@@ -226,11 +224,21 @@ void rainbow(uint8_t wait) {
 void frameCycle(uint8_t wait) {
   uint16_t i, j, k;
 
-  for(j=0; j<256*5; j++) { // 5 cycles of all colors on wheel
+  for(j=0; j<256*10; j++) { // 5 cycles of all colors on wheel
     // cleat matrix
     
-    for (int i=0; i < strip.numPixels(); i++) {
+    /*for (int i=0; i < strip.numPixels(); i++) {
       strip.setPixelColor(i, 0);
+    }*/
+    if(j % 8 == 0){
+        if(shwMtrxPnrt == SHOW_MATRIX_LENGHT){
+          shwMtrxPnrt = 0;
+        }
+        
+        addColumnToShwMtrx();
+        shwMtrxPnrt++;
+        printShowMatrix(2,2,strip.Color(255, 0, 0));
+        strip.show();
     }
     
     //printAlfabet(alfabetA, 20, j % 17 - 4, 2, strip.Color(255, 0, 0));
@@ -240,8 +248,8 @@ void frameCycle(uint8_t wait) {
       strip.setPixelColor(getPixelNumber(frameCoordinate[i].x, frameCoordinate[i].y), Wheel(((i * 256 / 52) + j) & 255));
     }
         
-    //strip.show();
-    //delay(wait);
+    strip.show();
+    delay(wait);
   }
 }
 
