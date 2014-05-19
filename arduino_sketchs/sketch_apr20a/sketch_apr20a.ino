@@ -539,7 +539,7 @@ void zeroingShwMtrx(){
   }
 }
   
-void addColumnToShwMtrx(){
+void addColumnToShwMtrxRunning(){
     int i,j;
     alfabetEntry wrkAE;
     char curChr = workString[curCharIndex];
@@ -606,7 +606,7 @@ void frameCycle(uint8_t wait) {
           shwMtrxPnrt = 0;
         }
         
-        addColumnToShwMtrx();
+        addColumnToShwMtrxRunning();
         shwMtrxPnrt++;
         printShowMatrix(2,2,strip.Color(255, 0, 0));
         strip.show();
