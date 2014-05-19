@@ -1,0 +1,41 @@
+struct alfabetEntry entryA = {'A',8,5,(int**)symbolRusA};//À
+struct alfabetEntry entryB = {'B',8,5,(int**)symbolRusB};//Á
+struct alfabetEntry entryV = {'V',8,5,(int**)symbolRusV};//Â					
+struct alfabetEntry entryG = {'G',8,5,(int**)symbolRusG};//Ã
+struct alfabetEntry entryD = {'D',8,5,(int**)symbolRusD};//Ä						
+struct alfabetEntry entryE = {'E',8,5,(int**)symbolRusE};//Å						
+struct alfabetEntry entryEO = {'!',8,5,(int**)symbolRusEO};//¨						
+struct alfabetEntry entryJ = {'J',8,7,(int**)symbolRusJ};//Æ
+struct alfabetEntry entryZ = {'Z',8,5,(int**)symbolRusZ};//Ç
+struct alfabetEntry entryI = {'I',8,5,(int**)symbolRusI};//È
+struct alfabetEntry entryII = {'@',8,5,(int**)symbolRusII};//É
+struct alfabetEntry entryK = {'K',8,5,(int**)symbolRusK};//Ê
+struct alfabetEntry entryL = {'L',8,5,(int**)symbolRusL};//Ë
+struct alfabetEntry entryM = {'M',8,7,(int**)symbolRusM};//Ì 
+struct alfabetEntry entryN = {'N',8,5,(int**)symbolRusN};//Í
+struct alfabetEntry entryO = {'O',8,5,(int**)symbolRusO};//Î
+struct alfabetEntry entryP = {'P',8,5,(int**)symbolRusP};//Ï
+struct alfabetEntry entryR = {'R',8,5,(int**)symbolRusR};//Ğ
+struct alfabetEntry entryS = {'S',8,5,(int**)symbolRusS};//Ñ
+struct alfabetEntry entryT = {'T',8,5,(int**)symbolRusT};//Ò
+struct alfabetEntry entryY = {'Y',8,5,(int**)symbolRusY};//Ó
+struct alfabetEntry entryF = {'F',8,7,(int**)symbolRusF};//Ô
+struct alfabetEntry entryX = {'X',8,5,(int**)symbolRusX};//Õ 
+struct alfabetEntry entryCC = {'#',8,6,(int**)symbolRusCC};//Ö
+struct alfabetEntry entryCh = {'$',8,5,(int**)symbolRusCh};//×
+struct alfabetEntry entrySh = {'%',8,5,(int**)symbolRusSh};//Ø
+struct alfabetEntry entrySCH = {'^',8,6,(int**)symbolRusSCH};//Ù
+struct alfabetEntry entryHard = {'&',8,6,(int**)symbolRusHard};//Ú 
+struct alfabetEntry entryYY = {'*',8,7,(int**)symbolRusYY};//Û
+struct alfabetEntry entrySoft = {'(',8,5,(int**)symbolRusSoft};//Ü
+struct alfabetEntry entryEE = {')',8,5,(int**)symbolRusEE};//İ 
+struct alfabetEntry entryU = {'U',8,5,(int**)symbolRusU};//Ş
+struct alfabetEntry entryYa = {'+',8,5,(int**)symbolRusYa};//ß
+
+struct alfabetEntry entryV = {'V',5,8,(int**)symbolRusV};//Â
+
+struct alfabetEntry entryV = {'V',5,8,(int**)symbolRusV};//Â
+
+//(.*) int symbolRus(.*)\[(.*)\]\[(.*)\] -> struct alfabetEntry entry\2 = {'\2',\3,\4,(int**)symbolRus\2};//\1
+
+struct alfabetEntry entry(.*) = \{'(.*)',.*,.*,\(int\*\*\)symbolRus(.*)\};//(.*)

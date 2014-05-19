@@ -61,7 +61,7 @@ int symbolRusV[8][5] = {{1,1,1,1,0},
                         {1,1,1,1,1}};
 						
 //Г                        
-int symbolRusV[8][5] = {{1,1,1,1,1},
+int symbolRusG[8][5] = {{1,1,1,1,1},
                         {1,0,0,0,0},
                         {1,0,0,0,0},
                         {1,0,0,0,0},
@@ -71,7 +71,7 @@ int symbolRusV[8][5] = {{1,1,1,1,1},
                         {1,0,0,0,0}};
 						
 //Д                        
-int symbolRusV[8][5] = {{0,1,1,1,1,0},
+int symbolRusD[8][6] = {{0,1,1,1,1,0},
                         {0,1,0,0,1,0},
                         {0,1,0,0,1,0},
                         {0,1,0,0,1,0},
@@ -81,7 +81,7 @@ int symbolRusV[8][5] = {{0,1,1,1,1,0},
                         {1,0,0,0,0,1}};
 						
 //Е                       
-int symbolRusV[8][5] = {{1,1,1,1,1},
+int symbolRusE[8][5] = {{1,1,1,1,1},
                         {1,0,0,0,0},
                         {1,0,0,0,0},
                         {1,1,1,1,0},
@@ -91,7 +91,7 @@ int symbolRusV[8][5] = {{1,1,1,1,1},
                         {1,1,1,1,1}};
 						
 //Ё                       
-int symbolRusV[8][5] = {{0,1,0,1,0},
+int symbolRusEO[8][5] = {{0,1,0,1,0},
                         {1,1,1,1,1},
                         {1,0,0,0,0},
                         {1,1,1,1,0},
@@ -99,14 +99,344 @@ int symbolRusV[8][5] = {{0,1,0,1,0},
                         {1,0,0,0,0},
                         {1,0,0,0,0},
                         {1,1,1,1,1}};
+						
+//Ж
+int symbolRusJ[8][7] = {{1, 0, 0, 1, 0, 0, 1},
+						{1, 0, 0, 1, 0, 0, 1},
+						{0, 1, 0, 1, 0, 1, 0},
+						{0, 0, 1, 1, 1, 0, 0},
+						{0, 1, 0, 1, 0, 1, 0},
+						{1, 0, 0, 1, 0, 0, 1},
+						{1, 0, 0, 1, 0, 0, 1},
+						{1, 0, 0, 1, 0, 0, 1}};
+						
+//З
+int symbolRusZ[8][5] = {{1, 1, 1, 1, 0},
+						{0, 0, 0, 0, 1},
+						{0, 0, 0, 0, 1},
+						{0, 1, 1, 1, 0},
+						{0, 0, 0, 0, 1},
+						{0, 0, 0, 0, 1},
+						{0, 0, 0, 0, 1},
+						{1, 1, 1, 1, 0}};
+
+//И
+int symbolRusI[8][5] = {{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 1, 1},
+						{1, 0, 1, 0, 1},
+						{1, 1, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1}};
+
+//Й
+int symbolRusII[8][5] = {{1, 0, 1, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 1, 1},
+						{1, 0, 1, 0, 1},
+						{1, 1, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1}};
+
+//К
+int symbolRusK[8][5] = {{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 1, 0},
+						{1, 1, 1, 0, 0},
+						{1, 0, 0, 1, 0},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1}};
+
+//Л
+int symbolRusL[8][5] = {{0, 0, 1, 1, 1},
+    			{0, 1, 0, 0, 1},
+    			{1, 0, 0, 0, 1},
+    			{1, 0, 0, 0, 1},
+    						{1, 0, 0, 0, 1},
+    						{1, 0, 0, 0, 1},
+    						{1, 0, 0, 0, 1},
+    						{1, 0, 0, 0, 1}};
+
+//М
+int symbolRusM[8][7] = {{1, 0, 0, 0, 0, 0, 1},
+						{1, 1, 0, 0, 0, 1, 1},
+						{1, 0, 1, 0, 1, 0, 1},
+						{1, 0, 0, 1, 0, 0, 1},
+						{1, 0, 0, 0, 0, 0, 1},
+						{1, 0, 0, 0, 0, 0, 1},
+						{1, 0, 0, 0, 0, 0, 1},
+						{1, 0, 0, 0, 0, 0, 1}};
+
+//Н
+int symbolRusN[8][5] = {{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 1, 1, 1, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1}};
+
+//О
+int symbolRusO[8][5] = {{0, 1, 1, 1, 0},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{0, 1, 1, 1, 0}};
+
+//П
+int symbolRusP[8][5] = {{1, 1, 1, 1, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1}};
+
+//Р
+int symbolRusR[8][5] = {{1, 1, 1, 1, 0},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 1, 1, 1, 0},
+						{1, 0, 0, 0, 0},
+						{1, 0, 0, 0, 0},
+						{1, 0, 0, 0, 0}};
+
+//С
+int symbolRusS[8][5] = {{0, 1, 1, 1, 0},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 0},
+						{1, 0, 0, 0, 0},
+						{1, 0, 0, 0, 0},
+						{1, 0, 0, 0, 0},
+						{1, 0, 0, 0, 1},
+						{0, 1, 1, 1, 0}};
+
+//Т
+int symbolRusT[8][5] = {{1, 1, 1, 1, 1},
+						{0, 0, 1, 0, 0},
+						{0, 0, 1, 0, 0},
+						{0, 0, 1, 0, 0},
+						{0, 0, 1, 0, 0},
+						{0, 0, 1, 0, 0},
+						{0, 0, 1, 0, 0},
+						{0, 0, 1, 0, 0}};
+
+//У
+int symbolRusY[8][5] = {{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{0, 1, 1, 1, 1},
+						{0, 0, 0, 0, 1},
+						{0, 0, 0, 0, 1},
+						{0, 1, 1, 1, 0}};
+
+//Ф
+int symbolRusF[8][7] = {{0, 1, 1, 1, 1, 1, 0},
+						{1, 0, 0, 1, 0, 0, 1},
+						{1, 0, 0, 1, 0, 0, 1},
+						{1, 0, 0, 1, 0, 0, 1},
+						{0, 1, 1, 1, 1, 1, 0},
+						{0, 0, 0, 1, 0, 0, 0},
+						{0, 0, 0, 1, 0, 0, 0},
+						{0, 0, 0, 1, 0, 0, 0}};
+
+//Х
+int symbolRusX[8][5] = {{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{0, 1, 0, 1, 0},
+						{0, 0, 1, 0, 0},
+						{0, 1, 0, 1, 0},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1}};
+
+//Ц
+int symbolRusCC[9][6] = {{1, 0, 0, 0, 1, 0},
+			{1, 0, 0, 0, 1, 0},
+			{1, 0, 0, 0, 1, 0},
+			{1, 0, 0, 0, 1, 0},
+			{1, 0, 0, 0, 1, 0},
+			{1, 0, 0, 0, 1, 0},
+			{1, 0, 0, 0, 1, 0},
+			{1, 1, 1, 1, 1, 1},
+			{0, 0, 0, 0, 0, 1}};
+
+//Ч
+int symbolRusCh[8][5] = {{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{0, 1, 1, 1, 1},
+						{0, 0, 0, 0, 1},
+						{0, 0, 0, 0, 1},
+						{0, 0, 0, 0, 1}};
+
+//Ш
+int symbolRusSh[8][5] = {{1, 0, 1, 0, 1},
+						{1, 0, 1, 0, 1},
+						{1, 0, 1, 0, 1},
+						{1, 0, 1, 0, 1},
+						{1, 0, 1, 0, 1},
+						{1, 0, 1, 0, 1},
+						{1, 0, 1, 0, 1},
+						{1, 1, 1, 1, 1}};
+
+//Щ
+int symbolRusSCH[9][6] = {{1, 0, 1, 0, 1, 0},
+						{1, 0, 1, 0, 1, 0},
+						{1, 0, 1, 0, 1, 0},
+						{1, 0, 1, 0, 1, 0},
+						{1, 0, 1, 0, 1, 0},
+						{1, 0, 1, 0, 1, 0},
+						{1, 0, 1, 0, 1, 0},
+						{1, 1, 1, 1, 1, 1},
+						{0, 0, 0, 0, 0, 1}};
+
+//Ъ
+int symbolRusHard[8][6] = {	{1, 1, 0, 0, 0, 0},
+							{0, 1, 0, 0, 0, 0},
+							{0, 1, 0, 0, 0, 0},
+							{0, 1, 1, 1, 1, 0},
+							{0, 1, 0, 0, 0, 1},
+							{0, 1, 0, 0, 0, 1},
+							{0, 1, 0, 0, 0, 1},
+							{0, 1, 1, 1, 1, 0}};
+
+//Ы
+int symbolRusYY[8][7] = {{1, 0, 0, 0, 0, 0, 1},
+						{1, 0, 0, 0, 0, 0, 1},
+						{1, 0, 0, 0, 0, 0, 1},
+						{1, 1, 1, 1, 0, 0, 1},
+						{1, 0, 0, 0, 1, 0, 1},
+						{1, 0, 0, 0, 1, 0, 1},
+						{1, 0, 0, 0, 1, 0, 1},
+						{1, 1, 1, 1, 0, 0, 1}};
+
+//Ь
+int symbolRusSoft[8][5] = {{1, 0, 0, 0, 0},
+						{1, 0, 0, 0, 0},
+						{1, 0, 0, 0, 0},
+						{1, 1, 1, 1, 0},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{1, 1, 1, 1, 0}};
+
+//Э
+int symbolRusEE[8][5] = {{0, 1, 1, 1, 0},
+						{1, 0, 0, 0, 1},
+						{0, 0, 0, 0, 1},
+						{0, 0, 1, 1, 1},
+						{0, 0, 0, 0, 1},
+						{0, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{0, 1, 1, 1, 0}};
+
+//Ю
+int symbolRusU[8][6] = {{1, 0, 0, 1, 1, 0},
+						{1, 0, 1, 0, 0, 1},
+						{1, 0, 1, 0, 0, 1},
+						{1, 1, 1, 0, 0, 1},
+						{1, 0, 1, 0, 0, 1},
+						{1, 0, 1, 0, 0, 1},
+						{1, 0, 1, 0, 0, 1},
+						{1, 0, 0, 1, 1, 0}};
+
+//Я
+int symbolRusYa[8][5] = {{0, 1, 1, 1, 0},
+						{1, 0, 0, 0, 1},
+						{1, 0, 0, 0, 1},
+						{0, 1, 1, 1, 1},
+						{0, 0, 1, 0, 1},
+						{0, 1, 0, 0, 1},
+						{1, 0, 0, 0, 1}};
+
+//А == A
+//Б == B
+//В == V
+//Г == G
+//Д == D
+//Е == E
+//Ё == !
+//Ж == J
+//З == Z
+//И == I
+//Й == @
+//К == K
+//Л == L
+//М == M
+//Н == N
+//О == O
+//П == P
+//Р == R
+//С == S
+//Т == T
+//У == Y
+//Ф == F
+//Х == X
+//Ц == #
+//Ч == $
+//Ш == %
+//Щ == ^
+//Ъ == &
+//Ы == *
+//Ь == (
+//Э == )
+//Ю == U
+//Я == +
    
 struct alfabetEntry entrySpace = {' ',2,8,(int**)symbolRusSpace};                     
-struct alfabetEntry entryA = {'A',5,8,(int**)symbolRusA};//А
-struct alfabetEntry entryB = {'B',5,8,(int**)symbolRusB};//Б
-struct alfabetEntry entryV = {'V',5,8,(int**)symbolRusV};//В
+struct alfabetEntry entryA = {'A',8,5,(int**)symbolRusA};//А
+struct alfabetEntry entryB = {'B',8,5,(int**)symbolRusB};//Б
+struct alfabetEntry entryV = {'V',8,5,(int**)symbolRusV};//В					
+struct alfabetEntry entryG = {'G',8,5,(int**)symbolRusG};//Г
+struct alfabetEntry entryD = {'D',8,6,(int**)symbolRusD};//Д						
+struct alfabetEntry entryE = {'E',8,5,(int**)symbolRusE};//Е						
+struct alfabetEntry entryEO = {'!',8,5,(int**)symbolRusEO};//Ё						
+struct alfabetEntry entryJ = {'J',8,7,(int**)symbolRusJ};//Ж
+struct alfabetEntry entryZ = {'Z',8,5,(int**)symbolRusZ};//З
+struct alfabetEntry entryI = {'I',8,5,(int**)symbolRusI};//И
+struct alfabetEntry entryII = {'@',8,5,(int**)symbolRusII};//Й
+struct alfabetEntry entryK = {'K',8,5,(int**)symbolRusK};//К
+struct alfabetEntry entryL = {'L',8,5,(int**)symbolRusL};//Л
+struct alfabetEntry entryM = {'M',8,7,(int**)symbolRusM};//М 
+struct alfabetEntry entryN = {'N',8,5,(int**)symbolRusN};//Н
+struct alfabetEntry entryO = {'O',8,5,(int**)symbolRusO};//О
+struct alfabetEntry entryP = {'P',8,5,(int**)symbolRusP};//П
+struct alfabetEntry entryR = {'R',8,5,(int**)symbolRusR};//Р
+struct alfabetEntry entryS = {'S',8,5,(int**)symbolRusS};//С
+struct alfabetEntry entryT = {'T',8,5,(int**)symbolRusT};//Т
+struct alfabetEntry entryY = {'Y',8,5,(int**)symbolRusY};//У
+struct alfabetEntry entryF = {'F',8,7,(int**)symbolRusF};//Ф
+struct alfabetEntry entryX = {'X',8,5,(int**)symbolRusX};//Х 
+struct alfabetEntry entryCC = {'#',9,6,(int**)symbolRusCC};//Ц
+struct alfabetEntry entryCh = {'$',8,5,(int**)symbolRusCh};//Ч
+struct alfabetEntry entrySh = {'%',8,5,(int**)symbolRusSh};//Ш
+struct alfabetEntry entrySCH = {'^',9,6,(int**)symbolRusSCH};//Щ
+struct alfabetEntry entryHard = {'&',8,6,(int**)symbolRusHard};//Ъ 
+struct alfabetEntry entryYY = {'*',8,7,(int**)symbolRusYY};//Ы
+struct alfabetEntry entrySoft = {'(',8,5,(int**)symbolRusSoft};//Ь
+struct alfabetEntry entryEE = {')',8,5,(int**)symbolRusEE};//Э 
+struct alfabetEntry entryU = {'U',8,6,(int**)symbolRusU};//Ю
+struct alfabetEntry entryYa = {'+',8,5,(int**)symbolRusYa};//Я
 
-alfabetEntry alfabetList[] = {entryA, entryB, entryV, entrySpace};
-int alfabetListLenght = 4;
+alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD, 
+                              entryE, entryEO, entryJ, entryZ, entryI, entryII, 
+                              entryK, entryL, entryM, entryN, entryO, entryP, 
+                              entryR, entryS, entryT, entryY, entryF, entryX, 
+                              entryCC, entryCh, entrySh, entrySCH, entryHard, 
+                              entryYY, entrySoft, entryEE, entryU, entryYa};
+int alfabetListLenght = 34;
 
 char workString[] = "V  A  B  A  B  A  B  A  ";
 int curCharIndex = 0;
