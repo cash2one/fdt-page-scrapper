@@ -7,42 +7,26 @@
 #define SHOW_MATRIX_LENGHT 12
 #define SHOW_MATRIX_HEIGHT 8
 
-#define AFLFABET_COUNT 33
-
 struct stripPixel
 {
-  int x;
-  int y;
+  uint8_t x;
+  uint8_t y;
 };
 
 struct alfabetEntry
 {
   char strValue;
-  int lenght;
-  int height;
-  int** alfabetMatrix;
+  uint8_t lenght;
+  uint8_t height;
+  uint8_t** alfabetMatrix;
 };
 
-int symbolRusSpace[8][2] = {{0,0},
-                            {0,0},
-                            {0,0},
-                            {0,0},
-                            {0,0},
-                            {0,0},
-                            {0,0},
-                            {0,0}};
+uint8_t symbolRusSpace[8][2] = {{0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}};
 
 //А
-int symbolRusA[8][5] = {{0,1,1,1,0},
-                        {1,0,0,0,1},
-                        {1,0,0,0,1},
-                        {1,0,0,0,1},
-                        {1,1,1,1,1},
-                        {1,0,0,0,1},
-                        {1,0,0,0,1},
-                        {1,0,0,0,1}};
+uint8_t symbolRusA[8][5] = {{0,1,1,1,0}, {1,0,0,0,1}, {1,0,0,0,1}, {1,0,0,0,1},  {1,1,1,1,1}, {1,0,0,0,1},  {1,0,0,0,1}, {1,0,0,0,1}};
 //Б                        
-int symbolRusB[8][5] = {{1,1,1,1,0},
+uint8_t symbolRusB[8][5] = {{1,1,1,1,0},
                         {1,0,0,0,0},
                         {1,0,0,0,0},
                         {1,1,1,1,0},
@@ -51,7 +35,7 @@ int symbolRusB[8][5] = {{1,1,1,1,0},
                         {1,0,0,0,1},
                         {1,1,1,1,1}};
 //В                        
-int symbolRusV[8][5] = {{1,1,1,1,0},
+uint8_t symbolRusV[8][5] = {{1,1,1,1,0},
                         {1,0,0,0,1},
                         {1,0,0,0,1},
                         {1,1,1,1,0},
@@ -61,7 +45,7 @@ int symbolRusV[8][5] = {{1,1,1,1,0},
                         {1,1,1,1,1}};
 						
 //Г                        
-int symbolRusG[8][5] = {{1,1,1,1,1},
+uint8_t symbolRusG[8][5] = {{1,1,1,1,1},
                         {1,0,0,0,0},
                         {1,0,0,0,0},
                         {1,0,0,0,0},
@@ -71,7 +55,7 @@ int symbolRusG[8][5] = {{1,1,1,1,1},
                         {1,0,0,0,0}};
 						
 //Д                        
-int symbolRusD[8][6] = {{0,1,1,1,1,0},
+uint8_t symbolRusD[8][6] = {{0,1,1,1,1,0},
                         {0,1,0,0,1,0},
                         {0,1,0,0,1,0},
                         {0,1,0,0,1,0},
@@ -81,7 +65,7 @@ int symbolRusD[8][6] = {{0,1,1,1,1,0},
                         {1,0,0,0,0,1}};
 						
 //Е                       
-int symbolRusE[8][5] = {{1,1,1,1,1},
+uint8_t symbolRusE[8][5] = {{1,1,1,1,1},
                         {1,0,0,0,0},
                         {1,0,0,0,0},
                         {1,1,1,1,0},
@@ -91,7 +75,7 @@ int symbolRusE[8][5] = {{1,1,1,1,1},
                         {1,1,1,1,1}};
 						
 //Ё                       
-int symbolRusEO[8][5] = {{0,1,0,1,0},
+uint8_t symbolRusEO[8][5] = {{0,1,0,1,0},
                         {1,1,1,1,1},
                         {1,0,0,0,0},
                         {1,1,1,1,0},
@@ -101,7 +85,7 @@ int symbolRusEO[8][5] = {{0,1,0,1,0},
                         {1,1,1,1,1}};
 						
 //Ж
-int symbolRusJ[8][7] = {{1, 0, 0, 1, 0, 0, 1},
+uint8_t symbolRusJ[8][7] = {{1, 0, 0, 1, 0, 0, 1},
 						{1, 0, 0, 1, 0, 0, 1},
 						{0, 1, 0, 1, 0, 1, 0},
 						{0, 0, 1, 1, 1, 0, 0},
@@ -111,7 +95,7 @@ int symbolRusJ[8][7] = {{1, 0, 0, 1, 0, 0, 1},
 						{1, 0, 0, 1, 0, 0, 1}};
 						
 //З
-int symbolRusZ[8][5] = {{1, 1, 1, 1, 0},
+uint8_t symbolRusZ[8][5] = {{1, 1, 1, 1, 0},
 						{0, 0, 0, 0, 1},
 						{0, 0, 0, 0, 1},
 						{0, 1, 1, 1, 0},
@@ -121,7 +105,7 @@ int symbolRusZ[8][5] = {{1, 1, 1, 1, 0},
 						{1, 1, 1, 1, 0}};
 
 //И
-int symbolRusI[8][5] = {{1, 0, 0, 0, 1},
+uint8_t symbolRusI[8][5] = {{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 1, 1},
 						{1, 0, 1, 0, 1},
@@ -131,7 +115,7 @@ int symbolRusI[8][5] = {{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1}};
 
 //Й
-int symbolRusII[8][5] = {{1, 0, 1, 0, 1},
+uint8_t symbolRusII[8][5] = {{1, 0, 1, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 1, 1},
 						{1, 0, 1, 0, 1},
@@ -141,7 +125,7 @@ int symbolRusII[8][5] = {{1, 0, 1, 0, 1},
 						{1, 0, 0, 0, 1}};
 
 //К
-int symbolRusK[8][5] = {{1, 0, 0, 0, 1},
+uint8_t symbolRusK[8][5] = {{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 1, 0},
 						{1, 1, 1, 0, 0},
@@ -151,7 +135,7 @@ int symbolRusK[8][5] = {{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1}};
 
 //Л
-int symbolRusL[8][5] = {{0, 0, 1, 1, 1},
+uint8_t symbolRusL[8][5] = {{0, 0, 1, 1, 1},
     			{0, 1, 0, 0, 1},
     			{1, 0, 0, 0, 1},
     			{1, 0, 0, 0, 1},
@@ -161,7 +145,7 @@ int symbolRusL[8][5] = {{0, 0, 1, 1, 1},
     						{1, 0, 0, 0, 1}};
 
 //М
-int symbolRusM[8][7] = {{1, 0, 0, 0, 0, 0, 1},
+uint8_t symbolRusM[8][7] = {{1, 0, 0, 0, 0, 0, 1},
 						{1, 1, 0, 0, 0, 1, 1},
 						{1, 0, 1, 0, 1, 0, 1},
 						{1, 0, 0, 1, 0, 0, 1},
@@ -171,7 +155,7 @@ int symbolRusM[8][7] = {{1, 0, 0, 0, 0, 0, 1},
 						{1, 0, 0, 0, 0, 0, 1}};
 
 //Н
-int symbolRusN[8][5] = {{1, 0, 0, 0, 1},
+uint8_t symbolRusN[8][5] = {{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 1, 1, 1, 1},
@@ -181,7 +165,7 @@ int symbolRusN[8][5] = {{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1}};
 
 //О
-int symbolRusO[8][5] = {{0, 1, 1, 1, 0},
+uint8_t symbolRusO[8][5] = {{0, 1, 1, 1, 0},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
@@ -191,7 +175,7 @@ int symbolRusO[8][5] = {{0, 1, 1, 1, 0},
 						{0, 1, 1, 1, 0}};
 
 //П
-int symbolRusP[8][5] = {{1, 1, 1, 1, 1},
+uint8_t symbolRusP[8][5] = {{1, 1, 1, 1, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
@@ -201,7 +185,7 @@ int symbolRusP[8][5] = {{1, 1, 1, 1, 1},
 						{1, 0, 0, 0, 1}};
 
 //Р
-int symbolRusR[8][5] = {{1, 1, 1, 1, 0},
+uint8_t symbolRusR[8][5] = {{1, 1, 1, 1, 0},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
@@ -211,7 +195,7 @@ int symbolRusR[8][5] = {{1, 1, 1, 1, 0},
 						{1, 0, 0, 0, 0}};
 
 //С
-int symbolRusS[8][5] = {{0, 1, 1, 1, 0},
+uint8_t symbolRusS[8][5] = {{0, 1, 1, 1, 0},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 0},
 						{1, 0, 0, 0, 0},
@@ -221,7 +205,7 @@ int symbolRusS[8][5] = {{0, 1, 1, 1, 0},
 						{0, 1, 1, 1, 0}};
 
 //Т
-int symbolRusT[8][5] = {{1, 1, 1, 1, 1},
+uint8_t symbolRusT[8][5] = {{1, 1, 1, 1, 1},
 						{0, 0, 1, 0, 0},
 						{0, 0, 1, 0, 0},
 						{0, 0, 1, 0, 0},
@@ -231,7 +215,7 @@ int symbolRusT[8][5] = {{1, 1, 1, 1, 1},
 						{0, 0, 1, 0, 0}};
 
 //У
-int symbolRusY[8][5] = {{1, 0, 0, 0, 1},
+uint8_t symbolRusY[8][5] = {{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
@@ -241,7 +225,7 @@ int symbolRusY[8][5] = {{1, 0, 0, 0, 1},
 						{0, 1, 1, 1, 0}};
 
 //Ф
-int symbolRusF[8][7] = {{0, 1, 1, 1, 1, 1, 0},
+uint8_t symbolRusF[8][7] = {{0, 1, 1, 1, 1, 1, 0},
 						{1, 0, 0, 1, 0, 0, 1},
 						{1, 0, 0, 1, 0, 0, 1},
 						{1, 0, 0, 1, 0, 0, 1},
@@ -251,7 +235,7 @@ int symbolRusF[8][7] = {{0, 1, 1, 1, 1, 1, 0},
 						{0, 0, 0, 1, 0, 0, 0}};
 
 //Х
-int symbolRusX[8][5] = {{1, 0, 0, 0, 1},
+uint8_t symbolRusX[8][5] = {{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{0, 1, 0, 1, 0},
 						{0, 0, 1, 0, 0},
@@ -261,7 +245,7 @@ int symbolRusX[8][5] = {{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1}};
 
 //Ц
-int symbolRusCC[9][6] = {{1, 0, 0, 0, 1, 0},
+uint8_t symbolRusCC[9][6] = {{1, 0, 0, 0, 1, 0},
 			{1, 0, 0, 0, 1, 0},
 			{1, 0, 0, 0, 1, 0},
 			{1, 0, 0, 0, 1, 0},
@@ -272,7 +256,7 @@ int symbolRusCC[9][6] = {{1, 0, 0, 0, 1, 0},
 			{0, 0, 0, 0, 0, 1}};
 
 //Ч
-int symbolRusCh[8][5] = {{1, 0, 0, 0, 1},
+uint8_t symbolRusCh[8][5] = {{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
@@ -282,7 +266,7 @@ int symbolRusCh[8][5] = {{1, 0, 0, 0, 1},
 						{0, 0, 0, 0, 1}};
 
 //Ш
-int symbolRusSh[8][5] = {{1, 0, 1, 0, 1},
+uint8_t symbolRusSh[8][5] = {{1, 0, 1, 0, 1},
 						{1, 0, 1, 0, 1},
 						{1, 0, 1, 0, 1},
 						{1, 0, 1, 0, 1},
@@ -292,7 +276,7 @@ int symbolRusSh[8][5] = {{1, 0, 1, 0, 1},
 						{1, 1, 1, 1, 1}};
 
 //Щ
-int symbolRusSCH[9][6] = {{1, 0, 1, 0, 1, 0},
+uint8_t symbolRusSCH[9][6] = {{1, 0, 1, 0, 1, 0},
 						{1, 0, 1, 0, 1, 0},
 						{1, 0, 1, 0, 1, 0},
 						{1, 0, 1, 0, 1, 0},
@@ -303,7 +287,7 @@ int symbolRusSCH[9][6] = {{1, 0, 1, 0, 1, 0},
 						{0, 0, 0, 0, 0, 1}};
 
 //Ъ
-int symbolRusHard[8][6] = {	{1, 1, 0, 0, 0, 0},
+uint8_t symbolRusHard[8][6] = {	{1, 1, 0, 0, 0, 0},
 							{0, 1, 0, 0, 0, 0},
 							{0, 1, 0, 0, 0, 0},
 							{0, 1, 1, 1, 1, 0},
@@ -313,7 +297,7 @@ int symbolRusHard[8][6] = {	{1, 1, 0, 0, 0, 0},
 							{0, 1, 1, 1, 1, 0}};
 
 //Ы
-int symbolRusYY[8][7] = {{1, 0, 0, 0, 0, 0, 1},
+uint8_t symbolRusYY[8][7] = {{1, 0, 0, 0, 0, 0, 1},
 						{1, 0, 0, 0, 0, 0, 1},
 						{1, 0, 0, 0, 0, 0, 1},
 						{1, 1, 1, 1, 0, 0, 1},
@@ -323,7 +307,7 @@ int symbolRusYY[8][7] = {{1, 0, 0, 0, 0, 0, 1},
 						{1, 1, 1, 1, 0, 0, 1}};
 
 //Ь
-int symbolRusSoft[8][5] = {{1, 0, 0, 0, 0},
+uint8_t symbolRusSoft[8][5] = {{1, 0, 0, 0, 0},
 						{1, 0, 0, 0, 0},
 						{1, 0, 0, 0, 0},
 						{1, 1, 1, 1, 0},
@@ -333,7 +317,7 @@ int symbolRusSoft[8][5] = {{1, 0, 0, 0, 0},
 						{1, 1, 1, 1, 0}};
 
 //Э
-int symbolRusEE[8][5] = {{0, 1, 1, 1, 0},
+uint8_t symbolRusEE[8][5] = {{0, 1, 1, 1, 0},
 						{1, 0, 0, 0, 1},
 						{0, 0, 0, 0, 1},
 						{0, 0, 1, 1, 1},
@@ -343,7 +327,7 @@ int symbolRusEE[8][5] = {{0, 1, 1, 1, 0},
 						{0, 1, 1, 1, 0}};
 
 //Ю
-int symbolRusU[8][6] = {{1, 0, 0, 1, 1, 0},
+uint8_t symbolRusU[8][6] = {{1, 0, 0, 1, 1, 0},
 						{1, 0, 1, 0, 0, 1},
 						{1, 0, 1, 0, 0, 1},
 						{1, 1, 1, 0, 0, 1},
@@ -353,7 +337,7 @@ int symbolRusU[8][6] = {{1, 0, 0, 1, 1, 0},
 						{1, 0, 0, 1, 1, 0}};
 
 //Я
-int symbolRusYa[8][5] = {{0, 1, 1, 1, 0},
+uint8_t symbolRusYa[8][5] = {{0, 1, 1, 1, 0},
 						{1, 0, 0, 0, 1},
 						{1, 0, 0, 0, 1},
 						{0, 1, 1, 1, 1},
@@ -361,74 +345,40 @@ int symbolRusYa[8][5] = {{0, 1, 1, 1, 0},
 						{0, 1, 0, 0, 1},
 						{1, 0, 0, 0, 1}};
 
-//А == A
-//Б == B
-//В == V
-//Г == G
-//Д == D
-//Е == E
-//Ё == !
-//Ж == J
-//З == Z
-//И == I
-//Й == @
-//К == K
-//Л == L
-//М == M
-//Н == N
-//О == O
-//П == P
-//Р == R
-//С == S
-//Т == T
-//У == Y
-//Ф == F
-//Х == X
-//Ц == #
-//Ч == $
-//Ш == %
-//Щ == ^
-//Ъ == &
-//Ы == *
-//Ь == (
-//Э == )
-//Ю == U
-//Я == +
-   
-struct alfabetEntry entrySpace = {' ',2,8,(int**)symbolRusSpace};                     
-struct alfabetEntry entryA = {'A',8,5,(int**)symbolRusA};//А
-struct alfabetEntry entryB = {'B',8,5,(int**)symbolRusB};//Б
-struct alfabetEntry entryV = {'V',8,5,(int**)symbolRusV};//В					
-struct alfabetEntry entryG = {'G',8,5,(int**)symbolRusG};//Г
-struct alfabetEntry entryD = {'D',8,6,(int**)symbolRusD};//Д						
-struct alfabetEntry entryE = {'E',8,5,(int**)symbolRusE};//Е						
-struct alfabetEntry entryEO = {'!',8,5,(int**)symbolRusEO};//Ё						
-struct alfabetEntry entryJ = {'J',8,7,(int**)symbolRusJ};//Ж
-struct alfabetEntry entryZ = {'Z',8,5,(int**)symbolRusZ};//З
-struct alfabetEntry entryI = {'I',8,5,(int**)symbolRusI};//И
-struct alfabetEntry entryII = {'@',8,5,(int**)symbolRusII};//Й
-struct alfabetEntry entryK = {'K',8,5,(int**)symbolRusK};//К
-struct alfabetEntry entryL = {'L',8,5,(int**)symbolRusL};//Л
-struct alfabetEntry entryM = {'M',8,7,(int**)symbolRusM};//М 
-struct alfabetEntry entryN = {'N',8,5,(int**)symbolRusN};//Н
-struct alfabetEntry entryO = {'O',8,5,(int**)symbolRusO};//О
-struct alfabetEntry entryP = {'P',8,5,(int**)symbolRusP};//П
-struct alfabetEntry entryR = {'R',8,5,(int**)symbolRusR};//Р
-struct alfabetEntry entryS = {'S',8,5,(int**)symbolRusS};//С
-struct alfabetEntry entryT = {'T',8,5,(int**)symbolRusT};//Т
-struct alfabetEntry entryY = {'Y',8,5,(int**)symbolRusY};//У
-struct alfabetEntry entryF = {'F',8,7,(int**)symbolRusF};//Ф
-struct alfabetEntry entryX = {'X',8,5,(int**)symbolRusX};//Х 
-struct alfabetEntry entryCC = {'#',9,6,(int**)symbolRusCC};//Ц
-struct alfabetEntry entryCh = {'$',8,5,(int**)symbolRusCh};//Ч
-struct alfabetEntry entrySh = {'%',8,5,(int**)symbolRusSh};//Ш
-struct alfabetEntry entrySCH = {'^',9,6,(int**)symbolRusSCH};//Щ
-struct alfabetEntry entryHard = {'&',8,6,(int**)symbolRusHard};//Ъ 
-struct alfabetEntry entryYY = {'*',8,7,(int**)symbolRusYY};//Ы
-struct alfabetEntry entrySoft = {'(',8,5,(int**)symbolRusSoft};//Ь
-struct alfabetEntry entryEE = {')',8,5,(int**)symbolRusEE};//Э 
-struct alfabetEntry entryU = {'U',8,6,(int**)symbolRusU};//Ю
-struct alfabetEntry entryYa = {'+',8,5,(int**)symbolRusYa};//Я
+struct alfabetEntry entrySpace = {' ',2,8,(uint8_t**)symbolRusSpace};                     
+struct alfabetEntry entryA = {'A',5,8,(uint8_t**)symbolRusA};//А
+struct alfabetEntry entryB = {'B',5,8,(uint8_t**)symbolRusB};//Б
+struct alfabetEntry entryV = {'V',5,8,(uint8_t**)symbolRusV};//В					
+struct alfabetEntry entryG = {'G',5,8,(uint8_t**)symbolRusG};//Г
+struct alfabetEntry entryD = {'D',6,8,(uint8_t**)symbolRusD};//Д						
+struct alfabetEntry entryE = {'E',5,8,(uint8_t**)symbolRusE};//Е						
+struct alfabetEntry entryEO = {'!',5,8,(uint8_t**)symbolRusEO};//Ё						
+struct alfabetEntry entryJ = {'J',7,8,(uint8_t**)symbolRusJ};//Ж
+struct alfabetEntry entryZ = {'Z',5,8,(uint8_t**)symbolRusZ};//З
+struct alfabetEntry entryI = {'I',8,5,(uint8_t**)symbolRusI};//И
+struct alfabetEntry entryII = {'@',8,5,(uint8_t**)symbolRusII};//Й
+struct alfabetEntry entryK = {'K',8,5,(uint8_t**)symbolRusK};//К
+struct alfabetEntry entryL = {'L',8,5,(uint8_t**)symbolRusL};//Л
+struct alfabetEntry entryM = {'M',8,7,(uint8_t**)symbolRusM};//М 
+struct alfabetEntry entryN = {'N',8,5,(uint8_t**)symbolRusN};//Н
+struct alfabetEntry entryO = {'O',8,5,(uint8_t**)symbolRusO};//О
+struct alfabetEntry entryP = {'P',8,5,(uint8_t**)symbolRusP};//П
+struct alfabetEntry entryR = {'R',8,5,(uint8_t**)symbolRusR};//Р
+struct alfabetEntry entryS = {'S',8,5,(uint8_t**)symbolRusS};//С
+struct alfabetEntry entryT = {'T',8,5,(uint8_t**)symbolRusT};//Т
+struct alfabetEntry entryY = {'Y',8,5,(uint8_t**)symbolRusY};//У
+struct alfabetEntry entryF = {'F',8,7,(uint8_t**)symbolRusF};//Ф
+struct alfabetEntry entryX = {'X',8,5,(uint8_t**)symbolRusX};//Х 
+struct alfabetEntry entryCC = {'#',9,6,(uint8_t**)symbolRusCC};//Ц
+struct alfabetEntry entryCh = {'$',8,5,(uint8_t**)symbolRusCh};//Ч
+struct alfabetEntry entrySh = {'%',8,5,(uint8_t**)symbolRusSh};//Ш
+struct alfabetEntry entrySCH = {'^',9,6,(uint8_t**)symbolRusSCH};//Щ
+struct alfabetEntry entryHard = {'&',8,6,(uint8_t**)symbolRusHard};//Ъ 
+struct alfabetEntry entryYY = {'*',8,7,(uint8_t**)symbolRusYY};//Ы
+struct alfabetEntry entrySoft = {'(',8,5,(uint8_t**)symbolRusSoft};//Ь
+struct alfabetEntry entryEE = {')',8,5,(uint8_t**)symbolRusEE};//Э 
+struct alfabetEntry entryU = {'U',8,6,(uint8_t**)symbolRusU};//Ю
+struct alfabetEntry entryYa = {'+',8,5,(uint8_t**)symbolRusYa};//Я
 
 alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD, 
                               entryE, entryEO, entryJ, entryZ, entryI, entryII, 
@@ -436,16 +386,19 @@ alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD
                               entryR, entryS, entryT, entryY, entryF, entryX, 
                               entryCC, entryCh, entrySh, entrySCH, entryHard, 
                               entryYY, entrySoft, entryEE, entryU, entryYa};
-int alfabetListLenght = 34;
+                              
+//alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD, entryE};
+                              
+uint8_t alfabetListLenght = 34;
 
-char workString[] = "V  A  B  A  B  A  B  A  ";
-int curCharIndex = 0;
-int curCharPartIndex = 0;
+char workString[] = "A B V G D E ! J Z";
+uint8_t curCharIndex = 0;
+uint8_t curCharPartIndex = 0;
 
 //disappearance block
-int curSymbolBrightness = 0;
-int increasingBrightness = 1;
-int brightnessStepSize = 4;
+uint8_t curSymbolBrightness = 0;
+uint8_t increasingBrightness = 1;
+uint8_t brightnessStepSize = 16;
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
@@ -460,13 +413,13 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(LENGHT * HEIGHT, PIN, NEO_GRB + NEO_
 
 // stripPixel tempArray[] = {{1,0},{2,0},{3,0},{0,1},{4,1},{0,2},{4,2},{0,3},{4,3},{0,4},{1,4},{2,4},{3,4},{4,4},{0,5},{4,5},{0,6},{4,6},{0,7},{4,7}};
 
-int showMatrix[SHOW_MATRIX_HEIGHT][SHOW_MATRIX_LENGHT];
+uint8_t showMatrix[SHOW_MATRIX_HEIGHT][SHOW_MATRIX_LENGHT];
 
-int shwMtrxPnrt = 0;
+uint8_t shwMtrxPnrt = 0;
 
 stripPixel frameCoordinate[52] = {{0,0},{1,0},{2,0},{3,0},{4,0},{5,0},{6,0},{7,0},{8,0},{9,0},{10,0},{11,0},{12,0},{13,0},{14,0},{15,0},{15,1},{15,2},{15,3},{15,4},{15,5},{15,6},{15,7},{15,8},{15,9},{15,10},{15,11},{14,11},{13,11},{12,11},{11,11},{10,11},{9,11},{8,11},{7,11},{6,11},{5,11},{4,11},{3,11},{2,11},{1,11},{0,11},{0,10},{0,9},{0,8},{0,7},{0,6},{0,5},{0,4},{0,3},{0,2},{0,1}};
 
-int frameMapping[12][16] = {{0,	1,	2,	3,	4,	5,	6,	7,	8,	9,	10,	11,	12,	13,	14,	15},
+uint8_t frameMapping[12][16] = {{0,	1,	2,	3,	4,	5,	6,	7,	8,	9,	10,	11,	12,	13,	14,	15},
                           {31,	30,	29,	28,	27,	26,	25,	24,	23,	22,	21,	20,	19,	18,	17,	16},
                           {32,	33,	34,	35,	36,	37,	38,	39,	40,	41,	42,	43,	44,	45,	46,	47},
                           {63,	62,	61,	60,	59,	58,	57,	56,	55,	54,	53,	52,	51,	50,	49,	48},
@@ -492,9 +445,6 @@ void setup() {
   //zeroing showMatrix
   //memset(showMatrix, 0, sizeof(int)*SHOW_MATRIX_HEIGHT*SHOW_MATRIX_LENGHT);
   zeroingShwMtrx();
-  //showMatrix[3][3] = 1;
-  //showMatrix[1][1] = 1;
-  //showMatrix[2][2] = 1;
 }
 
 void loop() {
@@ -514,7 +464,7 @@ void loop() {
   frameCycle(10);
 }
 
-int getPixelNumber(int x, int y){
+int getPixelNumber(uint8_t x, uint8_t y){
   if(x <= LENGHT && y <= HEIGHT){
     return frameMapping[y][x];
   }else{
@@ -523,7 +473,7 @@ int getPixelNumber(int x, int y){
 }
 
 void printShowMatrix(uint8_t shiftX, uint8_t shiftY, uint32_t color){
-  int i, j;
+  uint8_t i, j;
   for(i = 0; i < SHOW_MATRIX_LENGHT; i++){
       for(j = 0; j < SHOW_MATRIX_HEIGHT; j++){
           if(showMatrix[j][(i + shwMtrxPnrt) % SHOW_MATRIX_LENGHT] > 0){
@@ -536,7 +486,7 @@ void printShowMatrix(uint8_t shiftX, uint8_t shiftY, uint32_t color){
 }
 
 void zeroingShwMtrx(){
-  int i,j;
+  uint8_t i,j;
   for(j = 0; j < SHOW_MATRIX_HEIGHT; j++){
     for(i = 0; i < SHOW_MATRIX_LENGHT; i++){
       showMatrix[j][i] = 0;
@@ -545,7 +495,7 @@ void zeroingShwMtrx(){
 }
   
 void nextRunnableStep(){
-    int i,j;
+    uint8_t i,j;
     alfabetEntry wrkAE;
     char curChr = workString[curCharIndex];
     wrkAE = findAlfabetEntryByChar(curChr);
@@ -558,21 +508,21 @@ void nextRunnableStep(){
     }
     
     for(j = 0; j < SHOW_MATRIX_HEIGHT; j++){
-      showMatrix[j][shwMtrxPnrt] = **(wrkAE.alfabetMatrix + j*wrkAE.lenght + curCharPartIndex)>0?0:1;
+      showMatrix[j][shwMtrxPnrt] = (byte**)(wrkAE.alfabetMatrix + j*wrkAE.lenght + curCharPartIndex)>0?1:0;
       //showMatrix[j][shwMtrxPnrt] = wrkAE.alfabetMatrix[j][curCharPartIndex];//>0?0:1;
     }
     curCharPartIndex++;
 }
 
 void nextFlashingStep(){
-    int i,j, redrawingNeed;
+    uint8_t i,j, redrawingNeed;
     alfabetEntry wrkAE;
     char curChr = workString[curCharIndex];
     wrkAE = findAlfabetEntryByChar(curChr);
     redrawingNeed = 0;
   
     //first string character
-    if(curSymbolBrightness == 0 && increasingBrightness == 0){
+    if(curSymbolBrightness <= 0 && increasingBrightness == 0){
       increasingBrightness = 1;
       redrawingNeed=1;
     }else if(curSymbolBrightness <= 0){
@@ -594,9 +544,9 @@ void nextFlashingStep(){
     
     if(redrawingNeed == 1){
       zeroingShwMtrx();
-      for(i = 0; i < SHOW_MATRIX_HEIGHT; i++){
-        for(j = 0; j < SHOW_MATRIX_LENGHT; j++){
-          showMatrix[i][j] = **(wrkAE.alfabetMatrix + i*wrkAE.lenght + j)>0?0:1;
+      for(i = 0; i < wrkAE.height; i++){
+        for(j = 0; j < wrkAE.lenght; j++){
+          showMatrix[i][j] = wrkAE.alfabetMatrix[i][j]>0?1:0;
           //showMatrix[j][shwMtrxPnrt] = wrkAE.alfabetMatrix[j][curCharPartIndex];//>0?0:1;
         }
       }
@@ -604,7 +554,7 @@ void nextFlashingStep(){
 }
 
 struct alfabetEntry findAlfabetEntryByChar(char chr){
-  int i;
+  uint8_t i;
   for(i = 0; i < alfabetListLenght; i++){
     if(alfabetList[i].strValue == chr){
       return alfabetList[i];
@@ -651,13 +601,13 @@ void frameCycle(uint8_t wait) {
         }
         
         //Get new column runnable string
-        nextRunnableStep();
-        shwMtrxPnrt++;
-        printShowMatrix(2,2,strip.Color(255, 0, 0));
+        //nextRunnableStep();
+        //shwMtrxPnrt++;
+        //printShowMatrix(2,2,strip.Color(255, 0, 0));
         
         //flashing
-        nextFlashingStep();
-        printShowMatrix(2,2,strip.Color(curSymbolBrightness, 0, 0));
+        //nextFlashingStep();
+        //printShowMatrix(2,2,strip.Color(curSymbolBrightness, 0, 0));
         
         strip.show();
     }
