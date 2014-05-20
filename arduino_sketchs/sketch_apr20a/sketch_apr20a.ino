@@ -376,7 +376,7 @@ alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV};
                               
 uint8_t alfabetListLenght = 4;
 
-char workString[] = "VA B V G D E ! J Z";
+char workString[] = "VAV B V G D E ! J Z";
 int curCharIndex = 0;
 int curCharPartIndex = 0;
 
@@ -522,8 +522,6 @@ void nextFlashingStep(){
        curChr = workString[curCharIndex];
        wrkAE = findAlfabetEntryByChar(curChr);
        redrawingNeed = 1;
-    }else if(curSymbolBrightness == 255){
-      increasingBrightness = 0;
     }
     
     if(increasingBrightness == 1){
@@ -532,10 +530,10 @@ void nextFlashingStep(){
       curSymbolBrightness -= brightnessStepSize;
     }
     
-    if(curSymbolBrightness > 255){
+    if(curSymbolBrightness >= 255){
       curSymbolBrightness = 255;
       increasingBrightness = 0;
-    }else if(curSymbolBrightness < 0){
+    }else if(curSymbolBrightness <= 0){
       curSymbolBrightness = 0;
       increasingBrightness = 1;
     }
