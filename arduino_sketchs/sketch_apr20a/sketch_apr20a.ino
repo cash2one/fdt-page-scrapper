@@ -442,6 +442,11 @@ char workString[] = "V  A  B  A  B  A  B  A  ";
 int curCharIndex = 0;
 int curCharPartIndex = 0;
 
+//disappearance block
+int curSymbolBrightness = 0;
+int increasingBrightness = 1;
+int brightnessStepSize = 4;
+
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
 // Parameter 3 = pixel type flags, add together as needed:
@@ -539,7 +544,7 @@ void zeroingShwMtrx(){
   }
 }
   
-void addColumnToShwMtrxRunning(){
+void nextRunnableStep(){
     int i,j;
     alfabetEntry wrkAE;
     char curChr = workString[curCharIndex];
@@ -557,6 +562,43 @@ void addColumnToShwMtrxRunning(){
       //showMatrix[j][shwMtrxPnrt] = wrkAE.alfabetMatrix[j][curCharPartIndex];//>0?0:1;
     }
     curCharPartIndex++;
+}
+
+void nextFlashingStep(){
+    int i,j, redrawingNeed;
+    alfabetEntry wrkAE;
+    char curChr = workString[curCharIndex];
+    wrkAE = findAlfabetEntryByChar(curChr);
+    redrawingNeed = 0;
+  
+    //first string character
+    if(curSymbolBrightness == 0 && increasingBrightness == 0){
+      increasingBrightness = 1;
+    }else if(curSymbolBrightness == 0){
+       increasingBrightness = 1;
+       curCharIndex++;
+       curChr = workString[curCharIndex];
+       wrkAE = findAlfabetEntryByChar(curChr);
+       redrawingNeed = 1;
+    }else if(curSymbolBrightness >= 255){
+      increasingBrightness = 0;
+    }
+    
+    if(increasingBrightness == 1){
+      curSymbolBrightness += brightnessStepSize;
+    }else{
+      curSymbolBrightness -= brightnessStepSize;
+    }
+    
+    if(redrawingNeed == 1){
+      zeroingShwMtrx();
+      for(i = 0; i < SHOW_MATRIX_HEIGHT; i++){
+        for(j = 0; j < SHOW_MATRIX_LENGHT; j++){
+          showMatrix[i][j] = **(wrkAE.alfabetMatrix + i*wrkAE.lenght + j)>0?0:1;
+          //showMatrix[j][shwMtrxPnrt] = wrkAE.alfabetMatrix[j][curCharPartIndex];//>0?0:1;
+        }
+      }
+    }
 }
 
 struct alfabetEntry findAlfabetEntryByChar(char chr){
@@ -606,9 +648,15 @@ void frameCycle(uint8_t wait) {
           shwMtrxPnrt = 0;
         }
         
-        addColumnToShwMtrxRunning();
+        //Get new column runnable string
+        nextRunnableStep();
         shwMtrxPnrt++;
         printShowMatrix(2,2,strip.Color(255, 0, 0));
+        
+        //flashing
+        nextFlashingStep();
+        printShowMatrix(2,2,strip.Color(curSymbolBrightness, 0, 0));
+        
         strip.show();
     }
     
