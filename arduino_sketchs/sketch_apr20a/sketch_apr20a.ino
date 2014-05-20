@@ -17,35 +17,20 @@ struct alfabetEntry
 {
   char strValue;
   uint8_t lenght;
-  uint8_t height;
-  uint8_t** alfabetMatrix;
+  uint8_t* alfabetMatrix;
 };
 
-uint8_t symbolRusSpace[8][2] = {{0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}, {0,0}};
+uint8_t symbolRusSpace[2] = {0,0};
 
 //А
-uint8_t symbolRusA[8][5] = {{0,1,1,1,0}, {1,0,0,0,1}, {1,0,0,0,1}, {1,0,0,0,1},  {1,1,1,1,1}, {1,0,0,0,1},  {1,0,0,0,1}, {1,0,0,0,1}};
+uint8_t symbolRusA[5] = {127,136,136,136,127};
 //Б                        
-uint8_t symbolRusB[8][5] = {{1,1,1,1,0},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,1,1,1,0},
-                        {1,0,0,0,1},
-                        {1,0,0,0,1},
-                        {1,0,0,0,1},
-                        {1,1,1,1,1}};
+uint8_t symbolRusB[5] = {255,145,145,145,14};
 //В                        
-uint8_t symbolRusV[8][5] = {{1,1,1,1,0},
-                        {1,0,0,0,1},
-                        {1,0,0,0,1},
-                        {1,1,1,1,0},
-                        {1,0,0,0,1},
-                        {1,0,0,0,1},
-                        {1,0,0,0,1},
-                        {1,1,1,1,1}};
+uint8_t symbolRusV[5] = {255,145,145,145,110};
 						
 //Г                        
-uint8_t symbolRusG[8][5] = {{1,1,1,1,1},
+/*uint8_t symbolRusG[8][5] = {{1,1,1,1,1},
                         {1,0,0,0,0},
                         {1,0,0,0,0},
                         {1,0,0,0,0},
@@ -343,13 +328,13 @@ uint8_t symbolRusYa[8][5] = {{0, 1, 1, 1, 0},
 						{0, 1, 1, 1, 1},
 						{0, 0, 1, 0, 1},
 						{0, 1, 0, 0, 1},
-						{1, 0, 0, 0, 1}};
+						{1, 0, 0, 0, 1}};*/
 
-struct alfabetEntry entrySpace = {' ',2,8,(uint8_t**)symbolRusSpace};                     
-struct alfabetEntry entryA = {'A',5,8,(uint8_t**)symbolRusA};//А
-struct alfabetEntry entryB = {'B',5,8,(uint8_t**)symbolRusB};//Б
-struct alfabetEntry entryV = {'V',5,8,(uint8_t**)symbolRusV};//В					
-struct alfabetEntry entryG = {'G',5,8,(uint8_t**)symbolRusG};//Г
+struct alfabetEntry entrySpace = {' ',2,(uint8_t*)symbolRusSpace};                     
+struct alfabetEntry entryA = {'A',5,(uint8_t*)symbolRusA};//А
+struct alfabetEntry entryB = {'B',5,(uint8_t*)symbolRusB};//Б
+struct alfabetEntry entryV = {'V',5,(uint8_t*)symbolRusV};//В					
+/*struct alfabetEntry entryG = {'G',5,8,(uint8_t**)symbolRusG};//Г
 struct alfabetEntry entryD = {'D',6,8,(uint8_t**)symbolRusD};//Д						
 struct alfabetEntry entryE = {'E',5,8,(uint8_t**)symbolRusE};//Е						
 struct alfabetEntry entryEO = {'!',5,8,(uint8_t**)symbolRusEO};//Ё						
@@ -378,27 +363,27 @@ struct alfabetEntry entryYY = {'*',8,7,(uint8_t**)symbolRusYY};//Ы
 struct alfabetEntry entrySoft = {'(',8,5,(uint8_t**)symbolRusSoft};//Ь
 struct alfabetEntry entryEE = {')',8,5,(uint8_t**)symbolRusEE};//Э 
 struct alfabetEntry entryU = {'U',8,6,(uint8_t**)symbolRusU};//Ю
-struct alfabetEntry entryYa = {'+',8,5,(uint8_t**)symbolRusYa};//Я
+struct alfabetEntry entryYa = {'+',8,5,(uint8_t**)symbolRusYa};//Я*/
 
-alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD, 
+/*alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD, 
                               entryE, entryEO, entryJ, entryZ, entryI, entryII, 
                               entryK, entryL, entryM, entryN, entryO, entryP, 
                               entryR, entryS, entryT, entryY, entryF, entryX, 
                               entryCC, entryCh, entrySh, entrySCH, entryHard, 
-                              entryYY, entrySoft, entryEE, entryU, entryYa};
+                              entryYY, entrySoft, entryEE, entryU, entryYa};*/
                               
-//alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD, entryE};
+alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV};
                               
-uint8_t alfabetListLenght = 34;
+uint8_t alfabetListLenght = 4;
 
-char workString[] = "A B V G D E ! J Z";
-uint8_t curCharIndex = 0;
-uint8_t curCharPartIndex = 0;
+char workString[] = "VA B V G D E ! J Z";
+int curCharIndex = 0;
+int curCharPartIndex = 0;
 
 //disappearance block
-uint8_t curSymbolBrightness = 0;
-uint8_t increasingBrightness = 1;
-uint8_t brightnessStepSize = 16;
+int curSymbolBrightness = 0;
+int increasingBrightness = 0;
+int brightnessStepSize = 10;
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
@@ -507,10 +492,15 @@ void nextRunnableStep(){
       curCharPartIndex = 0;
     }
     
-    for(j = 0; j < SHOW_MATRIX_HEIGHT; j++){
-      showMatrix[j][shwMtrxPnrt] = (byte**)(wrkAE.alfabetMatrix + j*wrkAE.lenght + curCharPartIndex)>0?1:0;
-      //showMatrix[j][shwMtrxPnrt] = wrkAE.alfabetMatrix[j][curCharPartIndex];//>0?0:1;
-    }
+    showMatrix[0][shwMtrxPnrt] = (128 & wrkAE.alfabetMatrix[curCharPartIndex])?1:0;
+    showMatrix[1][shwMtrxPnrt] = (64 & wrkAE.alfabetMatrix[curCharPartIndex])?1:0;
+    showMatrix[2][shwMtrxPnrt] = (32 & wrkAE.alfabetMatrix[curCharPartIndex])?1:0;
+    showMatrix[3][shwMtrxPnrt] = (16 & wrkAE.alfabetMatrix[curCharPartIndex])?1:0;
+    showMatrix[4][shwMtrxPnrt] = (8 & wrkAE.alfabetMatrix[curCharPartIndex])?1:0;
+    showMatrix[5][shwMtrxPnrt] = (4 & wrkAE.alfabetMatrix[curCharPartIndex])?1:0;
+    showMatrix[6][shwMtrxPnrt] = (2 & wrkAE.alfabetMatrix[curCharPartIndex])?1:0;
+    showMatrix[7][shwMtrxPnrt] = (1 & wrkAE.alfabetMatrix[curCharPartIndex])?1:0;
+   
     curCharPartIndex++;
 }
 
@@ -522,17 +512,17 @@ void nextFlashingStep(){
     redrawingNeed = 0;
   
     //first string character
-    if(curSymbolBrightness <= 0 && increasingBrightness == 0){
+    if(increasingBrightness == 0 && curSymbolBrightness == 0 ){
       increasingBrightness = 1;
       redrawingNeed=1;
-    }else if(curSymbolBrightness <= 0){
+    }else if(curSymbolBrightness == 0){
        //getting new char from string and start new flashing process
        increasingBrightness = 1;
        curCharIndex++;
        curChr = workString[curCharIndex];
        wrkAE = findAlfabetEntryByChar(curChr);
        redrawingNeed = 1;
-    }else if(curSymbolBrightness >= 255){
+    }else if(curSymbolBrightness == 255){
       increasingBrightness = 0;
     }
     
@@ -542,13 +532,25 @@ void nextFlashingStep(){
       curSymbolBrightness -= brightnessStepSize;
     }
     
+    if(curSymbolBrightness > 255){
+      curSymbolBrightness = 255;
+      increasingBrightness = 0;
+    }else if(curSymbolBrightness < 0){
+      curSymbolBrightness = 0;
+      increasingBrightness = 1;
+    }
+    
     if(redrawingNeed == 1){
       zeroingShwMtrx();
-      for(i = 0; i < wrkAE.height; i++){
-        for(j = 0; j < wrkAE.lenght; j++){
-          showMatrix[i][j] = wrkAE.alfabetMatrix[i][j]>0?1:0;
-          //showMatrix[j][shwMtrxPnrt] = wrkAE.alfabetMatrix[j][curCharPartIndex];//>0?0:1;
-        }
+      for(i = 0; i < wrkAE.lenght; i++){
+        showMatrix[0][i] = (128 & wrkAE.alfabetMatrix[i])?1:0;
+        showMatrix[1][i] = (64 & wrkAE.alfabetMatrix[i])?1:0;
+        showMatrix[2][i] = (32 & wrkAE.alfabetMatrix[i])?1:0;
+        showMatrix[3][i] = (16 & wrkAE.alfabetMatrix[i])?1:0;
+        showMatrix[4][i] = (8 & wrkAE.alfabetMatrix[i])?1:0;
+        showMatrix[5][i] = (4 & wrkAE.alfabetMatrix[i])?1:0;
+        showMatrix[6][i] = (2 & wrkAE.alfabetMatrix[i])?1:0;
+        showMatrix[7][i] = (1 & wrkAE.alfabetMatrix[i])?1:0;
       }
     }
 }
@@ -595,6 +597,15 @@ void frameCycle(uint8_t wait) {
     /*for (int i=0; i < strip.numPixels(); i++) {
       strip.setPixelColor(i, 0);
     }*/
+    
+    if(j % 1 == 0){     
+        //flashing
+        nextFlashingStep();
+        printShowMatrix(2,2,strip.Color(curSymbolBrightness, 0, 0));
+        
+        strip.show();
+    }
+    
     if(j % 8 == 0){
         if(shwMtrxPnrt == SHOW_MATRIX_LENGHT){
           shwMtrxPnrt = 0;
@@ -605,19 +616,15 @@ void frameCycle(uint8_t wait) {
         //shwMtrxPnrt++;
         //printShowMatrix(2,2,strip.Color(255, 0, 0));
         
-        //flashing
-        //nextFlashingStep();
-        //printShowMatrix(2,2,strip.Color(curSymbolBrightness, 0, 0));
-        
         strip.show();
     }
     
     //printAlfabet(alfabetA, 20, j % 17 - 4, 2, strip.Color(255, 0, 0));
   
-    for(i=0; i < 52; i++) {
+    /*for(i=0; i < 52; i++) {
       //strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels()) + j) & 255));
       strip.setPixelColor(getPixelNumber(frameCoordinate[i].x, frameCoordinate[i].y), Wheel(((i * 256 / 52) + j) & 255));
-    }
+    }*/
         
     strip.show();
     delay(wait);
