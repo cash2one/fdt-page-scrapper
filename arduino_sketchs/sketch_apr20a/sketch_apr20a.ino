@@ -574,7 +574,9 @@ void nextFlashingStep(){
     //first string character
     if(curSymbolBrightness == 0 && increasingBrightness == 0){
       increasingBrightness = 1;
-    }else if(curSymbolBrightness == 0){
+      redrawingNeed=1;
+    }else if(curSymbolBrightness <= 0){
+       //getting new char from string and start new flashing process
        increasingBrightness = 1;
        curCharIndex++;
        curChr = workString[curCharIndex];
