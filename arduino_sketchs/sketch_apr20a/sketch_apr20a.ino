@@ -27,354 +27,112 @@ uint8_t symbolRusA[5] = {127,136,136,136,127};
 //Б                        
 uint8_t symbolRusB[5] = {255,145,145,145,14};
 //В                        
-uint8_t symbolRusV[5] = {255,145,145,145,110};
-						
+uint8_t symbolRusV[5] = {255,145,145,145,110};			
 //Г                        
-/*uint8_t symbolRusG[8][5] = {{1,1,1,1,1},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0}};
-						
-//Д                        
-uint8_t symbolRusD[8][6] = {{0,1,1,1,1,0},
-                        {0,1,0,0,1,0},
-                        {0,1,0,0,1,0},
-                        {0,1,0,0,1,0},
-                        {0,1,0,0,1,0},
-                        {0,1,0,0,1,0},
-                        {1,1,1,1,1,1},
-                        {1,0,0,0,0,1}};
-						
-//Е                       
-uint8_t symbolRusE[8][5] = {{1,1,1,1,1},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,1,1,1,0},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,1,1,1,1}};
-						
-//Ё                       
-uint8_t symbolRusEO[8][5] = {{0,1,0,1,0},
-                        {1,1,1,1,1},
-                        {1,0,0,0,0},
-                        {1,1,1,1,0},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,0,0,0,0},
-                        {1,1,1,1,1}};
-						
+uint8_t symbolRusG[5] = {255,128,128,128,128};			
+//Д			
+uint8_t symbolRusD[6] = {3,254,130,130,254,3};			
+//Е		       
+uint8_t symbolRusE[5] = {255,145,145,145,129};			
+//Ё		       
+uint8_t symbolRusEO[5] = {127,201,73,201,65};			
 //Ж
-uint8_t symbolRusJ[8][7] = {{1, 0, 0, 1, 0, 0, 1},
-						{1, 0, 0, 1, 0, 0, 1},
-						{0, 1, 0, 1, 0, 1, 0},
-						{0, 0, 1, 1, 1, 0, 0},
-						{0, 1, 0, 1, 0, 1, 0},
-						{1, 0, 0, 1, 0, 0, 1},
-						{1, 0, 0, 1, 0, 0, 1},
-						{1, 0, 0, 1, 0, 0, 1}};
-						
+uint8_t symbolRusJ[7] = {199,40,16,255,16,40,199};
 //З
-uint8_t symbolRusZ[8][5] = {{1, 1, 1, 1, 0},
-						{0, 0, 0, 0, 1},
-						{0, 0, 0, 0, 1},
-						{0, 1, 1, 1, 0},
-						{0, 0, 0, 0, 1},
-						{0, 0, 0, 0, 1},
-						{0, 0, 0, 0, 1},
-						{1, 1, 1, 1, 0}};
-
+uint8_t symbolRusZ[5] = {129,145,145,145,110};
 //И
-uint8_t symbolRusI[8][5] = {{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 1, 1},
-						{1, 0, 1, 0, 1},
-						{1, 1, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1}};
-
+uint8_t symbolRusI[5] = {255,8,16,32,255};
 //Й
-uint8_t symbolRusII[8][5] = {{1, 0, 1, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 1, 1},
-						{1, 0, 1, 0, 1},
-						{1, 1, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1}};
-
+uint8_t symbolRusII[5] = {255,8,144,32,255};
 //К
-uint8_t symbolRusK[8][5] = {{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 1, 0},
-						{1, 1, 1, 0, 0},
-						{1, 0, 0, 1, 0},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1}};
-
+uint8_t symbolRusK[5] = {255,16,16,40,199};
 //Л
-uint8_t symbolRusL[8][5] = {{0, 0, 1, 1, 1},
-    			{0, 1, 0, 0, 1},
-    			{1, 0, 0, 0, 1},
-    			{1, 0, 0, 0, 1},
-    						{1, 0, 0, 0, 1},
-    						{1, 0, 0, 0, 1},
-    						{1, 0, 0, 0, 1},
-    						{1, 0, 0, 0, 1}};
-
+uint8_t symbolRusL[5] = {63,64,128,128,255};
 //М
-uint8_t symbolRusM[8][7] = {{1, 0, 0, 0, 0, 0, 1},
-						{1, 1, 0, 0, 0, 1, 1},
-						{1, 0, 1, 0, 1, 0, 1},
-						{1, 0, 0, 1, 0, 0, 1},
-						{1, 0, 0, 0, 0, 0, 1},
-						{1, 0, 0, 0, 0, 0, 1},
-						{1, 0, 0, 0, 0, 0, 1},
-						{1, 0, 0, 0, 0, 0, 1}};
-
+uint8_t symbolRusM[7] = {255,64,32,16,32,64,255};
 //Н
-uint8_t symbolRusN[8][5] = {{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 1, 1, 1, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1}};
-
+uint8_t symbolRusN[5] = {255,16,16,16,255};
 //О
-uint8_t symbolRusO[8][5] = {{0, 1, 1, 1, 0},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{0, 1, 1, 1, 0}};
-
+uint8_t symbolRusO[5] = {126,129,129,129,126};
 //П
-uint8_t symbolRusP[8][5] = {{1, 1, 1, 1, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1}};
-
+uint8_t symbolRusP[5] = {255,128,128,128,255};
 //Р
-uint8_t symbolRusR[8][5] = {{1, 1, 1, 1, 0},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 1, 1, 1, 0},
-						{1, 0, 0, 0, 0},
-						{1, 0, 0, 0, 0},
-						{1, 0, 0, 0, 0}};
-
+uint8_t symbolRusR[5] = {255,136,136,136,112};
 //С
-uint8_t symbolRusS[8][5] = {{0, 1, 1, 1, 0},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 0},
-						{1, 0, 0, 0, 0},
-						{1, 0, 0, 0, 0},
-						{1, 0, 0, 0, 0},
-						{1, 0, 0, 0, 1},
-						{0, 1, 1, 1, 0}};
-
+uint8_t symbolRusS[5] = {126,129,129,129,66};
 //Т
-uint8_t symbolRusT[8][5] = {{1, 1, 1, 1, 1},
-						{0, 0, 1, 0, 0},
-						{0, 0, 1, 0, 0},
-						{0, 0, 1, 0, 0},
-						{0, 0, 1, 0, 0},
-						{0, 0, 1, 0, 0},
-						{0, 0, 1, 0, 0},
-						{0, 0, 1, 0, 0}};
-
+uint8_t symbolRusT[5] = {128,128,255,128,128};
 //У
-uint8_t symbolRusY[8][5] = {{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{0, 1, 1, 1, 1},
-						{0, 0, 0, 0, 1},
-						{0, 0, 0, 0, 1},
-						{0, 1, 1, 1, 0}};
-
+uint8_t symbolRusY[5] = {240,9,9,9,254};
 //Ф
-uint8_t symbolRusF[8][7] = {{0, 1, 1, 1, 1, 1, 0},
-						{1, 0, 0, 1, 0, 0, 1},
-						{1, 0, 0, 1, 0, 0, 1},
-						{1, 0, 0, 1, 0, 0, 1},
-						{0, 1, 1, 1, 1, 1, 0},
-						{0, 0, 0, 1, 0, 0, 0},
-						{0, 0, 0, 1, 0, 0, 0},
-						{0, 0, 0, 1, 0, 0, 0}};
-
+uint8_t symbolRusF[7] = {112,136,136,255,136,136,112};
 //Х
-uint8_t symbolRusX[8][5] = {{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{0, 1, 0, 1, 0},
-						{0, 0, 1, 0, 0},
-						{0, 1, 0, 1, 0},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1}};
-
+uint8_t symbolRusX[5] = {199,40,16,40,199};
 //Ц
-uint8_t symbolRusCC[9][6] = {{1, 0, 0, 0, 1, 0},
-			{1, 0, 0, 0, 1, 0},
-			{1, 0, 0, 0, 1, 0},
-			{1, 0, 0, 0, 1, 0},
-			{1, 0, 0, 0, 1, 0},
-			{1, 0, 0, 0, 1, 0},
-			{1, 0, 0, 0, 1, 0},
-			{1, 1, 1, 1, 1, 1},
-			{0, 0, 0, 0, 0, 1}};
-
+uint8_t symbolRusCC[6] = {254,2,2,2,254,3};
 //Ч
-uint8_t symbolRusCh[8][5] = {{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{0, 1, 1, 1, 1},
-						{0, 0, 0, 0, 1},
-						{0, 0, 0, 0, 1},
-						{0, 0, 0, 0, 1}};
-
+uint8_t symbolRusCh[5] = {240,8,8,8,255};
 //Ш
-uint8_t symbolRusSh[8][5] = {{1, 0, 1, 0, 1},
-						{1, 0, 1, 0, 1},
-						{1, 0, 1, 0, 1},
-						{1, 0, 1, 0, 1},
-						{1, 0, 1, 0, 1},
-						{1, 0, 1, 0, 1},
-						{1, 0, 1, 0, 1},
-						{1, 1, 1, 1, 1}};
-
+uint8_t symbolRusSh[5] = {255,1,255,1,255};
 //Щ
-uint8_t symbolRusSCH[9][6] = {{1, 0, 1, 0, 1, 0},
-						{1, 0, 1, 0, 1, 0},
-						{1, 0, 1, 0, 1, 0},
-						{1, 0, 1, 0, 1, 0},
-						{1, 0, 1, 0, 1, 0},
-						{1, 0, 1, 0, 1, 0},
-						{1, 0, 1, 0, 1, 0},
-						{1, 1, 1, 1, 1, 1},
-						{0, 0, 0, 0, 0, 1}};
-
+uint8_t symbolRusSCH[6] = {254,2,254,2,254,3};
 //Ъ
-uint8_t symbolRusHard[8][6] = {	{1, 1, 0, 0, 0, 0},
-							{0, 1, 0, 0, 0, 0},
-							{0, 1, 0, 0, 0, 0},
-							{0, 1, 1, 1, 1, 0},
-							{0, 1, 0, 0, 0, 1},
-							{0, 1, 0, 0, 0, 1},
-							{0, 1, 0, 0, 0, 1},
-							{0, 1, 1, 1, 1, 0}};
-
+uint8_t symbolRusHard[6] = {128,255,17,17,17,14};
 //Ы
-uint8_t symbolRusYY[8][7] = {{1, 0, 0, 0, 0, 0, 1},
-						{1, 0, 0, 0, 0, 0, 1},
-						{1, 0, 0, 0, 0, 0, 1},
-						{1, 1, 1, 1, 0, 0, 1},
-						{1, 0, 0, 0, 1, 0, 1},
-						{1, 0, 0, 0, 1, 0, 1},
-						{1, 0, 0, 0, 1, 0, 1},
-						{1, 1, 1, 1, 0, 0, 1}};
-
+uint8_t symbolRusYY[7] = {255,17,17,17,14,0,255};
 //Ь
-uint8_t symbolRusSoft[8][5] = {{1, 0, 0, 0, 0},
-						{1, 0, 0, 0, 0},
-						{1, 0, 0, 0, 0},
-						{1, 1, 1, 1, 0},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{1, 1, 1, 1, 0}};
-
+uint8_t symbolRusSoft[5] = {255,17,17,17,14};
 //Э
-uint8_t symbolRusEE[8][5] = {{0, 1, 1, 1, 0},
-						{1, 0, 0, 0, 1},
-						{0, 0, 0, 0, 1},
-						{0, 0, 1, 1, 1},
-						{0, 0, 0, 0, 1},
-						{0, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{0, 1, 1, 1, 0}};
-
+uint8_t symbolRusEE[5] = {66,129,145,145,126};
 //Ю
-uint8_t symbolRusU[8][6] = {{1, 0, 0, 1, 1, 0},
-						{1, 0, 1, 0, 0, 1},
-						{1, 0, 1, 0, 0, 1},
-						{1, 1, 1, 0, 0, 1},
-						{1, 0, 1, 0, 0, 1},
-						{1, 0, 1, 0, 0, 1},
-						{1, 0, 1, 0, 0, 1},
-						{1, 0, 0, 1, 1, 0}};
-
+uint8_t symbolRusU[6] = {255,16,126,129,129,126};
 //Я
-uint8_t symbolRusYa[8][5] = {{0, 1, 1, 1, 0},
-						{1, 0, 0, 0, 1},
-						{1, 0, 0, 0, 1},
-						{0, 1, 1, 1, 1},
-						{0, 0, 1, 0, 1},
-						{0, 1, 0, 0, 1},
-						{1, 0, 0, 0, 1}};*/
+uint8_t symbolRusYa[5] = {99,148,152,144,127};
 
-struct alfabetEntry entrySpace = {' ',2,(uint8_t*)symbolRusSpace};                     
+struct alfabetEntry entrySpace = {' ',2,(uint8_t*)symbolRusSpace};		     
 struct alfabetEntry entryA = {'A',5,(uint8_t*)symbolRusA};//А
 struct alfabetEntry entryB = {'B',5,(uint8_t*)symbolRusB};//Б
-struct alfabetEntry entryV = {'V',5,(uint8_t*)symbolRusV};//В					
-/*struct alfabetEntry entryG = {'G',5,8,(uint8_t**)symbolRusG};//Г
-struct alfabetEntry entryD = {'D',6,8,(uint8_t**)symbolRusD};//Д						
-struct alfabetEntry entryE = {'E',5,8,(uint8_t**)symbolRusE};//Е						
-struct alfabetEntry entryEO = {'!',5,8,(uint8_t**)symbolRusEO};//Ё						
-struct alfabetEntry entryJ = {'J',7,8,(uint8_t**)symbolRusJ};//Ж
-struct alfabetEntry entryZ = {'Z',5,8,(uint8_t**)symbolRusZ};//З
-struct alfabetEntry entryI = {'I',8,5,(uint8_t**)symbolRusI};//И
-struct alfabetEntry entryII = {'@',8,5,(uint8_t**)symbolRusII};//Й
-struct alfabetEntry entryK = {'K',8,5,(uint8_t**)symbolRusK};//К
-struct alfabetEntry entryL = {'L',8,5,(uint8_t**)symbolRusL};//Л
-struct alfabetEntry entryM = {'M',8,7,(uint8_t**)symbolRusM};//М 
-struct alfabetEntry entryN = {'N',8,5,(uint8_t**)symbolRusN};//Н
-struct alfabetEntry entryO = {'O',8,5,(uint8_t**)symbolRusO};//О
-struct alfabetEntry entryP = {'P',8,5,(uint8_t**)symbolRusP};//П
-struct alfabetEntry entryR = {'R',8,5,(uint8_t**)symbolRusR};//Р
-struct alfabetEntry entryS = {'S',8,5,(uint8_t**)symbolRusS};//С
-struct alfabetEntry entryT = {'T',8,5,(uint8_t**)symbolRusT};//Т
-struct alfabetEntry entryY = {'Y',8,5,(uint8_t**)symbolRusY};//У
-struct alfabetEntry entryF = {'F',8,7,(uint8_t**)symbolRusF};//Ф
-struct alfabetEntry entryX = {'X',8,5,(uint8_t**)symbolRusX};//Х 
-struct alfabetEntry entryCC = {'#',9,6,(uint8_t**)symbolRusCC};//Ц
-struct alfabetEntry entryCh = {'$',8,5,(uint8_t**)symbolRusCh};//Ч
-struct alfabetEntry entrySh = {'%',8,5,(uint8_t**)symbolRusSh};//Ш
-struct alfabetEntry entrySCH = {'^',9,6,(uint8_t**)symbolRusSCH};//Щ
-struct alfabetEntry entryHard = {'&',8,6,(uint8_t**)symbolRusHard};//Ъ 
-struct alfabetEntry entryYY = {'*',8,7,(uint8_t**)symbolRusYY};//Ы
-struct alfabetEntry entrySoft = {'(',8,5,(uint8_t**)symbolRusSoft};//Ь
-struct alfabetEntry entryEE = {')',8,5,(uint8_t**)symbolRusEE};//Э 
-struct alfabetEntry entryU = {'U',8,6,(uint8_t**)symbolRusU};//Ю
-struct alfabetEntry entryYa = {'+',8,5,(uint8_t**)symbolRusYa};//Я*/
+struct alfabetEntry entryV = {'V',5,(uint8_t*)symbolRusV};//В			
+struct alfabetEntry entryG = {'G',5,(uint8_t*)symbolRusG};//Г
+struct alfabetEntry entryD = {'D',6,(uint8_t*)symbolRusD};//Д			
+struct alfabetEntry entryE = {'E',5,(uint8_t*)symbolRusE};//Е			
+struct alfabetEntry entryEO = {'!',5,(uint8_t*)symbolRusEO};//Ё			
+struct alfabetEntry entryJ = {'J',7,(uint8_t*)symbolRusJ};//Ж
+struct alfabetEntry entryZ = {'Z',5,(uint8_t*)symbolRusZ};//З
+struct alfabetEntry entryI = {'I',5,(uint8_t*)symbolRusI};//И
+struct alfabetEntry entryII = {'@',5,(uint8_t*)symbolRusII};//Й
+struct alfabetEntry entryK = {'K',5,(uint8_t*)symbolRusK};//К
+struct alfabetEntry entryL = {'L',5,(uint8_t*)symbolRusL};//Л
+struct alfabetEntry entryM = {'M',7,(uint8_t*)symbolRusM};//М 
+struct alfabetEntry entryN = {'N',5,(uint8_t*)symbolRusN};//Н
+struct alfabetEntry entryO = {'O',5,(uint8_t*)symbolRusO};//О
+struct alfabetEntry entryP = {'P',5,(uint8_t*)symbolRusP};//П
+struct alfabetEntry entryR = {'R',5,(uint8_t*)symbolRusR};//Р
+struct alfabetEntry entryS = {'S',5,(uint8_t*)symbolRusS};//С
+struct alfabetEntry entryT = {'T',5,(uint8_t*)symbolRusT};//Т
+struct alfabetEntry entryY = {'Y',5,(uint8_t*)symbolRusY};//У
+struct alfabetEntry entryF = {'F',7,(uint8_t*)symbolRusF};//Ф
+struct alfabetEntry entryX = {'X',5,(uint8_t*)symbolRusX};//Х 
+struct alfabetEntry entryCC = {'#',6,(uint8_t*)symbolRusCC};//Ц
+struct alfabetEntry entryCh = {'$',5,(uint8_t*)symbolRusCh};//Ч
+struct alfabetEntry entrySh = {'%',5,(uint8_t*)symbolRusSh};//Ш
+struct alfabetEntry entrySCH = {'^',6,(uint8_t*)symbolRusSCH};//Щ
+struct alfabetEntry entryHard = {'&',6,(uint8_t*)symbolRusHard};//Ъ 
+struct alfabetEntry entryYY = {'*',7,(uint8_t*)symbolRusYY};//Ы
+struct alfabetEntry entrySoft = {'(',5,(uint8_t*)symbolRusSoft};//Ь
+struct alfabetEntry entryEE = {')',5,(uint8_t*)symbolRusEE};//Э 
+struct alfabetEntry entryU = {'U',6,(uint8_t*)symbolRusU};//Ю
+struct alfabetEntry entryYa = {'+',5,(uint8_t*)symbolRusYa};//Я
 
-/*alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD, 
-                              entryE, entryEO, entryJ, entryZ, entryI, entryII, 
-                              entryK, entryL, entryM, entryN, entryO, entryP, 
-                              entryR, entryS, entryT, entryY, entryF, entryX, 
-                              entryCC, entryCh, entrySh, entrySCH, entryHard, 
-                              entryYY, entrySoft, entryEE, entryU, entryYa};*/
-                              
-alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV};
-                              
-uint8_t alfabetListLenght = 4;
+alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD, 
+			      entryE, entryEO, entryJ, entryZ, entryI, entryII, 
+			      entryK, entryL, entryM, entryN, entryO, entryP, 
+			      entryR, entryS, entryT, entryY, entryF, entryX, 
+			      entryCC, entryCh, entrySh, entrySCH, entryHard, 
+			      entryYY, entrySoft, entryEE, entryU, entryYa};
+			      
+			      
+uint8_t alfabetListLenght = 34;
 
 char workString[] = "VAV B V G D E ! J Z";
 int curCharIndex = 0;
@@ -405,18 +163,18 @@ uint8_t shwMtrxPnrt = 0;
 stripPixel frameCoordinate[52] = {{0,0},{1,0},{2,0},{3,0},{4,0},{5,0},{6,0},{7,0},{8,0},{9,0},{10,0},{11,0},{12,0},{13,0},{14,0},{15,0},{15,1},{15,2},{15,3},{15,4},{15,5},{15,6},{15,7},{15,8},{15,9},{15,10},{15,11},{14,11},{13,11},{12,11},{11,11},{10,11},{9,11},{8,11},{7,11},{6,11},{5,11},{4,11},{3,11},{2,11},{1,11},{0,11},{0,10},{0,9},{0,8},{0,7},{0,6},{0,5},{0,4},{0,3},{0,2},{0,1}};
 
 uint8_t frameMapping[12][16] = {{0,	1,	2,	3,	4,	5,	6,	7,	8,	9,	10,	11,	12,	13,	14,	15},
-                          {31,	30,	29,	28,	27,	26,	25,	24,	23,	22,	21,	20,	19,	18,	17,	16},
-                          {32,	33,	34,	35,	36,	37,	38,	39,	40,	41,	42,	43,	44,	45,	46,	47},
-                          {63,	62,	61,	60,	59,	58,	57,	56,	55,	54,	53,	52,	51,	50,	49,	48},
-                          {64,	65,	66,	67,	68,	69,	70,	71,	72,	73,	74,	75,	76,	77,	78,	79},
-                          {95,	94,	93,	92,	91,	90,	89,	88,	87,	86,	85,	84,	83,	82,	81,	80},
-                          {96,	97,	98,	99,	100,	101,	102,	103,	104,	105,	106,	107,	108,	109,	110,	111},
-                          {127,	126,	125,	124,	123,	122,	121,	120,	119,	118,	117,	116,	115,	114,	113,	112},
-                          {128,	129,	130,	131,	132,	133,	134,	135,	136,	137,	138,	139,	140,	141,	142,	143},
-                          {159,	158,	157,	156,	155,	154,	153,	152,	151,	150,	149,	148,	147,	146,	145,	144},
-                          {160,	161,	162,	163,	164,	165,	166,	167,	168,	169,	170,	171,	172,	173,	174,	175},
-                          {191,	190,	189,	188,	187,	186,	185,	184,	183,	182,	181,	180,	179,	178,	177,	176}};
-                          
+			  {31,	30,	29,	28,	27,	26,	25,	24,	23,	22,	21,	20,	19,	18,	17,	16},
+			  {32,	33,	34,	35,	36,	37,	38,	39,	40,	41,	42,	43,	44,	45,	46,	47},
+			  {63,	62,	61,	60,	59,	58,	57,	56,	55,	54,	53,	52,	51,	50,	49,	48},
+			  {64,	65,	66,	67,	68,	69,	70,	71,	72,	73,	74,	75,	76,	77,	78,	79},
+			  {95,	94,	93,	92,	91,	90,	89,	88,	87,	86,	85,	84,	83,	82,	81,	80},
+			  {96,	97,	98,	99,	100,	101,	102,	103,	104,	105,	106,	107,	108,	109,	110,	111},
+			  {127,	126,	125,	124,	123,	122,	121,	120,	119,	118,	117,	116,	115,	114,	113,	112},
+			  {128,	129,	130,	131,	132,	133,	134,	135,	136,	137,	138,	139,	140,	141,	142,	143},
+			  {159,	158,	157,	156,	155,	154,	153,	152,	151,	150,	149,	148,	147,	146,	145,	144},
+			  {160,	161,	162,	163,	164,	165,	166,	167,	168,	169,	170,	171,	172,	173,	174,	175},
+			  {191,	190,	189,	188,	187,	186,	185,	184,	183,	182,	181,	180,	179,	178,	177,	176}};
+			  
 
 
 // IMPORTANT: To reduce NeoPixel burnout risk, add 1000 uF capacitor across
@@ -461,11 +219,11 @@ void printShowMatrix(uint8_t shiftX, uint8_t shiftY, uint32_t color){
   uint8_t i, j;
   for(i = 0; i < SHOW_MATRIX_LENGHT; i++){
       for(j = 0; j < SHOW_MATRIX_HEIGHT; j++){
-          if(showMatrix[j][(i + shwMtrxPnrt) % SHOW_MATRIX_LENGHT] > 0){
-            strip.setPixelColor(getPixelNumber(i + shiftX, j + shiftY), color);
-          }else{
-            strip.setPixelColor(getPixelNumber(i + shiftX, j + shiftY), strip.Color(0, 0, 0));
-          }
+	  if(showMatrix[j][(i + shwMtrxPnrt) % SHOW_MATRIX_LENGHT] > 0){
+	    strip.setPixelColor(getPixelNumber(i + shiftX, j + shiftY), color);
+	  }else{
+	    strip.setPixelColor(getPixelNumber(i + shiftX, j + shiftY), strip.Color(0, 0, 0));
+	  }
       }
   }
 }
@@ -541,14 +299,14 @@ void nextFlashingStep(){
     if(redrawingNeed == 1){
       zeroingShwMtrx();
       for(i = 0; i < wrkAE.lenght; i++){
-        showMatrix[0][i] = (128 & wrkAE.alfabetMatrix[i])?1:0;
-        showMatrix[1][i] = (64 & wrkAE.alfabetMatrix[i])?1:0;
-        showMatrix[2][i] = (32 & wrkAE.alfabetMatrix[i])?1:0;
-        showMatrix[3][i] = (16 & wrkAE.alfabetMatrix[i])?1:0;
-        showMatrix[4][i] = (8 & wrkAE.alfabetMatrix[i])?1:0;
-        showMatrix[5][i] = (4 & wrkAE.alfabetMatrix[i])?1:0;
-        showMatrix[6][i] = (2 & wrkAE.alfabetMatrix[i])?1:0;
-        showMatrix[7][i] = (1 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[0][i] = (128 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[1][i] = (64 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[2][i] = (32 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[3][i] = (16 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[4][i] = (8 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[5][i] = (4 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[6][i] = (2 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[7][i] = (1 & wrkAE.alfabetMatrix[i])?1:0;
       }
     }
 }
@@ -597,24 +355,24 @@ void frameCycle(uint8_t wait) {
     }*/
     
     if(j % 1 == 0){     
-        //flashing
-        nextFlashingStep();
-        printShowMatrix(2,2,strip.Color(curSymbolBrightness, 0, 0));
-        
-        strip.show();
+	//flashing
+	nextFlashingStep();
+	printShowMatrix(2,2,strip.Color(curSymbolBrightness, 0, 0));
+	
+	strip.show();
     }
     
     if(j % 8 == 0){
-        if(shwMtrxPnrt == SHOW_MATRIX_LENGHT){
-          shwMtrxPnrt = 0;
-        }
-        
-        //Get new column runnable string
-        //nextRunnableStep();
-        //shwMtrxPnrt++;
-        //printShowMatrix(2,2,strip.Color(255, 0, 0));
-        
-        strip.show();
+	if(shwMtrxPnrt == SHOW_MATRIX_LENGHT){
+	  shwMtrxPnrt = 0;
+	}
+	
+	//Get new column runnable string
+	//nextRunnableStep();
+	//shwMtrxPnrt++;
+	//printShowMatrix(2,2,strip.Color(255, 0, 0));
+	
+	strip.show();
     }
     
     //printAlfabet(alfabetA, 20, j % 17 - 4, 2, strip.Color(255, 0, 0));
@@ -623,7 +381,7 @@ void frameCycle(uint8_t wait) {
       //strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels()) + j) & 255));
       strip.setPixelColor(getPixelNumber(frameCoordinate[i].x, frameCoordinate[i].y), Wheel(((i * 256 / 52) + j) & 255));
     }*/
-        
+	
     strip.show();
     delay(wait);
   }
@@ -642,14 +400,14 @@ void theaterChase(uint32_t c, uint8_t wait) {
   for (int j=0; j<10; j++) { //do 10 cycles of chasing
     for (int q=0; q < 3; q++) {
       for (int i=0; i < strip.numPixels(); i=i+3) {
-        strip.setPixelColor(i+q, c); //turn every third pixel on
+	strip.setPixelColor(i+q, c); //turn every third pixel on
       }
       strip.show();
      
       delay(wait);
      
       for (int i=0; i < strip.numPixels(); i=i+3) {
-        strip.setPixelColor(i+q, 0); //turn every third pixel off
+	strip.setPixelColor(i+q, 0); //turn every third pixel off
       }
     }
   }
@@ -659,16 +417,16 @@ void theaterChase(uint32_t c, uint8_t wait) {
 void theaterChaseRainbow(uint8_t wait) {
   for (int j=0; j < 256; j++) { // cycle all 256 colors in the wheel
     for (int q=0; q < 3; q++) {
-        for (int i=0; i < strip.numPixels(); i=i+3) {
-          strip.setPixelColor(i+q, Wheel( (i+j) % 255)); //turn every third pixel on
-        }
-        strip.show();
+	for (int i=0; i < strip.numPixels(); i=i+3) {
+	  strip.setPixelColor(i+q, Wheel( (i+j) % 255)); //turn every third pixel on
+	}
+	strip.show();
        
-        delay(wait);
+	delay(wait);
        
-        for (int i=0; i < strip.numPixels(); i=i+3) {
-          strip.setPixelColor(i+q, 0); //turn every third pixel off
-        }
+	for (int i=0; i < strip.numPixels(); i=i+3) {
+	  strip.setPixelColor(i+q, 0); //turn every third pixel off
+	}
     }
   }
 }
