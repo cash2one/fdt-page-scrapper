@@ -134,7 +134,7 @@ alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD
 			      
 uint8_t alfabetListLenght = 34;
 
-char workString[] = "VAV B V G D E ! J Z";
+char workString[] = "A B V G D E ! J Z I @ K L M N O P R S T Y F X # $ % ^ & * ( ) U +";
 int curCharIndex = 0;
 int curCharPartIndex = 0;
 
@@ -204,7 +204,7 @@ void loop() {
 
   //rainbow(10);
   //theaterChaseRainbow(50);
-  frameCycle(10);
+  frameCycle(0);
 }
 
 int getPixelNumber(uint8_t x, uint8_t y){
@@ -362,7 +362,7 @@ void frameCycle(uint8_t wait) {
 	strip.show();
     }
     
-    if(j % 8 == 0){
+    if(j % 6 == 0){
 	if(shwMtrxPnrt == SHOW_MATRIX_LENGHT){
 	  shwMtrxPnrt = 0;
 	}
@@ -377,10 +377,10 @@ void frameCycle(uint8_t wait) {
     
     //printAlfabet(alfabetA, 20, j % 17 - 4, 2, strip.Color(255, 0, 0));
   
-    /*for(i=0; i < 52; i++) {
+    for(i=0; i < 52; i++) {
       //strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels()) + j) & 255));
       strip.setPixelColor(getPixelNumber(frameCoordinate[i].x, frameCoordinate[i].y), Wheel(((i * 256 / 52) + j) & 255));
-    }*/
+    }
 	
     strip.show();
     delay(wait);
