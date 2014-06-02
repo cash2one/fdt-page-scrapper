@@ -18,6 +18,7 @@ struct alfabetEntry
   char strValue;
   uint8_t lenght;
   uint8_t* alfabetMatrix;
+  uint8_t printShift;
 };
 
 uint8_t symbolRusSpace[2] = {0,0};
@@ -88,60 +89,75 @@ uint8_t symbolRusEE[5] = {66,129,145,145,126};
 uint8_t symbolRusU[6] = {255,16,126,129,129,126};
 //Я
 uint8_t symbolRusYa[5] = {99,148,152,144,127};
+//Сердце - Полное
+uint8_t symbolRusHeartFull[9] = {48,120,204,102,51,102,204,120,48};
+//Сердце - Big
+uint8_t symbolRusHeartBig[9] = {48,72,132,66,33,66,132,72,48};
+//Сердце - Small
+uint8_t symbolRusHeartSmall[7] = {48,72,36,18,36,72,48};
+
+
 
 struct alfabetEntry entrySpace = {' ',2,(uint8_t*)symbolRusSpace};		     
-struct alfabetEntry entryA = {'A',5,(uint8_t*)symbolRusA};//А
-struct alfabetEntry entryB = {'B',5,(uint8_t*)symbolRusB};//Б
-struct alfabetEntry entryV = {'V',5,(uint8_t*)symbolRusV};//В			
-struct alfabetEntry entryG = {'G',5,(uint8_t*)symbolRusG};//Г
-struct alfabetEntry entryD = {'D',6,(uint8_t*)symbolRusD};//Д			
-struct alfabetEntry entryE = {'E',5,(uint8_t*)symbolRusE};//Е			
-struct alfabetEntry entryEO = {'!',5,(uint8_t*)symbolRusEO};//Ё			
-struct alfabetEntry entryJ = {'J',7,(uint8_t*)symbolRusJ};//Ж
-struct alfabetEntry entryZ = {'Z',5,(uint8_t*)symbolRusZ};//З
-struct alfabetEntry entryI = {'I',5,(uint8_t*)symbolRusI};//И
-struct alfabetEntry entryII = {'@',5,(uint8_t*)symbolRusII};//Й
-struct alfabetEntry entryK = {'K',5,(uint8_t*)symbolRusK};//К
-struct alfabetEntry entryL = {'L',5,(uint8_t*)symbolRusL};//Л
-struct alfabetEntry entryM = {'M',7,(uint8_t*)symbolRusM};//М 
-struct alfabetEntry entryN = {'N',5,(uint8_t*)symbolRusN};//Н
-struct alfabetEntry entryO = {'O',5,(uint8_t*)symbolRusO};//О
-struct alfabetEntry entryP = {'P',5,(uint8_t*)symbolRusP};//П
-struct alfabetEntry entryR = {'R',5,(uint8_t*)symbolRusR};//Р
-struct alfabetEntry entryS = {'S',5,(uint8_t*)symbolRusS};//С
-struct alfabetEntry entryT = {'T',5,(uint8_t*)symbolRusT};//Т
-struct alfabetEntry entryY = {'Y',5,(uint8_t*)symbolRusY};//У
-struct alfabetEntry entryF = {'F',7,(uint8_t*)symbolRusF};//Ф
-struct alfabetEntry entryX = {'X',5,(uint8_t*)symbolRusX};//Х 
-struct alfabetEntry entryCC = {'#',6,(uint8_t*)symbolRusCC};//Ц
-struct alfabetEntry entryCh = {'$',5,(uint8_t*)symbolRusCh};//Ч
-struct alfabetEntry entrySh = {'%',5,(uint8_t*)symbolRusSh};//Ш
-struct alfabetEntry entrySCH = {'^',6,(uint8_t*)symbolRusSCH};//Щ
-struct alfabetEntry entryHard = {'&',6,(uint8_t*)symbolRusHard};//Ъ 
-struct alfabetEntry entryYY = {'*',7,(uint8_t*)symbolRusYY};//Ы
-struct alfabetEntry entrySoft = {'(',5,(uint8_t*)symbolRusSoft};//Ь
-struct alfabetEntry entryEE = {')',5,(uint8_t*)symbolRusEE};//Э 
-struct alfabetEntry entryU = {'U',6,(uint8_t*)symbolRusU};//Ю
-struct alfabetEntry entryYa = {'+',5,(uint8_t*)symbolRusYa};//Я
+struct alfabetEntry entryA = {'\u0410',5,(uint8_t*)symbolRusA};//А
+struct alfabetEntry entryB = {'\u0411',5,(uint8_t*)symbolRusB};//Б
+struct alfabetEntry entryV = {'\u0412',5,(uint8_t*)symbolRusV};//В			
+struct alfabetEntry entryG = {'\u0413',5,(uint8_t*)symbolRusG};//Г
+struct alfabetEntry entryD = {'\u0414',6,(uint8_t*)symbolRusD};//Д			
+struct alfabetEntry entryE = {'\u0415',5,(uint8_t*)symbolRusE};//Е			
+struct alfabetEntry entryEO = {'\u0401',5,(uint8_t*)symbolRusEO};//Ё			
+struct alfabetEntry entryJ = {'\u0416',7,(uint8_t*)symbolRusJ};//Ж
+struct alfabetEntry entryZ = {'\u0417',5,(uint8_t*)symbolRusZ};//З
+struct alfabetEntry entryI = {'\u0418',5,(uint8_t*)symbolRusI};//И
+struct alfabetEntry entryII = {'\u0419',5,(uint8_t*)symbolRusII};//Й
+struct alfabetEntry entryK = {'\u041a',5,(uint8_t*)symbolRusK};//К
+struct alfabetEntry entryL = {'\u041b',5,(uint8_t*)symbolRusL};//Л
+struct alfabetEntry entryM = {'\u041c',7,(uint8_t*)symbolRusM};//М 
+struct alfabetEntry entryN = {'\u041d',5,(uint8_t*)symbolRusN};//Н
+struct alfabetEntry entryO = {'\u041e',5,(uint8_t*)symbolRusO};//О
+struct alfabetEntry entryP = {'\u041f',5,(uint8_t*)symbolRusP};//П
+struct alfabetEntry entryR = {'\u0420',5,(uint8_t*)symbolRusR};//Р
+struct alfabetEntry entryS = {'\u0421',5,(uint8_t*)symbolRusS};//С
+struct alfabetEntry entryT = {'\u0422',5,(uint8_t*)symbolRusT};//Т
+struct alfabetEntry entryY = {'\u0423',5,(uint8_t*)symbolRusY};//У
+struct alfabetEntry entryF = {'\u0424',7,(uint8_t*)symbolRusF};//Ф
+struct alfabetEntry entryX = {'\u0425',5,(uint8_t*)symbolRusX};//Х 
+struct alfabetEntry entryCC = {'\u0426',6,(uint8_t*)symbolRusCC};//Ц
+struct alfabetEntry entryCh = {'\u0427',5,(uint8_t*)symbolRusCh};//Ч
+struct alfabetEntry entrySh = {'\u0428',5,(uint8_t*)symbolRusSh};//Ш
+struct alfabetEntry entrySCH = {'\u0429',6,(uint8_t*)symbolRusSCH};//Щ
+struct alfabetEntry entryHard = {'\u042a',6,(uint8_t*)symbolRusHard};//Ъ 
+struct alfabetEntry entryYY = {'\u042b',7,(uint8_t*)symbolRusYY};//Ы
+struct alfabetEntry entrySoft = {'\u042c',5,(uint8_t*)symbolRusSoft};//Ь
+struct alfabetEntry entryEE = {'\u042d',5,(uint8_t*)symbolRusEE};//Э 
+struct alfabetEntry entryU = {'\u042e',6,(uint8_t*)symbolRusU};//Ю
+struct alfabetEntry entryYa = {'\u042f',5,(uint8_t*)symbolRusYa};//Я
+
+struct alfabetEntry entryHeartFull = {'@',9,(uint8_t*)symbolRusHeartFull};//full heart
+struct alfabetEntry entryHeartBig = {'#',9,(uint8_t*)symbolRusHeartBig};//big heart
+struct alfabetEntry entryHeartSmall = {'!',7,(uint8_t*)symbolRusHeartSmall};//small heart
 
 alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD, 
 			      entryE, entryEO, entryJ, entryZ, entryI, entryII, 
 			      entryK, entryL, entryM, entryN, entryO, entryP, 
 			      entryR, entryS, entryT, entryY, entryF, entryX, 
 			      entryCC, entryCh, entrySh, entrySCH, entryHard, 
-			      entryYY, entrySoft, entryEE, entryU, entryYa};
+			      entryYY, entrySoft, entryEE, entryU, entryYa,
+                              entryHeartFull, entryHeartBig, entryHeartSmall};
 			      
 			      
-uint8_t alfabetListLenght = 34;
+uint8_t alfabetListLenght = 37;
 
-char workString[] = "A B V G D E ! J Z I @ K L M N O P R S T Y F X # $ % ^ & * ( ) U +";
+//ВЕРОНИКА 
+char workString[] = "@#! \u0412\u0415\u0420\u041e\u041d\u0418\u041a\u0410 \u0410\u0411\u0412\u0413\u0414\u0415\u0401\u0416\u0417\u0418\u0419\u041a\u041b\u041c\u041d\u041e\u041f\u0420\u0421\u0422\u0423\u0424\u0425\u0426\u0427\u0428\u0429\u042a\u042b\u042c\u042d\u042e\u042f";
 int curCharIndex = 0;
 int curCharPartIndex = 0;
+int stringSize = 14;
 
 //disappearance block
 int curSymbolBrightness = 0;
 int increasingBrightness = 0;
-int brightnessStepSize = 10;
+int brightnessStepSize = 6;
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
@@ -263,23 +279,31 @@ void nextRunnableStep(){
 }
 
 void nextFlashingStep(){
-    uint8_t i,j, redrawingNeed;
+    uint8_t i,j, redrawingNeed, shift, heartFlashNeed;
     alfabetEntry wrkAE;
     char curChr = workString[curCharIndex];
     wrkAE = findAlfabetEntryByChar(curChr);
     redrawingNeed = 0;
+    heartFlashNeed = 0;
+    shift = 3;
   
     //first string character
-    if(increasingBrightness == 0 && curSymbolBrightness == 0 ){
-      increasingBrightness = 1;
-      redrawingNeed=1;
-    }else if(curSymbolBrightness == 0){
-       //getting new char from string and start new flashing process
-       increasingBrightness = 1;
-       curCharIndex++;
-       curChr = workString[curCharIndex];
-       wrkAE = findAlfabetEntryByChar(curChr);
-       redrawingNeed = 1;
+    if(curCharIndex < stringSize && heartFlashNeed <= 0){
+      //show next char
+      if(increasingBrightness == 0 && curSymbolBrightness == 0 ){
+        increasingBrightness = 1;
+        redrawingNeed=1;
+      }else if(curSymbolBrightness == 0){
+         //getting new char from string and start new flashing process
+         increasingBrightness = 1;
+         curCharIndex++;
+         curChr = workString[curCharIndex];
+         wrkAE = findAlfabetEntryByChar(curChr);
+         redrawingNeed = 1;
+      }
+    }else{
+      heartFlashNeed = 10;
+      curCharIndex = 0;
     }
     
     if(increasingBrightness == 1){
@@ -296,17 +320,19 @@ void nextFlashingStep(){
       increasingBrightness = 1;
     }
     
+    
+    
     if(redrawingNeed == 1){
       zeroingShwMtrx();
       for(i = 0; i < wrkAE.lenght; i++){
-	showMatrix[0][i] = (128 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[1][i] = (64 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[2][i] = (32 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[3][i] = (16 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[4][i] = (8 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[5][i] = (4 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[6][i] = (2 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[7][i] = (1 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[0][i + shift] = (128 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[1][i + shift] = (64 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[2][i + shift] = (32 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[3][i + shift] = (16 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[4][i + shift] = (8 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[5][i + shift] = (4 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[6][i + shift] = (2 & wrkAE.alfabetMatrix[i])?1:0;
+	showMatrix[7][i + shift] = (1 & wrkAE.alfabetMatrix[i])?1:0;
       }
     }
 }
