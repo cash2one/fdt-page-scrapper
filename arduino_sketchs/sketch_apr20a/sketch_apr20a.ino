@@ -17,8 +17,7 @@ struct alfabetEntry
 {
   char strValue;
   uint8_t lenght;
-  uint8_t* alfabetMatrix;
-  uint8_t printShift;
+  uint8_t* alfabetMatrix;f
 };
 
 uint8_t symbolRusSpace[2] = {0,0};
@@ -285,7 +284,6 @@ void nextFlashingStep(){
     wrkAE = findAlfabetEntryByChar(curChr);
     redrawingNeed = 0;
     heartFlashNeed = 0;
-    shift = 3;
   
     //first string character
     if(curCharIndex < stringSize && heartFlashNeed <= 0){
@@ -320,7 +318,7 @@ void nextFlashingStep(){
       increasingBrightness = 1;
     }
     
-    
+    shift = SHOW_MATRIX_LENGHT - wrkAE.lenght/2;
     
     if(redrawingNeed == 1){
       zeroingShwMtrx();
