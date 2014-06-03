@@ -17,7 +17,7 @@ struct alfabetEntry
 {
   char strValue;
   uint8_t lenght;
-  uint8_t* alfabetMatrix;f
+  uint8_t* alfabetMatrix;
 };
 
 uint8_t symbolRusSpace[2] = {0,0};
@@ -158,6 +158,10 @@ int curSymbolBrightness = 0;
 int increasingBrightness = 0;
 int brightnessStepSize = 6;
 
+//флаг мигания сердечка
+int heartFlashNeed = 0;
+int heartFlashCount = 0;
+
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
 // Parameter 3 = pixel type flags, add together as needed:
@@ -277,39 +281,44 @@ void nextRunnableStep(){
     curCharPartIndex++;
 }
 
+//буквы появляются и пропадают
 void nextFlashingStep(){
-    uint8_t i,j, redrawingNeed, shift, heartFlashNeed;
+    uint8_t i,j, redrawingNeed, shift;
     alfabetEntry wrkAE;
     char curChr = workString[curCharIndex];
     wrkAE = findAlfabetEntryByChar(curChr);
     redrawingNeed = 0;
-    heartFlashNeed = 0;
   
-    //first string character
+    //если встретили первый символ строки, то начинаем увеличивть яркость, при этом обновляем вывод
+    if(increasingBrightness == 0 && curSymbolBrightness == 0 ){
+      increasingBrightness = 1;
+      redrawingNeed=1;
+      //иначе, если же оказалось что буква была уже показана, то ищем следующую букву
+    }else if(curSymbolBrightness == 0){
+       //getting new char from string and start new flashing process
+       increasingBrightness = 1;
+       curCharIndex++;
+       curChr = workString[curCharIndex];
+       wrkAE = findAlfabetEntryByChar(curChr);
+       redrawingNeed = 1;
+    }
+      
+    //если необходимо показывать сроку, а не сердце
     if(curCharIndex < stringSize && heartFlashNeed <= 0){
-      //show next char
-      if(increasingBrightness == 0 && curSymbolBrightness == 0 ){
-        increasingBrightness = 1;
-        redrawingNeed=1;
-      }else if(curSymbolBrightness == 0){
-         //getting new char from string and start new flashing process
-         increasingBrightness = 1;
-         curCharIndex++;
-         curChr = workString[curCharIndex];
-         wrkAE = findAlfabetEntryByChar(curChr);
-         redrawingNeed = 1;
-      }
+      //делаем что-нибудь
     }else{
       heartFlashNeed = 10;
       curCharIndex = 0;
     }
     
+    //увеличиваем яроксть
     if(increasingBrightness == 1){
       curSymbolBrightness += brightnessStepSize;
     }else{
       curSymbolBrightness -= brightnessStepSize;
     }
     
+    //если достигли максимальной яркости, то начинаем уменьшать яркость
     if(curSymbolBrightness >= 255){
       curSymbolBrightness = 255;
       increasingBrightness = 0;
@@ -318,6 +327,7 @@ void nextFlashingStep(){
       increasingBrightness = 1;
     }
     
+    //вычисляем сдвиг для отображения букв по центру
     shift = SHOW_MATRIX_LENGHT - wrkAE.lenght/2;
     
     if(redrawingNeed == 1){
@@ -333,6 +343,24 @@ void nextFlashingStep(){
 	showMatrix[7][i + shift] = (1 & wrkAE.alfabetMatrix[i])?1:0;
       }
     }
+}
+
+void printCharToShowMatrix(struct alfabetEntry wrkAE){
+  //вычисляем сдвиг для отображения букв по центру
+  int i = 0;
+  
+  int shift = SHOW_MATRIX_LENGHT - wrkAE.lenght/2;
+
+  for(i = 0; i < wrkAE.lenght; i++){
+    showMatrix[0][i + shift] = (128 & wrkAE.alfabetMatrix[i])?1:0;
+    showMatrix[1][i + shift] = (64 & wrkAE.alfabetMatrix[i])?1:0;
+    showMatrix[2][i + shift] = (32 & wrkAE.alfabetMatrix[i])?1:0;
+    showMatrix[3][i + shift] = (16 & wrkAE.alfabetMatrix[i])?1:0;
+    showMatrix[4][i + shift] = (8 & wrkAE.alfabetMatrix[i])?1:0;
+    showMatrix[5][i + shift] = (4 & wrkAE.alfabetMatrix[i])?1:0;
+    showMatrix[6][i + shift] = (2 & wrkAE.alfabetMatrix[i])?1:0;
+    showMatrix[7][i + shift] = (1 & wrkAE.alfabetMatrix[i])?1:0;
+  }
 }
 
 struct alfabetEntry findAlfabetEntryByChar(char chr){
@@ -378,6 +406,7 @@ void frameCycle(uint8_t wait) {
       strip.setPixelColor(i, 0);
     }*/
     
+    //печатаем буквы
     if(j % 1 == 0){     
 	//flashing
 	nextFlashingStep();
@@ -401,6 +430,12 @@ void frameCycle(uint8_t wait) {
     
     //printAlfabet(alfabetA, 20, j % 17 - 4, 2, strip.Color(255, 0, 0));
   
+    //печатаем сердечко маленькое
+    if(heartFlashNeed){
+      //printCharToShowMatrix();
+    }
+    
+    //печатаем рамку
     for(i=0; i < 52; i++) {
       //strip.setPixelColor(i, Wheel(((i * 256 / strip.numPixels()) + j) & 255));
       strip.setPixelColor(getPixelNumber(frameCoordinate[i].x, frameCoordinate[i].y), Wheel(((i * 256 / 52) + j) & 255));
