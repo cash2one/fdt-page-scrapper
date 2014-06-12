@@ -148,10 +148,10 @@ alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD
 uint8_t alfabetListLenght = 37;
 
 //ВЕРОНИКА 
-char workString[] = "@#! \u0412\u0415\u0420\u041e\u041d\u0418\u041a\u0410 \u0410\u0411\u0412\u0413\u0414\u0415\u0401\u0416\u0417\u0418\u0419\u041a\u041b\u041c\u041d\u041e\u041f\u0420\u0421\u0422\u0423\u0424\u0425\u0426\u0427\u0428\u0429\u042a\u042b\u042c\u042d\u042e\u042f";
+char workString[] = "\u0412\u0415\u0420\u041e\u041d\u0418\u041a\u0410 \u0410\u0411\u0412\u0413\u0414\u0415\u0401\u0416\u0417\u0418\u0419\u041a\u041b\u041c\u041d\u041e\u041f\u0420\u0421\u0422\u0423\u0424\u0425\u0426\u0427\u0428\u0429\u042a\u042b\u042c\u042d\u042e\u042f";
 int curCharIndex = 0;
 int curCharPartIndex = 0;
-int stringSize = 14;
+int stringSize = 18;
 
 //disappearance block
 int curSymbolBrightness = 0;
@@ -223,7 +223,7 @@ void loop() {
 
   //rainbow(10);
   //theaterChaseRainbow(50);
-  frameCycle(0);
+  frameCycle(1);
 }
 
 int getPixelNumber(uint8_t x, uint8_t y){
@@ -326,21 +326,24 @@ void nextFlashingStep(){
       curSymbolBrightness = 0;
       increasingBrightness = 1;
     }
-    
-    //вычисляем сдвиг для отображения букв по центру
-    shift = SHOW_MATRIX_LENGHT - wrkAE.lenght/2;
-    
-    if(redrawingNeed == 1){
-      zeroingShwMtrx();
-      for(i = 0; i < wrkAE.lenght; i++){
-	showMatrix[0][i + shift] = (128 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[1][i + shift] = (64 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[2][i + shift] = (32 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[3][i + shift] = (16 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[4][i + shift] = (8 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[5][i + shift] = (4 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[6][i + shift] = (2 & wrkAE.alfabetMatrix[i])?1:0;
-	showMatrix[7][i + shift] = (1 & wrkAE.alfabetMatrix[i])?1:0;
+     
+    if(heartFlashNeed <= 0)
+    { 
+      //вычисляем сдвиг для отображения букв по центру
+      shift = SHOW_MATRIX_LENGHT/2 - wrkAE.lenght/2;
+      
+      if(redrawingNeed == 1){
+        zeroingShwMtrx();
+        for(i = 0; i < wrkAE.lenght; i++){
+  	showMatrix[0][i + shift] = (128 & wrkAE.alfabetMatrix[i])?1:0;
+  	showMatrix[1][i + shift] = (64 & wrkAE.alfabetMatrix[i])?1:0;
+  	showMatrix[2][i + shift] = (32 & wrkAE.alfabetMatrix[i])?1:0;
+  	showMatrix[3][i + shift] = (16 & wrkAE.alfabetMatrix[i])?1:0;
+  	showMatrix[4][i + shift] = (8 & wrkAE.alfabetMatrix[i])?1:0;
+  	showMatrix[5][i + shift] = (4 & wrkAE.alfabetMatrix[i])?1:0;
+  	showMatrix[6][i + shift] = (2 & wrkAE.alfabetMatrix[i])?1:0;
+  	showMatrix[7][i + shift] = (1 & wrkAE.alfabetMatrix[i])?1:0;
+        }
       }
     }
 }
@@ -349,7 +352,7 @@ void printCharToShowMatrix(struct alfabetEntry wrkAE){
   //вычисляем сдвиг для отображения букв по центру
   int i = 0;
   
-  int shift = SHOW_MATRIX_LENGHT - wrkAE.lenght/2;
+  int shift = SHOW_MATRIX_LENGHT/2 - wrkAE.lenght/2;
 
   for(i = 0; i < wrkAE.lenght; i++){
     showMatrix[0][i + shift] = (128 & wrkAE.alfabetMatrix[i])?1:0;
@@ -360,6 +363,50 @@ void printCharToShowMatrix(struct alfabetEntry wrkAE){
     showMatrix[5][i + shift] = (4 & wrkAE.alfabetMatrix[i])?1:0;
     showMatrix[6][i + shift] = (2 & wrkAE.alfabetMatrix[i])?1:0;
     showMatrix[7][i + shift] = (1 & wrkAE.alfabetMatrix[i])?1:0;
+  }
+}
+
+void printCharToShowMatrixWithColor(struct alfabetEntry wrkAE, uint32_t color){
+  //вычисляем сдвиг для отображения букв по центру
+  int i = 0;
+  int shiftX = 2;
+  int shiftY = 2;
+  
+  int shift = SHOW_MATRIX_LENGHT/2 - wrkAE.lenght/2;
+
+  for(i = 0; i < wrkAE.lenght; i++){
+    
+    if((128 & wrkAE.alfabetMatrix[i]))
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX,0 + shiftY), color);
+
+    if((64 & wrkAE.alfabetMatrix[i])){
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX, 1 + shiftY), color);
+    }
+    
+    if((32 & wrkAE.alfabetMatrix[i])){
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX ,2 + shiftY), color);
+    }
+    
+    if((16 & wrkAE.alfabetMatrix[i])){
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX ,3 + shiftY), color);
+    }
+    
+    if((8 & wrkAE.alfabetMatrix[i])){
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX ,4 + shiftY), color);
+    }
+    
+    if((4 & wrkAE.alfabetMatrix[i])){
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX ,5 + shiftY), color);
+    }
+    
+    if((2 & wrkAE.alfabetMatrix[i])){
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX ,6 + shiftY), color);
+    }
+    
+    if((1 & wrkAE.alfabetMatrix[i])){
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX ,7 + shiftY), color);
+    }
+    
   }
 }
 
@@ -410,9 +457,17 @@ void frameCycle(uint8_t wait) {
     if(j % 1 == 0){     
 	//flashing
 	nextFlashingStep();
-	printShowMatrix(2,2,strip.Color(curSymbolBrightness, 0, 0));
 	
-	strip.show();
+        if(heartFlashNeed){
+            if(j % 1 == 0){
+              zeroingShwMtrx();
+              printCharToShowMatrixWithColor(entryHeartSmall, strip.Color(255, 0, 0));
+              printCharToShowMatrixWithColor(entryHeartBig, strip.Color(curSymbolBrightness, 0, 0));
+              delay(10);
+            }	
+        }else{
+            printShowMatrix(2,2,strip.Color(curSymbolBrightness, 0, 0));
+        }
     }
     
     if(j % 6 == 0){
@@ -431,9 +486,7 @@ void frameCycle(uint8_t wait) {
     //printAlfabet(alfabetA, 20, j % 17 - 4, 2, strip.Color(255, 0, 0));
   
     //печатаем сердечко маленькое
-    if(heartFlashNeed){
-      //printCharToShowMatrix();
-    }
+    
     
     //печатаем рамку
     for(i=0; i < 52; i++) {
