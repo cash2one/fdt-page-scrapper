@@ -49,7 +49,7 @@ public class ScrapperTaskRunner {
 
 	public static void main(String[] args) {
 		try{
-			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("VIPUAoVrs68fdmb", "TC3aH96sAR".toCharArray(),"proxy.txt","links_small.txt", 1, 5000L, "success_result.csv", true);
+			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("EUR102217", "J8Fjh5TN5H".toCharArray(),"proxy.txt","links_small.txt", 1, 5000L, "success_result.csv", true);
 			taskRunner.run();
 
 			ResultParser rp = new ResultParser();

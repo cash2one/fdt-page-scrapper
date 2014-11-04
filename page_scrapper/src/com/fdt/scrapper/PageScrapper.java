@@ -56,6 +56,7 @@ public class PageScrapper {
 	private org.jsoup.nodes.Document getUrlContent() throws MalformedURLException, IOException {
 		URL url = new URL(task.getUrlToScrap());
 		HttpURLConnection conn = (HttpURLConnection)url.openConnection(proxy);
+		HttpURLConnection.setFollowRedirects(true);
 		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 		conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 		InputStream is = conn.getInputStream();
@@ -67,6 +68,8 @@ public class PageScrapper {
 
 	private String parseHtml() throws MalformedURLException, IOException{
 		org.jsoup.nodes.Document page = getUrlContent();
+		
+		//System.out.println(page.toString());
 		
 		Elements elements = page.select(task.getxPath());
 		if(elements.isEmpty()){

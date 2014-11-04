@@ -9,8 +9,8 @@ import com.fdt.scrapper.Domain;
 
 public class GoogleWeekTask extends Task{
 	private static final String SCRAPPER_PATTERN = "(about )?(.*) result(.*)";
-	private static final String SCRAPPER_URL_PART_2 = "&hl=en&safe=off&tbo=d&tbs=qdr:w";
-	private static final String SCRAPPER_URL_PART_1 = "http://www.google.com/search?q=site:";
+	private static final String SCRAPPER_URL_PART_2 = "&hl=en&safe=off&tbo=d&tbs=qdr:w&gws_rd=ssl";
+	private static final String SCRAPPER_URL_PART_1 = "https://www.google.com/search?q=site:";
 	private static final String SCRAPPER_XPATH = "div[id=resultStats]";
 	
 	private static final Logger log = Logger.getLogger(GoogleWeekTask.class);
