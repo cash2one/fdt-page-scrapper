@@ -69,7 +69,7 @@ public class PageTasks
 		csvStr.append(ITEMS_SEPARATOR);
 		
 		for(Task task : tasks){
-			csvStr.append(task.getResult()).append(ITEMS_SEPARATOR);
+			csvStr.append(task.toCsv()).append(ITEMS_SEPARATOR);
 		}
 		if(tasks.size() > 0){
 			csvStr.setLength(csvStr.length()-1);

@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.apache.log4j.Logger;
 
@@ -111,7 +112,7 @@ public class ScrapperTaskRunner {
 			}else{
 				for(PageTasks pageTask:taskFactory.getTaskQueue()){
 					for(Task task:pageTask.getTasks()){
-						task.setResultAsIs("1");
+						task.setResultAsIs(new ArrayList<String>(Arrays.asList("1")));
 					}
 					taskFactory.putTaskInSuccessQueue(pageTask);
 				}

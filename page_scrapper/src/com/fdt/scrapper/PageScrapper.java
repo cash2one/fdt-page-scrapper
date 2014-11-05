@@ -10,6 +10,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URL;
+import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -44,7 +45,7 @@ public class PageScrapper {
 		this.proxy = proxy;
 	}
 
-	public String extractResult() throws MalformedURLException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
+	public ArrayList<String> extractResult() throws MalformedURLException, IOException, XPathExpressionException, ParserConfigurationException, SAXException {
 		if(task.isXmlParce()){
 			return parseXml();
 		}
@@ -66,21 +67,25 @@ public class PageScrapper {
 		return page;
 	}
 
-	private String parseHtml() throws MalformedURLException, IOException{
+	private ArrayList<String> parseHtml() throws MalformedURLException, IOException{
 		org.jsoup.nodes.Document page = getUrlContent();
-		
-		//System.out.println(page.toString());
-		
-		Elements elements = page.select(task.getxPath());
-		if(elements.isEmpty()){
-			return "";
+
+		ArrayList<String> result = new ArrayList<String>();
+
+		for(int i = 0; i < task.getResultCount(); i++){
+			Elements elements = page.select(task.getxPath(i));
+			if(elements.isEmpty()){
+				result.add("");
+			}
+			else{
+				result.add(elements.text());
+			}
 		}
-		else{
-			return elements.text();
-		}
+
+		return result;
 	}
 
-	private String parseXml() throws XPathExpressionException, ParserConfigurationException, IOException, SAXException {
+	private ArrayList<String> parseXml() throws XPathExpressionException, ParserConfigurationException, IOException, SAXException {
 		//get the factory
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
@@ -96,14 +101,22 @@ public class PageScrapper {
 		conn.disconnect();
 		XPath xpathInst = XPathFactory.newInstance().newXPath();
 		// XPath Query for showing all nodes value
-		XPathExpression expr = xpathInst.compile(task.getxPath());
+		ArrayList<String> resultArray = new ArrayList<String>();
 
-		Object result = expr.evaluate(dom, XPathConstants.NODESET);
-		NodeList nodes = (NodeList) result;
-		if(nodes.getLength() > 0){
-			return nodes.item(0).getNodeValue();
-		}else{
-			return "";
+		//System.out.println(page.toString());
+		for(int i = 0; i < task.getResultCount(); i++){
+
+			XPathExpression expr = xpathInst.compile(task.getxPath(i));
+
+			Object result = expr.evaluate(dom, XPathConstants.NODESET);
+			NodeList nodes = (NodeList) result;
+			if(nodes.getLength() > 0){
+				resultArray.add(nodes.item(0).getNodeValue());
+			}else{
+				resultArray.add("");
+			}
 		}
+		
+		return resultArray;
 	}
 }

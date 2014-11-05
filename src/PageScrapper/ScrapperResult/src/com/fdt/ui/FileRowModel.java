@@ -55,15 +55,15 @@ public class FileRowModel implements RowModel {
             case 0:
                 return new Long(pt.getDomain().getCount());
             case 1:
-                return new Long(pt.getTasks().get(0).getResult());
+                return new Long(pt.getTasks().get(0).getResult().get(0));
             case 2:
-                return new Long(pt.getTasks().get(1).getResult());
+                return new Long(pt.getTasks().get(1).getResult().get(0));
             case 3:
-                return new Long(pt.getTasks().get(2).getResult());
+                return new Long(pt.getTasks().get(2).getResult().get(0));
             case 4:
-                return -1;
+                return new Long(pt.getTasks().get(0).getResult().get(1));
             case 5:
-                return -1;
+                return new Long(pt.getTasks().get(0).getResult().get(2));
             default:
                 assert false;
         }

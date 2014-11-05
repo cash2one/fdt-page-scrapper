@@ -5,11 +5,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.apache.log4j.Logger;
 
 import com.fdt.scrapper.Domain;
-import com.fdt.scrapper.ScrapperTaskRunner;
 import com.fdt.scrapper.task.AlexaTask;
 import com.fdt.scrapper.task.GoogleAllTimeTask;
 import com.fdt.scrapper.task.GoogleWeekTask;
@@ -90,9 +90,9 @@ public class ResultParser {
 			}
 
 			if(taskIndex != -1 && !isEmpty(values[taskIndex])){
-				task.setResultAsIs(values[taskIndex]);
+				task.setResultAsIs(new ArrayList<String>(Arrays.asList(values[taskIndex].split(":"))));
 			} else{
-				task.setResultAsIs("-1");
+				task.setResultAsIs(new ArrayList<String>(Arrays.asList("-1")));
 			}
 		}
 
@@ -108,9 +108,9 @@ public class ResultParser {
 		}else{
 			for(PageTasks task:tasks){
 				if(task.getDomain().getCount() >= filter.getMinDomainCount()){
-					long alexaIndex =  task.getTasks().get(0).getResult()==null?-1:Long.valueOf(task.getTasks().get(0).getResult());
-					long googleAll =  task.getTasks().get(1).getResult()==null?-1:Long.valueOf(task.getTasks().get(1).getResult());
-					long googleWeek =  task.getTasks().get(2).getResult()==null?-1:Long.valueOf(task.getTasks().get(2).getResult());
+					long alexaIndex =  task.getTasks().get(0).getResult()==null?-1:Long.valueOf(task.getTasks().get(0).getResult().get(0));
+					long googleAll =  task.getTasks().get(1).getResult()==null?-1:Long.valueOf(task.getTasks().get(1).getResult().get(0));
+					long googleWeek =  task.getTasks().get(2).getResult()==null?-1:Long.valueOf(task.getTasks().get(2).getResult().get(0));
 					if(alexaIndex <= filter.getMaxAlexaRank() && alexaIndex > 0 &&
 							googleAll >= filter.getMinAllIndex() &&
 							googleWeek >= filter.getMinWeekIndex()){

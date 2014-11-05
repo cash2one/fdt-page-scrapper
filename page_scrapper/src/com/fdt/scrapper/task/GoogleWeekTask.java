@@ -1,5 +1,7 @@
 package com.fdt.scrapper.task;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -11,7 +13,7 @@ public class GoogleWeekTask extends Task{
 	private static final String SCRAPPER_PATTERN = "(about )?(.*) result(.*)";
 	private static final String SCRAPPER_URL_PART_2 = "&hl=en&safe=off&tbo=d&tbs=qdr:w&gws_rd=ssl";
 	private static final String SCRAPPER_URL_PART_1 = "https://www.google.com/search?q=site:";
-	private static final String SCRAPPER_XPATH = "div[id=resultStats]";
+	private static final ArrayList<String> SCRAPPER_XPATH = new ArrayList<String>(Arrays.asList("div[id=resultStats]"));
 	
 	private static final Logger log = Logger.getLogger(GoogleWeekTask.class);
 
@@ -23,15 +25,16 @@ public class GoogleWeekTask extends Task{
 	}
 
 	@Override
-	public void setResult(String result) {
-		log.debug("URL: " + this.getUrlToScrap() + "; RESULT = ["+result+"]");
-		result = result.toLowerCase();
+	public void setResult(ArrayList<String> result) {
+		String resultStr = result.get(0);
+		log.debug("URL: " + this.getUrlToScrap() + "; RESULT = ["+resultStr+"]");
+		resultStr = resultStr.toLowerCase();
 		Pattern depArrHours = Pattern.compile(SCRAPPER_PATTERN);
-		Matcher matcher = depArrHours.matcher(result);
+		Matcher matcher = depArrHours.matcher(resultStr);
 		if(matcher.find()){
-			this.result = matcher.group(2).replace(",", "");
+			this.result = new ArrayList<String>(Arrays.asList(matcher.group(2).replace(",", "")));
 		}else{
-			this.result = "0";
+			this.result = new ArrayList<String>(Arrays.asList("0"));
 		}
 	}
 }
