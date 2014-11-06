@@ -14,6 +14,7 @@ import com.fdt.scrapper.task.AlexaTask;
 import com.fdt.scrapper.task.GoogleAllTimeTask;
 import com.fdt.scrapper.task.GoogleWeekTask;
 import com.fdt.scrapper.task.PageTasks;
+import com.fdt.scrapper.task.PrTicTask;
 import com.fdt.scrapper.task.Task;
 
 public class ResultParser {
@@ -39,7 +40,7 @@ public class ResultParser {
 			bufferedReader = new BufferedReader(new FileReader(resultFilePath));
 			String line = bufferedReader.readLine();
 			while(line != null){
-				String[] values = line.split(PageTasks.ITEMS_SEPARATOR,6);
+				String[] values = line.split(PageTasks.ITEMS_SEPARATOR,7);
 				PageTasks tasks = parseLine(values);
 				tasksList.add(tasks);
 				line = bufferedReader.readLine();
@@ -87,7 +88,10 @@ public class ResultParser {
 				taskIndex = 4;
 			}else if(task instanceof GoogleWeekTask){
 				taskIndex = 5;
+			}else if(task instanceof PrTicTask){
+				taskIndex = 6;
 			}
+			
 
 			if(taskIndex != -1 && !isEmpty(values[taskIndex])){
 				task.setResultAsIs(new ArrayList<String>(Arrays.asList(values[taskIndex].split(":"))));

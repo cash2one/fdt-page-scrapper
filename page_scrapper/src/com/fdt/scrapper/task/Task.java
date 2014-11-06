@@ -20,7 +20,7 @@ public abstract class Task{
 	public String toCsv() {
 		StringBuilder resultCsv = new StringBuilder();
 		for(String value : result){
-			resultCsv.append(value).append(":");
+			resultCsv.append(value.isEmpty()?"-1":value).append(":");
 		}
 		
 		if(resultCsv.length() > 1){

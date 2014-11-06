@@ -24,6 +24,7 @@ public class PageTasks
 		tasks.add(new AlexaTask(domain));
 		tasks.add(new GoogleAllTimeTask(domain));
 		tasks.add(new GoogleWeekTask(domain));
+		tasks.add(new PrTicTask(domain));
 	}
 
 	public void addTask(Task task) throws ScrapperException{
