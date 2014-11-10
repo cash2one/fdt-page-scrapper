@@ -1,5 +1,12 @@
 package com.fdt.scrapper.task;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.http.protocol.HTTP;
+
 public abstract class SnippetTask
 {
 	public final static String KEY_WORDS_KEY = "#KEY_WORDS#";
@@ -13,6 +20,10 @@ public abstract class SnippetTask
 	protected String keyWords = "";
 	protected String keyWordsNative = "";
 	protected String language = "en";
+	protected String host = "";
+	protected boolean encodeKeywords = false;
+	
+	protected Map<String,String> extraParams = new HashMap<String, String>();
 	
 	protected String source = "";
 
@@ -25,11 +36,16 @@ public abstract class SnippetTask
 		super();
 		this.keyWordsNative = keyWords;
 		this.keyWords = keyWords.replace(' ', '+');
+		initExtraParams();
 	}
 
 	public SnippetTask()
 	{
+		super();
+		initExtraParams();
 	}
+
+	protected abstract void initExtraParams();
 	
 	public String getResult() {
 		return result;
@@ -101,16 +117,27 @@ public abstract class SnippetTask
 
 	public String getXpathLink()
 	{
-	    return xpathLink;
+		return xpathLink;
 	}
 
 	public void setXpathLink(String xpathLink)
 	{
-	    this.xpathLink = xpathLink;
+		this.xpathLink = xpathLink;
 	}
 
 	public String getFullUrl(){
-		return scrapperUrl.replace(KEY_WORDS_KEY, keyWords).replace(LANGUAGE_KEY, language);
+		String result = "";
+		if(!isEncodeKeywords()){
+			result = scrapperUrl.replace(KEY_WORDS_KEY, keyWords).replace(LANGUAGE_KEY, language);
+		}else{
+			try {
+				result = scrapperUrl.replace(KEY_WORDS_KEY, URLEncoder.encode(keyWords,HTTP.UTF_8)).replace(LANGUAGE_KEY, language);
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return result;
 	}
 
 	public String toString(){
@@ -131,5 +158,29 @@ public abstract class SnippetTask
 
 	public void setSource(String source) {
 		this.source = source;
+	}
+
+	public String getHost() {
+		return host;
+	}
+
+	public void setHost(String host) {
+		this.host = host;
+	}
+	
+	public boolean isEncodeKeywords() {
+		return encodeKeywords;
+	}
+
+	public void setEncodeKeywords(boolean encodeKeywords) {
+		this.encodeKeywords = encodeKeywords;
+	}
+
+	public Map<String, String> getExtraParams() {
+		return extraParams;
+	}
+
+	public void setExtraParams(Map<String, String> extraParams) {
+		this.extraParams = extraParams;
 	}
 }

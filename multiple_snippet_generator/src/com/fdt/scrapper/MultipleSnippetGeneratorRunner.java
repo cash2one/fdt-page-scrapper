@@ -82,13 +82,20 @@ public class MultipleSnippetGeneratorRunner{
 							);
 				}
 			});
-			MultipleSnippetGeneratorRunner taskRunner = new MultipleSnippetGeneratorRunner(args[0]);
 			DOMConfigurator.configure("log4j.xml");
+			
+			MultipleSnippetGeneratorRunner taskRunner = null;
+			try {
+				taskRunner = new MultipleSnippetGeneratorRunner(args[0]);
+			} catch (Exception e) {
+				log.error(e.getMessage(), e);
+			}
+			
 			taskRunner.execute();
 		}
 	}
 
-	public MultipleSnippetGeneratorRunner(String cfgFilePath){
+	public MultipleSnippetGeneratorRunner(String cfgFilePath) throws Exception{
 
 		ConfigManager.getInstance().loadProperties(cfgFilePath);
 		this.taskFactory = TaskFactory.getInstance();

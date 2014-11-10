@@ -31,8 +31,6 @@ import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTask;
 
-import org.json.JSONObject;
-
 /**
  *
  * @author Administrator
@@ -156,12 +154,13 @@ public class SnippetExtractor {
 			//using proxy
 			conn = (HttpURLConnection)url.openConnection(proxy);
 			conn.setConnectTimeout(30000);
-			conn.addRequestProperty("Host","search.ukr.net");
+			conn.addRequestProperty("Host",snippetTask.getHost());
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 			conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
 			conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			conn.addRequestProperty("Accept-Encoding","gzip");
+			fillExtraParamsFromTask(conn, snippetTask);
 
 			HtmlCleaner cleaner = new HtmlCleaner();
 
@@ -187,8 +186,10 @@ public class SnippetExtractor {
 				bfRdr.close();
 				gzip.close();
 
-				inputStreamPage = new ByteArrayInputStream(pageStr.toString().getBytes());
-				//System.out.println(pageStr.toString());
+				inputStreamPage = new ByteArrayInputStream(pageStr.toString().getBytes("UTF-8"));
+				html = cleaner.clean(inputStreamPage,"UTF-8");
+				
+				System.out.println(pageStr.toString());
 			}else{
 				html = cleaner.clean(is,"UTF-8");
 			}
@@ -201,6 +202,12 @@ public class SnippetExtractor {
 			if(is != null){
 				try{is.close();}catch(Throwable e){}
 			}
+		}
+	}
+	
+	private void fillExtraParamsFromTask(HttpURLConnection connection, SnippetTask task){
+		for(String key : task.getExtraParams().keySet()){
+			connection.addRequestProperty(key, task.getExtraParams().get(key));
 		}
 	}
 	
