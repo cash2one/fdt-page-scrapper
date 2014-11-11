@@ -21,6 +21,7 @@ import java.net.URLEncoder;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import org.apache.http.NameValuePair;
@@ -64,10 +65,10 @@ public class NewsPoster {
 		return postNews(snippets);
 	}
 
-	private String postNews(ArrayList<Snippet> snippets){
-		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + Constants.getInstance().getProperty(UPLOAD_CONTEXT_URL_LABEL);
-
-		//String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + task.getKeyWords() + "delete/";
+	public String postNews(ArrayList<Snippet> snippets){
+		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
+				Constants.getInstance().getProperty(UPLOAD_CONTEXT_URL_LABEL) + 
+				account.getCookie("_csrf/link");
 
 		try {
 			//post news
@@ -76,69 +77,34 @@ public class NewsPoster {
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
-			conn.setRequestMethod("POST");
+			conn.setRequestMethod("GET");
 			conn.setDoInput(true);
 			conn.setDoOutput(true);
 
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-			conn.setRequestProperty("Cookie", account.getCookie());
+			conn.setRequestProperty("Cookie", account.getCookies());
+			conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
-			//httppost.setHeader("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-			//httppost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
-			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-			//nameValuePairs.add(new BasicNameValuePair("groups", account.getGroupId()));
-			nameValuePairs.add(new BasicNameValuePair("interests", ""));
-			nameValuePairs.add(new BasicNameValuePair("subject", task.getKeyWords()));
-			//Insert news content here
-			/*String[] snippetsContent = getSnippetsContent(snippets);
-			task.getNewsContent().put("SNIPPETS_1", snippetsContent[0]);
-			task.getNewsContent().put("SNIPPETS_2", snippetsContent[1]);
-			task.getNewsContent().put("KEY_WORDS", task.getKeyWords());
-
-			//add snippets news
-
-			if(taskFactory.getSavedTaskList().size() > 0){
-				int randLink = getRandomValue(0, taskFactory.getSavedTaskList().size()-1);
-				task.getNewsContent().put("POSTED_LINK_1", taskFactory.getSavedTaskList().get(randLink).getResult());
-				task.getNewsContent().put("POSTED_KEYWORD_1", taskFactory.getSavedTaskList().get(randLink).getKeyWords());
-				randLink = getRandomValue(0, taskFactory.getSavedTaskList().size()-1);
-				task.getNewsContent().put("POSTED_LINK_2", taskFactory.getSavedTaskList().get(randLink).getResult());
-				task.getNewsContent().put("POSTED_KEYWORD_2", taskFactory.getSavedTaskList().get(randLink).getKeyWords());
-				randLink = getRandomValue(0, taskFactory.getSavedTaskList().size()-1);
-				task.getNewsContent().put("POSTED_LINK_3", taskFactory.getSavedTaskList().get(randLink).getResult());
-				task.getNewsContent().put("POSTED_KEYWORD_3", taskFactory.getSavedTaskList().get(randLink).getKeyWords());
-			}else{
-				task.getNewsContent().put("POSTED_LINK_1", "#");
-				task.getNewsContent().put("POSTED_KEYWORD_1", task.getKeyWords());
-				task.getNewsContent().put("POSTED_LINK_2", "#");
-				task.getNewsContent().put("POSTED_KEYWORD_2", task.getKeyWords());
-				task.getNewsContent().put("POSTED_LINK_3", "#");
-				task.getNewsContent().put("POSTED_KEYWORD_3", task.getKeyWords());
+			// Execute HTTP Post Request
+			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
+			if(cookies.get("Set-Cookie").toString().contains("notexists")){
+				log.error("Account doesn't exist: \""+ account.getLogin() + "\". Please check email and password.");
 			}
 
-			nameValuePairs.add(new BasicNameValuePair("body", mergeTemplate(task)));
-			nameValuePairs.add(new BasicNameValuePair("file", ""));*/
-
-			OutputStream os = conn.getOutputStream();
-			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-			writer.write(getQuery(nameValuePairs));
-			writer.flush();
-			writer.close();
-			os.close();
-
-			//if(returnCode == HttpStatus.SC_OK){
-			/*conn.disconnect();
-	    conn = (HttpURLConnection) url.openConnection(proxy);
-	    conn.setRequestMethod("GET");
-	    conn.setDoInput(true);
-	    conn.setDoOutput(true);
-	    conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-	    conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*//*;q=0.8");
-	    conn.setRequestProperty("Cookie", account.getCookie());*/
-
-			//conn.getRequestProperties()
+			for(String cookieOne: cookies.get("Set-Cookie"))
+			{
+				String cookiesValues[] = cookieOne.split(";");
+				for(String cookiesArrayItem : cookiesValues){
+					String singleCookei[] = cookiesArrayItem.split("=");
+					account.addCookie(singleCookei[0].trim(), singleCookei[1].trim());
+				}
+			}
+			
+			conn.disconnect();
+			
 			int code = conn.getResponseCode();
 
 			InputStream is = conn.getInputStream();

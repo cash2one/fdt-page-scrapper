@@ -114,10 +114,16 @@ public class TaskRunner {
 
 				Account account = null;
 				
-				
-				//TODO Get params for upload video
-				//http://www.dailymotion.com/pageitem/upload/file?request=%2F&t=0.48888357358967454&loop=1&from_request=%2Fupload&_csrf_l=8LimltqSdRM_q7ncfsyRuL8prhDM3wWf5xSpuFb4UVc
-			
+				//TODO Loop of accounts
+				try {
+					NewsPoster nPoster = new NewsPoster(null, proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
+				} catch (XPathExpressionException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		}finally{
 			

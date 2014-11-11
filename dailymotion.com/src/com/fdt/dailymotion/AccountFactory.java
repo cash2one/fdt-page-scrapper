@@ -30,7 +30,7 @@ import com.fdt.scrapper.proxy.ProxyFactory;
 public class AccountFactory
 {
 	private static final Logger log = Logger.getLogger(AccountFactory.class);
-	private HashMap<String, Account> accounts = new HashMap<String, Account>();
+	private ArrayList<Account> accounts = new ArrayList<Account>();
 
 	public final static String MAIN_URL_LABEL = "main_url";
 	private final static String LOGIN_URL_LABEL = "login_url";
@@ -55,7 +55,7 @@ public class AccountFactory
 				//parse proxy adress
 				if(line.contains(";")){
 					String[] account = line.trim().split(";");
-					accounts.put(account[0], new Account(account[0],account[2],account[1]));
+					accounts.add(new Account(account[0],account[2],account[1]));
 				}
 				line = br.readLine();
 			}
@@ -81,7 +81,7 @@ public class AccountFactory
 		try {
 			ArrayList<Account> accountToRemove = new ArrayList<Account>();
 			ProxyConnector proxy = proxyFactory.getProxyConnector();
-			for(Account account : accounts.values()){
+			for(Account account : accounts){
 				String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL);
 				URL url = new URL(postUrl);
 				HttpURLConnection.setFollowRedirects(false);
@@ -163,5 +163,9 @@ public class AccountFactory
 		}
 
 		return result.toString();
+	}
+	
+	public ArrayList<Account> getAccounts(){
+		return accounts;
 	}
 }
