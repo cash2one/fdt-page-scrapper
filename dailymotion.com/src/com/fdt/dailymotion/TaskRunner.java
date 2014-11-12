@@ -27,6 +27,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
+import com.fdt.dailymotion.task.NewsTask;
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
 
@@ -42,7 +43,7 @@ public class TaskRunner {
 
 	private String proxyFilePath;
 	private String keyWordsFilePath;
-	private String linksListFilePath;
+	private String listFilePath;
 	private String accListFilePath;
 	private int maxThreadCount;
 	private long proxyDelay;
@@ -60,7 +61,7 @@ public class TaskRunner {
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
 
 
-	private final static String LINKS_LIST_FILE_PATH_LABEL = "links_list_file_path";
+	private final static String LIST_FILE_PATH_LABEL = "list_file_path";
 
 
 	private ArrayList<String> linksList = new ArrayList<String>();
@@ -70,7 +71,7 @@ public class TaskRunner {
 		Constants.getInstance().loadProperties(cfgFilePath);
 		this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 		this.keyWordsFilePath = Constants.getInstance().getProperty(KEY_WORDS_FILE_PATH_LABEL);
-		this.linksListFilePath = Constants.getInstance().getProperty(LINKS_LIST_FILE_PATH_LABEL);
+		this.listFilePath = Constants.getInstance().getProperty(LIST_FILE_PATH_LABEL);
 		this.accListFilePath = Constants.getInstance().getProperty(ACCOUNTS_LIST_FILE_PATH_LABEL);
 		this.maxThreadCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
 		this.proxyDelay = Integer.valueOf(Constants.getInstance().getProperty(PROXY_DELAY_LABEL));
@@ -110,17 +111,21 @@ public class TaskRunner {
 				accountFactory.fillAccounts(accListFilePath);
 
 				//load links from file
-				this.linksList= loadLinkList(linksListFilePath) ;
+				//TODO this.linksList= loadLinkList(listFilePath) ;
 
 				Account account = null;
 				
 				//TODO Loop of accounts
 				try {
-					NewsPoster nPoster = new NewsPoster(null, proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
+					NewsPoster nPoster = new NewsPoster(new NewsTask(""), proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
+					nPoster.executePostNews();
 				} catch (XPathExpressionException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}

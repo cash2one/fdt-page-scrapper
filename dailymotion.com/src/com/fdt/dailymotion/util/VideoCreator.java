@@ -31,7 +31,7 @@ public class VideoCreator {
 	    
 	    File imageFile = new File("./images/123.jpg");
 	    
-	    for(int i = 0; i < 1000; i++){
+	    for(int i = 0; i < 100; i++){
 	    	imgLst.add(imageFile.getAbsolutePath());
 	    }
 	    
@@ -41,8 +41,8 @@ public class VideoCreator {
 	        System.err.println("Cannot build media locator from: " + fileName);
 	        System.exit(0);
 	    }
-	    int interval = 50;
-	    imageToMovie.doIt(320, 240, (1000 / interval), imgLst, oml);
+	    int interval = 10;
+	    imageToMovie.doIt(320, 240, (100 / interval), imgLst, oml);
 
 	}
 }

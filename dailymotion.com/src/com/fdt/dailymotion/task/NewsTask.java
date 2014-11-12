@@ -8,6 +8,8 @@ public class NewsTask{
 	private String title = "";
 	private String keyWords = "";
 	private String snippets = "";
+	
+	private String uploadUrl = "";
 
 	private int attempsCount = 1;
 	//empty result
@@ -45,5 +47,13 @@ public class NewsTask{
 
 	public String toString(){
 		return keyWords;
+	}
+
+	public String getUploadUrl() {
+		return uploadUrl;
+	}
+
+	public void setUploadUrl(String uploadUrl) {
+		this.uploadUrl = uploadUrl;
 	}
 }
