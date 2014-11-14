@@ -24,6 +24,7 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
@@ -46,6 +47,10 @@ public class NewsPoster {
 	public final static String UPLOAD_CONTEXT_URL_LABEL = "upload_context_url";
 
 	private static final String LINE_FEED = "\r\n";
+
+	private static final Random rnd = new Random();;
+
+	private String[] themes = new String[]{"auto","webcam","animals","creation","lifestyle","people","music","news","school","travel","sport","tech","shortfilms","fun"};
 
 	private NewsTask task = null;
 	private Proxy proxy = null;
@@ -127,11 +132,12 @@ public class NewsPoster {
 
 		String cookiesTest = account.getCookies();
 
-		executerequestToGetCookies("http://www.dailymotion.com/upload", "GET", null);
-		executerequestToGetCookies("http://www.dailymotion.com/pageitem/video/edit?request=/&t=0.6538078272511391&loop=0&from_request=/upload&_csrf_l=" + account.getCookie("_csrf/link"), "GET", null);
+		executeRequestToGetCookies("http://www.dailymotion.com/upload", "GET", null);
+		executeRequestToGetCookies("http://www.dailymotion.com/pageitem/video/edit?request=/&t=0.6538078272511391&loop=0&from_request=/upload&_csrf_l=" + account.getCookie("_csrf/link"), "GET", null);
 		String videoId = executerequestToGetCookies("http://www.dailymotion.com/ajax/video", "POST", new VideoIdExtractor(), getAjaxVideoParamString());
+		task.setVideoId(videoId);
 		String videoUrl = "";
-		
+
 		cookiesTest = account.getCookies();
 
 		String postUrl = task.getUploadUrl();
@@ -144,14 +150,15 @@ public class NewsPoster {
 			File uploadFile = new File(fileName);
 			URL url = new URL(postUrl);
 			HttpURLConnection.setFollowRedirects(false);
-			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+			//HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(300000);
 			conn.setRequestMethod("POST");
 			conn.setDoInput(true);
 			conn.setDoOutput(true);
 
-			//conn.addRequestProperty("User-Agent", "Shockwave Flash"); 
+			conn.addRequestProperty("User-Agent", "Shockwave Flash"); 
 			conn.setRequestProperty("Accept", "text/*");
 
 			conn.setRequestProperty("Cookie", "sdx=" + account.getCookie("sdx") + "; " + "ts=" + account.getCookie("ts") + "; ");
@@ -166,12 +173,14 @@ public class NewsPoster {
 
 			PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
 
-			writer.append("--" + boundary).append(LINE_FEED);
+			writer.append(LINE_FEED).append("--" + boundary).append(LINE_FEED);
 			writer.append("Content-Disposition: form-data; name=\"Filename\"").append(LINE_FEED).append(LINE_FEED);;
 			writer.append(fileName).append(LINE_FEED);
 			writer.append("--" + boundary).append(LINE_FEED);
 			writer.append("Content-Disposition: form-data; name=\"file\"; filename=\""+fileName+"\"").append(LINE_FEED);
-			writer.append("Content-Type: application/octet-stream").append(LINE_FEED).append(LINE_FEED);
+			writer.append("Content-Type: application/octet-stream").append(LINE_FEED);
+			writer.append("Content-Transfer-Encoding: binary").append(LINE_FEED).append(LINE_FEED);
+			writer.flush();
 
 			FileInputStream inputStream = new FileInputStream(uploadFile);
 			byte[] buffer = new byte[4096];
@@ -186,16 +195,16 @@ public class NewsPoster {
 			writer.append("--" + boundary).append(LINE_FEED);
 			writer.append("Content-Disposition: form-data; name=\"Upload\"").append(LINE_FEED).append(LINE_FEED);
 			writer.append("Submit Query").append(LINE_FEED);
-			writer.append(boundary + "--").append(LINE_FEED).append(LINE_FEED);
+			writer.append("--" + boundary + "--");//.append(LINE_FEED).append(LINE_FEED);
 			writer.flush();
 
-			
-			
+
+
 			writer.flush();  
 
 			writer.close();
-			
-			
+
+
 			outputStream.close();
 
 			/*FileBody fileBody = new FileBody(new File("temp_video_audio.mov"));
@@ -217,11 +226,11 @@ public class NewsPoster {
 			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
 
 			StringBuilder responseStr = getResponseAsString(conn);
-			
+
 			log.debug(responseStr.toString());
-			
+
 			conn.disconnect();
-			
+
 			try {
 				JSONObject jsonObj = new JSONObject(responseStr.toString());
 				videoUrl = (String)jsonObj.getString("url");
@@ -229,10 +238,67 @@ public class NewsPoster {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
-			//TODO 
-			executerequestToGetCookies(getVideoFormXUploadUrl(videoId, videoUrl), "GET", null);
 
+			executeRequestToGetCookies(getVideoFormXUploadUrl(videoId, videoUrl), "GET", null);
+
+			//Edit video description 
+			editVideoDescription();
+
+		} catch (ClientProtocolException e) {
+			log.error("Error occured during posting news",e);
+		} catch (IOException e) {
+			log.error("Error occured during posting news",e);
+		}
+
+		return "";
+	}
+
+	private String editVideoDescription(){
+		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
+				"/pageitem/video/edit?request=%2F&loop=0";
+
+		try {
+			//post news
+			URL url = new URL(postUrl);
+			HttpURLConnection.setFollowRedirects(false);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("POST");
+			conn.setDoInput(true);
+			conn.setDoOutput(true);
+
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "*/*");
+			conn.setRequestProperty("Cookie", account.getCookies());
+			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+			conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+
+			OutputStream outputStream;
+			outputStream = conn.getOutputStream();
+
+			PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
+
+			writer.append(getEditVideoPostParamsUrl());
+
+			writer.flush();
+			writer.close();
+			outputStream.close();
+
+			int code = conn.getResponseCode();
+
+			// Execute HTTP Post Request
+			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
+
+			StringBuilder responseStr = getResponseAsString(conn);
+
+			log.debug(responseStr.toString());
+
+			conn.disconnect();
+
+			return "";
 		} catch (ClientProtocolException e) {
 			log.error("Error occured during posting news",e);
 		} catch (IOException e) {
@@ -257,10 +323,10 @@ public class NewsPoster {
 		return responseStr;
 	}
 
-	private String executerequestToGetCookies(String postUrl, String requestMethod, IResultExtractor resultExtractor){
+	private String executeRequestToGetCookies(String postUrl, String requestMethod, IResultExtractor resultExtractor){
 		return executerequestToGetCookies( postUrl, requestMethod, resultExtractor, null);
 	}
-	
+
 	private String executerequestToGetCookies(String postUrl, String requestMethod, IResultExtractor resultExtractor, String postParams){
 
 		try {
@@ -282,7 +348,7 @@ public class NewsPoster {
 			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
 			conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
 			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
-			
+
 			if(requestMethod.equalsIgnoreCase("POST") && postParams != null){
 				OutputStream os = conn.getOutputStream();
 				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
@@ -291,10 +357,10 @@ public class NewsPoster {
 				writer.close();
 				os.close();
 			}
-			
+
 			// Execute HTTP Post Request
 			int code = conn.getResponseCode();
-			
+
 			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
 
 			if(cookies.get("Set-Cookie") != null){
@@ -309,9 +375,9 @@ public class NewsPoster {
 			}
 
 			StringBuilder responseStr = getResponseAsString(conn);
-			
+
 			log.debug(responseStr.toString());
-			
+
 			if(resultExtractor != null){
 				resultExtractor.init(responseStr.toString());
 			}
@@ -393,9 +459,9 @@ public class NewsPoster {
 
 		return result.toString();
 	}
-	
-	
-	
+
+
+
 	private String getAjaxVideoParamString(){
 		StringBuilder params = new StringBuilder();
 		params.append("ajax_function").append("=").append("create").append("&");
@@ -404,28 +470,28 @@ public class NewsPoster {
 		params.append("_").append("=").append(String.valueOf(System.currentTimeMillis())).append("&");
 		params.append("from_request").append("=").append("/upload").append("&");
 		params.append("_csrf_l").append("=").append(account.getCookie("_csrf/link"));
-		
+
 		return params.toString();
 	}
-	
+
 	private class VideoIdExtractor implements IResultExtractor{
 
 		private String responseStr; 
-		
+
 		public void init(String responseStr){
 			this.responseStr = responseStr;
 		}
-		
+
 		@Override
 		public String getResult() {
 			String id = "-1";
 			id = responseStr.substring(14, responseStr.lastIndexOf("}"));
-			
+
 			return id;
 		}
-		
+
 	}
-	
+
 	private String getVideoFormXUploadUrl(String videoId, String videoUrl) {
 		StringBuilder params = new StringBuilder();
 		params.append("ajax/getVideoFromXUpload?xupload_response=1&video_id=")
@@ -434,7 +500,37 @@ public class NewsPoster {
 		.append(videoUrl.replaceAll(":", "%3A").replaceAll("#", "%23").replaceAll("=", "%3D"))
 		.append("&from_request=%2Fupload&_csrf_l=")
 		.append(account.getCookie("_csrf/link"));
-		
+
 		return "http://www.dailymotion.com/" + params.toString();
+	}
+
+	private String getEditVideoPostParamsUrl() {
+		StringBuilder params = new StringBuilder();
+		params.append("")
+		.append("form_name=").append("dm_pageitem_video_edit_0").append("&")
+		.append("_csrf=").append(account.getCookie("_csrf/form")).append("&")
+		.append("_fid=").append("").append("&")
+		.append("video_title=").append(task.getVideoTitle()).append("&")
+		.append("user_category=").append(themes[rnd.nextInt(themes.length)]).append("&")
+		.append("game_select=").append("").append("&")
+		.append("language=").append("en").append("&")
+		.append("tags_hidden=").append("").append("&")
+		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[]}").append("&")
+		.append("tags=").append(task.getTags()).append("&")
+		.append("description=").append(task.getDescription()).append("&")
+		.append("allow_comments=").append("1").append("&")
+		.append("allow_in_group=").append("1").append("&")
+		.append("recordedOn=").append("2014/11/14").append("&")
+		.append("coming_next=").append("").append("&")
+		.append("videoId=").append(task.getVideoid()).append("&")
+		.append("videoUpdateTitle=").append(task.getVideoid()).append("&")
+		.append("extensionVideo=").append("").append("&")
+		.append("uploadType=").append("").append("&")
+		.append("saveStatus=").append("fail").append("&")
+		//.append("from_request=").append("/video/edit/x2a5w2y_%25D0%25B1%25D0%25B5%25D0%25B7-%25D0%25BD%25D0%25B0%25D0%25B7%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D1%258F")
+		.append("_csrf_l=").append(account.getCookie("_csrf/link"));
+
+		
+		return params.toString();
 	}
 }

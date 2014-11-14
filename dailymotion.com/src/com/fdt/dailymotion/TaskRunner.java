@@ -6,29 +6,22 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.net.Authenticator;
-import java.net.HttpURLConnection;
 import java.net.PasswordAuthentication;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Properties;
 
 import javax.xml.xpath.XPathExpressionException;
 
-import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.message.BasicNameValuePair;
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 import com.fdt.dailymotion.task.NewsTask;
-import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
 
 /**
@@ -42,11 +35,11 @@ public class TaskRunner {
 	public final static String MAIN_URL_LABEL = "main_url";
 
 	private String proxyFilePath;
-	private String keyWordsFilePath;
-	private String listFilePath;
 	private String accListFilePath;
-	private int maxThreadCount;
 	private long proxyDelay;
+	
+	private String listInputFilePath;
+	private String listProcessedFilePath;
 
 	private Properties config = new Properties();
 
@@ -55,26 +48,22 @@ public class TaskRunner {
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
 	private final static String PROXY_PASS_LABEL = "proxy_pass";
 	private final static String PROXY_LIST_FILE_PATH_LABEL = "proxy_list_file_path";
-	private final static String KEY_WORDS_FILE_PATH_LABEL = "key_words_file_path";
 	private final static String ACCOUNTS_LIST_FILE_PATH_LABEL = "account_list_file_path";
-	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
 
-
-	private final static String LIST_FILE_PATH_LABEL = "list_file_path";
-
-
-	private ArrayList<String> linksList = new ArrayList<String>();
+	private final static String LIST_INPUT_FILE_PATH_LABEL = "list_input_file_path";
+	private final static String LIST_PROCESSED_FILE_PATH_LABEL = "list_processed_file_path";
 
 	public TaskRunner(String cfgFilePath){
 
 		Constants.getInstance().loadProperties(cfgFilePath);
+		
 		this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
-		this.keyWordsFilePath = Constants.getInstance().getProperty(KEY_WORDS_FILE_PATH_LABEL);
-		this.listFilePath = Constants.getInstance().getProperty(LIST_FILE_PATH_LABEL);
 		this.accListFilePath = Constants.getInstance().getProperty(ACCOUNTS_LIST_FILE_PATH_LABEL);
-		this.maxThreadCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
 		this.proxyDelay = Integer.valueOf(Constants.getInstance().getProperty(PROXY_DELAY_LABEL));
+		
+		this.listInputFilePath = Constants.getInstance().getProperty(LIST_INPUT_FILE_PATH_LABEL);
+		this.listProcessedFilePath = Constants.getInstance().getProperty(LIST_PROCESSED_FILE_PATH_LABEL);
 
 		Authenticator.setDefault(new Authenticator() {
 			@Override
@@ -109,29 +98,69 @@ public class TaskRunner {
 				//load account list
 				AccountFactory accountFactory = new AccountFactory(proxyFactory);
 				accountFactory.fillAccounts(accListFilePath);
-
-				//load links from file
-				//TODO this.linksList= loadLinkList(listFilePath) ;
-
-				Account account = null;
 				
-				//TODO Loop of accounts
-				try {
-					NewsPoster nPoster = new NewsPoster(new NewsTask(""), proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
-					nPoster.executePostNews();
-				} catch (XPathExpressionException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				File rootInputFiles = new File(listInputFilePath);
+				for(File file : rootInputFiles.listFiles()){
+					if(file.isFile() && accountFactory.getAccounts().size() > 0){
+						try {
+							NewsTask task = new NewsTask(file);
+							NewsPoster nPoster = new NewsPoster(task, proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
+							nPoster.executePostNews();
+							accountFactory.getAccounts().remove(0);
+							//Move file to processed folder
+							FileUtils.moveFile(task.getInputFileName(), new File(listProcessedFilePath + "/" + task.getInputFileName().getName()));
+						} catch (XPathExpressionException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						} catch (Exception e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
 				}
+				
+				//TODO Copy account list file
+				//File accountFile = new File(accListFilePath);
+				//accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
+				
+				//Save unused account if they was not used
+				//saveUnusedAccounts(accountFactory.getAccounts());
 			}
 		}finally{
 			
+		}
+	}
+	
+	private void saveUnusedAccounts(List<Account> accounts){
+		BufferedWriter bufferedWriter = null;
+		
+		try {
+			log.debug("Starting saving unused account...");
+			//Construct the BufferedWriter object
+			bufferedWriter = new BufferedWriter(new FileWriter(accListFilePath,false));
+			for(Account account : accounts){
+				bufferedWriter.write(account.toString());
+				bufferedWriter.newLine();
+			}
+			log.debug("Unused accounts was saved successfully.");
+
+		} catch (FileNotFoundException ex) {
+			log.error("Error occured during saving sucess result",ex);
+		} catch (IOException ex) {
+			log.error("Error occured during saving sucess result",ex);
+		} finally {
+			//Close the BufferedWriter
+			try {
+				if (bufferedWriter != null) {
+					bufferedWriter.flush();
+					bufferedWriter.close();
+				}
+			} catch (IOException ex) {
+				log.error("Error occured during closing output streams during saving success results",ex);
+			}
 		}
 	}
 	

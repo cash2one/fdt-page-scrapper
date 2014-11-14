@@ -66,4 +66,8 @@ public class Account {
 	public String getCookie(String key){
 		return cookie.get(key);
 	}
+	
+	public String toString(){
+		return email + ";" + pass + ";" + login;
+	}
 }
