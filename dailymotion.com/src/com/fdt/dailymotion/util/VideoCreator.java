@@ -9,12 +9,10 @@ import javax.media.MediaLocator;
 public class VideoCreator {
 	
 	public static void main(String... args){
-		VideoCreator vCreator = new VideoCreator();
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 		
-		
 		try {
-			vCreator.makeVideo("test_video.mov");
+			VideoCreator.makeVideo("test_video.mov", new File("images/123.jpg"));
 			
 			MediaLocator vml = JpegImagesToMovie.createMediaLocator("test_video.mov");
 			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
@@ -23,13 +21,14 @@ public class VideoCreator {
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	
-	public static void makeVideo(String fileName) throws MalformedURLException {
+	public static void makeVideo(String fileName, File imageFile) throws MalformedURLException {
 	    Vector<String> imgLst = new Vector<String>();
-	    
-	    File imageFile = new File("./images/123.jpg");
 	    
 	    for(int i = 0; i < 100; i++){
 	    	imgLst.add(imageFile.getAbsolutePath());
@@ -37,7 +36,7 @@ public class VideoCreator {
 	    
 	    JpegImagesToMovie imageToMovie = new JpegImagesToMovie();
 	    MediaLocator oml;
-	    if ((oml = imageToMovie.createMediaLocator(fileName)) == null) {
+	    if ((oml = JpegImagesToMovie.createMediaLocator(fileName)) == null) {
 	        System.err.println("Cannot build media locator from: " + fileName);
 	        System.exit(0);
 	    }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/snippet_extractor_lib"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="var" path="FDT_LIBS/customizer.jar"/>
@@ -33,9 +34,6 @@
 	<classpathentry kind="var" path="FDT_LIBS/org.springframework.expression-3.0.3.RELEASE.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/org.springframework.jdbc-3.0.3.RELEASE.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/org.springframework.transaction-3.0.3.RELEASE.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/page_scrapper.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/proxy_factory.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/snippet_extractor_lib.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/velocity-1.7.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/page_scrapper"/>
 	<classpathentry kind="output" path="bin"/>

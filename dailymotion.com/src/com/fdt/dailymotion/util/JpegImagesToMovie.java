@@ -346,7 +346,7 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
     /**
      * Create a media locator from the given string.
      */
-    static MediaLocator createMediaLocator(String url) {
+    public static MediaLocator createMediaLocator(String url) {
 
         MediaLocator ml;
 

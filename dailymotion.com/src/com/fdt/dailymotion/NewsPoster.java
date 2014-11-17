@@ -146,8 +146,8 @@ public class NewsPoster {
 			//post news
 			String boundary = "----------" + System.currentTimeMillis();
 
-			String fileName = "temp_video_audio.mov";
-			File uploadFile = new File(fileName);
+			String fileName = task.getVideoFile().getName();
+			File uploadFile = task.getVideoFile();
 			URL url = new URL(postUrl);
 			HttpURLConnection.setFollowRedirects(false);
 			//HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
@@ -504,7 +504,7 @@ public class NewsPoster {
 		return "http://www.dailymotion.com/" + params.toString();
 	}
 
-	private String getEditVideoPostParamsUrl() {
+	private String getEditVideoPostParamsUrl() throws UnsupportedEncodingException {
 		StringBuilder params = new StringBuilder();
 		params.append("")
 		.append("form_name=").append("dm_pageitem_video_edit_0").append("&")
@@ -514,10 +514,10 @@ public class NewsPoster {
 		.append("user_category=").append(themes[rnd.nextInt(themes.length)]).append("&")
 		.append("game_select=").append("").append("&")
 		.append("language=").append("en").append("&")
-		.append("tags_hidden=").append("").append("&")
-		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[]}").append("&")
-		.append("tags=").append(task.getTags()).append("&")
-		.append("description=").append(task.getDescription()).append("&")
+		.append("tags_hidden=").append(task.getVideoTitle()).append("&")
+		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[").append(task.getTags()).append("]}").append("&")
+		.append("tags=").append("").append("&")
+		.append("description=").append( URLEncoder.encode(task.getDescription(),"UTF-8")).append("&")
 		.append("allow_comments=").append("1").append("&")
 		.append("allow_in_group=").append("1").append("&")
 		.append("recordedOn=").append("2014/11/14").append("&")

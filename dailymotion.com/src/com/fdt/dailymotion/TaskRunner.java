@@ -10,11 +10,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Authenticator;
+import java.net.MalformedURLException;
 import java.net.PasswordAuthentication;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
 
+import javax.media.MediaLocator;
 import javax.xml.xpath.XPathExpressionException;
 
 import org.apache.commons.io.FileUtils;
@@ -22,7 +25,13 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 import com.fdt.dailymotion.task.NewsTask;
+import com.fdt.dailymotion.util.AudioVideoMerger;
+import com.fdt.dailymotion.util.JpegImagesToMovie;
+import com.fdt.dailymotion.util.VideoCreator;
+import com.fdt.scrapper.SnippetExtractor;
 import com.fdt.scrapper.proxy.ProxyFactory;
+import com.fdt.scrapper.task.BingSnippetTask;
+import com.fdt.scrapper.task.Snippet;
 
 /**
  * @author VarenKoks
@@ -30,18 +39,22 @@ import com.fdt.scrapper.proxy.ProxyFactory;
 public class TaskRunner {
 	private static final Logger log = Logger.getLogger(TaskRunner.class);
 
+	private static final String LINE_FEED = "\r\n";
+
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
-	
+
 	public final static String MAIN_URL_LABEL = "main_url";
 
 	private String proxyFilePath;
 	private String accListFilePath;
 	private long proxyDelay;
-	
+
 	private String listInputFilePath;
 	private String listProcessedFilePath;
 
 	private Properties config = new Properties();
+
+	private Random rnd = new Random();
 
 	//private ArrayList<Thread> threads = new ArrayList<Thread>();
 
@@ -57,11 +70,11 @@ public class TaskRunner {
 	public TaskRunner(String cfgFilePath){
 
 		Constants.getInstance().loadProperties(cfgFilePath);
-		
+
 		this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 		this.accListFilePath = Constants.getInstance().getProperty(ACCOUNTS_LIST_FILE_PATH_LABEL);
 		this.proxyDelay = Integer.valueOf(Constants.getInstance().getProperty(PROXY_DELAY_LABEL));
-		
+
 		this.listInputFilePath = Constants.getInstance().getProperty(LIST_INPUT_FILE_PATH_LABEL);
 		this.listProcessedFilePath = Constants.getInstance().getProperty(LIST_PROCESSED_FILE_PATH_LABEL);
 
@@ -98,12 +111,24 @@ public class TaskRunner {
 				//load account list
 				AccountFactory accountFactory = new AccountFactory(proxyFactory);
 				accountFactory.fillAccounts(accListFilePath);
-				
+
 				File rootInputFiles = new File(listInputFilePath);
 				for(File file : rootInputFiles.listFiles()){
 					if(file.isFile() && accountFactory.getAccounts().size() > 0){
 						try {
+							
 							NewsTask task = new NewsTask(file);
+							SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
+
+							createVideo(task);
+							//TODO Add Snippet task chooser
+							ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
+							StringBuilder snippetsStr = new StringBuilder(); 
+							for(Snippet snippet : snippets){
+								snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.getContent());
+							}
+							task.setSnippets(snippetsStr.toString());
+
 							NewsPoster nPoster = new NewsPoster(task, proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
 							nPoster.executePostNews();
 							accountFactory.getAccounts().remove(0);
@@ -121,22 +146,38 @@ public class TaskRunner {
 						}
 					}
 				}
-				
+
 				//TODO Copy account list file
 				//File accountFile = new File(accListFilePath);
 				//accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
-				
+
 				//Save unused account if they was not used
 				//saveUnusedAccounts(accountFactory.getAccounts());
 			}
 		}finally{
-			
+
 		}
 	}
-	
+
+	private void createVideo(NewsTask task){
+		AudioVideoMerger avMerger = new AudioVideoMerger();
+
+		try {
+			VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile());
+
+			MediaLocator vml = JpegImagesToMovie.createMediaLocator(task.getVideoFile().getPath());
+			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
+
+			avMerger.mergeFiles(vml, aml);
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 	private void saveUnusedAccounts(List<Account> accounts){
 		BufferedWriter bufferedWriter = null;
-		
+
 		try {
 			log.debug("Starting saving unused account...");
 			//Construct the BufferedWriter object
@@ -163,7 +204,7 @@ public class TaskRunner {
 			}
 		}
 	}
-	
+
 	public void loadProperties(String cfgFilePath){
 		synchronized (this){ 
 			InputStream is = null;
