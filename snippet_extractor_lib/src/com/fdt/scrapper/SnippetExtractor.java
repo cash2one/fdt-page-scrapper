@@ -46,14 +46,14 @@ public class SnippetExtractor {
 
 	private static final Logger log = Logger.getLogger(SnippetExtractor.class);
 
-	private int MIN_SNIPPET_COUNT=3;
-	private int MAX_SNIPPET_COUNT=9;
+	private Integer MIN_SNIPPET_COUNT=3;
+	private Integer MAX_SNIPPET_COUNT=9;
 
-	private int MIN_LINK_COUNT=3;
-	private int MAX_LINK_COUNT=9;
+	private Integer MIN_LINK_COUNT=3;
+	private Integer MAX_LINK_COUNT=9;
 
-	private int MIN_WORDS_COUNT=2;
-	private int MAX_WORDS_COUNT=5;
+	private Integer MIN_WORDS_COUNT=2;
+	private Integer MAX_WORDS_COUNT=5;
 
 	private int LINKS_COUNT = 100;
 
@@ -61,17 +61,21 @@ public class SnippetExtractor {
 
 	private ProxyFactory proxyFactory = null;
 	private ArrayList<String> linkList = null;
-	
+
 	private SnippetTask task= null;
-	
+
 
 	public SnippetExtractor(SnippetTask snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList) throws MalformedURLException, IOException {
 		super();
-		MIN_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
-		MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
-		MIN_LINK_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_LINK_COUNT_LABEL));
-		MAX_LINK_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_LINK_COUNT_LABEL));
-		
+		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL) != null)
+			MIN_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
+		if(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL) != null)
+			MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
+		if(ConfigManager.getInstance().getProperty(MIN_LINK_COUNT_LABEL) != null)
+			MIN_LINK_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_LINK_COUNT_LABEL));
+		if(ConfigManager.getInstance().getProperty(MAX_LINK_COUNT_LABEL) != null)
+			MAX_LINK_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_LINK_COUNT_LABEL));
+
 		this.proxyFactory = proxyFactory;
 		this.linkList = linkList;
 		task = snippetTask;
@@ -95,7 +99,7 @@ public class SnippetExtractor {
 			}
 			attempt++;
 		}while((snippetContent == null || "".equals(snippetContent.trim())) && attempt < maxAttemptCount);
-		
+
 		task.setResult(snippetContent);
 	}
 
@@ -167,7 +171,7 @@ public class SnippetExtractor {
 			is = conn.getInputStream();
 
 			String encoding = conn.getContentEncoding();
-			
+
 			InputStream inputStreamPage = null;
 
 			TagNode html = null;
@@ -188,7 +192,7 @@ public class SnippetExtractor {
 
 				inputStreamPage = new ByteArrayInputStream(pageStr.toString().getBytes("UTF-8"));
 				html = cleaner.clean(inputStreamPage,"UTF-8");
-				
+
 				System.out.println(pageStr.toString());
 			}else{
 				html = cleaner.clean(is,"UTF-8");
@@ -204,13 +208,13 @@ public class SnippetExtractor {
 			}
 		}
 	}
-	
+
 	private void fillExtraParamsFromTask(HttpURLConnection connection, SnippetTask task){
 		for(String key : task.getExtraParams().keySet()){
 			connection.addRequestProperty(key, task.getExtraParams().get(key));
 		}
 	}
-	
+
 	private HttpURLConnection executeURL(String strUrl, Proxy proxy) throws IOException{
 		//String strUrl = snippetTask.getFullUrl();
 		URL url = new URL(strUrl);
@@ -224,10 +228,10 @@ public class SnippetExtractor {
 		conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
 		conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 		conn.addRequestProperty("Accept-Encoding","gzip");
-		
+
 		@SuppressWarnings("unused")
 		int code = conn.getResponseCode();
-		
+
 		return conn;
 	}
 
@@ -310,7 +314,7 @@ public class SnippetExtractor {
 
 		return snippets;
 	}
-	
+
 	public SnippetTask getTask() {
 		return task;
 	}

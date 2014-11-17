@@ -8,7 +8,7 @@ public class BingSnippetTask extends SnippetTask
     public BingSnippetTask(String keyWords){
 	super(keyWords);
 	this.setScrapperUrl("http://www.bing.com/search?q=#KEY_WORDS#");
-	this.setXpathTitle("//li[@class='b_algo']/h2/a");
+	this.setXpathTitle("//li[@class='b_algo']//h2/a");
 	this.setXpathDesc("//div[@class='b_caption']/p");
 	this.setHost("bing.com");
 	/*this.setXpathSnipper("li[class=g]");
