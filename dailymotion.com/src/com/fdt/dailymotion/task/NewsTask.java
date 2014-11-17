@@ -82,11 +82,8 @@ public class NewsTask{
 
 			//TODO Generate description
 			
-		} catch (FileNotFoundException e) {
-			log.error("Reading PROPERTIES file: FileNotFoundException exception occured",e);
-		} catch (IOException e) {
-			log.error("Reading PROPERTIES file: IOException exception occured", e);
-		} finally {
+		}
+		finally {
 			try {
 				if(br != null)
 					br.close();
@@ -201,7 +198,7 @@ public class NewsTask{
 		if(tagsList.length() > 0){
 			tagsList.setLength(tagsList.length()-1);
 		}
-		return videoTitle;
+		return tagsList.toString();
 	}
 
 	public String getKey() {

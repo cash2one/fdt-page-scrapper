@@ -5,10 +5,12 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStreamWriter;
 import java.net.Authenticator;
 import java.net.MalformedURLException;
 import java.net.PasswordAuthentication;
@@ -51,6 +53,9 @@ public class TaskRunner {
 
 	private String listInputFilePath;
 	private String listProcessedFilePath;
+	private String errorFilePath;
+	
+	private String linkListFilePath;
 
 	private Properties config = new Properties();
 
@@ -66,6 +71,9 @@ public class TaskRunner {
 
 	private final static String LIST_INPUT_FILE_PATH_LABEL = "list_input_file_path";
 	private final static String LIST_PROCESSED_FILE_PATH_LABEL = "list_processed_file_path";
+	private final static String ERROR_FILE_PATH_LABEL = "error_file_path";
+	
+	private final static String LINK_LIST_FILE_PATH_LABEL = "link_list_file_path";
 
 	public TaskRunner(String cfgFilePath){
 
@@ -77,6 +85,9 @@ public class TaskRunner {
 
 		this.listInputFilePath = Constants.getInstance().getProperty(LIST_INPUT_FILE_PATH_LABEL);
 		this.listProcessedFilePath = Constants.getInstance().getProperty(LIST_PROCESSED_FILE_PATH_LABEL);
+		this.errorFilePath = Constants.getInstance().getProperty(ERROR_FILE_PATH_LABEL);
+		
+		this.linkListFilePath = Constants.getInstance().getProperty(LINK_LIST_FILE_PATH_LABEL); 
 
 		Authenticator.setDefault(new Authenticator() {
 			@Override
@@ -113,6 +124,9 @@ public class TaskRunner {
 				accountFactory.fillAccounts(accListFilePath);
 
 				File rootInputFiles = new File(listInputFilePath);
+				
+				File linkList = new File(linkListFilePath);
+				
 				for(File file : rootInputFiles.listFiles()){
 					if(file.isFile() && accountFactory.getAccounts().size() > 0){
 						try {
@@ -130,36 +144,37 @@ public class TaskRunner {
 							task.setSnippets(snippetsStr.toString());
 
 							NewsPoster nPoster = new NewsPoster(task, proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
-							nPoster.executePostNews();
+							String linkToVideo = nPoster.executePostNews();
+							appendStringToFile(linkToVideo, linkList);
+							
 							accountFactory.getAccounts().remove(0);
 							//Move file to processed folder
 							FileUtils.moveFile(task.getInputFileName(), new File(listProcessedFilePath + "/" + task.getInputFileName().getName()));
-						} catch (XPathExpressionException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						} catch (IOException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						} catch (Exception e) {
-							// TODO Auto-generated catch block
+						}  catch (Exception e) {
+							try {
+								FileUtils.moveFile(file, new File(errorFilePath + "/" + file.getName()));
+							} catch (IOException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
 							e.printStackTrace();
 						}
 					}
 				}
 
 				//TODO Copy account list file
-				//File accountFile = new File(accListFilePath);
-				//accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
+				/*File accountFile = new File(accListFilePath);
+				accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
 
 				//Save unused account if they was not used
-				//saveUnusedAccounts(accountFactory.getAccounts());
+				saveUnusedAccounts(accountFactory.getAccounts());*/
 			}
 		}finally{
 
 		}
 	}
 
-	private void createVideo(NewsTask task){
+	private void createVideo(NewsTask task) throws Exception{
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 
 		try {
@@ -258,5 +273,31 @@ public class TaskRunner {
 			}
 		}
 		return linkList;
+	}
+	
+	
+	private void appendStringToFile(String str, File file) {
+		BufferedWriter bufferedWriter = null;
+		try {
+			//Construct the BufferedWriter object
+			bufferedWriter = new BufferedWriter(new OutputStreamWriter(
+					new FileOutputStream(file, true), "UTF8"));
+			bufferedWriter.append(str);
+			bufferedWriter.newLine();
+		} catch (FileNotFoundException ex) {
+			log.error("Error during saving string to file",ex);
+		} catch (IOException ex) {
+			log.error("Error during saving string to file",ex);
+		} finally {
+			//Close the BufferedWriter
+			try {
+				if (bufferedWriter != null) {
+					bufferedWriter.flush();
+					bufferedWriter.close();
+				}
+			} catch (IOException ex) {
+				log.error("Error during closing output stream",ex);
+			}
+		}
 	}
 }
