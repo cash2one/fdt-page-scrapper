@@ -30,6 +30,7 @@ import org.apache.commons.io.FileUtils;
 public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 
 	public void mergeFiles(MediaLocator videoML, MediaLocator audioML) throws Exception { 
+		
 		DataSource videoDataSource = javax.media.Manager.createDataSource(videoML); //your video file
 		DataSource audioDataSource = javax.media.Manager.createDataSource(audioML); // your audio file
 		DataSource mixedDataSource = null; // data source to combine video with audio
@@ -110,18 +111,26 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		while(processor.getState() < 500) {
 			Thread.sleep(100);
 		}
+		
 		//wait until writing is done
 		waitForFileDone();
+		
 		//dispose processor and datasink
 		outputDataSink.stop();
 		processor.stop();
 
+		outputDataSink.close();
+		processor.close();
+		
+		outputDataSink.removeDataSinkListener(this);
+		processor.removeControllerListener(this);
+		
 		videoDataSource.disconnect();
 		audioDataSource.disconnect();
 		mixedDataSource.disconnect();
-
-		outputDataSink.close();
-		processor.close();
+		outputDataSource.disconnect();
+		arrayDataSource[0].disconnect();
+		arrayDataSource[1].disconnect();
 
 		File newFile = new File(tmpFileName.substring(5));
 		File oldFile = new File(videoML.getURL().toString().substring(5)); 

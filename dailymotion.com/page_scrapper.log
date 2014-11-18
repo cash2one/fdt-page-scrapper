@@ -1,0 +1,883 @@
+2014-11-18 09:11:05,050-DEBUG(NewsTask.java:77)-File content: The Wickedest Lord AliveDownload (READ) The Wickedest Lord Alive Online For Free eBook<img border="0" src="http://i0.ebkimg.com/previews/001/001583/001583550/001583550-hq-168-80.jpg" width="168" height="253"></p><span><P><B>CAN AN INDECENT PROPOSAL</B></P><P>Eight years ago, a tall handsome stranger entered Lizzie Allbright�s bedchamber and consummated a marriage of the utmost necessity. The Marquis of Steyne agreed to wed and bed Lord Bute�s admittedly lovely daughter to pay off his mother�s gambling debts. But once the deed was done, Steyne�s lawfully-wedded wife vanished into the London night�</P><P><B>LEAD TO EVERLASTING LOVE?</B></P><P>Years later, Steyne has nearly forgotten about his runaway bride. But when he suddenly finds himself in need of an heir, he has no choice but to track her down. Living happily in a small village under an assumed name, Lizzie is surprised to see her husband�and to feel such a strong attraction to him. But she is downright shocked when he asks her to bear him a son. How can they possibly repeat the heated encounter of their ill-fated wedding night without falling hopelessly in love?...in Christina Brooke�s stunningly sexy Regency, <I>The Wickedest Lord Alive.</I></P><P>Christina Brooke�s historical romances are: </P><P>"Clever, lush, and lovely."�<I>Suzanne Enoch</I></P><P>"Sensual and passionate."�<I>Publishers Weekly </I><P>"Delightful." �<I>Night Owl Romance</I><br>Read <strong>The Wickedest Lord Alive - Christina Brooke (eBook)</strong> online, or download in secure EPUB or secure PDF format<br /><a href="http://tinyurl.com/q6rtzzu"><img src="http://5.firepic.org/5/images/2014-11/17/5dhscpv3haxf.png" /></a>
+2014-11-18 09:11:05,062-DEBUG(NewsTask.java:104)-Image found: http://i0.ebkimg.com/previews/001/001583/001583550/001583550-hq-168-80.jpg
+2014-11-18 09:11:05,702-DEBUG(NewsTask.java:127)-Link found: http://tinyurl.com/q6rtzzu
+2014-11-18 09:11:22,198- INFO(NewsPoster.java:103)-Upload URL: http://upload-07.dailymotion.com/upload?maxsize=2048&uuid=9f2b48a82506cb3677ebb2d44b372ab6&seal=79588fd956e8ccf8fc0cb58697fb3b20
+2014-11-18 09:11:22,855-DEBUG(NewsPoster.java:320)-<!DOCTYPE html>
+<html xml:lang="ru-RU" lang="ru-RU">
+<head id="head">
+<title>Dailymotion - Загрузить видео</title>
+<script>(function(q,v,r){var d=v.userAgent.toLowerCase(),f=r.documentElement;q.DM_ENV={_add:function(g,h){if(!this[g]){this[g]=h}else{for(var b in h){this[g][b]=h[b]}}PubSub.publish("envs:added",g)}};var a={},x=function(){};x.prototype={subscribe:function(h,g,b){(a[h]=a[h]||[]).push([b||q,g]);return this},unsubscribe:function(k,h){for(var b=(a[k]||[]).length,g=b-1;g>=0;g--){if(!h||h===a[k][g][1]){a[k].splice(g,1)}}return this},publish:function(h){for(var g=0,b=(a[h]||[]).length;g<b;g++){a[h][g][1].apply(a[h][g][0],Array.prototype.slice.call(arguments,1))}return this}};q.PubSub=q.PubSub||new x();f.className+=("ontouchstart" in f)?"":" no-touch";var n=function(b){return d.indexOf(b)>-1},p="gecko",u="webkit",y="safari",e="opera",j="trident",l=f,i=n(j)&&/(rv)(?::| )([\w.]+)/.exec(d),t=[(!(/opera|webtv/i.test(d))&&/msie\s([\d]+)/.test(d))?("ie ie"+RegExp.$1):n("firefox/2")?p+" ff2":n("firefox/3.5")?p+" ff3 ff3_5":n("firefox/3")?p+" ff3":n("gecko/")?p:n("opera")?e+(/version\/(\d+)/.test(d)?" "+e+RegExp.$1:(/opera(\s|\/)(\d+)/.test(d)?" "+e+RegExp.$2:"")):n("konqueror")?"konqueror":n("chrome")?u+" chrome":n("iron")?u+" iron":n("applewebkit/")?u+" "+y+(/version\/(\d+)/.test(d)?" "+y+RegExp.$1:""):n("mozilla/")?p:"",n("j2me")?"mobile":n("iphone")?"iphone":n("ipod")?"ipod":n("mac")?"mac":n("darwin")?"mac":n("webtv")?"webtv":n("win")?"win":n("freebsd")?"freebsd":(n("x11")||n("linux"))?"linux":"","js"];c=t.join(" ");if(i){c+=" ie"+i[2].split(".")[0]}l.className+=" "+c;q.DM_Flash=(function(){var B="undefined",h="object",k="Shockwave Flash",b="ShockwaveFlash.ShockwaveFlash",s="application/x-shockwave-flash";var A=v.userAgent.toLowerCase(),g=v.platform.toLowerCase(),z=[0,0,0],o=null;if(typeof v.plugins!=B&&typeof v.plugins[k]==h){o=v.plugins[k].description;if(o&&!(typeof v.mimeTypes!=B&&v.mimeTypes[s]&&!v.mimeTypes[s].enabledPlugin)){o=o.replace(/^.*\s+(\S+\s+\S+$)/,"$1");z[0]=parseInt(o.replace(/^(.*)\..*$/,"$1"),10);z[1]=parseInt(o.replace(/^.*\.(.*)\s.*$/,"$1"),10);z[2]=/[a-zA-Z]/.test(o)?parseInt(o.replace(/^.*[a-zA-Z]+(.*)$/,"$1"),10):0}}else{if(typeof window.ActiveXObject!=B){try{var w=new ActiveXObject(b);if(w){o=w.GetVariable("$version");if(o){o=o.split(" ")[1].split(",");z=[parseInt(o[0],10),parseInt(o[1],10),parseInt(o[2],10)]}}}catch(m){}}}return{VERSION:{major:z[0],minor:z[1],release:z[2]}}})()})(window,navigator,document);</script>
+<script>DMAssetsMap={"@popup.js":"fc7812cd5dcf8ad73","@store.js":"6544fc825e69e8493","@tipsy.js":"227403fb77fa4b533","@smartalert.js":"55555db3b4029c633","\/js\/views\/shared\/smartalert\/registration_confirmation.js":"81e2af264fc2f9303","\/js\/views\/shared\/smartalert\/push_signup.js":"eb0dea23b2c61d5b3","\/js\/lib\/dm\/tour.js":"690301900b21a1383","\/js\/views\/shared\/tour\/welcome.js":"cebb38d700ab3b1e3","\/js\/views\/shared\/social\/connectbutton.js":"e65d62c3edd80a5e3","\/js\/lib\/dm\/alert.js":"7323a73724f59abd3","\/js\/views\/shared\/video\/charts.js":"bb0240b44bcb783f3","\/js\/widget\/pageitem\/video\/embedcode.js":"4df03c22ec75900e3","\/js\/lib\/plugins\/jquery.farbtastic.patched.js":"c0103a1e3482dbbf3","\/js\/lib\/dm\/player_light_and_expander.js":"a5a84a85a50d089e3","\/js\/lib\/dm\/search_videos.js":"28f2226f181335c23","\/js\/lib\/dm\/masscast\/iframed\/buzzpackplayer.js":"d746da44c73b10483","\/js\/lib\/dm\/masscast\/iframed\/masthead.js":"076c53b0aa39f0bb3","\/js\/lib\/dm\/masscast\/iframed\/minipreview.js":"833c5ebd68dc23753","\/js\/lib\/dm\/masscast\/iframed\/expand300x250.js":"d0952f814ac1a69e3","\/js\/lib\/dm\/masscast\/iframed\/expandanddisplay.js":"7b2a735eda9a49883","\/js\/lib\/dm\/masscast\/iframed\/pushdown.js":"dce8735458b2f2913","\/js\/lib\/dm\/notify.js":"526b9dcc323f14893","\/js\/lib\/bower\/select2\/select2.js":"8bcface4a2ffb9683","\/css\/lib\/bower\/select2\/select2.css":"ceb74a4a0c2c37953","\/css\/views\/shared\/flag.css":"272b62803ada5d703","@pickadatetime.js":"d5e069e87d9382f13","@pickadatetime.rtl.css":"8cd3a1d971a3796f3","@pickadatetime.ltr.css":"8cd3a1d971a3796f3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/bg_BG.js":"0bd9884f585b5b6d3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/bs_BA.js":"d606446252e3b5923","\/js\/lib\/plugins\/jquery.pickadate\/translations\/ca_ES.js":"b8a7c183b5c1ac553","\/js\/lib\/plugins\/jquery.pickadate\/translations\/cs_CZ.js":"a52fc45b7455b52a3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/da_DK.js":"8af51e2850c975d73","\/js\/lib\/plugins\/jquery.pickadate\/translations\/de_DE.js":"5dcfd8dfd25466c43","\/js\/lib\/plugins\/jquery.pickadate\/translations\/el_GR.js":"1e3416c349b6e2f83","\/js\/lib\/plugins\/jquery.pickadate\/translations\/es_ES.js":"db64859c6b8388d33","\/js\/lib\/plugins\/jquery.pickadate\/translations\/et_EE.js":"c89b8aa9de27a5f73","\/js\/lib\/plugins\/jquery.pickadate\/translations\/eu_ES.js":"8897f2f75dca7e343","\/js\/lib\/plugins\/jquery.pickadate\/translations\/fi_FI.js":"ef940cd3ef2a38903","\/js\/lib\/plugins\/jquery.pickadate\/translations\/fr_FR.js":"5436c4320cd32e7c3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/he_IL.js":"80850f5be5f9b78d3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/hr_HR.js":"7d90b064326ccfb23","\/js\/lib\/plugins\/jquery.pickadate\/translations\/hu_HU.js":"a75eb87ca5b2ae593","\/js\/lib\/plugins\/jquery.pickadate\/translations\/id_ID.js":"9199ba2e9749cc9c3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/it_IT.js":"6be20cfdc4ef97973","\/js\/lib\/plugins\/jquery.pickadate\/translations\/ko_KR.js":"75897c031ebe821a3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/nl_NL.js":"4842603717b2a5f03","\/js\/lib\/plugins\/jquery.pickadate\/translations\/no_NO.js":"b3c899de0ee761953","\/js\/lib\/plugins\/jquery.pickadate\/translations\/pl_PL.js":"0d15b315a28da4eb3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/pt_BR.js":"e877f81c9235a1eb3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/pt_PT.js":"57151af45534ed733","\/js\/lib\/plugins\/jquery.pickadate\/translations\/ro_RO.js":"ea24b7f8006f052d3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/ru_RU.js":"4dc7d775ca4861dc3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/sk_SK.js":"a9baf9f6f40294183","\/js\/lib\/plugins\/jquery.pickadate\/translations\/sv_SE.js":"dd561dbce88d1d163","\/js\/lib\/plugins\/jquery.pickadate\/translations\/th_TH.js":"461c7eb1140bc26e3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/tr_TR.js":"3e1ecb5320f1a82c3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/uk_UA.js":"d61bd981a6899b333","\/js\/lib\/plugins\/jquery.pickadate\/translations\/zh_CN.js":"dcf75301ff2a901a3","\/js\/lib\/plugins\/jquery.pickadate\/translations\/ja_JP.js":"68e8a86e48804d243","\/js\/lib\/plugins\/jquery.pickadate\/translations\/vi_VN.js":"e1f4fa085fd3fb513"};</script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="lang" content="ru-RU" />
+<meta property="fb:app_id" content="96937694899" />
+<meta name="description" content="Смотрите бесплатно лучшее видео онлайн: новые музыкальные клипы, короткие фильмы, ТВ шоу, трейлеры к фильмам и видео приколы. Загружайте и делитесь видео. Ознакомьтесь с нашим избранным контентом." />
+<meta name="keywords" />
+<meta name="author" content="dailymotion.com" />
+<meta name="y_key" content="a87a0d996fe5f70f" />
+<meta name="msvalidate.01" content="42E38E6C5CF3C253563039FCD6F3F775" />
+<link rel="stylesheet" href="http://static1.dmcdn.net/css/gen/pack/upload_edit.ltr.css.v8a51584217fd081e3" />
+<link rel="canonical" href="http://www.dailymotion.com/upload" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="�?скать видео на Dailymotion" />
+<link rel="apple-touch-icon" href="http://static1.dmcdn.net/images/apple-touch-icon.png.vc2d6c12905e2bcd23" />
+<link rel="shortcut icon" type="image/x-icon" href="http://static1.dmcdn.net/images/favicon.ico.v4ea850dd4f7f3de03" />
+<script type="text/javascript">DM_Context = {"server_name":"web-078","global_request":{"requestURI":"\/upload","objectFactory":{}},"is_ajax":true,"request":{"requestURI":"\/upload","objectFactory":{}},"reader":{"originalId":null,"cache":{}},"real_user":{"originalId":null,"cache":{}},"uri":"\/upload","route_name":"upload","is_logged":true,"is_web_crawler":false,"version":"ru","content_version":"ru","language":"ru","content_language":"ru","rfc1766_language":"ru-RU","direction":"ltr","country_name":"\u0420\u043e\u0441\u0441\u0438\u044f","country":"ru","geoip_country":"eu","geoip_as":"AS199793","device":"desktop","page_type":"upload","page_channel":"","traffic_segment":26,"time_and_day":"14:41-Tuesday","browser_language":"ru-ru","env":"prod","domain":"dailymotion.com","reader_id":89454544,"reader_xid":"x1h9bkg","reader_login":"kucor","reader_type":"UGC","reader_city":"","reader_country":"pl","reader_age":"","reader_civility":"","reader_gender":"f","reader_is_admin":false,"reader_has_family_filter":true,"is_search":false};Stringified_DM_Context = {"server_name":"web-078","is_ajax":"true","uri":"\/upload","is_logged":"true","is_web_crawler":"false","version":"ru","content_version":"ru","language":"ru","content_language":"ru","rfc1766_language":"ru-RU","direction":"ltr","country_name":"\u0420\u043e\u0441\u0441\u0438\u044f","country":"ru","geoip_country":"eu","geoip_as":"AS199793","device":"desktop","page_type":"upload","page_channel":"","traffic_segment":"26","time_and_day":"14:41-Tuesday","browser_language":"ru-ru","env":"prod","domain":"dailymotion.com","reader_id":"89454544","reader_xid":"x1h9bkg","reader_login":"kucor","reader_type":"UGC","reader_city":"","reader_country":"pl","reader_age":"","reader_civility":"","reader_gender":"f","reader_is_admin":"false","reader_has_family_filter":"true","is_search":"false"};DM_LoginCookie = 'lri';DM_Widget_PageItem_Search_autocomplete_enabled = '1';DM_Widget_PageItem_Search_language = 'ru';facebook_enabled = true;loggerEventServerDatas = '{\"host\":\"logger-06.vty.dailymotion.com\",\"clientId\":\"desktop-windows\",\"sourceId\":\"upload\",\"u\":89454544,\"country\":\"EU\",\"pid\":\"546b4c7892085\",\"vl\":\"ru-ru\",\"sv\":\"ru\"}';</script></head>
+<body id="bodyall" class="dm_page_html_upload">
+
+<div id="topwrapper">
+
+
+<div class="sd_header header-site">
+    <div id="header">
+        <div id="login_info" class="login_info pull-end">
+                                            <div class="js-tipsy" data-tipsy-options="{&quot;target&quot;:&quot;#tipsy-profile-menu&quot;,&quot;gravity&quot;:&quot;ne&quot;,&quot;trigger&quot;:&quot;hover&quot;,&quot;tooltip_type&quot;:&quot;tipsy-button-dropdown force-arrow&quot;}">
+                    <a href="/kucor" class='login-name'>Kucor</a>
+                    <img data-lg="header" width="32" height="32" alt="Kucor" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://s1.dmcdn.net/AVM/40x40-RQg.png" class="clickable js-tipsy" alt="kucor">
+                </div>
+                <div id="tipsy-profile-menu" class="hidden">
+                    <ul class="font-md foreground2 tipsy-profile-menu-inner">
+                        
+
+
+
+    <li><a href="/kucor" >Мой канал</a></li>
+    <li class="first"><a href="/user/kucor/1" >Видео</a></li>
+
+        <li><a href="/ru/mychannel/kucor/1" >Подписки</a></li>
+    <li><a href="/bookmarks/kucor/1" >�?збранное</a></li>
+    <li><a href="/playlists/kucor" >Плейлисты</a></li>
+    <li><a href="/watchlater" >Посмотреть позже</a></li>
+    <li><a href="/history" >�?стория</a></li>
+
+    <li class="separator"><div></div></li>
+
+    <li><a href="/groups/kucor" >Группы</a></li>
+    <li><a href="/contests/kucor" >Конкурсы</a></li>
+    <li><a href="/comments/onuser/kucor" >Комментарий</a></li>
+
+    <li class="separator"><div></div></li>
+
+    <li><a href="/subscriptions/kucor/1" >Контакты</a></li>
+
+    <li class="separator"><div></div></li>
+<li><a href="/profile"  >Настройки</a></li>
+    <li><a href="/stats/kucor" >Статистика</a></li>
+<li class="last"><a id="header_logout" href="/logout?urlback=%2Fupload">Выйти</a></li>
+                    </ul>
+                </div>
+                    </div>
+            
+            <a class="logo" href="/ru" title="Главная">
+        
+        <img id="dailymotion_logo" width="177" height="30" alt="logo Dailymotion" data-low-src="http://static1.dmcdn.net/images/header/logo_dailymotion.png.ve5ebb8f8167218983" data-hdpi-src="http://static1.dmcdn.net/images/header/logo_dailymotion@2x.png.v406dba93a3dd750a3" src="http://static1.dmcdn.net/images/header/logo_dailymotion.png.ve5ebb8f8167218983" />
+        <script type="text/javascript">
+            (function(l){l.src = (((window.devicePixelRatio || 0) > 1.5) && l.getAttribute('data-hdpi-src')) || l.getAttribute('data-low-src');})(document.getElementById('dailymotion_logo'))
+        </script>
+    </a>
+    
+        <article itemscope itemtype="http://schema.org/WebSite">
+        <meta itemprop="url" content="https://www.dailymotion.com/"/>
+        <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" action="/" id="header_search" name="header_search" method="get" id="search_box">
+            <input id="input_search" placeholder="Видео, канал..." type="text" name="search" maxlength="256" autocomplete="off" spellcheck="false" value="" />
+            <meta itemprop="target" content="https://www.dailymotion.com/ru/relevance/universal/search/{search}/1"/>
+            <input id="search_hitmap" type="hidden" name="hitmap" value="" />
+            <input id="search_locale" type="hidden" name="locale" value="ru" />
+            <button id="search_submit" type="submit" name="submit_button" value=""><span class="icon icon-search"></span></button>
+        </form>
+    </article>
+
+        <ul class="header_links">
+                    <li class="browse">
+                <a class="header_link" href="/ru/browse" title="Просмотр">Просмотр</a>
+            </li>
+                <li class="upload">
+            <a href="/upload" class="btn" title="Загрузите видео">Загрузите видео</a>
+        </li>
+    </ul>
+
+        </div>
+</div>
+
+<div id="wrapper" class="container">
+<div class="dmco_box" id="top_banner"></div>
+<div id="content">
+<script type="text/javascript">DM_ENV._add("DM_Alert", {"resend_email_confirmation":"Спасибо. Мы только что отправили вам письмо."});</script>
+<script type="text/javascript">DM_ENV._add("DM_Utils", {"DM_CloseLabel":"закрыть","DM_NoLabel":"Нет","DM_YesLabel":"Да","DM_Closex28Label":"Пропустить рекламу","DM_PaidLabel":"уплачено"});</script>
+<div class="dmpi_box dmpi_bigbox background">
+<div class="box_content">
+<div class="content_right">
+<div class="dmpi_box dmpi_subbox col-12" id="upload_content">
+<div class="box_header">
+<div class="dmco_box left_title">
+<h2 class="dmco_title page-subtitle">Загрузите видео на свою страницу</h2>
+</div>
+</div>
+<div class="box_content">
+<div class="dmco_box col-8" id="upload_left_box">
+<div class="dmco_box thick_light_border_top background_5" id="upload_lext_box_main">
+<div class="dmpi_upload_checkgroupcontest"></div>
+<div class="dmco_html" id="upload_list"></div>
+<div class="dmpi_upload_choice">
+<div class="dmpi_notice no-flash-notice hidden">
+
+<div data-use-cookie="1"
+ class="mrg-btm-md mo_alert media pdg-md brd-rad-md alert-info pdg-end-md alert-md">
+    <div class="media-img mrg-end-md font-md" data-icon></div>
+
+
+    <div class="media-block pdg-top-xs">
+                        <div class="pdg-end-lg font-md">We detected you don’t have <a href="http://get.adobe.com/flashplayer/" class="link_on_hvr underline" rel="nofollow" target="_blank">Flash Player</a> installed. <br> Please use the <a href="/upload-basic">classic upload page</a> instead.</div>
+    </div>
+</div>
+
+</div>
+<div class="dmco_html"><h2 id="title_new_video_box">Загрузить другое видео</h2>
+                       <div id="choice" class="background light_border"><form id="upload_button">
+                    <span id="spanButtonPlaceHolder"></span>
+                 </form><div class="upload-button-wrapper"><a class="dmco_simplelink btn btn-primary dmco_link not_ajax" id="upload_video_button" href="javascript:void(0);" title="Загрузить видео">Загрузить видео</a></div><div>Столкнулись с проблемой? Попробуйте воспользоваться альтернативной <a href="/upload-basic" rel="nofollow" class="name">страницей загрузки или виджетом.</a>
+или нашим <a href="/widget/upload?skin=default" target="_blank" rel="nofollow" class="name">аплоадером</a> стандартным.
+Посмотрите раздел <a href="/faq#uploading_videos" class="dmco_link dmco_simplelink name" onclick="window.open(this.href); return false;">FAQ</a>.</div></div></div>
+<div class="dmco_html"><div class="advised_video_setting_left"><b>Перед отправлением видео проверьте, что оно не превышает:</b><ul><li> - 60 минут по длине</li><li> - Размер 4 Гб</li><li> - С разрешением HD 1080p (1920x1080)</li></ul></div><div class="advised_video_setting_right"><b>Рекомендованные видео-файлы:</b><ul><li> - Формат: mp4 (H264), mov, wmv, avi.</li><li> - Разрешение: 320x240, 640x480 или 1280x720</li><li> - 25 кадров в секунду</li><li> <a href="/upload/faq" class="dmco_link name" onclick="window.open(this.href); return false;">Дополнительная информация</a></li></ul></div><div class="become_motion_maker_link">Станьте <a href="/ru/motionmaker" class="dmco_link dmco_simplelink name" onclick="window.open(this.href); return false;">Motionmaker</a>
+                                    чтобы загружать видео без ограничений на размер и длину, в HD 1080p.</div></div>
+<div class="dmco_clear"><!--comment for IE6 height --></div>
+</div>
+</div>
+</div>
+<div class="dmco_box right_box col-4 last" id="upload_right_box">
+<div class="dmpi_upload_informations">
+<div class="dmco_html"><div id="mass_uploader" class="mrg-btm-lg"><h3 class="page-subtitle">Dailymotion Mass Uploader</h3><p><a href="/ru/extras/mass_uploader" target="_blank"><img title="Получите это на странице загрузки" class="mass_uploader" src="http://static1.dmcdn.net/images/uploader_preview.jpg" /></a></p><p>Массовый аплоудер - это приложение, которое позволяет вам скачивать разнообразные видео на Dailymotion, даже не посещая вебсайт Dailymotion.</p><a class="download_mass_uploader_page name dmco_link" href="/ru/extras/mass_uploader" target="_blank">Получите это на странице загрузки &raquo;</a></div></div>
+<div class="dmco_html"><div id="important" class="mrg-btm-lg"><h3 class="page-subtitle">Важно</h3><p>Вы должны помнить, что несёте ответственность за то, чтобы загруженный вами видео-контент соответствовал
+<a href="/legal/terms" class="name dmco_link" onclick="window.open(this.href); return false;">Условиям использования сайта Dailymotion</a>, с которыми вы согласились при создании аккаунта.</p></div></div>
+<div class="dmco_html"><div id="improve_visibility" class="thick_light_border_top"><h3 class="video_title">Улучшите видимость вашего видео</h3><p>Внимательно <b>заполните все поля, когда загружаете своё видео</b>: чем более точной будет сообщённая вами информация,
+тем легче будет найти и посмотреть ваше видео на Dailymotion, используя такие поисковые системы,
+как Google, Yahoo! или Bing.</p></div><div id="upload_duration" class="thick_light_border_top"><h3 class="video_title">Время загрузки видео</h3><p>Время загрузки вашего видео может меняться в зависимости от его размера и качества вашего �?нтернет-соединения.
+                            Например, может понадобиться до 5 минут, чтобы загрузить видео размером 5 Мб при скорости �?нтернет-соединении ADSL 512.</p></div></div>
+<div class="dmco_html"><div id="reminder" class="thick_light_border_top"><h3 class="video_title">Напоминание</h3><div><b>Перед отправлением видео проверьте, что оно не превышает:</b><ul><li> - 60 минут по длине</li><li> - Размер 4 Гб</li><li> - С разрешением HD 1080p (1920x1080)</li></ul></div><div>Станьте <a href="/ru/motionmaker" class="dmco_link dmco_simplelink name" onclick="window.open(this.href); return false;">Motionmaker</a>
+                                        чтобы загружать видео без ограничений на размер и длину, в HD 1080p.</div><br /><div><b>Рекомендованные видео-файлы:</b><ul><li> - Формат: mp4 (H264), mov, wmv, avi.</li><li> - Разрешение: 320x240, 640x480 или 1280x720</li><li> - 25 кадров в секунду</li><li> <a href="/upload/faq" class="dmco_link name" onclick="window.open(this.href); return false;">Больше информации</a></li></ul></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="dmco_clear"><!--comment for IE6 height --></div>
+</div>
+</div>
+<div class="dmco_clear"><!--comment for IE6 height --></div>
+</div>
+</div>
+<div class="dmco_box" id="bottom_banner"></div>
+</div>
+<div class="dmco_box" id="push_footer"></div>
+
+<div class="dmpi_pagestats">                <div style="display:none">
+                <script type="text/javascript" id="v1sttag">
+                    vsUrl = "http://www.dailymotion.com/sense/images/vs/tag.gif?";
+                </script>
+                </div>
+                </div>
+</div>
+
+
+
+<div class="sd_footer light_border_top " id="footer">
+    <div class="js-back-to-top-container back-to-top-container">
+        <div class="js-back-to-top back-to-top badge badge-tag font-md clickable">
+            <i class="icon-arrow_up font-sm"></i>
+            Наверх страницы
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+                            <ul class="span-2 col">
+                    <li class="ellipsis" title="Dailymotion">Dailymotion</li>
+                                            <li class="ellipsis " title="О нас">
+                                                                                    <a href="/ru/about">О нас</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Пресса">
+                                                                                    <a href="http://press.dailymotion.com">Пресса</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Работа">
+                                                                                    <a href="http://jobs.dailymotion.com/en/home">Работа</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Блог">
+                                                                                    <a href="http://blog.dailymotion.com/en">Блог</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Все видео">
+                                                                                    <a href="/archived/index.html">Все видео</a>
+                                                                            </li>
+                                    </ul>
+                            <ul class="span-2 col">
+                    <li class="ellipsis" title="Программы">Программы</li>
+                                            <li class="ellipsis " title="Become a Partner">
+                                                                                    <a href="http://official.dailymotion.com"
+ target="_blank">Become a Partner</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Dailymotion Publisher">
+                                                                                    <a href="http://publisher.dailymotion.com/?l=en"
+ target="_blank">Dailymotion Publisher</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Реклама">
+                                                                                    <a href="http://advertising.dailymotion.com/"
+ target="_blank">Реклама</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="OpenVoD">
+                                                                                    <a href="http://openvod.dailymotion.com"
+ target="_blank">OpenVoD</a>
+                                                                            </li>
+                                    </ul>
+                            <ul class="span-2 col">
+                    <li class="ellipsis" title="Помощь">Помощь</li>
+                                            <li class="ellipsis ff-no-ellipsis" title="Семейный фильтр &lt;span class=&quot;js-family-filter-toggle link clickable&quot;&gt;ON&lt;/span&gt;">
+                                                                                    <a li_class="ff-no-ellipsis">Семейный фильтр <span class="js-family-filter-toggle link clickable">ON</span></a>
+                                                                            </li>
+                                            <li class="ellipsis " title="FAQ">
+                                                                                    <a href="/ru/faq">FAQ</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Контакт">
+                                                                                    <a href="/ru/feedback">Контакт</a>
+                                                                            </li>
+                                    </ul>
+                            <ul class="span-2 col">
+                    <li class="ellipsis" title="Юридические условия">Юридические условия</li>
+                                            <li class="ellipsis " title="Условия использования">
+                                                                                    <a href="/legal/terms">Условия использования</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Политика конфиденциальности">
+                                                                                    <a href="/legal/privacy">Политика конфиденциальности</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Запрещённый контент">
+                                                                                    <a href="/legal/prohibited">Запрещённый контент</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Защищено авторским правом">
+                                                                                    <a href="/legal/copyright">Защищено авторским правом</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Защита детей">
+                                                                                    <a href="/legal/childprotection">Защита детей</a>
+                                                                            </li>
+                                    </ul>
+                            <ul class="span-2 col">
+                    <li class="ellipsis" title="Экстра">Экстра</li>
+                                            <li class="ellipsis " title="Dailymotion повсюду">
+                                                                                    <a href="/ru/everywhere">Dailymotion повсюду</a>
+                                                                            </li>
+                                            <li class="ellipsis stream" title="Поток Dailymotion">
+                                                                                    <a href="/stream"
+ li_class="stream">Поток Dailymotion</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Массовый аплоудер">
+                                                                                    <a href="/ru/extras/mass_uploader">Массовый аплоудер</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Jukebox">
+                                                                                    <a href="/ru/factory/jukebox">Jukebox</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="далее...">
+                                                                                    <a href="/ru/extras">далее...</a>
+                                                                            </li>
+                                    </ul>
+                            <ul class="span-2 col">
+                    <li class="ellipsis" title="Разработчики">Разработчики</li>
+                                            <li class="ellipsis " title="Для разработчиков">
+                                                                                    <a href="http://developer.dailymotion.com">Для разработчиков</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="API-данные">
+                                                                                    <a href="http://developer.dailymotion.com/documentation#graph-api">API-данные</a>
+                                                                            </li>
+                                            <li class="ellipsis " title="Плейер API">
+                                                                                    <a href="http://developer.dailymotion.com/documentation#player-api">Плейер API</a>
+                                                                            </li>
+                                    </ul>
+                    </div>
+        <div class="container hidden" id="flag_select"></div>
+        <div class="row footer-bottom span-12">
+            <div class="credits">
+                <span>© 2005 - 2014 Dailymotion</span>
+                    
+        
+        
+        
+    
+                                
+    
+
+    <span  data-href="/controller/Shared_Footer_LocaleSelector?"   title="Сменить язык"   id="selected_locale" class="linkable ajaxlink action:toggleOrUpdate action:arg0:#flag_select dmco_flag dmco_flag_ru language_ru" data-css-class=" dmco_flag dmco_flag_ru language_ru" onclick="DM_Ajax.link(this); return false;"><span>Страна:</span><span class="current_flag flag_ru"></span><span>Россия<span class="icon-arrow_down"></span></span></span>
+
+            </div>
+            <div id="footer_follow_us">
+                <a class="instagram" href="http://www.instagram.com/dailymotion"target="_blank" title="Instagram Dailymotion">
+                    <span class="icon icon-instagram"></span>
+                </a>
+                <a class="facebook" href="http://www.facebook.com/dailymotion"target="_blank" title="Facebook Dailymotion">
+                    <span class="icon icon-facebook"></span>
+                </a>
+                <a class="twitter" href="http://www.twitter.com/DailymotionUSA"target="_blank" title="Twitter Dailymotion">
+                    <span class="icon icon-twitter"></span>
+                </a>
+                <a class="rss" href="/rss/ru" target="_blank" title="RSS Dailymotion">
+                    <span class="icon icon-rss"></span>
+                </a>
+                <div>Следуйте за нами</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dm_scriptpack dmpi_bottomscripts">
+<script type="text/javascript">//<![CDATA[
+DM_Skin_defaultParams = {"redirect_url":"","redirect_target":"_blank","body_redirect_enabled":false,"display_count_urls":null,"click_count_urls":null,"top_banner_image":"","bottom_banner_image":"","tracking_tag":"","name":"default","css_path":"http:\/\/static2.dmcdn.net\/static\/skins\/800\/000\/8:default.css?1415956642","skin_root":"http:\/\/static2.dmcdn.net\/mc\/skin_assets\/default","version":"?1415956642"};YMAPPID = 'fgpzHbLV34FIOCN2aW2Gc3ht1iUCWawJNrPgvu4379J5hUUPkPpR6ERJC3FjNXA-';YAHOO_MAPS_API_URL = 'http://us.js2.yimg.com/us.js.yimg.com/lib/map/js/api/ymapapi_3_8_2_3.js';documentDomain = 'dailymotion.com';BlockLeavingChannelError = 'Пожалуйста, выберите канал для этого видео.';BlockLeavingUploadInProgress = 'Выход из страницы отменит текущую загрузку.';channelIsRequired = 'Обязательное поле';InitComingNext = null;loop = 0;isRecording = false;isRecordScheduled = false;isAdmin = false;seeYourVideoLinkLabel = 'Посмотрите своё видео';displayFormLinkLabel = 'Показать информацию';hideFormLinkLabel = 'Скрыть информацию';cancelLinkLabel = 'Отменить';closeLinkLabel = 'Закрыть';tooltipTitleMessage = '<div class=\"title\">Пусть ваше видео будет просто найти</div><p>Выберите ясное, впечатляющее, чёткое название, которое точно отражает содержание вашего видео. Веб-пользователи первым делом увидят название вашего видео, которое послужит его кратким описанием.</p>';tooltipTagMessage = '<div class=\"title\">Новый модуль Autosuggest</div><p>В целях расширения опыта пользователей Dailymotion предоставляет вам теперь модуль Autosuggest.</p><ul><li>Просто наберите первые буквы тега для отображения самых подходящих предложений.</li><li>Если предложения неточны или вы не хотите их использовать, то вы можете нажать ENTER или запятую, чтобы сохранить этот тег и перейти к следующему.</li><li>Больше информации можно получить в разделе <a class=\"name\" target=\"_blank\" href=\"/faq#uploading_videos_7\">FAQ</a>.</li></ul>';tooltipDescriptionMessage = '<div class=\"title\">Пусть ваше видео будет просто найти</div><p>Описание содержит дополнительную информацию о вашем видео. Убедитесь в том, что ваше описание отвечает на следующие вопросы:<br><br>Кто снят на видео? Какие люди участвуют в нём? <br>Каков контекст этого видео (место, дата, событие)?<br>Что хочет сказать данное видео?<br>На кого оно нацелено?</p>';DM_Widget_PageItem_Facebook_Connect_APP_ID = '96937694899';DM_Pagev3 = true;DM_ENV._add('Block_Leaving',{"confirmationMessage":"Выход из страницы отменит текущую загрузку."});DM_ENV._add('DM_HapYak',{"cssPath":"http:\/\/static1.dmcdn.net\/css\/gen\/views\/shared\/video\/annotations.ltr.css.v25486f0baeb48a903","siteVersion":"ru"});DM_ENV._add('DM_GooglePlus',{"_API_KEY":"AIzaSyB9ONkKacqhJtSwlnSAf_5UySR5TOOeEp0","_CLIENT_ID":"1095600231293-ih62cdtmregosipj9cbasor4tpb632mr.apps.googleusercontent.com"});
+//]]></script></div>
+
+<div id="fb-root">
+    <script type="text/javascript">
+    // Load the SDK asynchronously
+    (function(d, s, id){
+        if (window.facebook_enabled)
+        {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ru_RU/all.js";
+            fjs.parentNode.insertBefore(js, fjs);
+       }
+   }(document, 'script', 'facebook-jssdk'));
+    </script>
+</div>
+
+<div class="sd_gplusasyncloader">
+    <script type="text/javascript">
+    (function () {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://plus.google.com/js/client:plusone.js?onload=ggAsynInit';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+</div>
+
+</body>
+</html>
+
+2014-11-18 09:11:23,180-DEBUG(NewsPoster.java:320)-<form action="/pageitem/video/edit?request=%2F&amp;loop=0" class="dmco_form_container dmco_form dmpi_video_edit form background light_border dmco_form ajax" id="video_edit_0" method="post">
+<div style="display:none">
+<input class="dmco_form_input dmco_form_hidden " id="form_name" name="form_name" type="hidden" value="dm_pageitem_video_edit_0" />
+</div>
+<div class="dmco_html"></div>
+<div>
+<input class="dmco_form_input dmco_form_hidden " id="_csrf" name="_csrf" type="hidden" value="vDvhIvPunrs_BkTxt1HATBC-qPRhIW1rIc83GlBPI_o" />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden " id="_fid" name="_fid" type="hidden" value />
+</div>
+<fieldset class="info form_fieldset" id="info_0">
+<div class="form_item " id="info_0_video_title_cont">
+<span class="form_label required">Название видео<span class="mandatory">*</span>&nbsp;</span>
+<div class="form_input  check rule_required rule_stringlength-max:255 ">
+<input class="dmco_form_input dmco_form_text title_video title_field  check rule_required rule_stringlength-max:255  text counter count_255" id="info_0_video_title" name="video_title" type="text" value="" maxlength="255" size="255" />
+</div>
+</div>
+<fieldset class="category_info form_fieldset" id="category_info_0">
+<div class="form_item " id="category_info_0_user_category_cont">
+<span class="form_label required"><span class="icon icon-channel icon-left foreground2"></span>Рубрика<span class="mandatory">*</span>&nbsp;</span>
+<div class="form_input  check rule_required rule_callback ">
+<select class="dmco_form_input dmco_form_choice channel_select  check rule_required rule_callback " data-placeholder="Выберите раздел" id="category_info_0_user_category" name="user_category">
+<option value="" selected="selected"></option>
+<option value="auto">Авто/Мото</option>
+<option value="webcam">Блоги</option>
+<option value="sexy">Для взрослых</option>
+<option value="animals">Животные</option>
+<option value="videogames">�?гры</option>
+<option value="creation">�?скусство</option>
+<option value="lifestyle">Лайфстайл и Обучение</option>
+<option value="people">Люди и Семья</option>
+<option value="music">Музыка</option>
+<option value="news">Новости</option>
+<option value="school">Образование</option>
+<option value="travel">Путешествия</option>
+<option value="sport">Спорт</option>
+<option value="tech">Техника</option>
+<option value="shortfilms">Фильмы и кино</option>
+<option value="fun">Юмор и развлечения</option>
+</select>
+</div>
+</div>
+<fieldset class="no-auto-init-select-children hidden form_fieldset" id="game_info_0">
+<div class="dmco_html label">�?гра</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden mo_smartselect game_field " name="game_select" data-options="&amp;#x7B;&amp;#x7D;" data-params="&amp;#x5B;&amp;#x5D;" data-type="game" placeholder="Добавить игру" data-no-matches="не найдено никакого результата" id="game_info_0_game_select" type="hidden" value />
+</div>
+</fieldset>
+</fieldset>
+<div class="form_item " id="info_0_language_cont">
+<span class="form_label required">Язык<span class="mandatory">*</span>&nbsp;</span>
+<div class="form_input  check rule_required ">
+<select class="dmco_form_language dmco_form_input dmco_form_choice  check rule_required " id="info_0_language" name="language">
+<option value="en">Английский</option>
+<option value="ar">Арабский</option>
+<option value="eu">Баскский</option>
+<option value="bn">Бенгальский</option>
+<option value="bg">Болгарский</option>
+<option value="hu">Венгерский</option>
+<option value="vi">Вьетнамский</option>
+<option value="ht">Гаитянский</option>
+<option value="nl">Голландский</option>
+<option value="el">Греческий</option>
+<option value="da">Датский</option>
+<option value="he">�?врит</option>
+<option value="id">�?ндонезийский</option>
+<option value="is">�?сландский</option>
+<option value="es">�?спанский</option>
+<option value="it">�?тальянский</option>
+<option value="ca">Каталанский</option>
+<option value="zh">Китайский</option>
+<option value="ko">Корейский</option>
+<option value="lv">Латышский</option>
+<option value="lt">Литовский</option>
+<option value="ms">Малайский</option>
+<option value="mr">Марати</option>
+<option value="de">Немецкий</option>
+<option value="no">Норвежский</option>
+<option value="pa">Панджаби</option>
+<option value="fa">Персидский</option>
+<option value="pl">Польский</option>
+<option value="pt">Португальский</option>
+<option value="ro">Румынский</option>
+<option value="ru" selected="selected">Русский</option>
+<option value="sr">Сербский</option>
+<option value="sk">Словацкий</option>
+<option value="sl">Словенский</option>
+<option value="th">Тайский</option>
+<option value="ta">Тамильский</option>
+<option value="te">Телугу</option>
+<option value="tr">Турецкий</option>
+<option value="uk">Украинский</option>
+<option value="ur">Урду</option>
+<option value="fl">Филиппинский</option>
+<option value="fi">Финнский</option>
+<option value="fr">Французский</option>
+<option value="hi">Хинди</option>
+<option value="hr">Хорватский</option>
+<option value="cs">Чешский</option>
+<option value="sv">Шведский</option>
+<option value="et">Эстонский</option>
+<option value="jv">Яванский</option>
+<option value="ja">Японский</option>
+</select>
+</div>
+</div>
+<div class="dmco_clear"><!--comment for IE6 height --></div>
+<div class="form_item " id="info_0_video_explicit_cont">
+<div class="form_input ">
+<label class="dmco_form_input dmco_form_checkbox video_explicit multi-checkbox" id="">
+<input name="video_explicit" type="checkbox" value="1" id="info_0_video_explicit" class="" />
+<label id="label_info_0_video_explicit" for="info_0_video_explicit">Отметьте этот флажок, если содержание или название вашего видео подходит только для информированной, взрослой публики. Ваше видео будет опубликовано в соответствии.<br />Пожалуйста, ознакомьтесь с основными правилами нашего сообщества<a href="/legal/keypoints" target="_blank">здесь</a>.</label>
+</label>
+</div>
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden " id="info_0_tags_hidden" name="tags_hidden" type="hidden" value />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden strongtags_hidden " id="info_0_strongtags_hidden" name="strongtags_hidden" type="hidden" value />
+</div>
+<div class="form_item " id="info_0_tags_cont">
+<span class="form_label"><span class="icon icon-tag icon-left foreground2"></span>Теги<span class="dmco_label_info">250 (10 макс. теги)</span></span></span>
+<div class="form_input filter_videotags  check rule_stringlength-max:250 ">
+<input class="dmco_form_input dmco_form_text tag_field filter_videotags  check rule_stringlength-max:250  text" placeholder="Добавить новый тег" id="info_0_tags" name="tags" type="text" value maxlength="250" size="250" />
+</div>
+</div>
+<div class="form_item " id="info_0_description_cont">
+<span class="form_label">Описание</span>
+<div class="form_input  check rule_stringlength-max:3000 ">
+<textarea rows="3" cols="1200" class="dmco_form_input dmco_form_textarea description_field  check rule_stringlength-max:3000  textarea counter count_3000" id="info_0_description" name="description"></textarea>
+</div>
+</div>
+</fieldset>
+<div class="dmco_html section top_border label" onclick="DM_Widget_PageItem_Video_Edit.toggleBox($(this));" id="privacy_box"><span class="arrow">▶</span><span class="subbox_title">Личное</span></div>
+<fieldset class="privacy fieldset_box hide form_fieldset" id="privacy_0">
+<div class="form_item " id="privacy_0_privacy_cont">
+<div class="form_input ">
+<label class="dmco_form_input dmco_form_checkbox privacy multi-checkbox" id="">
+<input name="privacy" type="checkbox" value="1" id="privacy_0_privacy" class="" />
+<label id="label_privacy_0_privacy" for="privacy_0_privacy">Это частное видео</label>
+</label>
+</div>
+</div>
+<div class="form_item " id="privacy_0_allow_comments_cont">
+<div class="form_input ">
+<label class="dmco_form_input dmco_form_checkbox allow_comments multi-checkbox" id="">
+<input name="allow_comments" type="checkbox" value="1" id="privacy_0_allow_comments" class="" checked="checked" />
+<label id="label_privacy_0_allow_comments" for="privacy_0_allow_comments">Позвольте добавить комментарии к этому видео</label>
+</label>
+</div>
+</div>
+<div class="form_item " id="privacy_0_allow_in_group_cont">
+<div class="form_input ">
+<label class="dmco_form_input dmco_form_checkbox allow_in_group multi-checkbox" id="">
+<input name="allow_in_group" type="checkbox" value="1" id="privacy_0_allow_in_group" class="" checked="checked" />
+<label id="label_privacy_0_allow_in_group" for="privacy_0_allow_in_group">Позвольте другому пользователю добавлять это видео к группам и конкурсам.</label>
+</label>
+</div>
+</div>
+</fieldset>
+<div class="dmco_html section top_border label" onclick="DM_Widget_PageItem_Video_Edit.toggleBox($(this));" id="add_to_box"><span class="arrow">▶</span><span class="subbox_title">Добавить в <span class="foreground">(группы, плейлисты, videostar)</span></span></div>
+<fieldset class="add_to fieldset_box hide form_fieldset" id="add_to_0">
+<div class="dmco_html"><span class="form_label">Показывать в профиле</span></div>
+<div class="form_item " id="add_to_0_featured_video_cont">
+<div class="form_input ">
+<label class="dmco_form_input dmco_form_checkbox featured_video multi-checkbox" id="">
+<input name="featured_video" type="checkbox" value="1" id="add_to_0_featured_video" class="" />
+<label id="label_add_to_0_featured_video" for="add_to_0_featured_video">Сделать это видео моим новым videostar</label>
+</label>
+</div>
+</div>
+<div class="dmco_html"><span class="form_label add_video_to_groups">Добавить это видео к Группам</span></div>
+<div class="form_item " id="add_to_0_groups_list_cont">
+<div class="form_input ">
+<div class="dmco_form_input dmco_form_choice dmco_form_multichoice dmco_form_multichoiceaddtogroups background_5 multi-choice" id="add_to_0_groups_list">
+<div class="dmco_clear"><!--comment for IE6 height --></div></div>
+</div>
+</div>
+<div class="dmco_html"><span class="form_label add_video_to_playlists">Добавить это видео к Плейлистам</span></div>
+<div class="form_item " id="add_to_0_playlists_list_cont">
+<div class="form_input ">
+<div class="dmco_form_input dmco_form_choice dmco_form_multichoice dmco_form_multichoiceaddtoplaylists background_5 multi-choice" id="add_to_0_playlists_list">
+<div class="dmco_clear"><!--comment for IE6 height --></div></div>
+</div>
+</div>
+</fieldset>
+<div class="dmco_html section top_border label" onclick="DM_Widget_PageItem_Video_Edit.toggleBox($(this));" id="more_details_box"><span class="arrow">▶</span><span class="subbox_title">Подробнее...</span></div>
+<fieldset class="more_details fieldset_box hide form_fieldset" id="more_details_0">
+<div class="form_item " id="more_details_0_recordedOn_cont">
+<span class="form_label">Видео записано на</span>
+<div class="form_input ">
+<div class="dmco_form_input dmco_form_datev2" id="more_details_0_recordedOn">
+<span class="date_picker_cont merged-elements">
+<input type="text" data-value="2014/11/18" id="more_details_0_recordedOn_dateinput" data-type="date" readonly data-rules="" data-name="recordedOn" data-format-submit="yyyy/mm/dd" class="date_picker" data-locale="ru_RU" data-pastonly="false" data-futureonly="false" />
+<button class="icon-calendar no-events"> </button>
+</span>
+</div>
+</div>
+</div>
+<div class="dmco_clear"><!--comment for IE6 height --></div>
+</fieldset>
+<div class="dmco_html section top_border label" onclick="DM_Widget_PageItem_Video_Edit.toggleBox($(this));" id="next_video_box"><span class="arrow">▶</span><span class="subbox_title">Следующее видео</span></div>
+<fieldset class="next_video fieldset_box hide form_fieldset" id="next_video_0">
+<div class="form_item " id="next_video_0_coming_next_cont">
+<span class="form_label">Вставьте URL Dailymotion Видео, чтобы уточнить, какое видео предложено, когда воспроизведение почти закончено.</span>
+<div class="form_input filter_relativeuri  check rule_stringlength-max:255 rule_callback rule_callback ">
+<input class="dmco_form_input dmco_form_text next_video filter_relativeuri  check rule_stringlength-max:255 rule_callback rule_callback  text" id="next_video_0_coming_next" name="coming_next" type="text" value="" maxlength="255" size="255" />
+</div>
+</div>
+</fieldset>
+<div class="dmco_html section top_border label" onclick="DM_Widget_PageItem_Video_Edit.toggleBox($(this));" id="openvod_box"><span class="arrow">▶</span><span class="subbox_title"><span class="first">Оплата за просмотр</span></span></div>
+<fieldset class="openvod fieldset_box hide form_fieldset" id="openvod_0">
+<div class="dmco_html foreground">Вы должны примкнуть к программе <b class="name">OpenVoD</b> для продажи вашего видео.<br/><a class="btn btn-primary" target="_blank" href="http://openvod.dailymotion.com">Примкните к OpenVoD</a></div>
+</fieldset>
+<div>
+<input class="dmco_form_input dmco_form_hidden video_id " id="video_edit_0_videoId" name="videoId" type="hidden" value />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden video_update_title " id="video_edit_0_videoUpdateTitle" name="videoUpdateTitle" type="hidden" value />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden extension_video " id="video_edit_0_extensionVideo" name="extensionVideo" type="hidden" value />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden upload_type " id="video_edit_0_uploadType" name="uploadType" type="hidden" value />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden save_status " id="video_edit_0_saveStatus" name="saveStatus" type="hidden" value="fail" />
+</div>
+<div class="dmco_html save_upload"><div class="form_item "><div class="form_input"><input class="dmco_form_input dmco_form_submit btn btn-primary button short_input " id="save" type="submit" name="save" value="Сохранить" /></div></div></div>
+</form>
+
+2014-11-18 09:11:23,960-DEBUG(NewsPoster.java:320)-+:{"video_id":138579517}
+
+2014-11-18 09:13:53,090-DEBUG(NewsPoster.java:194)-{"acodec":"PCM","bitrate":1439048,"dimension":"320x240","duration":10000,"format":"QuickTime","hash":"3e3491c49982cb0f7d7df02f720be141eff8ceef","name":"article_2","size":1798810,"streamable":"Yes","url":"http://upload-07.dailymotion.com/files/9f2b48a82506cb3677ebb2d44b372ab6.mov#c2VhbD0zOWYwNTE4MTZjZjk4YTQyNTZkMzcxMDhmNDlmNGRlMyZhY29kZWM9UENNJmJpdHJhdGU9MTQzOTA0OCZkaW1lbnNpb249MzIweDI0MCZkdXJhdGlvbj0xMDAwMCZmb3JtYXQ9UXVpY2tUaW1lJmhhc2g9M2UzNDkxYzQ5OTgyY2IwZjdkN2RmMDJmNzIwYmUxNDFlZmY4Y2VlZiZuYW1lPWFydGljbGVfMiZzaXplPTE3OTg4MTAmc3RyZWFtYWJsZT1ZZXMmdmNvZGVjPUpQRUc=","vcodec":"JPEG","seal":"39f051816cf98a4256d37108f49f4de3"}
+
+2014-11-18 09:13:53,906-DEBUG(NewsPoster.java:320)-{"result":"success"}
+
+2014-11-18 09:13:55,609-DEBUG(NewsPoster.java:244)-<form action="/pageitem/video/edit?request=%2F&amp;loop=0&amp;videoId=138579517" class="dmco_form_container dmco_form dmpi_video_edit form background light_border dmco_form ajax" id="video_edit_0" method="post">
+<div style="display:none">
+<input class="dmco_form_input dmco_form_hidden " id="form_name" name="form_name" type="hidden" value="dm_pageitem_video_edit_0" />
+</div>
+<div class="dmco_html"></div>
+<div>
+<input class="dmco_form_input dmco_form_hidden " id="_csrf" name="_csrf" type="hidden" value="vDvhIvPunrs_BkTxt1HATBC-qPRhIW1rIc83GlBPI_o" />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden " id="_fid" name="_fid" type="hidden" value="" />
+</div>
+<fieldset class="info form_fieldset" id="info_0">
+<div class="form_item " id="info_0_video_title_cont">
+<span class="form_label required">Название видео<span class="mandatory">*</span>&nbsp;</span>
+<div class="form_input  check rule_required rule_stringlength-max:255 ">
+<input class="dmco_form_input dmco_form_text title_video title_field  check rule_required rule_stringlength-max:255  text counter count_255" id="info_0_video_title" name="video_title" type="text" value="Download (READ) The Wickedest Lord Alive Online For Free eBook" maxlength="255" size="255" />
+</div>
+</div>
+<fieldset class="category_info form_fieldset" id="category_info_0">
+<div class="form_item " id="category_info_0_user_category_cont">
+<span class="form_label required"><span class="icon icon-channel icon-left foreground2"></span>Рубрика<span class="mandatory">*</span>&nbsp;</span>
+<div class="form_input  check rule_required rule_callback ">
+<select class="dmco_form_input dmco_form_choice channel_select  check rule_required rule_callback " data-placeholder="Выберите раздел" id="category_info_0_user_category" name="user_category">
+<option value=""></option>
+<option value="auto">Авто/Мото</option>
+<option value="webcam">Блоги</option>
+<option value="sexy">Для взрослых</option>
+<option value="animals">Животные</option>
+<option value="videogames">�?гры</option>
+<option value="creation">�?скусство</option>
+<option value="lifestyle" selected="selected">Лайфстайл и Обучение</option>
+<option value="people">Люди и Семья</option>
+<option value="music">Музыка</option>
+<option value="news">Новости</option>
+<option value="school">Образование</option>
+<option value="travel">Путешествия</option>
+<option value="sport">Спорт</option>
+<option value="tech">Техника</option>
+<option value="shortfilms">Фильмы и кино</option>
+<option value="fun">Юмор и развлечения</option>
+</select>
+</div>
+</div>
+<fieldset class="no-auto-init-select-children hidden form_fieldset" id="game_info_0">
+<div class="dmco_html label">�?гра</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden mo_smartselect game_field " name="game_select" data-options="&amp;#x7B;&amp;#x7D;" data-params="&amp;#x5B;&amp;#x5D;" data-type="game" placeholder="Добавить игру" data-no-matches="не найдено никакого результата" id="game_info_0_game_select" type="hidden" value="" />
+</div>
+</fieldset>
+</fieldset>
+<div class="form_item " id="info_0_language_cont">
+<span class="form_label required">Язык<span class="mandatory">*</span>&nbsp;</span>
+<div class="form_input  check rule_required ">
+<select class="dmco_form_language dmco_form_input dmco_form_choice  check rule_required " id="info_0_language" name="language">
+<option value="en" selected="selected">Английский</option>
+<option value="ar">Арабский</option>
+<option value="eu">Баскский</option>
+<option value="bn">Бенгальский</option>
+<option value="bg">Болгарский</option>
+<option value="hu">Венгерский</option>
+<option value="vi">Вьетнамский</option>
+<option value="ht">Гаитянский</option>
+<option value="nl">Голландский</option>
+<option value="el">Греческий</option>
+<option value="da">Датский</option>
+<option value="he">�?врит</option>
+<option value="id">�?ндонезийский</option>
+<option value="is">�?сландский</option>
+<option value="es">�?спанский</option>
+<option value="it">�?тальянский</option>
+<option value="ca">Каталанский</option>
+<option value="zh">Китайский</option>
+<option value="ko">Корейский</option>
+<option value="lv">Латышский</option>
+<option value="lt">Литовский</option>
+<option value="ms">Малайский</option>
+<option value="mr">Марати</option>
+<option value="de">Немецкий</option>
+<option value="no">Норвежский</option>
+<option value="pa">Панджаби</option>
+<option value="fa">Персидский</option>
+<option value="pl">Польский</option>
+<option value="pt">Португальский</option>
+<option value="ro">Румынский</option>
+<option value="ru">Русский</option>
+<option value="sr">Сербский</option>
+<option value="sk">Словацкий</option>
+<option value="sl">Словенский</option>
+<option value="th">Тайский</option>
+<option value="ta">Тамильский</option>
+<option value="te">Телугу</option>
+<option value="tr">Турецкий</option>
+<option value="uk">Украинский</option>
+<option value="ur">Урду</option>
+<option value="fl">Филиппинский</option>
+<option value="fi">Финнский</option>
+<option value="fr">Французский</option>
+<option value="hi">Хинди</option>
+<option value="hr">Хорватский</option>
+<option value="cs">Чешский</option>
+<option value="sv">Шведский</option>
+<option value="et">Эстонский</option>
+<option value="jv">Яванский</option>
+<option value="ja">Японский</option>
+</select>
+</div>
+</div>
+<div class="dmco_clear"><!--comment for IE6 height --></div>
+<div class="form_item " id="info_0_video_explicit_cont">
+<div class="form_input ">
+<label class="dmco_form_input dmco_form_checkbox video_explicit multi-checkbox" id="">
+<input name="video_explicit" type="checkbox" value="1" id="info_0_video_explicit" class="" />
+<label id="label_info_0_video_explicit" for="info_0_video_explicit">Отметьте этот флажок, если содержание или название вашего видео подходит только для информированной, взрослой публики. Ваше видео будет опубликовано в соответствии.<br />Пожалуйста, ознакомьтесь с основными правилами нашего сообщества<a href="/legal/keypoints" target="_blank">здесь</a>.</label>
+</label>
+</div>
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden " id="info_0_tags_hidden" name="tags_hidden" type="hidden" value="Download (READ) The Wickedest Lord Alive Online For Free eBook" />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden strongtags_hidden " id="info_0_strongtags_hidden" name="strongtags_hidden" type="hidden" value="{&quot;strong_tags&quot;:{},&quot;daily_tags&quot;:[&quot;Download&quot;,&quot;(READ)&quot;,&quot;The&quot;,&quot;Wickedest&quot;,&quot;Lord&quot;,&quot;Alive&quot;,&quot;Online&quot;,&quot;For&quot;,&quot;Free&quot;,&quot;eBook&quot;]}" />
+</div>
+<div class="form_item " id="info_0_tags_cont">
+<span class="form_label"><span class="icon icon-tag icon-left foreground2"></span>Теги<span class="dmco_label_info">250 (10 макс. теги)</span></span></span>
+<div class="form_input filter_videotags  check rule_stringlength-max:250 ">
+<input class="dmco_form_input dmco_form_text tag_field filter_videotags  check rule_stringlength-max:250  text" placeholder="Добавить новый тег" id="info_0_tags" name="tags" type="text" value="" maxlength="250" size="250" />
+</div>
+</div>
+<div class="form_item " id="info_0_description_cont">
+<span class="form_label">Описание</span>
+<div class="form_input  check rule_stringlength-max:3000 ">
+<textarea rows="3" cols="1200" class="dmco_form_input dmco_form_textarea description_field  check rule_stringlength-max:3000  textarea counter count_3000" id="info_0_description" name="description">Read online or Download key
+
+http://tinyurl.com/q6rtzzu
+
+
+
+Alive Ondersteunt Direct
+
+THE WICKEDEST LORD ALIVE. Can an Indecent Proposal. Eight years ago, a tall handsome stranger entered Lizzie Allbright’s bedchamber and consummated a …
+
+THE WESTRUTHERS NOW AVAILABLE LONDON'S LAST TRUE SCOUNDREL Westruthers, Book 1 Jonathon, Earl of Davenport's Story Read More December 31,
+
+You shall not take the name of the Lord your God in vain. The second commandment prescribes respect for the Lord's name. Like the first commandment, it belongs to the ...
+
+INTRODUCTION (by R. Abels, based on E. Hallam, Capetian France, 205-6): Jean de Joinville's The Life of St. Louis, composed between 1305 and 1309, is a personal ...
+
+Coming In Hot (haut de page) Coming In Hot Firin' some shot Coming in red hot It's a musical shot CHORUS . I just clean up me nuzzle I just load me barrel
+
+12-2-2011&amp;nbsp;&amp;#0183;&amp;#32;Aufertsehen - Der Her der Ernte geht! und sammelt Garben uns ein, die Starben! - [The Lord of Harvests goes out to gather in the sheaves, Even of those who ...
+
+John Ronald Reuel Tolkien The Lord Of The Rings: The Fellowship of the Ring (1954)
+
+How Bad Was Jezebel? Read Janet Howe Gaines's full article about Jezebel in the Bible and later depictions as it appeared in Bible Review
+
+Find, buy, download and read popular Romance ebooks online at eBooks.com in EPUB or PDF format for your iPhone, iPad, Android, Computers and Mobile readers.</textarea>
+</div>
+</div>
+</fieldset>
+<div class="dmco_html section top_border label" onclick="DM_Widget_PageItem_Video_Edit.toggleBox($(this));" id="privacy_box"><span class="arrow">▶</span><span class="subbox_title">Личное</span></div>
+<fieldset class="privacy fieldset_box hide form_fieldset" id="privacy_0">
+<div class="form_item " id="privacy_0_privacy_cont">
+<div class="form_input ">
+<label class="dmco_form_input dmco_form_checkbox privacy multi-checkbox" id="">
+<input name="privacy" type="checkbox" value="1" id="privacy_0_privacy" class="" />
+<label id="label_privacy_0_privacy" for="privacy_0_privacy">Это частное видео</label>
+</label>
+</div>
+</div>
+<div class="form_item " id="privacy_0_allow_comments_cont">
+<div class="form_input ">
+<label class="dmco_form_input dmco_form_checkbox allow_comments multi-checkbox" id="">
+<input name="allow_comments" type="checkbox" value="1" id="privacy_0_allow_comments" class="" checked="checked" />
+<label id="label_privacy_0_allow_comments" for="privacy_0_allow_comments">Позвольте добавить комментарии к этому видео</label>
+</label>
+</div>
+</div>
+<div class="form_item " id="privacy_0_allow_in_group_cont">
+<div class="form_input ">
+<label class="dmco_form_input dmco_form_checkbox allow_in_group multi-checkbox" id="">
+<input name="allow_in_group" type="checkbox" value="1" id="privacy_0_allow_in_group" class="" checked="checked" />
+<label id="label_privacy_0_allow_in_group" for="privacy_0_allow_in_group">Позвольте другому пользователю добавлять это видео к группам и конкурсам.</label>
+</label>
+</div>
+</div>
+</fieldset>
+<div class="dmco_html section top_border label" onclick="DM_Widget_PageItem_Video_Edit.toggleBox($(this));" id="add_to_box"><span class="arrow">▶</span><span class="subbox_title">Добавить в <span class="foreground">(группы, плейлисты, videostar)</span></span></div>
+<fieldset class="add_to fieldset_box hide form_fieldset" id="add_to_0">
+<div class="dmco_html"><span class="form_label">Показывать в профиле</span></div>
+<div class="form_item " id="add_to_0_featured_video_cont">
+<div class="form_input ">
+<label class="dmco_form_input dmco_form_checkbox featured_video multi-checkbox" id="">
+<input name="featured_video" type="checkbox" value="1" id="add_to_0_featured_video" class="" />
+<label id="label_add_to_0_featured_video" for="add_to_0_featured_video">Сделать это видео моим новым videostar</label>
+</label>
+</div>
+</div>
+<div class="dmco_html"><span class="form_label add_video_to_groups">Добавить это видео к Группам</span></div>
+<div class="form_item " id="add_to_0_groups_list_cont">
+<div class="form_input ">
+<div class="dmco_form_input dmco_form_choice dmco_form_multichoice dmco_form_multichoiceaddtogroups background_5 multi-choice" id="add_to_0_groups_list">
+<div class="dmco_clear"><!--comment for IE6 height --></div></div>
+</div>
+</div>
+<div class="dmco_html"><span class="form_label add_video_to_playlists">Добавить это видео к Плейлистам</span></div>
+<div class="form_item " id="add_to_0_playlists_list_cont">
+<div class="form_input ">
+<div class="dmco_form_input dmco_form_choice dmco_form_multichoice dmco_form_multichoiceaddtoplaylists background_5 multi-choice" id="add_to_0_playlists_list">
+<div class="dmco_clear"><!--comment for IE6 height --></div></div>
+</div>
+</div>
+</fieldset>
+<div class="dmco_html section top_border label" onclick="DM_Widget_PageItem_Video_Edit.toggleBox($(this));" id="more_details_box"><span class="arrow">▶</span><span class="subbox_title">Подробнее...</span></div>
+<fieldset class="more_details fieldset_box hide form_fieldset" id="more_details_0">
+<div class="form_item " id="more_details_0_recordedOn_cont">
+<span class="form_label">Видео записано на</span>
+<div class="form_input ">
+<div class="dmco_form_input dmco_form_datev2" id="more_details_0_recordedOn">
+<span class="date_picker_cont merged-elements">
+<input type="text" data-value="2014/11/14" id="more_details_0_recordedOn_dateinput" data-type="date" readonly data-rules="" data-name="recordedOn" data-format-submit="yyyy/mm/dd" class="date_picker" data-locale="ru_RU" data-pastonly="false" data-futureonly="false" />
+<button class="icon-calendar no-events"> </button>
+</span>
+</div>
+</div>
+</div>
+<div class="dmco_clear"><!--comment for IE6 height --></div>
+</fieldset>
+<div class="dmco_html section top_border label" onclick="DM_Widget_PageItem_Video_Edit.toggleBox($(this));" id="next_video_box"><span class="arrow">▶</span><span class="subbox_title">Следующее видео</span></div>
+<fieldset class="next_video fieldset_box hide form_fieldset" id="next_video_0">
+<div class="form_item " id="next_video_0_coming_next_cont">
+<span class="form_label">Вставьте URL Dailymotion Видео, чтобы уточнить, какое видео предложено, когда воспроизведение почти закончено.</span>
+<div class="form_input filter_relativeuri  check rule_stringlength-max:255 rule_callback rule_callback ">
+<input class="dmco_form_input dmco_form_text next_video filter_relativeuri  check rule_stringlength-max:255 rule_callback rule_callback  text" id="next_video_0_coming_next" name="coming_next" type="text" value="" maxlength="255" size="255" />
+</div>
+</div>
+</fieldset>
+<div class="dmco_html section top_border label" onclick="DM_Widget_PageItem_Video_Edit.toggleBox($(this));" id="openvod_box"><span class="arrow">▶</span><span class="subbox_title"><span class="first">Оплата за просмотр</span></span></div>
+<fieldset class="openvod fieldset_box hide form_fieldset" id="openvod_0">
+<div class="dmco_html foreground">Вы должны примкнуть к программе <b class="name">OpenVoD</b> для продажи вашего видео.<br/><a class="btn btn-primary" target="_blank" href="http://openvod.dailymotion.com">Примкните к OpenVoD</a></div>
+</fieldset>
+<div>
+<input class="dmco_form_input dmco_form_hidden video_id " id="video_edit_0_videoId" name="videoId" type="hidden" value="138579517" />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden video_update_title " id="video_edit_0_videoUpdateTitle" name="videoUpdateTitle" type="hidden" value="138579517" />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden extension_video " id="video_edit_0_extensionVideo" name="extensionVideo" type="hidden" value="" />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden upload_type " id="video_edit_0_uploadType" name="uploadType" type="hidden" value="" />
+</div>
+<div>
+<input class="dmco_form_input dmco_form_hidden save_status " id="video_edit_0_saveStatus" name="saveStatus" type="hidden" value="fail" />
+</div>
+<div class="dmco_html"><br clear="all" /></div>
+<a class="dmco_simplelink name dmco_link action:popup" id="delete_link" href="/pageitem/video/delete?request=%2Fvideo%2Fx2ai8n1_%2525D0%2525B1%2525D0%2525B5%2525D0%2525B7-%2525D0%2525BD%2525D0%2525B0%2525D0%2525B7%2525D0%2525B2%2525D0%2525B0%2525D0%2525BD%2525D0%2525B8%2525D1%25258F" title="Удалить" onclick="DM_Ajax.link(this); return false;">Удалить</a>
+<div class="dmco_html save_upload"><div class="form_item "><div class="form_input"><input class="dmco_form_input dmco_form_submit btn btn-primary button short_input " id="save" type="submit" name="save" value="Сохранить" /></div></div></div>
+<div class="dmpi_notice dmpi_notice_notice" id="video_notice_0">
+
+<div data-use-cookie="1"
+ class="mrg-btm-md mo_alert media pdg-md brd-rad-md alert-success pdg-end-md alert-md">
+    <div class="media-img mrg-end-md font-md" data-icon></div>
+
+
+    <div class="media-block pdg-top-xs">
+                        <div class="pdg-end-lg font-md">Ваша информация о видео была успешно обновлена.</div>
+    </div>
+</div>
+
+</div>
+</form>
+
+2014-11-18 09:13:56,293-DEBUG(NewsPoster.java:320)-+:/video/x2ai8n1_download-read-the-wickedest-lord-alive-online-for-free-ebook_lifestyle
+
+2014-11-18 09:13:56,294-DEBUG(NewsTask.java:77)-File content: The ArrowDownload (READ) The Arrow Online For Free eBook<img border="0" src="http://i1.ebkimg.com/previews/001/001603/001603186/001603186-hq-168-80.jpg" width="168" height="253"></p><span><b>NATIONAL BESTSELLER<br><br>As King Robert the Bruce of Scotland plots to retake his English-occupied castles, he needs the stealth and skill of his elite soldiers, the Highland Guard. Fearless and indomitable, no men are more loyal to their king, or more cherished by the women they love.</b><br> <b>�</b><br> The talents of legendary marksman Gregor �Arrow� MacGregor are crucial now, as Bruce moves to reclaim his Scottish holdings. Gregor is considered the most handsome man in Scotland, and his fame as an archer is rivaled only by his reputation with the lasses as a heartbreaker. But when his infamous face is exposed during a covert mission, Gregor is forced to lie low. He returns home only to find a new battle waiting: a daring game of seduction involving his now very grown-up and very desirable ward, Cate of Lochmaben.<br> �<br> A born fighter, Cate was clinging to life when Gregor rescued her after a vicious English raid on her village left her mother dead. But five years later, the once scrappy orphan Gregor took under his protection has become a woman. Brave, strong, and skilled in warfare, Cate is determined to lay claim to the warrior who refuses to be trapped. The heat in his eyes tells her she has his attention . . . and his desire. But will Gregor allow his heart to surrender before danger finds them, and the truth of Cate�s identity is revealed?<br><br><b>Praise for Monica McCarty and <i>The Arrow</i></b><br> <b>�</b><br> �[Monica] McCarty�s gift lies in writing strong characters into wildly entertaining�often unexpected�scenarios. Readers can�t go wrong with her latest.�<b>�<i>The Washington Post</i></b><br> �<br> �The Highland Guard come to life as McCarty fills her tales with historical accuracy and moving romance. The ninth in the series is well paced, emotional and powerfully told. Don�t miss it!�<b>�<i>RT Book Reviews </i>(Top Pick!)</b><br> <b>�</b><br> �One of the <i>best</i> Highlander historical series out there.�<b>�The Reading Cafe</b><br> <b>�</b><br> �Heart-wrenching . . . <i>The Arrow</i> made a lasting impression on me.�<b>�Under the Covers</b><br> <b>�</b><br> �A mixture of passion, history, and great wit to create a tale to captivate your senses! <i>To die for</i>!�<b>�Addicted to Romance</b><br> <b>�</b><br> �There is danger, laughter, and sweet love and secrets revealed. All the characteristics of a wonderful read.�<b>�Tea and Book</b><br> �<br> �Monica McCarty is an absolutely superior author! Her Highland Guard series has to be one of the absolute best Highland series out there! Fun, fast paced, fact driven and totally fantastic!�<b>�Bodice Rippers</b>, on <i>The Raider</i><br> �<br> �McCarty is a master at writing Highlander romance . . . keeping her Highland Guard series fresh, with spectacularly riveting plots and fabulously romantic couples. . . . If you�ve not read this series yet, then I strongly suggest that you do.�<b>�Night Owl Reviews</b>, on <i>The Hunter</i><br><br><br><i>From the Paperback edition.</i>Read <strong>The Arrow - Monica McCarty (eBook)</strong> online, or download in secure EPUB or secure PDF format<br /><a href="http://tinyurl.com/pwrmfhg"><img src="http://5.firepic.org/5/images/2014-11/17/5dhscpv3haxf.png" /></a>
+2014-11-18 09:13:56,295-DEBUG(NewsTask.java:104)-Image found: http://i1.ebkimg.com/previews/001/001603/001603186/001603186-hq-168-80.jpg
+2014-11-18 09:13:56,504-DEBUG(NewsTask.java:127)-Link found: http://tinyurl.com/pwrmfhg
+2014-11-18 09:13:57,934-DEBUG(NewsTask.java:77)-File content: The Groom Says YesDownload (READ) The Groom Says Yes Online For Free eBook<img border="0" src="http://i1.ebkimg.com/previews/001/001590/001590461/001590461-hq-168-80.jpg" width="168" height="253"></p><span><p><em>New York Times</em> bestselling author Cathy Maxwell continues her dazzling series, <em>The Brides of Wishmore</em></p><p><em>He had a noose around his neck and a price on his head . . . </em></p><p>Sabrina Davidson, dutiful daughter, avowed spinster, thought she'd secured a place for herself in Aberfeldy society� until her hard-earned acceptance of her fate is challenged by the arrival of Cormac Enright, earl of Ballin, trained physician, soldier of fortune, and convicted felon.</p><p><em>A prim and proper miss was the last thing he needed . . . </em></p><p>Mac is determined to clear his name, but first he has to find the man whose testimony sentenced him to a hangman's noose. Of course, Robert Davidson is missing and protecting Mac is Davidson's daughter, the most entrancing, frustrating, beguiling, stubborn woman Mac has ever met.</p><p>And it doesn't help that he has already tasted her kisses. Or that he has found in her a passion for life and adventure to rival his own.</p><p>Mac has turned Sabrina's world inside out�but what will happen when he leaves?</p><p><em>Or will the Groom Say Yes? </em></p>Read <strong>The Groom Says Yes - Cathy Maxwell (eBook)</strong> online, or download in secure EPUB or secure PDF format<br /><a href="http://tinyurl.com/qyfkb6b"><img src="http://5.firepic.org/5/images/2014-11/17/5dhscpv3haxf.png" /></a>
+2014-11-18 09:13:57,935-DEBUG(NewsTask.java:104)-Image found: http://i1.ebkimg.com/previews/001/001590/001590461/001590461-hq-168-80.jpg
+2014-11-18 09:13:58,149-DEBUG(NewsTask.java:127)-Link found: http://tinyurl.com/qyfkb6b
+2014-11-18 09:14:00,274-DEBUG(NewsTask.java:77)-File content: Fifty Shades of GreyDownload (READ) Fifty Shades of Grey Online For Free eBook<img border="0" src="http://i2.ebkimg.com/previews/000/000878/000878477/000878477-hq-168-80.jpg" width="168" height="253"></p><span><p><p><b>The multi-million copy bestseller soon to be a major movie starring Jamie Dornan and Dakota Johnson, directed by Sam Taylor-Johnson.</b></p><p></p><p><b></b></p><p></p><p><b>Romantic, liberating and totally addictive, <i>Fifty Shades of Grey</i> is a novel that will obsess you, possess you, and stay with you for ever.</b></p><p></p><p></p><p></p><p>When literature student <b>Anastasia Steele</b> interviews successful entrepreneur <b>Christian Grey</b>, she finds him very attractive and deeply intimidating. Convinced that their meeting went badly, she tries to put him out of her mind - until he turns up at the store where she works part-time, and invites her out.</p><p></p><p></p><p></p><p>Unworldly and innocent, Ana is shocked to find she wants this man. And, when he warns her to keep her distance, it only makes her want him more.</p><p></p><p></p><p></p><p>But Christian is tormented by inner demons, and consumed by the need to control. As they embark on a passionate love affair, Ana discovers more about her own desires, as well as the dark secrets Christian keeps hidden away from public view .</p></p>Read <strong>Fifty Shades of Grey - E L James (eBook)</strong> online, or download in secure EPUB or secure PDF format<br /><a href="http://tinyurl.com/oqhbq99"><img src="http://5.firepic.org/5/images/2014-11/17/089l94hl73fb.png" /></a>
+2014-11-18 09:14:00,275-DEBUG(NewsTask.java:104)-Image found: http://i2.ebkimg.com/previews/000/000878/000878477/000878477-hq-168-80.jpg
+2014-11-18 09:14:00,695-DEBUG(NewsTask.java:127)-Link found: http://tinyurl.com/oqhbq99

@@ -12,15 +12,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
 import java.net.Authenticator;
-import java.net.MalformedURLException;
 import java.net.PasswordAuthentication;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import java.util.Random;
 
 import javax.media.MediaLocator;
-import javax.xml.xpath.XPathExpressionException;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
@@ -54,15 +51,11 @@ public class TaskRunner {
 	private String listInputFilePath;
 	private String listProcessedFilePath;
 	private String errorFilePath;
-	
+
 	private String linkListFilePath;
 	private String linkTitleListFilePath;
 
 	private Properties config = new Properties();
-
-	private Random rnd = new Random();
-
-	//private ArrayList<Thread> threads = new ArrayList<Thread>();
 
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
 	private final static String PROXY_PASS_LABEL = "proxy_pass";
@@ -73,7 +66,7 @@ public class TaskRunner {
 	private final static String LIST_INPUT_FILE_PATH_LABEL = "list_input_file_path";
 	private final static String LIST_PROCESSED_FILE_PATH_LABEL = "list_processed_file_path";
 	private final static String ERROR_FILE_PATH_LABEL = "error_file_path";
-	
+
 	private final static String LINK_LIST_FILE_PATH_LABEL = "link_list_file_path";
 	private final static String LINK_TITLE_LIST_FILE_PATH_LABEL = "link_title_list_file_path";
 
@@ -88,7 +81,7 @@ public class TaskRunner {
 		this.listInputFilePath = Constants.getInstance().getProperty(LIST_INPUT_FILE_PATH_LABEL);
 		this.listProcessedFilePath = Constants.getInstance().getProperty(LIST_PROCESSED_FILE_PATH_LABEL);
 		this.errorFilePath = Constants.getInstance().getProperty(ERROR_FILE_PATH_LABEL);
-		
+
 		this.linkListFilePath = Constants.getInstance().getProperty(LINK_LIST_FILE_PATH_LABEL);
 		this.linkTitleListFilePath = Constants.getInstance().getProperty(LINK_TITLE_LIST_FILE_PATH_LABEL); 
 
@@ -106,8 +99,9 @@ public class TaskRunner {
 		try{
 			TaskRunner taskRunner = new TaskRunner("config.ini");
 			DOMConfigurator.configure("log4j.xml");
-			taskRunner.run();
+			taskRunner.runUploader();
 			System.out.print("Program execution finished");
+			System.exit(0);
 		}catch(Throwable e){
 			log.error("Error during main stream",e);
 			System.out.print("Program execution finished with errors");
@@ -115,94 +109,92 @@ public class TaskRunner {
 	}
 
 
-	public void run(){
-		try{
-			synchronized (this) {
-				ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
-				ProxyFactory proxyFactory = ProxyFactory.getInstance();
-				proxyFactory.init(proxyFilePath);
+	public void runUploader(){
+		ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
+		ProxyFactory proxyFactory = ProxyFactory.getInstance();
+		proxyFactory.init(proxyFilePath);
 
-				//load account list
-				AccountFactory accountFactory = new AccountFactory(proxyFactory);
-				accountFactory.fillAccounts(accListFilePath);
+		//load account list
+		AccountFactory accountFactory = new AccountFactory(proxyFactory);
+		accountFactory.fillAccounts(accListFilePath);
 
-				File rootInputFiles = new File(listInputFilePath);
-				
-				File linkList = new File(linkListFilePath);
-				File linkTitleList = new File(linkTitleListFilePath);
-				
-				for(File file : rootInputFiles.listFiles()){
-					if(file.isFile() && accountFactory.getAccounts().size() > 0){
-						try {
-							
-							NewsTask task = new NewsTask(file);
-							SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
+		File rootInputFiles = new File(listInputFilePath);
 
-							createVideo(task);
-							//TODO Add Snippet task chooser
-							ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
-							StringBuilder snippetsStr = new StringBuilder(); 
-							for(Snippet snippet : snippets){
-								snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.getContent());
-							}
-							task.setSnippets(snippetsStr.toString());
+		File linkList = new File(linkListFilePath);
+		File linkTitleList = new File(linkTitleListFilePath);
 
-							NewsPoster nPoster = new NewsPoster(task, proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
-							String linkToVideo = nPoster.executePostNews();
-							appendStringToFile(linkToVideo, linkList);
-							appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
-							
-							accountFactory.getAccounts().remove(0);
-							
-							//Move file to processed folder
-							File destFile = new File(listProcessedFilePath + "/" + task.getInputFileName().getName());
-							if(destFile.exists()){
-								destFile.delete();
-							}
-							FileUtils.moveFile(task.getInputFileName(), destFile);
-							
-						}  catch (Exception e) {
-							try {
-								File destFile = new File(errorFilePath + "/" + file.getName());
-								if(destFile.exists()){
-									destFile.delete();
-								}
-								FileUtils.moveFile(file, destFile);
-							} catch (IOException e1) {
-								// TODO Auto-generated catch block
-								e1.printStackTrace();
-							}
-							e.printStackTrace();
-						}
+		for(File file : rootInputFiles.listFiles()){
+			if(file.isFile() && accountFactory.getAccounts().size() > 0){
+				try {
+
+					NewsTask task = new NewsTask(file);
+					SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
+
+					//create video
+					createVideo(task);
+
+					//TODO Add Snippet task chooser
+					ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
+					if(snippets.size() == 0)
+						throw new Exception("Could not extract snippets");
+						
+					StringBuilder snippetsStr = new StringBuilder(); 
+					for(Snippet snippet : snippets){
+						snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.getContent());
 					}
-				}
+					task.setSnippets(snippetsStr.toString());
 
-				//TODO Copy account list file
-				/*File accountFile = new File(accListFilePath);
+					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
+					String linkToVideo = nPoster.executePostNews();
+					appendStringToFile(linkToVideo, linkList);
+					appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
+
+					accountFactory.getAccounts().remove(0);
+
+					//Move file to processed folder
+					File destFile = new File(listProcessedFilePath + "/" + task.getInputFileName().getName());
+					if(destFile.exists()){
+						destFile.delete();
+					}
+					FileUtils.moveFile(task.getInputFileName(), destFile);
+
+				}  catch (Exception e) {
+					try {
+						File destFile = new File(errorFilePath + "/" + file.getName());
+						if(destFile.exists()){
+							destFile.delete();
+						}
+						FileUtils.moveFile(file, destFile);
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					e.printStackTrace();
+				}
+			}
+		}
+
+		//TODO Copy account list file
+		/*File accountFile = new File(accListFilePath);
 				accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
 
 				//Save unused account if they was not used
 				saveUnusedAccounts(accountFactory.getAccounts());*/
-			}
-		}finally{
-
-		}
 	}
 
 	private void createVideo(NewsTask task) throws Exception{
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 
-		try {
-			VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile());
+		VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile());
 
-			MediaLocator vml = JpegImagesToMovie.createMediaLocator(task.getVideoFile().getPath());
-			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
+		MediaLocator vml = JpegImagesToMovie.createMediaLocator(task.getVideoFile().getPath());
+		MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
 
-			avMerger.mergeFiles(vml, aml);
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		avMerger.mergeFiles(vml, aml);
+		
+		avMerger = null;
+		vml = null;
+		aml = null;
 	}
 
 	private void saveUnusedAccounts(List<Account> accounts){
@@ -289,8 +281,8 @@ public class TaskRunner {
 		}
 		return linkList;
 	}
-	
-	
+
+
 	private void appendStringToFile(String str, File file) {
 		BufferedWriter bufferedWriter = null;
 		try {
