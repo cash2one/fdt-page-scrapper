@@ -1,6 +1,7 @@
 package com.fdt.dailymotion.util;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.Vector;
 
@@ -27,7 +28,7 @@ public class VideoCreator {
 		}
 	}
 	
-	public static void makeVideo(String fileName, File imageFile) throws MalformedURLException {
+	public static void makeVideo(String fileName, File imageFile) throws IOException {
 	    Vector<String> imgLst = new Vector<String>();
 	    
 	    for(int i = 0; i < 100; i++){
