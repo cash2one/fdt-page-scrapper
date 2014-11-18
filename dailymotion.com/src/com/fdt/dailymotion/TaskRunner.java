@@ -101,7 +101,6 @@ public class TaskRunner {
 			DOMConfigurator.configure("log4j.xml");
 			taskRunner.runUploader();
 			System.out.print("Program execution finished");
-			System.exit(0);
 		}catch(Throwable e){
 			log.error("Error during main stream",e);
 			System.out.print("Program execution finished with errors");
