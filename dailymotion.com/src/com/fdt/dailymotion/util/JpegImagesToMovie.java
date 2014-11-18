@@ -150,18 +150,23 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
         waitForFileDone();
 
         // Cleanup.
-        
-        p.stop();
-        p.removeControllerListener(this);
-        
         try {
 			dsink.stop();
 		} catch (IOException e1) {
+			e.printStackTrace();
 		}
+        p.stop();
+        
+        
         try {
             dsink.close();
         } catch (Exception e) {
+        	e.printStackTrace();
         }
+        p.close();
+        
+        dsink.removeDataSinkListener(this);
+        p.removeControllerListener(this);
 
         System.out.println("Video creation completed!!!!!");
         return true;
