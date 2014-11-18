@@ -8,8 +8,6 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -18,30 +16,18 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
 import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.log4j.Logger;
-import org.htmlcleaner.HtmlCleaner;
-import org.htmlcleaner.TagNode;
-import org.htmlcleaner.XPatherException;
 import org.json.JSONObject;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 import com.fdt.dailymotion.task.NewsTask;
-import com.fdt.scrapper.task.Snippet;
 
 /**
  *
@@ -69,12 +55,6 @@ public class NewsPoster {
 	}
 
 	public String executePostNews() throws Exception {
-		//TODO get snippets
-		/*ArrayList<Snippet> snippets = parseHtml(task.getKeyWords());
-		if(snippets == null || snippets.size() == 0){
-			throw new Exception("Snippets size is 0. Will try to use another proxy server");
-		}*/
-		//post news
 		return postNews();
 	}
 
@@ -92,7 +72,7 @@ public class NewsPoster {
 		conn.setConnectTimeout(60000);
 		conn.setRequestMethod("GET");
 		conn.setDoInput(true);
-		conn.setDoOutput(true);
+		conn.setDoOutput(false);
 
 		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
@@ -127,15 +107,11 @@ public class NewsPoster {
 
 	private String uploadVideo() throws Exception{
 
-		String cookiesTest = account.getCookies();
-
 		executeRequestToGetCookies("http://www.dailymotion.com/upload", "GET", null);
 		executeRequestToGetCookies("http://www.dailymotion.com/pageitem/video/edit?request=/&t=0.6538078272511391&loop=0&from_request=/upload&_csrf_l=" + account.getCookie("_csrf/link"), "GET", null);
 		String videoId = executerequestToGetCookies("http://www.dailymotion.com/ajax/video", "POST", new VideoIdExtractor(), getAjaxVideoParamString());
 		task.setVideoId(videoId);
 		String videoUrl = "";
-
-		cookiesTest = account.getCookies();
 
 		String postUrl = task.getUploadUrl();
 
@@ -213,25 +189,16 @@ public class NewsPoster {
 				outputStream.close();
 			}*/
 
-		int code = conn.getResponseCode();
-
-		// Execute HTTP Post Request
-		Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
-
 		StringBuilder responseStr = getResponseAsString(conn);
 
 		log.debug(responseStr.toString());
 
 		conn.disconnect();
 
-		try {
-			JSONObject jsonObj = new JSONObject(responseStr.toString());
-			videoUrl = (String)jsonObj.getString("url");
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		JSONObject jsonObj = new JSONObject(responseStr.toString());
+		videoUrl = (String)jsonObj.getString("url");
 
+		//link uploaded video to user
 		executeRequestToGetCookies(getVideoFormXUploadUrl(videoId, videoUrl), "GET", null);
 
 		//Edit video description 
@@ -271,19 +238,18 @@ public class NewsPoster {
 		writer.close();
 		outputStream.close();
 
-		int code = conn.getResponseCode();
-
 		// Execute HTTP Post Request
-		Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
-		
 		StringBuilder responseStr = getResponseAsString(conn);
 
 		log.debug(responseStr.toString());
-		
+
 		conn.disconnect();
 
 		String videoUrl = "http://www.dailymotion.com" + executerequestToGetCookies("http://www.dailymotion.com/ajax/video", "POST", new VideoUrlExtractor(), getAjaxVideoParamStringForUrl());
-		
+		if( !videoUrl.contains("/video/")){
+			throw new Exception("URL to video was not extracted");
+		}
+
 		return videoUrl;
 	}
 
@@ -336,9 +302,6 @@ public class NewsPoster {
 			os.close();
 		}
 
-		// Execute HTTP Post Request
-		int code = conn.getResponseCode();
-
 		Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
 
 		if(cookies.get("Set-Cookie") != null){
@@ -365,52 +328,6 @@ public class NewsPoster {
 		return resultExtractor != null ? resultExtractor.getResult():"";
 	}
 
-	private org.jsoup.nodes.Document getUrlContent(String keyWords) throws MalformedURLException, IOException {
-		HttpURLConnection conn = null;
-		InputStream is = null;
-		try{
-
-			String strUrl = "http://search.tut.by/?rs=1&page="+"&query="+keyWords.replace(" ", "+")+"&how=rlv&ru=1&tc=0&ust="+keyWords.replace(" ", "+")+"&sh=&cg=20&cdig=1";
-			URL url = new URL(strUrl);
-			//using proxy
-			conn = (HttpURLConnection)url.openConnection(proxy);
-			//don't using proxy
-			//conn = (HttpURLConnection)url.openConnection();
-			//conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			//conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
-			is = conn.getInputStream();
-			org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", strUrl);
-			is.close();
-			is = null;
-			conn.disconnect();
-			conn = null;
-			return page;
-		}finally{
-			if(conn != null){
-				try{conn.disconnect();}catch(Throwable e){}
-			}
-			if(is != null){
-				try{is.close();}catch(Throwable e){}
-			}
-		}
-	}
-
-	private ArrayList<Snippet> parseHtml(String keyWords) throws MalformedURLException, IOException{
-		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
-		org.jsoup.nodes.Document page = getUrlContent(keyWords);
-
-		Elements elements = page.select("li[class=b-results__li]");
-		if(!elements.isEmpty()){
-			for(Element element : elements){
-				String h3Value = element.select("h3").text();
-				String pValue = element.select("p").text();
-				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim())){
-					snippets.add(new Snippet(h3Value.trim(), pValue.trim()));
-				}
-			}
-		}
-		return snippets;
-	}
 
 	public static String getQuery(List<NameValuePair> params) throws UnsupportedEncodingException
 	{
@@ -432,8 +349,6 @@ public class NewsPoster {
 		return result.toString();
 	}
 
-
-
 	private String getAjaxVideoParamString(){
 		StringBuilder params = new StringBuilder();
 		params.append("ajax_function").append("=").append("create").append("&");
@@ -445,7 +360,7 @@ public class NewsPoster {
 
 		return params.toString();
 	}
-	
+
 	private String getAjaxVideoParamStringForUrl(){
 		StringBuilder params = new StringBuilder();
 		params.append("ajax_function").append("=").append("get_url").append("&");
@@ -474,7 +389,7 @@ public class NewsPoster {
 		}
 
 	}
-	
+
 	private class VideoUrlExtractor implements IResultExtractor{
 
 		private String responseStr; 

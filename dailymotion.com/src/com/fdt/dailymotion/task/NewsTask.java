@@ -3,9 +3,7 @@ package com.fdt.dailymotion.task;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 import java.net.URL;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -132,10 +130,6 @@ public class NewsTask{
 		}else{
 			throw new Exception("Post link NOT found");
 		}
-	}
-	
-	private void generateDescription(){
-		
 	}
 	
 	private String getFileNameWOExt(String fullName){

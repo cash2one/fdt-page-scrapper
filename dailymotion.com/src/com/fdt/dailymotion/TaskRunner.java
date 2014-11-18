@@ -56,6 +56,7 @@ public class TaskRunner {
 	private String errorFilePath;
 	
 	private String linkListFilePath;
+	private String linkTitleListFilePath;
 
 	private Properties config = new Properties();
 
@@ -74,6 +75,7 @@ public class TaskRunner {
 	private final static String ERROR_FILE_PATH_LABEL = "error_file_path";
 	
 	private final static String LINK_LIST_FILE_PATH_LABEL = "link_list_file_path";
+	private final static String LINK_TITLE_LIST_FILE_PATH_LABEL = "link_title_list_file_path";
 
 	public TaskRunner(String cfgFilePath){
 
@@ -87,7 +89,8 @@ public class TaskRunner {
 		this.listProcessedFilePath = Constants.getInstance().getProperty(LIST_PROCESSED_FILE_PATH_LABEL);
 		this.errorFilePath = Constants.getInstance().getProperty(ERROR_FILE_PATH_LABEL);
 		
-		this.linkListFilePath = Constants.getInstance().getProperty(LINK_LIST_FILE_PATH_LABEL); 
+		this.linkListFilePath = Constants.getInstance().getProperty(LINK_LIST_FILE_PATH_LABEL);
+		this.linkTitleListFilePath = Constants.getInstance().getProperty(LINK_TITLE_LIST_FILE_PATH_LABEL); 
 
 		Authenticator.setDefault(new Authenticator() {
 			@Override
@@ -104,7 +107,7 @@ public class TaskRunner {
 			TaskRunner taskRunner = new TaskRunner("config.ini");
 			DOMConfigurator.configure("log4j.xml");
 			taskRunner.run();
-			System.out.print("Program execution finished successfully");
+			System.out.print("Program execution finished");
 		}catch(Throwable e){
 			log.error("Error during main stream",e);
 			System.out.print("Program execution finished with errors");
@@ -126,6 +129,7 @@ public class TaskRunner {
 				File rootInputFiles = new File(listInputFilePath);
 				
 				File linkList = new File(linkListFilePath);
+				File linkTitleList = new File(linkTitleListFilePath);
 				
 				for(File file : rootInputFiles.listFiles()){
 					if(file.isFile() && accountFactory.getAccounts().size() > 0){
@@ -146,13 +150,24 @@ public class TaskRunner {
 							NewsPoster nPoster = new NewsPoster(task, proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
 							String linkToVideo = nPoster.executePostNews();
 							appendStringToFile(linkToVideo, linkList);
+							appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
 							
 							accountFactory.getAccounts().remove(0);
+							
 							//Move file to processed folder
-							FileUtils.moveFile(task.getInputFileName(), new File(listProcessedFilePath + "/" + task.getInputFileName().getName()));
+							File destFile = new File(listProcessedFilePath + "/" + task.getInputFileName().getName());
+							if(destFile.exists()){
+								destFile.delete();
+							}
+							FileUtils.moveFile(task.getInputFileName(), destFile);
+							
 						}  catch (Exception e) {
 							try {
-								FileUtils.moveFile(file, new File(errorFilePath + "/" + file.getName()));
+								File destFile = new File(errorFilePath + "/" + file.getName());
+								if(destFile.exists()){
+									destFile.delete();
+								}
+								FileUtils.moveFile(file, destFile);
 							} catch (IOException e1) {
 								// TODO Auto-generated catch block
 								e1.printStackTrace();
@@ -283,7 +298,6 @@ public class TaskRunner {
 			bufferedWriter = new BufferedWriter(new OutputStreamWriter(
 					new FileOutputStream(file, true), "UTF8"));
 			bufferedWriter.append(str);
-			bufferedWriter.newLine();
 		} catch (FileNotFoundException ex) {
 			log.error("Error during saving string to file",ex);
 		} catch (IOException ex) {
