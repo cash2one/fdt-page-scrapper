@@ -16,6 +16,7 @@ import java.net.PasswordAuthentication;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
 
 import javax.media.MediaLocator;
 
@@ -30,6 +31,7 @@ import com.fdt.dailymotion.util.VideoCreator;
 import com.fdt.scrapper.SnippetExtractor;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.BingSnippetTask;
+import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.Snippet;
 
 /**
@@ -55,6 +57,8 @@ public class TaskRunner {
 	private String linkListFilePath;
 	private String linkTitleListFilePath;
 
+	private final Random rnd = new Random();
+
 	private Properties config = new Properties();
 
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
@@ -70,6 +74,18 @@ public class TaskRunner {
 	private final static String LINK_LIST_FILE_PATH_LABEL = "link_list_file_path";
 	private final static String LINK_TITLE_LIST_FILE_PATH_LABEL = "link_title_list_file_path";
 
+	private static final String MAX_SNIPPET_COUNT_LABEL = "MAX_SNIPPET_COUNT";
+	private static final String MIN_SNIPPET_COUNT_LABEL = "MIN_SNIPPET_COUNT";
+
+	private static final String MAX_POST_PER_ACCOUNT_LABEL = "MAX_POST_PER_ACCOUNT";
+	private static final String MIN_POST_PER_ACCOUNTLABEL = "MIN_POST_PER_ACCOUNT";
+
+	private Integer MIN_SNIPPET_COUNT=5;
+	private Integer MAX_SNIPPET_COUNT=10;
+
+	private Integer MIN_POST_PER_ACCOUNT=5;
+	private Integer MAX_POST_PER_ACCOUNT=10;
+
 	public TaskRunner(String cfgFilePath){
 
 		Constants.getInstance().loadProperties(cfgFilePath);
@@ -84,6 +100,16 @@ public class TaskRunner {
 
 		this.linkListFilePath = Constants.getInstance().getProperty(LINK_LIST_FILE_PATH_LABEL);
 		this.linkTitleListFilePath = Constants.getInstance().getProperty(LINK_TITLE_LIST_FILE_PATH_LABEL); 
+
+		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL) != null)
+			MIN_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
+		if(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL) != null)
+			MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
+
+		if(ConfigManager.getInstance().getProperty(MAX_POST_PER_ACCOUNT_LABEL) != null)
+			MIN_POST_PER_ACCOUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_POST_PER_ACCOUNT_LABEL));
+		if(ConfigManager.getInstance().getProperty(MIN_POST_PER_ACCOUNTLABEL) != null)
+			MAX_POST_PER_ACCOUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_POST_PER_ACCOUNTLABEL));
 
 		Authenticator.setDefault(new Authenticator() {
 			@Override
@@ -123,52 +149,67 @@ public class TaskRunner {
 		File linkList = new File(linkListFilePath);
 		File linkTitleList = new File(linkTitleListFilePath);
 
-		for(File file : rootInputFiles.listFiles()){
-			if(file.isFile() && accountFactory.getAccounts().size() > 0){
-				try {
+		int postPerAccount = MIN_POST_PER_ACCOUNT + rnd.nextInt(MAX_POST_PER_ACCOUNT - MIN_POST_PER_ACCOUNT+1);
+		int postedNewPerAccount = 0;
 
-					NewsTask task = new NewsTask(file);
-					SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
-
-					//create video
-					createVideo(task);
-
-					//TODO Add Snippet task chooser
-					ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
-					if(snippets.size() == 0)
-						throw new Exception("Could not extract snippets");
-
-					StringBuilder snippetsStr = new StringBuilder(); 
-					for(Snippet snippet : snippets){
-						snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.getContent());
-					}
-					task.setSnippets(snippetsStr.toString());
-
-					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
-					String linkToVideo = nPoster.executePostNews();
-					appendStringToFile(linkToVideo, linkList);
-					appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
-
-					accountFactory.getAccounts().remove(0);
-
-					//Move file to processed folder
-					File destFile = new File(listProcessedFilePath + "/" + task.getInputFileName().getName());
-					if(destFile.exists()){
-						destFile.delete();
-					}
-					FileUtils.moveFile(task.getInputFileName(), destFile);
-
-				}  catch (Exception e) {
+		for(File file : rootInputFiles.listFiles())
+		{
+			if(file.isFile())
+			{
+				if(postedNewPerAccount < postPerAccount && accountFactory.getAccounts().size() > 0)
+				{
 					try {
-						File destFile = new File(errorFilePath + "/" + file.getName());
+						postedNewPerAccount++;
+						NewsTask task = new NewsTask(file);
+						SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
+
+						//create video
+						createVideo(task);
+
+						//TODO Add Snippet task chooser
+						ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
+						if(snippets.size() == 0)
+							throw new Exception("Could not extract snippets");
+
+						//get random snippets
+						snippets = getRandSnippets(snippets, snippetExtractor);
+
+						StringBuilder snippetsStr = new StringBuilder(); 
+						for(Snippet snippet : snippets){
+							snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.getContent());
+						}
+						task.setSnippets(snippetsStr.toString());
+
+						NewsPoster nPoster = new NewsPoster(task, proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
+						String linkToVideo = nPoster.executePostNews();
+						appendStringToFile(linkToVideo, linkList);
+						appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
+
+						//Move file to processed folder
+						File destFile = new File(listProcessedFilePath + "/" + task.getInputFileName().getName());
 						if(destFile.exists()){
 							destFile.delete();
 						}
-						FileUtils.moveFile(file, destFile);
-					} catch (IOException e1) {
-						log.error(e1);
+						FileUtils.moveFile(task.getInputFileName(), destFile);
+					}  catch (Exception e) {
+						try {
+							File destFile = new File(errorFilePath + "/" + file.getName());
+							if(destFile.exists()){
+								destFile.delete();
+							}
+							FileUtils.moveFile(file, destFile);
+						} catch (IOException e1) {
+							log.error(e1);
+						}
+						log.error("Error during execution: ", e);
 					}
-					log.error("Error during execution: ", e);
+				}else{
+					if(accountFactory.getAccounts().size() > 0){
+						accountFactory.getAccounts().remove(0);
+						postedNewPerAccount = 0;
+					}else{
+						break;
+					}
 				}
 			}
 		}
@@ -179,6 +220,34 @@ public class TaskRunner {
 
 		//Save unused account if they was not used
 		saveUnusedAccounts(accountFactory.getAccounts());
+	}
+
+	private ArrayList<Snippet> getRandSnippets(List<Snippet> snippets, SnippetExtractor snpExtr){
+		ArrayList<Snippet> rndSnipList = new ArrayList<Snippet>();
+
+		//calculate snippets count
+		int snipCount = 0;
+
+		if(snippets.size() <= MIN_SNIPPET_COUNT){
+			snipCount = snippets.size();
+		}else{
+			int randomValue = snpExtr.getRandomValue(MIN_SNIPPET_COUNT, MAX_SNIPPET_COUNT);
+			if(randomValue <= snippets.size()){
+				snipCount = randomValue;
+			}else{
+				snipCount = snippets.size();
+			}
+		}
+
+		log.debug("Keywords: task.getKeyWords(). Snippet count: " + snipCount);
+
+		int indexShift = snpExtr.getRandomValue(0,snippets.size()-snipCount); 
+
+		for(int i = indexShift; i < (snipCount+indexShift); i++){
+			rndSnipList.add(snippets.get(i));	
+		}
+
+		return rndSnipList;
 	}
 
 	private void createVideo(NewsTask task) throws Exception{
