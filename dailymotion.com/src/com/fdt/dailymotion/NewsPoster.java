@@ -446,7 +446,8 @@ public class NewsPoster {
 		.append("saveStatus=").append("fail").append("&")
 		//.append("from_request=").append("/video/edit/x2a5w2y_%25D0%25B1%25D0%25B5%25D0%25B7-%25D0%25BD%25D0%25B0%25D0%25B7%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D1%258F")
 		.append("_csrf_l=").append(account.getCookie("_csrf/link"));
-
+		
+		log.info("Params for edit video: " + params.toString());
 
 		return params.toString();
 	}

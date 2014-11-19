@@ -215,8 +215,8 @@ public class NewsTask{
 	
 	public String getDescription(){
 		StringBuilder strBuilder = new StringBuilder();
-		strBuilder.append("Read online or Download ").append("key").append(LINE_FEED).append(LINE_FEED);
-		strBuilder.append(postLink).append(LINE_FEED).append(LINE_FEED);
+		strBuilder.append("Read online or Download ").append(this.key).append(LINE_FEED).append(LINE_FEED);
+		strBuilder.append(postLink).append(LINE_FEED);
 		strBuilder.append(snippets);
 		return strBuilder.toString();
 	}
