@@ -402,7 +402,7 @@ public class NewsPoster {
 		@Override
 		public String getResult() {
 			String url = "-1";
-			url = responseStr.substring(2);
+			url = responseStr.substring(2).replaceAll("\\r\\n", "");;
 
 			return url;
 		}

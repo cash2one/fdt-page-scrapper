@@ -291,6 +291,7 @@ public class TaskRunner {
 			bufferedWriter = new BufferedWriter(new OutputStreamWriter(
 					new FileOutputStream(file, true), "UTF8"));
 			bufferedWriter.append(str);
+			bufferedWriter.newLine();
 		} catch (FileNotFoundException ex) {
 			log.error("Error during saving string to file",ex);
 		} catch (IOException ex) {
