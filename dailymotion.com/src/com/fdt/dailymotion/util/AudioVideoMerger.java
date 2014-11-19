@@ -1,7 +1,5 @@
 package com.fdt.dailymotion.util;
 
-import java.io.File;
-
 import javax.media.ConfigureCompleteEvent;
 import javax.media.ControllerEvent;
 import javax.media.ControllerListener;
@@ -25,14 +23,12 @@ import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.DataSource;
 import javax.media.protocol.FileTypeDescriptor;
 
-import org.apache.commons.io.FileUtils;
-
 public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 
-	public void mergeFiles(MediaLocator videoML, MediaLocator audioML) throws Exception { 
+	public void mergeFiles(MediaLocator inputVideoML, MediaLocator inputAudioML, MediaLocator outputVideoML) throws Exception { 
 		
-		DataSource videoDataSource = javax.media.Manager.createDataSource(videoML); //your video file
-		DataSource audioDataSource = javax.media.Manager.createDataSource(audioML); // your audio file
+		DataSource videoDataSource = javax.media.Manager.createDataSource(inputVideoML); //your video file
+		DataSource audioDataSource = javax.media.Manager.createDataSource(inputAudioML); // your audio file
 		DataSource mixedDataSource = null; // data source to combine video with audio
 		DataSource arrayDataSource[] = new DataSource[2]; //data source array
 		DataSource outputDataSource = null; // file to output
@@ -100,9 +96,7 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		}
 		//create merged file and start writing media to it
 		outputDataSource = processor.getDataOutput();
-		String tmpFileName = videoML.getURL().toString() + "_tmp";
-		MediaLocator outputLocator = new MediaLocator(tmpFileName);
-		outputDataSink = Manager.createDataSink(outputDataSource, outputLocator);
+		outputDataSink = Manager.createDataSink(outputDataSource, outputVideoML);
 		outputDataSink.open();
 		outputDataSink.addDataSinkListener(this);
 		outputDataSink.start();
@@ -132,7 +126,7 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		arrayDataSource[0].disconnect();
 		arrayDataSource[1].disconnect();
 
-		File newFile = new File(tmpFileName.substring(5));
+		/*File newFile = new File(tmpFileName.substring(5));
 		File oldFile = new File(videoML.getURL().toString().substring(5)); 
 		//delete old file
 
@@ -140,7 +134,7 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		oldFile.delete();
 
 		//rename new file
-		FileUtils.moveFile(newFile, oldFile);
+		FileUtils.moveFile(newFile, oldFile);*/
 	}
 
 	Object waitFileSync = new Object();

@@ -20,6 +20,7 @@ public class NewsTask{
 	private File inputFile;
 	private File imageFile;
 	private File videoFile;
+	private File videoFileWOAudio;
 
 	private String videoTitle = "";
 	private String videoid = "";
@@ -110,6 +111,7 @@ public class NewsTask{
 			//write image to file
 			this.imageFile = new File("images/"+getFileNameWOExt(this.inputFile.getName()) + "." + imageFormat);
 			this.videoFile = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + ".mov");
+			this.videoFileWOAudio = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + "_wo_audio.mov");
 			if(ImageIO.write(img, imageFormat, imageFile));
 		}else{
 			throw new Exception("Image URL NOT found");
@@ -118,6 +120,10 @@ public class NewsTask{
 	
 	public File getVideoFile() {
 		return videoFile;
+	}
+	
+	public File getVideoFileWOAudio() {
+		return videoFileWOAudio;
 	}
 
 	private void extractPostLink(String fileContent) throws Exception{

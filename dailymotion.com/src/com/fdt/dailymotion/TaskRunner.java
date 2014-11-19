@@ -101,6 +101,7 @@ public class TaskRunner {
 			DOMConfigurator.configure("log4j.xml");
 			taskRunner.runUploader();
 			System.out.print("Program execution finished");
+			System.exit(0);
 		}catch(Throwable e){
 			log.error("Error during main stream",e);
 			System.out.print("Program execution finished with errors");
@@ -136,7 +137,7 @@ public class TaskRunner {
 					ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
 					if(snippets.size() == 0)
 						throw new Exception("Could not extract snippets");
-						
+
 					StringBuilder snippetsStr = new StringBuilder(); 
 					for(Snippet snippet : snippets){
 						snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.getContent());
@@ -165,35 +166,36 @@ public class TaskRunner {
 						}
 						FileUtils.moveFile(file, destFile);
 					} catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
+						log.error(e1);
 					}
-					e.printStackTrace();
+					log.error("Error during execution: ", e);
 				}
 			}
 		}
 
 		//TODO Copy account list file
-		/*File accountFile = new File(accListFilePath);
-				accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
+		File accountFile = new File(accListFilePath);
+		accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
 
-				//Save unused account if they was not used
-				saveUnusedAccounts(accountFactory.getAccounts());*/
+		//Save unused account if they was not used
+		saveUnusedAccounts(accountFactory.getAccounts());
 	}
 
 	private void createVideo(NewsTask task) throws Exception{
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 
-		VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile());
+		VideoCreator.makeVideo(task.getVideoFileWOAudio().getPath(), task.getImageFile());
 
-		MediaLocator vml = JpegImagesToMovie.createMediaLocator(task.getVideoFile().getPath());
-		MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
+		MediaLocator ivml = JpegImagesToMovie.createMediaLocator(task.getVideoFileWOAudio().getPath());
+		MediaLocator iaml = JpegImagesToMovie.createMediaLocator("08.wav");
+		MediaLocator ovml = JpegImagesToMovie.createMediaLocator(task.getVideoFile().getPath());
 
-		avMerger.mergeFiles(vml, aml);
-		
+		avMerger.mergeFiles(ivml, iaml, ovml);
+
 		avMerger = null;
-		vml = null;
-		aml = null;
+		ivml = null;
+		iaml = null;
+		ovml = null;
 	}
 
 	private void saveUnusedAccounts(List<Account> accounts){

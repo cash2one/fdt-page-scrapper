@@ -93,7 +93,7 @@ public class NewsPoster {
 			strBuild.setLength(180);
 			uploadLink = strBuild.substring(49).replace("\\", "");
 			task.setUploadUrl(uploadLink);
-			System.out.println("Upload URL: " + uploadLink);
+			log.info("Upload URL: " + uploadLink);
 		}else{
 			throw new IOException("Couldn't extract upload context URL");
 		}
@@ -191,7 +191,7 @@ public class NewsPoster {
 
 		StringBuilder responseStr = getResponseAsString(conn);
 
-		log.debug(responseStr.toString());
+		//log.debug(responseStr.toString());
 
 		conn.disconnect();
 
@@ -241,7 +241,7 @@ public class NewsPoster {
 		// Execute HTTP Post Request
 		StringBuilder responseStr = getResponseAsString(conn);
 
-		log.debug(responseStr.toString());
+		//log.debug(responseStr.toString());
 
 		conn.disconnect();
 
@@ -276,7 +276,7 @@ public class NewsPoster {
 
 		//post news
 		URL url = new URL(postUrl);
-		System.out.println("URL: " + url);
+		log.info("URL: " + url);
 		HttpURLConnection.setFollowRedirects(false);
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
 		conn.setReadTimeout(60000);
@@ -317,7 +317,7 @@ public class NewsPoster {
 
 		StringBuilder responseStr = getResponseAsString(conn);
 
-		log.debug(responseStr.toString());
+		//log.debug(responseStr.toString());
 
 		if(resultExtractor != null){
 			resultExtractor.init(responseStr.toString());
@@ -383,6 +383,7 @@ public class NewsPoster {
 		@Override
 		public String getResult() {
 			String id = "-1";
+			log.debug("Response string: " + responseStr);
 			id = responseStr.substring(14, responseStr.lastIndexOf("}"));
 
 			return id;

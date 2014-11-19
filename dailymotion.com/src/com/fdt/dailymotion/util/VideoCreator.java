@@ -18,7 +18,7 @@ public class VideoCreator {
 			MediaLocator vml = JpegImagesToMovie.createMediaLocator("test_video.mov");
 			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
 			
-			avMerger.mergeFiles(vml, aml);
+			//avMerger.mergeFiles(vml, aml);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

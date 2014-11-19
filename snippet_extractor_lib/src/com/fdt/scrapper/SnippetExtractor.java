@@ -165,6 +165,8 @@ public class SnippetExtractor {
 			conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			conn.addRequestProperty("Accept-Encoding","gzip");
 			fillExtraParamsFromTask(conn, snippetTask);
+			conn.setDoInput(true);
+			conn.setDoOutput(false);
 
 			HtmlCleaner cleaner = new HtmlCleaner();
 
