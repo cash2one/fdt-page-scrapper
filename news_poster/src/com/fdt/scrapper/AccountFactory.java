@@ -106,10 +106,12 @@ public class AccountFactory
 				conn.addRequestProperty("Referer","http://subscribe.ru/");
 				conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"); 
 				//conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-				conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-
-				List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-				nameValuePairs.add(new BasicNameValuePair("destination", "/"));
+				conn.setRequestProperty("Accept", "text/plain, */*; q=0.01");
+				conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+				conn.setRequestProperty("X-Requested-With","XMLHttpRequest");
+				
+				List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(3);
+				nameValuePairs.add(new BasicNameValuePair("destination", ""));
 				nameValuePairs.add(new BasicNameValuePair("credential_0", account.getLogin()));
 				nameValuePairs.add(new BasicNameValuePair("credential_1", account.getPass()));
 
@@ -120,6 +122,8 @@ public class AccountFactory
 				writer.close();
 				os.close();
 
+				
+				int code = conn.getResponseCode();
 				
 				// Execute HTTP Post Request
 				Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();

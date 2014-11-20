@@ -384,14 +384,15 @@ public class NewsPoster {
 		InputStream is = null;
 		try{
 
-			String strUrl = "http://search.tut.by/?rs=1&page="+rnd.nextInt(20)+"&query="+keyWords.replace(" ", "+")+"&how=rlv&ru=1&tc=0&ust="+keyWords.replace(" ", "+")+"&sh=&cg=20&cdig=1";
+			String strUrl = "http://www.bing.com/search?q="+URLEncoder.encode(keyWords.replace(" ", "+"),"UTF-8") + "&first=" + (rnd.nextInt(20)*10 + 1);
 			URL url = new URL(strUrl);
 			//using proxy
-			conn = (HttpURLConnection)url.openConnection(proxy);
+			//conn = (HttpURLConnection)url.openConnection(proxy);
 			//don't using proxy
-			//conn = (HttpURLConnection)url.openConnection();
-			//conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			//conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
+			conn = (HttpURLConnection)url.openConnection();
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
+			int code = conn.getResponseCode();
 			is = conn.getInputStream();
 			org.jsoup.nodes.Document page = Jsoup.parse(conn.getInputStream(), "UTF-8", strUrl);
 			is.close();
@@ -452,11 +453,11 @@ public class NewsPoster {
 		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
 		org.jsoup.nodes.Document page = getUrlContent(keyWords);
 
-		Elements elements = page.select("li[class=b-results__li]");
+		Elements elements = page.select("li[class=b_algo]");
 		if(!elements.isEmpty()){
 			for(Element element : elements){
-				String h3Value = element.select("h3").text();
-				String pValue = element.select("p").text();
+				String h3Value = element.select("h2").select("a").text();
+				String pValue = element.select("div").select("p").text();
 				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim())){
 					snippets.add(new Snippet(h3Value.trim(), pValue.trim()));
 				}
