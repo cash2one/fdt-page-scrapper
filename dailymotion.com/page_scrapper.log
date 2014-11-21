@@ -92,3 +92,13 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -15
 2014-11-19 15:49:22,369- INFO(NewsPoster.java:279)-URL: http://www.dailymotion.com/ajax/video
 2014-11-19 15:49:22,985-DEBUG(TaskRunner.java:205)-Starting saving unused account...
 2014-11-19 15:49:22,985-DEBUG(TaskRunner.java:212)-Unused accounts was saved successfully.
+2014-11-21 08:31:57,124-ERROR(TinyUrlTaskRunner.java:160)-Error during execution: 
+java.lang.ClassCastException: org.htmlcleaner.TagNode cannot be cast to java.lang.String
+	at com.fdt.dailymotion.TinyUrlTaskRunner.getTinyUrl(TinyUrlTaskRunner.java:282)
+	at com.fdt.dailymotion.TinyUrlTaskRunner.runTinyUrlReplacer(TinyUrlTaskRunner.java:138)
+	at com.fdt.dailymotion.TinyUrlTaskRunner.main(TinyUrlTaskRunner.java:103)
+2014-11-21 08:37:20,968-ERROR(TinyUrlTaskRunner.java:160)-Error during execution: 
+java.lang.ClassCastException: java.lang.String cannot be cast to org.htmlcleaner.TagNode
+	at com.fdt.dailymotion.TinyUrlTaskRunner.getTinyUrl(TinyUrlTaskRunner.java:282)
+	at com.fdt.dailymotion.TinyUrlTaskRunner.runTinyUrlReplacer(TinyUrlTaskRunner.java:138)
+	at com.fdt.dailymotion.TinyUrlTaskRunner.main(TinyUrlTaskRunner.java:103)
