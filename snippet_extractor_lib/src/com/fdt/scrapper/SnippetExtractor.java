@@ -273,7 +273,7 @@ public class SnippetExtractor {
 		snippet.setContent(newContent.toString());
 	}
 
-	private Integer getRandomValue(Integer minValue, Integer maxValue){
+	public Integer getRandomValue(Integer minValue, Integer maxValue){
 		return  minValue + rnd.nextInt(maxValue - minValue+1);
 	}
 
