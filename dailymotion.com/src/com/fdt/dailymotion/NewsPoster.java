@@ -15,6 +15,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.math.BigInteger;
 import java.net.HttpURLConnection;
 import java.net.Proxy;
 import java.net.URL;
@@ -427,7 +428,7 @@ public class NewsPoster {
 		.append("form_name=").append("dm_pageitem_video_edit_0").append("&")
 		.append("_csrf=").append(account.getCookie("_csrf/form")).append("&")
 		.append("_fid=").append("").append("&")
-		.append("video_title=").append(URLEncoder.encode(task.getVideoTitle(),"UTF-8")).append("&")
+		.append("video_title=").append(URLEncoder.encode(task.getVideoTitle() + " " + getRndStr(),"UTF-8")).append("&")
 		.append("user_category=").append(themes[rnd.nextInt(themes.length)]).append("&")
 		.append("game_select=").append("").append("&")
 		.append("language=").append("en").append("&")
@@ -446,10 +447,22 @@ public class NewsPoster {
 		.append("saveStatus=").append("fail").append("&")
 		//.append("from_request=").append("/video/edit/x2a5w2y_%25D0%25B1%25D0%25B5%25D0%25B7-%25D0%25BD%25D0%25B0%25D0%25B7%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D1%258F")
 		.append("_csrf_l=").append(account.getCookie("_csrf/link"));
-		
+
 		log.info("Params for edit video: " + params.toString());
 
 		return params.toString();
+	}
+
+	private String getRndStr(){
+		Random random = new Random();
+		int length = 4 + random.nextInt(3);
+		String characters = "abcdefghijklmnopqrstuvwxyz";
+		char[] text = new char[length];
+		for (int i = 0; i < length; i++)
+		{
+			text[i] = characters.charAt(random.nextInt(characters.length()));
+		}
+		return new String(text);
 	}
 
 }
