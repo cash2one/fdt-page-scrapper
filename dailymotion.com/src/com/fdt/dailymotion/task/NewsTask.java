@@ -21,12 +21,14 @@ public class NewsTask{
 	private File imageFile;
 	private File videoFile;
 	private File videoFileWOAudio;
+	
+	private File templateFile;
 
 	private String videoTitle = "";
 	private String videoid = "";
 	private String imageUrl = "";
 	private String postLink = "";
-
+	
 	private String key = "";
 	private String snippets = "";
 
@@ -37,9 +39,10 @@ public class NewsTask{
 	
 	private static final String LINE_FEED = "\r\n";
 
-	public NewsTask(File inputFileName) throws Exception {
+	public NewsTask(File inputFileName, File templateFile) throws Exception {
 		super();
 		this.inputFile = inputFileName;
+		this.templateFile = templateFile;
 		//TODO Read and parse file
 		parseFile();
 	}
@@ -213,15 +216,50 @@ public class NewsTask{
 		return imageUrl;
 	}
 	
-	public String getDescription(){
-		StringBuilder strBuilder = new StringBuilder();
-		strBuilder.append("Read online or Download ").append(this.key).append(LINE_FEED).append(LINE_FEED);
-		strBuilder.append(postLink).append(LINE_FEED);
-		strBuilder.append(snippets);
-		return strBuilder.toString();
+	public String getDescription() throws Exception{
+		String description = getFileAsString(this.templateFile);
+		description = description.replaceAll("\\[KEYWORD\\]", key);
+		description = description.replaceAll("\\[LINK\\]", postLink);
+		description = description.replaceAll("\\[SNIPPETS\\]", key);
+		
+		return description;
 	}
 
 	public File getImageFile() {
 		return imageFile;
+	}
+	
+	private String getFileAsString(File file) throws Exception{
+		//read account list
+		FileReader fr = null;
+		BufferedReader br = null;
+		
+		StringBuilder fileAsStr = new StringBuilder();
+		
+		try {
+			fr = new FileReader(file);
+			br = new BufferedReader(fr);
+
+			String line;
+			while( (line = br.readLine()) != null){
+				fileAsStr.append(line).append(LINE_FEED);
+			}
+		}
+		finally {
+			try {
+				if(br != null)
+					br.close();
+			} catch (Throwable e) {
+				log.warn("Error while initializtion", e);
+			}
+			try {
+				if(fr != null)
+					fr.close();
+			} catch (Throwable e) {
+				log.warn("Error while initializtion", e);
+			}
+		}
+		
+		return fileAsStr.toString();
 	}
 }

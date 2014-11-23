@@ -53,6 +53,8 @@ public class TaskRunner {
 	private String listInputFilePath;
 	private String listProcessedFilePath;
 	private String errorFilePath;
+	
+	private String templateFilePath;
 
 	private String linkListFilePath;
 	private String linkTitleListFilePath;
@@ -73,6 +75,8 @@ public class TaskRunner {
 
 	private final static String LINK_LIST_FILE_PATH_LABEL = "link_list_file_path";
 	private final static String LINK_TITLE_LIST_FILE_PATH_LABEL = "link_title_list_file_path";
+	
+	private final static String CONTENT_TEMPLATE_FILE_PATH_LABEL = "content_template_file_path";
 
 	private static final String MAX_SNIPPET_COUNT_LABEL = "MAX_SNIPPET_COUNT";
 	private static final String MIN_SNIPPET_COUNT_LABEL = "MIN_SNIPPET_COUNT";
@@ -97,6 +101,8 @@ public class TaskRunner {
 		this.listInputFilePath = Constants.getInstance().getProperty(LIST_INPUT_FILE_PATH_LABEL);
 		this.listProcessedFilePath = Constants.getInstance().getProperty(LIST_PROCESSED_FILE_PATH_LABEL);
 		this.errorFilePath = Constants.getInstance().getProperty(ERROR_FILE_PATH_LABEL);
+		
+		this.templateFilePath = Constants.getInstance().getProperty(CONTENT_TEMPLATE_FILE_PATH_LABEL);
 
 		this.linkListFilePath = Constants.getInstance().getProperty(LINK_LIST_FILE_PATH_LABEL);
 		this.linkTitleListFilePath = Constants.getInstance().getProperty(LINK_TITLE_LIST_FILE_PATH_LABEL); 
@@ -148,6 +154,8 @@ public class TaskRunner {
 
 		File linkList = new File(linkListFilePath);
 		File linkTitleList = new File(linkTitleListFilePath);
+		
+		File templateFile = new File(templateFilePath);
 
 		int postPerAccount = MIN_POST_PER_ACCOUNT + rnd.nextInt(MAX_POST_PER_ACCOUNT - MIN_POST_PER_ACCOUNT+1);
 		int postedNewPerAccount = 0;
@@ -160,7 +168,7 @@ public class TaskRunner {
 				{
 					try {
 						postedNewPerAccount++;
-						NewsTask task = new NewsTask(file);
+						NewsTask task = new NewsTask(file, templateFile);
 						SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
 
 						//create video
@@ -176,7 +184,7 @@ public class TaskRunner {
 
 						StringBuilder snippetsStr = new StringBuilder(); 
 						for(Snippet snippet : snippets){
-							snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.getContent());
+							snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.toString());
 						}
 						task.setSnippets(snippetsStr.toString());
 
@@ -351,8 +359,7 @@ public class TaskRunner {
 		}
 		return linkList;
 	}
-
-
+	
 	private void appendStringToFile(String str, File file) {
 		BufferedWriter bufferedWriter = null;
 		try {

@@ -2,16 +2,13 @@ package com.fdt.dailymotion;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Authenticator;
 import java.net.HttpURLConnection;
@@ -21,13 +18,7 @@ import java.net.Proxy;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Properties;
-import java.util.Random;
-import java.util.zip.GZIPInputStream;
-
-import javax.media.MediaLocator;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
@@ -36,12 +27,8 @@ import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.TagNode;
 import org.htmlcleaner.XPatherException;
 
-import com.fdt.dailymotion.task.NewsTask;
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
-import com.fdt.scrapper.task.ConfigManager;
-import com.fdt.scrapper.task.Snippet;
-import com.fdt.scrapper.task.SnippetTask;
 
 /**
  * @author VarenKoks
@@ -63,6 +50,8 @@ public class TinyUrlTaskRunner {
 	private String errorFilePath;
 	
 	private String firstFileString = "";
+	
+	private String downloadUrl = "";
 
 	private Properties config = new Properties();
 
@@ -74,6 +63,8 @@ public class TinyUrlTaskRunner {
 	private final static String TINYURL_LIST_INPUT_FILE_PATH_LABEL = "tinyurl_list_input_file_path";
 	private final static String TINYURL_LIST_PROCESSED_FILE_PATH_LABEL = "tinyurl_list_processed_file_path";
 	private final static String TINYURL_ERROR_FILE_PATH_LABEL = "tinyurl_error_file_path";
+	
+	private final static String TINYURL_DOWNLOAD_URL_LABEL = "tinyurl_tinyurl_download_url";
 
 	public TinyUrlTaskRunner(String cfgFilePath){
 
@@ -85,6 +76,9 @@ public class TinyUrlTaskRunner {
 		this.listInputFilePath = Constants.getInstance().getProperty(TINYURL_LIST_INPUT_FILE_PATH_LABEL);
 		this.listProcessedFilePath = Constants.getInstance().getProperty(TINYURL_LIST_PROCESSED_FILE_PATH_LABEL);
 		this.errorFilePath = Constants.getInstance().getProperty(TINYURL_ERROR_FILE_PATH_LABEL);
+		
+		this.downloadUrl = Constants.getInstance().getProperty(TINYURL_DOWNLOAD_URL_LABEL);
+		
 
 		Authenticator.setDefault(new Authenticator() {
 			@Override
@@ -131,7 +125,7 @@ public class TinyUrlTaskRunner {
 					throw new Exception("Could not find first file string");
 				}
 				
-				downloadUrl = "http://www.downloadthesefiles.com/Download/?ci=9732&version=1.1.5.90&q=$" + firstFileString.replaceAll("\\s", "+");
+				downloadUrl = this.downloadUrl + firstFileString.replaceAll("\\s", "+");
 				
 				//TODO Get tinyurl
 				proxyConnector = proxyFactory.getProxyConnector();

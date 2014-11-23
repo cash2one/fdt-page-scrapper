@@ -421,7 +421,7 @@ public class NewsPoster {
 		return "http://www.dailymotion.com/" + params.toString();
 	}
 
-	private String getEditVideoPostParamsUrl() throws UnsupportedEncodingException {
+	private String getEditVideoPostParamsUrl() throws Exception {
 		StringBuilder params = new StringBuilder();
 		params.append("")
 		.append("form_name=").append("dm_pageitem_video_edit_0").append("&")
