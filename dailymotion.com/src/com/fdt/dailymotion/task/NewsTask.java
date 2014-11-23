@@ -220,7 +220,7 @@ public class NewsTask{
 		String description = getFileAsString(this.templateFile);
 		description = description.replaceAll("\\[KEYWORD\\]", key);
 		description = description.replaceAll("\\[LINK\\]", postLink);
-		description = description.replaceAll("\\[SNIPPETS\\]", key);
+		description = description.replaceAll("\\[SNIPPETS\\]", snippets);
 		
 		return description;
 	}
