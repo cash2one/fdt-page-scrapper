@@ -125,7 +125,7 @@ public class TinyUrlTaskRunner {
 					throw new Exception("Could not find first file string");
 				}
 				
-				downloadUrl = this.downloadUrl + firstFileString.replaceAll("\\s", "+");
+				downloadUrl = this.downloadUrl + firstFileString.replaceAll("[\\.\\]\\[\\)\\(,+!#]*", "").trim().replaceAll("\\s", "+");
 				
 				//TODO Get tinyurl
 				proxyConnector = proxyFactory.getProxyConnector();
