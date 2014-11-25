@@ -61,7 +61,7 @@ public class NewsTask{
 
 			String line;
 			while( (line = br.readLine()) != null){
-				fileAsStr.append(line);
+				fileAsStr.append(line).append(LINE_FEED);
 				if(!"".equals(line)){
 					lineIndex++;
 					switch(lineIndex){
@@ -102,7 +102,7 @@ public class NewsTask{
 	}
 	
 	private void loadImage(String fileContent) throws Exception{
-		Pattern imgPattern =Pattern.compile("((http://)?(www.)?([\\.a-z0-9/\\-]+(jpg|png)))");
+		Pattern imgPattern =Pattern.compile("((http://)?(www.)?([\\.\\,\\-\\_@/a-zA-Z0-9]+(jpg|png)))");
 		Matcher matcher = imgPattern.matcher(fileContent);
 		if(matcher.find()){
 			log.debug("Image found: " + matcher.group(1));
@@ -130,7 +130,8 @@ public class NewsTask{
 	}
 
 	private void extractPostLink(String fileContent) throws Exception{
-		Pattern imgPattern =Pattern.compile("href=\"((http(s)?://)?(www.)?([\\.a-z0-9/\\-]+))\"");
+		//Pattern imgPattern =Pattern.compile("href=\"((http(s)?://)?(www.)?([\\.a-z0-9/\\-]+))\"");
+		Pattern imgPattern =Pattern.compile("(http://tinyurl.com/([a-z0-9]+))");
 		Matcher matcher = imgPattern.matcher(fileContent);
 		if(matcher.find()){
 			log.debug("Link found: " + matcher.group(1));
