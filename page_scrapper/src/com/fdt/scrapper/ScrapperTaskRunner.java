@@ -30,6 +30,10 @@ public class ScrapperTaskRunner {
 	private long proxyDelay;
 	private String resultFile;
 	private boolean scrapResultViaProxy;
+	
+	private SaverThread saver;
+	
+	private TaskFactory taskFactory;
 
 	//private ArrayList<Thread> threads = new ArrayList<Thread>();
 
@@ -65,10 +69,13 @@ public class ScrapperTaskRunner {
 	public void run(){
 		synchronized (this) {
 			TaskFactory.MAX_THREAD_COUNT = maxThreadCount;
-			TaskFactory taskFactory = TaskFactory.getInstance();
+			taskFactory = TaskFactory.getInstance();
 			taskFactory.clear();
 			//taskFactory.loadTaskQueue(urlsFilePath);
 			taskFactory.loadTaskQueue(urlsFilePath);
+			
+			saver = new SaverThread(taskFactory, this.resultFile);
+			saver.start();
 
 			if(scrapResultViaProxy){
 				ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
@@ -118,71 +125,8 @@ public class ScrapperTaskRunner {
 				}
 			}
 			
-			BufferedWriter bufferedWriter = null;
-
-			//save success tasks
-			try {
-				log.debug("Starting saving success results...");
-				//Construct the BufferedWriter object
-				bufferedWriter = new BufferedWriter(new FileWriter(resultFile,false));
-				for(PageTasks tasks : taskFactory.getResultQueue()){
-					bufferedWriter.write(tasks.toCsv());
-					bufferedWriter.newLine();
-				}
-				log.debug("Success results was saved successfully.");
-
-			} catch (FileNotFoundException ex) {
-				log.error("Error occured during saving sucess result",ex);
-			} catch (IOException ex) {
-				log.error("Error occured during saving sucess result",ex);
-			} finally {
-				//Close the BufferedWriter
-				try {
-					if (bufferedWriter != null) {
-						bufferedWriter.flush();
-						bufferedWriter.close();
-					}
-				} catch (IOException ex) {
-					log.error("Error occured during closing output streams during saving success results",ex);
-				}
-			}
-
-			//save success tasks
-			try {
-				//Construct the BufferedWriter object
-				log.debug("Starting saving error results...");
-				bufferedWriter = new BufferedWriter(new FileWriter("../errors_links.txt",false));
-				for(PageTasks tasks : taskFactory.getErrorQueue()){
-					String domainName = tasks.getDomain().getName();
-					for(int i = 0; i < tasks.getDomain().getCount(); i++){
-						bufferedWriter.write("http://" + domainName + "/");
-						bufferedWriter.newLine();
-					}
-					domainName = "." + domainName;
-					for(int i = 0; i < tasks.getDomain().getSubDomainsList().size(); i++){
-						String subDomain = tasks.getDomain().getSubDomainsList().get(i).getName();
-						for(int j = 0; j < tasks.getDomain().getSubDomainCount(subDomain); j++){
-							bufferedWriter.write(subDomain + domainName);
-							bufferedWriter.newLine();
-						}
-					}
-				}
-				log.debug("Error results was saved successfully.");
-			} catch (FileNotFoundException ex) {
-				log.error("Error occured during saving error results",ex);
-			} catch (IOException ex) {
-				log.error("Error occured during saving error results",ex);
-			} finally {
-				//Close the BufferedWriter
-				try {
-					if (bufferedWriter != null) {
-						bufferedWriter.flush();
-						bufferedWriter.close();
-					}
-				} catch (IOException ex) {
-					log.error("Error occured during closing output streams during saving error results",ex);
-				}
-			}
+			saver.interrupt();			
+			
 		}
 	}
 }
