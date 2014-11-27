@@ -71,6 +71,7 @@ public class SaverThreadPS extends Thread
 						if (bufferedWriter != null) {
 							bufferedWriter.flush();
 							bufferedWriter.close();
+							bufferedWriter = null;
 						}
 					} catch (IOException ex) {
 						log.error("Error occured during closing output streams during saving success results",ex);
@@ -111,6 +112,7 @@ public class SaverThreadPS extends Thread
 						if (bufferedWriter != null) {
 							bufferedWriter.flush();
 							bufferedWriter.close();
+							bufferedWriter = null;
 						}
 					} catch (IOException ex) {
 						log.error("Error occured during closing output streams during saving error results",ex);

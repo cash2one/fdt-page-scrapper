@@ -1,9 +1,6 @@
 package com.fdt.scrapper;
 
-import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.File;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import java.util.ArrayList;
@@ -75,7 +72,8 @@ public class ScrapperTaskRunner {
 			taskFactory = TaskFactory.getInstance();
 			taskFactory.clear();
 			//taskFactory.loadTaskQueue(urlsFilePath);
-			if(appendToPrevResult){
+			File resultFileFile = new File(resultFile);
+			if(appendToPrevResult && resultFileFile.exists()){
 				taskFactory.loadTaskQueue(urlsFilePath, resultFile);
 			}else{
 				taskFactory.loadTaskQueue(urlsFilePath, null);
