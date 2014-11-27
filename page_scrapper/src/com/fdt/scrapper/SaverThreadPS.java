@@ -15,9 +15,9 @@ import com.fdt.scrapper.task.PageTasks;
  * @author Administrator
  *
  */
-public class SaverThread extends Thread
+public class SaverThreadPS extends Thread
 {
-	private static final Logger log = Logger.getLogger(SaverThread.class);
+	private static final Logger log = Logger.getLogger(SaverThreadPS.class);
 
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
 
@@ -28,7 +28,7 @@ public class SaverThread extends Thread
 	
 	private boolean save;
 	
-	public SaverThread(TaskFactory taskFactory, String resultFile, boolean appendToPrevResult) {
+	public SaverThreadPS(TaskFactory taskFactory, String resultFile, boolean appendToPrevResult) {
 		super();
 		this.taskFactory = taskFactory;
 		this.resultFile = resultFile;

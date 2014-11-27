@@ -33,7 +33,7 @@ public class ScrapperTaskRunner {
 	
 	private boolean appendToPrevResult = false;
 	
-	private SaverThread saver;
+	private SaverThreadPS saver;
 	
 	private TaskFactory taskFactory;
 
@@ -81,7 +81,7 @@ public class ScrapperTaskRunner {
 				taskFactory.loadTaskQueue(urlsFilePath, null);
 			}
 			
-			saver = new SaverThread(taskFactory, this.resultFile, this.appendToPrevResult);
+			saver = new SaverThreadPS(taskFactory, this.resultFile, this.appendToPrevResult);
 			saver.start();
 
 			if(scrapResultViaProxy){
