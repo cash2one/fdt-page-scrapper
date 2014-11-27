@@ -31,19 +31,22 @@ public class ScrapperTaskRunner {
 	private String resultFile;
 	private boolean scrapResultViaProxy;
 	
+	private boolean appendToPrevResult = false;
+	
 	private SaverThread saver;
 	
 	private TaskFactory taskFactory;
 
 	//private ArrayList<Thread> threads = new ArrayList<Thread>();
 
-	public ScrapperTaskRunner(final String login, final char[] pass, String proxyFilePath, String urlsFilePath, int maxThreadCount, long proxyDelay, String resultFile, boolean scrapResultViaProxy){
+	public ScrapperTaskRunner(final String login, final char[] pass, String proxyFilePath, String urlsFilePath, int maxThreadCount, long proxyDelay, String resultFile, boolean scrapResultViaProxy, boolean appendToPrevResult){
 		this.proxyFilePath = proxyFilePath;
 		this.urlsFilePath = urlsFilePath;
 		this.maxThreadCount = maxThreadCount;
 		this.proxyDelay = proxyDelay;
 		this.resultFile = resultFile;
 		this.scrapResultViaProxy = scrapResultViaProxy;
+		this.appendToPrevResult = appendToPrevResult;
 		Authenticator.setDefault(new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
@@ -54,7 +57,7 @@ public class ScrapperTaskRunner {
 
 	public static void main(String[] args) {
 		try{
-			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("EUR102217", "J8Fjh5TN5H".toCharArray(),"proxy.txt","links_small.txt", 1, 5000L, "success_result.csv", true);
+			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("EUR102217", "J8Fjh5TN5H".toCharArray(),"proxy.txt","links_small.txt", 1, 5000L, "success_result.csv", true, true);
 			taskRunner.run();
 
 			ResultParser rp = new ResultParser();
@@ -72,9 +75,13 @@ public class ScrapperTaskRunner {
 			taskFactory = TaskFactory.getInstance();
 			taskFactory.clear();
 			//taskFactory.loadTaskQueue(urlsFilePath);
-			taskFactory.loadTaskQueue(urlsFilePath);
+			if(appendToPrevResult){
+				taskFactory.loadTaskQueue(urlsFilePath, resultFile);
+			}else{
+				taskFactory.loadTaskQueue(urlsFilePath, null);
+			}
 			
-			saver = new SaverThread(taskFactory, this.resultFile);
+			saver = new SaverThread(taskFactory, this.resultFile, this.appendToPrevResult);
 			saver.start();
 
 			if(scrapResultViaProxy){
@@ -125,7 +132,13 @@ public class ScrapperTaskRunner {
 				}
 			}
 			
-			saver.interrupt();			
+			saver.interrupt();	
+			try {
+				saver.join();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			
 		}
 	}

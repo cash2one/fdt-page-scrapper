@@ -13,6 +13,7 @@ import java.util.regex.Pattern;
 import org.apache.log4j.Logger;
 
 import com.fdt.scrapper.task.PageTasks;
+import com.fdt.scrapper.util.ResultParser;
 
 public class TaskFactory {
 
@@ -129,8 +130,28 @@ public class TaskFactory {
 		return taskQueue.isEmpty();
 	}
 
-	public void loadTaskQueue(String pathToTaskList) {
+	public void loadTaskQueue(String pathToTaskList, String successResultFile) {
+		
+		ResultParser resultParser = null;
+		ArrayList<PageTasks> successResult = new ArrayList<PageTasks>();
+		
+		if(successResultFile != null && !"".equals(successResultFile.trim())){
+			resultParser = new ResultParser();
+			successResult = resultParser.parseResultFile(successResultFile);
+		}
+		
 		HashMap<String, Domain> domainList = loadDomainsList(pathToTaskList);
+		
+		//filter domainList
+		if(successResult.size() > 0){
+			for(PageTasks task : successResult){
+				String key = task.getDomain().getName();
+				if(domainList.containsKey(key)){
+					domainList.remove(key);
+				}
+			}
+		}
+		
 		fillTaskQueue(domainList);
 		domainList.clear();
 	}
@@ -209,10 +230,12 @@ public class TaskFactory {
 		return domainList;
 	}
 
-	private synchronized void fillTaskQueue(HashMap<String, Domain> domainList){
+	private synchronized ArrayList<PageTasks> fillTaskQueue(HashMap<String, Domain> domainList){
 		for(Domain domain : domainList.values()){
 			taskQueue.add(new PageTasks(domain));
 		}
+		
+		return taskQueue;
 	}
 
 	public synchronized ArrayList<PageTasks> getTaskQueue() {

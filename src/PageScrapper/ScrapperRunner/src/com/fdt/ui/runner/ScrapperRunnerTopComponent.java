@@ -83,6 +83,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
         jLabel6 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
         jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
 
         jFileChooser2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -140,6 +141,13 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
 
         org.openide.awt.Mnemonics.setLocalizedText(jCheckBox1, org.openide.util.NbBundle.getMessage(ScrapperRunnerTopComponent.class, "ScrapperRunnerTopComponent.jCheckBox1.text")); // NOI18N
 
+        org.openide.awt.Mnemonics.setLocalizedText(jCheckBox2, org.openide.util.NbBundle.getMessage(ScrapperRunnerTopComponent.class, "ScrapperRunnerTopComponent.jCheckBox2.text")); // NOI18N
+        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -168,7 +176,10 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
                             .addComponent(jLabel6))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox1)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jCheckBox1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox2))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 429, Short.MAX_VALUE)
                                 .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -196,7 +207,9 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
                     .addComponent(jLabel6)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckBox1)
+                    .addComponent(jCheckBox2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 6, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -261,6 +274,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
         String urlsFilePath = jTextField1.getText();
         String proxyFilePath = jTextField2.getText();
         boolean scrapResultFromInternet = jCheckBox1.isSelected();
+        boolean scrapResultAppendToPrevResult = jCheckBox2.isSelected();
 
         int maxThreadCount = 100;
         fieldValue = jTextField3.getText();
@@ -286,7 +300,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
         }
         //TODO Start scrapper
         try {
-            ScrapperTaskRunner taskRunner = new ScrapperTaskRunner(login, pass, proxyFilePath, urlsFilePath, maxThreadCount, proxyDelay, "../success_result.csv",scrapResultFromInternet);
+            ScrapperTaskRunner taskRunner = new ScrapperTaskRunner(login, pass, proxyFilePath, urlsFilePath, maxThreadCount, proxyDelay, "../success_result.csv",scrapResultFromInternet, scrapResultAppendToPrevResult);
             taskRunner.run();
         } catch (Throwable e) {
             log.error("Error occured during page scrap",e);
@@ -298,9 +312,14 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField4ActionPerformed
 
+    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox2ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JFileChooser jFileChooser2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
