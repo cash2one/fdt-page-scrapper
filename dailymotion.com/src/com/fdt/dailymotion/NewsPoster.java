@@ -208,7 +208,7 @@ public class NewsPoster {
 
 	private String editVideoDescription() throws Exception{
 		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
-				"/pageitem/video/edit?request=%2F&loop=0";
+				"/pageitem/video/edit?request=/&loop=0";
 
 		//post news
 		URL url = new URL(postUrl);
@@ -245,6 +245,8 @@ public class NewsPoster {
 		//log.debug(responseStr.toString());
 
 		conn.disconnect();
+		
+		Thread.sleep(10000L);
 
 		String videoUrl = "http://www.dailymotion.com" + executerequestToGetCookies("http://www.dailymotion.com/ajax/video", "POST", new VideoUrlExtractor(), getAjaxVideoParamStringForUrl());
 		if( !videoUrl.contains("/video/")){
