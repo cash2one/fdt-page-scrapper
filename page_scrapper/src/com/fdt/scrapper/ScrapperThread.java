@@ -60,7 +60,8 @@ public class ScrapperThread extends Thread{
 					}
 				}
 				if(!errorExist){
-				    	taskFactory.putTaskInSuccessQueue(tasks);
+					log.debug("putTaskInSuccessQueue: " + tasks);	
+				    taskFactory.putTaskInSuccessQueue(tasks);
 				}
 			} finally {
 				taskFactory.decRunThreadsCount(tasks);

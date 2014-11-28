@@ -8,14 +8,17 @@ import com.fdt.scrapper.ScrapperTaskRunner;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import javax.swing.JFileChooser;
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.netbeans.api.settings.ConvertAsProperties;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
+import org.openide.util.Exceptions;
 import org.openide.windows.TopComponent;
 import org.openide.util.NbBundle.Messages;
 
@@ -293,9 +296,13 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
         String extension = ".csv";
         File resultFile = new File(resultFileName+extension);
         if(resultFile.exists()){
-            resultFile.renameTo(new File(resultFileName + "_" + now(DATE_FORMAT) +extension ));
+            try {
+                FileUtils.copyFile(resultFile, new File(resultFileName + "_" + now(DATE_FORMAT) +extension));
+            } catch (IOException e) {
+                log.error("Error occured during copy result file",e);
+            }
         }
-        if(resultFile.exists()){
+        if(resultFile.exists() && !scrapResultAppendToPrevResult){
             resultFile.delete();
         }
         //TODO Start scrapper

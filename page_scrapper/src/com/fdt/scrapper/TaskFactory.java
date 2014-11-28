@@ -130,7 +130,7 @@ public class TaskFactory {
 		return taskQueue.isEmpty();
 	}
 
-	public void loadTaskQueue(String pathToTaskList, String successResultFile) {
+	public synchronized void loadTaskQueue(String pathToTaskList, String successResultFile) {
 		
 		ResultParser resultParser = null;
 		ArrayList<PageTasks> successResult = new ArrayList<PageTasks>();
@@ -143,6 +143,7 @@ public class TaskFactory {
 		HashMap<String, Domain> domainList = loadDomainsList(pathToTaskList);
 		
 		//filter domainList
+		log.debug("Skipped task count:" + successResult.size());
 		if(successResult.size() > 0){
 			for(PageTasks task : successResult){
 				String key = task.getDomain().getName();
@@ -152,6 +153,7 @@ public class TaskFactory {
 			}
 		}
 		
+		log.debug("Task for execution count:" + domainList.size());
 		fillTaskQueue(domainList);
 		domainList.clear();
 	}

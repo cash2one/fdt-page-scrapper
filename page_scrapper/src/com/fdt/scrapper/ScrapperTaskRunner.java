@@ -73,13 +73,15 @@ public class ScrapperTaskRunner {
 			taskFactory.clear();
 			//taskFactory.loadTaskQueue(urlsFilePath);
 			File resultFileFile = new File(resultFile);
+			
+			log.debug("Append to previous result: " + appendToPrevResult);
 			if(appendToPrevResult && resultFileFile.exists()){
 				taskFactory.loadTaskQueue(urlsFilePath, resultFile);
 			}else{
 				taskFactory.loadTaskQueue(urlsFilePath, null);
 			}
 			
-			saver = new SaverThreadPS(taskFactory, this.resultFile, this.appendToPrevResult);
+			saver = new SaverThreadPS(taskFactory, this.resultFile);
 			saver.start();
 
 			if(scrapResultViaProxy){
@@ -101,6 +103,7 @@ public class ScrapperTaskRunner {
 					}
 					else{
 						try {
+							log.debug("Waiting...");
 							this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
 						} catch (InterruptedException e) {
 							log.error("InterruptedException occured during RequestRunner process: ",e);

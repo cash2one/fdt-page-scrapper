@@ -19,20 +19,17 @@ public class SaverThreadPS extends Thread
 {
 	private static final Logger log = Logger.getLogger(SaverThreadPS.class);
 
-	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
+	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 2000L;
 
 	private TaskFactory taskFactory;
 	private String resultFile;
 	
-	private boolean appendToPrevResult;
-	
 	private boolean save;
 	
-	public SaverThreadPS(TaskFactory taskFactory, String resultFile, boolean appendToPrevResult) {
+	public SaverThreadPS(TaskFactory taskFactory, String resultFile) {
 		super();
 		this.taskFactory = taskFactory;
 		this.resultFile = resultFile;
-		this.appendToPrevResult = appendToPrevResult;
 	}
 
 	@Override
@@ -47,18 +44,21 @@ public class SaverThreadPS extends Thread
 				BufferedWriter bufferedWriter = null;
 
 				//save success tasks
+				log.debug("Success tasks: "+taskFactory.getResultQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
 				try {
 					if(taskFactory.getResultQueue().size() > 0){
 						log.debug("Starting saving success results...");
 						//Construct the BufferedWriter object
-						bufferedWriter = new BufferedWriter(new FileWriter(resultFile,appendToPrevResult));
-
+						bufferedWriter = new BufferedWriter(new FileWriter(resultFile,true));
+						int savedCount = 0;
 						for(int i = 0; i < taskFactory.getResultQueue().size(); i++){
 							PageTasks task = taskFactory.getResultQueue().remove(0);
 							bufferedWriter.write(task.toCsv());
 							bufferedWriter.newLine();
+							savedCount++;
 						}
-						log.debug("Success results was saved successfully.");
+						
+						log.debug("Success results was saved successfully. Saved: " + savedCount);
 					}
 
 				} catch (FileNotFoundException ex) {
@@ -79,11 +79,13 @@ public class SaverThreadPS extends Thread
 				}
 
 				//save error tasks
+				log.debug("Success tasks: "+taskFactory.getResultQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
 				try {
 					//Construct the BufferedWriter object
 					if(taskFactory.getErrorQueue().size() > 0){
 						log.debug("Starting saving error results...");
-						bufferedWriter = new BufferedWriter(new FileWriter("../errors_links.txt",appendToPrevResult));
+						bufferedWriter = new BufferedWriter(new FileWriter("../errors_links.txt",true));
+						int savedCount = 0;
 						for(int j = 0; j < taskFactory.getErrorQueue().size(); j++){
 							PageTasks task =taskFactory.getErrorQueue().remove(0);
 							String domainName = task.getDomain().getName();
@@ -99,8 +101,9 @@ public class SaverThreadPS extends Thread
 									bufferedWriter.newLine();
 								}
 							}
+							savedCount++;
 						}
-						log.debug("Error results was saved successfully.");
+						log.debug("Error results was saved successfully. Saved: " + savedCount);
 					}
 				} catch (FileNotFoundException ex) {
 					log.error("Error occured during saving error results",ex);
@@ -131,7 +134,9 @@ public class SaverThreadPS extends Thread
 					break;
 				}else{
 					if(isInterrupted()){
+						log.debug("save = " + save);
 						save = true;
+						log.debug("save = " + save + "; go to the last cycle");
 					}
 				}
 			}
