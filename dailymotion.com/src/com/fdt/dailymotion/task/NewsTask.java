@@ -186,6 +186,9 @@ public class NewsTask{
 	}
 
 	public void setSnippets(String snippets) {
+		//Delete external url
+		snippets = snippets.replaceAll("(https?:\\/\\/)?(www\\.)?([\\w\\.]+)(\\.[a-zA-Z]{2,6})(\\/[\\w\\.]*)*\\/?", "");
+		
 		this.snippets = snippets;
 	}
 

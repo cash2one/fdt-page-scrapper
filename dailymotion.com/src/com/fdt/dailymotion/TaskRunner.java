@@ -225,6 +225,8 @@ public class TaskRunner {
 				}
 			}
 		}
+		
+		deleteAllVideoFiles();
 
 		//TODO Copy account list file
 		File accountFile = new File(accListFilePath);
@@ -238,6 +240,7 @@ public class TaskRunner {
 		if(task != null ){
 			if(task.getVideoFile() != null){
 				try {
+					log.debug("Delete video file: " + task.getVideoFile().getName());
 					task.getVideoFile().delete();
 				} catch (Exception e1) {
 					log.error(e1);
@@ -246,10 +249,24 @@ public class TaskRunner {
 
 			if(task.getVideoFileWOAudio() != null){
 				try {
+					log.debug("Delete video file: " + task.getVideoFileWOAudio().getName());
 					task.getVideoFileWOAudio().delete();
 				} catch (Exception e1) {
 					log.error(e1);
 				}
+			}
+		}
+	}
+
+	private void deleteAllVideoFiles(){
+		File outputFolder = new File("output_video");
+		for(File file: outputFolder.listFiles()){
+			try {
+				log.debug("Delete video file: " + file.getName());
+				file.delete();
+			}
+			catch (Exception e1) {
+				log.error(e1);
 			}
 		}
 	}
