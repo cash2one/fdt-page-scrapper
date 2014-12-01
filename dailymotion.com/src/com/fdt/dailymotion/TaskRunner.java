@@ -53,7 +53,7 @@ public class TaskRunner {
 	private String listInputFilePath;
 	private String listProcessedFilePath;
 	private String errorFilePath;
-	
+
 	private String templateFilePath;
 
 	private String linkListFilePath;
@@ -75,7 +75,7 @@ public class TaskRunner {
 
 	private final static String LINK_LIST_FILE_PATH_LABEL = "link_list_file_path";
 	private final static String LINK_TITLE_LIST_FILE_PATH_LABEL = "link_title_list_file_path";
-	
+
 	private final static String CONTENT_TEMPLATE_FILE_PATH_LABEL = "content_template_file_path";
 
 	private static final String MAX_SNIPPET_COUNT_LABEL = "MAX_SNIPPET_COUNT";
@@ -101,7 +101,7 @@ public class TaskRunner {
 		this.listInputFilePath = Constants.getInstance().getProperty(LIST_INPUT_FILE_PATH_LABEL);
 		this.listProcessedFilePath = Constants.getInstance().getProperty(LIST_PROCESSED_FILE_PATH_LABEL);
 		this.errorFilePath = Constants.getInstance().getProperty(ERROR_FILE_PATH_LABEL);
-		
+
 		this.templateFilePath = Constants.getInstance().getProperty(CONTENT_TEMPLATE_FILE_PATH_LABEL);
 
 		this.linkListFilePath = Constants.getInstance().getProperty(LINK_LIST_FILE_PATH_LABEL);
@@ -154,7 +154,7 @@ public class TaskRunner {
 
 		File linkList = new File(linkListFilePath);
 		File linkTitleList = new File(linkTitleListFilePath);
-		
+
 		File templateFile = new File(templateFilePath);
 
 		int postPerAccount = MIN_POST_PER_ACCOUNT + rnd.nextInt(MAX_POST_PER_ACCOUNT - MIN_POST_PER_ACCOUNT+1);
@@ -166,9 +166,10 @@ public class TaskRunner {
 			{
 				if(postedNewPerAccount < postPerAccount && accountFactory.getAccounts().size() > 0)
 				{
+					NewsTask task = null;
 					try {
 						postedNewPerAccount++;
-						NewsTask task = new NewsTask(file, templateFile);
+						task = new NewsTask(file, templateFile);
 						SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
 
 						//create video
@@ -211,6 +212,9 @@ public class TaskRunner {
 						}
 						log.error("Error during execution: ", e);
 					}
+					finally{
+						deleteVideoFile(task);
+					}
 				}else{
 					if(accountFactory.getAccounts().size() > 0){
 						accountFactory.getAccounts().remove(0);
@@ -228,6 +232,26 @@ public class TaskRunner {
 
 		//Save unused account if they was not used
 		saveUnusedAccounts(accountFactory.getAccounts());
+	}
+
+	private void deleteVideoFile(NewsTask task){
+		if(task != null ){
+			if(task.getVideoFile() != null){
+				try {
+					task.getVideoFile().delete();
+				} catch (Exception e1) {
+					log.error(e1);
+				}
+			}
+
+			if(task.getVideoFileWOAudio() != null){
+				try {
+					task.getVideoFileWOAudio().delete();
+				} catch (Exception e1) {
+					log.error(e1);
+				}
+			}
+		}
 	}
 
 	private ArrayList<Snippet> getRandSnippets(List<Snippet> snippets, SnippetExtractor snpExtr){
@@ -359,7 +383,7 @@ public class TaskRunner {
 		}
 		return linkList;
 	}
-	
+
 	private void appendStringToFile(String str, File file) {
 		BufferedWriter bufferedWriter = null;
 		try {
