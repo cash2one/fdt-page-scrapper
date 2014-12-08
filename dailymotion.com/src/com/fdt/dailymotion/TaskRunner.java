@@ -141,7 +141,7 @@ public class TaskRunner {
 	}
 
 
-	public void runUploader(){
+	public void runUploader() throws Exception{
 		ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
 		ProxyFactory proxyFactory = ProxyFactory.getInstance();
 		proxyFactory.init(proxyFilePath);
@@ -200,7 +200,7 @@ public class TaskRunner {
 							destFile.delete();
 						}
 						FileUtils.moveFile(task.getInputFileName(), destFile);
-					}  catch (Exception e) {
+					}  catch (Throwable e) {
 						try {
 							File destFile = new File(errorFilePath + "/" + file.getName());
 							if(destFile.exists()){

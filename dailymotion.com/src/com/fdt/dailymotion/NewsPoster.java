@@ -91,7 +91,7 @@ public class NewsPoster {
 		if(cookies.get("X-Json") != null)
 		{
 			StringBuilder strBuild = new StringBuilder(cookies.get("X-Json").toString());
-			strBuild.setLength(180);
+			strBuild.setLength(strBuild.indexOf("DM_Widget_PageItem_Upload_File.statusPending")-5);
 			uploadLink = strBuild.substring(49).replace("\\", "");
 			task.setUploadUrl(uploadLink);
 			log.info("Upload URL: " + uploadLink);

@@ -41,7 +41,7 @@ public class AccountFactory
 		this.proxyFactory = proxy;
 	}
 
-	public void fillAccounts(String accListFilePath){
+	public void fillAccounts(String accListFilePath) throws Exception{
 		//read account list
 		FileReader fr = null;
 		BufferedReader br = null;
@@ -135,12 +135,9 @@ public class AccountFactory
 			for(Account account : accountToRemove){
 				accounts.remove(account.getLogin());
 			}
-		} catch (ClientProtocolException e) {
+		} catch (Exception e) {
 			log.error("Error during filling account from list and getting cookies for account",e);
-		} catch (IOException e) {
-			log.error("Error during filling account from list and getting cookies for account",e);
-		} catch (XPathExpressionException e) {
-			log.error("Error during filling account from list and getting cookies for account",e);
+			throw e;
 		}
 	}
 
