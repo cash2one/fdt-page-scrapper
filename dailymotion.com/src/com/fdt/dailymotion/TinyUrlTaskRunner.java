@@ -1,32 +1,19 @@
 package com.fdt.dailymotion;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStreamWriter;
 import java.net.Authenticator;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.PasswordAuthentication;
-import java.net.Proxy;
-import java.net.URL;
-import java.net.URLEncoder;
-import java.text.ParseException;
 import java.util.Properties;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
-import org.htmlcleaner.HtmlCleaner;
-import org.htmlcleaner.TagNode;
-import org.htmlcleaner.XPatherException;
 
+import com.fdt.dailymotion.task.TinyUrlTask;
+import com.fdt.dailymotion.task.TinyUrlTaskFactory;
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
 
@@ -48,10 +35,8 @@ public class TinyUrlTaskRunner {
 	private String listInputFilePath;
 	private String listProcessedFilePath;
 	private String errorFilePath;
-	
-	private String firstFileString = "";
-	
-	private String downloadUrl = "";
+
+	private int maxThreadCount;
 
 	private Properties config = new Properties();
 
@@ -60,11 +45,15 @@ public class TinyUrlTaskRunner {
 	private final static String PROXY_LIST_FILE_PATH_LABEL = "proxy_list_file_path";
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
 
+	private final static String MAX_THREAD_TINY_URL_COUNT_LABEL = "max_thread_tiny_url_count";
+
 	private final static String TINYURL_LIST_INPUT_FILE_PATH_LABEL = "tinyurl_list_input_file_path";
 	private final static String TINYURL_LIST_PROCESSED_FILE_PATH_LABEL = "tinyurl_list_processed_file_path";
 	private final static String TINYURL_ERROR_FILE_PATH_LABEL = "tinyurl_error_file_path";
-	
+
 	private final static String TINYURL_DOWNLOAD_URL_LABEL = "tinyurl_tinyurl_download_url";
+
+	private TinyUrlTaskFactory taskFactory;
 
 	public TinyUrlTaskRunner(String cfgFilePath){
 
@@ -76,9 +65,10 @@ public class TinyUrlTaskRunner {
 		this.listInputFilePath = Constants.getInstance().getProperty(TINYURL_LIST_INPUT_FILE_PATH_LABEL);
 		this.listProcessedFilePath = Constants.getInstance().getProperty(TINYURL_LIST_PROCESSED_FILE_PATH_LABEL);
 		this.errorFilePath = Constants.getInstance().getProperty(TINYURL_ERROR_FILE_PATH_LABEL);
-		
-		this.downloadUrl = Constants.getInstance().getProperty(TINYURL_DOWNLOAD_URL_LABEL);
-		
+
+		this.taskFactory = TinyUrlTaskFactory.getInstance();
+
+		this.maxThreadCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_TINY_URL_COUNT_LABEL));
 
 		Authenticator.setDefault(new Authenticator() {
 			@Override
@@ -104,59 +94,39 @@ public class TinyUrlTaskRunner {
 	}
 
 
-	public void runTinyUrlReplacer(){
+	public void runTinyUrlReplacer() throws Exception{
+
+		File rootInputFiles = new File(listInputFilePath);
+
 		ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
 		ProxyFactory proxyFactory = ProxyFactory.getInstance();
 		proxyFactory.init(proxyFilePath);
 
-		File rootInputFiles = new File(listInputFilePath);
-		
-		String downloadUrl = "";
-		
-		ProxyConnector proxyConnector = null;
+		TinyUrlTaskFactory.setMAX_THREAD_COUNT(maxThreadCount);
+		taskFactory = TinyUrlTaskFactory.getInstance();
+		taskFactory.clear();
+		//taskFactory.loadTaskQueue(urlsFilePath);
+		taskFactory.fillTaskQueue(rootInputFiles.listFiles());
 
-		for(File file : rootInputFiles.listFiles())
-		{
-			String fileAsStr;
-			try {
-				fileAsStr = getFileAsString(file);
-				
-				if( this.firstFileString == null || "".equals(firstFileString.trim()) ){
-					throw new Exception("Could not find first file string");
-				}
-				
-				downloadUrl = this.downloadUrl + firstFileString.replaceAll("[\\.\\]\\[\\)\\(,+!#]*", "").trim().replaceAll("\\s", "+");
-				
-				//TODO Get tinyurl
-				proxyConnector = proxyFactory.getProxyConnector();
-				String tinyUrl = getTinyUrl(downloadUrl, proxyConnector.getConnect());
-				
-				fileAsStr = fileAsStr.replaceAll("\\[KEYWORD\\]", tinyUrl);
-				
-				appendStringToFile(fileAsStr, file);
-				
-				//Move file to processed folder
-				File destFile = new File(listProcessedFilePath + "/" + file.getName());
-				if(destFile.exists()){
-					destFile.delete();
-				}
-				FileUtils.moveFile(file, destFile);
-			} catch (Exception e) {
-				try {
-					File destFile = new File(errorFilePath + "/" + file.getName());
-					if(destFile.exists()){
-						destFile.delete();
-					}
-					FileUtils.moveFile(file, destFile);
-				} catch (IOException e1) {
-					log.error(e1);
-				}
-				log.error("Error during execution: ", e);
+		TinyUrlThread newThread = null;
+		log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
+
+		//TaskFactory.setMAX_THREAD_COUNT(1);
+		while( !taskFactory.isTaskFactoryEmpty() || taskFactory.getRunThreadsCount() > 0){
+			log.debug("Try to get request from RequestFactory queue.");
+
+			TinyUrlTask task = taskFactory.getTask();
+			log.debug("Task: " + task);
+			if(task != null){
+				log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
+				newThread = new TinyUrlThread(task, taskFactory, proxyFactory, listProcessedFilePath);
+				newThread.start();
+				continue;
 			}
-			finally{
-				if(proxyConnector != null){
-					proxyFactory.releaseProxy(proxyConnector);
-				}
+			try {
+				this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
+			} catch (InterruptedException e) {
+				log.error("InterruptedException occured during RequestRunner process",e);
 			}
 		}
 	}
@@ -177,111 +147,6 @@ public class TinyUrlTaskRunner {
 				} catch (Throwable e) {
 					log.warn("Error while initializtion", e);
 				}
-			}
-		}
-	}
-
-	private void appendStringToFile(String str, File file) {
-		BufferedWriter bufferedWriter = null;
-		try {
-			//Construct the BufferedWriter object
-			bufferedWriter = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(file), "UTF8"));
-			bufferedWriter.append(str);
-			bufferedWriter.newLine();
-		} catch (FileNotFoundException ex) {
-			log.error("Error during saving string to file",ex);
-		} catch (IOException ex) {
-			log.error("Error during saving string to file",ex);
-		} finally {
-			//Close the BufferedWriter
-			try {
-				if (bufferedWriter != null) {
-					bufferedWriter.flush();
-					bufferedWriter.close();
-				}
-			} catch (IOException ex) {
-				log.error("Error during closing output stream",ex);
-			}
-		}
-	}
-	
-	private String getFileAsString(File file) throws Exception{
-		//read account list
-		FileReader fr = null;
-		BufferedReader br = null;
-		boolean isFirstLineSaved = false;
-		
-		this.firstFileString = "";
-		
-		StringBuilder fileAsStr = new StringBuilder();
-		
-		try {
-			fr = new FileReader(file);
-			br = new BufferedReader(fr);
-
-			String line;
-			while( (line = br.readLine()) != null){
-				if(!isFirstLineSaved){
-					firstFileString = line;
-					isFirstLineSaved = true;
-				}
-				fileAsStr.append(line).append(LINE_FEED);
-			}
-		}
-		finally {
-			try {
-				if(br != null)
-					br.close();
-			} catch (Throwable e) {
-				log.warn("Error while initializtion", e);
-			}
-			try {
-				if(fr != null)
-					fr.close();
-			} catch (Throwable e) {
-				log.warn("Error while initializtion", e);
-			}
-		}
-		
-		return fileAsStr.toString();
-	}
-	
-	private String getTinyUrl(String downloadUrl, Proxy proxy) throws MalformedURLException, IOException, ParseException, XPatherException {
-		HttpURLConnection conn = null;
-		InputStream is = null;
-		System.out.println("Using proxy: " + proxy.toString());
-		try{
-			String strUrl = "http://tinyurl.com/create.php?source=indexpage&url="+URLEncoder.encode(downloadUrl,"UTF-8")+"&alias=";
-			URL url = new URL(strUrl);
-			System.out.println(strUrl);
-			//using proxy
-			conn = (HttpURLConnection)url.openConnection(proxy);
-			conn.setConnectTimeout(30000);
-			conn.setDoInput(true);
-			conn.setDoOutput(false);
-
-			HtmlCleaner cleaner = new HtmlCleaner();
-
-			is = conn.getInputStream();
-
-			String encoding = conn.getContentEncoding();
-
-			InputStream inputStreamPage = null;
-
-			TagNode html = null;
-		
-			html = cleaner.clean(is,"UTF-8");
-			
-			String tinyUrl = ((String)html.evaluateXPath("//blockquote/small/a/@href")[0]);
-			//int code = conn.getResponseCode();
-			return tinyUrl;
-		}finally{
-			if(conn != null){
-				try{conn.disconnect();}catch(Throwable e){}
-			}
-			if(is != null){
-				try{is.close();}catch(Throwable e){}
 			}
 		}
 	}

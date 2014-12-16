@@ -50,6 +50,8 @@ public class TaskRunner {
 	private String accListFilePath;
 	private long proxyDelay;
 
+	private boolean addAudioToFile;
+
 	private String listInputFilePath;
 	private String listProcessedFilePath;
 	private String errorFilePath;
@@ -68,6 +70,7 @@ public class TaskRunner {
 	private final static String PROXY_LIST_FILE_PATH_LABEL = "proxy_list_file_path";
 	private final static String ACCOUNTS_LIST_FILE_PATH_LABEL = "account_list_file_path";
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
+	private final static String ADD_AUDIO_TO_VIDEO_FILE_LABEL = "add_audio_to_video_file";
 
 	private final static String LIST_INPUT_FILE_PATH_LABEL = "list_input_file_path";
 	private final static String LIST_PROCESSED_FILE_PATH_LABEL = "list_processed_file_path";
@@ -97,6 +100,7 @@ public class TaskRunner {
 		this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 		this.accListFilePath = Constants.getInstance().getProperty(ACCOUNTS_LIST_FILE_PATH_LABEL);
 		this.proxyDelay = Integer.valueOf(Constants.getInstance().getProperty(PROXY_DELAY_LABEL));
+		this.addAudioToFile = Boolean.valueOf(Constants.getInstance().getProperty(ADD_AUDIO_TO_VIDEO_FILE_LABEL));
 
 		this.listInputFilePath = Constants.getInstance().getProperty(LIST_INPUT_FILE_PATH_LABEL);
 		this.listProcessedFilePath = Constants.getInstance().getProperty(LIST_PROCESSED_FILE_PATH_LABEL);
@@ -173,7 +177,7 @@ public class TaskRunner {
 						SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
 
 						//create video
-						createVideo(task);
+						createVideo(task, this.addAudioToFile);
 
 						//TODO Add Snippet task chooser
 						ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
@@ -225,7 +229,7 @@ public class TaskRunner {
 				}
 			}
 		}
-		
+
 		deleteAllVideoFiles();
 
 		//TODO Copy account list file
@@ -299,21 +303,25 @@ public class TaskRunner {
 		return rndSnipList;
 	}
 
-	private void createVideo(NewsTask task) throws Exception{
+	private void createVideo(NewsTask task, boolean addAudioToFile) throws Exception{
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 
 		VideoCreator.makeVideo(task.getVideoFileWOAudio().getPath(), task.getImageFile());
 
-		MediaLocator ivml = JpegImagesToMovie.createMediaLocator(task.getVideoFileWOAudio().getPath());
-		MediaLocator iaml = JpegImagesToMovie.createMediaLocator("08.wav");
-		MediaLocator ovml = JpegImagesToMovie.createMediaLocator(task.getVideoFile().getPath());
+		if(addAudioToFile){
+			MediaLocator ivml = JpegImagesToMovie.createMediaLocator(task.getVideoFileWOAudio().getPath());
+			MediaLocator iaml = JpegImagesToMovie.createMediaLocator("08.wav");
+			MediaLocator ovml = JpegImagesToMovie.createMediaLocator(task.getVideoFile().getPath());
 
-		avMerger.mergeFiles(ivml, iaml, ovml);
+			avMerger.mergeFiles(ivml, iaml, ovml);
 
-		avMerger = null;
-		ivml = null;
-		iaml = null;
-		ovml = null;
+			avMerger = null;
+			ivml = null;
+			iaml = null;
+			ovml = null;
+		}else{
+			task.setVideoFile(task.getVideoFileWOAudio());
+		}
 	}
 
 	private void saveUnusedAccounts(List<Account> accounts){

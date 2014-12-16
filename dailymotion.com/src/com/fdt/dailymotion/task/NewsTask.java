@@ -129,6 +129,10 @@ public class NewsTask{
 		return videoFileWOAudio;
 	}
 
+	public void setVideoFile(File videoFile) {
+		this.videoFile = videoFile;
+	}
+
 	private void extractPostLink(String fileContent) throws Exception{
 		//Pattern imgPattern =Pattern.compile("href=\"((http(s)?://)?(www.)?([\\.a-z0-9/\\-]+))\"");
 		Pattern imgPattern =Pattern.compile("(http://tinyurl.com/([a-z0-9]+))");
