@@ -36,7 +36,7 @@ public class TinyUrlTaskRunner {
 	private String listProcessedFilePath;
 	private String errorFilePath;
 
-	private int maxThreadCount;
+	private int maxThreadTinyUrlCount;
 
 	private Properties config = new Properties();
 
@@ -50,8 +50,6 @@ public class TinyUrlTaskRunner {
 	private final static String TINYURL_LIST_INPUT_FILE_PATH_LABEL = "tinyurl_list_input_file_path";
 	private final static String TINYURL_LIST_PROCESSED_FILE_PATH_LABEL = "tinyurl_list_processed_file_path";
 	private final static String TINYURL_ERROR_FILE_PATH_LABEL = "tinyurl_error_file_path";
-
-	private final static String TINYURL_DOWNLOAD_URL_LABEL = "tinyurl_tinyurl_download_url";
 
 	private TinyUrlTaskFactory taskFactory;
 
@@ -68,7 +66,7 @@ public class TinyUrlTaskRunner {
 
 		this.taskFactory = TinyUrlTaskFactory.getInstance();
 
-		this.maxThreadCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_TINY_URL_COUNT_LABEL));
+		this.maxThreadTinyUrlCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_TINY_URL_COUNT_LABEL));
 
 		Authenticator.setDefault(new Authenticator() {
 			@Override
@@ -96,37 +94,39 @@ public class TinyUrlTaskRunner {
 
 	public void runTinyUrlReplacer() throws Exception{
 
-		File rootInputFiles = new File(listInputFilePath);
+		synchronized(this){
+			File rootInputFiles = new File(listInputFilePath);
 
-		ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
-		ProxyFactory proxyFactory = ProxyFactory.getInstance();
-		proxyFactory.init(proxyFilePath);
+			ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
+			ProxyFactory proxyFactory = ProxyFactory.getInstance();
+			proxyFactory.init(proxyFilePath);
 
-		TinyUrlTaskFactory.setMAX_THREAD_COUNT(maxThreadCount);
-		taskFactory = TinyUrlTaskFactory.getInstance();
-		taskFactory.clear();
-		//taskFactory.loadTaskQueue(urlsFilePath);
-		taskFactory.fillTaskQueue(rootInputFiles.listFiles());
+			TinyUrlTaskFactory.setMAX_THREAD_COUNT(maxThreadTinyUrlCount);
+			taskFactory = TinyUrlTaskFactory.getInstance();
+			taskFactory.clear();
+			//taskFactory.loadTaskQueue(urlsFilePath);
+			taskFactory.fillTaskQueue(rootInputFiles.listFiles());
 
-		TinyUrlThread newThread = null;
-		log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
+			TinyUrlThread newThread = null;
+			log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
 
-		//TaskFactory.setMAX_THREAD_COUNT(1);
-		while( !taskFactory.isTaskFactoryEmpty() || taskFactory.getRunThreadsCount() > 0){
-			log.debug("Try to get request from RequestFactory queue.");
+			//TaskFactory.setMAX_THREAD_COUNT(1);
+			while( !taskFactory.isTaskFactoryEmpty() || taskFactory.getRunThreadsCount() > 0){
+				log.debug("Try to get request from RequestFactory queue.");
 
-			TinyUrlTask task = taskFactory.getTask();
-			log.debug("Task: " + task);
-			if(task != null){
-				log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
-				newThread = new TinyUrlThread(task, taskFactory, proxyFactory, listProcessedFilePath);
-				newThread.start();
-				continue;
-			}
-			try {
-				this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
-			} catch (InterruptedException e) {
-				log.error("InterruptedException occured during RequestRunner process",e);
+				TinyUrlTask task = taskFactory.getTask();
+				log.debug("Task: " + task);
+				if(task != null){
+					log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
+					newThread = new TinyUrlThread(task, taskFactory, proxyFactory, listProcessedFilePath);
+					newThread.start();
+					continue;
+				}
+				try {
+					this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
+				} catch (InterruptedException e) {
+					log.error("InterruptedException occured during RequestRunner process",e);
+				}
 			}
 		}
 	}

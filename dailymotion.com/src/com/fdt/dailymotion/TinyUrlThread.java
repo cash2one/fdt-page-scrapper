@@ -32,6 +32,8 @@ public class TinyUrlThread extends Thread{
 	private static final Logger log = Logger.getLogger(TinyUrlThread.class);
 	
 	private static final String LINE_FEED = "\r\n";
+	
+	private final static String TINYURL_DOWNLOAD_URL_LABEL = "tinyurl_tinyurl_download_url";
 
 	private TinyUrlTask task;
 	private TinyUrlTaskFactory taskFactory;
@@ -47,6 +49,7 @@ public class TinyUrlThread extends Thread{
 		this.taskFactory = taskFactory;
 		this.proxyFactory = proxyFactory;
 		this.listProcessedFilePath = listProcessedFilePath;
+		this.downloadUrl = Constants.getInstance().getProperty(TINYURL_DOWNLOAD_URL_LABEL);
 	}
 
 	@Override

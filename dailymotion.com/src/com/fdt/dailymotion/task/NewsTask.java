@@ -102,7 +102,7 @@ public class NewsTask{
 	}
 	
 	private void loadImage(String fileContent) throws Exception{
-		Pattern imgPattern =Pattern.compile("((http://)?(www.)?([\\.\\,\\-\\_@/a-zA-Z0-9]+(jpg|png)))");
+		Pattern imgPattern =Pattern.compile("((http://)?(www.)?([\\.\\,\\-\\_\\+\\(\\)@/a-zA-Z0-9]+(jpg|png)))");
 		Matcher matcher = imgPattern.matcher(fileContent);
 		if(matcher.find()){
 			log.debug("Image found: " + matcher.group(1));
