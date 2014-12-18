@@ -62,6 +62,8 @@ public class AccountFactory
 				if(line.contains(";")){
 					String[] account = line.trim().split(";");
 					accounts.put(account[2], new Account(account[0],account[2],account[1]));
+					newsPostedCount.put(account[2],0);
+					accountUsedInThreadCount.put(account[2],0);
 				}
 				line = br.readLine();
 			}

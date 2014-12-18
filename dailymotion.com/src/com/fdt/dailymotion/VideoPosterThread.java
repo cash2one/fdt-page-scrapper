@@ -146,16 +146,12 @@ public class VideoPosterThread extends Thread{
 
 				}
 				if(!errorExist){
-					if(!task.isResultEmpty()){
-						taskFactory.putTaskInSuccessQueue(task);
-						accountFactory.incrementPostedCounter(account);
-					}else{
-						taskFactory.reprocessingTask(task);
-						accountFactory.releaseAccount(account);
-					}
+					taskFactory.putTaskInSuccessQueue(task);
+					accountFactory.incrementPostedCounter(account);
 				}else{
-					accountFactory.releaseAccount(account);
+					taskFactory.reprocessingTask(task);
 				}
+				accountFactory.releaseAccount(account);
 			} finally {
 				taskFactory.decRunThreadsCount(task);
 			}
