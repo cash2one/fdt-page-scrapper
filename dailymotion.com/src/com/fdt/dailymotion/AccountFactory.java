@@ -13,13 +13,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.xml.xpath.XPathExpressionException;
-
 import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
 
@@ -29,16 +27,25 @@ import com.fdt.scrapper.proxy.ProxyFactory;
 public class AccountFactory
 {
 	private static final Logger log = Logger.getLogger(AccountFactory.class);
-	private ArrayList<Account> accounts = new ArrayList<Account>();
+	private HashMap<String, Account> accounts = new HashMap<String, Account>();
+	//count of posted news for each account
+	private HashMap<String, Integer> newsPostedCount = new HashMap<String, Integer>();
+	//count of thread where accounts are used
+	private HashMap<String, Integer> accountUsedInThreadCount = new HashMap<String, Integer>();
 
 	public final static String MAIN_URL_LABEL = "main_url";
 	private final static String LOGIN_URL_LABEL = "login_url";
+
+	private final static String NEWS_PER_ACCOUNT_LABEL = "news_per_account";
+
+	private static int NEWS_PER_ACCOUNT = 200;
 
 	private ProxyFactory proxyFactory = null;
 
 	public AccountFactory(ProxyFactory proxy){
 		super();
 		this.proxyFactory = proxy;
+		NEWS_PER_ACCOUNT = Integer.valueOf(Constants.getInstance().getProperty(NEWS_PER_ACCOUNT_LABEL));
 	}
 
 	public void fillAccounts(String accListFilePath) throws Exception{
@@ -54,7 +61,7 @@ public class AccountFactory
 				//parse proxy adress
 				if(line.contains(";")){
 					String[] account = line.trim().split(";");
-					accounts.add(new Account(account[0],account[2],account[1]));
+					accounts.put(account[2], new Account(account[0],account[2],account[1]));
 				}
 				line = br.readLine();
 			}
@@ -80,7 +87,7 @@ public class AccountFactory
 		try {
 			ArrayList<Account> accountToRemove = new ArrayList<Account>();
 			ProxyConnector proxy = proxyFactory.getProxyConnector();
-			for(Account account : accounts){
+			for(Account account : accounts.values()){
 				String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL);
 				URL url = new URL(postUrl);
 				HttpURLConnection.setFollowRedirects(false);
@@ -127,19 +134,70 @@ public class AccountFactory
 						account.addCookie(singleCookei[0].trim(), singleCookei[1].trim());
 					}
 				}
-				
+
 				conn.disconnect();
 			}
 			proxyFactory.releaseProxy(proxy);
 
 			for(Account account : accountToRemove){
 				accounts.remove(account.getLogin());
+				newsPostedCount.remove(account.getLogin());
+				accountUsedInThreadCount.remove(account.getLogin());
 			}
 		} catch (Exception e) {
 			log.error("Error during filling account from list and getting cookies for account",e);
 			throw e;
 		}
 	}
+
+	public synchronized Account getAccount(){
+		for(String login : accountUsedInThreadCount.keySet()){
+			int runningCount = accountUsedInThreadCount.get(login);
+			int postedCount = newsPostedCount.get(login);
+			if( runningCount < (NEWS_PER_ACCOUNT-postedCount)){
+				int currentCount = accountUsedInThreadCount.get(login);
+				accountUsedInThreadCount.put(login, ++currentCount);
+				log.debug("Used account size incremented: " + currentCount);
+				return accounts.get(login);
+			}
+		}
+		return null;
+	}
+
+	/**
+	 * Increment news counter for success news posting and decrement accountUsedInThreadCount.
+	 * 
+	 * @param account
+	 */
+	public synchronized void incrementPostedCounter(Account account){
+		Integer count = newsPostedCount.get(account.getLogin());
+		count++;
+		newsPostedCount.put(account.getLogin(), count);
+		log.debug("Posted account news incremented: " + count);
+		releaseAccount(account);
+	}
+
+	/**
+	 * Release account using
+	 * @param account
+	 */
+	public synchronized void releaseAccount(Account account){
+		int count = accountUsedInThreadCount.get(account.getLogin());
+		count--;
+		accountUsedInThreadCount.put(account.getLogin(), count);
+		log.debug("Used account size decremented: " + count);
+	}
+
+	/*	public synchronized boolean isCanGetNewAccounts(){
+		for(String login : accountUsedInThreadCount.keySet()){
+			int runningCount = accountUsedInThreadCount.get(login);
+			int postedCount = newsPostedCount.get(login);
+			if( runningCount < (NEWS_PER_ACCOUNT-postedCount)){
+				return true;
+			}
+		}
+		return false;
+	}*/
 
 	private String getQuery(List<NameValuePair> params) throws UnsupportedEncodingException
 	{
@@ -161,7 +219,7 @@ public class AccountFactory
 		return result.toString();
 	}
 	
-	public ArrayList<Account> getAccounts(){
+	public HashMap<String, Account> getAccounts(){
 		return accounts;
 	}
 }

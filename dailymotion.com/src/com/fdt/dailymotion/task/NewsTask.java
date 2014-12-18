@@ -44,10 +44,9 @@ public class NewsTask{
 		this.inputFile = inputFileName;
 		this.templateFile = templateFile;
 		//TODO Read and parse file
-		parseFile();
 	}
 
-	private void parseFile() throws Exception{
+	public void parseFile() throws Exception{
 		//read account list
 		FileReader fr = null;
 		BufferedReader br = null;

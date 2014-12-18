@@ -142,11 +142,7 @@ public class TaskFactory {
 		return taskQueue.isEmpty();
 	}
 
-	public void loadTaskQueue(ArrayList<File> fileList, File templateFile) throws Exception {
-		fillTaskQueue(fileList,templateFile);
-	}
-
-	private synchronized void fillTaskQueue(ArrayList<File> fileList, File templateFile) throws Exception{
+	public synchronized void fillTaskQueue(File[] fileList, File templateFile) throws Exception{
 		for(File file : fileList){
 			taskQueue.add(new NewsTask(file, templateFile));
 		}
