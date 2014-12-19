@@ -111,7 +111,7 @@ public class VideoPosterThread extends Thread{
 					}
 					task.setSnippets(snippetsStr.toString());
 
-					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getProxyConnector().getConnect(), accountFactory.getAccounts().get(0));
+					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getProxyConnector().getConnect(), this.account);
 					String linkToVideo = nPoster.executePostNews();
 					appendStringToFile(linkToVideo, linkList);
 					appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
@@ -126,15 +126,18 @@ public class VideoPosterThread extends Thread{
 				}
 				catch (Throwable e) {
 					errorExist = true;
-					taskFactory.reprocessingTask(task);
-					try {
-						File destFile = new File(errorFilePath + "/" + task.getInputFileName().getName());
-						if(destFile.exists()){
-							destFile.delete();
+					boolean reprocessed = taskFactory.reprocessingTask(task);
+
+					if(!reprocessed){
+						try {
+							File destFile = new File(errorFilePath + "/" + task.getInputFileName().getName());
+							if(destFile.exists()){
+								destFile.delete();
+							}
+							FileUtils.moveFile(task.getInputFileName(), destFile);
+						} catch (IOException e1) {
+							log.error(e1);
 						}
-						FileUtils.moveFile(task.getInputFileName(), destFile);
-					} catch (IOException e1) {
-						log.error(e1);
 					}
 					log.error("Error occured during process task: " + task.toString(), e);
 				}finally{
@@ -148,8 +151,6 @@ public class VideoPosterThread extends Thread{
 				if(!errorExist){
 					taskFactory.putTaskInSuccessQueue(task);
 					accountFactory.incrementPostedCounter(account);
-				}else{
-					taskFactory.reprocessingTask(task);
 				}
 				accountFactory.releaseAccount(account);
 			} finally {

@@ -164,10 +164,12 @@ public class VideoTaskRunner {
 
 					log.debug("Try to get request from RequestFactory queue.");
 					log.debug("Account: " + account);
-					if(account != null){
+					if(account != null)
+					{
 						NewsTask task = taskFactory.getTask();
-						log.debug("Task: " + task);
+						
 						if(task != null){
+							log.debug("Task. File name: " + task.getInputFileName().getName());
 							log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
 							newThread = new VideoPosterThread(
 									task, 
