@@ -99,7 +99,7 @@ uint8_t symbolRusHeartSmall[7] = {48,72,36,18,36,72,48};
 uint8_t symbolRusChristmasTree[7] = {1,11,95,255,95,11,1};
 
 //Снежинки
-uint8_t symbolShowFlake[12] = {1,1,1,1,1,1,1,1,1,1,1,1};
+uint8_t symbolShowFlake[12] = {16,128,8,32,4,16,1,64,2,16,4,32};
 
 
 
@@ -205,7 +205,7 @@ uint8_t frameMapping[12][16] = {{0,	1,	2,	3,	4,	5,	6,	7,	8,	9,	10,	11,	12,	13,	1
 			  {160,	161,	162,	163,	164,	165,	166,	167,	168,	169,	170,	171,	172,	173,	174,	175},
 			  {191,	190,	189,	188,	187,	186,	185,	184,	183,	182,	181,	180,	179,	178,	177,	176}};
 			  
-uint8_t snowFlakeColor[12] = {255,255,255,255,255,255,255,255,255,255,255,255};
+int snowFlakeColor[12] = {255,255,255,255,255,255,255,255,255,255,255,255};
 
 // IMPORTANT: To reduce NeoPixel burnout risk, add 1000 uF capacitor across
 // pixel power leads, add 300 - 500 Ohm resistor on first pixel's data input
@@ -234,7 +234,7 @@ void loop() {
 
   //rainbow(10);
   //theaterChaseRainbow(50);
-  frameCycle(1);
+  frameCycle(50);
 }
 
 int getPixelNumber(uint8_t x, uint8_t y){
@@ -430,44 +430,66 @@ void printSnowFlakeToShowMatrix(struct alfabetEntry wrkAE){
   int shift = SHOW_MATRIX_LENGHT/2 - wrkAE.lenght/2;
   
   int color = 0;
+  int colorSecond = 0;
 
   for(i = 0; i < wrkAE.lenght; i++){
   
     color = strip.Color(snowFlakeColor[i],snowFlakeColor[i],snowFlakeColor[i]);
+    colorSecond = strip.Color(255-snowFlakeColor[i],255-snowFlakeColor[i],255-snowFlakeColor[i]);
     
     if((128 & wrkAE.alfabetMatrix[i])){
       strip.setPixelColor(getPixelNumber(i + shift + shiftX,0 + shiftY), color);
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX,0 + shiftY+1), colorSecond);
     }
 
     if((64 & wrkAE.alfabetMatrix[i])){
       strip.setPixelColor(getPixelNumber(i + shift + shiftX, 1 + shiftY), color);
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX, 1 + shiftY+1), colorSecond);
     }
     
     if((32 & wrkAE.alfabetMatrix[i])){
       strip.setPixelColor(getPixelNumber(i + shift + shiftX ,2 + shiftY), color);
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX, 2 + shiftY+1), colorSecond);
     }
     
     if((16 & wrkAE.alfabetMatrix[i])){
       strip.setPixelColor(getPixelNumber(i + shift + shiftX ,3 + shiftY), color);
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX, 3 + shiftY+1), colorSecond);
     }
     
     if((8 & wrkAE.alfabetMatrix[i])){
       strip.setPixelColor(getPixelNumber(i + shift + shiftX ,4 + shiftY), color);
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX, 4 + shiftY+1), colorSecond);
     }
     
     if((4 & wrkAE.alfabetMatrix[i])){
       strip.setPixelColor(getPixelNumber(i + shift + shiftX ,5 + shiftY), color);
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX, 5 + shiftY+1), colorSecond);
     }
     
     if((2 & wrkAE.alfabetMatrix[i])){
       strip.setPixelColor(getPixelNumber(i + shift + shiftX ,6 + shiftY), color);
+      strip.setPixelColor(getPixelNumber(i + shift + shiftX, 6 + shiftY+1), colorSecond);
     }
     
     if((1 & wrkAE.alfabetMatrix[i])){
+      if(snowFlakeColor[i] < 255){
+        strip.setPixelColor(getPixelNumber(i + shift + shiftX ,0 + shiftY), colorSecond);
+      }
       strip.setPixelColor(getPixelNumber(i + shift + shiftX ,7 + shiftY), color);
     }
-	
-	strip.setPixelColor(getPixelNumber(i + shift + shiftX,0 + shiftY+1), 255-color);
+    
+    if(snowFlakeColor[i] < 10){
+      snowFlakeColor[i] = 255;
+      if(wrkAE.alfabetMatrix[i] / 2 == 0){
+        wrkAE.alfabetMatrix[i] = 128;
+      }else{
+        wrkAE.alfabetMatrix[i] = wrkAE.alfabetMatrix[i] / 2;
+      }
+    }
+    else{
+      snowFlakeColor[i] = snowFlakeColor[i] - 10;
+    }
   }
 }
 
@@ -517,19 +539,22 @@ void frameCycle(uint8_t wait) {
     //печатаем буквы
     if(j % 1 == 0){     
 	//flashing
-	nextFlashingStep();
-	
-        if(heartFlashNeed){
+        zeroingShwMtrx();
+	//nextFlashingStep();
+        printSnowFlakeToShowMatrix(entrySnowFlake);
+        printCharToShowMatrixWithColor(entryTreeBig, strip.Color(0, 255, 0));	
+
+        /*if(heartFlashNeed){
             if(j % 1 == 0){
               zeroingShwMtrx();
-			  printSnowFlakeToShowMatrix(entrySnowFlake);
+	      printSnowFlakeToShowMatrix(entrySnowFlake);
               printCharToShowMatrixWithColor(entryTreeBig, strip.Color(0, 255, 0));
               //printCharToShowMatrixWithColor(entryHeartBig, strip.Color(curSymbolBrightness, 0, 0));
               delay(10);
             }	
         }else{
             printShowMatrix(2,2,strip.Color(curSymbolBrightness, 0, 0));
-        }
+        }*/
     }
     
     if(j % 6 == 0){
