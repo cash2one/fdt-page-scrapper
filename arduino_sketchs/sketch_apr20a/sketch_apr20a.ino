@@ -148,10 +148,10 @@ alfabetEntry alfabetList[] = {entrySpace, entryA, entryB, entryV, entryG, entryD
 uint8_t alfabetListLenght = 37;
 
 //ВЕРОНИКА 
-char workString[] = "\u0412\u0415\u0420\u041e\u041d\u0418\u041a\u0410 \u0410\u0411\u0412\u0413\u0414\u0415\u0401\u0416\u0417\u0418\u0419\u041a\u041b\u041c\u041d\u041e\u041f\u0420\u0421\u0422\u0423\u0424\u0425\u0426\u0427\u0428\u0429\u042a\u042b\u042c\u042d\u042e\u042f";
+char workString[] = "\u0412\u0415\u0420\u041e\u041d\u0418\u041a\u0410 \u0412\u042b\u0425\u041e\u0414\u0418 \u0417\u0410 \u041c\u0415\u041d\u042f \u0417\u0410\u041c\u0423\u0416";
 int curCharIndex = 0;
 int curCharPartIndex = 0;
-int stringSize = 18;
+int stringSize = 60;
 
 //disappearance block
 int curSymbolBrightness = 0;
