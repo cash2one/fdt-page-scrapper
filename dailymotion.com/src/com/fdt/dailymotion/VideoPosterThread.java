@@ -151,8 +151,9 @@ public class VideoPosterThread extends Thread{
 				if(!errorExist){
 					taskFactory.putTaskInSuccessQueue(task);
 					accountFactory.incrementPostedCounter(account);
+				}else{
+					accountFactory.releaseAccount(account);
 				}
-				accountFactory.releaseAccount(account);
 			} finally {
 				taskFactory.decRunThreadsCount(task);
 			}

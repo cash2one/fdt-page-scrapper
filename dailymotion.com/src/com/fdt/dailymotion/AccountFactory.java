@@ -175,6 +175,9 @@ public class AccountFactory
 		Integer count = newsPostedCount.get(account.getLogin());
 		count++;
 		newsPostedCount.put(account.getLogin(), count);
+		if(count == NEWS_PER_ACCOUNT){
+			accounts.remove(account.getLogin());
+		}
 		log.debug("Posted account news incremented: " + count);
 		releaseAccount(account);
 	}
