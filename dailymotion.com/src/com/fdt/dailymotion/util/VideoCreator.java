@@ -3,6 +3,7 @@ package com.fdt.dailymotion.util;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.util.Random;
 import java.util.Vector;
 
 import javax.media.MediaLocator;
@@ -31,7 +32,10 @@ public class VideoCreator {
 	public static void makeVideo(String fileName, File imageFile) throws IOException {
 	    Vector<String> imgLst = new Vector<String>();
 	    
-	    for(int i = 0; i < 100; i++){
+	    Random rnd = new Random();
+	    int frameCount = (rnd.nextInt(12) + 18)*100;
+	    
+	    for(int i = 0; i < frameCount; i++){
 	    	imgLst.add(imageFile.getAbsolutePath());
 	    }
 	    

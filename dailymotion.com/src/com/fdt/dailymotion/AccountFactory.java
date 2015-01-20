@@ -122,8 +122,8 @@ public class AccountFactory
 
 				// Execute HTTP Post Request
 				Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
-				if(cookies.get("Set-Cookie") != null && cookies.get("Set-Cookie").toString().contains("notexists")){
-					log.error("Account doesn't exist: \""+ account.getLogin() + "\". Please check email and password.");
+				if(cookies.get("Set-Cookie") == null || (cookies.get("Set-Cookie") != null && cookies.get("Set-Cookie").toString().contains("notexists"))){
+					log.error("Can't getting cookies for account.Account doesn't exist: \""+ account.getLogin() + "\" or banned, or error occured during login. Please check email and password.");
 					accountToRemove.add(account);
 					continue;
 				}
