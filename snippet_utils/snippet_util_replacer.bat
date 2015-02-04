@@ -1,0 +1,1 @@
+java -cp deploy/snippet_utils.jar com.fdt.snippetutils.AnchorTitleReplacer cfg_anchor_replacer.ini
