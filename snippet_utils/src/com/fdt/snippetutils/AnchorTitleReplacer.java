@@ -69,6 +69,7 @@ public class AnchorTitleReplacer {
 			}
 
 		}catch(Exception e){
+			e.printStackTrace();
 			System.exit(-1);
 		}
 	}
@@ -89,20 +90,21 @@ public class AnchorTitleReplacer {
 	private void execute() throws IOException{
 
 		ArrayList<String> lines= readFile(this.anchorFilePath);
+		ArrayList<String> titles = readTitlesFile(this.titlesFilePath);
 		
 		for(int i = 0; i < this.repeatCount; i++){
 			lines= readFile(this.anchorFilePath);
-			loop(lines);
+			loop(lines, titles);
 		}
 	}
 	
-	private void loop(ArrayList<String> lines) throws IOException{
+	private void loop(ArrayList<String> lines, ArrayList<String> titles) throws IOException{
 		ArrayList<String> rndLines4Process;
 		
 		while(lines.size() > 0){
 			rndLines4Process = getRndLines(lines);
 			//TODO Process links and save to file
-			
+			processLines(rndLines4Process, titles);
 			//Save file
 			File fileToSave = new File(outputPath, String.valueOf(System.currentTimeMillis())+rndLines4Process.hashCode());
 			appendLinesToFile(rndLines4Process, fileToSave);
@@ -123,8 +125,25 @@ public class AnchorTitleReplacer {
 		
 		return rndLines4Process;
 	}
+	
+	private ArrayList<String> processLines(ArrayList<String> input, ArrayList<String> titles){
+		ArrayList<String> output = new ArrayList<String>();
+		
+		for(String line:input){
+			for(String title:titles){
+				if(line.matches("(.*)\\/\"\\>" + title + "\\<\\/a\\>(.*)")){
+					System.out.println("Mached");
+					//TODO Rand select string for replacment
+					//TODO Substring Name
+					//TODO Insert new title
+				}
+			}
+		}
+		
+		return output;
+	}
 
-	private static ArrayList<String> readFile(String filePath) throws IOException{
+	private ArrayList<String> readFile(String filePath) throws IOException{
 
 		FileReader fr = null;
 		BufferedReader br = null;
@@ -156,6 +175,18 @@ public class AnchorTitleReplacer {
 
 		return fileTitleList;
 	} 
+	
+	private ArrayList<String> readTitlesFile(String filePath) throws IOException{
+
+		ArrayList<String> titles = readFile(this.titlesFilePath);
+		
+		for(int i = 0; i < titles.size(); i++){
+			titles.set(i, titles.get(i).replaceAll("\\[Book\\]", "(.*)"));
+			
+		}
+		
+		return titles;
+	}
 
 	private static void appendLinesToFile(ArrayList<String> lines, File file) throws IOException {
 		if(file.exists()){
