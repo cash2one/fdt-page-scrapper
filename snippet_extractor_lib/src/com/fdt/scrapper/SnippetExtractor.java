@@ -309,7 +309,7 @@ public class SnippetExtractor {
 				String h3Value = ((TagNode)titles[i]).getText().toString();
 				String pValue = ((TagNode)descs[i]).getText().toString();
 				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim())){
-					snippets.add(new Snippet(h3Value, pValue));
+					snippets.add(new Snippet(h3Value.replaceAll("\\.\\.\\.", "").trim(), pValue.replaceAll("\\.\\.\\.", "").trim()));
 				}
 			}
 		}
