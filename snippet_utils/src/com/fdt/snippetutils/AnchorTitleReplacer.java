@@ -11,6 +11,8 @@ import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import com.fdt.scrapper.task.ConfigManager;
 
@@ -18,7 +20,7 @@ public class AnchorTitleReplacer {
 
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
 	private final static String PROXY_PASS_LABEL = "proxy_pass";
-	
+
 	private final static String MAX_LINE_COUNT_LABEL = "max_line_count";
 	private final static String MIN_LINE_COUNT_LABEL = "min_line_count";
 
@@ -31,7 +33,7 @@ public class AnchorTitleReplacer {
 
 	private String anchorFilePath;
 	private String outputPath;
-	
+
 	private int maxLineCount = 7;
 	private int minLineCount = 3;
 
@@ -81,65 +83,95 @@ public class AnchorTitleReplacer {
 		this.titlesFilePath = ConfigManager.getInstance().getProperty(TITLES_FILE_PATH_LABEL);
 		this.isDeleteUsedLine = Boolean.parseBoolean(ConfigManager.getInstance().getProperty(IS_DELETE_USED_LINE_LABEL));
 		this.repeatCount = Integer.parseInt(ConfigManager.getInstance().getProperty(REPEAT_COUNT_LABEL));
-		
+
 		this.maxLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MAX_LINE_COUNT_LABEL));
 		this.minLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MIN_LINE_COUNT_LABEL));
-		
+
 	}
 
 	private void execute() throws IOException{
 
 		ArrayList<String> lines= readFile(this.anchorFilePath);
 		ArrayList<String> titles = readTitlesFile(this.titlesFilePath);
-		
+
 		for(int i = 0; i < this.repeatCount; i++){
 			lines= readFile(this.anchorFilePath);
 			loop(lines, titles);
 		}
 	}
-	
+
 	private void loop(ArrayList<String> lines, ArrayList<String> titles) throws IOException{
 		ArrayList<String> rndLines4Process;
-		
+		ArrayList<String> rndLinesProcessed;
+
 		while(lines.size() > 0){
 			rndLines4Process = getRndLines(lines);
 			//TODO Process links and save to file
-			processLines(rndLines4Process, titles);
+			rndLinesProcessed = processLines(rndLines4Process, titles);
 			//Save file
 			File fileToSave = new File(outputPath, String.valueOf(System.currentTimeMillis())+rndLines4Process.hashCode());
-			appendLinesToFile(rndLines4Process, fileToSave);
+			appendLinesToFile(rndLinesProcessed, fileToSave);
 		}
 	}
-	
+
 	private ArrayList<String> getRndLines(ArrayList<String> lines){
 		Random rnd = new Random();
 		int rndLnCount = minLineCount + rnd.nextInt(maxLineCount-minLineCount + 1);
 
 		ArrayList<String> rndLines4Process = new ArrayList<String>();
-		
+
 		for(int i = 0; i < rndLnCount; i++){
 			if(lines.size() > 0){
 				rndLines4Process.add(lines.remove(rnd.nextInt(lines.size())));
 			}
 		}
-		
+
 		return rndLines4Process;
 	}
-	
+
 	private ArrayList<String> processLines(ArrayList<String> input, ArrayList<String> titles){
 		ArrayList<String> output = new ArrayList<String>();
-		
+		Random rnd = new Random();
+
+		String fullTitle;
+		String bookName;
+		String newTitle;
+		String newLine;
+
 		for(String line:input){
-			for(String title:titles){
-				if(line.matches("(.*)\\/\"\\>" + title + "\\<\\/a\\>(.*)")){
+			for(String title:titles)
+			{
+				String patternStr = "(.*)\\/\"\\>(" + title + ")\\<\\/a\\>(.*)";
+
+				if(line.matches(patternStr))
+				{
 					System.out.println("Mached");
-					//TODO Rand select string for replacment
-					//TODO Substring Name
-					//TODO Insert new title
+
+					//Substring Name
+					if(rnd.nextInt(3) < 2){
+						Pattern pattern = Pattern.compile(patternStr);
+						Matcher matcher = pattern.matcher(line);
+						if (matcher.find()){
+							fullTitle = matcher.group(2).trim();
+							System.out.println("Full title: " + fullTitle);
+							bookName = matcher.group(3).trim();
+							System.out.println("Book name: " + bookName);
+							newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
+							newLine = line.replace(fullTitle, newTitle);
+							output.add(newLine);
+							System.out.println("New line: " + newLine);
+						}else{
+							output.add(line);
+						}
+					}
+					else{
+						output.add(line);
+					}
+					break;
 				}
 			}
 		}
-		
+
 		return output;
 	}
 
@@ -175,16 +207,16 @@ public class AnchorTitleReplacer {
 
 		return fileTitleList;
 	} 
-	
+
 	private ArrayList<String> readTitlesFile(String filePath) throws IOException{
 
 		ArrayList<String> titles = readFile(this.titlesFilePath);
-		
+
 		for(int i = 0; i < titles.size(); i++){
 			titles.set(i, titles.get(i).replaceAll("\\[Book\\]", "(.*)"));
-			
+
 		}
-		
+
 		return titles;
 	}
 

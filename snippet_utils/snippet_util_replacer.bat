@@ -1,1 +1,1 @@
-java -cp deploy/snippet_utils.jar com.fdt.snippetutils.AnchorTitleReplacer cfg_anchor_replacer.ini
+java -cp libs/snippet_extractor_lib.jar;libs/log4j-1.2.15.jar;deploy/snippet_utils.jar com.fdt.snippetutils.AnchorTitleReplacer cfg_anchor_replacer.ini

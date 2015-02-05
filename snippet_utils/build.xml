@@ -31,15 +31,16 @@
 
 	<target depends="compile" name="build" description="Jar creating">
 		<jar destfile="deploy/snippet_utils.jar" basedir="classes" whenmanifestonly="fail"
-			defaultexcludes="true" includes="**/*.class, **/*.xml, **/*.xsl, **/*.class">
+			defaultexcludes="true" includes="**/*.class, **/*.xml, **/*.xsl">
 			<manifest>
 				<attribute name="Class-Path" value="." />
 				<!--attribute name="Main-Class" value="com.ssc.esf.hub.EsfHubEngine" /-->
 			</manifest>
+			<!--zipgroupfileset dir="${dir.lib}" includes="**/*.jar" /-->
 		</jar>
 	</target>
-
-	<target name="clean" depends="build">
+	
+ 	<target name="clean" depends="build">
 		<delete dir="classes" />
 	</target>
 </project>
