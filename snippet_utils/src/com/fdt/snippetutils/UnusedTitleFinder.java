@@ -63,7 +63,9 @@ public class UnusedTitleFinder {
 				);
 
 		boolean isFound = false;
-		while(!isFound){
+		int repeatCount = 0;
+		while(!isFound && repeatCount < fileNameArray.length){
+			repeatCount++;
 			int rndIndex = rnd.nextInt(fileNameArray.length);
 			if( !titleList.contains(fileNameArray[rndIndex]) ){
 				result = pathToFiles + "\\" + fileNameArray[rndIndex];
