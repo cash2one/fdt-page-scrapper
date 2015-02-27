@@ -21,8 +21,7 @@ public class VideoCreator {
 			
 			//avMerger.mergeFiles(vml, aml);
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			// TODO Auto-generated catch block			e.printStackTrace();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -34,6 +33,7 @@ public class VideoCreator {
 	    
 	    Random rnd = new Random();
 	    int frameCount = (rnd.nextInt(12) + 18)*100;
+	    //frameCount = 1;
 	    
 	    for(int i = 0; i < frameCount; i++){
 	    	imgLst.add(imageFile.getAbsolutePath());
@@ -46,7 +46,9 @@ public class VideoCreator {
 	        System.exit(0);
 	    }
 	    int interval = 10;
-	    imageToMovie.doIt(320, 240, (100 / interval), imgLst, oml);
+	    imageToMovie.doIt(320, 240, 1, imgLst, oml);
+	    //imageToMovie.doIt(640, 480, 1, imgLst, oml);
+	    //imageToMovie.doIt(320, 240, (100 / interval), imgLst, oml);
 
 	}
 }
