@@ -33,7 +33,7 @@ public class VideoCreator {
 	    
 	    Random rnd = new Random();
 	    int frameCount = (240 + rnd.nextInt(108))*10;
-	    //TODO uncomment
+	    //TODO comment
 	    frameCount = 1;
 	    
 	    for(int i = 0; i < frameCount; i++){

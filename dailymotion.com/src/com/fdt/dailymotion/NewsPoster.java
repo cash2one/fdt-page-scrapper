@@ -6,7 +6,6 @@ package com.fdt.dailymotion;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -16,7 +15,6 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.math.BigInteger;
 import java.net.HttpURLConnection;
 import java.net.Proxy;
 import java.net.URL;
@@ -68,9 +66,7 @@ public class NewsPoster {
 		//post news
 		URL url = new URL(postUrl);
 		HttpsURLConnection.setFollowRedirects(false);
-		//TODO UNCOMMENT
-		//HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
-		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
 		conn.setReadTimeout(60000);
 		conn.setConnectTimeout(60000);
 		conn.setRequestMethod("POST");
@@ -84,7 +80,6 @@ public class NewsPoster {
 		conn.setRequestProperty("Host", "api.dailymotion.com");
 		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
-		//TODO Set params
 		OutputStream os = conn.getOutputStream();
 		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
 		writer.write("[{\"call\":\"GET /file/upload\",\"args\":{},\"id\":0}]");
@@ -114,9 +109,7 @@ public class NewsPoster {
 		//post news
 		URL url = new URL(postUrl);
 		HttpsURLConnection.setFollowRedirects(false);
-		//TODO UNCOMMENT
-		//HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
-		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
 		conn.setReadTimeout(60000);
 		conn.setConnectTimeout(60000);
 		conn.setRequestMethod("POST");
@@ -130,7 +123,6 @@ public class NewsPoster {
 		conn.setRequestProperty("Host", "api.dailymotion.com");
 		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
-		//TODO Set params
 		OutputStream os = conn.getOutputStream();
 		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
 		writer.write("[{\"call\":\"POST /videos\",\"args\":{\"title\":\"" + task.getVideoTitle() +"\",\"published\":\"false\"},\"id\":0}]");
@@ -160,9 +152,7 @@ public class NewsPoster {
 		//post news
 		URL url = new URL(postUrl);
 		HttpsURLConnection.setFollowRedirects(false);
-		//TODO UNCOMMENT
-		//HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
-		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
 		conn.setReadTimeout(60000);
 		conn.setConnectTimeout(60000);
 		conn.setRequestMethod("POST");
@@ -176,7 +166,6 @@ public class NewsPoster {
 		conn.setRequestProperty("Host", "api.dailymotion.com");
 		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
-		//TODO Set params
 		OutputStream os = conn.getOutputStream();
 		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
 		writer.write("[{\"call\":\"POST /video/"+videoId+"\",\"args\":{\"url\":\"" + videoUrl +"\",\"fields\":\"id,\"},\"id\":0}]");
@@ -197,9 +186,7 @@ public class NewsPoster {
 		URL url = new URL(postUrl);
 		String host = postUrl.substring(postUrl.indexOf("http://") + 7, postUrl.indexOf(".com") + 4);
 		HttpURLConnection.setFollowRedirects(false);
-		//TODO UNCOMMENT
-		//HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
-		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
 		conn.setReadTimeout(60000);
 		conn.setConnectTimeout(60000);
 		conn.setRequestMethod("OPTIONS");
@@ -230,7 +217,14 @@ public class NewsPoster {
 	private String postNews() throws Exception{
 		//String lri = 	
 		String uploadUrl = getUploadUrl();
+		if(uploadUrl == null || "".equals(uploadUrl.trim())){
+			throw new Exception("Upload url was not extracted.");
+		}
+		
 		String videoId = getVideoId();
+		if(videoId == null || "".equals(videoId.trim())){
+			throw new Exception("VideoId was not extracted.");
+		}
 
 		return uploadVideo(uploadUrl, videoId);
 	}
@@ -313,14 +307,9 @@ public class NewsPoster {
 
 		inputStream.close();
 
-		//JSONObject jsonObj = new JSONObject(responseStr.toString());
-		//videoUrl = (String)jsonObj.getString("url");
-
-		//link uploaded video to user
-		//executeRequestToGetCookies(getVideoFormXUploadUrl(videoId, videoUrl), "GET", null);
-		//oldCookie = account.getCookie("_csrf/link");
 		executeRequestToGetCookies("http://www.dailymotion.com/upload_new/ping?t=" + (System.currentTimeMillis()), "HEAD", null);
-		//Edit video description 
+
+		//edit video description
 		return editVideoDescription(videoId, oldCookie, "POST");
 	}
 
@@ -427,14 +416,12 @@ public class NewsPoster {
 
 	private String editVideoDescription(String videoId, String oldCookie, String method) throws Exception{
 		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
-				"/pageitem/uploadNewForm?request=%2Fnew&t=0.5593014024517274&xid="+videoId+"&from_request=%2Fupload&_csrf_l=" + oldCookie;
+				"/pageitem/uploadNewForm?request=%2Fnew&t=0.5693014024517274&xid="+videoId+"&from_request=%2Fupload&_csrf_l=" + oldCookie;
 
 		//post news
 		URL url = new URL(postUrl);
-		HttpURLConnection.setFollowRedirects(true);
-		//TODO Uncomment
-		//HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
-		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		HttpURLConnection.setFollowRedirects(false);
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
 		conn.setReadTimeout(60000);
 		conn.setConnectTimeout(60000);
 		conn.setRequestMethod(method);
@@ -466,6 +453,7 @@ public class NewsPoster {
 			writer.close();
 			outputStream.close();
 		}else{
+			int respCode = conn.getResponseCode();
 			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
 
 			if(cookies.get("Set-Cookie") != null){
@@ -688,16 +676,19 @@ public class NewsPoster {
 		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[").append(URLEncoder.encode(task.getTags(),"UTF-8")).append("]}").append("&")
 		.append("tags=").append("").append("&")
 		.append("description=").append( URLEncoder.encode(task.getDescription(),"UTF-8")).append("&")
+		.append("privacy=").append("0").append("&")
 		.append("allow_comments=").append("1").append("&")
 		//.append("allow_in_group=").append("1").append("&")
-		.append("recordedOn=").append("2014/11/14").append("&")
-		.append("coming_next=").append("").append("&")
-		.append("videoId=").append(task.getVideoid()).append("&")
-		.append("videoUpdateTitle=").append(task.getVideoid()).append("&")
-		.append("extensionVideo=").append("").append("&")
-		.append("uploadType=").append("").append("&")
-		.append("saveStatus=").append("fail").append("&")
+		.append("recordedOn=").append("2015/05/14").append("&")
+		//.append("coming_next=").append("").append("&")
+		//.append("videoId=").append(task.getVideoid()).append("&")
+		//.append("videoUpdateTitle=").append(task.getVideoid()).append("&")
+		//.append("extensionVideo=").append("").append("&")
+		//.append("uploadType=").append("").append("&")
+		//.append("saveStatus=").append("fail").append("&")
 		//.append("from_request=").append("/video/edit/x2a5w2y_%25D0%25B1%25D0%25B5%25D0%25B7-%25D0%25BD%25D0%25B0%25D0%25B7%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D1%258F")
+		.append("from_publish=").append("1").append("&")
+		.append("from_request=").append("/upload").append("&")
 		.append("_csrf_l=").append(account.getCookie("_csrf/link"));
 
 		log.info("Params for edit video: " + params.toString());
