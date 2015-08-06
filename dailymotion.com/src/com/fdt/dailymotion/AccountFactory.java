@@ -106,7 +106,7 @@ public class AccountFactory
 				String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL);
 				URL url = new URL(postUrl);
 				HttpURLConnection.setFollowRedirects(false);
-				HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy.getConnect());
+				HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy.getConnect(ProxyFactory.PROXY_TYPE));
 				conn.setReadTimeout(60000);
 				conn.setConnectTimeout(60000);
 				conn.setRequestMethod("POST");
@@ -189,7 +189,7 @@ public class AccountFactory
 		URL url = new URL(postUrl);
 		log.info("URL: " + url);
 		HttpURLConnection.setFollowRedirects(false);
-		HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy.getConnect());
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy.getConnect(ProxyFactory.PROXY_TYPE));
 		conn.setReadTimeout(60000);
 		conn.setConnectTimeout(60000);
 		conn.setRequestMethod(requestMethod);

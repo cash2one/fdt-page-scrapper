@@ -75,7 +75,7 @@ public class TinyUrlThread extends Thread{
 					
 					//TODO Get tinyurl
 					proxyConnector = proxyFactory.getProxyConnector();
-					String tinyUrl = getTinyUrl(downloadUrl, proxyConnector.getConnect());
+					String tinyUrl = getTinyUrl(downloadUrl, proxyConnector.getConnect(ProxyFactory.PROXY_TYPE));
 					
 					fileAsStr = fileAsStr.replaceAll("\\[KEYWORD\\]", tinyUrl);
 					

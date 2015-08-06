@@ -20,6 +20,7 @@ public class ProxyFactory
 	private static Random rand = new Random();
 	/**Delay in ms*/
 	public static long DELAY_FOR_PROXY = 10000L;
+	public static String PROXY_TYPE = "HTTP";
 	//proxy_connector
 	private ArrayList<ProxyConnector> proxyList = new ArrayList<ProxyConnector>();
 	//release_date

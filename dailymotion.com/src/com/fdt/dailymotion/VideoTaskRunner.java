@@ -38,6 +38,7 @@ public class VideoTaskRunner {
 	private String proxyFilePath;
 	private String accListFilePath;
 	private long proxyDelay;
+	private String proxyType;
 
 	private boolean addAudioToFile;
 
@@ -63,6 +64,7 @@ public class VideoTaskRunner {
 	private final static String PROXY_LIST_FILE_PATH_LABEL = "proxy_list_file_path";
 	private final static String ACCOUNTS_LIST_FILE_PATH_LABEL = "account_list_file_path";
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
+	private final static String PROXY_TYPE_LABEL = "proxy_type";
 	private final static String ADD_AUDIO_TO_VIDEO_FILE_LABEL = "add_audio_to_video_file";
 
 	private final static String LIST_INPUT_FILE_PATH_LABEL = "list_input_file_path";
@@ -89,6 +91,7 @@ public class VideoTaskRunner {
 		this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 		this.accListFilePath = Constants.getInstance().getProperty(ACCOUNTS_LIST_FILE_PATH_LABEL);
 		this.proxyDelay = Integer.valueOf(Constants.getInstance().getProperty(PROXY_DELAY_LABEL));
+		this.proxyType = Constants.getInstance().getProperty(PROXY_TYPE_LABEL);
 		this.addAudioToFile = Boolean.valueOf(Constants.getInstance().getProperty(ADD_AUDIO_TO_VIDEO_FILE_LABEL));
 
 		this.listInputFilePath = Constants.getInstance().getProperty(LIST_INPUT_FILE_PATH_LABEL);
@@ -135,6 +138,7 @@ public class VideoTaskRunner {
 				File rootInputFiles = new File(listInputFilePath);
 
 				ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
+				ProxyFactory.PROXY_TYPE = proxyType;
 				ProxyFactory proxyFactory = ProxyFactory.getInstance();
 				proxyFactory.init(proxyFilePath);
 

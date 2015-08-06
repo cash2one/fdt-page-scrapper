@@ -111,7 +111,7 @@ public class VideoPosterThread extends Thread{
 					}
 					task.setSnippets(snippetsStr.toString());
 
-					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(), this.account);
+					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account);
 					String linkToVideo = nPoster.executePostNews();
 					appendStringToFile(linkToVideo, linkList);
 					appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
