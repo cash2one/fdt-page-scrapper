@@ -139,13 +139,15 @@ public class AnchorTitleReplacer {
 		String newLine;
 
 		for(String line:input){
+			int matchStepCount = 0;
 			for(String title:titles)
 			{
-				String patternStr = "(.*)\\/\"\\>(" + title + ")\\<\\/a\\>(.*)";
+				matchStepCount++;
+				String patternStr = "(.*)\"\\>(" + title + ")\\<\\/a\\>(.*)";
 
 				if(line.matches(patternStr))
 				{
-					System.out.println("Mached");
+					//System.out.println("Mached");
 
 					//Substring Name
 					if(rnd.nextInt(3) < 2){
@@ -153,13 +155,13 @@ public class AnchorTitleReplacer {
 						Matcher matcher = pattern.matcher(line);
 						if (matcher.find()){
 							fullTitle = matcher.group(2).trim();
-							System.out.println("Full title: " + fullTitle);
+							//System.out.println("Full title: " + fullTitle);
 							bookName = matcher.group(3).trim();
-							System.out.println("Book name: " + bookName);
+							//System.out.println("Book name: " + bookName);
 							newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
 							newLine = line.replace(fullTitle, newTitle);
 							output.add(newLine);
-							System.out.println("New line: " + newLine);
+							//System.out.println("New line: " + newLine);
 						}else{
 							output.add(line);
 						}
@@ -168,6 +170,10 @@ public class AnchorTitleReplacer {
 						output.add(line);
 					}
 					break;
+				}else{
+					if(matchStepCount == titles.size()){
+						System.out.println("NOT Processed line: " + line);
+					}
 				}
 			}
 		}

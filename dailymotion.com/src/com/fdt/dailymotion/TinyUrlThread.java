@@ -191,7 +191,7 @@ public class TinyUrlThread extends Thread{
 		
 			html = cleaner.clean(is,"UTF-8");
 			
-			String tinyUrl = ((String)html.evaluateXPath("//blockquote/small/a/@href")[0]);
+			String tinyUrl = ((TagNode)html.evaluateXPath("//div[@class='indent']/b[1]")[0]).getText().toString();
 			//int code = conn.getResponseCode();
 			return tinyUrl;
 		}finally{

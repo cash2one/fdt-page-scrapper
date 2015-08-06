@@ -52,7 +52,6 @@ public class PosterThread extends Thread{
 						String newsResult = ps.executePostNews();
 						task.setResult(newsResult);
 					}
-
 				}
 				catch (Exception e) {
 					errorExist = true;

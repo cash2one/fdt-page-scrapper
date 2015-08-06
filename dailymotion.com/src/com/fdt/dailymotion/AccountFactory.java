@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
@@ -17,9 +18,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.xml.xpath.XPathExpressionException;
+
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
+import org.htmlcleaner.HtmlCleaner;
+import org.htmlcleaner.TagNode;
 
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
@@ -85,11 +90,19 @@ public class AccountFactory
 				log.warn("Error while initializtion", e);
 			}
 		}
+		
+		log.debug("Total account count: " + accounts.size());
+		
 		//getting cookie for each account
 		try {
 			ArrayList<Account> accountToRemove = new ArrayList<Account>();
-			ProxyConnector proxy = proxyFactory.getProxyConnector();
-			for(Account account : accounts.values()){
+			ProxyConnector proxy = proxyFactory.getRandomProxyConnector();
+			for(Account account : accounts.values())
+			{
+				executerequestToGetCookies(Constants.getInstance().getProperty(MAIN_URL_LABEL) + "/ru", "GET", proxy, null, account);
+				
+				executerequestToGetCookies( Constants.getInstance().getProperty(MAIN_URL_LABEL) + "/pageitem/authenticationContainer?request=/login?&from_request=%2Fru&_csrf_l=" + account.getCookie("_csrf/link"), "GET", proxy, null, account);
+				
 				String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL);
 				URL url = new URL(postUrl);
 				HttpURLConnection.setFollowRedirects(false);
@@ -103,15 +116,19 @@ public class AccountFactory
 				conn.addRequestProperty("Referer","http://www.dailymotion.com/ru");
 				conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"); 
 				//conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-				conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+				conn.setRequestProperty("Accept", "*/*");
+				conn.setRequestProperty("X-Requested-With",	"XMLHttpRequest");
+				conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
 
 				List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-				nameValuePairs.add(new BasicNameValuePair("form_name", "dm_pageitem_login"));
+				nameValuePairs.add(new BasicNameValuePair("form_name", "dm_pageitem_authenticationform"));
 				nameValuePairs.add(new BasicNameValuePair("username", account.getEmail()));
 				nameValuePairs.add(new BasicNameValuePair("password", account.getPass()));
+				nameValuePairs.add(new BasicNameValuePair("_csrf", account.getCookie("_csrf/form")));
 				nameValuePairs.add(new BasicNameValuePair("_fid", ""));
-				nameValuePairs.add(new BasicNameValuePair("from_request", "/ru"));
-
+				nameValuePairs.add(new BasicNameValuePair("authChoice", "login"));
+				nameValuePairs.add(new BasicNameValuePair("from_request", "/RedBull"));
+				
 				OutputStream os = conn.getOutputStream();
 				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
 				writer.write(getQuery(nameValuePairs));
@@ -137,6 +154,18 @@ public class AccountFactory
 					}
 				}
 
+				HtmlCleaner cleaner = new HtmlCleaner();
+
+				InputStream is = conn.getInputStream();
+
+				String encoding = conn.getContentEncoding();
+
+				InputStream inputStreamPage = null;
+
+				TagNode html = null;
+			
+				html = cleaner.clean(is,"UTF-8");
+				
 				conn.disconnect();
 			}
 			proxyFactory.releaseProxy(proxy);
@@ -150,6 +179,59 @@ public class AccountFactory
 			log.error("Error during filling account from list and getting cookies for account",e);
 			throw e;
 		}
+		
+		log.debug("Success account count: " + accounts.size());
+	}
+	
+	private void executerequestToGetCookies(String postUrl, String requestMethod, ProxyConnector proxy, String postParams, Account account) throws IOException, XPathExpressionException{
+
+		//post news
+		URL url = new URL(postUrl);
+		log.info("URL: " + url);
+		HttpURLConnection.setFollowRedirects(false);
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy.getConnect());
+		conn.setReadTimeout(60000);
+		conn.setConnectTimeout(60000);
+		conn.setRequestMethod(requestMethod);
+		if(requestMethod.equalsIgnoreCase("POST")){
+			conn.setDoOutput(true);
+		}else{
+			conn.setDoOutput(false);
+		}
+		conn.setDoInput(true);
+
+		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+		//conn.setRequestProperty("Cookie", account.getCookies());
+		conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/ru");
+
+		if(requestMethod.equalsIgnoreCase("POST") && postParams != null){
+			OutputStream os = conn.getOutputStream();
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			writer.write(postParams);
+			writer.flush();
+			writer.close();
+			os.close();
+		}
+
+		Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
+		
+		int code = conn.getResponseCode();
+
+		if(cookies.get("Set-Cookie") != null){
+			for(String cookieOne: cookies.get("Set-Cookie"))
+			{
+				String cookiesValues[] = cookieOne.split(";");
+				for(String cookiesArrayItem : cookiesValues){
+					String singleCookei[] = cookiesArrayItem.split("=");
+					account.addCookie(singleCookei[0].trim(), singleCookei[1].trim());
+				}
+			}
+		}
+
+		conn.disconnect();
 	}
 
 	public synchronized Account getAccount(){

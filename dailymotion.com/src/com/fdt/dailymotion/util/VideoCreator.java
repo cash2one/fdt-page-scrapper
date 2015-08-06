@@ -32,8 +32,9 @@ public class VideoCreator {
 	    Vector<String> imgLst = new Vector<String>();
 	    
 	    Random rnd = new Random();
-	    int frameCount = (rnd.nextInt(12) + 18)*100;
-	    //frameCount = 1;
+	    int frameCount = (240 + rnd.nextInt(108))*10;
+	    //TODO uncomment
+	    frameCount = 1;
 	    
 	    for(int i = 0; i < frameCount; i++){
 	    	imgLst.add(imageFile.getAbsolutePath());
