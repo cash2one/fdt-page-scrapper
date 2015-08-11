@@ -179,6 +179,52 @@ public class NewsPoster {
 
 		conn.disconnect();
 	}
+	
+	private String executeAccessToken(String videoId, String requestStr) throws Exception{
+		String postUrl = "https://api.dailymotion.com/?access_token=" + account.getCookie("sid");
+
+		//post news
+		URL url = new URL(postUrl);
+		HttpsURLConnection.setFollowRedirects(false);
+		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
+		conn.setReadTimeout(60000);
+		conn.setConnectTimeout(60000);
+		conn.setRequestMethod("POST");
+		conn.setDoInput(true);
+		conn.setDoOutput(true);
+
+		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+		conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+		conn.setRequestProperty("Host", "api.dailymotion.com");
+		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+
+		OutputStream os = conn.getOutputStream();
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+		writer.write(requestStr);
+		writer.flush();
+		writer.close();
+		os.close();
+
+		StringBuilder responseStr = getResponseAsString(conn);
+		
+		conn.disconnect();
+		
+		return responseStr.toString();
+	}
+	
+	private void getVideoAccessToken(String videoId) throws Exception{
+		String respStr = "";
+		respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"encoding_progress,\"},\"id\":0}]");
+		respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"thumbnail_url,\"},\"id\":0},{\"call\":\"GET /video/x318d5d\",\"args\":{\"fields\":\"status,\"},\"id\":1}]");
+		respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/" + videoId + "\",\"args\":{\"fields\":\"status,\"},\"id\":0}]");
+		
+		while(respStr.contains("processing")){
+			Thread.sleep(5000L);
+			respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/" + videoId + "\",\"args\":{\"fields\":\"status,\"},\"id\":0}]");
+		}
+	}
 
 	private int executeOptionRequest(String postUrl) throws Exception{
 
@@ -416,7 +462,7 @@ public class NewsPoster {
 
 	private String editVideoDescription(String videoId, String oldCookie, String method) throws Exception{
 		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
-				"/pageitem/uploadNewForm?request=%2Fnew&t=0.5693014024517274&xid="+videoId+"&from_request=%2Fupload&_csrf_l=" + oldCookie;
+				"/pageitem/uploadNewForm?request=/new&t=0.5693014024517274&xid="+videoId+"&from_request=/upload&_csrf_l=" + oldCookie;
 
 		//post news
 		URL url = new URL(postUrl);
@@ -428,6 +474,7 @@ public class NewsPoster {
 		conn.setDoInput(true);
 		if("POST".equals(method)){
 			conn.setDoOutput(true);
+			getVideoAccessToken(videoId);
 		}else{
 			conn.setDoOutput(false);
 		}

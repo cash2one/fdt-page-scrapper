@@ -14,12 +14,13 @@ public class VideoCreator {
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 		
 		try {
-			VideoCreator.makeVideo("test_video.mov", new File("images/123.jpg"));
+			VideoCreator.makeVideo("test_video_wa.mov", new File("images/123.jpg"));
 			
-			MediaLocator vml = JpegImagesToMovie.createMediaLocator("test_video.mov");
+			MediaLocator ivml = JpegImagesToMovie.createMediaLocator("test_video_wa.mov");
 			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
+			MediaLocator ovml = JpegImagesToMovie.createMediaLocator("test_video.mov");
 			
-			//avMerger.mergeFiles(vml, aml);
+			avMerger.mergeFiles(ivml, aml, ovml);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block			e.printStackTrace();
 		} catch (Exception e) {
@@ -34,7 +35,7 @@ public class VideoCreator {
 	    Random rnd = new Random();
 	    int frameCount = (240 + rnd.nextInt(108))*10;
 	    //TODO comment
-	    frameCount = 1;
+	    //frameCount = 1;
 	    
 	    for(int i = 0; i < frameCount; i++){
 	    	imgLst.add(imageFile.getAbsolutePath());
@@ -47,9 +48,8 @@ public class VideoCreator {
 	        System.exit(0);
 	    }
 	    int interval = 10;
-	    imageToMovie.doIt(320, 240, 1, imgLst, oml);
+	    imageToMovie.doIt(1080, 720, 30, imgLst, oml);
 	    //imageToMovie.doIt(640, 480, 1, imgLst, oml);
 	    //imageToMovie.doIt(320, 240, (100 / interval), imgLst, oml);
-
 	}
 }

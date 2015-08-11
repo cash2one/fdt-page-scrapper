@@ -22,6 +22,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 import com.fdt.dailymotion.task.NewsTask;
 import com.fdt.dailymotion.task.TaskFactory;
 import com.fdt.scrapper.proxy.ProxyFactory;
+import com.fdt.scrapper.task.ConfigManager;
 
 /**
  * @author VarenKoks
@@ -87,6 +88,7 @@ public class VideoTaskRunner {
 	public VideoTaskRunner(String cfgFilePath){
 
 		Constants.getInstance().loadProperties(cfgFilePath);
+		ConfigManager.getInstance().loadProperties(cfgFilePath);
 
 		this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 		this.accListFilePath = Constants.getInstance().getProperty(ACCOUNTS_LIST_FILE_PATH_LABEL);
