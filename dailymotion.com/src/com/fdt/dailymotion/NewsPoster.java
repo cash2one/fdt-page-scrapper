@@ -179,7 +179,7 @@ public class NewsPoster {
 
 		conn.disconnect();
 	}
-	
+
 	private String executeAccessToken(String videoId, String requestStr) throws Exception{
 		String postUrl = "https://api.dailymotion.com/?access_token=" + account.getCookie("sid");
 
@@ -208,18 +208,18 @@ public class NewsPoster {
 		os.close();
 
 		StringBuilder responseStr = getResponseAsString(conn);
-		
+
 		conn.disconnect();
-		
+
 		return responseStr.toString();
 	}
-	
+
 	private void getVideoAccessToken(String videoId) throws Exception{
 		String respStr = "";
 		respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"encoding_progress,\"},\"id\":0}]");
 		respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"thumbnail_url,\"},\"id\":0},{\"call\":\"GET /video/x318d5d\",\"args\":{\"fields\":\"status,\"},\"id\":1}]");
 		respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/" + videoId + "\",\"args\":{\"fields\":\"status,\"},\"id\":0}]");
-		
+
 		while(respStr.contains("processing")){
 			Thread.sleep(5000L);
 			respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/" + videoId + "\",\"args\":{\"fields\":\"status,\"},\"id\":0}]");
@@ -266,7 +266,7 @@ public class NewsPoster {
 		if(uploadUrl == null || "".equals(uploadUrl.trim())){
 			throw new Exception("Upload url was not extracted.");
 		}
-		
+
 		String videoId = getVideoId();
 		if(videoId == null || "".equals(videoId.trim())){
 			throw new Exception("VideoId was not extracted.");
@@ -529,11 +529,54 @@ public class NewsPoster {
 			if( !videoUrl.contains("/video/") || videoUrl.contains("_%D0%B1%D0%B5%D0%B7-%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F")){
 				throw new Exception("URL to video was not extracted. Next string was extracted: " + videoUrl);
 			}
-
+			setPreview(videoId);
 			return videoUrl;
 		}else{
 			return "";
 		}
+	}
+
+	private String setPreview(String videoId) throws Exception{
+		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
+				"/ajax/video_preview_v3";
+
+		//post news
+		URL url = new URL(postUrl);
+		HttpURLConnection.setFollowRedirects(false);
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+		conn.setReadTimeout(60000);
+		conn.setConnectTimeout(60000);
+		conn.setRequestMethod("POST");
+		conn.setDoInput(true);
+		conn.setDoOutput(true);
+
+		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+		conn.setRequestProperty("Accept", "*/*");
+		conn.setRequestProperty("Cookie", account.getCookies());
+		conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+		conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
+		conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+		//conn.setRequestProperty("Referer", http://www.dailymotion.com/pageitem/OneStepPreview?widget_only=1&hidenextvideo=1&request=/video/x30lasl_%25D0%25BF%25D1%2580%25D0%25B5%25D1%2581%25D0%25BB%25D0%25B5%25D0%25B4%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5-m%25D0%25BE%25D1%2582%25D0%25BE%25D1%2586%25D0%25B8%25D0%25BA%25D0%25BB%25D0%25B8%25D1%2581%25D1%2582%25D0%25B0-30-06-2015_webcam);
+
+		OutputStream outputStream;
+		outputStream = conn.getOutputStream();
+		PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
+		writer.append(getPreviewParamString(videoId));
+		writer.flush();
+		writer.close();
+		outputStream.close();
+
+
+		int respCode = conn.getResponseCode();
+		// Execute HTTP Post Request
+		StringBuilder responseStr = getResponseAsString(conn);
+
+		//log.debug(responseStr.toString());
+
+		conn.disconnect();
+		
+		return responseStr.toString();
 	}
 
 	private StringBuilder getResponseAsString(HttpURLConnection conn)
@@ -653,6 +696,18 @@ public class NewsPoster {
 		StringBuilder params = new StringBuilder();
 		params.append("ajax_function").append("=").append("get_url").append("&");
 		params.append("ajax_arg[]").append("=").append(task.getVideoid()).append("&");
+		params.append("_").append("=").append(String.valueOf(System.currentTimeMillis())).append("&");
+		params.append("from_request").append("=").append("/upload").append("&");
+		params.append("_csrf_l").append("=").append(account.getCookie("_csrf/link"));
+
+		return params.toString();
+	}
+
+	private String getPreviewParamString(String videoId){
+		StringBuilder params = new StringBuilder();
+		params.append("ajax_function").append("=").append("extract_preview").append("&");
+		params.append("ajax_arg[]").append("=").append(videoId).append("&");
+		params.append("ajax_arg[]").append("=").append("00:00:01.000").append("&");
 		params.append("_").append("=").append(String.valueOf(System.currentTimeMillis())).append("&");
 		params.append("from_request").append("=").append("/upload").append("&");
 		params.append("_csrf_l").append("=").append(account.getCookie("_csrf/link"));

@@ -14,7 +14,7 @@ public class VideoCreator {
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 		
 		try {
-			VideoCreator.makeVideo("test_video_wa.mov", new File("images/123.jpg"));
+			VideoCreator.makeVideo("test_video_wa.mov", new File("images/_frame.jpg"), new File("images/_preview.jpg"));
 			
 			MediaLocator ivml = JpegImagesToMovie.createMediaLocator("test_video_wa.mov");
 			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
@@ -29,17 +29,20 @@ public class VideoCreator {
 		}
 	}
 	
-	public static void makeVideo(String fileName, File imageFile) throws IOException {
+	public static Integer[] makeVideo(String fileName, File imageFile, File previewFile) throws IOException {
 	    Vector<String> imgLst = new Vector<String>();
 	    
 	    Random rnd = new Random();
-	    int frameCount = (240 + rnd.nextInt(108))*10;
+	    int framePerSec = 1;
+	    int frameCount = (240 + rnd.nextInt(108))*10*framePerSec;
 	    //TODO comment
-	    //frameCount = 1;
+	    frameCount = 30;
 	    
 	    for(int i = 0; i < frameCount; i++){
 	    	imgLst.add(imageFile.getAbsolutePath());
 	    }
+	    
+	    imgLst.add(1, previewFile.getAbsolutePath());
 	    
 	    JpegImagesToMovie imageToMovie = new JpegImagesToMovie();
 	    MediaLocator oml;
@@ -47,9 +50,10 @@ public class VideoCreator {
 	        System.err.println("Cannot build media locator from: " + fileName);
 	        System.exit(0);
 	    }
-	    int interval = 10;
-	    imageToMovie.doIt(1080, 720, 30, imgLst, oml);
+	    imageToMovie.doIt(1080, 720, framePerSec, imgLst, oml);
 	    //imageToMovie.doIt(640, 480, 1, imgLst, oml);
 	    //imageToMovie.doIt(320, 240, (100 / interval), imgLst, oml);
+	    
+	    return new Integer[]{frameCount, framePerSec};
 	}
 }

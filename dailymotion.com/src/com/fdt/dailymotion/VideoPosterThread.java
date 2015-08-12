@@ -48,6 +48,9 @@ public class VideoPosterThread extends Thread{
 	private File linkTitleList;
 	private String listProcessedFilePath;
 	private String errorFilePath;
+	
+	//TODO Hard coding. Delete after correction
+	private File previewImg = new File("./images/_preview.jpg");
 
 	public VideoPosterThread(
 			NewsTask task, 
@@ -95,8 +98,9 @@ public class VideoPosterThread extends Thread{
 					SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
 
 					//create video
-					createVideo(task, this.addAudioToFile);
-
+					createVideo(task, this.addAudioToFile, previewImg);
+					Thread.sleep(10000L);
+					
 					//TODO Add Snippet task chooser
 					ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
 					if(snippets.size() == 0)
@@ -164,10 +168,10 @@ public class VideoPosterThread extends Thread{
 		return task;
 	}
 
-	private void createVideo(NewsTask task, boolean addAudioToFile) throws Exception{
+	private void createVideo(NewsTask task, boolean addAudioToFile, File previewImg) throws Exception{
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 
-		VideoCreator.makeVideo(task.getVideoFileWOAudio().getPath(), task.getImageFile());
+		VideoCreator.makeVideo(task.getVideoFileWOAudio().getPath(), task.getImageFile(), previewImg);
 
 		if(addAudioToFile){
 			MediaLocator ivml = JpegImagesToMovie.createMediaLocator(task.getVideoFileWOAudio().getPath());
