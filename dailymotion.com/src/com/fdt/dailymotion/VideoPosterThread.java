@@ -49,9 +49,6 @@ public class VideoPosterThread extends Thread{
 	private String listProcessedFilePath;
 	private String errorFilePath;
 	
-	//TODO Hard coding. Delete after correction
-	private File previewImg = new File("./images/_preview.jpg");
-
 	public VideoPosterThread(
 			NewsTask task, 
 			Account account, 
@@ -96,7 +93,10 @@ public class VideoPosterThread extends Thread{
 					task.parseFile();
 
 					SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
-
+					File previewImg = new File("./images/" + task.getKey().replace(":", "") + ".jpg");
+					if(!previewImg.exists()){
+						previewImg = new File("./images/" + task.getKey().replace(":", "") + ".png");
+					}
 					//create video
 					createVideo(task, this.addAudioToFile, previewImg);
 					Thread.sleep(10000L);
@@ -245,21 +245,21 @@ public class VideoPosterThread extends Thread{
 
 	private void deleteVideoFile(NewsTask task){
 		if(task != null ){
-			if(task.getVideoFile() != null){
+			if(task.getVideoFile() != null && task.getVideoFile().exists() && task.getVideoFile().isFile()){
 				try {
 					log.debug("Delete video file: " + task.getVideoFile().getName());
 					task.getVideoFile().delete();
-				} catch (Exception e1) {
-					log.error(e1);
+				} catch (Exception e) {
+					log.error(e);
 				}
 			}
 
-			if(task.getVideoFileWOAudio() != null){
+			if(task.getVideoFileWOAudio() != null && task.getVideoFileWOAudio().exists() && task.getVideoFileWOAudio().isFile()){
 				try {
 					log.debug("Delete video file: " + task.getVideoFileWOAudio().getName());
 					task.getVideoFileWOAudio().delete();
-				} catch (Exception e1) {
-					log.error(e1);
+				} catch (Exception e) {
+					log.error(e);
 				}
 			}
 		}

@@ -50,7 +50,7 @@ public class VideoCreator {
 	        System.err.println("Cannot build media locator from: " + fileName);
 	        System.exit(0);
 	    }
-	    imageToMovie.doIt(1080, 720, framePerSec, imgLst, oml);
+	    imageToMovie.doIt(1280, 720, framePerSec, imgLst, oml);
 	    //imageToMovie.doIt(640, 480, 1, imgLst, oml);
 	    //imageToMovie.doIt(320, 240, (100 / interval), imgLst, oml);
 	    

@@ -14,21 +14,21 @@ import org.apache.log4j.Logger;
 
 
 public class NewsTask{
-	
+
 	private static final Logger log = Logger.getLogger(NewsTask.class);
 
 	private File inputFile;
 	private File imageFile;
 	private File videoFile;
 	private File videoFileWOAudio;
-	
+
 	private File templateFile;
 
 	private String videoTitle = "";
 	private String videoid = "";
 	private String imageUrl = "";
 	private String postLink = "";
-	
+
 	private String key = "";
 	private String snippets = "";
 
@@ -36,7 +36,7 @@ public class NewsTask{
 
 	private int attempsCount = 1;
 	//empty result
-	
+
 	private static final String LINE_FEED = "\r\n";
 
 	public NewsTask(File inputFileName, File templateFile) throws Exception {
@@ -50,9 +50,9 @@ public class NewsTask{
 		//read account list
 		FileReader fr = null;
 		BufferedReader br = null;
-		
+
 		StringBuilder fileAsStr = new StringBuilder();
-		
+
 		try {
 			int lineIndex = 0;
 			fr = new FileReader(inputFile);
@@ -75,14 +75,14 @@ public class NewsTask{
 					}
 				}
 			}
-			
-			
+
+
 			log.debug("File content: " + fileAsStr.toString());
 			loadImage(fileAsStr.toString());
 			extractPostLink(fileAsStr.toString());
 
 			//TODO Generate description
-			
+
 		}
 		finally {
 			try {
@@ -99,7 +99,7 @@ public class NewsTask{
 			}
 		}
 	}
-	
+
 	private void loadImage(String fileContent) throws Exception{
 		Pattern imgPattern =Pattern.compile("((http://)?(www.)?([\\.\\,\\-\\_\\+\\(\\)@/a-zA-Z0-9]+(jpg|png)))");
 		Matcher matcher = imgPattern.matcher(fileContent);
@@ -108,7 +108,7 @@ public class NewsTask{
 			System.out.println("Image found: " + matcher.group(1));
 			imageUrl = matcher.group(1);
 			String imageFormat = matcher.group(5);
-			
+
 			BufferedImage img = ImageIO.read(new URL(imageUrl));
 			//write image to file
 			this.imageFile = new File("images/"+getFileNameWOExt(this.inputFile.getName()) + "." + imageFormat);
@@ -119,11 +119,11 @@ public class NewsTask{
 			throw new Exception("Image URL NOT found");
 		}
 	}
-	
+
 	public File getVideoFile() {
 		return videoFile;
 	}
-	
+
 	public File getVideoFileWOAudio() {
 		return videoFileWOAudio;
 	}
@@ -144,7 +144,7 @@ public class NewsTask{
 			throw new Exception("Post link NOT found");
 		}
 	}
-	
+
 	private String getFileNameWOExt(String fullName){
 		return fullName.substring(0,fullName.lastIndexOf('.'));
 	}
@@ -191,7 +191,7 @@ public class NewsTask{
 	public void setSnippets(String snippets) {
 		//Delete external url
 		snippets = snippets.replaceAll("(https?:\\/\\/)?(www\\.)?([\\w\\.]+)(\\.[a-zA-Z]{2,6})(\\/[\\w\\.]*)*\\/?", "");
-		
+
 		this.snippets = snippets;
 	}
 
@@ -222,27 +222,28 @@ public class NewsTask{
 	public String getImageUrl() {
 		return imageUrl;
 	}
-	
+
 	public String getDescription() throws Exception{
-		String description = getFileAsString(this.templateFile);
-		description = description.replaceAll("\\[KEYWORD\\]", key);
-		description = description.replaceAll("\\[LINK\\]", postLink);
-		description = description.replaceAll("\\[SNIPPETS\\]", snippets);
-		
+		String description = null;
+		description = getFileAsString(this.templateFile);
+		description = description.replaceAll("\\[KEYWORD\\]", Matcher.quoteReplacement(key));
+		description = description.replaceAll("\\[LINK\\]", Matcher.quoteReplacement(postLink));
+		description = description.replaceAll("\\[SNIPPETS\\]", Matcher.quoteReplacement(snippets));
+
 		return description;
 	}
 
 	public File getImageFile() {
 		return imageFile;
 	}
-	
+
 	private String getFileAsString(File file) throws Exception{
 		//read account list
 		FileReader fr = null;
 		BufferedReader br = null;
-		
+
 		StringBuilder fileAsStr = new StringBuilder();
-		
+
 		try {
 			fr = new FileReader(file);
 			br = new BufferedReader(fr);
@@ -266,7 +267,7 @@ public class NewsTask{
 				log.warn("Error while initializtion", e);
 			}
 		}
-		
+
 		return fileAsStr.toString();
 	}
 }
