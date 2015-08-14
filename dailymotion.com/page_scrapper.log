@@ -4032,3 +4032,1277 @@ java.io.FileNotFoundException: acclist.txt (The system cannot find the file spec
 2015-08-13 14:05:32,524-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
 2015-08-13 14:05:32,524-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
 2015-08-13 14:05:32,524-DEBUG(AccountFactory.java:275)-Used account size decremented: 1
+2015-08-13 14:19:21,927-DEBUG(AccountFactory.java:94)-Total account count: 1
+2015-08-13 14:19:21,934- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/ru
+2015-08-13 14:19:23,427- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/pageitem/authenticationContainer?request=/login?&from_request=%2Fru&_csrf_l=21pFbdQFZFuAyjNKQNz8WuV1miIgtFPxQoe2FC10yIc
+2015-08-13 14:19:24,288-DEBUG(AccountFactory.java:183)-Success account count: 1
+2015-08-13 14:19:24,296-DEBUG(AccountFactory.java:244)-Used account size incremented: 1
+2015-08-13 14:19:24,296-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:24,297-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:24,297-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_3.txt
+2015-08-13 14:19:24,297-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 9. Error tasks: 0
+2015-08-13 14:19:24,302-DEBUG(TaskFactory.java:68)-INC thread: 1
+2015-08-13 14:19:24,303-DEBUG(AccountFactory.java:244)-Used account size incremented: 2
+2015-08-13 14:19:24,303-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:24,303-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:24,304-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_7.txt
+2015-08-13 14:19:24,305-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 8. Error tasks: 0
+2015-08-13 14:19:24,305-DEBUG(TaskFactory.java:68)-INC thread: 2
+2015-08-13 14:19:24,306-DEBUG(AccountFactory.java:244)-Used account size incremented: 3
+2015-08-13 14:19:24,306-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:24,306-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:24,306-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_6.txt
+2015-08-13 14:19:24,306-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 7. Error tasks: 0
+2015-08-13 14:19:24,306-DEBUG(TaskFactory.java:68)-INC thread: 3
+2015-08-13 14:19:24,307-DEBUG(AccountFactory.java:244)-Used account size incremented: 4
+2015-08-13 14:19:24,308-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:24,308-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:24,308-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_8.txt
+2015-08-13 14:19:24,309-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 6. Error tasks: 0
+2015-08-13 14:19:24,311-DEBUG(TaskFactory.java:68)-INC thread: 4
+2015-08-13 14:19:24,308-DEBUG(NewsTask.java:80)-File content: Kingsman: Servico Secreto (2014)
+Watch Kingsman: Servico Secreto (2014) Online Full Movie (HD)
+http://tinyurl.com/ncceeuo
+http://i.imgur.com/SWrzkGe.jpg
+
+2015-08-13 14:19:24,308-DEBUG(NewsTask.java:80)-File content: Mad Max: Estrada da Furia (2015)
+Watch Mad Max: Estrada da Furia (2015) Online Full Movie (HD)
+http://tinyurl.com/ofs4cc2
+http://i.imgur.com/jYPVzRU.jpg
+
+2015-08-13 14:19:24,311-DEBUG(AccountFactory.java:244)-Used account size incremented: 5
+2015-08-13 14:19:24,314-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:24,314-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:24,314-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_4.txt
+2015-08-13 14:19:24,314-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 5. Error tasks: 0
+2015-08-13 14:19:24,314-DEBUG(TaskFactory.java:68)-INC thread: 5
+2015-08-13 14:19:24,314-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:24,315-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:24,315-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:24,315-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:24,317-DEBUG(NewsTask.java:107)-Image found: http://i.imgur.com/SWrzkGe.jpg
+2015-08-13 14:19:24,319-DEBUG(NewsTask.java:107)-Image found: http://i.imgur.com/jYPVzRU.jpg
+2015-08-13 14:19:24,322-DEBUG(NewsTask.java:80)-File content: Spy: Una espia despistada (2015)
+Watch Spy: Una espia despistada (2015) Online Full Movie (HD)
+http://tinyurl.com/ovfbdob
+http://i.imgur.com/zVx9BHr.jpg
+
+2015-08-13 14:19:24,324-DEBUG(NewsTask.java:80)-File content: Z for Zachariah (2015)
+Watch Z for Zachariah (2015) Online Full Movie (HD)
+http://tinyurl.com/pfd9ty5
+http://i.imgur.com/rVBcYRj.jpg
+
+2015-08-13 14:19:24,329-DEBUG(NewsTask.java:107)-Image found: http://i.imgur.com/rVBcYRj.jpg
+2015-08-13 14:19:24,310-DEBUG(NewsTask.java:80)-File content: A Escolha Perfeita 2 (2015)
+Watch A Escolha Perfeita 2 (2015) Online Full Movie (HD)
+http://tinyurl.com/np2mmw3
+http://i.imgur.com/DL1pzLU.jpg
+
+2015-08-13 14:19:24,330-DEBUG(NewsTask.java:107)-Image found: http://i.imgur.com/DL1pzLU.jpg
+2015-08-13 14:19:24,334-DEBUG(NewsTask.java:107)-Image found: http://i.imgur.com/zVx9BHr.jpg
+2015-08-13 14:19:24,815-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:24,816-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:24,816-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:24,816-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:24,919-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/ofs4cc2
+2015-08-13 14:19:24,927-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/np2mmw3
+2015-08-13 14:19:24,952-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/pfd9ty5
+2015-08-13 14:19:24,964-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/ncceeuo
+2015-08-13 14:19:24,973-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/ovfbdob
+2015-08-13 14:19:25,317-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:25,317-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:25,317-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:25,317-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:25,820-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:25,820-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:25,820-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:25,821-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:26,342-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:26,342-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:26,342-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:26,343-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:26,844-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:26,844-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:26,844-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:26,844-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:27,344-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:27,344-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:27,344-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:27,344-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:27,844-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:27,844-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:27,844-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:27,844-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:28,345-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:28,345-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:28,345-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:28,345-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:28,846-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:28,846-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:28,846-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:28,846-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:29,346-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:29,346-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:29,346-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:29,346-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:29,846-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:29,846-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:29,846-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:29,846-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:30,346-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:30,346-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:30,346-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:30,346-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:30,847-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:30,847-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:30,847-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:30,847-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:31,347-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:31,347-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:31,347-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:31,347-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:31,847-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:31,847-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:31,847-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:31,847-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:32,347-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:32,347-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:32,347-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:32,347-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:32,847-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:32,847-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:32,847-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:32,847-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:33,347-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:33,347-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:33,347-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:33,347-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:33,847-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:33,847-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:33,847-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:33,847-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:34,347-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:34,347-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:34,347-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:34,347-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:34,847-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:34,847-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:34,847-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:34,847-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:35,347-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:35,347-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:35,347-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:35,347-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:35,847-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:35,847-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:35,847-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:35,847-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:36,347-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:36,347-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:36,348-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:36,348-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:36,848-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:36,848-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:36,848-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:36,848-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:37,348-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:37,348-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:37,348-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:37,348-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:37,638-DEBUG(VideoPosterThread.java:210)-Keywords: task.getKeyWords(). Snippet count: 9
+2015-08-13 14:19:37,785-DEBUG(VideoPosterThread.java:210)-Keywords: task.getKeyWords(). Snippet count: 8
+2015-08-13 14:19:37,801-DEBUG(VideoPosterThread.java:210)-Keywords: task.getKeyWords(). Snippet count: 5
+2015-08-13 14:19:38,092-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:38,092-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:38,092-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:38,092-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:38,550-DEBUG(VideoPosterThread.java:210)-Keywords: task.getKeyWords(). Snippet count: 10
+2015-08-13 14:19:38,689-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:38,689-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:38,689-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:38,689-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:39,181- INFO(NewsPoster.java:101)-Upload URL: http://upload-02.sv6.dailymotion.com/upload?uuid=4f13968cbd2ccb768c24c7ce84afefa0&seal=8b0d8b48403d188a272c9f0f8f938f19
+2015-08-13 14:19:39,189-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:39,189-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:39,189-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:39,189-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:39,235- INFO(NewsPoster.java:101)-Upload URL: http://upload-02.nyc.dailymotion.com/upload?uuid=f4855edc58b3a15875c5be35eeeb774c&seal=f7bc43254b862f44d4c627f72d17ee38
+2015-08-13 14:19:39,305- INFO(NewsPoster.java:101)-Upload URL: http://upload-01.dailymotion.com/upload?uuid=4877a1fa96e9e99cc442bd4cec85fa40&seal=4b6bdd9b8bdcd894641a4cd20c58973a
+2015-08-13 14:19:39,367- INFO(NewsPoster.java:101)-Upload URL: http://upload-07.dailymotion.com/upload?uuid=31f937c06e44e6a9aa2a2ad2ba0486a7&seal=44320a7e7e5022598463fe298a74de81
+2015-08-13 14:19:39,638- INFO(NewsPoster.java:144)-Video ID: x31in0w
+2015-08-13 14:19:39,638- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload
+2015-08-13 14:19:39,690-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:39,690-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:39,690-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:39,690-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:39,700- INFO(NewsPoster.java:144)-Video ID: x31in0x
+2015-08-13 14:19:39,701- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload
+2015-08-13 14:19:39,846- INFO(NewsPoster.java:144)-Video ID: x31in0y
+2015-08-13 14:19:39,846- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload
+2015-08-13 14:19:39,914- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468379914
+2015-08-13 14:19:39,928- INFO(NewsPoster.java:144)-Video ID: x31in0z
+2015-08-13 14:19:39,928- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload
+2015-08-13 14:19:39,989- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468379989
+2015-08-13 14:19:40,149- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468380149
+2015-08-13 14:19:40,193-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:40,193-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:40,193-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:40,193-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:40,237- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468380237
+2015-08-13 14:19:40,699-DEBUG(VideoPosterThread.java:210)-Keywords: task.getKeyWords(). Snippet count: 5
+2015-08-13 14:19:40,720-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:40,720-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:40,720-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:40,720-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:41,220-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:41,220-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:41,220-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:41,220-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:41,233- INFO(NewsPoster.java:101)-Upload URL: http://upload-02.sv6.dailymotion.com/upload?uuid=2b10ec59fe02ab897fb5ad0ccd4b9724&seal=7d63ed895b4ae6891589cd8653f78af2
+2015-08-13 14:19:41,541- INFO(NewsPoster.java:144)-Video ID: x31in13
+2015-08-13 14:19:41,541- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload
+2015-08-13 14:19:41,723-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:41,724-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:41,724-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:41,724-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:41,851- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468381851
+2015-08-13 14:19:42,224-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:42,224-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:42,224-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:42,224-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:42,724-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:42,724-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:42,724-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:42,724-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:43,224-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:43,224-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:43,224-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:43,224-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:43,724-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:43,724-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:43,724-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:43,724-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:44,224-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:44,224-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:44,224-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:44,224-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:44,724-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:44,724-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:44,725-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:44,725-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:45,225-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:45,225-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:45,225-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:45,225-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:45,726-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:45,726-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:45,726-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:45,726-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:46,226-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:46,226-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:46,226-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:46,226-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:46,726-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:46,726-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:46,726-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:46,726-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:47,226-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:47,226-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:47,226-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:47,226-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:47,727-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:47,727-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:47,727-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:47,727-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:48,227-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:48,227-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:48,227-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:48,227-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:48,737-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:48,738-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:48,738-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:48,738-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:49,238-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:49,238-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:49,238-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:49,239-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:49,739-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:49,739-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:49,739-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:49,739-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:50,239-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:50,239-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:50,239-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:50,239-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:50,739-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:50,739-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:50,739-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:50,758-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:51,081-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:51,124-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:51,198-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:51,274-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:51,274-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:51,274-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:51,274-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:51,427-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:51,805-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:51,806-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:51,875-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:51,876-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:51,947-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:52,217-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:52,376-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:52,376-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:52,376-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:52,376-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:52,876-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:52,876-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:52,877-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:52,877-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:52,976-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:53,046-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:53,099-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:53,311-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:53,480-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:53,482-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:53,482-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:53,482-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:53,715-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:53,814-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:54,041-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:54,041-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:54,041-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:54,041-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:54,069-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:54,564-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:54,565-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:54,565-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:54,565-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:54,762-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:55,013-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:55,086-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:55,086-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:55,086-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:55,086-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:55,527-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:55,536-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:55,559-DEBUG(NewsPoster.java:345)-{"acodec":"PCM","bitrate":610069,"dimension":"1280x720","duration":31000,"format":"QuickTime","hash":"9d376fef96a21a0d01ba7517ed1c8a2ee281fd61","name":"article_7","size":2364017,"streamable":"Yes","url":"http:\/\/upload-01.dailymotion.com\/files\/4877a1fa96e9e99cc442bd4cec85fa40.mov#c2VhbD04NjcxZTg1Njg0OWE3NGM1ZTcxZTllMTczYmQxYzFhZSZhY29kZWM9UENNJmJpdHJhdGU9NjEwMDY5JmRpbWVuc2lvbj0xMjgweDcyMCZkdXJhdGlvbj0zMTAwMCZmb3JtYXQ9UXVpY2tUaW1lJmhhc2g9OWQzNzZmZWY5NmEyMWEwZDAxYmE3NTE3ZWQxYzhhMmVlMjgxZmQ2MSZuYW1lPWFydGljbGVfNyZzaXplPTIzNjQwMTcmc3RyZWFtYWJsZT1ZZXMmdmNvZGVjPUpQRUc=","vcodec":"JPEG","seal":"8671e856849a74c5e71e9e173bd1c1ae"}
+
+2015-08-13 14:19:55,587-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:55,587-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:55,587-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:55,587-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:55,810-DEBUG(NewsPoster.java:345)-{"acodec":"PCM","bitrate":539050,"dimension":"1280x720","duration":31000,"format":"QuickTime","hash":"ba6c6649db8c07b9366fe737eb8f3f25bc1766c1","name":"article_6","size":2088818,"streamable":"Yes","url":"http:\/\/upload-07.dailymotion.com\/files\/31f937c06e44e6a9aa2a2ad2ba0486a7.mov#c2VhbD1jNzc0YWY2Y2I0MmUzY2JkY2MzYzhiNTk1ZmNjMGFhYSZhY29kZWM9UENNJmJpdHJhdGU9NTM5MDUwJmRpbWVuc2lvbj0xMjgweDcyMCZkdXJhdGlvbj0zMTAwMCZmb3JtYXQ9UXVpY2tUaW1lJmhhc2g9YmE2YzY2NDlkYjhjMDdiOTM2NmZlNzM3ZWI4ZjNmMjViYzE3NjZjMSZuYW1lPWFydGljbGVfNiZzaXplPTIwODg4MTgmc3RyZWFtYWJsZT1ZZXMmdmNvZGVjPUpQRUc=","vcodec":"JPEG","seal":"c774af6cb42e3cbdcc3c8b595fcc0aaa"}
+
+2015-08-13 14:19:56,113-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:56,158-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:56,158-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:56,158-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:56,158-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:56,463- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468396463
+2015-08-13 14:19:56,653- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468396653
+2015-08-13 14:19:56,682-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:56,715-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:56,715-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:56,716-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:57,216-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:57,216-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:57,216-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:57,216-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:57,716-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:57,716-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:57,716-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:57,716-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:57,766-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:57,988-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:58,241-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:58,241-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:58,241-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:58,241-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:58,490-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:19:58,878-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:58,878-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:58,878-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:58,878-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:59,378-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:59,378-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:59,378-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:59,378-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:19:59,583-DEBUG(NewsPoster.java:345)-{"acodec":"PCM","bitrate":492975,"dimension":"1280x720","duration":31000,"format":"QuickTime","hash":"ef88534af2411a840babf8cbe91b8944a9c5d63e","name":"article_4","size":1910279,"streamable":"Yes","url":"http:\/\/upload-02.nyc.dailymotion.com\/files\/f4855edc58b3a15875c5be35eeeb774c.mov#c2VhbD02ZjZjNzU4ZTIwODBhZDZiYjc3ZTBhMDY0MmU2Y2Y1OCZhY29kZWM9UENNJmJpdHJhdGU9NDkyOTc1JmRpbWVuc2lvbj0xMjgweDcyMCZkdXJhdGlvbj0zMTAwMCZmb3JtYXQ9UXVpY2tUaW1lJmhhc2g9ZWY4ODUzNGFmMjQxMWE4NDBiYWJmOGNiZTkxYjg5NDRhOWM1ZDYzZSZuYW1lPWFydGljbGVfNCZzaXplPTE5MTAyNzkmc3RyZWFtYWJsZT1ZZXMmdmNvZGVjPUpQRUc=","vcodec":"JPEG","seal":"6f6c758e2080ad6bb77e0a0642e6cf58"}
+
+2015-08-13 14:19:59,934-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:19:59,935-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:19:59,970-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:19:59,970-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:00,316- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468400316
+2015-08-13 14:20:00,416-DEBUG(NewsPoster.java:345)-{"acodec":"PCM","bitrate":499549,"dimension":"1280x720","duration":31000,"format":"QuickTime","hash":"9783372323b2fca1bce1abefcfcddbef6d6c48c0","name":"article_3","size":1935753,"streamable":"Yes","url":"http:\/\/upload-02.sv6.dailymotion.com\/files\/4f13968cbd2ccb768c24c7ce84afefa0.mov#c2VhbD01MWIxN2ZkMWU4YjhhODI4ZGFjZjk4MWRlZmEwYjRiYSZhY29kZWM9UENNJmJpdHJhdGU9NDk5NTQ5JmRpbWVuc2lvbj0xMjgweDcyMCZkdXJhdGlvbj0zMTAwMCZmb3JtYXQ9UXVpY2tUaW1lJmhhc2g9OTc4MzM3MjMyM2IyZmNhMWJjZTFhYmVmY2ZjZGRiZWY2ZDZjNDhjMCZuYW1lPWFydGljbGVfMyZzaXplPTE5MzU3NTMmc3RyZWFtYWJsZT1ZZXMmdmNvZGVjPUpQRUc=","vcodec":"JPEG","seal":"51b17fd1e8b8a828dacf981defa0b4ba"}
+
+2015-08-13 14:20:00,470-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:00,470-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:00,471-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:00,471-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:00,671-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:01,011-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:01,011-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:01,011-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:01,011-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:01,160- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468401160
+2015-08-13 14:20:01,551-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:01,551-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:01,551-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:01,551-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:02,051-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:02,051-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:02,051-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:02,051-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:02,551-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:02,551-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:02,551-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:02,559-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:03,030-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:03,082-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:03,082-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:03,082-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:03,082-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:03,684-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:03,684-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:03,684-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:03,684-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:04,222-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:04,222-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:04,222-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:04,222-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:04,264- INFO(NewsPoster.java:796)-Params for edit video: form_name=dm_pageitem_uploadnewform_x31in0w&_csrf=54ECYuVMI2aw356UHGUcLkX7QN0Ck1pVfOmlyOLUG1I&_fid=&video_title=Watch+A+Escolha+Perfeita+2+%282015%29+Online+Full+Movie+%28HD%29+huqdmv&user_category=shortfilms&game_select=&language=en&tags_hidden=Watch+A+Escolha+Perfeita+2+%282015%29+Online+Full+Movie+%28HD%29&strongtags_hidden={"strong_tags":{},"daily_tags":[%22Watch%22%2C%22A%22%2C%22Escolha%22%2C%22Perfeita%22%2C%222%22%2C%22%282015%29%22%2C%22Online%22%2C%22Full%22%2C%22Movie%22%2C%22%28HD%29%22]}&tags=&description=Read+online+or+Download+A+Escolha+Perfeita+2+%282015%29%0D%0A%0D%0Ahttp%3A%2F%2Ftinyurl.com%2Fnp2mmw3%0D%0A%0D%0A%0D%0A%0D%0A%3Ch3%3Ea+escolha+perfeita+-+YouTube%3C%2Fh3%3E%0D%0A04%2F12%2F2012%26nbsp%3B%26%230183%3B%26%2332%3B%D0%92%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5+%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%26nbsp%3B%26%230183%3B%26%2332%3BThis+feature+is+not+available+right+now.+Please+try+again+later.%0D%0A%0D%0A%3Ch3%3EEscolha+a+base+perfeita+e+arrase+na+%E2%80%A6%3C%2Fh3%3E%0D%0AA+base+%26%23233%3B+um+item+muito+importante+na+hora+da+maquiagem.+Sua+principal+fun%26%23231%3B%26%23227%3Bo+%26%23233%3B+cobrir+as+imperfei%26%23231%3B%26%23245%3Bes%2C+dar+acabamento+e+deixar+a+pele+bonita+e+com+aspecto%0D%0A%0D%0A%3Ch3%3Eenigmas+PRESS%3C%2Fh3%3E%0D%0ALo+que+nos+record%26%23243%3B+un+viejo+libro+de+Richard+Nixon+donde+explica+que+la+III+Guerra+Mundial+ya+lleva+tiempo+se+libra+enconadamente+en+todo+el+globo%2C+en+todos+los%0D%0A%0D%0A%3Ch3%3ETrin%26%23244%3Bmio+do+Quadrado+Perfeito+-+%E2%80%A6%3C%2Fh3%3E%0D%0AEstudo+do+trin%26%23244%3Bmio+do+quadrado+perfeito.++Trin%26%23244%3Bmio+do+quadrado+perfeito+%26%23233%3B+o+3%26%23186%3B+caso+de+fatora%26%23231%3B%26%23227%3Bo+de+express%26%23227%3Bo+alg%26%23233%3Bbrica.%0D%0A%0D%0A%3Ch3%3EENAP+-+Escola+Nacional+de+%E2%80%A6%3C%2Fh3%3E%0D%0ATurmas+encontradas+para+o+per%26%23237%3Bodo%3A+24%3A+Cursos%3A+Turmas+dispon%26%23237%3Bveis%2F+Per%26%23237%3Bodo+do+curso+%28CON%29+Gest%26%23227%3Bo+da+Informa%26%23231%3B%26%23227%3Bo+e+Documenta%26%23231%3B%26%23227%3Bo+-+Conceitos+b%26%23225%3Bsicos+em+Gest%26%23227%3Bo%0D%0A%0D%0A%3Ch3%3EPitch+Perfect+%E2%80%93+Wikip%26%23233%3Bdia%2C+a+%E2%80%A6%3C%2Fh3%3E%0D%0APitch+Perfect+%28Um+Ritmo+Perfeito+%28t%26%23237%3Btulo+em+Portugal%29+ou+A+Escolha+Perfeita+%28t%26%23237%3Btulo+no+Brasil%29%29+%26%23233%3B+uma+com%26%23233%3Bdia+musical+dirigida+por+Jason+Moore+e+baseada+no+livro%0D%0A%0D%0A%3Ch3%3EF%26%23233%3Bd%26%23233%3Bration+Internationale+de+Football+%E2%80%A6%3C%2Fh3%3E%0D%0ALa+%26%23250%3Bltima+columna+del+Presidente+de+la+FIFA%2C+adem%26%23225%3Bs+de+an%26%23225%3Blisis%2C+reportajes+e+im%26%23225%3Bgenes.+La+revista+The+FIFA+Weekly+aparece+todos+los+viernes%2C+tanto+en+papel+como%0D%0A%0D%0A%3Ch3%3EKanela+y+Lim%26%23243%3Bn%3A+La+hamburguesa+%E2%80%A6%3C%2Fh3%3E%0D%0A09%2F10%2F2013%26nbsp%3B%26%230183%3B%26%2332%3BSe+pueden+votar+hasta+5+blogs+dentro+de+la+misma+categor%26%23237%3Ba%2C+as%26%23237%3B+que+si+Kanela+y+Lim%26%23243%3Bn%2C+se+encuentra+entre+tus+5+blogs+favoritos%2C+ser%26%23237%3Ba+un+honor+para%0D%0A%0D%0A%3Ch3%3EEurovisi%26%23243%3Bn+2015+-+Web+oficial+-+%E2%80%A6%3C%2Fh3%3E%0D%0AEurovisi%26%23243%3Bn+2016+se+celebrar%26%23225%3B+en+Estocolmo+el+10%2C+12+y+14+de+mayo%3B+El+ganador+de+Eurovisi%26%23243%3Bn+2015%2C+M%26%23229%3Bns+Zelmerl%26%23246%3Bw%2C+visita+%3B+Cinco+motivos+por+los+que+nunca%0D%0A&privacy=0&allow_comments=1&recordedOn=2015/05/14&from_publish=1&from_request=/upload&_csrf_l=XXz8HdY5SKMLzLzZh97UcqOnpQIv8EwWIGlYkB8ljQQ
+2015-08-13 14:20:04,539-DEBUG(NewsPoster.java:345)-{"acodec":"PCM","bitrate":550041,"dimension":"1280x720","duration":31000,"format":"QuickTime","hash":"6d80d10fb6a7d6fbafaee961fa279da84d5cb3e4","name":"article_8","size":2131408,"streamable":"Yes","url":"http:\/\/upload-02.sv6.dailymotion.com\/files\/2b10ec59fe02ab897fb5ad0ccd4b9724.mov#c2VhbD02ZjExZTBmNTQxYmVlN2FhODgyYWE1MTY2MGE2ZWYyNSZhY29kZWM9UENNJmJpdHJhdGU9NTUwMDQxJmRpbWVuc2lvbj0xMjgweDcyMCZkdXJhdGlvbj0zMTAwMCZmb3JtYXQ9UXVpY2tUaW1lJmhhc2g9NmQ4MGQxMGZiNmE3ZDZmYmFmYWVlOTYxZmEyNzlkYTg0ZDVjYjNlNCZuYW1lPWFydGljbGVfOCZzaXplPTIxMzE0MDgmc3RyZWFtYWJsZT1ZZXMmdmNvZGVjPUpQRUc=","vcodec":"JPEG","seal":"6f11e0f541bee7aa882aa51660a6ef25"}
+
+2015-08-13 14:20:04,836-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:04,869-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:04,869-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:04,869-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:05,378- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468405378
+2015-08-13 14:20:05,390-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:05,390-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:05,390-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:05,390-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:05,907-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:05,908-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:05,908-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:05,908-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:06,471-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:06,471-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:06,471-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:06,472-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:06,975-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:06,987-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:06,987-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:06,987-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:07,496-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:07,514-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:07,515-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:07,515-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:08,043-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:08,044-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:08,044-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:08,044-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:08,547-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:08,547-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:08,547-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:08,547-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:09,047-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:09,047-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:09,047-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:09,047-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:09,547-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:09,547-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:09,547-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:09,547-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:09,848- INFO(NewsPoster.java:796)-Params for edit video: form_name=dm_pageitem_uploadnewform_x31in0x&_csrf=54ECYuVMI2aw356UHGUcLkX7QN0Ck1pVfOmlyOLUG1I&_fid=&video_title=Watch+Kingsman%3A+Servico+Secreto+%282014%29+Online+Full+Movie+%28HD%29+hrpgod&user_category=news&game_select=&language=en&tags_hidden=Watch+Kingsman%3A+Servico+Secreto+%282014%29+Online+Full+Movie+%28HD%29&strongtags_hidden={"strong_tags":{},"daily_tags":[%22Watch%22%2C%22Kingsman%3A%22%2C%22Servico%22%2C%22Secreto%22%2C%22%282014%29%22%2C%22Online%22%2C%22Full%22%2C%22Movie%22%2C%22%28HD%29%22]}&tags=&description=Read+online+or+Download+Kingsman%3A+Servico+Secreto+%282014%29%0D%0A%0D%0Ahttp%3A%2F%2Ftinyurl.com%2Fncceeuo%0D%0A%0D%0A%0D%0A%0D%0A%3Ch3%3EKingsman%3A+Servicio+Secreto+%282014%29+-+%E2%80%A6%3C%2Fh3%3E%0D%0AKingsman%3A+Servicio+Secreto+%282014%29%3A+Pel%26%23237%3Bcula+de+Matthew+Vaughn+protagonizada+por+Colin+Firth%2C+Samuel+L.+Jackson+y+Michael+Caine%0D%0A%0D%0A%3Ch3%3EKingsman%3A+Servicio+Secreto+%282014%29+-+%E2%80%A6%3C%2Fh3%3E%0D%0AKingsman%3A+Servicio+Secreto+-+2014+%28.%29.+Trailer%2C+video%2C+fotos%2C+reparto.+8.1%2F10+con+31+votos.+Definida+como+un+cruce+entre+%27James+Bond%27+y+%27My+Fair+Lady%27%2C+cuenta+la%0D%0A%0D%0A%3Ch3%3EKingsman.+Servicio+secreto+%282014%29+-+%E2%80%A6%3C%2Fh3%3E%0D%0AKingsman.+Servicio+secreto+dirigida+por+Matthew+Vaughn.+Con+Colin+Firth%2C+Taron+Egerton%2C+Samuel+L.+Jackson%2C+Mark+Strong%2C+Michael+Caine%2C+Sofia+Boutella%2C+Sophie+%E2%80%A6%0D%0A%0D%0A%3Ch3%3EKingsman%3A+Servicio+secreto+-+Pel%26%23237%3Bcula+%E2%80%A6%3C%2Fh3%3E%0D%0APel%26%23237%3Bcula+no+recomendada+a+menores+de+16+a%26%23241%3Bos.+El+director+Matthew+Vaughn+%28%27Kick-Ass%3A+Listo+para+machacar%27%2C+%27X-Men%3A+Primera+Generaci%26%23243%3Bn%27%29+adapta+el+nuevo+c%26%23243%3Bmic+del%0D%0A%0D%0A%3Ch3%3EKingsman%3A+Servicio+Secreto+-+%E2%80%A6%3C%2Fh3%3E%0D%0ABasada+en+el+aclamado+libro+de+c%26%23243%3Bmics+y+dirigida+por+Matthew+Vaughn+%28Kick+Ass%2C+X-Men+Primera+Generaci%26%23243%3Bn%29%2C+Kingsman%3A+Servicio+Secreto+cuenta+la+historia+de+una%0D%0A%0D%0A%3Ch3%3ETr%26%23225%3Biler+Kingsman%3A+Servicio+secreto+-+%E2%80%A6%3C%2Fh3%3E%0D%0AKingsman%3A+Servicio+secreto+Tr%26%23225%3Biler+-+Mira+Kingsman%3A+Servicio+secreto%2C+una+pel%26%23237%3Bcula+dirigida+de+Matthew+Vaughn+con+Colin+Firth%2C+Samuel+L.+Jackson.+Encuentra+m%26%23225%3Bs%0D%0A%0D%0A%3Ch3%3EKINGSMAN%3A+SERVICIO+SECRETO+%7C+%E2%80%A6%3C%2Fh3%3E%0D%0A19%2F12%2F2014%26nbsp%3B%26%230183%3B%26%2332%3B%D0%92%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5+%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%26nbsp%3B%26%230183%3B%26%2332%3BColin+Firth+es+un+veterano+agente+secreto+que+toma+bajo+su+protecci%26%23243%3Bn+a+un+joven+descarriado+%28Taron+Egerton%29+para+convertirlo+en+la+%26%23233%3Blite+%E2%80%A6%0D%0A%0D%0A%3Ch3%3EKingsman%3A+Servicio+secreto+%282015%29+%7C+%E2%80%A6%3C%2Fh3%3E%0D%0AVer+Pelicula+Kingsman%3A+Servicio+secreto+%282015%29+%5BDVD-Rip%5D+online.+Ver+Kingsman%3A+The+Secret+Service+%282015%29+espanol+latino+online+gratis.+Pel%26%23237%3Bcula+Completa+de+Acci%26%23243%3Bn%0D%0A%0D%0A%3Ch3%3EKingsman%3A+El+Servicio+Secreto+%282015%29+%E2%80%A6%3C%2Fh3%3E%0D%0AKingsman%3A+El+Servicio+Secreto+cuenta+la+historia+de+una+organizaci%26%23243%3Bn+s%26%23250%3Bper+secreta+de+espionaje+que+recluta+a+un+ni%26%23241%3Bo+de+la+calle+sin+refinar%2C+pero+con+mucho+para+dar.%0D%0A%0D%0A%3Ch3%3EKingsman%3A+El+Servicio+Secreto+%282015%29+%E2%80%A6%3C%2Fh3%3E%0D%0ADescargar+y+Mirar+Online+Gratis%3A+Kingsman%3A+El+Servicio+Secreto+%282015%29+DVDRip+.AVI+Audio+Espa%26%23241%3Bol+Latino+en+1+Link+por+4Shared%2C+1Fichier%2C+MEGA+y+Mas+-+CLON.%0D%0A&privacy=0&allow_comments=1&recordedOn=2015/05/14&from_publish=1&from_request=/upload&_csrf_l=U8cAqtZMc8HvCwSDGEx71gMyKu48lBAN0fM7dxBYkSo
+2015-08-13 14:20:10,047-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:10,047-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:10,047-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:10,047-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:10,547-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:10,547-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:10,547-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:10,547-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:11,048-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:11,048-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:11,048-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:11,048-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:11,563-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:11,563-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:11,563-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:11,563-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:12,064-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:12,064-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:12,064-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:12,064-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:12,628-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:12,628-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:12,628-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:12,628-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:13,128-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:13,128-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:13,128-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:13,128-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:13,628-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:13,628-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:13,628-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:13,628-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:14,128-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:14,128-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:14,128-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:14,128-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:14,672-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:14,672-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:14,672-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:14,672-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:15,148- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/ajax/video
+2015-08-13 14:20:15,172-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:15,172-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:15,172-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:15,172-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:15,673-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:15,673-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:15,673-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:15,673-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:15,843-DEBUG(VideoPosterThread.java:250)-Delete video file: article_7.mov
+2015-08-13 14:20:15,844-DEBUG(VideoPosterThread.java:259)-Delete video file: article_7_wo_audio.mov
+2015-08-13 14:20:15,845-DEBUG(AccountFactory.java:263)-Posted account news incremented: 1
+2015-08-13 14:20:15,845-DEBUG(AccountFactory.java:275)-Used account size decremented: 4
+2015-08-13 14:20:15,845-DEBUG(TaskFactory.java:73)-DEC thread: 4
+2015-08-13 14:20:16,173-DEBUG(AccountFactory.java:244)-Used account size incremented: 5
+2015-08-13 14:20:16,173-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:16,173-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:16,173-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_5.txt
+2015-08-13 14:20:16,173-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 4. Error tasks: 0
+2015-08-13 14:20:16,173-DEBUG(TaskFactory.java:68)-INC thread: 5
+2015-08-13 14:20:16,174-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:16,174-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:16,174-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:16,174-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:16,175-DEBUG(NewsTask.java:80)-File content: Jurassic Park (1993)
+Watch Jurassic Park (1993) Online Full Movie (HD)
+http://tinyurl.com/pgyufrf
+http://i.imgur.com/lQLbvAJ.jpg
+
+2015-08-13 14:20:16,176-DEBUG(NewsTask.java:107)-Image found: http://i.imgur.com/lQLbvAJ.jpg
+2015-08-13 14:20:16,567-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/pgyufrf
+2015-08-13 14:20:16,760-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:16,760-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:16,760-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:16,761-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:17,261-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:17,261-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:17,261-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:17,261-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:17,761-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:17,761-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:17,761-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:17,761-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:18,261-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:18,261-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:18,261-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:18,261-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:18,502- INFO(NewsPoster.java:796)-Params for edit video: form_name=dm_pageitem_uploadnewform_x31in0z&_csrf=54ECYuVMI2aw356UHGUcLkX7QN0Ck1pVfOmlyOLUG1I&_fid=&video_title=Watch+Spy%3A+Una+espia+despistada+%282015%29+Online+Full+Movie+%28HD%29+nudq&user_category=sport&game_select=&language=en&tags_hidden=Watch+Spy%3A+Una+espia+despistada+%282015%29+Online+Full+Movie+%28HD%29&strongtags_hidden={"strong_tags":{},"daily_tags":[%22Watch%22%2C%22Spy%3A%22%2C%22Una%22%2C%22espia%22%2C%22despistada%22%2C%22%282015%29%22%2C%22Online%22%2C%22Full%22%2C%22Movie%22%2C%22%28HD%29%22]}&tags=&description=Read+online+or+Download+Spy%3A+Una+espia+despistada+%282015%29%0D%0A%0D%0Ahttp%3A%2F%2Ftinyurl.com%2Fovfbdob%0D%0A%0D%0A%0D%0A%0D%0A%3Ch3%3ESpy%3A+una+esp%26%23237%3Ba+despistada+%282015%29+%7C+Ver+Pel%26%23237%3Bcula+Online%3C%2Fh3%3E%0D%0ASPY%3A+Una+espia+despistada+%28Spy%29+%282015%29+VER+COMPLETA+ONLINE+1080p+FULL+HD%0D%0A%0D%0A%3Ch3%3ESpy+Una+Esp%26%23237%3Ba+Despistada%3C%2Fh3%3E%0D%0ADescargar+y+Ver+Online+Gratis%3A+Spy%3A+Una+Esp%26%23237%3Ba+Despistada+%282015%29+BRs+HD+1080p+y+720p+Subtitulada+en+Espa%26%23241%3Bol+en+1+Link+por+MEGA%2C+4Shared+y+Mas+Completa.%0D%0A%0D%0A%3Ch3%3EMiraDeTodo+-+SPY%3A+Una+espia+despistada+%28Spy%29+%282015%29+%E2%80%A6%3C%2Fh3%3E%0D%0Aver+pelicula+Spy%3A+Una+esp%26%23237%3Ba+despistada+%282015%29+online+megavideo+Spy%3A+Una+esp%26%23237%3Ba+despistada+%282015%29+online+espa%26%23241%3Bol+latino+Spy%3A+Una+esp%26%23237%3Ba+despistada+%282015%29+online%0D%0A%0D%0A%3Ch3%3ESpy%3A+Una+Esp%26%23237%3Ba+Despistada+%282015%29+HD+Subtitulada+-+%E2%80%A6%3C%2Fh3%3E%0D%0ADescargar+y+Mirar+Online+Gratis%3A+Spy%3A+Una+Esp%26%23237%3Ba+Despistada+%282015%29+DVDs+.+AVI+Subtitulada+en+Espa%26%23241%3Bol+por+4Shared%2C+MEGA%2C+1Fichier+y+Mas+en+1+Link+-+CLON.%0D%0A%0D%0A%3Ch3%3EVer+Pelicula+Spy%3A+Una+esp%26%23237%3Ba+despistada+%282015%29+Online%3C%2Fh3%3E%0D%0ASinopsis.+Esp%26%23237%3Bas%3A+Spy+Una+Esp%26%23237%3Ba+Despistada%3A+Las+desventuras+del+agente+secreto+Susan+Cooper+%28Melissa+McCarthy%29%2C+analista+de+la+CIA+y+la+hero%26%23237%3Bna+que+est%26%23225%3B+detr%26%23225%3Bs%0D%0A&privacy=0&allow_comments=1&recordedOn=2015/05/14&from_publish=1&from_request=/upload&_csrf_l=U8cAqtZMc8HvCwSDGEx71gMyKu48lBAN0fM7dxBYkSo
+2015-08-13 14:20:18,761-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:18,761-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:18,761-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:18,761-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:19,261-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:19,261-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:19,288-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:19,288-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:19,788-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:19,788-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:19,788-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:19,788-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:20,288-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:20,288-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:20,288-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:20,288-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:20,295- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/ajax/video
+2015-08-13 14:20:20,788-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:20,788-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:20,788-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:20,788-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:21,198-DEBUG(VideoPosterThread.java:250)-Delete video file: article_6.mov
+2015-08-13 14:20:21,199-DEBUG(VideoPosterThread.java:259)-Delete video file: article_6_wo_audio.mov
+2015-08-13 14:20:21,200-DEBUG(AccountFactory.java:263)-Posted account news incremented: 2
+2015-08-13 14:20:21,200-DEBUG(AccountFactory.java:275)-Used account size decremented: 4
+2015-08-13 14:20:21,200-DEBUG(TaskFactory.java:73)-DEC thread: 4
+2015-08-13 14:20:21,288-DEBUG(AccountFactory.java:244)-Used account size incremented: 5
+2015-08-13 14:20:21,288-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:21,288-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:21,288-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_9.txt
+2015-08-13 14:20:21,288-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 3. Error tasks: 0
+2015-08-13 14:20:21,288-DEBUG(TaskFactory.java:68)-INC thread: 5
+2015-08-13 14:20:21,289-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:21,289-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:21,289-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:21,289-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:21,289-DEBUG(NewsTask.java:80)-File content: Tomorrowland (2015)
+Watch Tomorrowland (2015) Online Full Movie (HD)
+http://tinyurl.com/o96wqhf
+http://i.imgur.com/cxCsGuq.jpg
+
+2015-08-13 14:20:21,290-DEBUG(NewsTask.java:107)-Image found: http://i.imgur.com/cxCsGuq.jpg
+2015-08-13 14:20:21,509-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/o96wqhf
+2015-08-13 14:20:21,891-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:21,891-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:21,891-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:21,891-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:22,442-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:22,442-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:22,442-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:22,442-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:22,989-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:22,989-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:22,989-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:22,989-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:23,212- INFO(NewsPoster.java:796)-Params for edit video: form_name=dm_pageitem_uploadnewform_x31in13&_csrf=54ECYuVMI2aw356UHGUcLkX7QN0Ck1pVfOmlyOLUG1I&_fid=&video_title=Watch+Z+for+Zachariah+%282015%29+Online+Full+Movie+%28HD%29+kbpx&user_category=animals&game_select=&language=en&tags_hidden=Watch+Z+for+Zachariah+%282015%29+Online+Full+Movie+%28HD%29&strongtags_hidden={"strong_tags":{},"daily_tags":[%22Watch%22%2C%22Z%22%2C%22for%22%2C%22Zachariah%22%2C%22%282015%29%22%2C%22Online%22%2C%22Full%22%2C%22Movie%22%2C%22%28HD%29%22]}&tags=&description=Read+online+or+Download+Z+for+Zachariah+%282015%29%0D%0A%0D%0Ahttp%3A%2F%2Ftinyurl.com%2Fpfd9ty5%0D%0A%0D%0A%0D%0A%0D%0A%3Ch3%3EZ+for+Zachariah+%28film%29+-+Wikipedia%2C+the+free+encyclopedia%3C%2Fh3%3E%0D%0AZ+for+Zachariah+is+a+2015+American+science+fiction+drama+film%2C+based+on+the+book+of+the+same+name+by+Robert+C.+O%27Brien%2C+directed+by+Craig+Zobel+and+written+by+Nissar%0D%0A%0D%0A%3Ch3%3EZ+For+Zachariah+%282015%29+-+Rotten+Tomatoes%3C%2Fh3%3E%0D%0AIn+the+wake+of+a+nuclear+war%2C+a+young+woman+survives+on+her+own%2C+fearing+she+may+actually+be+the+proverbial+last+woman+on+earth%2C+until+she+discovers+the+most%0D%0A%0D%0A%3Ch3%3E%27Z+For+Zachariah%2C%27+Like+%27Hunger+Games%27+For+Older+Siblings+%E2%80%A6%3C%2Fh3%3E%0D%0AJan+26%2C+2015%26nbsp%3B%26%230183%3B%26%2332%3BIn+%E2%80%9CZ+for+Zachariah%2C%E2%80%9D+based+on+the+book+by+the+same+name%2C+that%E2%80%99s+sort+of+the+case.+And+then+another+dude+shows+up.+But+let%E2%80%99s+back+up.+The+film%0D%0A%0D%0A%3Ch3%3EZ+for+Zachariah+%282015%29+Movie+Trailer+%7C+Movie-%3C%2Fh3%3E%0D%0AWatch+the+movie+trailer+for+Z+for+Zachariah+%282015%29+on+Movie-List.+Directed+by+Craig+Zobel+and+starring+Margot+Robbie%2C+Chris+Pine%2C+Chiwetel+Ejiofor+and.+In+the+wake+of%0D%0A%0D%0A%3Ch3%3EZ+for+Zachariah+%282015%29+Trailer+-+Trailer+Addict%3C%2Fh3%3E%0D%0AIn+the+wake+of+a+nuclear+war%2C+a+young+woman+%28Margot+Robbie%29+survives+on+her+own%2C+fearing+she+may+actually+be+the+proverbial+last+woman+on+earth%2C+until+she+discovers%0D%0A&privacy=0&allow_comments=1&recordedOn=2015/05/14&from_publish=1&from_request=/upload&_csrf_l=U8cAqtZMc8HvCwSDGEx71gMyKu48lBAN0fM7dxBYkSo
+2015-08-13 14:20:23,489-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:23,489-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:23,489-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:23,489-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:23,989-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:23,989-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:23,989-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:23,989-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:24,260- INFO(NewsPoster.java:796)-Params for edit video: form_name=dm_pageitem_uploadnewform_x31in0y&_csrf=54ECYuVMI2aw356UHGUcLkX7QN0Ck1pVfOmlyOLUG1I&_fid=&video_title=Watch+Mad+Max%3A+Estrada+da+Furia+%282015%29+Online+Full+Movie+%28HD%29+sqtdf&user_category=webcam&game_select=&language=en&tags_hidden=Watch+Mad+Max%3A+Estrada+da+Furia+%282015%29+Online+Full+Movie+%28HD%29&strongtags_hidden={"strong_tags":{},"daily_tags":[%22Watch%22%2C%22Mad%22%2C%22Max%3A%22%2C%22Estrada%22%2C%22da%22%2C%22Furia%22%2C%22%282015%29%22%2C%22Online%22%2C%22Full%22%2C%22Movie%22%2C%22%28HD%29%22]}&tags=&description=Read+online+or+Download+Mad+Max%3A+Estrada+da+Furia+%282015%29%0D%0A%0D%0Ahttp%3A%2F%2Ftinyurl.com%2Fofs4cc2%0D%0A%0D%0A%0D%0A%0D%0A%3Ch3%3EMad+Max%3A+Estrada+da+F%26%23250%3Bria+First+Look+Trailer+da+%E2%80%A6%3C%2Fh3%3E%0D%0AROTEIRO+Mad+Max%3A+Estrada+da+F%26%23250%3Bria.+Roteiro+escrito+por+Brendan+McCarthy%2C+Nick+Lathouris+e+George+Miller.+TRILHA+SONORA+Mad+Max%3A+Estrada+da+F%26%23250%3Bria%0D%0A%0D%0A%3Ch3%3EMad+Max%3A+Estrada+da+F%26%23250%3Bria+-+Trailer+Oficial+%E2%80%A6%3C%2Fh3%3E%0D%0AArgentina%3A+Mad+Max%3A+Furia+en+el+camino%3A+Australia+%28working+title%29+Mad+Max+4%3A+Bulgaria+%28Bulgarian+title%29+%D0%9B%D1%83%D0%B4%D0%B8%D1%8F%D1%82+%D0%9C%D0%B0%D0%BA%D1%81%3A+%D0%9F%D1%8A%D1%82+%D0%BD%D0%B0+%D1%8F%D1%80%D0%BE%D1%81%D1%82%D1%82%D0%B0%0D%0A%0D%0A%3Ch3%3EMAD+MAX%3A+ESTRADA+DA+F%26%23218%3BRIA+-+2015+-+Filme+em+%E2%80%A6%3C%2Fh3%3E%0D%0AMad+Max%3A+Estrada+da+F%26%23250%3Bria+24%2F06%2F2015+%7C+Por+Coveiro.+INFORMA%26%23199%3B%26%23213%3BES+DO+FILME.+Nome+Original%3A+Mad+Max%3A+Fury+Road+Dire%26%23231%3B%26%23227%3Bo%3A+George+Miller+Ano+de+Lan%26%23231%3Bamento%3A+2015%0D%0A%0D%0A%3Ch3%3EMad+Max%3A+Fury+Road+%282015%29+-+Release+Info+-+IMDb%3C%2Fh3%3E%0D%0AGET+INFORMED.+Industry+information+at+your+fingertips.+GET+CONNECTED.+Over+200%2C000+Hollywood+insiders.+GET+DISCOVERED.+Enhance+your+IMDb+Page.+Go+to+%E2%80%A6%0D%0A%0D%0A%3Ch3%3EMad+Max%3A+Estrada+da+F%26%23250%3Bria+-+S%26%23243%3B+Baixar%3C%2Fh3%3E%0D%0ARespire+fundo.+Sabe+aquele+som+que+a+gente+ouve+quando+abre+o+Skype%3F+Aquilo.+Se+voc%26%23234%3B+s%26%23243%3B+gosta+de+pequenos+filmes+%26%23237%3Bntimos%2C+quietos%2C+introspectivos%2C+contemplativos%0D%0A%0D%0A%3Ch3%3EMad+Max%3A+Fury+Road+%282015%29+-+IMDb%3C%2Fh3%3E%0D%0AMad+Max+-+Estrada+da+F%26%23250%3Bria+download+Assombrado+por+seu+turbulento+passado%2C+Mad+Max+acredita+que+a+melhor+maneira+de+sobreviver+%26%23233%3B+vagar+sozinho.%0D%0A%0D%0A%3Ch3%3EMad+Max%2C+Estrada+da+F%26%23250%3Bria%3A+a+sinfonia+do+caos%3C%2Fh3%3E%0D%0AOS+CARROS+DE+MAD+MAX%3A+ESTRADA+DA+F%26%23218%3BRIA+Conhe%26%23231%3Ba+em+detalhes+os+principais+ve%26%23237%3Bculos+do+novo+filme+da+saga+p%26%23243%3Bs-apocal%26%23237%3Bptica%0D%0A%0D%0A%3Ch3%3EDownload+Mad+Max%3A+Estrada+da+F%26%23250%3Bria+%7C+Yes+Filmes%3C%2Fh3%3E%0D%0ASinopse+Assombrado+por+seu+turbulento+passado%2C+Mad+Max+acredita+que+a+melhor+maneira+de+sobreviver+%26%23233%3B+vagar+sozinho.+No+entanto%2C+ele+%26%23233%3B+levado+por+um+grupo+em+fuga%0D%0A&privacy=0&allow_comments=1&recordedOn=2015/05/14&from_publish=1&from_request=/upload&_csrf_l=U8cAqtZMc8HvCwSDGEx71gMyKu48lBAN0fM7dxBYkSo
+2015-08-13 14:20:24,513-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:24,513-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:24,513-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:24,514-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:25,014-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:25,014-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:25,014-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:25,014-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:25,514-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:25,514-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:25,514-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:25,514-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:26,018-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:26,018-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:26,018-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:26,018-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:26,571-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:26,571-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:26,571-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:26,571-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:27,078-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:27,078-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:27,078-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:27,078-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:27,579-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:27,579-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:27,579-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:27,579-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:28,079-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:28,079-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:28,079-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:28,079-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:28,248-DEBUG(VideoPosterThread.java:210)-Keywords: task.getKeyWords(). Snippet count: 6
+2015-08-13 14:20:28,621-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:28,621-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:28,621-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:28,621-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:28,819- INFO(NewsPoster.java:101)-Upload URL: http://upload-02.sv6.dailymotion.com/upload?uuid=55fa8145b6f758e836c394b002c3b521&seal=f6c109f0264c4ce98de08b102b53c4a9
+2015-08-13 14:20:29,121-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:29,121-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:29,121-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:29,121-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:29,126- INFO(NewsPoster.java:144)-Video ID: x31in4i
+2015-08-13 14:20:29,126- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload
+2015-08-13 14:20:29,434- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/ajax/video
+2015-08-13 14:20:29,569- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468429569
+2015-08-13 14:20:29,675-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:29,675-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:29,675-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:29,675-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:30,000-DEBUG(VideoPosterThread.java:250)-Delete video file: article_4.mov
+2015-08-13 14:20:30,001-DEBUG(VideoPosterThread.java:259)-Delete video file: article_4_wo_audio.mov
+2015-08-13 14:20:30,001-DEBUG(AccountFactory.java:263)-Posted account news incremented: 3
+2015-08-13 14:20:30,002-DEBUG(AccountFactory.java:275)-Used account size decremented: 4
+2015-08-13 14:20:30,002-DEBUG(TaskFactory.java:73)-DEC thread: 4
+2015-08-13 14:20:30,176-DEBUG(AccountFactory.java:244)-Used account size incremented: 5
+2015-08-13 14:20:30,176-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:30,176-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:30,176-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_10.txt
+2015-08-13 14:20:30,176-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 2. Error tasks: 0
+2015-08-13 14:20:30,176-DEBUG(TaskFactory.java:68)-INC thread: 5
+2015-08-13 14:20:30,177-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:30,177-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:30,178-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:30,178-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:30,179-DEBUG(NewsTask.java:80)-File content: Avengers: Era de Ultron (2015)
+Watch Avengers: Era de Ultron (2015) Online Full Movie (HD)
+http://tinyurl.com/pfbwpto
+http://i.imgur.com/vFD150x.jpg
+
+2015-08-13 14:20:30,179-DEBUG(NewsTask.java:107)-Image found: http://i.imgur.com/vFD150x.jpg
+2015-08-13 14:20:30,379-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/pfbwpto
+2015-08-13 14:20:30,738-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:30,750-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:30,750-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:30,750-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:31,250-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:31,250-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:31,250-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:31,250-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:31,759-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:31,759-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:31,759-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:31,760-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:32,278-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:32,278-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:32,278-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:32,278-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:32,778-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:32,778-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:32,778-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:32,778-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:33,124-DEBUG(VideoPosterThread.java:210)-Keywords: task.getKeyWords(). Snippet count: 8
+2015-08-13 14:20:33,323-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:33,324-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:33,324-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:33,324-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:33,665- INFO(NewsPoster.java:101)-Upload URL: http://upload-07.dailymotion.com/upload?uuid=e80ceabdb83266c8a4650c6eb03b09c5&seal=491f2c3dd77c7d22e83b0e5588be12be
+2015-08-13 14:20:33,824-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:33,824-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:33,824-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:33,824-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:33,958- INFO(NewsPoster.java:144)-Video ID: x31in53
+2015-08-13 14:20:33,958- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload
+2015-08-13 14:20:34,134- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/ajax/video
+2015-08-13 14:20:34,310- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468434310
+2015-08-13 14:20:34,324-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:34,324-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:34,324-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:34,324-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:34,618-DEBUG(VideoPosterThread.java:250)-Delete video file: article_8.mov
+2015-08-13 14:20:34,619-DEBUG(VideoPosterThread.java:259)-Delete video file: article_8_wo_audio.mov
+2015-08-13 14:20:34,619-DEBUG(AccountFactory.java:263)-Posted account news incremented: 4
+2015-08-13 14:20:34,619-DEBUG(AccountFactory.java:275)-Used account size decremented: 4
+2015-08-13 14:20:34,619-DEBUG(TaskFactory.java:73)-DEC thread: 4
+2015-08-13 14:20:34,855-DEBUG(AccountFactory.java:244)-Used account size incremented: 5
+2015-08-13 14:20:34,855-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:34,855-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:34,855-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_1.txt
+2015-08-13 14:20:34,855-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 1. Error tasks: 0
+2015-08-13 14:20:34,855-DEBUG(TaskFactory.java:68)-INC thread: 5
+2015-08-13 14:20:34,855-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:34,855-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:34,855-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:34,856-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:34,889-DEBUG(NewsTask.java:80)-File content: Jurassic World (2015)
+Watch Jurassic World (2015) Online Full Movie (HD)
+http://tinyurl.com/pk68c9h
+http://i.imgur.com/SqBkE2X.jpg
+
+2015-08-13 14:20:34,890-DEBUG(NewsTask.java:107)-Image found: http://i.imgur.com/SqBkE2X.jpg
+2015-08-13 14:20:35,009-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/pk68c9h
+2015-08-13 14:20:35,172- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/ajax/video
+2015-08-13 14:20:35,420-DEBUG(AccountFactory.java:244)-Used account size incremented: 6
+2015-08-13 14:20:35,420-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:35,420-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:35,420-DEBUG(AccountFactory.java:275)-Used account size decremented: 5
+2015-08-13 14:20:35,672-DEBUG(VideoPosterThread.java:250)-Delete video file: article_3.mov
+2015-08-13 14:20:35,673-DEBUG(VideoPosterThread.java:259)-Delete video file: article_3_wo_audio.mov
+2015-08-13 14:20:35,674-DEBUG(AccountFactory.java:263)-Posted account news incremented: 5
+2015-08-13 14:20:35,674-DEBUG(AccountFactory.java:275)-Used account size decremented: 4
+2015-08-13 14:20:35,674-DEBUG(TaskFactory.java:73)-DEC thread: 4
+2015-08-13 14:20:35,942-DEBUG(AccountFactory.java:244)-Used account size incremented: 5
+2015-08-13 14:20:35,942-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:35,942-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:35,942-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_2.txt
+2015-08-13 14:20:35,942-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 0. Error tasks: 0
+2015-08-13 14:20:35,942-DEBUG(TaskFactory.java:68)-INC thread: 5
+2015-08-13 14:20:35,943-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:35,943-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:35,943-DEBUG(AccountFactory.java:275)-Used account size decremented: 4
+2015-08-13 14:20:35,944-DEBUG(NewsTask.java:80)-File content: The Martian (2015)
+Watch The Martian (2015) Online Full Movie (HD)
+http://tinyurl.com/np8n3wf
+http://i.imgur.com/lCtKZWX.jpg
+
+2015-08-13 14:20:35,945-DEBUG(NewsTask.java:107)-Image found: http://i.imgur.com/lCtKZWX.jpg
+2015-08-13 14:20:36,163-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/np8n3wf
+2015-08-13 14:20:36,453-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:36,453-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:36,453-DEBUG(AccountFactory.java:275)-Used account size decremented: 3
+2015-08-13 14:20:36,953-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:36,953-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:36,953-DEBUG(AccountFactory.java:275)-Used account size decremented: 2
+2015-08-13 14:20:37,453-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:37,453-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:37,453-DEBUG(AccountFactory.java:275)-Used account size decremented: 1
+2015-08-13 14:20:37,953-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:37,953-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:37,953-DEBUG(AccountFactory.java:275)-Used account size decremented: 0
+2015-08-13 14:20:38,454-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:38,454-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:38,454-DEBUG(AccountFactory.java:275)-Used account size decremented: -1
+2015-08-13 14:20:38,954-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:38,954-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:38,954-DEBUG(AccountFactory.java:275)-Used account size decremented: -2
+2015-08-13 14:20:39,455-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:39,456-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:39,456-DEBUG(AccountFactory.java:275)-Used account size decremented: -3
+2015-08-13 14:20:39,989-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:39,989-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:39,989-DEBUG(AccountFactory.java:275)-Used account size decremented: -4
+2015-08-13 14:20:40,490-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:40,490-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:40,490-DEBUG(AccountFactory.java:275)-Used account size decremented: -5
+2015-08-13 14:20:40,690-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:41,215-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:41,215-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:41,215-DEBUG(AccountFactory.java:275)-Used account size decremented: -6
+2015-08-13 14:20:41,718-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:41,719-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:41,719-DEBUG(AccountFactory.java:275)-Used account size decremented: -7
+2015-08-13 14:20:42,104-DEBUG(VideoPosterThread.java:210)-Keywords: task.getKeyWords(). Snippet count: 4
+2015-08-13 14:20:42,276-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:42,277-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:42,277-DEBUG(AccountFactory.java:275)-Used account size decremented: -8
+2015-08-13 14:20:42,837-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:42,838-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:42,838-DEBUG(AccountFactory.java:275)-Used account size decremented: -9
+2015-08-13 14:20:43,005- INFO(NewsPoster.java:101)-Upload URL: http://upload-02.nyc.dailymotion.com/upload?uuid=d5751a8f1a720eceee3576d48977c303&seal=1b2504dcd4adcf653fb26e4004fc5001
+2015-08-13 14:20:43,084-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:43,335- INFO(NewsPoster.java:144)-Video ID: x31in5q
+2015-08-13 14:20:43,335- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload
+2015-08-13 14:20:43,441-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:43,441-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:43,441-DEBUG(AccountFactory.java:275)-Used account size decremented: -10
+2015-08-13 14:20:43,730- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468443730
+2015-08-13 14:20:44,005-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:44,005-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:44,005-DEBUG(AccountFactory.java:275)-Used account size decremented: -11
+2015-08-13 14:20:44,505-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:44,505-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:44,505-DEBUG(AccountFactory.java:275)-Used account size decremented: -12
+2015-08-13 14:20:45,006-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:45,006-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:45,006-DEBUG(AccountFactory.java:275)-Used account size decremented: -13
+2015-08-13 14:20:45,036-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:45,523-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:45,523-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:45,523-DEBUG(AccountFactory.java:275)-Used account size decremented: -14
+2015-08-13 14:20:45,547-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:45,857-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:46,062-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:46,062-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:46,062-DEBUG(AccountFactory.java:275)-Used account size decremented: -15
+2015-08-13 14:20:46,477-DEBUG(VideoPosterThread.java:210)-Keywords: task.getKeyWords(). Snippet count: 7
+2015-08-13 14:20:46,620-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:46,813-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:46,813-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:46,813-DEBUG(AccountFactory.java:275)-Used account size decremented: -16
+2015-08-13 14:20:46,980- INFO(NewsPoster.java:101)-Upload URL: http://upload-01.nyc.dailymotion.com/upload?uuid=170d11252a8be3f344f72d88576f0511&seal=9d388c7896862193bb5eece3cdd5cc81
+2015-08-13 14:20:47,313-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:47,313-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:47,314-DEBUG(AccountFactory.java:275)-Used account size decremented: -17
+2015-08-13 14:20:47,323- INFO(NewsPoster.java:144)-Video ID: x31in64
+2015-08-13 14:20:47,323- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload
+2015-08-13 14:20:47,405-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:47,653- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468447653
+2015-08-13 14:20:47,797-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:47,808-DEBUG(VideoPosterThread.java:210)-Keywords: task.getKeyWords(). Snippet count: 7
+2015-08-13 14:20:47,816-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:47,816-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:47,816-DEBUG(AccountFactory.java:275)-Used account size decremented: -18
+2015-08-13 14:20:48,142-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:48,342-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:48,342-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:48,342-DEBUG(AccountFactory.java:275)-Used account size decremented: -19
+2015-08-13 14:20:48,545-DEBUG(NewsPoster.java:345)-{"acodec":"PCM","bitrate":552856,"dimension":"1280x720","duration":31000,"format":"QuickTime","hash":"f6ea69c06c9d5df776a6c9c7001996a6856a11f8","name":"article_9","size":2142318,"streamable":"Yes","url":"http:\/\/upload-07.dailymotion.com\/files\/e80ceabdb83266c8a4650c6eb03b09c5.mov#c2VhbD0xMDQzNDc4NjRkOTljYWEyYTg2MmMzZDEzMjEzNzA4MiZhY29kZWM9UENNJmJpdHJhdGU9NTUyODU2JmRpbWVuc2lvbj0xMjgweDcyMCZkdXJhdGlvbj0zMTAwMCZmb3JtYXQ9UXVpY2tUaW1lJmhhc2g9ZjZlYTY5YzA2YzlkNWRmNzc2YTZjOWM3MDAxOTk2YTY4NTZhMTFmOCZuYW1lPWFydGljbGVfOSZzaXplPTIxNDIzMTgmc3RyZWFtYWJsZT1ZZXMmdmNvZGVjPUpQRUc=","vcodec":"JPEG","seal":"104347864d99caa2a862c3d132137082"}
+
+2015-08-13 14:20:48,549- INFO(NewsPoster.java:101)-Upload URL: http://upload-02.nyc.dailymotion.com/upload?uuid=aaffc0a596316a70fe412d0632ca3da2&seal=2ef6794c31bdc36320049b242c19ebd8
+2015-08-13 14:20:48,866- INFO(NewsPoster.java:144)-Video ID: x31in68
+2015-08-13 14:20:48,867- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload
+2015-08-13 14:20:48,867-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:48,899-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:48,899-DEBUG(AccountFactory.java:275)-Used account size decremented: -20
+2015-08-13 14:20:49,138- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468449138
+2015-08-13 14:20:49,194- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468449194
+2015-08-13 14:20:49,429-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:49,429-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:49,429-DEBUG(AccountFactory.java:275)-Used account size decremented: -21
+2015-08-13 14:20:49,655-DEBUG(NewsPoster.java:345)-{"acodec":"PCM","bitrate":506339,"dimension":"1280x720","duration":31000,"format":"QuickTime","hash":"7583ddb32ac3c3ab827c98e66bc51ebf3249c9f1","name":"article_5","size":1962065,"streamable":"Yes","url":"http:\/\/upload-02.sv6.dailymotion.com\/files\/55fa8145b6f758e836c394b002c3b521.mov#c2VhbD0zNGEwZjBlZGE0YzQwYTQzZWE1YTQ1NTljMDEzODRmOSZhY29kZWM9UENNJmJpdHJhdGU9NTA2MzM5JmRpbWVuc2lvbj0xMjgweDcyMCZkdXJhdGlvbj0zMTAwMCZmb3JtYXQ9UXVpY2tUaW1lJmhhc2g9NzU4M2RkYjMyYWMzYzNhYjgyN2M5OGU2NmJjNTFlYmYzMjQ5YzlmMSZuYW1lPWFydGljbGVfNSZzaXplPTE5NjIwNjUmc3RyZWFtYWJsZT1ZZXMmdmNvZGVjPUpQRUc=","vcodec":"JPEG","seal":"34a0f0eda4c40a43ea5a4559c01384f9"}
+
+2015-08-13 14:20:49,932-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:49,932-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:49,932-DEBUG(AccountFactory.java:275)-Used account size decremented: -22
+2015-08-13 14:20:50,279- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468450279
+2015-08-13 14:20:50,433-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:50,433-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:50,434-DEBUG(AccountFactory.java:275)-Used account size decremented: -23
+2015-08-13 14:20:50,935-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:50,935-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:50,935-DEBUG(AccountFactory.java:275)-Used account size decremented: -24
+2015-08-13 14:20:51,435-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:51,435-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:51,435-DEBUG(AccountFactory.java:275)-Used account size decremented: -25
+2015-08-13 14:20:51,935-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:51,935-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:51,935-DEBUG(AccountFactory.java:275)-Used account size decremented: -26
+2015-08-13 14:20:52,435-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:52,435-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:52,435-DEBUG(AccountFactory.java:275)-Used account size decremented: -27
+2015-08-13 14:20:52,935-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:52,935-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:52,935-DEBUG(AccountFactory.java:275)-Used account size decremented: -28
+2015-08-13 14:20:53,435-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:53,435-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:53,435-DEBUG(AccountFactory.java:275)-Used account size decremented: -29
+2015-08-13 14:20:53,935-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:53,935-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:53,935-DEBUG(AccountFactory.java:275)-Used account size decremented: -30
+2015-08-13 14:20:54,435-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:54,435-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:54,435-DEBUG(AccountFactory.java:275)-Used account size decremented: -31
+2015-08-13 14:20:54,860-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:54,935-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:54,935-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:54,935-DEBUG(AccountFactory.java:275)-Used account size decremented: -32
+2015-08-13 14:20:55,435-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:55,435-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:55,435-DEBUG(AccountFactory.java:275)-Used account size decremented: -33
+2015-08-13 14:20:55,935-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:55,935-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:55,935-DEBUG(AccountFactory.java:275)-Used account size decremented: -34
+2015-08-13 14:20:56,435-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:56,435-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:56,435-DEBUG(AccountFactory.java:275)-Used account size decremented: -35
+2015-08-13 14:20:56,935-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:56,935-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:56,935-DEBUG(AccountFactory.java:275)-Used account size decremented: -36
+2015-08-13 14:20:56,986-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:57,435-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:57,435-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:57,435-DEBUG(AccountFactory.java:275)-Used account size decremented: -37
+2015-08-13 14:20:57,935-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:57,935-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:57,935-DEBUG(AccountFactory.java:275)-Used account size decremented: -38
+2015-08-13 14:20:58,435-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:58,435-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:58,435-DEBUG(AccountFactory.java:275)-Used account size decremented: -39
+2015-08-13 14:20:58,868-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:58,936-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:58,936-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:58,936-DEBUG(AccountFactory.java:275)-Used account size decremented: -40
+2015-08-13 14:20:59,085-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:20:59,447-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:59,447-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:59,447-DEBUG(AccountFactory.java:275)-Used account size decremented: -41
+2015-08-13 14:20:59,947-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:20:59,947-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:20:59,947-DEBUG(AccountFactory.java:275)-Used account size decremented: -42
+2015-08-13 14:21:00,447-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:00,447-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:00,447-DEBUG(AccountFactory.java:275)-Used account size decremented: -43
+2015-08-13 14:21:00,480-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:21:01,020-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:01,020-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:01,020-DEBUG(AccountFactory.java:275)-Used account size decremented: -44
+2015-08-13 14:21:01,361-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:21:01,410-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:21:01,522-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:01,522-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:01,522-DEBUG(AccountFactory.java:275)-Used account size decremented: -45
+2015-08-13 14:21:02,040-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:02,040-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:02,040-DEBUG(AccountFactory.java:275)-Used account size decremented: -46
+2015-08-13 14:21:02,503- INFO(NewsPoster.java:796)-Params for edit video: form_name=dm_pageitem_uploadnewform_x31in4i&_csrf=54ECYuVMI2aw356UHGUcLkX7QN0Ck1pVfOmlyOLUG1I&_fid=&video_title=Watch+Jurassic+Park+%281993%29+Online+Full+Movie+%28HD%29+vqwhey&user_category=auto&game_select=&language=en&tags_hidden=Watch+Jurassic+Park+%281993%29+Online+Full+Movie+%28HD%29&strongtags_hidden={"strong_tags":{},"daily_tags":[%22Watch%22%2C%22Jurassic%22%2C%22Park%22%2C%22%281993%29%22%2C%22Online%22%2C%22Full%22%2C%22Movie%22%2C%22%28HD%29%22]}&tags=&description=Read+online+or+Download+Jurassic+Park+%281993%29%0D%0A%0D%0Ahttp%3A%2F%2Ftinyurl.com%2Fpgyufrf%0D%0A%0D%0A%0D%0A%0D%0A%3Ch3%3EJurassic+Park+%281993%29+-+IMDb%3C%2Fh3%3E%0D%0ADirected+by+Steven+Spielberg.+With+Sam+Neill%2C+Laura+Dern%2C+Jeff+Goldblum%2C+Richard+Attenborough.+During+a+preview+tour%2C+a+theme+park+suffers+a+major+power+breakdown%0D%0A%0D%0A%3Ch3%3EJurassic+Park+%28film%29+-+Wikipedia%2C+the+free+encyclopedia%3C%2Fh3%3E%0D%0AJurassic+Park+is+a+1993+American+science+fiction+adventure+film+directed+by+Steven+Spielberg.+It+is+the+first+installment+of+the+Jurassic+Park+film+series.%0D%0A%0D%0A%3Ch3%3EFilm+locations+for+Jurassic+Park+%281993%29%3C%2Fh3%3E%0D%0AFilming+locations+for+Steven+Spielberg%27s+Jurassic+Park+%281993%29%2C+in+Hawaii+and+California.%0D%0A%0D%0A%3Ch3%3EJurassic+Park+%281%2F10%29+Movie+CLIP+-+Welcome+to+%E2%80%A6%3C%2Fh3%3E%0D%0AJurassic+Park+is+an+American+media+franchise+centering+on+a+disastrous+attempt+to+create+a+theme+park+of+cloned+dinosaurs.+It+began+in+1990+when+Universal+Studios%0D%0A%0D%0A%3Ch3%3E%3A+Jurassic+Park%3A+Sam+Neill%2C+Laura+Dern%2C+Jeff%3C%2Fh3%3E%0D%0AOn+a+remote+island+where+an+amazing+theme+park+with+living+cloned+dinosaurs+is+located%2C+five+people+must+battle+to+survive+among+the+prehistoric+predators+when+the%0D%0A%0D%0A%3Ch3%3EJurassic+Park+-+Wikipedia%2C+the+free+encyclopedia%3C%2Fh3%3E%0D%0AA+description+of+tropes+appearing+in+Jurassic+Park.+Scientists+discover+the+ability+to+bring+extinct+animals+back+to+life+via+a+complex+cloning+process.+To+%E2%80%A6%0D%0A&privacy=0&allow_comments=1&recordedOn=2015/05/14&from_publish=1&from_request=/upload&_csrf_l=TGg4TxugLDWRXaKU8i_QrijE5mPw8PVRUcHrITQeOGI
+2015-08-13 14:21:02,542-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:02,542-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:02,542-DEBUG(AccountFactory.java:275)-Used account size decremented: -47
+2015-08-13 14:21:02,976-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:21:03,042-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:03,042-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:03,042-DEBUG(AccountFactory.java:275)-Used account size decremented: -48
+2015-08-13 14:21:03,439-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:21:03,493-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:21:03,556-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:03,556-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:03,557-DEBUG(AccountFactory.java:275)-Used account size decremented: -49
+2015-08-13 14:21:04,057-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:04,057-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:04,057-DEBUG(AccountFactory.java:275)-Used account size decremented: -50
+2015-08-13 14:21:04,557-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:04,557-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:04,557-DEBUG(AccountFactory.java:275)-Used account size decremented: -51
+2015-08-13 14:21:05,033-DEBUG(NewsPoster.java:345)-{"acodec":"PCM","bitrate":552495,"dimension":"1280x720","duration":31000,"format":"QuickTime","hash":"0032b17239126840a75308a0972bb4d64f9c44e2","name":"article_10","size":2140919,"streamable":"Yes","url":"http:\/\/upload-02.nyc.dailymotion.com\/files\/d5751a8f1a720eceee3576d48977c303.mov#c2VhbD1hYzZjMjY2ZDgwMmJiZjU1NTRlNmQ4NmNiMGJhZTlkNSZhY29kZWM9UENNJmJpdHJhdGU9NTUyNDk1JmRpbWVuc2lvbj0xMjgweDcyMCZkdXJhdGlvbj0zMTAwMCZmb3JtYXQ9UXVpY2tUaW1lJmhhc2g9MDAzMmIxNzIzOTEyNjg0MGE3NTMwOGEwOTcyYmI0ZDY0ZjljNDRlMiZuYW1lPWFydGljbGVfMTAmc2l6ZT0yMTQwOTE5JnN0cmVhbWFibGU9WWVzJnZjb2RlYz1KUEVH","vcodec":"JPEG","seal":"ac6c266d802bbf5554e6d86cb0bae9d5"}
+
+2015-08-13 14:21:05,057-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:05,057-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:05,057-DEBUG(AccountFactory.java:275)-Used account size decremented: -52
+2015-08-13 14:21:05,184-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:21:05,551-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:21:05,576-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:05,576-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:05,576-DEBUG(AccountFactory.java:275)-Used account size decremented: -53
+2015-08-13 14:21:05,670- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468465670
+2015-08-13 14:21:06,077-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:06,077-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:06,077-DEBUG(AccountFactory.java:275)-Used account size decremented: -54
+2015-08-13 14:21:06,577-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:06,577-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:06,577-DEBUG(AccountFactory.java:275)-Used account size decremented: -55
+2015-08-13 14:21:07,094-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:07,094-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:07,095-DEBUG(AccountFactory.java:275)-Used account size decremented: -56
+2015-08-13 14:21:07,405-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:21:07,594-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:21:07,702-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:07,702-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:07,702-DEBUG(AccountFactory.java:275)-Used account size decremented: -57
+2015-08-13 14:21:08,204-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:08,204-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:08,204-DEBUG(AccountFactory.java:275)-Used account size decremented: -58
+2015-08-13 14:21:08,704-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:08,704-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:08,704-DEBUG(AccountFactory.java:275)-Used account size decremented: -59
+2015-08-13 14:21:08,816-DEBUG(NewsPoster.java:345)-{"acodec":"PCM","bitrate":528910,"dimension":"1280x720","duration":31000,"format":"QuickTime","hash":"d21b465fee651525a44a97aa71d494dfc9bf6997","name":"article_1","size":2049528,"streamable":"Yes","url":"http:\/\/upload-01.nyc.dailymotion.com\/files\/170d11252a8be3f344f72d88576f0511.mov#c2VhbD1lYzdlMjE3MzQyMzIxMzdkZTZjNzUwNWQ4NGQxNTMxZSZhY29kZWM9UENNJmJpdHJhdGU9NTI4OTEwJmRpbWVuc2lvbj0xMjgweDcyMCZkdXJhdGlvbj0zMTAwMCZmb3JtYXQ9UXVpY2tUaW1lJmhhc2g9ZDIxYjQ2NWZlZTY1MTUyNWE0NGE5N2FhNzFkNDk0ZGZjOWJmNjk5NyZuYW1lPWFydGljbGVfMSZzaXplPTIwNDk1Mjgmc3RyZWFtYWJsZT1ZZXMmdmNvZGVjPUpQRUc=","vcodec":"JPEG","seal":"ec7e21734232137de6c7505d84d1531e"}
+
+2015-08-13 14:21:09,204-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:09,204-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:09,204-DEBUG(AccountFactory.java:275)-Used account size decremented: -60
+2015-08-13 14:21:09,442- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468469442
+2015-08-13 14:21:09,620-DEBUG(NewsPoster.java:256)-OPTION request responce code: 200
+2015-08-13 14:21:09,704-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:09,704-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:09,704-DEBUG(AccountFactory.java:275)-Used account size decremented: -61
+2015-08-13 14:21:10,204-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:10,204-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:10,204-DEBUG(AccountFactory.java:275)-Used account size decremented: -62
+2015-08-13 14:21:10,704-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:10,704-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:10,704-DEBUG(AccountFactory.java:275)-Used account size decremented: -63
+2015-08-13 14:21:10,841-DEBUG(NewsPoster.java:345)-{"acodec":"PCM","bitrate":531446,"dimension":"1280x720","duration":31000,"format":"QuickTime","hash":"ded76b62d9ad6006c392d466cf4fa5d9386d36ea","name":"article_2","size":2059352,"streamable":"Yes","url":"http:\/\/upload-02.nyc.dailymotion.com\/files\/aaffc0a596316a70fe412d0632ca3da2.mov#c2VhbD1lZjgwYWIzM2M4MjY4ZDA3YWI1Yjg5YzQxMGEzODkyYiZhY29kZWM9UENNJmJpdHJhdGU9NTMxNDQ2JmRpbWVuc2lvbj0xMjgweDcyMCZkdXJhdGlvbj0zMTAwMCZmb3JtYXQ9UXVpY2tUaW1lJmhhc2g9ZGVkNzZiNjJkOWFkNjAwNmMzOTJkNDY2Y2Y0ZmE1ZDkzODZkMzZlYSZuYW1lPWFydGljbGVfMiZzaXplPTIwNTkzNTImc3RyZWFtYWJsZT1ZZXMmdmNvZGVjPUpQRUc=","vcodec":"JPEG","seal":"ef80ab33c8268d07ab5b89c410a3892b"}
+
+2015-08-13 14:21:11,204-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:11,204-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:11,204-DEBUG(AccountFactory.java:275)-Used account size decremented: -64
+2015-08-13 14:21:11,702- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/upload_new/ping?t=1439468471702
+2015-08-13 14:21:11,715-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:11,715-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:11,715-DEBUG(AccountFactory.java:275)-Used account size decremented: -65
+2015-08-13 14:21:12,074- INFO(NewsPoster.java:796)-Params for edit video: form_name=dm_pageitem_uploadnewform_x31in53&_csrf=54ECYuVMI2aw356UHGUcLkX7QN0Ck1pVfOmlyOLUG1I&_fid=&video_title=Watch+Tomorrowland+%282015%29+Online+Full+Movie+%28HD%29+noshr&user_category=music&game_select=&language=en&tags_hidden=Watch+Tomorrowland+%282015%29+Online+Full+Movie+%28HD%29&strongtags_hidden={"strong_tags":{},"daily_tags":[%22Watch%22%2C%22Tomorrowland%22%2C%22%282015%29%22%2C%22Online%22%2C%22Full%22%2C%22Movie%22%2C%22%28HD%29%22]}&tags=&description=Read+online+or+Download+Tomorrowland+%282015%29%0D%0A%0D%0Ahttp%3A%2F%2Ftinyurl.com%2Fo96wqhf%0D%0A%0D%0A%0D%0A%0D%0A%3Ch3%3ETomorrowland+%282015%29+-+IMDb%3C%2Fh3%3E%0D%0ADirected+by+Brad+Bird.+With+George+Clooney%2C+Hugh+Laurie%2C+Britt+Robertson%2C+Raffey+Cassidy.+Bound+by+a+shared+destiny%2C+a+teen+bursting+with+scientific+curiosity+and+a%0D%0A%0D%0A%3Ch3%3ENews+%7C+Tomorrowland%3C%2Fh3%3E%0D%0APrepare+for+a+melodious+adventure+and+download+or+update+the+Official+Tomorrowland+app.+Exclusive+content+will+be+available+in+the+app+together+with+the+full+line-up%0D%0A%0D%0A%3Ch3%3ETomorrowland+%282015%29+-+Rotten+Tomatoes%3C%2Fh3%3E%0D%0ATomorrowland+-+Search+for+movie+plot%2C+trailers%2C+cast+and+crew%2C+photos%2C+reviews%2C+and+tickets+online+at+Moviefone%0D%0A%0D%0A%3Ch3%3ETomorrowland+%282015%29+-+Movie+%7C+Moviefone%3C%2Fh3%3E%0D%0ATomorrowland+in+US+theaters+May+22%2C+2015+starring+George+Clooney%2C+Hugh+Laurie%2C+Raffey+Cassidy%2C+Thomas+Robinson.+The+film+is+about+a+teenage+girl+%28Casey+Newton%29%2C+a%0D%0A%0D%0A%3Ch3%3ETomorrowland+%282015%29+Movie%3C%2Fh3%3E%0D%0ABrad+Bird%E2%80%99s+Tomorrowland+is+a+rather+complex+bit+of+blockbuster+entertainment%2C+taking+audiences+on+a+trip+that+is+have+road+movie%2C+half+big+science+fiction+adventure.%0D%0A%0D%0A%3Ch3%3ETomorrowland+%282015%29+-+CINEMABLEND%3C%2Fh3%3E%0D%0ATomorrowland.+Boom+-+Belgium.+Enter+website%3B+Refunds+Until+August+10%2C+12AM+CET%0D%0A%0D%0A%3Ch3%3ETomorrowland%3C%2Fh3%3E%0D%0APlot+Summary%3A+From+Disney+comes+two-time+Oscar+winner+Brad+Bird%27s+riveting%2C+mystery+adventure+%26quot%3BTomorrowland%2C%26quot%3B+starring+Academy+Award+winner+George+Clooney.%0D%0A%0D%0A%3Ch3%3ETomorrowland+-2015+-+%3C%2Fh3%3E%0D%0ADatabase+of+movie+trailers%2C+clips+and+other+videos+for+Tomorrowland+%282015%29.+Directed+by+Brad+Bird%2C+the+film+features+a+cast+that+includes+George+Clooney%2C+Hugh+Laurie%0D%0A&privacy=0&allow_comments=1&recordedOn=2015/05/14&from_publish=1&from_request=/upload&_csrf_l=fJrPdKZ4AdJguhUH2eQK8DRIKs1Yho7sgUT6Wj-WFaE
+2015-08-13 14:21:12,215-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:12,215-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:12,215-DEBUG(AccountFactory.java:275)-Used account size decremented: -66
+2015-08-13 14:21:12,715-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:12,715-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:12,715-DEBUG(AccountFactory.java:275)-Used account size decremented: -67
+2015-08-13 14:21:13,215-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:13,215-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:13,215-DEBUG(AccountFactory.java:275)-Used account size decremented: -68
+2015-08-13 14:21:13,390- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/ajax/video
+2015-08-13 14:21:13,715-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:13,715-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:13,715-DEBUG(AccountFactory.java:275)-Used account size decremented: -69
+2015-08-13 14:21:13,838-DEBUG(VideoPosterThread.java:250)-Delete video file: article_5.mov
+2015-08-13 14:21:13,839-DEBUG(VideoPosterThread.java:259)-Delete video file: article_5_wo_audio.mov
+2015-08-13 14:21:13,840-DEBUG(AccountFactory.java:263)-Posted account news incremented: 6
+2015-08-13 14:21:13,840-DEBUG(AccountFactory.java:275)-Used account size decremented: -70
+2015-08-13 14:21:13,840-DEBUG(TaskFactory.java:73)-DEC thread: 4
+2015-08-13 14:21:14,234-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:14,235-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:14,235-DEBUG(AccountFactory.java:275)-Used account size decremented: -71
+2015-08-13 14:21:14,735-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:14,735-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:14,735-DEBUG(AccountFactory.java:275)-Used account size decremented: -72
+2015-08-13 14:21:15,235-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:15,235-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:15,235-DEBUG(AccountFactory.java:275)-Used account size decremented: -73
+2015-08-13 14:21:15,735-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:15,735-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:15,736-DEBUG(AccountFactory.java:275)-Used account size decremented: -74
+2015-08-13 14:21:16,236-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:16,236-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:16,236-DEBUG(AccountFactory.java:275)-Used account size decremented: -75
+2015-08-13 14:21:16,736-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:16,736-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:16,736-DEBUG(AccountFactory.java:275)-Used account size decremented: -76
+2015-08-13 14:21:17,236-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:17,236-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:17,236-DEBUG(AccountFactory.java:275)-Used account size decremented: -77
+2015-08-13 14:21:17,736-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:17,736-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:17,736-DEBUG(AccountFactory.java:275)-Used account size decremented: -78
+2015-08-13 14:21:18,242-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:18,242-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:18,242-DEBUG(AccountFactory.java:275)-Used account size decremented: -79
+2015-08-13 14:21:18,742-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:18,746-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:18,747-DEBUG(AccountFactory.java:275)-Used account size decremented: -80
+2015-08-13 14:21:19,247-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:19,247-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:19,247-DEBUG(AccountFactory.java:275)-Used account size decremented: -81
+2015-08-13 14:21:19,747-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:19,747-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:19,747-DEBUG(AccountFactory.java:275)-Used account size decremented: -82
+2015-08-13 14:21:20,247-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:20,247-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:20,247-DEBUG(AccountFactory.java:275)-Used account size decremented: -83
+2015-08-13 14:21:20,747-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:20,747-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:20,747-DEBUG(AccountFactory.java:275)-Used account size decremented: -84
+2015-08-13 14:21:21,247-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:21,247-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:21,247-DEBUG(AccountFactory.java:275)-Used account size decremented: -85
+2015-08-13 14:21:21,747-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:21,747-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:21,747-DEBUG(AccountFactory.java:275)-Used account size decremented: -86
+2015-08-13 14:21:22,247-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:22,247-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:22,247-DEBUG(AccountFactory.java:275)-Used account size decremented: -87
+2015-08-13 14:21:22,690- INFO(NewsPoster.java:796)-Params for edit video: form_name=dm_pageitem_uploadnewform_x31in5q&_csrf=54ECYuVMI2aw356UHGUcLkX7QN0Ck1pVfOmlyOLUG1I&_fid=&video_title=Watch+Avengers%3A+Era+de+Ultron+%282015%29+Online+Full+Movie+%28HD%29+onef&user_category=sport&game_select=&language=en&tags_hidden=Watch+Avengers%3A+Era+de+Ultron+%282015%29+Online+Full+Movie+%28HD%29&strongtags_hidden={"strong_tags":{},"daily_tags":[%22Watch%22%2C%22Avengers%3A%22%2C%22Era%22%2C%22de%22%2C%22Ultron%22%2C%22%282015%29%22%2C%22Online%22%2C%22Full%22%2C%22Movie%22%2C%22%28HD%29%22]}&tags=&description=Read+online+or+Download+Avengers%3A+Era+de+Ultron+%282015%29%0D%0A%0D%0Ahttp%3A%2F%2Ftinyurl.com%2Fpfbwpto%0D%0A%0D%0A%0D%0A%0D%0A%3Ch3%3EAvengers%3A+Age+of+Ultron+%282015%29+-+IMDb%3C%2Fh3%3E%0D%0AGET+INFORMED.+Industry+information+at+your+fingertips.+GET+CONNECTED.+Over+200%2C000+Hollywood+insiders.+GET+DISCOVERED.+Enhance+your+IMDb+Page.+Go+to+%E2%80%A6%0D%0A%0D%0A%3Ch3%3EAvengers%3A+Age+of+Ultron+%282015%29+-+Release+Info+-+IMDb%3C%2Fh3%3E%0D%0AArgentina%3A+Avengers%3A+Era+de+Ultr%26%23243%3Bn%3A+Azerbaijan+%28alternative+title%29+Qisas%26%23231%3Bilar+2%3A+Azerbaijan%3A+Qisas%26%23231%3Bilar%3A+Ultron+D%26%23246%3Bvr%26%23252%3B%3A+Bulgaria+%28Bulgarian+title%0D%0A%0D%0A%3Ch3%3EVingadores%3A+Era+de+Ultron+%28Avengers%3A+Age+of+%E2%80%A6%3C%2Fh3%3E%0D%0AAvengers%3A+Age+of+Ultron+is+a+2015+American+superhero+film+based+on+the+Marvel+Comics+superhero+team+the+Avengers%2C+produced+by+Marvel+Studios+and+distributed+by+Walt%0D%0A%0D%0A%3Ch3%3EVingadores%3A+Era+de+Ultron+-+Avengers+Age+of+%E2%80%A6%3C%2Fh3%3E%0D%0AJoin+legions+of+eager+fans+anticipating+Marvel%27s+Avengers%3A+Age+of+Ultron.+All+your+favorite+heroes+%E2%80%93+from+Iron+Man+to+Captain+America+%E2%80%93+assemble+as+a+mighty+team.%0D%0A&privacy=0&allow_comments=1&recordedOn=2015/05/14&from_publish=1&from_request=/upload&_csrf_l=fJrPdKZ4AdJguhUH2eQK8DRIKs1Yho7sgUT6Wj-WFaE
+2015-08-13 14:21:22,747-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:22,747-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:22,747-DEBUG(AccountFactory.java:275)-Used account size decremented: -88
+2015-08-13 14:21:22,993- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/ajax/video
+2015-08-13 14:21:23,247-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:23,247-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:23,247-DEBUG(AccountFactory.java:275)-Used account size decremented: -89
+2015-08-13 14:21:23,499-DEBUG(VideoPosterThread.java:250)-Delete video file: article_9.mov
+2015-08-13 14:21:23,499-DEBUG(VideoPosterThread.java:259)-Delete video file: article_9_wo_audio.mov
+2015-08-13 14:21:23,537-DEBUG(AccountFactory.java:263)-Posted account news incremented: 7
+2015-08-13 14:21:23,537-DEBUG(AccountFactory.java:275)-Used account size decremented: -90
+2015-08-13 14:21:23,537-DEBUG(TaskFactory.java:73)-DEC thread: 3
+2015-08-13 14:21:23,747-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:23,747-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:23,747-DEBUG(AccountFactory.java:275)-Used account size decremented: -91
+2015-08-13 14:21:24,247-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:24,247-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:24,247-DEBUG(AccountFactory.java:275)-Used account size decremented: -92
+2015-08-13 14:21:24,747-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:24,747-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:24,747-DEBUG(AccountFactory.java:275)-Used account size decremented: -93
+2015-08-13 14:21:25,247-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:25,247-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:25,247-DEBUG(AccountFactory.java:275)-Used account size decremented: -94
+2015-08-13 14:21:25,748-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:25,748-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:25,748-DEBUG(AccountFactory.java:275)-Used account size decremented: -95
+2015-08-13 14:21:26,248-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:26,248-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:26,248-DEBUG(AccountFactory.java:275)-Used account size decremented: -96
+2015-08-13 14:21:26,743- INFO(NewsPoster.java:796)-Params for edit video: form_name=dm_pageitem_uploadnewform_x31in64&_csrf=54ECYuVMI2aw356UHGUcLkX7QN0Ck1pVfOmlyOLUG1I&_fid=&video_title=Watch+Jurassic+World+%282015%29+Online+Full+Movie+%28HD%29+ilrzst&user_category=people&game_select=&language=en&tags_hidden=Watch+Jurassic+World+%282015%29+Online+Full+Movie+%28HD%29&strongtags_hidden={"strong_tags":{},"daily_tags":[%22Watch%22%2C%22Jurassic%22%2C%22World%22%2C%22%282015%29%22%2C%22Online%22%2C%22Full%22%2C%22Movie%22%2C%22%28HD%29%22]}&tags=&description=Read+online+or+Download+Jurassic+World+%282015%29%0D%0A%0D%0Ahttp%3A%2F%2Ftinyurl.com%2Fpk68c9h%0D%0A%0D%0A%0D%0A%0D%0A%3Ch3%3EJurassic+World+-+Wikipedia%2C+the+free+encyclopedia%3C%2Fh3%3E%0D%0AJurassic+World+is+a+2015+American+science+fiction+adventure+film+directed+by+Colin+Trevorrow.+It+is+the+fourth+installment+of+the+Jurassic+Park+series.%0D%0A%0D%0A%3Ch3%3EJurassic+World+%282015%29+-+Rotten+Tomatoes%3C%2Fh3%3E%0D%0ACritics+Consensus%3A+Jurassic+World+can%27t+match+the+original+for+sheer+inventiveness+and+impact%2C+but+it+works+in+its+own+right+as+an+entertaining+--+and+visually%0D%0A%0D%0A%3Ch3%3EJurassic+World%3C%2Fh3%3E%0D%0AJurassic+World%0D%0A%0D%0A%3Ch3%3EJurassic+World+-+Official+Trailer+%28HD%29+-+YouTube%3C%2Fh3%3E%0D%0AJurassic+World+movie+info+-+movie+times%2C+trailers%2C+reviews%2C+tickets%2C+actors+and+more+on+Fandango.%0D%0A%0D%0A%3Ch3%3EJurassic+World+%282015%29+%7C+Fandango%3C%2Fh3%3E%0D%0AAug+10%2C+2015%26nbsp%3B%26%230183%3B%26%2332%3BJurassic+World+summary+of+box+office+results%2C+charts+and+release+information+and+related+links.%0D%0A%0D%0A%3Ch3%3EJurassic+World+Official+Trailer+%231+%282015%29+-+Chris+%E2%80%A6%3C%2Fh3%3E%0D%0ARelease+Info%3A+Plot%3A+A+new+theme+park+is+built+on+the+original+site+of+Jurassic+Park.+Everything+is+going+well+until+the+park%E2%80%99s+newest+attraction%E2%80%93a+genetically%0D%0A%0D%0A%3Ch3%3EJurassic+World+%282015%29+-+Box+Office+Mojo%3C%2Fh3%3E%0D%0A9TH+%26amp%3B+10th+UPDATE%2C+MONDAY%2C+2%3A30+PM+%26amp%3B+1+PM%3A+Universal+made+it+official%3A+Jurassic+World+has+collected+%24402.8M+in+10+days%2C+the+fastest+film+to+hit+that+mark%2C+beating%0D%0A&privacy=0&allow_comments=1&recordedOn=2015/05/14&from_publish=1&from_request=/upload&_csrf_l=fJrPdKZ4AdJguhUH2eQK8DRIKs1Yho7sgUT6Wj-WFaE
+2015-08-13 14:21:26,748-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:26,748-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:26,748-DEBUG(AccountFactory.java:275)-Used account size decremented: -97
+2015-08-13 14:21:27,248-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:27,248-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:27,248-DEBUG(AccountFactory.java:275)-Used account size decremented: -98
+2015-08-13 14:21:27,748-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:27,748-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:27,748-DEBUG(AccountFactory.java:275)-Used account size decremented: -99
+2015-08-13 14:21:28,248-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:28,248-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:28,248-DEBUG(AccountFactory.java:275)-Used account size decremented: -100
+2015-08-13 14:21:28,813-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:28,813-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:28,813-DEBUG(AccountFactory.java:275)-Used account size decremented: -101
+2015-08-13 14:21:29,313-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:29,313-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:29,313-DEBUG(AccountFactory.java:275)-Used account size decremented: -102
+2015-08-13 14:21:29,887-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:29,887-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:29,887-DEBUG(AccountFactory.java:275)-Used account size decremented: -103
+2015-08-13 14:21:30,164- INFO(NewsPoster.java:796)-Params for edit video: form_name=dm_pageitem_uploadnewform_x31in68&_csrf=54ECYuVMI2aw356UHGUcLkX7QN0Ck1pVfOmlyOLUG1I&_fid=&video_title=Watch+The+Martian+%282015%29+Online+Full+Movie+%28HD%29+uwuh&user_category=music&game_select=&language=en&tags_hidden=Watch+The+Martian+%282015%29+Online+Full+Movie+%28HD%29&strongtags_hidden={"strong_tags":{},"daily_tags":[%22Watch%22%2C%22The%22%2C%22Martian%22%2C%22%282015%29%22%2C%22Online%22%2C%22Full%22%2C%22Movie%22%2C%22%28HD%29%22]}&tags=&description=Read+online+or+Download+The+Martian+%282015%29%0D%0A%0D%0Ahttp%3A%2F%2Ftinyurl.com%2Fnp8n3wf%0D%0A%0D%0A%0D%0A%0D%0A%3Ch3%3EThe+Martian+%282015%29+-+IMDb%3C%2Fh3%3E%0D%0ADirected+by+Ridley+Scott.+With+Kate+Mara%2C+Kristen+Wiig%2C+Jessica+Chastain%2C+Matt+Damon.+During+a+manned+mission+to+Mars%2C+Astronaut+Mark+Watney+is+presumed+dead+after+a%0D%0A%0D%0A%3Ch3%3EThe+Martian+%28film%29+-+Wikipedia%2C+the+free+encyclopedia%3C%2Fh3%3E%0D%0AThe+Martian+is+an+upcoming+science+fiction+film+directed+by+Ridley+Scott.+The+screenplay+by+Drew+Goddard+is+based+on+the+2011+novel+The+Martian+by+Andy+Weir.%0D%0A%0D%0A%3Ch3%3EThe+Martian+%282015%29+Matt+Damon+-+Movie+Trailer%2C+Release%3C%2Fh3%3E%0D%0AThe+Martian+movie+trailer%2C+release+date%2C+plot+and+cast+starring+Matt+Damon+and+directed+by+Ridley+Scott.+An+astronaut+is+left+stranded+on+Mars+when+his+crew+is+forced%0D%0A%0D%0A%3Ch3%3EThe+Martian+%282015%29+Movie%3C%2Fh3%3E%0D%0AThe+Martian+in+US+theaters+October+2%2C+2015+starring+Matt+Damon%2C+Jessica+Chastain%2C+Kate+Mara%2C+Kristen+Wiig.+During+a+manned+mission+to+Mars%2C+Astronaut+Mark+Watney%0D%0A%0D%0A%3Ch3%3EThe+Martian+-+%3C%2Fh3%3E%0D%0AA+declassified+look+at+the+psychological+testing+involved+in+preparing+the+crew+for+their+journey+to+Mars%0D%0A%0D%0A%3Ch3%3EThe+Martian+%7C+Official+Trailer+%5BHD%5D+%7C+20th+Century+%E2%80%A6%3C%2Fh3%3E%0D%0ADirected+by+Ridley+Scott+and+starring+Matt+Damon+The+Martian+is+in+theaters+October+2%2C+2015.+Get+access+to+movie+trailers%2C+news+and+posters.%0D%0A%0D%0A%3Ch3%3EThe+Martian+-+2015+%7C+Official+Trailers+and+Movie+News%3C%2Fh3%3E%0D%0AThe+Martian+%282015%29+on+IMDb%3A+Movies%2C+TV%2C+Celebs%2C+and+more%0D%0A&privacy=0&allow_comments=1&recordedOn=2015/05/14&from_publish=1&from_request=/upload&_csrf_l=fJrPdKZ4AdJguhUH2eQK8DRIKs1Yho7sgUT6Wj-WFaE
+2015-08-13 14:21:30,395-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:30,425-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:30,425-DEBUG(AccountFactory.java:275)-Used account size decremented: -104
+2015-08-13 14:21:30,925-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:30,926-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:30,926-DEBUG(AccountFactory.java:275)-Used account size decremented: -105
+2015-08-13 14:21:31,426-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:31,426-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:31,426-DEBUG(AccountFactory.java:275)-Used account size decremented: -106
+2015-08-13 14:21:31,955-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:31,955-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:31,956-DEBUG(AccountFactory.java:275)-Used account size decremented: -107
+2015-08-13 14:21:32,469-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:32,469-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:32,469-DEBUG(AccountFactory.java:275)-Used account size decremented: -108
+2015-08-13 14:21:32,999-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:32,999-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:32,999-DEBUG(AccountFactory.java:275)-Used account size decremented: -109
+2015-08-13 14:21:33,499-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:33,499-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:33,499-DEBUG(AccountFactory.java:275)-Used account size decremented: -110
+2015-08-13 14:21:33,553- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/ajax/video
+2015-08-13 14:21:33,999-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:34,000-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:34,000-DEBUG(AccountFactory.java:275)-Used account size decremented: -111
+2015-08-13 14:21:34,033-DEBUG(VideoPosterThread.java:250)-Delete video file: article_10.mov
+2015-08-13 14:21:34,035-DEBUG(VideoPosterThread.java:259)-Delete video file: article_10_wo_audio.mov
+2015-08-13 14:21:34,036-DEBUG(AccountFactory.java:263)-Posted account news incremented: 8
+2015-08-13 14:21:34,036-DEBUG(AccountFactory.java:275)-Used account size decremented: -112
+2015-08-13 14:21:34,036-DEBUG(TaskFactory.java:73)-DEC thread: 2
+2015-08-13 14:21:34,501-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:34,501-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:34,501-DEBUG(AccountFactory.java:275)-Used account size decremented: -113
+2015-08-13 14:21:35,001-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:35,001-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:35,001-DEBUG(AccountFactory.java:275)-Used account size decremented: -114
+2015-08-13 14:21:35,501-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:35,501-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:35,501-DEBUG(AccountFactory.java:275)-Used account size decremented: -115
+2015-08-13 14:21:36,001-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:36,001-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:36,001-DEBUG(AccountFactory.java:275)-Used account size decremented: -116
+2015-08-13 14:21:36,501-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:36,501-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:36,501-DEBUG(AccountFactory.java:275)-Used account size decremented: -117
+2015-08-13 14:21:37,001-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:37,001-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:37,001-DEBUG(AccountFactory.java:275)-Used account size decremented: -118
+2015-08-13 14:21:37,501-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:37,501-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:37,501-DEBUG(AccountFactory.java:275)-Used account size decremented: -119
+2015-08-13 14:21:37,608- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/ajax/video
+2015-08-13 14:21:38,001-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:38,001-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:38,002-DEBUG(AccountFactory.java:275)-Used account size decremented: -120
+2015-08-13 14:21:38,133-DEBUG(VideoPosterThread.java:250)-Delete video file: article_1.mov
+2015-08-13 14:21:38,133-DEBUG(VideoPosterThread.java:259)-Delete video file: article_1_wo_audio.mov
+2015-08-13 14:21:38,134-DEBUG(AccountFactory.java:263)-Posted account news incremented: 9
+2015-08-13 14:21:38,134-DEBUG(AccountFactory.java:275)-Used account size decremented: -121
+2015-08-13 14:21:38,134-DEBUG(TaskFactory.java:73)-DEC thread: 1
+2015-08-13 14:21:38,502-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:38,502-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:38,502-DEBUG(AccountFactory.java:275)-Used account size decremented: -122
+2015-08-13 14:21:39,002-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:39,002-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:39,002-DEBUG(AccountFactory.java:275)-Used account size decremented: -123
+2015-08-13 14:21:39,505-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:39,505-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:39,505-DEBUG(AccountFactory.java:275)-Used account size decremented: -124
+2015-08-13 14:21:40,005-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:40,005-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:40,005-DEBUG(AccountFactory.java:275)-Used account size decremented: -125
+2015-08-13 14:21:40,505-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:40,505-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:40,505-DEBUG(AccountFactory.java:275)-Used account size decremented: -126
+2015-08-13 14:21:41,005-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:41,005-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:41,005-DEBUG(AccountFactory.java:275)-Used account size decremented: -127
+2015-08-13 14:21:41,109- INFO(NewsPoster.java:605)-URL: http://www.dailymotion.com/ajax/video
+2015-08-13 14:21:41,505-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-13 14:21:41,505-DEBUG(VideoTaskRunner.java:172)-Account: vetowuc@walkmail.pw;vetowuc@walkmail.pw;Vetowuc
+2015-08-13 14:21:41,505-DEBUG(AccountFactory.java:275)-Used account size decremented: -128
+2015-08-13 14:21:41,728-DEBUG(VideoPosterThread.java:250)-Delete video file: article_2.mov
+2015-08-13 14:21:41,729-DEBUG(VideoPosterThread.java:259)-Delete video file: article_2_wo_audio.mov
+2015-08-13 14:21:41,730-DEBUG(AccountFactory.java:263)-Posted account news incremented: 10
+2015-08-13 14:21:41,730-DEBUG(AccountFactory.java:275)-Used account size decremented: -129
+2015-08-13 14:21:41,730-DEBUG(TaskFactory.java:73)-DEC thread: 0
+2015-08-13 14:21:42,005-DEBUG(VideoTaskRunner.java:207)-Task factory is empty: true. Current working threads count is 0
+2015-08-13 14:21:42,005-DEBUG(VideoTaskRunner.java:208)-Error tasks: 0
+2015-08-13 14:21:42,005-DEBUG(VideoTaskRunner.java:240)-Starting saving unused account...
+2015-08-13 14:21:42,005-DEBUG(VideoTaskRunner.java:247)-Unused accounts was saved successfully.

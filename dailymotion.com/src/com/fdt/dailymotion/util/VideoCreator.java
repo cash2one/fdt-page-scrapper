@@ -14,7 +14,7 @@ public class VideoCreator {
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 		
 		try {
-			VideoCreator.makeVideo("test_video_wa.mov", new File("images/_frame.jpg"), new File("images/_preview.jpg"));
+			VideoCreator.makeVideo("test_video_wa.mov", new File("images/_frame.jpg"), new File("images/_preview.jpg"), 2400, 3590);
 			
 			MediaLocator ivml = JpegImagesToMovie.createMediaLocator("test_video_wa.mov");
 			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
@@ -29,14 +29,14 @@ public class VideoCreator {
 		}
 	}
 	
-	public static Integer[] makeVideo(String fileName, File imageFile, File previewFile) throws IOException {
+	public static Integer[] makeVideo(String fileName, File imageFile, File previewFile, int minDur, int maxDur) throws IOException {
 	    Vector<String> imgLst = new Vector<String>();
 	    
 	    Random rnd = new Random();
 	    int framePerSec = 1;
-	    int frameCount = (240 + rnd.nextInt(108))*10*framePerSec;
+	    int frameCount = (minDur + rnd.nextInt(maxDur-minDur))*framePerSec;
 	    //TODO comment
-	    frameCount = 30;
+	   // frameCount = 30;
 	    
 	    for(int i = 0; i < frameCount; i++){
 	    	imgLst.add(imageFile.getAbsolutePath());

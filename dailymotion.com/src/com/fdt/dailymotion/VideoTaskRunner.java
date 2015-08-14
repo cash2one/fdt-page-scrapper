@@ -78,10 +78,10 @@ public class VideoTaskRunner {
 	private final static String CONTENT_TEMPLATE_FILE_PATH_LABEL = "content_template_file_path";
 
 	private static final String MAX_POST_PER_ACCOUNT_LABEL = "MAX_POST_PER_ACCOUNT";
-	private static final String MIN_POST_PER_ACCOUNTLABEL = "MIN_POST_PER_ACCOUNT";
+	private static final String MIN_POST_PER_ACCOUNT_LABEL = "MIN_POST_PER_ACCOUNT";
 
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
-
+	
 	private Integer MIN_SNIPPET_COUNT=5;
 	private Integer MAX_SNIPPET_COUNT=10;
 
@@ -106,7 +106,7 @@ public class VideoTaskRunner {
 		this.linkTitleListFilePath = Constants.getInstance().getProperty(LINK_TITLE_LIST_FILE_PATH_LABEL); 
 
 		this.maxThreadCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
-
+		
 		this.taskFactory = TaskFactory.getInstance();
 
 		Authenticator.setDefault(new Authenticator() {

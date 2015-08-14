@@ -37,6 +37,12 @@ public class VideoPosterThread extends Thread{
 
 	private Integer MIN_SNIPPET_COUNT=5;
 	private Integer MAX_SNIPPET_COUNT=10;
+	
+	private static final String MIN_DURATION_VIDEO_LABEL = "MIN_DURATION_VIDEO";
+	private static final String MAX_DURATION_VIDEO_LABEL = "MAX_DURATION_VIDEO";
+
+	private Integer MIN_DURATION_VIDEO=2400;
+	private Integer MAX_DURATION_VIDEO=3590;
 
 	private NewsTask task;
 	private Account account;
@@ -75,6 +81,11 @@ public class VideoPosterThread extends Thread{
 			MIN_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
 		if(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL) != null)
 			MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
+		
+		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL) != null)
+			MIN_DURATION_VIDEO = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_DURATION_VIDEO_LABEL));
+		if(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL) != null)
+			MAX_DURATION_VIDEO = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_DURATION_VIDEO_LABEL));
 	}
 
 	@Override
@@ -98,7 +109,7 @@ public class VideoPosterThread extends Thread{
 						previewImg = new File("./images/" + task.getKey().replace(":", "") + ".png");
 					}
 					//create video
-					createVideo(task, this.addAudioToFile, previewImg);
+					createVideo(task, this.addAudioToFile, previewImg, MIN_DURATION_VIDEO, MAX_DURATION_VIDEO);
 					Thread.sleep(10000L);
 					
 					//TODO Add Snippet task chooser
@@ -168,10 +179,10 @@ public class VideoPosterThread extends Thread{
 		return task;
 	}
 
-	private void createVideo(NewsTask task, boolean addAudioToFile, File previewImg) throws Exception{
+	private void createVideo(NewsTask task, boolean addAudioToFile, File previewImg, int minDur, int maxDur) throws Exception{
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 
-		VideoCreator.makeVideo(task.getVideoFileWOAudio().getPath(), task.getImageFile(), previewImg);
+		VideoCreator.makeVideo(task.getVideoFileWOAudio().getPath(), task.getImageFile(), previewImg, minDur, maxDur);
 
 		if(addAudioToFile){
 			MediaLocator ivml = JpegImagesToMovie.createMediaLocator(task.getVideoFileWOAudio().getPath());
