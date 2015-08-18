@@ -34,7 +34,7 @@ public class VideoPosterThread extends Thread{
 
 	private static final String MAX_SNIPPET_COUNT_LABEL = "MAX_SNIPPET_COUNT";
 	private static final String MIN_SNIPPET_COUNT_LABEL = "MIN_SNIPPET_COUNT";
-
+	
 	private Integer MIN_SNIPPET_COUNT=5;
 	private Integer MAX_SNIPPET_COUNT=10;
 	
@@ -109,7 +109,7 @@ public class VideoPosterThread extends Thread{
 						previewImg = new File("./images/" + task.getKey().replace(":", "") + ".png");
 					}
 					//create video
-					createVideo(task, this.addAudioToFile, previewImg, MIN_DURATION_VIDEO, MAX_DURATION_VIDEO);
+					Integer[] times = createVideo(task, this.addAudioToFile, previewImg, MIN_DURATION_VIDEO, MAX_DURATION_VIDEO);
 					Thread.sleep(10000L);
 					
 					//TODO Add Snippet task chooser
@@ -127,7 +127,7 @@ public class VideoPosterThread extends Thread{
 					task.setSnippets(snippetsStr.toString());
 
 					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account);
-					String linkToVideo = nPoster.executePostNews();
+					String linkToVideo = nPoster.executePostNews(times);
 					appendStringToFile(linkToVideo, linkList);
 					appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
 
@@ -179,10 +179,10 @@ public class VideoPosterThread extends Thread{
 		return task;
 	}
 
-	private void createVideo(NewsTask task, boolean addAudioToFile, File previewImg, int minDur, int maxDur) throws Exception{
+	private Integer[] createVideo(NewsTask task, boolean addAudioToFile, File previewImg, int minDur, int maxDur) throws Exception{
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 
-		VideoCreator.makeVideo(task.getVideoFileWOAudio().getPath(), task.getImageFile(), previewImg, minDur, maxDur);
+		Integer[] times = VideoCreator.makeVideo(task.getVideoFileWOAudio().getPath(), task.getImageFile(), previewImg, minDur, maxDur);
 
 		if(addAudioToFile){
 			MediaLocator ivml = JpegImagesToMovie.createMediaLocator(task.getVideoFileWOAudio().getPath());
@@ -198,6 +198,8 @@ public class VideoPosterThread extends Thread{
 		}else{
 			task.setVideoFile(task.getVideoFileWOAudio());
 		}
+		
+		return times;
 	}
 
 

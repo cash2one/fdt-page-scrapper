@@ -19,9 +19,12 @@ import java.net.HttpURLConnection;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.TimeZone;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -49,6 +52,12 @@ public class NewsPoster {
 	private NewsTask task = null;
 	private Proxy proxy = null;
 	private Account account = null;
+	
+	private Integer times[];
+	
+	private static final String TIME_STAMP_FORMAT = "HH:mm:ss.SSS";
+	
+	private SimpleDateFormat sdf = new SimpleDateFormat(TIME_STAMP_FORMAT);
 
 	public NewsPoster(NewsTask task, Proxy proxy, Account account) {
 		this.task = task;
@@ -56,8 +65,20 @@ public class NewsPoster {
 		this.account = account;
 	}
 
-	public String executePostNews() throws Exception {
+	public String executePostNews(Integer[] times) throws Exception {
+		sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
+		this.times = times;
 		return postNews();
+	}
+	
+	private String getTimeString(){
+		double milSecCnt = 0L;
+		milSecCnt +=  (times[0] % times[1]) * 1000 + (times[0]/(times[1]*times[1]))*1000;
+		
+		String valueStr = String.format("%.0f", milSecCnt);
+		
+		
+		return sdf.format(new Date(Long.parseLong(valueStr)));
 	}
 
 	private String getUploadUrl() throws Exception{
@@ -708,7 +729,7 @@ public class NewsPoster {
 		StringBuilder params = new StringBuilder();
 		params.append("ajax_function").append("=").append("extract_preview").append("&");
 		params.append("ajax_arg[]").append("=").append(videoId).append("&");
-		params.append("ajax_arg[]").append("=").append("00:00:01.000").append("&");
+		params.append("ajax_arg[]").append("=").append(getTimeString()).append("&");
 		params.append("_").append("=").append(String.valueOf(System.currentTimeMillis())).append("&");
 		params.append("from_request").append("=").append("/upload").append("&");
 		params.append("_csrf_l").append("=").append(account.getCookie("_csrf/link"));
