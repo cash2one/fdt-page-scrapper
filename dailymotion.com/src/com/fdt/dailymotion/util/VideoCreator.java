@@ -14,7 +14,7 @@ public class VideoCreator {
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 		
 		try {
-			VideoCreator.makeVideo("test_video_wa.mov", new File("images/_frame.jpg"), new File("images/_preview.jpg"), 2400, 3590);
+			VideoCreator.makeVideo("test_video_wa.mov", new File("images/_frame.jpg"), new File("images/_preview.jpg"), 3599, 3600);
 			
 			MediaLocator ivml = JpegImagesToMovie.createMediaLocator("test_video_wa.mov");
 			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");

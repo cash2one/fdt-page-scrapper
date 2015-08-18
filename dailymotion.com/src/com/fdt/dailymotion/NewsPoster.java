@@ -299,7 +299,8 @@ public class NewsPoster {
 
 		//executeOptionRequest(postUrl);
 
-		for (int i = 0; i <= uploadFile.length(); i += 500000) {
+		for (long i= 0; i <= uploadFile.length(); i += 500000) {
+			log.debug(String.format("%s: Upload new segment [%d:%d]", Thread.currentThread().getId(), i-500000, i));
 			executeOptionRequest(postUrl);
 			URL url = new URL(postUrl);
 			HttpURLConnection.setFollowRedirects(false);
