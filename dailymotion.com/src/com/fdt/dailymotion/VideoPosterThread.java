@@ -82,9 +82,9 @@ public class VideoPosterThread extends Thread{
 		if(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL) != null)
 			MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
 		
-		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL) != null)
+		if(ConfigManager.getInstance().getProperty(MIN_DURATION_VIDEO_LABEL) != null)
 			MIN_DURATION_VIDEO = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_DURATION_VIDEO_LABEL));
-		if(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL) != null)
+		if(ConfigManager.getInstance().getProperty(MAX_DURATION_VIDEO_LABEL) != null)
 			MAX_DURATION_VIDEO = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_DURATION_VIDEO_LABEL));
 	}
 

@@ -9,12 +9,20 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
+import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import javax.xml.xpath.XPathExpressionException;
+
+import com.fdt.scrapper.SnippetExtractor;
+import com.fdt.scrapper.proxy.ProxyFactory;
+import com.fdt.scrapper.task.BingSnippetTask;
 import com.fdt.scrapper.task.ConfigManager;
+import com.fdt.scrapper.task.Snippet;
 
 public class AnchorTitleReplacer {
 
@@ -30,6 +38,12 @@ public class AnchorTitleReplacer {
 	private final static String REPEAT_COUNT_LABEL = "repeat_count";
 	private final static String OUTPUT_PATH_LABEL = "output_path";
 	private final static String TITLES_FILE_PATH_LABEL = "titles_file_path";
+	
+	private final static String PROXY_LIST_FILE_PATH_LABEL = "proxy_list_file_path";
+	private final static String PROXY_DELAY_LABEL = "proxy_delay";
+	private final static String PROXY_TYPE_LABEL = "proxy_type";
+	
+	private final static String SEARCHER_REPLACE_LABEL = "searcher_replace";
 
 	private String anchorFilePath;
 	private String outputPath;
@@ -42,6 +56,10 @@ public class AnchorTitleReplacer {
 	private int repeatCount;
 
 	private boolean isDeleteUsedLine = false;
+
+	ProxyFactory proxyFactory;
+	
+	private boolean replaceWithBing = false;
 
 	private ArrayList<String> usedLines = new ArrayList<String>();
 	private ArrayList<String> newLines = new ArrayList<String>();
@@ -86,6 +104,13 @@ public class AnchorTitleReplacer {
 
 		this.maxLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MAX_LINE_COUNT_LABEL));
 		this.minLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MIN_LINE_COUNT_LABEL));
+		
+		this.replaceWithBing = Boolean.parseBoolean(ConfigManager.getInstance().getProperty(SEARCHER_REPLACE_LABEL));
+		
+		ProxyFactory.DELAY_FOR_PROXY = Integer.valueOf(ConfigManager.getInstance().getProperty(PROXY_DELAY_LABEL));
+		ProxyFactory.PROXY_TYPE = ConfigManager.getInstance().getProperty(PROXY_TYPE_LABEL);
+		ProxyFactory proxyFactory = ProxyFactory.getInstance();
+		proxyFactory.init(ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL));
 
 	}
 
@@ -102,7 +127,7 @@ public class AnchorTitleReplacer {
 
 	private void loop(ArrayList<String> lines, ArrayList<String> titles) throws IOException{
 		ArrayList<String> rndLines4Process;
-		ArrayList<String> rndLinesProcessed;
+		ArrayList<String> rndLinesProcessed = null;
 
 		while(lines.size() > 0){
 			rndLines4Process = getRndLines(lines);
@@ -158,8 +183,20 @@ public class AnchorTitleReplacer {
 							//System.out.println("Full title: " + fullTitle);
 							bookName = matcher.group(3).trim();
 							//System.out.println("Book name: " + bookName);
-							newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
-							newLine = line.replace(fullTitle, newTitle);
+							if(replaceWithBing){
+								do{
+									newLine = "";
+									try {
+										newLine = getSnippet(bookName).getTitle();
+									} catch (Exception e) {
+										System.out.println(String.format("Error occured during getting snippets: %s", e.getMessage()));
+										e.printStackTrace();
+									} 
+								}while("".equals(newLine));
+							}else{
+								newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
+								newLine = line.replace(fullTitle, newTitle);
+							}
 							output.add(newLine);
 							//System.out.println("New line: " + newLine);
 						}else{
@@ -246,6 +283,19 @@ public class AnchorTitleReplacer {
 				bufferedWriter.flush();
 				bufferedWriter.close();
 			}
+		}
+	}
+	
+	private Snippet getSnippet(String key) throws IOException, XPathExpressionException, ParseException{
+		Random rnd = new Random();
+		SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
+		//TODO Add Snippet task chooser
+		ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(key));
+		
+		if(snippets.size() == 0){
+			throw new IOException("Could not extract snippets");
+		}else{
+			return snippets.get(rnd.nextInt(snippets.size()));
 		}
 	}
 }

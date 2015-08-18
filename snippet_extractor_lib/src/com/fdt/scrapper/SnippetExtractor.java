@@ -282,7 +282,7 @@ public class SnippetExtractor {
 
 		String proxyTypeStr = ConfigManager.getInstance().getProperty("proxy_type");
 
-		ProxyConnector proxyConnector = proxyFactory.getProxyConnector();
+		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
 		TagNode page = null;
 		try{
 			page = loadPageContent(snippetTask,proxyConnector.getConnect(proxyTypeStr));

@@ -5306,3 +5306,7 @@ http://i.imgur.com/lCtKZWX.jpg
 2015-08-13 14:21:42,005-DEBUG(VideoTaskRunner.java:208)-Error tasks: 0
 2015-08-13 14:21:42,005-DEBUG(VideoTaskRunner.java:240)-Starting saving unused account...
 2015-08-13 14:21:42,005-DEBUG(VideoTaskRunner.java:247)-Unused accounts was saved successfully.
+2015-08-18 13:46:38,360-DEBUG(AccountFactory.java:94)-Total account count: 1
+2015-08-18 13:46:38,414- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/ru
+2015-08-18 13:47:12,812-DEBUG(AccountFactory.java:94)-Total account count: 1
+2015-08-18 13:47:12,830- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/ru
