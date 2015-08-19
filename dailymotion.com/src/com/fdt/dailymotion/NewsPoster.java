@@ -78,7 +78,7 @@ public class NewsPoster {
 		String valueStr = String.format("%.0f", milSecCnt);
 		
 		
-		return sdf.format(new Date(Long.parseLong(valueStr)));
+		return sdf.format(new Date(Long.parseLong(valueStr)-1000));
 	}
 
 	private String getUploadUrl() throws Exception{

@@ -12,6 +12,7 @@ import java.util.List;
 import javax.media.MediaLocator;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
 
 import com.fdt.dailymotion.task.NewsTask;
@@ -104,9 +105,12 @@ public class VideoPosterThread extends Thread{
 					task.parseFile();
 
 					SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
-					File previewImg = new File("./images/" + task.getKey().replace(":", "") + ".jpg");
+					File previewImg = new File("./images/preview_" + getFileNameWOExt(task.getInputFile()) + ".jpg");
 					if(!previewImg.exists()){
-						previewImg = new File("./images/" + task.getKey().replace(":", "") + ".png");
+						previewImg = new File("./images/preview_" + getFileNameWOExt(task.getInputFile()) + ".png");
+						if(!previewImg.exists()){
+							previewImg = null;
+						}
 					}
 					//create video
 					Integer[] times = createVideo(task, this.addAudioToFile, previewImg, MIN_DURATION_VIDEO, MAX_DURATION_VIDEO);
@@ -132,11 +136,11 @@ public class VideoPosterThread extends Thread{
 					appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
 
 					//Move file to processed folder
-					File destFile = new File(listProcessedFilePath + "/" + task.getInputFileName().getName());
+					File destFile = new File(listProcessedFilePath + "/" + task.getInputFile().getName());
 					if(destFile.exists()){
 						destFile.delete();
 					}
-					FileUtils.moveFile(task.getInputFileName(), destFile);
+					FileUtils.moveFile(task.getInputFile(), destFile);
 
 				}
 				catch (Throwable e) {
@@ -145,11 +149,11 @@ public class VideoPosterThread extends Thread{
 
 					if(!reprocessed){
 						try {
-							File destFile = new File(errorFilePath + "/" + task.getInputFileName().getName());
+							File destFile = new File(errorFilePath + "/" + task.getInputFile().getName());
 							if(destFile.exists()){
 								destFile.delete();
 							}
-							FileUtils.moveFile(task.getInputFileName(), destFile);
+							FileUtils.moveFile(task.getInputFile(), destFile);
 						} catch (IOException e1) {
 							log.error(e1);
 						}
@@ -173,6 +177,12 @@ public class VideoPosterThread extends Thread{
 				taskFactory.decRunThreadsCount(task);
 			}
 		}
+	}
+	
+	private String getFileNameWOExt(File file){
+		String fileName = FilenameUtils.getBaseName(file.getName());
+		//fileName.replaceAll("."+FilenameUtils.getBaseName(filename), replacement)
+		return fileName;
 	}
 
 	public NewsTask getTask(){

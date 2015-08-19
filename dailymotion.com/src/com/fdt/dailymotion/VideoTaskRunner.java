@@ -175,7 +175,7 @@ public class VideoTaskRunner {
 						NewsTask task = taskFactory.getTask();
 						
 						if(task != null){
-							log.debug("Task. File name: " + task.getInputFileName().getName());
+							log.debug("Task. File name: " + task.getInputFile().getName());
 							log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
 							newThread = new VideoPosterThread(
 									task, 

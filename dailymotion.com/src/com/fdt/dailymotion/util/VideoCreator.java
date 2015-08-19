@@ -14,7 +14,7 @@ public class VideoCreator {
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 		
 		try {
-			VideoCreator.makeVideo("test_video_wa.mov", new File("images/_frame.jpg"), new File("images/_preview.jpg"), 3599, 3600);
+			VideoCreator.makeVideo("test_video_wa.mov", new File("images/_frame.jpg"), new File("images/_preview.jpg"), 35, 36);
 			
 			MediaLocator ivml = JpegImagesToMovie.createMediaLocator("test_video_wa.mov");
 			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
@@ -38,11 +38,13 @@ public class VideoCreator {
 	    //TODO comment
 	   // frameCount = 30;
 	    
-	    for(int i = 0; i < frameCount; i++){
+	    for(int i = 0; i < frameCount-1; i++){
 	    	imgLst.add(imageFile.getAbsolutePath());
 	    }
 	    
-	    imgLst.add(1, previewFile.getAbsolutePath());
+	    if(previewFile != null && previewFile.exists()){
+	    	imgLst.add(frameCount-1, previewFile.getAbsolutePath());
+	    }
 	    
 	    JpegImagesToMovie imageToMovie = new JpegImagesToMovie();
 	    MediaLocator oml;

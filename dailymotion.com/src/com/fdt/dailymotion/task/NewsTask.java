@@ -39,9 +39,9 @@ public class NewsTask{
 
 	private static final String LINE_FEED = "\r\n";
 
-	public NewsTask(File inputFileName, File templateFile) throws Exception {
+	public NewsTask(File inputFile, File templateFile) throws Exception {
 		super();
-		this.inputFile = inputFileName;
+		this.inputFile = inputFile;
 		this.templateFile = templateFile;
 		//TODO Read and parse file
 	}
@@ -172,7 +172,7 @@ public class NewsTask{
 		this.uploadUrl = uploadUrl;
 	}
 
-	public File getInputFileName() {
+	public File getInputFile() {
 		return inputFile;
 	}
 
