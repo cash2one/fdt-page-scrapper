@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.Properties;
 import java.util.Random;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
@@ -53,7 +54,7 @@ public class VideoTaskRunner {
 
 	private String linkListFilePath;
 	private String linkTitleListFilePath;
-	
+
 	private TaskFactory taskFactory;
 
 	private final Random rnd = new Random();
@@ -81,7 +82,7 @@ public class VideoTaskRunner {
 	private static final String MIN_POST_PER_ACCOUNT_LABEL = "MIN_POST_PER_ACCOUNT";
 
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
-	
+
 	private Integer MIN_SNIPPET_COUNT=5;
 	private Integer MAX_SNIPPET_COUNT=10;
 
@@ -106,7 +107,7 @@ public class VideoTaskRunner {
 		this.linkTitleListFilePath = Constants.getInstance().getProperty(LINK_TITLE_LIST_FILE_PATH_LABEL); 
 
 		this.maxThreadCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
-		
+
 		this.taskFactory = TaskFactory.getInstance();
 
 		Authenticator.setDefault(new Authenticator() {
@@ -165,7 +166,7 @@ public class VideoTaskRunner {
 
 				Account account = null;
 				VideoPosterThread newThread = null;
-				
+
 				while((!taskFactory.isTaskFactoryEmpty() && ((account = accountFactory.getAccount()) != null)) || taskFactory.getRunThreadsCount() > 0){
 
 					log.debug("Try to get request from RequestFactory queue.");
@@ -173,7 +174,7 @@ public class VideoTaskRunner {
 					if(account != null)
 					{
 						NewsTask task = taskFactory.getTask();
-						
+
 						if(task != null){
 							log.debug("Task. File name: " + task.getInputFile().getName());
 							log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
@@ -188,7 +189,7 @@ public class VideoTaskRunner {
 									linkTitleList, 
 									this.listProcessedFilePath, 
 									this.errorFilePath
-								);
+									);
 							newThread.start();
 							account = null;
 							continue;
@@ -224,15 +225,26 @@ public class VideoTaskRunner {
 
 	private void deleteAllVideoFiles(){
 		File outputFolder = new File("output_video");
-		for(File file: outputFolder.listFiles()){
-			try {
-				log.debug("Delete video file: " + file.getName());
-				file.delete();
+		//while(outputFolder.listFiles().length > 0){
+			for(File file: outputFolder.listFiles()){
+				try {
+					log.debug("Delete video file: " + file.getName());
+					//file.deleteOnExit();
+					File newFile = new File(file.getPath() + "_delete_me");
+					FileUtils.moveFile(file, newFile);
+					boolean deleted = newFile.delete();
+					if(!deleted){
+						log.warn(String.format("File %s was not deleted", newFile.getName()));
+						while(!deleted){
+							deleted = newFile.delete();
+						}
+					}
+				}
+				catch (Exception e1) {
+					log.error(e1);
+				}
 			}
-			catch (Exception e1) {
-				log.error(e1);
-			}
-		}
+		//}
 	}
 
 	private void saveUnusedAccounts(HashMap<String, Account> accounts){

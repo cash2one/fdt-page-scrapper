@@ -125,7 +125,10 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		outputDataSource.disconnect();
 		arrayDataSource[0].disconnect();
 		arrayDataSource[1].disconnect();
-
+		
+		videoProcessor.close();
+		audioProcessor.close();
+		processor.close();
 		/*File newFile = new File(tmpFileName.substring(5));
 		File oldFile = new File(videoML.getURL().toString().substring(5)); 
 		//delete old file

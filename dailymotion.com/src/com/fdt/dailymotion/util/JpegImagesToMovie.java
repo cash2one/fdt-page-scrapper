@@ -138,21 +138,23 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		log.info("Generating the video : "+outML.getURL().toString());
 
 		// OK, we can now start the actual transcoding.
-		p.start();
 		dsink.start();
+		p.start();
 
 		// Wait for EndOfStream event.
 		waitForFileDone();
 
 		// Cleanup.
-		dsink.stop();
 		p.stop();
+		dsink.stop();
 
 		dsink.close();
 		p.close();
-
+		
 		dsink.removeDataSinkListener(this);
 		p.removeControllerListener(this);
+		
+		ids.disconnect();
 
 		log.info("Video creation completed!!!!!");
 		return true;
