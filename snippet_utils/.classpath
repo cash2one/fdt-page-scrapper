@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/snippet_extractor_lib"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/proxy_factory"/>
+	<classpathentry kind="lib" path="D:/Work/Scrapper_door/java/log4j-1.2.15.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

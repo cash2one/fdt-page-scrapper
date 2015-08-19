@@ -11,12 +11,14 @@ import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.xml.xpath.XPathExpressionException;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 
 import com.fdt.scrapper.SnippetExtractor;
 import com.fdt.scrapper.proxy.ProxyFactory;
@@ -25,6 +27,8 @@ import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.Snippet;
 
 public class AnchorTitleReplacer {
+	
+	private static final Logger log = Logger.getLogger(AnchorTitleReplacer.class);
 
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
 	private final static String PROXY_PASS_LABEL = "proxy_pass";
@@ -43,7 +47,7 @@ public class AnchorTitleReplacer {
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
 	private final static String PROXY_TYPE_LABEL = "proxy_type";
 	
-	private final static String SEARCHER_REPLACE_LABEL = "searcher_replace";
+	private final static String GET_ANCHOR_FROM_WEB_LABEL = "get_anchor_from_web";
 
 	private String anchorFilePath;
 	private String outputPath;
@@ -65,7 +69,7 @@ public class AnchorTitleReplacer {
 	private ArrayList<String> newLines = new ArrayList<String>();
 
 	public static void main(String[] args) {
-
+		DOMConfigurator.configure("log4j.xml");
 		try{
 			if(args.length < 1){
 				System.out.println("Some arguments are absent. Please use next list of arguments: 1 config file");
@@ -89,7 +93,7 @@ public class AnchorTitleReplacer {
 			}
 
 		}catch(Exception e){
-			e.printStackTrace();
+			log.error(e);
 			System.exit(-1);
 		}
 	}
@@ -105,11 +109,11 @@ public class AnchorTitleReplacer {
 		this.maxLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MAX_LINE_COUNT_LABEL));
 		this.minLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MIN_LINE_COUNT_LABEL));
 		
-		this.replaceWithBing = Boolean.parseBoolean(ConfigManager.getInstance().getProperty(SEARCHER_REPLACE_LABEL));
+		this.replaceWithBing = Boolean.parseBoolean(ConfigManager.getInstance().getProperty(GET_ANCHOR_FROM_WEB_LABEL));
 		
 		ProxyFactory.DELAY_FOR_PROXY = Integer.valueOf(ConfigManager.getInstance().getProperty(PROXY_DELAY_LABEL));
 		ProxyFactory.PROXY_TYPE = ConfigManager.getInstance().getProperty(PROXY_TYPE_LABEL);
-		ProxyFactory proxyFactory = ProxyFactory.getInstance();
+		proxyFactory = ProxyFactory.getInstance();
 		proxyFactory.init(ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL));
 
 	}
@@ -183,16 +187,20 @@ public class AnchorTitleReplacer {
 							//System.out.println("Full title: " + fullTitle);
 							bookName = matcher.group(3).trim();
 							//System.out.println("Book name: " + bookName);
+							if(fullTitle.equals(bookName)){
+								log.debug("NEW TITLE FOUND: " + fullTitle);
+							}
 							if(replaceWithBing){
 								do{
-									newLine = "";
+									newTitle = "";
 									try {
-										newLine = getSnippet(bookName).getTitle();
+										newTitle = getSnippet(bookName).getTitle();
 									} catch (Exception e) {
-										System.out.println(String.format("Error occured during getting snippets: %s", e.getMessage()));
-										e.printStackTrace();
+										log.error(String.format("Error occured during getting snippets: %s", e.getMessage()), e);
 									} 
-								}while("".equals(newLine));
+								}while("".equals(newTitle));
+								//newLine = line.replace(fullTitle, newTitle);
+								newLine = line.replace(fullTitle, newTitle);
 							}else{
 								newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
 								newLine = line.replace(fullTitle, newTitle);
@@ -209,7 +217,7 @@ public class AnchorTitleReplacer {
 					break;
 				}else{
 					if(matchStepCount == titles.size()){
-						System.out.println("NOT Processed line: " + line);
+						log.error("NOT Processed line: " + line);
 					}
 				}
 			}
