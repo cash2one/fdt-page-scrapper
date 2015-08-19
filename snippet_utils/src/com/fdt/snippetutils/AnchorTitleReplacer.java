@@ -298,7 +298,9 @@ public class AnchorTitleReplacer {
 		Random rnd = new Random();
 		SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
 		//TODO Add Snippet task chooser
-		ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(key));
+		BingSnippetTask bingTask = new BingSnippetTask(key);
+		bingTask.setPage(1+rnd.nextInt(5));
+		ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(bingTask);
 		
 		if(snippets.size() == 0){
 			throw new IOException("Could not extract snippets");

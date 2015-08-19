@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import javax.media.MediaLocator;
 
@@ -142,6 +143,9 @@ public class VideoPosterThread extends Thread{
 					}
 					FileUtils.moveFile(task.getInputFile(), destFile);
 
+				}
+				catch(NoSuchElementException e){
+					
 				}
 				catch (Throwable e) {
 					errorExist = true;

@@ -23,6 +23,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.TimeZone;
 
@@ -157,8 +158,14 @@ public class NewsPoster {
 
 		conn.disconnect();
 
+		String videoId = null;
 		JSONObject jsonObj = new JSONObject(responseStr.substring(1, responseStr.length()-1));
-		String videoId = jsonObj.getJSONObject("result").getString("id");
+		try{
+			videoId = jsonObj.getJSONObject("result").getString("id");
+		}catch(NoSuchElementException e){
+			log.error("'result' element NOT FOUND. Responce JSONObject: " + responseStr);
+			throw e;
+		}
 
 		conn.disconnect();
 

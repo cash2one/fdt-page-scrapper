@@ -7,10 +7,11 @@ public class BingSnippetTask extends SnippetTask
 {
     public BingSnippetTask(String keyWords){
 	super(keyWords);
-	this.setScrapperUrl("http://www.bing.com/search?q=#KEY_WORDS#");
+	this.setScrapperUrl("http://www.bing.com/search?q=#KEY_WORDS#&first=#PAGE_NUM#");
 	this.setXpathTitle("//li[@class='b_algo']//h2/a");
 	this.setXpathDesc("//div[@class='b_caption']/p");
 	this.setHost("bing.com");
+	this.setPage(1);
 	/*this.setXpathSnipper("li[class=g]");
 	this.setXpathTitle("h3[class=r] a");
 	this.setXpathDesc("div[class=s] span[class=st]");*/
@@ -21,7 +22,7 @@ public class BingSnippetTask extends SnippetTask
 	String result = "";
 	try
 	{
-	    result = this.scrapperUrl.replace(KEY_WORDS_KEY, URLEncoder.encode(keyWordsNative,"UTF-8")).replace(LANGUAGE_KEY, language);
+	    result = this.scrapperUrl.replace(KEY_WORDS_KEY, URLEncoder.encode(keyWordsNative,"UTF-8")).replace(LANGUAGE_KEY, language).replace(PAGE_NUMBER, String.valueOf(1+10*(page-1)));
 	}
 	catch (UnsupportedEncodingException e)
 	{

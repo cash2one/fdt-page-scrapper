@@ -11,6 +11,7 @@ public abstract class SnippetTask
 {
 	public final static String KEY_WORDS_KEY = "#KEY_WORDS#";
 	public final static String LANGUAGE_KEY = "#LANGUAGE#";
+	public final static String PAGE_NUMBER = "#PAGE_NUM#";
 
 	protected String scrapperUrl = "";
 	private String xpathSnippets = "";
@@ -22,6 +23,7 @@ public abstract class SnippetTask
 	protected String language = "en";
 	protected String host = "";
 	protected boolean encodeKeywords = false;
+	protected int page;
 	
 	protected Map<String,String> extraParams = new HashMap<String, String>();
 	
@@ -128,10 +130,10 @@ public abstract class SnippetTask
 	public String getFullUrl(){
 		String result = "";
 		if(!isEncodeKeywords()){
-			result = scrapperUrl.replace(KEY_WORDS_KEY, keyWords).replace(LANGUAGE_KEY, language);
+			result = scrapperUrl.replace(KEY_WORDS_KEY, keyWords).replace(LANGUAGE_KEY, language).replace(PAGE_NUMBER, String.valueOf(page));
 		}else{
 			try {
-				result = scrapperUrl.replace(KEY_WORDS_KEY, URLEncoder.encode(keyWords,HTTP.UTF_8)).replace(LANGUAGE_KEY, language);
+				result = scrapperUrl.replace(KEY_WORDS_KEY, URLEncoder.encode(keyWords,HTTP.UTF_8)).replace(LANGUAGE_KEY, language).replace(PAGE_NUMBER, String.valueOf(page));
 			} catch (UnsupportedEncodingException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -182,5 +184,13 @@ public abstract class SnippetTask
 
 	public void setExtraParams(Map<String, String> extraParams) {
 		this.extraParams = extraParams;
+	}
+
+	public int getPage() {
+		return page;
+	}
+
+	public void setPage(int page) {
+		this.page = page;
 	}
 }

@@ -32,7 +32,7 @@ public class VideoTaskRunner {
 
 	private static final String LINE_FEED = "\r\n";
 
-	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
+	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 5000L;
 
 	public final static String MAIN_URL_LABEL = "main_url";
 
@@ -190,10 +190,12 @@ public class VideoTaskRunner {
 									this.errorFilePath
 								);
 							newThread.start();
+							account = null;
 							continue;
 						}else{
 							accountFactory.releaseAccount(account);
 						}
+						account = null;
 					}
 					try {
 						this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
