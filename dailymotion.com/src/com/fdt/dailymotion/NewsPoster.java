@@ -547,6 +547,8 @@ public class NewsPoster {
 		int respCode = conn.getResponseCode();
 		// Execute HTTP Post Request
 		StringBuilder responseStr = getResponseAsString(conn);
+		
+		log.debug("Responce string after EDIT operation: " + responseStr);
 
 		//log.debug(responseStr.toString());
 
@@ -559,6 +561,7 @@ public class NewsPoster {
 				throw new Exception("URL to video was not extracted. Next string was extracted: " + videoUrl);
 			}
 			setPreview(videoId);
+			log.info("VIDEO URL: " + videoUrl);
 			return videoUrl;
 		}else{
 			return "";
