@@ -273,6 +273,21 @@ public class AccountFactory
 		count--;
 		accountUsedInThreadCount.put(account.getLogin(), count);
 		log.debug("Used account size decremented: " + count);
+		
+		//check for account excluding
+		if(accountUsedInThreadCount.get(account.getLogin()) == 0 && newsPostedCount.get(account.getLogin()) >= NEWS_PER_ACCOUNT){
+			accounts.remove(account.getLogin());
+			log.warn(String.format("Account %s was excluded from requet at all",account.getLogin()));
+		}
+	}
+	
+	/**
+	 * Release account using
+	 * @param account
+	 */
+	public synchronized void checkAccountForExclude(Account account){
+		//now account will not be return for processing
+		newsPostedCount.put(account.getLogin(), NEWS_PER_ACCOUNT);
 	}
 
 	/*	public synchronized boolean isCanGetNewAccounts(){

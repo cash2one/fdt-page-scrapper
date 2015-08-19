@@ -143,11 +143,11 @@ public class VideoPosterThread extends Thread{
 					}
 					FileUtils.moveFile(task.getInputFile(), destFile);
 
-				}
-				catch(NoSuchElementException e){
-					
-				}
+				} 
 				catch (Throwable e) {
+					if(e instanceof NoSuchElementException){
+						accountFactory.checkAccountForExclude(account);
+					}
 					errorExist = true;
 					boolean reprocessed = taskFactory.reprocessingTask(task);
 

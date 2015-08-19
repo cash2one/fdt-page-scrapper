@@ -1358,3 +1358,178 @@ http://ia.media-imdb.com/images/M/MV5BNjI0NTAwMTU1NV5BMl5BanBnXkFtZTgwNzkwNjQ0Mj
 2015-08-19 14:52:55,720-DEBUG(VideoTaskRunner.java:172)-Account: null
 2015-08-19 14:53:00,720-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
 2015-08-19 14:53:00,720-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:02:49,698-DEBUG(AccountFactory.java:94)-Total account count: 1
+2015-08-19 15:02:49,724- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/ru
+2015-08-19 15:02:51,110- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/pageitem/authenticationContainer?request=/login?&from_request=%2Fru&_csrf_l=Vx7LYEn_vfCHUj0eLjVT5ytrX990Fk5t7Pz30maryvs
+2015-08-19 15:02:52,017-DEBUG(AccountFactory.java:183)-Success account count: 1
+2015-08-19 15:02:52,052-DEBUG(AccountFactory.java:244)-Used account size incremented: 1
+2015-08-19 15:02:52,052-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:02:52,052-DEBUG(VideoTaskRunner.java:172)-Account: brocepisfrit@mail.ru;ECcb9RTixu;riapporphacoony
+2015-08-19 15:02:52,052-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_1.txt
+2015-08-19 15:02:52,053-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 0. Error tasks: 0
+2015-08-19 15:02:52,109-DEBUG(TaskFactory.java:68)-INC thread: 1
+2015-08-19 15:02:52,109-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:02:52,110-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:02:52,111-DEBUG(NewsTask.java:80)-File content: Antes de despertar (2014)
+Watch Antes de despertar (2014) Online Full Movie (HD)
+http://tinyurl.com/ohxe45y
+http://ia.media-imdb.com/images/M/MV5BNjI0NTAwMTU1NV5BMl5BanBnXkFtZTgwNzkwNjQ0MjE@._V1_UY1200_CR90,0,630,1200_AL_.jpg
+
+2015-08-19 15:02:52,115-DEBUG(NewsTask.java:107)-Image found: http://ia.media-imdb.com/images/M/MV5BNjI0NTAwMTU1NV5BMl5BanBnXkFtZTgwNzkwNjQ0MjE@._V1_UY1200_CR90,0,630,1200_AL_.jpg
+2015-08-19 15:02:53,022-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/ohxe45y
+2015-08-19 15:02:57,110-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:02:57,110-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:03:02,112-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:03:02,115-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:03:07,119-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:03:07,119-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:03:07,906-DEBUG(VideoPosterThread.java:237)-Keywords: task.getKeyWords(). Snippet count: 5
+2015-08-19 15:03:09,496- INFO(NewsPoster.java:123)-Upload URL: http://upload-01.sv6.dailymotion.com/upload?uuid=a19d391d0eca6b7a41e5f2707afbbefd&seal=b5f14cf769a3d36ebe19e2e488589fe1
+2015-08-19 15:03:12,123-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:03:12,126-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:03:17,130-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:03:17,130-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:03:22,134-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:03:22,134-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:03:24,578-ERROR(NewsPoster.java:166)-'result' element NOT FOUND. Responce JSONObject: [{"error":{"code":403,"message":"You reached your upload rate limit, please slow down.","type":"access_forbidden"},"id":0}]
+
+2015-08-19 15:03:27,134-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:03:27,135-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:03:29,438- WARN(AccountFactory.java:284)-Account riapporphacoony was excluded from requet at all
+2015-08-19 15:03:30,593- INFO(TaskFactory.java:103)-Task returned to queue for reprocessing: com.fdt.dailymotion.task.NewsTask@786712e8
+2015-08-19 15:03:31,465-ERROR(VideoPosterThread.java:165)-Error occured during process task: com.fdt.dailymotion.task.NewsTask@786712e8
+java.util.NoSuchElementException: JSONObject["result"] not found.
+	at org.json.JSONObject.get(JSONObject.java:220)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:346)
+	at com.fdt.dailymotion.NewsPoster.getVideoId(NewsPoster.java:164)
+	at com.fdt.dailymotion.NewsPoster.postNews(NewsPoster.java:298)
+	at com.fdt.dailymotion.NewsPoster.executePostNews(NewsPoster.java:72)
+	at com.fdt.dailymotion.VideoPosterThread.run(VideoPosterThread.java:135)
+2015-08-19 15:03:31,939-DEBUG(VideoPosterThread.java:277)-Delete video file: article_1.mov
+2015-08-19 15:03:31,944-DEBUG(VideoPosterThread.java:286)-Delete video file: article_1_wo_audio.mov
+2015-08-19 15:03:32,136-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:03:32,136-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:03:37,139-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:03:37,139-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:04:03,016-DEBUG(AccountFactory.java:275)-Used account size decremented: 19
+2015-08-19 15:22:15,999-DEBUG(AccountFactory.java:94)-Total account count: 1
+2015-08-19 15:22:16,019- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/ru
+2015-08-19 15:22:19,716- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/pageitem/authenticationContainer?request=/login?&from_request=%2Fru&_csrf_l=p32_JgNWfJWuiFoJfkfU2vlpsdvuGeuSPFYWwbbRAkI
+2015-08-19 15:22:20,813-DEBUG(AccountFactory.java:183)-Success account count: 1
+2015-08-19 15:22:20,837-DEBUG(AccountFactory.java:244)-Used account size incremented: 1
+2015-08-19 15:22:20,837-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:22:20,838-DEBUG(VideoTaskRunner.java:172)-Account: brocepisfrit@mail.ru;ECcb9RTixu;riapporphacoony
+2015-08-19 15:22:20,839-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_1.txt
+2015-08-19 15:22:20,839-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 0. Error tasks: 0
+2015-08-19 15:22:20,858-DEBUG(TaskFactory.java:68)-INC thread: 1
+2015-08-19 15:22:20,860-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:22:20,861-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:22:20,863-DEBUG(NewsTask.java:80)-File content: Antes de despertar (2014)
+Watch Antes de despertar (2014) Online Full Movie (HD)
+http://tinyurl.com/ohxe45y
+http://ia.media-imdb.com/images/M/MV5BNjI0NTAwMTU1NV5BMl5BanBnXkFtZTgwNzkwNjQ0MjE@._V1_UY1200_CR90,0,630,1200_AL_.jpg
+
+2015-08-19 15:22:20,872-DEBUG(NewsTask.java:107)-Image found: http://ia.media-imdb.com/images/M/MV5BNjI0NTAwMTU1NV5BMl5BanBnXkFtZTgwNzkwNjQ0MjE@._V1_UY1200_CR90,0,630,1200_AL_.jpg
+2015-08-19 15:22:21,875-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/ohxe45y
+2015-08-19 15:22:25,861-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:22:25,861-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:22:30,864-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:22:30,865-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:22:35,866-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:22:35,867-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:22:39,568-DEBUG(VideoPosterThread.java:237)-Keywords: task.getKeyWords(). Snippet count: 7
+2015-08-19 15:22:40,867-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:22:40,867-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:22:41,061- INFO(NewsPoster.java:123)-Upload URL: http://upload-01.sv6.dailymotion.com/upload?uuid=8d8f18957c8d36b764814942ad8e4d34&seal=544700b7395f91cdc4897a96bcc9a42e
+2015-08-19 15:22:45,867-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:22:45,867-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:22:46,002-ERROR(NewsPoster.java:166)-'result' element NOT FOUND. Responce JSONObject: [{"error":{"code":403,"message":"You reached your upload rate limit, please slow down.","type":"access_forbidden"},"id":0}]
+
+2015-08-19 15:22:50,870-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:22:50,872-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:22:55,872-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:22:55,872-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:23:00,883-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:23:00,884-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:23:03,080- INFO(TaskFactory.java:103)-Task returned to queue for reprocessing: com.fdt.dailymotion.task.NewsTask@11c145f5
+2015-08-19 15:23:03,629-ERROR(VideoPosterThread.java:165)-Error occured during process task: com.fdt.dailymotion.task.NewsTask@11c145f5
+java.util.NoSuchElementException: JSONObject["result"] not found.
+	at org.json.JSONObject.get(JSONObject.java:220)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:346)
+	at com.fdt.dailymotion.NewsPoster.getVideoId(NewsPoster.java:164)
+	at com.fdt.dailymotion.NewsPoster.postNews(NewsPoster.java:298)
+	at com.fdt.dailymotion.NewsPoster.executePostNews(NewsPoster.java:72)
+	at com.fdt.dailymotion.VideoPosterThread.run(VideoPosterThread.java:135)
+2015-08-19 15:23:03,634-DEBUG(VideoPosterThread.java:277)-Delete video file: article_1.mov
+2015-08-19 15:23:03,635-DEBUG(VideoPosterThread.java:286)-Delete video file: article_1_wo_audio.mov
+2015-08-19 15:23:03,636-DEBUG(AccountFactory.java:275)-Used account size decremented: 0
+2015-08-19 15:24:51,506-DEBUG(AccountFactory.java:94)-Total account count: 1
+2015-08-19 15:24:51,523- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/ru
+2015-08-19 15:24:53,235- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/pageitem/authenticationContainer?request=/login?&from_request=%2Fru&_csrf_l=3zZMyjHa6p1NfPubkcDHSd-cYkuCkiJgpKF9f9AdQHY
+2015-08-19 15:24:54,455-DEBUG(AccountFactory.java:183)-Success account count: 1
+2015-08-19 15:24:54,482-DEBUG(AccountFactory.java:244)-Used account size incremented: 1
+2015-08-19 15:24:54,482-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:24:54,482-DEBUG(VideoTaskRunner.java:172)-Account: brocepisfrit@mail.ru;ECcb9RTixu;riapporphacoony
+2015-08-19 15:24:54,483-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_1.txt
+2015-08-19 15:24:54,483-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 0. Error tasks: 0
+2015-08-19 15:24:54,515-DEBUG(TaskFactory.java:68)-INC thread: 1
+2015-08-19 15:24:54,516-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:24:54,516-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:24:54,518-DEBUG(NewsTask.java:80)-File content: Antes de despertar (2014)
+Watch Antes de despertar (2014) Online Full Movie (HD)
+http://tinyurl.com/ohxe45y
+http://ia.media-imdb.com/images/M/MV5BNjI0NTAwMTU1NV5BMl5BanBnXkFtZTgwNzkwNjQ0MjE@._V1_UY1200_CR90,0,630,1200_AL_.jpg
+
+2015-08-19 15:24:54,521-DEBUG(NewsTask.java:107)-Image found: http://ia.media-imdb.com/images/M/MV5BNjI0NTAwMTU1NV5BMl5BanBnXkFtZTgwNzkwNjQ0MjE@._V1_UY1200_CR90,0,630,1200_AL_.jpg
+2015-08-19 15:24:56,216-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/ohxe45y
+2015-08-19 15:24:59,516-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:24:59,516-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:25:43,251-DEBUG(AccountFactory.java:94)-Total account count: 1
+2015-08-19 15:25:43,289- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/ru
+2015-08-19 15:25:44,104- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/pageitem/authenticationContainer?request=/login?&from_request=%2Fru&_csrf_l=ufT1LqjPtE96U7vzKbaIqnCleiTgpvkQQq0xTreMf_M
+2015-08-19 15:25:50,754-DEBUG(AccountFactory.java:183)-Success account count: 1
+2015-08-19 15:25:50,785-DEBUG(AccountFactory.java:244)-Used account size incremented: 1
+2015-08-19 15:25:50,786-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:25:50,786-DEBUG(VideoTaskRunner.java:172)-Account: brocepisfrit@mail.ru;ECcb9RTixu;riapporphacoony
+2015-08-19 15:25:50,787-DEBUG(VideoTaskRunner.java:178)-Task. File name: article_1.txt
+2015-08-19 15:25:50,787-DEBUG(VideoTaskRunner.java:179)-Pending tasks: 0. Error tasks: 0
+2015-08-19 15:25:50,831-DEBUG(TaskFactory.java:68)-INC thread: 1
+2015-08-19 15:25:50,832-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:25:50,832-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:25:50,836-DEBUG(NewsTask.java:80)-File content: Antes de despertar (2014)
+Watch Antes de despertar (2014) Online Full Movie (HD)
+http://tinyurl.com/ohxe45y
+http://ia.media-imdb.com/images/M/MV5BNjI0NTAwMTU1NV5BMl5BanBnXkFtZTgwNzkwNjQ0MjE@._V1_UY1200_CR90,0,630,1200_AL_.jpg
+
+2015-08-19 15:25:50,848-DEBUG(NewsTask.java:107)-Image found: http://ia.media-imdb.com/images/M/MV5BNjI0NTAwMTU1NV5BMl5BanBnXkFtZTgwNzkwNjQ0MjE@._V1_UY1200_CR90,0,630,1200_AL_.jpg
+2015-08-19 15:25:52,390-DEBUG(NewsTask.java:140)-Link found: http://tinyurl.com/ohxe45y
+2015-08-19 15:25:55,833-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:25:55,833-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:26:00,840-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:26:00,844-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:26:05,701-DEBUG(VideoPosterThread.java:237)-Keywords: task.getKeyWords(). Snippet count: 7
+2015-08-19 15:26:06,103-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:26:06,103-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:26:07,263- INFO(NewsPoster.java:123)-Upload URL: http://upload-01.nyc.dailymotion.com/upload?uuid=0e51a17133e82d17b39694238cd3ac50&seal=0ed81e24b7dc3c78d9ba143421a814b1
+2015-08-19 15:26:07,448-ERROR(NewsPoster.java:166)-'result' element NOT FOUND. Responce JSONObject: [{"error":{"code":403,"message":"You reached your upload rate limit, please slow down.","type":"access_forbidden"},"id":0}]
+
+2015-08-19 15:26:11,121-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 15:26:11,121-DEBUG(VideoTaskRunner.java:172)-Account: null
+2015-08-19 15:26:12,530- INFO(TaskFactory.java:103)-Task returned to queue for reprocessing: com.fdt.dailymotion.task.NewsTask@706b70cd
+2015-08-19 15:26:12,533-ERROR(VideoPosterThread.java:165)-Error occured during process task: com.fdt.dailymotion.task.NewsTask@706b70cd
+java.util.NoSuchElementException: JSONObject["result"] not found.
+	at org.json.JSONObject.get(JSONObject.java:220)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:346)
+	at com.fdt.dailymotion.NewsPoster.getVideoId(NewsPoster.java:164)
+	at com.fdt.dailymotion.NewsPoster.postNews(NewsPoster.java:298)
+	at com.fdt.dailymotion.NewsPoster.executePostNews(NewsPoster.java:72)
+	at com.fdt.dailymotion.VideoPosterThread.run(VideoPosterThread.java:135)
+2015-08-19 15:26:12,535-DEBUG(VideoPosterThread.java:277)-Delete video file: article_1.mov
+2015-08-19 15:26:12,537-DEBUG(VideoPosterThread.java:286)-Delete video file: article_1_wo_audio.mov
+2015-08-19 15:26:12,538-DEBUG(AccountFactory.java:275)-Used account size decremented: 0
+2015-08-19 15:26:24,292- WARN(AccountFactory.java:280)-Account riapporphacoony was excluded from requet at all
+2015-08-19 15:26:24,293-DEBUG(TaskFactory.java:73)-DEC thread: 0
+2015-08-19 15:26:24,294-DEBUG(VideoTaskRunner.java:209)-Task factory is empty: false. Current working threads count is 0
+2015-08-19 15:26:24,294-DEBUG(VideoTaskRunner.java:210)-Error tasks: 0
+2015-08-19 15:26:24,294-DEBUG(VideoTaskRunner.java:242)-Starting saving unused account...
+2015-08-19 15:26:24,296-DEBUG(VideoTaskRunner.java:249)-Unused accounts was saved successfully.
