@@ -8,7 +8,13 @@ import java.util.Vector;
 
 import javax.media.MediaLocator;
 
+import org.apache.log4j.Logger;
+
+import com.fdt.dailymotion.VideoTaskRunner;
+
 public class VideoCreator {
+	
+	private static final Logger log = Logger.getLogger(VideoCreator.class);
 	
 	public static void main(String... args){
 		AudioVideoMerger avMerger = new AudioVideoMerger();
@@ -49,7 +55,7 @@ public class VideoCreator {
 	    JpegImagesToMovie imageToMovie = new JpegImagesToMovie();
 	    MediaLocator oml;
 	    if ((oml = JpegImagesToMovie.createMediaLocator(fileName)) == null) {
-	        System.err.println("Cannot build media locator from: " + fileName);
+	        log.error("Cannot build media locator from: " + fileName);
 	        System.exit(0);
 	    }
 	    imageToMovie.doIt(1280, 720, framePerSec, imgLst, oml);

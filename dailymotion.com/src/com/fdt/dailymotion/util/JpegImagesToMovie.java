@@ -34,7 +34,6 @@ import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.net.MalformedURLException;
 import java.util.Vector;
 
 import javax.media.Buffer;
@@ -56,7 +55,6 @@ import javax.media.datasink.DataSinkErrorEvent;
 import javax.media.datasink.DataSinkEvent;
 import javax.media.datasink.DataSinkListener;
 import javax.media.datasink.EndOfStreamEvent;
-import javax.media.format.AudioFormat;
 import javax.media.format.VideoFormat;
 import javax.media.protocol.ContentDescriptor;
 import javax.media.protocol.DataSource;
@@ -64,11 +62,15 @@ import javax.media.protocol.FileTypeDescriptor;
 import javax.media.protocol.PullBufferDataSource;
 import javax.media.protocol.PullBufferStream;
 
+import org.apache.log4j.Logger;
+
 /**
  * This program takes a list of JPEG image files and convert them into a
  * QuickTime movie.
  */
 public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
+	
+	private static final Logger log = Logger.getLogger(JpegImagesToMovie.class);
 
 	public boolean doIt(int width, int height, int frameRate, Vector inFiles,
 			MediaLocator outML) throws IOException {
@@ -82,8 +84,7 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 			//      .println("- create processor for the image datasource ...");
 			p = Manager.createProcessor(ids);
 		} catch (Exception e) {
-			System.err
-			.println("Yikes!  Cannot create a processor from the data source.");
+			log.error("Yikes!  Cannot create a processor from the data source.");
 			return false;
 		}
 
@@ -93,7 +94,7 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		// some processing options on the processor.
 		p.configure();
 		if (!waitForState(p, p.Configured)) {
-			System.err.println("Failed to configure the processor.");
+			log.error("Failed to configure the processor.");
 			return false;
 		}
 
@@ -106,7 +107,7 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		TrackControl tcs[] = p.getTrackControls();
 		Format f[] = tcs[0].getSupportedFormats();
 		if (f == null || f.length <= 0) {
-			System.err.println("The mux does not support the input format: "
+			log.error("The mux does not support the input format: "
 					+ tcs[0].getFormat());
 			return false;
 		}
@@ -119,15 +120,14 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		// realize it.
 		p.realize();
 		if (!waitForState(p, p.Realized)) {
-			System.err.println("Failed to realize the processor.");
+			log.error("Failed to realize the processor.");
 			return false;
 		}
 
 		// Now, we'll need to create a DataSink.
 		DataSink dsink;
 		if ((dsink = createDataSink(p, outML)) == null) {
-			System.err
-			.println("Failed to create a DataSink for the given output MediaLocator: "
+			log.error("Failed to create a DataSink for the given output MediaLocator: "
 					+ outML);
 			return false;
 		}
@@ -135,7 +135,7 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		dsink.addDataSinkListener(this);
 		fileDone = false;
 
-		System.out.println("Generating the video : "+outML.getURL().toString());
+		log.info("Generating the video : "+outML.getURL().toString());
 
 		// OK, we can now start the actual transcoding.
 		p.start();
@@ -154,7 +154,7 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		dsink.removeDataSinkListener(this);
 		p.removeControllerListener(this);
 
-		System.out.println("Video creation completed!!!!!");
+		log.info("Video creation completed!!!!!");
 		return true;
 	}
 
@@ -178,7 +178,7 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 			dsink = Manager.createDataSink(ds, outML);
 			dsink.open();
 		} catch (Exception e) {
-			System.err.println("Cannot create the DataSink: " + e);
+			log.error("Cannot create the DataSink: " + e);
 			return null;
 		}
 
@@ -336,8 +336,7 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
     }*/
 
 	static void prUsage() {
-		System.err
-		.println("Usage: java JpegImagesToMovie -w <width> -h <height> -f <frame rate> -o <output URL> <input JPEG file 1> <input JPEG file 2> ...");
+		log.error("Usage: java JpegImagesToMovie -w <width> -h <height> -f <frame rate> -o <output URL> <input JPEG file 1> <input JPEG file 2> ...");
 		System.exit(-1);
 	}
 
