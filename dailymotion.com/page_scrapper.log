@@ -8043,3 +8043,140 @@ http://ia.media-imdb.com/images/M/MV5BNDE3MDQzMDA5OF5BMl5BanBnXkFtZTcwMTUxNTgxOQ
 2015-08-19 16:18:40,921-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
 2015-08-19 16:18:41,316-DEBUG(NewsPoster.java:331)-76: Upload new segment [444000000:444500000]
 2015-08-19 16:18:41,857-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:42,626-DEBUG(NewsPoster.java:331)-341: Upload new segment [124000000:124500000]
+2015-08-19 16:18:43,109-DEBUG(NewsPoster.java:331)-76: Upload new segment [444500000:445000000]
+2015-08-19 16:18:43,273-DEBUG(AccountFactory.java:244)-Used account size incremented: 4
+2015-08-19 16:18:43,273-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 16:18:43,273-DEBUG(VideoTaskRunner.java:172)-Account: callprosahsthet@mail.ru;IV4bSey8R5;sentpemogrowfu
+2015-08-19 16:18:43,273-DEBUG(AccountFactory.java:275)-Used account size decremented: 3
+2015-08-19 16:18:43,309-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:43,660-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:44,980-DEBUG(NewsPoster.java:331)-76: Upload new segment [445000000:445500000]
+2015-08-19 16:18:45,173-DEBUG(NewsPoster.java:331)-341: Upload new segment [124500000:125000000]
+2015-08-19 16:18:45,531-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:45,830-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:46,796-DEBUG(NewsPoster.java:331)-76: Upload new segment [445500000:446000000]
+2015-08-19 16:18:47,320-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:47,586-DEBUG(NewsPoster.java:331)-341: Upload new segment [125000000:125500000]
+2015-08-19 16:18:48,270-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:48,274-DEBUG(AccountFactory.java:244)-Used account size incremented: 4
+2015-08-19 16:18:48,274-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 16:18:48,274-DEBUG(VideoTaskRunner.java:172)-Account: callprosahsthet@mail.ru;IV4bSey8R5;sentpemogrowfu
+2015-08-19 16:18:48,274-DEBUG(AccountFactory.java:275)-Used account size decremented: 3
+2015-08-19 16:18:48,555-DEBUG(NewsPoster.java:331)-76: Upload new segment [446000000:446500000]
+2015-08-19 16:18:49,102-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:49,946-DEBUG(NewsPoster.java:331)-341: Upload new segment [125500000:126000000]
+2015-08-19 16:18:50,367-DEBUG(NewsPoster.java:331)-76: Upload new segment [446500000:447000000]
+2015-08-19 16:18:50,638-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:50,904-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:52,194-DEBUG(NewsPoster.java:331)-76: Upload new segment [447000000:447500000]
+2015-08-19 16:18:52,380-DEBUG(NewsPoster.java:331)-341: Upload new segment [126000000:126500000]
+2015-08-19 16:18:52,763-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:53,066-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:53,274-DEBUG(AccountFactory.java:244)-Used account size incremented: 4
+2015-08-19 16:18:53,274-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 16:18:53,274-DEBUG(VideoTaskRunner.java:172)-Account: callprosahsthet@mail.ru;IV4bSey8R5;sentpemogrowfu
+2015-08-19 16:18:53,274-DEBUG(AccountFactory.java:275)-Used account size decremented: 3
+2015-08-19 16:18:54,000-DEBUG(NewsPoster.java:331)-76: Upload new segment [447500000:448000000]
+2015-08-19 16:18:54,537-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:54,825-DEBUG(NewsPoster.java:331)-341: Upload new segment [126500000:127000000]
+2015-08-19 16:18:55,494-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:55,843-DEBUG(NewsPoster.java:331)-76: Upload new segment [448000000:448500000]
+2015-08-19 16:18:56,401-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:57,382-DEBUG(NewsPoster.java:331)-341: Upload new segment [127000000:127500000]
+2015-08-19 16:18:57,635-DEBUG(NewsPoster.java:331)-76: Upload new segment [448500000:449000000]
+2015-08-19 16:18:58,097-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:58,153-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:18:58,274-DEBUG(AccountFactory.java:244)-Used account size incremented: 4
+2015-08-19 16:18:58,274-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 16:18:58,274-DEBUG(VideoTaskRunner.java:172)-Account: callprosahsthet@mail.ru;IV4bSey8R5;sentpemogrowfu
+2015-08-19 16:18:58,274-DEBUG(AccountFactory.java:275)-Used account size decremented: 3
+2015-08-19 16:18:59,481-DEBUG(NewsPoster.java:331)-76: Upload new segment [449000000:449500000]
+2015-08-19 16:19:00,003-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:00,110-DEBUG(NewsPoster.java:331)-341: Upload new segment [127500000:128000000]
+2015-08-19 16:19:00,807-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:01,277-DEBUG(NewsPoster.java:331)-76: Upload new segment [449500000:450000000]
+2015-08-19 16:19:01,833-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:02,642-DEBUG(NewsPoster.java:331)-341: Upload new segment [128000000:128500000]
+2015-08-19 16:19:03,061-DEBUG(NewsPoster.java:331)-76: Upload new segment [450000000:450500000]
+2015-08-19 16:19:03,275-DEBUG(AccountFactory.java:244)-Used account size incremented: 4
+2015-08-19 16:19:03,275-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 16:19:03,275-DEBUG(VideoTaskRunner.java:172)-Account: callprosahsthet@mail.ru;IV4bSey8R5;sentpemogrowfu
+2015-08-19 16:19:03,275-DEBUG(AccountFactory.java:275)-Used account size decremented: 3
+2015-08-19 16:19:03,350-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:03,586-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:04,859-DEBUG(NewsPoster.java:331)-76: Upload new segment [450500000:451000000]
+2015-08-19 16:19:05,228-DEBUG(NewsPoster.java:331)-341: Upload new segment [128500000:129000000]
+2015-08-19 16:19:05,384-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:05,923-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:06,658-DEBUG(NewsPoster.java:331)-76: Upload new segment [451000000:451500000]
+2015-08-19 16:19:07,191-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:07,808-DEBUG(NewsPoster.java:331)-341: Upload new segment [129000000:129500000]
+2015-08-19 16:19:08,276-DEBUG(AccountFactory.java:244)-Used account size incremented: 4
+2015-08-19 16:19:08,276-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 16:19:08,276-DEBUG(VideoTaskRunner.java:172)-Account: callprosahsthet@mail.ru;IV4bSey8R5;sentpemogrowfu
+2015-08-19 16:19:08,276-DEBUG(AccountFactory.java:275)-Used account size decremented: 3
+2015-08-19 16:19:08,509-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:08,583-DEBUG(NewsPoster.java:331)-76: Upload new segment [451500000:452000000]
+2015-08-19 16:19:09,104-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:10,349-DEBUG(NewsPoster.java:331)-341: Upload new segment [129500000:130000000]
+2015-08-19 16:19:10,381-DEBUG(NewsPoster.java:331)-76: Upload new segment [452000000:452500000]
+2015-08-19 16:19:10,906-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:11,070-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:12,181-DEBUG(NewsPoster.java:331)-76: Upload new segment [452500000:453000000]
+2015-08-19 16:19:12,698-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:12,754-DEBUG(NewsPoster.java:331)-341: Upload new segment [130000000:130500000]
+2015-08-19 16:19:13,276-DEBUG(AccountFactory.java:244)-Used account size incremented: 4
+2015-08-19 16:19:13,276-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 16:19:13,276-DEBUG(VideoTaskRunner.java:172)-Account: callprosahsthet@mail.ru;IV4bSey8R5;sentpemogrowfu
+2015-08-19 16:19:13,276-DEBUG(AccountFactory.java:275)-Used account size decremented: 3
+2015-08-19 16:19:13,474-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:13,983-DEBUG(NewsPoster.java:331)-76: Upload new segment [453000000:453500000]
+2015-08-19 16:19:14,501-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:15,353-DEBUG(NewsPoster.java:331)-341: Upload new segment [130500000:131000000]
+2015-08-19 16:19:15,846-DEBUG(NewsPoster.java:331)-76: Upload new segment [453500000:454000000]
+2015-08-19 16:19:16,020-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:16,381-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:17,620-DEBUG(NewsPoster.java:331)-76: Upload new segment [454000000:454500000]
+2015-08-19 16:19:17,738-DEBUG(NewsPoster.java:331)-341: Upload new segment [131000000:131500000]
+2015-08-19 16:19:18,217-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:18,288-DEBUG(AccountFactory.java:244)-Used account size incremented: 4
+2015-08-19 16:19:18,288-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 16:19:18,288-DEBUG(VideoTaskRunner.java:172)-Account: callprosahsthet@mail.ru;IV4bSey8R5;sentpemogrowfu
+2015-08-19 16:19:18,288-DEBUG(AccountFactory.java:275)-Used account size decremented: 3
+2015-08-19 16:19:18,462-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:19,459-DEBUG(NewsPoster.java:331)-76: Upload new segment [454500000:455000000]
+2015-08-19 16:19:20,001-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:20,288-DEBUG(NewsPoster.java:331)-341: Upload new segment [131500000:132000000]
+2015-08-19 16:19:20,972-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:21,283-DEBUG(NewsPoster.java:331)-76: Upload new segment [455000000:455500000]
+2015-08-19 16:19:21,829-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:22,682-DEBUG(NewsPoster.java:331)-341: Upload new segment [132000000:132500000]
+2015-08-19 16:19:23,062-DEBUG(NewsPoster.java:331)-76: Upload new segment [455500000:456000000]
+2015-08-19 16:19:23,289-DEBUG(AccountFactory.java:244)-Used account size incremented: 4
+2015-08-19 16:19:23,289-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 16:19:23,289-DEBUG(VideoTaskRunner.java:172)-Account: callprosahsthet@mail.ru;IV4bSey8R5;sentpemogrowfu
+2015-08-19 16:19:23,289-DEBUG(AccountFactory.java:275)-Used account size decremented: 3
+2015-08-19 16:19:23,385-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:23,606-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:24,875-DEBUG(NewsPoster.java:331)-76: Upload new segment [456000000:456500000]
+2015-08-19 16:19:25,067-DEBUG(NewsPoster.java:331)-341: Upload new segment [132500000:133000000]
+2015-08-19 16:19:25,418-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:25,778-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:26,647-DEBUG(NewsPoster.java:331)-76: Upload new segment [456500000:457000000]
+2015-08-19 16:19:27,167-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:27,457-DEBUG(NewsPoster.java:331)-341: Upload new segment [133000000:133500000]
+2015-08-19 16:19:28,206-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:28,289-DEBUG(AccountFactory.java:244)-Used account size incremented: 4
+2015-08-19 16:19:28,289-DEBUG(VideoTaskRunner.java:171)-Try to get request from RequestFactory queue.
+2015-08-19 16:19:28,289-DEBUG(VideoTaskRunner.java:172)-Account: callprosahsthet@mail.ru;IV4bSey8R5;sentpemogrowfu
+2015-08-19 16:19:28,289-DEBUG(AccountFactory.java:275)-Used account size decremented: 3
+2015-08-19 16:19:28,446-DEBUG(NewsPoster.java:331)-76: Upload new segment [457000000:457500000]
+2015-08-19 16:19:28,968-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:29,957-DEBUG(NewsPoster.java:331)-341: Upload new segment [133500000:134000000]
+2015-08-19 16:19:30,197-DEBUG(NewsPoster.java:331)-76: Upload new segment [457500000:458000000]
+2015-08-19 16:19:30,667-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:30,724-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200
+2015-08-19 16:19:31,952-DEBUG(NewsPoster.java:331)-76: Upload new segment [458000000:458500000]
+2015-08-19 16:19:32,340-DEBUG(NewsPoster.java:331)-341: Upload new segment [134000000:134500000]
+2015-08-19 16:19:32,476-DEBUG(NewsPoster.java:284)-OPTION request responce code: 200

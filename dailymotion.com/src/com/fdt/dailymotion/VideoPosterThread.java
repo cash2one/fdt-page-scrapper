@@ -272,7 +272,7 @@ public class VideoPosterThread extends Thread{
 
 	private void deleteVideoFile(NewsTask task){
 		if(task != null ){
-			if(task.getVideoFile() != null && task.getVideoFile().exists() && task.getVideoFile().isFile()){
+			if(task.getVideoFile() != null && task.getVideoFile().exists()){
 				try {
 					log.debug("Delete video file: " + task.getVideoFile().getName());
 					task.getVideoFile().delete();
@@ -281,9 +281,9 @@ public class VideoPosterThread extends Thread{
 				}
 			}
 
-			if(task.getVideoFileWOAudio() != null && task.getVideoFileWOAudio().exists() && task.getVideoFileWOAudio().isFile()){
+			if(task.getVideoFileWOAudio() != null && task.getVideoFileWOAudio().exists()){
 				try {
-					log.debug("Delete video file: " + task.getVideoFileWOAudio().getName());
+					log.debug("Delete video WO audio file: " + task.getVideoFileWOAudio().getName());
 					task.getVideoFileWOAudio().delete();
 				} catch (Exception e) {
 					log.error(e);
