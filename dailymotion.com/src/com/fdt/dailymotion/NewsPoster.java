@@ -249,6 +249,10 @@ public class NewsPoster {
 		respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/" + videoId + "\",\"args\":{\"fields\":\"status,\"},\"id\":0}]");
 
 		while(respStr.contains("processing")){
+			/*if(respStr.contains("error")){
+				throw new Exception("Error occured during downloading video. Responce string: " + respStr);
+			}*/
+			log.debug("Responce download string for video ID:" + videoId + " : " + respStr);
 			Thread.sleep(5000L);
 			respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/" + videoId + "\",\"args\":{\"fields\":\"status,\"},\"id\":0}]");
 		}
