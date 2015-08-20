@@ -211,14 +211,14 @@ public class NewsTask{
 		return tagsList.toString();
 	}
 	
-	public String getTags(int maxTagCount) {
+	public String getTags(int maxTagCount, int maxLenSize) {
 		String tags[] = videoTitle.split(" ");
 		StringBuilder tagsList = new StringBuilder();
 		
 		int curTag = 0;
 		
 		for(String tag : tags){
-			if(curTag < maxTagCount){
+			if(curTag < maxTagCount && (tagsList.length()+tag.length()+3) < maxLenSize){
 				curTag++;
 				tagsList.append("\"").append(tag).append("\",");
 			}else{

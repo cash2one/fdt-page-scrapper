@@ -814,7 +814,7 @@ public class NewsPoster {
 		.append("game_select=").append("").append("&")
 		.append("language=").append("en").append("&")
 		.append("tags_hidden=").append(URLEncoder.encode(task.getVideoTitle(),"UTF-8")).append("&")
-		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[").append(URLEncoder.encode(task.getTags(10),"UTF-8")).append("]}").append("&")
+		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[").append(URLEncoder.encode(task.getTags(10, 250),"UTF-8")).append("]}").append("&")
 		.append("tags=").append("").append("&")
 		.append("description=").append( URLEncoder.encode(description,"UTF-8")).append("&")
 		.append("privacy=").append("0").append("&")
