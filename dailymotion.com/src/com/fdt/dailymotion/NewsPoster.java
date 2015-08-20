@@ -802,6 +802,9 @@ public class NewsPoster {
 
 	private String getEditVideoPostParamsUrl(String videoId) throws Exception {
 		StringBuilder params = new StringBuilder();
+		
+		String description = task.getDescription().substring(0,3000);
+		
 		params.append("")
 		.append("form_name=").append("dm_pageitem_uploadnewform_").append(videoId).append("&")
 		.append("_csrf=").append(account.getCookie("_csrf/form")).append("&")
@@ -811,9 +814,9 @@ public class NewsPoster {
 		.append("game_select=").append("").append("&")
 		.append("language=").append("en").append("&")
 		.append("tags_hidden=").append(URLEncoder.encode(task.getVideoTitle(),"UTF-8")).append("&")
-		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[").append(URLEncoder.encode(task.getTags(),"UTF-8")).append("]}").append("&")
+		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[").append(URLEncoder.encode(task.getTags(10),"UTF-8")).append("]}").append("&")
 		.append("tags=").append("").append("&")
-		.append("description=").append( URLEncoder.encode(task.getDescription(),"UTF-8")).append("&")
+		.append("description=").append( URLEncoder.encode(description,"UTF-8")).append("&")
 		.append("privacy=").append("0").append("&")
 		.append("allow_comments=").append("1").append("&")
 		//.append("allow_in_group=").append("1").append("&")

@@ -210,6 +210,27 @@ public class NewsTask{
 		}
 		return tagsList.toString();
 	}
+	
+	public String getTags(int maxTagCount) {
+		String tags[] = videoTitle.split(" ");
+		StringBuilder tagsList = new StringBuilder();
+		
+		int curTag = 0;
+		
+		for(String tag : tags){
+			if(curTag < maxTagCount){
+				curTag++;
+				tagsList.append("\"").append(tag).append("\",");
+			}else{
+				break;
+			}
+		}
+		
+		if(tagsList.length() > 0){
+			tagsList.setLength(tagsList.length()-1);
+		}
+		return tagsList.toString();
+	}
 
 	public String getKey() {
 		return key;
