@@ -59,7 +59,7 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		audioProcessor.realize();
 		//wait till they are realized
 		while(videoProcessor.getState() != 300 && audioProcessor.getState() != 300) {
-			Thread.sleep(100);
+			Thread.sleep(1000L);
 		}
 		//get processors dataoutputs to merge
 		arrayDataSource[0] = videoProcessor.getDataOutput();
@@ -79,7 +79,7 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		processor.configure();
 		//wait till configured
 		while(processor.getState() < 180) {
-			Thread.sleep(20);
+			Thread.sleep(100);
 		}
 
 		processor.setContentDescriptor(new ContentDescriptor(FileTypeDescriptor.QUICKTIME));
@@ -92,7 +92,7 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		processor.realize();
 		//wait till realized
 		while(processor.getState() < 300) {
-			Thread.sleep(20);
+			Thread.sleep(100);
 		}
 		//create merged file and start writing media to it
 		outputDataSource = processor.getDataOutput();
@@ -103,7 +103,7 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		processor.start();
 
 		while(processor.getState() < 500) {
-			Thread.sleep(100);
+			Thread.sleep(500);
 		}
 		
 		//wait until writing is done

@@ -28,10 +28,9 @@ public class VideoCreator {
 			
 			avMerger.mergeFiles(ivml, aml, ovml);
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block			e.printStackTrace();
+			log.error("Error occured during video creation", e);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			log.error("Error occured during video creation", e);
 		}
 	}
 	

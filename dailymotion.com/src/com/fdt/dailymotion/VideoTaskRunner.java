@@ -225,26 +225,26 @@ public class VideoTaskRunner {
 
 	private void deleteAllVideoFiles(){
 		File outputFolder = new File("output_video");
-		//while(outputFolder.listFiles().length > 0){
+		while(outputFolder.listFiles().length > 0){
 			for(File file: outputFolder.listFiles()){
 				try {
 					log.debug("Delete video file: " + file.getName());
-					//file.deleteOnExit();
-					File newFile = new File(file.getPath() + "_delete_me");
-					FileUtils.moveFile(file, newFile);
-					boolean deleted = newFile.delete();
-					if(!deleted){
-						log.warn(String.format("File %s was not deleted", newFile.getName()));
+					/*File newFile = new File(file.getPath() + "_delete_me");
+					FileUtils.moveFile(file, newFile);*/
+					FileUtils.forceDelete(file);
+					//Thread.sleep(5000L);
+					/*if(!deleted){
+						log.warn(string.format("file %s was not deleted", newfile.getname()));
 						while(!deleted){
-							deleted = newFile.delete();
+							deleted = newfile.delete();
 						}
-					}
+					}*/
 				}
-				catch (Exception e1) {
-					log.error(e1);
+				catch (Exception e) {
+					log.error("Error occudred during file removing", e);
 				}
 			}
-		//}
+		}
 	}
 
 	private void saveUnusedAccounts(HashMap<String, Account> accounts){
