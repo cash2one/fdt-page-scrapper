@@ -10384,3 +10384,77 @@ What sort of flu season are we having? As of February 28, 2015, flu activity is 
 2015-08-20 14:03:41,507-DEBUG(VideoTaskRunner.java:211)-Error tasks: 0
 2015-08-20 14:03:41,507-DEBUG(VideoTaskRunner.java:254)-Starting saving unused account...
 2015-08-20 14:03:41,507-DEBUG(VideoTaskRunner.java:261)-Unused accounts was saved successfully.
+2015-08-20 15:27:48,045-DEBUG(AccountFactory.java:94)-Total account count: 1
+2015-08-20 15:27:48,070- INFO(AccountFactory.java:190)-URL: http://www.dailymotion.com/ru
+2015-08-20 15:28:09,139-ERROR(AccountFactory.java:179)-Error during filling account from list and getting cookies for account
+java.net.SocketException: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1889)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1884)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1883)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1456)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at com.fdt.dailymotion.AccountFactory.executerequestToGetCookies(AccountFactory.java:221)
+	at com.fdt.dailymotion.AccountFactory.fillAccounts(AccountFactory.java:102)
+	at com.fdt.dailymotion.VideoTaskRunner.runUploader(VideoTaskRunner.java:150)
+	at com.fdt.dailymotion.VideoTaskRunner.main(VideoTaskRunner.java:127)
+Caused by: java.net.SocketException: Connection timed out: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1147)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+	at sun.net.www.protocol.http.HttpURLConnection.getHeaderFields(HttpURLConnection.java:2965)
+	at com.fdt.dailymotion.AccountFactory.executerequestToGetCookies(AccountFactory.java:219)
+	... 3 more
+2015-08-20 15:28:09,143-DEBUG(VideoTaskRunner.java:254)-Starting saving unused account...
+2015-08-20 15:28:09,144-DEBUG(VideoTaskRunner.java:261)-Unused accounts was saved successfully.
+2015-08-20 15:28:09,145-ERROR(VideoTaskRunner.java:131)-Error during main stream
+java.net.SocketException: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1889)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1884)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1883)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1456)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at com.fdt.dailymotion.AccountFactory.executerequestToGetCookies(AccountFactory.java:221)
+	at com.fdt.dailymotion.AccountFactory.fillAccounts(AccountFactory.java:102)
+	at com.fdt.dailymotion.VideoTaskRunner.runUploader(VideoTaskRunner.java:150)
+	at com.fdt.dailymotion.VideoTaskRunner.main(VideoTaskRunner.java:127)
+Caused by: java.net.SocketException: Connection timed out: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1147)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+	at sun.net.www.protocol.http.HttpURLConnection.getHeaderFields(HttpURLConnection.java:2965)
+	at com.fdt.dailymotion.AccountFactory.executerequestToGetCookies(AccountFactory.java:219)
+	... 3 more

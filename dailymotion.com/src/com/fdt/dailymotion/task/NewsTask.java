@@ -4,7 +4,9 @@ import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -211,14 +213,17 @@ public class NewsTask{
 		return tagsList.toString();
 	}
 	
-	public String getTags(int maxTagCount, int maxLenSize) {
+	public String getTags(int maxTagCount, int maxLenSize) throws UnsupportedEncodingException {
 		String tags[] = videoTitle.split(" ");
 		StringBuilder tagsList = new StringBuilder();
 		
 		int curTag = 0;
+		int testTagsLenght = 0;
 		
 		for(String tag : tags){
-			if(curTag < maxTagCount && (tagsList.length()+tag.length()+3) < maxLenSize){
+			testTagsLenght = URLEncoder.encode(tagsList.toString(), "UTF-8").length() + URLEncoder.encode("\"" + tag + "\",", "UTF-8").length();
+			
+			if(curTag < maxTagCount && testTagsLenght < maxLenSize){
 				curTag++;
 				tagsList.append("\"").append(tag).append("\",");
 			}else{
