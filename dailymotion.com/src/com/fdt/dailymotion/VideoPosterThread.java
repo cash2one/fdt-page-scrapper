@@ -196,9 +196,9 @@ public class VideoPosterThread extends Thread{
 	private Integer[] createVideo(NewsTask task, boolean addAudioToFile, File previewImg, int minDur, int maxDur) throws Exception{
 		AudioVideoMerger avMerger = new AudioVideoMerger();
 
-		Integer[] times = VideoCreator.makeVideo(task.getVideoFileWOAudio().getPath(), task.getImageFile(), previewImg, minDur, maxDur);
+		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur);
 
-		if(addAudioToFile){
+		/*if(addAudioToFile){
 			MediaLocator ivml = JpegImagesToMovie.createMediaLocator(task.getVideoFileWOAudio().getPath());
 			MediaLocator iaml = JpegImagesToMovie.createMediaLocator("08.wav");
 			MediaLocator ovml = JpegImagesToMovie.createMediaLocator(task.getVideoFile().getPath());
@@ -211,7 +211,7 @@ public class VideoPosterThread extends Thread{
 			ovml = null;
 		}else{
 			task.setVideoFile(task.getVideoFileWOAudio());
-		}
+		}*/
 		
 		return times;
 	}
@@ -281,14 +281,14 @@ public class VideoPosterThread extends Thread{
 				}
 			}
 
-			if(task.getVideoFileWOAudio() != null && task.getVideoFileWOAudio().exists()){
+			/*if(task.getVideoFileWOAudio() != null && task.getVideoFileWOAudio().exists()){
 				try {
 					log.debug("Delete video WO audio file: " + task.getVideoFileWOAudio().getName());
 					task.getVideoFileWOAudio().delete();
 				} catch (Exception e) {
 					log.error(e);
 				}
-			}
+			}*/
 		}
 	}
 }

@@ -22,7 +22,7 @@ public class NewsTask{
 	private File inputFile;
 	private File imageFile;
 	private File videoFile;
-	private File videoFileWOAudio;
+	//private File videoFileWOAudio;
 
 	private File templateFile;
 
@@ -115,7 +115,7 @@ public class NewsTask{
 			//write image to file
 			this.imageFile = new File("images/"+getFileNameWOExt(this.inputFile.getName()) + "." + imageFormat);
 			this.videoFile = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + ".mov");
-			this.videoFileWOAudio = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + "_wo_audio.mov");
+			//this.videoFileWOAudio = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + "_wo_audio.mov");
 			if(ImageIO.write(img, imageFormat, imageFile));
 		}else{
 			throw new Exception("Image URL NOT found");
@@ -126,9 +126,9 @@ public class NewsTask{
 		return videoFile;
 	}
 
-	public File getVideoFileWOAudio() {
+	/*public File getVideoFileWOAudio() {
 		return videoFileWOAudio;
-	}
+	}*/
 
 	public void setVideoFile(File videoFile) {
 		this.videoFile = videoFile;

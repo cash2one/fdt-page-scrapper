@@ -225,7 +225,7 @@ public class VideoTaskRunner {
 
 	private void deleteAllVideoFiles(){
 		File outputFolder = new File("output_video");
-		while(outputFolder.listFiles().length > 0){
+		//while(outputFolder.listFiles().length > 0){
 			for(File file: outputFolder.listFiles()){
 				try {
 					log.debug("Delete video file: " + file.getName());
@@ -244,7 +244,7 @@ public class VideoTaskRunner {
 					log.error("Error occudred during file removing", e);
 				}
 			}
-		}
+		//}
 	}
 
 	private void saveUnusedAccounts(HashMap<String, Account> accounts){

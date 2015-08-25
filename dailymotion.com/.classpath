@@ -36,5 +36,11 @@
 	<classpathentry kind="var" path="FDT_LIBS/org.springframework.transaction-3.0.3.RELEASE.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/velocity-1.7.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/page_scrapper"/>
+	<classpathentry kind="var" path="FDT_LIBS/commons-cli-1.1.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/junit-4.5.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/logback-classic-1.0.0.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/logback-core-1.0.0.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/xuggle-xuggler-5.4.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/slf4j-api-1.6.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -9,13 +9,10 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import javax.xml.xpath.XPathExpressionException;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -24,7 +21,11 @@ import com.fdt.scrapper.SnippetExtractor;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.BingSnippetTask;
 import com.fdt.scrapper.task.ConfigManager;
+import com.fdt.scrapper.task.GoogleSnippetTask;
 import com.fdt.scrapper.task.Snippet;
+import com.fdt.scrapper.task.SnippetTask;
+import com.fdt.scrapper.task.TutSnippetTask;
+import com.fdt.scrapper.task.UkrnetSnippetTask;
 
 public class AnchorTitleReplacer {
 	
@@ -48,6 +49,8 @@ public class AnchorTitleReplacer {
 	private final static String PROXY_TYPE_LABEL = "proxy_type";
 	
 	private final static String GET_ANCHOR_FROM_WEB_LABEL = "get_anchor_from_web";
+	
+	private static final String SOURCE_LABEL = "source";
 
 	private String anchorFilePath;
 	private String outputPath;
@@ -64,6 +67,8 @@ public class AnchorTitleReplacer {
 	ProxyFactory proxyFactory;
 	
 	private boolean replaceWithBing = false;
+	
+	private String source = "BING";
 
 	private ArrayList<String> usedLines = new ArrayList<String>();
 	private ArrayList<String> newLines = new ArrayList<String>();
@@ -115,7 +120,11 @@ public class AnchorTitleReplacer {
 		ProxyFactory.PROXY_TYPE = ConfigManager.getInstance().getProperty(PROXY_TYPE_LABEL);
 		proxyFactory = ProxyFactory.getInstance();
 		proxyFactory.init(ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL));
-
+		
+		this.source = ConfigManager.getInstance().getProperty(SOURCE_LABEL);
+		if(source == null || "".equals(source)){
+			source = "GOOGLE";
+		}
 	}
 
 	private void execute() throws IOException{
@@ -294,18 +303,41 @@ public class AnchorTitleReplacer {
 		}
 	}
 	
-	private Snippet getSnippet(String key) throws IOException, XPathExpressionException, ParseException{
+	private Snippet getSnippet(String key) throws Exception{
 		Random rnd = new Random();
 		SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
 		//TODO Add Snippet task chooser
-		BingSnippetTask bingTask = new BingSnippetTask(key);
-		bingTask.setPage(1+rnd.nextInt(5));
-		ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(bingTask);
+		SnippetTask snippetTask = getTaskBySource(source, key);
+		ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(snippetTask);
 		
 		if(snippets.size() == 0){
 			throw new IOException("Could not extract snippets");
 		}else{
 			return snippets.get(rnd.nextInt(snippets.size()));
 		}
+	}
+	
+	private SnippetTask getTaskBySource(String source, String key) throws Exception{
+		Random rnd = new Random();
+		SnippetTask task = null;
+		
+		if("GOOGLE".equals(source.toUpperCase().trim())){
+			task = new GoogleSnippetTask(key);
+			task.setPage(rnd.nextInt(9));
+		} else
+		if("BING".equals(source.toUpperCase().trim())){
+			task = new BingSnippetTask(key);
+			task.setPage(1+rnd.nextInt(5));
+		} else
+		if("TUT".equals(source.toUpperCase().trim())){
+			task = new TutSnippetTask(key);
+		} else
+		if("UKRNET".equals(source.toUpperCase().trim())){
+			task = new UkrnetSnippetTask(key);
+		}else{
+			throw new Exception("Can't find assosiated task for source: " + source);
+		}
+		
+		return task;
 	}
 }

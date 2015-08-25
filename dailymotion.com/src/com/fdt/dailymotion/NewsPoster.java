@@ -77,7 +77,7 @@ public class NewsPoster {
 		milSecCnt +=  (times[0] % times[1]) * 1000 + (times[0]/(times[1]*times[1]))*1000;
 		
 		String valueStr = String.format("%.0f", milSecCnt);
-		
+		log.debug("Time string:" + valueStr);
 		
 		return sdf.format(new Date(Long.parseLong(valueStr)-1000));
 	}
@@ -803,18 +803,28 @@ public class NewsPoster {
 	private String getEditVideoPostParamsUrl(String videoId) throws Exception {
 		StringBuilder params = new StringBuilder();
 		
+		String description = task.getDescription();
+		if(URLEncoder.encode(description,"UTF-8").length() > 3000){
+			description = URLEncoder.encode(description,"UTF-8").substring(0,3000);
+		}
+		
+		String title = task.getVideoTitle() + " " + getRndStr();
+		if(URLEncoder.encode(title,"UTF-8").length() > 255){
+			title = URLEncoder.encode(title,"UTF-8").substring(0,255);
+		}
+		
 		params.append("")
 		.append("form_name=").append("dm_pageitem_uploadnewform_").append(videoId).append("&")
 		.append("_csrf=").append(account.getCookie("_csrf/form")).append("&")
 		.append("_fid=").append("").append("&")
-		.append("video_title=").append(URLEncoder.encode(task.getVideoTitle() + " " + getRndStr(),"UTF-8")).append("&")
+		.append("video_title=").append(title).append("&")
 		.append("user_category=").append(themes[rnd.nextInt(themes.length)]).append("&")
 		.append("game_select=").append("").append("&")
 		.append("language=").append("en").append("&")
 		.append("tags_hidden=").append(URLEncoder.encode(task.getVideoTitle(),"UTF-8")).append("&")
 		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[").append(URLEncoder.encode(task.getTags(10, 250),"UTF-8")).append("]}").append("&")
 		.append("tags=").append("").append("&")
-		.append("description=").append( URLEncoder.encode(task.getDescription(),"UTF-8").substring(0,3000)).append("&")
+		.append("description=").append( description ).append("&")
 		.append("privacy=").append("0").append("&")
 		.append("allow_comments=").append("1").append("&")
 		//.append("allow_in_group=").append("1").append("&")
