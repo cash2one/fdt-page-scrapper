@@ -19,6 +19,7 @@ import java.net.HttpURLConnection;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -53,11 +54,11 @@ public class NewsPoster {
 	private NewsTask task = null;
 	private Proxy proxy = null;
 	private Account account = null;
-	
+
 	private Integer times[];
-	
+
 	private static final String TIME_STAMP_FORMAT = "HH:mm:ss.SSS";
-	
+
 	private SimpleDateFormat sdf = new SimpleDateFormat(TIME_STAMP_FORMAT);
 
 	public NewsPoster(NewsTask task, Proxy proxy, Account account) {
@@ -71,15 +72,15 @@ public class NewsPoster {
 		this.times = times;
 		return postNews();
 	}
-	
+
 	private String getTimeString(){
 		double milSecCnt = 0L;
-		milSecCnt +=  (times[0] % times[1]) * 1000 + (times[0]/(times[1]*times[1]))*1000;
-		
+		milSecCnt = (((double)times[0]/times[1])) * 1000;
+
 		String valueStr = String.format("%.0f", milSecCnt);
-		log.debug("Time string:" + valueStr);
-		
-		return sdf.format(new Date(Long.parseLong(valueStr)-1000));
+		log.debug("Preview time: " + sdf.format(new Date(Long.parseLong(valueStr)-0)));
+
+		return sdf.format(new Date(Long.parseLong(valueStr)-0));
 	}
 
 	private String getUploadUrl() throws Exception{
@@ -127,47 +128,54 @@ public class NewsPoster {
 
 	private String getVideoId() throws Exception{
 		String postUrl = "https://api.dailymotion.com/?access_token=" + account.getCookie("sid");
-
-		//post news
-		URL url = new URL(postUrl);
-		HttpsURLConnection.setFollowRedirects(false);
-		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
-		conn.setReadTimeout(60000);
-		conn.setConnectTimeout(60000);
-		conn.setRequestMethod("POST");
-		conn.setDoInput(true);
-		conn.setDoOutput(true);
-
-		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-		conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-		conn.setRequestProperty("Host", "api.dailymotion.com");
-		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
-
-		OutputStream os = conn.getOutputStream();
-		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-		writer.write("[{\"call\":\"POST /videos\",\"args\":{\"title\":\"" + task.getVideoTitle() +"\",\"published\":\"false\"},\"id\":0}]");
-		writer.flush();
-		writer.close();
-		os.close();
-
-		StringBuilder responseStr = getResponseAsString(conn);
-
-		//log.debug(responseStr.toString());
-
-		conn.disconnect();
-
+		HttpsURLConnection conn = null;
 		String videoId = null;
-		JSONObject jsonObj = new JSONObject(responseStr.substring(1, responseStr.length()-1));
-		try{
-			videoId = jsonObj.getJSONObject("result").getString("id");
-		}catch(NoSuchElementException e){
-			log.error("'result' element NOT FOUND. Responce JSONObject: " + responseStr);
-			throw e;
-		}
 
-		conn.disconnect();
+		try{
+			//post news
+			URL url = new URL(postUrl);
+			HttpsURLConnection.setFollowRedirects(false);
+			conn = (HttpsURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("POST");
+			conn.setDoInput(true);
+			conn.setDoOutput(true);
+
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+			conn.setRequestProperty("Host", "api.dailymotion.com");
+			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+
+			OutputStream os = conn.getOutputStream();
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			writer.write("[{\"call\":\"POST /videos\",\"args\":{\"title\":\"" + task.getVideoTitle() +"\",\"published\":\"false\"},\"id\":0}]");
+			writer.flush();
+			writer.close();
+			os.close();
+
+			StringBuilder responseStr = getResponseAsString(conn);
+
+			//log.debug(responseStr.toString());
+
+			conn.disconnect();
+
+			JSONObject jsonObj = new JSONObject(responseStr.substring(1, responseStr.length()-1));
+			try{
+				videoId = jsonObj.getJSONObject("result").getString("id");
+			}catch(NoSuchElementException e){
+				//Add account to reject list
+				account.getAccountFactory().rejectAccount(account);
+				log.error("'result' element NOT FOUND. Responce JSONObject: " + responseStr);
+				throw e;
+			}
+		}finally{
+			if(conn != null){
+				conn.disconnect();
+			}
+		}
 
 		log.info("Video ID: " + videoId);
 
@@ -203,7 +211,20 @@ public class NewsPoster {
 
 		StringBuilder responseStr = getResponseAsString(conn);
 
-		//log.debug(responseStr.toString());
+		JSONObject jsonObj = new JSONObject(responseStr.substring(1, responseStr.length()-1));
+		JSONObject errorEntity = null;
+
+		try {
+			errorEntity = jsonObj.getJSONObject("error");
+		} catch (NoSuchElementException e) {
+			//nothing do
+		}
+
+		if(errorEntity != null){
+			throw new Exception("Error occured during posting video " + videoId + ": " + errorEntity.getString("message"));
+		}
+
+		log.debug("Responce string for POST requets for access_token: " + responseStr.toString());
 
 		conn.disconnect();
 	}
@@ -245,17 +266,43 @@ public class NewsPoster {
 	private void getVideoAccessToken(String videoId) throws Exception{
 		String respStr = "";
 		respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"encoding_progress,\"},\"id\":0}]");
-		respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"thumbnail_url,\"},\"id\":0},{\"call\":\"GET /video/x318d5d\",\"args\":{\"fields\":\"status,\"},\"id\":1}]");
+		respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"thumbnail_url,\"},\"id\":0},{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"status,\"},\"id\":1}]");
 		respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/" + videoId + "\",\"args\":{\"fields\":\"status,\"},\"id\":0}]");
 
-		while(respStr.contains("processing")){
-			/*if(respStr.contains("error")){
-				throw new Exception("Error occured during downloading video. Responce string: " + respStr);
-			}*/
-			log.debug("Responce download string for video ID:" + videoId + " : " + respStr);
-			Thread.sleep(5000L);
-			respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/" + videoId + "\",\"args\":{\"fields\":\"status,\"},\"id\":0}]");
+		String[] status = new String[]{"processing","0"};
+		int progress = 0;
+
+		while(status[0].equalsIgnoreCase("processing")){
+			//check for rejection
+			if(!account.getAccountFactory().isAccountRejected(account) && progress < 100){
+				log.debug("Responce download string for video ID:" + videoId + " : " + respStr);
+				Thread.sleep(5000L);
+				respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/" + videoId + "\",\"args\":{\"fields\":\"status,encoding_progress\"},\"id\":0}]");
+				status = getUploadStatus(respStr);
+				progress = Integer.valueOf(status[1]);
+			}else{
+				log.error("Responce string for exceeded account:" + respStr);
+				throw new Exception("Account execeed upload limit: " + account.getLogin());
+			}
 		}
+	}
+
+	private String[] getUploadStatus(String respStr) throws ParseException{
+
+		JSONObject jsonObj = new JSONObject(respStr.substring(1, respStr.length()-1));
+		String status[] = new String[]{"",""};
+		try{
+			status[0] = jsonObj.getJSONObject("result").getString("status");
+			status[1] = jsonObj.getJSONObject("result").getString("encoding_progress");
+
+		}catch(NoSuchElementException e){
+			//Add account to reject list
+			account.getAccountFactory().rejectAccount(account);
+			log.error("JSON element NOT FOUND. Responce JSONObject: " + respStr);
+			throw e;
+		}
+
+		return status;
 	}
 
 	private int executeOptionRequest(String postUrl) throws Exception{
@@ -313,7 +360,9 @@ public class NewsPoster {
 		executeRequestToGetCookies("http://www.dailymotion.com/upload", "GET", null);
 		executeRequestToGetCookies("http://www.dailymotion.com/upload_new/ping?t=" + (System.currentTimeMillis()), "HEAD", null);
 		String oldCookie = account.getCookie("_csrf/link");
+
 		editVideoDescription(videoId, oldCookie, "GET");
+
 		//executeRequestToGetCookies("http://www.dailymotion.com/pageitem/video/edit?request=/&t=0.6538078272511391&loop=0&from_request=/upload&_csrf_l=" + account.getCookie("_csrf/link"), "GET", null);
 		//String videoId = executerequestToGetCookies("http://www.dailymotion.com/ajax/video", "POST", new VideoIdExtractor(), getAjaxVideoParamString());
 		task.setVideoId(videoId);
@@ -551,28 +600,33 @@ public class NewsPoster {
 		int respCode = conn.getResponseCode();
 		// Execute HTTP Post Request
 		StringBuilder responseStr = getResponseAsString(conn);
-		
-		log.debug("Responce string after EDIT operation: " + responseStr);
+
+		log.trace("Responce string after EDIT operation: " + responseStr);
 
 		//log.debug(responseStr.toString());
 
 		conn.disconnect();
 
-		Thread.sleep(10000L);
+		Thread.sleep(15000L);
 		if("POST".equals(method)){
-			String videoUrl = "http://www.dailymotion.com" + executerequestToGetCookies("http://www.dailymotion.com/ajax/video", "POST", new VideoUrlExtractor(), getAjaxVideoParamStringForUrl());
+			String subUrl = executerequestToGetCookies("http://www.dailymotion.com/ajax/video", "POST", new VideoUrlExtractor(), getAjaxVideoParamStringForUrl());
+			String videoUrl = "http://www.dailymotion.com" + subUrl;
 			if( !videoUrl.contains("/video/") || videoUrl.contains("_%D0%B1%D0%B5%D0%B7-%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F")){
 				throw new Exception("URL to video was not extracted. Next string was extracted: " + videoUrl);
 			}
-			setPreview(videoId);
+			//TODO Fix issue with preview 
+			setPreview(videoId, subUrl);
 			log.info("VIDEO URL: " + videoUrl);
+			Thread.sleep(5000L);
+			//TODO Fix issue with preview 
+			setPreview(videoId, subUrl);
 			return videoUrl;
 		}else{
 			return "";
 		}
 	}
 
-	private String setPreview(String videoId) throws Exception{
+	private String setPreview(String videoId, String fromRequest) throws Exception{
 		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
 				"/ajax/video_preview_v3";
 
@@ -598,7 +652,7 @@ public class NewsPoster {
 		OutputStream outputStream;
 		outputStream = conn.getOutputStream();
 		PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
-		writer.append(getPreviewParamString(videoId));
+		writer.append(getPreviewParamString(videoId, fromRequest));
 		writer.flush();
 		writer.close();
 		outputStream.close();
@@ -608,10 +662,10 @@ public class NewsPoster {
 		// Execute HTTP Post Request
 		StringBuilder responseStr = getResponseAsString(conn);
 
-		//log.debug(responseStr.toString());
+		log.debug("Set view responce string: " + responseStr.toString());
 
 		conn.disconnect();
-		
+
 		return responseStr.toString();
 	}
 
@@ -739,13 +793,13 @@ public class NewsPoster {
 		return params.toString();
 	}
 
-	private String getPreviewParamString(String videoId){
+	private String getPreviewParamString(String videoId, String fromRequest){
 		StringBuilder params = new StringBuilder();
 		params.append("ajax_function").append("=").append("extract_preview").append("&");
 		params.append("ajax_arg[]").append("=").append(videoId).append("&");
 		params.append("ajax_arg[]").append("=").append(getTimeString()).append("&");
 		params.append("_").append("=").append(String.valueOf(System.currentTimeMillis())).append("&");
-		params.append("from_request").append("=").append("/upload").append("&");
+		params.append("from_request").append("=").append("/pageitem/OneStepPreview?widget_only=1&hidenextvideo=1&request=" + fromRequest).append("&");
 		params.append("_csrf_l").append("=").append(account.getCookie("_csrf/link"));
 
 		return params.toString();
@@ -802,17 +856,17 @@ public class NewsPoster {
 
 	private String getEditVideoPostParamsUrl(String videoId) throws Exception {
 		StringBuilder params = new StringBuilder();
-		
+
 		String description = task.getDescription();
 		if(URLEncoder.encode(description,"UTF-8").length() > 3000){
 			description = URLEncoder.encode(description,"UTF-8").substring(0,3000);
 		}
-		
+
 		String title = task.getVideoTitle() + " " + getRndStr();
 		if(URLEncoder.encode(title,"UTF-8").length() > 255){
 			title = URLEncoder.encode(title,"UTF-8").substring(0,255);
 		}
-		
+
 		params.append("")
 		.append("form_name=").append("dm_pageitem_uploadnewform_").append(videoId).append("&")
 		.append("_csrf=").append(account.getCookie("_csrf/form")).append("&")
@@ -840,7 +894,7 @@ public class NewsPoster {
 		.append("from_request=").append("/upload").append("&")
 		.append("_csrf_l=").append(account.getCookie("_csrf/link"));
 
-		log.info("Params for edit video: " + params.toString());
+		log.trace("Params for edit video: " + params.toString());
 
 		return params.toString();
 	}

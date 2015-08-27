@@ -42,15 +42,21 @@ public class AccountFactory
 	private final static String LOGIN_URL_LABEL = "login_url";
 
 	private final static String NEWS_PER_ACCOUNT_LABEL = "news_per_account";
+	private final static String NOT_REJECT_TIME_LABEL = "not_reject_time";
 
 	private static int NEWS_PER_ACCOUNT = 200;
 
 	private ProxyFactory proxyFactory = null;
+	
+	//contain rejected account's login - rejection time
+	private Map<String, Long> rejectedAccount = new HashMap<String, Long>();
+	private Long NOT_REJECT_TIME = 900000L;
 
 	public AccountFactory(ProxyFactory proxy){
 		super();
 		this.proxyFactory = proxy;
 		NEWS_PER_ACCOUNT = Integer.valueOf(Constants.getInstance().getProperty(NEWS_PER_ACCOUNT_LABEL));
+		NOT_REJECT_TIME = Long.valueOf(Constants.getInstance().getProperty(NOT_REJECT_TIME_LABEL, "900000"));
 	}
 
 	public void fillAccounts(String accListFilePath) throws Exception{
@@ -66,7 +72,7 @@ public class AccountFactory
 				//parse proxy adress
 				if(line.contains(";")){
 					String[] account = line.trim().split(";");
-					accounts.put(account[2], new Account(account[0],account[2],account[1]));
+					accounts.put(account[2], new Account(account[0],account[2],account[1], this));
 					newsPostedCount.put(account[2],0);
 					accountUsedInThreadCount.put(account[2],0);
 				}
@@ -285,7 +291,7 @@ public class AccountFactory
 	 * Release account using
 	 * @param account
 	 */
-	public synchronized void checkAccountForExclude(Account account){
+	public synchronized void markAccountForExclude(Account account){
 		//now account will not be return for processing
 		newsPostedCount.put(account.getLogin(), NEWS_PER_ACCOUNT);
 	}
@@ -323,5 +329,20 @@ public class AccountFactory
 	
 	public HashMap<String, Account> getAccounts(){
 		return accounts;
+	}
+	
+	public void rejectAccount(Account account){
+		if(!rejectedAccount.containsKey(account.getLogin())){
+			rejectedAccount.put(account.getLogin(), System.currentTimeMillis());
+		}
+	}
+	
+	public boolean isAccountRejected(Account account){
+		long curTime = System.currentTimeMillis();
+		if(!rejectedAccount.containsKey(account.getLogin()) || ((rejectedAccount.get(account.getLogin()) + NOT_REJECT_TIME) > curTime) ){
+			return false;
+		}else{
+			return true;
+		}
 	}
 }

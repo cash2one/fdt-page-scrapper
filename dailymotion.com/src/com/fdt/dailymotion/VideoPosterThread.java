@@ -115,6 +115,7 @@ public class VideoPosterThread extends Thread{
 					}
 					//create video
 					Integer[] times = createVideo(task, this.addAudioToFile, previewImg, MIN_DURATION_VIDEO, MAX_DURATION_VIDEO);
+					log.debug("Times array: " + times);
 					Thread.sleep(10000L);
 					
 					//TODO Add Snippet task chooser
@@ -146,7 +147,8 @@ public class VideoPosterThread extends Thread{
 				} 
 				catch (Throwable e) {
 					if(e instanceof NoSuchElementException){
-						accountFactory.checkAccountForExclude(account);
+						//if 
+						accountFactory.markAccountForExclude(account);
 					}
 					errorExist = true;
 					boolean reprocessed = taskFactory.reprocessingTask(task);
@@ -194,25 +196,7 @@ public class VideoPosterThread extends Thread{
 	}
 
 	private Integer[] createVideo(NewsTask task, boolean addAudioToFile, File previewImg, int minDur, int maxDur) throws Exception{
-		AudioVideoMerger avMerger = new AudioVideoMerger();
-
 		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur);
-
-		/*if(addAudioToFile){
-			MediaLocator ivml = JpegImagesToMovie.createMediaLocator(task.getVideoFileWOAudio().getPath());
-			MediaLocator iaml = JpegImagesToMovie.createMediaLocator("08.wav");
-			MediaLocator ovml = JpegImagesToMovie.createMediaLocator(task.getVideoFile().getPath());
-
-			avMerger.mergeFiles(ivml, iaml, ovml);
-
-			avMerger = null;
-			ivml = null;
-			iaml = null;
-			ovml = null;
-		}else{
-			task.setVideoFile(task.getVideoFileWOAudio());
-		}*/
-		
 		return times;
 	}
 

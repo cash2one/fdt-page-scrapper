@@ -1,2 +1,2 @@
-java -cp libs/xuggle-xuggler-5.4.jar;libs/slf4j-api-1.6.4.jar;libs/junit-4.5.jar;libs/logback-classic-1.0.0.jar;libs/logback-core-1.0.0.jar;libs/commons-cli-1.1.jar;deploy/dailymotion.com.jar com.fdt.dailymotion.VideoTaskRunner
+java -cp "deploy/dailymotion.com.jar;libs/*" com.fdt.dailymotion.VideoTaskRunner
 pause 

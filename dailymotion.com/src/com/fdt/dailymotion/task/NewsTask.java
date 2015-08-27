@@ -38,7 +38,7 @@ public class NewsTask{
 
 	private int attempsCount = 1;
 	//empty result
-
+	
 	private static final String LINE_FEED = "\r\n";
 
 	public NewsTask(File inputFile, File templateFile) throws Exception {

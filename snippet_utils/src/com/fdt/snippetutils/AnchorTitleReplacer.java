@@ -51,6 +51,8 @@ public class AnchorTitleReplacer {
 	private final static String GET_ANCHOR_FROM_WEB_LABEL = "get_anchor_from_web";
 	
 	private static final String SOURCE_LABEL = "source";
+	
+	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
 
 	private String anchorFilePath;
 	private String outputPath;
@@ -72,6 +74,10 @@ public class AnchorTitleReplacer {
 
 	private ArrayList<String> usedLines = new ArrayList<String>();
 	private ArrayList<String> newLines = new ArrayList<String>();
+	
+	private Integer currentThreadCount = 0;
+	private Integer maxThreadCount = 1;
+	private Long sleepTime = 1000L;
 
 	public static void main(String[] args) {
 		DOMConfigurator.configure("log4j.xml");
@@ -98,7 +104,8 @@ public class AnchorTitleReplacer {
 			}
 
 		}catch(Exception e){
-			log.error(e);
+			log.error("Error occured during replacer executor: ", e);
+			e.printStackTrace();
 			System.exit(-1);
 		}
 	}
@@ -122,12 +129,21 @@ public class AnchorTitleReplacer {
 		proxyFactory.init(ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL));
 		
 		this.source = ConfigManager.getInstance().getProperty(SOURCE_LABEL);
+		
 		if(source == null || "".equals(source)){
 			source = "GOOGLE";
 		}
+		
+		this.maxThreadCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
+		
+		
+		if(!replaceWithBing){
+			this.maxThreadCount = 1;
+			this.sleepTime = 1L;
+		}
 	}
 
-	private void execute() throws IOException{
+	private void execute() throws IOException, InterruptedException{
 
 		ArrayList<String> lines= readFile(this.anchorFilePath);
 		ArrayList<String> titles = readTitlesFile(this.titlesFilePath);
@@ -138,17 +154,60 @@ public class AnchorTitleReplacer {
 		}
 	}
 
-	private void loop(ArrayList<String> lines, ArrayList<String> titles) throws IOException{
-		ArrayList<String> rndLines4Process;
-		ArrayList<String> rndLinesProcessed = null;
+	private void loop(ArrayList<String> lines, ArrayList<String> titles) throws IOException, InterruptedException{
 
 		while(lines.size() > 0){
-			rndLines4Process = getRndLines(lines);
-			//TODO Process links and save to file
-			rndLinesProcessed = processLines(rndLines4Process, titles);
-			//Save file
-			File fileToSave = new File(outputPath, String.valueOf(System.currentTimeMillis())+rndLines4Process.hashCode());
-			appendLinesToFile(rndLinesProcessed, fileToSave);
+			
+			while( currentThreadCount == maxThreadCount ){
+				Thread.sleep(sleepTime);
+			}
+			
+			ReplacerThread rplcrThrd = new ReplacerThread(this, lines, titles);
+			rplcrThrd.start();
+		}
+		
+		while( currentThreadCount > 0 ){
+			Thread.sleep(sleepTime);
+		}
+	}
+	
+	
+	private class ReplacerThread extends Thread {
+
+		private ArrayList<String> lines;
+		private ArrayList<String> titles;
+		private AnchorTitleReplacer replacer;
+		
+		public ReplacerThread(AnchorTitleReplacer replacer, ArrayList<String> lines, ArrayList<String> titles) {
+			super();
+			this.replacer = replacer;
+			this.lines = lines;
+			this.titles = titles;
+		}
+
+		@Override
+		public void run() {
+			ArrayList<String> rndLines4Process;
+			ArrayList<String> rndLinesProcessed = null;
+			
+			try{
+				rndLines4Process = getRndLines(lines);
+				//TODO Process links and save to file
+				rndLinesProcessed = processLines(rndLines4Process, titles);
+				//Save file
+				File fileToSave = new File(outputPath, String.valueOf(System.currentTimeMillis())+rndLines4Process.hashCode());
+				appendLinesToFile(rndLinesProcessed, fileToSave);
+			} catch (IOException e) {
+				log.error("Error occured saving lines to file: ", e);
+			}finally{
+				replacer.decThrdCnt();
+			}
+		}
+		
+		@Override
+		public void start(){
+			replacer.incThrdCnt();
+			super.start();
 		}
 	}
 
@@ -339,5 +398,22 @@ public class AnchorTitleReplacer {
 		}
 		
 		return task;
+	}
+	
+	private void incThrdCnt(){
+		synchronized (this) {
+			currentThreadCount++;
+			log.debug("Current thread count: " + currentThreadCount);
+			notifyAll();
+		}
+		
+	}
+	
+	private void decThrdCnt(){
+		synchronized (this) {
+			currentThreadCount--;
+			log.debug("Current thread count: " + currentThreadCount);
+			notifyAll();
+		}
 	}
 }

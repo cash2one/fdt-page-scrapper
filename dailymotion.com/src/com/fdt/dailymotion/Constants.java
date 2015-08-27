@@ -54,4 +54,8 @@ public class Constants
 	public String getProperty(String key){
 		return properties.getProperty(key);
 	}
+	
+	public String getProperty(String key, String defValue){
+		return properties.getProperty(key, defValue);
+	}
 }

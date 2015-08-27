@@ -7,12 +7,15 @@ public class Account {
 	private String email = "";
 	private String pass = "";
 	private HashMap<String,String> cookie = new HashMap<String, String>();
+	
+	private AccountFactory accountFactory;
 
-	public Account(String email, String login, String pass) {
+	public Account(String email, String login, String pass, AccountFactory accountFactory) {
 		super();
 		this.email = email;
 		this.login = login;
 		this.pass = pass;
+		this.accountFactory = accountFactory;
 	}
 
 	public String getLogin()
@@ -69,5 +72,9 @@ public class Account {
 	
 	public String toString(){
 		return email + ";" + pass + ";" + login;
+	}
+
+	public AccountFactory getAccountFactory() {
+		return accountFactory;
 	}
 }
