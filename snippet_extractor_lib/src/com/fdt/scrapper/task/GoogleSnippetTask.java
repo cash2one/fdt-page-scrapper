@@ -10,9 +10,12 @@ public class GoogleSnippetTask extends SnippetTask
 		this.setXpathDesc("//div[@class='s']//span[@class='st']");
 		this.setHost("google.com");
 		this.setPage(1);
+		
+		this.addBannedRespCode(403);
+		this.addBannedRespCode(503);
 		/*this.setXpathSnipper("li[class=g]");
-	this.setXpathTitle("h3[class=r] a");
-	this.setXpathDesc("div[class=s] span[class=st]");*/
+		this.setXpathTitle("h3[class=r] a");
+		this.setXpathDesc("div[class=s] span[class=st]");*/
 	}
 
 	@Override

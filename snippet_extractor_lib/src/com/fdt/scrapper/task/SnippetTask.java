@@ -2,7 +2,9 @@ package com.fdt.scrapper.task;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.http.protocol.HTTP;
@@ -18,10 +20,13 @@ public abstract class SnippetTask
 	private String xpathTitle = "";
 	private String xpathLink = "";
 	private String xpathDesc = "";
+	
 	protected String keyWords = "";
 	protected String keyWordsNative = "";
 	protected String language = "en";
 	protected String host = "";
+	
+	protected List<Integer> bannedRespCodes = new ArrayList<Integer>();
 	protected boolean encodeKeywords = false;
 	protected int page;
 	
@@ -192,5 +197,13 @@ public abstract class SnippetTask
 
 	public void setPage(int page) {
 		this.page = page;
+	}
+	
+	public boolean isBanPage(int respCode){
+		return bannedRespCodes.contains(respCode);
+	}
+	
+	public boolean addBannedRespCode(Integer respCode){
+		return bannedRespCodes.add(respCode);
 	}
 }

@@ -36,6 +36,7 @@ import com.fdt.scrapper.task.SnippetTask;
  * @author Administrator
  */
 public class SnippetExtractor {
+	
 	private static final String MAX_LINK_COUNT_LABEL = "MAX_LINK_COUNT";
 	private static final String MIN_LINK_COUNT_LABEL = "MIN_LINK_COUNT";
 
@@ -147,9 +148,13 @@ public class SnippetExtractor {
 		return snippetsContent.toString();
 	}
 
-	private TagNode loadPageContent(SnippetTask snippetTask, Proxy proxy) throws MalformedURLException, IOException, ParseException {
+	private TagNode loadPageContent(SnippetTask snippetTask, ProxyConnector proxyConnector) throws MalformedURLException, IOException, ParseException, XPathExpressionException {
 		HttpURLConnection conn = null;
 		InputStream is = null;
+		
+		String proxyTypeStr = ConfigManager.getInstance().getProperty("proxy_type");
+		Proxy proxy = proxyConnector.getConnect(proxyTypeStr);
+		
 		System.out.println("Using proxy: " + proxy.toString());
 		try{
 			String strUrl = snippetTask.getFullUrl();
@@ -170,6 +175,13 @@ public class SnippetExtractor {
 
 			HtmlCleaner cleaner = new HtmlCleaner();
 
+			int respCode = conn.getResponseCode();
+			
+			if(snippetTask.isBanPage(respCode)){
+				//TODO Save proxy to banned list
+				proxyFactory.addToBannedList(proxyConnector);
+			}
+			
 			is = conn.getInputStream();
 
 			String encoding = conn.getContentEncoding();
@@ -280,12 +292,10 @@ public class SnippetExtractor {
 	public ArrayList<Snippet> extractSnippetsFromPageContent(SnippetTask snippetTask) throws MalformedURLException, IOException, XPathExpressionException, ParseException{
 		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
 
-		String proxyTypeStr = ConfigManager.getInstance().getProperty("proxy_type");
-
 		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
 		TagNode page = null;
 		try{
-			page = loadPageContent(snippetTask,proxyConnector.getConnect(proxyTypeStr));
+			page = loadPageContent(snippetTask,proxyConnector);
 		}finally{
 			if(proxyConnector != null){
 				proxyFactory.releaseProxy(proxyConnector);
@@ -315,6 +325,10 @@ public class SnippetExtractor {
 		}
 
 		return snippets;
+	}
+	
+	private boolean isProxyBanned(SnippetTask snippetTask, int respCode){
+		return snippetTask.isBanPage(respCode);
 	}
 
 	public SnippetTask getTask() {

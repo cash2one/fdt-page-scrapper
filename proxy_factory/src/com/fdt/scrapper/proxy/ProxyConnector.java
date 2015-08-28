@@ -53,4 +53,9 @@ public class ProxyConnector
 	{
 		return port;
 	}
+	
+	@Override
+	public String toString(){
+		return getProxyKey();
+	}
 }
