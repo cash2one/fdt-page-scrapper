@@ -41,7 +41,7 @@ public class VideoCreator {
 			/*for(int i = 1; i < 50; i++){
 				VideoCreator.makeVideo("article_"+i+"_.mp4", new File("images/article_"+i+".jpg"), new File("images/preview_article_"+i+".jpg"), new File("08.wav"), 34, 35);
 			}*/
-			VideoCreator.makeVideo("article_6_.mp4", new File("images/article_6.jpg"), new File("images/preview_article_6.jpg"), new File("08.wav"), 34, 35);
+			VideoCreator.makeVideo("article_6_.mp4", new File("images/article_1.jpg"), new File("images/preview_article_1.jpg"), new File("08.wav"), 34, 35);
 			//VideoCreator.mergeVideoAndAudio("test_video_wa.mp4", "08.wav", "test_video.mp4");
 			/*MediaLocator ivml = JpegImagesToMovie.createMediaLocator("test_video_wa.mov");
 			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
@@ -161,19 +161,36 @@ public class VideoCreator {
 		BufferedImage screen2 = ImageIO.read(previewFile);
 		BufferedImage bgrScreen2 = convertToType(screen2, BufferedImage.TYPE_3BYTE_BGR);
 		
-		for(int i = 0; i < frameCount-2*framePerSec; i++){
-			int test = (i*1000)/framePerSec;
+		for(long i = 0; i < frameCount-2*framePerSec; i++){
+			long test = (i*1000)/framePerSec;
 			writer.encodeVideo(0, bgrScreen, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
 		}
-		for(int i = frameCount-2*framePerSec; i < frameCount; i++){
-			int test = (i*1000)/framePerSec;
+		for(long i = frameCount-2*framePerSec; i < frameCount; i++){
+			long test = (i*1000)/framePerSec;
 			writer.encodeVideo(0, bgrScreen2, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
 		}
 		writer.encodeVideo(0, bgrScreen2, ((frameCount*1000)/framePerSec), TimeUnit.MILLISECONDS);
+		
+		/*for(long i = 1; i < frameCount-2*framePerSec; i++){
+			writer.encodeVideo(0, bgrScreen, i, TimeUnit.SECONDS);
+		}
+		for(long i = frameCount-2; i < frameCount; i++){
+			writer.encodeVideo(0, bgrScreen2, i, TimeUnit.SECONDS);
+		}
+		writer.encodeVideo(0, bgrScreen2, frameCount, TimeUnit.SECONDS);*/
 
+		try {
+			Thread.sleep(1000L);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		// tell the writer to close and write the trailer if needed
 		writer.flush();
 		writer.close();
+		samples.delete();
+		/*audioCoder.release();
+		containerAudio.release();*/
 		audioCoder.close();
 		containerAudio.close();
 		

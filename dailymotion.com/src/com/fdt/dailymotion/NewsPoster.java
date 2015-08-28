@@ -85,43 +85,48 @@ public class NewsPoster {
 
 	private String getUploadUrl() throws Exception{
 		String postUrl = "https://api.dailymotion.com/?access_token=" + account.getCookie("sid");
+		HttpsURLConnection conn = null;
+		String uploadUrl = ""; 
+		try{
+			//post news
+			URL url = new URL(postUrl);
+			HttpsURLConnection.setFollowRedirects(false);
+			conn = (HttpsURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("POST");
+			conn.setDoInput(true);
+			conn.setDoOutput(true);
 
-		//post news
-		URL url = new URL(postUrl);
-		HttpsURLConnection.setFollowRedirects(false);
-		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
-		conn.setReadTimeout(60000);
-		conn.setConnectTimeout(60000);
-		conn.setRequestMethod("POST");
-		conn.setDoInput(true);
-		conn.setDoOutput(true);
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+			conn.setRequestProperty("Host", "api.dailymotion.com");
+			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
-		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-		conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-		conn.setRequestProperty("Host", "api.dailymotion.com");
-		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+			OutputStream os = conn.getOutputStream();
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			writer.write("[{\"call\":\"GET /file/upload\",\"args\":{},\"id\":0}]");
+			writer.flush();
+			writer.close();
+			os.close();
 
-		OutputStream os = conn.getOutputStream();
-		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-		writer.write("[{\"call\":\"GET /file/upload\",\"args\":{},\"id\":0}]");
-		writer.flush();
-		writer.close();
-		os.close();
+			StringBuilder responseStr = getResponseAsString(conn);
 
-		StringBuilder responseStr = getResponseAsString(conn);
+			//log.debug(responseStr.toString());
 
-		//log.debug(responseStr.toString());
+			conn.disconnect();
 
-		conn.disconnect();
+			JSONObject jsonObj = new JSONObject(responseStr.substring(1, responseStr.length()-1));
+			uploadUrl = jsonObj.getJSONObject("result").getString("upload_url");
 
-		JSONObject jsonObj = new JSONObject(responseStr.substring(1, responseStr.length()-1));
-		String uploadUrl = jsonObj.getJSONObject("result").getString("upload_url");
-
-		conn.disconnect();
-
-		log.info("Upload URL: " + uploadUrl);
+			log.info("Upload URL: " + uploadUrl);
+		}finally{
+			if(conn != null){
+				conn.disconnect();
+			}
+		}
 
 		return uploadUrl;
 	}
@@ -184,81 +189,93 @@ public class NewsPoster {
 
 	private void postVideo(String videoUrl, String videoId) throws Exception{
 		String postUrl = "https://api.dailymotion.com/?access_token=" + account.getCookie("sid");
+		HttpsURLConnection conn = null;
+		try{
+			//post news
+			URL url = new URL(postUrl);
+			HttpsURLConnection.setFollowRedirects(false);
+			conn = (HttpsURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("POST");
+			conn.setDoInput(true);
+			conn.setDoOutput(true);
 
-		//post news
-		URL url = new URL(postUrl);
-		HttpsURLConnection.setFollowRedirects(false);
-		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
-		conn.setReadTimeout(60000);
-		conn.setConnectTimeout(60000);
-		conn.setRequestMethod("POST");
-		conn.setDoInput(true);
-		conn.setDoOutput(true);
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+			conn.setRequestProperty("Host", "api.dailymotion.com");
+			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
-		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-		conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-		conn.setRequestProperty("Host", "api.dailymotion.com");
-		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+			OutputStream os = conn.getOutputStream();
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			writer.write("[{\"call\":\"POST /video/"+videoId+"\",\"args\":{\"url\":\"" + videoUrl +"\",\"fields\":\"id,\"},\"id\":0}]");
+			writer.flush();
+			writer.close();
+			os.close();
 
-		OutputStream os = conn.getOutputStream();
-		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-		writer.write("[{\"call\":\"POST /video/"+videoId+"\",\"args\":{\"url\":\"" + videoUrl +"\",\"fields\":\"id,\"},\"id\":0}]");
-		writer.flush();
-		writer.close();
-		os.close();
+			StringBuilder responseStr = getResponseAsString(conn);
 
-		StringBuilder responseStr = getResponseAsString(conn);
+			JSONObject jsonObj = new JSONObject(responseStr.substring(1, responseStr.length()-1));
+			JSONObject errorEntity = null;
 
-		JSONObject jsonObj = new JSONObject(responseStr.substring(1, responseStr.length()-1));
-		JSONObject errorEntity = null;
+			try {
+				errorEntity = jsonObj.getJSONObject("error");
+			} catch (NoSuchElementException e) {
+				//nothing do
+			}
 
-		try {
-			errorEntity = jsonObj.getJSONObject("error");
-		} catch (NoSuchElementException e) {
-			//nothing do
+			if(errorEntity != null){
+				throw new Exception("Error occured during posting video " + videoId + ": " + errorEntity.getString("message"));
+			}
+
+			log.debug("Responce string for POST requets for access_token: " + responseStr.toString());
+
+		}finally{
+			if(conn != null){
+				conn.disconnect();
+			}
 		}
-
-		if(errorEntity != null){
-			throw new Exception("Error occured during posting video " + videoId + ": " + errorEntity.getString("message"));
-		}
-
-		log.debug("Responce string for POST requets for access_token: " + responseStr.toString());
-
-		conn.disconnect();
 	}
 
 	private String executeAccessToken(String videoId, String requestStr) throws Exception{
 		String postUrl = "https://api.dailymotion.com/?access_token=" + account.getCookie("sid");
 
-		//post news
-		URL url = new URL(postUrl);
-		HttpsURLConnection.setFollowRedirects(false);
-		HttpsURLConnection conn = (HttpsURLConnection) url.openConnection(proxy);
-		conn.setReadTimeout(60000);
-		conn.setConnectTimeout(60000);
-		conn.setRequestMethod("POST");
-		conn.setDoInput(true);
-		conn.setDoOutput(true);
+		HttpsURLConnection conn = null;
+		StringBuilder responseStr = new StringBuilder();
+		try{
+			//post news
+			URL url = new URL(postUrl);
+			HttpsURLConnection.setFollowRedirects(false);
+			conn = (HttpsURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("POST");
+			conn.setDoInput(true);
+			conn.setDoOutput(true);
 
-		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-		conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-		conn.setRequestProperty("Host", "api.dailymotion.com");
-		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+			conn.setRequestProperty("Host", "api.dailymotion.com");
+			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
-		OutputStream os = conn.getOutputStream();
-		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-		writer.write(requestStr);
-		writer.flush();
-		writer.close();
-		os.close();
+			OutputStream os = conn.getOutputStream();
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			writer.write(requestStr);
+			writer.flush();
+			writer.close();
+			os.close();
 
-		StringBuilder responseStr = getResponseAsString(conn);
+			responseStr = getResponseAsString(conn);
 
-		conn.disconnect();
+		}finally{
+			if(conn != null){
+				conn.disconnect();
+			}
+		}
 
 		return responseStr.toString();
 	}
@@ -307,34 +324,40 @@ public class NewsPoster {
 
 	private int executeOptionRequest(String postUrl) throws Exception{
 
-		//post news
-		URL url = new URL(postUrl);
-		String host = postUrl.substring(postUrl.indexOf("http://") + 7, postUrl.indexOf(".com") + 4);
-		HttpURLConnection.setFollowRedirects(false);
-		HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
-		conn.setReadTimeout(60000);
-		conn.setConnectTimeout(60000);
-		conn.setRequestMethod("OPTIONS");
-		conn.setDoInput(true);
-		conn.setDoOutput(false);
+		HttpURLConnection conn = null;
+		int respCode = -1;
+		try{
+			//post news
+			URL url = new URL(postUrl);
+			String host = postUrl.substring(postUrl.indexOf("http://") + 7, postUrl.indexOf(".com") + 4);
+			HttpURLConnection.setFollowRedirects(false);
+			conn = (HttpURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("OPTIONS");
+			conn.setDoInput(true);
+			conn.setDoOutput(false);
 
-		conn.setRequestProperty("Host", host);
-		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-		conn.setRequestProperty("Origin", "http://www.dailymotion.com");
-		conn.setRequestProperty("Access-Control-Request-Method", "POST");
-		conn.setRequestProperty("Access-Control-Request-Headers", "content-disposition,content-range,content-type,session-id");
-		conn.setRequestProperty("Connection", "keep-alive");
-		conn.setRequestProperty("Pragma", "no-cache");
-		conn.setRequestProperty("Cache-Control" ,"no-cache");
+			conn.setRequestProperty("Host", host);
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+			conn.setRequestProperty("Origin", "http://www.dailymotion.com");
+			conn.setRequestProperty("Access-Control-Request-Method", "POST");
+			conn.setRequestProperty("Access-Control-Request-Headers", "content-disposition,content-range,content-type,session-id");
+			conn.setRequestProperty("Connection", "keep-alive");
+			conn.setRequestProperty("Pragma", "no-cache");
+			conn.setRequestProperty("Cache-Control" ,"no-cache");
 
-		StringBuilder responseStr = getResponseAsString(conn);
-		int respCode = conn.getResponseCode();
+			respCode = conn.getResponseCode();
 
-		log.debug("OPTION request responce code: " + conn.getResponseCode());
+			log.debug("OPTION request responce code: " + conn.getResponseCode());
 
-		conn.disconnect();
+		}finally{
+			if(conn != null){
+				conn.disconnect();
+			}
+		}
 
 		return respCode;
 	}
@@ -377,63 +400,66 @@ public class NewsPoster {
 		File uploadFile = task.getVideoFile();
 
 		FileInputStream inputStream = new FileInputStream(uploadFile);
-
+		HttpURLConnection conn = null;
 		//executeOptionRequest(postUrl);
 
-		for (long i= 0; i <= uploadFile.length(); i += 500000) {
-			log.debug(String.format("%s: Upload new segment [%d:%d]", Thread.currentThread().getId(), i-500000, i));
-			executeOptionRequest(postUrl);
-			URL url = new URL(postUrl);
-			HttpURLConnection.setFollowRedirects(false);
-			//HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
-			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-			conn.setReadTimeout(60000);
-			conn.setConnectTimeout(300000);
-			conn.setRequestMethod("POST");
-			conn.setDoInput(true);
-			conn.setDoOutput(true);
+		try{
+			for (long i= 0; i <= uploadFile.length(); i += 500000) {
+				log.debug(String.format("%s: Upload new segment [%d:%d]", Thread.currentThread().getId(), i-500000, i));
+				executeOptionRequest(postUrl);
+				URL url = new URL(postUrl);
+				HttpURLConnection.setFollowRedirects(false);
+				conn = (HttpURLConnection) url.openConnection(proxy);
+				conn.setReadTimeout(60000);
+				conn.setConnectTimeout(300000);
+				conn.setRequestMethod("POST");
+				conn.setDoInput(true);
+				conn.setDoOutput(true);
 
-			conn.addRequestProperty("Host", uploadUrl); 
-			conn.setRequestProperty("Accept", "text/plain, */*; q=0.01");
-			conn.addRequestProperty("Content-Type", "video/mp4");
-			conn.addRequestProperty("Session-Id", sessionId); 
-			conn.addRequestProperty("Content-Disposition","attachment; filename=\"" + fileName + "\""); 
-			conn.addRequestProperty("Referer", "http://www.dailymotion.com/upload"); 
+				conn.addRequestProperty("Host", uploadUrl); 
+				conn.setRequestProperty("Accept", "text/plain, */*; q=0.01");
+				conn.addRequestProperty("Content-Type", "video/mp4");
+				conn.addRequestProperty("Session-Id", sessionId); 
+				conn.addRequestProperty("Content-Disposition","attachment; filename=\"" + fileName + "\""); 
+				conn.addRequestProperty("Referer", "http://www.dailymotion.com/upload"); 
 
-			conn.setRequestProperty("Cookie", "sdx=" + account.getCookie("sdx") + "; " + "ts=" + account.getCookie("ts") + "; ");
-			//conn.setRequestProperty("Cookie", "ts=579019; _ga=GA1.2.1306326178.1415707891; v1st=FBD5899AD5D1E456; OAX=LjW7ClRh/OsACxGb");
-			//conn.setRequestProperty("Connection", "keep-alive");
-			//conn.setRequestProperty("Pragma","no-cache");
-			//conn.setRequestProperty("Cache-Control", "no-cache");
+				conn.setRequestProperty("Cookie", "sdx=" + account.getCookie("sdx") + "; " + "ts=" + account.getCookie("ts") + "; ");
 
-			OutputStream outputStream = null;
+				OutputStream outputStream = null;
 
-			byte[] buffer = new byte[500000];
-			int bytesRead = -1;
-			if ((bytesRead = inputStream.read(buffer)) != -1) {
-				conn.addRequestProperty("Content-Range", "bytes " + (i) + "-" + (i+bytesRead-1)+ "/" + uploadFile.length());
-				outputStream = conn.getOutputStream();
-				outputStream.write(buffer, 0, bytesRead);
+				byte[] buffer = new byte[500000];
+				int bytesRead = -1;
+				if ((bytesRead = inputStream.read(buffer)) != -1) {
+					conn.addRequestProperty("Content-Range", "bytes " + (i) + "-" + (i+bytesRead-1)+ "/" + uploadFile.length());
+					outputStream = conn.getOutputStream();
+					outputStream.write(buffer, 0, bytesRead);
+				}
+				if(outputStream != null){
+					outputStream.flush();
+					outputStream.close();
+				}
+
+				int respCode = conn.getResponseCode();
+
+				StringBuilder responseStr = getResponseAsString(conn);
+				if(respCode == 200){
+					log.debug(responseStr.toString());
+					JSONObject jsonObj = new JSONObject(responseStr.toString());
+					videoPostedUrl = (String)jsonObj.getString("url");
+					postVideo(videoPostedUrl, videoId);
+				}
 			}
-			if(outputStream != null){
-				outputStream.flush();
-				outputStream.close();
+		}finally{
+			if(conn != null){
+				conn.disconnect();
 			}
 
-			int respCode = conn.getResponseCode();
-
-			StringBuilder responseStr = getResponseAsString(conn);
-			if(respCode == 200){
-				log.debug(responseStr.toString());
-				JSONObject jsonObj = new JSONObject(responseStr.toString());
-				videoPostedUrl = (String)jsonObj.getString("url");
-				postVideo(videoPostedUrl, videoId);
+			if(inputStream != null){
+				try{
+					inputStream.close();
+				}catch(Exception e){}
 			}
-
-			conn.disconnect();
 		}
-
-		inputStream.close();
 
 		executeRequestToGetCookies("http://www.dailymotion.com/upload_new/ping?t=" + (System.currentTimeMillis()), "HEAD", null);
 
@@ -441,171 +467,74 @@ public class NewsPoster {
 		return editVideoDescription(videoId, oldCookie, "POST");
 	}
 
-	/*private String uploadVideo(String uploadUrl, String videoId) throws Exception{
-
-		executeRequestToGetCookies("http://www.dailymotion.com/upload", "GET", null);
-		//executeRequestToGetCookies("http://www.dailymotion.com/pageitem/video/edit?request=/&t=0.6538078272511391&loop=0&from_request=/upload&_csrf_l=" + account.getCookie("_csrf/link"), "GET", null);
-		//String videoId = executerequestToGetCookies("http://www.dailymotion.com/ajax/video", "POST", new VideoIdExtractor(), getAjaxVideoParamString());
-		task.setVideoId(videoId);
-		String videoUrl = "";
-
-		String postUrl = task.getUploadUrl();
-		postUrl = uploadUrl;
-
-		//post news
-		String boundary = "----------" + System.currentTimeMillis();
-
-		String fileName = task.getVideoFile().getName();
-		File uploadFile = task.getVideoFile();
-		URL url = new URL(postUrl);
-		HttpURLConnection.setFollowRedirects(false);
-		//HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
-		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-		conn.setReadTimeout(60000);
-		conn.setConnectTimeout(300000);
-		conn.setRequestMethod("POST");
-		conn.setDoInput(true);
-		conn.setDoOutput(true);
-
-		conn.addRequestProperty("User-Agent", "Shockwave Flash"); 
-		conn.setRequestProperty("Accept", "text/*");
-
-		conn.setRequestProperty("Cookie", "sdx=" + account.getCookie("sdx") + "; " + "ts=" + account.getCookie("ts") + "; ");
-		//conn.setRequestProperty("Cookie", "ts=579019; _ga=GA1.2.1306326178.1415707891; v1st=FBD5899AD5D1E456; OAX=LjW7ClRh/OsACxGb");
-
-		conn.setRequestProperty("Content-Type", "multipart/form-data; boundary=" + boundary);
-		conn.setRequestProperty("DNT","1");
-		conn.setRequestProperty("Pragma","no-cache");
-
-		OutputStream outputStream;
-		outputStream = conn.getOutputStream();
-
-		PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
-
-		writer.append(LINE_FEED).append("--" + boundary).append(LINE_FEED);
-		writer.append("Content-Disposition: form-data; name=\"Filename\"").append(LINE_FEED).append(LINE_FEED);;
-		writer.append(fileName).append(LINE_FEED);
-		writer.append("--" + boundary).append(LINE_FEED);
-		writer.append("Content-Disposition: form-data; name=\"file\"; filename=\""+fileName+"\"").append(LINE_FEED);
-		writer.append("Content-Type: application/octet-stream").append(LINE_FEED);
-		writer.append("Content-Transfer-Encoding: binary").append(LINE_FEED).append(LINE_FEED);
-		writer.flush();
-
-		FileInputStream inputStream = new FileInputStream(uploadFile);
-		byte[] buffer = new byte[4096];
-		int bytesRead = -1;
-		while ((bytesRead = inputStream.read(buffer)) != -1) {
-			outputStream.write(buffer, 0, bytesRead);
-		}
-		outputStream.flush();
-		inputStream.close();
-
-		writer.append(LINE_FEED);
-		writer.append("--" + boundary).append(LINE_FEED);
-		writer.append("Content-Disposition: form-data; name=\"Upload\"").append(LINE_FEED).append(LINE_FEED);
-		writer.append("Submit Query").append(LINE_FEED);
-		writer.append("--" + boundary + "--");//.append(LINE_FEED).append(LINE_FEED);
-		writer.flush();
-
-		writer.flush();  
-
-		writer.close();
-
-		outputStream.close();
-
-		FileBody fileBody = new FileBody(new File("temp_video_audio.mov"));
-			MultipartEntity multipartEntity = new MultipartEntity(HttpMultipartMode.STRICT);
-			multipartEntity.addPart("file", fileBody);
-			multipartEntity.addPart("Filename", new StringBody("temp_video_audio.mov"));
-			//multipartEntity.addPart("Filename", "temp_video_audio.mov");
-
-			try {
-			    multipartEntity.writeTo(outputStream);
-			} finally {
-				outputStream.flush();
-				outputStream.close();
-			}
-
-		StringBuilder responseStr = getResponseAsString(conn);
-
-		//log.debug(responseStr.toString());
-
-		conn.disconnect();
-
-		JSONObject jsonObj = new JSONObject(responseStr.toString());
-		videoUrl = (String)jsonObj.getString("url");
-
-		//link uploaded video to user
-		executeRequestToGetCookies(getVideoFormXUploadUrl(videoId, videoUrl), "GET", null);
-
-		//Edit video description 
-		return editVideoDescription();
-	}*/
-
 	private String editVideoDescription(String videoId, String oldCookie, String method) throws Exception{
 		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
 				"/pageitem/uploadNewForm?request=/new&t=0.5693014024517274&xid="+videoId+"&from_request=/upload&_csrf_l=" + oldCookie;
 
-		//post news
-		URL url = new URL(postUrl);
-		HttpURLConnection.setFollowRedirects(false);
-		HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
-		conn.setReadTimeout(60000);
-		conn.setConnectTimeout(60000);
-		conn.setRequestMethod(method);
-		conn.setDoInput(true);
-		if("POST".equals(method)){
-			conn.setDoOutput(true);
-			getVideoAccessToken(videoId);
-		}else{
-			conn.setDoOutput(false);
-		}
+		HttpURLConnection conn = null;
+		try{
+			//post news
+			URL url = new URL(postUrl);
+			HttpURLConnection.setFollowRedirects(false);
+			conn = (HttpURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod(method);
+			conn.setDoInput(true);
+			if("POST".equals(method)){
+				conn.setDoOutput(true);
+				getVideoAccessToken(videoId);
+			}else{
+				conn.setDoOutput(false);
+			}
 
-		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-		conn.setRequestProperty("Accept", "*/*");
-		conn.setRequestProperty("Cookie", account.getCookies());
-		conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
-		conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
-		conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
-		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "*/*");
+			conn.setRequestProperty("Cookie", account.getCookies());
+			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
+			conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
-		if("POST".equals(method)){
-			OutputStream outputStream;
-			outputStream = conn.getOutputStream();
+			if("POST".equals(method)){
+				OutputStream outputStream;
+				outputStream = conn.getOutputStream();
 
-			PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
+				PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
 
-			writer.append(getEditVideoPostParamsUrl(videoId));
+				writer.append(getEditVideoPostParamsUrl(videoId));
 
-			writer.flush();
-			writer.close();
-			outputStream.close();
-		}else{
-			int respCode = conn.getResponseCode();
-			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
+				writer.flush();
+				writer.close();
+				outputStream.close();
+			}else{
+				int respCode = conn.getResponseCode();
+				Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
 
-			if(cookies.get("Set-Cookie") != null){
-				for(String cookieOne: cookies.get("Set-Cookie"))
-				{
-					String cookiesValues[] = cookieOne.split(";");
-					for(String cookiesArrayItem : cookiesValues){
-						String singleCookei[] = cookiesArrayItem.split("=");
-						account.addCookie(singleCookei[0].trim(), singleCookei[1].trim());
+				if(cookies.get("Set-Cookie") != null){
+					for(String cookieOne: cookies.get("Set-Cookie"))
+					{
+						String cookiesValues[] = cookieOne.split(";");
+						for(String cookiesArrayItem : cookiesValues){
+							String singleCookei[] = cookiesArrayItem.split("=");
+							account.addCookie(singleCookei[0].trim(), singleCookei[1].trim());
+						}
 					}
 				}
 			}
+
+			// Execute HTTP Post Request
+			StringBuilder responseStr = getResponseAsString(conn);
+
+			log.trace("Responce string after EDIT operation: " + responseStr);
+		}
+		finally{
+			if(conn != null){
+				conn.disconnect();
+			}
 		}
 
-		int respCode = conn.getResponseCode();
-		// Execute HTTP Post Request
-		StringBuilder responseStr = getResponseAsString(conn);
-
-		log.trace("Responce string after EDIT operation: " + responseStr);
-
-		//log.debug(responseStr.toString());
-
-		conn.disconnect();
 
 		Thread.sleep(15000L);
 		if("POST".equals(method)){
@@ -630,41 +559,46 @@ public class NewsPoster {
 		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
 				"/ajax/video_preview_v3";
 
+		HttpURLConnection conn = null;
+		StringBuilder responseStr = new StringBuilder();
 		//post news
-		URL url = new URL(postUrl);
-		HttpURLConnection.setFollowRedirects(false);
-		HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
-		conn.setReadTimeout(60000);
-		conn.setConnectTimeout(60000);
-		conn.setRequestMethod("POST");
-		conn.setDoInput(true);
-		conn.setDoOutput(true);
+		try{
+			URL url = new URL(postUrl);
+			HttpURLConnection.setFollowRedirects(false);
+			conn = (HttpURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("POST");
+			conn.setDoInput(true);
+			conn.setDoOutput(true);
 
-		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-		conn.setRequestProperty("Accept", "*/*");
-		conn.setRequestProperty("Cookie", account.getCookies());
-		conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
-		conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
-		conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
-		//conn.setRequestProperty("Referer", http://www.dailymotion.com/pageitem/OneStepPreview?widget_only=1&hidenextvideo=1&request=/video/x30lasl_%25D0%25BF%25D1%2580%25D0%25B5%25D1%2581%25D0%25BB%25D0%25B5%25D0%25B4%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5-m%25D0%25BE%25D1%2582%25D0%25BE%25D1%2586%25D0%25B8%25D0%25BA%25D0%25BB%25D0%25B8%25D1%2581%25D1%2582%25D0%25B0-30-06-2015_webcam);
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "*/*");
+			conn.setRequestProperty("Cookie", account.getCookies());
+			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
+			conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+			//conn.setRequestProperty("Referer", http://www.dailymotion.com/pageitem/OneStepPreview?widget_only=1&hidenextvideo=1&request=/video/x30lasl_%25D0%25BF%25D1%2580%25D0%25B5%25D1%2581%25D0%25BB%25D0%25B5%25D0%25B4%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5-m%25D0%25BE%25D1%2582%25D0%25BE%25D1%2586%25D0%25B8%25D0%25BA%25D0%25BB%25D0%25B8%25D1%2581%25D1%2582%25D0%25B0-30-06-2015_webcam);
 
-		OutputStream outputStream;
-		outputStream = conn.getOutputStream();
-		PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
-		writer.append(getPreviewParamString(videoId, fromRequest));
-		writer.flush();
-		writer.close();
-		outputStream.close();
+			OutputStream outputStream;
+			outputStream = conn.getOutputStream();
+			PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
+			writer.append(getPreviewParamString(videoId, fromRequest));
+			writer.flush();
+			writer.close();
+			outputStream.close();
 
+			int respCode = conn.getResponseCode();
+			// Execute HTTP Post Request
+			responseStr = getResponseAsString(conn);
 
-		int respCode = conn.getResponseCode();
-		// Execute HTTP Post Request
-		StringBuilder responseStr = getResponseAsString(conn);
-
-		log.debug("Set view responce string: " + responseStr.toString());
-
-		conn.disconnect();
+			log.debug("Set view responce string: " + responseStr.toString());
+		}finally{
+			if(conn != null){
+				conn.disconnect();
+			}
+		}
 
 		return responseStr.toString();
 	}
@@ -689,59 +623,63 @@ public class NewsPoster {
 	}
 
 	private String executerequestToGetCookies(String postUrl, String requestMethod, IResultExtractor resultExtractor, String postParams) throws IOException{
-
+		HttpURLConnection conn = null;
 		//post news
-		URL url = new URL(postUrl);
-		log.info("URL: " + url);
-		HttpURLConnection.setFollowRedirects(false);
-		//TODO Uncomment
-		//HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
-		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-		conn.setReadTimeout(60000);
-		conn.setConnectTimeout(60000);
-		conn.setRequestMethod(requestMethod);
-		conn.setDoInput(true);
-		conn.setDoOutput(true);
+		try{
+			URL url = new URL(postUrl);
+			log.info("URL: " + url);
+			HttpURLConnection.setFollowRedirects(false);
+			//TODO Uncomment
+			//HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+			conn = (HttpURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod(requestMethod);
+			conn.setDoInput(true);
+			conn.setDoOutput(true);
 
-		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-		conn.setRequestProperty("Accept", "*/*");
-		conn.setRequestProperty("Cookie", account.getCookies());
-		//conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
-		conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
-		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "*/*");
+			conn.setRequestProperty("Cookie", account.getCookies());
+			//conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+			conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
-		if(requestMethod.equalsIgnoreCase("POST") && postParams != null){
-			OutputStream os = conn.getOutputStream();
-			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-			writer.write(postParams);
-			writer.flush();
-			writer.close();
-			os.close();
-		}
+			if(requestMethod.equalsIgnoreCase("POST") && postParams != null){
+				OutputStream os = conn.getOutputStream();
+				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+				writer.write(postParams);
+				writer.flush();
+				writer.close();
+				os.close();
+			}
 
-		Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
+			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
 
-		if(cookies.get("Set-Cookie") != null){
-			for(String cookieOne: cookies.get("Set-Cookie"))
-			{
-				String cookiesValues[] = cookieOne.split(";");
-				for(String cookiesArrayItem : cookiesValues){
-					String singleCookei[] = cookiesArrayItem.split("=");
-					account.addCookie(singleCookei[0].trim(), singleCookei[1].trim());
+			if(cookies.get("Set-Cookie") != null){
+				for(String cookieOne: cookies.get("Set-Cookie"))
+				{
+					String cookiesValues[] = cookieOne.split(";");
+					for(String cookiesArrayItem : cookiesValues){
+						String singleCookei[] = cookiesArrayItem.split("=");
+						account.addCookie(singleCookei[0].trim(), singleCookei[1].trim());
+					}
 				}
 			}
+
+			StringBuilder responseStr = getResponseAsString(conn);
+
+			//log.debug(responseStr.toString());
+
+			if(resultExtractor != null){
+				resultExtractor.init(responseStr.toString());
+			}
+		}finally{
+			if(conn != null){
+				conn.disconnect();
+			}
 		}
-
-		StringBuilder responseStr = getResponseAsString(conn);
-
-		//log.debug(responseStr.toString());
-
-		if(resultExtractor != null){
-			resultExtractor.init(responseStr.toString());
-		}
-
-		conn.disconnect();
 
 		return resultExtractor != null ? resultExtractor.getResult():"";
 	}

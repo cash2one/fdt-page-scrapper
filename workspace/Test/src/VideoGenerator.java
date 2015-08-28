@@ -7,10 +7,13 @@ import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
@@ -21,10 +24,12 @@ import com.xuggle.xuggler.ICodec;
 
 public class VideoGenerator {
 
+	private static final String TIME_STAMP_FORMAT = "HH:mm:ss.SSS";
+	private static SimpleDateFormat sdf = new SimpleDateFormat(TIME_STAMP_FORMAT);
 
     private static final String outputFilename = "myVideo.mp4";
 
-    public static void main(String[] args) throws IOException {
+    /*public static void main(String[] args) throws IOException {
 
         final IMediaWriter writer = ToolFactory.makeWriter(outputFilename);
 
@@ -50,7 +55,14 @@ public class VideoGenerator {
         writer.close();
         System.out.println("Video Created");
 
+    }*/
+    
+    public static void main(String[] args) throws IOException {
+    	sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
+    	System.out.println(getTimeString(new int[]{34,2}));
+    	System.out.println(getTimeString2(new int[]{34,2}));
     }
+    
 
     public static BufferedImage convertToType(BufferedImage sourceImage, int targetType) {
         BufferedImage image;
@@ -64,5 +76,23 @@ public class VideoGenerator {
         }
         return image;
     }
+    
+    private static String getTimeString(int[] times){
+		double milSecCnt = 0L;
+		milSecCnt =  (times[0] / times[1]) * 1000 + ( (double)(times[0]%times[1])/times[1])*1000;
+
+		String valueStr = String.format("%.0f", milSecCnt);
+
+		return sdf.format(new Date(Long.parseLong(valueStr)-1000));
+	}
+    
+    private static String getTimeString2(int[] times){
+		double milSecCnt = 0L;
+		milSecCnt =  (((double)times[0]/times[1])) * 1000;
+
+		String valueStr = String.format("%.0f", milSecCnt);
+
+		return sdf.format(new Date(Long.parseLong(valueStr)-1000));
+	}
 }
 
