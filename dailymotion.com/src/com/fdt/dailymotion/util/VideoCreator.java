@@ -1,6 +1,9 @@
 package com.fdt.dailymotion.util;
 
+import java.awt.AlphaComposite;
 import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -25,12 +28,16 @@ import com.xuggle.xuggler.IVideoPicture;
 
 public class VideoCreator {
 
+	private static final int MIN_FRAME_COUNT = 35;
+	
+	private static final int MAX_FRAME_COUNT = 36;
+
 	private static final Logger log = Logger.getLogger(VideoCreator.class);
 
 	final static int audioStreamIndex = 1;
 	final static int audioStreamId = 0;
 	final static int channelCount = 2;
-	
+
 	final static int successBitrate = 262144;
 
 	public static void main(String... args){
@@ -38,10 +45,17 @@ public class VideoCreator {
 		DOMConfigurator.configure("log4j.xml");
 
 		try {
-			/*for(int i = 1; i < 50; i++){
-				VideoCreator.makeVideo("article_"+i+"_.mp4", new File("images/article_"+i+".jpg"), new File("images/preview_article_"+i+".jpg"), new File("08.wav"), 34, 35);
-			}*/
-			VideoCreator.makeVideo("article_6_.mp4", new File("images/article_1.jpg"), new File("images/preview_article_1.jpg"), new File("08.wav"), 34, 35);
+			for(int i = 1; i < 300; i++){
+				File videoFile = new File("article_"+i+"_.mp4");
+				if(videoFile.exists()){
+					VideoCreator.makeVideo("article_"+i+"_.mp4", new File("images/article_"+i+".jpg"), new File("images/preview_article_"+i+".jpg"), new File("08.wav"), MIN_FRAME_COUNT, MAX_FRAME_COUNT);
+					File image = new File("images/article_"+i+".jpg");
+					File video = new File("article_"+i+"_.mp4");
+					log.info(String.format("Image file %s; size %s; video bitrate %.0f; compression rate: %.3f", image.getName(), image.length(), (double)(video.length()/MAX_FRAME_COUNT), (double)(MAX_FRAME_COUNT*image.length())/video.length()));
+					System.out.println(String.format("Image file %s; size %s; video bitrate %.0f; compression rate: %.3f", image.getName(), image.length(), (double)(8*video.length()/MAX_FRAME_COUNT), (double)(MAX_FRAME_COUNT*image.length())/video.length()));
+				}
+			}
+			VideoCreator.makeVideo("article_6_.mp4", new File("images/article_6.jpg"), new File("images/preview_article_6.jpg"), new File("08.wav"), MIN_FRAME_COUNT, MAX_FRAME_COUNT);
 			//VideoCreator.mergeVideoAndAudio("test_video_wa.mp4", "08.wav", "test_video.mp4");
 			/*MediaLocator ivml = JpegImagesToMovie.createMediaLocator("test_video_wa.mov");
 			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
@@ -109,14 +123,14 @@ public class VideoCreator {
 		int frameCount = (minDur + rnd.nextInt(maxDur-minDur))*framePerSec;
 
 		writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, 1080, 720);
-		
+
 		IContainer containerAudio = IContainer.make();
 
 		if (containerAudio.open(audioFile.getPath(), IContainer.Type.READ, null) < 0)
 			throw new IllegalArgumentException("Cant find " + audioFile.getPath());
 
 		int audioStreamt = 0;
-		
+
 		for(int i=0; i<containerAudio.getNumStreams(); i++){
 			IStream stream = containerAudio.getStream(i);
 			IStreamCoder code = stream.getStreamCoder();
@@ -130,13 +144,13 @@ public class VideoCreator {
 		}
 		IStreamCoder audioCoder = containerAudio.getStream(audioStreamt).getStreamCoder();
 		audioCoder.open();
-		
+
 		writer.addAudioStream(audioStreamIndex, audioStreamId, audioCoder.getChannels(), audioCoder.getSampleRate());
 
 		IAudioSamples samples = IAudioSamples.make(audioCoder.getSampleRate(), audioCoder.getChannels(),IAudioSamples.Format.FMT_S32);  
-		
+
 		IPacket packetaudio = IPacket.make();
-		
+
 		while(containerAudio.readNextPacket(packetaudio) >= 0){
 			int offset = 0;
 			while(offset<packetaudio.getSize())
@@ -153,24 +167,22 @@ public class VideoCreator {
 				}
 			}
 		}
-		
+
 		//for (int index = 0; index < SECONDS_TO_RUN_FOR * FRAME_RATE; index++) {
 		BufferedImage screen = ImageIO.read(imageFile);
 		BufferedImage bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
 
 		BufferedImage screen2 = ImageIO.read(previewFile);
 		BufferedImage bgrScreen2 = convertToType(screen2, BufferedImage.TYPE_3BYTE_BGR);
-		
+
 		for(long i = 0; i < frameCount-2*framePerSec; i++){
-			long test = (i*1000)/framePerSec;
 			writer.encodeVideo(0, bgrScreen, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
 		}
 		for(long i = frameCount-2*framePerSec; i < frameCount; i++){
-			long test = (i*1000)/framePerSec;
 			writer.encodeVideo(0, bgrScreen2, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
 		}
-		writer.encodeVideo(0, bgrScreen2, ((frameCount*1000)/framePerSec), TimeUnit.MILLISECONDS);
-		
+		writer.encodeVideo(0, bgrScreen2, ((frameCount*1000)/framePerSec)-1, TimeUnit.MILLISECONDS);
+
 		/*for(long i = 1; i < frameCount-2*framePerSec; i++){
 			writer.encodeVideo(0, bgrScreen, i, TimeUnit.SECONDS);
 		}
@@ -186,6 +198,7 @@ public class VideoCreator {
 			e.printStackTrace();
 		}
 		// tell the writer to close and write the trailer if needed
+
 		writer.flush();
 		writer.close();
 		samples.delete();
@@ -193,38 +206,88 @@ public class VideoCreator {
 		containerAudio.release();*/
 		audioCoder.close();
 		containerAudio.close();
-		
-		System.out.println("Video Created");
+
+		log.debug(String.format("Video Created: %s",filePath));
 		long endTime = System.currentTimeMillis();
 		log.debug(String.format("File for %s was generated for %s second(s)", imageFile.getName(), ((endTime-startTime)/1000)));
 
 		return new Integer[]{frameCount, framePerSec};
 	}
-	
+
 	private static int calculateFrameRate(File inputFile){
 		long bitRate = 0;
-		
+
 		for(int i = 1; i < 30; i++){
-			bitRate = (inputFile.length()*8*i*10)/60;
+			bitRate = (inputFile.length()*8*i*100)/1200;
 			if(bitRate > successBitrate){
+				log.debug("Calculated bitrate: " + bitRate);
+				System.out.println("Calculated bitrate: " + bitRate);
 				return i;
 			}
 		}
-		
+
 		return 30;
 	}
 
 	public static BufferedImage convertToType(BufferedImage sourceImage, int targetType) {
 		BufferedImage image = new BufferedImage(1080, 720, targetType);
 
+		//TODO scale image
+		int[] sclSz = scaleSize(sourceImage.getWidth(),sourceImage.getHeight(),1080,720);
 		Graphics2D g = image.createGraphics();
-		g.drawImage(sourceImage, 0, 0, 1080, 720, null);
+		double scaleFactor = getScaleFactor(sourceImage.getWidth(),sourceImage.getHeight(),1080,720);
+		g.scale(scaleFactor, scaleFactor);
+		g.drawImage(sourceImage, (int)Math.round(sclSz[0]/scaleFactor), (int)Math.round(sclSz[1]/scaleFactor), sourceImage.getWidth(), sourceImage.getHeight(), null);
 		g.dispose();
+		g.setComposite(AlphaComposite.Src);
 
-		/*image = new BufferedImage(1080, 720, targetType);
-		//image = new BufferedImage(sourceImage.getWidth(), sourceImage.getHeight(), targetType);
-		image.getGraphics().drawImage(sourceImage, 0, 0, null);*/
+		g.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
+		RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+		g.setRenderingHint(RenderingHints.KEY_RENDERING,
+		RenderingHints.VALUE_RENDER_QUALITY);
+		g.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+		RenderingHints.VALUE_ANTIALIAS_ON);
 		return image;
+	}
+
+	private static double getScaleFactor(int width, int height, int destWidth, int destHeight){
+		double fitFactorSource = (double)height/width;
+		double firFactorDest = (double)destHeight/destWidth;
+
+		double scaleFactor = 1;
+
+		if(fitFactorSource > firFactorDest){
+			//fit to height
+			scaleFactor = (double)destHeight/height;
+		}else{
+			//fir to width
+			scaleFactor= (double)destWidth/width;
+		}
+
+		return scaleFactor;
+	}
+
+	private static int[] scaleSize(int width, int height, int destWidth, int destHeight){
+		int[] scaleSizes =  new int[]{0,0,1080,720};
+
+		double fitFactorSource = (double)height/width;
+		double firFactorDest = (double)destHeight/destWidth;
+
+		if(fitFactorSource > firFactorDest){
+			//fit to height
+			double scaleFactor = (double)destHeight/height;
+			int x = (destWidth - (int)Math.round(scaleFactor * width))/2; 
+			int y = 0;
+			scaleSizes = new int[]{x,y,destWidth-x, destHeight - y};
+		}else{
+			//fir to width
+			double scaleFactor = (double)destWidth/width;
+			int x = 0;
+			int y = (destHeight - (int)Math.round(scaleFactor * height))/2; 
+			scaleSizes = new int[]{x,y,destWidth-x, destHeight - y};
+		}
+
+		return scaleSizes;
 	}
 
 	public static void mergeVideoAndAudio(String videoFilePath, String audioFilePath, String outputFilePath)

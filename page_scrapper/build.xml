@@ -36,7 +36,7 @@
 				<attribute name="Class-Path" value="." />
 				<!--attribute name="Main-Class" value="com.ssc.esf.hub.EsfHubEngine" /-->
 			</manifest>
-			<zipgroupfileset dir="${dir.lib}" includes="**/*.jar" excludes="**/page_scrapper.jar" />
+			<!--zipgroupfileset dir="${dir.lib}" includes="**/*.jar" excludes="**/page_scrapper.jar" /-->
 		</jar>
 	</target>
 

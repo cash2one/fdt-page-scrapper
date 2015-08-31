@@ -1,18 +1,9 @@
 
-import java.awt.AWTException;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.Robot;
-import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
@@ -22,14 +13,14 @@ import com.xuggle.mediatool.IMediaWriter;
 import com.xuggle.mediatool.ToolFactory;
 import com.xuggle.xuggler.ICodec;
 
-public class VideoGenerator {
+public class Test {
 
 	private static final String TIME_STAMP_FORMAT = "HH:mm:ss.SSS";
 	private static SimpleDateFormat sdf = new SimpleDateFormat(TIME_STAMP_FORMAT);
 
-    private static final String outputFilename = "myVideo.mp4";
+    private static final String outputFilename = "myVideo.mov";
 
-    /*public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
         final IMediaWriter writer = ToolFactory.makeWriter(outputFilename);
 
@@ -42,22 +33,22 @@ public class VideoGenerator {
         BufferedImage screen = ImageIO.read(new File("d:\\Work\\Scrapper_door_GIT_new\\dailymotion.com\\images\\article_1.jpg"));
         BufferedImage bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
         
-        BufferedImage screen2 = ImageIO.read(new File("d:\\Work\\Scrapper_door_GIT_new\\dailymotion.com\\images\\article_2.jpg"));
+        BufferedImage screen2 = ImageIO.read(new File("d:\\Work\\Scrapper_door_GIT_new\\dailymotion.com\\images\\preview_article_2.jpg"));
         BufferedImage bgrScreen2 = convertToType(screen2, BufferedImage.TYPE_3BYTE_BGR);
-        for(int i = 0; i <3599; i++){
+        for(int i = 0; i <36; i++){
         	writer.encodeVideo(0, bgrScreen, i, TimeUnit.SECONDS);
         }
         //writer.encodeVideo(0, bgrScreen2, 3599, TimeUnit.SECONDS);
-        writer.encodeVideo(0, bgrScreen2, 3599, TimeUnit.SECONDS);
-        writer.encodeVideo(0, bgrScreen2, 3600, TimeUnit.SECONDS);
+        writer.encodeVideo(0, bgrScreen2, 36, TimeUnit.SECONDS);
+        writer.encodeVideo(0, bgrScreen2, 37, TimeUnit.SECONDS);
         // tell the writer to close and write the trailer if needed
         writer.flush();
         writer.close();
         System.out.println("Video Created");
 
-    }*/
+    }
     
-    public static void main(String[] args) throws IOException {
+    public static void main2(String[] args) throws IOException {
     	sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
     	System.out.println(getTimeString(new int[]{34,2}));
     	System.out.println(getTimeString2(new int[]{34,2}));

@@ -14,9 +14,8 @@
 	<classpathentry kind="var" path="FDT_LIBS/jsoup-1.7.1.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/jtidy-r938.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/log4j-1.2.15.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/proxy_factory.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/velocity-1.7.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/json-rpc-1.0.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/page_scrapper"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/proxy_factory"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
