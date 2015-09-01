@@ -247,7 +247,7 @@ public class AccountFactory
 			if( runningCount < (NEWS_PER_ACCOUNT-postedCount)){
 				int currentCount = accountUsedInThreadCount.get(login);
 				accountUsedInThreadCount.put(login, ++currentCount);
-				log.debug("Used account size incremented: " + currentCount);
+				log.trace("Used account size incremented: " + currentCount);
 				return accounts.get(login);
 			}
 		}
@@ -266,7 +266,7 @@ public class AccountFactory
 		if(count == NEWS_PER_ACCOUNT){
 			accounts.remove(account.getLogin());
 		}
-		log.debug("Posted account news incremented: " + count);
+		log.trace("Posted account news incremented: " + count);
 		releaseAccount(account);
 	}
 

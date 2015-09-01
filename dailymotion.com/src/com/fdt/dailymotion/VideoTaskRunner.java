@@ -166,18 +166,19 @@ public class VideoTaskRunner {
 
 				Account account = null;
 				VideoPosterThread newThread = null;
-
+				NewsTask task = null;
+				
 				while((!taskFactory.isTaskFactoryEmpty() && ((account = accountFactory.getAccount()) != null)) || taskFactory.getRunThreadsCount() > 0){
 
-					log.debug("Try to get request from RequestFactory queue.");
-					log.debug("Account: " + account);
+					log.trace("Try to get request from RequestFactory queue.");
+					log.trace("Account: " + account);
 					if(account != null)
 					{
-						NewsTask task = taskFactory.getTask();
+						task = taskFactory.getTask();
 
 						if(task != null){
-							log.debug("Task. File name: " + task.getInputFile().getName());
-							log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
+							log.info("Task. File name: " + task.getInputFile().getName());
+							log.trace("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
 							newThread = new VideoPosterThread(
 									task, 
 									account, 
@@ -192,12 +193,16 @@ public class VideoTaskRunner {
 									);
 							newThread.start();
 							account = null;
+							newThread = null;
+							task = null;
 							continue;
 						}else{
 							accountFactory.releaseAccount(account);
 						}
-						account = null;
 					}
+					account = null;
+					newThread = null;
+					task = null;
 					try {
 						this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
 					} catch (InterruptedException e) {
@@ -207,8 +212,8 @@ public class VideoTaskRunner {
 
 				//saver.running = false;
 
-				log.debug("Task factory is empty: "+taskFactory.isTaskFactoryEmpty()+". Current working threads count is " + taskFactory.getRunThreadsCount());
-				log.debug("Error tasks: " + taskFactory.getErrorQueue().size());
+				log.info("Task factory is empty: "+taskFactory.isTaskFactoryEmpty()+". Current working threads count is " + taskFactory.getRunThreadsCount());
+				log.info("Error tasks: " + taskFactory.getErrorQueue().size());
 			}
 		}finally{
 			try{

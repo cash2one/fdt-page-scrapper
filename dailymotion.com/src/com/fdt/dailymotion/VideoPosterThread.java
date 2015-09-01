@@ -98,7 +98,6 @@ public class VideoPosterThread extends Thread{
 
 	@Override
 	public void run() {
-		ProxyConnector proxyConnector = null;
 		synchronized (this) {
 			try{
 				boolean errorExist = false;
@@ -167,11 +166,6 @@ public class VideoPosterThread extends Thread{
 					log.error("Error occured during process task: " + task.toString(), e);
 				}finally{
 					deleteVideoFile(task);
-					if(proxyConnector != null){
-						proxyFactory.releaseProxy(proxyConnector);
-						proxyConnector = null;
-					}
-
 				}
 				if(!errorExist){
 					taskFactory.putTaskInSuccessQueue(task);
@@ -197,6 +191,11 @@ public class VideoPosterThread extends Thread{
 
 	private Integer[] createVideo(NewsTask task, boolean addAudioToFile, File previewImg, int minDur, int maxDur) throws Exception{
 		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur);
+		long bitRate = (8*task.getVideoFile().length()/maxDur);
+		while(bitRate < VideoCreator.successBitrate){
+			times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur, times[2]*2);
+			bitRate = (8*task.getVideoFile().length()/maxDur);
+		}
 		return times;
 	}
 

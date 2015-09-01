@@ -1,9 +1,6 @@
 package com.fdt.dailymotion.util;
 
-import java.awt.AlphaComposite;
 import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -29,30 +26,36 @@ import com.xuggle.xuggler.IVideoPicture;
 public class VideoCreator {
 
 	private static final int MIN_FRAME_COUNT = 35;
-	
+
 	private static final int MAX_FRAME_COUNT = 36;
 
 	private static final Logger log = Logger.getLogger(VideoCreator.class);
 
-	final static int audioStreamIndex = 1;
-	final static int audioStreamId = 0;
-	final static int channelCount = 2;
+	private final static int audioStreamIndex = 1;
+	private final static int audioStreamId = 0;
+	private final static int channelCount = 2;
 
-	final static int successBitrate = 262144;
+	//public final static int successBitrate = 262144;
+	public final static int successBitrate = 262144;
 
 	public static void main(String... args){
 
 		DOMConfigurator.configure("log4j.xml");
-
+		
+		File image;
+		File video;
+		
 		try {
-			for(int i = 1; i < 300; i++){
-				File videoFile = new File("article_"+i+"_.mp4");
+			for(int i = 150; i < 300; i++){
+				File videoFile = new File("images/article_"+i+".jpg");
 				if(videoFile.exists()){
 					VideoCreator.makeVideo("article_"+i+"_.mp4", new File("images/article_"+i+".jpg"), new File("images/preview_article_"+i+".jpg"), new File("08.wav"), MIN_FRAME_COUNT, MAX_FRAME_COUNT);
-					File image = new File("images/article_"+i+".jpg");
-					File video = new File("article_"+i+"_.mp4");
-					log.info(String.format("Image file %s; size %s; video bitrate %.0f; compression rate: %.3f", image.getName(), image.length(), (double)(video.length()/MAX_FRAME_COUNT), (double)(MAX_FRAME_COUNT*image.length())/video.length()));
-					System.out.println(String.format("Image file %s; size %s; video bitrate %.0f; compression rate: %.3f", image.getName(), image.length(), (double)(8*video.length()/MAX_FRAME_COUNT), (double)(MAX_FRAME_COUNT*image.length())/video.length()));
+					image = new File("images/article_"+i+".jpg");
+					video = new File("article_"+i+"_.mp4");
+					log.info(String.format("Image file %s; size %s; video bitrate %.0f(%.0f); compression rate: %.3f", image.getName(), image.length(), (double)(video.length()/MAX_FRAME_COUNT),(double)(8*video.length()/MAX_FRAME_COUNT), (double)(MAX_FRAME_COUNT*image.length())/video.length()));
+					System.out.println(String.format("Image file %s; size %s; video bitrate %.0f(%.0f); compression rate: %.3f", image.getName(), image.length(), (double)(video.length()/MAX_FRAME_COUNT),(double)(8*video.length()/MAX_FRAME_COUNT), (double)(MAX_FRAME_COUNT*image.length())/video.length()));
+					image = null;
+					video = null;
 				}
 			}
 			VideoCreator.makeVideo("article_6_.mp4", new File("images/article_6.jpg"), new File("images/preview_article_6.jpg"), new File("08.wav"), MIN_FRAME_COUNT, MAX_FRAME_COUNT);
@@ -112,14 +115,30 @@ public class VideoCreator {
 	 * @return
 	 * @throws IOException
 	 */
-	public static Integer[] makeVideo(String filePath, File imageFile, File previewFile, File audioFile, int minDur, int maxDur) throws IOException {
+	public static Integer[] makeVideo(String filePath, File imageFile, File previewFile, File audioFile, int minDur, int maxDur) throws IOException{
+		int framePerSec = calculateFrameRate(imageFile);
+		return makeVideo(filePath, imageFile, previewFile, audioFile, minDur, maxDur, framePerSec);
+	}
+
+	/**
+	 * 
+	 * @param filePath
+	 * @param imageFile
+	 * @param previewFile
+	 * @param audioFile
+	 * @param minDur
+	 * @param maxDur - will be displayed as total value of video;
+	 * @return
+	 * @throws IOException
+	 */
+	public static Integer[] makeVideo(String filePath, File imageFile, File previewFile, File audioFile, int minDur, int maxDur, int framePerSec) throws IOException {
 
 		long startTime = System.currentTimeMillis();
-		final IMediaWriter writer = ToolFactory.makeWriter(filePath);
+		IMediaWriter writer = ToolFactory.makeWriter(filePath);
 
 		Random rnd = new Random();
 		//int framePerSec = 1;
-		int framePerSec = calculateFrameRate(imageFile);
+		
 		int frameCount = (minDur + rnd.nextInt(maxDur-minDur))*framePerSec;
 
 		writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, 1080, 720);
@@ -131,16 +150,21 @@ public class VideoCreator {
 
 		int audioStreamt = 0;
 
+		IStream stream = null;
+		IStreamCoder code = null;
+		
 		for(int i=0; i<containerAudio.getNumStreams(); i++){
-			IStream stream = containerAudio.getStream(i);
-			IStreamCoder code = stream.getStreamCoder();
+			stream = containerAudio.getStream(i);
+			code = stream.getStreamCoder();
 
 			if(code.getCodecType() == ICodec.Type.CODEC_TYPE_AUDIO)
 			{
 				audioStreamt = i;
 				break;
 			}
-
+			
+			stream = null;
+			code = null;
 		}
 		IStreamCoder audioCoder = containerAudio.getStream(audioStreamt).getStreamCoder();
 		audioCoder.open();
@@ -150,12 +174,15 @@ public class VideoCreator {
 		IAudioSamples samples = IAudioSamples.make(audioCoder.getSampleRate(), audioCoder.getChannels(),IAudioSamples.Format.FMT_S32);  
 
 		IPacket packetaudio = IPacket.make();
+		
+		int bytesDecodedaudio = -1;
+		int offset = 0;
 
 		while(containerAudio.readNextPacket(packetaudio) >= 0){
-			int offset = 0;
+			offset = 0;
 			while(offset<packetaudio.getSize())
 			{
-				int bytesDecodedaudio = audioCoder.decodeAudio(samples, 
+				bytesDecodedaudio = audioCoder.decodeAudio(samples, 
 						packetaudio,
 						offset);
 				if (bytesDecodedaudio < 0)
@@ -167,13 +194,17 @@ public class VideoCreator {
 				}
 			}
 		}
+		
+		packetaudio = null;
 
 		//for (int index = 0; index < SECONDS_TO_RUN_FOR * FRAME_RATE; index++) {
 		BufferedImage screen = ImageIO.read(imageFile);
 		BufferedImage bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
-
+		screen = null;
+		
 		BufferedImage screen2 = ImageIO.read(previewFile);
 		BufferedImage bgrScreen2 = convertToType(screen2, BufferedImage.TYPE_3BYTE_BGR);
+		screen2 = null;
 
 		for(long i = 0; i < frameCount-2*framePerSec; i++){
 			writer.encodeVideo(0, bgrScreen, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
@@ -183,6 +214,9 @@ public class VideoCreator {
 		}
 		writer.encodeVideo(0, bgrScreen2, ((frameCount*1000)/framePerSec)-1, TimeUnit.MILLISECONDS);
 
+		bgrScreen = null;
+		bgrScreen2 = null;
+		
 		/*for(long i = 1; i < frameCount-2*framePerSec; i++){
 			writer.encodeVideo(0, bgrScreen, i, TimeUnit.SECONDS);
 		}
@@ -206,22 +240,25 @@ public class VideoCreator {
 		containerAudio.release();*/
 		audioCoder.close();
 		containerAudio.close();
+		audioCoder = null;
+		containerAudio = null;
+		writer = null;
 
 		log.debug(String.format("Video Created: %s",filePath));
 		long endTime = System.currentTimeMillis();
 		log.debug(String.format("File for %s was generated for %s second(s)", imageFile.getName(), ((endTime-startTime)/1000)));
 
-		return new Integer[]{frameCount, framePerSec};
+		return new Integer[]{frameCount, framePerSec, framePerSec};
 	}
 
 	private static int calculateFrameRate(File inputFile){
 		long bitRate = 0;
 
-		for(int i = 1; i < 30; i++){
-			bitRate = (inputFile.length()*8*i*100)/1200;
+		for(int i = 8; i <= 32; i*=2){
+			bitRate = (inputFile.length()*8*i*100)/1500;
 			if(bitRate > successBitrate){
-				log.debug("Calculated bitrate: " + bitRate);
-				System.out.println("Calculated bitrate: " + bitRate);
+				log.debug(String.format("Calculated bitrate: %d, frameRate: %d",bitRate, i));
+				System.out.println(String.format("Calculated bitrate: %d, frameRate: %d",bitRate, i));
 				return i;
 			}
 		}
@@ -239,14 +276,6 @@ public class VideoCreator {
 		g.scale(scaleFactor, scaleFactor);
 		g.drawImage(sourceImage, (int)Math.round(sclSz[0]/scaleFactor), (int)Math.round(sclSz[1]/scaleFactor), sourceImage.getWidth(), sourceImage.getHeight(), null);
 		g.dispose();
-		g.setComposite(AlphaComposite.Src);
-
-		g.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
-		RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-		g.setRenderingHint(RenderingHints.KEY_RENDERING,
-		RenderingHints.VALUE_RENDER_QUALITY);
-		g.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-		RenderingHints.VALUE_ANTIALIAS_ON);
 		return image;
 	}
 
@@ -288,125 +317,5 @@ public class VideoCreator {
 		}
 
 		return scaleSizes;
-	}
-
-	public static void mergeVideoAndAudio(String videoFilePath, String audioFilePath, String outputFilePath)
-	{
-		IMediaWriter mWriter = ToolFactory.makeWriter(outputFilePath); //output file
-
-		IContainer containerVideo = IContainer.make();
-		IContainer containerAudio = IContainer.make();
-
-		if (containerVideo.open(videoFilePath, IContainer.Type.READ, null) < 0)
-			throw new IllegalArgumentException("Cant find " + videoFilePath);
-
-		if (containerAudio.open(audioFilePath, IContainer.Type.READ, null) < 0)
-			throw new IllegalArgumentException("Cant find " + audioFilePath);
-
-		int numStreamVideo = containerVideo.getNumStreams();
-		int numStreamAudio = containerAudio.getNumStreams();
-
-		System.out.println("Number of video streams: "+numStreamVideo + "\n" + "Number of audio streams: "+numStreamAudio );
-
-		int videostreamt = -1; //this is the video stream id
-		int audiostreamt = -1;
-
-		IStreamCoder  videocoder = null;
-
-		for(int i=0; i<numStreamVideo; i++){
-			IStream stream = containerVideo.getStream(i);
-			IStreamCoder code = stream.getStreamCoder();
-
-			if(code.getCodecType() == ICodec.Type.CODEC_TYPE_VIDEO)
-			{
-				videostreamt = i;
-				videocoder = code;
-				break;
-			}
-
-		}
-
-		for(int i=0; i<numStreamAudio; i++){
-			IStream stream = containerAudio.getStream(i);
-			IStreamCoder code = stream.getStreamCoder();
-
-			if(code.getCodecType() == ICodec.Type.CODEC_TYPE_AUDIO)
-			{
-				audiostreamt = i;
-				break;
-			}
-
-		}
-
-		if (videostreamt == -1) throw new RuntimeException("No video steam found");
-		if (audiostreamt == -1) throw new RuntimeException("No audio steam found");
-
-		if(videocoder.open()<0 ) 
-			throw new RuntimeException("Cant open video coder");
-
-		IPacket packetvideo = IPacket.make();
-
-		IStreamCoder audioCoder = containerAudio.getStream(audiostreamt).getStreamCoder();
-
-		if(audioCoder.open()<0 ) 
-			throw new RuntimeException("Cant open audio coder");
-
-		mWriter.addAudioStream(1, 1, audioCoder.getChannels(), audioCoder.getSampleRate());
-
-		mWriter.addVideoStream(0, 0, videocoder.getWidth(), videocoder.getHeight());
-
-		IPacket packetaudio = IPacket.make();
-
-		while(containerVideo.readNextPacket(packetvideo) >= 0 ||
-				containerAudio.readNextPacket(packetaudio) >= 0){
-
-			if(packetvideo.getStreamIndex() == videostreamt){
-
-				//video packet
-				IVideoPicture picture = IVideoPicture.make(videocoder.getPixelType(),
-						videocoder.getWidth(),
-						videocoder.getHeight());
-				int offset = 0;
-				while (offset < packetvideo.getSize()){
-					int bytesDecoded = videocoder.decodeVideo(picture, 
-							packetvideo, 
-							offset);
-					if(bytesDecoded < 0) throw new RuntimeException("bytesDecoded not working");
-					offset += bytesDecoded;
-
-					if(picture.isComplete()){
-						System.out.println(picture.getPixelType());
-						mWriter.encodeVideo(0, picture);
-
-					}
-				}
-			} 
-
-			if(packetaudio.getStreamIndex() == audiostreamt){   
-				//audio packet
-
-				IAudioSamples samples = IAudioSamples.make(512, 
-						audioCoder.getChannels(),
-						IAudioSamples.Format.FMT_S32);  
-				int offset = 0;
-				while(offset<packetaudio.getSize())
-				{
-					int bytesDecodedaudio = audioCoder.decodeAudio(samples, 
-							packetaudio,
-							offset);
-					if (bytesDecodedaudio < 0)
-						throw new RuntimeException("could not detect audio");
-					offset += bytesDecodedaudio;
-
-					if (samples.isComplete()){
-						mWriter.encodeAudio(1, samples);
-
-					}
-				}
-			}
-		}
-
-		mWriter.flush();
-		mWriter.close();
 	}
 }

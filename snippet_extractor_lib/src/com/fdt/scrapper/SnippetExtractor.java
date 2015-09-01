@@ -299,6 +299,7 @@ public class SnippetExtractor {
 		}finally{
 			if(proxyConnector != null){
 				proxyFactory.releaseProxy(proxyConnector);
+				proxyConnector = null;
 			}
 		}
 
@@ -323,6 +324,9 @@ public class SnippetExtractor {
 				}
 			}
 		}
+		
+		titles = null;
+		descs = null;
 
 		return snippets;
 	}
