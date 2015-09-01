@@ -244,9 +244,9 @@ public class VideoCreator {
 		containerAudio = null;
 		writer = null;
 
-		log.debug(String.format("Video Created: %s",filePath));
+		log.info(String.format("Video Created: %s",filePath));
 		long endTime = System.currentTimeMillis();
-		log.debug(String.format("File for %s was generated for %s second(s)", imageFile.getName(), ((endTime-startTime)/1000)));
+		log.info(String.format("File for %s was generated for %s second(s)", imageFile.getName(), ((endTime-startTime)/1000)));
 
 		return new Integer[]{frameCount, framePerSec, framePerSec};
 	}

@@ -233,7 +233,7 @@ public class VideoTaskRunner {
 		//while(outputFolder.listFiles().length > 0){
 			for(File file: outputFolder.listFiles()){
 				try {
-					log.debug("Delete video file: " + file.getName());
+					log.info("Delete video file: " + file.getName());
 					/*File newFile = new File(file.getPath() + "_delete_me");
 					FileUtils.moveFile(file, newFile);*/
 					FileUtils.forceDelete(file);
@@ -256,14 +256,14 @@ public class VideoTaskRunner {
 		BufferedWriter bufferedWriter = null;
 
 		try {
-			log.debug("Starting saving unused account...");
+			log.info("Starting saving unused account...");
 			//Construct the BufferedWriter object
 			bufferedWriter = new BufferedWriter(new FileWriter(accListFilePath,false));
 			for(Account account : accounts.values()){
 				bufferedWriter.write(account.toString());
 				bufferedWriter.newLine();
 			}
-			log.debug("Unused accounts was saved successfully.");
+			log.info("Unused accounts was saved successfully.");
 
 		} catch (FileNotFoundException ex) {
 			log.error("Error occured during saving sucess result",ex);

@@ -112,6 +112,11 @@ public class NewsPoster {
 			writer.close();
 			os.close();
 
+			if(conn.getResponseCode() == 401){
+				account.getAccountFactory().rejectAccount(account);
+				throw new Exception(String.format("Account %s lost the login data. Account will rejected",account.getLogin()));
+			}
+			
 			StringBuilder responseStr = getResponseAsString(conn);
 
 			//log.debug(responseStr.toString());
@@ -292,7 +297,7 @@ public class NewsPoster {
 		while(status[0].equalsIgnoreCase("processing")){
 			//check for rejection
 			if(!account.getAccountFactory().isAccountRejected(account) && progress < 100){
-				log.debug("Responce download string for video ID:" + videoId + " : " + respStr);
+				log.info("Responce download string for video ID:" + videoId + " : " + respStr);
 				Thread.sleep(5000L);
 				respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/" + videoId + "\",\"args\":{\"fields\":\"status,encoding_progress\"},\"id\":0}]");
 				status = getUploadStatus(respStr);
@@ -443,7 +448,7 @@ public class NewsPoster {
 
 				StringBuilder responseStr = getResponseAsString(conn);
 				if(respCode == 200){
-					log.debug(responseStr.toString());
+					log.info(responseStr.toString());
 					JSONObject jsonObj = new JSONObject(responseStr.toString());
 					videoPostedUrl = (String)jsonObj.getString("url");
 					postVideo(videoPostedUrl, videoId);
@@ -593,7 +598,7 @@ public class NewsPoster {
 			// Execute HTTP Post Request
 			responseStr = getResponseAsString(conn);
 
-			log.debug("Set view responce string: " + responseStr.toString());
+			log.info("Set preview responce string: " + responseStr.toString());
 		}finally{
 			if(conn != null){
 				conn.disconnect();

@@ -283,7 +283,7 @@ public class AccountFactory
 		//check for account excluding
 		if(accountUsedInThreadCount.get(account.getLogin()) == 0 && newsPostedCount.get(account.getLogin()) >= NEWS_PER_ACCOUNT){
 			accounts.remove(account.getLogin());
-			log.warn(String.format("Account %s was excluded from requet at all",account.getLogin()));
+			log.warn(String.format("Account %s was excluded from request at all",account.getLogin()));
 		}
 	}
 	
