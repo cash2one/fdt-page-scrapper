@@ -47,7 +47,7 @@ public class AccountFactory
 	private static int NEWS_PER_ACCOUNT = 200;
 
 	private ProxyFactory proxyFactory = null;
-	
+
 	//contain rejected account's login - rejection time
 	private Map<String, Long> rejectedAccount = new HashMap<String, Long>();
 	private Long NOT_REJECT_TIME = 900000L;
@@ -96,9 +96,9 @@ public class AccountFactory
 				log.warn("Error while initializtion", e);
 			}
 		}
-		
+
 		log.debug("Total account count: " + accounts.size());
-		
+
 		//getting cookie for each account
 		try {
 			ArrayList<Account> accountToRemove = new ArrayList<Account>();
@@ -106,9 +106,9 @@ public class AccountFactory
 			for(Account account : accounts.values())
 			{
 				executerequestToGetCookies(Constants.getInstance().getProperty(MAIN_URL_LABEL) + "/ru", "GET", proxy, null, account);
-				
+
 				executerequestToGetCookies( Constants.getInstance().getProperty(MAIN_URL_LABEL) + "/pageitem/authenticationContainer?request=/login?&from_request=%2Fru&_csrf_l=" + account.getCookie("_csrf/link"), "GET", proxy, null, account);
-				
+
 				String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL);
 				URL url = new URL(postUrl);
 				HttpURLConnection.setFollowRedirects(false);
@@ -134,7 +134,7 @@ public class AccountFactory
 				nameValuePairs.add(new BasicNameValuePair("_fid", ""));
 				nameValuePairs.add(new BasicNameValuePair("authChoice", "login"));
 				nameValuePairs.add(new BasicNameValuePair("from_request", "/RedBull"));
-				
+
 				OutputStream os = conn.getOutputStream();
 				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
 				writer.write(getQuery(nameValuePairs));
@@ -169,9 +169,9 @@ public class AccountFactory
 				InputStream inputStreamPage = null;
 
 				TagNode html = null;
-			
+
 				html = cleaner.clean(is,"UTF-8");
-				
+
 				conn.disconnect();
 			}
 			proxyFactory.releaseProxy(proxy);
@@ -185,10 +185,10 @@ public class AccountFactory
 			log.error("Error during filling account from list and getting cookies for account",e);
 			throw e;
 		}
-		
+
 		log.debug("Success account count: " + accounts.size());
 	}
-	
+
 	private void executerequestToGetCookies(String postUrl, String requestMethod, ProxyConnector proxy, String postParams, Account account) throws IOException, XPathExpressionException{
 
 		//post news
@@ -223,7 +223,7 @@ public class AccountFactory
 		}
 
 		Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
-		
+
 		int code = conn.getResponseCode();
 
 		if(cookies.get("Set-Cookie") != null){
@@ -242,13 +242,15 @@ public class AccountFactory
 
 	public synchronized Account getAccount(){
 		for(String login : accountUsedInThreadCount.keySet()){
-			int runningCount = accountUsedInThreadCount.get(login);
-			int postedCount = newsPostedCount.get(login);
-			if( runningCount < (NEWS_PER_ACCOUNT-postedCount)){
-				int currentCount = accountUsedInThreadCount.get(login);
-				accountUsedInThreadCount.put(login, ++currentCount);
-				log.trace("Used account size incremented: " + currentCount);
-				return accounts.get(login);
+			if(!rejectedAccount.containsKey(login)){
+				int runningCount = accountUsedInThreadCount.get(login);
+				int postedCount = newsPostedCount.get(login);
+				if( runningCount < (NEWS_PER_ACCOUNT-postedCount)){
+					int currentCount = accountUsedInThreadCount.get(login);
+					accountUsedInThreadCount.put(login, ++currentCount);
+					log.trace("Used account size incremented: " + currentCount);
+					return accounts.get(login);
+				}
 			}
 		}
 		return null;
@@ -279,14 +281,14 @@ public class AccountFactory
 		count--;
 		accountUsedInThreadCount.put(account.getLogin(), count);
 		log.debug("Used account size decremented: " + count);
-		
+
 		//check for account excluding
 		if(accountUsedInThreadCount.get(account.getLogin()) == 0 && newsPostedCount.get(account.getLogin()) >= NEWS_PER_ACCOUNT){
 			accounts.remove(account.getLogin());
 			log.warn(String.format("Account %s was excluded from request at all",account.getLogin()));
 		}
 	}
-	
+
 	/**
 	 * Release account using
 	 * @param account
@@ -326,17 +328,17 @@ public class AccountFactory
 
 		return result.toString();
 	}
-	
+
 	public HashMap<String, Account> getAccounts(){
 		return accounts;
 	}
-	
+
 	public void rejectAccount(Account account){
 		if(!rejectedAccount.containsKey(account.getLogin())){
 			rejectedAccount.put(account.getLogin(), System.currentTimeMillis());
 		}
 	}
-	
+
 	public boolean isAccountRejected(Account account){
 		long curTime = System.currentTimeMillis();
 		if(!rejectedAccount.containsKey(account.getLogin()) || ((rejectedAccount.get(account.getLogin()) + NOT_REJECT_TIME) > curTime) ){
