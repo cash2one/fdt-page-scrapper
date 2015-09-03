@@ -148,17 +148,18 @@ public class ImgurTaskFactory {
 			int localTaskCount = taskCount;
 			List<ImgurTask> tasks = null;
 			List<ImgurPromoTask> promoTasks = null;
-			if(runThreadsCount < MAX_THREAD_COUNT){
+			if(runThreadsCount < MAX_THREAD_COUNT && !isTaskFactoryEmpty()){
 				allTasks = new Object[2]; 
 				//get simple file tasks
 				tasks = new ArrayList<ImgurTask>();
 
+				localTaskCount = taskCount;
 				if(taskQueue.size() < taskCount){
 					localTaskCount = taskQueue.size();
 				}
 
 				for(int i = 0; i < localTaskCount; i++){
-					if(!isTaskFactoryEmpty()){
+					if(!isSimpleTaskFactoryEmpty()){
 						tasks.add(taskQueue.remove(rnd.nextInt(taskQueue.size())));
 					}
 				}
@@ -167,13 +168,14 @@ public class ImgurTaskFactory {
 
 				//get simple file tasks
 				promoTasks = new ArrayList<ImgurPromoTask>();
-
+				
+				localTaskCount = taskCount;
 				if(promoTaskQueue.size() < taskCount){
 					localTaskCount = promoTaskQueue.size();
 				}
 
 				for(int i = 0; i < localTaskCount; i++){
-					if(!isTaskFactoryEmpty()){
+					if(!isPromoTaskFactoryEmpty()){
 						promoTasks.add(promoTaskQueue.remove(rnd.nextInt(promoTaskQueue.size())));
 					}
 				}
@@ -186,7 +188,15 @@ public class ImgurTaskFactory {
 	}
 
 	public synchronized boolean isTaskFactoryEmpty() {
+		return taskQueue.isEmpty() && promoTaskQueue.isEmpty();
+	}
+	
+	public synchronized boolean isSimpleTaskFactoryEmpty() {
 		return taskQueue.isEmpty();
+	}
+	
+	public synchronized boolean isPromoTaskFactoryEmpty() {
+		return promoTaskQueue.isEmpty();
 	}
 
 	public synchronized void fillTaskQueue(File[] fileList) throws Exception{

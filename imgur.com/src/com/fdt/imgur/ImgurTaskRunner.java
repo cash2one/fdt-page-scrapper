@@ -42,6 +42,9 @@ public class ImgurTaskRunner {
 	private int maxThreadImgurCount;
 	
 	private int imgurPostPerProxy = 20;
+	
+	private Boolean loadFromPromo = true;
+	private Boolean loadFromFolder = true;
 
 	private Properties config = new Properties();
 
@@ -61,6 +64,9 @@ public class ImgurTaskRunner {
 	private final static String IMGUR_LIST_INPUT_FILE_PATH_LABEL = "imgur_list_input_file_path";
 	private final static String IMGUR_LIST_PROCESSED_FILE_PATH_LABEL = "imgur_list_processed_file_path";
 	private final static String IMGUR_ERROR_FILE_PATH_LABEL = "imgur_error_file_path";
+	
+	private final static String IMGUR_LOAD_FROM_FOLDER_LABEL = "imgur_load_from_folder";
+	private final static String IMGUR_LOAD_FROM_PROMO_LABEL = "imgur_load_from_promo";
 
 	private ImgurTaskFactory taskFactory;
 
@@ -82,6 +88,9 @@ public class ImgurTaskRunner {
 		this.maxThreadImgurCount = Integer.valueOf(Constants.getInstance().getProperty(IMGUR_MAX_THREAD_COUNT_LABEL));
 		
 		this.imgurPostPerProxy = Integer.valueOf(Constants.getInstance().getProperty(IMRUG_POST_PER_PROXY_LABEL));
+		
+		this.loadFromPromo = Boolean.valueOf(Constants.getInstance().getProperty(IMGUR_LOAD_FROM_PROMO_LABEL));
+		this.loadFromFolder= Boolean.valueOf(Constants.getInstance().getProperty(IMGUR_LOAD_FROM_FOLDER_LABEL));
 
 		Authenticator.setDefault(new Authenticator() {
 			@Override
@@ -121,8 +130,14 @@ public class ImgurTaskRunner {
 			taskFactory = ImgurTaskFactory.getInstance();
 			taskFactory.clear();
 			//taskFactory.loadTaskQueue(urlsFilePath);
-			taskFactory.fillTaskQueue(rootInputFiles.listFiles());
-			taskFactory.loadPromoFile(promoFile);
+			
+			if(loadFromFolder){
+				taskFactory.fillTaskQueue(rootInputFiles.listFiles());
+			}
+			
+			if(loadFromPromo){
+				taskFactory.loadPromoFile(promoFile);
+			}
 
 			ImgurThread newThread = null;
 			log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
