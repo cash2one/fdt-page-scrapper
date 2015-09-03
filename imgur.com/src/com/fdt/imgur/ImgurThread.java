@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
@@ -12,12 +13,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URL;
-import java.net.URLEncoder;
 import java.text.ParseException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,12 +29,12 @@ import javax.imageio.ImageIO;
 import javax.xml.xpath.XPathExpressionException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
-import org.htmlcleaner.HtmlCleaner;
-import org.htmlcleaner.TagNode;
 import org.htmlcleaner.XPatherException;
 import org.json.JSONObject;
 
+import com.fdt.imgur.task.IImgurTask;
 import com.fdt.imgur.task.ImgurPromoTask;
 import com.fdt.imgur.task.ImgurTask;
 import com.fdt.imgur.task.ImgurTaskFactory;
@@ -45,26 +47,31 @@ public class ImgurThread extends Thread{
 
 	private static final String LINE_FEED = "\r\n";
 
-	private final static String TINYURL_DOWNLOAD_URL_LABEL = "tinyurl_tinyurl_download_url";
-
 	private HashMap<String,String> cookie = new HashMap<String, String>();
 
-	private ImgurTask task;
-	private ImgurPromoTask promoTask;
+	private List<ImgurTask> inputTask;
+	private List<ImgurTask> successTask = new ArrayList<ImgurTask>();
+	private List<ImgurTask> errorTask = new ArrayList<ImgurTask>();
+	private List<ImgurTask> unprocessedTask = new ArrayList<ImgurTask>();
+
+	private List<ImgurPromoTask> inputPromoTask;
+	private List<ImgurPromoTask> successPromoTask = new ArrayList<ImgurPromoTask>();
+	private List<ImgurPromoTask> errorPromoTask = new ArrayList<ImgurPromoTask>();
+	private List<ImgurPromoTask> unprocessedPromoTask = new ArrayList<ImgurPromoTask>();
+
 	private ImgurTaskFactory taskFactory;
 	private ProxyFactory proxyFactory;
 	private String listProcessedFilePath;
+	private String errorProcessedFilePath;
 
-	private String firstFileString = "";
-
-	private String downloadUrl = "";
-
-	public ImgurThread(ImgurTask task, ImgurTaskFactory taskFactory, ProxyFactory proxyFactory, String listProcessedFilePath) {
-		this.task = task;
+	public ImgurThread(List<ImgurTask> inputTask, List<ImgurPromoTask> inputPromoTask, ImgurTaskFactory taskFactory, ProxyFactory proxyFactory, String listProcessedFilePath, String errorProcessedFilePath) 
+	{
+		this.inputTask = inputTask;
+		this.inputPromoTask = inputPromoTask;
 		this.taskFactory = taskFactory;
 		this.proxyFactory = proxyFactory;
 		this.listProcessedFilePath = listProcessedFilePath;
-		this.downloadUrl = Constants.getInstance().getProperty(TINYURL_DOWNLOAD_URL_LABEL);
+		this.errorProcessedFilePath = errorProcessedFilePath;
 	}
 
 	@Override
@@ -74,96 +81,175 @@ public class ImgurThread extends Thread{
 	}
 
 	@Override
-	public void run() {
-		ProxyConnector proxyConnector = null;
-		Proxy proxy;
-		
-		String imgurUrl = "";
+	public void run() 
+	{
+		ProxyConnector proxyConnector = proxyFactory.getProxyConnector();
+
 		synchronized (this) {
 			try{
-				boolean errorExist = false;
-				try {
-					proxyConnector = proxyFactory.getProxyConnector();
-					proxy = proxyConnector.getConnect(ProxyFactory.PROXY_TYPE);
-					executerequestToGetCookies("http://imgur.com/upload/start_session", "imgur.com", "GET", proxyConnector, null);
-					try{
-						imgurUrl = getImgurUrl(downloadUrl, proxy);
-					}
-					catch(Exception e){
-						log.error("Error occured during upload url. Program will try to upload file");
-						imgurUrl = "";
-					}
-					
-					if("".equals(imgurUrl)){
-						//start loading file to local folder and upload to imgur
-						if(loadImageFromWeb(task.getImageUrl(), task.getImageFormat())){
-							//TODO load file to imgur
+
+				int maxCount = Math.max(inputTask.size(), inputPromoTask.size());
+				ImgurTask imgurTask;
+				ImgurPromoTask imgurPromoTask;
+
+				for(int i = 0; i < maxCount; i++){
+
+					if(inputTask.size() > i){
+						imgurTask = inputTask.get(i);
+						if(processTask(imgurTask,proxyConnector)){
+							successTask.add(imgurTask);
 						}else{
-							//TODO throw error
+							errorTask.add(imgurTask);
 						}
 					}
-					
-					String fileAsStr = getFileAsString(task.getFile());
 
-					if( this.firstFileString == null || "".equals(firstFileString.trim()) ){
-						throw new Exception("Could not find first file string");
+					if(inputPromoTask.size() > i){
+						imgurPromoTask = inputPromoTask.get(i);
+						if(processPromoTask(imgurPromoTask,proxyConnector)){
+							successPromoTask.add(imgurPromoTask);
+						}else{
+							errorPromoTask.add(imgurPromoTask);
+						}
 					}
+				} 
+			}
+			catch(Exception e){
+				log.error("Error occured during processing: ", e);
+			}
+			finally	
+			{
+				for(ImgurTask task : inputTask){
+					if( !errorTask.contains(task) && !successTask.contains(task)){
+						unprocessedTask.add(task);
+					}
+				}
 
-					downloadUrl = this.downloadUrl + firstFileString.replaceAll("[\\.\\]\\[\\)\\(,+!#]*", "").trim().replaceAll("\\s", "+");
-
-					//TODO Get tinyurl
-
-
-					fileAsStr = fileAsStr.replaceAll("\\[KEYWORD\\]", imgurUrl);
-
-					appendStringToFile(fileAsStr, task.getFile());
-
-					//Move file to processed folder
-					File destFile = new File(listProcessedFilePath + "/" + task.getFile().getName());
+				for(ImgurTask task : errorTask){
+					//Move file to error folder
+					File destFile = new File(errorProcessedFilePath + "/" + task.getFile().getName());
 					if(destFile.exists()){
 						destFile.delete();
-					}
-					FileUtils.moveFile(task.getFile(), destFile);
-					/*if(task.isResultEmpty()){
-						proxyConnector = proxyFactory.getProxyConnector();
-						log.debug("Free proxy count: " + (proxyFactory.getFreeProxyCount()-1));
-						log.debug("Task (" + task.toString() +") is using proxy connection: " +proxyConnector.getProxyKey());
-						Proxy proxy = proxyConnector.getConnect();
-						NewsPoster ps;
-						ps = new NewsPoster(task, proxy, account, taskFactory, linkList);
-						String newsResult = ps.executePostNews();
-						task.setResult(newsResult);
-					}*/
 
-				}
-				catch (Exception e) {
-					errorExist = true;
-					taskFactory.reprocessingTask(task);
-					log.error("Error occured during process task: " + task.toString(), e);
-				}finally{
-					if(proxyConnector != null){
-						proxyFactory.releaseProxy(proxyConnector);
-						proxyConnector = null;
+						try {
+							FileUtils.moveFile(task.getFile(), destFile);
+						} catch (IOException e) {
+							log.error(String.format("Error occured during moving file (%s) to error folder", task.getFile().getName()));
+						}	
 					}
 				}
 
-				if(!errorExist){
-					taskFactory.putTaskInSuccessQueue(task);
+				for(ImgurPromoTask task : inputPromoTask){
+					if( !errorPromoTask.contains(task) && !successPromoTask.contains(task)){
+						unprocessedPromoTask.add(task);
+					}
 				}
 
-			} finally {
-				taskFactory.decRunThreadsCount(task);
+				if(proxyConnector != null){
+					proxyFactory.releaseProxy(proxyConnector);
+					proxyConnector = null;
+				}
+
+				taskFactory.decRunThreadsCount(unprocessedTask, unprocessedPromoTask);
 			}
 		}
+	}
+
+	private boolean processTask(ImgurTask task, ProxyConnector proxyConnector)
+	{
+		String imgurUrl = "";
+
+		try {
+			task.parseFile();
+			Proxy proxy = proxyConnector.getConnect(ProxyFactory.PROXY_TYPE);
+			executerequestToGetCookies("http://imgur.com/upload/start_session", "imgur.com", "GET", proxyConnector, null);
+
+			try{
+				imgurUrl = getImgurUrl(task, proxy);
+			}
+			catch(Exception e){
+				log.error("Error occured during upload url. Program will try to upload file");
+				imgurUrl = "";
+			}
+
+			if("".equals(imgurUrl)){
+				//start loading file to local folder and upload to imgur
+				if(loadImageFromWeb(task)){
+					//load file to imgur
+					imgurUrl = uploadVideo(task.getImageFile());
+				}else{
+					throw new Exception(String.format("Image file(%s) was not loaded from web", imgurUrl));
+				}
+			}
+
+			String fileAsStr = getFileAsString(task.getFile());
+
+			log.debug(String.format("Replace url(%s) with imgurUrl(%s)", task.getImageUrl(), imgurUrl));
+			fileAsStr = fileAsStr.replaceAll(task.getImageUrl(), imgurUrl);
+
+			appendStringToFile(fileAsStr, task.getFile(), false);
+
+			//Move file to processed folder
+			File destFile = new File(listProcessedFilePath + "/" + task.getFile().getName());
+			if(destFile.exists()){
+				destFile.delete();
+			}
+
+			FileUtils.moveFile(task.getFile(), destFile);
+
+			task.getFile().delete();
+			return true;
+		}
+		catch (Exception e) {
+			log.error("Error occured during process task: " + task.toString(), e);
+		}
+
+		return false;
+	}
+
+	private boolean processPromoTask(ImgurPromoTask task, ProxyConnector proxyConnector)
+	{
+		String imgurUrl = "";
+
+
+		try {
+			task.extractImage();
+			Proxy proxy = proxyConnector.getConnect(ProxyFactory.PROXY_TYPE);
+			executerequestToGetCookies("http://imgur.com/upload/start_session", "imgur.com", "GET", proxyConnector, null);
+
+			try{
+				imgurUrl = getImgurUrl(task, proxy);
+			}
+			catch(Exception e){
+				log.error(String.format("Error occured during upload url(%s). Program will try to upload file", task.getImageUrl()));
+				imgurUrl = "";
+			}
+
+			if("".equals(imgurUrl)){
+				//start loading file to local folder and upload to imgur
+				if(loadImageFromWeb(task)){
+					//load file to imgur
+					imgurUrl = uploadVideo(task.getImageFile());
+				}else{
+					throw new Exception(String.format("Image file(%s) was not loaded from web", imgurUrl));
+				}
+			}
+
+			log.debug(String.format("Generate for url(%s) new imgur Url(%s)", task.getImageUrl(), imgurUrl));
+			appendStringToFile(imgurUrl, new File("promo_success.txt"), true);
+
+			return true;
+		}
+		catch (Exception e) {
+			log.error("Error occured during process promo task: " + task.toString(), e);
+		}
+
+		return false;
 	}
 
 	private String getFileAsString(File file) throws Exception{
 		//read account list
 		FileReader fr = null;
 		BufferedReader br = null;
-		boolean isFirstLineSaved = false;
-
-		this.firstFileString = "";
 
 		StringBuilder fileAsStr = new StringBuilder();
 
@@ -173,10 +259,6 @@ public class ImgurThread extends Thread{
 
 			String line;
 			while( (line = br.readLine()) != null){
-				if(!isFirstLineSaved){
-					firstFileString = line;
-					isFirstLineSaved = true;
-				}
 				fileAsStr.append(line).append(LINE_FEED);
 			}
 		}
@@ -198,32 +280,27 @@ public class ImgurThread extends Thread{
 		return fileAsStr.toString();
 	}
 
-	public ImgurTask getTask(){
-		return task;
-	}
-
-	private boolean loadImageFromWeb(String imageUrl, String imageFormat) throws MalformedURLException, IOException{
+	private boolean loadImageFromWeb(IImgurTask task) throws MalformedURLException, IOException{
 		File imageFile;
-		BufferedImage img = ImageIO.read(new URL(imageUrl));
+		BufferedImage img = ImageIO.read(new URL(task.getImageUrl()));
 		//write image to file
-		imageFile = new File("images/"+getRndImageFilename() + "." + imageFormat);
+		imageFile = new File("images/"+getRndImageFilename() + "." + task.getImageFormat());
+		task.setImageFile(imageFile);
 		//this.videoFileWOAudio = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + "_wo_audio.mov");
-		return ImageIO.write(img, imageFormat, imageFile);
+		return ImageIO.write(img, task.getImageFormat(), task.getImageFile());
 	}
 
-	private String getImgurUrl(String downloadUrl, Proxy proxy) throws MalformedURLException, IOException, ParseException, XPatherException {
+	private String getImgurUrl(IImgurTask task, Proxy proxy) throws MalformedURLException, IOException, ParseException, XPatherException {
 		HttpURLConnection conn = null;
 		InputStream is = null;
-		System.out.println("Using proxy: " + proxy.toString());
+		log.trace("Using proxy: " + proxy.toString());
 		try{
 			String strUrl = "http://imgur.com/upload";
 			URL url = new URL(strUrl);
-			System.out.println(strUrl);
-			//using proxy
 			conn = (HttpURLConnection)url.openConnection(proxy);
 			conn.setConnectTimeout(30000);
 			conn.setDoInput(true);
-			conn.setDoOutput(false);
+			conn.setDoOutput(true);
 
 			OutputStream os = conn.getOutputStream();
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
@@ -232,11 +309,17 @@ public class ImgurThread extends Thread{
 			writer.close();
 			os.close();
 
+			int respCode = conn.getResponseCode();
+			
+			if(respCode != 200){
+				respCode = 0;
+			}
+			
 			String responseStr = getResponseAsString(conn).toString();
-			
-			JSONObject jsonObj = new JSONObject(responseStr.substring(1, responseStr.length()-1));
-			String uploadUrl = jsonObj.getJSONObject("data").getString("upload_url");
-			
+
+			JSONObject jsonObj = new JSONObject(responseStr);
+			String uploadUrl = "http://i.imgur.com/" + jsonObj.getJSONObject("data").getString("hash") + "." + task.getImageFormat();
+
 			return uploadUrl;
 		}finally{
 			if(conn != null){
@@ -248,12 +331,12 @@ public class ImgurThread extends Thread{
 		}
 	}
 
-	private void appendStringToFile(String str, File file) {
+	private void appendStringToFile(String str, File file, boolean append) {
 		BufferedWriter bufferedWriter = null;
 		try {
 			//Construct the BufferedWriter object
 			bufferedWriter = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(file), "UTF8"));
+					new FileOutputStream(file,append), "UTF8"));
 			bufferedWriter.append(str);
 			bufferedWriter.newLine();
 		} catch (FileNotFoundException ex) {
@@ -305,13 +388,12 @@ public class ImgurThread extends Thread{
 			}
 			conn.setDoInput(true);
 
-			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-			conn.setRequestProperty("X-Requested-With","XMLHttpRequest");
-			//conn.setRequestProperty("Cookie", account.getCookies());
 			conn.setRequestProperty("Host", mainUrl);
-			conn.setRequestProperty("Referer", "http://" + mainUrl);
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0");
+			conn.setRequestProperty("Accept", "application/json, text/javascript, */*; q=0.01");
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("X-Requested-With","XMLHttpRequest");
+			//conn.setRequestProperty("Referer", "http://" + mainUrl);
 
 			if(requestMethod.equalsIgnoreCase("POST") && postParams != null){
 				OutputStream os = conn.getOutputStream();
@@ -322,6 +404,7 @@ public class ImgurThread extends Thread{
 				os.close();
 			}
 
+			//conn.getInputStream();
 			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
 
 			int code = conn.getResponseCode();
@@ -377,7 +460,7 @@ public class ImgurThread extends Thread{
 
 		return params.toString();
 	}
-	
+
 	private StringBuilder getResponseAsString(HttpURLConnection conn)
 			throws IOException {
 		InputStream is = conn.getInputStream();
@@ -391,5 +474,124 @@ public class ImgurThread extends Thread{
 		}
 		is.close();
 		return responseStr;
+	}
+
+	private String uploadVideo(File uploadFile) throws Exception{
+
+		String postUrl = "http://imgur.com/upload";
+
+		//post news
+		String boundary = "----------" + System.currentTimeMillis();
+
+		URL url = new URL(postUrl);
+		HttpURLConnection.setFollowRedirects(false);
+		//HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		conn.setReadTimeout(60000);
+		conn.setConnectTimeout(300000);
+		conn.setRequestMethod("POST");
+		conn.setDoInput(true);
+		conn.setDoOutput(true);
+
+		conn.setRequestProperty("Host", "imgur.com");
+		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0"); 
+		conn.setRequestProperty("Accept", "application/json, text/javascript, */*; q=0.01");
+		conn.setRequestProperty("Cookie", getCookieString());
+		conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+		conn.setRequestProperty("Content-Type", "multipart/form-data; boundary=" + boundary);
+		conn.setRequestProperty("Pragma","no-cache");
+
+		OutputStream outputStream;
+		outputStream = conn.getOutputStream();
+
+		PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
+
+		writer.append(LINE_FEED).append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"current_upload\"").append(LINE_FEED).append(LINE_FEED);;
+		writer.append("1").append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"total_uploads\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("1").append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"terms\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("0").append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"gallery_type\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("").append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"gallery_submit\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("0").append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"create_album\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("0").append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"album_title\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("Optional Album Title").append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"layout\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("b").append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"sid\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append(getCookie("IMGURSESSION")).append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"Filedata\"; filename=\"" + uploadFile.getName() + "\"").append(LINE_FEED);
+		writer.append("Content-Type: image/" + FilenameUtils.getBaseName(uploadFile.getName())).append(LINE_FEED).append(LINE_FEED);
+
+		writer.flush();
+
+		FileInputStream inputStream = new FileInputStream(uploadFile);
+		byte[] buffer = new byte[4096];
+		int bytesRead = -1;
+		while ((bytesRead = inputStream.read(buffer)) != -1) {
+			outputStream.write(buffer, 0, bytesRead);
+		}
+		outputStream.flush();
+		inputStream.close();
+
+		writer.append(LINE_FEED);
+		writer.append("--" + boundary + "--").append(LINE_FEED);
+		/*writer.append("Content-Disposition: form-data; name=\"Upload\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("Submit Query").append(LINE_FEED);
+		writer.append("--" + boundary + "--");//.append(LINE_FEED).append(LINE_FEED);
+		writer.flush();*/
+
+		writer.flush();  
+		writer.close();
+
+		/*FileBody fileBody = new FileBody(uploadFile);
+		MultipartEntity multipartEntity = new MultipartEntity(HttpMultipartMode.STRICT);
+		multipartEntity.addPart("file", fileBody);
+		multipartEntity.addPart("Filename", new StringBody(uploadFile.getName()));*/
+		//multipartEntity.addPart("Filename", "temp_video_audio.mov");
+
+		try {
+			//multipartEntity.writeTo(outputStream);
+		} finally {
+			outputStream.flush();
+			outputStream.close();
+		}
+
+		StringBuilder responseStr = getResponseAsString(conn);
+
+		//log.debug(responseStr.toString());
+
+		conn.disconnect();
+
+		JSONObject jsonObj = new JSONObject(responseStr.toString());
+		String imageUrl = "http://i.imgur.com/" + (String)jsonObj.getJSONObject("data").getString("hash") + "." + FilenameUtils.getExtension(uploadFile.getName());
+
+		//link uploaded video to user
+
+		//Edit video description 
+		return imageUrl;
 	}
 }

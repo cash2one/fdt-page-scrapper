@@ -1,30 +1,27 @@
 package com.fdt.imgur.task;
 
-import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import javax.imageio.ImageIO;
 
 import org.apache.log4j.Logger;
 
 
-public class ImgurTask{
+public class ImgurTask implements IImgurTask{
 
 	private static final Logger log = Logger.getLogger(ImgurTask.class);
 
 	private static final String LINE_FEED = "\r\n";
 
 	private File file;
+	private File imageFile;
 	private String imageUrl;
 	private String imageFormat;
+	
+	private String uploadUrl;
+	
 	private int attempsCount = 1;
 
 	public ImgurTask(File file) throws Exception {
@@ -36,6 +33,22 @@ public class ImgurTask{
 		return file;
 	}
 	
+	public File getImageFile() {
+		return imageFile;
+	}
+
+	public void setImageFile(File imageFile) {
+		this.imageFile = imageFile;
+	}
+	
+	public String getUploadUrl() {
+		return uploadUrl;
+	}
+
+	public void setUploadUrl(String uploadUrl) {
+		this.uploadUrl = uploadUrl;
+	}
+
 	public int getAttempsCount() {
 		return attempsCount;
 	}
@@ -68,30 +81,15 @@ public class ImgurTask{
 		StringBuilder fileAsStr = new StringBuilder();
 
 		try {
-			/*int lineIndex = 0;
 			fr = new FileReader(file);
 			br = new BufferedReader(fr);
 
 			String line;
 			while( (line = br.readLine()) != null){
 				fileAsStr.append(line).append(LINE_FEED);
-				if(!"".equals(line)){
-					lineIndex++;
-					switch(lineIndex){
-					case 1:{
-						key = line.trim();
-						break;
-					}
-					case 2:{
-						videoTitle = line.trim();
-						break;
-					}
-					}
-				}
 			}
-*/
 
-			log.debug("File content: " + fileAsStr.toString());
+			log.trace("File content: " + fileAsStr.toString());
 			extractImage(fileAsStr.toString());
 		}
 		finally {
@@ -119,7 +117,7 @@ public class ImgurTask{
 			imageUrl = matcher.group(1);
 			imageFormat = matcher.group(5);
 		}else{
-			throw new Exception("Image URL NOT found");
+			throw new Exception("Image URL NOT found in file: " + file.getName());
 		}
 	}
 	

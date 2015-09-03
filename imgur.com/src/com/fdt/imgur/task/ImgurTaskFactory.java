@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import org.apache.log4j.Logger;
@@ -51,6 +52,12 @@ public class ImgurTaskFactory {
 		taskQueue.clear();
 		successQueue.clear();
 		errorQueue.clear();
+		savedTaskList.clear();
+
+		promoTaskQueue.clear();
+		promoSuccessQueue.clear();
+		promoErrorQueue.clear();
+		promoSavedTaskList.clear();
 	}
 
 	public synchronized static Integer getMAX_THREAD_COUNT() {
@@ -80,7 +87,19 @@ public class ImgurTaskFactory {
 		log.debug("INC thread: " + runThreadsCount);
 	}
 
-	public synchronized void decRunThreadsCount(ImgurTask task) {
+	public synchronized void decRunThreadsCount(List<ImgurTask> unprocessedTask, List<ImgurPromoTask> promoUnprocessedTask) {
+		if(unprocessedTask != null){
+			for(ImgurTask task: unprocessedTask){
+				taskQueue.add(task);
+			}
+		}
+		
+		if(promoUnprocessedTask != null){
+			for(ImgurPromoTask task: promoUnprocessedTask){
+				promoTaskQueue.add(task);
+			}
+		}
+
 		runThreadsCount--;
 		log.debug("DEC thread: " + runThreadsCount);
 		this.notifyAll();
@@ -103,38 +122,6 @@ public class ImgurTaskFactory {
 	}
 
 	/**
-	 * Save request into TaskFactory
-	 * 
-	 * @param request
-	 */
-	public synchronized boolean reprocessingTask(ImgurTask task){
-		synchronized (this) {
-			if(task.getAttempsCount() < MAX_ATTEMP_COUNT){
-				task.incAttempsCount();
-				taskQueue.add(task);
-				log.info("Task returned to queue for reprocessing: " + task.toString());
-				return true;
-			}
-			else{
-				errorQueue.add(task);
-				log.error("Task was put to error queue: " + task.toString());
-				return false;
-			}
-		}
-	}
-
-	/**
-	 * Save request into TaskFactory
-	 * 
-	 * @param request
-	 */
-	public synchronized void putTaskInSuccessQueue(ImgurTask result){
-		synchronized (this) {
-			successQueue.add(result);
-		}
-	}
-
-	/**
 	 * return Request for running
 	 * 
 	 * @return
@@ -147,6 +134,54 @@ public class ImgurTaskFactory {
 				}
 			}
 			return null;
+		}
+	}
+
+	/**
+	 * return Request for running
+	 * 
+	 * @return
+	 */
+	public synchronized Object[] getTasks(int taskCount){
+		Object[] allTasks = null;
+		synchronized (this) {
+			int localTaskCount = taskCount;
+			List<ImgurTask> tasks = null;
+			List<ImgurPromoTask> promoTasks = null;
+			if(runThreadsCount < MAX_THREAD_COUNT){
+				allTasks = new Object[2]; 
+				//get simple file tasks
+				tasks = new ArrayList<ImgurTask>();
+
+				if(taskQueue.size() < taskCount){
+					localTaskCount = taskQueue.size();
+				}
+
+				for(int i = 0; i < localTaskCount; i++){
+					if(!isTaskFactoryEmpty()){
+						tasks.add(taskQueue.remove(rnd.nextInt(taskQueue.size())));
+					}
+				}
+				
+				allTasks[0] = tasks;
+
+				//get simple file tasks
+				promoTasks = new ArrayList<ImgurPromoTask>();
+
+				if(promoTaskQueue.size() < taskCount){
+					localTaskCount = promoTaskQueue.size();
+				}
+
+				for(int i = 0; i < localTaskCount; i++){
+					if(!isTaskFactoryEmpty()){
+						promoTasks.add(promoTaskQueue.remove(rnd.nextInt(promoTaskQueue.size())));
+					}
+				}
+				
+				allTasks[1] = promoTasks;
+			}
+
+			return allTasks;
 		}
 	}
 
@@ -172,10 +207,11 @@ public class ImgurTaskFactory {
 			String line;
 			while( (line = br.readLine()) != null){
 				if(!"".equals(line)){
-					promoTaskQueue.add(new ImgurPromoTask(line));
+					promoTaskQueue.add(new ImgurPromoTask(line.trim()));
 				}
 			}
 		}
+
 		finally {
 			try {
 				if(br != null)
