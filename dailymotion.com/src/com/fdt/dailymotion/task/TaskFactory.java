@@ -1,6 +1,9 @@
 package com.fdt.dailymotion.task;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -147,6 +150,45 @@ public class TaskFactory {
 			taskQueue.add(new NewsTask(file, templateFile));
 		}
 	}
+	
+	public synchronized void fillTaskQueue(File file, File templateFile, File pregenFile) throws Exception{
+		for(String line : readFile(file)){
+			taskQueue.add(new NewsTask(line, templateFile, pregenFile));
+		}
+	}
+	
+	private ArrayList<String> readFile(File file) throws IOException{
+
+		FileReader fr = null;
+		BufferedReader br = null;
+		ArrayList<String> fileTitleList = new ArrayList<String>();
+
+		try {
+			fr = new FileReader(file);
+			br = new BufferedReader(fr);
+
+			String line = br.readLine();
+			while(line != null){
+				fileTitleList.add(line.trim());
+				line = br.readLine();
+			}
+
+			//fileTitleArray = fileTitleList.toArray(new String[fileTitleList.size()]);
+		} finally {
+			try {
+				if(br != null)
+					br.close();
+			} catch (Throwable e) {
+			}
+			try {
+				if(fr != null)
+					fr.close();
+			} catch (Throwable e) {
+			}
+		}
+
+		return fileTitleList;
+	} 
 
 	public synchronized ArrayList<NewsTask> getTaskQueue() {
 		return taskQueue;

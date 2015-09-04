@@ -56,6 +56,10 @@ public class VideoTaskRunner {
 	private String linkTitleListFilePath;
 
 	private TaskFactory taskFactory;
+	
+	private Boolean loadPreGenFile = false;
+	private File pregeneratedFile = null;
+	private File titleFile = null;
 
 	private final Random rnd = new Random();
 
@@ -82,6 +86,10 @@ public class VideoTaskRunner {
 	private static final String MIN_POST_PER_ACCOUNT_LABEL = "MIN_POST_PER_ACCOUNT";
 
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
+	
+	private final static String LOAD_PREGENERATED_FILE_LABEL = "load_pregenerated_file";
+	private final static String PREGENERATED_FILE_LABEL = "pregenerated_file";
+	private final static String TITLE_FILE_LABEL = "title_file";
 
 	private Integer MIN_SNIPPET_COUNT=5;
 	private Integer MAX_SNIPPET_COUNT=10;
@@ -107,6 +115,21 @@ public class VideoTaskRunner {
 		this.linkTitleListFilePath = Constants.getInstance().getProperty(LINK_TITLE_LIST_FILE_PATH_LABEL); 
 
 		this.maxThreadCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
+		
+		String loadPreGenFileValue = Constants.getInstance().getProperty(LOAD_PREGENERATED_FILE_LABEL);
+		if(loadPreGenFileValue != null && !"".equals(loadPreGenFileValue.trim())){
+			loadPreGenFile = Boolean.valueOf(loadPreGenFile);
+		}
+		
+		String pregenFileValue = Constants.getInstance().getProperty(PREGENERATED_FILE_LABEL);
+		if(pregenFileValue != null && !"".equals(pregenFileValue.trim())){
+			pregeneratedFile = new File(pregenFileValue);
+		}
+		
+		String titleFileValue = Constants.getInstance().getProperty(TITLE_FILE_LABEL);
+		if(titleFileValue != null && !"".equals(titleFileValue.trim())){
+			titleFile = new File(pregenFileValue);
+		}
 
 		this.taskFactory = TaskFactory.getInstance();
 
@@ -153,7 +176,12 @@ public class VideoTaskRunner {
 				taskFactory = TaskFactory.getInstance();
 				taskFactory.clear();
 				//taskFactory.loadTaskQueue(urlsFilePath);
-				taskFactory.fillTaskQueue(rootInputFiles.listFiles(), new File(this.templateFilePath));
+				if(!loadPreGenFile){
+					taskFactory.fillTaskQueue(rootInputFiles.listFiles(), new File(this.templateFilePath));
+				}else{
+					//TODO Load tasks from single file
+					taskFactory.fillTaskQueue(titleFile, new File(this.templateFilePath), pregeneratedFile);
+				}
 
 				File linkList = new File(linkListFilePath);
 				File linkTitleList = new File(linkTitleListFilePath);
@@ -189,7 +217,8 @@ public class VideoTaskRunner {
 									linkList, 
 									linkTitleList, 
 									this.listProcessedFilePath, 
-									this.errorFilePath
+									this.errorFilePath,
+									loadPreGenFile
 									);
 							newThread.start();
 							account = null;

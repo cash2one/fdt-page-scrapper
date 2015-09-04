@@ -47,6 +47,15 @@ public class NewsTask{
 		this.templateFile = templateFile;
 		//TODO Read and parse file
 	}
+	
+	public NewsTask(String key, File templateFile, File pregenFile) throws Exception {
+		super();
+		this.key = key;
+		this.videoTitle = key;
+		this.templateFile = templateFile;
+		this.videoFile = pregenFile;
+		//TODO Read and parse file
+	}
 
 	public void parseFile() throws Exception{
 		//read account list

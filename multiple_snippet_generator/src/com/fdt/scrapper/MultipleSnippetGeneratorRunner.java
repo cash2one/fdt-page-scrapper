@@ -39,6 +39,11 @@ public class MultipleSnippetGeneratorRunner{
 
 	private String source = null;
 	private String lang = null;
+	
+	private int maxPageNum = 1;
+	
+	private Boolean addLinkFromFolder = false;
+	private File pathToLinkFolder;
 
 	private String linksListFilePath;
 
@@ -52,6 +57,11 @@ public class MultipleSnippetGeneratorRunner{
 	protected final static String KEY_WORDS_FILE_PATH_LABEL = "key_words_file_path";
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
+	
+	private static final String SNIPPET_SEARCH_PAGE_MAX_LABEL = "snippet_search_page_max";
+	
+	private static final String ADD_LINK_FROM_FOLDER_FILES_LABEL = "add_links_from_folder_files";
+	private static final String PATH_TO_LINK_FOLDER_LABEL = "path_to_link_folder";
 
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
 
@@ -125,7 +135,24 @@ public class MultipleSnippetGeneratorRunner{
 		saver.start();
 
 		//load links from file
-		this.linksList= loadLinkList(linksListFilePath) ;
+		this.linksList= loadLinkList(addLinkFromFolder) ;
+		
+		String pageVaule = ConfigManager.getInstance().getProperty(SNIPPET_SEARCH_PAGE_MAX_LABEL);
+		if(pageVaule != null && !"".equals(pageVaule.trim())){
+			maxPageNum = Integer.valueOf(pageVaule);
+		}
+		
+		String addLinkValue = ConfigManager.getInstance().getProperty(ADD_LINK_FROM_FOLDER_FILES_LABEL);
+		if(addLinkValue != null && !"".equals(addLinkValue.trim())){
+			addLinkFromFolder = Boolean.valueOf(addLinkValue);
+		}
+		
+		if(addLinkFromFolder){
+			String linkFolderValue = ConfigManager.getInstance().getProperty(PATH_TO_LINK_FOLDER_LABEL);
+			if(linkFolderValue != null && !"".equals(linkFolderValue.trim())){
+				pathToLinkFolder= new File(linkFolderValue);
+			}
+		}
 
 		//set authentication params
 		Authenticator.setDefault(new Authenticator() {
@@ -163,6 +190,7 @@ public class MultipleSnippetGeneratorRunner{
 					log.debug("Task: " + task);
 					if(task != null){
 						log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Success tasks: "+taskFactory.getSuccessQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
+						task.setPage(rnd.nextInt(maxPageNum));
 						newThread = new MultipleSnippetGeneratorThread(task, proxyFactory, taskFactory, linksList);
 						newThread.start();
 						continue;
@@ -180,13 +208,22 @@ public class MultipleSnippetGeneratorRunner{
 		}finally{
 		}
 	}
+	
+	public synchronized ArrayList<String> loadLinkList(boolean addLinkFromFolderFiles){
+		if(addLinkFromFolderFiles){
+			return loadLinkList(new File(linksListFilePath));
+		}else{
+			File[] files = pathToLinkFolder.listFiles();
+			return loadLinkList(files[rnd.nextInt(files.length)]);
+		}
+	}
 
-	public synchronized ArrayList<String> loadLinkList(String cfgFilePath){
+	public synchronized ArrayList<String> loadLinkList(File cfgFile){
 		ArrayList<String> linkList = new ArrayList<String>();
 		FileReader fr = null;
 		BufferedReader br = null;
 		try {
-			fr = new FileReader(new File(cfgFilePath));
+			fr = new FileReader(cfgFile);
 			br = new BufferedReader(fr);
 
 			String line = br.readLine();

@@ -319,8 +319,16 @@ public class SnippetExtractor {
 			for(int i = 0; i < minLenght; i++){
 				String h3Value = ((TagNode)titles[i]).getText().toString();
 				String pValue = ((TagNode)descs[i]).getText().toString();
-				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim())){
-					snippets.add(new Snippet(h3Value.replaceAll("\\.\\.\\.", "").trim(), pValue.replaceAll("\\.\\.\\.", "").trim()));
+				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim()))
+				{
+					snippets.add(
+							new Snippet(
+									h3Value.replaceAll("(\\.){2,}", ".").trim(), 
+									pValue.replaceAll("(\\.){2,}", ".")
+									 		//.replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","$1<a href=\"$2\">$2</a>$4").trim()
+									 		.replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","").trim()
+							)
+					);
 				}
 			}
 		}

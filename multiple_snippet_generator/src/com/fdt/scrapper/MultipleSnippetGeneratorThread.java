@@ -4,6 +4,10 @@
  */
 package com.fdt.scrapper;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -20,15 +24,16 @@ import com.fdt.scrapper.task.TaskFactory;
 public class MultipleSnippetGeneratorThread extends Thread {
 	private static final Logger log = Logger.getLogger(MultipleSnippetGeneratorThread.class);
 
-	Random rnd = new Random();
+	private Random rnd = new Random();
 
 	private SnippetTask snippetTask = null;
 	private ProxyFactory proxyFactory = null;
 	private TaskFactory taskFactory = null;
 	private ArrayList<String> linkList = null;
 
-	public MultipleSnippetGeneratorThread(SnippetTask snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory,ArrayList<String> linkList ) {
+	public MultipleSnippetGeneratorThread(SnippetTask snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory,ArrayList<String> linkList) {
 		super();
+
 		this.snippetTask = snippetTask;
 		this.proxyFactory = proxyFactory;
 		this.taskFactory = taskFactory;

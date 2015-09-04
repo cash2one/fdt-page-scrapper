@@ -55,16 +55,20 @@ public class NewsPoster {
 	private Proxy proxy = null;
 	private Account account = null;
 
+	private Boolean loadPreGenFile = false;
+
 	private Integer times[];
 
 	private static final String TIME_STAMP_FORMAT = "HH:mm:ss.SSS";
 
 	private SimpleDateFormat sdf = new SimpleDateFormat(TIME_STAMP_FORMAT);
 
-	public NewsPoster(NewsTask task, Proxy proxy, Account account) {
+	public NewsPoster(NewsTask task, Proxy proxy, Account account, Boolean loadPreGenFile) {
 		this.task = task;
 		this.proxy = proxy;
 		this.account = account;
+		this.loadPreGenFile = loadPreGenFile;
+
 	}
 
 	public String executePostNews(Integer[] times) throws Exception {
@@ -116,7 +120,7 @@ public class NewsPoster {
 				account.getAccountFactory().rejectAccount(account);
 				throw new Exception(String.format("Account %s lost the login data. Account will rejected",account.getLogin()));
 			}
-			
+
 			StringBuilder responseStr = getResponseAsString(conn);
 
 			//log.debug(responseStr.toString());
@@ -549,11 +553,13 @@ public class NewsPoster {
 				throw new Exception("URL to video was not extracted. Next string was extracted: " + videoUrl);
 			}
 			//TODO Fix issue with preview 
-			setPreview(videoId, subUrl);
+			if(!loadPreGenFile){
+				setPreview(videoId, subUrl);
+				Thread.sleep(5000L);
+				//TODO Fix issue with preview 
+				setPreview(videoId, subUrl);
+			}
 			log.info("VIDEO URL: " + videoUrl);
-			Thread.sleep(5000L);
-			//TODO Fix issue with preview 
-			setPreview(videoId, subUrl);
 			return videoUrl;
 		}else{
 			return "";

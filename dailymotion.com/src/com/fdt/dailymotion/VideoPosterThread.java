@@ -36,10 +36,10 @@ public class VideoPosterThread extends Thread{
 
 	private static final String MAX_SNIPPET_COUNT_LABEL = "MAX_SNIPPET_COUNT";
 	private static final String MIN_SNIPPET_COUNT_LABEL = "MIN_SNIPPET_COUNT";
-	
+
 	private Integer MIN_SNIPPET_COUNT=5;
 	private Integer MAX_SNIPPET_COUNT=10;
-	
+
 	private static final String MIN_DURATION_VIDEO_LABEL = "MIN_DURATION_VIDEO";
 	private static final String MAX_DURATION_VIDEO_LABEL = "MAX_DURATION_VIDEO";
 
@@ -56,7 +56,9 @@ public class VideoPosterThread extends Thread{
 	private File linkTitleList;
 	private String listProcessedFilePath;
 	private String errorFilePath;
-	
+
+	private Boolean loadPreGenFile = false;
+
 	public VideoPosterThread(
 			NewsTask task, 
 			Account account, 
@@ -67,7 +69,8 @@ public class VideoPosterThread extends Thread{
 			File linkList,
 			File linkTitleList,
 			String listProcessedFilePath,
-			String errorFilePath) {
+			String errorFilePath,
+			Boolean loadPreGenFile) {
 		this.task = task;
 		this.account = account;
 		this.taskFactory = taskFactory;
@@ -79,11 +82,13 @@ public class VideoPosterThread extends Thread{
 		this.listProcessedFilePath = listProcessedFilePath;
 		this.errorFilePath = errorFilePath;
 
+		this.loadPreGenFile = loadPreGenFile;
+
 		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL) != null)
 			MIN_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
 		if(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL) != null)
 			MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
-		
+
 		if(ConfigManager.getInstance().getProperty(MIN_DURATION_VIDEO_LABEL) != null)
 			MIN_DURATION_VIDEO = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_DURATION_VIDEO_LABEL));
 		if(ConfigManager.getInstance().getProperty(MAX_DURATION_VIDEO_LABEL) != null)
@@ -102,7 +107,9 @@ public class VideoPosterThread extends Thread{
 			try{
 				boolean errorExist = false;
 				try {
-					task.parseFile();
+					if(!loadPreGenFile){
+						task.parseFile();
+					}
 
 					SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
 					File previewImg = new File("./images/preview_" + getFileNameWOExt(task.getInputFile()) + ".jpg");
@@ -113,10 +120,13 @@ public class VideoPosterThread extends Thread{
 						}
 					}
 					//create video
-					Integer[] times = createVideo(task, this.addAudioToFile, previewImg, MIN_DURATION_VIDEO, MAX_DURATION_VIDEO);
-					log.debug("Times array: " + times);
-					Thread.sleep(10000L);
-					
+					Integer[] times = null;
+					if(!loadPreGenFile){
+						times = createVideo(task, this.addAudioToFile, previewImg, MIN_DURATION_VIDEO, MAX_DURATION_VIDEO);
+						log.debug("Times array: " + times);
+						Thread.sleep(10000L);
+					}
+
 					//TODO Add Snippet task chooser
 					ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
 					if(snippets.size() == 0)
@@ -131,7 +141,7 @@ public class VideoPosterThread extends Thread{
 					}
 					task.setSnippets(snippetsStr.toString());
 
-					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account);
+					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account, loadPreGenFile);
 					String linkToVideo = nPoster.executePostNews(times);
 					appendStringToFile(linkToVideo, linkList);
 					appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
@@ -178,7 +188,7 @@ public class VideoPosterThread extends Thread{
 			}
 		}
 	}
-	
+
 	private String getFileNameWOExt(File file){
 		String fileName = FilenameUtils.getBaseName(file.getName());
 		//fileName.replaceAll("."+FilenameUtils.getBaseName(filename), replacement)

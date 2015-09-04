@@ -28,7 +28,7 @@ public abstract class SnippetTask
 	
 	protected List<Integer> bannedRespCodes = new ArrayList<Integer>();
 	protected boolean encodeKeywords = false;
-	protected int page;
+	protected int page = 1;
 	
 	protected Map<String,String> extraParams = new HashMap<String, String>();
 	
