@@ -5,11 +5,11 @@ public class GoogleSnippetTask extends SnippetTask
 	public GoogleSnippetTask(String keyWords){
 		super(keyWords);
 		this.setScrapperUrl("https://www.google.com/search?q=#KEY_WORDS#&lr=lang_#LANGUAGE#&oe=utf-8&gws_rd=ssl&start=#PAGE_NUM#");
-		this.setXpathSnippet("//li[@class='g']");
+		this.setXpathSnippet("li[class=g]");
 		////h3[@class='r']/a"
 		this.setXpathTitle("h3[class=r] > a");
 		////div[@class='s']//span[@class='st']
-		this.setXpathDesc("div[class=s] > span[class=st]");
+		this.setXpathDesc("div[class=s] > div > span[class=st]");
 		this.setHost("google.com");
 		this.setPage(1);
 		

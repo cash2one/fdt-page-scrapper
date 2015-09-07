@@ -25,9 +25,9 @@ import com.xuggle.xuggler.IVideoPicture;
 
 public class VideoCreator {
 
-	private static final int MIN_FRAME_COUNT = 35;
+	private static final int MIN_FRAME_COUNT = 3599;
 
-	private static final int MAX_FRAME_COUNT = 36;
+	private static final int MAX_FRAME_COUNT = 3600;
 
 	private static final Logger log = Logger.getLogger(VideoCreator.class);
 
@@ -36,7 +36,7 @@ public class VideoCreator {
 	private final static int channelCount = 2;
 
 	//public final static int successBitrate = 262144;
-	public final static int successBitrate = 262144;
+	public final static int successBitrate = 886432;
 
 	public static void main(String... args){
 
@@ -46,10 +46,10 @@ public class VideoCreator {
 		File video;
 		
 		try {
-			for(int i = 150; i < 300; i++){
+			/*for(int i = 150; i < 299; i++){
 				File videoFile = new File("images/article_"+i+".jpg");
 				if(videoFile.exists()){
-					VideoCreator.makeVideo("article_"+i+"_.mp4", new File("images/article_"+i+".jpg"), new File("images/preview_article_"+i+".jpg"), new File("08.wav"), MIN_FRAME_COUNT, MAX_FRAME_COUNT);
+					VideoCreator.makeVideo("test_video/article_"+i+"_.mp4", new File("images/article_"+i+".jpg"), new File("images/preview_article_"+i+".jpg"), new File("08.wav"), MIN_FRAME_COUNT, MAX_FRAME_COUNT);
 					image = new File("images/article_"+i+".jpg");
 					video = new File("article_"+i+"_.mp4");
 					log.info(String.format("Image file %s; size %s; video bitrate %.0f(%.0f); compression rate: %.3f", image.getName(), image.length(), (double)(video.length()/MAX_FRAME_COUNT),(double)(8*video.length()/MAX_FRAME_COUNT), (double)(MAX_FRAME_COUNT*image.length())/video.length()));
@@ -57,8 +57,8 @@ public class VideoCreator {
 					image = null;
 					video = null;
 				}
-			}
-			VideoCreator.makeVideo("article_6_.mp4", new File("images/article_6.jpg"), new File("images/preview_article_6.jpg"), new File("08.wav"), MIN_FRAME_COUNT, MAX_FRAME_COUNT);
+			}*/
+			VideoCreator.makeVideo("test_video/article_519.mov", new File("images/article_519.jpg"), new File("images/preview_article_519.jpg"), new File("08.wav"), MIN_FRAME_COUNT, MAX_FRAME_COUNT);
 			//VideoCreator.mergeVideoAndAudio("test_video_wa.mp4", "08.wav", "test_video.mp4");
 			/*MediaLocator ivml = JpegImagesToMovie.createMediaLocator("test_video_wa.mov");
 			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
@@ -137,7 +137,7 @@ public class VideoCreator {
 		IMediaWriter writer = ToolFactory.makeWriter(filePath);
 
 		Random rnd = new Random();
-		//int framePerSec = 1;
+		//framePerSec = 15;
 		
 		int frameCount = (minDur + rnd.nextInt(maxDur-minDur))*framePerSec;
 
@@ -254,7 +254,7 @@ public class VideoCreator {
 	private static int calculateFrameRate(File inputFile){
 		long bitRate = 0;
 
-		for(int i = 8; i <= 32; i*=2){
+		for(int i = 5; i <= 60; i +=5){
 			bitRate = (inputFile.length()*8*i*100)/1500;
 			if(bitRate > successBitrate){
 				log.debug(String.format("Calculated bitrate: %d, frameRate: %d",bitRate, i));

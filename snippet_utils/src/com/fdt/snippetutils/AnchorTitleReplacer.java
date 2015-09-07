@@ -12,6 +12,7 @@ import java.io.OutputStreamWriter;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 import java.util.regex.Matcher;
@@ -151,18 +152,52 @@ public class AnchorTitleReplacer {
 
 		ArrayList<String> lines= readFile(this.anchorFilePath);
 		ArrayList<String> titles = readTitlesFile(this.titlesFilePath);
+		ArrayList<Pattern> titlesPattern = new ArrayList<Pattern>();
 
+		HashMap<String, Pattern> linePttrnMpng = new HashMap<String, Pattern>();
+		ArrayList<String> keys = new ArrayList<String>();
+
+		String patternStr = "";
+		Pattern pattern = Pattern.compile(patternStr);
+
+		for(String title: titles){
+			if(replaceWithBing){
+				patternStr = "(.*)\">(.*)</a>(.*)";
+			}else{
+				patternStr = "(.*)\">(" + title + ")</a>(.*)";
+			}
+			pattern = Pattern.compile(patternStr);
+			titlesPattern.add(pattern);
+		}
+
+		for(String line : lines){
+			for(Pattern ptrn : titlesPattern){
+				if(line.matches(ptrn.toString())){
+					linePttrnMpng.put(line, ptrn);
+					keys.add(line);
+					break;
+				}
+			}
+			if(!keys.contains(line)){
+				log.error("NOT Processed line: " + line);
+			}
+		}
+
+		//
+		
 		try{
 			for(int i = 0; i < this.repeatCount; i++){
+				HashMap<String, Pattern> linePttrnMpngNew = new HashMap<String, Pattern>(linePttrnMpng);
+				ArrayList<String> keysNew = new ArrayList<String>(keys);
 				lines= readFile(this.anchorFilePath);
-				loop(lines, titles);
+				loop(linePttrnMpngNew, keysNew, titles);
 			}
 		}finally{
 			saveBannedProxy(proxyFactory.getBannedProxyList());
 		}
 	}
 
-	private void loop(ArrayList<String> lines, ArrayList<String> titles) throws IOException, InterruptedException{
+	private void loop(HashMap<String, Pattern> lines, ArrayList<String> keys, ArrayList<String> titles) throws IOException, InterruptedException{
 
 		while(lines.size() > 0){
 
@@ -170,7 +205,9 @@ public class AnchorTitleReplacer {
 				Thread.sleep(sleepTime);
 			}
 
-			ReplacerThread rplcrThrd = new ReplacerThread(this, lines, titles);
+			HashMap<String, Pattern> rndLines = getRndLines(lines, keys);
+
+			ReplacerThread rplcrThrd = new ReplacerThread(this, rndLines, titles);
 			rplcrThrd.start();
 		}
 
@@ -180,14 +217,30 @@ public class AnchorTitleReplacer {
 
 	}
 
+	private HashMap<String, Pattern> getRndLines(HashMap<String, Pattern> lines, ArrayList<String> keys){
+		Random rnd = new Random();
+		int rndLnCount = minLineCount + rnd.nextInt(maxLineCount-minLineCount + 1);
+
+		HashMap<String, Pattern> rndLines4Process = new HashMap<String, Pattern>();
+
+		for(int i = 0; i < rndLnCount; i++){
+			if(lines.size() > 0){
+				String key = keys.remove(rnd.nextInt(keys.size()));
+				Pattern ptrn = lines.remove(key);
+				rndLines4Process.put(key, ptrn);
+			}
+		}
+
+		return rndLines4Process;
+	}
 
 	private class ReplacerThread extends Thread {
 
-		private ArrayList<String> lines;
+		private HashMap<String, Pattern> lines;
 		private ArrayList<String> titles;
 		private AnchorTitleReplacer replacer;
 
-		public ReplacerThread(AnchorTitleReplacer replacer, ArrayList<String> lines, ArrayList<String> titles) {
+		public ReplacerThread(AnchorTitleReplacer replacer, HashMap<String, Pattern> lines, ArrayList<String> titles) {
 			super();
 			this.replacer = replacer;
 			this.lines = lines;
@@ -196,15 +249,12 @@ public class AnchorTitleReplacer {
 
 		@Override
 		public void run() {
-			ArrayList<String> rndLines4Process;
 			ArrayList<String> rndLinesProcessed = null;
 
 			try{
-				rndLines4Process = getRndLines(lines);
-				//TODO Process links and save to file
-				rndLinesProcessed = processLines(rndLines4Process, titles);
+				rndLinesProcessed = processLines(lines, titles);
 				//Save file
-				File fileToSave = new File(outputPath, String.valueOf(System.currentTimeMillis())+rndLines4Process.hashCode());
+				File fileToSave = new File(outputPath, String.valueOf(System.currentTimeMillis())+lines.hashCode());
 				appendLinesToFile(rndLinesProcessed, fileToSave);
 			} catch (IOException e) {
 				log.error("Error occured saving lines to file: ", e);
@@ -220,22 +270,7 @@ public class AnchorTitleReplacer {
 		}
 	}
 
-	private ArrayList<String> getRndLines(ArrayList<String> lines){
-		Random rnd = new Random();
-		int rndLnCount = minLineCount + rnd.nextInt(maxLineCount-minLineCount + 1);
-
-		ArrayList<String> rndLines4Process = new ArrayList<String>();
-
-		for(int i = 0; i < rndLnCount; i++){
-			if(lines.size() > 0){
-				rndLines4Process.add(lines.remove(rnd.nextInt(lines.size())));
-			}
-		}
-
-		return rndLines4Process;
-	}
-
-	private ArrayList<String> processLines(ArrayList<String> input, ArrayList<String> titles){
+	private ArrayList<String> processLines(HashMap<String, Pattern> lines, ArrayList<String> titles){
 		ArrayList<String> output = new ArrayList<String>();
 		Random rnd = new Random();
 
@@ -244,62 +279,41 @@ public class AnchorTitleReplacer {
 		String newTitle;
 		String newLine;
 
-		for(String line:input){
-			int matchStepCount = 0;
-			for(String title:titles)
-			{
-				matchStepCount++;
-				String patternStr = "";
-				if(replaceWithBing){
-					patternStr = "(.*)\">(.*)</a>(.*)";
-				}else{
-					patternStr = "(.*)\">(" + title + ")</a>(.*)";
-				}
-
-				if(line.matches(patternStr))
-				{
-					//Substring Name
-					if(rnd.nextInt(3) < 2){
-						Pattern pattern = Pattern.compile(patternStr);
-						Matcher matcher = pattern.matcher(line);
-						if (matcher.find()){
-							fullTitle = matcher.group(2).trim();
-							//System.out.println("Full title: " + fullTitle);
-							bookName = matcher.group(3).trim();
-							/*//System.out.println("Book name: " + bookName);
+		for(String line: lines.keySet()){
+			//Substring Name
+			if(rnd.nextInt(3) < 2){
+				Matcher matcher = lines.get(line).matcher(line);
+				if (matcher.find()){
+					fullTitle = matcher.group(2).trim();
+					//System.out.println("Full title: " + fullTitle);
+					bookName = matcher.group(3).trim();
+					/*//System.out.println("Book name: " + bookName);
 							if(fullTitle.equals(bookName)){
 								log.debug("NEW TITLE FOUND: " + fullTitle);
 							}*/
-							if(replaceWithBing){
-								do{
-									newTitle = "";
-									try {
-										newTitle = getSnippet(fullTitle).getTitle();
-									} catch (Exception e) {
-										log.error(String.format("Error occured during getting snippets: %s", e.getMessage()), e);
-									} 
-								}while("".equals(newTitle));
-								//newLine = line.replace(fullTitle, newTitle);
-								newLine = line.replace(fullTitle, newTitle);
-							}else{
-								newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
-								newLine = line.replace(fullTitle, newTitle);
-							}
-							output.add(newLine);
-							//System.out.println("New line: " + newLine);
-						}else{
-							output.add(line);
-						}
+					if(replaceWithBing){
+						do{
+							newTitle = "";
+							try {
+								newTitle = getSnippet(fullTitle).getTitle();
+							} catch (Exception e) {
+								log.error(String.format("Error occured during getting snippets: %s", e.getMessage()), e);
+							} 
+						}while("".equals(newTitle));
+						//newLine = line.replace(fullTitle, newTitle);
+						newLine = line.replace(fullTitle, newTitle);
+					}else{
+						newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
+						newLine = line.replace(fullTitle, newTitle);
 					}
-					else{
-						output.add(line);
-					}
-					break;
+					output.add(newLine);
+					//System.out.println("New line: " + newLine);
 				}else{
-					if(matchStepCount == titles.size()){
-						log.error("NOT Processed line: " + line);
-					}
+					output.add(line);
 				}
+			}
+			else{
+				output.add(line);
 			}
 		}
 
@@ -399,7 +413,8 @@ public class AnchorTitleReplacer {
 		} else
 			if("BING".equals(source.toUpperCase().trim())){
 				task = new BingSnippetTask(key);
-				task.setPage(1+rnd.nextInt(5));
+				//TODO Uncomment
+				//task.setPage(1+rnd.nextInt(50));
 			} else
 				if("TUT".equals(source.toUpperCase().trim())){
 					task = new TutSnippetTask(key);
