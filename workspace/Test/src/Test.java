@@ -22,7 +22,7 @@ public class Test {
 
     public static void main(String[] args) throws IOException {
 
-        final IMediaWriter writer = ToolFactory.makeWriter(outputFilename);
+        /*final IMediaWriter writer = ToolFactory.makeWriter(outputFilename);
 
         writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, 1080, 720);
 
@@ -44,7 +44,10 @@ public class Test {
         // tell the writer to close and write the trailer if needed
         writer.flush();
         writer.close();
-        System.out.println("Video Created");
+        System.out.println("Video Created");*/
+    	
+    	String test = "Seon in Korea Taego Bou Jinul Seongcheol Zen in the USA D. T. Suzuki Hakuun Yasutani Taizan Maezumi Shunryū Suzuki Seungsahn Category: Zen Buddhists …";
+    	System.out.println(test.replaceAll("(\\.){2,}", ".").replaceAll("…", ".").trim()); 
 
     }
     

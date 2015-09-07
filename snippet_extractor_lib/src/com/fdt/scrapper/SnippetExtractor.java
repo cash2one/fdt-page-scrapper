@@ -5,10 +5,13 @@
 package com.fdt.scrapper;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.Proxy;
@@ -22,8 +25,9 @@ import javax.xml.xpath.XPathExpressionException;
 
 import org.apache.log4j.Logger;
 import org.htmlcleaner.HtmlCleaner;
-import org.htmlcleaner.TagNode;
-import org.htmlcleaner.XPatherException;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
@@ -36,7 +40,9 @@ import com.fdt.scrapper.task.SnippetTask;
  * @author Administrator
  */
 public class SnippetExtractor {
-	
+
+	private static final Logger log = Logger.getLogger(SnippetExtractor.class);
+
 	private static final String MAX_LINK_COUNT_LABEL = "MAX_LINK_COUNT";
 	private static final String MIN_LINK_COUNT_LABEL = "MIN_LINK_COUNT";
 
@@ -44,8 +50,6 @@ public class SnippetExtractor {
 	private static final String MIN_SNIPPET_COUNT_LABEL = "MIN_SNIPPET_COUNT";
 
 	private static final String MAX_ATTEMPT_COUNT_LABEL = "max_attempt_count";
-
-	private static final Logger log = Logger.getLogger(SnippetExtractor.class);
 
 	private Integer MIN_SNIPPET_COUNT=3;
 	private Integer MAX_SNIPPET_COUNT=9;
@@ -57,6 +61,8 @@ public class SnippetExtractor {
 	private Integer MAX_WORDS_COUNT=5;
 
 	private int LINKS_COUNT = 100;
+
+	private static final String LINE_FEED = "\r\n";
 
 	Random rnd = new Random();
 
@@ -148,26 +154,26 @@ public class SnippetExtractor {
 		return snippetsContent.toString();
 	}
 
-	private TagNode loadPageContent(SnippetTask snippetTask, ProxyConnector proxyConnector) throws MalformedURLException, IOException, ParseException, XPathExpressionException {
+	private Document loadPageContent(SnippetTask snippetTask, ProxyConnector proxyConnector) throws MalformedURLException, IOException, ParseException, XPathExpressionException {
 		HttpURLConnection conn = null;
 		InputStream is = null;
-		
+
 		String proxyTypeStr = ConfigManager.getInstance().getProperty("proxy_type");
 		Proxy proxy = proxyConnector.getConnect(proxyTypeStr);
-		
-		System.out.println("Using proxy: " + proxy.toString());
+
+		log.debug("Using proxy: " + proxy.toString());
 		try{
 			String strUrl = snippetTask.getFullUrl();
 			URL url = new URL(strUrl);
-			System.out.println(strUrl);
+			log.debug(strUrl);
 			//using proxy
 			conn = (HttpURLConnection)url.openConnection(proxy);
 			conn.setConnectTimeout(30000);
 			conn.addRequestProperty("Host",snippetTask.getHost());
-			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0"); 
 			conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 			conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
-			conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.addRequestProperty("Accept-Language","en-US, en;q=0.8");
 			conn.addRequestProperty("Accept-Encoding","gzip");
 			fillExtraParamsFromTask(conn, snippetTask);
 			conn.setDoInput(true);
@@ -176,19 +182,20 @@ public class SnippetExtractor {
 			HtmlCleaner cleaner = new HtmlCleaner();
 
 			int respCode = conn.getResponseCode();
-			
+
 			if(snippetTask.isBanPage(respCode)){
 				//TODO Save proxy to banned list
 				proxyFactory.addToBannedList(proxyConnector);
 			}
-			
+
 			is = conn.getInputStream();
 
 			String encoding = conn.getContentEncoding();
 
 			InputStream inputStreamPage = null;
 
-			TagNode html = null;
+			Document html = null;
+			String htmlStr;
 			//working with gzip encoding
 			if("gzip".equalsIgnoreCase(encoding)){
 				GZIPInputStream gzip = new GZIPInputStream(is);
@@ -204,14 +211,17 @@ public class SnippetExtractor {
 				bfRdr.close();
 				gzip.close();
 
-				inputStreamPage = new ByteArrayInputStream(pageStr.toString().getBytes("UTF-8"));
-				html = cleaner.clean(inputStreamPage,"UTF-8");
-
-				System.out.println(pageStr.toString());
+				htmlStr = pageStr.toString();
 			}else{
-				html = cleaner.clean(is,"UTF-8");
+				htmlStr = getResponseAsString(conn.getInputStream()).toString();
 			}
 			//int code = conn.getResponseCode();
+
+			log.trace("------------------------------------------------------START-----------------------------------------------------");
+			log.trace(htmlStr);
+			appendLineToFile(htmlStr, new File("./responce.html"));
+			log.trace("-------------------------------------------------------END------------------------------------------------------");
+			html = Jsoup.parse(htmlStr);
 			return html;
 		}finally{
 			if(conn != null){
@@ -223,6 +233,20 @@ public class SnippetExtractor {
 		}
 	}
 
+	private StringBuilder getResponseAsString(InputStream is)
+			throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(is));
+
+		String line;
+		StringBuilder responseStr = new StringBuilder();
+		while ((line = br.readLine()) != null) {
+			responseStr.append(line).append(LINE_FEED);
+		}
+		is.close();
+		return responseStr;
+	}
+
 	private void fillExtraParamsFromTask(HttpURLConnection connection, SnippetTask task){
 		for(String key : task.getExtraParams().keySet()){
 			connection.addRequestProperty(key, task.getExtraParams().get(key));
@@ -232,7 +256,7 @@ public class SnippetExtractor {
 	private HttpURLConnection executeURL(String strUrl, Proxy proxy) throws IOException{
 		//String strUrl = snippetTask.getFullUrl();
 		URL url = new URL(strUrl);
-		System.out.println(strUrl);
+		log.debug(strUrl);
 		//using proxy
 		HttpURLConnection conn = (HttpURLConnection)url.openConnection(proxy);
 		conn.setConnectTimeout(30000);
@@ -240,7 +264,7 @@ public class SnippetExtractor {
 		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 		conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 		conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
-		conn.addRequestProperty("Accept-Language","ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+		conn.addRequestProperty("Accept-Language","en-US, en;q=0.8");
 		conn.addRequestProperty("Accept-Encoding","gzip");
 
 		@SuppressWarnings("unused")
@@ -293,7 +317,7 @@ public class SnippetExtractor {
 		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
 
 		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
-		TagNode page = null;
+		Document page = null;
 		try{
 			page = loadPageContent(snippetTask,proxyConnector);
 		}finally{
@@ -303,42 +327,41 @@ public class SnippetExtractor {
 			}
 		}
 
-		Object[] titles = null;
-		Object[] descs= null;
+		Elements titles = null;
+		Elements descs= null;
 
-		try {
-			titles = page.evaluateXPath(snippetTask.getXpathTitle());
-			descs = page.evaluateXPath(snippetTask.getXpathDesc());
-		}
-		catch (XPatherException e) {
-			log.error("Error occured during getting titles and their desc",e);
+		titles = page.select(snippetTask.getXpathTitle());
+		descs = page.select(snippetTask.getXpathDesc());
+		
+		if(titles.size() != descs.size()){
+			log.error("XPATH IS FAIL!");
 		}
 
-		int minLenght = titles.length > descs.length?descs.length:titles.length;
-		if(titles.length > 0){
+		int minLenght = titles.size() > descs.size()?descs.size():titles.size();
+		if(titles.size() > 0){
 			for(int i = 0; i < minLenght; i++){
-				String h3Value = ((TagNode)titles[i]).getText().toString();
-				String pValue = ((TagNode)descs[i]).getText().toString();
+				String h3Value = titles.get(i).text();
+				String pValue = descs.get(i).text();
 				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim()))
 				{
 					snippets.add(
 							new Snippet(
-									h3Value.replaceAll("(\\.){2,}", ".").trim(), 
-									pValue.replaceAll("(\\.){2,}", ".")
-									 		//.replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","$1<a href=\"$2\">$2</a>$4").trim()
-									 		.replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","").trim()
-							)
-					);
+									h3Value.replaceAll("(\\.){2,}", ".").replaceAll("…", ".").trim(), 
+									pValue.replaceAll("(\\.){2,}", ".").replaceAll("…", ".")
+									//.replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","$1<a href=\"$2\">$2</a>$4").trim()
+									.replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","").trim()
+									)
+							);
 				}
 			}
 		}
-		
+
 		titles = null;
 		descs = null;
 
 		return snippets;
 	}
-	
+
 	private boolean isProxyBanned(SnippetTask snippetTask, int respCode){
 		return snippetTask.isBanPage(respCode);
 	}
@@ -358,6 +381,28 @@ public class SnippetExtractor {
 			catch (Exception e) {
 				log.error("Error occured during getting snippets",e);
 				return null;
+			}
+		}
+	}
+
+	private static void appendLineToFile(String str, File file) throws IOException {
+		if(file.exists()){
+			file.delete();
+		}
+
+		BufferedWriter bufferedWriter = null;
+		try {
+			//Construct the BufferedWriter object
+			bufferedWriter = new BufferedWriter(new OutputStreamWriter(
+					new FileOutputStream(file,false), "UTF8"));
+			bufferedWriter.append(str);
+			bufferedWriter.newLine();
+
+		} finally {
+			//Close the BufferedWriter
+			if (bufferedWriter != null) {
+				bufferedWriter.flush();
+				bufferedWriter.close();
 			}
 		}
 	}
