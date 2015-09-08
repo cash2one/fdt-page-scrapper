@@ -18,6 +18,7 @@ import java.net.Proxy;
 import java.net.URL;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.zip.GZIPInputStream;
 
@@ -62,6 +63,8 @@ public class SnippetExtractor {
 
 	private int LINKS_COUNT = 100;
 
+	private int MAX_EXTRA_SNIPPETS = 3;
+
 	private static final String LINE_FEED = "\r\n";
 
 	Random rnd = new Random();
@@ -71,6 +74,7 @@ public class SnippetExtractor {
 
 	private SnippetTask task= null;
 
+	private boolean isInsLnkFrmGenFile = true;
 
 	public SnippetExtractor(SnippetTask snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList) throws MalformedURLException, IOException {
 		super();
@@ -85,7 +89,15 @@ public class SnippetExtractor {
 
 		this.proxyFactory = proxyFactory;
 		this.linkList = linkList;
-		task = snippetTask;
+		this.task = snippetTask;
+	}
+
+	public boolean isInsLnkFrmGenFile() {
+		return isInsLnkFrmGenFile;
+	}
+
+	public void setInsLnkFrmGenFile(boolean isInsLnkFrmGenFile) {
+		this.isInsLnkFrmGenFile = isInsLnkFrmGenFile;
 	}
 
 	public synchronized void insertLinksToSnippets(SnippetTask snippetTask) {
@@ -99,7 +111,11 @@ public class SnippetExtractor {
 				if(snippets == null || snippets.size() == 0){
 					throw new Exception("Snippets size is 0. Will try to use another proxy server");
 				}
-				snippetContent = getSnippetsContent(snippets);
+				if(isInsLnkFrmGenFile){
+					snippetContent = getSnippetsContentFromFolder(snippets);
+				}else{
+					snippetContent = getSnippetsContent(snippets);
+				}
 			}catch(Exception e){
 				log.error("Error during getting snippets content",e);
 				e.printStackTrace();
@@ -147,6 +163,54 @@ public class SnippetExtractor {
 				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
 				snippetLinked++;
 			}else{
+				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
+			}
+		}
+
+		return snippetsContent.toString();
+	}
+
+	private String getSnippetsContentFromFolder(ArrayList<Snippet> snippets) 
+	{
+		int snipCount = 0;
+		//calculate snippets count
+		if(snippets.size() < linkList.size()){
+			log.warn(String.format("Link size (%s) is greater than snippets size (%s)", linkList.size(), snippets.size()));
+			return null;
+		}else{
+			snipCount = linkList.size() + rnd.nextInt(MAX_EXTRA_SNIPPETS+1);
+			if(snippets.size() < snipCount){
+				snipCount = snippets.size();
+			}
+		}
+
+		StringBuilder snippetsContent = new StringBuilder();
+
+		//get links count
+		int linkCount = linkList.size();
+
+		//Get random snippets to insert
+		while(snippets.size() > snipCount){
+			snippets.remove(rnd.nextInt(snippets.size()));
+		}
+
+		Integer rndValue = -1;
+		List<Integer> rndIdx = new ArrayList<Integer>();
+		for(int i = 0; i < (snipCount-linkCount); i++){
+			rndValue = rnd.nextInt(snipCount);
+			if(!rndIdx.contains(rndValue)){
+				rndIdx.add(rndValue);
+			}else{
+				i--;
+			}
+		}
+
+		log.debug(String.format("Snippets.size() = (%d); linkList.size() = (%d), snipCount = (%d)", snippets.size(), linkList.size(), snipCount));
+		int lnkIdx = 0;
+		for(int i = 0; i < snipCount; i++){
+			if(!rndIdx.contains(i)){
+				//add link to snipper
+				addLinkFromFolderToSnippetContent(snippets.get(i), linkList.get(lnkIdx++));
 				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
 			}
 		}
@@ -283,6 +347,7 @@ public class SnippetExtractor {
 			//insert link here
 			newContent = new StringBuilder();
 			newContent.append("<a href=\""+link+"\">");
+
 			for(int i = 0; i < words.length; i++){
 				newContent.append(words[i]).append(" ");
 			}
@@ -292,7 +357,8 @@ public class SnippetExtractor {
 			int randomValue = getRandomValue(MIN_WORDS_COUNT, MAX_WORDS_COUNT);
 			int startStringIndex = getRandomValue(0, words.length-randomValue);
 			newContent = new StringBuilder();
-			for(int i = 0; i < words.length; i++){
+			for(int i = 0; i < words.length; i++)
+			{
 				if(startStringIndex == i){
 					newContent.append("<a href=\""+link+"\">").append(words[i]).append(" ");
 					continue;
@@ -307,6 +373,51 @@ public class SnippetExtractor {
 			}
 		}
 		snippet.setContent(newContent.toString());
+	}
+
+	private void addLinkFromFolderToSnippetContent(Snippet snippet, String link){
+		StringBuffer newContent = new StringBuffer(snippet.getContent());
+		//find random
+		List<Integer> dotsIdx = getDotsIdxs(newContent.toString());
+
+		if(dotsIdx.size() > 0)
+		{
+			int idx = dotsIdx.get(rnd.nextInt(dotsIdx.size()));
+
+			if(newContent.charAt(idx) == ','){
+				idx += 1;
+			}
+
+			newContent.insert(idx, " " + link);
+
+		}else{
+			newContent.append(" ").append(link);
+		}
+
+		snippet.setContent(newContent.toString());
+	}
+
+	private List<Integer> getDotsIdxs(String srt){
+		List<Integer> dotsIdx = new ArrayList<Integer>();
+		int idx = -1;
+
+		if( (idx = srt.indexOf(".")) != -1){
+			dotsIdx.add(idx);
+		}
+
+		if( (idx = srt.lastIndexOf(".")) != -1){
+			dotsIdx.add(idx);
+		}
+
+		if( (idx = srt.indexOf(",")) != -1){
+			dotsIdx.add(idx);
+		}
+
+		if( (idx = srt.lastIndexOf(",")) != -1){
+			dotsIdx.add(idx);
+		}
+
+		return dotsIdx;
 	}
 
 	public Integer getRandomValue(Integer minValue, Integer maxValue){
@@ -332,7 +443,7 @@ public class SnippetExtractor {
 
 		titles = page.select(snippetTask.getXpathTitle());
 		descs = page.select(snippetTask.getXpathDesc());
-		
+
 		if(titles.size() != descs.size()){
 			log.error("XPATH IS FAIL!");
 		}

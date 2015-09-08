@@ -40,7 +40,7 @@ public class MultipleSnippetGeneratorRunner{
 	private String source = null;
 	private String lang = null;
 	
-	private int maxPageNum = 1;
+	private int maxPageNum = 50;
 	
 	private Boolean addLinkFromFolder = false;
 	private File pathToLinkFolder;
@@ -62,6 +62,7 @@ public class MultipleSnippetGeneratorRunner{
 	
 	private static final String ADD_LINK_FROM_FOLDER_FILES_LABEL = "add_links_from_folder_files";
 	private static final String PATH_TO_LINK_FOLDER_LABEL = "path_to_link_folder";
+	private static final String IS_INS_LNKS_FRM_GEN_FILE_LABEL = "is_ins_lnk_frm_gen_file";
 
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
 
@@ -117,8 +118,6 @@ public class MultipleSnippetGeneratorRunner{
 		this.source = ConfigManager.getInstance().getProperty(SOURCE_LABEL);
 		this.lang = ConfigManager.getInstance().getProperty(LANG_LABEL);
 
-		this.linksListFilePath = ConfigManager.getInstance().getProperty(LINKS_LIST_FILE_PATH_LABEL);
-
 		//init task factory
 		TaskFactory.setMAX_THREAD_COUNT(maxThreadCount);
 		taskFactory = TaskFactory.getInstance();
@@ -135,7 +134,7 @@ public class MultipleSnippetGeneratorRunner{
 		saver.start();
 
 		//load links from file
-		this.linksList= loadLinkList(addLinkFromFolder) ;
+		this.linksListFilePath = ConfigManager.getInstance().getProperty(LINKS_LIST_FILE_PATH_LABEL);
 		
 		String pageVaule = ConfigManager.getInstance().getProperty(SNIPPET_SEARCH_PAGE_MAX_LABEL);
 		if(pageVaule != null && !"".equals(pageVaule.trim())){
@@ -150,9 +149,11 @@ public class MultipleSnippetGeneratorRunner{
 		if(addLinkFromFolder){
 			String linkFolderValue = ConfigManager.getInstance().getProperty(PATH_TO_LINK_FOLDER_LABEL);
 			if(linkFolderValue != null && !"".equals(linkFolderValue.trim())){
-				pathToLinkFolder= new File(linkFolderValue);
+				pathToLinkFolder= new File(linkFolderValue).getCanonicalFile();
 			}
 		}
+		
+		loadLinkList(addLinkFromFolder);
 
 		//set authentication params
 		Authenticator.setDefault(new Authenticator() {
@@ -182,7 +183,7 @@ public class MultipleSnippetGeneratorRunner{
 		try{
 			synchronized (this) {
 				MultipleSnippetGeneratorThread newThread = null;
-				log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
+				log.info("Total tasks: "+taskFactory.getTaskQueue().size());
 
 				while(!taskFactory.isTaskFactoryEmpty() || taskFactory.getRunThreadsCount() > 0){
 					log.debug("Try to get request from RequestFactory queue.");
@@ -191,7 +192,13 @@ public class MultipleSnippetGeneratorRunner{
 					if(task != null){
 						log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Success tasks: "+taskFactory.getSuccessQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
 						task.setPage(rnd.nextInt(maxPageNum));
-						newThread = new MultipleSnippetGeneratorThread(task, proxyFactory, taskFactory, linksList);
+						
+						File linkFile = null;
+						if(addLinkFromFolder){
+							linkFile = loadLinkList(addLinkFromFolder);
+						}
+						
+						newThread = new MultipleSnippetGeneratorThread(task, proxyFactory, taskFactory, linksList, addLinkFromFolder, linkFile);
 						newThread.start();
 						continue;
 					}
@@ -201,21 +208,41 @@ public class MultipleSnippetGeneratorRunner{
 						log.error("InterruptedException occured during RequestRunner process",e);
 					}
 				}
-				saver.running = false;
-				log.debug("Task factory is empty: "+taskFactory.isTaskFactoryEmpty()+". Current working threads count is " + taskFactory.getRunThreadsCount());
-				log.debug("Success tasks: "+taskFactory.getSuccessQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
+				
+				saver.stopped = true;
+				while(saver.isAlive()){
+					try {
+						this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
+					} catch (InterruptedException e) {
+					}
+				}
+				log.info("Task factory is empty: "+taskFactory.isTaskFactoryEmpty()+". Current working threads count is " + taskFactory.getRunThreadsCount());
+				log.info("Success tasks: "+taskFactory.getSuccessQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
 			}
 		}finally{
 		}
 	}
 	
-	public synchronized ArrayList<String> loadLinkList(boolean addLinkFromFolderFiles){
+	public synchronized File loadLinkList(boolean addLinkFromFolderFiles){
+		File linkFile = null;
 		if(addLinkFromFolderFiles){
-			return loadLinkList(new File(linksListFilePath));
-		}else{
+			
 			File[] files = pathToLinkFolder.listFiles();
-			return loadLinkList(files[rnd.nextInt(files.length)]);
+			while(files.length == 0){
+				try {
+					Thread.sleep(100L);
+					files = pathToLinkFolder.listFiles();
+				} catch (InterruptedException e) {
+				}
+			}
+			linkFile = files[rnd.nextInt(files.length)];
+			this.linksList = loadLinkList(linkFile);
+		}else{
+			linkFile = new File(linksListFilePath);
+			this.linksList = loadLinkList(linkFile);
 		}
+		
+		return linkFile;
 	}
 
 	public synchronized ArrayList<String> loadLinkList(File cfgFile){

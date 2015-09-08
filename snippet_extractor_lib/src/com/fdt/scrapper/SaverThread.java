@@ -34,7 +34,8 @@ public class SaverThread extends Thread
     private TaskFactory taskFactory;
     private String keysFilePath;
 
-    public boolean running = true;
+    private boolean running = true;
+    public boolean stopped = false;
 
     public SaverThread(TaskFactory taskFactory, String keysFilePath) {
 	super();
@@ -51,7 +52,10 @@ public class SaverThread extends Thread
     public void run() {
 	synchronized (this) {
 	    try{
-		while(running){	
+		while(running || !stopped){	
+			if(stopped){
+				running = false;
+		    }
 		    try{
 			SnippetTask task = null;
 			if(taskFactory.getSuccessQueue().size() > 0){
@@ -76,7 +80,7 @@ public class SaverThread extends Thread
 			}
 		    }catch(Throwable e){
 			log.error("Error occured during saving result to DB",e);
-		    } 
+		    }
 		}
 	    } finally{
 		//save keys

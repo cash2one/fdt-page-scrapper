@@ -4,13 +4,11 @@
  */
 package com.fdt.scrapper;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Random;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 
 import com.fdt.scrapper.proxy.ProxyFactory;
@@ -24,20 +22,32 @@ import com.fdt.scrapper.task.TaskFactory;
 public class MultipleSnippetGeneratorThread extends Thread {
 	private static final Logger log = Logger.getLogger(MultipleSnippetGeneratorThread.class);
 
-	private Random rnd = new Random();
-
 	private SnippetTask snippetTask = null;
 	private ProxyFactory proxyFactory = null;
 	private TaskFactory taskFactory = null;
 	private ArrayList<String> linkList = null;
+	private File linkFile = null;
+	private boolean isInsLnkFrmGenFile = false;
 
-	public MultipleSnippetGeneratorThread(SnippetTask snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory,ArrayList<String> linkList) {
+	public MultipleSnippetGeneratorThread(SnippetTask snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory,ArrayList<String> linkList, boolean isInsLnkFrmGenFile, File linkFile) {
 		super();
 
 		this.snippetTask = snippetTask;
 		this.proxyFactory = proxyFactory;
 		this.taskFactory = taskFactory;
 		this.linkList = linkList;
+		this.isInsLnkFrmGenFile = isInsLnkFrmGenFile;
+		this.linkFile = linkFile;
+		
+		//move file to processing dir
+		if(isInsLnkFrmGenFile){
+			try {
+				FileUtils.moveFile(linkFile, new File("error/",linkFile.getName()));
+				this.linkFile = new File("error/",linkFile.getName());
+			} catch (IOException e) {
+				log.error("Error during moving file");
+			}
+		}
 	}
 
 	@Override
@@ -56,6 +66,7 @@ public class MultipleSnippetGeneratorThread extends Thread {
 			try{
 				try {
 					SnippetExtractor snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList);
+					snippetExtractor.setInsLnkFrmGenFile(isInsLnkFrmGenFile);
 					generatedContent = snippetExtractor.extractSnippets().getResult();
 				}
 				catch (Exception e) {
@@ -70,6 +81,9 @@ public class MultipleSnippetGeneratorThread extends Thread {
 
 					}else{
 						taskFactory.reprocessingTask(snippetTask);
+					}
+					if(isInsLnkFrmGenFile && linkFile != null && linkFile.exists()){
+						linkFile.delete();
 					}
 				}
 			} finally{
