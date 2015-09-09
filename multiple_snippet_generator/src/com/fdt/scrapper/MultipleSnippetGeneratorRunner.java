@@ -1,17 +1,16 @@
 package com.fdt.scrapper;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -182,6 +181,8 @@ public class MultipleSnippetGeneratorRunner{
 	public void execute(){
 		try{
 			synchronized (this) {
+				ExecutorService executor = Executors.newFixedThreadPool(taskFactory.getMAX_THREAD_COUNT());
+				
 				MultipleSnippetGeneratorThread newThread = null;
 				log.info("Total tasks: "+taskFactory.getTaskQueue().size());
 
@@ -199,7 +200,7 @@ public class MultipleSnippetGeneratorRunner{
 						}
 						
 						newThread = new MultipleSnippetGeneratorThread(task, proxyFactory, taskFactory, linksList, addLinkFromFolder, linkFile);
-						newThread.start();
+						executor.submit(newThread);
 						continue;
 					}
 					try {

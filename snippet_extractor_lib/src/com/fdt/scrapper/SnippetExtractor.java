@@ -283,7 +283,7 @@ public class SnippetExtractor {
 
 			log.trace("------------------------------------------------------START-----------------------------------------------------");
 			log.trace(htmlStr);
-			appendLineToFile(htmlStr, new File("./responce.html"));
+			//appendLineToFile(htmlStr, new File("./responce.html"));
 			log.trace("-------------------------------------------------------END------------------------------------------------------");
 			html = Jsoup.parse(htmlStr);
 			return html;

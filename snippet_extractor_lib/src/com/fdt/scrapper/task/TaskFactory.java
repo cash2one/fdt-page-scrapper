@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.log4j.Logger;
 
@@ -16,9 +17,9 @@ public class TaskFactory {
 
 	private static TaskFactory instance = null;
 
-	private static Integer MAX_THREAD_COUNT = 100;
+	private static AtomicInteger MAX_THREAD_COUNT = new AtomicInteger(100);
 	public static Integer MAX_ATTEMP_COUNT = 50;
-	protected int runThreadsCount = 0;
+	protected AtomicInteger runThreadsCount = new AtomicInteger(0);
 
 	/**
 	 * HashMap<process_program,queue_for_process_program>
@@ -42,25 +43,25 @@ public class TaskFactory {
 		errorQueue.clear();
 	}
 
-	public synchronized static Integer getMAX_THREAD_COUNT() {
-		return MAX_THREAD_COUNT;
+	public static Integer getMAX_THREAD_COUNT() {
+		return MAX_THREAD_COUNT.get();
 	}
 
-	public synchronized static void setMAX_THREAD_COUNT(Integer mAXTHREADCOUNT) {
-		MAX_THREAD_COUNT = mAXTHREADCOUNT;
+	public static void setMAX_THREAD_COUNT(Integer mAXTHREADCOUNT) {
+		MAX_THREAD_COUNT.set(mAXTHREADCOUNT);
 	}
 
 	public ArrayList<SnippetTask> getErrorQueue() {
 		return errorQueue;
 	}
 
-	public synchronized void incRunThreadsCount() {
-		runThreadsCount++;
+	public void incRunThreadsCount() {
+		runThreadsCount.incrementAndGet();
 		log.debug("INC thread: " + runThreadsCount);
 	}
 
-	public synchronized void decRunThreadsCount(SnippetTask task) {
-		runThreadsCount--;
+	public void decRunThreadsCount(SnippetTask task) {
+		runThreadsCount.decrementAndGet();
 		log.debug("DEC thread: " + runThreadsCount);
 		this.notifyAll();
 	}
@@ -120,7 +121,7 @@ public class TaskFactory {
 	 */
 	public synchronized SnippetTask getTask(){
 		synchronized (this) {
-			if(runThreadsCount < MAX_THREAD_COUNT){
+			if(runThreadsCount.get() < MAX_THREAD_COUNT.get()){
 				if(!isTaskFactoryEmpty()){
 					return taskQueue.remove(rnd.nextInt(taskQueue.size()));
 				}
@@ -218,6 +219,6 @@ public class TaskFactory {
 	}
 
 	public synchronized int getRunThreadsCount() {
-		return runThreadsCount;
+		return runThreadsCount.get();
 	}
 }
