@@ -254,10 +254,10 @@ public class VideoCreator {
 	private static int calculateFrameRate(File inputFile){
 		long bitRate = 0;
 
-		for(int i = 5; i <= 60; i +=5){
+		for(int i = 15; i <= 30; i +=5){
 			bitRate = (inputFile.length()*8*i*100)/1500;
 			if(bitRate > successBitrate){
-				log.debug(String.format("Calculated bitrate: %d, frameRate: %d",bitRate, i));
+				log.info(String.format("Calculated bitrate: %d, frameRate: %d",bitRate, i));
 				System.out.println(String.format("Calculated bitrate: %d, frameRate: %d",bitRate, i));
 				return i;
 			}

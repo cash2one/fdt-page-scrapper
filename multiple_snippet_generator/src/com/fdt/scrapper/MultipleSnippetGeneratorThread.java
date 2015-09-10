@@ -52,7 +52,7 @@ public class MultipleSnippetGeneratorThread implements Callable<String> {
 	}
 
 	@Override
-	public String call()
+	public String call() throws Exception
 	{
 		taskFactory.incRunThreadsCount();
 		boolean errorExist = false;

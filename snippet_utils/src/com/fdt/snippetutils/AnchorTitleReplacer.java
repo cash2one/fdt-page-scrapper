@@ -15,6 +15,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -69,18 +73,13 @@ public class AnchorTitleReplacer {
 
 	private int repeatCount;
 
-	private boolean isDeleteUsedLine = false;
-
 	ProxyFactory proxyFactory;
 
 	private boolean replaceWithBing = false;
 
 	private String source = "BING";
 
-	private ArrayList<String> usedLines = new ArrayList<String>();
-	private ArrayList<String> newLines = new ArrayList<String>();
-
-	private Integer currentThreadCount = 0;
+	private AtomicInteger currentThreadCount = new AtomicInteger(0);
 	private Integer maxThreadCount = 1;
 	private Long sleepTime = 50L;
 
@@ -120,7 +119,6 @@ public class AnchorTitleReplacer {
 		this.anchorFilePath = ConfigManager.getInstance().getProperty(ANCHOR_FILE_PATH_LABEL);
 		this.outputPath = ConfigManager.getInstance().getProperty(OUTPUT_PATH_LABEL);
 		this.titlesFilePath = ConfigManager.getInstance().getProperty(TITLES_FILE_PATH_LABEL);
-		this.isDeleteUsedLine = Boolean.parseBoolean(ConfigManager.getInstance().getProperty(IS_DELETE_USED_LINE_LABEL));
 		this.repeatCount = Integer.parseInt(ConfigManager.getInstance().getProperty(REPEAT_COUNT_LABEL));
 
 		this.maxLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MAX_LINE_COUNT_LABEL));
@@ -161,11 +159,12 @@ public class AnchorTitleReplacer {
 		Pattern pattern = Pattern.compile(patternStr);
 
 		for(String title: titles){
-			if(replaceWithBing){
+			/*if(replaceWithBing){
 				patternStr = "(.*)\">(.*)</a>(.*)";
 			}else{
 				patternStr = "(.*)\">(" + title + ")</a>(.*)";
-			}
+			}*/
+			patternStr = "(.*)\">(" + title + ")</a>(.*)";
 			pattern = Pattern.compile(patternStr);
 			titlesPattern.add(pattern);
 		}
@@ -184,7 +183,7 @@ public class AnchorTitleReplacer {
 		}
 
 		//
-		
+
 		try{
 			for(int i = 0; i < this.repeatCount; i++){
 				HashMap<String, Pattern> linePttrnMpngNew = new HashMap<String, Pattern>(linePttrnMpng);
@@ -199,19 +198,22 @@ public class AnchorTitleReplacer {
 
 	private void loop(HashMap<String, Pattern> lines, ArrayList<String> keys, ArrayList<String> titles) throws IOException, InterruptedException{
 
+		ExecutorService extSrv = Executors.newFixedThreadPool(maxThreadCount);
+
 		while(lines.size() > 0){
 
-			while( currentThreadCount == maxThreadCount ){
+			while( currentThreadCount.get() == maxThreadCount ){
 				Thread.sleep(sleepTime);
 			}
 
 			HashMap<String, Pattern> rndLines = getRndLines(lines, keys);
 
 			ReplacerThread rplcrThrd = new ReplacerThread(this, rndLines, titles);
-			rplcrThrd.start();
+			extSrv.submit(rplcrThrd);
 		}
 
-		while( currentThreadCount > 0 ){
+		extSrv.shutdown();
+		while( currentThreadCount.get() > 0 ){
 			Thread.sleep(sleepTime);
 		}
 
@@ -234,7 +236,7 @@ public class AnchorTitleReplacer {
 		return rndLines4Process;
 	}
 
-	private class ReplacerThread extends Thread {
+	private class ReplacerThread implements Runnable{
 
 		private HashMap<String, Pattern> lines;
 		private ArrayList<String> titles;
@@ -249,24 +251,17 @@ public class AnchorTitleReplacer {
 
 		@Override
 		public void run() {
+			replacer.incThrdCnt();
 			ArrayList<String> rndLinesProcessed = null;
 
 			try{
 				rndLinesProcessed = processLines(lines, titles);
 				//Save file
 				File fileToSave = new File(outputPath, String.valueOf(System.currentTimeMillis())+lines.hashCode());
-				appendLinesToFile(rndLinesProcessed, fileToSave);
-			} catch (IOException e) {
-				log.error("Error occured saving lines to file: ", e);
+				appendLinesToFile(rndLinesProcessed, fileToSave, false);
 			}finally{
 				replacer.decThrdCnt();
 			}
-		}
-
-		@Override
-		public void start(){
-			replacer.incThrdCnt();
-			super.start();
 		}
 	}
 
@@ -291,21 +286,26 @@ public class AnchorTitleReplacer {
 							if(fullTitle.equals(bookName)){
 								log.debug("NEW TITLE FOUND: " + fullTitle);
 							}*/
-					if(replaceWithBing){
-						do{
-							newTitle = "";
-							try {
-								newTitle = getSnippet(fullTitle).getTitle();
-							} catch (Exception e) {
-								log.error(String.format("Error occured during getting snippets: %s", e.getMessage()), e);
-							} 
-						}while("".equals(newTitle));
+					if(replaceWithBing)
+					{
+						newTitle = "";
+						try {
+							newTitle = getSnippet(fullTitle).getTitle();
+						} catch (Exception e) {
+							log.warn(String.format("Error occured during getting snippets: %s", e.getMessage()), e);
+						} 
+
+						if("".equals(newTitle)){
+							appendLinesToFile(line, new File("result_not_found.txt"), true);
+							newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
+						}
 						//newLine = line.replace(fullTitle, newTitle);
 						newLine = line.replace(fullTitle, newTitle);
 					}else{
 						newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
 						newLine = line.replace(fullTitle, newTitle);
 					}
+					newLine = newLine.replaceAll("\\\\", "");
 					output.add(newLine);
 					//System.out.println("New line: " + newLine);
 				}else{
@@ -366,25 +366,39 @@ public class AnchorTitleReplacer {
 		return titles;
 	}
 
-	private static void appendLinesToFile(ArrayList<String> lines, File file) throws IOException {
-		if(file.exists()){
-			file.delete();
+	private synchronized static void appendLinesToFile(String line, File file, boolean append) {
+		ArrayList<String> lines = new ArrayList<>();
+		lines.add(line);
+		appendLinesToFile(lines, file, append);
+	}
+
+	private static void appendLinesToFile(ArrayList<String> lines, File file, boolean append) {
+		if(!append){
+			if(file.exists()){
+				file.delete();
+			}
 		}
 
 		BufferedWriter bufferedWriter = null;
 		try {
 			//Construct the BufferedWriter object
 			bufferedWriter = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(file), "UTF8"));
+					new FileOutputStream(file,append), "UTF8"));
 			for(String line: lines){
 				bufferedWriter.append(line);
 				bufferedWriter.newLine();
 			}
+		} catch (IOException e) {
+			log.warn(String.format("Error occured during saving collection string to file %s", file.getName()));
 		} finally {
 			//Close the BufferedWriter
 			if (bufferedWriter != null) {
-				bufferedWriter.flush();
-				bufferedWriter.close();
+				try {
+					bufferedWriter.flush();
+					bufferedWriter.close();
+				} catch (IOException e) {
+					log.warn(String.format("Error occured closing file %s", file.getName()));
+				}
 			}
 		}
 	}
@@ -397,7 +411,7 @@ public class AnchorTitleReplacer {
 		ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(snippetTask);
 
 		if(snippets.size() == 0){
-			throw new IOException("Could not extract snippets");
+			throw new IOException("Could not extract snippets. Snippet extracted size == 0");
 		}else{
 			return snippets.get(rnd.nextInt(snippets.size()));
 		}
@@ -409,12 +423,11 @@ public class AnchorTitleReplacer {
 
 		if("GOOGLE".equals(source.toUpperCase().trim())){
 			task = new GoogleSnippetTask(key);
-			task.setPage(rnd.nextInt(9));
+			task.setPage(rnd.nextInt(50));
 		} else
 			if("BING".equals(source.toUpperCase().trim())){
 				task = new BingSnippetTask(key);
-				//TODO Uncomment
-				//task.setPage(1+rnd.nextInt(50));
+				task.setPage(1+rnd.nextInt(50));
 			} else
 				if("TUT".equals(source.toUpperCase().trim())){
 					task = new TutSnippetTask(key);
@@ -430,7 +443,7 @@ public class AnchorTitleReplacer {
 
 	private void incThrdCnt(){
 		synchronized (this) {
-			currentThreadCount++;
+			currentThreadCount.incrementAndGet();
 			log.debug("Current thread count: " + currentThreadCount);
 			notifyAll();
 		}
@@ -439,7 +452,7 @@ public class AnchorTitleReplacer {
 
 	private void decThrdCnt(){
 		synchronized (this) {
-			currentThreadCount--;
+			currentThreadCount.decrementAndGet();
 			log.debug("Current thread count: " + currentThreadCount);
 			notifyAll();
 		}

@@ -25,7 +25,6 @@ import java.util.zip.GZIPInputStream;
 import javax.xml.xpath.XPathExpressionException;
 
 import org.apache.log4j.Logger;
-import org.htmlcleaner.HtmlCleaner;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -117,8 +116,7 @@ public class SnippetExtractor {
 					snippetContent = getSnippetsContent(snippets);
 				}
 			}catch(Exception e){
-				log.error("Error during getting snippets content",e);
-				e.printStackTrace();
+				log.warn("Error during getting snippets content",e);
 			}
 			attempt++;
 		}while((snippetContent == null || "".equals(snippetContent.trim())) && attempt < maxAttemptCount);
@@ -130,26 +128,14 @@ public class SnippetExtractor {
 		//calculate snippets count
 		int snipCount = 0;
 		int linkCount = 0;
-		if(snippets.size() <= MIN_SNIPPET_COUNT){
-			snipCount = snippets.size();
-		}else{
-			int randomValue = getRandomValue(MIN_SNIPPET_COUNT, MAX_SNIPPET_COUNT);
-			if(randomValue <= snippets.size()){
-				snipCount = randomValue;
-			}else{
-				snipCount = snippets.size();
-			}
-		}
+
+		snipCount = getSnipCount(snippets);
+
 		log.debug("Keywords: task.getKeyWords(). Snippet count: " + snipCount);
 		StringBuilder snippetsContent = new StringBuilder();
 
 		//get links count
-		int randomValue = getRandomValue(MIN_LINK_COUNT, MAX_LINK_COUNT);
-		if(randomValue > LINKS_COUNT){
-			linkCount = LINKS_COUNT;
-		}else{
-			linkCount = randomValue;
-		}
+		linkCount = getLinkCount();
 		int snippetLinked = 0;
 
 		int indexShift = getRandomValue(0,snippets.size()-snipCount); 
@@ -170,24 +156,56 @@ public class SnippetExtractor {
 		return snippetsContent.toString();
 	}
 
-	private String getSnippetsContentFromFolder(ArrayList<Snippet> snippets) 
-	{
-		int snipCount = 0;
-		//calculate snippets count
-		if(snippets.size() < linkList.size()){
-			log.warn(String.format("Link size (%s) is greater than snippets size (%s)", linkList.size(), snippets.size()));
-			return null;
+	private int getLinkCount() {
+		int linkCount;
+		int randomValue = getRandomValue(MIN_LINK_COUNT, MAX_LINK_COUNT);
+		if(randomValue > LINKS_COUNT){
+			linkCount = LINKS_COUNT;
 		}else{
-			snipCount = linkList.size() + rnd.nextInt(MAX_EXTRA_SNIPPETS+1);
-			if(snippets.size() < snipCount){
+			linkCount = randomValue;
+		}
+		return linkCount;
+	}
+
+	private int getSnipCount(ArrayList<Snippet> snippets) {
+		int snipCount;
+		if(snippets.size() <= MIN_SNIPPET_COUNT){
+			snipCount = snippets.size();
+		}else{
+			int randomValue = getRandomValue(MIN_SNIPPET_COUNT, MAX_SNIPPET_COUNT);
+			if(randomValue <= snippets.size()){
+				snipCount = randomValue;
+			}else{
 				snipCount = snippets.size();
 			}
 		}
+		return snipCount;
+	}
+
+	private String getSnippetsContentFromFolder(ArrayList<Snippet> snippets) 
+	{
+		int snipCount = 0;
+		int linkCount = linkList.size();
+		//calculate snippets count
+		/*if(getRandomValue(MIN_LINK_COUNT, MAX_LINK_COUNT) == 0){
+			linkCount = 0;
+		}*/
+
+		if(snippets.size() < linkCount){
+			log.warn(String.format("Link size (%s) is greater than snippets size (%s)", linkCount, snippets.size()));
+			return null;
+		}else{
+			//if(linkCount > 0){
+			snipCount = linkCount + rnd.nextInt(MAX_EXTRA_SNIPPETS+1);
+			if(snippets.size() < snipCount){
+				snipCount = snippets.size();
+			}
+			/*}else{
+				snipCount = getSnipCount(snippets);
+			}*/
+		}
 
 		StringBuilder snippetsContent = new StringBuilder();
-
-		//get links count
-		int linkCount = linkList.size();
 
 		//Get random snippets to insert
 		while(snippets.size() > snipCount){
@@ -195,11 +213,12 @@ public class SnippetExtractor {
 		}
 
 		Integer rndValue = -1;
-		List<Integer> rndIdx = new ArrayList<Integer>();
+		List<Integer> rndIdxWOLinks = new ArrayList<Integer>();
+
 		for(int i = 0; i < (snipCount-linkCount); i++){
 			rndValue = rnd.nextInt(snipCount);
-			if(!rndIdx.contains(rndValue)){
-				rndIdx.add(rndValue);
+			if(!rndIdxWOLinks.contains(rndValue)){
+				rndIdxWOLinks.add(rndValue);
 			}else{
 				i--;
 			}
@@ -208,11 +227,11 @@ public class SnippetExtractor {
 		log.debug(String.format("Snippets.size() = (%d); linkList.size() = (%d), snipCount = (%d)", snippets.size(), linkList.size(), snipCount));
 		int lnkIdx = 0;
 		for(int i = 0; i < snipCount; i++){
-			if(!rndIdx.contains(i)){
+			if( !rndIdxWOLinks.contains(i) ){
 				//add link to snipper
-				addLinkFromFolderToSnippetContent(snippets.get(i), linkList.get(lnkIdx++));
-				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
+				addLinkFromFolderToSnippetContent(snippets.get(i), linkList.get(lnkIdx++).replaceAll("<br />", ""));
 			}
+			snippetsContent.append(snippets.get(i).toString()).append("\r\n");
 		}
 
 		return snippetsContent.toString();
@@ -237,15 +256,17 @@ public class SnippetExtractor {
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0"); 
 			conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 			conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
-			conn.addRequestProperty("Accept-Language","en-US, en;q=0.8");
+			conn.addRequestProperty("Accept-Language","en-US,en;q=0.9,ja;q=0.8,fr;q=0.7,de;q=0.6,es;q=0.5,it;q=0.4,nl;q=0.3,sv;q=0.2,nb;q=0.1");
 			conn.addRequestProperty("Accept-Encoding","gzip");
 			fillExtraParamsFromTask(conn, snippetTask);
 			conn.setDoInput(true);
 			conn.setDoOutput(false);
 
-			HtmlCleaner cleaner = new HtmlCleaner();
-
 			int respCode = conn.getResponseCode();
+
+			if(respCode != 200){
+				log.error(String.format("Responce code not equals 200 for proxy %s", proxy.toString()));
+			}
 
 			if(snippetTask.isBanPage(respCode)){
 				//TODO Save proxy to banned list
@@ -255,8 +276,6 @@ public class SnippetExtractor {
 			is = conn.getInputStream();
 
 			String encoding = conn.getContentEncoding();
-
-			InputStream inputStreamPage = null;
 
 			Document html = null;
 			String htmlStr;
@@ -328,7 +347,7 @@ public class SnippetExtractor {
 		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 		conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 		conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
-		conn.addRequestProperty("Accept-Language","en-US, en;q=0.8");
+		conn.addRequestProperty("Accept-Language","en-US,en;q=0.9,ja;q=0.8,fr;q=0.7,de;q=0.6,es;q=0.5,it;q=0.4,nl;q=0.3,sv;q=0.2,nb;q=0.1");
 		conn.addRequestProperty("Accept-Encoding","gzip");
 
 		@SuppressWarnings("unused")

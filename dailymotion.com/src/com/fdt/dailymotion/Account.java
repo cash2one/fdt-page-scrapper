@@ -7,6 +7,7 @@ public class Account {
 	private String email = "";
 	private String pass = "";
 	private HashMap<String,String> cookie = new HashMap<String, String>();
+	private boolean logged = false;
 	
 	private AccountFactory accountFactory;
 
@@ -70,6 +71,14 @@ public class Account {
 		return cookie.get(key);
 	}
 	
+	public boolean isLogged() {
+		return logged;
+	}
+
+	public void setLogged(boolean logged) {
+		this.logged = logged;
+	}
+
 	public String toString(){
 		return email + ";" + pass + ";" + login;
 	}

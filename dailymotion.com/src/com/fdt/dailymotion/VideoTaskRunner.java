@@ -197,7 +197,7 @@ public class VideoTaskRunner {
 				NewsTask task = null;
 				
 				while((!taskFactory.isTaskFactoryEmpty() && ((account = accountFactory.getAccount()) != null)) || taskFactory.getRunThreadsCount() > 0){
-
+					
 					log.trace("Try to get request from RequestFactory queue.");
 					log.trace("Account: " + account);
 					if(account != null)
