@@ -4,6 +4,7 @@
  */
 package com.fdt.ui.runner;
 
+import com.fdt.scrapper.ICallback;
 import com.fdt.scrapper.ScrapperTaskRunner;
 import java.io.File;
 import java.io.FileReader;
@@ -47,6 +48,8 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
     
     private static final String DATE_FORMAT = "yyyy_MM_dd_HH_mm_ss";
     private static final Logger log = Logger.getLogger(ScrapperRunnerTopComponent.class);
+    
+    private ScrapperTaskRunner taskRunner;
 
     public ScrapperRunnerTopComponent() {
         initComponents();
@@ -87,6 +90,8 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
         jTextField5 = new javax.swing.JTextField();
         jCheckBox1 = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
+        jLabel7 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
 
         jFileChooser2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,6 +156,11 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
             }
         });
 
+        org.openide.awt.Mnemonics.setLocalizedText(jLabel7, org.openide.util.NbBundle.getMessage(ScrapperRunnerTopComponent.class, "ScrapperRunnerTopComponent.jLabel7.text")); // NOI18N
+
+        jTextField6.setEditable(false);
+        jTextField6.setText(org.openide.util.NbBundle.getMessage(ScrapperRunnerTopComponent.class, "ScrapperRunnerTopComponent.jTextField6.text")); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -166,9 +176,15 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField4))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel5))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jPasswordField1)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jPasswordField1)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE)))))
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(92, 92, 92)
@@ -213,7 +229,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jCheckBox1)
                     .addComponent(jCheckBox2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 6, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -221,9 +237,12 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addComponent(jButton1))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -240,7 +259,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(141, Short.MAX_VALUE))
+                .addContainerGap(125, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -305,16 +324,35 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
         if(resultFile.exists() && !scrapResultAppendToPrevResult){
             resultFile.delete();
         }
+        
+        
         //TODO Start scrapper
         try {
-            ScrapperTaskRunner taskRunner = new ScrapperTaskRunner(login, pass, proxyFilePath, urlsFilePath, maxThreadCount, proxyDelay, "../success_result.csv",scrapResultFromInternet, scrapResultAppendToPrevResult);
-            taskRunner.run();
+            taskRunner = new ScrapperTaskRunner(login, pass, proxyFilePath, urlsFilePath, maxThreadCount, proxyDelay, "../success_result.csv",scrapResultFromInternet, scrapResultAppendToPrevResult, new CallBack());
+            Thread thread = new Thread(taskRunner);
+            thread.start();
+            jButton1.setEnabled(false);
         } catch (Throwable e) {
             log.error("Error occured during page scrap",e);
         }
-
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private class CallBack implements ICallback{
+        @Override       
+        public Object callback(){
+            int success = taskRunner.getTaskFactory().getSuccessCount();
+            int error = taskRunner.getTaskFactory().getErrorCount();
+            int total = taskRunner.getTaskFactory().getTotalCount();
+            jTextField6.setText("Обработанор " + (success+error) + " из " + total);
+            if(total == (success + error)){
+                jButton1.setEnabled(true);
+            }else{
+                jButton1.setEnabled(false);
+            }
+            return null;
+        }
+    }
+    
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField4ActionPerformed
@@ -334,6 +372,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
@@ -341,6 +380,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
 
     @Override

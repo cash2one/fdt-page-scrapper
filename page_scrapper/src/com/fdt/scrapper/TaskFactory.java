@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -28,26 +29,32 @@ public class TaskFactory {
 	public static Integer MAX_ATTEMP_COUNT = 50;
 	protected int runThreadsCount = 0;
 	
+	private AtomicInteger successCount = new AtomicInteger(0);
+	private AtomicInteger errorCount = new AtomicInteger(0);
+	private int totalCount;
+	
 	private static final String pattern = "(http[s]?://)?(www[\\d]{0,1}\\.)?([^/]*)/(.*)";
 	private static final String ipPattern="[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}";
+	
+	private ICallback onAddListener;
 
 	/**
 	 * HashMap<process_program,queue_for_process_program>
 	 * 
 	 */
 	private ArrayList<PageTasks> taskQueue;
-	private ArrayList<PageTasks> resultQueue;
+	private ArrayList<PageTasks> successQueue;
 	private ArrayList<PageTasks> errorQueue;
 
 	private TaskFactory(){
 		taskQueue = new ArrayList<PageTasks>();
-		resultQueue = new ArrayList<PageTasks>();
+		successQueue = new ArrayList<PageTasks>();
 		errorQueue = new ArrayList<PageTasks>();
 	}
 	
 	public void clear(){
 	    taskQueue.clear();
-	    resultQueue.clear();
+	    successQueue.clear();
 	    errorQueue.clear();
 	}
 
@@ -92,7 +99,11 @@ public class TaskFactory {
 				return true;
 			}
 			else{
+				errorCount.incrementAndGet();
 				errorQueue.add(task);
+				if(onAddListener != null){
+					onAddListener.callback();
+				}
 				log.error("Task was put to error queue: " + task.toString());
 				return false;
 			}
@@ -106,7 +117,11 @@ public class TaskFactory {
 	 */
 	public synchronized void putTaskInSuccessQueue(PageTasks result){
 		synchronized (this) {
-			resultQueue.add(result);
+			successCount.incrementAndGet();
+			successQueue.add(result);
+			if(onAddListener != null){
+				onAddListener.callback();
+			}
 		}
 	}
 
@@ -148,6 +163,7 @@ public class TaskFactory {
 			for(PageTasks task : successResult){
 				String key = task.getDomain().getName();
 				if(domainList.containsKey(key)){
+					//remove processed domains
 					domainList.remove(key);
 				}
 			}
@@ -236,7 +252,7 @@ public class TaskFactory {
 		for(Domain domain : domainList.values()){
 			taskQueue.add(new PageTasks(domain));
 		}
-		
+		totalCount = taskQueue.size();
 		return taskQueue;
 	}
 
@@ -245,10 +261,30 @@ public class TaskFactory {
 	}
 
 	public synchronized ArrayList<PageTasks> getResultQueue() {
-		return resultQueue;
+		return successQueue;
 	}
 
 	public synchronized int getRunThreadsCount() {
 		return runThreadsCount;
+	}
+	
+	public int getSuccessCount() {
+		return successCount.get();
+	}
+	
+	public int getErrorCount() {
+		return errorCount.get();
+	}
+
+	public int getTotalCount() {
+		return totalCount;
+	}
+
+	public ICallback getOnAddListener() {
+		return onAddListener;
+	}
+
+	public void setOnAddListener(ICallback onAddListener) {
+		this.onAddListener = onAddListener;
 	}
 }

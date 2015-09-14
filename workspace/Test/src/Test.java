@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
@@ -47,7 +52,34 @@ public class Test {
         System.out.println("Video Created");*/
     	
     	String test = "Seon in Korea Taego Bou Jinul Seongcheol Zen in the USA D. T. Suzuki Hakuun Yasutani Taizan Maezumi Shunryū Suzuki Seungsahn Category: Zen Buddhists …";
-    	System.out.println(test.replaceAll("(\\.){2,}", ".").replaceAll("…", ".").trim()); 
+    	System.out.println(test.replaceAll("(\\.){2,}", ".").replaceAll("…", ".").trim());
+    	
+    	ExecutorService extService = Executors.newFixedThreadPool(5);
+    	Future<String> result = extService.submit(new Callable<String>(){
+
+			public String call() throws Exception {
+				throw new Exception("Callable exception");
+				//return "Callable";
+			}
+    		
+    	});
+    	
+    	Future result2 = extService.submit(new Runnable(){
+			public void run() {
+			}
+    	});
+    	
+    	try {
+			System.out.println(result.get());
+			System.out.println(result2.get());
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
 
     }
     

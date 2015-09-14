@@ -9,7 +9,7 @@
 	</layout>
 </appender>
 <root>
-	<level value="DEBUG" />
+	<level value="TRACE" />
 	<appender-ref ref="logfile" />
 </root>
 </log4j:configuration>

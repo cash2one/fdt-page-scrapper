@@ -16,7 +16,7 @@ import com.fdt.scrapper.util.ResultParser;
 /**
  * @author VarenKoks
  */
-public class ScrapperTaskRunner {
+public class ScrapperTaskRunner implements Runnable{
 	private static final Logger log = Logger.getLogger(ScrapperTaskRunner.class);
 
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
@@ -33,10 +33,12 @@ public class ScrapperTaskRunner {
 	private SaverThreadPS saver;
 	
 	private TaskFactory taskFactory;
+	
+	private ICallback callback;
 
 	//private ArrayList<Thread> threads = new ArrayList<Thread>();
 
-	public ScrapperTaskRunner(final String login, final char[] pass, String proxyFilePath, String urlsFilePath, int maxThreadCount, long proxyDelay, String resultFile, boolean scrapResultViaProxy, boolean appendToPrevResult){
+	public ScrapperTaskRunner(final String login, final char[] pass, String proxyFilePath, String urlsFilePath, int maxThreadCount, long proxyDelay, String resultFile, boolean scrapResultViaProxy, boolean appendToPrevResult, ICallback callback){
 		this.proxyFilePath = proxyFilePath;
 		this.urlsFilePath = urlsFilePath;
 		this.maxThreadCount = maxThreadCount;
@@ -44,6 +46,7 @@ public class ScrapperTaskRunner {
 		this.resultFile = resultFile;
 		this.scrapResultViaProxy = scrapResultViaProxy;
 		this.appendToPrevResult = appendToPrevResult;
+		this.callback = callback;
 		Authenticator.setDefault(new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
@@ -54,7 +57,7 @@ public class ScrapperTaskRunner {
 
 	public static void main(String[] args) {
 		try{
-			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("EUR102217", "J8Fjh5TN5H".toCharArray(),"proxy.txt","links_small.txt", 1, 5000L, "success_result.csv", true, true);
+			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("EUR102217", "J8Fjh5TN5H".toCharArray(),"proxy.txt","links_small.txt", 1, 5000L, "success_result.csv", true, true, null);
 			taskRunner.run();
 
 			ResultParser rp = new ResultParser();
@@ -70,6 +73,7 @@ public class ScrapperTaskRunner {
 		synchronized (this) {
 			TaskFactory.MAX_THREAD_COUNT = maxThreadCount;
 			taskFactory = TaskFactory.getInstance();
+			taskFactory.setOnAddListener(this.callback);
 			taskFactory.clear();
 			//taskFactory.loadTaskQueue(urlsFilePath);
 			File resultFileFile = new File(resultFile);
@@ -142,5 +146,9 @@ public class ScrapperTaskRunner {
 			}
 			
 		}
+	}
+	
+	public TaskFactory getTaskFactory(){
+		return taskFactory;
 	}
 }

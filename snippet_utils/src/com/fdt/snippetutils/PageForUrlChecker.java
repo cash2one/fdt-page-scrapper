@@ -3,6 +3,7 @@ package com.fdt.snippetutils;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,15 +14,12 @@ import java.net.Authenticator;
 import java.net.HttpURLConnection;
 import java.net.PasswordAuthentication;
 import java.net.Proxy;
+import java.net.SocketException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import javax.net.ssl.HttpsURLConnection;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -34,6 +32,9 @@ public class PageForUrlChecker {
 
 	private static final Logger log = Logger.getLogger(PageForUrlChecker.class);
 
+	private final String SRT_LINK_EXTRACTOR_PATTERN = "<a\\shref=\"(.*)\">(.*)</a>(.*)";
+	private final Pattern EXTRACTOR_PATTERN = Pattern.compile(SRT_LINK_EXTRACTOR_PATTERN);
+
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
 	private final static String PROXY_PASS_LABEL = "proxy_pass";
 
@@ -45,6 +46,10 @@ public class PageForUrlChecker {
 
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
 
+	private final static String IS_LINK_WRAPPED_LABEL = "is_link_wrapped";
+
+	private final static String STRING_FOR_CHECK_LABEL = "string_for_check";
+
 	private String pageListFilePath;
 
 	private ProxyFactory proxyFactory;
@@ -53,7 +58,12 @@ public class PageForUrlChecker {
 
 	private AtomicInteger currentThreadCount = new AtomicInteger(0);
 	private Integer maxThreadCount = 1;
+	private Boolean isLinkWrapped = true;
+
+	private String stringForCheck;
+
 	private Long sleepTime = 50L;
+
 
 	public static void main(String[] args) {
 		DOMConfigurator.configure("log4j_tinyurl.xml");
@@ -96,88 +106,134 @@ public class PageForUrlChecker {
 		proxyFactory.init(ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL));
 
 		this.maxThreadCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
+
+		this.isLinkWrapped = Boolean.valueOf(ConfigManager.getInstance().getProperty(IS_LINK_WRAPPED_LABEL));
+
+		this.stringForCheck = ConfigManager.getInstance().getProperty(STRING_FOR_CHECK_LABEL);
 	}
 
 	private void execute() throws IOException, InterruptedException{
 
 		ArrayList<String> pages= readFile(this.pageListFilePath);
 
-		ExecutorService extSrv = Executors.newFixedThreadPool(maxThreadCount+1);
-		extSrv.submit(saverThread);
-
 		while(pages.size() > 0)
 		{
-			/*while( currentThreadCount.get() >= maxThreadCount ){
-				Thread.sleep(sleepTime);
-			}*/
-
-			CheckerThread rplcrThrd = new CheckerThread(pages.remove(0), this, proxyFactory);
-			saverThread.addFuture(extSrv.submit(rplcrThrd));
+			if(currentThreadCount.get() < maxThreadCount){
+				CheckerThread rplcrThrd = new CheckerThread(pages.remove(0), stringForCheck, this, proxyFactory, isLinkWrapped);
+				rplcrThrd.start();
+			}else{
+				Thread.sleep(1L);
+			}
 		}
 
-		while( currentThreadCount.get() > 0 ){
+		while( currentThreadCount.get() > 0){
 			Thread.sleep(sleepTime);
 		}
 
-		saverThread.stopped = true;
-		extSrv.shutdown();
+		saverThread.saveResults();
 	}
 
-	private class CheckerThread implements Callable<CheckedResult>
+	public class CheckerThread extends Thread
 	{
-		private String site;
+		private final String site;
+		private String stringToCheck;
 		private PageForUrlChecker checker;
 		private ProxyFactory proxyFactory;
+		private boolean isLinkWrapped;
 
-		public CheckerThread(String site, PageForUrlChecker checker, ProxyFactory proxyFactory) {
+		public CheckerThread(String site, String stringToCheck, PageForUrlChecker checker, ProxyFactory proxyFactory, boolean isLinkWrapped) {
 			super();
 			this.site = site;
+			this.stringToCheck = stringToCheck;
 			this.checker = checker;
 			this.proxyFactory = proxyFactory;
+			this.isLinkWrapped = isLinkWrapped;
 		}
 
-		@Override
-		public CheckedResult call() throws Exception {
-			checker.incThrdCnt();
+		public void start(){
+			this.checker.incThrdCnt();
+			super.start();
+		}
 
-			ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
+		public void run()
+		{
+			ProxyConnector proxyConnector = null;
 			CheckedResult result = new CheckedResult(site);
-
-			String proxyTypeStr = ConfigManager.getInstance().getProperty("proxy_type");
-			Proxy proxy = proxyConnector.getConnect(proxyTypeStr);
+			int repeatCount = 0;
 
 			try{
-				log.trace("Starting checking url");
-				result.setValid(getUploadUrl(site, "http://tinyurl.com/", proxy));
-			}finally{
-				if(proxyConnector != null){
-					proxyFactory.releaseProxy(proxyConnector);
-					proxyConnector = null;
+				boolean isErrorExist = false;
+
+				do{
+					repeatCount++;
+					isErrorExist = false;
+					proxyConnector = proxyFactory.getRandomProxyConnector();
+
+					String proxyTypeStr = ConfigManager.getInstance().getProperty("proxy_type");
+					Proxy proxy = null;
+
+					String cleanLink = site;
+
+					if(isLinkWrapped){
+						cleanLink = extractLink(site);
+					}
+
+					try{
+						log.trace("Starting checking url");
+						proxy = proxyConnector.getConnect(proxyTypeStr);
+						result.setValid(getUploadUrl(cleanLink, stringToCheck, proxy));
+					}
+					catch(Exception e){
+						if(e instanceof FileNotFoundException || (e instanceof IOException && !(e instanceof SocketException))){
+							repeatCount = 6;
+						}
+						isErrorExist = true;
+						log.warn("Error occured during checking URL: " + site, e);
+					}
+					finally{
+						if(proxyConnector != null){
+							proxyFactory.releaseProxy(proxyConnector);
+							proxyConnector = null;
+						}
+					}
 				}
+				while(isErrorExist && repeatCount <= 5);
+
+				if(isErrorExist){
+					result.setValid(false);
+				}
+			}finally{
+				saverThread.addResult(result);
 				checker.decThrdCnt();
 			}
-
-			log.trace("Return result of THREAD:" + result.isValid());
-			return result;
 		}
 	}
 
-	private boolean getUploadUrl(String site, String urlToFind, Proxy proxy) {
+	private String extractLink(String wrappedLink){
+		Matcher matcher = EXTRACTOR_PATTERN.matcher(wrappedLink);
+		if(matcher.find() && matcher.group(1) != null && !"".equals(matcher.group(1).trim())){
+			return matcher.group(1).trim();
+		}else{
+			return wrappedLink;
+		}
+	}
+
+	private boolean getUploadUrl(String site, String urlToFind, Proxy proxy) throws Exception {
 		HttpURLConnection conn = null;
 		try{
 			//post news
 			URL url = new URL(site);
-			HttpsURLConnection.setFollowRedirects(false);
+			HttpURLConnection.setFollowRedirects(true);
 			conn = (HttpURLConnection) url.openConnection(proxy);
 			log.trace("Connection created.");
-			conn.setReadTimeout(60000);
-			conn.setConnectTimeout(60000);
+			conn.setReadTimeout(120000);
+			conn.setConnectTimeout(120000);
 			conn.setRequestMethod("GET");
 			conn.setDoInput(true);
 			conn.setDoOutput(false);
 
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept-Language", "en-US,en;q=0.9,ja;q=0.8,fr;q=0.7,de;q=0.6,es;q=0.5,it;q=0.4,nl;q=0.3,sv;q=0.2,nb;q=0.1");
 			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 			conn.setRequestProperty("Host", site);
@@ -190,14 +246,12 @@ public class PageForUrlChecker {
 
 			return result;
 		}catch(Exception e){
-			log.warn("Error occured during checking URL: " + site, e);
+			throw e;
 		}finally{
 			if(conn != null){
 				conn.disconnect();
 			}
 		}
-
-		return false;
 	}
 
 	private StringBuffer getResponseAsString(HttpURLConnection conn)
@@ -216,73 +270,52 @@ public class PageForUrlChecker {
 		return responseStr;
 	}
 
-	private class PageCheckerSaverThread implements Runnable{
+	private class PageCheckerSaverThread {
 
-		private ArrayList<Future<CheckedResult>> incomingList = new ArrayList<Future<CheckedResult>>();
-		private ArrayList<Future<CheckedResult>> finishedList = new ArrayList<Future<CheckedResult>>();
-		private boolean stopped = false;
-		private boolean running = false;
+		private final Integer BUFFER_SIZE = 4096;
+
+		private ArrayList<CheckedResult> results = new ArrayList<CheckedResult>();
 
 		protected PageCheckerSaverThread(){
 			super();
 		}
 
-		@Override
-		public void run() {
-			running = true;
-			// TODO Auto-generated method stub
-			while(running || !stopped){	
-				if(stopped){
-					running = false;
-				}
-
-				/*synchronized (incomingList) {
-					for(Future<CheckedResult> future: incomingList){
-						log.trace("Add future to running queue");
-						runningList.add(future);
-					}
-					incomingList.clear();
-				}
-				 */
-
-				if(incomingList.size() > 0){
-					synchronized (incomingList){						
-						for(Future<CheckedResult> future: incomingList)
-						{
-							if(future.isDone())
-							{
-								finishedList.add(future);
-								log.trace("Future is DONE");
-								try {
-									if(future.get().isValid()){
-										log.debug("Saving to success list..");
-										appendLinesToFile(future.get().getSite(), new File("./_valid_sites.txt"), true);
-									}else{
-										log.debug("Saving to success list..");
-										appendLinesToFile(future.get().getSite(), new File("./_invalid_sites.txt"), true);}
-								} catch (Exception e) {
-									log.error("Error occured during getting checking results" , e);
-								}
-							}
-						}
-
-						for(Future<CheckedResult> future : finishedList){
-							incomingList.remove(future);
-						}
-					}
-				}else{
-					try {
-						Thread.sleep(500L);
-					} catch (InterruptedException e) {
-					}
-				}
+		public void addResult(CheckedResult result){
+			synchronized (results) {
+				results.add(result);
+			}
+			if(results.size() >= BUFFER_SIZE){
+				saveResults();
 			}
 		}
 
-		public void addFuture(Future<CheckedResult> future){
-			synchronized (incomingList) {
-				log.trace("Add future to collection");
-				incomingList.add(future);
+		private void saveResults() {
+
+			StringBuffer validLines = new StringBuffer();
+			StringBuffer invalidLines = new StringBuffer();
+			ArrayList<CheckedResult> buffer = null;
+
+			synchronized (results) {
+				buffer = new ArrayList<>(results);
+				results.clear();
+			}
+
+			for(CheckedResult checkResult : buffer){
+				if(checkResult.isValid()){
+					validLines.append(checkResult.getSite()).append("\r\n");
+				}else{
+					invalidLines.append(checkResult.getSite()).append("\r\n");
+				}
+			}
+
+			try {
+				log.debug("Saving to success list..");
+				appendLinesToFile(validLines.toString(), new File("./_valid_sites.txt"), true);
+				log.debug("Saving to success list..");
+				appendLinesToFile(invalidLines.toString(), new File("./_invalid_sites.txt"), true);
+			}
+			catch (Exception e) {
+				log.error("Error occured during getting checking results" , e);
 			}
 		}
 	}
@@ -344,7 +377,7 @@ public class PageForUrlChecker {
 		return fileTitleList;
 	} 
 
-	private void appendLinesToFile(String line, File file, boolean append) {
+	private synchronized void appendLinesToFile(String line, File file, boolean append) {
 		ArrayList<String> lines = new ArrayList<>();
 		lines.add(line);
 		appendLinesToFile(lines, file, append);
@@ -358,7 +391,6 @@ public class PageForUrlChecker {
 					new FileOutputStream(file,append), "UTF8"));
 			for(String line: lines){
 				bufferedWriter.append(line);
-				bufferedWriter.newLine();
 			}
 		} catch (IOException e) {
 			log.warn(String.format("Error occured during saving collection string to file %s", file.getName()));
@@ -376,19 +408,13 @@ public class PageForUrlChecker {
 	}
 
 	private void incThrdCnt(){
-		synchronized (this) {
-			currentThreadCount.incrementAndGet();
-			log.debug("Current thread count: " + currentThreadCount);
-			notifyAll();
-		}
-
+		currentThreadCount.incrementAndGet();
+		log.debug("Current thread count: " + currentThreadCount);
 	}
 
 	private void decThrdCnt(){
-		synchronized (this) {
-			currentThreadCount.decrementAndGet();
-			log.debug("Current thread count: " + currentThreadCount);
-			notifyAll();
-		}
+		currentThreadCount.decrementAndGet();
+		log.debug("Current thread count: " + currentThreadCount);
 	}
 }
+

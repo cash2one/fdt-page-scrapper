@@ -58,6 +58,10 @@
                 <binary-origin>release/modules/ext/page_scrapper.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
+                <runtime-relative-path>ext/json-rpc-1.0.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/json-rpc-1.0.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
                 <runtime-relative-path>ext/jsoup-1.7.1-sources.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/jsoup-1.7.1-sources.jar</binary-origin>
             </class-path-extension>
@@ -68,6 +72,14 @@
             <class-path-extension>
                 <runtime-relative-path>ext/jsoup-1.7.1.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/jsoup-1.7.1.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/commons-io-2.0.1.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/commons-io-2.0.1.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/json-simple.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/json-simple.jar</binary-origin>
             </class-path-extension>
         </data>
     </configuration>
