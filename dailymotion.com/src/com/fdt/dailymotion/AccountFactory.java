@@ -238,13 +238,13 @@ public class AccountFactory
 					log.trace("Used account size incremented: " + currentCount);
 					account = accounts.get(login);
 					if(account.isLogged() || loginAccount(account)){
+						account.setLogged(true);
 						return account;
 					}else{
 						accounts.remove(account.getLogin());
 						newsPostedCount.remove(account.getLogin());
 						accountUsedInThreadCount.remove(account.getLogin());
 						continue;
-						
 					}
 				}
 			}

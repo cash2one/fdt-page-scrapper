@@ -300,7 +300,7 @@ public class NewsPoster {
 
 		while(status[0].equalsIgnoreCase("processing")){
 			//check for rejection
-			if(!account.getAccountFactory().isAccountRejected(account) && progress < 100){
+			if(!account.getAccountFactory().isAccountRejected(account) && progress <= 100){
 				log.info("Responce download string for video ID:" + videoId + " : " + respStr);
 				Thread.sleep(5000L);
 				respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/" + videoId + "\",\"args\":{\"fields\":\"status,encoding_progress\"},\"id\":0}]");

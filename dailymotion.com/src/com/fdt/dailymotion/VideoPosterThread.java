@@ -200,13 +200,33 @@ public class VideoPosterThread extends Thread{
 	}
 
 	private Integer[] createVideo(NewsTask task, boolean addAudioToFile, File previewImg, int minDur, int maxDur) throws Exception{
-		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur);
-		long bitRate = (8*task.getVideoFile().length()/maxDur);
+		//TODO Calculate bitrate via file creation
+		Integer frameRate = calculateBitRateViaFileCreation(task, addAudioToFile, previewImg, minDur, maxDur);
+		
+		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur, frameRate);
+		/*long bitRate = (8*task.getVideoFile().length()/maxDur);
 		while(bitRate < VideoCreator.successBitrate){
-			times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur, times[2]*2);
+			times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur, times[1]*2);
 			bitRate = (8*task.getVideoFile().length()/maxDur);
-		}
+		}*/
 		return times;
+	}
+	
+	private Integer calculateBitRateViaFileCreation(NewsTask task, boolean addAudioToFile, File previewImg, int minDur, int maxDur) throws IOException{
+		File testFile = new File(task.getVideoFile().getPath() + "_checker.mov");
+		Integer[] times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFile(), previewImg, new File("08.wav"), 59, 60);
+		long bitRate = (8*testFile.length()/maxDur);
+		while(bitRate < VideoCreator.successBitrate){
+			testFile.delete();
+			times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFile(), previewImg, new File("08.wav"), 59, 60, times[1] + 5);
+			bitRate = (8*testFile.length()/maxDur);
+		}
+		
+		testFile.delete();
+		
+		log.info(String.format("Calculated bitrate for file %s is %d", task.getVideoFile().getName(),times[1]));
+		
+		return times[1];
 	}
 
 

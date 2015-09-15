@@ -21,7 +21,6 @@ import com.xuggle.xuggler.IContainer;
 import com.xuggle.xuggler.IPacket;
 import com.xuggle.xuggler.IStream;
 import com.xuggle.xuggler.IStreamCoder;
-import com.xuggle.xuggler.IVideoPicture;
 
 public class VideoCreator {
 
@@ -116,7 +115,8 @@ public class VideoCreator {
 	 * @throws IOException
 	 */
 	public static Integer[] makeVideo(String filePath, File imageFile, File previewFile, File audioFile, int minDur, int maxDur) throws IOException{
-		int framePerSec = calculateFrameRate(imageFile);
+		//int framePerSec = calculateFrameRate(imageFile);
+		int framePerSec = 25;
 		return makeVideo(filePath, imageFile, previewFile, audioFile, minDur, maxDur, framePerSec);
 	}
 
@@ -212,7 +212,7 @@ public class VideoCreator {
 		for(long i = frameCount-2*framePerSec; i < frameCount; i++){
 			writer.encodeVideo(0, bgrScreen2, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
 		}
-		writer.encodeVideo(0, bgrScreen2, ((frameCount*1000)/framePerSec)-1, TimeUnit.MILLISECONDS);
+		writer.encodeVideo(0, bgrScreen2, ((frameCount*1000)/framePerSec), TimeUnit.MILLISECONDS);
 
 		bgrScreen = null;
 		bgrScreen2 = null;
@@ -248,7 +248,7 @@ public class VideoCreator {
 		long endTime = System.currentTimeMillis();
 		log.info(String.format("File for %s was generated for %s second(s)", imageFile.getName(), ((endTime-startTime)/1000)));
 
-		return new Integer[]{frameCount, framePerSec, framePerSec};
+		return new Integer[]{frameCount, framePerSec};
 	}
 
 	private static int calculateFrameRate(File inputFile){
