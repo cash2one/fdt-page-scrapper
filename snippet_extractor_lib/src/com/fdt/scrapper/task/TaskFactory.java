@@ -2,9 +2,11 @@ package com.fdt.scrapper.task;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -148,17 +150,15 @@ public class TaskFactory {
 	private synchronized ArrayList<String> loadKeyWordsList(String cfgFilePath) {
 		ArrayList<String> keyWordsList = new ArrayList<String>();
 		synchronized (this){ 
-			FileReader fr = null;
 			BufferedReader br = null;
 			String line = null;
 			try {
-				fr = new FileReader(new File(cfgFilePath));
-				br = new BufferedReader(fr);
+				br = new BufferedReader(new InputStreamReader( new FileInputStream(cfgFilePath), "UTF8" ));
 
 				line = br.readLine();
-				while(line != null){
-					String utf8Line = new String(line.getBytes(),"UTF-8");
-					keyWordsList.add(utf8Line.trim());
+				while(line != null && !"".equals(line.trim())){
+					//String utf8Line = new String(line.getBytes(),"UTF-8");
+					keyWordsList.add(line.trim());
 					line = br.readLine();
 				}
 			} catch (FileNotFoundException e) {
@@ -169,12 +169,6 @@ public class TaskFactory {
 				try {
 					if(br != null)
 						br.close();
-				} catch (Throwable e) {
-					log.warn("Error while initializtion", e);
-				}
-				try {
-					if(fr != null)
-						fr.close();
 				} catch (Throwable e) {
 					log.warn("Error while initializtion", e);
 				}

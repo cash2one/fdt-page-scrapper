@@ -3,11 +3,13 @@ package com.fdt.snippetutils;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
@@ -289,8 +291,10 @@ public class AnchorTitleReplacer {
 					if(replaceWithBing)
 					{
 						newTitle = "";
+						Snippet snippet = null;
 						try {
-							newTitle = getSnippet(fullTitle).getTitle();
+							snippet = getSnippet(fullTitle);
+							newTitle = snippet.getTitle();
 						} catch (Exception e) {
 							log.warn(String.format("Error occured during getting snippets: %s", e.getMessage()), e);
 						} 
@@ -327,8 +331,7 @@ public class AnchorTitleReplacer {
 		ArrayList<String> fileTitleList = new ArrayList<String>();
 
 		try {
-			fr = new FileReader(new File(filePath));
-			br = new BufferedReader(fr);
+			br = new BufferedReader( new InputStreamReader( new FileInputStream(filePath), "UTF8" ) );
 
 			String line = br.readLine();
 			while(line != null){
@@ -410,10 +413,25 @@ public class AnchorTitleReplacer {
 		SnippetTask snippetTask = getTaskBySource(source, key);
 		ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(snippetTask);
 
+		while(snippets.size() == 0 || snippetTask.getPage() != 1){
+			snippetTask.setPage(reducePage(snippetTask.getPage()));
+			snippets = snippetExtractor.extractSnippetsFromPageContent(snippetTask);
+		}
+		
 		if(snippets.size() == 0){
 			throw new IOException("Could not extract snippets. Snippet extracted size == 0");
 		}else{
 			return snippets.get(rnd.nextInt(snippets.size()));
+		}
+	}
+	
+	private int reducePage(int currentPage){
+		if(currentPage/5 > 1){
+			log.info(String.format("Recude page from %d to %d",currentPage, currentPage/5 ));
+			return currentPage/5;
+		}else{
+			log.info(String.format("Recude page from %d to %d",currentPage, 1));
+			return 1;
 		}
 	}
 

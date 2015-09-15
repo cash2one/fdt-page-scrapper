@@ -2,9 +2,11 @@ package com.fdt.scrapper;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import java.util.ArrayList;
@@ -248,11 +250,9 @@ public class MultipleSnippetGeneratorRunner{
 
 	public synchronized ArrayList<String> loadLinkList(File cfgFile){
 		ArrayList<String> linkList = new ArrayList<String>();
-		FileReader fr = null;
 		BufferedReader br = null;
 		try {
-			fr = new FileReader(cfgFile);
-			br = new BufferedReader(fr);
+			br = new BufferedReader(new InputStreamReader( new FileInputStream(cfgFile), "UTF8" ));
 
 			String line = br.readLine();
 			while(line != null){
@@ -268,12 +268,6 @@ public class MultipleSnippetGeneratorRunner{
 			try {
 				if(br != null)
 					br.close();
-			} catch (Throwable e) {
-				log.warn("Error while initializtion", e);
-			}
-			try {
-				if(fr != null)
-					fr.close();
 			} catch (Throwable e) {
 				log.warn("Error while initializtion", e);
 			}

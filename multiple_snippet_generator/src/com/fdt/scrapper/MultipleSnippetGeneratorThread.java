@@ -61,7 +61,7 @@ public class MultipleSnippetGeneratorThread implements Callable<String> {
 			try {
 				SnippetExtractor snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList);
 				snippetExtractor.setInsLnkFrmGenFile(isInsLnkFrmGenFile);
-				generatedContent = snippetExtractor.extractSnippets().getResult();
+				generatedContent = snippetExtractor.extractSnippetsWithInsertedLinks().getResult();
 			}
 			catch (Exception e) {
 				errorExist = true;

@@ -107,9 +107,16 @@ public class SnippetExtractor {
 		do{
 			try{
 				ArrayList<Snippet> snippets = extractSnippetsFromPageContent(snippetTask);
+				
+				while(snippets.size() == 0 || snippetTask.getPage() != 1){
+					snippetTask.setPage(reducePage(snippetTask.getPage()));
+					snippets = extractSnippetsFromPageContent(snippetTask);
+				}
+				
 				if(snippets == null || snippets.size() == 0){
 					throw new Exception("Snippets size is 0. Will try to use another proxy server");
 				}
+				
 				if(isInsLnkFrmGenFile){
 					snippetContent = getSnippetsContentFromFolder(snippets);
 				}else{
@@ -122,6 +129,16 @@ public class SnippetExtractor {
 		}while((snippetContent == null || "".equals(snippetContent.trim())) && attempt < maxAttemptCount);
 
 		task.setResult(snippetContent);
+	}
+	
+	private int reducePage(int currentPage){
+		if(currentPage/5 > 1){
+			log.info(String.format("Recude page from %d to %d",currentPage, currentPage/5 ));
+			return currentPage/5;
+		}else{
+			log.info(String.format("Recude page from %d to %d",currentPage, 1));
+			return 1;
+		}
 	}
 
 	private String getSnippetsContent(ArrayList<Snippet> snippets) {
@@ -256,7 +273,7 @@ public class SnippetExtractor {
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0"); 
 			conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 			conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
-			conn.addRequestProperty("Accept-Language","en-US,en;q=0.9,ja;q=0.8,fr;q=0.7,de;q=0.6,es;q=0.5,it;q=0.4,nl;q=0.3,sv;q=0.2,nb;q=0.1");
+			conn.addRequestProperty("Accept-Language","en-US,en;q=0.9,fr;q=0.5,de;q=0.5,es;q=0.5,it;q=0.5,ru;q=0.3");
 			conn.addRequestProperty("Accept-Encoding","gzip");
 			fillExtraParamsFromTask(conn, snippetTask);
 			conn.setDoInput(true);
@@ -301,8 +318,10 @@ public class SnippetExtractor {
 			//int code = conn.getResponseCode();
 
 			log.trace("------------------------------------------------------START-----------------------------------------------------");
-			log.trace(htmlStr);
-			//appendLineToFile(htmlStr, new File("./responce.html"));
+			//log.trace(htmlStr);
+			if(log.isTraceEnabled()){
+				appendLineToFile(htmlStr, new File("./responce.html"));
+			}
 			log.trace("-------------------------------------------------------END------------------------------------------------------");
 			html = Jsoup.parse(htmlStr);
 			return html;
@@ -347,7 +366,7 @@ public class SnippetExtractor {
 		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 		conn.addRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"); 
 		conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
-		conn.addRequestProperty("Accept-Language","en-US,en;q=0.9,ja;q=0.8,fr;q=0.7,de;q=0.6,es;q=0.5,it;q=0.4,nl;q=0.3,sv;q=0.2,nb;q=0.1");
+		conn.addRequestProperty("Accept-Language","en-US,en;q=0.9,fr;q=0.5,de;q=0.5,es;q=0.5,it;q=0.5,ru;q=0.3");
 		conn.addRequestProperty("Accept-Encoding","gzip");
 
 		@SuppressWarnings("unused")
@@ -470,18 +489,13 @@ public class SnippetExtractor {
 		int minLenght = titles.size() > descs.size()?descs.size():titles.size();
 		if(titles.size() > 0){
 			for(int i = 0; i < minLenght; i++){
-				String h3Value = titles.get(i).text();
-				String pValue = descs.get(i).text();
+				String h3Value = titles.get(i).text().replaceAll("(\\.){2,}", ".").replaceAll("…", ".").trim();
+				String pValue = descs.get(i).text().replaceAll("(\\.){2,}", ".").replaceAll("…", ".").replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","").trim();
 				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim()))
 				{
-					snippets.add(
-							new Snippet(
-									h3Value.replaceAll("(\\.){2,}", ".").replaceAll("…", ".").trim(), 
-									pValue.replaceAll("(\\.){2,}", ".").replaceAll("…", ".")
-									//.replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","$1<a href=\"$2\">$2</a>$4").trim()
-									.replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","").trim()
-									)
-							);
+					snippets.add( new Snippet(h3Value,pValue));
+				}else{
+					log.warn("Empty TITLE or SNIPPET are empty.");
 				}
 			}
 		}
@@ -500,7 +514,7 @@ public class SnippetExtractor {
 		return task;
 	}
 
-	public SnippetTask extractSnippets()
+	public SnippetTask extractSnippetsWithInsertedLinks()
 	{
 		synchronized (this)
 		{

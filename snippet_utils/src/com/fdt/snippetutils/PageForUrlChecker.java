@@ -233,7 +233,7 @@ public class PageForUrlChecker {
 			conn.setDoOutput(false);
 
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			conn.setRequestProperty("Accept-Language", "en-US,en;q=0.9,ja;q=0.8,fr;q=0.7,de;q=0.6,es;q=0.5,it;q=0.4,nl;q=0.3,sv;q=0.2,nb;q=0.1");
+			conn.setRequestProperty("Accept-Language", "en-US,en;q=0.9,fr;q=0.5,de;q=0.5,es;q=0.5,it;q=0.5,nl;q=0.5,ru;q=0.3");
 			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 			conn.setRequestProperty("Host", site);
