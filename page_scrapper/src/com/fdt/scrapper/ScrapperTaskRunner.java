@@ -19,7 +19,7 @@ import com.fdt.scrapper.util.ResultParser;
 public class ScrapperTaskRunner implements Runnable{
 	private static final Logger log = Logger.getLogger(ScrapperTaskRunner.class);
 
-	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
+	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 50L;
 
 	private String proxyFilePath;
 	private String urlsFilePath;
@@ -27,13 +27,13 @@ public class ScrapperTaskRunner implements Runnable{
 	private long proxyDelay;
 	private String resultFile;
 	private boolean scrapResultViaProxy;
-	
+
 	private boolean appendToPrevResult = false;
-	
+
 	private SaverThreadPS saver;
-	
+
 	private TaskFactory taskFactory;
-	
+
 	private ICallback callback;
 
 	//private ArrayList<Thread> threads = new ArrayList<Thread>();
@@ -70,23 +70,21 @@ public class ScrapperTaskRunner implements Runnable{
 	}
 
 	public void run(){
-		synchronized (this) {
+		try{
 			TaskFactory.MAX_THREAD_COUNT = maxThreadCount;
 			taskFactory = TaskFactory.getInstance();
-			taskFactory.setOnAddListener(this.callback);
 			taskFactory.clear();
 			//taskFactory.loadTaskQueue(urlsFilePath);
 			File resultFileFile = new File(resultFile);
-			
+
 			log.debug("Append to previous result: " + appendToPrevResult);
 			if(appendToPrevResult && resultFileFile.exists()){
 				taskFactory.loadTaskQueue(urlsFilePath, resultFile);
 			}else{
 				taskFactory.loadTaskQueue(urlsFilePath, null);
 			}
-			
-			saver = new SaverThreadPS(taskFactory, this.resultFile);
-			saver.start();
+
+			saver = new SaverThreadPS(taskFactory, this.resultFile, callback);
 
 			if(scrapResultViaProxy){
 				ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
@@ -95,7 +93,7 @@ public class ScrapperTaskRunner implements Runnable{
 
 				ScrapperThread newThread = null;
 				log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
-				while(!taskFactory.isTaskFactoryEmpty() || taskFactory.runThreadsCount > 0){
+				while(!taskFactory.isTaskFactoryEmpty() || taskFactory.runThreadsCount.get() > 0){
 					log.debug("Try to get request from RequestFactory queue.");
 					PageTasks tasks = taskFactory.getTask();
 					if(null != tasks){
@@ -108,11 +106,12 @@ public class ScrapperTaskRunner implements Runnable{
 					else{
 						try {
 							log.debug("Waiting...");
-							this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
+							Thread.sleep(RUNNER_QUEUE_EMPTY_WAIT_TIME);
 						} catch (InterruptedException e) {
 							log.error("InterruptedException occured during RequestRunner process: ",e);
 						}
 					}
+					saver.saveResult();
 				}
 
 				log.debug("Task factory is empty: "+taskFactory.isTaskFactoryEmpty()+". Current working threads count is " + taskFactory.runThreadsCount);
@@ -136,18 +135,18 @@ public class ScrapperTaskRunner implements Runnable{
 					taskFactory.putTaskInSuccessQueue(pageTask);
 				}
 			}
-			
-			saver.interrupt();	
-			try {
-				saver.join();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+		}
+		finally{
+			while(taskFactory.runThreadsCount.get() > 0){
+				try {
+					Thread.sleep(500L);
+				} catch (InterruptedException e) {
+				}
 			}
-			
+			saver.saveResult(true);
 		}
 	}
-	
+
 	public TaskFactory getTaskFactory(){
 		return taskFactory;
 	}

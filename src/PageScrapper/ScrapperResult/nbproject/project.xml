@@ -66,8 +66,16 @@
                 <binary-origin>release/modules/ext/page_scrapper.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
+                <runtime-relative-path>ext/json-rpc-1.0.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/json-rpc-1.0.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
                 <runtime-relative-path>ext/log4j-1.2.15.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/log4j-1.2.15.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/json-simple.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/json-simple.jar</binary-origin>
             </class-path-extension>
         </data>
     </configuration>

@@ -290,6 +290,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
     }//GEN-LAST:event_jTextField2MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        jButton1.setEnabled(false);
         String fieldValue = null;
         String login = jTextField4.getText();
         char[] pass = jPasswordField1.getPassword();
@@ -324,16 +325,17 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
         if(resultFile.exists() && !scrapResultAppendToPrevResult){
             resultFile.delete();
         }
-        
-        
+                
         //TODO Start scrapper
         try {
             taskRunner = new ScrapperTaskRunner(login, pass, proxyFilePath, urlsFilePath, maxThreadCount, proxyDelay, "../success_result.csv",scrapResultFromInternet, scrapResultAppendToPrevResult, new CallBack());
             Thread thread = new Thread(taskRunner);
             thread.start();
+            jTextField6.setText("Обработано 0 из " + taskRunner.getTaskFactory().getTotalCount());
             jButton1.setEnabled(false);
         } catch (Throwable e) {
             log.error("Error occured during page scrap",e);
+            jButton1.setEnabled(true);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -343,7 +345,7 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
             int success = taskRunner.getTaskFactory().getSuccessCount();
             int error = taskRunner.getTaskFactory().getErrorCount();
             int total = taskRunner.getTaskFactory().getTotalCount();
-            jTextField6.setText("Обработанор " + (success+error) + " из " + total);
+            jTextField6.setText("Обработано " + (success+error) + " из " + total);
             if(total == (success + error)){
                 jButton1.setEnabled(true);
             }else{

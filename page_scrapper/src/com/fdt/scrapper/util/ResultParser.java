@@ -23,7 +23,7 @@ public class ResultParser {
 
 	public static void main(String[] args){
 		ResultParser rp = new ResultParser();
-		ArrayList<PageTasks> pt = rp.parseResultFile("success_result.csv");
+		ArrayList<PageTasks> pt = rp.parseResultFile("../success_result.csv");
 		System.out.println(pt.toString());
 	}
 
