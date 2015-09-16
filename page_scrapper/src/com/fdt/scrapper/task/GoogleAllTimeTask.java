@@ -25,7 +25,7 @@ public class GoogleAllTimeTask extends Task {
 	}
 
 	@Override
-	public void setResult(ArrayList<String> result) {
+	public boolean setResult(ArrayList<String> result) {
 		String resultStr = result.get(0);
 		log.debug("URL: " + this.getUrlToScrap() + "; RESULT = ["+resultStr+"]");
 		resultStr = resultStr.toLowerCase();
@@ -36,5 +36,7 @@ public class GoogleAllTimeTask extends Task {
 		}else{
 			this.result = new ArrayList<String>(Arrays.asList("0"));
 		}
+		
+		return false;
 	}
 }

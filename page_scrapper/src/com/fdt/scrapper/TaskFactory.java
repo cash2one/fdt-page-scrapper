@@ -32,6 +32,8 @@ public class TaskFactory {
 
 	private static final String pattern = "(http[s]?://)?(www[\\d]{0,1}\\.)?([^/]*)/(.*)";
 	private static final String ipPattern="[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}";
+	
+	private ICallback onLoadTaskListener = null;
 
 	/**
 	 * HashMap<process_program,queue_for_process_program>
@@ -162,6 +164,9 @@ public class TaskFactory {
 		log.debug("Task for execution count:" + domainList.size());
 		fillTaskQueue(domainList);
 		domainList.clear();
+		if(onLoadTaskListener != null){
+			onLoadTaskListener.callback();
+		}
 	}
 
 	private  HashMap<String, Domain> loadDomainsList(String cfgFilePath) {
@@ -287,5 +292,13 @@ public class TaskFactory {
 
 	public int getTotalCount() {
 		return totalCount;
+	}
+
+	public ICallback getOnLoadTaskListener() {
+		return onLoadTaskListener;
+	}
+
+	public void setOnLoadTaskListener(ICallback onLoadTaskListener) {
+		this.onLoadTaskListener = onLoadTaskListener;
 	}
 }

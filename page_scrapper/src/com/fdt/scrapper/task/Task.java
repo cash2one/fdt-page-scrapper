@@ -30,7 +30,7 @@ public abstract class Task{
 	}
 
 	//Parse result there
-	public abstract void setResult(ArrayList<String> result);
+	public abstract boolean setResult(ArrayList<String> result);
 
 	public Task(ArrayList<String> xPath, boolean xmlParce){
 		super();

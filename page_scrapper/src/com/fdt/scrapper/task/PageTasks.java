@@ -10,6 +10,8 @@ public class PageTasks
 	public static final String ITEMS_SEPARATOR = ";";
 	private int attempsCount = 1;
 	private ArrayList<Task> tasks = new ArrayList<Task>();
+	
+	private boolean ignoreNextTask = false;
 
 	private Domain domain;
 
@@ -82,5 +84,13 @@ public class PageTasks
 	public Domain getDomain()
 	{
 	    return domain;
+	}
+
+	public boolean isIgnoreNextTask() {
+		return ignoreNextTask;
+	}
+
+	public void setIgnoreNextTask(boolean ignoreNextTask) {
+		this.ignoreNextTask = ignoreNextTask;
 	}
 }

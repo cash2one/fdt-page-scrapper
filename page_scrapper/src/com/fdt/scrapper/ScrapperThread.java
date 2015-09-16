@@ -1,12 +1,15 @@
 package com.fdt.scrapper;
 
 import java.net.Proxy;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.apache.log4j.Logger;
 
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.PageTasks;
+import com.fdt.scrapper.task.PrTicTask;
 import com.fdt.scrapper.task.Task;
 
 public class ScrapperThread extends Thread{
@@ -34,16 +37,25 @@ public class ScrapperThread extends Thread{
 		synchronized (this) {
 			try{
 			    boolean errorExist = false;
+			    boolean ignoreNextTask = false;
 				for(Task task : tasks.getTasks()){
 					try {
-						if(task.isResultEmpty()){
+						if(task.isResultEmpty() && !ignoreNextTask){
 							proxyConnector = proxyFactory.getProxyConnector();
 							log.debug("Free proxy count: " + (proxyFactory.getFreeProxyCount()-1));
 							log.debug("Task (" + task.toString() +") is using proxy connection: " +proxyConnector.getProxyKey());
 							Proxy proxy = proxyConnector.getConnect();
 							PageScrapper ps;
 							ps = new PageScrapper(task, proxy);
-							task.setResult(ps.extractResult());
+							ignoreNextTask = ignoreNextTask || task.setResult(ps.extractResult());
+						}else{
+							if(task.isResultEmpty()){
+								if(task instanceof PrTicTask){
+									task.setResultAsIs(new ArrayList<String>(Arrays.asList("","")));
+								}else{
+									task.setResultAsIs(new ArrayList<String>(Arrays.asList("")));
+								}
+							}
 						}
 						
 					}

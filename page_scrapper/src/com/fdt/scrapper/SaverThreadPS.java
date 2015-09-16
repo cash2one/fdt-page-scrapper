@@ -24,7 +24,7 @@ public class SaverThreadPS
 
 	private TaskFactory taskFactory;
 	private String resultFile;
-	
+
 	private ICallback callback;
 
 	public SaverThreadPS(TaskFactory taskFactory, String resultFile, ICallback callback) {
@@ -37,9 +37,9 @@ public class SaverThreadPS
 	public void saveResult(){
 		saveResult(false);
 	}
-	
+
 	public void saveResult(boolean flushResult){
-		if(taskFactory.getResultQueue().size() > 128 || flushResult){
+		if(taskFactory.getResultQueue().size() > 10 || flushResult){
 			log.debug(String.format("Saving results. Count of success task: %s; Flush: %s", taskFactory.getResultQueue().size(),flushResult));
 			flushResults();
 		}
@@ -47,10 +47,10 @@ public class SaverThreadPS
 
 	private void flushResults() {
 		BufferedWriter bufferedWriter = null;
-		
+
 		ArrayList<PageTasks> successQueue;
 		ArrayList<PageTasks> errorQueue;
-		
+
 		synchronized (taskFactory.getResultQueue()) {
 			successQueue = taskFactory.getResultQueue();
 			taskFactory.reinitResultQueue();
@@ -80,7 +80,9 @@ public class SaverThreadPS
 		} catch (IOException ex) {
 			log.error("Error occured during saving sucess result",ex);
 		} finally {
-			callback.callback();
+			if(callback != null){
+				callback.callback();
+			}
 			//Close the BufferedWriter
 			try {
 				if (bufferedWriter != null) {

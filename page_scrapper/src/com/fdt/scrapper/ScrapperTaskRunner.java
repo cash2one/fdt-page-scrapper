@@ -47,6 +47,11 @@ public class ScrapperTaskRunner implements Runnable{
 		this.scrapResultViaProxy = scrapResultViaProxy;
 		this.appendToPrevResult = appendToPrevResult;
 		this.callback = callback;
+		
+		TaskFactory.MAX_THREAD_COUNT = maxThreadCount;
+		taskFactory = TaskFactory.getInstance();
+		taskFactory.clear();
+		
 		Authenticator.setDefault(new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
@@ -57,7 +62,7 @@ public class ScrapperTaskRunner implements Runnable{
 
 	public static void main(String[] args) {
 		try{
-			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("EUR102217", "J8Fjh5TN5H".toCharArray(),"proxy.txt","links_small.txt", 1, 5000L, "success_result.csv", true, true, null);
+			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("AMR124944", "Lol100WOW7".toCharArray(),"proxy.txt","LinksList id1.txt", 1, 5000L, "success_result.csv", true, true, null);
 			taskRunner.run();
 
 			ResultParser rp = new ResultParser();
@@ -71,9 +76,6 @@ public class ScrapperTaskRunner implements Runnable{
 
 	public void run(){
 		try{
-			TaskFactory.MAX_THREAD_COUNT = maxThreadCount;
-			taskFactory = TaskFactory.getInstance();
-			taskFactory.clear();
 			//taskFactory.loadTaskQueue(urlsFilePath);
 			File resultFileFile = new File(resultFile);
 

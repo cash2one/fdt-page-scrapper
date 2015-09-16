@@ -328,11 +328,17 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
                 
         //TODO Start scrapper
         try {
+            jButton1.setEnabled(false);
             taskRunner = new ScrapperTaskRunner(login, pass, proxyFilePath, urlsFilePath, maxThreadCount, proxyDelay, "../success_result.csv",scrapResultFromInternet, scrapResultAppendToPrevResult, new CallBack());
+            taskRunner.getTaskFactory().setOnLoadTaskListener(new ICallback(){
+                @Override       
+                public Object callback(){
+                    jTextField6.setText("Обработано 0 из " + taskRunner.getTaskFactory().getTotalCount());
+                    return null;
+                }
+            });
             Thread thread = new Thread(taskRunner);
             thread.start();
-            jTextField6.setText("Обработано 0 из " + taskRunner.getTaskFactory().getTotalCount());
-            jButton1.setEnabled(false);
         } catch (Throwable e) {
             log.error("Error occured during page scrap",e);
             jButton1.setEnabled(true);

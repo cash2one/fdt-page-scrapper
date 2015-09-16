@@ -21,8 +21,10 @@ public class AlexaTask extends Task {
 	}
 
 	@Override
-	public void setResult(ArrayList<String> result) {
+	public boolean setResult(ArrayList<String> result) {
 		log.debug("URL: " + this.getUrlToScrap() + "; RESULT = ["+result+"]");
 		this.result = result;
+		Integer value = Integer.parseInt(result.get(0));
+		return value > 100000;
 	}
 }

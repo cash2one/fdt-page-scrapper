@@ -26,7 +26,7 @@ public class PrTicTask extends Task {
 	}
 
 	@Override
-	public void setResult(ArrayList<String> result) {
+	public boolean setResult(ArrayList<String> result) {
 		ArrayList<String> cleanedResult = new ArrayList<String>();
 
 		log.debug("URL: " + this.getUrlToScrap() + "; RESULT = ["+result.toArray(new String[result.size()])+"]");
@@ -53,5 +53,7 @@ public class PrTicTask extends Task {
 		}
 
 		this.result = cleanedResult;
+		
+		return false;
 	}
 }
