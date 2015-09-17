@@ -155,6 +155,7 @@ public class VideoPosterThread extends Thread{
 
 				} 
 				catch (Throwable e) {
+					log.error(e, e);
 					if(e instanceof NoSuchElementException){
 						//if 
 						accountFactory.markAccountForExclude(account);
@@ -201,7 +202,7 @@ public class VideoPosterThread extends Thread{
 
 	private Integer[] createVideo(NewsTask task, boolean addAudioToFile, File previewImg, int minDur, int maxDur) throws Exception{
 		//TODO Calculate bitrate via file creation
-		Integer frameRate = calculateBitRateViaFileCreation(task, addAudioToFile, previewImg, minDur, maxDur);
+		Integer frameRate = calculateBitRateViaFileCreation(task, addAudioToFile, previewImg);
 		
 		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur, frameRate);
 		/*long bitRate = (8*task.getVideoFile().length()/maxDur);
@@ -212,19 +213,20 @@ public class VideoPosterThread extends Thread{
 		return times;
 	}
 	
-	private Integer calculateBitRateViaFileCreation(NewsTask task, boolean addAudioToFile, File previewImg, int minDur, int maxDur) throws IOException{
+	private Integer calculateBitRateViaFileCreation(NewsTask task, boolean addAudioToFile, File previewImg) throws IOException{
 		File testFile = new File(task.getVideoFile().getPath() + "_checker.mov");
 		Integer[] times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFile(), previewImg, new File("08.wav"), 59, 60);
-		long bitRate = (8*testFile.length()/maxDur);
+		long bitRate = (8*testFile.length()/60);
 		while(bitRate < VideoCreator.successBitrate){
 			testFile.delete();
 			times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFile(), previewImg, new File("08.wav"), 59, 60, times[1] + 5);
-			bitRate = (8*testFile.length()/maxDur);
+			bitRate = (8*testFile.length()/60);
+			log.info(String.format("Calculated bitrate/framerate for file %s is %d/%d", testFile.getName(),bitRate, times[1]));
 		}
 		
 		testFile.delete();
 		
-		log.info(String.format("Calculated bitrate for file %s is %d", task.getVideoFile().getName(),times[1]));
+		log.info(String.format("Calculated framerate for file %s is %d", task.getVideoFile().getName(),times[1]));
 		
 		return times[1];
 	}

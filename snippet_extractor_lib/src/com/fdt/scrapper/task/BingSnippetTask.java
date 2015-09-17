@@ -7,7 +7,7 @@ public class BingSnippetTask extends SnippetTask
 {
     public BingSnippetTask(String keyWords){
 	super(keyWords);
-	this.setScrapperUrl("http://www.bing.com/search?q=#KEY_WORDS#&first=#PAGE_NUM#");
+	this.setScrapperUrl("http://www.bing.com/search?&qs=n&sc=8-4&sp=-1&sk=&q=#KEY_WORDS#&first=#PAGE_NUM#&FORM=PERE&filt=all");
 	////li[@class='b_algo']//h2/a
 	this.setXpathTitle("li[class=b_algo] > h2 > a, li[class=b_algo] > div[class=b_title] > h2 > a");
 	////div[@class='b_caption']/p | //div[@class='b_snippet']/p | //div[@class='b_caption b_rich']/div/p
