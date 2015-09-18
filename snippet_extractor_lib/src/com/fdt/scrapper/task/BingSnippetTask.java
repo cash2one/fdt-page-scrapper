@@ -9,9 +9,9 @@ public class BingSnippetTask extends SnippetTask
 	super(keyWords);
 	this.setScrapperUrl("http://www.bing.com/search?&qs=n&sc=8-4&sp=-1&sk=&q=#KEY_WORDS#&first=#PAGE_NUM#&FORM=PERE&filt=all");
 	////li[@class='b_algo']//h2/a
-	this.setXpathTitle("li[class=b_algo] > h2 > a, li[class=b_algo] > div[class=b_title] > h2 > a");
+	this.setXpathTitle("li[class=b_algo] > h2 > a, li[class=b_algo] > h2 > strong > a, li[class=b_algo] > h2 > strong > strong > a,li[class=b_algo] > div[class=b_title] > h2 > a, div[class=b_title] > div.b_imagePair.square_mi > h2 > a");
 	////div[@class='b_caption']/p | //div[@class='b_snippet']/p | //div[@class='b_caption b_rich']/div/p
-	this.setXpathDesc("li[class=b_algo] > div[class=b_caption] > p, li[class=b_algo] > div[class=b_caption] > div[class=b_snippet] > p, li[class=b_algo] > div.b_caption.b_rich > div > p");
+	this.setXpathDesc("li[class=b_algo] > div[class=b_caption] > p, li[class=b_algo] > div[class=b_caption] > div[class=b_snippet] > p, li[class=b_algo] > div.b_caption.b_rich > div > p, div.b_caption.b_rich > div > div[class=b_snippet] > p");
 	this.setHost("bing.com");
 	this.setPage(1);
 	/*this.setXpathSnipper("li[class=g]");

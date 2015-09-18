@@ -39,7 +39,7 @@ public class SaverThreadPS
 	}
 
 	public void saveResult(boolean flushResult){
-		if(taskFactory.getResultQueue().size() > 10 || flushResult){
+		if(taskFactory.getResultQueue().size() >= 10 || flushResult){
 			log.debug(String.format("Saving results. Count of success task: %s; Flush: %s", taskFactory.getResultQueue().size(),flushResult));
 			flushResults();
 		}
@@ -54,6 +54,9 @@ public class SaverThreadPS
 		synchronized (taskFactory.getResultQueue()) {
 			successQueue = taskFactory.getResultQueue();
 			taskFactory.reinitResultQueue();
+		}
+		
+		synchronized (taskFactory.getErrorQueue()) {
 			errorQueue = taskFactory.getErrorQueue();
 			taskFactory.reinitErrorQueue();
 		}
@@ -103,12 +106,15 @@ public class SaverThreadPS
 				log.debug("Starting saving error results...");
 				bufferedWriter = new BufferedWriter(new FileWriter("../errors_links.txt",true));
 				int savedCount = 0;
-				for(PageTasks task :  errorQueue){
+				for(PageTasks task :  errorQueue)
+				{
 					String domainName = task.getDomain().getName();
-					for(int i = 0; i < task.getDomain().getCount(); i++){
+					/*for(int i = 0; i < task.getDomain().getCount(); i++)
+					{
 						bufferedWriter.write("http://" + domainName + "/");
 						bufferedWriter.newLine();
 					}
+					
 					domainName = "." + domainName;
 					for(int i = 0; i < task.getDomain().getSubDomainsList().size(); i++){
 						String subDomain = task.getDomain().getSubDomainsList().get(i).getName();
@@ -116,7 +122,9 @@ public class SaverThreadPS
 							bufferedWriter.write(subDomain + domainName);
 							bufferedWriter.newLine();
 						}
-					}
+					}*/
+					bufferedWriter.write("http://" + domainName + "/");
+					bufferedWriter.newLine();
 					savedCount++;
 				}
 				errorQueue.clear();

@@ -85,6 +85,11 @@ public class PageTasks
 	{
 	    return domain;
 	}
+	
+	public int getDomainCount()
+	{
+	    return domain.getCount();
+	}
 
 	public boolean isIgnoreNextTask() {
 		return ignoreNextTask;

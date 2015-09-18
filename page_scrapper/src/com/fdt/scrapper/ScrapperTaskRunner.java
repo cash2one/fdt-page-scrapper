@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.PageTasks;
+import com.fdt.scrapper.task.PrTicTask;
 import com.fdt.scrapper.task.Task;
 import com.fdt.scrapper.util.ResultParser;
 
@@ -23,29 +24,46 @@ public class ScrapperTaskRunner implements Runnable{
 
 	private String proxyFilePath;
 	private String urlsFilePath;
-	private int maxThreadCount;
 	private long proxyDelay;
 	private String resultFile;
 	private boolean scrapResultViaProxy;
 
 	private boolean appendToPrevResult = false;
+	
+	private int topCountForScan = 0;
 
 	private SaverThreadPS saver;
 
 	private TaskFactory taskFactory;
 
 	private ICallback callback;
-
-	//private ArrayList<Thread> threads = new ArrayList<Thread>();
-
+	
 	public ScrapperTaskRunner(final String login, final char[] pass, String proxyFilePath, String urlsFilePath, int maxThreadCount, long proxyDelay, String resultFile, boolean scrapResultViaProxy, boolean appendToPrevResult, ICallback callback){
+		this(
+				login, 
+				pass, 
+				proxyFilePath, 
+				urlsFilePath, 
+				maxThreadCount, 
+				proxyDelay, 
+				resultFile, 
+				scrapResultViaProxy, 
+				appendToPrevResult, 
+				0, 
+				callback
+			);
+	}
+	
+	//private ArrayList<Thread> threads = new ArrayList<Thread>();
+	public ScrapperTaskRunner(final String login, final char[] pass, String proxyFilePath, String urlsFilePath, int maxThreadCount, long proxyDelay, String resultFile, boolean scrapResultViaProxy, boolean appendToPrevResult, int topCountForScan, ICallback callback){
+		super();
 		this.proxyFilePath = proxyFilePath;
 		this.urlsFilePath = urlsFilePath;
-		this.maxThreadCount = maxThreadCount;
 		this.proxyDelay = proxyDelay;
 		this.resultFile = resultFile;
 		this.scrapResultViaProxy = scrapResultViaProxy;
 		this.appendToPrevResult = appendToPrevResult;
+		this.topCountForScan = topCountForScan;
 		this.callback = callback;
 		
 		TaskFactory.MAX_THREAD_COUNT = maxThreadCount;
@@ -62,7 +80,7 @@ public class ScrapperTaskRunner implements Runnable{
 
 	public static void main(String[] args) {
 		try{
-			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("AMR124944", "Lol100WOW7".toCharArray(),"proxy.txt","LinksList id1.txt", 1, 5000L, "success_result.csv", true, true, null);
+			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("SuperVIP153051", "v52HVHtisM".toCharArray(),"proxy.txt","LinksList id1.txt", 100, 5000L, "success_result.csv", true, false, 50, null);
 			taskRunner.run();
 
 			ResultParser rp = new ResultParser();
@@ -83,9 +101,9 @@ public class ScrapperTaskRunner implements Runnable{
 			if(appendToPrevResult && resultFileFile.exists()){
 				taskFactory.loadTaskQueue(urlsFilePath, resultFile);
 			}else{
-				taskFactory.loadTaskQueue(urlsFilePath, null);
+				taskFactory.loadTaskQueue(urlsFilePath, null, topCountForScan);
 			}
-
+			
 			saver = new SaverThreadPS(taskFactory, this.resultFile, callback);
 
 			if(scrapResultViaProxy){
@@ -102,8 +120,6 @@ public class ScrapperTaskRunner implements Runnable{
 						log.debug("Pending tasts: " + taskFactory.getTaskQueue().size()+ ". Success tasks: "+taskFactory.getResultQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
 						newThread = new ScrapperThread(tasks, taskFactory, proxyFactory);
 						newThread.start();
-						//threads.add(newThread);
-
 					}
 					else{
 						try {
@@ -132,7 +148,11 @@ public class ScrapperTaskRunner implements Runnable{
 			}else{
 				for(PageTasks pageTask:taskFactory.getTaskQueue()){
 					for(Task task:pageTask.getTasks()){
-						task.setResultAsIs(new ArrayList<String>(Arrays.asList("1")));
+						if(task instanceof PrTicTask){
+							task.setResultAsIs(new ArrayList<String>(Arrays.asList("1:1")));
+						}else{
+							task.setResultAsIs(new ArrayList<String>(Arrays.asList("1")));
+						}
 					}
 					taskFactory.putTaskInSuccessQueue(pageTask);
 				}

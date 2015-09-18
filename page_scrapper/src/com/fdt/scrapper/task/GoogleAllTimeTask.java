@@ -11,8 +11,8 @@ import com.fdt.scrapper.Domain;
 
 public class GoogleAllTimeTask extends Task {
 	private static final String EXTRACT_PATTERN = "(about )?(.*) result(.*)";
-	private static final String SCRAPPER_URL_PART_2 = "&btnG=&gws_rd=ssl";
-	private static final String SCRAPPER_URL_PART_1 = "https://www.google.com/search?hl=en&safe=off&q=site:";
+	private static final String SCRAPPER_URL_PART_2 = "&lr=lang_en&tbo=d&tbs=qdr:w&oe=utf-8&gws_rd=cr";
+	private static final String SCRAPPER_URL_PART_1 = "https://www.google.com/search?q=site:";
 	private static final ArrayList<String> SCRAPPER_XPATH = new ArrayList<String>(Arrays.asList("div[id=resultStats]"));
 	
 	private static final Logger log = Logger.getLogger(GoogleAllTimeTask.class);

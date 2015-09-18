@@ -11,7 +11,7 @@ import com.fdt.scrapper.Domain;
 
 public class GoogleWeekTask extends Task{
 	private static final String SCRAPPER_PATTERN = "(about )?(.*) result(.*)";
-	private static final String SCRAPPER_URL_PART_2 = "&hl=en&safe=off&tbo=d&tbs=qdr:w&gws_rd=ssl";
+	private static final String SCRAPPER_URL_PART_2 = "&lr=lang_en&tbo=d&tbs=qdr:w&oe=utf-8&gws_rd=ssl";
 	private static final String SCRAPPER_URL_PART_1 = "https://www.google.com/search?q=site:";
 	private static final ArrayList<String> SCRAPPER_XPATH = new ArrayList<String>(Arrays.asList("div[id=resultStats]"));
 	

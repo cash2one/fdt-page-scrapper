@@ -41,10 +41,10 @@ public class ScrapperThread extends Thread{
 				for(Task task : tasks.getTasks()){
 					try {
 						if(task.isResultEmpty() && !ignoreNextTask){
-							proxyConnector = proxyFactory.getProxyConnector();
+							proxyConnector = proxyFactory.getRandomProxyConnector();
 							log.debug("Free proxy count: " + (proxyFactory.getFreeProxyCount()-1));
 							log.debug("Task (" + task.toString() +") is using proxy connection: " +proxyConnector.getProxyKey());
-							Proxy proxy = proxyConnector.getConnect();
+							Proxy proxy = proxyConnector.getConnect("SOCKS");
 							PageScrapper ps;
 							ps = new PageScrapper(task, proxy);
 							ignoreNextTask = ignoreNextTask || task.setResult(ps.extractResult());
@@ -57,12 +57,11 @@ public class ScrapperThread extends Thread{
 								}
 							}
 						}
-						
 					}
-					catch (Exception e) {
-					    	errorExist = true;
-						taskFactory.reprocessingTask(tasks);
+					catch (Throwable e) {
+					    errorExist = true;
 						log.error("Error occured during process task: " + task.toString(), e);
+						taskFactory.reprocessingTask(tasks);
 						break;
 					}finally{
 					    if(proxyConnector != null){
@@ -71,12 +70,13 @@ public class ScrapperThread extends Thread{
 					    }
 					}
 				}
+				
 				if(!errorExist){
 					log.debug("putTaskInSuccessQueue: " + tasks);	
 				    taskFactory.putTaskInSuccessQueue(tasks);
 				}
 			} finally {
-				taskFactory.decRunThreadsCount(tasks);
+				taskFactory.decRunThreadsCount();
 			}
 		}
 	}

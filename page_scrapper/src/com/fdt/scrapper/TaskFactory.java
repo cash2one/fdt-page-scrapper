@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Matcher;
@@ -32,7 +34,7 @@ public class TaskFactory {
 
 	private static final String pattern = "(http[s]?://)?(www[\\d]{0,1}\\.)?([^/]*)/(.*)";
 	private static final String ipPattern="[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}";
-	
+
 	private ICallback onLoadTaskListener = null;
 
 	/**
@@ -60,7 +62,7 @@ public class TaskFactory {
 		log.debug("INC thread: " + runThreadsCount);
 	}
 
-	public void decRunThreadsCount(PageTasks tasks) {
+	public void decRunThreadsCount() {
 		runThreadsCount.decrementAndGet();
 		log.debug("DEC thread: " + runThreadsCount);
 	}
@@ -86,23 +88,25 @@ public class TaskFactory {
 	 * 
 	 * @param request
 	 */
-	public boolean reprocessingTask(PageTasks task){
+	public boolean reprocessingTask(PageTasks tasks){
 
-		if(task.getAttempsCount() < MAX_ATTEMP_COUNT){
+		if(tasks.getAttempsCount() < MAX_ATTEMP_COUNT){
 			synchronized (taskQueue) {
-				task.incAttempsCount();
-				taskQueue.add(task);
-				log.info("Task returned to queue for reprocessing: " + task.toString());
-				return true;
+				tasks.incAttempsCount();
+				taskQueue.add(tasks);
+				log.info("Task returned to queue for reprocessing: " + tasks.toString());
+				taskQueue.notifyAll();
 			}
+			return true;
 		}
 		else{
 			synchronized (errorQueue) {
 				errorCount.incrementAndGet();
-				errorQueue.add(task);
-				log.error("Task was put to error queue: " + task.toString());
-				return false;
+				errorQueue.add(tasks);
+				log.error("Task was put to error queue: " + tasks.toString());
+				errorQueue.notifyAll();
 			}
+			return false;
 		}
 	}
 
@@ -115,6 +119,7 @@ public class TaskFactory {
 		synchronized (successQueue) {
 			successCount.incrementAndGet();
 			successQueue.add(result);
+			successQueue.notifyAll();
 		}
 	}
 
@@ -139,6 +144,10 @@ public class TaskFactory {
 	}
 
 	public void loadTaskQueue(String pathToTaskList, String successResultFile) {
+		loadTaskQueue(pathToTaskList, successResultFile, 0);
+	}
+
+	public void loadTaskQueue(String pathToTaskList, String successResultFile, int topCountForScan) {
 		ResultParser resultParser = null;
 		ArrayList<PageTasks> successResult = new ArrayList<PageTasks>();
 
@@ -164,6 +173,9 @@ public class TaskFactory {
 		log.debug("Task for execution count:" + domainList.size());
 		fillTaskQueue(domainList);
 		domainList.clear();
+
+		sort(topCountForScan);
+
 		if(onLoadTaskListener != null){
 			onLoadTaskListener.callback();
 		}
@@ -251,6 +263,35 @@ public class TaskFactory {
 			}
 			totalCount = taskQueue.size();
 			return taskQueue;
+		}
+	}
+
+	public void sort(int topCountForScan){
+		Collections.sort(taskQueue, new Comparator<PageTasks>(){
+			@Override
+			public int compare(PageTasks arg0, PageTasks arg1) {
+				return arg1.getDomainCount() - arg0.getDomainCount();
+			}
+
+		});
+
+		if(topCountForScan > 0){
+			ArrayList<PageTasks> newTaskQueue = new ArrayList<PageTasks>();
+			int i = 0;
+			for(i = 0; i < topCountForScan; i++){
+				if(taskQueue.size() > 0){
+					newTaskQueue.add(taskQueue.get(i));
+				}
+			}
+
+			if(taskQueue.size() > 0){
+				while(newTaskQueue.get(topCountForScan-1).getDomainCount() == taskQueue.get(++i).getDomainCount()){
+					newTaskQueue.add(taskQueue.get(i));
+				}
+			}
+
+			taskQueue = newTaskQueue;
+			totalCount = taskQueue.size();
 		}
 	}
 
