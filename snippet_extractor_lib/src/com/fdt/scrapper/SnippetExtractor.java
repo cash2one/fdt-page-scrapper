@@ -488,8 +488,8 @@ public class SnippetExtractor {
 		int minLenght = titles.size() > descs.size()?descs.size():titles.size();
 		if(titles.size() > 0){
 			for(int i = 0; i < minLenght; i++){
-				String h3Value = titles.get(i).text().replaceAll("(\\.){2,}", ".").replaceAll("…", ".").replaceAll(" .", ".").trim();
-				String pValue = descs.get(i).text().replaceAll("(\\.){2,}", ".").replaceAll("…", ".").replaceAll(" .", ".").replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","").trim();
+				String h3Value = titles.get(i).text().replaceAll("(\\.){2,}", ".").replaceAll("…", ".").replaceAll(" \\.", ".").trim();
+				String pValue = descs.get(i).text().replaceAll("(\\.){2,}", ".").replaceAll("…", ".").replaceAll(" \\.", ".").replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","").trim();
 				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim()))
 				{
 					snippets.add( new Snippet(h3Value,pValue));
