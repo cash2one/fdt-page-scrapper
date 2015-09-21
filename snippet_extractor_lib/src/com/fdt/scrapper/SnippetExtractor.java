@@ -41,6 +41,8 @@ import com.fdt.scrapper.task.SnippetTask;
  */
 public class SnippetExtractor {
 
+	private static final String SITE_REGEXP_REMOVER = "((http|https|ftp|mailto)://)?([a-z0-9][a-z0-9\\-]*\\.)+(com|net|org|ru|by|info|biz|name|mobi|bz|cn|vn|tw|in|mn|cc|ws|bz|ru|su)";
+
 	private static final Logger log = Logger.getLogger(SnippetExtractor.class);
 
 	private static final String MAX_LINK_COUNT_LABEL = "MAX_LINK_COUNT";
@@ -488,8 +490,13 @@ public class SnippetExtractor {
 		int minLenght = titles.size() > descs.size()?descs.size():titles.size();
 		if(titles.size() > 0){
 			for(int i = 0; i < minLenght; i++){
-				String h3Value = titles.get(i).text().replaceAll("(\\.){2,}", ".").replaceAll("…", ".").replaceAll(" \\.", ".").trim();
-				String pValue = descs.get(i).text().replaceAll("(\\.){2,}", ".").replaceAll("…", ".").replaceAll(" \\.", ".").replaceAll("(\\A|\\s)((http|https|ftp|mailto):\\S+)(\\s|\\z)","").trim();
+				String h3Value = titles.get(i).text().replaceAll("(\\.){2,}", ".").
+						replaceAll("…", ".").
+						replaceAll(" \\.", ".").
+						replaceAll(SITE_REGEXP_REMOVER, "").trim();
+				String pValue = descs.get(i).text().replaceAll("(\\.){2,}", ".").
+						replaceAll("…", ".").replaceAll(" \\.", ".").
+						replaceAll(SITE_REGEXP_REMOVER, "").trim();
 				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim()))
 				{
 					snippets.add( new Snippet(h3Value,pValue));

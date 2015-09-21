@@ -344,8 +344,15 @@ public class AnchorTitleScrapper {
 		}
 
 		ArrayList<String> lines = new ArrayList<>();
+		String filteredStr;
+		String filteredFromSeparationStr;
 		for(String str : hasSet){
-			lines.add(str);
+			filteredStr = str.replaceAll("[^a-zA-Z0-9\\!\\.\\,\\-\\)\\(\\\\/'\"\\+:;\\[\\]\\#$%\\^&\\*\\?\\s]+","").trim();
+			filteredFromSeparationStr = filteredStr.replaceAll("[\\!\\.\\,\\-\\)\\(\\\\/'\"\\+:;\\[\\]\\#$%\\^&\\*\\?\\s]+","").trim();
+			if(filteredStr.length() > 0 && filteredFromSeparationStr.length() > 0)
+				lines.add(filteredStr);
+			else
+				filteredStr = str;
 		}
 		appendLinesToFile(lines, file, append);
 

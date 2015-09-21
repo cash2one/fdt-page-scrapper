@@ -27,7 +27,7 @@ public class SaverThread extends Thread
 	private static final Logger log = Logger.getLogger(SaverThread.class);
 
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
-	private static int KEYS_BUFFER_SIZE = 1;
+	private static int KEYS_BUFFER_SIZE = 50;
 
 	private ArrayList<String> keysBuffer = new ArrayList<String>();
 
@@ -41,6 +41,11 @@ public class SaverThread extends Thread
 		super();
 		this.taskFactory = taskFactory;
 		this.keysFilePath = keysFilePath;
+
+		File restFile = new File("rest_" + keysFilePath);
+		if(restFile.exists()){
+			restFile.delete();
+		}
 	}
 
 	@Override
@@ -140,7 +145,7 @@ public class SaverThread extends Thread
 			restKeysFile = new File("rest_" + keysFilePath);
 			restKeysFileNew = new File("new_rest_" + keysFilePath);
 
-			if(!restKeysFile.exists()){
+			if(!restKeysFile.exists() || restKeysFile.length() == 0){
 				File keysFile = new File(keysFilePath);
 				//copy keys to rest_key
 				FileUtils.copyFile(keysFile, restKeysFile);

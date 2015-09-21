@@ -1,5 +1,6 @@
 package com.fdt.scrapper.task;
 
+
 public class GoogleSnippetTask extends SnippetTask
 {
 	public GoogleSnippetTask(String keyWords){
@@ -20,23 +21,39 @@ public class GoogleSnippetTask extends SnippetTask
 		this.setXpathDesc("div[class=s] span[class=st]");*/
 	}
 
-	@Override
-	protected void initExtraParams() {
-		// TODO Auto-generated method stub
-
-	}
+/*	@Override
+	public String getFullUrl(){
+		String result = "";
+		if(!isEncodeKeywords()){
+			result = scrapperUrl.replace(KEY_WORDS_KEY, keyWords).replace(LANGUAGE_KEY, language).replace(PAGE_NUMBER, String.valueOf(10*(page-1)));
+		}else{
+			try {
+				result = scrapperUrl.replace(KEY_WORDS_KEY, URLEncoder.encode(keyWords,HTTP.UTF_8)).replace(LANGUAGE_KEY, language).replace(PAGE_NUMBER, String.valueOf(10*(page-1)));
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return result;
+	}*/
 
 	@Override
 	public void setPage(int page) {
 		switch (page){
 			case 0:
 			case 1:{
-				page = 0;
+				this.page = 0;
 				break;
 			}
 			default:{
-				page = page*10;
+				this.page = page*10;
 			}
 		}
+	}
+
+	@Override
+	protected void initExtraParams() {
+		// TODO Auto-generated method stub
+		
 	}
 }

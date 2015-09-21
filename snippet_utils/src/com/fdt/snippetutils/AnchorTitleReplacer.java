@@ -24,6 +24,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
@@ -53,6 +54,7 @@ public class AnchorTitleReplacer {
 	private final static String ANCHOR_FILE_PATH_LABEL = "anchor_file_path";
 	private final static String REPEAT_COUNT_LABEL = "repeat_count";
 	private final static String OUTPUT_PATH_LABEL = "output_path";
+	private final static String INPUT_TITLES_PATH_LABEL = "input_titles_path";
 	private final static String TITLES_FILE_PATH_LABEL = "titles_file_path";
 
 	private final static String PROXY_LIST_FILE_PATH_LABEL = "proxy_list_file_path";
@@ -67,11 +69,12 @@ public class AnchorTitleReplacer {
 
 	private String anchorFilePath;
 	private String outputPath;
+	private String inputTitlesPath;
 
 	private int maxLineCount = 7;
 	private int minLineCount = 3;
 
-	private String titlesFilePath;
+	private String patternTitlesFilePath;
 
 	private int repeatCount;
 
@@ -80,6 +83,8 @@ public class AnchorTitleReplacer {
 	private boolean replaceWithBing = false;
 
 	private String source = "BING";
+	
+	private HashMap<String, ArrayList<String>> fileTitles = new HashMap<String, ArrayList<String>>(); 
 
 	private AtomicInteger currentThreadCount = new AtomicInteger(0);
 	private Integer maxThreadCount = 1;
@@ -120,7 +125,8 @@ public class AnchorTitleReplacer {
 		super();
 		this.anchorFilePath = ConfigManager.getInstance().getProperty(ANCHOR_FILE_PATH_LABEL);
 		this.outputPath = ConfigManager.getInstance().getProperty(OUTPUT_PATH_LABEL);
-		this.titlesFilePath = ConfigManager.getInstance().getProperty(TITLES_FILE_PATH_LABEL);
+		this.inputTitlesPath = ConfigManager.getInstance().getProperty(INPUT_TITLES_PATH_LABEL);
+		this.patternTitlesFilePath = ConfigManager.getInstance().getProperty(TITLES_FILE_PATH_LABEL);
 		this.repeatCount = Integer.parseInt(ConfigManager.getInstance().getProperty(REPEAT_COUNT_LABEL));
 
 		this.maxLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MAX_LINE_COUNT_LABEL));
@@ -151,8 +157,9 @@ public class AnchorTitleReplacer {
 	private void execute() throws IOException, InterruptedException{
 
 		ArrayList<String> lines= readFile(this.anchorFilePath);
-		ArrayList<String> titles = readTitlesFile(this.titlesFilePath);
+		ArrayList<String> titles = readTitlesFile(this.patternTitlesFilePath);
 		ArrayList<Pattern> titlesPattern = new ArrayList<Pattern>();
+		fileTitles = getFileTitles(this.inputTitlesPath);
 
 		HashMap<String, Pattern> linePttrnMpng = new HashMap<String, Pattern>();
 		ArrayList<String> keys = new ArrayList<String>();
@@ -196,6 +203,32 @@ public class AnchorTitleReplacer {
 		}finally{
 			saveBannedProxy(proxyFactory.getBannedProxyList());
 		}
+	}
+	
+	private HashMap<String, ArrayList<String>> getFileTitles(String inputTitlesFolder) throws IOException{
+		HashMap<String, ArrayList<String>> result = new HashMap<String, ArrayList<String>>();
+	
+		File inputTitlesPath = new File(inputTitlesFolder);
+		StringBuffer fileName;
+		ArrayList<String> titles;
+		for(File file : inputTitlesPath.listFiles()){
+			fileName = new StringBuffer(file.getName());
+			titles = readFile(inputTitlesPath.getCanonicalPath());
+			result.put(fileName.substring(0, fileName.length()-4).toLowerCase(), titles);
+		}
+		
+		return result;
+	}
+	
+	private String getRandomTitleFromFiles(String key){
+		Random rnd = new Random();
+		ArrayList<String> keyTitles = null;
+		
+		if((keyTitles = fileTitles.get(key.toLowerCase().trim())) != null){
+			return keyTitles.get(rnd.nextInt(keyTitles.size()));
+		}
+		
+		return null;
 	}
 
 	private void loop(HashMap<String, Pattern> lines, ArrayList<String> keys, ArrayList<String> titles) throws IOException, InterruptedException{
@@ -290,22 +323,25 @@ public class AnchorTitleReplacer {
 							}*/
 					if(replaceWithBing)
 					{
-						newTitle = "";
-						Snippet snippet = null;
+						//replace title from file
+						newTitle = getRandomTitleFromFiles(bookName);
+						/*Snippet snippet = null;
 						try {
 							snippet = getSnippet(fullTitle);
 							newTitle = snippet.getTitle();
 						} catch (Exception e) {
 							log.warn(String.format("Error occured during getting snippets: %s", e.getMessage()), e);
-						} 
+						} */
 
 						if("".equals(newTitle)){
 							appendLinesToFile(line, new File("result_not_found.txt"), true);
+							log.warn("!!! TITLE WILL NOT BE CHANGED !!!");
 							newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
 						}
 						//newLine = line.replace(fullTitle, newTitle);
 						newLine = line.replace(fullTitle, newTitle);
 					}else{
+						//TODO replace from file
 						newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
 						newLine = line.replace(fullTitle, newTitle);
 					}
@@ -334,7 +370,7 @@ public class AnchorTitleReplacer {
 			br = new BufferedReader( new InputStreamReader( new FileInputStream(filePath), "UTF8" ) );
 
 			String line = br.readLine();
-			while(line != null){
+			while(line != null && !"".equals(line.trim())){
 				fileTitleList.add(line.trim());
 				line = br.readLine();
 			}
@@ -358,7 +394,7 @@ public class AnchorTitleReplacer {
 
 	private ArrayList<String> readTitlesFile(String filePath) throws IOException{
 
-		ArrayList<String> titles = readFile(this.titlesFilePath);
+		ArrayList<String> titles = readFile(this.patternTitlesFilePath);
 
 		for(int i = 0; i < titles.size(); i++){
 			titles.set(i, titles.get(i).replaceAll("\\(", "\\\\("));
