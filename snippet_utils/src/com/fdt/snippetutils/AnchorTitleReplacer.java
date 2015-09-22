@@ -213,7 +213,7 @@ public class AnchorTitleReplacer {
 		ArrayList<String> titles;
 		for(File file : inputTitlesPath.listFiles()){
 			fileName = new StringBuffer(file.getName());
-			titles = readFile(inputTitlesPath.getCanonicalPath());
+			titles = readFile(file.getPath());
 			result.put(fileName.substring(0, fileName.length()-4).toLowerCase(), titles);
 		}
 		
@@ -228,7 +228,7 @@ public class AnchorTitleReplacer {
 			return keyTitles.get(rnd.nextInt(keyTitles.size()));
 		}
 		
-		return null;
+		return "";
 	}
 
 	private void loop(HashMap<String, Pattern> lines, ArrayList<String> keys, ArrayList<String> titles) throws IOException, InterruptedException{
