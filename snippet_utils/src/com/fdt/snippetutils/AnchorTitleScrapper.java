@@ -227,7 +227,9 @@ public class AnchorTitleScrapper {
 
 			try{
 				titles = processKey(prefixFirst + " " + key, pattern);
-				titles.addAll(processKey(prefixSecond + " " + key, pattern));
+				if(!prefixSecond.equals(prefixFirst)){
+					titles.addAll(processKey(prefixSecond + " " + key, pattern));
+				}
 				//Save file
 				File fileToSave = new File(outputPath, key + ".txt");
 				appendLinesToFile(titles, fileToSave, key, false);
@@ -337,7 +339,7 @@ public class AnchorTitleScrapper {
 	private void appendLinesToFile(HashSet<String> hasSet, File file, String key, boolean append) {
 		synchronized (processedKeys) {
 			processedKeys.add(key);
-			if(processedKeys.size() >= 128){
+			if(processedKeys.size() >= 10){
 				appendLinesToFile(processedKeys, new File(processedKeysFilePath), true);
 				processedKeys.clear();
 			}
@@ -348,9 +350,9 @@ public class AnchorTitleScrapper {
 		String filteredFromSeparationStr;
 		for(String str : hasSet){
 			filteredStr = str.replaceAll("[^a-zA-Z0-9\\!\\.\\,\\-\\)\\(\\\\/'\"\\+:;\\[\\]\\#$%\\^&\\*\\?\\s]+","").trim();
-			filteredFromSeparationStr = filteredStr.replaceAll("[\\!\\.\\,\\-\\)\\(\\\\/'\"\\+:;\\[\\]\\#$%\\^&\\*\\?\\s]+","").trim();
-			if(filteredStr.length() > 0 && filteredFromSeparationStr.length() > 0)
-				lines.add(filteredStr);
+			filteredFromSeparationStr = filteredStr.replaceAll("[\\!\\.\\,\\-\\)\\(\\\\/'\"\\+:;\\[\\]\\#$%\\^&\\*\\?\\s]+"," ").trim();
+			if(filteredFromSeparationStr.length() > 0)
+				lines.add(filteredFromSeparationStr);
 			else
 				filteredStr = str;
 		}

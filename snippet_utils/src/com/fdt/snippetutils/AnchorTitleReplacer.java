@@ -49,7 +49,7 @@ public class AnchorTitleReplacer {
 	private final static String MAX_LINE_COUNT_LABEL = "max_line_count";
 	private final static String MIN_LINE_COUNT_LABEL = "min_line_count";
 
-	private final static String IS_DELETE_USED_LINE_LABEL = "delete_used_line";
+	private final static String IS_CLEAN_KEY_LABEL = "clean_key";
 
 	private final static String ANCHOR_FILE_PATH_LABEL = "anchor_file_path";
 	private final static String REPEAT_COUNT_LABEL = "repeat_count";
@@ -75,6 +75,8 @@ public class AnchorTitleReplacer {
 	private int minLineCount = 3;
 
 	private String patternTitlesFilePath;
+	
+	private boolean cleanKey = false;
 
 	private int repeatCount;
 
@@ -133,6 +135,8 @@ public class AnchorTitleReplacer {
 		this.minLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MIN_LINE_COUNT_LABEL));
 
 		this.replaceWithBing = Boolean.parseBoolean(ConfigManager.getInstance().getProperty(GET_ANCHOR_FROM_WEB_LABEL));
+		
+		this.cleanKey = Boolean.parseBoolean(ConfigManager.getInstance().getProperty(IS_CLEAN_KEY_LABEL));
 
 		ProxyFactory.DELAY_FOR_PROXY = Integer.valueOf(ConfigManager.getInstance().getProperty(PROXY_DELAY_LABEL));
 		ProxyFactory.PROXY_TYPE = ConfigManager.getInstance().getProperty(PROXY_TYPE_LABEL);
@@ -221,8 +225,15 @@ public class AnchorTitleReplacer {
 	}
 	
 	private String getRandomTitleFromFiles(String key){
+		return getRandomTitleFromFiles(key, false);
+	}
+	
+	private String getRandomTitleFromFiles(String key, boolean cleanKey){
 		Random rnd = new Random();
 		ArrayList<String> keyTitles = null;
+		
+		if(cleanKey)
+			key = key.replaceAll("[^A-Za-z0-9\\s\\-]", "");
 		
 		if((keyTitles = fileTitles.get(key.toLowerCase().trim())) != null){
 			return keyTitles.get(rnd.nextInt(keyTitles.size()));
@@ -324,7 +335,7 @@ public class AnchorTitleReplacer {
 					if(replaceWithBing)
 					{
 						//replace title from file
-						newTitle = getRandomTitleFromFiles(bookName);
+						newTitle = getRandomTitleFromFiles(bookName, this.cleanKey);
 						/*Snippet snippet = null;
 						try {
 							snippet = getSnippet(fullTitle);
@@ -335,7 +346,7 @@ public class AnchorTitleReplacer {
 
 						if("".equals(newTitle)){
 							appendLinesToFile(line, new File("result_not_found.txt"), true);
-							log.warn("!!! TITLE WILL NOT BE CHANGED !!!");
+							log.warn(String.format("!!! TITLE WILL NOT BE CHANGED !!! Key: '%s'; Total line: '%s'",bookName, line));
 							newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
 						}
 						//newLine = line.replace(fullTitle, newTitle);

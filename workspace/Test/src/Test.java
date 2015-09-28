@@ -51,10 +51,24 @@ public class Test {
         writer.close();
         System.out.println("Video Created");*/
     	
-    	String test = "Seon in Korea Taego Bou Jinul Seongcheol Zen in the USA D. T. Suzuki Hakuun Yasutani Taizan Maezumi Shunryū Suzuki Seungsahn Category: Zen Buddhists …";
-    	System.out.println(test.replaceAll("(\\.){2,}", ".").replaceAll("…", ".").trim());
+    	/*String test = "Seon in Korea Taego Bou Jinul Seongcheol Zen in the USA D. T. Suzuki Hakuun Yasutani Taizan Maezumi Shunryū Suzuki Seungsahn Category: Zen Buddhists …";
+    	System.out.println(test.replaceAll("(\\.){2,}", ".").replaceAll("…", ".").trim());*/
     	
     	ExecutorService extService = Executors.newFixedThreadPool(5);
+    	Future runFut = extService.submit(new RunnableTest());
+    	Future<String> callFut = extService.submit(new CallableTest());
+    	
+    	try {
+			Object obj = runFut.get();
+			obj = obj;
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (ExecutionException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+    	
     	Future<String> result = extService.submit(new Callable<String>(){
 
 			public String call() throws Exception {
@@ -120,5 +134,20 @@ public class Test {
 
 		return sdf.format(new Date(Long.parseLong(valueStr)-1000));
 	}
+    
+    private static class CallableTest implements Callable<String>{
+
+		public String call() throws Exception {
+			// TODO Auto-generated method stub
+			return "test";
+		}
+    }
+    
+    private static class RunnableTest implements Runnable{
+
+		public void run() {
+			// TODO Auto-generated method stub
+		}
+    }
 }
 
