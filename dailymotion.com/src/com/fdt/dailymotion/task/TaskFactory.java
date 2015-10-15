@@ -145,15 +145,15 @@ public class TaskFactory {
 		return taskQueue.isEmpty();
 	}
 
-	public synchronized void fillTaskQueue(File[] fileList, File templateFile) throws Exception{
+	public synchronized void fillTaskQueue(File[] fileList, File templateFile, String shortUrlsList, boolean isGetImageFromLink, File[] randImgFiles) throws Exception{
 		for(File file : fileList){
-			taskQueue.add(new NewsTask(file, templateFile));
+			taskQueue.add(new NewsTask(file, templateFile, shortUrlsList, isGetImageFromLink, randImgFiles));
 		}
 	}
 	
-	public synchronized void fillTaskQueue(File file, File templateFile, File pregenFile) throws Exception{
+	public synchronized void fillTaskQueue(File file, File templateFile, String shortUrlsList, File pregenFile) throws Exception{
 		for(String line : readFile(file)){
-			taskQueue.add(new NewsTask(line, templateFile, pregenFile));
+			taskQueue.add(new NewsTask(line, templateFile, shortUrlsList, pregenFile));
 		}
 	}
 	

@@ -119,6 +119,8 @@ public class VideoPosterThread extends Thread{
 							previewImg = null;
 						}
 					}
+					task.setPreviewImageFile(previewImg);
+					//TODO Add random image for generation
 					//create video
 					Integer[] times = null;
 					if(!loadPreGenFile){
@@ -204,7 +206,7 @@ public class VideoPosterThread extends Thread{
 		//TODO Calculate bitrate via file creation
 		Integer frameRate = calculateBitRateViaFileCreation(task, addAudioToFile, previewImg);
 		
-		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur, frameRate);
+		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFileFirst(), task.getImageFileSecond(), previewImg, new File("08.wav"), minDur, maxDur, frameRate);
 		/*long bitRate = (8*task.getVideoFile().length()/maxDur);
 		while(bitRate < VideoCreator.successBitrate){
 			times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur, times[1]*2);
@@ -215,11 +217,11 @@ public class VideoPosterThread extends Thread{
 	
 	private Integer calculateBitRateViaFileCreation(NewsTask task, boolean addAudioToFile, File previewImg) throws IOException{
 		File testFile = new File(task.getVideoFile().getPath() + "_checker.mov");
-		Integer[] times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFile(), previewImg, new File("08.wav"), 59, 60);
+		Integer[] times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFileFirst(), task.getImageFileSecond(), previewImg, new File("08.wav"), 59, 60);
 		long bitRate = (8*testFile.length()/60);
 		while(bitRate < VideoCreator.successBitrate){
 			testFile.delete();
-			times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFile(), previewImg, new File("08.wav"), 59, 60, times[1] + 5);
+			times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFileFirst(), task.getImageFileSecond(), previewImg, new File("08.wav"), 59, 60, times[1] + 5);
 			bitRate = (8*testFile.length()/60);
 			log.info(String.format("Calculated bitrate/framerate for file %s is %d/%d", testFile.getName(),bitRate, times[1]));
 		}

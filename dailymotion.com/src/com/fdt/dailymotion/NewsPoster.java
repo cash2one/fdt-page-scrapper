@@ -16,6 +16,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -49,7 +50,8 @@ public class NewsPoster {
 
 	private static final Random rnd = new Random();;
 
-	private String[] themes = new String[]{"auto","webcam","animals","creation","lifestyle","people","music","news","school","travel","sport","tech","shortfilms","fun"};
+	//private String[] themes = new String[]{"auto","webcam","animals","creation","lifestyle","people","music","news","school","travel","sport","tech","shortfilms","fun"};
+	private String[] themes = new String[]{"shortfilms"};
 
 	private NewsTask task = null;
 	private Proxy proxy = null;
@@ -82,7 +84,7 @@ public class NewsPoster {
 		milSecCnt = (((double)times[0]/times[1])) * 1000;
 
 		String valueStr = String.format("%.0f", milSecCnt);
-		log.debug("Preview time: " + sdf.format(new Date(Long.parseLong(valueStr)-0)));
+		log.info("Preview time: " + sdf.format(new Date(Long.parseLong(valueStr)-0)));
 
 		return sdf.format(new Date(Long.parseLong(valueStr)-0));
 	}
@@ -311,6 +313,8 @@ public class NewsPoster {
 				throw new Exception("Account execeed upload limit: " + account.getLogin());
 			}
 		}
+		
+		log.info(String.format("Response download status: %s; Progress: %s", status[0],status[1]));
 	}
 
 	private String[] getUploadStatus(String respStr) throws ParseException{
@@ -533,6 +537,8 @@ public class NewsPoster {
 				}
 			}
 
+			int respCode = conn.getResponseCode();
+			
 			// Execute HTTP Post Request
 			StringBuilder responseStr = getResponseAsString(conn);
 
@@ -553,11 +559,30 @@ public class NewsPoster {
 				throw new Exception("URL to video was not extracted. Next string was extracted: " + videoUrl);
 			}
 			//TODO Fix issue with preview 
+			//String respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"thumbnail_url,\"},\"id\":0},{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"status,\"},\"id\":1}]");
+			//JSONObject jsonObj = new JSONObject(respStr.substring(1, respStr.length()-1));
+			//String thumbnailUrlOld = jsonObj.getJSONObject("result").getString("thumbnail_url");
+			//String thumbnailUrlNew = thumbnailUrlOld;
+			//int oldFileSizeLen = getFileSize(thumbnailUrlOld);
+			//int newFileSizeLen = getFileSize(thumbnailUrlOld);
+			//log.info(String.format("Old preview of video (%s): %s",videoId, thumbnailUrlOld));
+			
 			if(!loadPreGenFile){
-				setPreview(videoId, subUrl);
-				Thread.sleep(5000L);
-				//TODO Fix issue with preview 
-				setPreview(videoId, subUrl);
+				/*while(thumbnailUrlOld.equals(thumbnailUrlNew) || oldFileSizeLen == newFileSizeLen ){
+					setPreview(videoId, subUrl);
+					respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"thumbnail_url,\"},\"id\":0},{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"status,\"},\"id\":1}]");
+					jsonObj = new JSONObject(respStr.substring(1, respStr.length()-1));
+					thumbnailUrlNew = jsonObj.getJSONObject("result").getString("thumbnail_url");
+					newFileSizeLen = getFileSize(thumbnailUrlNew);
+					log.info(String.format("New preview of video (%s): %s",videoId, thumbnailUrlNew));
+					Thread.sleep(10000L);
+				}*/
+				setPreview(videoId, subUrl, task.getPreviewImageFile());
+				/*respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"thumbnail_url,\"},\"id\":0},{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"status,\"},\"id\":1}]");
+				jsonObj = new JSONObject(respStr.substring(1, respStr.length()-1));
+				thumbnailUrlNew = jsonObj.getJSONObject("result").getString("thumbnail_url");
+				newFileSizeLen = getFileSize(thumbnailUrlNew);
+				log.info(String.format("New preview of video (%s): %s",videoId, thumbnailUrlNew));*/
 			}
 			log.info("VIDEO URL: " + videoUrl);
 			return videoUrl;
@@ -565,52 +590,166 @@ public class NewsPoster {
 			return "";
 		}
 	}
+	
+	private int getFileSize(String fileUrl) throws MalformedURLException {
+	    HttpURLConnection conn = null;
+	    URL url = new URL(fileUrl);
+	    try {
+	        conn = (HttpURLConnection) url.openConnection();
+	        conn.setRequestMethod("HEAD");
+	        conn.getInputStream();
+	        return conn.getContentLength();
+	    } catch (IOException e) {
+	        return -1;
+	    } finally {
+	        conn.disconnect();
+	    }
+	}
 
-	private String setPreview(String videoId, String fromRequest) throws Exception{
+//	private String setPreview(String videoId, String fromRequest) throws Exception{
+//		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
+//				"/ajax/video_preview_v3";
+//
+//		HttpURLConnection conn = null;
+//		StringBuilder responseStr = new StringBuilder();
+//		//post news
+//		try{
+//			URL url = new URL(postUrl);
+//			HttpURLConnection.setFollowRedirects(false);
+//			conn = (HttpURLConnection) url.openConnection(proxy);
+//			conn.setReadTimeout(60000);
+//			conn.setConnectTimeout(60000);
+//			conn.setRequestMethod("POST");
+//			conn.setDoInput(true);
+//			conn.setDoOutput(true);
+//
+//			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+//			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+//			conn.setRequestProperty("Accept", "*");
+//			conn.setRequestProperty("Cookie", account.getCookies());
+//			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+//			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
+//			conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+//			//conn.setRequestProperty("Referer", http://www.dailymotion.com/pageitem/OneStepPreview?widget_only=1&hidenextvideo=1&request=/video/x30lasl_%25D0%25BF%25D1%2580%25D0%25B5%25D1%2581%25D0%25BB%25D0%25B5%25D0%25B4%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5-m%25D0%25BE%25D1%2582%25D0%25BE%25D1%2586%25D0%25B8%25D0%25BA%25D0%25BB%25D0%25B8%25D1%2581%25D1%2582%25D0%25B0-30-06-2015_webcam);
+//
+//			OutputStream outputStream;
+//			outputStream = conn.getOutputStream();
+//			PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
+//			writer.append(getPreviewParamString(videoId, fromRequest));
+//			writer.flush();
+//			writer.close();
+//			outputStream.close();
+//
+//			int respCode = conn.getResponseCode();
+//			// Execute HTTP Post Request
+//			responseStr = getResponseAsString(conn);
+//
+//			log.info("Set preview responce string: " + responseStr.toString());
+//		}finally{
+//			if(conn != null){
+//				conn.disconnect();
+//			}
+//		}
+//
+//		return responseStr.toString();
+//	}
+	
+	private String setPreview(String videoId, String fromRequest, File previewFile) throws Exception{
+
 		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
-				"/ajax/video_preview_v3";
+				"/pageitem/OneStepPreview?widget_only=1&hidenextvideo=1&request="+fromRequest;
 
-		HttpURLConnection conn = null;
-		StringBuilder responseStr = new StringBuilder();
 		//post news
-		try{
-			URL url = new URL(postUrl);
-			HttpURLConnection.setFollowRedirects(false);
-			conn = (HttpURLConnection) url.openConnection(proxy);
-			conn.setReadTimeout(60000);
-			conn.setConnectTimeout(60000);
-			conn.setRequestMethod("POST");
-			conn.setDoInput(true);
-			conn.setDoOutput(true);
+		String boundary = "----------" + System.currentTimeMillis();
 
-			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-			conn.setRequestProperty("Accept", "*/*");
-			conn.setRequestProperty("Cookie", account.getCookies());
-			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
-			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
-			conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
-			//conn.setRequestProperty("Referer", http://www.dailymotion.com/pageitem/OneStepPreview?widget_only=1&hidenextvideo=1&request=/video/x30lasl_%25D0%25BF%25D1%2580%25D0%25B5%25D1%2581%25D0%25BB%25D0%25B5%25D0%25B4%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5-m%25D0%25BE%25D1%2582%25D0%25BE%25D1%2586%25D0%25B8%25D0%25BA%25D0%25BB%25D0%25B8%25D1%2581%25D1%2582%25D0%25B0-30-06-2015_webcam);
+		URL url = new URL(postUrl);
+		HttpURLConnection.setFollowRedirects(false);
+		//HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		conn.setReadTimeout(60000);
+		conn.setConnectTimeout(300000);
+		conn.setRequestMethod("POST");
+		conn.setDoInput(true);
+		conn.setDoOutput(true);
 
-			OutputStream outputStream;
-			outputStream = conn.getOutputStream();
-			PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
-			writer.append(getPreviewParamString(videoId, fromRequest));
-			writer.flush();
-			writer.close();
+		conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0"); 
+		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+		conn.setRequestProperty("Cookie", account.getCookies());
+		conn.setRequestProperty("Content-Type", "multipart/form-data; boundary=" + boundary);
+
+		OutputStream outputStream;
+		outputStream = conn.getOutputStream();
+
+		PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
+
+		writer.append(LINE_FEED).append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"form_name\"").append(LINE_FEED).append(LINE_FEED);;
+		writer.append("dm_pageitem_video_uploadpreview").append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"_csrf\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append(account.getCookie("_csrf/form")).append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"_fid\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("").append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"MAX_FILE_SIZE\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("6291456").append(LINE_FEED);
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"video_preview\"; filename=\"" + previewFile.getName() + "\"").append(LINE_FEED);
+		writer.append("Content-Type: image/jpeg").append(LINE_FEED).append(LINE_FEED);;
+
+		writer.flush();
+
+		FileInputStream inputStream = new FileInputStream(previewFile);
+		byte[] buffer = new byte[4096];
+		int bytesRead = -1;
+		while ((bytesRead = inputStream.read(buffer)) != -1) {
+			outputStream.write(buffer, 0, bytesRead);
+		}
+		outputStream.flush();
+		inputStream.close();
+
+		writer.append("--" + boundary).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"save\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("Сохранить").append(LINE_FEED);
+
+		writer.append("--" + boundary + "--").append(LINE_FEED).append(LINE_FEED);;
+		/*writer.append("Content-Disposition: form-data; name=\"Upload\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("Submit Query").append(LINE_FEED);
+		writer.append("--" + boundary + "--");//.append(LINE_FEED).append(LINE_FEED);
+		writer.flush();*/
+
+		writer.flush();  
+		writer.close();
+
+		/*FileBody fileBody = new FileBody(uploadFile);
+		MultipartEntity multipartEntity = new MultipartEntity(HttpMultipartMode.STRICT);
+		multipartEntity.addPart("file", fileBody);
+		multipartEntity.addPart("Filename", new StringBody(uploadFile.getName()));*/
+		//multipartEntity.addPart("Filename", "temp_video_audio.mov");
+
+		try {
+			//multipartEntity.writeTo(outputStream);
+		} finally {
+			outputStream.flush();
 			outputStream.close();
-
-			int respCode = conn.getResponseCode();
-			// Execute HTTP Post Request
-			responseStr = getResponseAsString(conn);
-
-			log.info("Set preview responce string: " + responseStr.toString());
-		}finally{
-			if(conn != null){
-				conn.disconnect();
-			}
 		}
 
+		int respCode = conn.getResponseCode();
+		StringBuilder responseStr = getResponseAsString(conn);
+
+		//log.debug(responseStr.toString());
+
+		conn.disconnect();
+
+		//link uploaded video to user
+
+		//Edit video description 
 		return responseStr.toString();
 	}
 
@@ -823,6 +962,19 @@ public class NewsPoster {
 		.append("video_title=").append(title).append("&")
 		.append("user_category=").append(themes[rnd.nextInt(themes.length)]).append("&")
 		.append("game_select=").append("").append("&")
+		.append("game_select=").append("").append("&")
+		.append("artist=").append("").append("&")
+		.append("title=").append("").append("&")
+		.append("album=").append("").append("&")
+		.append("upc=").append("").append("&")
+		.append("isrc=").append("").append("&")
+		.append("iswc=").append("").append("&")
+		.append("label=").append("").append("&")
+		.append("artist_id=").append("").append("&")
+		.append("track_id=").append("").append("&")
+		.append("album_id=").append("").append("&")
+		.append("itunes_id=").append("").append("&")
+		.append("genre=").append("").append("&")
 		.append("language=").append("en").append("&")
 		.append("tags_hidden=").append(URLEncoder.encode(task.getVideoTitle(),"UTF-8")).append("&")
 		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[").append(URLEncoder.encode(task.getTags(10, 250),"UTF-8")).append("]}").append("&")
@@ -839,6 +991,9 @@ public class NewsPoster {
 		//.append("uploadType=").append("").append("&")
 		//.append("saveStatus=").append("fail").append("&")
 		//.append("from_request=").append("/video/edit/x2a5w2y_%25D0%25B1%25D0%25B5%25D0%25B7-%25D0%25BD%25D0%25B0%25D0%25B7%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D1%258F")
+		.append("tvod_price=").append("0.49").append("&")
+		.append("window_duration=").append("48").append("&")
+		.append("paywall_start=").append("10").append("&")
 		.append("from_publish=").append("1").append("&")
 		.append("from_request=").append("/upload").append("&")
 		.append("_csrf_l=").append(account.getCookie("_csrf/link"));

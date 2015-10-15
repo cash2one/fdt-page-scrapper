@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,11 +21,15 @@ public class NewsTask{
 	private static final Logger log = Logger.getLogger(NewsTask.class);
 
 	private File inputFile;
-	private File imageFile;
+	private File imageFileFirst;
+	private File imageFileSecond;
+	private File previewImageFile;
 	private File videoFile;
 	//private File videoFileWOAudio;
 
 	private File templateFile;
+	
+	private String shortUrlList;
 
 	private String videoTitle = "";
 	private String videoid = "";
@@ -38,22 +43,31 @@ public class NewsTask{
 
 	private int attempsCount = 1;
 	//empty result
+	private boolean isGetImageFromLink=false;
+	private File[] randImgFiles;
+	
+	private boolean preGenFileLoaded = false;
 	
 	private static final String LINE_FEED = "\r\n";
 
-	public NewsTask(File inputFile, File templateFile) throws Exception {
+	public NewsTask(File inputFile, File templateFile, String shortUrlList, boolean isGetImageFromLink, File[] randImgFiles) throws Exception {
 		super();
 		this.inputFile = inputFile;
 		this.templateFile = templateFile;
+		this.shortUrlList = shortUrlList;
+		this.isGetImageFromLink = isGetImageFromLink;
+		this.randImgFiles = randImgFiles;
 		//TODO Read and parse file
 	}
 	
-	public NewsTask(String key, File templateFile, File pregenFile) throws Exception {
+	public NewsTask(String key, File templateFile, String shortUrlLis, File pregenFile) throws Exception {
 		super();
 		this.key = key;
 		this.videoTitle = key;
 		this.templateFile = templateFile;
+		this.shortUrlList = shortUrlLis;
 		this.videoFile = pregenFile;
+		this.preGenFileLoaded = true;
 		//TODO Read and parse file
 	}
 
@@ -87,9 +101,15 @@ public class NewsTask{
 				}
 			}
 
-
 			log.debug("File content: " + fileAsStr.toString());
-			loadImage(fileAsStr.toString());
+			
+			if( !preGenFileLoaded ){
+				if(isGetImageFromLink){
+					loadImage(fileAsStr.toString());
+				}else{
+					loadImage();
+				}
+			}
 			extractPostLink(fileAsStr.toString());
 
 			//TODO Generate description
@@ -122,12 +142,25 @@ public class NewsTask{
 
 			BufferedImage img = ImageIO.read(new URL(imageUrl));
 			//write image to file
-			this.imageFile = new File("images/"+getFileNameWOExt(this.inputFile.getName()) + "." + imageFormat);
+			//TODO Load randoms images for video generation
+			this.imageFileSecond = new File("images/"+getFileNameWOExt(this.inputFile.getName()) + "." + imageFormat);
+			this.imageFileFirst = new File("images/"+getFileNameWOExt(this.inputFile.getName()) + "." + imageFormat);
 			this.videoFile = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + ".mov");
 			//this.videoFileWOAudio = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + "_wo_audio.mov");
-			if(ImageIO.write(img, imageFormat, imageFile));
+			if(ImageIO.write(img, imageFormat, imageFileSecond));
 		}else{
 			throw new Exception("Image URL NOT found");
+		}
+	}
+	
+	private void loadImage() throws Exception{
+		Random rnd = new Random();
+		if(randImgFiles.length >= 2){
+			this.imageFileFirst = randImgFiles[rnd.nextInt(randImgFiles.length)];
+			this.imageFileSecond = randImgFiles[rnd.nextInt(randImgFiles.length)];
+			this.videoFile = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + ".mov");
+		}else{
+			throw new Exception("Please add random images for video generating!!!");
 		}
 	}
 
@@ -145,7 +178,7 @@ public class NewsTask{
 
 	private void extractPostLink(String fileContent) throws Exception{
 		//Pattern imgPattern =Pattern.compile("href=\"((http(s)?://)?(www.)?([\\.a-z0-9/\\-]+))\"");
-		Pattern imgPattern =Pattern.compile("(http://tinyurl.com/([a-z0-9]+))");
+		Pattern imgPattern =Pattern.compile("(http://(" + shortUrlList + "){1,1}/([a-zA-Z0-9/]+))");
 		Matcher matcher = imgPattern.matcher(fileContent);
 		if(matcher.find()){
 			log.debug("Link found: " + matcher.group(1));
@@ -268,8 +301,12 @@ public class NewsTask{
 		return description;
 	}
 
-	public File getImageFile() {
-		return imageFile;
+	public File getImageFileSecond() {
+		return imageFileSecond;
+	}
+	
+	public File getImageFileFirst() {
+		return imageFileFirst;
 	}
 
 	private String getFileAsString(File file) throws Exception{
@@ -304,5 +341,13 @@ public class NewsTask{
 		}
 
 		return fileAsStr.toString();
+	}
+
+	public File getPreviewImageFile() {
+		return previewImageFile;
+	}
+
+	public void setPreviewImageFile(File previewImageFile) {
+		this.previewImageFile = previewImageFile;
 	}
 }

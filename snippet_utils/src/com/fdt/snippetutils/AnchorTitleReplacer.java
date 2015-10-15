@@ -346,7 +346,7 @@ public class AnchorTitleReplacer {
 
 						if("".equals(newTitle)){
 							appendLinesToFile(line, new File("result_not_found.txt"), true);
-							log.warn(String.format("!!! TITLE WILL NOT BE CHANGED !!! Key: '%s'; Total line: '%s'",bookName, line));
+							log.warn(String.format("!!! TITLE WILL NOT BE CHANGED !!! Key: '%s'; Full line: '%s'",bookName, line));
 							newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
 						}
 						//newLine = line.replace(fullTitle, newTitle);

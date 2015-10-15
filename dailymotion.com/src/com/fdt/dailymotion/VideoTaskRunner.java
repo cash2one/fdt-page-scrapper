@@ -51,6 +51,8 @@ public class VideoTaskRunner {
 	private int maxThreadCount;
 
 	private String templateFilePath;
+	
+	private String shortUrlsList;
 
 	private String linkListFilePath;
 	private String linkTitleListFilePath;
@@ -60,6 +62,9 @@ public class VideoTaskRunner {
 	private Boolean loadPreGenFile = false;
 	private File pregeneratedFile = null;
 	private File titleFile = null;
+	
+	private boolean isGetImageFromLink;
+	private File randImagesDirPath = null;
 
 	private final Random rnd = new Random();
 
@@ -81,6 +86,8 @@ public class VideoTaskRunner {
 	private final static String LINK_TITLE_LIST_FILE_PATH_LABEL = "link_title_list_file_path";
 
 	private final static String CONTENT_TEMPLATE_FILE_PATH_LABEL = "content_template_file_path";
+	
+	private final static String SHORT_URLS_LIST_LABEL = "short_urls_list";
 
 	private static final String MAX_POST_PER_ACCOUNT_LABEL = "MAX_POST_PER_ACCOUNT";
 	private static final String MIN_POST_PER_ACCOUNT_LABEL = "MIN_POST_PER_ACCOUNT";
@@ -90,6 +97,9 @@ public class VideoTaskRunner {
 	private final static String LOAD_PREGENERATED_FILE_LABEL = "load_pregenerated_file";
 	private final static String PREGENERATED_FILE_LABEL = "pregenerated_file";
 	private final static String TITLE_FILE_LABEL = "title_file";
+	
+	private final static String IS_GET_IMAGE_FROM_LINK="is_get_image_from_link";
+	private final static String RANDOM_IMAGES_DIR_PATH="random_images_directory_path";
 
 	private Integer MIN_SNIPPET_COUNT=5;
 	private Integer MAX_SNIPPET_COUNT=10;
@@ -110,6 +120,8 @@ public class VideoTaskRunner {
 		this.errorFilePath = Constants.getInstance().getProperty(ERROR_FILE_PATH_LABEL);
 
 		this.templateFilePath = Constants.getInstance().getProperty(CONTENT_TEMPLATE_FILE_PATH_LABEL);
+		
+		this.shortUrlsList = Constants.getInstance().getProperty(SHORT_URLS_LIST_LABEL);
 
 		this.linkListFilePath = Constants.getInstance().getProperty(LINK_LIST_FILE_PATH_LABEL);
 		this.linkTitleListFilePath = Constants.getInstance().getProperty(LINK_TITLE_LIST_FILE_PATH_LABEL); 
@@ -118,7 +130,7 @@ public class VideoTaskRunner {
 		
 		String loadPreGenFileValue = Constants.getInstance().getProperty(LOAD_PREGENERATED_FILE_LABEL);
 		if(loadPreGenFileValue != null && !"".equals(loadPreGenFileValue.trim())){
-			loadPreGenFile = Boolean.valueOf(loadPreGenFile);
+			loadPreGenFile = Boolean.valueOf(loadPreGenFileValue);
 		}
 		
 		String pregenFileValue = Constants.getInstance().getProperty(PREGENERATED_FILE_LABEL);
@@ -129,6 +141,16 @@ public class VideoTaskRunner {
 		String titleFileValue = Constants.getInstance().getProperty(TITLE_FILE_LABEL);
 		if(titleFileValue != null && !"".equals(titleFileValue.trim())){
 			titleFile = new File(pregenFileValue);
+		}
+		
+		String isGetImageFromLinkValue = Constants.getInstance().getProperty(IS_GET_IMAGE_FROM_LINK);
+		if(isGetImageFromLinkValue != null && !"".equals(isGetImageFromLinkValue.trim())){
+			isGetImageFromLink = Boolean.valueOf(isGetImageFromLinkValue);
+		}
+		
+		String randImagesDirPathValue = Constants.getInstance().getProperty(RANDOM_IMAGES_DIR_PATH);
+		if(randImagesDirPathValue != null && !"".equals(randImagesDirPathValue.trim())){
+			randImagesDirPath = new File(randImagesDirPathValue);
 		}
 
 		this.taskFactory = TaskFactory.getInstance();
@@ -177,10 +199,10 @@ public class VideoTaskRunner {
 				taskFactory.clear();
 				//taskFactory.loadTaskQueue(urlsFilePath);
 				if(!loadPreGenFile){
-					taskFactory.fillTaskQueue(rootInputFiles.listFiles(), new File(this.templateFilePath));
+					taskFactory.fillTaskQueue(rootInputFiles.listFiles(), new File(this.templateFilePath), this.shortUrlsList, isGetImageFromLink, randImagesDirPath.listFiles());
 				}else{
 					//TODO Load tasks from single file
-					taskFactory.fillTaskQueue(titleFile, new File(this.templateFilePath), pregeneratedFile);
+					taskFactory.fillTaskQueue(titleFile, new File(this.templateFilePath), this.shortUrlsList, pregeneratedFile);
 				}
 
 				File linkList = new File(linkListFilePath);
