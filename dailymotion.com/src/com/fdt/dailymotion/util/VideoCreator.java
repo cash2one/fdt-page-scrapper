@@ -24,8 +24,10 @@ import com.xuggle.xuggler.IStreamCoder;
 
 public class VideoCreator {
 
-	private static final int MIN_FRAME_COUNT = 3599;
+	private static final int VIDEO_WIDTH = 1280;
+	private static final int VIDEO_HEIGHT = 720;
 
+	private static final int MIN_FRAME_COUNT = 3599;
 	private static final int MAX_FRAME_COUNT = 3600;
 
 	private static final Logger log = Logger.getLogger(VideoCreator.class);
@@ -40,10 +42,10 @@ public class VideoCreator {
 	public static void main(String... args){
 
 		DOMConfigurator.configure("log4j.xml");
-		
+
 		File image;
 		File video;
-		
+
 		try {
 			/*for(int i = 150; i < 299; i++){
 				File videoFile = new File("images/article_"+i+".jpg");
@@ -57,7 +59,7 @@ public class VideoCreator {
 					video = null;
 				}
 			}*/
-			VideoCreator.makeVideo("test_video/h264_test.mov", new File("images/preview_Knock_Knock_2015.jpg"), new File("images/preview_Breaking_Through_2015.jpg"), new File("images/article_7.jpg"), new File("08.wav"), 4000, 5000);
+			VideoCreator.makeVideo("test_video/h264_test.mov", new File[]{new File("images_rand/zala.jpg"), new File("images_rand/zala1.jpg")}, new File("images_rand/zala1.jpg"), false, new File("08.wav"), 150, 180);
 			//VideoCreator.mergeVideoAndAudio("test_video_wa.mp4", "08.wav", "test_video.mp4");
 			/*MediaLocator ivml = JpegImagesToMovie.createMediaLocator("test_video_wa.mov");
 			MediaLocator aml = JpegImagesToMovie.createMediaLocator("08.wav");
@@ -96,7 +98,7 @@ public class VideoCreator {
 	        log.error("Cannot build media locator from: " + fileName);
 	        System.exit(0);
 	    }
-	    imageToMovie.doIt(1280, 720, framePerSec, imgLst, oml);
+	    imageToMovie.doIt(VIDEO_WIDTH, VIDEO_HEIGHT, framePerSec, imgLst, oml);
 	    //imageToMovie.doIt(640, 480, 1, imgLst, oml);
 	    //imageToMovie.doIt(320, 240, (100 / interval), imgLst, oml);
 
@@ -114,10 +116,10 @@ public class VideoCreator {
 	 * @return
 	 * @throws IOException
 	 */
-	public static Integer[] makeVideo(String filePath, File imageFile, File randImageFile, File previewFile, File audioFile, int minDur, int maxDur) throws IOException{
+	public static Integer[] makeVideo(String filePath, File[] imageFiles, File previewFile, boolean addAudio, File audioFile, int minDur, int maxDur) throws IOException{
 		//int framePerSec = calculateFrameRate(imageFile);
 		int framePerSec = 25;
-		return makeVideo(filePath, imageFile, randImageFile, previewFile, audioFile, minDur, maxDur, framePerSec);
+		return makeVideo(filePath, imageFiles, previewFile, addAudio, audioFile, minDur, maxDur, framePerSec);
 	}
 
 	/**
@@ -131,98 +133,111 @@ public class VideoCreator {
 	 * @return
 	 * @throws IOException
 	 */
-	public static Integer[] makeVideo(String filePath, File imageFile, File randImageFile, File previewFile, File audioFile, int minDur, int maxDur, int framePerSec) throws IOException {
+	public static Integer[] makeVideo(String filePath, File[] imageFiles, File previewFile, boolean addAudio, File audioFile, int minDur, int maxDur, int framePerSec) throws IOException {
 
 		long startTime = System.currentTimeMillis();
 		IMediaWriter writer = ToolFactory.makeWriter(filePath);
 
 		Random rnd = new Random();
 		//framePerSec = 15;
-		
+
 		int frameCount = (minDur + rnd.nextInt(maxDur-minDur))*framePerSec;
 
-		writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, 1280, 720);
+		writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, VIDEO_WIDTH, VIDEO_HEIGHT);
 
-		IContainer containerAudio = IContainer.make();
+		if(addAudio){
+			IContainer containerAudio = IContainer.make();
 
-		if (containerAudio.open(audioFile.getPath(), IContainer.Type.READ, null) < 0)
-			throw new IllegalArgumentException("Cant find " + audioFile.getPath());
+			if (containerAudio.open(audioFile.getPath(), IContainer.Type.READ, null) < 0)
+				throw new IllegalArgumentException("Cant find " + audioFile.getPath());
 
-		int audioStreamt = 0;
+			int audioStreamt = 0;
 
-		IStream stream = null;
-		IStreamCoder code = null;
-		
-		for(int i=0; i<containerAudio.getNumStreams(); i++){
-			stream = containerAudio.getStream(i);
-			code = stream.getStreamCoder();
+			IStream stream = null;
+			IStreamCoder code = null;
 
-			if(code.getCodecType() == ICodec.Type.CODEC_TYPE_AUDIO)
-			{
-				audioStreamt = i;
-				break;
+			for(int i=0; i<containerAudio.getNumStreams(); i++){
+				stream = containerAudio.getStream(i);
+				code = stream.getStreamCoder();
+
+				if(code.getCodecType() == ICodec.Type.CODEC_TYPE_AUDIO)
+				{
+					audioStreamt = i;
+					break;
+				}
+
+				stream = null;
+				code = null;
 			}
-			
-			stream = null;
-			code = null;
-		}
-		IStreamCoder audioCoder = containerAudio.getStream(audioStreamt).getStreamCoder();
-		audioCoder.open();
+			IStreamCoder audioCoder = containerAudio.getStream(audioStreamt).getStreamCoder();
+			audioCoder.open();
 
-		writer.addAudioStream(audioStreamIndex, audioStreamId, audioCoder.getChannels(), audioCoder.getSampleRate());
+			writer.addAudioStream(audioStreamIndex, audioStreamId, audioCoder.getChannels(), audioCoder.getSampleRate());
 
-		IAudioSamples samples = IAudioSamples.make(audioCoder.getSampleRate(), audioCoder.getChannels(),IAudioSamples.Format.FMT_S32);  
+			IAudioSamples samples = IAudioSamples.make(audioCoder.getSampleRate(), audioCoder.getChannels(),IAudioSamples.Format.FMT_S32);  
 
-		IPacket packetaudio = IPacket.make();
-		
-		int bytesDecodedaudio = -1;
-		int offset = 0;
+			IPacket packetaudio = IPacket.make();
 
-		while(containerAudio.readNextPacket(packetaudio) >= 0){
-			offset = 0;
-			while(offset<packetaudio.getSize())
-			{
-				bytesDecodedaudio = audioCoder.decodeAudio(samples, 
-						packetaudio,
-						offset);
-				if (bytesDecodedaudio < 0)
-					throw new RuntimeException("could not detect audio");
-				offset += bytesDecodedaudio;
+			int bytesDecodedaudio = -1;
+			int offset = 0;
 
-				if (samples.isComplete()){
-					writer.encodeAudio(audioStreamIndex, samples);
+			while(containerAudio.readNextPacket(packetaudio) >= 0){
+				offset = 0;
+				while(offset<packetaudio.getSize())
+				{
+					bytesDecodedaudio = audioCoder.decodeAudio(samples, 
+							packetaudio,
+							offset);
+					if (bytesDecodedaudio < 0)
+						throw new RuntimeException("could not detect audio");
+					offset += bytesDecodedaudio;
+
+					if (samples.isComplete()){
+						writer.encodeAudio(audioStreamIndex, samples);
+					}
 				}
 			}
+
+			packetaudio = null;
+			
+			samples.delete();
+			/*audioCoder.release();
+			containerAudio.release();*/
+			audioCoder.close();
+			containerAudio.close();
+			audioCoder = null;
+			containerAudio = null;
 		}
-		
-		packetaudio = null;
 
 		//for (int index = 0; index < SECONDS_TO_RUN_FOR * FRAME_RATE; index++) {
-		BufferedImage screen = ImageIO.read(imageFile);
+		BufferedImage screen = ImageIO.read(imageFiles[rnd.nextInt(imageFiles.length)]);
 		BufferedImage bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
-		
-		screen = ImageIO.read(randImageFile);
-		BufferedImage bgrRandScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
 		screen = null;
-		
-		BufferedImage screen2 = ImageIO.read(previewFile);
-		BufferedImage bgrScreenPreview = convertToType(screen2, BufferedImage.TYPE_3BYTE_BGR);
-		screen2 = null;
-		
-		int rndTimeIntrvl = framePerSec * 321 + framePerSec * (int)Math.pow(-1, rnd.nextInt(2))*rnd.nextInt(123);
 
+		BufferedImage screenPreview = ImageIO.read(previewFile);
+		BufferedImage bgrScreenPreview = convertToType(screenPreview, BufferedImage.TYPE_3BYTE_BGR);
+		screenPreview = null;
+
+		/*int initialInt = minDur < 1000?30:300;
+		int initialRandInt = minDur < 1000?20:200;*/
+		int initialInt = 10;
+		int initialRandInt = 5;
+		
+		int rndTimeIntrvl = framePerSec * initialInt + framePerSec *(int)Math.pow(-1, rnd.nextInt(2))*rnd.nextInt(initialRandInt);
+		
 		for(long i = 0; i < frameCount-2*framePerSec; i++){
 			//swap images
 			if(--rndTimeIntrvl <= 0)
 			{
-				BufferedImage swap = bgrScreen;
-				bgrScreen = bgrRandScreen;
-				bgrRandScreen = swap;
-				rndTimeIntrvl = 300 + (int)Math.pow(-1, rnd.nextInt(2))*rnd.nextInt(200);
+				screen = ImageIO.read(imageFiles[rnd.nextInt(imageFiles.length)]);
+				bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
+				screen = null;
+				
+				rndTimeIntrvl = framePerSec * initialInt + framePerSec * (int)Math.pow(-1, rnd.nextInt(2))*rnd.nextInt(initialRandInt);
 			}
 			writer.encodeVideo(0, bgrScreen, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
 		}
-		
+
 		for(long i = frameCount-2*framePerSec; i < frameCount; i++){
 			writer.encodeVideo(0, bgrScreenPreview, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
 		}
@@ -230,7 +245,7 @@ public class VideoCreator {
 
 		bgrScreen = null;
 		bgrScreenPreview = null;
-		
+
 		/*for(long i = 1; i < frameCount-2*framePerSec; i++){
 			writer.encodeVideo(0, bgrScreen, i, TimeUnit.SECONDS);
 		}
@@ -249,18 +264,11 @@ public class VideoCreator {
 
 		writer.flush();
 		writer.close();
-		samples.delete();
-		/*audioCoder.release();
-		containerAudio.release();*/
-		audioCoder.close();
-		containerAudio.close();
-		audioCoder = null;
-		containerAudio = null;
 		writer = null;
 
 		log.info(String.format("Video Created: %s",filePath));
 		long endTime = System.currentTimeMillis();
-		log.info(String.format("File for %s was generated for %s second(s)", imageFile.getName(), ((endTime-startTime)/1000)));
+		log.info(String.format("File for %s was generated for %s second(s)", filePath, ((endTime-startTime)/1000)));
 
 		return new Integer[]{frameCount, framePerSec};
 	}
@@ -281,12 +289,12 @@ public class VideoCreator {
 	}
 
 	public static BufferedImage convertToType(BufferedImage sourceImage, int targetType) {
-		BufferedImage image = new BufferedImage(1080, 720, targetType);
+		BufferedImage image = new BufferedImage(VIDEO_WIDTH, VIDEO_HEIGHT, targetType);
 
 		//TODO scale image
-		int[] sclSz = scaleSize(sourceImage.getWidth(),sourceImage.getHeight(),1080,720);
+		int[] sclSz = scaleSize(sourceImage.getWidth(),sourceImage.getHeight(),VIDEO_WIDTH,VIDEO_HEIGHT);
 		Graphics2D g = image.createGraphics();
-		double scaleFactor = getScaleFactor(sourceImage.getWidth(),sourceImage.getHeight(),1080,720);
+		double scaleFactor = getScaleFactor(sourceImage.getWidth(),sourceImage.getHeight(),VIDEO_WIDTH,VIDEO_HEIGHT);
 		g.scale(scaleFactor, scaleFactor);
 		g.drawImage(sourceImage, (int)Math.round(sclSz[0]/scaleFactor), (int)Math.round(sclSz[1]/scaleFactor), sourceImage.getWidth(), sourceImage.getHeight(), null);
 		g.dispose();
@@ -311,7 +319,7 @@ public class VideoCreator {
 	}
 
 	private static int[] scaleSize(int width, int height, int destWidth, int destHeight){
-		int[] scaleSizes =  new int[]{0,0,1080,720};
+		int[] scaleSizes =  new int[]{0,0,VIDEO_WIDTH,VIDEO_HEIGHT};
 
 		double fitFactorSource = (double)height/width;
 		double firFactorDest = (double)destHeight/destWidth;

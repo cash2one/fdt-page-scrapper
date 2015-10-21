@@ -130,18 +130,22 @@ public class VideoPosterThread extends Thread{
 					}
 
 					//TODO Add Snippet task chooser
-					ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
-					if(snippets.size() == 0)
-						throw new Exception("Could not extract snippets");
-
-					//get random snippets
-					snippets = getRandSnippets(snippets, snippetExtractor);
-
-					StringBuilder snippetsStr = new StringBuilder(); 
-					for(Snippet snippet : snippets){
-						snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.toString());
+					if(MIN_SNIPPET_COUNT == 0 && MAX_SNIPPET_COUNT == 0){
+						task.setSnippets("");
+					}else{
+						ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
+						if(snippets.size() == 0)
+							throw new Exception("Could not extract snippets");
+	
+						//get random snippets
+						snippets = getRandSnippets(snippets, snippetExtractor);
+	
+						StringBuilder snippetsStr = new StringBuilder(); 
+						for(Snippet snippet : snippets){
+							snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.toString());
+						}
+						task.setSnippets(snippetsStr.toString());
 					}
-					task.setSnippets(snippetsStr.toString());
 
 					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account, loadPreGenFile);
 					String linkToVideo = nPoster.executePostNews(times);
@@ -206,7 +210,7 @@ public class VideoPosterThread extends Thread{
 		//TODO Calculate bitrate via file creation
 		Integer frameRate = calculateBitRateViaFileCreation(task, addAudioToFile, previewImg);
 		
-		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFileFirst(), task.getImageFileSecond(), previewImg, new File("08.wav"), minDur, maxDur, frameRate);
+		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFiles(), previewImg, addAudioToFile, new File("08.wav"), minDur, maxDur, frameRate);
 		/*long bitRate = (8*task.getVideoFile().length()/maxDur);
 		while(bitRate < VideoCreator.successBitrate){
 			times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur, times[1]*2);
@@ -217,11 +221,11 @@ public class VideoPosterThread extends Thread{
 	
 	private Integer calculateBitRateViaFileCreation(NewsTask task, boolean addAudioToFile, File previewImg) throws IOException{
 		File testFile = new File(task.getVideoFile().getPath() + "_checker.mov");
-		Integer[] times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFileFirst(), task.getImageFileSecond(), previewImg, new File("08.wav"), 59, 60);
+		Integer[] times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFiles(), previewImg, addAudioToFile, new File("08.wav"), 59, 60);
 		long bitRate = (8*testFile.length()/60);
 		while(bitRate < VideoCreator.successBitrate){
 			testFile.delete();
-			times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFileFirst(), task.getImageFileSecond(), previewImg, new File("08.wav"), 59, 60, times[1] + 5);
+			times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFiles(), previewImg, addAudioToFile, new File("08.wav"), 59, 60, times[1] + 5);
 			bitRate = (8*testFile.length()/60);
 			log.info(String.format("Calculated bitrate/framerate for file %s is %d/%d", testFile.getName(),bitRate, times[1]));
 		}

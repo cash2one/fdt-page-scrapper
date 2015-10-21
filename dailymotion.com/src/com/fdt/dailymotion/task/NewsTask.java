@@ -7,7 +7,9 @@ import java.io.FileReader;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,8 +23,7 @@ public class NewsTask{
 	private static final Logger log = Logger.getLogger(NewsTask.class);
 
 	private File inputFile;
-	private File imageFileFirst;
-	private File imageFileSecond;
+	private File[] imageFiles;
 	private File previewImageFile;
 	private File videoFile;
 	//private File videoFileWOAudio;
@@ -143,11 +144,10 @@ public class NewsTask{
 			BufferedImage img = ImageIO.read(new URL(imageUrl));
 			//write image to file
 			//TODO Load randoms images for video generation
-			this.imageFileSecond = new File("images/"+getFileNameWOExt(this.inputFile.getName()) + "." + imageFormat);
-			this.imageFileFirst = new File("images/"+getFileNameWOExt(this.inputFile.getName()) + "." + imageFormat);
+			this.imageFiles = new File[]{new File("images/"+getFileNameWOExt(this.inputFile.getName()) + "." + imageFormat)};
 			this.videoFile = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + ".mov");
 			//this.videoFileWOAudio = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + "_wo_audio.mov");
-			if(ImageIO.write(img, imageFormat, imageFileSecond));
+			if(ImageIO.write(img, imageFormat, this.imageFiles[0]));
 		}else{
 			throw new Exception("Image URL NOT found");
 		}
@@ -155,12 +155,27 @@ public class NewsTask{
 	
 	private void loadImage() throws Exception{
 		Random rnd = new Random();
-		if(randImgFiles.length >= 2){
-			this.imageFileFirst = randImgFiles[rnd.nextInt(randImgFiles.length)];
-			this.imageFileSecond = randImgFiles[rnd.nextInt(randImgFiles.length)];
+		if(randImgFiles.length >= 5){
+			if(randImgFiles.length <= 7){
+				this.imageFiles = randImgFiles;
+			}else{
+				//get random 5-7 images;
+				int position = 0;
+				int count = 5 + rnd.nextInt(3);
+				Set<File> newRandFileArray = new HashSet<File>(count);
+				
+				while(position < count){
+					newRandFileArray.add(randImgFiles[rnd.nextInt(randImgFiles.length)]);
+					if(newRandFileArray.size()-1 == position){
+						position++;
+					}
+				}
+				
+				this.imageFiles = newRandFileArray.toArray(new File[newRandFileArray.size()]);
+			}
 			this.videoFile = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + ".mov");
 		}else{
-			throw new Exception("Please add random images for video generating!!!");
+			throw new Exception("Please add at least 5 random images for video generating!!!");
 		}
 	}
 
@@ -301,12 +316,8 @@ public class NewsTask{
 		return description;
 	}
 
-	public File getImageFileSecond() {
-		return imageFileSecond;
-	}
-	
-	public File getImageFileFirst() {
-		return imageFileFirst;
+	public File[] getImageFiles() {
+		return imageFiles;
 	}
 
 	private String getFileAsString(File file) throws Exception{

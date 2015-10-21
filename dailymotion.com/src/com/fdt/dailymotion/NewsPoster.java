@@ -62,8 +62,10 @@ public class NewsPoster {
 	private Integer times[];
 
 	private static final String TIME_STAMP_FORMAT = "HH:mm:ss.SSS";
+	private static final String VIDEO_RECORD_FORMAT = "yyyy/MM/dd";
 
 	private SimpleDateFormat sdf = new SimpleDateFormat(TIME_STAMP_FORMAT);
+	private SimpleDateFormat vrdf = new SimpleDateFormat(VIDEO_RECORD_FORMAT);
 
 	public NewsPoster(NewsTask task, Proxy proxy, Account account, Boolean loadPreGenFile) {
 		this.task = task;
@@ -313,7 +315,7 @@ public class NewsPoster {
 				throw new Exception("Account execeed upload limit: " + account.getLogin());
 			}
 		}
-		
+
 		log.info(String.format("Response download status: %s; Progress: %s", status[0],status[1]));
 	}
 
@@ -538,7 +540,7 @@ public class NewsPoster {
 			}
 
 			int respCode = conn.getResponseCode();
-			
+
 			// Execute HTTP Post Request
 			StringBuilder responseStr = getResponseAsString(conn);
 
@@ -566,7 +568,7 @@ public class NewsPoster {
 			//int oldFileSizeLen = getFileSize(thumbnailUrlOld);
 			//int newFileSizeLen = getFileSize(thumbnailUrlOld);
 			//log.info(String.format("Old preview of video (%s): %s",videoId, thumbnailUrlOld));
-			
+
 			if(!loadPreGenFile){
 				/*while(thumbnailUrlOld.equals(thumbnailUrlNew) || oldFileSizeLen == newFileSizeLen ){
 					setPreview(videoId, subUrl);
@@ -577,7 +579,11 @@ public class NewsPoster {
 					log.info(String.format("New preview of video (%s): %s",videoId, thumbnailUrlNew));
 					Thread.sleep(10000L);
 				}*/
-				setPreview(videoId, subUrl, task.getPreviewImageFile());
+				try{
+					setPreview(videoId, subUrl, task.getPreviewImageFile());
+				}catch(Exception e){
+					log.warn("Error occured during posting PREVIEW for video: " + videoId, e);
+				}
 				/*respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"thumbnail_url,\"},\"id\":0},{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"status,\"},\"id\":1}]");
 				jsonObj = new JSONObject(respStr.substring(1, respStr.length()-1));
 				thumbnailUrlNew = jsonObj.getJSONObject("result").getString("thumbnail_url");
@@ -590,70 +596,70 @@ public class NewsPoster {
 			return "";
 		}
 	}
-	
+
 	private int getFileSize(String fileUrl) throws MalformedURLException {
-	    HttpURLConnection conn = null;
-	    URL url = new URL(fileUrl);
-	    try {
-	        conn = (HttpURLConnection) url.openConnection();
-	        conn.setRequestMethod("HEAD");
-	        conn.getInputStream();
-	        return conn.getContentLength();
-	    } catch (IOException e) {
-	        return -1;
-	    } finally {
-	        conn.disconnect();
-	    }
+		HttpURLConnection conn = null;
+		URL url = new URL(fileUrl);
+		try {
+			conn = (HttpURLConnection) url.openConnection();
+			conn.setRequestMethod("HEAD");
+			conn.getInputStream();
+			return conn.getContentLength();
+		} catch (IOException e) {
+			return -1;
+		} finally {
+			conn.disconnect();
+		}
 	}
 
-//	private String setPreview(String videoId, String fromRequest) throws Exception{
-//		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
-//				"/ajax/video_preview_v3";
-//
-//		HttpURLConnection conn = null;
-//		StringBuilder responseStr = new StringBuilder();
-//		//post news
-//		try{
-//			URL url = new URL(postUrl);
-//			HttpURLConnection.setFollowRedirects(false);
-//			conn = (HttpURLConnection) url.openConnection(proxy);
-//			conn.setReadTimeout(60000);
-//			conn.setConnectTimeout(60000);
-//			conn.setRequestMethod("POST");
-//			conn.setDoInput(true);
-//			conn.setDoOutput(true);
-//
-//			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
-//			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-//			conn.setRequestProperty("Accept", "*");
-//			conn.setRequestProperty("Cookie", account.getCookies());
-//			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
-//			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
-//			conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
-//			//conn.setRequestProperty("Referer", http://www.dailymotion.com/pageitem/OneStepPreview?widget_only=1&hidenextvideo=1&request=/video/x30lasl_%25D0%25BF%25D1%2580%25D0%25B5%25D1%2581%25D0%25BB%25D0%25B5%25D0%25B4%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5-m%25D0%25BE%25D1%2582%25D0%25BE%25D1%2586%25D0%25B8%25D0%25BA%25D0%25BB%25D0%25B8%25D1%2581%25D1%2582%25D0%25B0-30-06-2015_webcam);
-//
-//			OutputStream outputStream;
-//			outputStream = conn.getOutputStream();
-//			PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
-//			writer.append(getPreviewParamString(videoId, fromRequest));
-//			writer.flush();
-//			writer.close();
-//			outputStream.close();
-//
-//			int respCode = conn.getResponseCode();
-//			// Execute HTTP Post Request
-//			responseStr = getResponseAsString(conn);
-//
-//			log.info("Set preview responce string: " + responseStr.toString());
-//		}finally{
-//			if(conn != null){
-//				conn.disconnect();
-//			}
-//		}
-//
-//		return responseStr.toString();
-//	}
-	
+	//	private String setPreview(String videoId, String fromRequest) throws Exception{
+	//		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
+	//				"/ajax/video_preview_v3";
+	//
+	//		HttpURLConnection conn = null;
+	//		StringBuilder responseStr = new StringBuilder();
+	//		//post news
+	//		try{
+	//			URL url = new URL(postUrl);
+	//			HttpURLConnection.setFollowRedirects(false);
+	//			conn = (HttpURLConnection) url.openConnection(proxy);
+	//			conn.setReadTimeout(60000);
+	//			conn.setConnectTimeout(60000);
+	//			conn.setRequestMethod("POST");
+	//			conn.setDoInput(true);
+	//			conn.setDoOutput(true);
+	//
+	//			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+	//			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+	//			conn.setRequestProperty("Accept", "*");
+	//			conn.setRequestProperty("Cookie", account.getCookies());
+	//			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+	//			conn.setRequestProperty("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
+	//			conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+	//			//conn.setRequestProperty("Referer", http://www.dailymotion.com/pageitem/OneStepPreview?widget_only=1&hidenextvideo=1&request=/video/x30lasl_%25D0%25BF%25D1%2580%25D0%25B5%25D1%2581%25D0%25BB%25D0%25B5%25D0%25B4%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25B5-m%25D0%25BE%25D1%2582%25D0%25BE%25D1%2586%25D0%25B8%25D0%25BA%25D0%25BB%25D0%25B8%25D1%2581%25D1%2582%25D0%25B0-30-06-2015_webcam);
+	//
+	//			OutputStream outputStream;
+	//			outputStream = conn.getOutputStream();
+	//			PrintWriter writer = new PrintWriter(new OutputStreamWriter(outputStream), true);
+	//			writer.append(getPreviewParamString(videoId, fromRequest));
+	//			writer.flush();
+	//			writer.close();
+	//			outputStream.close();
+	//
+	//			int respCode = conn.getResponseCode();
+	//			// Execute HTTP Post Request
+	//			responseStr = getResponseAsString(conn);
+	//
+	//			log.info("Set preview responce string: " + responseStr.toString());
+	//		}finally{
+	//			if(conn != null){
+	//				conn.disconnect();
+	//			}
+	//		}
+	//
+	//		return responseStr.toString();
+	//	}
+
 	private String setPreview(String videoId, String fromRequest, File previewFile) throws Exception{
 
 		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
@@ -983,7 +989,7 @@ public class NewsPoster {
 		.append("privacy=").append("0").append("&")
 		.append("allow_comments=").append("1").append("&")
 		//.append("allow_in_group=").append("1").append("&")
-		.append("recordedOn=").append("2015/05/14").append("&")
+		.append("recordedOn=").append(vrdf.format(new Date(System.currentTimeMillis()-60*60*24*1000))).append("&")
 		//.append("coming_next=").append("").append("&")
 		//.append("videoId=").append(task.getVideoid()).append("&")
 		//.append("videoUpdateTitle=").append(task.getVideoid()).append("&")
