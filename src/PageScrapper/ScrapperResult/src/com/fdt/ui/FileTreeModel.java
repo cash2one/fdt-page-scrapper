@@ -65,7 +65,9 @@ public class FileTreeModel implements TreeModel {
         } else {
             PageTasks ptEntry = (PageTasks)parent;
             Domain dEntry = (Domain)child;
-            return ptEntry.getDomain().getSubDomainsIndexList().get(dEntry.getName());
+            return ptEntry.getDomain()
+                    .getSubDomainsIndexList()
+                    .get(dEntry.getName());
         }
     }
 

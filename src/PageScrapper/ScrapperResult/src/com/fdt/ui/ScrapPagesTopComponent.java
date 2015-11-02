@@ -60,7 +60,11 @@ public final class ScrapPagesTopComponent extends TopComponent {
             ResultParser rp = new ResultParser();
             String current = new java.io.File( "." ).getCanonicalPath();
             System.out.println("Current dir:"+current);
-            scrappResults = rp.parseResultFile("../"+SUCCESS_FILE_NAME);
+            try{
+                scrappResults = rp.parseResultFile("../"+SUCCESS_FILE_NAME);
+            }catch(Exception e){
+                log.error("Error occured during loading result from success file",e);
+            }
             TreeModel treeMdl = new FileTreeModel(scrappResults);
             OutlineModel mdl = DefaultOutlineModel.createOutlineModel(treeMdl, new FileRowModel(), true);
             outline1.setRootVisible(false);

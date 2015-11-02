@@ -188,6 +188,7 @@ public class TaskFactory {
 		Domain domain = null;
 		String line = null;
 		try {
+			log.debug("Starting load domain list...");
 			fr = new FileReader(new File(cfgFilePath));
 			br = new BufferedReader(fr);
 
@@ -218,7 +219,7 @@ public class TaskFactory {
 							domain = domainList.get(mainDomain);
 							domain.incCount();
 						}else{
-							domain = new Domain(mainDomain);
+							domain = new Domain(mainDomain,false);
 						}
 					}
 
@@ -232,6 +233,7 @@ public class TaskFactory {
 				}
 				line = br.readLine();
 			}
+			log.debug("Domain list LOADED.");
 		} catch (FileNotFoundException e) {
 			log.error("Reading PROPERTIES file: FileNotFoundException exception occured",e);
 		} catch (IOException e) {

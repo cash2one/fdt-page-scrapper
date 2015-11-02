@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.PageTasks;
@@ -80,12 +81,18 @@ public class ScrapperTaskRunner implements Runnable{
 
 	public static void main(String[] args) {
 		try{
-			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("SuperVIP153051", "v52HVHtisM".toCharArray(),"proxy.txt","LinksList id1.txt", 100, 5000L, "success_result.csv", true, false, 50, null);
+			
+			DOMConfigurator.configure("log4j.xml");
+			long start = System.currentTimeMillis();
+			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("SuperVIP153051", "v52HVHtisM".toCharArray(),"proxy.txt","LinksList id1.txt", 100, 5000L, "success_result.csv", false, false, 0, null);
 			taskRunner.run();
+			System.out.println("Processing file time: " + (System.currentTimeMillis() - start)/1000 + " seconds");
 
+			start = System.currentTimeMillis();
 			ResultParser rp = new ResultParser();
 			ArrayList<PageTasks> scrappResults = rp.parseResultFile("success_result.csv");
-			System.out.println(scrappResults);
+			System.out.println("Parsing result file time: " + (System.currentTimeMillis() - start)/1000 + " seconds");
+			//System.out.println(scrappResults);
 
 		}catch(Throwable e){
 			e.printStackTrace();

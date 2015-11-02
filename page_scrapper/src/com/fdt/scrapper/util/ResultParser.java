@@ -65,7 +65,7 @@ public class ResultParser {
 	}
 
 	private PageTasks parseLine(String[] values){
-		Domain domain = new Domain(values[0]);
+		Domain domain = new Domain(values[0],false);
 		domain.setCount(Integer.valueOf(values[1]));
 		String[] subDomains = null;
 		if(!isEmpty(values[2])){
@@ -74,7 +74,7 @@ public class ResultParser {
 		if(subDomains != null){
 			for(String subDomain:subDomains){
 				String[] subDomainInfo = subDomain.split(":");
-				Domain sbDomain = new Domain(subDomainInfo[0]);
+				Domain sbDomain = new Domain(subDomainInfo[0], true);
 				sbDomain.setCount(Integer.valueOf(subDomainInfo[1]));
 				domain.getSubDomainsList().add(sbDomain);
 				domain.getSubDomainsIndexList().put(sbDomain.getName(), domain.getSubDomainsList().size()-1);
