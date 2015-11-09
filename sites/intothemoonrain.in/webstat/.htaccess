@@ -1,0 +1,7 @@
+DirectoryIndex index.html
+AuthType Basic
+AuthName "/www/intothemoonrain.in/webstat"
+AuthUserFile /home/user/etc/399998.passwd
+<Limit GET POST>
+	require valid-user
+</Limit>
