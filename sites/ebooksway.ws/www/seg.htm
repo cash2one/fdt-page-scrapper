@@ -1,0 +1,62 @@
+if(typeof rc_segments_sent       === 'undefined'){ rc_segments_sent       = false; }
+if(typeof rc_segmented_widgets   === 'undefined'){ rc_segmented_widgets   = new Array(); }
+if(typeof rc_segmented_creatives === 'undefined'){ rc_segmented_creatives = new Array(); }
+if(typeof rc_loaded_widgets      === 'undefined'){ rc_loaded_widgets      = new Array(); }
+
+
+var segmenter = function()
+{
+    if (rc_segments_sent == true) {
+        return;
+    }
+
+    var widget_ids = new Array();
+    var elements = document.getElementsByClassName('rc-wc');
+    for(var i = elements.length - 1; i >= 0; --i) {
+        widget_ids.push(elements[i].id);
+    }
+
+    widget_ids.sort();
+    rc_loaded_widgets.sort();
+
+    // Not all widgets are loaded
+    if (!(widget_ids.length == rc_loaded_widgets.length) && widget_ids.every(function(element, index) {
+        return element === rc_loaded_widgets[index];
+    })){
+        return;
+    }
+
+    rc_segments_sent = true;
+
+    var pixels = new Array();
+    elements = document.getElementsByClassName('rc-seg-pix');
+    for(var i = elements.length - 1; i >= 0; --i) {
+        pixels.push(elements[i].id);
+    }
+
+
+    // Nothing to send
+    if(rc_segmented_widgets.length <= 0 && pixels.length <= 0 && rc_segmented_widgets.length <= 0) {
+        return;
+    }
+
+    loadJSONP('//trends.revcontent.com/seg.php?callback=loaded&widgets=' + rc_segmented_widgets.join() + '&pixels=' + pixels.join() + '&creatives=' + rc_segmented_creatives.join())
+}
+
+var loaded = function ( data ) {
+    rc_segments_sent = true;
+}
+
+var loadJSONP = function ( url ) {
+    var ref = window.document.getElementsByTagName( 'script' )[ 0 ];
+    var script = window.document.createElement( 'script' );
+    script.src = url + (url.indexOf( '?' ) + 1 ? '&' : '?');
+    ref.parentNode.insertBefore( script, ref );
+    script.onload = function () {
+        this.remove();
+    };
+};
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    segmenter();
+});
