@@ -65,6 +65,10 @@ public class VideoTaskRunner {
 	
 	private boolean isGetImageFromLink;
 	private File randImagesDirPath = null;
+	
+	private boolean isUsePreview = false;
+	
+	private int cntOfPicUsing = 1;
 
 	private final Random rnd = new Random();
 
@@ -100,6 +104,10 @@ public class VideoTaskRunner {
 	
 	private final static String IS_GET_IMAGE_FROM_LINK="is_get_image_from_link";
 	private final static String RANDOM_IMAGES_DIR_PATH="random_images_directory_path";
+	
+	private final static String IS_USE_PREVIEW_GENERATING="is_use_preview_generating";
+	private final static String COUNT_OF_PICTURE_USING_MIN="count_of_picture_using_min";
+	private final static String COUNT_OF_PICTURE_USING_MAX="count_of_picture_using_max";
 
 	private Integer MIN_SNIPPET_COUNT=5;
 	private Integer MAX_SNIPPET_COUNT=10;
@@ -148,9 +156,20 @@ public class VideoTaskRunner {
 			isGetImageFromLink = Boolean.valueOf(isGetImageFromLinkValue);
 		}
 		
+		if(!isGetImageFromLink){
+			int min = Integer.parseInt(Constants.getInstance().getProperty(COUNT_OF_PICTURE_USING_MIN));
+			int max = Integer.parseInt(Constants.getInstance().getProperty(COUNT_OF_PICTURE_USING_MAX));
+			cntOfPicUsing = min + rnd.nextInt(max-min);
+		}
+		
 		String randImagesDirPathValue = Constants.getInstance().getProperty(RANDOM_IMAGES_DIR_PATH);
 		if(randImagesDirPathValue != null && !"".equals(randImagesDirPathValue.trim())){
 			randImagesDirPath = new File(randImagesDirPathValue);
+		}
+		
+		String isUsePreviewValue = Constants.getInstance().getProperty(IS_USE_PREVIEW_GENERATING);
+		if(isUsePreviewValue != null && !"".equals(isUsePreviewValue.trim())){
+			isUsePreview = Boolean.valueOf(isUsePreviewValue);
 		}
 
 		this.taskFactory = TaskFactory.getInstance();
@@ -199,7 +218,7 @@ public class VideoTaskRunner {
 				taskFactory.clear();
 				//taskFactory.loadTaskQueue(urlsFilePath);
 				if(!loadPreGenFile){
-					taskFactory.fillTaskQueue(rootInputFiles.listFiles(), new File(this.templateFilePath), this.shortUrlsList, isGetImageFromLink, randImagesDirPath.listFiles());
+					taskFactory.fillTaskQueue(rootInputFiles.listFiles(), new File(this.templateFilePath), this.shortUrlsList, isGetImageFromLink, randImagesDirPath.listFiles(), isUsePreview);
 				}else{
 					//TODO Load tasks from single file
 					taskFactory.fillTaskQueue(titleFile, new File(this.templateFilePath), this.shortUrlsList, pregeneratedFile);
@@ -240,7 +259,8 @@ public class VideoTaskRunner {
 									linkTitleList, 
 									this.listProcessedFilePath, 
 									this.errorFilePath,
-									loadPreGenFile
+									loadPreGenFile,
+									cntOfPicUsing
 									);
 							newThread.start();
 							account = null;

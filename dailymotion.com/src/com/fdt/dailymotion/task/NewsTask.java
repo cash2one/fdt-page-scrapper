@@ -47,17 +47,20 @@ public class NewsTask{
 	private boolean isGetImageFromLink=false;
 	private File[] randImgFiles;
 	
+	private boolean isUsePreview = false;
+	
 	private boolean preGenFileLoaded = false;
 	
 	private static final String LINE_FEED = "\r\n";
 
-	public NewsTask(File inputFile, File templateFile, String shortUrlList, boolean isGetImageFromLink, File[] randImgFiles) throws Exception {
+	public NewsTask(File inputFile, File templateFile, String shortUrlList, boolean isGetImageFromLink, File[] randImgFiles, boolean isUsePreview) throws Exception {
 		super();
 		this.inputFile = inputFile;
 		this.templateFile = templateFile;
 		this.shortUrlList = shortUrlList;
 		this.isGetImageFromLink = isGetImageFromLink;
 		this.randImgFiles = randImgFiles;
+		this.isUsePreview = isUsePreview;
 		//TODO Read and parse file
 	}
 	
@@ -135,7 +138,8 @@ public class NewsTask{
 	private void loadImage(String fileContent) throws Exception{
 		Pattern imgPattern =Pattern.compile("((http://)?(www.)?([\\.\\,\\-\\_\\+\\(\\)@/a-zA-Z0-9]+(jpg|png)))");
 		Matcher matcher = imgPattern.matcher(fileContent);
-		if(matcher.find()){
+		if(matcher.find())
+		{
 			log.debug("Image found: " + matcher.group(1));
 			System.out.println("Image found: " + matcher.group(1));
 			imageUrl = matcher.group(1);
@@ -143,11 +147,10 @@ public class NewsTask{
 
 			BufferedImage img = ImageIO.read(new URL(imageUrl));
 			//write image to file
-			//TODO Load randoms images for video generation
 			this.imageFiles = new File[]{new File("images/"+getFileNameWOExt(this.inputFile.getName()) + "." + imageFormat)};
 			this.videoFile = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + ".mov");
 			//this.videoFileWOAudio = new File("output_video/"+getFileNameWOExt(this.inputFile.getName()) + "_wo_audio.mov");
-			if(ImageIO.write(img, imageFormat, this.imageFiles[0]));
+			ImageIO.write(img, imageFormat, this.imageFiles[0]);
 		}else{
 			throw new Exception("Image URL NOT found");
 		}
@@ -249,7 +252,7 @@ public class NewsTask{
 
 	public void setSnippets(String snippets) {
 		//Delete external url
-		snippets = snippets.replaceAll("(https|http)?:\\/\\/)?(www\\.)?([\\w\\.]+)(\\.[a-zA-Z]{2,6})(\\/[\\w\\.]*)*\\/?", "");
+		snippets = snippets.replaceAll("((https|http)?:\\/\\/)?(www\\.)?([\\w\\.]+)(\\.[a-zA-Z]{2,6})(\\/[\\w\\.]*)*\\/?", "");
 
 		this.snippets = snippets;
 	}
@@ -360,5 +363,9 @@ public class NewsTask{
 
 	public void setPreviewImageFile(File previewImageFile) {
 		this.previewImageFile = previewImageFile;
+	}
+
+	public boolean isUsePreview() {
+		return isUsePreview;
 	}
 }

@@ -30,7 +30,7 @@
 	</target>
 
 	<target depends="compile" name="build" description="Jar creating">
-		<jar destfile="deploy/dailymotion.com.jar" basedir="classes" whenmanifestonly="fail"
+		<jar destfile="../java/dailymotion.com.jar" basedir="classes" whenmanifestonly="fail"
 			defaultexcludes="true" includes="**/*.class, **/*.xml, **/*.xsl">
 			<manifest>
 				<attribute name="Class-Path" value="." />

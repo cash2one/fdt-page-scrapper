@@ -138,7 +138,7 @@ public abstract class SnippetTask
 			result = scrapperUrl.replace(KEY_WORDS_KEY, keyWords).replace(LANGUAGE_KEY, language).replace(PAGE_NUMBER, String.valueOf(page));
 		}else{
 			try {
-				result = scrapperUrl.replace(KEY_WORDS_KEY, URLEncoder.encode(keyWords,HTTP.UTF_8)).replace(LANGUAGE_KEY, language).replace(PAGE_NUMBER, String.valueOf(page));
+				result = scrapperUrl.replace(KEY_WORDS_KEY, URLEncoder.encode(keyWords,HTTP.UTF_8)).replace(LANGUAGE_KEY, language).replace(PAGE_NUMBER, String.valueOf(getCustomPage()));
 			} catch (UnsupportedEncodingException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -197,6 +197,10 @@ public abstract class SnippetTask
 
 	public void setPage(int page) {
 		this.page = page;
+	}
+	
+	public int getCustomPage(){
+		return this.page;
 	}
 	
 	public boolean isBanPage(int respCode){

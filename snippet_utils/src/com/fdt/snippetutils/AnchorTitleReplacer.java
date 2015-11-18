@@ -455,7 +455,7 @@ public class AnchorTitleReplacer {
 
 	private Snippet getSnippet(String key) throws Exception{
 		Random rnd = new Random();
-		SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
+		SnippetExtractor snippetExtractor = new SnippetExtractor(proxyFactory);
 		//TODO Add Snippet task chooser
 		SnippetTask snippetTask = getTaskBySource(source, key);
 		ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(snippetTask);

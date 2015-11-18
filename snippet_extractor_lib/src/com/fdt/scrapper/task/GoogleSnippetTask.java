@@ -7,10 +7,10 @@ public class GoogleSnippetTask extends SnippetTask
 		super(keyWords);
 		this.setScrapperUrl("https://www.google.com/search?q=#KEY_WORDS#&lr=lang_#LANGUAGE#&oe=utf-8&gws_rd=ssl&start=#PAGE_NUM#");
 		this.setXpathSnippet("li[class=g]");
-		////h3[@class='r']/a"
-		this.setXpathTitle("h3[class=r] > a");
-		////div[@class='s']//span[@class='st']
-		this.setXpathDesc("div[class=s] > div > span[class=st]");
+		////div[@class='srg']/div/div/h3[@class='r']/a"
+		this.setXpathTitle("div[class=srg] > div > div > h3[class=r] > a");
+		////div[@class='srg']/div/div/div[@class='s']/div/span[@class='st']
+		this.setXpathDesc("div[class=srg] > div > div > div[class=s] > div > span[class=st]");
 		this.setHost("google.com");
 		this.setPage(1);
 		
@@ -36,19 +36,10 @@ public class GoogleSnippetTask extends SnippetTask
 		}
 		return result;
 	}*/
-
+	
 	@Override
-	public void setPage(int page) {
-		switch (page){
-			case 0:
-			case 1:{
-				this.page = 0;
-				break;
-			}
-			default:{
-				this.page = page*10;
-			}
-		}
+	public int getCustomPage(){
+		return getPage() * 10;
 	}
 
 	@Override

@@ -34,6 +34,7 @@ import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTask;
+import com.fdt.scrapper.task.SnippetTaskWrapper;
 
 /**
  *
@@ -73,11 +74,31 @@ public class SnippetExtractor {
 	private ProxyFactory proxyFactory = null;
 	private ArrayList<String> linkList = null;
 
-	private SnippetTask task= null;
+	private SnippetTaskWrapper task= null;
 
 	private boolean isInsLnkFrmGenFile = true;
 
-	public SnippetExtractor(SnippetTask snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList) throws MalformedURLException, IOException {
+	public SnippetExtractor(ProxyFactory proxyFactory) throws MalformedURLException, IOException {	
+		this();
+		this.proxyFactory = proxyFactory;
+		this.linkList = null;
+		this.task = null;
+	}
+	
+	public SnippetExtractor(SnippetTask snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList) throws MalformedURLException, IOException {	
+		this(new SnippetTaskWrapper(snippetTask), proxyFactory, linkList);
+	}
+	
+	
+	public SnippetExtractor(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList) throws MalformedURLException, IOException {
+		this();
+		
+		this.proxyFactory = proxyFactory;
+		this.linkList = linkList;
+		this.task = snippetTask;
+	}
+	
+	public SnippetExtractor() throws MalformedURLException, IOException {
 		super();
 		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL) != null)
 			MIN_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
@@ -87,10 +108,6 @@ public class SnippetExtractor {
 			MIN_LINK_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_LINK_COUNT_LABEL));
 		if(ConfigManager.getInstance().getProperty(MAX_LINK_COUNT_LABEL) != null)
 			MAX_LINK_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_LINK_COUNT_LABEL));
-
-		this.proxyFactory = proxyFactory;
-		this.linkList = linkList;
-		this.task = snippetTask;
 	}
 
 	public boolean isInsLnkFrmGenFile() {
@@ -110,7 +127,7 @@ public class SnippetExtractor {
 			try{
 				ArrayList<Snippet> snippets = extractSnippetsFromPageContent(snippetTask);
 				
-				while(snippets.size() == 0 || snippetTask.getPage() != 1){
+				while(snippets.size() == 0 && snippetTask.getPage() > 1){
 					snippetTask.setPage(reducePage(snippetTask.getPage()));
 					snippets = extractSnippetsFromPageContent(snippetTask);
 				}
@@ -126,11 +143,15 @@ public class SnippetExtractor {
 				}
 			}catch(Exception e){
 				log.warn("Error during getting snippets content",e);
+				attempt++;
+				//if any errors occured - try again
+				continue;
 			}
-			attempt++;
+			//exit if no errors occured
+			break;
 		}while((snippetContent == null || "".equals(snippetContent.trim())) && attempt < maxAttemptCount);
 
-		task.setResult(snippetContent);
+		task.getCurrentTask().setResult(snippetContent);
 	}
 	
 	private int reducePage(int currentPage){
@@ -143,6 +164,12 @@ public class SnippetExtractor {
 		}
 	}
 
+	/**
+	 * Generating snippet content
+	 * 
+	 * @param snippets
+	 * @return
+	 */
 	private String getSnippetsContent(ArrayList<Snippet> snippets) {
 		//calculate snippets count
 		int snipCount = 0;
@@ -157,7 +184,11 @@ public class SnippetExtractor {
 		linkCount = getLinkCount();
 		int snippetLinked = 0;
 
+		if((snippets.size()-snipCount) < 0){
+			log.debug("terst");
+		}
 		int indexShift = getRandomValue(0,snippets.size()-snipCount); 
+		
 
 		for(int i = indexShift; i < (snipCount+indexShift); i++){
 			//add link to snipper
@@ -186,6 +217,12 @@ public class SnippetExtractor {
 		return linkCount;
 	}
 
+	/**
+	 * Calculate snippet count for extract
+	 * 
+	 * @param snippets
+	 * @return
+	 */
 	private int getSnipCount(ArrayList<Snippet> snippets) {
 		int snipCount;
 		if(snippets.size() <= MIN_SNIPPET_COUNT){
@@ -464,7 +501,9 @@ public class SnippetExtractor {
 
 	public ArrayList<Snippet> extractSnippetsFromPageContent(SnippetTask snippetTask) throws MalformedURLException, IOException, XPathExpressionException, ParseException{
 		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
-
+		
+		log.debug(String.format("Using %s for getting snippets for key '%s'", snippetTask.getHost(), snippetTask.getKeyWords()));
+		
 		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
 		Document page = null;
 		try{
@@ -517,15 +556,15 @@ public class SnippetExtractor {
 	}
 
 	public SnippetTask getTask() {
-		return task;
+		return task.getCurrentTask();
 	}
 
-	public SnippetTask extractSnippetsWithInsertedLinks()
+	public SnippetTaskWrapper extractSnippetsWithInsertedLinks()
 	{
 		synchronized (this)
 		{
 			try {
-				insertLinksToSnippets(task);
+				insertLinksToSnippets(task.getCurrentTask());
 				return task;
 			}
 			catch (Exception e) {

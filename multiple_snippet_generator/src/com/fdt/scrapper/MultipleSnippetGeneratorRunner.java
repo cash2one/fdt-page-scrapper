@@ -20,6 +20,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.SnippetTask;
+import com.fdt.scrapper.task.SnippetTaskWrapper;
 import com.fdt.scrapper.task.TaskFactory;
 
 /**
@@ -30,6 +31,7 @@ public class MultipleSnippetGeneratorRunner{
 	private static final String LANG_LABEL = "lang";
 
 	private static final String SOURCE_LABEL = "source";
+	private static final String FREQUENCY_LABEL = "frequency";
 
 	private static final Logger log = Logger.getLogger(MultipleSnippetGeneratorRunner.class);
 
@@ -40,6 +42,7 @@ public class MultipleSnippetGeneratorRunner{
 
 	private String source = null;
 	private String lang = null;
+	private int[] frequencies = null;
 	
 	private int maxPageNum = 50;
 	
@@ -118,12 +121,25 @@ public class MultipleSnippetGeneratorRunner{
 
 		this.source = ConfigManager.getInstance().getProperty(SOURCE_LABEL);
 		this.lang = ConfigManager.getInstance().getProperty(LANG_LABEL);
+		
+		String freqStr = ConfigManager.getInstance().getProperty(FREQUENCY_LABEL);
+		if(freqStr != null && !"".equals(freqStr.trim())){
+			String[] freqArray = freqStr.split(":");
+			this.frequencies = new int[freqArray.length];
+			for(int i = 0; i < freqArray.length; i++){
+				this.frequencies[i] = Integer.parseInt(freqArray[i]);
+			}
+		}else{
+			this.frequencies = new int[]{1};	
+		}
+		
 
 		//init task factory
 		TaskFactory.setMAX_THREAD_COUNT(maxThreadCount);
 		taskFactory = TaskFactory.getInstance();
 		taskFactory.clear();
-		taskFactory.loadTaskQueue(keyWordsFilePath, source, lang);
+		
+		taskFactory.loadTaskQueue(keyWordsFilePath, source, frequencies, lang);
 
 		//init proxy factory
 		ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
@@ -190,11 +206,11 @@ public class MultipleSnippetGeneratorRunner{
 
 				while(!taskFactory.isTaskFactoryEmpty() || taskFactory.getRunThreadsCount() > 0){
 					log.debug("Try to get request from RequestFactory queue.");
-					SnippetTask task = taskFactory.getTask();
+					SnippetTaskWrapper task = taskFactory.getTask();
 					log.debug("Task: " + task);
 					if(task != null){
 						log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Success tasks: "+taskFactory.getSuccessQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
-						task.setPage(rnd.nextInt(maxPageNum));
+						task.getCurrentTask().setPage(rnd.nextInt(maxPageNum));
 						
 						File linkFile = null;
 						if(addLinkFromFolder){

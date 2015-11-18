@@ -579,10 +579,12 @@ public class NewsPoster {
 					log.info(String.format("New preview of video (%s): %s",videoId, thumbnailUrlNew));
 					Thread.sleep(10000L);
 				}*/
-				try{
-					setPreview(videoId, subUrl, task.getPreviewImageFile());
-				}catch(Exception e){
-					log.warn("Error occured during posting PREVIEW for video: " + videoId, e);
+				if(task.isUsePreview()){
+					try{
+						setPreview(videoId, subUrl, task.getPreviewImageFile());
+					}catch(Exception e){
+						log.warn("Error occured during posting PREVIEW for video: " + videoId, e);
+					}
 				}
 				/*respStr = executeAccessToken(videoId, "[{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"thumbnail_url,\"},\"id\":0},{\"call\":\"GET /video/"+videoId+"\",\"args\":{\"fields\":\"status,\"},\"id\":1}]");
 				jsonObj = new JSONObject(respStr.substring(1, respStr.length()-1));

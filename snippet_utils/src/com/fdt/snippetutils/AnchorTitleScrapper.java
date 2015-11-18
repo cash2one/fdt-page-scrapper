@@ -393,7 +393,7 @@ public class AnchorTitleScrapper {
 
 	private ArrayList<Snippet> getSnippet(SnippetTask snippetTask) throws Exception{
 		int attempCount = 0;
-		SnippetExtractor snippetExtractor = new SnippetExtractor(null, proxyFactory, null);
+		SnippetExtractor snippetExtractor = new SnippetExtractor( proxyFactory);
 		//TODO Add Snippet task chooser
 		ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(snippetTask);
 

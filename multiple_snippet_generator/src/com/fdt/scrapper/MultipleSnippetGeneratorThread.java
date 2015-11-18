@@ -14,6 +14,7 @@ import org.apache.log4j.Logger;
 
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.SnippetTask;
+import com.fdt.scrapper.task.SnippetTaskWrapper;
 import com.fdt.scrapper.task.TaskFactory;
 
 /**
@@ -23,14 +24,14 @@ import com.fdt.scrapper.task.TaskFactory;
 public class MultipleSnippetGeneratorThread implements Callable<String> {
 	private static final Logger log = Logger.getLogger(MultipleSnippetGeneratorThread.class);
 
-	private SnippetTask snippetTask = null;
+	private SnippetTaskWrapper snippetTask = null;
 	private ProxyFactory proxyFactory = null;
 	private TaskFactory taskFactory = null;
 	private ArrayList<String> linkList = null;
 	private File linkFile = null;
 	private boolean isInsLnkFrmGenFile = false;
 
-	public MultipleSnippetGeneratorThread(SnippetTask snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory,ArrayList<String> linkList, boolean isInsLnkFrmGenFile, File linkFile) {
+	public MultipleSnippetGeneratorThread(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory,ArrayList<String> linkList, boolean isInsLnkFrmGenFile, File linkFile) {
 		super();
 
 		this.snippetTask = snippetTask;
@@ -61,12 +62,12 @@ public class MultipleSnippetGeneratorThread implements Callable<String> {
 			try {
 				SnippetExtractor snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList);
 				snippetExtractor.setInsLnkFrmGenFile(isInsLnkFrmGenFile);
-				generatedContent = snippetExtractor.extractSnippetsWithInsertedLinks().getResult();
+				generatedContent = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getResult();
 			}
 			catch (Exception e) {
 				errorExist = true;
 				taskFactory.reprocessingTask(snippetTask);
-				log.error("Error occured during processing key: " + snippetTask.getKeyWords());
+				log.error("Error occured during processing key: " + snippetTask.getCurrentTask().getKeyWords());
 			}
 			if(!errorExist){
 				//check task for reprocessing
@@ -81,7 +82,7 @@ public class MultipleSnippetGeneratorThread implements Callable<String> {
 				}
 			}
 		} finally{
-			taskFactory.decRunThreadsCount(snippetTask);
+			taskFactory.decRunThreadsCount(snippetTask.getCurrentTask());
 		}
 		
 		return generatedContent;

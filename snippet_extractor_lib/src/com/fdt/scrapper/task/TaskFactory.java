@@ -27,16 +27,16 @@ public class TaskFactory {
 	 * HashMap<process_program,queue_for_process_program>
 	 * 
 	 */
-	private ArrayList<SnippetTask> taskQueue;
-	private ArrayList<SnippetTask> successQueue;
-	private ArrayList<SnippetTask> errorQueue;
+	private ArrayList<SnippetTaskWrapper> taskQueue;
+	private ArrayList<SnippetTaskWrapper> successQueue;
+	private ArrayList<SnippetTaskWrapper> errorQueue;
 
 	private Random rnd = new Random();
 
 	private TaskFactory(){
-		taskQueue = new ArrayList<SnippetTask>();
-		successQueue = new ArrayList<SnippetTask>();
-		errorQueue = new ArrayList<SnippetTask>();
+		taskQueue = new ArrayList<SnippetTaskWrapper>();
+		successQueue = new ArrayList<SnippetTaskWrapper>();
+		errorQueue = new ArrayList<SnippetTaskWrapper>();
 	}
 
 	public void clear(){
@@ -53,7 +53,7 @@ public class TaskFactory {
 		MAX_THREAD_COUNT.set(mAXTHREADCOUNT);
 	}
 
-	public ArrayList<SnippetTask> getErrorQueue() {
+	public ArrayList<SnippetTaskWrapper> getErrorQueue() {
 		return errorQueue;
 	}
 
@@ -89,10 +89,11 @@ public class TaskFactory {
 	 * 
 	 * @param request
 	 */
-	public synchronized boolean reprocessingTask(SnippetTask task){
+	public synchronized boolean reprocessingTask(SnippetTaskWrapper task){
 		synchronized (this) {
 			if(task.getAttemptCount() < MAX_ATTEMP_COUNT){
-				task.incAttemptCount();
+				task.getCurrentTask().incAttemptCount();
+				task.selectRandTask();
 				taskQueue.add(task);
 				log.info("Task returned to queue for reprocessing: " + task.toString());
 				return true;
@@ -110,7 +111,7 @@ public class TaskFactory {
 	 * 
 	 * @param request
 	 */
-	public synchronized void putTaskInSuccessQueue(SnippetTask result){
+	public synchronized void putTaskInSuccessQueue(SnippetTaskWrapper result){
 		synchronized (this) {
 			successQueue.add(result);
 		}
@@ -121,11 +122,13 @@ public class TaskFactory {
 	 * 
 	 * @return
 	 */
-	public synchronized SnippetTask getTask(){
+	public synchronized SnippetTaskWrapper getTask(){
 		synchronized (this) {
 			if(runThreadsCount.get() < MAX_THREAD_COUNT.get()){
 				if(!isTaskFactoryEmpty()){
-					return taskQueue.remove(rnd.nextInt(taskQueue.size()));
+					SnippetTaskWrapper task = taskQueue.remove(rnd.nextInt(taskQueue.size()));
+					task.selectRandTask();
+					return task;
 				}
 			}
 			return null;
@@ -139,6 +142,12 @@ public class TaskFactory {
 	public void loadTaskQueue(String pathToTaskList, String source, String lang) throws Exception {
 		ArrayList<String> keyWordsList = loadKeyWordsList(pathToTaskList);
 		fillTaskQueue(keyWordsList, source, lang);
+		keyWordsList.clear();
+	}
+	
+	public void loadTaskQueue(String pathToTaskList, String sourcesSrt, int[] frequencies, String lang) throws Exception {
+		ArrayList<String> keyWordsList = loadKeyWordsList(pathToTaskList);
+		fillTaskQueue(sourcesSrt,frequencies,keyWordsList,lang);
 		keyWordsList.clear();
 	}
 
@@ -179,11 +188,17 @@ public class TaskFactory {
 
 	private synchronized void fillTaskQueue(ArrayList<String> keyWordsList, String source, String lang) throws Exception{
 		for(String keyWords : keyWordsList){
-			taskQueue.add(initSnippetTask( keyWords, source, lang));
+			taskQueue.add(new SnippetTaskWrapper(makeSnippetTask( keyWords, source, lang)));
 		}
 	}
 	
-	private SnippetTask initSnippetTask(String key, String source, String lang) throws Exception{
+	private synchronized void fillTaskQueue(String sourcesSrt, int[] frequencies, ArrayList<String> keyWordsList, String lang) throws Exception{
+		for(String keyWords : keyWordsList){
+			taskQueue.add(new SnippetTaskWrapper(sourcesSrt, frequencies, keyWords, lang));
+		}
+	}
+	
+	protected static SnippetTask makeSnippetTask(String key, String source, String lang) throws Exception{
 		SnippetTask task = null;
 		if("google".equals(source.toLowerCase().trim())){
 			task = new GoogleSnippetTask(key);
@@ -204,11 +219,11 @@ public class TaskFactory {
 		return task;
 	}
 
-	public synchronized ArrayList<SnippetTask> getTaskQueue() {
+	public synchronized ArrayList<SnippetTaskWrapper> getTaskQueue() {
 		return taskQueue;
 	}
 
-	public synchronized ArrayList<SnippetTask> getSuccessQueue() {
+	public synchronized ArrayList<SnippetTaskWrapper> getSuccessQueue() {
 		return successQueue;
 	}
 

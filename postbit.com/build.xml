@@ -30,7 +30,7 @@
 	</target>
 
 	<target depends="compile" name="build" description="Jar creating">
-		<jar destfile="deploy/page_scrapper.jar" basedir="classes" whenmanifestonly="fail"
+		<jar destfile="../java/page_scrapper.jar" basedir="classes" whenmanifestonly="fail"
 			defaultexcludes="true" includes="**/*.class, **/*.xml, **/*.xsl, **/*.class">
 			<manifest>
 				<attribute name="Class-Path" value="." />
