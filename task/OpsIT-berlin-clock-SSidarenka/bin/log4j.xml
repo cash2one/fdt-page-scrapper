@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration>
+
+    <appender name="ConsoleAppender"
+              class="org.apache.log4j.ConsoleAppender">
+        <!-- <param name="Threshold" value="debug" /> -->
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%d{yyy-MM-dd'T'HH:mm:ss.SSS} | %-10.10t | %-20.20c{1} | %-6p - %m %n"/>
+        </layout>
+    </appender>
+
+    <category name="freemarker">
+        <priority value="warn"/>
+    </category>
+
+    <root>
+        <priority value="debug"/>
+        <appender-ref ref="ConsoleAppender"/>
+    </root>
+
+</log4j:configuration>

@@ -1,0 +1,36 @@
+defaultTasks 'clean', 'build'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+version = '1.0.0'
+group = 'com.ubs.opsit.interviews.berlinclock'
+
+task wrapper(type: Wrapper){
+    description = 'Generates gradlew scripts for NIX and win envs'
+    gradleVersion = '2.0'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+idea.module {
+    downloadSources = true
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.7',
+            'commons-lang:commons-lang:2.6'
+
+    runtime 'org.slf4j:slf4j-log4j12:1.7.7',
+            'log4j:log4j:1.2.17'
+
+    testCompile 'junit:junit:4.11',
+            'org.mockito:mockito-core:1.9.5',
+            'org.assertj:assertj-core:1.6.1',
+            'commons-io:commons-io:2.4',
+            'org.jbehave:jbehave-core:3.8'
+}

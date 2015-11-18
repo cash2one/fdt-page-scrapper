@@ -389,7 +389,8 @@ public class NewsPoster {
 			throw new Exception("VideoId was not extracted.");
 		}
 
-		return uploadVideo(uploadUrl, videoId);
+		String videoUrl = uploadVideo(uploadUrl, videoId);
+		return videoUrl.substring(0, videoUrl.indexOf(videoId) + videoId.length());
 	}
 
 	private String uploadVideo(String uploadUrl, String videoId) throws Exception{
