@@ -550,6 +550,34 @@ public class SnippetExtractor {
 
 		return snippets;
 	}
+	
+	public String extractResultCount() throws MalformedURLException, IOException, XPathExpressionException, ParseException{
+		
+		SnippetTask curTask =  this.task.getCurrentTask();
+		
+		log.debug(String.format("Using %s for getting result count for key '%s'", curTask.getHost(), curTask.getKeyWords()));
+		
+		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
+		Document page = null;
+		try{
+			page = loadPageContent(this.task.getCurrentTask(),proxyConnector);
+		}finally{
+			if(proxyConnector != null){
+				proxyFactory.releaseProxy(proxyConnector);
+				proxyConnector = null;
+			}
+		}
+
+		Elements cntResult = null;
+
+		cntResult = page.select(curTask.getXpathRstlCnt());
+
+		if(cntResult.size() == 0){
+			log.error("XPATH IS FAIL!");
+		}
+
+		return cntResult.text();
+	}
 
 	private boolean isProxyBanned(SnippetTask snippetTask, int respCode){
 		return snippetTask.isBanPage(respCode);

@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.http.protocol.HTTP;
 
@@ -20,11 +22,15 @@ public abstract class SnippetTask
 	private String xpathTitle = "";
 	private String xpathLink = "";
 	private String xpathDesc = "";
+	private String xpathRstlCnt = "";
 	
 	protected String keyWords = "";
 	protected String keyWordsNative = "";
+	protected String keyWordsOrig = "";
 	protected String language = "en";
 	protected String host = "";
+	
+	private boolean useOrigKeywords = false;
 	
 	protected List<Integer> bannedRespCodes = new ArrayList<Integer>();
 	protected boolean encodeKeywords = false;
@@ -43,6 +49,7 @@ public abstract class SnippetTask
 		super();
 		this.keyWordsNative = keyWords.replaceAll("/", " ");
 		this.keyWords = keyWords.replace(' ', '+');
+		this.keyWordsOrig = keyWords;
 		initExtraParams();
 	}
 
@@ -84,7 +91,10 @@ public abstract class SnippetTask
 
 	public void setKeyWords(String keyWords)
 	{
-		this.keyWords = keyWords;
+		this.keyWordsNative = keyWords.replaceAll("/", " ");
+		this.keyWords = keyWords.replace(' ', '+');
+		this.keyWordsOrig = keyWords;
+		initExtraParams();
 	}
 
 
@@ -132,10 +142,18 @@ public abstract class SnippetTask
 		this.xpathLink = xpathLink;
 	}
 
+	public String getXpathRstlCnt() {
+		return xpathRstlCnt;
+	}
+
+	public void setXpathRstlCnt(String xpathRstlCnt) {
+		this.xpathRstlCnt = xpathRstlCnt;
+	}
+
 	public String getFullUrl(){
 		String result = "";
 		if(!isEncodeKeywords()){
-			result = scrapperUrl.replace(KEY_WORDS_KEY, keyWords).replace(LANGUAGE_KEY, language).replace(PAGE_NUMBER, String.valueOf(page));
+			result = scrapperUrl.replace(KEY_WORDS_KEY, useOrigKeywords?keyWordsOrig:keyWords).replace(LANGUAGE_KEY, language).replace(PAGE_NUMBER, String.valueOf(getCustomPage()));
 		}else{
 			try {
 				result = scrapperUrl.replace(KEY_WORDS_KEY, URLEncoder.encode(keyWords,HTTP.UTF_8)).replace(LANGUAGE_KEY, language).replace(PAGE_NUMBER, String.valueOf(getCustomPage()));
@@ -203,11 +221,27 @@ public abstract class SnippetTask
 		return this.page;
 	}
 	
+	public boolean isUseOrigKeywords() {
+		return useOrigKeywords;
+	}
+
+	public void setUseOrigKeywords(boolean useOrigKeywords) {
+		this.useOrigKeywords = useOrigKeywords;
+	}
+
 	public boolean isBanPage(int respCode){
 		return bannedRespCodes.contains(respCode);
 	}
 	
 	public boolean addBannedRespCode(Integer respCode){
 		return bannedRespCodes.add(respCode);
+	}
+	
+	public Integer getRsltCnt(String strCnt) {
+		return Integer.valueOf(strCnt);
+	}
+
+	public String getKeyWordsOrig() {
+		return keyWordsOrig;
 	}
 }

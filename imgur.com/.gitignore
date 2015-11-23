@@ -1,1 +1,6 @@
 /bin
+/deploy
+/error_files
+/images
+/input_files
+/processed_files

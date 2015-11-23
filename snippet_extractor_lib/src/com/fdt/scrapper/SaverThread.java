@@ -33,19 +33,29 @@ public class SaverThread extends Thread
 
 	private TaskFactory taskFactory;
 	private String keysFilePath;
+	
+	private String outputFilePath;
 
 	private boolean running = true;
 	public boolean stopped = false;
+	
+	private IResultFormatter resFormatter;
 
-	public SaverThread(TaskFactory taskFactory, String keysFilePath) {
+	public SaverThread(TaskFactory taskFactory, String keysFilePath,  IResultFormatter resFormatter) {
 		super();
 		this.taskFactory = taskFactory;
 		this.keysFilePath = keysFilePath;
+		this.resFormatter = resFormatter;
 
 		File restFile = new File("rest_" + keysFilePath);
 		if(restFile.exists()){
 			restFile.delete();
 		}
+	}
+	
+	public SaverThread(TaskFactory taskFactory, String keysFilePath,  IResultFormatter resFormatter, String outputFilePath) {
+		this(taskFactory, keysFilePath, resFormatter);
+		this.outputFilePath = outputFilePath;
 	}
 
 	@Override
@@ -66,7 +76,9 @@ public class SaverThread extends Thread
 						if(taskFactory.getSuccessQueue().size() > 0){
 							task = taskFactory.getSuccessQueue().remove(0).getCurrentTask();
 							if(task != null){
-								saveResultToFile(task.getResult(),task.getKeyWords().replace('+', ' '));
+								//saveResultToFile(task.getResult(),task.getKeyWords().replace('+', ' '));
+								File outputFile = outputFilePath != null?new File(outputFilePath):new File("output/"+task.getKeyWords().replace('+', ' '));
+								saveResultToFile(resFormatter.formatResult(task), outputFile);
 								keysBuffer.add(task.getKeyWords().replace('+', ' '));
 							}
 
@@ -95,20 +107,27 @@ public class SaverThread extends Thread
 		}
 	}
 
-	private void saveResultToFile(String content, String fileName){
+	private void saveResultToFile(String content, File outputFile){
 		ArrayList<String> contentArray = new ArrayList<String>();
 		contentArray.add(content);
-		saveResultToFile(contentArray, fileName);
+		saveResultToFile(contentArray, outputFile);
 	}
 
-	private void saveResultToFile(ArrayList<String> content, String fileName){
+	private void saveResultToFile(ArrayList<String> content, File outputFile){
 		BufferedWriter bufferedWriter = null;
 		//save success tasks
 		try {
 			//Construct the BufferedWriter object
 			log.debug("Starting saving success results...");
-			bufferedWriter = new BufferedWriter(bufferedWriter = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(new File("output/"+fileName)), "UTF8")));
+			
+			if(outputFilePath != null){
+				bufferedWriter = new BufferedWriter(bufferedWriter = new BufferedWriter(new OutputStreamWriter(
+						new FileOutputStream(outputFile,true), "UTF8")));
+			
+			}else{
+				bufferedWriter = new BufferedWriter(bufferedWriter = new BufferedWriter(new OutputStreamWriter(
+						new FileOutputStream(outputFile), "UTF8")));
+			}
 			for(String line:content){
 				bufferedWriter.write(line);
 				bufferedWriter.newLine();

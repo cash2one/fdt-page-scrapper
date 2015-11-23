@@ -1,5 +1,8 @@
 package com.fdt.scrapper.task;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 public class GoogleSnippetTask extends SnippetTask
 {
@@ -11,6 +14,8 @@ public class GoogleSnippetTask extends SnippetTask
 		this.setXpathTitle("div[class=srg] > div > div > h3[class=r] > a");
 		////div[@class='srg']/div/div/div[@class='s']/div/span[@class='st']
 		this.setXpathDesc("div[class=srg] > div > div > div[class=s] > div > span[class=st]");
+		////div[@id='resultStats']
+		this.setXpathRstlCnt("div[id=resultStats]");
 		this.setHost("google.com");
 		this.setPage(1);
 		
@@ -39,12 +44,27 @@ public class GoogleSnippetTask extends SnippetTask
 	
 	@Override
 	public int getCustomPage(){
-		return getPage() * 10;
+		return (getPage()-1) * 10;
 	}
 
 	@Override
 	protected void initExtraParams() {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	@Override
+	public Integer getRsltCnt(String result) {
+		String EXTRACT_PATTERN = "(about )?(.*) result(.*)";
+		Pattern depArrHours = Pattern.compile(EXTRACT_PATTERN);
+		Matcher matcher = depArrHours.matcher(result.toLowerCase());
+		if(matcher.find()){
+			String test = matcher.group(1);
+			test = matcher.group(2);
+			test = matcher.group(3);
+			return Integer.valueOf(matcher.group(2).replace(",", "").replace(" ", "").replace(".", ""));
+		}else{
+			return -1;
+		}
 	}
 }

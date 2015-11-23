@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="xml">
+        <folder name="entities">
+            <folder name="org_mypck">
+                <file name="FBrowser" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--com.fdt.ui.ScrapPagesTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//org.mypck//FBrowser//EN"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="memory">
+            <folder name="com">
+                <folder name="fdt">
+                    <folder name="ui">
+                        <file name="ScrapPagesTopComponent">
+                            <!--com.fdt.ui.ScrapPagesTopComponent-->
+                            <attr name="settings.providerPath" stringvalue="xml/lookups//org_mypck/FBrowser.instance"/>
+                        </file>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
+        <folder name="lookups">
+            <folder name="org_mypck">
+                <file name="FBrowser.instance">
+                    <!--com.fdt.ui.ScrapPagesTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="com.fdt.ui.ScrapPagesTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="com.fdt.ui.ScrapPagesTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Window">
+            <file name="com-fdt-ui-ScrapPagesTopComponent.shadow">
+                <!--com.fdt.ui.ScrapPagesTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/com-fdt-ui-ScrapPagesTopComponent.instance"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="ScrapPagesTopComponent.settings">
+                <!--com.fdt.ui.ScrapPagesTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="com.fdt.ui.ScrapPagesTopComponent"/>
+</settings>
+]]></file>
+        </folder>
+        <folder name="Modes">
+            <folder name="explorer">
+                <file name="ScrapPagesTopComponent.wstcref">
+                    <!--com.fdt.ui.ScrapPagesTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="ScrapPagesTopComponent"/>
+  <state opened="true"/>
+</tc-ref>
+]]></file>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Actions">
+        <folder name="Window">
+            <file name="com-fdt-ui-ScrapPagesTopComponent.instance">
+                <!--com.fdt.ui.ScrapPagesTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="com.fdt.ui.ScrapPagesTopComponent"/>
+                <attr name="preferredID" stringvalue="ScrapPagesTopComponent"/>
+                <attr
+                    bundlevalue="com.fdt.ui.Bundle#CTL_ScrapPagesTopComponentAction" name="displayName"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>
