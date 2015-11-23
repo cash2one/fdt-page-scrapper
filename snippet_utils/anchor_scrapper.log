@@ -1,0 +1,1061 @@
+2015-09-25 16:29:16,484-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 1
+2015-09-25 16:29:16,524-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 2
+2015-09-25 16:29:16,525-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 3
+2015-09-25 16:29:16,525-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 4
+2015-09-25 16:29:16,526-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 5
+2015-09-25 16:29:16,530-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 6
+2015-09-25 16:29:16,532-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 7
+2015-09-25 16:29:16,535-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 8
+2015-09-25 16:29:16,536-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 9
+2015-09-25 16:29:16,536-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 10
+2015-09-25 16:29:16,566-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.62.144:1085
+2015-09-25 16:29:16,568-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /146.185.201.35:1085
+2015-09-25 16:29:16,569-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.14.192.159:1085
+2015-09-25 16:29:16,573-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /93.179.89.3:1085
+2015-09-25 16:29:16,576-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.207.175:1085
+2015-09-25 16:29:16,598-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.218.101:1085
+2015-09-25 16:29:16,600-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.63.99:1085
+2015-09-25 16:29:16,600-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /146.185.202.76:1085
+2015-09-25 16:29:16,601-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.57.249:1085
+2015-09-25 16:29:16,601-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.200.80.38:1085
+2015-09-25 16:29:16,602-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:16,603-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:16,604-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:16,604-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:16,604-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:16,605-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:16,606-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:16,607-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:16,607-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:16,607-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+no+credit+checks+Florida+(FL)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:19,559-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /146.185.202.76:1085
+2015-09-25 16:29:19,569- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:19,621-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.238.114.63:1085
+2015-09-25 16:29:19,621-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:19,666-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /185.14.192.159:1085
+2015-09-25 16:29:19,666- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bcash%2Byes%2Bpayday%2Bloan%2BTexas%2B(TX)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBLkOwJ8YsLSVsAUiGQDxp4NL7_pPI2bjX0TNj_2mUOUnP51KFPQ
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bcash%2Byes%2Bpayday%2Bloan%2BTexas%2B(TX)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBLkOwJ8YsLSVsAUiGQDxp4NL7_pPI2bjX0TNj_2mUOUnP51KFPQ
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bcash%2Byes%2Bpayday%2Bloan%2BTexas%2B(TX)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBLkOwJ8YsLSVsAUiGQDxp4NL7_pPI2bjX0TNj_2mUOUnP51KFPQ
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:19,695-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.46.84.175:1085
+2015-09-25 16:29:19,700-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:21,071-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.201.171:1085
+2015-09-25 16:29:21,072-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+no+credit+checks+Florida+(FL)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:21,079-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.34.78.112:1085
+2015-09-25 16:29:21,080-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:21,089-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.44.78.39:1085
+2015-09-25 16:29:21,089-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:21,110-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.207.239:1085
+2015-09-25 16:29:21,110-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:21,167-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.243.173.32:1085
+2015-09-25 16:29:21,168-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:21,213-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.202.115:1085
+2015-09-25 16:29:21,215-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:21,287-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /193.9.158.143:1085
+2015-09-25 16:29:21,287-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:21,342-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.200.82.33:1085
+2015-09-25 16:29:21,343-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:21,420-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.60.35:1085
+2015-09-25 16:29:21,420-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:21,629-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.88.191.236:1085
+2015-09-25 16:29:21,630-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:22,462-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.34.79.161:1085
+2015-09-25 16:29:22,464-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:22,612-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.230.110.105:1085
+2015-09-25 16:29:22,613-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:22,618-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.34.79.216:1085
+2015-09-25 16:29:22,618-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:22,749-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.18.49:1085
+2015-09-25 16:29:22,749-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:23,048-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.57.152:1085
+2015-09-25 16:29:23,048-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:23,251-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.106.104.206:1085
+2015-09-25 16:29:23,251-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:24,019-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /79.110.18.49:1085
+2015-09-25 16:29:24,020- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D30&q=CGMSBE9uEjEYtLSVsAUiGQDxp4NL-cGeNZlcDiat5tiJcvIY4kswWM8
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D30&q=CGMSBE9uEjEYtLSVsAUiGQDxp4NL-cGeNZlcDiat5tiJcvIY4kswWM8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D30&q=CGMSBE9uEjEYtLSVsAUiGQDxp4NL-cGeNZlcDiat5tiJcvIY4kswWM8
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:24,021-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /141.101.201.111:1085
+2015-09-25 16:29:24,021-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:24,052-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /193.9.158.131:1085
+2015-09-25 16:29:24,053-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:24,173-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.219.26:1085
+2015-09-25 16:29:24,174-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:24,194-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.215.136.40:1085
+2015-09-25 16:29:24,201-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+no+credit+checks+Florida+(FL)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:24,361-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.230.110.214:1085
+2015-09-25 16:29:24,362-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:24,393-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.19.144:1085
+2015-09-25 16:29:24,394-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:24,428-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.200.246:1085
+2015-09-25 16:29:24,429-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:24,931-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /146.185.200.5:1085
+2015-09-25 16:29:24,931-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:25,612-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /79.110.19.144:1085
+2015-09-25 16:29:25,613- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bpersonalloan%2BRhode%2BIsland%2B(RI)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D40&q=CGMSBE9uE5AYtrSVsAUiGQDxp4NL6xIaBcW_TJBver5KkgfkphL07ec
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bpersonalloan%2BRhode%2BIsland%2B(RI)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D40&q=CGMSBE9uE5AYtrSVsAUiGQDxp4NL6xIaBcW_TJBver5KkgfkphL07ec
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bpersonalloan%2BRhode%2BIsland%2B(RI)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D40&q=CGMSBE9uE5AYtrSVsAUiGQDxp4NL6xIaBcW_TJBver5KkgfkphL07ec
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:25,616-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.200.82.161:1085
+2015-09-25 16:29:25,616-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:25,697-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.222.92:1085
+2015-09-25 16:29:25,697-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:25,742-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /178.57.65.88:1085
+2015-09-25 16:29:25,748-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:25,776-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /178.57.65.182:1085
+2015-09-25 16:29:25,777-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:26,018-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.207.198:1085
+2015-09-25 16:29:26,018-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:26,064-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /193.104.130.45:1085
+2015-09-25 16:29:26,064-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+no+credit+checks+Florida+(FL)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:26,169-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.50.250.141:1085
+2015-09-25 16:29:26,169-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:26,606-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /146.185.203.28:1085
+2015-09-25 16:29:26,606-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:26,776-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /193.106.31.157:1085
+2015-09-25 16:29:26,776-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:27,102-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.218.114:1085
+2015-09-25 16:29:27,102-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:27,117-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.56.190:1085
+2015-09-25 16:29:27,118-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:27,352-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.106.104.125:1085
+2015-09-25 16:29:27,352-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:27,427-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /185.50.250.141:1085
+2015-09-25 16:29:27,427- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bloans%2Bwith%2Bno%2Bcredit%2BOhio%2B(OH)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D40&q=CGMSBLky-o0YuLSVsAUiGQDxp4NLU-Zsy9RqsODaZND-Z6PJybLiYks
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bloans%2Bwith%2Bno%2Bcredit%2BOhio%2B(OH)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D40&q=CGMSBLky-o0YuLSVsAUiGQDxp4NLU-Zsy9RqsODaZND-Z6PJybLiYks
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bloans%2Bwith%2Bno%2Bcredit%2BOhio%2B(OH)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D40&q=CGMSBLky-o0YuLSVsAUiGQDxp4NLU-Zsy9RqsODaZND-Z6PJybLiYks
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:27,432-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /141.101.201.167:1085
+2015-09-25 16:29:27,432-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:27,448-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /146.185.205.102:1085
+2015-09-25 16:29:27,450-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+no+credit+checks+Florida+(FL)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:27,460-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.44.78.121:1085
+2015-09-25 16:29:27,460-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:27,590-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.201.208:1085
+2015-09-25 16:29:27,590-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:27,805-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /146.185.203.28:1085
+2015-09-25 16:29:27,806- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:27,808-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.222.62:1085
+2015-09-25 16:29:27,808-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:28,232-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /191.101.55.154:1085
+2015-09-25 16:29:28,232-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:28,431-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.219.129:1085
+2015-09-25 16:29:28,431-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:28,550-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /188.72.126.66:1085
+2015-09-25 16:29:28,550-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:28,722-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.222.108:1085
+2015-09-25 16:29:28,722-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:28,748-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.19.15:1085
+2015-09-25 16:29:28,748-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:28,793-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.148.30.95:1085
+2015-09-25 16:29:28,793-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:29,017-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.63.170:1085
+2015-09-25 16:29:29,017-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:29,758-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.218.48:1085
+2015-09-25 16:29:29,758-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:29,774-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.230.110.91:1085
+2015-09-25 16:29:29,775-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:29,784-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.56.113:1085
+2015-09-25 16:29:29,784-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:29,788-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /179.61.201.95:1085
+2015-09-25 16:29:29,788-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+no+credit+checks+Florida+(FL)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:29,905-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /79.110.19.15:1085
+2015-09-25 16:29:29,906- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bregions%2Bloans%2BKansas%2B(KS)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBE9uEw8YurSVsAUiGQDxp4NLqBnE8YeAMOI1OZurJPKJwcqu2cw
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bregions%2Bloans%2BKansas%2B(KS)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBE9uEw8YurSVsAUiGQDxp4NLqBnE8YeAMOI1OZurJPKJwcqu2cw
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bregions%2Bloans%2BKansas%2B(KS)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBE9uEw8YurSVsAUiGQDxp4NLqBnE8YeAMOI1OZurJPKJwcqu2cw
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:29,906-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.88.191.94:1085
+2015-09-25 16:29:29,907-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:30,178-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /46.148.30.95:1085
+2015-09-25 16:29:30,181- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bno%2Bdoc%2Bloans%2BNorth%2BDakota%2B(ND)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBC6UHl8YurSVsAUiGQDxp4NLwzxTl-FjlmP_V_b5T0hUHTTtq8Q
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bno%2Bdoc%2Bloans%2BNorth%2BDakota%2B(ND)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBC6UHl8YurSVsAUiGQDxp4NLwzxTl-FjlmP_V_b5T0hUHTTtq8Q
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bno%2Bdoc%2Bloans%2BNorth%2BDakota%2B(ND)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBC6UHl8YurSVsAUiGQDxp4NLwzxTl-FjlmP_V_b5T0hUHTTtq8Q
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:30,181-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.14.195.43:1085
+2015-09-25 16:29:30,182-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:30,509-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.18.114:1085
+2015-09-25 16:29:30,510-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:30,825-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /37.18.42.164:1085
+2015-09-25 16:29:30,826-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:31,021-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /178.57.65.115:1085
+2015-09-25 16:29:31,022-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:31,031-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.222.53:1085
+2015-09-25 16:29:31,032-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:31,452-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.200.80.34:1085
+2015-09-25 16:29:31,453-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:31,907-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /79.110.18.114:1085
+2015-09-25 16:29:31,908- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBE9uEnIYvLSVsAUiGQDxp4NLME1_dxSgaS7_I8gDfCCZS-62WaE
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBE9uEnIYvLSVsAUiGQDxp4NLME1_dxSgaS7_I8gDfCCZS-62WaE
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBE9uEnIYvLSVsAUiGQDxp4NLME1_dxSgaS7_I8gDfCCZS-62WaE
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:31,909-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.8.47.79:1085
+2015-09-25 16:29:31,909-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:32,106-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.201.58:1085
+2015-09-25 16:29:32,107-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:32,109-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /179.61.200.47:1085
+2015-09-25 16:29:32,110-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:32,208-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.34.78.97:1085
+2015-09-25 16:29:32,208-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:32,465-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.88.191.49:1085
+2015-09-25 16:29:32,465-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:32,642-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.19.77:1085
+2015-09-25 16:29:32,642-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:32,804-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /193.9.158.177:1085
+2015-09-25 16:29:32,804-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:33,072-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.198.127.161:1085
+2015-09-25 16:29:33,073-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:33,770-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /79.110.19.77:1085
+2015-09-25 16:29:33,770- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloans%2Bwith%2Bno%2Bchecking%2Baccount%2BIowa%2B(IA)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D40&q=CGMSBE9uE00YvrSVsAUiGQDxp4NLxapWBsJSqvHJXe3p1PlO_p9qLgQ
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloans%2Bwith%2Bno%2Bchecking%2Baccount%2BIowa%2B(IA)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D40&q=CGMSBE9uE00YvrSVsAUiGQDxp4NLxapWBsJSqvHJXe3p1PlO_p9qLgQ
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloans%2Bwith%2Bno%2Bchecking%2Baccount%2BIowa%2B(IA)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D40&q=CGMSBE9uE00YvrSVsAUiGQDxp4NLxapWBsJSqvHJXe3p1PlO_p9qLgQ
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:33,772-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.88.191.80:1085
+2015-09-25 16:29:33,772-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:33,861-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.238.82.198:1085
+2015-09-25 16:29:33,861-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:33,959-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /194.50.116.226:1085
+2015-09-25 16:29:33,960-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:34,040-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.88.190.79:1085
+2015-09-25 16:29:34,040-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:34,124-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /37.18.42.60:1085
+2015-09-25 16:29:34,124-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:34,445-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /141.101.132.209:1085
+2015-09-25 16:29:34,446-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:34,655-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.62.63:1085
+2015-09-25 16:29:34,655-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:35,060-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /91.238.82.198:1085
+2015-09-25 16:29:35,060- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:35,061-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.14.195.148:1085
+2015-09-25 16:29:35,062-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:35,232-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /194.50.116.18:1085
+2015-09-25 16:29:35,232-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:35,536-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /188.72.126.192:1085
+2015-09-25 16:29:35,536-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:35,702-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /191.101.55.112:1085
+2015-09-25 16:29:35,703-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:35,710-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.239.24.176:1085
+2015-09-25 16:29:35,723-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:35,915-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.61.51:1085
+2015-09-25 16:29:35,915-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:36,213-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.88.191.77:1085
+2015-09-25 16:29:36,214-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:36,333-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /141.101.201.11:1085
+2015-09-25 16:29:36,333-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:36,633-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.59.67:1085
+2015-09-25 16:29:36,634-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:37,013-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.198.127.132:1085
+2015-09-25 16:29:37,020-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:37,030-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.239.24.250:1085
+2015-09-25 16:29:37,031-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:37,242-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /193.9.158.141:1085
+2015-09-25 16:29:37,242-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:37,583-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.46.87.226:1085
+2015-09-25 16:29:37,584-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:37,694-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.238.82.171:1085
+2015-09-25 16:29:37,694-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:37,878-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.44.77.125:1085
+2015-09-25 16:29:37,878-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:38,059-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.19.191:1085
+2015-09-25 16:29:38,059-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:38,340-DEBUG(AnchorTitleScrapper.java:440)-Current thread count: 9
+2015-09-25 16:29:38,340-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 10
+2015-09-25 16:29:38,340-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /146.185.202.125:1085
+2015-09-25 16:29:38,340-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+i+need+a+payday+loan+Virginia+(VA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:38,481-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /146.185.201.46:1085
+2015-09-25 16:29:38,482-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:38,708-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.203.103:1085
+2015-09-25 16:29:38,708-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:39,097-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /91.238.82.171:1085
+2015-09-25 16:29:39,098- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=eBook+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=eBook+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=eBook+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:39,099-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.44.78.170:1085
+2015-09-25 16:29:39,099-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:39,264-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /146.185.201.112:1085
+2015-09-25 16:29:39,265-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:39,328-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /179.61.200.139:1085
+2015-09-25 16:29:39,329-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:39,348-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /79.110.19.191:1085
+2015-09-25 16:29:39,348- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bno%2Bdoc%2Bloans%2BNorth%2BDakota%2B(ND)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D50&q=CGMSBE9uE78YxLSVsAUiGQDxp4NLnav504VCgfh5llFrfKWban1e9gU
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bno%2Bdoc%2Bloans%2BNorth%2BDakota%2B(ND)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D50&q=CGMSBE9uE78YxLSVsAUiGQDxp4NLnav504VCgfh5llFrfKWban1e9gU
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bno%2Bdoc%2Bloans%2BNorth%2BDakota%2B(ND)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D50&q=CGMSBE9uE78YxLSVsAUiGQDxp4NLnav504VCgfh5llFrfKWban1e9gU
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:39,349-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.34.78.16:1085
+2015-09-25 16:29:39,349-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:39,384-DEBUG(AnchorTitleScrapper.java:440)-Current thread count: 9
+2015-09-25 16:29:39,385-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 10
+2015-09-25 16:29:39,385-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.88.191.227:1085
+2015-09-25 16:29:39,385-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+payday+loans+online+Indiana+(IN)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:39,572-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /146.185.202.125:1085
+2015-09-25 16:29:39,620- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+i+need+a+payday+loan+Virginia+(VA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+i+need+a+payday+loan+Virginia+(VA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+i+need+a+payday+loan+Virginia+(VA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:39,623-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.202.120:1085
+2015-09-25 16:29:39,625-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+i+need+a+payday+loan+Virginia+(VA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:39,778-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.18.12:1085
+2015-09-25 16:29:39,779-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:40,476-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.58.204:1085
+2015-09-25 16:29:40,476-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:40,544-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.200.56:1085
+2015-09-25 16:29:40,544-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:41,000-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.201.111:1085
+2015-09-25 16:29:41,000-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:41,033-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /79.110.18.12:1085
+2015-09-25 16:29:41,033- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D50&q=CGMSBE9uEgwYxbSVsAUiGQDxp4NLuWJ5vVuXNN226GNvN2bKsMWuehM
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D50&q=CGMSBE9uEgwYxbSVsAUiGQDxp4NLuWJ5vVuXNN226GNvN2bKsMWuehM
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D50&q=CGMSBE9uEgwYxbSVsAUiGQDxp4NLuWJ5vVuXNN226GNvN2bKsMWuehM
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:41,034-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.238.114.44:1085
+2015-09-25 16:29:41,035-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:41,214-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.242.217.83:1085
+2015-09-25 16:29:41,214-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:41,648-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.50.250.60:1085
+2015-09-25 16:29:41,648-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+payday+loans+online+Indiana+(IN)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:42,679-DEBUG(AnchorTitleScrapper.java:440)-Current thread count: 9
+2015-09-25 16:29:42,680-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 10
+2015-09-25 16:29:42,680-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.206.176:1085
+2015-09-25 16:29:42,680-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+lend+money+New+Mexico+(NM)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:42,898-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /185.50.250.60:1085
+2015-09-25 16:29:42,898- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bsame%2Bday%2Bpayday%2Bloans%2Bonline%2BIndiana%2B(IN)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D20&q=CGMSBLky-jwYx7SVsAUiGQDxp4NLKYIBI5IT1OzLzq_qnKhM7_1dG5w
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bsame%2Bday%2Bpayday%2Bloans%2Bonline%2BIndiana%2B(IN)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D20&q=CGMSBLky-jwYx7SVsAUiGQDxp4NLKYIBI5IT1OzLzq_qnKhM7_1dG5w
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bsame%2Bday%2Bpayday%2Bloans%2Bonline%2BIndiana%2B(IN)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D20&q=CGMSBLky-jwYx7SVsAUiGQDxp4NLKYIBI5IT1OzLzq_qnKhM7_1dG5w
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:42,899-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /146.185.206.144:1085
+2015-09-25 16:29:42,900-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+payday+loans+online+Indiana+(IN)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:42,940-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.219.138:1085
+2015-09-25 16:29:42,941-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=60
+2015-09-25 16:29:43,075-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.63.140:1085
+2015-09-25 16:29:43,075-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
+2015-09-25 16:29:43,308-DEBUG(AnchorTitleScrapper.java:440)-Current thread count: 9
+2015-09-25 16:29:43,309-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 10
+2015-09-25 16:29:43,309-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.44.77.136:1085
+2015-09-25 16:29:43,309-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+no+teletrack+Wisconsin+(WI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:43,714-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.217.232:1085
+2015-09-25 16:29:43,714-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+i+need+a+payday+loan+Virginia+(VA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:43,874-DEBUG(AnchorTitleScrapper.java:440)-Current thread count: 9
+2015-09-25 16:29:43,874-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 10
+2015-09-25 16:29:43,874-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.238.114.131:1085
+2015-09-25 16:29:43,874-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+short+term+loans+online+Hawaii&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:29:44,262-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.19.129:1085
+2015-09-25 16:29:44,263-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=70
+2015-09-25 16:29:44,425-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.62.80:1085
+2015-09-25 16:29:44,425-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=50
+2015-09-25 16:29:44,742-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.63.219:1085
+2015-09-25 16:29:44,742-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+payday+loans+online+Indiana+(IN)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:44,902-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.239.24.107:1085
+2015-09-25 16:29:44,902-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+no+teletrack+Wisconsin+(WI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:45,401-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /37.18.42.148:1085
+2015-09-25 16:29:45,401-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+i+need+a+payday+loan+Virginia+(VA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:45,484-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /79.110.19.129:1085
+2015-09-25 16:29:45,484- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D70&q=CGMSBE9uE4EYyrSVsAUiGQDxp4NLxlVefFUn6_qvo6p20qNgBjUIDd8
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D70&q=CGMSBE9uE4EYyrSVsAUiGQDxp4NLxlVefFUn6_qvo6p20qNgBjUIDd8
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D70&q=CGMSBE9uE4EYyrSVsAUiGQDxp4NLxlVefFUn6_qvo6p20qNgBjUIDd8
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:45,485-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.50.250.57:1085
+2015-09-25 16:29:45,485-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=70
+2015-09-25 16:29:45,632-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.200.223:1085
+2015-09-25 16:29:45,632-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+short+term+loans+online+Hawaii&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:46,458-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /178.57.68.169:1085
+2015-09-25 16:29:46,458-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+lend+money+New+Mexico+(NM)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:29:46,687-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.148.31.37:1085
+2015-09-25 16:29:46,688-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+no+teletrack+Wisconsin+(WI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:29:46,752-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /185.50.250.57:1085
+2015-09-25 16:29:46,752- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D70&q=CGMSBLky-jkYy7SVsAUiGQDxp4NLTLROVEbot1dKQMS4NMi8t0NSq9s
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D70&q=CGMSBLky-jkYy7SVsAUiGQDxp4NLTLROVEbot1dKQMS4NMi8t0NSq9s
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DeBook%2Bpayday%2Bloan%2Bno%2Bbank%2Baccount%2BNebraska%2B(NE)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D70&q=CGMSBLky-jkYy7SVsAUiGQDxp4NLTLROVEbot1dKQMS4NMi8t0NSq9s
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:29:46,753-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /146.185.200.19:1085
+2015-09-25 16:29:46,753-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=eBook+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=70
+2015-09-25 16:42:08,288-DEBUG(AnchorTitleScrapper.java:447)-Starting saving unused account...
+2015-09-25 16:42:08,320-DEBUG(AnchorTitleScrapper.java:454)-Banned proxies was saved successfully.
+2015-09-25 16:42:08,307-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 10
+2015-09-25 16:42:08,299-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 9
+2015-09-25 16:42:08,298-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 8
+2015-09-25 16:42:08,297-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 7
+2015-09-25 16:42:08,290-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 6
+2015-09-25 16:42:08,290-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 5
+2015-09-25 16:42:08,290-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 4
+2015-09-25 16:42:08,290-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 3
+2015-09-25 16:42:08,290-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 2
+2015-09-25 16:42:08,289-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 1
+2015-09-25 16:42:08,365-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.106.104.184:1085
+2015-09-25 16:42:08,366-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+no+credit+checks+Florida+(FL)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:08,373-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.201.130:1085
+2015-09-25 16:42:08,374-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:08,378-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.189.201.202:1085
+2015-09-25 16:42:08,378-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:08,379-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /146.185.205.17:1085
+2015-09-25 16:42:08,382-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:08,383-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.217.191:1085
+2015-09-25 16:42:08,384-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:08,385-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.50.251.102:1085
+2015-09-25 16:42:08,386-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:08,386-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.88.191.30:1085
+2015-09-25 16:42:08,386-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:08,389-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.44.77.131:1085
+2015-09-25 16:42:08,389-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:08,390-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /191.101.55.42:1085
+2015-09-25 16:42:08,390-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:08,390-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.44.79.51:1085
+2015-09-25 16:42:08,391-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:10,940-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /185.50.251.102:1085
+2015-09-25 16:42:10,969- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bcash%2Byes%2Bpayday%2Bloan%2BTexas%2B(TX)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBLky-2YYs7qVsAUiGQDxp4NLNfTEK7pWbBMKyiWciScndiXAL7w
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bcash%2Byes%2Bpayday%2Bloan%2BTexas%2B(TX)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBLky-2YYs7qVsAUiGQDxp4NLNfTEK7pWbBMKyiWciScndiXAL7w
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bcash%2Byes%2Bpayday%2Bloan%2BTexas%2B(TX)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D0&q=CGMSBLky-2YYs7qVsAUiGQDxp4NLNfTEK7pWbBMKyiWciScndiXAL7w
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:42:10,980-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /191.101.55.28:1085
+2015-09-25 16:42:10,982-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:11,873-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /93.179.90.155:1085
+2015-09-25 16:42:11,874-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:11,880-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.19.176:1085
+2015-09-25 16:42:11,880-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:11,912-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.238.114.114:1085
+2015-09-25 16:42:11,913-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:11,917-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.18.169:1085
+2015-09-25 16:42:11,918-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:11,924-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /178.57.65.88:1085
+2015-09-25 16:42:11,924-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:12,036-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /141.101.201.177:1085
+2015-09-25 16:42:12,037-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:12,153-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /37.18.42.32:1085
+2015-09-25 16:42:12,153-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+no+credit+checks+Florida+(FL)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:12,476-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /194.50.116.79:1085
+2015-09-25 16:42:12,476-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:12,848-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /95.181.217.195:1085
+2015-09-25 16:42:12,848-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:13,112-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /79.110.19.176:1085
+2015-09-25 16:42:13,112- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bsame%2Bday%2Bloans%2BOhio%2B(OH)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D20&q=CGMSBE9uE7AYtbqVsAUiGQDxp4NLawmDMmQgEUfGpq5UIhIuyp2rF4A
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bsame%2Bday%2Bloans%2BOhio%2B(OH)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D20&q=CGMSBE9uE7AYtbqVsAUiGQDxp4NLawmDMmQgEUfGpq5UIhIuyp2rF4A
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bsame%2Bday%2Bloans%2BOhio%2B(OH)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D20&q=CGMSBE9uE7AYtbqVsAUiGQDxp4NLawmDMmQgEUfGpq5UIhIuyp2rF4A
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:42:13,117-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.46.86.67:1085
+2015-09-25 16:42:13,117-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:13,140-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /37.230.213.127:1085
+2015-09-25 16:42:13,140-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:15,944-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 1
+2015-09-25 16:42:15,971-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 10
+2015-09-25 16:42:15,955-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 9
+2015-09-25 16:42:15,955-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 8
+2015-09-25 16:42:15,955-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 7
+2015-09-25 16:42:15,955-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 6
+2015-09-25 16:42:15,953-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 5
+2015-09-25 16:42:15,953-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 4
+2015-09-25 16:42:15,953-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 3
+2015-09-25 16:42:15,951-DEBUG(AnchorTitleScrapper.java:435)-Current thread count: 2
+2015-09-25 16:42:16,054-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.200.80.108:1085
+2015-09-25 16:42:16,056-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:16,077-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.230.110.45:1085
+2015-09-25 16:42:16,082-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:16,109-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /193.106.31.235:1085
+2015-09-25 16:42:16,109-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:16,110-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /5.101.219.219:1085
+2015-09-25 16:42:16,110-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:16,112-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /193.0.129.29:1085
+2015-09-25 16:42:16,113-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:16,113-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /141.101.132.98:1085
+2015-09-25 16:42:16,113-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:16,114-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.44.78.89:1085
+2015-09-25 16:42:16,114-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:16,114-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.236.120.193:1085
+2015-09-25 16:42:16,139-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:16,139-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.191.41.52:1085
+2015-09-25 16:42:16,140-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+no+credit+checks+Florida+(FL)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:16,143-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.57.20:1085
+2015-09-25 16:42:16,143-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=0
+2015-09-25 16:42:19,429-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /179.61.200.59:1085
+2015-09-25 16:42:19,429-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+loans+with+no+credit+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:19,440-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.14.195.201:1085
+2015-09-25 16:42:19,440-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+pay+day+loans+no+credit+check+New+Hampshire+(NH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:19,453-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.50.250.75:1085
+2015-09-25 16:42:19,454-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+Ohio+(OH)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:19,532-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.14.192.129:1085
+2015-09-25 16:42:19,533-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+no+doc+loans+North+Dakota+(ND)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:19,545-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /46.161.56.233:1085
+2015-09-25 16:42:19,545-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+personalloan+Rhode+Island+(RI)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:19,552-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /185.46.84.135:1085
+2015-09-25 16:42:19,553-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+regions+loans+Kansas+(KS)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:19,558-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /91.215.137.81:1085
+2015-09-25 16:42:19,559-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+cash+yes+payday+loan+Texas+(TX)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:19,564-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /195.34.79.218:1085
+2015-09-25 16:42:19,565-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:19,589-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.17.149:1085
+2015-09-25 16:42:19,590-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loans+with+no+checking+account+Iowa+(IA)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:19,593-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /193.106.31.108:1085
+2015-09-25 16:42:19,593-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+same+day+loans+no+credit+checks+Florida+(FL)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=20
+2015-09-25 16:42:20,838-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /193.106.31.187:1085
+2015-09-25 16:42:20,839-DEBUG(SnippetExtractor.java:270)-https://www.google.com/search?q=Download+(eBook)+payday+loan+no+bank+account+Nebraska+(NE)&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
+2015-09-25 16:42:20,842-ERROR(SnippetExtractor.java:288)-Responce code not equals 200 for proxy SOCKS @ /79.110.17.149:1085
+2015-09-25 16:42:20,869- WARN(AnchorTitleScrapper.java:274)-Error occured during getting snippets: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bpayday%2Bloans%2Bwith%2Bno%2Bchecking%2Baccount%2BIowa%2B(IA)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D20&q=CGMSBE9uEZUYvbqVsAUiGQDxp4NLB6YU-uO3dYp6Pjq4fD1yTNJwoHE
+java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bpayday%2Bloans%2Bwith%2Bno%2Bchecking%2Baccount%2BIowa%2B(IA)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D20&q=CGMSBE9uEZUYvbqVsAUiGQDxp4NLB6YU-uO3dYp6Pjq4fD1yTNJwoHE
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:296)
+	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:471)
+	at com.fdt.snippetutils.AnchorTitleScrapper.getSnippet(AnchorTitleScrapper.java:398)
+	at com.fdt.snippetutils.AnchorTitleScrapper.processKey(AnchorTitleScrapper.java:264)
+	at com.fdt.snippetutils.AnchorTitleScrapper.access$3(AnchorTitleScrapper.java:244)
+	at com.fdt.snippetutils.AnchorTitleScrapper$ScrapperThread.run(AnchorTitleScrapper.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://ipv4.google.com/sorry/IndexRedirect?continue=https://www.google.com/search%3Fq%3DDownload%2B(eBook)%2Bpayday%2Bloans%2Bwith%2Bno%2Bchecking%2Baccount%2BIowa%2B(IA)%26lr%3Dlang_en%26oe%3Dutf-8%26gws_rd%3Dssl%26start%3D20&q=CGMSBE9uEZUYvbqVsAUiGQDxp4NLB6YU-uO3dYp6Pjq4fD1yTNJwoHE
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:285)
+	... 10 more
+2015-09-25 16:42:20,874-DEBUG(SnippetExtractor.java:266)-Using proxy: SOCKS @ /79.110.25.193:1085
