@@ -31,6 +31,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 import com.fdt.scrapper.SnippetExtractor;
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
+import com.fdt.scrapper.task.AolSnippetTask;
 import com.fdt.scrapper.task.BingSnippetTask;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.GoogleSnippetTask;
@@ -38,6 +39,7 @@ import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTask;
 import com.fdt.scrapper.task.TutSnippetTask;
 import com.fdt.scrapper.task.UkrnetSnippetTask;
+import com.fdt.scrapper.task.YahooSnippetTask;
 
 public class AnchorTitleReplacer {
 
@@ -75,7 +77,7 @@ public class AnchorTitleReplacer {
 	private int minLineCount = 3;
 
 	private String patternTitlesFilePath;
-	
+
 	private boolean cleanKey = false;
 
 	private int repeatCount;
@@ -85,7 +87,7 @@ public class AnchorTitleReplacer {
 	private boolean replaceWithBing = false;
 
 	private String source = "BING";
-	
+
 	private HashMap<String, ArrayList<String>> fileTitles = new HashMap<String, ArrayList<String>>(); 
 
 	private AtomicInteger currentThreadCount = new AtomicInteger(0);
@@ -135,7 +137,7 @@ public class AnchorTitleReplacer {
 		this.minLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MIN_LINE_COUNT_LABEL));
 
 		this.replaceWithBing = Boolean.parseBoolean(ConfigManager.getInstance().getProperty(GET_ANCHOR_FROM_WEB_LABEL));
-		
+
 		this.cleanKey = Boolean.parseBoolean(ConfigManager.getInstance().getProperty(IS_CLEAN_KEY_LABEL));
 
 		ProxyFactory.DELAY_FOR_PROXY = Integer.valueOf(ConfigManager.getInstance().getProperty(PROXY_DELAY_LABEL));
@@ -208,10 +210,10 @@ public class AnchorTitleReplacer {
 			saveBannedProxy(proxyFactory.getBannedProxyList());
 		}
 	}
-	
+
 	private HashMap<String, ArrayList<String>> getFileTitles(String inputTitlesFolder) throws IOException{
 		HashMap<String, ArrayList<String>> result = new HashMap<String, ArrayList<String>>();
-	
+
 		File inputTitlesPath = new File(inputTitlesFolder);
 		StringBuffer fileName;
 		ArrayList<String> titles;
@@ -220,25 +222,25 @@ public class AnchorTitleReplacer {
 			titles = readFile(file.getPath());
 			result.put(fileName.substring(0, fileName.length()-4).toLowerCase(), titles);
 		}
-		
+
 		return result;
 	}
-	
+
 	private String getRandomTitleFromFiles(String key){
 		return getRandomTitleFromFiles(key, false);
 	}
-	
+
 	private String getRandomTitleFromFiles(String key, boolean cleanKey){
 		Random rnd = new Random();
 		ArrayList<String> keyTitles = null;
-		
+
 		if(cleanKey)
 			key = key.replaceAll("[^A-Za-z0-9\\s\\-]", "");
-		
+
 		if((keyTitles = fileTitles.get(key.toLowerCase().trim())) != null){
 			return keyTitles.get(rnd.nextInt(keyTitles.size()));
 		}
-		
+
 		return "";
 	}
 
@@ -464,14 +466,14 @@ public class AnchorTitleReplacer {
 			snippetTask.setPage(reducePage(snippetTask.getPage()));
 			snippets = snippetExtractor.extractSnippetsFromPageContent(snippetTask);
 		}
-		
+
 		if(snippets.size() == 0){
 			throw new IOException("Could not extract snippets. Snippet extracted size == 0");
 		}else{
 			return snippets.get(rnd.nextInt(snippets.size()));
 		}
 	}
-	
+
 	private int reducePage(int currentPage){
 		if(currentPage/5 > 1){
 			log.info(String.format("Recude page from %d to %d",currentPage, currentPage/5 ));
@@ -490,18 +492,24 @@ public class AnchorTitleReplacer {
 			task = new GoogleSnippetTask(key);
 			task.setPage(rnd.nextInt(50));
 		} else
-			if("BING".equals(source.toUpperCase().trim())){
-				task = new BingSnippetTask(key);
-				task.setPage(1+rnd.nextInt(50));
-			} else
-				if("TUT".equals(source.toUpperCase().trim())){
-					task = new TutSnippetTask(key);
-				} else
-					if("UKRNET".equals(source.toUpperCase().trim())){
-						task = new UkrnetSnippetTask(key);
-					}else{
-						throw new Exception("Can't find assosiated task for source: " + source);
-					}
+		if("BING".equals(source.toUpperCase().trim())){
+			task = new BingSnippetTask(key);
+			task.setPage(1+rnd.nextInt(50));
+		} else
+		if("TUT".equals(source.toUpperCase().trim())){
+			task = new TutSnippetTask(key);
+		} else
+		if("UKRNET".equals(source.toUpperCase().trim())){
+			task = new UkrnetSnippetTask(key);
+		} else
+		if("AOL".equals(source.toUpperCase().trim())){
+			task = new AolSnippetTask(key);
+		}else
+		if("YAHOO".equals(source.toUpperCase().trim())){
+			task = new YahooSnippetTask(key);
+		}else{
+			throw new Exception("Can't find assosiated task for source: " + source);
+		}
 
 		return task;
 	}

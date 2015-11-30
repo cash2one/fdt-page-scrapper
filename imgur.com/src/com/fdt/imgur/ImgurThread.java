@@ -154,6 +154,7 @@ public class ImgurThread extends Thread{
 		}
 	}
 
+	//
 	private boolean processTask(ImgurTask task, ProxyConnector proxyConnector)
 	{
 		String imgurUrl = "";
@@ -197,6 +198,7 @@ public class ImgurThread extends Thread{
 			FileUtils.moveFile(task.getFile(), destFile);
 
 			task.getFile().delete();
+			task.getImageFile().delete();
 			return true;
 		}
 		catch (Exception e) {

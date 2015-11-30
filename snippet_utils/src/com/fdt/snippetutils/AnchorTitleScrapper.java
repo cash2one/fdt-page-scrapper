@@ -34,6 +34,7 @@ import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.GoogleSnippetTask;
 import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTask;
+import com.fdt.scrapper.task.TaskFactory;
 import com.fdt.scrapper.task.TutSnippetTask;
 import com.fdt.scrapper.task.UkrnetSnippetTask;
 
@@ -256,7 +257,7 @@ public class AnchorTitleScrapper {
 		if (matcher.find()){
 			//fullTitle = matcher.group(1).trim();
 			bookName = matcher.group(1).trim();
-			SnippetTask snippetTask = getTaskBySource(source,bookName);
+			SnippetTask snippetTask = TaskFactory.makeSnippetTask(bookName, source);
 
 			while(titles.size() < maxTitlesCount && !isNoMorePages){
 				try {
@@ -409,7 +410,7 @@ public class AnchorTitleScrapper {
 		}
 	}
 
-	private SnippetTask getTaskBySource(String source, String key) throws Exception{
+	/*private SnippetTask getTaskBySource(String source, String key) throws Exception{
 		SnippetTask task = null;
 
 		if("GOOGLE".equals(source.toUpperCase().trim())){
@@ -428,7 +429,7 @@ public class AnchorTitleScrapper {
 					}
 
 		return task;
-	}
+	}*/
 
 	private void incThrdCnt(){
 		currentThreadCount.incrementAndGet();

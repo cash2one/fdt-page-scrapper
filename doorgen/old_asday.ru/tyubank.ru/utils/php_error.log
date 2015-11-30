@@ -1,0 +1,8 @@
+[10-Jun-2013 17:19:33] PHP Fatal error:  Call to undefined function getRandomString() in C:\Work\scrapper\doorgen\www\horseclub\utils\title_generator.php on line 59
+[10-Jun-2013 17:22:34] PHP Fatal error:  Call to undefined function getRandomString() in C:\Work\scrapper\doorgen\www\horseclub\utils\title_generator.php on line 60
+[10-Jun-2013 17:23:55] PHP Parse error:  syntax error, unexpected ';' in C:\Work\scrapper\doorgen\www\horseclub\utils\title_generator.php on line 60
+[10-Jun-2013 17:41:11] PHP Fatal error:  Call to undefined function getRandomString() in C:\Work\scrapper\doorgen\www\horseclub\utils\title_generator.php on line 28
+[10-Jun-2013 17:41:45] PHP Parse error:  syntax error, unexpected ';' in C:\Work\scrapper\doorgen\www\horseclub\utils\title_generator.php on line 28
+[10-Jun-2013 17:41:59] PHP Fatal error:  Call to undefined function getRandomString() in C:\Work\scrapper\doorgen\www\horseclub\utils\title_generator.php on line 28
+[10-Jun-2013 17:42:06] PHP Fatal error:  Call to undefined function getRandomString() in C:\Work\scrapper\doorgen\www\horseclub\utils\title_generator.php on line 28
+[10-Jun-2013 17:42:28] PHP Fatal error:  Call to undefined function getRandomString() in C:\Work\scrapper\doorgen\www\horseclub\utils\title_generator.php on line 49

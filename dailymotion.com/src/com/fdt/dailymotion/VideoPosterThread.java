@@ -186,7 +186,7 @@ public class VideoPosterThread extends Thread{
 					}
 					log.error("Error occured during process task: " + task.toString(), e);
 				}finally{
-					deleteVideoFile(task);
+					deleteAllTempFiles(task);
 				}
 				if(!errorExist){
 					taskFactory.putTaskInSuccessQueue(task);
@@ -295,25 +295,29 @@ public class VideoPosterThread extends Thread{
 		}
 	}
 
-	private void deleteVideoFile(NewsTask task){
+	private void deleteAllTempFiles(NewsTask task){
 		if(task != null ){
-			if(task.getVideoFile() != null && task.getVideoFile().exists()){
-				try {
-					log.debug("Delete video file: " + task.getVideoFile().getName());
-					task.getVideoFile().delete();
-				} catch (Exception e) {
-					log.error(e);
-				}
+			//delete video file
+			deleteFile(task.getVideoFile());
+			
+			//delete image file
+			if(task.isGetImageFromLink()){
+				for(File file : task.getImageFiles())
+				deleteFile(file);
 			}
-
-			/*if(task.getVideoFileWOAudio() != null && task.getVideoFileWOAudio().exists()){
-				try {
-					log.debug("Delete video WO audio file: " + task.getVideoFileWOAudio().getName());
-					task.getVideoFileWOAudio().delete();
-				} catch (Exception e) {
-					log.error(e);
-				}
-			}*/
 		}
+	}
+	
+	private boolean deleteFile(File file){
+		if(file != null && file.exists()){
+			try {
+				log.debug("Delete file: " + file.getName());
+				return file.delete();
+			} catch (Exception e) {
+				log.error(e);
+			}
+		}
+		
+		return false;
 	}
 }

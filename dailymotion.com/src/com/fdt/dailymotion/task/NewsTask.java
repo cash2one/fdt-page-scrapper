@@ -368,4 +368,8 @@ public class NewsTask{
 	public boolean isUsePreview() {
 		return isUsePreview;
 	}
+
+	public boolean isGetImageFromLink() {
+		return isGetImageFromLink;
+	}
 }

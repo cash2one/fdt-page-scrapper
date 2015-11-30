@@ -85,6 +85,13 @@ public class SnippetExtractor {
 		this.task = null;
 	}
 	
+	public SnippetExtractor(SnippetTask snippetTask, ProxyFactory proxyFactory) throws MalformedURLException, IOException {	
+		this();
+		this.proxyFactory = proxyFactory;
+		this.task = new SnippetTaskWrapper(snippetTask);
+		this.linkList = null;
+	}
+	
 	public SnippetExtractor(SnippetTask snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList) throws MalformedURLException, IOException {	
 		this(new SnippetTaskWrapper(snippetTask), proxyFactory, linkList);
 	}
@@ -499,6 +506,10 @@ public class SnippetExtractor {
 		return  minValue + rnd.nextInt(maxValue - minValue+1);
 	}
 
+	public ArrayList<Snippet> extractSnippetsFromPageContent() throws MalformedURLException, IOException, XPathExpressionException, ParseException{
+		return extractSnippetsFromPageContent(task.getCurrentTask());
+	}
+	
 	public ArrayList<Snippet> extractSnippetsFromPageContent(SnippetTask snippetTask) throws MalformedURLException, IOException, XPathExpressionException, ParseException{
 		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
 		
@@ -548,6 +559,7 @@ public class SnippetExtractor {
 		titles = null;
 		descs = null;
 
+		snippetTask.setSnipResult(snippets);
 		return snippets;
 	}
 	

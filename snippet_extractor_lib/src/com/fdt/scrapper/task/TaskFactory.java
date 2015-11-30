@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -144,9 +145,14 @@ public class TaskFactory {
 		fillTaskQueue(keyWordsList, source, lang);
 		keyWordsList.clear();
 	}
-	
+
 	public void loadTaskQueue(String pathToTaskList, String sourcesSrt, int[] frequencies, String lang) throws Exception {
 		ArrayList<String> keyWordsList = loadKeyWordsList(pathToTaskList);
+		fillTaskQueue(sourcesSrt,frequencies,keyWordsList,lang);
+		keyWordsList.clear();
+	}
+	
+	public void loadTaskQueue(ArrayList<String> keyWordsList, String sourcesSrt, int[] frequencies, String lang) throws Exception {
 		fillTaskQueue(sourcesSrt,frequencies,keyWordsList,lang);
 		keyWordsList.clear();
 	}
@@ -165,9 +171,11 @@ public class TaskFactory {
 				br = new BufferedReader(new InputStreamReader( new FileInputStream(cfgFilePath), "UTF8" ));
 
 				line = br.readLine();
-				while(line != null && !"".equals(line.trim())){
-					//String utf8Line = new String(line.getBytes(),"UTF-8");
-					keyWordsList.add(line.trim());
+				while(line != null){
+					if(!"".equals(line.trim())){
+						//String utf8Line = new String(line.getBytes(),"UTF-8");
+						keyWordsList.add(line.trim());
+					}
 					line = br.readLine();
 				}
 			} catch (FileNotFoundException e) {
@@ -191,32 +199,15 @@ public class TaskFactory {
 			taskQueue.add(new SnippetTaskWrapper(makeSnippetTask( keyWords, source, lang)));
 		}
 	}
-	
+
 	private synchronized void fillTaskQueue(String sourcesSrt, int[] frequencies, ArrayList<String> keyWordsList, String lang) throws Exception{
 		for(String keyWords : keyWordsList){
 			taskQueue.add(new SnippetTaskWrapper(sourcesSrt, frequencies, keyWords, lang));
 		}
 	}
-	
-	protected static SnippetTask makeSnippetTask(String key, String source, String lang) throws Exception{
-		SnippetTask task = null;
-		if("google".equals(source.toLowerCase().trim())){
-			task = new GoogleSnippetTask(key);
-		} else
-		if("bing".equals(source.toLowerCase().trim())){
-			task = new BingSnippetTask(key);
-		} else
-		if("tut".equals(source.toLowerCase().trim())){
-			task = new TutSnippetTask(key);
-		} else
-		if("ukrnet".equals(source.toLowerCase().trim())){
-			task = new UkrnetSnippetTask(key);
-		}else{
-			throw new Exception("Can't find assosiated task for source: " + source);
-		}
-		task.setLanguage(lang);
-		task.setSource(source);
-		return task;
+
+	public static SnippetTask makeSnippetTask(String key, String source) throws Exception{
+		return makeSnippetTask(key, source, "en");
 	}
 
 	public synchronized ArrayList<SnippetTaskWrapper> getTaskQueue() {
@@ -229,5 +220,34 @@ public class TaskFactory {
 
 	public synchronized int getRunThreadsCount() {
 		return runThreadsCount.get();
+	}
+	
+	public static SnippetTask makeSnippetTask(String key, String source, String lang) throws Exception{
+		SnippetTask task = null;
+		if("google".equals(source.toLowerCase().trim())){
+			task = new GoogleSnippetTask(key);
+		} else
+			if("bing".equals(source.toLowerCase().trim())){
+				task = new BingSnippetTask(key);
+			} else
+				if("tut".equals(source.toLowerCase().trim())){
+					task = new TutSnippetTask(key);
+				} else
+					if("ukrnet".equals(source.toLowerCase().trim())){
+						task = new UkrnetSnippetTask(key);
+					}
+					else
+						if("aol".equals(source.toLowerCase().trim())){
+							task = new AolSnippetTask(key);
+						}
+						else
+							if("yahoo".equals(source.toLowerCase().trim())){
+								task = new YahooSnippetTask(key);
+							}else{
+								throw new Exception("Can't find assosiated task for source: " + source);
+							}
+		task.setLanguage(lang);
+		task.setSource(source);
+		return task;
 	}
 }

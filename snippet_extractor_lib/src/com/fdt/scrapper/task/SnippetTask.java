@@ -6,8 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.apache.http.protocol.HTTP;
 
@@ -43,6 +41,8 @@ public abstract class SnippetTask
 	private int attemptCount = 1;
 
 	private String result = null;
+	
+	private ArrayList<Snippet> snipResult;
 
 	public SnippetTask(String keyWords)
 	{
@@ -243,5 +243,13 @@ public abstract class SnippetTask
 
 	public String getKeyWordsOrig() {
 		return keyWordsOrig;
+	}
+
+	public ArrayList<Snippet> getSnipResult() {
+		return snipResult;
+	}
+
+	public void setSnipResult(ArrayList<Snippet> snipResult) {
+		this.snipResult = snipResult;
 	}
 }

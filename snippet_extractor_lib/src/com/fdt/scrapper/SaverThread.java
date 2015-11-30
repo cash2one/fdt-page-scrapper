@@ -73,7 +73,7 @@ public class SaverThread extends Thread
 					}
 					try{
 						SnippetTask task = null;
-						if(taskFactory.getSuccessQueue().size() > 0){
+						while(taskFactory.getSuccessQueue().size() > 0){
 							task = taskFactory.getSuccessQueue().remove(0).getCurrentTask();
 							if(task != null){
 								//saveResultToFile(task.getResult(),task.getKeyWords().replace('+', ' '));

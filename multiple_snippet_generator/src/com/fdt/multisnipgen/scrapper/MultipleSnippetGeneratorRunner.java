@@ -153,7 +153,7 @@ public class MultipleSnippetGeneratorRunner{
 			
 			@Override
 			public String formatResult(SnippetTask task) {
-				return task.getKeyWords().replace('+', ' ');
+				return task.getResult();
 			}
 		});
 		saver.start();

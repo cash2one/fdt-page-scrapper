@@ -161,8 +161,11 @@ public class ProxyFactory
 	}
 	
 	public void addToBannedList(ProxyConnector proxyConnector){
-		if(!bannedProxyList.contains(proxyConnector))
+		if(!bannedProxyList.contains(proxyConnector)){
+			log.info("Proxy " + proxyConnector + " was banned. And will not used again.");
 			bannedProxyList.add(proxyConnector);
+			log.info("Total banned proxy count is: " + bannedProxyList.size());
+		}
 	}
 	
 	public ArrayList<ProxyConnector> getBannedProxyList(){

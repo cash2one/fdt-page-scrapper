@@ -30,6 +30,9 @@ public class KeyDomainCntGetterRunner{
 
 	private String proxyFilePath;
 	private String keyWordsFilePath;
+	
+	private String resultFilePath;
+	
 	private int maxThreadCount;
 	private long proxyDelay;
 
@@ -44,6 +47,9 @@ public class KeyDomainCntGetterRunner{
 	private final static String PROXY_LIST_FILE_PATH_LABEL = "proxy_list_file_path";
 
 	protected final static String KEY_WORDS_FILE_PATH_LABEL = "key_words_file_path";
+	
+	protected final static String RESULT_FILE_PATH_LABEL = "result_file";
+	
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
 	
@@ -97,6 +103,7 @@ public class KeyDomainCntGetterRunner{
 		this.taskFactory = TaskFactory.getInstance();
 		this.proxyFilePath = ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 		this.keyWordsFilePath = ConfigManager.getInstance().getProperty(KEY_WORDS_FILE_PATH_LABEL);
+		this.resultFilePath = ConfigManager.getInstance().getProperty(RESULT_FILE_PATH_LABEL);
 		this.maxThreadCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
 		this.proxyDelay = Integer.valueOf(ConfigManager.getInstance().getProperty(PROXY_DELAY_LABEL));
 
@@ -135,7 +142,7 @@ public class KeyDomainCntGetterRunner{
 						return strBuf.toString();
 					}
 				},
-				"res_output.txt");
+				resultFilePath);
 		
 		saver.start();
 

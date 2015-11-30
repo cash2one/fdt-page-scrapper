@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 
 import com.fdt.scrapper.SnippetExtractor;
 import com.fdt.scrapper.proxy.ProxyFactory;
+import com.fdt.scrapper.task.SnippetTask;
 import com.fdt.scrapper.task.SnippetTaskWrapper;
 import com.fdt.scrapper.task.TaskFactory;
 
@@ -23,6 +24,7 @@ public class KeyDomainCntGetterThread implements Callable<String> {
 	private SnippetTaskWrapper snippetTask = null;
 	private ProxyFactory proxyFactory = null;
 	private TaskFactory taskFactory = null;
+	private boolean isCountDomain;
 
 	public KeyDomainCntGetterThread(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory, boolean isCountDomain) {
 		super();
@@ -30,6 +32,7 @@ public class KeyDomainCntGetterThread implements Callable<String> {
 		this.snippetTask = snippetTask;
 		this.proxyFactory = proxyFactory;
 		this.taskFactory = taskFactory;
+		this.isCountDomain = isCountDomain;
 		if(isCountDomain){
 			snippetTask.getCurrentTask().setKeyWords("site:" + snippetTask.getCurrentTask().getKeyWords());
 			snippetTask.getCurrentTask().setUseOrigKeywords(true);
@@ -54,6 +57,9 @@ public class KeyDomainCntGetterThread implements Callable<String> {
 			}
 			catch (Exception e) {
 				errorExist = true;
+				if(isCountDomain){
+					clearKeyWord(snippetTask.getCurrentTask());
+				}
 				taskFactory.reprocessingTask(snippetTask);
 				log.error("Error occured during processing key: " + snippetTask.getCurrentTask().getKeyWords());
 			}
@@ -63,6 +69,9 @@ public class KeyDomainCntGetterThread implements Callable<String> {
 					taskFactory.putTaskInSuccessQueue(snippetTask);
 
 				}else{
+					if(isCountDomain){
+						clearKeyWord(snippetTask.getCurrentTask());
+					}
 					taskFactory.reprocessingTask(snippetTask);
 				}
 			}
@@ -71,5 +80,10 @@ public class KeyDomainCntGetterThread implements Callable<String> {
 		}
 		
 		return cntResult;
+	}
+	
+	private void clearKeyWord(SnippetTask snipTask){
+		String clearKey = snipTask.getKeyWordsOrig().substring(5);
+		snipTask.setKeyWords(clearKey);
 	}
 }

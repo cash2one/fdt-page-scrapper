@@ -1,0 +1,159 @@
+.menu
+{
+border-spacing:0px;
+margin-top:15px;
+}
+.redH1
+{
+color:#EF6F53;
+font-size:31px;
+}
+
+
+.addText
+{
+font-size:16px;
+}
+.menu a
+{
+text-decoration:none;
+}
+.menu td.current
+{
+background: url('../images/menuBG.jpg') repeat-x top left;
+padding-left:15px;
+padding-right:15px;
+}
+.menu td.current2
+{
+background: url('../images/menuBG.jpg') repeat-x top left;
+padding-left:15px;
+padding-right:15px;
+color:#fff;
+font-size:20px;
+font-weight:bold;
+}
+.menu td.current:hover
+{
+background: url('../images/menuBG_invert.jpg') repeat-x top left;
+}
+.menu td.current:hover a
+{
+color:white;
+border-bottom:1px dashed #fff;
+}
+
+.menu tr
+{
+height:44px;
+}
+.menuItem
+{
+color:#fff;
+font-size:18px;
+}
+.firstItem
+{
+background: url('../images/firstItem.png') no-repeat;
+width:14px;
+}
+.lastItem
+{
+background: url('../images/lastItem.png') no-repeat;
+width:21px;
+}
+.separator
+{
+background: url('../images/separator.jpg') no-repeat;
+width:1px;
+}
+
+.dimmHeader
+{
+position:absolute;
+top:0;
+}
+
+
+.dimmCaption
+{
+background: url('../images/captionBG.jpg') repeat-x;
+height:80px;
+text-align:center;
+line-height:80px;
+margin-left:100px;
+
+-webkit-box-shadow: 0px 0px 7px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 7px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 7px rgba(50, 50, 50, 0.75);
+margin-top:20px;
+margin-bottom:20px;
+}
+.capt
+{
+color:white;
+font-size:30px;
+font-weight:bold;
+}
+.capt2
+{
+color:white;
+font-size:30px;
+font-weight:bold;
+margin-top:-85px;
+}
+.leftUgol
+{
+background: url('../images/ugolokLeft.png') no-repeat;
+height:101px;
+position:relative;
+left:-23px;
+}
+.rightUgol
+{
+background: url('../images/ugolokRight.png') no-repeat;
+height:101px;
+position:relative;
+right:-1200px;
+margin-top:20px;
+}
+.capt
+{
+margin-top:-100px;
+}
+.footer
+{
+background:#b84725;
+border-top:1px solid #f23e14;
+height:1px;
+}
+.footer2
+{
+padding-top:15px;
+padding-bottom:15px;
+}
+.creditSumm
+{
+color:#EF6F53;
+font-size:22px;
+font-weight:bold;
+}
+.creditPercent
+{
+color:#028f23;
+font-size:22px;
+font-weight:bold;
+}
+.creditPercent2
+{
+color:#028f23;
+font-size:20px;
+}
+.table td
+{
+vertical-align:middle;
+}
+.MainText
+{
+margin-bottom:40px;
+}
