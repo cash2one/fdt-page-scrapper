@@ -42,7 +42,7 @@ import com.fdt.scrapper.task.SnippetTaskWrapper;
  */
 public class SnippetExtractor {
 
-	private static final String SITE_REGEXP_REMOVER = "((http|https|ftp|mailto)://)?([a-z0-9][a-z0-9\\-]*\\.)+(com|net|org|ru|by|info|biz|name|mobi|bz|cn|vn|tw|in|mn|cc|ws|bz|ru|su)";
+	public static final String SITE_REGEXP_REMOVER = "((http|https|ftp|mailto)://)?([a-zA-Z0-9][a-zA-Z0-9\\-]*\\.)+(com|net|org|ru|by|info|biz|name|mobi|bz|cn|vn|tw|in|mn|cc|ws|bz|ru|su)";
 
 	private static final Logger log = Logger.getLogger(SnippetExtractor.class);
 
@@ -506,25 +506,29 @@ public class SnippetExtractor {
 		return  minValue + rnd.nextInt(maxValue - minValue+1);
 	}
 
-	public ArrayList<Snippet> extractSnippetsFromPageContent() throws MalformedURLException, IOException, XPathExpressionException, ParseException{
-		return extractSnippetsFromPageContent(task.getCurrentTask());
+	public ArrayList<Snippet> extractSnippetsFromPageContent(ProxyConnector proxyConnector) throws MalformedURLException, IOException, XPathExpressionException, ParseException{
+		return extractSnippetsFromPageContent(task.getCurrentTask(), proxyConnector);
 	}
 	
 	public ArrayList<Snippet> extractSnippetsFromPageContent(SnippetTask snippetTask) throws MalformedURLException, IOException, XPathExpressionException, ParseException{
-		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
-		
-		log.debug(String.format("Using %s for getting snippets for key '%s'", snippetTask.getHost(), snippetTask.getKeyWords()));
-		
 		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
-		Document page = null;
 		try{
-			page = loadPageContent(snippetTask,proxyConnector);
+			return extractSnippetsFromPageContent(snippetTask, proxyConnector);
 		}finally{
 			if(proxyConnector != null){
 				proxyFactory.releaseProxy(proxyConnector);
 				proxyConnector = null;
 			}
 		}
+	}
+	
+	public ArrayList<Snippet> extractSnippetsFromPageContent(SnippetTask snippetTask, ProxyConnector proxyConnector) throws MalformedURLException, IOException, XPathExpressionException, ParseException{
+	
+		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
+		
+		log.debug(String.format("Using %s for getting snippets for key '%s'", snippetTask.getHost(), snippetTask.getKeyWords()));
+		
+		Document page = loadPageContent(snippetTask,proxyConnector);
 
 		Elements titles = null;
 		Elements descs= null;

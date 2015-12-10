@@ -70,7 +70,7 @@ public class AnchorTitleReplacer {
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
 
 	private String anchorFilePath;
-	private String outputPath;
+	private String[] outputPath;
 	private String inputTitlesPath;
 
 	private int maxLineCount = 7;
@@ -128,7 +128,7 @@ public class AnchorTitleReplacer {
 	public AnchorTitleReplacer() throws IOException {
 		super();
 		this.anchorFilePath = ConfigManager.getInstance().getProperty(ANCHOR_FILE_PATH_LABEL);
-		this.outputPath = ConfigManager.getInstance().getProperty(OUTPUT_PATH_LABEL);
+		this.outputPath = ConfigManager.getInstance().getProperty(OUTPUT_PATH_LABEL).split(";");
 		this.inputTitlesPath = ConfigManager.getInstance().getProperty(INPUT_TITLES_PATH_LABEL);
 		this.patternTitlesFilePath = ConfigManager.getInstance().getProperty(TITLES_FILE_PATH_LABEL);
 		this.repeatCount = Integer.parseInt(ConfigManager.getInstance().getProperty(REPEAT_COUNT_LABEL));
@@ -289,6 +289,7 @@ public class AnchorTitleReplacer {
 		private HashMap<String, Pattern> lines;
 		private ArrayList<String> titles;
 		private AnchorTitleReplacer replacer;
+		private final Random rnd = new Random();
 
 		public ReplacerThread(AnchorTitleReplacer replacer, HashMap<String, Pattern> lines, ArrayList<String> titles) {
 			super();
@@ -305,7 +306,7 @@ public class AnchorTitleReplacer {
 			try{
 				rndLinesProcessed = processLines(lines, titles);
 				//Save file
-				File fileToSave = new File(outputPath, String.valueOf(System.currentTimeMillis())+lines.hashCode());
+				File fileToSave = new File(outputPath[rnd.nextInt(outputPath.length)], String.valueOf(System.currentTimeMillis())+lines.hashCode());
 				appendLinesToFile(rndLinesProcessed, fileToSave, false);
 			}finally{
 				replacer.decThrdCnt();

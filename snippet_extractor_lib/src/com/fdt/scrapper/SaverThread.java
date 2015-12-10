@@ -36,8 +36,8 @@ public class SaverThread extends Thread
 	
 	private String outputFilePath;
 
-	private boolean running = true;
-	public boolean stopped = false;
+	private volatile boolean running = true;
+	public volatile boolean stopped = false;
 	
 	private IResultFormatter resFormatter;
 

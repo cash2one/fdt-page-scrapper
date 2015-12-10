@@ -4,10 +4,6 @@ error_reporting(E_ALL ^ E_NOTICE);
 require_once "utils/pager.php";
 require_once "application/models/functions_decode.php";
 require_once "application/libraries/parser.php";
-require_once "application/plugins/snippets/Google.php";
-require_once "application/plugins/snippets/Ukr.php";
-require_once "application/plugins/snippets/Tut.php";
-require_once "application/plugins/images/ImagesGoogle.php"; 
 require_once "utils/title_generator.php";
 require_once "utils/ya_news_extractor.php";
 require_once "utils/config.php";
@@ -16,13 +12,8 @@ require_once "utils/proxy_config.php";
 $page_title="";
 $page_meta_keywords="";
 $page_meta_description="";
-$is_cached = false;
 
 $function = new Functions;
-$snippet_extractor = new Ukr;
-#$snippet_extractor = new Google;
-#$snippet_extractor = new Tut;
-$google_image = new ImagesGoogle;
 $title_generator = new TitleGenerator;
 
 function rusdate($d, $format = 'j %MONTH% Y', $offset = 0)
@@ -77,13 +68,12 @@ function encodestring($str)
 function getKeyInfo($con,$page_key)
 {
 	$result_array = array();
-	$query_case_list = "SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE key_value_latin = ?";
+	$query_case_list = "SELECT key_value, key_value_latin, unix_timestamp(post_dt) posted_time FROM pages p, door_keys k WHERE k.id = p.key_id AND key_value_latin = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
-	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "s", $page_key)) {
 		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
@@ -101,8 +91,8 @@ function getKeyInfo($con,$page_key)
 	
 	if(mysqli_stmt_fetch($stmt)) {
 		$result_array = array(	"key_value"=>$key_value,
-						"key_value_latin"=>$key_value_latin,
-						"posted_time"=>$posted_time
+        						"key_value_latin"=>$key_value_latin,
+        						"posted_time"=>$posted_time
 					);	
 	}else{
 		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -117,7 +107,7 @@ function getKeyInfo($con,$page_key)
 function getPageInfo($con,$page_url)
 {
 	$result_array = array();
-	$query_case_list = "SELECT cp.cached_page_id, cp.cached_page_title, cp.cached_page_meta_keywords, cp.cached_page_meta_description, cp.cached_time FROM `cached_page` cp WHERE 1 AND cp.cached_page_url = ?";
+	$query_case_list = "SELECT p.id, p.title, p.meta_keywords, p.meta_description, p.post_dt FROM pages p, door_keys k WHERE k.id = p.key_id AND k.key_value_latin = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
@@ -135,21 +125,21 @@ function getPageInfo($con,$page_url)
 
 	/* instead of bind_result: */
 	#echo "get result...";
-	if(!mysqli_stmt_bind_result($stmt, $cached_page_id, $cached_page_title, $cached_page_meta_keywords, $cached_page_meta_description, $cached_time)){
+	if(!mysqli_stmt_bind_result($stmt, $id, $title, $meta_keywords, $meta_description, $post_dt)){
 		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	if(mysqli_stmt_fetch($stmt)) {
 		$result_array = array(	
-						"cached_page_id"=>$cached_page_id,
-						"cached_page_title"=>$cached_page_title,
-						"cached_page_meta_keywords"=>$cached_page_meta_keywords,
-						"cached_page_meta_description"=>$cached_page_meta_description, 
-						"cached_time"=>$cached_time
+						"id"=>$id,
+						"title"=>$title,
+						"meta_keywords"=>$meta_keywords,
+						"meta_description"=>$meta_description, 
+						"post_dt"=>$post_dt
 					);	
 	}else{
 		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-		#print_r(error_get_last());
+		print_r(error_get_last());
 	}
 		
 	mysqli_stmt_close($stmt);
@@ -157,69 +147,12 @@ function getPageInfo($con,$page_url)
 	return $result_array;
 }
 
-function savePageInfo($conn,$page_url, $title, $keywords, $description)
-{
-	#echo "Saving page info..<br/>";
-	$query_case_list = "INSERT INTO cached_page (cached_page_url, cached_page_title, cached_page_meta_keywords, cached_page_meta_description, cached_time) VALUES (?,?,?,?,now())";
-	if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
-		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-		#echo "End prepare field.";
-	}
-	//set values
-	#echo "set value...";
-	if (!mysqli_stmt_bind_param($stmt, "ssss", $page_url,$title,$keywords,$description)) {
-		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-		#print_r(error_get_last());
-	}
-	
-	#echo "execute...";
-	if (!mysqli_stmt_execute($stmt)){
-		#echo "Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-		#print_r(error_get_last());
-	}
+function fillSnippetsContent($template, $key_value, $con, $page_url){
 
-	$conn->commit();
-	
-	mysqli_stmt_close($stmt);
-}
-
-function fillSnippetsContent($template, $key_value, $conn, $page_url){
-
-	global $function, $google_image, $snippet_extractor;
 	$snippets_array = array();
-	$snippets_array = getPageSnippets($conn,$page_url);
+	$snippets_array = getPageSnippets($con,$page_url);
 	
-	if(count($snippets_array) == 0){
-		#echo "Saving snippets.";
-		$rand_index_array = array();
-		$index = 0;
-		while(count($rand_index_array) < 3){
-			$rand_value = rand(0,8);
-			if(!in_array($rand_value,$rand_index_array)){
-				$rand_index_array[$index] = $rand_value;
-				$index++;
-			}
-		}
-		
-		$snippet_image_array = $google_image->Start($key_value,count($rand_index_array),$function);
-		$snippet_array = array();
-		while(!$snippet_array){
-			$snippet_array = $snippet_extractor->Start($key_value,'ru',count($rand_index_array),$function);
-		}
-		
-		for($i=0; $i < count($rand_index_array); $i++){
-			$snippets_array[$rand_index_array[$i]]['title'] = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[$i]['title']);
-			$snippets_array[$rand_index_array[$i]]['description'] = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[$i]['description']);
-			if($snippet_image_array && $snippet_image_array[$i]){
-				$snippets_array[$rand_index_array[$i]]['small'] = $snippet_image_array[$i]['small'];
-				$snippets_array[$rand_index_array[$i]]['large'] = $snippet_image_array[$i]['large'];
-			}
-		}
-		
-		savePageSnippets($conn, $page_url, $snippets_array);
-	}
-	
-	$SNIPPET_BLOCK_1 = "<div class='wrap border-bot-1'><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt=''><p class='text-1 top-2 p3'><h2>[SNIPPET_TITLE_[INDEX]]</h2></p><p>[SNIPPET_CONTENT_[INDEX]]</p><br/></div>";
+	$SNIPPET_BLOCK_1 = "<div><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt=''><p class='text-1 top-2 p3'><h2>[SNIPPET_TITLE_[INDEX]]</h2></p><p>[SNIPPET_CONTENT_[INDEX]]</p><br/></div>";
 	$start_block_index = 1;
 	for($i=1; $i <=3; $i++){
 		if(isset($snippets_array[$i-1])){
@@ -228,7 +161,7 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 		}
 	}
 	
-	$SNIPPET_BLOCK_2 = "<div class='wrap'><div class='number'>[NUMBER]</div><p class='extra-wrap border-bot-1'><span class='clr-1'><h2>[SNIPPET_TITLE_[INDEX]]</h2></span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
+	$SNIPPET_BLOCK_2 = "<div><div class='number'>[NUMBER]</div><p class='extra-wrap border-bot-1'><span class='clr-1'><h2>[SNIPPET_TITLE_[INDEX]]</h2></span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
 	$start_block_index = 1;
 	for($i=4; $i <=6; $i++){
 		if(isset($snippets_array[$i-1])){
@@ -237,7 +170,7 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 		}
 	}
 	
-	$SNIPPET_BLOCK_3 = "<div class='wrap border-bot-1'><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt='' class='img-indent'><p class='extra-wrap'><span class='clr-1'><h2>[SNIPPET_TITLE_[INDEX]]</h2></span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
+	$SNIPPET_BLOCK_3 = "<div><img src='[SNIPPET_IMG_SMALL_[INDEX]]' alt='' class='img-indent'><p class='extra-wrap'><span class='clr-1'><h2>[SNIPPET_TITLE_[INDEX]]</h2></span><br>[SNIPPET_CONTENT_[INDEX]]</p></div>";
 	$start_block_index = 1;
 	for($i=7; $i <=9; $i++){
 		if(isset($snippets_array[$i-1])){
@@ -255,10 +188,20 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 	
 	for($i=0; $i < 9; $i++){
 		if(isset($snippets_array[$i])){
-			$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", $snippets_array[$i]["title"], $template);
-			$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", $snippets_array[$i]["description"], $template);
-			$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", isset($snippets_array[$i]["large"])?$snippets_array[$i]["large"]:"", $template);
-			$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", isset($snippets_array[$i]["small"])?$snippets_array[$i]["small"]:"", $template);
+			$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", $snippets_array[$i][0]["title"], $template);
+			$description = "";
+			for($j=0; $j < 3; $j++){
+			    if(isset($snippets_array[$i][$j])){
+			        if(!isset($description)){
+			            $description =$snippets_array[$i][$j]["description"];
+			        }else{
+			             $description = $description."<p class=\"extra-wrap border-bot-1\">".$snippets_array[$i][$j]["description"];
+			        }
+			    }
+			}
+			$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", $description, $template);
+			$template=preg_replace("/\[SNIPPET_IMG_LARGE_".($i+1)."\]/", isset($snippets_array[$i][0]["large"])?$snippets_array[$i][0]["large"]:"", $template);
+			$template=preg_replace("/\[SNIPPET_IMG_SMALL_".($i+1)."\]/", isset($snippets_array[$i][0]["small"])?$snippets_array[$i][0]["small"]:"", $template);
 		}else{
 			$template=preg_replace("/\[SNIPPET_TITLE_".($i+1)."\]/", "", $template);
 			$template=preg_replace("/\[SNIPPET_CONTENT_".($i+1)."\]/", "", $template);
@@ -272,47 +215,18 @@ function fillSnippetsContent($template, $key_value, $conn, $page_url){
 	return $template;
 }
 
-function savePageSnippets($conn, $page_url, $snippets_array)
-{	
-	#echo "Saving snippets procdedure..";
-	#var_dump($snippets_array);
-	for($i = 0; $i < 9; $i++){
-		if(isset($snippets_array[$i])){
-			
-			$query_case_list = "INSERT INTO snippets (cached_page_id, snippets_index, snippets_title, snippets_content, snippets_image_large, snippets_image_small, created_time) SELECT cp.cached_page_id,?,?,?,?,?,now() FROM cached_page cp WHERE cp.cached_page_url = ?";
-			if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
-				#echo "savePageSnippets: Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-				#print_r(error_get_last());
-			}
-			//set values
-			#echo "set value...";
-			if (!mysqli_stmt_bind_param($stmt, "dsssss", $i, $snippets_array[$i]["title"],$snippets_array[$i]["description"],$snippets_array[$i]["large"],$snippets_array[$i]["small"], $page_url)) {
-				#echo "savePageSnippets: Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-				#print_r(error_get_last());
-			}
-			
-			#echo "execute...";
-			if (!mysqli_stmt_execute($stmt)){
-				#echo "savePageSnippets: Saving failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-				#print_r(error_get_last());
-			}
-
-			#echo "commit...";
-			$conn->commit();
-			
-			mysqli_stmt_close($stmt);
-		}
-	}
-}
-
-function getPageSnippets($conn,$page_url)
+function getPageSnippets($con,$page_url)
 {
+    global $stmt;
 	$snippets_array = array();
-	$query_case_list = "select snp.snippets_index, snp.cached_page_id, snp.snippets_title, snp.snippets_content, snp.snippets_image_large, snp.snippets_image_small from snippets snp where snp.cached_page_id IN (select cp.cached_page_id from cached_page cp where cp.cached_page_url = ?)";
-	if (!($stmt = mysqli_prepare($conn,$query_case_list))) {
+	$query_case_list = "SELECT snp.title, snp.description, pc.snippets_index, snp.image_large, snp.image_small ".
+	                   " FROM page_content pc LEFT JOIN snippets snp ON snp.id = pc.snippet_id, pages p, door_keys k ".
+	                   " WHERE k.id = p.key_id AND pc.page_id = p.id AND k.key_value_latin = ? ORDER BY pc.snippets_index ASC, pc.main_flg DESC";
+	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		#print_r(error_get_last());
 	}
+
 	//set values
 	#echo "set value...";
 	if (!mysqli_stmt_bind_param($stmt, "s", $page_url)) {
@@ -328,21 +242,28 @@ function getPageSnippets($conn,$page_url)
 
 	/* instead of bind_result: */
 	#echo "get result...";
-	if(!mysqli_stmt_bind_result($stmt, $snippets_index, $cached_page_id, $snippets_title, $snippets_content, $snippets_image_large, $snippets_image_small)){
+	if(!mysqli_stmt_bind_result($stmt, $title, $description, $snippets_index, $image_large, $image_small)){
 		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		#print_r(error_get_last());
 	}
 	
+	$lastIdx = 0;
+	$shift=0;
 	while(mysqli_stmt_fetch($stmt)) {
-		$snippets_array[$snippets_index] = array(	
-						"cached_page_id"=>$cached_page_id,
-						"title"=>$snippets_title,
-						"description"=>$snippets_content, 
-						"large"=>$snippets_image_large,
-						"small"=>$snippets_image_small
+	    if($snippets_index != $lastIdx){
+	        $lastIdx = $snippets_index;
+	        $shift = 0;
+	    }else{
+	        $shift = $shift + 1;
+	    }
+		$snippets_array[$snippets_index-1][$shift] = array(	
+						"title"=>$title,
+						"description"=>$description,
+						"image_large"=>$image_large,
+						"image_small"=>$image_small
 					);	
 	}
-		
+	
 	mysqli_stmt_close($stmt);
 	
 	return $snippets_array;
@@ -357,12 +278,16 @@ function getRegionPageRandomTitle($region_id){
 //заводим массивы ключей и городов
 $KEY_PER_PAGE=25;
 $key_page_number=1;
-$current_page="MAIN_PAGE";
+$current_page_type="MAIN_PAGE";
 
 $url = $_SERVER["REQUEST_URI"];
 #echo "REQUEST_URI: ".$url.'<br>';
 
 $page_key = "";
+
+#$url = "/sberbank-onlayn-zayavlenie-na-kredit/";
+#$site_main_domain = "vtopax.ru";
+
 if(strcmp("/",$url) != 0){
 	$request_uri = explode('/', $url);
 	if(isset($request_uri[1])){
@@ -371,31 +296,30 @@ if(strcmp("/",$url) != 0){
 }
 
 #echo "page_key: ".$page_key.'<br>';
-$site_main_domain = $_SERVER["HTTP_HOST"];;
+$site_main_domain = $_SERVER["HTTP_HOST"];
 
 //обрабатываем запрос генерации урлов
-$url_for_cache = "";
+$url_for_request = "";
 $key_page_number = "";
 
-if( $page_key && !is_numeric($page_key)){
+if( $page_key && !is_numeric($page_key))
+{
 	$template = file_get_contents("tmpl_key.html");
-	$current_page = "KEY_PAGE";
-	$url_for_cache = $page_key;
-} else{
+	$current_page_type = "KEY_PAGE";
+	$url_for_request = $page_key;
+} 
+else{
 	//check for main_page paging
 	if(is_numeric($page_key)){
 		$key_page_number = $page_key;
-		if($page_key != 1){
-			$url_for_cache = $page_key;
-		}else{
-			$url_for_cache = "/";
-		}
 	}
+	
 	if(!$key_page_number){
 		$key_page_number = 1;
-		$url_for_cache = "/";
 	}
-	$current_page = "MAIN_PAGE_PAGING";
+	
+	$url_for_request = "/";
+	$current_page_type = "MAIN_PAGE_PAGING";
 	#echo "key_page_number: ".$key_page_number."<br/>";
 	$template = file_get_contents("tmpl_main_new.html");
 }
@@ -409,47 +333,46 @@ $template=preg_replace("/\[HEADER_KEYS\]/",HEADER_KEYS, $template);
 
 //fetch regions
 $con=mysqli_connect(DB_HOST,DB_USER_NAME,DB_USER_PWD,DB_NAME);
+#$con=mysqli_connect("192.240.96.222:3306","vtopax","lol200","vtopax");
+
 mysqli_query($con,"set character_set_client='utf8'");
 mysqli_query($con,"set character_set_results='utf8'");
 mysqli_query($con,"set collation_connection='utf8_general_ci'");
 
 //get page info
-$page_info = getPageInfo($con,$url_for_cache);
+$page_info = getPageInfo($con,$url_for_request);
 #var_dump($page_info);
 
 if($page_info){
 	$is_cached = true;
-	$page_title = $page_info['cached_page_title'];
-	$page_meta_keywords = $page_info['cached_page_meta_keywords'];
-	$page_meta_description = $page_info['cached_page_meta_description'];
+	$page_title = $page_info['title'];
+	$page_meta_keywords = $page_info['meta_keywords'];
+	$page_meta_description = $page_info['meta_description'];
 	#echo "Page $url is CACHED."."<br/>";
-}else{
-	#echo "Page $url is NOT CACHED."."<br/>";
-	$is_cached = false;
 }
+
+#TODO Get random title
 $title_template = "Кредиты в России, Банки России, Области, Регионы и Округи";
 
-if($current_page == "MAIN_PAGE_PAGING"){
+if($current_page_type == "MAIN_PAGE_PAGING"){
 	#echo "Main page processing...";
-	if(!$is_cached){
-		//$page_title = $title_generator->getRandomTitle();
-		$page_title = MAIN_TITLE;
-	}
 
-	$result = mysqli_query($con,"SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE posted_time < now() ORDER BY posted_time DESC LIMIT 50");
+	#$result = mysqli_query($con,"SELECT k.key_value, k.key_value_latin, unix_timestamp(p.post_dt) posted_time FROM pages p, door_keys k WHERE k.id = p.key_id AND p.post_dt < now() ORDER BY post_dt DESC LIMIT 50");
 	
 	//getting city news count
-	$query_count = "SELECT count(*) row_count FROM page WHERE posted_time < now()";
+	$query_count = " SELECT count(t.key_value) row_count ".
+	               " FROM (SELECT DISTINCT k.key_value FROM door_keys k, pages p LEFT JOIN page_content pc ON p.id=pc.page_id ".
+	               " WHERE k.id = p.key_id AND p.post_dt < now() AND pc.page_id IS NOT NULL) as t";
 	$result = mysqli_query($con,$query_count);
 	
 	$row = mysqli_fetch_assoc($result);
-	$page_key_count = $row['row_count'];
-	#echo "page_key_count: " . $page_key_count . "<br>";
+	$key_count = $row['row_count'];
+	#echo "page_key_count: " . $key_count . "<br>";
 	
-	if($page_key_count>0){
+	if($key_count>0){
 		//вычисляем последнюю страницы
-		$max_page_number = floor($page_key_count/$KEY_PER_PAGE);
-		if($page_key_count%$KEY_PER_PAGE != 0){
+		$max_page_number = floor($key_count/$KEY_PER_PAGE);
+		if($key_count%$KEY_PER_PAGE != 0){
 			$max_page_number = $max_page_number + 1;
 		}
 		
@@ -465,7 +388,9 @@ if($current_page == "MAIN_PAGE_PAGING"){
 
 		#echo "Page processing...";
 		//prepare statement
-		$query_key_page_list = "SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE posted_time < now() ORDER BY posted_time DESC LIMIT ".$start_position.",".$KEY_PER_PAGE;
+		$query_key_page_list =    "SELECT DISTINCT k.key_value, k.key_value_latin, unix_timestamp(p.post_dt) posted_time ".
+		                          " FROM door_keys k, pages p LEFT JOIN page_content pc ON p.id=pc.page_id ".
+		                          " WHERE k.id = p.key_id AND p.post_dt < now() AND pc.page_id IS NOT NULL ORDER BY post_dt DESC LIMIT ".$start_position.",".$KEY_PER_PAGE;
 		#echo "query_city_list: ".$query_key_page_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_key_page_list))) {
 			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
@@ -518,28 +443,16 @@ if($current_page == "MAIN_PAGE_PAGING"){
 
 $key_info = array();
 
-if($current_page == "KEY_PAGE"){
+if($current_page_type == "KEY_PAGE"){
 	//get city page info
 	#echo "page_key: ".$page_key."<br/>";
 	
 	$key_info = getKeyInfo($con,$page_key);
-
-	/*
-	$result_array = array(	"key_value"=>$key_value,
-						"key_value_latin"=>$key_value_latin,
-						"posted_time"=>$posted_time
-					);	
-	*/
-						
-	#var_dump($key_info);
 	
 	//if page exist
 	if($key_info){
-		if(!$is_cached){
-			$page_title = $key_info['key_value']." | ".MAIN_TITLE;
-		}
 		//fill [BREAD_CRUMBS]
-		$bread_crumbs = "<a href =\"http://".$site_main_domain."\">Главная</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['key_value']."</a>";
+		$bread_crumbs = "<a href =\"http://".$site_main_domain."\">Главная</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['key_value']." ".rusdate($key_info['posted_time'],'j %MONTH% Y')."</a>";
 	}else{
 		#PAGE NOT FOUND REDIRECT
 		header('HTTP/1.1 404 Not Found');
@@ -550,22 +463,7 @@ if($current_page == "KEY_PAGE"){
 	}
 }
 
-#echo "Snippet extraction....";
-if(!$is_cached){
-	$page_meta_description = false;
-	while(!$page_meta_description){
-		#echo "Page_title: ".$page_title."<br/>";
-		$snippet_array = $snippet_extractor->Start(preg_replace('/\|/',' ',$page_title),'ru',1,$function);
-		#var_dump($snippet_array);
-		if(isset($snippet_array[0])){
-			$page_meta_description = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[0]["description"]);
-		}
-	}
-	$page_title = $page_title." | ".$site_main_domain;
-	savePageInfo($con,$url_for_cache, $page_title, $page_title, $page_meta_description);
-}
-
-if($current_page == "KEY_PAGE"){
+if($current_page_type == "KEY_PAGE"){
 	$template = fillSnippetsContent($template,$key_info['key_value'],$con, $page_key);
 
 	//delete all unnecessary templates anchors
@@ -586,21 +484,22 @@ $template=preg_replace("/\[MAIN_TITLE\]/", MAIN_TITLE, $template);
 $template=preg_replace("/\[DESCRIPTION\]/", $page_meta_description, $template);
 
 //print last news
-if($current_page == "MAIN_PAGE_PAGING"){
+if($current_page_type == "MAIN_PAGE_PAGING"){
 	$news_content_folder = './news_content/';
 	$news_extractor = new YaNewsExtractor;
 	$news_file_name = $news_extractor->isNewsUpdateNeed($news_content_folder);
+	
 	#echo "news_file_name: ".$news_file_name;
 	if($news_file_name == ""){
 		$extractd_news = $news_extractor->getYandexNewsContent($function);
 		$news_extractor->saveNewsFile($news_content_folder, $extractd_news);
 	}else{
-		$extractd_news = file_get_contents($news_file_name);
+		$extractd_news = file_get_contents($news_file_name); 
 	}
 	$template=preg_replace("/\[LAST_NEWS\]/", $extractd_news, $template);
 }
 
-unset($page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator, $extractd_news, $news_extractor, $url_for_cache);
+unset($page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator, $extractd_news, $news_extractor, $url_for_request);
 mysqli_close($con);
 
 echo $template;	

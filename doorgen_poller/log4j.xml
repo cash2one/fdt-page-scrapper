@@ -3,7 +3,7 @@
 	<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 	
 	<appender name="logfile" class="org.apache.log4j.RollingFileAppender"> 
-		<param name="file" value="multi_snippet_generator.log"/>
+		<param name="file" value="door_gen_poller.log"/>
 		<param name="MaxFileSize" value="50MB"/>
 		<param name="MaxBackupIndex" value="10"/>
 		<layout class="org.apache.log4j.PatternLayout"> 

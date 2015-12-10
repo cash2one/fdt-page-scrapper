@@ -29,7 +29,7 @@
 	</target>
 
 	<target depends="compile" name="build" description="Jar creating">
-		<jar destfile="../java/multi_snippet_generator.jar" basedir="classes" whenmanifestonly="fail"
+		<jar destfile="../java/key_site_cnt_getter.jar" basedir="classes" whenmanifestonly="fail"
 			defaultexcludes="true" includes="**/*.class, **/*.xml, **/*.xsl, **/*.class">
 			<manifest>
 				<attribute name="Class-Path" value="." />

@@ -198,7 +198,9 @@ public class ImgurThread extends Thread{
 			FileUtils.moveFile(task.getFile(), destFile);
 
 			task.getFile().delete();
-			task.getImageFile().delete();
+			if(task.getImageFile() != null){
+				task.getImageFile().delete();
+			}
 			return true;
 		}
 		catch (Exception e) {
@@ -301,6 +303,17 @@ public class ImgurThread extends Thread{
 			URL url = new URL(strUrl);
 			conn = (HttpURLConnection)url.openConnection(proxy);
 			conn.setConnectTimeout(30000);
+			
+			conn.setRequestProperty("Host", strUrl);
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0");
+			conn.setRequestProperty("Accept", "*/*");
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+			conn.setRequestProperty("X-Requested-With","XMLHttpRequest");
+			conn.setRequestProperty("Referer", "http://imgur.com/");
+			conn.setRequestProperty("Cookie","SESSIONDATA=%7B%22sessionCount%22%3A1%2C%22sessionTime%22%3A" + System.currentTimeMillis() + "%7D; IMGURSESSION=" + getCookie("IMGURSESSION") + "; _nc=1");
+			//conn.setRequestProperty("Cookie","SESSIONDATA=%7B%22sessionCount%22%3A1%2C%22sessionTime%22%3A" + System.currentTimeMillis() + "%7D; IMGURUIDJAFO=01bdb1a38191af6a7aad84b28b4b2f900150d20550361da67e83d27bc3920f00; IMGURSESSION=o9e9j35ljq3koojj6qh1427ai3; _nc=1");
+			
 			conn.setDoInput(true);
 			conn.setDoOutput(true);
 
@@ -455,6 +468,7 @@ public class ImgurThread extends Thread{
 		params.append("gallery_submit=false&");
 		params.append("gallery_type=&");
 		params.append("sid=").append(sid).append("&");
+		params.append("location=").append("inside").append("&");
 		params.append("new_album_id=&");
 		params.append("catify=0&");
 		params.append("url=").append(imageUrl).append("&");
@@ -589,6 +603,7 @@ public class ImgurThread extends Thread{
 		conn.disconnect();
 
 		JSONObject jsonObj = new JSONObject(responseStr.toString());
+		log.debug(responseStr.toString());
 		String imageUrl = "http://i.imgur.com/" + (String)jsonObj.getJSONObject("data").getString("hash") + "." + FilenameUtils.getExtension(uploadFile.getName());
 
 		//link uploaded video to user

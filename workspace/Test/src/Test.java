@@ -1,22 +1,15 @@
 
 import java.awt.image.BufferedImage;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.TimeZone;
 import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-
-import javax.imageio.ImageIO;
-
-import com.xuggle.mediatool.IMediaWriter;
-import com.xuggle.mediatool.ToolFactory;
-import com.xuggle.xuggler.ICodec;
 
 public class Test {
 
@@ -24,9 +17,12 @@ public class Test {
 	private static SimpleDateFormat sdf = new SimpleDateFormat(TIME_STAMP_FORMAT);
 
     private static final String outputFilename = "myVideo.mov";
+    
+    private volatile ArrayList<String> str = new  ArrayList<String>();
+    static int i;
 
     public static void main(String[] args) throws IOException {
-
+    	
         /*final IMediaWriter writer = ToolFactory.makeWriter(outputFilename);
 
         writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, 1080, 720);
@@ -54,7 +50,7 @@ public class Test {
     	/*String test = "Seon in Korea Taego Bou Jinul Seongcheol Zen in the USA D. T. Suzuki Hakuun Yasutani Taizan Maezumi Shunryū Suzuki Seungsahn Category: Zen Buddhists …";
     	System.out.println(test.replaceAll("(\\.){2,}", ".").replaceAll("…", ".").trim());*/
     	
-    	ExecutorService extService = Executors.newFixedThreadPool(5);
+    	/*ExecutorService extService = Executors.newFixedThreadPool(5);
     	Future runFut = extService.submit(new RunnableTest());
     	Future<String> callFut = extService.submit(new CallableTest());
     	
@@ -94,8 +90,75 @@ public class Test {
 			e.printStackTrace();
 		}
     	
-
+    	long a = 1;
+    	long b = 3;
+    	long fib = 1;
+    	System.out.println(fib);
+    	for(int i = 0; i < 100; i++){
+    		fib = a + b;
+    		a = b;
+    		b = fib;
+    		System.out.println(fib);
+    	}
+    	
+    	System.out.println(i);
+    	int[][][] testArray = new int[2][][];
+    	String $ = "";
+    	$ += "";
+    	
+    	System.out.println("------------------");
+    	for(int i = 0; i < 3; i++){
+			for(int j = 1; j <= 3; j++){
+				System.out.println(i*3+j);
+			}
+		}
+    	
+    	System.out.println(getFirstSmblUpper("fKKKKKKKSFD"));
+    	System.out.println(cleanString("dfa af_*$_*@#_%#@ :!\"№;%:?*()_LK:AFы а фыва         фыва фыва фы афы а 75% 15$"));*/
+    	
+    	/*FileWriter fw = null;
+    	BufferedWriter bw = null;
+    	PrintWriter pw = null;
+    	
+    	String reportFileName = "test_rep.name";
+		try {
+			File tempFile = File.createTempFile(reportFileName, ".CSV", new File("./"));
+			//tempFile.deleteOnExit();
+			fw = new FileWriter(tempFile);
+			bw = new BufferedWriter(fw);
+			pw = new PrintWriter(bw);
+			byte[] bom = new byte[] { (byte)0xEF, (byte)0xBB, (byte)0xBF };
+			pw.print(new String(bom));
+			pw.print("TEST BIG STRINGSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
+			pw.close();
+			bw.close();
+			fw.close();
+		} catch (Exception e) {
+			//
+		}*/
+		
+		for(int i = 0; i < 60; i++){
+			int val1 = ((i - (i % 5)) / 5);
+			int val2 = i/5;
+			if(val1 != val2){
+				System.out.println("Error for i: " + i);
+			}
+			System.out.println(String.format("%d: %d - %d", i, val1, val2));
+		}
     }
+    
+    private static String getFirstSmblUpper(String input){
+		StringBuffer output = new StringBuffer(input.substring(1).toLowerCase());
+		output.insert(0, input.substring(0, 1).toUpperCase());
+		
+		return output.toString();
+	}
+    
+    private static String cleanString(String input){
+		StringBuffer output = new StringBuffer(input);
+		
+		return output.toString().replaceAll("[^0-9a-zA-Zа-яА-Я\\s\\%\\$]+", "").replaceAll("\\s+", " ");
+	}
     
     public static void main2(String[] args) throws IOException {
     	sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
@@ -143,11 +206,22 @@ public class Test {
 		}
     }
     
+    public void run() {
+		// TODO Auto-generated method stub
+    	throw new NullPointerException();
+	}
+    
     private static class RunnableTest implements Runnable{
 
 		public void run() {
-			// TODO Auto-generated method stub
+			
+			//throw new NullPointerException();
 		}
+    }
+    
+    private interface ITest{
+    	public abstract int calculate2();
+
     }
 }
 

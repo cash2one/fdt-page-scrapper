@@ -1,0 +1,20 @@
+http://book5download.com/readbook.php?asin=B00U2PYFY0.html берем шаблон делаем такой же конкретно этой страницы
+
+
+Backstairs Billy: The Life of William Tallon, the Queen Mother's Most Devoted Servant в данном случае это кейворд
+надо сделать так чтобы 
+было
+к примеру http://наш домен.com/readbook.php?asin=Backstairs Billy: The Life of William Tallon, the Queen Mother's Most Devoted Servant
+/readbook.php?asin= это просто пример можно вроде сделать и как ЧПУ тогда будет просто 
+http://наш домен.com/Backstairs Billy: The Life of William Tallon, the Queen Mother's Most Devoted Servant
+вместо Backstairs Billy: The Life of William Tallon, the Queen Mother's Most Devoted Servant вводим любое слово ( в данном случае кейворд )
+и он ведет на страницу шаба где в  исходном коде и подставляется в <title>сюда<title/> и там еще в <h2>сюда</h2> как впримере
+
+
+картинку пускай Саша даст он хотел там свои творческие способности подключить
+Ссылку на слив или я сам поставлю или пускай также Саша выдаст
+
+В низу DMCA Policy | Contact тоже как у него делаем страницы информация везде тажа что и в данном примере.
+http://book5download.com/Contact-us.html единственное на странице контакта форма в коде используется от сюда http://www.foxyform.com/
+Мне Саша намекнул что он эти письма читать собирается ) так что спроси у него конкретное мыло которое подключать к скрипту.
+Ну и возьмите любой домен на вдске или сервере, чтобы проверить работоспособность скрипта.

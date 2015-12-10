@@ -5,7 +5,6 @@
 package com.fdt.multisnipgen.scrapper;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 
@@ -29,9 +28,10 @@ public class MultipleSnippetGeneratorThread implements Callable<String> {
 	private TaskFactory taskFactory = null;
 	private ArrayList<String> linkList = null;
 	private File linkFile = null;
+	private File pathToLinkFolder = null;
 	private boolean isInsLnkFrmGenFile = false;
 
-	public MultipleSnippetGeneratorThread(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory,ArrayList<String> linkList, boolean isInsLnkFrmGenFile, File linkFile) {
+	public MultipleSnippetGeneratorThread(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory,ArrayList<String> linkList, boolean isInsLnkFrmGenFile, File linkFile, File pathToLinkFolder) {
 		super();
 
 		this.snippetTask = snippetTask;
@@ -40,51 +40,63 @@ public class MultipleSnippetGeneratorThread implements Callable<String> {
 		this.linkList = linkList;
 		this.isInsLnkFrmGenFile = isInsLnkFrmGenFile;
 		this.linkFile = linkFile;
-
-		//move file to processing dir
-		if(isInsLnkFrmGenFile){
-			try {
-				FileUtils.moveFile(linkFile, new File("error/",linkFile.getName()));
-				this.linkFile = new File("error/",linkFile.getName());
-			} catch (IOException e) {
-				log.error(String.format("Error during moving file %s", linkFile.getName()),e);
-			}
-		}
+		this.pathToLinkFolder = pathToLinkFolder;
+		log.debug(toString());
 	}
 
 	@Override
 	public String call() throws Exception
 	{
-		taskFactory.incRunThreadsCount();
-		boolean errorExist = false;
-		String generatedContent = null;
 		try{
+			taskFactory.incRunThreadsCount();
+			boolean errorExist = false;
+			String generatedContent = null;
+
 			try {
 				SnippetExtractor snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList);
 				snippetExtractor.setInsLnkFrmGenFile(isInsLnkFrmGenFile);
 				generatedContent = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getResult();
 			}
-			catch (Exception e) {
+			catch (Throwable e) {
 				errorExist = true;
-				taskFactory.reprocessingTask(snippetTask);
+				//move file to input folder
 				log.error("Error occured during processing key: " + snippetTask.getCurrentTask().getKeyWords());
 			}
+			
 			if(!errorExist){
 				//check task for reprocessing
 				if(generatedContent != null && !"".equals(generatedContent.trim())){
 					taskFactory.putTaskInSuccessQueue(snippetTask);
 
+					if(isInsLnkFrmGenFile && linkFile != null && linkFile.exists()){
+						linkFile.delete();
+					}
 				}else{
+					//move file to input folder
+					if(isInsLnkFrmGenFile && linkFile != null && linkFile.exists()){
+						FileUtils.moveFile(linkFile, new File(pathToLinkFolder,linkFile.getName()));
+					}
 					taskFactory.reprocessingTask(snippetTask);
 				}
+			}else{
 				if(isInsLnkFrmGenFile && linkFile != null && linkFile.exists()){
-					linkFile.delete();
+					FileUtils.moveFile(linkFile, new File(pathToLinkFolder,linkFile.getName()));
 				}
+				taskFactory.reprocessingTask(snippetTask);
 			}
-		} finally{
+
+			return generatedContent;
+		}
+		finally{
 			taskFactory.decRunThreadsCount(snippetTask.getCurrentTask());
 		}
-		
-		return generatedContent;
+	}
+
+	@Override
+	public String toString() {
+		return "MultipleSnippetGeneratorThread [snippetTask=" + snippetTask
+				+ ", linkFile=" + linkFile + ", pathToLinkFolder="
+				+ pathToLinkFolder + ", isInsLnkFrmGenFile="
+				+ isInsLnkFrmGenFile + "]";
 	}
 }

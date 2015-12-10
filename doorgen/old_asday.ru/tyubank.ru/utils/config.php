@@ -4,13 +4,13 @@
 
 	#Параметр md5 пароля для доступа к панели управления.
 	#password
-	define("DB_USER_NAME", "root");
+	define("DB_USER_NAME", "vtopax");
 
 	#Параметр корня сайта.
-	define("DB_USER_PWD", "pqONJtKD");
+	define("DB_USER_PWD", "lol200");
 
 	#Параметр названия сайта.
-	define("DB_NAME", "dg_2_tyubank");
+	define("DB_NAME", "vtopax");
 	
 	#Параметр названия сайта.
 	define("HEADER_KEYS", "");

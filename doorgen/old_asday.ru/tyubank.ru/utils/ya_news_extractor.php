@@ -12,13 +12,14 @@ class YaNewsExtractor
 			if($filename != "." && $filename != ".." && $filename != ".htaccess" && $last_change_date_result_file < filemtime($news_dir.$filename)){
 				$last_change_date_result_file = filemtime($news_dir.$filename);
 				$result_file_name = $news_dir.$filename;
+				#echo $result_file_name;
 			}
 		}
 		closedir($dh);
 		
 		//check last news update
 		#echo "time: ".time()."; last_change_date_result_file: ".$last_change_date_result_file;
-		if( $last_change_date_result_file == 0 || ((time()-$last_change_date_result_file) > 600)){
+		if( $last_change_date_result_file == 0 || ((time()-$last_change_date_result_file) > 600000)){
 			//delete all previous news
 			#echo "Удаление старых новостей";
 			$dh = opendir($news_dir);

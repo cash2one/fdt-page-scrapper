@@ -79,24 +79,25 @@ function getKeyInfo($con,$page_key)
 	$result_array = array();
 	$query_case_list = "SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE key_value_latin = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
+	echo "query..".$query_case_list;
 	//set values
-	#echo "set value...";
+	echo "set value...";
 	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "s", $page_key)) {
-		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
-	#echo "execute...";
+	echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 
 	/* instead of bind_result: */
-	#echo "get result...";
+	echo "get result...";
 	if(!mysqli_stmt_bind_result($stmt, $key_value,$key_value_latin,$posted_time)){
-		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	if(mysqli_stmt_fetch($stmt)) {
@@ -105,8 +106,8 @@ function getKeyInfo($con,$page_key)
 						"posted_time"=>$posted_time
 					);	
 	}else{
-		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-		#print_r(error_get_last());
+		echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		print_r(error_get_last());
 	}
 	
 	mysqli_stmt_close($stmt);
@@ -116,40 +117,42 @@ function getKeyInfo($con,$page_key)
 
 function getPageInfo($con,$page_url)
 {
+	echo "page_url ".$page_url;
 	$result_array = array();
-	$query_case_list = "SELECT cp.cached_page_id, cp.cached_page_title, cp.cached_page_meta_keywords, cp.cached_page_meta_description, cp.cached_time FROM `cached_page` cp WHERE 1 AND cp.cached_page_url = ?";
+	$query_case_list = "SELECT p.id, p.title, p.meta_keywords, p.meta_description, p.post_dt FROM pages p, keys k WHERE p.key_id=k.id AND k.key_value_latin = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
+	echo "query..".$query_case_list;
 	//set values
-	#echo "set value...";
+	echo "set value...";
 	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "s", $page_url)) {
-		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 
 	/* instead of bind_result: */
 	#echo "get result...";
-	if(!mysqli_stmt_bind_result($stmt, $cached_page_id, $cached_page_title, $cached_page_meta_keywords, $cached_page_meta_description, $cached_time)){
-		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	if(!mysqli_stmt_bind_result($stmt, $id, $title, $meta_keywords, $meta_description, $post_dt)){
+		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	if(mysqli_stmt_fetch($stmt)) {
 		$result_array = array(	
-						"cached_page_id"=>$cached_page_id,
-						"cached_page_title"=>$cached_page_title,
-						"cached_page_meta_keywords"=>$cached_page_meta_keywords,
-						"cached_page_meta_description"=>$cached_page_meta_description, 
-						"cached_time"=>$cached_time
+						"id"=>$id,
+						"title"=>$title,
+						"meta_keywords"=>$meta_keywords,
+						"meta_description"=>$meta_description, 
+						"post_dt"=>$post_dt
 					);	
 	}else{
-		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-		#print_r(error_get_last());
+		echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		print_r(error_get_last());
 	}
 		
 	mysqli_stmt_close($stmt);
@@ -360,7 +363,7 @@ $key_page_number=1;
 $current_page="MAIN_PAGE";
 
 $url = $_SERVER["REQUEST_URI"];
-#echo "REQUEST_URI: ".$url.'<br>';
+echo "REQUEST_URI: ".$url.'<br>';
 
 $page_key = "";
 if(strcmp("/",$url) != 0){
@@ -370,7 +373,7 @@ if(strcmp("/",$url) != 0){
 	}
 }
 
-#echo "page_key: ".$page_key.'<br>';
+echo "page_key: ".$page_key.'<br>';
 $site_main_domain = $_SERVER["HTTP_HOST"];;
 
 //обрабатываем запрос генерации урлов
@@ -400,8 +403,8 @@ if( $page_key && !is_numeric($page_key)){
 	$template = file_get_contents("tmpl_main_new.html");
 }
 
-#echo "url_for_cache: ".$url_for_cache."<br/>";
-#echo "current_page: ".$current_page."<br/>";
+echo "url_for_cache: ".$url_for_cache."<br/>";
+echo "current_page: ".$current_page."<br/>";
 
 $template=preg_replace("/\[URL\]/",$site_main_domain, $template);
 $template=preg_replace("/\[URLMAIN\]/",$site_main_domain, $template);
@@ -415,36 +418,36 @@ mysqli_query($con,"set collation_connection='utf8_general_ci'");
 
 //get page info
 $page_info = getPageInfo($con,$url_for_cache);
-#var_dump($page_info);
+var_dump($page_info);
 
 if($page_info){
 	$is_cached = true;
-	$page_title = $page_info['cached_page_title'];
-	$page_meta_keywords = $page_info['cached_page_meta_keywords'];
-	$page_meta_description = $page_info['cached_page_meta_description'];
-	#echo "Page $url is CACHED."."<br/>";
+	$page_title = $page_info['title'];
+	$page_meta_keywords = $page_info['meta_keywords'];
+	$page_meta_description = $page_info['meta_description'];
+	echo "Page $url is CACHED."."<br/>";
 }else{
-	#echo "Page $url is NOT CACHED."."<br/>";
+	echo "Page $url is NOT CACHED."."<br/>";
 	$is_cached = false;
 }
 $title_template = "Кредиты в России, Банки России, Области, Регионы и Округи";
 
 if($current_page == "MAIN_PAGE_PAGING"){
-	#echo "Main page processing...";
+	echo "Main page processing...";
 	if(!$is_cached){
 		//$page_title = $title_generator->getRandomTitle();
 		$page_title = MAIN_TITLE;
 	}
-
-	$result = mysqli_query($con,"SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE posted_time < now() ORDER BY posted_time DESC LIMIT 50");
+	
+	$result = mysqli_query($con,"SELECT k.key_value, k.key_value_latin, unix_timestamp(p.post_dt) posted_time FROM pages p LEFT JOIN keys k ON k.id = p.key_id WHERE p.post_dt < now() ORDER BY p.post_dt DESC LIMIT 50");
 	
 	//getting city news count
-	$query_count = "SELECT count(*) row_count FROM page WHERE posted_time < now()";
+	$query_count = "SELECT count(*) row_count FROM pages WHERE post_dt < now()";
 	$result = mysqli_query($con,$query_count);
 	
 	$row = mysqli_fetch_assoc($result);
 	$page_key_count = $row['row_count'];
-	#echo "page_key_count: " . $page_key_count . "<br>";
+	echo "page_key_count: " . $page_key_count . "<br>";
 	
 	if($page_key_count>0){
 		//вычисляем последнюю страницы
@@ -457,27 +460,27 @@ if($current_page == "MAIN_PAGE_PAGING"){
 			$key_page_number = $max_page_number;
 		}
 		
-		#echo "max_page_number: ".$max_page_number."<br>";
-		#echo "final key_page_number: ".$key_page_number."<br>";
+		echo "max_page_number: ".$max_page_number."<br>";
+		echo "final key_page_number: ".$key_page_number."<br>";
 		
 		$start_position = $KEY_PER_PAGE*($key_page_number-1);
-		#echo "start_position: ".$start_position."<br>";
+		echo "start_position: ".$start_position."<br>";
 
-		#echo "Page processing...";
+		echo "Page processing...";
 		//prepare statement
-		$query_key_page_list = "SELECT key_value, key_value_latin, unix_timestamp(posted_time) posted_time FROM page WHERE posted_time < now() ORDER BY posted_time DESC LIMIT ".$start_position.",".$KEY_PER_PAGE;
-		#echo "query_city_list: ".$query_key_page_list."<br>";
+		$query_key_page_list = "SELECT k.key_value, k.key_value_latin, unix_timestamp(p.post_dt) posted_time FROM pages p LEFT JOIN keys k ON k.id = p.key_id WHERE p.post_dt < now() ORDER BY p.post_dt DESC LIMIT ".$start_position.",".$KEY_PER_PAGE;
+		echo "query_city_list: ".$query_key_page_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_key_page_list))) {
 			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
-		#echo "execute...";
+		echo "execute...";
 		if (!mysqli_stmt_execute($stmt)){
 			#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 
 		/* instead of bind_result: */
-		#echo "get result...";
+		echo "get result...";
 		if(!mysqli_stmt_bind_result($stmt, $key_value, $key_value_latin, $posted_time )){
 			#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
@@ -490,7 +493,7 @@ if($current_page == "MAIN_PAGE_PAGING"){
 				$news_block = $news_block."<br/><h3>".$cur_news_posted_time."</h3>";
 			}
 			// use your $myrow array as you would with any other fetch
-			#echo "City name: ".$city_name."; key: ".$key_value;
+			echo "City name: ".$city_name."; key: ".$key_value;
 			
 			//generate link name
 			
@@ -499,7 +502,7 @@ if($current_page == "MAIN_PAGE_PAGING"){
 			$news_block = $news_block.$city_href;
 		}
 		$template=preg_replace("/\[CITY_NEWS_1\]/", $news_block, $template);
-		#echo "news_block: ".$news_block."<br>";
+		echo "news_block: ".$news_block."<br>";
 
 		$pager = new Pager;
 		$template=preg_replace("/\[PAGER\]/", $pager->getPageNavigation("/",$key_page_number, $max_page_number), $template);
@@ -551,19 +554,19 @@ if($current_page == "KEY_PAGE"){
 }
 
 #echo "Snippet extraction....";
-if(!$is_cached){
-	$page_meta_description = false;
-	while(!$page_meta_description){
-		#echo "Page_title: ".$page_title."<br/>";
-		$snippet_array = $snippet_extractor->Start(preg_replace('/\|/',' ',$page_title),'ru',1,$function);
-		#var_dump($snippet_array);
-		if(isset($snippet_array[0])){
-			$page_meta_description = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[0]["description"]);
-		}
-	}
-	$page_title = $page_title." | ".$site_main_domain;
-	savePageInfo($con,$url_for_cache, $page_title, $page_title, $page_meta_description);
-}
+#if(!$is_cached){
+#$page_meta_description = false;
+#	while(!$page_meta_description){
+#		#echo "Page_title: ".$page_title."<br/>";
+#		$snippet_array = $snippet_extractor->Start(preg_replace('/\|/',' ',$page_title),'ru',1,$function);
+#		#var_dump($snippet_array);
+#		if(isset($snippet_array[0])){
+#			$page_meta_description = preg_replace('/ {0,}\.{2,}/','.',$snippet_array[0]["description"]);
+#		}
+#	}
+#	$page_title = $page_title." | ".$site_main_domain;
+#	savePageInfo($con,$url_for_cache, $page_title, $page_title, $page_meta_description);
+#}
 
 if($current_page == "KEY_PAGE"){
 	$template = fillSnippetsContent($template,$key_info['key_value'],$con, $page_key);

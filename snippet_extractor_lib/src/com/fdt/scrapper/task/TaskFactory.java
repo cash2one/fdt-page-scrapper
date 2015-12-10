@@ -154,7 +154,6 @@ public class TaskFactory {
 	
 	public void loadTaskQueue(ArrayList<String> keyWordsList, String sourcesSrt, int[] frequencies, String lang) throws Exception {
 		fillTaskQueue(sourcesSrt,frequencies,keyWordsList,lang);
-		keyWordsList.clear();
 	}
 
 	/**
