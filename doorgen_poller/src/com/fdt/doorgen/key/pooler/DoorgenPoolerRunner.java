@@ -5,10 +5,8 @@ import java.net.PasswordAuthentication;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
@@ -17,9 +15,12 @@ import java.util.concurrent.Executors;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
+import com.fdt.doorgen.key.pooler.dao.KeysDao;
+import com.fdt.doorgen.key.pooler.dao.PageContentDao;
+import com.fdt.doorgen.key.pooler.dao.PagesDao;
+import com.fdt.doorgen.key.pooler.dao.SnippetsDao;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.ConfigManager;
-import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTask;
 import com.fdt.scrapper.task.SnippetTaskWrapper;
 import com.fdt.scrapper.task.TaskFactory;
@@ -79,11 +80,15 @@ public class DoorgenPoolerRunner{
 
 	private ArrayList<String> keysList = new ArrayList<String>();
 
-	HashMap<String, Integer> keyMap = new HashMap<String, Integer>();
+	private HashMap<String, Integer> keyMap = new HashMap<String, Integer>();
+	
+	private KeysDao keysDao;
+	private PagesDao pagesDao;
+	private SnippetsDao snipDao;
+	private PageContentDao pageCntntDao;
 
 	/**
-	 * args[0] - language
-	 * args[1] - path to config file
+	 * args[0] - path to config file
 	 * @throws Exception 
 	 */
 	public static void main(String[] args) throws Exception{
@@ -102,7 +107,7 @@ public class DoorgenPoolerRunner{
 							);
 				}
 			});
-			DOMConfigurator.configure("log4j.xml");
+			DOMConfigurator.configure("log4j_pooler.xml");
 
 			DoorgenPoolerRunner taskRunner = null;
 			try {
@@ -118,16 +123,14 @@ public class DoorgenPoolerRunner{
 
 	private void executeWrapper() throws Exception{
 		try{
-			connection = getConnection();
-			
-			keysList = getKeyList();
+			keysList = getKeyList4Update();
 			taskFactory.clear();
 			taskFactory.loadTaskQueue(keysList, source, frequencies, lang);
-			
+
 			while(keysList.size() > 0)
 			{
-				execute();
-				keysList = getKeyList();
+				execute(hostName);
+				keysList = getKeyList4Update();
 				taskFactory.clear();
 				taskFactory.loadTaskQueue(keysList, source, frequencies, lang);
 			}
@@ -141,6 +144,10 @@ public class DoorgenPoolerRunner{
 				}
 			}
 		}
+	}
+	
+	private ArrayList<String> getKeyList4Update() throws ClassNotFoundException, SQLException{
+		return keysDao.getKeyList4Update(connection, keyMap, MIN_SNIPPET_COUNT_FOR_POST_PAGE);
 	}
 
 	public DoorgenPoolerRunner(String cfgFilePath) throws Exception{
@@ -182,6 +189,13 @@ public class DoorgenPoolerRunner{
 		if(pageVaule != null && !"".equals(pageVaule.trim())){
 			maxPageNum = Integer.valueOf(pageVaule);
 		}
+		
+		connection = getConnection();
+		
+		keysDao = new KeysDao();
+		pagesDao = new PagesDao(connection);
+		snipDao = new SnippetsDao(connection);
+		pageCntntDao = new PageContentDao(connection, snipDao);
 
 		//set authentication params
 		Authenticator.setDefault(new Authenticator() {
@@ -208,14 +222,14 @@ public class DoorgenPoolerRunner{
 	}*/
 
 
-	public void execute() throws ClassNotFoundException, SQLException{
+	public void execute(final String hostName) throws ClassNotFoundException, SQLException{
 		synchronized (this) {
 			//run saver thread
 			saver = new SaverThread(taskFactory,new IResultProcessor() {
 
 				@Override
 				public void processResult(SnippetTask task) {
-					pollPagesTable(task);
+					pollPagesTable(task, hostName);
 				}
 
 			});
@@ -272,299 +286,29 @@ public class DoorgenPoolerRunner{
 		return connection;
 	}
 
-	private ArrayList<String> getKeyList() throws ClassNotFoundException, SQLException{
-		ArrayList<String> keyList = new ArrayList<String>();
-
-
-		//Select key for witch snippet count less than 4-6 or page does not exist for current key
-		PreparedStatement prStmt = connection.prepareStatement(
-				" SELECT k.key_value, 0 FROM door_keys k LEFT JOIN pages p ON k.id=p.key_id WHERE p.key_id IS NULL " +
-						" union " +
-						" SELECT k.key_value, COUNT(k.key_value) " +  
-						" FROM door_keys k INNER JOIN snippets s " + 
-						" ON k.id=s.key_id " + 
-						" WHERE k.id NOT IN (SELECT k.key_value FROM door_keys k LEFT JOIN pages p ON k.id=p.key_id WHERE p.key_id IS NULL) " + 
-						" GROUP BY k.key_value HAVING COUNT(k.key_value) < " + MIN_SNIPPET_COUNT_FOR_POST_PAGE);
-		ResultSet rs = prStmt.executeQuery();
-
-		if(rs == null){
-			return keyList;
-		}
-
-		while(rs.next()){
-			if(!"/".equals(rs.getString(1))){
-				keyList.add(rs.getString(1));
-				//saving count of snippets
-				keyMap.put(rs.getString(1), rs.getInt(2));
-			}
-		}
-
-		Collections.shuffle(keyList);
-
-		return keyList;
-	}
-
-
-	private void pollPagesTable(SnippetTask task){
+	private void pollPagesTable(SnippetTask task, String hostName){
 		int[] result = null;
+		int pId = -1;
+		String key = task.getKeyWordsOrig();
 		if(keyMap.get(task.getKeyWordsOrig()) == 0){
-			insertPage(task);
+			//if all snipepts were extracted - create page
+			pagesDao.insertPage(task, hostName);
 		}
 
 		//TODO Insert images
 
 		//insert snippets
-		result = insertSnippets(task);
+		result = snipDao.insertSnippets(task);
 
 		//TODO Insert random content
 		if(result != null && result.length > 0)
 		{
 			result = null;
-			result = populateContent(task.getKeyWordsOrig());
+			int pcId = pageCntntDao.insertPageContent(key);
+			result = pageCntntDao.populateContent(key, pcId);
 		}
 		else{
 			return;
 		}
-
-		//TODO Update page post_dt ??? HERE???
-		if(result != null && result.length > 0){
-
-		}
-	}
-
-	private int insertPage(SnippetTask task){
-		PreparedStatement prStmt = null;
-		Random rnd = new Random();
-		int count = -1;
-		try {
-			StringBuffer title = new StringBuffer();
-			title.append(task.getKeyWordsOrig().substring(0, 1).toUpperCase())
-			.append(task.getKeyWordsOrig().substring(1).toLowerCase())
-			.append(" | јбсолютный лидер в сфере кредитовани€ | ")
-			.append( hostName);
-
-			prStmt = connection.prepareStatement(" INSERT INTO pages (key_id, title, meta_keywords, meta_description, upd_dt, post_dt) " +
-					" SELECT k.id, ?, ?, ?, now(), now() + INTERVAL 10 YEAR" + 
-					" FROM door_keys k " + 
-					" WHERE k.key_value = ? ");
-
-			prStmt.setString(1, title.toString());
-			prStmt.setString(2, title.toString());
-			prStmt.setString(3, cleanString( task.getSnipResult().get(rnd.nextInt(task.getSnipResult().size())).getContent()) );
-			prStmt.setString(4, task.getKeyWordsOrig());
-
-			count = prStmt.executeUpdate();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		finally{
-			if(prStmt != null){
-				try {
-					prStmt.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-		}
-
-		return count;
-	}
-
-	private int[] insertSnippets(SnippetTask task){
-		PreparedStatement batchStatement = null;
-		int[] result = null;
-		try {
-			//TODO Insert snippets & page_content tables.
-			batchStatement = connection.prepareStatement("INSERT INTO snippets (key_id,title,description,upd_dt) " +
-					"SELECT k.id, ?, ?, now() " + 
-					"FROM door_keys k " + 
-					"WHERE k.key_value = ?");
-			for(Snippet snippet : task.getSnipResult()){
-				batchStatement.setString(1, getFirstSmblUpper(cleanString(snippet.getTitle())));
-				batchStatement.setString(2, cleanString(snippet.getContent()));
-				batchStatement.setString(3, task.getKeyWordsOrig());
-				batchStatement.addBatch();
-			}
-
-			if(batchStatement != null){
-				result = batchStatement.executeBatch(); // Execute every 1000 items.
-			}
-
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		finally{
-			if(batchStatement != null){
-				try {
-					batchStatement.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-		}
-
-		return result;
-	}
-
-
-	private ArrayList<Integer> getInsertedSnpId(String key){
-		ArrayList<Integer> result = new ArrayList<Integer>();
-		PreparedStatement prpStmt = null;
-		ResultSet rs = null;
-		try {
-			//TODO Insert snippets & page_content tables.
-			prpStmt = connection.prepareStatement(" SELECT s.id FROM snippets s, door_keys k " +
-					" WHERE k.key_value = ? AND k.id = s.key_id ");
-			prpStmt.setString(1, key);
-
-			rs = prpStmt.executeQuery();
-
-			if(rs != null){
-				while(rs.next()){
-					result.add(rs.getInt(1));
-				}
-			}
-
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		finally{
-			if(rs != null){
-				try {
-					rs.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-
-			if(prpStmt != null){
-				try {
-					prpStmt.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-		}
-
-		return result;
-	}
-
-	private int[] populateContent(String key){
-		int blockCnt = 3;
-		int blockSize = 3;
-		ArrayList<Integer> snpIds = getInsertedSnpId(key);
-		int[] result = null;
-
-		int snpCnt = snpIds.size();
-		PreparedStatement batchStatement = null;
-
-		int rndBatchSnpCnt[] = getRndBlocksSize(blockCnt, blockSize);
-		//если количество сниппетов не достаточно, то контент не будет сгенерирован
-		if(arraySum(rndBatchSnpCnt) > snpCnt){
-			return new int[]{};
-		}
-
-
-		ArrayList<Integer> rndSeq = getRandomSequense(snpCnt);
-
-		try {
-			//TODO Insert snippets & page_content tables.
-			batchStatement = connection.prepareStatement("INSERT INTO page_content (page_id, snippet_id, snippets_index, main_flg, upd_dt) " +
-					" SELECT p.id, ?, ?, ?, now() " + 
-					" FROM pages p, door_keys k" + 
-					" WHERE p.key_id = k.id AND k.key_value = ? ");
-
-
-			for(int i = 0; i < 3; i++)
-			{
-				for(int j = 1; j <= rndBatchSnpCnt[i]; j++)
-				{
-					//get discription count
-					int descCnt = 1+rnd.nextInt(3);
-					boolean ifMainNotInserted = true;
-
-					for(int k = 0; k < descCnt; k++)
-					{
-						batchStatement.setInt(1, snpIds.get(rndSeq.remove(0)));
-						batchStatement.setInt(2, i*3 + j);
-						batchStatement.setBoolean(3, ifMainNotInserted || false);
-						batchStatement.setString(4, key);
-						ifMainNotInserted = false;
-						batchStatement.addBatch();
-					}
-				}
-			}
-
-			if(batchStatement != null){
-				result = batchStatement.executeBatch(); // Execute every 1000 items.
-			}
-
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		finally{
-			if(batchStatement != null){
-				try {
-					batchStatement.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-		}
-
-		return result;
-	}
-
-	private ArrayList<Integer> getRandomSequense(int seqSize){
-		ArrayList<Integer> rndSeq = new ArrayList<Integer>();
-		for(int i = 0; i < seqSize; i++){
-			rndSeq.add(i);
-		}
-
-		Collections.shuffle(rndSeq);
-
-		return rndSeq;
-	}
-
-	private int[] getRndBlocksSize(int blockCnt, int blockSize){
-		Random rnd = new Random();
-		int[] result = new int[blockCnt];
-
-		for(int i = 0; i < blockCnt; i++){
-			result[i] = 1 + rnd.nextInt(blockSize);
-		}
-
-		return result;
-	}
-
-	private int arraySum(int[] array){
-		int sum = 0;
-		for(Integer elem : array){
-			sum += elem;
-		}
-
-		return sum;
-	}
-
-	private String getFirstSmblUpper(String input){
-		StringBuffer output = new StringBuffer(input.substring(1).toLowerCase());
-		output.insert(0, input.substring(0, 1).toUpperCase());
-
-		return output.toString();
-	}
-
-	private String cleanString(String input){
-		StringBuffer output = new StringBuffer(input);
-
-		return output.toString().replaceAll("[^0-9a-zA-Zа-€ј-я\\s\\%\\$\\-]+", "").replaceAll("\\s+", " ");
 	}
 }

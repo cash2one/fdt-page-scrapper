@@ -7,7 +7,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
+import java.util.Random;
+import java.util.SimpleTimeZone;
 import java.util.TimeZone;
 import java.util.concurrent.Callable;
 
@@ -137,15 +140,76 @@ public class Test {
 			//
 		}*/
 		
-		for(int i = 0; i < 60; i++){
+		/*for(int i = 0; i < 60; i++){
 			int val1 = ((i - (i % 5)) / 5);
 			int val2 = i/5;
 			if(val1 != val2){
 				System.out.println("Error for i: " + i);
 			}
 			System.out.println(String.format("%d: %d - %d", i, val1, val2));
-		}
+		}*/
+		
+		/*for(int i = 900; i <= 1200; i++){
+			System.out.println((double)20108000/i);
+		}*/
+    	
+    	Random rnd = new Random();
+    	
+    	for(int i = 0; i < 100; i++)
+    	{
+    		System.out.println(rnd.nextGaussian());
+    	}
+    	
+    	for(int i = 0; i < 100; i++)
+    	{
+    		long time = getRndNormalDistTime();
+    		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    		System.out.println(time + " " + sdf.format(new Date(time)));
+    	}
+    	
     }
+    
+    public static long getRndNormalDistTime(){
+    	Random rnd = new Random();
+		double gaus = rnd.nextGaussian();
+		while(Math.abs(gaus) > 2){
+			gaus = rnd.nextGaussian();
+		}
+		
+		long time = (long)Math.round(24*60*60*1000*(2+gaus)/4);
+		
+		return time;
+	}
+    
+    public static void getRndNormalDist(int minValue, int maxValue){
+		
+		//TODO generate random tetta [1.0:2.0]
+		double tetta = 1;
+		double nu = (maxValue-minValue);
+		
+		ArrayList<Double> list = new ArrayList<Double>();
+		
+		for(int i = 0; i < 60*60*24; i++){
+			double val1 = tetta*Math.sqrt(2.0*Math.PI);
+			double val2 = Math.pow((double)i-nu, 2);
+			double val3 = 2.0*Math.pow(tetta, 2);
+			double val4 = Math.exp(-1*(val2)/(val3));
+			double value = ( 1.0 / val1 ) * val4 * i;
+			list.add(value);
+		}
+		
+		Collections.sort(list);
+		
+		
+		
+		for(int i = 0; i < 60*60*24; i=i+10){
+			if(list.get(i) > 0){
+				i = i;
+			}
+			System.out.println(list.get(i));
+			//System.out.println(sdf.format(new Date(list.get(i)));
+		}
+	}
     
     private static String getFirstSmblUpper(String input){
 		StringBuffer output = new StringBuffer(input.substring(1).toLowerCase());

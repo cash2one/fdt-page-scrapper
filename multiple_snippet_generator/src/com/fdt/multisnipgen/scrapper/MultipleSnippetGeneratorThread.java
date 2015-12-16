@@ -47,8 +47,8 @@ public class MultipleSnippetGeneratorThread implements Callable<String> {
 	@Override
 	public String call() throws Exception
 	{
+		taskFactory.incRunThreadsCount();
 		try{
-			taskFactory.incRunThreadsCount();
 			boolean errorExist = false;
 			String generatedContent = null;
 
