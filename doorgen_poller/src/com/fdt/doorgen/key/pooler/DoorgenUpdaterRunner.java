@@ -86,6 +86,8 @@ public class DoorgenUpdaterRunner {
 					throw new Exception("Page content record was not added for key: " + keys.get(i));
 				}
 			}
+			int count = pageCntntDao.deleteDeprecatedPageContent();
+			log.info(String.format("%d deprecated records were deleted from table", count));
 		}finally{
 			if(connection != null){
 				try {

@@ -42,6 +42,8 @@ public class PageContentDao {
 
 			prStmt.setTimestamp(1, new Timestamp(postTime));
 			prStmt.setString(2, key);
+			
+			prStmt.executeUpdate();
 
 			rs = prStmt.getGeneratedKeys();
 			if (rs.next()){
@@ -292,7 +294,7 @@ public class PageContentDao {
 		PreparedStatement prStmt = null;
 		try {
 			prStmt = connection.prepareStatement(
-					" UPDATE page_content pc SET pc.upd_flg=1 " +
+					" UPDATE page_content pc SET pc.upd_flg=1, pc.post_dt=pc.post_dt " +
 					" WHERE pc.page_id IN (SELECT p.id FROM door_keys k, pages p WHERE p.key_id=k.id AND k.key_value = ?) ");
 
 			prStmt.setString(1, key);
@@ -320,17 +322,19 @@ public class PageContentDao {
 	 * @param key
 	 * @return
 	 */
-	//TODO implement
-	private int deleteDeprecatedPageContent(){
+	public int deleteDeprecatedPageContent(){
 		PreparedStatement prStatement = null;
-		int result = -1;
-		/*try {
-			prStatement = connection.prepareStatement("DELETE FROM page_content pc " +
-					" WHERE pc.page_id = (SELECT DISTINCT p.id FROM pages p, door_keys k WHERE p.key_id = k.id AND k.key_value)");
-			prStatement.setString(1, key);
-
-			result = prStatement.executeUpdate();
-
+		int count = -1;
+		
+		try {
+			prStatement = connection.prepareStatement(
+							" DELETE FROM page_content WHERE id IN " +
+							" (SELECT t2.id FROM  " +
+							" (SELECT t1.* FROM page_content t1) AS t2, " +
+							" (SELECT pc.page_id, MIN(pc.post_dt) post_dt FROM  page_content pc WHERE pc.post_dt < now() GROUP BY pc.page_id HAVING count(pc.page_id) > 1) AS t3 " +
+							" WHERE t2.page_id = t3.page_id AND t2.post_dt = t3.post_dt) "	
+					);
+			count = prStatement.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -344,8 +348,8 @@ public class PageContentDao {
 					e.printStackTrace();
 				}
 			}
-		}*/
+		}
 
-		return result;
+		return count;
 	}
 }
