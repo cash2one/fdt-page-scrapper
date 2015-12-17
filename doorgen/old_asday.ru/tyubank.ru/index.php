@@ -389,9 +389,9 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 
 		#echo "Page processing...";
 		//prepare statement
-		$query_key_page_list =    " SELECT DISTINCT k.key_value, k.key_value_latin, unix_timestamp(pc.post_dt) posted_time, pc.upd_flg ".
-		                          " FROM door_keys k, pages p LEFT JOIN page_content pc ON p.id=pc.page_id ".
-		                          " WHERE k.id = p.key_id AND pc.post_dt < now() AND k.key_value <> '/' AND pc.page_id IS NOT NULL ORDER BY post_dt DESC LIMIT ".$start_position.",".$KEY_PER_PAGE;
+		$query_key_page_list =      " SELECT DISTINCT k.key_value, k.key_value_latin, unix_timestamp(MAX(pc.post_dt)) posted_time, pc.upd_flg, pc.page_id ".
+                                    " FROM door_keys k, pages p, page_content pc ".
+                                    " WHERE p.id=pc.page_id AND k.id = p.key_id AND pc.post_dt < now() AND k.key_value <> '/' GROUP BY pc.page_id ORDER BY post_dt DESC LIMIT ".$start_position.",".$KEY_PER_PAGE;
 		#echo "query_city_list: ".$query_key_page_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_key_page_list))) {
 			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
@@ -404,7 +404,7 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 
 		/* instead of bind_result: */
 		#echo "get result...";
-		if(!mysqli_stmt_bind_result($stmt, $key_value, $key_value_latin, $posted_time, $upd_flg )){
+		if(!mysqli_stmt_bind_result($stmt, $key_value, $key_value_latin, $posted_time, $upd_flg, $page_id )){
 			#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		

@@ -24,7 +24,8 @@ public class DoorgenPosterRunner {
 
 	//TODO Read host name from config
 	private String connectionString = null;
-	private TimeString timeString;
+	private TimeString timeStr;
+	private File timeFile;
 	
 	private static final String CONNECTION_STRING_LABEL = "connection_string";
 	private static final String TIME_TABLE_LABLE = "time_table";
@@ -71,14 +72,22 @@ public class DoorgenPosterRunner {
 			ArrayList<String> keys = pagesDao.getPages4Post();
 			Collections.shuffle(keys);
 			
-			int postCount = timeString.getRndCnt();
+			int postCount = timeStr.getRndCnt();
+			log.info(String.format("%d new will be posted.",postCount));
 			
+			int postedCnt = 0;
 			for(int i = 0; i < postCount && keys.size() < i; i++){
 				//get normal distribution time value
 				long postTime = DoorUtils.getRndNormalDistTime() + startOtDay;
 				postTime = DoorUtils.calibratePostDate(postTime, curTime);
-				pageCntntDao.postPage(keys.get(i), postTime);
+				postedCnt += pageCntntDao.postPage(keys.get(i), postTime);
 			}
+			
+			if(postedCnt == 0){
+				TimeTable.returnTimeSrt(timeStr, timeFile);
+			}
+			log.info(String.format("%d new were posted.",postedCnt));
+			System.out.println(String.format("%d new were posted.",postedCnt));
 		}finally{
 			if(connection != null){
 				try {
@@ -99,9 +108,9 @@ public class DoorgenPosterRunner {
 		
 		String timeTableStr = ConfigManager.getInstance().getProperty(TIME_TABLE_LABLE);
 		if(timeTableStr != null && !"".equals(timeTableStr.trim())){
-			File timeFile = new File(timeTableStr);
+			timeFile = new File(timeTableStr);
 			if(timeFile.exists() && timeFile.isFile()){
-				timeString = TimeTable.getTimeString(timeFile);
+				timeStr = TimeTable.getTimeString(timeFile);
 			}else{
 				throw new Exception("TimeFile for time table was not found or exist.");
 			}

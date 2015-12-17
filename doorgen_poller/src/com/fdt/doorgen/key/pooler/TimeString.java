@@ -86,4 +86,11 @@ public class TimeString {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return min + "-" + max;
+	}
+	
+	
 }

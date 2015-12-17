@@ -260,9 +260,10 @@ public class PageContentDao {
 	}
 	
 	
-	public void postPage(String key, long postTime)
+	public int postPage(String key, long postTime)
 	{
 		PreparedStatement prStmt = null;
+		int count = 0;
 		try {
 			prStmt = connection.prepareStatement(
 					" UPDATE page_content pc SET pc.post_dt=FROM_UNIXTIME(?/1000) " +
@@ -271,7 +272,7 @@ public class PageContentDao {
 			prStmt.setLong(1, postTime);
 			prStmt.setString(2, key);
 			
-			prStmt.executeUpdate();
+			count = prStmt.executeUpdate();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -287,6 +288,8 @@ public class PageContentDao {
 				}
 			}
 		}
+		
+		return count;
 	}
 	
 	public void updPagesAsUpdated(String key)
