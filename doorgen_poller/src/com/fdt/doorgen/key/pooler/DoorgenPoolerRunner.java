@@ -227,7 +227,6 @@ public class DoorgenPoolerRunner{
 			//run saver thread
 			saver = new SaverThread(taskFactory,new IResultProcessor() {
 
-				@Override
 				public void processResult(SnippetTask task) {
 					pollPagesTable(task, hostName);
 				}

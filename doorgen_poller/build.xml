@@ -4,8 +4,8 @@
 	<property environment="env" />
 	<property file="build.properties" />
 	<property name="debuglevel" value="source,lines,vars" />
-	<property name="target" value="1.5" />
-	<property name="source" value="1.5" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
 	
 	<path id="Engine.classpath">
 		<fileset dir="${dir.lib}" includes="**/*.jar" />

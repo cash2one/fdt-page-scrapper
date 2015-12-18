@@ -66,23 +66,35 @@ public class DoorgenPosterRunner {
 
 	private void executeWrapper() throws Exception{
 		try{
-			long curTime = System.currentTimeMillis();
-			long startOtDay = DoorUtils.getStartOfDay(curTime);
+			int posted = pagesDao.getPostedCnt4Day();
+			
+			if(posted >= timeStr.getMin()){
+				log.info("All news were posted for a day. Poster will end work");
+				TimeTable.returnTimeSrt(timeStr, timeFile);
+				return;
+			}
 			
 			ArrayList<String> keys = pagesDao.getPages4Post();
 			Collections.shuffle(keys);
 			
 			int postCount = timeStr.getRndCnt();
+			
 			log.info(String.format("%d new will be posted.",postCount));
 			
+			long curTime = System.currentTimeMillis();
+			long startOtDay = DoorUtils.getStartOfDay(curTime);
+			
 			int postedCnt = 0;
-			for(int i = 0; i < postCount && keys.size() < i; i++){
+			for(int i = 0; i < postCount && i < keys.size(); i++){
 				//get normal distribution time value
+				//TODO Add randomly +-2hours for a postTime
 				long postTime = DoorUtils.getRndNormalDistTime() + startOtDay;
 				postTime = DoorUtils.calibratePostDate(postTime, curTime);
+				log.info(String.format("Try to post key %s with post time %s",keys.get(i), postTime));
 				postedCnt += pageCntntDao.postPage(keys.get(i), postTime);
 			}
 			
+			//if records were not updated in DB - return time string 
 			if(postedCnt == 0){
 				TimeTable.returnTimeSrt(timeStr, timeFile);
 			}

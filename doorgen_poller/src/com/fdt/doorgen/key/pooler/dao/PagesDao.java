@@ -8,10 +8,13 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Random;
 
+import org.apache.log4j.Logger;
+
 import com.fdt.doorgen.key.pooler.util.DoorUtils;
 import com.fdt.scrapper.task.SnippetTask;
 
 public class PagesDao {
+	private static final Logger log = Logger.getLogger(PagesDao.class);
 	
 	private Connection connection;
 	
@@ -56,7 +59,7 @@ public class PagesDao {
 				pId = -1;
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			log.error(e);
 			e.printStackTrace();
 		}
 		finally{
@@ -64,7 +67,7 @@ public class PagesDao {
 				try {
 					rs.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
+					log.error(e);
 					e.printStackTrace();
 				}
 			}
@@ -72,7 +75,7 @@ public class PagesDao {
 				try {
 					prStmt.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
+					log.error(e);
 					e.printStackTrace();
 				}
 			}
@@ -82,9 +85,9 @@ public class PagesDao {
 	}
 	
 	public ArrayList<String> getPages4Post(){
-		String slcQuery = 	" SELECT k.id, k.key_value, pc.id " + 
+		String slcQuery = 	" SELECT DISTINCT k.id, k.key_value, pc.id " + 
 							" FROM page_content pc, pages p, door_keys k " + 
-							" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.key_value <> '/' AND pc.upd_flg=0 AND (now() + INTERVAL 1 DAY < pc.post_dt) ";
+							" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.key_value <> '/' AND pc.upd_flg=0 AND (pc.post_dt > now() + INTERVAL 1 DAY )";
 		return getPagesBySelect(slcQuery, "key_value");
 	}
 	
@@ -92,6 +95,51 @@ public class PagesDao {
 		String slcQuery = 	" SELECT DISTINCT k.id, k.key_value FROM page_content pc, pages p, door_keys k " + 
 							" WHERE pc.page_id = p.id AND p.key_id = k.id AND k.key_value <> '/' AND pc.upd_flg=0 AND (DATEDIFF((now()),pc.post_dt) >  " + updDateDiff +") ";
 		return getPagesBySelect(slcQuery, "key_value");
+	}
+	
+	public int getPostedCnt4Day()
+	{
+		PreparedStatement prpStmt = null;
+		ResultSet rs = null;
+		int count = 0;
+		try {
+			//TODO Insert snippets & page_content tables.
+			prpStmt = connection.prepareStatement(
+					" SELECT DISTINCT COUNT(k.id) posted_count" + 
+					" FROM page_content pc, pages p, door_keys k " + 
+					" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.key_value <> '/' AND pc.upd_flg=0 AND pc.post_dt > now() AND (pc.post_dt < now() + INTERVAL 1 DAY ) "
+			);
+
+			rs = prpStmt.executeQuery();
+
+			if(rs != null && rs.next()){
+				count = rs.getInt("posted_count");
+			}
+		} catch (SQLException e) {
+			log.error(e);
+			e.printStackTrace();
+		}
+		finally{
+			if(rs != null){
+				try {
+					rs.close();
+				} catch (SQLException e) {
+					log.error(e);
+					e.printStackTrace();
+				}
+			}
+
+			if(prpStmt != null){
+				try {
+					prpStmt.close();
+				} catch (SQLException e) {
+					log.error(e);
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return count;
 	}
 	
 	private ArrayList<String> getPagesBySelect(String slcQuery, String extrParamNm)
@@ -112,7 +160,7 @@ public class PagesDao {
 			}
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			log.error(e);
 			e.printStackTrace();
 		}
 		finally{
@@ -120,7 +168,7 @@ public class PagesDao {
 				try {
 					rs.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
+					log.error(e);
 					e.printStackTrace();
 				}
 			}
@@ -129,7 +177,7 @@ public class PagesDao {
 				try {
 					prpStmt.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
+					log.error(e);
 					e.printStackTrace();
 				}
 			}

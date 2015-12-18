@@ -10,10 +10,13 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Random;
 
+import org.apache.log4j.Logger;
+
 import com.fdt.doorgen.key.pooler.util.DoorUtils;
 import com.fdt.scrapper.task.SnippetTask;
 
 public class PageContentDao {
+	private static final Logger log = Logger.getLogger(PageContentDao.class);
 	
 	private Connection connection;
 	private SnippetsDao snipDao;
@@ -298,7 +301,7 @@ public class PageContentDao {
 		try {
 			prStmt = connection.prepareStatement(
 					" UPDATE page_content pc SET pc.upd_flg=1, pc.post_dt=pc.post_dt " +
-					" WHERE pc.page_id IN (SELECT p.id FROM door_keys k, pages p WHERE p.key_id=k.id AND k.key_value = ?) ");
+					" WHERE pc.page_id = (SELECT p.id FROM door_keys k, pages p WHERE p.key_id=k.id AND k.key_value = ?) ");
 
 			prStmt.setString(1, key);
 
@@ -334,8 +337,8 @@ public class PageContentDao {
 							" DELETE FROM page_content WHERE id IN " +
 							" (SELECT t2.id FROM  " +
 							" (SELECT t1.* FROM page_content t1) AS t2, " +
-							" (SELECT pc.page_id, MIN(pc.post_dt) post_dt FROM  page_content pc WHERE pc.post_dt < now() GROUP BY pc.page_id HAVING count(pc.page_id) > 1) AS t3 " +
-							" WHERE t2.page_id = t3.page_id AND t2.post_dt = t3.post_dt) "	
+							" (SELECT pc.page_id, MIN(pc.post_dt) min_post_dt FROM  page_content pc WHERE pc.post_dt < now() GROUP BY pc.page_id HAVING count(pc.page_id) > 1) AS t3 " +
+							" WHERE t2.page_id = t3.page_id AND t2.post_dt = t3.min_post_dt) "	
 					);
 			count = prStatement.executeUpdate();
 		} catch (SQLException e) {

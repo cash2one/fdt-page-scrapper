@@ -363,7 +363,7 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 	//getting city news count
 	$query_count = " SELECT count(t.key_value) row_count ".
 	               " FROM (SELECT DISTINCT k.key_value FROM door_keys k, pages p LEFT JOIN page_content pc ON p.id=pc.page_id ".
-	               " WHERE k.id = p.key_id AND pc.post_dt < now() AND k.key_value <> '/' AND pc.page_id IS NOT NULL) as t";
+	               " WHERE k.id = p.key_id AND pc.post_dt < now() AND k.key_value <> '/' AND pc.page_id IS NOT NULL) as t LIMIT ".($KEY_PER_PAGE * 10);
 	$result = mysqli_query($con,$query_count);
 	
 	$row = mysqli_fetch_assoc($result);
@@ -373,6 +373,7 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 	if($key_count>0){
 		//вычисляем последнюю страницы
 		$max_page_number = floor($key_count/$KEY_PER_PAGE);
+		
 		if($key_count%$KEY_PER_PAGE != 0){
 			$max_page_number = $max_page_number + 1;
 		}
@@ -389,9 +390,14 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 
 		#echo "Page processing...";
 		//prepare statement
-		$query_key_page_list =      " SELECT DISTINCT k.key_value, k.key_value_latin, unix_timestamp(MAX(pc.post_dt)) posted_time, pc.upd_flg, pc.page_id ".
-                                    " FROM door_keys k, pages p, page_content pc ".
-                                    " WHERE p.id=pc.page_id AND k.id = p.key_id AND pc.post_dt < now() AND k.key_value <> '/' GROUP BY pc.page_id ORDER BY post_dt DESC LIMIT ".$start_position.",".$KEY_PER_PAGE;
+		$query_key_page_list =      " SELECT DISTINCT k.key_value, k.key_value_latin, unix_timestamp(t2.post_dt) posted_time, t2.upd_flg, t2.posted_cnt, t2.page_id, ".
+                                    " ( SELECT COUNT(1) FROM page_content pcc WHERE t2.page_id=pcc.page_id) AS total_cnt  ".
+                                    " FROM door_keys k, pages p, ".
+                                    " (SELECT pc.*, t1.posted_cnt FROM page_content pc, ".
+                                    " (SELECT pci.*, MAX(pci.post_dt) max_post_dt, COUNT(1) posted_cnt FROM page_content pci WHERE pci.post_dt < now() GROUP BY pci.page_id) AS t1 ".
+                                    " WHERE pc.page_id = t1.page_id AND pc.post_dt = t1.max_post_dt ORDER BY pc.post_dt DESC LIMIT ".$start_position.",".$KEY_PER_PAGE.") AS t2 ".
+                                    " WHERE p.id=t2.page_id AND k.id = p.key_id AND k.key_value <> '/' ";
+		
 		#echo "query_city_list: ".$query_key_page_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_key_page_list))) {
 			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
@@ -404,7 +410,7 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 
 		/* instead of bind_result: */
 		#echo "get result...";
-		if(!mysqli_stmt_bind_result($stmt, $key_value, $key_value_latin, $posted_time, $upd_flg, $page_id )){
+		if(!mysqli_stmt_bind_result($stmt, $key_value, $key_value_latin, $posted_time, $upd_flg, $posted_cnt, $page_id, $total_cnt)){
 			#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
@@ -420,7 +426,9 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 			
 			//generate link name
 			$updTitle = "";
-			if($upd_flg){
+			#echo "upd_flg: ".$upd_flg;
+			#echo "page_content_count: ".$page_content_count;
+			if($total_cnt==$posted_cnt && $upd_flg==1) {
 			    $updTitle = "Обновлена информация по ";
 			}
 			

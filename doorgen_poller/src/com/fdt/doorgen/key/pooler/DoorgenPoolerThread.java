@@ -33,7 +33,6 @@ public class DoorgenPoolerThread implements Callable<String> {
 		this.taskFactory = taskFactory;
 	}
 
-	@Override
 	public String call() throws Exception
 	{
 		taskFactory.incRunThreadsCount();

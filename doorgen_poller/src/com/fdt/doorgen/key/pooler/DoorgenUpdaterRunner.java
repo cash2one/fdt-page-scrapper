@@ -48,7 +48,7 @@ public class DoorgenUpdaterRunner {
 			ConfigManager.getInstance().loadProperties(args[0]);
 			System.out.println(args[0]);
 			
-			DOMConfigurator.configure("log4j_poster.xml");
+			DOMConfigurator.configure("log4j_updater.xml");
 
 			DoorgenUpdaterRunner taskRunner = null;
 			try {

@@ -8,7 +8,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
+import org.apache.log4j.Logger;
+
 public class KeysDao {
+	private static final Logger log = Logger.getLogger(KeysDao.class);
 	
 	public ArrayList<String> getKeyList4Update(Connection connection, HashMap<String, Integer> keyMap, Integer minSnpCnt4PostPage) throws ClassNotFoundException, SQLException{
 		ArrayList<String> keyList = new ArrayList<String>();
@@ -16,13 +19,13 @@ public class KeysDao {
 
 		//Select key for witch snippet count less than 4-6 or page does not exist for current key
 		PreparedStatement prStmt = connection.prepareStatement(
-				" SELECT k.key_value, 0 FROM door_keys k LEFT JOIN pages p ON k.id=p.key_id WHERE p.key_id IS NULL " +
-						" union " +
-						" SELECT k.key_value, COUNT(k.key_value) " +  
-						" FROM door_keys k LEFT JOIN snippets s " + 
-						" ON k.id=s.key_id " + 
-						" WHERE k.id NOT IN (SELECT k.key_value FROM door_keys k LEFT JOIN pages p ON k.id=p.key_id WHERE p.key_id IS NULL) " + 
-						" GROUP BY k.key_value HAVING COUNT(k.key_value) < " + minSnpCnt4PostPage);
+				" SELECT DISTINCT t.* FROM (SELECT k.key_value, 0 FROM door_keys k LEFT JOIN pages p ON k.id=p.key_id WHERE p.key_id IS NULL AND k.key_value <> '/' " +
+						" union  " +
+						" SELECT k.key_value, COUNT(k.key_value)    " +
+						" FROM door_keys k LEFT JOIN snippets s  " +
+						" ON k.id=s.key_id   " +
+						" WHERE k.id NOT IN (SELECT k.id FROM door_keys k LEFT JOIN pages p ON k.id=p.key_id WHERE p.key_id IS NULL) AND k.key_value <> '/'   " +
+						" GROUP BY k.key_value HAVING COUNT(k.key_value) < " + minSnpCnt4PostPage +") AS t ");
 		ResultSet rs = prStmt.executeQuery();
 
 		if(rs == null){
