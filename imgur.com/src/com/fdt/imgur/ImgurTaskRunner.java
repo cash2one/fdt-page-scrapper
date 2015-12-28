@@ -3,6 +3,7 @@ package com.fdt.imgur;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Authenticator;
@@ -32,7 +33,7 @@ public class ImgurTaskRunner {
 
 	private String proxyFilePath;
 	private long proxyDelay;
-	
+
 	private File promoFile;
 
 	private String listInputFilePath;
@@ -40,9 +41,9 @@ public class ImgurTaskRunner {
 	private String errorFilePath;
 
 	private int maxThreadImgurCount;
-	
+
 	private int imgurPostPerProxy = 20;
-	
+
 	private Boolean loadFromPromo = true;
 	private Boolean loadFromFolder = true;
 
@@ -52,19 +53,19 @@ public class ImgurTaskRunner {
 	private final static String PROXY_PASS_LABEL = "proxy_pass";
 	private final static String PROXY_LIST_FILE_PATH_LABEL = "proxy_list_file_path";
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
-	
+
 	private final static String PROMO_FILE_PATH_LABEL = "imgur_promo_file_path";
-	
+
 	private final static String PROXY_TYPE_LABEL = "proxy_type";
 
 	private final static String IMGUR_MAX_THREAD_COUNT_LABEL = "max_thread_imgur_count";
-	
+
 	private final static String IMRUG_POST_PER_PROXY_LABEL = "imgur_post_per_proxy";
 
 	private final static String IMGUR_LIST_INPUT_FILE_PATH_LABEL = "imgur_list_input_file_path";
 	private final static String IMGUR_LIST_PROCESSED_FILE_PATH_LABEL = "imgur_list_processed_file_path";
 	private final static String IMGUR_ERROR_FILE_PATH_LABEL = "imgur_error_file_path";
-	
+
 	private final static String IMGUR_LOAD_FROM_FOLDER_LABEL = "imgur_load_from_folder";
 	private final static String IMGUR_LOAD_FROM_PROMO_LABEL = "imgur_load_from_promo";
 
@@ -76,9 +77,9 @@ public class ImgurTaskRunner {
 
 		this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 		this.proxyDelay = Integer.valueOf(Constants.getInstance().getProperty(PROXY_DELAY_LABEL));
-		
+
 		this.promoFile = new File(Constants.getInstance().getProperty(PROMO_FILE_PATH_LABEL));
-		
+
 		this.listInputFilePath = Constants.getInstance().getProperty(IMGUR_LIST_INPUT_FILE_PATH_LABEL);
 		this.listProcessedFilePath = Constants.getInstance().getProperty(IMGUR_LIST_PROCESSED_FILE_PATH_LABEL);
 		this.errorFilePath = Constants.getInstance().getProperty(IMGUR_ERROR_FILE_PATH_LABEL);
@@ -86,9 +87,9 @@ public class ImgurTaskRunner {
 		this.taskFactory = ImgurTaskFactory.getInstance();
 
 		this.maxThreadImgurCount = Integer.valueOf(Constants.getInstance().getProperty(IMGUR_MAX_THREAD_COUNT_LABEL));
-		
+
 		this.imgurPostPerProxy = Integer.valueOf(Constants.getInstance().getProperty(IMRUG_POST_PER_PROXY_LABEL));
-		
+
 		this.loadFromPromo = Boolean.valueOf(Constants.getInstance().getProperty(IMGUR_LOAD_FROM_PROMO_LABEL));
 		this.loadFromFolder= Boolean.valueOf(Constants.getInstance().getProperty(IMGUR_LOAD_FROM_FOLDER_LABEL));
 
@@ -118,50 +119,69 @@ public class ImgurTaskRunner {
 
 	public void runImgurLoader() throws Exception{
 
-		synchronized(this){
-			File rootInputFiles = new File(listInputFilePath);
+		try{
+			synchronized(this){
+				File rootInputFiles = new File(listInputFilePath);
 
-			ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
-			ProxyFactory proxyFactory = ProxyFactory.getInstance();
-			proxyFactory.init(proxyFilePath);
-			ProxyFactory.PROXY_TYPE = Constants.getInstance().getProperty(PROXY_TYPE_LABEL);
+				ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
+				ProxyFactory proxyFactory = ProxyFactory.getInstance();
+				proxyFactory.init(proxyFilePath);
+				ProxyFactory.PROXY_TYPE = Constants.getInstance().getProperty(PROXY_TYPE_LABEL);
 
-			ImgurTaskFactory.setMAX_THREAD_COUNT(maxThreadImgurCount);
-			taskFactory = ImgurTaskFactory.getInstance();
-			taskFactory.clear();
-			//taskFactory.loadTaskQueue(urlsFilePath);
-			
-			if(loadFromFolder){
-				taskFactory.fillTaskQueue(rootInputFiles.listFiles());
-			}
-			
-			if(loadFromPromo){
-				taskFactory.loadPromoFile(promoFile);
-			}
+				ImgurTaskFactory.setMAX_THREAD_COUNT(maxThreadImgurCount);
+				taskFactory = ImgurTaskFactory.getInstance();
+				taskFactory.clear();
+				//taskFactory.loadTaskQueue(urlsFilePath);
 
-			ImgurThread newThread = null;
-			log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
-
-			//TaskFactory.setMAX_THREAD_COUNT(1);
-			while( !taskFactory.isTaskFactoryEmpty() || taskFactory.getRunThreadsCount() > 0){
-				log.debug("Try to get request from RequestFactory queue.");
-
-				Object[] tasks = taskFactory.getTasks(imgurPostPerProxy);
-				if(tasks != null){
-					log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
-					
-					newThread = new ImgurThread((List<ImgurTask>)tasks[0], (List<ImgurPromoTask>)tasks[1], taskFactory, proxyFactory, listProcessedFilePath, errorFilePath);
-					
-					newThread.start();
-					Thread.sleep(500L);
-					continue;
+				if(loadFromFolder){
+					taskFactory.fillTaskQueue(rootInputFiles.listFiles());
 				}
-				try {
-					this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
-				} catch (InterruptedException e) {
-					log.error("InterruptedException occured during RequestRunner process",e);
+
+				if(loadFromPromo){
+					taskFactory.loadPromoFile(promoFile);
+				}
+
+				ImgurThread newThread = null;
+				log.debug("Total tasks: "+taskFactory.getTaskQueue().size());
+
+				//TaskFactory.setMAX_THREAD_COUNT(1);
+				while( !taskFactory.isTaskFactoryEmpty() || taskFactory.getRunThreadsCount() > 0){
+					log.debug("Try to get request from RequestFactory queue.");
+
+					Object[] tasks = taskFactory.getTasks(imgurPostPerProxy);
+					if(tasks != null){
+						log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
+
+						newThread = new ImgurThread((List<ImgurTask>)tasks[0], (List<ImgurPromoTask>)tasks[1], taskFactory, proxyFactory, listProcessedFilePath, errorFilePath);
+
+						newThread.start();
+						Thread.sleep(500L);
+						continue;
+					}
+					try {
+						this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
+					} catch (InterruptedException e) {
+						log.error("InterruptedException occured during RequestRunner process",e);
+					}
 				}
 			}
+		}finally{
+			File imageFolder = new File("images");
+			if(imageFolder.exists() && imageFolder.isDirectory()){
+				for(File file : imageFolder.listFiles()){
+					file.delete();
+				}
+			}
+			//creation marker file
+			try {
+				FileWriter fw = new FileWriter("complete.txt", false);
+				fw.write("complete");
+				fw.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
 		}
 	}
 

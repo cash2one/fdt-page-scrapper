@@ -16,7 +16,8 @@ $page_meta_description="";
 $function = new Functions;
 $title_generator = new TitleGenerator;
 
-function rusdate($d, $format = 'j %MONTH% Y', $offset = 0)
+//default offset for moskow
+function rusdate($d, $format = 'j %MONTH% Y', $offset = 3)
 {
     $montharr = array('января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря');
     $dayarr = array('понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье');
