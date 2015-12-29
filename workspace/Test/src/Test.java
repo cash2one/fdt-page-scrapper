@@ -149,11 +149,11 @@ public class Test {
 			System.out.println(String.format("%d: %d - %d", i, val1, val2));
 		}*/
 		
-		/*for(int i = 900; i <= 1200; i++){
-			System.out.println((double)20108000/i);
-		}*/
+		for(int i = 18000; i <= 19300; i++){
+			System.out.println((double)4791684/i + " " + i);
+		}
     	
-    	Random rnd = new Random();
+    	/*Random rnd = new Random();
     	
     	for(int i = 0; i < 100; i++)
     	{
@@ -166,7 +166,7 @@ public class Test {
     		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     		System.out.println(time + " " + sdf.format(new Date(time)));
     	}
-    	
+    	*/
     }
     
     public static long getRndNormalDistTime(){
