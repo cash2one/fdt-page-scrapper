@@ -1,2 +1,4 @@
-title "Doorgen Updater v1.0"
-java -cp  "../java/*" com.fdt.multisnipgen.scrapper.DoorgenUpdaterRunner config.ini
+#!/bin/sh
+
+cd /home/user/soft/doorgen_poller
+java -cp  "../java/*" com.fdt.doorgen.key.pooler.DoorgenUpdaterRunner config.ini
