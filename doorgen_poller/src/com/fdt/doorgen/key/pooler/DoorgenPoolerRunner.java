@@ -61,6 +61,8 @@ public class DoorgenPoolerRunner{
 
 	private static final String CONNECTION_STRING_LABEL = "connection_string";
 	private static final String HOST_NAME_LABEL = "host_name";
+	
+	private static final String MIN_SNIPPET_COUNT_FOR_POST_PAGE_LABEL="min_snip_cnt_for_poller";
 
 
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
@@ -163,6 +165,10 @@ public class DoorgenPoolerRunner{
 
 		this.hostName = ConfigManager.getInstance().getProperty(HOST_NAME_LABEL);
 		this.connectionString = ConfigManager.getInstance().getProperty(CONNECTION_STRING_LABEL);
+		
+		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_FOR_POST_PAGE_LABEL) != null){
+			MIN_SNIPPET_COUNT_FOR_POST_PAGE = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_FOR_POST_PAGE_LABEL));
+		}
 
 		String freqStr = ConfigManager.getInstance().getProperty(FREQUENCY_LABEL);
 		if(freqStr != null && !"".equals(freqStr.trim())){
