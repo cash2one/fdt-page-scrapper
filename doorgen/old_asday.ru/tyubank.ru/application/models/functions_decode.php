@@ -343,9 +343,6 @@ class Functions
 				curl_setopt($curl_engine, CURLOPT_PROXYUSERPWD, $proxy_user.':'.$proxy_pass);
             }
             curl_setopt($curl_engine, CURLOPT_TIMEOUT, 15);
-            curl_setopt($curl_engine, CURLOPT_CONNECTTIMEOUT, 15);
-            //curl_setopt($curl_engine, CURLOPT_STDERR, '/home/user/www/vtopax.ru/curl_error.log');
-            
             $_04dd72e973847607c7d4e6cd938f170c49d14a9e78bedb7c2158d4c2 = curl_exec($curl_engine);
             curl_close($curl_engine);
             $_9b9540098da4f542604041ec8927619e4d00f84cf84223de20e7a88d18c0752fe525178a650f9f6e3818a80714305e53 = str_get_html($_04dd72e973847607c7d4e6cd938f170c49d14a9e78bedb7c2158d4c2);
