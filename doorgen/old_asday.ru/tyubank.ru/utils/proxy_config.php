@@ -1,7 +1,7 @@
 <?php
-	define("PROXY_USER", "EUR163086");
+	define("PROXY_USER", "VIPUA150861");
 
-	define("PROXY_PWD", "SIAV2EJLst");
+	define("PROXY_PWD", "ADwrHweVjG");
 	
 	define("PROXY_LIST_PWD", "txt/proxies.txt");
 ?>

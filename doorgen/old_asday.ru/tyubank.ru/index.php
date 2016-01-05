@@ -16,7 +16,8 @@ $page_meta_description="";
 $function = new Functions;
 $title_generator = new TitleGenerator;
 
-function rusdate($d, $format = 'j %MONTH% Y', $offset = 0)
+//default offset for moskow
+function rusdate($d, $format = 'j %MONTH% Y', $offset = 3)
 {
     $montharr = array('января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря');
     $dayarr = array('понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье');
@@ -68,7 +69,7 @@ function encodestring($str)
 function getKeyInfo($con,$page_key)
 {
 	$result_array = array();
-	$query_case_list = "SELECT key_value, key_value_latin, unix_timestamp(post_dt) posted_time FROM pages p, door_keys k WHERE k.id = p.key_id AND key_value_latin = ?";
+	$query_case_list = "SELECT key_value, key_value_latin, unix_timestamp(post_dt) posted_time FROM pages p, door_keys k ,page_content pc WHERE k.id = p.key_id AND pc.page_id = p.id AND pc.post_dt < now() AND key_value_latin = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
@@ -107,26 +108,26 @@ function getKeyInfo($con,$page_key)
 function getPageInfo($con,$page_url)
 {
 	$result_array = array();
-	$query_case_list = "SELECT p.id, p.title, p.meta_keywords, p.meta_description, p.post_dt FROM pages p, door_keys k WHERE k.id = p.key_id AND k.key_value_latin = ?";
+	$query_case_list = "SELECT p.id, p.title, p.meta_keywords, p.meta_description, pc.post_dt FROM pages p, door_keys k, page_content pc WHERE k.id = p.key_id AND pc.page_id = p.id AND k.key_value_latin = ?";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
 	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "s", $page_url)) {
-		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 
 	/* instead of bind_result: */
 	#echo "get result...";
 	if(!mysqli_stmt_bind_result($stmt, $id, $title, $meta_keywords, $meta_description, $post_dt)){
-		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	if(mysqli_stmt_fetch($stmt)) {
@@ -219,32 +220,32 @@ function getPageSnippets($con,$page_url)
 {
     global $stmt;
 	$snippets_array = array();
-	$query_case_list = "SELECT snp.title, snp.description, pc.snippets_index, snp.image_large, snp.image_small ".
-	                   " FROM page_content pc LEFT JOIN snippets snp ON snp.id = pc.snippet_id, pages p, door_keys k ".
-	                   " WHERE k.id = p.key_id AND pc.page_id = p.id AND k.key_value_latin = ? ORDER BY pc.snippets_index ASC, pc.main_flg DESC";
+	$query_case_list = " SELECT snp.title, snp.description, cd.snippets_index, snp.image_large, snp.image_small ".
+	                   " FROM page_content pc LEFT JOIN content_detail cd ON pc.id = cd.page_content_id, snippets snp , pages p, door_keys k ".
+	                   " WHERE k.id = p.key_id AND snp.id = cd.snippet_id AND pc.page_id = p.id AND k.key_value_latin = ? ORDER BY cd.snippets_index ASC, cd.main_flg DESC";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-		#print_r(error_get_last());
+		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		print_r(error_get_last());
 	}
 
 	//set values
 	#echo "set value...";
 	if (!mysqli_stmt_bind_param($stmt, "s", $page_url)) {
-		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-		#print_r(error_get_last());
+		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		print_r(error_get_last());
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-		#print_r(error_get_last());
+		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		print_r(error_get_last());
 	}
 
 	/* instead of bind_result: */
 	#echo "get result...";
 	if(!mysqli_stmt_bind_result($stmt, $title, $description, $snippets_index, $image_large, $image_small)){
-		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
-		#print_r(error_get_last());
+		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		print_r(error_get_last());
 	}
 	
 	$lastIdx = 0;
@@ -285,7 +286,8 @@ $url = $_SERVER["REQUEST_URI"];
 
 $page_key = "";
 
-#$url = "/sberbank-onlayn-zayavlenie-na-kredit/";
+#$url = "/alfa-bank-v-nijnem-novgorode/";
+#$url = "/";
 #$site_main_domain = "vtopax.ru";
 
 if(strcmp("/",$url) != 0){
@@ -362,7 +364,7 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 	//getting city news count
 	$query_count = " SELECT count(t.key_value) row_count ".
 	               " FROM (SELECT DISTINCT k.key_value FROM door_keys k, pages p LEFT JOIN page_content pc ON p.id=pc.page_id ".
-	               " WHERE k.id = p.key_id AND p.post_dt < now() AND pc.page_id IS NOT NULL) as t";
+	               " WHERE k.id = p.key_id AND pc.post_dt < now() AND k.key_value <> '/' AND pc.page_id IS NOT NULL) as t LIMIT ".($KEY_PER_PAGE * 10);
 	$result = mysqli_query($con,$query_count);
 	
 	$row = mysqli_fetch_assoc($result);
@@ -372,6 +374,7 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 	if($key_count>0){
 		//вычисляем последнюю страницы
 		$max_page_number = floor($key_count/$KEY_PER_PAGE);
+		
 		if($key_count%$KEY_PER_PAGE != 0){
 			$max_page_number = $max_page_number + 1;
 		}
@@ -388,9 +391,14 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 
 		#echo "Page processing...";
 		//prepare statement
-		$query_key_page_list =    "SELECT DISTINCT k.key_value, k.key_value_latin, unix_timestamp(p.post_dt) posted_time ".
-		                          " FROM door_keys k, pages p LEFT JOIN page_content pc ON p.id=pc.page_id ".
-		                          " WHERE k.id = p.key_id AND p.post_dt < now() AND pc.page_id IS NOT NULL ORDER BY post_dt DESC LIMIT ".$start_position.",".$KEY_PER_PAGE;
+		$query_key_page_list =      " SELECT DISTINCT k.key_value, k.key_value_latin, unix_timestamp(t2.post_dt) posted_time, t2.upd_flg, t2.posted_cnt, t2.page_id, ".
+                                    " ( SELECT COUNT(1) FROM page_content pcc WHERE t2.page_id=pcc.page_id) AS total_cnt  ".
+                                    " FROM door_keys k, pages p, ".
+                                    " (SELECT pc.*, t1.posted_cnt FROM page_content pc, ".
+                                    " (SELECT pci.*, MAX(pci.post_dt) max_post_dt, COUNT(1) posted_cnt FROM page_content pci WHERE pci.post_dt < now() GROUP BY pci.page_id) AS t1 ".
+                                    " WHERE pc.page_id = t1.page_id AND pc.post_dt = t1.max_post_dt ORDER BY pc.post_dt DESC LIMIT ".$start_position.",".$KEY_PER_PAGE.") AS t2 ".
+                                    " WHERE p.id=t2.page_id AND k.id = p.key_id AND k.key_value <> '/' ";
+		
 		#echo "query_city_list: ".$query_key_page_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_key_page_list))) {
 			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
@@ -403,7 +411,7 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 
 		/* instead of bind_result: */
 		#echo "get result...";
-		if(!mysqli_stmt_bind_result($stmt, $key_value, $key_value_latin, $posted_time )){
+		if(!mysqli_stmt_bind_result($stmt, $key_value, $key_value_latin, $posted_time, $upd_flg, $posted_cnt, $page_id, $total_cnt)){
 			#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
@@ -418,9 +426,14 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 			#echo "City name: ".$city_name."; key: ".$key_value;
 			
 			//generate link name
+			$updTitle = "";
+			#echo "upd_flg: ".$upd_flg;
+			#echo "page_content_count: ".$page_content_count;
+			if($total_cnt==$posted_cnt && $upd_flg==1) {
+			    $updTitle = "Обновлена информация по ";
+			}
 			
-			
-			$city_href = "<a href = \"http://".$site_main_domain."/".$key_value_latin."/\">".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
+			$city_href = "<a href = \"http://".$site_main_domain."/".$key_value_latin."/\">".$updTitle.$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
 			$news_block = $news_block.$city_href;
 		}
 		$template=preg_replace("/\[CITY_NEWS_1\]/", $news_block, $template);

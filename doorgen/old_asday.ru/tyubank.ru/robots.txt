@@ -4,4 +4,5 @@ Disallow: /news_content
 Disallow: /txt
 Disallow: /utils
 Disallow: /webstat
-Host: glagolez.ru
+Disallow: *.html
+Host: vtopax.ru
