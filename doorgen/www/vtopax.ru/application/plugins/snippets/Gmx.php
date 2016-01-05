@@ -1,0 +1,54 @@
+<?php
+
+class Gmx
+{
+	# Функция парсинга выдачи из Gmx.
+	public function Start($string, $language, $count, $F)
+	{
+		$snippets = array();
+
+		$query = urlencode(mb_strtolower($string, 'UTF-8'));
+		$url = "http://suche.gmx.net/web?origin=sf_adv&adv_q=$query&phrase=&any=&exclude=&webLanguages=lang_$language&pos=any&formatNegator=i&format=&dateRange=all&hostNegator=i&host=&pornFilter=nofilter&submit=Erweiterte+Suche";
+		$html = $F->GetHTML($url, 'suche.gmx.net');
+
+		if (!is_bool($html))
+		{
+			$i = 0;
+			foreach ($html->find('div[class="searchResults"] li') as $e)
+			{
+				$t = 'h3 a';
+				$d = 'p';
+
+				if (isset($e->find($t, 0)->plaintext))
+				{
+					$title = html_entity_decode($e->find($t, 0)->plaintext, ENT_QUOTES, 'UTF-8');
+				}
+
+				if (isset($e->find($d, 0)->plaintext))
+				{
+					$description = html_entity_decode($e->find($d, 0)->plaintext, ENT_QUOTES, 'UTF-8');
+				}
+
+				if ($i < $count)
+				{
+					if (!empty($title) and !empty($description))
+					{
+						$snippets[$i]['title'] = trim($title);
+						$snippets[$i]['description'] = trim($description);
+						$i++;
+					}
+				}
+			}
+
+			$html->clear();
+			$html = null; $e = null;
+			unset($html, $e);
+		}
+		else
+		{
+			$F->Error("Can't create outgoing request. Please check Gmx snippets plugin.");
+		}
+
+		return $snippets;
+	}
+}
