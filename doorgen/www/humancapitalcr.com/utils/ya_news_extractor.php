@@ -19,7 +19,7 @@ class YaNewsExtractor
 		
 		//check last news update
 		#echo "time: ".time()."; last_change_date_result_file: ".$last_change_date_result_file;
-		if( $last_change_date_result_file == 0 || ((time()-$last_change_date_result_file) > 600000)){
+		if( $last_change_date_result_file == 0 || ((time()-$last_change_date_result_file) > 600)){
 			//delete all previous news
 			#echo "Удаление старых новостей";
 			$dh = opendir($news_dir);
@@ -83,7 +83,7 @@ class YaNewsExtractor
 			$news_content = $function->GetHTML(NEWS_FEED,NEWS_FEED_DOMAIN);
 			$split_expr = '/m\_'.$news_content_field.'\[m\_'.$news_content_field.'\.length\]\=new\ f/';
 			$lines = preg_split($split_expr, $news_content);
-			echo var_dump($lines);
+			#echo var_dump($lines);
 		}
 		
 		//needed lines: 1,2,3,4,5

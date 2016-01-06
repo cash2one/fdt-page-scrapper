@@ -132,7 +132,7 @@ public class DoorgenPosterRunner {
 
 		connection = getConnection();
 		
-		keysDao = new KeysDao();
+		keysDao = new KeysDao(connection);
 		pagesDao = new PagesDao(connection);
 		snipDao = new SnippetsDao(connection);
 		pageCntntDao = new PageContentDao(connection, snipDao);

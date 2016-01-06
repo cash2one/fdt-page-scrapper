@@ -5,6 +5,7 @@ import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
 import java.util.Random;
+import java.util.TimeZone;
 
 public class DoorUtils {
 	
@@ -81,6 +82,17 @@ public class DoorUtils {
 	    return calendar.getTime().getTime();
 	}
 	
+/*	//TODO Processing time zone here
+	public static long getStartOfDay(long time, TimeZone timeZone) {
+		Date date = new Date(time);
+	    Calendar calendar = Calendar.getInstance();
+	    calendar.setTime(date);
+	    calendar.set(Calendar.HOUR_OF_DAY, 0);
+	    calendar.set(Calendar.MINUTE, 0);
+	    calendar.set(Calendar.SECOND, 0);
+	    calendar.set(Calendar.MILLISECOND, 0);
+	    return calendar.getTime().getTime();
+	}*/
 	
 	public static long calibratePostDate(long postTime, long curTime){
 		if(postTime < curTime){

@@ -10,10 +10,15 @@ import java.util.HashMap;
 
 import org.apache.log4j.Logger;
 
-public class KeysDao {
+public class KeysDao extends DaoCommon{
+	
 	private static final Logger log = Logger.getLogger(KeysDao.class);
 	
-	public ArrayList<String> getKeyList4Update(Connection connection, HashMap<String, Integer> keyMap, Integer minSnpCnt4PostPage) throws ClassNotFoundException, SQLException{
+	public KeysDao(Connection connection) {
+		super(connection);
+	}
+
+	public ArrayList<String> getKeyList4Update(HashMap<String, Integer> keyMap, Integer minSnpCnt4PostPage) throws ClassNotFoundException, SQLException{
 		ArrayList<String> keyList = new ArrayList<String>();
 
 

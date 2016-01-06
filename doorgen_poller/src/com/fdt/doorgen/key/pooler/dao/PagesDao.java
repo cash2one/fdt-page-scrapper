@@ -13,16 +13,14 @@ import org.apache.log4j.Logger;
 import com.fdt.doorgen.key.pooler.util.DoorUtils;
 import com.fdt.scrapper.task.SnippetTask;
 
-public class PagesDao {
+public class PagesDao extends DaoCommon{
+
 	private static final Logger log = Logger.getLogger(PagesDao.class);
 	
-	private Connection connection;
-	
 	public PagesDao(Connection connection) {
-		super();
-		this.connection = connection;
+		super(connection);
 	}
-
+	
 	public int insertPage(SnippetTask task, String hostName){
 		PreparedStatement prStmt = null;
 		Random rnd = new Random();
@@ -91,9 +89,17 @@ public class PagesDao {
 		return getPagesBySelect(slcQuery, "key_value");
 	}
 	
-	public ArrayList<String> getPages4Update(int updDateDiff){
+	public ArrayList<String> getPages4UpdateReplaceCntnt(int updDateDiff){
 		String slcQuery = 	" SELECT DISTINCT k.id, k.key_value FROM page_content pc, pages p, door_keys k " + 
 							" WHERE pc.page_id = p.id AND p.key_id = k.id AND k.key_value <> '/' AND pc.upd_flg=0 AND (DATEDIFF((now()),pc.post_dt) >  " + updDateDiff +") ";
+		return getPagesBySelect(slcQuery, "key_value");
+	}
+	
+	public ArrayList<String> getPages4UpdateAppendCntnt(int updDateDiff){
+		String slcQuery = 	" SELECT k.id, k.key_value, MAX(cd.snippets_index) " +
+							" FROM page_content pc, pages p, door_keys k, content_detail cd " +
+							" WHERE pc.page_id = p.id AND p.key_id = k.id AND cd.page_content_id = pc.id AND k.key_value <> '/' AND (DATEDIFF((now()),pc.post_dt) > " + updDateDiff + " ) " +
+							" GROUP BY k.id, k.key_value HAVING MAX(cd.snippets_index) < 9 ";
 		return getPagesBySelect(slcQuery, "key_value");
 	}
 	
@@ -140,49 +146,5 @@ public class PagesDao {
 		}
 
 		return count;
-	}
-	
-	private ArrayList<String> getPagesBySelect(String slcQuery, String extrParamNm)
-	{
-		ArrayList<String> result = new ArrayList<String>();
-		PreparedStatement prpStmt = null;
-		ResultSet rs = null;
-		try {
-			//TODO Insert snippets & page_content tables.
-			prpStmt = connection.prepareStatement(slcQuery);
-
-			rs = prpStmt.executeQuery();
-
-			if(rs != null){
-				while(rs.next()){
-					result.add(rs.getString(extrParamNm));
-				}
-			}
-
-		} catch (SQLException e) {
-			log.error(e);
-			e.printStackTrace();
-		}
-		finally{
-			if(rs != null){
-				try {
-					rs.close();
-				} catch (SQLException e) {
-					log.error(e);
-					e.printStackTrace();
-				}
-			}
-
-			if(prpStmt != null){
-				try {
-					prpStmt.close();
-				} catch (SQLException e) {
-					log.error(e);
-					e.printStackTrace();
-				}
-			}
-		}
-
-		return result;
 	}
 }

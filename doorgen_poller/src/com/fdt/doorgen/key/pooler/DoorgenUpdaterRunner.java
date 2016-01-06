@@ -10,6 +10,7 @@ import java.util.Random;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
+import com.fdt.doorgen.key.pooler.content.ContentStrategy;
 import com.fdt.doorgen.key.pooler.dao.KeysDao;
 import com.fdt.doorgen.key.pooler.dao.PageContentDao;
 import com.fdt.doorgen.key.pooler.dao.PagesDao;
@@ -24,8 +25,14 @@ public class DoorgenUpdaterRunner {
 
 	//TODO Read host name from config
 	private String connectionString = null;
+	
+	public static ContentStrategy STRATEGY_POLLER;
+	
+	
 
 	private static final String CONNECTION_STRING_LABEL = "connection_string";
+	
+	private static final String STRATEGY_NAME_LABEL = "strategy_name";
 
 	private Random rnd = new Random();
 
@@ -63,8 +70,16 @@ public class DoorgenUpdaterRunner {
 
 	private void executeWrapper() throws Exception{
 		try{
+			
 			int updDateDiff = 3 + rnd.nextInt(3);
-			ArrayList<String> keys = pagesDao.getPages4Update(updDateDiff);
+			
+			ArrayList<String> keys = null;
+			
+			if(STRATEGY_POLLER.isAppendContent()){
+				keys = pagesDao.getPages4UpdateAppendCntnt(updDateDiff);
+			}else{
+				keys = pagesDao.getPages4UpdateReplaceCntnt(updDateDiff);
+			}
 			//
 			Collections.shuffle(keys);
 
@@ -78,9 +93,17 @@ public class DoorgenUpdaterRunner {
 				postTime = DoorUtils.getRndNormalDistTime() + startOtDay;
 				postTime = DoorUtils.calibratePostDate(postTime, curTime);
 				connection.setAutoCommit(false);
-				int pcId = pageCntntDao.insertPageContent(keys.get(i),postTime);
+				
+				int pcId = -1;
+				
+				if(STRATEGY_POLLER.isAppendContent()){
+					pcId = pageCntntDao.getLastPageContentId(keys.get(i));
+				}else{
+					pcId = pageCntntDao.insertPageContent(keys.get(i),postTime);
+				}
+				
 				if(pcId > 0){
-					pageCntntDao.populateContent(keys.get(i), pcId);
+					pageCntntDao.populateContent(keys.get(i), pcId, STRATEGY_POLLER);
 					pageCntntDao.updPagesAsUpdated(keys.get(i));
 				}else{
 					throw new Exception("Page content record was not added for key: " + keys.get(i));
@@ -112,6 +135,13 @@ public class DoorgenUpdaterRunner {
 		ConfigManager.getInstance().loadProperties(cfgFilePath);
 
 		this.connectionString = ConfigManager.getInstance().getProperty(CONNECTION_STRING_LABEL);
+
+		//getting strategy for poller
+		if(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL) != null){
+			STRATEGY_POLLER = ContentStrategy.getByName(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL));
+		}else{
+			STRATEGY_POLLER = ContentStrategy.DEFAULT;
+		}
 
 		connection = getConnection();
 		connection.setAutoCommit(false);

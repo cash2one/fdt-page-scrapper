@@ -12,18 +12,17 @@ import java.util.Random;
 
 import org.apache.log4j.Logger;
 
+import com.fdt.doorgen.key.pooler.content.ContentStrategy;
 import com.fdt.doorgen.key.pooler.util.DoorUtils;
 import com.fdt.scrapper.task.SnippetTask;
 
-public class PageContentDao {
+public class PageContentDao extends DaoCommon {
 	private static final Logger log = Logger.getLogger(PageContentDao.class);
 	
-	private Connection connection;
 	private SnippetsDao snipDao;
 	
 	public PageContentDao(Connection connection, SnippetsDao snipDao) {
-		super();
-		this.connection = connection;
+		super(connection);
 		this.snipDao = snipDao;
 	}
 	
@@ -80,23 +79,31 @@ public class PageContentDao {
 		return pcId;
 	}
 
-
 	/** 
 	 * Randomly populate page content
 	 * @param key
 	 * @return
 	 */
-	public int[] populateContent(String key, int pcId){
+	//TODO Add proceudre for population content randomly & adding content to existed content
+	public int[] populateContent(String key, int pcId, ContentStrategy strategy){
 		Random rnd = new Random();
-		int blockCnt = 3;
-		int blockSize = 3;
-		ArrayList<Integer> snpIds = snipDao.getInsertedSnpId(key);
+		
+		ArrayList<Integer> snpIds = new ArrayList<Integer>();
+		//idx for already existed content
+		int lastMaxSnpIdx = 0;
+		
+		if(strategy.isAppendContent()){
+			snpIds = snipDao.getNotUsedSnpId(key);
+		}else{
+			snpIds = snipDao.getAllSnpId4Key(key);
+		}
+		
 		int[] result = null;
 
 		int snpCnt = snpIds.size();
 		PreparedStatement batchStatement = null;
 
-		int rndBatchSnpCnt[] = DoorUtils.getRndBlocksSize(blockCnt, blockSize);
+		int rndBatchSnpCnt[] = DoorUtils.getRndBlocksSize(strategy.getMnBlockCnt(), strategy.getBlockSize());
 		//если количество сниппетов не достаточно, то контент не будет сгенерирован
 		if(DoorUtils.arraySum(rndBatchSnpCnt) > snpCnt){
 			return new int[]{};
@@ -116,19 +123,26 @@ public class PageContentDao {
 					" WHERE p.key_id = k.id AND k.key_value = ? ");
 
 
-			for(int i = 0; i < 3; i++)
+			//TODO get last max snippet index
+			if(strategy.isAppendContent()){
+				lastMaxSnpIdx = getSnipIdx4PageCntnt(pcId) % strategy.getBlockSize();
+			}else{
+				lastMaxSnpIdx = 0;
+			}
+			
+			for(int i = 0; i < strategy.getMnBlockCnt(); i++)
 			{
 				for(int j = 1; j <= rndBatchSnpCnt[i]; j++)
 				{
 					//get discription count
-					int descCnt = 1+rnd.nextInt(3);
+					int descCnt = 1+rnd.nextInt(strategy.getMaxDescCnt());
 					boolean ifMainNotInserted = true;
 
 					for(int k = 0; k < descCnt; k++)
 					{
 						batchStatement.setInt(1, pcId);
 						batchStatement.setInt(2, snpIds.get(rndSeq.remove(0)));
-						batchStatement.setInt(3, i*3 + j);
+						batchStatement.setInt(3, i*strategy.getMnBlockCnt() + j + lastMaxSnpIdx);
 						batchStatement.setBoolean(4, ifMainNotInserted || false);
 						batchStatement.setString(5, key);
 						ifMainNotInserted = false;
@@ -357,5 +371,71 @@ public class PageContentDao {
 		}
 
 		return count;
+	}
+	
+	/**
+	 * Получаем последний id для page_content
+	 * @return
+	 */
+	public int getLastPageContentId(String key)
+	{
+		PreparedStatement prpStmt = null;
+		ResultSet rs = null;
+		int pcId = -1;
+		
+		try {
+			//TODO Insert snippets & page_content tables.
+			prpStmt = connection.prepareStatement( " " +
+							" SELECT DISTINCT pc.id FROM page_content pc, pages p, door_keys k " +
+							" WHERE pc.page_id = p.id AND p.key_id = k.id AND k.key_value=? ORDER BY pc.upd_dt DESC ");
+			
+			prpStmt.setString(1, key);
+
+			rs = prpStmt.executeQuery();
+
+			if(rs != null){
+				while(rs.next()){
+					pcId = rs.getInt("id");
+				}
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally{
+			if(rs != null){
+				try {
+					rs.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+
+			if(prpStmt != null){
+				try {
+					prpStmt.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return pcId;
+	}
+	
+	/**
+	 * Получаем максимальный индеск для content_detail
+	 * @return
+	 */
+	public int getSnipIdx4PageCntnt(int pcId)
+	{
+			String slcQuery = 	" SELECT MAX(cd.snippets_index) max_snip_idx, pc.id " +
+								" FROM page_content pc, content_detail cd " + 
+								" WHERE cd.page_content_id = pc.id AND pc.id = "+ pcId + " " +
+								" GROUP BY pc.id";
+			return Integer.valueOf(getPagesBySelect(slcQuery, "max_snip_idx").get(0));
 	}
 }

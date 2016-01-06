@@ -12,14 +12,13 @@ import com.fdt.doorgen.key.pooler.util.DoorUtils;
 import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTask;
 
-public class SnippetsDao {
+public class SnippetsDao extends DaoCommon {
 	private static final Logger log = Logger.getLogger(SnippetsDao.class);
 	
 	private Connection connection;
 	
 	public SnippetsDao(Connection connection) {
-		super();
-		this.connection = connection;
+		super(connection);
 	}
 
 	public int[] insertSnippets(SnippetTask task){
@@ -60,7 +59,12 @@ public class SnippetsDao {
 		return result;
 	}
 	
-	public ArrayList<Integer> getInsertedSnpId(String key){
+	/**
+	 * Getting all snippets (already used and not used) for appropriated key.
+	 * @param key
+	 * @return
+	 */
+	public ArrayList<Integer> getAllSnpId4Key(String key){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		PreparedStatement prpStmt = null;
 		ResultSet rs = null;
@@ -69,6 +73,55 @@ public class SnippetsDao {
 			prpStmt = connection.prepareStatement(" SELECT s.id FROM snippets s, door_keys k " +
 					" WHERE k.key_value = ? AND k.id = s.key_id ");
 			prpStmt.setString(1, key);
+
+			rs = prpStmt.executeQuery();
+
+			if(rs != null){
+				while(rs.next()){
+					result.add(rs.getInt(1));
+				}
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally{
+			if(rs != null){
+				try {
+					rs.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+
+			if(prpStmt != null){
+				try {
+					prpStmt.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return result;
+	}
+	
+	public ArrayList<Integer> getNotUsedSnpId(String key){
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		PreparedStatement prpStmt = null;
+		ResultSet rs = null;
+		try {
+			//TODO Insert snippets & page_content tables.
+			prpStmt = connection.prepareStatement(" SELECT s.id FROM snippets s, door_keys k " +
+					" WHERE k.key_value = ? AND k.id = s.key_id AND s.id NOT IN (" + 
+					" SELECT DISTINCT snp.id " + 
+					" FROM page_content pc LEFT JOIN content_detail cd ON pc.id = cd.page_content_id, snippets snp , pages p, door_keys k " + 
+					" WHERE k.id = p.key_id AND snp.id = cd.snippet_id AND pc.page_id = p.id AND k.key_value = ? ORDER BY snp.id ASC" + ")");
+			prpStmt.setString(1, key);
+			prpStmt.setString(2, key);
 
 			rs = prpStmt.executeQuery();
 

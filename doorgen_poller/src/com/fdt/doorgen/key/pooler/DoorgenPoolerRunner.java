@@ -4,7 +4,6 @@ import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,6 +14,7 @@ import java.util.concurrent.Executors;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
+import com.fdt.doorgen.key.pooler.content.ContentStrategy;
 import com.fdt.doorgen.key.pooler.dao.KeysDao;
 import com.fdt.doorgen.key.pooler.dao.PageContentDao;
 import com.fdt.doorgen.key.pooler.dao.PagesDao;
@@ -49,6 +49,8 @@ public class DoorgenPoolerRunner{
 	private int maxPageNum = 50;
 
 	public static Integer MIN_SNIPPET_COUNT_FOR_POST_PAGE = 27;
+	
+	public static ContentStrategy STRATEGY_POLLER;
 
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
 	private final static String PROXY_PASS_LABEL = "proxy_pass";
@@ -63,6 +65,8 @@ public class DoorgenPoolerRunner{
 	private static final String HOST_NAME_LABEL = "host_name";
 	
 	private static final String MIN_SNIPPET_COUNT_FOR_POST_PAGE_LABEL="min_snip_cnt_for_poller";
+	
+	private static final String STRATEGY_NAME_LABEL = "strategy_name";
 
 
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
@@ -149,7 +153,7 @@ public class DoorgenPoolerRunner{
 	}
 	
 	private ArrayList<String> getKeyList4Update() throws ClassNotFoundException, SQLException{
-		return keysDao.getKeyList4Update(connection, keyMap, MIN_SNIPPET_COUNT_FOR_POST_PAGE);
+		return keysDao.getKeyList4Update(keyMap, MIN_SNIPPET_COUNT_FOR_POST_PAGE);
 	}
 
 	public DoorgenPoolerRunner(String cfgFilePath) throws Exception{
@@ -168,6 +172,13 @@ public class DoorgenPoolerRunner{
 		
 		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_FOR_POST_PAGE_LABEL) != null){
 			MIN_SNIPPET_COUNT_FOR_POST_PAGE = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_FOR_POST_PAGE_LABEL));
+		}
+		
+		//getting strategy for poller
+		if(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL) != null){
+			STRATEGY_POLLER = ContentStrategy.getByName(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL));
+		}else{
+			STRATEGY_POLLER = ContentStrategy.DEFAULT;
 		}
 
 		String freqStr = ConfigManager.getInstance().getProperty(FREQUENCY_LABEL);
@@ -198,7 +209,7 @@ public class DoorgenPoolerRunner{
 		
 		connection = getConnection();
 		
-		keysDao = new KeysDao();
+		keysDao = new KeysDao(connection);
 		pagesDao = new PagesDao(connection);
 		snipDao = new SnippetsDao(connection);
 		pageCntntDao = new PageContentDao(connection, snipDao);
@@ -310,7 +321,7 @@ public class DoorgenPoolerRunner{
 		{
 			result = null;
 			int pcId = pageCntntDao.insertPageContent(key);
-			result = pageCntntDao.populateContent(key, pcId);
+			result = pageCntntDao.populateContent(key, pcId, STRATEGY_POLLER);
 		}
 		else{
 			return;
