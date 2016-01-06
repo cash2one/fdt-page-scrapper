@@ -62,6 +62,7 @@ public class DoorgenPoolerRunner{
 	private static final String SNIPPET_SEARCH_PAGE_MAX_LABEL = "snippet_search_page_max";
 
 	private static final String CONNECTION_STRING_LABEL = "connection_string";
+	private static final String GLOBAL_TITLE_LABEL = "global_title";
 	private static final String HOST_NAME_LABEL = "host_name";
 	
 	private static final String MIN_SNIPPET_COUNT_FOR_POST_PAGE_LABEL="min_snip_cnt_for_poller";
@@ -74,6 +75,7 @@ public class DoorgenPoolerRunner{
 	//TODO Read host name from config
 	private String connectionString = null;
 	private String hostName = null;
+	private String globalTitle = null;
 
 	Random rnd = new Random();
 
@@ -135,7 +137,7 @@ public class DoorgenPoolerRunner{
 
 			while(keysList.size() > 0)
 			{
-				execute(hostName);
+				execute(hostName, globalTitle);
 				keysList = getKeyList4Update();
 				taskFactory.clear();
 				taskFactory.loadTaskQueue(keysList, source, frequencies, lang);
@@ -168,6 +170,7 @@ public class DoorgenPoolerRunner{
 		this.lang = ConfigManager.getInstance().getProperty(LANG_LABEL);
 
 		this.hostName = ConfigManager.getInstance().getProperty(HOST_NAME_LABEL);
+		this.globalTitle = ConfigManager.getInstance().getProperty(GLOBAL_TITLE_LABEL);
 		this.connectionString = ConfigManager.getInstance().getProperty(CONNECTION_STRING_LABEL);
 		
 		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_FOR_POST_PAGE_LABEL) != null){
@@ -239,13 +242,13 @@ public class DoorgenPoolerRunner{
 	}*/
 
 
-	public void execute(final String hostName) throws ClassNotFoundException, SQLException{
+	public void execute(final String hostName, final String globalTitle) throws ClassNotFoundException, SQLException{
 		synchronized (this) {
 			//run saver thread
 			saver = new SaverThread(taskFactory,new IResultProcessor() {
 
 				public void processResult(SnippetTask task) {
-					pollPagesTable(task, hostName);
+					pollPagesTable(task, hostName, globalTitle);
 				}
 
 			});
@@ -302,13 +305,13 @@ public class DoorgenPoolerRunner{
 		return connection;
 	}
 
-	private void pollPagesTable(SnippetTask task, String hostName){
+	private void pollPagesTable(SnippetTask task, String hostName, String globalTitle){
 		int[] result = null;
 		int pId = -1;
 		String key = task.getKeyWordsOrig();
 		if(keyMap.get(task.getKeyWordsOrig()) == 0){
 			//if all snipepts were extracted - create page
-			pagesDao.insertPage(task, hostName);
+			pagesDao.insertPage(task, hostName, globalTitle);
 		}
 
 		//TODO Insert images

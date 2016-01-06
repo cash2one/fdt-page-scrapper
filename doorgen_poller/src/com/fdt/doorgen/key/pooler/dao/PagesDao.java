@@ -21,7 +21,7 @@ public class PagesDao extends DaoCommon{
 		super(connection);
 	}
 	
-	public int insertPage(SnippetTask task, String hostName){
+	public int insertPage(SnippetTask task, String hostName, String globalTitle){
 		PreparedStatement prStmt = null;
 		Random rnd = new Random();
 		ResultSet rs = null;
@@ -30,7 +30,8 @@ public class PagesDao extends DaoCommon{
 			StringBuffer title = new StringBuffer();
 			title.append(task.getKeyWordsOrig().substring(0, 1).toUpperCase())
 			.append(task.getKeyWordsOrig().substring(1).toLowerCase())
-			.append(" | Абсолютный лидер в сфере кредитования | ")
+			//TODO Exclude title from sources
+			.append(" | ").append(globalTitle).append(" | ")
 			.append( hostName);
 
 			prStmt = connection.prepareStatement(" INSERT INTO pages (key_id, title, meta_keywords, meta_description, upd_dt) " +
