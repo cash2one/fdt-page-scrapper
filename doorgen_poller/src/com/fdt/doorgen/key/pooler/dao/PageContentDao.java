@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Random;
@@ -14,7 +13,6 @@ import org.apache.log4j.Logger;
 
 import com.fdt.doorgen.key.pooler.content.ContentStrategy;
 import com.fdt.doorgen.key.pooler.util.DoorUtils;
-import com.fdt.scrapper.task.SnippetTask;
 
 public class PageContentDao extends DaoCommon {
 	private static final Logger log = Logger.getLogger(PageContentDao.class);
@@ -90,7 +88,7 @@ public class PageContentDao extends DaoCommon {
 		
 		ArrayList<Integer> snpIds = new ArrayList<Integer>();
 		//idx for already existed content
-		int lastMaxSnpIdx = 0;
+		int idxShift = 0;
 		
 		if(strategy.isAppendContent()){
 			snpIds = snipDao.getNotUsedSnpId(key);
@@ -103,7 +101,7 @@ public class PageContentDao extends DaoCommon {
 		int snpCnt = snpIds.size();
 		PreparedStatement batchStatement = null;
 
-		int rndBatchSnpCnt[] = DoorUtils.getRndBlocksSize(strategy.getMnBlockCnt(), strategy.getBlockSize());
+		int rndBatchSnpCnt[] = DoorUtils.getRndBlocksSize(strategy.getMnBlockCnt(), strategy.getBlockSizePerPost());
 		//если количество сниппетов не достаточно, то контент не будет сгенерирован
 		if(DoorUtils.arraySum(rndBatchSnpCnt) > snpCnt){
 			return new int[]{};
@@ -125,9 +123,9 @@ public class PageContentDao extends DaoCommon {
 
 			//TODO get last max snippet index
 			if(strategy.isAppendContent()){
-				lastMaxSnpIdx = getSnipIdx4PageCntnt(pcId) % strategy.getBlockSize();
+				idxShift = getSnipIdx4PageCntnt(pcId) % strategy.getBlockSize();
 			}else{
-				lastMaxSnpIdx = 0;
+				idxShift = 0;
 			}
 			
 			for(int i = 0; i < strategy.getMnBlockCnt(); i++)
@@ -142,7 +140,7 @@ public class PageContentDao extends DaoCommon {
 					{
 						batchStatement.setInt(1, pcId);
 						batchStatement.setInt(2, snpIds.get(rndSeq.remove(0)));
-						batchStatement.setInt(3, i*strategy.getMnBlockCnt() + j + lastMaxSnpIdx);
+						batchStatement.setInt(3, i*strategy.getMnBlockCnt() + j + idxShift);
 						batchStatement.setBoolean(4, ifMainNotInserted || false);
 						batchStatement.setString(5, key);
 						ifMainNotInserted = false;
@@ -436,6 +434,11 @@ public class PageContentDao extends DaoCommon {
 								" FROM page_content pc, content_detail cd " + 
 								" WHERE cd.page_content_id = pc.id AND pc.id = "+ pcId + " " +
 								" GROUP BY pc.id";
-			return Integer.valueOf(getPagesBySelect(slcQuery, "max_snip_idx").get(0));
+			ArrayList<String> result = getPagesBySelect(slcQuery, "max_snip_idx");
+			if(result != null && result.size() > 0){
+				return Integer.valueOf(result.get(0));
+			}
+			
+			return 0;
 	}
 }

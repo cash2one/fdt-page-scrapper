@@ -15,8 +15,6 @@ import com.fdt.scrapper.task.SnippetTask;
 public class SnippetsDao extends DaoCommon {
 	private static final Logger log = Logger.getLogger(SnippetsDao.class);
 	
-	private Connection connection;
-	
 	public SnippetsDao(Connection connection) {
 		super(connection);
 	}
