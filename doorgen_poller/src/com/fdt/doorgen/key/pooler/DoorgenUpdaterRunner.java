@@ -94,16 +94,19 @@ public class DoorgenUpdaterRunner {
 				postTime = DoorUtils.calibratePostDate(postTime, curTime);
 				connection.setAutoCommit(false);
 				
-				int pcId = -1;
+				int pcIdPrev = -1;
+				int pcIdNew = -1;
 				
 				if(STRATEGY_POLLER.isAppendContent()){
-					pcId = pageCntntDao.getLastPageContentId(keys.get(i));
-				}else{
-					pcId = pageCntntDao.insertPageContent(keys.get(i),postTime);
+					pcIdPrev = pageCntntDao.getLastPageContentId(keys.get(i));
 				}
 				
-				if(pcId > 0){
-					pageCntntDao.populateContent(keys.get(i), pcId, STRATEGY_POLLER);
+				pcIdNew = pageCntntDao.insertPageContent(keys.get(i),postTime);
+				
+				log.info(String.format("Page with page_content.id=%s will be replaced with page_content.id=%s", pcIdPrev, pcIdNew));
+				
+				if(pcIdNew > 0){
+					pageCntntDao.populateContent(keys.get(i), pcIdNew, pcIdPrev, STRATEGY_POLLER);
 					pageCntntDao.updPagesAsUpdated(keys.get(i));
 				}else{
 					throw new Exception("Page content record was not added for key: " + keys.get(i));

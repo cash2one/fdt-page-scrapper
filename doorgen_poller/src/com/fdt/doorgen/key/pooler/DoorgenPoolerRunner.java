@@ -324,7 +324,7 @@ public class DoorgenPoolerRunner{
 		{
 			result = null;
 			int pcId = pageCntntDao.insertPageContent(key);
-			result = pageCntntDao.populateContent(key, pcId, STRATEGY_POLLER);
+			result = pageCntntDao.populateContent(key, pcId, -1, STRATEGY_POLLER);
 		}
 		else{
 			return;

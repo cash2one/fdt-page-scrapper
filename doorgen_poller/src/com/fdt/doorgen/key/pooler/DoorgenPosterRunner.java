@@ -11,6 +11,7 @@ import java.util.Random;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
+import com.fdt.doorgen.key.pooler.content.ContentStrategy;
 import com.fdt.doorgen.key.pooler.dao.KeysDao;
 import com.fdt.doorgen.key.pooler.dao.PageContentDao;
 import com.fdt.doorgen.key.pooler.dao.PagesDao;
@@ -26,8 +27,14 @@ public class DoorgenPosterRunner {
 	private String connectionString = null;
 	private TimeString timeStr;
 	private File timeFile;
+
+	public static ContentStrategy STRATEGY_POLLER;
 	
+
 	private static final String CONNECTION_STRING_LABEL = "connection_string";
+	
+	private static final String STRATEGY_NAME_LABEL = "strategy_name";
+	
 	private static final String TIME_TABLE_LABLE = "time_table";
 
 	Random rnd = new Random();
@@ -38,7 +45,7 @@ public class DoorgenPosterRunner {
 	private PagesDao pagesDao;
 	private SnippetsDao snipDao;
 	private PageContentDao pageCntntDao;
-	
+
 	/**
 	 * args[0] - path to config file
 	 * @throws Exception 
@@ -50,7 +57,7 @@ public class DoorgenPosterRunner {
 			System.out.println("Working Directory = " +  System.getProperty("user.dir")); 
 			ConfigManager.getInstance().loadProperties(args[0]);
 			System.out.println(args[0]);
-			
+
 			DOMConfigurator.configure("log4j_poster.xml");
 
 			DoorgenPosterRunner taskRunner = null;
@@ -67,23 +74,29 @@ public class DoorgenPosterRunner {
 	private void executeWrapper() throws Exception{
 		try{
 			int posted = pagesDao.getPostedCnt4Day();
+
+			log.info("Already posted new count " + posted + ";Time string: " + timeStr.toString());
 			
 			if(posted >= timeStr.getMin()){
 				log.info("All news were posted for a day. Poster will end work");
 				TimeTable.returnTimeSrt(timeStr, timeFile);
 				return;
 			}
-			
+
 			ArrayList<String> keys = pagesDao.getPages4Post();
-			Collections.shuffle(keys);
 			
+			//if we need mix keys
+			if(STRATEGY_POLLER.isMixKeys()){
+				Collections.shuffle(keys);
+			}
+
 			int postCount = timeStr.getRndCnt();
-			
+
 			log.info(String.format("%d new will be posted.",postCount));
-			
+
 			long curTime = System.currentTimeMillis();
 			long startOtDay = DoorUtils.getStartOfDay(curTime);
-			
+
 			int postedCnt = 0;
 			for(int i = 0; i < postCount && i < keys.size(); i++){
 				//get normal distribution time value
@@ -93,7 +106,7 @@ public class DoorgenPosterRunner {
 				log.info(String.format("Try to post key %s with post time %s",keys.get(i), postTime));
 				postedCnt += pageCntntDao.postPage(keys.get(i), postTime);
 			}
-			
+
 			//if records were not updated in DB - return time string 
 			if(postedCnt == 0){
 				TimeTable.returnTimeSrt(timeStr, timeFile);
@@ -111,13 +124,20 @@ public class DoorgenPosterRunner {
 			}
 		}
 	}
-	
+
 	public DoorgenPosterRunner(String cfgFilePath) throws Exception
 	{
 		ConfigManager.getInstance().loadProperties(cfgFilePath);
 
 		this.connectionString = ConfigManager.getInstance().getProperty(CONNECTION_STRING_LABEL);
-		
+
+		//getting strategy for poller
+		if(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL) != null){
+			STRATEGY_POLLER = ContentStrategy.getByName(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL));
+		}else{
+			STRATEGY_POLLER = ContentStrategy.DEFAULT;
+		}
+
 		String timeTableStr = ConfigManager.getInstance().getProperty(TIME_TABLE_LABLE);
 		if(timeTableStr != null && !"".equals(timeTableStr.trim())){
 			timeFile = new File(timeTableStr);
@@ -130,14 +150,15 @@ public class DoorgenPosterRunner {
 			throw new Exception("TimeFile for time table was not specified in the config file.");
 		}
 
+
 		connection = getConnection();
-		
+
 		keysDao = new KeysDao(connection);
 		pagesDao = new PagesDao(connection);
 		snipDao = new SnippetsDao(connection);
 		pageCntntDao = new PageContentDao(connection, snipDao);
 	}
-	
+
 	private Connection getConnection() throws SQLException, ClassNotFoundException
 	{
 		Class.forName("com.mysql.jdbc.Driver");

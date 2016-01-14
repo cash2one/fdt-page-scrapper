@@ -4,19 +4,19 @@
 
 	#Параметр md5 пароля для доступа к панели управления.
 	#password
-	define("DB_USER_NAME", "vtopax");
+	define("DB_USER_NAME", "humancapitalcr");
 
 	#Параметр корня сайта.
 	define("DB_USER_PWD", "lol200");
 
 	#Параметр названия сайта.
-	define("DB_NAME", "vtopax");
+	define("DB_NAME", "humancapitalcr");
 	
 	#Параметр названия сайта.
 	define("HEADER_KEYS", "");
 	
 	#Параметрт тайтла страниц сайта
-	define("MAIN_TITLE", "Абсолютный лидер в сфере кредитования");
+	define("MAIN_TITLE", "Latest medical news");
 	
 	#Параметр URL отвечающий за получение новостей
 	define("NEWS_FEED", "http://news.yandex.ru/ru/business5.utf8.js");

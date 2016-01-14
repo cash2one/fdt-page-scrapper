@@ -497,7 +497,7 @@ $template=preg_replace("/\[MAIN_TITLE\]/", MAIN_TITLE, $template);
 $template=preg_replace("/\[DESCRIPTION\]/", $page_meta_description, $template);
 
 //print last news
-if($current_page_type == "MAIN_PAGE_PAGING"){
+/*if($current_page_type == "MAIN_PAGE_PAGING"){
 	$news_content_folder = './news_content/';
 	$news_extractor = new YaNewsExtractor;
 	$news_file_name = $news_extractor->isNewsUpdateNeed($news_content_folder);
@@ -510,7 +510,7 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 		$extractd_news = file_get_contents($news_file_name); 
 	}
 	$template=preg_replace("/\[LAST_NEWS\]/", $extractd_news, $template);
-}
+}*/
 
 unset($page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator, $extractd_news, $news_extractor, $url_for_request);
 mysqli_close($con);

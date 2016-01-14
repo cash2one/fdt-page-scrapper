@@ -83,7 +83,7 @@ public class PageContentDao extends DaoCommon {
 	 * @return
 	 */
 	//TODO Add proceudre for population content randomly & adding content to existed content
-	public int[] populateContent(String key, int pcId, ContentStrategy strategy){
+	public int[] populateContent(String key, int pcIdNew, int pcIdPrev, ContentStrategy strategy){
 		Random rnd = new Random();
 		
 		ArrayList<Integer> snpIds = new ArrayList<Integer>();
@@ -100,8 +100,9 @@ public class PageContentDao extends DaoCommon {
 
 		int snpCnt = snpIds.size();
 		PreparedStatement batchStatement = null;
+		PreparedStatement copyStatement = null;
 
-		int rndBatchSnpCnt[] = DoorUtils.getRndBlocksSize(strategy.getMnBlockCnt(), strategy.getBlockSizePerPost());
+		int rndBatchSnpCnt[] = DoorUtils.getRndBlocksSize(strategy.getMnBlockCnt(), strategy.getBlockCntPerPost());
 		//если количество сниппетов не достаточно, то контент не будет сгенерирован
 		if(DoorUtils.arraySum(rndBatchSnpCnt) > snpCnt){
 			return new int[]{};
@@ -109,12 +110,28 @@ public class PageContentDao extends DaoCommon {
 
 		ArrayList<Integer> rndSeq = DoorUtils.getRandomSequense(snpCnt);
 		
-		if(pcId < 0){
+		if(pcIdNew < 0){
 			return null;
 		}
 
 		try {
-			//TODO Insert snippets & page_content tables.
+			if(strategy.isAppendContent()){
+				//TODO Copy previous snippets values to new pcId
+				//Insert snippets & page_content tables.
+				copyStatement = connection.prepareStatement("INSERT INTO content_detail (page_content_id, snippet_id, snippets_index, main_flg, upd_dt) " +
+						" SELECT ?, cd.snippet_id, cd.snippets_index, cd.main_flg, now() " + 
+						" FROM content_detail cd" + 
+						" WHERE cd.page_content_id = ? ORDER BY cd.id");
+				
+				copyStatement.setInt(1, pcIdNew);
+				copyStatement.setInt(2, pcIdPrev);
+				
+				if(copyStatement != null){
+					copyStatement.executeUpdate(); // Execute every 1000 items.
+				}
+			}
+			
+			//Insert snippets & page_content tables.
 			batchStatement = connection.prepareStatement("INSERT INTO content_detail (page_content_id, snippet_id, snippets_index, main_flg, upd_dt) " +
 					" SELECT ?, ?, ?, ?, now() " + 
 					" FROM pages p, door_keys k" + 
@@ -123,7 +140,7 @@ public class PageContentDao extends DaoCommon {
 
 			//TODO get last max snippet index
 			if(strategy.isAppendContent()){
-				idxShift = getSnipIdx4PageCntnt(pcId) % strategy.getBlockSize();
+				idxShift = getSnipIdx4PageCntnt(pcIdPrev) % strategy.getBlockSize();
 			}else{
 				idxShift = 0;
 			}
@@ -138,7 +155,7 @@ public class PageContentDao extends DaoCommon {
 
 					for(int k = 0; k < descCnt; k++)
 					{
-						batchStatement.setInt(1, pcId);
+						batchStatement.setInt(1, pcIdNew);
 						batchStatement.setInt(2, snpIds.get(rndSeq.remove(0)));
 						batchStatement.setInt(3, i*strategy.getMnBlockCnt() + j + idxShift);
 						batchStatement.setBoolean(4, ifMainNotInserted || false);
@@ -161,6 +178,15 @@ public class PageContentDao extends DaoCommon {
 			if(batchStatement != null){
 				try {
 					batchStatement.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			
+			if(copyStatement != null){
+				try {
+					copyStatement.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -290,6 +316,7 @@ public class PageContentDao extends DaoCommon {
 			count = prStmt.executeUpdate();
 			
 		} catch (SQLException e) {
+			log.error("Error for key value: " + key);
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

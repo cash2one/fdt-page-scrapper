@@ -1,3 +1,31 @@
 2015-12-17 15:51:12,094- INFO(DoorgenPosterRunner.java:76)-5 new will be posted.
 2015-12-17 16:07:46,082- INFO(DoorgenPosterRunner.java:77)-All news were posted for a day. Posted ends work
 2015-12-18 08:52:25,592- INFO(DoorgenPosterRunner.java:77)-All news were posted for a day. Poster will end work
+2016-01-14 14:53:48,704-ERROR(ConfigManager.java:30)-Reading PROPERTIES file: FileNotFoundException exception occured: config.ini (The system cannot find the file specified)
+2016-01-14 14:53:48,721- WARN(ConfigManager.java:37)-Error while initializtion
+java.lang.NullPointerException
+	at com.fdt.scrapper.task.ConfigManager.loadProperties(ConfigManager.java:35)
+	at com.fdt.doorgen.key.pooler.DoorgenPosterRunner.<init>(DoorgenPosterRunner.java:128)
+	at com.fdt.doorgen.key.pooler.DoorgenPosterRunner.main(DoorgenPosterRunner.java:65)
+2016-01-14 14:53:48,727-ERROR(DoorgenPosterRunner.java:67)-TimeFile for time table was not specified in the config file.
+java.lang.Exception: TimeFile for time table was not specified in the config file.
+	at com.fdt.doorgen.key.pooler.DoorgenPosterRunner.<init>(DoorgenPosterRunner.java:148)
+	at com.fdt.doorgen.key.pooler.DoorgenPosterRunner.main(DoorgenPosterRunner.java:65)
+2016-01-14 14:54:59,357- INFO(DoorgenPosterRunner.java:79)-All news were posted for a day. Poster will end work
+2016-01-14 15:16:00,997- INFO(DoorgenPosterRunner.java:93)-7 new will be posted.
+2016-01-14 15:16:01,010- INFO(DoorgenPosterRunner.java:104)-Try to post key Лада гранта в кредит сбербанк with post time 1452850302160
+2016-01-14 15:18:28,048- INFO(DoorgenPosterRunner.java:104)-Try to post key Кредит екатеринбург без справки о доходах with post time 1452828154492
+2016-01-14 15:18:30,781- INFO(DoorgenPosterRunner.java:104)-Try to post key Кредит под залог форум with post time 1452838148292
+2016-01-14 15:18:30,905- INFO(DoorgenPosterRunner.java:104)-Try to post key Кредитные карты в день обращения with post time 1452829197725
+2016-01-14 15:18:31,028- INFO(DoorgenPosterRunner.java:104)-Try to post key Кредит это выгодно with post time 1452858164916
+2016-01-14 15:18:31,153- INFO(DoorgenPosterRunner.java:104)-Try to post key Банк хоум кредит саратов вклады with post time 1452828452198
+2016-01-14 15:18:31,278- INFO(DoorgenPosterRunner.java:104)-Try to post key Ипотека без первоначального взноса спб with post time 1452848132934
+2016-01-14 15:18:31,401- INFO(DoorgenPosterRunner.java:112)-7 new were posted.
+2016-01-14 15:23:40,464- INFO(DoorgenPosterRunner.java:93)-6 new will be posted.
+2016-01-14 15:23:40,474- INFO(DoorgenPosterRunner.java:104)-Try to post key Русский стандарт хоум кредит with post time 1452822983955
+2016-01-14 15:23:40,599- INFO(DoorgenPosterRunner.java:104)-Try to post key Кредит малому бизнесу спб with post time 1452846246652
+2016-01-14 15:23:40,723- INFO(DoorgenPosterRunner.java:104)-Try to post key Получить кредит без справки о доходах москва with post time 1452844782457
+2016-01-14 15:23:40,848- INFO(DoorgenPosterRunner.java:104)-Try to post key Швидкий кредит готівкою with post time 1452846879941
+2016-01-14 15:23:40,973- INFO(DoorgenPosterRunner.java:104)-Try to post key Кредит мтс екатеринбург with post time 1452852529811
+2016-01-14 15:23:41,096- INFO(DoorgenPosterRunner.java:104)-Try to post key Хоум кредит горно алтайск with post time 1452815524490
+2016-01-14 15:23:41,221- INFO(DoorgenPosterRunner.java:112)-6 new were posted.

@@ -86,7 +86,7 @@ public class PagesDao extends DaoCommon{
 	public ArrayList<String> getPages4Post(){
 		String slcQuery = 	" SELECT DISTINCT k.id, k.key_value, pc.id " + 
 							" FROM page_content pc, pages p, door_keys k " + 
-							" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.key_value <> '/' AND pc.upd_flg=0 AND (pc.post_dt > now() + INTERVAL 1 DAY )";
+							" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.key_value <> '/' AND pc.upd_flg=0 AND (pc.post_dt > now() + INTERVAL 1 DAY) ORDER BY k.id ";
 		return getPagesBySelect(slcQuery, "key_value");
 	}
 	
@@ -114,7 +114,7 @@ public class PagesDao extends DaoCommon{
 			prpStmt = connection.prepareStatement(
 					" SELECT DISTINCT COUNT(k.id) posted_count" + 
 					" FROM page_content pc, pages p, door_keys k " + 
-					" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.key_value <> '/' AND pc.upd_flg=0 AND pc.post_dt > now() AND (pc.post_dt < now() + INTERVAL 1 DAY ) "
+					" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.key_value <> '/' AND pc.upd_flg=0 AND pc.post_dt > now() AND (pc.post_dt < now() + INTERVAL 1 DAY )"
 			);
 
 			rs = prpStmt.executeQuery();

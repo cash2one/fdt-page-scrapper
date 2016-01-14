@@ -5,8 +5,8 @@ class Pager
 	#return "<a href =\"/\">".Главная."</a>&nbsp;>&nbsp;<a href =\"#\">".$region_name."</a>&nbsp;";
 	function getPageNavigation($url,$page_number, $max_page_number)
 	{
-		$next_page_label = "Следующая";
-		$prev_page_label = "Предыдущая";
+		$next_page_label = "Next";
+		$prev_page_label = "Prev";
 		
 		if($page_number == 1 && $max_page_number == 1){
 			//если только одна страница

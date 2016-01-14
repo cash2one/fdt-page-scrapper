@@ -17,17 +17,9 @@ $function = new Functions;
 $title_generator = new TitleGenerator;
 
 //default offset for moskow
-function rusdate($d, $format = 'j %MONTH% Y', $offset = 3)
+function engdate($d, $format = 'jS \of F h:i:s A', $offset = -8)
 {
-    $montharr = array('января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря');
-    $dayarr = array('понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье');
- 
     $d += 3600 * $offset;
- 
-    $sarr = array('/%MONTH%/i', '/%DAYWEEK%/i');
-    $rarr = array( $montharr[date("m", $d) - 1], $dayarr[date("N", $d) - 1] );
- 
-    $format = preg_replace($sarr, $rarr, $format); 
     return date($format, $d);
 }
 
@@ -418,8 +410,8 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 		$news_block = "";
 		$cur_news_posted_time = "";
 		while (mysqli_stmt_fetch($stmt)) {
-			if($cur_news_posted_time != rusdate($posted_time,'j %MONTH% Y')){
-				$cur_news_posted_time = rusdate($posted_time,'j %MONTH% Y');
+			if($cur_news_posted_time != engdate($posted_time,'jS \of F')){
+				$cur_news_posted_time = engdate($posted_time,'jS \of F');
 				$news_block = $news_block."<br/><h3>".$cur_news_posted_time."</h3>";
 			}
 			// use your $myrow array as you would with any other fetch
@@ -430,10 +422,10 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 			#echo "upd_flg: ".$upd_flg;
 			#echo "page_content_count: ".$page_content_count;
 			if($total_cnt==$posted_cnt && $upd_flg==1) {
-			    $updTitle = "Обновлена информация по ";
+			    $updTitle = "Information updated | ";
 			}
 			
-			$city_href = "<a href = \"http://".$site_main_domain."/".$key_value_latin."/\">".$updTitle.$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
+			$city_href = "<a href = \"http://".$site_main_domain."/".$key_value_latin."/\">".$updTitle.$key_value." (".engdate($posted_time,'jS \of F, h:i:s A').")</a><br/>";
 			$news_block = $news_block.$city_href;
 		}
 		$template=preg_replace("/\[CITY_NEWS_1\]/", $news_block, $template);
@@ -445,11 +437,11 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 		/* explicit close recommended */
 		mysqli_stmt_close($stmt);
 	}else{
-		$template=preg_replace("/\[CITY_NEWS_1\]/", "<br/>Новостей по данному региону не найдено", $template);
+		$template=preg_replace("/\[CITY_NEWS_1\]/", "<br/>No any news were found", $template);
 		$template=preg_replace("/\[PAGER\]/","", $template);
 	}
 	//fill [BREAD_CRUMBS]
-	$bread_crumbs = "<a href =\"/#\">Главная</a>&nbsp;";
+	$bread_crumbs = "<a href =\"/#\">Main</a>&nbsp;";
 	
 	//
 }
@@ -465,7 +457,7 @@ if($current_page_type == "KEY_PAGE"){
 	//if page exist
 	if($key_info){
 		//fill [BREAD_CRUMBS]
-		$bread_crumbs = "<a href =\"http://".$site_main_domain."\">Главная</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['key_value']." ".rusdate($key_info['posted_time'],'j %MONTH% Y')."</a>";
+		$bread_crumbs = "<a href =\"http://".$site_main_domain."\">Main</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['key_value']." ".engdate($key_info['posted_time'],'jS \of F')."</a>";
 	}else{
 		#PAGE NOT FOUND REDIRECT
 		header('HTTP/1.1 404 Not Found');
@@ -497,7 +489,7 @@ $template=preg_replace("/\[MAIN_TITLE\]/", MAIN_TITLE, $template);
 $template=preg_replace("/\[DESCRIPTION\]/", $page_meta_description, $template);
 
 //print last news
-if($current_page_type == "MAIN_PAGE_PAGING"){
+/**if($current_page_type == "MAIN_PAGE_PAGING"){
 	$news_content_folder = './news_content/';
 	$news_extractor = new YaNewsExtractor;
 	$news_file_name = $news_extractor->isNewsUpdateNeed($news_content_folder);
@@ -510,7 +502,7 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 		$extractd_news = file_get_contents($news_file_name); 
 	}
 	$template=preg_replace("/\[LAST_NEWS\]/", $extractd_news, $template);
-}
+}*/
 
 unset($page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator, $extractd_news, $news_extractor, $url_for_request);
 mysqli_close($con);
