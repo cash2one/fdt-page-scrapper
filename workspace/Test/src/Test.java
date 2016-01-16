@@ -149,9 +149,9 @@ public class Test {
 			System.out.println(String.format("%d: %d - %d", i, val1, val2));
 		}*/
 		
-		for(int i = 18000; i <= 19300; i++){
-			System.out.println((double)4791684/i + " " + i);
-		}
+		/*for(int i = 18900; i <= 19500; i++){
+			System.out.println((double)23037276/i + " " + i);
+		}*/
     	
     	/*Random rnd = new Random();
     	
@@ -167,6 +167,12 @@ public class Test {
     		System.out.println(time + " " + sdf.format(new Date(time)));
     	}
     	*/
+    	
+    	String testStr = ";;;123;123;;;1";
+    	System.out.println(testStr.split(";") + " " + testStr.split(";").length);
+    	for(String str : testStr.split(";",0)){
+    		System.out.println("--" + str);
+    	}
     }
     
     public static long getRndNormalDistTime(){

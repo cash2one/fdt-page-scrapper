@@ -19,7 +19,7 @@ class YaNewsExtractor
 		
 		//check last news update
 		#echo "time: ".time()."; last_change_date_result_file: ".$last_change_date_result_file;
-		if( $last_change_date_result_file == 0 || ((time()-$last_change_date_result_file) > 600000)){
+		if( $last_change_date_result_file == 0 || ((time()-$last_change_date_result_file) > 600)){
 			//delete all previous news
 			#echo "Удаление старых новостей";
 			$dh = opendir($news_dir);

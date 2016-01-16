@@ -4,3 +4,17 @@
 2016-01-06 15:53:49,220- INFO(DoorgenUpdaterRunner.java:115)-0 deprecated records were deleted from table
 2016-01-06 15:54:49,736- INFO(DoorgenUpdaterRunner.java:115)-0 deprecated records were deleted from table
 2016-01-12 16:27:21,220- INFO(DoorgenUpdaterRunner.java:117)-0 deprecated records were deleted from table
+2016-01-14 21:34:57,829- INFO(DoorgenUpdaterRunner.java:105)-Page with page_content.id=13 will be replaced with page_content.id=28450
+2016-01-14 21:55:25,718- INFO(DoorgenUpdaterRunner.java:105)-Page with page_content.id=951 will be replaced with page_content.id=28451
+2016-01-14 21:57:57,852- INFO(DoorgenUpdaterRunner.java:105)-Page with page_content.id=951 will be replaced with page_content.id=28452
+2016-01-14 21:58:17,127- INFO(DoorgenUpdaterRunner.java:117)-0 deprecated records were deleted from table
+2016-01-14 22:31:46,721- INFO(DoorgenUpdaterRunner.java:105)-Page with page_content.id=951 will be replaced with page_content.id=28453
+2016-01-14 22:34:26,624- INFO(DoorgenUpdaterRunner.java:105)-Page with page_content.id=951 will be replaced with page_content.id=-1
+2016-01-16 13:07:26,637- INFO(DoorgenUpdaterRunner.java:108)-Page with page_content.id=28 will be replaced with page_content.id=28456
+2016-01-16 13:07:55,957- INFO(DoorgenUpdaterRunner.java:108)-Page with page_content.id=30 will be replaced with page_content.id=28457
+2016-01-16 13:08:01,895- INFO(DoorgenUpdaterRunner.java:108)-Page with page_content.id=10 will be replaced with page_content.id=28458
+2016-01-16 13:08:03,193- INFO(DoorgenUpdaterRunner.java:108)-Page with page_content.id=9 will be replaced with page_content.id=28459
+2016-01-16 13:08:04,398- INFO(DoorgenUpdaterRunner.java:108)-Page with page_content.id=14 will be replaced with page_content.id=28460
+2016-01-16 13:08:08,397- INFO(DoorgenUpdaterRunner.java:120)-0 deprecated records were deleted from table
+2016-01-16 13:17:59,794- INFO(DoorgenUpdaterRunner.java:119)-1 deprecated records were deleted from table
+2016-01-16 14:02:09,502- INFO(DoorgenUpdaterRunner.java:119)-0 deprecated records were deleted from table

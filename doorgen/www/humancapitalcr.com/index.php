@@ -61,7 +61,7 @@ function encodestring($str)
 function getKeyInfo($con,$page_key)
 {
 	$result_array = array();
-	$query_case_list = "SELECT key_value, key_value_latin, unix_timestamp(post_dt) posted_time FROM pages p, door_keys k ,page_content pc WHERE k.id = p.key_id AND pc.page_id = p.id AND pc.post_dt < now() AND key_value_latin = ?";
+	$query_case_list = "SELECT key_value, key_value_latin, unix_timestamp(post_dt) posted_time FROM pages p, door_keys k ,page_content pc WHERE k.id = p.key_id AND pc.page_id = p.id AND pc.post_dt < now() AND key_value_latin = ? ORDER BY pc.post_dt DESC LIMIT 1";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
@@ -212,9 +212,10 @@ function getPageSnippets($con,$page_url)
 {
     global $stmt;
 	$snippets_array = array();
-	$query_case_list = " SELECT snp.title, snp.description, cd.snippets_index, snp.image_large, snp.image_small ".
-	                   " FROM page_content pc LEFT JOIN content_detail cd ON pc.id = cd.page_content_id, snippets snp , pages p, door_keys k ".
-	                   " WHERE k.id = p.key_id AND snp.id = cd.snippet_id AND pc.page_id = p.id AND k.key_value_latin = ? ORDER BY cd.snippets_index ASC, cd.main_flg DESC";
+	$query_case_list = 	" SELECT snp.title, snp.description, cd.snippets_index, snp.image_large, snp.image_small  ".
+						" FROM page_content pc LEFT JOIN content_detail cd ON pc.id = cd.page_content_id, snippets snp , pages p, door_keys k  ".
+						" WHERE k.id = p.key_id AND snp.id = cd.snippet_id AND pc.page_id = p.id AND k.key_value_latin = ? AND pc.id = (SELECT pc.id FROM pages p, door_keys k ,page_content pc WHERE k.id = p.key_id AND pc.page_id = p.id AND pc.post_dt < now() AND key_value_latin = ? ORDER BY pc.post_dt DESC LIMIT 1) ".
+						" ORDER BY cd.snippets_index ASC, cd.main_flg DESC ";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		print_r(error_get_last());
@@ -222,7 +223,7 @@ function getPageSnippets($con,$page_url)
 
 	//set values
 	#echo "set value...";
-	if (!mysqli_stmt_bind_param($stmt, "s", $page_url)) {
+	if (!mysqli_stmt_bind_param($stmt, "ss", $page_url, $page_url)) {
 		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		print_r(error_get_last());
 	}

@@ -70,7 +70,7 @@ public class DoorgenUpdaterRunner {
 
 	private void executeWrapper() throws Exception{
 		try{
-			
+			int deleted = 0;
 			int updDateDiff = 3 + rnd.nextInt(3);
 			
 			ArrayList<String> keys = null;
@@ -81,18 +81,19 @@ public class DoorgenUpdaterRunner {
 				keys = pagesDao.getPages4UpdateReplaceCntnt(updDateDiff);
 			}
 			//
-			Collections.shuffle(keys);
 
 			long curTime = System.currentTimeMillis();
 			long startOtDay = DoorUtils.getStartOfDay(curTime);
 			long postTime = -1;
-
+			
+			connection.setAutoCommit(false);
+			deleted = pageCntntDao.deleteDeprecatedPageContent();
+			
 			for(int i = 0; i < keys.size(); i++){
 				//get normal distribution time value
 				//TODO Update page
 				postTime = DoorUtils.getRndNormalDistTime() + startOtDay;
 				postTime = DoorUtils.calibratePostDate(postTime, curTime);
-				connection.setAutoCommit(false);
 				
 				int pcIdPrev = -1;
 				int pcIdNew = -1;
@@ -112,10 +113,10 @@ public class DoorgenUpdaterRunner {
 					throw new Exception("Page content record was not added for key: " + keys.get(i));
 				}
 			}
-			int count = pageCntntDao.deleteDeprecatedPageContent();
+			
 			connection.commit();
 			connection.setAutoCommit(true);
-			log.info(String.format("%d deprecated records were deleted from table", count));
+			log.info(String.format("%d deprecated records were deleted from table", deleted));
 		}
 		catch(Exception e){
 			connection.rollback();

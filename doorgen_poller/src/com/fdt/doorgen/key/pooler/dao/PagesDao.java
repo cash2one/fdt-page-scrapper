@@ -97,10 +97,14 @@ public class PagesDao extends DaoCommon{
 	}
 	
 	public ArrayList<String> getPages4UpdateAppendCntnt(int updDateDiff){
-		String slcQuery = 	" SELECT k.id, k.key_value, MAX(cd.snippets_index) " +
-							" FROM page_content pc, pages p, door_keys k, content_detail cd " +
-							" WHERE pc.page_id = p.id AND p.key_id = k.id AND cd.page_content_id = pc.id AND k.key_value <> '/' AND (DATEDIFF((now()),pc.post_dt) > " + updDateDiff + " ) " +
-							" GROUP BY k.id, k.key_value HAVING MAX(cd.snippets_index) < 9 ";
+		String slcQuery = 	" SELECT k.id, k.key_value, pc.id, pc.post_dt <= now(), pc.post_dt > now(), MAX(cd.snippets_index), DATEDIFF((now()),pc.post_dt) " + 
+							" FROM door_keys k LEFT JOIN pages p ON p.key_id = k.id LEFT JOIN page_content pc ON pc.page_id = p.id LEFT JOIN content_detail cd ON cd.page_content_id = pc.id " + 
+							" WHERE k.key_value <> '/' AND DATEDIFF(now(),pc.post_dt) >= " + updDateDiff +" AND k.id NOT IN  " + 
+							" (SELECT DISTINCT k.id " + 
+							" 	FROM page_content pc, pages p, door_keys k, content_detail cd  " + 
+							" 	WHERE pc.page_id = p.id AND p.key_id = k.id AND cd.page_content_id = pc.id AND k.key_value <> '/'  " + 
+							" 	AND DATEDIFF(now(),pc.post_dt) < " + updDateDiff +" AND pc.post_dt < now() + INTERVAL 1 DAY) " + 
+							" GROUP BY k.id, k.key_value, pc.id HAVING MAX(cd.snippets_index) < 9 ORDER BY k.id; ";
 		return getPagesBySelect(slcQuery, "key_value");
 	}
 	

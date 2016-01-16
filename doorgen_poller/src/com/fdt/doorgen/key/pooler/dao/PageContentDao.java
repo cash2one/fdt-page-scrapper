@@ -133,9 +133,7 @@ public class PageContentDao extends DaoCommon {
 			
 			//Insert snippets & page_content tables.
 			batchStatement = connection.prepareStatement("INSERT INTO content_detail (page_content_id, snippet_id, snippets_index, main_flg, upd_dt) " +
-					" SELECT ?, ?, ?, ?, now() " + 
-					" FROM pages p, door_keys k" + 
-					" WHERE p.key_id = k.id AND k.key_value = ? ");
+					" SELECT ?, ?, ?, ?, now() ");
 
 
 			//TODO get last max snippet index
@@ -159,7 +157,6 @@ public class PageContentDao extends DaoCommon {
 						batchStatement.setInt(2, snpIds.get(rndSeq.remove(0)));
 						batchStatement.setInt(3, i*strategy.getMnBlockCnt() + j + idxShift);
 						batchStatement.setBoolean(4, ifMainNotInserted || false);
-						batchStatement.setString(5, key);
 						ifMainNotInserted = false;
 						batchStatement.addBatch();
 					}
@@ -373,11 +370,11 @@ public class PageContentDao extends DaoCommon {
 		
 		try {
 			prStatement = connection.prepareStatement(
-							" DELETE FROM page_content WHERE id IN " +
-							" (SELECT t2.id FROM  " +
-							" (SELECT t1.* FROM page_content t1) AS t2, " +
-							" (SELECT pc.page_id, MIN(pc.post_dt) min_post_dt FROM  page_content pc WHERE pc.post_dt < now() GROUP BY pc.page_id HAVING count(pc.page_id) > 1) AS t3 " +
-							" WHERE t2.page_id = t3.page_id AND t2.post_dt = t3.min_post_dt) "	
+							" DELETE FROM page_content WHERE post_dt < now() AND id IN ( " + 
+							" 	SELECT DISTINCT t2.id FROM   " + 
+							" 	(SELECT t1.page_id, t1.post_dt, t1.id FROM page_content t1 WHERE t1.post_dt < now()) AS t2,  " + 
+							" 	(SELECT pc.page_id, MIN(pc.post_dt) min_post_dt FROM  page_content pc WHERE pc.post_dt < now() GROUP BY pc.page_id HAVING count(pc.page_id) > 1) AS t3  " + 
+							" 	WHERE t2.page_id = t3.page_id AND t2.post_dt = t3.min_post_dt ) "	
 					);
 			count = prStatement.executeUpdate();
 		} catch (SQLException e) {
@@ -419,7 +416,7 @@ public class PageContentDao extends DaoCommon {
 			rs = prpStmt.executeQuery();
 
 			if(rs != null){
-				while(rs.next()){
+				if(rs.next()){
 					pcId = rs.getInt("id");
 				}
 			}
