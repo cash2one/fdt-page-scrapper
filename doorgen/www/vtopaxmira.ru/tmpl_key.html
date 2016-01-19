@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>[TITLE]</title>
+        <meta name="keywords" content="[TITLE]" />
+        <meta name="description" content="[DESCRIPTION]" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<link rel="shortcut icon" href="/images/number.png">
+		
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/grid_12.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
+		
+		
+        <script src="/js/jquery-1.9.1.js"></script>
+		<script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="/js/jquery.easing.1.3.js"></script>
+		<script src="/js/jquery.blockUI.js"></script>
+		
+        <script src="/js/tms-0.4.1.js"></script>
+        <script src="/js/cufon-yui.js"></script>
+        <script src="/js/cufon-replace.js"></script>
+        <script src="/js/Kozuka_L_300.font.js"></script>
+        <script src="/js/Kozuka_B_700.font.js"></script>
+        <script src="/js/Helvetica_Light-Normal_400.font.js"></script>
+		
+		<link href="/css/dimm.css" rel="stylesheet"> 
+		<link href="/css/bootstrap.css" rel="stylesheet"> 
+		<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="/images/css" rel="stylesheet" type="text/css">
+		
+		<!--Progressbar-->
+		<link rel="stylesheet" href="/css/ui.css">
+		<link rel="stylesheet" href="/css/ui.progress-bar.css">
+		
+		<script src="/js/progress.js" type="text/javascript" charset="utf-8"></script>
+		<!--/Progressbar-->
+		
+		<script src="/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+			$(document).ready(function(){
+				$("#crd_area").load('/_crd_area.html');
+            });
+            $(window).load(function(){
+				Cufon.refresh();
+				Cufon.now();
+            });
+		</script>
+        <style>
+            @charset "utf-8";
+            /* CSS Document */
+            /* Site Structure */
+            #header {height: 101px; margin-bottom: 50px;}
+            .logo {float: left;}
+            #container {width: 1264px; margin: auto}
+            #navcontainer {height: 55px; padding-top: 20px; 55px; padding-bottom: 20px; text-align: left}
+            .logo {float: left;}
+            #navlist li
+            {
+            display: inline;
+            list-style-type: none;
+            padding-right: 20px;
+            }
+            #navlist li a
+            {
+            color: #15282e;
+            text-decoration: none;
+            }
+            #navlist li a:hover
+            {
+            color: #fff;
+            text-decoration: none;
+            }
+            #header_search {float: right; margin-top: 18px; width: 350px;}
+            #search {
+            border: none;
+            height: 21px;
+            padding: 10px;
+            width: 221px;
+            float: left;
+            color: #526a71;
+            font-size: 18px;
+            }
+            #rss {
+            position: absolute;
+            top: 14px;
+            right: 12px;
+            }
+            a {color: #ef6f53; text-decoration: none;}
+        </style>
+    </head>
+    <body>
+        <!--==============================header=================================-->
+        <div id="container">
+            <div id="navcontainer">
+                <ul id="navlist">
+                    [HEADER_KEYS]
+                </ul>
+            </div>
+			<div id="header">
+                <div id="header_search">
+                    <table width="450">
+                        <tr>
+                            <td align="left">
+                                <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+								<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="button" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,friendfeed,moikrug,gplus" ></div> 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+			<div id="crd_area" style="overflow:hidden;height:625px;width:1264px">
+			</div>
+            <!--==============================content================================-->
+            <section id="content">
+                <div class="container_12 top-1">
+                    <div class="grid_4 box-1">
+                        <img src="/images/page1-img1.jpg" alt="">
+                        <a href="#"><span class="clr-1">Потреб.</span> Кредиты</a>
+                    </div>
+                    <div class="grid_4 box-1">
+                        <img src="/images/page1-img2.jpg" alt="">
+                        <a href="#"><span class="clr-1">Кредитные</span> Карты</a>
+                    </div>
+                    <div class="grid_4 box-1">
+                        <img src="/images/page1-img3.jpg" alt="">
+                        <a href="#"><span class="clr-1">Быстрые</span> Займы</a>
+                    </div>
+                    <div class="grid_12">
+                        <div class="line pad-1"></div>
+                    </div>
+                    <div class="pathline">
+                        [BREAD_CRUMBS]<br/><br/>
+                    </div>
+                    <div class="grid_4">
+                        <h2>НОВОСТИ</h2>
+                        <br/>
+                        [SNIPPET_BLOCK_1_1]
+                        [SNIPPET_BLOCK_1_2]
+                        [SNIPPET_BLOCK_1_3]
+                        <!--a href="#" class="button top-3">Read More</a-->
+                    </div>
+                    <div class="grid_4">
+                        <div class="left-1">
+                            <h2>СТАТЬИ</h2>
+                            <br/>
+                            [SNIPPET_BLOCK_2_1]
+                            [SNIPPET_BLOCK_2_2]
+                            [SNIPPET_BLOCK_2_3]
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="left-2">
+                            <h2>ОБЗОРЫ</h2>
+                            <br/>
+                            [SNIPPET_BLOCK_3_1]
+                            [SNIPPET_BLOCK_3_2]
+                            [SNIPPET_BLOCK_3_3]
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+            <!--==============================footer=================================-->
+            <footer>
+				<div style="float:left; padding:3px 0px 0 0px;">
+					Дизайн — <a href="http://www.artlebedev.ru">Студия Артемия&nbsp;Лебедева</a> © Copyright 2013 <small><a href="http://[URL]">Оформить кредит | [URL]</a></small>	
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

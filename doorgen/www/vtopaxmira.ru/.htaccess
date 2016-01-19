@@ -1,0 +1,19 @@
+Order Deny,Allow
+Deny from all
+Allow from 86.57.154.130 193.58.255.19
+
+RewriteEngine On
+Options +FollowSymlinks
+RewriteBase /
+
+AddDefaultCharset UTF-8
+DirectoryIndex index.php
+
+ErrorDocument 404 /404.html
+
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
