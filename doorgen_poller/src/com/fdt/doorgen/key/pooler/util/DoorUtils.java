@@ -5,12 +5,11 @@ import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
 import java.util.Random;
-import java.util.TimeZone;
 
 public class DoorUtils {
 	
-	public static final long DAY_MIL_SEC_CNT = 24*60*60*1000;
-	public static final long YEAR_MIL_SEC_CNT = 24*60*60*365*1000;
+	public static final long DAY_MIL_SEC_CNT = 24*60*60*1000L;
+	public static final long YEAR_MIL_SEC_CNT = 24*60*60*365*1000L;
 	private static Random rnd = new Random();
 	
 	public static String cleanString(String input)

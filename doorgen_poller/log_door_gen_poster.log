@@ -29,3 +29,43 @@ java.lang.Exception: TimeFile for time table was not specified in the config fil
 2016-01-14 15:23:40,973- INFO(DoorgenPosterRunner.java:104)-Try to post key Кредит мтс екатеринбург with post time 1452852529811
 2016-01-14 15:23:41,096- INFO(DoorgenPosterRunner.java:104)-Try to post key Хоум кредит горно алтайск with post time 1452815524490
 2016-01-14 15:23:41,221- INFO(DoorgenPosterRunner.java:112)-6 new were posted.
+2016-01-25 13:36:41,585-ERROR(DoorgenPosterRunner.java:67)-TimeFile for time table was not found or exist.
+java.lang.Exception: TimeFile for time table was not found or exist.
+	at com.fdt.doorgen.key.pooler.DoorgenPosterRunner.<init>(DoorgenPosterRunner.java:147)
+	at com.fdt.doorgen.key.pooler.DoorgenPosterRunner.main(DoorgenPosterRunner.java:65)
+2016-01-25 13:37:09,706-ERROR(DoorgenPosterRunner.java:67)-TimeFile for time table was not found or exist.
+java.lang.Exception: TimeFile for time table was not found or exist.
+	at com.fdt.doorgen.key.pooler.DoorgenPosterRunner.<init>(DoorgenPosterRunner.java:147)
+	at com.fdt.doorgen.key.pooler.DoorgenPosterRunner.main(DoorgenPosterRunner.java:65)
+2016-01-25 13:38:10,815- INFO(DoorgenPosterRunner.java:78)-Already posted new count 0;Time string: 10-15
+2016-01-25 13:49:59,229- INFO(DoorgenPosterRunner.java:78)-Already posted new count 0;Time string: 10-15
+2016-01-25 13:58:41,786- INFO(DoorgenPosterRunner.java:78)-Already posted new count 0;Time string: 10-15
+2016-01-25 14:02:15,949- INFO(DoorgenPosterRunner.java:78)-Already posted new count 0;Time string: 10-15
+2016-01-25 14:02:19,442- INFO(DoorgenPosterRunner.java:95)-12 new will be posted.
+2016-01-25 14:02:27,746- INFO(DoorgenPosterRunner.java:106)-Try to post key [Кредит в банке в г. Орск] with post time 1453764953086
+2016-01-25 14:02:51,526- INFO(DoorgenPosterRunner.java:106)-Try to post key [Кредит без взноса в Красном Холме] with post time 1453795971634
+2016-01-25 14:02:54,254- INFO(DoorgenPosterRunner.java:106)-Try to post key [Хоум кредит в г. Елохово] with post time 1453800180248
+2016-01-25 14:02:54,383- INFO(DoorgenPosterRunner.java:106)-Try to post key [Кредит без поручителей в Кирицах] with post time 1453792972613
+2016-01-25 14:02:54,510- INFO(DoorgenPosterRunner.java:106)-Try to post key [Ренессанс кредит в Купчегень] with post time 1453785776923
+2016-01-25 14:02:54,637- INFO(DoorgenPosterRunner.java:106)-Try to post key [Беспроцентный кредит в Аше] with post time 1453743086372
+2016-01-25 14:02:54,766- INFO(DoorgenPosterRunner.java:106)-Try to post key [Потребительский кредит в г. Дурнятская котловина] with post time 1453741489384
+2016-01-25 14:02:54,892- INFO(DoorgenPosterRunner.java:106)-Try to post key [Банк русский стандарт в городе Полушкино] with post time 1453774649348
+2016-01-25 14:02:55,018- INFO(DoorgenPosterRunner.java:106)-Try to post key [Кредит под залог в городе Усть-Писаная] with post time 1453774502406
+2016-01-25 14:02:55,145- INFO(DoorgenPosterRunner.java:106)-Try to post key [Банк ренессанс в Сортавале] with post time 1453806915068
+2016-01-25 14:02:55,273- INFO(DoorgenPosterRunner.java:106)-Try to post key [Кредит без взноса в городе Эссойла] with post time 1453800438839
+2016-01-25 14:02:55,398- INFO(DoorgenPosterRunner.java:106)-Try to post key [Кредит наличными в Камышине] with post time 1453796670154
+2016-01-25 14:02:55,525- INFO(DoorgenPosterRunner.java:114)-12 new were posted.
+2016-01-25 15:29:50,546- INFO(DoorgenPosterRunner.java:78)-Already posted new count 0;Time string: 10-15
+2016-01-25 15:29:50,718- INFO(DoorgenPosterRunner.java:95)-11 new will be posted.
+2016-01-25 15:29:50,724- INFO(DoorgenPosterRunner.java:106)-Try to post key [Кредит без первоначального взноса в городе Лужки] with post time 1453789095845
+2016-01-25 15:29:50,892- INFO(DoorgenPosterRunner.java:106)-Try to post key [Кредит онлайн в г. Аксай] with post time 1453770788737
+2016-01-25 15:29:51,020- INFO(DoorgenPosterRunner.java:106)-Try to post key [Заявка на кредит в Березнике] with post time 1453798239522
+2016-01-25 15:29:51,148- INFO(DoorgenPosterRunner.java:106)-Try to post key [Кредит под недвижимость в городе Сызрань] with post time 1453785783951
+2016-01-25 15:29:51,331- INFO(DoorgenPosterRunner.java:106)-Try to post key [Экспресс кредит в г. Павловск] with post time 1453752847824
+2016-01-25 15:29:51,460- INFO(DoorgenPosterRunner.java:106)-Try to post key [Заявка на кредит в городе Хабоцкое] with post time 1453807240067
+2016-01-25 15:29:51,589- INFO(DoorgenPosterRunner.java:106)-Try to post key [Международный кредит в Жестылево] with post time 1453801655291
+2016-01-25 15:29:51,719- INFO(DoorgenPosterRunner.java:106)-Try to post key [Кредит малому бизнесу в городе Большой Утриш] with post time 1453791238746
+2016-01-25 15:29:51,850- INFO(DoorgenPosterRunner.java:106)-Try to post key [Экспресс кредит в г. Бахмары] with post time 1453812307474
+2016-01-25 15:29:51,978- INFO(DoorgenPosterRunner.java:106)-Try to post key [Банковский кредит в Унече] with post time 1453779773463
+2016-01-25 15:29:52,107- INFO(DoorgenPosterRunner.java:106)-Try to post key [Банк ренессанс в Лодейном Поле] with post time 1453728854700
+2016-01-25 15:29:52,236- INFO(DoorgenPosterRunner.java:114)-11 new were posted.

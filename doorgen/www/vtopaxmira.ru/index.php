@@ -385,6 +385,7 @@ if( $url_city && is_numeric($url_city) && $url_region){
 	$city_news_page_number = 1;
 	$url_for_cache = $url;
 	#echo "REGION_PAGE";
+	echo $url_region;
 } elseif(($url_city == 'index.php' || $url_city == '') && !$url_region){
 	//TODO Обработка региона
 	$template=file_get_contents("tmpl_main_new.html");
@@ -469,7 +470,7 @@ $title_template = "Кредиты в России, Банки России, Об
 
 if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	//get region names
-	$result = mysqli_query($con,"SELECT region_name, region_id FROM region r where r.region_name_latin like replace(LOWER('".$url_region."'),'-','_')");
+	$result = mysqli_query($con,"SELECT region_name, region_id FROM region r where r.region_name_latin like LOWER('".$url_region."')");
 	$row = mysqli_fetch_assoc($result);
 	$region_name = $row['region_name'];
 	
@@ -480,12 +481,17 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 
 	#echo "region_name: " . $region_name . "<br>";
 	//getting city news count
-	$query_count = "SELECT count(*) as row_count FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER('".$url_region."'),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time < now()";
+
+	$query_count = 	"SELECT count(*) row_count " .
+					" FROM page_content pc, pages p, door_keys k, city c, region r " . 
+					" WHERE pc.page_id = p.id AND p.key_id = k.id AND pc.post_dt < now() " .
+					" AND k.city_id = c.city_id AND c.region_id=r.region_id AND r.region_name_latin like LOWER('".$url_region."')";
+	
 	$result = mysqli_query($con,$query_count);
 	
 	$row = mysqli_fetch_assoc($result);
 	$city_news_count = $row['row_count'];
-	#echo "city_news_count: " . $city_news_count . "<br>";
+	echo "city_news_count: " . $city_news_count . "<br>";
 	
 	if($city_news_count>0){
 		//вычисляем последнюю страницы
@@ -507,6 +513,8 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 		#echo "Region page processing...";
 		//prepare statement
 		$query_city_list = "SELECT cp.anchor_name, c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time), r.region_id FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time < now() ORDER BY cp.posted_time DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
+		$query_city_list = "SELECT cp.anchor_name, c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time), r.region_id FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time < now() ORDER BY cp.posted_time DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
+		
 		#echo "query_city_list: ".$query_city_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_city_list))) {
 			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();

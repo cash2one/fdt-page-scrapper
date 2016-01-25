@@ -1,4 +1,4 @@
-ALTER DATABASE vtopaxmira_test CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+﻿ALTER DATABASE vtopaxmira_test CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
 DROP TABLE IF EXISTS upd_rules;
 DROP TABLE IF EXISTS content_detail;

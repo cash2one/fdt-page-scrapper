@@ -29,16 +29,16 @@ public class MultipleSnippetGeneratorThread implements Callable<String> {
 	private ArrayList<String> linkList = null;
 	private File linkFile = null;
 	private File pathToLinkFolder = null;
-	private boolean isInsLnkFrmGenFile = false;
+	private boolean addLinkFromFolder = false;
 
-	public MultipleSnippetGeneratorThread(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory,ArrayList<String> linkList, boolean isInsLnkFrmGenFile, File linkFile, File pathToLinkFolder) {
+	public MultipleSnippetGeneratorThread(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory,ArrayList<String> linkList, boolean addLinkFromFolder, File linkFile, File pathToLinkFolder) {
 		super();
 
 		this.snippetTask = snippetTask;
 		this.proxyFactory = proxyFactory;
 		this.taskFactory = taskFactory;
 		this.linkList = linkList;
-		this.isInsLnkFrmGenFile = isInsLnkFrmGenFile;
+		this.addLinkFromFolder = addLinkFromFolder;
 		this.linkFile = linkFile;
 		this.pathToLinkFolder = pathToLinkFolder;
 		log.debug(toString());
@@ -54,7 +54,7 @@ public class MultipleSnippetGeneratorThread implements Callable<String> {
 
 			try {
 				SnippetExtractor snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList);
-				snippetExtractor.setInsLnkFrmGenFile(isInsLnkFrmGenFile);
+				snippetExtractor.setAddLinkFromFolder(addLinkFromFolder);
 				generatedContent = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getResult();
 			}
 			catch (Throwable e) {
@@ -68,18 +68,18 @@ public class MultipleSnippetGeneratorThread implements Callable<String> {
 				if(generatedContent != null && !"".equals(generatedContent.trim())){
 					taskFactory.putTaskInSuccessQueue(snippetTask);
 
-					if(isInsLnkFrmGenFile && linkFile != null && linkFile.exists()){
+					if(addLinkFromFolder && linkFile != null && linkFile.exists()){
 						linkFile.delete();
 					}
 				}else{
 					//move file to input folder
-					if(isInsLnkFrmGenFile && linkFile != null && linkFile.exists()){
+					if(addLinkFromFolder && linkFile != null && linkFile.exists()){
 						FileUtils.moveFile(linkFile, new File(pathToLinkFolder,linkFile.getName()));
 					}
 					taskFactory.reprocessingTask(snippetTask);
 				}
 			}else{
-				if(isInsLnkFrmGenFile && linkFile != null && linkFile.exists()){
+				if(addLinkFromFolder && linkFile != null && linkFile.exists()){
 					FileUtils.moveFile(linkFile, new File(pathToLinkFolder,linkFile.getName()));
 				}
 				taskFactory.reprocessingTask(snippetTask);
@@ -97,6 +97,6 @@ public class MultipleSnippetGeneratorThread implements Callable<String> {
 		return "MultipleSnippetGeneratorThread [snippetTask=" + snippetTask
 				+ ", linkFile=" + linkFile + ", pathToLinkFolder="
 				+ pathToLinkFolder + ", isInsLnkFrmGenFile="
-				+ isInsLnkFrmGenFile + "]";
+				+ addLinkFromFolder + "]";
 	}
 }

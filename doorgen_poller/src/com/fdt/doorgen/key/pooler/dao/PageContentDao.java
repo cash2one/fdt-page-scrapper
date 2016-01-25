@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import org.apache.log4j.Logger;
@@ -16,19 +17,19 @@ import com.fdt.doorgen.key.pooler.util.DoorUtils;
 
 public class PageContentDao extends DaoCommon {
 	private static final Logger log = Logger.getLogger(PageContentDao.class);
-	
+
 	private SnippetsDao snipDao;
-	
+
 	public PageContentDao(Connection connection, SnippetsDao snipDao) {
 		super(connection);
 		this.snipDao = snipDao;
 	}
-	
-	
+
+
 	public int insertPageContent(String key){
-		return insertPageContent(key, System.currentTimeMillis() + DoorUtils.YEAR_MIL_SEC_CNT);
+		return insertPageContent(key, System.currentTimeMillis() + 10 * DoorUtils.YEAR_MIL_SEC_CNT);
 	}
-	
+
 	public int insertPageContent(String key, long postTime){
 		PreparedStatement prStmt = null;
 		ResultSet rs = null;
@@ -42,7 +43,7 @@ public class PageContentDao extends DaoCommon {
 
 			prStmt.setTimestamp(1, new Timestamp(postTime));
 			prStmt.setString(2, key);
-			
+
 			prStmt.executeUpdate();
 
 			rs = prStmt.getGeneratedKeys();
@@ -84,32 +85,24 @@ public class PageContentDao extends DaoCommon {
 	 */
 	//TODO Add proceudre for population content randomly & adding content to existed content
 	public int[] populateContent(String key, int pcIdNew, int pcIdPrev, ContentStrategy strategy){
-		Random rnd = new Random();
-		
+
 		ArrayList<Integer> snpIds = new ArrayList<Integer>();
 		//idx for already existed content
-		int idxShift = 0;
-		
+
 		if(strategy.isAppendContent()){
 			snpIds = snipDao.getNotUsedSnpId(key);
 		}else{
 			snpIds = snipDao.getAllSnpId4Key(key);
 		}
-		
+
 		int[] result = null;
 
 		int snpCnt = snpIds.size();
 		PreparedStatement batchStatement = null;
 		PreparedStatement copyStatement = null;
 
-		int rndBatchSnpCnt[] = DoorUtils.getRndBlocksSize(strategy.getMnBlockCnt(), strategy.getBlockCntPerPost());
-		//если количество сниппетов не достаточно, то контент не будет сгенерирован
-		if(DoorUtils.arraySum(rndBatchSnpCnt) > snpCnt){
-			return new int[]{};
-		}
-
 		ArrayList<Integer> rndSeq = DoorUtils.getRandomSequense(snpCnt);
-		
+
 		if(pcIdNew < 0){
 			return null;
 		}
@@ -122,45 +115,30 @@ public class PageContentDao extends DaoCommon {
 						" SELECT ?, cd.snippet_id, cd.snippets_index, cd.main_flg, now() " + 
 						" FROM content_detail cd" + 
 						" WHERE cd.page_content_id = ? ORDER BY cd.id");
-				
+
 				copyStatement.setInt(1, pcIdNew);
 				copyStatement.setInt(2, pcIdPrev);
-				
+
 				if(copyStatement != null){
 					copyStatement.executeUpdate(); // Execute every 1000 items.
 				}
 			}
-			
+
 			//Insert snippets & page_content tables.
 			batchStatement = connection.prepareStatement("INSERT INTO content_detail (page_content_id, snippet_id, snippets_index, main_flg, upd_dt) " +
 					" SELECT ?, ?, ?, ?, now() ");
 
 
-			//TODO get last max snippet index
-			if(strategy.isAppendContent()){
-				idxShift = getSnipIdx4PageCntnt(pcIdPrev) % strategy.getBlockSize();
-			}else{
-				idxShift = 0;
-			}
-			
-			for(int i = 0; i < strategy.getMnBlockCnt(); i++)
-			{
-				for(int j = 1; j <= rndBatchSnpCnt[i]; j++)
-				{
-					//get discription count
-					int descCnt = 1+rnd.nextInt(strategy.getMaxDescCnt());
-					boolean ifMainNotInserted = true;
+			List<List<Integer>> newCntntDtl = strategy.getSrtgPoller().prepareCntntDtlTable(convertSrtList2IntList(getContentDetailStructure(pcIdNew)));
 
-					for(int k = 0; k < descCnt; k++)
-					{
-						batchStatement.setInt(1, pcIdNew);
-						batchStatement.setInt(2, snpIds.get(rndSeq.remove(0)));
-						batchStatement.setInt(3, i*strategy.getMnBlockCnt() + j + idxShift);
-						batchStatement.setBoolean(4, ifMainNotInserted || false);
-						ifMainNotInserted = false;
-						batchStatement.addBatch();
-					}
-				}
+			for(List<Integer> row : newCntntDtl)
+			{
+
+				batchStatement.setInt(1, pcIdNew);
+				batchStatement.setInt(2, snpIds.get(rndSeq.remove(0)));
+				batchStatement.setInt(3, row.get(0));
+				batchStatement.setBoolean(4, row.get(1) == 1);
+				batchStatement.addBatch();
 			}
 
 			if(batchStatement != null){
@@ -180,7 +158,7 @@ public class PageContentDao extends DaoCommon {
 					e.printStackTrace();
 				}
 			}
-			
+
 			if(copyStatement != null){
 				try {
 					copyStatement.close();
@@ -193,7 +171,7 @@ public class PageContentDao extends DaoCommon {
 
 		return result;
 	}
-	
+
 	/**
 	 * ѕолучаем количество новостей, которые будут запощены в течении суток со дн€ запуска
 	 * @return
@@ -206,9 +184,9 @@ public class PageContentDao extends DaoCommon {
 		try {
 			//TODO Insert snippets & page_content tables.
 			prpStmt = connection.prepareStatement( " " +
-							" SELECT k.id, k.key_value, pc.id " + 
-							" FROM page_content pc, pages p, door_keys k " + 
-							" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.key_value <> '/' AND pc.upd_flg=0 ");
+					" SELECT k.id, k.key_value, pc.id " + 
+					" FROM page_content pc, pages p, door_keys k " + 
+					" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.key_value <> '/' AND pc.upd_flg=0 ");
 
 			rs = prpStmt.executeQuery();
 
@@ -244,7 +222,7 @@ public class PageContentDao extends DaoCommon {
 
 		return result;
 	}
-	
+
 	/**
 	 * ѕолучаем список новостей, которые надо будет обновить в течении суток
 	 * @return
@@ -257,9 +235,9 @@ public class PageContentDao extends DaoCommon {
 		try {
 			//TODO Insert snippets & page_content tables.
 			prpStmt = connection.prepareStatement( " " +
-							" SELECT DISTINCT k.id, k.key_value FROM page_content pc, pages p, door_keys k " + 
-							" WHERE pc.page_id = p.id AND p.key_id = k.id AND k.key_value <> '/' AND pc.upd_flg=0 AND (DATEDIFF((now()),pc.post_dt) > ?) ");
-			
+					" SELECT DISTINCT k.id, k.key_value FROM page_content pc, pages p, door_keys k " + 
+					" WHERE pc.page_id = p.id AND p.key_id = k.id AND k.key_value <> '/' AND pc.upd_flg=0 AND (DATEDIFF((now()),pc.post_dt) > ?) ");
+
 			prpStmt.setInt(1, dayAfterPost);
 
 			rs = prpStmt.executeQuery();
@@ -296,8 +274,8 @@ public class PageContentDao extends DaoCommon {
 
 		return result;
 	}
-	
-	
+
+
 	public int postPage(String key, long postTime)
 	{
 		PreparedStatement prStmt = null;
@@ -309,9 +287,9 @@ public class PageContentDao extends DaoCommon {
 
 			prStmt.setLong(1, postTime);
 			prStmt.setString(2, key);
-			
+
 			count = prStmt.executeUpdate();
-			
+
 		} catch (SQLException e) {
 			log.error("Error for key value: " + key);
 			// TODO Auto-generated catch block
@@ -327,10 +305,10 @@ public class PageContentDao extends DaoCommon {
 				}
 			}
 		}
-		
+
 		return count;
 	}
-	
+
 	public void updPagesAsUpdated(String key)
 	{
 		PreparedStatement prStmt = null;
@@ -342,7 +320,7 @@ public class PageContentDao extends DaoCommon {
 			prStmt.setString(1, key);
 
 			prStmt.executeUpdate();
-			
+
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -358,7 +336,7 @@ public class PageContentDao extends DaoCommon {
 			}
 		}
 	}
-	
+
 	/**
 	 * Delete deprecated page content
 	 * @param key
@@ -367,10 +345,10 @@ public class PageContentDao extends DaoCommon {
 	public int deleteDeprecatedPageContent(){
 		PreparedStatement prStatement = null;
 		int count = -1;
-		
+
 		try {
 			prStatement = connection.prepareStatement(
-							" DELETE FROM page_content WHERE post_dt < now() AND id IN ( " + 
+					" DELETE FROM page_content WHERE post_dt < now() AND id IN ( " + 
 							" 	SELECT DISTINCT t2.id FROM   " + 
 							" 	(SELECT t1.page_id, t1.post_dt, t1.id FROM page_content t1 WHERE t1.post_dt < now()) AS t2,  " + 
 							" 	(SELECT pc.page_id, MIN(pc.post_dt) min_post_dt FROM  page_content pc WHERE pc.post_dt < now() GROUP BY pc.page_id HAVING count(pc.page_id) > 1) AS t3  " + 
@@ -394,7 +372,7 @@ public class PageContentDao extends DaoCommon {
 
 		return count;
 	}
-	
+
 	/**
 	 * ѕолучаем последний id дл€ page_content
 	 * @return
@@ -404,13 +382,13 @@ public class PageContentDao extends DaoCommon {
 		PreparedStatement prpStmt = null;
 		ResultSet rs = null;
 		int pcId = -1;
-		
+
 		try {
 			//TODO Insert snippets & page_content tables.
 			prpStmt = connection.prepareStatement( " " +
-							" SELECT DISTINCT pc.id FROM page_content pc, pages p, door_keys k " +
-							" WHERE pc.page_id = p.id AND p.key_id = k.id AND k.key_value=? ORDER BY pc.upd_dt DESC ");
-			
+					" SELECT DISTINCT pc.id FROM page_content pc, pages p, door_keys k " +
+					" WHERE pc.page_id = p.id AND p.key_id = k.id AND k.key_value=? ORDER BY pc.upd_dt DESC ");
+
 			prpStmt.setString(1, key);
 
 			rs = prpStmt.executeQuery();
@@ -447,22 +425,54 @@ public class PageContentDao extends DaoCommon {
 
 		return pcId;
 	}
-	
+
 	/**
 	 * ѕолучаем максимальный индеск дл€ content_detail
 	 * @return
 	 */
 	public int getSnipIdx4PageCntnt(int pcId)
 	{
-			String slcQuery = 	" SELECT MAX(cd.snippets_index) max_snip_idx, pc.id " +
-								" FROM page_content pc, content_detail cd " + 
-								" WHERE cd.page_content_id = pc.id AND pc.id = "+ pcId + " " +
-								" GROUP BY pc.id";
-			ArrayList<String> result = getPagesBySelect(slcQuery, "max_snip_idx");
-			if(result != null && result.size() > 0){
+		String slcQuery = 	" SELECT MAX(cd.snippets_index) max_snip_idx, pc.id " +
+				" FROM page_content pc, content_detail cd " + 
+				" WHERE cd.page_content_id = pc.id AND pc.id = "+ pcId + " " +
+				" GROUP BY pc.id";
+		List<List<String>> arrayRes = getPagesBySelect(slcQuery, new String[]{"max_snip_idx"});
+
+		if(arrayRes != null && arrayRes.size() > 0)
+		{
+			List<String> result = arrayRes.get(0);
+			if(result != null && result.size() > 0)
+			{
 				return Integer.valueOf(result.get(0));
 			}
-			
-			return 0;
+		}
+
+		return 0;
+	}
+
+	public List<List<String>> getContentDetailStructure(int pcId){
+		String slcQuery = 	" SELECT cd.snippets_index, cd.main_flg " +
+				" FROM content_detail cd " +
+				" WHERE cd.page_content_id = 2 ORDER BY cd.id ";
+		List<List<String>> result = getPagesBySelect(slcQuery, new String[]{"max_snip_idx"});
+		return result;
+	}
+
+	private List<List<Integer>> convertSrtList2IntList(List<List<String>> inList)
+	{
+		List<List<Integer>> resList = new ArrayList<List<Integer>>();
+
+		for(List<String> strList : inList)
+		{
+			List<Integer> newIntRowList = new ArrayList<Integer>();
+
+			for(String value : strList)
+			{
+				newIntRowList.add(Integer.valueOf(value));
+			}
+
+			resList.add(newIntRowList);
+		}
+		return resList;
 	}
 }

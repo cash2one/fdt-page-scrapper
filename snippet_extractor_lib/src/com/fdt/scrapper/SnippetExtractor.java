@@ -18,6 +18,7 @@ import java.net.Proxy;
 import java.net.URL;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 import java.util.zip.GZIPInputStream;
@@ -76,7 +77,7 @@ public class SnippetExtractor {
 
 	private SnippetTaskWrapper task= null;
 
-	private boolean isInsLnkFrmGenFile = true;
+	private boolean addLinkFromFolder = true;
 
 	public SnippetExtractor(ProxyFactory proxyFactory) throws MalformedURLException, IOException {	
 		this();
@@ -118,41 +119,69 @@ public class SnippetExtractor {
 	}
 
 	public boolean isInsLnkFrmGenFile() {
-		return isInsLnkFrmGenFile;
+		return addLinkFromFolder;
 	}
 
-	public void setInsLnkFrmGenFile(boolean isInsLnkFrmGenFile) {
-		this.isInsLnkFrmGenFile = isInsLnkFrmGenFile;
+	public void setAddLinkFromFolder(boolean addLinkFromFolder) {
+		this.addLinkFromFolder = addLinkFromFolder;
 	}
 
 	public synchronized void insertLinksToSnippets(SnippetTask snippetTask) {
 		//get snippets
 		String snippetContent = null;
 		int attempt = 0;
+		boolean errExist = false;
 		int maxAttemptCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_ATTEMPT_COUNT_LABEL));
+		HashSet<Snippet> snippetResult = new HashSet<Snippet>();
+		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();;
+		
 		do{
 			try{
-				ArrayList<Snippet> snippets = extractSnippetsFromPageContent(snippetTask);
-				
-				while(snippets.size() == 0 && snippetTask.getPage() > 1){
-					snippetTask.setPage(reducePage(snippetTask.getPage()));
-					snippets = extractSnippetsFromPageContent(snippetTask);
+				//TODO Get proxy connector
+				while(snippetResult.size() < MIN_SNIPPET_COUNT && snippetTask.getPage() > 1){
+					try {
+						//≈сли не было ошибки - то уменьшаем количество страниц, 
+						if(!errExist){
+							snippetTask.setPage(reducePage(snippetTask.getPage()));
+						}
+						//иначе не уменьшаем, и пробуем с другим прокси
+						else{
+							errExist = false;
+							if(proxyConnector != null){
+								proxyFactory.releaseProxy(proxyConnector);
+								proxyConnector = proxyFactory.getRandomProxyConnector();
+							}
+						}
+
+						SnippetExtractor snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, new ArrayList<String>());
+						snippetResult.addAll(snippetExtractor.extractSnippetsFromPageContent(proxyConnector));
+					}
+					catch (Exception e) {
+						errExist = true;
+						log.error("Error occured during processing key: " + snippetTask.getKeyWords());
+					}
 				}
 				
-				if(snippets == null || snippets.size() == 0){
+				
+				if(snippetResult == null || snippetResult.size() == 0){
 					throw new Exception("Snippets size is 0. Will try to use another proxy server");
 				}
 				
-				if(isInsLnkFrmGenFile){
-					snippetContent = getSnippetsContentFromFolder(snippets);
+				if(addLinkFromFolder){
+					snippetContent = getSnippetsContentFromFolder(new ArrayList<Snippet>(snippetResult));
 				}else{
-					snippetContent = getSnippetsContent(snippets);
+					snippetContent = getSnippetsContent(new ArrayList<Snippet>(snippetResult));
 				}
 			}catch(Exception e){
 				log.warn("Error during getting snippets content",e);
 				attempt++;
 				//if any errors occured - try again
 				continue;
+			}finally{
+				if(proxyConnector != null){
+					proxyFactory.releaseProxy(proxyConnector);
+					proxyConnector = null;
+				}
 			}
 			//exit if no errors occured
 			break;
@@ -192,7 +221,7 @@ public class SnippetExtractor {
 		int snippetLinked = 0;
 
 		if((snippets.size()-snipCount) < 0){
-			log.debug("terst");
+			log.debug("test");
 		}
 		int indexShift = getRandomValue(0,snippets.size()-snipCount); 
 		
@@ -253,13 +282,27 @@ public class SnippetExtractor {
 		/*if(getRandomValue(MIN_LINK_COUNT, MAX_LINK_COUNT) == 0){
 			linkCount = 0;
 		}*/
+		
+		if( MIN_LINK_COUNT == 0 && MAX_LINK_COUNT == 0){
+			linkCount = linkList.size();
+		}else{
+			linkCount = getRandomValue(MIN_LINK_COUNT, MAX_LINK_COUNT);
+		}
+		
+		//reduce link cound
+		while(linkList.size() > linkCount){
+			linkList.remove(rnd.nextInt(linkList.size()));
+		}
 
 		if(snippets.size() < linkCount){
 			log.warn(String.format("Link size (%s) is greater than snippets size (%s)", linkCount, snippets.size()));
+			//reducing 
 			return null;
 		}else{
 			//if(linkCount > 0){
-			snipCount = linkCount + rnd.nextInt(MAX_EXTRA_SNIPPETS+1);
+			/*snipCount = linkCount + rnd.nextInt(MAX_EXTRA_SNIPPETS+1);*/
+			snipCount = getRandomValue(MIN_SNIPPET_COUNT, MAX_SNIPPET_COUNT);
+			
 			if(snippets.size() < snipCount){
 				snipCount = snippets.size();
 			}

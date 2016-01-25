@@ -1,10 +1,12 @@
 package com.fdt.scrapper.task;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
@@ -22,17 +24,20 @@ public class ConfigManager
 
     public void loadProperties(String cfgFilePath){
 	synchronized (this){ 
-	    InputStream is = null;
+	    
+	    BufferedReader in = null;
+	    
 	    try {
-		is = new FileInputStream(new File(cfgFilePath));
-		properties.load(is);
+	    	in = new BufferedReader(
+	 	 		   new InputStreamReader( new FileInputStream(new File(cfgFilePath)), "UTF8"));
+		properties.load(in);
 	    } catch (FileNotFoundException e) {
 		log.error("Reading PROPERTIES file: FileNotFoundException exception occured: " + e.getMessage());
 	    } catch (IOException e) {
 		log.error("Reading PROPERTIES file: IOException exception occured: " + e.getMessage());
 	    } finally {
 		try {
-		    is.close();
+		    in.close();
 		} catch (Throwable e) {
 		    log.warn("Error while initializtion", e);
 		}

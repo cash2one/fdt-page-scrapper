@@ -1,41 +1,37 @@
 package com.fdt.doorgen.key.pooler.content;
 
+import com.fdt.doorgen.key.pooler.content.impl.*;
+
 public enum ContentStrategy {
 	
-	DEFAULT(),
-	RANDOM_REPLACEMENT_3_3_3_3_TRUE_FALSE("RANDOM_REPLACEMENT_3_3_3_3_TRUE_FALSE",3,3,3,3,true,false),
-	RANDOM_APPEND_3_3_1_1_FALSE_TRUE("RANDOM_APPEND_3_3_1_1_FALSE_TRUE",3,3,1,1,false,true);
+	DEFAULT(new DefaultStrategyPoller()),
+	VTOPAX_RU("VTOPAX_RU",true,false, new VtopaxStrategyPoller()),
+	HUMAN_CAPITAL_CR_COM("HUMAN_CAPITAL_CR_COM",false,true,new HumanCapitalcrStrategyPoller()),
+	VTOPAXMIRA_RU("VTOPAXMIRA_RU",true,true,new VtopaxMiraRuStrategyPoller());
 	
 	//String strategy name
 	private String srtgName = "DEFAULT";
-	//content block count
-	private int mnBlockCnt = 3;
-	//max block size per main block. getting random value from 1 to blockSize
-	private int blockSize = 3;
-	//max block count that will be populated per post
-	private int blockCntPerPost = 3;
-	//max description count in block 
-	private int maxDescCnt = 3;
 	
 	//should we use randomly keys mix
 	private boolean mixKeys = true;
 	
-	//true - append to exis content, false - replace with new
+	//true - append to exist content, false - replace with new
 	private boolean appendContent = false;
 	
-	private ContentStrategy(String srtgName, int mnBlockCnt, int blockSize,
-			int blockSCntPerPost, int maxDescCnt, boolean mixKeys,
-			boolean appendContent) {
+	private IStrategyPoller srtgPoller;
+	
+	private ContentStrategy(IStrategyPoller srtgPoller) 
+	{
+		this.srtgPoller = srtgPoller;
+	}
+	
+	private ContentStrategy(String srtgName, boolean mixKeys,
+			boolean appendContent, IStrategyPoller srtgPoller) {
 		this.srtgName = srtgName;
-		this.mnBlockCnt = mnBlockCnt;
-		this.blockSize = blockSize;
-		this.blockCntPerPost = blockSCntPerPost;
-		this.maxDescCnt = maxDescCnt;
 		this.mixKeys = mixKeys;
 		this.appendContent = appendContent;
+		this.srtgPoller = srtgPoller;
 	}
-
-
 
 	public static ContentStrategy getByName(String strgName){
 		for(ContentStrategy strg : ContentStrategy.values()){
@@ -54,29 +50,15 @@ public enum ContentStrategy {
 		return srtgName;
 	}
 
-	public int getMnBlockCnt() {
-		return mnBlockCnt;
-	}
-
-	public int getBlockSize() {
-		return blockSize;
-	}
-
-	public int getBlockCntPerPost() {
-		return blockCntPerPost;
-	}
-
 	public boolean isMixKeys() {
 		return mixKeys;
-	}
-
-	public int getMaxDescCnt() {
-		return maxDescCnt;
 	}
 
 	public boolean isAppendContent() {
 		return appendContent;
 	}
-	
-	
+
+	public IStrategyPoller getSrtgPoller() {
+		return srtgPoller;
+	}
 }

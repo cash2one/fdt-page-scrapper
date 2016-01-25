@@ -4,8 +4,8 @@ import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 import org.apache.log4j.Logger;
@@ -83,7 +83,7 @@ public class DoorgenPosterRunner {
 				return;
 			}
 
-			ArrayList<String> keys = pagesDao.getPages4Post();
+			List<List<String>> keys = pagesDao.getPages4Post();
 			
 			//if we need mix keys
 			if(STRATEGY_POLLER.isMixKeys()){
@@ -104,7 +104,7 @@ public class DoorgenPosterRunner {
 				long postTime = DoorUtils.getRndNormalDistTime() + startOtDay;
 				postTime = DoorUtils.calibratePostDate(postTime, curTime);
 				log.info(String.format("Try to post key %s with post time %s",keys.get(i), postTime));
-				postedCnt += pageCntntDao.postPage(keys.get(i), postTime);
+				postedCnt += pageCntntDao.postPage(keys.get(i).get(0), postTime);
 			}
 
 			//if records were not updated in DB - return time string 

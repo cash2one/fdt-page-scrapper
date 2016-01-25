@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 import org.apache.log4j.Logger;
@@ -73,7 +74,7 @@ public class DoorgenUpdaterRunner {
 			int deleted = 0;
 			int updDateDiff = 3 + rnd.nextInt(3);
 			
-			ArrayList<String> keys = null;
+			List<List<String>> keys = null;
 			
 			if(STRATEGY_POLLER.isAppendContent()){
 				keys = pagesDao.getPages4UpdateAppendCntnt(updDateDiff);
@@ -99,18 +100,18 @@ public class DoorgenUpdaterRunner {
 				int pcIdNew = -1;
 				
 				if(STRATEGY_POLLER.isAppendContent()){
-					pcIdPrev = pageCntntDao.getLastPageContentId(keys.get(i));
+					pcIdPrev = pageCntntDao.getLastPageContentId(keys.get(i).get(0));
 				}
 				
-				pcIdNew = pageCntntDao.insertPageContent(keys.get(i),postTime);
+				pcIdNew = pageCntntDao.insertPageContent(keys.get(i).get(0),postTime);
 				
 				log.info(String.format("Page with page_content.id=%s will be replaced with page_content.id=%s", pcIdPrev, pcIdNew));
 				
 				if(pcIdNew > 0){
-					pageCntntDao.populateContent(keys.get(i), pcIdNew, pcIdPrev, STRATEGY_POLLER);
-					pageCntntDao.updPagesAsUpdated(keys.get(i));
+					pageCntntDao.populateContent(keys.get(i).get(0), pcIdNew, pcIdPrev, STRATEGY_POLLER);
+					pageCntntDao.updPagesAsUpdated(keys.get(i).get(0));
 				}else{
-					throw new Exception("Page content record was not added for key: " + keys.get(i));
+					throw new Exception("Page content record was not added for key: " + keys.get(i).get(0));
 				}
 			}
 			

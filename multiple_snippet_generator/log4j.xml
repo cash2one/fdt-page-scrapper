@@ -12,7 +12,7 @@
   	</appender>
 	
 	<root>
-		<level value="TRACE" />
+		<level value="WARN" />
 		<appender-ref ref="logfile" />
 	</root>
 	

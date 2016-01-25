@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 
@@ -18,9 +19,9 @@ public class DaoCommon {
 		this.connection = connection;
 	}
 	
-	protected ArrayList<String> getPagesBySelect(String slcQuery, String extrParamNm)
+	protected List<List<String>> getPagesBySelect(String slcQuery, String[] extrParamNmArr)
 	{
-		ArrayList<String> result = new ArrayList<String>();
+		List<List<String>> result = new ArrayList<List<String>>();
 		PreparedStatement prpStmt = null;
 		ResultSet rs = null;
 		try {
@@ -31,7 +32,11 @@ public class DaoCommon {
 
 			if(rs != null){
 				while(rs.next()){
-					result.add(rs.getString(extrParamNm));
+					ArrayList<String> row = new ArrayList<String>();
+					for(String extrParamNm : extrParamNmArr){
+						row.add(rs.getString(extrParamNm));
+					}
+					result.add(row);
 				}
 			}
 
