@@ -276,17 +276,17 @@ public class PageContentDao extends DaoCommon {
 	}
 
 
-	public int postPage(String key, long postTime)
+	public int postPage(int key, long postTime)
 	{
 		PreparedStatement prStmt = null;
 		int count = 0;
 		try {
 			prStmt = connection.prepareStatement(
 					" UPDATE page_content pc SET pc.post_dt=FROM_UNIXTIME(?/1000) " +
-					" WHERE pc.page_id = (SELECT p.id FROM door_keys k, pages p WHERE p.key_id=k.id AND k.key_value = ?) ");
+					" WHERE pc.page_id = (SELECT p.id FROM door_keys k, pages p WHERE p.key_id=k.id AND k.id = ?) ");
 
 			prStmt.setLong(1, postTime);
-			prStmt.setString(2, key);
+			prStmt.setInt(2, key);
 
 			count = prStmt.executeUpdate();
 
@@ -454,7 +454,7 @@ public class PageContentDao extends DaoCommon {
 		String slcQuery = 	" SELECT cd.snippets_index, cd.main_flg " +
 				" FROM content_detail cd " +
 				" WHERE cd.page_content_id = 2 ORDER BY cd.id ";
-		List<List<String>> result = getPagesBySelect(slcQuery, new String[]{"max_snip_idx"});
+		List<List<String>> result = getPagesBySelect(slcQuery, new String[]{"snippets_index","main_flg"});
 		return result;
 	}
 

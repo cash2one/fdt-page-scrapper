@@ -3,7 +3,12 @@ class CaseValueSelector
 {
 	function getCityValueByNewsKey($con,$news_key)
 	{
-		$query_case_list = "select c.city_name_latin from `city_page` cp,  `city` c where c.city_id = cp.city_id AND cp.city_page_key = LOWER(?)";
+		$query_case_list = 	" SELECT DISTINCT c.city_name_latin  " .
+							" FROM door_keys k, city c " .
+							" WHERE 1 " .
+							" AND k.city_id = c.city_id " .
+							" AND k.key_value_latin = ? " .
+							" LIMIT 1 ";
 		
 		if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 			echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -26,7 +31,7 @@ class CaseValueSelector
 			echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		}
 		
-		//TODO Возвращать массив всех возможных падежей, а затем уже из массива извлекать нужное.
+		//TODO пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
 		if(mysqli_stmt_fetch($stmt)) {
 		}
 		mysqli_stmt_close($stmt);
@@ -41,10 +46,20 @@ class CaseValueSelector
 		$result = array();
 		if($reg_type == 2){
 			#region name
-			$query_case_list = "select DISTINCT c.case_code_value, c.case_value from `case` c where c.location_type_code_value = 2 AND c.location_id = (select region_id from `region` r where r.region_name_latin like replace(LOWER(?),'-','_')) ORDER BY c.case_code_value ASC";
+			$query_case_list =	" SELECT DISTINCT c.case_code_value, c.case_value  " .
+								" FROM cases c  " .
+								" WHERE 1 " .
+								" AND c.location_type_code_value = 2  " .
+								" AND c.location_id = (SELECT region_id FROM region r WHERE r.region_name_latin = ?) " .
+								" ORDER BY c.case_code_value ASC ";
 		}else{
 			#city name
-			$query_case_list = "select DISTINCT c.case_code_value, c.case_value from `case` c where c.location_type_code_value = 1 AND c.location_id in (select city_id from `city` r where r.city_name_latin like replace(LOWER(?),'-','_')) ORDER BY c.case_code_value ASC";
+			$query_case_list = 	" SELECT DISTINCT c.case_code_value, c.case_value  " .
+								" FROM cases c  " .
+								" WHERE 1 " .
+								" AND c.location_type_code_value = 1  " .
+								" AND c.location_id in (SELECT city_id FROM `city` r WHERE r.city_name_latin = ?) " .
+								" ORDER BY c.case_code_value ASC ";
 		}
 		if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 			echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -67,7 +82,7 @@ class CaseValueSelector
 			echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		}
 		
-		//TODO Возвращать массив всех возможных падежей, а затем уже из массива извлекать нужное.
+		//TODO пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
 		while(mysqli_stmt_fetch($stmt)) {
 			$result[$case_code_value] = $case_value;
 		}

@@ -76,6 +76,7 @@ public class DoorgenUpdaterRunner {
 			
 			List<List<String>> keys = null;
 			
+			//TODO Add extra method for getting keys for update for VTOPAXMIRA project
 			if(STRATEGY_POLLER.isAppendContent()){
 				keys = pagesDao.getPages4UpdateAppendCntnt(updDateDiff);
 			}else{

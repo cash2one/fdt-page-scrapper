@@ -37,6 +37,7 @@ public class VtopaxMiraRuStrategyPoller implements IStrategyPoller {
 	public List<List<Integer>> prepareCntntDtlTable( List<List<Integer>> currentDtlTable ) 
 	{
 		Random rnd = new Random();
+		rnd.nextInt();
 		List<List<Integer>> dtlTbl = new ArrayList<List<Integer>>();
 		
 		Map<Integer, Integer> blckDtl = getBlckDtl(currentDtlTable);

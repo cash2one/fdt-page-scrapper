@@ -49,7 +49,7 @@ public class DoorgenPoolerRunner{
 	private int maxPageNum = 50;
 
 	public static Integer MIN_SNIPPET_COUNT_FOR_POST_PAGE = 27;
-	
+
 	public static ContentStrategy STRATEGY_POLLER;
 
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
@@ -64,9 +64,9 @@ public class DoorgenPoolerRunner{
 	private static final String CONNECTION_STRING_LABEL = "connection_string";
 	private static final String GLOBAL_TITLE_LABEL = "global_title";
 	private static final String HOST_NAME_LABEL = "host_name";
-	
+
 	private static final String MIN_SNIPPET_COUNT_FOR_POST_PAGE_LABEL="min_snip_cnt_for_poller";
-	
+
 	private static final String STRATEGY_NAME_LABEL = "strategy_name";
 
 
@@ -89,7 +89,7 @@ public class DoorgenPoolerRunner{
 	private ArrayList<String> keysList = new ArrayList<String>();
 
 	private HashMap<String, Integer> keyMap = new HashMap<String, Integer>();
-	
+
 	private KeysDao keysDao;
 	private PagesDao pagesDao;
 	private SnippetsDao snipDao;
@@ -153,8 +153,15 @@ public class DoorgenPoolerRunner{
 			}
 		}
 	}
-	
+
 	private ArrayList<String> getKeyList4Update() throws ClassNotFoundException, SQLException{
+		//TODO Fill keys which have snippets but don't have pages
+		/*List<List<String>> keys4FillSnippets = keysDao.getKeysWithSnippets4FillPages();
+
+		for(List<String> row : keys4FillSnippets){
+
+		}*/
+
 		return keysDao.getKeyList4Update(keyMap, MIN_SNIPPET_COUNT_FOR_POST_PAGE);
 	}
 
@@ -172,11 +179,11 @@ public class DoorgenPoolerRunner{
 		this.hostName = ConfigManager.getInstance().getProperty(HOST_NAME_LABEL);
 		this.globalTitle = ConfigManager.getInstance().getProperty(GLOBAL_TITLE_LABEL);
 		this.connectionString = ConfigManager.getInstance().getProperty(CONNECTION_STRING_LABEL);
-		
+
 		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_FOR_POST_PAGE_LABEL) != null){
 			MIN_SNIPPET_COUNT_FOR_POST_PAGE = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_FOR_POST_PAGE_LABEL));
 		}
-		
+
 		//getting strategy for poller
 		if(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL) != null){
 			STRATEGY_POLLER = ContentStrategy.getByName(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL));
@@ -209,9 +216,9 @@ public class DoorgenPoolerRunner{
 		if(pageVaule != null && !"".equals(pageVaule.trim())){
 			maxPageNum = Integer.valueOf(pageVaule);
 		}
-		
+
 		connection = getConnection();
-		
+
 		keysDao = new KeysDao(connection);
 		pagesDao = new PagesDao(connection);
 		snipDao = new SnippetsDao(connection);
@@ -248,7 +255,7 @@ public class DoorgenPoolerRunner{
 			saver = new SaverThread(taskFactory,new IResultProcessor() {
 
 				public void processResult(SnippetTask task) {
-					pollPagesTable(task, hostName, globalTitle);
+					pollPagesTable(task, hostName, globalTitle, connection);
 				}
 
 			});
@@ -305,29 +312,32 @@ public class DoorgenPoolerRunner{
 		return connection;
 	}
 
-	private void pollPagesTable(SnippetTask task, String hostName, String globalTitle){
+	private void pollPagesTable(SnippetTask task, String hostName, String globalTitle, Connection connection){
 		int[] result = null;
 		int pId = -1;
-		String key = task.getKeyWordsOrig();
-		if(keyMap.get(task.getKeyWordsOrig()) == 0){
-			//if all snipepts were extracted - create page
-			pagesDao.insertPage(task, hostName, globalTitle);
-		}
 
-		//TODO Insert images
-
-		//insert snippets
-		result = snipDao.insertSnippets(task);
-
-		//TODO Insert random content
-		if(result != null && result.length > 0)
+		try
 		{
-			result = null;
-			int pcId = pageCntntDao.insertPageContent(key);
-			result = pageCntntDao.populateContent(key, pcId, -1, STRATEGY_POLLER);
-		}
-		else{
-			return;
+			String key = task.getKeyWordsOrig();
+			if(keyMap.get(task.getKeyWordsOrig()) == 0){
+				//if all snipepts were extracted - create page
+				pagesDao.insertPage(task, hostName, globalTitle);
+			}
+
+			//TODO Insert images
+
+			//insert snippets
+			result = snipDao.insertSnippets(task);
+
+			//TODO Insert random content
+			if(result != null && result.length > 0)
+			{
+				result = null;
+				int pcId = pageCntntDao.insertPageContent(key);
+				result = pageCntntDao.populateContent(key, pcId, -1, STRATEGY_POLLER);
+			}
+		} catch (Exception e) {
+			log.error("Error during saving result to DB", e);
 		}
 	}
 }

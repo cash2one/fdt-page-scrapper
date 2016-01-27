@@ -66,7 +66,7 @@ public class DoorgenPoolerThread implements Callable<String> {
 				}
 				catch (Exception e) {
 					errExist = true;
-					log.error("Error occured during processing key: " + snippetTask.getCurrentTask().getKeyWords());
+					log.warn("Error occured during processing key: " + snippetTask.getCurrentTask().getKeyWords());
 				}
 			}
 

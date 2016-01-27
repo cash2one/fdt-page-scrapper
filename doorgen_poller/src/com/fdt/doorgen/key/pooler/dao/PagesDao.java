@@ -86,9 +86,9 @@ public class PagesDao extends DaoCommon{
 	
 	public List<List<String>> getPages4Post(){
 		String slcQuery = 	" SELECT DISTINCT k.id, k.key_value, pc.id " + 
-							" FROM page_content pc, pages p, door_keys k " + 
-							" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.key_value <> '/' AND pc.upd_flg=0 AND (pc.post_dt > now() + INTERVAL 1 DAY) ORDER BY k.id ";
-		return getPagesBySelect(slcQuery, new String[]{"key_value"});
+							" FROM content_detail cd, page_content pc, pages p, door_keys k " + 
+							" WHERE cd.page_content_id = pc.id AND pc.page_id = p.id AND p.key_id = k.id AND k.key_value <> '/' AND pc.upd_flg=0 AND (pc.post_dt > now() + INTERVAL 1 DAY) ORDER BY k.id ";
+		return getPagesBySelect(slcQuery, new String[]{"key_value","id"});
 	}
 	
 	public List<List<String>> getPages4UpdateReplaceCntnt(int updDateDiff){

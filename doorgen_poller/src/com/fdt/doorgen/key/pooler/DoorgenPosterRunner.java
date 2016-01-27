@@ -104,7 +104,7 @@ public class DoorgenPosterRunner {
 				long postTime = DoorUtils.getRndNormalDistTime() + startOtDay;
 				postTime = DoorUtils.calibratePostDate(postTime, curTime);
 				log.info(String.format("Try to post key %s with post time %s",keys.get(i), postTime));
-				postedCnt += pageCntntDao.postPage(keys.get(i).get(0), postTime);
+				postedCnt += pageCntntDao.postPage(Integer.valueOf(keys.get(i).get(1)), postTime);
 			}
 
 			//if records were not updated in DB - return time string 
