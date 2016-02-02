@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.fdt.doorgen.key.pooler.content.IStrategyPoller;
+import org.apache.commons.lang.NotImplementedException;
+
+import com.fdt.doorgen.key.pooler.content.StrategyPoller;
+import com.fdt.doorgen.key.pooler.dao.DaoCommon;
 import com.fdt.doorgen.key.pooler.util.DoorUtils;
 
-public class VtopaxStrategyPoller implements IStrategyPoller {
+public class VtopaxStrategyPoller extends StrategyPoller {
 
 	public static void main(String... args){
 		VtopaxStrategyPoller poller = new VtopaxStrategyPoller();

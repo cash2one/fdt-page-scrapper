@@ -188,7 +188,7 @@ public class DoorgenPoolerRunner{
 		if(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL) != null){
 			STRATEGY_POLLER = ContentStrategy.getByName(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL));
 		}else{
-			STRATEGY_POLLER = ContentStrategy.DEFAULT;
+			throw new Exception(String.format("Strategy poller '%s' was not found", ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL)));
 		}
 
 		String freqStr = ConfigManager.getInstance().getProperty(FREQUENCY_LABEL);

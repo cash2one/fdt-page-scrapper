@@ -179,11 +179,15 @@ public class Test {
 		test.add("1");
 		System.out.println("TEST: " + test.get(1));*/
 
-		for(TestEnum strg : TestEnum.values()){
+		/*for(TestEnum strg : TestEnum.values()){
 			System.out.println(strg.name());
 			System.out.println(strg.getName());
-		}
+		}*/
 
+		String testSrt = "";
+		System.out.println("   	".isEmpty());
+		System.out.println("".isEmpty());
+		
 	}
 
 	enum TestEnum{

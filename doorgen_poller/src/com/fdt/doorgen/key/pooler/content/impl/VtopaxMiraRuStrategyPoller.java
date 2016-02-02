@@ -1,14 +1,16 @@
 package com.fdt.doorgen.key.pooler.content.impl;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import com.fdt.doorgen.key.pooler.content.IStrategyPoller;
+import com.fdt.doorgen.key.pooler.content.StrategyPoller;
+import com.fdt.doorgen.key.pooler.dao.KeysDao;
 
-public class VtopaxMiraRuStrategyPoller implements IStrategyPoller {
+public class VtopaxMiraRuStrategyPoller extends StrategyPoller {
 
 	public static void main(String... args){
 		List<List<Integer>> test = new ArrayList<List<Integer>>();
@@ -31,6 +33,25 @@ public class VtopaxMiraRuStrategyPoller implements IStrategyPoller {
 		for(List<Integer> snglRow : resutl){
 			System.out.println(snglRow.get(0) + ":" + snglRow.get(1));
 		}
+	}
+	
+	@Override
+	public String getSql4CountPostedNews(){
+		return " SELECT DISTINCT COUNT(k.id) posted_count" + 
+				" FROM page_content pc, pages p, door_keys k, city c, region r " + 
+				" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.city_id = c.city_id AND c.region_id = r.region_id AND r.region_id = ? AND k.key_value <> '/' AND pc.upd_flg=0 AND pc.post_dt > now() AND (pc.post_dt < now() + INTERVAL 1 DAY )";
+	}
+	
+	@Override
+	public String getSqlGetKeys4Post(){
+		return " SELECT DISTINCT k.id, k.key_value, pc.id " + 
+				" FROM content_detail cd, page_content pc, pages p, door_keys k, city c, region r " + 
+				" WHERE cd.page_content_id = pc.id AND pc.page_id = p.id AND p.key_id = k.id AND k.city_id = c.city_id AND c.region_id = r.region_id AND r.region_id = ? AND k.key_value <> '/' AND pc.upd_flg=0 AND (pc.post_dt > now() + INTERVAL 1 DAY) ORDER BY k.id ";
+	}
+	
+	@Override
+	public List<Integer> getRegionList(KeysDao keysDao) throws SQLException{
+		return keysDao.getRegionList();
 	}
 	
 	@Override
@@ -106,14 +127,4 @@ public class VtopaxMiraRuStrategyPoller implements IStrategyPoller {
 		return result;
 	}
 
-	private int getMaxIndex(List<List<Integer>> dtlTbl){
-		int max = 1;
-		for(List<Integer> row : dtlTbl){
-			if(row.get(0) > max){
-				max = row.get(0) ;
-			}
-		}
-
-		return max;
-	}
 }

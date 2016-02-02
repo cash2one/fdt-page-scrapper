@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +20,16 @@ public class DaoCommon {
 		this.connection = connection;
 	}
 	
-	protected List<List<String>> getPagesBySelect(String slcQuery, String[] extrParamNmArr)
+	public Connection getConnection(){
+		return connection;
+	}
+	
+	public List<List<String>> getPagesBySelect(String slcQuery, String[] extrParamNmArr) throws SQLException{
+		ArrayList<InputParam> inParams = new ArrayList<InputParam>();
+		return getPagesBySelect(slcQuery,inParams, extrParamNmArr);
+	}
+	
+	public List<List<String>> getPagesBySelect(String slcQuery, List<InputParam> inParams, String[] extrParamNmArr) throws SQLException
 	{
 		List<List<String>> result = new ArrayList<List<String>>();
 		PreparedStatement prpStmt = null;
@@ -27,6 +37,8 @@ public class DaoCommon {
 		try {
 			//TODO Insert snippets & page_content tables.
 			prpStmt = connection.prepareStatement(slcQuery);
+			
+			prpStmt = prepateInputs(prpStmt, inParams);
 
 			rs = prpStmt.executeQuery();
 
@@ -40,9 +52,6 @@ public class DaoCommon {
 				}
 			}
 
-		} catch (SQLException e) {
-			log.error(e);
-			e.printStackTrace();
 		}
 		finally{
 			if(rs != null){
@@ -65,5 +74,20 @@ public class DaoCommon {
 		}
 
 		return result;
+	}
+	
+	private PreparedStatement prepateInputs(PreparedStatement prpStmt, List<InputParam> inParams) throws SQLException{
+		int index = 1;
+		for(InputParam param : inParams){
+			if(param.getType() == Types.INTEGER){
+				prpStmt.setInt(index++, (Integer)param.getValue());
+			}else if(param.getType() == Types.VARCHAR){
+				prpStmt.setString(index++, (String)param.getValue());
+			}else{
+				prpStmt.setString(index++, (String)param.getValue());
+			}
+		}
+		
+		return prpStmt;
 	}
 }

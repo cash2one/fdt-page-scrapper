@@ -4,7 +4,6 @@ import com.fdt.doorgen.key.pooler.content.impl.*;
 
 public enum ContentStrategy {
 	
-	DEFAULT(new DefaultStrategyPoller()),
 	VTOPAX_RU("VTOPAX_RU",true,false, new VtopaxStrategyPoller()),
 	HUMAN_CAPITAL_CR_COM("HUMAN_CAPITAL_CR_COM",false,true,new HumanCapitalcrStrategyPoller()),
 	VTOPAXMIRA_RU("VTOPAXMIRA_RU",true,true,new VtopaxMiraRuStrategyPoller());
@@ -18,15 +17,15 @@ public enum ContentStrategy {
 	//true - append to exist content, false - replace with new
 	private boolean appendContent = false;
 	
-	private IStrategyPoller srtgPoller;
+	private StrategyPoller srtgPoller;
 	
-	private ContentStrategy(IStrategyPoller srtgPoller) 
+	private ContentStrategy(StrategyPoller srtgPoller) 
 	{
 		this.srtgPoller = srtgPoller;
 	}
 	
 	private ContentStrategy(String srtgName, boolean mixKeys,
-			boolean appendContent, IStrategyPoller srtgPoller) {
+			boolean appendContent, StrategyPoller srtgPoller) {
 		this.srtgName = srtgName;
 		this.mixKeys = mixKeys;
 		this.appendContent = appendContent;
@@ -40,7 +39,7 @@ public enum ContentStrategy {
 			}
 		}
 		
-		return ContentStrategy.DEFAULT;
+		return null;
 	}
 
 	private ContentStrategy() {
@@ -58,7 +57,7 @@ public enum ContentStrategy {
 		return appendContent;
 	}
 
-	public IStrategyPoller getSrtgPoller() {
+	public StrategyPoller getSrtgPoller() {
 		return srtgPoller;
 	}
 }

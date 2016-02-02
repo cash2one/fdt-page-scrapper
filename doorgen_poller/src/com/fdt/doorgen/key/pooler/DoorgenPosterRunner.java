@@ -4,6 +4,8 @@ import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Types;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
@@ -12,6 +14,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 import com.fdt.doorgen.key.pooler.content.ContentStrategy;
+import com.fdt.doorgen.key.pooler.dao.InputParam;
 import com.fdt.doorgen.key.pooler.dao.KeysDao;
 import com.fdt.doorgen.key.pooler.dao.PageContentDao;
 import com.fdt.doorgen.key.pooler.dao.PagesDao;
@@ -29,12 +32,12 @@ public class DoorgenPosterRunner {
 	private File timeFile;
 
 	public static ContentStrategy STRATEGY_POLLER;
-	
+
 
 	private static final String CONNECTION_STRING_LABEL = "connection_string";
-	
+
 	private static final String STRATEGY_NAME_LABEL = "strategy_name";
-	
+
 	private static final String TIME_TABLE_LABLE = "time_table";
 
 	Random rnd = new Random();
@@ -73,46 +76,78 @@ public class DoorgenPosterRunner {
 
 	private void executeWrapper() throws Exception{
 		try{
-			int posted = pagesDao.getPostedCnt4Day();
+			List<Integer> regionList = STRATEGY_POLLER.getSrtgPoller().getRegionList(keysDao);
 
-			log.info("Already posted new count " + posted + ";Time string: " + timeStr.toString());
-			
-			if(posted >= timeStr.getMin()){
-				log.info("All news were posted for a day. Poster will end work");
-				TimeTable.returnTimeSrt(timeStr, timeFile);
+			if(regionList.size() <= 0){
+				log.warn("Region count less than 0. Post process will terminate");
 				return;
 			}
 
-			List<List<String>> keys = pagesDao.getPages4Post();
-			
-			//if we need mix keys
-			if(STRATEGY_POLLER.isMixKeys()){
-				Collections.shuffle(keys);
+			for(int j = 0; j < regionList.size(); j++)
+			{
+				int regionId = regionList.get(j);
+				
+				int posted = 0;
+				
+				if(regionId > 0)
+				{
+					List<InputParam> inParams = new  ArrayList<InputParam>();
+					inParams.add(new InputParam( regionId, Types.INTEGER));
+					posted = pagesDao.getPostedCnt4Day(STRATEGY_POLLER.getSrtgPoller().getSql4CountPostedNews(), inParams);
+				}else{
+					posted = pagesDao.getPostedCnt4Day(STRATEGY_POLLER.getSrtgPoller().getSql4CountPostedNews());
+				}
+
+				log.info("Already posted news count per region" + posted + ";Time string: " + timeStr.toString());
+
+				if(posted >= timeStr.getMin()){
+					log.info("All news were posted for a day. Poster will end work");
+					TimeTable.returnTimeSrt(timeStr, timeFile);
+					return;
+				}
+
+				List<List<String>> keys = null;
+				
+				if(regionList.get(j) > 0)
+				{
+					List<InputParam> inParams = new  ArrayList<InputParam>();
+					inParams.add(new InputParam(regionList.get(j) , Types.INTEGER));
+					keys = pagesDao.getPages4Post(STRATEGY_POLLER.getSrtgPoller().getSqlGetKeys4Post(), inParams);
+				}
+				else
+				{
+					keys = pagesDao.getPages4Post(STRATEGY_POLLER.getSrtgPoller().getSqlGetKeys4Post());	
+				}
+
+				//if we need mix keys
+				if(STRATEGY_POLLER.isMixKeys()){
+					Collections.shuffle(keys);
+				}
+
+				int postCount = timeStr.getRndCnt() - posted;
+
+				log.info(String.format("%d new will be posted.",postCount));
+
+				long curTime = System.currentTimeMillis();
+				long startOtDay = DoorUtils.getStartOfDay(curTime);
+
+				int postedCnt = 0;
+				for(int i = 0; i < postCount && i < keys.size(); i++){
+					//get normal distribution time value
+					//TODO Add randomly +-2hours for a postTime
+					long postTime = DoorUtils.getRndNormalDistTime() + startOtDay;
+					postTime = DoorUtils.calibratePostDate(postTime, curTime);
+					log.info(String.format("Try to post key %s with post time %s",keys.get(i), postTime));
+					postedCnt += pageCntntDao.postPage(Integer.valueOf(keys.get(i).get(1)), postTime);
+				}
+
+				//if records were not updated in DB - return time string 
+				if(postedCnt == 0){
+					TimeTable.returnTimeSrt(timeStr, timeFile);
+				}
+				log.info(String.format("%d new were posted.",postedCnt));
+				System.out.println(String.format("%d new were posted.",postedCnt));
 			}
-
-			int postCount = timeStr.getRndCnt();
-
-			log.info(String.format("%d new will be posted.",postCount));
-
-			long curTime = System.currentTimeMillis();
-			long startOtDay = DoorUtils.getStartOfDay(curTime);
-
-			int postedCnt = 0;
-			for(int i = 0; i < postCount && i < keys.size(); i++){
-				//get normal distribution time value
-				//TODO Add randomly +-2hours for a postTime
-				long postTime = DoorUtils.getRndNormalDistTime() + startOtDay;
-				postTime = DoorUtils.calibratePostDate(postTime, curTime);
-				log.info(String.format("Try to post key %s with post time %s",keys.get(i), postTime));
-				postedCnt += pageCntntDao.postPage(Integer.valueOf(keys.get(i).get(1)), postTime);
-			}
-
-			//if records were not updated in DB - return time string 
-			if(postedCnt == 0){
-				TimeTable.returnTimeSrt(timeStr, timeFile);
-			}
-			log.info(String.format("%d new were posted.",postedCnt));
-			System.out.println(String.format("%d new were posted.",postedCnt));
 		}finally{
 			if(connection != null){
 				try {
@@ -135,7 +170,7 @@ public class DoorgenPosterRunner {
 		if(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL) != null){
 			STRATEGY_POLLER = ContentStrategy.getByName(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL));
 		}else{
-			STRATEGY_POLLER = ContentStrategy.DEFAULT;
+			throw new Exception(String.format("Strategy poller '%s' was not found", ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL)));
 		}
 
 		String timeTableStr = ConfigManager.getInstance().getProperty(TIME_TABLE_LABLE);

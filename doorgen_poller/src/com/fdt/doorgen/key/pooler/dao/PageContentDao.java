@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -107,6 +108,8 @@ public class PageContentDao extends DaoCommon {
 			return null;
 		}
 
+		int insertCount = -1;
+		
 		try {
 			if(strategy.isAppendContent()){
 				//TODO Copy previous snippets values to new pcId
@@ -120,7 +123,7 @@ public class PageContentDao extends DaoCommon {
 				copyStatement.setInt(2, pcIdPrev);
 
 				if(copyStatement != null){
-					copyStatement.executeUpdate(); // Execute every 1000 items.
+					insertCount = copyStatement.executeUpdate(); // Execute every 1000 items.
 				}
 			}
 
@@ -372,6 +375,37 @@ public class PageContentDao extends DaoCommon {
 
 		return count;
 	}
+	
+	/**
+	 * Delete page content
+	 * @param key
+	 * @return
+	 */
+	public int deletePageContent(int id){
+		PreparedStatement prStatement = null;
+		int count = -1;
+
+		try {
+			prStatement = connection.prepareStatement(" DELETE FROM page_content WHERE id = ? ");
+			prStatement.setInt(1, id);
+			count = prStatement.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally{
+			if(prStatement != null){
+				try {
+					prStatement.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return count;
+	}
 
 	/**
 	 * Получаем последний id для page_content
@@ -429,8 +463,9 @@ public class PageContentDao extends DaoCommon {
 	/**
 	 * Получаем максимальный индеск для content_detail
 	 * @return
+	 * @throws SQLException 
 	 */
-	public int getSnipIdx4PageCntnt(int pcId)
+	public int getSnipIdx4PageCntnt(int pcId) throws SQLException
 	{
 		String slcQuery = 	" SELECT MAX(cd.snippets_index) max_snip_idx, pc.id " +
 				" FROM page_content pc, content_detail cd " + 
@@ -450,11 +485,13 @@ public class PageContentDao extends DaoCommon {
 		return 0;
 	}
 
-	public List<List<String>> getContentDetailStructure(int pcId){
+	public List<List<String>> getContentDetailStructure(int pcId) throws SQLException{
+		List<InputParam> inParams = new ArrayList<InputParam>();
+		inParams.add(new InputParam(pcId, Types.INTEGER));
 		String slcQuery = 	" SELECT cd.snippets_index, cd.main_flg " +
 				" FROM content_detail cd " +
-				" WHERE cd.page_content_id = 2 ORDER BY cd.id ";
-		List<List<String>> result = getPagesBySelect(slcQuery, new String[]{"snippets_index","main_flg"});
+				" WHERE cd.page_content_id = ? ORDER BY cd.id ";
+		List<List<String>> result = getPagesBySelect(slcQuery, inParams, new String[]{"snippets_index","main_flg"});
 		return result;
 	}
 

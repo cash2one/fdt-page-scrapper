@@ -53,10 +53,23 @@ public class KeysDao extends DaoCommon{
 		return keyList;
 	}
 	
-	public List<List<String>> getKeysWithSnippets4FillPages(){
+	public List<List<String>> getKeysWithSnippets4FillPages() throws SQLException{
 		String slcQuery = 	" SELECT DISTINCT k.key_value " +
 							" FROM door_keys k LEFT JOIN snippets snp ON k.id = snp.key_id LEFT JOIN pages p ON k.id=p.key_id " + 
 							" WHERE p.key_id IS NULL AND snp.key_id IS NOT NULL AND k.key_value <> '/' ";
 		return getPagesBySelect(slcQuery, new String[]{"key_value"});
+	}
+	
+	public List<Integer> getRegionList() throws SQLException{
+		String slcQuery = 	" SELECT region_id id" +
+							" FROM region r ";
+		List<List<String>> ids = getPagesBySelect(slcQuery, new String[]{"id"});
+		
+		List<Integer> resultList = new ArrayList<Integer>();
+		for(List<String> params : ids){
+			resultList.add(Integer.valueOf(params.get(0)));
+		}
+		
+		return resultList;
 	}
 }

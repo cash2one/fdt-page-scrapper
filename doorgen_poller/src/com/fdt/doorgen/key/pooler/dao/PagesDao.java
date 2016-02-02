@@ -84,20 +84,21 @@ public class PagesDao extends DaoCommon{
 		return pId;
 	}
 	
-	public List<List<String>> getPages4Post(){
-		String slcQuery = 	" SELECT DISTINCT k.id, k.key_value, pc.id " + 
-							" FROM content_detail cd, page_content pc, pages p, door_keys k " + 
-							" WHERE cd.page_content_id = pc.id AND pc.page_id = p.id AND p.key_id = k.id AND k.key_value <> '/' AND pc.upd_flg=0 AND (pc.post_dt > now() + INTERVAL 1 DAY) ORDER BY k.id ";
+	public List<List<String>> getPages4Post(String slcQuery) throws SQLException{
 		return getPagesBySelect(slcQuery, new String[]{"key_value","id"});
 	}
 	
-	public List<List<String>> getPages4UpdateReplaceCntnt(int updDateDiff){
+	public List<List<String>> getPages4Post(String slcQuery, List<InputParam> inParams) throws SQLException{
+		return getPagesBySelect(slcQuery, inParams, new String[]{"key_value","id"});
+	}
+	
+	public List<List<String>> getPages4UpdateReplaceCntnt(int updDateDiff) throws SQLException{
 		String slcQuery = 	" SELECT DISTINCT k.id, k.key_value FROM page_content pc, pages p, door_keys k " + 
 							" WHERE pc.page_id = p.id AND p.key_id = k.id AND k.key_value <> '/' AND pc.upd_flg=0 AND (DATEDIFF((now()),pc.post_dt) >  " + updDateDiff +") ";
 		return getPagesBySelect(slcQuery, new String[]{"key_value"});
 	}
 	
-	public List<List<String>> getPages4UpdateAppendCntnt(int updDateDiff){
+	public List<List<String>> getPages4UpdateAppendCntnt(int updDateDiff) throws SQLException{
 		String slcQuery = 	" SELECT k.id, k.key_value, pc.id, pc.post_dt <= now(), pc.post_dt > now(), MAX(cd.snippets_index), DATEDIFF((now()),pc.post_dt) " + 
 							" FROM door_keys k LEFT JOIN pages p ON p.key_id = k.id LEFT JOIN page_content pc ON pc.page_id = p.id LEFT JOIN content_detail cd ON cd.page_content_id = pc.id " + 
 							" WHERE k.key_value <> '/' AND DATEDIFF(now(),pc.post_dt) >= " + updDateDiff +" AND k.id NOT IN  " + 
@@ -109,46 +110,20 @@ public class PagesDao extends DaoCommon{
 		return getPagesBySelect(slcQuery, new String[]{"key_value"});
 	}
 	
-	public int getPostedCnt4Day()
+	public int getPostedCnt4Day(String slcQuery) throws SQLException{
+		ArrayList<InputParam> inParams = new ArrayList<InputParam>();
+		return getPostedCnt4Day(slcQuery, inParams);
+	}
+	
+	public int getPostedCnt4Day(String slcQuery, List<InputParam> inParams) throws SQLException
 	{
-		PreparedStatement prpStmt = null;
-		ResultSet rs = null;
 		int count = 0;
-		try {
-			//TODO Insert snippets & page_content tables.
-			prpStmt = connection.prepareStatement(
-					" SELECT DISTINCT COUNT(k.id) posted_count" + 
-					" FROM page_content pc, pages p, door_keys k " + 
-					" WHERE p.id = pc.page_id AND k.id = p.key_id AND k.key_value <> '/' AND pc.upd_flg=0 AND pc.post_dt > now() AND (pc.post_dt < now() + INTERVAL 1 DAY )"
-			);
-
-			rs = prpStmt.executeQuery();
-
-			if(rs != null && rs.next()){
-				count = rs.getInt("posted_count");
-			}
-		} catch (SQLException e) {
-			log.error(e);
-			e.printStackTrace();
-		}
-		finally{
-			if(rs != null){
-				try {
-					rs.close();
-				} catch (SQLException e) {
-					log.error(e);
-					e.printStackTrace();
-				}
-			}
-
-			if(prpStmt != null){
-				try {
-					prpStmt.close();
-				} catch (SQLException e) {
-					log.error(e);
-					e.printStackTrace();
-				}
-			}
+		
+		List<List<String>> postCnt = getPagesBySelect(slcQuery, inParams, new String[]{"posted_count"});
+		
+		if(postCnt.size() > 0 && postCnt.get(0).size() > 0 && postCnt.get(0).get(0) != null && !"".equals(postCnt.get(0).get(0)))
+		{
+			count = Integer.valueOf(postCnt.get(0).get(0));
 		}
 
 		return count;

@@ -26,13 +26,13 @@ public class DoorgenUpdaterRunner {
 
 	//TODO Read host name from config
 	private String connectionString = null;
-	
+
 	public static ContentStrategy STRATEGY_POLLER;
-	
-	
+
+
 
 	private static final String CONNECTION_STRING_LABEL = "connection_string";
-	
+
 	private static final String STRATEGY_NAME_LABEL = "strategy_name";
 
 	private Random rnd = new Random();
@@ -64,7 +64,11 @@ public class DoorgenUpdaterRunner {
 				log.error(e.getMessage(), e);
 			}
 
-			taskRunner.executeWrapper();
+			try{
+				taskRunner.executeWrapper();
+			}catch(Throwable e){
+				log.error("Error occured during update process execution", e);
+			}
 		}
 	}
 
@@ -75,7 +79,7 @@ public class DoorgenUpdaterRunner {
 			int updDateDiff = 3 + rnd.nextInt(3);
 			
 			List<List<String>> keys = null;
-			
+
 			//TODO Add extra method for getting keys for update for VTOPAXMIRA project
 			if(STRATEGY_POLLER.isAppendContent()){
 				keys = pagesDao.getPages4UpdateAppendCntnt(updDateDiff);
@@ -87,35 +91,35 @@ public class DoorgenUpdaterRunner {
 			long curTime = System.currentTimeMillis();
 			long startOtDay = DoorUtils.getStartOfDay(curTime);
 			long postTime = -1;
-			
+
 			connection.setAutoCommit(false);
 			deleted = pageCntntDao.deleteDeprecatedPageContent();
-			
+
 			for(int i = 0; i < keys.size(); i++){
 				//get normal distribution time value
 				//TODO Update page
 				postTime = DoorUtils.getRndNormalDistTime() + startOtDay;
 				postTime = DoorUtils.calibratePostDate(postTime, curTime);
-				
+
 				int pcIdPrev = -1;
 				int pcIdNew = -1;
-				
+
 				if(STRATEGY_POLLER.isAppendContent()){
 					pcIdPrev = pageCntntDao.getLastPageContentId(keys.get(i).get(0));
 				}
-				
+
 				pcIdNew = pageCntntDao.insertPageContent(keys.get(i).get(0),postTime);
-				
+
 				log.info(String.format("Page with page_content.id=%s will be replaced with page_content.id=%s", pcIdPrev, pcIdNew));
-				
+
 				if(pcIdNew > 0){
 					pageCntntDao.populateContent(keys.get(i).get(0), pcIdNew, pcIdPrev, STRATEGY_POLLER);
 					pageCntntDao.updPagesAsUpdated(keys.get(i).get(0));
 				}else{
-					throw new Exception("Page content record was not added for key: " + keys.get(i).get(0));
+					log.error("Page content record was not added for key: " + keys.get(i).get(0));
 				}
 			}
-			
+
 			connection.commit();
 			connection.setAutoCommit(true);
 			log.info(String.format("%d deprecated records were deleted from table", deleted));
@@ -146,7 +150,7 @@ public class DoorgenUpdaterRunner {
 		if(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL) != null){
 			STRATEGY_POLLER = ContentStrategy.getByName(ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL));
 		}else{
-			STRATEGY_POLLER = ContentStrategy.DEFAULT;
+			throw new Exception(String.format("Strategy poller '%s' was not found", ConfigManager.getInstance().getProperty(STRATEGY_NAME_LABEL)));
 		}
 
 		connection = getConnection();

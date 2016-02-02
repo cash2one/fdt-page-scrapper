@@ -3,16 +3,31 @@ package com.fdt.doorgen.key.pooler.content.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.fdt.doorgen.key.pooler.content.IStrategyPoller;
+import com.fdt.doorgen.key.pooler.content.StrategyPoller;
 
-public class HumanCapitalcrStrategyPoller implements IStrategyPoller {
+public class HumanCapitalcrStrategyPoller extends StrategyPoller {
 
 	public static void main(String... args){
 		List<List<Integer>> test = new ArrayList<List<Integer>>();
 		ArrayList<Integer> row = new ArrayList<Integer>();
+		/*row.add(1);
+		row.add(1);
+		test.add(row);row = new ArrayList<Integer>();
+		row.add(4);
+		row.add(1);
+		test.add(row);row = new ArrayList<Integer>();
 		row.add(7);
 		row.add(1);
-		test.add(row);
+		test.add(row);row = new ArrayList<Integer>();
+		row.add(2);
+		row.add(1);
+		test.add(row);row = new ArrayList<Integer>();
+		row.add(5);
+		row.add(1);
+		test.add(row);row = new ArrayList<Integer>();
+		row.add(8);
+		row.add(1);*/
+		//test.add(row);
 		HumanCapitalcrStrategyPoller poller = new HumanCapitalcrStrategyPoller();
 		List<List<Integer>> resutl = poller.prepareCntntDtlTable(test);
 		
@@ -42,7 +57,7 @@ public class HumanCapitalcrStrategyPoller implements IStrategyPoller {
 	}
 
 	private int getMaxIndex(List<List<Integer>> dtlTbl){
-		int max = 1;
+		int max = 0;
 		for(List<Integer> row : dtlTbl){
 			if(row.get(0) > max){
 				max = row.get(0) ;
