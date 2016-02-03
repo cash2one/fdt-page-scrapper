@@ -19,7 +19,7 @@ public class SnippetsDao extends DaoCommon {
 		super(connection);
 	}
 
-	public int[] insertSnippets(SnippetTask task){
+	public int[] insertSnippets(SnippetTask task, int id){
 		PreparedStatement batchStatement = null;
 		int[] result = null;
 		try {
@@ -27,11 +27,11 @@ public class SnippetsDao extends DaoCommon {
 			batchStatement = connection.prepareStatement("INSERT INTO snippets (key_id,title,description,upd_dt) " +
 					"SELECT k.id, ?, ?, now() " + 
 					"FROM door_keys k " + 
-					"WHERE k.key_value = ?");
+					"WHERE k.id = ?");
 			for(Snippet snippet : task.getSnipResult()){
 				batchStatement.setString(1, DoorUtils.getFirstSmblUpper(DoorUtils.cleanString(snippet.getTitle())));
 				batchStatement.setString(2, DoorUtils.cleanString(snippet.getContent()));
-				batchStatement.setString(3, task.getKeyWordsOrig());
+				batchStatement.setInt(3, id);
 				batchStatement.addBatch();
 			}
 
@@ -59,18 +59,18 @@ public class SnippetsDao extends DaoCommon {
 	
 	/**
 	 * Getting all snippets (already used and not used) for appropriated key.
-	 * @param key
+	 * @param keyId
 	 * @return
 	 */
-	public ArrayList<Integer> getAllSnpId4Key(String key){
+	public ArrayList<Integer> getAllSnpId4Key(int keyId){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		PreparedStatement prpStmt = null;
 		ResultSet rs = null;
 		try {
 			//TODO Insert snippets & page_content tables.
 			prpStmt = connection.prepareStatement(" SELECT s.id FROM snippets s, door_keys k " +
-					" WHERE k.key_value = ? AND k.id = s.key_id ");
-			prpStmt.setString(1, key);
+					" WHERE k.id = ? AND k.id = s.key_id ");
+			prpStmt.setInt(1, keyId);
 
 			rs = prpStmt.executeQuery();
 
@@ -107,19 +107,19 @@ public class SnippetsDao extends DaoCommon {
 		return result;
 	}
 	
-	public ArrayList<Integer> getNotUsedSnpId(String key){
+	public ArrayList<Integer> getNotUsedSnpId(int keyId){
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		PreparedStatement prpStmt = null;
 		ResultSet rs = null;
 		try {
 			//TODO Insert snippets & page_content tables.
 			prpStmt = connection.prepareStatement(" SELECT s.id FROM snippets s, door_keys k " +
-					" WHERE k.key_value = ? AND k.id = s.key_id AND s.id NOT IN (" + 
+					" WHERE k.id = ? AND k.id = s.key_id AND s.id NOT IN (" + 
 					" SELECT DISTINCT snp.id " + 
 					" FROM page_content pc LEFT JOIN content_detail cd ON pc.id = cd.page_content_id, snippets snp , pages p, door_keys k " + 
-					" WHERE k.id = p.key_id AND snp.id = cd.snippet_id AND pc.page_id = p.id AND k.key_value = ? ORDER BY snp.id ASC" + ")");
-			prpStmt.setString(1, key);
-			prpStmt.setString(2, key);
+					" WHERE k.id = p.key_id AND snp.id = cd.snippet_id AND pc.page_id = p.id AND k.id = ? ORDER BY snp.id ASC" + ")");
+			prpStmt.setInt(1, keyId);
+			prpStmt.setInt(2, keyId);
 
 			rs = prpStmt.executeQuery();
 

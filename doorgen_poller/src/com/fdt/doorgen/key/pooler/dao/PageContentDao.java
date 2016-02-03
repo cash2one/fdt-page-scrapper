@@ -27,11 +27,11 @@ public class PageContentDao extends DaoCommon {
 	}
 
 
-	public int insertPageContent(String key){
-		return insertPageContent(key, System.currentTimeMillis() + 10 * DoorUtils.YEAR_MIL_SEC_CNT);
+	public int insertPageContent(int keyId){
+		return insertPageContent(keyId, System.currentTimeMillis() + 10 * DoorUtils.YEAR_MIL_SEC_CNT);
 	}
 
-	public int insertPageContent(String key, long postTime){
+	public int insertPageContent(int keyId, long postTime){
 		PreparedStatement prStmt = null;
 		ResultSet rs = null;
 		int pcId = -1;
@@ -39,11 +39,12 @@ public class PageContentDao extends DaoCommon {
 			prStmt = connection.prepareStatement(" INSERT INTO page_content (page_id, post_dt, upd_flg, upd_dt) " +
 					" SELECT p.id, ?, 0, now()" + 
 					" FROM door_keys k, pages p " + 
-					" WHERE p.key_id = k.id AND k.key_value = ? ",
+					" WHERE p.key_id = k.id AND k.id = ? " + 
+					" ON DUPLICATE KEY UPDATE upd_dt = now() ",
 					Statement.RETURN_GENERATED_KEYS);
 
 			prStmt.setTimestamp(1, new Timestamp(postTime));
-			prStmt.setString(2, key);
+			prStmt.setInt(2, keyId);
 
 			prStmt.executeUpdate();
 
@@ -81,19 +82,19 @@ public class PageContentDao extends DaoCommon {
 
 	/** 
 	 * Randomly populate page content
-	 * @param key
+	 * @param keyId
 	 * @return
 	 */
 	//TODO Add proceudre for population content randomly & adding content to existed content
-	public int[] populateContent(String key, int pcIdNew, int pcIdPrev, ContentStrategy strategy){
+	public int[] populateContent(int keyId, int pcIdNew, int pcIdPrev, ContentStrategy strategy){
 
 		ArrayList<Integer> snpIds = new ArrayList<Integer>();
 		//idx for already existed content
 
 		if(strategy.isAppendContent()){
-			snpIds = snipDao.getNotUsedSnpId(key);
+			snpIds = snipDao.getNotUsedSnpId(keyId);
 		}else{
-			snpIds = snipDao.getAllSnpId4Key(key);
+			snpIds = snipDao.getAllSnpId4Key(keyId);
 		}
 
 		int[] result = null;
@@ -134,11 +135,11 @@ public class PageContentDao extends DaoCommon {
 
 			List<List<Integer>> newCntntDtl = strategy.getSrtgPoller().prepareCntntDtlTable(convertSrtList2IntList(getContentDetailStructure(pcIdNew)));
 
-			for(List<Integer> row : newCntntDtl)
+			for(int i = 0; i < newCntntDtl.size() && i < rndSeq.size(); i++)
 			{
-
+				List<Integer> row = newCntntDtl.get(i);
 				batchStatement.setInt(1, pcIdNew);
-				batchStatement.setInt(2, snpIds.get(rndSeq.remove(0)));
+				batchStatement.setInt(2, snpIds.get(rndSeq.get(i)));
 				batchStatement.setInt(3, row.get(0));
 				batchStatement.setBoolean(4, row.get(1) == 1);
 				batchStatement.addBatch();
@@ -312,15 +313,15 @@ public class PageContentDao extends DaoCommon {
 		return count;
 	}
 
-	public void updPagesAsUpdated(String key)
+	public void updPagesAsUpdated(int key)
 	{
 		PreparedStatement prStmt = null;
 		try {
 			prStmt = connection.prepareStatement(
 					" UPDATE page_content pc SET pc.upd_flg=1, pc.post_dt=pc.post_dt " +
-					" WHERE pc.page_id = (SELECT p.id FROM door_keys k, pages p WHERE p.key_id=k.id AND k.key_value = ?) ");
+					" WHERE pc.page_id = (SELECT p.id FROM door_keys k, pages p WHERE p.key_id=k.id AND k.id = ?) ");
 
-			prStmt.setString(1, key);
+			prStmt.setInt(1, key);
 
 			prStmt.executeUpdate();
 
@@ -352,10 +353,10 @@ public class PageContentDao extends DaoCommon {
 		try {
 			prStatement = connection.prepareStatement(
 					" DELETE FROM page_content WHERE post_dt < now() AND id IN ( " + 
-							" 	SELECT DISTINCT t2.id FROM   " + 
-							" 	(SELECT t1.page_id, t1.post_dt, t1.id FROM page_content t1 WHERE t1.post_dt < now()) AS t2,  " + 
-							" 	(SELECT pc.page_id, MIN(pc.post_dt) min_post_dt FROM  page_content pc WHERE pc.post_dt < now() GROUP BY pc.page_id HAVING count(pc.page_id) > 1) AS t3  " + 
-							" 	WHERE t2.page_id = t3.page_id AND t2.post_dt = t3.min_post_dt ) "	
+					" 	SELECT DISTINCT t2.id FROM   " + 
+					" 	(SELECT pc.page_id, pc.post_dt, pc.id FROM page_content pc WHERE pc.post_dt < now()) AS t2,  " + 
+					" 	(SELECT pc.page_id, MIN(pc.post_dt) min_post_dt FROM  page_content pc WHERE pc.post_dt < now() GROUP BY pc.page_id HAVING count(pc.page_id) > 1) AS t3  " + 
+					" 	WHERE t2.page_id = t3.page_id AND t2.post_dt = t3.min_post_dt ) "	
 					);
 			count = prStatement.executeUpdate();
 		} catch (SQLException e) {
@@ -411,7 +412,7 @@ public class PageContentDao extends DaoCommon {
 	 * Получаем последний id для page_content
 	 * @return
 	 */
-	public int getLastPageContentId(String key)
+	public int getLastPageContentId(int keyId)
 	{
 		PreparedStatement prpStmt = null;
 		ResultSet rs = null;
@@ -421,9 +422,9 @@ public class PageContentDao extends DaoCommon {
 			//TODO Insert snippets & page_content tables.
 			prpStmt = connection.prepareStatement( " " +
 					" SELECT DISTINCT pc.id FROM page_content pc, pages p, door_keys k " +
-					" WHERE pc.page_id = p.id AND p.key_id = k.id AND k.key_value=? ORDER BY pc.upd_dt DESC ");
+					" WHERE pc.page_id = p.id AND p.key_id = k.id AND k.id=? ORDER BY pc.upd_dt DESC ");
 
-			prpStmt.setString(1, key);
+			prpStmt.setInt(1, keyId);
 
 			rs = prpStmt.executeQuery();
 

@@ -77,14 +77,17 @@ public class DoorgenUpdaterRunner {
 		try{
 			int deleted = 0;
 			int updDateDiff = 3 + rnd.nextInt(3);
-			
+
 			List<List<String>> keys = null;
 
-			//TODO Add extra method for getting keys for update for VTOPAXMIRA project
-			if(STRATEGY_POLLER.isAppendContent()){
-				keys = pagesDao.getPages4UpdateAppendCntnt(updDateDiff);
+			if(STRATEGY_POLLER.getSrtgPoller().getSqlGetKeys4Update() != null){
+				keys = pagesDao.getPages4UpdateCustom(STRATEGY_POLLER.getSrtgPoller().getSqlGetKeys4Update(), updDateDiff);
 			}else{
-				keys = pagesDao.getPages4UpdateReplaceCntnt(updDateDiff);
+				if(STRATEGY_POLLER.isAppendContent()){
+					keys = pagesDao.getPages4UpdateAppendCntnt(updDateDiff);
+				}else{
+					keys = pagesDao.getPages4UpdateReplaceCntnt(updDateDiff);
+				}
 			}
 			//
 
@@ -94,6 +97,7 @@ public class DoorgenUpdaterRunner {
 
 			connection.setAutoCommit(false);
 			deleted = pageCntntDao.deleteDeprecatedPageContent();
+			connection.commit();
 
 			for(int i = 0; i < keys.size(); i++){
 				//get normal distribution time value
@@ -105,16 +109,16 @@ public class DoorgenUpdaterRunner {
 				int pcIdNew = -1;
 
 				if(STRATEGY_POLLER.isAppendContent()){
-					pcIdPrev = pageCntntDao.getLastPageContentId(keys.get(i).get(0));
+					pcIdPrev = pageCntntDao.getLastPageContentId(Integer.valueOf(keys.get(i).get(1)));
 				}
 
-				pcIdNew = pageCntntDao.insertPageContent(keys.get(i).get(0),postTime);
+				pcIdNew = pageCntntDao.insertPageContent(Integer.valueOf(keys.get(i).get(1)),postTime);
 
 				log.info(String.format("Page with page_content.id=%s will be replaced with page_content.id=%s", pcIdPrev, pcIdNew));
 
 				if(pcIdNew > 0){
-					pageCntntDao.populateContent(keys.get(i).get(0), pcIdNew, pcIdPrev, STRATEGY_POLLER);
-					pageCntntDao.updPagesAsUpdated(keys.get(i).get(0));
+					pageCntntDao.populateContent(Integer.valueOf(keys.get(i).get(1)), pcIdNew, pcIdPrev, STRATEGY_POLLER);
+					pageCntntDao.updPagesAsUpdated(Integer.valueOf(keys.get(i).get(1)));
 				}else{
 					log.error("Page content record was not added for key: " + keys.get(i).get(0));
 				}

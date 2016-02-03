@@ -49,6 +49,26 @@ public class VtopaxMiraRuStrategyPoller extends StrategyPoller {
 				" WHERE cd.page_content_id = pc.id AND pc.page_id = p.id AND p.key_id = k.id AND k.city_id = c.city_id AND c.region_id = r.region_id AND r.region_id = ? AND k.key_value <> '/' AND pc.upd_flg=0 AND (pc.post_dt > now() + INTERVAL 1 DAY) ORDER BY k.id ";
 	}
 	
+	public String getSqlGetKeys4Update(){
+		return " SELECT DISTINCT k.id, k.key_value " +
+				" FROM door_keys k LEFT JOIN pages p ON p.key_id = k.id LEFT JOIN page_content pc ON pc.page_id = p.id LEFT JOIN content_detail cd ON cd.page_content_id = pc.id " +
+				" WHERE 1  " +
+				" AND k.key_value <> '/'  " +
+				" AND DATEDIFF(now(),pc.post_dt) >= ?  " +
+				" AND k.id NOT IN ( " +
+				" 	SELECT DISTINCT k.id  " +
+				" 	FROM page_content pc, pages p, door_keys k, content_detail cd " +
+				" 	WHERE 1  " +
+				" 	AND pc.page_id = p.id  " +
+				" 	AND p.key_id = k.id  " +
+				" 	AND cd.page_content_id = pc.id  " +
+				" 	AND k.key_value <> '/' " +
+				" 	AND DATEDIFF(now(),pc.post_dt) < ? " +
+				" 	AND pc.post_dt < now() + INTERVAL 1 DAY " +
+				" ) " +
+				" GROUP BY k.id, k.key_value, pc.id HAVING COUNT(cd.snippets_index) < 27 ORDER BY k.id ";
+	}
+	
 	@Override
 	public List<Integer> getRegionList(KeysDao keysDao) throws SQLException{
 		return keysDao.getRegionList();

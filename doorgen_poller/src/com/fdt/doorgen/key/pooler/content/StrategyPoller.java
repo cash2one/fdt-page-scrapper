@@ -28,6 +28,10 @@ public abstract class StrategyPoller
 				" WHERE cd.page_content_id = pc.id AND pc.page_id = p.id AND p.key_id = k.id AND k.key_value <> '/' AND pc.upd_flg=0 AND (pc.post_dt > now() + INTERVAL 1 DAY) ORDER BY k.id ";
 	}
 	
+	public String getSqlGetKeys4Update(){
+		return null;
+	}
+	
 	/**
 	 * 1  is Default value for sites without regions
 	 * @param keysDao

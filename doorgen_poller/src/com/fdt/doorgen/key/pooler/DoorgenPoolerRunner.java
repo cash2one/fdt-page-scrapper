@@ -7,6 +7,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -88,7 +89,7 @@ public class DoorgenPoolerRunner{
 
 	private ArrayList<String> keysList = new ArrayList<String>();
 
-	private HashMap<String, Integer> keyMap = new HashMap<String, Integer>();
+	private HashMap<Integer, Integer> keyMap = new HashMap<Integer, Integer>();
 
 	private KeysDao keysDao;
 	private PagesDao pagesDao;
@@ -131,14 +132,17 @@ public class DoorgenPoolerRunner{
 
 	private void executeWrapper() throws Exception{
 		try{
-			keysList = getKeyList4Update();
+			
+			pollContent();
+			keysList = getKeyList4Polling();
 			taskFactory.clear();
 			taskFactory.loadTaskQueue(keysList, source, frequencies, lang);
 
 			while(keysList.size() > 0)
 			{
+				pollContent();
 				execute(hostName, globalTitle);
-				keysList = getKeyList4Update();
+				keysList = getKeyList4Polling();
 				taskFactory.clear();
 				taskFactory.loadTaskQueue(keysList, source, frequencies, lang);
 			}
@@ -154,7 +158,7 @@ public class DoorgenPoolerRunner{
 		}
 	}
 
-	private ArrayList<String> getKeyList4Update() throws ClassNotFoundException, SQLException{
+	private ArrayList<String> getKeyList4Polling() throws ClassNotFoundException, SQLException{
 		//TODO Fill keys which have snippets but don't have pages
 		/*List<List<String>> keys4FillSnippets = keysDao.getKeysWithSnippets4FillPages();
 
@@ -162,7 +166,7 @@ public class DoorgenPoolerRunner{
 
 		}*/
 
-		return keysDao.getKeyList4Update(keyMap, MIN_SNIPPET_COUNT_FOR_POST_PAGE);
+		return keysDao.getKeyList4Polling(keyMap, MIN_SNIPPET_COUNT_FOR_POST_PAGE);
 	}
 
 	public DoorgenPoolerRunner(String cfgFilePath) throws Exception{
@@ -314,30 +318,50 @@ public class DoorgenPoolerRunner{
 
 	private void pollPagesTable(SnippetTask task, String hostName, String globalTitle, Connection connection){
 		int[] result = null;
-		int pId = -1;
 
 		try
 		{
 			String key = task.getKeyWordsOrig();
-			if(keyMap.get(task.getKeyWordsOrig()) == 0){
-				//if all snipepts were extracted - create page
-				pagesDao.insertPage(task, hostName, globalTitle);
-			}
 
-			//TODO Insert images
+			List<List<String>> ids = keysDao.getKeysIdByKeyValue(key);
 
-			//insert snippets
-			result = snipDao.insertSnippets(task);
-
-			//TODO Insert random content
-			if(result != null && result.length > 0)
+			for(List<String> id : ids)
 			{
-				result = null;
-				int pcId = pageCntntDao.insertPageContent(key);
-				result = pageCntntDao.populateContent(key, pcId, -1, STRATEGY_POLLER);
+				int keyId = Integer.valueOf(id.get(0));
+
+				//TODO Insert images
+
+				//insert snippets
+				result = snipDao.insertSnippets(task, keyId);
+
+				if(result != null && result.length > 0){
+					pollKeyContent(keyId, key, task.getSnipResult().get(rnd.nextInt(task.getSnipResult().size())).getContent(), hostName, globalTitle);
+				}
 			}
+
 		} catch (Exception e) {
 			log.error("Error during saving result to DB", e);
+		}
+	}
+
+	private void pollKeyContent(int keyId, String keyValue, String descr, String hostName, String globalTitle){
+
+		pagesDao.insertPage(keyId, keyValue, descr, hostName, globalTitle);
+
+		int pcId = pageCntntDao.insertPageContent(keyId);
+
+		pageCntntDao.populateContent(keyId, pcId, -1, STRATEGY_POLLER);
+	}
+	
+	private void pollContent() throws SQLException{
+		//TODO Polling keys that have snippets but don't have pages
+		List<List<String>> keysWOPages = keysDao.getKeysWithoutPagesAndPageContent();
+		
+		for(List<String> row : keysWOPages){
+			int keyId = Integer.valueOf(row.get(0));
+			String keyValue = row.get(1);
+			String descr = row.get(2);
+			pollKeyContent(keyId, keyValue, descr, hostName, globalTitle);
 		}
 	}
 }

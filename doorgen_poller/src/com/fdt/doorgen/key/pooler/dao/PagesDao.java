@@ -7,12 +7,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import org.apache.log4j.Logger;
 
 import com.fdt.doorgen.key.pooler.util.DoorUtils;
-import com.fdt.scrapper.task.SnippetTask;
 
 public class PagesDao extends DaoCommon{
 
@@ -22,15 +20,14 @@ public class PagesDao extends DaoCommon{
 		super(connection);
 	}
 	
-	public int insertPage(SnippetTask task, String hostName, String globalTitle){
+	public int insertPage(int keyId, String keyValue, String descr, String hostName, String globalTitle){
 		PreparedStatement prStmt = null;
-		Random rnd = new Random();
 		ResultSet rs = null;
 		int pId = -1;
 		try {
 			StringBuffer title = new StringBuffer();
-			title.append(task.getKeyWordsOrig().substring(0, 1).toUpperCase())
-			.append(task.getKeyWordsOrig().substring(1).toLowerCase())
+			title.append(keyValue.substring(0, 1).toUpperCase())
+			.append(keyValue.substring(1).toLowerCase())
 			//TODO Exclude title from sources
 			.append(" | ").append(globalTitle).append(" | ")
 			.append( hostName);
@@ -38,14 +35,14 @@ public class PagesDao extends DaoCommon{
 			prStmt = connection.prepareStatement(" INSERT INTO pages (key_id, title, meta_keywords, meta_description, upd_dt) " +
 					" SELECT k.id, ?, ?, ?, now()" + 
 					" FROM door_keys k " + 
-					" WHERE k.key_value = ? " +
+					" WHERE k.id = ? " +
 					" ON DUPLICATE KEY UPDATE title=?, meta_keywords = ?, meta_description = ? ",
 					Statement.RETURN_GENERATED_KEYS);
 
 			prStmt.setString(1, title.toString());
 			prStmt.setString(2, title.toString());
-			prStmt.setString(3, DoorUtils.cleanString( task.getSnipResult().get(rnd.nextInt(task.getSnipResult().size())).getContent()) );
-			prStmt.setString(4, task.getKeyWordsOrig());
+			prStmt.setString(3, DoorUtils.cleanString(descr));
+			prStmt.setInt(4, keyId);
 			prStmt.setString(5, title.toString());
 			prStmt.setString(6, title.toString());
 			prStmt.setString(7, title.toString());
@@ -95,7 +92,7 @@ public class PagesDao extends DaoCommon{
 	public List<List<String>> getPages4UpdateReplaceCntnt(int updDateDiff) throws SQLException{
 		String slcQuery = 	" SELECT DISTINCT k.id, k.key_value FROM page_content pc, pages p, door_keys k " + 
 							" WHERE pc.page_id = p.id AND p.key_id = k.id AND k.key_value <> '/' AND pc.upd_flg=0 AND (DATEDIFF((now()),pc.post_dt) >  " + updDateDiff +") ";
-		return getPagesBySelect(slcQuery, new String[]{"key_value"});
+		return getPagesBySelect(slcQuery, new String[]{"key_value", "id"});
 	}
 	
 	public List<List<String>> getPages4UpdateAppendCntnt(int updDateDiff) throws SQLException{
@@ -107,7 +104,12 @@ public class PagesDao extends DaoCommon{
 							" 	WHERE pc.page_id = p.id AND p.key_id = k.id AND cd.page_content_id = pc.id AND k.key_value <> '/'  " + 
 							" 	AND DATEDIFF(now(),pc.post_dt) < " + updDateDiff +" AND pc.post_dt < now() + INTERVAL 1 DAY) " + 
 							" GROUP BY k.id, k.key_value, pc.id HAVING MAX(cd.snippets_index) < 9 ORDER BY k.id; ";
-		return getPagesBySelect(slcQuery, new String[]{"key_value"});
+		return getPagesBySelect(slcQuery, new String[]{"key_value", "id"});
+	}
+	
+	public List<List<String>> getPages4UpdateCustom(String sql, int updDateDiff) throws SQLException{
+		String slcQuery = 	sql.replaceAll("\\?", String.valueOf(updDateDiff));
+		return getPagesBySelect(slcQuery, new String[]{"key_value", "id"});
 	}
 	
 	public int getPostedCnt4Day(String slcQuery) throws SQLException{

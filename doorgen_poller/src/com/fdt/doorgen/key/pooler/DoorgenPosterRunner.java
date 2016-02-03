@@ -108,10 +108,10 @@ public class DoorgenPosterRunner {
 
 				List<List<String>> keys = null;
 				
-				if(regionList.get(j) > 0)
+				if(regionId > 0)
 				{
 					List<InputParam> inParams = new  ArrayList<InputParam>();
-					inParams.add(new InputParam(regionList.get(j) , Types.INTEGER));
+					inParams.add(new InputParam(regionId , Types.INTEGER));
 					keys = pagesDao.getPages4Post(STRATEGY_POLLER.getSrtgPoller().getSqlGetKeys4Post(), inParams);
 				}
 				else

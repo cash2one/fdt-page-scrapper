@@ -341,18 +341,31 @@ function getPageSnippets($con, $city_url, $region_url)
 {
     global $stmt;
 	$snippets_array = array();
-	$query_case_list = 	" SELECT snp.title title, snp.description description, cd.main_flg, cd.snippets_index, snp.image_large, snp.image_small " .
-						" FROM page_content pc, content_detail cd, snippets snp, pages p, door_keys k, city c, region r " .
-						" WHERE 1 " .
-						" AND pc.id = cd.page_content_id " .
-						" AND pc.page_id = p.id  " .
+	$query_case_list = 	" SELECT snp.title, snp.description, cd.main_flg, cd.snippets_index, snp.image_large, snp.image_small " .
+						" FROM page_content pc LEFT JOIN content_detail cd ON pc.id = cd.page_content_id, snippets snp , pages p, door_keys k, region r, city c " .
+						" WHERE 1  " .
 						" AND k.id = p.key_id  " .
-						" AND snp.id = cd.snippet_id " .
+						" AND snp.id = cd.snippet_id  " .
+						" AND pc.page_id = p.id  " .
 						" AND k.city_id = c.city_id " .
 						" AND c.region_id = r.region_id " .
 						" AND k.key_value_latin = ? " .
 						" AND r.region_name_latin = ? " .
+						" AND pc.id = ( " .
+						" 	SELECT pc.id  " .
+						" 	FROM pages p2, door_keys k ,page_content pc, region r, city c " .
+						" 	WHERE 1  " .
+						"     AND k.id = p.key_id  " .
+						"     AND pc.page_id = p.id  " .
+						"     AND k.city_id = c.city_id  " .
+						"     AND c.region_id = r.region_id " .
+						"     AND pc.post_dt < now()  " .
+						"     AND k.key_value_latin = ? " .
+						" 	  AND r.region_name_latin = ? " .
+						"     ORDER BY pc.post_dt DESC LIMIT 1 " .
+						" ) " .
 						" ORDER BY cd.snippets_index ASC, cd.main_flg DESC ";
+	
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
 		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		print_r(error_get_last());
@@ -360,7 +373,7 @@ function getPageSnippets($con, $city_url, $region_url)
 
 	//set values
 	#echo "set value...";
-	if (!mysqli_stmt_bind_param($stmt, "ss", $city_url, $region_url)) {
+	if (!mysqli_stmt_bind_param($stmt, "ssss", $city_url, $region_url, $city_url, $region_url)) {
 		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		print_r(error_get_last());
 	}
@@ -436,7 +449,8 @@ if(count($request_uri)>=1){
 #echo "url_region: ".$url_region.'<br>';
 #echo "url_city".$url_city.'<br>';
 
-#$url_region = "astrahanskaya-oblast";
+#$url_region = "arhangelskaya-oblast";
+#$url_city = "";
 #$url_city = "tambovka-besprotsentnyiy-kredit";
 
 //обрабатываем запрос генерации урлов
@@ -592,35 +606,55 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 		#echo "Region page processing...";
 		//prepare statement
 		//$query_city_list = "SELECT cp.anchor_name, c.city_name, c.city_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.region_name_latin, unix_timestamp(cp.posted_time), r.region_id FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND r.region_name_latin like replace(LOWER(?),'-','_') AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time < now() ORDER BY cp.posted_time DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
-		$query_city_list = 	" SELECT k.key_value, k.key_value_latin, c.city_name, c.city_name_latin,  r.region_name, r.region_name_latin, unix_timestamp(pc.post_dt), r.region_id  " .
-							" FROM page_content pc, pages p, door_keys k, city c, region r " .
-							" WHERE pc.page_id = p.id  " .
-							" AND p.key_id = k.id  " .
-							" AND pc.post_dt < now()  " .
+		$query_city_list = 	" SELECT DISTINCT k.key_value, k.key_value_latin, c.city_name, c.city_name_latin,  r.region_name, r.region_name_latin, unix_timestamp(t2.post_dt) posted_time, t2.upd_flg, t2.posted_cnt, t2.page_id,  " .
+							" ( SELECT COUNT(1) FROM page_content pcc WHERE t2.page_id=pcc.page_id) AS total_cnt  " .
+							" FROM  " .
+							" 	door_keys k,  " .
+							" 	pages p,  " .
+							" 	region r,  " .
+							" 	city c, " .
+							" 	(	SELECT pc.*, t1.posted_cnt  " .
+							" 		FROM  " .
+							"     		page_content pc, " .
+							" 			( " .
+							"             	SELECT pci.*, MAX(pci.post_dt) max_post_dt, COUNT(1) posted_cnt  " .
+							"                 FROM page_content pci, pages pi, door_keys ki, city ci, region ri  " .
+							"                 WHERE 1  " .
+							"                 AND pci.page_id = pi.id  " .
+							"                 AND ki.id = pi.key_id  " .
+							" 				  AND ki.city_id = ci.city_id  " .
+							" 				  AND ci.region_id = ri.region_id  " .
+							"                 AND ri.region_name_latin = ?  " .
+							"             	  AND pci.post_dt < now() " .
+							"                 GROUP BY pci.page_id " .
+							"             ) AS t1  " .
+							" 		WHERE pc.page_id = t1.page_id AND pc.post_dt = t1.max_post_dt ORDER BY pc.post_dt DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE . " " .
+							"     ) AS t2  " .
+							" WHERE 1  " .
+							" AND p.id=t2.page_id  " .
+							" AND k.id = p.key_id  " .
 							" AND k.city_id = c.city_id  " .
-							" AND c.`region_id`=r.`region_id`  " .
-							" AND r.region_name_latin like LOWER(?) ORDER BY pc.post_dt DESC LIMIT ".$start_position.",".$CITY_NEWS_PER_PAGE;
+							" AND c.region_id = r.region_id  " .
+							" AND r.region_name_latin = ?  " .
+							" AND k.key_value <> '/' ";
 		#echo "query_city_list: ".$query_city_list."<br>";
 		if (!($stmt = mysqli_prepare($con,$query_city_list))) {
-			#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+			echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
 		//set values
 		#echo "set value...";
-		$id=1;
-		if (!mysqli_stmt_bind_param($stmt, "s", $url_region)) {
-			#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+		if (!mysqli_stmt_bind_param($stmt, "ss", $url_region, $url_region)) {
+			echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
 		#echo "execute...";
 		if (!mysqli_stmt_execute($stmt)){
-			#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+			echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 
-		/* instead of bind_result: */
-		#echo "get result...";
-		if(!mysqli_stmt_bind_result($stmt, $key_value, $key_value_latin, $city_name, $city_name_latin,  $region_name, $region_name_latin, $posted_time, $region_id)){
-			#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
+		if(!mysqli_stmt_bind_result($stmt, $key_value, $key_value_latin, $city_name, $city_name_latin,  $region_name, $region_name_latin, $posted_time, $upd_flg, $posted_cnt, $page_id, $total_cnt)){
+			echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error();
 		}
 		
 		$news_block = "";
@@ -634,15 +668,21 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 			#echo "City name: ".$city_name."; key: ".$key_value;
 			
 			//generate link name
+			$updTitle = "";
+			#echo "upd_flg: ".$upd_flg;
+			#echo "page_content_count: ".$page_content_count;
+			if($total_cnt==$posted_cnt && $upd_flg==1) {
+			    $updTitle = "Обновлена информация по ";
+			}
 			
 			
-			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$key_value_latin).".html\">".$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
+			$city_href = "<a href = \"/".str_replace(" ","-",$region_name_latin)."/".str_replace(" ","-",$key_value_latin).".html\">".$updTitle.$key_value." (".rusdate($posted_time,'j %MONTH% Y, G:i').")</a><br/>";
 			$news_block = $news_block.$city_href;
 		}
 		$template=preg_replace("/\[CITY_NEWS_1\]/", $news_block, $template);
 
 		$pager = new Pager;
-		$template=preg_replace("/\[PAGER\]/", $pager->getPageNavigation("/".str_replace(" ","-",$region_name_latin)."/",$city_news_page_number, $max_page_number), $template);
+		$template=preg_replace("/\[PAGER\]/", $pager->getPageNavigation("/".str_replace(" ","-",$url_region)."/",$city_news_page_number, $max_page_number), $template);
 		
 		/* explicit close recommended */
 		mysqli_stmt_close($stmt);
