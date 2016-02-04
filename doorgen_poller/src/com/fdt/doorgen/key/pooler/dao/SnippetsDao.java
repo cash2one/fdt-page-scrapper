@@ -4,7 +4,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 
@@ -154,5 +156,29 @@ public class SnippetsDao extends DaoCommon {
 		}
 
 		return result;
+	}
+	
+	public List<List<String>> getSnipDescrByKeyId(int keyId) throws SQLException{
+		ArrayList<InputParam> inParams = new ArrayList<InputParam>();
+		inParams.add(new InputParam(keyId, Types.INTEGER));
+		String slcQuery = 	" SELECT snp.description FROM snippets snp WHERE snp.key_id = ?";
+		return getPagesBySelect(slcQuery, inParams, new String[]{"description"});
+	}
+	
+	public List<List<String>> getMinSnipCount4Key(String keyValue) throws SQLException
+	{
+		ArrayList<InputParam> inParams = new ArrayList<InputParam>();
+		inParams.add(new InputParam(keyValue, Types.VARCHAR));
+		inParams.add(new InputParam(keyValue, Types.VARCHAR));
+		
+		String slcQuery = 	" SELECT MIN(snp_count) snp_count FROM " +
+							" (SELECT k.id, k.key_value, COUNT(1) snp_count FROM door_keys k LEFT JOIN snippets snp ON snp.key_id = k.id " +
+							" WHERE snp.id IS NOT NULL AND k.key_value = ? " +
+							" GROUP BY k.id, k.key_value " +
+							" UNION " +
+							" SELECT k.id, k.key_value, 0 FROM door_keys k LEFT JOIN snippets snp ON snp.key_id = k.id " +
+							" WHERE snp.id IS NULL AND k.key_value = ? " +
+							" GROUP BY k.id, k.key_value) t ";
+		return getPagesBySelect(slcQuery, inParams, new String[]{"snp_count"});
 	}
 }

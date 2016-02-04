@@ -24,13 +24,15 @@ public class DoorgenPoolerThread implements Callable<String> {
 	private SnippetTaskWrapper snippetTask = null;
 	private ProxyFactory proxyFactory = null;
 	private TaskFactory taskFactory = null;
+	private int minSnipCount4Extract = DoorgenPoolerRunner.MIN_SNIPPET_COUNT_FOR_POST_PAGE;
 
-	public DoorgenPoolerThread(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory) {
+	public DoorgenPoolerThread(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory, int minSnipCount4Extract) {
 		super();
 
 		this.snippetTask = snippetTask;
 		this.proxyFactory = proxyFactory;
 		this.taskFactory = taskFactory;
+		this.minSnipCount4Extract = minSnipCount4Extract;
 	}
 
 	public String call() throws Exception
@@ -46,7 +48,7 @@ public class DoorgenPoolerThread implements Callable<String> {
 
 		try{
 			//TODO Get proxy connector
-			while(snippetResult.size() < DoorgenPoolerRunner.MIN_SNIPPET_COUNT_FOR_POST_PAGE && snippetTask.getCurrentTask().getPage() > 1){
+			while(snippetResult.size() < minSnipCount4Extract && snippetTask.getCurrentTask().getPage() > 1){
 				try {
 					//Если не было ошибки - то уменьшаем количество страниц, 
 					if(!errExist){

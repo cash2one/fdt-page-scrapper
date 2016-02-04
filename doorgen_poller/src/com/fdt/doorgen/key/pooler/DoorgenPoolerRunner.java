@@ -133,14 +133,14 @@ public class DoorgenPoolerRunner{
 	private void executeWrapper() throws Exception{
 		try{
 			
-			pollContent();
+			pollContent(MIN_SNIPPET_COUNT_FOR_POST_PAGE);
 			keysList = getKeyList4Polling();
 			taskFactory.clear();
 			taskFactory.loadTaskQueue(keysList, source, frequencies, lang);
 
 			while(keysList.size() > 0)
 			{
-				pollContent();
+				pollContent(MIN_SNIPPET_COUNT_FOR_POST_PAGE);
 				execute(hostName, globalTitle);
 				keysList = getKeyList4Polling();
 				taskFactory.clear();
@@ -166,7 +166,7 @@ public class DoorgenPoolerRunner{
 
 		}*/
 
-		return keysDao.getKeyList4Polling(keyMap, MIN_SNIPPET_COUNT_FOR_POST_PAGE);
+		return keysDao.getKeyList4Polling(keyMap, MIN_SNIPPET_COUNT_FOR_POST_PAGE, STRATEGY_POLLER);
 	}
 
 	public DoorgenPoolerRunner(String cfgFilePath) throws Exception{
@@ -277,8 +277,12 @@ public class DoorgenPoolerRunner{
 				if(task != null){
 					log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Success tasks: "+taskFactory.getSuccessQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
 					task.getCurrentTask().setPage(rnd.nextInt(maxPageNum));
-
-					newThread = new DoorgenPoolerThread(task, proxyFactory, taskFactory);
+					
+					int snpCnt = Integer.valueOf(snipDao.getMinSnipCount4Key(task.getCurrentTask().getKeyWordsOrig()).get(0).get(0));
+					
+					log.debug(String.format("Key: '%s'; Current snippets count %d", task.getCurrentTask().getKeyWordsOrig(), snpCnt));
+					
+					newThread = new DoorgenPoolerThread(task, proxyFactory, taskFactory, DoorgenPoolerRunner.MIN_SNIPPET_COUNT_FOR_POST_PAGE - snpCnt);
 					executor.submit(newThread);
 					continue;
 				}
@@ -346,21 +350,21 @@ public class DoorgenPoolerRunner{
 
 	private void pollKeyContent(int keyId, String keyValue, String descr, String hostName, String globalTitle){
 
-		pagesDao.insertPage(keyId, keyValue, descr, hostName, globalTitle);
+		int id = pagesDao.insertPage(keyId, keyValue, descr, hostName, globalTitle);
 
 		int pcId = pageCntntDao.insertPageContent(keyId);
 
-		pageCntntDao.populateContent(keyId, pcId, -1, STRATEGY_POLLER);
+		int ids[] = pageCntntDao.populateContent(keyId, pcId, -1, STRATEGY_POLLER);
 	}
 	
-	private void pollContent() throws SQLException{
+	private void pollContent(int minSnpCnt) throws SQLException{
 		//TODO Polling keys that have snippets but don't have pages
-		List<List<String>> keysWOPages = keysDao.getKeysWithoutPagesAndPageContent();
+		List<List<String>> keysWOPages = keysDao.getKeysWithoutPagesAndPageContent(MIN_SNIPPET_COUNT_FOR_POST_PAGE);
 		
 		for(List<String> row : keysWOPages){
 			int keyId = Integer.valueOf(row.get(0));
 			String keyValue = row.get(1);
-			String descr = row.get(2);
+			String descr = snipDao.getSnipDescrByKeyId(keyId).get(0).get(0);
 			pollKeyContent(keyId, keyValue, descr, hostName, globalTitle);
 		}
 	}

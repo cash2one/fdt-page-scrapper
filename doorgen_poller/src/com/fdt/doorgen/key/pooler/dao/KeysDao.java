@@ -12,6 +12,9 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
+import com.fdt.doorgen.key.pooler.content.ContentStrategy;
+import com.fdt.doorgen.key.pooler.content.StrategyPoller;
+
 public class KeysDao extends DaoCommon{
 	
 	private static final Logger log = Logger.getLogger(KeysDao.class);
@@ -20,21 +23,15 @@ public class KeysDao extends DaoCommon{
 		super(connection);
 	}
 
-	public ArrayList<String> getKeyList4Polling(HashMap<Integer, Integer> keyMap, Integer minSnpCnt4Key) throws ClassNotFoundException, SQLException{
+	public ArrayList<String> getKeyList4Polling(HashMap<Integer, Integer> keyMap, Integer minSnpCnt4Key, ContentStrategy strategy) throws ClassNotFoundException, SQLException{
 		ArrayList<String> keyList = new ArrayList<String>();
 
-		//TODO Fill pages if snippets for keys are exist
-		
-		
 		//Select key for witch snippet count less than 4-6 or page does not exist for current key
 		PreparedStatement prStmt = connection.prepareStatement(
-				" SELECT DISTINCT t.* FROM (SELECT k.key_value, 0, k.id FROM door_keys k LEFT JOIN snippets snp ON k.id=snp.key_id WHERE snp.key_id IS NULL AND k.key_value <> '/' " +
+						" SELECT DISTINCT k.key_value, 0, k.id FROM door_keys k LEFT JOIN snippets snp ON k.id=snp.key_id WHERE snp.key_id IS NULL AND k.key_value <> '/' " +
 						" union  " +
-						" SELECT k.key_value, COUNT(1), k.id " +
-						" FROM door_keys k LEFT JOIN snippets s  " +
-						" ON k.id=s.key_id   " +
-						" WHERE k.id NOT IN (SELECT k.id FROM door_keys k LEFT JOIN snippets snp ON k.id=snp.key_id WHERE snp.key_id IS NULL AND k.key_value <> '/' " +
-						" GROUP BY k.key_value HAVING COUNT(1) < " + minSnpCnt4Key +") AS t ");
+						" SELECT k.key_value, COUNT(1), k.id FROM door_keys k LEFT JOIN snippets snp ON k.id=snp.key_id " +
+						" WHERE snp.key_id IS NOT NULL AND k.key_value <> '/' GROUP BY k.key_value, k.id HAVING COUNT(1) < " + minSnpCnt4Key );
 		ResultSet rs = prStmt.executeQuery();
 
 		if(rs == null){
@@ -55,7 +52,9 @@ public class KeysDao extends DaoCommon{
 			}
 		}
 
-		Collections.shuffle(keyList);
+		if(strategy.isMixKeys()){
+			Collections.shuffle(keyList);
+		}
 
 		return keyList;
 	}
@@ -89,16 +88,13 @@ public class KeysDao extends DaoCommon{
 		return resultList;
 	}
 	
-	public List<List<String>> getKeysWithoutPagesAndPageContent() throws SQLException{
-		String slcQuery = 	" SELECT DISTINCT k.id, k.key_value, (SELECT snp.description FROM snippets snp WHERE snp.key_id = k.id ORDER BY snp.upd_dt LIMIT 1) description " +
-							" FROM door_keys k LEFT JOIN pages p ON k.id = p.key_id LEFT JOIN page_content pc ON p.id = pc.page_id " +
-							" WHERE (p.id IS NULL OR pc.id IS NULL) AND k.key_value <> '/' AND k.id IN " +
-							" ( " +
-							" 	SELECT k.id " +
-							"     FROM door_keys k LEFT JOIN snippets snp ON k.id=snp.key_id  " +
-							"     WHERE snp.key_id IS NOT NULL AND k.key_value <> '/' " +
-							" 	GROUP BY k.key_value HAVING COUNT(1) > 27 " +
-							" ) ";
+	public List<List<String>> getKeysWithoutPagesAndPageContent(int minSnpCnt) throws SQLException{
+		String slcQuery = 	" SELECT DISTINCT t.id, t.key_value FROM " +
+							" (SELECT k.id, k.key_value, COUNT(1) " +
+							" FROM door_keys k LEFT JOIN snippets snp ON k.id=snp.key_id " +
+							" WHERE snp.key_id IS NOT NULL AND k.key_value <> '/' GROUP BY k.key_value, k.id HAVING COUNT(1) >= " + minSnpCnt + ") t " +
+							" LEFT JOIN pages p ON t.id = p.key_id LEFT JOIN page_content pc ON p.id = pc.page_id " +
+							" WHERE (p.id IS NULL OR pc.id IS NULL) AND t.key_value <> '/' ";
 		return getPagesBySelect(slcQuery, new String[]{"id", "key_value"});
 	}
 }
