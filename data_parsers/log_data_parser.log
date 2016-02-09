@@ -1,0 +1,5 @@
+2016-02-05 09:14:29,264-ERROR(UsCitiesParser.java:49)-
+java.lang.NullPointerException
+	at java.io.File.<init>(Unknown Source)
+	at com.fdt.parsers.customs.UsCitiesParser.<init>(UsCitiesParser.java:60)
+	at com.fdt.parsers.customs.UsCitiesParser.main(UsCitiesParser.java:47)
