@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="custom_parsers" basedir="." default="clean">
+	<description>custom_parsers</description>
+	<property environment="env" />
+	<property file="build.properties" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
+	
+	<path id="Engine.classpath">
+		<fileset dir="${dir.lib}" includes="**/*.jar" />
+		<pathelement location="classes" />
+	</path>
+
+	<target name="init">
+		<mkdir dir="classes" />
+		<copy includeemptydirs="false" todir="classes">
+			<fileset dir="src" excludes="**/*.launch" />
+		</copy>
+	</target>
+
+	<target depends="init" name="compile" description="compile java">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="classes"
+			source="${source}" target="${target}">
+			<src path="src" />
+			<classpath refid="Engine.classpath" />
+		</javac>
+	</target>
+
+	<target depends="compile" name="build" description="Jar creating">
+		<jar destfile="../java/custom_parsers.jar" basedir="classes" whenmanifestonly="fail"
+			defaultexcludes="true" includes="**/*.class, **/*.xml, **/*.xsl, **/*.class">
+			<manifest>
+				<attribute name="Class-Path" value="." />
+				<!--attribute name="Main-Class" value="com.ssc.esf.hub.EsfHubEngine" /-->
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="clean" depends="build">
+		<delete dir="classes" />
+	</target>
+</project>

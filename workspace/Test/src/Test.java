@@ -188,6 +188,23 @@ public class Test {
 		System.out.println("   	".isEmpty());
 		System.out.println("".isEmpty());
 		
+		String str = "Adak, Aleutians West county, AK 99546, USA";
+		System.out.println(str.replaceAll("[^0-9]*", ""));
+		System.out.println(str.split(",")[1].trim());
+		System.out.println(toUpperFirstLetters("yeElow park"));
+	}
+	
+	private static String toUpperFirstLetters(String input){
+		StringBuffer strBuf = new StringBuffer();
+		for(String word : input.split(" ")){
+			strBuf.append(word.substring(0, 1).toUpperCase()).append(word.substring(1).toLowerCase()).append(" ");
+		}
+		
+		if(strBuf.length() > 0){
+			strBuf.setLength(strBuf.length()-1);
+		}
+		
+		return strBuf.toString();
 	}
 
 	enum TestEnum{

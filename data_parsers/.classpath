@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/snippet_extractor_lib"/>
+	<classpathentry kind="var" path="JAVA_LIBS/jsoup-1.7.1-sources.jar"/>
+	<classpathentry kind="var" path="JAVA_LIBS/jsoup-1.7.1.jar"/>
+	<classpathentry kind="var" path="JAVA_LIBS/log4j-1.2.15.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

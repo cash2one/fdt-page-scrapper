@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v4/yrzXiAvgeQQdopyG8QSg8Q.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v4/g46X4VH_KHOWAAa-HpnGPhsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v4/7dSh6BcuqDLzS2qAASIeuj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
