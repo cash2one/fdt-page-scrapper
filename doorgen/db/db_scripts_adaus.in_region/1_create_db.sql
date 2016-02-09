@@ -65,8 +65,7 @@ CREATE TABLE IF NOT EXISTS neighbor_city (
 	neighbor_city_id INT,
 	upd_dt TIMESTAMP,
 	CONSTRAINT FOREIGN KEY (city_id) REFERENCES city (city_id) ON DELETE CASCADE ON UPDATE CASCADE,
-	CONSTRAINT FOREIGN KEY (neighbor_city_id) REFERENCES city (city_id) ON DELETE CASCADE ON UPDATE CASCADE,
-	CONSTRAINT uc_key_value UNIQUE (city_id,neighbor_city_id)
+	CONSTRAINT FOREIGN KEY (neighbor_city_id) REFERENCES city (city_id) ON DELETE CASCADE ON UPDATE CASCADE
 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS cases (
