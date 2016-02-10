@@ -1,0 +1,43 @@
+2016-02-10 14:19:11,429-DEBUG(AccountFactory.java:98)-Total account count: 5
+2016-02-10 14:19:23,746-DEBUG(AccountFactory.java:98)-Total account count: 5
+2016-02-10 14:19:51,895-DEBUG(AccountFactory.java:98)-Total account count: 5
+2016-02-10 14:20:28,697- INFO(JimboTaskRunner.java:279)-Starting saving unused account...
+2016-02-10 14:20:28,698- INFO(JimboTaskRunner.java:286)-Unused accounts was saved successfully.
+2016-02-10 14:20:28,700-ERROR(JimboTaskRunner.java:246)-java.lang.NullPointerException
+2016-02-10 14:20:28,705-ERROR(JimboTaskRunner.java:147)-Error during main stream
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Unknown Source)
+	at java.util.ArrayList.grow(Unknown Source)
+	at java.util.ArrayList.ensureExplicitCapacity(Unknown Source)
+	at java.util.ArrayList.ensureCapacityInternal(Unknown Source)
+	at java.util.ArrayList.add(Unknown Source)
+	at com.fdt.filemapping.RowMappingData.loadDataFromFile(RowMappingData.java:50)
+	at com.fdt.filemapping.RowMappingData.<init>(RowMappingData.java:30)
+	at com.fdt.jimbo.task.TaskFactory.fillTaskQueue(TaskFactory.java:157)
+	at com.fdt.jimbo.JimboTaskRunner.runUploader(JimboTaskRunner.java:174)
+	at com.fdt.jimbo.JimboTaskRunner.main(JimboTaskRunner.java:143)
+2016-02-10 14:25:12,807- INFO(JimboTaskRunner.java:279)-Starting saving unused account...
+2016-02-10 14:25:12,815- INFO(JimboTaskRunner.java:286)-Unused accounts was saved successfully.
+2016-02-10 14:25:12,816-ERROR(JimboTaskRunner.java:246)-java.lang.NullPointerException
+2016-02-10 14:25:12,819-ERROR(JimboTaskRunner.java:147)-Error during main stream
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at com.fdt.jimbo.AccountFactory.fillAccounts(AccountFactory.java:73)
+	at com.fdt.jimbo.JimboTaskRunner.runUploader(JimboTaskRunner.java:168)
+	at com.fdt.jimbo.JimboTaskRunner.main(JimboTaskRunner.java:143)
+2016-02-10 14:25:22,876-DEBUG(AccountFactory.java:98)-Total account count: 0
+2016-02-10 14:26:38,847-DEBUG(AccountFactory.java:98)-Total account count: 0
+2016-02-10 14:28:12,414-DEBUG(AccountFactory.java:98)-Total account count: 0
+2016-02-10 15:04:49,797-DEBUG(AccountFactory.java:98)-Total account count: 0
+2016-02-10 15:04:54,777- INFO(JimboTaskRunner.java:279)-Starting saving unused account...
+2016-02-10 15:04:54,778- INFO(JimboTaskRunner.java:286)-Unused accounts was saved successfully.
+2016-02-10 15:04:54,779-ERROR(JimboTaskRunner.java:246)-java.lang.NullPointerException
+2016-02-10 15:04:54,786-ERROR(JimboTaskRunner.java:147)-Error during main stream
+java.lang.NullPointerException
+	at com.fdt.jimbo.task.NewsTask.prepareData(NewsTask.java:40)
+	at com.fdt.jimbo.task.NewsTask.<init>(NewsTask.java:35)
+	at com.fdt.jimbo.task.TaskFactory.fillTaskQueue(TaskFactory.java:160)
+	at com.fdt.jimbo.JimboTaskRunner.runUploader(JimboTaskRunner.java:174)
+	at com.fdt.jimbo.JimboTaskRunner.main(JimboTaskRunner.java:143)
+2016-02-10 15:05:01,181-DEBUG(AccountFactory.java:98)-Total account count: 0
+2016-02-10 15:06:41,915-DEBUG(AccountFactory.java:98)-Total account count: 0
+2016-02-10 15:07:53,097-DEBUG(AccountFactory.java:98)-Total account count: 0
