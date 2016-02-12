@@ -25,14 +25,14 @@ import com.fdt.jimbo.task.NewsTask;
 import com.fdt.jimbo.task.TaskFactory;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.ConfigManager;
+import com.fdt.utils.Utils;
 
 /**
  * @author VarenKoks
  */
-public class JimboTaskRunner {
+public class JimboTaskRunner 
+{
 	private static final Logger log = Logger.getLogger(JimboTaskRunner.class);
-
-	private static final String LINE_FEED = "\r\n";
 
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 5000L;
 
@@ -53,10 +53,10 @@ public class JimboTaskRunner {
 	private String templateFilePath;
 	private String templateFilePathWOPic;
 	
-	private String shortUrlsList;
-
-	private String linkListFilePath;
-	private String linkTitleListFilePath;
+	private String outputFilePath;
+	private String outputTitleFilePath;
+	
+	private String linksListFilePath;
 
 	private TaskFactory taskFactory;
 	
@@ -65,11 +65,19 @@ public class JimboTaskRunner {
 	private File randButtonFilePath = null;
 	private File randTitleFilePath = null;
 	
+	private String lang = null;
+	private String source = null;
+	private int[] frequencies = null;
+	
 	private RowMapping rowMapping = null;
 	
 	private final Random rnd = new Random();
 
 	private Properties config = new Properties();
+	
+	private static final String LANG_LABEL = "lang";
+	private static final String SOURCE_LABEL = "source";
+	private static final String FREQUENCY_LABEL = "frequency";
 
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
 	private final static String PROXY_PASS_LABEL = "proxy_pass";
@@ -83,8 +91,10 @@ public class JimboTaskRunner {
 	private final static String LIST_PROCESSED_FILE_PATH_LABEL = "list_processed_file_path";
 	private final static String ERROR_FILE_PATH_LABEL = "error_file_path";
 
-	private final static String LINK_LIST_FILE_PATH_LABEL = "link_list_file_path";
-	private final static String LINK_TITLE_LIST_FILE_PATH_LABEL = "link_title_list_file_path";
+	private final static String OUTPUT_FILE_PATH_LABEL = "output_file_path";
+	private final static String OUTPUT_TITLE_FILE_PATH_LABEL = "output_title_file_path";
+	
+	private final static String LINKS_LIST_FILE_PATH_LABEL = "links_list_file_path";
 
 	private final static String CONTENT_TEMPLATE_FILE_PATH_LABEL = "content_template_file_path";
 	private final static String CONTENT_TEMPLATE_FILE_PATH_WO_PIC_LABEL = "content_template_file_path_wo_pic";
@@ -103,47 +113,61 @@ public class JimboTaskRunner {
 	
 	public JimboTaskRunner(String cfgFilePath){
 
-		Constants.getInstance().loadProperties(cfgFilePath);
+		Config.getInstance().loadProperties(cfgFilePath);
 		ConfigManager.getInstance().loadProperties(cfgFilePath);
 
-		this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
-		this.accListFilePath = Constants.getInstance().getProperty(ACCOUNTS_LIST_FILE_PATH_LABEL);
-		this.proxyDelay = Integer.valueOf(Constants.getInstance().getProperty(PROXY_DELAY_LABEL));
-		this.proxyType = Constants.getInstance().getProperty(PROXY_TYPE_LABEL);
+		this.proxyFilePath = Config.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
+		this.accListFilePath = Config.getInstance().getProperty(ACCOUNTS_LIST_FILE_PATH_LABEL);
+		this.proxyDelay = Integer.valueOf(Config.getInstance().getProperty(PROXY_DELAY_LABEL));
+		this.proxyType = Config.getInstance().getProperty(PROXY_TYPE_LABEL);
 
-		this.inputMapppingFilePath = Constants.getInstance().getProperty(INPUT_MAPPING_PATH_LABEL);
-		this.listInputFilePath = Constants.getInstance().getProperty(LIST_INPUT_FILE_PATH_LABEL);
-		this.listProcessedFilePath = Constants.getInstance().getProperty(LIST_PROCESSED_FILE_PATH_LABEL);
-		this.errorFilePath = Constants.getInstance().getProperty(ERROR_FILE_PATH_LABEL);
+		this.inputMapppingFilePath = Config.getInstance().getProperty(INPUT_MAPPING_PATH_LABEL);
+		this.listInputFilePath = Config.getInstance().getProperty(LIST_INPUT_FILE_PATH_LABEL);
+		this.listProcessedFilePath = Config.getInstance().getProperty(LIST_PROCESSED_FILE_PATH_LABEL);
+		this.errorFilePath = Config.getInstance().getProperty(ERROR_FILE_PATH_LABEL);
 
-		this.templateFilePath = Constants.getInstance().getProperty(CONTENT_TEMPLATE_FILE_PATH_LABEL);
-		this.templateFilePathWOPic = Constants.getInstance().getProperty(CONTENT_TEMPLATE_FILE_PATH_WO_PIC_LABEL);
+		this.templateFilePath = Config.getInstance().getProperty(CONTENT_TEMPLATE_FILE_PATH_LABEL);
+		this.templateFilePathWOPic = Config.getInstance().getProperty(CONTENT_TEMPLATE_FILE_PATH_WO_PIC_LABEL);
 		
-		this.shortUrlsList = Constants.getInstance().getProperty(SHORT_URLS_LIST_LABEL);
-
-		this.linkListFilePath = Constants.getInstance().getProperty(LINK_LIST_FILE_PATH_LABEL);
-		this.linkTitleListFilePath = Constants.getInstance().getProperty(LINK_TITLE_LIST_FILE_PATH_LABEL); 
-
-		this.maxThreadCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
+		this.linksListFilePath = ConfigManager.getInstance().getProperty(LINKS_LIST_FILE_PATH_LABEL);
 		
-		String randImagesFilePathValue = Constants.getInstance().getProperty(RANDOM_IMAGES_FILE_PATH);
+		this.outputFilePath = Config.getInstance().getProperty(OUTPUT_FILE_PATH_LABEL);
+		this.outputTitleFilePath = Config.getInstance().getProperty(OUTPUT_TITLE_FILE_PATH_LABEL); 
+
+		this.maxThreadCount = Integer.valueOf(Config.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
+		
+		String randImagesFilePathValue = Config.getInstance().getProperty(RANDOM_IMAGES_FILE_PATH);
 		if(randImagesFilePathValue != null && !"".equals(randImagesFilePathValue.trim())){
 			randImagesFilePath = new File(randImagesFilePathValue);
 		}
 		
-		String randJpgFilePathValue = Constants.getInstance().getProperty(RANDOM_JPG_FILE_PATH);
+		String randJpgFilePathValue = Config.getInstance().getProperty(RANDOM_JPG_FILE_PATH);
 		if(randJpgFilePathValue != null && !"".equals(randJpgFilePathValue.trim())){
 			randJpgFilePath = new File(randJpgFilePathValue);
 		}
 		
-		String randButtonFilePathValue = Constants.getInstance().getProperty(RANDOM_BUTTON_FILE_PATH);
+		String randButtonFilePathValue = Config.getInstance().getProperty(RANDOM_BUTTON_FILE_PATH);
 		if(randButtonFilePathValue != null && !"".equals(randButtonFilePathValue.trim())){
 			randButtonFilePath = new File(randButtonFilePathValue);
 		}
 		
-		String randTitleFilePathValue = Constants.getInstance().getProperty(RANDOM_TITLE_FILE_PATH);
+		String randTitleFilePathValue = Config.getInstance().getProperty(RANDOM_TITLE_FILE_PATH);
 		if(randTitleFilePathValue != null && !"".equals(randTitleFilePathValue.trim())){
 			randTitleFilePath = new File(randTitleFilePathValue);
+		}
+		
+		this.source = ConfigManager.getInstance().getProperty(SOURCE_LABEL);
+		this.lang = ConfigManager.getInstance().getProperty(LANG_LABEL);
+
+		String freqStr = ConfigManager.getInstance().getProperty(FREQUENCY_LABEL);
+		if(freqStr != null && !"".equals(freqStr.trim())){
+			String[] freqArray = freqStr.split(":");
+			this.frequencies = new int[freqArray.length];
+			for(int i = 0; i < freqArray.length; i++){
+				this.frequencies[i] = Integer.parseInt(freqArray[i]);
+			}
+		}else{
+			this.frequencies = new int[]{1};	
 		}
 		
 		this.rowMapping = new RowMapping(new File(this.inputMapppingFilePath));
@@ -154,7 +178,7 @@ public class JimboTaskRunner {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
 				return new PasswordAuthentication(
-						Constants.getInstance().getProperty(PROXY_LOGIN_LABEL), Constants.getInstance().getProperty(PROXY_PASS_LABEL).toCharArray()
+						Config.getInstance().getProperty(PROXY_LOGIN_LABEL), Config.getInstance().getProperty(PROXY_PASS_LABEL).toCharArray()
 						);
 			}
 		});
@@ -195,22 +219,31 @@ public class JimboTaskRunner {
 				taskFactory = TaskFactory.getInstance();
 				taskFactory.clear();
 				//taskFactory.loadTaskQueue(urlsFilePath);
-				taskFactory.fillTaskQueue(rootInputFiles.listFiles(), this.rowMapping, new File(this.templateFilePath), new File(this.templateFilePath), this.shortUrlsList, loadLinkList(randImagesFilePath));
+				taskFactory.fillTaskQueue(
+						rootInputFiles.listFiles(), 
+						this.rowMapping, 
+						new File(this.templateFilePath), 
+						new File(this.templateFilePathWOPic), 
+						Utils.loadFileAsStrList(randImagesFilePath),
+						Utils.loadFileAsStrList(randTitleFilePath)
+						
+				);
 				
-				File linkList = new File(linkListFilePath);
-				File linkTitleList = new File(linkTitleListFilePath);
+				File resLinkList = new File(outputFilePath);
+				File resLinkTitleList = new File(outputTitleFilePath);
 
+				//Change template file
 				File templateFile = new File(templateFilePath);
 
 				//TODO Copy account list file
-				File accountFile = new File(accListFilePath);
+				/*File accountFile = new File(accListFilePath);
 				accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
-
+*/
 				Account account = null;
 				JimboPosterThread newThread = null;
 				NewsTask task = null;
 				
-				/*while((!taskFactory.isTaskFactoryEmpty() && ((account = accountFactory.getAccount()) != null)) || taskFactory.getRunThreadsCount() > 0)
+				while((!taskFactory.isTaskFactoryEmpty() && ((account = accountFactory.getAccount()) != null)) || taskFactory.getRunThreadsCount() > 0)
 				{
 					log.trace("Try to get request from RequestFactory queue.");
 					log.trace("Account: " + account);
@@ -227,14 +260,15 @@ public class JimboTaskRunner {
 									taskFactory, 
 									proxyFactory, 
 									accountFactory,
-									this.addAudioToFile, 
-									linkList, 
-									linkTitleList, 
+									resLinkList, 
+									resLinkTitleList, 
 									this.listProcessedFilePath, 
 									this.errorFilePath,
-									loadPreGenFile,
-									cntOfPicUsing
-									);
+									(ArrayList<String>)Utils.loadFileAsStrList(linksListFilePath),
+									lang,
+									source,
+									frequencies
+							);
 							newThread.start();
 							account = null;
 							newThread = null;
@@ -252,7 +286,7 @@ public class JimboTaskRunner {
 					} catch (InterruptedException e) {
 						log.error("InterruptedException occured during RequestRunner process",e);
 					}
-				}*/
+				}
 
 				//saver.running = false;
 
@@ -261,9 +295,9 @@ public class JimboTaskRunner {
 			}
 		}finally{
 			try{
-				//Save unused account if they was not used
+				//TODO Uncomment Save unused account if they was not used
 				if(accountFactory != null){
-					saveUnusedAccounts(accountFactory.getAccounts());
+					//saveUnusedAccounts(accountFactory.getAccounts());
 				}
 				deleteAllVideoFiles();
 			}catch(Throwable e){
@@ -344,46 +378,5 @@ public class JimboTaskRunner {
 				}
 			}
 		}
-	}
-
-	public synchronized ArrayList<String> loadLinkList(String cfgFilePath)
-	{
-		return loadLinkList(new File(cfgFilePath));
-	}
-	
-	public synchronized ArrayList<String> loadLinkList(File cfgFilePath)
-	{
-		ArrayList<String> linkList = new ArrayList<String>();
-		FileReader fr = null;
-		BufferedReader br = null;
-		try {
-			fr = new FileReader(cfgFilePath);
-			br = new BufferedReader(fr);
-
-			String line = br.readLine();
-			while(line != null){
-				String utf8Line = new String(line.getBytes(),"UTF-8");
-				linkList.add(utf8Line.trim());
-				line = br.readLine();
-			}
-		} catch (FileNotFoundException e) {
-			log.error("Reading PROPERTIES file: FileNotFoundException exception occured",e);
-		} catch (IOException e) {
-			log.error("Reading PROPERTIES file: IOException exception occured", e);
-		} finally {
-			try {
-				if(br != null)
-					br.close();
-			} catch (Throwable e) {
-				log.warn("Error while initializtion", e);
-			}
-			try {
-				if(fr != null)
-					fr.close();
-			} catch (Throwable e) {
-				log.warn("Error while initializtion", e);
-			}
-		}
-		return linkList;
 	}
 }

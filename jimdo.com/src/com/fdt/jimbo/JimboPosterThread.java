@@ -18,13 +18,12 @@ import com.fdt.jimbo.task.NewsTask;
 import com.fdt.jimbo.task.TaskFactory;
 import com.fdt.scrapper.SnippetExtractor;
 import com.fdt.scrapper.proxy.ProxyFactory;
-import com.fdt.scrapper.task.BingSnippetTask;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.Snippet;
+import com.fdt.scrapper.task.SnippetTaskWrapper;
+import com.fdt.utils.Constants;
 
 public class JimboPosterThread extends Thread{
-
-	private static final String LINE_FEED = "\r\n";
 
 	private static final Logger log = Logger.getLogger(JimboPosterThread.class);
 
@@ -34,21 +33,21 @@ public class JimboPosterThread extends Thread{
 	private Integer MIN_SNIPPET_COUNT=5;
 	private Integer MAX_SNIPPET_COUNT=10;
 
-	private static final String MIN_DURATION_VIDEO_LABEL = "MIN_DURATION_VIDEO";
-	private static final String MAX_DURATION_VIDEO_LABEL = "MAX_DURATION_VIDEO";
-
-	private Integer MIN_DURATION_VIDEO=2400;
-	private Integer MAX_DURATION_VIDEO=3590;
-
 	private NewsTask task;
 	private Account account;
 	private TaskFactory taskFactory;
 	private ProxyFactory proxyFactory;
 	private AccountFactory accountFactory;
-	private File linkList;
-	private File linkTitleList;
+	private File lnkLstFl4Res;
+	private File lnkTtlLstFl4Res;
 	private String listProcessedFilePath;
 	private String errorFilePath;
+	
+	private ArrayList<String> linkList;
+	
+	private String lang;
+	private String sourcesSrt;
+	private int[] frequencies;
 
 	public JimboPosterThread(
 			NewsTask task, 
@@ -56,32 +55,34 @@ public class JimboPosterThread extends Thread{
 			TaskFactory taskFactory,
 			ProxyFactory proxyFactory, 
 			AccountFactory accountFactory, 
-			boolean addAudioToFile,
-			File linkList,
-			File linkTitleList,
+			File lnkLstFl4Res,
+			File lnkTtlLstFl4Res,
 			String listProcessedFilePath,
 			String errorFilePath,
-			Boolean loadPreGenFile,
-			int intrvlCount) {
+			ArrayList<String> linkList,
+			String lang,
+			String sourcesSrt, 
+			int[] frequencies
+			) 
+	{
 		this.task = task;
 		this.account = account;
 		this.taskFactory = taskFactory;
 		this.proxyFactory = proxyFactory;
 		this.accountFactory = accountFactory;
-		this.linkList = linkList;
-		this.linkTitleList = linkTitleList;
+		this.lnkLstFl4Res = lnkLstFl4Res;
+		this.lnkTtlLstFl4Res = lnkTtlLstFl4Res;
 		this.listProcessedFilePath = listProcessedFilePath;
 		this.errorFilePath = errorFilePath;
+		
+		this.lang = lang;
+		this.sourcesSrt = sourcesSrt; 
+		this.frequencies = frequencies;
 
 		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL) != null)
 			MIN_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
 		if(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL) != null)
 			MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
-
-		if(ConfigManager.getInstance().getProperty(MIN_DURATION_VIDEO_LABEL) != null)
-			MIN_DURATION_VIDEO = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_DURATION_VIDEO_LABEL));
-		if(ConfigManager.getInstance().getProperty(MAX_DURATION_VIDEO_LABEL) != null)
-			MAX_DURATION_VIDEO = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_DURATION_VIDEO_LABEL));
 	}
 
 	@Override
@@ -97,14 +98,9 @@ public class JimboPosterThread extends Thread{
 				boolean errorExist = false;
 				try {
 
-					/*SnippetExtractor snippetExtractor = new SnippetExtractor(proxyFactory);
-					File previewImg = new File("./images/preview_" + getFileNameWOExt(task.getInputFile()) + ".jpg");
-					if(!previewImg.exists()){
-						previewImg = new File("./images/preview_" + getFileNameWOExt(task.getInputFile()) + ".png");
-						if(!previewImg.exists()){
-							previewImg = null;
-						}
-					}
+					SnippetTaskWrapper snipWrapTask = new SnippetTaskWrapper(sourcesSrt, frequencies, task.getKey(), lang);
+					SnippetExtractor snippetExtractor = new SnippetExtractor(snipWrapTask, proxyFactory, linkList);
+					
 					//TODO Add random image for generation
 					//create video
 					Integer[] times = null;
@@ -113,7 +109,8 @@ public class JimboPosterThread extends Thread{
 					if(MIN_SNIPPET_COUNT == 0 && MAX_SNIPPET_COUNT == 0){
 						task.setSnippets("");
 					}else{
-						ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
+						ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getSnipResult();
+						
 						if(snippets.size() == 0)
 							throw new Exception("Could not extract snippets");
 	
@@ -122,22 +119,22 @@ public class JimboPosterThread extends Thread{
 	
 						StringBuilder snippetsStr = new StringBuilder(); 
 						for(Snippet snippet : snippets){
-							snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.toString());
+							snippetsStr.append(Constants.LINE_FEED).append(Constants.LINE_FEED).append(snippet.toString());
 						}
 						task.setSnippets(snippetsStr.toString());
 					}
 
-					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account, loadPreGenFile);
+					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account);
 					String linkToVideo = nPoster.executePostNews(times);
-					appendStringToFile(linkToVideo, linkList);
-					appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
+					appendStringToFile(linkToVideo, lnkLstFl4Res);
+					appendStringToFile(linkToVideo + ";" + task.getTitle(), lnkTtlLstFl4Res);
 
 					//Move file to processed folder
 					File destFile = new File(listProcessedFilePath + "/" + task.getInputFile().getName());
 					if(destFile.exists()){
 						destFile.delete();
 					}
-					FileUtils.moveFile(task.getInputFile(), destFile);*/
+					FileUtils.moveFile(task.getInputFile(), destFile);
 
 				} 
 				catch (Throwable e) {

@@ -49,7 +49,7 @@ public class TinyUrlThread extends Thread{
 		this.taskFactory = taskFactory;
 		this.proxyFactory = proxyFactory;
 		this.listProcessedFilePath = listProcessedFilePath;
-		this.downloadUrl = Constants.getInstance().getProperty(TINYURL_DOWNLOAD_URL_LABEL);
+		this.downloadUrl = Config.getInstance().getProperty(TINYURL_DOWNLOAD_URL_LABEL);
 	}
 
 	@Override

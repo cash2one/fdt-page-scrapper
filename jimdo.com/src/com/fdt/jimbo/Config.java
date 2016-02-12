@@ -9,15 +9,15 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
-public class Constants
+public class Config
 {
 	private static final long serialVersionUID = 1L;	
-	private static Constants instance = null;
-	private static final Logger log = Logger.getLogger(Constants.class);
+	private static Config instance = null;
+	private static final Logger log = Logger.getLogger(Config.class);
 
 	private Properties properties = new Properties();
 
-	private Constants(){
+	private Config(){
 	}
 
 	public void loadProperties(String cfgFilePath){
@@ -40,11 +40,11 @@ public class Constants
 		}
 	}
 
-	public static Constants getInstance(){
+	public static Config getInstance(){
 		if(null == instance){
-			synchronized (Constants.class) {
+			synchronized (Config.class) {
 				if(null == instance){
-					instance = new Constants();
+					instance = new Config();
 				}
 			}
 		}

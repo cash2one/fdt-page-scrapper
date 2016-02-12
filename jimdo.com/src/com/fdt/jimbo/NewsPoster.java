@@ -22,7 +22,10 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
@@ -32,8 +35,15 @@ import java.util.TimeZone;
 import javax.net.ssl.HttpsURLConnection;
 
 import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
+import org.json.JSONArray;
 import org.json.JSONObject;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.nodes.Node;
+import org.jsoup.select.Elements;
 
 import com.fdt.jimbo.task.NewsTask;
 
@@ -57,8 +67,6 @@ public class NewsPoster {
 	private Proxy proxy = null;
 	private Account account = null;
 
-	private Boolean loadPreGenFile = false;
-
 	private Integer times[];
 
 	private static final String TIME_STAMP_FORMAT = "HH:mm:ss.SSS";
@@ -67,14 +75,26 @@ public class NewsPoster {
 	private SimpleDateFormat sdf = new SimpleDateFormat(TIME_STAMP_FORMAT);
 	private SimpleDateFormat vrdf = new SimpleDateFormat(VIDEO_RECORD_FORMAT);
 
-	public NewsPoster(NewsTask task, Proxy proxy, Account account, Boolean loadPreGenFile) {
+	public NewsPoster(NewsTask task, Proxy proxy, Account account) {
 		this.task = task;
 		this.proxy = proxy;
 		this.account = account;
-		this.loadPreGenFile = loadPreGenFile;
-
 	}
 
+	private String postNews() throws Exception{
+		//String lri = 	
+		HashMap<String,String> pageDetails = createNewPost();
+		executerequestToGetCookies("http://www400.jimdo.com/app/cms/poll/status/", "GET", null, null);
+		pageDetails = createHtmlForm(pageDetails);
+		pageDetails = postHtmlForm(pageDetails);
+		pageDetails = postNews(pageDetails);
+		/*if(uploadUrl == null || "".equals(uploadUrl.trim())){
+			throw new Exception("Upload url was not extracted.");
+		}*/
+
+		return "";
+	}
+	
 	public String executePostNews(Integer[] times) throws Exception {
 		sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
 		this.times = times;
@@ -91,57 +111,269 @@ public class NewsPoster {
 		return sdf.format(new Date(Long.parseLong(valueStr)-0));
 	}
 
-	private String getUploadUrl() throws Exception{
-		String postUrl = "https://api.dailymotion.com/?access_token=" + account.getCookie("sid");
-		HttpsURLConnection conn = null;
-		String uploadUrl = ""; 
+	private HashMap<String,String> createNewPost() throws Exception
+	{
+		HashMap<String,String> pageDetails = new HashMap<String,String>();
+
+		String postUrl = "http://www400.jimdo.com/app/flex/flex/create/";
+
+		HttpURLConnection conn = null;
+
 		try{
 			//post news
 			URL url = new URL(postUrl);
-			HttpsURLConnection.setFollowRedirects(false);
-			conn = (HttpsURLConnection) url.openConnection(proxy);
+			HttpURLConnection.setFollowRedirects(true);
+			conn = (HttpURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("GET");
+			conn.setDoInput(true);
+			conn.setDoOutput(false);
+
+			conn.setRequestProperty("Host", "www400.jimdo.com");
+			conn.addRequestProperty("Referer","http://www400.jimdo.com/app/siteadmin/upgrade/index/");
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"); 
+			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+			conn.setRequestProperty("Cookie", account.getCookies());
+
+			int respCode = conn.getResponseCode();
+			
+			StringBuilder responseStr = getResponseAsString(conn);
+			
+			//log.debug(responseStr.toString());
+			
+			String fileStr = "newPost";
+			
+			int index = responseStr.indexOf(fileStr) + fileStr.length() + 12;
+			
+			String flexId = responseStr.substring(index, index + 20);
+			
+			flexId = flexId.substring(0,flexId.indexOf(","));
+
+			Document html = Jsoup.parse(responseStr.toString());
+
+			String cdata = html.select("script[type=text/javascript]").get(2).childNode(0).toString().replaceAll("\r\n", " ");
+			
+			String matrixId = html.select("div[class=post j-blog-content] > div[id]").get(0).attr("id").substring(10);
+			
+			log.debug(cdata);
+
+			String json = cdata.substring(cdata.indexOf("{"),cdata.lastIndexOf("}")+1);
+
+			JSONObject jsonObj = new JSONObject(json);
+
+			pageDetails.put("cstok", jsonObj.getString("cstok"));
+			pageDetails.put("pageId", String.valueOf(jsonObj.getInt("pageId")));
+			pageDetails.put("websiteId", jsonObj.getString("websiteId"));
+			pageDetails.put("ClickAndChange", jsonObj.getJSONObject("session").getString("ClickAndChange"));
+			pageDetails.put("Referer", conn.getURL().toString());
+			
+			Iterator iterator = jsonObj.getJSONObject("matrixes").keys();
+
+			String key = "";
+			while(iterator.hasNext()) {
+				key = (String)iterator.next();
+			}
+			pageDetails.put("matrixId", key);
+
+			//log.debug(responseStr.toString());
+
+			conn.disconnect();
+		}
+		finally{
+			if(conn != null){
+				conn.disconnect();
+			}
+		}
+
+		return pageDetails;
+	}
+
+	private HashMap<String,String> createHtmlForm(HashMap<String,String> pageDetails) throws Exception
+	{
+		String postUrl = "http://www400.jimdo.com/app/module/matrix/create";
+
+		HttpURLConnection conn = null;
+
+		try{
+			//post news
+			URL url = new URL(postUrl);
+			HttpURLConnection.setFollowRedirects(true);
+			conn = (HttpURLConnection) url.openConnection(proxy);
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
 			conn.setRequestMethod("POST");
 			conn.setDoInput(true);
 			conn.setDoOutput(true);
 
-			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
+			conn.setRequestProperty("Host", "www400.jimdo.com");
+			conn.addRequestProperty("Referer", pageDetails.get("Referer"));
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"); 
+			conn.setRequestProperty("Accept", "application/json, text/javascript, */*; q=0.01");
 			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-			conn.setRequestProperty("Host", "api.dailymotion.com");
-			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
-
+			conn.setRequestProperty("DNT","1");
+			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+			conn.setRequestProperty("Cookie", account.getCookies());
+			
+			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+			nameValuePairs.add(new BasicNameValuePair("data", "{\"matrixId\":\""+ pageDetails.get("matrixId") + "\",\"order\":[\"htmlCode\"]}"));
+			nameValuePairs.add(new BasicNameValuePair("cstok", pageDetails.get("cstok")));
+			nameValuePairs.add(new BasicNameValuePair("websiteid", pageDetails.get("websiteId")));
+			nameValuePairs.add(new BasicNameValuePair("pageid", pageDetails.get("pageId")));
+			
 			OutputStream os = conn.getOutputStream();
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-			writer.write("[{\"call\":\"GET /file/upload\",\"args\":{},\"id\":0}]");
+			writer.write(getQuery(nameValuePairs));
 			writer.flush();
 			writer.close();
 			os.close();
 
-			if(conn.getResponseCode() == 401){
-				account.getAccountFactory().rejectAccount(account);
-				throw new Exception(String.format("Account %s lost the login data. Account will rejected",account.getLogin()));
-			}
-
+			int respCode = conn.getResponseCode();
+			
 			StringBuilder responseStr = getResponseAsString(conn);
 
+			JSONObject jsonObj = new JSONObject(responseStr.toString());
+
+			pageDetails.put("moduleId", jsonObj.getJSONObject("payload").getString("id"));
+			
 			//log.debug(responseStr.toString());
 
 			conn.disconnect();
-
-			JSONObject jsonObj = new JSONObject(responseStr.substring(1, responseStr.length()-1));
-			uploadUrl = jsonObj.getJSONObject("result").getString("upload_url");
-
-			log.info("Upload URL: " + uploadUrl);
-		}finally{
+		}
+		finally{
 			if(conn != null){
 				conn.disconnect();
 			}
 		}
 
-		return uploadUrl;
+		return pageDetails;
+	}
+	
+	private HashMap<String,String> postHtmlForm(HashMap<String,String> pageDetails) throws Exception
+	{
+		String postUrl = "http://www400.jimdo.com/app/module/module/update";
+
+		HttpURLConnection conn = null;
+
+		try{
+			//post news
+			URL url = new URL(postUrl);
+			HttpURLConnection.setFollowRedirects(true);
+			conn = (HttpURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("POST");
+			conn.setDoInput(true);
+			conn.setDoOutput(true);
+
+			conn.setRequestProperty("Host", "www400.jimdo.com");
+			conn.addRequestProperty("Referer", pageDetails.get("Referer"));
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"); 
+			//conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "application/json, text/javascript, */*; q=0.01");
+			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+			conn.setRequestProperty("Cookie", account.getCookies());
+			
+			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+			nameValuePairs.add(new BasicNameValuePair("moduleId", pageDetails.get("moduleId")));
+			nameValuePairs.add(new BasicNameValuePair("type", pageDetails.get("htmlCode")));
+			nameValuePairs.add(new BasicNameValuePair("htmlCode", task.getDescription()));
+			nameValuePairs.add(new BasicNameValuePair("ClickAndChange", pageDetails.get("ClickAndChange")));
+			nameValuePairs.add(new BasicNameValuePair("cstok", pageDetails.get("cstok")));
+			nameValuePairs.add(new BasicNameValuePair("websiteid", pageDetails.get("websiteId")));
+			nameValuePairs.add(new BasicNameValuePair("pageid", pageDetails.get("pageId")));
+			
+			OutputStream os = conn.getOutputStream();
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			writer.write(getQuery(nameValuePairs));
+			writer.flush();
+			writer.close();
+			os.close();
+
+			int respCode = conn.getResponseCode();
+			
+			StringBuilder responseStr = getResponseAsString(conn);
+
+			JSONObject jsonObj = new JSONObject(responseStr.toString());
+
+			log.info("Status of htmlCode post:" + jsonObj.getString("status"));
+			
+			conn.disconnect();
+		}
+		finally{
+			if(conn != null){
+				conn.disconnect();
+			}
+		}
+
+		return pageDetails;
+	}
+	
+	private HashMap<String,String> postNews(HashMap<String,String> pageDetails) throws Exception
+	{
+		String postUrl = "http://www400.jimdo.com/app/flex/flex/update";
+
+		HttpURLConnection conn = null;
+
+		try{
+			//post news
+			URL url = new URL(postUrl);
+			HttpURLConnection.setFollowRedirects(true);
+			conn = (HttpURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod("POST");
+			conn.setDoInput(true);
+			conn.setDoOutput(true);
+
+			conn.setRequestProperty("Host", "www400.jimdo.com");
+			conn.addRequestProperty("Referer", pageDetails.get("Referer"));
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"); 
+			//conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "application/json, text/javascript, */*; q=0.01");
+			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+			conn.setRequestProperty("Cookie", account.getCookies());
+			
+			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+			nameValuePairs.add(new BasicNameValuePair("title", task.getTitle()));
+			nameValuePairs.add(new BasicNameValuePair("commentAllowed", "1"));
+			nameValuePairs.add(new BasicNameValuePair("category", ""));
+			nameValuePairs.add(new BasicNameValuePair("flexId", pageDetails.get("flexId")));
+			nameValuePairs.add(new BasicNameValuePair("published_time", "2016-02-11 05:39"));
+			nameValuePairs.add(new BasicNameValuePair("timezone_offset", "-180"));
+			nameValuePairs.add(new BasicNameValuePair("publish", "1"));
+			nameValuePairs.add(new BasicNameValuePair("cstok", pageDetails.get("cstok")));
+			nameValuePairs.add(new BasicNameValuePair("websiteid", pageDetails.get("websiteId")));
+			nameValuePairs.add(new BasicNameValuePair("pageid", pageDetails.get("pageId")));
+			
+			OutputStream os = conn.getOutputStream();
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+			writer.write(getQuery(nameValuePairs));
+			writer.flush();
+			writer.close();
+			os.close();
+
+			int respCode = conn.getResponseCode();
+			
+			StringBuilder responseStr = getResponseAsString(conn);
+
+			JSONObject jsonObj = new JSONObject(responseStr.toString());
+
+			log.info("Status of htmlCode post:" + jsonObj.getString("status"));
+			
+			conn.disconnect();
+		}
+		finally{
+			if(conn != null){
+				conn.disconnect();
+			}
+		}
+
+		return pageDetails;
 	}
 
 	private String getVideoId() throws Exception{
@@ -165,7 +397,7 @@ public class NewsPoster {
 			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 			conn.setRequestProperty("Host", "api.dailymotion.com");
-			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+			conn.setRequestProperty("Referer", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
 			OutputStream os = conn.getOutputStream();
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
@@ -219,7 +451,7 @@ public class NewsPoster {
 			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 			conn.setRequestProperty("Host", "api.dailymotion.com");
-			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+			conn.setRequestProperty("Referer", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
 			OutputStream os = conn.getOutputStream();
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
@@ -273,7 +505,7 @@ public class NewsPoster {
 			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 			conn.setRequestProperty("Host", "api.dailymotion.com");
-			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+			conn.setRequestProperty("Referer", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
 			OutputStream os = conn.getOutputStream();
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
@@ -377,23 +609,6 @@ public class NewsPoster {
 		return respCode;
 	}
 
-	private String postNews() throws Exception{
-		//String lri = 	
-		String uploadUrl = getUploadUrl();
-		if(uploadUrl == null || "".equals(uploadUrl.trim())){
-			throw new Exception("Upload url was not extracted.");
-		}
-
-		String videoId = getVideoId();
-		if(videoId == null || "".equals(videoId.trim())){
-			throw new Exception("VideoId was not extracted.");
-		}
-
-		String videoUrl = "";
-		return videoUrl.substring(0, videoUrl.indexOf(videoId) + videoId.length());
-	}
-
-
 	private int getFileSize(String fileUrl) throws MalformedURLException {
 		HttpURLConnection conn = null;
 		URL url = new URL(fileUrl);
@@ -459,7 +674,7 @@ public class NewsPoster {
 
 	private String setPreview(String videoId, String fromRequest, File previewFile) throws Exception{
 
-		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
+		String postUrl = Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
 				"/pageitem/OneStepPreview?widget_only=1&hidenextvideo=1&request="+fromRequest;
 
 		//post news
@@ -475,7 +690,7 @@ public class NewsPoster {
 		conn.setDoInput(true);
 		conn.setDoOutput(true);
 
-		conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+		conn.setRequestProperty("Host", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
 		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0"); 
 		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 		conn.setRequestProperty("Cookie", account.getCookies());
@@ -596,8 +811,8 @@ public class NewsPoster {
 			conn.setRequestProperty("Accept", "*/*");
 			conn.setRequestProperty("Cookie", account.getCookies());
 			//conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
-			conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
-			conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+			conn.setRequestProperty("Host", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+			conn.setRequestProperty("Referer", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
 			if(requestMethod.equalsIgnoreCase("POST") && postParams != null){
 				OutputStream os = conn.getOutputStream();
@@ -653,6 +868,26 @@ public class NewsPoster {
 			result.append(URLEncoder.encode(pair.getName(), "UTF-8"));
 			result.append("=");
 			result.append(URLEncoder.encode(pair.getValue(), "UTF-8"));
+		}
+
+		return result.toString();
+	}
+	
+	public static String getQueryWOEncode(List<NameValuePair> params) throws UnsupportedEncodingException
+	{
+		StringBuilder result = new StringBuilder();
+		boolean first = true;
+
+		for (NameValuePair pair : params)
+		{
+			if (first)
+				first = false;
+			else
+				result.append("&");
+
+			result.append(pair.getName());
+			result.append("=");
+			result.append(pair.getValue());
 		}
 
 		return result.toString();

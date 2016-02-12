@@ -75,6 +75,14 @@ ankor тут чисто вот так) <a href="http://zwicetochdu.jimdo.com/2016/02/06/downlo
 колличество поустов задаётся в конфиге на 1 аак
 
 
+http://www400.jimdo.com/app/flex/flex/create/ - получаем урл для редиректа, потом из новой страницы получаем все данные
+
+http://www400.jimdo.com/app/module/matrix/create - создаём страницу для вставки html кода
+
+http://www400.jimdo.com/app/module/module/update	Постим текст
+http://www400.jimdo.com/app/flex/flex/update	Постим новость
+
+
 
 
 

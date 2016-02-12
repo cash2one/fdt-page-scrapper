@@ -55,24 +55,24 @@ public class TinyUrlTaskRunner {
 
 	public TinyUrlTaskRunner(String cfgFilePath){
 
-		Constants.getInstance().loadProperties(cfgFilePath);
+		Config.getInstance().loadProperties(cfgFilePath);
 
-		this.proxyFilePath = Constants.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
-		this.proxyDelay = Integer.valueOf(Constants.getInstance().getProperty(PROXY_DELAY_LABEL));
+		this.proxyFilePath = Config.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
+		this.proxyDelay = Integer.valueOf(Config.getInstance().getProperty(PROXY_DELAY_LABEL));
 
-		this.listInputFilePath = Constants.getInstance().getProperty(TINYURL_LIST_INPUT_FILE_PATH_LABEL);
-		this.listProcessedFilePath = Constants.getInstance().getProperty(TINYURL_LIST_PROCESSED_FILE_PATH_LABEL);
-		this.errorFilePath = Constants.getInstance().getProperty(TINYURL_ERROR_FILE_PATH_LABEL);
+		this.listInputFilePath = Config.getInstance().getProperty(TINYURL_LIST_INPUT_FILE_PATH_LABEL);
+		this.listProcessedFilePath = Config.getInstance().getProperty(TINYURL_LIST_PROCESSED_FILE_PATH_LABEL);
+		this.errorFilePath = Config.getInstance().getProperty(TINYURL_ERROR_FILE_PATH_LABEL);
 
 		this.taskFactory = TinyUrlTaskFactory.getInstance();
 
-		this.maxThreadTinyUrlCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_TINY_URL_COUNT_LABEL));
+		this.maxThreadTinyUrlCount = Integer.valueOf(Config.getInstance().getProperty(MAX_THREAD_TINY_URL_COUNT_LABEL));
 
 		Authenticator.setDefault(new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
 				return new PasswordAuthentication(
-						Constants.getInstance().getProperty(PROXY_LOGIN_LABEL), Constants.getInstance().getProperty(PROXY_PASS_LABEL).toCharArray()
+						Config.getInstance().getProperty(PROXY_LOGIN_LABEL), Config.getInstance().getProperty(PROXY_PASS_LABEL).toCharArray()
 						);
 			}
 		});

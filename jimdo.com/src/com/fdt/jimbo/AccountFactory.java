@@ -10,6 +10,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
+import java.net.Proxy;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -23,9 +24,12 @@ import javax.xml.xpath.XPathExpressionException;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
+import com.fdt.utils.Utils;
 
 public class AccountFactory
 {
@@ -53,8 +57,8 @@ public class AccountFactory
 	public AccountFactory(ProxyFactory proxy){
 		super();
 		this.proxyFactory = proxy;
-		NEWS_PER_ACCOUNT = Integer.valueOf(Constants.getInstance().getProperty(NEWS_PER_ACCOUNT_LABEL));
-		NOT_REJECT_TIME = Long.valueOf(Constants.getInstance().getProperty(NOT_REJECT_TIME_LABEL, "900000"));
+		NEWS_PER_ACCOUNT = Integer.valueOf(Config.getInstance().getProperty(NEWS_PER_ACCOUNT_LABEL));
+		NOT_REJECT_TIME = Long.valueOf(Config.getInstance().getProperty(NOT_REJECT_TIME_LABEL, "900000"));
 	}
 
 	public void fillAccounts(String accListFilePath) throws Exception{
@@ -71,8 +75,8 @@ public class AccountFactory
 				if(line.contains(";")){
 					String[] account = line.trim().split(";");
 					accounts.put(account[0], new Account(account[3],account[0],account[1], account[2], this));
-					newsPostedCount.put(account[2],0);
-					accountUsedInThreadCount.put(account[2],0);
+					newsPostedCount.put(account[0],0);
+					accountUsedInThreadCount.put(account[0],0);
 				}
 				line = br.readLine();
 			}
@@ -102,36 +106,55 @@ public class AccountFactory
 		//getting cookie for each account
 		HttpURLConnection conn = null;
 		ProxyConnector proxy = null;
-		
+
 		try {
 			proxy = proxyFactory.getRandomProxyConnector();
 
-			//executerequestToGetCookies(Constants.getInstance().getProperty(MAIN_URL_LABEL) + "/ru", "GET", proxy, null, account);
-			//executerequestToGetCookies( Constants.getInstance().getProperty(MAIN_URL_LABEL) + "/pageitem/authenticationContainer?request=/login?&from_request=%2Fru&_csrf_l=" + account.getCookie("_csrf/link"), "GET", proxy, null, account);
+			String cstok = executerequestToGetParams("http://a.jimdo.com/app/auth/signin/authenticate", "GET", new IResultExtractor() {
+				private String responseStr;
 
-			String postUrl = "https://a.jimdo.com/app/auth/signin/authenticate";
+				public void init(String responseStr){
+					this.responseStr = responseStr;
+				}
+
+				@Override
+				public String getResult() {
+					Document html = Jsoup.parse(responseStr.toString());
+
+					String cstok = html.select("input[name=cstok]").get(0).attr("value");
+
+					return cstok;
+				}
+			}, null, account, proxy.getConnect(ProxyFactory.PROXY_TYPE));
+
+			String postUrl = "http://a.jimdo.com/app/auth/signin/authenticate";
 			URL url = new URL(postUrl);
-			HttpsURLConnection.setFollowRedirects(false);
-			conn = (HttpsURLConnection) url.openConnection(proxy.getConnect(ProxyFactory.PROXY_TYPE));
+			HttpURLConnection.setFollowRedirects(false);
+			conn = (HttpURLConnection) url.openConnection(proxy.getConnect(ProxyFactory.PROXY_TYPE));
 			conn.setReadTimeout(60000);
 			conn.setConnectTimeout(60000);
 			conn.setRequestMethod("POST");
 			conn.setDoInput(true);
 			conn.setDoOutput(true);
 
-			conn.addRequestProperty("Referer","https://a.jimdo.com/app/auth/signin");
+
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"); 
-			//conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+			conn.addRequestProperty("Host", "a.jimdo.com"); 
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"); 
+			conn.addRequestProperty("Referer", "http://a.jimdo.com/app/auth/signin/authenticate"); 
+			conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded"); 
+			conn.addRequestProperty("Cookie","PHPSESSID=" + account.getCookie("PHPSESSID")); 
 
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+			nameValuePairs.add(new BasicNameValuePair("cstok", cstok));
 			nameValuePairs.add(new BasicNameValuePair("safemode", "0"));
 			nameValuePairs.add(new BasicNameValuePair("popup", "0"));
 			nameValuePairs.add(new BasicNameValuePair("page", ""));
 			nameValuePairs.add(new BasicNameValuePair("url", account.getLogin()));
 			nameValuePairs.add(new BasicNameValuePair("passwd", account.getPass()));
-			
 
 			OutputStream os = conn.getOutputStream();
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
@@ -139,6 +162,8 @@ public class AccountFactory
 			writer.flush();
 			writer.close();
 			os.close();
+
+			int rescpCode = conn.getResponseCode();
 
 			// Execute HTTP Post Request
 			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
@@ -152,10 +177,16 @@ public class AccountFactory
 				String cookiesValues[] = cookieOne.split(";");
 				for(String cookiesArrayItem : cookiesValues){
 					String singleCookei[] = cookiesArrayItem.split("=");
-					account.addCookie(singleCookei[0].trim(), singleCookei[1].trim());
+					account.addCookie(singleCookei[0].trim(), singleCookei.length > 1?singleCookei[1].trim():"");
 				}
 			}
-			
+
+			String newLocation = cookies.get("Location") != null?cookies.get("Location").get(0):null;
+
+			while(newLocation != null && !"".equals(newLocation.trim())){
+				newLocation = executerequestToGetCookies(newLocation, "GET", proxy, null, account);
+			}
+
 			return true;
 		} catch (Exception e) {
 			log.error("Error during login/getting cookies for account",e);
@@ -170,7 +201,83 @@ public class AccountFactory
 		}
 	}
 
-	private void executerequestToGetCookies(String postUrl, String requestMethod, ProxyConnector proxy, String postParams, Account account) throws IOException, XPathExpressionException{
+	private String executerequestToGetParams(String postUrl, String requestMethod, IResultExtractor resultExtractor, String postParams, Account account, Proxy proxy) throws IOException{
+		HttpURLConnection conn = null;
+		//post news
+		try{
+			URL url = new URL(postUrl);
+			log.info("URL: " + url);
+			HttpURLConnection.setFollowRedirects(false);
+			//TODO Uncomment
+			//HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy);
+			conn = (HttpURLConnection) url.openConnection(proxy);
+			conn.setReadTimeout(60000);
+			conn.setConnectTimeout(60000);
+			conn.setRequestMethod(requestMethod);
+			conn.setDoInput(true);
+
+			if(requestMethod.equalsIgnoreCase("POST")){
+				conn.setDoOutput(true);
+			}else{
+				conn.setDoOutput(false);
+			}
+
+			conn.addRequestProperty("Host","a.jimdo.com");
+			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"); 
+			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+			conn.addRequestProperty("DNT","1");
+
+
+			//conn.setRequestProperty("Cookie", account.getCookies());
+			//conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+			//conn.setRequestProperty("Host", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+			//conn.setRequestProperty("Referer", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
+
+			if(requestMethod.equalsIgnoreCase("POST") && postParams != null){
+				OutputStream os = conn.getOutputStream();
+				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+				writer.write(postParams);
+				writer.flush();
+				writer.close();
+				os.close();
+			}
+
+			int respCode = conn.getResponseCode();
+
+
+			StringBuilder responseStr = Utils.getResponseAsString(conn);
+
+			// Execute HTTP Post Request
+			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
+			if(cookies.get("Set-Cookie") == null || (cookies.get("Set-Cookie") != null && cookies.get("Set-Cookie").toString().contains("notexists"))){
+				log.error("Can't getting cookies for account.Account doesn't exist: \""+ account.getLogin() + "\" or banned, or error occured during login. Please check email and password.");
+			}
+
+			for(String cookieOne: cookies.get("Set-Cookie"))
+			{
+				String cookiesValues[] = cookieOne.split(";");
+				for(String cookiesArrayItem : cookiesValues){
+					String singleCookei[] = cookiesArrayItem.split("=");
+					account.addCookie(singleCookei[0].trim(), singleCookei.length > 1?singleCookei[1].trim():"");
+				}
+			}
+
+			//log.debug(responseStr.toString());
+
+			if(resultExtractor != null){
+				resultExtractor.init(responseStr.toString());
+			}
+		}finally{
+			if(conn != null){
+				conn.disconnect();
+			}
+		}
+
+		return resultExtractor != null ? resultExtractor.getResult():"";
+	}
+
+	private String executerequestToGetCookies(String postUrl, String requestMethod, ProxyConnector proxy, String postParams, Account account) throws IOException, XPathExpressionException{
 
 		//post news
 		URL url = new URL(postUrl);
@@ -190,9 +297,9 @@ public class AccountFactory
 		conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 		conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 		conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-		//conn.setRequestProperty("Cookie", account.getCookies());
-		conn.setRequestProperty("Host", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
-		conn.setRequestProperty("Referer", Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/ru");
+		conn.setRequestProperty("Cookie", account.getCookies());
+		//conn.setRequestProperty("Host", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
+		//conn.setRequestProperty("Referer", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/ru");
 
 		if(requestMethod.equalsIgnoreCase("POST") && postParams != null){
 			OutputStream os = conn.getOutputStream();
@@ -213,12 +320,17 @@ public class AccountFactory
 				String cookiesValues[] = cookieOne.split(";");
 				for(String cookiesArrayItem : cookiesValues){
 					String singleCookei[] = cookiesArrayItem.split("=");
-					account.addCookie(singleCookei[0].trim(), singleCookei[1].trim());
+					if(account.getCookie(singleCookei[0]) == null){
+						account.addCookie(singleCookei[0].trim(), singleCookei.length > 1?singleCookei[1].trim():"");
+					}
 				}
 			}
 		}
 
 		conn.disconnect();
+
+		//return Location for 302 responce
+		return cookies.get("Location") != null?cookies.get("Location").get(0):null;
 	}
 
 	public synchronized Account getAccount(){

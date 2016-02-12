@@ -133,7 +133,7 @@ public class SnippetExtractor {
 		boolean errExist = false;
 		int maxAttemptCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_ATTEMPT_COUNT_LABEL));
 		HashSet<Snippet> snippetResult = new HashSet<Snippet>();
-		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();;
+		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
 		
 		do{
 			try{
@@ -161,7 +161,6 @@ public class SnippetExtractor {
 						log.error("Error occured during processing key: " + snippetTask.getKeyWords());
 					}
 				}
-				
 				
 				if(snippetResult == null || snippetResult.size() == 0){
 					throw new Exception("Snippets size is 0. Will try to use another proxy server");
@@ -549,6 +548,18 @@ public class SnippetExtractor {
 		return  minValue + rnd.nextInt(maxValue - minValue+1);
 	}
 
+	public ArrayList<Snippet> extractSnippetsFromPageContent() throws MalformedURLException, IOException, XPathExpressionException, ParseException{
+		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
+		try{
+			return extractSnippetsFromPageContent(task.getCurrentTask(), proxyConnector);
+		}finally{
+			if(proxyConnector != null){
+				proxyFactory.releaseProxy(proxyConnector);
+				proxyConnector = null;
+			}
+		}
+	}
+	
 	public ArrayList<Snippet> extractSnippetsFromPageContent(ProxyConnector proxyConnector) throws MalformedURLException, IOException, XPathExpressionException, ParseException{
 		return extractSnippetsFromPageContent(task.getCurrentTask(), proxyConnector);
 	}

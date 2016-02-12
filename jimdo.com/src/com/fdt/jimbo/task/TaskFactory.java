@@ -149,7 +149,7 @@ public class TaskFactory {
 		return taskQueue.isEmpty();
 	}
 
-	public synchronized void fillTaskQueue(File[] fileList, RowMapping rowMapping, File templateFile, File templateFileWOPic, String shortUrlsList, List<String> randImgUrlList) throws Exception
+	public synchronized void fillTaskQueue(File[] fileList, RowMapping rowMapping, File templateFile, File templateFileWOPic, List<String> randImgUrlList, List<String> rndTitles) throws Exception
 	{
 		RowMappingData data;
 		
@@ -160,7 +160,10 @@ public class TaskFactory {
 					new NewsTask(
 							file, 
 							data, 
-							randImgUrlList.get(rnd.nextInt(randImgUrlList.size()))
+							randImgUrlList.get(rnd.nextInt(randImgUrlList.size())),
+							rndTitles.get(rnd.nextInt(rndTitles.size())),
+							templateFile,
+							templateFileWOPic
 					) 
 			);
 		}
