@@ -1,6 +1,10 @@
 package com.fdt.jimbo;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Account {
 	private String login = "";
@@ -57,16 +61,23 @@ public class Account {
 		this.site = site;
 	}
 
-	public String getCookies()
+	public String getCookies(String[] cookieKeyList)
 	{
-		return getCookieString();
+		return getCookieString(new HashSet<String>(Arrays.asList(cookieKeyList)));
 	}
 	
-	private String getCookieString(){
+	public String getCookies()
+	{
+		return getCookieString(cookie.keySet());
+	}
+	
+	private String getCookieString(Set<String> keySet){
 		StringBuilder strBuilder = new StringBuilder();
 		
-		for(String key : cookie.keySet()){
-			strBuilder.append(key).append("=").append(cookie.get(key)).append("; ");
+		for(String key :keySet){
+			if(cookie.get(key) != null){
+				strBuilder.append(key).append("=").append(cookie.get(key)).append("; ");
+			}
 		}
 		
 		return strBuilder.toString();
@@ -74,7 +85,9 @@ public class Account {
 
 	public void addCookie(String key, String value)
 	{
-		this.cookie.put(key, value);
+		if(!"httponly".equals(key.toLowerCase())){
+			this.cookie.put(key, value);
+		}
 	}
 	
 	public String getCookie(String key){

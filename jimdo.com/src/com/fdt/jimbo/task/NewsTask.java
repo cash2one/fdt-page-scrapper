@@ -125,6 +125,10 @@ public class NewsTask
 		description = description.replaceAll("\\[KEYWORD\\]", Matcher.quoteReplacement(data.getDataByName("KEYWORD")));
 		description = description.replaceAll("\\[PICTURE\\]", Matcher.quoteReplacement(data.getDataByName("PICTURE")));
 		description = description.replaceAll("\\[BUTTON\\]", Matcher.quoteReplacement(data.getDataByName("BUTTON")));
+		description = description.replaceAll("\\[AUTHOR\\]", Matcher.quoteReplacement(data.getDataByName("AUTHOR")));
+		description = description.replaceAll("\\[JPG\\]", Matcher.quoteReplacement(data.getDataByName("JPG")));
+		description = description.replaceAll("\\[LINK\\]", Matcher.quoteReplacement(data.getDataByName("LINK")));
+		description = description.replaceAll("\\[TEXT\\]", Matcher.quoteReplacement(data.getDataByName("TEXT")));
 		description = description.replaceAll("\\[SNIPPETS\\]", Matcher.quoteReplacement(this.snippets));
 
 		return description;

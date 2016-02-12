@@ -131,17 +131,17 @@ public class NewsPoster {
 			conn.setDoOutput(false);
 
 			conn.setRequestProperty("Host", "www400.jimdo.com");
-			conn.addRequestProperty("Referer","http://www400.jimdo.com/app/siteadmin/upgrade/index/");
+			conn.addRequestProperty("Referer","http://www400.jimdo.com/app/siteadmin/settings/");
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"); 
 			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
-			conn.setRequestProperty("Cookie", account.getCookies());
+			conn.setRequestProperty("Cookie", account.getCookies(new String[]{"JDI","shd","ClickAndChange","safemode","_jimBlob","_gat_jimBlob"}));
 
 			int respCode = conn.getResponseCode();
-			
+		
 			StringBuilder responseStr = getResponseAsString(conn);
 			
-			//log.debug(responseStr.toString());
+			log.debug(responseStr.toString());
 			
 			String fileStr = "newPost";
 			
@@ -150,6 +150,7 @@ public class NewsPoster {
 			String flexId = responseStr.substring(index, index + 20);
 			
 			flexId = flexId.substring(0,flexId.indexOf(","));
+			pageDetails.put("flexId", flexId);
 
 			Document html = Jsoup.parse(responseStr.toString());
 
@@ -170,12 +171,13 @@ public class NewsPoster {
 			pageDetails.put("Referer", conn.getURL().toString());
 			
 			Iterator iterator = jsonObj.getJSONObject("matrixes").keys();
+			JSONObject obj = jsonObj.getJSONObject("matrixes");
 
 			String key = "";
 			while(iterator.hasNext()) {
 				key = (String)iterator.next();
 			}
-			pageDetails.put("matrixId", key);
+			pageDetails.put("matrixId", matrixId);
 
 			//log.debug(responseStr.toString());
 
@@ -207,15 +209,17 @@ public class NewsPoster {
 			conn.setDoInput(true);
 			conn.setDoOutput(true);
 
+			
 			conn.setRequestProperty("Host", "www400.jimdo.com");
-			conn.addRequestProperty("Referer", pageDetails.get("Referer"));
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"); 
 			conn.setRequestProperty("Accept", "application/json, text/javascript, */*; q=0.01");
 			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-			conn.setRequestProperty("DNT","1");
 			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
-			conn.setRequestProperty("Cookie", account.getCookies());
+			String cookies = account.getCookies(new String[]{"JDI","shd","ClickAndChange","safemode","_jimBlob","_gat_jimBlob"});
+			cookies = account.getCookies(new String[]{"ClickAndChange"});
+			conn.setRequestProperty("Cookie", cookies);
+			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+			//conn.setRequestProperty("Content-Length","174");
 			
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("data", "{\"matrixId\":\""+ pageDetails.get("matrixId") + "\",\"order\":[\"htmlCode\"]}"));
@@ -232,7 +236,7 @@ public class NewsPoster {
 
 			int respCode = conn.getResponseCode();
 			
-			StringBuilder responseStr = getResponseAsString(conn);
+			StringBuilder responseStr = getResponseAsString(conn, respCode);
 
 			JSONObject jsonObj = new JSONObject(responseStr.toString());
 
@@ -275,11 +279,11 @@ public class NewsPoster {
 			conn.setRequestProperty("Accept", "application/json, text/javascript, */*; q=0.01");
 			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
-			conn.setRequestProperty("Cookie", account.getCookies());
+			conn.setRequestProperty("Cookie", account.getCookies(new String[]{"JDI","ClickAndChange"}));
 			
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("moduleId", pageDetails.get("moduleId")));
-			nameValuePairs.add(new BasicNameValuePair("type", pageDetails.get("htmlCode")));
+			nameValuePairs.add(new BasicNameValuePair("type", "htmlCode"));
 			nameValuePairs.add(new BasicNameValuePair("htmlCode", task.getDescription()));
 			nameValuePairs.add(new BasicNameValuePair("ClickAndChange", pageDetails.get("ClickAndChange")));
 			nameValuePairs.add(new BasicNameValuePair("cstok", pageDetails.get("cstok")));
@@ -336,14 +340,14 @@ public class NewsPoster {
 			conn.setRequestProperty("Accept", "application/json, text/javascript, */*; q=0.01");
 			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 			conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
-			conn.setRequestProperty("Cookie", account.getCookies());
+			conn.setRequestProperty("Cookie", account.getCookies(new String[]{"JDI","ClickAndChange"}));
 			
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("title", task.getTitle()));
 			nameValuePairs.add(new BasicNameValuePair("commentAllowed", "1"));
 			nameValuePairs.add(new BasicNameValuePair("category", ""));
 			nameValuePairs.add(new BasicNameValuePair("flexId", pageDetails.get("flexId")));
-			nameValuePairs.add(new BasicNameValuePair("published_time", "2016-02-11 05:39"));
+			nameValuePairs.add(new BasicNameValuePair("published_time", "2016-02-12 05:39"));
 			nameValuePairs.add(new BasicNameValuePair("timezone_offset", "-180"));
 			nameValuePairs.add(new BasicNameValuePair("publish", "1"));
 			nameValuePairs.add(new BasicNameValuePair("cstok", pageDetails.get("cstok")));
@@ -363,7 +367,7 @@ public class NewsPoster {
 
 			JSONObject jsonObj = new JSONObject(responseStr.toString());
 
-			log.info("Status of htmlCode post:" + jsonObj.getString("status"));
+			log.info("Error count:" + jsonObj.getString("error"));
 			
 			conn.disconnect();
 		}
@@ -771,9 +775,28 @@ public class NewsPoster {
 		return responseStr.toString();
 	}
 
-	private StringBuilder getResponseAsString(HttpURLConnection conn)
-			throws IOException {
+	private StringBuilder getResponseAsString(HttpURLConnection conn, int respCode) throws IOException{
+		InputStream is = null;
+		if(respCode >= 400){
+			is = conn.getErrorStream();
+		}else{
+			is = conn.getInputStream();
+		}
+			
+		StringBuilder result = getResponseAsString(is);
+		is.close();
+		return result;
+	}
+	
+	private StringBuilder getResponseAsString(HttpURLConnection conn) throws IOException{
 		InputStream is = conn.getInputStream();
+		StringBuilder result = getResponseAsString(is);
+		is.close();
+		return result;
+	}
+	
+	private StringBuilder getResponseAsString(InputStream is)
+			throws IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
@@ -782,7 +805,7 @@ public class NewsPoster {
 		while ((line = br.readLine()) != null) {
 			responseStr.append(line).append(LINE_FEED);
 		}
-		is.close();
+		
 		return responseStr;
 	}
 
