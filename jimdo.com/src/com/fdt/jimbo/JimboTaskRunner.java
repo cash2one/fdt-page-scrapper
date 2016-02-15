@@ -99,11 +99,6 @@ public class JimboTaskRunner
 	private final static String CONTENT_TEMPLATE_FILE_PATH_LABEL = "content_template_file_path";
 	private final static String CONTENT_TEMPLATE_FILE_PATH_WO_PIC_LABEL = "content_template_file_path_wo_pic";
 	
-	private final static String SHORT_URLS_LIST_LABEL = "short_urls_list";
-
-	private static final String MAX_POST_PER_ACCOUNT_LABEL = "MAX_POST_PER_ACCOUNT";
-	private static final String MIN_POST_PER_ACCOUNT_LABEL = "MIN_POST_PER_ACCOUNT";
-
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
 	
 	private final static String RANDOM_IMAGES_FILE_PATH="random_images_file_path";
@@ -225,8 +220,9 @@ public class JimboTaskRunner
 						new File(this.templateFilePath), 
 						new File(this.templateFilePathWOPic), 
 						Utils.loadFileAsStrList(randImagesFilePath),
-						Utils.loadFileAsStrList(randTitleFilePath)
-						
+						Utils.loadFileAsStrList(randTitleFilePath),
+						Utils.loadFileAsStrList(randJpgFilePath),
+						Utils.loadFileAsStrList(randButtonFilePath)
 				);
 				
 				File resLinkList = new File(outputFilePath);

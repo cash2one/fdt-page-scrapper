@@ -85,7 +85,12 @@ public class RowMappingData
 				
 				for(int i = firstRow-1; i <= lastRow-1; i++)
 				{
-					strBuf.append(fileStrList.get(i)).append(LINE_FEED);
+					if(strBuf.length() > 0)
+					{
+						strBuf.append(LINE_FEED);
+					}
+					
+					strBuf.append(fileStrList.get(i));
 				}
 				
 				mappingData.put(key, strBuf.toString());

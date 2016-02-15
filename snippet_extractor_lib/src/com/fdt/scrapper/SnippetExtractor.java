@@ -130,8 +130,13 @@ public class SnippetExtractor {
 		//get snippets
 		String snippetContent = null;
 		int attempt = 0;
+		int maxAttemptCount = 10;
 		boolean errExist = false;
-		int maxAttemptCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_ATTEMPT_COUNT_LABEL));
+		
+		String propValue = ConfigManager.getInstance().getProperty(MAX_ATTEMPT_COUNT_LABEL);
+		if(propValue != null && !"".equals(propValue.trim())){
+			maxAttemptCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_ATTEMPT_COUNT_LABEL));
+		}
 		HashSet<Snippet> snippetResult = new HashSet<Snippet>();
 		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
 		

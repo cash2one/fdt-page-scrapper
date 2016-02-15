@@ -9,6 +9,7 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
@@ -42,6 +43,7 @@ public class JimboPosterThread extends Thread{
 	private File lnkTtlLstFl4Res;
 	private String listProcessedFilePath;
 	private String errorFilePath;
+	private boolean addLinkFromFolder = false;
 	
 	private ArrayList<String> linkList;
 	
@@ -93,13 +95,20 @@ public class JimboPosterThread extends Thread{
 
 	@Override
 	public void run() {
-		synchronized (this) {
-			try{
+		synchronized (this) 
+		{
+			Random rnd = new Random();
+			rnd.nextInt();
+			
+			try
+			{
 				boolean errorExist = false;
 				try {
 
-					SnippetTaskWrapper snipWrapTask = new SnippetTaskWrapper(sourcesSrt, frequencies, task.getKey(), lang);
-					SnippetExtractor snippetExtractor = new SnippetExtractor(snipWrapTask, proxyFactory, linkList);
+					SnippetTaskWrapper snipWrapTask = new SnippetTaskWrapper(sourcesSrt, frequencies, task.getKey4Search(), lang);
+					snipWrapTask.getCurrentTask().setPage(rnd.nextInt(50));
+					SnippetExtractor snippetExtractor = new SnippetExtractor(snipWrapTask, proxyFactory, new ArrayList<String>());
+					snippetExtractor.setAddLinkFromFolder(addLinkFromFolder);
 					
 					//TODO Add random image for generation
 					//create video
@@ -125,9 +134,14 @@ public class JimboPosterThread extends Thread{
 					}
 
 					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account);
-					String linkToVideo = nPoster.executePostNews(times);
-					appendStringToFile(linkToVideo, lnkLstFl4Res);
-					appendStringToFile(linkToVideo + ";" + task.getTitle(), lnkTtlLstFl4Res);
+					String url2Post = nPoster.executePostNews(times);
+					appendStringToFile(url2Post, lnkLstFl4Res);
+					appendStringToFile(url2Post + ";" + task.getTitle(), lnkTtlLstFl4Res);
+					
+					String domainFilePath = account.getSite().substring(7) + ".txt";
+					appendStringToFile(task.getKey(), new File("./domen", domainFilePath));
+					
+					//TODO Save posted link to archive folder
 
 					//Move file to processed folder
 					File destFile = new File(listProcessedFilePath + "/" + task.getInputFile().getName());

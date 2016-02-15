@@ -149,7 +149,15 @@ public class TaskFactory {
 		return taskQueue.isEmpty();
 	}
 
-	public synchronized void fillTaskQueue(File[] fileList, RowMapping rowMapping, File templateFile, File templateFileWOPic, List<String> randImgUrlList, List<String> rndTitles) throws Exception
+	public synchronized void fillTaskQueue(
+			File[] fileList, 
+			RowMapping rowMapping, 
+			File templateFile, 
+			File templateFileWOPic, 
+			List<String> randImgUrlList, 
+			List<String> rndTitles, 
+			List<String> jpgUrlList, 
+			List<String> buttonUrlList) throws Exception
 	{
 		RowMappingData data;
 		
@@ -163,7 +171,9 @@ public class TaskFactory {
 							randImgUrlList.get(rnd.nextInt(randImgUrlList.size())),
 							rndTitles.get(rnd.nextInt(rndTitles.size())),
 							templateFile,
-							templateFileWOPic
+							templateFileWOPic,
+							jpgUrlList.get(rnd.nextInt(jpgUrlList.size())),
+							buttonUrlList.get(rnd.nextInt(buttonUrlList.size()))
 					) 
 			);
 		}

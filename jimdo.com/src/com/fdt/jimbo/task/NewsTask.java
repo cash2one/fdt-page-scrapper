@@ -31,11 +31,14 @@ public class NewsTask
 	private File templateFile;
 	private File templateFileWOPic;
 	
-	public NewsTask(File inputFile, RowMappingData data, String rndImgUrl, String title, File templateFile, File templateFileWOPic) throws Exception 
+	public NewsTask(File inputFile, RowMappingData data, String rndImgUrl, String title, File templateFile, File templateFileWOPic, String jpgUrl, String buttonUrl) throws Exception 
 	{
 		super();
 		this.inputFile = inputFile;
 		this.data = data;
+		
+		data.setDataByName("JPG", jpgUrl);
+		data.setDataByName("BUTTON", buttonUrl);
 		
 		this.templateFile = templateFile;
 		this.templateFileWOPic = templateFileWOPic;
@@ -94,6 +97,10 @@ public class NewsTask
 	}
 	
 	public String getKey(){
+		return data.getDataByName(KEYWORD);
+	}
+	
+	public String getKey4Search(){
 		return data.getDataByName(KEYWORD_SEARCH);
 	}
 	
