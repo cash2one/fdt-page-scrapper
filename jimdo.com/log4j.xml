@@ -11,7 +11,7 @@
   	</appender>
 	
 	<root>
-		<level value="TRACE" />
+		<level value="INFO" />
 		<appender-ref ref="logfile" />
 	</root>
 </log4j:configuration>

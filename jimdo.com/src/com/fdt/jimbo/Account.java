@@ -10,18 +10,20 @@ public class Account {
 	private String login = "";
 	private String email = "";
 	private String pass = "";
+	private String secPass = "";
 	private String site = "";
 	private HashMap<String,String> cookie = new HashMap<String, String>();
 	private boolean logged = false;
 	
 	private AccountFactory accountFactory;
 
-	public Account(String email, String login, String pass, String site, AccountFactory accountFactory) {
+	public Account(String email, String login, String pass, String site, String setPass, AccountFactory accountFactory) {
 		super();
 		this.email = email;
 		this.login = login;
 		this.pass = pass;
 		this.site = site;
+		this.secPass = setPass;
 		this.accountFactory = accountFactory;
 	}
 
@@ -103,8 +105,9 @@ public class Account {
 	}
 
 	public String toString(){
-		return email + ";" + pass + ";" + login;
+		return String.format("%s;%s;%s;%s;%s", login, pass, site, email, secPass);
 	}
+	
 
 	public AccountFactory getAccountFactory() {
 		return accountFactory;

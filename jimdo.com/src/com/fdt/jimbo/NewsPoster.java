@@ -16,6 +16,7 @@ import java.net.HttpURLConnection;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -29,6 +30,7 @@ import java.util.TimeZone;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.log4j.Logger;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -49,11 +51,6 @@ public class NewsPoster {
 
 	private static final String LINE_FEED = "\r\n";
 
-	private static final Random rnd = new Random();;
-
-	//private String[] themes = new String[]{"auto","webcam","animals","creation","lifestyle","people","music","news","school","travel","sport","tech","shortfilms","fun"};
-	private String[] themes = new String[]{"shortfilms"};
-
 	private NewsTask task = null;
 	private Proxy proxy = null;
 	private Account account = null;
@@ -61,21 +58,23 @@ public class NewsPoster {
 	private Integer times[];
 
 	private static final String TIME_STAMP_FORMAT = "HH:mm:ss.SSS";
-	private static final String VIDEO_RECORD_FORMAT = "yyyy/MM/dd";
 
 	private SimpleDateFormat sdf = new SimpleDateFormat(TIME_STAMP_FORMAT);
-	private SimpleDateFormat vrdf = new SimpleDateFormat(VIDEO_RECORD_FORMAT);
+	
+	private AccountFactory accountFactory = null;
 
-	public NewsPoster(NewsTask task, Proxy proxy, Account account) {
+	public NewsPoster(NewsTask task, Proxy proxy, Account account, AccountFactory accountFactory) {
 		this.task = task;
 		this.proxy = proxy;
 		this.account = account;
+		this.accountFactory = accountFactory;
 	}
 
 	private String postNews() throws Exception{
 		//String lri = 	
 		HashMap<String,String> pageDetails = createNewPost();
-		executerequestToGetCookies("http://www400.jimdo.com/app/cms/poll/status/", "GET", null, null);
+		//removeAllDrafts(pageDetails);
+		executeRequestToGetCookies("http://www400.jimdo.com/app/cms/poll/status/", "GET", null, null);
 		pageDetails = createHtmlForm(pageDetails);
 		pageDetails = postHtmlForm(pageDetails);
 		pageDetails = postNews(pageDetails);
@@ -108,16 +107,36 @@ public class NewsPoster {
 		return postNews();
 	}
 
-	private String getTimeString(){
-		double milSecCnt = 0L;
-		milSecCnt = (((double)times[0]/times[1])) * 1000;
+	private void removeAllDrafts(HashMap<String,String> pageDetails) throws IOException, ParseException{
+		String jsonResp = executeRequestToGetCookies("http://www400.jimdo.com/app/siteadmin/blogposting/postinglist", "POST",  new IResultExtractor() 
+		{
+			private String responseStr;
 
-		String valueStr = String.format("%.0f", milSecCnt);
-		log.info("Preview time: " + sdf.format(new Date(Long.parseLong(valueStr)-0)));
+			public void init(String responseStr){
+				this.responseStr = responseStr;
+			}
 
-		return sdf.format(new Date(Long.parseLong(valueStr)-0));
+			@Override
+			public String getResult() {
+				return this.responseStr;
+			}
+		}, getPostListArgs(pageDetails));
+		
+		JSONObject jsonObj = new JSONObject(jsonResp);
+		
+		JSONArray array = jsonObj.getJSONObject("payload").getJSONArray("data");
+
+		String key = "";
+		int index = 0;
+		while(!array.isNull(index)) {
+			JSONObject post = array.getJSONObject(index++);
+			if(!post.getBoolean("published")){
+				executeRequestToGetCookies("http://www400.jimdo.com/app/flex/flex/delete/flexId/" + post.getString("removeFlexId"), "GET", null);
+			}
+		}
+		
 	}
-
+	
 	private HashMap<String,String> createNewPost() throws Exception
 	{
 		HashMap<String,String> pageDetails = new HashMap<String,String>();
@@ -150,6 +169,8 @@ public class NewsPoster {
 			
 			log.debug(responseStr.toString());
 			
+			log.debug(responseStr.toString());
+			
 			String fileStr = "newPost";
 			
 			int index = responseStr.indexOf(fileStr) + fileStr.length() + 12;
@@ -172,7 +193,7 @@ public class NewsPoster {
 			JSONObject jsonObj = new JSONObject(json);
 
 			pageDetails.put("cstok", jsonObj.getString("cstok"));
-			pageDetails.put("pageId", String.valueOf(jsonObj.getInt("pageId")));
+			pageDetails.put("pageId", String.valueOf(jsonObj.getLong("pageId")));
 			pageDetails.put("websiteId", jsonObj.getString("websiteId"));
 			pageDetails.put("ClickAndChange", jsonObj.getJSONObject("session").getString("ClickAndChange"));
 			pageDetails.put("Referer", conn.getURL().toString());
@@ -186,7 +207,7 @@ public class NewsPoster {
 			}
 			pageDetails.put("matrixId", matrixId);
 
-			//log.debug(responseStr.toString());
+			
 
 			conn.disconnect();
 		}
@@ -225,7 +246,7 @@ public class NewsPoster {
 			String cookies = account.getCookies(new String[]{"JDI","shd","ClickAndChange","safemode","_jimBlob","_gat_jimBlob"});
 			cookies = account.getCookies(new String[]{"ClickAndChange"});
 			conn.setRequestProperty("Cookie", cookies);
-			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 			//conn.setRequestProperty("Content-Length","174");
 			
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
@@ -242,6 +263,10 @@ public class NewsPoster {
 			os.close();
 
 			int respCode = conn.getResponseCode();
+			
+			if(respCode >= 400){
+				accountFactory.rejectAccount(account);
+			}
 			
 			StringBuilder responseStr = getResponseAsString(conn, respCode);
 
@@ -422,10 +447,10 @@ public class NewsPoster {
 	}
 
 	private String executeRequestToGetCookies(String postUrl, String requestMethod, IResultExtractor resultExtractor) throws IOException{
-		return executerequestToGetCookies( postUrl, requestMethod, resultExtractor, null);
+		return executeRequestToGetCookies( postUrl, requestMethod, resultExtractor, null);
 	}
 
-	private String executerequestToGetCookies(String postUrl, String requestMethod, IResultExtractor resultExtractor, String postParams) throws IOException{
+	private String executeRequestToGetCookies(String postUrl, String requestMethod, IResultExtractor resultExtractor, String postParams) throws IOException{
 		HttpURLConnection conn = null;
 		//post news
 		try{
@@ -446,8 +471,6 @@ public class NewsPoster {
 			conn.setRequestProperty("Accept", "*/*");
 			conn.setRequestProperty("Cookie", account.getCookies());
 			//conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
-			conn.setRequestProperty("Host", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL));
-			conn.setRequestProperty("Referer", Config.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + "/upload");
 
 			if(requestMethod.equalsIgnoreCase("POST") && postParams != null){
 				OutputStream os = conn.getOutputStream();
@@ -539,6 +562,15 @@ public class NewsPoster {
 			text[i] = characters.charAt(random.nextInt(characters.length()));
 		}
 		return new String(text);
+	}
+	
+	private String getPostListArgs(HashMap<String,String> pageDetails) {
+		StringBuilder params = new StringBuilder();
+		params.append("cstok=").append(pageDetails.get("cstok"));
+		params.append("websiteid=").append(pageDetails.get("websiteId"));
+		params.append("pageid=").append(pageDetails.get("pageId"));
+
+		return params.toString();
 	}
 
 }

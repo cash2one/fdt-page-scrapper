@@ -232,9 +232,9 @@ public class JimboTaskRunner
 				File templateFile = new File(templateFilePath);
 
 				//TODO Copy account list file
-				/*File accountFile = new File(accListFilePath);
+				File accountFile = new File(accListFilePath);
 				accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
-*/
+
 				Account account = null;
 				JimboPosterThread newThread = null;
 				NewsTask task = null;
@@ -291,9 +291,8 @@ public class JimboTaskRunner
 			}
 		}finally{
 			try{
-				//TODO Uncomment Save unused account if they was not used
 				if(accountFactory != null){
-					//saveUnusedAccounts(accountFactory.getAccounts());
+					saveUnusedAccounts(accountFactory.getAccounts());
 				}
 				deleteAllVideoFiles();
 			}catch(Throwable e){

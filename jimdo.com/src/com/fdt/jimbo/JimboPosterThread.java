@@ -43,9 +43,7 @@ public class JimboPosterThread extends Thread{
 	private File lnkTtlLstFl4Res;
 	private String listProcessedFilePath;
 	private String errorFilePath;
-	private boolean addLinkFromFolder = false;
-	
-	private ArrayList<String> linkList;
+	private boolean addLinkFromFolder = true;
 	
 	private String lang;
 	private String sourcesSrt;
@@ -120,7 +118,7 @@ public class JimboPosterThread extends Thread{
 					}else{
 						ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getSnipResult();
 						
-						if(snippets.size() == 0)
+						if(snippets == null || snippets.size() == 0)
 							throw new Exception("Could not extract snippets");
 	
 						//get random snippets
@@ -133,7 +131,7 @@ public class JimboPosterThread extends Thread{
 						task.setSnippets(snippetsStr.toString());
 					}
 
-					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account);
+					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account, accountFactory);
 					String url2Post = nPoster.executePostNews(times);
 					appendStringToFile(url2Post, lnkLstFl4Res);
 					appendStringToFile(url2Post + ";" + task.getTitle(), lnkTtlLstFl4Res);
@@ -171,7 +169,7 @@ public class JimboPosterThread extends Thread{
 							log.error(e1);
 						}
 					}
-					log.error("Error occured during process task: " + task.toString(), e);
+					log.error(String.format("Account: %s; Error occured during process task: %s", account.getLogin(), task.toString()), e);
 				}
 				if(!errorExist){
 					taskFactory.putTaskInSuccessQueue(task);

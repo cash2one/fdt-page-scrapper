@@ -18,7 +18,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.net.ssl.HttpsURLConnection;
 import javax.xml.xpath.XPathExpressionException;
 
 import org.apache.http.NameValuePair;
@@ -40,11 +39,7 @@ public class AccountFactory
 	//count of thread where accounts are used
 	private HashMap<String, Integer> accountUsedInThreadCount = new HashMap<String, Integer>();
 
-	public final static String MAIN_URL_LABEL = "main_url";
-	private final static String LOGIN_URL_LABEL = "login_url";
-
 	private final static String NEWS_PER_ACCOUNT_LABEL = "news_per_account";
-	private final static String NOT_REJECT_TIME_LABEL = "not_reject_time";
 
 	private static int NEWS_PER_ACCOUNT = 200;
 
@@ -52,13 +47,11 @@ public class AccountFactory
 
 	//contain rejected account's login - rejection time
 	private Map<String, Long> rejectedAccount = new HashMap<String, Long>();
-	private Long NOT_REJECT_TIME = 900000L;
 
 	public AccountFactory(ProxyFactory proxy){
 		super();
 		this.proxyFactory = proxy;
 		NEWS_PER_ACCOUNT = Integer.valueOf(Config.getInstance().getProperty(NEWS_PER_ACCOUNT_LABEL));
-		NOT_REJECT_TIME = Long.valueOf(Config.getInstance().getProperty(NOT_REJECT_TIME_LABEL, "900000"));
 	}
 
 	public void fillAccounts(String accListFilePath) throws Exception{
@@ -74,7 +67,7 @@ public class AccountFactory
 				//parse proxy adress
 				if(line.contains(";")){
 					String[] account = line.trim().split(";");
-					accounts.put(account[0], new Account(account[3],account[0],account[1], account[2], this));
+					accounts.put(account[0], new Account(account[3],account[0],account[1], account[2], account[4], this));
 					newsPostedCount.put(account[0],0);
 					accountUsedInThreadCount.put(account[0],0);
 				}
@@ -442,9 +435,10 @@ public class AccountFactory
 		}
 	}
 
-	public boolean isAccountRejected(Account account){
-		long curTime = System.currentTimeMillis();
-		if(!rejectedAccount.containsKey(account.getLogin()) || ((rejectedAccount.get(account.getLogin()) + NOT_REJECT_TIME) > curTime) ){
+	public boolean isAccountRejected(Account account)
+	{
+		if(!rejectedAccount.containsKey(account.getLogin()) )
+		{
 			return false;
 		}else{
 			return true;
