@@ -1,11 +1,9 @@
 package com.fdt.jimbo;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -182,11 +180,12 @@ public class JimboTaskRunner
 	public static void main(String[] args) {
 		try{
 			JimboTaskRunner taskRunner = new JimboTaskRunner("config.ini");
-			DOMConfigurator.configure("log4j.xml");
+			DOMConfigurator.configure("./log4j.xml");
 			taskRunner.runUploader();
 			System.out.print("Program execution finished");
 			System.exit(0);
 		}catch(Throwable e){
+			e.printStackTrace();
 			log.error("Error during main stream",e);
 			System.out.print("Program execution finished with errors");
 		}
@@ -297,6 +296,16 @@ public class JimboTaskRunner
 				deleteAllVideoFiles();
 			}catch(Throwable e){
 				log.error(e);
+			}
+			
+			//creation marker file
+			try {
+				FileWriter fw = new FileWriter("complete.txt", false);
+				fw.write("complete");
+				fw.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
 		}
 	}

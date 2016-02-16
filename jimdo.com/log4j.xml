@@ -3,13 +3,12 @@
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 	<appender name="logfile" class="org.apache.log4j.RollingFileAppender"> 
 		<param name="file" value="jimbo.com.log"/>
-		<param name="MaxFileSize" value="50MB"/>
+		<param name="MaxFileSize" value="10MB"/>
 		<param name="MaxBackupIndex" value="10"/>
 		<layout class="org.apache.log4j.PatternLayout"> 
 			<param name="ConversionPattern" value="%d-%5p(%F:%L)-%m%n"/> 
 		</layout> 
-  	</appender>
-	
+  	</appender>	
 	<root>
 		<level value="INFO" />
 		<appender-ref ref="logfile" />

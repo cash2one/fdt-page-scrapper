@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 
@@ -108,5 +109,9 @@ public class RowMappingData
 				log.warn("Error closing stream", e);
 			}
 		}
+	}
+	
+	public Set<String> getKeysList(){
+		return mappingData.keySet();
 	}
 }

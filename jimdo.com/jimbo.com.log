@@ -1001,3 +1001,23 @@ java.lang.Exception: Could not extract snippets
 2016-02-15 15:21:12,223- INFO(JimboTaskRunner.java:332)-Starting saving unused account...
 2016-02-15 15:21:12,224- INFO(JimboTaskRunner.java:339)-Unused accounts was saved successfully.
 2016-02-15 15:21:12,225-ERROR(JimboTaskRunner.java:299)-java.lang.NullPointerException
+2016-02-15 17:29:35,527- INFO(AccountFactory.java:202)-URL: http://a.jimdo.com/app/auth/signin/authenticate
+2016-02-15 17:34:50,959-ERROR(AccountFactory.java:77)-Reading PROPERTIES file: FileNotFoundException exception occured
+java.io.FileNotFoundException: acclist.txt (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.fdt.jimbo.AccountFactory.fillAccounts(AccountFactory.java:62)
+	at com.fdt.jimbo.JimboTaskRunner.runUploader(JimboTaskRunner.java:209)
+	at com.fdt.jimbo.JimboTaskRunner.main(JimboTaskRunner.java:184)
+2016-02-15 17:34:52,473- INFO(JimboTaskRunner.java:287)-Task factory is empty: false. Current working threads count is 0
+2016-02-15 17:34:52,474- INFO(JimboTaskRunner.java:288)-Error tasks: 0
+2016-02-15 17:34:52,476- INFO(JimboTaskRunner.java:330)-Starting saving unused account...
+2016-02-15 17:34:52,479- INFO(JimboTaskRunner.java:337)-Unused accounts was saved successfully.
+2016-02-15 17:34:52,481-ERROR(JimboTaskRunner.java:297)-java.lang.NullPointerException
+2016-02-15 17:39:21,510- INFO(JimboTaskRunner.java:287)-Task factory is empty: false. Current working threads count is 0
+2016-02-15 17:39:21,515- INFO(JimboTaskRunner.java:288)-Error tasks: 0
+2016-02-15 17:39:21,516- INFO(JimboTaskRunner.java:330)-Starting saving unused account...
+2016-02-15 17:39:21,516- INFO(JimboTaskRunner.java:337)-Unused accounts was saved successfully.
+2016-02-15 17:39:21,517-ERROR(JimboTaskRunner.java:297)-java.lang.NullPointerException
