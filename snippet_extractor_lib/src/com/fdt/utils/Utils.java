@@ -1,12 +1,15 @@
 package com.fdt.utils;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.util.ArrayList;
 import java.util.List;
@@ -69,5 +72,30 @@ public class Utils {
 		}
 		is.close();
 		return responseStr;
+	}
+	
+	public static void appendStringToFile(String str, File file) {
+		BufferedWriter bufferedWriter = null;
+		try {
+			//Construct the BufferedWriter object
+			bufferedWriter = new BufferedWriter(new OutputStreamWriter(
+					new FileOutputStream(file, true), "UTF8"));
+			bufferedWriter.append(str);
+			bufferedWriter.newLine();
+		} catch (FileNotFoundException ex) {
+			log.error("Error during saving string to file",ex);
+		} catch (IOException ex) {
+			log.error("Error during saving string to file",ex);
+		} finally {
+			//Close the BufferedWriter
+			try {
+				if (bufferedWriter != null) {
+					bufferedWriter.flush();
+					bufferedWriter.close();
+				}
+			} catch (IOException ex) {
+				log.error("Error during closing output stream",ex);
+			}
+		}
 	}
 }

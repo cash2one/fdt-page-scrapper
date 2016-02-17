@@ -126,7 +126,7 @@ public class SnippetExtractor {
 		this.addLinkFromFolder = addLinkFromFolder;
 	}
 
-	public synchronized void insertLinksToSnippets(SnippetTask snippetTask) {
+	public synchronized void insertLinksToSnippets(SnippetTaskWrapper snippetTask) {
 		//get snippets
 		String snippetContent = null;
 		int attempt = 0;
@@ -138,23 +138,36 @@ public class SnippetExtractor {
 			maxAttemptCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_ATTEMPT_COUNT_LABEL));
 		}
 		HashSet<Snippet> snippetResult = new HashSet<Snippet>();
-		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
+		ProxyConnector proxyConnector = null;
 		
 		do{
+			//set random page from 25 to 50
+			snippetTask.selectRandTask().setPage(25 + rnd.nextInt(26));
+			errExist = false;
+			
+			if(proxyConnector == null){
+				proxyConnector = proxyFactory.getRandomProxyConnector();
+				log.debug(String.format("Get proxy: %s", proxyConnector.toString()));
+			}
+			
 			try{
 				//TODO Get proxy connector
-				while(snippetResult.size() < MIN_SNIPPET_COUNT && snippetTask.getPage() > 1){
-					try {
+				while(snippetResult.size() < MIN_SNIPPET_COUNT && snippetTask.getCurrentTask().getPage() > 1)
+				{
+					try 
+					{
 						//≈сли не было ошибки - то уменьшаем количество страниц, 
-						if(!errExist){
-							snippetTask.setPage(reducePage(snippetTask.getPage()));
+						if(!errExist) {
+							snippetTask.getCurrentTask().setPage(reducePage(snippetTask.getCurrentTask().getPage(), 3));
 						}
 						//иначе не уменьшаем, и пробуем с другим прокси
-						else{
+						else {
 							errExist = false;
-							if(proxyConnector != null){
+							//change proxy to another
+							if(proxyConnector != null) {
 								proxyFactory.releaseProxy(proxyConnector);
 								proxyConnector = proxyFactory.getRandomProxyConnector();
+								log.debug(String.format("Get another proxy: %s", proxyConnector.toString()));
 							}
 						}
 
@@ -163,34 +176,30 @@ public class SnippetExtractor {
 					}
 					catch (Exception e) {
 						errExist = true;
-						log.error("Error occured during processing key: " + snippetTask.getKeyWords());
+						log.error("Error occured during processing key: " + snippetTask.getCurrentTask().getKeyWords(), e);
 					}
 				}
 				
-				if(snippetResult == null || snippetResult.size() == 0){
-					throw new Exception("Snippets size is 0. Will try to use another proxy server");
-				}
-				
-				if(addLinkFromFolder){
-					snippetContent = getSnippetsContentFromFolder(new ArrayList<Snippet>(snippetResult));
-				}else{
-					snippetContent = getSnippetsContent(new ArrayList<Snippet>(snippetResult));
-				}
-			}catch(Exception e){
-				log.warn("Error during getting snippets content",e);
 				attempt++;
-				//if any errors occured - try again
-				continue;
-			}finally{
+			}
+			finally
+			{
 				if(proxyConnector != null){
 					proxyFactory.releaseProxy(proxyConnector);
 					proxyConnector = null;
 				}
 			}
-			//exit if no errors occured
-			break;
-		}while((snippetContent == null || "".equals(snippetContent.trim())) && attempt < maxAttemptCount);
+		}
+		while(snippetResult.size() < MIN_SNIPPET_COUNT && attempt < maxAttemptCount);
 
+		
+		if(addLinkFromFolder)
+		{
+			snippetContent = getSnippetsContentFromFolder(new ArrayList<Snippet>(snippetResult));
+		}else{
+			snippetContent = getSnippetsContent(new ArrayList<Snippet>(snippetResult));
+		}
+		
 		task.getCurrentTask().setResult(snippetContent);
 	}
 	
@@ -198,6 +207,16 @@ public class SnippetExtractor {
 		if(currentPage/5 > 1){
 			log.info(String.format("Recude page from %d to %d",currentPage, currentPage/5 ));
 			return currentPage/5;
+		}else{
+			log.info(String.format("Recude page from %d to %d",currentPage, 1));
+			return 1;
+		}
+	}
+	
+	private int reducePage(int currentPage, int divider){
+		if(currentPage/divider > 1){
+			log.info(String.format("Recude page from %d to %d",currentPage, currentPage/divider ));
+			return currentPage/divider;
 		}else{
 			log.info(String.format("Recude page from %d to %d",currentPage, 1));
 			return 1;
@@ -217,7 +236,7 @@ public class SnippetExtractor {
 
 		snipCount = getSnipCount(snippets);
 
-		log.debug("Keywords: task.getKeyWords(). Snippet count: " + snipCount);
+		log.debug(String.format("Keywords: '%s' Snippet count: %d", task.getCurrentTask().getKeyWords(), snipCount));
 		StringBuilder snippetsContent = new StringBuilder();
 
 		//get links count
@@ -229,7 +248,8 @@ public class SnippetExtractor {
 		}
 		int indexShift = getRandomValue(0,snippets.size()-snipCount); 
 		
-
+		log.debug(String.format("Snippets.size() = (%d); linkList.size() = (%d), snipCount = (%d)", snippets.size(), linkList.size(), snipCount));
+		
 		for(int i = indexShift; i < (snipCount+indexShift); i++){
 			//add link to snipper
 			if(snippetLinked < linkCount){
@@ -314,6 +334,8 @@ public class SnippetExtractor {
 				snipCount = getSnipCount(snippets);
 			}*/
 		}
+		
+		log.debug(String.format("Snippets.size() = (%d); linkList.size() = (%d), snipCount = (%d)", snippets.size(), linkList.size(), snipCount));
 
 		StringBuilder snippetsContent = new StringBuilder();
 
@@ -334,7 +356,6 @@ public class SnippetExtractor {
 			}
 		}
 
-		log.debug(String.format("Snippets.size() = (%d); linkList.size() = (%d), snipCount = (%d)", snippets.size(), linkList.size(), snipCount));
 		int lnkIdx = 0;
 		for(int i = 0; i < snipCount; i++){
 			if( !rndIdxWOLinks.contains(i) ){
@@ -550,6 +571,7 @@ public class SnippetExtractor {
 	}
 
 	public Integer getRandomValue(Integer minValue, Integer maxValue){
+		rnd.nextInt();
 		return  minValue + rnd.nextInt(maxValue - minValue+1);
 	}
 
@@ -622,7 +644,7 @@ public class SnippetExtractor {
 		titles = null;
 		descs = null;
 
-		snippetTask.setSnipResult(snippets);
+		snippetTask.appendSnipResult(snippets);
 		return snippets;
 	}
 	
@@ -667,7 +689,7 @@ public class SnippetExtractor {
 		synchronized (this)
 		{
 			try {
-				insertLinksToSnippets(task.getCurrentTask());
+				insertLinksToSnippets(task);
 				return task;
 			}
 			catch (Exception e) {

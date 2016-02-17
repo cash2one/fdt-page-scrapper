@@ -55,12 +55,6 @@ public class NewsPoster {
 	private Proxy proxy = null;
 	private Account account = null;
 
-	private Integer times[];
-
-	private static final String TIME_STAMP_FORMAT = "HH:mm:ss.SSS";
-
-	private SimpleDateFormat sdf = new SimpleDateFormat(TIME_STAMP_FORMAT);
-	
 	private AccountFactory accountFactory = null;
 
 	public NewsPoster(NewsTask task, Proxy proxy, Account account, AccountFactory accountFactory) {
@@ -70,7 +64,7 @@ public class NewsPoster {
 		this.accountFactory = accountFactory;
 	}
 
-	private String postNews() throws Exception{
+	public String postNews() throws Exception{
 		//String lri = 	
 		HashMap<String,String> pageDetails = createNewPost();
 		//removeAllDrafts(pageDetails);
@@ -101,12 +95,6 @@ public class NewsPoster {
 		return postUrl;
 	}
 	
-	public String executePostNews(Integer[] times) throws Exception {
-		sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
-		this.times = times;
-		return postNews();
-	}
-
 	private void removeAllDrafts(HashMap<String,String> pageDetails) throws IOException, ParseException{
 		String jsonResp = executeRequestToGetCookies("http://www400.jimdo.com/app/siteadmin/blogposting/postinglist", "POST",  new IResultExtractor() 
 		{
@@ -126,7 +114,6 @@ public class NewsPoster {
 		
 		JSONArray array = jsonObj.getJSONObject("payload").getJSONArray("data");
 
-		String key = "";
 		int index = 0;
 		while(!array.isNull(index)) {
 			JSONObject post = array.getJSONObject(index++);
@@ -167,9 +154,7 @@ public class NewsPoster {
 		
 			StringBuilder responseStr = getResponseAsString(conn);
 			
-			log.debug(responseStr.toString());
-			
-			log.debug(responseStr.toString());
+			log.trace(responseStr.toString());
 			
 			String fileStr = "newPost";
 			
@@ -198,16 +183,15 @@ public class NewsPoster {
 			pageDetails.put("ClickAndChange", jsonObj.getJSONObject("session").getString("ClickAndChange"));
 			pageDetails.put("Referer", conn.getURL().toString());
 			
-			Iterator iterator = jsonObj.getJSONObject("matrixes").keys();
+			/*Iterator iterator = jsonObj.getJSONObject("matrixes").keys();
 			JSONObject obj = jsonObj.getJSONObject("matrixes");
 
 			String key = "";
 			while(iterator.hasNext()) {
 				key = (String)iterator.next();
-			}
-			pageDetails.put("matrixId", matrixId);
-
+			}*/
 			
+			pageDetails.put("matrixId", matrixId);
 
 			conn.disconnect();
 		}
@@ -274,7 +258,7 @@ public class NewsPoster {
 
 			pageDetails.put("moduleId", jsonObj.getJSONObject("payload").getString("id"));
 			
-			//log.debug(responseStr.toString());
+			//log.trace(responseStr.toString());
 
 			conn.disconnect();
 		}
@@ -496,7 +480,7 @@ public class NewsPoster {
 
 			StringBuilder responseStr = getResponseAsString(conn);
 
-			//log.debug(responseStr.toString());
+			//log.trace(responseStr.toString());
 
 			if(resultExtractor != null){
 				resultExtractor.init(responseStr.toString());

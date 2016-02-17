@@ -176,7 +176,12 @@ public class AccountFactory
 
 			String newLocation = cookies.get("Location") != null?cookies.get("Location").get(0):null;
 
-			while(newLocation != null && !"".equals(newLocation.trim())){
+			while(newLocation != null && !"".equals(newLocation.trim()))
+			{
+				if("/app/cms/notavailable".equals(newLocation))
+				{
+					throw new Exception("This website " + account.getSite() + " is not available right now."); 
+				}
 				newLocation = executerequestToGetCookies(newLocation, "GET", proxy, null, account);
 			}
 
@@ -328,28 +333,41 @@ public class AccountFactory
 
 	public synchronized Account getAccount(){
 		Account account = null;
+		List<String> notLogged = new ArrayList<String>();
 		for(String login : accountUsedInThreadCount.keySet()){
+			account = null;
 			if(!rejectedAccount.containsKey(login)){
 				int runningCount = accountUsedInThreadCount.get(login);
 				int postedCount = newsPostedCount.get(login);
 				if( runningCount < (NEWS_PER_ACCOUNT-postedCount)){
 					int currentCount = accountUsedInThreadCount.get(login);
 					accountUsedInThreadCount.put(login, ++currentCount);
-					log.trace("Used account size incremented: " + currentCount);
+					log.debug(String.format("Used account ' %s 'size incremented to %d",login, currentCount));
 					account = accounts.get(login);
 					if(account.isLogged() || loginAccount(account)){
 						account.setLogged(true);
-						return account;
+						break;
 					}else{
-						accounts.remove(account.getLogin());
-						newsPostedCount.remove(account.getLogin());
-						accountUsedInThreadCount.remove(account.getLogin());
+						notLogged.add(account.getLogin());
+						log.error(String.format("Account '%s' was added to remove list", login));
 						continue;
 					}
 				}
 			}
 		}
-		return null;
+		
+		//remove not logged account
+		for(String login : notLogged){
+			log.error(String.format("Account '%s' was not logged and will be removed from account list.", login));
+			accounts.remove(login);
+			newsPostedCount.remove(login);
+			accountUsedInThreadCount.remove(login);
+			log.warn(String.format("Account '%s' was removed from account list.", login));
+		}
+		
+		notLogged.clear();
+		
+		return account;
 	}
 
 	/**
@@ -364,7 +382,7 @@ public class AccountFactory
 		if(count == NEWS_PER_ACCOUNT){
 			accounts.remove(account.getLogin());
 		}
-		log.trace("Posted account news incremented: " + count);
+		log.debug("Posted account news incremented: " + count);
 		releaseAccount(account);
 	}
 

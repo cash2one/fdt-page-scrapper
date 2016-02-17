@@ -1,18 +1,13 @@
 package com.fdt.jimbo;
 
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
 
 import com.fdt.jimbo.task.NewsTask;
@@ -23,6 +18,7 @@ import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTaskWrapper;
 import com.fdt.utils.Constants;
+import com.fdt.utils.Utils;
 
 public class JimboPosterThread extends Thread{
 
@@ -104,43 +100,30 @@ public class JimboPosterThread extends Thread{
 				try {
 
 					SnippetTaskWrapper snipWrapTask = new SnippetTaskWrapper(sourcesSrt, frequencies, task.getKey4Search(), lang);
-					snipWrapTask.getCurrentTask().setPage(rnd.nextInt(50));
+					snipWrapTask.selectRandTask().setPage(rnd.nextInt(50));
 					SnippetExtractor snippetExtractor = new SnippetExtractor(snipWrapTask, proxyFactory, new ArrayList<String>());
 					snippetExtractor.setAddLinkFromFolder(addLinkFromFolder);
-					
-					//TODO Add random image for generation
-					//create video
-					Integer[] times = null;
 					
 					//TODO Add Snippet task chooser
 					if(MIN_SNIPPET_COUNT == 0 && MAX_SNIPPET_COUNT == 0){
 						task.setSnippets("");
 					}else{
-						ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getSnipResult();
+						String snippetsStr = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getResult();
 						
-						if(snippets == null || snippets.size() == 0)
+						if(snippetsStr == null || "".equals(snippetsStr.trim()))
 							throw new Exception("Could not extract snippets");
 	
-						//get random snippets
-						snippets = getRandSnippets(snippets, snippetExtractor);
-	
-						StringBuilder snippetsStr = new StringBuilder(); 
-						for(Snippet snippet : snippets){
-							snippetsStr.append(Constants.LINE_FEED).append(Constants.LINE_FEED).append(snippet.toString());
-						}
-						task.setSnippets(snippetsStr.toString());
+						task.setSnippets(snippetsStr);
 					}
 
 					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account, accountFactory);
-					String url2Post = nPoster.executePostNews(times);
-					appendStringToFile(url2Post, lnkLstFl4Res);
-					appendStringToFile(url2Post + ";" + task.getTitle(), lnkTtlLstFl4Res);
+					String url2Post = nPoster.postNews();
+					Utils.appendStringToFile(url2Post, lnkLstFl4Res);
+					Utils.appendStringToFile(url2Post + ";" + task.getTitle(), lnkTtlLstFl4Res);
 					
 					String domainFilePath = account.getSite().substring(7) + ".txt";
-					appendStringToFile(task.getKey(), new File("./domen", domainFilePath));
+					Utils.appendStringToFile(task.getKey(), new File("./domen", domainFilePath));
 					
-					//TODO Save posted link to archive folder
-
 					//Move file to processed folder
 					File destFile = new File(listProcessedFilePath + "/" + task.getInputFile().getName());
 					if(destFile.exists()){
@@ -183,17 +166,11 @@ public class JimboPosterThread extends Thread{
 		}
 	}
 
-	private String getFileNameWOExt(File file){
-		String fileName = FilenameUtils.getBaseName(file.getName());
-		//fileName.replaceAll("."+FilenameUtils.getBaseName(filename), replacement)
-		return fileName;
-	}
-
 	public NewsTask getTask(){
 		return task;
 	}
 
-	private ArrayList<Snippet> getRandSnippets(List<Snippet> snippets, SnippetExtractor snpExtr){
+	/*private ArrayList<Snippet> getRandSnippets(List<Snippet> snippets, SnippetExtractor snpExtr){
 		ArrayList<Snippet> rndSnipList = new ArrayList<Snippet>();
 
 		//calculate snippets count
@@ -210,7 +187,7 @@ public class JimboPosterThread extends Thread{
 			}
 		}
 
-		log.debug("Keywords: task.getKeyWords(). Snippet count: " + snipCount);
+		log.debug(String.format("Keywords: %s. Snippets size: %d, Generated snippet count: %d", task.getKey(), snippets.size(), snipCount));
 
 		int indexShift = snpExtr.getRandomValue(0,snippets.size()-snipCount); 
 
@@ -219,43 +196,5 @@ public class JimboPosterThread extends Thread{
 		}
 
 		return rndSnipList;
-	}
-
-	private void appendStringToFile(String str, File file) {
-		BufferedWriter bufferedWriter = null;
-		try {
-			//Construct the BufferedWriter object
-			bufferedWriter = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(file, true), "UTF8"));
-			bufferedWriter.append(str);
-			bufferedWriter.newLine();
-		} catch (FileNotFoundException ex) {
-			log.error("Error during saving string to file",ex);
-		} catch (IOException ex) {
-			log.error("Error during saving string to file",ex);
-		} finally {
-			//Close the BufferedWriter
-			try {
-				if (bufferedWriter != null) {
-					bufferedWriter.flush();
-					bufferedWriter.close();
-				}
-			} catch (IOException ex) {
-				log.error("Error during closing output stream",ex);
-			}
-		}
-	}
-	
-	private boolean deleteFile(File file){
-		if(file != null && file.exists()){
-			try {
-				log.debug("Delete file: " + file.getName());
-				return file.delete();
-			} catch (Exception e) {
-				log.error(e);
-			}
-		}
-		
-		return false;
-	}
+	}*/
 }

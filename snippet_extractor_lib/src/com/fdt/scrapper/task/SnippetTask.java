@@ -42,7 +42,7 @@ public abstract class SnippetTask
 
 	private String result = null;
 	
-	private ArrayList<Snippet> snipResult;
+	private ArrayList<Snippet> snipResult = new ArrayList<Snippet>();
 
 	public SnippetTask(String keyWords)
 	{
@@ -249,7 +249,7 @@ public abstract class SnippetTask
 		return snipResult;
 	}
 
-	public void setSnipResult(ArrayList<Snippet> snipResult) {
-		this.snipResult = snipResult;
+	public void appendSnipResult(ArrayList<Snippet> snipResult) {
+		this.snipResult.addAll(snipResult);
 	}
 }

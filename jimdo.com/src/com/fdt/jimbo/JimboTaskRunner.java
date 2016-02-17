@@ -69,8 +69,6 @@ public class JimboTaskRunner
 	
 	private RowMapping rowMapping = null;
 	
-	private final Random rnd = new Random();
-
 	private Properties config = new Properties();
 	
 	private static final String LANG_LABEL = "lang";
@@ -198,8 +196,6 @@ public class JimboTaskRunner
 			synchronized(this){
 				File rootInputFiles = new File(listInputFilePath);
 				
-				RowMapping mapping = new RowMapping(new File(inputMapppingFilePath));
-
 				ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
 				ProxyFactory.PROXY_TYPE = proxyType;
 				ProxyFactory proxyFactory = ProxyFactory.getInstance();
@@ -227,10 +223,7 @@ public class JimboTaskRunner
 				File resLinkList = new File(outputFilePath);
 				File resLinkTitleList = new File(outputTitleFilePath);
 
-				//Change template file
-				File templateFile = new File(templateFilePath);
-
-				//TODO Copy account list file
+				//Copy account list file
 				File accountFile = new File(accListFilePath);
 				accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
 
@@ -293,9 +286,8 @@ public class JimboTaskRunner
 				if(accountFactory != null){
 					saveUnusedAccounts(accountFactory.getAccounts());
 				}
-				deleteAllVideoFiles();
 			}catch(Throwable e){
-				log.error(e);
+				log.error("Some error occured", e);
 			}
 			
 			//creation marker file
@@ -308,30 +300,6 @@ public class JimboTaskRunner
 				e.printStackTrace();
 			}
 		}
-	}
-
-	private void deleteAllVideoFiles(){
-		File outputFolder = new File("output_video");
-		//while(outputFolder.listFiles().length > 0){
-			for(File file: outputFolder.listFiles()){
-				try {
-					log.info("Delete video file: " + file.getName());
-					/*File newFile = new File(file.getPath() + "_delete_me");
-					FileUtils.moveFile(file, newFile);*/
-					FileUtils.forceDelete(file);
-					//Thread.sleep(5000L);
-					/*if(!deleted){
-						log.warn(string.format("file %s was not deleted", newfile.getname()));
-						while(!deleted){
-							deleted = newfile.delete();
-						}
-					}*/
-				}
-				catch (Exception e) {
-					log.error("Error occudred during file removing", e);
-				}
-			}
-		//}
 	}
 
 	private void saveUnusedAccounts(HashMap<String, Account> accounts){

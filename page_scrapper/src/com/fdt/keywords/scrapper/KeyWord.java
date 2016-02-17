@@ -5,7 +5,8 @@ import java.util.Arrays;
 
 public class KeyWord 
 {
-	private static final String SPLIT_STR = "[\\s\\:\\-\\'\"\\%\\$\\-]+";
+	//private static final String SPLIT_STR = "[\\s\\:\\-\\'\"\\%\\$\\-]+";
+	private static final String SPLIT_STR = "[\\s\\:\\-\"\\%\\$\\-]+";
 	
 	private final String keyWord;
 	
