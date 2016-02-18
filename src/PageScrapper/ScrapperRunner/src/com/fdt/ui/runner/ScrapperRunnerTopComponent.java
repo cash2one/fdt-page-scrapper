@@ -108,6 +108,11 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
                 jTextField1MouseClicked(evt);
             }
         });
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         jTextField2.setEditable(false);
         jTextField2.setText(org.openide.util.NbBundle.getMessage(ScrapperRunnerTopComponent.class, "ScrapperRunnerTopComponent.jTextField2.text")); // NOI18N
@@ -401,6 +406,10 @@ public final class ScrapperRunnerTopComponent extends TopComponent {
             jCheckBox2.setEnabled(false);
         }
     }//GEN-LAST:event_jTextField7KeyReleased
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

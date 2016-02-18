@@ -20,9 +20,9 @@ public class KeyWordTest {
 	
 	@Before
 	public void init(){
-		str1 = "Payday online Loans connected";
-		str2 = "online loans connected payday";
-		str3 = "online Loans connected Payday Other";
+		str1 = "Payday online Loans, connected site.com other";
+		str2 = "online loans, connected site.com. .other payday";
+		str3 = "online Loans. connected Payday Other";
 		//  create mock
 		key1 = new KeyWord(str1);
 		key2 = new KeyWord(str2);
@@ -49,7 +49,6 @@ public class KeyWordTest {
 		keyWordSet.add(key3);
 		
 		assertEquals(2, keyWordSet.size());
-		
 	}
 	
 }

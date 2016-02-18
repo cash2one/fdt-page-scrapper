@@ -37,16 +37,20 @@ public class KeyWordContainer {
 		
 		for(KeyWord keyWord : keyWords)
 		{
-			strBuf.append(keyWord.getKeyWord()).append(Constants.LINE_FEED);
+			strBuf.append(keyWord.getKeyWordCleaned()).append(Constants.LINE_FEED);
 			buffered++;
 			
 			if(buffered > 1000){
+				strBuf.setLength(strBuf.length() - Constants.LINE_FEED.length());
 				Utils.appendStringToFile(strBuf.toString(), file);
+				
 				strBuf.setLength(0);
+				buffered = 0;
 			}
 		}
 		
 		if(strBuf.length() > 0){
+			strBuf.setLength(strBuf.length() - Constants.LINE_FEED.length());
 			Utils.appendStringToFile(strBuf.toString(), file);
 		}
 	}

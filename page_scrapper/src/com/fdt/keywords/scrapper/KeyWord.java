@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class KeyWord 
 {
 	//private static final String SPLIT_STR = "[\\s\\:\\-\\'\"\\%\\$\\-]+";
-	private static final String SPLIT_STR = "[\\s\\:\\-\"\\%\\$\\-]+";
+	private static final String SPLIT_STR = "([\\s\\:\\-\"\\%\\$\\-,]+)";
 	
 	private final String keyWord;
 	
@@ -16,11 +16,32 @@ public class KeyWord
 	{
 		this.keyWord = keyWord.toLowerCase();
 		String[] list = keyWord.toLowerCase().split(SPLIT_STR);
-		wordsList.addAll(Arrays.asList(list));
+		
+		
+		for(int i = 0; i < list.length; i++){
+			list[i] = list[i].replaceAll("\\.$", "").replaceAll("^\\.", "");
+			if(!"".equals(list[i].trim())){
+				wordsList.add(list[i]);
+			}
+		}
 	}
 
 	public String getKeyWord() {
 		return keyWord;
+	}
+	
+	public String getKeyWordCleaned() {
+		StringBuffer outputKey = new StringBuffer();
+		
+		for(String word : wordsList){
+			outputKey.append(word).append(" ");
+		}
+		
+		if(outputKey.length() > 0){
+			outputKey.setLength(outputKey.length() - 1);
+		}
+		
+		return outputKey.toString();
 	}
 
 	public ArrayList<String> getWordsList() {

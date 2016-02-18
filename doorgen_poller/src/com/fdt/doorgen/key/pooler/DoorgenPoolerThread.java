@@ -74,7 +74,7 @@ public class DoorgenPoolerThread implements Callable<String> {
 
 			//check task for reprocessing
 			if(snippetResult != null && snippetResult.size() > 0){
-				snippetTask.getCurrentTask().setSnipResult(new ArrayList<Snippet>(snippetResult));
+				snippetTask.getCurrentTask().appendSnipResult(new ArrayList<Snippet>(snippetResult));
 				taskFactory.putTaskInSuccessQueue(snippetTask);
 
 			}else{
