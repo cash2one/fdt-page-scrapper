@@ -187,6 +187,7 @@ public final class KeyWordFilterTopComponent extends TopComponent {
         File inFile = new File(keyWordFilePath);
         File outFile = new File(keyWordFilteredFilePath);
         
+        try{
         if(!appendToFile){
             if(outFile.exists() && outFile.isFile()){
                 outFile.delete();
@@ -201,6 +202,10 @@ public final class KeyWordFilterTopComponent extends TopComponent {
         JOptionPane.showMessageDialog(null, "Файл успешно сохранён", "Информация", JOptionPane.INFORMATION_MESSAGE);
         
         jButton1.setEnabled(true);
+        }catch(Throwable e){
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, e.getMessage(), "ОШИБКА", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

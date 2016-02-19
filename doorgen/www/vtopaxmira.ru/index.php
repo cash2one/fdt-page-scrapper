@@ -422,8 +422,9 @@ function getRegionPageRandomTitle($region_id){
 }
 
 //заводим массивы ключей и городов
-$CITY_NEWS_PER_PAGE=10;
+$CITY_NEWS_PER_PAGE=50;
 $city_news_page_number=1;
+$max_allowed_page_number = 10;
 $current_page="MAIN_PAGE";
 
 //определяем имя домена и сабдомена и записываем номер ключа и номер города
@@ -484,6 +485,15 @@ if( $url_city && is_numeric($url_city) && $url_region){
 	#echo "MAIN_PAGE";
 }
 
+#echo "city_news_page_number" . $city_news_page_number;
+#echo "max_allowed_page_number" . $max_allowed_page_number;
+if($current_page == "REGION_PAGE_PAGING" && $city_news_page_number > $max_allowed_page_number){
+	echo $url_region;
+	header("Location: http://".$_SERVER["HTTP_HOST"]."/".$url_region."/", true, 302);
+	exit;
+}
+
+
 $template=preg_replace("/\[RANDKEY\]/e", 'trim($keys[rand(0,$max_k)])', $template);
 $template=preg_replace("/\[RANDCITY\]/e", 'trim($city[rand(0,$max_c)])', $template);
 $template=preg_replace("/\[URL\]/",$_SERVER["HTTP_HOST"], $template);
@@ -504,7 +514,7 @@ mysqli_query($con,"set collation_connection='utf8_general_ci'");
 
 //get page info
 
-if($current_page == "REGION_PAGE"){
+if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 	$page_info = getRegionPageInfo($con, $url_region);
 }
 elseif($current_page == "MAIN_PAGE") {
@@ -682,6 +692,10 @@ if($current_page == "REGION_PAGE" || $current_page == "REGION_PAGE_PAGING"){
 		$template=preg_replace("/\[CITY_NEWS_1\]/", $news_block, $template);
 
 		$pager = new Pager;
+		//$template=preg_replace("/\[PAGER\]/", $pager->getPageNavigation("/".str_replace(" ","-",$url_region)."/",$city_news_page_number, $max_page_number), $template);
+		if($max_page_number > $max_allowed_page_number){
+			$max_page_number = $max_allowed_page_number;
+		}
 		$template=preg_replace("/\[PAGER\]/", $pager->getPageNavigation("/".str_replace(" ","-",$url_region)."/",$city_news_page_number, $max_page_number), $template);
 		
 		/* explicit close recommended */
@@ -724,7 +738,7 @@ if($current_page == "CITY_PAGE"){
 		$city_cases = $caseSelector->getCaseTitle($con,1,$caseSelector->getCityValueByNewsKey($con,$url_city));
 
 		//fill [BREAD_CRUMBS]
-		$bread_crumbs = "<a href =\"/\">Главная</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['city_name']." ".$key_info['key_value']."</a>";
+		$bread_crumbs = "<a href =\"/\">Главная</a>&nbsp;>&nbsp;<a href =\"/".$url_region."/\">".$region_name."</a>&nbsp;>&nbsp;<a href =\"#\">".$key_info['city_name']." ".$key_info['key_value']." ".rusdate($key_info['posted_time'],'j %MONTH% Y')."</a>";
 	}else{
 		#PAGE NOT FOUND REDIRECT
 		header('HTTP/1.1 404 Not Found');

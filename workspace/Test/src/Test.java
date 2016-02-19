@@ -192,6 +192,23 @@ public class Test {
 		System.out.println(str.replaceAll("[^0-9]*", ""));
 		System.out.println(str.split(",")[1].trim());
 		System.out.println(toUpperFirstLetters("yeElow park"));
+		
+		for(int i = 1; i < 500; i += 5 ){
+			for(int j = 1; j < 125; j += 5){
+				System.out.print(i+","+j+";");
+			}
+		}
+		
+		String keyWord = "Payday Loans's'   \"online: -connected   ";
+		String[] list = keyWord.split("[\\s\\:\\-\\'\"\\%\\$\\-]+");
+		list = keyWord.split("[\\s]+");
+		keyWord = "Payday 'Loans' online: -connected";
+		
+		String forReplace = "Payday Our services are designed to help you find a reputable payday lender to work with. PayDayLoansforUSA.org has a large number "
+				+ "of lenders in our network, and we are confident that we can assist you in obtaining the best PAyday loan to meet your needs.";
+		
+		System.out.println(forReplace);
+		System.out.println(forReplace.replaceAll("(?i)(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|(^))" + "payday" + "(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|($))", "$1__REPLACED__$4"));
 	}
 	
 	private static String toUpperFirstLetters(String input){

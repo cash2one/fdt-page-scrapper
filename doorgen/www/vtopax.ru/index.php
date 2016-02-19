@@ -9,6 +9,7 @@ require_once "utils/ya_news_extractor.php";
 require_once "utils/config.php";
 require_once "utils/proxy_config.php";
 
+
 $page_title="";
 $page_meta_keywords="";
 $page_meta_description="";
@@ -286,6 +287,7 @@ $key_page_number=1;
 $current_page_type="MAIN_PAGE";
 
 $url = $_SERVER["REQUEST_URI"];
+#var_dump($_SERVER);
 #echo "REQUEST_URI: ".$url.'<br>';
 
 $page_key = "";
@@ -307,6 +309,7 @@ $site_main_domain = $_SERVER["HTTP_HOST"];
 //обрабатываем запрос генерации урлов
 $url_for_request = "";
 $key_page_number = "";
+$max_allowed_page_number = 10;
 
 if( $page_key && !is_numeric($page_key))
 {
@@ -328,6 +331,11 @@ else{
 	$current_page_type = "MAIN_PAGE_PAGING";
 	#echo "key_page_number: ".$key_page_number."<br/>";
 	$template = file_get_contents("tmpl_main_new.html");
+}
+
+if($current_page_type == "MAIN_PAGE_PAGING" && $key_page_number > $max_allowed_page_number){
+	header("Location: http://".$_SERVER["HTTP_HOST"], true, 302);
+	exit;
 }
 
 #echo "url_for_cache: ".$url_for_cache."<br/>";
@@ -444,6 +452,10 @@ if($current_page_type == "MAIN_PAGE_PAGING"){
 		#echo "news_block: ".$news_block."<br>";
 
 		$pager = new Pager;
+		//$template=preg_replace("/\[PAGER\]/", $pager->getPageNavigation("/",$key_page_number, $max_page_number), $template);
+		if($max_page_number > $max_allowed_page_number){
+			$max_page_number = $max_allowed_page_number;
+		}
 		$template=preg_replace("/\[PAGER\]/", $pager->getPageNavigation("/",$key_page_number, $max_page_number), $template);
 		
 		/* explicit close recommended */

@@ -12,6 +12,8 @@ import com.fdt.utils.Utils;
 import java.awt.CardLayout;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
@@ -51,8 +53,8 @@ public final class KeyWordCounterTopComponent extends TopComponent {
     
     private static final Logger log = Logger.getLogger(KeyWordCounterTopComponent.class);
     
-    HashMap<String, String> encodeDict = new HashMap<String, String>();
-    HashMap<String, String> decodeDict = new HashMap<String, String>();
+    private String[] wordSorted;
+    private HashMap<String, String> encodeDict = new HashMap<String, String>();
 
     public KeyWordCounterTopComponent() {
         initComponents();
@@ -410,8 +412,16 @@ public final class KeyWordCounterTopComponent extends TopComponent {
                 int idx = 1;
                 StringBuffer decoded = new StringBuffer("_");
                 char[] array = string.toCharArray();
-                for(char oneChar : array){
-                    decoded.append(oneChar).append(idx++);
+                
+                for(char oneChar : array)
+                {
+                    if(idx%2 == 0){
+                        decoded.append(oneChar).append(idx);
+                    }else{
+                        decoded.append(oneChar);
+                    }
+                    
+                    idx++;        
                 }
                 
                 decoded.append("_");
@@ -476,7 +486,6 @@ public final class KeyWordCounterTopComponent extends TopComponent {
         DefaultTableModel tm = (DefaultTableModel) jTable2.getModel();
         
         encodeDict.clear();
-        decodeDict.clear();
         
         boolean useDecode;
         String word;
@@ -488,19 +497,29 @@ public final class KeyWordCounterTopComponent extends TopComponent {
                 word = (String)tm.getValueAt(i, 1);
                 code = (String)tm.getValueAt(i, 3);
                 encodeDict.put(word, code);
-                decodeDict.put(code, word);
-                text = text.replaceAll("(?i)" + word, code);
             }
         }
         
+        wordSorted = encodeDict.keySet().toArray(new String[encodeDict.size()]);
+        Arrays.sort(wordSorted, new Comparator(){
+            @Override
+            public int compare(Object o1, Object o2) {
+                return ((String)o2).length() - ((String)o1).length();
+            }
+        });
+        
+        for(String key4Encode : wordSorted){
+            text = text.replaceAll("(?i)(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|(^))" + key4Encode + "(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|($))", "$1" + encodeDict.get(key4Encode) + "$4");
+        }
+
         jTextArea4.setText(text);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         String text = jTextArea4.getText();
 
-        for(String key : decodeDict.keySet()){
-            text = text.replaceAll("(?i)" + key, decodeDict.get(key));
+         for(String key4Decode : wordSorted){
+            text = text.replaceAll("(?i)" + encodeDict.get(key4Decode), key4Decode);
         }
         
         jTextArea3.setText(text);

@@ -54,10 +54,6 @@
                 <binary-origin>release/modules/ext/proxy_factory.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
-                <runtime-relative-path>ext/multi_snippet_generator.jar</runtime-relative-path>
-                <binary-origin>release/modules/ext/multi_snippet_generator.jar</binary-origin>
-            </class-path-extension>
-            <class-path-extension>
                 <runtime-relative-path>ext/log4j-1.2.15.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/log4j-1.2.15.jar</binary-origin>
             </class-path-extension>
