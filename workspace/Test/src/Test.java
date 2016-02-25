@@ -1,18 +1,15 @@
 
 import java.awt.image.BufferedImage;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.Random;
-import java.util.SimpleTimeZone;
 import java.util.TimeZone;
 import java.util.concurrent.Callable;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class Test {
@@ -209,6 +206,21 @@ public class Test {
 		
 		System.out.println(forReplace);
 		System.out.println(forReplace.replaceAll("(?i)(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|(^))" + "payday" + "(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|($))", "$1__REPLACED__$4"));
+		
+		
+		/*String str4Replace = "same day payday {advance} {is|is usually|is definitely|is certainly|is normally|is going to be} a fast and {convenient|easy|practical|effortless|comfortable|simple} solution for your {short|brief} term cash {needs|requirements|demands|wants|desires|necessities}";
+		Pattern p =  Pattern.compile("\\{(.+?)\\}");
+        Matcher m = p.matcher(str4Replace);  
+        
+        int idx = 1;
+       	while(m.find()){
+       		System.out.println(m.groupCount());
+       		int rndGrpCnt = m.groupCount();
+       		System.out.println(m.group(1));
+        }*/
+       	
+        Random rnd = new Random();
+        rnd.nextInt();
 	}
 	
 	private static String toUpperFirstLetters(String input){

@@ -221,10 +221,13 @@ public class UsCitiesParser
 		@Override
 		public String toString() {
 			String cityNameCorrected = toUpperFirstLetters(cityName);
+			String[] coordinate = geoPosition.split(";");
 			return String.format("INSERT city " + 
-								"(region_id, city_name, city_name_latin, geo_placename, geo_position, geo_region, ICBM, zip_code, country) " + 
-								" SELECT region_id,'%s','%s','%s','%s','%s','%s','%s','%s' FROM region WHERE abbr = '%s';",
-								cityNameCorrected, cityNameCorrected.replaceAll("\\s+", "-"), geoPlacename, geoPosition, geoRegion,ICBM, geoPlacename.replaceAll("[^0-9]*", "").trim(), geoPlacename.split(",")[1].trim(), regionLocal);
+								"(region_id, city_name, city_name_latin, geo_placename, geo_position, geo_region, ICBM, zip_code, country, lat, lng) " + 
+								" SELECT region_id,'%s','%s','%s','%s','%s','%s','%s','%s',%s,%s FROM region WHERE abbr = '%s' ON DUPLICATE KEY UPDATE lat = %s, lng = %s;",
+								cityNameCorrected, cityNameCorrected.replaceAll("\\s+", "-"), geoPlacename, geoPosition, 
+								geoRegion,ICBM, geoPlacename.replaceAll("[^0-9]*", "").trim(), geoPlacename.split(",")[1].trim(), 
+								coordinate[0],coordinate[1], regionLocal, coordinate[0],coordinate[1]);
 		}
 	}
 	

@@ -1,8 +1,9 @@
 User-agent: *
-Disallow: /application
-Disallow: /news_content
-Disallow: /txt
-Disallow: /utils
-Disallow: /webstat
+Disallow: /application/
+Disallow: /news_content/
+Disallow: /txt/
+Disallow: /utils/
+Disallow: /webstat/
+Disallow: /app/
 Disallow: *.html
-Host: vtopax.ru
+Host: adaus.in

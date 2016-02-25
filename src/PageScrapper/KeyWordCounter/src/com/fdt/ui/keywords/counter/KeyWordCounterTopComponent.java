@@ -15,6 +15,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -410,21 +413,16 @@ public final class KeyWordCounterTopComponent extends TopComponent {
             public String encode(String string) 
             {
                 int idx = 1;
-                StringBuffer decoded = new StringBuffer("_");
+                StringBuffer decoded = new StringBuffer("<");
                 char[] array = string.toCharArray();
                 
                 for(char oneChar : array)
                 {
-                    if(idx%2 == 0){
-                        decoded.append(oneChar).append(idx);
-                    }else{
-                        decoded.append(oneChar);
-                    }
-                    
+                    decoded.append(oneChar).append(idx);
                     idx++;        
                 }
                 
-                decoded.append("_");
+                decoded.append(">");
                 
                 return decoded.toString();
             }
@@ -518,8 +516,22 @@ public final class KeyWordCounterTopComponent extends TopComponent {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         String text = jTextArea4.getText();
 
-         for(String key4Decode : wordSorted){
+        for(String key4Decode : wordSorted){
             text = text.replaceAll("(?i)" + encodeDict.get(key4Decode), key4Decode);
+        }
+        
+        Pattern p =  Pattern.compile("(\\{(.+?)\\})");
+        Matcher m = p.matcher(text);  
+        
+        Random rnd = new Random();
+        rnd.nextInt();
+        
+       	while(m.find())
+        {
+            String synFullStr = m.group(1).replaceAll("\\{", "\\\\{").replaceAll("\\}", "\\\\}").replaceAll("\\|", "\\\\|");
+            String synEscStr = m.group(2);
+            String[] cases = synEscStr.split("\\|");
+            text = text.replaceAll(synFullStr, cases[1+rnd.nextInt(cases.length-1)]);
         }
         
         jTextArea3.setText(text);
