@@ -70,6 +70,8 @@ public class NewsTask{
 		this.videoTitle = key;
 		this.templateFile = templateFile;
 		this.shortUrlList = shortUrlLis;
+		
+		this.inputFile = pregenFile;
 		this.videoFile = pregenFile;
 		this.preGenFileLoaded = true;
 		//TODO Read and parse file

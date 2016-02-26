@@ -2,12 +2,18 @@ package com.fdt.dailymotion.task;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import org.apache.log4j.Logger;
+
+import com.fdt.utils.Utils;
 
 public class TaskFactory {
 
@@ -152,43 +158,43 @@ public class TaskFactory {
 	}
 	
 	public synchronized void fillTaskQueue(File file, File templateFile, String shortUrlsList, File pregenFile) throws Exception{
-		for(String line : readFile(file)){
+		for(String line : loadFileAsStrList(file)){
 			taskQueue.add(new NewsTask(line, templateFile, shortUrlsList, pregenFile));
 		}
 	}
 	
-	private ArrayList<String> readFile(File file) throws IOException{
-
-		FileReader fr = null;
+	private List<String> loadFileAsStrList(File cfgFile){
+		ArrayList<String> linkList = new ArrayList<String>();
 		BufferedReader br = null;
-		ArrayList<String> fileTitleList = new ArrayList<String>();
-
 		try {
-			fr = new FileReader(file);
-			br = new BufferedReader(fr);
+			br = new BufferedReader(new InputStreamReader( new FileInputStream(cfgFile), "UTF8" ));
 
 			String line = br.readLine();
-			while(line != null){
-				fileTitleList.add(line.trim());
+
+			while(line != null)
+			{
+
+				if( !"".equals(line.trim()))
+				{
+					linkList.add(line.trim());
+				}
+
 				line = br.readLine();
 			}
-
-			//fileTitleArray = fileTitleList.toArray(new String[fileTitleList.size()]);
+		} catch (FileNotFoundException e) {
+			log.error("Reading file: FileNotFoundException exception occured",e);
+		} catch (IOException e) {
+			log.error("Reading file: IOException exception occured", e);
 		} finally {
 			try {
 				if(br != null)
 					br.close();
 			} catch (Throwable e) {
-			}
-			try {
-				if(fr != null)
-					fr.close();
-			} catch (Throwable e) {
+				log.warn("Error while initializtion", e);
 			}
 		}
-
-		return fileTitleList;
-	} 
+		return linkList;
+	}
 
 	public synchronized ArrayList<NewsTask> getTaskQueue() {
 		return taskQueue;

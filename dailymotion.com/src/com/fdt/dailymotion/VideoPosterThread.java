@@ -9,6 +9,7 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Random;
 
 import javax.media.MediaLocator;
 
@@ -27,6 +28,7 @@ import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.BingSnippetTask;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.Snippet;
+import com.fdt.scrapper.task.SnippetTaskWrapper;
 
 public class VideoPosterThread extends Thread{
 
@@ -58,8 +60,12 @@ public class VideoPosterThread extends Thread{
 	private String errorFilePath;
 
 	private Boolean loadPreGenFile = false;
-	
+
 	private int intrvlCount;
+
+	private String lang;
+	private String sourcesSrt;
+	private int[] frequencies;
 
 	public VideoPosterThread(
 			NewsTask task, 
@@ -73,7 +79,10 @@ public class VideoPosterThread extends Thread{
 			String listProcessedFilePath,
 			String errorFilePath,
 			Boolean loadPreGenFile,
-			int intrvlCount) {
+			int intrvlCount,
+			String lang,
+			String sourcesSrt,
+			int[] frequencies) {
 		this.task = task;
 		this.account = account;
 		this.taskFactory = taskFactory;
@@ -87,6 +96,10 @@ public class VideoPosterThread extends Thread{
 
 		this.loadPreGenFile = loadPreGenFile;
 		this.intrvlCount = intrvlCount;
+
+		this.lang = lang;
+		this.sourcesSrt = sourcesSrt; 
+		this.frequencies = frequencies;
 
 		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL) != null)
 			MIN_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
@@ -115,7 +128,6 @@ public class VideoPosterThread extends Thread{
 						task.parseFile();
 					}
 
-					SnippetExtractor snippetExtractor = new SnippetExtractor(proxyFactory);
 					File previewImg = new File("./images/preview_" + getFileNameWOExt(task.getInputFile()) + ".jpg");
 					if(!previewImg.exists()){
 						previewImg = new File("./images/preview_" + getFileNameWOExt(task.getInputFile()) + ".png");
@@ -133,23 +145,44 @@ public class VideoPosterThread extends Thread{
 						Thread.sleep(10000L);
 					}
 
+					Random rnd = new Random();
+					rnd.nextInt(100);
+
+					SnippetTaskWrapper snipWrapTask = new SnippetTaskWrapper(sourcesSrt, frequencies, task.getKey(), lang);
+					snipWrapTask.selectRandTask().setPage(rnd.nextInt(50));
+					SnippetExtractor snippetExtractor = new SnippetExtractor(snipWrapTask, proxyFactory, new ArrayList<String>());
+					snippetExtractor.setAddLinkFromFolder(false);
+
 					//TODO Add Snippet task chooser
 					if(MIN_SNIPPET_COUNT == 0 && MAX_SNIPPET_COUNT == 0){
+						task.setSnippets("");
+					}else{
+						String snippetsStr = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getResult();
+
+						if(snippetsStr == null || "".equals(snippetsStr.trim()))
+							throw new Exception("Could not extract snippets");
+
+						task.setSnippets(snippetsStr);
+					}
+
+
+					//TODO Add Snippet task chooser
+					/*if(MIN_SNIPPET_COUNT == 0 && MAX_SNIPPET_COUNT == 0){
 						task.setSnippets("");
 					}else{
 						ArrayList<Snippet> snippets = snippetExtractor.extractSnippetsFromPageContent(new BingSnippetTask(task.getKey()));
 						if(snippets.size() == 0)
 							throw new Exception("Could not extract snippets");
-	
+
 						//get random snippets
 						snippets = getRandSnippets(snippets, snippetExtractor);
-	
+
 						StringBuilder snippetsStr = new StringBuilder(); 
 						for(Snippet snippet : snippets){
 							snippetsStr.append(LINE_FEED).append(LINE_FEED).append(snippet.toString());
 						}
 						task.setSnippets(snippetsStr.toString());
-					}
+					}*/
 
 					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account, loadPreGenFile);
 					String linkToVideo = nPoster.executePostNews(times);
@@ -157,11 +190,13 @@ public class VideoPosterThread extends Thread{
 					appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
 
 					//Move file to processed folder
-					File destFile = new File(listProcessedFilePath + "/" + task.getInputFile().getName());
-					if(destFile.exists()){
-						destFile.delete();
+					if(!loadPreGenFile){
+						File destFile = new File(listProcessedFilePath + "/" + task.getInputFile().getName());
+						if(destFile.exists()){
+							destFile.delete();
+						}
+						FileUtils.moveFile(task.getInputFile(), destFile);
 					}
-					FileUtils.moveFile(task.getInputFile(), destFile);
 
 				} 
 				catch (Throwable e) {
@@ -186,7 +221,9 @@ public class VideoPosterThread extends Thread{
 					}
 					log.error("Error occured during process task: " + task.toString(), e);
 				}finally{
-					deleteAllTempFiles(task);
+					if(!loadPreGenFile){
+						deleteAllTempFiles(task);
+					}
 				}
 				if(!errorExist){
 					taskFactory.putTaskInSuccessQueue(task);
@@ -213,7 +250,7 @@ public class VideoPosterThread extends Thread{
 	private Integer[] createVideo(NewsTask task, boolean addAudioToFile, File previewImg, int minDur, int maxDur, int intrvlCount) throws Exception{
 		//TODO Calculate bitrate via file creation
 		Integer frameRate = calculateBitRateViaFileCreation(task, addAudioToFile, previewImg);
-		
+
 		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFiles(), previewImg, addAudioToFile, new File("08.wav"), minDur, maxDur, frameRate, task.isUsePreview(), intrvlCount);
 		/*long bitRate = (8*task.getVideoFile().length()/maxDur);
 		while(bitRate < VideoCreator.successBitrate){
@@ -222,7 +259,7 @@ public class VideoPosterThread extends Thread{
 		}*/
 		return times;
 	}
-	
+
 	private Integer calculateBitRateViaFileCreation(NewsTask task, boolean addAudioToFile, File previewImg) throws IOException{
 		File testFile = new File(task.getVideoFile().getPath() + "_checker.mov");
 		Integer[] times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFiles(), previewImg, addAudioToFile, new File("08.wav"), 59, 60, task.isUsePreview());
@@ -233,11 +270,11 @@ public class VideoPosterThread extends Thread{
 			bitRate = (8*testFile.length()/60);
 			log.info(String.format("Calculated bitrate/framerate for file %s is %d/%d", testFile.getName(),bitRate, times[1]));
 		}
-		
+
 		testFile.delete();
-		
+
 		log.info(String.format("Calculated framerate for file %s is %d", task.getVideoFile().getName(),times[1]));
-		
+
 		return times[1];
 	}
 
@@ -299,15 +336,15 @@ public class VideoPosterThread extends Thread{
 		if(task != null ){
 			//delete video file
 			deleteFile(task.getVideoFile());
-			
+
 			//delete image file
 			if(task.isGetImageFromLink()){
 				for(File file : task.getImageFiles())
-				deleteFile(file);
+					deleteFile(file);
 			}
 		}
 	}
-	
+
 	private boolean deleteFile(File file){
 		if(file != null && file.exists()){
 			try {
@@ -317,7 +354,7 @@ public class VideoPosterThread extends Thread{
 				log.error(e);
 			}
 		}
-		
+
 		return false;
 	}
 }

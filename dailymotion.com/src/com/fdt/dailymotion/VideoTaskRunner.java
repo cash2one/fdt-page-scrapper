@@ -73,7 +73,15 @@ public class VideoTaskRunner {
 	private final Random rnd = new Random();
 
 	private Properties config = new Properties();
+	
+	private String lang = null;
+	private String source = null;
+	private int[] frequencies = null;
 
+	private static final String LANG_LABEL = "lang";
+	private static final String SOURCE_LABEL = "source";
+	private static final String FREQUENCY_LABEL = "frequency";	
+	
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
 	private final static String PROXY_PASS_LABEL = "proxy_pass";
 	private final static String PROXY_LIST_FILE_PATH_LABEL = "proxy_list_file_path";
@@ -148,7 +156,7 @@ public class VideoTaskRunner {
 		
 		String titleFileValue = Constants.getInstance().getProperty(TITLE_FILE_LABEL);
 		if(titleFileValue != null && !"".equals(titleFileValue.trim())){
-			titleFile = new File(pregenFileValue);
+			titleFile = new File(titleFileValue);
 		}
 		
 		String isGetImageFromLinkValue = Constants.getInstance().getProperty(IS_GET_IMAGE_FROM_LINK);
@@ -170,6 +178,20 @@ public class VideoTaskRunner {
 		String isUsePreviewValue = Constants.getInstance().getProperty(IS_USE_PREVIEW_GENERATING);
 		if(isUsePreviewValue != null && !"".equals(isUsePreviewValue.trim())){
 			isUsePreview = Boolean.valueOf(isUsePreviewValue);
+		}
+		
+		this.source = ConfigManager.getInstance().getProperty(SOURCE_LABEL);
+		this.lang = ConfigManager.getInstance().getProperty(LANG_LABEL);
+
+		String freqStr = ConfigManager.getInstance().getProperty(FREQUENCY_LABEL);
+		if(freqStr != null && !"".equals(freqStr.trim())){
+			String[] freqArray = freqStr.split(":");
+			this.frequencies = new int[freqArray.length];
+			for(int i = 0; i < freqArray.length; i++){
+				this.frequencies[i] = Integer.parseInt(freqArray[i]);
+			}
+		}else{
+			this.frequencies = new int[]{1};	
 		}
 
 		this.taskFactory = TaskFactory.getInstance();
@@ -260,7 +282,10 @@ public class VideoTaskRunner {
 									this.listProcessedFilePath, 
 									this.errorFilePath,
 									loadPreGenFile,
-									cntOfPicUsing
+									cntOfPicUsing,
+									lang,
+									source,
+									frequencies
 									);
 							newThread.start();
 							account = null;

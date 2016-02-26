@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.fdt.dailymotion;
 
 import java.io.BufferedReader;
@@ -725,7 +721,7 @@ public class NewsPoster {
 
 		writer.append("--" + boundary).append(LINE_FEED);
 		writer.append("Content-Disposition: form-data; name=\"save\"").append(LINE_FEED).append(LINE_FEED);
-		writer.append("Ñîõðàíèòü").append(LINE_FEED);
+		writer.append("Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ").append(LINE_FEED);
 
 		writer.append("--" + boundary + "--").append(LINE_FEED).append(LINE_FEED);;
 		/*writer.append("Content-Disposition: form-data; name=\"Upload\"").append(LINE_FEED).append(LINE_FEED);
@@ -951,6 +947,68 @@ public class NewsPoster {
 		return "http://www.dailymotion.com/" + params.toString();
 	}
 
+	/*private String getEditVideoPostParamsUrl(String videoId) throws Exception {
+		StringBuilder params = new StringBuilder();
+
+		String description = task.getDescription();
+		if(URLEncoder.encode(description,"UTF-8").length() > 3000){
+			description = URLEncoder.encode(description,"UTF-8").substring(0,3000);
+		}
+
+		String title = task.getVideoTitle() + " " + getRndStr();
+		if(URLEncoder.encode(title,"UTF-8").length() > 255){
+			title = URLEncoder.encode(title,"UTF-8").substring(0,255);
+		}
+
+		params.append("")
+		.append("form_name=").append("dm_pageitem_uploadnewform_").append(videoId).append("&")
+		.append("_csrf=").append(account.getCookie("_csrf/form")).append("&")
+		.append("_fid=").append("").append("&")
+		.append("video_title=").append(URLEncoder.encode(title,"UTF-8")).append("&")
+		.append("user_category=").append(themes[rnd.nextInt(themes.length)]).append("&")
+		.append("game_select=").append("").append("&")
+		.append("game_select=").append("").append("&")
+		.append("artist=").append("").append("&")
+		.append("title=").append("").append("&")
+		.append("album=").append("").append("&")
+		.append("upc=").append("").append("&")
+		.append("isrc=").append("").append("&")
+		.append("iswc=").append("").append("&")
+		.append("label=").append("").append("&")
+		.append("artist_id=").append("").append("&")
+		.append("track_id=").append("").append("&")
+		.append("album_id=").append("").append("&")
+		.append("itunes_id=").append("").append("&")
+		.append("genre=").append("").append("&")
+		.append("language=").append("en").append("&")
+		.append("tags_hidden=").append(URLEncoder.encode(task.getVideoTitle(),"UTF-8")).append("&")
+		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[").append(URLEncoder.encode(task.getTags(10, 250),"UTF-8")).append("]}").append("&")
+		.append("tags=").append("").append("&")
+		.append("description=").append( URLEncoder.encode(description,"UTF-8")).append("&")
+		.append("privacy=").append("0").append("&")
+		.append("allow_comments=").append("1").append("&")
+		//.append("allow_in_group=").append("1").append("&")
+		.append("recordedOn=").append(vrdf.format(new Date(System.currentTimeMillis()-60*60*24*1000))).append("&")
+		//.append("coming_next=").append("").append("&")
+		//.append("videoId=").append(task.getVideoid()).append("&")
+		//.append("videoUpdateTitle=").append(task.getVideoid()).append("&")
+		//.append("extensionVideo=").append("").append("&")
+		//.append("uploadType=").append("").append("&")
+		//.append("saveStatus=").append("fail").append("&")
+		//.append("from_request=").append("/video/edit/x2a5w2y_%25D0%25B1%25D0%25B5%25D0%25B7-%25D0%25BD%25D0%25B0%25D0%25B7%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D1%258F")
+		.append("tvod_price=").append("0.49").append("&")
+		.append("window_duration=").append("48").append("&")
+		.append("paywall_start=").append("10").append("&")
+		.append("from_publish=").append("1").append("&")
+		.append("from_request=").append("/upload").append("&")
+		.append("_csrf_l=").append(account.getCookie("_csrf/link"));
+
+		log.trace("Params for edit video: " + params.toString());
+
+		return params.toString();
+	}*/
+	
+	//for casino
 	private String getEditVideoPostParamsUrl(String videoId) throws Exception {
 		StringBuilder params = new StringBuilder();
 
@@ -968,7 +1026,7 @@ public class NewsPoster {
 		.append("form_name=").append("dm_pageitem_uploadnewform_").append(videoId).append("&")
 		.append("_csrf=").append(account.getCookie("_csrf/form")).append("&")
 		.append("_fid=").append("").append("&")
-		.append("video_title=").append(title).append("&")
+		.append("video_title=").append(URLEncoder.encode(title,"UTF-8")).append("&")
 		.append("user_category=").append(themes[rnd.nextInt(themes.length)]).append("&")
 		.append("game_select=").append("").append("&")
 		.append("game_select=").append("").append("&")
@@ -984,7 +1042,7 @@ public class NewsPoster {
 		.append("album_id=").append("").append("&")
 		.append("itunes_id=").append("").append("&")
 		.append("genre=").append("").append("&")
-		.append("language=").append("en").append("&")
+		.append("language=").append("ru").append("&")
 		.append("tags_hidden=").append(URLEncoder.encode(task.getVideoTitle(),"UTF-8")).append("&")
 		.append("strongtags_hidden=").append("{\"strong_tags\":{},\"daily_tags\":[").append(URLEncoder.encode(task.getTags(10, 250),"UTF-8")).append("]}").append("&")
 		.append("tags=").append("").append("&")

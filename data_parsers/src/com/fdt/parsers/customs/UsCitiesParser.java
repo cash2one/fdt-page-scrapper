@@ -218,6 +218,7 @@ public class UsCitiesParser
 		public List<City> getNeigborCity() {
 			return neigborCity;
 		}
+		
 		@Override
 		public String toString() {
 			String cityNameCorrected = toUpperFirstLetters(cityName);

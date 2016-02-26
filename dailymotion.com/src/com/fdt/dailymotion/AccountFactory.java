@@ -11,6 +11,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
+import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -104,75 +105,88 @@ public class AccountFactory
 		//getting cookie for each account
 		HttpURLConnection conn = null;
 		ProxyConnector proxy = null;
-		
-		try {
-			proxy = proxyFactory.getRandomProxyConnector();
+		boolean isTimeout = false;
 
-			executerequestToGetCookies(Constants.getInstance().getProperty(MAIN_URL_LABEL) + "/ru", "GET", proxy, null, account);
-			executerequestToGetCookies( Constants.getInstance().getProperty(MAIN_URL_LABEL) + "/pageitem/authenticationContainer?request=/login?&from_request=%2Fru&_csrf_l=" + account.getCookie("_csrf/link"), "GET", proxy, null, account);
+		try{
+			do{
+				isTimeout = false;
+				try {
+					proxy = proxyFactory.getRandomProxyConnector();
 
-			String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL);
-			URL url = new URL(postUrl);
-			HttpURLConnection.setFollowRedirects(false);
-			conn = (HttpURLConnection) url.openConnection(proxy.getConnect(ProxyFactory.PROXY_TYPE));
-			conn.setReadTimeout(60000);
-			conn.setConnectTimeout(60000);
-			conn.setRequestMethod("POST");
-			conn.setDoInput(true);
-			conn.setDoOutput(true);
+					executerequestToGetCookies(Constants.getInstance().getProperty(MAIN_URL_LABEL) + "/ru", "GET", proxy, null, account);
+					executerequestToGetCookies( Constants.getInstance().getProperty(MAIN_URL_LABEL) + "/pageitem/authenticationContainer?request=/login?&from_request=%2Fru&_csrf_l=" + account.getCookie("_csrf/link"), "GET", proxy, null, account);
 
-			conn.addRequestProperty("Referer","http://www.dailymotion.com/ru");
-			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"); 
-			//conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
-			conn.setRequestProperty("Accept", "*/*");
-			conn.setRequestProperty("X-Requested-With",	"XMLHttpRequest");
-			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+					String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL);
+					URL url = new URL(postUrl);
+					HttpURLConnection.setFollowRedirects(false);
+					conn = (HttpURLConnection) url.openConnection(proxy.getConnect(ProxyFactory.PROXY_TYPE));
+					conn.setReadTimeout(60000);
+					conn.setConnectTimeout(60000);
+					conn.setRequestMethod("POST");
+					conn.setDoInput(true);
+					conn.setDoOutput(true);
 
-			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-			nameValuePairs.add(new BasicNameValuePair("form_name", "dm_pageitem_authenticationform"));
-			nameValuePairs.add(new BasicNameValuePair("username", account.getEmail()));
-			nameValuePairs.add(new BasicNameValuePair("password", account.getPass()));
-			nameValuePairs.add(new BasicNameValuePair("_csrf", account.getCookie("_csrf/form")));
-			nameValuePairs.add(new BasicNameValuePair("_fid", ""));
-			nameValuePairs.add(new BasicNameValuePair("authChoice", "login"));
-			nameValuePairs.add(new BasicNameValuePair("from_request", "/RedBull"));
+					conn.addRequestProperty("Referer","http://www.dailymotion.com/ru");
+					conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"); 
+					//conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+					conn.setRequestProperty("Accept", "*/*");
+					conn.setRequestProperty("X-Requested-With",	"XMLHttpRequest");
+					conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
 
-			OutputStream os = conn.getOutputStream();
-			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-			writer.write(getQuery(nameValuePairs));
-			writer.flush();
-			writer.close();
-			os.close();
+					List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+					nameValuePairs.add(new BasicNameValuePair("form_name", "dm_pageitem_authenticationform"));
+					nameValuePairs.add(new BasicNameValuePair("username", account.getEmail()));
+					nameValuePairs.add(new BasicNameValuePair("password", account.getPass()));
+					nameValuePairs.add(new BasicNameValuePair("_csrf", account.getCookie("_csrf/form")));
+					nameValuePairs.add(new BasicNameValuePair("_fid", ""));
+					nameValuePairs.add(new BasicNameValuePair("authChoice", "login"));
+					nameValuePairs.add(new BasicNameValuePair("from_request", "/RedBull"));
+
+					OutputStream os = conn.getOutputStream();
+					BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+					writer.write(getQuery(nameValuePairs));
+					writer.flush();
+					writer.close();
+					os.close();
 
 
-			// Execute HTTP Post Request
-			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
-			if(cookies.get("Set-Cookie") == null || (cookies.get("Set-Cookie") != null && cookies.get("Set-Cookie").toString().contains("notexists"))){
-				log.error("Can't getting cookies for account.Account doesn't exist: \""+ account.getLogin() + "\" or banned, or error occured during login. Please check email and password.");
-				return false;
-			}
+					// Execute HTTP Post Request
+					Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();
+					if(cookies.get("Set-Cookie") == null || (cookies.get("Set-Cookie") != null && cookies.get("Set-Cookie").toString().contains("notexists"))){
+						log.error("Can't getting cookies for account.Account doesn't exist: \""+ account.getLogin() + "\" or banned, or error occured during login. Please check email and password.");
+						return false;
+					}
 
-			for(String cookieOne: cookies.get("Set-Cookie"))
-			{
-				String cookiesValues[] = cookieOne.split(";");
-				for(String cookiesArrayItem : cookiesValues){
-					String singleCookei[] = cookiesArrayItem.split("=");
-					account.addCookie(singleCookei[0].trim(), singleCookei[1].trim());
+					for(String cookieOne: cookies.get("Set-Cookie"))
+					{
+						String cookiesValues[] = cookieOne.split(";");
+						for(String cookiesArrayItem : cookiesValues){
+							String singleCookei[] = cookiesArrayItem.split("=");
+							account.addCookie(singleCookei[0].trim(), singleCookei[1].trim());
+						}
+					}
+
+					return true;
+				} catch(SocketTimeoutException e){
+					log.error("Error during login/getting cookies for account",e);
+					isTimeout = true;
+				} finally{
+					if(conn!=null){
+						conn.disconnect();
+					}
+					if(proxy != null){
+						proxyFactory.releaseProxy(proxy);
+					}
 				}
-			}
+			}while(isTimeout);
 			
-			return true;
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			log.error("Error during login/getting cookies for account",e);
 			return false;
-		}finally{
-			if(conn!=null){
-				conn.disconnect();
-			}
-			if(proxy != null){
-				proxyFactory.releaseProxy(proxy);
-			}
 		}
+		
+		return false;
 	}
 
 	private void executerequestToGetCookies(String postUrl, String requestMethod, ProxyConnector proxy, String postParams, Account account) throws IOException, XPathExpressionException{
@@ -226,30 +240,47 @@ public class AccountFactory
 		conn.disconnect();
 	}
 
-	public synchronized Account getAccount(){
+	public synchronized Account getAccount()
+	{
 		Account account = null;
-		for(String login : accountUsedInThreadCount.keySet()){
+
+		List<String> notLogged = new ArrayList<String>();
+
+		for(String login : accountUsedInThreadCount.keySet())
+		{
+			account = null;
 			if(!rejectedAccount.containsKey(login)){
 				int runningCount = accountUsedInThreadCount.get(login);
 				int postedCount = newsPostedCount.get(login);
 				if( runningCount < (NEWS_PER_ACCOUNT-postedCount)){
 					int currentCount = accountUsedInThreadCount.get(login);
 					accountUsedInThreadCount.put(login, ++currentCount);
-					log.trace("Used account size incremented: " + currentCount);
+					log.trace(String.format("Used account ' %s 'size incremented to %d",login, currentCount));
 					account = accounts.get(login);
 					if(account.isLogged() || loginAccount(account)){
 						account.setLogged(true);
-						return account;
+						break;
 					}else{
-						accounts.remove(account.getLogin());
-						newsPostedCount.remove(account.getLogin());
-						accountUsedInThreadCount.remove(account.getLogin());
+						notLogged.add(account.getLogin());
+						log.error(String.format("Account '%s' was added to remove list", login));
 						continue;
 					}
 				}
 			}
 		}
-		return null;
+
+		//remove not logged account
+		for(String login : notLogged){
+			log.error(String.format("Account '%s' was not logged and will be removed from account list.", login));
+			accounts.remove(login);
+			newsPostedCount.remove(login);
+			accountUsedInThreadCount.remove(login);
+			log.warn(String.format("Account '%s' was removed from account list.", login));
+		}
+
+		notLogged.clear();
+
+		return account;
 	}
 
 	/**
