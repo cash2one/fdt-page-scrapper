@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>[TITLE]</title>
+        <meta name="keywords" content="[TITLE]" />
+        <meta name="description" content="[DESCRIPTION]" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<link rel="shortcut icon" href="/images/number.png">
+		
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/grid_12.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+        <script src="/js/jquery-1.9.1.js"></script>
+        <script src="/js/jquery.easing.1.3.js"></script>
+        <script src="/js/tms-0.4.1.js"></script>
+        <script src="/js/cufon-yui.js"></script>
+        <script src="/js/cufon-replace.js"></script>
+        <script src="/js/Kozuka_L_300.font.js"></script>
+        <script src="/js/Kozuka_B_700.font.js"></script>
+        <script src="/js/Helvetica_Light-Normal_400.font.js"></script>
+		
+		<link href="/css/dimm.css" rel="stylesheet"> 
+		<link href="/css/bootstrap.css" rel="stylesheet"> 
+		<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="/images/css" rel="stylesheet" type="text/css">
+		
+        <script>
+            $(document).ready(function(){				   	
+            	$('.slider')._TMS({
+            		show:0,
+            		pauseOnHover:true,
+            		prevBu:'.prev',
+            		nextBu:'.next',
+            		playBu:false,
+            		duration:10000,
+            		preset:'zoomer',
+            		pagination:true,
+            		pagNums:false,
+            		slideshow:7000,
+            		numStatus:false,
+            		banners:'fade',
+            		waitBannerAnimation:false,
+            		progressBar:false
+            	})		
+            });
+        </script>
+        <style>
+            @charset "utf-8";
+            /* CSS Document */
+            * {margin: 0; padding: 0;}
+            /* Site Structure */
+            #header {height: 101px; margin-bottom: 50px;}
+            .logo {float: left;}
+			#content {float: left; width: 670px; border: 0px solid red}
+
+			.post {clear: both; height: auto; margin-bottom: 45px; border: 0px solid blue}
+
+			#sidebar_right {float: right; width: 270px; border: 0px solid red;}
+            #container {width: 960px; margin: auto}
+            #navcontainer {height: 55px; padding-top: 20px; 55px; padding-bottom: 20px; text-align: left}
+            .logo {float: left;}
+            #navlist li
+            {
+            display: inline;
+            list-style-type: none;
+            padding-right: 20px;
+            }
+            #navlist li a
+            {
+            color: #15282e;
+            text-decoration: none;
+            }
+            #navlist li a:hover
+            {
+            color: #fff;
+            text-decoration: none;
+            }
+            #header_search {float: right; margin-top: 18px; width: 350px;}
+            #search {
+            border: none;
+            height: 21px;
+            padding: 10px;
+            width: 221px;
+            float: left;
+            color: #526a71;
+            font-size: 18px;
+            }
+            #rss {
+            position: absolute;
+            top: 14px;
+            right: 12px;
+            }
+            a {color: #ef6f53; text-decoration: underline;}
+            #sidebar_right h3 {
+            margin: 0 0 10px;
+            background: #d1d5db;
+            padding: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #2f4248;
+            }
+            .sidebar_news {
+            }
+            .sidebar_news dl {
+            padding: 5px;
+            color: #465b61
+            }
+            .sidebar_news dt {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+            font-weight: bold;
+            }
+            .sidebar_news dd{
+            margin-bottom: 5px;
+            padding-bottom: 10px;
+            }
+			#submit {
+				height: 39px;
+				width: 99px;
+				text-indent: -9999px;
+				border: none;
+				cursor: pointer;
+				float: right
+			}
+
+			.image_post {border: 10px solid white; float: left; margin-right: 10px;}
+
+			.sidebar_img_left {float: left; padding: 0px; border: 4px solid #f7f9fb; margin-bottom: 4px;}
+
+			.sidebar_img_right {float: right; padding: 0px; border: 4px solid #f7f9fb; margin-bottom: 4px;}
+        </style>
+    </head>
+    <body>
+        <!--==============================header=================================-->
+        <div id="container">
+            <div id="navcontainer">
+                <ul id="navlist">
+                    [HEADER_KEYS]
+                </ul>
+            </div>
+			<div id="header">
+                <div id="header_search">
+                    <table width="450">
+                        <tr>
+                            <td align="left">
+                                <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+								<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="button" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,friendfeed,moikrug,gplus" ></div> 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="pathline">
+                [BREAD_CRUMBS]<br/><br/>
+            </div>
+            <div id="content">
+                <div class="post">
+                    <h1>Области, Регионы и округи России</h1><br/><br/><br/>
+                    <div>
+                        <p>[CITY_NEWS_1]</p>
+                    </div>
+					<br/><br/><br/>
+					<div class="pager" style="text-align: left;">
+						[PAGER]
+					</div>
+					<br/><br/><br/>
+                </div>
+                [LAST_NEWS]
+            </div>
+            <script>
+                Cufon.now();
+            </script>  
+			<footer>
+                <div style="float:left; padding:3px 0px 0 0px;">
+					Дизайн — <a href="http://www.artlebedev.ru">Студия Артемия&nbsp;Лебедева</a> © Copyright 2013 <small><a href="http://[URL]">Оформить кредит | [URL]</a></small>
+                </div>
+            </footer>
+			<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t11.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+        </div>
+    </body>
+</html>
+

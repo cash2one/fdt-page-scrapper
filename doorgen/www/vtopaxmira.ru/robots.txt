@@ -1,8 +1,10 @@
 User-agent: *
 Crawl-delay: 5
-Disallow: /application
-Disallow: /news_content
-Disallow: /txt
-Disallow: /utils
-Disallow: /webstat
-Host: ziopui.ru
+Disallow: /application/
+Disallow: /news_content/
+Disallow: /txt/
+Disallow: /utils/
+Disallow: /webstat/
+Disallow: /app/
+Disallow: *.html
+Host: vtopaxmira.ru

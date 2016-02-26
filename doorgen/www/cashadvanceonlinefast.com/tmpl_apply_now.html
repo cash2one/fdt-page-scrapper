@@ -5,8 +5,37 @@
 <br><br>
 <div id="_lg_form_"></div>
 <script language="javascript">
-window.lmpost = {};
-window.lmpost.options = {campaignid: '227458', subid:'', testresult: '', domain: 'https://www.paydaylendersearch.com/forms/paydayv3/', form: '../2page_form_label_v2', leadtypeid: '9'};
-document.write('<script id="leadsb2cformsrc" async="async" type="text/javascript" src="' + lmpost.options.domain + 'Scripts/forms.core.js"><\/script>');
+function loadScr(url, id, onload) {
+        var script = document.createElement('script'),
+            stime = new Date();
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('src', url);
+        script.setAttribute('async', 'async');
+
+        if (id != undefined)
+            script.setAttribute('id', id);
+        if (onload != undefined) {
+            script.onreadystatechange = function () {
+                var i;
+                if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                    script.onreadystatechange = script.onload = script.onerror = null;
+                    script.setAttribute('elapsed', new Date() - stime);
+                    onload();
+                }
+            };
+            script.onload = script.onerror = function () {
+                script.onreadystatechange = script.onload = script.onerror = null;
+                script.setAttribute('elapsed', new Date() - stime);
+                onload();
+            };
+        }
+
+
+        document.getElementById('_lg_form_').appendChild(script);
+    }
+
+(function () {
+    loadScr('/app/applicationInit.js');
+})();
 </script>
 </div>
