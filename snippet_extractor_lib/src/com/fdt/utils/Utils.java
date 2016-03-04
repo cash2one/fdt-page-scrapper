@@ -24,6 +24,17 @@ public class Utils {
 	{
 		return loadFileAsStrList(new File(cfgFilePath));
 	}
+	
+	public static String getFirstSmblUpper(String input)
+	{
+		StringBuffer output = new StringBuffer();
+		if(input != null && input.length() > 1){
+			output = new StringBuffer(input.substring(1).toLowerCase());
+			output.insert(0, input.substring(0, 1).toUpperCase());
+		}
+
+		return output.toString();
+	}
 
 	public static synchronized List<String> loadFileAsStrList(File cfgFile){
 		ArrayList<String> linkList = new ArrayList<String>();
@@ -35,11 +46,11 @@ public class Utils {
 
 			while(line != null)
 			{
-				String utf8Line = new String(line.getBytes(),"UTF-8");
+				//String utf8Line = new String(line.getBytes(),"UTF-8");
 
 				if( !"".equals(line.trim()))
 				{
-					linkList.add(utf8Line.trim());
+					linkList.add(line.trim());
 				}
 
 				line = br.readLine();
@@ -72,8 +83,7 @@ public class Utils {
 
 			while(line != null)
 			{
-				String utf8Line = new String(line.getBytes(),"UTF-8");
-				output.append(utf8Line).append(Constants.LINE_FEED);
+				output.append(line).append(Constants.LINE_FEED);
 
 				line = br.readLine();
 			}

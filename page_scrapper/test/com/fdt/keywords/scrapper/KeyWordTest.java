@@ -2,6 +2,7 @@ package com.fdt.keywords.scrapper;
 
 import static org.junit.Assert.assertEquals;
 
+import java.io.File;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -27,6 +28,9 @@ public class KeyWordTest {
 		key1 = new KeyWord(str1);
 		key2 = new KeyWord(str2);
 		key3 = new KeyWord(str3);
+		
+		KeyWordContainer kwc = new KeyWordContainer(new File("non_filter_keys_ru.txt"));
+		kwc.saveKeysToFile(new File("non_filter_keys_filtered_ru.txt"));
 	}
 
 	@Test

@@ -240,7 +240,7 @@ public class JimboTaskRunner
 						task = taskFactory.getTask();
 
 						if(task != null){
-							log.info("Task. File name: " + task.getInputFile().getName());
+							log.info("Task retrieved. File name: " + task.getInputFile().getName());
 							log.trace("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
 							newThread = new JimboPosterThread(
 									task, 

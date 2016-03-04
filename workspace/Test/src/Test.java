@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.Random;
+import java.util.StringTokenizer;
 import java.util.TimeZone;
 import java.util.concurrent.Callable;
 import java.util.regex.Matcher;
@@ -184,55 +185,71 @@ public class Test {
 		String testSrt = "";
 		System.out.println("   	".isEmpty());
 		System.out.println("".isEmpty());
-		
+
 		String str = "Adak, Aleutians West county, AK 99546, USA";
 		System.out.println(str.replaceAll("[^0-9]*", ""));
 		System.out.println(str.split(",")[1].trim());
 		System.out.println(toUpperFirstLetters("yeElow park"));
-		
+
 		for(int i = 1; i < 500; i += 5 ){
 			for(int j = 1; j < 125; j += 5){
 				System.out.print(i+","+j+";");
 			}
 		}
-		
+
 		String keyWord = "Payday Loans's'   \"online: -connected   ";
 		String[] list = keyWord.split("[\\s\\:\\-\\'\"\\%\\$\\-]+");
 		list = keyWord.split("[\\s]+");
 		keyWord = "Payday 'Loans' online: -connected";
-		
+
 		String forReplace = "Payday Our services are designed to help you find a reputable payday lender to work with. PayDayLoansforUSA.org has a large number "
 				+ "of lenders in our network, and we are confident that we can assist you in obtaining the best PAyday loan to meet your needs.";
-		
+
 		System.out.println(forReplace);
 		System.out.println(forReplace.replaceAll("(?i)(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|(^))" + "payday" + "(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|($))", "$1__REPLACED__$4"));
-		
-		
+
+
 		/*String str4Replace = "same day payday {advance} {is|is usually|is definitely|is certainly|is normally|is going to be} a fast and {convenient|easy|practical|effortless|comfortable|simple} solution for your {short|brief} term cash {needs|requirements|demands|wants|desires|necessities}";
 		Pattern p =  Pattern.compile("\\{(.+?)\\}");
         Matcher m = p.matcher(str4Replace);  
-        
+
         int idx = 1;
        	while(m.find()){
        		System.out.println(m.groupCount());
        		int rndGrpCnt = m.groupCount();
        		System.out.println(m.group(1));
         }*/
-       	
-        Random rnd = new Random();
-        rnd.nextInt();
+
+		Random rnd = new Random();
+		rnd.nextInt();
+
+		System.out.println("-----------------------------");
+		
+		String params = "app1=123&app2=321";
+
+		for (StringTokenizer tok = new StringTokenizer(params, "&"); tok.hasMoreTokens();)
+		{
+			System.out.println(tok.nextToken());
+		}
+		
+		String title="[Book]\r\n";
+		String newTitle = title.replaceAll("\\[Book\\]", "New Book[]");
+		System.out.println("newTitle: " + newTitle);
+		
+		
+		
 	}
-	
+
 	private static String toUpperFirstLetters(String input){
 		StringBuffer strBuf = new StringBuffer();
 		for(String word : input.split(" ")){
 			strBuf.append(word.substring(0, 1).toUpperCase()).append(word.substring(1).toLowerCase()).append(" ");
 		}
-		
+
 		if(strBuf.length() > 0){
 			strBuf.setLength(strBuf.length()-1);
 		}
-		
+
 		return strBuf.toString();
 	}
 

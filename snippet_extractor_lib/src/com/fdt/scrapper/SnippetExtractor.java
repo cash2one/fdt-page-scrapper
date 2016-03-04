@@ -156,11 +156,11 @@ public class SnippetExtractor {
 				{
 					try 
 					{
-						//Åñëè íå áûëî îøèáêè - òî óìåíüøàåì êîëè÷åñòâî ñòðàíèö, 
+						//Ð•ÑÐ»Ð¸ Ð½Ðµ Ð±Ñ‹Ð»Ð¾ Ð¾ÑˆÐ¸Ð±ÐºÐ¸ - Ñ‚Ð¾ ÑƒÐ¼ÐµÐ½ÑŒÑˆÐ°ÐµÐ¼ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†, 
 						if(!errExist) {
 							snippetTask.getCurrentTask().setPage(reducePage(snippetTask.getCurrentTask().getPage(), 3));
 						}
-						//èíà÷å íå óìåíüøàåì, è ïðîáóåì ñ äðóãèì ïðîêñè
+						//Ð¸Ð½Ð°Ñ‡Ðµ Ð½Ðµ ÑƒÐ¼ÐµÐ½ÑŒÑˆÐ°ÐµÐ¼, Ð¸ Ð¿Ñ€Ð¾Ð±ÑƒÐµÐ¼ Ñ Ð´Ñ€ÑƒÐ³Ð¸Ð¼ Ð¿Ñ€Ð¾ÐºÑÐ¸
 						else {
 							errExist = false;
 							//change proxy to another
@@ -626,11 +626,11 @@ public class SnippetExtractor {
 		if(titles.size() > 0){
 			for(int i = 0; i < minLenght; i++){
 				String h3Value = titles.get(i).text().replaceAll("(\\.){2,}", ".").
-						replaceAll("…", ".").
+						replaceAll("â€¦", ".").
 						replaceAll(" \\.", ".").
 						replaceAll(SITE_REGEXP_REMOVER, "").trim();
 				String pValue = descs.get(i).text().replaceAll("(\\.){2,}", ".").
-						replaceAll("…", ".").replaceAll(" \\.", ".").
+						replaceAll("â€¦", ".").replaceAll(" \\.", ".").
 						replaceAll(SITE_REGEXP_REMOVER, "").trim();
 				if(h3Value != null && !"".equals(h3Value.trim()) && pValue != null && !"".equals(pValue.trim()))
 				{

@@ -359,9 +359,14 @@ public class AccountFactory
 		//remove not logged account
 		for(String login : notLogged){
 			log.error(String.format("Account '%s' was not logged and will be removed from account list.", login));
-			accounts.remove(login);
+			Account removed = accounts.remove(login);
 			newsPostedCount.remove(login);
 			accountUsedInThreadCount.remove(login);
+			
+			if(removed != null){
+				Utils.appendStringToFile(removed.toString(), new File("account_banned.txt"));
+			}
+			
 			log.warn(String.format("Account '%s' was removed from account list.", login));
 		}
 		
@@ -382,7 +387,7 @@ public class AccountFactory
 		if(count == NEWS_PER_ACCOUNT){
 			accounts.remove(account.getLogin());
 		}
-		log.debug("Posted account news incremented: " + count);
+		log.debug(String.format("News was posted for account %s. Total posted news for current account is: ", account.getLogin(), count));
 		releaseAccount(account);
 	}
 
@@ -399,7 +404,7 @@ public class AccountFactory
 		//check for account excluding
 		if(accountUsedInThreadCount.get(account.getLogin()) == 0 && newsPostedCount.get(account.getLogin()) >= NEWS_PER_ACCOUNT){
 			accounts.remove(account.getLogin());
-			log.warn(String.format("Account %s was excluded from request at all",account.getLogin()));
+			log.warn(String.format("MAX news count for account were posted ( news were posted). Account %s was excluded from request at all",newsPostedCount.get(account.getLogin()), account.getLogin()));
 		}
 	}
 

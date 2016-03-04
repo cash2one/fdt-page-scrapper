@@ -5,7 +5,7 @@ RewriteBase /
 AddDefaultCharset UTF-8
 DirectoryIndex index.php
 
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404.php
 
 RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]

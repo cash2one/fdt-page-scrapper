@@ -94,6 +94,8 @@ public class JimboPosterThread extends Thread{
 			Random rnd = new Random();
 			rnd.nextInt();
 			
+			log.debug(String.format("Starting processing file %s ...", task.getInputFile().getName()));
+			
 			try
 			{
 				boolean errorExist = false;
@@ -130,7 +132,6 @@ public class JimboPosterThread extends Thread{
 						destFile.delete();
 					}
 					FileUtils.moveFile(task.getInputFile(), destFile);
-
 				} 
 				catch (Throwable e) {
 					log.error(e, e);

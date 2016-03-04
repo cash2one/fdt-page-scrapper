@@ -32,6 +32,7 @@ import org.apache.log4j.Logger;
 import org.json.JSONObject;
 
 import com.fdt.dailymotion.task.NewsTask;
+import com.fdt.utils.Utils;
 
 /**
  *
@@ -46,8 +47,8 @@ public class NewsPoster {
 
 	private static final Random rnd = new Random();;
 
-	//private String[] themes = new String[]{"auto","webcam","animals","creation","lifestyle","people","music","news","school","travel","sport","tech","shortfilms","fun"};
-	private String[] themes = new String[]{"shortfilms"};
+	private String[] themes = new String[]{"auto","webcam","animals","creation","lifestyle","people","music","news","school","travel","sport","tech","shortfilms","fun"};
+	//private String[] themes = new String[]{"shortfilms"};
 
 	private NewsTask task = null;
 	private Proxy proxy = null;
@@ -588,6 +589,12 @@ public class NewsPoster {
 				thumbnailUrlNew = jsonObj.getJSONObject("result").getString("thumbnail_url");
 				newFileSizeLen = getFileSize(thumbnailUrlNew);
 				log.info(String.format("New preview of video (%s): %s",videoId, thumbnailUrlNew));*/
+			}else{
+				try{
+					setPreview(videoId, subUrl, new File("6f0ad89ddb33.jpg"));
+				}catch(Exception e){
+					log.warn("Error occured during posting PREVIEW for video: " + videoId, e);
+				}
 			}
 			log.info("VIDEO URL: " + videoUrl);
 			return videoUrl;
@@ -662,7 +669,7 @@ public class NewsPoster {
 	private String setPreview(String videoId, String fromRequest, File previewFile) throws Exception{
 
 		String postUrl = Constants.getInstance().getProperty(AccountFactory.MAIN_URL_LABEL) + 
-				"/pageitem/OneStepPreview?widget_only=1&hidenextvideo=1&request="+fromRequest;
+				"/pageitem/EditUploadPreview?widget_only=1&hidenextvideo=1&request="+fromRequest;
 
 		//post news
 		String boundary = "----------" + System.currentTimeMillis();
@@ -720,7 +727,7 @@ public class NewsPoster {
 		inputStream.close();
 
 		writer.append("--" + boundary).append(LINE_FEED);
-		writer.append("Content-Disposition: form-data; name=\"save\"").append(LINE_FEED).append(LINE_FEED);
+		writer.append("Content-Disposition: form-data; name=\"redirect_url\"").append(LINE_FEED).append(LINE_FEED);
 		writer.append("Сохранить").append(LINE_FEED);
 
 		writer.append("--" + boundary + "--").append(LINE_FEED).append(LINE_FEED);;
@@ -951,15 +958,20 @@ public class NewsPoster {
 		StringBuilder params = new StringBuilder();
 
 		String description = task.getDescription();
-		if(URLEncoder.encode(description,"UTF-8").length() > 3000){
-			description = URLEncoder.encode(description,"UTF-8").substring(0,3000);
+		if(description.length() > 3000){
+			description = URLEncoder.encode(description.substring(0,2900),"UTF-8");
+		}else{
+			description = URLEncoder.encode(description,"UTF-8");
 		}
 
 		String title = task.getVideoTitle() + " " + getRndStr();
-		if(URLEncoder.encode(title,"UTF-8").length() > 255){
-			title = URLEncoder.encode(title,"UTF-8").substring(0,255);
+		title = Utils.getFirstSmblUpper(title);
+		if(title.length() > 255){
+			title = URLEncoder.encode(title.substring(0,250),"UTF-8");
+		}else{
+			title = URLEncoder.encode(title,"UTF-8");
 		}
-
+		
 		params.append("")
 		.append("form_name=").append("dm_pageitem_uploadnewform_").append(videoId).append("&")
 		.append("_csrf=").append(account.getCookie("_csrf/form")).append("&")
@@ -1012,7 +1024,7 @@ public class NewsPoster {
 	private String getEditVideoPostParamsUrl(String videoId) throws Exception {
 		StringBuilder params = new StringBuilder();
 
-		String description = task.getDescription();
+		/*String description = task.getDescription();
 		if(URLEncoder.encode(description,"UTF-8").length() > 3000){
 			description = URLEncoder.encode(description,"UTF-8").substring(0,3000);
 		}
@@ -1020,13 +1032,30 @@ public class NewsPoster {
 		String title = task.getVideoTitle() + " " + getRndStr();
 		if(URLEncoder.encode(title,"UTF-8").length() > 255){
 			title = URLEncoder.encode(title,"UTF-8").substring(0,255);
+		}*/
+		
+		String description = task.getDescription();
+		if(description.length() > 3000){
+			description = URLEncoder.encode(description.substring(0,2900),"UTF-8");
+		}else{
+			description = URLEncoder.encode(description,"UTF-8");
 		}
 
+		String title = task.getVideoTitle() + " " + getRndStr();
+		title = Utils.getFirstSmblUpper(title);
+		if(title.length() > 255){
+			title = URLEncoder.encode(title.substring(0,250),"UTF-8");
+		}else{
+			title = URLEncoder.encode(title,"UTF-8");
+		}
+
+		log.trace(String.format("EDIT NEWS: \r\nID [%s]; \r\nTitle[%s]; \r\nDescription [%s]",videoId, description, title));
+		
 		params.append("")
 		.append("form_name=").append("dm_pageitem_uploadnewform_").append(videoId).append("&")
 		.append("_csrf=").append(account.getCookie("_csrf/form")).append("&")
 		.append("_fid=").append("").append("&")
-		.append("video_title=").append(URLEncoder.encode(title,"UTF-8")).append("&")
+		.append("video_title=").append( title ).append("&")
 		.append("user_category=").append(themes[rnd.nextInt(themes.length)]).append("&")
 		.append("game_select=").append("").append("&")
 		.append("game_select=").append("").append("&")

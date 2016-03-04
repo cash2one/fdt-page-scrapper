@@ -36,6 +36,7 @@ public class AccountFactory
 	private HashMap<String, Integer> accountUsedInThreadCount = new HashMap<String, Integer>();
 
 	public final static String MAIN_URL_LABEL = "main_url";
+	public final static String MAIN_URL_NEW_LABEL = "main_url_new";
 	public final static String MAIN_LINKS_URL_LABEL = "main_links_url";
 	private final static String LOGIN_URL_LABEL = "login_url";
 	public final static String POST_NEWS_URL_LABEL = "post_news_url";
@@ -93,7 +94,7 @@ public class AccountFactory
 			ArrayList<Account> accountToRemove = new ArrayList<Account>();
 			ProxyConnector proxy = proxyFactory.getProxyConnector();
 			for(Account account : accounts.values()){
-				String postUrl = Constants.getInstance().getProperty(MAIN_URL_LABEL) + Constants.getInstance().getProperty(LOGIN_URL_LABEL);
+				String postUrl = "http://subscribe.ru" + Constants.getInstance().getProperty(LOGIN_URL_LABEL);
 				URL url = new URL(postUrl);
 				HttpURLConnection.setFollowRedirects(false);
 				HttpURLConnection conn = (HttpURLConnection) url.openConnection(proxy.getConnect(ProxyFactory.PROXY_TYPE));
@@ -107,7 +108,7 @@ public class AccountFactory
 				conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"); 
 				//conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 				conn.setRequestProperty("Accept", "text/plain, */*; q=0.01");
-				conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+				conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
 				conn.setRequestProperty("X-Requested-With","XMLHttpRequest");
 				
 				List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(3);

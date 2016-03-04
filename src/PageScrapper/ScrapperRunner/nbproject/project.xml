@@ -78,12 +78,12 @@
                 <binary-origin>release/modules/ext/jsoup-1.7.1.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
-                <runtime-relative-path>ext/page_scrapper.jar</runtime-relative-path>
-                <binary-origin>release/modules/ext/page_scrapper.jar</binary-origin>
-            </class-path-extension>
-            <class-path-extension>
                 <runtime-relative-path>ext/json-simple.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/json-simple.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/page_scrapper.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/page_scrapper.jar</binary-origin>
             </class-path-extension>
         </data>
     </configuration>

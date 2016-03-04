@@ -7,19 +7,21 @@
 		<param name="MaxFileSize" value="50MB"/>
 		<param name="MaxBackupIndex" value="10"/>
 		<layout class="org.apache.log4j.PatternLayout"> 
-			<param name="ConversionPattern" value="%d-%5p(%F:%L)-%m%n"/> 
+			<param name="ConversionPattern" value="%d-%5p(%F:%L)[%t]-%m%n"/> 
 		</layout> 
   	</appender>
 	
 	<appender name="posted_links" class="org.apache.log4j.FileAppender">
 		<param name="file" value="news_posted_links.log"/>
+		<param name="bufferedIO" value="false"/>
+		<param name="bufferSize" value="1"/>
 		<param name="append" value="true"/>
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%m%n"/>
 		</layout>
 	</appender>
 	
-	<logger name="com.fdt.scrapper.NewsPoster" >
+	<logger name="com.fdt.newposter.scrapper.NewsPoster" >
 		<level value="INFO" />
 		<appender-ref ref="posted_links"/>
 	</logger>

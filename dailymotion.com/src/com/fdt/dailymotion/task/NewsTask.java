@@ -17,6 +17,8 @@ import javax.imageio.ImageIO;
 
 import org.apache.log4j.Logger;
 
+import com.fdt.utils.Utils;
+
 
 public class NewsTask{
 
@@ -313,7 +315,7 @@ public class NewsTask{
 
 	public String getDescription() throws Exception{
 		String description = null;
-		description = getFileAsString(this.templateFile);
+		description = Utils.loadFileAsString(this.templateFile);
 		description = description.replaceAll("\\[KEYWORD\\]", Matcher.quoteReplacement(key));
 		description = description.replaceAll("\\[LINK\\]", Matcher.quoteReplacement(postLink));
 		description = description.replaceAll("\\[SNIPPETS\\]", Matcher.quoteReplacement(snippets));

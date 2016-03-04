@@ -55,7 +55,7 @@ public class NewsTask
 		data.updateDataByName(TEXT, textStr);
 		
 		//Set title
-		String newTitle = title.replaceAll("\\[Book\\]", data.getDataByName(KEYWORD));
+		String newTitle = title.replaceAll("\\[Book\\]", Matcher.quoteReplacement(data.getDataByName(KEYWORD)));
 		data.setDataByName(TITLE, newTitle);
 	}
 
