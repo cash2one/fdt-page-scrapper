@@ -172,4 +172,9 @@ public class NewsTask
 
 		return fileAsStr.toString();
 	}
+
+	@Override
+	public String toString() {
+		return "NewsTask [inputFile=" + inputFile + "]";
+	}
 }

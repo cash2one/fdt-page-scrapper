@@ -49,6 +49,7 @@ public class PosterTaskRunner {
 	private final static String ACCOUNTS_LIST_FILE_PATH_LABEL = "account_list_file_path";
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
+	private final static String RUNNER_QUEUE_EMPTY_WAIT_TIME_LABEL = "runner_queue_empty_wait_time";
 
 	private TaskFactory taskFactory;
 
@@ -68,6 +69,7 @@ public class PosterTaskRunner {
 		this.accListFilePath = Constants.getInstance().getProperty(ACCOUNTS_LIST_FILE_PATH_LABEL);
 		this.maxThreadCount = Integer.valueOf(Constants.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
 		this.proxyDelay = Integer.valueOf(Constants.getInstance().getProperty(PROXY_DELAY_LABEL));
+		PosterTaskRunner.RUNNER_QUEUE_EMPTY_WAIT_TIME = Long.valueOf(Constants.getInstance().getProperty(RUNNER_QUEUE_EMPTY_WAIT_TIME_LABEL));
 
 		Authenticator.setDefault(new Authenticator() {
 			@Override

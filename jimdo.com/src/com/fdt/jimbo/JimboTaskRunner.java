@@ -11,10 +11,10 @@ import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Properties;
-import java.util.Random;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
@@ -32,7 +32,7 @@ public class JimboTaskRunner
 {
 	private static final Logger log = Logger.getLogger(JimboTaskRunner.class);
 
-	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 5000L;
+	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 1L;
 
 	public final static String MAIN_URL_LABEL = "main_url";
 
@@ -101,6 +101,8 @@ public class JimboTaskRunner
 	private final static String RANDOM_JPG_FILE_PATH="random_jpg_file_path";
 	private final static String RANDOM_BUTTON_FILE_PATH="random_button_file_path";
 	private final static String RANDOM_TITLE_FILE_PATH="random_title_file_path";
+	
+	private HashMap<String, HashSet<String>> usedKeys = new HashMap<String, HashSet<String>>();
 	
 	public JimboTaskRunner(String cfgFilePath){
 
@@ -226,6 +228,8 @@ public class JimboTaskRunner
 				//Copy account list file
 				File accountFile = new File(accListFilePath);
 				accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
+				
+				usedKeys = loadUsedKeywords(new File ("./domen"));
 
 				Account account = null;
 				JimboPosterThread newThread = null;
@@ -233,15 +237,16 @@ public class JimboTaskRunner
 				
 				while((!taskFactory.isTaskFactoryEmpty() && ((account = accountFactory.getAccount()) != null)) || taskFactory.getRunThreadsCount() > 0)
 				{
-					log.trace("Try to get request from RequestFactory queue.");
-					log.trace("Account: " + account);
+					log.debug("Try to get request from RequestFactory queue.");
+					log.debug("Account: " + account);
 					if(account != null)
 					{
 						task = taskFactory.getTask();
 
-						if(task != null){
+						if(task != null && (usedKeys.get(account.getSiteWOHttp()) == null || usedKeys.get(account.getSiteWOHttp()) != null && !usedKeys.get(account.getSiteWOHttp()).contains(task.getKey()))){
+							log.info("Current thread count: " + taskFactory.getRunThreadsCount());
 							log.info("Task retrieved. File name: " + task.getInputFile().getName());
-							log.trace("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
+							log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
 							newThread = new JimboPosterThread(
 									task, 
 									account, 
@@ -263,6 +268,9 @@ public class JimboTaskRunner
 							task = null;
 							continue;
 						}else{
+							if(task != null){
+								taskFactory.reprocessingTask(task);
+							}
 							accountFactory.releaseAccount(account);
 						}
 					}
@@ -330,6 +338,18 @@ public class JimboTaskRunner
 				log.error("Error occured during closing output streams during saving success results",ex);
 			}
 		}
+	}
+	
+	private HashMap<String, HashSet<String>> loadUsedKeywords(File domenDir)
+	{
+		HashMap<String, HashSet<String>> usedKeys = new HashMap<String, HashSet<String>>();
+		
+		for(File file : domenDir.listFiles()){
+			List<String> keysList = Utils.loadFileAsStrList(file);
+			usedKeys.put(file.getName().substring(0, file.getName().length()-4), new HashSet<String>(keysList));
+		}
+		
+		return usedKeys;
 	}
 
 	public void loadProperties(String cfgFilePath){

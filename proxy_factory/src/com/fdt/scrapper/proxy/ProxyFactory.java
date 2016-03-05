@@ -30,7 +30,7 @@ public class ProxyFactory
 	private ProxyFactory() {
 		super();
 	}
-	
+
 	public ProxyFactory(String pathToProxyList) {
 		if(instance == null){
 			proxyList = loadProxyList(pathToProxyList);
@@ -58,20 +58,20 @@ public class ProxyFactory
 		}
 		return instance;
 	}
-	
-	public synchronized ArrayList<ProxyConnector> loadProxyListFromInet(String fileURL) throws MalformedURLException, IOException{
-	    ArrayList<ProxyConnector> proxyList = null;
-	    String fileNameProxy = String.valueOf(System.currentTimeMillis());
-	    File proxyFile = new File(fileNameProxy);
-	    FileUtils.copyURLToFile(new URL(fileURL), proxyFile);
-	    proxyList = loadProxyList(fileNameProxy);
-	    if(proxyFile.exists()){
-		proxyFile.delete();
-	    }
-	    return proxyList;
+
+	public ArrayList<ProxyConnector> loadProxyListFromInet(String fileURL) throws MalformedURLException, IOException{
+		ArrayList<ProxyConnector> proxyList = null;
+		String fileNameProxy = String.valueOf(System.currentTimeMillis());
+		File proxyFile = new File(fileNameProxy);
+		FileUtils.copyURLToFile(new URL(fileURL), proxyFile);
+		proxyList = loadProxyList(fileNameProxy);
+		if(proxyFile.exists()){
+			proxyFile.delete();
+		}
+		return proxyList;
 	}
 
-	public synchronized ArrayList<ProxyConnector> loadProxyList(String cfgFilePath){
+	public ArrayList<ProxyConnector> loadProxyList(String cfgFilePath){
 		proxyList = new ArrayList<ProxyConnector>();
 		FileReader fr = null;
 		BufferedReader br = null;
@@ -111,55 +111,66 @@ public class ProxyFactory
 		return proxyList;
 	}
 
-	public synchronized ProxyConnector getProxyConnector(){
+	public ProxyConnector getProxyConnector(){
 		ProxyConnector prConnector = getProxyConnector(0);
-		
+
 		while(bannedProxyList.contains(prConnector))
 		{
 			releaseProxy(prConnector);
 			prConnector = getProxyConnector(0);
 		}
-	    return prConnector;
-	}
-	
-	public synchronized ProxyConnector getRandomProxyConnector(){
-	    int proxyIndex = rand.nextInt(proxyList.size()-1);
-	    ProxyConnector prConnector = getProxyConnector(proxyIndex);
-	    
-	    while(bannedProxyList.contains(prConnector))
-		{
-			releaseProxy(prConnector);
-			proxyIndex = rand.nextInt(proxyList.size()-1);
-			prConnector = getProxyConnector(proxyIndex);
-		}
-	    
-	    return prConnector; 
-	}
-	
-	private synchronized ProxyConnector getProxyConnector(int index){
-		long curTime = System.currentTimeMillis();
-		while(proxyDelay.size() <= index || proxyDelay.get(index) > (curTime - DELAY_FOR_PROXY)){
-			try {
-				wait(100L);
-			} catch (InterruptedException e) {
-				log.error("Error during waiting new proxy connector",e);
-			}
-			curTime = System.currentTimeMillis();
-		}
-		proxyDelay.remove(index);
-		return proxyList.remove(index);
+		return prConnector;
 	}
 
-	public synchronized void releaseProxy(ProxyConnector proxyConnector){
-		proxyDelay.add(System.currentTimeMillis());
-		proxyList.add(proxyConnector);
-		notifyAll();
+	public ProxyConnector getRandomProxyConnector(){
+
+		int proxyIndex = proxyList.size() > 0 ? rand.nextInt(proxyList.size()):0;
+
+		ProxyConnector prConnector = getProxyConnector(proxyIndex);
+
+		while(bannedProxyList.contains(prConnector))
+		{
+			releaseProxy(prConnector);
+			proxyIndex = proxyList.size() > 0 ? rand.nextInt(proxyList.size()):0;
+
+			prConnector = getProxyConnector(proxyIndex);
+		}
+
+		return prConnector; 
 	}
-	
+
+	private  ProxyConnector getProxyConnector(int index){
+		synchronized(proxyList){
+			long curTime = System.currentTimeMillis();
+
+			while(proxyDelay.size() <= index || proxyDelay.get(index) > (curTime - DELAY_FOR_PROXY)){
+				try {
+					proxyList.wait(DELAY_FOR_PROXY);
+				} catch (InterruptedException e) {
+					log.error("Error during waiting new proxy connector",e);
+				}
+				curTime = System.currentTimeMillis();
+			}
+
+			log.info("NOT USED proxy servers: " + (proxyList.size()-1) );
+
+			proxyDelay.remove(index);
+			return proxyList.remove(index);
+		}
+	}
+
+	public  void releaseProxy(ProxyConnector proxyConnector){
+		synchronized(proxyList){
+			proxyDelay.add(System.currentTimeMillis());
+			proxyList.add(proxyConnector);
+			proxyList.notifyAll();
+		}
+	}
+
 	public int getFreeProxyCount(){
-	    return proxyList.size();
+		return proxyList.size();
 	}
-	
+
 	public void addToBannedList(ProxyConnector proxyConnector){
 		if(!bannedProxyList.contains(proxyConnector)){
 			log.info("Proxy " + proxyConnector + " was banned. And will not used again.");
@@ -167,7 +178,7 @@ public class ProxyFactory
 			log.info("Total banned proxy count is: " + bannedProxyList.size());
 		}
 	}
-	
+
 	public ArrayList<ProxyConnector> getBannedProxyList(){
 		return bannedProxyList;
 	}

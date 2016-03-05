@@ -99,6 +99,8 @@ public class AccountFactory
 		//getting cookie for each account
 		HttpURLConnection conn = null;
 		ProxyConnector proxy = null;
+		
+		long srtTm = System.currentTimeMillis();
 
 		try {
 			proxy = proxyFactory.getRandomProxyConnector();
@@ -190,6 +192,7 @@ public class AccountFactory
 			log.error("Error during login/getting cookies for account",e);
 			return false;
 		}finally{
+			log.debug(String.format("Time spent to login account '%s' is %dms", account.getLogin(), (System.currentTimeMillis()-srtTm)/1));
 			if(conn!=null){
 				conn.disconnect();
 			}
@@ -342,7 +345,7 @@ public class AccountFactory
 				if( runningCount < (NEWS_PER_ACCOUNT-postedCount)){
 					int currentCount = accountUsedInThreadCount.get(login);
 					accountUsedInThreadCount.put(login, ++currentCount);
-					log.debug(String.format("Used account ' %s 'size incremented to %d",login, currentCount));
+					log.debug(String.format("Used account '%s' size incremented to %d",login, currentCount));
 					account = accounts.get(login);
 					if(account.isLogged() || loginAccount(account)){
 						account.setLogged(true);
@@ -387,7 +390,7 @@ public class AccountFactory
 		if(count == NEWS_PER_ACCOUNT){
 			accounts.remove(account.getLogin());
 		}
-		log.debug(String.format("News was posted for account %s. Total posted news for current account is: ", account.getLogin(), count));
+		log.debug(String.format("News was posted for account %s. Total posted news for current account is: %d", account.getLogin(), count));
 		releaseAccount(account);
 	}
 

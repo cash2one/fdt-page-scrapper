@@ -236,8 +236,8 @@ public class Test {
 		String newTitle = title.replaceAll("\\[Book\\]", "New Book[]");
 		System.out.println("newTitle: " + newTitle);
 		
-		
-		
+		Random rand = new Random();
+		System.out.println(rand.nextInt(1));
 	}
 
 	private static String toUpperFirstLetters(String input){

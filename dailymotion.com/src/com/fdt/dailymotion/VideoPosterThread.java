@@ -121,6 +121,8 @@ public class VideoPosterThread extends Thread{
 	@Override
 	public void run() {
 		synchronized (this) {
+			ProxyConnector proxyConnector = null;
+			
 			try{
 				boolean errorExist = false;
 				try {
@@ -184,7 +186,9 @@ public class VideoPosterThread extends Thread{
 						task.setSnippets(snippetsStr.toString());
 					}*/
 
-					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account, loadPreGenFile);
+					proxyConnector = proxyFactory.getRandomProxyConnector();
+					
+					NewsPoster nPoster = new NewsPoster(task, proxyConnector.getConnect(ProxyFactory.PROXY_TYPE), this.account, loadPreGenFile);
 					String linkToVideo = nPoster.executePostNews(times);
 					appendStringToFile(linkToVideo, linkList);
 					appendStringToFile(linkToVideo + ";" + task.getVideoTitle(), linkTitleList);
@@ -232,6 +236,9 @@ public class VideoPosterThread extends Thread{
 					accountFactory.releaseAccount(account);
 				}
 			} finally {
+				if(proxyConnector != null){
+					proxyFactory.releaseProxy(proxyConnector);
+				}
 				taskFactory.decRunThreadsCount(task);
 			}
 		}

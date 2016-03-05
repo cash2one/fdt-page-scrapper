@@ -42,5 +42,6 @@
 	<classpathentry kind="var" path="FDT_LIBS/logback-core-1.0.0.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/xuggle-xuggler-5.4.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/slf4j-api-1.6.4.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/snippet_utils"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

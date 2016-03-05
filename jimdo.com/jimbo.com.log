@@ -1,72 +1,44 @@
-2016-02-17 13:55:35,949-DEBUG(AccountFactory.java:95)[main]-Total account count: 5
-2016-02-17 13:55:36,094-DEBUG(AccountFactory.java:345)[main]-Used account ' tapretipa 'size incremented to 1
-2016-02-17 13:55:36,102- INFO(AccountFactory.java:207)[main]-URL: http://a.jimdo.com/app/auth/signin/authenticate
-2016-02-17 13:55:37,219- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/auth/signin/start/?return=%2Fapp%2Fs17b69ed358058f76%2F%3Fsafemode%3D0
-2016-02-17 13:55:37,726- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s17b69ed358058f76/?safemode=0
-2016-02-17 13:55:37,931- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s17b69ed358058f76/pc161310ca5785d62/?safemode=0
-2016-02-17 13:55:38,134- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s17b69ed358058f76/pc161310ca5785d62/
-2016-02-17 13:55:39,384- INFO(JimboTaskRunner.java:243)[main]-Task. File name: article_86128.txt
-2016-02-17 13:55:39,386-DEBUG(TaskFactory.java:75)[main]-INC thread: 1
-2016-02-17 13:55:39,387-DEBUG(AccountFactory.java:345)[main]-Used account ' siledorlau 'size incremented to 1
-2016-02-17 13:55:39,387- INFO(AccountFactory.java:207)[main]-URL: http://a.jimdo.com/app/auth/signin/authenticate
-2016-02-17 13:55:39,421-DEBUG(SnippetExtractor.java:150)[Thread-0]-Get proxy: 185.14.194.107:1085
-2016-02-17 13:55:39,423- INFO(SnippetExtractor.java:218)[Thread-0]-Recude page from 42 to 14
-2016-02-17 13:55:39,424-DEBUG(SnippetExtractor.java:610)[Thread-0]-Using bing.com for getting snippets for key 'Download+(eBook)+The+Christmas+He+Loved+Her'
-2016-02-17 13:55:39,424-DEBUG(SnippetExtractor.java:378)[Thread-0]-Using proxy: SOCKS @ /185.14.194.107:1085
-2016-02-17 13:55:39,425-DEBUG(SnippetExtractor.java:382)[Thread-0]-http://www.bing.com/search?&qs=n&sc=8-4&sp=-1&sk=&q=Download+%28eBook%29+The+Christmas+He+Loved+Her&first=131&FORM=PERE&filt=all
-2016-02-17 13:55:40,165- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/auth/signin/start/?return=%2Fapp%2Fs3d29025a2536d1e9%2F%3Fsafemode%3D0
-2016-02-17 13:55:40,603- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s3d29025a2536d1e9/?safemode=0
-2016-02-17 13:55:40,717- WARN(SnippetExtractor.java:639)[Thread-0]-Empty TITLE or SNIPPET are empty.
-2016-02-17 13:55:40,720- INFO(SnippetExtractor.java:218)[Thread-0]-Recude page from 14 to 4
-2016-02-17 13:55:40,720-DEBUG(SnippetExtractor.java:610)[Thread-0]-Using bing.com for getting snippets for key 'Download+(eBook)+The+Christmas+He+Loved+Her'
-2016-02-17 13:55:40,720-DEBUG(SnippetExtractor.java:378)[Thread-0]-Using proxy: SOCKS @ /185.14.194.107:1085
-2016-02-17 13:55:40,721-DEBUG(SnippetExtractor.java:382)[Thread-0]-http://www.bing.com/search?&qs=n&sc=8-4&sp=-1&sk=&q=Download+%28eBook%29+The+Christmas+He+Loved+Her&first=31&FORM=PERE&filt=all
-2016-02-17 13:55:40,787- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s3d29025a2536d1e9/pba6cc6e7a2ac6726/?safemode=0
-2016-02-17 13:55:40,974- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s3d29025a2536d1e9/pba6cc6e7a2ac6726/
-2016-02-17 13:55:41,140- WARN(SnippetExtractor.java:639)[Thread-0]-Empty TITLE or SNIPPET are empty.
-2016-02-17 13:55:41,141- INFO(SnippetExtractor.java:221)[Thread-0]-Recude page from 4 to 1
-2016-02-17 13:55:41,142-DEBUG(SnippetExtractor.java:610)[Thread-0]-Using bing.com for getting snippets for key 'Download+(eBook)+The+Christmas+He+Loved+Her'
-2016-02-17 13:55:41,142-DEBUG(SnippetExtractor.java:378)[Thread-0]-Using proxy: SOCKS @ /185.14.194.107:1085
-2016-02-17 13:55:41,142-DEBUG(SnippetExtractor.java:382)[Thread-0]-http://www.bing.com/search?&qs=n&sc=8-4&sp=-1&sk=&q=Download+%28eBook%29+The+Christmas+He+Loved+Her&first=1&FORM=PERE&filt=all
-2016-02-17 13:55:41,626- INFO(JimboTaskRunner.java:243)[main]-Task. File name: article_86119.txt
-2016-02-17 13:55:41,635-DEBUG(TaskFactory.java:75)[main]-INC thread: 2
-2016-02-17 13:55:41,636-DEBUG(AccountFactory.java:345)[main]-Used account ' vecircongder 'size incremented to 1
-2016-02-17 13:55:41,636- INFO(AccountFactory.java:207)[main]-URL: http://a.jimdo.com/app/auth/signin/authenticate
-2016-02-17 13:55:41,639-DEBUG(SnippetExtractor.java:150)[Thread-1]-Get proxy: 46.161.60.47:1085
-2016-02-17 13:55:41,640- INFO(SnippetExtractor.java:218)[Thread-1]-Recude page from 28 to 9
-2016-02-17 13:55:41,640-DEBUG(SnippetExtractor.java:610)[Thread-1]-Using bing.com for getting snippets for key 'Download+(eBook)+Contrat+de+sang'
-2016-02-17 13:55:41,647-DEBUG(SnippetExtractor.java:378)[Thread-1]-Using proxy: SOCKS @ /46.161.60.47:1085
-2016-02-17 13:55:41,647-DEBUG(SnippetExtractor.java:382)[Thread-1]-http://www.bing.com/search?&qs=n&sc=8-4&sp=-1&sk=&q=Download+%28eBook%29+Contrat+de+sang&first=81&FORM=PERE&filt=all
-2016-02-17 13:55:41,809-DEBUG(SnippetExtractor.java:338)[Thread-0]-Snippets.size() = (14); linkList.size() = (0), snipCount = (14)
-2016-02-17 13:55:42,368- INFO(SnippetExtractor.java:218)[Thread-1]-Recude page from 9 to 3
-2016-02-17 13:55:42,369-DEBUG(SnippetExtractor.java:610)[Thread-1]-Using bing.com for getting snippets for key 'Download+(eBook)+Contrat+de+sang'
-2016-02-17 13:55:42,369-DEBUG(SnippetExtractor.java:378)[Thread-1]-Using proxy: SOCKS @ /46.161.60.47:1085
-2016-02-17 13:55:42,369-DEBUG(SnippetExtractor.java:382)[Thread-1]-http://www.bing.com/search?&qs=n&sc=8-4&sp=-1&sk=&q=Download+%28eBook%29+Contrat+de+sang&first=21&FORM=PERE&filt=all
-2016-02-17 13:55:42,677- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/auth/signin/start/?return=%2Fapp%2Fsf8933c05dac9c0d0%2F%3Fsafemode%3D0
-2016-02-17 13:55:43,058-DEBUG(SnippetExtractor.java:338)[Thread-1]-Snippets.size() = (20); linkList.size() = (0), snipCount = (12)
-2016-02-17 13:55:43,228- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/sf8933c05dac9c0d0/?safemode=0
-2016-02-17 13:55:43,450- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/sf8933c05dac9c0d0/pd9df4f6dc4659a8a/?safemode=0
-2016-02-17 13:55:43,663- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/sf8933c05dac9c0d0/pd9df4f6dc4659a8a/
-2016-02-17 13:55:44,518- INFO(JimboTaskRunner.java:243)[main]-Task. File name: article_86116.txt
-2016-02-17 13:55:44,519-DEBUG(TaskFactory.java:75)[main]-INC thread: 3
-2016-02-17 13:55:44,520-DEBUG(AccountFactory.java:345)[main]-Used account ' petsamaphu 'size incremented to 1
-2016-02-17 13:55:44,520- INFO(AccountFactory.java:207)[main]-URL: http://a.jimdo.com/app/auth/signin/authenticate
-2016-02-17 13:55:44,521-DEBUG(SnippetExtractor.java:150)[Thread-2]-Get proxy: 185.44.78.73:1085
-2016-02-17 13:55:44,521- INFO(SnippetExtractor.java:218)[Thread-2]-Recude page from 44 to 14
-2016-02-17 13:55:44,522-DEBUG(SnippetExtractor.java:610)[Thread-2]-Using google.com for getting snippets for key 'Download+(eBook)+The+Sisters'+Grimoire'
-2016-02-17 13:55:44,523-DEBUG(SnippetExtractor.java:378)[Thread-2]-Using proxy: SOCKS @ /185.44.78.73:1085
-2016-02-17 13:55:44,524-DEBUG(SnippetExtractor.java:382)[Thread-2]-https://www.google.com/search?q=Download+(eBook)+The+Sisters'+Grimoire&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
-2016-02-17 13:55:44,845-DEBUG(NewsPoster.java:174)[Thread-1]-     //<![CDATA[ var jimdoData = {"websiteId":"s3d29025a2536d1e9","subgroupId.obfuscated":"ge65e854e8060651d","pageId":2080637798,"pageId.obfuscated":"p4fda3a13edcb17a8","packageId":1,"jQuery":"jimdoGen002","allPageIds":[2040402298,2040402398,2040402498,2040402598,2040402698,2040402798,2040402898,2040402998,2040403098,2079484998,2079963598,2079964698,2080097398,2080110898,2080149398,2080151898,2080154198,2080155298,2080365798,2080371498,2080415898,2080416098,2080416298,2080418998,2080437398,2080441298,2080441698,2080442098,2080457498,2080458798,2080523598,2080523698,2080523798,2080555698,2080555898,2080612398,2080615698,2080616398,2080619098,2080619698,2080622098,2080637298,2080637398,2080637798],"indexPageId":2040402398,"isSuperAdmin":false,"isSupporter":false,"isStaging":false,"isTestserver":false,"isCMS":true,"isSwitchActive":false,"isSwitchDMPLayoutselection":false,"isSwitchDisableLegacyBackground":false,"safeMode":false,"template":{"type":3,"id":"283","url":"https:\/\/api.dmp.jimdo-server.com\/designs\/283\/versions\/1.3","version":"1.3.32","ownBgAllowed":true,"variation":null,"responsive":false},"bgConfig":{"id":59881398,"type":"picture","options":{"fixed":true},"images":[{"id":7117502898,"url":"https:\/\/image.jimcdn.com\/app\/cms\/image\/transf\/none\/path\/s3d29025a2536d1e9\/backgroundarea\/icb03d13fec6e7387\/version\/1450837606\/image.jpg"}]},"legacyBackgroundsAllowed":false,"isBackgroundPerPageEnabled":true,"hasActiveLegacyBackground":false,"backgroundAreaAllowed":true,"responsiveUpdateAllowed":false,"legacyBackgroundTypeMigratable":false,"showBgPerPageUpdateOverlay":true,"isProtectedPage":false,"isFirstSession":false,"bypassTemplateUpdateBlock":false,"oldSiteAdminDisabled":false,"cstok":"c4db0413ee057a70fc2a1b41d390953d2f1967cf","session":{"ClickAndChange":"55541be7c67ed5311f2288ec5dce1a3fbe020a4d"},"jwt":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3ZWJzaXRlSWQiOiJzM2QyOTAyNWEyNTM2ZDFlOSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNTQyMTEwMTI4fQ.Qyp9FSuolo5tDUJ_LaW-6hCIWIIb7ILvzmm2Yeq7DRc","cacheJsKey":"c0ed0353c072b67345f1ffad8512b62984c80e5c","cacheCssKey":"416dda6fe6c86847d0b58079d7ba96871d081142","systemUrl":"http:\/\/www400.jimdo.com\/","cdnUrl":"\/\/assets1.jimstatic.com\/","appUrl":"http:\/\/a.jimdo.com\/","minUrl":"\/\/assets1.jimstatic.com\/app\/cdn\/min\/file\/","websiteUrl":"http:\/\/siledorlau.jimdo.com\/","javascriptNamespace":"jimdoGen002","internalLinkSuffix":"\/","internalLinkPrefix":"\/app\/s3d29025a2536d1e9\/","flashMinVersionUpload":"9.0.115","cmsLanguage":"en_US","maxPages":3000,"maxModulesPerPage":200,"commonUploadMaxFilesize":10485760,"commonUploadMaxFilecount":150,"copyPagesAllowed":false,"externalLinksInNavigationAllowed":false,"copyModulesAllowed":true,"canHaveOldTemplates":false,"restoreModulesAllowed":false,"angularLocale":"en_US","hasBlog":true,"blogTagList":"Hello Book Download eBook Further Joy Rage Against the Dying New blog POST","rte":{"lang":"en","styleselect":false,"stylelist":false},"social":{"dropbox":false},"shop":{"usSalesTaxEnabled":true,"deliveryTimeTexts":{"1":"Ships within 1-3 days","2":"Ships within 3-5 days","3":"Delivery in 5-8 days"}},"isFlex":true,"matrixes":{"2748543298":["10269272298"],"2810252098":[]},"googleWebFonts":{"fonts":[1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1016,1017,1018,1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1033],"url":"https:\/\/fonts.googleapis.com\/css?family="},"dmp":{"backendUrl":"https:\/\/api.dmp.jimdo-server.com\/api\/published_designs","publishedDesignsApiVersion":"2","kickstarter.enabled":true,"googleFontsAvailable":true,"googleFontApiKey":"AIzaSyAHb9BjcZSeH6UwpRcdWlu_hbI7nKV6tjc","googleFontApiBaseUrl":"http:\/\/font-api.dmp.jimdo-server.com\/webfonts\/v1\/webfonts","defaultSubsets":{"latin":true},"typesquareFontsAvailable":false},"isDebug":false,"isCucumber":false,"tr":{"common":{"timeout":"An error occured. Whatever you were trying to do was interrupted. Please try again later.","refreshing":"Loading...","webOnly":"Sorry, you can't do this in Edit Mode, only on your actual Jimdo site.","spinnerInfiniteTitle":"Set inventory to unlimited","helpFormSubmit":"Your support inquiry has been sent. We'll respond as soon as we can.","ok":"Ok","select":"Select","abort":"cancel "},"eh":{"disabled":"You have just changed your template.  Please choose first whether to accept or reject those changes. Then you can change the photo."},"m":{"removeGallery":"All {count} images will be deleted permanently!","removeGuestbook":"All {count} comments will be deleted permanently!","removeHgrid":"All {count} elements in these columns will be deleted permanently!","updating":"refreshing...","reallyRemove":"Are you sure you want to delete this element?","confirmRemove":"Yes, delete!","close":"Close","abortRemove":"cancel ","attention":"Caution:","anchorTitle":"Go to the link {text}","firstAdd":"Add Element","remove":"Delete this element","up":"Move element up","down":"Move element down","copy":"Copy element","noFileSelected":"Please choose the file you'd like to upload to your Jimdo site.","tooManyModules":"The maximum number of elements for a page is 200, and this page currently has {current}. You can only add a new element to this page if you delete enough elements so that there are fewer than 200. You can also create a new page on your website and add more content there.","nestingNotAllowed":"Sorry, you can't add this element to a column.","reallyRemoveColumn":"Do you really want to delete this column?","warningModulesInColumn":"All {count} elements in this column will be permanently deleted!","setLinkText":"Set link","headline":"Heading","unsavedChanges":"Unsaved changes","discard":"Discard","confirmDiscard":"Confirm","upload":{"dictFileTooBig":"The photo is too large! Maximum size: 10.0 MB.","dictInvalidFileType":"You may only upload image files in JPG\/JPEG, GIF, PNG and BMP formats!","dictMaxFilesExceeded":"Es k\u00f6nnen maximal 150 Bilder gleichzeitig hochgeladen werden."},"common":{"delete":"delete","link":"Link","unlink":"Remove link"},"table":{"tableWidth":"Width","tableHeight":"Height","tableBorder":"Border size","tableProperties":"Table Options","tableBorderColor":"Border color","tableBackgroundColor":"Background color","tableCellProperties":"Cell Options","tableCellSpacing":"Margin","tableCellPadding":"Spacing"},"clickToAddModule":"Add Element","youHaveUnsavedElements":"You have unsaved elements!","states":{"loading":"Loading","deleting":"Deleting","empty":"This is empty","unsaved":"Not saved yet"},"imageUpload":{"wrong file. only images allowed":"Images can only be uploaded in the following formats: .jpg\/.jpeg, .gif, .png, .tiff, and .bmp. ","Sorry, the file is corrupted and cannot be used.":"This file is corrupted and cannot be uploaded."},"colorPicker":{"cancel":"cancel ","select":"Select color"},"twitter":{"Please insert your twitter username":"Please enter your Twitter username"}},"cb":{"dragYourElement":"Drag Elements here in order to move them to other subpages on your website."},"navi":{"moveUp":"Move this page up","moveDown":"Move this page down","moveLeft":"Move this page one level up","moveRight":"Move this page one level down","addPage":"Add a new page","copyPage":"Copy Page","deletePage":"Delete this page","hidePage":"Hide page in navigation","externalLink":"External Link","externalLinkPlaceholder":"i.e. www.jimdo.com or support@jimdo.com","deleteWithSubPages":"This page {title} has sub-pages. Please delete these separately.","reallyRemove":"Do you really want to remove the page {title}?","confirmRemove":"Yes, delete!","tooManyPages":"Unfortunately, no more than 3000 pages can be created.","deleteLastPage":"This is your only remaining page. Please create a new page before you delete this one."},"flex":{"all":"all"},"gmap":{"newMarker":"New Placemark","search":"Find a location","searchNotFound":"The entered address doesn't exist or couldn't be found.","routesNotice":"The fields for calculating driving directions appear as soon as you've placed the first placemark.","routeNotFound":"The driving directions couldn't be determined. Possible reasons: The starting address is not specific enough or it is too far from the destination address."},"text":{"sourceeditor":"Quelltext bearbeiten"},"popup":{"closePopup":"Close window (esc)"},"dropbox":{"check":"Select File","checkAll":"Select All","name":"Name","size":"Size","modified":"Modified","reload":"Refresh"},"form":{"copy":"Copy Field","lastElement":"The form has to contain at least one question.","adjHorizontal":"Horizontal","adjVertical":"Vertical","yes":"Yes","no":"No","delete":"Delete Field"},"email":{"cancel":"Cancel","emailAccount":"Email Account","fieldCanNotBeEmpty":"Something's missing!","passwordsDoNotMatch":"The passwords don't match.","newAccountButtonCaption":"Create an email account","getMoreMailAccountsButtonCaption":"Buy additional email accounts","disabledMessage":"Sorry, it looks like there's a problem. Please contact <a href=\"mailto:support@jimdo.com\">support@jimdo.com<\/a>.","needsToConfirmContactEMailAddressMessage":"Confirm your email address before creating an email account.","needsToConfirmContactEMailAddressButtonCaption":"Confirm your email address","noDomainMessage":"Sorry, you don't have a domain to create an email account.","createDomainButtonCaption":"Create a domain now!","noMailAccountsMessage":"You haven't added any email accounts yet.","createFirstAccountButtonCaption":"Create an email account","emailTableHeader":"Email","forwardToTableHeader":"Forward to","domainTableHeader":"Domain","deleteAccountDialogHeader":"Delete email account","deleteAccountDialogMessage":"You are about to delete your email account {account}. Have you backed up your emails? You won't be able to recover your emails after you delete your account.","deleteAccountDialogConfirmationMessage":"Do you really want to delete your email address?","deleteAccountDialogConfirmationButtonCaption":"Yes, delete my email account","deleteForwarderAccountDialogHeader":"Delete forwarding email address","deleteForwarderAccountDialogMessage":"You are about to delete your forwarding email address {account}. All emails sent to this address will no longer be forwarded.","deleteForwarderAccountDialogConfirmationMessage":"Do you really want to delete this forwarding address?","deleteForwarderAccountDialogConfirmationButtonCaption":"Yes, delete my forwarding email address","changePasswordDialogHeader":"Change Password","changePasswordDialogNewPasswordLabel":"New password","changePasswordDialogNewPasswordPlaceholder":"Password","changePasswordDialogPasswordConfirmationLabel":"Confirm your new password","changePasswordDialogPasswordConfirmationPlaceholder":"Confirm your password","changePasswordDialogConfirmationButtonCaption":"Change Password","createAccountDialogHeader":"New email account","createAccountDialogEmailLabel":"Email","createAccountDialogNameLabel":"Your Name","createAccountDialogDomainHasNoManagedMailserverMessage":"The MX records aren't correct for this domain. <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">More info<\/a>.","createAccountDialogFirstNamePlaceholder":"First Name","createAccountDialogLastNamePlaceholder":"Last Name","createAccountDialogPasswordLabel":"Create a password","createAccountDialogPasswordConfirmationLabel":"Confirm password","createAccountDialogConfirmationButtonCaption":"Create email account","createForwarderAccountDialogHeader":"New forwarding email address","createForwarderAccountDialogEmailLabel":"Email","createForwarderAccountDialogNameLabel":"Name","createForwarderAccountDialogConfirmationButtonCaption":"Create a forwarding email address","editForwarderAccountDialogHeader":"Edit forwarding email address","editForwarderAccountDialogToAddressHeader":"Forwarding destination for {account}:","accountDetailsHeader":"Email account details","accountDetailsDialogMessage":"Sign in to your {webmailLinkStart}webmail{webmailLinkEnd} , to read your emails. Or you can use an email program to send and receive your emails with the following settings:","accountDetailsDialogUsernameLabel":"Username","accountDetailsDialogTypeHeader":"Question type","accountDetailsDialogHostHeader":"Host","accountDetailsDialogPortHeader":"Port","accountDetailsDialogIncomingLabel":"Incoming mail","accountDetailsDialogOutgoingLabel":"Outgoing mail","accountDetailsDialogImapLabel":"IMAP with SSL","accountDetailsDialogPopLabel":"POP3 with SSL","accountDetailsDialogSmtpLabel":"SMTP with SSL","accountDetailsDialogGotToWebmailButtonCaption":"to your webmail.","accountDetailsDialogCloseButtonCaption":"Done","forwarderAccountCreationErrorMessage":"Your forwarding email address couldn't be created. Please try again later.","emailAccountCreationErrorMessage":"Your email account couldn't be created. Please try again later.","loadingErrorMessage":"Sorry, there was a problem and we couldn't load your email accounts right now. Please try again later.","changePasswordErrorMessage":"Sorry, we couldn't change the password for the account {account}.","accountDeletionErrorMessage":"Sorry, the account {account} could not be deleted.","accountCreationSuccessMessage":"Your email account {account} has been created and is ready to go!","accountDeletionSuccessMessage":"Your email account {account}  has been deleted.","forwarderAccountDeletionErrorMessage":"Your forwarding email address {account} couldn't be deleted.","forwarderAccountCreationSuccessMessage":"Your forwarding email address {account} is now up and running.","forwarderAccountDeletionSuccessMessage":"Your forwarding email address {account} is now deleted.","passwordChangeSuccessMessage":"The password for your email address {account}  has been changed.","passwordChangeErrorMessage":"The password for your email account {account}  couldn't be changed.","getMoreForwarderAccountsButtonCaption":"Purchase additional forwarding email addresses","newForwarderAccountButtonCaption":"Create a new forwarding email address","forwarderAccountExplanation":"Forwarding email addresses don't have their own inboxes. Instead, they automatically forward all emails to another email account.","emailAccountExplanation":"Create or update email accounts for your domain.","emailAccountTabLabel":"Email Accounts","forwarderAccountTabLabel":"Forwarding email address","noForwarderAccountsMessage":"Here are your forwarding email addresses.","createForwarderAccountDialogEmailPlaceholder":"Name","createForwarderAccountDialogToAddressHeader":"Emails to this address will now be forwarded to:","createForwarderAccountDialogToAddressInvalidMessage":"That is not a valid email address","editForwarderAccountErrorMessage":"Your forwarding email address couldn't be changed.","editForwarderAccountSuccessMessage":"Your forwarding email address has been changed.","editForwarderAccountDialogConfirmationButtonCaption":"Change forwarding address","createAccountDialogEmailPlaceholder":"Inbox","createAccountDialogFirstPasswordPlaceholder":"Password","createAccountDialogPasswordConfirmationPlaceholder":"Confirm your password","editForwarderAccountDialogText":"Emails sent to %(account)s are forwarded to:","forwarderListMultipleToAddresses":"More than one destination address...","forwarderToTextInputListFirstItemPlaceholder":"Destination address","forwarderToTextInputListAdditionalItemsPlaceholder":"Additional destination address (optional)","accountListMxServerWarningMessage":"Your MX records for {domains} are not set correctly. You can find more information <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">here<\/a>.","noDomainWithManagedMailserver":"You haven't set up your domain correctly yet. If you need help, these <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">step-by-step instructions<\/a> may be useful."}}};    //]]> 
-2016-02-17 13:55:44,871- INFO(NewsPoster.java:442)[Thread-1]-URL: http://www400.jimdo.com/app/cms/poll/status/
-2016-02-17 13:55:45,783-DEBUG(NewsPoster.java:174)[Thread-0]-     //<![CDATA[ var jimdoData = {"websiteId":"s17b69ed358058f76","subgroupId.obfuscated":"ge65e854e8060651d","pageId":2326186187,"pageId.obfuscated":"p37b074222c4fa687","packageId":1,"jQuery":"jimdoGen002","allPageIds":[2293484887,2293484987,2293485087,2293485187,2293485287,2293485387,2293485487,2293485587,2293485687,2326086887,2326095587,2326096487,2326129887,2326129987,2326130087,2326146187,2326146287,2326175687,2326177487,2326177687,2326178387,2326179487,2326185287,2326185687,2326186187],"indexPageId":2293484987,"isSuperAdmin":false,"isSupporter":false,"isStaging":false,"isTestserver":false,"isCMS":true,"isSwitchActive":false,"isSwitchDMPLayoutselection":false,"isSwitchDisableLegacyBackground":false,"safeMode":false,"template":{"type":3,"id":"283","url":"https:\/\/api.dmp.jimdo-server.com\/designs\/283\/versions\/1.3","version":"1.3.32","ownBgAllowed":true,"variation":null,"responsive":false},"bgConfig":{"id":101764287,"type":"picture","options":{"fixed":true},"images":[{"id":7629173287,"url":"https:\/\/image.jimcdn.com\/app\/cms\/image\/transf\/none\/path\/s17b69ed358058f76\/backgroundarea\/if63390083439184b\/version\/1450837606\/image.jpg"}]},"legacyBackgroundsAllowed":false,"isBackgroundPerPageEnabled":true,"hasActiveLegacyBackground":false,"backgroundAreaAllowed":true,"responsiveUpdateAllowed":false,"legacyBackgroundTypeMigratable":false,"showBgPerPageUpdateOverlay":true,"isProtectedPage":false,"isFirstSession":false,"bypassTemplateUpdateBlock":false,"oldSiteAdminDisabled":false,"cstok":"b365f4bbe02a420338b209f6cc00ddfe53cded97","session":{"ClickAndChange":"5a6cc362d3bae7d837634e8211f1f48775bfb672"},"jwt":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3ZWJzaXRlSWQiOiJzMTdiNjllZDM1ODA1OGY3NiIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNTQyMTEwMTI4fQ.N_5I8W0t6Csx_pTanAa3fd3G8lsWvSWhxUv0P-uXiz8","cacheJsKey":"c0ed0353c072b67345f1ffad8512b62984c80e5c","cacheCssKey":"416dda6fe6c86847d0b58079d7ba96871d081142","systemUrl":"http:\/\/www400.jimdo.com\/","cdnUrl":"\/\/assets1.jimstatic.com\/","appUrl":"http:\/\/a.jimdo.com\/","minUrl":"\/\/assets1.jimstatic.com\/app\/cdn\/min\/file\/","websiteUrl":"http:\/\/tapretipa.jimdo.com\/","javascriptNamespace":"jimdoGen002","internalLinkSuffix":"\/","internalLinkPrefix":"\/app\/s17b69ed358058f76\/","flashMinVersionUpload":"9.0.115","cmsLanguage":"en_US","maxPages":3000,"maxModulesPerPage":200,"commonUploadMaxFilesize":10485760,"commonUploadMaxFilecount":150,"copyPagesAllowed":false,"externalLinksInNavigationAllowed":false,"copyModulesAllowed":true,"canHaveOldTemplates":false,"restoreModulesAllowed":false,"angularLocale":"en_US","hasBlog":true,"blogTagList":"","rte":{"lang":"en","styleselect":false,"stylelist":false},"social":{"dropbox":false},"shop":{"usSalesTaxEnabled":true,"deliveryTimeTexts":{"1":"Ships within 1-3 days","2":"Ships within 3-5 days","3":"Delivery in 5-8 days"}},"isFlex":true,"matrixes":{"3307506987":["11721713687"],"3358658087":[]},"googleWebFonts":{"fonts":[1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1016,1017,1018,1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1033],"url":"https:\/\/fonts.googleapis.com\/css?family="},"dmp":{"backendUrl":"https:\/\/api.dmp.jimdo-server.com\/api\/published_designs","publishedDesignsApiVersion":"2","kickstarter.enabled":true,"googleFontsAvailable":true,"googleFontApiKey":"AIzaSyAHb9BjcZSeH6UwpRcdWlu_hbI7nKV6tjc","googleFontApiBaseUrl":"http:\/\/font-api.dmp.jimdo-server.com\/webfonts\/v1\/webfonts","defaultSubsets":{"latin":true},"typesquareFontsAvailable":false},"isDebug":false,"isCucumber":false,"tr":{"common":{"timeout":"An error occured. Whatever you were trying to do was interrupted. Please try again later.","refreshing":"Loading...","webOnly":"Sorry, you can't do this in Edit Mode, only on your actual Jimdo site.","spinnerInfiniteTitle":"Set inventory to unlimited","helpFormSubmit":"Your support inquiry has been sent. We'll respond as soon as we can.","ok":"Ok","select":"Select","abort":"cancel "},"eh":{"disabled":"You have just changed your template.  Please choose first whether to accept or reject those changes. Then you can change the photo."},"m":{"removeGallery":"All {count} images will be deleted permanently!","removeGuestbook":"All {count} comments will be deleted permanently!","removeHgrid":"All {count} elements in these columns will be deleted permanently!","updating":"refreshing...","reallyRemove":"Are you sure you want to delete this element?","confirmRemove":"Yes, delete!","close":"Close","abortRemove":"cancel ","attention":"Caution:","anchorTitle":"Go to the link {text}","firstAdd":"Add Element","remove":"Delete this element","up":"Move element up","down":"Move element down","copy":"Copy element","noFileSelected":"Please choose the file you'd like to upload to your Jimdo site.","tooManyModules":"The maximum number of elements for a page is 200, and this page currently has {current}. You can only add a new element to this page if you delete enough elements so that there are fewer than 200. You can also create a new page on your website and add more content there.","nestingNotAllowed":"Sorry, you can't add this element to a column.","reallyRemoveColumn":"Do you really want to delete this column?","warningModulesInColumn":"All {count} elements in this column will be permanently deleted!","setLinkText":"Set link","headline":"Heading","unsavedChanges":"Unsaved changes","discard":"Discard","confirmDiscard":"Confirm","upload":{"dictFileTooBig":"The photo is too large! Maximum size: 10.0 MB.","dictInvalidFileType":"You may only upload image files in JPG\/JPEG, GIF, PNG and BMP formats!","dictMaxFilesExceeded":"Es k\u00f6nnen maximal 150 Bilder gleichzeitig hochgeladen werden."},"common":{"delete":"delete","link":"Link","unlink":"Remove link"},"table":{"tableWidth":"Width","tableHeight":"Height","tableBorder":"Border size","tableProperties":"Table Options","tableBorderColor":"Border color","tableBackgroundColor":"Background color","tableCellProperties":"Cell Options","tableCellSpacing":"Margin","tableCellPadding":"Spacing"},"clickToAddModule":"Add Element","youHaveUnsavedElements":"You have unsaved elements!","states":{"loading":"Loading","deleting":"Deleting","empty":"This is empty","unsaved":"Not saved yet"},"imageUpload":{"wrong file. only images allowed":"Images can only be uploaded in the following formats: .jpg\/.jpeg, .gif, .png, .tiff, and .bmp. ","Sorry, the file is corrupted and cannot be used.":"This file is corrupted and cannot be uploaded."},"colorPicker":{"cancel":"cancel ","select":"Select color"},"twitter":{"Please insert your twitter username":"Please enter your Twitter username"}},"cb":{"dragYourElement":"Drag Elements here in order to move them to other subpages on your website."},"navi":{"moveUp":"Move this page up","moveDown":"Move this page down","moveLeft":"Move this page one level up","moveRight":"Move this page one level down","addPage":"Add a new page","copyPage":"Copy Page","deletePage":"Delete this page","hidePage":"Hide page in navigation","externalLink":"External Link","externalLinkPlaceholder":"i.e. www.jimdo.com or support@jimdo.com","deleteWithSubPages":"This page {title} has sub-pages. Please delete these separately.","reallyRemove":"Do you really want to remove the page {title}?","confirmRemove":"Yes, delete!","tooManyPages":"Unfortunately, no more than 3000 pages can be created.","deleteLastPage":"This is your only remaining page. Please create a new page before you delete this one."},"flex":{"all":"all"},"gmap":{"newMarker":"New Placemark","search":"Find a location","searchNotFound":"The entered address doesn't exist or couldn't be found.","routesNotice":"The fields for calculating driving directions appear as soon as you've placed the first placemark.","routeNotFound":"The driving directions couldn't be determined. Possible reasons: The starting address is not specific enough or it is too far from the destination address."},"text":{"sourceeditor":"Quelltext bearbeiten"},"popup":{"closePopup":"Close window (esc)"},"dropbox":{"check":"Select File","checkAll":"Select All","name":"Name","size":"Size","modified":"Modified","reload":"Refresh"},"form":{"copy":"Copy Field","lastElement":"The form has to contain at least one question.","adjHorizontal":"Horizontal","adjVertical":"Vertical","yes":"Yes","no":"No","delete":"Delete Field"},"email":{"cancel":"Cancel","emailAccount":"Email Account","fieldCanNotBeEmpty":"Something's missing!","passwordsDoNotMatch":"The passwords don't match.","newAccountButtonCaption":"Create an email account","getMoreMailAccountsButtonCaption":"Buy additional email accounts","disabledMessage":"Sorry, it looks like there's a problem. Please contact <a href=\"mailto:support@jimdo.com\">support@jimdo.com<\/a>.","needsToConfirmContactEMailAddressMessage":"Confirm your email address before creating an email account.","needsToConfirmContactEMailAddressButtonCaption":"Confirm your email address","noDomainMessage":"Sorry, you don't have a domain to create an email account.","createDomainButtonCaption":"Create a domain now!","noMailAccountsMessage":"You haven't added any email accounts yet.","createFirstAccountButtonCaption":"Create an email account","emailTableHeader":"Email","forwardToTableHeader":"Forward to","domainTableHeader":"Domain","deleteAccountDialogHeader":"Delete email account","deleteAccountDialogMessage":"You are about to delete your email account {account}. Have you backed up your emails? You won't be able to recover your emails after you delete your account.","deleteAccountDialogConfirmationMessage":"Do you really want to delete your email address?","deleteAccountDialogConfirmationButtonCaption":"Yes, delete my email account","deleteForwarderAccountDialogHeader":"Delete forwarding email address","deleteForwarderAccountDialogMessage":"You are about to delete your forwarding email address {account}. All emails sent to this address will no longer be forwarded.","deleteForwarderAccountDialogConfirmationMessage":"Do you really want to delete this forwarding address?","deleteForwarderAccountDialogConfirmationButtonCaption":"Yes, delete my forwarding email address","changePasswordDialogHeader":"Change Password","changePasswordDialogNewPasswordLabel":"New password","changePasswordDialogNewPasswordPlaceholder":"Password","changePasswordDialogPasswordConfirmationLabel":"Confirm your new password","changePasswordDialogPasswordConfirmationPlaceholder":"Confirm your password","changePasswordDialogConfirmationButtonCaption":"Change Password","createAccountDialogHeader":"New email account","createAccountDialogEmailLabel":"Email","createAccountDialogNameLabel":"Your Name","createAccountDialogDomainHasNoManagedMailserverMessage":"The MX records aren't correct for this domain. <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">More info<\/a>.","createAccountDialogFirstNamePlaceholder":"First Name","createAccountDialogLastNamePlaceholder":"Last Name","createAccountDialogPasswordLabel":"Create a password","createAccountDialogPasswordConfirmationLabel":"Confirm password","createAccountDialogConfirmationButtonCaption":"Create email account","createForwarderAccountDialogHeader":"New forwarding email address","createForwarderAccountDialogEmailLabel":"Email","createForwarderAccountDialogNameLabel":"Name","createForwarderAccountDialogConfirmationButtonCaption":"Create a forwarding email address","editForwarderAccountDialogHeader":"Edit forwarding email address","editForwarderAccountDialogToAddressHeader":"Forwarding destination for {account}:","accountDetailsHeader":"Email account details","accountDetailsDialogMessage":"Sign in to your {webmailLinkStart}webmail{webmailLinkEnd} , to read your emails. Or you can use an email program to send and receive your emails with the following settings:","accountDetailsDialogUsernameLabel":"Username","accountDetailsDialogTypeHeader":"Question type","accountDetailsDialogHostHeader":"Host","accountDetailsDialogPortHeader":"Port","accountDetailsDialogIncomingLabel":"Incoming mail","accountDetailsDialogOutgoingLabel":"Outgoing mail","accountDetailsDialogImapLabel":"IMAP with SSL","accountDetailsDialogPopLabel":"POP3 with SSL","accountDetailsDialogSmtpLabel":"SMTP with SSL","accountDetailsDialogGotToWebmailButtonCaption":"to your webmail.","accountDetailsDialogCloseButtonCaption":"Done","forwarderAccountCreationErrorMessage":"Your forwarding email address couldn't be created. Please try again later.","emailAccountCreationErrorMessage":"Your email account couldn't be created. Please try again later.","loadingErrorMessage":"Sorry, there was a problem and we couldn't load your email accounts right now. Please try again later.","changePasswordErrorMessage":"Sorry, we couldn't change the password for the account {account}.","accountDeletionErrorMessage":"Sorry, the account {account} could not be deleted.","accountCreationSuccessMessage":"Your email account {account} has been created and is ready to go!","accountDeletionSuccessMessage":"Your email account {account}  has been deleted.","forwarderAccountDeletionErrorMessage":"Your forwarding email address {account} couldn't be deleted.","forwarderAccountCreationSuccessMessage":"Your forwarding email address {account} is now up and running.","forwarderAccountDeletionSuccessMessage":"Your forwarding email address {account} is now deleted.","passwordChangeSuccessMessage":"The password for your email address {account}  has been changed.","passwordChangeErrorMessage":"The password for your email account {account}  couldn't be changed.","getMoreForwarderAccountsButtonCaption":"Purchase additional forwarding email addresses","newForwarderAccountButtonCaption":"Create a new forwarding email address","forwarderAccountExplanation":"Forwarding email addresses don't have their own inboxes. Instead, they automatically forward all emails to another email account.","emailAccountExplanation":"Create or update email accounts for your domain.","emailAccountTabLabel":"Email Accounts","forwarderAccountTabLabel":"Forwarding email address","noForwarderAccountsMessage":"Here are your forwarding email addresses.","createForwarderAccountDialogEmailPlaceholder":"Name","createForwarderAccountDialogToAddressHeader":"Emails to this address will now be forwarded to:","createForwarderAccountDialogToAddressInvalidMessage":"That is not a valid email address","editForwarderAccountErrorMessage":"Your forwarding email address couldn't be changed.","editForwarderAccountSuccessMessage":"Your forwarding email address has been changed.","editForwarderAccountDialogConfirmationButtonCaption":"Change forwarding address","createAccountDialogEmailPlaceholder":"Inbox","createAccountDialogFirstPasswordPlaceholder":"Password","createAccountDialogPasswordConfirmationPlaceholder":"Confirm your password","editForwarderAccountDialogText":"Emails sent to %(account)s are forwarded to:","forwarderListMultipleToAddresses":"More than one destination address...","forwarderToTextInputListFirstItemPlaceholder":"Destination address","forwarderToTextInputListAdditionalItemsPlaceholder":"Additional destination address (optional)","accountListMxServerWarningMessage":"Your MX records for {domains} are not set correctly. You can find more information <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">here<\/a>.","noDomainWithManagedMailserver":"You haven't set up your domain correctly yet. If you need help, these <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">step-by-step instructions<\/a> may be useful."}}};    //]]> 
-2016-02-17 13:55:45,786- INFO(NewsPoster.java:442)[Thread-0]-URL: http://www400.jimdo.com/app/cms/poll/status/
-2016-02-17 13:55:46,040- INFO(NewsPoster.java:322)[Thread-1]-Status of htmlCode post:success
-2016-02-17 13:55:46,425- INFO(NewsPoster.java:386)[Thread-1]-Error count:0
-2016-02-17 13:55:46,426- INFO(NewsPoster.java:442)[Thread-1]-URL: http://www400.jimdo.com/app/cms/preview/index/pageId/2080637798
-2016-02-17 13:55:46,451- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/auth/signin/start/?return=%2Fapp%2Fs895948f1d653d920%2F%3Fsafemode%3D0
-2016-02-17 13:55:46,552-ERROR(SnippetExtractor.java:400)[Thread-2]-Responce code not equals 200 for proxy SOCKS @ /185.44.78.73:1085
-2016-02-17 13:55:46,554-ERROR(SnippetExtractor.java:179)[Thread-2]-Error occured during processing key: Download+(eBook)+The+Sisters'+Grimoire
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+The+Sisters'+Grimoire&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
+2016-03-04 14:46:45,940- INFO(AccountFactory.java:207)[main]-URL: http://a.jimdo.com/app/auth/signin/authenticate
+2016-03-04 14:46:49,026- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/auth/signin/start/?return=%2Fapp%2Fs17b69ed358058f76%2F%3Fsafemode%3D0
+2016-03-04 14:46:49,550- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s17b69ed358058f76/?safemode=0
+2016-03-04 14:46:49,753- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s17b69ed358058f76/pc161310ca5785d62/?safemode=0
+2016-03-04 14:46:49,949- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s17b69ed358058f76/pc161310ca5785d62/
+2016-03-04 14:47:19,467- INFO(AccountFactory.java:207)[main]-URL: http://a.jimdo.com/app/auth/signin/authenticate
+2016-03-04 14:47:22,484- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/auth/signin/start/?return=%2Fapp%2Fs17b69ed358058f76%2F%3Fsafemode%3D0
+2016-03-04 14:47:23,033- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s17b69ed358058f76/?safemode=0
+2016-03-04 14:47:23,251- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s17b69ed358058f76/pc161310ca5785d62/?safemode=0
+2016-03-04 14:47:23,475- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s17b69ed358058f76/pc161310ca5785d62/
+2016-03-04 14:47:24,930- INFO(JimboTaskRunner.java:249)[main]-Task retrieved. File name: article_86106.txt
+2016-03-04 14:47:24,972- INFO(AccountFactory.java:207)[main]-URL: http://a.jimdo.com/app/auth/signin/authenticate
+2016-03-04 14:47:24,995- INFO(SnippetExtractor.java:218)[Thread-0]-Recude page from 29 to 9
+2016-03-04 14:47:25,895- INFO(SnippetExtractor.java:218)[Thread-0]-Recude page from 9 to 3
+2016-03-04 14:47:28,832- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/auth/signin/start/?return=%2Fapp%2Fs3d29025a2536d1e9%2F%3Fsafemode%3D0
+2016-03-04 14:47:28,845- INFO(NewsPoster.java:442)[Thread-0]-URL: http://www400.jimdo.com/app/cms/poll/status/
+2016-03-04 14:47:30,083- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s3d29025a2536d1e9/?safemode=0
+2016-03-04 14:47:30,428- INFO(NewsPoster.java:322)[Thread-0]-Status of htmlCode post:success
+2016-03-04 14:47:30,483- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s3d29025a2536d1e9/pba6cc6e7a2ac6726/?safemode=0
+2016-03-04 14:47:30,879- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s3d29025a2536d1e9/pba6cc6e7a2ac6726/
+2016-03-04 14:47:30,996- INFO(NewsPoster.java:386)[Thread-0]-Error count:0
+2016-03-04 14:47:30,997- INFO(NewsPoster.java:442)[Thread-0]-URL: http://www400.jimdo.com/app/cms/preview/index/pageId/2327646287
+2016-03-04 14:47:32,002- INFO(JimboTaskRunner.java:249)[main]-Task retrieved. File name: article_86122.txt
+2016-03-04 14:47:32,004- WARN(AccountFactory.java:407)[Thread-0]-MAX news count for account were posted ( news were posted). Account 1 was excluded from request at all
+2016-03-04 14:47:32,008- INFO(SnippetExtractor.java:218)[Thread-1]-Recude page from 49 to 16
+2016-03-04 14:47:32,009- INFO(AccountFactory.java:207)[main]-URL: http://a.jimdo.com/app/auth/signin/authenticate
+2016-03-04 14:47:32,843- INFO(SnippetExtractor.java:218)[Thread-1]-Recude page from 16 to 5
+2016-03-04 14:47:34,974- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/auth/signin/start/?return=%2Fapp%2Fsf8933c05dac9c0d0%2F%3Fsafemode%3D0
+2016-03-04 14:47:35,372- INFO(NewsPoster.java:442)[Thread-1]-URL: http://www400.jimdo.com/app/cms/poll/status/
+2016-03-04 14:47:35,675- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/sf8933c05dac9c0d0/?safemode=0
+2016-03-04 14:47:35,924- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/sf8933c05dac9c0d0/pd9df4f6dc4659a8a/?safemode=0
+2016-03-04 14:47:36,168- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/sf8933c05dac9c0d0/pd9df4f6dc4659a8a/
+2016-03-04 14:47:36,883- INFO(NewsPoster.java:322)[Thread-1]-Status of htmlCode post:success
+2016-03-04 14:47:37,127- INFO(JimboTaskRunner.java:249)[main]-Task retrieved. File name: article_86110.txt
+2016-03-04 14:47:37,129- INFO(AccountFactory.java:207)[main]-URL: http://a.jimdo.com/app/auth/signin/authenticate
+2016-03-04 14:47:37,129- INFO(SnippetExtractor.java:218)[Thread-2]-Recude page from 44 to 14
+2016-03-04 14:47:37,328- INFO(NewsPoster.java:386)[Thread-1]-Error count:0
+2016-03-04 14:47:37,328- INFO(NewsPoster.java:442)[Thread-1]-URL: http://www400.jimdo.com/app/cms/preview/index/pageId/2082790198
+2016-03-04 14:47:40,016-ERROR(SnippetExtractor.java:400)[Thread-2]-Responce code not equals 200 for proxy SOCKS @ /46.161.60.34:1085
+2016-03-04 14:47:40,018-ERROR(SnippetExtractor.java:179)[Thread-2]-Error occured during processing key: Download+(eBook)+Poison+and+Perfidy
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Poison+and+Perfidy&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -83,21 +55,19 @@ java.io.IOException: Server returned HTTP response code: 403 for URL: https://ww
 	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
 	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
 	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+The+Sisters'+Grimoire&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
+	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:113)
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Poison+and+Perfidy&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
 	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
 	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
 	... 5 more
-2016-02-17 13:55:46,558-DEBUG(SnippetExtractor.java:170)[Thread-2]-Get another proxy: 185.44.77.171:1085
-2016-02-17 13:55:46,558-DEBUG(SnippetExtractor.java:610)[Thread-2]-Using google.com for getting snippets for key 'Download+(eBook)+The+Sisters'+Grimoire'
-2016-02-17 13:55:46,558-DEBUG(SnippetExtractor.java:378)[Thread-2]-Using proxy: SOCKS @ /185.44.77.171:1085
-2016-02-17 13:55:46,559-DEBUG(SnippetExtractor.java:382)[Thread-2]-https://www.google.com/search?q=Download+(eBook)+The+Sisters'+Grimoire&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
-2016-02-17 13:55:47,445-ERROR(SnippetExtractor.java:400)[Thread-2]-Responce code not equals 200 for proxy SOCKS @ /185.44.77.171:1085
-2016-02-17 13:55:47,446-ERROR(SnippetExtractor.java:179)[Thread-2]-Error occured during processing key: Download+(eBook)+The+Sisters'+Grimoire
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+The+Sisters'+Grimoire&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
+2016-03-04 14:47:40,111- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/auth/signin/start/?return=%2Fapp%2Fs895948f1d653d920%2F%3Fsafemode%3D0
+2016-03-04 14:47:40,589- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s895948f1d653d920/?safemode=0
+2016-03-04 14:47:40,659-ERROR(SnippetExtractor.java:400)[Thread-2]-Responce code not equals 200 for proxy SOCKS @ /188.72.127.153:1085
+2016-03-04 14:47:40,660-ERROR(SnippetExtractor.java:179)[Thread-2]-Error occured during processing key: Download+(eBook)+Poison+and+Perfidy
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Poison+and+Perfidy&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -114,48 +84,19 @@ java.io.IOException: Server returned HTTP response code: 403 for URL: https://ww
 	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
 	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
 	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+The+Sisters'+Grimoire&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
+	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:113)
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Poison+and+Perfidy&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
 	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
 	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
 	... 5 more
-2016-02-17 13:55:47,446-DEBUG(SnippetExtractor.java:170)[Thread-2]-Get another proxy: 79.110.28.50:1085
-2016-02-17 13:55:47,446-DEBUG(SnippetExtractor.java:610)[Thread-2]-Using google.com for getting snippets for key 'Download+(eBook)+The+Sisters'+Grimoire'
-2016-02-17 13:55:47,446-DEBUG(SnippetExtractor.java:378)[Thread-2]-Using proxy: SOCKS @ /79.110.28.50:1085
-2016-02-17 13:55:47,447-DEBUG(SnippetExtractor.java:382)[Thread-2]-https://www.google.com/search?q=Download+(eBook)+The+Sisters'+Grimoire&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
-2016-02-17 13:55:47,835- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s895948f1d653d920/?safemode=0
-2016-02-17 13:55:47,964- INFO(NewsPoster.java:322)[Thread-0]-Status of htmlCode post:success
-2016-02-17 13:55:48,217- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s895948f1d653d920/pdf0bbdc14eb5a61c/?safemode=0
-2016-02-17 13:55:48,612- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s895948f1d653d920/pdf0bbdc14eb5a61c/
-2016-02-17 13:55:48,695- INFO(NewsPoster.java:386)[Thread-0]-Error count:0
-2016-02-17 13:55:48,696- INFO(NewsPoster.java:442)[Thread-0]-URL: http://www400.jimdo.com/app/cms/preview/index/pageId/2326186187
-2016-02-17 13:55:49,462-DEBUG(AccountFactory.java:385)[Thread-0]-Posted account news incremented: 1
-2016-02-17 13:55:49,462- INFO(JimboTaskRunner.java:243)[main]-Task. File name: article_86112.txt
-2016-02-17 13:55:49,463-DEBUG(TaskFactory.java:75)[main]-INC thread: 4
-2016-02-17 13:55:49,463-DEBUG(AccountFactory.java:397)[Thread-0]-Used account size decremented: 0
-2016-02-17 13:55:49,464- WARN(AccountFactory.java:402)[Thread-0]-Account tapretipa was excluded from request at all
-2016-02-17 13:55:49,464-DEBUG(TaskFactory.java:80)[Thread-0]-DEC thread: 3
-2016-02-17 13:55:49,465-DEBUG(AccountFactory.java:385)[Thread-1]-Posted account news incremented: 1
-2016-02-17 13:55:49,465-DEBUG(AccountFactory.java:397)[Thread-1]-Used account size decremented: 0
-2016-02-17 13:55:49,465-DEBUG(SnippetExtractor.java:150)[Thread-3]-Get proxy: 185.44.78.157:1085
-2016-02-17 13:55:49,465- WARN(AccountFactory.java:402)[Thread-1]-Account siledorlau was excluded from request at all
-2016-02-17 13:55:49,465- INFO(SnippetExtractor.java:218)[Thread-3]-Recude page from 47 to 15
-2016-02-17 13:55:49,465-DEBUG(TaskFactory.java:80)[Thread-1]-DEC thread: 2
-2016-02-17 13:55:49,465-DEBUG(AccountFactory.java:345)[main]-Used account ' oottripewla 'size incremented to 1
-2016-02-17 13:55:49,466- INFO(AccountFactory.java:207)[main]-URL: http://a.jimdo.com/app/auth/signin/authenticate
-2016-02-17 13:55:49,465-DEBUG(SnippetExtractor.java:610)[Thread-3]-Using google.com for getting snippets for key 'Download+(eBook)+Finding+Sofia'
-2016-02-17 13:55:49,467-DEBUG(SnippetExtractor.java:378)[Thread-3]-Using proxy: SOCKS @ /185.44.78.157:1085
-2016-02-17 13:55:49,468-DEBUG(SnippetExtractor.java:382)[Thread-3]-https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-2016-02-17 13:55:49,783- INFO(SnippetExtractor.java:218)[Thread-2]-Recude page from 14 to 4
-2016-02-17 13:55:49,783-DEBUG(SnippetExtractor.java:610)[Thread-2]-Using google.com for getting snippets for key 'Download+(eBook)+The+Sisters'+Grimoire'
-2016-02-17 13:55:49,783-DEBUG(SnippetExtractor.java:378)[Thread-2]-Using proxy: SOCKS @ /79.110.28.50:1085
-2016-02-17 13:55:49,784-DEBUG(SnippetExtractor.java:382)[Thread-2]-https://www.google.com/search?q=Download+(eBook)+The+Sisters'+Grimoire&lr=lang_en&oe=utf-8&gws_rd=ssl&start=30
-2016-02-17 13:55:50,119-ERROR(SnippetExtractor.java:400)[Thread-3]-Responce code not equals 200 for proxy SOCKS @ /185.44.78.157:1085
-2016-02-17 13:55:50,119-ERROR(SnippetExtractor.java:179)[Thread-3]-Error occured during processing key: Download+(eBook)+Finding+Sofia
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
+2016-03-04 14:47:40,788- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s895948f1d653d920/pdf0bbdc14eb5a61c/?safemode=0
+2016-03-04 14:47:40,992- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s895948f1d653d920/pdf0bbdc14eb5a61c/
+2016-03-04 14:47:41,549-ERROR(SnippetExtractor.java:400)[Thread-2]-Responce code not equals 200 for proxy SOCKS @ /185.44.79.13:1085
+2016-03-04 14:47:41,550-ERROR(SnippetExtractor.java:179)[Thread-2]-Error occured during processing key: Download+(eBook)+Poison+and+Perfidy
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Poison+and+Perfidy&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -172,883 +113,43 @@ java.io.IOException: Server returned HTTP response code: 403 for URL: https://ww
 	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
 	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
 	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
+	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:113)
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Poison+and+Perfidy&lr=lang_en&oe=utf-8&gws_rd=ssl&start=130
 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
 	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
 	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
 	... 5 more
-2016-02-17 13:55:50,120-DEBUG(SnippetExtractor.java:170)[Thread-3]-Get another proxy: 185.44.78.120:1085
-2016-02-17 13:55:50,120-DEBUG(SnippetExtractor.java:610)[Thread-3]-Using google.com for getting snippets for key 'Download+(eBook)+Finding+Sofia'
-2016-02-17 13:55:50,120-DEBUG(SnippetExtractor.java:378)[Thread-3]-Using proxy: SOCKS @ /185.44.78.120:1085
-2016-02-17 13:55:50,121-DEBUG(SnippetExtractor.java:382)[Thread-3]-https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-2016-02-17 13:55:50,277- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/auth/signin/start/?return=%2Fapp%2Fs1edaf5dc21099be9%2F%3Fsafemode%3D0
-2016-02-17 13:55:50,624-DEBUG(SnippetExtractor.java:338)[Thread-2]-Snippets.size() = (13); linkList.size() = (0), snipCount = (12)
-2016-02-17 13:55:50,710- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s1edaf5dc21099be9/?safemode=0
-2016-02-17 13:55:50,914- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s1edaf5dc21099be9/p0df17c7bf960efb7/?safemode=0
-2016-02-17 13:55:50,919-ERROR(SnippetExtractor.java:400)[Thread-3]-Responce code not equals 200 for proxy SOCKS @ /185.44.78.120:1085
-2016-02-17 13:55:50,921-ERROR(SnippetExtractor.java:179)[Thread-3]-Error occured during processing key: Download+(eBook)+Finding+Sofia
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:50,921-DEBUG(SnippetExtractor.java:170)[Thread-3]-Get another proxy: 141.101.132.22:1085
-2016-02-17 13:55:50,922-DEBUG(SnippetExtractor.java:610)[Thread-3]-Using google.com for getting snippets for key 'Download+(eBook)+Finding+Sofia'
-2016-02-17 13:55:50,922-DEBUG(SnippetExtractor.java:378)[Thread-3]-Using proxy: SOCKS @ /141.101.132.22:1085
-2016-02-17 13:55:50,922-DEBUG(SnippetExtractor.java:382)[Thread-3]-https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-2016-02-17 13:55:51,105- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s1edaf5dc21099be9/p0df17c7bf960efb7/
-2016-02-17 13:55:51,906- INFO(JimboTaskRunner.java:243)[main]-Task. File name: article_86118.txt
-2016-02-17 13:55:51,907-DEBUG(TaskFactory.java:75)[main]-INC thread: 3
-2016-02-17 13:55:51,908-DEBUG(SnippetExtractor.java:150)[Thread-4]-Get proxy: 195.34.78.78:1085
-2016-02-17 13:55:51,908- INFO(SnippetExtractor.java:218)[Thread-4]-Recude page from 49 to 16
-2016-02-17 13:55:51,909-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:55:51,910-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /195.34.78.78:1085
-2016-02-17 13:55:51,911-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:55:52,098-ERROR(SnippetExtractor.java:400)[Thread-3]-Responce code not equals 200 for proxy SOCKS @ /141.101.132.22:1085
-2016-02-17 13:55:52,099-ERROR(SnippetExtractor.java:179)[Thread-3]-Error occured during processing key: Download+(eBook)+Finding+Sofia
-java.io.IOException: Server returned HTTP response code: 503 for URL: https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:52,100-DEBUG(SnippetExtractor.java:170)[Thread-3]-Get another proxy: 188.72.96.90:1085
-2016-02-17 13:55:52,100-DEBUG(SnippetExtractor.java:610)[Thread-3]-Using google.com for getting snippets for key 'Download+(eBook)+Finding+Sofia'
-2016-02-17 13:55:52,101-DEBUG(SnippetExtractor.java:378)[Thread-3]-Using proxy: SOCKS @ /188.72.96.90:1085
-2016-02-17 13:55:52,101-DEBUG(SnippetExtractor.java:382)[Thread-3]-https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-2016-02-17 13:55:52,682-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /195.34.78.78:1085
-2016-02-17 13:55:52,683-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:52,683-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 91.229.229.117:1085
-2016-02-17 13:55:52,684-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:55:52,684-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /91.229.229.117:1085
-2016-02-17 13:55:52,684-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:55:52,863-ERROR(SnippetExtractor.java:400)[Thread-3]-Responce code not equals 200 for proxy SOCKS @ /188.72.96.90:1085
-2016-02-17 13:55:52,863-ERROR(SnippetExtractor.java:179)[Thread-3]-Error occured during processing key: Download+(eBook)+Finding+Sofia
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:52,864-DEBUG(SnippetExtractor.java:170)[Thread-3]-Get another proxy: 91.229.229.26:1085
-2016-02-17 13:55:52,864-DEBUG(SnippetExtractor.java:610)[Thread-3]-Using google.com for getting snippets for key 'Download+(eBook)+Finding+Sofia'
-2016-02-17 13:55:52,864-DEBUG(SnippetExtractor.java:378)[Thread-3]-Using proxy: SOCKS @ /91.229.229.26:1085
-2016-02-17 13:55:52,864-DEBUG(SnippetExtractor.java:382)[Thread-3]-https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-2016-02-17 13:55:53,490-ERROR(SnippetExtractor.java:400)[Thread-3]-Responce code not equals 200 for proxy SOCKS @ /91.229.229.26:1085
-2016-02-17 13:55:53,491-ERROR(SnippetExtractor.java:179)[Thread-3]-Error occured during processing key: Download+(eBook)+Finding+Sofia
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:53,492-DEBUG(SnippetExtractor.java:170)[Thread-3]-Get another proxy: 79.110.28.101:1085
-2016-02-17 13:55:53,492-DEBUG(SnippetExtractor.java:610)[Thread-3]-Using google.com for getting snippets for key 'Download+(eBook)+Finding+Sofia'
-2016-02-17 13:55:53,493-DEBUG(SnippetExtractor.java:378)[Thread-3]-Using proxy: SOCKS @ /79.110.28.101:1085
-2016-02-17 13:55:53,493-DEBUG(SnippetExtractor.java:382)[Thread-3]-https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=140
-2016-02-17 13:55:53,550-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /91.229.229.117:1085
-2016-02-17 13:55:53,550-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:53,551-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 5.101.219.169:1085
-2016-02-17 13:55:53,551-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:55:53,551-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /5.101.219.169:1085
-2016-02-17 13:55:53,551-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:55:54,216-DEBUG(NewsPoster.java:174)[Thread-2]-     //<![CDATA[ var jimdoData = {"websiteId":"sf8933c05dac9c0d0","subgroupId.obfuscated":"ge65e854e8060651d","pageId":2585823625,"pageId.obfuscated":"pe007c82e66f462c0","packageId":1,"jQuery":"jimdoGen002","allPageIds":[2462885925,2462886025,2462886125,2462886225,2462886325,2462886425,2462886525,2462886625,2462886725,2584490925,2584491725,2584589725,2584593125,2585046625,2585046825,2585046925,2585246525,2585250225,2585709125,2585740125,2585773025,2585818425,2585821925,2585823625],"indexPageId":2462886025,"isSuperAdmin":false,"isSupporter":false,"isStaging":false,"isTestserver":false,"isCMS":true,"isSwitchActive":false,"isSwitchDMPLayoutselection":false,"isSwitchDisableLegacyBackground":false,"safeMode":false,"template":{"type":3,"id":"283","url":"https:\/\/api.dmp.jimdo-server.com\/designs\/283\/versions\/1.3","version":"1.3.32","ownBgAllowed":true,"variation":null,"responsive":false},"bgConfig":{"id":121806125,"type":"picture","options":{"fixed":true},"images":[{"id":8215122525,"url":"https:\/\/image.jimcdn.com\/app\/cms\/image\/transf\/none\/path\/sf8933c05dac9c0d0\/backgroundarea\/i043276ab476f4a65\/version\/1450837656\/image.jpg"}]},"legacyBackgroundsAllowed":false,"isBackgroundPerPageEnabled":true,"hasActiveLegacyBackground":false,"backgroundAreaAllowed":true,"responsiveUpdateAllowed":false,"legacyBackgroundTypeMigratable":false,"showBgPerPageUpdateOverlay":true,"isProtectedPage":false,"isFirstSession":false,"bypassTemplateUpdateBlock":false,"oldSiteAdminDisabled":false,"cstok":"7d70575e462f520da21e81d712f45beba136df8c","session":{"ClickAndChange":"623ec9499711d6446484562eb9db39e8e5c2dbdc"},"jwt":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3ZWJzaXRlSWQiOiJzZjg5MzNjMDVkYWM5YzBkMCIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNTQyMTEwMTM3fQ.UvQeUcpEx0eq8fiWY0shsjZvRHHH7NQZ99yh-O_Lvk4","cacheJsKey":"c0ed0353c072b67345f1ffad8512b62984c80e5c","cacheCssKey":"416dda6fe6c86847d0b58079d7ba96871d081142","systemUrl":"http:\/\/www400.jimdo.com\/","cdnUrl":"\/\/assets1.jimstatic.com\/","appUrl":"http:\/\/a.jimdo.com\/","minUrl":"\/\/assets1.jimstatic.com\/app\/cdn\/min\/file\/","websiteUrl":"http:\/\/vecircongder.jimdo.com\/","javascriptNamespace":"jimdoGen002","internalLinkSuffix":"\/","internalLinkPrefix":"\/app\/sf8933c05dac9c0d0\/","flashMinVersionUpload":"9.0.115","cmsLanguage":"en_US","maxPages":3000,"maxModulesPerPage":200,"commonUploadMaxFilesize":10485760,"commonUploadMaxFilecount":150,"copyPagesAllowed":false,"externalLinksInNavigationAllowed":false,"copyModulesAllowed":true,"canHaveOldTemplates":false,"restoreModulesAllowed":false,"angularLocale":"en_US","hasBlog":true,"blogTagList":"","rte":{"lang":"en","styleselect":false,"stylelist":false},"social":{"dropbox":false},"shop":{"usSalesTaxEnabled":true,"deliveryTimeTexts":{"1":"Ships within 1-3 days","2":"Ships within 3-5 days","3":"Delivery in 5-8 days"}},"isFlex":true,"matrixes":{"3697890825":["12844190125"],"3897304525":[]},"googleWebFonts":{"fonts":[1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1016,1017,1018,1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1033],"url":"https:\/\/fonts.googleapis.com\/css?family="},"dmp":{"backendUrl":"https:\/\/api.dmp.jimdo-server.com\/api\/published_designs","publishedDesignsApiVersion":"2","kickstarter.enabled":true,"googleFontsAvailable":true,"googleFontApiKey":"AIzaSyAHb9BjcZSeH6UwpRcdWlu_hbI7nKV6tjc","googleFontApiBaseUrl":"http:\/\/font-api.dmp.jimdo-server.com\/webfonts\/v1\/webfonts","defaultSubsets":{"latin":true},"typesquareFontsAvailable":false},"isDebug":false,"isCucumber":false,"tr":{"common":{"timeout":"An error occured. Whatever you were trying to do was interrupted. Please try again later.","refreshing":"Loading...","webOnly":"Sorry, you can't do this in Edit Mode, only on your actual Jimdo site.","spinnerInfiniteTitle":"Set inventory to unlimited","helpFormSubmit":"Your support inquiry has been sent. We'll respond as soon as we can.","ok":"Ok","select":"Select","abort":"cancel "},"eh":{"disabled":"You have just changed your template.  Please choose first whether to accept or reject those changes. Then you can change the photo."},"m":{"removeGallery":"All {count} images will be deleted permanently!","removeGuestbook":"All {count} comments will be deleted permanently!","removeHgrid":"All {count} elements in these columns will be deleted permanently!","updating":"refreshing...","reallyRemove":"Are you sure you want to delete this element?","confirmRemove":"Yes, delete!","close":"Close","abortRemove":"cancel ","attention":"Caution:","anchorTitle":"Go to the link {text}","firstAdd":"Add Element","remove":"Delete this element","up":"Move element up","down":"Move element down","copy":"Copy element","noFileSelected":"Please choose the file you'd like to upload to your Jimdo site.","tooManyModules":"The maximum number of elements for a page is 200, and this page currently has {current}. You can only add a new element to this page if you delete enough elements so that there are fewer than 200. You can also create a new page on your website and add more content there.","nestingNotAllowed":"Sorry, you can't add this element to a column.","reallyRemoveColumn":"Do you really want to delete this column?","warningModulesInColumn":"All {count} elements in this column will be permanently deleted!","setLinkText":"Set link","headline":"Heading","unsavedChanges":"Unsaved changes","discard":"Discard","confirmDiscard":"Confirm","upload":{"dictFileTooBig":"The photo is too large! Maximum size: 10.0 MB.","dictInvalidFileType":"You may only upload image files in JPG\/JPEG, GIF, PNG and BMP formats!","dictMaxFilesExceeded":"Es k\u00f6nnen maximal 150 Bilder gleichzeitig hochgeladen werden."},"common":{"delete":"delete","link":"Link","unlink":"Remove link"},"table":{"tableWidth":"Width","tableHeight":"Height","tableBorder":"Border size","tableProperties":"Table Options","tableBorderColor":"Border color","tableBackgroundColor":"Background color","tableCellProperties":"Cell Options","tableCellSpacing":"Margin","tableCellPadding":"Spacing"},"clickToAddModule":"Add Element","youHaveUnsavedElements":"You have unsaved elements!","states":{"loading":"Loading","deleting":"Deleting","empty":"This is empty","unsaved":"Not saved yet"},"imageUpload":{"wrong file. only images allowed":"Images can only be uploaded in the following formats: .jpg\/.jpeg, .gif, .png, .tiff, and .bmp. ","Sorry, the file is corrupted and cannot be used.":"This file is corrupted and cannot be uploaded."},"colorPicker":{"cancel":"cancel ","select":"Select color"},"twitter":{"Please insert your twitter username":"Please enter your Twitter username"}},"cb":{"dragYourElement":"Drag Elements here in order to move them to other subpages on your website."},"navi":{"moveUp":"Move this page up","moveDown":"Move this page down","moveLeft":"Move this page one level up","moveRight":"Move this page one level down","addPage":"Add a new page","copyPage":"Copy Page","deletePage":"Delete this page","hidePage":"Hide page in navigation","externalLink":"External Link","externalLinkPlaceholder":"i.e. www.jimdo.com or support@jimdo.com","deleteWithSubPages":"This page {title} has sub-pages. Please delete these separately.","reallyRemove":"Do you really want to remove the page {title}?","confirmRemove":"Yes, delete!","tooManyPages":"Unfortunately, no more than 3000 pages can be created.","deleteLastPage":"This is your only remaining page. Please create a new page before you delete this one."},"flex":{"all":"all"},"gmap":{"newMarker":"New Placemark","search":"Find a location","searchNotFound":"The entered address doesn't exist or couldn't be found.","routesNotice":"The fields for calculating driving directions appear as soon as you've placed the first placemark.","routeNotFound":"The driving directions couldn't be determined. Possible reasons: The starting address is not specific enough or it is too far from the destination address."},"text":{"sourceeditor":"Quelltext bearbeiten"},"popup":{"closePopup":"Close window (esc)"},"dropbox":{"check":"Select File","checkAll":"Select All","name":"Name","size":"Size","modified":"Modified","reload":"Refresh"},"form":{"copy":"Copy Field","lastElement":"The form has to contain at least one question.","adjHorizontal":"Horizontal","adjVertical":"Vertical","yes":"Yes","no":"No","delete":"Delete Field"},"email":{"cancel":"Cancel","emailAccount":"Email Account","fieldCanNotBeEmpty":"Something's missing!","passwordsDoNotMatch":"The passwords don't match.","newAccountButtonCaption":"Create an email account","getMoreMailAccountsButtonCaption":"Buy additional email accounts","disabledMessage":"Sorry, it looks like there's a problem. Please contact <a href=\"mailto:support@jimdo.com\">support@jimdo.com<\/a>.","needsToConfirmContactEMailAddressMessage":"Confirm your email address before creating an email account.","needsToConfirmContactEMailAddressButtonCaption":"Confirm your email address","noDomainMessage":"Sorry, you don't have a domain to create an email account.","createDomainButtonCaption":"Create a domain now!","noMailAccountsMessage":"You haven't added any email accounts yet.","createFirstAccountButtonCaption":"Create an email account","emailTableHeader":"Email","forwardToTableHeader":"Forward to","domainTableHeader":"Domain","deleteAccountDialogHeader":"Delete email account","deleteAccountDialogMessage":"You are about to delete your email account {account}. Have you backed up your emails? You won't be able to recover your emails after you delete your account.","deleteAccountDialogConfirmationMessage":"Do you really want to delete your email address?","deleteAccountDialogConfirmationButtonCaption":"Yes, delete my email account","deleteForwarderAccountDialogHeader":"Delete forwarding email address","deleteForwarderAccountDialogMessage":"You are about to delete your forwarding email address {account}. All emails sent to this address will no longer be forwarded.","deleteForwarderAccountDialogConfirmationMessage":"Do you really want to delete this forwarding address?","deleteForwarderAccountDialogConfirmationButtonCaption":"Yes, delete my forwarding email address","changePasswordDialogHeader":"Change Password","changePasswordDialogNewPasswordLabel":"New password","changePasswordDialogNewPasswordPlaceholder":"Password","changePasswordDialogPasswordConfirmationLabel":"Confirm your new password","changePasswordDialogPasswordConfirmationPlaceholder":"Confirm your password","changePasswordDialogConfirmationButtonCaption":"Change Password","createAccountDialogHeader":"New email account","createAccountDialogEmailLabel":"Email","createAccountDialogNameLabel":"Your Name","createAccountDialogDomainHasNoManagedMailserverMessage":"The MX records aren't correct for this domain. <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">More info<\/a>.","createAccountDialogFirstNamePlaceholder":"First Name","createAccountDialogLastNamePlaceholder":"Last Name","createAccountDialogPasswordLabel":"Create a password","createAccountDialogPasswordConfirmationLabel":"Confirm password","createAccountDialogConfirmationButtonCaption":"Create email account","createForwarderAccountDialogHeader":"New forwarding email address","createForwarderAccountDialogEmailLabel":"Email","createForwarderAccountDialogNameLabel":"Name","createForwarderAccountDialogConfirmationButtonCaption":"Create a forwarding email address","editForwarderAccountDialogHeader":"Edit forwarding email address","editForwarderAccountDialogToAddressHeader":"Forwarding destination for {account}:","accountDetailsHeader":"Email account details","accountDetailsDialogMessage":"Sign in to your {webmailLinkStart}webmail{webmailLinkEnd} , to read your emails. Or you can use an email program to send and receive your emails with the following settings:","accountDetailsDialogUsernameLabel":"Username","accountDetailsDialogTypeHeader":"Question type","accountDetailsDialogHostHeader":"Host","accountDetailsDialogPortHeader":"Port","accountDetailsDialogIncomingLabel":"Incoming mail","accountDetailsDialogOutgoingLabel":"Outgoing mail","accountDetailsDialogImapLabel":"IMAP with SSL","accountDetailsDialogPopLabel":"POP3 with SSL","accountDetailsDialogSmtpLabel":"SMTP with SSL","accountDetailsDialogGotToWebmailButtonCaption":"to your webmail.","accountDetailsDialogCloseButtonCaption":"Done","forwarderAccountCreationErrorMessage":"Your forwarding email address couldn't be created. Please try again later.","emailAccountCreationErrorMessage":"Your email account couldn't be created. Please try again later.","loadingErrorMessage":"Sorry, there was a problem and we couldn't load your email accounts right now. Please try again later.","changePasswordErrorMessage":"Sorry, we couldn't change the password for the account {account}.","accountDeletionErrorMessage":"Sorry, the account {account} could not be deleted.","accountCreationSuccessMessage":"Your email account {account} has been created and is ready to go!","accountDeletionSuccessMessage":"Your email account {account}  has been deleted.","forwarderAccountDeletionErrorMessage":"Your forwarding email address {account} couldn't be deleted.","forwarderAccountCreationSuccessMessage":"Your forwarding email address {account} is now up and running.","forwarderAccountDeletionSuccessMessage":"Your forwarding email address {account} is now deleted.","passwordChangeSuccessMessage":"The password for your email address {account}  has been changed.","passwordChangeErrorMessage":"The password for your email account {account}  couldn't be changed.","getMoreForwarderAccountsButtonCaption":"Purchase additional forwarding email addresses","newForwarderAccountButtonCaption":"Create a new forwarding email address","forwarderAccountExplanation":"Forwarding email addresses don't have their own inboxes. Instead, they automatically forward all emails to another email account.","emailAccountExplanation":"Create or update email accounts for your domain.","emailAccountTabLabel":"Email Accounts","forwarderAccountTabLabel":"Forwarding email address","noForwarderAccountsMessage":"Here are your forwarding email addresses.","createForwarderAccountDialogEmailPlaceholder":"Name","createForwarderAccountDialogToAddressHeader":"Emails to this address will now be forwarded to:","createForwarderAccountDialogToAddressInvalidMessage":"That is not a valid email address","editForwarderAccountErrorMessage":"Your forwarding email address couldn't be changed.","editForwarderAccountSuccessMessage":"Your forwarding email address has been changed.","editForwarderAccountDialogConfirmationButtonCaption":"Change forwarding address","createAccountDialogEmailPlaceholder":"Inbox","createAccountDialogFirstPasswordPlaceholder":"Password","createAccountDialogPasswordConfirmationPlaceholder":"Confirm your password","editForwarderAccountDialogText":"Emails sent to %(account)s are forwarded to:","forwarderListMultipleToAddresses":"More than one destination address...","forwarderToTextInputListFirstItemPlaceholder":"Destination address","forwarderToTextInputListAdditionalItemsPlaceholder":"Additional destination address (optional)","accountListMxServerWarningMessage":"Your MX records for {domains} are not set correctly. You can find more information <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">here<\/a>.","noDomainWithManagedMailserver":"You haven't set up your domain correctly yet. If you need help, these <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">step-by-step instructions<\/a> may be useful."}}};    //]]> 
-2016-02-17 13:55:54,265- INFO(NewsPoster.java:442)[Thread-2]-URL: http://www400.jimdo.com/app/cms/poll/status/
-2016-02-17 13:55:54,320-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /5.101.219.169:1085
-2016-02-17 13:55:54,321-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:54,323-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 146.185.204.181:1085
-2016-02-17 13:55:54,323-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:55:54,323-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /146.185.204.181:1085
-2016-02-17 13:55:54,323-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:55:55,151-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /146.185.204.181:1085
-2016-02-17 13:55:55,154-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:55,155-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 188.72.96.105:1085
-2016-02-17 13:55:55,155-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:55:55,156-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /188.72.96.105:1085
-2016-02-17 13:55:55,157-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:55:55,976-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /188.72.96.105:1085
-2016-02-17 13:55:55,977-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:55,977-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 188.72.126.177:1085
-2016-02-17 13:55:55,978-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:55:55,978-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /188.72.126.177:1085
-2016-02-17 13:55:55,978-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:55:56,211- INFO(NewsPoster.java:322)[Thread-2]-Status of htmlCode post:success
-2016-02-17 13:55:56,313- INFO(SnippetExtractor.java:218)[Thread-3]-Recude page from 15 to 5
-2016-02-17 13:55:56,314-DEBUG(SnippetExtractor.java:610)[Thread-3]-Using google.com for getting snippets for key 'Download+(eBook)+Finding+Sofia'
-2016-02-17 13:55:56,315-DEBUG(SnippetExtractor.java:378)[Thread-3]-Using proxy: SOCKS @ /79.110.28.101:1085
-2016-02-17 13:55:56,315-DEBUG(SnippetExtractor.java:382)[Thread-3]-https://www.google.com/search?q=Download+(eBook)+Finding+Sofia&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
-2016-02-17 13:55:56,898-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /188.72.126.177:1085
-2016-02-17 13:55:56,904-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:56,908-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 46.161.61.57:1085
-2016-02-17 13:55:56,908-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:55:56,908-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /46.161.61.57:1085
-2016-02-17 13:55:56,908-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:55:57,060- INFO(NewsPoster.java:386)[Thread-2]-Error count:0
-2016-02-17 13:55:57,060- INFO(NewsPoster.java:442)[Thread-2]-URL: http://www400.jimdo.com/app/cms/preview/index/pageId/2585823625
-2016-02-17 13:55:57,282-DEBUG(SnippetExtractor.java:338)[Thread-3]-Snippets.size() = (20); linkList.size() = (0), snipCount = (12)
-2016-02-17 13:55:57,487-DEBUG(AccountFactory.java:385)[Thread-2]-Posted account news incremented: 1
-2016-02-17 13:55:57,487-DEBUG(AccountFactory.java:397)[Thread-2]-Used account size decremented: 0
-2016-02-17 13:55:57,487- WARN(AccountFactory.java:402)[Thread-2]-Account vecircongder was excluded from request at all
-2016-02-17 13:55:57,487-DEBUG(TaskFactory.java:80)[Thread-2]-DEC thread: 2
-2016-02-17 13:55:57,723-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /46.161.61.57:1085
-2016-02-17 13:55:57,724-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:57,725-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 5.101.220.217:1085
-2016-02-17 13:55:57,725-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:55:57,725-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /5.101.220.217:1085
-2016-02-17 13:55:57,725-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:55:58,441-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /5.101.220.217:1085
-2016-02-17 13:55:58,442-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:58,443-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 146.185.204.170:1085
-2016-02-17 13:55:58,443-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:55:58,443-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /146.185.204.170:1085
-2016-02-17 13:55:58,443-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:55:59,027-DEBUG(NewsPoster.java:174)[Thread-3]-     //<![CDATA[ var jimdoData = {"websiteId":"s895948f1d653d920","subgroupId.obfuscated":"ge65e854e8060651d","pageId":2534349422,"pageId.obfuscated":"p4ac83b5121f9078e","packageId":1,"jQuery":"jimdoGen002","allPageIds":[2441670622,2441670722,2441670822,2441670922,2441671022,2441671122,2441671222,2441671322,2441671422,2533563822,2533584822,2533678222,2533693122,2533697822,2533956822,2533957922,2533958122,2534071722,2534072622,2534285322,2534304022,2534317522,2534325522,2534347522,2534348322,2534349422],"indexPageId":2441670722,"isSuperAdmin":false,"isSupporter":false,"isStaging":false,"isTestserver":false,"isCMS":true,"isSwitchActive":false,"isSwitchDMPLayoutselection":false,"isSwitchDisableLegacyBackground":false,"safeMode":false,"template":{"type":3,"id":"283","url":"https:\/\/api.dmp.jimdo-server.com\/designs\/283\/versions\/1.3","version":"1.3.32","ownBgAllowed":true,"variation":null,"responsive":false},"bgConfig":{"id":117202122,"type":"picture","options":{"fixed":true},"images":[{"id":8213126122,"url":"https:\/\/image.jimcdn.com\/app\/cms\/image\/transf\/none\/path\/s895948f1d653d920\/backgroundarea\/i6739909a446c7078\/version\/1450837604\/image.jpg"}]},"legacyBackgroundsAllowed":false,"isBackgroundPerPageEnabled":true,"hasActiveLegacyBackground":false,"backgroundAreaAllowed":true,"responsiveUpdateAllowed":false,"legacyBackgroundTypeMigratable":false,"showBgPerPageUpdateOverlay":true,"isProtectedPage":false,"isFirstSession":false,"bypassTemplateUpdateBlock":false,"oldSiteAdminDisabled":false,"cstok":"c37416354c59f12c7d2904a9c96c805126767063","session":{"ClickAndChange":"d880b71ce828e4775548d73ca5a32679a5092013"},"jwt":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3ZWJzaXRlSWQiOiJzODk1OTQ4ZjFkNjUzZDkyMCIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNTQyMTEwMTQyfQ.yXh3mQzauh8hRW4qC3rv0tPGjNp80qTzSTXuKwf2xd4","cacheJsKey":"c0ed0353c072b67345f1ffad8512b62984c80e5c","cacheCssKey":"416dda6fe6c86847d0b58079d7ba96871d081142","systemUrl":"http:\/\/www400.jimdo.com\/","cdnUrl":"\/\/assets1.jimstatic.com\/","appUrl":"http:\/\/a.jimdo.com\/","minUrl":"\/\/assets1.jimstatic.com\/app\/cdn\/min\/file\/","websiteUrl":"http:\/\/petsamaphu.jimdo.com\/","javascriptNamespace":"jimdoGen002","internalLinkSuffix":"\/","internalLinkPrefix":"\/app\/s895948f1d653d920\/","flashMinVersionUpload":"9.0.115","cmsLanguage":"en_US","maxPages":3000,"maxModulesPerPage":200,"commonUploadMaxFilesize":10485760,"commonUploadMaxFilecount":150,"copyPagesAllowed":false,"externalLinksInNavigationAllowed":false,"copyModulesAllowed":true,"canHaveOldTemplates":false,"restoreModulesAllowed":false,"angularLocale":"en_US","hasBlog":true,"blogTagList":"","rte":{"lang":"en","styleselect":false,"stylelist":false},"social":{"dropbox":false},"shop":{"usSalesTaxEnabled":true,"deliveryTimeTexts":{"1":"Ships within 1-3 days","2":"Ships within 3-5 days","3":"Delivery in 5-8 days"}},"isFlex":true,"matrixes":{"3647987722":["12796430522"],"3802224622":[]},"googleWebFonts":{"fonts":[1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1016,1017,1018,1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1033],"url":"https:\/\/fonts.googleapis.com\/css?family="},"dmp":{"backendUrl":"https:\/\/api.dmp.jimdo-server.com\/api\/published_designs","publishedDesignsApiVersion":"2","kickstarter.enabled":true,"googleFontsAvailable":true,"googleFontApiKey":"AIzaSyAHb9BjcZSeH6UwpRcdWlu_hbI7nKV6tjc","googleFontApiBaseUrl":"http:\/\/font-api.dmp.jimdo-server.com\/webfonts\/v1\/webfonts","defaultSubsets":{"latin":true},"typesquareFontsAvailable":false},"isDebug":false,"isCucumber":false,"tr":{"common":{"timeout":"An error occured. Whatever you were trying to do was interrupted. Please try again later.","refreshing":"Loading...","webOnly":"Sorry, you can't do this in Edit Mode, only on your actual Jimdo site.","spinnerInfiniteTitle":"Set inventory to unlimited","helpFormSubmit":"Your support inquiry has been sent. We'll respond as soon as we can.","ok":"Ok","select":"Select","abort":"cancel "},"eh":{"disabled":"You have just changed your template.  Please choose first whether to accept or reject those changes. Then you can change the photo."},"m":{"removeGallery":"All {count} images will be deleted permanently!","removeGuestbook":"All {count} comments will be deleted permanently!","removeHgrid":"All {count} elements in these columns will be deleted permanently!","updating":"refreshing...","reallyRemove":"Are you sure you want to delete this element?","confirmRemove":"Yes, delete!","close":"Close","abortRemove":"cancel ","attention":"Caution:","anchorTitle":"Go to the link {text}","firstAdd":"Add Element","remove":"Delete this element","up":"Move element up","down":"Move element down","copy":"Copy element","noFileSelected":"Please choose the file you'd like to upload to your Jimdo site.","tooManyModules":"The maximum number of elements for a page is 200, and this page currently has {current}. You can only add a new element to this page if you delete enough elements so that there are fewer than 200. You can also create a new page on your website and add more content there.","nestingNotAllowed":"Sorry, you can't add this element to a column.","reallyRemoveColumn":"Do you really want to delete this column?","warningModulesInColumn":"All {count} elements in this column will be permanently deleted!","setLinkText":"Set link","headline":"Heading","unsavedChanges":"Unsaved changes","discard":"Discard","confirmDiscard":"Confirm","upload":{"dictFileTooBig":"The photo is too large! Maximum size: 10.0 MB.","dictInvalidFileType":"You may only upload image files in JPG\/JPEG, GIF, PNG and BMP formats!","dictMaxFilesExceeded":"Es k\u00f6nnen maximal 150 Bilder gleichzeitig hochgeladen werden."},"common":{"delete":"delete","link":"Link","unlink":"Remove link"},"table":{"tableWidth":"Width","tableHeight":"Height","tableBorder":"Border size","tableProperties":"Table Options","tableBorderColor":"Border color","tableBackgroundColor":"Background color","tableCellProperties":"Cell Options","tableCellSpacing":"Margin","tableCellPadding":"Spacing"},"clickToAddModule":"Add Element","youHaveUnsavedElements":"You have unsaved elements!","states":{"loading":"Loading","deleting":"Deleting","empty":"This is empty","unsaved":"Not saved yet"},"imageUpload":{"wrong file. only images allowed":"Images can only be uploaded in the following formats: .jpg\/.jpeg, .gif, .png, .tiff, and .bmp. ","Sorry, the file is corrupted and cannot be used.":"This file is corrupted and cannot be uploaded."},"colorPicker":{"cancel":"cancel ","select":"Select color"},"twitter":{"Please insert your twitter username":"Please enter your Twitter username"}},"cb":{"dragYourElement":"Drag Elements here in order to move them to other subpages on your website."},"navi":{"moveUp":"Move this page up","moveDown":"Move this page down","moveLeft":"Move this page one level up","moveRight":"Move this page one level down","addPage":"Add a new page","copyPage":"Copy Page","deletePage":"Delete this page","hidePage":"Hide page in navigation","externalLink":"External Link","externalLinkPlaceholder":"i.e. www.jimdo.com or support@jimdo.com","deleteWithSubPages":"This page {title} has sub-pages. Please delete these separately.","reallyRemove":"Do you really want to remove the page {title}?","confirmRemove":"Yes, delete!","tooManyPages":"Unfortunately, no more than 3000 pages can be created.","deleteLastPage":"This is your only remaining page. Please create a new page before you delete this one."},"flex":{"all":"all"},"gmap":{"newMarker":"New Placemark","search":"Find a location","searchNotFound":"The entered address doesn't exist or couldn't be found.","routesNotice":"The fields for calculating driving directions appear as soon as you've placed the first placemark.","routeNotFound":"The driving directions couldn't be determined. Possible reasons: The starting address is not specific enough or it is too far from the destination address."},"text":{"sourceeditor":"Quelltext bearbeiten"},"popup":{"closePopup":"Close window (esc)"},"dropbox":{"check":"Select File","checkAll":"Select All","name":"Name","size":"Size","modified":"Modified","reload":"Refresh"},"form":{"copy":"Copy Field","lastElement":"The form has to contain at least one question.","adjHorizontal":"Horizontal","adjVertical":"Vertical","yes":"Yes","no":"No","delete":"Delete Field"},"email":{"cancel":"Cancel","emailAccount":"Email Account","fieldCanNotBeEmpty":"Something's missing!","passwordsDoNotMatch":"The passwords don't match.","newAccountButtonCaption":"Create an email account","getMoreMailAccountsButtonCaption":"Buy additional email accounts","disabledMessage":"Sorry, it looks like there's a problem. Please contact <a href=\"mailto:support@jimdo.com\">support@jimdo.com<\/a>.","needsToConfirmContactEMailAddressMessage":"Confirm your email address before creating an email account.","needsToConfirmContactEMailAddressButtonCaption":"Confirm your email address","noDomainMessage":"Sorry, you don't have a domain to create an email account.","createDomainButtonCaption":"Create a domain now!","noMailAccountsMessage":"You haven't added any email accounts yet.","createFirstAccountButtonCaption":"Create an email account","emailTableHeader":"Email","forwardToTableHeader":"Forward to","domainTableHeader":"Domain","deleteAccountDialogHeader":"Delete email account","deleteAccountDialogMessage":"You are about to delete your email account {account}. Have you backed up your emails? You won't be able to recover your emails after you delete your account.","deleteAccountDialogConfirmationMessage":"Do you really want to delete your email address?","deleteAccountDialogConfirmationButtonCaption":"Yes, delete my email account","deleteForwarderAccountDialogHeader":"Delete forwarding email address","deleteForwarderAccountDialogMessage":"You are about to delete your forwarding email address {account}. All emails sent to this address will no longer be forwarded.","deleteForwarderAccountDialogConfirmationMessage":"Do you really want to delete this forwarding address?","deleteForwarderAccountDialogConfirmationButtonCaption":"Yes, delete my forwarding email address","changePasswordDialogHeader":"Change Password","changePasswordDialogNewPasswordLabel":"New password","changePasswordDialogNewPasswordPlaceholder":"Password","changePasswordDialogPasswordConfirmationLabel":"Confirm your new password","changePasswordDialogPasswordConfirmationPlaceholder":"Confirm your password","changePasswordDialogConfirmationButtonCaption":"Change Password","createAccountDialogHeader":"New email account","createAccountDialogEmailLabel":"Email","createAccountDialogNameLabel":"Your Name","createAccountDialogDomainHasNoManagedMailserverMessage":"The MX records aren't correct for this domain. <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">More info<\/a>.","createAccountDialogFirstNamePlaceholder":"First Name","createAccountDialogLastNamePlaceholder":"Last Name","createAccountDialogPasswordLabel":"Create a password","createAccountDialogPasswordConfirmationLabel":"Confirm password","createAccountDialogConfirmationButtonCaption":"Create email account","createForwarderAccountDialogHeader":"New forwarding email address","createForwarderAccountDialogEmailLabel":"Email","createForwarderAccountDialogNameLabel":"Name","createForwarderAccountDialogConfirmationButtonCaption":"Create a forwarding email address","editForwarderAccountDialogHeader":"Edit forwarding email address","editForwarderAccountDialogToAddressHeader":"Forwarding destination for {account}:","accountDetailsHeader":"Email account details","accountDetailsDialogMessage":"Sign in to your {webmailLinkStart}webmail{webmailLinkEnd} , to read your emails. Or you can use an email program to send and receive your emails with the following settings:","accountDetailsDialogUsernameLabel":"Username","accountDetailsDialogTypeHeader":"Question type","accountDetailsDialogHostHeader":"Host","accountDetailsDialogPortHeader":"Port","accountDetailsDialogIncomingLabel":"Incoming mail","accountDetailsDialogOutgoingLabel":"Outgoing mail","accountDetailsDialogImapLabel":"IMAP with SSL","accountDetailsDialogPopLabel":"POP3 with SSL","accountDetailsDialogSmtpLabel":"SMTP with SSL","accountDetailsDialogGotToWebmailButtonCaption":"to your webmail.","accountDetailsDialogCloseButtonCaption":"Done","forwarderAccountCreationErrorMessage":"Your forwarding email address couldn't be created. Please try again later.","emailAccountCreationErrorMessage":"Your email account couldn't be created. Please try again later.","loadingErrorMessage":"Sorry, there was a problem and we couldn't load your email accounts right now. Please try again later.","changePasswordErrorMessage":"Sorry, we couldn't change the password for the account {account}.","accountDeletionErrorMessage":"Sorry, the account {account} could not be deleted.","accountCreationSuccessMessage":"Your email account {account} has been created and is ready to go!","accountDeletionSuccessMessage":"Your email account {account}  has been deleted.","forwarderAccountDeletionErrorMessage":"Your forwarding email address {account} couldn't be deleted.","forwarderAccountCreationSuccessMessage":"Your forwarding email address {account} is now up and running.","forwarderAccountDeletionSuccessMessage":"Your forwarding email address {account} is now deleted.","passwordChangeSuccessMessage":"The password for your email address {account}  has been changed.","passwordChangeErrorMessage":"The password for your email account {account}  couldn't be changed.","getMoreForwarderAccountsButtonCaption":"Purchase additional forwarding email addresses","newForwarderAccountButtonCaption":"Create a new forwarding email address","forwarderAccountExplanation":"Forwarding email addresses don't have their own inboxes. Instead, they automatically forward all emails to another email account.","emailAccountExplanation":"Create or update email accounts for your domain.","emailAccountTabLabel":"Email Accounts","forwarderAccountTabLabel":"Forwarding email address","noForwarderAccountsMessage":"Here are your forwarding email addresses.","createForwarderAccountDialogEmailPlaceholder":"Name","createForwarderAccountDialogToAddressHeader":"Emails to this address will now be forwarded to:","createForwarderAccountDialogToAddressInvalidMessage":"That is not a valid email address","editForwarderAccountErrorMessage":"Your forwarding email address couldn't be changed.","editForwarderAccountSuccessMessage":"Your forwarding email address has been changed.","editForwarderAccountDialogConfirmationButtonCaption":"Change forwarding address","createAccountDialogEmailPlaceholder":"Inbox","createAccountDialogFirstPasswordPlaceholder":"Password","createAccountDialogPasswordConfirmationPlaceholder":"Confirm your password","editForwarderAccountDialogText":"Emails sent to %(account)s are forwarded to:","forwarderListMultipleToAddresses":"More than one destination address...","forwarderToTextInputListFirstItemPlaceholder":"Destination address","forwarderToTextInputListAdditionalItemsPlaceholder":"Additional destination address (optional)","accountListMxServerWarningMessage":"Your MX records for {domains} are not set correctly. You can find more information <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">here<\/a>.","noDomainWithManagedMailserver":"You haven't set up your domain correctly yet. If you need help, these <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">step-by-step instructions<\/a> may be useful."}}};    //]]> 
-2016-02-17 13:55:59,028- INFO(NewsPoster.java:442)[Thread-3]-URL: http://www400.jimdo.com/app/cms/poll/status/
-2016-02-17 13:55:59,140-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /146.185.204.170:1085
-2016-02-17 13:55:59,141-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:59,142-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 5.101.220.163:1085
-2016-02-17 13:55:59,142-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:55:59,142-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /5.101.220.163:1085
-2016-02-17 13:55:59,142-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:55:59,795-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /5.101.220.163:1085
-2016-02-17 13:55:59,796-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:55:59,796-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 91.229.229.81:1085
-2016-02-17 13:55:59,797-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:55:59,797-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /91.229.229.81:1085
-2016-02-17 13:55:59,797-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:00,143- INFO(NewsPoster.java:322)[Thread-3]-Status of htmlCode post:success
-2016-02-17 13:56:00,505-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /91.229.229.81:1085
-2016-02-17 13:56:00,506-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:00,507-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 185.2.32.79:1085
-2016-02-17 13:56:00,507-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:00,507-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /185.2.32.79:1085
-2016-02-17 13:56:00,508-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:00,599- INFO(NewsPoster.java:386)[Thread-3]-Error count:0
-2016-02-17 13:56:00,599- INFO(NewsPoster.java:442)[Thread-3]-URL: http://www400.jimdo.com/app/cms/preview/index/pageId/2534349422
-2016-02-17 13:56:00,857-DEBUG(AccountFactory.java:385)[Thread-3]-Posted account news incremented: 1
-2016-02-17 13:56:00,857-DEBUG(AccountFactory.java:397)[Thread-3]-Used account size decremented: 0
-2016-02-17 13:56:00,857- WARN(AccountFactory.java:402)[Thread-3]-Account petsamaphu was excluded from request at all
-2016-02-17 13:56:00,857-DEBUG(TaskFactory.java:80)[Thread-3]-DEC thread: 1
-2016-02-17 13:56:01,302-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /185.2.32.79:1085
-2016-02-17 13:56:01,303-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:01,304-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 91.229.229.186:1085
-2016-02-17 13:56:01,304-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:01,305-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /91.229.229.186:1085
-2016-02-17 13:56:01,305-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:02,193-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /91.229.229.186:1085
-2016-02-17 13:56:02,194-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:02,195-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 188.72.127.193:1085
-2016-02-17 13:56:02,196-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:02,196-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /188.72.127.193:1085
-2016-02-17 13:56:02,197-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:02,895-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /188.72.127.193:1085
-2016-02-17 13:56:02,896-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:02,896-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 185.2.32.84:1085
-2016-02-17 13:56:02,897-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:02,897-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /185.2.32.84:1085
-2016-02-17 13:56:02,897-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:03,761-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /185.2.32.84:1085
-2016-02-17 13:56:03,762-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:03,762-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 46.161.61.38:1085
-2016-02-17 13:56:03,763-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:03,763-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /46.161.61.38:1085
-2016-02-17 13:56:03,763-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:04,697-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /46.161.61.38:1085
-2016-02-17 13:56:04,698-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:04,698-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 185.44.78.191:1085
-2016-02-17 13:56:04,699-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:04,699-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /185.44.78.191:1085
-2016-02-17 13:56:04,699-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:05,359-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /185.44.78.191:1085
-2016-02-17 13:56:05,359-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:05,360-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 193.106.31.42:1085
-2016-02-17 13:56:05,360-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:05,360-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /193.106.31.42:1085
-2016-02-17 13:56:05,360-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:05,939-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /193.106.31.42:1085
-2016-02-17 13:56:05,939-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:05,940-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 185.46.84.181:1085
-2016-02-17 13:56:05,940-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:05,940-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /185.46.84.181:1085
-2016-02-17 13:56:05,940-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:06,793-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /185.46.84.181:1085
-2016-02-17 13:56:06,793-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:06,794-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 195.34.79.119:1085
-2016-02-17 13:56:06,794-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:06,794-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /195.34.79.119:1085
-2016-02-17 13:56:06,794-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:07,651-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /195.34.79.119:1085
-2016-02-17 13:56:07,652-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:07,660-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 185.46.84.163:1085
-2016-02-17 13:56:07,660-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:07,660-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /185.46.84.163:1085
-2016-02-17 13:56:07,662-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:08,525-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /185.46.84.163:1085
-2016-02-17 13:56:08,525-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:08,526-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 185.44.78.99:1085
-2016-02-17 13:56:08,526-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:08,526-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /185.44.78.99:1085
-2016-02-17 13:56:08,526-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:09,698-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /185.44.78.99:1085
-2016-02-17 13:56:09,699-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:09,699-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 5.101.221.86:1085
-2016-02-17 13:56:09,699-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:09,700-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /5.101.221.86:1085
-2016-02-17 13:56:09,700-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:10,489-ERROR(SnippetExtractor.java:400)[Thread-4]-Responce code not equals 200 for proxy SOCKS @ /5.101.221.86:1085
-2016-02-17 13:56:10,489-ERROR(SnippetExtractor.java:179)[Thread-4]-Error occured during processing key: Download+(eBook)+Rendezvous+With+A+Stranger
-java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:408)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:612)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsFromPageContent(SnippetExtractor.java:591)
-	at com.fdt.scrapper.SnippetExtractor.insertLinksToSnippets(SnippetExtractor.java:175)
-	at com.fdt.scrapper.SnippetExtractor.extractSnippetsWithInsertedLinks(SnippetExtractor.java:692)
-	at com.fdt.jimbo.JimboPosterThread.run(JimboPosterThread.java:111)
-Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-	at com.fdt.scrapper.SnippetExtractor.loadPageContent(SnippetExtractor.java:397)
-	... 5 more
-2016-02-17 13:56:10,490-DEBUG(SnippetExtractor.java:170)[Thread-4]-Get another proxy: 185.89.100.81:1085
-2016-02-17 13:56:10,490-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:10,490-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /185.89.100.81:1085
-2016-02-17 13:56:10,490-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=150
-2016-02-17 13:56:14,040- INFO(SnippetExtractor.java:218)[Thread-4]-Recude page from 16 to 5
-2016-02-17 13:56:14,041-DEBUG(SnippetExtractor.java:610)[Thread-4]-Using google.com for getting snippets for key 'Download+(eBook)+Rendezvous+With+A+Stranger'
-2016-02-17 13:56:14,041-DEBUG(SnippetExtractor.java:378)[Thread-4]-Using proxy: SOCKS @ /185.89.100.81:1085
-2016-02-17 13:56:14,041-DEBUG(SnippetExtractor.java:382)[Thread-4]-https://www.google.com/search?q=Download+(eBook)+Rendezvous+With+A+Stranger&lr=lang_en&oe=utf-8&gws_rd=ssl&start=40
-2016-02-17 13:56:14,880-DEBUG(SnippetExtractor.java:338)[Thread-4]-Snippets.size() = (20); linkList.size() = (0), snipCount = (14)
-2016-02-17 13:56:20,923-DEBUG(NewsPoster.java:174)[Thread-4]-     //<![CDATA[ var jimdoData = {"websiteId":"s1edaf5dc21099be9","subgroupId.obfuscated":"ge65e854e8060651d","pageId":2076651897,"pageId.obfuscated":"pbb193c173d21017a","packageId":1,"jQuery":"jimdoGen002","allPageIds":[2042558297,2042558397,2042558497,2042558597,2042558697,2042558797,2042558897,2042558997,2042559097,2076470897,2076471397,2076471697,2076490897,2076491097,2076541097,2076541197,2076541397,2076574197,2076575097,2076632497,2076636797,2076641097,2076651497,2076651597,2076651897],"indexPageId":2042558397,"isSuperAdmin":false,"isSupporter":false,"isStaging":false,"isTestserver":false,"isCMS":true,"isSwitchActive":false,"isSwitchDMPLayoutselection":false,"isSwitchDisableLegacyBackground":false,"safeMode":false,"template":{"type":3,"id":"283","url":"https:\/\/api.dmp.jimdo-server.com\/designs\/283\/versions\/1.3","version":"1.3.32","ownBgAllowed":true,"variation":null,"responsive":false},"bgConfig":{"id":60149197,"type":"picture","options":{"fixed":true},"images":[{"id":7089316097,"url":"https:\/\/image.jimcdn.com\/app\/cms\/image\/transf\/none\/path\/s1edaf5dc21099be9\/backgroundarea\/i95380bcf6faaad99\/version\/1450837600\/image.jpg"}]},"legacyBackgroundsAllowed":false,"isBackgroundPerPageEnabled":true,"hasActiveLegacyBackground":false,"backgroundAreaAllowed":true,"responsiveUpdateAllowed":false,"legacyBackgroundTypeMigratable":false,"showBgPerPageUpdateOverlay":true,"isProtectedPage":false,"isFirstSession":false,"bypassTemplateUpdateBlock":false,"oldSiteAdminDisabled":false,"cstok":"0eb733f2f3b5a192dd93dca5f07adcbf88b993c1","session":{"ClickAndChange":"dfb536ab01c44b75a28286b558879de98a72f3b7"},"jwt":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3ZWJzaXRlSWQiOiJzMWVkYWY1ZGMyMTA5OWJlOSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNTQyMTEwMTYxfQ.vqHxCdkOTOLE8tazpuLiPFQq5b0QjXHBdiN5WN4NAOg","cacheJsKey":"c0ed0353c072b67345f1ffad8512b62984c80e5c","cacheCssKey":"416dda6fe6c86847d0b58079d7ba96871d081142","systemUrl":"http:\/\/www400.jimdo.com\/","cdnUrl":"\/\/assets1.jimstatic.com\/","appUrl":"http:\/\/a.jimdo.com\/","minUrl":"\/\/assets1.jimstatic.com\/app\/cdn\/min\/file\/","websiteUrl":"http:\/\/oottripewla.jimdo.com\/","javascriptNamespace":"jimdoGen002","internalLinkSuffix":"\/","internalLinkPrefix":"\/app\/s1edaf5dc21099be9\/","flashMinVersionUpload":"9.0.115","cmsLanguage":"en_US","maxPages":3000,"maxModulesPerPage":200,"commonUploadMaxFilesize":10485760,"commonUploadMaxFilecount":150,"copyPagesAllowed":false,"externalLinksInNavigationAllowed":false,"copyModulesAllowed":true,"canHaveOldTemplates":false,"restoreModulesAllowed":false,"angularLocale":"en_US","hasBlog":true,"blogTagList":"","rte":{"lang":"en","styleselect":false,"stylelist":false},"social":{"dropbox":false},"shop":{"usSalesTaxEnabled":true,"deliveryTimeTexts":{"1":"Ships within 1-3 days","2":"Ships within 3-5 days","3":"Delivery in 5-8 days"}},"isFlex":true,"matrixes":{"2750408597":["10267678197"],"2806541497":[]},"googleWebFonts":{"fonts":[1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1016,1017,1018,1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1033],"url":"https:\/\/fonts.googleapis.com\/css?family="},"dmp":{"backendUrl":"https:\/\/api.dmp.jimdo-server.com\/api\/published_designs","publishedDesignsApiVersion":"2","kickstarter.enabled":true,"googleFontsAvailable":true,"googleFontApiKey":"AIzaSyAHb9BjcZSeH6UwpRcdWlu_hbI7nKV6tjc","googleFontApiBaseUrl":"http:\/\/font-api.dmp.jimdo-server.com\/webfonts\/v1\/webfonts","defaultSubsets":{"latin":true},"typesquareFontsAvailable":false},"isDebug":false,"isCucumber":false,"tr":{"common":{"timeout":"An error occured. Whatever you were trying to do was interrupted. Please try again later.","refreshing":"Loading...","webOnly":"Sorry, you can't do this in Edit Mode, only on your actual Jimdo site.","spinnerInfiniteTitle":"Set inventory to unlimited","helpFormSubmit":"Your support inquiry has been sent. We'll respond as soon as we can.","ok":"Ok","select":"Select","abort":"cancel "},"eh":{"disabled":"You have just changed your template.  Please choose first whether to accept or reject those changes. Then you can change the photo."},"m":{"removeGallery":"All {count} images will be deleted permanently!","removeGuestbook":"All {count} comments will be deleted permanently!","removeHgrid":"All {count} elements in these columns will be deleted permanently!","updating":"refreshing...","reallyRemove":"Are you sure you want to delete this element?","confirmRemove":"Yes, delete!","close":"Close","abortRemove":"cancel ","attention":"Caution:","anchorTitle":"Go to the link {text}","firstAdd":"Add Element","remove":"Delete this element","up":"Move element up","down":"Move element down","copy":"Copy element","noFileSelected":"Please choose the file you'd like to upload to your Jimdo site.","tooManyModules":"The maximum number of elements for a page is 200, and this page currently has {current}. You can only add a new element to this page if you delete enough elements so that there are fewer than 200. You can also create a new page on your website and add more content there.","nestingNotAllowed":"Sorry, you can't add this element to a column.","reallyRemoveColumn":"Do you really want to delete this column?","warningModulesInColumn":"All {count} elements in this column will be permanently deleted!","setLinkText":"Set link","headline":"Heading","unsavedChanges":"Unsaved changes","discard":"Discard","confirmDiscard":"Confirm","upload":{"dictFileTooBig":"The photo is too large! Maximum size: 10.0 MB.","dictInvalidFileType":"You may only upload image files in JPG\/JPEG, GIF, PNG and BMP formats!","dictMaxFilesExceeded":"Es k\u00f6nnen maximal 150 Bilder gleichzeitig hochgeladen werden."},"common":{"delete":"delete","link":"Link","unlink":"Remove link"},"table":{"tableWidth":"Width","tableHeight":"Height","tableBorder":"Border size","tableProperties":"Table Options","tableBorderColor":"Border color","tableBackgroundColor":"Background color","tableCellProperties":"Cell Options","tableCellSpacing":"Margin","tableCellPadding":"Spacing"},"clickToAddModule":"Add Element","youHaveUnsavedElements":"You have unsaved elements!","states":{"loading":"Loading","deleting":"Deleting","empty":"This is empty","unsaved":"Not saved yet"},"imageUpload":{"wrong file. only images allowed":"Images can only be uploaded in the following formats: .jpg\/.jpeg, .gif, .png, .tiff, and .bmp. ","Sorry, the file is corrupted and cannot be used.":"This file is corrupted and cannot be uploaded."},"colorPicker":{"cancel":"cancel ","select":"Select color"},"twitter":{"Please insert your twitter username":"Please enter your Twitter username"}},"cb":{"dragYourElement":"Drag Elements here in order to move them to other subpages on your website."},"navi":{"moveUp":"Move this page up","moveDown":"Move this page down","moveLeft":"Move this page one level up","moveRight":"Move this page one level down","addPage":"Add a new page","copyPage":"Copy Page","deletePage":"Delete this page","hidePage":"Hide page in navigation","externalLink":"External Link","externalLinkPlaceholder":"i.e. www.jimdo.com or support@jimdo.com","deleteWithSubPages":"This page {title} has sub-pages. Please delete these separately.","reallyRemove":"Do you really want to remove the page {title}?","confirmRemove":"Yes, delete!","tooManyPages":"Unfortunately, no more than 3000 pages can be created.","deleteLastPage":"This is your only remaining page. Please create a new page before you delete this one."},"flex":{"all":"all"},"gmap":{"newMarker":"New Placemark","search":"Find a location","searchNotFound":"The entered address doesn't exist or couldn't be found.","routesNotice":"The fields for calculating driving directions appear as soon as you've placed the first placemark.","routeNotFound":"The driving directions couldn't be determined. Possible reasons: The starting address is not specific enough or it is too far from the destination address."},"text":{"sourceeditor":"Quelltext bearbeiten"},"popup":{"closePopup":"Close window (esc)"},"dropbox":{"check":"Select File","checkAll":"Select All","name":"Name","size":"Size","modified":"Modified","reload":"Refresh"},"form":{"copy":"Copy Field","lastElement":"The form has to contain at least one question.","adjHorizontal":"Horizontal","adjVertical":"Vertical","yes":"Yes","no":"No","delete":"Delete Field"},"email":{"cancel":"Cancel","emailAccount":"Email Account","fieldCanNotBeEmpty":"Something's missing!","passwordsDoNotMatch":"The passwords don't match.","newAccountButtonCaption":"Create an email account","getMoreMailAccountsButtonCaption":"Buy additional email accounts","disabledMessage":"Sorry, it looks like there's a problem. Please contact <a href=\"mailto:support@jimdo.com\">support@jimdo.com<\/a>.","needsToConfirmContactEMailAddressMessage":"Confirm your email address before creating an email account.","needsToConfirmContactEMailAddressButtonCaption":"Confirm your email address","noDomainMessage":"Sorry, you don't have a domain to create an email account.","createDomainButtonCaption":"Create a domain now!","noMailAccountsMessage":"You haven't added any email accounts yet.","createFirstAccountButtonCaption":"Create an email account","emailTableHeader":"Email","forwardToTableHeader":"Forward to","domainTableHeader":"Domain","deleteAccountDialogHeader":"Delete email account","deleteAccountDialogMessage":"You are about to delete your email account {account}. Have you backed up your emails? You won't be able to recover your emails after you delete your account.","deleteAccountDialogConfirmationMessage":"Do you really want to delete your email address?","deleteAccountDialogConfirmationButtonCaption":"Yes, delete my email account","deleteForwarderAccountDialogHeader":"Delete forwarding email address","deleteForwarderAccountDialogMessage":"You are about to delete your forwarding email address {account}. All emails sent to this address will no longer be forwarded.","deleteForwarderAccountDialogConfirmationMessage":"Do you really want to delete this forwarding address?","deleteForwarderAccountDialogConfirmationButtonCaption":"Yes, delete my forwarding email address","changePasswordDialogHeader":"Change Password","changePasswordDialogNewPasswordLabel":"New password","changePasswordDialogNewPasswordPlaceholder":"Password","changePasswordDialogPasswordConfirmationLabel":"Confirm your new password","changePasswordDialogPasswordConfirmationPlaceholder":"Confirm your password","changePasswordDialogConfirmationButtonCaption":"Change Password","createAccountDialogHeader":"New email account","createAccountDialogEmailLabel":"Email","createAccountDialogNameLabel":"Your Name","createAccountDialogDomainHasNoManagedMailserverMessage":"The MX records aren't correct for this domain. <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">More info<\/a>.","createAccountDialogFirstNamePlaceholder":"First Name","createAccountDialogLastNamePlaceholder":"Last Name","createAccountDialogPasswordLabel":"Create a password","createAccountDialogPasswordConfirmationLabel":"Confirm password","createAccountDialogConfirmationButtonCaption":"Create email account","createForwarderAccountDialogHeader":"New forwarding email address","createForwarderAccountDialogEmailLabel":"Email","createForwarderAccountDialogNameLabel":"Name","createForwarderAccountDialogConfirmationButtonCaption":"Create a forwarding email address","editForwarderAccountDialogHeader":"Edit forwarding email address","editForwarderAccountDialogToAddressHeader":"Forwarding destination for {account}:","accountDetailsHeader":"Email account details","accountDetailsDialogMessage":"Sign in to your {webmailLinkStart}webmail{webmailLinkEnd} , to read your emails. Or you can use an email program to send and receive your emails with the following settings:","accountDetailsDialogUsernameLabel":"Username","accountDetailsDialogTypeHeader":"Question type","accountDetailsDialogHostHeader":"Host","accountDetailsDialogPortHeader":"Port","accountDetailsDialogIncomingLabel":"Incoming mail","accountDetailsDialogOutgoingLabel":"Outgoing mail","accountDetailsDialogImapLabel":"IMAP with SSL","accountDetailsDialogPopLabel":"POP3 with SSL","accountDetailsDialogSmtpLabel":"SMTP with SSL","accountDetailsDialogGotToWebmailButtonCaption":"to your webmail.","accountDetailsDialogCloseButtonCaption":"Done","forwarderAccountCreationErrorMessage":"Your forwarding email address couldn't be created. Please try again later.","emailAccountCreationErrorMessage":"Your email account couldn't be created. Please try again later.","loadingErrorMessage":"Sorry, there was a problem and we couldn't load your email accounts right now. Please try again later.","changePasswordErrorMessage":"Sorry, we couldn't change the password for the account {account}.","accountDeletionErrorMessage":"Sorry, the account {account} could not be deleted.","accountCreationSuccessMessage":"Your email account {account} has been created and is ready to go!","accountDeletionSuccessMessage":"Your email account {account}  has been deleted.","forwarderAccountDeletionErrorMessage":"Your forwarding email address {account} couldn't be deleted.","forwarderAccountCreationSuccessMessage":"Your forwarding email address {account} is now up and running.","forwarderAccountDeletionSuccessMessage":"Your forwarding email address {account} is now deleted.","passwordChangeSuccessMessage":"The password for your email address {account}  has been changed.","passwordChangeErrorMessage":"The password for your email account {account}  couldn't be changed.","getMoreForwarderAccountsButtonCaption":"Purchase additional forwarding email addresses","newForwarderAccountButtonCaption":"Create a new forwarding email address","forwarderAccountExplanation":"Forwarding email addresses don't have their own inboxes. Instead, they automatically forward all emails to another email account.","emailAccountExplanation":"Create or update email accounts for your domain.","emailAccountTabLabel":"Email Accounts","forwarderAccountTabLabel":"Forwarding email address","noForwarderAccountsMessage":"Here are your forwarding email addresses.","createForwarderAccountDialogEmailPlaceholder":"Name","createForwarderAccountDialogToAddressHeader":"Emails to this address will now be forwarded to:","createForwarderAccountDialogToAddressInvalidMessage":"That is not a valid email address","editForwarderAccountErrorMessage":"Your forwarding email address couldn't be changed.","editForwarderAccountSuccessMessage":"Your forwarding email address has been changed.","editForwarderAccountDialogConfirmationButtonCaption":"Change forwarding address","createAccountDialogEmailPlaceholder":"Inbox","createAccountDialogFirstPasswordPlaceholder":"Password","createAccountDialogPasswordConfirmationPlaceholder":"Confirm your password","editForwarderAccountDialogText":"Emails sent to %(account)s are forwarded to:","forwarderListMultipleToAddresses":"More than one destination address...","forwarderToTextInputListFirstItemPlaceholder":"Destination address","forwarderToTextInputListAdditionalItemsPlaceholder":"Additional destination address (optional)","accountListMxServerWarningMessage":"Your MX records for {domains} are not set correctly. You can find more information <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">here<\/a>.","noDomainWithManagedMailserver":"You haven't set up your domain correctly yet. If you need help, these <a href=\"http:\/\/support.jimdo.com\/domains\" parent=\"_blank\">step-by-step instructions<\/a> may be useful."}}};    //]]> 
-2016-02-17 13:56:20,924- INFO(NewsPoster.java:442)[Thread-4]-URL: http://www400.jimdo.com/app/cms/poll/status/
-2016-02-17 13:56:22,750- INFO(NewsPoster.java:322)[Thread-4]-Status of htmlCode post:success
-2016-02-17 13:56:23,310- INFO(NewsPoster.java:386)[Thread-4]-Error count:0
-2016-02-17 13:56:23,311- INFO(NewsPoster.java:442)[Thread-4]-URL: http://www400.jimdo.com/app/cms/preview/index/pageId/2076651897
-2016-02-17 13:56:23,705-DEBUG(AccountFactory.java:385)[Thread-4]-Posted account news incremented: 1
-2016-02-17 13:56:23,706-DEBUG(AccountFactory.java:397)[Thread-4]-Used account size decremented: 0
-2016-02-17 13:56:23,707- WARN(AccountFactory.java:402)[Thread-4]-Account oottripewla was excluded from request at all
-2016-02-17 13:56:23,707-DEBUG(TaskFactory.java:80)[Thread-4]-DEC thread: 0
-2016-02-17 13:56:27,253- INFO(JimboTaskRunner.java:281)[main]-Task factory is empty: false. Current working threads count is 0
-2016-02-17 13:56:27,253- INFO(JimboTaskRunner.java:282)[main]-Error tasks: 0
-2016-02-17 13:56:27,253- INFO(JimboTaskRunner.java:309)[main]-Starting saving unused account...
-2016-02-17 13:56:27,254- INFO(JimboTaskRunner.java:316)[main]-Unused accounts was saved successfully.
+2016-03-04 14:47:41,978- INFO(JimboTaskRunner.java:249)[main]-Task retrieved. File name: article_86125.txt
+2016-03-04 14:47:41,979- WARN(AccountFactory.java:407)[Thread-1]-MAX news count for account were posted ( news were posted). Account 1 was excluded from request at all
+2016-03-04 14:47:41,980- INFO(AccountFactory.java:207)[main]-URL: http://a.jimdo.com/app/auth/signin/authenticate
+2016-03-04 14:47:41,981- INFO(SnippetExtractor.java:218)[Thread-3]-Recude page from 41 to 13
+2016-03-04 14:47:42,509- INFO(SnippetExtractor.java:218)[Thread-3]-Recude page from 13 to 4
+2016-03-04 14:47:44,084- INFO(SnippetExtractor.java:218)[Thread-2]-Recude page from 14 to 4
+2016-03-04 14:47:44,865- INFO(NewsPoster.java:442)[Thread-3]-URL: http://www400.jimdo.com/app/cms/poll/status/
+2016-03-04 14:47:44,932- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/auth/signin/start/?return=%2Fapp%2Fs1edaf5dc21099be9%2F%3Fsafemode%3D0
+2016-03-04 14:47:45,607- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s1edaf5dc21099be9/?safemode=0
+2016-03-04 14:47:45,827- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s1edaf5dc21099be9/p0df17c7bf960efb7/?safemode=0
+2016-03-04 14:47:46,034- INFO(NewsPoster.java:322)[Thread-3]-Status of htmlCode post:success
+2016-03-04 14:47:46,037- INFO(AccountFactory.java:282)[main]-URL: http://www400.jimdo.com/app/s1edaf5dc21099be9/p0df17c7bf960efb7/
+2016-03-04 14:47:46,490- INFO(NewsPoster.java:386)[Thread-3]-Error count:0
+2016-03-04 14:47:46,490- INFO(NewsPoster.java:442)[Thread-3]-URL: http://www400.jimdo.com/app/cms/preview/index/pageId/2544578222
+2016-03-04 14:47:46,779- INFO(NewsPoster.java:442)[Thread-2]-URL: http://www400.jimdo.com/app/cms/poll/status/
+2016-03-04 14:47:46,976- INFO(JimboTaskRunner.java:249)[main]-Task retrieved. File name: article_86119.txt
+2016-03-04 14:47:46,978- WARN(AccountFactory.java:407)[Thread-3]-MAX news count for account were posted ( news were posted). Account 1 was excluded from request at all
+2016-03-04 14:47:46,978- INFO(SnippetExtractor.java:218)[Thread-4]-Recude page from 37 to 12
+2016-03-04 14:47:47,627- INFO(SnippetExtractor.java:218)[Thread-4]-Recude page from 12 to 4
+2016-03-04 14:47:47,827- INFO(NewsPoster.java:322)[Thread-2]-Status of htmlCode post:success
+2016-03-04 14:47:48,235- INFO(NewsPoster.java:386)[Thread-2]-Error count:0
+2016-03-04 14:47:48,235- INFO(NewsPoster.java:442)[Thread-2]-URL: http://www400.jimdo.com/app/cms/preview/index/pageId/2598150225
+2016-03-04 14:47:48,461- WARN(AccountFactory.java:407)[Thread-2]-MAX news count for account were posted ( news were posted). Account 1 was excluded from request at all
+2016-03-04 14:47:49,845- INFO(NewsPoster.java:442)[Thread-4]-URL: http://www400.jimdo.com/app/cms/poll/status/
+2016-03-04 14:47:50,982- INFO(NewsPoster.java:322)[Thread-4]-Status of htmlCode post:success
+2016-03-04 14:47:51,475- INFO(NewsPoster.java:386)[Thread-4]-Error count:0
+2016-03-04 14:47:51,475- INFO(NewsPoster.java:442)[Thread-4]-URL: http://www400.jimdo.com/app/cms/preview/index/pageId/2078939097
+2016-03-04 14:47:51,744- WARN(AccountFactory.java:407)[Thread-4]-MAX news count for account were posted ( news were posted). Account 1 was excluded from request at all
+2016-03-04 14:47:51,978- INFO(JimboTaskRunner.java:290)[main]-Task factory is empty: false. Current working threads count is 0
+2016-03-04 14:47:51,978- INFO(JimboTaskRunner.java:291)[main]-Error tasks: 0
+2016-03-04 14:47:51,978- INFO(JimboTaskRunner.java:318)[main]-Starting saving unused account...
+2016-03-04 14:47:51,979- INFO(JimboTaskRunner.java:325)[main]-Unused accounts was saved successfully.

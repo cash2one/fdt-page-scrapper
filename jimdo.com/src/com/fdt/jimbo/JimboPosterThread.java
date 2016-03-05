@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Random;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
@@ -13,6 +15,7 @@ import org.apache.log4j.Logger;
 import com.fdt.jimbo.task.NewsTask;
 import com.fdt.jimbo.task.TaskFactory;
 import com.fdt.scrapper.SnippetExtractor;
+import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.Snippet;
@@ -40,10 +43,12 @@ public class JimboPosterThread extends Thread{
 	private String listProcessedFilePath;
 	private String errorFilePath;
 	private boolean addLinkFromFolder = true;
-	
+
 	private String lang;
 	private String sourcesSrt;
 	private int[] frequencies;
+
+	private static final Lock fileSaveLock= new ReentrantLock();
 
 	public JimboPosterThread(
 			NewsTask task, 
@@ -70,7 +75,7 @@ public class JimboPosterThread extends Thread{
 		this.lnkTtlLstFl4Res = lnkTtlLstFl4Res;
 		this.listProcessedFilePath = listProcessedFilePath;
 		this.errorFilePath = errorFilePath;
-		
+
 		this.lang = lang;
 		this.sourcesSrt = sourcesSrt; 
 		this.frequencies = frequencies;
@@ -91,11 +96,12 @@ public class JimboPosterThread extends Thread{
 	public void run() {
 		synchronized (this) 
 		{
+			ProxyConnector proxyConnector = null;
 			Random rnd = new Random();
 			rnd.nextInt();
-			
+
 			log.debug(String.format("Starting processing file %s ...", task.getInputFile().getName()));
-			
+
 			try
 			{
 				boolean errorExist = false;
@@ -105,32 +111,50 @@ public class JimboPosterThread extends Thread{
 					snipWrapTask.selectRandTask().setPage(rnd.nextInt(50));
 					SnippetExtractor snippetExtractor = new SnippetExtractor(snipWrapTask, proxyFactory, new ArrayList<String>());
 					snippetExtractor.setAddLinkFromFolder(addLinkFromFolder);
-					
+
+					log.debug(String.format("Starting extract snippets for account %s ", account.getLogin()));
 					//TODO Add Snippet task chooser
 					if(MIN_SNIPPET_COUNT == 0 && MAX_SNIPPET_COUNT == 0){
 						task.setSnippets("");
 					}else{
 						String snippetsStr = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getResult();
-						
+
 						if(snippetsStr == null || "".equals(snippetsStr.trim()))
 							throw new Exception("Could not extract snippets");
-	
+
 						task.setSnippets(snippetsStr);
 					}
+					
+					log.debug(String.format("Snippets for account %s are extracted", account.getLogin()));
 
-					NewsPoster nPoster = new NewsPoster(task, proxyFactory.getRandomProxyConnector().getConnect(ProxyFactory.PROXY_TYPE), this.account, accountFactory);
+					proxyConnector = proxyFactory.getRandomProxyConnector();
+
+					NewsPoster nPoster = new NewsPoster(task, proxyConnector.getConnect(ProxyFactory.PROXY_TYPE), this.account, accountFactory);
+					
 					String url2Post = nPoster.postNews();
-					Utils.appendStringToFile(url2Post, lnkLstFl4Res);
-					Utils.appendStringToFile(url2Post + ";" + task.getTitle(), lnkTtlLstFl4Res);
 					
+					fileSaveLock.lock();
+					try{
+						log.info(String.format("ACCOUNT (%s) NEWS URL: %s", account.getLogin(), url2Post));
+						log.debug(String.format("Saving result to file %s file", lnkLstFl4Res));
+						Utils.appendStringToFile(url2Post, lnkLstFl4Res);
+						log.debug(String.format("Saving result to file %s file", lnkTtlLstFl4Res));
+						Utils.appendStringToFile(url2Post + ";" + task.getTitle(), lnkTtlLstFl4Res);
+					}finally{
+						fileSaveLock.unlock();
+					}
+
 					String domainFilePath = account.getSite().substring(7) + ".txt";
+					log.debug(String.format("Saving key %s for account %s to file %s file", task.getKey(), account.getLogin(), domainFilePath));
 					Utils.appendStringToFile(task.getKey(), new File("./domen", domainFilePath));
-					
+
 					//Move file to processed folder
 					File destFile = new File(listProcessedFilePath + "/" + task.getInputFile().getName());
 					if(destFile.exists()){
 						destFile.delete();
 					}
+
+					log.debug(String.format("Moving file %s to process folder", task.getInputFile().getName()));
 					FileUtils.moveFile(task.getInputFile(), destFile);
 				} 
 				catch (Throwable e) {
@@ -162,9 +186,13 @@ public class JimboPosterThread extends Thread{
 					accountFactory.releaseAccount(account);
 				}
 			} finally {
+				if(proxyConnector != null){
+					proxyFactory.releaseProxy(proxyConnector);
+				}
 				taskFactory.decRunThreadsCount(task);
 			}
 		}
+		log.debug(String.format("Processing file %s IS COMPLETED", task.getInputFile().getName()));
 	}
 
 	public NewsTask getTask(){

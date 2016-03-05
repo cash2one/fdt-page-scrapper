@@ -1705,3 +1705,406 @@ java.lang.Exception: Snippets size is 0. Will try to use another proxy server
 2016-03-03 21:01:05,151- INFO(NewsPoster.java:265)[Thread-14]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11389700/
 2016-03-03 21:01:06,187- INFO(NewsPoster.java:265)[Thread-15]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11389701/
 2016-03-03 21:01:07,156- INFO(NewsPoster.java:265)[Thread-16]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11389702/
+2016-03-05 10:06:30,480- INFO(NewsPoster.java:265)[Thread-1]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401134/
+2016-03-05 10:06:31,734- INFO(NewsPoster.java:265)[Thread-2]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401136/
+2016-03-05 10:06:32,704- INFO(NewsPoster.java:265)[Thread-3]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401138/
+2016-03-05 10:06:33,716- INFO(NewsPoster.java:265)[Thread-4]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401139/
+2016-03-05 10:06:35,223- INFO(NewsPoster.java:265)[Thread-5]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401140/
+2016-03-05 10:06:36,340- INFO(NewsPoster.java:265)[Thread-6]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401142/
+2016-03-05 10:06:38,671- INFO(NewsPoster.java:265)[Thread-7]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401143/
+2016-03-05 10:06:39,780- INFO(NewsPoster.java:265)[Thread-8]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401144/
+2016-03-05 10:06:40,745- INFO(NewsPoster.java:265)[Thread-9]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401146/
+2016-03-05 10:06:41,844- INFO(NewsPoster.java:265)[Thread-10]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401147/
+2016-03-05 10:06:44,860- INFO(NewsPoster.java:265)[Thread-11]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401148/
+2016-03-05 10:06:45,697- INFO(NewsPoster.java:265)[Thread-12]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401149/
+2016-03-05 10:06:46,992- INFO(NewsPoster.java:265)[Thread-13]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401150/
+2016-03-05 10:06:48,452- INFO(NewsPoster.java:265)[Thread-14]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401151/
+2016-03-05 10:06:49,379- INFO(NewsPoster.java:265)[Thread-15]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401152/
+2016-03-05 10:06:50,745- INFO(NewsPoster.java:265)[Thread-16]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401154/
+2016-03-05 10:06:52,019- INFO(NewsPoster.java:265)[Thread-17]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401155/
+2016-03-05 10:06:53,252- INFO(NewsPoster.java:265)[Thread-18]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401156/
+2016-03-05 10:06:54,409- INFO(NewsPoster.java:265)[Thread-19]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401157/
+2016-03-05 10:06:57,442- INFO(NewsPoster.java:265)[Thread-20]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401159/
+2016-03-05 10:06:58,634- INFO(NewsPoster.java:265)[Thread-21]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401161/
+2016-03-05 10:06:59,600- INFO(NewsPoster.java:265)[Thread-22]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401162/
+2016-03-05 10:07:00,568- INFO(NewsPoster.java:265)[Thread-23]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401163/
+2016-03-05 10:07:02,953- INFO(NewsPoster.java:265)[Thread-24]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401164/
+2016-03-05 10:14:48,469-ERROR(NewsPoster.java:271)[Thread-1]-Error occured during posting news
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.http.HttpClient.privilegedOpenServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at com.fdt.newposter.scrapper.NewsPoster.postNews(NewsPoster.java:151)
+	at com.fdt.newposter.scrapper.NewsPoster.executePostNews(NewsPoster.java:91)
+	at com.fdt.newposter.scrapper.PosterThread.run(PosterThread.java:52)
+2016-03-05 10:14:48,476- INFO(TaskFactory.java:136)[Thread-1]-Task returned to queue for reprocessing: игровые автоматы maxbet
+2016-03-05 10:15:13,447- INFO(NewsPoster.java:265)[Thread-2]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401235/
+2016-03-05 10:15:17,814- INFO(NewsPoster.java:265)[Thread-3]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401236/
+2016-03-05 10:15:19,341- INFO(NewsPoster.java:265)[Thread-4]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401237/
+2016-03-05 10:15:20,646- INFO(NewsPoster.java:265)[Thread-5]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401238/
+2016-03-05 10:15:22,210- INFO(NewsPoster.java:265)[Thread-6]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401240/
+2016-03-05 10:15:24,974-ERROR(NewsPoster.java:271)[Thread-7]-Error occured during posting news
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.http.HttpClient.privilegedOpenServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at com.fdt.newposter.scrapper.NewsPoster.postNews(NewsPoster.java:151)
+	at com.fdt.newposter.scrapper.NewsPoster.executePostNews(NewsPoster.java:91)
+	at com.fdt.newposter.scrapper.PosterThread.run(PosterThread.java:52)
+2016-03-05 10:15:24,975- INFO(TaskFactory.java:136)[Thread-7]-Task returned to queue for reprocessing: казино цезарь
+2016-03-05 10:15:30,802- INFO(NewsPoster.java:265)[Thread-8]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401241/
+2016-03-05 10:15:32,474- INFO(NewsPoster.java:265)[Thread-9]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401242/
+2016-03-05 10:15:33,919- INFO(NewsPoster.java:265)[Thread-10]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401243/
+2016-03-05 10:15:35,964- INFO(NewsPoster.java:265)[Thread-11]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401244/
+2016-03-05 10:15:39,347- INFO(NewsPoster.java:265)[Thread-12]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401245/
+2016-03-05 10:15:42,058- INFO(NewsPoster.java:265)[Thread-13]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401247/
+2016-03-05 10:17:28,461- INFO(NewsPoster.java:265)[Thread-14]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401258/
+2016-03-05 10:17:30,888- INFO(NewsPoster.java:265)[Thread-15]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401259/
+2016-03-05 10:17:33,132- INFO(NewsPoster.java:265)[Thread-16]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401261/
+2016-03-05 10:25:02,011- INFO(NewsPoster.java:265)[Thread-1]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401312/
+2016-03-05 10:25:10,498- INFO(NewsPoster.java:265)[Thread-2]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401316/
+2016-03-05 10:25:20,331- INFO(NewsPoster.java:265)[Thread-3]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401317/
+2016-03-05 10:25:50,980- INFO(NewsPoster.java:265)[Thread-1]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401322/
+2016-03-05 10:27:19,643- INFO(NewsPoster.java:265)[Thread-2]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401337/
+2016-03-05 10:28:49,641- INFO(NewsPoster.java:265)[Thread-3]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401347/
+2016-03-05 10:30:20,200- INFO(NewsPoster.java:265)[Thread-4]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401360/
+2016-03-05 10:31:49,874- INFO(NewsPoster.java:265)[Thread-5]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401372/
+2016-03-05 10:33:19,792- INFO(NewsPoster.java:265)[Thread-6]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401385/
+2016-03-05 10:34:51,381- INFO(NewsPoster.java:265)[Thread-7]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401400/
+2016-03-05 10:35:00,714- INFO(NewsPoster.java:265)[Thread-1]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401403/
+2016-03-05 10:35:44,720- INFO(NewsPoster.java:265)[Thread-2]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401412/
+2016-03-05 10:36:29,362- INFO(NewsPoster.java:265)[Thread-3]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401418/
+2016-03-05 10:37:14,519- INFO(NewsPoster.java:265)[Thread-4]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401423/
+2016-03-05 10:37:59,428- INFO(NewsPoster.java:265)[Thread-5]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401431/
+2016-03-05 10:38:44,620- INFO(NewsPoster.java:265)[Thread-6]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401435/
+2016-03-05 10:39:30,653- INFO(NewsPoster.java:265)[Thread-7]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401443/
+2016-03-05 10:40:14,429- INFO(NewsPoster.java:265)[Thread-8]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401449/
+2016-03-05 10:40:59,383- INFO(NewsPoster.java:265)[Thread-9]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401461/
+2016-03-05 10:41:44,434- INFO(NewsPoster.java:265)[Thread-10]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401469/
+2016-03-05 10:42:29,760- INFO(NewsPoster.java:265)[Thread-11]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401476/
+2016-03-05 10:43:14,392- INFO(NewsPoster.java:265)[Thread-12]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401481/
+2016-03-05 10:43:59,610- INFO(NewsPoster.java:265)[Thread-13]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401488/
+2016-03-05 10:44:44,525- INFO(NewsPoster.java:265)[Thread-14]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401507/
+2016-03-05 10:45:29,494- INFO(NewsPoster.java:265)[Thread-15]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401517/
+2016-03-05 10:46:14,559- INFO(NewsPoster.java:265)[Thread-16]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401523/
+2016-03-05 10:46:59,656- INFO(NewsPoster.java:265)[Thread-17]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401535/
+2016-03-05 10:47:44,686- INFO(NewsPoster.java:265)[Thread-18]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401543/
+2016-03-05 10:48:29,435- INFO(NewsPoster.java:265)[Thread-19]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401553/
+2016-03-05 10:49:15,707- INFO(NewsPoster.java:265)[Thread-20]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401558/
+2016-03-05 10:49:59,532- INFO(NewsPoster.java:265)[Thread-21]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401566/
+2016-03-05 10:50:44,599- INFO(NewsPoster.java:265)[Thread-22]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401573/
+2016-03-05 10:51:29,498- INFO(NewsPoster.java:265)[Thread-23]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401582/
+2016-03-05 10:52:14,645- INFO(NewsPoster.java:265)[Thread-24]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401592/
+2016-03-05 10:53:00,762- INFO(NewsPoster.java:265)[Thread-25]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401602/
+2016-03-05 10:53:47,459- INFO(NewsPoster.java:265)[Thread-26]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401609/
+2016-03-05 10:54:29,759- INFO(NewsPoster.java:265)[Thread-27]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401616/
+2016-03-05 10:55:35,203-ERROR(NewsPoster.java:271)[Thread-28]-Error occured during posting news
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.http.HttpClient.privilegedOpenServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at com.fdt.newposter.scrapper.NewsPoster.postNews(NewsPoster.java:151)
+	at com.fdt.newposter.scrapper.NewsPoster.executePostNews(NewsPoster.java:91)
+	at com.fdt.newposter.scrapper.PosterThread.run(PosterThread.java:52)
+2016-03-05 10:55:35,204- INFO(TaskFactory.java:136)[Thread-28]-Task returned to queue for reprocessing: сыграть игровые автоматы
+2016-03-05 10:56:20,140-ERROR(NewsPoster.java:271)[Thread-29]-Error occured during posting news
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.http.HttpClient.privilegedOpenServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at com.fdt.newposter.scrapper.NewsPoster.postNews(NewsPoster.java:151)
+	at com.fdt.newposter.scrapper.NewsPoster.executePostNews(NewsPoster.java:91)
+	at com.fdt.newposter.scrapper.PosterThread.run(PosterThread.java:52)
+2016-03-05 10:56:20,141- INFO(TaskFactory.java:136)[Thread-29]-Task returned to queue for reprocessing: игровые автоматы спарта играть
+2016-03-05 10:57:05,192-ERROR(NewsPoster.java:271)[Thread-30]-Error occured during posting news
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at sun.net.www.http.HttpClient$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.http.HttpClient.privilegedOpenServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at com.fdt.newposter.scrapper.NewsPoster.postNews(NewsPoster.java:151)
+	at com.fdt.newposter.scrapper.NewsPoster.executePostNews(NewsPoster.java:91)
+	at com.fdt.newposter.scrapper.PosterThread.run(PosterThread.java:52)
+2016-03-05 10:57:05,193- INFO(TaskFactory.java:136)[Thread-30]-Task returned to queue for reprocessing: интернет казино игровые
+2016-03-05 10:57:29,579- INFO(NewsPoster.java:265)[Thread-31]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401636/
+2016-03-05 10:58:15,434- INFO(NewsPoster.java:265)[Thread-32]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401648/
+2016-03-05 10:59:00,459- INFO(NewsPoster.java:265)[Thread-33]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401660/
+2016-03-05 10:59:44,584- INFO(NewsPoster.java:265)[Thread-34]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401666/
+2016-03-05 11:00:30,239- INFO(NewsPoster.java:265)[Thread-35]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401672/
+2016-03-05 11:01:14,625- INFO(NewsPoster.java:265)[Thread-36]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401681/
+2016-03-05 11:02:00,316- INFO(NewsPoster.java:265)[Thread-37]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401690/
+2016-03-05 11:02:45,791- INFO(NewsPoster.java:265)[Thread-38]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401702/
+2016-03-05 11:03:29,646- INFO(NewsPoster.java:265)[Thread-39]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401709/
+2016-03-05 11:04:16,028- INFO(NewsPoster.java:265)[Thread-40]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401719/
+2016-03-05 11:04:59,713- INFO(NewsPoster.java:265)[Thread-41]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401730/
+2016-03-05 11:05:44,673- INFO(NewsPoster.java:265)[Thread-42]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401736/
+2016-03-05 11:06:30,118- INFO(NewsPoster.java:265)[Thread-43]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401743/
+2016-03-05 11:07:15,812- INFO(NewsPoster.java:265)[Thread-44]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401751/
+2016-03-05 11:08:00,896- INFO(NewsPoster.java:265)[Thread-45]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401757/
+2016-03-05 11:08:47,079- INFO(NewsPoster.java:265)[Thread-46]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401766/
+2016-03-05 11:09:29,704- INFO(NewsPoster.java:265)[Thread-47]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401777/
+2016-03-05 11:10:16,050- INFO(NewsPoster.java:265)[Thread-48]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401786/
+2016-03-05 11:11:04,385- INFO(NewsPoster.java:265)[Thread-49]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401794/
+2016-03-05 11:11:44,500- INFO(NewsPoster.java:265)[Thread-50]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401800/
+2016-03-05 11:12:30,389- INFO(NewsPoster.java:265)[Thread-51]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401805/
+2016-03-05 11:13:15,608- INFO(NewsPoster.java:265)[Thread-52]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401811/
+2016-03-05 11:14:00,589- INFO(NewsPoster.java:265)[Thread-53]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401818/
+2016-03-05 11:14:44,736- INFO(NewsPoster.java:265)[Thread-54]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401826/
+2016-03-05 11:15:30,413- INFO(NewsPoster.java:265)[Thread-55]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401833/
+2016-03-05 11:16:16,816- INFO(NewsPoster.java:265)[Thread-56]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401838/
+2016-03-05 11:16:59,846- INFO(NewsPoster.java:265)[Thread-57]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401845/
+2016-03-05 11:17:44,917- INFO(NewsPoster.java:265)[Thread-58]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401851/
+2016-03-05 11:18:30,031- INFO(NewsPoster.java:265)[Thread-59]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401860/
+2016-03-05 11:19:14,692- INFO(NewsPoster.java:265)[Thread-60]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401864/
+2016-03-05 11:20:00,903- INFO(NewsPoster.java:265)[Thread-61]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401871/
+2016-03-05 11:20:44,651- INFO(NewsPoster.java:265)[Thread-62]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401878/
+2016-03-05 11:21:29,747- INFO(NewsPoster.java:265)[Thread-63]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401886/
+2016-03-05 11:22:14,675- INFO(NewsPoster.java:265)[Thread-64]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401893/
+2016-03-05 11:22:59,674- INFO(NewsPoster.java:265)[Thread-65]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401899/
+2016-03-05 11:23:44,718- INFO(NewsPoster.java:265)[Thread-66]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401913/
+2016-03-05 11:24:29,766- INFO(NewsPoster.java:265)[Thread-67]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401921/
+2016-03-05 11:25:14,822- INFO(NewsPoster.java:265)[Thread-68]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401933/
+2016-03-05 11:26:01,718- INFO(NewsPoster.java:265)[Thread-69]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401941/
+2016-03-05 11:26:44,657- INFO(NewsPoster.java:265)[Thread-70]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401947/
+2016-03-05 11:27:29,863- INFO(NewsPoster.java:265)[Thread-71]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401954/
+2016-03-05 11:28:15,628- INFO(NewsPoster.java:265)[Thread-72]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401962/
+2016-03-05 11:28:59,732- INFO(NewsPoster.java:265)[Thread-73]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401965/
+2016-03-05 11:29:44,925- INFO(NewsPoster.java:265)[Thread-74]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401971/
+2016-03-05 11:30:30,981- INFO(NewsPoster.java:265)[Thread-75]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401979/
+2016-03-05 11:31:14,855- INFO(NewsPoster.java:265)[Thread-76]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401988/
+2016-03-05 11:31:59,971- INFO(NewsPoster.java:265)[Thread-77]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11401997/
+2016-03-05 11:32:45,017- INFO(NewsPoster.java:265)[Thread-78]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402001/
+2016-03-05 11:33:30,720- INFO(NewsPoster.java:265)[Thread-79]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402012/
+2016-03-05 11:34:16,063- INFO(NewsPoster.java:265)[Thread-80]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402019/
+2016-03-05 11:35:00,116- INFO(NewsPoster.java:265)[Thread-81]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402026/
+2016-03-05 11:35:45,049- INFO(NewsPoster.java:265)[Thread-82]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402036/
+2016-03-05 11:36:30,403- INFO(NewsPoster.java:265)[Thread-83]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402046/
+2016-03-05 11:37:15,578- INFO(NewsPoster.java:265)[Thread-84]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402056/
+2016-03-05 11:38:00,502- INFO(NewsPoster.java:265)[Thread-85]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402063/
+2016-03-05 11:38:45,234- INFO(NewsPoster.java:265)[Thread-86]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402069/
+2016-03-05 11:39:30,076- INFO(NewsPoster.java:265)[Thread-87]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402077/
+2016-03-05 11:40:15,222- INFO(NewsPoster.java:265)[Thread-88]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402087/
+2016-03-05 11:41:00,271- INFO(NewsPoster.java:265)[Thread-89]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402100/
+2016-03-05 11:41:44,939- INFO(NewsPoster.java:265)[Thread-90]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402109/
+2016-03-05 11:42:29,936- INFO(NewsPoster.java:265)[Thread-91]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402115/
+2016-03-05 11:43:15,290- INFO(NewsPoster.java:265)[Thread-92]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402124/
+2016-03-05 11:43:59,974- INFO(NewsPoster.java:265)[Thread-93]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402131/
+2016-03-05 11:44:46,185- INFO(NewsPoster.java:265)[Thread-94]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402138/
+2016-03-05 11:45:30,373- INFO(NewsPoster.java:265)[Thread-95]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402147/
+2016-03-05 11:46:15,362- INFO(NewsPoster.java:265)[Thread-96]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402152/
+2016-03-05 11:47:01,295- INFO(NewsPoster.java:265)[Thread-97]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402160/
+2016-03-05 11:47:45,644- INFO(NewsPoster.java:265)[Thread-98]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402169/
+2016-03-05 11:48:30,064- INFO(NewsPoster.java:265)[Thread-99]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402178/
+2016-03-05 11:49:15,297- INFO(NewsPoster.java:265)[Thread-100]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402187/
+2016-03-05 11:50:00,071- INFO(NewsPoster.java:265)[Thread-101]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402197/
+2016-03-05 11:50:45,114- INFO(NewsPoster.java:265)[Thread-102]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402209/
+2016-03-05 11:51:30,191- INFO(NewsPoster.java:265)[Thread-103]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402222/
+2016-03-05 11:52:15,275- INFO(NewsPoster.java:265)[Thread-104]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402232/
+2016-03-05 11:53:00,047- INFO(NewsPoster.java:265)[Thread-105]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402242/
+2016-03-05 11:53:46,291- INFO(NewsPoster.java:265)[Thread-106]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402250/
+2016-03-05 11:54:31,764- INFO(NewsPoster.java:265)[Thread-107]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402258/
+2016-03-05 11:55:15,100- INFO(NewsPoster.java:265)[Thread-108]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402269/
+2016-03-05 11:56:01,414- INFO(NewsPoster.java:265)[Thread-109]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402277/
+2016-03-05 11:56:44,986- INFO(NewsPoster.java:265)[Thread-110]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402290/
+2016-03-05 11:57:30,089- INFO(NewsPoster.java:265)[Thread-111]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402306/
+2016-03-05 11:58:15,716- INFO(NewsPoster.java:265)[Thread-112]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402317/
+2016-03-05 11:59:00,121- INFO(NewsPoster.java:265)[Thread-113]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402322/
+2016-03-05 11:59:46,368- INFO(NewsPoster.java:265)[Thread-114]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402329/
+2016-03-05 12:00:32,014- INFO(NewsPoster.java:265)[Thread-115]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402339/
+2016-03-05 12:01:15,635- INFO(NewsPoster.java:265)[Thread-116]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402348/
+2016-03-05 12:02:00,205- INFO(NewsPoster.java:265)[Thread-117]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402354/
+2016-03-05 12:02:45,089- INFO(NewsPoster.java:265)[Thread-118]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402360/
+2016-03-05 12:03:30,553- INFO(NewsPoster.java:265)[Thread-119]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402367/
+2016-03-05 12:04:15,124- INFO(NewsPoster.java:265)[Thread-120]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402372/
+2016-03-05 12:05:00,338- INFO(NewsPoster.java:265)[Thread-121]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402381/
+2016-03-05 12:05:45,023- INFO(NewsPoster.java:265)[Thread-122]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402388/
+2016-03-05 12:06:30,055- INFO(NewsPoster.java:265)[Thread-123]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402395/
+2016-03-05 12:07:16,285- INFO(NewsPoster.java:265)[Thread-124]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402402/
+2016-03-05 12:08:00,147- INFO(NewsPoster.java:265)[Thread-125]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402410/
+2016-03-05 12:08:45,214- INFO(NewsPoster.java:265)[Thread-126]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402419/
+2016-03-05 12:09:31,682- INFO(NewsPoster.java:265)[Thread-127]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402427/
+2016-03-05 12:10:15,422- INFO(NewsPoster.java:265)[Thread-128]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402439/
+2016-03-05 12:11:00,088- INFO(NewsPoster.java:265)[Thread-129]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402450/
+2016-03-05 12:11:46,384- INFO(NewsPoster.java:265)[Thread-130]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402465/
+2016-03-05 12:12:31,361- INFO(NewsPoster.java:265)[Thread-131]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402474/
+2016-03-05 12:13:16,360- INFO(NewsPoster.java:265)[Thread-132]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402481/
+2016-03-05 12:14:00,085- INFO(NewsPoster.java:265)[Thread-133]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402486/
+2016-03-05 12:14:45,618- INFO(NewsPoster.java:265)[Thread-134]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402491/
+2016-03-05 12:15:30,181- INFO(NewsPoster.java:265)[Thread-135]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402499/
+2016-03-05 12:16:15,307- INFO(NewsPoster.java:265)[Thread-136]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402505/
+2016-03-05 12:17:01,415- INFO(NewsPoster.java:265)[Thread-137]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402512/
+2016-03-05 12:17:45,093- INFO(NewsPoster.java:265)[Thread-138]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402518/
+2016-03-05 12:18:30,296- INFO(NewsPoster.java:265)[Thread-139]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402523/
+2016-03-05 12:19:15,134- INFO(NewsPoster.java:265)[Thread-140]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402530/
+2016-03-05 12:20:00,100- INFO(NewsPoster.java:265)[Thread-141]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402538/
+2016-03-05 12:20:45,473- INFO(NewsPoster.java:265)[Thread-142]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402549/
+2016-03-05 12:21:30,435- INFO(NewsPoster.java:265)[Thread-143]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402555/
+2016-03-05 12:22:15,900- INFO(NewsPoster.java:265)[Thread-144]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402560/
+2016-03-05 12:23:00,339- INFO(NewsPoster.java:265)[Thread-145]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402565/
+2016-03-05 12:23:45,590- INFO(NewsPoster.java:265)[Thread-146]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402571/
+2016-03-05 12:24:30,484- INFO(NewsPoster.java:265)[Thread-147]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402577/
+2016-03-05 12:25:15,078- INFO(NewsPoster.java:265)[Thread-148]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402583/
+2016-03-05 12:26:00,140- INFO(NewsPoster.java:265)[Thread-149]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402588/
+2016-03-05 12:26:45,135- INFO(NewsPoster.java:265)[Thread-150]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402594/
+2016-03-05 12:27:30,304- INFO(NewsPoster.java:265)[Thread-151]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402598/
+2016-03-05 12:28:15,330- INFO(NewsPoster.java:265)[Thread-152]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402607/
+2016-03-05 12:29:00,212- INFO(NewsPoster.java:265)[Thread-153]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402616/
+2016-03-05 12:29:45,235- INFO(NewsPoster.java:265)[Thread-154]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402627/
+2016-03-05 12:30:30,233- INFO(NewsPoster.java:265)[Thread-155]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402632/
+2016-03-05 12:31:15,208- INFO(NewsPoster.java:265)[Thread-156]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402637/
+2016-03-05 12:32:00,308- INFO(NewsPoster.java:265)[Thread-157]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402645/
+2016-03-05 12:32:45,419- INFO(NewsPoster.java:265)[Thread-158]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402648/
+2016-03-05 12:33:30,729- INFO(NewsPoster.java:265)[Thread-159]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402654/
+2016-03-05 12:34:16,277- INFO(NewsPoster.java:265)[Thread-160]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402661/
+2016-03-05 12:35:00,198- INFO(NewsPoster.java:265)[Thread-161]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402667/
+2016-03-05 12:35:45,189- INFO(NewsPoster.java:265)[Thread-162]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402673/
+2016-03-05 12:36:30,155- INFO(NewsPoster.java:265)[Thread-163]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402680/
+2016-03-05 12:37:15,956- INFO(NewsPoster.java:265)[Thread-164]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402685/
+2016-03-05 12:38:01,828- INFO(NewsPoster.java:265)[Thread-165]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402690/
+2016-03-05 12:38:46,723- INFO(NewsPoster.java:265)[Thread-166]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402696/
+2016-03-05 12:39:30,511- INFO(NewsPoster.java:265)[Thread-167]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402701/
+2016-03-05 12:40:15,400- INFO(NewsPoster.java:265)[Thread-168]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402705/
+2016-03-05 12:41:00,271- INFO(NewsPoster.java:265)[Thread-169]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402710/
+2016-03-05 12:41:45,185- INFO(NewsPoster.java:265)[Thread-170]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402720/
+2016-03-05 12:42:31,689- INFO(NewsPoster.java:265)[Thread-171]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402726/
+2016-03-05 12:43:15,192- INFO(NewsPoster.java:265)[Thread-172]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402732/
+2016-03-05 12:44:00,212- INFO(NewsPoster.java:265)[Thread-173]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402740/
+2016-03-05 12:44:46,546- INFO(NewsPoster.java:265)[Thread-174]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402745/
+2016-03-05 12:45:30,252- INFO(NewsPoster.java:265)[Thread-175]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402754/
+2016-03-05 12:46:15,194- INFO(NewsPoster.java:265)[Thread-176]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402758/
+2016-03-05 12:47:00,245- INFO(NewsPoster.java:265)[Thread-177]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402764/
+2016-03-05 12:47:45,417- INFO(NewsPoster.java:265)[Thread-178]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402771/
+2016-03-05 12:48:30,550- INFO(NewsPoster.java:265)[Thread-179]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402776/
+2016-03-05 12:49:15,224- INFO(NewsPoster.java:265)[Thread-180]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402784/
+2016-03-05 12:50:00,338- INFO(NewsPoster.java:265)[Thread-181]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402793/
+2016-03-05 12:50:46,606- INFO(NewsPoster.java:265)[Thread-182]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402798/
+2016-03-05 12:51:30,261- INFO(NewsPoster.java:265)[Thread-183]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402806/
+2016-03-05 12:52:15,657- INFO(NewsPoster.java:265)[Thread-184]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402811/
+2016-03-05 12:53:01,487- INFO(NewsPoster.java:265)[Thread-185]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402820/
+2016-03-05 12:53:45,258- INFO(NewsPoster.java:265)[Thread-186]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402825/
+2016-03-05 12:54:30,257- INFO(NewsPoster.java:265)[Thread-187]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402833/
+2016-03-05 12:55:15,268- INFO(NewsPoster.java:265)[Thread-188]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402839/
+2016-03-05 12:56:02,764- INFO(NewsPoster.java:265)[Thread-189]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402849/
+2016-03-05 12:56:45,765- INFO(NewsPoster.java:265)[Thread-190]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402856/
+2016-03-05 12:57:30,650- INFO(NewsPoster.java:265)[Thread-191]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402863/
+2016-03-05 12:58:15,307- INFO(NewsPoster.java:265)[Thread-192]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402870/
+2016-03-05 12:59:00,646- INFO(NewsPoster.java:265)[Thread-193]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402876/
+2016-03-05 12:59:45,350- INFO(NewsPoster.java:265)[Thread-194]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402884/
+2016-03-05 13:00:30,241- INFO(NewsPoster.java:265)[Thread-195]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402892/
+2016-03-05 13:01:17,342- INFO(NewsPoster.java:265)[Thread-196]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402900/
+2016-03-05 13:02:00,403- INFO(NewsPoster.java:265)[Thread-197]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402905/
+2016-03-05 13:02:46,056- INFO(NewsPoster.java:265)[Thread-198]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402912/
+2016-03-05 13:03:31,639- INFO(NewsPoster.java:265)[Thread-199]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402921/
+2016-03-05 13:04:15,249- INFO(NewsPoster.java:265)[Thread-200]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402932/
+2016-03-05 13:05:00,256- INFO(NewsPoster.java:265)[Thread-201]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402938/
+2016-03-05 13:05:45,390- INFO(NewsPoster.java:265)[Thread-202]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402942/
+2016-03-05 13:06:30,339- INFO(NewsPoster.java:265)[Thread-203]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402951/
+2016-03-05 13:07:16,585- INFO(NewsPoster.java:265)[Thread-204]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402965/
+2016-03-05 13:08:01,609- INFO(NewsPoster.java:265)[Thread-205]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402975/
+2016-03-05 13:08:45,338- INFO(NewsPoster.java:265)[Thread-206]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11402986/
+2016-03-05 13:09:31,713- INFO(NewsPoster.java:265)[Thread-207]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11403003/
+2016-03-05 13:10:16,515- INFO(NewsPoster.java:265)[Thread-208]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11403012/
+2016-03-05 13:11:00,314- INFO(NewsPoster.java:265)[Thread-209]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11403020/
+2016-03-05 13:11:45,584- INFO(NewsPoster.java:265)[Thread-210]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11403025/
+2016-03-05 13:12:30,286- INFO(NewsPoster.java:265)[Thread-211]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11403037/
+2016-03-05 13:13:15,514- INFO(NewsPoster.java:265)[Thread-212]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11403046/
+2016-03-05 13:14:00,720- INFO(NewsPoster.java:265)[Thread-213]-http://subscribe.ru/group/chernovtsyi-ukrainskij-parizh-dlya-turistov/11403055/

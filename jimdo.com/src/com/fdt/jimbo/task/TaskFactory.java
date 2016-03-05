@@ -16,7 +16,7 @@ import com.fdt.filemapping.RowMappingData;
 public class TaskFactory {
 
 	private static final Logger log = Logger.getLogger(TaskFactory.class);
-	
+
 	private static TaskFactory instance = null;
 	private String templateFilePath = "";
 
@@ -47,7 +47,7 @@ public class TaskFactory {
 		successQueue.clear();
 		errorQueue.clear();
 	}
-	
+
 	public synchronized static Integer getMAX_THREAD_COUNT() {
 		return MAX_THREAD_COUNT;
 	}
@@ -158,9 +158,9 @@ public class TaskFactory {
 			List<String> rndTitles, 
 			List<String> jpgUrlList, 
 			List<String> buttonUrlList) throws Exception
-	{
+			{
 		RowMappingData data;
-		
+
 		for(File file : fileList)
 		{
 			data = new RowMappingData(file, rowMapping);
@@ -174,11 +174,11 @@ public class TaskFactory {
 							templateFileWOPic,
 							jpgUrlList.get(rnd.nextInt(jpgUrlList.size())),
 							buttonUrlList.get(rnd.nextInt(buttonUrlList.size()))
-					) 
-			);
+							) 
+					);
 		}
-	}
-	
+			}
+
 	private ArrayList<String> readFile(File file) throws IOException{
 
 		FileReader fr = null;

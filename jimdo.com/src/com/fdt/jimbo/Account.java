@@ -12,6 +12,7 @@ public class Account {
 	private String pass = "";
 	private String secPass = "";
 	private String site = "";
+	private String siteWOHttp = "";
 	private HashMap<String,String> cookie = new HashMap<String, String>();
 	private boolean logged = false;
 	
@@ -23,6 +24,7 @@ public class Account {
 		this.login = login;
 		this.pass = pass;
 		this.site = site;
+		this.siteWOHttp = site.substring(7);
 		this.secPass = setPass;
 		this.accountFactory = accountFactory;
 	}
@@ -112,4 +114,10 @@ public class Account {
 	public AccountFactory getAccountFactory() {
 		return accountFactory;
 	}
+
+	public String getSiteWOHttp() {
+		return siteWOHttp;
+	}
+	
+	
 }
