@@ -101,7 +101,7 @@ public class NewsTask
 	}
 	
 	public String getKey4Search(){
-		return data.getDataByName(KEYWORD_SEARCH);
+		return data.getDataByName(KEYWORD_SEARCH);//.replaceAll("\t+", " ");
 	}
 	
 	public String getTitle(){

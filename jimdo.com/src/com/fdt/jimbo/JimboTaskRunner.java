@@ -14,6 +14,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -195,7 +197,8 @@ public class JimboTaskRunner
 	public void runUploader() throws Exception{
 		AccountFactory accountFactory = null;
 		try{
-			synchronized(this){
+			synchronized(this)
+			{
 				File rootInputFiles = new File(listInputFilePath);
 				
 				ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
@@ -235,7 +238,9 @@ public class JimboTaskRunner
 				JimboPosterThread newThread = null;
 				NewsTask task = null;
 				
-				while((!taskFactory.isTaskFactoryEmpty() && ((account = accountFactory.getAccount()) != null)) || taskFactory.getRunThreadsCount() > 0)
+				ExecutorService executor = Executors.newFixedThreadPool(TaskFactory.getMAX_THREAD_COUNT());
+				
+				while( (  !taskFactory.isTaskFactoryEmpty() && ( (account = accountFactory.getAccount()) != null) ) || taskFactory.getRunThreadsCount() > 0)
 				{
 					log.debug("Try to get request from RequestFactory queue.");
 					log.debug("Account: " + account);
@@ -262,10 +267,13 @@ public class JimboTaskRunner
 									source,
 									frequencies
 							);
-							newThread.start();
+							
+							executor.submit(newThread);
+							
 							account = null;
 							newThread = null;
 							task = null;
+							
 							continue;
 						}else{
 							if(task != null){

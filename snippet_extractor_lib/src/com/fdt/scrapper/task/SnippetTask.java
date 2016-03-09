@@ -47,8 +47,8 @@ public abstract class SnippetTask
 	public SnippetTask(String keyWords)
 	{
 		super();
-		this.keyWordsNative = keyWords.replaceAll("/", " ");
-		this.keyWords = keyWords.replace(' ', '+');
+		this.keyWordsNative = keyWords.replaceAll("/", " ").replaceAll("\t", " ");
+		this.keyWords = keyWords.replace(' ', '+').replace('\t', '+');
 		this.keyWordsOrig = keyWords;
 		initExtraParams();
 	}

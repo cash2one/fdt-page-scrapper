@@ -163,20 +163,23 @@ public class TaskFactory {
 
 		for(File file : fileList)
 		{
-			data = new RowMappingData(file, rowMapping);
-			taskQueue.add(
-					new NewsTask(
-							file, 
-							data, 
-							randImgUrlList.get(rnd.nextInt(randImgUrlList.size())),
-							rndTitles.get(rnd.nextInt(rndTitles.size())),
-							templateFile,
-							templateFileWOPic,
-							jpgUrlList.get(rnd.nextInt(jpgUrlList.size())),
-							buttonUrlList.get(rnd.nextInt(buttonUrlList.size()))
-							) 
-					);
+			if(file.isFile()){
+				data = new RowMappingData(file, rowMapping);
+				taskQueue.add(
+						new NewsTask(
+								file, 
+								data, 
+								randImgUrlList.get(rnd.nextInt(randImgUrlList.size())),
+								rndTitles.get(rnd.nextInt(rndTitles.size())),
+								templateFile,
+								templateFileWOPic,
+								jpgUrlList.get(rnd.nextInt(jpgUrlList.size())),
+								buttonUrlList.get(rnd.nextInt(buttonUrlList.size()))
+								) 
+						);
+			}
 		}
+
 			}
 
 	private ArrayList<String> readFile(File file) throws IOException{

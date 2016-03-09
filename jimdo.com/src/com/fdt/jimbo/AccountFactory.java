@@ -99,7 +99,7 @@ public class AccountFactory
 		//getting cookie for each account
 		HttpURLConnection conn = null;
 		ProxyConnector proxy = null;
-		
+
 		long srtTm = System.currentTimeMillis();
 
 		try {
@@ -334,48 +334,45 @@ public class AccountFactory
 		return cookies.get("Location") != null?cookies.get("Location").get(0):null;
 	}
 
-	public synchronized Account getAccount(){
+	public synchronized Account getAccount()
+	{
 		Account account = null;
-		List<String> notLogged = new ArrayList<String>();
-		for(String login : accountUsedInThreadCount.keySet()){
+
+		for(String login : accountUsedInThreadCount.keySet())
+		{
 			account = null;
-			if(!rejectedAccount.containsKey(login)){
+
+			if(!rejectedAccount.containsKey(login))
+			{
 				int runningCount = accountUsedInThreadCount.get(login);
 				int postedCount = newsPostedCount.get(login);
-				if( runningCount < (NEWS_PER_ACCOUNT-postedCount)){
+
+				if( runningCount < (NEWS_PER_ACCOUNT-postedCount))
+				{
 					int currentCount = accountUsedInThreadCount.get(login);
 					accountUsedInThreadCount.put(login, ++currentCount);
 					log.debug(String.format("Used account '%s' size incremented to %d",login, currentCount));
 					account = accounts.get(login);
-					if(account.isLogged() || loginAccount(account)){
-						account.setLogged(true);
-						break;
-					}else{
-						notLogged.add(account.getLogin());
-						log.error(String.format("Account '%s' was added to remove list", login));
-						continue;
-					}
+					break;
 				}
 			}
 		}
-		
-		//remove not logged account
-		for(String login : notLogged){
-			log.error(String.format("Account '%s' was not logged and will be removed from account list.", login));
-			Account removed = accounts.remove(login);
-			newsPostedCount.remove(login);
-			accountUsedInThreadCount.remove(login);
-			
-			if(removed != null){
-				Utils.appendStringToFile(removed.toString(), new File("account_banned.txt"));
-			}
-			
-			log.warn(String.format("Account '%s' was removed from account list.", login));
-		}
-		
-		notLogged.clear();
-		
+
 		return account;
+	}
+
+	public synchronized void removeNotLoggedAccount(Account account){
+		String login = account.getLogin();
+		log.error(String.format("Account '%s' was not logged and will be removed from account list.", login));
+		Account removed = accounts.remove(login);
+		newsPostedCount.remove(login);
+		accountUsedInThreadCount.remove(login);
+
+		if(removed != null){
+			Utils.appendStringToFile(removed.toString(), new File("account_banned.txt"));
+		}
+
+		log.warn(String.format("Account '%s' was removed from account list.", login));
 	}
 
 	/**

@@ -114,9 +114,11 @@ public class ProxyFactory
 	public ProxyConnector getProxyConnector(){
 		ProxyConnector prConnector = getProxyConnector(0);
 
-		while(bannedProxyList.contains(prConnector))
+		while(bannedProxyList.contains(prConnector) || prConnector == null)
 		{
-			releaseProxy(prConnector);
+			if(prConnector != null){
+				releaseProxy(prConnector);
+			}
 			prConnector = getProxyConnector(0);
 		}
 		return prConnector;
@@ -128,28 +130,26 @@ public class ProxyFactory
 
 		ProxyConnector prConnector = getProxyConnector(proxyIndex);
 
-		while(bannedProxyList.contains(prConnector))
+		while(bannedProxyList.contains(prConnector) || prConnector == null)
 		{
-			releaseProxy(prConnector);
+			if(prConnector != null){
+				releaseProxy(prConnector);
+			}
+			
 			proxyIndex = proxyList.size() > 0 ? rand.nextInt(proxyList.size()):0;
-
 			prConnector = getProxyConnector(proxyIndex);
 		}
 
 		return prConnector; 
 	}
 
-	private  ProxyConnector getProxyConnector(int index){
+	private  ProxyConnector getProxyConnector(int index)
+	{
 		synchronized(proxyList){
 			long curTime = System.currentTimeMillis();
 
-			while(proxyDelay.size() <= index || proxyDelay.get(index) > (curTime - DELAY_FOR_PROXY)){
-				try {
-					proxyList.wait(DELAY_FOR_PROXY);
-				} catch (InterruptedException e) {
-					log.error("Error during waiting new proxy connector",e);
-				}
-				curTime = System.currentTimeMillis();
+			if(proxyDelay.size() <= index || proxyDelay.get(index) > (curTime - DELAY_FOR_PROXY)){
+				return null;
 			}
 
 			log.info("NOT USED proxy servers: " + (proxyList.size()-1) );

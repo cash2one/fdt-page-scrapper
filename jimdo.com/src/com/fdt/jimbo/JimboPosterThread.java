@@ -3,7 +3,6 @@ package com.fdt.jimbo;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.concurrent.locks.Lock;
@@ -18,12 +17,10 @@ import com.fdt.scrapper.SnippetExtractor;
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.ConfigManager;
-import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTaskWrapper;
-import com.fdt.utils.Constants;
 import com.fdt.utils.Utils;
 
-public class JimboPosterThread extends Thread{
+public class JimboPosterThread implements Runnable {
 
 	private static final Logger log = Logger.getLogger(JimboPosterThread.class);
 
@@ -84,12 +81,8 @@ public class JimboPosterThread extends Thread{
 			MIN_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
 		if(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL) != null)
 			MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
-	}
-
-	@Override
-	public void start(){
-		taskFactory.incRunThreadsCount();
-		super.start();
+		
+		this.taskFactory.incRunThreadsCount();
 	}
 
 	@Override
@@ -99,6 +92,14 @@ public class JimboPosterThread extends Thread{
 			ProxyConnector proxyConnector = null;
 			Random rnd = new Random();
 			rnd.nextInt();
+			
+			if(account.isLogged() || accountFactory.loginAccount(account)){
+				account.setLogged(true);
+			}else{
+				accountFactory.removeNotLoggedAccount(account);
+				log.error(String.format("Account '%s' was added to remove list", account.getLogin()));
+				return;
+			}
 
 			log.debug(String.format("Starting processing file %s ...", task.getInputFile().getName()));
 
@@ -179,6 +180,7 @@ public class JimboPosterThread extends Thread{
 					}
 					log.error(String.format("Account: %s; Error occured during process task: %s", account.getLogin(), task.toString()), e);
 				}
+				
 				if(!errorExist){
 					taskFactory.putTaskInSuccessQueue(task);
 					accountFactory.incrementPostedCounter(account);
