@@ -34,7 +34,7 @@ public class JimboTaskRunner
 {
 	private static final Logger log = Logger.getLogger(JimboTaskRunner.class);
 
-	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 1L;
+	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
 
 	public final static String MAIN_URL_LABEL = "main_url";
 
@@ -52,27 +52,27 @@ public class JimboTaskRunner
 
 	private String templateFilePath;
 	private String templateFilePathWOPic;
-	
+
 	private String outputFilePath;
 	private String outputTitleFilePath;
-	
+
 	private String linksListFilePath;
 
 	private TaskFactory taskFactory;
-	
+
 	private File randImagesFilePath = null;
 	private File randJpgFilePath = null;
 	private File randButtonFilePath = null;
 	private File randTitleFilePath = null;
-	
+
 	private String lang = null;
 	private String source = null;
 	private int[] frequencies = null;
-	
+
 	private RowMapping rowMapping = null;
-	
+
 	private Properties config = new Properties();
-	
+
 	private static final String LANG_LABEL = "lang";
 	private static final String SOURCE_LABEL = "source";
 	private static final String FREQUENCY_LABEL = "frequency";
@@ -91,21 +91,21 @@ public class JimboTaskRunner
 
 	private final static String OUTPUT_FILE_PATH_LABEL = "output_file_path";
 	private final static String OUTPUT_TITLE_FILE_PATH_LABEL = "output_title_file_path";
-	
+
 	private final static String LINKS_LIST_FILE_PATH_LABEL = "links_list_file_path";
 
 	private final static String CONTENT_TEMPLATE_FILE_PATH_LABEL = "content_template_file_path";
 	private final static String CONTENT_TEMPLATE_FILE_PATH_WO_PIC_LABEL = "content_template_file_path_wo_pic";
-	
+
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
-	
+
 	private final static String RANDOM_IMAGES_FILE_PATH="random_images_file_path";
 	private final static String RANDOM_JPG_FILE_PATH="random_jpg_file_path";
 	private final static String RANDOM_BUTTON_FILE_PATH="random_button_file_path";
 	private final static String RANDOM_TITLE_FILE_PATH="random_title_file_path";
-	
+
 	private HashMap<String, HashSet<String>> usedKeys = new HashMap<String, HashSet<String>>();
-	
+
 	public JimboTaskRunner(String cfgFilePath){
 
 		Config.getInstance().loadProperties(cfgFilePath);
@@ -123,34 +123,34 @@ public class JimboTaskRunner
 
 		this.templateFilePath = Config.getInstance().getProperty(CONTENT_TEMPLATE_FILE_PATH_LABEL);
 		this.templateFilePathWOPic = Config.getInstance().getProperty(CONTENT_TEMPLATE_FILE_PATH_WO_PIC_LABEL);
-		
+
 		this.linksListFilePath = ConfigManager.getInstance().getProperty(LINKS_LIST_FILE_PATH_LABEL);
-		
+
 		this.outputFilePath = Config.getInstance().getProperty(OUTPUT_FILE_PATH_LABEL);
 		this.outputTitleFilePath = Config.getInstance().getProperty(OUTPUT_TITLE_FILE_PATH_LABEL); 
 
 		this.maxThreadCount = Integer.valueOf(Config.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
-		
+
 		String randImagesFilePathValue = Config.getInstance().getProperty(RANDOM_IMAGES_FILE_PATH);
 		if(randImagesFilePathValue != null && !"".equals(randImagesFilePathValue.trim())){
 			randImagesFilePath = new File(randImagesFilePathValue);
 		}
-		
+
 		String randJpgFilePathValue = Config.getInstance().getProperty(RANDOM_JPG_FILE_PATH);
 		if(randJpgFilePathValue != null && !"".equals(randJpgFilePathValue.trim())){
 			randJpgFilePath = new File(randJpgFilePathValue);
 		}
-		
+
 		String randButtonFilePathValue = Config.getInstance().getProperty(RANDOM_BUTTON_FILE_PATH);
 		if(randButtonFilePathValue != null && !"".equals(randButtonFilePathValue.trim())){
 			randButtonFilePath = new File(randButtonFilePathValue);
 		}
-		
+
 		String randTitleFilePathValue = Config.getInstance().getProperty(RANDOM_TITLE_FILE_PATH);
 		if(randTitleFilePathValue != null && !"".equals(randTitleFilePathValue.trim())){
 			randTitleFilePath = new File(randTitleFilePathValue);
 		}
-		
+
 		this.source = ConfigManager.getInstance().getProperty(SOURCE_LABEL);
 		this.lang = ConfigManager.getInstance().getProperty(LANG_LABEL);
 
@@ -164,9 +164,9 @@ public class JimboTaskRunner
 		}else{
 			this.frequencies = new int[]{1};	
 		}
-		
+
 		this.rowMapping = new RowMapping(new File(this.inputMapppingFilePath));
-		
+
 		this.taskFactory = TaskFactory.getInstance();
 
 		Authenticator.setDefault(new Authenticator() {
@@ -200,7 +200,7 @@ public class JimboTaskRunner
 			synchronized(this)
 			{
 				File rootInputFiles = new File(listInputFilePath);
-				
+
 				ProxyFactory.DELAY_FOR_PROXY = proxyDelay; 
 				ProxyFactory.PROXY_TYPE = proxyType;
 				ProxyFactory proxyFactory = ProxyFactory.getInstance();
@@ -223,72 +223,77 @@ public class JimboTaskRunner
 						Utils.loadFileAsStrList(randTitleFilePath),
 						Utils.loadFileAsStrList(randJpgFilePath),
 						Utils.loadFileAsStrList(randButtonFilePath)
-				);
-				
+						);
+
 				File resLinkList = new File(outputFilePath);
 				File resLinkTitleList = new File(outputTitleFilePath);
 
 				//Copy account list file
 				File accountFile = new File(accListFilePath);
 				accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));
-				
+
 				usedKeys = loadUsedKeywords(new File ("./domen"));
 
 				Account account = null;
 				JimboPosterThread newThread = null;
 				NewsTask task = null;
-				
+
 				ExecutorService executor = Executors.newFixedThreadPool(TaskFactory.getMAX_THREAD_COUNT());
-				
+
 				while( (  !taskFactory.isTaskFactoryEmpty() && ( (account = accountFactory.getAccount()) != null) ) || taskFactory.getRunThreadsCount() > 0)
 				{
-					log.debug("Try to get request from RequestFactory queue.");
-					log.debug("Account: " + account);
-					if(account != null)
+					if(taskFactory.getRunThreadsCount() < taskFactory.getMAX_THREAD_COUNT())
 					{
-						task = taskFactory.getTask();
+						log.debug("Try to get request from RequestFactory queue.");
+						log.debug("Account: " + account);
+						if(account != null)
+						{
+							task = taskFactory.getTask();
 
-						if(task != null && (usedKeys.get(account.getSiteWOHttp()) == null || usedKeys.get(account.getSiteWOHttp()) != null && !usedKeys.get(account.getSiteWOHttp()).contains(task.getKey()))){
-							log.info("Current thread count: " + taskFactory.getRunThreadsCount());
-							log.info("Task retrieved. File name: " + task.getInputFile().getName());
-							log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
-							newThread = new JimboPosterThread(
-									task, 
-									account, 
-									taskFactory, 
-									proxyFactory, 
-									accountFactory,
-									resLinkList, 
-									resLinkTitleList, 
-									this.listProcessedFilePath, 
-									this.errorFilePath,
-									(ArrayList<String>)Utils.loadFileAsStrList(linksListFilePath),
-									lang,
-									source,
-									frequencies
-							);
-							
-							executor.submit(newThread);
-							
-							account = null;
-							newThread = null;
-							task = null;
-							
-							continue;
-						}else{
-							if(task != null){
-								taskFactory.reprocessingTask(task);
+							if(task != null && (usedKeys.get(account.getSiteWOHttp()) == null || usedKeys.get(account.getSiteWOHttp()) != null && !usedKeys.get(account.getSiteWOHttp()).contains(task.getKey()))){
+								log.info("Current thread count: " + taskFactory.getRunThreadsCount());
+								log.info("Task retrieved. File name: " + task.getInputFile().getName());
+								log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
+								newThread = new JimboPosterThread(
+										task, 
+										account, 
+										taskFactory, 
+										proxyFactory, 
+										accountFactory,
+										resLinkList, 
+										resLinkTitleList, 
+										this.listProcessedFilePath, 
+										this.errorFilePath,
+										(ArrayList<String>)Utils.loadFileAsStrList(linksListFilePath),
+										lang,
+										source,
+										frequencies
+										);
+
+								executor.submit(newThread);
+
+								account = null;
+								newThread = null;
+								task = null;
+
+								continue;
+							}else{
+								if(task != null){
+									taskFactory.reprocessingTask(task);
+								}
+								accountFactory.releaseAccount(account);
 							}
-							accountFactory.releaseAccount(account);
 						}
-					}
-					account = null;
-					newThread = null;
-					task = null;
-					try {
-						this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
-					} catch (InterruptedException e) {
-						log.error("InterruptedException occured during RequestRunner process",e);
+						account = null;
+						newThread = null;
+						task = null;
+
+					}else{
+						try {
+							this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
+						} catch (InterruptedException e) {
+							log.error("InterruptedException occured during RequestRunner process",e);
+						}
 					}
 				}
 
@@ -305,7 +310,7 @@ public class JimboTaskRunner
 			}catch(Throwable e){
 				log.error("Some error occured", e);
 			}
-			
+
 			//creation marker file
 			try {
 				FileWriter fw = new FileWriter("complete.txt", false);
@@ -347,16 +352,16 @@ public class JimboTaskRunner
 			}
 		}
 	}
-	
+
 	private HashMap<String, HashSet<String>> loadUsedKeywords(File domenDir)
 	{
 		HashMap<String, HashSet<String>> usedKeys = new HashMap<String, HashSet<String>>();
-		
+
 		for(File file : domenDir.listFiles()){
 			List<String> keysList = Utils.loadFileAsStrList(file);
 			usedKeys.put(file.getName().substring(0, file.getName().length()-4), new HashSet<String>(keysList));
 		}
-		
+
 		return usedKeys;
 	}
 

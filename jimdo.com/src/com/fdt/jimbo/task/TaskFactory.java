@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.log4j.Logger;
 
@@ -22,7 +23,7 @@ public class TaskFactory {
 
 	private static Integer MAX_THREAD_COUNT = 100;
 	public static Integer MAX_ATTEMP_COUNT = 50;
-	protected int runThreadsCount = 0;
+	protected AtomicInteger runThreadsCount = new AtomicInteger(0);
 
 	/**
 	 * HashMap<process_program,queue_for_process_program>
@@ -70,13 +71,13 @@ public class TaskFactory {
 		return errorQueue;
 	}
 
-	public synchronized void incRunThreadsCount() {
-		runThreadsCount++;
+	public void incRunThreadsCount() {
+		runThreadsCount.incrementAndGet();
 		log.debug("INC thread: " + runThreadsCount);
 	}
 
-	public synchronized void decRunThreadsCount(NewsTask task) {
-		runThreadsCount--;
+	public void decRunThreadsCount(NewsTask task) {
+		runThreadsCount.decrementAndGet();
 		log.debug("DEC thread: " + runThreadsCount);
 		this.notifyAll();
 	}
@@ -136,7 +137,7 @@ public class TaskFactory {
 	 */
 	public synchronized NewsTask getTask(){
 		synchronized (this) {
-			if(runThreadsCount < MAX_THREAD_COUNT){
+			if(runThreadsCount.get() < MAX_THREAD_COUNT){
 				if(!isTaskFactoryEmpty()){
 					return taskQueue.remove(rnd.nextInt(taskQueue.size()));
 				}
@@ -224,7 +225,7 @@ public class TaskFactory {
 	}
 
 	public synchronized int getRunThreadsCount() {
-		return runThreadsCount;
+		return runThreadsCount.get();
 	}
 
 	public ArrayList<NewsTask> getSavedTaskList()

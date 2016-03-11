@@ -81,120 +81,128 @@ public class JimboPosterThread implements Runnable {
 			MIN_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL));
 		if(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL) != null)
 			MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
+
 		
-		this.taskFactory.incRunThreadsCount();
 	}
 
 	@Override
 	public void run() {
-		synchronized (this) 
-		{
-			ProxyConnector proxyConnector = null;
-			Random rnd = new Random();
-			rnd.nextInt();
-			
-			if(account.isLogged() || accountFactory.loginAccount(account)){
-				account.setLogged(true);
-			}else{
-				accountFactory.removeNotLoggedAccount(account);
-				log.error(String.format("Account '%s' was added to remove list", account.getLogin()));
-				return;
-			}
-
-			log.debug(String.format("Starting processing file %s ...", task.getInputFile().getName()));
-
-			try
+		
+		this.taskFactory.incRunThreadsCount();
+		
+		try{
+			synchronized (this) 
 			{
-				boolean errorExist = false;
-				try {
+				ProxyConnector proxyConnector = null;
+				Random rnd = new Random();
+				rnd.nextInt();
 
-					SnippetTaskWrapper snipWrapTask = new SnippetTaskWrapper(sourcesSrt, frequencies, task.getKey4Search(), lang);
-					snipWrapTask.selectRandTask().setPage(rnd.nextInt(50));
-					SnippetExtractor snippetExtractor = new SnippetExtractor(snipWrapTask, proxyFactory, new ArrayList<String>());
-					snippetExtractor.setAddLinkFromFolder(addLinkFromFolder);
-
-					log.debug(String.format("Starting extract snippets for account %s ", account.getLogin()));
-					//TODO Add Snippet task chooser
-					if(MIN_SNIPPET_COUNT == 0 && MAX_SNIPPET_COUNT == 0){
-						task.setSnippets("");
-					}else{
-						String snippetsStr = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getResult();
-
-						if(snippetsStr == null || "".equals(snippetsStr.trim()))
-							throw new Exception("Could not extract snippets");
-
-						task.setSnippets(snippetsStr);
-					}
-					
-					log.debug(String.format("Snippets for account %s are extracted", account.getLogin()));
-
-					proxyConnector = proxyFactory.getRandomProxyConnector();
-
-					NewsPoster nPoster = new NewsPoster(task, proxyConnector.getConnect(ProxyFactory.PROXY_TYPE), this.account, accountFactory);
-					
-					String url2Post = nPoster.postNews();
-					
-					fileSaveLock.lock();
-					try{
-						log.info(String.format("ACCOUNT (%s) NEWS URL: %s", account.getLogin(), url2Post));
-						log.debug(String.format("Saving result to file %s file", lnkLstFl4Res));
-						Utils.appendStringToFile(url2Post, lnkLstFl4Res);
-						log.debug(String.format("Saving result to file %s file", lnkTtlLstFl4Res));
-						Utils.appendStringToFile(url2Post + ";" + task.getTitle(), lnkTtlLstFl4Res);
-					}finally{
-						fileSaveLock.unlock();
-					}
-
-					String domainFilePath = account.getSite().substring(7) + ".txt";
-					log.debug(String.format("Saving key %s for account %s to file %s file", task.getKey(), account.getLogin(), domainFilePath));
-					Utils.appendStringToFile(task.getKey(), new File("./domen", domainFilePath));
-
-					//Move file to processed folder
-					File destFile = new File(listProcessedFilePath + "/" + task.getInputFile().getName());
-					if(destFile.exists()){
-						destFile.delete();
-					}
-
-					log.debug(String.format("Moving file %s to process folder", task.getInputFile().getName()));
-					FileUtils.moveFile(task.getInputFile(), destFile);
-				} 
-				catch (Throwable e) {
-					log.error(e, e);
-					if(e instanceof NoSuchElementException){
-						//if 
-						accountFactory.markAccountForExclude(account);
-					}
-					errorExist = true;
-					boolean reprocessed = taskFactory.reprocessingTask(task);
-
-					if(!reprocessed){
-						try {
-							File destFile = new File(errorFilePath + "/" + task.getInputFile().getName());
-							if(destFile.exists()){
-								destFile.delete();
-							}
-							FileUtils.moveFile(task.getInputFile(), destFile);
-						} catch (IOException e1) {
-							log.error(e1);
-						}
-					}
-					log.error(String.format("Account: %s; Error occured during process task: %s", account.getLogin(), task.toString()), e);
-				}
-				
-				if(!errorExist){
-					taskFactory.putTaskInSuccessQueue(task);
-					accountFactory.incrementPostedCounter(account);
+				if(account.isLogged() || accountFactory.loginAccount(account)){
+					account.setLogged(true);
 				}else{
-					accountFactory.releaseAccount(account);
+					accountFactory.removeNotLoggedAccount(account);
+					log.error(String.format("Account '%s' was added to remove list", account.getLogin()));
+					return;
 				}
-			} finally {
-				if(proxyConnector != null){
-					proxyFactory.releaseProxy(proxyConnector);
+
+				log.debug(String.format("Starting processing file %s ...", task.getInputFile().getName()));
+
+				try
+				{
+					boolean errorExist = false;
+					try {
+
+						SnippetTaskWrapper snipWrapTask = new SnippetTaskWrapper(sourcesSrt, frequencies, task.getKey4Search(), lang);
+						snipWrapTask.selectRandTask().setPage(rnd.nextInt(50));
+						SnippetExtractor snippetExtractor = new SnippetExtractor(snipWrapTask, proxyFactory, new ArrayList<String>());
+						snippetExtractor.setAddLinkFromFolder(addLinkFromFolder);
+
+						log.debug(String.format("Starting extract snippets for account %s ", account.getLogin()));
+						//TODO Add Snippet task chooser
+						if(MIN_SNIPPET_COUNT == 0 && MAX_SNIPPET_COUNT == 0){
+							task.setSnippets("");
+						}else{
+							String snippetsStr = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getResult();
+
+							if(snippetsStr == null || "".equals(snippetsStr.trim()))
+								throw new Exception("Could not extract snippets");
+
+							task.setSnippets(snippetsStr);
+						}
+
+						log.debug(String.format("Snippets for account %s are extracted", account.getLogin()));
+
+						proxyConnector = proxyFactory.getRandomProxyConnector();
+
+						NewsPoster nPoster = new NewsPoster(task, proxyConnector.getConnect(ProxyFactory.PROXY_TYPE), this.account, accountFactory);
+
+						String url2Post = nPoster.postNews();
+
+						fileSaveLock.lock();
+						try{
+							log.info(String.format("ACCOUNT (%s) NEWS URL: %s", account.getLogin(), url2Post));
+							log.debug(String.format("Saving result to file %s file", lnkLstFl4Res));
+							Utils.appendStringToFile(url2Post, lnkLstFl4Res);
+							log.debug(String.format("Saving result to file %s file", lnkTtlLstFl4Res));
+							Utils.appendStringToFile(url2Post + ";" + task.getTitle(), lnkTtlLstFl4Res);
+						}finally{
+							fileSaveLock.unlock();
+						}
+
+						String domainFilePath = account.getSite().substring(7) + ".txt";
+						log.debug(String.format("Saving key %s for account %s to file %s file", task.getKey(), account.getLogin(), domainFilePath));
+						Utils.appendStringToFile(task.getKey(), new File("./domen", domainFilePath));
+
+						//Move file to processed folder
+						File destFile = new File(listProcessedFilePath + "/" + task.getInputFile().getName());
+						if(destFile.exists()){
+							destFile.delete();
+						}
+
+						log.debug(String.format("Moving file %s to process folder", task.getInputFile().getName()));
+						FileUtils.moveFile(task.getInputFile(), destFile);
+					} 
+					catch (Throwable e) {
+						log.error(e, e);
+						if(e instanceof NoSuchElementException){
+							//if 
+							accountFactory.markAccountForExclude(account);
+						}
+						errorExist = true;
+						boolean reprocessed = taskFactory.reprocessingTask(task);
+
+						if(!reprocessed){
+							try {
+								File destFile = new File(errorFilePath + "/" + task.getInputFile().getName());
+								if(destFile.exists()){
+									destFile.delete();
+								}
+								FileUtils.moveFile(task.getInputFile(), destFile);
+							} catch (IOException e1) {
+								log.error(e1);
+							}
+						}
+						log.error(String.format("Account: %s; Error occured during process task: %s", account.getLogin(), task.toString()), e);
+					}
+
+					if(!errorExist){
+						taskFactory.putTaskInSuccessQueue(task);
+						accountFactory.incrementPostedCounter(account);
+					}else{
+						account.setLogged(false);
+						accountFactory.releaseAccount(account);
+					}
+				} finally {
+					if(proxyConnector != null){
+						proxyFactory.releaseProxy(proxyConnector);
+					}
 				}
-				taskFactory.decRunThreadsCount(task);
 			}
+			log.debug(String.format("Processing file %s IS COMPLETED", task.getInputFile().getName()));
 		}
-		log.debug(String.format("Processing file %s IS COMPLETED", task.getInputFile().getName()));
+		finally{
+			taskFactory.decRunThreadsCount(task);
+		}
 	}
 
 	public NewsTask getTask(){
