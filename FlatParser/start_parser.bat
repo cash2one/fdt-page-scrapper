@@ -1,0 +1,1 @@
+java -cp libs/jsoup-1.7.1.jar;libs/mail-1.4.jar;libs/log4j-1.2.15.jar;deploy/flat_parser.jar com.ssa.rent.FlatScrapper

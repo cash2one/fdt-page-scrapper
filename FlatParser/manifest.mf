@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 23.3-b01 (Oracle Corporation)
+Main-Class: com.ssa.rent.FlatParser
+

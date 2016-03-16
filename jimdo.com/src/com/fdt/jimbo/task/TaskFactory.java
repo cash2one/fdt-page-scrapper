@@ -72,14 +72,13 @@ public class TaskFactory {
 	}
 
 	public void incRunThreadsCount() {
-		runThreadsCount.incrementAndGet();
-		log.debug("INC thread: " + runThreadsCount);
+		int threadCount = runThreadsCount.incrementAndGet();
+		log.debug("INC thread: " + threadCount);
 	}
 
 	public void decRunThreadsCount(NewsTask task) {
-		runThreadsCount.decrementAndGet();
-		log.debug("DEC thread: " + runThreadsCount);
-		this.notifyAll();
+		int threadCount = runThreadsCount.decrementAndGet();
+		log.debug("DEC thread: " + threadCount);
 	}
 
 	/**

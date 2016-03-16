@@ -1,0 +1,8 @@
+ROOT_ELEMENT=table[class=ads_list_table] tr
+TITLE=p[class=title] a[href]
+ADDRESS=span[class=rooms]
+DETAIL_INFO=p:eq(2), p:eq(3)
+IS_AGENT=
+PRICE=span[class=price-box currency-840
+PHONE=span[class=phones]
+POST_DATE=p[class=date]

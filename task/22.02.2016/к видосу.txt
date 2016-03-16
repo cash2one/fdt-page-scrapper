@@ -1,0 +1,90 @@
+Файл к видео
+
+Возможность массовых автозамен
+http://paydayloansforusa.org/
+к тайтлам ссылок городов и штатов USA Payday Loans это там где 
+
+
+<li class="page_item"><a href="http://paydayloansforusa.org/RI/" title="USA Payday Loans Rhode Island">Rhode Island</a> (70 cities)</li>
+
+<a href="http://paydayloansforusa.org/MD/tilghman/" title="USA Payday Loans Tilghman MD">Tilghman</a><br/>
+
+
+USA Payday Loans заменить например на [linkstitle]
+
+база данных будет например в 1 файлик txt
+и строчка
+
+[linkstitle] = Cash advance
+будет говорить о том что оно на это и заменит как то так
+
+но на самих страницах городов http://paydayloansforusa.org/MD/towson/#.VsrcB_mLSUk например как здесь в самом низу у него немного отличается
+
+a href="http://paydayloansforusa.org/MD/fallston/" title="USA Cash Loans Fallston MD 21047">Fallston, MD</a>
+USA Cash Loans так что перевести тоде надо будет в linktitle
+
+
+paydayloansforusa.org/MD/baldwin/#.VsrcMPmLSUk
+
+
+на страницах городов у него <title>USA Payday Loans Baldwin (Baltimore County) MD - Get Cash in a Moment No Fax Needed!</title>
+
+
+
+Baldwin (Baltimore County) MD мы это оставляем в тайтлах а лучше переводим в параметр [Full]
+
+MD переводим в [ST]
+Baldwin переводим в [city]
+Marylandye ну и сами штаты в [state]
+
+и тогда я смогу свободно оперирывать этими параметрами при построении текстовки для страницы ( текста )
+
+
+http://paydayloansforusa.org/AL/#.VsrdefmLSUk
+
+
+Ну а файлик у нас будет txt ну а там данные
+
+title1 = <title>Cash Loans in the USA - Get your Payday Loan Quickly!</title> на главную
+title2 = <title>USA Qiuck Payday Loans [state] - No Fax Needed, Get Cash in a Moment!</title> на страницу категорий штатов
+title3 = <title>USA Payday [full] - Get Cash in a Moment No Fax Needed!</title> на города
+
+ну и в таком же духе кейворды и дескрипшины
+
+ну и текстовка где я могу давать уже тексты с такими параметрами
+
+ну а как там по лучше будет...
+ун например 
+meta.txt = будут данные для меты
+content1.txt для главной
+content2.txt для категорий штатов
+content3.txt для городов
+
+
+ну и в таком духе
+
+
+тот момент посмотри еще на страницах городов нас интересует
+в мета кейвордс концовка paydayloansforusa.org/IA/ackworth/#.Vsren_mLSUk
+Carlisle IA, Hartford IA, Milo IA, Pleasantville IA, Swan IA
+мы будем это использовать тоже везде ( ток я где-то видел ) что вродь нехватает чего можно впринципе перевести все в данные
+с каждой страници составить базу назвать ее тегов [clouds]
+куски кода 
+
+<h3>We Cover These Cities Near Ackworth, IA:</h3>
+<ul>
+<li>&bull;&nbsp;&nbsp;<a href="http://paydayloansforusa.org/IA/carlisle/" title="USA Cash Loans Carlisle IA 50047">Carlisle, IA</a></li><li>&bull;&nbsp;&nbsp;<a href="http://paydayloansforusa.org/IA/hartford/" title="USA Cash Loans Hartford IA 50118">Hartford, IA</a></li><li>&bull;&nbsp;&nbsp;<a href="http://paydayloansforusa.org/IA/milo/" title="USA Cash Loans Milo IA 50166">Milo, IA</a></li><li>&bull;&nbsp;&nbsp;<a href="http://paydayloansforusa.org/IA/pleasantville/" title="USA Cash Loans Pleasantville IA 50225">Pleasantville, IA</a></li><li>&bull;&nbsp;&nbsp;<a href="http://paydayloansforusa.org/IA/swan/" title="USA Cash Loans Swan IA 50252">Swan, IA</a></li></ul>
+
+перевести в [clouds] = Carlisle IA, Hartford IA, Milo IA, Pleasantville IA, Swan, IA.
+по сути она в одном месте будет стоять всегда и вроде как... если бы там было у него все граммотно то можно было просто оставить
+Но у него там или кое где нехватает пары штук или нету вообще. Ну или если везде всетаки есть... то мож ваще не трогать просто юзать будем и все
+
+
+sitename1 = Наша версия погоды на главную ( ну понятное дело с возможностью вставки параметров [st] [state]  и тд какие у нас будут  ( универсальыне параметры )
+sitename2 = Наша версия погоды на категории штатов 
+sitename3 = Наша версия погоды на города 
+
+<div class="site-name"><h1>USA Cash Loans in Longmire, WA</h1></div> это там где вот эта штука
+
+ну и так же с остальными сделаем по мере надобности
+

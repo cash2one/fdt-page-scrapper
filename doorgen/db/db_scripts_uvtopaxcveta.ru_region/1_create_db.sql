@@ -1,0 +1,41 @@
+﻿ALTER DATABASE vtopaxcveta  CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+DROP TABLE IF EXISTS neighbor_city;
+DROP TABLE IF EXISTS city;
+DROP TABLE IF EXISTS region;
+
+CREATE TABLE IF NOT EXISTS region (
+	region_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	region_name VARCHAR(200) UNIQUE KEY,
+	region_name_latin VARCHAR(200) UNIQUE KEY,
+	abbr VARCHAR(2) UNIQUE KEY,
+	title VARCHAR(1024) NOT NULL,
+	meta_keywords VARCHAR(1024) NOT NULL,
+	meta_description VARCHAR(2048) NOT NULL
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS city (
+	city_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	region_id INT,
+	city_name VARCHAR(200),
+	city_name_latin VARCHAR(200),
+	geo_placename VARCHAR(200),
+	geo_position VARCHAR(50),
+	geo_region VARCHAR(20),
+	ICBM VARCHAR(50),
+	lat DECIMAL(10, 8) NOT NULL, 
+	lng DECIMAL(11, 8) NOT NULL,
+	zip_code VARCHAR(6),
+	country VARCHAR(255),
+	CONSTRAINT FOREIGN KEY (region_id) REFERENCES region (region_id) ON DELETE CASCADE ON UPDATE CASCADE,
+	UNIQUE KEY city_name (city_name,region_id)
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS neighbor_city (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	city_id INT,
+	neighbor_city_id INT,
+	upd_dt TIMESTAMP,
+	CONSTRAINT FOREIGN KEY (city_id) REFERENCES city (city_id) ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT FOREIGN KEY (neighbor_city_id) REFERENCES city (city_id) ON DELETE CASCADE ON UPDATE CASCADE
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci;

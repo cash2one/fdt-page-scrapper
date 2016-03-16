@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/Work/jars/jsoup-1.7.1-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Work/jars/jsoup-1.7.1.jar" sourcepath="d:/Work/jars/jsoup-1.7.1-sources.jar "/>
+	<classpathentry kind="lib" path="D:/Work/FlatParser/libs/log4j-1.2.15.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="JAVA_LIBS/mail-1.4.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/snippet_utils"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/snippet_extractor_lib"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

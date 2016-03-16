@@ -242,54 +242,55 @@ public class JimboTaskRunner
 
 				while( (  !taskFactory.isTaskFactoryEmpty() && ( (account = accountFactory.getAccount()) != null) ) || taskFactory.getRunThreadsCount() > 0)
 				{
-					if(taskFactory.getRunThreadsCount() < taskFactory.getMAX_THREAD_COUNT())
+					if(taskFactory.getRunThreadsCount() < TaskFactory.getMAX_THREAD_COUNT() && account != null)
 					{
 						log.debug("Try to get request from RequestFactory queue.");
 						log.debug("Account: " + account);
-						if(account != null)
-						{
-							task = taskFactory.getTask();
+						task = taskFactory.getTask();
 
-							if(task != null && (usedKeys.get(account.getSiteWOHttp()) == null || usedKeys.get(account.getSiteWOHttp()) != null && !usedKeys.get(account.getSiteWOHttp()).contains(task.getKey()))){
-								log.info("Current thread count: " + taskFactory.getRunThreadsCount());
-								log.info("Task retrieved. File name: " + task.getInputFile().getName());
-								log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
-								newThread = new JimboPosterThread(
-										task, 
-										account, 
-										taskFactory, 
-										proxyFactory, 
-										accountFactory,
-										resLinkList, 
-										resLinkTitleList, 
-										this.listProcessedFilePath, 
-										this.errorFilePath,
-										(ArrayList<String>)Utils.loadFileAsStrList(linksListFilePath),
-										lang,
-										source,
-										frequencies
-										);
+						if(task != null && (usedKeys.get(account.getSiteWOHttp()) == null || usedKeys.get(account.getSiteWOHttp()) != null && !usedKeys.get(account.getSiteWOHttp()).contains(task.getKey()))){
+							log.info("Current thread count: " + taskFactory.getRunThreadsCount());
+							log.info("Task retrieved. File name: " + task.getInputFile().getName());
+							log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Error tasks: " + taskFactory.getErrorQueue().size());
+							newThread = new JimboPosterThread(
+									task, 
+									account, 
+									taskFactory, 
+									proxyFactory, 
+									accountFactory,
+									resLinkList, 
+									resLinkTitleList, 
+									this.listProcessedFilePath, 
+									this.errorFilePath,
+									(ArrayList<String>)Utils.loadFileAsStrList(linksListFilePath),
+									lang,
+									source,
+									frequencies
+									);
 
-								executor.submit(newThread);
+							executor.submit(newThread);
 
-								account = null;
-								newThread = null;
-								task = null;
+							account = null;
+							newThread = null;
+							task = null;
 
-								continue;
-							}else{
-								if(task != null){
-									taskFactory.reprocessingTask(task);
-								}
-								accountFactory.releaseAccount(account);
+							continue;
+						}else{
+							if(task != null){
+								taskFactory.reprocessingTask(task);
 							}
+							accountFactory.releaseAccount(account);
 						}
 						account = null;
 						newThread = null;
 						task = null;
 
 					}else{
+						if(account != null){
+							accountFactory.releaseAccount(account);
+						}
 						try {
+							log.debug("Waiting when theads count will be decremented...");
 							this.wait(RUNNER_QUEUE_EMPTY_WAIT_TIME);
 						} catch (InterruptedException e) {
 							log.error("InterruptedException occured during RequestRunner process",e);

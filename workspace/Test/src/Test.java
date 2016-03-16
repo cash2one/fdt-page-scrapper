@@ -3,8 +3,10 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
+import java.util.List;
 import java.util.Random;
 import java.util.StringTokenizer;
 import java.util.TimeZone;
@@ -238,6 +240,23 @@ public class Test {
 		
 		Random rand = new Random();
 		System.out.println(rand.nextInt(1));
+		
+		String str1 = "Новый 123 132123 123 1 13 1 Новый вопрос напишите ответ 1314123 113";
+		String str2 = "Новый 123 132123 123 1 13 1 1314123 113";
+		
+		List<String> aList = Arrays.asList(str1.split(" "));
+		List<String> bList = Arrays.asList(str2.split(" "));
+		
+		List<String> union = new ArrayList(aList);
+		union.addAll(bList);
+
+		List<Integer> intersection = new ArrayList(aList);
+		intersection.retainAll(bList);
+
+		List<Integer> symmetricDifference = new ArrayList(union);
+		symmetricDifference.removeAll(intersection);
+		
+		System.out.println(symmetricDifference);
 	}
 
 	private static String toUpperFirstLetters(String input){

@@ -1,0 +1,38 @@
+Для городов
+Cash Advance [CITY_NAME] [COUNRTY] [STATE_ABBR] | USA Payday Loans
+Need some extra money within 50 miles of [CITY_NAME] [STATE_NAME] for today? Looking for America National Merchant Locations Online? Instant Approval Check Advance in [STATE_ABBR]. Get Your First CASH NOW!
+Payday advance, cash loans, national advance, merchant cash, paycheck advance, cash locations, instant approval in [STATE_ABBR], [CITY_NAME], [CLOUDS]
+Payday Advance Online in [CITY_NAME], [STATE_ABBR]
+Get Your First CASH NOW! in [CITY_NAME], [STATE_NAME] [ZIP_CODE]
+------------------------------------------------------------------------
+Для категорий
+Payday Advance [STATE_NAME] Loans | USA Cash
+Need some extra money within the state of [STATE_NAME]? Looking for Instant Approval Check Advance Online? America Merchant Locations in 1239 cities of CA USA. Get Your CASH TODAY!
+[STATE_ABBR] Cash advance, payday loans, national cash [STATE_NAME], merchant advance, paycheck cash, advance locations [STATE_ABBR], instant approval in [STATE_NAME] USA
+Payday Cash in [STATE_NAME] USA
+Get Your CASH TODAY!, [STATE_ABBR] USA
+------------------------------------------------------------------------
+Для главной
+Payday Advance in the USA | Fast Loans Online
+Need extra money in USA? Looking For Check Advance? Get Your CASH!
+USA Cash advance, payday loans, national cash America, merchant advance, paycheck cash, advance locations USA, instant approval in USA
+Cash Advance Online Fast
+CashAdvanceOnlineFast.com About Us
+------------------------------------------------------------------------
+
+
+
+
+
+
+
+Для городов ну тут понятно
+Дальше 1 стрчока тайтл
+Вторая это у нас дескрипшн
+Третья это кейворды
+четвертая это 	<div class="header">
+				<div class="site-name"><h1>USA Fast Payday Loans</h1></div>
+			</div>
+то что вставляется между h1 тегами
+и пятая строчка это то что вставляется между h2 тегами
+в коде

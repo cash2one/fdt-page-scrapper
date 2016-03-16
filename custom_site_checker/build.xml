@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="flat_parser" basedir="." default="build">
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
+	<property file="build.properties" />
+	
+	<target name="init">
+		<mkdir dir="classes" />
+		<mkdir dir="${dir.deploy}" />
+	</target>
+	
+	<path id="Engine.classpath">
+			<fileset dir="${dir.lib}" includes="**/*.jar" />
+			<fileset dir="${dir.deploy}" includes="**/*.jar"/>
+			<pathelement location="classes" />
+		</path>
+
+	<target depends="init" name="compile" description="compile java">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" 
+			destdir="classes"
+			source="${source}" target="${target}">
+			<src path="src" />
+			<classpath refid="Engine.classpath" />
+		</javac>
+	</target>
+
+	<target depends="compile" name="build" description="Jar creating">
+		<jar destfile="../java/${ant.project.name}.jar" 
+			basedir="classes" manifest="MANIFEST.MF"/>
+		<manifest file="MANIFEST.MF">
+		        <attribute name="Main-Class" value="com.ssa.rent.FlatParser" />
+		</manifest>
+	</target>
+
+	<target name="clean">
+		<delete dir="build" />
+	</target>
+</project>
