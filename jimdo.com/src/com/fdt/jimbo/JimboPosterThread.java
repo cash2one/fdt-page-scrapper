@@ -82,33 +82,36 @@ public class JimboPosterThread implements Runnable {
 		if(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL) != null)
 			MAX_SNIPPET_COUNT = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_SNIPPET_COUNT_LABEL));
 
-		
+
 	}
 
 	@Override
 	public void run() {
-		
+
 		this.taskFactory.incRunThreadsCount();
-		
+
 		try{
 			synchronized (this) 
 			{
 				ProxyConnector proxyConnector = null;
-				Random rnd = new Random();
-				rnd.nextInt();
-
-				if(account.isLogged() || accountFactory.loginAccount(account)){
-					account.setLogged(true);
-				}else{
-					accountFactory.removeNotLoggedAccount(account);
-					log.error(String.format("Account '%s' was added to remove list", account.getLogin()));
-					return;
-				}
-
-				log.debug(String.format("Starting processing file %s ...", task.getInputFile().getName()));
-
+				
 				try
 				{
+					proxyConnector = proxyFactory.getRandomProxyConnector();
+					Random rnd = new Random();
+					rnd.nextInt();
+
+					if(account.isLogged() || accountFactory.loginAccount(account, proxyConnector)){
+						account.setLogged(true);
+					}else{
+						accountFactory.removeNotLoggedAccount(account);
+						log.error(String.format("Account '%s' was added to remove list", account.getLogin()));
+						return;
+					}
+
+					log.debug(String.format("Starting processing file %s ...", task.getInputFile().getName()));
+
+
 					boolean errorExist = false;
 					try {
 
@@ -132,7 +135,6 @@ public class JimboPosterThread implements Runnable {
 
 						log.debug(String.format("Snippets for account %s are extracted", account.getLogin()));
 
-						proxyConnector = proxyFactory.getRandomProxyConnector();
 
 						NewsPoster nPoster = new NewsPoster(task, proxyConnector.getConnect(ProxyFactory.PROXY_TYPE), this.account, accountFactory);
 

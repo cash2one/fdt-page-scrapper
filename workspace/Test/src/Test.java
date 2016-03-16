@@ -11,6 +11,7 @@ import java.util.Random;
 import java.util.StringTokenizer;
 import java.util.TimeZone;
 import java.util.concurrent.Callable;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -184,7 +185,7 @@ public class Test {
 			System.out.println(strg.getName());
 		}*/
 
-		String testSrt = "";
+		/*String testSrt = "";
 		System.out.println("   	".isEmpty());
 		System.out.println("".isEmpty());
 
@@ -208,7 +209,7 @@ public class Test {
 				+ "of lenders in our network, and we are confident that we can assist you in obtaining the best PAyday loan to meet your needs.";
 
 		System.out.println(forReplace);
-		System.out.println(forReplace.replaceAll("(?i)(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|(^))" + "payday" + "(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|($))", "$1__REPLACED__$4"));
+		System.out.println(forReplace.replaceAll("(?i)(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|(^))" + "payday" + "(([\\s\\:\\-\"\\%\\$\\-\\.,]+)|($))", "$1__REPLACED__$4"));*/
 
 
 		/*String str4Replace = "same day payday {advance} {is|is usually|is definitely|is certainly|is normally|is going to be} a fast and {convenient|easy|practical|effortless|comfortable|simple} solution for your {short|brief} term cash {needs|requirements|demands|wants|desires|necessities}";
@@ -222,7 +223,7 @@ public class Test {
        		System.out.println(m.group(1));
         }*/
 
-		Random rnd = new Random();
+		/*Random rnd = new Random();
 		rnd.nextInt();
 
 		System.out.println("-----------------------------");
@@ -256,7 +257,11 @@ public class Test {
 		List<Integer> symmetricDifference = new ArrayList(union);
 		symmetricDifference.removeAll(intersection);
 		
-		System.out.println(symmetricDifference);
+		System.out.println(symmetricDifference);*/
+		AtomicBoolean ab = new AtomicBoolean(false);
+		System.out.println(ab.compareAndSet(false, true));
+		ab = new AtomicBoolean(true);
+		System.out.println(ab.compareAndSet(false, true));
 	}
 
 	private static String toUpperFirstLetters(String input){

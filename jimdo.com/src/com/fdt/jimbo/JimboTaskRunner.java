@@ -207,7 +207,7 @@ public class JimboTaskRunner
 				proxyFactory.init(proxyFilePath);
 
 				//load account list
-				accountFactory = new AccountFactory(proxyFactory);
+				accountFactory = new AccountFactory();
 				accountFactory.fillAccounts(accListFilePath);
 
 				TaskFactory.setMAX_THREAD_COUNT(maxThreadCount);

@@ -43,14 +43,11 @@ public class AccountFactory
 
 	private static int NEWS_PER_ACCOUNT = 200;
 
-	private ProxyFactory proxyFactory = null;
-
 	//contain rejected account's login - rejection time
 	private Map<String, Long> rejectedAccount = new HashMap<String, Long>();
 
-	public AccountFactory(ProxyFactory proxy){
+	public AccountFactory(){
 		super();
-		this.proxyFactory = proxy;
 		NEWS_PER_ACCOUNT = Integer.valueOf(Config.getInstance().getProperty(NEWS_PER_ACCOUNT_LABEL));
 	}
 
@@ -95,16 +92,13 @@ public class AccountFactory
 		log.debug("Total account count: " + accounts.size());
 	}
 
-	public boolean loginAccount(Account account){
+	public boolean loginAccount(Account account, ProxyConnector proxy){
 		//getting cookie for each account
 		HttpURLConnection conn = null;
-		ProxyConnector proxy = null;
 
 		long srtTm = System.currentTimeMillis();
 
 		try {
-			proxy = proxyFactory.getRandomProxyConnector();
-
 			String cstok = executerequestToGetParams("http://a.jimdo.com/app/auth/signin/authenticate", "GET", new IResultExtractor() {
 				private String responseStr;
 
@@ -182,7 +176,7 @@ public class AccountFactory
 			{
 				if("/app/cms/notavailable".equals(newLocation))
 				{
-					throw new Exception("This website " + account.getSite() + " is not available right now."); 
+					throw new Exception(String.format("This website %s is not available right now. Account[%s] Proxy[%s]", account.getSite(), account.getLogin(), proxy.toString())); 
 				}
 				newLocation = executerequestToGetCookies(newLocation, "GET", proxy, null, account);
 			}
@@ -195,9 +189,6 @@ public class AccountFactory
 			log.debug(String.format("Time spent to login account '%s' is %dms", account.getLogin(), (System.currentTimeMillis()-srtTm)/1));
 			if(conn!=null){
 				conn.disconnect();
-			}
-			if(proxy != null){
-				proxyFactory.releaseProxy(proxy);
 			}
 		}
 	}
