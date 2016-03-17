@@ -258,10 +258,29 @@ public class Test {
 		symmetricDifference.removeAll(intersection);
 		
 		System.out.println(symmetricDifference);*/
-		AtomicBoolean ab = new AtomicBoolean(false);
+		/*AtomicBoolean ab = new AtomicBoolean(false);
 		System.out.println(ab.compareAndSet(false, true));
 		ab = new AtomicBoolean(true);
-		System.out.println(ab.compareAndSet(false, true));
+		System.out.println(ab.compareAndSet(false, true));*/
+		
+		System.out.println(extractOrderNumber("ebook15.jpg"));
+		System.out.println(extractOrderNumber("ebook0.jpg"));
+		System.out.println(extractOrderNumber("ebook324.jpg"));
+		System.out.println(extractOrderNumber("ebook_3.png"));
+		System.out.println(extractOrderNumber("ebook_.jpg"));
+	}
+	
+	private static int extractOrderNumber(String fileName) {
+		Pattern ptrn =  Pattern.compile("(.*?)(\\d+)\\.(png|jpg)");
+		Matcher mtchr = ptrn.matcher(fileName);
+		
+		int result = -1;
+		
+		if(mtchr.matches()){
+			result = Integer.valueOf(mtchr.group(2));
+		}
+		
+		return result;
 	}
 
 	private static String toUpperFirstLetters(String input){

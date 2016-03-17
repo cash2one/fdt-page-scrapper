@@ -5,8 +5,13 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
 
@@ -112,16 +117,77 @@ public class VideoCreator {
 		}
 	}
 	
+	private static class FileOrder 
+	{
+		private File file;
+		private int order;
+		
+		public FileOrder(File file, int order) {
+			super();
+			this.file = file;
+			this.order = order;
+		}
+		public File getFile() {
+			return file;
+		}
+		public int getOrder() {
+			return order;
+		}
+	}
+	
 	private static File[] getFileList(String dir){
 		
-		return new File(dir).listFiles();
-		/*String[] files = dir.split(";");
-		File[] filesList = new File[files.length];
-		for(int i = 0; i < filesList.length; i++){
-			filesList[i] = new File(files[i]);
+		File[] files;
+		File dirFile = new File(dir);
+		
+		if(dirFile.exists() && dirFile.isDirectory()){
+			files = dirFile.listFiles();
+		}else{
+			String[] filesStr = dir.split(";");
+			files = new File[filesStr.length];
+			for(int i = 0; i < filesStr.length; i++){
+				files[i] = new File(filesStr[i]);
+			}
 		}
 		
-		return filesList;*/
+		File[] outputList;
+		//return new File(dir).listFiles();
+		
+		ArrayList<FileOrder> filesList = new ArrayList<FileOrder>(files.length);
+		
+		for(int i = 0; i < files.length; i++){
+			filesList.add(new FileOrder(files[i], extractOrderNumber(files[i].getName()))) ;
+		}
+		
+		Collections.sort(filesList, new Comparator<FileOrder>() {
+
+			@Override
+			public int compare(FileOrder arg0, FileOrder arg1) {
+				// TODO Auto-generated method stub
+				return arg0.getOrder() - arg1.getOrder();
+			}
+		});
+		
+		outputList = new File[filesList.size()];
+		
+		for(int i = 0; i < filesList.size(); i++){
+			outputList[i] = filesList.get(i).getFile();
+		}
+		
+		return outputList;
+	}
+	
+	private static int extractOrderNumber(String fileName) {
+		Pattern ptrn =  Pattern.compile("(.*?)(\\d+)\\.(png|jpg)");
+		Matcher mtchr = ptrn.matcher(fileName);
+		
+		int result = -1;
+		
+		if(mtchr.matches()){
+			result = Integer.valueOf(mtchr.group(2));
+		}
+		
+		return result;
 	}
 
 	/*public static Integer[] makeVideo(String fileName, File imageFile, File previewFile, int minDur, int maxDur) throws IOException {
