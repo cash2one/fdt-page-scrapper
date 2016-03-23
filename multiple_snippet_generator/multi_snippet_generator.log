@@ -6280,3 +6280,6 @@ java.lang.Exception: Snippets size is 0. Will try to use another proxy server
 2016-01-21 20:26:50,262-ERROR(SnippetExtractor.java:161)[pool-1-thread-4]-Error occured during processing key: upper+abdominal+cramps+during+pregnancy
 2016-01-21 20:27:11,265-ERROR(SnippetExtractor.java:161)[pool-1-thread-4]-Error occured during processing key: upper+abdominal+cramps+during+pregnancy
 2016-01-21 20:27:15,124- WARN(MultipleSnippetGeneratorRunner.java:308)[main]-Link files are absent. Program will be finished
+2016-03-21 11:40:33,936- WARN(MultipleSnippetGeneratorRunner.java:308)[main]-Link files are absent. Program will be finished
+2016-03-21 11:41:08,343- WARN(MultipleSnippetGeneratorRunner.java:308)[main]-Link files are absent. Program will be finished
+2016-03-22 16:18:56,890- WARN(MultipleSnippetGeneratorRunner.java:308)[main]-Link files are absent. Program will be finished

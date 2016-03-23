@@ -1,4 +1,4 @@
-﻿ALTER DATABASE vtopaxcveta  CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+﻿ALTER DATABASE usapersonalloansorg  CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
 DROP TABLE IF EXISTS neighbor_city;
 DROP TABLE IF EXISTS city;
