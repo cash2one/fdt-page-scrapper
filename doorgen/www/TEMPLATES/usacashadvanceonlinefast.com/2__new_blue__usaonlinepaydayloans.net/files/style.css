@@ -28,7 +28,7 @@ body {
 
 a { 
 	/*** ЦВЕТ ССЫЛОК ***/
-	color:#f16321; 
+	color:#AB2D1F; 
 	text-decoration:none; 
 } 
 
@@ -201,7 +201,7 @@ div.hr {
 .rightnav {
 	padding:10px 14px;
 	/*** ЦВЕТ фона под ссылками ***/
-	background:#bae7f8 ;
+	background:#E1E7F5 ;
 }
 .rightnav ul {
 	padding:0;
@@ -212,7 +212,7 @@ div.hr {
 	margin:0 0 5px 0;
 	background:none;
 	/*** ЦВЕТ количества городов ***/
-	color: #666666;
+	color: #000000;
 }
 .rightnav ul li, .rightnav ul li a {
 	font-size: 13px;
@@ -249,7 +249,7 @@ div.hr {
 }
 .footer .copyright {
 	height: 110px;
-	background:#2db3e0 url("/images/bkgd_diag.png") repeat scroll 0 0;
+	background:#AB2D1F url("/images/bkgd_diag.png") repeat scroll 0 0;
 	border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
 	padding:13px 0 0 15px;
