@@ -220,10 +220,12 @@ public class MegaMultipleSnippetGeneratorRunner{
 		{
 			if(file.isFile())
 			{
-
+				
 				List<String> rowsList = Utils.loadFileAsStrList(file);
 
-				taskRowList.add(rowsList.get(1));
+				String keyWord = rowsList.get(1);
+				
+				taskRowList.add(keyWord);
 
 				//Move file to processed folder
 				File destFile = new File("processing/" + file.getName());
@@ -238,7 +240,7 @@ public class MegaMultipleSnippetGeneratorRunner{
 				try{
 					readWriteLock.lock();
 
-					List<File> fileList = keyWordFileMapping.get(rowsList.get(1));
+					List<File> fileList = keyWordFileMapping.get(keyWord);
 					if(fileList != null){
 						fileList.add(destFile);
 					}else{
@@ -246,7 +248,7 @@ public class MegaMultipleSnippetGeneratorRunner{
 						fileList.add(destFile);
 					}
 
-					keyWordFileMapping.put(rowsList.get(1), fileList);
+					keyWordFileMapping.put(keyWord, fileList);
 				}finally{
 					readWriteLock.unlock();
 				}

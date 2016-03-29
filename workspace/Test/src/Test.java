@@ -268,6 +268,8 @@ public class Test {
 		System.out.println(extractOrderNumber("ebook324.jpg"));
 		System.out.println(extractOrderNumber("ebook_3.png"));
 		System.out.println(extractOrderNumber("ebook_.jpg"));
+		
+		System.out.println(Object.class.getClassLoader());
 	}
 	
 	private static int extractOrderNumber(String fileName) {

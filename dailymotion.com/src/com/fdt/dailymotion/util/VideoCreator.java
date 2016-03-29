@@ -40,7 +40,7 @@ public class VideoCreator {
 	private final static int audioStreamIndex = 1;
 	private final static int audioStreamId = 0;
 	private final static int channelCount = 2;
-
+	
 	//public final static int successBitrate = 262144;
 	public final static int successBitrate = 886432;
 
@@ -54,19 +54,20 @@ public class VideoCreator {
 		File image;
 		File video;
 		
-		if(args.length < 11){
-			System.out.println("НЕ хватает аргументов для запуска. Используйте слудующий порядок аргументов:" + 
-		"<имя_видое_файла>" +
-		"<путь_к_рандомным_файлам>" +
-		"<файл для превью>" +
-		"<использовать_ли_аудио_true/false>" +
-		"<аудио_файл>" +
-		"<минимальная_продолжительность>" +
-		"<максимальная_продолжительность>" +
-		"<количество_кадров_в_секунду>" +
-		"<использовать_ли_превью_true/false>" +
-		"<минимальное_количество_перелкючений_картинки>" +
-		"<максимальное_количество_перелкючений_картинки>"
+		if(args.length < 12){
+			System.out.println("НЕ хватает аргументов для запуска. Используйте слудующий порядок аргументов:\r\n" + 
+		"<имя_видое_файла>\r\n" +
+		"<путь_к_рандомным_файлам>\r\n" +
+		"<файл для превью>\r\n" +
+		"<использовать_ли_аудио_true/false>\r\n" +
+		"<аудио_файл>\r\n" +
+		"<минимальная_продолжительность_в_секундах>\r\n" +
+		"<максимальная_продолжительность_в_секундах>\r\n" +
+		"<количество_кадров_в_секунду>\r\n" +
+		"<использовать_ли_превью_true/false>\r\n" +
+		"<минимальное_количество_перелкючений_картинки>\r\n" +
+		"<максимальное_количество_перелкючений_картинки>\r\n" +
+		"<брать_картинки_по_порядковым_номерам>\r\n"
 		);
 			return;
 		}
@@ -97,10 +98,11 @@ public class VideoCreator {
 			boolean usePreview = Boolean.valueOf(args[8]);
 			int minIntrvl = Integer.valueOf(args[9]);
 			int maxIntrvl = Integer.valueOf(args[10]);
+			boolean useFileOrder = Boolean.valueOf(args[11]);
 			
-			int intrvlRnd = minIntrvl + rnd.nextInt(maxIntrvl - minIntrvl);
+			int intrvlRnd = minIntrvl + rnd.nextInt(maxIntrvl - minIntrvl + 1);
 			
-			VideoCreator.makeVideo(videoFileNm,rndListFiles, previewFile, useAudio, audioFile, minDur, maxDur, framePerSec, usePreview, intrvlRnd);
+			VideoCreator.makeVideo(videoFileNm,rndListFiles, previewFile, useAudio, audioFile, minDur, maxDur, framePerSec, usePreview, intrvlRnd, useFileOrder);
 			//VideoCreator.makeVideo("test_video/h264_test.mov", new File[]{new File("images_rand/zala.jpg"), new File("images_rand/zala1.jpg")}, new File("images_rand/zala1.jpg"), false, new File("08.wav"), 150, 180, true);
 			//VideoCreator.mergeVideoAndAudio("test_video_wa.mp4", "08.wav", "test_video.mp4");
 			/*MediaLocator ivml = JpegImagesToMovie.createMediaLocator("test_video_wa.mov");
@@ -236,6 +238,10 @@ public class VideoCreator {
 		int framePerSec = 25;
 		return makeVideo(filePath, imageFiles, previewFile, addAudio, audioFile, minDur, maxDur, framePerSec, isUsePreview, 1);
 	}
+	
+	public static Integer[] makeVideo(String filePath, File[] imageFiles, File previewFile, boolean addAudio, File audioFile, int minDur, int maxDur, int framePerSec, boolean isUsePreview, int intrvlCount) throws IOException {
+		return makeVideo(filePath, imageFiles, previewFile, addAudio, audioFile, minDur, maxDur, framePerSec, isUsePreview, intrvlCount, false);
+	}
 
 	/**
 	 * 
@@ -248,7 +254,7 @@ public class VideoCreator {
 	 * @return
 	 * @throws IOException
 	 */
-	public static Integer[] makeVideo(String filePath, File[] imageFiles, File previewFile, boolean addAudio, File audioFile, int minDur, int maxDur, int framePerSec, boolean isUsePreview, int intrvlCount) throws IOException {
+	public static Integer[] makeVideo(String filePath, File[] imageFiles, File previewFile, boolean addAudio, File audioFile, int minDur, int maxDur, int framePerSec, boolean isUsePreview, int intrvlCount, boolean useFileOrder) throws IOException {
 
 		long startTime = System.currentTimeMillis();
 		IMediaWriter writer = ToolFactory.makeWriter(filePath);
@@ -256,7 +262,7 @@ public class VideoCreator {
 		Random rnd = new Random();
 		//framePerSec = 15;
 
-		int frameCount = (minDur + rnd.nextInt(maxDur-minDur))*framePerSec;
+		int frameCount = (minDur + rnd.nextInt(maxDur-minDur + 1))*framePerSec;
 
 		writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, VIDEO_WIDTH, VIDEO_HEIGHT);
 
@@ -324,8 +330,10 @@ public class VideoCreator {
 			containerAudio = null;
 		}
 
+		int frameOrderIndex = 0;
+		
 		//for (int index = 0; index < SECONDS_TO_RUN_FOR * FRAME_RATE; index++) {
-		BufferedImage screen = ImageIO.read(imageFiles[rnd.nextInt(imageFiles.length)]);
+		BufferedImage screen = ImageIO.read(getFrameImage(imageFiles, useFileOrder, frameOrderIndex));
 		BufferedImage bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
 		screen = null;
 
@@ -339,18 +347,35 @@ public class VideoCreator {
 
 		int rndTimeIntrvl = calculateInterval(frameCount, intrvlCount);
 
-		for(long i = 0; i < frameCount-2*framePerSec; i++){
-			//swap images
-			if(--rndTimeIntrvl <= 0)
-			{
-				screen = ImageIO.read(imageFiles[rnd.nextInt(imageFiles.length)]);
-				bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
-				screen = null;
+		if(useFileOrder){
+			for(long i = 0; frameOrderIndex < imageFiles.length; i++){
+				//swap images
+				if(--rndTimeIntrvl <= 0)
+				{
+					screen = ImageIO.read(getFrameImage(imageFiles, useFileOrder, frameOrderIndex));
+					frameOrderIndex++;
+					bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
+					screen = null;
 
-				rndTimeIntrvl = calculateInterval(frameCount, intrvlCount);
+					rndTimeIntrvl = calculateInterval(frameCount, intrvlCount);
+				}
+				writer.encodeVideo(0, bgrScreen, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
 			}
-			writer.encodeVideo(0, bgrScreen, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
+		}else{
+			for(long i = 0; i < frameCount-2*framePerSec; i++){
+				//swap images
+				if(--rndTimeIntrvl <= 0)
+				{
+					screen = ImageIO.read(getFrameImage(imageFiles, useFileOrder, frameOrderIndex));
+					bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
+					screen = null;
+
+					rndTimeIntrvl = calculateInterval(frameCount, intrvlCount);
+				}
+				writer.encodeVideo(0, bgrScreen, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
+			}
 		}
+		
 
 		if(!isUsePreview){
 			bgrScreenPreview = bgrScreen;
@@ -391,6 +416,17 @@ public class VideoCreator {
 		return new Integer[]{frameCount, framePerSec};
 	}
 	
+	private static File getFrameImage(File[] files, boolean useFileOrder, int frameOrderIndex){
+		Random rnd = new Random();
+		rnd.nextInt();
+		
+		if(!useFileOrder){
+			return files[rnd.nextInt(files.length)];
+		}else{
+			return files[frameOrderIndex];
+		}
+	}
+	
 	/**
 	 * 
 	 * @param duration - total frame count
@@ -400,7 +436,7 @@ public class VideoCreator {
 	private static int calculateInterval(int duration, int intCount){
 		Random rnd = new Random();
 		int hardInt = duration/intCount;
-		return hardInt + (int)Math.pow(-1, rnd.nextInt(2)) * rnd.nextInt(hardInt)/10;
+		return hardInt + (int)Math.pow(-1, rnd.nextInt(2)) * rnd.nextInt(hardInt+1)/10;
 	}
 
 	public static BufferedImage convertToType(BufferedImage sourceImage, int targetType) {

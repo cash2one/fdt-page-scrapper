@@ -127,15 +127,13 @@ public class AccountFactory
 			conn.setDoOutput(true);
 
 
-			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"); 
+			conn.addRequestProperty("Host", "a.jimdo.com");
+			//conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"); 
 			conn.setRequestProperty("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
 			conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-			conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
-			conn.addRequestProperty("Host", "a.jimdo.com"); 
-			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0"); 
 			conn.addRequestProperty("Referer", "http://a.jimdo.com/app/auth/signin/authenticate"); 
 			conn.addRequestProperty("Content-Type", "application/x-www-form-urlencoded"); 
-			conn.addRequestProperty("Cookie","PHPSESSID=" + account.getCookie("PHPSESSID")); 
+			//conn.addRequestProperty("Cookie","PHPSESSID=" + account.getCookie("PHPSESSID")); 
 
 			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 			nameValuePairs.add(new BasicNameValuePair("cstok", cstok));
@@ -153,6 +151,12 @@ public class AccountFactory
 			os.close();
 
 			int rescpCode = conn.getResponseCode();
+			
+			StringBuilder responseStr = Utils.getResponseAsString(conn);
+			
+			File respFile = new File("responce.html");
+			respFile.delete();
+			Utils.appendStringToFile(responseStr.toString(), respFile);
 
 			// Execute HTTP Post Request
 			Map<String,List<String>> cookies = conn.getHeaderFields();//("Set-Cookie").getValue();

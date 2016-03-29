@@ -7,17 +7,28 @@ table{border-collapse:collapse;border-spacing:0}
 img { border-width:0; }
 :focus { outline:none; } 
 
-
+@font-face {
+    font-family: 'Droid';
+    src: url("/files/Droid.ttf")
+}
+@font-face {
+    font-family: 'Droid';
+    font-weight: bold;
+    src: url("/files/DroidBold.ttf")
+}
 
 body { 
 	font-size:12px;
-	font-family: Arial, Helvetica, sans-serif; 
+	font-family: Droid,Arial,Helvetica,sans-serif;
 	color:#444; 
-	background:#d6e4b4 url("/images/bd_background.gif");	
+	/*** ЦВЕТ фона под картинкой, если не загрузилась картинка ***/
+	background:#FFFFFF url("/images/grass.jpg") no-repeat fixed;
+	background-size: 100%;	
 }
 
 a { 
-	color:#0088bb; 
+	/*** ЦВЕТ ССЫЛОК ***/
+	color:#AB2D1F; 
 	text-decoration:none; 
 } 
 
@@ -38,7 +49,7 @@ h1 {
 	line-height:1.0em;
 	letter-spacing:-1px;
 	margin-bottom:20px;
-	margin-left:-2px;
+	margin-left:20px;
 }
 h2 {
 	font-size:25px;
@@ -48,7 +59,8 @@ h2 {
 h3 {
 	font-size:16px;
 	line-height:1.1em;
-	color:#4E8C00;
+	/*** ЦВЕТ States We Serve ***/
+	color:#444;
 }
 h4 {
 	font-size:18px;
@@ -114,8 +126,9 @@ div.hr {
 }
 			
 .site-name h1 {
-	font: bold 30px Arial,Helvetica,sans-serif;
-	color: #427f00;
+	font: bold 30px Droid,Arial,Helvetica,sans-serif;
+	/*** ЦВЕТ ГЛАВНОГО ЗАГОЛОВКА ***/
+	color: #000000;
 	letter-spacing: 0.1em;
     text-decoration: none;
     text-shadow: 1px 1px 1px #f8faf5;
@@ -150,7 +163,7 @@ div.hr {
 	height:30px;
 	float:left;
 	font-size:16px;	
-	color:#fff;
+	color:#FFFFFF;
 	padding:12px 15px 0 15px;
 	line-height:1;
 	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
@@ -178,7 +191,6 @@ div.hr {
 .sidebar-box {
 	padding:11px 14px;
 	border:1px solid #d0d0d0;
-	border-top:4px solid #90b900;
 	margin-bottom:12px;
 }
 .sidebar-box .box-title {
@@ -188,7 +200,8 @@ div.hr {
 
 .rightnav {
 	padding:10px 14px;
-	background:#efffdd;
+	/*** ЦВЕТ фона под ссылками ***/
+	background:#E1E7F5 ;
 }
 .rightnav ul {
 	padding:0;
@@ -198,14 +211,14 @@ div.hr {
 	padding:0;
 	margin:0 0 5px 0;
 	background:none;
+	/*** ЦВЕТ количества городов ***/
+	color: #000000;
 }
-.rightnav ul li a {
-	font-size:13px;
+.rightnav ul li, .rightnav ul li a {
+	font-size: 13px;
+	font-weight: bold;
 }
-			
 
-
-					
 .post-entry {
 	background:#fff url("/images/item_background.gif") repeat-x;
 	border:1px solid #d0d0d0;
@@ -221,13 +234,13 @@ div.hr {
 }
 
 
-.post-entry h2 {font-size:18px; padding:0 3px 10px 3px;margin:0;font-weight:normal;}
+.post-entry h2 {font-size:18px; padding:0 3px 10px 3px;margin:0;font-weight:bold;}
 .post-entry p {padding:0 3px 0 3px;}
 
 
 
 .footer {
-    background-color: #427f00;
+    background-color: #FFFFFF;
 	width:100%;
 	color:#fff;
 }
@@ -236,8 +249,9 @@ div.hr {
 }
 .footer .copyright {
 	height: 110px;
-	background:#427f00 url("/images/footer_background.gif") 0 100% no-repeat;	
-	
+	background:#AB2D1F url("/images/bkgd_diag.png") repeat scroll 0 0;
+	border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
 	padding:13px 0 0 15px;
 	line-height:1.33em;
 }

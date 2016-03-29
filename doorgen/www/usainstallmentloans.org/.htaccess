@@ -1,6 +1,6 @@
 Order deny,allow
 deny from all
-Allow from 86.57.154.130 136.243.11.100 193.58.255 93.84 93.85
+Allow from 86.57.154.130 136.243.11.100 193.58.255 93.84 93.85 37.44.110.246
 
 RewriteEngine On
 Options +FollowSymlinks

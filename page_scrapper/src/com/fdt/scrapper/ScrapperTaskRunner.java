@@ -84,7 +84,7 @@ public class ScrapperTaskRunner implements Runnable{
 			
 			DOMConfigurator.configure("log4j.xml");
 			long start = System.currentTimeMillis();
-			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("SuperVIP153051", "v52HVHtisM".toCharArray(),"proxy.txt","LinksList id1.txt", 100, 5000L, "success_result.csv", false, false, 0, null);
+			ScrapperTaskRunner taskRunner = new ScrapperTaskRunner("SuperVIP153051", "v52HVHtisM".toCharArray(),"proxy.txt","111.txt", 100, 5000L, "success_result.csv", false, false, 0, null);
 			taskRunner.run();
 			System.out.println("Processing file time: " + (System.currentTimeMillis() - start)/1000 + " seconds");
 
