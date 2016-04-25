@@ -5,13 +5,12 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
-import java.util.StringTokenizer;
 import java.util.TimeZone;
 import java.util.concurrent.Callable;
-import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -26,7 +25,7 @@ public class Test {
 	private volatile ArrayList<String> str = new  ArrayList<String>();
 	static int i;
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
 		/*final IMediaWriter writer = ToolFactory.makeWriter(outputFilename);
 
@@ -227,27 +226,27 @@ public class Test {
 		rnd.nextInt();
 
 		System.out.println("-----------------------------");
-		
+
 		String params = "app1=123&app2=321";
 
 		for (StringTokenizer tok = new StringTokenizer(params, "&"); tok.hasMoreTokens();)
 		{
 			System.out.println(tok.nextToken());
 		}
-		
+
 		String title="[Book]\r\n";
 		String newTitle = title.replaceAll("\\[Book\\]", "New Book[]");
 		System.out.println("newTitle: " + newTitle);
-		
+
 		Random rand = new Random();
 		System.out.println(rand.nextInt(1));
-		
+
 		String str1 = "Новый 123 132123 123 1 13 1 Новый вопрос напишите ответ 1314123 113";
 		String str2 = "Новый 123 132123 123 1 13 1 1314123 113";
-		
+
 		List<String> aList = Arrays.asList(str1.split(" "));
 		List<String> bList = Arrays.asList(str2.split(" "));
-		
+
 		List<String> union = new ArrayList(aList);
 		union.addAll(bList);
 
@@ -256,32 +255,159 @@ public class Test {
 
 		List<Integer> symmetricDifference = new ArrayList(union);
 		symmetricDifference.removeAll(intersection);
-		
+
 		System.out.println(symmetricDifference);*/
 		/*AtomicBoolean ab = new AtomicBoolean(false);
 		System.out.println(ab.compareAndSet(false, true));
 		ab = new AtomicBoolean(true);
 		System.out.println(ab.compareAndSet(false, true));*/
-		
-		System.out.println(extractOrderNumber("ebook15.jpg"));
+
+		/*System.out.println(extractOrderNumber("ebook15.jpg"));
 		System.out.println(extractOrderNumber("ebook0.jpg"));
 		System.out.println(extractOrderNumber("ebook324.jpg"));
 		System.out.println(extractOrderNumber("ebook_3.png"));
 		System.out.println(extractOrderNumber("ebook_.jpg"));
-		
-		System.out.println(Object.class.getClassLoader());
+
+		System.out.println(Object.class.getClassLoader());*/
+
+		/*try {
+			// open websocket
+			WebsocketClientEndpoint clientEndPoint = new WebsocketClientEndpoint(new URI("wss://ws.blockchain.info/inv"));
+
+			// add listener
+			clientEndPoint.addMessageHandler(new MessageHandler() {
+				public void handleMessage(String message) {
+					System.out.println(message);
+				}
+			});
+
+			// send message to websocket
+			clientEndPoint.sendMessage("{\"op\":\"unconfirmed_sub\"}");
+
+			// wait 5 seconds for messages from websocket
+			Thread.sleep(5000000);
+
+		} catch (InterruptedException ex) {
+			System.err.println("InterruptedException exception: " + ex.getMessage());
+		} catch (URISyntaxException ex) {
+			System.err.println("URISyntaxException exception: " + ex.getMessage());
+		}*/
+
+		//String testString = "<article><div><b>From the Publisher</b></div>";
+		/*String testString = "<h2>Editorial     Reviews</h2><article><div><b>From       the Publisher    </b></div>";
+		System.out.println(cleanDataFile(testString));*/
+
+		/*Snippet snp = new Snippet();
+		snp.setContent("About the experience of violence, abuse, love, loss, and femininity.");
+		Utils.addLinkToSnippetContent(snp, "http://test.com", 2, 3);
+		System.out.println(snp.getContent());*/
+		/*StringBuffer sb = new StringBuffer("123~123~~~~");
+		System.out.println(trimLastChars(sb, '~'));
+		sb = new StringBuffer("123~123FDSAFAS~SDFASDF");
+		System.out.println(trimLastChars(sb, '~'));
+		sb = new StringBuffer("123~123FDSAFAS~SDFASDF~");
+		System.out.println(trimLastChars(sb, '~'));
+		sb = new StringBuffer("");
+		System.out.println(trimLastChars(sb, '~'));*/
+
+		ArrayList<String> cleanList = new ArrayList<String>(Arrays.asList(new String[]{"cbc","cg"}));
+		ArrayList<String> args4Clean = new ArrayList<String>(Arrays.asList(new String[]{"cbc1","cbc2","cbc3","cc","cg1"}));
+		//Collections.sort(Arrays.asList(argTest));
+
+		Collections.sort(cleanList, new Comparator<String>(){
+
+			@Override
+			public int compare(String o1, String o2) {
+				return o2.compareTo(o1);
+			}
+
+		});
+
+		Collections.sort(args4Clean, new Comparator<String>(){
+
+			@Override
+			public int compare(String o1, String o2) {
+				return o2.compareTo(o1);
+			}
+
+		});
+
+		for(String str : cleanList){
+			System.out.println(str);
+		}
+
+		System.out.println("");
+
+		for(String str : args4Clean){
+			System.out.println(str);
+		}
+
+		int idx4Clean = 0;
+
+		for(int i = 0; i < cleanList.size(); i++){
+
+			String cleanWord = cleanList.get(i);
+
+			while(args4Clean.get(idx4Clean).compareTo(cleanWord) >= 0)
+			{
+				if(args4Clean.get(idx4Clean).startsWith(cleanWord))
+				{
+					args4Clean.remove(idx4Clean);
+					if(args4Clean.size() == idx4Clean){
+						break;
+					}
+				}else{
+					idx4Clean++;
+				}
+			}
+		}
+
+		System.out.println("\r\nResult:");
+		System.out.println("cc".compareTo("cg"));
+		System.out.println("ca".compareTo("cas"));
+		System.out.println("\r\nCleaned:");
+		for(String str : args4Clean){
+			System.out.println(str);
+		}
 	}
-	
+
+	public static StringBuffer trimLastChars(String input, char char4Trim)
+	{
+		StringBuffer sb = new StringBuffer(input);
+
+		while(sb.length() > 0 && sb.charAt(sb.length()-1) == char4Trim )
+		{
+			sb = sb.deleteCharAt(sb.length() - 1);
+		}
+
+		return sb;
+	}
+
+
+	private static String cleanDataFile(String input){
+
+		input = input.replaceAll("<dt>(.*?)</dt>", " ")
+				.replaceAll("<dd>(.*?)</dd>", "$1")
+				.replaceAll("<h2>Product Details</h2>", " ")
+				.replaceAll("<h2>Overview</h2>", " ")
+				.replaceAll("<[^>]*>(.*?)</[^>]*>", "$1")
+				.replaceAll("<[^>]*?>", " ")
+				.replaceAll("</[^>]*?>", " ")
+				.replaceAll("\\s+", " ");
+
+		return input;
+	}
+
 	private static int extractOrderNumber(String fileName) {
 		Pattern ptrn =  Pattern.compile("(.*?)(\\d+)\\.(png|jpg)");
 		Matcher mtchr = ptrn.matcher(fileName);
-		
+
 		int result = -1;
-		
+
 		if(mtchr.matches()){
 			result = Integer.valueOf(mtchr.group(2));
 		}
-		
+
 		return result;
 	}
 
@@ -432,4 +558,3 @@ public class Test {
 
 	}
 }
-

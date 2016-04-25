@@ -101,11 +101,21 @@ public class JimboPosterThread implements Runnable {
 					Random rnd = new Random();
 					rnd.nextInt();
 
+					account.setLoginErr(false);
+					
 					if(account.isLogged() || accountFactory.loginAccount(account, proxyConnector)){
 						account.setLogged(true);
 					}else{
-						accountFactory.removeNotLoggedAccount(account);
-						log.error(String.format("Account '%s' was added to remove list", account.getLogin()));
+						if(!account.isLoginErr()){
+							//account was banned
+							accountFactory.removeNotLoggedAccount(account);
+							log.error(String.format("Account '%s' was added to remove list", account.getLogin()));
+						}else{
+							//some error occured during login. account will be relogined in future
+							log.warn(String.format("Account '%s' will be relogin", account.getLogin()));
+							account.setLogged(false);
+							accountFactory.releaseAccount(account);
+						}
 						return;
 					}
 

@@ -17,5 +17,6 @@
 	<classpathentry kind="var" path="FDT_LIBS/page_scrapper.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/proxy_factory.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/velocity-1.7.jar"/>
+	<classpathentry kind="var" path="JAVA_LIBS/snippet_extractor_lib.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

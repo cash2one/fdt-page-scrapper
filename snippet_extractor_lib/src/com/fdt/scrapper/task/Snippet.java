@@ -5,6 +5,10 @@ public class Snippet {
 	private String content = "";
 	private String link = "";
 
+	public Snippet(){
+		super();
+	}
+	
 	public Snippet(String title, String content)
 	{
 		super();

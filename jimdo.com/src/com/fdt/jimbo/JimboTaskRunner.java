@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -273,7 +274,7 @@ public class JimboTaskRunner
 							account = null;
 							newThread = null;
 							task = null;
-
+							wait(1L);
 							continue;
 						}else{
 							if(task != null){
@@ -298,6 +299,9 @@ public class JimboTaskRunner
 					}
 				}
 
+				
+				executor.shutdown();
+				executor.awaitTermination(60, TimeUnit.SECONDS);
 				//saver.running = false;
 
 				log.info("Task factory is empty: "+taskFactory.isTaskFactoryEmpty()+". Current working threads count is " + taskFactory.getRunThreadsCount());

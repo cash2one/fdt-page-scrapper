@@ -47,8 +47,9 @@ public class MegaMultipleSnippetGeneratorRunner{
 	private String keyWordsInputFolderPath;
 	private String keyWordsOutputFolderPath;
 
+	//словарь в котором содержится <ключ> и в соответствие ему ставится файл, в котором содержится обрабатываемый ключ
 	private Map<String, List<File>> keyWordFileMapping = new HashMap<String, List<File>>();
-	public static Lock readWriteLock = new ReentrantLock();
+	protected static Lock readWriteLock = new ReentrantLock();
 
 	private int maxThreadCount;
 	private long proxyDelay;
@@ -60,7 +61,8 @@ public class MegaMultipleSnippetGeneratorRunner{
 	private int maxPageNum = 50;
 
 	private Boolean addLinkFromFolder = false;
-	private File pathToLinkFolder;
+
+	private HashMap<String, File> mappingLinkFileMap = new HashMap<String, File>();
 
 	private String linksListFilePath;
 
@@ -84,7 +86,9 @@ public class MegaMultipleSnippetGeneratorRunner{
 
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 5000L;
 
-	private final File PROCESS_FOLDER = new File("error");
+	private final File FOLDER_4_PROCESSING_LINK_FILES = new File("processed_link_files");
+
+	private final File FOLDER_4_PROCESSING_INPUT_FILE = new File("processing");
 
 	Random rnd = new Random();
 
@@ -189,15 +193,26 @@ public class MegaMultipleSnippetGeneratorRunner{
 			addLinkFromFolder = Boolean.valueOf(addLinkValue);
 		}
 
-		if(addLinkFromFolder){
+		if(addLinkFromFolder)
+		{
 			String linkFolderValue = ConfigManager.getInstance().getProperty(PATH_TO_LINK_FOLDER_LABEL);
-			if(linkFolderValue != null && !"".equals(linkFolderValue.trim())){
-				pathToLinkFolder= new File(linkFolderValue).getCanonicalFile();
+
+			if(linkFolderValue != null && !"".equals(linkFolderValue.trim()))
+			{
+				//TODO split link folders to separeted items
+				String[] mappingLinkFile = linkFolderValue.trim().split(";");
+
+				for(String elements : mappingLinkFile)
+				{
+					String[] linksElem = elements.split("=");
+					mappingLinkFileMap.put(linksElem[0].trim(), new File(linksElem[1].trim()).getCanonicalFile());
+				}
 			}
 		}
 
 		if(!addLinkFromFolder){
-			loadLinkListFromFile();
+			//загружаем линки из общего файла с линками
+			this.linksList = loadLinkListFromFile(this.linksListFilePath);
 		}
 
 		//set authentication params
@@ -220,30 +235,34 @@ public class MegaMultipleSnippetGeneratorRunner{
 		{
 			if(file.isFile())
 			{
-				
+
 				List<String> rowsList = Utils.loadFileAsStrList(file);
 
 				String keyWord = rowsList.get(1);
-				
-				taskRowList.add(keyWord);
-
-				//Move file to processed folder
-				File destFile = new File("processing/" + file.getName());
-				if(destFile.exists()){
-					destFile.delete();
-				}
-
-				log.debug(String.format("Moving file %s to process folder", file.getName()));
-				FileUtils.moveFile(file, destFile);
-				file.delete();
 
 				try{
 					readWriteLock.lock();
 
+					//перемещаем файл в processing папку, чтобы в дальнейшем он случайно не был взят для обработки
+					File destFile = new File(FOLDER_4_PROCESSING_INPUT_FILE, file.getName());
+					if(destFile.exists()){
+						log.warn(String.format("Another files %s exist in processing folder. Another file will be deleted", file.getName()));
+						destFile.delete();
+					}
+
+					log.warn(String.format("Moving file %s to process folder", file.getName()));
+					FileUtils.moveFile(file, destFile);
+					file.delete();
+
 					List<File> fileList = keyWordFileMapping.get(keyWord);
-					if(fileList != null){
+
+					if(fileList != null)
+					{
 						fileList.add(destFile);
-					}else{
+					}
+					else {
+						//добавляем кейворд для обработки только в том случае, когда у нас он ещё не был добавлен, иначе просто добавляем новый файл в keyWordFileMapping
+						taskRowList.add(keyWord);
 						fileList = new ArrayList<File>();
 						fileList.add(destFile);
 					}
@@ -288,24 +307,35 @@ public class MegaMultipleSnippetGeneratorRunner{
 						task.getCurrentTask().setPage(rnd.nextInt(maxPageNum));
 
 						File linkFile = null;
+						File linkFolder = null;
+						this.linksList = new ArrayList<String>();
 
-						if(addLinkFromFolder)
-						{
-							linkFile = getLinkFile();
-							if(linkFile == null){	
-								taskFactory.reprocessingTask(task);
-								break;
+						String inputFileName = keyWordFileMapping.get(task.getCurrentTask().getKeyWordsOrig()).get(0).getName();
+
+						boolean isAddLink = inputFileName.startsWith("no_link")? false:true;
+
+						if(isAddLink){
+							linkFolder = getLinkFolder(inputFileName);
+							
+							if(addLinkFromFolder)
+							{
+								linkFile = getRandomLinkFile(linkFolder);
+								if(linkFile == null){	
+									taskFactory.reprocessingTask(task);
+									break;
+								}
 							}
 						}
 
 						newThread = new MegaMultipleSnippetGeneratorThread(
 								task, 
 								proxyFactory, 
-								taskFactory, 
-								linksList, 
+								taskFactory,
+								isAddLink,
 								addLinkFromFolder, 
+								linksList,
 								linkFile, 
-								this.pathToLinkFolder, 
+								linkFolder, 
 								keyWordFileMapping, 
 								new File(keyWordsOutputFolderPath)
 								);
@@ -347,26 +377,27 @@ public class MegaMultipleSnippetGeneratorRunner{
 		}
 	}
 
-	private File getLinkFile(){
-		File linkFile = null;
-
-		linkFile = getLinkFile(PROCESS_FOLDER);
-
-		//if link files is empty - end process execution
-		while(linkFile == null)
-		{
-			File[] processedFiles = PROCESS_FOLDER.listFiles();
-			if(processedFiles == null || processedFiles.length == 0){
-				log.warn("Link files are absent. Program will be finished");
+	private File getLinkFolder(String inputFileName)
+	{
+		File linkFolder = null;
+		
+		for(String prefix : mappingLinkFileMap.keySet()){
+			if(inputFileName.startsWith(prefix)){
+				linkFolder = mappingLinkFileMap.get(prefix);
 				break;
 			}
-			waiting(RUNNER_QUEUE_EMPTY_WAIT_TIME);
-			linkFile = getLinkFile(PROCESS_FOLDER);
 		}
-		return linkFile;
+
+		//если не нашли нужную папку, то берём папку по умолчанию
+		if(linkFolder == null || !linkFolder.exists()){
+			linkFolder = mappingLinkFileMap.get("default");
+		}
+		
+		return linkFolder;
 	}
 
-	public synchronized File getLinkFile(File processFolder){
+	//берём случайны файл с линками из папки pathToLinkFolder, читаем из него линки, перемещаем файл в папку folder4ProcessedLinkFiles
+	public synchronized File getRandomLinkFile(File pathToLinkFolder){
 		File linkFile = null;
 
 		File[] files = pathToLinkFolder.listFiles();
@@ -376,8 +407,8 @@ public class MegaMultipleSnippetGeneratorRunner{
 		//get random file and load link list for it
 		linkFile = files[rnd.nextInt(files.length)];
 		try {
-			FileUtils.moveFile(linkFile, new File(processFolder,linkFile.getName()));
-			linkFile = new File(processFolder, linkFile.getName());
+			FileUtils.moveFile(linkFile, new File(FOLDER_4_PROCESSING_LINK_FILES,linkFile.getName()));
+			linkFile = new File(FOLDER_4_PROCESSING_LINK_FILES, linkFile.getName());
 			log.debug(String.format("Moved file %s", linkFile.getName()));
 		} catch (IOException e) {
 			log.error(String.format("Error during moving file %s", linkFile.getName()),e);
@@ -388,10 +419,10 @@ public class MegaMultipleSnippetGeneratorRunner{
 		return linkFile;
 	}
 
-	public synchronized void loadLinkListFromFile(){
+	private synchronized ArrayList<String> loadLinkListFromFile(String lnksLstFilePath){
 		//else just load list links from single file
-		File linkFile = new File(linksListFilePath);
-		this.linksList = loadLinkList(linkFile);
+		File linkFile = new File(lnksLstFilePath);
+		return loadLinkList(linkFile);
 	}
 
 	private synchronized ArrayList<String> loadLinkList(File cfgFile){

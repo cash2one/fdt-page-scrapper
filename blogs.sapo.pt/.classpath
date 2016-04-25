@@ -18,5 +18,7 @@
 	<classpathentry kind="var" path="FDT_LIBS/proxy_factory.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/velocity-1.7.jar"/>
 	<classpathentry kind="lib" path="D:/Work/Scrapper_door/java/antigate-java-api-master.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/snippet_extractor_lib.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/snippet_extractor_lib"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

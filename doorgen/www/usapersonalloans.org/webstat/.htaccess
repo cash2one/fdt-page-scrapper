@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/usapersonalloans.org/webstat"
+AuthUserFile /home/user/etc/401315.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

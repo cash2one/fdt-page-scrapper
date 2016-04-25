@@ -94,10 +94,10 @@ public class KeywordShortUrlInserter {
 	public KeywordShortUrlInserter() throws IOException {
 		super();
 		this.inputFileFolderPath = ConfigManager.getInstance().getProperty(INPUT_FILE_FOLDER_PATH_LABEL);
-		PreConditionCheck.notEmpty(this.inputFileFolderPath,"Не указан путь к папке с файлами");
+		PreConditionCheck.notEmpty(this.inputFileFolderPath,"РќРµ СѓРєР°Р·Р°РЅ РїСѓС‚СЊ Рє РїР°РїРєРµ СЃ С„Р°Р№Р»Р°РјРё");
 
 		this.outputFolderPath = ConfigManager.getInstance().getProperty(OUTPUT_FOLDER_PATH_LABEL);
-		PreConditionCheck.notEmpty(this.outputFolderPath,"Не указан путь к папке куда будут сохраняться результаты");
+		PreConditionCheck.notEmpty(this.outputFolderPath,"РќРµ СѓРєР°Р·Р°РЅ РїСѓС‚СЊ Рє РїР°РїРєРµ РєСѓРґР° Р±СѓРґСѓС‚ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ СЂРµР·СѓР»СЊС‚Р°С‚С‹");
 
 		this.maxThreadCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
 		//set default value 10 for thread count
@@ -105,17 +105,17 @@ public class KeywordShortUrlInserter {
 		
 
 		this.shortUrlSite = ConfigManager.getInstance().getProperty(SHORT_URL_SITE_LABEL);
-		PreConditionCheck.notEmpty(this.shortUrlSite,"Не указан сайт для SHORTURL");
+		PreConditionCheck.notEmpty(this.shortUrlSite,"РќРµ СѓРєР°Р·Р°РЅ СЃР°Р№С‚ РґР»СЏ SHORTURL");
 
 		this.shortUrlLogin = ConfigManager.getInstance().getProperty(SHORT_URL_LOGIN_LABEL);
-		PreConditionCheck.notEmpty(this.shortUrlLogin,"Не указан логин для доступа к SHORTURL сайту");
+		PreConditionCheck.notEmpty(this.shortUrlLogin,"РќРµ СѓРєР°Р·Р°РЅ Р»РѕРіРёРЅ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє SHORTURL СЃР°Р№С‚Сѓ");
 
 		this.shortUrlPass = ConfigManager.getInstance().getProperty(SHORT_URL_PASS_LABEL);
-		PreConditionCheck.notEmpty(this.shortUrlPass,"Не указан пароль для доступа к SHORTURL сайту");
+		PreConditionCheck.notEmpty(this.shortUrlPass,"РќРµ СѓРєР°Р·Р°РЅ РїР°СЂРѕР»СЊ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє SHORTURL СЃР°Р№С‚Сѓ");
 		
 		
 		this.promoUrl = ConfigManager.getInstance().getProperty(PROMO_URL_SITE_LABEL);
-		PreConditionCheck.notEmpty(this.promoUrl,"Не указан PROMO URL");
+		PreConditionCheck.notEmpty(this.promoUrl,"РќРµ СѓРєР°Р·Р°РЅ PROMO URL");
 
 	}
 

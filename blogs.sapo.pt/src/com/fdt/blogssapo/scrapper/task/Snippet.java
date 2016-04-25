@@ -1,40 +1,16 @@
 package com.fdt.blogssapo.scrapper.task;
 
-public class Snippet {
-    private String title = "";
-    private String content = "";
-    
-    public Snippet(String title, String content)
-    {
-	super();
-	this.title = title;
-	this.content = content;
-    }
+public class Snippet extends com.fdt.scrapper.task.Snippet {
 
-    public String getTitle()
-    {
-        return title;
-    }
+	public Snippet(String title, String content)
+	{
+		super(title, content);
+	}
 
-    public void setTitle(String title)
-    {
-        this.title = title;
-    }
-
-    public String getContent()
-    {
-        return content;
-    }
-
-    public void setContent(String content)
-    {
-        this.content = content;
-    }
-    
-    @Override
-    public String toString(){
-	StringBuilder result = new StringBuilder();
-	result.append("<p>").append("<h3>").append(title).append("</h3>").append(content).append("</p>");
-	return result.toString();
-    }
+	@Override
+	public String toString(){
+		StringBuilder result = new StringBuilder();
+		result.append("<p>").append("<h3>").append(this.getTitle()).append("</h3>").append(this.getContent()).append("</p>");
+		return result.toString();
+	}
 }

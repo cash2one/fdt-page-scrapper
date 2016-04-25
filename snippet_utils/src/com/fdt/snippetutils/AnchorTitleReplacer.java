@@ -14,6 +14,7 @@ import java.io.OutputStreamWriter;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
@@ -40,6 +41,7 @@ import com.fdt.scrapper.task.SnippetTask;
 import com.fdt.scrapper.task.TutSnippetTask;
 import com.fdt.scrapper.task.UkrnetSnippetTask;
 import com.fdt.scrapper.task.YahooSnippetTask;
+import com.fdt.utils.Utils;
 
 public class AnchorTitleReplacer {
 
@@ -47,6 +49,9 @@ public class AnchorTitleReplacer {
 
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
 	private final static String PROXY_PASS_LABEL = "proxy_pass";
+
+	private final static String MAX_BASE_LINE_CNT_LABEL = "max_base_word_cnd";
+	private final static String MIN_BASE_LINE_CNT_LABEL = "min_base_word_cnd";
 
 	private final static String MAX_LINE_COUNT_LABEL = "max_line_count";
 	private final static String MIN_LINE_COUNT_LABEL = "min_line_count";
@@ -58,6 +63,7 @@ public class AnchorTitleReplacer {
 	private final static String OUTPUT_PATH_LABEL = "output_path";
 	private final static String INPUT_TITLES_PATH_LABEL = "input_titles_path";
 	private final static String TITLES_FILE_PATH_LABEL = "titles_file_path";
+	private final static String BASE_TITLES_MAPPING_FILE_PATH_LABEL = "base_title_mapping_file_path";
 
 	private final static String PROXY_LIST_FILE_PATH_LABEL = "proxy_list_file_path";
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
@@ -72,9 +78,13 @@ public class AnchorTitleReplacer {
 	private String anchorFilePath;
 	private String[] outputPath;
 	private String inputTitlesPath;
+	private String baseTitleMappingFilePath;
 
-	private int maxLineCount = 7;
+	private int minBaseFileWordCnt = 3;
+	private int maxBaseFileWordCnt = 7;
+
 	private int minLineCount = 3;
+	private int maxLineCount = 7;
 
 	private String patternTitlesFilePath;
 
@@ -89,6 +99,8 @@ public class AnchorTitleReplacer {
 	private String source = "BING";
 
 	private HashMap<String, ArrayList<String>> fileTitles = new HashMap<String, ArrayList<String>>(); 
+
+	private HashMap<String, File> baseKeyMapping = new HashMap<String,File>(); 
 
 	private AtomicInteger currentThreadCount = new AtomicInteger(0);
 	private Integer maxThreadCount = 1;
@@ -130,11 +142,19 @@ public class AnchorTitleReplacer {
 		this.anchorFilePath = ConfigManager.getInstance().getProperty(ANCHOR_FILE_PATH_LABEL);
 		this.outputPath = ConfigManager.getInstance().getProperty(OUTPUT_PATH_LABEL).split(";");
 		this.inputTitlesPath = ConfigManager.getInstance().getProperty(INPUT_TITLES_PATH_LABEL);
+		this.inputTitlesPath = ConfigManager.getInstance().getProperty(INPUT_TITLES_PATH_LABEL);
+
+		this.baseTitleMappingFilePath = ConfigManager.getInstance().getProperty(BASE_TITLES_MAPPING_FILE_PATH_LABEL);
+
 		this.patternTitlesFilePath = ConfigManager.getInstance().getProperty(TITLES_FILE_PATH_LABEL);
+
 		this.repeatCount = Integer.parseInt(ConfigManager.getInstance().getProperty(REPEAT_COUNT_LABEL));
 
-		this.maxLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MAX_LINE_COUNT_LABEL));
+		this.minBaseFileWordCnt = Integer.parseInt(ConfigManager.getInstance().getProperty(MIN_BASE_LINE_CNT_LABEL));
+		this.maxBaseFileWordCnt = Integer.parseInt(ConfigManager.getInstance().getProperty(MAX_BASE_LINE_CNT_LABEL));
+
 		this.minLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MIN_LINE_COUNT_LABEL));
+		this.maxLineCount = Integer.parseInt(ConfigManager.getInstance().getProperty(MAX_LINE_COUNT_LABEL));
 
 		this.replaceWithBing = Boolean.parseBoolean(ConfigManager.getInstance().getProperty(GET_ANCHOR_FROM_WEB_LABEL));
 
@@ -166,6 +186,10 @@ public class AnchorTitleReplacer {
 		ArrayList<String> titles = readTitlesFile(this.patternTitlesFilePath);
 		ArrayList<Pattern> titlesPattern = new ArrayList<Pattern>();
 		fileTitles = getFileTitles(this.inputTitlesPath);
+
+		//Read key-keys_file mapping
+
+		readBaseKeyMappingFile(this.baseTitleMappingFilePath);
 
 		HashMap<String, Pattern> linePttrnMpng = new HashMap<String, Pattern>();
 		ArrayList<String> keys = new ArrayList<String>();
@@ -211,6 +235,14 @@ public class AnchorTitleReplacer {
 		}
 	}
 
+	/**
+	 * Читаем список файлов в папрке inputTitlesFolder. Имя файла в папке inputTitlesFolder соответствует key-ю. 
+	 * В каждом файле содержатся список возможных тайтлов для key.
+	 * 
+	 * @param inputTitlesFolder
+	 * @return
+	 * @throws IOException
+	 */
 	private HashMap<String, ArrayList<String>> getFileTitles(String inputTitlesFolder) throws IOException{
 		HashMap<String, ArrayList<String>> result = new HashMap<String, ArrayList<String>>();
 
@@ -224,6 +256,33 @@ public class AnchorTitleReplacer {
 		}
 
 		return result;
+	}
+
+	private void readBaseKeyMappingFile(String baseFilePath) throws IOException
+	{
+
+		ArrayList<String> strs = new ArrayList<String>();
+
+		if(baseFilePath != null){
+			File baseFile = new File(baseFilePath);
+			if(baseFile.exists() && baseFile.isFile()){
+				strs = readFile(baseFilePath);
+			}
+		}
+
+		for(String str : strs){
+			String[] mapping = str.split(";");
+			if(mapping.length != 2){
+				log.error(String.format("String %s is incorrect. Need next format: <key>;<path_to_file_with_keys>", str));
+			}else{
+				File keyFile =  new File(mapping[1].trim());
+				if(keyFile.exists()){
+					baseKeyMapping.put(mapping[0].trim().toLowerCase(),keyFile);
+				}else{
+					log.error(String.format("File %s for key %s does not exist", mapping[0], mapping[1]));
+				}
+			}
+		}
 	}
 
 	private String getRandomTitleFromFiles(String key){
@@ -314,7 +373,7 @@ public class AnchorTitleReplacer {
 		}
 	}
 
-	private ArrayList<String> processLines(HashMap<String, Pattern> lines, ArrayList<String> titles){
+	private ArrayList<String> processLines(HashMap<String, Pattern> lines, List<String> titles){
 		ArrayList<String> output = new ArrayList<String>();
 		Random rnd = new Random();
 
@@ -322,6 +381,8 @@ public class AnchorTitleReplacer {
 		String bookName;
 		String newTitle;
 		String newLine;
+
+		List<Integer> skipList = Arrays.asList(new Integer[]{1,2,4,5});
 
 		for(String line: lines.keySet()){
 			//Substring Name
@@ -335,8 +396,7 @@ public class AnchorTitleReplacer {
 							if(fullTitle.equals(bookName)){
 								log.debug("NEW TITLE FOUND: " + fullTitle);
 							}*/
-					if(replaceWithBing)
-					{
+					if(replaceWithBing)	{
 						//replace title from file
 						newTitle = getRandomTitleFromFiles(bookName, this.cleanKey);
 						/*Snippet snippet = null;
@@ -345,19 +405,47 @@ public class AnchorTitleReplacer {
 							newTitle = snippet.getTitle();
 						} catch (Exception e) {
 							log.warn(String.format("Error occured during getting snippets: %s", e.getMessage()), e);
-						} */
+						}*/ 
 
-						if("".equals(newTitle)){
+						if(newTitle == null || "".equals(newTitle.trim()))
+						{
 							appendLinesToFile(line, new File("result_not_found.txt"), true);
 							log.warn(String.format("!!! TITLE WILL NOT BE CHANGED !!! Key: '%s'; Full line: '%s'",bookName, line));
 							newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
 						}
 						//newLine = line.replace(fullTitle, newTitle);
 						newLine = line.replace(fullTitle, newTitle);
-					}else{
-						//TODO replace from file
-						newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
-						newLine = line.replace(fullTitle, newTitle);
+					}
+					else{
+						//replace from file
+						//ищем есть ли в нашей базе для данного кея соответствуюущий файл
+						//если файл найден - то парсим контент этого файла, берём случайно любые его 2-5 слов (настраиваемо) и подставляем из вместо старого тайтла
+						if(baseKeyMapping != null && baseKeyMapping.get(bookName.trim().toLowerCase()) != null){
+							//TODO Get title from key file
+
+							String fileAsStr  = Utils.loadFileAsString(baseKeyMapping.get(bookName.trim().toLowerCase()), skipList);
+							//TODO Clean from tags/Some string
+							fileAsStr = cleanDataFile(fileAsStr);
+							//TODO Get ramdomly 2-5 words for title
+							String[] words = fileAsStr.split("\\s+");
+							int randomWrdValue = Utils.getRandomValue(minBaseFileWordCnt, maxBaseFileWordCnt);
+							int startStringIndex = Utils.getRandomValue(0, words.length-randomWrdValue);
+
+							StringBuffer newTitleContent = new StringBuffer();
+
+							for(int i = startStringIndex; i < startStringIndex + randomWrdValue ; i++)
+							{
+								newTitleContent.append(words[i]).append(" ");
+							}
+							if(newTitleContent.length()>0){
+								newTitleContent.setLength(newTitleContent.length()-1);
+							}
+
+							newLine = line.replace(fullTitle, newTitleContent.toString());
+						}else{
+							newTitle = titles.get(rnd.nextInt(titles.size())).replace("(.*)", bookName);
+							newLine = line.replace(fullTitle, newTitle);
+						}
 					}
 					newLine = newLine.replaceAll("\\\\", "");
 					output.add(newLine);
@@ -372,6 +460,23 @@ public class AnchorTitleReplacer {
 		}
 
 		return output;
+	}
+
+	private String cleanDataFile(String input){
+
+		input = input.replaceAll("<dt>(.*?)</dt>", " ")
+				.replaceAll("<dd>(.*?)</dd>", "$1")
+				.replaceAll("<h2>Product Details</h2>", " ")
+				.replaceAll("<h2>Overview</h2>", " ")
+				.replaceAll("<div><b>From the Publisher</b></div>", " ")
+				.replaceAll("<h2>Editorial Reviews</h2>", " ")
+				.replaceAll("<h2>Related Subjects</h2>", " ")
+				.replaceAll("<[^>]*>(.*?)</[^>]*>", "$1")
+				.replaceAll("<[^>]*?>", " ")
+				.replaceAll("</[^>]*?>", " ")
+				.replaceAll("\\s+", " ");
+
+		return input;
 	}
 
 	private ArrayList<String> readFile(String filePath) throws IOException{
@@ -493,24 +598,24 @@ public class AnchorTitleReplacer {
 			task = new GoogleSnippetTask(key);
 			task.setPage(rnd.nextInt(50));
 		} else
-		if("BING".equals(source.toUpperCase().trim())){
-			task = new BingSnippetTask(key);
-			task.setPage(1+rnd.nextInt(50));
-		} else
-		if("TUT".equals(source.toUpperCase().trim())){
-			task = new TutSnippetTask(key);
-		} else
-		if("UKRNET".equals(source.toUpperCase().trim())){
-			task = new UkrnetSnippetTask(key);
-		} else
-		if("AOL".equals(source.toUpperCase().trim())){
-			task = new AolSnippetTask(key);
-		}else
-		if("YAHOO".equals(source.toUpperCase().trim())){
-			task = new YahooSnippetTask(key);
-		}else{
-			throw new Exception("Can't find assosiated task for source: " + source);
-		}
+			if("BING".equals(source.toUpperCase().trim())){
+				task = new BingSnippetTask(key);
+				task.setPage(1+rnd.nextInt(50));
+			} else
+				if("TUT".equals(source.toUpperCase().trim())){
+					task = new TutSnippetTask(key);
+				} else
+					if("UKRNET".equals(source.toUpperCase().trim())){
+						task = new UkrnetSnippetTask(key);
+					} else
+						if("AOL".equals(source.toUpperCase().trim())){
+							task = new AolSnippetTask(key);
+						}else
+							if("YAHOO".equals(source.toUpperCase().trim())){
+								task = new YahooSnippetTask(key);
+							}else{
+								throw new Exception("Can't find assosiated task for source: " + source);
+							}
 
 		return task;
 	}

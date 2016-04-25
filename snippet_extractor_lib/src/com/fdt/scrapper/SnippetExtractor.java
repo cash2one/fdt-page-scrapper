@@ -36,6 +36,7 @@ import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.Snippet;
 import com.fdt.scrapper.task.SnippetTask;
 import com.fdt.scrapper.task.SnippetTaskWrapper;
+import com.fdt.utils.Utils;
 
 /**
  *
@@ -70,7 +71,7 @@ public class SnippetExtractor {
 
 	private static final String LINE_FEED = "\r\n";
 
-	Random rnd = new Random();
+	private final Random rnd = new Random();
 
 	private ProxyFactory proxyFactory = null;
 	private ArrayList<String> linkList = null;
@@ -85,27 +86,27 @@ public class SnippetExtractor {
 		this.linkList = null;
 		this.task = null;
 	}
-	
+
 	public SnippetExtractor(SnippetTask snippetTask, ProxyFactory proxyFactory) throws MalformedURLException, IOException {	
 		this();
 		this.proxyFactory = proxyFactory;
 		this.task = new SnippetTaskWrapper(snippetTask);
 		this.linkList = null;
 	}
-	
+
 	public SnippetExtractor(SnippetTask snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList) throws MalformedURLException, IOException {	
 		this(new SnippetTaskWrapper(snippetTask), proxyFactory, linkList);
 	}
-	
-	
+
+
 	public SnippetExtractor(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList) throws MalformedURLException, IOException {
 		this();
-		
+
 		this.proxyFactory = proxyFactory;
 		this.linkList = linkList;
 		this.task = snippetTask;
 	}
-	
+
 	public SnippetExtractor() throws MalformedURLException, IOException {
 		super();
 		if(ConfigManager.getInstance().getProperty(MIN_SNIPPET_COUNT_LABEL) != null)
@@ -126,30 +127,34 @@ public class SnippetExtractor {
 		this.addLinkFromFolder = addLinkFromFolder;
 	}
 
-	public synchronized void insertLinksToSnippets(SnippetTaskWrapper snippetTask) {
+	public synchronized void insertLinksToSnippets(SnippetTaskWrapper snippetTask){
+		insertLinksToSnippets(snippetTask, true);
+	}
+
+	public synchronized void insertLinksToSnippets(SnippetTaskWrapper snippetTask, boolean isAddLinks) {
 		//get snippets
 		String snippetContent = null;
 		int attempt = 0;
 		int maxAttemptCount = 10;
 		boolean errExist = false;
-		
+
 		String propValue = ConfigManager.getInstance().getProperty(MAX_ATTEMPT_COUNT_LABEL);
 		if(propValue != null && !"".equals(propValue.trim())){
 			maxAttemptCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_ATTEMPT_COUNT_LABEL));
 		}
 		HashSet<Snippet> snippetResult = new HashSet<Snippet>();
 		ProxyConnector proxyConnector = null;
-		
+
 		do{
 			//set random page from 25 to 50
 			snippetTask.selectRandTask().setPage(25 + rnd.nextInt(26));
 			errExist = false;
-			
+
 			if(proxyConnector == null){
 				proxyConnector = proxyFactory.getRandomProxyConnector();
 				log.debug(String.format("Get proxy: %s", proxyConnector.toString()));
 			}
-			
+
 			try{
 				//TODO Get proxy connector
 				while(snippetResult.size() < MIN_SNIPPET_COUNT && snippetTask.getCurrentTask().getPage() > 1)
@@ -179,7 +184,7 @@ public class SnippetExtractor {
 						log.error("Error occured during processing key: " + snippetTask.getCurrentTask().getKeyWords(), e);
 					}
 				}
-				
+
 				attempt++;
 			}
 			finally
@@ -192,17 +197,32 @@ public class SnippetExtractor {
 		}
 		while(snippetResult.size() < MIN_SNIPPET_COUNT && attempt < maxAttemptCount);
 
-		
-		if(addLinkFromFolder)
-		{
-			snippetContent = getSnippetsContentFromFolder(new ArrayList<Snippet>(snippetResult));
+
+		if(isAddLinks){
+			if(addLinkFromFolder)
+			{
+				//добавлеям в сниппеты все линки которые были переданы классу
+				snippetContent = getSnippetsContentFromFolder(new ArrayList<Snippet>(snippetResult));
+			}else{
+				//берём рандомногое количество линков из тех, что бы ли переданные классу
+				snippetContent = getSnippetsContent(new ArrayList<Snippet>(snippetResult));
+			}
 		}else{
-			snippetContent = getSnippetsContent(new ArrayList<Snippet>(snippetResult));
+			snippetContent = getSnippetsContentWOLinks(new ArrayList<Snippet>(snippetResult));
 		}
-		
+
 		task.getCurrentTask().setResult(snippetContent);
 	}
 	
+	private String getSnippetsContentWOLinks(ArrayList<Snippet> snippets){
+		StringBuffer snipContent = new StringBuffer();
+		for(Snippet snippet : snippets){
+			snipContent.append(snippet.toString()).append("\r\n");
+		}
+		
+		return snipContent.toString();
+	}
+
 	private int reducePage(int currentPage){
 		if(currentPage/5 > 1){
 			log.info(String.format("Recude page from %d to %d",currentPage, currentPage/5 ));
@@ -212,7 +232,7 @@ public class SnippetExtractor {
 			return 1;
 		}
 	}
-	
+
 	private int reducePage(int currentPage, int divider){
 		if(currentPage/divider > 1){
 			log.info(String.format("Recude page from %d to %d",currentPage, currentPage/divider ));
@@ -224,7 +244,8 @@ public class SnippetExtractor {
 	}
 
 	/**
-	 * Generating snippet content
+	 * Добавляем рандомно линки, которые были переданые в обработчки. 
+	 * Будет взято случайное количество линков (не все) и они будут добавлены в сниппеты
 	 * 
 	 * @param snippets
 	 * @return
@@ -237,9 +258,9 @@ public class SnippetExtractor {
 		snipCount = getSnipCount(snippets);
 
 		log.debug(String.format("Keywords: '%s' Snippet count: %d", task.getCurrentTask().getKeyWords(), snipCount));
-		StringBuilder snippetsContent = new StringBuilder();
+		StringBuffer snippetsContent = new StringBuffer();
 
-		//get links count
+		//получаем случайное количество линков, которые будут добавлены
 		linkCount = getLinkCount();
 		int snippetLinked = 0;
 
@@ -247,15 +268,15 @@ public class SnippetExtractor {
 			log.debug("test");
 		}
 		int indexShift = getRandomValue(0,snippets.size()-snipCount); 
-		
+
 		log.debug(String.format("Snippets.size() = (%d); linkList.size() = (%d), snipCount = (%d)", snippets.size(), linkList.size(), snipCount));
-		
+
 		for(int i = indexShift; i < (snipCount+indexShift); i++){
 			//add link to snipper
 			if(snippetLinked < linkCount){
 				//add snippet link
 				int randomSuccessLink = getRandomValue(1,linkList.size()-1);
-				addLinkToSnippetContent(snippets.get(i), linkList.get(randomSuccessLink));
+				Utils.addLinkToSnippetContent(snippets.get(i), linkList.get(randomSuccessLink),MIN_WORDS_COUNT, MAX_WORDS_COUNT);
 				snippetsContent.append(snippets.get(i).toString()).append("\r\n");
 				snippetLinked++;
 			}else{
@@ -298,6 +319,14 @@ public class SnippetExtractor {
 		return snipCount;
 	}
 
+	/**
+	 * добавлеям в сниппеты все (по возможности) линки которые были переданы классу
+	 * Линки должны были быть взяты из рандомного файла
+	 * 
+	 * @param snippets
+	 * @return
+	 */
+
 	private String getSnippetsContentFromFolder(ArrayList<Snippet> snippets) 
 	{
 		int snipCount = 0;
@@ -306,14 +335,14 @@ public class SnippetExtractor {
 		/*if(getRandomValue(MIN_LINK_COUNT, MAX_LINK_COUNT) == 0){
 			linkCount = 0;
 		}*/
-		
+
 		if( MIN_LINK_COUNT == 0 && MAX_LINK_COUNT == 0){
 			linkCount = linkList.size();
 		}else{
 			linkCount = getRandomValue(MIN_LINK_COUNT, MAX_LINK_COUNT);
 		}
-		
-		//reduce link cound
+
+		//reduce link count
 		while(linkList.size() > linkCount){
 			linkList.remove(rnd.nextInt(linkList.size()));
 		}
@@ -326,7 +355,7 @@ public class SnippetExtractor {
 			//if(linkCount > 0){
 			/*snipCount = linkCount + rnd.nextInt(MAX_EXTRA_SNIPPETS+1);*/
 			snipCount = getRandomValue(MIN_SNIPPET_COUNT, MAX_SNIPPET_COUNT);
-			
+
 			if(snippets.size() < snipCount){
 				snipCount = snippets.size();
 			}
@@ -334,7 +363,7 @@ public class SnippetExtractor {
 				snipCount = getSnipCount(snippets);
 			}*/
 		}
-		
+
 		log.debug(String.format("Snippets.size() = (%d); linkList.size() = (%d), snipCount = (%d)", snippets.size(), linkList.size(), snipCount));
 
 		StringBuilder snippetsContent = new StringBuilder();
@@ -487,44 +516,6 @@ public class SnippetExtractor {
 		return conn;
 	}
 
-
-	private void addLinkToSnippetContent(Snippet snippet, String link){
-		StringBuilder newContent = new StringBuilder(snippet.getContent());
-		//find random
-		String[] words = snippet.getContent().split(" ");
-		//all snippet will be as link
-		if(words.length == 1 || words.length == 2){
-			//insert link here
-			newContent = new StringBuilder();
-			newContent.append("<a href=\""+link+"\">");
-
-			for(int i = 0; i < words.length; i++){
-				newContent.append(words[i]).append(" ");
-			}
-			newContent.setLength(newContent.length()-1);
-			newContent.append("</a>");
-		}else if(words.length > 2){
-			int randomValue = getRandomValue(MIN_WORDS_COUNT, MAX_WORDS_COUNT);
-			int startStringIndex = getRandomValue(0, words.length-randomValue);
-			newContent = new StringBuilder();
-			for(int i = 0; i < words.length; i++)
-			{
-				if(startStringIndex == i){
-					newContent.append("<a href=\""+link+"\">").append(words[i]).append(" ");
-					continue;
-				}else if((startStringIndex + randomValue-1) == i){
-					newContent.append(words[i]).append("</a>").append(" ");
-					continue;
-				}
-				newContent.append(words[i]).append(" ");
-			}
-			if(newContent.length() > 0){
-				newContent.setLength(newContent.length()-1);
-			}
-		}
-		snippet.setContent(newContent.toString());
-	}
-
 	private void addLinkFromFolderToSnippetContent(Snippet snippet, String link){
 		StringBuffer newContent = new StringBuffer(snippet.getContent());
 		//find random
@@ -586,11 +577,11 @@ public class SnippetExtractor {
 			}
 		}
 	}
-	
+
 	public ArrayList<Snippet> extractSnippetsFromPageContent(ProxyConnector proxyConnector) throws MalformedURLException, IOException, XPathExpressionException, ParseException{
 		return extractSnippetsFromPageContent(task.getCurrentTask(), proxyConnector);
 	}
-	
+
 	public ArrayList<Snippet> extractSnippetsFromPageContent(SnippetTask snippetTask) throws MalformedURLException, IOException, XPathExpressionException, ParseException{
 		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
 		try{
@@ -602,13 +593,13 @@ public class SnippetExtractor {
 			}
 		}
 	}
-	
+
 	public ArrayList<Snippet> extractSnippetsFromPageContent(SnippetTask snippetTask, ProxyConnector proxyConnector) throws MalformedURLException, IOException, XPathExpressionException, ParseException{
-	
+
 		ArrayList<Snippet> snippets = new ArrayList<Snippet>();
-		
+
 		log.debug(String.format("Using %s for getting snippets for key '%s'", snippetTask.getHost(), snippetTask.getKeyWords()));
-		
+
 		Document page = loadPageContent(snippetTask,proxyConnector);
 
 		Elements titles = null;
@@ -647,13 +638,13 @@ public class SnippetExtractor {
 		snippetTask.appendSnipResult(snippets);
 		return snippets;
 	}
-	
+
 	public String extractResultCount() throws MalformedURLException, IOException, XPathExpressionException, ParseException{
-		
+
 		SnippetTask curTask =  this.task.getCurrentTask();
-		
+
 		log.debug(String.format("Using %s for getting result count for key '%s'", curTask.getHost(), curTask.getKeyWords()));
-		
+
 		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();
 		Document page = null;
 		try{
@@ -684,12 +675,16 @@ public class SnippetExtractor {
 		return task.getCurrentTask();
 	}
 
-	public SnippetTaskWrapper extractSnippetsWithInsertedLinks()
+	public SnippetTaskWrapper extractSnippetsWithInsertedLinks(){
+		return extractSnippetsWithInsertedLinks(true);
+	}
+	
+	public SnippetTaskWrapper extractSnippetsWithInsertedLinks(boolean isAddLinks)
 	{
 		synchronized (this)
 		{
 			try {
-				insertLinksToSnippets(task);
+				insertLinksToSnippets(task, isAddLinks);
 				return task;
 			}
 			catch (Exception e) {

@@ -33,6 +33,7 @@ import org.jsoup.select.Elements;
 import com.fdt.emonsite.scrapper.task.Constants;
 import com.fdt.emonsite.scrapper.task.NewsTask;
 import com.fdt.emonsite.scrapper.task.Snippet;
+import com.fdt.utils.Utils;
 import com.sun.org.apache.bcel.internal.generic.ACONST_NULL;
 
 /**
@@ -409,7 +410,7 @@ public class PostbitNewsPoster {
 			//add link to snipper
 			if(snippetLinked < linkCount){
 				//add snippet link
-				addLinkToSnippetContent(snippets.get(i), linkList.get(rnd.nextInt(linkList.size())));
+				Utils.addLinkToSnippetContent(snippets.get(i), linkList.get(rnd.nextInt(linkList.size())), MIN_WORDS_COUNT, MAX_WORDS_COUNT);
 				snippetLinked++;
 			}
 			snippetsContent.append(snippets.get(i).toString());
@@ -565,41 +566,6 @@ public class PostbitNewsPoster {
 				try{is.close();}catch(Throwable e){}
 			}
 		}
-	}
-
-	private void addLinkToSnippetContent(Snippet snippet, String link){
-		StringBuilder newContent = new StringBuilder(snippet.getContent());
-		//find random
-		String[] words = snippet.getContent().split(" ");
-		//all snippet will be as link
-		if(words.length == 1 || words.length == 2){
-			//insert link here
-			newContent = new StringBuilder();
-			newContent.append("<a href=\""+link+"\">");
-			for(int i = 0; i < words.length; i++){
-				newContent.append(words[i]).append(" ");
-			}
-			newContent.setLength(newContent.length()-1);
-			newContent.append("</a>");
-		}else if(words.length > 2){
-			int randomValue = getRandomValue(MIN_WORDS_COUNT, MAX_WORDS_COUNT);
-			int startStringIndex = getRandomValue(0, words.length-randomValue);
-			newContent = new StringBuilder();
-			for(int i = 0; i < words.length; i++){
-				if(startStringIndex == i){
-					newContent.append("<a href=\""+link+"\">").append(words[i]).append(" ");
-					continue;
-				}else if((startStringIndex + randomValue-1) == i){
-					newContent.append(words[i]).append("</a>").append(" ");
-					continue;
-				}
-				newContent.append(words[i]).append(" ");
-			}
-			if(newContent.length() > 0){
-				newContent.setLength(newContent.length()-1);
-			}
-		}
-		snippet.setContent(newContent.toString());
 	}
 
 	private Integer getRandomValue(Integer minValue, Integer maxValue){

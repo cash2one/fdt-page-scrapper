@@ -180,13 +180,18 @@ public class AccountFactory
 			{
 				if("/app/cms/notavailable".equals(newLocation))
 				{
-					throw new Exception(String.format("This website %s is not available right now. Account[%s] Proxy[%s]", account.getSite(), account.getLogin(), proxy.toString())); 
+					throw new LoginBannedException(String.format("This website %s is not available right now. Account[%s] Proxy[%s]", account.getSite(), account.getLogin(), proxy.toString())); 
 				}
 				newLocation = executerequestToGetCookies(newLocation, "GET", proxy, null, account);
 			}
 
 			return true;
-		} catch (Exception e) {
+		} catch (LoginBannedException e) {
+			account.setLoginErr(false);
+			log.error("Account is banned.",e);
+			return false;
+		}catch (Exception e) {
+			account.setLoginErr(true);
 			log.error("Error during login/getting cookies for account",e);
 			return false;
 		}finally{

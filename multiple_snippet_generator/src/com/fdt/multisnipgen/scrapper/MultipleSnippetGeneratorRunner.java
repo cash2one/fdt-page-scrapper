@@ -74,7 +74,7 @@ public class MultipleSnippetGeneratorRunner{
 
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 500L;
 
-	private final File PROCESS_FOLDER = new File("error");
+	private final File FOLDER_4_LOADED_LINK_FILES = new File("error");
 
 	Random rnd = new Random();
 
@@ -298,23 +298,25 @@ public class MultipleSnippetGeneratorRunner{
 	private File getLinkFile(){
 		File linkFile = null;
 
-		linkFile = getLinkFile(PROCESS_FOLDER);
+		linkFile = getLinkFile(FOLDER_4_LOADED_LINK_FILES);
 		
 		//if link files is empty - end process execution
 		while(linkFile == null)
 		{
-			File[] processedFiles = PROCESS_FOLDER.listFiles();
+			File[] processedFiles = pathToLinkFolder.listFiles();
 			if(processedFiles == null || processedFiles.length == 0){
 				log.warn("Link files are absent. Program will be finished");
 				break;
 			}
 			waiting(RUNNER_QUEUE_EMPTY_WAIT_TIME);
-			linkFile = getLinkFile(PROCESS_FOLDER);
+			linkFile = getLinkFile(FOLDER_4_LOADED_LINK_FILES);
 		}
 		return linkFile;
 	}
 
-	public synchronized File getLinkFile(File processFolder){
+	
+	//берём случайны файл с линками из папки pathToLinkFolder, читаем из него линки, перемещаем файл в папку folder4ProcessedLinkFiles
+	public synchronized File getLinkFile(File folder4ProcessedLinkFiles){
 		File linkFile = null;
 
 		File[] files = pathToLinkFolder.listFiles();
@@ -324,8 +326,8 @@ public class MultipleSnippetGeneratorRunner{
 		//get random file and load link list for it
 		linkFile = files[rnd.nextInt(files.length)];
 		try {
-			FileUtils.moveFile(linkFile, new File(processFolder,linkFile.getName()));
-			linkFile = new File(processFolder, linkFile.getName());
+			FileUtils.moveFile(linkFile, new File(folder4ProcessedLinkFiles,linkFile.getName()));
+			linkFile = new File(folder4ProcessedLinkFiles, linkFile.getName());
 			log.debug(String.format("Moved file %s", linkFile.getName()));
 		} catch (IOException e) {
 			log.error(String.format("Error during moving file %s", linkFile.getName()),e);

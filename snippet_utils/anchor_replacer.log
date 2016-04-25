@@ -9149,3 +9149,41 @@ java.lang.IllegalArgumentException: Не указан путь к папке с файлами
 2015-12-01 09:48:52,952- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Ghostbusters II (1989)'; Full line: '<a href="http://ataus.in/Watch-Ghostbusters-II-1989-Online-Full-Movie-HD">Watch Ghostbusters II (1989) Online Full Movie (HD)</a><br />'
 2015-12-01 09:48:52,952- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'The Sisterhood of Night (2014)'; Full line: '<a href="http://ataus.in/Watch-The-Sisterhood-of-Night-2014-Online-Full-Movie-HD">Watch The Sisterhood of Night (2014) Online Full Movie (HD)</a><br />'
 2015-12-01 09:48:52,953- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Midnight in the Garden of Good and Evil (1997)'; Full line: '<a href="http://ataus.in/Watch-Midnight-in-the-Garden-of-Good-and-Evil-1997-Online-Full-Movie-HD">Watch Midnight in the Garden of Good and Evil (1997) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:47,942- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Zardoz (1974)'; Full line: '<a href="http://afaus.in/Watch-Zardoz-1974-Online-Full-Movie-HD">Watch Zardoz (1974) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:49,716- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Triangle (2009)'; Full line: '<a href="http://ahaus.in/Watch-Triangle-2009-Online-Full-Movie-HD">Watch Triangle (2009) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:51,013- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Ben-Hur (1959)'; Full line: '<a href="http://ahaus.in/Watch-Ben-Hur-1959-Online-Full-Movie-HD">Watch Ben-Hur (1959) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:51,487- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Watchmen (2009)'; Full line: '<a href="http://aqaus.in/Watch-Watchmen-2009-Online-Full-Movie-HD">Watch Watchmen (2009) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:52,184- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'The Grudge 2 (2006)'; Full line: '<a href="http://www.dailymotion.com/video/x33s75e_watch-the-grudge-2-2006-online-full-movie-hd-nfzk_people">Watch The Grudge 2 (2006) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:53,862- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Anything Else (2003)'; Full line: '<a href="http://www.dailymotion.com/video/x34zeij_watch-anything-else-2003-online-full-movie-hd-jmtm_lifestyle">Watch Anything Else (2003) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:54,249- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'He Got Game (1998)'; Full line: '<a href="http://apaus.in/Watch-He-Got-Game-1998-Online-Full-Movie-HD">Watch He Got Game (1998) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:54,486- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Every Which Way But Loose (1978)'; Full line: '<a href="http://aqaus.in/Watch-Every-Which-Way-But-Loose-1978-Online-Full-Movie-HD">Watch Every Which Way But Loose (1978) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:54,715- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Post Grad (2009)'; Full line: '<a href="http://asaus.in/Watch-Post-Grad-2009-Online-Full-Movie-HD">Watch Post Grad (2009) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:54,894- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Angus, Thongs and Perfect Snogging (2008)'; Full line: '<a href="http://afaus.in/Watch-Angus-Thongs-and-Perfect-Snogging-2008-Online-Full-Movie-HD">Watch Angus, Thongs and Perfect Snogging (2008) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:56,603- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'The Box (2009)'; Full line: '<a href="http://afaus.in/Watch-The-Box-2009-Online-Full-Movie-HD">Watch The Box (2009) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:57,254- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'American Hustle (2013)'; Full line: '<a href="http://apaus.in/Watch-American-Hustle-2013-Online-Full-Movie-HD">Watch American Hustle (2013) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:57,490- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Lethal Weapon 4 (1998)'; Full line: '<a href="http://awaus.in/Watch-Lethal-Weapon-4-1998-Online-Full-Movie-HD">Watch Lethal Weapon 4 (1998) Online Full Movie (HD)</a><br />'
+2016-04-01 12:29:57,784- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Torque (2004)'; Full line: '<a href="http://agaus.in/Watch-Torque-2004-Online-Full-Movie-HD">Watch Torque (2004) Online Full Movie (HD)</a><br />'
+2016-04-01 12:30:05,735- WARN(AnchorTitleReplacer.java:352)-!!! TITLE WILL NOT BE CHANGED !!! Key: 'Bobby (2006)'; Full line: '<a href="http://agaus.in/Watch-Bobby-2006-Online-Full-Movie-HD">Watch Bobby (2006) Online Full Movie (HD)</a><br />'
+2016-04-04 15:26:11,372-ERROR(AnchorTitleReplacer.java:134)-Error occured during replacer executor: 
+java.io.FileNotFoundException: baza.txt (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.fdt.snippetutils.AnchorTitleReplacer.readFile(AnchorTitleReplacer.java:462)
+	at com.fdt.snippetutils.AnchorTitleReplacer.execute(AnchorTitleReplacer.java:191)
+	at com.fdt.snippetutils.AnchorTitleReplacer.main(AnchorTitleReplacer.java:130)
+2016-04-04 15:27:12,580-ERROR(AnchorTitleReplacer.java:134)-Error occured during replacer executor: 
+java.util.IllegalFormatConversionException: f != java.lang.String
+	at java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4302)
+	at java.util.Formatter$FormatSpecifier.printFloat(Formatter.java:2806)
+	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2753)
+	at java.util.Formatter.format(Formatter.java:2520)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at com.fdt.snippetutils.AnchorTitleReplacer.readBaseKeyMappingFile(AnchorTitleReplacer.java:262)
+	at com.fdt.snippetutils.AnchorTitleReplacer.execute(AnchorTitleReplacer.java:191)
+	at com.fdt.snippetutils.AnchorTitleReplacer.main(AnchorTitleReplacer.java:130)
+2016-04-04 15:28:39,443-ERROR(AnchorTitleReplacer.java:262)-File Milk and Honey for key books1\book_10.txt does not exist
+2016-04-04 15:32:30,408-ERROR(AnchorTitleReplacer.java:262)-File Milk and Honey for key books1\book_10.txt does not exist
+2016-04-04 16:06:04,368- WARN(AnchorTitleReplacer.java:535)-Error occured during saving collection string to file 14597787643541903649775

@@ -16,6 +16,8 @@ public class Account {
 	private HashMap<String,String> cookie = new HashMap<String, String>();
 	private boolean logged = false;
 	
+	private boolean loginErr = false;
+	
 	private AccountFactory accountFactory;
 
 	public Account(String email, String login, String pass, String site, String setPass, AccountFactory accountFactory) {
@@ -118,6 +120,13 @@ public class Account {
 	public String getSiteWOHttp() {
 		return siteWOHttp;
 	}
-	
+
+	public boolean isLoginErr() {
+		return loginErr;
+	}
+
+	public void setLoginErr(boolean loginErr) {
+		this.loginErr = loginErr;
+	}
 	
 }

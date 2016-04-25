@@ -20,5 +20,6 @@
 	<classpathentry kind="var" path="FDT_LIBS/velocity-1.7.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/json-rpc-1.0.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/json-simple.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/snippet_extractor_lib.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

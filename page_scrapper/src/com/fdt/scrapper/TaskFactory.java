@@ -32,7 +32,7 @@ public class TaskFactory {
 	private AtomicInteger errorCount = new AtomicInteger(0);
 	private int totalCount;
 
-	private static final String pattern = "(http[s]?://)?(www[\\d]{0,1}\\.)?([^/]*)/(.*)";
+	private static final String pattern = "(http[s]?://)?(www[\\d]{0,1}\\.)?([^/]*)(/(.*))?";
 	private static final String ipPattern="[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}\\.[\\d]{0,3}";
 
 	private ICallback onLoadTaskListener = null;

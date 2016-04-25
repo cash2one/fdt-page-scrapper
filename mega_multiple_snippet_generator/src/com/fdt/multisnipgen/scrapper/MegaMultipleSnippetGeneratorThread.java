@@ -29,34 +29,43 @@ public class MegaMultipleSnippetGeneratorThread implements Callable<String> {
 	private SnippetTaskWrapper snippetTask = null;
 	private ProxyFactory proxyFactory = null;
 	private TaskFactory taskFactory = null;
+
+	private boolean isAddLinks = true;
+	private boolean addLinkFromFolder = false;
 	private ArrayList<String> linkList = null;
 	private File linkFile = null;
 	private File pathToLinkFolder = null;
-	private boolean addLinkFromFolder = false;
+	
+
+	//словарь в котором содержится <ключ> и в соответствие ему ставится файл, в котором содержится обрабатываемый ключ
 	private Map<String, List<File>> keyWordFileMapping;
-	private File outputPathFile;
+	private File successPathFile;
 
 	public MegaMultipleSnippetGeneratorThread(
 			SnippetTaskWrapper snippetTask, 
 			ProxyFactory proxyFactory, 
 			TaskFactory taskFactory,
+			boolean isAddLinks,
+			boolean addLinkFromFolder,
 			ArrayList<String> linkList, 
-			boolean addLinkFromFolder, 
 			File linkFile, 
 			File pathToLinkFolder, 
 			Map<String, List<File>> keyWordFileMapping,
-			File outputPathFile) {
+			File successPathFile) 
+	{
 		super();
 
 		this.snippetTask = snippetTask;
 		this.proxyFactory = proxyFactory;
 		this.taskFactory = taskFactory;
+		
+		this.isAddLinks = isAddLinks;
 		this.linkList = linkList;
 		this.addLinkFromFolder = addLinkFromFolder;
 		this.linkFile = linkFile;
 		this.pathToLinkFolder = pathToLinkFolder;
 		this.keyWordFileMapping = keyWordFileMapping;
-		this.outputPathFile = outputPathFile;
+		this.successPathFile = successPathFile;
 		log.debug(toString());
 	}
 
@@ -68,10 +77,12 @@ public class MegaMultipleSnippetGeneratorThread implements Callable<String> {
 			boolean errorExist = false;
 			String generatedContent = null;
 
+			log.warn(String.format("Starting processing key: %s", snippetTask.getCurrentTask().getKeyWordsOrig()));
+
 			try {
 				SnippetExtractor snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList);
 				snippetExtractor.setAddLinkFromFolder(addLinkFromFolder);
-				generatedContent = snippetExtractor.extractSnippetsWithInsertedLinks().getCurrentTask().getResult();
+				generatedContent = snippetExtractor.extractSnippetsWithInsertedLinks(isAddLinks).getCurrentTask().getResult();
 			}
 			catch (Throwable e) {
 				errorExist = true;
@@ -79,46 +90,76 @@ public class MegaMultipleSnippetGeneratorThread implements Callable<String> {
 				log.error("Error occured during processing key: " + snippetTask.getCurrentTask().getKeyWords());
 			}
 
-			if(!errorExist){
+			List<File> processedFileList  = null;
+
+			if(!errorExist && generatedContent != null && !"".equals(generatedContent.trim())){
 				//check task for reprocessing
-				if(generatedContent != null && !"".equals(generatedContent.trim())){
-					taskFactory.putTaskInSuccessQueue(snippetTask);
-					File forDelete  = null;
-					
+
+				taskFactory.putTaskInSuccessQueue(snippetTask);
+				try{
+					MegaMultipleSnippetGeneratorRunner.readWriteLock.lock();
+					//получаем список обработанных файлов
+					processedFileList = keyWordFileMapping.remove(snippetTask.getCurrentTask().getKeyWordsOrig());
+				}finally{
+					MegaMultipleSnippetGeneratorRunner.readWriteLock.unlock();
+				}
+
+				//сохранем результаты в файлы в папку output/success
+				for(File processedFile : processedFileList){
+					File outputFile = new File(successPathFile, processedFile.getName());
+
+					//создаём файл с результатами в output папке
+					if(outputFile.exists()){
+						log.warn(String.format("Another files %s exist in output(success) folder. Another file will be deleted", processedFile.getName()));
+						outputFile.delete();
+					}
+					Utils.appendStringToFile(generatedContent, outputFile);
+
+					//удаляем обработанный файл с кеем
+					if(processedFile.exists()){
+						processedFile.delete();
+					}
+					log.warn(String.format("File %s was processed", processedFile.getName()));
+				}
+
+				//если линки успешно добавлены из отдельного файла с линками, то удаляем этот файл
+				if(addLinkFromFolder && linkFile != null && linkFile.exists()){
+					linkFile.delete();
+				}
+
+			}else{
+
+				//возвращаем файл линка обратно в папку, откуда его взяли
+				if(addLinkFromFolder && linkFile != null && linkFile.exists()){
+					FileUtils.moveFile(linkFile, new File(pathToLinkFolder,linkFile.getName()));
+				}
+
+				//пытаемся вернуть таск обратно на повторную обработку
+				if(!taskFactory.reprocessingTask(snippetTask)){
+
+					//
 					try{
 						MegaMultipleSnippetGeneratorRunner.readWriteLock.lock();
-						forDelete = keyWordFileMapping.get(snippetTask.getCurrentTask().getKeyWordsOrig()).remove(0);
+						processedFileList = keyWordFileMapping.get(snippetTask.getCurrentTask().getKeyWordsOrig());
 					}finally{
 						MegaMultipleSnippetGeneratorRunner.readWriteLock.unlock();
 					}
 
-					File outputFile = new File(outputPathFile, forDelete.getName());
+					for(File processedFile : processedFileList){
+						//пытаемся переместить файл из папки processing в папку error
+						File destFile = new File("error/" + processedFile.getName());
+						if(destFile.exists()){
+							destFile.delete();
+						}
 
-					if(outputFile.exists()){
-						outputFile.delete();
+						//перемещаем файл в папку error если было совершено заданное количество попыток его обработки 
+						log.warn(String.format("Moving file %s to error folder", destFile.getName()));
+						FileUtils.moveFile(processedFile, destFile);
+						if(processedFile.exists()){
+							processedFile.delete();
+						}
 					}
-
-					Utils.appendStringToFile(generatedContent, outputFile);
-
-					if(forDelete.exists()){
-						forDelete.delete();
-					}
-
-					if(addLinkFromFolder && linkFile != null && linkFile.exists()){
-						linkFile.delete();
-					}
-				}else{
-					//move file to input folder
-					if(addLinkFromFolder && linkFile != null && linkFile.exists()){
-						FileUtils.moveFile(linkFile, new File(pathToLinkFolder,linkFile.getName()));
-					}
-					taskFactory.reprocessingTask(snippetTask);
 				}
-			}else{
-				if(addLinkFromFolder && linkFile != null && linkFile.exists()){
-					FileUtils.moveFile(linkFile, new File(pathToLinkFolder,linkFile.getName()));
-				}
-				taskFactory.reprocessingTask(snippetTask);
 			}
 
 			return generatedContent;

@@ -13,13 +13,60 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import org.apache.log4j.Logger;
+
+import com.fdt.scrapper.task.Snippet;
 
 public class Utils {
 
 	private static final Logger log = Logger.getLogger(Utils.class);
+	
+	private static final Random rnd = new Random();
 
+	public static void addLinkToSnippetContent(Snippet snippet, String link, int MIN_WORDS_COUNT, int MAX_WORDS_COUNT){
+		StringBuilder newContent = new StringBuilder(snippet.getContent());
+		//find random
+		String[] words = snippet.getContent().split(" ");
+		//all snippet will be as link
+		if(words.length == 1 || words.length == 2){
+			//insert link here
+			newContent = new StringBuilder();
+			newContent.append("<a href=\""+link+"\">");
+
+			for(int i = 0; i < words.length; i++){
+				newContent.append(words[i]).append(" ");
+			}
+			newContent.setLength(newContent.length()-1);
+			newContent.append("</a>");
+		}else if(words.length > 2){
+			int randomValue = getRandomValue(MIN_WORDS_COUNT, MAX_WORDS_COUNT);
+			int startStringIndex = getRandomValue(0, words.length-randomValue);
+			newContent = new StringBuilder();
+			for(int i = 0; i < words.length; i++)
+			{
+				if(startStringIndex == i){
+					newContent.append("<a href=\""+link+"\">").append(words[i]).append(" ");
+					continue;
+				}else if((startStringIndex + randomValue-1) == i){
+					newContent.append(words[i]).append("</a>").append(" ");
+					continue;
+				}
+				newContent.append(words[i]).append(" ");
+			}
+			if(newContent.length() > 0){
+				newContent.setLength(newContent.length()-1);
+			}
+		}
+		snippet.setContent(newContent.toString());
+	}
+	
+	public static Integer getRandomValue(Integer minValue, Integer maxValue){
+		rnd.nextInt();
+		return  minValue + rnd.nextInt(maxValue - minValue+1);
+	}
+	
 	public static synchronized List<String> loadFileAsStrList(String cfgFilePath)
 	{
 		return loadFileAsStrList(new File(cfgFilePath));
@@ -72,9 +119,15 @@ public class Utils {
 	
 	public static synchronized String loadFileAsString(File inputFile)
 	{
+		return loadFileAsString(inputFile, new ArrayList<Integer>());
+	}
+	
+	public static synchronized String loadFileAsString(File inputFile, List<Integer> skipStrNum)
+	{
 		StringBuffer output  = new StringBuffer();
 		
 		BufferedReader br = null;
+		int strIndex = 1;
 		
 		try {
 			br = new BufferedReader(new InputStreamReader( new FileInputStream(inputFile), "UTF8" ));
@@ -83,9 +136,12 @@ public class Utils {
 
 			while(line != null)
 			{
-				output.append(line).append(Constants.LINE_FEED);
-
+				if(!skipStrNum.contains(strIndex)){
+					output.append(line).append(Constants.LINE_FEED);
+				}
+				
 				line = br.readLine();
+				strIndex++;
 			}
 		} catch (FileNotFoundException e) {
 			log.error("Reading file: FileNotFoundException exception occured",e);
