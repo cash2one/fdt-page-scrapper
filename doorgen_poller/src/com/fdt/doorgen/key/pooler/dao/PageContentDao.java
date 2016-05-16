@@ -177,7 +177,7 @@ public class PageContentDao extends DaoCommon {
 	}
 
 	/**
-	 * Получаем количество новостей, которые будут запощены в течении суток со дня запуска
+	 * РџРѕР»СѓС‡Р°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ РЅРѕРІРѕСЃС‚РµР№, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ Р·Р°РїРѕС‰РµРЅС‹ РІ С‚РµС‡РµРЅРёРё СЃСѓС‚РѕРє СЃРѕ РґРЅСЏ Р·Р°РїСѓСЃРєР°
 	 * @return
 	 */
 	public ArrayList<String> getPagesCntPostedInDay()
@@ -228,7 +228,7 @@ public class PageContentDao extends DaoCommon {
 	}
 
 	/**
-	 * Получаем список новостей, которые надо будет обновить в течении суток
+	 * РџРѕР»СѓС‡Р°РµРј СЃРїРёСЃРѕРє РЅРѕРІРѕСЃС‚РµР№, РєРѕС‚РѕСЂС‹Рµ РЅР°РґРѕ Р±СѓРґРµС‚ РѕР±РЅРѕРІРёС‚СЊ РІ С‚РµС‡РµРЅРёРё СЃСѓС‚РѕРє
 	 * @return
 	 */
 	public ArrayList<String> getPages4Update(int dayAfterPost)
@@ -409,7 +409,7 @@ public class PageContentDao extends DaoCommon {
 	}
 
 	/**
-	 * Получаем последний id для page_content
+	 * РџРѕР»СѓС‡Р°РµРј РїРѕСЃР»РµРґРЅРёР№ id РґР»СЏ page_content
 	 * @return
 	 */
 	public int getLastPageContentId(int keyId)
@@ -462,7 +462,7 @@ public class PageContentDao extends DaoCommon {
 	}
 
 	/**
-	 * Получаем максимальный индеск для content_detail
+	 * РџРѕР»СѓС‡Р°РµРј РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ РёРЅРґРµСЃРє РґР»СЏ content_detail
 	 * @return
 	 * @throws SQLException 
 	 */

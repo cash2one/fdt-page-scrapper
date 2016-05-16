@@ -42,5 +42,8 @@
 	<classpathentry kind="var" path="FDT_LIBS/logback-core-1.0.0.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/xuggle-xuggler-5.4.jar"/>
 	<classpathentry kind="var" path="FDT_LIBS/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/mp3spi1.9.5.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/jl1.0.1.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/tritonus_share.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

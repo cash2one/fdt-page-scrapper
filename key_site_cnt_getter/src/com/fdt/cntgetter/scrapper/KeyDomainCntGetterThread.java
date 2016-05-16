@@ -34,7 +34,7 @@ public class KeyDomainCntGetterThread implements Callable<String> {
 		this.taskFactory = taskFactory;
 		this.isCountDomain = isCountDomain;
 		if(isCountDomain){
-			snippetTask.getCurrentTask().setKeyWords("site:" + snippetTask.getCurrentTask().getKeyWords());
+			snippetTask.getCurrentTask().setKeyWords("site:" + snippetTask.getCurrentTask().getKeyWordsOrig());
 			snippetTask.getCurrentTask().setUseOrigKeywords(true);
 		}
 	}

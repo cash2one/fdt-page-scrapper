@@ -8,15 +8,22 @@ import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
+import javax.sound.sampled.AudioFileFormat;
+import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.UnsupportedAudioFileException;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.tritonus.share.sampled.file.TAudioFileFormat;
 
 import com.xuggle.mediatool.IMediaWriter;
 import com.xuggle.mediatool.ToolFactory;
@@ -40,7 +47,7 @@ public class VideoCreator {
 	private final static int audioStreamIndex = 1;
 	private final static int audioStreamId = 0;
 	private final static int channelCount = 2;
-	
+
 	//public final static int successBitrate = 262144;
 	public final static int successBitrate = 886432;
 
@@ -53,22 +60,22 @@ public class VideoCreator {
 
 		File image;
 		File video;
-		
+
 		if(args.length < 12){
 			System.out.println("НЕ хватает аргументов для запуска. Используйте слудующий порядок аргументов:\r\n" + 
-		"<имя_видое_файла>\r\n" +
-		"<путь_к_рандомным_файлам>\r\n" +
-		"<файл для превью>\r\n" +
-		"<использовать_ли_аудио_true/false>\r\n" +
-		"<аудио_файл>\r\n" +
-		"<минимальная_продолжительность_в_секундах>\r\n" +
-		"<максимальная_продолжительность_в_секундах>\r\n" +
-		"<количество_кадров_в_секунду>\r\n" +
-		"<использовать_ли_превью_true/false>\r\n" +
-		"<минимальное_количество_перелкючений_картинки>\r\n" +
-		"<максимальное_количество_перелкючений_картинки>\r\n" +
-		"<брать_картинки_по_порядковым_номерам>\r\n"
-		);
+					"<имя_видое_файла>\r\n" +
+					"<путь_к_рандомным_файлам>\r\n" +
+					"<файл для превью>\r\n" +
+					"<использовать_ли_аудио_true/false>\r\n" +
+					"<аудио_файл>\r\n" +
+					"<минимальная_продолжительность_в_секундах>\r\n" +
+					"<максимальная_продолжительность_в_секундах>\r\n" +
+					"<количество_кадров_в_секунду>\r\n" +
+					"<использовать_ли_превью_true/false>\r\n" +
+					"<минимальное_количество_перелкючений_картинки>\r\n" +
+					"<максимальное_количество_перелкючений_картинки>\r\n" +
+					"<брать_картинки_по_порядковым_номерам>\r\n"
+					);
 			return;
 		}
 
@@ -86,12 +93,16 @@ public class VideoCreator {
 				}
 			}*/
 			Random rnd = new Random();
-			
+
 			String videoFileNm = args[0];
 			File[] rndListFiles = getFileList(args[1]);
 			File previewFile = new File(args[2]);
 			boolean useAudio = Boolean.valueOf(args[3]);
-			File audioFile = new File(args[4]);
+			String[] audioFilesStrArr = args[4].split(";");
+			File[] audioFiles = new File[audioFilesStrArr.length];
+			for(int i = 0; i < audioFilesStrArr.length; i++){
+				audioFiles[i] = new File(audioFilesStrArr[i]);
+			}
 			int minDur = Integer.valueOf(args[5]);
 			int maxDur = Integer.valueOf(args[6]);
 			int framePerSec = Integer.valueOf(args[7]);
@@ -99,10 +110,10 @@ public class VideoCreator {
 			int minIntrvl = Integer.valueOf(args[9]);
 			int maxIntrvl = Integer.valueOf(args[10]);
 			boolean useFileOrder = Boolean.valueOf(args[11]);
-			
+
 			int intrvlRnd = minIntrvl + rnd.nextInt(maxIntrvl - minIntrvl + 1);
-			
-			VideoCreator.makeVideo(videoFileNm,rndListFiles, previewFile, useAudio, audioFile, minDur, maxDur, framePerSec, usePreview, intrvlRnd, useFileOrder);
+
+			VideoCreator.makeVideo(videoFileNm,rndListFiles, previewFile, useAudio, audioFiles, minDur, maxDur, framePerSec, usePreview, intrvlRnd, useFileOrder);
 			//VideoCreator.makeVideo("test_video/h264_test.mov", new File[]{new File("images_rand/zala.jpg"), new File("images_rand/zala1.jpg")}, new File("images_rand/zala1.jpg"), false, new File("08.wav"), 150, 180, true);
 			//VideoCreator.mergeVideoAndAudio("test_video_wa.mp4", "08.wav", "test_video.mp4");
 			/*MediaLocator ivml = JpegImagesToMovie.createMediaLocator("test_video_wa.mov");
@@ -118,12 +129,12 @@ public class VideoCreator {
 			e.printStackTrace();
 		}
 	}
-	
+
 	private static class FileOrder 
 	{
 		private File file;
 		private int order;
-		
+
 		public FileOrder(File file, int order) {
 			super();
 			this.file = file;
@@ -136,12 +147,12 @@ public class VideoCreator {
 			return order;
 		}
 	}
-	
+
 	private static File[] getFileList(String dir){
-		
+
 		File[] files;
 		File dirFile = new File(dir);
-		
+
 		if(dirFile.exists() && dirFile.isDirectory()){
 			files = dirFile.listFiles();
 		}else{
@@ -151,16 +162,16 @@ public class VideoCreator {
 				files[i] = new File(filesStr[i]);
 			}
 		}
-		
+
 		File[] outputList;
 		//return new File(dir).listFiles();
-		
+
 		ArrayList<FileOrder> filesList = new ArrayList<FileOrder>(files.length);
-		
+
 		for(int i = 0; i < files.length; i++){
 			filesList.add(new FileOrder(files[i], extractOrderNumber(files[i].getName()))) ;
 		}
-		
+
 		Collections.sort(filesList, new Comparator<FileOrder>() {
 
 			@Override
@@ -169,26 +180,26 @@ public class VideoCreator {
 				return arg0.getOrder() - arg1.getOrder();
 			}
 		});
-		
+
 		outputList = new File[filesList.size()];
-		
+
 		for(int i = 0; i < filesList.size(); i++){
 			outputList[i] = filesList.get(i).getFile();
 		}
-		
+
 		return outputList;
 	}
-	
+
 	private static int extractOrderNumber(String fileName) {
 		Pattern ptrn =  Pattern.compile("(.*?)(\\d+)\\.(png|jpg)");
 		Matcher mtchr = ptrn.matcher(fileName);
-		
+
 		int result = -1;
-		
+
 		if(mtchr.matches()){
 			result = Integer.valueOf(mtchr.group(2));
 		}
-		
+
 		return result;
 	}
 
@@ -233,14 +244,14 @@ public class VideoCreator {
 	 * @return
 	 * @throws IOException
 	 */
-	public static Integer[] makeVideo(String filePath, File[] imageFiles, File previewFile, boolean addAudio, File audioFile, int minDur, int maxDur, boolean isUsePreview) throws IOException{
+	public static Integer[] makeVideo(String filePath, File[] imageFiles, File previewFile, boolean addAudio, File[] audioFiles, int minDur, int maxDur, boolean isUsePreview) throws IOException{
 		//int framePerSec = calculateFrameRate(imageFile);
 		int framePerSec = 25;
-		return makeVideo(filePath, imageFiles, previewFile, addAudio, audioFile, minDur, maxDur, framePerSec, isUsePreview, 1);
+		return makeVideo(filePath, imageFiles, previewFile, addAudio, audioFiles, minDur, maxDur, framePerSec, isUsePreview, 1);
 	}
-	
-	public static Integer[] makeVideo(String filePath, File[] imageFiles, File previewFile, boolean addAudio, File audioFile, int minDur, int maxDur, int framePerSec, boolean isUsePreview, int intrvlCount) throws IOException {
-		return makeVideo(filePath, imageFiles, previewFile, addAudio, audioFile, minDur, maxDur, framePerSec, isUsePreview, intrvlCount, false);
+
+	public static Integer[] makeVideo(String filePath, File[] imageFiles, File previewFile, boolean addAudio, File[] audioFiles, int minDur, int maxDur, int framePerSec, boolean isUsePreview, int intrvlCount) throws IOException {
+		return makeVideo(filePath, imageFiles, previewFile, addAudio, audioFiles, minDur, maxDur, framePerSec, isUsePreview, intrvlCount, false);
 	}
 
 	/**
@@ -248,13 +259,13 @@ public class VideoCreator {
 	 * @param filePath
 	 * @param imageFile
 	 * @param previewFile
-	 * @param audioFile
+	 * @param audioFiles
 	 * @param minDur
 	 * @param maxDur - will be displayed as total value of video;
 	 * @return
 	 * @throws IOException
 	 */
-	public static Integer[] makeVideo(String filePath, File[] imageFiles, File previewFile, boolean addAudio, File audioFile, int minDur, int maxDur, int framePerSec, boolean isUsePreview, int intrvlCount, boolean useFileOrder) throws IOException {
+	public static Integer[] makeVideo(String filePath, File[] imageFiles, File previewFile, boolean addAudio, File[] audioFiles, int minDur, int maxDur, int framePerSec, boolean isUsePreview, int intrvlCount, boolean useFileOrder) throws IOException {
 
 		long startTime = System.currentTimeMillis();
 		IMediaWriter writer = ToolFactory.makeWriter(filePath);
@@ -266,72 +277,14 @@ public class VideoCreator {
 
 		writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, VIDEO_WIDTH, VIDEO_HEIGHT);
 
+		//adding audion files
 		if(addAudio){
-			IContainer containerAudio = IContainer.make();
-
-			if (containerAudio.open(audioFile.getPath(), IContainer.Type.READ, null) < 0)
-				throw new IllegalArgumentException("Cant find " + audioFile.getPath());
-
-			int audioStreamt = 0;
-
-			IStream stream = null;
-			IStreamCoder code = null;
-
-			for(int i=0; i<containerAudio.getNumStreams(); i++){
-				stream = containerAudio.getStream(i);
-				code = stream.getStreamCoder();
-
-				if(code.getCodecType() == ICodec.Type.CODEC_TYPE_AUDIO)
-				{
-					audioStreamt = i;
-					break;
-				}
-
-				stream = null;
-				code = null;
-			}
-			IStreamCoder audioCoder = containerAudio.getStream(audioStreamt).getStreamCoder();
-			audioCoder.open();
-
-			writer.addAudioStream(audioStreamIndex, audioStreamId, audioCoder.getChannels(), audioCoder.getSampleRate());
-
-			IAudioSamples samples = IAudioSamples.make(audioCoder.getSampleRate(), audioCoder.getChannels(),IAudioSamples.Format.FMT_S32);  
-
-			IPacket packetaudio = IPacket.make();
-
-			int bytesDecodedaudio = -1;
-			int offset = 0;
-
-			while(containerAudio.readNextPacket(packetaudio) >= 0){
-				offset = 0;
-				while(offset<packetaudio.getSize())
-				{
-					bytesDecodedaudio = audioCoder.decodeAudio(samples, 
-							packetaudio,
-							offset);
-					if (bytesDecodedaudio < 0)
-						throw new RuntimeException("could not detect audio");
-					offset += bytesDecodedaudio;
-
-					if (samples.isComplete()){
-						writer.encodeAudio(audioStreamIndex, samples);
-					}
-				}
-			}
-
-			packetaudio = null;
-
-			samples.delete();
-			/*audioCoder.release();
-			containerAudio.release();*/
-			audioCoder.close();
-			containerAudio.close();
-			audioCoder = null;
-			containerAudio = null;
+			addAudios(audioFiles, writer);
 		}
 
+
 		int frameOrderIndex = 0;
-		
+
 		//for (int index = 0; index < SECONDS_TO_RUN_FOR * FRAME_RATE; index++) {
 		BufferedImage screen = ImageIO.read(getFrameImage(imageFiles, useFileOrder, frameOrderIndex));
 		BufferedImage bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
@@ -375,12 +328,12 @@ public class VideoCreator {
 				writer.encodeVideo(0, bgrScreen, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
 			}
 		}
-		
+
 
 		if(!isUsePreview){
 			bgrScreenPreview = bgrScreen;
 		}
-		
+
 		for(long i = frameCount-2*framePerSec; i < frameCount; i++){
 			writer.encodeVideo(0, bgrScreenPreview, ((i*1000)/framePerSec), TimeUnit.MILLISECONDS);
 		}
@@ -415,18 +368,174 @@ public class VideoCreator {
 
 		return new Integer[]{frameCount, framePerSec};
 	}
+
+	public static Integer[] makeVideoByOrder(String filePath, File[] imageFiles, File[] audioFiles, int framePerSec) throws IOException, UnsupportedAudioFileException {
+
+		long startTime = System.currentTimeMillis();
+		IMediaWriter writer = ToolFactory.makeWriter(filePath);
+
+		Random rnd = new Random();
+		//framePerSec = 15;
+
+		writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, VIDEO_WIDTH, VIDEO_HEIGHT);
+
+		//adding audion files
+		addAudios(audioFiles, writer);
+
+		//for (int index = 0; index < SECONDS_TO_RUN_FOR * FRAME_RATE; index++) {
+		BufferedImage screen = null;
+		BufferedImage bgrScreen = null;
+		screen = null;
+		
+		long frameCnt = 0;
+		long frameDur = 0;
+		
+		long totalDur = 0;
+
+		for(int i = 0; i < imageFiles.length; i++){
+			//swap images
+			long durationAudio = getAudioFileDurationInSec(audioFiles[i]);
+			
+			frameCnt = durationAudio * framePerSec / 1000;
+			frameDur = 1000/framePerSec;
+			
+			screen = ImageIO.read(imageFiles[i]);
+			bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
+			screen = null;
+			
+			for(int j = 0; j < frameCnt; j++){
+				writer.encodeVideo(0, bgrScreen, totalDur + j*frameDur, TimeUnit.MILLISECONDS);
+			}
+			
+			totalDur += durationAudio;
+		}
+
+		bgrScreen = null;
+
+		try {
+			Thread.sleep(1000L);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		// tell the writer to close and write the trailer if needed
+
+		writer.flush();
+		writer.close();
+		writer = null;
+
+		log.info(String.format("Video Created: %s",filePath));
+		long endTime = System.currentTimeMillis();
+		log.info(String.format("File for %s was generated for %s second(s)", filePath, ((endTime-startTime)/1000)));
+
+		return new Integer[]{(int)totalDur, framePerSec};
+	}
+
+	private static void addAudios(File[] audioFiles, IMediaWriter writer) 
+	{
+
+		IContainer[] containerAudio =  new IContainer[audioFiles.length];
+		IStreamCoder[] audioCoders = new IStreamCoder[audioFiles.length];
+
+		for(int i = 0; i < audioFiles.length; i++){
+
+			int audioStreamt = 0;
+
+			IStream stream = null;
+			IStreamCoder code = null;
+
+			containerAudio[i] = IContainer.make();
+			if (containerAudio[i].open(audioFiles[i].getPath(), IContainer.Type.READ, null) < 0)
+				throw new IllegalArgumentException("Cant find " + audioFiles[i].getPath());
+
+			for(int j=0; i<containerAudio[i].getNumStreams(); j++){
+				stream = containerAudio[j].getStream(j);
+				code = stream.getStreamCoder();
+
+				if(code.getCodecType() == ICodec.Type.CODEC_TYPE_AUDIO)
+				{
+					audioStreamt = j;
+					break;
+				}
+
+				stream = null;
+				code = null;
+			}
+
+			audioCoders[i] = containerAudio[i].getStream(audioStreamt).getStreamCoder();
+			audioCoders[i].open(null,null);
+		}
+
+
+		writer.addAudioStream(audioStreamIndex, audioStreamId, audioCoders[0].getChannels(), audioCoders[0].getSampleRate());
+
+		for(int i = 0; i < audioFiles.length; i++){
+
+			IAudioSamples samples = IAudioSamples.make(audioCoders[i].getSampleRate(), audioCoders[i].getChannels(),IAudioSamples.Format.FMT_S32);  
+			IPacket packetaudio = IPacket.make();
+
+			int bytesDecodedaudio = -1;
+			int offset = 0;
+
+			while(containerAudio[i].readNextPacket(packetaudio) >= 0){
+				offset = 0;
+				while(offset<packetaudio.getSize())
+				{
+					bytesDecodedaudio = audioCoders[i].decodeAudio(samples, 
+							packetaudio,
+							offset);
+					if (bytesDecodedaudio < 0)
+						throw new RuntimeException("could not detect audio");
+					offset += bytesDecodedaudio;
+
+					if (samples.isComplete()){
+						writer.encodeAudio(audioStreamIndex, samples);
+					}
+				}
+			}
+
+			packetaudio = null;
+
+			samples.delete();
+			/*audioCoder.release();
+			containerAudio.release();*/
+			audioCoders[i].close();
+			containerAudio[i].close();
+		}
+	}
 	
+	private static long getAudioFileDurationInSec(File audioFile) throws UnsupportedAudioFileException, IOException{
+		/*AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioFile);
+		AudioFormat format = audioInputStream.getFormat();
+		long frames = audioInputStream.getFrameLength();
+		double durationInSeconds = (frames+0.0) / format.getFrameRate();
+		
+		return durationInSeconds;*/
+		Long microseconds = 0L;
+		
+		AudioFileFormat fileFormat = AudioSystem.getAudioFileFormat(audioFile);
+	    if (fileFormat instanceof TAudioFileFormat) {
+	        Map<?, ?> properties = ((TAudioFileFormat) fileFormat).properties();
+	        String key = "duration";
+	        microseconds = (Long) properties.get(key);
+	    } else {
+	        throw new UnsupportedAudioFileException();
+	    }
+	    
+	    return microseconds/1000;
+	}
+
 	private static File getFrameImage(File[] files, boolean useFileOrder, int frameOrderIndex){
 		Random rnd = new Random();
 		rnd.nextInt();
-		
+
 		if(!useFileOrder){
 			return files[rnd.nextInt(files.length)];
 		}else{
 			return files[frameOrderIndex];
 		}
 	}
-	
+
 	/**
 	 * 
 	 * @param duration - total frame count

@@ -19,7 +19,7 @@ import com.fdt.doorgen.key.pooler.dao.SnippetsDao;
 import com.fdt.doorgen.key.pooler.util.DoorUtils;
 import com.fdt.scrapper.task.ConfigManager;
 
-//TODO 5. Удаляем уже не используемые новости
+//TODO 5. РЈРґР°Р»СЏРµРј СѓР¶Рµ РЅРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ РЅРѕРІРѕСЃС‚Рё
 public class DoorgenUpdaterRunner {
 
 	private static final Logger log = Logger.getLogger(DoorgenPoolerRunner.class);

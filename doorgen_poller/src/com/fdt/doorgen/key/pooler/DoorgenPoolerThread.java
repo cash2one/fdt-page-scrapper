@@ -50,11 +50,11 @@ public class DoorgenPoolerThread implements Callable<String> {
 			//TODO Get proxy connector
 			while(snippetResult.size() < minSnipCount4Extract && snippetTask.getCurrentTask().getPage() > 1){
 				try {
-					//Если не было ошибки - то уменьшаем количество страниц, 
+					//Р•СЃР»Рё РЅРµ Р±С‹Р»Рѕ РѕС€РёР±РєРё - С‚Рѕ СѓРјРµРЅСЊС€Р°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂР°РЅРёС†, 
 					if(!errExist){
 						snippetTask.selectRandTask().setPage(reducePage(snippetTask.selectRandTask().getPage()));
 					}
-					//иначе не уменьшаем, и пробуем с другим прокси
+					//РёРЅР°С‡Рµ РЅРµ СѓРјРµРЅСЊС€Р°РµРј, Рё РїСЂРѕР±СѓРµРј СЃ РґСЂСѓРіРёРј РїСЂРѕРєСЃРё
 					else{
 						errExist = false;
 						if(proxyConnector != null){

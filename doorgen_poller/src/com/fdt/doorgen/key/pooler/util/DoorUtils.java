@@ -16,7 +16,7 @@ public class DoorUtils {
 	{
 		StringBuffer output = new StringBuffer(input);
 
-		return output.toString().replaceAll("[^0-9a-zA-Z‡-ˇ¿-ﬂ\\s\\%\\$\\-]+", "").replaceAll("\\s+", " ");
+		return output.toString().replaceAll("[^0-9a-zA-Z–∞-—è–ê-–Ø\\s\\%\\$\\-]+", "").replaceAll("\\s+", " ");
 	}
 
 	public static String getFirstSmblUpper(String input)

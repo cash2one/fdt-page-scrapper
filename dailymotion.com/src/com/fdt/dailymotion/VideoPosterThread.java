@@ -258,7 +258,7 @@ public class VideoPosterThread extends Thread{
 		//TODO Calculate bitrate via file creation
 		Integer frameRate = calculateBitRateViaFileCreation(task, addAudioToFile, previewImg);
 
-		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFiles(), previewImg, addAudioToFile, new File("08.wav"), minDur, maxDur, frameRate, task.isUsePreview(), intrvlCount);
+		Integer[] times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFiles(), previewImg, addAudioToFile, new File[]{new File("08.wav")}, minDur, maxDur, frameRate, task.isUsePreview(), intrvlCount);
 		/*long bitRate = (8*task.getVideoFile().length()/maxDur);
 		while(bitRate < VideoCreator.successBitrate){
 			times = VideoCreator.makeVideo(task.getVideoFile().getPath(), task.getImageFile(), previewImg, new File("08.wav"), minDur, maxDur, times[1]*2);
@@ -269,11 +269,11 @@ public class VideoPosterThread extends Thread{
 
 	private Integer calculateBitRateViaFileCreation(NewsTask task, boolean addAudioToFile, File previewImg) throws IOException{
 		File testFile = new File(task.getVideoFile().getPath() + "_checker.mov");
-		Integer[] times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFiles(), previewImg, addAudioToFile, new File("08.wav"), 59, 60, task.isUsePreview());
+		Integer[] times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFiles(), previewImg, addAudioToFile, new File[]{new File("08.wav")}, 59, 60, task.isUsePreview());
 		long bitRate = (8*testFile.length()/60);
 		while(bitRate < VideoCreator.successBitrate && times[1] <= 30){
 			testFile.delete();
-			times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFiles(), previewImg, addAudioToFile, new File("08.wav"), 59, 60, times[1] + 5, task.isUsePreview(), 1);
+			times = VideoCreator.makeVideo(testFile.getPath(), task.getImageFiles(), previewImg, addAudioToFile, new File[]{new File("08.wav")}, 59, 60, times[1] + 5, task.isUsePreview(), 1);
 			bitRate = (8*testFile.length()/60);
 			log.info(String.format("Calculated bitrate/framerate for file %s is %d/%d", testFile.getName(),bitRate, times[1]));
 		}

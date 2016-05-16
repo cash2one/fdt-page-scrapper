@@ -1,6 +1,11 @@
 
+import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,6 +18,8 @@ import java.util.TimeZone;
 import java.util.concurrent.Callable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import javax.imageio.ImageIO;
 
 
 public class Test {
@@ -310,7 +317,7 @@ public class Test {
 		sb = new StringBuffer("");
 		System.out.println(trimLastChars(sb, '~'));*/
 
-		ArrayList<String> cleanList = new ArrayList<String>(Arrays.asList(new String[]{"cbc","cg"}));
+		/*ArrayList<String> cleanList = new ArrayList<String>(Arrays.asList(new String[]{"cbc","cg"}));
 		ArrayList<String> args4Clean = new ArrayList<String>(Arrays.asList(new String[]{"cbc1","cbc2","cbc3","cc","cg1"}));
 		//Collections.sort(Arrays.asList(argTest));
 
@@ -368,7 +375,29 @@ public class Test {
 		System.out.println("\r\nCleaned:");
 		for(String str : args4Clean){
 			System.out.println(str);
-		}
+		}*/
+		
+		BufferedImage image;
+		try {
+			image = ImageIO.read(new URL("https://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png"));
+			Graphics g = image.getGraphics();
+			
+			Font myFont = new Font("Serif", Font.BOLD, 12);
+		    Font newFont = myFont.deriveFont(50F);
+		    
+		    g.setFont(newFont);
+		    g.drawString("Hello World! Veeeeeeeeeeeeee", 100, 100);
+		    g.drawString("eeeeeeeeeeeeeeery long text", 100, 150);
+		    g.dispose();
+
+		    ImageIO.write(image, "png", new File("test.png"));
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	    
 	}
 
 	public static StringBuffer trimLastChars(String input, char char4Trim)
