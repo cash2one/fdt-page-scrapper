@@ -23,10 +23,10 @@ public class SiteMapGenerator
 			"<loc>%s</loc>\r\n"+
 			"<lastmod>%s</lastmod>\r\n"+
 			"<changefreq>daily</changefreq>\r\n"+
-			"<priority>0.85</priority>\r\n"+
+			"<priority>1</priority>\r\n"+
 			"</url>\r\n";
 
-	private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
+	private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");
 
 	/**
 	 * args[0] - url_files
