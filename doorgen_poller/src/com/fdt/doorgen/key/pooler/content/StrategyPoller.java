@@ -33,7 +33,7 @@ public abstract class StrategyPoller
 	}
 	
 	/**
-	 * 1  is Default value for sites without regions
+	 * 0 is Default value for sites without regions
 	 * @param keysDao
 	 * @return
 	 */

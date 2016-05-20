@@ -24,6 +24,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
+import com.fdt.filemapping.RowScope;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.scrapper.task.SnippetTaskWrapper;
@@ -67,6 +68,10 @@ public class MegaMultipleSnippetGeneratorRunner{
 	private String linksListFilePath;
 
 	private ArrayList<String> linksList = new ArrayList<String>();
+	
+	private boolean isUseLinkCnt4SnpCnt = false;
+	private int minSnpCntIncrement = 0;
+	private int maxSnpCntIncrement = 3;
 
 	private final static String PROXY_LOGIN_LABEL = "proxy_login";
 	private final static String PROXY_PASS_LABEL = "proxy_pass";
@@ -83,6 +88,9 @@ public class MegaMultipleSnippetGeneratorRunner{
 
 	private static final String ADD_LINK_FROM_FOLDER_FILES_LABEL = "add_links_from_folder_files";
 	private static final String PATH_TO_LINK_FOLDER_LABEL = "path_to_link_folder";
+	
+	private static final String USE_LINK_CNT_4_SNP_CNT_LABEL = "use_link_cnt_4_snp_cnt";
+	private static final String MAX_SNP_CNT_INCREMENT_LABEL = "max_snp_cnt_increment";
 
 	protected static Long RUNNER_QUEUE_EMPTY_WAIT_TIME = 5000L;
 
@@ -214,6 +222,28 @@ public class MegaMultipleSnippetGeneratorRunner{
 			//загружаем линки из общего файла с линками
 			this.linksList = loadLinkListFromFile(this.linksListFilePath);
 		}
+		
+		String isUseLinkCnt4SnpCntStr = ConfigManager.getInstance().getProperty(USE_LINK_CNT_4_SNP_CNT_LABEL);
+		if(isUseLinkCnt4SnpCntStr != null && !"".equals(isUseLinkCnt4SnpCntStr.trim())){
+			isUseLinkCnt4SnpCnt = Boolean.valueOf(isUseLinkCnt4SnpCntStr);
+		}
+		
+		if(isUseLinkCnt4SnpCnt){
+			String maxSnpCntIncrementStr = ConfigManager.getInstance().getProperty(MAX_SNP_CNT_INCREMENT_LABEL);
+			
+			if(maxSnpCntIncrementStr != null && !"".equals(maxSnpCntIncrementStr.trim()))
+			{
+				String values[] = maxSnpCntIncrementStr.split("-");
+				if(values.length == 1){
+					maxSnpCntIncrement = Integer.parseInt(values[0]);
+				}else if(values.length == 2){
+					minSnpCntIncrement = Integer.parseInt(values[0]);
+					maxSnpCntIncrement = Integer.parseInt(values[1]);
+				}else{
+					throw new NumberFormatException("Input string does not satisfied required format <number>[-<number>]. Input string: " + maxSnpCntIncrementStr);
+				}			
+			}
+		}
 
 		//set authentication params
 		Authenticator.setDefault(new Authenticator() {
@@ -320,6 +350,9 @@ public class MegaMultipleSnippetGeneratorRunner{
 							if(addLinkFromFolder)
 							{
 								linkFile = getRandomLinkFile(linkFolder);
+								
+								this.linksList = loadLinkList(linkFile);
+								
 								if(linkFile == null){	
 									taskFactory.reprocessingTask(task);
 									break;
@@ -337,7 +370,10 @@ public class MegaMultipleSnippetGeneratorRunner{
 								linkFile, 
 								linkFolder, 
 								keyWordFileMapping, 
-								new File(keyWordsOutputFolderPath)
+								new File(keyWordsOutputFolderPath),
+								isUseLinkCnt4SnpCnt,
+								minSnpCntIncrement,
+								maxSnpCntIncrement
 								);
 						executor.submit(newThread);
 						continue;
@@ -413,8 +449,6 @@ public class MegaMultipleSnippetGeneratorRunner{
 		} catch (IOException e) {
 			log.error(String.format("Error during moving file %s", linkFile.getName()),e);
 		}
-
-		this.linksList = loadLinkList(linkFile);
 
 		return linkFile;
 	}

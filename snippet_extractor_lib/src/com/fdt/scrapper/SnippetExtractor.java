@@ -106,6 +106,17 @@ public class SnippetExtractor {
 		this.linkList = linkList;
 		this.task = snippetTask;
 	}
+	
+	public SnippetExtractor(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList, int minSnipCnt, int maxSnipCnt) throws MalformedURLException, IOException {
+		this();
+
+		this.proxyFactory = proxyFactory;
+		this.linkList = linkList;
+		this.task = snippetTask;
+		
+		MIN_SNIPPET_COUNT = minSnipCnt;
+		MAX_SNIPPET_COUNT = maxSnipCnt;
+	}
 
 	public SnippetExtractor() throws MalformedURLException, IOException {
 		super();

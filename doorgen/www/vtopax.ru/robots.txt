@@ -1,9 +1,8 @@
 User-agent: *
-Disallow: /application/
-Disallow: /news_content/
-Disallow: /txt/
-Disallow: /utils/
-Disallow: /webstat/
-Disallow: /app/
+Disallow: /application
+Disallow: /news_content
+Disallow: /txt
+Disallow: /utils
+Disallow: /webstat
 Disallow: *.html
-Host: usacashadvanceonlinefast.com
+Host: vtopax.ru

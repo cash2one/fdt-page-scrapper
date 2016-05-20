@@ -1,8 +1,5 @@
 <?php
 @ini_set('zend_monitor.enable', 0);
-
-echo   "TEST";
-
 if(@function_exists('output_cache_disable')) {
 	@output_cache_disable();
 }

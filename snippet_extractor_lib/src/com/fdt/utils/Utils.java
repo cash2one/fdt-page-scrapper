@@ -82,8 +82,12 @@ public class Utils {
 
 		return output.toString();
 	}
-
+	
 	public static synchronized List<String> loadFileAsStrList(File cfgFile){
+		return loadFileAsStrList(cfgFile, false);
+	}
+
+	public static synchronized List<String> loadFileAsStrList(File cfgFile, boolean returnEmptyString){
 		ArrayList<String> linkList = new ArrayList<String>();
 		BufferedReader br = null;
 		try {
@@ -95,7 +99,7 @@ public class Utils {
 			{
 				//String utf8Line = new String(line.getBytes(),"UTF-8");
 
-				if( !"".equals(line.trim()))
+				if(returnEmptyString || !"".equals(line.trim()))
 				{
 					linkList.add(line.trim());
 				}

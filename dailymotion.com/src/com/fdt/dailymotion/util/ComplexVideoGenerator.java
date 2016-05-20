@@ -20,6 +20,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.regex.Matcher;
 
 import javax.imageio.ImageIO;
 import javax.xml.xpath.XPathExpressionException;
@@ -45,24 +46,37 @@ public class ComplexVideoGenerator
 	private final static String BOOKS_FOLDER_PATH_LABEL = "books_folder_path";
 
 	private final static String IMAGES_FOLDER_PATH_LABEL = "images_folder_path";
+	
+	private final static String CLICK_FILE_PATH_LABEL = "click_file_path";
 
 	private final static String OUTPUT_FOLDER_PATH_LABEL = "output_folder_path";
 
 	private final static String PROXY_LIST_FILE_PATH_LABEL = "proxy_list_file_path";
 	private final static String PROXY_DELAY_LABEL = "proxy_delay";
 	private final static String PROXY_TYPE_LABEL = "proxy_type";
-
+	
+	private final static String AUDIO_VOICE_LABEL = "audio_voice";
+	private final static String AUDIO_SPEED_LABEL = "audio_speed";
+	
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
+	
+	
 
 	private String booksFolderPath;
 
 	private final File imagesFolder;
 
 	private final File outputFolder;
+	
+	private final File clickFile;
 
 	private ProxyFactory proxyFactory;
 
 	private AtomicInteger currentThreadCount = new AtomicInteger(0);
+	
+	private byte audioVoice = 1;
+	
+	private byte audioSpeed = 1;
 
 	private Integer maxThreadCount = 1;
 
@@ -109,8 +123,14 @@ public class ComplexVideoGenerator
 		this.booksFolderPath = ConfigManager.getInstance().getProperty(BOOKS_FOLDER_PATH_LABEL);
 
 		this.imagesFolder = new File(ConfigManager.getInstance().getProperty(IMAGES_FOLDER_PATH_LABEL));
+		
+		this.clickFile = new File(ConfigManager.getInstance().getProperty(CLICK_FILE_PATH_LABEL));
 
 		this.outputFolder = new File(ConfigManager.getInstance().getProperty(OUTPUT_FOLDER_PATH_LABEL));
+		
+		this.audioSpeed = Byte.valueOf(ConfigManager.getInstance().getProperty(AUDIO_SPEED_LABEL));
+		
+		this.audioVoice = Byte.valueOf(ConfigManager.getInstance().getProperty(AUDIO_VOICE_LABEL));
 
 		ProxyFactory.DELAY_FOR_PROXY = Integer.valueOf(ConfigManager.getInstance().getProperty(PROXY_DELAY_LABEL));
 		ProxyFactory.PROXY_TYPE = ConfigManager.getInstance().getProperty(PROXY_TYPE_LABEL);
@@ -132,7 +152,7 @@ public class ComplexVideoGenerator
 			{
 				File book = booksFileList.get(0);
 				if(currentThreadCount.get() < maxThreadCount){
-					ComplexVideoGeneratorThread rplcrThrd = new ComplexVideoGeneratorThread(book, this.outputFolder, this.imagesFolder, this, proxyFactory);
+					ComplexVideoGeneratorThread rplcrThrd = new ComplexVideoGeneratorThread(book, clickFile, this.outputFolder, this.imagesFolder, this, proxyFactory);
 					removeFirstFileFromList();
 					rplcrThrd.start();
 				}else{
@@ -161,6 +181,7 @@ public class ComplexVideoGenerator
 	public class ComplexVideoGeneratorThread extends Thread
 	{
 		private final File bookFile;
+		private final File clickFile;
 		private final File outputFolder;
 		private final File imagesFolder;
 		private ComplexVideoGenerator generator;
@@ -170,9 +191,10 @@ public class ComplexVideoGenerator
 		private File audioGenFolder;
 		private File imagesGenFolder;
 
-		public ComplexVideoGeneratorThread(File bookFile, File outputFolder, File imagesFolder, ComplexVideoGenerator generator, ProxyFactory proxyFactory) {
+		public ComplexVideoGeneratorThread(File bookFile, File clickFile, File outputFolder, File imagesFolder, ComplexVideoGenerator generator, ProxyFactory proxyFactory) {
 			super();
 			this.bookFile = bookFile;
+			this.clickFile = clickFile;
 			this.outputFolder = outputFolder;
 			this.imagesFolder = imagesFolder;
 			this.generator = generator;
@@ -209,8 +231,8 @@ public class ComplexVideoGenerator
 					Proxy proxy = null;
 
 					try{
-						//TODO Create private folder for book
-						/*this.privateFolder.mkdir();
+						// Create private folder for book
+						this.privateFolder.mkdir();
 						clearFolder(this.privateFolder);
 						this.audioGenFolder.mkdir();
 						clearFolder(this.audioGenFolder);
@@ -218,25 +240,25 @@ public class ComplexVideoGenerator
 						clearFolder(this.imagesGenFolder);
 
 						//Parse input book file
-						ArrayList<String> speech = parseBookFile(this.bookFile, 150);
+						ArrayList<String> speech = parseBookFile(this.bookFile, this.clickFile, 150);
 
-						//TODO Generate images and Get sentence length
+						//Generate images and Get sentence length
 						int ingIdx = 1;
-						generateImages(
-								new String[]{speech.get(0)}, 
+						/*generateImages(
+								WordUtils.wrap(speech.get(0), 50, System.lineSeparator(), true).split(System.lineSeparator()), 
 								imagesGenFolder, 
 								imagesFolder,
 								ingIdx++
 								);
 
 						generateImages(
-								new String[]{speech.get(1)}, 
+								WordUtils.wrap(speech.get(1), 50, System.lineSeparator(), true).split(System.lineSeparator()), 
 								imagesGenFolder, 
 								imagesFolder,
 								ingIdx++
-								);
+								);*/
 
-						for(int i = 2; i < speech.size(); i++){
+						for(int i = 0; i < speech.size(); i++){
 							generateImages(
 									WordUtils.wrap(speech.get(i), 50, System.lineSeparator(), true).split(System.lineSeparator()), 
 									imagesGenFolder, 
@@ -245,13 +267,12 @@ public class ComplexVideoGenerator
 									);
 						}
 						
-						//TODO Generate audio[1..n]
-						generateAudio(speech, audioGenFolder);*/
+						// Generate audio[1..n]
+						generateAudio(speech, audioVoice, audioSpeed, audioGenFolder);
 
-						//TODO Generate compile file for video generator
+						//Generate video
 						VideoCreator.makeVideoByOrder(new File(this.privateFolder, "video.mp4").getAbsolutePath(), this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
 						
-						//TODO Generate video
 					}
 					catch(Exception e){
 						isErrorExist = true;
@@ -278,12 +299,14 @@ public class ComplexVideoGenerator
 	 * @throws Exception 
 	 * @throws XPathExpressionException 
 	 */
-	private void generateAudio(ArrayList<String> speech, File audioOutFolder) throws XPathExpressionException, Exception
+	private void generateAudio(ArrayList<String> speech, int voice, int speed, File audioOutFolder) throws XPathExpressionException, Exception
 	{
 		//TODO Get correct proxy type
 		AudioSpeecherCreator checker = 
 				new AudioSpeecherCreator(
 						speech, 
+						voice,
+						speed,
 						audioOutFolder, 
 						ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL), 
 						"HTTP"
@@ -336,16 +359,22 @@ public class ComplexVideoGenerator
 		}
 	}
 
-	private ArrayList<String> parseBookFile(File inputBookFile, int wrapLength){
+	private ArrayList<String> parseBookFile(File inputBookFile, File clickFile, int wrapLength){
 		ArrayList<String> speech = new ArrayList<String>();
 
 		List<String> fileStrs = Utils.loadFileAsStrList(inputBookFile);
+		
+		String clickFileStr =  Utils.loadFileAsStrList(clickFile).get(0);
 
-
-		//add title of book
-		speech.add(fileStrs.get(0));
+		String title = fileStrs.get(0);
+		String author = fileStrs.get(2);
+		
+		speech.add(clickFileStr.replaceAll( "\\[KEYWORD\\]",  Matcher.quoteReplacement(title+ " " + author) ));
+		
+		/*//add title of book
+		speech.add(title);
 		//add author of book
-		speech.add(fileStrs.get(2));
+		speech.add(author);*/
 
 		boolean overviewBlock = false;
 
@@ -354,7 +383,7 @@ public class ComplexVideoGenerator
 			str4Check = str4Check.trim();
 
 			if(!"".equals(str4Check)){
-				if(str4Check.indexOf("Editorial Reviews") > -1){
+				if(str4Check.indexOf("Editorial Reviews") > -1 || str4Check.indexOf("Related Subjects") > -1){
 					break;
 				}else if(overviewBlock || str4Check.indexOf("Overview") > -1){
 					if(!overviewBlock){
@@ -437,7 +466,7 @@ public class ComplexVideoGenerator
 				//.replaceAll("<h2>Overview</h2>", " ")
 				.replaceAll("<div><b>From the Publisher</b></div>", " ")
 				//.replaceAll("<h2>Editorial Reviews</h2>", " ")
-				.replaceAll("<h2>Related Subjects</h2>", " ")
+				//.replaceAll("<h2>Related Subjects</h2>", " ")
 				.replaceAll("<[^>]*>(.*?)</[^>]*>", "$1")
 				.replaceAll("<[^>]*?>", " ")
 				.replaceAll("</[^>]*?>", " ")

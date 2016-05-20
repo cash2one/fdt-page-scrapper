@@ -1,0 +1,264 @@
+2016-05-20 11:27:59,663-ERROR(ArticlesPosterUpdaterRunner.java:64)-Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:983)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:339)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2252)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2285)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2084)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.getConnection(ArticlesPosterUpdaterRunner.java:206)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.<init>(ArticlesPosterUpdaterRunner.java:196)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:62)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:214)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+	... 17 more
+2016-05-20 11:27:59,669-ERROR(ArticlesPosterUpdaterRunner.java:70)-Error occured during update process execution
+java.lang.NullPointerException
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:68)
+2016-05-20 11:30:05,600-ERROR(ArticlesPosterUpdaterRunner.java:58)-Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:983)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:339)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2252)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2285)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2084)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.getConnection(ArticlesPosterUpdaterRunner.java:200)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.<init>(ArticlesPosterUpdaterRunner.java:190)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:56)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:214)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+	... 17 more
+2016-05-20 11:30:05,624-ERROR(ArticlesPosterUpdaterRunner.java:64)-Error occured during update process execution
+java.lang.NullPointerException
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:62)
+2016-05-20 11:30:30,550-ERROR(ArticlesPosterUpdaterRunner.java:58)-Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:983)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:339)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2252)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2285)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2084)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.getConnection(ArticlesPosterUpdaterRunner.java:200)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.<init>(ArticlesPosterUpdaterRunner.java:190)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:56)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:214)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+	... 17 more
+2016-05-20 11:31:48,237- INFO(ArticlesPosterUpdaterRunner.java:169)-Template [id=13, title='Cash Advance New Yourk.txt', url='Cash Advance New Yourk txt'] was successfully added
+2016-05-20 11:34:24,364- INFO(ArticlesPosterUpdaterRunner.java:171)-Template [id=14, title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was successfully added
+2016-05-20 11:35:13,486- INFO(ArticlesPosterUpdaterRunner.java:144)-0 deprecated records were deleted from table
+2016-05-20 11:36:15,653- INFO(ArticlesPosterUpdaterRunner.java:174)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 11:36:18,059- INFO(ArticlesPosterUpdaterRunner.java:144)-0 deprecated records were deleted from table
+2016-05-20 11:36:57,700- INFO(ArticlesPosterUpdaterRunner.java:174)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 11:36:57,924- INFO(ArticlesPosterUpdaterRunner.java:144)-0 deprecated records were deleted from table
+2016-05-20 11:37:28,098- INFO(ArticlesPosterUpdaterRunner.java:174)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 11:37:28,329- INFO(ArticlesPosterUpdaterRunner.java:144)-0 deprecated records were deleted from table
+2016-05-20 12:48:54,363- INFO(ArticlesPosterUpdaterRunner.java:244)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 13:40:15,033- INFO(ArticlesPosterUpdaterRunner.java:253)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 13:40:15,386-ERROR(ArticlesPosterUpdaterRunner.java:77)-Error occured during update process execution
+java.sql.SQLException: Column 'tmpl_id, text' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:862)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1076)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5206)
+	at com.fdt.doorgen.key.pooler.dao.DaoCommon.getPagesBySelect(DaoCommon.java:49)
+	at com.fdt.doorgen.key.pooler.dao.ArticleTemplateDao.getTmplsWOPostedArticles(ArticleTemplateDao.java:78)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.postNewlyAddedArticles(ArticlesPosterUpdaterRunner.java:209)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.executeWrapper(ArticlesPosterUpdaterRunner.java:119)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:75)
+2016-05-20 13:40:31,219- INFO(ArticlesPosterUpdaterRunner.java:253)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 13:41:48,362- INFO(ArticlesPosterUpdaterRunner.java:253)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 13:41:48,735-ERROR(ArticlesPosterUpdaterRunner.java:77)-Error occured during update process execution
+java.sql.SQLException: Column 'tmpl_id, text' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:862)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1076)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5206)
+	at com.fdt.doorgen.key.pooler.dao.DaoCommon.getPagesBySelect(DaoCommon.java:49)
+	at com.fdt.doorgen.key.pooler.dao.ArticleTemplateDao.getTmplsWOPostedArticles(ArticleTemplateDao.java:78)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.postNewlyAddedArticles(ArticlesPosterUpdaterRunner.java:209)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.executeWrapper(ArticlesPosterUpdaterRunner.java:119)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:75)
+2016-05-20 13:41:53,562- INFO(ArticlesPosterUpdaterRunner.java:253)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 13:41:53,933-ERROR(ArticlesPosterUpdaterRunner.java:77)-Error occured during update process execution
+java.sql.SQLException: Column 'tmpl_id, text' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:862)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1076)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5206)
+	at com.fdt.doorgen.key.pooler.dao.DaoCommon.getPagesBySelect(DaoCommon.java:49)
+	at com.fdt.doorgen.key.pooler.dao.ArticleTemplateDao.getTmplsWOPostedArticles(ArticleTemplateDao.java:78)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.postNewlyAddedArticles(ArticlesPosterUpdaterRunner.java:209)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.executeWrapper(ArticlesPosterUpdaterRunner.java:119)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:75)
+2016-05-20 13:42:18,438- INFO(ArticlesPosterUpdaterRunner.java:253)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 13:42:18,801-ERROR(ArticlesPosterUpdaterRunner.java:77)-Error occured during update process execution
+java.sql.SQLException: Column 'tmpl_id, text' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:862)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1076)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5206)
+	at com.fdt.doorgen.key.pooler.dao.DaoCommon.getPagesBySelect(DaoCommon.java:49)
+	at com.fdt.doorgen.key.pooler.dao.ArticleTemplateDao.getTmplsWOPostedArticles(ArticleTemplateDao.java:78)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.postNewlyAddedArticles(ArticlesPosterUpdaterRunner.java:209)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.executeWrapper(ArticlesPosterUpdaterRunner.java:119)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:75)
+2016-05-20 13:42:24,922- INFO(ArticlesPosterUpdaterRunner.java:253)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 13:42:25,301-ERROR(ArticlesPosterUpdaterRunner.java:77)-Error occured during update process execution
+java.sql.SQLException: Column 'tmpl_id, text' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:862)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1076)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5206)
+	at com.fdt.doorgen.key.pooler.dao.DaoCommon.getPagesBySelect(DaoCommon.java:49)
+	at com.fdt.doorgen.key.pooler.dao.ArticleTemplateDao.getTmplsWOPostedArticles(ArticleTemplateDao.java:78)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.postNewlyAddedArticles(ArticlesPosterUpdaterRunner.java:209)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.executeWrapper(ArticlesPosterUpdaterRunner.java:119)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:75)
+2016-05-20 13:42:31,726- INFO(ArticlesPosterUpdaterRunner.java:253)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 13:43:33,119- INFO(ArticlesPosterUpdaterRunner.java:253)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 13:43:53,026- INFO(ArticlesPosterUpdaterRunner.java:175)-0 deprecated records were deleted from table
+2016-05-20 14:14:50,864- INFO(ArticlesPosterUpdaterRunner.java:272)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 14:14:51,450-ERROR(ArticlesPosterUpdaterRunner.java:77)-Error occured during update process execution
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SSELECT DISTINCT at.tmpl_id tmpl_id, at.text text FROM article_tmpl at LEFT JOIN' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:941)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3870)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2470)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2617)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2550)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at com.fdt.doorgen.key.pooler.dao.DaoCommon.getPagesBySelect(DaoCommon.java:43)
+	at com.fdt.doorgen.key.pooler.dao.ArticleContentDao.getArticles4Update(ArticleContentDao.java:120)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.updateExpiredArticles(ArticlesPosterUpdaterRunner.java:226)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.executeWrapper(ArticlesPosterUpdaterRunner.java:122)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:75)
+2016-05-20 14:15:25,004- INFO(ArticlesPosterUpdaterRunner.java:272)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 14:15:25,712- INFO(ArticlesPosterUpdaterRunner.java:173)--1 deprecated records were deleted from table
+2016-05-20 14:15:41,916- INFO(ArticlesPosterUpdaterRunner.java:272)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 14:15:42,596- INFO(ArticlesPosterUpdaterRunner.java:173)-1 deprecated records were deleted from table
+2016-05-20 15:56:52,090-ERROR(ArticlesPosterUpdaterRunner.java:70)-For input string: "5:3"
+java.lang.NumberFormatException: For input string: "5:3"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.readPostInterval(ArticlesPosterUpdaterRunner.java:223)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.<init>(ArticlesPosterUpdaterRunner.java:91)
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:68)
+2016-05-20 15:56:52,096-ERROR(ArticlesPosterUpdaterRunner.java:76)-Error occured during update process execution
+java.lang.NullPointerException
+	at com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.main(ArticlesPosterUpdaterRunner.java:74)
+2016-05-20 15:57:22,690- INFO(ArticlesPosterUpdaterRunner.java:242)-Template [id=5, title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was successfully added
+2016-05-20 15:57:23,608- INFO(ArticlesPosterUpdaterRunner.java:128)-1 deprecated records were deleted from table
+2016-05-20 16:07:51,463- INFO(ArticlesPosterUpdaterRunner.java:246)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 16:08:04,002- INFO(ArticlesPosterUpdaterRunner.java:128)-0 deprecated records were deleted from table
+2016-05-20 16:08:49,998- INFO(ArticlesPosterUpdaterRunner.java:246)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 16:09:39,510- INFO(ArticlesPosterUpdaterRunner.java:246)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 16:09:52,456- INFO(ArticlesPosterUpdaterRunner.java:246)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 16:11:22,393- INFO(ArticlesPosterUpdaterRunner.java:246)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 16:11:41,582- INFO(ArticlesPosterUpdaterRunner.java:128)-0 deprecated records were deleted from table
+2016-05-20 16:11:57,346- INFO(ArticlesPosterUpdaterRunner.java:246)-Template [title='Cash Advance New Yourk', url='cash-advance-new-yourk'] was updated
+2016-05-20 16:11:58,047- INFO(ArticlesPosterUpdaterRunner.java:128)-0 deprecated records were deleted from table

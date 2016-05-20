@@ -38,6 +38,10 @@ public class AudioSpeecherCreator {
 	private static final String LINE_FEED = "\r\n";
 
 	private List<String> sentences = new ArrayList<String>();
+	
+	private int audioVoice = 1;
+	
+	private int audioSpeed = 1;
 
 	private File outputFolder = null;
 
@@ -72,7 +76,7 @@ public class AudioSpeecherCreator {
 					}
 				});*/
 
-				AudioSpeecherCreator checker = new AudioSpeecherCreator(Arrays.asList(new String[]{sentences}), new File(outputFolder), pathToProxy, proxyType);
+				AudioSpeecherCreator checker = new AudioSpeecherCreator(Arrays.asList(new String[]{sentences}), 1, -1, new File(outputFolder), pathToProxy, proxyType);
 				checker.execute();
 			}
 
@@ -83,7 +87,7 @@ public class AudioSpeecherCreator {
 		}
 	}
 
-	public AudioSpeecherCreator(List<String> sentences, File outputFolderPath, String pathToProxy, String proxyType) throws IOException {
+	public AudioSpeecherCreator(List<String> sentences, int audioVoice, int audioSpeed, File outputFolderPath, String pathToProxy, String proxyType) throws IOException {
 		super();
 		this.sentences = sentences;
 		this.outputFolder = outputFolderPath;
@@ -93,6 +97,9 @@ public class AudioSpeecherCreator {
 		ProxyFactory.PROXY_TYPE = proxyType;
 		proxyFactory = ProxyFactory.getInstance();
 		proxyFactory.init(pathToProxy);
+		
+		this.audioVoice = audioVoice;
+		this.audioSpeed = audioSpeed;
 	}
 
 	private void incThrdCnt(){
@@ -126,7 +133,7 @@ public class AudioSpeecherCreator {
 			{
 				if(currentThreadCount.get() < maxThreadCount){
 					//TODO Getting lang and speed values
-					AudioSpeecherCreatorThread creatorThrd = new AudioSpeecherCreatorThread(sentences.get(0), 1, -2, requestToken, outputFolder, String.valueOf(fileIdx++) + ".mp3", proxyFactory, this);
+					AudioSpeecherCreatorThread creatorThrd = new AudioSpeecherCreatorThread(sentences.get(0), audioVoice, audioSpeed, requestToken, outputFolder, String.valueOf(fileIdx++) + ".mp3", proxyFactory, this);
 					sentences.remove(0);
 					creatorThrd.start();
 				}else{
@@ -143,7 +150,7 @@ public class AudioSpeecherCreator {
 	public class AudioSpeecherCreatorThread extends Thread
 	{
 		private final String sentence;
-		private final int lang;
+		private final int voice;
 		private final int speed;
 		private final String requestToken;
 		private File outputFolder;
@@ -151,10 +158,10 @@ public class AudioSpeecherCreator {
 		private ProxyFactory proxyFactory;
 		private AudioSpeecherCreator speechCreator; 
 
-		public AudioSpeecherCreatorThread(String sentence, int lang, int speed,	String requestToken, File outputFolder, String fileName, ProxyFactory proxyFactory, AudioSpeecherCreator speechCreator) {
+		public AudioSpeecherCreatorThread(String sentence, int voice, int speed, String requestToken, File outputFolder, String fileName, ProxyFactory proxyFactory, AudioSpeecherCreator speechCreator) {
 			super();
 			this.sentence = sentence;
-			this.lang = lang;
+			this.voice = voice;
 			this.speed = speed;
 			this.outputFolder = outputFolder;
 			this.fileName = fileName;
@@ -187,7 +194,7 @@ public class AudioSpeecherCreator {
 					try{
 						log.trace("Starting checking url");
 						proxy = proxyConnector.getConnect(proxyTypeStr);
-						generateSpeech(sentence, lang, speed, requestToken, outputFolder, fileName, proxy);
+						generateSpeech(sentence, voice, speed, requestToken, outputFolder, fileName, proxy);
 					}
 					catch(Exception e){
 						isErrorExist = true;

@@ -19,5 +19,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/proxy_factory"/>
 	<classpathentry kind="var" path="FDT_LIBS/mysql-connector-java-5.1.37.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/snippet_utils.jar"/>
+	<classpathentry kind="var" path="FDT_LIBS/snippet_extractor_lib.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

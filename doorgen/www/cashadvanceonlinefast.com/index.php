@@ -20,6 +20,13 @@ $page_meta_icbm = "";
 
 $function = new Functions;
 
+//default offset for moskow
+function engdate($d, $format = 'jS \of F h:i:s A', $offset = -8)
+{
+    $d += 3600 * $offset;
+    return date($format, $d);
+}
+
 function fillCityInfo($con, $url_region, $url_city, $template)
 {
 	global $state_name, $state_abbr, $page_title,$page_meta_keywords,$page_meta_description,$page_meta_placename,$page_meta_position;
@@ -177,6 +184,109 @@ function fillStateList($con, $template)
 	return $template;
 }
 
+function fillArticleList($con, $template)
+{
+	global $page_title,$page_meta_keywords,$page_meta_description;
+	
+	$result = mysqli_query($con," SELECT ac.*, at.title, at.url, t1.posted_cnt, unix_timestamp(ac.post_dt) posted_time " .
+								" FROM article_content ac, article_tmpl at," .
+								" (SELECT ac.tmpl_id, MAX(ac.post_dt) max_post_dt, COUNT(1) posted_cnt " .
+								" FROM article_content ac" .
+								" WHERE ac.post_dt < now() GROUP BY ac.tmpl_id) AS t1" .
+								" WHERE ac.tmpl_id = t1.tmpl_id AND at.tmpl_id = ac.tmpl_id  AND ac.post_dt = t1.max_post_dt ORDER BY ac.post_dt DESC"
+							);
+
+	$text;
+	$title;
+	$url;
+	$post_dt;
+	$upd_flg;
+	
+	$atricles = "";
+
+	$cur_news_posted_time = "";
+	while($row = mysqli_fetch_array($result))
+	{
+		global $regionName, $regionNameLatin;
+		$text = $row['text'];
+		$title = $row['title'];
+		$url= $row['url'];
+		$post_dt = $row['posted_time'];
+		$upd_flg = $row['upd_flg'];
+		$updTitle = "";
+		
+		if($cur_news_posted_time != engdate($post_dt,'jS \of F')){
+			$cur_news_posted_time = engdate($post_dt,'jS \of F');
+			$atricles = $atricles."<br/><h3>".$cur_news_posted_time."</h3>";
+		}
+		
+		if($upd_flg == 1){
+			 $updTitle = "Information updated | ";
+		}
+		
+		$atricles = $atricles."<li class=\"page_item\"><a href=\"/articles/$url/\">".$updTitle. " " . $title ." (".engdate($post_dt,'jS \of F, h:i:s A').")</a></li>\r\n";
+		/*$atricles = preg_replace("/\[STATE_NAME\]/", $regionName , $atricles);
+		$atricles = preg_replace("/\[STATE_ABBR\]/", $regionName , $atricles);*/
+	}
+	
+	//apply template
+	$template=preg_replace("/\[ATRICLES_LIST\]/", $atricles, $template);
+	
+	return $template;
+}
+
+function fillArticle($con, $url, $template)
+{
+	global $page_title,$page_meta_keywords,$page_meta_description;
+	
+	#echo "URL:" . $url . "; ";
+	
+	$result_array = array();
+	$query_case_list = 	" SELECT ac.text, at.title FROM article_tmpl at LEFT JOIN article_content ac ON at.tmpl_id = ac.tmpl_id " .
+						" WHERE LOWER(at.url) = LOWER(?) AND ac.post_dt < now() ORDER BY ac.post_dt DESC LIMIT 1";
+	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+	//set values
+	#echo "set value...";
+	$id=1;
+	$main_key = "/";
+	if (!mysqli_stmt_bind_param($stmt, "s", $url)) {
+		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+
+	#echo "execute...";
+	if (!mysqli_stmt_execute($stmt)){
+		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+
+	/* instead of bind_result: */
+	#echo "get result...";
+	if(!mysqli_stmt_bind_result($stmt, $text, $title)){
+		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+
+	if(mysqli_stmt_fetch($stmt)) {
+		$page_title = $title;
+		$page_meta_keywords = $title;
+		$page_meta_description = $title;
+
+		#echo " " . $title . " - " .$text;
+		
+		$template=preg_replace("/\[ARTICLE_TITLE\]/", $title, $template);
+		$template=preg_replace("/\[ARTICLE_BODY\]/", $text, $template);
+	}else{
+		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#print_r(error_get_last());
+		mysqli_stmt_close($stmt);
+		return null;
+	}
+
+	mysqli_stmt_close($stmt);
+
+	return $template;
+}
+
 function fillCitiesList($con, $stateNameLatin, $template)
 {
 	global $page_title,$page_meta_keywords,$page_meta_description, $state_name, $state_abbr, $state_city_count;
@@ -187,7 +297,7 @@ function fillCitiesList($con, $stateNameLatin, $template)
 						" FROM city c LEFT JOIN region r ON c.region_id = r.region_id " .
 						" WHERE LOWER(r.region_name_latin) = LOWER(?) ORDER BY c.city_name ";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
@@ -305,7 +415,7 @@ $current_page="MAIN_PAGE";
 $url = $_SERVER["REQUEST_URI"];
 #$url = "/altayskiy-kray/";
 #echo "REQUEST_URI: ".$url.'<br>';
-preg_match("/[\-a-zA-Z0-9]+\/[\-a-zA-Z0-9]*/",$url,$request_uri);
+preg_match("/[\-a-zA-Z0-9_]+\/[\-a-zA-Z0-9_]*/",$url,$request_uri);
 #echo "request_uri".$request_uri[0].'<br>';
 #echo $request_uri[0].'<br>';
 
@@ -325,7 +435,7 @@ $template = file_get_contents("tmpl_main.html");
 
 $template=preg_replace("/\[URL\]/",$_SERVER["HTTP_HOST"], $template);
 $template=preg_replace("/\[URLMAIN\]/",$_SERVER["HTTP_HOST"], $template);
-$template=preg_replace("/\[HEADER_KEYS\]/",HEADER_KEYS, $template);
+#$template=preg_replace("/\[HEADER_KEYS\]/",HEADER_KEYS, $template);
 
 //fetch regions
 $con=mysqli_connect(DB_HOST,DB_USER_NAME,DB_USER_PWD,DB_NAME);
@@ -402,6 +512,14 @@ elseif($url_region == 'contact'){
 	$page_meta_description = CONTACT_META_DESCRIPTION;
 	$page_meta_keywords = CONTACT_META_KEYWORDS;	
 }
+elseif($url_region == 'articles' && $url_city){
+	$current_page = "ARTICLE_PAGE";
+	$tmpl_file_name="tmpl_article_page.html";	
+}
+elseif($url_region == 'articles' && !$url_city){
+	$current_page = "ARTICLES_LIST_PAGE";
+	$tmpl_file_name="tmpl_articles.html";	
+}
 elseif($url_city && $url_region){
 	$current_page = "CITY_PAGE";
 	$tmpl_file_name="tmpl_city.html";
@@ -438,7 +556,8 @@ if($current_page == "REGION_PAGE"){
 	
 	$page_h1 = STATE_PAGE_H1;
 	$page_h2 = STATE_PAGE_H2;
-}elseif($current_page == "CITY_PAGE"){
+}
+elseif($current_page == "CITY_PAGE"){
 	//get city page info
 	$tmpl_inner = fillCityInfo($con,$url_region, $url_city, $tmpl_inner);
 	
@@ -452,6 +571,26 @@ if($current_page == "REGION_PAGE"){
 	
 	$page_h1 = CITY_PAGE_H1;
 	$page_h2 = CITY_PAGE_H2;
+}
+elseif($current_page == "ARTICLES_LIST_PAGE"){
+	//get city page info
+	$tmpl_inner = fillArticleList($con, $tmpl_inner);
+	
+	if($tmpl_inner == null){
+		$tmpl_inner = file_get_contents("tmpl_main_block.html");
+	}
+	
+	$page_title = ARTICLES_LIST_PAGE_TITLE;
+	$page_meta_description = ARTICLES_LIST_META_DESCRIPTION;
+	$page_meta_keywords = ARTICLES_LIST_META_KEYWORDS;
+}
+elseif($current_page == "ARTICLE_PAGE"){
+	//get city page info
+	$tmpl_inner = fillArticle($con, $url_city, $tmpl_inner);
+	
+	if($tmpl_inner == null){
+		$tmpl_inner = file_get_contents("tmpl_main_block.html");
+	}
 }
 
 $template=preg_replace("/\[MAIN_BLOCK\]/",$tmpl_inner, $template);

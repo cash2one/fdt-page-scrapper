@@ -1,3 +1,9 @@
+Order deny,allow
+deny from all
+Allow from 86.57.154.130 136.243.11.100 193.58.255 93.84 93.85 37.44.110.246
+ 
+Options All -Indexes
+ 
 RewriteEngine On
 Options +FollowSymlinks
 RewriteBase /
@@ -9,6 +15,9 @@ ErrorDocument 404 /404.php
 
 RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+#RewriteCond %{REQUEST_URI} ^/sitemap.xml$
+#RewriteRule .* /sitemap.php [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

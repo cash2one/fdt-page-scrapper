@@ -36,6 +36,9 @@ public class MegaMultipleSnippetGeneratorThread implements Callable<String> {
 	private File linkFile = null;
 	private File pathToLinkFolder = null;
 	
+	private boolean isUseLinkCnt4SnpCnt;
+	private int minSnpCntIncrement;
+	private int maxSnpCntIncrement;
 
 	//словарь в котором содержится <ключ> и в соответствие ему ставится файл, в котором содержится обрабатываемый ключ
 	private Map<String, List<File>> keyWordFileMapping;
@@ -51,7 +54,10 @@ public class MegaMultipleSnippetGeneratorThread implements Callable<String> {
 			File linkFile, 
 			File pathToLinkFolder, 
 			Map<String, List<File>> keyWordFileMapping,
-			File successPathFile) 
+			File successPathFile,
+			boolean isUseLinkCnt4SnpCnt,
+			int minSnpCntIncrement,
+			int maxSnpCntIncrement) 
 	{
 		super();
 
@@ -66,6 +72,9 @@ public class MegaMultipleSnippetGeneratorThread implements Callable<String> {
 		this.pathToLinkFolder = pathToLinkFolder;
 		this.keyWordFileMapping = keyWordFileMapping;
 		this.successPathFile = successPathFile;
+		this.isUseLinkCnt4SnpCnt = isUseLinkCnt4SnpCnt;
+		this.minSnpCntIncrement = minSnpCntIncrement;
+		this.maxSnpCntIncrement = maxSnpCntIncrement;
 		log.debug(toString());
 	}
 
@@ -80,7 +89,14 @@ public class MegaMultipleSnippetGeneratorThread implements Callable<String> {
 			log.warn(String.format("Starting processing key: %s", snippetTask.getCurrentTask().getKeyWordsOrig()));
 
 			try {
-				SnippetExtractor snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList);
+				SnippetExtractor snippetExtractor;
+				
+				if(isUseLinkCnt4SnpCnt && isAddLinks){
+					snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList, linkList.size() + minSnpCntIncrement, linkList.size() + maxSnpCntIncrement);
+				}else{
+					snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList);
+				}
+				
 				snippetExtractor.setAddLinkFromFolder(addLinkFromFolder);
 				generatedContent = snippetExtractor.extractSnippetsWithInsertedLinks(isAddLinks).getCurrentTask().getResult();
 			}

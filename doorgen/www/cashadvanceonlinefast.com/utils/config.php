@@ -107,4 +107,11 @@
 	define("POLICY_META_DESCRIPTION", "Need extra money in USA? Looking For Check Advance? Get Your CASH!");
 	#Policy meta keywords
 	define("POLICY_META_KEYWORDS", "USA Cash advance, payday loans, national cash America, merchant advance, paycheck cash, advance locations USA, instant approval in USA");
+	
+	#Articles page title
+	define("ARTICLES_LIST_PAGE_TITLE", "Articles");
+	#Articles meta description
+	define("ARTICLES_LIST_META_DESCRIPTION", "Articles");
+	#Articles meta keywords
+	define("ARTICLES_LIST_META_KEYWORDS", "Articles");
 ?>

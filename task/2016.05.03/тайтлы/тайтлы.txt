@@ -1,0 +1,16 @@
+{BlUe}!WaTCh&gt;{'The Legend of Tarzan'}.FulL. Movie. download. Hd.pUTlocker  пример
+будет список тайтлов и список слов впереди текста
+тайтлы аля Watch {FILM] online full movie hd
+конструкция после Watch {FILM] перетосовывается рандомно Watch {FILM] full movie hd online, Watch {FILM] hd online full movie 
+с файла с текстом берётся слово, которое перед конструкцией будет {BlUe}
+само {FILM] не меняем
+ну и обработка текста это верхний регистр рандомно WATCH {FILM] hd online full movie, WATCH {FILM] hd ONLINE full movie 
+и вместо пробеловв всякого говна выставить, примеры можешь посмотреть site:https://www.reddit.com  watch  
+задача получить максимально уникальный тайтл, используются символы типо #$%^&*({[ ~ ` все вот такие 1-2  full.. movie, full..movie, full+movie, full;movie, (тобюишь пробел и символ либо просто символ)
+тобишь каждое слово в конструкции надо обработать и каждый пробел
+WATCH {{FILM]} HD ONlInE... f.u.l.l_mo.Vi.e 
+WATCH '{FILM]'+(hd)+ONLINE..full Movie
+а, да и первое это слово {BlUe} тут с ним вобще можно жостко @BlUe@ @#BlUe@# |BLUE|~ *^(BLUE)^*   тоесть 1-2 спец символа, какие-то либо скобки либо нет, ну и обработка пробела
+
+и в конце 2-3 любых символа, буквы цифры  |BLUE|~!!WATCH!! '{FILM]'+(hd)+ONLINE..full Movie Hg@
+результаты в строчку в файл
