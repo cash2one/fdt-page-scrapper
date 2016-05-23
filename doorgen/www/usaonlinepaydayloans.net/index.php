@@ -67,7 +67,7 @@ function fillCityInfo($con, $url_region, $url_city, $template)
 		$page_meta_placename = "<meta name=\"geo.placename\" content=\"$geo_placename\" />";
 		$page_meta_position = "<meta name=\"geo.position\" content=\"$geo_position\" />";
 		$page_meta_region = "<meta name=\"geo.region\" content=\"$geo_region\" />";
-		$page_meta_icbm = "<meta name=\"ICBM\" content=\"$ICBM\" />";
+		$page_meta_icbm = "<meta name=\"ICBM\" content=\"$icbm\" />";
 	}else{
 		return null;
 	}
@@ -113,14 +113,14 @@ function getClosestCitiesList($con, $url_region, $url_city)
 				" WHERE c.region_id = r.region_id  AND LOWER(r.region_name_latin) LIKE LOWER(?) AND LOWER(c.city_name_latin) LIKE LOWER(?)) ";
 
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		print_r(error_get_last());
 	}
 	//set values
 	#echo "set value...";
 	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "ss", $url_region, $url_city)) {
-		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	#echo "execute...";
@@ -187,7 +187,7 @@ function fillCitiesList($con, $stateNameLatin, $template)
 						" FROM city c LEFT JOIN region r ON c.region_id = r.region_id " .
 						" WHERE LOWER(r.region_name_latin) = LOWER(?) ORDER BY c.city_name ";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
@@ -484,6 +484,8 @@ $template=preg_replace("/\[CLOUDS\]/", $clouds, $template);
 $template=preg_replace("/\[CITY_COUNT\]/", $state_city_count, $template);
 
 $template=preg_replace("/\[SITE_NAME\]/", SITE_NAME, $template);
+
+$template=preg_replace("/\[CANONICAL_LINK\]/", "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"], $template);
 
 unset($city_cases, $region_cases, $page_meta_description, $page_title, $bread_crumbs, $region_name, $function, $snippet_extractor, $google_image, $title_generator, $extractd_news, $news_extractor, $url_for_cache);
 mysqli_close($con);

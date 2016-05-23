@@ -67,7 +67,7 @@ function fillCityInfo($con, $url_region, $url_city, $template)
 		$page_meta_placename = "<meta name=\"geo.placename\" content=\"$geo_placename\" />";
 		$page_meta_position = "<meta name=\"geo.position\" content=\"$geo_position\" />";
 		$page_meta_region = "<meta name=\"geo.region\" content=\"$geo_region\" />";
-		$page_meta_icbm = "<meta name=\"ICBM\" content=\"$ICBM\" />";
+		$page_meta_icbm = "<meta name=\"ICBM\" content=\"$icbm\" />";
 	}else{
 		return null;
 	}
@@ -302,6 +302,8 @@ $current_page="MAIN_PAGE";
 //preg_match("/[0-9]+-[0-9]+/",$url,$match);
 //list($keys_num, $city_num) = split('-', $match[0]);
 
+//echo $_SERVER["HTTP_HOST"];
+
 $url = $_SERVER["REQUEST_URI"];
 #$url = "/altayskiy-kray/";
 #echo "REQUEST_URI: ".$url.'<br>';
@@ -482,6 +484,8 @@ $template=preg_replace("/\[ZIP_CODE\]/", $zip_code, $template);
 $template=preg_replace("/\[COUNTRY\]/", $country, $template);
 $template=preg_replace("/\[CLOUDS\]/", $clouds, $template);
 $template=preg_replace("/\[CITY_COUNT\]/", $state_city_count, $template);
+
+$template=preg_replace("/\[CANONICAL_LINK\]/", "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"], $template);
 
 $template=preg_replace("/\[SITE_NAME\]/", SITE_NAME, $template);
 

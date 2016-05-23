@@ -30,6 +30,7 @@ import org.json.JSONObject;
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.ConfigManager;
+import com.fdt.utils.Utils;
 
 public class AudioSpeecherCreator {
 
@@ -76,7 +77,7 @@ public class AudioSpeecherCreator {
 					}
 				});*/
 
-				AudioSpeecherCreator checker = new AudioSpeecherCreator(Arrays.asList(new String[]{sentences}), 1, -1, new File(outputFolder), pathToProxy, proxyType);
+				AudioSpeecherCreator checker = new AudioSpeecherCreator(Arrays.asList(new String[]{sentences}), 1, -1, new File(outputFolder), pathToProxy, proxyType, 1);
 				checker.execute();
 			}
 
@@ -87,11 +88,12 @@ public class AudioSpeecherCreator {
 		}
 	}
 
-	public AudioSpeecherCreator(List<String> sentences, int audioVoice, int audioSpeed, File outputFolderPath, String pathToProxy, String proxyType) throws IOException {
+	public AudioSpeecherCreator(List<String> sentences, int audioVoice, int audioSpeed, File outputFolderPath, String pathToProxy, String proxyType, int maxThreadCount) throws IOException {
 		super();
 		this.sentences = sentences;
 		this.outputFolder = outputFolderPath;
 
+		this.maxThreadCount = maxThreadCount;
 
 		ProxyFactory.DELAY_FOR_PROXY = 1L;
 		ProxyFactory.PROXY_TYPE = proxyType;
@@ -133,8 +135,7 @@ public class AudioSpeecherCreator {
 			{
 				if(currentThreadCount.get() < maxThreadCount){
 					//TODO Getting lang and speed values
-					AudioSpeecherCreatorThread creatorThrd = new AudioSpeecherCreatorThread(sentences.get(0), audioVoice, audioSpeed, requestToken, outputFolder, String.valueOf(fileIdx++) + ".mp3", proxyFactory, this);
-					sentences.remove(0);
+					AudioSpeecherCreatorThread creatorThrd = new AudioSpeecherCreatorThread(sentences.remove(0), audioVoice, audioSpeed, requestToken, outputFolder, (String.format("%03d",fileIdx++)) + ".mp3", proxyFactory, this);
 					creatorThrd.start();
 				}else{
 					Thread.sleep(1L);
@@ -172,6 +173,7 @@ public class AudioSpeecherCreator {
 
 		public void start(){
 			this.speechCreator.incThrdCnt();
+			log.info("Thread started for " + fileName);
 			super.start();
 		}
 
@@ -196,7 +198,7 @@ public class AudioSpeecherCreator {
 						proxy = proxyConnector.getConnect(proxyTypeStr);
 						generateSpeech(sentence, voice, speed, requestToken, outputFolder, fileName, proxy);
 					}
-					catch(Exception e){
+					catch(Throwable e){
 						isErrorExist = true;
 						log.warn("Error occured during generating speech for sentence: " + sentence, e);
 					}
@@ -207,7 +209,7 @@ public class AudioSpeecherCreator {
 						}
 					}
 				}
-				while(isErrorExist && repeatCount <= 10);
+				while(isErrorExist);
 			}finally{
 				speechCreator.decThrdCnt();
 			}
@@ -248,10 +250,16 @@ public class AudioSpeecherCreator {
 			writer.close();
 			os.close();
 
-			int code = conn.getResponseCode();
+			//int code = conn.getResponseCode();
 
 			//TODO Get file index form params
 			saveResponseAsFile(conn, new File(outputFolder, fileName));
+			String fileResult = Utils.loadFileAsString( new File(outputFolder, fileName));
+			
+			if(fileResult.contains("\"rst\":\"ERROR_BUZY\"")){
+				throw new Exception("{\"rst\":\"ERROR_BUZY\"} for file:" + fileName);
+			}
+			
 			return true;
 			/*//TODO Save output as mp3
 			// Execute HTTP Post Request

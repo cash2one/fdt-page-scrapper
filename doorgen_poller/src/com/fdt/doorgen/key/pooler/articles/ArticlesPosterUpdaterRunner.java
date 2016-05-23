@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
@@ -154,7 +156,7 @@ public class ArticlesPosterUpdaterRunner {
 			tmplContent= Utils.loadFileAsString(file);
 			keyUrl = processNewTemplate(FilenameUtils.removeExtension(file.getName()), tmplContent);
 			addedUrls.add(keyUrl);
-			//TODO move processed file to temp folder
+			//TODO move processed file to temp folder???
 		}
 		
 		return addedUrls;
@@ -210,8 +212,18 @@ public class ArticlesPosterUpdaterRunner {
 		return artCntntDAO.deleteDeprecatedPageContent();
 	}
 	
-	private String synonymizeText(String text){
-		//TODO synonymize text
+	private  String synonymizeText(String text){
+		Pattern ptrn = Pattern.compile("(\\{([^\\{\\}]+)\\})");
+		Matcher mtch = ptrn.matcher(text);
+
+		while(mtch.find()){
+			String[] array = mtch.group(2).split("\\|");
+			text = text.replace(mtch.group(1), array[rnd.nextInt(array.length)]);
+			mtch = ptrn.matcher(text);
+		}
+		
+		text = text.replaceAll("\r\n", "</br>\r\n");
+
 		return text;
 	}
 	

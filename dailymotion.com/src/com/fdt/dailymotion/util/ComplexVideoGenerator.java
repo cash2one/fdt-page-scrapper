@@ -309,9 +309,10 @@ public class ComplexVideoGenerator
 						speed,
 						audioOutFolder, 
 						ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL), 
-						"HTTP"
+						"HTTP",
+						this.maxThreadCount
 					);
-		
+
 		checker.execute();
 	}
 
@@ -326,7 +327,7 @@ public class ComplexVideoGenerator
 			File[] imgTmplFiles = rndImgFolder.listFiles();
 
 			File rndImgTmplFile = imgTmplFiles[rnd.nextInt(imgTmplFiles.length)];
-			File newImgFile = new File(imageOutFodler, String.valueOf(imgIdx) + ".png");
+			File newImgFile = new File(imageOutFodler, (String.format("%03d",imgIdx)) + ".png");
 
 			BufferedImage image = ImageIO.read(rndImgTmplFile);
 			Graphics g = image.getGraphics();
