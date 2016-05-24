@@ -224,7 +224,7 @@ function fillArticleList($con, $template)
 			 $updTitle = "Information updated | ";
 		}
 		
-		$atricles = $atricles."<li class=\"page_item\"><a href=\"/articles/$url/\">".$updTitle. " " . $title ." (".engdate($post_dt,'jS \of F, h:i:s A').")</a></li>\r\n";
+		$atricles = $atricles."<a href=\"/articles/$url/\">".$updTitle. " " . $title ." (".engdate($post_dt,'jS \of F, h:i:s A').")</a></br>\r\n";
 		/*$atricles = preg_replace("/\[STATE_NAME\]/", $regionName , $atricles);
 		$atricles = preg_replace("/\[STATE_ABBR\]/", $regionName , $atricles);*/
 	}
@@ -621,6 +621,8 @@ $template=preg_replace("/\[ZIP_CODE\]/", $zip_code, $template);
 $template=preg_replace("/\[COUNTRY\]/", $country, $template);
 $template=preg_replace("/\[CLOUDS\]/", $clouds, $template);
 $template=preg_replace("/\[CITY_COUNT\]/", $state_city_count, $template);
+
+$template=preg_replace("/\[CANONICAL_LINK\]/", "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"], $template);
 
 $template=preg_replace("/\[SITE_NAME\]/", SITE_NAME, $template);
 

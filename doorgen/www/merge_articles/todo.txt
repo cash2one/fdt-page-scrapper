@@ -1,0 +1,57 @@
+1. Копируем файлы:
+tmpl_article_page.html
+tmpl_articles.html
+get_articles_list.php
+
+2. Подправить файл 
+index.php согласно index.php.txt
+
+2.1 Подправить файл 
+utils/config.php
+
+3. Добавить таблицы базы данных
+
+4. Создать папку
+./artcls_new
+
+5. Создать папку с конфигами в /home/user/soft/article_poller
+
+6. Добавить в крон рассписание
+
+7. Скопировать статьи в папку, запостить первые 10 статей, установить остальное рассписание на 1 статью в день
+
+
+/home/user/www/cashadvanceonlinefast.com
+
+usacashadvanceonlinefast.com
+usainstallmentloans.org
+usaonlinepaydayloans.net
+usapersonalloans.org
+
+1.
+cd /home/user/www/
+cp /home/user/www/cashadvanceonlinefast.com/tmpl_article_page.html ./usacashadvanceonlinefast.com/
+cp /home/user/www/cashadvanceonlinefast.com/tmpl_articles.html ./usacashadvanceonlinefast.com/
+cp /home/user/www/cashadvanceonlinefast.com/get_articles_list.php ./usacashadvanceonlinefast.com/
+cp /home/user/www/cashadvanceonlinefast.com/index.php ./usacashadvanceonlinefast.com/
+
+cp /home/user/www/cashadvanceonlinefast.com/tmpl_article_page.html ./usainstallmentloans.org/
+cp /home/user/www/cashadvanceonlinefast.com/tmpl_articles.html ./usainstallmentloans.org/
+cp /home/user/www/cashadvanceonlinefast.com/get_articles_list.php ./usainstallmentloans.org/
+cp /home/user/www/cashadvanceonlinefast.com/index.php ./usainstallmentloans.org/
+
+cp /home/user/www/cashadvanceonlinefast.com/tmpl_article_page.html ./usaonlinepaydayloans.net/
+cp /home/user/www/cashadvanceonlinefast.com/tmpl_articles.html ./usaonlinepaydayloans.net/
+cp /home/user/www/cashadvanceonlinefast.com/get_articles_list.php ./usaonlinepaydayloans.net/
+cp /home/user/www/cashadvanceonlinefast.com/index.php ./usaonlinepaydayloans.net/
+
+cp /home/user/www/cashadvanceonlinefast.com/tmpl_article_page.html ./usapersonalloans.org/
+cp /home/user/www/cashadvanceonlinefast.com/tmpl_articles.html ./usapersonalloans.org/
+cp /home/user/www/cashadvanceonlinefast.com/get_articles_list.php ./usapersonalloans.org/
+cp /home/user/www/cashadvanceonlinefast.com/index.php ./usapersonalloans.org/
+
+4.
+mkdir ./usacashadvanceonlinefast.com/artcls_new
+mkdir ./usainstallmentloans.org/artcls_new
+mkdir ./usaonlinepaydayloans.net/artcls_new
+mkdir ./usapersonalloans.org/artcls_new
