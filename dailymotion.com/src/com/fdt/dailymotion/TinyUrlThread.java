@@ -3,11 +3,13 @@ package com.fdt.dailymotion;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -26,6 +28,7 @@ import com.fdt.dailymotion.task.TinyUrlTask;
 import com.fdt.dailymotion.task.TinyUrlTaskFactory;
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
+import com.fdt.utils.Utils;
 
 public class TinyUrlThread extends Thread{
 
@@ -122,7 +125,6 @@ public class TinyUrlThread extends Thread{
 	
 	private String getFileAsString(File file) throws Exception{
 		//read account list
-		FileReader fr = null;
 		BufferedReader br = null;
 		boolean isFirstLineSaved = false;
 		
@@ -131,8 +133,7 @@ public class TinyUrlThread extends Thread{
 		StringBuilder fileAsStr = new StringBuilder();
 		
 		try {
-			fr = new FileReader(file);
-			br = new BufferedReader(fr);
+			br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
 
 			String line;
 			while( (line = br.readLine()) != null){
@@ -147,12 +148,6 @@ public class TinyUrlThread extends Thread{
 			try {
 				if(br != null)
 					br.close();
-			} catch (Throwable e) {
-				log.warn("Error while initializtion", e);
-			}
-			try {
-				if(fr != null)
-					fr.close();
 			} catch (Throwable e) {
 				log.warn("Error while initializtion", e);
 			}
@@ -189,7 +184,15 @@ public class TinyUrlThread extends Thread{
 
 			TagNode html = null;
 		
-			html = cleaner.clean(is,"UTF-8");
+			//html = cleaner.clean(is,"UTF-8");
+			
+			//new File("./resp_tinyurl.htm").delete();
+			//TODO Fix INVALID html code
+			String htmlResp = getResponseAsString(is).toString().replace("//-->", "//--");
+			htmlResp = htmlResp.replace("//--", "//-->");
+			
+			html = cleaner.clean(htmlResp);
+			//Utils.appendStringToFile(htmlResp, new File("./resp_tinyurl.htm"));
 			
 			String tinyUrl = ((TagNode)html.evaluateXPath("//div[@class='indent']/b[1]")[0]).getText().toString();
 			//int code = conn.getResponseCode();
@@ -202,6 +205,20 @@ public class TinyUrlThread extends Thread{
 				try{is.close();}catch(Throwable e){}
 			}
 		}
+	}
+	
+	private StringBuilder getResponseAsString(InputStream is)
+			throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(is));
+
+		String line;
+		StringBuilder responseStr = new StringBuilder();
+		while ((line = br.readLine()) != null) {
+			responseStr.append(line).append(LINE_FEED);
+		}
+		is.close();
+		return responseStr;
 	}
 	
 	private void appendStringToFile(String str, File file) {

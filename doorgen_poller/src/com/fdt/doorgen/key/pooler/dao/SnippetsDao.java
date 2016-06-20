@@ -59,6 +59,75 @@ public class SnippetsDao extends DaoCommon {
 		return result;
 	}
 	
+	public int[] insertSnippets(List<String> sentenceses, int id){
+		PreparedStatement batchStatement = null;
+		int[] result = null;
+		try {
+			//TODO Insert snippets & page_content tables.
+			batchStatement = connection.prepareStatement("INSERT INTO snippets (key_id,title,description,upd_dt) " +
+					"SELECT k.id, ?, ?, now() " + 
+					"FROM door_keys k " + 
+					"WHERE k.id = ?");
+			for(String sentence : sentenceses){
+				batchStatement.setString(1, DoorUtils.getFirstSmblUpper(sentence));
+				batchStatement.setString(2, DoorUtils.cleanString(sentence));
+				batchStatement.setInt(3, id);
+				batchStatement.addBatch();
+			}
+
+			if(batchStatement != null){
+				result = batchStatement.executeBatch(); // Execute every 1000 items.
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally{
+			if(batchStatement != null){
+				try {
+					batchStatement.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return result;
+	}
+	
+	public int deleteAllSnippets4Key(int id){
+		PreparedStatement prpStatement = null;
+		int result = -1;
+		try {
+			//TODO Insert snippets & page_content tables.
+			prpStatement = connection.prepareStatement("DELETE FROM snippets WHERE key_id = ?");
+			
+			prpStatement.setInt(1, id);
+
+			if(prpStatement != null){
+				result = prpStatement.executeUpdate();
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally{
+			if(prpStatement != null){
+				try {
+					prpStatement.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return result;
+	}
+	
 	/**
 	 * Getting all snippets (already used and not used) for appropriated key.
 	 * @param keyId

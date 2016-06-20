@@ -35,11 +35,13 @@ public class NewsTask{
 	private String shortUrlList;
 
 	private String videoTitle = "";
+	
 	private String videoid = "";
 	private String imageUrl = "";
 	private String postLink = "";
 
 	private String key = "";
+	private String author = "";
 	private String snippets = "";
 
 	private String uploadUrl = "";
@@ -103,6 +105,10 @@ public class NewsTask{
 					}
 					case 2:{
 						videoTitle = line.trim();
+						break;
+					}
+					case 3:{
+						author = line.substring(line.indexOf("by") + 2).trim();
 						break;
 					}
 					}

@@ -7,6 +7,7 @@ import java.util.concurrent.Callable;
 
 import org.apache.log4j.Logger;
 
+import com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner;
 import com.fdt.scrapper.SnippetExtractor;
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
@@ -18,15 +19,15 @@ import com.fdt.scrapper.task.TaskFactory;
  *
  * @author Administrator
  */
-public class DoorgenPoolerThread implements Callable<String> {
-	private static final Logger log = Logger.getLogger(DoorgenPoolerThread.class);
+public class DoorgenPoolerSnippetsThread extends AbstractDoorgenPoolerThread<String> implements Callable<String>{
+	private static final Logger log = Logger.getLogger(DoorgenPoolerSnippetsThread.class);
 
 	private SnippetTaskWrapper snippetTask = null;
 	private ProxyFactory proxyFactory = null;
 	private TaskFactory taskFactory = null;
-	private int minSnipCount4Extract = DoorgenPoolerRunner.MIN_SNIPPET_COUNT_FOR_POST_PAGE;
+	private int minSnipCount4Extract = DoorgenPoolerSnippetsRunner.MIN_SNIPPET_COUNT_FOR_POST_PAGE;
 
-	public DoorgenPoolerThread(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory, int minSnipCount4Extract) {
+	public DoorgenPoolerSnippetsThread(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, TaskFactory taskFactory, int minSnipCount4Extract) {
 		super();
 
 		this.snippetTask = snippetTask;
@@ -37,11 +38,17 @@ public class DoorgenPoolerThread implements Callable<String> {
 
 	public String call() throws Exception
 	{
+		return threadCall();
+	}
+	
+	@Override
+	public String threadCall() throws Exception {
 		taskFactory.incRunThreadsCount();
 		boolean errExist = false;
 
 		Random rnd = new Random();
 		String generatedContent = "";
+		
 		HashSet<Snippet> snippetResult = new HashSet<Snippet>();
 		snippetTask.selectRandTask().setPage(50 + rnd.nextInt(20));
 		ProxyConnector proxyConnector = proxyFactory.getRandomProxyConnector();

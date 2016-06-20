@@ -107,12 +107,15 @@ public class SnippetExtractor {
 		this.task = snippetTask;
 	}
 	
-	public SnippetExtractor(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList, int minSnipCnt, int maxSnipCnt) throws MalformedURLException, IOException {
+	public SnippetExtractor(SnippetTaskWrapper snippetTask, ProxyFactory proxyFactory, ArrayList<String> linkList, int minSnipCnt, int maxSnipCnt, int minLinkCnt, int maxLinkCnt) throws MalformedURLException, IOException {
 		this();
 
 		this.proxyFactory = proxyFactory;
 		this.linkList = linkList;
 		this.task = snippetTask;
+		
+		MIN_LINK_COUNT = minLinkCnt;
+		MAX_LINK_COUNT = maxLinkCnt;
 		
 		MIN_SNIPPET_COUNT = minSnipCnt;
 		MAX_SNIPPET_COUNT = maxSnipCnt;
@@ -352,7 +355,7 @@ public class SnippetExtractor {
 		}else{
 			linkCount = getRandomValue(MIN_LINK_COUNT, MAX_LINK_COUNT);
 		}
-
+		
 		//reduce link count
 		while(linkList.size() > linkCount){
 			linkList.remove(rnd.nextInt(linkList.size()));
@@ -375,7 +378,7 @@ public class SnippetExtractor {
 			}*/
 		}
 
-		log.debug(String.format("Snippets.size() = (%d); linkList.size() = (%d), snipCount = (%d)", snippets.size(), linkList.size(), snipCount));
+		log.debug(String.format("Snippets.size() = (%d); linkList.size() = (%d), linkCount = %d, snipCount = (%d)", snippets.size(), linkList.size(), linkCount, snipCount));
 
 		StringBuilder snippetsContent = new StringBuilder();
 

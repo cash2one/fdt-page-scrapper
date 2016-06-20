@@ -106,7 +106,7 @@ public class ArticleContentDao extends DaoCommon {
 	
 	public long getMaxPostDate() throws SQLException{
 		List<InputParam> inParams = new ArrayList<InputParam>();
-		String slcQuery = 	" SELECT UNIX_TIMESTAMP(MAX(ac.post_dt)) max_post_date FROM article_content ac ";
+		String slcQuery = 	" SELECT IFNULL(UNIX_TIMESTAMP(MAX(ac.post_dt)),UNIX_TIMESTAMP(now())) max_post_date FROM article_content ac ";
 		List<List<String>> result = getPagesBySelect(slcQuery, inParams, new String[]{"max_post_date"});
 		return Long.valueOf(result.get(0).get(0));
 	}

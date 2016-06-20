@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/us/;USA
+http://www.meetup.com/cities/ca/;Canada
+http://www.meetup.com/cities/it/;Italy
+http://www.meetup.com/cities/gb/;United Kingdom
+http://www.meetup.com/cities/ar/;Argentina
+http://www.meetup.com/cities/au/;Australia
+http://www.meetup.com/cities/at/;Austria
+http://www.meetup.com/cities/bd/;Bangladesh
+http://www.meetup.com/cities/be/;Belgium
+http://www.meetup.com/cities/br/;Brazil
+http://www.meetup.com/cities/cl/;Chile
+http://www.meetup.com/cities/cn/;China
+http://www.meetup.com/cities/co/;Colombia
+http://www.meetup.com/cities/dk/;Denmark
+http://www.meetup.com/cities/eg/;Egypt
+http://www.meetup.com/cities/fi/;Finland
+http://www.meetup.com/cities/fr/;France
+http://www.meetup.com/cities/de/;Germany
+http://www.meetup.com/cities/gr/;Greece
+http://www.meetup.com/cities/hk/;Hong Kong
+http://www.meetup.com/cities/hu/;Hungary
+http://www.meetup.com/cities/in/;India
+http://www.meetup.com/cities/id/;Indonesia
+http://www.meetup.com/cities/ir/;Iran
+http://www.meetup.com/cities/ie/;Ireland
+http://www.meetup.com/cities/il/;Israel
+http://www.meetup.com/cities/jp/;Japan
+http://www.meetup.com/cities/ke/;Kenya
+http://www.meetup.com/cities/kr/;Korea (South)
+http://www.meetup.com/cities/my/;Malaysia
+http://www.meetup.com/cities/mx/;Mexico
+http://www.meetup.com/cities/nl/;Netherlands
+http://www.meetup.com/cities/nz/;New Zealand
+http://www.meetup.com/cities/ng/;Nigeria
+http://www.meetup.com/cities/no/;Norway
+http://www.meetup.com/cities/pk/;Pakistan
+http://www.meetup.com/cities/ph/;Philippines
+http://www.meetup.com/cities/pl/;Poland
+http://www.meetup.com/cities/pt/;Portugal
+http://www.meetup.com/cities/ro/;Romania
+http://www.meetup.com/cities/ru/;Russia
+http://www.meetup.com/cities/sa/;Saudi Arabia
+http://www.meetup.com/cities/sg/;Singapore
+http://www.meetup.com/cities/za/;South Africa
+http://www.meetup.com/cities/es/;Spain
+http://www.meetup.com/cities/se/;Sweden
+http://www.meetup.com/cities/ch/;Switzerland
+http://www.meetup.com/cities/th/;Thailand
+http://www.meetup.com/cities/tr/;Turkey
+http://www.meetup.com/cities/ae/;U.A.E.

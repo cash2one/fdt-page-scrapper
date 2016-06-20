@@ -1,0 +1,222 @@
+http://www.meetup.com/cities/af/;Afghanistan
+http://www.meetup.com/cities/al/;Albania
+http://www.meetup.com/cities/dz/;Algeria
+http://www.meetup.com/cities/as/;American Samoa
+http://www.meetup.com/cities/ad/;Andorra
+http://www.meetup.com/cities/ao/;Angola
+http://www.meetup.com/cities/ai/;Anguilla
+http://www.meetup.com/cities/aq/;Antarctica
+http://www.meetup.com/cities/ag/;Antigua &amp; Barbuda
+http://www.meetup.com/cities/ar/;Argentina
+http://www.meetup.com/cities/am/;Armenia
+http://www.meetup.com/cities/aw/;Aruba
+http://www.meetup.com/cities/au/;Australia
+http://www.meetup.com/cities/at/;Austria
+http://www.meetup.com/cities/az/;Azerbaijan
+http://www.meetup.com/cities/bs/;Bahamas
+http://www.meetup.com/cities/bh/;Bahrain
+http://www.meetup.com/cities/bd/;Bangladesh
+http://www.meetup.com/cities/bb/;Barbados
+http://www.meetup.com/cities/by/;Belarus
+http://www.meetup.com/cities/be/;Belgium
+http://www.meetup.com/cities/bz/;Belize
+http://www.meetup.com/cities/bj/;Benin
+http://www.meetup.com/cities/bm/;Bermuda
+http://www.meetup.com/cities/bt/;Bhutan
+http://www.meetup.com/cities/bo/;Bolivia
+http://www.meetup.com/cities/ba/;Bosnia-Herzegovina
+http://www.meetup.com/cities/bw/;Botswana
+http://www.meetup.com/cities/br/;Brazil
+http://www.meetup.com/cities/bn/;Brunei
+http://www.meetup.com/cities/bg/;Bulgaria
+http://www.meetup.com/cities/bf/;Burkina Faso
+http://www.meetup.com/cities/bi/;Burundi
+http://www.meetup.com/cities/kh/;Cambodia
+http://www.meetup.com/cities/cm/;Cameroon
+http://www.meetup.com/cities/ca/;Canada
+http://www.meetup.com/cities/cv/;Cape Verde
+http://www.meetup.com/cities/ky/;Cayman Islands
+http://www.meetup.com/cities/cf/;Central Africa
+http://www.meetup.com/cities/td/;Chad
+http://www.meetup.com/cities/cl/;Chile
+http://www.meetup.com/cities/cn/;China
+http://www.meetup.com/cities/co/;Colombia
+http://www.meetup.com/cities/km/;Comoros
+http://www.meetup.com/cities/cg/;Congo
+http://www.meetup.com/cities/cd/;Congo (Dem. Rep.)
+http://www.meetup.com/cities/ck/;Cook Islands
+http://www.meetup.com/cities/cr/;Costa Rica
+http://www.meetup.com/cities/hr/;Croatia
+http://www.meetup.com/cities/cu/;Cuba
+http://www.meetup.com/cities/cw/;Cura&ccedil;ao
+http://www.meetup.com/cities/cy/;Cyprus
+http://www.meetup.com/cities/cz/;Czech Republic
+http://www.meetup.com/cities/dk/;Denmark
+http://www.meetup.com/cities/dj/;Djibouti
+http://www.meetup.com/cities/dm/;Dominica
+http://www.meetup.com/cities/do/;Dominican Republic
+http://www.meetup.com/cities/tp/;East Timor
+http://www.meetup.com/cities/ec/;Ecuador
+http://www.meetup.com/cities/eg/;Egypt
+http://www.meetup.com/cities/sv/;El Salvador
+http://www.meetup.com/cities/gq/;Equatorial Guinea
+http://www.meetup.com/cities/er/;Eritrea
+http://www.meetup.com/cities/ee/;Estonia
+http://www.meetup.com/cities/et/;Ethiopia
+http://www.meetup.com/cities/fk/;Falkland Islands
+http://www.meetup.com/cities/fo/;Faroe Islands
+http://www.meetup.com/cities/fj/;Fiji
+http://www.meetup.com/cities/fi/;Finland
+http://www.meetup.com/cities/fr/;France
+http://www.meetup.com/cities/gf/;French Guiana
+http://www.meetup.com/cities/pf/;French Polynesia
+http://www.meetup.com/cities/ga/;Gabon
+http://www.meetup.com/cities/gm/;Gambia
+http://www.meetup.com/cities/ge/;Georgia
+http://www.meetup.com/cities/de/;Germany
+http://www.meetup.com/cities/gh/;Ghana
+http://www.meetup.com/cities/gi/;Gibraltar
+http://www.meetup.com/cities/gr/;Greece
+http://www.meetup.com/cities/gl/;Greenland
+http://www.meetup.com/cities/gd/;Grenada
+http://www.meetup.com/cities/gp/;Guadeloupe
+http://www.meetup.com/cities/gu/;Guam
+http://www.meetup.com/cities/gt/;Guatemala
+http://www.meetup.com/cities/gn/;Guinea
+http://www.meetup.com/cities/gw/;Guinea Bissau
+http://www.meetup.com/cities/gy/;Guyana
+http://www.meetup.com/cities/ht/;Haiti
+http://www.meetup.com/cities/hn/;Honduras
+http://www.meetup.com/cities/hu/;Hungary
+http://www.meetup.com/cities/is/;Iceland
+http://www.meetup.com/cities/in/;India
+http://www.meetup.com/cities/id/;Indonesia
+http://www.meetup.com/cities/ir/;Iran
+http://www.meetup.com/cities/iq/;Iraq
+http://www.meetup.com/cities/ie/;Ireland
+http://www.meetup.com/cities/il/;Israel
+http://www.meetup.com/cities/it/;Italy
+http://www.meetup.com/cities/ci/;Ivory Coast
+http://www.meetup.com/cities/jm/;Jamaica
+http://www.meetup.com/cities/jp/;Japan
+http://www.meetup.com/cities/jo/;Jordan
+http://www.meetup.com/cities/kz/;Kazakhstan
+http://www.meetup.com/cities/ke/;Kenya
+http://www.meetup.com/cities/ki/;Kiribati
+http://www.meetup.com/cities/kp/;Korea (North)
+http://www.meetup.com/cities/kr/;Korea (South)
+http://www.meetup.com/cities/xk/;Kosovo
+http://www.meetup.com/cities/kw/;Kuwait
+http://www.meetup.com/cities/kg/;Kyrgyzstan
+http://www.meetup.com/cities/la/;Laos
+http://www.meetup.com/cities/lv/;Latvia
+http://www.meetup.com/cities/lb/;Lebanon
+http://www.meetup.com/cities/ls/;Lesotho
+http://www.meetup.com/cities/lr/;Liberia
+http://www.meetup.com/cities/ly/;Libya
+http://www.meetup.com/cities/li/;Liechtenstein
+http://www.meetup.com/cities/lt/;Lithuania
+http://www.meetup.com/cities/lu/;Luxembourg
+http://www.meetup.com/cities/mk/;Macedonia
+http://www.meetup.com/cities/mg/;Madagascar
+http://www.meetup.com/cities/mw/;Malawi
+http://www.meetup.com/cities/my/;Malaysia
+http://www.meetup.com/cities/mv/;Maldives
+http://www.meetup.com/cities/ml/;Mali
+http://www.meetup.com/cities/mt/;Malta
+http://www.meetup.com/cities/mh/;Marshall Islands
+http://www.meetup.com/cities/mq/;Martinique
+http://www.meetup.com/cities/mr/;Mauritania
+http://www.meetup.com/cities/mu/;Mauritius
+http://www.meetup.com/cities/yt/;Mayotte
+http://www.meetup.com/cities/mx/;Mexico
+http://www.meetup.com/cities/fm/;Micronesia
+http://www.meetup.com/cities/md/;Moldova
+http://www.meetup.com/cities/mc/;Monaco
+http://www.meetup.com/cities/mn/;Mongolia
+http://www.meetup.com/cities/me/;Montenegro
+http://www.meetup.com/cities/ma/;Morocco
+http://www.meetup.com/cities/mz/;Mozambique
+http://www.meetup.com/cities/mm/;Myanmar
+http://www.meetup.com/cities/na/;Namibia
+http://www.meetup.com/cities/nr/;Nauru
+http://www.meetup.com/cities/np/;Nepal
+http://www.meetup.com/cities/nl/;Netherlands
+http://www.meetup.com/cities/an/;Netherlands Antilles
+http://www.meetup.com/cities/nc/;New Caledonia
+http://www.meetup.com/cities/nz/;New Zealand
+http://www.meetup.com/cities/ni/;Nicaragua
+http://www.meetup.com/cities/ne/;Niger
+http://www.meetup.com/cities/ng/;Nigeria
+http://www.meetup.com/cities/nu/;Niue
+http://www.meetup.com/cities/no/;Norway
+http://www.meetup.com/cities/om/;Oman
+http://www.meetup.com/cities/pk/;Pakistan
+http://www.meetup.com/cities/pw/;Palau
+http://www.meetup.com/cities/ps/;Palestine
+http://www.meetup.com/cities/pa/;Panama
+http://www.meetup.com/cities/pg/;Papua New Guinea
+http://www.meetup.com/cities/py/;Paraguay
+http://www.meetup.com/cities/pe/;Peru
+http://www.meetup.com/cities/ph/;Philippines
+http://www.meetup.com/cities/pl/;Poland
+http://www.meetup.com/cities/pt/;Portugal
+http://www.meetup.com/cities/qa/;Qatar
+http://www.meetup.com/cities/ro/;Romania
+http://www.meetup.com/cities/ru/;Russia
+http://www.meetup.com/cities/rw/;Rwanda
+http://www.meetup.com/cities/re/;R&eacute;union
+http://www.meetup.com/cities/eh/;Sahara
+http://www.meetup.com/cities/sh/;St. Helena
+http://www.meetup.com/cities/kn/;St. Kitts &amp; Nevis
+http://www.meetup.com/cities/lc/;St. Lucia
+http://www.meetup.com/cities/ws/;Samoa
+http://www.meetup.com/cities/sm/;San Marino
+http://www.meetup.com/cities/sa/;Saudi Arabia
+http://www.meetup.com/cities/sn/;Senegal
+http://www.meetup.com/cities/rs/;Serbia
+http://www.meetup.com/cities/sc/;Seychelles
+http://www.meetup.com/cities/sl/;Sierra Leone
+http://www.meetup.com/cities/sg/;Singapore
+http://www.meetup.com/cities/sk/;Slovakia
+http://www.meetup.com/cities/si/;Slovenia
+http://www.meetup.com/cities/sb/;Solomon Islands
+http://www.meetup.com/cities/so/;Somalia
+http://www.meetup.com/cities/za/;South Africa
+http://www.meetup.com/cities/es/;Spain
+http://www.meetup.com/cities/lk/;Sri Lanka
+http://www.meetup.com/cities/sd/;Sudan
+http://www.meetup.com/cities/sr/;Suriname
+http://www.meetup.com/cities/sz/;Swaziland
+http://www.meetup.com/cities/se/;Sweden
+http://www.meetup.com/cities/ch/;Switzerland
+http://www.meetup.com/cities/sy/;Syria
+http://www.meetup.com/cities/tw/;Taiwan
+http://www.meetup.com/cities/tj/;Tajikistan
+http://www.meetup.com/cities/tz/;Tanzania
+http://www.meetup.com/cities/tf/;Terres Australes
+http://www.meetup.com/cities/th/;Thailand
+http://www.meetup.com/cities/tg/;Togo
+http://www.meetup.com/cities/tk/;Tokelau
+http://www.meetup.com/cities/to/;Tonga
+http://www.meetup.com/cities/tt/;Trinidad &amp; Tobago
+http://www.meetup.com/cities/tn/;Tunisia
+http://www.meetup.com/cities/tr/;Turkey
+http://www.meetup.com/cities/tm/;Turkmenistan
+http://www.meetup.com/cities/tv/;Tuvalu
+http://www.meetup.com/cities/ug/;Uganda
+http://www.meetup.com/cities/ua/;Ukraine
+http://www.meetup.com/cities/ae/;U.A.E.
+http://www.meetup.com/cities/gb/;United Kingdom
+http://www.meetup.com/cities/us/;USA
+http://www.meetup.com/cities/uy/;Uruguay
+http://www.meetup.com/cities/uz/;Uzbekistan
+http://www.meetup.com/cities/vu/;Vanuatu
+http://www.meetup.com/cities/va/;Vatican
+http://www.meetup.com/cities/ve/;Venezuela
+http://www.meetup.com/cities/vn/;Vietnam
+http://www.meetup.com/cities/vg/;Virgin Islands
+http://www.meetup.com/cities/wf/;Wallis &amp; Futuna
+http://www.meetup.com/cities/ye/;Yemen
+http://www.meetup.com/cities/zm/;Zambia
+http://www.meetup.com/cities/zw/;Zimbabwe

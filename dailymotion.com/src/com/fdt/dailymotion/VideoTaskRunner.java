@@ -249,8 +249,6 @@ public class VideoTaskRunner {
 				File linkList = new File(linkListFilePath);
 				File linkTitleList = new File(linkTitleListFilePath);
 
-				File templateFile = new File(templateFilePath);
-
 				//TODO Copy account list file
 				File accountFile = new File(accListFilePath);
 				accountFile.renameTo(new File(accListFilePath + "_" + String.valueOf(System.currentTimeMillis())));

@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.regex.Matcher;
@@ -14,17 +15,17 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
-import com.fdt.doorgen.key.pooler.DoorgenPoolerRunner;
 import com.fdt.doorgen.key.pooler.content.ContentStrategy;
 import com.fdt.doorgen.key.pooler.dao.ArticleContentDao;
 import com.fdt.doorgen.key.pooler.dao.ArticleTemplateDao;
+import com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner;
 import com.fdt.doorgen.key.pooler.util.DoorUtils;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.utils.Utils;
 
 public class ArticlesPosterUpdaterRunner {
 
-	private static final Logger log = Logger.getLogger(DoorgenPoolerRunner.class);
+	private static final Logger log = Logger.getLogger(DoorgenPoolerSnippetsRunner.class);
 
 	private String connectionString = null;
 
@@ -44,6 +45,8 @@ public class ArticlesPosterUpdaterRunner {
 	
 	private static final String POST_INTERVAL_LABEL = "post_interval";
 	
+	private static boolean oneDayLoad = false;
+	
 	private Random rnd = new Random();
 
 	private Connection connection;
@@ -56,12 +59,14 @@ public class ArticlesPosterUpdaterRunner {
 	 * @throws Exception 
 	 */
 	public static void main(String[] args) throws Exception{
-		if(args.length < 1){
+		if(args.length < 2){
 			System.out.print("Not enought arguments....");
 		}else{
 			System.out.println("Working Directory = " +  System.getProperty("user.dir")); 
 			ConfigManager.getInstance().loadProperties(args[0]);
 			System.out.println(args[0]);
+			
+			oneDayLoad = Boolean.valueOf(args[1]);
 
 			DOMConfigurator.configure("log4j_articles_updater.xml");
 
@@ -172,8 +177,9 @@ public class ArticlesPosterUpdaterRunner {
 		
 		int idxCnt = 0;
 		
+		Collections.shuffle(tmplWoCntntIds);
+		
 		for(List<String> tmpl : tmplWoCntntIds){
-			
 			int rndDayCnt = postInterval[0] * (idxCnt/postInterval[1]) + rnd.nextInt(postInterval[0]);
 			postTime = DoorUtils.getRndNormalDistTime() + startOtDay + DoorUtils.DAY_MIL_SEC_CNT * (rndDayCnt);
 			
@@ -186,6 +192,10 @@ public class ArticlesPosterUpdaterRunner {
 			);
 			
 			idxCnt++;
+			
+			if(oneDayLoad && idxCnt/postInterval[1] >= 1){
+				break;
+			}
 		}
 	}
 	
@@ -262,7 +272,7 @@ public class ArticlesPosterUpdaterRunner {
 	}
 	
 	private String makeUrlKey(String input){
-		return input.replaceAll("[^0-9a-zA-z\\s\\-]", " ").replaceAll("\\s+", "-").toLowerCase();
+		return input.replaceAll("[^0-9a-zA-z\\s\\-]", " ").trim().replaceAll("\\s+", "-").toLowerCase();
 	}
 
 }

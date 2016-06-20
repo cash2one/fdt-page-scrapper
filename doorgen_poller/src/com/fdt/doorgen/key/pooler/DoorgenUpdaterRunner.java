@@ -16,13 +16,14 @@ import com.fdt.doorgen.key.pooler.dao.KeysDao;
 import com.fdt.doorgen.key.pooler.dao.PageContentDao;
 import com.fdt.doorgen.key.pooler.dao.PagesDao;
 import com.fdt.doorgen.key.pooler.dao.SnippetsDao;
+import com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner;
 import com.fdt.doorgen.key.pooler.util.DoorUtils;
 import com.fdt.scrapper.task.ConfigManager;
 
 //TODO 5. Удаляем уже не используемые новости
 public class DoorgenUpdaterRunner {
 
-	private static final Logger log = Logger.getLogger(DoorgenPoolerRunner.class);
+	private static final Logger log = Logger.getLogger(DoorgenPoolerSnippetsRunner.class);
 
 	//TODO Read host name from config
 	private String connectionString = null;

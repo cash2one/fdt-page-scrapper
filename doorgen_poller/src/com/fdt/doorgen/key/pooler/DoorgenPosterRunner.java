@@ -19,12 +19,13 @@ import com.fdt.doorgen.key.pooler.dao.KeysDao;
 import com.fdt.doorgen.key.pooler.dao.PageContentDao;
 import com.fdt.doorgen.key.pooler.dao.PagesDao;
 import com.fdt.doorgen.key.pooler.dao.SnippetsDao;
+import com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner;
 import com.fdt.doorgen.key.pooler.util.DoorUtils;
 import com.fdt.scrapper.task.ConfigManager;
 
 public class DoorgenPosterRunner {
 
-	private static final Logger log = Logger.getLogger(DoorgenPoolerRunner.class);
+	private static final Logger log = Logger.getLogger(DoorgenPoolerSnippetsRunner.class);
 
 	//TODO Read host name from config
 	private String connectionString = null;
@@ -63,18 +64,18 @@ public class DoorgenPosterRunner {
 
 			DOMConfigurator.configure("log4j_poster.xml");
 
-			DoorgenPosterRunner taskRunner = null;
+			DoorgenPosterRunner taskposter = null;
 			try {
-				taskRunner = new DoorgenPosterRunner(args[0]);
+				taskposter = new DoorgenPosterRunner(args[0]);
 			} catch (Exception e) {
 				log.error(e.getMessage(), e);
 			}
 
-			taskRunner.executeWrapper();
+			taskposter.executePoster();
 		}
 	}
 
-	private void executeWrapper() throws Exception{
+	private void executePoster() throws Exception{
 		try{
 			List<Integer> regionList = STRATEGY_POLLER.getSrtgPoller().getRegionList(keysDao);
 

@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.sql.Types;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,7 +14,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import com.fdt.doorgen.key.pooler.content.ContentStrategy;
-import com.fdt.doorgen.key.pooler.content.StrategyPoller;
+import com.fdt.utils.Utils;
 
 public class KeysDao extends DaoCommon{
 	
@@ -70,7 +71,7 @@ public class KeysDao extends DaoCommon{
 		ArrayList<InputParam> inParams = new ArrayList<InputParam>();
 		inParams.add(new InputParam(keyValue, Types.VARCHAR));
 		String slcQuery = 	" SELECT DISTINCT k.id " +
-							" FROM door_keys " + 
+							" FROM door_keys k " + 
 							" WHERE k.key_value = ? ";
 		return getPagesBySelect(slcQuery, inParams, new String[]{"id"});
 	}
@@ -96,5 +97,44 @@ public class KeysDao extends DaoCommon{
 							" LEFT JOIN pages p ON t.id = p.key_id LEFT JOIN page_content pc ON p.id = pc.page_id " +
 							" WHERE (p.id IS NULL OR pc.id IS NULL) AND t.key_value <> '/' ";
 		return getPagesBySelect(slcQuery, new String[]{"id", "key_value"});
+	}
+	
+	public int insertKey(String key){
+		PreparedStatement prprStatement = null;
+		int result = -1;
+		try {
+			//TODO Insert snippets & page_content tables.
+			prprStatement = connection.prepareStatement(""
+					+ " INSERT INTO door_keys (key_value,key_value_latin,upd_dt) "
+					//+ " SELECT ?, REPLACE(encodestring(?) COLLATE utf8_unicode_ci ,' ','-'), now()");
+					+ " SELECT ?, REPLACE(?,' ','-'), now()"
+					+ " ON DUPLICATE KEY UPDATE upd_dt=now()", Statement.RETURN_GENERATED_KEYS);
+			prprStatement.setString(1, Utils.getFirstSmblUpper(key));
+			prprStatement.setString(2, key.trim());
+			
+			prprStatement.executeUpdate();
+			
+			if(prprStatement != null){
+				ResultSet rs = prprStatement.getGeneratedKeys();
+				if (rs != null && rs.next()) {
+					result = rs.getInt(1);
+				}
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally{
+			if(prprStatement != null){
+				try {
+					prprStatement.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return result;
 	}
 }

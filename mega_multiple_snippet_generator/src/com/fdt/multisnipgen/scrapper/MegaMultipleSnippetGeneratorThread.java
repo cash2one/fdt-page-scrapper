@@ -92,7 +92,7 @@ public class MegaMultipleSnippetGeneratorThread implements Callable<String> {
 				SnippetExtractor snippetExtractor;
 				
 				if(isUseLinkCnt4SnpCnt && isAddLinks){
-					snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList, linkList.size() + minSnpCntIncrement, linkList.size() + maxSnpCntIncrement);
+					snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList, linkList.size() + minSnpCntIncrement, linkList.size() + maxSnpCntIncrement, linkList.size(), linkList.size());
 				}else{
 					snippetExtractor = new SnippetExtractor(snippetTask, proxyFactory, linkList);
 				}

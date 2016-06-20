@@ -6,7 +6,8 @@ public enum ContentStrategy {
 	
 	VTOPAX_RU("VTOPAX_RU",true,false, new VtopaxStrategyPoller()),
 	HUMAN_CAPITAL_CR_COM("HUMAN_CAPITAL_CR_COM",false,true,new HumanCapitalcrStrategyPoller()),
-	VTOPAXMIRA_RU("VTOPAXMIRA_RU",true,true,new VtopaxMiraRuStrategyPoller());
+	VTOPAXMIRA_RU("VTOPAXMIRA_RU",true,true,new VtopaxMiraRuStrategyPoller()),
+	USALOANS("USALOANS",true,true,new UsaLoansVtopaxStrategyPoller());
 	
 	//String strategy name
 	private String srtgName = "DEFAULT";

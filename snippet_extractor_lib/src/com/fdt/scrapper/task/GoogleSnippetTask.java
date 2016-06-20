@@ -8,7 +8,7 @@ public class GoogleSnippetTask extends SnippetTask
 {
 	public GoogleSnippetTask(String keyWords){
 		super(keyWords);
-		this.setScrapperUrl("https://www.google.com/search?q=#KEY_WORDS#&lr=lang_#LANGUAGE#&oe=utf-8&gws_rd=ssl&start=#PAGE_NUM#");
+		this.setScrapperUrl("https://www.google.com/search?q=#KEY_WORDS#&lr=lang_#LANGUAGE#&tbs=lr:lang_1#LANGUAGE#&oe=utf-8&gws_rd=ssl&start=#PAGE_NUM#");
 		this.setXpathSnippet("li[class=g]");
 		////div[@class='srg']/div/div/h3[@class='r']/a"
 		this.setXpathTitle("div[class=srg] > div > div > h3[class=r] > a");

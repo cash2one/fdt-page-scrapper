@@ -1,4 +1,4 @@
-package com.fdt.doorgen.key.pooler;
+package com.fdt.doorgen.key.pooler.runner;
 
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
@@ -13,9 +13,12 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.xml.DOMConfigurator;
 
+import com.fdt.doorgen.key.pooler.DoorgenPoolerSnippetsThread;
+import com.fdt.doorgen.key.pooler.IResultProcessor;
+import com.fdt.doorgen.key.pooler.SaverThread;
 import com.fdt.doorgen.key.pooler.content.ContentStrategy;
+import com.fdt.doorgen.key.pooler.content.Pooler;
 import com.fdt.doorgen.key.pooler.dao.KeysDao;
 import com.fdt.doorgen.key.pooler.dao.PageContentDao;
 import com.fdt.doorgen.key.pooler.dao.PagesDao;
@@ -30,14 +33,14 @@ import com.fdt.scrapper.task.TaskFactory;
  *
  * @author Administrator
  */
-public class DoorgenPoolerRunner{
+public class DoorgenPoolerSnippetsRunner implements Pooler{
 
 	private static final String LANG_LABEL = "lang";
 
 	private static final String SOURCE_LABEL = "source";
 	private static final String FREQUENCY_LABEL = "frequency";
 
-	private static final Logger log = Logger.getLogger(DoorgenPoolerRunner.class);
+	private static final Logger log = Logger.getLogger(DoorgenPoolerSnippetsRunner.class);
 
 	private String proxyFilePath;
 	private int maxThreadCount;
@@ -96,43 +99,9 @@ public class DoorgenPoolerRunner{
 	private SnippetsDao snipDao;
 	private PageContentDao pageCntntDao;
 
-	/**
-	 * args[0] - path to config file
-	 * @throws Exception 
-	 */
-	public static void main(String[] args) throws Exception{
-		if(args.length < 1){
-			System.out.print("Not enought arguments....");
-		}else{
-			System.out.println("Working Directory = " +  System.getProperty("user.dir")); 
-			ConfigManager.getInstance().loadProperties(args[0]);
-			System.out.println(args[0]);
-			Authenticator.setDefault(new Authenticator() {
-				@Override
-				protected PasswordAuthentication getPasswordAuthentication() {
-					return new PasswordAuthentication(
-							ConfigManager.getInstance().getProperty(PROXY_LOGIN_LABEL),
-							ConfigManager.getInstance().getProperty(PROXY_PASS_LABEL).toCharArray()
-							);
-				}
-			});
-			DOMConfigurator.configure("log4j_pooler.xml");
-
-			DoorgenPoolerRunner taskRunner = null;
-			try {
-				taskRunner = new DoorgenPoolerRunner(args[0]);
-			} catch (Exception e) {
-				log.error(e.getMessage(), e);
-			}
-
-
-			taskRunner.executeWrapper();
-		}
-	}
-
-	private void executeWrapper() throws Exception{
+	public void executePooler() throws Exception{
 		try{
-			
+
 			pollContent(MIN_SNIPPET_COUNT_FOR_POST_PAGE);
 			keysList = getKeyList4Polling();
 			taskFactory.clear();
@@ -158,20 +127,8 @@ public class DoorgenPoolerRunner{
 		}
 	}
 
-	private ArrayList<String> getKeyList4Polling() throws ClassNotFoundException, SQLException{
-		//TODO Fill keys which have snippets but don't have pages
-		/*List<List<String>> keys4FillSnippets = keysDao.getKeysWithSnippets4FillPages();
-
-		for(List<String> row : keys4FillSnippets){
-
-		}*/
-
-		return keysDao.getKeyList4Polling(keyMap, MIN_SNIPPET_COUNT_FOR_POST_PAGE, STRATEGY_POLLER);
-	}
-
-	public DoorgenPoolerRunner(String cfgFilePath) throws Exception{
-
-		ConfigManager.getInstance().loadProperties(cfgFilePath);
+	public void initPooler() throws Exception
+	{
 		this.taskFactory = TaskFactory.getInstance();
 		this.proxyFilePath = ConfigManager.getInstance().getProperty(PROXY_LIST_FILE_PATH_LABEL);
 		this.maxThreadCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
@@ -237,7 +194,26 @@ public class DoorgenPoolerRunner{
 						);
 			}
 		});
+	}
 
+	private ArrayList<String> getKeyList4Polling() throws ClassNotFoundException, SQLException{
+		//TODO Fill keys which have snippets but don't have pages
+		/*List<List<String>> keys4FillSnippets = keysDao.getKeysWithSnippets4FillPages();
+
+		for(List<String> row : keys4FillSnippets){
+
+		}*/
+
+		return keysDao.getKeyList4Polling(keyMap, MIN_SNIPPET_COUNT_FOR_POST_PAGE, STRATEGY_POLLER);
+	}
+
+	public DoorgenPoolerSnippetsRunner() {
+		try{
+			initPooler();
+		}catch(Exception e){
+			//TODO Log error messages
+			log.fatal("Error during snippet pooler initialization", e);
+		}
 	}
 
 	/*public static void main(String[] args) {
@@ -253,7 +229,7 @@ public class DoorgenPoolerRunner{
 	}*/
 
 
-	public void execute(final String hostName, final String globalTitle) throws ClassNotFoundException, SQLException{
+	private void execute(final String hostName, final String globalTitle) throws ClassNotFoundException, SQLException{
 		synchronized (this) {
 			//run saver thread
 			saver = new SaverThread(taskFactory,new IResultProcessor() {
@@ -267,7 +243,7 @@ public class DoorgenPoolerRunner{
 
 			ExecutorService executor = Executors.newFixedThreadPool(taskFactory.getMAX_THREAD_COUNT());
 
-			DoorgenPoolerThread newThread = null;
+			DoorgenPoolerSnippetsThread newThread = null;
 			log.info("Total tasks: "+taskFactory.getTaskQueue().size());
 
 			while(!taskFactory.isTaskFactoryEmpty() || taskFactory.getRunThreadsCount() > 0){
@@ -277,12 +253,12 @@ public class DoorgenPoolerRunner{
 				if(task != null){
 					log.debug("Pending tasks: " + taskFactory.getTaskQueue().size()+ ". Success tasks: "+taskFactory.getSuccessQueue().size()+". Error tasks: " + taskFactory.getErrorQueue().size());
 					task.getCurrentTask().setPage(rnd.nextInt(maxPageNum));
-					
+
 					int snpCnt = Integer.valueOf(snipDao.getMinSnipCount4Key(task.getCurrentTask().getKeyWordsOrig()).get(0).get(0));
-					
+
 					log.debug(String.format("Key: '%s'; Current snippets count %d", task.getCurrentTask().getKeyWordsOrig(), snpCnt));
-					
-					newThread = new DoorgenPoolerThread(task, proxyFactory, taskFactory, DoorgenPoolerRunner.MIN_SNIPPET_COUNT_FOR_POST_PAGE - snpCnt);
+
+					newThread = new DoorgenPoolerSnippetsThread(task, proxyFactory, taskFactory, DoorgenPoolerSnippetsRunner.MIN_SNIPPET_COUNT_FOR_POST_PAGE - snpCnt);
 					executor.submit(newThread);
 					continue;
 				}
@@ -356,11 +332,11 @@ public class DoorgenPoolerRunner{
 
 		int ids[] = pageCntntDao.populateContent(keyId, pcId, -1, STRATEGY_POLLER);
 	}
-	
+
 	private void pollContent(int minSnpCnt) throws SQLException{
 		//TODO Polling keys that have snippets but don't have pages
 		List<List<String>> keysWOPages = keysDao.getKeysWithoutPagesAndPageContent(MIN_SNIPPET_COUNT_FOR_POST_PAGE);
-		
+
 		for(List<String> row : keysWOPages){
 			int keyId = Integer.valueOf(row.get(0));
 			String keyValue = row.get(1);
