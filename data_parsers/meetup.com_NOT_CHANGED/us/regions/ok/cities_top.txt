@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/us/ok/ada/;Ada;ada
+http://www.meetup.com/cities/us/ok/altus/;Altus;altus
+http://www.meetup.com/cities/us/ok/ardmore/;Ardmore;ardmore
+http://www.meetup.com/cities/us/ok/bartlesville/;Bartlesville;bartlesville
+http://www.meetup.com/cities/us/ok/bethany/;Bethany;bethany
+http://www.meetup.com/cities/us/ok/bixby/;Bixby;bixby
+http://www.meetup.com/cities/us/ok/blanchard/;Blanchard;blanchard
+http://www.meetup.com/cities/us/ok/broken_arrow/;Broken Arrow;broken_arrow
+http://www.meetup.com/cities/us/ok/catoosa/;Catoosa;catoosa
+http://www.meetup.com/cities/us/ok/chickasha/;Chickasha;chickasha
+http://www.meetup.com/cities/us/ok/choctaw/;Choctaw;choctaw
+http://www.meetup.com/cities/us/ok/claremore/;Claremore;claremore
+http://www.meetup.com/cities/us/ok/collinsville/;Collinsville;collinsville
+http://www.meetup.com/cities/us/ok/coweta/;Coweta;coweta
+http://www.meetup.com/cities/us/ok/cushing/;Cushing;cushing
+http://www.meetup.com/cities/us/ok/duncan/;Duncan;duncan
+http://www.meetup.com/cities/us/ok/durant/;Durant;durant
+http://www.meetup.com/cities/us/ok/edmond/;Edmond;edmond
+http://www.meetup.com/cities/us/ok/el_reno/;El Reno;el_reno
+http://www.meetup.com/cities/us/ok/enid/;Enid;enid
+http://www.meetup.com/cities/us/ok/fort_sill/;Fort Sill;fort_sill
+http://www.meetup.com/cities/us/ok/glenpool/;Glenpool;glenpool
+http://www.meetup.com/cities/us/ok/guthrie/;Guthrie;guthrie
+http://www.meetup.com/cities/us/ok/harrah/;Harrah;harrah
+http://www.meetup.com/cities/us/ok/jenks/;Jenks;jenks
+http://www.meetup.com/cities/us/ok/lawton/;Lawton;lawton
+http://www.meetup.com/cities/us/ok/mcalester/;McAlester;mcalester
+http://www.meetup.com/cities/us/ok/mcloud/;McLoud;mcloud
+http://www.meetup.com/cities/us/ok/miami/;Miami;miami
+http://www.meetup.com/cities/us/ok/muskogee/;Muskogee;muskogee
+http://www.meetup.com/cities/us/ok/mustang/;Mustang;mustang
+http://www.meetup.com/cities/us/ok/newalla/;Newalla;newalla
+http://www.meetup.com/cities/us/ok/noble/;Noble;noble
+http://www.meetup.com/cities/us/ok/norman/;Norman;norman
+http://www.meetup.com/cities/us/ok/oklahoma_city/;Oklahoma City;oklahoma_city
+http://www.meetup.com/cities/us/ok/okmulgee/;Okmulgee;okmulgee
+http://www.meetup.com/cities/us/ok/owasso/;Owasso;owasso
+http://www.meetup.com/cities/us/ok/ponca_city/;Ponca City;ponca_city
+http://www.meetup.com/cities/us/ok/pryor/;Pryor;pryor
+http://www.meetup.com/cities/us/ok/sand_springs/;Sand Springs;sand_springs
+http://www.meetup.com/cities/us/ok/sapulpa/;Sapulpa;sapulpa
+http://www.meetup.com/cities/us/ok/seminole/;Seminole;seminole
+http://www.meetup.com/cities/us/ok/shawnee/;Shawnee;shawnee
+http://www.meetup.com/cities/us/ok/skiatook/;Skiatook;skiatook
+http://www.meetup.com/cities/us/ok/stillwater/;Stillwater;stillwater
+http://www.meetup.com/cities/us/ok/tahlequah/;Tahlequah;tahlequah
+http://www.meetup.com/cities/us/ok/tecumseh/;Tecumseh;tecumseh
+http://www.meetup.com/cities/us/ok/tulsa/;Tulsa;tulsa
+http://www.meetup.com/cities/us/ok/wagoner/;Wagoner;wagoner
+http://www.meetup.com/cities/us/ok/yukon/;Yukon;yukon
+http://www.meetup.com/cities/us/ok/ada/;Ada;ada
+http://www.meetup.com/cities/us/ok/altus/;Altus;altus
+http://www.meetup.com/cities/us/ok/ardmore/;Ardmore;ardmore
+http://www.meetup.com/cities/us/ok/bartlesville/;Bartlesville;bartlesville
+http://www.meetup.com/cities/us/ok/bethany/;Bethany;bethany
+http://www.meetup.com/cities/us/ok/bixby/;Bixby;bixby
+http://www.meetup.com/cities/us/ok/blanchard/;Blanchard;blanchard
+http://www.meetup.com/cities/us/ok/broken_arrow/;Broken Arrow;broken_arrow
+http://www.meetup.com/cities/us/ok/catoosa/;Catoosa;catoosa
+http://www.meetup.com/cities/us/ok/chickasha/;Chickasha;chickasha
+http://www.meetup.com/cities/us/ok/choctaw/;Choctaw;choctaw
+http://www.meetup.com/cities/us/ok/claremore/;Claremore;claremore
+http://www.meetup.com/cities/us/ok/collinsville/;Collinsville;collinsville
+http://www.meetup.com/cities/us/ok/coweta/;Coweta;coweta
+http://www.meetup.com/cities/us/ok/cushing/;Cushing;cushing
+http://www.meetup.com/cities/us/ok/duncan/;Duncan;duncan
+http://www.meetup.com/cities/us/ok/durant/;Durant;durant
+http://www.meetup.com/cities/us/ok/edmond/;Edmond;edmond
+http://www.meetup.com/cities/us/ok/el_reno/;El Reno;el_reno
+http://www.meetup.com/cities/us/ok/enid/;Enid;enid
+http://www.meetup.com/cities/us/ok/fort_sill/;Fort Sill;fort_sill
+http://www.meetup.com/cities/us/ok/glenpool/;Glenpool;glenpool
+http://www.meetup.com/cities/us/ok/guthrie/;Guthrie;guthrie
+http://www.meetup.com/cities/us/ok/harrah/;Harrah;harrah
+http://www.meetup.com/cities/us/ok/jenks/;Jenks;jenks
+http://www.meetup.com/cities/us/ok/lawton/;Lawton;lawton
+http://www.meetup.com/cities/us/ok/mcalester/;McAlester;mcalester
+http://www.meetup.com/cities/us/ok/mcloud/;McLoud;mcloud
+http://www.meetup.com/cities/us/ok/miami/;Miami;miami
+http://www.meetup.com/cities/us/ok/muskogee/;Muskogee;muskogee
+http://www.meetup.com/cities/us/ok/mustang/;Mustang;mustang
+http://www.meetup.com/cities/us/ok/newalla/;Newalla;newalla
+http://www.meetup.com/cities/us/ok/noble/;Noble;noble
+http://www.meetup.com/cities/us/ok/norman/;Norman;norman
+http://www.meetup.com/cities/us/ok/oklahoma_city/;Oklahoma City;oklahoma_city
+http://www.meetup.com/cities/us/ok/okmulgee/;Okmulgee;okmulgee
+http://www.meetup.com/cities/us/ok/owasso/;Owasso;owasso
+http://www.meetup.com/cities/us/ok/ponca_city/;Ponca City;ponca_city
+http://www.meetup.com/cities/us/ok/pryor/;Pryor;pryor
+http://www.meetup.com/cities/us/ok/sand_springs/;Sand Springs;sand_springs
+http://www.meetup.com/cities/us/ok/sapulpa/;Sapulpa;sapulpa
+http://www.meetup.com/cities/us/ok/seminole/;Seminole;seminole
+http://www.meetup.com/cities/us/ok/shawnee/;Shawnee;shawnee
+http://www.meetup.com/cities/us/ok/skiatook/;Skiatook;skiatook
+http://www.meetup.com/cities/us/ok/stillwater/;Stillwater;stillwater
+http://www.meetup.com/cities/us/ok/tahlequah/;Tahlequah;tahlequah
+http://www.meetup.com/cities/us/ok/tecumseh/;Tecumseh;tecumseh
+http://www.meetup.com/cities/us/ok/tulsa/;Tulsa;tulsa
+http://www.meetup.com/cities/us/ok/wagoner/;Wagoner;wagoner
+http://www.meetup.com/cities/us/ok/yukon/;Yukon;yukon

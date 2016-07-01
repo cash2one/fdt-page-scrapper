@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/ca/ns/amherst/;Amherst;amherst
+http://www.meetup.com/cities/ca/ns/antigonish/;Antigonish;antigonish
+http://www.meetup.com/cities/ca/ns/beaver_bank/;Beaver Bank;beaver_bank
+http://www.meetup.com/cities/ca/ns/bedford/;Bedford;bedford
+http://www.meetup.com/cities/ca/ns/berwick/;Berwick;berwick
+http://www.meetup.com/cities/ca/ns/bridgetown/;Bridgetown;bridgetown
+http://www.meetup.com/cities/ca/ns/bridgewater/;Bridgewater;bridgewater
+http://www.meetup.com/cities/ca/ns/brookside/;Brookside;brookside
+http://www.meetup.com/cities/ca/ns/canning/;Canning;canning
+http://www.meetup.com/cities/ca/ns/chester/;Chester;chester
+http://www.meetup.com/cities/ca/ns/cole_harbour/;Cole Harbour;cole_harbour
+http://www.meetup.com/cities/ca/ns/dartmouth/;Dartmouth;dartmouth
+http://www.meetup.com/cities/ca/ns/digby/;Digby;digby
+http://www.meetup.com/cities/ca/ns/eastern_passage/;Eastern Passage;eastern_passage
+http://www.meetup.com/cities/ca/ns/enfield/;Enfield;enfield
+http://www.meetup.com/cities/ca/ns/fall_river/;Fall River;fall_river
+http://www.meetup.com/cities/ca/ns/glace_bay/;Glace Bay;glace_bay
+http://www.meetup.com/cities/ca/ns/greenwood/;Greenwood;greenwood
+http://www.meetup.com/cities/ca/ns/halifax/;Halifax;halifax
+http://www.meetup.com/cities/ca/ns/hammonds_plains/;Hammonds Plains;hammonds_plains
+http://www.meetup.com/cities/ca/ns/head_of_chezzetcook/;Head of Chezzetcook;head_of_chezzetcook
+http://www.meetup.com/cities/ca/ns/hubbards/;Hubbards;hubbards
+http://www.meetup.com/cities/ca/ns/kentville/;Kentville;kentville
+http://www.meetup.com/cities/ca/ns/kingston/;Kingston;kingston
+http://www.meetup.com/cities/ca/ns/liverpool/;Liverpool;liverpool
+http://www.meetup.com/cities/ca/ns/lockeport/;Lockeport;lockeport
+http://www.meetup.com/cities/ca/ns/lower_sackville/;Lower Sackville;lower_sackville
+http://www.meetup.com/cities/ca/ns/lunenburg/;Lunenburg;lunenburg
+http://www.meetup.com/cities/ca/ns/middleton/;Middleton;middleton
+http://www.meetup.com/cities/ca/ns/mount_uniacke/;Mount Uniacke;mount_uniacke
+http://www.meetup.com/cities/ca/ns/new_glasgow/;New Glasgow;new_glasgow
+http://www.meetup.com/cities/ca/ns/new_minas/;New Minas;new_minas
+http://www.meetup.com/cities/ca/ns/new_waterford/;New Waterford;new_waterford
+http://www.meetup.com/cities/ca/ns/north_sydney/;North Sydney;north_sydney
+http://www.meetup.com/cities/ca/ns/pictou/;Pictou;pictou
+http://www.meetup.com/cities/ca/ns/port_hawkesbury/;Port Hawkesbury;port_hawkesbury
+http://www.meetup.com/cities/ca/ns/porters_lake/;Porters Lake;porters_lake
+http://www.meetup.com/cities/ca/ns/springhill/;Springhill;springhill
+http://www.meetup.com/cities/ca/ns/stellarton/;Stellarton;stellarton
+http://www.meetup.com/cities/ca/ns/stillwater_lake/;Stillwater Lake;stillwater_lake
+http://www.meetup.com/cities/ca/ns/sydney/;Sydney;sydney
+http://www.meetup.com/cities/ca/ns/sydney_mines/;Sydney Mines;sydney_mines
+http://www.meetup.com/cities/ca/ns/timberlea/;Timberlea;timberlea
+http://www.meetup.com/cities/ca/ns/truro/;Truro;truro
+http://www.meetup.com/cities/ca/ns/upper_tantallon/;Upper Tantallon;upper_tantallon
+http://www.meetup.com/cities/ca/ns/westville/;Westville;westville
+http://www.meetup.com/cities/ca/ns/windsor/;Windsor;windsor
+http://www.meetup.com/cities/ca/ns/windsor_junction/;Windsor Junction;windsor_junction
+http://www.meetup.com/cities/ca/ns/wolfville/;Wolfville;wolfville
+http://www.meetup.com/cities/ca/ns/yarmouth/;Yarmouth;yarmouth

@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/gb/j1/adstone/;Adstone;adstone
+http://www.meetup.com/cities/gb/j1/blisworth/;Blisworth;blisworth
+http://www.meetup.com/cities/gb/j1/brackley/;Brackley;brackley
+http://www.meetup.com/cities/gb/j1/charlton/;Charlton;charlton
+http://www.meetup.com/cities/gb/j1/church_brampton/;Church Brampton;church_brampton
+http://www.meetup.com/cities/gb/j1/corby/;Corby;corby
+http://www.meetup.com/cities/gb/j1/cosgrove/;Cosgrove;cosgrove
+http://www.meetup.com/cities/gb/j1/daventry/;Daventry;daventry
+http://www.meetup.com/cities/gb/j1/deanshanger/;Deanshanger;deanshanger
+http://www.meetup.com/cities/gb/j1/deene/;Deene;deene
+http://www.meetup.com/cities/gb/j1/deenethorpe/;Deenethorpe;deenethorpe
+http://www.meetup.com/cities/gb/j1/east_farndon/;East Farndon;east_farndon
+http://www.meetup.com/cities/gb/j1/east_haddon/;East Haddon;east_haddon
+http://www.meetup.com/cities/gb/j1/ecton/;Ecton;ecton
+http://www.meetup.com/cities/gb/j1/elton/;Elton;elton
+http://www.meetup.com/cities/gb/j1/eydon/;Eydon;eydon
+http://www.meetup.com/cities/gb/j1/finedon/;Finedon;finedon
+http://www.meetup.com/cities/gb/j1/great_doddington/;Great Doddington;great_doddington
+http://www.meetup.com/cities/gb/j1/grimscote/;Grimscote;grimscote
+http://www.meetup.com/cities/gb/j1/hargrave/;Hargrave;hargrave
+http://www.meetup.com/cities/gb/j1/kettering/;Kettering;kettering
+http://www.meetup.com/cities/gb/j1/little_harrowden/;Little Harrowden;little_harrowden
+http://www.meetup.com/cities/gb/j1/luddington/;Luddington;luddington
+http://www.meetup.com/cities/gb/j1/maidford/;Maidford;maidford
+http://www.meetup.com/cities/gb/j1/maidwell/;Maidwell;maidwell
+http://www.meetup.com/cities/gb/j1/market_harborough/;Market Harborough;market_harborough
+http://www.meetup.com/cities/gb/j1/middleton_cheney/;Middleton Cheney;middleton_cheney
+http://www.meetup.com/cities/gb/j1/moulton/;Moulton;moulton
+http://www.meetup.com/cities/gb/j1/new_hackleton/;New Hackleton;new_hackleton
+http://www.meetup.com/cities/gb/j1/newton/;Newton;newton
+http://www.meetup.com/cities/gb/j1/nobottle/;Nobottle;nobottle
+http://www.meetup.com/cities/gb/j1/northampton/;Northampton;northampton
+http://www.meetup.com/cities/gb/j1/old/;Old;old
+http://www.meetup.com/cities/gb/j1/park_farm_industrial_estate/;Park Farm Industrial Estate;park_farm_industrial_estate
+http://www.meetup.com/cities/gb/j1/radstone/;Radstone;radstone
+http://www.meetup.com/cities/gb/j1/ringstead/;Ringstead;ringstead
+http://www.meetup.com/cities/gb/j1/rushden/;Rushden;rushden
+http://www.meetup.com/cities/gb/j1/stanwick/;Stanwick;stanwick
+http://www.meetup.com/cities/gb/j1/sudborough/;Sudborough;sudborough
+http://www.meetup.com/cities/gb/j1/syresham/;Syresham;syresham
+http://www.meetup.com/cities/gb/j1/sywell/;Sywell;sywell
+http://www.meetup.com/cities/gb/j1/thrapston/;Thrapston;thrapston
+http://www.meetup.com/cities/gb/j1/towcester/;Towcester;towcester
+http://www.meetup.com/cities/gb/j1/warmington/;Warmington;warmington
+http://www.meetup.com/cities/gb/j1/watford/;Watford;watford
+http://www.meetup.com/cities/gb/j1/weldon/;Weldon;weldon
+http://www.meetup.com/cities/gb/j1/wellingborough/;Wellingborough;wellingborough
+http://www.meetup.com/cities/gb/j1/welton/;Welton;welton
+http://www.meetup.com/cities/gb/j1/weston_favell/;Weston Favell;weston_favell
+http://www.meetup.com/cities/gb/j1/wicken/;Wicken;wicken
+http://www.meetup.com/cities/gb/j1/adstone/;Adstone;adstone
+http://www.meetup.com/cities/gb/j1/blisworth/;Blisworth;blisworth
+http://www.meetup.com/cities/gb/j1/brackley/;Brackley;brackley
+http://www.meetup.com/cities/gb/j1/charlton/;Charlton;charlton
+http://www.meetup.com/cities/gb/j1/church_brampton/;Church Brampton;church_brampton
+http://www.meetup.com/cities/gb/j1/corby/;Corby;corby
+http://www.meetup.com/cities/gb/j1/cosgrove/;Cosgrove;cosgrove
+http://www.meetup.com/cities/gb/j1/daventry/;Daventry;daventry
+http://www.meetup.com/cities/gb/j1/deanshanger/;Deanshanger;deanshanger
+http://www.meetup.com/cities/gb/j1/deene/;Deene;deene
+http://www.meetup.com/cities/gb/j1/deenethorpe/;Deenethorpe;deenethorpe
+http://www.meetup.com/cities/gb/j1/east_farndon/;East Farndon;east_farndon
+http://www.meetup.com/cities/gb/j1/east_haddon/;East Haddon;east_haddon
+http://www.meetup.com/cities/gb/j1/ecton/;Ecton;ecton
+http://www.meetup.com/cities/gb/j1/elton/;Elton;elton
+http://www.meetup.com/cities/gb/j1/eydon/;Eydon;eydon
+http://www.meetup.com/cities/gb/j1/finedon/;Finedon;finedon
+http://www.meetup.com/cities/gb/j1/great_doddington/;Great Doddington;great_doddington
+http://www.meetup.com/cities/gb/j1/grimscote/;Grimscote;grimscote
+http://www.meetup.com/cities/gb/j1/hargrave/;Hargrave;hargrave
+http://www.meetup.com/cities/gb/j1/kettering/;Kettering;kettering
+http://www.meetup.com/cities/gb/j1/little_harrowden/;Little Harrowden;little_harrowden
+http://www.meetup.com/cities/gb/j1/luddington/;Luddington;luddington
+http://www.meetup.com/cities/gb/j1/maidford/;Maidford;maidford
+http://www.meetup.com/cities/gb/j1/maidwell/;Maidwell;maidwell
+http://www.meetup.com/cities/gb/j1/market_harborough/;Market Harborough;market_harborough
+http://www.meetup.com/cities/gb/j1/middleton_cheney/;Middleton Cheney;middleton_cheney
+http://www.meetup.com/cities/gb/j1/moulton/;Moulton;moulton
+http://www.meetup.com/cities/gb/j1/new_hackleton/;New Hackleton;new_hackleton
+http://www.meetup.com/cities/gb/j1/newton/;Newton;newton
+http://www.meetup.com/cities/gb/j1/nobottle/;Nobottle;nobottle
+http://www.meetup.com/cities/gb/j1/northampton/;Northampton;northampton
+http://www.meetup.com/cities/gb/j1/old/;Old;old
+http://www.meetup.com/cities/gb/j1/park_farm_industrial_estate/;Park Farm Industrial Estate;park_farm_industrial_estate
+http://www.meetup.com/cities/gb/j1/radstone/;Radstone;radstone
+http://www.meetup.com/cities/gb/j1/ringstead/;Ringstead;ringstead
+http://www.meetup.com/cities/gb/j1/rushden/;Rushden;rushden
+http://www.meetup.com/cities/gb/j1/stanwick/;Stanwick;stanwick
+http://www.meetup.com/cities/gb/j1/sudborough/;Sudborough;sudborough
+http://www.meetup.com/cities/gb/j1/syresham/;Syresham;syresham
+http://www.meetup.com/cities/gb/j1/sywell/;Sywell;sywell
+http://www.meetup.com/cities/gb/j1/thrapston/;Thrapston;thrapston
+http://www.meetup.com/cities/gb/j1/towcester/;Towcester;towcester
+http://www.meetup.com/cities/gb/j1/warmington/;Warmington;warmington
+http://www.meetup.com/cities/gb/j1/watford/;Watford;watford
+http://www.meetup.com/cities/gb/j1/weldon/;Weldon;weldon
+http://www.meetup.com/cities/gb/j1/wellingborough/;Wellingborough;wellingborough
+http://www.meetup.com/cities/gb/j1/welton/;Welton;welton
+http://www.meetup.com/cities/gb/j1/weston_favell/;Weston Favell;weston_favell
+http://www.meetup.com/cities/gb/j1/wicken/;Wicken;wicken

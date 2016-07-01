@@ -1,0 +1,92 @@
+http://www.meetup.com/cities/gb/v9/auskerry/;Auskerry;auskerry
+http://www.meetup.com/cities/gb/v9/balfour/;Balfour;balfour
+http://www.meetup.com/cities/gb/v9/birsay/;Birsay;birsay
+http://www.meetup.com/cities/gb/v9/burray/;Burray;burray
+http://www.meetup.com/cities/gb/v9/cairston/;Cairston;cairston
+http://www.meetup.com/cities/gb/v9/deerness/;Deerness;deerness
+http://www.meetup.com/cities/gb/v9/dounby/;Dounby;dounby
+http://www.meetup.com/cities/gb/v9/eday/;Eday;eday
+http://www.meetup.com/cities/gb/v9/egilsay/;Egilsay;egilsay
+http://www.meetup.com/cities/gb/v9/evie/;Evie;evie
+http://www.meetup.com/cities/gb/v9/finstown/;Finstown;finstown
+http://www.meetup.com/cities/gb/v9/flotta/;Flotta;flotta
+http://www.meetup.com/cities/gb/v9/gairsay/;Gairsay;gairsay
+http://www.meetup.com/cities/gb/v9/graemsay/;Graemsay;graemsay
+http://www.meetup.com/cities/gb/v9/grimbister/;Grimbister;grimbister
+http://www.meetup.com/cities/gb/v9/harray/;Harray;harray
+http://www.meetup.com/cities/gb/v9/hatston/;Hatston;hatston
+http://www.meetup.com/cities/gb/v9/hatston_industrial_estate/;Hatston Industrial Estate;hatston_industrial_estate
+http://www.meetup.com/cities/gb/v9/holm/;Holm;holm
+http://www.meetup.com/cities/gb/v9/hoy/;Hoy;hoy
+http://www.meetup.com/cities/gb/v9/kirkwall/;Kirkwall;kirkwall
+http://www.meetup.com/cities/gb/v9/kirkwall_aerodrome/;Kirkwall Aerodrome;kirkwall_aerodrome
+http://www.meetup.com/cities/gb/v9/lambholm/;Lambholm;lambholm
+http://www.meetup.com/cities/gb/v9/longhope/;Longhope;longhope
+http://www.meetup.com/cities/gb/v9/lyness/;Lyness;lyness
+http://www.meetup.com/cities/gb/v9/north_ronaldsay/;North Ronaldsay;north_ronaldsay
+http://www.meetup.com/cities/gb/v9/orkney/;Orkney;orkney
+http://www.meetup.com/cities/gb/v9/orphir/;Orphir;orphir
+http://www.meetup.com/cities/gb/v9/papa_westray/;Papa Westray;papa_westray
+http://www.meetup.com/cities/gb/v9/papdale/;Papdale;papdale
+http://www.meetup.com/cities/gb/v9/quoyloo/;Quoyloo;quoyloo
+http://www.meetup.com/cities/gb/v9/rendall/;Rendall;rendall
+http://www.meetup.com/cities/gb/v9/rousay/;Rousay;rousay
+http://www.meetup.com/cities/gb/v9/sanday/;Sanday;sanday
+http://www.meetup.com/cities/gb/v9/sandwick/;Sandwick;sandwick
+http://www.meetup.com/cities/gb/v9/stenness/;Stenness;stenness
+http://www.meetup.com/cities/gb/v9/st_margarets_hope/;St Margarets Hope;st_margarets_hope
+http://www.meetup.com/cities/gb/v9/st_ola/;St Ola;st_ola
+http://www.meetup.com/cities/gb/v9/stromness/;Stromness;stromness
+http://www.meetup.com/cities/gb/v9/stronsay/;Stronsay;stronsay
+http://www.meetup.com/cities/gb/v9/swannay/;Swannay;swannay
+http://www.meetup.com/cities/gb/v9/tankerness/;Tankerness;tankerness
+http://www.meetup.com/cities/gb/v9/toab/;Toab;toab
+http://www.meetup.com/cities/gb/v9/twatt/;Twatt;twatt
+http://www.meetup.com/cities/gb/v9/westray/;Westray;westray
+http://www.meetup.com/cities/gb/v9/wyre/;Wyre;wyre
+http://www.meetup.com/cities/gb/v9/auskerry/;Auskerry;auskerry
+http://www.meetup.com/cities/gb/v9/balfour/;Balfour;balfour
+http://www.meetup.com/cities/gb/v9/birsay/;Birsay;birsay
+http://www.meetup.com/cities/gb/v9/burray/;Burray;burray
+http://www.meetup.com/cities/gb/v9/cairston/;Cairston;cairston
+http://www.meetup.com/cities/gb/v9/deerness/;Deerness;deerness
+http://www.meetup.com/cities/gb/v9/dounby/;Dounby;dounby
+http://www.meetup.com/cities/gb/v9/eday/;Eday;eday
+http://www.meetup.com/cities/gb/v9/egilsay/;Egilsay;egilsay
+http://www.meetup.com/cities/gb/v9/evie/;Evie;evie
+http://www.meetup.com/cities/gb/v9/finstown/;Finstown;finstown
+http://www.meetup.com/cities/gb/v9/flotta/;Flotta;flotta
+http://www.meetup.com/cities/gb/v9/gairsay/;Gairsay;gairsay
+http://www.meetup.com/cities/gb/v9/graemsay/;Graemsay;graemsay
+http://www.meetup.com/cities/gb/v9/grimbister/;Grimbister;grimbister
+http://www.meetup.com/cities/gb/v9/harray/;Harray;harray
+http://www.meetup.com/cities/gb/v9/hatston/;Hatston;hatston
+http://www.meetup.com/cities/gb/v9/hatston_industrial_estate/;Hatston Industrial Estate;hatston_industrial_estate
+http://www.meetup.com/cities/gb/v9/holm/;Holm;holm
+http://www.meetup.com/cities/gb/v9/hoy/;Hoy;hoy
+http://www.meetup.com/cities/gb/v9/kirkwall/;Kirkwall;kirkwall
+http://www.meetup.com/cities/gb/v9/kirkwall_aerodrome/;Kirkwall Aerodrome;kirkwall_aerodrome
+http://www.meetup.com/cities/gb/v9/lambholm/;Lambholm;lambholm
+http://www.meetup.com/cities/gb/v9/longhope/;Longhope;longhope
+http://www.meetup.com/cities/gb/v9/lyness/;Lyness;lyness
+http://www.meetup.com/cities/gb/v9/north_ronaldsay/;North Ronaldsay;north_ronaldsay
+http://www.meetup.com/cities/gb/v9/orkney/;Orkney;orkney
+http://www.meetup.com/cities/gb/v9/orphir/;Orphir;orphir
+http://www.meetup.com/cities/gb/v9/papa_westray/;Papa Westray;papa_westray
+http://www.meetup.com/cities/gb/v9/papdale/;Papdale;papdale
+http://www.meetup.com/cities/gb/v9/quoyloo/;Quoyloo;quoyloo
+http://www.meetup.com/cities/gb/v9/rendall/;Rendall;rendall
+http://www.meetup.com/cities/gb/v9/rousay/;Rousay;rousay
+http://www.meetup.com/cities/gb/v9/sanday/;Sanday;sanday
+http://www.meetup.com/cities/gb/v9/sandwick/;Sandwick;sandwick
+http://www.meetup.com/cities/gb/v9/stenness/;Stenness;stenness
+http://www.meetup.com/cities/gb/v9/st_margarets_hope/;St Margarets Hope;st_margarets_hope
+http://www.meetup.com/cities/gb/v9/st_ola/;St Ola;st_ola
+http://www.meetup.com/cities/gb/v9/stromness/;Stromness;stromness
+http://www.meetup.com/cities/gb/v9/stronsay/;Stronsay;stronsay
+http://www.meetup.com/cities/gb/v9/swannay/;Swannay;swannay
+http://www.meetup.com/cities/gb/v9/tankerness/;Tankerness;tankerness
+http://www.meetup.com/cities/gb/v9/toab/;Toab;toab
+http://www.meetup.com/cities/gb/v9/twatt/;Twatt;twatt
+http://www.meetup.com/cities/gb/v9/westray/;Westray;westray
+http://www.meetup.com/cities/gb/v9/wyre/;Wyre;wyre

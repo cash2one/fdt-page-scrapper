@@ -1,0 +1,104 @@
+http://www.meetup.com/cities/it/ce/ailano/;Ailano;ailano
+http://www.meetup.com/cities/it/ce/alife/;Alife;alife
+http://www.meetup.com/cities/it/ce/alvignano/;Alvignano;alvignano
+http://www.meetup.com/cities/it/ce/arienzo/;Arienzo;arienzo
+http://www.meetup.com/cities/it/ce/aversa/;Aversa;aversa
+http://www.meetup.com/cities/it/ce/baia_e_latina/;Baia e Latina;baia_e_latina
+http://www.meetup.com/cities/it/ce/bellona/;Bellona;bellona
+http://www.meetup.com/cities/it/ce/caianello/;Caianello;caianello
+http://www.meetup.com/cities/it/ce/caiazzo/;Caiazzo;caiazzo
+http://www.meetup.com/cities/it/ce/calvi_risorta/;Calvi Risorta;calvi_risorta
+http://www.meetup.com/cities/it/ce/camigliano/;Camigliano;camigliano
+http://www.meetup.com/cities/it/ce/cancello_ed_arnone/;Cancello ed Arnone;cancello_ed_arnone
+http://www.meetup.com/cities/it/ce/capodrise/;Capodrise;capodrise
+http://www.meetup.com/cities/it/ce/capriati_a_volturno/;Capriati a Volturno;capriati_a_volturno
+http://www.meetup.com/cities/it/ce/capua/;Capua;capua
+http://www.meetup.com/cities/it/ce/carinaro/;Carinaro;carinaro
+http://www.meetup.com/cities/it/ce/carinola/;Carinola;carinola
+http://www.meetup.com/cities/it/ce/casagiove/;Casagiove;casagiove
+http://www.meetup.com/cities/it/ce/casal_di_principe/;Casal di Principe;casal_di_principe
+http://www.meetup.com/cities/it/ce/casaluce/;Casaluce;casaluce
+http://www.meetup.com/cities/it/ce/casapesenna/;Casapesenna;casapesenna
+http://www.meetup.com/cities/it/ce/casapulla/;Casapulla;casapulla
+http://www.meetup.com/cities/it/ce/caserta/;Caserta;caserta
+http://www.meetup.com/cities/it/ce/castel_campagnano/;Castel Campagnano;castel_campagnano
+http://www.meetup.com/cities/it/ce/castel_di_sasso/;Castel di Sasso;castel_di_sasso
+http://www.meetup.com/cities/it/ce/castello_del_matese/;Castello del Matese;castello_del_matese
+http://www.meetup.com/cities/it/ce/castel_morrone/;Castel Morrone;castel_morrone
+http://www.meetup.com/cities/it/ce/castel_volturno/;Castel Volturno;castel_volturno
+http://www.meetup.com/cities/it/ce/cellole/;Cellole;cellole
+http://www.meetup.com/cities/it/ce/cervino/;Cervino;cervino
+http://www.meetup.com/cities/it/ce/cesa/;Cesa;cesa
+http://www.meetup.com/cities/it/ce/ciorlano/;Ciorlano;ciorlano
+http://www.meetup.com/cities/it/ce/conca_della_campania/;Conca della Campania;conca_della_campania
+http://www.meetup.com/cities/it/ce/curti/;Curti;curti
+http://www.meetup.com/cities/it/ce/dragoni/;Dragoni;dragoni
+http://www.meetup.com/cities/it/ce/falciano_del_massico/;Falciano del Massico;falciano_del_massico
+http://www.meetup.com/cities/it/ce/fontegreca/;Fontegreca;fontegreca
+http://www.meetup.com/cities/it/ce/formicola/;Formicola;formicola
+http://www.meetup.com/cities/it/ce/francolise/;Francolise;francolise
+http://www.meetup.com/cities/it/ce/frignano/;Frignano;frignano
+http://www.meetup.com/cities/it/ce/gallo_matese/;Gallo Matese;gallo_matese
+http://www.meetup.com/cities/it/ce/galluccio/;Galluccio;galluccio
+http://www.meetup.com/cities/it/ce/giano_vetusto/;Giano Vetusto;giano_vetusto
+http://www.meetup.com/cities/it/ce/gioia_sannitica/;Gioia Sannitica;gioia_sannitica
+http://www.meetup.com/cities/it/ce/grazzanise/;Grazzanise;grazzanise
+http://www.meetup.com/cities/it/ce/gricignano_di_aversa/;Gricignano di Aversa;gricignano_di_aversa
+http://www.meetup.com/cities/it/ce/letino/;Letino;letino
+http://www.meetup.com/cities/it/ce/liberi/;Liberi;liberi
+http://www.meetup.com/cities/it/ce/lusciano/;Lusciano;lusciano
+http://www.meetup.com/cities/it/ce/macerata_campania/;Macerata Campania;macerata_campania
+http://www.meetup.com/cities/it/ce/maddaloni/;Maddaloni;maddaloni
+http://www.meetup.com/cities/it/ce/marcianise/;Marcianise;marcianise
+http://www.meetup.com/cities/it/ce/marzano_appio/;Marzano Appio;marzano_appio
+http://www.meetup.com/cities/it/ce/mignano_monte_lungo/;Mignano Monte Lungo;mignano_monte_lungo
+http://www.meetup.com/cities/it/ce/mondragone/;Mondragone;mondragone
+http://www.meetup.com/cities/it/ce/orta_di_atella/;Orta di Atella;orta_di_atella
+http://www.meetup.com/cities/it/ce/parete/;Parete;parete
+http://www.meetup.com/cities/it/ce/pastorano/;Pastorano;pastorano
+http://www.meetup.com/cities/it/ce/piana_di_monte_verna/;Piana di Monte Verna;piana_di_monte_verna
+http://www.meetup.com/cities/it/ce/piedimonte_matese/;Piedimonte Matese;piedimonte_matese
+http://www.meetup.com/cities/it/ce/pietramelara/;Pietramelara;pietramelara
+http://www.meetup.com/cities/it/ce/pietravairano/;Pietravairano;pietravairano
+http://www.meetup.com/cities/it/ce/pignataro_maggiore/;Pignataro Maggiore;pignataro_maggiore
+http://www.meetup.com/cities/it/ce/pontelatone/;Pontelatone;pontelatone
+http://www.meetup.com/cities/it/ce/portico_di_caserta/;Portico di Caserta;portico_di_caserta
+http://www.meetup.com/cities/it/ce/prata_sannita/;Prata Sannita;prata_sannita
+http://www.meetup.com/cities/it/ce/pratella/;Pratella;pratella
+http://www.meetup.com/cities/it/ce/presenzano/;Presenzano;presenzano
+http://www.meetup.com/cities/it/ce/raviscanina/;Raviscanina;raviscanina
+http://www.meetup.com/cities/it/ce/recale/;Recale;recale
+http://www.meetup.com/cities/it/ce/riardo/;Riardo;riardo
+http://www.meetup.com/cities/it/ce/rocca_d%27evandro/;Rocca d'Evandro;rocca_d%27evandro
+http://www.meetup.com/cities/it/ce/roccamonfina/;Roccamonfina;roccamonfina
+http://www.meetup.com/cities/it/ce/roccaromana/;Roccaromana;roccaromana
+http://www.meetup.com/cities/it/ce/rocchetta_e_croce/;Rocchetta e Croce;rocchetta_e_croce
+http://www.meetup.com/cities/it/ce/ruviano/;Ruviano;ruviano
+http://www.meetup.com/cities/it/ce/san_cipriano_d%27aversa/;San Cipriano d'Aversa;san_cipriano_d%27aversa
+http://www.meetup.com/cities/it/ce/san_felice_a_cancello/;San Felice a Cancello;san_felice_a_cancello
+http://www.meetup.com/cities/it/ce/san_gregorio_matese/;San Gregorio Matese;san_gregorio_matese
+http://www.meetup.com/cities/it/ce/san_marcellino/;San Marcellino;san_marcellino
+http://www.meetup.com/cities/it/ce/san_marco_evangelista/;San Marco Evangelista;san_marco_evangelista
+http://www.meetup.com/cities/it/ce/san_nicola_la_strada/;San Nicola la Strada;san_nicola_la_strada
+http://www.meetup.com/cities/it/ce/san_pietro_infine/;San Pietro Infine;san_pietro_infine
+http://www.meetup.com/cities/it/ce/san_potito_sannitico/;San Potito Sannitico;san_potito_sannitico
+http://www.meetup.com/cities/it/ce/san_prisco/;San Prisco;san_prisco
+http://www.meetup.com/cities/it/ce/sant%27angelo_d%27alife/;Sant'Angelo d'Alife;sant%27angelo_d%27alife
+http://www.meetup.com/cities/it/ce/sant%27arpino/;Sant'Arpino;sant%27arpino
+http://www.meetup.com/cities/it/ce/santa_maria_a_vico/;Santa Maria a Vico;santa_maria_a_vico
+http://www.meetup.com/cities/it/ce/santa_maria_capua_vetere/;Santa Maria Capua Vetere;santa_maria_capua_vetere
+http://www.meetup.com/cities/it/ce/santa_maria_la_fossa/;Santa Maria la Fossa;santa_maria_la_fossa
+http://www.meetup.com/cities/it/ce/san_tammaro/;San Tammaro;san_tammaro
+http://www.meetup.com/cities/it/ce/sessa_aurunca/;Sessa Aurunca;sessa_aurunca
+http://www.meetup.com/cities/it/ce/sparanise/;Sparanise;sparanise
+http://www.meetup.com/cities/it/ce/succivo/;Succivo;succivo
+http://www.meetup.com/cities/it/ce/teano/;Teano;teano
+http://www.meetup.com/cities/it/ce/teverola/;Teverola;teverola
+http://www.meetup.com/cities/it/ce/tora_e_piccilli/;Tora e Piccilli;tora_e_piccilli
+http://www.meetup.com/cities/it/ce/trentola-ducenta/;Trentola-Ducenta;trentola-ducenta
+http://www.meetup.com/cities/it/ce/vairano_patenora/;Vairano Patenora;vairano_patenora
+http://www.meetup.com/cities/it/ce/valle_agricola/;Valle Agricola;valle_agricola
+http://www.meetup.com/cities/it/ce/valle_di_maddaloni/;Valle di Maddaloni;valle_di_maddaloni
+http://www.meetup.com/cities/it/ce/villa_di_briano/;Villa di Briano;villa_di_briano
+http://www.meetup.com/cities/it/ce/villa_literno/;Villa Literno;villa_literno
+http://www.meetup.com/cities/it/ce/vitulazio/;Vitulazio;vitulazio

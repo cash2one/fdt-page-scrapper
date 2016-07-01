@@ -1,0 +1,155 @@
+http://www.meetup.com/cities/it/cs/acquaformosa/;Acquaformosa;acquaformosa
+http://www.meetup.com/cities/it/cs/acquappesa/;Acquappesa;acquappesa
+http://www.meetup.com/cities/it/cs/acri/;Acri;acri
+http://www.meetup.com/cities/it/cs/aiello_calabro/;Aiello Calabro;aiello_calabro
+http://www.meetup.com/cities/it/cs/aieta/;Aieta;aieta
+http://www.meetup.com/cities/it/cs/albidona/;Albidona;albidona
+http://www.meetup.com/cities/it/cs/alessandria_del_carretto/;Alessandria del Carretto;alessandria_del_carretto
+http://www.meetup.com/cities/it/cs/altilia/;Altilia;altilia
+http://www.meetup.com/cities/it/cs/altomonte/;Altomonte;altomonte
+http://www.meetup.com/cities/it/cs/amantea/;Amantea;amantea
+http://www.meetup.com/cities/it/cs/amendolara/;Amendolara;amendolara
+http://www.meetup.com/cities/it/cs/aprigliano/;Aprigliano;aprigliano
+http://www.meetup.com/cities/it/cs/belmonte_calabro/;Belmonte Calabro;belmonte_calabro
+http://www.meetup.com/cities/it/cs/belsito/;Belsito;belsito
+http://www.meetup.com/cities/it/cs/belvedere_marittimo/;Belvedere Marittimo;belvedere_marittimo
+http://www.meetup.com/cities/it/cs/bianchi/;Bianchi;bianchi
+http://www.meetup.com/cities/it/cs/bisignano/;Bisignano;bisignano
+http://www.meetup.com/cities/it/cs/bocchigliero/;Bocchigliero;bocchigliero
+http://www.meetup.com/cities/it/cs/bonifati/;Bonifati;bonifati
+http://www.meetup.com/cities/it/cs/buonvicino/;Buonvicino;buonvicino
+http://www.meetup.com/cities/it/cs/calopezzati/;Calopezzati;calopezzati
+http://www.meetup.com/cities/it/cs/caloveto/;Caloveto;caloveto
+http://www.meetup.com/cities/it/cs/campana/;Campana;campana
+http://www.meetup.com/cities/it/cs/canna/;Canna;canna
+http://www.meetup.com/cities/it/cs/cariati/;Cariati;cariati
+http://www.meetup.com/cities/it/cs/carolei/;Carolei;carolei
+http://www.meetup.com/cities/it/cs/carpanzano/;Carpanzano;carpanzano
+http://www.meetup.com/cities/it/cs/casole_bruzio/;Casole Bruzio;casole_bruzio
+http://www.meetup.com/cities/it/cs/cassano_all%27ionio/;Cassano all'Ionio;cassano_all%27ionio
+http://www.meetup.com/cities/it/cs/castiglione_cosentino/;Castiglione Cosentino;castiglione_cosentino
+http://www.meetup.com/cities/it/cs/castrolibero/;Castrolibero;castrolibero
+http://www.meetup.com/cities/it/cs/castroregio/;Castroregio;castroregio
+http://www.meetup.com/cities/it/cs/castrovillari/;Castrovillari;castrovillari
+http://www.meetup.com/cities/it/cs/celico/;Celico;celico
+http://www.meetup.com/cities/it/cs/cellara/;Cellara;cellara
+http://www.meetup.com/cities/it/cs/cerchiara_di_calabria/;Cerchiara di Calabria;cerchiara_di_calabria
+http://www.meetup.com/cities/it/cs/cerisano/;Cerisano;cerisano
+http://www.meetup.com/cities/it/cs/cervicati/;Cervicati;cervicati
+http://www.meetup.com/cities/it/cs/cerzeto/;Cerzeto;cerzeto
+http://www.meetup.com/cities/it/cs/cetraro/;Cetraro;cetraro
+http://www.meetup.com/cities/it/cs/civita/;Civita;civita
+http://www.meetup.com/cities/it/cs/cleto/;Cleto;cleto
+http://www.meetup.com/cities/it/cs/colosimi/;Colosimi;colosimi
+http://www.meetup.com/cities/it/cs/corigliano_calabro/;Corigliano Calabro;corigliano_calabro
+http://www.meetup.com/cities/it/cs/cosenza/;Cosenza;cosenza
+http://www.meetup.com/cities/it/cs/cropalati/;Cropalati;cropalati
+http://www.meetup.com/cities/it/cs/crosia/;Crosia;crosia
+http://www.meetup.com/cities/it/cs/diamante/;Diamante;diamante
+http://www.meetup.com/cities/it/cs/dipignano/;Dipignano;dipignano
+http://www.meetup.com/cities/it/cs/domanico/;Domanico;domanico
+http://www.meetup.com/cities/it/cs/fagnano_castello/;Fagnano Castello;fagnano_castello
+http://www.meetup.com/cities/it/cs/falconara_albanese/;Falconara Albanese;falconara_albanese
+http://www.meetup.com/cities/it/cs/figline_vegliaturo/;Figline Vegliaturo;figline_vegliaturo
+http://www.meetup.com/cities/it/cs/firmo/;Firmo;firmo
+http://www.meetup.com/cities/it/cs/fiumefreddo_bruzio/;Fiumefreddo Bruzio;fiumefreddo_bruzio
+http://www.meetup.com/cities/it/cs/francavilla_marittima/;Francavilla Marittima;francavilla_marittima
+http://www.meetup.com/cities/it/cs/frascineto/;Frascineto;frascineto
+http://www.meetup.com/cities/it/cs/fuscaldo/;Fuscaldo;fuscaldo
+http://www.meetup.com/cities/it/cs/grimaldi/;Grimaldi;grimaldi
+http://www.meetup.com/cities/it/cs/grisolia/;Grisolia;grisolia
+http://www.meetup.com/cities/it/cs/guardia_piemontese/;Guardia Piemontese;guardia_piemontese
+http://www.meetup.com/cities/it/cs/lago/;Lago;lago
+http://www.meetup.com/cities/it/cs/laino_borgo/;Laino Borgo;laino_borgo
+http://www.meetup.com/cities/it/cs/laino_castello/;Laino Castello;laino_castello
+http://www.meetup.com/cities/it/cs/lappano/;Lappano;lappano
+http://www.meetup.com/cities/it/cs/lattarico/;Lattarico;lattarico
+http://www.meetup.com/cities/it/cs/longobardi/;Longobardi;longobardi
+http://www.meetup.com/cities/it/cs/longobucco/;Longobucco;longobucco
+http://www.meetup.com/cities/it/cs/lungro/;Lungro;lungro
+http://www.meetup.com/cities/it/cs/luzzi/;Luzzi;luzzi
+http://www.meetup.com/cities/it/cs/maier%C3%A0/;Maierà;maier%C3%A0
+http://www.meetup.com/cities/it/cs/malito/;Malito;malito
+http://www.meetup.com/cities/it/cs/malvito/;Malvito;malvito
+http://www.meetup.com/cities/it/cs/mandatoriccio/;Mandatoriccio;mandatoriccio
+http://www.meetup.com/cities/it/cs/mangone/;Mangone;mangone
+http://www.meetup.com/cities/it/cs/marano_marchesato/;Marano Marchesato;marano_marchesato
+http://www.meetup.com/cities/it/cs/marano_principato/;Marano Principato;marano_principato
+http://www.meetup.com/cities/it/cs/marzi/;Marzi;marzi
+http://www.meetup.com/cities/it/cs/mendicino/;Mendicino;mendicino
+http://www.meetup.com/cities/it/cs/mongrassano/;Mongrassano;mongrassano
+http://www.meetup.com/cities/it/cs/montalto_uffugo/;Montalto Uffugo;montalto_uffugo
+http://www.meetup.com/cities/it/cs/montegiordano/;Montegiordano;montegiordano
+http://www.meetup.com/cities/it/cs/morano_calabro/;Morano Calabro;morano_calabro
+http://www.meetup.com/cities/it/cs/mormanno/;Mormanno;mormanno
+http://www.meetup.com/cities/it/cs/mottafollone/;Mottafollone;mottafollone
+http://www.meetup.com/cities/it/cs/nocara/;Nocara;nocara
+http://www.meetup.com/cities/it/cs/oriolo/;Oriolo;oriolo
+http://www.meetup.com/cities/it/cs/orsomarso/;Orsomarso;orsomarso
+http://www.meetup.com/cities/it/cs/paludi/;Paludi;paludi
+http://www.meetup.com/cities/it/cs/panettieri/;Panettieri;panettieri
+http://www.meetup.com/cities/it/cs/paola/;Paola;paola
+http://www.meetup.com/cities/it/cs/papasidero/;Papasidero;papasidero
+http://www.meetup.com/cities/it/cs/parenti/;Parenti;parenti
+http://www.meetup.com/cities/it/cs/paterno_calabro/;Paterno Calabro;paterno_calabro
+http://www.meetup.com/cities/it/cs/pedace/;Pedace;pedace
+http://www.meetup.com/cities/it/cs/pedivigliano/;Pedivigliano;pedivigliano
+http://www.meetup.com/cities/it/cs/piane_crati/;Piane Crati;piane_crati
+http://www.meetup.com/cities/it/cs/pietrafitta/;Pietrafitta;pietrafitta
+http://www.meetup.com/cities/it/cs/pietrapaola/;Pietrapaola;pietrapaola
+http://www.meetup.com/cities/it/cs/plataci/;Plataci;plataci
+http://www.meetup.com/cities/it/cs/praia_a_mare/;Praia a Mare;praia_a_mare
+http://www.meetup.com/cities/it/cs/rende/;Rende;rende
+http://www.meetup.com/cities/it/cs/rocca_imperiale/;Rocca Imperiale;rocca_imperiale
+http://www.meetup.com/cities/it/cs/roggiano_gravina/;Roggiano Gravina;roggiano_gravina
+http://www.meetup.com/cities/it/cs/rogliano/;Rogliano;rogliano
+http://www.meetup.com/cities/it/cs/rose/;Rose;rose
+http://www.meetup.com/cities/it/cs/roseto_capo_spulico/;Roseto Capo Spulico;roseto_capo_spulico
+http://www.meetup.com/cities/it/cs/rossano/;Rossano;rossano
+http://www.meetup.com/cities/it/cs/rota_greca/;Rota Greca;rota_greca
+http://www.meetup.com/cities/it/cs/rovito/;Rovito;rovito
+http://www.meetup.com/cities/it/cs/san_basile/;San Basile;san_basile
+http://www.meetup.com/cities/it/cs/san_benedetto_ullano/;San Benedetto Ullano;san_benedetto_ullano
+http://www.meetup.com/cities/it/cs/san_cosmo_albanese/;San Cosmo Albanese;san_cosmo_albanese
+http://www.meetup.com/cities/it/cs/san_demetrio_corone/;San Demetrio Corone;san_demetrio_corone
+http://www.meetup.com/cities/it/cs/san_donato_di_ninea/;San Donato di Ninea;san_donato_di_ninea
+http://www.meetup.com/cities/it/cs/san_fili/;San Fili;san_fili
+http://www.meetup.com/cities/it/cs/sangineto/;Sangineto;sangineto
+http://www.meetup.com/cities/it/cs/san_giorgio_albanese/;San Giorgio Albanese;san_giorgio_albanese
+http://www.meetup.com/cities/it/cs/san_giovanni_in_fiore/;San Giovanni in Fiore;san_giovanni_in_fiore
+http://www.meetup.com/cities/it/cs/san_lorenzo_bellizzi/;San Lorenzo Bellizzi;san_lorenzo_bellizzi
+http://www.meetup.com/cities/it/cs/san_lorenzo_del_vallo/;San Lorenzo del Vallo;san_lorenzo_del_vallo
+http://www.meetup.com/cities/it/cs/san_lucido/;San Lucido;san_lucido
+http://www.meetup.com/cities/it/cs/san_marco_argentano/;San Marco Argentano;san_marco_argentano
+http://www.meetup.com/cities/it/cs/san_martino_di_finita/;San Martino di Finita;san_martino_di_finita
+http://www.meetup.com/cities/it/cs/san_nicola_arcella/;San Nicola Arcella;san_nicola_arcella
+http://www.meetup.com/cities/it/cs/san_pietro_in_amantea/;San Pietro in Amantea;san_pietro_in_amantea
+http://www.meetup.com/cities/it/cs/san_pietro_in_guarano/;San Pietro in Guarano;san_pietro_in_guarano
+http://www.meetup.com/cities/it/cs/san_sosti/;San Sosti;san_sosti
+http://www.meetup.com/cities/it/cs/sant%27agata_di_esaro/;Sant'Agata di Esaro;sant%27agata_di_esaro
+http://www.meetup.com/cities/it/cs/santa_caterina_albanese/;Santa Caterina Albanese;santa_caterina_albanese
+http://www.meetup.com/cities/it/cs/santa_domenica_talao/;Santa Domenica Talao;santa_domenica_talao
+http://www.meetup.com/cities/it/cs/santa_maria_del_cedro/;Santa Maria del Cedro;santa_maria_del_cedro
+http://www.meetup.com/cities/it/cs/santa_sofia_d%27epiro/;Santa Sofia d'Epiro;santa_sofia_d%27epiro
+http://www.meetup.com/cities/it/cs/santo_stefano_di_rogliano/;Santo Stefano di Rogliano;santo_stefano_di_rogliano
+http://www.meetup.com/cities/it/cs/san_vincenzo_la_costa/;San Vincenzo La Costa;san_vincenzo_la_costa
+http://www.meetup.com/cities/it/cs/saracena/;Saracena;saracena
+http://www.meetup.com/cities/it/cs/scala_coeli/;Scala Coeli;scala_coeli
+http://www.meetup.com/cities/it/cs/scalea/;Scalea;scalea
+http://www.meetup.com/cities/it/cs/scigliano/;Scigliano;scigliano
+http://www.meetup.com/cities/it/cs/serra_d%27aiello/;Serra d'Aiello;serra_d%27aiello
+http://www.meetup.com/cities/it/cs/serra_pedace/;Serra Pedace;serra_pedace
+http://www.meetup.com/cities/it/cs/spezzano_albanese/;Spezzano Albanese;spezzano_albanese
+http://www.meetup.com/cities/it/cs/spezzano_della_sila/;Spezzano della Sila;spezzano_della_sila
+http://www.meetup.com/cities/it/cs/spezzano_piccolo/;Spezzano Piccolo;spezzano_piccolo
+http://www.meetup.com/cities/it/cs/tarsia/;Tarsia;tarsia
+http://www.meetup.com/cities/it/cs/terranova_da_sibari/;Terranova da Sibari;terranova_da_sibari
+http://www.meetup.com/cities/it/cs/terravecchia/;Terravecchia;terravecchia
+http://www.meetup.com/cities/it/cs/torano_castello/;Torano Castello;torano_castello
+http://www.meetup.com/cities/it/cs/tortora/;Tortora;tortora
+http://www.meetup.com/cities/it/cs/trebisacce/;Trebisacce;trebisacce
+http://www.meetup.com/cities/it/cs/trenta/;Trenta;trenta
+http://www.meetup.com/cities/it/cs/vaccarizzo_albanese/;Vaccarizzo Albanese;vaccarizzo_albanese
+http://www.meetup.com/cities/it/cs/verbicaro/;Verbicaro;verbicaro
+http://www.meetup.com/cities/it/cs/villapiana/;Villapiana;villapiana
+http://www.meetup.com/cities/it/cs/zumpano/;Zumpano;zumpano

@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/ar/aguacaliente/;Aguacaliente;aguacaliente
+http://www.meetup.com/cities/ar/alta_gracia/;Alta Gracia;alta_gracia
+http://www.meetup.com/cities/ar/azul/;Azul;azul
+http://www.meetup.com/cities/ar/bah%C3%ADa_blanca/;Bahía Blanca;bah%C3%ADa_blanca
+http://www.meetup.com/cities/ar/buenos_aires/;Buenos Aires;buenos_aires
+http://www.meetup.com/cities/ar/campana/;Campana;campana
+http://www.meetup.com/cities/ar/catamarca/;Catamarca;catamarca
+http://www.meetup.com/cities/ar/chacabuco/;Chacabuco;chacabuco
+http://www.meetup.com/cities/ar/chivilcoy/;Chivilcoy;chivilcoy
+http://www.meetup.com/cities/ar/comodoro_rivadavia/;Comodoro Rivadavia;comodoro_rivadavia
+http://www.meetup.com/cities/ar/concepci%C3%B3n_del_uruguay/;Concepción del Uruguay;concepci%C3%B3n_del_uruguay
+http://www.meetup.com/cities/ar/conc%C3%B3rdia/;Concórdia;conc%C3%B3rdia
+http://www.meetup.com/cities/ar/corrientes/;Corrientes;corrientes
+http://www.meetup.com/cities/ar/c%C3%B3rdoba/;Córdoba;c%C3%B3rdoba
+http://www.meetup.com/cities/ar/el_rosario/;El Rosario;el_rosario
+http://www.meetup.com/cities/ar/formosa/;Formosa;formosa
+http://www.meetup.com/cities/ar/general_roca/;General Roca;general_roca
+http://www.meetup.com/cities/ar/jujuy/;Jujuy;jujuy
+http://www.meetup.com/cities/ar/la_plata/;La Plata;la_plata
+http://www.meetup.com/cities/ar/mar_del_plata/;Mar del Plata;mar_del_plata
+http://www.meetup.com/cities/ar/mendoza/;Mendoza;mendoza
+http://www.meetup.com/cities/ar/mercedes/;Mercedes;mercedes
+http://www.meetup.com/cities/ar/necochea/;Necochea;necochea
+http://www.meetup.com/cities/ar/neuqu%C3%A9n/;Neuquén;neuqu%C3%A9n
+http://www.meetup.com/cities/ar/nueve_de_julio/;Nueve de Julio;nueve_de_julio
+http://www.meetup.com/cities/ar/paran%C3%A1/;Paraná;paran%C3%A1
+http://www.meetup.com/cities/ar/pergamino/;Pergamino;pergamino
+http://www.meetup.com/cities/ar/posadas/;Posadas;posadas
+http://www.meetup.com/cities/ar/puerto_madryn/;Puerto Madryn;puerto_madryn
+http://www.meetup.com/cities/ar/rafaela/;Rafaela;rafaela
+http://www.meetup.com/cities/ar/rawson/;Rawson;rawson
+http://www.meetup.com/cities/ar/resistencia/;Resistencia;resistencia
+http://www.meetup.com/cities/ar/r%C3%ADo_cuarto/;Río Cuarto;r%C3%ADo_cuarto
+http://www.meetup.com/cities/ar/r%C3%ADo_gallegos/;Río Gallegos;r%C3%ADo_gallegos
+http://www.meetup.com/cities/ar/san_carlos_de_bariloche/;San Carlos de Bariloche;san_carlos_de_bariloche
+http://www.meetup.com/cities/ar/san_juan/;San Juan;san_juan
+http://www.meetup.com/cities/ar/san_ram%C3%B3n_de_la_nueva_or%C3%A1n/;San Ramón de la Nueva Orán;san_ram%C3%B3n_de_la_nueva_or%C3%A1n
+http://www.meetup.com/cities/ar/santa_fe/;Santa Fe;santa_fe
+http://www.meetup.com/cities/ar/santa_rosa/;Santa Rosa;santa_rosa
+http://www.meetup.com/cities/ar/santiago_del_estero/;Santiago del Estero;santiago_del_estero
+http://www.meetup.com/cities/ar/tandil/;Tandil;tandil
+http://www.meetup.com/cities/ar/trelew/;Trelew;trelew
+http://www.meetup.com/cities/ar/tres_arroyos/;Tres Arroyos;tres_arroyos
+http://www.meetup.com/cities/ar/tucum%C3%A1n/;Tucumán;tucum%C3%A1n
+http://www.meetup.com/cities/ar/ushuaia/;Ushuaia;ushuaia
+http://www.meetup.com/cities/ar/venado_tuerto/;Venado Tuerto;venado_tuerto
+http://www.meetup.com/cities/ar/victoria/;Victoria;victoria
+http://www.meetup.com/cities/ar/viedma/;Viedma;viedma
+http://www.meetup.com/cities/ar/villa_mar%C3%ADa/;Villa María;villa_mar%C3%ADa
+http://www.meetup.com/cities/ar/z%C3%A1rate/;Zárate;z%C3%A1rate

@@ -1,0 +1,434 @@
+http://www.meetup.com/cities/id/aberpura/;Aberpura;aberpura
+http://www.meetup.com/cities/id/adiwerna/;Adiwerna;adiwerna
+http://www.meetup.com/cities/id/amahai/;Amahai;amahai
+http://www.meetup.com/cities/id/ambarawa/;Ambarawa;ambarawa
+http://www.meetup.com/cities/id/ambon/;Ambon;ambon
+http://www.meetup.com/cities/id/ambulu/;Ambulu;ambulu
+http://www.meetup.com/cities/id/amuntai/;Amuntai;amuntai
+http://www.meetup.com/cities/id/arjawinangun/;Arjawinangun;arjawinangun
+http://www.meetup.com/cities/id/astanajapura/;Astanajapura;astanajapura
+http://www.meetup.com/cities/id/babat/;Babat;babat
+http://www.meetup.com/cities/id/bae/;Bae;bae
+http://www.meetup.com/cities/id/baki/;Baki;baki
+http://www.meetup.com/cities/id/balaipungut/;Balaipungut;balaipungut
+http://www.meetup.com/cities/id/balapulang/;Balapulang;balapulang
+http://www.meetup.com/cities/id/balikpapan/;Balikpapan;balikpapan
+http://www.meetup.com/cities/id/balung/;Balung;balung
+http://www.meetup.com/cities/id/bambanglipuro/;Bambanglipuro;bambanglipuro
+http://www.meetup.com/cities/id/banda_aceh/;Banda Aceh;banda_aceh
+http://www.meetup.com/cities/id/bandar_lampung/;Bandar Lampung;bandar_lampung
+http://www.meetup.com/cities/id/bandung/;Bandung;bandung
+http://www.meetup.com/cities/id/bangil/;Bangil;bangil
+http://www.meetup.com/cities/id/bangkalan/;Bangkalan;bangkalan
+http://www.meetup.com/cities/id/banguntapan/;Banguntapan;banguntapan
+http://www.meetup.com/cities/id/banjar/;Banjar;banjar
+http://www.meetup.com/cities/id/banjaran/;Banjaran;banjaran
+http://www.meetup.com/cities/id/banjarmasin/;Banjarmasin;banjarmasin
+http://www.meetup.com/cities/id/bantul/;Bantul;bantul
+http://www.meetup.com/cities/id/banyuwangi/;Banyuwangi;banyuwangi
+http://www.meetup.com/cities/id/baolan/;Baolan;baolan
+http://www.meetup.com/cities/id/barabai/;Barabai;barabai
+http://www.meetup.com/cities/id/batam/;Batam;batam
+http://www.meetup.com/cities/id/batang/;Batang;batang
+http://www.meetup.com/cities/id/batu/;Batu;batu
+http://www.meetup.com/cities/id/batu_jajar/;Batu Jajar;batu_jajar
+http://www.meetup.com/cities/id/baturaja/;Baturaja;baturaja
+http://www.meetup.com/cities/id/bau_bau/;Bau Bau;bau_bau
+http://www.meetup.com/cities/id/bekasi/;Bekasi;bekasi
+http://www.meetup.com/cities/id/belawan/;Belawan;belawan
+http://www.meetup.com/cities/id/bengkalis/;Bengkalis;bengkalis
+http://www.meetup.com/cities/id/bengkulu/;Bengkulu;bengkulu
+http://www.meetup.com/cities/id/besuki/;Besuki;besuki
+http://www.meetup.com/cities/id/biak/;Biak;biak
+http://www.meetup.com/cities/id/bima/;Bima;bima
+http://www.meetup.com/cities/id/binjai/;Binjai;binjai
+http://www.meetup.com/cities/id/bireun/;Bireun;bireun
+http://www.meetup.com/cities/id/bitung/;Bitung;bitung
+http://www.meetup.com/cities/id/blitar/;Blitar;blitar
+http://www.meetup.com/cities/id/blora/;Blora;blora
+http://www.meetup.com/cities/id/bogor/;Bogor;bogor
+http://www.meetup.com/cities/id/bojonegoro/;Bojonegoro;bojonegoro
+http://www.meetup.com/cities/id/bojong_gede/;Bojong Gede;bojong_gede
+http://www.meetup.com/cities/id/bondowoso/;Bondowoso;bondowoso
+http://www.meetup.com/cities/id/bone/;Bone;bone
+http://www.meetup.com/cities/id/bontang/;Bontang;bontang
+http://www.meetup.com/cities/id/boyolali/;Boyolali;boyolali
+http://www.meetup.com/cities/id/boyolangu/;Boyolangu;boyolangu
+http://www.meetup.com/cities/id/brebes/;Brebes;brebes
+http://www.meetup.com/cities/id/buaran/;Buaran;buaran
+http://www.meetup.com/cities/id/buduran/;Buduran;buduran
+http://www.meetup.com/cities/id/bukit_tinggi/;Bukit Tinggi;bukit_tinggi
+http://www.meetup.com/cities/id/bulakamba/;Bulakamba;bulakamba
+http://www.meetup.com/cities/id/bumiayu/;Bumiayu;bumiayu
+http://www.meetup.com/cities/id/candi/;Candi;candi
+http://www.meetup.com/cities/id/caringan/;Caringan;caringan
+http://www.meetup.com/cities/id/ceper/;Ceper;ceper
+http://www.meetup.com/cities/id/cepu/;Cepu;cepu
+http://www.meetup.com/cities/id/churug/;Churug;churug
+http://www.meetup.com/cities/id/ciamis/;Ciamis;ciamis
+http://www.meetup.com/cities/id/ciampea/;Ciampea;ciampea
+http://www.meetup.com/cities/id/cianjur/;Cianjur;cianjur
+http://www.meetup.com/cities/id/ciawi/;Ciawi;ciawi
+http://www.meetup.com/cities/id/cibadak/;Cibadak;cibadak
+http://www.meetup.com/cities/id/cibeureum/;Cibeureum;cibeureum
+http://www.meetup.com/cities/id/cibinong/;Cibinong;cibinong
+http://www.meetup.com/cities/id/cibitung/;Cibitung;cibitung
+http://www.meetup.com/cities/id/cibungbulang/;Cibungbulang;cibungbulang
+http://www.meetup.com/cities/id/cicalengka/;Cicalengka;cicalengka
+http://www.meetup.com/cities/id/cicuruk/;Cicuruk;cicuruk
+http://www.meetup.com/cities/id/cikampek/;Cikampek;cikampek
+http://www.meetup.com/cities/id/cikarang/;Cikarang;cikarang
+http://www.meetup.com/cities/id/cikeruh/;Cikeruh;cikeruh
+http://www.meetup.com/cities/id/cikupa/;Cikupa;cikupa
+http://www.meetup.com/cities/id/cilacap/;Cilacap;cilacap
+http://www.meetup.com/cities/id/ciledug/;Ciledug;ciledug
+http://www.meetup.com/cities/id/cilegon/;Cilegon;cilegon
+http://www.meetup.com/cities/id/cileungsi/;Cileungsi;cileungsi
+http://www.meetup.com/cities/id/cileunyi/;Cileunyi;cileunyi
+http://www.meetup.com/cities/id/cimahi/;Cimahi;cimahi
+http://www.meetup.com/cities/id/cimanggis/;Cimanggis;cimanggis
+http://www.meetup.com/cities/id/ciomas/;Ciomas;ciomas
+http://www.meetup.com/cities/id/ciparay/;Ciparay;ciparay
+http://www.meetup.com/cities/id/ciputat/;Ciputat;ciputat
+http://www.meetup.com/cities/id/cirebon/;Cirebon;cirebon
+http://www.meetup.com/cities/id/cirebon_barat/;Cirebon Barat;cirebon_barat
+http://www.meetup.com/cities/id/cirebon_utara/;Cirebon Utara;cirebon_utara
+http://www.meetup.com/cities/id/cisaat/;Cisaat;cisaat
+http://www.meetup.com/cities/id/cisarua/;Cisarua;cisarua
+http://www.meetup.com/cities/id/citeureup/;Citeureup;citeureup
+http://www.meetup.com/cities/id/colomandu/;Colomandu;colomandu
+http://www.meetup.com/cities/id/comal/;Comal;comal
+http://www.meetup.com/cities/id/curup/;Curup;curup
+http://www.meetup.com/cities/id/dampit/;Dampit;dampit
+http://www.meetup.com/cities/id/dayeuh_kolot/;Dayeuh Kolot;dayeuh_kolot
+http://www.meetup.com/cities/id/delanggu/;Delanggu;delanggu
+http://www.meetup.com/cities/id/deli_tua/;Deli Tua;deli_tua
+http://www.meetup.com/cities/id/demak/;Demak;demak
+http://www.meetup.com/cities/id/denpasar/;Denpasar;denpasar
+http://www.meetup.com/cities/id/depok/;Depok;depok
+http://www.meetup.com/cities/id/diwek/;Diwek;diwek
+http://www.meetup.com/cities/id/driyorejo/;Driyorejo;driyorejo
+http://www.meetup.com/cities/id/dukuhturi/;Dukuhturi;dukuhturi
+http://www.meetup.com/cities/id/dumai/;Dumai;dumai
+http://www.meetup.com/cities/id/ende/;Ende;ende
+http://www.meetup.com/cities/id/gambiran/;Gambiran;gambiran
+http://www.meetup.com/cities/id/gampengrejo/;Gampengrejo;gampengrejo
+http://www.meetup.com/cities/id/gamping/;Gamping;gamping
+http://www.meetup.com/cities/id/garut/;Garut;garut
+http://www.meetup.com/cities/id/gatak/;Gatak;gatak
+http://www.meetup.com/cities/id/gebog/;Gebog;gebog
+http://www.meetup.com/cities/id/gedangan/;Gedangan;gedangan
+http://www.meetup.com/cities/id/gedek/;Gedek;gedek
+http://www.meetup.com/cities/id/gempol/;Gempol;gempol
+http://www.meetup.com/cities/id/genteng/;Genteng;genteng
+http://www.meetup.com/cities/id/godean/;Godean;godean
+http://www.meetup.com/cities/id/gombong/;Gombong;gombong
+http://www.meetup.com/cities/id/gondang/;Gondang;gondang
+http://www.meetup.com/cities/id/gondanglegi/;Gondanglegi;gondanglegi
+http://www.meetup.com/cities/id/gorontalo/;Gorontalo;gorontalo
+http://www.meetup.com/cities/id/gresik/;Gresik;gresik
+http://www.meetup.com/cities/id/grogol/;Grogol;grogol
+http://www.meetup.com/cities/id/gunung_putri/;Gunung Putri;gunung_putri
+http://www.meetup.com/cities/id/gunung_stoli/;Gunung Stoli;gunung_stoli
+http://www.meetup.com/cities/id/hamparan_perak/;Hamparan Perak;hamparan_perak
+http://www.meetup.com/cities/id/indramayu/;Indramayu;indramayu
+http://www.meetup.com/cities/id/jakarta/;Jakarta;jakarta
+http://www.meetup.com/cities/id/jambi/;Jambi;jambi
+http://www.meetup.com/cities/id/jaten/;Jaten;jaten
+http://www.meetup.com/cities/id/jati/;Jati;jati
+http://www.meetup.com/cities/id/jatibarang/;Jatibarang;jatibarang
+http://www.meetup.com/cities/id/jatiroto/;Jatiroto;jatiroto
+http://www.meetup.com/cities/id/jatiwangi/;Jatiwangi;jatiwangi
+http://www.meetup.com/cities/id/jaya_pura/;Jaya Pura;jaya_pura
+http://www.meetup.com/cities/id/jeluko/;Jeluko;jeluko
+http://www.meetup.com/cities/id/jember/;Jember;jember
+http://www.meetup.com/cities/id/jepara/;Jepara;jepara
+http://www.meetup.com/cities/id/jetis/;Jetis;jetis
+http://www.meetup.com/cities/id/jina/;Jina;jina
+http://www.meetup.com/cities/id/jogonalan/;Jogonalan;jogonalan
+http://www.meetup.com/cities/id/jombang/;Jombang;jombang
+http://www.meetup.com/cities/id/juwana/;Juwana;juwana
+http://www.meetup.com/cities/id/kabanjahe/;Kabanjahe;kabanjahe
+http://www.meetup.com/cities/id/kadipaten/;Kadipaten;kadipaten
+http://www.meetup.com/cities/id/kalianget/;Kalianget;kalianget
+http://www.meetup.com/cities/id/kaliwungu/;Kaliwungu;kaliwungu
+http://www.meetup.com/cities/id/kamal/;Kamal;kamal
+http://www.meetup.com/cities/id/kanigoro/;Kanigoro;kanigoro
+http://www.meetup.com/cities/id/karangampel/;Karangampel;karangampel
+http://www.meetup.com/cities/id/karanganyar/;Karanganyar;karanganyar
+http://www.meetup.com/cities/id/karangasem/;Karangasem;karangasem
+http://www.meetup.com/cities/id/karang_tengah/;Karang Tengah;karang_tengah
+http://www.meetup.com/cities/id/karawang/;Karawang;karawang
+http://www.meetup.com/cities/id/kartosura/;Kartosura;kartosura
+http://www.meetup.com/cities/id/kasihan/;Kasihan;kasihan
+http://www.meetup.com/cities/id/katobu/;Katobu;katobu
+http://www.meetup.com/cities/id/kawalu/;Kawalu;kawalu
+http://www.meetup.com/cities/id/kebomas/;Kebomas;kebomas
+http://www.meetup.com/cities/id/kebumen/;Kebumen;kebumen
+http://www.meetup.com/cities/id/kediri/;Kediri;kediri
+http://www.meetup.com/cities/id/kedungwaru/;Kedungwaru;kedungwaru
+http://www.meetup.com/cities/id/kedungwuni/;Kedungwuni;kedungwuni
+http://www.meetup.com/cities/id/kelari/;Kelari;kelari
+http://www.meetup.com/cities/id/kembaran/;Kembaran;kembaran
+http://www.meetup.com/cities/id/kencong/;Kencong;kencong
+http://www.meetup.com/cities/id/kendari/;Kendari;kendari
+http://www.meetup.com/cities/id/kepanjen/;Kepanjen;kepanjen
+http://www.meetup.com/cities/id/kertosono/;Kertosono;kertosono
+http://www.meetup.com/cities/id/ketanggungan/;Ketanggungan;ketanggungan
+http://www.meetup.com/cities/id/ketapang/;Ketapang;ketapang
+http://www.meetup.com/cities/id/kijang/;Kijang;kijang
+http://www.meetup.com/cities/id/kisaran/;Kisaran;kisaran
+http://www.meetup.com/cities/id/klangenan/;Klangenan;klangenan
+http://www.meetup.com/cities/id/klaten/;Klaten;klaten
+http://www.meetup.com/cities/id/klungkung/;Klungkung;klungkung
+http://www.meetup.com/cities/id/kota_bumi/;Kota Bumi;kota_bumi
+http://www.meetup.com/cities/id/kota_pinang/;Kota Pinang;kota_pinang
+http://www.meetup.com/cities/id/kraksaan/;Kraksaan;kraksaan
+http://www.meetup.com/cities/id/kramat/;Kramat;kramat
+http://www.meetup.com/cities/id/kresek/;Kresek;kresek
+http://www.meetup.com/cities/id/krian/;Krian;krian
+http://www.meetup.com/cities/id/kroya/;Kroya;kroya
+http://www.meetup.com/cities/id/kualakapuas/;Kualakapuas;kualakapuas
+http://www.meetup.com/cities/id/kualatungka/;Kualatungka;kualatungka
+http://www.meetup.com/cities/id/kudus/;Kudus;kudus
+http://www.meetup.com/cities/id/kuningan/;Kuningan;kuningan
+http://www.meetup.com/cities/id/kupang/;Kupang;kupang
+http://www.meetup.com/cities/id/kuta/;Kuta;kuta
+http://www.meetup.com/cities/id/kutoarjo/;Kutoarjo;kutoarjo
+http://www.meetup.com/cities/id/labuhan/;Labuhan;labuhan
+http://www.meetup.com/cities/id/labuhan_deli/;Labuhan Deli;labuhan_deli
+http://www.meetup.com/cities/id/lahat/;Lahat;lahat
+http://www.meetup.com/cities/id/lahij/;Lahij;lahij
+http://www.meetup.com/cities/id/lamongan/;Lamongan;lamongan
+http://www.meetup.com/cities/id/langsa/;Langsa;langsa
+http://www.meetup.com/cities/id/lasem/;Lasem;lasem
+http://www.meetup.com/cities/id/lawang/;Lawang;lawang
+http://www.meetup.com/cities/id/lebaksiu/;Lebaksiu;lebaksiu
+http://www.meetup.com/cities/id/lemahabang/;Lemahabang;lemahabang
+http://www.meetup.com/cities/id/lembang/;Lembang;lembang
+http://www.meetup.com/cities/id/leuwiliang/;Leuwiliang;leuwiliang
+http://www.meetup.com/cities/id/lhokseumawe/;Lhokseumawe;lhokseumawe
+http://www.meetup.com/cities/id/lubuk_linggau/;Lubuk Linggau;lubuk_linggau
+http://www.meetup.com/cities/id/lubuk_pakam/;Lubuk Pakam;lubuk_pakam
+http://www.meetup.com/cities/id/lumajang/;Lumajang;lumajang
+http://www.meetup.com/cities/id/luwuk/;Luwuk;luwuk
+http://www.meetup.com/cities/id/machilipatnam/;Machilipatnam;machilipatnam
+http://www.meetup.com/cities/id/madiun/;Madiun;madiun
+http://www.meetup.com/cities/id/magelang/;Magelang;magelang
+http://www.meetup.com/cities/id/magetan/;Magetan;magetan
+http://www.meetup.com/cities/id/majalaya/;Majalaya;majalaya
+http://www.meetup.com/cities/id/majalengka/;Majalengka;majalengka
+http://www.meetup.com/cities/id/majenang/;Majenang;majenang
+http://www.meetup.com/cities/id/majene/;Majene;majene
+http://www.meetup.com/cities/id/makasar/;Makasar;makasar
+http://www.meetup.com/cities/id/malang/;Malang;malang
+http://www.meetup.com/cities/id/manado/;Manado;manado
+http://www.meetup.com/cities/id/manggar/;Manggar;manggar
+http://www.meetup.com/cities/id/manokwari/;Manokwari;manokwari
+http://www.meetup.com/cities/id/manyar/;Manyar;manyar
+http://www.meetup.com/cities/id/margahayu/;Margahayu;margahayu
+http://www.meetup.com/cities/id/margasari/;Margasari;margasari
+http://www.meetup.com/cities/id/maritengngae/;Maritengngae;maritengngae
+http://www.meetup.com/cities/id/martapura/;Martapura;martapura
+http://www.meetup.com/cities/id/mataram/;Mataram;mataram
+http://www.meetup.com/cities/id/maumere/;Maumere;maumere
+http://www.meetup.com/cities/id/mayong/;Mayong;mayong
+http://www.meetup.com/cities/id/medan/;Medan;medan
+http://www.meetup.com/cities/id/mentok/;Mentok;mentok
+http://www.meetup.com/cities/id/merauke/;Merauke;merauke
+http://www.meetup.com/cities/id/mertoyudan/;Mertoyudan;mertoyudan
+http://www.meetup.com/cities/id/metro/;Metro;metro
+http://www.meetup.com/cities/id/meulaboh/;Meulaboh;meulaboh
+http://www.meetup.com/cities/id/mlonggo/;Mlonggo;mlonggo
+http://www.meetup.com/cities/id/mobagu/;Mobagu;mobagu
+http://www.meetup.com/cities/id/mojoagung/;Mojoagung;mojoagung
+http://www.meetup.com/cities/id/mojobo/;Mojobo;mojobo
+http://www.meetup.com/cities/id/mojokerto/;Mojokerto;mojokerto
+http://www.meetup.com/cities/id/mojolaban/;Mojolaban;mojolaban
+http://www.meetup.com/cities/id/mojosari/;Mojosari;mojosari
+http://www.meetup.com/cities/id/mranggen/;Mranggen;mranggen
+http://www.meetup.com/cities/id/muncar/;Muncar;muncar
+http://www.meetup.com/cities/id/muntilan/;Muntilan;muntilan
+http://www.meetup.com/cities/id/negara/;Negara;negara
+http://www.meetup.com/cities/id/ngaglik/;Ngaglik;ngaglik
+http://www.meetup.com/cities/id/ngamprah/;Ngamprah;ngamprah
+http://www.meetup.com/cities/id/nganjuk/;Nganjuk;nganjuk
+http://www.meetup.com/cities/id/ngawi/;Ngawi;ngawi
+http://www.meetup.com/cities/id/ngemplak/;Ngemplak;ngemplak
+http://www.meetup.com/cities/id/ngoro/;Ngoro;ngoro
+http://www.meetup.com/cities/id/ngunut/;Ngunut;ngunut
+http://www.meetup.com/cities/id/pacet/;Pacet;pacet
+http://www.meetup.com/cities/id/paciran/;Paciran;paciran
+http://www.meetup.com/cities/id/padalarang/;Padalarang;padalarang
+http://www.meetup.com/cities/id/padang/;Padang;padang
+http://www.meetup.com/cities/id/padang_panjang/;Padang Panjang;padang_panjang
+http://www.meetup.com/cities/id/padang_pariaman/;Padang Pariaman;padang_pariaman
+http://www.meetup.com/cities/id/padang_sidempuan/;Padang Sidempuan;padang_sidempuan
+http://www.meetup.com/cities/id/pakisaji/;Pakisaji;pakisaji
+http://www.meetup.com/cities/id/palabuhanratu/;Palabuhanratu;palabuhanratu
+http://www.meetup.com/cities/id/palangka_raya/;Palangka Raya;palangka_raya
+http://www.meetup.com/cities/id/palembang/;Palembang;palembang
+http://www.meetup.com/cities/id/palimanan/;Palimanan;palimanan
+http://www.meetup.com/cities/id/palopo/;Palopo;palopo
+http://www.meetup.com/cities/id/palu/;Palu;palu
+http://www.meetup.com/cities/id/pamanukan/;Pamanukan;pamanukan
+http://www.meetup.com/cities/id/pamekasan/;Pamekasan;pamekasan
+http://www.meetup.com/cities/id/pameungpeuk/;Pameungpeuk;pameungpeuk
+http://www.meetup.com/cities/id/panarukan/;Panarukan;panarukan
+http://www.meetup.com/cities/id/pandaan/;Pandaan;pandaan
+http://www.meetup.com/cities/id/pandak/;Pandak;pandak
+http://www.meetup.com/cities/id/pandegelang/;Pandegelang;pandegelang
+http://www.meetup.com/cities/id/pangkah/;Pangkah;pangkah
+http://www.meetup.com/cities/id/pangkalanbrandan/;Pangkalanbrandan;pangkalanbrandan
+http://www.meetup.com/cities/id/pangkalanbuun/;Pangkalanbuun;pangkalanbuun
+http://www.meetup.com/cities/id/pangkal_pinang/;Pangkal Pinang;pangkal_pinang
+http://www.meetup.com/cities/id/panji/;Panji;panji
+http://www.meetup.com/cities/id/parakan/;Parakan;parakan
+http://www.meetup.com/cities/id/pare/;Pare;pare
+http://www.meetup.com/cities/id/pare_pare/;Pare Pare;pare_pare
+http://www.meetup.com/cities/id/parung/;Parung;parung
+http://www.meetup.com/cities/id/paseh/;Paseh;paseh
+http://www.meetup.com/cities/id/pasuruan/;Pasuruan;pasuruan
+http://www.meetup.com/cities/id/pati/;Pati;pati
+http://www.meetup.com/cities/id/payakumbuh/;Payakumbuh;payakumbuh
+http://www.meetup.com/cities/id/pecangakan/;Pecangakan;pecangakan
+http://www.meetup.com/cities/id/pedan/;Pedan;pedan
+http://www.meetup.com/cities/id/pekalongan/;Pekalongan;pekalongan
+http://www.meetup.com/cities/id/pekan_baru/;Pekan Baru;pekan_baru
+http://www.meetup.com/cities/id/pemalang/;Pemalang;pemalang
+http://www.meetup.com/cities/id/pemangkat/;Pemangkat;pemangkat
+http://www.meetup.com/cities/id/pematang_siantar/;Pematang Siantar;pematang_siantar
+http://www.meetup.com/cities/id/perbaungan/;Perbaungan;perbaungan
+http://www.meetup.com/cities/id/percut_sei_tuan/;Percut Sei Tuan;percut_sei_tuan
+http://www.meetup.com/cities/id/peterongan/;Peterongan;peterongan
+http://www.meetup.com/cities/id/peterukan/;Peterukan;peterukan
+http://www.meetup.com/cities/id/plered/;Plered;plered
+http://www.meetup.com/cities/id/plumbon/;Plumbon;plumbon
+http://www.meetup.com/cities/id/polewali/;Polewali;polewali
+http://www.meetup.com/cities/id/pondok_aren/;Pondok Aren;pondok_aren
+http://www.meetup.com/cities/id/pondokgede/;Pondokgede;pondokgede
+http://www.meetup.com/cities/id/ponorogo/;Ponorogo;ponorogo
+http://www.meetup.com/cities/id/pontianak/;Pontianak;pontianak
+http://www.meetup.com/cities/id/porong/;Porong;porong
+http://www.meetup.com/cities/id/poso/;Poso;poso
+http://www.meetup.com/cities/id/prabumulih/;Prabumulih;prabumulih
+http://www.meetup.com/cities/id/praya/;Praya;praya
+http://www.meetup.com/cities/id/prigen/;Prigen;prigen
+http://www.meetup.com/cities/id/pringsewu/;Pringsewu;pringsewu
+http://www.meetup.com/cities/id/probolinggo/;Probolinggo;probolinggo
+http://www.meetup.com/cities/id/pundong/;Pundong;pundong
+http://www.meetup.com/cities/id/purbalingga/;Purbalingga;purbalingga
+http://www.meetup.com/cities/id/purwakarta/;Purwakarta;purwakarta
+http://www.meetup.com/cities/id/purwodadi/;Purwodadi;purwodadi
+http://www.meetup.com/cities/id/purwokerto/;Purwokerto;purwokerto
+http://www.meetup.com/cities/id/purworejo/;Purworejo;purworejo
+http://www.meetup.com/cities/id/rancaekek/;Rancaekek;rancaekek
+http://www.meetup.com/cities/id/randudongkal/;Randudongkal;randudongkal
+http://www.meetup.com/cities/id/rangkasbitung/;Rangkasbitung;rangkasbitung
+http://www.meetup.com/cities/id/rantauprapat/;Rantauprapat;rantauprapat
+http://www.meetup.com/cities/id/rembang/;Rembang;rembang
+http://www.meetup.com/cities/id/rengasdengklok/;Rengasdengklok;rengasdengklok
+http://www.meetup.com/cities/id/ruteng/;Ruteng;ruteng
+http://www.meetup.com/cities/id/salatiga/;Salatiga;salatiga
+http://www.meetup.com/cities/id/samarinda/;Samarinda;samarinda
+http://www.meetup.com/cities/id/sampang/;Sampang;sampang
+http://www.meetup.com/cities/id/sampit/;Sampit;sampit
+http://www.meetup.com/cities/id/sawangan/;Sawangan;sawangan
+http://www.meetup.com/cities/id/sei_rampah/;Sei Rampah;sei_rampah
+http://www.meetup.com/cities/id/selatpanjang/;Selatpanjang;selatpanjang
+http://www.meetup.com/cities/id/selogiri/;Selogiri;selogiri
+http://www.meetup.com/cities/id/semarang/;Semarang;semarang
+http://www.meetup.com/cities/id/serang/;Serang;serang
+http://www.meetup.com/cities/id/serpong/;Serpong;serpong
+http://www.meetup.com/cities/id/sewon/;Sewon;sewon
+http://www.meetup.com/cities/id/seyegan/;Seyegan;seyegan
+http://www.meetup.com/cities/id/sibolga/;Sibolga;sibolga
+http://www.meetup.com/cities/id/sidareja/;Sidareja;sidareja
+http://www.meetup.com/cities/id/sidoarjo/;Sidoarjo;sidoarjo
+http://www.meetup.com/cities/id/sijunjung/;Sijunjung;sijunjung
+http://www.meetup.com/cities/id/simpang/;Simpang;simpang
+http://www.meetup.com/cities/id/sindang/;Sindang;sindang
+http://www.meetup.com/cities/id/singaparna/;Singaparna;singaparna
+http://www.meetup.com/cities/id/singaraja/;Singaraja;singaraja
+http://www.meetup.com/cities/id/singkang/;Singkang;singkang
+http://www.meetup.com/cities/id/singkawang/;Singkawang;singkawang
+http://www.meetup.com/cities/id/singojuruh/;Singojuruh;singojuruh
+http://www.meetup.com/cities/id/singosari/;Singosari;singosari
+http://www.meetup.com/cities/id/situbondo/;Situbondo;situbondo
+http://www.meetup.com/cities/id/slawi/;Slawi;slawi
+http://www.meetup.com/cities/id/sleman/;Sleman;sleman
+http://www.meetup.com/cities/id/sooko/;Sooko;sooko
+http://www.meetup.com/cities/id/soreang/;Soreang;soreang
+http://www.meetup.com/cities/id/sorong/;Sorong;sorong
+http://www.meetup.com/cities/id/sragen/;Sragen;sragen
+http://www.meetup.com/cities/id/srandakan/;Srandakan;srandakan
+http://www.meetup.com/cities/id/srono/;Srono;srono
+http://www.meetup.com/cities/id/stabat/;Stabat;stabat
+http://www.meetup.com/cities/id/subang/;Subang;subang
+http://www.meetup.com/cities/id/sukabumi/;Sukabumi;sukabumi
+http://www.meetup.com/cities/id/sukaraja/;Sukaraja;sukaraja
+http://www.meetup.com/cities/id/sukoharjo/;Sukoharjo;sukoharjo
+http://www.meetup.com/cities/id/sumbawa/;Sumbawa;sumbawa
+http://www.meetup.com/cities/id/sumber/;Sumber;sumber
+http://www.meetup.com/cities/id/sumber_pucung/;Sumber Pucung;sumber_pucung
+http://www.meetup.com/cities/id/sumedang/;Sumedang;sumedang
+http://www.meetup.com/cities/id/sumenep/;Sumenep;sumenep
+http://www.meetup.com/cities/id/sungai_liat/;Sungai Liat;sungai_liat
+http://www.meetup.com/cities/id/sungaipenuh/;Sungaipenuh;sungaipenuh
+http://www.meetup.com/cities/id/sungairaya/;Sungairaya;sungairaya
+http://www.meetup.com/cities/id/sunggal/;Sunggal;sunggal
+http://www.meetup.com/cities/id/surabaya/;Surabaya;surabaya
+http://www.meetup.com/cities/id/surakarta/;Surakarta;surakarta
+http://www.meetup.com/cities/id/tabanan/;Tabanan;tabanan
+http://www.meetup.com/cities/id/talang/;Talang;talang
+http://www.meetup.com/cities/id/taman/;Taman;taman
+http://www.meetup.com/cities/id/tambun/;Tambun;tambun
+http://www.meetup.com/cities/id/tangerang/;Tangerang;tangerang
+http://www.meetup.com/cities/id/tanggul/;Tanggul;tanggul
+http://www.meetup.com/cities/id/tanggulangin/;Tanggulangin;tanggulangin
+http://www.meetup.com/cities/id/tanjung_agung/;Tanjung Agung;tanjung_agung
+http://www.meetup.com/cities/id/tanjunganom/;Tanjunganom;tanjunganom
+http://www.meetup.com/cities/id/tanjung_balai/;Tanjung Balai;tanjung_balai
+http://www.meetup.com/cities/id/tanjung_balai-meral/;Tanjung Balai-Meral;tanjung_balai-meral
+http://www.meetup.com/cities/id/tanjung_morawa/;Tanjung Morawa;tanjung_morawa
+http://www.meetup.com/cities/id/tanjung_pandan/;Tanjung Pandan;tanjung_pandan
+http://www.meetup.com/cities/id/tanjung_pinang/;Tanjung Pinang;tanjung_pinang
+http://www.meetup.com/cities/id/tanjung_rebed/;Tanjung Rebed;tanjung_rebed
+http://www.meetup.com/cities/id/tanjung_tiram/;Tanjung Tiram;tanjung_tiram
+http://www.meetup.com/cities/id/tarakan/;Tarakan;tarakan
+http://www.meetup.com/cities/id/tarogong/;Tarogong;tarogong
+http://www.meetup.com/cities/id/tasikmalaya/;Tasikmalaya;tasikmalaya
+http://www.meetup.com/cities/id/tayu/;Tayu;tayu
+http://www.meetup.com/cities/id/tebingtinggi/;Tebingtinggi;tebingtinggi
+http://www.meetup.com/cities/id/tegal/;Tegal;tegal
+http://www.meetup.com/cities/id/teluknaga/;Teluknaga;teluknaga
+http://www.meetup.com/cities/id/teluk_nibung/;Teluk Nibung;teluk_nibung
+http://www.meetup.com/cities/id/temanggung/;Temanggung;temanggung
+http://www.meetup.com/cities/id/tembilahan/;Tembilahan;tembilahan
+http://www.meetup.com/cities/id/tempeh/;Tempeh;tempeh
+http://www.meetup.com/cities/id/terbanggi_besar/;Terbanggi Besar;terbanggi_besar
+http://www.meetup.com/cities/id/ternate/;Ternate;ternate
+http://www.meetup.com/cities/id/toboali-rias/;Toboali-Rias;toboali-rias
+http://www.meetup.com/cities/id/tomohon/;Tomohon;tomohon
+http://www.meetup.com/cities/id/trenggalek/;Trenggalek;trenggalek
+http://www.meetup.com/cities/id/trucuk/;Trucuk;trucuk
+http://www.meetup.com/cities/id/tual/;Tual;tual
+http://www.meetup.com/cities/id/tulungagung/;Tulungagung;tulungagung
+http://www.meetup.com/cities/id/ubud/;Ubud;ubud
+http://www.meetup.com/cities/id/ujung_bulu/;Ujung Bulu;ujung_bulu
+http://www.meetup.com/cities/id/ungaran/;Ungaran;ungaran
+http://www.meetup.com/cities/id/wanaraja/;Wanaraja;wanaraja
+http://www.meetup.com/cities/id/wanasari/;Wanasari;wanasari
+http://www.meetup.com/cities/id/waru/;Waru;waru
+http://www.meetup.com/cities/id/watang_sawitto/;Watang Sawitto;watang_sawitto
+http://www.meetup.com/cities/id/wates/;Wates;wates
+http://www.meetup.com/cities/id/welahan/;Welahan;welahan
+http://www.meetup.com/cities/id/weleri/;Weleri;weleri
+http://www.meetup.com/cities/id/wengon/;Wengon;wengon
+http://www.meetup.com/cities/id/weru/;Weru;weru
+http://www.meetup.com/cities/id/wlingi/;Wlingi;wlingi
+http://www.meetup.com/cities/id/wonogiri/;Wonogiri;wonogiri
+http://www.meetup.com/cities/id/wonosari/;Wonosari;wonosari
+http://www.meetup.com/cities/id/wonosobo/;Wonosobo;wonosobo
+http://www.meetup.com/cities/id/wuradesa/;Wuradesa;wuradesa
+http://www.meetup.com/cities/id/yogyakarta/;Yogyakarta;yogyakarta

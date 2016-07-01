@@ -1,0 +1,275 @@
+http://www.meetup.com/cities/nz/ahipara/;Ahipara;ahipara
+http://www.meetup.com/cities/nz/akaroa/;Akaroa;akaroa
+http://www.meetup.com/cities/nz/algies_bay-mahurangi/;Algies Bay-Mahurangi;algies_bay-mahurangi
+http://www.meetup.com/cities/nz/amberley/;Amberley;amberley
+http://www.meetup.com/cities/nz/arrowtown/;Arrowtown;arrowtown
+http://www.meetup.com/cities/nz/ashburton/;Ashburton;ashburton
+http://www.meetup.com/cities/nz/athenree/;Athenree;athenree
+http://www.meetup.com/cities/nz/auckland/;Auckland;auckland
+http://www.meetup.com/cities/nz/avarua/;Avarua;avarua
+http://www.meetup.com/cities/nz/awanui/;Awanui;awanui
+http://www.meetup.com/cities/nz/balclutha/;Balclutha;balclutha
+http://www.meetup.com/cities/nz/blackball/;Blackball;blackball
+http://www.meetup.com/cities/nz/blenheim/;Blenheim;blenheim
+http://www.meetup.com/cities/nz/bluff/;Bluff;bluff
+http://www.meetup.com/cities/nz/brightwater/;Brightwater;brightwater
+http://www.meetup.com/cities/nz/bulls/;Bulls;bulls
+http://www.meetup.com/cities/nz/burnham/;Burnham;burnham
+http://www.meetup.com/cities/nz/cambridge/;Cambridge;cambridge
+http://www.meetup.com/cities/nz/carterton/;Carterton;carterton
+http://www.meetup.com/cities/nz/cheviot/;Cheviot;cheviot
+http://www.meetup.com/cities/nz/christchurch/;Christchurch;christchurch
+http://www.meetup.com/cities/nz/clinton/;Clinton;clinton
+http://www.meetup.com/cities/nz/clyde/;Clyde;clyde
+http://www.meetup.com/cities/nz/coromandel/;Coromandel;coromandel
+http://www.meetup.com/cities/nz/cromwell/;Cromwell;cromwell
+http://www.meetup.com/cities/nz/culverden/;Culverden;culverden
+http://www.meetup.com/cities/nz/%C3%A7ust/;Çust;%C3%A7ust
+http://www.meetup.com/cities/nz/dannevirke/;Dannevirke;dannevirke
+http://www.meetup.com/cities/nz/darfield/;Darfield;darfield
+http://www.meetup.com/cities/nz/dargaville/;Dargaville;dargaville
+http://www.meetup.com/cities/nz/dobson/;Dobson;dobson
+http://www.meetup.com/cities/nz/dunedin/;Dunedin;dunedin
+http://www.meetup.com/cities/nz/dunsandel/;Dunsandel;dunsandel
+http://www.meetup.com/cities/nz/east_opua/;East Opua;east_opua
+http://www.meetup.com/cities/nz/edendale/;Edendale;edendale
+http://www.meetup.com/cities/nz/edgecumbe/;Edgecumbe;edgecumbe
+http://www.meetup.com/cities/nz/egmont_village/;Egmont Village;egmont_village
+http://www.meetup.com/cities/nz/eketahuna/;Eketahuna;eketahuna
+http://www.meetup.com/cities/nz/eltham/;Eltham;eltham
+http://www.meetup.com/cities/nz/fairlie/;Fairlie;fairlie
+http://www.meetup.com/cities/nz/featherston/;Featherston;featherston
+http://www.meetup.com/cities/nz/feilding/;Feilding;feilding
+http://www.meetup.com/cities/nz/fox_glacier/;Fox Glacier;fox_glacier
+http://www.meetup.com/cities/nz/foxton/;Foxton;foxton
+http://www.meetup.com/cities/nz/franz_josef/;Franz Josef;franz_josef
+http://www.meetup.com/cities/nz/frasertown/;Frasertown;frasertown
+http://www.meetup.com/cities/nz/geraldine/;Geraldine;geraldine
+http://www.meetup.com/cities/nz/gisborne/;Gisborne;gisborne
+http://www.meetup.com/cities/nz/gore/;Gore;gore
+http://www.meetup.com/cities/nz/greymouth/;Greymouth;greymouth
+http://www.meetup.com/cities/nz/greytown/;Greytown;greytown
+http://www.meetup.com/cities/nz/halcombe/;Halcombe;halcombe
+http://www.meetup.com/cities/nz/hamilton/;Hamilton;hamilton
+http://www.meetup.com/cities/nz/hampden/;Hampden;hampden
+http://www.meetup.com/cities/nz/hanmer_springs/;Hanmer Springs;hanmer_springs
+http://www.meetup.com/cities/nz/harihari/;Harihari;harihari
+http://www.meetup.com/cities/nz/haruru_falls/;Haruru Falls;haruru_falls
+http://www.meetup.com/cities/nz/hastings/;Hastings;hastings
+http://www.meetup.com/cities/nz/havelock/;Havelock;havelock
+http://www.meetup.com/cities/nz/hawera/;Hawera;hawera
+http://www.meetup.com/cities/nz/hector-ngakawau/;Hector-Ngakawau;hector-ngakawau
+http://www.meetup.com/cities/nz/helensville/;Helensville;helensville
+http://www.meetup.com/cities/nz/himatangi/;Himatangi;himatangi
+http://www.meetup.com/cities/nz/hokitika/;Hokitika;hokitika
+http://www.meetup.com/cities/nz/hunterville/;Hunterville;hunterville
+http://www.meetup.com/cities/nz/huntly/;Huntly;huntly
+http://www.meetup.com/cities/nz/inglewood/;Inglewood;inglewood
+http://www.meetup.com/cities/nz/invercargill/;Invercargill;invercargill
+http://www.meetup.com/cities/nz/johannesburg/;Johannesburg;johannesburg
+http://www.meetup.com/cities/nz/kaikohe/;Kaikohe;kaikohe
+http://www.meetup.com/cities/nz/kaikoura/;Kaikoura;kaikoura
+http://www.meetup.com/cities/nz/kaingaroa_forest/;Kaingaroa Forest;kaingaroa_forest
+http://www.meetup.com/cities/nz/kaitaia/;Kaitaia;kaitaia
+http://www.meetup.com/cities/nz/kaitangata/;Kaitangata;kaitangata
+http://www.meetup.com/cities/nz/kaiwaka/;Kaiwaka;kaiwaka
+http://www.meetup.com/cities/nz/kakanui/;Kakanui;kakanui
+http://www.meetup.com/cities/nz/k%C3%A4o/;Käo;k%C3%A4o
+http://www.meetup.com/cities/nz/kapiti/;Kapiti;kapiti
+http://www.meetup.com/cities/nz/kaponga/;Kaponga;kaponga
+http://www.meetup.com/cities/nz/karamea/;Karamea;karamea
+http://www.meetup.com/cities/nz/karitane/;Karitane;karitane
+http://www.meetup.com/cities/nz/katikati/;Katikati;katikati
+http://www.meetup.com/cities/nz/kawakawa/;Kawakawa;kawakawa
+http://www.meetup.com/cities/nz/kawerau/;Kawerau;kawerau
+http://www.meetup.com/cities/nz/kawhia/;Kawhia;kawhia
+http://www.meetup.com/cities/nz/kerepehi/;Kerepehi;kerepehi
+http://www.meetup.com/cities/nz/kerikeri/;Kerikeri;kerikeri
+http://www.meetup.com/cities/nz/kurow/;Kurow;kurow
+http://www.meetup.com/cities/nz/lake_tekapo/;Lake Tekapo;lake_tekapo
+http://www.meetup.com/cities/nz/lawrence/;Lawrence;lawrence
+http://www.meetup.com/cities/nz/leeston/;Leeston;leeston
+http://www.meetup.com/cities/nz/leigh/;Leigh;leigh
+http://www.meetup.com/cities/nz/levin/;Levin;levin
+http://www.meetup.com/cities/nz/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/nz/lower_hutt/;Lower Hutt;lower_hutt
+http://www.meetup.com/cities/nz/lumsden/;Lumsden;lumsden
+http://www.meetup.com/cities/nz/lyttelton/;Lyttelton;lyttelton
+http://www.meetup.com/cities/nz/makara-ohariu/;Makara-Ohariu;makara-ohariu
+http://www.meetup.com/cities/nz/maketu/;Maketu;maketu
+http://www.meetup.com/cities/nz/mamaku/;Mamaku;mamaku
+http://www.meetup.com/cities/nz/manaia/;Manaia;manaia
+http://www.meetup.com/cities/nz/manapouri/;Manapouri;manapouri
+http://www.meetup.com/cities/nz/mangakino/;Mangakino;mangakino
+http://www.meetup.com/cities/nz/mangawhai_heads/;Mangawhai Heads;mangawhai_heads
+http://www.meetup.com/cities/nz/manukau/;Manukau;manukau
+http://www.meetup.com/cities/nz/manutuke/;Manutuke;manutuke
+http://www.meetup.com/cities/nz/mapua/;Mapua;mapua
+http://www.meetup.com/cities/nz/martinborough/;Martinborough;martinborough
+http://www.meetup.com/cities/nz/marton/;Marton;marton
+http://www.meetup.com/cities/nz/masterton/;Masterton;masterton
+http://www.meetup.com/cities/nz/matamata/;Matamata;matamata
+http://www.meetup.com/cities/nz/matata/;Matata;matata
+http://www.meetup.com/cities/nz/maungatapere/;Maungatapere;maungatapere
+http://www.meetup.com/cities/nz/maungaturoto/;Maungaturoto;maungaturoto
+http://www.meetup.com/cities/nz/meremere/;Meremere;meremere
+http://www.meetup.com/cities/nz/methven/;Methven;methven
+http://www.meetup.com/cities/nz/milton/;Milton;milton
+http://www.meetup.com/cities/nz/moerewa/;Moerewa;moerewa
+http://www.meetup.com/cities/nz/morrinsville/;Morrinsville;morrinsville
+http://www.meetup.com/cities/nz/motueka/;Motueka;motueka
+http://www.meetup.com/cities/nz/mount_cook/;Mount Cook;mount_cook
+http://www.meetup.com/cities/nz/mumbai/;Mumbai;mumbai
+http://www.meetup.com/cities/nz/murchison/;Murchison;murchison
+http://www.meetup.com/cities/nz/muriwai_beach/;Muriwai Beach;muriwai_beach
+http://www.meetup.com/cities/nz/murupara/;Murupara;murupara
+http://www.meetup.com/cities/nz/napier/;Napier;napier
+http://www.meetup.com/cities/nz/nelson/;Nelson;nelson
+http://www.meetup.com/cities/nz/new_plymouth/;New Plymouth;new_plymouth
+http://www.meetup.com/cities/nz/ngaruawahia/;Ngaruawahia;ngaruawahia
+http://www.meetup.com/cities/nz/ngatea/;Ngatea;ngatea
+http://www.meetup.com/cities/nz/ngunguru/;Ngunguru;ngunguru
+http://www.meetup.com/cities/nz/night_caps/;Night Caps;night_caps
+http://www.meetup.com/cities/nz/north_shore/;North Shore;north_shore
+http://www.meetup.com/cities/nz/nuhaka/;Nuhaka;nuhaka
+http://www.meetup.com/cities/nz/oamaru/;Oamaru;oamaru
+http://www.meetup.com/cities/nz/ohaeawai/;Ohaeawai;ohaeawai
+http://www.meetup.com/cities/nz/ohai/;Ohai;ohai
+http://www.meetup.com/cities/nz/ohakune/;Ohakune;ohakune
+http://www.meetup.com/cities/nz/ohura/;Ohura;ohura
+http://www.meetup.com/cities/nz/okaihau/;Okaihau;okaihau
+http://www.meetup.com/cities/nz/okato/;Okato;okato
+http://www.meetup.com/cities/nz/omapere_and_opononi/;Omapere and Opononi;omapere_and_opononi
+http://www.meetup.com/cities/nz/omarama/;Omarama;omarama
+http://www.meetup.com/cities/nz/opotiki/;Opotiki;opotiki
+http://www.meetup.com/cities/nz/opunake/;Opunake;opunake
+http://www.meetup.com/cities/nz/orewa/;Orewa;orewa
+http://www.meetup.com/cities/nz/otaki/;Otaki;otaki
+http://www.meetup.com/cities/nz/otane/;Otane;otane
+http://www.meetup.com/cities/nz/otautau/;Otautau;otautau
+http://www.meetup.com/cities/nz/otematata/;Otematata;otematata
+http://www.meetup.com/cities/nz/otorohanga/;Otorohanga;otorohanga
+http://www.meetup.com/cities/nz/outram/;Outram;outram
+http://www.meetup.com/cities/nz/owaka/;Owaka;owaka
+http://www.meetup.com/cities/nz/oxford/;Oxford;oxford
+http://www.meetup.com/cities/nz/paengaroa/;Paengaroa;paengaroa
+http://www.meetup.com/cities/nz/paeroa/;Paeroa;paeroa
+http://www.meetup.com/cities/nz/pahiatua/;Pahiatua;pahiatua
+http://www.meetup.com/cities/nz/paihia/;Paihia;paihia
+http://www.meetup.com/cities/nz/palmerston_north/;Palmerston North;palmerston_north
+http://www.meetup.com/cities/nz/parakai/;Parakai;parakai
+http://www.meetup.com/cities/nz/pareora/;Pareora;pareora
+http://www.meetup.com/cities/nz/patea/;Patea;patea
+http://www.meetup.com/cities/nz/patutahi/;Patutahi;patutahi
+http://www.meetup.com/cities/nz/pauanui_beach/;Pauanui Beach;pauanui_beach
+http://www.meetup.com/cities/nz/picton/;Picton;picton
+http://www.meetup.com/cities/nz/piopio/;Piopio;piopio
+http://www.meetup.com/cities/nz/pleasant_point/;Pleasant Point;pleasant_point
+http://www.meetup.com/cities/nz/porirua/;Porirua;porirua
+http://www.meetup.com/cities/nz/pukekohe/;Pukekohe;pukekohe
+http://www.meetup.com/cities/nz/putaruru/;Putaruru;putaruru
+http://www.meetup.com/cities/nz/queenstown/;Queenstown;queenstown
+http://www.meetup.com/cities/nz/raetihi/;Raetihi;raetihi
+http://www.meetup.com/cities/nz/raglan/;Raglan;raglan
+http://www.meetup.com/cities/nz/rahotu/;Rahotu;rahotu
+http://www.meetup.com/cities/nz/rakaia/;Rakaia;rakaia
+http://www.meetup.com/cities/nz/ranfurly/;Ranfurly;ranfurly
+http://www.meetup.com/cities/nz/rangiora/;Rangiora;rangiora
+http://www.meetup.com/cities/nz/ratana/;Ratana;ratana
+http://www.meetup.com/cities/nz/rawene/;Rawene;rawene
+http://www.meetup.com/cities/nz/reefton/;Reefton;reefton
+http://www.meetup.com/cities/nz/reporoa/;Reporoa;reporoa
+http://www.meetup.com/cities/nz/riversdale/;Riversdale;riversdale
+http://www.meetup.com/cities/nz/riverton/;Riverton;riverton
+http://www.meetup.com/cities/nz/riwaka/;Riwaka;riwaka
+http://www.meetup.com/cities/nz/rolleston/;Rolleston;rolleston
+http://www.meetup.com/cities/nz/rongotea/;Rongotea;rongotea
+http://www.meetup.com/cities/nz/ross/;Ross;ross
+http://www.meetup.com/cities/nz/rotorua/;Rotorua;rotorua
+http://www.meetup.com/cities/nz/roxburgh/;Roxburgh;roxburgh
+http://www.meetup.com/cities/nz/ruatoria/;Ruatoria;ruatoria
+http://www.meetup.com/cities/nz/ruawai/;Ruawai;ruawai
+http://www.meetup.com/cities/nz/russell/;Russell;russell
+http://www.meetup.com/cities/nz/sanson/;Sanson;sanson
+http://www.meetup.com/cities/nz/seddon/;Seddon;seddon
+http://www.meetup.com/cities/nz/sefton/;Sefton;sefton
+http://www.meetup.com/cities/nz/shannon/;Shannon;shannon
+http://www.meetup.com/cities/nz/southbridge/;Southbridge;southbridge
+http://www.meetup.com/cities/nz/stirling/;Stirling;stirling
+http://www.meetup.com/cities/nz/stratford/;Stratford;stratford
+http://www.meetup.com/cities/nz/taihape/;Taihape;taihape
+http://www.meetup.com/cities/nz/taipa_bay-mangonui/;Taipa Bay-Mangonui;taipa_bay-mangonui
+http://www.meetup.com/cities/nz/tairua/;Tairua;tairua
+http://www.meetup.com/cities/nz/taitapu/;Taitapu;taitapu
+http://www.meetup.com/cities/nz/takaka/;Takaka;takaka
+http://www.meetup.com/cities/nz/takapau/;Takapau;takapau
+http://www.meetup.com/cities/nz/taneatua/;Taneatua;taneatua
+http://www.meetup.com/cities/nz/tapanui/;Tapanui;tapanui
+http://www.meetup.com/cities/nz/tapawera/;Tapawera;tapawera
+http://www.meetup.com/cities/nz/taumarunui/;Taumarunui;taumarunui
+http://www.meetup.com/cities/nz/taupo/;Taupo;taupo
+http://www.meetup.com/cities/nz/tauranga/;Tauranga;tauranga
+http://www.meetup.com/cities/nz/te_anau/;Te Anau;te_anau
+http://www.meetup.com/cities/nz/te_aroha/;Te Aroha;te_aroha
+http://www.meetup.com/cities/nz/te_awamutu/;Te Awamutu;te_awamutu
+http://www.meetup.com/cities/nz/te_horo/;Te Horo;te_horo
+http://www.meetup.com/cities/nz/te_kaha/;Te Kaha;te_kaha
+http://www.meetup.com/cities/nz/te_karaka/;Te Karaka;te_karaka
+http://www.meetup.com/cities/nz/te_kauwhata/;Te Kauwhata;te_kauwhata
+http://www.meetup.com/cities/nz/te_kopuru/;Te Kopuru;te_kopuru
+http://www.meetup.com/cities/nz/te_kuiti/;Te Kuiti;te_kuiti
+http://www.meetup.com/cities/nz/temuka/;Temuka;temuka
+http://www.meetup.com/cities/nz/te_puke/;Te Puke;te_puke
+http://www.meetup.com/cities/nz/te_puru-thornton_bay/;Te Puru-Thornton Bay;te_puru-thornton_bay
+http://www.meetup.com/cities/nz/te_teko/;Te Teko;te_teko
+http://www.meetup.com/cities/nz/thames/;Thames;thames
+http://www.meetup.com/cities/nz/timaru/;Timaru;timaru
+http://www.meetup.com/cities/nz/tirau/;Tirau;tirau
+http://www.meetup.com/cities/nz/tokomaru/;Tokomaru;tokomaru
+http://www.meetup.com/cities/nz/tokomaru_bay/;Tokomaru Bay;tokomaru_bay
+http://www.meetup.com/cities/nz/tokoroa/;Tokoroa;tokoroa
+http://www.meetup.com/cities/nz/tolaga_bay/;Tolaga Bay;tolaga_bay
+http://www.meetup.com/cities/nz/tuai/;Tuai;tuai
+http://www.meetup.com/cities/nz/tuatapere/;Tuatapere;tuatapere
+http://www.meetup.com/cities/nz/turangi/;Turangi;turangi
+http://www.meetup.com/cities/nz/twizel/;Twizel;twizel
+http://www.meetup.com/cities/nz/upper_hutt/;Upper Hutt;upper_hutt
+http://www.meetup.com/cities/nz/urenui/;Urenui;urenui
+http://www.meetup.com/cities/nz/waharoa/;Waharoa;waharoa
+http://www.meetup.com/cities/nz/waiheke/;Waiheke;waiheke
+http://www.meetup.com/cities/nz/waihi/;Waihi;waihi
+http://www.meetup.com/cities/nz/waihi_beach/;Waihi Beach;waihi_beach
+http://www.meetup.com/cities/nz/waikouaiti/;Waikouaiti;waikouaiti
+http://www.meetup.com/cities/nz/waikuku/;Waikuku;waikuku
+http://www.meetup.com/cities/nz/waimana/;Waimana;waimana
+http://www.meetup.com/cities/nz/waimate/;Waimate;waimate
+http://www.meetup.com/cities/nz/waiouru/;Waiouru;waiouru
+http://www.meetup.com/cities/nz/waipawa/;Waipawa;waipawa
+http://www.meetup.com/cities/nz/waipukurau/;Waipukurau;waipukurau
+http://www.meetup.com/cities/nz/wairoa/;Wairoa;wairoa
+http://www.meetup.com/cities/nz/waitakere/;Waitakere;waitakere
+http://www.meetup.com/cities/nz/waitangi/;Waitangi;waitangi
+http://www.meetup.com/cities/nz/waitara/;Waitara;waitara
+http://www.meetup.com/cities/nz/waitati/;Waitati;waitati
+http://www.meetup.com/cities/nz/waitoa/;Waitoa;waitoa
+http://www.meetup.com/cities/nz/waiuku/;Waiuku;waiuku
+http://www.meetup.com/cities/nz/wakefield/;Wakefield;wakefield
+http://www.meetup.com/cities/nz/wallacetown/;Wallacetown;wallacetown
+http://www.meetup.com/cities/nz/wanaka/;Wanaka;wanaka
+http://www.meetup.com/cities/nz/wanganui/;Wanganui;wanganui
+http://www.meetup.com/cities/nz/warkworth/;Warkworth;warkworth
+http://www.meetup.com/cities/nz/warrington/;Warrington;warrington
+http://www.meetup.com/cities/nz/waverley/;Waverley;waverley
+http://www.meetup.com/cities/nz/wellington/;Wellington;wellington
+http://www.meetup.com/cities/nz/wellsford/;Wellsford;wellsford
+http://www.meetup.com/cities/nz/westport/;Westport;westport
+http://www.meetup.com/cities/nz/whakatane/;Whakatane;whakatane
+http://www.meetup.com/cities/nz/whangamata/;Whangamata;whangamata
+http://www.meetup.com/cities/nz/whangaparaoa/;Whangaparaoa;whangaparaoa
+http://www.meetup.com/cities/nz/whangarei/;Whangarei;whangarei
+http://www.meetup.com/cities/nz/whitianga/;Whitianga;whitianga
+http://www.meetup.com/cities/nz/winton/;Winton;winton
+http://www.meetup.com/cities/nz/woodend/;Woodend;woodend
+http://www.meetup.com/cities/nz/woodlands/;Woodlands;woodlands
+http://www.meetup.com/cities/nz/woodville/;Woodville;woodville
+http://www.meetup.com/cities/nz/wyndham/;Wyndham;wyndham

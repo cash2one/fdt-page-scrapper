@@ -1,0 +1,39 @@
+Put Option
+
+Definition:
+A put option is an option contract in which the holder (buyer) has the right (but not the obligation) to sell a specified quantity of a security at a specified price (strike price) within a fixed period of time (until its expiration).
+
+For the writer (seller) of a put option, it represents an obligation to buy the underlying security at the strike price if the option is exercised. The put option writer is paid a premium for taking on the risk associated with the obligation.
+
+For stock options, each contract covers 100 shares.
+
+A Simplified Example
+
+Suppose the stock of XYZ company is trading at $40. A put option contract with a strike price of $40 expiring in a month's time is being priced at $2. You strongly believe that XYZ stock will drop sharply in the coming weeks after their earnings report. So you paid $200 to purchase a single $40 XYZ put option covering 100 shares.
+
+Profit Graph for the Long Put Options Strategy
+Say you were spot on and the price of XYZ stock plunges to $30 after the company reported weak earnings and lowered its earnings guidance for the next quarter. With this crash in the underlying stock price, your put buying strategy will result in a profit of $800.
+
+Let's take a look at how we obtain this figure.
+
+If you were to exercise your put option after earnings, you invoke your right to sell 100 shares of XYZ stock at $40 each. Although you don't own any share of XYZ company at this time, you can easily go to the open market to buy 100 shares at only $30 a share and sell them immediately for $40 per share. This gives you a profit of $10 per share. Since each put option contract covers 100 shares, the total amount you will receive from the exercise is $1000. As you had paid $200 to purchase this put option, your net profit for the entire trade is $800.
+
+This strategy of trading put option is known as the long put strategy. See our long put strategy article for a more detailed explanation as well as formulae for calculating maximum profit, maximum loss and breakeven points.
+
+Protective Puts
+Investors also buy put options when they wish to protect an existing long stock position. Put options employed in this manner are also known as protective puts. Entire portfolio of stocks can also be protected using index puts.
+
+Selling Put Options
+Instead of purchasing put options, one can also sell (write) them for a profit. Put option writers, also known as sellers, sell put options with the hope that they expire worthless so that they can pocket the premiums. Selling puts, or put writing, involves more risk but can be profitable if done properly.
+
+Covered Puts
+The written put option is covered if the put option writer is also short the obligated quantity of the underlying security. The covered put writing strategy is employed when the investor is bearish on the underlying.
+
+Naked Puts
+The short put is naked if the put option writer did not short the obligated quantity of the underlying security when the put option is sold. The naked put writing strategy is used when the investor is bullish on the underlying.
+
+For the patient investor who is bullish on a particular company for the long haul, writing naked puts can also be a great strategy to acquire stocks at a discount.
+
+Put Spreads
+A put spread is an options strategy in which equal number of put option contracts are bought and sold simultaneously on the same underlying security but with different strike prices and/or expiration dates. Put spreads limit the option trader's maximum loss at the expense of capping his potential profit at the same time.
+

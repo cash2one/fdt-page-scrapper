@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/cz/adamov/;Adamov;adamov
+http://www.meetup.com/cities/cz/ash/;Ash;ash
+http://www.meetup.com/cities/cz/bechyne/;Bechyne;bechyne
+http://www.meetup.com/cities/cz/beroun/;Beroun;beroun
+http://www.meetup.com/cities/cz/blatn%C3%A1/;Blatná;blatn%C3%A1
+http://www.meetup.com/cities/cz/brno/;Brno;brno
+http://www.meetup.com/cities/cz/chesk%C3%A1_l%C3%ADpa/;Cheská Lípa;chesk%C3%A1_l%C3%ADpa
+http://www.meetup.com/cities/cz/chesk%C3%A1_trebov%C3%A1/;Cheská Trebová;chesk%C3%A1_trebov%C3%A1
+http://www.meetup.com/cities/cz/chesk%C3%A9_budejovice/;Cheské Budejovice;chesk%C3%A9_budejovice
+http://www.meetup.com/cities/cz/chesk%C3%BD_brod/;Cheský Brod;chesk%C3%BD_brod
+http://www.meetup.com/cities/cz/chomutov/;Chomutov;chomutov
+http://www.meetup.com/cities/cz/fr%C3%BDdek-m%C3%ADstek/;Frýdek-Místek;fr%C3%BDdek-m%C3%ADstek
+http://www.meetup.com/cities/cz/hav%C3%ADrov/;Havírov;hav%C3%ADrov
+http://www.meetup.com/cities/cz/horovice/;Horovice;horovice
+http://www.meetup.com/cities/cz/hradec_kr%C3%A1lov%C3%A9/;Hradec Králové;hradec_kr%C3%A1lov%C3%A9
+http://www.meetup.com/cities/cz/jablonec/;Jablonec;jablonec
+http://www.meetup.com/cities/cz/jindrichuv_hradec/;Jindrichuv Hradec;jindrichuv_hradec
+http://www.meetup.com/cities/cz/karlovy_vary/;Karlovy Vary;karlovy_vary
+http://www.meetup.com/cities/cz/karvin%C3%A1/;Karviná;karvin%C3%A1
+http://www.meetup.com/cities/cz/kol%C3%ADn/;Kolín;kol%C3%ADn
+http://www.meetup.com/cities/cz/krnov/;Krnov;krnov
+http://www.meetup.com/cities/cz/liberec/;Liberec;liberec
+http://www.meetup.com/cities/cz/litomerice/;Litomerice;litomerice
+http://www.meetup.com/cities/cz/litomyshl/;Litomyshl;litomyshl
+http://www.meetup.com/cities/cz/lys%C3%A1_nad_labem/;Lysá nad Labem;lys%C3%A1_nad_labem
+http://www.meetup.com/cities/cz/mlad%C3%A1_boleslav/;Mladá Boleslav;mlad%C3%A1_boleslav
+http://www.meetup.com/cities/cz/moravsk%C3%A1_trebov%C3%A1/;Moravská Trebová;moravsk%C3%A1_trebov%C3%A1
+http://www.meetup.com/cities/cz/moravsk%C3%BD_krumlov/;Moravský Krumlov;moravsk%C3%BD_krumlov
+http://www.meetup.com/cities/cz/olomouc/;Olomouc;olomouc
+http://www.meetup.com/cities/cz/opava/;Opava;opava
+http://www.meetup.com/cities/cz/ostrava/;Ostrava;ostrava
+http://www.meetup.com/cities/cz/pardubice/;Pardubice;pardubice
+http://www.meetup.com/cities/cz/plzen/;Plzen;plzen
+http://www.meetup.com/cities/cz/podebrady/;Podebrady;podebrady
+http://www.meetup.com/cities/cz/prague/;Prague;prague
+http://www.meetup.com/cities/cz/prerov/;Prerov;prerov
+http://www.meetup.com/cities/cz/pribram/;Pribram;pribram
+http://www.meetup.com/cities/cz/p%C3%ADsek/;Písek;p%C3%ADsek
+http://www.meetup.com/cities/cz/shumperk/;Shumperk;shumperk
+http://www.meetup.com/cities/cz/tachov/;Tachov;tachov
+http://www.meetup.com/cities/cz/teplice/;Teplice;teplice
+http://www.meetup.com/cities/cz/trinec/;Trinec;trinec
+http://www.meetup.com/cities/cz/trutnov/;Trutnov;trutnov
+http://www.meetup.com/cities/cz/t%C3%A1bor/;Tábor;t%C3%A1bor
+http://www.meetup.com/cities/cz/uhersk%C3%BD_brod/;Uherský Brod;uhersk%C3%BD_brod
+http://www.meetup.com/cities/cz/vesel%C3%AD_nad_luzhnic%C3%AD/;Veselí nad Luzhnicí;vesel%C3%AD_nad_luzhnic%C3%AD
+http://www.meetup.com/cities/cz/vset%C3%ADn/;Vsetín;vset%C3%ADn
+http://www.meetup.com/cities/cz/zl%C3%ADn/;Zlín;zl%C3%ADn
+http://www.meetup.com/cities/cz/%C3%BAst%C3%AD/;Ústí;%C3%BAst%C3%AD
+http://www.meetup.com/cities/cz/%C3%BAst%C3%AD_nad_orlic%C3%AD/;Ústí nad Orlicí;%C3%BAst%C3%AD_nad_orlic%C3%AD

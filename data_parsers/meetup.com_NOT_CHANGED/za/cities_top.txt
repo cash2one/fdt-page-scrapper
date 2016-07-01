@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/za/adelaide/;Adelaide;adelaide
+http://www.meetup.com/cities/za/alberton/;Alberton;alberton
+http://www.meetup.com/cities/za/benoni/;Benoni;benoni
+http://www.meetup.com/cities/za/bloemfontein/;Bloemfontein;bloemfontein
+http://www.meetup.com/cities/za/boksburg/;Boksburg;boksburg
+http://www.meetup.com/cities/za/brakpan/;Brakpan;brakpan
+http://www.meetup.com/cities/za/bronkhorstspruit/;Bronkhorstspruit;bronkhorstspruit
+http://www.meetup.com/cities/za/cape_town/;Cape Town;cape_town
+http://www.meetup.com/cities/za/carltonville/;Carltonville;carltonville
+http://www.meetup.com/cities/za/durban/;Durban;durban
+http://www.meetup.com/cities/za/east_london/;East London;east_london
+http://www.meetup.com/cities/za/george/;George;george
+http://www.meetup.com/cities/za/grahamstown/;Grahamstown;grahamstown
+http://www.meetup.com/cities/za/hermanus/;Hermanus;hermanus
+http://www.meetup.com/cities/za/jeffreys_bay/;Jeffreys Bay;jeffreys_bay
+http://www.meetup.com/cities/za/johannesburg/;Johannesburg;johannesburg
+http://www.meetup.com/cities/za/kathu/;Kathu;kathu
+http://www.meetup.com/cities/za/kimberley/;Kimberley;kimberley
+http://www.meetup.com/cities/za/klerksdorp/;Klerksdorp;klerksdorp
+http://www.meetup.com/cities/za/knysna/;Knysna;knysna
+http://www.meetup.com/cities/za/kroonstad/;Kroonstad;kroonstad
+http://www.meetup.com/cities/za/krugersdorp/;Krugersdorp;krugersdorp
+http://www.meetup.com/cities/za/middelburg/;Middelburg;middelburg
+http://www.meetup.com/cities/za/midrand/;Midrand;midrand
+http://www.meetup.com/cities/za/mmabatho/;Mmabatho;mmabatho
+http://www.meetup.com/cities/za/nelspruit/;Nelspruit;nelspruit
+http://www.meetup.com/cities/za/newcastle/;Newcastle;newcastle
+http://www.meetup.com/cities/za/paarl/;Paarl;paarl
+http://www.meetup.com/cities/za/pietermaritzburg/;Pietermaritzburg;pietermaritzburg
+http://www.meetup.com/cities/za/pietersburg/;Pietersburg;pietersburg
+http://www.meetup.com/cities/za/plettenberg_bay/;Plettenberg Bay;plettenberg_bay
+http://www.meetup.com/cities/za/port_alfred/;Port Alfred;port_alfred
+http://www.meetup.com/cities/za/port_elizabeth/;Port Elizabeth;port_elizabeth
+http://www.meetup.com/cities/za/potchefstroom/;Potchefstroom;potchefstroom
+http://www.meetup.com/cities/za/pretoria/;Pretoria;pretoria
+http://www.meetup.com/cities/za/randfontein/;Randfontein;randfontein
+http://www.meetup.com/cities/za/richards_bay/;Richards Bay;richards_bay
+http://www.meetup.com/cities/za/rustenburg/;Rustenburg;rustenburg
+http://www.meetup.com/cities/za/saldanha/;Saldanha;saldanha
+http://www.meetup.com/cities/za/secunda/;Secunda;secunda
+http://www.meetup.com/cities/za/soweto/;Soweto;soweto
+http://www.meetup.com/cities/za/springs/;Springs;springs
+http://www.meetup.com/cities/za/stellenbosch/;Stellenbosch;stellenbosch
+http://www.meetup.com/cities/za/tembisa/;Tembisa;tembisa
+http://www.meetup.com/cities/za/tzaneen/;Tzaneen;tzaneen
+http://www.meetup.com/cities/za/vanderbijlpark/;Vanderbijlpark;vanderbijlpark
+http://www.meetup.com/cities/za/vereeniging/;Vereeniging;vereeniging
+http://www.meetup.com/cities/za/welkom/;Welkom;welkom
+http://www.meetup.com/cities/za/witbank/;Witbank;witbank
+http://www.meetup.com/cities/za/worcester/;Worcester;worcester

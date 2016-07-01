@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/us/il/arlington_heights/;Arlington Heights;arlington_heights
+http://www.meetup.com/cities/us/il/aurora/;Aurora;aurora
+http://www.meetup.com/cities/us/il/barrington/;Barrington;barrington
+http://www.meetup.com/cities/us/il/bartlett/;Bartlett;bartlett
+http://www.meetup.com/cities/us/il/belleville/;Belleville;belleville
+http://www.meetup.com/cities/us/il/bloomington/;Bloomington;bloomington
+http://www.meetup.com/cities/us/il/bolingbrook/;Bolingbrook;bolingbrook
+http://www.meetup.com/cities/us/il/buffalo_grove/;Buffalo Grove;buffalo_grove
+http://www.meetup.com/cities/us/il/carbondale/;Carbondale;carbondale
+http://www.meetup.com/cities/us/il/carol_stream/;Carol Stream;carol_stream
+http://www.meetup.com/cities/us/il/champaign/;Champaign;champaign
+http://www.meetup.com/cities/us/il/chicago/;Chicago;chicago
+http://www.meetup.com/cities/us/il/crystal_lake/;Crystal Lake;crystal_lake
+http://www.meetup.com/cities/us/il/decatur/;Decatur;decatur
+http://www.meetup.com/cities/us/il/deerfield/;Deerfield;deerfield
+http://www.meetup.com/cities/us/il/des_plaines/;Des Plaines;des_plaines
+http://www.meetup.com/cities/us/il/downers_grove/;Downers Grove;downers_grove
+http://www.meetup.com/cities/us/il/elgin/;Elgin;elgin
+http://www.meetup.com/cities/us/il/elk_grove_village/;Elk Grove Village;elk_grove_village
+http://www.meetup.com/cities/us/il/elmhurst/;Elmhurst;elmhurst
+http://www.meetup.com/cities/us/il/evanston/;Evanston;evanston
+http://www.meetup.com/cities/us/il/glen_ellyn/;Glen Ellyn;glen_ellyn
+http://www.meetup.com/cities/us/il/glenview/;Glenview;glenview
+http://www.meetup.com/cities/us/il/grayslake/;Grayslake;grayslake
+http://www.meetup.com/cities/us/il/gurnee/;Gurnee;gurnee
+http://www.meetup.com/cities/us/il/highland_park/;Highland Park;highland_park
+http://www.meetup.com/cities/us/il/joliet/;Joliet;joliet
+http://www.meetup.com/cities/us/il/libertyville/;Libertyville;libertyville
+http://www.meetup.com/cities/us/il/lombard/;Lombard;lombard
+http://www.meetup.com/cities/us/il/mchenry/;McHenry;mchenry
+http://www.meetup.com/cities/us/il/mount_prospect/;Mount Prospect;mount_prospect
+http://www.meetup.com/cities/us/il/naperville/;Naperville;naperville
+http://www.meetup.com/cities/us/il/normal/;Normal;normal
+http://www.meetup.com/cities/us/il/northbrook/;Northbrook;northbrook
+http://www.meetup.com/cities/us/il/oak_park/;Oak Park;oak_park
+http://www.meetup.com/cities/us/il/orland_park/;Orland Park;orland_park
+http://www.meetup.com/cities/us/il/oswego/;Oswego;oswego
+http://www.meetup.com/cities/us/il/palatine/;Palatine;palatine
+http://www.meetup.com/cities/us/il/peoria/;Peoria;peoria
+http://www.meetup.com/cities/us/il/plainfield/;Plainfield;plainfield
+http://www.meetup.com/cities/us/il/rockford/;Rockford;rockford
+http://www.meetup.com/cities/us/il/round_lake/;Round Lake;round_lake
+http://www.meetup.com/cities/us/il/saint_charles/;Saint Charles;saint_charles
+http://www.meetup.com/cities/us/il/schaumburg/;Schaumburg;schaumburg
+http://www.meetup.com/cities/us/il/skokie/;Skokie;skokie
+http://www.meetup.com/cities/us/il/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/il/tinley_park/;Tinley Park;tinley_park
+http://www.meetup.com/cities/us/il/vernon_hills/;Vernon Hills;vernon_hills
+http://www.meetup.com/cities/us/il/waukegan/;Waukegan;waukegan
+http://www.meetup.com/cities/us/il/wheaton/;Wheaton;wheaton
+http://www.meetup.com/cities/us/il/arlington_heights/;Arlington Heights;arlington_heights
+http://www.meetup.com/cities/us/il/aurora/;Aurora;aurora
+http://www.meetup.com/cities/us/il/barrington/;Barrington;barrington
+http://www.meetup.com/cities/us/il/bartlett/;Bartlett;bartlett
+http://www.meetup.com/cities/us/il/belleville/;Belleville;belleville
+http://www.meetup.com/cities/us/il/bloomington/;Bloomington;bloomington
+http://www.meetup.com/cities/us/il/bolingbrook/;Bolingbrook;bolingbrook
+http://www.meetup.com/cities/us/il/buffalo_grove/;Buffalo Grove;buffalo_grove
+http://www.meetup.com/cities/us/il/carbondale/;Carbondale;carbondale
+http://www.meetup.com/cities/us/il/carol_stream/;Carol Stream;carol_stream
+http://www.meetup.com/cities/us/il/champaign/;Champaign;champaign
+http://www.meetup.com/cities/us/il/chicago/;Chicago;chicago
+http://www.meetup.com/cities/us/il/crystal_lake/;Crystal Lake;crystal_lake
+http://www.meetup.com/cities/us/il/decatur/;Decatur;decatur
+http://www.meetup.com/cities/us/il/deerfield/;Deerfield;deerfield
+http://www.meetup.com/cities/us/il/des_plaines/;Des Plaines;des_plaines
+http://www.meetup.com/cities/us/il/downers_grove/;Downers Grove;downers_grove
+http://www.meetup.com/cities/us/il/elgin/;Elgin;elgin
+http://www.meetup.com/cities/us/il/elk_grove_village/;Elk Grove Village;elk_grove_village
+http://www.meetup.com/cities/us/il/elmhurst/;Elmhurst;elmhurst
+http://www.meetup.com/cities/us/il/evanston/;Evanston;evanston
+http://www.meetup.com/cities/us/il/glen_ellyn/;Glen Ellyn;glen_ellyn
+http://www.meetup.com/cities/us/il/glenview/;Glenview;glenview
+http://www.meetup.com/cities/us/il/grayslake/;Grayslake;grayslake
+http://www.meetup.com/cities/us/il/gurnee/;Gurnee;gurnee
+http://www.meetup.com/cities/us/il/highland_park/;Highland Park;highland_park
+http://www.meetup.com/cities/us/il/joliet/;Joliet;joliet
+http://www.meetup.com/cities/us/il/libertyville/;Libertyville;libertyville
+http://www.meetup.com/cities/us/il/lombard/;Lombard;lombard
+http://www.meetup.com/cities/us/il/mchenry/;McHenry;mchenry
+http://www.meetup.com/cities/us/il/mount_prospect/;Mount Prospect;mount_prospect
+http://www.meetup.com/cities/us/il/naperville/;Naperville;naperville
+http://www.meetup.com/cities/us/il/normal/;Normal;normal
+http://www.meetup.com/cities/us/il/northbrook/;Northbrook;northbrook
+http://www.meetup.com/cities/us/il/oak_park/;Oak Park;oak_park
+http://www.meetup.com/cities/us/il/orland_park/;Orland Park;orland_park
+http://www.meetup.com/cities/us/il/oswego/;Oswego;oswego
+http://www.meetup.com/cities/us/il/palatine/;Palatine;palatine
+http://www.meetup.com/cities/us/il/peoria/;Peoria;peoria
+http://www.meetup.com/cities/us/il/plainfield/;Plainfield;plainfield
+http://www.meetup.com/cities/us/il/rockford/;Rockford;rockford
+http://www.meetup.com/cities/us/il/round_lake/;Round Lake;round_lake
+http://www.meetup.com/cities/us/il/saint_charles/;Saint Charles;saint_charles
+http://www.meetup.com/cities/us/il/schaumburg/;Schaumburg;schaumburg
+http://www.meetup.com/cities/us/il/skokie/;Skokie;skokie
+http://www.meetup.com/cities/us/il/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/il/tinley_park/;Tinley Park;tinley_park
+http://www.meetup.com/cities/us/il/vernon_hills/;Vernon Hills;vernon_hills
+http://www.meetup.com/cities/us/il/waukegan/;Waukegan;waukegan
+http://www.meetup.com/cities/us/il/wheaton/;Wheaton;wheaton

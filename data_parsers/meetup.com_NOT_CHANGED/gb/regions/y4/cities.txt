@@ -1,0 +1,330 @@
+http://www.meetup.com/cities/gb/y4/abergavenny/;Abergavenny;abergavenny
+http://www.meetup.com/cities/gb/y4/barbadoes/;Barbadoes;barbadoes
+http://www.meetup.com/cities/gb/y4/bayfield/;Bayfield;bayfield
+http://www.meetup.com/cities/gb/y4/bettws/;Bettws;bettws
+http://www.meetup.com/cities/gb/y4/bettws_newydd/;Bettws Newydd;bettws_newydd
+http://www.meetup.com/cities/gb/y4/botany_bay/;Botany Bay;botany_bay
+http://www.meetup.com/cities/gb/y4/broadstone/;Broadstone;broadstone
+http://www.meetup.com/cities/gb/y4/brynderi/;Brynderi;brynderi
+http://www.meetup.com/cities/gb/y4/bryngwyn/;Bryngwyn;bryngwyn
+http://www.meetup.com/cities/gb/y4/bryn-y-gwenin/;Bryn-Y-Gwenin;bryn-y-gwenin
+http://www.meetup.com/cities/gb/y4/buckholt/;Buckholt;buckholt
+http://www.meetup.com/cities/gb/y4/bulwark/;Bulwark;bulwark
+http://www.meetup.com/cities/gb/y4/caerwent/;Caerwent;caerwent
+http://www.meetup.com/cities/gb/y4/caldicot/;Caldicot;caldicot
+http://www.meetup.com/cities/gb/y4/catbrook/;Catbrook;catbrook
+http://www.meetup.com/cities/gb/y4/chain_bridge/;Chain Bridge;chain_bridge
+http://www.meetup.com/cities/gb/y4/chepstow/;Chepstow;chepstow
+http://www.meetup.com/cities/gb/y4/clydach/;Clydach;clydach
+http://www.meetup.com/cities/gb/y4/clytha/;Clytha;clytha
+http://www.meetup.com/cities/gb/y4/clytha_hill/;Clytha Hill;clytha_hill
+http://www.meetup.com/cities/gb/y4/coed_morgan/;Coed Morgan;coed_morgan
+http://www.meetup.com/cities/gb/y4/coedypaen/;Coedypaen;coedypaen
+http://www.meetup.com/cities/gb/y4/coldbrook/;Coldbrook;coldbrook
+http://www.meetup.com/cities/gb/y4/cold_harbour/;Cold Harbour;cold_harbour
+http://www.meetup.com/cities/gb/y4/crick/;Crick;crick
+http://www.meetup.com/cities/gb/y4/croes_bychan/;Croes Bychan;croes_bychan
+http://www.meetup.com/cities/gb/y4/croesypant/;Croesypant;croesypant
+http://www.meetup.com/cities/gb/y4/cross_ash/;Cross Ash;cross_ash
+http://www.meetup.com/cities/gb/y4/cwmcarvan/;Cwmcarvan;cwmcarvan
+http://www.meetup.com/cities/gb/y4/cwmyoy/;Cwmyoy;cwmyoy
+http://www.meetup.com/cities/gb/y4/deriside/;Deriside;deriside
+http://www.meetup.com/cities/gb/y4/devauden/;Devauden;devauden
+http://www.meetup.com/cities/gb/y4/dingestow/;Dingestow;dingestow
+http://www.meetup.com/cities/gb/y4/dixton/;Dixton;dixton
+http://www.meetup.com/cities/gb/y4/earlswood/;Earlswood;earlswood
+http://www.meetup.com/cities/gb/y4/farhill/;Farhill;farhill
+http://www.meetup.com/cities/gb/y4/gilwern/;Gilwern;gilwern
+http://www.meetup.com/cities/gb/y4/glascoed/;Glascoed;glascoed
+http://www.meetup.com/cities/gb/y4/govilon/;Govilon;govilon
+http://www.meetup.com/cities/gb/y4/goytre/;Goytre;goytre
+http://www.meetup.com/cities/gb/y4/great_oak/;Great Oak;great_oak
+http://www.meetup.com/cities/gb/y4/grosmont/;Grosmont;grosmont
+http://www.meetup.com/cities/gb/y4/gwehelog/;Gwehelog;gwehelog
+http://www.meetup.com/cities/gb/y4/gwernesney/;Gwernesney;gwernesney
+http://www.meetup.com/cities/gb/y4/hardwick/;Hardwick;hardwick
+http://www.meetup.com/cities/gb/y4/hayesgate/;Hayesgate;hayesgate
+http://www.meetup.com/cities/gb/y4/howick/;Howick;howick
+http://www.meetup.com/cities/gb/y4/itton/;Itton;itton
+http://www.meetup.com/cities/gb/y4/kemeys_commander/;Kemeys Commander;kemeys_commander
+http://www.meetup.com/cities/gb/y4/kilgwrrwg/;Kilgwrrwg;kilgwrrwg
+http://www.meetup.com/cities/gb/y4/kingcoed/;Kingcoed;kingcoed
+http://www.meetup.com/cities/gb/y4/llanarth/;Llanarth;llanarth
+http://www.meetup.com/cities/gb/y4/llanbadoc/;Llanbadoc;llanbadoc
+http://www.meetup.com/cities/gb/y4/llancayo/;Llancayo;llancayo
+http://www.meetup.com/cities/gb/y4/llanddewi_rhydderch/;Llanddewi Rhydderch;llanddewi_rhydderch
+http://www.meetup.com/cities/gb/y4/llanddewi_skirrid/;Llanddewi Skirrid;llanddewi_skirrid
+http://www.meetup.com/cities/gb/y4/llandegveth/;Llandegveth;llandegveth
+http://www.meetup.com/cities/gb/y4/llandenny/;Llandenny;llandenny
+http://www.meetup.com/cities/gb/y4/llandogo/;Llandogo;llandogo
+http://www.meetup.com/cities/gb/y4/llanellen/;Llanellen;llanellen
+http://www.meetup.com/cities/gb/y4/llanelly_hill/;Llanelly Hill;llanelly_hill
+http://www.meetup.com/cities/gb/y4/llanfihangel_ystern_llewern/;Llanfihangel Ystern Llewern;llanfihangel_ystern_llewern
+http://www.meetup.com/cities/gb/y4/llanfoist/;Llanfoist;llanfoist
+http://www.meetup.com/cities/gb/y4/llangattock/;Llangattock;llangattock
+http://www.meetup.com/cities/gb/y4/llangattock_lingoed/;Llangattock Lingoed;llangattock_lingoed
+http://www.meetup.com/cities/gb/y4/llangeview/;Llangeview;llangeview
+http://www.meetup.com/cities/gb/y4/llangovan/;Llangovan;llangovan
+http://www.meetup.com/cities/gb/y4/llangua/;Llangua;llangua
+http://www.meetup.com/cities/gb/y4/llangwm/;Llangwm;llangwm
+http://www.meetup.com/cities/gb/y4/llangybi/;Llangybi;llangybi
+http://www.meetup.com/cities/gb/y4/llanhennock/;Llanhennock;llanhennock
+http://www.meetup.com/cities/gb/y4/llanishen/;Llanishen;llanishen
+http://www.meetup.com/cities/gb/y4/llanllywel/;Llanllywel;llanllywel
+http://www.meetup.com/cities/gb/y4/llanover/;Llanover;llanover
+http://www.meetup.com/cities/gb/y4/llanrothal/;Llanrothal;llanrothal
+http://www.meetup.com/cities/gb/y4/llansoar/;Llansoar;llansoar
+http://www.meetup.com/cities/gb/y4/llansoy/;Llansoy;llansoy
+http://www.meetup.com/cities/gb/y4/llanthony/;Llanthony;llanthony
+http://www.meetup.com/cities/gb/y4/llantilio_crossenny/;Llantilio Crossenny;llantilio_crossenny
+http://www.meetup.com/cities/gb/y4/llantilio_pertholey/;Llantilio Pertholey;llantilio_pertholey
+http://www.meetup.com/cities/gb/y4/llantrisant/;Llantrisant;llantrisant
+http://www.meetup.com/cities/gb/y4/llanvair_cross/;Llanvair Cross;llanvair_cross
+http://www.meetup.com/cities/gb/y4/llanvair_discoed/;Llanvair Discoed;llanvair_discoed
+http://www.meetup.com/cities/gb/y4/llanvair_green/;Llanvair Green;llanvair_green
+http://www.meetup.com/cities/gb/y4/llanvair_kilgeddin/;Llanvair Kilgeddin;llanvair_kilgeddin
+http://www.meetup.com/cities/gb/y4/llanvapley/;Llanvapley;llanvapley
+http://www.meetup.com/cities/gb/y4/llanvetherine/;Llanvetherine;llanvetherine
+http://www.meetup.com/cities/gb/y4/llanvihangel_crucorney/;Llanvihangel Crucorney;llanvihangel_crucorney
+http://www.meetup.com/cities/gb/y4/llanvihangel_gobion/;Llanvihangel Gobion;llanvihangel_gobion
+http://www.meetup.com/cities/gb/y4/llanwenarth/;Llanwenarth;llanwenarth
+http://www.meetup.com/cities/gb/y4/llwyn_du/;Llwyn Du;llwyn_du
+http://www.meetup.com/cities/gb/y4/lower_gellifelen/;Lower Gellifelen;lower_gellifelen
+http://www.meetup.com/cities/gb/y4/lydart/;Lydart;lydart
+http://www.meetup.com/cities/gb/y4/manson/;Manson;manson
+http://www.meetup.com/cities/gb/y4/mansons_cross/;Mansons Cross;mansons_cross
+http://www.meetup.com/cities/gb/y4/mardy/;Mardy;mardy
+http://www.meetup.com/cities/gb/y4/mathern/;Mathern;mathern
+http://www.meetup.com/cities/gb/y4/mayhill/;Mayhill;mayhill
+http://www.meetup.com/cities/gb/y4/maypole/;Maypole;maypole
+http://www.meetup.com/cities/gb/y4/mitchel_troy/;Mitchel Troy;mitchel_troy
+http://www.meetup.com/cities/gb/y4/mitchel_troy_common/;Mitchel Troy Common;mitchel_troy_common
+http://www.meetup.com/cities/gb/y4/monkswood/;Monkswood;monkswood
+http://www.meetup.com/cities/gb/y4/monmouth/;Monmouth;monmouth
+http://www.meetup.com/cities/gb/y4/mounton/;Mounton;mounton
+http://www.meetup.com/cities/gb/y4/mynyddbach/;Mynyddbach;mynyddbach
+http://www.meetup.com/cities/gb/y4/nantyderry/;Nantyderry;nantyderry
+http://www.meetup.com/cities/gb/y4/newcastle/;Newcastle;newcastle
+http://www.meetup.com/cities/gb/y4/newchurch/;Newchurch;newchurch
+http://www.meetup.com/cities/gb/y4/norton_skenfrith/;Norton Skenfrith;norton_skenfrith
+http://www.meetup.com/cities/gb/y4/osbaston/;Osbaston;osbaston
+http://www.meetup.com/cities/gb/y4/pandy/;Pandy;pandy
+http://www.meetup.com/cities/gb/y4/pantygelli/;Pantygelli;pantygelli
+http://www.meetup.com/cities/gb/y4/penallt/;Penallt;penallt
+http://www.meetup.com/cities/gb/y4/penpergwm/;Penpergwm;penpergwm
+http://www.meetup.com/cities/gb/y4/penperlleni/;Penperlleni;penperlleni
+http://www.meetup.com/cities/gb/y4/penrhos/;Penrhos;penrhos
+http://www.meetup.com/cities/gb/y4/penycaemawr/;Penycaemawr;penycaemawr
+http://www.meetup.com/cities/gb/y4/penyclawdd/;Penyclawdd;penyclawdd
+http://www.meetup.com/cities/gb/y4/pontysaison/;Pontysaison;pontysaison
+http://www.meetup.com/cities/gb/y4/portskewett/;Portskewett;portskewett
+http://www.meetup.com/cities/gb/y4/pwlldu/;Pwlldu;pwlldu
+http://www.meetup.com/cities/gb/y4/pwllmeyric/;Pwllmeyric;pwllmeyric
+http://www.meetup.com/cities/gb/y4/raglan/;Raglan;raglan
+http://www.meetup.com/cities/gb/y4/redbrook/;Redbrook;redbrook
+http://www.meetup.com/cities/gb/y4/rhadyr/;Rhadyr;rhadyr
+http://www.meetup.com/cities/gb/y4/rhiwlas/;Rhiwlas;rhiwlas
+http://www.meetup.com/cities/gb/y4/rockfield/;Rockfield;rockfield
+http://www.meetup.com/cities/gb/y4/rogiet/;Rogiet;rogiet
+http://www.meetup.com/cities/gb/y4/severn_bridge_industrial_estate/;Severn Bridge Industrial Estate;severn_bridge_industrial_estate
+http://www.meetup.com/cities/gb/y4/shirenewton/;Shirenewton;shirenewton
+http://www.meetup.com/cities/gb/y4/skenfrith/;Skenfrith;skenfrith
+http://www.meetup.com/cities/gb/y4/st_arvans/;St Arvans;st_arvans
+http://www.meetup.com/cities/gb/y4/staunton/;Staunton;staunton
+http://www.meetup.com/cities/gb/y4/st_brides_netherwent/;St Brides Netherwent;st_brides_netherwent
+http://www.meetup.com/cities/gb/y4/st_maughans/;St Maughans;st_maughans
+http://www.meetup.com/cities/gb/y4/sudbrook/;Sudbrook;sudbrook
+http://www.meetup.com/cities/gb/y4/talycoed/;Talycoed;talycoed
+http://www.meetup.com/cities/gb/y4/the_bryn/;The Bryn;the_bryn
+http://www.meetup.com/cities/gb/y4/the_hendre/;The Hendre;the_hendre
+http://www.meetup.com/cities/gb/y4/the_narth/;The Narth;the_narth
+http://www.meetup.com/cities/gb/y4/the_pitt/;The Pitt;the_pitt
+http://www.meetup.com/cities/gb/y4/tintern/;Tintern;tintern
+http://www.meetup.com/cities/gb/y4/trebencyn/;Trebencyn;trebencyn
+http://www.meetup.com/cities/gb/y4/tredilion/;Tredilion;tredilion
+http://www.meetup.com/cities/gb/y4/tredunnock/;Tredunnock;tredunnock
+http://www.meetup.com/cities/gb/y4/tregare/;Tregare;tregare
+http://www.meetup.com/cities/gb/y4/trelleck/;Trelleck;trelleck
+http://www.meetup.com/cities/gb/y4/trelleck_grange/;Trelleck Grange;trelleck_grange
+http://www.meetup.com/cities/gb/y4/triley/;Triley;triley
+http://www.meetup.com/cities/gb/y4/trostrey/;Trostrey;trostrey
+http://www.meetup.com/cities/gb/y4/undy/;Undy;undy
+http://www.meetup.com/cities/gb/y4/upper_gellifelen/;Upper Gellifelen;upper_gellifelen
+http://www.meetup.com/cities/gb/y4/upper_redbrook/;Upper Redbrook;upper_redbrook
+http://www.meetup.com/cities/gb/y4/usk/;Usk;usk
+http://www.meetup.com/cities/gb/y4/veddw/;Veddw;veddw
+http://www.meetup.com/cities/gb/y4/wernrheolydd/;Wernrheolydd;wernrheolydd
+http://www.meetup.com/cities/gb/y4/wern-y-cwrt/;Wern-Y-Cwrt;wern-y-cwrt
+http://www.meetup.com/cities/gb/y4/west_end/;West End;west_end
+http://www.meetup.com/cities/gb/y4/whitebrook/;Whitebrook;whitebrook
+http://www.meetup.com/cities/gb/y4/whitecastle/;Whitecastle;whitecastle
+http://www.meetup.com/cities/gb/y4/whitelye/;Whitelye;whitelye
+http://www.meetup.com/cities/gb/y4/wolvesnewton/;Wolvesnewton;wolvesnewton
+http://www.meetup.com/cities/gb/y4/wonastow/;Wonastow;wonastow
+http://www.meetup.com/cities/gb/y4/wyesham/;Wyesham;wyesham
+http://www.meetup.com/cities/gb/y4/ysbytty_fields/;Ysbytty Fields;ysbytty_fields
+http://www.meetup.com/cities/gb/y4/abergavenny/;Abergavenny;abergavenny
+http://www.meetup.com/cities/gb/y4/barbadoes/;Barbadoes;barbadoes
+http://www.meetup.com/cities/gb/y4/bayfield/;Bayfield;bayfield
+http://www.meetup.com/cities/gb/y4/bettws/;Bettws;bettws
+http://www.meetup.com/cities/gb/y4/bettws_newydd/;Bettws Newydd;bettws_newydd
+http://www.meetup.com/cities/gb/y4/botany_bay/;Botany Bay;botany_bay
+http://www.meetup.com/cities/gb/y4/broadstone/;Broadstone;broadstone
+http://www.meetup.com/cities/gb/y4/brynderi/;Brynderi;brynderi
+http://www.meetup.com/cities/gb/y4/bryngwyn/;Bryngwyn;bryngwyn
+http://www.meetup.com/cities/gb/y4/bryn-y-gwenin/;Bryn-Y-Gwenin;bryn-y-gwenin
+http://www.meetup.com/cities/gb/y4/buckholt/;Buckholt;buckholt
+http://www.meetup.com/cities/gb/y4/bulwark/;Bulwark;bulwark
+http://www.meetup.com/cities/gb/y4/caerwent/;Caerwent;caerwent
+http://www.meetup.com/cities/gb/y4/caldicot/;Caldicot;caldicot
+http://www.meetup.com/cities/gb/y4/catbrook/;Catbrook;catbrook
+http://www.meetup.com/cities/gb/y4/chain_bridge/;Chain Bridge;chain_bridge
+http://www.meetup.com/cities/gb/y4/chepstow/;Chepstow;chepstow
+http://www.meetup.com/cities/gb/y4/clydach/;Clydach;clydach
+http://www.meetup.com/cities/gb/y4/clytha/;Clytha;clytha
+http://www.meetup.com/cities/gb/y4/clytha_hill/;Clytha Hill;clytha_hill
+http://www.meetup.com/cities/gb/y4/coed_morgan/;Coed Morgan;coed_morgan
+http://www.meetup.com/cities/gb/y4/coedypaen/;Coedypaen;coedypaen
+http://www.meetup.com/cities/gb/y4/coldbrook/;Coldbrook;coldbrook
+http://www.meetup.com/cities/gb/y4/cold_harbour/;Cold Harbour;cold_harbour
+http://www.meetup.com/cities/gb/y4/crick/;Crick;crick
+http://www.meetup.com/cities/gb/y4/croes_bychan/;Croes Bychan;croes_bychan
+http://www.meetup.com/cities/gb/y4/croesypant/;Croesypant;croesypant
+http://www.meetup.com/cities/gb/y4/cross_ash/;Cross Ash;cross_ash
+http://www.meetup.com/cities/gb/y4/cwmcarvan/;Cwmcarvan;cwmcarvan
+http://www.meetup.com/cities/gb/y4/cwmyoy/;Cwmyoy;cwmyoy
+http://www.meetup.com/cities/gb/y4/deriside/;Deriside;deriside
+http://www.meetup.com/cities/gb/y4/devauden/;Devauden;devauden
+http://www.meetup.com/cities/gb/y4/dingestow/;Dingestow;dingestow
+http://www.meetup.com/cities/gb/y4/dixton/;Dixton;dixton
+http://www.meetup.com/cities/gb/y4/earlswood/;Earlswood;earlswood
+http://www.meetup.com/cities/gb/y4/farhill/;Farhill;farhill
+http://www.meetup.com/cities/gb/y4/gilwern/;Gilwern;gilwern
+http://www.meetup.com/cities/gb/y4/glascoed/;Glascoed;glascoed
+http://www.meetup.com/cities/gb/y4/govilon/;Govilon;govilon
+http://www.meetup.com/cities/gb/y4/goytre/;Goytre;goytre
+http://www.meetup.com/cities/gb/y4/great_oak/;Great Oak;great_oak
+http://www.meetup.com/cities/gb/y4/grosmont/;Grosmont;grosmont
+http://www.meetup.com/cities/gb/y4/gwehelog/;Gwehelog;gwehelog
+http://www.meetup.com/cities/gb/y4/gwernesney/;Gwernesney;gwernesney
+http://www.meetup.com/cities/gb/y4/hardwick/;Hardwick;hardwick
+http://www.meetup.com/cities/gb/y4/hayesgate/;Hayesgate;hayesgate
+http://www.meetup.com/cities/gb/y4/howick/;Howick;howick
+http://www.meetup.com/cities/gb/y4/itton/;Itton;itton
+http://www.meetup.com/cities/gb/y4/kemeys_commander/;Kemeys Commander;kemeys_commander
+http://www.meetup.com/cities/gb/y4/kilgwrrwg/;Kilgwrrwg;kilgwrrwg
+http://www.meetup.com/cities/gb/y4/kingcoed/;Kingcoed;kingcoed
+http://www.meetup.com/cities/gb/y4/llanarth/;Llanarth;llanarth
+http://www.meetup.com/cities/gb/y4/llanbadoc/;Llanbadoc;llanbadoc
+http://www.meetup.com/cities/gb/y4/llancayo/;Llancayo;llancayo
+http://www.meetup.com/cities/gb/y4/llanddewi_rhydderch/;Llanddewi Rhydderch;llanddewi_rhydderch
+http://www.meetup.com/cities/gb/y4/llanddewi_skirrid/;Llanddewi Skirrid;llanddewi_skirrid
+http://www.meetup.com/cities/gb/y4/llandegveth/;Llandegveth;llandegveth
+http://www.meetup.com/cities/gb/y4/llandenny/;Llandenny;llandenny
+http://www.meetup.com/cities/gb/y4/llandogo/;Llandogo;llandogo
+http://www.meetup.com/cities/gb/y4/llanellen/;Llanellen;llanellen
+http://www.meetup.com/cities/gb/y4/llanelly_hill/;Llanelly Hill;llanelly_hill
+http://www.meetup.com/cities/gb/y4/llanfihangel_ystern_llewern/;Llanfihangel Ystern Llewern;llanfihangel_ystern_llewern
+http://www.meetup.com/cities/gb/y4/llanfoist/;Llanfoist;llanfoist
+http://www.meetup.com/cities/gb/y4/llangattock/;Llangattock;llangattock
+http://www.meetup.com/cities/gb/y4/llangattock_lingoed/;Llangattock Lingoed;llangattock_lingoed
+http://www.meetup.com/cities/gb/y4/llangeview/;Llangeview;llangeview
+http://www.meetup.com/cities/gb/y4/llangovan/;Llangovan;llangovan
+http://www.meetup.com/cities/gb/y4/llangua/;Llangua;llangua
+http://www.meetup.com/cities/gb/y4/llangwm/;Llangwm;llangwm
+http://www.meetup.com/cities/gb/y4/llangybi/;Llangybi;llangybi
+http://www.meetup.com/cities/gb/y4/llanhennock/;Llanhennock;llanhennock
+http://www.meetup.com/cities/gb/y4/llanishen/;Llanishen;llanishen
+http://www.meetup.com/cities/gb/y4/llanllywel/;Llanllywel;llanllywel
+http://www.meetup.com/cities/gb/y4/llanover/;Llanover;llanover
+http://www.meetup.com/cities/gb/y4/llanrothal/;Llanrothal;llanrothal
+http://www.meetup.com/cities/gb/y4/llansoar/;Llansoar;llansoar
+http://www.meetup.com/cities/gb/y4/llansoy/;Llansoy;llansoy
+http://www.meetup.com/cities/gb/y4/llanthony/;Llanthony;llanthony
+http://www.meetup.com/cities/gb/y4/llantilio_crossenny/;Llantilio Crossenny;llantilio_crossenny
+http://www.meetup.com/cities/gb/y4/llantilio_pertholey/;Llantilio Pertholey;llantilio_pertholey
+http://www.meetup.com/cities/gb/y4/llantrisant/;Llantrisant;llantrisant
+http://www.meetup.com/cities/gb/y4/llanvair_cross/;Llanvair Cross;llanvair_cross
+http://www.meetup.com/cities/gb/y4/llanvair_discoed/;Llanvair Discoed;llanvair_discoed
+http://www.meetup.com/cities/gb/y4/llanvair_green/;Llanvair Green;llanvair_green
+http://www.meetup.com/cities/gb/y4/llanvair_kilgeddin/;Llanvair Kilgeddin;llanvair_kilgeddin
+http://www.meetup.com/cities/gb/y4/llanvapley/;Llanvapley;llanvapley
+http://www.meetup.com/cities/gb/y4/llanvetherine/;Llanvetherine;llanvetherine
+http://www.meetup.com/cities/gb/y4/llanvihangel_crucorney/;Llanvihangel Crucorney;llanvihangel_crucorney
+http://www.meetup.com/cities/gb/y4/llanvihangel_gobion/;Llanvihangel Gobion;llanvihangel_gobion
+http://www.meetup.com/cities/gb/y4/llanwenarth/;Llanwenarth;llanwenarth
+http://www.meetup.com/cities/gb/y4/llwyn_du/;Llwyn Du;llwyn_du
+http://www.meetup.com/cities/gb/y4/lower_gellifelen/;Lower Gellifelen;lower_gellifelen
+http://www.meetup.com/cities/gb/y4/lydart/;Lydart;lydart
+http://www.meetup.com/cities/gb/y4/manson/;Manson;manson
+http://www.meetup.com/cities/gb/y4/mansons_cross/;Mansons Cross;mansons_cross
+http://www.meetup.com/cities/gb/y4/mardy/;Mardy;mardy
+http://www.meetup.com/cities/gb/y4/mathern/;Mathern;mathern
+http://www.meetup.com/cities/gb/y4/mayhill/;Mayhill;mayhill
+http://www.meetup.com/cities/gb/y4/maypole/;Maypole;maypole
+http://www.meetup.com/cities/gb/y4/mitchel_troy/;Mitchel Troy;mitchel_troy
+http://www.meetup.com/cities/gb/y4/mitchel_troy_common/;Mitchel Troy Common;mitchel_troy_common
+http://www.meetup.com/cities/gb/y4/monkswood/;Monkswood;monkswood
+http://www.meetup.com/cities/gb/y4/monmouth/;Monmouth;monmouth
+http://www.meetup.com/cities/gb/y4/mounton/;Mounton;mounton
+http://www.meetup.com/cities/gb/y4/mynyddbach/;Mynyddbach;mynyddbach
+http://www.meetup.com/cities/gb/y4/nantyderry/;Nantyderry;nantyderry
+http://www.meetup.com/cities/gb/y4/newcastle/;Newcastle;newcastle
+http://www.meetup.com/cities/gb/y4/newchurch/;Newchurch;newchurch
+http://www.meetup.com/cities/gb/y4/norton_skenfrith/;Norton Skenfrith;norton_skenfrith
+http://www.meetup.com/cities/gb/y4/osbaston/;Osbaston;osbaston
+http://www.meetup.com/cities/gb/y4/pandy/;Pandy;pandy
+http://www.meetup.com/cities/gb/y4/pantygelli/;Pantygelli;pantygelli
+http://www.meetup.com/cities/gb/y4/penallt/;Penallt;penallt
+http://www.meetup.com/cities/gb/y4/penpergwm/;Penpergwm;penpergwm
+http://www.meetup.com/cities/gb/y4/penperlleni/;Penperlleni;penperlleni
+http://www.meetup.com/cities/gb/y4/penrhos/;Penrhos;penrhos
+http://www.meetup.com/cities/gb/y4/penycaemawr/;Penycaemawr;penycaemawr
+http://www.meetup.com/cities/gb/y4/penyclawdd/;Penyclawdd;penyclawdd
+http://www.meetup.com/cities/gb/y4/pontysaison/;Pontysaison;pontysaison
+http://www.meetup.com/cities/gb/y4/portskewett/;Portskewett;portskewett
+http://www.meetup.com/cities/gb/y4/pwlldu/;Pwlldu;pwlldu
+http://www.meetup.com/cities/gb/y4/pwllmeyric/;Pwllmeyric;pwllmeyric
+http://www.meetup.com/cities/gb/y4/raglan/;Raglan;raglan
+http://www.meetup.com/cities/gb/y4/redbrook/;Redbrook;redbrook
+http://www.meetup.com/cities/gb/y4/rhadyr/;Rhadyr;rhadyr
+http://www.meetup.com/cities/gb/y4/rhiwlas/;Rhiwlas;rhiwlas
+http://www.meetup.com/cities/gb/y4/rockfield/;Rockfield;rockfield
+http://www.meetup.com/cities/gb/y4/rogiet/;Rogiet;rogiet
+http://www.meetup.com/cities/gb/y4/severn_bridge_industrial_estate/;Severn Bridge Industrial Estate;severn_bridge_industrial_estate
+http://www.meetup.com/cities/gb/y4/shirenewton/;Shirenewton;shirenewton
+http://www.meetup.com/cities/gb/y4/skenfrith/;Skenfrith;skenfrith
+http://www.meetup.com/cities/gb/y4/st_arvans/;St Arvans;st_arvans
+http://www.meetup.com/cities/gb/y4/staunton/;Staunton;staunton
+http://www.meetup.com/cities/gb/y4/st_brides_netherwent/;St Brides Netherwent;st_brides_netherwent
+http://www.meetup.com/cities/gb/y4/st_maughans/;St Maughans;st_maughans
+http://www.meetup.com/cities/gb/y4/sudbrook/;Sudbrook;sudbrook
+http://www.meetup.com/cities/gb/y4/talycoed/;Talycoed;talycoed
+http://www.meetup.com/cities/gb/y4/the_bryn/;The Bryn;the_bryn
+http://www.meetup.com/cities/gb/y4/the_hendre/;The Hendre;the_hendre
+http://www.meetup.com/cities/gb/y4/the_narth/;The Narth;the_narth
+http://www.meetup.com/cities/gb/y4/the_pitt/;The Pitt;the_pitt
+http://www.meetup.com/cities/gb/y4/tintern/;Tintern;tintern
+http://www.meetup.com/cities/gb/y4/trebencyn/;Trebencyn;trebencyn
+http://www.meetup.com/cities/gb/y4/tredilion/;Tredilion;tredilion
+http://www.meetup.com/cities/gb/y4/tredunnock/;Tredunnock;tredunnock
+http://www.meetup.com/cities/gb/y4/tregare/;Tregare;tregare
+http://www.meetup.com/cities/gb/y4/trelleck/;Trelleck;trelleck
+http://www.meetup.com/cities/gb/y4/trelleck_grange/;Trelleck Grange;trelleck_grange
+http://www.meetup.com/cities/gb/y4/triley/;Triley;triley
+http://www.meetup.com/cities/gb/y4/trostrey/;Trostrey;trostrey
+http://www.meetup.com/cities/gb/y4/undy/;Undy;undy
+http://www.meetup.com/cities/gb/y4/upper_gellifelen/;Upper Gellifelen;upper_gellifelen
+http://www.meetup.com/cities/gb/y4/upper_redbrook/;Upper Redbrook;upper_redbrook
+http://www.meetup.com/cities/gb/y4/usk/;Usk;usk
+http://www.meetup.com/cities/gb/y4/veddw/;Veddw;veddw
+http://www.meetup.com/cities/gb/y4/wernrheolydd/;Wernrheolydd;wernrheolydd
+http://www.meetup.com/cities/gb/y4/wern-y-cwrt/;Wern-Y-Cwrt;wern-y-cwrt
+http://www.meetup.com/cities/gb/y4/west_end/;West End;west_end
+http://www.meetup.com/cities/gb/y4/whitebrook/;Whitebrook;whitebrook
+http://www.meetup.com/cities/gb/y4/whitecastle/;Whitecastle;whitecastle
+http://www.meetup.com/cities/gb/y4/whitelye/;Whitelye;whitelye
+http://www.meetup.com/cities/gb/y4/wolvesnewton/;Wolvesnewton;wolvesnewton
+http://www.meetup.com/cities/gb/y4/wonastow/;Wonastow;wonastow
+http://www.meetup.com/cities/gb/y4/wyesham/;Wyesham;wyesham
+http://www.meetup.com/cities/gb/y4/ysbytty_fields/;Ysbytty Fields;ysbytty_fields

@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/gb/v1/aberdour/;Aberdour;aberdour
+http://www.meetup.com/cities/gb/v1/alloa/;Alloa;alloa
+http://www.meetup.com/cities/gb/v1/alloa_park/;Alloa Park;alloa_park
+http://www.meetup.com/cities/gb/v1/anstruther/;Anstruther;anstruther
+http://www.meetup.com/cities/gb/v1/auchtermuchty/;Auchtermuchty;auchtermuchty
+http://www.meetup.com/cities/gb/v1/auchtertool/;Auchtertool;auchtertool
+http://www.meetup.com/cities/gb/v1/ballingry/;Ballingry;ballingry
+http://www.meetup.com/cities/gb/v1/balmalcolm/;Balmalcolm;balmalcolm
+http://www.meetup.com/cities/gb/v1/buckhaven/;Buckhaven;buckhaven
+http://www.meetup.com/cities/gb/v1/burntisland/;Burntisland;burntisland
+http://www.meetup.com/cities/gb/v1/cairneyhill/;Cairneyhill;cairneyhill
+http://www.meetup.com/cities/gb/v1/cameron/;Cameron;cameron
+http://www.meetup.com/cities/gb/v1/carnock/;Carnock;carnock
+http://www.meetup.com/cities/gb/v1/cowdenbeath/;Cowdenbeath;cowdenbeath
+http://www.meetup.com/cities/gb/v1/crail/;Crail;crail
+http://www.meetup.com/cities/gb/v1/crossford/;Crossford;crossford
+http://www.meetup.com/cities/gb/v1/cupar/;Cupar;cupar
+http://www.meetup.com/cities/gb/v1/dunfermline/;Dunfermline;dunfermline
+http://www.meetup.com/cities/gb/v1/dunshalt/;Dunshalt;dunshalt
+http://www.meetup.com/cities/gb/v1/elie/;Elie;elie
+http://www.meetup.com/cities/gb/v1/falkland/;Falkland;falkland
+http://www.meetup.com/cities/gb/v1/freuchie/;Freuchie;freuchie
+http://www.meetup.com/cities/gb/v1/gauldry/;Gauldry;gauldry
+http://www.meetup.com/cities/gb/v1/glencraig/;Glencraig;glencraig
+http://www.meetup.com/cities/gb/v1/glenrothes/;Glenrothes;glenrothes
+http://www.meetup.com/cities/gb/v1/inverkeithing/;Inverkeithing;inverkeithing
+http://www.meetup.com/cities/gb/v1/kemback/;Kemback;kemback
+http://www.meetup.com/cities/gb/v1/kennoway/;Kennoway;kennoway
+http://www.meetup.com/cities/gb/v1/kinghorn/;Kinghorn;kinghorn
+http://www.meetup.com/cities/gb/v1/kingskettle/;Kingskettle;kingskettle
+http://www.meetup.com/cities/gb/v1/kirkcaldy/;Kirkcaldy;kirkcaldy
+http://www.meetup.com/cities/gb/v1/ladybank/;Ladybank;ladybank
+http://www.meetup.com/cities/gb/v1/leuchars/;Leuchars;leuchars
+http://www.meetup.com/cities/gb/v1/lindores/;Lindores;lindores
+http://www.meetup.com/cities/gb/v1/lochgelly/;Lochgelly;lochgelly
+http://www.meetup.com/cities/gb/v1/lundin_links/;Lundin Links;lundin_links
+http://www.meetup.com/cities/gb/v1/moonzie/;Moonzie;moonzie
+http://www.meetup.com/cities/gb/v1/new_gilston/;New Gilston;new_gilston
+http://www.meetup.com/cities/gb/v1/newport-on-tay/;Newport-on-Tay;newport-on-tay
+http://www.meetup.com/cities/gb/v1/oakley/;Oakley;oakley
+http://www.meetup.com/cities/gb/v1/pickletillum/;Pickletillum;pickletillum
+http://www.meetup.com/cities/gb/v1/radernie/;Radernie;radernie
+http://www.meetup.com/cities/gb/v1/rosyth/;Rosyth;rosyth
+http://www.meetup.com/cities/gb/v1/st_andrews/;St Andrews;st_andrews
+http://www.meetup.com/cities/gb/v1/st_monans/;St Monans;st_monans
+http://www.meetup.com/cities/gb/v1/strathkinness/;Strathkinness;strathkinness
+http://www.meetup.com/cities/gb/v1/tayport/;Tayport;tayport
+http://www.meetup.com/cities/gb/v1/thornton/;Thornton;thornton
+http://www.meetup.com/cities/gb/v1/townhill/;Townhill;townhill
+http://www.meetup.com/cities/gb/v1/upper_largo/;Upper Largo;upper_largo
+http://www.meetup.com/cities/gb/v1/aberdour/;Aberdour;aberdour
+http://www.meetup.com/cities/gb/v1/alloa/;Alloa;alloa
+http://www.meetup.com/cities/gb/v1/alloa_park/;Alloa Park;alloa_park
+http://www.meetup.com/cities/gb/v1/anstruther/;Anstruther;anstruther
+http://www.meetup.com/cities/gb/v1/auchtermuchty/;Auchtermuchty;auchtermuchty
+http://www.meetup.com/cities/gb/v1/auchtertool/;Auchtertool;auchtertool
+http://www.meetup.com/cities/gb/v1/ballingry/;Ballingry;ballingry
+http://www.meetup.com/cities/gb/v1/balmalcolm/;Balmalcolm;balmalcolm
+http://www.meetup.com/cities/gb/v1/buckhaven/;Buckhaven;buckhaven
+http://www.meetup.com/cities/gb/v1/burntisland/;Burntisland;burntisland
+http://www.meetup.com/cities/gb/v1/cairneyhill/;Cairneyhill;cairneyhill
+http://www.meetup.com/cities/gb/v1/cameron/;Cameron;cameron
+http://www.meetup.com/cities/gb/v1/carnock/;Carnock;carnock
+http://www.meetup.com/cities/gb/v1/cowdenbeath/;Cowdenbeath;cowdenbeath
+http://www.meetup.com/cities/gb/v1/crail/;Crail;crail
+http://www.meetup.com/cities/gb/v1/crossford/;Crossford;crossford
+http://www.meetup.com/cities/gb/v1/cupar/;Cupar;cupar
+http://www.meetup.com/cities/gb/v1/dunfermline/;Dunfermline;dunfermline
+http://www.meetup.com/cities/gb/v1/dunshalt/;Dunshalt;dunshalt
+http://www.meetup.com/cities/gb/v1/elie/;Elie;elie
+http://www.meetup.com/cities/gb/v1/falkland/;Falkland;falkland
+http://www.meetup.com/cities/gb/v1/freuchie/;Freuchie;freuchie
+http://www.meetup.com/cities/gb/v1/gauldry/;Gauldry;gauldry
+http://www.meetup.com/cities/gb/v1/glencraig/;Glencraig;glencraig
+http://www.meetup.com/cities/gb/v1/glenrothes/;Glenrothes;glenrothes
+http://www.meetup.com/cities/gb/v1/inverkeithing/;Inverkeithing;inverkeithing
+http://www.meetup.com/cities/gb/v1/kemback/;Kemback;kemback
+http://www.meetup.com/cities/gb/v1/kennoway/;Kennoway;kennoway
+http://www.meetup.com/cities/gb/v1/kinghorn/;Kinghorn;kinghorn
+http://www.meetup.com/cities/gb/v1/kingskettle/;Kingskettle;kingskettle
+http://www.meetup.com/cities/gb/v1/kirkcaldy/;Kirkcaldy;kirkcaldy
+http://www.meetup.com/cities/gb/v1/ladybank/;Ladybank;ladybank
+http://www.meetup.com/cities/gb/v1/leuchars/;Leuchars;leuchars
+http://www.meetup.com/cities/gb/v1/lindores/;Lindores;lindores
+http://www.meetup.com/cities/gb/v1/lochgelly/;Lochgelly;lochgelly
+http://www.meetup.com/cities/gb/v1/lundin_links/;Lundin Links;lundin_links
+http://www.meetup.com/cities/gb/v1/moonzie/;Moonzie;moonzie
+http://www.meetup.com/cities/gb/v1/new_gilston/;New Gilston;new_gilston
+http://www.meetup.com/cities/gb/v1/newport-on-tay/;Newport-on-Tay;newport-on-tay
+http://www.meetup.com/cities/gb/v1/oakley/;Oakley;oakley
+http://www.meetup.com/cities/gb/v1/pickletillum/;Pickletillum;pickletillum
+http://www.meetup.com/cities/gb/v1/radernie/;Radernie;radernie
+http://www.meetup.com/cities/gb/v1/rosyth/;Rosyth;rosyth
+http://www.meetup.com/cities/gb/v1/st_andrews/;St Andrews;st_andrews
+http://www.meetup.com/cities/gb/v1/st_monans/;St Monans;st_monans
+http://www.meetup.com/cities/gb/v1/strathkinness/;Strathkinness;strathkinness
+http://www.meetup.com/cities/gb/v1/tayport/;Tayport;tayport
+http://www.meetup.com/cities/gb/v1/thornton/;Thornton;thornton
+http://www.meetup.com/cities/gb/v1/townhill/;Townhill;townhill
+http://www.meetup.com/cities/gb/v1/upper_largo/;Upper Largo;upper_largo

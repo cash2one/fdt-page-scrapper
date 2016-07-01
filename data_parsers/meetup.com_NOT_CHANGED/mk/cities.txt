@@ -1,0 +1,117 @@
+http://www.meetup.com/cities/mk/arachinovo/;Arachinovo;arachinovo
+http://www.meetup.com/cities/mk/bach/;Bach;bach
+http://www.meetup.com/cities/mk/belchishta/;Belchishta;belchishta
+http://www.meetup.com/cities/mk/berovo/;Berovo;berovo
+http://www.meetup.com/cities/mk/bistrica/;Bistrica;bistrica
+http://www.meetup.com/cities/mk/bitola/;Bitola;bitola
+http://www.meetup.com/cities/mk/blatec/;Blatec;blatec
+http://www.meetup.com/cities/mk/bogdanci/;Bogdanci;bogdanci
+http://www.meetup.com/cities/mk/bogomila/;Bogomila;bogomila
+http://www.meetup.com/cities/mk/bogovinje/;Bogovinje;bogovinje
+http://www.meetup.com/cities/mk/bosilovo/;Bosilovo;bosilovo
+http://www.meetup.com/cities/mk/brod/;Brod;brod
+http://www.meetup.com/cities/mk/brvenica/;Brvenica;brvenica
+http://www.meetup.com/cities/mk/capari/;Capari;capari
+http://www.meetup.com/cities/mk/chashka/;Chashka;chashka
+http://www.meetup.com/cities/mk/chegrane/;Chegrane;chegrane
+http://www.meetup.com/cities/mk/cheshinovo/;Cheshinovo;cheshinovo
+http://www.meetup.com/cities/mk/chucher/;Chucher;chucher
+http://www.meetup.com/cities/mk/debar/;Debar;debar
+http://www.meetup.com/cities/mk/delchevo/;Delchevo;delchevo
+http://www.meetup.com/cities/mk/delogozhdi/;Delogozhdi;delogozhdi
+http://www.meetup.com/cities/mk/demir_hisar/;Demir Hisar;demir_hisar
+http://www.meetup.com/cities/mk/demir_kapija/;Demir Kapija;demir_kapija
+http://www.meetup.com/cities/mk/dobrushevo/;Dobrushevo;dobrushevo
+http://www.meetup.com/cities/mk/dolna_banjica/;Dolna Banjica;dolna_banjica
+http://www.meetup.com/cities/mk/dolneni/;Dolneni;dolneni
+http://www.meetup.com/cities/mk/drugovo/;Drugovo;drugovo
+http://www.meetup.com/cities/mk/dzhepchishte/;Dzhepchishte;dzhepchishte
+http://www.meetup.com/cities/mk/gevgelija/;Gevgelija;gevgelija
+http://www.meetup.com/cities/mk/gostivar/;Gostivar;gostivar
+http://www.meetup.com/cities/mk/gradsko/;Gradsko;gradsko
+http://www.meetup.com/cities/mk/ilinden/;Ilinden;ilinden
+http://www.meetup.com/cities/mk/izvoarele_sucevei/;Izvoarele Sucevei;izvoarele_sucevei
+http://www.meetup.com/cities/mk/jegunovce/;Jegunovce;jegunovce
+http://www.meetup.com/cities/mk/kamenica/;Kamenica;kamenica
+http://www.meetup.com/cities/mk/kamenjance/;Kamenjance;kamenjance
+http://www.meetup.com/cities/mk/karbinci/;Karbinci;karbinci
+http://www.meetup.com/cities/mk/kavadarci/;Kavadarci;kavadarci
+http://www.meetup.com/cities/mk/kichevo/;Kichevo;kichevo
+http://www.meetup.com/cities/mk/klechevce/;Klechevce;klechevce
+http://www.meetup.com/cities/mk/kochani/;Kochani;kochani
+http://www.meetup.com/cities/mk/konche/;Konche;konche
+http://www.meetup.com/cities/mk/kondovo/;Kondovo;kondovo
+http://www.meetup.com/cities/mk/konopishte/;Konopishte;konopishte
+http://www.meetup.com/cities/mk/kosel/;Kosel;kosel
+http://www.meetup.com/cities/mk/kratovo/;Kratovo;kratovo
+http://www.meetup.com/cities/mk/kriva_palanka/;Kriva Palanka;kriva_palanka
+http://www.meetup.com/cities/mk/krivogashtani/;Krivogashtani;krivogashtani
+http://www.meetup.com/cities/mk/krushevo/;Krushevo;krushevo
+http://www.meetup.com/cities/mk/kuklish/;Kuklish;kuklish
+http://www.meetup.com/cities/mk/kukurechani/;Kukurechani;kukurechani
+http://www.meetup.com/cities/mk/kumanovo/;Kumanovo;kumanovo
+http://www.meetup.com/cities/mk/labunishta/;Labunishta;labunishta
+http://www.meetup.com/cities/mk/lipkovo/;Lipkovo;lipkovo
+http://www.meetup.com/cities/mk/lozovo/;Lozovo;lozovo
+http://www.meetup.com/cities/mk/lukovo/;Lukovo;lukovo
+http://www.meetup.com/cities/mk/mavrovi_anovi/;Mavrovi Anovi;mavrovi_anovi
+http://www.meetup.com/cities/mk/mesheishta/;Mesheishta;mesheishta
+http://www.meetup.com/cities/mk/miravci/;Miravci;miravci
+http://www.meetup.com/cities/mk/mogila/;Mogila;mogila
+http://www.meetup.com/cities/mk/murtino/;Murtino;murtino
+http://www.meetup.com/cities/mk/negotino/;Negotino;negotino
+http://www.meetup.com/cities/mk/negotino-poloshko/;Negotino-Poloshko;negotino-poloshko
+http://www.meetup.com/cities/mk/novaci/;Novaci;novaci
+http://www.meetup.com/cities/mk/novo_selo/;Novo Selo;novo_selo
+http://www.meetup.com/cities/mk/obleshevo/;Obleshevo;obleshevo
+http://www.meetup.com/cities/mk/ohrid/;Ohrid;ohrid
+http://www.meetup.com/cities/mk/orashac/;Orashac;orashac
+http://www.meetup.com/cities/mk/orizari/;Orizari;orizari
+http://www.meetup.com/cities/mk/oslomej/;Oslomej;oslomej
+http://www.meetup.com/cities/mk/pehchevo/;Pehchevo;pehchevo
+http://www.meetup.com/cities/mk/petrovec/;Petrovec;petrovec
+http://www.meetup.com/cities/mk/plasnica/;Plasnica;plasnica
+http://www.meetup.com/cities/mk/podaresh/;Podaresh;podaresh
+http://www.meetup.com/cities/mk/prilep/;Prilep;prilep
+http://www.meetup.com/cities/mk/probishtip/;Probishtip;probishtip
+http://www.meetup.com/cities/mk/radovish/;Radovish;radovish
+http://www.meetup.com/cities/mk/rankovce/;Rankovce;rankovce
+http://www.meetup.com/cities/mk/resen/;Resen;resen
+http://www.meetup.com/cities/mk/rosoman/;Rosoman;rosoman
+http://www.meetup.com/cities/mk/rostusha/;Rostusha;rostusha
+http://www.meetup.com/cities/mk/samokov/;Samokov;samokov
+http://www.meetup.com/cities/mk/saraj/;Saraj;saraj
+http://www.meetup.com/cities/mk/shipkovica/;Shipkovica;shipkovica
+http://www.meetup.com/cities/mk/shtip/;Shtip;shtip
+http://www.meetup.com/cities/mk/skopje/;Skopje;skopje
+http://www.meetup.com/cities/mk/sopishte/;Sopishte;sopishte
+http://www.meetup.com/cities/mk/sopotnica/;Sopotnica;sopotnica
+http://www.meetup.com/cities/mk/srbinovo/;Srbinovo;srbinovo
+http://www.meetup.com/cities/mk/staravina/;Staravina;staravina
+http://www.meetup.com/cities/mk/star_dojran/;Star Dojran;star_dojran
+http://www.meetup.com/cities/mk/staro_nagorichane/;Staro Nagorichane;staro_nagorichane
+http://www.meetup.com/cities/mk/struga/;Struga;struga
+http://www.meetup.com/cities/mk/strumica/;Strumica;strumica
+http://www.meetup.com/cities/mk/studenichani/;Studenichani;studenichani
+http://www.meetup.com/cities/mk/sveti_nikole/;Sveti Nikole;sveti_nikole
+http://www.meetup.com/cities/mk/tearce/;Tearce;tearce
+http://www.meetup.com/cities/mk/tetovo/;Tetovo;tetovo
+http://www.meetup.com/cities/mk/topolchani/;Topolchani;topolchani
+http://www.meetup.com/cities/mk/valandovo/;Valandovo;valandovo
+http://www.meetup.com/cities/mk/vasilevo/;Vasilevo;vasilevo
+http://www.meetup.com/cities/mk/veles/;Veles;veles
+http://www.meetup.com/cities/mk/veleshta/;Veleshta;veleshta
+http://www.meetup.com/cities/mk/vevchani/;Vevchani;vevchani
+http://www.meetup.com/cities/mk/vinica/;Vinica;vinica
+http://www.meetup.com/cities/mk/vitolishte/;Vitolishte;vitolishte
+http://www.meetup.com/cities/mk/vraneshtica/;Vraneshtica;vraneshtica
+http://www.meetup.com/cities/mk/vrapchishte/;Vrapchishte;vrapchishte
+http://www.meetup.com/cities/mk/vratnica/;Vratnica;vratnica
+http://www.meetup.com/cities/mk/vrutok/;Vrutok;vrutok
+http://www.meetup.com/cities/mk/zajas/;Zajas;zajas
+http://www.meetup.com/cities/mk/zelenikovo/;Zelenikovo;zelenikovo
+http://www.meetup.com/cities/mk/zhelino/;Zhelino;zhelino
+http://www.meetup.com/cities/mk/zhitoshe/;Zhitoshe;zhitoshe
+http://www.meetup.com/cities/mk/zhupa/;Zhupa;zhupa
+http://www.meetup.com/cities/mk/zletovo/;Zletovo;zletovo
+http://www.meetup.com/cities/mk/zrnovci/;Zrnovci;zrnovci

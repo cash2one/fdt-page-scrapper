@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/gb/d3/alfreton/;Alfreton;alfreton
+http://www.meetup.com/cities/gb/d3/allestree/;Allestree;allestree
+http://www.meetup.com/cities/gb/d3/alvaston/;Alvaston;alvaston
+http://www.meetup.com/cities/gb/d3/ashover/;Ashover;ashover
+http://www.meetup.com/cities/gb/d3/barrow_hill/;Barrow Hill;barrow_hill
+http://www.meetup.com/cities/gb/d3/barrow-on-trent/;Barrow-on-Trent;barrow-on-trent
+http://www.meetup.com/cities/gb/d3/beeley/;Beeley;beeley
+http://www.meetup.com/cities/gb/d3/brailsford/;Brailsford;brailsford
+http://www.meetup.com/cities/gb/d3/buxton/;Buxton;buxton
+http://www.meetup.com/cities/gb/d3/chesterfield/;Chesterfield;chesterfield
+http://www.meetup.com/cities/gb/d3/church_broughton/;Church Broughton;church_broughton
+http://www.meetup.com/cities/gb/d3/clay_cross/;Clay Cross;clay_cross
+http://www.meetup.com/cities/gb/d3/codnor/;Codnor;codnor
+http://www.meetup.com/cities/gb/d3/codnor_park/;Codnor Park;codnor_park
+http://www.meetup.com/cities/gb/d3/derby/;Derby;derby
+http://www.meetup.com/cities/gb/d3/dronfield/;Dronfield;dronfield
+http://www.meetup.com/cities/gb/d3/eckington/;Eckington;eckington
+http://www.meetup.com/cities/gb/d3/edale/;Edale;edale
+http://www.meetup.com/cities/gb/d3/elton/;Elton;elton
+http://www.meetup.com/cities/gb/d3/eyam/;Eyam;eyam
+http://www.meetup.com/cities/gb/d3/friden/;Friden;friden
+http://www.meetup.com/cities/gb/d3/glossop/;Glossop;glossop
+http://www.meetup.com/cities/gb/d3/great_hucklow/;Great Hucklow;great_hucklow
+http://www.meetup.com/cities/gb/d3/heanor/;Heanor;heanor
+http://www.meetup.com/cities/gb/d3/ilkeston/;Ilkeston;ilkeston
+http://www.meetup.com/cities/gb/d3/kelstedge/;Kelstedge;kelstedge
+http://www.meetup.com/cities/gb/d3/longford/;Longford;longford
+http://www.meetup.com/cities/gb/d3/matlock/;Matlock;matlock
+http://www.meetup.com/cities/gb/d3/millthorpe/;Millthorpe;millthorpe
+http://www.meetup.com/cities/gb/d3/mugginton/;Mugginton;mugginton
+http://www.meetup.com/cities/gb/d3/newhall/;Newhall;newhall
+http://www.meetup.com/cities/gb/d3/newhaven/;Newhaven;newhaven
+http://www.meetup.com/cities/gb/d3/nixs_hill_industrial_estate/;Nixs Hill Industrial Estate;nixs_hill_industrial_estate
+http://www.meetup.com/cities/gb/d3/north_wingfield/;North Wingfield;north_wingfield
+http://www.meetup.com/cities/gb/d3/oakwood/;Oakwood;oakwood
+http://www.meetup.com/cities/gb/d3/oker/;Oker;oker
+http://www.meetup.com/cities/gb/d3/press/;Press;press
+http://www.meetup.com/cities/gb/d3/ripley/;Ripley;ripley
+http://www.meetup.com/cities/gb/d3/sandiacre/;Sandiacre;sandiacre
+http://www.meetup.com/cities/gb/d3/shipley/;Shipley;shipley
+http://www.meetup.com/cities/gb/d3/shirebrook/;Shirebrook;shirebrook
+http://www.meetup.com/cities/gb/d3/speedwell_industrial_estate/;Speedwell Industrial Estate;speedwell_industrial_estate
+http://www.meetup.com/cities/gb/d3/spondon/;Spondon;spondon
+http://www.meetup.com/cities/gb/d3/stanley_common/;Stanley Common;stanley_common
+http://www.meetup.com/cities/gb/d3/stony_houghton/;Stony Houghton;stony_houghton
+http://www.meetup.com/cities/gb/d3/sudbury/;Sudbury;sudbury
+http://www.meetup.com/cities/gb/d3/swadlincote/;Swadlincote;swadlincote
+http://www.meetup.com/cities/gb/d3/temple_normanton/;Temple Normanton;temple_normanton
+http://www.meetup.com/cities/gb/d3/turnditch/;Turnditch;turnditch
+http://www.meetup.com/cities/gb/d3/willington/;Willington;willington
+http://www.meetup.com/cities/gb/d3/alfreton/;Alfreton;alfreton
+http://www.meetup.com/cities/gb/d3/allestree/;Allestree;allestree
+http://www.meetup.com/cities/gb/d3/alvaston/;Alvaston;alvaston
+http://www.meetup.com/cities/gb/d3/ashover/;Ashover;ashover
+http://www.meetup.com/cities/gb/d3/barrow_hill/;Barrow Hill;barrow_hill
+http://www.meetup.com/cities/gb/d3/barrow-on-trent/;Barrow-on-Trent;barrow-on-trent
+http://www.meetup.com/cities/gb/d3/beeley/;Beeley;beeley
+http://www.meetup.com/cities/gb/d3/brailsford/;Brailsford;brailsford
+http://www.meetup.com/cities/gb/d3/buxton/;Buxton;buxton
+http://www.meetup.com/cities/gb/d3/chesterfield/;Chesterfield;chesterfield
+http://www.meetup.com/cities/gb/d3/church_broughton/;Church Broughton;church_broughton
+http://www.meetup.com/cities/gb/d3/clay_cross/;Clay Cross;clay_cross
+http://www.meetup.com/cities/gb/d3/codnor/;Codnor;codnor
+http://www.meetup.com/cities/gb/d3/codnor_park/;Codnor Park;codnor_park
+http://www.meetup.com/cities/gb/d3/derby/;Derby;derby
+http://www.meetup.com/cities/gb/d3/dronfield/;Dronfield;dronfield
+http://www.meetup.com/cities/gb/d3/eckington/;Eckington;eckington
+http://www.meetup.com/cities/gb/d3/edale/;Edale;edale
+http://www.meetup.com/cities/gb/d3/elton/;Elton;elton
+http://www.meetup.com/cities/gb/d3/eyam/;Eyam;eyam
+http://www.meetup.com/cities/gb/d3/friden/;Friden;friden
+http://www.meetup.com/cities/gb/d3/glossop/;Glossop;glossop
+http://www.meetup.com/cities/gb/d3/great_hucklow/;Great Hucklow;great_hucklow
+http://www.meetup.com/cities/gb/d3/heanor/;Heanor;heanor
+http://www.meetup.com/cities/gb/d3/ilkeston/;Ilkeston;ilkeston
+http://www.meetup.com/cities/gb/d3/kelstedge/;Kelstedge;kelstedge
+http://www.meetup.com/cities/gb/d3/longford/;Longford;longford
+http://www.meetup.com/cities/gb/d3/matlock/;Matlock;matlock
+http://www.meetup.com/cities/gb/d3/millthorpe/;Millthorpe;millthorpe
+http://www.meetup.com/cities/gb/d3/mugginton/;Mugginton;mugginton
+http://www.meetup.com/cities/gb/d3/newhall/;Newhall;newhall
+http://www.meetup.com/cities/gb/d3/newhaven/;Newhaven;newhaven
+http://www.meetup.com/cities/gb/d3/nixs_hill_industrial_estate/;Nixs Hill Industrial Estate;nixs_hill_industrial_estate
+http://www.meetup.com/cities/gb/d3/north_wingfield/;North Wingfield;north_wingfield
+http://www.meetup.com/cities/gb/d3/oakwood/;Oakwood;oakwood
+http://www.meetup.com/cities/gb/d3/oker/;Oker;oker
+http://www.meetup.com/cities/gb/d3/press/;Press;press
+http://www.meetup.com/cities/gb/d3/ripley/;Ripley;ripley
+http://www.meetup.com/cities/gb/d3/sandiacre/;Sandiacre;sandiacre
+http://www.meetup.com/cities/gb/d3/shipley/;Shipley;shipley
+http://www.meetup.com/cities/gb/d3/shirebrook/;Shirebrook;shirebrook
+http://www.meetup.com/cities/gb/d3/speedwell_industrial_estate/;Speedwell Industrial Estate;speedwell_industrial_estate
+http://www.meetup.com/cities/gb/d3/spondon/;Spondon;spondon
+http://www.meetup.com/cities/gb/d3/stanley_common/;Stanley Common;stanley_common
+http://www.meetup.com/cities/gb/d3/stony_houghton/;Stony Houghton;stony_houghton
+http://www.meetup.com/cities/gb/d3/sudbury/;Sudbury;sudbury
+http://www.meetup.com/cities/gb/d3/swadlincote/;Swadlincote;swadlincote
+http://www.meetup.com/cities/gb/d3/temple_normanton/;Temple Normanton;temple_normanton
+http://www.meetup.com/cities/gb/d3/turnditch/;Turnditch;turnditch
+http://www.meetup.com/cities/gb/d3/willington/;Willington;willington

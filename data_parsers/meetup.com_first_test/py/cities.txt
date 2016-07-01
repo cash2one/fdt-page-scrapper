@@ -1,0 +1,226 @@
+http://www.meetup.com/cities/py/aba%C3%AD/;Abaí;aba%C3%AD
+http://www.meetup.com/cities/py/acahay/;Acahay;acahay
+http://www.meetup.com/cities/py/ajoloap%C3%A1n/;Ajoloapán;ajoloap%C3%A1n
+http://www.meetup.com/cities/py/alberdi/;Alberdi;alberdi
+http://www.meetup.com/cities/py/altos/;Altos;altos
+http://www.meetup.com/cities/py/alto_ver%C3%A1/;Alto Verá;alto_ver%C3%A1
+http://www.meetup.com/cities/py/amatl%C3%A1n/;Amatlán;amatl%C3%A1n
+http://www.meetup.com/cities/py/aregu%C3%A1/;Areguá;aregu%C3%A1
+http://www.meetup.com/cities/py/arroyos_y_esteros/;Arroyos y Esteros;arroyos_y_esteros
+http://www.meetup.com/cities/py/asunci%C3%B3n/;Asunción;asunci%C3%B3n
+http://www.meetup.com/cities/py/atyr%C3%A1/;Atyrá;atyr%C3%A1
+http://www.meetup.com/cities/py/ayolas/;Ayolas;ayolas
+http://www.meetup.com/cities/py/bayt_lahm/;Bayt Lahm;bayt_lahm
+http://www.meetup.com/cities/py/bella_vista/;Bella Vista;bella_vista
+http://www.meetup.com/cities/py/benito_ju%C3%A1rez/;Benito Juárez;benito_ju%C3%A1rez
+http://www.meetup.com/cities/py/benjam%C3%ADn_aceval/;Benjamín Aceval;benjam%C3%ADn_aceval
+http://www.meetup.com/cities/py/borja/;Borja;borja
+http://www.meetup.com/cities/py/buena_vista/;Buena Vista;buena_vista
+http://www.meetup.com/cities/py/caacup%C3%A9/;Caacupé;caacup%C3%A9
+http://www.meetup.com/cities/py/caaguaz%C3%BA/;Caaguazú;caaguaz%C3%BA
+http://www.meetup.com/cities/py/caapuc%C3%BA/;Caapucú;caapuc%C3%BA
+http://www.meetup.com/cities/py/caazap%C3%A1/;Caazapá;caazap%C3%A1
+http://www.meetup.com/cities/py/cambyreta/;Cambyreta;cambyreta
+http://www.meetup.com/cities/py/capiat%C3%A1/;Capiatá;capiat%C3%A1
+http://www.meetup.com/cities/py/capi%C3%ADbary/;Capiíbary;capi%C3%ADbary
+http://www.meetup.com/cities/py/capit%C3%A1n_bado/;Capitán Bado;capit%C3%A1n_bado
+http://www.meetup.com/cities/py/capit%C3%A1n_mauricio_jos%C3%A9_troche/;Capitán Mauricio José Troche;capit%C3%A1n_mauricio_jos%C3%A9_troche
+http://www.meetup.com/cities/py/capit%C3%A1n_meza/;Capitán Meza;capit%C3%A1n_meza
+http://www.meetup.com/cities/py/capit%C3%A1n_miranda/;Capitán Miranda;capit%C3%A1n_miranda
+http://www.meetup.com/cities/py/caraguatay/;Caraguatay;caraguatay
+http://www.meetup.com/cities/py/carapegu%C3%A1/;Carapeguá;carapegu%C3%A1
+http://www.meetup.com/cities/py/caraya%C3%B3/;Carayaó;caraya%C3%B3
+http://www.meetup.com/cities/py/carlos_antonio_l%C3%B3pez/;Carlos Antonio López;carlos_antonio_l%C3%B3pez
+http://www.meetup.com/cities/py/carmen_del_paran%C3%A1/;Carmen del Paraná;carmen_del_paran%C3%A1
+http://www.meetup.com/cities/py/cerrito/;Cerrito;cerrito
+http://www.meetup.com/cities/py/chiautzingo/;Chiautzingo;chiautzingo
+http://www.meetup.com/cities/py/chor%C3%A9/;Choré;chor%C3%A9
+http://www.meetup.com/cities/py/ciudad_del_este/;Ciudad del Este;ciudad_del_este
+http://www.meetup.com/cities/py/concepci%C3%B3n/;Concepción;concepci%C3%B3n
+http://www.meetup.com/cities/py/coronel_bogado/;Coronel Bogado;coronel_bogado
+http://www.meetup.com/cities/py/coronel_mart%C3%ADnez/;Coronel Martínez;coronel_mart%C3%ADnez
+http://www.meetup.com/cities/py/coronel_oviedo/;Coronel Oviedo;coronel_oviedo
+http://www.meetup.com/cities/py/corpus_christi/;Corpus Christi;corpus_christi
+http://www.meetup.com/cities/py/curuguaty/;Curuguaty;curuguaty
+http://www.meetup.com/cities/py/desmochados/;Desmochados;desmochados
+http://www.meetup.com/cities/py/doctor_botrell/;Doctor Botrell;doctor_botrell
+http://www.meetup.com/cities/py/doctor_cecilio_b%C3%A1ez/;Doctor Cecilio Báez;doctor_cecilio_b%C3%A1ez
+http://www.meetup.com/cities/py/doctor_eulogio_estigarribia/;Doctor Eulogio Estigarribia;doctor_eulogio_estigarribia
+http://www.meetup.com/cities/py/doctor_juan_le%C3%B3n_mallorqu%C3%ADn/;Doctor Juan León Mallorquín;doctor_juan_le%C3%B3n_mallorqu%C3%ADn
+http://www.meetup.com/cities/py/doctor_juan_manuel_frutos/;Doctor Juan Manuel Frutos;doctor_juan_manuel_frutos
+http://www.meetup.com/cities/py/doctor_mois%C3%A9s_bertoni/;Doctor Moisés Bertoni;doctor_mois%C3%A9s_bertoni
+http://www.meetup.com/cities/py/doctor_pedro_p._pe%C3%B1a/;Doctor Pedro P. Peña;doctor_pedro_p._pe%C3%B1a
+http://www.meetup.com/cities/py/domingo_mart%C3%ADnez_de_irala/;Domingo Martínez de Irala;domingo_mart%C3%ADnez_de_irala
+http://www.meetup.com/cities/py/edelira/;Edelira;edelira
+http://www.meetup.com/cities/py/emboscada/;Emboscada;emboscada
+http://www.meetup.com/cities/py/encarnaci%C3%B3n/;Encarnación;encarnaci%C3%B3n
+http://www.meetup.com/cities/py/escobar/;Escobar;escobar
+http://www.meetup.com/cities/py/eusebio_ayala/;Eusebio Ayala;eusebio_ayala
+http://www.meetup.com/cities/py/f%C3%A9lix_p%C3%A9rez_cardozo/;Félix Pérez Cardozo;f%C3%A9lix_p%C3%A9rez_cardozo
+http://www.meetup.com/cities/py/fernando_de_la_mora/;Fernando de la Mora;fernando_de_la_mora
+http://www.meetup.com/cities/py/filadelfia/;Filadelfia;filadelfia
+http://www.meetup.com/cities/py/fram/;Fram;fram
+http://www.meetup.com/cities/py/fuerte_olimpo/;Fuerte Olimpo;fuerte_olimpo
+http://www.meetup.com/cities/py/general_artigas/;General Artigas;general_artigas
+http://www.meetup.com/cities/py/general_bernardino_caballero/;General Bernardino Caballero;general_bernardino_caballero
+http://www.meetup.com/cities/py/general_delgado/;General Delgado;general_delgado
+http://www.meetup.com/cities/py/general_elizardo_aquino/;General Elizardo Aquino;general_elizardo_aquino
+http://www.meetup.com/cities/py/general_eugenio_alejandrino_garay/;General Eugenio Alejandrino Garay;general_eugenio_alejandrino_garay
+http://www.meetup.com/cities/py/general_francisco_%C3%A1lvarez/;General Francisco Álvarez;general_francisco_%C3%A1lvarez
+http://www.meetup.com/cities/py/general_higinio_mor%C3%ADnigo/;General Higinio Morínigo;general_higinio_mor%C3%ADnigo
+http://www.meetup.com/cities/py/general_isidro_resqu%C3%ADn/;General Isidro Resquín;general_isidro_resqu%C3%ADn
+http://www.meetup.com/cities/py/general_jos%C3%A9_eduvigis_d%C3%ADaz/;General José Eduvigis Díaz;general_jos%C3%A9_eduvigis_d%C3%ADaz
+http://www.meetup.com/cities/py/guarambar%C3%A9/;Guarambaré;guarambar%C3%A9
+http://www.meetup.com/cities/py/guayaibi/;Guayaibi;guayaibi
+http://www.meetup.com/cities/py/guazu_cu%C3%A1/;Guazu Cuá;guazu_cu%C3%A1
+http://www.meetup.com/cities/py/hernandar%C3%ADaz/;Hernandaríaz;hernandar%C3%ADaz
+http://www.meetup.com/cities/py/hohenau/;Hohenau;hohenau
+http://www.meetup.com/cities/py/horqueta/;Horqueta;horqueta
+http://www.meetup.com/cities/py/huaraz/;Huaraz;huaraz
+http://www.meetup.com/cities/py/humait%C3%A1/;Humaitá;humait%C3%A1
+http://www.meetup.com/cities/py/iru%C3%B1a/;Iruña;iru%C3%B1a
+http://www.meetup.com/cities/py/isla_puc%C3%BA/;Isla Pucú;isla_puc%C3%BA
+http://www.meetup.com/cities/py/isla_umb%C3%BA/;Isla Umbú;isla_umb%C3%BA
+http://www.meetup.com/cities/py/it%C3%A1/;Itá;it%C3%A1
+http://www.meetup.com/cities/py/itacurub%C3%AD_de_la_cordillera/;Itacurubí de la Cordillera;itacurub%C3%AD_de_la_cordillera
+http://www.meetup.com/cities/py/itacurub%C3%AD_del_rosario/;Itacurubí del Rosario;itacurub%C3%AD_del_rosario
+http://www.meetup.com/cities/py/itanar%C3%A1/;Itanará;itanar%C3%A1
+http://www.meetup.com/cities/py/itap%C3%A9/;Itapé;itap%C3%A9
+http://www.meetup.com/cities/py/itap%C3%BAa_poty/;Itapúa Poty;itap%C3%BAa_poty
+http://www.meetup.com/cities/py/itaquyry/;Itaquyry;itaquyry
+http://www.meetup.com/cities/py/itaugu%C3%A1/;Itauguá;itaugu%C3%A1
+http://www.meetup.com/cities/py/iturbe/;Iturbe;iturbe
+http://www.meetup.com/cities/py/jaguar%C3%A3o/;Jaguarão;jaguar%C3%A3o
+http://www.meetup.com/cities/py/jes%C3%BAs/;Jesús;jes%C3%BAs
+http://www.meetup.com/cities/py/jos%C3%A9_falc%C3%B3n/;José Falcón;jos%C3%A9_falc%C3%B3n
+http://www.meetup.com/cities/py/jos%C3%A9_fasardi/;José Fasardi;jos%C3%A9_fasardi
+http://www.meetup.com/cities/py/jos%C3%A9_ocampos/;José Ocampos;jos%C3%A9_ocampos
+http://www.meetup.com/cities/py/juan_augusto_sald%C3%ADvar/;Juan Augusto Saldívar;juan_augusto_sald%C3%ADvar
+http://www.meetup.com/cities/py/juan_de_mena/;Juan de Mena;juan_de_mena
+http://www.meetup.com/cities/py/juan_emilio_o%27leary/;Juan Emilio O'Leary;juan_emilio_o%27leary
+http://www.meetup.com/cities/py/katuet%C3%A9/;Katueté;katuet%C3%A9
+http://www.meetup.com/cities/py/la_colmena/;La Colmena;la_colmena
+http://www.meetup.com/cities/py/lambar%C3%A9/;Lambaré;lambar%C3%A9
+http://www.meetup.com/cities/py/la_paloma/;La Paloma;la_paloma
+http://www.meetup.com/cities/py/la_pastoria/;La Pastoria;la_pastoria
+http://www.meetup.com/cities/py/la_paz/;La Paz;la_paz
+http://www.meetup.com/cities/py/laureles/;Laureles;laureles
+http://www.meetup.com/cities/py/la_victoria/;La Victoria;la_victoria
+http://www.meetup.com/cities/py/leandro_oviedo/;Leandro Oviedo;leandro_oviedo
+http://www.meetup.com/cities/py/lima/;Lima;lima
+http://www.meetup.com/cities/py/limpio/;Limpio;limpio
+http://www.meetup.com/cities/py/loma_grande/;Loma Grande;loma_grande
+http://www.meetup.com/cities/py/loreto/;Loreto;loreto
+http://www.meetup.com/cities/py/los_cedrales/;Los Cedrales;los_cedrales
+http://www.meetup.com/cities/py/luque/;Luque;luque
+http://www.meetup.com/cities/py/maciel/;Maciel;maciel
+http://www.meetup.com/cities/py/manila/;Manila;manila
+http://www.meetup.com/cities/py/marechal_estigarribia/;Marechal Estigarribia;marechal_estigarribia
+http://www.meetup.com/cities/py/marechal_francisco_solano_l%C3%B3pez/;Marechal Francisco Solano López;marechal_francisco_solano_l%C3%B3pez
+http://www.meetup.com/cities/py/mariano_roque_alonso/;Mariano Roque Alonso;mariano_roque_alonso
+http://www.meetup.com/cities/py/mayor_jos%C3%A9_dejes%C3%BAs_mart%C3%ADnez/;Mayor José Dejesús Martínez;mayor_jos%C3%A9_dejes%C3%BAs_mart%C3%ADnez
+http://www.meetup.com/cities/py/mayor_ota%C3%B1o/;Mayor Otaño;mayor_ota%C3%B1o
+http://www.meetup.com/cities/py/mayor_pablo_lagerenza/;Mayor Pablo Lagerenza;mayor_pablo_lagerenza
+http://www.meetup.com/cities/py/mbaracay%C3%BA/;Mbaracayú;mbaracay%C3%BA
+http://www.meetup.com/cities/py/mbocayaty/;Mbocayaty;mbocayaty
+http://www.meetup.com/cities/py/mbocayty_del_yhaguy/;Mbocayty del Yhaguy;mbocayty_del_yhaguy
+http://www.meetup.com/cities/py/mbutuy/;Mbutuy;mbutuy
+http://www.meetup.com/cities/py/mbuyapey/;Mbuyapey;mbuyapey
+http://www.meetup.com/cities/py/menno/;Menno;menno
+http://www.meetup.com/cities/py/minga_guaz%C3%BA/;Minga Guazú;minga_guaz%C3%BA
+http://www.meetup.com/cities/py/minga_por%C3%A1/;Minga Porá;minga_por%C3%A1
+http://www.meetup.com/cities/py/%C3%B1acunday/;Ñacunday;%C3%B1acunday
+http://www.meetup.com/cities/py/nanawa/;Nanawa;nanawa
+http://www.meetup.com/cities/py/naranjal/;Naranjal;naranjal
+http://www.meetup.com/cities/py/natalicio_talavera/;Natalicio Talavera;natalicio_talavera
+http://www.meetup.com/cities/py/natalio/;Natalio;natalio
+http://www.meetup.com/cities/py/%C3%B1emby/;Ñemby;%C3%B1emby
+http://www.meetup.com/cities/py/neuland/;Neuland;neuland
+http://www.meetup.com/cities/py/nueva_alborada/;Nueva Alborada;nueva_alborada
+http://www.meetup.com/cities/py/nueva_colombia/;Nueva Colombia;nueva_colombia
+http://www.meetup.com/cities/py/nueva_esperanza/;Nueva Esperanza;nueva_esperanza
+http://www.meetup.com/cities/py/nueva_germania/;Nueva Germania;nueva_germania
+http://www.meetup.com/cities/py/nueva_italia_de_ruiz/;Nueva Italia de Ruiz;nueva_italia_de_ruiz
+http://www.meetup.com/cities/py/nueva_londres/;Nueva Londres;nueva_londres
+http://www.meetup.com/cities/py/%C3%B1um%C3%AD/;Ñumí;%C3%B1um%C3%AD
+http://www.meetup.com/cities/py/oaxaca/;Oaxaca;oaxaca
+http://www.meetup.com/cities/py/obligado/;Obligado;obligado
+http://www.meetup.com/cities/py/paraguar%C3%AD/;Paraguarí;paraguar%C3%AD
+http://www.meetup.com/cities/py/paso_de_patria/;Paso de Patria;paso_de_patria
+http://www.meetup.com/cities/py/paso_yobai/;Paso Yobai;paso_yobai
+http://www.meetup.com/cities/py/pedro_juan_caballero/;Pedro Juan Caballero;pedro_juan_caballero
+http://www.meetup.com/cities/py/pilar/;Pilar;pilar
+http://www.meetup.com/cities/py/pirap%C3%B3/;Pirapó;pirap%C3%B3
+http://www.meetup.com/cities/py/piray%C3%BA/;Pirayú;piray%C3%BA
+http://www.meetup.com/cities/py/piribebuy/;Piribebuy;piribebuy
+http://www.meetup.com/cities/py/pozo_colorado/;Pozo Colorado;pozo_colorado
+http://www.meetup.com/cities/py/presidente_franco/;Presidente Franco;presidente_franco
+http://www.meetup.com/cities/py/primero_de_marzo/;Primero de Marzo;primero_de_marzo
+http://www.meetup.com/cities/py/puerto_pinasco/;Puerto Pinasco;puerto_pinasco
+http://www.meetup.com/cities/py/quiindy/;Quiindy;quiindy
+http://www.meetup.com/cities/py/quyquyho/;Quyquyho;quyquyho
+http://www.meetup.com/cities/py/ra%C3%BAl_arsenio_oviedo/;Raúl Arsenio Oviedo;ra%C3%BAl_arsenio_oviedo
+http://www.meetup.com/cities/py/repatriaci%C3%B3n/;Repatriación;repatriaci%C3%B3n
+http://www.meetup.com/cities/py/salto_del_guair%C3%A1/;Salto del Guairá;salto_del_guair%C3%A1
+http://www.meetup.com/cities/py/san_alberto/;San Alberto;san_alberto
+http://www.meetup.com/cities/py/san_antonio/;San Antonio;san_antonio
+http://www.meetup.com/cities/py/san_bernardino/;San Bernardino;san_bernardino
+http://www.meetup.com/cities/py/san_cosme_y_dami%C3%A1n/;San Cosme y Damián;san_cosme_y_dami%C3%A1n
+http://www.meetup.com/cities/py/san_estanislao/;San Estanislao;san_estanislao
+http://www.meetup.com/cities/py/san_ignacio/;San Ignacio;san_ignacio
+http://www.meetup.com/cities/py/san_joaqu%C3%ADn/;San Joaquín;san_joaqu%C3%ADn
+http://www.meetup.com/cities/py/san_jos%C3%A9_de_los_arroyos/;San José de los Arroyos;san_jos%C3%A9_de_los_arroyos
+http://www.meetup.com/cities/py/san_jos%C3%A9_obrero/;San José Obrero;san_jos%C3%A9_obrero
+http://www.meetup.com/cities/py/san_juan_bautista_de_%C3%B1eembuc%C3%BA/;San Juan Bautista de Ñeembucú;san_juan_bautista_de_%C3%B1eembuc%C3%BA
+http://www.meetup.com/cities/py/san_juan_del_paran%C3%A1/;San Juan del Paraná;san_juan_del_paran%C3%A1
+http://www.meetup.com/cities/py/san_juan_nepomuceno/;San Juan Nepomuceno;san_juan_nepomuceno
+http://www.meetup.com/cities/py/san_l%C3%A1zaro/;San Lázaro;san_l%C3%A1zaro
+http://www.meetup.com/cities/py/san_miguel/;San Miguel;san_miguel
+http://www.meetup.com/cities/py/san_pablo/;San Pablo;san_pablo
+http://www.meetup.com/cities/py/san_patricio/;San Patricio;san_patricio
+http://www.meetup.com/cities/py/san_pedro_del_paran%C3%A1/;San Pedro del Paraná;san_pedro_del_paran%C3%A1
+http://www.meetup.com/cities/py/san_pedro_de_ycuamandiy%C3%BA/;San Pedro de Ycuamandiyú;san_pedro_de_ycuamandiy%C3%BA
+http://www.meetup.com/cities/py/san_rafael_del_paran%C3%A1/;San Rafael del Paraná;san_rafael_del_paran%C3%A1
+http://www.meetup.com/cities/py/san_salvador/;San Salvador;san_salvador
+http://www.meetup.com/cities/py/santa_rita/;Santa Rita;santa_rita
+http://www.meetup.com/cities/py/santa_rosa/;Santa Rosa;santa_rosa
+http://www.meetup.com/cities/py/santa_rosa_del_monday/;Santa Rosa del Monday;santa_rosa_del_monday
+http://www.meetup.com/cities/py/santiago/;Santiago;santiago
+http://www.meetup.com/cities/py/sapuca%C3%AD/;Sapucaí;sapuca%C3%AD
+http://www.meetup.com/cities/py/sim%C3%B3n_bol%C3%ADvar/;Simón Bolívar;sim%C3%B3n_bol%C3%ADvar
+http://www.meetup.com/cities/py/tacuaras/;Tacuaras;tacuaras
+http://www.meetup.com/cities/py/tacuat%C3%AD/;Tacuatí;tacuat%C3%AD
+http://www.meetup.com/cities/py/tava%C3%AD/;Tavaí;tava%C3%AD
+http://www.meetup.com/cities/py/tebicuarym%C3%AD/;Tebicuarymí;tebicuarym%C3%AD
+http://www.meetup.com/cities/py/tobat%C3%AD/;Tobatí;tobat%C3%AD
+http://www.meetup.com/cities/py/tom%C3%A1s_romero_pereira/;Tomás Romero Pereira;tom%C3%A1s_romero_pereira
+http://www.meetup.com/cities/py/tres_corrales/;Tres Corrales;tres_corrales
+http://www.meetup.com/cities/py/tres_de_febrero/;Tres de Febrero;tres_de_febrero
+http://www.meetup.com/cities/py/trinidad/;Trinidad;trinidad
+http://www.meetup.com/cities/py/tuxtepec/;Tuxtepec;tuxtepec
+http://www.meetup.com/cities/py/uni%C3%B3n/;Unión;uni%C3%B3n
+http://www.meetup.com/cities/py/vaquer%C3%ADa/;Vaquería;vaquer%C3%ADa
+http://www.meetup.com/cities/py/veinticinco_de_diciembre/;Veinticinco de Diciembre;veinticinco_de_diciembre
+http://www.meetup.com/cities/py/villa_del_rosario/;Villa del Rosario;villa_del_rosario
+http://www.meetup.com/cities/py/villa_elisa/;Villa Elisa;villa_elisa
+http://www.meetup.com/cities/py/villa_florida/;Villa Florida;villa_florida
+http://www.meetup.com/cities/py/villa_franca/;Villa Franca;villa_franca
+http://www.meetup.com/cities/py/villa_hayes/;Villa Hayes;villa_hayes
+http://www.meetup.com/cities/py/villalb%C3%ADn/;Villalbín;villalb%C3%ADn
+http://www.meetup.com/cities/py/villa_oliva/;Villa Oliva;villa_oliva
+http://www.meetup.com/cities/py/villarrica/;Villarrica;villarrica
+http://www.meetup.com/cities/py/villeta/;Villeta;villeta
+http://www.meetup.com/cities/py/yabebyry/;Yabebyry;yabebyry
+http://www.meetup.com/cities/py/yataity/;Yataity;yataity
+http://www.meetup.com/cities/py/yataity_del_norte/;Yataity del Norte;yataity_del_norte
+http://www.meetup.com/cities/py/yatytay/;Yatytay;yatytay
+http://www.meetup.com/cities/py/ybycu%C3%AD/;Ybycuí;ybycu%C3%AD
+http://www.meetup.com/cities/py/ybytim%C3%AD/;Ybytimí;ybytim%C3%AD
+http://www.meetup.com/cities/py/yegros/;Yegros;yegros
+http://www.meetup.com/cities/py/ygatimi/;Ygatimi;ygatimi
+http://www.meetup.com/cities/py/yguaz%C3%BA/;Yguazú;yguaz%C3%BA
+http://www.meetup.com/cities/py/yh%C3%BA/;Yhú;yh%C3%BA
+http://www.meetup.com/cities/py/ypacara%C3%AD/;Ypacaraí;ypacara%C3%AD
+http://www.meetup.com/cities/py/ypan%C3%A9/;Ypané;ypan%C3%A9
+http://www.meetup.com/cities/py/ypeh%C3%BA/;Ypehú;ypeh%C3%BA
+http://www.meetup.com/cities/py/yuty/;Yuty;yuty

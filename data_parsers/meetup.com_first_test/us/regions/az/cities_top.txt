@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/us/az/apache_junction/;Apache Junction;apache_junction
+http://www.meetup.com/cities/us/az/avondale/;Avondale;avondale
+http://www.meetup.com/cities/us/az/buckeye/;Buckeye;buckeye
+http://www.meetup.com/cities/us/az/bullhead_city/;Bullhead City;bullhead_city
+http://www.meetup.com/cities/us/az/casa_grande/;Casa Grande;casa_grande
+http://www.meetup.com/cities/us/az/cave_creek/;Cave Creek;cave_creek
+http://www.meetup.com/cities/us/az/chandler/;Chandler;chandler
+http://www.meetup.com/cities/us/az/chino_valley/;Chino Valley;chino_valley
+http://www.meetup.com/cities/us/az/coolidge/;Coolidge;coolidge
+http://www.meetup.com/cities/us/az/cottonwood/;Cottonwood;cottonwood
+http://www.meetup.com/cities/us/az/el_mirage/;El Mirage;el_mirage
+http://www.meetup.com/cities/us/az/flagstaff/;Flagstaff;flagstaff
+http://www.meetup.com/cities/us/az/florence/;Florence;florence
+http://www.meetup.com/cities/us/az/fort_huachuca/;Fort Huachuca;fort_huachuca
+http://www.meetup.com/cities/us/az/fountain_hills/;Fountain Hills;fountain_hills
+http://www.meetup.com/cities/us/az/gilbert/;Gilbert;gilbert
+http://www.meetup.com/cities/us/az/glendale/;Glendale;glendale
+http://www.meetup.com/cities/us/az/golden_valley/;Golden Valley;golden_valley
+http://www.meetup.com/cities/us/az/goodyear/;Goodyear;goodyear
+http://www.meetup.com/cities/us/az/green_valley/;Green Valley;green_valley
+http://www.meetup.com/cities/us/az/hereford/;Hereford;hereford
+http://www.meetup.com/cities/us/az/higley/;Higley;higley
+http://www.meetup.com/cities/us/az/kingman/;Kingman;kingman
+http://www.meetup.com/cities/us/az/lake_havasu_city/;Lake Havasu City;lake_havasu_city
+http://www.meetup.com/cities/us/az/laveen/;Laveen;laveen
+http://www.meetup.com/cities/us/az/litchfield_park/;Litchfield Park;litchfield_park
+http://www.meetup.com/cities/us/az/marana/;Marana;marana
+http://www.meetup.com/cities/us/az/maricopa/;Maricopa;maricopa
+http://www.meetup.com/cities/us/az/mesa/;Mesa;mesa
+http://www.meetup.com/cities/us/az/new_river/;New River;new_river
+http://www.meetup.com/cities/us/az/paradise_valley/;Paradise Valley;paradise_valley
+http://www.meetup.com/cities/us/az/payson/;Payson;payson
+http://www.meetup.com/cities/us/az/peoria/;Peoria;peoria
+http://www.meetup.com/cities/us/az/phoenix/;Phoenix;phoenix
+http://www.meetup.com/cities/us/az/prescott/;Prescott;prescott
+http://www.meetup.com/cities/us/az/prescott_valley/;Prescott Valley;prescott_valley
+http://www.meetup.com/cities/us/az/queen_creek/;Queen Creek;queen_creek
+http://www.meetup.com/cities/us/az/sahuarita/;Sahuarita;sahuarita
+http://www.meetup.com/cities/us/az/scottsdale/;Scottsdale;scottsdale
+http://www.meetup.com/cities/us/az/sedona/;Sedona;sedona
+http://www.meetup.com/cities/us/az/sierra_vista/;Sierra Vista;sierra_vista
+http://www.meetup.com/cities/us/az/sun_city/;Sun City;sun_city
+http://www.meetup.com/cities/us/az/sun_city_west/;Sun City West;sun_city_west
+http://www.meetup.com/cities/us/az/surprise/;Surprise;surprise
+http://www.meetup.com/cities/us/az/tempe/;Tempe;tempe
+http://www.meetup.com/cities/us/az/tolleson/;Tolleson;tolleson
+http://www.meetup.com/cities/us/az/tucson/;Tucson;tucson
+http://www.meetup.com/cities/us/az/vail/;Vail;vail
+http://www.meetup.com/cities/us/az/waddell/;Waddell;waddell
+http://www.meetup.com/cities/us/az/yuma/;Yuma;yuma

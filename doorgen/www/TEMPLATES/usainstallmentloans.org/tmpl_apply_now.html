@@ -1,0 +1,41 @@
+<div style="line-height:20px; font-size:15px;">
+<script src="/app/jquery.js"></script>
+<h2>Apply Now for Installment Loan</h2>
+<br><br>
+<br><br>
+<div id="_lg_form_"></div>
+<script language="javascript">
+function loadScr(url, id, onload) {
+		document.getElementById("_lg_form_").innerHTML = '<div id="fr_loader" style="min-height: 293px; position: relative;"><img src="/images/loader.gif" style="position: absolute!important; left: 50%!important; top: 50%!important; margin: -32px 0 0 -25px!important;" /><div style="text-align: center!important; font-size: 20px!important;color:#333!important;padding-top: 170px!important;line-height:normal!important;">Loading. Please wait...</div></div>'
+        var script = document.createElement('script'),
+            stime = new Date();
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('src', url);
+        script.setAttribute('async', 'async');
+
+        if (id != undefined)
+            script.setAttribute('id', id);
+        if (onload != undefined) {
+            script.onreadystatechange = function () {
+                var i;
+                if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                    script.onreadystatechange = script.onload = script.onerror = null;
+                    script.setAttribute('elapsed', new Date() - stime);
+                    onload();
+                }
+            };
+            script.onload = script.onerror = function () {
+                script.onreadystatechange = script.onload = script.onerror = null;
+                script.setAttribute('elapsed', new Date() - stime);
+                onload();
+            };
+        }
+
+        document.getElementById('_lg_form_').appendChild(script);
+    }
+
+(function () {
+    loadScr('/app/applicationInit.js');
+})();
+</script>
+</div>

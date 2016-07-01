@@ -1,0 +1,513 @@
+http://www.meetup.com/cities/us/ma/abington/;Abington;abington
+http://www.meetup.com/cities/us/ma/accord/;Accord;accord
+http://www.meetup.com/cities/us/ma/acton/;Acton;acton
+http://www.meetup.com/cities/us/ma/acushnet/;Acushnet;acushnet
+http://www.meetup.com/cities/us/ma/adams/;Adams;adams
+http://www.meetup.com/cities/us/ma/agawam/;Agawam;agawam
+http://www.meetup.com/cities/us/ma/allston/;Allston;allston
+http://www.meetup.com/cities/us/ma/amesbury/;Amesbury;amesbury
+http://www.meetup.com/cities/us/ma/amherst/;Amherst;amherst
+http://www.meetup.com/cities/us/ma/andover/;Andover;andover
+http://www.meetup.com/cities/us/ma/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/ma/arlington_heights/;Arlington Heights;arlington_heights
+http://www.meetup.com/cities/us/ma/ashburnham/;Ashburnham;ashburnham
+http://www.meetup.com/cities/us/ma/ashby/;Ashby;ashby
+http://www.meetup.com/cities/us/ma/ashfield/;Ashfield;ashfield
+http://www.meetup.com/cities/us/ma/ashland/;Ashland;ashland
+http://www.meetup.com/cities/us/ma/ashley_falls/;Ashley Falls;ashley_falls
+http://www.meetup.com/cities/us/ma/assonet/;Assonet;assonet
+http://www.meetup.com/cities/us/ma/athol/;Athol;athol
+http://www.meetup.com/cities/us/ma/attleboro/;Attleboro;attleboro
+http://www.meetup.com/cities/us/ma/attleboro_falls/;Attleboro Falls;attleboro_falls
+http://www.meetup.com/cities/us/ma/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/ma/auburndale/;Auburndale;auburndale
+http://www.meetup.com/cities/us/ma/avon/;Avon;avon
+http://www.meetup.com/cities/us/ma/ayer/;Ayer;ayer
+http://www.meetup.com/cities/us/ma/babson_park/;Babson Park;babson_park
+http://www.meetup.com/cities/us/ma/baldwinville/;Baldwinville;baldwinville
+http://www.meetup.com/cities/us/ma/barnstable/;Barnstable;barnstable
+http://www.meetup.com/cities/us/ma/barre/;Barre;barre
+http://www.meetup.com/cities/us/ma/becket/;Becket;becket
+http://www.meetup.com/cities/us/ma/bedford/;Bedford;bedford
+http://www.meetup.com/cities/us/ma/belchertown/;Belchertown;belchertown
+http://www.meetup.com/cities/us/ma/bellingham/;Bellingham;bellingham
+http://www.meetup.com/cities/us/ma/belmont/;Belmont;belmont
+http://www.meetup.com/cities/us/ma/berkley/;Berkley;berkley
+http://www.meetup.com/cities/us/ma/berkshire/;Berkshire;berkshire
+http://www.meetup.com/cities/us/ma/berlin/;Berlin;berlin
+http://www.meetup.com/cities/us/ma/bernardston/;Bernardston;bernardston
+http://www.meetup.com/cities/us/ma/beverly/;Beverly;beverly
+http://www.meetup.com/cities/us/ma/billerica/;Billerica;billerica
+http://www.meetup.com/cities/us/ma/blackstone/;Blackstone;blackstone
+http://www.meetup.com/cities/us/ma/blandford/;Blandford;blandford
+http://www.meetup.com/cities/us/ma/bolton/;Bolton;bolton
+http://www.meetup.com/cities/us/ma/bondsville/;Bondsville;bondsville
+http://www.meetup.com/cities/us/ma/boston/;Boston;boston
+http://www.meetup.com/cities/us/ma/boxborough/;Boxborough;boxborough
+http://www.meetup.com/cities/us/ma/boxford/;Boxford;boxford
+http://www.meetup.com/cities/us/ma/boylston/;Boylston;boylston
+http://www.meetup.com/cities/us/ma/braintree/;Braintree;braintree
+http://www.meetup.com/cities/us/ma/brant_rock/;Brant Rock;brant_rock
+http://www.meetup.com/cities/us/ma/brewster/;Brewster;brewster
+http://www.meetup.com/cities/us/ma/bridgewater/;Bridgewater;bridgewater
+http://www.meetup.com/cities/us/ma/brighton/;Brighton;brighton
+http://www.meetup.com/cities/us/ma/brimfield/;Brimfield;brimfield
+http://www.meetup.com/cities/us/ma/brockton/;Brockton;brockton
+http://www.meetup.com/cities/us/ma/brookfield/;Brookfield;brookfield
+http://www.meetup.com/cities/us/ma/brookline/;Brookline;brookline
+http://www.meetup.com/cities/us/ma/brookline_village/;Brookline Village;brookline_village
+http://www.meetup.com/cities/us/ma/bryantville/;Bryantville;bryantville
+http://www.meetup.com/cities/us/ma/buckland/;Buckland;buckland
+http://www.meetup.com/cities/us/ma/burlington/;Burlington;burlington
+http://www.meetup.com/cities/us/ma/buzzards_bay/;Buzzards Bay;buzzards_bay
+http://www.meetup.com/cities/us/ma/byfield/;Byfield;byfield
+http://www.meetup.com/cities/us/ma/cambridge/;Cambridge;cambridge
+http://www.meetup.com/cities/us/ma/canton/;Canton;canton
+http://www.meetup.com/cities/us/ma/carlisle/;Carlisle;carlisle
+http://www.meetup.com/cities/us/ma/carver/;Carver;carver
+http://www.meetup.com/cities/us/ma/cataumet/;Cataumet;cataumet
+http://www.meetup.com/cities/us/ma/centerville/;Centerville;centerville
+http://www.meetup.com/cities/us/ma/charlemont/;Charlemont;charlemont
+http://www.meetup.com/cities/us/ma/charlestown/;Charlestown;charlestown
+http://www.meetup.com/cities/us/ma/charlton/;Charlton;charlton
+http://www.meetup.com/cities/us/ma/charlton_city/;Charlton City;charlton_city
+http://www.meetup.com/cities/us/ma/charlton_depot/;Charlton Depot;charlton_depot
+http://www.meetup.com/cities/us/ma/chartley/;Chartley;chartley
+http://www.meetup.com/cities/us/ma/chatham/;Chatham;chatham
+http://www.meetup.com/cities/us/ma/chelmsford/;Chelmsford;chelmsford
+http://www.meetup.com/cities/us/ma/chelsea/;Chelsea;chelsea
+http://www.meetup.com/cities/us/ma/cherry_valley/;Cherry Valley;cherry_valley
+http://www.meetup.com/cities/us/ma/cheshire/;Cheshire;cheshire
+http://www.meetup.com/cities/us/ma/chester/;Chester;chester
+http://www.meetup.com/cities/us/ma/chesterfield/;Chesterfield;chesterfield
+http://www.meetup.com/cities/us/ma/chestnut_hill/;Chestnut Hill;chestnut_hill
+http://www.meetup.com/cities/us/ma/chicopee/;Chicopee;chicopee
+http://www.meetup.com/cities/us/ma/chilmark/;Chilmark;chilmark
+http://www.meetup.com/cities/us/ma/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/ma/cohasset/;Cohasset;cohasset
+http://www.meetup.com/cities/us/ma/colrain/;Colrain;colrain
+http://www.meetup.com/cities/us/ma/concord/;Concord;concord
+http://www.meetup.com/cities/us/ma/conway/;Conway;conway
+http://www.meetup.com/cities/us/ma/cotuit/;Cotuit;cotuit
+http://www.meetup.com/cities/us/ma/cummaquid/;Cummaquid;cummaquid
+http://www.meetup.com/cities/us/ma/cummington/;Cummington;cummington
+http://www.meetup.com/cities/us/ma/cuttyhunk/;Cuttyhunk;cuttyhunk
+http://www.meetup.com/cities/us/ma/dalton/;Dalton;dalton
+http://www.meetup.com/cities/us/ma/danvers/;Danvers;danvers
+http://www.meetup.com/cities/us/ma/dartmouth/;Dartmouth;dartmouth
+http://www.meetup.com/cities/us/ma/dedham/;Dedham;dedham
+http://www.meetup.com/cities/us/ma/deerfield/;Deerfield;deerfield
+http://www.meetup.com/cities/us/ma/dennis/;Dennis;dennis
+http://www.meetup.com/cities/us/ma/dennis_port/;Dennis Port;dennis_port
+http://www.meetup.com/cities/us/ma/devens/;Devens;devens
+http://www.meetup.com/cities/us/ma/dighton/;Dighton;dighton
+http://www.meetup.com/cities/us/ma/douglas/;Douglas;douglas
+http://www.meetup.com/cities/us/ma/dover/;Dover;dover
+http://www.meetup.com/cities/us/ma/dracut/;Dracut;dracut
+http://www.meetup.com/cities/us/ma/drury/;Drury;drury
+http://www.meetup.com/cities/us/ma/dudley/;Dudley;dudley
+http://www.meetup.com/cities/us/ma/dunstable/;Dunstable;dunstable
+http://www.meetup.com/cities/us/ma/duxbury/;Duxbury;duxbury
+http://www.meetup.com/cities/us/ma/east_boston/;East Boston;east_boston
+http://www.meetup.com/cities/us/ma/east_bridgewater/;East Bridgewater;east_bridgewater
+http://www.meetup.com/cities/us/ma/east_brookfield/;East Brookfield;east_brookfield
+http://www.meetup.com/cities/us/ma/east_dennis/;East Dennis;east_dennis
+http://www.meetup.com/cities/us/ma/east_falmouth/;East Falmouth;east_falmouth
+http://www.meetup.com/cities/us/ma/east_freetown/;East Freetown;east_freetown
+http://www.meetup.com/cities/us/ma/eastham/;Eastham;eastham
+http://www.meetup.com/cities/us/ma/easthampton/;Easthampton;easthampton
+http://www.meetup.com/cities/us/ma/east_longmeadow/;East Longmeadow;east_longmeadow
+http://www.meetup.com/cities/us/ma/east_mansfield/;East Mansfield;east_mansfield
+http://www.meetup.com/cities/us/ma/easton/;Easton;easton
+http://www.meetup.com/cities/us/ma/east_orleans/;East Orleans;east_orleans
+http://www.meetup.com/cities/us/ma/east_otis/;East Otis;east_otis
+http://www.meetup.com/cities/us/ma/east_princeton/;East Princeton;east_princeton
+http://www.meetup.com/cities/us/ma/east_sandwich/;East Sandwich;east_sandwich
+http://www.meetup.com/cities/us/ma/east_taunton/;East Taunton;east_taunton
+http://www.meetup.com/cities/us/ma/east_templeton/;East Templeton;east_templeton
+http://www.meetup.com/cities/us/ma/east_walpole/;East Walpole;east_walpole
+http://www.meetup.com/cities/us/ma/east_wareham/;East Wareham;east_wareham
+http://www.meetup.com/cities/us/ma/east_weymouth/;East Weymouth;east_weymouth
+http://www.meetup.com/cities/us/ma/edgartown/;Edgartown;edgartown
+http://www.meetup.com/cities/us/ma/elmwood/;Elmwood;elmwood
+http://www.meetup.com/cities/us/ma/erving/;Erving;erving
+http://www.meetup.com/cities/us/ma/essex/;Essex;essex
+http://www.meetup.com/cities/us/ma/everett/;Everett;everett
+http://www.meetup.com/cities/us/ma/fairhaven/;Fairhaven;fairhaven
+http://www.meetup.com/cities/us/ma/fall_river/;Fall River;fall_river
+http://www.meetup.com/cities/us/ma/falmouth/;Falmouth;falmouth
+http://www.meetup.com/cities/us/ma/fayville/;Fayville;fayville
+http://www.meetup.com/cities/us/ma/feeding_hills/;Feeding Hills;feeding_hills
+http://www.meetup.com/cities/us/ma/fiskdale/;Fiskdale;fiskdale
+http://www.meetup.com/cities/us/ma/fitchburg/;Fitchburg;fitchburg
+http://www.meetup.com/cities/us/ma/florence/;Florence;florence
+http://www.meetup.com/cities/us/ma/forestdale/;Forestdale;forestdale
+http://www.meetup.com/cities/us/ma/foxboro/;Foxboro;foxboro
+http://www.meetup.com/cities/us/ma/framingham/;Framingham;framingham
+http://www.meetup.com/cities/us/ma/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/ma/gardner/;Gardner;gardner
+http://www.meetup.com/cities/us/ma/georgetown/;Georgetown;georgetown
+http://www.meetup.com/cities/us/ma/gilbertville/;Gilbertville;gilbertville
+http://www.meetup.com/cities/us/ma/gill/;Gill;gill
+http://www.meetup.com/cities/us/ma/glendale/;Glendale;glendale
+http://www.meetup.com/cities/us/ma/gloucester/;Gloucester;gloucester
+http://www.meetup.com/cities/us/ma/goshen/;Goshen;goshen
+http://www.meetup.com/cities/us/ma/grafton/;Grafton;grafton
+http://www.meetup.com/cities/us/ma/granby/;Granby;granby
+http://www.meetup.com/cities/us/ma/granville/;Granville;granville
+http://www.meetup.com/cities/us/ma/great_barrington/;Great Barrington;great_barrington
+http://www.meetup.com/cities/us/ma/greenbush/;Greenbush;greenbush
+http://www.meetup.com/cities/us/ma/greenfield/;Greenfield;greenfield
+http://www.meetup.com/cities/us/ma/green_harbor/;Green Harbor;green_harbor
+http://www.meetup.com/cities/us/ma/groton/;Groton;groton
+http://www.meetup.com/cities/us/ma/groveland/;Groveland;groveland
+http://www.meetup.com/cities/us/ma/hadley/;Hadley;hadley
+http://www.meetup.com/cities/us/ma/halifax/;Halifax;halifax
+http://www.meetup.com/cities/us/ma/hamilton/;Hamilton;hamilton
+http://www.meetup.com/cities/us/ma/hampden/;Hampden;hampden
+http://www.meetup.com/cities/us/ma/hanover/;Hanover;hanover
+http://www.meetup.com/cities/us/ma/hanscom_afb/;Hanscom AFB;hanscom_afb
+http://www.meetup.com/cities/us/ma/hanson/;Hanson;hanson
+http://www.meetup.com/cities/us/ma/hardwick/;Hardwick;hardwick
+http://www.meetup.com/cities/us/ma/harvard/;Harvard;harvard
+http://www.meetup.com/cities/us/ma/harwich/;Harwich;harwich
+http://www.meetup.com/cities/us/ma/harwich_port/;Harwich Port;harwich_port
+http://www.meetup.com/cities/us/ma/hatfield/;Hatfield;hatfield
+http://www.meetup.com/cities/us/ma/hathorne/;Hathorne;hathorne
+http://www.meetup.com/cities/us/ma/haverhill/;Haverhill;haverhill
+http://www.meetup.com/cities/us/ma/haydenville/;Haydenville;haydenville
+http://www.meetup.com/cities/us/ma/heath/;Heath;heath
+http://www.meetup.com/cities/us/ma/hingham/;Hingham;hingham
+http://www.meetup.com/cities/us/ma/hinsdale/;Hinsdale;hinsdale
+http://www.meetup.com/cities/us/ma/holbrook/;Holbrook;holbrook
+http://www.meetup.com/cities/us/ma/holden/;Holden;holden
+http://www.meetup.com/cities/us/ma/holland/;Holland;holland
+http://www.meetup.com/cities/us/ma/holliston/;Holliston;holliston
+http://www.meetup.com/cities/us/ma/holyoke/;Holyoke;holyoke
+http://www.meetup.com/cities/us/ma/hopedale/;Hopedale;hopedale
+http://www.meetup.com/cities/us/ma/hopkinton/;Hopkinton;hopkinton
+http://www.meetup.com/cities/us/ma/housatonic/;Housatonic;housatonic
+http://www.meetup.com/cities/us/ma/hubbardston/;Hubbardston;hubbardston
+http://www.meetup.com/cities/us/ma/hudson/;Hudson;hudson
+http://www.meetup.com/cities/us/ma/hull/;Hull;hull
+http://www.meetup.com/cities/us/ma/humarock/;Humarock;humarock
+http://www.meetup.com/cities/us/ma/huntington/;Huntington;huntington
+http://www.meetup.com/cities/us/ma/hyannis/;Hyannis;hyannis
+http://www.meetup.com/cities/us/ma/hyannis_port/;Hyannis Port;hyannis_port
+http://www.meetup.com/cities/us/ma/hyde_park/;Hyde Park;hyde_park
+http://www.meetup.com/cities/us/ma/indian_orchard/;Indian Orchard;indian_orchard
+http://www.meetup.com/cities/us/ma/ipswich/;Ipswich;ipswich
+http://www.meetup.com/cities/us/ma/jamaica_plain/;Jamaica Plain;jamaica_plain
+http://www.meetup.com/cities/us/ma/jefferson/;Jefferson;jefferson
+http://www.meetup.com/cities/us/ma/kingston/;Kingston;kingston
+http://www.meetup.com/cities/us/ma/lake_pleasant/;Lake Pleasant;lake_pleasant
+http://www.meetup.com/cities/us/ma/lakeville/;Lakeville;lakeville
+http://www.meetup.com/cities/us/ma/lancaster/;Lancaster;lancaster
+http://www.meetup.com/cities/us/ma/lanesboro/;Lanesboro;lanesboro
+http://www.meetup.com/cities/us/ma/lawrence/;Lawrence;lawrence
+http://www.meetup.com/cities/us/ma/lee/;Lee;lee
+http://www.meetup.com/cities/us/ma/leeds/;Leeds;leeds
+http://www.meetup.com/cities/us/ma/leicester/;Leicester;leicester
+http://www.meetup.com/cities/us/ma/lenox/;Lenox;lenox
+http://www.meetup.com/cities/us/ma/lenox_dale/;Lenox Dale;lenox_dale
+http://www.meetup.com/cities/us/ma/leominster/;Leominster;leominster
+http://www.meetup.com/cities/us/ma/leverett/;Leverett;leverett
+http://www.meetup.com/cities/us/ma/lexington/;Lexington;lexington
+http://www.meetup.com/cities/us/ma/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/ma/linwood/;Linwood;linwood
+http://www.meetup.com/cities/us/ma/littleton/;Littleton;littleton
+http://www.meetup.com/cities/us/ma/longmeadow/;Longmeadow;longmeadow
+http://www.meetup.com/cities/us/ma/lowell/;Lowell;lowell
+http://www.meetup.com/cities/us/ma/ludlow/;Ludlow;ludlow
+http://www.meetup.com/cities/us/ma/lunenburg/;Lunenburg;lunenburg
+http://www.meetup.com/cities/us/ma/lynn/;Lynn;lynn
+http://www.meetup.com/cities/us/ma/lynnfield/;Lynnfield;lynnfield
+http://www.meetup.com/cities/us/ma/malden/;Malden;malden
+http://www.meetup.com/cities/us/ma/manchaug/;Manchaug;manchaug
+http://www.meetup.com/cities/us/ma/manchester/;Manchester;manchester
+http://www.meetup.com/cities/us/ma/manomet/;Manomet;manomet
+http://www.meetup.com/cities/us/ma/mansfield/;Mansfield;mansfield
+http://www.meetup.com/cities/us/ma/marblehead/;Marblehead;marblehead
+http://www.meetup.com/cities/us/ma/marion/;Marion;marion
+http://www.meetup.com/cities/us/ma/marlborough/;Marlborough;marlborough
+http://www.meetup.com/cities/us/ma/marshfield/;Marshfield;marshfield
+http://www.meetup.com/cities/us/ma/marshfield_hills/;Marshfield Hills;marshfield_hills
+http://www.meetup.com/cities/us/ma/marstons_mills/;Marstons Mills;marstons_mills
+http://www.meetup.com/cities/us/ma/mashpee/;Mashpee;mashpee
+http://www.meetup.com/cities/us/ma/mattapan/;Mattapan;mattapan
+http://www.meetup.com/cities/us/ma/mattapoisett/;Mattapoisett;mattapoisett
+http://www.meetup.com/cities/us/ma/maynard/;Maynard;maynard
+http://www.meetup.com/cities/us/ma/medfield/;Medfield;medfield
+http://www.meetup.com/cities/us/ma/medford/;Medford;medford
+http://www.meetup.com/cities/us/ma/medway/;Medway;medway
+http://www.meetup.com/cities/us/ma/melrose/;Melrose;melrose
+http://www.meetup.com/cities/us/ma/mendon/;Mendon;mendon
+http://www.meetup.com/cities/us/ma/menemsha/;Menemsha;menemsha
+http://www.meetup.com/cities/us/ma/merrimac/;Merrimac;merrimac
+http://www.meetup.com/cities/us/ma/methuen/;Methuen;methuen
+http://www.meetup.com/cities/us/ma/middleboro/;Middleboro;middleboro
+http://www.meetup.com/cities/us/ma/middlefield/;Middlefield;middlefield
+http://www.meetup.com/cities/us/ma/middleton/;Middleton;middleton
+http://www.meetup.com/cities/us/ma/milford/;Milford;milford
+http://www.meetup.com/cities/us/ma/millbury/;Millbury;millbury
+http://www.meetup.com/cities/us/ma/millers_falls/;Millers Falls;millers_falls
+http://www.meetup.com/cities/us/ma/millis/;Millis;millis
+http://www.meetup.com/cities/us/ma/mill_river/;Mill River;mill_river
+http://www.meetup.com/cities/us/ma/millville/;Millville;millville
+http://www.meetup.com/cities/us/ma/milton/;Milton;milton
+http://www.meetup.com/cities/us/ma/milton_village/;Milton Village;milton_village
+http://www.meetup.com/cities/us/ma/minot/;Minot;minot
+http://www.meetup.com/cities/us/ma/monponsett/;Monponsett;monponsett
+http://www.meetup.com/cities/us/ma/monroe_bridge/;Monroe Bridge;monroe_bridge
+http://www.meetup.com/cities/us/ma/monson/;Monson;monson
+http://www.meetup.com/cities/us/ma/montague/;Montague;montague
+http://www.meetup.com/cities/us/ma/monterey/;Monterey;monterey
+http://www.meetup.com/cities/us/ma/monument_beach/;Monument Beach;monument_beach
+http://www.meetup.com/cities/us/ma/nahant/;Nahant;nahant
+http://www.meetup.com/cities/us/ma/nantucket/;Nantucket;nantucket
+http://www.meetup.com/cities/us/ma/natick/;Natick;natick
+http://www.meetup.com/cities/us/ma/needham/;Needham;needham
+http://www.meetup.com/cities/us/ma/needham_heights/;Needham Heights;needham_heights
+http://www.meetup.com/cities/us/ma/new_bedford/;New Bedford;new_bedford
+http://www.meetup.com/cities/us/ma/new_braintree/;New Braintree;new_braintree
+http://www.meetup.com/cities/us/ma/newbury/;Newbury;newbury
+http://www.meetup.com/cities/us/ma/newburyport/;Newburyport;newburyport
+http://www.meetup.com/cities/us/ma/new_salem/;New Salem;new_salem
+http://www.meetup.com/cities/us/ma/newton/;Newton;newton
+http://www.meetup.com/cities/us/ma/newton_center/;Newton Center;newton_center
+http://www.meetup.com/cities/us/ma/newton_highlands/;Newton Highlands;newton_highlands
+http://www.meetup.com/cities/us/ma/newton_lower_falls/;Newton Lower Falls;newton_lower_falls
+http://www.meetup.com/cities/us/ma/newton_upper_falls/;Newton Upper Falls;newton_upper_falls
+http://www.meetup.com/cities/us/ma/newtonville/;Newtonville;newtonville
+http://www.meetup.com/cities/us/ma/new_town/;New Town;new_town
+http://www.meetup.com/cities/us/ma/nonantum/;Nonantum;nonantum
+http://www.meetup.com/cities/us/ma/norfolk/;Norfolk;norfolk
+http://www.meetup.com/cities/us/ma/north_adams/;North Adams;north_adams
+http://www.meetup.com/cities/us/ma/north_amherst/;North Amherst;north_amherst
+http://www.meetup.com/cities/us/ma/northampton/;Northampton;northampton
+http://www.meetup.com/cities/us/ma/north_andover/;North Andover;north_andover
+http://www.meetup.com/cities/us/ma/north_attleboro/;North Attleboro;north_attleboro
+http://www.meetup.com/cities/us/ma/north_billerica/;North Billerica;north_billerica
+http://www.meetup.com/cities/us/ma/northborough/;Northborough;northborough
+http://www.meetup.com/cities/us/ma/northbridge/;Northbridge;northbridge
+http://www.meetup.com/cities/us/ma/north_brookfield/;North Brookfield;north_brookfield
+http://www.meetup.com/cities/us/ma/north_carver/;North Carver;north_carver
+http://www.meetup.com/cities/us/ma/north_chatham/;North Chatham;north_chatham
+http://www.meetup.com/cities/us/ma/north_chelmsford/;North Chelmsford;north_chelmsford
+http://www.meetup.com/cities/us/ma/north_dartmouth/;North Dartmouth;north_dartmouth
+http://www.meetup.com/cities/us/ma/north_dighton/;North Dighton;north_dighton
+http://www.meetup.com/cities/us/ma/north_eastham/;North Eastham;north_eastham
+http://www.meetup.com/cities/us/ma/north_easton/;North Easton;north_easton
+http://www.meetup.com/cities/us/ma/north_egremont/;North Egremont;north_egremont
+http://www.meetup.com/cities/us/ma/north_falmouth/;North Falmouth;north_falmouth
+http://www.meetup.com/cities/us/ma/northfield/;Northfield;northfield
+http://www.meetup.com/cities/us/ma/north_grafton/;North Grafton;north_grafton
+http://www.meetup.com/cities/us/ma/north_hatfield/;North Hatfield;north_hatfield
+http://www.meetup.com/cities/us/ma/north_marshfield/;North Marshfield;north_marshfield
+http://www.meetup.com/cities/us/ma/north_oxford/;North Oxford;north_oxford
+http://www.meetup.com/cities/us/ma/north_pembroke/;North Pembroke;north_pembroke
+http://www.meetup.com/cities/us/ma/north_reading/;North Reading;north_reading
+http://www.meetup.com/cities/us/ma/north_scituate/;North Scituate;north_scituate
+http://www.meetup.com/cities/us/ma/north_truro/;North Truro;north_truro
+http://www.meetup.com/cities/us/ma/north_uxbridge/;North Uxbridge;north_uxbridge
+http://www.meetup.com/cities/us/ma/north_waltham/;North Waltham;north_waltham
+http://www.meetup.com/cities/us/ma/north_weymouth/;North Weymouth;north_weymouth
+http://www.meetup.com/cities/us/ma/norton/;Norton;norton
+http://www.meetup.com/cities/us/ma/norwell/;Norwell;norwell
+http://www.meetup.com/cities/us/ma/norwood/;Norwood;norwood
+http://www.meetup.com/cities/us/ma/nutting_lake/;Nutting Lake;nutting_lake
+http://www.meetup.com/cities/us/ma/oak_bluffs/;Oak Bluffs;oak_bluffs
+http://www.meetup.com/cities/us/ma/oakham/;Oakham;oakham
+http://www.meetup.com/cities/us/ma/ocean_bluff/;Ocean Bluff;ocean_bluff
+http://www.meetup.com/cities/us/ma/onset/;Onset;onset
+http://www.meetup.com/cities/us/ma/orange/;Orange;orange
+http://www.meetup.com/cities/us/ma/orleans/;Orleans;orleans
+http://www.meetup.com/cities/us/ma/osterville/;Osterville;osterville
+http://www.meetup.com/cities/us/ma/otis/;Otis;otis
+http://www.meetup.com/cities/us/ma/oxford/;Oxford;oxford
+http://www.meetup.com/cities/us/ma/palmer/;Palmer;palmer
+http://www.meetup.com/cities/us/ma/paxton/;Paxton;paxton
+http://www.meetup.com/cities/us/ma/peabody/;Peabody;peabody
+http://www.meetup.com/cities/us/ma/pembroke/;Pembroke;pembroke
+http://www.meetup.com/cities/us/ma/pepperell/;Pepperell;pepperell
+http://www.meetup.com/cities/us/ma/petersham/;Petersham;petersham
+http://www.meetup.com/cities/us/ma/pinehurst/;Pinehurst;pinehurst
+http://www.meetup.com/cities/us/ma/pittsfield/;Pittsfield;pittsfield
+http://www.meetup.com/cities/us/ma/plainfield/;Plainfield;plainfield
+http://www.meetup.com/cities/us/ma/plainville/;Plainville;plainville
+http://www.meetup.com/cities/us/ma/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/ma/plympton/;Plympton;plympton
+http://www.meetup.com/cities/us/ma/pocasset/;Pocasset;pocasset
+http://www.meetup.com/cities/us/ma/prides_crossing/;Prides Crossing;prides_crossing
+http://www.meetup.com/cities/us/ma/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/ma/provincetown/;Provincetown;provincetown
+http://www.meetup.com/cities/us/ma/quincy/;Quincy;quincy
+http://www.meetup.com/cities/us/ma/randolph/;Randolph;randolph
+http://www.meetup.com/cities/us/ma/raynham/;Raynham;raynham
+http://www.meetup.com/cities/us/ma/raynham_center/;Raynham Center;raynham_center
+http://www.meetup.com/cities/us/ma/reading/;Reading;reading
+http://www.meetup.com/cities/us/ma/readville/;Readville;readville
+http://www.meetup.com/cities/us/ma/rehoboth/;Rehoboth;rehoboth
+http://www.meetup.com/cities/us/ma/revere/;Revere;revere
+http://www.meetup.com/cities/us/ma/richmond/;Richmond;richmond
+http://www.meetup.com/cities/us/ma/rochdale/;Rochdale;rochdale
+http://www.meetup.com/cities/us/ma/rochester/;Rochester;rochester
+http://www.meetup.com/cities/us/ma/rockland/;Rockland;rockland
+http://www.meetup.com/cities/us/ma/rockport/;Rockport;rockport
+http://www.meetup.com/cities/us/ma/roslindale/;Roslindale;roslindale
+http://www.meetup.com/cities/us/ma/rowe/;Rowe;rowe
+http://www.meetup.com/cities/us/ma/rowley/;Rowley;rowley
+http://www.meetup.com/cities/us/ma/royalston/;Royalston;royalston
+http://www.meetup.com/cities/us/ma/russell/;Russell;russell
+http://www.meetup.com/cities/us/ma/rutland/;Rutland;rutland
+http://www.meetup.com/cities/us/ma/sagamore/;Sagamore;sagamore
+http://www.meetup.com/cities/us/ma/sagamore_beach/;Sagamore Beach;sagamore_beach
+http://www.meetup.com/cities/us/ma/salem/;Salem;salem
+http://www.meetup.com/cities/us/ma/salisbury/;Salisbury;salisbury
+http://www.meetup.com/cities/us/ma/sandisfield/;Sandisfield;sandisfield
+http://www.meetup.com/cities/us/ma/sandwich/;Sandwich;sandwich
+http://www.meetup.com/cities/us/ma/saugus/;Saugus;saugus
+http://www.meetup.com/cities/us/ma/savoy/;Savoy;savoy
+http://www.meetup.com/cities/us/ma/scituate/;Scituate;scituate
+http://www.meetup.com/cities/us/ma/seekonk/;Seekonk;seekonk
+http://www.meetup.com/cities/us/ma/sharon/;Sharon;sharon
+http://www.meetup.com/cities/us/ma/sheffield/;Sheffield;sheffield
+http://www.meetup.com/cities/us/ma/shelburne_falls/;Shelburne Falls;shelburne_falls
+http://www.meetup.com/cities/us/ma/sheldonville/;Sheldonville;sheldonville
+http://www.meetup.com/cities/us/ma/sherborn/;Sherborn;sherborn
+http://www.meetup.com/cities/us/ma/shirley/;Shirley;shirley
+http://www.meetup.com/cities/us/ma/shrewsbury/;Shrewsbury;shrewsbury
+http://www.meetup.com/cities/us/ma/shutesbury/;Shutesbury;shutesbury
+http://www.meetup.com/cities/us/ma/siasconset/;Siasconset;siasconset
+http://www.meetup.com/cities/us/ma/silver_beach/;Silver Beach;silver_beach
+http://www.meetup.com/cities/us/ma/somerset/;Somerset;somerset
+http://www.meetup.com/cities/us/ma/somerville/;Somerville;somerville
+http://www.meetup.com/cities/us/ma/southampton/;Southampton;southampton
+http://www.meetup.com/cities/us/ma/south_barre/;South Barre;south_barre
+http://www.meetup.com/cities/us/ma/southborough/;Southborough;southborough
+http://www.meetup.com/cities/us/ma/southbridge/;Southbridge;southbridge
+http://www.meetup.com/cities/us/ma/south_carver/;South Carver;south_carver
+http://www.meetup.com/cities/us/ma/south_chatham/;South Chatham;south_chatham
+http://www.meetup.com/cities/us/ma/south_dartmouth/;South Dartmouth;south_dartmouth
+http://www.meetup.com/cities/us/ma/south_deerfield/;South Deerfield;south_deerfield
+http://www.meetup.com/cities/us/ma/south_dennis/;South Dennis;south_dennis
+http://www.meetup.com/cities/us/ma/south_easton/;South Easton;south_easton
+http://www.meetup.com/cities/us/ma/south_egremont/;South Egremont;south_egremont
+http://www.meetup.com/cities/us/ma/southfield/;Southfield;southfield
+http://www.meetup.com/cities/us/ma/south_grafton/;South Grafton;south_grafton
+http://www.meetup.com/cities/us/ma/south_hadley/;South Hadley;south_hadley
+http://www.meetup.com/cities/us/ma/south_hamilton/;South Hamilton;south_hamilton
+http://www.meetup.com/cities/us/ma/south_harwich/;South Harwich;south_harwich
+http://www.meetup.com/cities/us/ma/south_lancaster/;South Lancaster;south_lancaster
+http://www.meetup.com/cities/us/ma/south_lee/;South Lee;south_lee
+http://www.meetup.com/cities/us/ma/south_orleans/;South Orleans;south_orleans
+http://www.meetup.com/cities/us/ma/south_walpole/;South Walpole;south_walpole
+http://www.meetup.com/cities/us/ma/south_wellfleet/;South Wellfleet;south_wellfleet
+http://www.meetup.com/cities/us/ma/south_weymouth/;South Weymouth;south_weymouth
+http://www.meetup.com/cities/us/ma/southwick/;Southwick;southwick
+http://www.meetup.com/cities/us/ma/south_yarmouth/;South Yarmouth;south_yarmouth
+http://www.meetup.com/cities/us/ma/spencer/;Spencer;spencer
+http://www.meetup.com/cities/us/ma/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/ma/sterling/;Sterling;sterling
+http://www.meetup.com/cities/us/ma/still_river/;Still River;still_river
+http://www.meetup.com/cities/us/ma/stockbridge/;Stockbridge;stockbridge
+http://www.meetup.com/cities/us/ma/stoneham/;Stoneham;stoneham
+http://www.meetup.com/cities/us/ma/stoughton/;Stoughton;stoughton
+http://www.meetup.com/cities/us/ma/stow/;Stow;stow
+http://www.meetup.com/cities/us/ma/sturbridge/;Sturbridge;sturbridge
+http://www.meetup.com/cities/us/ma/sudbury/;Sudbury;sudbury
+http://www.meetup.com/cities/us/ma/sunderland/;Sunderland;sunderland
+http://www.meetup.com/cities/us/ma/sutton/;Sutton;sutton
+http://www.meetup.com/cities/us/ma/swampscott/;Swampscott;swampscott
+http://www.meetup.com/cities/us/ma/swansea/;Swansea;swansea
+http://www.meetup.com/cities/us/ma/taunton/;Taunton;taunton
+http://www.meetup.com/cities/us/ma/templeton/;Templeton;templeton
+http://www.meetup.com/cities/us/ma/tewksbury/;Tewksbury;tewksbury
+http://www.meetup.com/cities/us/ma/thorndike/;Thorndike;thorndike
+http://www.meetup.com/cities/us/ma/three_rivers/;Three Rivers;three_rivers
+http://www.meetup.com/cities/us/ma/topsfield/;Topsfield;topsfield
+http://www.meetup.com/cities/us/ma/townsend/;Townsend;townsend
+http://www.meetup.com/cities/us/ma/truro/;Truro;truro
+http://www.meetup.com/cities/us/ma/turners_falls/;Turners Falls;turners_falls
+http://www.meetup.com/cities/us/ma/tyngsboro/;Tyngsboro;tyngsboro
+http://www.meetup.com/cities/us/ma/tyringham/;Tyringham;tyringham
+http://www.meetup.com/cities/us/ma/upton/;Upton;upton
+http://www.meetup.com/cities/us/ma/uxbridge/;Uxbridge;uxbridge
+http://www.meetup.com/cities/us/ma/village_of_nagog_woods/;Village of Nagog Woods;village_of_nagog_woods
+http://www.meetup.com/cities/us/ma/vineyard_haven/;Vineyard Haven;vineyard_haven
+http://www.meetup.com/cities/us/ma/waban/;Waban;waban
+http://www.meetup.com/cities/us/ma/wakefield/;Wakefield;wakefield
+http://www.meetup.com/cities/us/ma/wales/;Wales;wales
+http://www.meetup.com/cities/us/ma/walpole/;Walpole;walpole
+http://www.meetup.com/cities/us/ma/waltham/;Waltham;waltham
+http://www.meetup.com/cities/us/ma/ware/;Ware;ware
+http://www.meetup.com/cities/us/ma/wareham/;Wareham;wareham
+http://www.meetup.com/cities/us/ma/warren/;Warren;warren
+http://www.meetup.com/cities/us/ma/warwick/;Warwick;warwick
+http://www.meetup.com/cities/us/ma/watertown/;Watertown;watertown
+http://www.meetup.com/cities/us/ma/waverley/;Waverley;waverley
+http://www.meetup.com/cities/us/ma/wayland/;Wayland;wayland
+http://www.meetup.com/cities/us/ma/webster/;Webster;webster
+http://www.meetup.com/cities/us/ma/wellesley/;Wellesley;wellesley
+http://www.meetup.com/cities/us/ma/wellesley_hills/;Wellesley Hills;wellesley_hills
+http://www.meetup.com/cities/us/ma/wellfleet/;Wellfleet;wellfleet
+http://www.meetup.com/cities/us/ma/wendell/;Wendell;wendell
+http://www.meetup.com/cities/us/ma/wendell_depot/;Wendell Depot;wendell_depot
+http://www.meetup.com/cities/us/ma/wenham/;Wenham;wenham
+http://www.meetup.com/cities/us/ma/west_barnstable/;West Barnstable;west_barnstable
+http://www.meetup.com/cities/us/ma/westborough/;Westborough;westborough
+http://www.meetup.com/cities/us/ma/west_boxford/;West Boxford;west_boxford
+http://www.meetup.com/cities/us/ma/west_boylston/;West Boylston;west_boylston
+http://www.meetup.com/cities/us/ma/west_bridgewater/;West Bridgewater;west_bridgewater
+http://www.meetup.com/cities/us/ma/west_brookfield/;West Brookfield;west_brookfield
+http://www.meetup.com/cities/us/ma/west_chatham/;West Chatham;west_chatham
+http://www.meetup.com/cities/us/ma/west_chesterfield/;West Chesterfield;west_chesterfield
+http://www.meetup.com/cities/us/ma/west_chop/;West Chop;west_chop
+http://www.meetup.com/cities/us/ma/west_dennis/;West Dennis;west_dennis
+http://www.meetup.com/cities/us/ma/west_falmouth/;West Falmouth;west_falmouth
+http://www.meetup.com/cities/us/ma/westfield/;Westfield;westfield
+http://www.meetup.com/cities/us/ma/westford/;Westford;westford
+http://www.meetup.com/cities/us/ma/west_groton/;West Groton;west_groton
+http://www.meetup.com/cities/us/ma/west_harwich/;West Harwich;west_harwich
+http://www.meetup.com/cities/us/ma/west_hatfield/;West Hatfield;west_hatfield
+http://www.meetup.com/cities/us/ma/west_hyannisport/;West Hyannisport;west_hyannisport
+http://www.meetup.com/cities/us/ma/west_medford/;West Medford;west_medford
+http://www.meetup.com/cities/us/ma/west_millbury/;West Millbury;west_millbury
+http://www.meetup.com/cities/us/ma/westminster/;Westminster;westminster
+http://www.meetup.com/cities/us/ma/west_newbury/;West Newbury;west_newbury
+http://www.meetup.com/cities/us/ma/west_newton/;West Newton;west_newton
+http://www.meetup.com/cities/us/ma/weston/;Weston;weston
+http://www.meetup.com/cities/us/ma/westport/;Westport;westport
+http://www.meetup.com/cities/us/ma/westport_point/;Westport Point;westport_point
+http://www.meetup.com/cities/us/ma/west_roxbury/;West Roxbury;west_roxbury
+http://www.meetup.com/cities/us/ma/west_springfield/;West Springfield;west_springfield
+http://www.meetup.com/cities/us/ma/west_stockbridge/;West Stockbridge;west_stockbridge
+http://www.meetup.com/cities/us/ma/west_tisbury/;West Tisbury;west_tisbury
+http://www.meetup.com/cities/us/ma/west_townsend/;West Townsend;west_townsend
+http://www.meetup.com/cities/us/ma/west_wareham/;West Wareham;west_wareham
+http://www.meetup.com/cities/us/ma/west_warren/;West Warren;west_warren
+http://www.meetup.com/cities/us/ma/westwood/;Westwood;westwood
+http://www.meetup.com/cities/us/ma/west_yarmouth/;West Yarmouth;west_yarmouth
+http://www.meetup.com/cities/us/ma/weymouth/;Weymouth;weymouth
+http://www.meetup.com/cities/us/ma/whately/;Whately;whately
+http://www.meetup.com/cities/us/ma/wheelwright/;Wheelwright;wheelwright
+http://www.meetup.com/cities/us/ma/white_horse_beach/;White Horse Beach;white_horse_beach
+http://www.meetup.com/cities/us/ma/whitinsville/;Whitinsville;whitinsville
+http://www.meetup.com/cities/us/ma/whitman/;Whitman;whitman
+http://www.meetup.com/cities/us/ma/wilbraham/;Wilbraham;wilbraham
+http://www.meetup.com/cities/us/ma/williamsburg/;Williamsburg;williamsburg
+http://www.meetup.com/cities/us/ma/williamstown/;Williamstown;williamstown
+http://www.meetup.com/cities/us/ma/wilmington/;Wilmington;wilmington
+http://www.meetup.com/cities/us/ma/winchendon/;Winchendon;winchendon
+http://www.meetup.com/cities/us/ma/winchendon_springs/;Winchendon Springs;winchendon_springs
+http://www.meetup.com/cities/us/ma/winchester/;Winchester;winchester
+http://www.meetup.com/cities/us/ma/windsor/;Windsor;windsor
+http://www.meetup.com/cities/us/ma/winthrop/;Winthrop;winthrop
+http://www.meetup.com/cities/us/ma/woburn/;Woburn;woburn
+http://www.meetup.com/cities/us/ma/woods_hole/;Woods Hole;woods_hole
+http://www.meetup.com/cities/us/ma/woodville/;Woodville;woodville
+http://www.meetup.com/cities/us/ma/worcester/;Worcester;worcester
+http://www.meetup.com/cities/us/ma/woronoco/;Woronoco;woronoco
+http://www.meetup.com/cities/us/ma/worthington/;Worthington;worthington
+http://www.meetup.com/cities/us/ma/wrentham/;Wrentham;wrentham
+http://www.meetup.com/cities/us/ma/yarmouth_port/;Yarmouth Port;yarmouth_port

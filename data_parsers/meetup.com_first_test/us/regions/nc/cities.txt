@@ -1,0 +1,761 @@
+http://www.meetup.com/cities/us/nc/aberdeen/;Aberdeen;aberdeen
+http://www.meetup.com/cities/us/nc/advance/;Advance;advance
+http://www.meetup.com/cities/us/nc/ahoskie/;Ahoskie;ahoskie
+http://www.meetup.com/cities/us/nc/alamance/;Alamance;alamance
+http://www.meetup.com/cities/us/nc/albemarle/;Albemarle;albemarle
+http://www.meetup.com/cities/us/nc/albertson/;Albertson;albertson
+http://www.meetup.com/cities/us/nc/alexander/;Alexander;alexander
+http://www.meetup.com/cities/us/nc/alexis/;Alexis;alexis
+http://www.meetup.com/cities/us/nc/alliance/;Alliance;alliance
+http://www.meetup.com/cities/us/nc/almond/;Almond;almond
+http://www.meetup.com/cities/us/nc/altamahaw/;Altamahaw;altamahaw
+http://www.meetup.com/cities/us/nc/andrews/;Andrews;andrews
+http://www.meetup.com/cities/us/nc/angier/;Angier;angier
+http://www.meetup.com/cities/us/nc/ansonville/;Ansonville;ansonville
+http://www.meetup.com/cities/us/nc/apex/;Apex;apex
+http://www.meetup.com/cities/us/nc/arapahoe/;Arapahoe;arapahoe
+http://www.meetup.com/cities/us/nc/ararat/;Ararat;ararat
+http://www.meetup.com/cities/us/nc/arden/;Arden;arden
+http://www.meetup.com/cities/us/nc/ash/;Ash;ash
+http://www.meetup.com/cities/us/nc/asheboro/;Asheboro;asheboro
+http://www.meetup.com/cities/us/nc/asheville/;Asheville;asheville
+http://www.meetup.com/cities/us/nc/atkinson/;Atkinson;atkinson
+http://www.meetup.com/cities/us/nc/atlantic/;Atlantic;atlantic
+http://www.meetup.com/cities/us/nc/atlantic_beach/;Atlantic Beach;atlantic_beach
+http://www.meetup.com/cities/us/nc/aulander/;Aulander;aulander
+http://www.meetup.com/cities/us/nc/aurora/;Aurora;aurora
+http://www.meetup.com/cities/us/nc/autryville/;Autryville;autryville
+http://www.meetup.com/cities/us/nc/avon/;Avon;avon
+http://www.meetup.com/cities/us/nc/ayden/;Ayden;ayden
+http://www.meetup.com/cities/us/nc/aydlett/;Aydlett;aydlett
+http://www.meetup.com/cities/us/nc/badin/;Badin;badin
+http://www.meetup.com/cities/us/nc/bahama/;Bahama;bahama
+http://www.meetup.com/cities/us/nc/bailey/;Bailey;bailey
+http://www.meetup.com/cities/us/nc/bakersville/;Bakersville;bakersville
+http://www.meetup.com/cities/us/nc/balsam/;Balsam;balsam
+http://www.meetup.com/cities/us/nc/balsam_grove/;Balsam Grove;balsam_grove
+http://www.meetup.com/cities/us/nc/banner_elk/;Banner Elk;banner_elk
+http://www.meetup.com/cities/us/nc/barco/;Barco;barco
+http://www.meetup.com/cities/us/nc/barium_springs/;Barium Springs;barium_springs
+http://www.meetup.com/cities/us/nc/barnardsville/;Barnardsville;barnardsville
+http://www.meetup.com/cities/us/nc/barnesville/;Barnesville;barnesville
+http://www.meetup.com/cities/us/nc/bat_cave/;Bat Cave;bat_cave
+http://www.meetup.com/cities/us/nc/bath/;Bath;bath
+http://www.meetup.com/cities/us/nc/battleboro/;Battleboro;battleboro
+http://www.meetup.com/cities/us/nc/bayboro/;Bayboro;bayboro
+http://www.meetup.com/cities/us/nc/bear_creek/;Bear Creek;bear_creek
+http://www.meetup.com/cities/us/nc/beaufort/;Beaufort;beaufort
+http://www.meetup.com/cities/us/nc/belews_creek/;Belews Creek;belews_creek
+http://www.meetup.com/cities/us/nc/belhaven/;Belhaven;belhaven
+http://www.meetup.com/cities/us/nc/bellarthur/;Bellarthur;bellarthur
+http://www.meetup.com/cities/us/nc/belmont/;Belmont;belmont
+http://www.meetup.com/cities/us/nc/belvidere/;Belvidere;belvidere
+http://www.meetup.com/cities/us/nc/bennett/;Bennett;bennett
+http://www.meetup.com/cities/us/nc/benson/;Benson;benson
+http://www.meetup.com/cities/us/nc/bessemer_city/;Bessemer City;bessemer_city
+http://www.meetup.com/cities/us/nc/bethania/;Bethania;bethania
+http://www.meetup.com/cities/us/nc/bethel/;Bethel;bethel
+http://www.meetup.com/cities/us/nc/beulaville/;Beulaville;beulaville
+http://www.meetup.com/cities/us/nc/biscoe/;Biscoe;biscoe
+http://www.meetup.com/cities/us/nc/black_creek/;Black Creek;black_creek
+http://www.meetup.com/cities/us/nc/black_mountain/;Black Mountain;black_mountain
+http://www.meetup.com/cities/us/nc/bladenboro/;Bladenboro;bladenboro
+http://www.meetup.com/cities/us/nc/blanch/;Blanch;blanch
+http://www.meetup.com/cities/us/nc/blounts_creek/;Blounts Creek;blounts_creek
+http://www.meetup.com/cities/us/nc/blowing_rock/;Blowing Rock;blowing_rock
+http://www.meetup.com/cities/us/nc/boiling_springs/;Boiling Springs;boiling_springs
+http://www.meetup.com/cities/us/nc/bolivia/;Bolivia;bolivia
+http://www.meetup.com/cities/us/nc/bolton/;Bolton;bolton
+http://www.meetup.com/cities/us/nc/bonlee/;Bonlee;bonlee
+http://www.meetup.com/cities/us/nc/boomer/;Boomer;boomer
+http://www.meetup.com/cities/us/nc/boone/;Boone;boone
+http://www.meetup.com/cities/us/nc/boonville/;Boonville;boonville
+http://www.meetup.com/cities/us/nc/bostic/;Bostic;bostic
+http://www.meetup.com/cities/us/nc/brasstown/;Brasstown;brasstown
+http://www.meetup.com/cities/us/nc/brevard/;Brevard;brevard
+http://www.meetup.com/cities/us/nc/bridgeton/;Bridgeton;bridgeton
+http://www.meetup.com/cities/us/nc/broadway/;Broadway;broadway
+http://www.meetup.com/cities/us/nc/browns_summit/;Browns Summit;browns_summit
+http://www.meetup.com/cities/us/nc/brunswick/;Brunswick;brunswick
+http://www.meetup.com/cities/us/nc/bryson_city/;Bryson City;bryson_city
+http://www.meetup.com/cities/us/nc/buies_creek/;Buies Creek;buies_creek
+http://www.meetup.com/cities/us/nc/bullock/;Bullock;bullock
+http://www.meetup.com/cities/us/nc/bunn/;Bunn;bunn
+http://www.meetup.com/cities/us/nc/bunnlevel/;Bunnlevel;bunnlevel
+http://www.meetup.com/cities/us/nc/burgaw/;Burgaw;burgaw
+http://www.meetup.com/cities/us/nc/burlington/;Burlington;burlington
+http://www.meetup.com/cities/us/nc/burnsville/;Burnsville;burnsville
+http://www.meetup.com/cities/us/nc/butner/;Butner;butner
+http://www.meetup.com/cities/us/nc/buxton/;Buxton;buxton
+http://www.meetup.com/cities/us/nc/bynum/;Bynum;bynum
+http://www.meetup.com/cities/us/nc/calabash/;Calabash;calabash
+http://www.meetup.com/cities/us/nc/calypso/;Calypso;calypso
+http://www.meetup.com/cities/us/nc/camden/;Camden;camden
+http://www.meetup.com/cities/us/nc/cameron/;Cameron;cameron
+http://www.meetup.com/cities/us/nc/camp_lejeune/;Camp Lejeune;camp_lejeune
+http://www.meetup.com/cities/us/nc/candler/;Candler;candler
+http://www.meetup.com/cities/us/nc/candor/;Candor;candor
+http://www.meetup.com/cities/us/nc/canton/;Canton;canton
+http://www.meetup.com/cities/us/nc/caroleen/;Caroleen;caroleen
+http://www.meetup.com/cities/us/nc/carolina_beach/;Carolina Beach;carolina_beach
+http://www.meetup.com/cities/us/nc/carrboro/;Carrboro;carrboro
+http://www.meetup.com/cities/us/nc/carthage/;Carthage;carthage
+http://www.meetup.com/cities/us/nc/cary/;Cary;cary
+http://www.meetup.com/cities/us/nc/casar/;Casar;casar
+http://www.meetup.com/cities/us/nc/cashiers/;Cashiers;cashiers
+http://www.meetup.com/cities/us/nc/castalia/;Castalia;castalia
+http://www.meetup.com/cities/us/nc/castle_hayne/;Castle Hayne;castle_hayne
+http://www.meetup.com/cities/us/nc/catawba/;Catawba;catawba
+http://www.meetup.com/cities/us/nc/cedar_falls/;Cedar Falls;cedar_falls
+http://www.meetup.com/cities/us/nc/cedar_grove/;Cedar Grove;cedar_grove
+http://www.meetup.com/cities/us/nc/cedar_island/;Cedar Island;cedar_island
+http://www.meetup.com/cities/us/nc/cedar_mountain/;Cedar Mountain;cedar_mountain
+http://www.meetup.com/cities/us/nc/cerro_gordo/;Cerro Gordo;cerro_gordo
+http://www.meetup.com/cities/us/nc/chadbourn/;Chadbourn;chadbourn
+http://www.meetup.com/cities/us/nc/chapel_hill/;Chapel Hill;chapel_hill
+http://www.meetup.com/cities/us/nc/charlotte/;Charlotte;charlotte
+http://www.meetup.com/cities/us/nc/cherokee/;Cherokee;cherokee
+http://www.meetup.com/cities/us/nc/cherry_point/;Cherry Point;cherry_point
+http://www.meetup.com/cities/us/nc/cherryville/;Cherryville;cherryville
+http://www.meetup.com/cities/us/nc/chimney_rock/;Chimney Rock;chimney_rock
+http://www.meetup.com/cities/us/nc/china_grove/;China Grove;china_grove
+http://www.meetup.com/cities/us/nc/chinquapin/;Chinquapin;chinquapin
+http://www.meetup.com/cities/us/nc/chocowinity/;Chocowinity;chocowinity
+http://www.meetup.com/cities/us/nc/claremont/;Claremont;claremont
+http://www.meetup.com/cities/us/nc/clarendon/;Clarendon;clarendon
+http://www.meetup.com/cities/us/nc/clarkton/;Clarkton;clarkton
+http://www.meetup.com/cities/us/nc/clayton/;Clayton;clayton
+http://www.meetup.com/cities/us/nc/clemmons/;Clemmons;clemmons
+http://www.meetup.com/cities/us/nc/cleveland/;Cleveland;cleveland
+http://www.meetup.com/cities/us/nc/cliffside/;Cliffside;cliffside
+http://www.meetup.com/cities/us/nc/climax/;Climax;climax
+http://www.meetup.com/cities/us/nc/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/nc/clyde/;Clyde;clyde
+http://www.meetup.com/cities/us/nc/coats/;Coats;coats
+http://www.meetup.com/cities/us/nc/cofield/;Cofield;cofield
+http://www.meetup.com/cities/us/nc/coinjock/;Coinjock;coinjock
+http://www.meetup.com/cities/us/nc/colerain/;Colerain;colerain
+http://www.meetup.com/cities/us/nc/colfax/;Colfax;colfax
+http://www.meetup.com/cities/us/nc/collettsville/;Collettsville;collettsville
+http://www.meetup.com/cities/us/nc/columbia/;Columbia;columbia
+http://www.meetup.com/cities/us/nc/columbus/;Columbus;columbus
+http://www.meetup.com/cities/us/nc/comfort/;Comfort;comfort
+http://www.meetup.com/cities/us/nc/como/;Como;como
+http://www.meetup.com/cities/us/nc/concord/;Concord;concord
+http://www.meetup.com/cities/us/nc/conetoe/;Conetoe;conetoe
+http://www.meetup.com/cities/us/nc/connellys_springs/;Connellys Springs;connellys_springs
+http://www.meetup.com/cities/us/nc/conover/;Conover;conover
+http://www.meetup.com/cities/us/nc/conway/;Conway;conway
+http://www.meetup.com/cities/us/nc/cooleemee/;Cooleemee;cooleemee
+http://www.meetup.com/cities/us/nc/corapeake/;Corapeake;corapeake
+http://www.meetup.com/cities/us/nc/cordova/;Cordova;cordova
+http://www.meetup.com/cities/us/nc/cornelius/;Cornelius;cornelius
+http://www.meetup.com/cities/us/nc/corolla/;Corolla;corolla
+http://www.meetup.com/cities/us/nc/council/;Council;council
+http://www.meetup.com/cities/us/nc/cove_city/;Cove City;cove_city
+http://www.meetup.com/cities/us/nc/cramerton/;Cramerton;cramerton
+http://www.meetup.com/cities/us/nc/creedmoor/;Creedmoor;creedmoor
+http://www.meetup.com/cities/us/nc/creston/;Creston;creston
+http://www.meetup.com/cities/us/nc/creswell/;Creswell;creswell
+http://www.meetup.com/cities/us/nc/crossnore/;Crossnore;crossnore
+http://www.meetup.com/cities/us/nc/crouse/;Crouse;crouse
+http://www.meetup.com/cities/us/nc/crumpler/;Crumpler;crumpler
+http://www.meetup.com/cities/us/nc/culberson/;Culberson;culberson
+http://www.meetup.com/cities/us/nc/cullowhee/;Cullowhee;cullowhee
+http://www.meetup.com/cities/us/nc/cumberland/;Cumberland;cumberland
+http://www.meetup.com/cities/us/nc/cumnock/;Cumnock;cumnock
+http://www.meetup.com/cities/us/nc/currie/;Currie;currie
+http://www.meetup.com/cities/us/nc/currituck/;Currituck;currituck
+http://www.meetup.com/cities/us/nc/dallas/;Dallas;dallas
+http://www.meetup.com/cities/us/nc/dana/;Dana;dana
+http://www.meetup.com/cities/us/nc/danbury/;Danbury;danbury
+http://www.meetup.com/cities/us/nc/davidson/;Davidson;davidson
+http://www.meetup.com/cities/us/nc/davis/;Davis;davis
+http://www.meetup.com/cities/us/nc/deep_gap/;Deep Gap;deep_gap
+http://www.meetup.com/cities/us/nc/deep_run/;Deep Run;deep_run
+http://www.meetup.com/cities/us/nc/delco/;Delco;delco
+http://www.meetup.com/cities/us/nc/denton/;Denton;denton
+http://www.meetup.com/cities/us/nc/denver/;Denver;denver
+http://www.meetup.com/cities/us/nc/dillsboro/;Dillsboro;dillsboro
+http://www.meetup.com/cities/us/nc/dobson/;Dobson;dobson
+http://www.meetup.com/cities/us/nc/dover/;Dover;dover
+http://www.meetup.com/cities/us/nc/drexel/;Drexel;drexel
+http://www.meetup.com/cities/us/nc/dublin/;Dublin;dublin
+http://www.meetup.com/cities/us/nc/dudley/;Dudley;dudley
+http://www.meetup.com/cities/us/nc/dunn/;Dunn;dunn
+http://www.meetup.com/cities/us/nc/durants_neck/;Durants Neck;durants_neck
+http://www.meetup.com/cities/us/nc/durham/;Durham;durham
+http://www.meetup.com/cities/us/nc/eagle_springs/;Eagle Springs;eagle_springs
+http://www.meetup.com/cities/us/nc/earl/;Earl;earl
+http://www.meetup.com/cities/us/nc/east_bend/;East Bend;east_bend
+http://www.meetup.com/cities/us/nc/east_flat_rock/;East Flat Rock;east_flat_rock
+http://www.meetup.com/cities/us/nc/east_spencer/;East Spencer;east_spencer
+http://www.meetup.com/cities/us/nc/eden/;Eden;eden
+http://www.meetup.com/cities/us/nc/edenton/;Edenton;edenton
+http://www.meetup.com/cities/us/nc/edneyville/;Edneyville;edneyville
+http://www.meetup.com/cities/us/nc/edward/;Edward;edward
+http://www.meetup.com/cities/us/nc/efland/;Efland;efland
+http://www.meetup.com/cities/us/nc/elizabeth_city/;Elizabeth City;elizabeth_city
+http://www.meetup.com/cities/us/nc/elizabethtown/;Elizabethtown;elizabethtown
+http://www.meetup.com/cities/us/nc/elkin/;Elkin;elkin
+http://www.meetup.com/cities/us/nc/elk_park/;Elk Park;elk_park
+http://www.meetup.com/cities/us/nc/ellenboro/;Ellenboro;ellenboro
+http://www.meetup.com/cities/us/nc/ellerbe/;Ellerbe;ellerbe
+http://www.meetup.com/cities/us/nc/elm_city/;Elm City;elm_city
+http://www.meetup.com/cities/us/nc/elon/;Elon;elon
+http://www.meetup.com/cities/us/nc/emerald_isle/;Emerald Isle;emerald_isle
+http://www.meetup.com/cities/us/nc/enfield/;Enfield;enfield
+http://www.meetup.com/cities/us/nc/engelhard/;Engelhard;engelhard
+http://www.meetup.com/cities/us/nc/enka/;Enka;enka
+http://www.meetup.com/cities/us/nc/ennice/;Ennice;ennice
+http://www.meetup.com/cities/us/nc/ernul/;Ernul;ernul
+http://www.meetup.com/cities/us/nc/erwin/;Erwin;erwin
+http://www.meetup.com/cities/us/nc/ether/;Ether;ether
+http://www.meetup.com/cities/us/nc/etowah/;Etowah;etowah
+http://www.meetup.com/cities/us/nc/eure/;Eure;eure
+http://www.meetup.com/cities/us/nc/everetts/;Everetts;everetts
+http://www.meetup.com/cities/us/nc/evergreen/;Evergreen;evergreen
+http://www.meetup.com/cities/us/nc/fair_bluff/;Fair Bluff;fair_bluff
+http://www.meetup.com/cities/us/nc/fairfield/;Fairfield;fairfield
+http://www.meetup.com/cities/us/nc/fairmont/;Fairmont;fairmont
+http://www.meetup.com/cities/us/nc/fairview/;Fairview;fairview
+http://www.meetup.com/cities/us/nc/faison/;Faison;faison
+http://www.meetup.com/cities/us/nc/faith/;Faith;faith
+http://www.meetup.com/cities/us/nc/falcon/;Falcon;falcon
+http://www.meetup.com/cities/us/nc/falkland/;Falkland;falkland
+http://www.meetup.com/cities/us/nc/fallston/;Fallston;fallston
+http://www.meetup.com/cities/us/nc/farmville/;Farmville;farmville
+http://www.meetup.com/cities/us/nc/fayetteville/;Fayetteville;fayetteville
+http://www.meetup.com/cities/us/nc/ferguson/;Ferguson;ferguson
+http://www.meetup.com/cities/us/nc/flat_rock/;Flat Rock;flat_rock
+http://www.meetup.com/cities/us/nc/fleetwood/;Fleetwood;fleetwood
+http://www.meetup.com/cities/us/nc/fletcher/;Fletcher;fletcher
+http://www.meetup.com/cities/us/nc/fontana_dam/;Fontana Dam;fontana_dam
+http://www.meetup.com/cities/us/nc/forest_city/;Forest City;forest_city
+http://www.meetup.com/cities/us/nc/fort_bragg/;Fort Bragg;fort_bragg
+http://www.meetup.com/cities/us/nc/fountain/;Fountain;fountain
+http://www.meetup.com/cities/us/nc/four_oaks/;Four Oaks;four_oaks
+http://www.meetup.com/cities/us/nc/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/nc/franklinton/;Franklinton;franklinton
+http://www.meetup.com/cities/us/nc/franklinville/;Franklinville;franklinville
+http://www.meetup.com/cities/us/nc/fremont/;Fremont;fremont
+http://www.meetup.com/cities/us/nc/frisco/;Frisco;frisco
+http://www.meetup.com/cities/us/nc/fuquay_varina/;Fuquay Varina;fuquay_varina
+http://www.meetup.com/cities/us/nc/garland/;Garland;garland
+http://www.meetup.com/cities/us/nc/garner/;Garner;garner
+http://www.meetup.com/cities/us/nc/garysburg/;Garysburg;garysburg
+http://www.meetup.com/cities/us/nc/gaston/;Gaston;gaston
+http://www.meetup.com/cities/us/nc/gastonia/;Gastonia;gastonia
+http://www.meetup.com/cities/us/nc/gates/;Gates;gates
+http://www.meetup.com/cities/us/nc/gatesville/;Gatesville;gatesville
+http://www.meetup.com/cities/us/nc/germanton/;Germanton;germanton
+http://www.meetup.com/cities/us/nc/gerton/;Gerton;gerton
+http://www.meetup.com/cities/us/nc/gibson/;Gibson;gibson
+http://www.meetup.com/cities/us/nc/gibsonville/;Gibsonville;gibsonville
+http://www.meetup.com/cities/us/nc/glade_valley/;Glade Valley;glade_valley
+http://www.meetup.com/cities/us/nc/glen_alpine/;Glen Alpine;glen_alpine
+http://www.meetup.com/cities/us/nc/glendale_springs/;Glendale Springs;glendale_springs
+http://www.meetup.com/cities/us/nc/glenville/;Glenville;glenville
+http://www.meetup.com/cities/us/nc/glenwood/;Glenwood;glenwood
+http://www.meetup.com/cities/us/nc/gloucester/;Gloucester;gloucester
+http://www.meetup.com/cities/us/nc/godwin/;Godwin;godwin
+http://www.meetup.com/cities/us/nc/gold_hill/;Gold Hill;gold_hill
+http://www.meetup.com/cities/us/nc/goldsboro/;Goldsboro;goldsboro
+http://www.meetup.com/cities/us/nc/goldston/;Goldston;goldston
+http://www.meetup.com/cities/us/nc/graham/;Graham;graham
+http://www.meetup.com/cities/us/nc/grandy/;Grandy;grandy
+http://www.meetup.com/cities/us/nc/granite_falls/;Granite Falls;granite_falls
+http://www.meetup.com/cities/us/nc/granite_quarry/;Granite Quarry;granite_quarry
+http://www.meetup.com/cities/us/nc/grantsboro/;Grantsboro;grantsboro
+http://www.meetup.com/cities/us/nc/grassy_creek/;Grassy Creek;grassy_creek
+http://www.meetup.com/cities/us/nc/green_mountain/;Green Mountain;green_mountain
+http://www.meetup.com/cities/us/nc/greensboro/;Greensboro;greensboro
+http://www.meetup.com/cities/us/nc/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/nc/grifton/;Grifton;grifton
+http://www.meetup.com/cities/us/nc/grimesland/;Grimesland;grimesland
+http://www.meetup.com/cities/us/nc/grover/;Grover;grover
+http://www.meetup.com/cities/us/nc/gulf/;Gulf;gulf
+http://www.meetup.com/cities/us/nc/halifax/;Halifax;halifax
+http://www.meetup.com/cities/us/nc/hallsboro/;Hallsboro;hallsboro
+http://www.meetup.com/cities/us/nc/hamilton/;Hamilton;hamilton
+http://www.meetup.com/cities/us/nc/hamlet/;Hamlet;hamlet
+http://www.meetup.com/cities/us/nc/hampstead/;Hampstead;hampstead
+http://www.meetup.com/cities/us/nc/hamptonville/;Hamptonville;hamptonville
+http://www.meetup.com/cities/us/nc/harbinger/;Harbinger;harbinger
+http://www.meetup.com/cities/us/nc/harkers_island/;Harkers Island;harkers_island
+http://www.meetup.com/cities/us/nc/harmony/;Harmony;harmony
+http://www.meetup.com/cities/us/nc/harrells/;Harrells;harrells
+http://www.meetup.com/cities/us/nc/harrellsville/;Harrellsville;harrellsville
+http://www.meetup.com/cities/us/nc/harris/;Harris;harris
+http://www.meetup.com/cities/us/nc/harrisburg/;Harrisburg;harrisburg
+http://www.meetup.com/cities/us/nc/hassell/;Hassell;hassell
+http://www.meetup.com/cities/us/nc/hatteras/;Hatteras;hatteras
+http://www.meetup.com/cities/us/nc/havelock/;Havelock;havelock
+http://www.meetup.com/cities/us/nc/haw_river/;Haw River;haw_river
+http://www.meetup.com/cities/us/nc/hayesville/;Hayesville;hayesville
+http://www.meetup.com/cities/us/nc/hays/;Hays;hays
+http://www.meetup.com/cities/us/nc/hazelwood/;Hazelwood;hazelwood
+http://www.meetup.com/cities/us/nc/henderson/;Henderson;henderson
+http://www.meetup.com/cities/us/nc/hendersonville/;Hendersonville;hendersonville
+http://www.meetup.com/cities/us/nc/henrico/;Henrico;henrico
+http://www.meetup.com/cities/us/nc/henrietta/;Henrietta;henrietta
+http://www.meetup.com/cities/us/nc/hertford/;Hertford;hertford
+http://www.meetup.com/cities/us/nc/hickory/;Hickory;hickory
+http://www.meetup.com/cities/us/nc/hiddenite/;Hiddenite;hiddenite
+http://www.meetup.com/cities/us/nc/highfalls/;Highfalls;highfalls
+http://www.meetup.com/cities/us/nc/highlands/;Highlands;highlands
+http://www.meetup.com/cities/us/nc/high_point/;High Point;high_point
+http://www.meetup.com/cities/us/nc/high_shoals/;High Shoals;high_shoals
+http://www.meetup.com/cities/us/nc/hildebran/;Hildebran;hildebran
+http://www.meetup.com/cities/us/nc/hillsborough/;Hillsborough;hillsborough
+http://www.meetup.com/cities/us/nc/hobbsville/;Hobbsville;hobbsville
+http://www.meetup.com/cities/us/nc/hobgood/;Hobgood;hobgood
+http://www.meetup.com/cities/us/nc/hobucken/;Hobucken;hobucken
+http://www.meetup.com/cities/us/nc/hoffman/;Hoffman;hoffman
+http://www.meetup.com/cities/us/nc/hollister/;Hollister;hollister
+http://www.meetup.com/cities/us/nc/holly_ridge/;Holly Ridge;holly_ridge
+http://www.meetup.com/cities/us/nc/holly_springs/;Holly Springs;holly_springs
+http://www.meetup.com/cities/us/nc/hookerton/;Hookerton;hookerton
+http://www.meetup.com/cities/us/nc/hope_mills/;Hope Mills;hope_mills
+http://www.meetup.com/cities/us/nc/horse_shoe/;Horse Shoe;horse_shoe
+http://www.meetup.com/cities/us/nc/hot_springs/;Hot Springs;hot_springs
+http://www.meetup.com/cities/us/nc/hubert/;Hubert;hubert
+http://www.meetup.com/cities/us/nc/hudson/;Hudson;hudson
+http://www.meetup.com/cities/us/nc/huntersville/;Huntersville;huntersville
+http://www.meetup.com/cities/us/nc/hurdle_mills/;Hurdle Mills;hurdle_mills
+http://www.meetup.com/cities/us/nc/icard/;Icard;icard
+http://www.meetup.com/cities/us/nc/indian_trail/;Indian Trail;indian_trail
+http://www.meetup.com/cities/us/nc/iron_station/;Iron Station;iron_station
+http://www.meetup.com/cities/us/nc/ivanhoe/;Ivanhoe;ivanhoe
+http://www.meetup.com/cities/us/nc/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/nc/jackson_springs/;Jackson Springs;jackson_springs
+http://www.meetup.com/cities/us/nc/jacksonville/;Jacksonville;jacksonville
+http://www.meetup.com/cities/us/nc/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/nc/jamesville/;Jamesville;jamesville
+http://www.meetup.com/cities/us/nc/jarvisburg/;Jarvisburg;jarvisburg
+http://www.meetup.com/cities/us/nc/jefferson/;Jefferson;jefferson
+http://www.meetup.com/cities/us/nc/jonas_ridge/;Jonas Ridge;jonas_ridge
+http://www.meetup.com/cities/us/nc/jonesville/;Jonesville;jonesville
+http://www.meetup.com/cities/us/nc/julian/;Julian;julian
+http://www.meetup.com/cities/us/nc/kannapolis/;Kannapolis;kannapolis
+http://www.meetup.com/cities/us/nc/kelford/;Kelford;kelford
+http://www.meetup.com/cities/us/nc/kelly/;Kelly;kelly
+http://www.meetup.com/cities/us/nc/kenansville/;Kenansville;kenansville
+http://www.meetup.com/cities/us/nc/kenly/;Kenly;kenly
+http://www.meetup.com/cities/us/nc/kernersville/;Kernersville;kernersville
+http://www.meetup.com/cities/us/nc/kill_devil_hills/;Kill Devil Hills;kill_devil_hills
+http://www.meetup.com/cities/us/nc/king/;King;king
+http://www.meetup.com/cities/us/nc/kings_mountain/;Kings Mountain;kings_mountain
+http://www.meetup.com/cities/us/nc/kinston/;Kinston;kinston
+http://www.meetup.com/cities/us/nc/kipling/;Kipling;kipling
+http://www.meetup.com/cities/us/nc/kittrell/;Kittrell;kittrell
+http://www.meetup.com/cities/us/nc/kitty_hawk/;Kitty Hawk;kitty_hawk
+http://www.meetup.com/cities/us/nc/knightdale/;Knightdale;knightdale
+http://www.meetup.com/cities/us/nc/knotts_island/;Knotts Island;knotts_island
+http://www.meetup.com/cities/us/nc/kure_beach/;Kure Beach;kure_beach
+http://www.meetup.com/cities/us/nc/la_grange/;La Grange;la_grange
+http://www.meetup.com/cities/us/nc/lake_junaluska/;Lake Junaluska;lake_junaluska
+http://www.meetup.com/cities/us/nc/lake_lure/;Lake Lure;lake_lure
+http://www.meetup.com/cities/us/nc/lake_toxaway/;Lake Toxaway;lake_toxaway
+http://www.meetup.com/cities/us/nc/lakeview/;Lakeview;lakeview
+http://www.meetup.com/cities/us/nc/lake_waccamaw/;Lake Waccamaw;lake_waccamaw
+http://www.meetup.com/cities/us/nc/landis/;Landis;landis
+http://www.meetup.com/cities/us/nc/lansing/;Lansing;lansing
+http://www.meetup.com/cities/us/nc/lattimore/;Lattimore;lattimore
+http://www.meetup.com/cities/us/nc/laurel_hill/;Laurel Hill;laurel_hill
+http://www.meetup.com/cities/us/nc/laurel_springs/;Laurel Springs;laurel_springs
+http://www.meetup.com/cities/us/nc/laurinburg/;Laurinburg;laurinburg
+http://www.meetup.com/cities/us/nc/lawndale/;Lawndale;lawndale
+http://www.meetup.com/cities/us/nc/lawsonville/;Lawsonville;lawsonville
+http://www.meetup.com/cities/us/nc/leasburg/;Leasburg;leasburg
+http://www.meetup.com/cities/us/nc/leicester/;Leicester;leicester
+http://www.meetup.com/cities/us/nc/leland/;Leland;leland
+http://www.meetup.com/cities/us/nc/lemon_springs/;Lemon Springs;lemon_springs
+http://www.meetup.com/cities/us/nc/lenoir/;Lenoir;lenoir
+http://www.meetup.com/cities/us/nc/lewiston_woodville/;Lewiston Woodville;lewiston_woodville
+http://www.meetup.com/cities/us/nc/lewisville/;Lewisville;lewisville
+http://www.meetup.com/cities/us/nc/lexington/;Lexington;lexington
+http://www.meetup.com/cities/us/nc/liberty/;Liberty;liberty
+http://www.meetup.com/cities/us/nc/lilesville/;Lilesville;lilesville
+http://www.meetup.com/cities/us/nc/lillington/;Lillington;lillington
+http://www.meetup.com/cities/us/nc/lincolnton/;Lincolnton;lincolnton
+http://www.meetup.com/cities/us/nc/linden/;Linden;linden
+http://www.meetup.com/cities/us/nc/linville/;Linville;linville
+http://www.meetup.com/cities/us/nc/linville_falls/;Linville Falls;linville_falls
+http://www.meetup.com/cities/us/nc/linwood/;Linwood;linwood
+http://www.meetup.com/cities/us/nc/little_switzerland/;Little Switzerland;little_switzerland
+http://www.meetup.com/cities/us/nc/littleton/;Littleton;littleton
+http://www.meetup.com/cities/us/nc/locust/;Locust;locust
+http://www.meetup.com/cities/us/nc/longwood/;Longwood;longwood
+http://www.meetup.com/cities/us/nc/louisburg/;Louisburg;louisburg
+http://www.meetup.com/cities/us/nc/lowell/;Lowell;lowell
+http://www.meetup.com/cities/us/nc/lowgap/;Lowgap;lowgap
+http://www.meetup.com/cities/us/nc/lowland/;Lowland;lowland
+http://www.meetup.com/cities/us/nc/lucama/;Lucama;lucama
+http://www.meetup.com/cities/us/nc/lumber_bridge/;Lumber Bridge;lumber_bridge
+http://www.meetup.com/cities/us/nc/lumberton/;Lumberton;lumberton
+http://www.meetup.com/cities/us/nc/lynn/;Lynn;lynn
+http://www.meetup.com/cities/us/nc/macclesfield/;Macclesfield;macclesfield
+http://www.meetup.com/cities/us/nc/macon/;Macon;macon
+http://www.meetup.com/cities/us/nc/madison/;Madison;madison
+http://www.meetup.com/cities/us/nc/maggie_valley/;Maggie Valley;maggie_valley
+http://www.meetup.com/cities/us/nc/magnolia/;Magnolia;magnolia
+http://www.meetup.com/cities/us/nc/maiden/;Maiden;maiden
+http://www.meetup.com/cities/us/nc/mamers/;Mamers;mamers
+http://www.meetup.com/cities/us/nc/manns_harbor/;Manns Harbor;manns_harbor
+http://www.meetup.com/cities/us/nc/manson/;Manson;manson
+http://www.meetup.com/cities/us/nc/manteo/;Manteo;manteo
+http://www.meetup.com/cities/us/nc/maple/;Maple;maple
+http://www.meetup.com/cities/us/nc/maple_hill/;Maple Hill;maple_hill
+http://www.meetup.com/cities/us/nc/marble/;Marble;marble
+http://www.meetup.com/cities/us/nc/margarettsville/;Margarettsville;margarettsville
+http://www.meetup.com/cities/us/nc/marietta/;Marietta;marietta
+http://www.meetup.com/cities/us/nc/marion/;Marion;marion
+http://www.meetup.com/cities/us/nc/marshall/;Marshall;marshall
+http://www.meetup.com/cities/us/nc/marshallberg/;Marshallberg;marshallberg
+http://www.meetup.com/cities/us/nc/mars_hill/;Mars Hill;mars_hill
+http://www.meetup.com/cities/us/nc/marshville/;Marshville;marshville
+http://www.meetup.com/cities/us/nc/marston/;Marston;marston
+http://www.meetup.com/cities/us/nc/matthews/;Matthews;matthews
+http://www.meetup.com/cities/us/nc/maury/;Maury;maury
+http://www.meetup.com/cities/us/nc/maxton/;Maxton;maxton
+http://www.meetup.com/cities/us/nc/mayodan/;Mayodan;mayodan
+http://www.meetup.com/cities/us/nc/maysville/;Maysville;maysville
+http://www.meetup.com/cities/us/nc/mc_adenville/;Mc Adenville;mc_adenville
+http://www.meetup.com/cities/us/nc/mccutcheon_field/;McCutcheon Field;mccutcheon_field
+http://www.meetup.com/cities/us/nc/mc_farlan/;Mc Farlan;mc_farlan
+http://www.meetup.com/cities/us/nc/mc_grady/;Mc Grady;mc_grady
+http://www.meetup.com/cities/us/nc/mc_leansville/;Mc Leansville;mc_leansville
+http://www.meetup.com/cities/us/nc/mebane/;Mebane;mebane
+http://www.meetup.com/cities/us/nc/merritt/;Merritt;merritt
+http://www.meetup.com/cities/us/nc/merry_hill/;Merry Hill;merry_hill
+http://www.meetup.com/cities/us/nc/micaville/;Micaville;micaville
+http://www.meetup.com/cities/us/nc/micro/;Micro;micro
+http://www.meetup.com/cities/us/nc/middleburg/;Middleburg;middleburg
+http://www.meetup.com/cities/us/nc/middlesex/;Middlesex;middlesex
+http://www.meetup.com/cities/us/nc/midland/;Midland;midland
+http://www.meetup.com/cities/us/nc/midway_park/;Midway Park;midway_park
+http://www.meetup.com/cities/us/nc/millers_creek/;Millers Creek;millers_creek
+http://www.meetup.com/cities/us/nc/mill_spring/;Mill Spring;mill_spring
+http://www.meetup.com/cities/us/nc/mills_river/;Mills River;mills_river
+http://www.meetup.com/cities/us/nc/milton/;Milton;milton
+http://www.meetup.com/cities/us/nc/milwaukee/;Milwaukee;milwaukee
+http://www.meetup.com/cities/us/nc/mineral_springs/;Mineral Springs;mineral_springs
+http://www.meetup.com/cities/us/nc/minneapolis/;Minneapolis;minneapolis
+http://www.meetup.com/cities/us/nc/misenheimer/;Misenheimer;misenheimer
+http://www.meetup.com/cities/us/nc/mocksville/;Mocksville;mocksville
+http://www.meetup.com/cities/us/nc/moncure/;Moncure;moncure
+http://www.meetup.com/cities/us/nc/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/nc/montezuma/;Montezuma;montezuma
+http://www.meetup.com/cities/us/nc/montreat/;Montreat;montreat
+http://www.meetup.com/cities/us/nc/mooresboro/;Mooresboro;mooresboro
+http://www.meetup.com/cities/us/nc/mooresville/;Mooresville;mooresville
+http://www.meetup.com/cities/us/nc/moravian_falls/;Moravian Falls;moravian_falls
+http://www.meetup.com/cities/us/nc/morehead_city/;Morehead City;morehead_city
+http://www.meetup.com/cities/us/nc/morganton/;Morganton;morganton
+http://www.meetup.com/cities/us/nc/morrisville/;Morrisville;morrisville
+http://www.meetup.com/cities/us/nc/morven/;Morven;morven
+http://www.meetup.com/cities/us/nc/mountain_home/;Mountain Home;mountain_home
+http://www.meetup.com/cities/us/nc/mount_airy/;Mount Airy;mount_airy
+http://www.meetup.com/cities/us/nc/mount_gilead/;Mount Gilead;mount_gilead
+http://www.meetup.com/cities/us/nc/mount_holly/;Mount Holly;mount_holly
+http://www.meetup.com/cities/us/nc/mount_mourne/;Mount Mourne;mount_mourne
+http://www.meetup.com/cities/us/nc/mount_olive/;Mount Olive;mount_olive
+http://www.meetup.com/cities/us/nc/mount_pleasant/;Mount Pleasant;mount_pleasant
+http://www.meetup.com/cities/us/nc/mount_ulla/;Mount Ulla;mount_ulla
+http://www.meetup.com/cities/us/nc/moyock/;Moyock;moyock
+http://www.meetup.com/cities/us/nc/murfreesboro/;Murfreesboro;murfreesboro
+http://www.meetup.com/cities/us/nc/murphy/;Murphy;murphy
+http://www.meetup.com/cities/us/nc/nags_head/;Nags Head;nags_head
+http://www.meetup.com/cities/us/nc/nakina/;Nakina;nakina
+http://www.meetup.com/cities/us/nc/naples/;Naples;naples
+http://www.meetup.com/cities/us/nc/nashville/;Nashville;nashville
+http://www.meetup.com/cities/us/nc/nebo/;Nebo;nebo
+http://www.meetup.com/cities/us/nc/new_bern/;New Bern;new_bern
+http://www.meetup.com/cities/us/nc/newell/;Newell;newell
+http://www.meetup.com/cities/us/nc/new_hill/;New Hill;new_hill
+http://www.meetup.com/cities/us/nc/newland/;Newland;newland
+http://www.meetup.com/cities/us/nc/new_london/;New London;new_london
+http://www.meetup.com/cities/us/nc/newport/;Newport;newport
+http://www.meetup.com/cities/us/nc/newton/;Newton;newton
+http://www.meetup.com/cities/us/nc/newton_grove/;Newton Grove;newton_grove
+http://www.meetup.com/cities/us/nc/norlina/;Norlina;norlina
+http://www.meetup.com/cities/us/nc/norman/;Norman;norman
+http://www.meetup.com/cities/us/nc/north_wilkesboro/;North Wilkesboro;north_wilkesboro
+http://www.meetup.com/cities/us/nc/norwood/;Norwood;norwood
+http://www.meetup.com/cities/us/nc/oakboro/;Oakboro;oakboro
+http://www.meetup.com/cities/us/nc/oak_city/;Oak City;oak_city
+http://www.meetup.com/cities/us/nc/oak_island/;Oak Island;oak_island
+http://www.meetup.com/cities/us/nc/oak_ridge/;Oak Ridge;oak_ridge
+http://www.meetup.com/cities/us/nc/ocean_isle_beach/;Ocean Isle Beach;ocean_isle_beach
+http://www.meetup.com/cities/us/nc/ocracoke/;Ocracoke;ocracoke
+http://www.meetup.com/cities/us/nc/old_fort/;Old Fort;old_fort
+http://www.meetup.com/cities/us/nc/olin/;Olin;olin
+http://www.meetup.com/cities/us/nc/olivia/;Olivia;olivia
+http://www.meetup.com/cities/us/nc/oriental/;Oriental;oriental
+http://www.meetup.com/cities/us/nc/orrum/;Orrum;orrum
+http://www.meetup.com/cities/us/nc/otto/;Otto;otto
+http://www.meetup.com/cities/us/nc/oxford/;Oxford;oxford
+http://www.meetup.com/cities/us/nc/pantego/;Pantego;pantego
+http://www.meetup.com/cities/us/nc/parkton/;Parkton;parkton
+http://www.meetup.com/cities/us/nc/parmele/;Parmele;parmele
+http://www.meetup.com/cities/us/nc/patterson/;Patterson;patterson
+http://www.meetup.com/cities/us/nc/paw_creek/;Paw Creek;paw_creek
+http://www.meetup.com/cities/us/nc/peachland/;Peachland;peachland
+http://www.meetup.com/cities/us/nc/pelham/;Pelham;pelham
+http://www.meetup.com/cities/us/nc/pembroke/;Pembroke;pembroke
+http://www.meetup.com/cities/us/nc/pendleton/;Pendleton;pendleton
+http://www.meetup.com/cities/us/nc/penland/;Penland;penland
+http://www.meetup.com/cities/us/nc/penrose/;Penrose;penrose
+http://www.meetup.com/cities/us/nc/pfafftown/;Pfafftown;pfafftown
+http://www.meetup.com/cities/us/nc/pikeville/;Pikeville;pikeville
+http://www.meetup.com/cities/us/nc/pilot_mountain/;Pilot Mountain;pilot_mountain
+http://www.meetup.com/cities/us/nc/pinebluff/;Pinebluff;pinebluff
+http://www.meetup.com/cities/us/nc/pine_hall/;Pine Hall;pine_hall
+http://www.meetup.com/cities/us/nc/pinehurst/;Pinehurst;pinehurst
+http://www.meetup.com/cities/us/nc/pine_level/;Pine Level;pine_level
+http://www.meetup.com/cities/us/nc/pineola/;Pineola;pineola
+http://www.meetup.com/cities/us/nc/pinetops/;Pinetops;pinetops
+http://www.meetup.com/cities/us/nc/pinetown/;Pinetown;pinetown
+http://www.meetup.com/cities/us/nc/pineville/;Pineville;pineville
+http://www.meetup.com/cities/us/nc/piney_creek/;Piney Creek;piney_creek
+http://www.meetup.com/cities/us/nc/pink_hill/;Pink Hill;pink_hill
+http://www.meetup.com/cities/us/nc/pinnacle/;Pinnacle;pinnacle
+http://www.meetup.com/cities/us/nc/pisgah_forest/;Pisgah Forest;pisgah_forest
+http://www.meetup.com/cities/us/nc/pittsboro/;Pittsboro;pittsboro
+http://www.meetup.com/cities/us/nc/pleasant_garden/;Pleasant Garden;pleasant_garden
+http://www.meetup.com/cities/us/nc/pleasant_hill/;Pleasant Hill;pleasant_hill
+http://www.meetup.com/cities/us/nc/plumtree/;Plumtree;plumtree
+http://www.meetup.com/cities/us/nc/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/nc/point_harbor/;Point Harbor;point_harbor
+http://www.meetup.com/cities/us/nc/polkton/;Polkton;polkton
+http://www.meetup.com/cities/us/nc/polkville/;Polkville;polkville
+http://www.meetup.com/cities/us/nc/pollocksville/;Pollocksville;pollocksville
+http://www.meetup.com/cities/us/nc/pope_a_f_b/;Pope A F B;pope_a_f_b
+http://www.meetup.com/cities/us/nc/poplar_branch/;Poplar Branch;poplar_branch
+http://www.meetup.com/cities/us/nc/potecasi/;Potecasi;potecasi
+http://www.meetup.com/cities/us/nc/powells_point/;Powells Point;powells_point
+http://www.meetup.com/cities/us/nc/powellsville/;Powellsville;powellsville
+http://www.meetup.com/cities/us/nc/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/nc/proctorville/;Proctorville;proctorville
+http://www.meetup.com/cities/us/nc/prospect_hill/;Prospect Hill;prospect_hill
+http://www.meetup.com/cities/us/nc/providence/;Providence;providence
+http://www.meetup.com/cities/us/nc/purlear/;Purlear;purlear
+http://www.meetup.com/cities/us/nc/raeford/;Raeford;raeford
+http://www.meetup.com/cities/us/nc/raleigh/;Raleigh;raleigh
+http://www.meetup.com/cities/us/nc/ramseur/;Ramseur;ramseur
+http://www.meetup.com/cities/us/nc/randleman/;Randleman;randleman
+http://www.meetup.com/cities/us/nc/red_oak/;Red Oak;red_oak
+http://www.meetup.com/cities/us/nc/red_springs/;Red Springs;red_springs
+http://www.meetup.com/cities/us/nc/reidsville/;Reidsville;reidsville
+http://www.meetup.com/cities/us/nc/rex/;Rex;rex
+http://www.meetup.com/cities/us/nc/rhodhiss/;Rhodhiss;rhodhiss
+http://www.meetup.com/cities/us/nc/richfield/;Richfield;richfield
+http://www.meetup.com/cities/us/nc/richlands/;Richlands;richlands
+http://www.meetup.com/cities/us/nc/rich_square/;Rich Square;rich_square
+http://www.meetup.com/cities/us/nc/ridgecrest/;Ridgecrest;ridgecrest
+http://www.meetup.com/cities/us/nc/ridgeway/;Ridgeway;ridgeway
+http://www.meetup.com/cities/us/nc/riegelwood/;Riegelwood;riegelwood
+http://www.meetup.com/cities/us/nc/roanoke_rapids/;Roanoke Rapids;roanoke_rapids
+http://www.meetup.com/cities/us/nc/roaring_gap/;Roaring Gap;roaring_gap
+http://www.meetup.com/cities/us/nc/roaring_river/;Roaring River;roaring_river
+http://www.meetup.com/cities/us/nc/robbins/;Robbins;robbins
+http://www.meetup.com/cities/us/nc/robbinsville/;Robbinsville;robbinsville
+http://www.meetup.com/cities/us/nc/robersonville/;Robersonville;robersonville
+http://www.meetup.com/cities/us/nc/rockingham/;Rockingham;rockingham
+http://www.meetup.com/cities/us/nc/rockwell/;Rockwell;rockwell
+http://www.meetup.com/cities/us/nc/rocky_mount/;Rocky Mount;rocky_mount
+http://www.meetup.com/cities/us/nc/rocky_point/;Rocky Point;rocky_point
+http://www.meetup.com/cities/us/nc/rodanthe/;Rodanthe;rodanthe
+http://www.meetup.com/cities/us/nc/roduco/;Roduco;roduco
+http://www.meetup.com/cities/us/nc/rolesville/;Rolesville;rolesville
+http://www.meetup.com/cities/us/nc/ronda/;Ronda;ronda
+http://www.meetup.com/cities/us/nc/roper/;Roper;roper
+http://www.meetup.com/cities/us/nc/roseboro/;Roseboro;roseboro
+http://www.meetup.com/cities/us/nc/rose_hill/;Rose Hill;rose_hill
+http://www.meetup.com/cities/us/nc/rosman/;Rosman;rosman
+http://www.meetup.com/cities/us/nc/rougemont/;Rougemont;rougemont
+http://www.meetup.com/cities/us/nc/rowland/;Rowland;rowland
+http://www.meetup.com/cities/us/nc/roxboro/;Roxboro;roxboro
+http://www.meetup.com/cities/us/nc/roxobel/;Roxobel;roxobel
+http://www.meetup.com/cities/us/nc/ruffin/;Ruffin;ruffin
+http://www.meetup.com/cities/us/nc/rural_hall/;Rural Hall;rural_hall
+http://www.meetup.com/cities/us/nc/rutherford_college/;Rutherford College;rutherford_college
+http://www.meetup.com/cities/us/nc/rutherfordton/;Rutherfordton;rutherfordton
+http://www.meetup.com/cities/us/nc/saint_pauls/;Saint Pauls;saint_pauls
+http://www.meetup.com/cities/us/nc/salemburg/;Salemburg;salemburg
+http://www.meetup.com/cities/us/nc/salisbury/;Salisbury;salisbury
+http://www.meetup.com/cities/us/nc/salter_path/;Salter Path;salter_path
+http://www.meetup.com/cities/us/nc/saluda/;Saluda;saluda
+http://www.meetup.com/cities/us/nc/salvo/;Salvo;salvo
+http://www.meetup.com/cities/us/nc/sandy_ridge/;Sandy Ridge;sandy_ridge
+http://www.meetup.com/cities/us/nc/sanford/;Sanford;sanford
+http://www.meetup.com/cities/us/nc/sapphire/;Sapphire;sapphire
+http://www.meetup.com/cities/us/nc/saratoga/;Saratoga;saratoga
+http://www.meetup.com/cities/us/nc/saxapahaw/;Saxapahaw;saxapahaw
+http://www.meetup.com/cities/us/nc/scaly_mountain/;Scaly Mountain;scaly_mountain
+http://www.meetup.com/cities/us/nc/scotland_neck/;Scotland Neck;scotland_neck
+http://www.meetup.com/cities/us/nc/scotts/;Scotts;scotts
+http://www.meetup.com/cities/us/nc/scottville/;Scottville;scottville
+http://www.meetup.com/cities/us/nc/scranton/;Scranton;scranton
+http://www.meetup.com/cities/us/nc/seaboard/;Seaboard;seaboard
+http://www.meetup.com/cities/us/nc/seagrove/;Seagrove;seagrove
+http://www.meetup.com/cities/us/nc/sealevel/;Sealevel;sealevel
+http://www.meetup.com/cities/us/nc/sedalia/;Sedalia;sedalia
+http://www.meetup.com/cities/us/nc/selma/;Selma;selma
+http://www.meetup.com/cities/us/nc/semora/;Semora;semora
+http://www.meetup.com/cities/us/nc/seven_springs/;Seven Springs;seven_springs
+http://www.meetup.com/cities/us/nc/severn/;Severn;severn
+http://www.meetup.com/cities/us/nc/shallotte/;Shallotte;shallotte
+http://www.meetup.com/cities/us/nc/shannon/;Shannon;shannon
+http://www.meetup.com/cities/us/nc/sharpsburg/;Sharpsburg;sharpsburg
+http://www.meetup.com/cities/us/nc/shawboro/;Shawboro;shawboro
+http://www.meetup.com/cities/us/nc/shelby/;Shelby;shelby
+http://www.meetup.com/cities/us/nc/sherrills_ford/;Sherrills Ford;sherrills_ford
+http://www.meetup.com/cities/us/nc/shiloh/;Shiloh;shiloh
+http://www.meetup.com/cities/us/nc/siler_city/;Siler City;siler_city
+http://www.meetup.com/cities/us/nc/siloam/;Siloam;siloam
+http://www.meetup.com/cities/us/nc/simpson/;Simpson;simpson
+http://www.meetup.com/cities/us/nc/sims/;Sims;sims
+http://www.meetup.com/cities/us/nc/skyland/;Skyland;skyland
+http://www.meetup.com/cities/us/nc/smithfield/;Smithfield;smithfield
+http://www.meetup.com/cities/us/nc/smyrna/;Smyrna;smyrna
+http://www.meetup.com/cities/us/nc/sneads_ferry/;Sneads Ferry;sneads_ferry
+http://www.meetup.com/cities/us/nc/snow_camp/;Snow Camp;snow_camp
+http://www.meetup.com/cities/us/nc/snow_hill/;Snow Hill;snow_hill
+http://www.meetup.com/cities/us/nc/sophia/;Sophia;sophia
+http://www.meetup.com/cities/us/nc/southern_pines/;Southern Pines;southern_pines
+http://www.meetup.com/cities/us/nc/south_mills/;South Mills;south_mills
+http://www.meetup.com/cities/us/nc/southmont/;Southmont;southmont
+http://www.meetup.com/cities/us/nc/southport/;Southport;southport
+http://www.meetup.com/cities/us/nc/sparta/;Sparta;sparta
+http://www.meetup.com/cities/us/nc/speed/;Speed;speed
+http://www.meetup.com/cities/us/nc/spencer/;Spencer;spencer
+http://www.meetup.com/cities/us/nc/spindale/;Spindale;spindale
+http://www.meetup.com/cities/us/nc/spring_hope/;Spring Hope;spring_hope
+http://www.meetup.com/cities/us/nc/spring_lake/;Spring Lake;spring_lake
+http://www.meetup.com/cities/us/nc/spruce_pine/;Spruce Pine;spruce_pine
+http://www.meetup.com/cities/us/nc/stacy/;Stacy;stacy
+http://www.meetup.com/cities/us/nc/staley/;Staley;staley
+http://www.meetup.com/cities/us/nc/stanfield/;Stanfield;stanfield
+http://www.meetup.com/cities/us/nc/stanley/;Stanley;stanley
+http://www.meetup.com/cities/us/nc/stantonsburg/;Stantonsburg;stantonsburg
+http://www.meetup.com/cities/us/nc/star/;Star;star
+http://www.meetup.com/cities/us/nc/state_road/;State Road;state_road
+http://www.meetup.com/cities/us/nc/statesville/;Statesville;statesville
+http://www.meetup.com/cities/us/nc/stedman/;Stedman;stedman
+http://www.meetup.com/cities/us/nc/stella/;Stella;stella
+http://www.meetup.com/cities/us/nc/stem/;Stem;stem
+http://www.meetup.com/cities/us/nc/stokes/;Stokes;stokes
+http://www.meetup.com/cities/us/nc/stokesdale/;Stokesdale;stokesdale
+http://www.meetup.com/cities/us/nc/stoneville/;Stoneville;stoneville
+http://www.meetup.com/cities/us/nc/stonewall/;Stonewall;stonewall
+http://www.meetup.com/cities/us/nc/stony_point/;Stony Point;stony_point
+http://www.meetup.com/cities/us/nc/stovall/;Stovall;stovall
+http://www.meetup.com/cities/us/nc/stumpy_point/;Stumpy Point;stumpy_point
+http://www.meetup.com/cities/us/nc/sugar_grove/;Sugar Grove;sugar_grove
+http://www.meetup.com/cities/us/nc/summerfield/;Summerfield;summerfield
+http://www.meetup.com/cities/us/nc/sunbury/;Sunbury;sunbury
+http://www.meetup.com/cities/us/nc/sunset_beach/;Sunset Beach;sunset_beach
+http://www.meetup.com/cities/us/nc/supply/;Supply;supply
+http://www.meetup.com/cities/us/nc/swannanoa/;Swannanoa;swannanoa
+http://www.meetup.com/cities/us/nc/swanquarter/;Swanquarter;swanquarter
+http://www.meetup.com/cities/us/nc/swansboro/;Swansboro;swansboro
+http://www.meetup.com/cities/us/nc/swepsonville/;Swepsonville;swepsonville
+http://www.meetup.com/cities/us/nc/sylva/;Sylva;sylva
+http://www.meetup.com/cities/us/nc/tabor_city/;Tabor City;tabor_city
+http://www.meetup.com/cities/us/nc/tarawa_terrace/;Tarawa Terrace;tarawa_terrace
+http://www.meetup.com/cities/us/nc/tarboro/;Tarboro;tarboro
+http://www.meetup.com/cities/us/nc/tar_heel/;Tar Heel;tar_heel
+http://www.meetup.com/cities/us/nc/taylorsville/;Taylorsville;taylorsville
+http://www.meetup.com/cities/us/nc/teachey/;Teachey;teachey
+http://www.meetup.com/cities/us/nc/terrell/;Terrell;terrell
+http://www.meetup.com/cities/us/nc/thomasville/;Thomasville;thomasville
+http://www.meetup.com/cities/us/nc/thurmond/;Thurmond;thurmond
+http://www.meetup.com/cities/us/nc/tillery/;Tillery;tillery
+http://www.meetup.com/cities/us/nc/timberlake/;Timberlake;timberlake
+http://www.meetup.com/cities/us/nc/toast/;Toast;toast
+http://www.meetup.com/cities/us/nc/tobaccoville/;Tobaccoville;tobaccoville
+http://www.meetup.com/cities/us/nc/todd/;Todd;todd
+http://www.meetup.com/cities/us/nc/topton/;Topton;topton
+http://www.meetup.com/cities/us/nc/townsville/;Townsville;townsville
+http://www.meetup.com/cities/us/nc/traphill/;Traphill;traphill
+http://www.meetup.com/cities/us/nc/trenton/;Trenton;trenton
+http://www.meetup.com/cities/us/nc/trinity/;Trinity;trinity
+http://www.meetup.com/cities/us/nc/troutman/;Troutman;troutman
+http://www.meetup.com/cities/us/nc/troy/;Troy;troy
+http://www.meetup.com/cities/us/nc/tryon/;Tryon;tryon
+http://www.meetup.com/cities/us/nc/tuckasegee/;Tuckasegee;tuckasegee
+http://www.meetup.com/cities/us/nc/turkey/;Turkey;turkey
+http://www.meetup.com/cities/us/nc/turnersburg/;Turnersburg;turnersburg
+http://www.meetup.com/cities/us/nc/tuxedo/;Tuxedo;tuxedo
+http://www.meetup.com/cities/us/nc/tyner/;Tyner;tyner
+http://www.meetup.com/cities/us/nc/union_grove/;Union Grove;union_grove
+http://www.meetup.com/cities/us/nc/union_mills/;Union Mills;union_mills
+http://www.meetup.com/cities/us/nc/valdese/;Valdese;valdese
+http://www.meetup.com/cities/us/nc/vale/;Vale;vale
+http://www.meetup.com/cities/us/nc/valle_crucis/;Valle Crucis;valle_crucis
+http://www.meetup.com/cities/us/nc/vanceboro/;Vanceboro;vanceboro
+http://www.meetup.com/cities/us/nc/vandemere/;Vandemere;vandemere
+http://www.meetup.com/cities/us/nc/vass/;Vass;vass
+http://www.meetup.com/cities/us/nc/vaughan/;Vaughan;vaughan
+http://www.meetup.com/cities/us/nc/vilas/;Vilas;vilas
+http://www.meetup.com/cities/us/nc/waco/;Waco;waco
+http://www.meetup.com/cities/us/nc/wade/;Wade;wade
+http://www.meetup.com/cities/us/nc/wadesboro/;Wadesboro;wadesboro
+http://www.meetup.com/cities/us/nc/wagram/;Wagram;wagram
+http://www.meetup.com/cities/us/nc/wake_forest/;Wake Forest;wake_forest
+http://www.meetup.com/cities/us/nc/walkertown/;Walkertown;walkertown
+http://www.meetup.com/cities/us/nc/wallace/;Wallace;wallace
+http://www.meetup.com/cities/us/nc/wallburg/;Wallburg;wallburg
+http://www.meetup.com/cities/us/nc/walnut_cove/;Walnut Cove;walnut_cove
+http://www.meetup.com/cities/us/nc/walstonburg/;Walstonburg;walstonburg
+http://www.meetup.com/cities/us/nc/wanchese/;Wanchese;wanchese
+http://www.meetup.com/cities/us/nc/warne/;Warne;warne
+http://www.meetup.com/cities/us/nc/warrensville/;Warrensville;warrensville
+http://www.meetup.com/cities/us/nc/warrenton/;Warrenton;warrenton
+http://www.meetup.com/cities/us/nc/warsaw/;Warsaw;warsaw
+http://www.meetup.com/cities/us/nc/washington/;Washington;washington
+http://www.meetup.com/cities/us/nc/waves/;Waves;waves
+http://www.meetup.com/cities/us/nc/waxhaw/;Waxhaw;waxhaw
+http://www.meetup.com/cities/us/nc/waynesville/;Waynesville;waynesville
+http://www.meetup.com/cities/us/nc/weaverville/;Weaverville;weaverville
+http://www.meetup.com/cities/us/nc/webster/;Webster;webster
+http://www.meetup.com/cities/us/nc/welcome/;Welcome;welcome
+http://www.meetup.com/cities/us/nc/weldon/;Weldon;weldon
+http://www.meetup.com/cities/us/nc/wendell/;Wendell;wendell
+http://www.meetup.com/cities/us/nc/wentworth/;Wentworth;wentworth
+http://www.meetup.com/cities/us/nc/west_end/;West End;west_end
+http://www.meetup.com/cities/us/nc/westfield/;Westfield;westfield
+http://www.meetup.com/cities/us/nc/west_jefferson/;West Jefferson;west_jefferson
+http://www.meetup.com/cities/us/nc/whitakers/;Whitakers;whitakers
+http://www.meetup.com/cities/us/nc/white_oak/;White Oak;white_oak
+http://www.meetup.com/cities/us/nc/white_plains/;White Plains;white_plains
+http://www.meetup.com/cities/us/nc/whiteville/;Whiteville;whiteville
+http://www.meetup.com/cities/us/nc/whitsett/;Whitsett;whitsett
+http://www.meetup.com/cities/us/nc/whittier/;Whittier;whittier
+http://www.meetup.com/cities/us/nc/wilkesboro/;Wilkesboro;wilkesboro
+http://www.meetup.com/cities/us/nc/willard/;Willard;willard
+http://www.meetup.com/cities/us/nc/williamston/;Williamston;williamston
+http://www.meetup.com/cities/us/nc/williston/;Williston;williston
+http://www.meetup.com/cities/us/nc/willow_spring/;Willow Spring;willow_spring
+http://www.meetup.com/cities/us/nc/wilmington/;Wilmington;wilmington
+http://www.meetup.com/cities/us/nc/wilson/;Wilson;wilson
+http://www.meetup.com/cities/us/nc/wilsons_mills/;Wilsons Mills;wilsons_mills
+http://www.meetup.com/cities/us/nc/windsor/;Windsor;windsor
+http://www.meetup.com/cities/us/nc/winfall/;Winfall;winfall
+http://www.meetup.com/cities/us/nc/wingate/;Wingate;wingate
+http://www.meetup.com/cities/us/nc/winnabow/;Winnabow;winnabow
+http://www.meetup.com/cities/us/nc/winston_salem/;Winston Salem;winston_salem
+http://www.meetup.com/cities/us/nc/winterville/;Winterville;winterville
+http://www.meetup.com/cities/us/nc/winton/;Winton;winton
+http://www.meetup.com/cities/us/nc/wise/;Wise;wise
+http://www.meetup.com/cities/us/nc/woodland/;Woodland;woodland
+http://www.meetup.com/cities/us/nc/woodleaf/;Woodleaf;woodleaf
+http://www.meetup.com/cities/us/nc/wrightsville_beach/;Wrightsville Beach;wrightsville_beach
+http://www.meetup.com/cities/us/nc/yadkinville/;Yadkinville;yadkinville
+http://www.meetup.com/cities/us/nc/yanceyville/;Yanceyville;yanceyville
+http://www.meetup.com/cities/us/nc/youngsville/;Youngsville;youngsville
+http://www.meetup.com/cities/us/nc/zebulon/;Zebulon;zebulon
+http://www.meetup.com/cities/us/nc/zionville/;Zionville;zionville
+http://www.meetup.com/cities/us/nc/zirconia/;Zirconia;zirconia

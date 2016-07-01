@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/mx/abasolo/;Abasolo;abasolo
+http://www.meetup.com/cities/mx/acapulco/;Acapulco;acapulco
+http://www.meetup.com/cities/mx/aguascalientes/;Aguascalientes;aguascalientes
+http://www.meetup.com/cities/mx/atizap%C3%A1n/;Atizapán;atizap%C3%A1n
+http://www.meetup.com/cities/mx/cabo_san_lucas/;Cabo San Lucas;cabo_san_lucas
+http://www.meetup.com/cities/mx/cancun/;Cancun;cancun
+http://www.meetup.com/cities/mx/chihuahua/;Chihuahua;chihuahua
+http://www.meetup.com/cities/mx/colima/;Colima;colima
+http://www.meetup.com/cities/mx/cuautitl%C3%A1n_izcalli/;Cuautitlán Izcalli;cuautitl%C3%A1n_izcalli
+http://www.meetup.com/cities/mx/cuernavaca/;Cuernavaca;cuernavaca
+http://www.meetup.com/cities/mx/culiac%C3%A1n/;Culiacán;culiac%C3%A1n
+http://www.meetup.com/cities/mx/durango/;Durango;durango
+http://www.meetup.com/cities/mx/ecatepec/;Ecatepec;ecatepec
+http://www.meetup.com/cities/mx/ensenada/;Ensenada;ensenada
+http://www.meetup.com/cities/mx/guadalajara/;Guadalajara;guadalajara
+http://www.meetup.com/cities/mx/guadalupe/;Guadalupe;guadalupe
+http://www.meetup.com/cities/mx/guanajuato/;Guanajuato;guanajuato
+http://www.meetup.com/cities/mx/hermosillo/;Hermosillo;hermosillo
+http://www.meetup.com/cities/mx/la_paz/;La Paz;la_paz
+http://www.meetup.com/cities/mx/le%C3%B3n/;León;le%C3%B3n
+http://www.meetup.com/cities/mx/matamoros/;Matamoros;matamoros
+http://www.meetup.com/cities/mx/mazatl%C3%A1n/;Mazatlán;mazatl%C3%A1n
+http://www.meetup.com/cities/mx/mexicali/;Mexicali;mexicali
+http://www.meetup.com/cities/mx/monterrey/;Monterrey;monterrey
+http://www.meetup.com/cities/mx/morelia/;Morelia;morelia
+http://www.meetup.com/cities/mx/m%C3%A9rida/;Mérida;m%C3%A9rida
+http://www.meetup.com/cities/mx/m%C3%A9xico_city/;México City;m%C3%A9xico_city
+http://www.meetup.com/cities/mx/nuevo_laredo/;Nuevo Laredo;nuevo_laredo
+http://www.meetup.com/cities/mx/oaxaca/;Oaxaca;oaxaca
+http://www.meetup.com/cities/mx/pachuca/;Pachuca;pachuca
+http://www.meetup.com/cities/mx/playa_del_carmen/;Playa del Carmen;playa_del_carmen
+http://www.meetup.com/cities/mx/puebla/;Puebla;puebla
+http://www.meetup.com/cities/mx/puerto_vallarta/;Puerto Vallarta;puerto_vallarta
+http://www.meetup.com/cities/mx/quer%C3%A9taro/;Querétaro;quer%C3%A9taro
+http://www.meetup.com/cities/mx/reynosa/;Reynosa;reynosa
+http://www.meetup.com/cities/mx/rosarito/;Rosarito;rosarito
+http://www.meetup.com/cities/mx/saltillo/;Saltillo;saltillo
+http://www.meetup.com/cities/mx/san_miguel_de_allende/;San Miguel de Allende;san_miguel_de_allende
+http://www.meetup.com/cities/mx/san_nicol%C3%A1s_de_los_garza/;San Nicolás de los Garza;san_nicol%C3%A1s_de_los_garza
+http://www.meetup.com/cities/mx/san_pedro/;San Pedro;san_pedro
+http://www.meetup.com/cities/mx/tampico/;Tampico;tampico
+http://www.meetup.com/cities/mx/tijuana/;Tijuana;tijuana
+http://www.meetup.com/cities/mx/tlalnepantla/;Tlalnepantla;tlalnepantla
+http://www.meetup.com/cities/mx/toluca/;Toluca;toluca
+http://www.meetup.com/cities/mx/torre%C3%B3n/;Torreón;torre%C3%B3n
+http://www.meetup.com/cities/mx/veracruz/;Veracruz;veracruz
+http://www.meetup.com/cities/mx/victoria/;Victoria;victoria
+http://www.meetup.com/cities/mx/villahermosa/;Villahermosa;villahermosa
+http://www.meetup.com/cities/mx/xalapa/;Xalapa;xalapa
+http://www.meetup.com/cities/mx/zapopan/;Zapopan;zapopan

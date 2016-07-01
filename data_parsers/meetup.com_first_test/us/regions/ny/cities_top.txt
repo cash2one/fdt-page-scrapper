@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/us/ny/albany/;Albany;albany
+http://www.meetup.com/cities/us/ny/astoria/;Astoria;astoria
+http://www.meetup.com/cities/us/ny/bayside/;Bayside;bayside
+http://www.meetup.com/cities/us/ny/binghamton/;Binghamton;binghamton
+http://www.meetup.com/cities/us/ny/bronx/;Bronx;bronx
+http://www.meetup.com/cities/us/ny/brooklyn/;Brooklyn;brooklyn
+http://www.meetup.com/cities/us/ny/buffalo/;Buffalo;buffalo
+http://www.meetup.com/cities/us/ny/clifton_park/;Clifton Park;clifton_park
+http://www.meetup.com/cities/us/ny/elmhurst/;Elmhurst;elmhurst
+http://www.meetup.com/cities/us/ny/elmira/;Elmira;elmira
+http://www.meetup.com/cities/us/ny/flushing/;Flushing;flushing
+http://www.meetup.com/cities/us/ny/forest_hills/;Forest Hills;forest_hills
+http://www.meetup.com/cities/us/ny/fresh_meadows/;Fresh Meadows;fresh_meadows
+http://www.meetup.com/cities/us/ny/glens_falls/;Glens Falls;glens_falls
+http://www.meetup.com/cities/us/ny/huntington/;Huntington;huntington
+http://www.meetup.com/cities/us/ny/huntington_station/;Huntington Station;huntington_station
+http://www.meetup.com/cities/us/ny/ithaca/;Ithaca;ithaca
+http://www.meetup.com/cities/us/ny/jackson_heights/;Jackson Heights;jackson_heights
+http://www.meetup.com/cities/us/ny/jamaica/;Jamaica;jamaica
+http://www.meetup.com/cities/us/ny/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/ny/liverpool/;Liverpool;liverpool
+http://www.meetup.com/cities/us/ny/long_beach/;Long Beach;long_beach
+http://www.meetup.com/cities/us/ny/long_island_city/;Long Island City;long_island_city
+http://www.meetup.com/cities/us/ny/manhasset/;Manhasset;manhasset
+http://www.meetup.com/cities/us/ny/massapequa/;Massapequa;massapequa
+http://www.meetup.com/cities/us/ny/mount_vernon/;Mount Vernon;mount_vernon
+http://www.meetup.com/cities/us/ny/new_rochelle/;New Rochelle;new_rochelle
+http://www.meetup.com/cities/us/ny/new_york/;New York;new_york
+http://www.meetup.com/cities/us/ny/newburgh/;Newburgh;newburgh
+http://www.meetup.com/cities/us/ny/nyack/;Nyack;nyack
+http://www.meetup.com/cities/us/ny/plattsburgh/;Plattsburgh;plattsburgh
+http://www.meetup.com/cities/us/ny/poughkeepsie/;Poughkeepsie;poughkeepsie
+http://www.meetup.com/cities/us/ny/rego_park/;Rego Park;rego_park
+http://www.meetup.com/cities/us/ny/ridgewood/;Ridgewood;ridgewood
+http://www.meetup.com/cities/us/ny/rochester/;Rochester;rochester
+http://www.meetup.com/cities/us/ny/saratoga_springs/;Saratoga Springs;saratoga_springs
+http://www.meetup.com/cities/us/ny/scarsdale/;Scarsdale;scarsdale
+http://www.meetup.com/cities/us/ny/schenectady/;Schenectady;schenectady
+http://www.meetup.com/cities/us/ny/staten_island/;Staten Island;staten_island
+http://www.meetup.com/cities/us/ny/sunnyside/;Sunnyside;sunnyside
+http://www.meetup.com/cities/us/ny/syracuse/;Syracuse;syracuse
+http://www.meetup.com/cities/us/ny/tarrytown/;Tarrytown;tarrytown
+http://www.meetup.com/cities/us/ny/troy/;Troy;troy
+http://www.meetup.com/cities/us/ny/utica/;Utica;utica
+http://www.meetup.com/cities/us/ny/wappingers_falls/;Wappingers Falls;wappingers_falls
+http://www.meetup.com/cities/us/ny/watertown/;Watertown;watertown
+http://www.meetup.com/cities/us/ny/westbury/;Westbury;westbury
+http://www.meetup.com/cities/us/ny/white_plains/;White Plains;white_plains
+http://www.meetup.com/cities/us/ny/woodside/;Woodside;woodside
+http://www.meetup.com/cities/us/ny/yonkers/;Yonkers;yonkers

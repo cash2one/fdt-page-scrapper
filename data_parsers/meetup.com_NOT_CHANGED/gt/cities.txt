@@ -1,0 +1,323 @@
+http://www.meetup.com/cities/gt/acatenango/;Acatenango;acatenango
+http://www.meetup.com/cities/gt/agua_blanca/;Agua Blanca;agua_blanca
+http://www.meetup.com/cities/gt/aguacaliente/;Aguacaliente;aguacaliente
+http://www.meetup.com/cities/gt/aguacat%C3%A1n/;Aguacatán;aguacat%C3%A1n
+http://www.meetup.com/cities/gt/ajoloap%C3%A1n/;Ajoloapán;ajoloap%C3%A1n
+http://www.meetup.com/cities/gt/almolonga/;Almolonga;almolonga
+http://www.meetup.com/cities/gt/alotenango/;Alotenango;alotenango
+http://www.meetup.com/cities/gt/amatitl%C3%A1n/;Amatitlán;amatitl%C3%A1n
+http://www.meetup.com/cities/gt/antigua_guatemala/;Antigua Guatemala;antigua_guatemala
+http://www.meetup.com/cities/gt/asunci%C3%B3n_mita/;Asunción Mita;asunci%C3%B3n_mita
+http://www.meetup.com/cities/gt/atenco/;Atenco;atenco
+http://www.meetup.com/cities/gt/atescatempa/;Atescatempa;atescatempa
+http://www.meetup.com/cities/gt/ayutla/;Ayutla;ayutla
+http://www.meetup.com/cities/gt/barberena/;Barberena;barberena
+http://www.meetup.com/cities/gt/barillas/;Barillas;barillas
+http://www.meetup.com/cities/gt/caba%C3%B1as/;Cabañas;caba%C3%B1as
+http://www.meetup.com/cities/gt/cabric%C3%A1n/;Cabricán;cabric%C3%A1n
+http://www.meetup.com/cities/gt/cahab%C3%B3n/;Cahabón;cahab%C3%B3n
+http://www.meetup.com/cities/gt/cajol%C3%A1/;Cajolá;cajol%C3%A1
+http://www.meetup.com/cities/gt/callejones/;Callejones;callejones
+http://www.meetup.com/cities/gt/camot%C3%A1n/;Camotán;camot%C3%A1n
+http://www.meetup.com/cities/gt/canill%C3%A1/;Canillá;canill%C3%A1
+http://www.meetup.com/cities/gt/cantel/;Cantel;cantel
+http://www.meetup.com/cities/gt/casillas/;Casillas;casillas
+http://www.meetup.com/cities/gt/catarina/;Catarina;catarina
+http://www.meetup.com/cities/gt/chahal/;Chahal;chahal
+http://www.meetup.com/cities/gt/chajul/;Chajul;chajul
+http://www.meetup.com/cities/gt/champerico/;Champerico;champerico
+http://www.meetup.com/cities/gt/chiantla/;Chiantla;chiantla
+http://www.meetup.com/cities/gt/chiapa/;Chiapa;chiapa
+http://www.meetup.com/cities/gt/chiautzingo/;Chiautzingo;chiautzingo
+http://www.meetup.com/cities/gt/chicacao/;Chicacao;chicacao
+http://www.meetup.com/cities/gt/chicam%C3%A1n/;Chicamán;chicam%C3%A1n
+http://www.meetup.com/cities/gt/chich%C3%A9/;Chiché;chich%C3%A9
+http://www.meetup.com/cities/gt/chichicastenango/;Chichicastenango;chichicastenango
+http://www.meetup.com/cities/gt/chimaltenango/;Chimaltenango;chimaltenango
+http://www.meetup.com/cities/gt/chinautla/;Chinautla;chinautla
+http://www.meetup.com/cities/gt/chinique/;Chinique;chinique
+http://www.meetup.com/cities/gt/chiquimula/;Chiquimula;chiquimula
+http://www.meetup.com/cities/gt/chiquimulilla/;Chiquimulilla;chiquimulilla
+http://www.meetup.com/cities/gt/chisec/;Chisec;chisec
+http://www.meetup.com/cities/gt/chuarrancho/;Chuarrancho;chuarrancho
+http://www.meetup.com/cities/gt/ciudad_vieja/;Ciudad Vieja;ciudad_vieja
+http://www.meetup.com/cities/gt/coatepeque/;Coatepeque;coatepeque
+http://www.meetup.com/cities/gt/cob%C3%A1n/;Cobán;cob%C3%A1n
+http://www.meetup.com/cities/gt/colomba/;Colomba;colomba
+http://www.meetup.com/cities/gt/colon/;Colon;colon
+http://www.meetup.com/cities/gt/colotenango/;Colotenango;colotenango
+http://www.meetup.com/cities/gt/comapa/;Comapa;comapa
+http://www.meetup.com/cities/gt/comitancillo/;Comitancillo;comitancillo
+http://www.meetup.com/cities/gt/concepci%C3%B3n/;Concepción;concepci%C3%B3n
+http://www.meetup.com/cities/gt/concepci%C3%B3n_chiquirichapa/;Concepción Chiquirichapa;concepci%C3%B3n_chiquirichapa
+http://www.meetup.com/cities/gt/concepci%C3%B3n_las_minas/;Concepción las Minas;concepci%C3%B3n_las_minas
+http://www.meetup.com/cities/gt/concepcion_tutuapa/;Concepcion Tutuapa;concepcion_tutuapa
+http://www.meetup.com/cities/gt/conguaco/;Conguaco;conguaco
+http://www.meetup.com/cities/gt/cubulco/;Cubulco;cubulco
+http://www.meetup.com/cities/gt/cuilapa/;Cuilapa;cuilapa
+http://www.meetup.com/cities/gt/cuilco/;Cuilco;cuilco
+http://www.meetup.com/cities/gt/cun%C3%A9n/;Cunén;cun%C3%A9n
+http://www.meetup.com/cities/gt/cuyotenango/;Cuyotenango;cuyotenango
+http://www.meetup.com/cities/gt/dolores/;Dolores;dolores
+http://www.meetup.com/cities/gt/donostia/;Donostia;donostia
+http://www.meetup.com/cities/gt/el_adelanto/;El Adelanto;el_adelanto
+http://www.meetup.com/cities/gt/el_asintal/;El Asintal;el_asintal
+http://www.meetup.com/cities/gt/el_chol/;El Chol;el_chol
+http://www.meetup.com/cities/gt/el_estor/;El Estor;el_estor
+http://www.meetup.com/cities/gt/el_j%C3%ADcaro/;El Jícaro;el_j%C3%ADcaro
+http://www.meetup.com/cities/gt/el_ocot%C3%B3n/;El Ocotón;el_ocot%C3%B3n
+http://www.meetup.com/cities/gt/el_palmar/;El Palmar;el_palmar
+http://www.meetup.com/cities/gt/el_quetzal/;El Quetzal;el_quetzal
+http://www.meetup.com/cities/gt/el_rodeo/;El Rodeo;el_rodeo
+http://www.meetup.com/cities/gt/el_tejar/;El Tejar;el_tejar
+http://www.meetup.com/cities/gt/el_tumbador/;El Tumbador;el_tumbador
+http://www.meetup.com/cities/gt/emilio_carranza/;Emilio Carranza;emilio_carranza
+http://www.meetup.com/cities/gt/escuintla/;Escuintla;escuintla
+http://www.meetup.com/cities/gt/esquipulas/;Esquipulas;esquipulas
+http://www.meetup.com/cities/gt/esquipulas_palo_gordo/;Esquipulas Palo Gordo;esquipulas_palo_gordo
+http://www.meetup.com/cities/gt/estanzuela/;Estanzuela;estanzuela
+http://www.meetup.com/cities/gt/flores/;Flores;flores
+http://www.meetup.com/cities/gt/flores_costa_cuca/;Flores Costa Cuca;flores_costa_cuca
+http://www.meetup.com/cities/gt/fraijanes/;Fraijanes;fraijanes
+http://www.meetup.com/cities/gt/fray_bartolom%C3%A9_de_las_casas/;Fray Bartolomé de las Casas;fray_bartolom%C3%A9_de_las_casas
+http://www.meetup.com/cities/gt/frontera_comalapa/;Frontera Comalapa;frontera_comalapa
+http://www.meetup.com/cities/gt/granados/;Granados;granados
+http://www.meetup.com/cities/gt/gual%C3%A1n/;Gualán;gual%C3%A1n
+http://www.meetup.com/cities/gt/guanagazapa/;Guanagazapa;guanagazapa
+http://www.meetup.com/cities/gt/guastatoya/;Guastatoya;guastatoya
+http://www.meetup.com/cities/gt/guatemala/;Guatemala;guatemala
+http://www.meetup.com/cities/gt/guazacap%C3%A1n/;Guazacapán;guazacap%C3%A1n
+http://www.meetup.com/cities/gt/huamantla/;Huamantla;huamantla
+http://www.meetup.com/cities/gt/huaxpaltepec/;Huaxpaltepec;huaxpaltepec
+http://www.meetup.com/cities/gt/huehuetenango/;Huehuetenango;huehuetenango
+http://www.meetup.com/cities/gt/huit%C3%A1n/;Huitán;huit%C3%A1n
+http://www.meetup.com/cities/gt/huit%C3%A9/;Huité;huit%C3%A9
+http://www.meetup.com/cities/gt/ipala/;Ipala;ipala
+http://www.meetup.com/cities/gt/ixc%C3%A1n/;Ixcán;ixc%C3%A1n
+http://www.meetup.com/cities/gt/ixchigu%C3%A1n/;Ixchiguán;ixchigu%C3%A1n
+http://www.meetup.com/cities/gt/ixtahuac%C3%A1n/;Ixtahuacán;ixtahuac%C3%A1n
+http://www.meetup.com/cities/gt/iztapa/;Iztapa;iztapa
+http://www.meetup.com/cities/gt/jacaltenango/;Jacaltenango;jacaltenango
+http://www.meetup.com/cities/gt/jalapa/;Jalapa;jalapa
+http://www.meetup.com/cities/gt/jalpatagua/;Jalpatagua;jalpatagua
+http://www.meetup.com/cities/gt/jerez/;Jerez;jerez
+http://www.meetup.com/cities/gt/jocot%C3%A1n/;Jocotán;jocot%C3%A1n
+http://www.meetup.com/cities/gt/jocotenango/;Jocotenango;jocotenango
+http://www.meetup.com/cities/gt/joyabaj/;Joyabaj;joyabaj
+http://www.meetup.com/cities/gt/jutiapa/;Jutiapa;jutiapa
+http://www.meetup.com/cities/gt/la_democrac%C3%ADa/;La Democracía;la_democrac%C3%ADa
+http://www.meetup.com/cities/gt/la_esperanza/;La Esperanza;la_esperanza
+http://www.meetup.com/cities/gt/la_gomera/;La Gomera;la_gomera
+http://www.meetup.com/cities/gt/lanqu%C3%ADn/;Lanquín;lanqu%C3%ADn
+http://www.meetup.com/cities/gt/la_reforma/;La Reforma;la_reforma
+http://www.meetup.com/cities/gt/la_uni%C3%B3n/;La Unión;la_uni%C3%B3n
+http://www.meetup.com/cities/gt/l%C3%ADvingston/;Lívingston;l%C3%ADvingston
+http://www.meetup.com/cities/gt/los_amates/;Los Amates;los_amates
+http://www.meetup.com/cities/gt/magdalena_milpas_altas/;Magdalena Milpas Altas;magdalena_milpas_altas
+http://www.meetup.com/cities/gt/malacat%C3%A1n/;Malacatán;malacat%C3%A1n
+http://www.meetup.com/cities/gt/malacatancito/;Malacatancito;malacatancito
+http://www.meetup.com/cities/gt/masagua/;Masagua;masagua
+http://www.meetup.com/cities/gt/mataquescuintla/;Mataquescuintla;mataquescuintla
+http://www.meetup.com/cities/gt/mazatenango/;Mazatenango;mazatenango
+http://www.meetup.com/cities/gt/melchor_de_mencos/;Melchor de Mencos;melchor_de_mencos
+http://www.meetup.com/cities/gt/mixco/;Mixco;mixco
+http://www.meetup.com/cities/gt/momostenango/;Momostenango;momostenango
+http://www.meetup.com/cities/gt/monjas/;Monjas;monjas
+http://www.meetup.com/cities/gt/morales/;Morales;morales
+http://www.meetup.com/cities/gt/moraz%C3%A1n/;Morazán;moraz%C3%A1n
+http://www.meetup.com/cities/gt/moyuta/;Moyuta;moyuta
+http://www.meetup.com/cities/gt/nahual%C3%A1/;Nahualá;nahual%C3%A1
+http://www.meetup.com/cities/gt/nebaj/;Nebaj;nebaj
+http://www.meetup.com/cities/gt/nent%C3%B3n/;Nentón;nent%C3%B3n
+http://www.meetup.com/cities/gt/nueva_concepci%C3%B3n/;Nueva Concepción;nueva_concepci%C3%B3n
+http://www.meetup.com/cities/gt/nueva_santa_rosa/;Nueva Santa Rosa;nueva_santa_rosa
+http://www.meetup.com/cities/gt/nuevo_progreso/;Nuevo Progreso;nuevo_progreso
+http://www.meetup.com/cities/gt/nuevo_san_carlos/;Nuevo San Carlos;nuevo_san_carlos
+http://www.meetup.com/cities/gt/oc%C3%B3s/;Ocós;oc%C3%B3s
+http://www.meetup.com/cities/gt/olintepeque/;Olintepeque;olintepeque
+http://www.meetup.com/cities/gt/olopa/;Olopa;olopa
+http://www.meetup.com/cities/gt/oratorio/;Oratorio;oratorio
+http://www.meetup.com/cities/gt/ostuncalco/;Ostuncalco;ostuncalco
+http://www.meetup.com/cities/gt/pachalum/;Pachalum;pachalum
+http://www.meetup.com/cities/gt/pajapita/;Pajapita;pajapita
+http://www.meetup.com/cities/gt/palencia/;Palencia;palencia
+http://www.meetup.com/cities/gt/palestina_de_los_altos/;Palestina de los Altos;palestina_de_los_altos
+http://www.meetup.com/cities/gt/pal%C3%ADn/;Palín;pal%C3%ADn
+http://www.meetup.com/cities/gt/panajachel/;Panajachel;panajachel
+http://www.meetup.com/cities/gt/panz%C3%B3s/;Panzós;panz%C3%B3s
+http://www.meetup.com/cities/gt/parramos/;Parramos;parramos
+http://www.meetup.com/cities/gt/pasaco/;Pasaco;pasaco
+http://www.meetup.com/cities/gt/pastores/;Pastores;pastores
+http://www.meetup.com/cities/gt/patulul/;Patulul;patulul
+http://www.meetup.com/cities/gt/patzic%C3%ADa/;Patzicía;patzic%C3%ADa
+http://www.meetup.com/cities/gt/patzit%C3%A9/;Patzité;patzit%C3%A9
+http://www.meetup.com/cities/gt/patz%C3%BAn/;Patzún;patz%C3%BAn
+http://www.meetup.com/cities/gt/pochuta/;Pochuta;pochuta
+http://www.meetup.com/cities/gt/popt%C3%BAn/;Poptún;popt%C3%BAn
+http://www.meetup.com/cities/gt/pueblo_nuevo/;Pueblo Nuevo;pueblo_nuevo
+http://www.meetup.com/cities/gt/pueblo_nuevo_vi%C3%B1as/;Pueblo Nuevo Viñas;pueblo_nuevo_vi%C3%B1as
+http://www.meetup.com/cities/gt/puerto_barrios/;Puerto Barrios;puerto_barrios
+http://www.meetup.com/cities/gt/puerto_madero/;Puerto Madero;puerto_madero
+http://www.meetup.com/cities/gt/purulh%C3%A1/;Purulhá;purulh%C3%A1
+http://www.meetup.com/cities/gt/quetzaltenango/;Quetzaltenango;quetzaltenango
+http://www.meetup.com/cities/gt/quezada/;Quezada;quezada
+http://www.meetup.com/cities/gt/quezaltepeque/;Quezaltepeque;quezaltepeque
+http://www.meetup.com/cities/gt/rabinal/;Rabinal;rabinal
+http://www.meetup.com/cities/gt/retalhuleu/;Retalhuleu;retalhuleu
+http://www.meetup.com/cities/gt/r%C3%ADo_blanco/;Río Blanco;r%C3%ADo_blanco
+http://www.meetup.com/cities/gt/r%C3%ADo_bravo/;Río Bravo;r%C3%ADo_bravo
+http://www.meetup.com/cities/gt/rio_hondo/;Rio Hondo;rio_hondo
+http://www.meetup.com/cities/gt/sacapulas/;Sacapulas;sacapulas
+http://www.meetup.com/cities/gt/salam%C3%A1/;Salamá;salam%C3%A1
+http://www.meetup.com/cities/gt/salcaj%C3%A1/;Salcajá;salcaj%C3%A1
+http://www.meetup.com/cities/gt/samayac/;Samayac;samayac
+http://www.meetup.com/cities/gt/san_agust%C3%ADn_acasaguastl%C3%A1n/;San Agustín Acasaguastlán;san_agust%C3%ADn_acasaguastl%C3%A1n
+http://www.meetup.com/cities/gt/san_andr%C3%A9s_itzapa/;San Andrés Itzapa;san_andr%C3%A9s_itzapa
+http://www.meetup.com/cities/gt/san_andres_sajcabaj%C3%A1/;San Andres Sajcabajá;san_andres_sajcabaj%C3%A1
+http://www.meetup.com/cities/gt/san_andr%C3%A9s_semetabaj/;San Andrés Semetabaj;san_andr%C3%A9s_semetabaj
+http://www.meetup.com/cities/gt/san_andr%C3%A9s_villa_seca/;San Andrés Villa Seca;san_andr%C3%A9s_villa_seca
+http://www.meetup.com/cities/gt/san_andr%C3%A9s_xecul/;San Andrés Xecul;san_andr%C3%A9s_xecul
+http://www.meetup.com/cities/gt/san_antonio_aguas_calientes/;San Antonio Aguas Calientes;san_antonio_aguas_calientes
+http://www.meetup.com/cities/gt/san_antonio_huista/;San Antonio Huista;san_antonio_huista
+http://www.meetup.com/cities/gt/san_antonio_ilotenango/;San Antonio Ilotenango;san_antonio_ilotenango
+http://www.meetup.com/cities/gt/san_antonio_la_paz/;San Antonio la Paz;san_antonio_la_paz
+http://www.meetup.com/cities/gt/san_antonio_palop%C3%B3/;San Antonio Palopó;san_antonio_palop%C3%B3
+http://www.meetup.com/cities/gt/san_antonio_sacatep%C3%A9quez/;San Antonio Sacatepéquez;san_antonio_sacatep%C3%A9quez
+http://www.meetup.com/cities/gt/san_antonio_suchitep%C3%A9quez/;San Antonio Suchitepéquez;san_antonio_suchitep%C3%A9quez
+http://www.meetup.com/cities/gt/sanarate/;Sanarate;sanarate
+http://www.meetup.com/cities/gt/san_bartolo/;San Bartolo;san_bartolo
+http://www.meetup.com/cities/gt/san_bartolom%C3%A9_jocotenango/;San Bartolomé Jocotenango;san_bartolom%C3%A9_jocotenango
+http://www.meetup.com/cities/gt/san_bartolom%C3%A9_milpas_altas/;San Bartolomé Milpas Altas;san_bartolom%C3%A9_milpas_altas
+http://www.meetup.com/cities/gt/san_bernardino/;San Bernardino;san_bernardino
+http://www.meetup.com/cities/gt/san_carlos_alzatate/;San Carlos Alzatate;san_carlos_alzatate
+http://www.meetup.com/cities/gt/san_carlos_sija/;San Carlos Sija;san_carlos_sija
+http://www.meetup.com/cities/gt/san_crist%C3%B3bal_acasaguastl%C3%A1n/;San Cristóbal Acasaguastlán;san_crist%C3%B3bal_acasaguastl%C3%A1n
+http://www.meetup.com/cities/gt/san_crist%C3%B3bal_cucho/;San Cristóbal Cucho;san_crist%C3%B3bal_cucho
+http://www.meetup.com/cities/gt/san_crist%C3%B3bal_totonicap%C3%A1n/;San Cristóbal Totonicapán;san_crist%C3%B3bal_totonicap%C3%A1n
+http://www.meetup.com/cities/gt/san_crist%C3%B3bal_verapaz/;San Cristóbal Verapaz;san_crist%C3%B3bal_verapaz
+http://www.meetup.com/cities/gt/san_diego/;San Diego;san_diego
+http://www.meetup.com/cities/gt/san_felipe/;San Felipe;san_felipe
+http://www.meetup.com/cities/gt/san_francisco_el_alto/;San Francisco El Alto;san_francisco_el_alto
+http://www.meetup.com/cities/gt/san_francisco_la_uni%C3%B3n/;San Francisco la Unión;san_francisco_la_uni%C3%B3n
+http://www.meetup.com/cities/gt/san_francisco_zapotitl%C3%A1n/;San Francisco Zapotitlán;san_francisco_zapotitl%C3%A1n
+http://www.meetup.com/cities/gt/san_gabriel/;San Gabriel;san_gabriel
+http://www.meetup.com/cities/gt/san_gaspar_ixchil/;San Gaspar Ixchil;san_gaspar_ixchil
+http://www.meetup.com/cities/gt/san_jeronimito/;San Jeronimito;san_jeronimito
+http://www.meetup.com/cities/gt/san_jos%C3%A9_acatempa/;San José Acatempa;san_jos%C3%A9_acatempa
+http://www.meetup.com/cities/gt/san_jos%C3%A9_chacay%C3%A1/;San José Chacayá;san_jos%C3%A9_chacay%C3%A1
+http://www.meetup.com/cities/gt/san_jos%C3%A9_del_golfo/;San José del Golfo;san_jos%C3%A9_del_golfo
+http://www.meetup.com/cities/gt/san_jos%C3%A9_el_%C3%ADdolo/;San José El Ídolo;san_jos%C3%A9_el_%C3%ADdolo
+http://www.meetup.com/cities/gt/san_jos%C3%A9_la_arada/;San José la Arada;san_jos%C3%A9_la_arada
+http://www.meetup.com/cities/gt/san_jos%C3%A9_ojeten%C3%A1n/;San José Ojetenán;san_jos%C3%A9_ojeten%C3%A1n
+http://www.meetup.com/cities/gt/san_jos%C3%A9_pinula/;San José Pinula;san_jos%C3%A9_pinula
+http://www.meetup.com/cities/gt/san_jos%C3%A9_poaquil/;San José Poaquil;san_jos%C3%A9_poaquil
+http://www.meetup.com/cities/gt/san_juan_atit%C3%A1n/;San Juan Atitán;san_juan_atit%C3%A1n
+http://www.meetup.com/cities/gt/san_juan_chamelco/;San Juan Chamelco;san_juan_chamelco
+http://www.meetup.com/cities/gt/san_juan_cotzal/;San Juan Cotzal;san_juan_cotzal
+http://www.meetup.com/cities/gt/san_juan_ermita/;San Juan Ermita;san_juan_ermita
+http://www.meetup.com/cities/gt/san_juan_ixcoy/;San Juan Ixcoy;san_juan_ixcoy
+http://www.meetup.com/cities/gt/san_juan_la_laguna/;San Juan la Laguna;san_juan_la_laguna
+http://www.meetup.com/cities/gt/san_juan_sacatep%C3%A9quez/;San Juan Sacatepéquez;san_juan_sacatep%C3%A9quez
+http://www.meetup.com/cities/gt/san_juan_tecuaco/;San Juan Tecuaco;san_juan_tecuaco
+http://www.meetup.com/cities/gt/san_lucas_sacatep%C3%A9quez/;San Lucas Sacatepéquez;san_lucas_sacatep%C3%A9quez
+http://www.meetup.com/cities/gt/san_lucas_tolim%C3%A1n/;San Lucas Tolimán;san_lucas_tolim%C3%A1n
+http://www.meetup.com/cities/gt/san_luis_jilotepeque/;San Luis Jilotepeque;san_luis_jilotepeque
+http://www.meetup.com/cities/gt/san_manuel_chaparr%C3%B3n/;San Manuel Chaparrón;san_manuel_chaparr%C3%B3n
+http://www.meetup.com/cities/gt/san_marcos/;San Marcos;san_marcos
+http://www.meetup.com/cities/gt/san_marcos_la_laguna/;San Marcos la Laguna;san_marcos_la_laguna
+http://www.meetup.com/cities/gt/san_mart%C3%ADn_jilotepeque/;San Martín Jilotepeque;san_mart%C3%ADn_jilotepeque
+http://www.meetup.com/cities/gt/san_mart%C3%ADn_sacatep%C3%A9quez/;San Martín Sacatepéquez;san_mart%C3%ADn_sacatep%C3%A9quez
+http://www.meetup.com/cities/gt/san_martin_zapotitl%C3%A1n/;San Martin Zapotitlán;san_martin_zapotitl%C3%A1n
+http://www.meetup.com/cities/gt/san_mateo_ixtat%C3%A1n/;San Mateo Ixtatán;san_mateo_ixtat%C3%A1n
+http://www.meetup.com/cities/gt/san_miguel_acat%C3%A1n/;San Miguel Acatán;san_miguel_acat%C3%A1n
+http://www.meetup.com/cities/gt/san_miguel_chicaj/;San Miguel Chicaj;san_miguel_chicaj
+http://www.meetup.com/cities/gt/san_miguel_due%C3%B1as/;San Miguel Dueñas;san_miguel_due%C3%B1as
+http://www.meetup.com/cities/gt/san_miguel_ixtahuac%C3%A1n/;San Miguel Ixtahuacán;san_miguel_ixtahuac%C3%A1n
+http://www.meetup.com/cities/gt/san_miguel_pan%C3%A1n/;San Miguel Panán;san_miguel_pan%C3%A1n
+http://www.meetup.com/cities/gt/san_miguel_sig%C3%BCil%C3%A1/;San Miguel Sigüilá;san_miguel_sig%C3%BCil%C3%A1
+http://www.meetup.com/cities/gt/san_pablo/;San Pablo;san_pablo
+http://www.meetup.com/cities/gt/san_pablo_jocopilas/;San Pablo Jocopilas;san_pablo_jocopilas
+http://www.meetup.com/cities/gt/san_pablo_la_laguna/;San Pablo la Laguna;san_pablo_la_laguna
+http://www.meetup.com/cities/gt/san_pedro_ayampuc/;San Pedro Ayampuc;san_pedro_ayampuc
+http://www.meetup.com/cities/gt/san_pedro_carch%C3%A1/;San Pedro Carchá;san_pedro_carch%C3%A1
+http://www.meetup.com/cities/gt/san_pedro_jocopilas/;San Pedro Jocopilas;san_pedro_jocopilas
+http://www.meetup.com/cities/gt/san_pedro_la_laguna/;San Pedro la Laguna;san_pedro_la_laguna
+http://www.meetup.com/cities/gt/san_pedro_necta/;San Pedro Necta;san_pedro_necta
+http://www.meetup.com/cities/gt/san_pedro_pinula/;San Pedro Pinula;san_pedro_pinula
+http://www.meetup.com/cities/gt/san_pedro_sacatep%C3%A9quez/;San Pedro Sacatepéquez;san_pedro_sacatep%C3%A9quez
+http://www.meetup.com/cities/gt/san_rafael_la_independencia/;San Rafael la Independencia;san_rafael_la_independencia
+http://www.meetup.com/cities/gt/san_rafael_las_flores/;San Rafael las Flores;san_rafael_las_flores
+http://www.meetup.com/cities/gt/san_rafael_petzal/;San Rafael Petzal;san_rafael_petzal
+http://www.meetup.com/cities/gt/san_rafael_pie_de_la_cuesta/;San Rafael Pie de la Cuesta;san_rafael_pie_de_la_cuesta
+http://www.meetup.com/cities/gt/san_raymundo/;San Raymundo;san_raymundo
+http://www.meetup.com/cities/gt/sansare/;Sansare;sansare
+http://www.meetup.com/cities/gt/san_sebasti%C3%A1n_coat%C3%A1n/;San Sebastián Coatán;san_sebasti%C3%A1n_coat%C3%A1n
+http://www.meetup.com/cities/gt/san_sebasti%C3%A1n_huehuetenango/;San Sebastián Huehuetenango;san_sebasti%C3%A1n_huehuetenango
+http://www.meetup.com/cities/gt/santa_ana/;Santa Ana;santa_ana
+http://www.meetup.com/cities/gt/santa_ana_huista/;Santa Ana Huista;santa_ana_huista
+http://www.meetup.com/cities/gt/santa_apolonia/;Santa Apolonia;santa_apolonia
+http://www.meetup.com/cities/gt/santa_catalina_la_tinta/;Santa Catalina la Tinta;santa_catalina_la_tinta
+http://www.meetup.com/cities/gt/santa_catarina_barahona/;Santa Catarina Barahona;santa_catarina_barahona
+http://www.meetup.com/cities/gt/santa_catarina_ixtahuac%C3%A1n/;Santa Catarina Ixtahuacán;santa_catarina_ixtahuac%C3%A1n
+http://www.meetup.com/cities/gt/santa_catarina_mita/;Santa Catarina Mita;santa_catarina_mita
+http://www.meetup.com/cities/gt/santa_catarina_palop%C3%B3/;Santa Catarina Palopó;santa_catarina_palop%C3%B3
+http://www.meetup.com/cities/gt/santa_catarina_pinula/;Santa Catarina Pinula;santa_catarina_pinula
+http://www.meetup.com/cities/gt/santa_clara_la_laguna/;Santa Clara la Laguna;santa_clara_la_laguna
+http://www.meetup.com/cities/gt/santa_cruz_balany%C3%A1/;Santa Cruz Balanyá;santa_cruz_balany%C3%A1
+http://www.meetup.com/cities/gt/santa_cruz_del_quich%C3%A9/;Santa Cruz del Quiché;santa_cruz_del_quich%C3%A9
+http://www.meetup.com/cities/gt/santa_cruz_la_laguna/;Santa Cruz la Laguna;santa_cruz_la_laguna
+http://www.meetup.com/cities/gt/santa_cruz_mulu%C3%A1/;Santa Cruz Muluá;santa_cruz_mulu%C3%A1
+http://www.meetup.com/cities/gt/santa_cruz_naranjo/;Santa Cruz Naranjo;santa_cruz_naranjo
+http://www.meetup.com/cities/gt/santa_cruz_verapaz/;Santa Cruz Verapaz;santa_cruz_verapaz
+http://www.meetup.com/cities/gt/santa_eulalia/;Santa Eulalia;santa_eulalia
+http://www.meetup.com/cities/gt/santa_luc%C3%ADa_cotzumalguapa/;Santa Lucía Cotzumalguapa;santa_luc%C3%ADa_cotzumalguapa
+http://www.meetup.com/cities/gt/santa_luc%C3%ADa_la_reforma/;Santa Lucía la Reforma;santa_luc%C3%ADa_la_reforma
+http://www.meetup.com/cities/gt/santa_luc%C3%ADa_milpas_altas/;Santa Lucía Milpas Altas;santa_luc%C3%ADa_milpas_altas
+http://www.meetup.com/cities/gt/santa_luc%C3%ADa_utatl%C3%A1n/;Santa Lucía Utatlán;santa_luc%C3%ADa_utatl%C3%A1n
+http://www.meetup.com/cities/gt/santa_mar%C3%ADa_chiquimula/;Santa María Chiquimula;santa_mar%C3%ADa_chiquimula
+http://www.meetup.com/cities/gt/santa_maria_de_jes%C3%BAs/;Santa Maria de Jesús;santa_maria_de_jes%C3%BAs
+http://www.meetup.com/cities/gt/santa_maria_ixhuat%C3%A1n/;Santa Maria Ixhuatán;santa_maria_ixhuat%C3%A1n
+http://www.meetup.com/cities/gt/santa_mar%C3%ADa_visitaci%C3%B3n/;Santa María Visitación;santa_mar%C3%ADa_visitaci%C3%B3n
+http://www.meetup.com/cities/gt/santa_rosa_de_lima/;Santa Rosa de Lima;santa_rosa_de_lima
+http://www.meetup.com/cities/gt/santiago_atitl%C3%A1n/;Santiago Atitlán;santiago_atitl%C3%A1n
+http://www.meetup.com/cities/gt/santiago_chimaltenango/;Santiago Chimaltenango;santiago_chimaltenango
+http://www.meetup.com/cities/gt/santiago_sacatep%C3%A9quez/;Santiago Sacatepéquez;santiago_sacatep%C3%A9quez
+http://www.meetup.com/cities/gt/santo_domingo_suchitep%C3%A9quez/;Santo Domingo Suchitepéquez;santo_domingo_suchitep%C3%A9quez
+http://www.meetup.com/cities/gt/santo_domingo_xenacoj/;Santo Domingo Xenacoj;santo_domingo_xenacoj
+http://www.meetup.com/cities/gt/santo_tom%C3%A1s_la_uni%C3%B3n/;Santo Tomás la Unión;santo_tom%C3%A1s_la_uni%C3%B3n
+http://www.meetup.com/cities/gt/san_vicente_pacaya/;San Vicente Pacaya;san_vicente_pacaya
+http://www.meetup.com/cities/gt/sayaxch%C3%A9/;Sayaxché;sayaxch%C3%A9
+http://www.meetup.com/cities/gt/senah%C3%BA/;Senahú;senah%C3%BA
+http://www.meetup.com/cities/gt/sibilia/;Sibilia;sibilia
+http://www.meetup.com/cities/gt/sibinal/;Sibinal;sibinal
+http://www.meetup.com/cities/gt/sipacapa/;Sipacapa;sipacapa
+http://www.meetup.com/cities/gt/siquinal%C3%A1/;Siquinalá;siquinal%C3%A1
+http://www.meetup.com/cities/gt/solol%C3%A1/;Sololá;solol%C3%A1
+http://www.meetup.com/cities/gt/soloma/;Soloma;soloma
+http://www.meetup.com/cities/gt/sumpango/;Sumpango;sumpango
+http://www.meetup.com/cities/gt/tacan%C3%A1/;Tacaná;tacan%C3%A1
+http://www.meetup.com/cities/gt/tactic/;Tactic;tactic
+http://www.meetup.com/cities/gt/tajumulco/;Tajumulco;tajumulco
+http://www.meetup.com/cities/gt/tamah%C3%BA/;Tamahú;tamah%C3%BA
+http://www.meetup.com/cities/gt/taxisco/;Taxisco;taxisco
+http://www.meetup.com/cities/gt/tecp%C3%A1n_guatemala/;Tecpán Guatemala;tecp%C3%A1n_guatemala
+http://www.meetup.com/cities/gt/tectit%C3%A1n/;Tectitán;tectit%C3%A1n
+http://www.meetup.com/cities/gt/teculut%C3%A1n/;Teculután;teculut%C3%A1n
+http://www.meetup.com/cities/gt/tejutla/;Tejutla;tejutla
+http://www.meetup.com/cities/gt/tiquisate/;Tiquisate;tiquisate
+http://www.meetup.com/cities/gt/todos_santos_cuchumat%C3%A1n/;Todos Santos Cuchumatán;todos_santos_cuchumat%C3%A1n
+http://www.meetup.com/cities/gt/totonicap%C3%A1n/;Totonicapán;totonicap%C3%A1n
+http://www.meetup.com/cities/gt/tucur%C3%BA/;Tucurú;tucur%C3%BA
+http://www.meetup.com/cities/gt/tuxtepec/;Tuxtepec;tuxtepec
+http://www.meetup.com/cities/gt/uspant%C3%A1n/;Uspantán;uspant%C3%A1n
+http://www.meetup.com/cities/gt/usumatl%C3%A1n/;Usumatlán;usumatl%C3%A1n
+http://www.meetup.com/cities/gt/villa_canales/;Villa Canales;villa_canales
+http://www.meetup.com/cities/gt/yepocapa/;Yepocapa;yepocapa
+http://www.meetup.com/cities/gt/yupiltepeque/;Yupiltepeque;yupiltepeque
+http://www.meetup.com/cities/gt/zacamulpa/;Zacamulpa;zacamulpa
+http://www.meetup.com/cities/gt/zacapa/;Zacapa;zacapa
+http://www.meetup.com/cities/gt/zacualpan/;Zacualpan;zacualpan
+http://www.meetup.com/cities/gt/zapotitl%C3%A1n/;Zapotitlán;zapotitl%C3%A1n
+http://www.meetup.com/cities/gt/zaragoza/;Zaragoza;zaragoza
+http://www.meetup.com/cities/gt/zunil/;Zunil;zunil
+http://www.meetup.com/cities/gt/zunilito/;Zunilito;zunilito

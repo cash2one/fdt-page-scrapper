@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/us/nd/belcourt/;Belcourt;belcourt
+http://www.meetup.com/cities/us/nd/beulah/;Beulah;beulah
+http://www.meetup.com/cities/us/nd/bismarck/;Bismarck;bismarck
+http://www.meetup.com/cities/us/nd/bottineau/;Bottineau;bottineau
+http://www.meetup.com/cities/us/nd/bowman/;Bowman;bowman
+http://www.meetup.com/cities/us/nd/carrington/;Carrington;carrington
+http://www.meetup.com/cities/us/nd/casselton/;Casselton;casselton
+http://www.meetup.com/cities/us/nd/cavalier/;Cavalier;cavalier
+http://www.meetup.com/cities/us/nd/center/;Center;center
+http://www.meetup.com/cities/us/nd/devils_lake/;Devils Lake;devils_lake
+http://www.meetup.com/cities/us/nd/dickinson/;Dickinson;dickinson
+http://www.meetup.com/cities/us/nd/emerado/;Emerado;emerado
+http://www.meetup.com/cities/us/nd/enderlin/;Enderlin;enderlin
+http://www.meetup.com/cities/us/nd/fargo/;Fargo;fargo
+http://www.meetup.com/cities/us/nd/fort_yates/;Fort Yates;fort_yates
+http://www.meetup.com/cities/us/nd/gackle/;Gackle;gackle
+http://www.meetup.com/cities/us/nd/garrison/;Garrison;garrison
+http://www.meetup.com/cities/us/nd/grafton/;Grafton;grafton
+http://www.meetup.com/cities/us/nd/grand_forks/;Grand Forks;grand_forks
+http://www.meetup.com/cities/us/nd/grand_forks_afb/;Grand Forks AFB;grand_forks_afb
+http://www.meetup.com/cities/us/nd/gwinner/;Gwinner;gwinner
+http://www.meetup.com/cities/us/nd/hague/;Hague;hague
+http://www.meetup.com/cities/us/nd/hannaford/;Hannaford;hannaford
+http://www.meetup.com/cities/us/nd/hettinger/;Hettinger;hettinger
+http://www.meetup.com/cities/us/nd/hillsboro/;Hillsboro;hillsboro
+http://www.meetup.com/cities/us/nd/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/nd/jud/;Jud;jud
+http://www.meetup.com/cities/us/nd/killdeer/;Killdeer;killdeer
+http://www.meetup.com/cities/us/nd/lansford/;Lansford;lansford
+http://www.meetup.com/cities/us/nd/larimore/;Larimore;larimore
+http://www.meetup.com/cities/us/nd/mandan/;Mandan;mandan
+http://www.meetup.com/cities/us/nd/max/;Max;max
+http://www.meetup.com/cities/us/nd/maxbass/;Maxbass;maxbass
+http://www.meetup.com/cities/us/nd/mayville/;Mayville;mayville
+http://www.meetup.com/cities/us/nd/michigan/;Michigan;michigan
+http://www.meetup.com/cities/us/nd/minot/;Minot;minot
+http://www.meetup.com/cities/us/nd/minot_afb/;Minot AFB;minot_afb
+http://www.meetup.com/cities/us/nd/new_rockford/;New Rockford;new_rockford
+http://www.meetup.com/cities/us/nd/new_town/;New Town;new_town
+http://www.meetup.com/cities/us/nd/northwood/;Northwood;northwood
+http://www.meetup.com/cities/us/nd/oakes/;Oakes;oakes
+http://www.meetup.com/cities/us/nd/rolla/;Rolla;rolla
+http://www.meetup.com/cities/us/nd/rugby/;Rugby;rugby
+http://www.meetup.com/cities/us/nd/sawyer/;Sawyer;sawyer
+http://www.meetup.com/cities/us/nd/stanley/;Stanley;stanley
+http://www.meetup.com/cities/us/nd/thompson/;Thompson;thompson
+http://www.meetup.com/cities/us/nd/valley_city/;Valley City;valley_city
+http://www.meetup.com/cities/us/nd/wahpeton/;Wahpeton;wahpeton
+http://www.meetup.com/cities/us/nd/west_fargo/;West Fargo;west_fargo
+http://www.meetup.com/cities/us/nd/williston/;Williston;williston
+http://www.meetup.com/cities/us/nd/belcourt/;Belcourt;belcourt
+http://www.meetup.com/cities/us/nd/beulah/;Beulah;beulah
+http://www.meetup.com/cities/us/nd/bismarck/;Bismarck;bismarck
+http://www.meetup.com/cities/us/nd/bottineau/;Bottineau;bottineau
+http://www.meetup.com/cities/us/nd/bowman/;Bowman;bowman
+http://www.meetup.com/cities/us/nd/carrington/;Carrington;carrington
+http://www.meetup.com/cities/us/nd/casselton/;Casselton;casselton
+http://www.meetup.com/cities/us/nd/cavalier/;Cavalier;cavalier
+http://www.meetup.com/cities/us/nd/center/;Center;center
+http://www.meetup.com/cities/us/nd/devils_lake/;Devils Lake;devils_lake
+http://www.meetup.com/cities/us/nd/dickinson/;Dickinson;dickinson
+http://www.meetup.com/cities/us/nd/emerado/;Emerado;emerado
+http://www.meetup.com/cities/us/nd/enderlin/;Enderlin;enderlin
+http://www.meetup.com/cities/us/nd/fargo/;Fargo;fargo
+http://www.meetup.com/cities/us/nd/fort_yates/;Fort Yates;fort_yates
+http://www.meetup.com/cities/us/nd/gackle/;Gackle;gackle
+http://www.meetup.com/cities/us/nd/garrison/;Garrison;garrison
+http://www.meetup.com/cities/us/nd/grafton/;Grafton;grafton
+http://www.meetup.com/cities/us/nd/grand_forks/;Grand Forks;grand_forks
+http://www.meetup.com/cities/us/nd/grand_forks_afb/;Grand Forks AFB;grand_forks_afb
+http://www.meetup.com/cities/us/nd/gwinner/;Gwinner;gwinner
+http://www.meetup.com/cities/us/nd/hague/;Hague;hague
+http://www.meetup.com/cities/us/nd/hannaford/;Hannaford;hannaford
+http://www.meetup.com/cities/us/nd/hettinger/;Hettinger;hettinger
+http://www.meetup.com/cities/us/nd/hillsboro/;Hillsboro;hillsboro
+http://www.meetup.com/cities/us/nd/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/nd/jud/;Jud;jud
+http://www.meetup.com/cities/us/nd/killdeer/;Killdeer;killdeer
+http://www.meetup.com/cities/us/nd/lansford/;Lansford;lansford
+http://www.meetup.com/cities/us/nd/larimore/;Larimore;larimore
+http://www.meetup.com/cities/us/nd/mandan/;Mandan;mandan
+http://www.meetup.com/cities/us/nd/max/;Max;max
+http://www.meetup.com/cities/us/nd/maxbass/;Maxbass;maxbass
+http://www.meetup.com/cities/us/nd/mayville/;Mayville;mayville
+http://www.meetup.com/cities/us/nd/michigan/;Michigan;michigan
+http://www.meetup.com/cities/us/nd/minot/;Minot;minot
+http://www.meetup.com/cities/us/nd/minot_afb/;Minot AFB;minot_afb
+http://www.meetup.com/cities/us/nd/new_rockford/;New Rockford;new_rockford
+http://www.meetup.com/cities/us/nd/new_town/;New Town;new_town
+http://www.meetup.com/cities/us/nd/northwood/;Northwood;northwood
+http://www.meetup.com/cities/us/nd/oakes/;Oakes;oakes
+http://www.meetup.com/cities/us/nd/rolla/;Rolla;rolla
+http://www.meetup.com/cities/us/nd/rugby/;Rugby;rugby
+http://www.meetup.com/cities/us/nd/sawyer/;Sawyer;sawyer
+http://www.meetup.com/cities/us/nd/stanley/;Stanley;stanley
+http://www.meetup.com/cities/us/nd/thompson/;Thompson;thompson
+http://www.meetup.com/cities/us/nd/valley_city/;Valley City;valley_city
+http://www.meetup.com/cities/us/nd/wahpeton/;Wahpeton;wahpeton
+http://www.meetup.com/cities/us/nd/west_fargo/;West Fargo;west_fargo
+http://www.meetup.com/cities/us/nd/williston/;Williston;williston

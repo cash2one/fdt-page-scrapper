@@ -1,0 +1,378 @@
+http://www.meetup.com/cities/us/sc/abbeville/;Abbeville;abbeville
+http://www.meetup.com/cities/us/sc/adams_run/;Adams Run;adams_run
+http://www.meetup.com/cities/us/sc/aiken/;Aiken;aiken
+http://www.meetup.com/cities/us/sc/alcolu/;Alcolu;alcolu
+http://www.meetup.com/cities/us/sc/allendale/;Allendale;allendale
+http://www.meetup.com/cities/us/sc/anderson/;Anderson;anderson
+http://www.meetup.com/cities/us/sc/andrews/;Andrews;andrews
+http://www.meetup.com/cities/us/sc/arcadia/;Arcadia;arcadia
+http://www.meetup.com/cities/us/sc/awendaw/;Awendaw;awendaw
+http://www.meetup.com/cities/us/sc/aynor/;Aynor;aynor
+http://www.meetup.com/cities/us/sc/ballentine/;Ballentine;ballentine
+http://www.meetup.com/cities/us/sc/bamberg/;Bamberg;bamberg
+http://www.meetup.com/cities/us/sc/barnwell/;Barnwell;barnwell
+http://www.meetup.com/cities/us/sc/batesburg/;Batesburg;batesburg
+http://www.meetup.com/cities/us/sc/bath/;Bath;bath
+http://www.meetup.com/cities/us/sc/beaufort/;Beaufort;beaufort
+http://www.meetup.com/cities/us/sc/beech_island/;Beech Island;beech_island
+http://www.meetup.com/cities/us/sc/belton/;Belton;belton
+http://www.meetup.com/cities/us/sc/bennettsville/;Bennettsville;bennettsville
+http://www.meetup.com/cities/us/sc/bethera/;Bethera;bethera
+http://www.meetup.com/cities/us/sc/bethune/;Bethune;bethune
+http://www.meetup.com/cities/us/sc/bishopville/;Bishopville;bishopville
+http://www.meetup.com/cities/us/sc/blacksburg/;Blacksburg;blacksburg
+http://www.meetup.com/cities/us/sc/blackstock/;Blackstock;blackstock
+http://www.meetup.com/cities/us/sc/blackville/;Blackville;blackville
+http://www.meetup.com/cities/us/sc/blair/;Blair;blair
+http://www.meetup.com/cities/us/sc/blenheim/;Blenheim;blenheim
+http://www.meetup.com/cities/us/sc/bluffton/;Bluffton;bluffton
+http://www.meetup.com/cities/us/sc/blythewood/;Blythewood;blythewood
+http://www.meetup.com/cities/us/sc/boiling_springs/;Boiling Springs;boiling_springs
+http://www.meetup.com/cities/us/sc/bonneau/;Bonneau;bonneau
+http://www.meetup.com/cities/us/sc/bowling_green/;Bowling Green;bowling_green
+http://www.meetup.com/cities/us/sc/bowman/;Bowman;bowman
+http://www.meetup.com/cities/us/sc/bradley/;Bradley;bradley
+http://www.meetup.com/cities/us/sc/branchville/;Branchville;branchville
+http://www.meetup.com/cities/us/sc/brunson/;Brunson;brunson
+http://www.meetup.com/cities/us/sc/buffalo/;Buffalo;buffalo
+http://www.meetup.com/cities/us/sc/cades/;Cades;cades
+http://www.meetup.com/cities/us/sc/calhoun_falls/;Calhoun Falls;calhoun_falls
+http://www.meetup.com/cities/us/sc/camden/;Camden;camden
+http://www.meetup.com/cities/us/sc/cameron/;Cameron;cameron
+http://www.meetup.com/cities/us/sc/campobello/;Campobello;campobello
+http://www.meetup.com/cities/us/sc/canadys/;Canadys;canadys
+http://www.meetup.com/cities/us/sc/carlisle/;Carlisle;carlisle
+http://www.meetup.com/cities/us/sc/cassatt/;Cassatt;cassatt
+http://www.meetup.com/cities/us/sc/catawba/;Catawba;catawba
+http://www.meetup.com/cities/us/sc/cayce/;Cayce;cayce
+http://www.meetup.com/cities/us/sc/centenary/;Centenary;centenary
+http://www.meetup.com/cities/us/sc/central/;Central;central
+http://www.meetup.com/cities/us/sc/chapin/;Chapin;chapin
+http://www.meetup.com/cities/us/sc/chappells/;Chappells;chappells
+http://www.meetup.com/cities/us/sc/charleston/;Charleston;charleston
+http://www.meetup.com/cities/us/sc/charleston_afb/;Charleston AFB;charleston_afb
+http://www.meetup.com/cities/us/sc/cheraw/;Cheraw;cheraw
+http://www.meetup.com/cities/us/sc/chesnee/;Chesnee;chesnee
+http://www.meetup.com/cities/us/sc/chester/;Chester;chester
+http://www.meetup.com/cities/us/sc/chesterfield/;Chesterfield;chesterfield
+http://www.meetup.com/cities/us/sc/clarks_hill/;Clarks Hill;clarks_hill
+http://www.meetup.com/cities/us/sc/clearwater/;Clearwater;clearwater
+http://www.meetup.com/cities/us/sc/clemson/;Clemson;clemson
+http://www.meetup.com/cities/us/sc/cleveland/;Cleveland;cleveland
+http://www.meetup.com/cities/us/sc/clifton/;Clifton;clifton
+http://www.meetup.com/cities/us/sc/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/sc/clio/;Clio;clio
+http://www.meetup.com/cities/us/sc/clover/;Clover;clover
+http://www.meetup.com/cities/us/sc/columbia/;Columbia;columbia
+http://www.meetup.com/cities/us/sc/conestee/;Conestee;conestee
+http://www.meetup.com/cities/us/sc/converse/;Converse;converse
+http://www.meetup.com/cities/us/sc/conway/;Conway;conway
+http://www.meetup.com/cities/us/sc/coosawhatchie/;Coosawhatchie;coosawhatchie
+http://www.meetup.com/cities/us/sc/cope/;Cope;cope
+http://www.meetup.com/cities/us/sc/cordesville/;Cordesville;cordesville
+http://www.meetup.com/cities/us/sc/cordova/;Cordova;cordova
+http://www.meetup.com/cities/us/sc/cottageville/;Cottageville;cottageville
+http://www.meetup.com/cities/us/sc/coward/;Coward;coward
+http://www.meetup.com/cities/us/sc/cowpens/;Cowpens;cowpens
+http://www.meetup.com/cities/us/sc/crocketville/;Crocketville;crocketville
+http://www.meetup.com/cities/us/sc/cross/;Cross;cross
+http://www.meetup.com/cities/us/sc/cross_anchor/;Cross Anchor;cross_anchor
+http://www.meetup.com/cities/us/sc/cross_hill/;Cross Hill;cross_hill
+http://www.meetup.com/cities/us/sc/dale/;Dale;dale
+http://www.meetup.com/cities/us/sc/dalzell/;Dalzell;dalzell
+http://www.meetup.com/cities/us/sc/darlington/;Darlington;darlington
+http://www.meetup.com/cities/us/sc/daufuskie_island/;Daufuskie Island;daufuskie_island
+http://www.meetup.com/cities/us/sc/davis_station/;Davis Station;davis_station
+http://www.meetup.com/cities/us/sc/denmark/;Denmark;denmark
+http://www.meetup.com/cities/us/sc/dillon/;Dillon;dillon
+http://www.meetup.com/cities/us/sc/donalds/;Donalds;donalds
+http://www.meetup.com/cities/us/sc/dorchester/;Dorchester;dorchester
+http://www.meetup.com/cities/us/sc/drayton/;Drayton;drayton
+http://www.meetup.com/cities/us/sc/due_west/;Due West;due_west
+http://www.meetup.com/cities/us/sc/duncan/;Duncan;duncan
+http://www.meetup.com/cities/us/sc/early_branch/;Early Branch;early_branch
+http://www.meetup.com/cities/us/sc/easley/;Easley;easley
+http://www.meetup.com/cities/us/sc/eastover/;Eastover;eastover
+http://www.meetup.com/cities/us/sc/edgefield/;Edgefield;edgefield
+http://www.meetup.com/cities/us/sc/edgemoor/;Edgemoor;edgemoor
+http://www.meetup.com/cities/us/sc/edisto_island/;Edisto Island;edisto_island
+http://www.meetup.com/cities/us/sc/effingham/;Effingham;effingham
+http://www.meetup.com/cities/us/sc/ehrhardt/;Ehrhardt;ehrhardt
+http://www.meetup.com/cities/us/sc/elgin/;Elgin;elgin
+http://www.meetup.com/cities/us/sc/elko/;Elko;elko
+http://www.meetup.com/cities/us/sc/elliott/;Elliott;elliott
+http://www.meetup.com/cities/us/sc/elloree/;Elloree;elloree
+http://www.meetup.com/cities/us/sc/enoree/;Enoree;enoree
+http://www.meetup.com/cities/us/sc/estill/;Estill;estill
+http://www.meetup.com/cities/us/sc/eutawville/;Eutawville;eutawville
+http://www.meetup.com/cities/us/sc/fairfax/;Fairfax;fairfax
+http://www.meetup.com/cities/us/sc/fairforest/;Fairforest;fairforest
+http://www.meetup.com/cities/us/sc/fair_play/;Fair Play;fair_play
+http://www.meetup.com/cities/us/sc/fingerville/;Fingerville;fingerville
+http://www.meetup.com/cities/us/sc/florence/;Florence;florence
+http://www.meetup.com/cities/us/sc/folly_beach/;Folly Beach;folly_beach
+http://www.meetup.com/cities/us/sc/fork/;Fork;fork
+http://www.meetup.com/cities/us/sc/fort_lawn/;Fort Lawn;fort_lawn
+http://www.meetup.com/cities/us/sc/fort_mill/;Fort Mill;fort_mill
+http://www.meetup.com/cities/us/sc/fountain_inn/;Fountain Inn;fountain_inn
+http://www.meetup.com/cities/us/sc/furman/;Furman;furman
+http://www.meetup.com/cities/us/sc/gable/;Gable;gable
+http://www.meetup.com/cities/us/sc/gadsden/;Gadsden;gadsden
+http://www.meetup.com/cities/us/sc/gaffney/;Gaffney;gaffney
+http://www.meetup.com/cities/us/sc/galivants_ferry/;Galivants Ferry;galivants_ferry
+http://www.meetup.com/cities/us/sc/garnett/;Garnett;garnett
+http://www.meetup.com/cities/us/sc/gaston/;Gaston;gaston
+http://www.meetup.com/cities/us/sc/georgetown/;Georgetown;georgetown
+http://www.meetup.com/cities/us/sc/gifford/;Gifford;gifford
+http://www.meetup.com/cities/us/sc/gilbert/;Gilbert;gilbert
+http://www.meetup.com/cities/us/sc/glendale/;Glendale;glendale
+http://www.meetup.com/cities/us/sc/gloverville/;Gloverville;gloverville
+http://www.meetup.com/cities/us/sc/goose_creek/;Goose Creek;goose_creek
+http://www.meetup.com/cities/us/sc/gramling/;Gramling;gramling
+http://www.meetup.com/cities/us/sc/graniteville/;Graniteville;graniteville
+http://www.meetup.com/cities/us/sc/gray_court/;Gray Court;gray_court
+http://www.meetup.com/cities/us/sc/great_falls/;Great Falls;great_falls
+http://www.meetup.com/cities/us/sc/greeleyville/;Greeleyville;greeleyville
+http://www.meetup.com/cities/us/sc/green_pond/;Green Pond;green_pond
+http://www.meetup.com/cities/us/sc/green_sea/;Green Sea;green_sea
+http://www.meetup.com/cities/us/sc/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/sc/greenwood/;Greenwood;greenwood
+http://www.meetup.com/cities/us/sc/greer/;Greer;greer
+http://www.meetup.com/cities/us/sc/gresham/;Gresham;gresham
+http://www.meetup.com/cities/us/sc/grover/;Grover;grover
+http://www.meetup.com/cities/us/sc/hamer/;Hamer;hamer
+http://www.meetup.com/cities/us/sc/hampton/;Hampton;hampton
+http://www.meetup.com/cities/us/sc/hanahan/;Hanahan;hanahan
+http://www.meetup.com/cities/us/sc/hardeeville/;Hardeeville;hardeeville
+http://www.meetup.com/cities/us/sc/harleyville/;Harleyville;harleyville
+http://www.meetup.com/cities/us/sc/hartsville/;Hartsville;hartsville
+http://www.meetup.com/cities/us/sc/heath_springs/;Heath Springs;heath_springs
+http://www.meetup.com/cities/us/sc/hemingway/;Hemingway;hemingway
+http://www.meetup.com/cities/us/sc/hickory_grove/;Hickory Grove;hickory_grove
+http://www.meetup.com/cities/us/sc/hilda/;Hilda;hilda
+http://www.meetup.com/cities/us/sc/hilton_head_island/;Hilton Head Island;hilton_head_island
+http://www.meetup.com/cities/us/sc/hodges/;Hodges;hodges
+http://www.meetup.com/cities/us/sc/holly_hill/;Holly Hill;holly_hill
+http://www.meetup.com/cities/us/sc/hollywood/;Hollywood;hollywood
+http://www.meetup.com/cities/us/sc/honea_path/;Honea Path;honea_path
+http://www.meetup.com/cities/us/sc/hopkins/;Hopkins;hopkins
+http://www.meetup.com/cities/us/sc/horatio/;Horatio;horatio
+http://www.meetup.com/cities/us/sc/huger/;Huger;huger
+http://www.meetup.com/cities/us/sc/inman/;Inman;inman
+http://www.meetup.com/cities/us/sc/irmo/;Irmo;irmo
+http://www.meetup.com/cities/us/sc/islandton/;Islandton;islandton
+http://www.meetup.com/cities/us/sc/isle_of_palms/;Isle of Palms;isle_of_palms
+http://www.meetup.com/cities/us/sc/iva/;Iva;iva
+http://www.meetup.com/cities/us/sc/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/sc/jacksonboro/;Jacksonboro;jacksonboro
+http://www.meetup.com/cities/us/sc/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/sc/jefferson/;Jefferson;jefferson
+http://www.meetup.com/cities/us/sc/jenkinsville/;Jenkinsville;jenkinsville
+http://www.meetup.com/cities/us/sc/joanna/;Joanna;joanna
+http://www.meetup.com/cities/us/sc/johns_island/;Johns Island;johns_island
+http://www.meetup.com/cities/us/sc/johnsonville/;Johnsonville;johnsonville
+http://www.meetup.com/cities/us/sc/johnston/;Johnston;johnston
+http://www.meetup.com/cities/us/sc/jonesville/;Jonesville;jonesville
+http://www.meetup.com/cities/us/sc/kershaw/;Kershaw;kershaw
+http://www.meetup.com/cities/us/sc/kinards/;Kinards;kinards
+http://www.meetup.com/cities/us/sc/kingstree/;Kingstree;kingstree
+http://www.meetup.com/cities/us/sc/ladson/;Ladson;ladson
+http://www.meetup.com/cities/us/sc/ladys_island/;Ladys Island;ladys_island
+http://www.meetup.com/cities/us/sc/la_france/;La France;la_france
+http://www.meetup.com/cities/us/sc/lake_city/;Lake City;lake_city
+http://www.meetup.com/cities/us/sc/lake_view/;Lake View;lake_view
+http://www.meetup.com/cities/us/sc/lamar/;Lamar;lamar
+http://www.meetup.com/cities/us/sc/lancaster/;Lancaster;lancaster
+http://www.meetup.com/cities/us/sc/lando/;Lando;lando
+http://www.meetup.com/cities/us/sc/landrum/;Landrum;landrum
+http://www.meetup.com/cities/us/sc/lane/;Lane;lane
+http://www.meetup.com/cities/us/sc/langley/;Langley;langley
+http://www.meetup.com/cities/us/sc/latta/;Latta;latta
+http://www.meetup.com/cities/us/sc/laurens/;Laurens;laurens
+http://www.meetup.com/cities/us/sc/leesville/;Leesville;leesville
+http://www.meetup.com/cities/us/sc/lexington/;Lexington;lexington
+http://www.meetup.com/cities/us/sc/liberty/;Liberty;liberty
+http://www.meetup.com/cities/us/sc/liberty_hill/;Liberty Hill;liberty_hill
+http://www.meetup.com/cities/us/sc/little_mountain/;Little Mountain;little_mountain
+http://www.meetup.com/cities/us/sc/little_river/;Little River;little_river
+http://www.meetup.com/cities/us/sc/little_rock/;Little Rock;little_rock
+http://www.meetup.com/cities/us/sc/lobeco/;Lobeco;lobeco
+http://www.meetup.com/cities/us/sc/lockhart/;Lockhart;lockhart
+http://www.meetup.com/cities/us/sc/lodge/;Lodge;lodge
+http://www.meetup.com/cities/us/sc/long_creek/;Long Creek;long_creek
+http://www.meetup.com/cities/us/sc/longs/;Longs;longs
+http://www.meetup.com/cities/us/sc/loris/;Loris;loris
+http://www.meetup.com/cities/us/sc/lowndesville/;Lowndesville;lowndesville
+http://www.meetup.com/cities/us/sc/lugoff/;Lugoff;lugoff
+http://www.meetup.com/cities/us/sc/luray/;Luray;luray
+http://www.meetup.com/cities/us/sc/lydia/;Lydia;lydia
+http://www.meetup.com/cities/us/sc/lyman/;Lyman;lyman
+http://www.meetup.com/cities/us/sc/lynchburg/;Lynchburg;lynchburg
+http://www.meetup.com/cities/us/sc/manning/;Manning;manning
+http://www.meetup.com/cities/us/sc/marietta/;Marietta;marietta
+http://www.meetup.com/cities/us/sc/marion/;Marion;marion
+http://www.meetup.com/cities/us/sc/martin/;Martin;martin
+http://www.meetup.com/cities/us/sc/mauldin/;Mauldin;mauldin
+http://www.meetup.com/cities/us/sc/mayesville/;Mayesville;mayesville
+http://www.meetup.com/cities/us/sc/mayo/;Mayo;mayo
+http://www.meetup.com/cities/us/sc/mc_bee/;Mc Bee;mc_bee
+http://www.meetup.com/cities/us/sc/mc_clellanville/;Mc Clellanville;mc_clellanville
+http://www.meetup.com/cities/us/sc/mc_coll/;Mc Coll;mc_coll
+http://www.meetup.com/cities/us/sc/mc_connells/;Mc Connells;mc_connells
+http://www.meetup.com/cities/us/sc/mc_cormick/;Mc Cormick;mc_cormick
+http://www.meetup.com/cities/us/sc/miley/;Miley;miley
+http://www.meetup.com/cities/us/sc/minturn/;Minturn;minturn
+http://www.meetup.com/cities/us/sc/modoc/;Modoc;modoc
+http://www.meetup.com/cities/us/sc/moncks_corner/;Moncks Corner;moncks_corner
+http://www.meetup.com/cities/us/sc/monetta/;Monetta;monetta
+http://www.meetup.com/cities/us/sc/montmorenci/;Montmorenci;montmorenci
+http://www.meetup.com/cities/us/sc/moore/;Moore;moore
+http://www.meetup.com/cities/us/sc/mountain_rest/;Mountain Rest;mountain_rest
+http://www.meetup.com/cities/us/sc/mount_carmel/;Mount Carmel;mount_carmel
+http://www.meetup.com/cities/us/sc/mount_croghan/;Mount Croghan;mount_croghan
+http://www.meetup.com/cities/us/sc/mount_pleasant/;Mount Pleasant;mount_pleasant
+http://www.meetup.com/cities/us/sc/mountville/;Mountville;mountville
+http://www.meetup.com/cities/us/sc/mullins/;Mullins;mullins
+http://www.meetup.com/cities/us/sc/murrells_inlet/;Murrells Inlet;murrells_inlet
+http://www.meetup.com/cities/us/sc/myrtle_beach/;Myrtle Beach;myrtle_beach
+http://www.meetup.com/cities/us/sc/neeses/;Neeses;neeses
+http://www.meetup.com/cities/us/sc/nesmith/;Nesmith;nesmith
+http://www.meetup.com/cities/us/sc/newberry/;Newberry;newberry
+http://www.meetup.com/cities/us/sc/new_ellenton/;New Ellenton;new_ellenton
+http://www.meetup.com/cities/us/sc/newry/;Newry;newry
+http://www.meetup.com/cities/us/sc/new_zion/;New Zion;new_zion
+http://www.meetup.com/cities/us/sc/nichols/;Nichols;nichols
+http://www.meetup.com/cities/us/sc/ninety_six/;Ninety Six;ninety_six
+http://www.meetup.com/cities/us/sc/norris/;Norris;norris
+http://www.meetup.com/cities/us/sc/north/;North;north
+http://www.meetup.com/cities/us/sc/north_augusta/;North Augusta;north_augusta
+http://www.meetup.com/cities/us/sc/north_charleston/;North Charleston;north_charleston
+http://www.meetup.com/cities/us/sc/north_myrtle_beach/;North Myrtle Beach;north_myrtle_beach
+http://www.meetup.com/cities/us/sc/norway/;Norway;norway
+http://www.meetup.com/cities/us/sc/okatie/;Okatie;okatie
+http://www.meetup.com/cities/us/sc/olanta/;Olanta;olanta
+http://www.meetup.com/cities/us/sc/olar/;Olar;olar
+http://www.meetup.com/cities/us/sc/orangeburg/;Orangeburg;orangeburg
+http://www.meetup.com/cities/us/sc/pacolet/;Pacolet;pacolet
+http://www.meetup.com/cities/us/sc/pacolet_mills/;Pacolet Mills;pacolet_mills
+http://www.meetup.com/cities/us/sc/pageland/;Pageland;pageland
+http://www.meetup.com/cities/us/sc/pamplico/;Pamplico;pamplico
+http://www.meetup.com/cities/us/sc/parksville/;Parksville;parksville
+http://www.meetup.com/cities/us/sc/patrick/;Patrick;patrick
+http://www.meetup.com/cities/us/sc/pauline/;Pauline;pauline
+http://www.meetup.com/cities/us/sc/pawleys_island/;Pawleys Island;pawleys_island
+http://www.meetup.com/cities/us/sc/peak/;Peak;peak
+http://www.meetup.com/cities/us/sc/pelion/;Pelion;pelion
+http://www.meetup.com/cities/us/sc/pelzer/;Pelzer;pelzer
+http://www.meetup.com/cities/us/sc/pendleton/;Pendleton;pendleton
+http://www.meetup.com/cities/us/sc/pickens/;Pickens;pickens
+http://www.meetup.com/cities/us/sc/piedmont/;Piedmont;piedmont
+http://www.meetup.com/cities/us/sc/pineland/;Pineland;pineland
+http://www.meetup.com/cities/us/sc/pineville/;Pineville;pineville
+http://www.meetup.com/cities/us/sc/pinewood/;Pinewood;pinewood
+http://www.meetup.com/cities/us/sc/pinopolis/;Pinopolis;pinopolis
+http://www.meetup.com/cities/us/sc/plum_branch/;Plum Branch;plum_branch
+http://www.meetup.com/cities/us/sc/pomaria/;Pomaria;pomaria
+http://www.meetup.com/cities/us/sc/port_royal/;Port Royal;port_royal
+http://www.meetup.com/cities/us/sc/prosperity/;Prosperity;prosperity
+http://www.meetup.com/cities/us/sc/rains/;Rains;rains
+http://www.meetup.com/cities/us/sc/ravenel/;Ravenel;ravenel
+http://www.meetup.com/cities/us/sc/reevesville/;Reevesville;reevesville
+http://www.meetup.com/cities/us/sc/reidville/;Reidville;reidville
+http://www.meetup.com/cities/us/sc/rembert/;Rembert;rembert
+http://www.meetup.com/cities/us/sc/richburg/;Richburg;richburg
+http://www.meetup.com/cities/us/sc/richland/;Richland;richland
+http://www.meetup.com/cities/us/sc/ridgeland/;Ridgeland;ridgeland
+http://www.meetup.com/cities/us/sc/ridge_spring/;Ridge Spring;ridge_spring
+http://www.meetup.com/cities/us/sc/ridgeville/;Ridgeville;ridgeville
+http://www.meetup.com/cities/us/sc/ridgeway/;Ridgeway;ridgeway
+http://www.meetup.com/cities/us/sc/rion/;Rion;rion
+http://www.meetup.com/cities/us/sc/rock_hill/;Rock Hill;rock_hill
+http://www.meetup.com/cities/us/sc/roebuck/;Roebuck;roebuck
+http://www.meetup.com/cities/us/sc/round_o/;Round O;round_o
+http://www.meetup.com/cities/us/sc/rowesville/;Rowesville;rowesville
+http://www.meetup.com/cities/us/sc/ruby/;Ruby;ruby
+http://www.meetup.com/cities/us/sc/ruffin/;Ruffin;ruffin
+http://www.meetup.com/cities/us/sc/russellville/;Russellville;russellville
+http://www.meetup.com/cities/us/sc/saint_george/;Saint George;saint_george
+http://www.meetup.com/cities/us/sc/saint_helena_island/;Saint Helena Island;saint_helena_island
+http://www.meetup.com/cities/us/sc/saint_matthews/;Saint Matthews;saint_matthews
+http://www.meetup.com/cities/us/sc/saint_stephen/;Saint Stephen;saint_stephen
+http://www.meetup.com/cities/us/sc/salem/;Salem;salem
+http://www.meetup.com/cities/us/sc/salley/;Salley;salley
+http://www.meetup.com/cities/us/sc/salters/;Salters;salters
+http://www.meetup.com/cities/us/sc/saluda/;Saluda;saluda
+http://www.meetup.com/cities/us/sc/sandy_springs/;Sandy Springs;sandy_springs
+http://www.meetup.com/cities/us/sc/santee/;Santee;santee
+http://www.meetup.com/cities/us/sc/sardinia/;Sardinia;sardinia
+http://www.meetup.com/cities/us/sc/scotia/;Scotia;scotia
+http://www.meetup.com/cities/us/sc/scranton/;Scranton;scranton
+http://www.meetup.com/cities/us/sc/seabrook/;Seabrook;seabrook
+http://www.meetup.com/cities/us/sc/sellers/;Sellers;sellers
+http://www.meetup.com/cities/us/sc/seneca/;Seneca;seneca
+http://www.meetup.com/cities/us/sc/sharon/;Sharon;sharon
+http://www.meetup.com/cities/us/sc/shaw_a_f_b/;Shaw A F B;shaw_a_f_b
+http://www.meetup.com/cities/us/sc/sheldon/;Sheldon;sheldon
+http://www.meetup.com/cities/us/sc/silverstreet/;Silverstreet;silverstreet
+http://www.meetup.com/cities/us/sc/simpsonville/;Simpsonville;simpsonville
+http://www.meetup.com/cities/us/sc/six_mile/;Six Mile;six_mile
+http://www.meetup.com/cities/us/sc/slater/;Slater;slater
+http://www.meetup.com/cities/us/sc/smoaks/;Smoaks;smoaks
+http://www.meetup.com/cities/us/sc/smyrna/;Smyrna;smyrna
+http://www.meetup.com/cities/us/sc/society_hill/;Society Hill;society_hill
+http://www.meetup.com/cities/us/sc/spartanburg/;Spartanburg;spartanburg
+http://www.meetup.com/cities/us/sc/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/sc/starr/;Starr;starr
+http://www.meetup.com/cities/us/sc/startex/;Startex;startex
+http://www.meetup.com/cities/us/sc/state_park/;State Park;state_park
+http://www.meetup.com/cities/us/sc/sullivans_island/;Sullivans Island;sullivans_island
+http://www.meetup.com/cities/us/sc/summerton/;Summerton;summerton
+http://www.meetup.com/cities/us/sc/summerville/;Summerville;summerville
+http://www.meetup.com/cities/us/sc/sumter/;Sumter;sumter
+http://www.meetup.com/cities/us/sc/sunset/;Sunset;sunset
+http://www.meetup.com/cities/us/sc/swansea/;Swansea;swansea
+http://www.meetup.com/cities/us/sc/sycamore/;Sycamore;sycamore
+http://www.meetup.com/cities/us/sc/tamassee/;Tamassee;tamassee
+http://www.meetup.com/cities/us/sc/tatum/;Tatum;tatum
+http://www.meetup.com/cities/us/sc/taylors/;Taylors;taylors
+http://www.meetup.com/cities/us/sc/tigerville/;Tigerville;tigerville
+http://www.meetup.com/cities/us/sc/tillman/;Tillman;tillman
+http://www.meetup.com/cities/us/sc/timmonsville/;Timmonsville;timmonsville
+http://www.meetup.com/cities/us/sc/townville/;Townville;townville
+http://www.meetup.com/cities/us/sc/travelers_rest/;Travelers Rest;travelers_rest
+http://www.meetup.com/cities/us/sc/trenton/;Trenton;trenton
+http://www.meetup.com/cities/us/sc/troy/;Troy;troy
+http://www.meetup.com/cities/us/sc/turbeville/;Turbeville;turbeville
+http://www.meetup.com/cities/us/sc/ulmer/;Ulmer;ulmer
+http://www.meetup.com/cities/us/sc/una/;Una;una
+http://www.meetup.com/cities/us/sc/union/;Union;union
+http://www.meetup.com/cities/us/sc/vance/;Vance;vance
+http://www.meetup.com/cities/us/sc/van_wyck/;Van Wyck;van_wyck
+http://www.meetup.com/cities/us/sc/varnville/;Varnville;varnville
+http://www.meetup.com/cities/us/sc/vaucluse/;Vaucluse;vaucluse
+http://www.meetup.com/cities/us/sc/wadmalaw_island/;Wadmalaw Island;wadmalaw_island
+http://www.meetup.com/cities/us/sc/wagener/;Wagener;wagener
+http://www.meetup.com/cities/us/sc/walhalla/;Walhalla;walhalla
+http://www.meetup.com/cities/us/sc/wallace/;Wallace;wallace
+http://www.meetup.com/cities/us/sc/walterboro/;Walterboro;walterboro
+http://www.meetup.com/cities/us/sc/ward/;Ward;ward
+http://www.meetup.com/cities/us/sc/ware_shoals/;Ware Shoals;ware_shoals
+http://www.meetup.com/cities/us/sc/warrenville/;Warrenville;warrenville
+http://www.meetup.com/cities/us/sc/waterloo/;Waterloo;waterloo
+http://www.meetup.com/cities/us/sc/wedgefield/;Wedgefield;wedgefield
+http://www.meetup.com/cities/us/sc/wellford/;Wellford;wellford
+http://www.meetup.com/cities/us/sc/west_columbia/;West Columbia;west_columbia
+http://www.meetup.com/cities/us/sc/westminster/;Westminster;westminster
+http://www.meetup.com/cities/us/sc/west_union/;West Union;west_union
+http://www.meetup.com/cities/us/sc/westville/;Westville;westville
+http://www.meetup.com/cities/us/sc/white_rock/;White Rock;white_rock
+http://www.meetup.com/cities/us/sc/white_stone/;White Stone;white_stone
+http://www.meetup.com/cities/us/sc/whitmire/;Whitmire;whitmire
+http://www.meetup.com/cities/us/sc/williams/;Williams;williams
+http://www.meetup.com/cities/us/sc/williamston/;Williamston;williamston
+http://www.meetup.com/cities/us/sc/williston/;Williston;williston
+http://www.meetup.com/cities/us/sc/windsor/;Windsor;windsor
+http://www.meetup.com/cities/us/sc/winnsboro/;Winnsboro;winnsboro
+http://www.meetup.com/cities/us/sc/woodruff/;Woodruff;woodruff
+http://www.meetup.com/cities/us/sc/yemassee/;Yemassee;yemassee
+http://www.meetup.com/cities/us/sc/york/;York;york

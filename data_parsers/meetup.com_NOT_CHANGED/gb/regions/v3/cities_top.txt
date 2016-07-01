@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/gb/v3/achmore/;Achmore;achmore
+http://www.meetup.com/cities/gb/v3/alligin/;Alligin;alligin
+http://www.meetup.com/cities/gb/v3/alness/;Alness;alness
+http://www.meetup.com/cities/gb/v3/aviemore/;Aviemore;aviemore
+http://www.meetup.com/cities/gb/v3/avoch/;Avoch;avoch
+http://www.meetup.com/cities/gb/v3/ballachulish/;Ballachulish;ballachulish
+http://www.meetup.com/cities/gb/v3/beauly/;Beauly;beauly
+http://www.meetup.com/cities/gb/v3/bettyhill/;Bettyhill;bettyhill
+http://www.meetup.com/cities/gb/v3/broadford/;Broadford;broadford
+http://www.meetup.com/cities/gb/v3/camault_muir/;Camault Muir;camault_muir
+http://www.meetup.com/cities/gb/v3/caroy/;Caroy;caroy
+http://www.meetup.com/cities/gb/v3/castletown/;Castletown;castletown
+http://www.meetup.com/cities/gb/v3/conista/;Conista;conista
+http://www.meetup.com/cities/gb/v3/cosaig/;Cosaig;cosaig
+http://www.meetup.com/cities/gb/v3/croy/;Croy;croy
+http://www.meetup.com/cities/gb/v3/digg/;Digg;digg
+http://www.meetup.com/cities/gb/v3/dingwall/;Dingwall;dingwall
+http://www.meetup.com/cities/gb/v3/dornoch/;Dornoch;dornoch
+http://www.meetup.com/cities/gb/v3/evanton/;Evanton;evanton
+http://www.meetup.com/cities/gb/v3/feorlig/;Feorlig;feorlig
+http://www.meetup.com/cities/gb/v3/foindle/;Foindle;foindle
+http://www.meetup.com/cities/gb/v3/fort_william/;Fort William;fort_william
+http://www.meetup.com/cities/gb/v3/fortrose/;Fortrose;fortrose
+http://www.meetup.com/cities/gb/v3/garve/;Garve;garve
+http://www.meetup.com/cities/gb/v3/glenbrittle/;Glenbrittle;glenbrittle
+http://www.meetup.com/cities/gb/v3/golspie/;Golspie;golspie
+http://www.meetup.com/cities/gb/v3/grantown-on-spey/;Grantown-on-Spey;grantown-on-spey
+http://www.meetup.com/cities/gb/v3/halkirk/;Halkirk;halkirk
+http://www.meetup.com/cities/gb/v3/inshes/;Inshes;inshes
+http://www.meetup.com/cities/gb/v3/inshes_wood/;Inshes Wood;inshes_wood
+http://www.meetup.com/cities/gb/v3/invergordon/;Invergordon;invergordon
+http://www.meetup.com/cities/gb/v3/inverness/;Inverness;inverness
+http://www.meetup.com/cities/gb/v3/kingussie/;Kingussie;kingussie
+http://www.meetup.com/cities/gb/v3/kyle/;Kyle;kyle
+http://www.meetup.com/cities/gb/v3/ledgowan/;Ledgowan;ledgowan
+http://www.meetup.com/cities/gb/v3/lochend/;Lochend;lochend
+http://www.meetup.com/cities/gb/v3/muir_of_ord/;Muir of Ord;muir_of_ord
+http://www.meetup.com/cities/gb/v3/nairn/;Nairn;nairn
+http://www.meetup.com/cities/gb/v3/newtonmore/;Newtonmore;newtonmore
+http://www.meetup.com/cities/gb/v3/nigg/;Nigg;nigg
+http://www.meetup.com/cities/gb/v3/north_kessock/;North Kessock;north_kessock
+http://www.meetup.com/cities/gb/v3/portree/;Portree;portree
+http://www.meetup.com/cities/gb/v3/spean_bridge/;Spean Bridge;spean_bridge
+http://www.meetup.com/cities/gb/v3/strathpeffer/;Strathpeffer;strathpeffer
+http://www.meetup.com/cities/gb/v3/tain/;Tain;tain
+http://www.meetup.com/cities/gb/v3/thurso/;Thurso;thurso
+http://www.meetup.com/cities/gb/v3/toulvaddie/;Toulvaddie;toulvaddie
+http://www.meetup.com/cities/gb/v3/ullapool/;Ullapool;ullapool
+http://www.meetup.com/cities/gb/v3/west_helmsdale/;West Helmsdale;west_helmsdale
+http://www.meetup.com/cities/gb/v3/wick/;Wick;wick
+http://www.meetup.com/cities/gb/v3/achmore/;Achmore;achmore
+http://www.meetup.com/cities/gb/v3/alligin/;Alligin;alligin
+http://www.meetup.com/cities/gb/v3/alness/;Alness;alness
+http://www.meetup.com/cities/gb/v3/aviemore/;Aviemore;aviemore
+http://www.meetup.com/cities/gb/v3/avoch/;Avoch;avoch
+http://www.meetup.com/cities/gb/v3/ballachulish/;Ballachulish;ballachulish
+http://www.meetup.com/cities/gb/v3/beauly/;Beauly;beauly
+http://www.meetup.com/cities/gb/v3/bettyhill/;Bettyhill;bettyhill
+http://www.meetup.com/cities/gb/v3/broadford/;Broadford;broadford
+http://www.meetup.com/cities/gb/v3/camault_muir/;Camault Muir;camault_muir
+http://www.meetup.com/cities/gb/v3/caroy/;Caroy;caroy
+http://www.meetup.com/cities/gb/v3/castletown/;Castletown;castletown
+http://www.meetup.com/cities/gb/v3/conista/;Conista;conista
+http://www.meetup.com/cities/gb/v3/cosaig/;Cosaig;cosaig
+http://www.meetup.com/cities/gb/v3/croy/;Croy;croy
+http://www.meetup.com/cities/gb/v3/digg/;Digg;digg
+http://www.meetup.com/cities/gb/v3/dingwall/;Dingwall;dingwall
+http://www.meetup.com/cities/gb/v3/dornoch/;Dornoch;dornoch
+http://www.meetup.com/cities/gb/v3/evanton/;Evanton;evanton
+http://www.meetup.com/cities/gb/v3/feorlig/;Feorlig;feorlig
+http://www.meetup.com/cities/gb/v3/foindle/;Foindle;foindle
+http://www.meetup.com/cities/gb/v3/fort_william/;Fort William;fort_william
+http://www.meetup.com/cities/gb/v3/fortrose/;Fortrose;fortrose
+http://www.meetup.com/cities/gb/v3/garve/;Garve;garve
+http://www.meetup.com/cities/gb/v3/glenbrittle/;Glenbrittle;glenbrittle
+http://www.meetup.com/cities/gb/v3/golspie/;Golspie;golspie
+http://www.meetup.com/cities/gb/v3/grantown-on-spey/;Grantown-on-Spey;grantown-on-spey
+http://www.meetup.com/cities/gb/v3/halkirk/;Halkirk;halkirk
+http://www.meetup.com/cities/gb/v3/inshes/;Inshes;inshes
+http://www.meetup.com/cities/gb/v3/inshes_wood/;Inshes Wood;inshes_wood
+http://www.meetup.com/cities/gb/v3/invergordon/;Invergordon;invergordon
+http://www.meetup.com/cities/gb/v3/inverness/;Inverness;inverness
+http://www.meetup.com/cities/gb/v3/kingussie/;Kingussie;kingussie
+http://www.meetup.com/cities/gb/v3/kyle/;Kyle;kyle
+http://www.meetup.com/cities/gb/v3/ledgowan/;Ledgowan;ledgowan
+http://www.meetup.com/cities/gb/v3/lochend/;Lochend;lochend
+http://www.meetup.com/cities/gb/v3/muir_of_ord/;Muir of Ord;muir_of_ord
+http://www.meetup.com/cities/gb/v3/nairn/;Nairn;nairn
+http://www.meetup.com/cities/gb/v3/newtonmore/;Newtonmore;newtonmore
+http://www.meetup.com/cities/gb/v3/nigg/;Nigg;nigg
+http://www.meetup.com/cities/gb/v3/north_kessock/;North Kessock;north_kessock
+http://www.meetup.com/cities/gb/v3/portree/;Portree;portree
+http://www.meetup.com/cities/gb/v3/spean_bridge/;Spean Bridge;spean_bridge
+http://www.meetup.com/cities/gb/v3/strathpeffer/;Strathpeffer;strathpeffer
+http://www.meetup.com/cities/gb/v3/tain/;Tain;tain
+http://www.meetup.com/cities/gb/v3/thurso/;Thurso;thurso
+http://www.meetup.com/cities/gb/v3/toulvaddie/;Toulvaddie;toulvaddie
+http://www.meetup.com/cities/gb/v3/ullapool/;Ullapool;ullapool
+http://www.meetup.com/cities/gb/v3/west_helmsdale/;West Helmsdale;west_helmsdale
+http://www.meetup.com/cities/gb/v3/wick/;Wick;wick

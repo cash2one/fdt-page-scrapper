@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/us/ca/anaheim/;Anaheim;anaheim
+http://www.meetup.com/cities/us/ca/bakersfield/;Bakersfield;bakersfield
+http://www.meetup.com/cities/us/ca/berkeley/;Berkeley;berkeley
+http://www.meetup.com/cities/us/ca/beverly_hills/;Beverly Hills;beverly_hills
+http://www.meetup.com/cities/us/ca/burbank/;Burbank;burbank
+http://www.meetup.com/cities/us/ca/carlsbad/;Carlsbad;carlsbad
+http://www.meetup.com/cities/us/ca/corona/;Corona;corona
+http://www.meetup.com/cities/us/ca/costa_mesa/;Costa Mesa;costa_mesa
+http://www.meetup.com/cities/us/ca/elk_grove/;Elk Grove;elk_grove
+http://www.meetup.com/cities/us/ca/escondido/;Escondido;escondido
+http://www.meetup.com/cities/us/ca/fremont/;Fremont;fremont
+http://www.meetup.com/cities/us/ca/fresno/;Fresno;fresno
+http://www.meetup.com/cities/us/ca/huntington_beach/;Huntington Beach;huntington_beach
+http://www.meetup.com/cities/us/ca/irvine/;Irvine;irvine
+http://www.meetup.com/cities/us/ca/long_beach/;Long Beach;long_beach
+http://www.meetup.com/cities/us/ca/los_angeles/;Los Angeles;los_angeles
+http://www.meetup.com/cities/us/ca/modesto/;Modesto;modesto
+http://www.meetup.com/cities/us/ca/mountain_view/;Mountain View;mountain_view
+http://www.meetup.com/cities/us/ca/murrieta/;Murrieta;murrieta
+http://www.meetup.com/cities/us/ca/newport_beach/;Newport Beach;newport_beach
+http://www.meetup.com/cities/us/ca/north_hollywood/;North Hollywood;north_hollywood
+http://www.meetup.com/cities/us/ca/oakland/;Oakland;oakland
+http://www.meetup.com/cities/us/ca/oceanside/;Oceanside;oceanside
+http://www.meetup.com/cities/us/ca/orange/;Orange;orange
+http://www.meetup.com/cities/us/ca/palmdale/;Palmdale;palmdale
+http://www.meetup.com/cities/us/ca/palo_alto/;Palo Alto;palo_alto
+http://www.meetup.com/cities/us/ca/pasadena/;Pasadena;pasadena
+http://www.meetup.com/cities/us/ca/rancho_cucamonga/;Rancho Cucamonga;rancho_cucamonga
+http://www.meetup.com/cities/us/ca/redondo_beach/;Redondo Beach;redondo_beach
+http://www.meetup.com/cities/us/ca/riverside/;Riverside;riverside
+http://www.meetup.com/cities/us/ca/roseville/;Roseville;roseville
+http://www.meetup.com/cities/us/ca/sacramento/;Sacramento;sacramento
+http://www.meetup.com/cities/us/ca/san_bernardino/;San Bernardino;san_bernardino
+http://www.meetup.com/cities/us/ca/san_diego/;San Diego;san_diego
+http://www.meetup.com/cities/us/ca/san_francisco/;San Francisco;san_francisco
+http://www.meetup.com/cities/us/ca/san_jose/;San Jose;san_jose
+http://www.meetup.com/cities/us/ca/san_mateo/;San Mateo;san_mateo
+http://www.meetup.com/cities/us/ca/san_rafael/;San Rafael;san_rafael
+http://www.meetup.com/cities/us/ca/santa_barbara/;Santa Barbara;santa_barbara
+http://www.meetup.com/cities/us/ca/santa_clara/;Santa Clara;santa_clara
+http://www.meetup.com/cities/us/ca/santa_cruz/;Santa Cruz;santa_cruz
+http://www.meetup.com/cities/us/ca/santa_monica/;Santa Monica;santa_monica
+http://www.meetup.com/cities/us/ca/santa_rosa/;Santa Rosa;santa_rosa
+http://www.meetup.com/cities/us/ca/sherman_oaks/;Sherman Oaks;sherman_oaks
+http://www.meetup.com/cities/us/ca/stockton/;Stockton;stockton
+http://www.meetup.com/cities/us/ca/sunnyvale/;Sunnyvale;sunnyvale
+http://www.meetup.com/cities/us/ca/temecula/;Temecula;temecula
+http://www.meetup.com/cities/us/ca/torrance/;Torrance;torrance
+http://www.meetup.com/cities/us/ca/ventura/;Ventura;ventura
+http://www.meetup.com/cities/us/ca/walnut_creek/;Walnut Creek;walnut_creek

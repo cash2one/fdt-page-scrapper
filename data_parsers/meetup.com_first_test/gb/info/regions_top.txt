@@ -1,0 +1,131 @@
+http://www.meetup.com/cities/gb/t5/;Aberdeen City;t5
+http://www.meetup.com/cities/gb/t6/;Aberdeenshire;t6
+http://www.meetup.com/cities/gb/t7/;Angus;t7
+http://www.meetup.com/cities/gb/q6/;Antrim;q6
+http://www.meetup.com/cities/gb/q7/;Ards;q7
+http://www.meetup.com/cities/gb/t8/;Argyll and Bute;t8
+http://www.meetup.com/cities/gb/q8/;Armagh;q8
+http://www.meetup.com/cities/gb/q9/;Ballymena;q9
+http://www.meetup.com/cities/gb/r1/;Ballymoney;r1
+http://www.meetup.com/cities/gb/r2/;Banbridge;r2
+http://www.meetup.com/cities/gb/a4/;Bath and North East Somerset;a4
+http://www.meetup.com/cities/gb/a5/;Bedfordshire;a5
+http://www.meetup.com/cities/gb/r3/;Belfast;r3
+http://www.meetup.com/cities/gb/03/;Berkshire;03
+http://www.meetup.com/cities/gb/x2/;Blaenau Gwent;x2
+http://www.meetup.com/cities/gb/x3/;Bridgend;x3
+http://www.meetup.com/cities/gb/b9/;Buckinghamshire;b9
+http://www.meetup.com/cities/gb/x4/;Caerphilly;x4
+http://www.meetup.com/cities/gb/c3/;Cambridgeshire;c3
+http://www.meetup.com/cities/gb/x5/;Cardiff;x5
+http://www.meetup.com/cities/gb/x7/;Carmarthenshire;x7
+http://www.meetup.com/cities/gb/r4/;Carrickfergus;r4
+http://www.meetup.com/cities/gb/r5/;Castlereagh;r5
+http://www.meetup.com/cities/gb/x6/;Ceredigion;x6
+http://www.meetup.com/cities/gb/c5/;Cheshire;c5
+http://www.meetup.com/cities/gb/b7/;City of Bristol;b7
+http://www.meetup.com/cities/gb/u8/;City of Edinburgh;u8
+http://www.meetup.com/cities/gb/u1/;Clackmannanshire;u1
+http://www.meetup.com/cities/gb/r6/;Coleraine;r6
+http://www.meetup.com/cities/gb/x8/;Conwy;x8
+http://www.meetup.com/cities/gb/r7/;Cookstown;r7
+http://www.meetup.com/cities/gb/c6/;Cornwall;c6
+http://www.meetup.com/cities/gb/r8/;Craigavon;r8
+http://www.meetup.com/cities/gb/c9/;Cumbria;c9
+http://www.meetup.com/cities/gb/x9/;Denbighshire;x9
+http://www.meetup.com/cities/gb/d3/;Derbyshire;d3
+http://www.meetup.com/cities/gb/s6/;Derry City;s6
+http://www.meetup.com/cities/gb/d4/;Devon;d4
+http://www.meetup.com/cities/gb/d6/;Dorset;d6
+http://www.meetup.com/cities/gb/r9/;Down;r9
+http://www.meetup.com/cities/gb/u2/;Dumfries and Galloway;u2
+http://www.meetup.com/cities/gb/u3/;Dundee City;u3
+http://www.meetup.com/cities/gb/s1/;Dungannon;s1
+http://www.meetup.com/cities/gb/d8/;Durham;d8
+http://www.meetup.com/cities/gb/u4/;East Ayrshire;u4
+http://www.meetup.com/cities/gb/u5/;East Dunbartonshire;u5
+http://www.meetup.com/cities/gb/u6/;East Lothian;u6
+http://www.meetup.com/cities/gb/u7/;East Renfrewshire;u7
+http://www.meetup.com/cities/gb/e1/;East Riding of Yorkshire;e1
+http://www.meetup.com/cities/gb/e2/;East Sussex;e2
+http://www.meetup.com/cities/gb/w8/;Eilean Siar;w8
+http://www.meetup.com/cities/gb/e4/;Essex;e4
+http://www.meetup.com/cities/gb/u9/;Falkirk;u9
+http://www.meetup.com/cities/gb/s2/;Fermanagh;s2
+http://www.meetup.com/cities/gb/v1/;Fife;v1
+http://www.meetup.com/cities/gb/y1/;Flintshire;y1
+http://www.meetup.com/cities/gb/v2/;Glasgow City;v2
+http://www.meetup.com/cities/gb/e6/;Gloucestershire;e6
+http://www.meetup.com/cities/gb/17/;Greater London;17
+http://www.meetup.com/cities/gb/18/;Greater Manchester;18
+http://www.meetup.com/cities/gb/gk/;Guernsey;gk
+http://www.meetup.com/cities/gb/y2/;Gwynedd;y2
+http://www.meetup.com/cities/gb/f2/;Hampshire;f2
+http://www.meetup.com/cities/gb/f7/;Herefordshire;f7
+http://www.meetup.com/cities/gb/f8/;Hertfordshire;f8
+http://www.meetup.com/cities/gb/v3/;Highland;v3
+http://www.meetup.com/cities/gb/v4/;Inverclyde;v4
+http://www.meetup.com/cities/gb/x1/;Isle of Anglesey;x1
+http://www.meetup.com/cities/gb/im/;Isle of Man;im
+http://www.meetup.com/cities/gb/g2/;Isle of Wight;g2
+http://www.meetup.com/cities/gb/je/;Jersey;je
+http://www.meetup.com/cities/gb/g5/;Kent;g5
+http://www.meetup.com/cities/gb/h2/;Lancashire;h2
+http://www.meetup.com/cities/gb/s3/;Larne;s3
+http://www.meetup.com/cities/gb/h5/;Leicestershire;h5
+http://www.meetup.com/cities/gb/s4/;Limavady;s4
+http://www.meetup.com/cities/gb/h7/;Lincolnshire;h7
+http://www.meetup.com/cities/gb/s5/;Lisburn;s5
+http://www.meetup.com/cities/gb/s7/;Magherafelt;s7
+http://www.meetup.com/cities/gb/28/;Merseyside;28
+http://www.meetup.com/cities/gb/y3/;Merthyr Tydfil;y3
+http://www.meetup.com/cities/gb/v5/;Midlothian;v5
+http://www.meetup.com/cities/gb/y4/;Monmouthshire;y4
+http://www.meetup.com/cities/gb/v6/;Moray;v6
+http://www.meetup.com/cities/gb/s8/;Moyle;s8
+http://www.meetup.com/cities/gb/y5/;Neath Port Talbot;y5
+http://www.meetup.com/cities/gb/y6/;Newport;y6
+http://www.meetup.com/cities/gb/s9/;Newry and Mourne;s9
+http://www.meetup.com/cities/gb/t1/;Newtownabbey;t1
+http://www.meetup.com/cities/gb/i9/;Norfolk;i9
+http://www.meetup.com/cities/gb/j1/;Northamptonshire;j1
+http://www.meetup.com/cities/gb/v7/;North Ayrshire;v7
+http://www.meetup.com/cities/gb/t2/;North Down;t2
+http://www.meetup.com/cities/gb/v8/;North Lanarkshire;v8
+http://www.meetup.com/cities/gb/j6/;Northumberland;j6
+http://www.meetup.com/cities/gb/j7/;North Yorkshire;j7
+http://www.meetup.com/cities/gb/j9/;Nottinghamshire;j9
+http://www.meetup.com/cities/gb/t3/;Omagh;t3
+http://www.meetup.com/cities/gb/v9/;Orkney Islands;v9
+http://www.meetup.com/cities/gb/k2/;Oxfordshire;k2
+http://www.meetup.com/cities/gb/y7/;Pembrokeshire;y7
+http://www.meetup.com/cities/gb/w1/;Perth and Kinross;w1
+http://www.meetup.com/cities/gb/y8/;Powys;y8
+http://www.meetup.com/cities/gb/w2/;Renfrewshire;w2
+http://www.meetup.com/cities/gb/y9/;Rhondda Cynon Taff;y9
+http://www.meetup.com/cities/gb/l4/;Rutland;l4
+http://www.meetup.com/cities/gb/t9/;Scottish Borders;t9
+http://www.meetup.com/cities/gb/w3/;Shetland Islands;w3
+http://www.meetup.com/cities/gb/l6/;Shropshire;l6
+http://www.meetup.com/cities/gb/m3/;Somerset;m3
+http://www.meetup.com/cities/gb/w4/;South Ayrshire;w4
+http://www.meetup.com/cities/gb/w5/;South Lanarkshire;w5
+http://www.meetup.com/cities/gb/37/;South Yorkshire;37
+http://www.meetup.com/cities/gb/m9/;Staffordshire;m9
+http://www.meetup.com/cities/gb/w6/;Stirling;w6
+http://www.meetup.com/cities/gb/t4/;Strabane;t4
+http://www.meetup.com/cities/gb/n5/;Suffolk;n5
+http://www.meetup.com/cities/gb/n7/;Surrey;n7
+http://www.meetup.com/cities/gb/z1/;Swansea;z1
+http://www.meetup.com/cities/gb/z3/;The Vale of Glamorgan;z3
+http://www.meetup.com/cities/gb/z2/;Torfaen;z2
+http://www.meetup.com/cities/gb/41/;Tyne and Wear;41
+http://www.meetup.com/cities/gb/p3/;Warwickshire;p3
+http://www.meetup.com/cities/gb/w7/;West Dunbartonshire;w7
+http://www.meetup.com/cities/gb/w9/;West Lothian;w9
+http://www.meetup.com/cities/gb/43/;West Midlands;43
+http://www.meetup.com/cities/gb/p6/;West Sussex;p6
+http://www.meetup.com/cities/gb/45/;West Yorkshire;45
+http://www.meetup.com/cities/gb/p8/;Wiltshire;p8
+http://www.meetup.com/cities/gb/q4/;Worcestershire;q4
+http://www.meetup.com/cities/gb/z4/;Wrexham;z4

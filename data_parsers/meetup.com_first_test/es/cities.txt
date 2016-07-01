@@ -1,0 +1,654 @@
+http://www.meetup.com/cities/es/abar%C3%A1n/;Abarán;abar%C3%A1n
+http://www.meetup.com/cities/es/a_coru%C3%B1a/;A Coruña;a_coru%C3%B1a
+http://www.meetup.com/cities/es/adeje/;Adeje;adeje
+http://www.meetup.com/cities/es/adra/;Adra;adra
+http://www.meetup.com/cities/es/a_estrada/;A Estrada;a_estrada
+http://www.meetup.com/cities/es/a_guarda/;A Guarda;a_guarda
+http://www.meetup.com/cities/es/aguilar_de_la_frontera/;Aguilar de la Frontera;aguilar_de_la_frontera
+http://www.meetup.com/cities/es/%C3%A1guilas/;Águilas;%C3%A1guilas
+http://www.meetup.com/cities/es/ag%C3%BCimes/;Agüimes;ag%C3%BCimes
+http://www.meetup.com/cities/es/alacant/;Alacant;alacant
+http://www.meetup.com/cities/es/alaqu%C3%A0s/;Alaquàs;alaqu%C3%A0s
+http://www.meetup.com/cities/es/a_laracha/;A Laracha;a_laracha
+http://www.meetup.com/cities/es/%C3%A4l%C3%A4t/;Älät;%C3%A4l%C3%A4t
+http://www.meetup.com/cities/es/albacete/;Albacete;albacete
+http://www.meetup.com/cities/es/albal/;Albal;albal
+http://www.meetup.com/cities/es/alberic/;Alberic;alberic
+http://www.meetup.com/cities/es/albolote/;Albolote;albolote
+http://www.meetup.com/cities/es/alboraya/;Alboraya;alboraya
+http://www.meetup.com/cities/es/albox/;Albox;albox
+http://www.meetup.com/cities/es/alcal%C3%A1_de_guadaira/;Alcalá de Guadaira;alcal%C3%A1_de_guadaira
+http://www.meetup.com/cities/es/alcal%C3%A1_de_henares/;Alcalá de Henares;alcal%C3%A1_de_henares
+http://www.meetup.com/cities/es/alcal%C3%A1_la_real/;Alcalá la Real;alcal%C3%A1_la_real
+http://www.meetup.com/cities/es/alca%C3%B1iz/;Alcañiz;alca%C3%B1iz
+http://www.meetup.com/cities/es/alcantarilla/;Alcantarilla;alcantarilla
+http://www.meetup.com/cities/es/alcaudete/;Alcaudete;alcaudete
+http://www.meetup.com/cities/es/alc%C3%A1zar_de_san_juan/;Alcázar de San Juan;alc%C3%A1zar_de_san_juan
+http://www.meetup.com/cities/es/alcobendas/;Alcobendas;alcobendas
+http://www.meetup.com/cities/es/alcoi/;Alcoi;alcoi
+http://www.meetup.com/cities/es/alcorc%C3%B3n/;Alcorcón;alcorc%C3%B3n
+http://www.meetup.com/cities/es/alc%C3%BAdia/;Alcúdia;alc%C3%BAdia
+http://www.meetup.com/cities/es/aldaia/;Aldaia;aldaia
+http://www.meetup.com/cities/es/alfafar/;Alfafar;alfafar
+http://www.meetup.com/cities/es/algeciras/;Algeciras;algeciras
+http://www.meetup.com/cities/es/algemes%C3%AD/;Algemesí;algemes%C3%AD
+http://www.meetup.com/cities/es/algete/;Algete;algete
+http://www.meetup.com/cities/es/alginet/;Alginet;alginet
+http://www.meetup.com/cities/es/alhama_de_murcia/;Alhama de Murcia;alhama_de_murcia
+http://www.meetup.com/cities/es/alhaur%C3%ADn_de_la_torre/;Alhaurín de la Torre;alhaur%C3%ADn_de_la_torre
+http://www.meetup.com/cities/es/alhaur%C3%ADn_el_grande/;Alhaurín el Grande;alhaur%C3%ADn_el_grande
+http://www.meetup.com/cities/es/alicante/;Alicante;alicante
+http://www.meetup.com/cities/es/aller/;Aller;aller
+http://www.meetup.com/cities/es/almansa/;Almansa;almansa
+http://www.meetup.com/cities/es/almassora/;Almassora;almassora
+http://www.meetup.com/cities/es/almendralejo/;Almendralejo;almendralejo
+http://www.meetup.com/cities/es/almer%C3%ADa/;Almería;almer%C3%ADa
+http://www.meetup.com/cities/es/almonte/;Almonte;almonte
+http://www.meetup.com/cities/es/almorad%C3%AD/;Almoradí;almorad%C3%AD
+http://www.meetup.com/cities/es/almu%C3%B1%C3%A9car/;Almuñécar;almu%C3%B1%C3%A9car
+http://www.meetup.com/cities/es/%C3%A1lora/;Álora;%C3%A1lora
+http://www.meetup.com/cities/es/altea/;Altea;altea
+http://www.meetup.com/cities/es/alzira/;Alzira;alzira
+http://www.meetup.com/cities/es/am%C3%A9s/;Amés;am%C3%A9s
+http://www.meetup.com/cities/es/amposta/;Amposta;amposta
+http://www.meetup.com/cities/es/amurrio/;Amurrio;amurrio
+http://www.meetup.com/cities/es/andoain/;Andoain;andoain
+http://www.meetup.com/cities/es/and%C3%BAjar/;Andújar;and%C3%BAjar
+http://www.meetup.com/cities/es/a_pobra_do_carami%C3%B1al/;A Pobra do Caramiñal;a_pobra_do_carami%C3%B1al
+http://www.meetup.com/cities/es/arahal/;Arahal;arahal
+http://www.meetup.com/cities/es/aranda_de_duero/;Aranda de Duero;aranda_de_duero
+http://www.meetup.com/cities/es/aranjuez/;Aranjuez;aranjuez
+http://www.meetup.com/cities/es/archena/;Archena;archena
+http://www.meetup.com/cities/es/archidona/;Archidona;archidona
+http://www.meetup.com/cities/es/arcos_de_la_frontera/;Arcos de la Frontera;arcos_de_la_frontera
+http://www.meetup.com/cities/es/arenys_de_mar/;Arenys de Mar;arenys_de_mar
+http://www.meetup.com/cities/es/arganda_del_rey/;Arganda del Rey;arganda_del_rey
+http://www.meetup.com/cities/es/armilla/;Armilla;armilla
+http://www.meetup.com/cities/es/arnedo/;Arnedo;arnedo
+http://www.meetup.com/cities/es/arona/;Arona;arona
+http://www.meetup.com/cities/es/arrasate/;Arrasate;arrasate
+http://www.meetup.com/cities/es/arrecife/;Arrecife;arrecife
+http://www.meetup.com/cities/es/arrigorriaga/;Arrigorriaga;arrigorriaga
+http://www.meetup.com/cities/es/arteixo/;Arteixo;arteixo
+http://www.meetup.com/cities/es/arucas/;Arucas;arucas
+http://www.meetup.com/cities/es/aspe/;Aspe;aspe
+http://www.meetup.com/cities/es/as_pontes_de_garc%C3%ADa_rodr%C3%ADguez/;As Pontes de García Rodríguez;as_pontes_de_garc%C3%ADa_rodr%C3%ADguez
+http://www.meetup.com/cities/es/as-salt/;as-Salt;as-salt
+http://www.meetup.com/cities/es/astorga/;Astorga;astorga
+http://www.meetup.com/cities/es/atarfe/;Atarfe;atarfe
+http://www.meetup.com/cities/es/%C3%A1vila/;Ávila;%C3%A1vila
+http://www.meetup.com/cities/es/avil%C3%A9s/;Avilés;avil%C3%A9s
+http://www.meetup.com/cities/es/ayamonte/;Ayamonte;ayamonte
+http://www.meetup.com/cities/es/azkoitia/;Azkoitia;azkoitia
+http://www.meetup.com/cities/es/azpeitia/;Azpeitia;azpeitia
+http://www.meetup.com/cities/es/azuaga/;Azuaga;azuaga
+http://www.meetup.com/cities/es/azuqueca_de_henares/;Azuqueca de Henares;azuqueca_de_henares
+http://www.meetup.com/cities/es/badajoz/;Badajoz;badajoz
+http://www.meetup.com/cities/es/badalona/;Badalona;badalona
+http://www.meetup.com/cities/es/baena/;Baena;baena
+http://www.meetup.com/cities/es/baeza/;Baeza;baeza
+http://www.meetup.com/cities/es/bail%C3%A9n/;Bailén;bail%C3%A9n
+http://www.meetup.com/cities/es/baiona/;Baiona;baiona
+http://www.meetup.com/cities/es/balaguer/;Balaguer;balaguer
+http://www.meetup.com/cities/es/banyoles/;Banyoles;banyoles
+http://www.meetup.com/cities/es/barakaldo/;Barakaldo;barakaldo
+http://www.meetup.com/cities/es/bara%C3%B1ain/;Barañain;bara%C3%B1ain
+http://www.meetup.com/cities/es/barbastro/;Barbastro;barbastro
+http://www.meetup.com/cities/es/barbate/;Barbate;barbate
+http://www.meetup.com/cities/es/barber%C3%A0_del_vall%C3%A8s/;Barberà del Vallès;barber%C3%A0_del_vall%C3%A8s
+http://www.meetup.com/cities/es/barcelona/;Barcelona;barcelona
+http://www.meetup.com/cities/es/basauri/;Basauri;basauri
+http://www.meetup.com/cities/es/baza/;Baza;baza
+http://www.meetup.com/cities/es/beasain/;Beasain;beasain
+http://www.meetup.com/cities/es/b%C3%A9jar/;Béjar;b%C3%A9jar
+http://www.meetup.com/cities/es/bembibre/;Bembibre;bembibre
+http://www.meetup.com/cities/es/benaguasil/;Benaguasil;benaguasil
+http://www.meetup.com/cities/es/benalm%C3%A1dena/;Benalmádena;benalm%C3%A1dena
+http://www.meetup.com/cities/es/benavente/;Benavente;benavente
+http://www.meetup.com/cities/es/benet%C3%BAsser/;Benetússer;benet%C3%BAsser
+http://www.meetup.com/cities/es/benicarl%C3%B3/;Benicarló;benicarl%C3%B3
+http://www.meetup.com/cities/es/benic%C3%A0ss%C3%ACm/;Benicàssìm;benic%C3%A0ss%C3%ACm
+http://www.meetup.com/cities/es/benidorm/;Benidorm;benidorm
+http://www.meetup.com/cities/es/benifai%C3%B3/;Benifaió;benifai%C3%B3
+http://www.meetup.com/cities/es/berga/;Berga;berga
+http://www.meetup.com/cities/es/bergara/;Bergara;bergara
+http://www.meetup.com/cities/es/berja/;Berja;berja
+http://www.meetup.com/cities/es/bermeo/;Bermeo;bermeo
+http://www.meetup.com/cities/es/betanzos/;Betanzos;betanzos
+http://www.meetup.com/cities/es/b%C3%A8tera/;Bètera;b%C3%A8tera
+http://www.meetup.com/cities/es/bilbao/;Bilbao;bilbao
+http://www.meetup.com/cities/es/blanes/;Blanes;blanes
+http://www.meetup.com/cities/es/boadilla_del_monte/;Boadilla del Monte;boadilla_del_monte
+http://www.meetup.com/cities/es/boiro/;Boiro;boiro
+http://www.meetup.com/cities/es/bola%C3%B1os_de_calatrava/;Bolaños de Calatrava;bola%C3%B1os_de_calatrava
+http://www.meetup.com/cities/es/bollullos_par_del_condado/;Bollullos Par del Condado;bollullos_par_del_condado
+http://www.meetup.com/cities/es/brenes/;Brenes;brenes
+http://www.meetup.com/cities/es/bueu/;Bueu;bueu
+http://www.meetup.com/cities/es/bullas/;Bullas;bullas
+http://www.meetup.com/cities/es/bu%C3%B1ol/;Buñol;bu%C3%B1ol
+http://www.meetup.com/cities/es/burgos/;Burgos;burgos
+http://www.meetup.com/cities/es/burjassot/;Burjassot;burjassot
+http://www.meetup.com/cities/es/burlata/;Burlata;burlata
+http://www.meetup.com/cities/es/burriana/;Burriana;burriana
+http://www.meetup.com/cities/es/cabra/;Cabra;cabra
+http://www.meetup.com/cities/es/c%C3%A1ceres/;Cáceres;c%C3%A1ceres
+http://www.meetup.com/cities/es/c%C3%A1diz/;Cádiz;c%C3%A1diz
+http://www.meetup.com/cities/es/calafell/;Calafell;calafell
+http://www.meetup.com/cities/es/calahorra/;Calahorra;calahorra
+http://www.meetup.com/cities/es/calatayud/;Calatayud;calatayud
+http://www.meetup.com/cities/es/caldes_de_montbui/;Caldes de Montbui;caldes_de_montbui
+http://www.meetup.com/cities/es/calella/;Calella;calella
+http://www.meetup.com/cities/es/callosa_de_segura/;Callosa de Segura;callosa_de_segura
+http://www.meetup.com/cities/es/calp/;Calp;calp
+http://www.meetup.com/cities/es/calvi%C3%A0/;Calvià;calvi%C3%A0
+http://www.meetup.com/cities/es/camargo/;Camargo;camargo
+http://www.meetup.com/cities/es/%C3%A7amas/;Çamas;%C3%A7amas
+http://www.meetup.com/cities/es/cambados/;Cambados;cambados
+http://www.meetup.com/cities/es/cambre/;Cambre;cambre
+http://www.meetup.com/cities/es/cambrils/;Cambrils;cambrils
+http://www.meetup.com/cities/es/campo_de_criptana/;Campo de Criptana;campo_de_criptana
+http://www.meetup.com/cities/es/canals/;Canals;canals
+http://www.meetup.com/cities/es/candel%C3%A1ria/;Candelária;candel%C3%A1ria
+http://www.meetup.com/cities/es/cangas/;Cangas;cangas
+http://www.meetup.com/cities/es/cangas_del_narcea/;Cangas del Narcea;cangas_del_narcea
+http://www.meetup.com/cities/es/canovelles/;Canovelles;canovelles
+http://www.meetup.com/cities/es/cantabria/;Cantabria;cantabria
+http://www.meetup.com/cities/es/caravaca_de_la_cruz/;Caravaca de la Cruz;caravaca_de_la_cruz
+http://www.meetup.com/cities/es/carballo/;Carballo;carballo
+http://www.meetup.com/cities/es/carcaixent/;Carcaixent;carcaixent
+http://www.meetup.com/cities/es/cardedeu/;Cardedeu;cardedeu
+http://www.meetup.com/cities/es/carlet/;Carlet;carlet
+http://www.meetup.com/cities/es/carre%C3%B1o/;Carreño;carre%C3%B1o
+http://www.meetup.com/cities/es/cartagena/;Cartagena;cartagena
+http://www.meetup.com/cities/es/c%C3%A1rtama/;Cártama;c%C3%A1rtama
+http://www.meetup.com/cities/es/cartaya/;Cartaya;cartaya
+http://www.meetup.com/cities/es/castellar_del_vall%C3%A8s/;Castellar del Vallès;castellar_del_vall%C3%A8s
+http://www.meetup.com/cities/es/castelldefels/;Castelldefels;castelldefels
+http://www.meetup.com/cities/es/castell%C3%B3/;Castelló;castell%C3%B3
+http://www.meetup.com/cities/es/castilleja_de_la_cuesta/;Castilleja de la Cuesta;castilleja_de_la_cuesta
+http://www.meetup.com/cities/es/castrill%C3%B3n/;Castrillón;castrill%C3%B3n
+http://www.meetup.com/cities/es/castro-urdiales/;Castro-Urdiales;castro-urdiales
+http://www.meetup.com/cities/es/catarroja/;Catarroja;catarroja
+http://www.meetup.com/cities/es/ceheg%C3%ADn/;Cehegín;ceheg%C3%ADn
+http://www.meetup.com/cities/es/cerdanyola/;Cerdanyola;cerdanyola
+http://www.meetup.com/cities/es/cervo/;Cervo;cervo
+http://www.meetup.com/cities/es/ceuta/;Ceuta;ceuta
+http://www.meetup.com/cities/es/chantada/;Chantada;chantada
+http://www.meetup.com/cities/es/chiapa/;Chiapa;chiapa
+http://www.meetup.com/cities/es/chiclana/;Chiclana;chiclana
+http://www.meetup.com/cities/es/chipiona/;Chipiona;chipiona
+http://www.meetup.com/cities/es/ciempozuelos/;Ciempozuelos;ciempozuelos
+http://www.meetup.com/cities/es/cieza/;Cieza;cieza
+http://www.meetup.com/cities/es/ciudad_real/;Ciudad Real;ciudad_real
+http://www.meetup.com/cities/es/ciudad_rodrigo/;Ciudad Rodrigo;ciudad_rodrigo
+http://www.meetup.com/cities/es/ciutadella_de_menorca/;Ciutadella de Menorca;ciutadella_de_menorca
+http://www.meetup.com/cities/es/cocentaina/;Cocentaina;cocentaina
+http://www.meetup.com/cities/es/co%C3%ADn/;Coín;co%C3%ADn
+http://www.meetup.com/cities/es/collado_villalba/;Collado Villalba;collado_villalba
+http://www.meetup.com/cities/es/colmenar_viejo/;Colmenar Viejo;colmenar_viejo
+http://www.meetup.com/cities/es/colombia/;Colombia;colombia
+http://www.meetup.com/cities/es/conil/;Conil;conil
+http://www.meetup.com/cities/es/consuegra/;Consuegra;consuegra
+http://www.meetup.com/cities/es/c%C3%B3rdoba/;Córdoba;c%C3%B3rdoba
+http://www.meetup.com/cities/es/coria/;Coria;coria
+http://www.meetup.com/cities/es/coria_del_r%C3%ADo/;Coria del Río;coria_del_r%C3%ADo
+http://www.meetup.com/cities/es/cornell%C3%A0/;Cornellà;cornell%C3%A0
+http://www.meetup.com/cities/es/corralejo/;Corralejo;corralejo
+http://www.meetup.com/cities/es/corvera_de_asturias/;Corvera de Asturias;corvera_de_asturias
+http://www.meetup.com/cities/es/coslada/;Coslada;coslada
+http://www.meetup.com/cities/es/crevillent/;Crevillent;crevillent
+http://www.meetup.com/cities/es/cuenca/;Cuenca;cuenca
+http://www.meetup.com/cities/es/cullera/;Cullera;cullera
+http://www.meetup.com/cities/es/culleredo/;Culleredo;culleredo
+http://www.meetup.com/cities/es/daimiel/;Daimiel;daimiel
+http://www.meetup.com/cities/es/d%C3%A9nia/;Dénia;d%C3%A9nia
+http://www.meetup.com/cities/es/don_benito/;Don Benito;don_benito
+http://www.meetup.com/cities/es/donostia/;Donostia;donostia
+http://www.meetup.com/cities/es/dos_hermanas/;Dos Hermanas;dos_hermanas
+http://www.meetup.com/cities/es/durango/;Durango;durango
+http://www.meetup.com/cities/es/%C3%A9cija/;Écija;%C3%A9cija
+http://www.meetup.com/cities/es/eibar/;Eibar;eibar
+http://www.meetup.com/cities/es/eivissa/;Eivissa;eivissa
+http://www.meetup.com/cities/es/ejea_de_los_caballeros/;Ejea de los Caballeros;ejea_de_los_caballeros
+http://www.meetup.com/cities/es/el_astillero/;El Astillero;el_astillero
+http://www.meetup.com/cities/es/el_campello/;El Campello;el_campello
+http://www.meetup.com/cities/es/elda/;Elda;elda
+http://www.meetup.com/cities/es/el_ejido/;El Ejido;el_ejido
+http://www.meetup.com/cities/es/el_escorial/;El Escorial;el_escorial
+http://www.meetup.com/cities/es/elgoibar/;Elgoibar;elgoibar
+http://www.meetup.com/cities/es/el_masnou/;El Masnou;el_masnou
+http://www.meetup.com/cities/es/el_prat_de_llobregat/;El Prat de Llobregat;el_prat_de_llobregat
+http://www.meetup.com/cities/es/el_puerto_de_santa_mar%C3%ADa/;El Puerto de Santa María;el_puerto_de_santa_mar%C3%ADa
+http://www.meetup.com/cities/es/el_vendrell/;El Vendrell;el_vendrell
+http://www.meetup.com/cities/es/el_viso_del_alcor/;El Viso del Alcor;el_viso_del_alcor
+http://www.meetup.com/cities/es/elx/;Elx;elx
+http://www.meetup.com/cities/es/erandio/;Erandio;erandio
+http://www.meetup.com/cities/es/ermua/;Ermua;ermua
+http://www.meetup.com/cities/es/errenteria/;Errenteria;errenteria
+http://www.meetup.com/cities/es/esparreguera/;Esparreguera;esparreguera
+http://www.meetup.com/cities/es/esplugues_de_llobregat/;Esplugues de Llobregat;esplugues_de_llobregat
+http://www.meetup.com/cities/es/estepa/;Estepa;estepa
+http://www.meetup.com/cities/es/estepona/;Estepona;estepona
+http://www.meetup.com/cities/es/etxano/;Etxano;etxano
+http://www.meetup.com/cities/es/felanitx/;Felanitx;felanitx
+http://www.meetup.com/cities/es/fene/;Fene;fene
+http://www.meetup.com/cities/es/fern%C3%A1n-n%C3%BA%C3%B1ez/;Fernán-Núñez;fern%C3%A1n-n%C3%BA%C3%B1ez
+http://www.meetup.com/cities/es/ferrol/;Ferrol;ferrol
+http://www.meetup.com/cities/es/figueres/;Figueres;figueres
+http://www.meetup.com/cities/es/formentera/;Formentera;formentera
+http://www.meetup.com/cities/es/foz/;Foz;foz
+http://www.meetup.com/cities/es/fraga/;Fraga;fraga
+http://www.meetup.com/cities/es/fuengirola/;Fuengirola;fuengirola
+http://www.meetup.com/cities/es/fuenlabrada/;Fuenlabrada;fuenlabrada
+http://www.meetup.com/cities/es/fuente_palmera/;Fuente Palmera;fuente_palmera
+http://www.meetup.com/cities/es/galapagar/;Galapagar;galapagar
+http://www.meetup.com/cities/es/galdakao/;Galdakao;galdakao
+http://www.meetup.com/cities/es/g%C3%A1ldar/;Gáldar;g%C3%A1ldar
+http://www.meetup.com/cities/es/gandia/;Gandia;gandia
+http://www.meetup.com/cities/es/gav%C3%A0/;Gavà;gav%C3%A0
+http://www.meetup.com/cities/es/gernika-lumo/;Gernika-Lumo;gernika-lumo
+http://www.meetup.com/cities/es/getafe/;Getafe;getafe
+http://www.meetup.com/cities/es/getxo/;Getxo;getxo
+http://www.meetup.com/cities/es/gibrale%C3%B3n/;Gibraleón;gibrale%C3%B3n
+http://www.meetup.com/cities/es/gij%C3%B3n/;Gijón;gij%C3%B3n
+http://www.meetup.com/cities/es/girona/;Girona;girona
+http://www.meetup.com/cities/es/godella/;Godella;godella
+http://www.meetup.com/cities/es/gondomar/;Gondomar;gondomar
+http://www.meetup.com/cities/es/grado/;Grado;grado
+http://www.meetup.com/cities/es/granada/;Granada;granada
+http://www.meetup.com/cities/es/granadilla_de_abona/;Granadilla de Abona;granadilla_de_abona
+http://www.meetup.com/cities/es/granollers/;Granollers;granollers
+http://www.meetup.com/cities/es/guadalajara/;Guadalajara;guadalajara
+http://www.meetup.com/cities/es/guadix/;Guadix;guadix
+http://www.meetup.com/cities/es/gu%C3%ADa_de_isora/;Guía de Isora;gu%C3%ADa_de_isora
+http://www.meetup.com/cities/es/g%C3%BCimar/;Güimar;g%C3%BCimar
+http://www.meetup.com/cities/es/hell%C3%ADn/;Hellín;hell%C3%ADn
+http://www.meetup.com/cities/es/hernani/;Hernani;hernani
+http://www.meetup.com/cities/es/hondarribia/;Hondarribia;hondarribia
+http://www.meetup.com/cities/es/huelva/;Huelva;huelva
+http://www.meetup.com/cities/es/hu%C3%A9rcal-overa/;Huércal-Overa;hu%C3%A9rcal-overa
+http://www.meetup.com/cities/es/huesca/;Huesca;huesca
+http://www.meetup.com/cities/es/hu%C3%A9scar/;Huéscar;hu%C3%A9scar
+http://www.meetup.com/cities/es/ibi/;Ibi;ibi
+http://www.meetup.com/cities/es/ibiza/;Ibiza;ibiza
+http://www.meetup.com/cities/es/icod_de_los_vinos/;Icod de los Vinos;icod_de_los_vinos
+http://www.meetup.com/cities/es/igualada/;Igualada;igualada
+http://www.meetup.com/cities/es/illescas/;Illescas;illescas
+http://www.meetup.com/cities/es/illora/;Illora;illora
+http://www.meetup.com/cities/es/inca/;Inca;inca
+http://www.meetup.com/cities/es/ingenio/;Ingenio;ingenio
+http://www.meetup.com/cities/es/irun/;Irun;irun
+http://www.meetup.com/cities/es/isla_cristina/;Isla Cristina;isla_cristina
+http://www.meetup.com/cities/es/jaca/;Jaca;jaca
+http://www.meetup.com/cities/es/ja%C3%A9n/;Jaén;ja%C3%A9n
+http://www.meetup.com/cities/es/jerez/;Jerez;jerez
+http://www.meetup.com/cities/es/jerez_de_los_caballeros/;Jerez de los Caballeros;jerez_de_los_caballeros
+http://www.meetup.com/cities/es/j%C3%B3dar/;Jódar;j%C3%B3dar
+http://www.meetup.com/cities/es/jumilla/;Jumilla;jumilla
+http://www.meetup.com/cities/es/l%27alf%C3%A0s_del_pi/;L'Alfàs del Pi;l%27alf%C3%A0s_del_pi
+http://www.meetup.com/cities/es/l%27eliana/;L'Eliana;l%27eliana
+http://www.meetup.com/cities/es/l%27hospitalet_de_llobregat/;L'Hospitalet de Llobregat;l%27hospitalet_de_llobregat
+http://www.meetup.com/cities/es/la_algaba/;La Algaba;la_algaba
+http://www.meetup.com/cities/es/la_ba%C3%B1eza/;La Bañeza;la_ba%C3%B1eza
+http://www.meetup.com/cities/es/la_carlota/;La Carlota;la_carlota
+http://www.meetup.com/cities/es/la_carolina/;La Carolina;la_carolina
+http://www.meetup.com/cities/es/la_garriga/;La Garriga;la_garriga
+http://www.meetup.com/cities/es/lagos_de_moreno/;Lagos de Moreno;lagos_de_moreno
+http://www.meetup.com/cities/es/laguna_de_duero/;Laguna de Duero;laguna_de_duero
+http://www.meetup.com/cities/es/lal%C3%ADn/;Lalín;lal%C3%ADn
+http://www.meetup.com/cities/es/la_l%C3%ADnea/;La Línea;la_l%C3%ADnea
+http://www.meetup.com/cities/es/la_llagosta/;La Llagosta;la_llagosta
+http://www.meetup.com/cities/es/la_moncada/;La Moncada;la_moncada
+http://www.meetup.com/cities/es/langreo/;Langreo;langreo
+http://www.meetup.com/cities/es/la_orotava/;La Orotava;la_orotava
+http://www.meetup.com/cities/es/la_palma_de_cervell%C3%B3/;La Palma de Cervelló;la_palma_de_cervell%C3%B3
+http://www.meetup.com/cities/es/la_palma_del_condado/;La Palma del Condado;la_palma_del_condado
+http://www.meetup.com/cities/es/la_pobla_de_vallbona/;La Pobla de Vallbona;la_pobla_de_vallbona
+http://www.meetup.com/cities/es/la_puebla_de_cazalla/;La Puebla de Cazalla;la_puebla_de_cazalla
+http://www.meetup.com/cities/es/la_puebla_del_r%C3%ADo/;La Puebla del Río;la_puebla_del_r%C3%ADo
+http://www.meetup.com/cities/es/laredo/;Laredo;laredo
+http://www.meetup.com/cities/es/la_rinconada/;La Rinconada;la_rinconada
+http://www.meetup.com/cities/es/la_rioja/;La Rioja;la_rioja
+http://www.meetup.com/cities/es/la_roda/;La Roda;la_roda
+http://www.meetup.com/cities/es/las_cabezas_de_san_juan/;Las Cabezas de San Juan;las_cabezas_de_san_juan
+http://www.meetup.com/cities/es/la_seu_d%27urgell/;La Seu d'Urgell;la_seu_d%27urgell
+http://www.meetup.com/cities/es/la_solana/;La Solana;la_solana
+http://www.meetup.com/cities/es/las_palmas/;Las Palmas;las_palmas
+http://www.meetup.com/cities/es/las_rozas_de_madrid/;Las Rozas de Madrid;las_rozas_de_madrid
+http://www.meetup.com/cities/es/las_torres_de_cotillas/;Las Torres de Cotillas;las_torres_de_cotillas
+http://www.meetup.com/cities/es/la_uni%C3%B3n/;La Unión;la_uni%C3%B3n
+http://www.meetup.com/cities/es/la_vall_d%27uix%C3%B3/;La Vall d'Uixó;la_vall_d%27uix%C3%B3
+http://www.meetup.com/cities/es/laviana/;Laviana;laviana
+http://www.meetup.com/cities/es/la_vila_joiosa/;La Vila Joiosa;la_vila_joiosa
+http://www.meetup.com/cities/es/la_zubia/;La Zubia;la_zubia
+http://www.meetup.com/cities/es/lebrija/;Lebrija;lebrija
+http://www.meetup.com/cities/es/legan%C3%A9s/;Leganés;legan%C3%A9s
+http://www.meetup.com/cities/es/legazpi/;Legazpi;legazpi
+http://www.meetup.com/cities/es/leioa/;Leioa;leioa
+http://www.meetup.com/cities/es/lena/;Lena;lena
+http://www.meetup.com/cities/es/le%C3%B3n/;León;le%C3%B3n
+http://www.meetup.com/cities/es/lepe/;Lepe;lepe
+http://www.meetup.com/cities/es/linares/;Linares;linares
+http://www.meetup.com/cities/es/lizarra/;Lizarra;lizarra
+http://www.meetup.com/cities/es/llanera/;Llanera;llanera
+http://www.meetup.com/cities/es/llanes/;Llanes;llanes
+http://www.meetup.com/cities/es/lleida/;Lleida;lleida
+http://www.meetup.com/cities/es/ll%C3%ADria/;Llíria;ll%C3%ADria
+http://www.meetup.com/cities/es/llodio/;Llodio;llodio
+http://www.meetup.com/cities/es/lloret_de_mar/;Lloret de Mar;lloret_de_mar
+http://www.meetup.com/cities/es/llucmajor/;Llucmajor;llucmajor
+http://www.meetup.com/cities/es/logro%C3%B1o/;Logroño;logro%C3%B1o
+http://www.meetup.com/cities/es/loja/;Loja;loja
+http://www.meetup.com/cities/es/lora_del_r%C3%ADo/;Lora del Río;lora_del_r%C3%ADo
+http://www.meetup.com/cities/es/lorca/;Lorca;lorca
+http://www.meetup.com/cities/es/los_barrios/;Los Barrios;los_barrios
+http://www.meetup.com/cities/es/los_corrales_de_buelna/;Los Corrales de Buelna;los_corrales_de_buelna
+http://www.meetup.com/cities/es/los_llanos_de_aridane/;Los Llanos de Aridane;los_llanos_de_aridane
+http://www.meetup.com/cities/es/los_palacios_y_villafranca/;Los Palacios y Villafranca;los_palacios_y_villafranca
+http://www.meetup.com/cities/es/los_realejos/;Los Realejos;los_realejos
+http://www.meetup.com/cities/es/lucena/;Lucena;lucena
+http://www.meetup.com/cities/es/lugo/;Lugo;lugo
+http://www.meetup.com/cities/es/madrid/;Madrid;madrid
+http://www.meetup.com/cities/es/madridejos/;Madridejos;madridejos
+http://www.meetup.com/cities/es/mah%C3%B3n/;Mahón;mah%C3%B3n
+http://www.meetup.com/cities/es/mairena_del_alcor/;Mairena del Alcor;mairena_del_alcor
+http://www.meetup.com/cities/es/mairena_del_aljarafe/;Mairena del Aljarafe;mairena_del_aljarafe
+http://www.meetup.com/cities/es/majadahonda/;Majadahonda;majadahonda
+http://www.meetup.com/cities/es/m%C3%A1laga/;Málaga;m%C3%A1laga
+http://www.meetup.com/cities/es/malgrat_de_mar/;Malgrat de Mar;malgrat_de_mar
+http://www.meetup.com/cities/es/manacor/;Manacor;manacor
+http://www.meetup.com/cities/es/manises/;Manises;manises
+http://www.meetup.com/cities/es/manlleu/;Manlleu;manlleu
+http://www.meetup.com/cities/es/manresa/;Manresa;manresa
+http://www.meetup.com/cities/es/manzanares/;Manzanares;manzanares
+http://www.meetup.com/cities/es/maracena/;Maracena;maracena
+http://www.meetup.com/cities/es/marbella/;Marbella;marbella
+http://www.meetup.com/cities/es/marchena/;Marchena;marchena
+http://www.meetup.com/cities/es/mar%C3%ADn/;Marín;mar%C3%ADn
+http://www.meetup.com/cities/es/marratxi/;Marratxi;marratxi
+http://www.meetup.com/cities/es/martorell/;Martorell;martorell
+http://www.meetup.com/cities/es/martos/;Martos;martos
+http://www.meetup.com/cities/es/massamagrell/;Massamagrell;massamagrell
+http://www.meetup.com/cities/es/matar%C3%B3/;Mataró;matar%C3%B3
+http://www.meetup.com/cities/es/mazarr%C3%B3n/;Mazarrón;mazarr%C3%B3n
+http://www.meetup.com/cities/es/medina_del_campo/;Medina del Campo;medina_del_campo
+http://www.meetup.com/cities/es/medina-sidonia/;Medina-Sidonia;medina-sidonia
+http://www.meetup.com/cities/es/mejorada_del_campo/;Mejorada del Campo;mejorada_del_campo
+http://www.meetup.com/cities/es/melilla/;Melilla;melilla
+http://www.meetup.com/cities/es/menongue/;Menongue;menongue
+http://www.meetup.com/cities/es/m%C3%A9rida/;Mérida;m%C3%A9rida
+http://www.meetup.com/cities/es/miajadas/;Miajadas;miajadas
+http://www.meetup.com/cities/es/mieres/;Mieres;mieres
+http://www.meetup.com/cities/es/mijas/;Mijas;mijas
+http://www.meetup.com/cities/es/miranda_de_ebro/;Miranda de Ebro;miranda_de_ebro
+http://www.meetup.com/cities/es/mislata/;Mislata;mislata
+http://www.meetup.com/cities/es/moa%C3%B1a/;Moaña;moa%C3%B1a
+http://www.meetup.com/cities/es/mog%C3%A1n/;Mogán;mog%C3%A1n
+http://www.meetup.com/cities/es/moguer/;Moguer;moguer
+http://www.meetup.com/cities/es/molina_de_segura/;Molina de Segura;molina_de_segura
+http://www.meetup.com/cities/es/molins_de_rei/;Molins de Rei;molins_de_rei
+http://www.meetup.com/cities/es/mollet_del_vall%C3%A8s/;Mollet del Vallès;mollet_del_vall%C3%A8s
+http://www.meetup.com/cities/es/monforte_de_lemos/;Monforte de Lemos;monforte_de_lemos
+http://www.meetup.com/cities/es/mon%C3%B2ver/;Monòver;mon%C3%B2ver
+http://www.meetup.com/cities/es/montcada_i_reixac/;Montcada i Reixac;montcada_i_reixac
+http://www.meetup.com/cities/es/montijo/;Montijo;montijo
+http://www.meetup.com/cities/es/montilla/;Montilla;montilla
+http://www.meetup.com/cities/es/montorn%C3%A8s_del_vall%C3%A8s/;Montornès del Vallès;montorn%C3%A8s_del_vall%C3%A8s
+http://www.meetup.com/cities/es/montoro/;Montoro;montoro
+http://www.meetup.com/cities/es/monz%C3%B3n/;Monzón;monz%C3%B3n
+http://www.meetup.com/cities/es/mor%C3%B3n_de_la_frontera/;Morón de la Frontera;mor%C3%B3n_de_la_frontera
+http://www.meetup.com/cities/es/m%C3%B3stoles/;Móstoles;m%C3%B3stoles
+http://www.meetup.com/cities/es/motril/;Motril;motril
+http://www.meetup.com/cities/es/mula/;Mula;mula
+http://www.meetup.com/cities/es/mung%C3%ADa/;Mungía;mung%C3%ADa
+http://www.meetup.com/cities/es/murcia/;Murcia;murcia
+http://www.meetup.com/cities/es/muros/;Muros;muros
+http://www.meetup.com/cities/es/mutxamel/;Mutxamel;mutxamel
+http://www.meetup.com/cities/es/nar%C3%B3n/;Narón;nar%C3%B3n
+http://www.meetup.com/cities/es/navalcarnero/;Navalcarnero;navalcarnero
+http://www.meetup.com/cities/es/navalmoral_de_la_mata/;Navalmoral de la Mata;navalmoral_de_la_mata
+http://www.meetup.com/cities/es/nerja/;Nerja;nerja
+http://www.meetup.com/cities/es/nigr%C3%A1n/;Nigrán;nigr%C3%A1n
+http://www.meetup.com/cities/es/nijar/;Nijar;nijar
+http://www.meetup.com/cities/es/noia/;Noia;noia
+http://www.meetup.com/cities/es/novelda/;Novelda;novelda
+http://www.meetup.com/cities/es/nules/;Nules;nules
+http://www.meetup.com/cities/es/oaxaca/;Oaxaca;oaxaca
+http://www.meetup.com/cities/es/o_barco_de_valdeorras/;O Barco de Valdeorras;o_barco_de_valdeorras
+http://www.meetup.com/cities/es/o_carballi%C3%B1o/;O Carballiño;o_carballi%C3%B1o
+http://www.meetup.com/cities/es/o_grove/;O Grove;o_grove
+http://www.meetup.com/cities/es/oleiros/;Oleiros;oleiros
+http://www.meetup.com/cities/es/olesa_de_montserrat/;Olesa de Montserrat;olesa_de_montserrat
+http://www.meetup.com/cities/es/oliva/;Oliva;oliva
+http://www.meetup.com/cities/es/olivenza/;Olivenza;olivenza
+http://www.meetup.com/cities/es/o%C3%B1ati/;Oñati;o%C3%B1ati
+http://www.meetup.com/cities/es/onda/;Onda;onda
+http://www.meetup.com/cities/es/ondarroa/;Ondarroa;ondarroa
+http://www.meetup.com/cities/es/ontinyent/;Ontinyent;ontinyent
+http://www.meetup.com/cities/es/o_porri%C3%B1o/;O Porriño;o_porri%C3%B1o
+http://www.meetup.com/cities/es/ordes/;Ordes;ordes
+http://www.meetup.com/cities/es/oria/;Oria;oria
+http://www.meetup.com/cities/es/orihuela/;Orihuela;orihuela
+http://www.meetup.com/cities/es/ortiguera/;Ortiguera;ortiguera
+http://www.meetup.com/cities/es/osuna/;Osuna;osuna
+http://www.meetup.com/cities/es/ourense/;Ourense;ourense
+http://www.meetup.com/cities/es/oviedo/;Oviedo;oviedo
+http://www.meetup.com/cities/es/padr%C3%B3n/;Padrón;padr%C3%B3n
+http://www.meetup.com/cities/es/paiporta/;Paiporta;paiporta
+http://www.meetup.com/cities/es/palafrugell/;Palafrugell;palafrugell
+http://www.meetup.com/cities/es/palam%C3%B3s/;Palamós;palam%C3%B3s
+http://www.meetup.com/cities/es/palau-solit%C3%A0_i_plegamans/;Palau-solità i Plegamans;palau-solit%C3%A0_i_plegamans
+http://www.meetup.com/cities/es/palencia/;Palencia;palencia
+http://www.meetup.com/cities/es/palma/;Palma;palma
+http://www.meetup.com/cities/es/palma_del_r%C3%ADo/;Palma del Río;palma_del_r%C3%ADo
+http://www.meetup.com/cities/es/palmanova/;Palmanova;palmanova
+http://www.meetup.com/cities/es/pamplona/;Pamplona;pamplona
+http://www.meetup.com/cities/es/parets_del_vall%C3%A8s/;Parets del Vallès;parets_del_vall%C3%A8s
+http://www.meetup.com/cities/es/parla/;Parla;parla
+http://www.meetup.com/cities/es/paterna/;Paterna;paterna
+http://www.meetup.com/cities/es/pego/;Pego;pego
+http://www.meetup.com/cities/es/pe%C3%B1arroya-pueblonuevo/;Peñarroya-Pueblonuevo;pe%C3%B1arroya-pueblonuevo
+http://www.meetup.com/cities/es/petrer/;Petrer;petrer
+http://www.meetup.com/cities/es/picassent/;Picassent;picassent
+http://www.meetup.com/cities/es/pilar_de_la_horadada/;Pilar de la Horadada;pilar_de_la_horadada
+http://www.meetup.com/cities/es/pilas/;Pilas;pilas
+http://www.meetup.com/cities/es/pineda_de_mar/;Pineda de Mar;pineda_de_mar
+http://www.meetup.com/cities/es/pinos_puente/;Pinos Puente;pinos_puente
+http://www.meetup.com/cities/es/plasencia/;Plasencia;plasencia
+http://www.meetup.com/cities/es/poio/;Poio;poio
+http://www.meetup.com/cities/es/pollen%C3%A7a/;Pollença;pollen%C3%A7a
+http://www.meetup.com/cities/es/ponferrada/;Ponferrada;ponferrada
+http://www.meetup.com/cities/es/ponteareas/;Ponteareas;ponteareas
+http://www.meetup.com/cities/es/pontevedra/;Pontevedra;pontevedra
+http://www.meetup.com/cities/es/portugalete/;Portugalete;portugalete
+http://www.meetup.com/cities/es/pozoblanco/;Pozoblanco;pozoblanco
+http://www.meetup.com/cities/es/pozuelo_de_alarc%C3%B3n/;Pozuelo de Alarcón;pozuelo_de_alarc%C3%B3n
+http://www.meetup.com/cities/es/pravia/;Pravia;pravia
+http://www.meetup.com/cities/es/premi%C3%A0_de_mar/;Premià de Mar;premi%C3%A0_de_mar
+http://www.meetup.com/cities/es/priego_de_c%C3%B3rdoba/;Priego de Córdoba;priego_de_c%C3%B3rdoba
+http://www.meetup.com/cities/es/pu%C3%A7ol/;Puçol;pu%C3%A7ol
+http://www.meetup.com/cities/es/puente_genil/;Puente Genil;puente_genil
+http://www.meetup.com/cities/es/puerto_de_la_cruz/;Puerto de la Cruz;puerto_de_la_cruz
+http://www.meetup.com/cities/es/puerto_del_rosario/;Puerto del Rosario;puerto_del_rosario
+http://www.meetup.com/cities/es/puertollano/;Puertollano;puertollano
+http://www.meetup.com/cities/es/puerto_lumbreras/;Puerto Lumbreras;puerto_lumbreras
+http://www.meetup.com/cities/es/puerto_real/;Puerto Real;puerto_real
+http://www.meetup.com/cities/es/punta_umbr%C3%ADa/;Punta Umbría;punta_umbr%C3%ADa
+http://www.meetup.com/cities/es/quart_de_poblet/;Quart de Poblet;quart_de_poblet
+http://www.meetup.com/cities/es/redondela/;Redondela;redondela
+http://www.meetup.com/cities/es/requena/;Requena;requena
+http://www.meetup.com/cities/es/reus/;Reus;reus
+http://www.meetup.com/cities/es/reynosa/;Reynosa;reynosa
+http://www.meetup.com/cities/es/rianxo/;Rianxo;rianxo
+http://www.meetup.com/cities/es/riba-roja_d%27ebre/;Riba-roja d'Ebre;riba-roja_d%27ebre
+http://www.meetup.com/cities/es/riba-roja_de_t%C3%BAria/;Riba-roja de Túria;riba-roja_de_t%C3%BAria
+http://www.meetup.com/cities/es/ribeira/;Ribeira;ribeira
+http://www.meetup.com/cities/es/rinc%C3%B3n_de_la_victoria/;Rincón de la Victoria;rinc%C3%B3n_de_la_victoria
+http://www.meetup.com/cities/es/ripoll/;Ripoll;ripoll
+http://www.meetup.com/cities/es/ripollet/;Ripollet;ripollet
+http://www.meetup.com/cities/es/rivas-vaciamadrid/;Rivas-Vaciamadrid;rivas-vaciamadrid
+http://www.meetup.com/cities/es/ronda/;Ronda;ronda
+http://www.meetup.com/cities/es/roquetas_de_mar/;Roquetas de Mar;roquetas_de_mar
+http://www.meetup.com/cities/es/roses/;Roses;roses
+http://www.meetup.com/cities/es/rota/;Rota;rota
+http://www.meetup.com/cities/es/rub%C3%AD/;Rubí;rub%C3%AD
+http://www.meetup.com/cities/es/rute/;Rute;rute
+http://www.meetup.com/cities/es/sabadell/;Sabadell;sabadell
+http://www.meetup.com/cities/es/sagunt/;Sagunt;sagunt
+http://www.meetup.com/cities/es/salamanca/;Salamanca;salamanca
+http://www.meetup.com/cities/es/salobre%C3%B1a/;Salobreña;salobre%C3%B1a
+http://www.meetup.com/cities/es/salou/;Salou;salou
+http://www.meetup.com/cities/es/san_agust%C3%ADn_del_guadalix/;San Agustín del Guadalix;san_agust%C3%ADn_del_guadalix
+http://www.meetup.com/cities/es/san_andr%C3%A9s_del_rabanedo/;San Andrés del Rabanedo;san_andr%C3%A9s_del_rabanedo
+http://www.meetup.com/cities/es/san_bartolom%C3%A9/;San Bartolomé;san_bartolom%C3%A9
+http://www.meetup.com/cities/es/san_bartolom%C3%A9_de_tirajana/;San Bartolomé de Tirajana;san_bartolom%C3%A9_de_tirajana
+http://www.meetup.com/cities/es/san_fernando/;San Fernando;san_fernando
+http://www.meetup.com/cities/es/san_fernando_de_henares/;San Fernando de Henares;san_fernando_de_henares
+http://www.meetup.com/cities/es/san_javier/;San Javier;san_javier
+http://www.meetup.com/cities/es/san_juan_de_aznalfarache/;San Juan de Aznalfarache;san_juan_de_aznalfarache
+http://www.meetup.com/cities/es/san_lorenzo_de_el_escorial/;San Lorenzo de El Escorial;san_lorenzo_de_el_escorial
+http://www.meetup.com/cities/es/sanl%C3%BAcar_de_barrameda/;Sanlúcar de Barrameda;sanl%C3%BAcar_de_barrameda
+http://www.meetup.com/cities/es/sanl%C3%BAcar_la_mayor/;Sanlúcar la Mayor;sanl%C3%BAcar_la_mayor
+http://www.meetup.com/cities/es/san_pedro_del_pinatar/;San Pedro del Pinatar;san_pedro_del_pinatar
+http://www.meetup.com/cities/es/san_roque/;San Roque;san_roque
+http://www.meetup.com/cities/es/san_sebasti%C3%A1n_de_los_reyes/;San Sebastián de los Reyes;san_sebasti%C3%A1n_de_los_reyes
+http://www.meetup.com/cities/es/santa_br%C3%ADgida/;Santa Brígida;santa_br%C3%ADgida
+http://www.meetup.com/cities/es/santa_coloma_de_gramenet/;Santa Coloma de Gramenet;santa_coloma_de_gramenet
+http://www.meetup.com/cities/es/santa_cruz_de_la_palma/;Santa Cruz de la Palma;santa_cruz_de_la_palma
+http://www.meetup.com/cities/es/santa_cruz_de_tenerife/;Santa Cruz de Tenerife;santa_cruz_de_tenerife
+http://www.meetup.com/cities/es/sant_adri%C3%A0_de_bes%C3%B2s/;Sant Adrià de Besòs;sant_adri%C3%A0_de_bes%C3%B2s
+http://www.meetup.com/cities/es/santa_eulalia_del_r%C3%ADo/;Santa Eulalia del Río;santa_eulalia_del_r%C3%ADo
+http://www.meetup.com/cities/es/santa_fe/;Santa Fe;santa_fe
+http://www.meetup.com/cities/es/santa_mar%C3%ADa_de_gu%C3%ADa_de_gran_canaria/;Santa María de Guía de Gran Canaria;santa_mar%C3%ADa_de_gu%C3%ADa_de_gran_canaria
+http://www.meetup.com/cities/es/santa_marta_de_tormes/;Santa Marta de Tormes;santa_marta_de_tormes
+http://www.meetup.com/cities/es/santander/;Santander;santander
+http://www.meetup.com/cities/es/sant_andreu_de_la_barca/;Sant Andreu de la Barca;sant_andreu_de_la_barca
+http://www.meetup.com/cities/es/santany%C3%AD/;Santanyí;santany%C3%AD
+http://www.meetup.com/cities/es/santa_perp%C3%A8tua_de_mogoda/;Santa Perpètua de Mogoda;santa_perp%C3%A8tua_de_mogoda
+http://www.meetup.com/cities/es/santa_pola/;Santa Pola;santa_pola
+http://www.meetup.com/cities/es/santa_%C3%BArsula/;Santa Úrsula;santa_%C3%BArsula
+http://www.meetup.com/cities/es/sant_boi_de_llobregat/;Sant Boi de Llobregat;sant_boi_de_llobregat
+http://www.meetup.com/cities/es/sant_carles_de_la_r%C3%A0pita/;Sant Carles de la Ràpita;sant_carles_de_la_r%C3%A0pita
+http://www.meetup.com/cities/es/sant_celoni/;Sant Celoni;sant_celoni
+http://www.meetup.com/cities/es/sant_cugat_del_vall%C3%A8s/;Sant Cugat del Vallès;sant_cugat_del_vall%C3%A8s
+http://www.meetup.com/cities/es/sant_feliu_de_gu%C3%ADxols/;Sant Feliu de Guíxols;sant_feliu_de_gu%C3%ADxols
+http://www.meetup.com/cities/es/sant_feliu_de_llobregat/;Sant Feliu de Llobregat;sant_feliu_de_llobregat
+http://www.meetup.com/cities/es/santiago_de_compostela/;Santiago de Compostela;santiago_de_compostela
+http://www.meetup.com/cities/es/sant_joan_d%27alacant/;Sant Joan d'Alacant;sant_joan_d%27alacant
+http://www.meetup.com/cities/es/sant_joan_desp%C3%AD/;Sant Joan Despí;sant_joan_desp%C3%AD
+http://www.meetup.com/cities/es/sant_just_desvern/;Sant Just Desvern;sant_just_desvern
+http://www.meetup.com/cities/es/santomera/;Santomera;santomera
+http://www.meetup.com/cities/es/santo%C3%B1a/;Santoña;santo%C3%B1a
+http://www.meetup.com/cities/es/sant_pere_de_ribes/;Sant Pere de Ribes;sant_pere_de_ribes
+http://www.meetup.com/cities/es/sant_quirze_del_vall%C3%A8s/;Sant Quirze del Vallès;sant_quirze_del_vall%C3%A8s
+http://www.meetup.com/cities/es/santurtzi/;Santurtzi;santurtzi
+http://www.meetup.com/cities/es/sant_vicen%C3%A7_dels_horts/;Sant Vicenç dels Horts;sant_vicen%C3%A7_dels_horts
+http://www.meetup.com/cities/es/sant_vicent_del_raspeig/;Sant Vicent del Raspeig;sant_vicent_del_raspeig
+http://www.meetup.com/cities/es/sanxenxo/;Sanxenxo;sanxenxo
+http://www.meetup.com/cities/es/sarria/;Sarria;sarria
+http://www.meetup.com/cities/es/segovia/;Segovia;segovia
+http://www.meetup.com/cities/es/sestao/;Sestao;sestao
+http://www.meetup.com/cities/es/sevilla/;Sevilla;sevilla
+http://www.meetup.com/cities/es/siero/;Siero;siero
+http://www.meetup.com/cities/es/silla/;Silla;silla
+http://www.meetup.com/cities/es/silleda/;Silleda;silleda
+http://www.meetup.com/cities/es/sitges/;Sitges;sitges
+http://www.meetup.com/cities/es/socu%C3%A9llamos/;Socuéllamos;socu%C3%A9llamos
+http://www.meetup.com/cities/es/s%C3%B3ller/;Sóller;s%C3%B3ller
+http://www.meetup.com/cities/es/sopelana/;Sopelana;sopelana
+http://www.meetup.com/cities/es/soria/;Soria;soria
+http://www.meetup.com/cities/es/sueca/;Sueca;sueca
+http://www.meetup.com/cities/es/tacoronte/;Tacoronte;tacoronte
+http://www.meetup.com/cities/es/tafalla/;Tafalla;tafalla
+http://www.meetup.com/cities/es/talavera_de_la_reina/;Talavera de la Reina;talavera_de_la_reina
+http://www.meetup.com/cities/es/taranc%C3%B3n/;Tarancón;taranc%C3%B3n
+http://www.meetup.com/cities/es/tarazona/;Tarazona;tarazona
+http://www.meetup.com/cities/es/tarifa/;Tarifa;tarifa
+http://www.meetup.com/cities/es/tarragona/;Tarragona;tarragona
+http://www.meetup.com/cities/es/t%C3%A0rrega/;Tàrrega;t%C3%A0rrega
+http://www.meetup.com/cities/es/tavernes_de_la_valldigna/;Tavernes de la Valldigna;tavernes_de_la_valldigna
+http://www.meetup.com/cities/es/teguise/;Teguise;teguise
+http://www.meetup.com/cities/es/telde/;Telde;telde
+http://www.meetup.com/cities/es/tenerife/;Tenerife;tenerife
+http://www.meetup.com/cities/es/teo/;Teo;teo
+http://www.meetup.com/cities/es/teror/;Teror;teror
+http://www.meetup.com/cities/es/terrassa/;Terrassa;terrassa
+http://www.meetup.com/cities/es/teruel/;Teruel;teruel
+http://www.meetup.com/cities/es/tias/;Tias;tias
+http://www.meetup.com/cities/es/tineo/;Tineo;tineo
+http://www.meetup.com/cities/es/toledo/;Toledo;toledo
+http://www.meetup.com/cities/es/tomares/;Tomares;tomares
+http://www.meetup.com/cities/es/tomelloso/;Tomelloso;tomelloso
+http://www.meetup.com/cities/es/tomi%C3%B1o/;Tomiño;tomi%C3%B1o
+http://www.meetup.com/cities/es/torell%C3%B3/;Torelló;torell%C3%B3
+http://www.meetup.com/cities/es/toro/;Toro;toro
+http://www.meetup.com/cities/es/torre_del_campo/;Torre del Campo;torre_del_campo
+http://www.meetup.com/cities/es/torredonjimeno/;Torredonjimeno;torredonjimeno
+http://www.meetup.com/cities/es/torrej%C3%B3n_de_ardoz/;Torrejón de Ardoz;torrej%C3%B3n_de_ardoz
+http://www.meetup.com/cities/es/torrelavega/;Torrelavega;torrelavega
+http://www.meetup.com/cities/es/torrelodones/;Torrelodones;torrelodones
+http://www.meetup.com/cities/es/torremolinos/;Torremolinos;torremolinos
+http://www.meetup.com/cities/es/torrent/;Torrent;torrent
+http://www.meetup.com/cities/es/torre-pacheco/;Torre-Pacheco;torre-pacheco
+http://www.meetup.com/cities/es/torrevieja/;Torrevieja;torrevieja
+http://www.meetup.com/cities/es/torrijos/;Torrijos;torrijos
+http://www.meetup.com/cities/es/torrox/;Torrox;torrox
+http://www.meetup.com/cities/es/tortosa/;Tortosa;tortosa
+http://www.meetup.com/cities/es/totana/;Totana;totana
+http://www.meetup.com/cities/es/toulouse/;Toulouse;toulouse
+http://www.meetup.com/cities/es/trapagaran/;Trapagaran;trapagaran
+http://www.meetup.com/cities/es/tres_cantos/;Tres Cantos;tres_cantos
+http://www.meetup.com/cities/es/tudela/;Tudela;tudela
+http://www.meetup.com/cities/es/tui/;Tui;tui
+http://www.meetup.com/cities/es/%C3%BAbeda/;Úbeda;%C3%BAbeda
+http://www.meetup.com/cities/es/ubrique/;Ubrique;ubrique
+http://www.meetup.com/cities/es/u%C3%ADge/;Uíge;u%C3%ADge
+http://www.meetup.com/cities/es/utiel/;Utiel;utiel
+http://www.meetup.com/cities/es/utrera/;Utrera;utrera
+http://www.meetup.com/cities/es/valdemoro/;Valdemoro;valdemoro
+http://www.meetup.com/cities/es/valdepe%C3%B1as/;Valdepeñas;valdepe%C3%B1as
+http://www.meetup.com/cities/es/vald%C3%A9s/;Valdés;vald%C3%A9s
+http://www.meetup.com/cities/es/valencia/;Valencia;valencia
+http://www.meetup.com/cities/es/valladolid/;Valladolid;valladolid
+http://www.meetup.com/cities/es/valls/;Valls;valls
+http://www.meetup.com/cities/es/valverde_del_camino/;Valverde del Camino;valverde_del_camino
+http://www.meetup.com/cities/es/vejer_de_la_frontera/;Vejer de la Frontera;vejer_de_la_frontera
+http://www.meetup.com/cities/es/v%C3%A9lez-m%C3%A1laga/;Vélez-Málaga;v%C3%A9lez-m%C3%A1laga
+http://www.meetup.com/cities/es/ver%C3%ADn/;Verín;ver%C3%ADn
+http://www.meetup.com/cities/es/vic/;Vic;vic
+http://www.meetup.com/cities/es/v%C3%ADcar/;Vícar;v%C3%ADcar
+http://www.meetup.com/cities/es/vigo/;Vigo;vigo
+http://www.meetup.com/cities/es/viladecans/;Viladecans;viladecans
+http://www.meetup.com/cities/es/vilafranca_del_pened%C3%A8s/;Vilafranca del Penedès;vilafranca_del_pened%C3%A8s
+http://www.meetup.com/cities/es/vilagarc%C3%ADa_de_arousa/;Vilagarcía de Arousa;vilagarc%C3%ADa_de_arousa
+http://www.meetup.com/cities/es/vilalba/;Vilalba;vilalba
+http://www.meetup.com/cities/es/vilanova_de_arousa/;Vilanova de Arousa;vilanova_de_arousa
+http://www.meetup.com/cities/es/vilanova_del_cam%C3%AD/;Vilanova del Camí;vilanova_del_cam%C3%AD
+http://www.meetup.com/cities/es/vilanova_i_la_geltr%C3%BA/;Vilanova i la Geltrú;vilanova_i_la_geltr%C3%BA
+http://www.meetup.com/cities/es/vila-real/;Vila-real;vila-real
+http://www.meetup.com/cities/es/villablino/;Villablino;villablino
+http://www.meetup.com/cities/es/villacarrillo/;Villacarrillo;villacarrillo
+http://www.meetup.com/cities/es/villafranca_de_los_barros/;Villafranca de los Barros;villafranca_de_los_barros
+http://www.meetup.com/cities/es/villamart%C3%ADn/;Villamartín;villamart%C3%ADn
+http://www.meetup.com/cities/es/villanueva_de_c%C3%B3rdoba/;Villanueva de Córdoba;villanueva_de_c%C3%B3rdoba
+http://www.meetup.com/cities/es/villanueva_de_la_serena/;Villanueva de la Serena;villanueva_de_la_serena
+http://www.meetup.com/cities/es/villarrobledo/;Villarrobledo;villarrobledo
+http://www.meetup.com/cities/es/villarrubia_de_los_ojos/;Villarrubia de los Ojos;villarrubia_de_los_ojos
+http://www.meetup.com/cities/es/villaviciosa/;Villaviciosa;villaviciosa
+http://www.meetup.com/cities/es/villaviciosa_de_od%C3%B3n/;Villaviciosa de Odón;villaviciosa_de_od%C3%B3n
+http://www.meetup.com/cities/es/villena/;Villena;villena
+http://www.meetup.com/cities/es/vinar%C3%B2s/;Vinaròs;vinar%C3%B2s
+http://www.meetup.com/cities/es/vitoria/;Vitoria;vitoria
+http://www.meetup.com/cities/es/viveiro/;Viveiro;viveiro
+http://www.meetup.com/cities/es/waku-kungo/;Waku-Kungo;waku-kungo
+http://www.meetup.com/cities/es/whittlesea/;Whittlesea;whittlesea
+http://www.meetup.com/cities/es/x%C3%A0bia/;Xàbia;x%C3%A0bia
+http://www.meetup.com/cities/es/x%C3%A0tiva/;Xàtiva;x%C3%A0tiva
+http://www.meetup.com/cities/es/xinzo_de_limia/;Xinzo de Limia;xinzo_de_limia
+http://www.meetup.com/cities/es/xirivella/;Xirivella;xirivella
+http://www.meetup.com/cities/es/yecla/;Yecla;yecla
+http://www.meetup.com/cities/es/zafra/;Zafra;zafra
+http://www.meetup.com/cities/es/zamora/;Zamora;zamora
+http://www.meetup.com/cities/es/zaragoza/;Zaragoza;zaragoza
+http://www.meetup.com/cities/es/zarautz/;Zarautz;zarautz
+http://www.meetup.com/cities/es/zumarraga/;Zumarraga;zumarraga

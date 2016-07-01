@@ -1,0 +1,33 @@
+Selling Options
+Selling options is another way to profit from option trading. The basic idea behind the option selling strategy is to hope that the options you sold expire worthless so that you can pocket the premiums as profits.
+
+Things to Consider When Selling Options
+Covered or Uncovered (Naked)
+When it comes to selling options, one can be covered or naked. You are covered when selling options if you have a corresponding position in the underlying asset. Being covered or naked can have a big impact on the risk/reward profile of the strategy you wish to implement.
+
+Implied Volatility
+When selling options, one should take note of the implied volatility (IV) of the underlying asset. Generally, when the IV is high, premiums go up and when implied volatility is low, premiums go down. So you would want to sell options when IV is high.
+
+Selling Call Options
+Writing Covered Calls
+The covered call is probably the most well-known option selling strategy. A call is covered when you also own a long position in the underlying. If you are mildly bullish on the underlying, you will sell an out-of-the-money covered call. Otherwise, if you are neutral to mildly bearish on the underlying, then the in-the-money covered call strategy will be more appropriate.
+
+Writing Naked Calls
+Selling naked calls is a high risk strategy that can be used when the option trader is very bearish on the underlying. Note that your broker will not permit you to start selling naked calls until you have been deemed to possess sufficient knowledge, trading experience and financial resources.
+
+Ratio Call Write
+Using a combination of covered calls and naked calls, one can also implement what is known as the ratio call write. The trader implementing the ratio call write is neither bullish nor bearish on the underlying.
+
+Selling Put Options
+Writing Covered Puts
+A written put is covered when you also have a short position in the underlying. The covered put has the same payoff as the naked call and is seldom employed because the naked call write is a much better strategy for a number of reasons. Firstly, if the underlying asset is a stock, the covered put writer has to pay dividends on the short stock while the naked call writer need not. Secondly, call options generally sell for higher premiums than put options. Lastly, having to short the underlying and the option at the same time also increases the commission costs for the covered put writing strategy.
+
+Selling Naked Puts
+Writing uncovered puts is a high risk strategy that can be used when the option trader is very bullish on the underlying. Selling naked puts can also be a great way to purchase stocks at a discount. Again, like all naked option writing strategies, your trading account must be assigned a sufficiently high trading level by your broker before you are allowed to trade naked puts.
+
+Ratio Put Write
+Using a combination of covered and uncovered puts, one can also implement what is known as the ratio put write. This strategy has the same risk/reward profile as the ratio call write but for the same reasons that the naked call strategy is preferred over the covered put write, the ratio put write is considered inferior and rarely used.
+
+Options Spreads
+By simultaneously buying and selling options of the same class, a wide range of strategies known as spreads can be created. Spreads are characterized by having limited profit potential coupled with limited risk.
+

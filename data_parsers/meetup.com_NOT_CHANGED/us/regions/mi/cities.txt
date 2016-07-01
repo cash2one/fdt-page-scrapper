@@ -1,0 +1,1770 @@
+http://www.meetup.com/cities/us/mi/acme/;Acme;acme
+http://www.meetup.com/cities/us/mi/ada/;Ada;ada
+http://www.meetup.com/cities/us/mi/addison/;Addison;addison
+http://www.meetup.com/cities/us/mi/adrian/;Adrian;adrian
+http://www.meetup.com/cities/us/mi/afton/;Afton;afton
+http://www.meetup.com/cities/us/mi/ahmeek/;Ahmeek;ahmeek
+http://www.meetup.com/cities/us/mi/akron/;Akron;akron
+http://www.meetup.com/cities/us/mi/alanson/;Alanson;alanson
+http://www.meetup.com/cities/us/mi/alba/;Alba;alba
+http://www.meetup.com/cities/us/mi/albion/;Albion;albion
+http://www.meetup.com/cities/us/mi/alden/;Alden;alden
+http://www.meetup.com/cities/us/mi/alger/;Alger;alger
+http://www.meetup.com/cities/us/mi/algonac/;Algonac;algonac
+http://www.meetup.com/cities/us/mi/allegan/;Allegan;allegan
+http://www.meetup.com/cities/us/mi/allen/;Allen;allen
+http://www.meetup.com/cities/us/mi/allendale/;Allendale;allendale
+http://www.meetup.com/cities/us/mi/allen_park/;Allen Park;allen_park
+http://www.meetup.com/cities/us/mi/allenton/;Allenton;allenton
+http://www.meetup.com/cities/us/mi/allouez/;Allouez;allouez
+http://www.meetup.com/cities/us/mi/alma/;Alma;alma
+http://www.meetup.com/cities/us/mi/almont/;Almont;almont
+http://www.meetup.com/cities/us/mi/alpena/;Alpena;alpena
+http://www.meetup.com/cities/us/mi/alpha/;Alpha;alpha
+http://www.meetup.com/cities/us/mi/alto/;Alto;alto
+http://www.meetup.com/cities/us/mi/amasa/;Amasa;amasa
+http://www.meetup.com/cities/us/mi/anchorville/;Anchorville;anchorville
+http://www.meetup.com/cities/us/mi/ann_arbor/;Ann Arbor;ann_arbor
+http://www.meetup.com/cities/us/mi/applegate/;Applegate;applegate
+http://www.meetup.com/cities/us/mi/arcadia/;Arcadia;arcadia
+http://www.meetup.com/cities/us/mi/argyle/;Argyle;argyle
+http://www.meetup.com/cities/us/mi/armada/;Armada;armada
+http://www.meetup.com/cities/us/mi/arnold/;Arnold;arnold
+http://www.meetup.com/cities/us/mi/ashley/;Ashley;ashley
+http://www.meetup.com/cities/us/mi/athens/;Athens;athens
+http://www.meetup.com/cities/us/mi/atlanta/;Atlanta;atlanta
+http://www.meetup.com/cities/us/mi/atlantic_mine/;Atlantic Mine;atlantic_mine
+http://www.meetup.com/cities/us/mi/atlas/;Atlas;atlas
+http://www.meetup.com/cities/us/mi/attica/;Attica;attica
+http://www.meetup.com/cities/us/mi/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/mi/auburn_hills/;Auburn Hills;auburn_hills
+http://www.meetup.com/cities/us/mi/au_gres/;Au Gres;au_gres
+http://www.meetup.com/cities/us/mi/augusta/;Augusta;augusta
+http://www.meetup.com/cities/us/mi/au_train/;Au Train;au_train
+http://www.meetup.com/cities/us/mi/avoca/;Avoca;avoca
+http://www.meetup.com/cities/us/mi/azalia/;Azalia;azalia
+http://www.meetup.com/cities/us/mi/bad_axe/;Bad Axe;bad_axe
+http://www.meetup.com/cities/us/mi/bailey/;Bailey;bailey
+http://www.meetup.com/cities/us/mi/baldwin/;Baldwin;baldwin
+http://www.meetup.com/cities/us/mi/bancroft/;Bancroft;bancroft
+http://www.meetup.com/cities/us/mi/bangor/;Bangor;bangor
+http://www.meetup.com/cities/us/mi/bannister/;Bannister;bannister
+http://www.meetup.com/cities/us/mi/baraga/;Baraga;baraga
+http://www.meetup.com/cities/us/mi/barbeau/;Barbeau;barbeau
+http://www.meetup.com/cities/us/mi/bark_river/;Bark River;bark_river
+http://www.meetup.com/cities/us/mi/baroda/;Baroda;baroda
+http://www.meetup.com/cities/us/mi/barryton/;Barryton;barryton
+http://www.meetup.com/cities/us/mi/barton_city/;Barton City;barton_city
+http://www.meetup.com/cities/us/mi/bath/;Bath;bath
+http://www.meetup.com/cities/us/mi/battle_creek/;Battle Creek;battle_creek
+http://www.meetup.com/cities/us/mi/bay_city/;Bay City;bay_city
+http://www.meetup.com/cities/us/mi/bay_port/;Bay Port;bay_port
+http://www.meetup.com/cities/us/mi/bay_shore/;Bay Shore;bay_shore
+http://www.meetup.com/cities/us/mi/bear_lake/;Bear Lake;bear_lake
+http://www.meetup.com/cities/us/mi/beaver_island/;Beaver Island;beaver_island
+http://www.meetup.com/cities/us/mi/beaverton/;Beaverton;beaverton
+http://www.meetup.com/cities/us/mi/bedford/;Bedford;bedford
+http://www.meetup.com/cities/us/mi/belding/;Belding;belding
+http://www.meetup.com/cities/us/mi/bellaire/;Bellaire;bellaire
+http://www.meetup.com/cities/us/mi/belleville/;Belleville;belleville
+http://www.meetup.com/cities/us/mi/bellevue/;Bellevue;bellevue
+http://www.meetup.com/cities/us/mi/belmont/;Belmont;belmont
+http://www.meetup.com/cities/us/mi/bentley/;Bentley;bentley
+http://www.meetup.com/cities/us/mi/benton_harbor/;Benton Harbor;benton_harbor
+http://www.meetup.com/cities/us/mi/benzonia/;Benzonia;benzonia
+http://www.meetup.com/cities/us/mi/bergland/;Bergland;bergland
+http://www.meetup.com/cities/us/mi/berkley/;Berkley;berkley
+http://www.meetup.com/cities/us/mi/berrien_center/;Berrien Center;berrien_center
+http://www.meetup.com/cities/us/mi/berrien_springs/;Berrien Springs;berrien_springs
+http://www.meetup.com/cities/us/mi/bessemer/;Bessemer;bessemer
+http://www.meetup.com/cities/us/mi/beulah/;Beulah;beulah
+http://www.meetup.com/cities/us/mi/big_bay/;Big Bay;big_bay
+http://www.meetup.com/cities/us/mi/big_rapids/;Big Rapids;big_rapids
+http://www.meetup.com/cities/us/mi/birch_run/;Birch Run;birch_run
+http://www.meetup.com/cities/us/mi/birmingham/;Birmingham;birmingham
+http://www.meetup.com/cities/us/mi/bitely/;Bitely;bitely
+http://www.meetup.com/cities/us/mi/black_river/;Black River;black_river
+http://www.meetup.com/cities/us/mi/blanchard/;Blanchard;blanchard
+http://www.meetup.com/cities/us/mi/blissfield/;Blissfield;blissfield
+http://www.meetup.com/cities/us/mi/bloomfield_hills/;Bloomfield Hills;bloomfield_hills
+http://www.meetup.com/cities/us/mi/bloomingdale/;Bloomingdale;bloomingdale
+http://www.meetup.com/cities/us/mi/boon/;Boon;boon
+http://www.meetup.com/cities/us/mi/boyne_city/;Boyne City;boyne_city
+http://www.meetup.com/cities/us/mi/boyne_falls/;Boyne Falls;boyne_falls
+http://www.meetup.com/cities/us/mi/bradley/;Bradley;bradley
+http://www.meetup.com/cities/us/mi/branch/;Branch;branch
+http://www.meetup.com/cities/us/mi/brant/;Brant;brant
+http://www.meetup.com/cities/us/mi/breckenridge/;Breckenridge;breckenridge
+http://www.meetup.com/cities/us/mi/breedsville/;Breedsville;breedsville
+http://www.meetup.com/cities/us/mi/brethren/;Brethren;brethren
+http://www.meetup.com/cities/us/mi/bridgeport/;Bridgeport;bridgeport
+http://www.meetup.com/cities/us/mi/bridgewater/;Bridgewater;bridgewater
+http://www.meetup.com/cities/us/mi/bridgman/;Bridgman;bridgman
+http://www.meetup.com/cities/us/mi/brighton/;Brighton;brighton
+http://www.meetup.com/cities/us/mi/brimley/;Brimley;brimley
+http://www.meetup.com/cities/us/mi/britton/;Britton;britton
+http://www.meetup.com/cities/us/mi/brohman/;Brohman;brohman
+http://www.meetup.com/cities/us/mi/bronson/;Bronson;bronson
+http://www.meetup.com/cities/us/mi/brooklyn/;Brooklyn;brooklyn
+http://www.meetup.com/cities/us/mi/brown_city/;Brown City;brown_city
+http://www.meetup.com/cities/us/mi/bruce_crossing/;Bruce Crossing;bruce_crossing
+http://www.meetup.com/cities/us/mi/brutus/;Brutus;brutus
+http://www.meetup.com/cities/us/mi/buchanan/;Buchanan;buchanan
+http://www.meetup.com/cities/us/mi/buckley/;Buckley;buckley
+http://www.meetup.com/cities/us/mi/burlington/;Burlington;burlington
+http://www.meetup.com/cities/us/mi/burnips/;Burnips;burnips
+http://www.meetup.com/cities/us/mi/burr_oak/;Burr Oak;burr_oak
+http://www.meetup.com/cities/us/mi/burt/;Burt;burt
+http://www.meetup.com/cities/us/mi/burt_lake/;Burt Lake;burt_lake
+http://www.meetup.com/cities/us/mi/burton/;Burton;burton
+http://www.meetup.com/cities/us/mi/byron/;Byron;byron
+http://www.meetup.com/cities/us/mi/byron_center/;Byron Center;byron_center
+http://www.meetup.com/cities/us/mi/cadillac/;Cadillac;cadillac
+http://www.meetup.com/cities/us/mi/caledonia/;Caledonia;caledonia
+http://www.meetup.com/cities/us/mi/calumet/;Calumet;calumet
+http://www.meetup.com/cities/us/mi/camden/;Camden;camden
+http://www.meetup.com/cities/us/mi/cannonsburg/;Cannonsburg;cannonsburg
+http://www.meetup.com/cities/us/mi/canton/;Canton;canton
+http://www.meetup.com/cities/us/mi/capac/;Capac;capac
+http://www.meetup.com/cities/us/mi/carleton/;Carleton;carleton
+http://www.meetup.com/cities/us/mi/carney/;Carney;carney
+http://www.meetup.com/cities/us/mi/caro/;Caro;caro
+http://www.meetup.com/cities/us/mi/carp_lake/;Carp Lake;carp_lake
+http://www.meetup.com/cities/us/mi/carrollton/;Carrollton;carrollton
+http://www.meetup.com/cities/us/mi/carson_city/;Carson City;carson_city
+http://www.meetup.com/cities/us/mi/carsonville/;Carsonville;carsonville
+http://www.meetup.com/cities/us/mi/casco/;Casco;casco
+http://www.meetup.com/cities/us/mi/caseville/;Caseville;caseville
+http://www.meetup.com/cities/us/mi/casnovia/;Casnovia;casnovia
+http://www.meetup.com/cities/us/mi/caspian/;Caspian;caspian
+http://www.meetup.com/cities/us/mi/cass_city/;Cass City;cass_city
+http://www.meetup.com/cities/us/mi/cassopolis/;Cassopolis;cassopolis
+http://www.meetup.com/cities/us/mi/cedar/;Cedar;cedar
+http://www.meetup.com/cities/us/mi/cedar_lake/;Cedar Lake;cedar_lake
+http://www.meetup.com/cities/us/mi/cedar_springs/;Cedar Springs;cedar_springs
+http://www.meetup.com/cities/us/mi/cedarville/;Cedarville;cedarville
+http://www.meetup.com/cities/us/mi/cement_city/;Cement City;cement_city
+http://www.meetup.com/cities/us/mi/center_line/;Center Line;center_line
+http://www.meetup.com/cities/us/mi/central_lake/;Central Lake;central_lake
+http://www.meetup.com/cities/us/mi/centreville/;Centreville;centreville
+http://www.meetup.com/cities/us/mi/ceresco/;Ceresco;ceresco
+http://www.meetup.com/cities/us/mi/champion/;Champion;champion
+http://www.meetup.com/cities/us/mi/channing/;Channing;channing
+http://www.meetup.com/cities/us/mi/charlevoix/;Charlevoix;charlevoix
+http://www.meetup.com/cities/us/mi/charlotte/;Charlotte;charlotte
+http://www.meetup.com/cities/us/mi/chase/;Chase;chase
+http://www.meetup.com/cities/us/mi/chassell/;Chassell;chassell
+http://www.meetup.com/cities/us/mi/chatham/;Chatham;chatham
+http://www.meetup.com/cities/us/mi/cheboygan/;Cheboygan;cheboygan
+http://www.meetup.com/cities/us/mi/chelsea/;Chelsea;chelsea
+http://www.meetup.com/cities/us/mi/chesaning/;Chesaning;chesaning
+http://www.meetup.com/cities/us/mi/chippewa_lake/;Chippewa Lake;chippewa_lake
+http://www.meetup.com/cities/us/mi/clare/;Clare;clare
+http://www.meetup.com/cities/us/mi/clarklake/;Clarklake;clarklake
+http://www.meetup.com/cities/us/mi/clarkston/;Clarkston;clarkston
+http://www.meetup.com/cities/us/mi/clarksville/;Clarksville;clarksville
+http://www.meetup.com/cities/us/mi/clawson/;Clawson;clawson
+http://www.meetup.com/cities/us/mi/clayton/;Clayton;clayton
+http://www.meetup.com/cities/us/mi/clifford/;Clifford;clifford
+http://www.meetup.com/cities/us/mi/climax/;Climax;climax
+http://www.meetup.com/cities/us/mi/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/mi/clinton_township/;Clinton Township;clinton_township
+http://www.meetup.com/cities/us/mi/clio/;Clio;clio
+http://www.meetup.com/cities/us/mi/cloverdale/;Cloverdale;cloverdale
+http://www.meetup.com/cities/us/mi/cohoctah/;Cohoctah;cohoctah
+http://www.meetup.com/cities/us/mi/coldwater/;Coldwater;coldwater
+http://www.meetup.com/cities/us/mi/coleman/;Coleman;coleman
+http://www.meetup.com/cities/us/mi/coloma/;Coloma;coloma
+http://www.meetup.com/cities/us/mi/colon/;Colon;colon
+http://www.meetup.com/cities/us/mi/columbiaville/;Columbiaville;columbiaville
+http://www.meetup.com/cities/us/mi/columbus/;Columbus;columbus
+http://www.meetup.com/cities/us/mi/comins/;Comins;comins
+http://www.meetup.com/cities/us/mi/commerce_township/;Commerce Township;commerce_township
+http://www.meetup.com/cities/us/mi/comstock/;Comstock;comstock
+http://www.meetup.com/cities/us/mi/comstock_park/;Comstock Park;comstock_park
+http://www.meetup.com/cities/us/mi/concord/;Concord;concord
+http://www.meetup.com/cities/us/mi/conklin/;Conklin;conklin
+http://www.meetup.com/cities/us/mi/constantine/;Constantine;constantine
+http://www.meetup.com/cities/us/mi/conway/;Conway;conway
+http://www.meetup.com/cities/us/mi/cooks/;Cooks;cooks
+http://www.meetup.com/cities/us/mi/coopersville/;Coopersville;coopersville
+http://www.meetup.com/cities/us/mi/copemish/;Copemish;copemish
+http://www.meetup.com/cities/us/mi/copper_city/;Copper City;copper_city
+http://www.meetup.com/cities/us/mi/copper_harbor/;Copper Harbor;copper_harbor
+http://www.meetup.com/cities/us/mi/coral/;Coral;coral
+http://www.meetup.com/cities/us/mi/cornell/;Cornell;cornell
+http://www.meetup.com/cities/us/mi/corunna/;Corunna;corunna
+http://www.meetup.com/cities/us/mi/covert/;Covert;covert
+http://www.meetup.com/cities/us/mi/covington/;Covington;covington
+http://www.meetup.com/cities/us/mi/cross_village/;Cross Village;cross_village
+http://www.meetup.com/cities/us/mi/croswell/;Croswell;croswell
+http://www.meetup.com/cities/us/mi/crystal/;Crystal;crystal
+http://www.meetup.com/cities/us/mi/crystal_falls/;Crystal Falls;crystal_falls
+http://www.meetup.com/cities/us/mi/curran/;Curran;curran
+http://www.meetup.com/cities/us/mi/curtis/;Curtis;curtis
+http://www.meetup.com/cities/us/mi/custer/;Custer;custer
+http://www.meetup.com/cities/us/mi/dafter/;Dafter;dafter
+http://www.meetup.com/cities/us/mi/daggett/;Daggett;daggett
+http://www.meetup.com/cities/us/mi/dansville/;Dansville;dansville
+http://www.meetup.com/cities/us/mi/davisburg/;Davisburg;davisburg
+http://www.meetup.com/cities/us/mi/davison/;Davison;davison
+http://www.meetup.com/cities/us/mi/dearborn/;Dearborn;dearborn
+http://www.meetup.com/cities/us/mi/dearborn_heights/;Dearborn Heights;dearborn_heights
+http://www.meetup.com/cities/us/mi/decatur/;Decatur;decatur
+http://www.meetup.com/cities/us/mi/decker/;Decker;decker
+http://www.meetup.com/cities/us/mi/deckerville/;Deckerville;deckerville
+http://www.meetup.com/cities/us/mi/deerfield/;Deerfield;deerfield
+http://www.meetup.com/cities/us/mi/deerton/;Deerton;deerton
+http://www.meetup.com/cities/us/mi/deford/;Deford;deford
+http://www.meetup.com/cities/us/mi/delton/;Delton;delton
+http://www.meetup.com/cities/us/mi/de_tour_village/;De Tour Village;de_tour_village
+http://www.meetup.com/cities/us/mi/detroit/;Detroit;detroit
+http://www.meetup.com/cities/us/mi/dewitt/;Dewitt;dewitt
+http://www.meetup.com/cities/us/mi/dexter/;Dexter;dexter
+http://www.meetup.com/cities/us/mi/dimondale/;Dimondale;dimondale
+http://www.meetup.com/cities/us/mi/dodgeville/;Dodgeville;dodgeville
+http://www.meetup.com/cities/us/mi/dollar_bay/;Dollar Bay;dollar_bay
+http://www.meetup.com/cities/us/mi/dorr/;Dorr;dorr
+http://www.meetup.com/cities/us/mi/douglas/;Douglas;douglas
+http://www.meetup.com/cities/us/mi/dowagiac/;Dowagiac;dowagiac
+http://www.meetup.com/cities/us/mi/dowling/;Dowling;dowling
+http://www.meetup.com/cities/us/mi/drayton_plains/;Drayton Plains;drayton_plains
+http://www.meetup.com/cities/us/mi/drummond_island/;Drummond Island;drummond_island
+http://www.meetup.com/cities/us/mi/dryden/;Dryden;dryden
+http://www.meetup.com/cities/us/mi/dundee/;Dundee;dundee
+http://www.meetup.com/cities/us/mi/durand/;Durand;durand
+http://www.meetup.com/cities/us/mi/eagle/;Eagle;eagle
+http://www.meetup.com/cities/us/mi/east_china/;East China;east_china
+http://www.meetup.com/cities/us/mi/east_jordan/;East Jordan;east_jordan
+http://www.meetup.com/cities/us/mi/eastlake/;Eastlake;eastlake
+http://www.meetup.com/cities/us/mi/east_lansing/;East Lansing;east_lansing
+http://www.meetup.com/cities/us/mi/east_leroy/;East Leroy;east_leroy
+http://www.meetup.com/cities/us/mi/eastpointe/;Eastpointe;eastpointe
+http://www.meetup.com/cities/us/mi/eastport/;Eastport;eastport
+http://www.meetup.com/cities/us/mi/east_tawas/;East Tawas;east_tawas
+http://www.meetup.com/cities/us/mi/eaton_rapids/;Eaton Rapids;eaton_rapids
+http://www.meetup.com/cities/us/mi/eau_claire/;Eau Claire;eau_claire
+http://www.meetup.com/cities/us/mi/eben_junction/;Eben Junction;eben_junction
+http://www.meetup.com/cities/us/mi/eckerman/;Eckerman;eckerman
+http://www.meetup.com/cities/us/mi/ecorse/;Ecorse;ecorse
+http://www.meetup.com/cities/us/mi/edenville/;Edenville;edenville
+http://www.meetup.com/cities/us/mi/edmore/;Edmore;edmore
+http://www.meetup.com/cities/us/mi/edwardsburg/;Edwardsburg;edwardsburg
+http://www.meetup.com/cities/us/mi/elberta/;Elberta;elberta
+http://www.meetup.com/cities/us/mi/elk_rapids/;Elk Rapids;elk_rapids
+http://www.meetup.com/cities/us/mi/elkton/;Elkton;elkton
+http://www.meetup.com/cities/us/mi/ellsworth/;Ellsworth;ellsworth
+http://www.meetup.com/cities/us/mi/elm_hall/;Elm Hall;elm_hall
+http://www.meetup.com/cities/us/mi/elmira/;Elmira;elmira
+http://www.meetup.com/cities/us/mi/elsie/;Elsie;elsie
+http://www.meetup.com/cities/us/mi/elwell/;Elwell;elwell
+http://www.meetup.com/cities/us/mi/emmett/;Emmett;emmett
+http://www.meetup.com/cities/us/mi/empire/;Empire;empire
+http://www.meetup.com/cities/us/mi/engadine/;Engadine;engadine
+http://www.meetup.com/cities/us/mi/erie/;Erie;erie
+http://www.meetup.com/cities/us/mi/escanaba/;Escanaba;escanaba
+http://www.meetup.com/cities/us/mi/essexville/;Essexville;essexville
+http://www.meetup.com/cities/us/mi/eureka/;Eureka;eureka
+http://www.meetup.com/cities/us/mi/evart/;Evart;evart
+http://www.meetup.com/cities/us/mi/ewen/;Ewen;ewen
+http://www.meetup.com/cities/us/mi/fairgrove/;Fairgrove;fairgrove
+http://www.meetup.com/cities/us/mi/fair_haven/;Fair Haven;fair_haven
+http://www.meetup.com/cities/us/mi/fairview/;Fairview;fairview
+http://www.meetup.com/cities/us/mi/falmouth/;Falmouth;falmouth
+http://www.meetup.com/cities/us/mi/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/mi/farwell/;Farwell;farwell
+http://www.meetup.com/cities/us/mi/felch/;Felch;felch
+http://www.meetup.com/cities/us/mi/fennville/;Fennville;fennville
+http://www.meetup.com/cities/us/mi/fenton/;Fenton;fenton
+http://www.meetup.com/cities/us/mi/fenwick/;Fenwick;fenwick
+http://www.meetup.com/cities/us/mi/ferndale/;Ferndale;ferndale
+http://www.meetup.com/cities/us/mi/ferrysburg/;Ferrysburg;ferrysburg
+http://www.meetup.com/cities/us/mi/fife_lake/;Fife Lake;fife_lake
+http://www.meetup.com/cities/us/mi/filer_city/;Filer City;filer_city
+http://www.meetup.com/cities/us/mi/filion/;Filion;filion
+http://www.meetup.com/cities/us/mi/flat_rock/;Flat Rock;flat_rock
+http://www.meetup.com/cities/us/mi/flint/;Flint;flint
+http://www.meetup.com/cities/us/mi/flushing/;Flushing;flushing
+http://www.meetup.com/cities/us/mi/forestville/;Forestville;forestville
+http://www.meetup.com/cities/us/mi/fort_gratiot/;Fort Gratiot;fort_gratiot
+http://www.meetup.com/cities/us/mi/foster_city/;Foster City;foster_city
+http://www.meetup.com/cities/us/mi/fostoria/;Fostoria;fostoria
+http://www.meetup.com/cities/us/mi/fountain/;Fountain;fountain
+http://www.meetup.com/cities/us/mi/fowler/;Fowler;fowler
+http://www.meetup.com/cities/us/mi/fowlerville/;Fowlerville;fowlerville
+http://www.meetup.com/cities/us/mi/frankenmuth/;Frankenmuth;frankenmuth
+http://www.meetup.com/cities/us/mi/frankfort/;Frankfort;frankfort
+http://www.meetup.com/cities/us/mi/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/mi/fraser/;Fraser;fraser
+http://www.meetup.com/cities/us/mi/frederic/;Frederic;frederic
+http://www.meetup.com/cities/us/mi/freeland/;Freeland;freeland
+http://www.meetup.com/cities/us/mi/freeport/;Freeport;freeport
+http://www.meetup.com/cities/us/mi/free_soil/;Free Soil;free_soil
+http://www.meetup.com/cities/us/mi/fremont/;Fremont;fremont
+http://www.meetup.com/cities/us/mi/frontier/;Frontier;frontier
+http://www.meetup.com/cities/us/mi/fruitport/;Fruitport;fruitport
+http://www.meetup.com/cities/us/mi/fulton/;Fulton;fulton
+http://www.meetup.com/cities/us/mi/gaastra/;Gaastra;gaastra
+http://www.meetup.com/cities/us/mi/gagetown/;Gagetown;gagetown
+http://www.meetup.com/cities/us/mi/gaines/;Gaines;gaines
+http://www.meetup.com/cities/us/mi/galesburg/;Galesburg;galesburg
+http://www.meetup.com/cities/us/mi/galien/;Galien;galien
+http://www.meetup.com/cities/us/mi/garden/;Garden;garden
+http://www.meetup.com/cities/us/mi/garden_city/;Garden City;garden_city
+http://www.meetup.com/cities/us/mi/gaylord/;Gaylord;gaylord
+http://www.meetup.com/cities/us/mi/genesee/;Genesee;genesee
+http://www.meetup.com/cities/us/mi/germfask/;Germfask;germfask
+http://www.meetup.com/cities/us/mi/gilford/;Gilford;gilford
+http://www.meetup.com/cities/us/mi/gladstone/;Gladstone;gladstone
+http://www.meetup.com/cities/us/mi/gladwin/;Gladwin;gladwin
+http://www.meetup.com/cities/us/mi/glen_arbor/;Glen Arbor;glen_arbor
+http://www.meetup.com/cities/us/mi/glenn/;Glenn;glenn
+http://www.meetup.com/cities/us/mi/glennie/;Glennie;glennie
+http://www.meetup.com/cities/us/mi/gobles/;Gobles;gobles
+http://www.meetup.com/cities/us/mi/goetzville/;Goetzville;goetzville
+http://www.meetup.com/cities/us/mi/goodells/;Goodells;goodells
+http://www.meetup.com/cities/us/mi/good_hart/;Good Hart;good_hart
+http://www.meetup.com/cities/us/mi/goodrich/;Goodrich;goodrich
+http://www.meetup.com/cities/us/mi/gould_city/;Gould City;gould_city
+http://www.meetup.com/cities/us/mi/gowen/;Gowen;gowen
+http://www.meetup.com/cities/us/mi/grand_blanc/;Grand Blanc;grand_blanc
+http://www.meetup.com/cities/us/mi/grand_haven/;Grand Haven;grand_haven
+http://www.meetup.com/cities/us/mi/grand_junction/;Grand Junction;grand_junction
+http://www.meetup.com/cities/us/mi/grand_ledge/;Grand Ledge;grand_ledge
+http://www.meetup.com/cities/us/mi/grand_marais/;Grand Marais;grand_marais
+http://www.meetup.com/cities/us/mi/grand_rapids/;Grand Rapids;grand_rapids
+http://www.meetup.com/cities/us/mi/grandville/;Grandville;grandville
+http://www.meetup.com/cities/us/mi/grant/;Grant;grant
+http://www.meetup.com/cities/us/mi/grass_lake/;Grass Lake;grass_lake
+http://www.meetup.com/cities/us/mi/grawn/;Grawn;grawn
+http://www.meetup.com/cities/us/mi/grayling/;Grayling;grayling
+http://www.meetup.com/cities/us/mi/greenbush/;Greenbush;greenbush
+http://www.meetup.com/cities/us/mi/greenland/;Greenland;greenland
+http://www.meetup.com/cities/us/mi/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/mi/gregory/;Gregory;gregory
+http://www.meetup.com/cities/us/mi/grosse_ile/;Grosse Ile;grosse_ile
+http://www.meetup.com/cities/us/mi/grosse_pointe/;Grosse Pointe;grosse_pointe
+http://www.meetup.com/cities/us/mi/gulliver/;Gulliver;gulliver
+http://www.meetup.com/cities/us/mi/gwinn/;Gwinn;gwinn
+http://www.meetup.com/cities/us/mi/hadley/;Hadley;hadley
+http://www.meetup.com/cities/us/mi/hagar_shores/;Hagar Shores;hagar_shores
+http://www.meetup.com/cities/us/mi/hale/;Hale;hale
+http://www.meetup.com/cities/us/mi/hamburg/;Hamburg;hamburg
+http://www.meetup.com/cities/us/mi/hamilton/;Hamilton;hamilton
+http://www.meetup.com/cities/us/mi/hamtramck/;Hamtramck;hamtramck
+http://www.meetup.com/cities/us/mi/hancock/;Hancock;hancock
+http://www.meetup.com/cities/us/mi/hanover/;Hanover;hanover
+http://www.meetup.com/cities/us/mi/harbert/;Harbert;harbert
+http://www.meetup.com/cities/us/mi/harbor_beach/;Harbor Beach;harbor_beach
+http://www.meetup.com/cities/us/mi/harbor_springs/;Harbor Springs;harbor_springs
+http://www.meetup.com/cities/us/mi/harper_woods/;Harper Woods;harper_woods
+http://www.meetup.com/cities/us/mi/harrietta/;Harrietta;harrietta
+http://www.meetup.com/cities/us/mi/harris/;Harris;harris
+http://www.meetup.com/cities/us/mi/harrison/;Harrison;harrison
+http://www.meetup.com/cities/us/mi/harrison_township/;Harrison Township;harrison_township
+http://www.meetup.com/cities/us/mi/harrisville/;Harrisville;harrisville
+http://www.meetup.com/cities/us/mi/harsens_island/;Harsens Island;harsens_island
+http://www.meetup.com/cities/us/mi/hart/;Hart;hart
+http://www.meetup.com/cities/us/mi/hartford/;Hartford;hartford
+http://www.meetup.com/cities/us/mi/hartland/;Hartland;hartland
+http://www.meetup.com/cities/us/mi/haslett/;Haslett;haslett
+http://www.meetup.com/cities/us/mi/hastings/;Hastings;hastings
+http://www.meetup.com/cities/us/mi/hawks/;Hawks;hawks
+http://www.meetup.com/cities/us/mi/hazel_park/;Hazel Park;hazel_park
+http://www.meetup.com/cities/us/mi/hemlock/;Hemlock;hemlock
+http://www.meetup.com/cities/us/mi/henderson/;Henderson;henderson
+http://www.meetup.com/cities/us/mi/hermansville/;Hermansville;hermansville
+http://www.meetup.com/cities/us/mi/herron/;Herron;herron
+http://www.meetup.com/cities/us/mi/hersey/;Hersey;hersey
+http://www.meetup.com/cities/us/mi/hesperia/;Hesperia;hesperia
+http://www.meetup.com/cities/us/mi/hessel/;Hessel;hessel
+http://www.meetup.com/cities/us/mi/hickory_corners/;Hickory Corners;hickory_corners
+http://www.meetup.com/cities/us/mi/higgins_lake/;Higgins Lake;higgins_lake
+http://www.meetup.com/cities/us/mi/highland/;Highland;highland
+http://www.meetup.com/cities/us/mi/highland_park/;Highland Park;highland_park
+http://www.meetup.com/cities/us/mi/hillman/;Hillman;hillman
+http://www.meetup.com/cities/us/mi/hillsdale/;Hillsdale;hillsdale
+http://www.meetup.com/cities/us/mi/holland/;Holland;holland
+http://www.meetup.com/cities/us/mi/holly/;Holly;holly
+http://www.meetup.com/cities/us/mi/holt/;Holt;holt
+http://www.meetup.com/cities/us/mi/holton/;Holton;holton
+http://www.meetup.com/cities/us/mi/homer/;Homer;homer
+http://www.meetup.com/cities/us/mi/honor/;Honor;honor
+http://www.meetup.com/cities/us/mi/hope/;Hope;hope
+http://www.meetup.com/cities/us/mi/hopkins/;Hopkins;hopkins
+http://www.meetup.com/cities/us/mi/horton/;Horton;horton
+http://www.meetup.com/cities/us/mi/houghton/;Houghton;houghton
+http://www.meetup.com/cities/us/mi/houghton_lake/;Houghton Lake;houghton_lake
+http://www.meetup.com/cities/us/mi/houghton_lake_heights/;Houghton Lake Heights;houghton_lake_heights
+http://www.meetup.com/cities/us/mi/howard_city/;Howard City;howard_city
+http://www.meetup.com/cities/us/mi/howell/;Howell;howell
+http://www.meetup.com/cities/us/mi/hubbard_lake/;Hubbard Lake;hubbard_lake
+http://www.meetup.com/cities/us/mi/hubbardston/;Hubbardston;hubbardston
+http://www.meetup.com/cities/us/mi/hubbell/;Hubbell;hubbell
+http://www.meetup.com/cities/us/mi/hudson/;Hudson;hudson
+http://www.meetup.com/cities/us/mi/hudsonville/;Hudsonville;hudsonville
+http://www.meetup.com/cities/us/mi/hulbert/;Hulbert;hulbert
+http://www.meetup.com/cities/us/mi/huntington_woods/;Huntington Woods;huntington_woods
+http://www.meetup.com/cities/us/mi/ida/;Ida;ida
+http://www.meetup.com/cities/us/mi/idlewild/;Idlewild;idlewild
+http://www.meetup.com/cities/us/mi/imlay_city/;Imlay City;imlay_city
+http://www.meetup.com/cities/us/mi/indian_river/;Indian River;indian_river
+http://www.meetup.com/cities/us/mi/ingalls/;Ingalls;ingalls
+http://www.meetup.com/cities/us/mi/inkster/;Inkster;inkster
+http://www.meetup.com/cities/us/mi/interlochen/;Interlochen;interlochen
+http://www.meetup.com/cities/us/mi/ionia/;Ionia;ionia
+http://www.meetup.com/cities/us/mi/iron_mountain/;Iron Mountain;iron_mountain
+http://www.meetup.com/cities/us/mi/iron_river/;Iron River;iron_river
+http://www.meetup.com/cities/us/mi/irons/;Irons;irons
+http://www.meetup.com/cities/us/mi/ironwood/;Ironwood;ironwood
+http://www.meetup.com/cities/us/mi/ishpeming/;Ishpeming;ishpeming
+http://www.meetup.com/cities/us/mi/ithaca/;Ithaca;ithaca
+http://www.meetup.com/cities/us/mi/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/mi/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/mi/jasper/;Jasper;jasper
+http://www.meetup.com/cities/us/mi/jeddo/;Jeddo;jeddo
+http://www.meetup.com/cities/us/mi/jenison/;Jenison;jenison
+http://www.meetup.com/cities/us/mi/jerome/;Jerome;jerome
+http://www.meetup.com/cities/us/mi/johannesburg/;Johannesburg;johannesburg
+http://www.meetup.com/cities/us/mi/jones/;Jones;jones
+http://www.meetup.com/cities/us/mi/jonesville/;Jonesville;jonesville
+http://www.meetup.com/cities/us/mi/kalamazoo/;Kalamazoo;kalamazoo
+http://www.meetup.com/cities/us/mi/kaleva/;Kaleva;kaleva
+http://www.meetup.com/cities/us/mi/kalkaska/;Kalkaska;kalkaska
+http://www.meetup.com/cities/us/mi/kawkawlin/;Kawkawlin;kawkawlin
+http://www.meetup.com/cities/us/mi/kearsarge/;Kearsarge;kearsarge
+http://www.meetup.com/cities/us/mi/keego_harbor/;Keego Harbor;keego_harbor
+http://www.meetup.com/cities/us/mi/kendall/;Kendall;kendall
+http://www.meetup.com/cities/us/mi/kent_city/;Kent City;kent_city
+http://www.meetup.com/cities/us/mi/kewadin/;Kewadin;kewadin
+http://www.meetup.com/cities/us/mi/kincheloe/;Kincheloe;kincheloe
+http://www.meetup.com/cities/us/mi/kinde/;Kinde;kinde
+http://www.meetup.com/cities/us/mi/kingsford/;Kingsford;kingsford
+http://www.meetup.com/cities/us/mi/kingsley/;Kingsley;kingsley
+http://www.meetup.com/cities/us/mi/kingston/;Kingston;kingston
+http://www.meetup.com/cities/us/mi/kinross/;Kinross;kinross
+http://www.meetup.com/cities/us/mi/lachine/;Lachine;lachine
+http://www.meetup.com/cities/us/mi/lacota/;Lacota;lacota
+http://www.meetup.com/cities/us/mi/laingsburg/;Laingsburg;laingsburg
+http://www.meetup.com/cities/us/mi/lake/;Lake;lake
+http://www.meetup.com/cities/us/mi/lake_ann/;Lake Ann;lake_ann
+http://www.meetup.com/cities/us/mi/lake_city/;Lake City;lake_city
+http://www.meetup.com/cities/us/mi/lake_george/;Lake George;lake_george
+http://www.meetup.com/cities/us/mi/lakeland/;Lakeland;lakeland
+http://www.meetup.com/cities/us/mi/lake_leelanau/;Lake Leelanau;lake_leelanau
+http://www.meetup.com/cities/us/mi/lake_linden/;Lake Linden;lake_linden
+http://www.meetup.com/cities/us/mi/lake_odessa/;Lake Odessa;lake_odessa
+http://www.meetup.com/cities/us/mi/lake_orion/;Lake Orion;lake_orion
+http://www.meetup.com/cities/us/mi/lakeside/;Lakeside;lakeside
+http://www.meetup.com/cities/us/mi/lakeview/;Lakeview;lakeview
+http://www.meetup.com/cities/us/mi/lakeville/;Lakeville;lakeville
+http://www.meetup.com/cities/us/mi/lambertville/;Lambertville;lambertville
+http://www.meetup.com/cities/us/mi/lamont/;Lamont;lamont
+http://www.meetup.com/cities/us/mi/lanse/;Lanse;lanse
+http://www.meetup.com/cities/us/mi/lansing/;Lansing;lansing
+http://www.meetup.com/cities/us/mi/lapeer/;Lapeer;lapeer
+http://www.meetup.com/cities/us/mi/la_salle/;La Salle;la_salle
+http://www.meetup.com/cities/us/mi/lawrence/;Lawrence;lawrence
+http://www.meetup.com/cities/us/mi/lawton/;Lawton;lawton
+http://www.meetup.com/cities/us/mi/leland/;Leland;leland
+http://www.meetup.com/cities/us/mi/lennon/;Lennon;lennon
+http://www.meetup.com/cities/us/mi/leonard/;Leonard;leonard
+http://www.meetup.com/cities/us/mi/leonidas/;Leonidas;leonidas
+http://www.meetup.com/cities/us/mi/leroy/;Leroy;leroy
+http://www.meetup.com/cities/us/mi/leslie/;Leslie;leslie
+http://www.meetup.com/cities/us/mi/levering/;Levering;levering
+http://www.meetup.com/cities/us/mi/lewiston/;Lewiston;lewiston
+http://www.meetup.com/cities/us/mi/lexington/;Lexington;lexington
+http://www.meetup.com/cities/us/mi/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/mi/lincoln_park/;Lincoln Park;lincoln_park
+http://www.meetup.com/cities/us/mi/linden/;Linden;linden
+http://www.meetup.com/cities/us/mi/linwood/;Linwood;linwood
+http://www.meetup.com/cities/us/mi/litchfield/;Litchfield;litchfield
+http://www.meetup.com/cities/us/mi/little_lake/;Little Lake;little_lake
+http://www.meetup.com/cities/us/mi/livonia/;Livonia;livonia
+http://www.meetup.com/cities/us/mi/long_lake/;Long Lake;long_lake
+http://www.meetup.com/cities/us/mi/loretto/;Loretto;loretto
+http://www.meetup.com/cities/us/mi/lowell/;Lowell;lowell
+http://www.meetup.com/cities/us/mi/ludington/;Ludington;ludington
+http://www.meetup.com/cities/us/mi/luna_pier/;Luna Pier;luna_pier
+http://www.meetup.com/cities/us/mi/lupton/;Lupton;lupton
+http://www.meetup.com/cities/us/mi/luther/;Luther;luther
+http://www.meetup.com/cities/us/mi/luzerne/;Luzerne;luzerne
+http://www.meetup.com/cities/us/mi/lyons/;Lyons;lyons
+http://www.meetup.com/cities/us/mi/macatawa/;Macatawa;macatawa
+http://www.meetup.com/cities/us/mi/mackinac_island/;Mackinac Island;mackinac_island
+http://www.meetup.com/cities/us/mi/mackinaw_city/;Mackinaw City;mackinaw_city
+http://www.meetup.com/cities/us/mi/macomb/;Macomb;macomb
+http://www.meetup.com/cities/us/mi/madison_heights/;Madison Heights;madison_heights
+http://www.meetup.com/cities/us/mi/mancelona/;Mancelona;mancelona
+http://www.meetup.com/cities/us/mi/manchester/;Manchester;manchester
+http://www.meetup.com/cities/us/mi/manistee/;Manistee;manistee
+http://www.meetup.com/cities/us/mi/manistique/;Manistique;manistique
+http://www.meetup.com/cities/us/mi/manitou_beach/;Manitou Beach;manitou_beach
+http://www.meetup.com/cities/us/mi/manton/;Manton;manton
+http://www.meetup.com/cities/us/mi/maple_city/;Maple City;maple_city
+http://www.meetup.com/cities/us/mi/maple_rapids/;Maple Rapids;maple_rapids
+http://www.meetup.com/cities/us/mi/marcellus/;Marcellus;marcellus
+http://www.meetup.com/cities/us/mi/marenisco/;Marenisco;marenisco
+http://www.meetup.com/cities/us/mi/marine_city/;Marine City;marine_city
+http://www.meetup.com/cities/us/mi/marion/;Marion;marion
+http://www.meetup.com/cities/us/mi/marlette/;Marlette;marlette
+http://www.meetup.com/cities/us/mi/marne/;Marne;marne
+http://www.meetup.com/cities/us/mi/marquette/;Marquette;marquette
+http://www.meetup.com/cities/us/mi/marshall/;Marshall;marshall
+http://www.meetup.com/cities/us/mi/martin/;Martin;martin
+http://www.meetup.com/cities/us/mi/marysville/;Marysville;marysville
+http://www.meetup.com/cities/us/mi/mason/;Mason;mason
+http://www.meetup.com/cities/us/mi/mass_city/;Mass City;mass_city
+http://www.meetup.com/cities/us/mi/mattawan/;Mattawan;mattawan
+http://www.meetup.com/cities/us/mi/maybee/;Maybee;maybee
+http://www.meetup.com/cities/us/mi/mayfield/;Mayfield;mayfield
+http://www.meetup.com/cities/us/mi/mayville/;Mayville;mayville
+http://www.meetup.com/cities/us/mi/mc_bain/;Mc Bain;mc_bain
+http://www.meetup.com/cities/us/mi/mcbrides/;McBrides;mcbrides
+http://www.meetup.com/cities/us/mi/mc_millan/;Mc Millan;mc_millan
+http://www.meetup.com/cities/us/mi/mears/;Mears;mears
+http://www.meetup.com/cities/us/mi/mecosta/;Mecosta;mecosta
+http://www.meetup.com/cities/us/mi/melvin/;Melvin;melvin
+http://www.meetup.com/cities/us/mi/melvindale/;Melvindale;melvindale
+http://www.meetup.com/cities/us/mi/memphis/;Memphis;memphis
+http://www.meetup.com/cities/us/mi/mendon/;Mendon;mendon
+http://www.meetup.com/cities/us/mi/menominee/;Menominee;menominee
+http://www.meetup.com/cities/us/mi/merrill/;Merrill;merrill
+http://www.meetup.com/cities/us/mi/merritt/;Merritt;merritt
+http://www.meetup.com/cities/us/mi/mesick/;Mesick;mesick
+http://www.meetup.com/cities/us/mi/metamora/;Metamora;metamora
+http://www.meetup.com/cities/us/mi/michigamme/;Michigamme;michigamme
+http://www.meetup.com/cities/us/mi/michigan_center/;Michigan Center;michigan_center
+http://www.meetup.com/cities/us/mi/middleton/;Middleton;middleton
+http://www.meetup.com/cities/us/mi/middleville/;Middleville;middleville
+http://www.meetup.com/cities/us/mi/midland/;Midland;midland
+http://www.meetup.com/cities/us/mi/mikado/;Mikado;mikado
+http://www.meetup.com/cities/us/mi/milan/;Milan;milan
+http://www.meetup.com/cities/us/mi/milford/;Milford;milford
+http://www.meetup.com/cities/us/mi/millersburg/;Millersburg;millersburg
+http://www.meetup.com/cities/us/mi/millington/;Millington;millington
+http://www.meetup.com/cities/us/mi/minden_city/;Minden City;minden_city
+http://www.meetup.com/cities/us/mi/mio/;Mio;mio
+http://www.meetup.com/cities/us/mi/mohawk/;Mohawk;mohawk
+http://www.meetup.com/cities/us/mi/moline/;Moline;moline
+http://www.meetup.com/cities/us/mi/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/mi/montague/;Montague;montague
+http://www.meetup.com/cities/us/mi/montgomery/;Montgomery;montgomery
+http://www.meetup.com/cities/us/mi/montrose/;Montrose;montrose
+http://www.meetup.com/cities/us/mi/moran/;Moran;moran
+http://www.meetup.com/cities/us/mi/morenci/;Morenci;morenci
+http://www.meetup.com/cities/us/mi/morley/;Morley;morley
+http://www.meetup.com/cities/us/mi/morrice/;Morrice;morrice
+http://www.meetup.com/cities/us/mi/moscow/;Moscow;moscow
+http://www.meetup.com/cities/us/mi/mosherville/;Mosherville;mosherville
+http://www.meetup.com/cities/us/mi/mount_clemens/;Mount Clemens;mount_clemens
+http://www.meetup.com/cities/us/mi/mount_morris/;Mount Morris;mount_morris
+http://www.meetup.com/cities/us/mi/mount_pleasant/;Mount Pleasant;mount_pleasant
+http://www.meetup.com/cities/us/mi/muir/;Muir;muir
+http://www.meetup.com/cities/us/mi/mullett_lake/;Mullett Lake;mullett_lake
+http://www.meetup.com/cities/us/mi/mulliken/;Mulliken;mulliken
+http://www.meetup.com/cities/us/mi/munger/;Munger;munger
+http://www.meetup.com/cities/us/mi/munising/;Munising;munising
+http://www.meetup.com/cities/us/mi/munith/;Munith;munith
+http://www.meetup.com/cities/us/mi/muskegon/;Muskegon;muskegon
+http://www.meetup.com/cities/us/mi/nadeau/;Nadeau;nadeau
+http://www.meetup.com/cities/us/mi/nahma/;Nahma;nahma
+http://www.meetup.com/cities/us/mi/napoleon/;Napoleon;napoleon
+http://www.meetup.com/cities/us/mi/nashville/;Nashville;nashville
+http://www.meetup.com/cities/us/mi/national_city/;National City;national_city
+http://www.meetup.com/cities/us/mi/national_mine/;National Mine;national_mine
+http://www.meetup.com/cities/us/mi/naubinway/;Naubinway;naubinway
+http://www.meetup.com/cities/us/mi/nazareth/;Nazareth;nazareth
+http://www.meetup.com/cities/us/mi/negaunee/;Negaunee;negaunee
+http://www.meetup.com/cities/us/mi/newaygo/;Newaygo;newaygo
+http://www.meetup.com/cities/us/mi/new_baltimore/;New Baltimore;new_baltimore
+http://www.meetup.com/cities/us/mi/newberry/;Newberry;newberry
+http://www.meetup.com/cities/us/mi/new_boston/;New Boston;new_boston
+http://www.meetup.com/cities/us/mi/new_buffalo/;New Buffalo;new_buffalo
+http://www.meetup.com/cities/us/mi/new_era/;New Era;new_era
+http://www.meetup.com/cities/us/mi/new_haven/;New Haven;new_haven
+http://www.meetup.com/cities/us/mi/new_hudson/;New Hudson;new_hudson
+http://www.meetup.com/cities/us/mi/new_lothrop/;New Lothrop;new_lothrop
+http://www.meetup.com/cities/us/mi/newport/;Newport;newport
+http://www.meetup.com/cities/us/mi/new_troy/;New Troy;new_troy
+http://www.meetup.com/cities/us/mi/niles/;Niles;niles
+http://www.meetup.com/cities/us/mi/nisula/;Nisula;nisula
+http://www.meetup.com/cities/us/mi/north_adams/;North Adams;north_adams
+http://www.meetup.com/cities/us/mi/north_branch/;North Branch;north_branch
+http://www.meetup.com/cities/us/mi/northport/;Northport;northport
+http://www.meetup.com/cities/us/mi/north_star/;North Star;north_star
+http://www.meetup.com/cities/us/mi/north_street/;North Street;north_street
+http://www.meetup.com/cities/us/mi/northville/;Northville;northville
+http://www.meetup.com/cities/us/mi/norvell/;Norvell;norvell
+http://www.meetup.com/cities/us/mi/norway/;Norway;norway
+http://www.meetup.com/cities/us/mi/nottawa/;Nottawa;nottawa
+http://www.meetup.com/cities/us/mi/novi/;Novi;novi
+http://www.meetup.com/cities/us/mi/nunica/;Nunica;nunica
+http://www.meetup.com/cities/us/mi/oak_grove/;Oak Grove;oak_grove
+http://www.meetup.com/cities/us/mi/oakland/;Oakland;oakland
+http://www.meetup.com/cities/us/mi/oakley/;Oakley;oakley
+http://www.meetup.com/cities/us/mi/oak_park/;Oak Park;oak_park
+http://www.meetup.com/cities/us/mi/oden/;Oden;oden
+http://www.meetup.com/cities/us/mi/okemos/;Okemos;okemos
+http://www.meetup.com/cities/us/mi/old_mission/;Old Mission;old_mission
+http://www.meetup.com/cities/us/mi/olivet/;Olivet;olivet
+http://www.meetup.com/cities/us/mi/omena/;Omena;omena
+http://www.meetup.com/cities/us/mi/omer/;Omer;omer
+http://www.meetup.com/cities/us/mi/onaway/;Onaway;onaway
+http://www.meetup.com/cities/us/mi/onekama/;Onekama;onekama
+http://www.meetup.com/cities/us/mi/onondaga/;Onondaga;onondaga
+http://www.meetup.com/cities/us/mi/onsted/;Onsted;onsted
+http://www.meetup.com/cities/us/mi/ontonagon/;Ontonagon;ontonagon
+http://www.meetup.com/cities/us/mi/orleans/;Orleans;orleans
+http://www.meetup.com/cities/us/mi/ortonville/;Ortonville;ortonville
+http://www.meetup.com/cities/us/mi/oscoda/;Oscoda;oscoda
+http://www.meetup.com/cities/us/mi/oshtemo/;Oshtemo;oshtemo
+http://www.meetup.com/cities/us/mi/osseo/;Osseo;osseo
+http://www.meetup.com/cities/us/mi/ossineke/;Ossineke;ossineke
+http://www.meetup.com/cities/us/mi/otisville/;Otisville;otisville
+http://www.meetup.com/cities/us/mi/otsego/;Otsego;otsego
+http://www.meetup.com/cities/us/mi/ottawa_lake/;Ottawa Lake;ottawa_lake
+http://www.meetup.com/cities/us/mi/otter_lake/;Otter Lake;otter_lake
+http://www.meetup.com/cities/us/mi/ovid/;Ovid;ovid
+http://www.meetup.com/cities/us/mi/owendale/;Owendale;owendale
+http://www.meetup.com/cities/us/mi/owosso/;Owosso;owosso
+http://www.meetup.com/cities/us/mi/oxford/;Oxford;oxford
+http://www.meetup.com/cities/us/mi/painesdale/;Painesdale;painesdale
+http://www.meetup.com/cities/us/mi/palmer/;Palmer;palmer
+http://www.meetup.com/cities/us/mi/palms/;Palms;palms
+http://www.meetup.com/cities/us/mi/palmyra/;Palmyra;palmyra
+http://www.meetup.com/cities/us/mi/palo/;Palo;palo
+http://www.meetup.com/cities/us/mi/paradise/;Paradise;paradise
+http://www.meetup.com/cities/us/mi/paris/;Paris;paris
+http://www.meetup.com/cities/us/mi/parma/;Parma;parma
+http://www.meetup.com/cities/us/mi/paw_paw/;Paw Paw;paw_paw
+http://www.meetup.com/cities/us/mi/peck/;Peck;peck
+http://www.meetup.com/cities/us/mi/pelkie/;Pelkie;pelkie
+http://www.meetup.com/cities/us/mi/pellston/;Pellston;pellston
+http://www.meetup.com/cities/us/mi/pentwater/;Pentwater;pentwater
+http://www.meetup.com/cities/us/mi/perkins/;Perkins;perkins
+http://www.meetup.com/cities/us/mi/perrinton/;Perrinton;perrinton
+http://www.meetup.com/cities/us/mi/perronville/;Perronville;perronville
+http://www.meetup.com/cities/us/mi/perry/;Perry;perry
+http://www.meetup.com/cities/us/mi/petersburg/;Petersburg;petersburg
+http://www.meetup.com/cities/us/mi/petoskey/;Petoskey;petoskey
+http://www.meetup.com/cities/us/mi/pewamo/;Pewamo;pewamo
+http://www.meetup.com/cities/us/mi/pickford/;Pickford;pickford
+http://www.meetup.com/cities/us/mi/pierson/;Pierson;pierson
+http://www.meetup.com/cities/us/mi/pigeon/;Pigeon;pigeon
+http://www.meetup.com/cities/us/mi/pinckney/;Pinckney;pinckney
+http://www.meetup.com/cities/us/mi/pinconning/;Pinconning;pinconning
+http://www.meetup.com/cities/us/mi/pittsford/;Pittsford;pittsford
+http://www.meetup.com/cities/us/mi/plainwell/;Plainwell;plainwell
+http://www.meetup.com/cities/us/mi/pleasant_lake/;Pleasant Lake;pleasant_lake
+http://www.meetup.com/cities/us/mi/pleasant_ridge/;Pleasant Ridge;pleasant_ridge
+http://www.meetup.com/cities/us/mi/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/mi/pointe_aux_pins/;Pointe Aux Pins;pointe_aux_pins
+http://www.meetup.com/cities/us/mi/pompeii/;Pompeii;pompeii
+http://www.meetup.com/cities/us/mi/pontiac/;Pontiac;pontiac
+http://www.meetup.com/cities/us/mi/portage/;Portage;portage
+http://www.meetup.com/cities/us/mi/port_austin/;Port Austin;port_austin
+http://www.meetup.com/cities/us/mi/port_hope/;Port Hope;port_hope
+http://www.meetup.com/cities/us/mi/port_huron/;Port Huron;port_huron
+http://www.meetup.com/cities/us/mi/portland/;Portland;portland
+http://www.meetup.com/cities/us/mi/port_sanilac/;Port Sanilac;port_sanilac
+http://www.meetup.com/cities/us/mi/posen/;Posen;posen
+http://www.meetup.com/cities/us/mi/potterville/;Potterville;potterville
+http://www.meetup.com/cities/us/mi/powers/;Powers;powers
+http://www.meetup.com/cities/us/mi/prescott/;Prescott;prescott
+http://www.meetup.com/cities/us/mi/presque_isle/;Presque Isle;presque_isle
+http://www.meetup.com/cities/us/mi/prudenville/;Prudenville;prudenville
+http://www.meetup.com/cities/us/mi/pullman/;Pullman;pullman
+http://www.meetup.com/cities/us/mi/quincy/;Quincy;quincy
+http://www.meetup.com/cities/us/mi/quinnesec/;Quinnesec;quinnesec
+http://www.meetup.com/cities/us/mi/ralph/;Ralph;ralph
+http://www.meetup.com/cities/us/mi/ramsay/;Ramsay;ramsay
+http://www.meetup.com/cities/us/mi/rapid_city/;Rapid City;rapid_city
+http://www.meetup.com/cities/us/mi/rapid_river/;Rapid River;rapid_river
+http://www.meetup.com/cities/us/mi/ravenna/;Ravenna;ravenna
+http://www.meetup.com/cities/us/mi/ray/;Ray;ray
+http://www.meetup.com/cities/us/mi/reading/;Reading;reading
+http://www.meetup.com/cities/us/mi/redford/;Redford;redford
+http://www.meetup.com/cities/us/mi/reed_city/;Reed City;reed_city
+http://www.meetup.com/cities/us/mi/reese/;Reese;reese
+http://www.meetup.com/cities/us/mi/remus/;Remus;remus
+http://www.meetup.com/cities/us/mi/republic/;Republic;republic
+http://www.meetup.com/cities/us/mi/rhodes/;Rhodes;rhodes
+http://www.meetup.com/cities/us/mi/richland/;Richland;richland
+http://www.meetup.com/cities/us/mi/richmond/;Richmond;richmond
+http://www.meetup.com/cities/us/mi/richville/;Richville;richville
+http://www.meetup.com/cities/us/mi/riga/;Riga;riga
+http://www.meetup.com/cities/us/mi/riverdale/;Riverdale;riverdale
+http://www.meetup.com/cities/us/mi/river_rouge/;River Rouge;river_rouge
+http://www.meetup.com/cities/us/mi/riverside/;Riverside;riverside
+http://www.meetup.com/cities/us/mi/riverview/;Riverview;riverview
+http://www.meetup.com/cities/us/mi/rives_junction/;Rives Junction;rives_junction
+http://www.meetup.com/cities/us/mi/rochester/;Rochester;rochester
+http://www.meetup.com/cities/us/mi/rock/;Rock;rock
+http://www.meetup.com/cities/us/mi/rockford/;Rockford;rockford
+http://www.meetup.com/cities/us/mi/rockland/;Rockland;rockland
+http://www.meetup.com/cities/us/mi/rockwood/;Rockwood;rockwood
+http://www.meetup.com/cities/us/mi/rodney/;Rodney;rodney
+http://www.meetup.com/cities/us/mi/rogers_city/;Rogers City;rogers_city
+http://www.meetup.com/cities/us/mi/romeo/;Romeo;romeo
+http://www.meetup.com/cities/us/mi/romulus/;Romulus;romulus
+http://www.meetup.com/cities/us/mi/roscommon/;Roscommon;roscommon
+http://www.meetup.com/cities/us/mi/rosebush/;Rosebush;rosebush
+http://www.meetup.com/cities/us/mi/rose_city/;Rose City;rose_city
+http://www.meetup.com/cities/us/mi/roseville/;Roseville;roseville
+http://www.meetup.com/cities/us/mi/rothbury/;Rothbury;rothbury
+http://www.meetup.com/cities/us/mi/royal_oak/;Royal Oak;royal_oak
+http://www.meetup.com/cities/us/mi/rudyard/;Rudyard;rudyard
+http://www.meetup.com/cities/us/mi/rumely/;Rumely;rumely
+http://www.meetup.com/cities/us/mi/ruth/;Ruth;ruth
+http://www.meetup.com/cities/us/mi/saginaw/;Saginaw;saginaw
+http://www.meetup.com/cities/us/mi/sagola/;Sagola;sagola
+http://www.meetup.com/cities/us/mi/saint_charles/;Saint Charles;saint_charles
+http://www.meetup.com/cities/us/mi/saint_clair/;Saint Clair;saint_clair
+http://www.meetup.com/cities/us/mi/saint_clair_shores/;Saint Clair Shores;saint_clair_shores
+http://www.meetup.com/cities/us/mi/saint_helen/;Saint Helen;saint_helen
+http://www.meetup.com/cities/us/mi/saint_ignace/;Saint Ignace;saint_ignace
+http://www.meetup.com/cities/us/mi/saint_johns/;Saint Johns;saint_johns
+http://www.meetup.com/cities/us/mi/saint_joseph/;Saint Joseph;saint_joseph
+http://www.meetup.com/cities/us/mi/saint_louis/;Saint Louis;saint_louis
+http://www.meetup.com/cities/us/mi/salem/;Salem;salem
+http://www.meetup.com/cities/us/mi/saline/;Saline;saline
+http://www.meetup.com/cities/us/mi/samaria/;Samaria;samaria
+http://www.meetup.com/cities/us/mi/sand_creek/;Sand Creek;sand_creek
+http://www.meetup.com/cities/us/mi/sand_lake/;Sand Lake;sand_lake
+http://www.meetup.com/cities/us/mi/sandusky/;Sandusky;sandusky
+http://www.meetup.com/cities/us/mi/sanford/;Sanford;sanford
+http://www.meetup.com/cities/us/mi/saranac/;Saranac;saranac
+http://www.meetup.com/cities/us/mi/saugatuck/;Saugatuck;saugatuck
+http://www.meetup.com/cities/us/mi/sault_sainte_marie/;Sault Sainte Marie;sault_sainte_marie
+http://www.meetup.com/cities/us/mi/sawyer/;Sawyer;sawyer
+http://www.meetup.com/cities/us/mi/schoolcraft/;Schoolcraft;schoolcraft
+http://www.meetup.com/cities/us/mi/scotts/;Scotts;scotts
+http://www.meetup.com/cities/us/mi/scottville/;Scottville;scottville
+http://www.meetup.com/cities/us/mi/sears/;Sears;sears
+http://www.meetup.com/cities/us/mi/sebewaing/;Sebewaing;sebewaing
+http://www.meetup.com/cities/us/mi/seney/;Seney;seney
+http://www.meetup.com/cities/us/mi/shaftsburg/;Shaftsburg;shaftsburg
+http://www.meetup.com/cities/us/mi/shelby/;Shelby;shelby
+http://www.meetup.com/cities/us/mi/shelbyville/;Shelbyville;shelbyville
+http://www.meetup.com/cities/us/mi/shepherd/;Shepherd;shepherd
+http://www.meetup.com/cities/us/mi/sheridan/;Sheridan;sheridan
+http://www.meetup.com/cities/us/mi/sherwood/;Sherwood;sherwood
+http://www.meetup.com/cities/us/mi/shingleton/;Shingleton;shingleton
+http://www.meetup.com/cities/us/mi/sidnaw/;Sidnaw;sidnaw
+http://www.meetup.com/cities/us/mi/sidney/;Sidney;sidney
+http://www.meetup.com/cities/us/mi/silverwood/;Silverwood;silverwood
+http://www.meetup.com/cities/us/mi/six_lakes/;Six Lakes;six_lakes
+http://www.meetup.com/cities/us/mi/skandia/;Skandia;skandia
+http://www.meetup.com/cities/us/mi/skanee/;Skanee;skanee
+http://www.meetup.com/cities/us/mi/smiths_creek/;Smiths Creek;smiths_creek
+http://www.meetup.com/cities/us/mi/smyrna/;Smyrna;smyrna
+http://www.meetup.com/cities/us/mi/snover/;Snover;snover
+http://www.meetup.com/cities/us/mi/sodus/;Sodus;sodus
+http://www.meetup.com/cities/us/mi/somerset/;Somerset;somerset
+http://www.meetup.com/cities/us/mi/somerset_center/;Somerset Center;somerset_center
+http://www.meetup.com/cities/us/mi/south_boardman/;South Boardman;south_boardman
+http://www.meetup.com/cities/us/mi/south_branch/;South Branch;south_branch
+http://www.meetup.com/cities/us/mi/southfield/;Southfield;southfield
+http://www.meetup.com/cities/us/mi/southgate/;Southgate;southgate
+http://www.meetup.com/cities/us/mi/south_haven/;South Haven;south_haven
+http://www.meetup.com/cities/us/mi/south_lyon/;South Lyon;south_lyon
+http://www.meetup.com/cities/us/mi/south_range/;South Range;south_range
+http://www.meetup.com/cities/us/mi/south_rockwood/;South Rockwood;south_rockwood
+http://www.meetup.com/cities/us/mi/spalding/;Spalding;spalding
+http://www.meetup.com/cities/us/mi/sparta/;Sparta;sparta
+http://www.meetup.com/cities/us/mi/spring_arbor/;Spring Arbor;spring_arbor
+http://www.meetup.com/cities/us/mi/spring_lake/;Spring Lake;spring_lake
+http://www.meetup.com/cities/us/mi/springport/;Springport;springport
+http://www.meetup.com/cities/us/mi/spruce/;Spruce;spruce
+http://www.meetup.com/cities/us/mi/stambaugh/;Stambaugh;stambaugh
+http://www.meetup.com/cities/us/mi/standish/;Standish;standish
+http://www.meetup.com/cities/us/mi/stanton/;Stanton;stanton
+http://www.meetup.com/cities/us/mi/stanwood/;Stanwood;stanwood
+http://www.meetup.com/cities/us/mi/stephenson/;Stephenson;stephenson
+http://www.meetup.com/cities/us/mi/sterling/;Sterling;sterling
+http://www.meetup.com/cities/us/mi/sterling_heights/;Sterling Heights;sterling_heights
+http://www.meetup.com/cities/us/mi/stevensville/;Stevensville;stevensville
+http://www.meetup.com/cities/us/mi/stockbridge/;Stockbridge;stockbridge
+http://www.meetup.com/cities/us/mi/strongs/;Strongs;strongs
+http://www.meetup.com/cities/us/mi/sturgis/;Sturgis;sturgis
+http://www.meetup.com/cities/us/mi/sumner/;Sumner;sumner
+http://www.meetup.com/cities/us/mi/sunfield/;Sunfield;sunfield
+http://www.meetup.com/cities/us/mi/suttons_bay/;Suttons Bay;suttons_bay
+http://www.meetup.com/cities/us/mi/swartz_creek/;Swartz Creek;swartz_creek
+http://www.meetup.com/cities/us/mi/sylvan_beach/;Sylvan Beach;sylvan_beach
+http://www.meetup.com/cities/us/mi/tawas_city/;Tawas City;tawas_city
+http://www.meetup.com/cities/us/mi/taylor/;Taylor;taylor
+http://www.meetup.com/cities/us/mi/tecumseh/;Tecumseh;tecumseh
+http://www.meetup.com/cities/us/mi/tekonsha/;Tekonsha;tekonsha
+http://www.meetup.com/cities/us/mi/temperance/;Temperance;temperance
+http://www.meetup.com/cities/us/mi/thompsonville/;Thompsonville;thompsonville
+http://www.meetup.com/cities/us/mi/three_oaks/;Three Oaks;three_oaks
+http://www.meetup.com/cities/us/mi/three_rivers/;Three Rivers;three_rivers
+http://www.meetup.com/cities/us/mi/tipton/;Tipton;tipton
+http://www.meetup.com/cities/us/mi/toivola/;Toivola;toivola
+http://www.meetup.com/cities/us/mi/topinabee/;Topinabee;topinabee
+http://www.meetup.com/cities/us/mi/tower/;Tower;tower
+http://www.meetup.com/cities/us/mi/traverse_city/;Traverse City;traverse_city
+http://www.meetup.com/cities/us/mi/trenary/;Trenary;trenary
+http://www.meetup.com/cities/us/mi/trenton/;Trenton;trenton
+http://www.meetup.com/cities/us/mi/trout_creek/;Trout Creek;trout_creek
+http://www.meetup.com/cities/us/mi/trout_lake/;Trout Lake;trout_lake
+http://www.meetup.com/cities/us/mi/troy/;Troy;troy
+http://www.meetup.com/cities/us/mi/trufant/;Trufant;trufant
+http://www.meetup.com/cities/us/mi/turner/;Turner;turner
+http://www.meetup.com/cities/us/mi/tuscola/;Tuscola;tuscola
+http://www.meetup.com/cities/us/mi/tustin/;Tustin;tustin
+http://www.meetup.com/cities/us/mi/twining/;Twining;twining
+http://www.meetup.com/cities/us/mi/twin_lake/;Twin Lake;twin_lake
+http://www.meetup.com/cities/us/mi/ubly/;Ubly;ubly
+http://www.meetup.com/cities/us/mi/union/;Union;union
+http://www.meetup.com/cities/us/mi/union_city/;Union City;union_city
+http://www.meetup.com/cities/us/mi/union_lake/;Union Lake;union_lake
+http://www.meetup.com/cities/us/mi/union_pier/;Union Pier;union_pier
+http://www.meetup.com/cities/us/mi/unionville/;Unionville;unionville
+http://www.meetup.com/cities/us/mi/university_center/;University Center;university_center
+http://www.meetup.com/cities/us/mi/utica/;Utica;utica
+http://www.meetup.com/cities/us/mi/vandalia/;Vandalia;vandalia
+http://www.meetup.com/cities/us/mi/vanderbilt/;Vanderbilt;vanderbilt
+http://www.meetup.com/cities/us/mi/vassar/;Vassar;vassar
+http://www.meetup.com/cities/us/mi/vermontville/;Vermontville;vermontville
+http://www.meetup.com/cities/us/mi/vernon/;Vernon;vernon
+http://www.meetup.com/cities/us/mi/vestaburg/;Vestaburg;vestaburg
+http://www.meetup.com/cities/us/mi/vicksburg/;Vicksburg;vicksburg
+http://www.meetup.com/cities/us/mi/vulcan/;Vulcan;vulcan
+http://www.meetup.com/cities/us/mi/wakefield/;Wakefield;wakefield
+http://www.meetup.com/cities/us/mi/waldron/;Waldron;waldron
+http://www.meetup.com/cities/us/mi/walhalla/;Walhalla;walhalla
+http://www.meetup.com/cities/us/mi/walkerville/;Walkerville;walkerville
+http://www.meetup.com/cities/us/mi/wallace/;Wallace;wallace
+http://www.meetup.com/cities/us/mi/walled_lake/;Walled Lake;walled_lake
+http://www.meetup.com/cities/us/mi/walloon_lake/;Walloon Lake;walloon_lake
+http://www.meetup.com/cities/us/mi/warren/;Warren;warren
+http://www.meetup.com/cities/us/mi/washington/;Washington;washington
+http://www.meetup.com/cities/us/mi/waterford/;Waterford;waterford
+http://www.meetup.com/cities/us/mi/waters/;Waters;waters
+http://www.meetup.com/cities/us/mi/watersmeet/;Watersmeet;watersmeet
+http://www.meetup.com/cities/us/mi/watervliet/;Watervliet;watervliet
+http://www.meetup.com/cities/us/mi/watton/;Watton;watton
+http://www.meetup.com/cities/us/mi/wayland/;Wayland;wayland
+http://www.meetup.com/cities/us/mi/wayne/;Wayne;wayne
+http://www.meetup.com/cities/us/mi/webberville/;Webberville;webberville
+http://www.meetup.com/cities/us/mi/weidman/;Weidman;weidman
+http://www.meetup.com/cities/us/mi/wells/;Wells;wells
+http://www.meetup.com/cities/us/mi/wellston/;Wellston;wellston
+http://www.meetup.com/cities/us/mi/west_bloomfield/;West Bloomfield;west_bloomfield
+http://www.meetup.com/cities/us/mi/west_branch/;West Branch;west_branch
+http://www.meetup.com/cities/us/mi/westland/;Westland;westland
+http://www.meetup.com/cities/us/mi/west_olive/;West Olive;west_olive
+http://www.meetup.com/cities/us/mi/weston/;Weston;weston
+http://www.meetup.com/cities/us/mi/westphalia/;Westphalia;westphalia
+http://www.meetup.com/cities/us/mi/wetmore/;Wetmore;wetmore
+http://www.meetup.com/cities/us/mi/wheeler/;Wheeler;wheeler
+http://www.meetup.com/cities/us/mi/white_cloud/;White Cloud;white_cloud
+http://www.meetup.com/cities/us/mi/whitehall/;Whitehall;whitehall
+http://www.meetup.com/cities/us/mi/white_lake/;White Lake;white_lake
+http://www.meetup.com/cities/us/mi/white_pigeon/;White Pigeon;white_pigeon
+http://www.meetup.com/cities/us/mi/white_pine/;White Pine;white_pine
+http://www.meetup.com/cities/us/mi/whitmore_lake/;Whitmore Lake;whitmore_lake
+http://www.meetup.com/cities/us/mi/whittaker/;Whittaker;whittaker
+http://www.meetup.com/cities/us/mi/whittemore/;Whittemore;whittemore
+http://www.meetup.com/cities/us/mi/williamsburg/;Williamsburg;williamsburg
+http://www.meetup.com/cities/us/mi/williamston/;Williamston;williamston
+http://www.meetup.com/cities/us/mi/willis/;Willis;willis
+http://www.meetup.com/cities/us/mi/wilson/;Wilson;wilson
+http://www.meetup.com/cities/us/mi/winn/;Winn;winn
+http://www.meetup.com/cities/us/mi/wixom/;Wixom;wixom
+http://www.meetup.com/cities/us/mi/wolverine/;Wolverine;wolverine
+http://www.meetup.com/cities/us/mi/woodland/;Woodland;woodland
+http://www.meetup.com/cities/us/mi/wyandotte/;Wyandotte;wyandotte
+http://www.meetup.com/cities/us/mi/wyoming/;Wyoming;wyoming
+http://www.meetup.com/cities/us/mi/yale/;Yale;yale
+http://www.meetup.com/cities/us/mi/ypsilanti/;Ypsilanti;ypsilanti
+http://www.meetup.com/cities/us/mi/zeeland/;Zeeland;zeeland
+http://www.meetup.com/cities/us/mi/acme/;Acme;acme
+http://www.meetup.com/cities/us/mi/ada/;Ada;ada
+http://www.meetup.com/cities/us/mi/addison/;Addison;addison
+http://www.meetup.com/cities/us/mi/adrian/;Adrian;adrian
+http://www.meetup.com/cities/us/mi/afton/;Afton;afton
+http://www.meetup.com/cities/us/mi/ahmeek/;Ahmeek;ahmeek
+http://www.meetup.com/cities/us/mi/akron/;Akron;akron
+http://www.meetup.com/cities/us/mi/alanson/;Alanson;alanson
+http://www.meetup.com/cities/us/mi/alba/;Alba;alba
+http://www.meetup.com/cities/us/mi/albion/;Albion;albion
+http://www.meetup.com/cities/us/mi/alden/;Alden;alden
+http://www.meetup.com/cities/us/mi/alger/;Alger;alger
+http://www.meetup.com/cities/us/mi/algonac/;Algonac;algonac
+http://www.meetup.com/cities/us/mi/allegan/;Allegan;allegan
+http://www.meetup.com/cities/us/mi/allen/;Allen;allen
+http://www.meetup.com/cities/us/mi/allendale/;Allendale;allendale
+http://www.meetup.com/cities/us/mi/allen_park/;Allen Park;allen_park
+http://www.meetup.com/cities/us/mi/allenton/;Allenton;allenton
+http://www.meetup.com/cities/us/mi/allouez/;Allouez;allouez
+http://www.meetup.com/cities/us/mi/alma/;Alma;alma
+http://www.meetup.com/cities/us/mi/almont/;Almont;almont
+http://www.meetup.com/cities/us/mi/alpena/;Alpena;alpena
+http://www.meetup.com/cities/us/mi/alpha/;Alpha;alpha
+http://www.meetup.com/cities/us/mi/alto/;Alto;alto
+http://www.meetup.com/cities/us/mi/amasa/;Amasa;amasa
+http://www.meetup.com/cities/us/mi/anchorville/;Anchorville;anchorville
+http://www.meetup.com/cities/us/mi/ann_arbor/;Ann Arbor;ann_arbor
+http://www.meetup.com/cities/us/mi/applegate/;Applegate;applegate
+http://www.meetup.com/cities/us/mi/arcadia/;Arcadia;arcadia
+http://www.meetup.com/cities/us/mi/argyle/;Argyle;argyle
+http://www.meetup.com/cities/us/mi/armada/;Armada;armada
+http://www.meetup.com/cities/us/mi/arnold/;Arnold;arnold
+http://www.meetup.com/cities/us/mi/ashley/;Ashley;ashley
+http://www.meetup.com/cities/us/mi/athens/;Athens;athens
+http://www.meetup.com/cities/us/mi/atlanta/;Atlanta;atlanta
+http://www.meetup.com/cities/us/mi/atlantic_mine/;Atlantic Mine;atlantic_mine
+http://www.meetup.com/cities/us/mi/atlas/;Atlas;atlas
+http://www.meetup.com/cities/us/mi/attica/;Attica;attica
+http://www.meetup.com/cities/us/mi/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/mi/auburn_hills/;Auburn Hills;auburn_hills
+http://www.meetup.com/cities/us/mi/au_gres/;Au Gres;au_gres
+http://www.meetup.com/cities/us/mi/augusta/;Augusta;augusta
+http://www.meetup.com/cities/us/mi/au_train/;Au Train;au_train
+http://www.meetup.com/cities/us/mi/avoca/;Avoca;avoca
+http://www.meetup.com/cities/us/mi/azalia/;Azalia;azalia
+http://www.meetup.com/cities/us/mi/bad_axe/;Bad Axe;bad_axe
+http://www.meetup.com/cities/us/mi/bailey/;Bailey;bailey
+http://www.meetup.com/cities/us/mi/baldwin/;Baldwin;baldwin
+http://www.meetup.com/cities/us/mi/bancroft/;Bancroft;bancroft
+http://www.meetup.com/cities/us/mi/bangor/;Bangor;bangor
+http://www.meetup.com/cities/us/mi/bannister/;Bannister;bannister
+http://www.meetup.com/cities/us/mi/baraga/;Baraga;baraga
+http://www.meetup.com/cities/us/mi/barbeau/;Barbeau;barbeau
+http://www.meetup.com/cities/us/mi/bark_river/;Bark River;bark_river
+http://www.meetup.com/cities/us/mi/baroda/;Baroda;baroda
+http://www.meetup.com/cities/us/mi/barryton/;Barryton;barryton
+http://www.meetup.com/cities/us/mi/barton_city/;Barton City;barton_city
+http://www.meetup.com/cities/us/mi/bath/;Bath;bath
+http://www.meetup.com/cities/us/mi/battle_creek/;Battle Creek;battle_creek
+http://www.meetup.com/cities/us/mi/bay_city/;Bay City;bay_city
+http://www.meetup.com/cities/us/mi/bay_port/;Bay Port;bay_port
+http://www.meetup.com/cities/us/mi/bay_shore/;Bay Shore;bay_shore
+http://www.meetup.com/cities/us/mi/bear_lake/;Bear Lake;bear_lake
+http://www.meetup.com/cities/us/mi/beaver_island/;Beaver Island;beaver_island
+http://www.meetup.com/cities/us/mi/beaverton/;Beaverton;beaverton
+http://www.meetup.com/cities/us/mi/bedford/;Bedford;bedford
+http://www.meetup.com/cities/us/mi/belding/;Belding;belding
+http://www.meetup.com/cities/us/mi/bellaire/;Bellaire;bellaire
+http://www.meetup.com/cities/us/mi/belleville/;Belleville;belleville
+http://www.meetup.com/cities/us/mi/bellevue/;Bellevue;bellevue
+http://www.meetup.com/cities/us/mi/belmont/;Belmont;belmont
+http://www.meetup.com/cities/us/mi/bentley/;Bentley;bentley
+http://www.meetup.com/cities/us/mi/benton_harbor/;Benton Harbor;benton_harbor
+http://www.meetup.com/cities/us/mi/benzonia/;Benzonia;benzonia
+http://www.meetup.com/cities/us/mi/bergland/;Bergland;bergland
+http://www.meetup.com/cities/us/mi/berkley/;Berkley;berkley
+http://www.meetup.com/cities/us/mi/berrien_center/;Berrien Center;berrien_center
+http://www.meetup.com/cities/us/mi/berrien_springs/;Berrien Springs;berrien_springs
+http://www.meetup.com/cities/us/mi/bessemer/;Bessemer;bessemer
+http://www.meetup.com/cities/us/mi/beulah/;Beulah;beulah
+http://www.meetup.com/cities/us/mi/big_bay/;Big Bay;big_bay
+http://www.meetup.com/cities/us/mi/big_rapids/;Big Rapids;big_rapids
+http://www.meetup.com/cities/us/mi/birch_run/;Birch Run;birch_run
+http://www.meetup.com/cities/us/mi/birmingham/;Birmingham;birmingham
+http://www.meetup.com/cities/us/mi/bitely/;Bitely;bitely
+http://www.meetup.com/cities/us/mi/black_river/;Black River;black_river
+http://www.meetup.com/cities/us/mi/blanchard/;Blanchard;blanchard
+http://www.meetup.com/cities/us/mi/blissfield/;Blissfield;blissfield
+http://www.meetup.com/cities/us/mi/bloomfield_hills/;Bloomfield Hills;bloomfield_hills
+http://www.meetup.com/cities/us/mi/bloomingdale/;Bloomingdale;bloomingdale
+http://www.meetup.com/cities/us/mi/boon/;Boon;boon
+http://www.meetup.com/cities/us/mi/boyne_city/;Boyne City;boyne_city
+http://www.meetup.com/cities/us/mi/boyne_falls/;Boyne Falls;boyne_falls
+http://www.meetup.com/cities/us/mi/bradley/;Bradley;bradley
+http://www.meetup.com/cities/us/mi/branch/;Branch;branch
+http://www.meetup.com/cities/us/mi/brant/;Brant;brant
+http://www.meetup.com/cities/us/mi/breckenridge/;Breckenridge;breckenridge
+http://www.meetup.com/cities/us/mi/breedsville/;Breedsville;breedsville
+http://www.meetup.com/cities/us/mi/brethren/;Brethren;brethren
+http://www.meetup.com/cities/us/mi/bridgeport/;Bridgeport;bridgeport
+http://www.meetup.com/cities/us/mi/bridgewater/;Bridgewater;bridgewater
+http://www.meetup.com/cities/us/mi/bridgman/;Bridgman;bridgman
+http://www.meetup.com/cities/us/mi/brighton/;Brighton;brighton
+http://www.meetup.com/cities/us/mi/brimley/;Brimley;brimley
+http://www.meetup.com/cities/us/mi/britton/;Britton;britton
+http://www.meetup.com/cities/us/mi/brohman/;Brohman;brohman
+http://www.meetup.com/cities/us/mi/bronson/;Bronson;bronson
+http://www.meetup.com/cities/us/mi/brooklyn/;Brooklyn;brooklyn
+http://www.meetup.com/cities/us/mi/brown_city/;Brown City;brown_city
+http://www.meetup.com/cities/us/mi/bruce_crossing/;Bruce Crossing;bruce_crossing
+http://www.meetup.com/cities/us/mi/brutus/;Brutus;brutus
+http://www.meetup.com/cities/us/mi/buchanan/;Buchanan;buchanan
+http://www.meetup.com/cities/us/mi/buckley/;Buckley;buckley
+http://www.meetup.com/cities/us/mi/burlington/;Burlington;burlington
+http://www.meetup.com/cities/us/mi/burnips/;Burnips;burnips
+http://www.meetup.com/cities/us/mi/burr_oak/;Burr Oak;burr_oak
+http://www.meetup.com/cities/us/mi/burt/;Burt;burt
+http://www.meetup.com/cities/us/mi/burt_lake/;Burt Lake;burt_lake
+http://www.meetup.com/cities/us/mi/burton/;Burton;burton
+http://www.meetup.com/cities/us/mi/byron/;Byron;byron
+http://www.meetup.com/cities/us/mi/byron_center/;Byron Center;byron_center
+http://www.meetup.com/cities/us/mi/cadillac/;Cadillac;cadillac
+http://www.meetup.com/cities/us/mi/caledonia/;Caledonia;caledonia
+http://www.meetup.com/cities/us/mi/calumet/;Calumet;calumet
+http://www.meetup.com/cities/us/mi/camden/;Camden;camden
+http://www.meetup.com/cities/us/mi/cannonsburg/;Cannonsburg;cannonsburg
+http://www.meetup.com/cities/us/mi/canton/;Canton;canton
+http://www.meetup.com/cities/us/mi/capac/;Capac;capac
+http://www.meetup.com/cities/us/mi/carleton/;Carleton;carleton
+http://www.meetup.com/cities/us/mi/carney/;Carney;carney
+http://www.meetup.com/cities/us/mi/caro/;Caro;caro
+http://www.meetup.com/cities/us/mi/carp_lake/;Carp Lake;carp_lake
+http://www.meetup.com/cities/us/mi/carrollton/;Carrollton;carrollton
+http://www.meetup.com/cities/us/mi/carson_city/;Carson City;carson_city
+http://www.meetup.com/cities/us/mi/carsonville/;Carsonville;carsonville
+http://www.meetup.com/cities/us/mi/casco/;Casco;casco
+http://www.meetup.com/cities/us/mi/caseville/;Caseville;caseville
+http://www.meetup.com/cities/us/mi/casnovia/;Casnovia;casnovia
+http://www.meetup.com/cities/us/mi/caspian/;Caspian;caspian
+http://www.meetup.com/cities/us/mi/cass_city/;Cass City;cass_city
+http://www.meetup.com/cities/us/mi/cassopolis/;Cassopolis;cassopolis
+http://www.meetup.com/cities/us/mi/cedar/;Cedar;cedar
+http://www.meetup.com/cities/us/mi/cedar_lake/;Cedar Lake;cedar_lake
+http://www.meetup.com/cities/us/mi/cedar_springs/;Cedar Springs;cedar_springs
+http://www.meetup.com/cities/us/mi/cedarville/;Cedarville;cedarville
+http://www.meetup.com/cities/us/mi/cement_city/;Cement City;cement_city
+http://www.meetup.com/cities/us/mi/center_line/;Center Line;center_line
+http://www.meetup.com/cities/us/mi/central_lake/;Central Lake;central_lake
+http://www.meetup.com/cities/us/mi/centreville/;Centreville;centreville
+http://www.meetup.com/cities/us/mi/ceresco/;Ceresco;ceresco
+http://www.meetup.com/cities/us/mi/champion/;Champion;champion
+http://www.meetup.com/cities/us/mi/channing/;Channing;channing
+http://www.meetup.com/cities/us/mi/charlevoix/;Charlevoix;charlevoix
+http://www.meetup.com/cities/us/mi/charlotte/;Charlotte;charlotte
+http://www.meetup.com/cities/us/mi/chase/;Chase;chase
+http://www.meetup.com/cities/us/mi/chassell/;Chassell;chassell
+http://www.meetup.com/cities/us/mi/chatham/;Chatham;chatham
+http://www.meetup.com/cities/us/mi/cheboygan/;Cheboygan;cheboygan
+http://www.meetup.com/cities/us/mi/chelsea/;Chelsea;chelsea
+http://www.meetup.com/cities/us/mi/chesaning/;Chesaning;chesaning
+http://www.meetup.com/cities/us/mi/chippewa_lake/;Chippewa Lake;chippewa_lake
+http://www.meetup.com/cities/us/mi/clare/;Clare;clare
+http://www.meetup.com/cities/us/mi/clarklake/;Clarklake;clarklake
+http://www.meetup.com/cities/us/mi/clarkston/;Clarkston;clarkston
+http://www.meetup.com/cities/us/mi/clarksville/;Clarksville;clarksville
+http://www.meetup.com/cities/us/mi/clawson/;Clawson;clawson
+http://www.meetup.com/cities/us/mi/clayton/;Clayton;clayton
+http://www.meetup.com/cities/us/mi/clifford/;Clifford;clifford
+http://www.meetup.com/cities/us/mi/climax/;Climax;climax
+http://www.meetup.com/cities/us/mi/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/mi/clinton_township/;Clinton Township;clinton_township
+http://www.meetup.com/cities/us/mi/clio/;Clio;clio
+http://www.meetup.com/cities/us/mi/cloverdale/;Cloverdale;cloverdale
+http://www.meetup.com/cities/us/mi/cohoctah/;Cohoctah;cohoctah
+http://www.meetup.com/cities/us/mi/coldwater/;Coldwater;coldwater
+http://www.meetup.com/cities/us/mi/coleman/;Coleman;coleman
+http://www.meetup.com/cities/us/mi/coloma/;Coloma;coloma
+http://www.meetup.com/cities/us/mi/colon/;Colon;colon
+http://www.meetup.com/cities/us/mi/columbiaville/;Columbiaville;columbiaville
+http://www.meetup.com/cities/us/mi/columbus/;Columbus;columbus
+http://www.meetup.com/cities/us/mi/comins/;Comins;comins
+http://www.meetup.com/cities/us/mi/commerce_township/;Commerce Township;commerce_township
+http://www.meetup.com/cities/us/mi/comstock/;Comstock;comstock
+http://www.meetup.com/cities/us/mi/comstock_park/;Comstock Park;comstock_park
+http://www.meetup.com/cities/us/mi/concord/;Concord;concord
+http://www.meetup.com/cities/us/mi/conklin/;Conklin;conklin
+http://www.meetup.com/cities/us/mi/constantine/;Constantine;constantine
+http://www.meetup.com/cities/us/mi/conway/;Conway;conway
+http://www.meetup.com/cities/us/mi/cooks/;Cooks;cooks
+http://www.meetup.com/cities/us/mi/coopersville/;Coopersville;coopersville
+http://www.meetup.com/cities/us/mi/copemish/;Copemish;copemish
+http://www.meetup.com/cities/us/mi/copper_city/;Copper City;copper_city
+http://www.meetup.com/cities/us/mi/copper_harbor/;Copper Harbor;copper_harbor
+http://www.meetup.com/cities/us/mi/coral/;Coral;coral
+http://www.meetup.com/cities/us/mi/cornell/;Cornell;cornell
+http://www.meetup.com/cities/us/mi/corunna/;Corunna;corunna
+http://www.meetup.com/cities/us/mi/covert/;Covert;covert
+http://www.meetup.com/cities/us/mi/covington/;Covington;covington
+http://www.meetup.com/cities/us/mi/cross_village/;Cross Village;cross_village
+http://www.meetup.com/cities/us/mi/croswell/;Croswell;croswell
+http://www.meetup.com/cities/us/mi/crystal/;Crystal;crystal
+http://www.meetup.com/cities/us/mi/crystal_falls/;Crystal Falls;crystal_falls
+http://www.meetup.com/cities/us/mi/curran/;Curran;curran
+http://www.meetup.com/cities/us/mi/curtis/;Curtis;curtis
+http://www.meetup.com/cities/us/mi/custer/;Custer;custer
+http://www.meetup.com/cities/us/mi/dafter/;Dafter;dafter
+http://www.meetup.com/cities/us/mi/daggett/;Daggett;daggett
+http://www.meetup.com/cities/us/mi/dansville/;Dansville;dansville
+http://www.meetup.com/cities/us/mi/davisburg/;Davisburg;davisburg
+http://www.meetup.com/cities/us/mi/davison/;Davison;davison
+http://www.meetup.com/cities/us/mi/dearborn/;Dearborn;dearborn
+http://www.meetup.com/cities/us/mi/dearborn_heights/;Dearborn Heights;dearborn_heights
+http://www.meetup.com/cities/us/mi/decatur/;Decatur;decatur
+http://www.meetup.com/cities/us/mi/decker/;Decker;decker
+http://www.meetup.com/cities/us/mi/deckerville/;Deckerville;deckerville
+http://www.meetup.com/cities/us/mi/deerfield/;Deerfield;deerfield
+http://www.meetup.com/cities/us/mi/deerton/;Deerton;deerton
+http://www.meetup.com/cities/us/mi/deford/;Deford;deford
+http://www.meetup.com/cities/us/mi/delton/;Delton;delton
+http://www.meetup.com/cities/us/mi/de_tour_village/;De Tour Village;de_tour_village
+http://www.meetup.com/cities/us/mi/detroit/;Detroit;detroit
+http://www.meetup.com/cities/us/mi/dewitt/;Dewitt;dewitt
+http://www.meetup.com/cities/us/mi/dexter/;Dexter;dexter
+http://www.meetup.com/cities/us/mi/dimondale/;Dimondale;dimondale
+http://www.meetup.com/cities/us/mi/dodgeville/;Dodgeville;dodgeville
+http://www.meetup.com/cities/us/mi/dollar_bay/;Dollar Bay;dollar_bay
+http://www.meetup.com/cities/us/mi/dorr/;Dorr;dorr
+http://www.meetup.com/cities/us/mi/douglas/;Douglas;douglas
+http://www.meetup.com/cities/us/mi/dowagiac/;Dowagiac;dowagiac
+http://www.meetup.com/cities/us/mi/dowling/;Dowling;dowling
+http://www.meetup.com/cities/us/mi/drayton_plains/;Drayton Plains;drayton_plains
+http://www.meetup.com/cities/us/mi/drummond_island/;Drummond Island;drummond_island
+http://www.meetup.com/cities/us/mi/dryden/;Dryden;dryden
+http://www.meetup.com/cities/us/mi/dundee/;Dundee;dundee
+http://www.meetup.com/cities/us/mi/durand/;Durand;durand
+http://www.meetup.com/cities/us/mi/eagle/;Eagle;eagle
+http://www.meetup.com/cities/us/mi/east_china/;East China;east_china
+http://www.meetup.com/cities/us/mi/east_jordan/;East Jordan;east_jordan
+http://www.meetup.com/cities/us/mi/eastlake/;Eastlake;eastlake
+http://www.meetup.com/cities/us/mi/east_lansing/;East Lansing;east_lansing
+http://www.meetup.com/cities/us/mi/east_leroy/;East Leroy;east_leroy
+http://www.meetup.com/cities/us/mi/eastpointe/;Eastpointe;eastpointe
+http://www.meetup.com/cities/us/mi/eastport/;Eastport;eastport
+http://www.meetup.com/cities/us/mi/east_tawas/;East Tawas;east_tawas
+http://www.meetup.com/cities/us/mi/eaton_rapids/;Eaton Rapids;eaton_rapids
+http://www.meetup.com/cities/us/mi/eau_claire/;Eau Claire;eau_claire
+http://www.meetup.com/cities/us/mi/eben_junction/;Eben Junction;eben_junction
+http://www.meetup.com/cities/us/mi/eckerman/;Eckerman;eckerman
+http://www.meetup.com/cities/us/mi/ecorse/;Ecorse;ecorse
+http://www.meetup.com/cities/us/mi/edenville/;Edenville;edenville
+http://www.meetup.com/cities/us/mi/edmore/;Edmore;edmore
+http://www.meetup.com/cities/us/mi/edwardsburg/;Edwardsburg;edwardsburg
+http://www.meetup.com/cities/us/mi/elberta/;Elberta;elberta
+http://www.meetup.com/cities/us/mi/elk_rapids/;Elk Rapids;elk_rapids
+http://www.meetup.com/cities/us/mi/elkton/;Elkton;elkton
+http://www.meetup.com/cities/us/mi/ellsworth/;Ellsworth;ellsworth
+http://www.meetup.com/cities/us/mi/elm_hall/;Elm Hall;elm_hall
+http://www.meetup.com/cities/us/mi/elmira/;Elmira;elmira
+http://www.meetup.com/cities/us/mi/elsie/;Elsie;elsie
+http://www.meetup.com/cities/us/mi/elwell/;Elwell;elwell
+http://www.meetup.com/cities/us/mi/emmett/;Emmett;emmett
+http://www.meetup.com/cities/us/mi/empire/;Empire;empire
+http://www.meetup.com/cities/us/mi/engadine/;Engadine;engadine
+http://www.meetup.com/cities/us/mi/erie/;Erie;erie
+http://www.meetup.com/cities/us/mi/escanaba/;Escanaba;escanaba
+http://www.meetup.com/cities/us/mi/essexville/;Essexville;essexville
+http://www.meetup.com/cities/us/mi/eureka/;Eureka;eureka
+http://www.meetup.com/cities/us/mi/evart/;Evart;evart
+http://www.meetup.com/cities/us/mi/ewen/;Ewen;ewen
+http://www.meetup.com/cities/us/mi/fairgrove/;Fairgrove;fairgrove
+http://www.meetup.com/cities/us/mi/fair_haven/;Fair Haven;fair_haven
+http://www.meetup.com/cities/us/mi/fairview/;Fairview;fairview
+http://www.meetup.com/cities/us/mi/falmouth/;Falmouth;falmouth
+http://www.meetup.com/cities/us/mi/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/mi/farwell/;Farwell;farwell
+http://www.meetup.com/cities/us/mi/felch/;Felch;felch
+http://www.meetup.com/cities/us/mi/fennville/;Fennville;fennville
+http://www.meetup.com/cities/us/mi/fenton/;Fenton;fenton
+http://www.meetup.com/cities/us/mi/fenwick/;Fenwick;fenwick
+http://www.meetup.com/cities/us/mi/ferndale/;Ferndale;ferndale
+http://www.meetup.com/cities/us/mi/ferrysburg/;Ferrysburg;ferrysburg
+http://www.meetup.com/cities/us/mi/fife_lake/;Fife Lake;fife_lake
+http://www.meetup.com/cities/us/mi/filer_city/;Filer City;filer_city
+http://www.meetup.com/cities/us/mi/filion/;Filion;filion
+http://www.meetup.com/cities/us/mi/flat_rock/;Flat Rock;flat_rock
+http://www.meetup.com/cities/us/mi/flint/;Flint;flint
+http://www.meetup.com/cities/us/mi/flushing/;Flushing;flushing
+http://www.meetup.com/cities/us/mi/forestville/;Forestville;forestville
+http://www.meetup.com/cities/us/mi/fort_gratiot/;Fort Gratiot;fort_gratiot
+http://www.meetup.com/cities/us/mi/foster_city/;Foster City;foster_city
+http://www.meetup.com/cities/us/mi/fostoria/;Fostoria;fostoria
+http://www.meetup.com/cities/us/mi/fountain/;Fountain;fountain
+http://www.meetup.com/cities/us/mi/fowler/;Fowler;fowler
+http://www.meetup.com/cities/us/mi/fowlerville/;Fowlerville;fowlerville
+http://www.meetup.com/cities/us/mi/frankenmuth/;Frankenmuth;frankenmuth
+http://www.meetup.com/cities/us/mi/frankfort/;Frankfort;frankfort
+http://www.meetup.com/cities/us/mi/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/mi/fraser/;Fraser;fraser
+http://www.meetup.com/cities/us/mi/frederic/;Frederic;frederic
+http://www.meetup.com/cities/us/mi/freeland/;Freeland;freeland
+http://www.meetup.com/cities/us/mi/freeport/;Freeport;freeport
+http://www.meetup.com/cities/us/mi/free_soil/;Free Soil;free_soil
+http://www.meetup.com/cities/us/mi/fremont/;Fremont;fremont
+http://www.meetup.com/cities/us/mi/frontier/;Frontier;frontier
+http://www.meetup.com/cities/us/mi/fruitport/;Fruitport;fruitport
+http://www.meetup.com/cities/us/mi/fulton/;Fulton;fulton
+http://www.meetup.com/cities/us/mi/gaastra/;Gaastra;gaastra
+http://www.meetup.com/cities/us/mi/gagetown/;Gagetown;gagetown
+http://www.meetup.com/cities/us/mi/gaines/;Gaines;gaines
+http://www.meetup.com/cities/us/mi/galesburg/;Galesburg;galesburg
+http://www.meetup.com/cities/us/mi/galien/;Galien;galien
+http://www.meetup.com/cities/us/mi/garden/;Garden;garden
+http://www.meetup.com/cities/us/mi/garden_city/;Garden City;garden_city
+http://www.meetup.com/cities/us/mi/gaylord/;Gaylord;gaylord
+http://www.meetup.com/cities/us/mi/genesee/;Genesee;genesee
+http://www.meetup.com/cities/us/mi/germfask/;Germfask;germfask
+http://www.meetup.com/cities/us/mi/gilford/;Gilford;gilford
+http://www.meetup.com/cities/us/mi/gladstone/;Gladstone;gladstone
+http://www.meetup.com/cities/us/mi/gladwin/;Gladwin;gladwin
+http://www.meetup.com/cities/us/mi/glen_arbor/;Glen Arbor;glen_arbor
+http://www.meetup.com/cities/us/mi/glenn/;Glenn;glenn
+http://www.meetup.com/cities/us/mi/glennie/;Glennie;glennie
+http://www.meetup.com/cities/us/mi/gobles/;Gobles;gobles
+http://www.meetup.com/cities/us/mi/goetzville/;Goetzville;goetzville
+http://www.meetup.com/cities/us/mi/goodells/;Goodells;goodells
+http://www.meetup.com/cities/us/mi/good_hart/;Good Hart;good_hart
+http://www.meetup.com/cities/us/mi/goodrich/;Goodrich;goodrich
+http://www.meetup.com/cities/us/mi/gould_city/;Gould City;gould_city
+http://www.meetup.com/cities/us/mi/gowen/;Gowen;gowen
+http://www.meetup.com/cities/us/mi/grand_blanc/;Grand Blanc;grand_blanc
+http://www.meetup.com/cities/us/mi/grand_haven/;Grand Haven;grand_haven
+http://www.meetup.com/cities/us/mi/grand_junction/;Grand Junction;grand_junction
+http://www.meetup.com/cities/us/mi/grand_ledge/;Grand Ledge;grand_ledge
+http://www.meetup.com/cities/us/mi/grand_marais/;Grand Marais;grand_marais
+http://www.meetup.com/cities/us/mi/grand_rapids/;Grand Rapids;grand_rapids
+http://www.meetup.com/cities/us/mi/grandville/;Grandville;grandville
+http://www.meetup.com/cities/us/mi/grant/;Grant;grant
+http://www.meetup.com/cities/us/mi/grass_lake/;Grass Lake;grass_lake
+http://www.meetup.com/cities/us/mi/grawn/;Grawn;grawn
+http://www.meetup.com/cities/us/mi/grayling/;Grayling;grayling
+http://www.meetup.com/cities/us/mi/greenbush/;Greenbush;greenbush
+http://www.meetup.com/cities/us/mi/greenland/;Greenland;greenland
+http://www.meetup.com/cities/us/mi/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/mi/gregory/;Gregory;gregory
+http://www.meetup.com/cities/us/mi/grosse_ile/;Grosse Ile;grosse_ile
+http://www.meetup.com/cities/us/mi/grosse_pointe/;Grosse Pointe;grosse_pointe
+http://www.meetup.com/cities/us/mi/gulliver/;Gulliver;gulliver
+http://www.meetup.com/cities/us/mi/gwinn/;Gwinn;gwinn
+http://www.meetup.com/cities/us/mi/hadley/;Hadley;hadley
+http://www.meetup.com/cities/us/mi/hagar_shores/;Hagar Shores;hagar_shores
+http://www.meetup.com/cities/us/mi/hale/;Hale;hale
+http://www.meetup.com/cities/us/mi/hamburg/;Hamburg;hamburg
+http://www.meetup.com/cities/us/mi/hamilton/;Hamilton;hamilton
+http://www.meetup.com/cities/us/mi/hamtramck/;Hamtramck;hamtramck
+http://www.meetup.com/cities/us/mi/hancock/;Hancock;hancock
+http://www.meetup.com/cities/us/mi/hanover/;Hanover;hanover
+http://www.meetup.com/cities/us/mi/harbert/;Harbert;harbert
+http://www.meetup.com/cities/us/mi/harbor_beach/;Harbor Beach;harbor_beach
+http://www.meetup.com/cities/us/mi/harbor_springs/;Harbor Springs;harbor_springs
+http://www.meetup.com/cities/us/mi/harper_woods/;Harper Woods;harper_woods
+http://www.meetup.com/cities/us/mi/harrietta/;Harrietta;harrietta
+http://www.meetup.com/cities/us/mi/harris/;Harris;harris
+http://www.meetup.com/cities/us/mi/harrison/;Harrison;harrison
+http://www.meetup.com/cities/us/mi/harrison_township/;Harrison Township;harrison_township
+http://www.meetup.com/cities/us/mi/harrisville/;Harrisville;harrisville
+http://www.meetup.com/cities/us/mi/harsens_island/;Harsens Island;harsens_island
+http://www.meetup.com/cities/us/mi/hart/;Hart;hart
+http://www.meetup.com/cities/us/mi/hartford/;Hartford;hartford
+http://www.meetup.com/cities/us/mi/hartland/;Hartland;hartland
+http://www.meetup.com/cities/us/mi/haslett/;Haslett;haslett
+http://www.meetup.com/cities/us/mi/hastings/;Hastings;hastings
+http://www.meetup.com/cities/us/mi/hawks/;Hawks;hawks
+http://www.meetup.com/cities/us/mi/hazel_park/;Hazel Park;hazel_park
+http://www.meetup.com/cities/us/mi/hemlock/;Hemlock;hemlock
+http://www.meetup.com/cities/us/mi/henderson/;Henderson;henderson
+http://www.meetup.com/cities/us/mi/hermansville/;Hermansville;hermansville
+http://www.meetup.com/cities/us/mi/herron/;Herron;herron
+http://www.meetup.com/cities/us/mi/hersey/;Hersey;hersey
+http://www.meetup.com/cities/us/mi/hesperia/;Hesperia;hesperia
+http://www.meetup.com/cities/us/mi/hessel/;Hessel;hessel
+http://www.meetup.com/cities/us/mi/hickory_corners/;Hickory Corners;hickory_corners
+http://www.meetup.com/cities/us/mi/higgins_lake/;Higgins Lake;higgins_lake
+http://www.meetup.com/cities/us/mi/highland/;Highland;highland
+http://www.meetup.com/cities/us/mi/highland_park/;Highland Park;highland_park
+http://www.meetup.com/cities/us/mi/hillman/;Hillman;hillman
+http://www.meetup.com/cities/us/mi/hillsdale/;Hillsdale;hillsdale
+http://www.meetup.com/cities/us/mi/holland/;Holland;holland
+http://www.meetup.com/cities/us/mi/holly/;Holly;holly
+http://www.meetup.com/cities/us/mi/holt/;Holt;holt
+http://www.meetup.com/cities/us/mi/holton/;Holton;holton
+http://www.meetup.com/cities/us/mi/homer/;Homer;homer
+http://www.meetup.com/cities/us/mi/honor/;Honor;honor
+http://www.meetup.com/cities/us/mi/hope/;Hope;hope
+http://www.meetup.com/cities/us/mi/hopkins/;Hopkins;hopkins
+http://www.meetup.com/cities/us/mi/horton/;Horton;horton
+http://www.meetup.com/cities/us/mi/houghton/;Houghton;houghton
+http://www.meetup.com/cities/us/mi/houghton_lake/;Houghton Lake;houghton_lake
+http://www.meetup.com/cities/us/mi/houghton_lake_heights/;Houghton Lake Heights;houghton_lake_heights
+http://www.meetup.com/cities/us/mi/howard_city/;Howard City;howard_city
+http://www.meetup.com/cities/us/mi/howell/;Howell;howell
+http://www.meetup.com/cities/us/mi/hubbard_lake/;Hubbard Lake;hubbard_lake
+http://www.meetup.com/cities/us/mi/hubbardston/;Hubbardston;hubbardston
+http://www.meetup.com/cities/us/mi/hubbell/;Hubbell;hubbell
+http://www.meetup.com/cities/us/mi/hudson/;Hudson;hudson
+http://www.meetup.com/cities/us/mi/hudsonville/;Hudsonville;hudsonville
+http://www.meetup.com/cities/us/mi/hulbert/;Hulbert;hulbert
+http://www.meetup.com/cities/us/mi/huntington_woods/;Huntington Woods;huntington_woods
+http://www.meetup.com/cities/us/mi/ida/;Ida;ida
+http://www.meetup.com/cities/us/mi/idlewild/;Idlewild;idlewild
+http://www.meetup.com/cities/us/mi/imlay_city/;Imlay City;imlay_city
+http://www.meetup.com/cities/us/mi/indian_river/;Indian River;indian_river
+http://www.meetup.com/cities/us/mi/ingalls/;Ingalls;ingalls
+http://www.meetup.com/cities/us/mi/inkster/;Inkster;inkster
+http://www.meetup.com/cities/us/mi/interlochen/;Interlochen;interlochen
+http://www.meetup.com/cities/us/mi/ionia/;Ionia;ionia
+http://www.meetup.com/cities/us/mi/iron_mountain/;Iron Mountain;iron_mountain
+http://www.meetup.com/cities/us/mi/iron_river/;Iron River;iron_river
+http://www.meetup.com/cities/us/mi/irons/;Irons;irons
+http://www.meetup.com/cities/us/mi/ironwood/;Ironwood;ironwood
+http://www.meetup.com/cities/us/mi/ishpeming/;Ishpeming;ishpeming
+http://www.meetup.com/cities/us/mi/ithaca/;Ithaca;ithaca
+http://www.meetup.com/cities/us/mi/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/mi/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/mi/jasper/;Jasper;jasper
+http://www.meetup.com/cities/us/mi/jeddo/;Jeddo;jeddo
+http://www.meetup.com/cities/us/mi/jenison/;Jenison;jenison
+http://www.meetup.com/cities/us/mi/jerome/;Jerome;jerome
+http://www.meetup.com/cities/us/mi/johannesburg/;Johannesburg;johannesburg
+http://www.meetup.com/cities/us/mi/jones/;Jones;jones
+http://www.meetup.com/cities/us/mi/jonesville/;Jonesville;jonesville
+http://www.meetup.com/cities/us/mi/kalamazoo/;Kalamazoo;kalamazoo
+http://www.meetup.com/cities/us/mi/kaleva/;Kaleva;kaleva
+http://www.meetup.com/cities/us/mi/kalkaska/;Kalkaska;kalkaska
+http://www.meetup.com/cities/us/mi/kawkawlin/;Kawkawlin;kawkawlin
+http://www.meetup.com/cities/us/mi/kearsarge/;Kearsarge;kearsarge
+http://www.meetup.com/cities/us/mi/keego_harbor/;Keego Harbor;keego_harbor
+http://www.meetup.com/cities/us/mi/kendall/;Kendall;kendall
+http://www.meetup.com/cities/us/mi/kent_city/;Kent City;kent_city
+http://www.meetup.com/cities/us/mi/kewadin/;Kewadin;kewadin
+http://www.meetup.com/cities/us/mi/kincheloe/;Kincheloe;kincheloe
+http://www.meetup.com/cities/us/mi/kinde/;Kinde;kinde
+http://www.meetup.com/cities/us/mi/kingsford/;Kingsford;kingsford
+http://www.meetup.com/cities/us/mi/kingsley/;Kingsley;kingsley
+http://www.meetup.com/cities/us/mi/kingston/;Kingston;kingston
+http://www.meetup.com/cities/us/mi/kinross/;Kinross;kinross
+http://www.meetup.com/cities/us/mi/lachine/;Lachine;lachine
+http://www.meetup.com/cities/us/mi/lacota/;Lacota;lacota
+http://www.meetup.com/cities/us/mi/laingsburg/;Laingsburg;laingsburg
+http://www.meetup.com/cities/us/mi/lake/;Lake;lake
+http://www.meetup.com/cities/us/mi/lake_ann/;Lake Ann;lake_ann
+http://www.meetup.com/cities/us/mi/lake_city/;Lake City;lake_city
+http://www.meetup.com/cities/us/mi/lake_george/;Lake George;lake_george
+http://www.meetup.com/cities/us/mi/lakeland/;Lakeland;lakeland
+http://www.meetup.com/cities/us/mi/lake_leelanau/;Lake Leelanau;lake_leelanau
+http://www.meetup.com/cities/us/mi/lake_linden/;Lake Linden;lake_linden
+http://www.meetup.com/cities/us/mi/lake_odessa/;Lake Odessa;lake_odessa
+http://www.meetup.com/cities/us/mi/lake_orion/;Lake Orion;lake_orion
+http://www.meetup.com/cities/us/mi/lakeside/;Lakeside;lakeside
+http://www.meetup.com/cities/us/mi/lakeview/;Lakeview;lakeview
+http://www.meetup.com/cities/us/mi/lakeville/;Lakeville;lakeville
+http://www.meetup.com/cities/us/mi/lambertville/;Lambertville;lambertville
+http://www.meetup.com/cities/us/mi/lamont/;Lamont;lamont
+http://www.meetup.com/cities/us/mi/lanse/;Lanse;lanse
+http://www.meetup.com/cities/us/mi/lansing/;Lansing;lansing
+http://www.meetup.com/cities/us/mi/lapeer/;Lapeer;lapeer
+http://www.meetup.com/cities/us/mi/la_salle/;La Salle;la_salle
+http://www.meetup.com/cities/us/mi/lawrence/;Lawrence;lawrence
+http://www.meetup.com/cities/us/mi/lawton/;Lawton;lawton
+http://www.meetup.com/cities/us/mi/leland/;Leland;leland
+http://www.meetup.com/cities/us/mi/lennon/;Lennon;lennon
+http://www.meetup.com/cities/us/mi/leonard/;Leonard;leonard
+http://www.meetup.com/cities/us/mi/leonidas/;Leonidas;leonidas
+http://www.meetup.com/cities/us/mi/leroy/;Leroy;leroy
+http://www.meetup.com/cities/us/mi/leslie/;Leslie;leslie
+http://www.meetup.com/cities/us/mi/levering/;Levering;levering
+http://www.meetup.com/cities/us/mi/lewiston/;Lewiston;lewiston
+http://www.meetup.com/cities/us/mi/lexington/;Lexington;lexington
+http://www.meetup.com/cities/us/mi/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/mi/lincoln_park/;Lincoln Park;lincoln_park
+http://www.meetup.com/cities/us/mi/linden/;Linden;linden
+http://www.meetup.com/cities/us/mi/linwood/;Linwood;linwood
+http://www.meetup.com/cities/us/mi/litchfield/;Litchfield;litchfield
+http://www.meetup.com/cities/us/mi/little_lake/;Little Lake;little_lake
+http://www.meetup.com/cities/us/mi/livonia/;Livonia;livonia
+http://www.meetup.com/cities/us/mi/long_lake/;Long Lake;long_lake
+http://www.meetup.com/cities/us/mi/loretto/;Loretto;loretto
+http://www.meetup.com/cities/us/mi/lowell/;Lowell;lowell
+http://www.meetup.com/cities/us/mi/ludington/;Ludington;ludington
+http://www.meetup.com/cities/us/mi/luna_pier/;Luna Pier;luna_pier
+http://www.meetup.com/cities/us/mi/lupton/;Lupton;lupton
+http://www.meetup.com/cities/us/mi/luther/;Luther;luther
+http://www.meetup.com/cities/us/mi/luzerne/;Luzerne;luzerne
+http://www.meetup.com/cities/us/mi/lyons/;Lyons;lyons
+http://www.meetup.com/cities/us/mi/macatawa/;Macatawa;macatawa
+http://www.meetup.com/cities/us/mi/mackinac_island/;Mackinac Island;mackinac_island
+http://www.meetup.com/cities/us/mi/mackinaw_city/;Mackinaw City;mackinaw_city
+http://www.meetup.com/cities/us/mi/macomb/;Macomb;macomb
+http://www.meetup.com/cities/us/mi/madison_heights/;Madison Heights;madison_heights
+http://www.meetup.com/cities/us/mi/mancelona/;Mancelona;mancelona
+http://www.meetup.com/cities/us/mi/manchester/;Manchester;manchester
+http://www.meetup.com/cities/us/mi/manistee/;Manistee;manistee
+http://www.meetup.com/cities/us/mi/manistique/;Manistique;manistique
+http://www.meetup.com/cities/us/mi/manitou_beach/;Manitou Beach;manitou_beach
+http://www.meetup.com/cities/us/mi/manton/;Manton;manton
+http://www.meetup.com/cities/us/mi/maple_city/;Maple City;maple_city
+http://www.meetup.com/cities/us/mi/maple_rapids/;Maple Rapids;maple_rapids
+http://www.meetup.com/cities/us/mi/marcellus/;Marcellus;marcellus
+http://www.meetup.com/cities/us/mi/marenisco/;Marenisco;marenisco
+http://www.meetup.com/cities/us/mi/marine_city/;Marine City;marine_city
+http://www.meetup.com/cities/us/mi/marion/;Marion;marion
+http://www.meetup.com/cities/us/mi/marlette/;Marlette;marlette
+http://www.meetup.com/cities/us/mi/marne/;Marne;marne
+http://www.meetup.com/cities/us/mi/marquette/;Marquette;marquette
+http://www.meetup.com/cities/us/mi/marshall/;Marshall;marshall
+http://www.meetup.com/cities/us/mi/martin/;Martin;martin
+http://www.meetup.com/cities/us/mi/marysville/;Marysville;marysville
+http://www.meetup.com/cities/us/mi/mason/;Mason;mason
+http://www.meetup.com/cities/us/mi/mass_city/;Mass City;mass_city
+http://www.meetup.com/cities/us/mi/mattawan/;Mattawan;mattawan
+http://www.meetup.com/cities/us/mi/maybee/;Maybee;maybee
+http://www.meetup.com/cities/us/mi/mayfield/;Mayfield;mayfield
+http://www.meetup.com/cities/us/mi/mayville/;Mayville;mayville
+http://www.meetup.com/cities/us/mi/mc_bain/;Mc Bain;mc_bain
+http://www.meetup.com/cities/us/mi/mcbrides/;McBrides;mcbrides
+http://www.meetup.com/cities/us/mi/mc_millan/;Mc Millan;mc_millan
+http://www.meetup.com/cities/us/mi/mears/;Mears;mears
+http://www.meetup.com/cities/us/mi/mecosta/;Mecosta;mecosta
+http://www.meetup.com/cities/us/mi/melvin/;Melvin;melvin
+http://www.meetup.com/cities/us/mi/melvindale/;Melvindale;melvindale
+http://www.meetup.com/cities/us/mi/memphis/;Memphis;memphis
+http://www.meetup.com/cities/us/mi/mendon/;Mendon;mendon
+http://www.meetup.com/cities/us/mi/menominee/;Menominee;menominee
+http://www.meetup.com/cities/us/mi/merrill/;Merrill;merrill
+http://www.meetup.com/cities/us/mi/merritt/;Merritt;merritt
+http://www.meetup.com/cities/us/mi/mesick/;Mesick;mesick
+http://www.meetup.com/cities/us/mi/metamora/;Metamora;metamora
+http://www.meetup.com/cities/us/mi/michigamme/;Michigamme;michigamme
+http://www.meetup.com/cities/us/mi/michigan_center/;Michigan Center;michigan_center
+http://www.meetup.com/cities/us/mi/middleton/;Middleton;middleton
+http://www.meetup.com/cities/us/mi/middleville/;Middleville;middleville
+http://www.meetup.com/cities/us/mi/midland/;Midland;midland
+http://www.meetup.com/cities/us/mi/mikado/;Mikado;mikado
+http://www.meetup.com/cities/us/mi/milan/;Milan;milan
+http://www.meetup.com/cities/us/mi/milford/;Milford;milford
+http://www.meetup.com/cities/us/mi/millersburg/;Millersburg;millersburg
+http://www.meetup.com/cities/us/mi/millington/;Millington;millington
+http://www.meetup.com/cities/us/mi/minden_city/;Minden City;minden_city
+http://www.meetup.com/cities/us/mi/mio/;Mio;mio
+http://www.meetup.com/cities/us/mi/mohawk/;Mohawk;mohawk
+http://www.meetup.com/cities/us/mi/moline/;Moline;moline
+http://www.meetup.com/cities/us/mi/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/mi/montague/;Montague;montague
+http://www.meetup.com/cities/us/mi/montgomery/;Montgomery;montgomery
+http://www.meetup.com/cities/us/mi/montrose/;Montrose;montrose
+http://www.meetup.com/cities/us/mi/moran/;Moran;moran
+http://www.meetup.com/cities/us/mi/morenci/;Morenci;morenci
+http://www.meetup.com/cities/us/mi/morley/;Morley;morley
+http://www.meetup.com/cities/us/mi/morrice/;Morrice;morrice
+http://www.meetup.com/cities/us/mi/moscow/;Moscow;moscow
+http://www.meetup.com/cities/us/mi/mosherville/;Mosherville;mosherville
+http://www.meetup.com/cities/us/mi/mount_clemens/;Mount Clemens;mount_clemens
+http://www.meetup.com/cities/us/mi/mount_morris/;Mount Morris;mount_morris
+http://www.meetup.com/cities/us/mi/mount_pleasant/;Mount Pleasant;mount_pleasant
+http://www.meetup.com/cities/us/mi/muir/;Muir;muir
+http://www.meetup.com/cities/us/mi/mullett_lake/;Mullett Lake;mullett_lake
+http://www.meetup.com/cities/us/mi/mulliken/;Mulliken;mulliken
+http://www.meetup.com/cities/us/mi/munger/;Munger;munger
+http://www.meetup.com/cities/us/mi/munising/;Munising;munising
+http://www.meetup.com/cities/us/mi/munith/;Munith;munith
+http://www.meetup.com/cities/us/mi/muskegon/;Muskegon;muskegon
+http://www.meetup.com/cities/us/mi/nadeau/;Nadeau;nadeau
+http://www.meetup.com/cities/us/mi/nahma/;Nahma;nahma
+http://www.meetup.com/cities/us/mi/napoleon/;Napoleon;napoleon
+http://www.meetup.com/cities/us/mi/nashville/;Nashville;nashville
+http://www.meetup.com/cities/us/mi/national_city/;National City;national_city
+http://www.meetup.com/cities/us/mi/national_mine/;National Mine;national_mine
+http://www.meetup.com/cities/us/mi/naubinway/;Naubinway;naubinway
+http://www.meetup.com/cities/us/mi/nazareth/;Nazareth;nazareth
+http://www.meetup.com/cities/us/mi/negaunee/;Negaunee;negaunee
+http://www.meetup.com/cities/us/mi/newaygo/;Newaygo;newaygo
+http://www.meetup.com/cities/us/mi/new_baltimore/;New Baltimore;new_baltimore
+http://www.meetup.com/cities/us/mi/newberry/;Newberry;newberry
+http://www.meetup.com/cities/us/mi/new_boston/;New Boston;new_boston
+http://www.meetup.com/cities/us/mi/new_buffalo/;New Buffalo;new_buffalo
+http://www.meetup.com/cities/us/mi/new_era/;New Era;new_era
+http://www.meetup.com/cities/us/mi/new_haven/;New Haven;new_haven
+http://www.meetup.com/cities/us/mi/new_hudson/;New Hudson;new_hudson
+http://www.meetup.com/cities/us/mi/new_lothrop/;New Lothrop;new_lothrop
+http://www.meetup.com/cities/us/mi/newport/;Newport;newport
+http://www.meetup.com/cities/us/mi/new_troy/;New Troy;new_troy
+http://www.meetup.com/cities/us/mi/niles/;Niles;niles
+http://www.meetup.com/cities/us/mi/nisula/;Nisula;nisula
+http://www.meetup.com/cities/us/mi/north_adams/;North Adams;north_adams
+http://www.meetup.com/cities/us/mi/north_branch/;North Branch;north_branch
+http://www.meetup.com/cities/us/mi/northport/;Northport;northport
+http://www.meetup.com/cities/us/mi/north_star/;North Star;north_star
+http://www.meetup.com/cities/us/mi/north_street/;North Street;north_street
+http://www.meetup.com/cities/us/mi/northville/;Northville;northville
+http://www.meetup.com/cities/us/mi/norvell/;Norvell;norvell
+http://www.meetup.com/cities/us/mi/norway/;Norway;norway
+http://www.meetup.com/cities/us/mi/nottawa/;Nottawa;nottawa
+http://www.meetup.com/cities/us/mi/novi/;Novi;novi
+http://www.meetup.com/cities/us/mi/nunica/;Nunica;nunica
+http://www.meetup.com/cities/us/mi/oak_grove/;Oak Grove;oak_grove
+http://www.meetup.com/cities/us/mi/oakland/;Oakland;oakland
+http://www.meetup.com/cities/us/mi/oakley/;Oakley;oakley
+http://www.meetup.com/cities/us/mi/oak_park/;Oak Park;oak_park
+http://www.meetup.com/cities/us/mi/oden/;Oden;oden
+http://www.meetup.com/cities/us/mi/okemos/;Okemos;okemos
+http://www.meetup.com/cities/us/mi/old_mission/;Old Mission;old_mission
+http://www.meetup.com/cities/us/mi/olivet/;Olivet;olivet
+http://www.meetup.com/cities/us/mi/omena/;Omena;omena
+http://www.meetup.com/cities/us/mi/omer/;Omer;omer
+http://www.meetup.com/cities/us/mi/onaway/;Onaway;onaway
+http://www.meetup.com/cities/us/mi/onekama/;Onekama;onekama
+http://www.meetup.com/cities/us/mi/onondaga/;Onondaga;onondaga
+http://www.meetup.com/cities/us/mi/onsted/;Onsted;onsted
+http://www.meetup.com/cities/us/mi/ontonagon/;Ontonagon;ontonagon
+http://www.meetup.com/cities/us/mi/orleans/;Orleans;orleans
+http://www.meetup.com/cities/us/mi/ortonville/;Ortonville;ortonville
+http://www.meetup.com/cities/us/mi/oscoda/;Oscoda;oscoda
+http://www.meetup.com/cities/us/mi/oshtemo/;Oshtemo;oshtemo
+http://www.meetup.com/cities/us/mi/osseo/;Osseo;osseo
+http://www.meetup.com/cities/us/mi/ossineke/;Ossineke;ossineke
+http://www.meetup.com/cities/us/mi/otisville/;Otisville;otisville
+http://www.meetup.com/cities/us/mi/otsego/;Otsego;otsego
+http://www.meetup.com/cities/us/mi/ottawa_lake/;Ottawa Lake;ottawa_lake
+http://www.meetup.com/cities/us/mi/otter_lake/;Otter Lake;otter_lake
+http://www.meetup.com/cities/us/mi/ovid/;Ovid;ovid
+http://www.meetup.com/cities/us/mi/owendale/;Owendale;owendale
+http://www.meetup.com/cities/us/mi/owosso/;Owosso;owosso
+http://www.meetup.com/cities/us/mi/oxford/;Oxford;oxford
+http://www.meetup.com/cities/us/mi/painesdale/;Painesdale;painesdale
+http://www.meetup.com/cities/us/mi/palmer/;Palmer;palmer
+http://www.meetup.com/cities/us/mi/palms/;Palms;palms
+http://www.meetup.com/cities/us/mi/palmyra/;Palmyra;palmyra
+http://www.meetup.com/cities/us/mi/palo/;Palo;palo
+http://www.meetup.com/cities/us/mi/paradise/;Paradise;paradise
+http://www.meetup.com/cities/us/mi/paris/;Paris;paris
+http://www.meetup.com/cities/us/mi/parma/;Parma;parma
+http://www.meetup.com/cities/us/mi/paw_paw/;Paw Paw;paw_paw
+http://www.meetup.com/cities/us/mi/peck/;Peck;peck
+http://www.meetup.com/cities/us/mi/pelkie/;Pelkie;pelkie
+http://www.meetup.com/cities/us/mi/pellston/;Pellston;pellston
+http://www.meetup.com/cities/us/mi/pentwater/;Pentwater;pentwater
+http://www.meetup.com/cities/us/mi/perkins/;Perkins;perkins
+http://www.meetup.com/cities/us/mi/perrinton/;Perrinton;perrinton
+http://www.meetup.com/cities/us/mi/perronville/;Perronville;perronville
+http://www.meetup.com/cities/us/mi/perry/;Perry;perry
+http://www.meetup.com/cities/us/mi/petersburg/;Petersburg;petersburg
+http://www.meetup.com/cities/us/mi/petoskey/;Petoskey;petoskey
+http://www.meetup.com/cities/us/mi/pewamo/;Pewamo;pewamo
+http://www.meetup.com/cities/us/mi/pickford/;Pickford;pickford
+http://www.meetup.com/cities/us/mi/pierson/;Pierson;pierson
+http://www.meetup.com/cities/us/mi/pigeon/;Pigeon;pigeon
+http://www.meetup.com/cities/us/mi/pinckney/;Pinckney;pinckney
+http://www.meetup.com/cities/us/mi/pinconning/;Pinconning;pinconning
+http://www.meetup.com/cities/us/mi/pittsford/;Pittsford;pittsford
+http://www.meetup.com/cities/us/mi/plainwell/;Plainwell;plainwell
+http://www.meetup.com/cities/us/mi/pleasant_lake/;Pleasant Lake;pleasant_lake
+http://www.meetup.com/cities/us/mi/pleasant_ridge/;Pleasant Ridge;pleasant_ridge
+http://www.meetup.com/cities/us/mi/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/mi/pointe_aux_pins/;Pointe Aux Pins;pointe_aux_pins
+http://www.meetup.com/cities/us/mi/pompeii/;Pompeii;pompeii
+http://www.meetup.com/cities/us/mi/pontiac/;Pontiac;pontiac
+http://www.meetup.com/cities/us/mi/portage/;Portage;portage
+http://www.meetup.com/cities/us/mi/port_austin/;Port Austin;port_austin
+http://www.meetup.com/cities/us/mi/port_hope/;Port Hope;port_hope
+http://www.meetup.com/cities/us/mi/port_huron/;Port Huron;port_huron
+http://www.meetup.com/cities/us/mi/portland/;Portland;portland
+http://www.meetup.com/cities/us/mi/port_sanilac/;Port Sanilac;port_sanilac
+http://www.meetup.com/cities/us/mi/posen/;Posen;posen
+http://www.meetup.com/cities/us/mi/potterville/;Potterville;potterville
+http://www.meetup.com/cities/us/mi/powers/;Powers;powers
+http://www.meetup.com/cities/us/mi/prescott/;Prescott;prescott
+http://www.meetup.com/cities/us/mi/presque_isle/;Presque Isle;presque_isle
+http://www.meetup.com/cities/us/mi/prudenville/;Prudenville;prudenville
+http://www.meetup.com/cities/us/mi/pullman/;Pullman;pullman
+http://www.meetup.com/cities/us/mi/quincy/;Quincy;quincy
+http://www.meetup.com/cities/us/mi/quinnesec/;Quinnesec;quinnesec
+http://www.meetup.com/cities/us/mi/ralph/;Ralph;ralph
+http://www.meetup.com/cities/us/mi/ramsay/;Ramsay;ramsay
+http://www.meetup.com/cities/us/mi/rapid_city/;Rapid City;rapid_city
+http://www.meetup.com/cities/us/mi/rapid_river/;Rapid River;rapid_river
+http://www.meetup.com/cities/us/mi/ravenna/;Ravenna;ravenna
+http://www.meetup.com/cities/us/mi/ray/;Ray;ray
+http://www.meetup.com/cities/us/mi/reading/;Reading;reading
+http://www.meetup.com/cities/us/mi/redford/;Redford;redford
+http://www.meetup.com/cities/us/mi/reed_city/;Reed City;reed_city
+http://www.meetup.com/cities/us/mi/reese/;Reese;reese
+http://www.meetup.com/cities/us/mi/remus/;Remus;remus
+http://www.meetup.com/cities/us/mi/republic/;Republic;republic
+http://www.meetup.com/cities/us/mi/rhodes/;Rhodes;rhodes
+http://www.meetup.com/cities/us/mi/richland/;Richland;richland
+http://www.meetup.com/cities/us/mi/richmond/;Richmond;richmond
+http://www.meetup.com/cities/us/mi/richville/;Richville;richville
+http://www.meetup.com/cities/us/mi/riga/;Riga;riga
+http://www.meetup.com/cities/us/mi/riverdale/;Riverdale;riverdale
+http://www.meetup.com/cities/us/mi/river_rouge/;River Rouge;river_rouge
+http://www.meetup.com/cities/us/mi/riverside/;Riverside;riverside
+http://www.meetup.com/cities/us/mi/riverview/;Riverview;riverview
+http://www.meetup.com/cities/us/mi/rives_junction/;Rives Junction;rives_junction
+http://www.meetup.com/cities/us/mi/rochester/;Rochester;rochester
+http://www.meetup.com/cities/us/mi/rock/;Rock;rock
+http://www.meetup.com/cities/us/mi/rockford/;Rockford;rockford
+http://www.meetup.com/cities/us/mi/rockland/;Rockland;rockland
+http://www.meetup.com/cities/us/mi/rockwood/;Rockwood;rockwood
+http://www.meetup.com/cities/us/mi/rodney/;Rodney;rodney
+http://www.meetup.com/cities/us/mi/rogers_city/;Rogers City;rogers_city
+http://www.meetup.com/cities/us/mi/romeo/;Romeo;romeo
+http://www.meetup.com/cities/us/mi/romulus/;Romulus;romulus
+http://www.meetup.com/cities/us/mi/roscommon/;Roscommon;roscommon
+http://www.meetup.com/cities/us/mi/rosebush/;Rosebush;rosebush
+http://www.meetup.com/cities/us/mi/rose_city/;Rose City;rose_city
+http://www.meetup.com/cities/us/mi/roseville/;Roseville;roseville
+http://www.meetup.com/cities/us/mi/rothbury/;Rothbury;rothbury
+http://www.meetup.com/cities/us/mi/royal_oak/;Royal Oak;royal_oak
+http://www.meetup.com/cities/us/mi/rudyard/;Rudyard;rudyard
+http://www.meetup.com/cities/us/mi/rumely/;Rumely;rumely
+http://www.meetup.com/cities/us/mi/ruth/;Ruth;ruth
+http://www.meetup.com/cities/us/mi/saginaw/;Saginaw;saginaw
+http://www.meetup.com/cities/us/mi/sagola/;Sagola;sagola
+http://www.meetup.com/cities/us/mi/saint_charles/;Saint Charles;saint_charles
+http://www.meetup.com/cities/us/mi/saint_clair/;Saint Clair;saint_clair
+http://www.meetup.com/cities/us/mi/saint_clair_shores/;Saint Clair Shores;saint_clair_shores
+http://www.meetup.com/cities/us/mi/saint_helen/;Saint Helen;saint_helen
+http://www.meetup.com/cities/us/mi/saint_ignace/;Saint Ignace;saint_ignace
+http://www.meetup.com/cities/us/mi/saint_johns/;Saint Johns;saint_johns
+http://www.meetup.com/cities/us/mi/saint_joseph/;Saint Joseph;saint_joseph
+http://www.meetup.com/cities/us/mi/saint_louis/;Saint Louis;saint_louis
+http://www.meetup.com/cities/us/mi/salem/;Salem;salem
+http://www.meetup.com/cities/us/mi/saline/;Saline;saline
+http://www.meetup.com/cities/us/mi/samaria/;Samaria;samaria
+http://www.meetup.com/cities/us/mi/sand_creek/;Sand Creek;sand_creek
+http://www.meetup.com/cities/us/mi/sand_lake/;Sand Lake;sand_lake
+http://www.meetup.com/cities/us/mi/sandusky/;Sandusky;sandusky
+http://www.meetup.com/cities/us/mi/sanford/;Sanford;sanford
+http://www.meetup.com/cities/us/mi/saranac/;Saranac;saranac
+http://www.meetup.com/cities/us/mi/saugatuck/;Saugatuck;saugatuck
+http://www.meetup.com/cities/us/mi/sault_sainte_marie/;Sault Sainte Marie;sault_sainte_marie
+http://www.meetup.com/cities/us/mi/sawyer/;Sawyer;sawyer
+http://www.meetup.com/cities/us/mi/schoolcraft/;Schoolcraft;schoolcraft
+http://www.meetup.com/cities/us/mi/scotts/;Scotts;scotts
+http://www.meetup.com/cities/us/mi/scottville/;Scottville;scottville
+http://www.meetup.com/cities/us/mi/sears/;Sears;sears
+http://www.meetup.com/cities/us/mi/sebewaing/;Sebewaing;sebewaing
+http://www.meetup.com/cities/us/mi/seney/;Seney;seney
+http://www.meetup.com/cities/us/mi/shaftsburg/;Shaftsburg;shaftsburg
+http://www.meetup.com/cities/us/mi/shelby/;Shelby;shelby
+http://www.meetup.com/cities/us/mi/shelbyville/;Shelbyville;shelbyville
+http://www.meetup.com/cities/us/mi/shepherd/;Shepherd;shepherd
+http://www.meetup.com/cities/us/mi/sheridan/;Sheridan;sheridan
+http://www.meetup.com/cities/us/mi/sherwood/;Sherwood;sherwood
+http://www.meetup.com/cities/us/mi/shingleton/;Shingleton;shingleton
+http://www.meetup.com/cities/us/mi/sidnaw/;Sidnaw;sidnaw
+http://www.meetup.com/cities/us/mi/sidney/;Sidney;sidney
+http://www.meetup.com/cities/us/mi/silverwood/;Silverwood;silverwood
+http://www.meetup.com/cities/us/mi/six_lakes/;Six Lakes;six_lakes
+http://www.meetup.com/cities/us/mi/skandia/;Skandia;skandia
+http://www.meetup.com/cities/us/mi/skanee/;Skanee;skanee
+http://www.meetup.com/cities/us/mi/smiths_creek/;Smiths Creek;smiths_creek
+http://www.meetup.com/cities/us/mi/smyrna/;Smyrna;smyrna
+http://www.meetup.com/cities/us/mi/snover/;Snover;snover
+http://www.meetup.com/cities/us/mi/sodus/;Sodus;sodus
+http://www.meetup.com/cities/us/mi/somerset/;Somerset;somerset
+http://www.meetup.com/cities/us/mi/somerset_center/;Somerset Center;somerset_center
+http://www.meetup.com/cities/us/mi/south_boardman/;South Boardman;south_boardman
+http://www.meetup.com/cities/us/mi/south_branch/;South Branch;south_branch
+http://www.meetup.com/cities/us/mi/southfield/;Southfield;southfield
+http://www.meetup.com/cities/us/mi/southgate/;Southgate;southgate
+http://www.meetup.com/cities/us/mi/south_haven/;South Haven;south_haven
+http://www.meetup.com/cities/us/mi/south_lyon/;South Lyon;south_lyon
+http://www.meetup.com/cities/us/mi/south_range/;South Range;south_range
+http://www.meetup.com/cities/us/mi/south_rockwood/;South Rockwood;south_rockwood
+http://www.meetup.com/cities/us/mi/spalding/;Spalding;spalding
+http://www.meetup.com/cities/us/mi/sparta/;Sparta;sparta
+http://www.meetup.com/cities/us/mi/spring_arbor/;Spring Arbor;spring_arbor
+http://www.meetup.com/cities/us/mi/spring_lake/;Spring Lake;spring_lake
+http://www.meetup.com/cities/us/mi/springport/;Springport;springport
+http://www.meetup.com/cities/us/mi/spruce/;Spruce;spruce
+http://www.meetup.com/cities/us/mi/stambaugh/;Stambaugh;stambaugh
+http://www.meetup.com/cities/us/mi/standish/;Standish;standish
+http://www.meetup.com/cities/us/mi/stanton/;Stanton;stanton
+http://www.meetup.com/cities/us/mi/stanwood/;Stanwood;stanwood
+http://www.meetup.com/cities/us/mi/stephenson/;Stephenson;stephenson
+http://www.meetup.com/cities/us/mi/sterling/;Sterling;sterling
+http://www.meetup.com/cities/us/mi/sterling_heights/;Sterling Heights;sterling_heights
+http://www.meetup.com/cities/us/mi/stevensville/;Stevensville;stevensville
+http://www.meetup.com/cities/us/mi/stockbridge/;Stockbridge;stockbridge
+http://www.meetup.com/cities/us/mi/strongs/;Strongs;strongs
+http://www.meetup.com/cities/us/mi/sturgis/;Sturgis;sturgis
+http://www.meetup.com/cities/us/mi/sumner/;Sumner;sumner
+http://www.meetup.com/cities/us/mi/sunfield/;Sunfield;sunfield
+http://www.meetup.com/cities/us/mi/suttons_bay/;Suttons Bay;suttons_bay
+http://www.meetup.com/cities/us/mi/swartz_creek/;Swartz Creek;swartz_creek
+http://www.meetup.com/cities/us/mi/sylvan_beach/;Sylvan Beach;sylvan_beach
+http://www.meetup.com/cities/us/mi/tawas_city/;Tawas City;tawas_city
+http://www.meetup.com/cities/us/mi/taylor/;Taylor;taylor
+http://www.meetup.com/cities/us/mi/tecumseh/;Tecumseh;tecumseh
+http://www.meetup.com/cities/us/mi/tekonsha/;Tekonsha;tekonsha
+http://www.meetup.com/cities/us/mi/temperance/;Temperance;temperance
+http://www.meetup.com/cities/us/mi/thompsonville/;Thompsonville;thompsonville
+http://www.meetup.com/cities/us/mi/three_oaks/;Three Oaks;three_oaks
+http://www.meetup.com/cities/us/mi/three_rivers/;Three Rivers;three_rivers
+http://www.meetup.com/cities/us/mi/tipton/;Tipton;tipton
+http://www.meetup.com/cities/us/mi/toivola/;Toivola;toivola
+http://www.meetup.com/cities/us/mi/topinabee/;Topinabee;topinabee
+http://www.meetup.com/cities/us/mi/tower/;Tower;tower
+http://www.meetup.com/cities/us/mi/traverse_city/;Traverse City;traverse_city
+http://www.meetup.com/cities/us/mi/trenary/;Trenary;trenary
+http://www.meetup.com/cities/us/mi/trenton/;Trenton;trenton
+http://www.meetup.com/cities/us/mi/trout_creek/;Trout Creek;trout_creek
+http://www.meetup.com/cities/us/mi/trout_lake/;Trout Lake;trout_lake
+http://www.meetup.com/cities/us/mi/troy/;Troy;troy
+http://www.meetup.com/cities/us/mi/trufant/;Trufant;trufant
+http://www.meetup.com/cities/us/mi/turner/;Turner;turner
+http://www.meetup.com/cities/us/mi/tuscola/;Tuscola;tuscola
+http://www.meetup.com/cities/us/mi/tustin/;Tustin;tustin
+http://www.meetup.com/cities/us/mi/twining/;Twining;twining
+http://www.meetup.com/cities/us/mi/twin_lake/;Twin Lake;twin_lake
+http://www.meetup.com/cities/us/mi/ubly/;Ubly;ubly
+http://www.meetup.com/cities/us/mi/union/;Union;union
+http://www.meetup.com/cities/us/mi/union_city/;Union City;union_city
+http://www.meetup.com/cities/us/mi/union_lake/;Union Lake;union_lake
+http://www.meetup.com/cities/us/mi/union_pier/;Union Pier;union_pier
+http://www.meetup.com/cities/us/mi/unionville/;Unionville;unionville
+http://www.meetup.com/cities/us/mi/university_center/;University Center;university_center
+http://www.meetup.com/cities/us/mi/utica/;Utica;utica
+http://www.meetup.com/cities/us/mi/vandalia/;Vandalia;vandalia
+http://www.meetup.com/cities/us/mi/vanderbilt/;Vanderbilt;vanderbilt
+http://www.meetup.com/cities/us/mi/vassar/;Vassar;vassar
+http://www.meetup.com/cities/us/mi/vermontville/;Vermontville;vermontville
+http://www.meetup.com/cities/us/mi/vernon/;Vernon;vernon
+http://www.meetup.com/cities/us/mi/vestaburg/;Vestaburg;vestaburg
+http://www.meetup.com/cities/us/mi/vicksburg/;Vicksburg;vicksburg
+http://www.meetup.com/cities/us/mi/vulcan/;Vulcan;vulcan
+http://www.meetup.com/cities/us/mi/wakefield/;Wakefield;wakefield
+http://www.meetup.com/cities/us/mi/waldron/;Waldron;waldron
+http://www.meetup.com/cities/us/mi/walhalla/;Walhalla;walhalla
+http://www.meetup.com/cities/us/mi/walkerville/;Walkerville;walkerville
+http://www.meetup.com/cities/us/mi/wallace/;Wallace;wallace
+http://www.meetup.com/cities/us/mi/walled_lake/;Walled Lake;walled_lake
+http://www.meetup.com/cities/us/mi/walloon_lake/;Walloon Lake;walloon_lake
+http://www.meetup.com/cities/us/mi/warren/;Warren;warren
+http://www.meetup.com/cities/us/mi/washington/;Washington;washington
+http://www.meetup.com/cities/us/mi/waterford/;Waterford;waterford
+http://www.meetup.com/cities/us/mi/waters/;Waters;waters
+http://www.meetup.com/cities/us/mi/watersmeet/;Watersmeet;watersmeet
+http://www.meetup.com/cities/us/mi/watervliet/;Watervliet;watervliet
+http://www.meetup.com/cities/us/mi/watton/;Watton;watton
+http://www.meetup.com/cities/us/mi/wayland/;Wayland;wayland
+http://www.meetup.com/cities/us/mi/wayne/;Wayne;wayne
+http://www.meetup.com/cities/us/mi/webberville/;Webberville;webberville
+http://www.meetup.com/cities/us/mi/weidman/;Weidman;weidman
+http://www.meetup.com/cities/us/mi/wells/;Wells;wells
+http://www.meetup.com/cities/us/mi/wellston/;Wellston;wellston
+http://www.meetup.com/cities/us/mi/west_bloomfield/;West Bloomfield;west_bloomfield
+http://www.meetup.com/cities/us/mi/west_branch/;West Branch;west_branch
+http://www.meetup.com/cities/us/mi/westland/;Westland;westland
+http://www.meetup.com/cities/us/mi/west_olive/;West Olive;west_olive
+http://www.meetup.com/cities/us/mi/weston/;Weston;weston
+http://www.meetup.com/cities/us/mi/westphalia/;Westphalia;westphalia
+http://www.meetup.com/cities/us/mi/wetmore/;Wetmore;wetmore
+http://www.meetup.com/cities/us/mi/wheeler/;Wheeler;wheeler
+http://www.meetup.com/cities/us/mi/white_cloud/;White Cloud;white_cloud
+http://www.meetup.com/cities/us/mi/whitehall/;Whitehall;whitehall
+http://www.meetup.com/cities/us/mi/white_lake/;White Lake;white_lake
+http://www.meetup.com/cities/us/mi/white_pigeon/;White Pigeon;white_pigeon
+http://www.meetup.com/cities/us/mi/white_pine/;White Pine;white_pine
+http://www.meetup.com/cities/us/mi/whitmore_lake/;Whitmore Lake;whitmore_lake
+http://www.meetup.com/cities/us/mi/whittaker/;Whittaker;whittaker
+http://www.meetup.com/cities/us/mi/whittemore/;Whittemore;whittemore
+http://www.meetup.com/cities/us/mi/williamsburg/;Williamsburg;williamsburg
+http://www.meetup.com/cities/us/mi/williamston/;Williamston;williamston
+http://www.meetup.com/cities/us/mi/willis/;Willis;willis
+http://www.meetup.com/cities/us/mi/wilson/;Wilson;wilson
+http://www.meetup.com/cities/us/mi/winn/;Winn;winn
+http://www.meetup.com/cities/us/mi/wixom/;Wixom;wixom
+http://www.meetup.com/cities/us/mi/wolverine/;Wolverine;wolverine
+http://www.meetup.com/cities/us/mi/woodland/;Woodland;woodland
+http://www.meetup.com/cities/us/mi/wyandotte/;Wyandotte;wyandotte
+http://www.meetup.com/cities/us/mi/wyoming/;Wyoming;wyoming
+http://www.meetup.com/cities/us/mi/yale/;Yale;yale
+http://www.meetup.com/cities/us/mi/ypsilanti/;Ypsilanti;ypsilanti
+http://www.meetup.com/cities/us/mi/zeeland/;Zeeland;zeeland

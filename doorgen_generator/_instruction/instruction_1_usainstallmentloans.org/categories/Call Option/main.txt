@@ -1,0 +1,39 @@
+Call Option
+
+Definition:
+A call option is an option contract in which the holder (buyer) has the right (but not the obligation) to buy a specified quantity of a security at a specified price (strike price) within a fixed period of time (until its expiration).
+
+For the writer (seller) of a call option, it represents an obligation to sell the underlying security at the strike price if the option is exercised. The call option writer is paid a premium for taking on the risk associated with the obligation.
+
+For stock options, each contract covers 100 shares.
+
+Buying Call Options
+Call buying is the simplest way of trading call options. Novice traders often start off trading options by buying calls, not only because of its simplicity but also due to the large ROI generated from successful trades.
+
+A Simplified Example
+
+Suppose the stock of XYZ company is trading at $40. A call option contract with a strike price of $40 expiring in a month's time is being priced at $2. You strongly believe that XYZ stock will rise sharply in the coming weeks after their earnings report. So you paid $200 to purchase a single $40 XYZ call option covering 100 shares.
+
+Call Option Payoff Diagram
+Say you were spot on and the price of XYZ stock rallies to $50 after the company reported strong earnings and raised its earnings guidance for the next quarter. With this sharp rise in the underlying stock price, your call buying strategy will net you a profit of $800.
+
+Let us take a look at how we obtain this figure.
+
+If you were to exercise your call option after the earnings report, you invoke your right to buy 100 shares of XYZ stock at $40 each and can sell them immediately in the open market for $50 a share. This gives you a profit of $10 per share. As each call option contract covers 100 shares, the total amount you will receive from the exercise is $1000.
+
+Since you had paid $200 to purchase the call option, your net profit for the entire trade is $800. It is also interesting to note that in this scenario, the call buying strategy's ROI of 400% is very much higher than the 25% ROI achieved if you were to purchase the stock itself.
+
+This strategy of trading call options is known as the long call strategy. See our long call strategy article for a more detailed explanation as well as formulae for calculating maximum profit, maximum loss and breakeven points.
+
+Selling Call Options
+Instead of purchasing call options, one can also sell (write) them for a profit. Call option writers, also known as sellers, sell call options with the hope that they expire worthless so that they can pocket the premiums. Selling calls, or short call, involves more risk but can also be very profitable when done properly. One can sell covered calls or naked (uncovered) calls.
+
+Covered Calls
+The short call is covered if the call option writer owns the obligated quantity of the underlying security. The covered call is a popular option strategy that enables the stockowner to generate additional income from their stock holdings thru periodic selling of call options. See our covered call strategy article for more details.
+
+Naked (Uncovered) Calls
+When the option trader write calls without owning the obligated holding of the underlying security, he is shorting the calls naked. Naked short selling of calls is a highly risky option strategy and is not recommended for the novice trader. See our naked call article to learn more about this strategy.
+
+Call Spreads
+A call spread is an options strategy in which equal number of call option contracts are bought and sold simultaneously on the same underlying security but with different strike prices and/or expiration dates. Call spreads limit the option trader's maximum loss at the expense of capping his potential profit at the same time.
+

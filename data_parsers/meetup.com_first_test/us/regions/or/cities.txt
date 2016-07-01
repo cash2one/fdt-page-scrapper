@@ -1,0 +1,379 @@
+http://www.meetup.com/cities/us/or/adams/;Adams;adams
+http://www.meetup.com/cities/us/or/adel/;Adel;adel
+http://www.meetup.com/cities/us/or/adrian/;Adrian;adrian
+http://www.meetup.com/cities/us/or/agness/;Agness;agness
+http://www.meetup.com/cities/us/or/albany/;Albany;albany
+http://www.meetup.com/cities/us/or/allegany/;Allegany;allegany
+http://www.meetup.com/cities/us/or/alsea/;Alsea;alsea
+http://www.meetup.com/cities/us/or/alvadore/;Alvadore;alvadore
+http://www.meetup.com/cities/us/or/amity/;Amity;amity
+http://www.meetup.com/cities/us/or/antelope/;Antelope;antelope
+http://www.meetup.com/cities/us/or/arch_cape/;Arch Cape;arch_cape
+http://www.meetup.com/cities/us/or/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/or/arock/;Arock;arock
+http://www.meetup.com/cities/us/or/ashland/;Ashland;ashland
+http://www.meetup.com/cities/us/or/ashwood/;Ashwood;ashwood
+http://www.meetup.com/cities/us/or/astoria/;Astoria;astoria
+http://www.meetup.com/cities/us/or/athena/;Athena;athena
+http://www.meetup.com/cities/us/or/aumsville/;Aumsville;aumsville
+http://www.meetup.com/cities/us/or/aurora/;Aurora;aurora
+http://www.meetup.com/cities/us/or/azalea/;Azalea;azalea
+http://www.meetup.com/cities/us/or/baker_city/;Baker City;baker_city
+http://www.meetup.com/cities/us/or/bandon/;Bandon;bandon
+http://www.meetup.com/cities/us/or/banks/;Banks;banks
+http://www.meetup.com/cities/us/or/bates/;Bates;bates
+http://www.meetup.com/cities/us/or/bay_city/;Bay City;bay_city
+http://www.meetup.com/cities/us/or/beatty/;Beatty;beatty
+http://www.meetup.com/cities/us/or/beaver/;Beaver;beaver
+http://www.meetup.com/cities/us/or/beavercreek/;Beavercreek;beavercreek
+http://www.meetup.com/cities/us/or/beaverton/;Beaverton;beaverton
+http://www.meetup.com/cities/us/or/bend/;Bend;bend
+http://www.meetup.com/cities/us/or/blachly/;Blachly;blachly
+http://www.meetup.com/cities/us/or/blodgett/;Blodgett;blodgett
+http://www.meetup.com/cities/us/or/blue_river/;Blue River;blue_river
+http://www.meetup.com/cities/us/or/bly/;Bly;bly
+http://www.meetup.com/cities/us/or/boardman/;Boardman;boardman
+http://www.meetup.com/cities/us/or/bonanza/;Bonanza;bonanza
+http://www.meetup.com/cities/us/or/boring/;Boring;boring
+http://www.meetup.com/cities/us/or/bridal_veil/;Bridal Veil;bridal_veil
+http://www.meetup.com/cities/us/or/bridgeport/;Bridgeport;bridgeport
+http://www.meetup.com/cities/us/or/brightwood/;Brightwood;brightwood
+http://www.meetup.com/cities/us/or/broadbent/;Broadbent;broadbent
+http://www.meetup.com/cities/us/or/brogan/;Brogan;brogan
+http://www.meetup.com/cities/us/or/brookings/;Brookings;brookings
+http://www.meetup.com/cities/us/or/brothers/;Brothers;brothers
+http://www.meetup.com/cities/us/or/brownsville/;Brownsville;brownsville
+http://www.meetup.com/cities/us/or/burns/;Burns;burns
+http://www.meetup.com/cities/us/or/butte_falls/;Butte Falls;butte_falls
+http://www.meetup.com/cities/us/or/buxton/;Buxton;buxton
+http://www.meetup.com/cities/us/or/camas_valley/;Camas Valley;camas_valley
+http://www.meetup.com/cities/us/or/camp_sherman/;Camp Sherman;camp_sherman
+http://www.meetup.com/cities/us/or/canby/;Canby;canby
+http://www.meetup.com/cities/us/or/cannon_beach/;Cannon Beach;cannon_beach
+http://www.meetup.com/cities/us/or/canyon_city/;Canyon City;canyon_city
+http://www.meetup.com/cities/us/or/canyonville/;Canyonville;canyonville
+http://www.meetup.com/cities/us/or/carlton/;Carlton;carlton
+http://www.meetup.com/cities/us/or/cascade_locks/;Cascade Locks;cascade_locks
+http://www.meetup.com/cities/us/or/cascadia/;Cascadia;cascadia
+http://www.meetup.com/cities/us/or/cave_junction/;Cave Junction;cave_junction
+http://www.meetup.com/cities/us/or/central_point/;Central Point;central_point
+http://www.meetup.com/cities/us/or/chemult/;Chemult;chemult
+http://www.meetup.com/cities/us/or/cheshire/;Cheshire;cheshire
+http://www.meetup.com/cities/us/or/chiloquin/;Chiloquin;chiloquin
+http://www.meetup.com/cities/us/or/christmas_valley/;Christmas Valley;christmas_valley
+http://www.meetup.com/cities/us/or/clackamas/;Clackamas;clackamas
+http://www.meetup.com/cities/us/or/clatskanie/;Clatskanie;clatskanie
+http://www.meetup.com/cities/us/or/cloverdale/;Cloverdale;cloverdale
+http://www.meetup.com/cities/us/or/colton/;Colton;colton
+http://www.meetup.com/cities/us/or/columbia_city/;Columbia City;columbia_city
+http://www.meetup.com/cities/us/or/condon/;Condon;condon
+http://www.meetup.com/cities/us/or/coos_bay/;Coos Bay;coos_bay
+http://www.meetup.com/cities/us/or/coquille/;Coquille;coquille
+http://www.meetup.com/cities/us/or/corbett/;Corbett;corbett
+http://www.meetup.com/cities/us/or/cornelius/;Cornelius;cornelius
+http://www.meetup.com/cities/us/or/corvallis/;Corvallis;corvallis
+http://www.meetup.com/cities/us/or/cottage_grove/;Cottage Grove;cottage_grove
+http://www.meetup.com/cities/us/or/cove/;Cove;cove
+http://www.meetup.com/cities/us/or/crabtree/;Crabtree;crabtree
+http://www.meetup.com/cities/us/or/crane/;Crane;crane
+http://www.meetup.com/cities/us/or/crater_lake/;Crater Lake;crater_lake
+http://www.meetup.com/cities/us/or/crawfordsville/;Crawfordsville;crawfordsville
+http://www.meetup.com/cities/us/or/crescent/;Crescent;crescent
+http://www.meetup.com/cities/us/or/crescent_lake/;Crescent Lake;crescent_lake
+http://www.meetup.com/cities/us/or/creswell/;Creswell;creswell
+http://www.meetup.com/cities/us/or/culp_creek/;Culp Creek;culp_creek
+http://www.meetup.com/cities/us/or/culver/;Culver;culver
+http://www.meetup.com/cities/us/or/curtin/;Curtin;curtin
+http://www.meetup.com/cities/us/or/dairy/;Dairy;dairy
+http://www.meetup.com/cities/us/or/dallas/;Dallas;dallas
+http://www.meetup.com/cities/us/or/damascus/;Damascus;damascus
+http://www.meetup.com/cities/us/or/days_creek/;Days Creek;days_creek
+http://www.meetup.com/cities/us/or/dayton/;Dayton;dayton
+http://www.meetup.com/cities/us/or/dayville/;Dayville;dayville
+http://www.meetup.com/cities/us/or/deadwood/;Deadwood;deadwood
+http://www.meetup.com/cities/us/or/deer_island/;Deer Island;deer_island
+http://www.meetup.com/cities/us/or/depoe_bay/;Depoe Bay;depoe_bay
+http://www.meetup.com/cities/us/or/detroit/;Detroit;detroit
+http://www.meetup.com/cities/us/or/dexter/;Dexter;dexter
+http://www.meetup.com/cities/us/or/diamond/;Diamond;diamond
+http://www.meetup.com/cities/us/or/dillard/;Dillard;dillard
+http://www.meetup.com/cities/us/or/donald/;Donald;donald
+http://www.meetup.com/cities/us/or/dorena/;Dorena;dorena
+http://www.meetup.com/cities/us/or/drain/;Drain;drain
+http://www.meetup.com/cities/us/or/drewsey/;Drewsey;drewsey
+http://www.meetup.com/cities/us/or/dufur/;Dufur;dufur
+http://www.meetup.com/cities/us/or/dundee/;Dundee;dundee
+http://www.meetup.com/cities/us/or/durkee/;Durkee;durkee
+http://www.meetup.com/cities/us/or/eagle_creek/;Eagle Creek;eagle_creek
+http://www.meetup.com/cities/us/or/eagle_point/;Eagle Point;eagle_point
+http://www.meetup.com/cities/us/or/echo/;Echo;echo
+http://www.meetup.com/cities/us/or/eddyville/;Eddyville;eddyville
+http://www.meetup.com/cities/us/or/elgin/;Elgin;elgin
+http://www.meetup.com/cities/us/or/elkton/;Elkton;elkton
+http://www.meetup.com/cities/us/or/elmira/;Elmira;elmira
+http://www.meetup.com/cities/us/or/enterprise/;Enterprise;enterprise
+http://www.meetup.com/cities/us/or/estacada/;Estacada;estacada
+http://www.meetup.com/cities/us/or/eugene/;Eugene;eugene
+http://www.meetup.com/cities/us/or/fairview/;Fairview;fairview
+http://www.meetup.com/cities/us/or/fall_creek/;Fall Creek;fall_creek
+http://www.meetup.com/cities/us/or/falls_city/;Falls City;falls_city
+http://www.meetup.com/cities/us/or/fields/;Fields;fields
+http://www.meetup.com/cities/us/or/florence/;Florence;florence
+http://www.meetup.com/cities/us/or/forest_grove/;Forest Grove;forest_grove
+http://www.meetup.com/cities/us/or/fort_klamath/;Fort Klamath;fort_klamath
+http://www.meetup.com/cities/us/or/fort_rock/;Fort Rock;fort_rock
+http://www.meetup.com/cities/us/or/fossil/;Fossil;fossil
+http://www.meetup.com/cities/us/or/foster/;Foster;foster
+http://www.meetup.com/cities/us/or/frenchglen/;Frenchglen;frenchglen
+http://www.meetup.com/cities/us/or/gales_creek/;Gales Creek;gales_creek
+http://www.meetup.com/cities/us/or/gardiner/;Gardiner;gardiner
+http://www.meetup.com/cities/us/or/garibaldi/;Garibaldi;garibaldi
+http://www.meetup.com/cities/us/or/gaston/;Gaston;gaston
+http://www.meetup.com/cities/us/or/gates/;Gates;gates
+http://www.meetup.com/cities/us/or/gervais/;Gervais;gervais
+http://www.meetup.com/cities/us/or/gilchrist/;Gilchrist;gilchrist
+http://www.meetup.com/cities/us/or/gladstone/;Gladstone;gladstone
+http://www.meetup.com/cities/us/or/glendale/;Glendale;glendale
+http://www.meetup.com/cities/us/or/gleneden_beach/;Gleneden Beach;gleneden_beach
+http://www.meetup.com/cities/us/or/glide/;Glide;glide
+http://www.meetup.com/cities/us/or/gold_beach/;Gold Beach;gold_beach
+http://www.meetup.com/cities/us/or/gold_hill/;Gold Hill;gold_hill
+http://www.meetup.com/cities/us/or/government_camp/;Government Camp;government_camp
+http://www.meetup.com/cities/us/or/grand_ronde/;Grand Ronde;grand_ronde
+http://www.meetup.com/cities/us/or/grants_pass/;Grants Pass;grants_pass
+http://www.meetup.com/cities/us/or/grass_valley/;Grass Valley;grass_valley
+http://www.meetup.com/cities/us/or/gresham/;Gresham;gresham
+http://www.meetup.com/cities/us/or/haines/;Haines;haines
+http://www.meetup.com/cities/us/or/halfway/;Halfway;halfway
+http://www.meetup.com/cities/us/or/halsey/;Halsey;halsey
+http://www.meetup.com/cities/us/or/hammond/;Hammond;hammond
+http://www.meetup.com/cities/us/or/happy_valley/;Happy Valley;happy_valley
+http://www.meetup.com/cities/us/or/harper/;Harper;harper
+http://www.meetup.com/cities/us/or/harrisburg/;Harrisburg;harrisburg
+http://www.meetup.com/cities/us/or/hebo/;Hebo;hebo
+http://www.meetup.com/cities/us/or/helix/;Helix;helix
+http://www.meetup.com/cities/us/or/heppner/;Heppner;heppner
+http://www.meetup.com/cities/us/or/hereford/;Hereford;hereford
+http://www.meetup.com/cities/us/or/hermiston/;Hermiston;hermiston
+http://www.meetup.com/cities/us/or/hillsboro/;Hillsboro;hillsboro
+http://www.meetup.com/cities/us/or/hines/;Hines;hines
+http://www.meetup.com/cities/us/or/hood_river/;Hood River;hood_river
+http://www.meetup.com/cities/us/or/hubbard/;Hubbard;hubbard
+http://www.meetup.com/cities/us/or/huntington/;Huntington;huntington
+http://www.meetup.com/cities/us/or/idanha/;Idanha;idanha
+http://www.meetup.com/cities/us/or/idleyld_park/;Idleyld Park;idleyld_park
+http://www.meetup.com/cities/us/or/imbler/;Imbler;imbler
+http://www.meetup.com/cities/us/or/imnaha/;Imnaha;imnaha
+http://www.meetup.com/cities/us/or/independence/;Independence;independence
+http://www.meetup.com/cities/us/or/ione/;Ione;ione
+http://www.meetup.com/cities/us/or/ironside/;Ironside;ironside
+http://www.meetup.com/cities/us/or/irrigon/;Irrigon;irrigon
+http://www.meetup.com/cities/us/or/jacksonville/;Jacksonville;jacksonville
+http://www.meetup.com/cities/us/or/jamieson/;Jamieson;jamieson
+http://www.meetup.com/cities/us/or/jefferson/;Jefferson;jefferson
+http://www.meetup.com/cities/us/or/john_day/;John Day;john_day
+http://www.meetup.com/cities/us/or/jordan_valley/;Jordan Valley;jordan_valley
+http://www.meetup.com/cities/us/or/joseph/;Joseph;joseph
+http://www.meetup.com/cities/us/or/junction_city/;Junction City;junction_city
+http://www.meetup.com/cities/us/or/juntura/;Juntura;juntura
+http://www.meetup.com/cities/us/or/keizer/;Keizer;keizer
+http://www.meetup.com/cities/us/or/keno/;Keno;keno
+http://www.meetup.com/cities/us/or/kent/;Kent;kent
+http://www.meetup.com/cities/us/or/kerby/;Kerby;kerby
+http://www.meetup.com/cities/us/or/kimberly/;Kimberly;kimberly
+http://www.meetup.com/cities/us/or/klamath_falls/;Klamath Falls;klamath_falls
+http://www.meetup.com/cities/us/or/lafayette/;Lafayette;lafayette
+http://www.meetup.com/cities/us/or/la_grande/;La Grande;la_grande
+http://www.meetup.com/cities/us/or/lake_oswego/;Lake Oswego;lake_oswego
+http://www.meetup.com/cities/us/or/lakeside/;Lakeside;lakeside
+http://www.meetup.com/cities/us/or/lakeview/;Lakeview;lakeview
+http://www.meetup.com/cities/us/or/langlois/;Langlois;langlois
+http://www.meetup.com/cities/us/or/la_pine/;La Pine;la_pine
+http://www.meetup.com/cities/us/or/lebanon/;Lebanon;lebanon
+http://www.meetup.com/cities/us/or/lexington/;Lexington;lexington
+http://www.meetup.com/cities/us/or/lincoln_city/;Lincoln City;lincoln_city
+http://www.meetup.com/cities/us/or/logsden/;Logsden;logsden
+http://www.meetup.com/cities/us/or/long_creek/;Long Creek;long_creek
+http://www.meetup.com/cities/us/or/lorane/;Lorane;lorane
+http://www.meetup.com/cities/us/or/lostine/;Lostine;lostine
+http://www.meetup.com/cities/us/or/lowell/;Lowell;lowell
+http://www.meetup.com/cities/us/or/lyons/;Lyons;lyons
+http://www.meetup.com/cities/us/or/madras/;Madras;madras
+http://www.meetup.com/cities/us/or/malin/;Malin;malin
+http://www.meetup.com/cities/us/or/manning/;Manning;manning
+http://www.meetup.com/cities/us/or/manzanita/;Manzanita;manzanita
+http://www.meetup.com/cities/us/or/mapleton/;Mapleton;mapleton
+http://www.meetup.com/cities/us/or/marcola/;Marcola;marcola
+http://www.meetup.com/cities/us/or/marylhurst/;Marylhurst;marylhurst
+http://www.meetup.com/cities/us/or/maupin/;Maupin;maupin
+http://www.meetup.com/cities/us/or/mcminnville/;McMinnville;mcminnville
+http://www.meetup.com/cities/us/or/meacham/;Meacham;meacham
+http://www.meetup.com/cities/us/or/medford/;Medford;medford
+http://www.meetup.com/cities/us/or/mehama/;Mehama;mehama
+http://www.meetup.com/cities/us/or/merlin/;Merlin;merlin
+http://www.meetup.com/cities/us/or/merrill/;Merrill;merrill
+http://www.meetup.com/cities/us/or/midland/;Midland;midland
+http://www.meetup.com/cities/us/or/mikkalo/;Mikkalo;mikkalo
+http://www.meetup.com/cities/us/or/mill_city/;Mill City;mill_city
+http://www.meetup.com/cities/us/or/milton_freewater/;Milton Freewater;milton_freewater
+http://www.meetup.com/cities/us/or/mitchell/;Mitchell;mitchell
+http://www.meetup.com/cities/us/or/molalla/;Molalla;molalla
+http://www.meetup.com/cities/us/or/monmouth/;Monmouth;monmouth
+http://www.meetup.com/cities/us/or/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/or/monument/;Monument;monument
+http://www.meetup.com/cities/us/or/moro/;Moro;moro
+http://www.meetup.com/cities/us/or/mosier/;Mosier;mosier
+http://www.meetup.com/cities/us/or/mount_angel/;Mount Angel;mount_angel
+http://www.meetup.com/cities/us/or/mount_hood_parkdale/;Mount Hood Parkdale;mount_hood_parkdale
+http://www.meetup.com/cities/us/or/mount_vernon/;Mount Vernon;mount_vernon
+http://www.meetup.com/cities/us/or/mulino/;Mulino;mulino
+http://www.meetup.com/cities/us/or/murphy/;Murphy;murphy
+http://www.meetup.com/cities/us/or/myrtle_creek/;Myrtle Creek;myrtle_creek
+http://www.meetup.com/cities/us/or/myrtle_point/;Myrtle Point;myrtle_point
+http://www.meetup.com/cities/us/or/nehalem/;Nehalem;nehalem
+http://www.meetup.com/cities/us/or/neotsu/;Neotsu;neotsu
+http://www.meetup.com/cities/us/or/neskowin/;Neskowin;neskowin
+http://www.meetup.com/cities/us/or/netarts/;Netarts;netarts
+http://www.meetup.com/cities/us/or/newberg/;Newberg;newberg
+http://www.meetup.com/cities/us/or/new_pine_creek/;New Pine Creek;new_pine_creek
+http://www.meetup.com/cities/us/or/newport/;Newport;newport
+http://www.meetup.com/cities/us/or/north_bend/;North Bend;north_bend
+http://www.meetup.com/cities/us/or/north_plains/;North Plains;north_plains
+http://www.meetup.com/cities/us/or/north_powder/;North Powder;north_powder
+http://www.meetup.com/cities/us/or/noti/;Noti;noti
+http://www.meetup.com/cities/us/or/nyssa/;Nyssa;nyssa
+http://www.meetup.com/cities/us/or/oakland/;Oakland;oakland
+http://www.meetup.com/cities/us/or/oakridge/;Oakridge;oakridge
+http://www.meetup.com/cities/us/or/o_brien/;O Brien;o_brien
+http://www.meetup.com/cities/us/or/oceanside/;Oceanside;oceanside
+http://www.meetup.com/cities/us/or/odell/;Odell;odell
+http://www.meetup.com/cities/us/or/ontario/;Ontario;ontario
+http://www.meetup.com/cities/us/or/ophir/;Ophir;ophir
+http://www.meetup.com/cities/us/or/oregon_city/;Oregon City;oregon_city
+http://www.meetup.com/cities/us/or/otis/;Otis;otis
+http://www.meetup.com/cities/us/or/otter_rock/;Otter Rock;otter_rock
+http://www.meetup.com/cities/us/or/oxbow/;Oxbow;oxbow
+http://www.meetup.com/cities/us/or/pacific_city/;Pacific City;pacific_city
+http://www.meetup.com/cities/us/or/paisley/;Paisley;paisley
+http://www.meetup.com/cities/us/or/paulina/;Paulina;paulina
+http://www.meetup.com/cities/us/or/pendleton/;Pendleton;pendleton
+http://www.meetup.com/cities/us/or/philomath/;Philomath;philomath
+http://www.meetup.com/cities/us/or/phoenix/;Phoenix;phoenix
+http://www.meetup.com/cities/us/or/pilot_rock/;Pilot Rock;pilot_rock
+http://www.meetup.com/cities/us/or/pleasant_hill/;Pleasant Hill;pleasant_hill
+http://www.meetup.com/cities/us/or/plush/;Plush;plush
+http://www.meetup.com/cities/us/or/portland/;Portland;portland
+http://www.meetup.com/cities/us/or/port_orford/;Port Orford;port_orford
+http://www.meetup.com/cities/us/or/post/;Post;post
+http://www.meetup.com/cities/us/or/powell_butte/;Powell Butte;powell_butte
+http://www.meetup.com/cities/us/or/powers/;Powers;powers
+http://www.meetup.com/cities/us/or/prairie_city/;Prairie City;prairie_city
+http://www.meetup.com/cities/us/or/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/or/prineville/;Prineville;prineville
+http://www.meetup.com/cities/us/or/prospect/;Prospect;prospect
+http://www.meetup.com/cities/us/or/rainier/;Rainier;rainier
+http://www.meetup.com/cities/us/or/redmond/;Redmond;redmond
+http://www.meetup.com/cities/us/or/reedsport/;Reedsport;reedsport
+http://www.meetup.com/cities/us/or/rhododendron/;Rhododendron;rhododendron
+http://www.meetup.com/cities/us/or/richland/;Richland;richland
+http://www.meetup.com/cities/us/or/rickreall/;Rickreall;rickreall
+http://www.meetup.com/cities/us/or/riddle/;Riddle;riddle
+http://www.meetup.com/cities/us/or/riley/;Riley;riley
+http://www.meetup.com/cities/us/or/riverside/;Riverside;riverside
+http://www.meetup.com/cities/us/or/rockaway_beach/;Rockaway Beach;rockaway_beach
+http://www.meetup.com/cities/us/or/rogue_river/;Rogue River;rogue_river
+http://www.meetup.com/cities/us/or/roseburg/;Roseburg;roseburg
+http://www.meetup.com/cities/us/or/rose_lodge/;Rose Lodge;rose_lodge
+http://www.meetup.com/cities/us/or/rufus/;Rufus;rufus
+http://www.meetup.com/cities/us/or/saginaw/;Saginaw;saginaw
+http://www.meetup.com/cities/us/or/saint_benedict/;Saint Benedict;saint_benedict
+http://www.meetup.com/cities/us/or/saint_helens/;Saint Helens;saint_helens
+http://www.meetup.com/cities/us/or/saint_paul/;Saint Paul;saint_paul
+http://www.meetup.com/cities/us/or/salem/;Salem;salem
+http://www.meetup.com/cities/us/or/sandy/;Sandy;sandy
+http://www.meetup.com/cities/us/or/scappoose/;Scappoose;scappoose
+http://www.meetup.com/cities/us/or/scio/;Scio;scio
+http://www.meetup.com/cities/us/or/scottsburg/;Scottsburg;scottsburg
+http://www.meetup.com/cities/us/or/scotts_mills/;Scotts Mills;scotts_mills
+http://www.meetup.com/cities/us/or/seal_rock/;Seal Rock;seal_rock
+http://www.meetup.com/cities/us/or/seaside/;Seaside;seaside
+http://www.meetup.com/cities/us/or/selma/;Selma;selma
+http://www.meetup.com/cities/us/or/seneca/;Seneca;seneca
+http://www.meetup.com/cities/us/or/shady_cove/;Shady Cove;shady_cove
+http://www.meetup.com/cities/us/or/shaniko/;Shaniko;shaniko
+http://www.meetup.com/cities/us/or/shedd/;Shedd;shedd
+http://www.meetup.com/cities/us/or/sheridan/;Sheridan;sheridan
+http://www.meetup.com/cities/us/or/sherwood/;Sherwood;sherwood
+http://www.meetup.com/cities/us/or/siletz/;Siletz;siletz
+http://www.meetup.com/cities/us/or/silver_lake/;Silver Lake;silver_lake
+http://www.meetup.com/cities/us/or/silverton/;Silverton;silverton
+http://www.meetup.com/cities/us/or/sisters/;Sisters;sisters
+http://www.meetup.com/cities/us/or/sixes/;Sixes;sixes
+http://www.meetup.com/cities/us/or/south_beach/;South Beach;south_beach
+http://www.meetup.com/cities/us/or/sprague_river/;Sprague River;sprague_river
+http://www.meetup.com/cities/us/or/spray/;Spray;spray
+http://www.meetup.com/cities/us/or/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/or/stanfield/;Stanfield;stanfield
+http://www.meetup.com/cities/us/or/stayton/;Stayton;stayton
+http://www.meetup.com/cities/us/or/sublimity/;Sublimity;sublimity
+http://www.meetup.com/cities/us/or/summer_lake/;Summer Lake;summer_lake
+http://www.meetup.com/cities/us/or/summerville/;Summerville;summerville
+http://www.meetup.com/cities/us/or/sumpter/;Sumpter;sumpter
+http://www.meetup.com/cities/us/or/sutherlin/;Sutherlin;sutherlin
+http://www.meetup.com/cities/us/or/sweet_home/;Sweet Home;sweet_home
+http://www.meetup.com/cities/us/or/swisshome/;Swisshome;swisshome
+http://www.meetup.com/cities/us/or/talent/;Talent;talent
+http://www.meetup.com/cities/us/or/tangent/;Tangent;tangent
+http://www.meetup.com/cities/us/or/tenmile/;Tenmile;tenmile
+http://www.meetup.com/cities/us/or/terrebonne/;Terrebonne;terrebonne
+http://www.meetup.com/cities/us/or/the_dalles/;The Dalles;the_dalles
+http://www.meetup.com/cities/us/or/thurston/;Thurston;thurston
+http://www.meetup.com/cities/us/or/tidewater/;Tidewater;tidewater
+http://www.meetup.com/cities/us/or/tillamook/;Tillamook;tillamook
+http://www.meetup.com/cities/us/or/tiller/;Tiller;tiller
+http://www.meetup.com/cities/us/or/timber/;Timber;timber
+http://www.meetup.com/cities/us/or/toledo/;Toledo;toledo
+http://www.meetup.com/cities/us/or/tolovana_park/;Tolovana Park;tolovana_park
+http://www.meetup.com/cities/us/or/trail/;Trail;trail
+http://www.meetup.com/cities/us/or/troutdale/;Troutdale;troutdale
+http://www.meetup.com/cities/us/or/tualatin/;Tualatin;tualatin
+http://www.meetup.com/cities/us/or/turner/;Turner;turner
+http://www.meetup.com/cities/us/or/tygh_valley/;Tygh Valley;tygh_valley
+http://www.meetup.com/cities/us/or/ukiah/;Ukiah;ukiah
+http://www.meetup.com/cities/us/or/umatilla/;Umatilla;umatilla
+http://www.meetup.com/cities/us/or/umpqua/;Umpqua;umpqua
+http://www.meetup.com/cities/us/or/union/;Union;union
+http://www.meetup.com/cities/us/or/unity/;Unity;unity
+http://www.meetup.com/cities/us/or/vale/;Vale;vale
+http://www.meetup.com/cities/us/or/veneta/;Veneta;veneta
+http://www.meetup.com/cities/us/or/vernonia/;Vernonia;vernonia
+http://www.meetup.com/cities/us/or/vida/;Vida;vida
+http://www.meetup.com/cities/us/or/waldport/;Waldport;waldport
+http://www.meetup.com/cities/us/or/wallowa/;Wallowa;wallowa
+http://www.meetup.com/cities/us/or/walterville/;Walterville;walterville
+http://www.meetup.com/cities/us/or/walton/;Walton;walton
+http://www.meetup.com/cities/us/or/warm_springs/;Warm Springs;warm_springs
+http://www.meetup.com/cities/us/or/warren/;Warren;warren
+http://www.meetup.com/cities/us/or/warrenton/;Warrenton;warrenton
+http://www.meetup.com/cities/us/or/wasco/;Wasco;wasco
+http://www.meetup.com/cities/us/or/wedderburn/;Wedderburn;wedderburn
+http://www.meetup.com/cities/us/or/welches/;Welches;welches
+http://www.meetup.com/cities/us/or/westfall/;Westfall;westfall
+http://www.meetup.com/cities/us/or/westfir/;Westfir;westfir
+http://www.meetup.com/cities/us/or/westlake/;Westlake;westlake
+http://www.meetup.com/cities/us/or/west_linn/;West Linn;west_linn
+http://www.meetup.com/cities/us/or/weston/;Weston;weston
+http://www.meetup.com/cities/us/or/wheeler/;Wheeler;wheeler
+http://www.meetup.com/cities/us/or/white_city/;White City;white_city
+http://www.meetup.com/cities/us/or/wilbur/;Wilbur;wilbur
+http://www.meetup.com/cities/us/or/wilderville/;Wilderville;wilderville
+http://www.meetup.com/cities/us/or/willamina/;Willamina;willamina
+http://www.meetup.com/cities/us/or/williams/;Williams;williams
+http://www.meetup.com/cities/us/or/wilsonville/;Wilsonville;wilsonville
+http://www.meetup.com/cities/us/or/winchester/;Winchester;winchester
+http://www.meetup.com/cities/us/or/winston/;Winston;winston
+http://www.meetup.com/cities/us/or/wolf_creek/;Wolf Creek;wolf_creek
+http://www.meetup.com/cities/us/or/woodburn/;Woodburn;woodburn
+http://www.meetup.com/cities/us/or/yachats/;Yachats;yachats
+http://www.meetup.com/cities/us/or/yamhill/;Yamhill;yamhill
+http://www.meetup.com/cities/us/or/yoncalla/;Yoncalla;yoncalla

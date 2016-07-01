@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/us/ut/alpine/;Alpine;alpine
+http://www.meetup.com/cities/us/ut/american_fork/;American Fork;american_fork
+http://www.meetup.com/cities/us/ut/bountiful/;Bountiful;bountiful
+http://www.meetup.com/cities/us/ut/brigham_city/;Brigham City;brigham_city
+http://www.meetup.com/cities/us/ut/cedar_city/;Cedar City;cedar_city
+http://www.meetup.com/cities/us/ut/centerville/;Centerville;centerville
+http://www.meetup.com/cities/us/ut/clearfield/;Clearfield;clearfield
+http://www.meetup.com/cities/us/ut/draper/;Draper;draper
+http://www.meetup.com/cities/us/ut/eagle_mountain/;Eagle Mountain;eagle_mountain
+http://www.meetup.com/cities/us/ut/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/ut/grantsville/;Grantsville;grantsville
+http://www.meetup.com/cities/us/ut/heber_city/;Heber City;heber_city
+http://www.meetup.com/cities/us/ut/herriman/;Herriman;herriman
+http://www.meetup.com/cities/us/ut/hill_afb/;Hill AFB;hill_afb
+http://www.meetup.com/cities/us/ut/hurricane/;Hurricane;hurricane
+http://www.meetup.com/cities/us/ut/kaysville/;Kaysville;kaysville
+http://www.meetup.com/cities/us/ut/layton/;Layton;layton
+http://www.meetup.com/cities/us/ut/lehi/;Lehi;lehi
+http://www.meetup.com/cities/us/ut/lindon/;Lindon;lindon
+http://www.meetup.com/cities/us/ut/logan/;Logan;logan
+http://www.meetup.com/cities/us/ut/magna/;Magna;magna
+http://www.meetup.com/cities/us/ut/mapleton/;Mapleton;mapleton
+http://www.meetup.com/cities/us/ut/midvale/;Midvale;midvale
+http://www.meetup.com/cities/us/ut/moab/;Moab;moab
+http://www.meetup.com/cities/us/ut/north_salt_lake/;North Salt Lake;north_salt_lake
+http://www.meetup.com/cities/us/ut/ogden/;Ogden;ogden
+http://www.meetup.com/cities/us/ut/orem/;Orem;orem
+http://www.meetup.com/cities/us/ut/park_city/;Park City;park_city
+http://www.meetup.com/cities/us/ut/payson/;Payson;payson
+http://www.meetup.com/cities/us/ut/pleasant_grove/;Pleasant Grove;pleasant_grove
+http://www.meetup.com/cities/us/ut/price/;Price;price
+http://www.meetup.com/cities/us/ut/provo/;Provo;provo
+http://www.meetup.com/cities/us/ut/riverton/;Riverton;riverton
+http://www.meetup.com/cities/us/ut/roy/;Roy;roy
+http://www.meetup.com/cities/us/ut/saint_george/;Saint George;saint_george
+http://www.meetup.com/cities/us/ut/salem/;Salem;salem
+http://www.meetup.com/cities/us/ut/salt_lake_city/;Salt Lake City;salt_lake_city
+http://www.meetup.com/cities/us/ut/sandy/;Sandy;sandy
+http://www.meetup.com/cities/us/ut/saratoga_springs/;Saratoga Springs;saratoga_springs
+http://www.meetup.com/cities/us/ut/smithfield/;Smithfield;smithfield
+http://www.meetup.com/cities/us/ut/south_jordan/;South Jordan;south_jordan
+http://www.meetup.com/cities/us/ut/spanish_fork/;Spanish Fork;spanish_fork
+http://www.meetup.com/cities/us/ut/springville/;Springville;springville
+http://www.meetup.com/cities/us/ut/syracuse/;Syracuse;syracuse
+http://www.meetup.com/cities/us/ut/tooele/;Tooele;tooele
+http://www.meetup.com/cities/us/ut/vernal/;Vernal;vernal
+http://www.meetup.com/cities/us/ut/veyo/;Veyo;veyo
+http://www.meetup.com/cities/us/ut/washington/;Washington;washington
+http://www.meetup.com/cities/us/ut/west_jordan/;West Jordan;west_jordan
+http://www.meetup.com/cities/us/ut/woods_cross/;Woods Cross;woods_cross

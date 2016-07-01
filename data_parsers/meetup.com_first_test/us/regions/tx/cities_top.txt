@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/us/tx/abilene/;Abilene;abilene
+http://www.meetup.com/cities/us/tx/addison/;Addison;addison
+http://www.meetup.com/cities/us/tx/allen/;Allen;allen
+http://www.meetup.com/cities/us/tx/amarillo/;Amarillo;amarillo
+http://www.meetup.com/cities/us/tx/anthony/;Anthony;anthony
+http://www.meetup.com/cities/us/tx/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/tx/austin/;Austin;austin
+http://www.meetup.com/cities/us/tx/beaumont/;Beaumont;beaumont
+http://www.meetup.com/cities/us/tx/bryan/;Bryan;bryan
+http://www.meetup.com/cities/us/tx/carrollton/;Carrollton;carrollton
+http://www.meetup.com/cities/us/tx/cedar_park/;Cedar Park;cedar_park
+http://www.meetup.com/cities/us/tx/college_station/;College Station;college_station
+http://www.meetup.com/cities/us/tx/conroe/;Conroe;conroe
+http://www.meetup.com/cities/us/tx/corpus_christi/;Corpus Christi;corpus_christi
+http://www.meetup.com/cities/us/tx/cypress/;Cypress;cypress
+http://www.meetup.com/cities/us/tx/dallas/;Dallas;dallas
+http://www.meetup.com/cities/us/tx/denton/;Denton;denton
+http://www.meetup.com/cities/us/tx/el_paso/;El Paso;el_paso
+http://www.meetup.com/cities/us/tx/euless/;Euless;euless
+http://www.meetup.com/cities/us/tx/flower_mound/;Flower Mound;flower_mound
+http://www.meetup.com/cities/us/tx/fort_worth/;Fort Worth;fort_worth
+http://www.meetup.com/cities/us/tx/frisco/;Frisco;frisco
+http://www.meetup.com/cities/us/tx/garland/;Garland;garland
+http://www.meetup.com/cities/us/tx/grand_prairie/;Grand Prairie;grand_prairie
+http://www.meetup.com/cities/us/tx/grapevine/;Grapevine;grapevine
+http://www.meetup.com/cities/us/tx/houston/;Houston;houston
+http://www.meetup.com/cities/us/tx/humble/;Humble;humble
+http://www.meetup.com/cities/us/tx/irving/;Irving;irving
+http://www.meetup.com/cities/us/tx/katy/;Katy;katy
+http://www.meetup.com/cities/us/tx/keller/;Keller;keller
+http://www.meetup.com/cities/us/tx/killeen/;Killeen;killeen
+http://www.meetup.com/cities/us/tx/league_city/;League City;league_city
+http://www.meetup.com/cities/us/tx/leander/;Leander;leander
+http://www.meetup.com/cities/us/tx/lewisville/;Lewisville;lewisville
+http://www.meetup.com/cities/us/tx/lubbock/;Lubbock;lubbock
+http://www.meetup.com/cities/us/tx/mansfield/;Mansfield;mansfield
+http://www.meetup.com/cities/us/tx/mcallen/;McAllen;mcallen
+http://www.meetup.com/cities/us/tx/mckinney/;McKinney;mckinney
+http://www.meetup.com/cities/us/tx/mesquite/;Mesquite;mesquite
+http://www.meetup.com/cities/us/tx/north_richland_hills/;North Richland Hills;north_richland_hills
+http://www.meetup.com/cities/us/tx/pearland/;Pearland;pearland
+http://www.meetup.com/cities/us/tx/pflugerville/;Pflugerville;pflugerville
+http://www.meetup.com/cities/us/tx/plano/;Plano;plano
+http://www.meetup.com/cities/us/tx/richardson/;Richardson;richardson
+http://www.meetup.com/cities/us/tx/round_rock/;Round Rock;round_rock
+http://www.meetup.com/cities/us/tx/san_antonio/;San Antonio;san_antonio
+http://www.meetup.com/cities/us/tx/spring/;Spring;spring
+http://www.meetup.com/cities/us/tx/sugar_land/;Sugar Land;sugar_land
+http://www.meetup.com/cities/us/tx/temple/;Temple;temple
+http://www.meetup.com/cities/us/tx/tyler/;Tyler;tyler

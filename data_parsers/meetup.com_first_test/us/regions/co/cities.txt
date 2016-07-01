@@ -1,0 +1,401 @@
+http://www.meetup.com/cities/us/co/agate/;Agate;agate
+http://www.meetup.com/cities/us/co/aguilar/;Aguilar;aguilar
+http://www.meetup.com/cities/us/co/akron/;Akron;akron
+http://www.meetup.com/cities/us/co/alamosa/;Alamosa;alamosa
+http://www.meetup.com/cities/us/co/allenspark/;Allenspark;allenspark
+http://www.meetup.com/cities/us/co/alma/;Alma;alma
+http://www.meetup.com/cities/us/co/almont/;Almont;almont
+http://www.meetup.com/cities/us/co/amherst/;Amherst;amherst
+http://www.meetup.com/cities/us/co/anton/;Anton;anton
+http://www.meetup.com/cities/us/co/antonito/;Antonito;antonito
+http://www.meetup.com/cities/us/co/arapahoe/;Arapahoe;arapahoe
+http://www.meetup.com/cities/us/co/arboles/;Arboles;arboles
+http://www.meetup.com/cities/us/co/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/co/arriba/;Arriba;arriba
+http://www.meetup.com/cities/us/co/arvada/;Arvada;arvada
+http://www.meetup.com/cities/us/co/aspen/;Aspen;aspen
+http://www.meetup.com/cities/us/co/atwood/;Atwood;atwood
+http://www.meetup.com/cities/us/co/ault/;Ault;ault
+http://www.meetup.com/cities/us/co/aurora/;Aurora;aurora
+http://www.meetup.com/cities/us/co/austin/;Austin;austin
+http://www.meetup.com/cities/us/co/avon/;Avon;avon
+http://www.meetup.com/cities/us/co/avondale/;Avondale;avondale
+http://www.meetup.com/cities/us/co/bailey/;Bailey;bailey
+http://www.meetup.com/cities/us/co/basalt/;Basalt;basalt
+http://www.meetup.com/cities/us/co/battlement_mesa/;Battlement Mesa;battlement_mesa
+http://www.meetup.com/cities/us/co/bayfield/;Bayfield;bayfield
+http://www.meetup.com/cities/us/co/bedrock/;Bedrock;bedrock
+http://www.meetup.com/cities/us/co/bellvue/;Bellvue;bellvue
+http://www.meetup.com/cities/us/co/bennett/;Bennett;bennett
+http://www.meetup.com/cities/us/co/berthoud/;Berthoud;berthoud
+http://www.meetup.com/cities/us/co/bethune/;Bethune;bethune
+http://www.meetup.com/cities/us/co/beulah/;Beulah;beulah
+http://www.meetup.com/cities/us/co/black_hawk/;Black Hawk;black_hawk
+http://www.meetup.com/cities/us/co/blanca/;Blanca;blanca
+http://www.meetup.com/cities/us/co/boncarbo/;Boncarbo;boncarbo
+http://www.meetup.com/cities/us/co/bond/;Bond;bond
+http://www.meetup.com/cities/us/co/boone/;Boone;boone
+http://www.meetup.com/cities/us/co/boulder/;Boulder;boulder
+http://www.meetup.com/cities/us/co/branson/;Branson;branson
+http://www.meetup.com/cities/us/co/breckenridge/;Breckenridge;breckenridge
+http://www.meetup.com/cities/us/co/briggsdale/;Briggsdale;briggsdale
+http://www.meetup.com/cities/us/co/brighton/;Brighton;brighton
+http://www.meetup.com/cities/us/co/broomfield/;Broomfield;broomfield
+http://www.meetup.com/cities/us/co/brush/;Brush;brush
+http://www.meetup.com/cities/us/co/buena_vista/;Buena Vista;buena_vista
+http://www.meetup.com/cities/us/co/buffalo_creek/;Buffalo Creek;buffalo_creek
+http://www.meetup.com/cities/us/co/burlington/;Burlington;burlington
+http://www.meetup.com/cities/us/co/burns/;Burns;burns
+http://www.meetup.com/cities/us/co/byers/;Byers;byers
+http://www.meetup.com/cities/us/co/cahone/;Cahone;cahone
+http://www.meetup.com/cities/us/co/calhan/;Calhan;calhan
+http://www.meetup.com/cities/us/co/campo/;Campo;campo
+http://www.meetup.com/cities/us/co/canon_city/;Canon City;canon_city
+http://www.meetup.com/cities/us/co/capulin/;Capulin;capulin
+http://www.meetup.com/cities/us/co/carbondale/;Carbondale;carbondale
+http://www.meetup.com/cities/us/co/carr/;Carr;carr
+http://www.meetup.com/cities/us/co/cascade/;Cascade;cascade
+http://www.meetup.com/cities/us/co/castle_rock/;Castle Rock;castle_rock
+http://www.meetup.com/cities/us/co/cedaredge/;Cedaredge;cedaredge
+http://www.meetup.com/cities/us/co/center/;Center;center
+http://www.meetup.com/cities/us/co/central_city/;Central City;central_city
+http://www.meetup.com/cities/us/co/chama/;Chama;chama
+http://www.meetup.com/cities/us/co/cheraw/;Cheraw;cheraw
+http://www.meetup.com/cities/us/co/cheyenne_wells/;Cheyenne Wells;cheyenne_wells
+http://www.meetup.com/cities/us/co/chimney_rock/;Chimney Rock;chimney_rock
+http://www.meetup.com/cities/us/co/chromo/;Chromo;chromo
+http://www.meetup.com/cities/us/co/cimarron/;Cimarron;cimarron
+http://www.meetup.com/cities/us/co/clark/;Clark;clark
+http://www.meetup.com/cities/us/co/clifton/;Clifton;clifton
+http://www.meetup.com/cities/us/co/climax/;Climax;climax
+http://www.meetup.com/cities/us/co/coal_creek/;Coal Creek;coal_creek
+http://www.meetup.com/cities/us/co/coaldale/;Coaldale;coaldale
+http://www.meetup.com/cities/us/co/coalmont/;Coalmont;coalmont
+http://www.meetup.com/cities/us/co/collbran/;Collbran;collbran
+http://www.meetup.com/cities/us/co/colorado_city/;Colorado City;colorado_city
+http://www.meetup.com/cities/us/co/colorado_springs/;Colorado Springs;colorado_springs
+http://www.meetup.com/cities/us/co/commerce_city/;Commerce City;commerce_city
+http://www.meetup.com/cities/us/co/como/;Como;como
+http://www.meetup.com/cities/us/co/conejos/;Conejos;conejos
+http://www.meetup.com/cities/us/co/conifer/;Conifer;conifer
+http://www.meetup.com/cities/us/co/cope/;Cope;cope
+http://www.meetup.com/cities/us/co/cortez/;Cortez;cortez
+http://www.meetup.com/cities/us/co/cory/;Cory;cory
+http://www.meetup.com/cities/us/co/cotopaxi/;Cotopaxi;cotopaxi
+http://www.meetup.com/cities/us/co/cowdrey/;Cowdrey;cowdrey
+http://www.meetup.com/cities/us/co/craig/;Craig;craig
+http://www.meetup.com/cities/us/co/crawford/;Crawford;crawford
+http://www.meetup.com/cities/us/co/creede/;Creede;creede
+http://www.meetup.com/cities/us/co/crested_butte/;Crested Butte;crested_butte
+http://www.meetup.com/cities/us/co/crestone/;Crestone;crestone
+http://www.meetup.com/cities/us/co/cripple_creek/;Cripple Creek;cripple_creek
+http://www.meetup.com/cities/us/co/crook/;Crook;crook
+http://www.meetup.com/cities/us/co/crowley/;Crowley;crowley
+http://www.meetup.com/cities/us/co/dacono/;Dacono;dacono
+http://www.meetup.com/cities/us/co/de_beque/;De Beque;de_beque
+http://www.meetup.com/cities/us/co/deer_trail/;Deer Trail;deer_trail
+http://www.meetup.com/cities/us/co/del_norte/;Del Norte;del_norte
+http://www.meetup.com/cities/us/co/delta/;Delta;delta
+http://www.meetup.com/cities/us/co/denver/;Denver;denver
+http://www.meetup.com/cities/us/co/dillon/;Dillon;dillon
+http://www.meetup.com/cities/us/co/dinosaur/;Dinosaur;dinosaur
+http://www.meetup.com/cities/us/co/divide/;Divide;divide
+http://www.meetup.com/cities/us/co/dolores/;Dolores;dolores
+http://www.meetup.com/cities/us/co/dove_creek/;Dove Creek;dove_creek
+http://www.meetup.com/cities/us/co/drake/;Drake;drake
+http://www.meetup.com/cities/us/co/dumont/;Dumont;dumont
+http://www.meetup.com/cities/us/co/dupont/;Dupont;dupont
+http://www.meetup.com/cities/us/co/durango/;Durango;durango
+http://www.meetup.com/cities/us/co/eads/;Eads;eads
+http://www.meetup.com/cities/us/co/eagle/;Eagle;eagle
+http://www.meetup.com/cities/us/co/eastlake/;Eastlake;eastlake
+http://www.meetup.com/cities/us/co/eaton/;Eaton;eaton
+http://www.meetup.com/cities/us/co/eckert/;Eckert;eckert
+http://www.meetup.com/cities/us/co/eckley/;Eckley;eckley
+http://www.meetup.com/cities/us/co/edwards/;Edwards;edwards
+http://www.meetup.com/cities/us/co/egnar/;Egnar;egnar
+http://www.meetup.com/cities/us/co/elbert/;Elbert;elbert
+http://www.meetup.com/cities/us/co/eldorado_springs/;Eldorado Springs;eldorado_springs
+http://www.meetup.com/cities/us/co/elizabeth/;Elizabeth;elizabeth
+http://www.meetup.com/cities/us/co/empire/;Empire;empire
+http://www.meetup.com/cities/us/co/englewood/;Englewood;englewood
+http://www.meetup.com/cities/us/co/erie/;Erie;erie
+http://www.meetup.com/cities/us/co/estes_park/;Estes Park;estes_park
+http://www.meetup.com/cities/us/co/evans/;Evans;evans
+http://www.meetup.com/cities/us/co/evergreen/;Evergreen;evergreen
+http://www.meetup.com/cities/us/co/fairplay/;Fairplay;fairplay
+http://www.meetup.com/cities/us/co/firestone/;Firestone;firestone
+http://www.meetup.com/cities/us/co/flagler/;Flagler;flagler
+http://www.meetup.com/cities/us/co/fleming/;Fleming;fleming
+http://www.meetup.com/cities/us/co/florence/;Florence;florence
+http://www.meetup.com/cities/us/co/florissant/;Florissant;florissant
+http://www.meetup.com/cities/us/co/fort_collins/;Fort Collins;fort_collins
+http://www.meetup.com/cities/us/co/fort_garland/;Fort Garland;fort_garland
+http://www.meetup.com/cities/us/co/fort_lupton/;Fort Lupton;fort_lupton
+http://www.meetup.com/cities/us/co/fort_lyon/;Fort Lyon;fort_lyon
+http://www.meetup.com/cities/us/co/fort_morgan/;Fort Morgan;fort_morgan
+http://www.meetup.com/cities/us/co/fountain/;Fountain;fountain
+http://www.meetup.com/cities/us/co/fowler/;Fowler;fowler
+http://www.meetup.com/cities/us/co/franktown/;Franktown;franktown
+http://www.meetup.com/cities/us/co/fraser/;Fraser;fraser
+http://www.meetup.com/cities/us/co/frederick/;Frederick;frederick
+http://www.meetup.com/cities/us/co/frisco/;Frisco;frisco
+http://www.meetup.com/cities/us/co/fruita/;Fruita;fruita
+http://www.meetup.com/cities/us/co/galeton/;Galeton;galeton
+http://www.meetup.com/cities/us/co/garcia/;Garcia;garcia
+http://www.meetup.com/cities/us/co/gardner/;Gardner;gardner
+http://www.meetup.com/cities/us/co/gateway/;Gateway;gateway
+http://www.meetup.com/cities/us/co/genoa/;Genoa;genoa
+http://www.meetup.com/cities/us/co/georgetown/;Georgetown;georgetown
+http://www.meetup.com/cities/us/co/gilcrest/;Gilcrest;gilcrest
+http://www.meetup.com/cities/us/co/gill/;Gill;gill
+http://www.meetup.com/cities/us/co/glade_park/;Glade Park;glade_park
+http://www.meetup.com/cities/us/co/glen_haven/;Glen Haven;glen_haven
+http://www.meetup.com/cities/us/co/glenwood_springs/;Glenwood Springs;glenwood_springs
+http://www.meetup.com/cities/us/co/golden/;Golden;golden
+http://www.meetup.com/cities/us/co/granada/;Granada;granada
+http://www.meetup.com/cities/us/co/granby/;Granby;granby
+http://www.meetup.com/cities/us/co/grand_junction/;Grand Junction;grand_junction
+http://www.meetup.com/cities/us/co/grand_lake/;Grand Lake;grand_lake
+http://www.meetup.com/cities/us/co/granite/;Granite;granite
+http://www.meetup.com/cities/us/co/grant/;Grant;grant
+http://www.meetup.com/cities/us/co/greeley/;Greeley;greeley
+http://www.meetup.com/cities/us/co/green_mountain_falls/;Green Mountain Falls;green_mountain_falls
+http://www.meetup.com/cities/us/co/grover/;Grover;grover
+http://www.meetup.com/cities/us/co/guffey/;Guffey;guffey
+http://www.meetup.com/cities/us/co/gunnison/;Gunnison;gunnison
+http://www.meetup.com/cities/us/co/gypsum/;Gypsum;gypsum
+http://www.meetup.com/cities/us/co/hamilton/;Hamilton;hamilton
+http://www.meetup.com/cities/us/co/hartman/;Hartman;hartman
+http://www.meetup.com/cities/us/co/hartsel/;Hartsel;hartsel
+http://www.meetup.com/cities/us/co/hasty/;Hasty;hasty
+http://www.meetup.com/cities/us/co/haswell/;Haswell;haswell
+http://www.meetup.com/cities/us/co/haxtun/;Haxtun;haxtun
+http://www.meetup.com/cities/us/co/hayden/;Hayden;hayden
+http://www.meetup.com/cities/us/co/henderson/;Henderson;henderson
+http://www.meetup.com/cities/us/co/hereford/;Hereford;hereford
+http://www.meetup.com/cities/us/co/hesperus/;Hesperus;hesperus
+http://www.meetup.com/cities/us/co/hillrose/;Hillrose;hillrose
+http://www.meetup.com/cities/us/co/hillside/;Hillside;hillside
+http://www.meetup.com/cities/us/co/hoehne/;Hoehne;hoehne
+http://www.meetup.com/cities/us/co/holly/;Holly;holly
+http://www.meetup.com/cities/us/co/holyoke/;Holyoke;holyoke
+http://www.meetup.com/cities/us/co/homelake/;Homelake;homelake
+http://www.meetup.com/cities/us/co/hooper/;Hooper;hooper
+http://www.meetup.com/cities/us/co/hotchkiss/;Hotchkiss;hotchkiss
+http://www.meetup.com/cities/us/co/hot_sulphur_springs/;Hot Sulphur Springs;hot_sulphur_springs
+http://www.meetup.com/cities/us/co/howard/;Howard;howard
+http://www.meetup.com/cities/us/co/hudson/;Hudson;hudson
+http://www.meetup.com/cities/us/co/hugo/;Hugo;hugo
+http://www.meetup.com/cities/us/co/hygiene/;Hygiene;hygiene
+http://www.meetup.com/cities/us/co/idaho_springs/;Idaho Springs;idaho_springs
+http://www.meetup.com/cities/us/co/idalia/;Idalia;idalia
+http://www.meetup.com/cities/us/co/idledale/;Idledale;idledale
+http://www.meetup.com/cities/us/co/ignacio/;Ignacio;ignacio
+http://www.meetup.com/cities/us/co/iliff/;Iliff;iliff
+http://www.meetup.com/cities/us/co/indian_hills/;Indian Hills;indian_hills
+http://www.meetup.com/cities/us/co/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/co/jaroso/;Jaroso;jaroso
+http://www.meetup.com/cities/us/co/jefferson/;Jefferson;jefferson
+http://www.meetup.com/cities/us/co/joes/;Joes;joes
+http://www.meetup.com/cities/us/co/johnstown/;Johnstown;johnstown
+http://www.meetup.com/cities/us/co/julesburg/;Julesburg;julesburg
+http://www.meetup.com/cities/us/co/karval/;Karval;karval
+http://www.meetup.com/cities/us/co/keenesburg/;Keenesburg;keenesburg
+http://www.meetup.com/cities/us/co/kersey/;Kersey;kersey
+http://www.meetup.com/cities/us/co/kim/;Kim;kim
+http://www.meetup.com/cities/us/co/kiowa/;Kiowa;kiowa
+http://www.meetup.com/cities/us/co/kirk/;Kirk;kirk
+http://www.meetup.com/cities/us/co/kit_carson/;Kit Carson;kit_carson
+http://www.meetup.com/cities/us/co/kittredge/;Kittredge;kittredge
+http://www.meetup.com/cities/us/co/kremmling/;Kremmling;kremmling
+http://www.meetup.com/cities/us/co/lafayette/;Lafayette;lafayette
+http://www.meetup.com/cities/us/co/la_jara/;La Jara;la_jara
+http://www.meetup.com/cities/us/co/la_junta/;La Junta;la_junta
+http://www.meetup.com/cities/us/co/lake_city/;Lake City;lake_city
+http://www.meetup.com/cities/us/co/lake_george/;Lake George;lake_george
+http://www.meetup.com/cities/us/co/lamar/;Lamar;lamar
+http://www.meetup.com/cities/us/co/laporte/;Laporte;laporte
+http://www.meetup.com/cities/us/co/larkspur/;Larkspur;larkspur
+http://www.meetup.com/cities/us/co/la_salle/;La Salle;la_salle
+http://www.meetup.com/cities/us/co/las_animas/;Las Animas;las_animas
+http://www.meetup.com/cities/us/co/la_veta/;La Veta;la_veta
+http://www.meetup.com/cities/us/co/lazear/;Lazear;lazear
+http://www.meetup.com/cities/us/co/leadville/;Leadville;leadville
+http://www.meetup.com/cities/us/co/lewis/;Lewis;lewis
+http://www.meetup.com/cities/us/co/limon/;Limon;limon
+http://www.meetup.com/cities/us/co/lindon/;Lindon;lindon
+http://www.meetup.com/cities/us/co/littleton/;Littleton;littleton
+http://www.meetup.com/cities/us/co/livermore/;Livermore;livermore
+http://www.meetup.com/cities/us/co/log_lane_village/;Log Lane Village;log_lane_village
+http://www.meetup.com/cities/us/co/loma/;Loma;loma
+http://www.meetup.com/cities/us/co/lone_tree/;Lone Tree;lone_tree
+http://www.meetup.com/cities/us/co/longmont/;Longmont;longmont
+http://www.meetup.com/cities/us/co/louisville/;Louisville;louisville
+http://www.meetup.com/cities/us/co/louviers/;Louviers;louviers
+http://www.meetup.com/cities/us/co/loveland/;Loveland;loveland
+http://www.meetup.com/cities/us/co/lucerne/;Lucerne;lucerne
+http://www.meetup.com/cities/us/co/lyons/;Lyons;lyons
+http://www.meetup.com/cities/us/co/mack/;Mack;mack
+http://www.meetup.com/cities/us/co/manassa/;Manassa;manassa
+http://www.meetup.com/cities/us/co/mancos/;Mancos;mancos
+http://www.meetup.com/cities/us/co/manitou_springs/;Manitou Springs;manitou_springs
+http://www.meetup.com/cities/us/co/manzanola/;Manzanola;manzanola
+http://www.meetup.com/cities/us/co/marvel/;Marvel;marvel
+http://www.meetup.com/cities/us/co/masonville/;Masonville;masonville
+http://www.meetup.com/cities/us/co/matheson/;Matheson;matheson
+http://www.meetup.com/cities/us/co/maybell/;Maybell;maybell
+http://www.meetup.com/cities/us/co/mc_clave/;Mc Clave;mc_clave
+http://www.meetup.com/cities/us/co/mc_coy/;Mc Coy;mc_coy
+http://www.meetup.com/cities/us/co/mead/;Mead;mead
+http://www.meetup.com/cities/us/co/meeker/;Meeker;meeker
+http://www.meetup.com/cities/us/co/meredith/;Meredith;meredith
+http://www.meetup.com/cities/us/co/merino/;Merino;merino
+http://www.meetup.com/cities/us/co/mesa/;Mesa;mesa
+http://www.meetup.com/cities/us/co/mesa_verde_national_park/;Mesa Verde National Park;mesa_verde_national_park
+http://www.meetup.com/cities/us/co/milliken/;Milliken;milliken
+http://www.meetup.com/cities/us/co/minturn/;Minturn;minturn
+http://www.meetup.com/cities/us/co/model/;Model;model
+http://www.meetup.com/cities/us/co/moffat/;Moffat;moffat
+http://www.meetup.com/cities/us/co/molina/;Molina;molina
+http://www.meetup.com/cities/us/co/monarch/;Monarch;monarch
+http://www.meetup.com/cities/us/co/monte_vista/;Monte Vista;monte_vista
+http://www.meetup.com/cities/us/co/montrose/;Montrose;montrose
+http://www.meetup.com/cities/us/co/monument/;Monument;monument
+http://www.meetup.com/cities/us/co/morrison/;Morrison;morrison
+http://www.meetup.com/cities/us/co/mosca/;Mosca;mosca
+http://www.meetup.com/cities/us/co/nathrop/;Nathrop;nathrop
+http://www.meetup.com/cities/us/co/naturita/;Naturita;naturita
+http://www.meetup.com/cities/us/co/nederland/;Nederland;nederland
+http://www.meetup.com/cities/us/co/new_castle/;New Castle;new_castle
+http://www.meetup.com/cities/us/co/new_raymer/;New Raymer;new_raymer
+http://www.meetup.com/cities/us/co/niwot/;Niwot;niwot
+http://www.meetup.com/cities/us/co/norwood/;Norwood;norwood
+http://www.meetup.com/cities/us/co/nucla/;Nucla;nucla
+http://www.meetup.com/cities/us/co/nunn/;Nunn;nunn
+http://www.meetup.com/cities/us/co/oak_creek/;Oak Creek;oak_creek
+http://www.meetup.com/cities/us/co/ohio_city/;Ohio City;ohio_city
+http://www.meetup.com/cities/us/co/olathe/;Olathe;olathe
+http://www.meetup.com/cities/us/co/olney_springs/;Olney Springs;olney_springs
+http://www.meetup.com/cities/us/co/ophir/;Ophir;ophir
+http://www.meetup.com/cities/us/co/orchard/;Orchard;orchard
+http://www.meetup.com/cities/us/co/ordway/;Ordway;ordway
+http://www.meetup.com/cities/us/co/otis/;Otis;otis
+http://www.meetup.com/cities/us/co/ouray/;Ouray;ouray
+http://www.meetup.com/cities/us/co/ovid/;Ovid;ovid
+http://www.meetup.com/cities/us/co/padroni/;Padroni;padroni
+http://www.meetup.com/cities/us/co/pagosa_springs/;Pagosa Springs;pagosa_springs
+http://www.meetup.com/cities/us/co/palisade/;Palisade;palisade
+http://www.meetup.com/cities/us/co/palmer_lake/;Palmer Lake;palmer_lake
+http://www.meetup.com/cities/us/co/paoli/;Paoli;paoli
+http://www.meetup.com/cities/us/co/paonia/;Paonia;paonia
+http://www.meetup.com/cities/us/co/parachute/;Parachute;parachute
+http://www.meetup.com/cities/us/co/paradox/;Paradox;paradox
+http://www.meetup.com/cities/us/co/parker/;Parker;parker
+http://www.meetup.com/cities/us/co/parlin/;Parlin;parlin
+http://www.meetup.com/cities/us/co/parshall/;Parshall;parshall
+http://www.meetup.com/cities/us/co/peetz/;Peetz;peetz
+http://www.meetup.com/cities/us/co/penrose/;Penrose;penrose
+http://www.meetup.com/cities/us/co/peyton/;Peyton;peyton
+http://www.meetup.com/cities/us/co/phippsburg/;Phippsburg;phippsburg
+http://www.meetup.com/cities/us/co/pierce/;Pierce;pierce
+http://www.meetup.com/cities/us/co/pine/;Pine;pine
+http://www.meetup.com/cities/us/co/pinecliffe/;Pinecliffe;pinecliffe
+http://www.meetup.com/cities/us/co/pitkin/;Pitkin;pitkin
+http://www.meetup.com/cities/us/co/placerville/;Placerville;placerville
+http://www.meetup.com/cities/us/co/platteville/;Platteville;platteville
+http://www.meetup.com/cities/us/co/pleasant_view/;Pleasant View;pleasant_view
+http://www.meetup.com/cities/us/co/poncha_springs/;Poncha Springs;poncha_springs
+http://www.meetup.com/cities/us/co/powderhorn/;Powderhorn;powderhorn
+http://www.meetup.com/cities/us/co/pritchett/;Pritchett;pritchett
+http://www.meetup.com/cities/us/co/pueblo/;Pueblo;pueblo
+http://www.meetup.com/cities/us/co/ramah/;Ramah;ramah
+http://www.meetup.com/cities/us/co/rand/;Rand;rand
+http://www.meetup.com/cities/us/co/rangely/;Rangely;rangely
+http://www.meetup.com/cities/us/co/red_cliff/;Red Cliff;red_cliff
+http://www.meetup.com/cities/us/co/red_feather_lakes/;Red Feather Lakes;red_feather_lakes
+http://www.meetup.com/cities/us/co/redvale/;Redvale;redvale
+http://www.meetup.com/cities/us/co/rico/;Rico;rico
+http://www.meetup.com/cities/us/co/ridgway/;Ridgway;ridgway
+http://www.meetup.com/cities/us/co/rifle/;Rifle;rifle
+http://www.meetup.com/cities/us/co/rockvale/;Rockvale;rockvale
+http://www.meetup.com/cities/us/co/rocky_ford/;Rocky Ford;rocky_ford
+http://www.meetup.com/cities/us/co/roggen/;Roggen;roggen
+http://www.meetup.com/cities/us/co/rollinsville/;Rollinsville;rollinsville
+http://www.meetup.com/cities/us/co/romeo/;Romeo;romeo
+http://www.meetup.com/cities/us/co/rush/;Rush;rush
+http://www.meetup.com/cities/us/co/rye/;Rye;rye
+http://www.meetup.com/cities/us/co/saguache/;Saguache;saguache
+http://www.meetup.com/cities/us/co/salida/;Salida;salida
+http://www.meetup.com/cities/us/co/sanford/;Sanford;sanford
+http://www.meetup.com/cities/us/co/san_luis/;San Luis;san_luis
+http://www.meetup.com/cities/us/co/san_pablo/;San Pablo;san_pablo
+http://www.meetup.com/cities/us/co/sargents/;Sargents;sargents
+http://www.meetup.com/cities/us/co/sedalia/;Sedalia;sedalia
+http://www.meetup.com/cities/us/co/sedgwick/;Sedgwick;sedgwick
+http://www.meetup.com/cities/us/co/seibert/;Seibert;seibert
+http://www.meetup.com/cities/us/co/severance/;Severance;severance
+http://www.meetup.com/cities/us/co/shawnee/;Shawnee;shawnee
+http://www.meetup.com/cities/us/co/sheridan_lake/;Sheridan Lake;sheridan_lake
+http://www.meetup.com/cities/us/co/silt/;Silt;silt
+http://www.meetup.com/cities/us/co/silver_plume/;Silver Plume;silver_plume
+http://www.meetup.com/cities/us/co/silverthorne/;Silverthorne;silverthorne
+http://www.meetup.com/cities/us/co/silverton/;Silverton;silverton
+http://www.meetup.com/cities/us/co/simla/;Simla;simla
+http://www.meetup.com/cities/us/co/slater/;Slater;slater
+http://www.meetup.com/cities/us/co/snowmass/;Snowmass;snowmass
+http://www.meetup.com/cities/us/co/snowmass_village/;Snowmass Village;snowmass_village
+http://www.meetup.com/cities/us/co/snyder/;Snyder;snyder
+http://www.meetup.com/cities/us/co/somerset/;Somerset;somerset
+http://www.meetup.com/cities/us/co/south_fork/;South Fork;south_fork
+http://www.meetup.com/cities/us/co/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/co/steamboat_springs/;Steamboat Springs;steamboat_springs
+http://www.meetup.com/cities/us/co/sterling/;Sterling;sterling
+http://www.meetup.com/cities/us/co/stoneham/;Stoneham;stoneham
+http://www.meetup.com/cities/us/co/strasburg/;Strasburg;strasburg
+http://www.meetup.com/cities/us/co/stratton/;Stratton;stratton
+http://www.meetup.com/cities/us/co/sugar_city/;Sugar City;sugar_city
+http://www.meetup.com/cities/us/co/swink/;Swink;swink
+http://www.meetup.com/cities/us/co/tabernash/;Tabernash;tabernash
+http://www.meetup.com/cities/us/co/telluride/;Telluride;telluride
+http://www.meetup.com/cities/us/co/timnath/;Timnath;timnath
+http://www.meetup.com/cities/us/co/toponas/;Toponas;toponas
+http://www.meetup.com/cities/us/co/towaoc/;Towaoc;towaoc
+http://www.meetup.com/cities/us/co/trinchera/;Trinchera;trinchera
+http://www.meetup.com/cities/us/co/trinidad/;Trinidad;trinidad
+http://www.meetup.com/cities/us/co/twin_lakes/;Twin Lakes;twin_lakes
+http://www.meetup.com/cities/us/co/two_buttes/;Two Buttes;two_buttes
+http://www.meetup.com/cities/us/co/u_s_a_f_academy/;U S A F Academy;u_s_a_f_academy
+http://www.meetup.com/cities/us/co/vail/;Vail;vail
+http://www.meetup.com/cities/us/co/vernon/;Vernon;vernon
+http://www.meetup.com/cities/us/co/victor/;Victor;victor
+http://www.meetup.com/cities/us/co/vilas/;Vilas;vilas
+http://www.meetup.com/cities/us/co/villa_grove/;Villa Grove;villa_grove
+http://www.meetup.com/cities/us/co/vona/;Vona;vona
+http://www.meetup.com/cities/us/co/walden/;Walden;walden
+http://www.meetup.com/cities/us/co/walsenburg/;Walsenburg;walsenburg
+http://www.meetup.com/cities/us/co/walsh/;Walsh;walsh
+http://www.meetup.com/cities/us/co/ward/;Ward;ward
+http://www.meetup.com/cities/us/co/watkins/;Watkins;watkins
+http://www.meetup.com/cities/us/co/weldona/;Weldona;weldona
+http://www.meetup.com/cities/us/co/wellington/;Wellington;wellington
+http://www.meetup.com/cities/us/co/westcliffe/;Westcliffe;westcliffe
+http://www.meetup.com/cities/us/co/westminster/;Westminster;westminster
+http://www.meetup.com/cities/us/co/weston/;Weston;weston
+http://www.meetup.com/cities/us/co/wetmore/;Wetmore;wetmore
+http://www.meetup.com/cities/us/co/wheat_ridge/;Wheat Ridge;wheat_ridge
+http://www.meetup.com/cities/us/co/whitewater/;Whitewater;whitewater
+http://www.meetup.com/cities/us/co/wiggins/;Wiggins;wiggins
+http://www.meetup.com/cities/us/co/wild_horse/;Wild Horse;wild_horse
+http://www.meetup.com/cities/us/co/wiley/;Wiley;wiley
+http://www.meetup.com/cities/us/co/windsor/;Windsor;windsor
+http://www.meetup.com/cities/us/co/winter_park/;Winter Park;winter_park
+http://www.meetup.com/cities/us/co/wolcott/;Wolcott;wolcott
+http://www.meetup.com/cities/us/co/woodland_park/;Woodland Park;woodland_park
+http://www.meetup.com/cities/us/co/woodrow/;Woodrow;woodrow
+http://www.meetup.com/cities/us/co/woody_creek/;Woody Creek;woody_creek
+http://www.meetup.com/cities/us/co/wray/;Wray;wray
+http://www.meetup.com/cities/us/co/yampa/;Yampa;yampa
+http://www.meetup.com/cities/us/co/yellow_jacket/;Yellow Jacket;yellow_jacket
+http://www.meetup.com/cities/us/co/yoder/;Yoder;yoder
+http://www.meetup.com/cities/us/co/yuma/;Yuma;yuma

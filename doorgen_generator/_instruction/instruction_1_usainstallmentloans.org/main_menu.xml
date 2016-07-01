@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<menu>
+	<header>
+		<menu_item>
+			<label>About Us</label>
+			<href>/</href>
+			<file>./tmpl_main_block.html</file>
+			<page_title>MAIN_PAGE_TITLE</page_title>
+			<page_meta_description>MAIN_PAGE_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>MAIN_PAGE_META_KEYWORDS</page_meta_keywords>
+		</menu_item>
+		<menu_item>
+			<label>FAQ</label>
+			<href>faq</href>
+			<file>./menu_pages/tmpl_faq.html</file>
+			<page_title>FAQ_PAGE_TITLE</page_title>
+			<page_meta_description>FAQ_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>FAQ_META_KEYWORDS</page_meta_keywords>
+		</menu_item>
+		<menu_item>
+			<label>Contact</label>
+			<href>contact</href>
+			<file>./menu_pages/tmpl_contact.html</file>
+			<page_title>CONTACT_PAGE_TITLE</page_title>
+			<page_meta_description>CONTACT_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>CONTACT_META_KEYWORDS</page_meta_keywords>
+		</menu_item>
+		<menu_item>
+			<label>Lending Policy</label>
+			<href>policy</href>
+			<style_class></style_class>
+			<file>./menu_pages/tmpl_policy.html</file>
+			<page_title>POLICY_PAGE_TITLE</page_title>
+			<page_meta_description>POLICY_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>POLICY_META_KEYWORDS</page_meta_keywords>
+		</menu_item>
+		<menu_item>
+			<label>Apply Now</label>
+			<href>apply-now</href>
+			<style_class></style_class>
+			<file>./menu_pages/tmpl_apply_now.html</file>
+			<page_title>APPLY_PAGE_TITLE</page_title>
+			<page_meta_description>APPLY_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>APPLY_META_KEYWORDS</page_meta_keywords>
+		</menu_item>
+	</header>
+	<footer>
+		<menu_item>
+			<label>About Us</label>
+			<href>/</href>
+			<file>./menu_pages/tmpl_main.html</file>
+			<page_title>MAIN_PAGE_TITLE</page_title>
+			<page_meta_description>MAIN_PAGE_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>MAIN_PAGE_META_KEYWORDS</page_meta_keywords>
+		</menu_item>
+		<menu_item>
+			<label>FAQ</label>
+			<href>faq</href>
+			<file>./menu_pages/tmpl_faq.html</file>
+			<page_title>FAQ_PAGE_TITLE</page_title>
+			<page_meta_description>FAQ_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>FAQ_META_KEYWORDS</page_meta_keywords>
+		</menu_item>
+		<menu_item>
+			<label>Contact</label>
+			<href>contact</href>
+			<file>./menu_pages/tmpl_contact.html</file>
+			<page_title>CONTACT_PAGE_TITLE</page_title>
+			<page_meta_description>CONTACT_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>CONTACT_META_KEYWORDS</page_meta_keywords>
+		</menu_item>
+		<menu_item>
+			<label>Lending Policy</label>
+			<href>policy</href>
+			<style_class></style_class>
+			<file>./menu_pages/tmpl_policy.html</file>
+			<page_title>POLICY_PAGE_TITLE</page_title>
+			<page_meta_description>POLICY_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>POLICY_META_KEYWORDS</page_meta_keywords>
+		</menu_item>
+		<menu_item>
+			<label>Apply Now</label>
+			<href>apply-now</href>
+			<style_class></style_class>
+			<file>./menu_pages/tmpl_apply_now.html</file>
+			<page_title>APPLY_PAGE_TITLE</page_title>
+			<page_meta_description>APPLY_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>APPLY_META_KEYWORDS</page_meta_keywords>
+		</menu_item>
+	</footer>
+</menu>

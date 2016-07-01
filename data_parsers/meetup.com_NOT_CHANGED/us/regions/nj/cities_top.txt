@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/us/nj/atlantic_city/;Atlantic City;atlantic_city
+http://www.meetup.com/cities/us/nj/bayonne/;Bayonne;bayonne
+http://www.meetup.com/cities/us/nj/blackwood/;Blackwood;blackwood
+http://www.meetup.com/cities/us/nj/bloomfield/;Bloomfield;bloomfield
+http://www.meetup.com/cities/us/nj/brick/;Brick;brick
+http://www.meetup.com/cities/us/nj/bridgewater/;Bridgewater;bridgewater
+http://www.meetup.com/cities/us/nj/cherry_hill/;Cherry Hill;cherry_hill
+http://www.meetup.com/cities/us/nj/clifton/;Clifton;clifton
+http://www.meetup.com/cities/us/nj/east_brunswick/;East Brunswick;east_brunswick
+http://www.meetup.com/cities/us/nj/edison/;Edison;edison
+http://www.meetup.com/cities/us/nj/fair_lawn/;Fair Lawn;fair_lawn
+http://www.meetup.com/cities/us/nj/flemington/;Flemington;flemington
+http://www.meetup.com/cities/us/nj/fort_lee/;Fort Lee;fort_lee
+http://www.meetup.com/cities/us/nj/freehold/;Freehold;freehold
+http://www.meetup.com/cities/us/nj/hackensack/;Hackensack;hackensack
+http://www.meetup.com/cities/us/nj/hoboken/;Hoboken;hoboken
+http://www.meetup.com/cities/us/nj/jersey_city/;Jersey City;jersey_city
+http://www.meetup.com/cities/us/nj/lakewood/;Lakewood;lakewood
+http://www.meetup.com/cities/us/nj/marlton/;Marlton;marlton
+http://www.meetup.com/cities/us/nj/metuchen/;Metuchen;metuchen
+http://www.meetup.com/cities/us/nj/montclair/;Montclair;montclair
+http://www.meetup.com/cities/us/nj/montvale/;Montvale;montvale
+http://www.meetup.com/cities/us/nj/morristown/;Morristown;morristown
+http://www.meetup.com/cities/us/nj/mount_laurel/;Mount Laurel;mount_laurel
+http://www.meetup.com/cities/us/nj/new_brunswick/;New Brunswick;new_brunswick
+http://www.meetup.com/cities/us/nj/newark/;Newark;newark
+http://www.meetup.com/cities/us/nj/north_bergen/;North Bergen;north_bergen
+http://www.meetup.com/cities/us/nj/north_brunswick/;North Brunswick;north_brunswick
+http://www.meetup.com/cities/us/nj/nutley/;Nutley;nutley
+http://www.meetup.com/cities/us/nj/paramus/;Paramus;paramus
+http://www.meetup.com/cities/us/nj/parsippany/;Parsippany;parsippany
+http://www.meetup.com/cities/us/nj/piscataway/;Piscataway;piscataway
+http://www.meetup.com/cities/us/nj/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/nj/ramsey/;Ramsey;ramsey
+http://www.meetup.com/cities/us/nj/red_bank/;Red Bank;red_bank
+http://www.meetup.com/cities/us/nj/ridgewood/;Ridgewood;ridgewood
+http://www.meetup.com/cities/us/nj/scotch_plains/;Scotch Plains;scotch_plains
+http://www.meetup.com/cities/us/nj/sewell/;Sewell;sewell
+http://www.meetup.com/cities/us/nj/sicklerville/;Sicklerville;sicklerville
+http://www.meetup.com/cities/us/nj/somerset/;Somerset;somerset
+http://www.meetup.com/cities/us/nj/teaneck/;Teaneck;teaneck
+http://www.meetup.com/cities/us/nj/toms_river/;Toms River;toms_river
+http://www.meetup.com/cities/us/nj/trenton/;Trenton;trenton
+http://www.meetup.com/cities/us/nj/union/;Union;union
+http://www.meetup.com/cities/us/nj/voorhees/;Voorhees;voorhees
+http://www.meetup.com/cities/us/nj/wayne/;Wayne;wayne
+http://www.meetup.com/cities/us/nj/west_new_york/;West New York;west_new_york
+http://www.meetup.com/cities/us/nj/west_orange/;West Orange;west_orange
+http://www.meetup.com/cities/us/nj/westfield/;Westfield;westfield
+http://www.meetup.com/cities/us/nj/woodbridge/;Woodbridge;woodbridge
+http://www.meetup.com/cities/us/nj/atlantic_city/;Atlantic City;atlantic_city
+http://www.meetup.com/cities/us/nj/bayonne/;Bayonne;bayonne
+http://www.meetup.com/cities/us/nj/blackwood/;Blackwood;blackwood
+http://www.meetup.com/cities/us/nj/bloomfield/;Bloomfield;bloomfield
+http://www.meetup.com/cities/us/nj/brick/;Brick;brick
+http://www.meetup.com/cities/us/nj/bridgewater/;Bridgewater;bridgewater
+http://www.meetup.com/cities/us/nj/cherry_hill/;Cherry Hill;cherry_hill
+http://www.meetup.com/cities/us/nj/clifton/;Clifton;clifton
+http://www.meetup.com/cities/us/nj/east_brunswick/;East Brunswick;east_brunswick
+http://www.meetup.com/cities/us/nj/edison/;Edison;edison
+http://www.meetup.com/cities/us/nj/fair_lawn/;Fair Lawn;fair_lawn
+http://www.meetup.com/cities/us/nj/flemington/;Flemington;flemington
+http://www.meetup.com/cities/us/nj/fort_lee/;Fort Lee;fort_lee
+http://www.meetup.com/cities/us/nj/freehold/;Freehold;freehold
+http://www.meetup.com/cities/us/nj/hackensack/;Hackensack;hackensack
+http://www.meetup.com/cities/us/nj/hoboken/;Hoboken;hoboken
+http://www.meetup.com/cities/us/nj/jersey_city/;Jersey City;jersey_city
+http://www.meetup.com/cities/us/nj/lakewood/;Lakewood;lakewood
+http://www.meetup.com/cities/us/nj/marlton/;Marlton;marlton
+http://www.meetup.com/cities/us/nj/metuchen/;Metuchen;metuchen
+http://www.meetup.com/cities/us/nj/montclair/;Montclair;montclair
+http://www.meetup.com/cities/us/nj/montvale/;Montvale;montvale
+http://www.meetup.com/cities/us/nj/morristown/;Morristown;morristown
+http://www.meetup.com/cities/us/nj/mount_laurel/;Mount Laurel;mount_laurel
+http://www.meetup.com/cities/us/nj/new_brunswick/;New Brunswick;new_brunswick
+http://www.meetup.com/cities/us/nj/newark/;Newark;newark
+http://www.meetup.com/cities/us/nj/north_bergen/;North Bergen;north_bergen
+http://www.meetup.com/cities/us/nj/north_brunswick/;North Brunswick;north_brunswick
+http://www.meetup.com/cities/us/nj/nutley/;Nutley;nutley
+http://www.meetup.com/cities/us/nj/paramus/;Paramus;paramus
+http://www.meetup.com/cities/us/nj/parsippany/;Parsippany;parsippany
+http://www.meetup.com/cities/us/nj/piscataway/;Piscataway;piscataway
+http://www.meetup.com/cities/us/nj/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/nj/ramsey/;Ramsey;ramsey
+http://www.meetup.com/cities/us/nj/red_bank/;Red Bank;red_bank
+http://www.meetup.com/cities/us/nj/ridgewood/;Ridgewood;ridgewood
+http://www.meetup.com/cities/us/nj/scotch_plains/;Scotch Plains;scotch_plains
+http://www.meetup.com/cities/us/nj/sewell/;Sewell;sewell
+http://www.meetup.com/cities/us/nj/sicklerville/;Sicklerville;sicklerville
+http://www.meetup.com/cities/us/nj/somerset/;Somerset;somerset
+http://www.meetup.com/cities/us/nj/teaneck/;Teaneck;teaneck
+http://www.meetup.com/cities/us/nj/toms_river/;Toms River;toms_river
+http://www.meetup.com/cities/us/nj/trenton/;Trenton;trenton
+http://www.meetup.com/cities/us/nj/union/;Union;union
+http://www.meetup.com/cities/us/nj/voorhees/;Voorhees;voorhees
+http://www.meetup.com/cities/us/nj/wayne/;Wayne;wayne
+http://www.meetup.com/cities/us/nj/west_new_york/;West New York;west_new_york
+http://www.meetup.com/cities/us/nj/west_orange/;West Orange;west_orange
+http://www.meetup.com/cities/us/nj/westfield/;Westfield;westfield
+http://www.meetup.com/cities/us/nj/woodbridge/;Woodbridge;woodbridge

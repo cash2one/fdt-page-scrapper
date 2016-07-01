@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/us/ms/bay_saint_louis/;Bay Saint Louis;bay_saint_louis
+http://www.meetup.com/cities/us/ms/biloxi/;Biloxi;biloxi
+http://www.meetup.com/cities/us/ms/brandon/;Brandon;brandon
+http://www.meetup.com/cities/us/ms/byhalia/;Byhalia;byhalia
+http://www.meetup.com/cities/us/ms/byram/;Byram;byram
+http://www.meetup.com/cities/us/ms/carriere/;Carriere;carriere
+http://www.meetup.com/cities/us/ms/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/ms/columbia/;Columbia;columbia
+http://www.meetup.com/cities/us/ms/columbus/;Columbus;columbus
+http://www.meetup.com/cities/us/ms/corinth/;Corinth;corinth
+http://www.meetup.com/cities/us/ms/diamondhead/;Diamondhead;diamondhead
+http://www.meetup.com/cities/us/ms/diberville/;Diberville;diberville
+http://www.meetup.com/cities/us/ms/flowood/;Flowood;flowood
+http://www.meetup.com/cities/us/ms/gautier/;Gautier;gautier
+http://www.meetup.com/cities/us/ms/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/ms/grenada/;Grenada;grenada
+http://www.meetup.com/cities/us/ms/gulfport/;Gulfport;gulfport
+http://www.meetup.com/cities/us/ms/hattiesburg/;Hattiesburg;hattiesburg
+http://www.meetup.com/cities/us/ms/hernando/;Hernando;hernando
+http://www.meetup.com/cities/us/ms/horn_lake/;Horn Lake;horn_lake
+http://www.meetup.com/cities/us/ms/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/ms/kiln/;Kiln;kiln
+http://www.meetup.com/cities/us/ms/laurel/;Laurel;laurel
+http://www.meetup.com/cities/us/ms/long_beach/;Long Beach;long_beach
+http://www.meetup.com/cities/us/ms/lucedale/;Lucedale;lucedale
+http://www.meetup.com/cities/us/ms/madison/;Madison;madison
+http://www.meetup.com/cities/us/ms/mccomb/;McComb;mccomb
+http://www.meetup.com/cities/us/ms/meridian/;Meridian;meridian
+http://www.meetup.com/cities/us/ms/mississippi_state/;Mississippi State;mississippi_state
+http://www.meetup.com/cities/us/ms/moss_point/;Moss Point;moss_point
+http://www.meetup.com/cities/us/ms/natchez/;Natchez;natchez
+http://www.meetup.com/cities/us/ms/ocean_springs/;Ocean Springs;ocean_springs
+http://www.meetup.com/cities/us/ms/olive_branch/;Olive Branch;olive_branch
+http://www.meetup.com/cities/us/ms/oxford/;Oxford;oxford
+http://www.meetup.com/cities/us/ms/pascagoula/;Pascagoula;pascagoula
+http://www.meetup.com/cities/us/ms/pass_christian/;Pass Christian;pass_christian
+http://www.meetup.com/cities/us/ms/pearl/;Pearl;pearl
+http://www.meetup.com/cities/us/ms/petal/;Petal;petal
+http://www.meetup.com/cities/us/ms/picayune/;Picayune;picayune
+http://www.meetup.com/cities/us/ms/poplarville/;Poplarville;poplarville
+http://www.meetup.com/cities/us/ms/purvis/;Purvis;purvis
+http://www.meetup.com/cities/us/ms/ridgeland/;Ridgeland;ridgeland
+http://www.meetup.com/cities/us/ms/saucier/;Saucier;saucier
+http://www.meetup.com/cities/us/ms/senatobia/;Senatobia;senatobia
+http://www.meetup.com/cities/us/ms/southaven/;Southaven;southaven
+http://www.meetup.com/cities/us/ms/starkville/;Starkville;starkville
+http://www.meetup.com/cities/us/ms/tupelo/;Tupelo;tupelo
+http://www.meetup.com/cities/us/ms/vancleave/;Vancleave;vancleave
+http://www.meetup.com/cities/us/ms/vicksburg/;Vicksburg;vicksburg
+http://www.meetup.com/cities/us/ms/waveland/;Waveland;waveland
+http://www.meetup.com/cities/us/ms/bay_saint_louis/;Bay Saint Louis;bay_saint_louis
+http://www.meetup.com/cities/us/ms/biloxi/;Biloxi;biloxi
+http://www.meetup.com/cities/us/ms/brandon/;Brandon;brandon
+http://www.meetup.com/cities/us/ms/byhalia/;Byhalia;byhalia
+http://www.meetup.com/cities/us/ms/byram/;Byram;byram
+http://www.meetup.com/cities/us/ms/carriere/;Carriere;carriere
+http://www.meetup.com/cities/us/ms/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/ms/columbia/;Columbia;columbia
+http://www.meetup.com/cities/us/ms/columbus/;Columbus;columbus
+http://www.meetup.com/cities/us/ms/corinth/;Corinth;corinth
+http://www.meetup.com/cities/us/ms/diamondhead/;Diamondhead;diamondhead
+http://www.meetup.com/cities/us/ms/diberville/;Diberville;diberville
+http://www.meetup.com/cities/us/ms/flowood/;Flowood;flowood
+http://www.meetup.com/cities/us/ms/gautier/;Gautier;gautier
+http://www.meetup.com/cities/us/ms/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/ms/grenada/;Grenada;grenada
+http://www.meetup.com/cities/us/ms/gulfport/;Gulfport;gulfport
+http://www.meetup.com/cities/us/ms/hattiesburg/;Hattiesburg;hattiesburg
+http://www.meetup.com/cities/us/ms/hernando/;Hernando;hernando
+http://www.meetup.com/cities/us/ms/horn_lake/;Horn Lake;horn_lake
+http://www.meetup.com/cities/us/ms/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/ms/kiln/;Kiln;kiln
+http://www.meetup.com/cities/us/ms/laurel/;Laurel;laurel
+http://www.meetup.com/cities/us/ms/long_beach/;Long Beach;long_beach
+http://www.meetup.com/cities/us/ms/lucedale/;Lucedale;lucedale
+http://www.meetup.com/cities/us/ms/madison/;Madison;madison
+http://www.meetup.com/cities/us/ms/mccomb/;McComb;mccomb
+http://www.meetup.com/cities/us/ms/meridian/;Meridian;meridian
+http://www.meetup.com/cities/us/ms/mississippi_state/;Mississippi State;mississippi_state
+http://www.meetup.com/cities/us/ms/moss_point/;Moss Point;moss_point
+http://www.meetup.com/cities/us/ms/natchez/;Natchez;natchez
+http://www.meetup.com/cities/us/ms/ocean_springs/;Ocean Springs;ocean_springs
+http://www.meetup.com/cities/us/ms/olive_branch/;Olive Branch;olive_branch
+http://www.meetup.com/cities/us/ms/oxford/;Oxford;oxford
+http://www.meetup.com/cities/us/ms/pascagoula/;Pascagoula;pascagoula
+http://www.meetup.com/cities/us/ms/pass_christian/;Pass Christian;pass_christian
+http://www.meetup.com/cities/us/ms/pearl/;Pearl;pearl
+http://www.meetup.com/cities/us/ms/petal/;Petal;petal
+http://www.meetup.com/cities/us/ms/picayune/;Picayune;picayune
+http://www.meetup.com/cities/us/ms/poplarville/;Poplarville;poplarville
+http://www.meetup.com/cities/us/ms/purvis/;Purvis;purvis
+http://www.meetup.com/cities/us/ms/ridgeland/;Ridgeland;ridgeland
+http://www.meetup.com/cities/us/ms/saucier/;Saucier;saucier
+http://www.meetup.com/cities/us/ms/senatobia/;Senatobia;senatobia
+http://www.meetup.com/cities/us/ms/southaven/;Southaven;southaven
+http://www.meetup.com/cities/us/ms/starkville/;Starkville;starkville
+http://www.meetup.com/cities/us/ms/tupelo/;Tupelo;tupelo
+http://www.meetup.com/cities/us/ms/vancleave/;Vancleave;vancleave
+http://www.meetup.com/cities/us/ms/vicksburg/;Vicksburg;vicksburg
+http://www.meetup.com/cities/us/ms/waveland/;Waveland;waveland

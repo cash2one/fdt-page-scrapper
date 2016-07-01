@@ -1,0 +1,224 @@
+http://www.meetup.com/cities/ba/banja_luka/;Banja Luka;banja_luka
+http://www.meetup.com/cities/ba/banovici/;Banovici;banovici
+http://www.meetup.com/cities/ba/barice/;Barice;barice
+http://www.meetup.com/cities/ba/batkovici/;Batkovici;batkovici
+http://www.meetup.com/cities/ba/bihac/;Bihac;bihac
+http://www.meetup.com/cities/ba/bijela/;Bijela;bijela
+http://www.meetup.com/cities/ba/bijeljina/;Bijeljina;bijeljina
+http://www.meetup.com/cities/ba/bila_tserkva/;Bila Tserkva;bila_tserkva
+http://www.meetup.com/cities/ba/bileca/;Bileca;bileca
+http://www.meetup.com/cities/ba/blagaj/;Blagaj;blagaj
+http://www.meetup.com/cities/ba/blatnica/;Blatnica;blatnica
+http://www.meetup.com/cities/ba/bosanska_dubica/;Bosanska Dubica;bosanska_dubica
+http://www.meetup.com/cities/ba/bosanska_gradishka/;Bosanska Gradishka;bosanska_gradishka
+http://www.meetup.com/cities/ba/bosanska_kostajnica/;Bosanska Kostajnica;bosanska_kostajnica
+http://www.meetup.com/cities/ba/bosanska_krupa/;Bosanska Krupa;bosanska_krupa
+http://www.meetup.com/cities/ba/bosanski_brod/;Bosanski Brod;bosanski_brod
+http://www.meetup.com/cities/ba/bosanski_novi/;Bosanski Novi;bosanski_novi
+http://www.meetup.com/cities/ba/bosanski_shamac/;Bosanski Shamac;bosanski_shamac
+http://www.meetup.com/cities/ba/bosansko_grahovo/;Bosansko Grahovo;bosansko_grahovo
+http://www.meetup.com/cities/ba/bratunac/;Bratunac;bratunac
+http://www.meetup.com/cities/ba/brchko/;Brchko;brchko
+http://www.meetup.com/cities/ba/brestovsko/;Brestovsko;brestovsko
+http://www.meetup.com/cities/ba/breza/;Breza;breza
+http://www.meetup.com/cities/ba/bronzani_majdan/;Bronzani Majdan;bronzani_majdan
+http://www.meetup.com/cities/ba/bugojno/;Bugojno;bugojno
+http://www.meetup.com/cities/ba/busovacha/;Busovacha;busovacha
+http://www.meetup.com/cities/ba/buzhim/;Buzhim;buzhim
+http://www.meetup.com/cities/ba/careva_cuprija/;Careva Cuprija;careva_cuprija
+http://www.meetup.com/cities/ba/cazin/;Cazin;cazin
+http://www.meetup.com/cities/ba/chajniche/;Chajniche;chajniche
+http://www.meetup.com/cities/ba/chapljina/;Chapljina;chapljina
+http://www.meetup.com/cities/ba/chechava/;Chechava;chechava
+http://www.meetup.com/cities/ba/chelinac/;Chelinac;chelinac
+http://www.meetup.com/cities/ba/chitluk/;Chitluk;chitluk
+http://www.meetup.com/cities/ba/cim/;Cim;cim
+http://www.meetup.com/cities/ba/coralici/;Coralici;coralici
+http://www.meetup.com/cities/ba/crnici/;Crnici;crnici
+http://www.meetup.com/cities/ba/derventa/;Derventa;derventa
+http://www.meetup.com/cities/ba/divichani/;Divichani;divichani
+http://www.meetup.com/cities/ba/djurdjevik/;Djurdjevik;djurdjevik
+http://www.meetup.com/cities/ba/doboj/;Doboj;doboj
+http://www.meetup.com/cities/ba/dobrinje/;Dobrinje;dobrinje
+http://www.meetup.com/cities/ba/dobrljin/;Dobrljin;dobrljin
+http://www.meetup.com/cities/ba/donja_dubica/;Donja Dubica;donja_dubica
+http://www.meetup.com/cities/ba/donja_mahala/;Donja Mahala;donja_mahala
+http://www.meetup.com/cities/ba/donja_medjidja/;Donja Medjidja;donja_medjidja
+http://www.meetup.com/cities/ba/donja_orahovica/;Donja Orahovica;donja_orahovica
+http://www.meetup.com/cities/ba/donje_dubrave/;Donje Dubrave;donje_dubrave
+http://www.meetup.com/cities/ba/donje_vukovije/;Donje Vukovije;donje_vukovije
+http://www.meetup.com/cities/ba/donji_vakuf/;Donji Vakuf;donji_vakuf
+http://www.meetup.com/cities/ba/drezhnica/;Drezhnica;drezhnica
+http://www.meetup.com/cities/ba/drinovci/;Drinovci;drinovci
+http://www.meetup.com/cities/ba/dubravica/;Dubravica;dubravica
+http://www.meetup.com/cities/ba/focha/;Focha;focha
+http://www.meetup.com/cities/ba/fojnica/;Fojnica;fojnica
+http://www.meetup.com/cities/ba/gacko/;Gacko;gacko
+http://www.meetup.com/cities/ba/glamoch/;Glamoch;glamoch
+http://www.meetup.com/cities/ba/gnojnica/;Gnojnica;gnojnica
+http://www.meetup.com/cities/ba/gorazhde/;Gorazhde;gorazhde
+http://www.meetup.com/cities/ba/gornja_koprivna/;Gornja Koprivna;gornja_koprivna
+http://www.meetup.com/cities/ba/gornja_tuzla/;Gornja Tuzla;gornja_tuzla
+http://www.meetup.com/cities/ba/gornje_dubrave/;Gornje Dubrave;gornje_dubrave
+http://www.meetup.com/cities/ba/gornje_zhivinice/;Gornje Zhivinice;gornje_zhivinice
+http://www.meetup.com/cities/ba/gornji_poljice/;Gornji Poljice;gornji_poljice
+http://www.meetup.com/cities/ba/gornji_vakuf/;Gornji Vakuf;gornji_vakuf
+http://www.meetup.com/cities/ba/gostovici/;Gostovici;gostovici
+http://www.meetup.com/cities/ba/grachanica/;Grachanica;grachanica
+http://www.meetup.com/cities/ba/gradachac/;Gradachac;gradachac
+http://www.meetup.com/cities/ba/gromiljak/;Gromiljak;gromiljak
+http://www.meetup.com/cities/ba/grude/;Grude;grude
+http://www.meetup.com/cities/ba/hadzhici/;Hadzhici;hadzhici
+http://www.meetup.com/cities/ba/hajdarevici/;Hajdarevici;hajdarevici
+http://www.meetup.com/cities/ba/han_pjesak/;Han Pjesak;han_pjesak
+http://www.meetup.com/cities/ba/hotonj/;Hotonj;hotonj
+http://www.meetup.com/cities/ba/ilici/;Ilici;ilici
+http://www.meetup.com/cities/ba/ilijash/;Ilijash;ilijash
+http://www.meetup.com/cities/ba/izachic/;Izachic;izachic
+http://www.meetup.com/cities/ba/jablanica/;Jablanica;jablanica
+http://www.meetup.com/cities/ba/jajce/;Jajce;jajce
+http://www.meetup.com/cities/ba/janja/;Janja;janja
+http://www.meetup.com/cities/ba/jelah/;Jelah;jelah
+http://www.meetup.com/cities/ba/jezerski/;Jezerski;jezerski
+http://www.meetup.com/cities/ba/kachuni/;Kachuni;kachuni
+http://www.meetup.com/cities/ba/kakanj/;Kakanj;kakanj
+http://www.meetup.com/cities/ba/kalenderovci/;Kalenderovci;kalenderovci
+http://www.meetup.com/cities/ba/karadaglije/;Karadaglije;karadaglije
+http://www.meetup.com/cities/ba/kiseljak/;Kiseljak;kiseljak
+http://www.meetup.com/cities/ba/kladanj/;Kladanj;kladanj
+http://www.meetup.com/cities/ba/kljuch/;Kljuch;kljuch
+http://www.meetup.com/cities/ba/knezhevo/;Knezhevo;knezhevo
+http://www.meetup.com/cities/ba/knezhica/;Knezhica;knezhica
+http://www.meetup.com/cities/ba/kobilja_glava/;Kobilja Glava;kobilja_glava
+http://www.meetup.com/cities/ba/kocherin/;Kocherin;kocherin
+http://www.meetup.com/cities/ba/konjic/;Konjic;konjic
+http://www.meetup.com/cities/ba/koran/;Koran;koran
+http://www.meetup.com/cities/ba/kotor_varosh/;Kotor Varosh;kotor_varosh
+http://www.meetup.com/cities/ba/kovachi/;Kovachi;kovachi
+http://www.meetup.com/cities/ba/laktashi/;Laktashi;laktashi
+http://www.meetup.com/cities/ba/lamovita/;Lamovita;lamovita
+http://www.meetup.com/cities/ba/lijeshnica/;Lijeshnica;lijeshnica
+http://www.meetup.com/cities/ba/lishtica/;Lishtica;lishtica
+http://www.meetup.com/cities/ba/liskovac/;Liskovac;liskovac
+http://www.meetup.com/cities/ba/livno/;Livno;livno
+http://www.meetup.com/cities/ba/ljubinje/;Ljubinje;ljubinje
+http://www.meetup.com/cities/ba/ljubushki/;Ljubushki;ljubushki
+http://www.meetup.com/cities/ba/lokvine/;Lokvine;lokvine
+http://www.meetup.com/cities/ba/lopare/;Lopare;lopare
+http://www.meetup.com/cities/ba/lukavac/;Lukavac;lukavac
+http://www.meetup.com/cities/ba/lukavica/;Lukavica;lukavica
+http://www.meetup.com/cities/ba/maglaj/;Maglaj;maglaj
+http://www.meetup.com/cities/ba/maglajani/;Maglajani;maglajani
+http://www.meetup.com/cities/ba/mahale/;Mahale;mahale
+http://www.meetup.com/cities/ba/mala_kladusha/;Mala Kladusha;mala_kladusha
+http://www.meetup.com/cities/ba/maleshici/;Maleshici;maleshici
+http://www.meetup.com/cities/ba/maricka/;Maricka;maricka
+http://www.meetup.com/cities/ba/maslovare/;Maslovare;maslovare
+http://www.meetup.com/cities/ba/milici/;Milici;milici
+http://www.meetup.com/cities/ba/mionica/;Mionica;mionica
+http://www.meetup.com/cities/ba/modricha/;Modricha;modricha
+http://www.meetup.com/cities/ba/moshtre/;Moshtre;moshtre
+http://www.meetup.com/cities/ba/mostar/;Mostar;mostar
+http://www.meetup.com/cities/ba/mramor/;Mramor;mramor
+http://www.meetup.com/cities/ba/mrkonjic_grad/;Mrkonjic Grad;mrkonjic_grad
+http://www.meetup.com/cities/ba/nevesinje/;Nevesinje;nevesinje
+http://www.meetup.com/cities/ba/novi_miljanovci/;Novi Miljanovci;novi_miljanovci
+http://www.meetup.com/cities/ba/novi_sheher/;Novi Sheher;novi_sheher
+http://www.meetup.com/cities/ba/novi_travnik/;Novi Travnik;novi_travnik
+http://www.meetup.com/cities/ba/obudovac/;Obudovac;obudovac
+http://www.meetup.com/cities/ba/odzhak/;Odzhak;odzhak
+http://www.meetup.com/cities/ba/olovo/;Olovo;olovo
+http://www.meetup.com/cities/ba/omarska/;Omarska;omarska
+http://www.meetup.com/cities/ba/orashac/;Orashac;orashac
+http://www.meetup.com/cities/ba/orashje/;Orashje;orashje
+http://www.meetup.com/cities/ba/orguz/;Orguz;orguz
+http://www.meetup.com/cities/ba/oshtra_luka/;Oshtra Luka;oshtra_luka
+http://www.meetup.com/cities/ba/ostrozhac/;Ostrozhac;ostrozhac
+http://www.meetup.com/cities/ba/otoka/;Otoka;otoka
+http://www.meetup.com/cities/ba/pajic_polje/;Pajic Polje;pajic_polje
+http://www.meetup.com/cities/ba/pale/;Pale;pale
+http://www.meetup.com/cities/ba/pazaric/;Pazaric;pazaric
+http://www.meetup.com/cities/ba/peci/;Peci;peci
+http://www.meetup.com/cities/ba/pecigrad/;Pecigrad;pecigrad
+http://www.meetup.com/cities/ba/petkovci/;Petkovci;petkovci
+http://www.meetup.com/cities/ba/piskavica/;Piskavica;piskavica
+http://www.meetup.com/cities/ba/pjanici/;Pjanici;pjanici
+http://www.meetup.com/cities/ba/podbrdo/;Podbrdo;podbrdo
+http://www.meetup.com/cities/ba/podhum/;Podhum;podhum
+http://www.meetup.com/cities/ba/podvelezh/;Podvelezh;podvelezh
+http://www.meetup.com/cities/ba/podzvizd/;Podzvizd;podzvizd
+http://www.meetup.com/cities/ba/polje/;Polje;polje
+http://www.meetup.com/cities/ba/poshusje/;Poshusje;poshusje
+http://www.meetup.com/cities/ba/potoci/;Potoci;potoci
+http://www.meetup.com/cities/ba/pribinic/;Pribinic;pribinic
+http://www.meetup.com/cities/ba/priboj/;Priboj;priboj
+http://www.meetup.com/cities/ba/prijedor/;Prijedor;prijedor
+http://www.meetup.com/cities/ba/prnjavor/;Prnjavor;prnjavor
+http://www.meetup.com/cities/ba/prozor/;Prozor;prozor
+http://www.meetup.com/cities/ba/purachic/;Purachic;purachic
+http://www.meetup.com/cities/ba/radishici/;Radishici;radishici
+http://www.meetup.com/cities/ba/razboj_lijevche/;Razboj Lijevche;razboj_lijevche
+http://www.meetup.com/cities/ba/rodoch/;Rodoch;rodoch
+http://www.meetup.com/cities/ba/rogatica/;Rogatica;rogatica
+http://www.meetup.com/cities/ba/rumboci/;Rumboci;rumboci
+http://www.meetup.com/cities/ba/sanica/;Sanica;sanica
+http://www.meetup.com/cities/ba/sanski_most/;Sanski Most;sanski_most
+http://www.meetup.com/cities/ba/sarajevo/;Sarajevo;sarajevo
+http://www.meetup.com/cities/ba/shekovici/;Shekovici;shekovici
+http://www.meetup.com/cities/ba/sherici/;Sherici;sherici
+http://www.meetup.com/cities/ba/shipovo/;Shipovo;shipovo
+http://www.meetup.com/cities/ba/shturlic/;Shturlic;shturlic
+http://www.meetup.com/cities/ba/shumatac/;Shumatac;shumatac
+http://www.meetup.com/cities/ba/%C5%A1iroki_brijeg/;Široki Brijeg;%C5%A1iroki_brijeg
+http://www.meetup.com/cities/ba/skokovi/;Skokovi;skokovi
+http://www.meetup.com/cities/ba/sladna/;Sladna;sladna
+http://www.meetup.com/cities/ba/sokolac/;Sokolac;sokolac
+http://www.meetup.com/cities/ba/solina/;Solina;solina
+http://www.meetup.com/cities/ba/srbac/;Srbac;srbac
+http://www.meetup.com/cities/ba/srebrenica/;Srebrenica;srebrenica
+http://www.meetup.com/cities/ba/srebrenik/;Srebrenik;srebrenik
+http://www.meetup.com/cities/ba/stanari/;Stanari;stanari
+http://www.meetup.com/cities/ba/stijena/;Stijena;stijena
+http://www.meetup.com/cities/ba/stjepan_polje/;Stjepan Polje;stjepan_polje
+http://www.meetup.com/cities/ba/stolac/;Stolac;stolac
+http://www.meetup.com/cities/ba/stupari/;Stupari;stupari
+http://www.meetup.com/cities/ba/svodna/;Svodna;svodna
+http://www.meetup.com/cities/ba/svojat/;Svojat;svojat
+http://www.meetup.com/cities/ba/teshanj/;Teshanj;teshanj
+http://www.meetup.com/cities/ba/teshanjka/;Teshanjka;teshanjka
+http://www.meetup.com/cities/ba/teslic/;Teslic;teslic
+http://www.meetup.com/cities/ba/todorovo/;Todorovo;todorovo
+http://www.meetup.com/cities/ba/tojshici/;Tojshici;tojshici
+http://www.meetup.com/cities/ba/tolisha/;Tolisha;tolisha
+http://www.meetup.com/cities/ba/tomislavgrad/;Tomislavgrad;tomislavgrad
+http://www.meetup.com/cities/ba/travnik/;Travnik;travnik
+http://www.meetup.com/cities/ba/trebinje/;Trebinje;trebinje
+http://www.meetup.com/cities/ba/trn/;Trn;trn
+http://www.meetup.com/cities/ba/trzhachka_rashtela/;Trzhachka Rashtela;trzhachka_rashtela
+http://www.meetup.com/cities/ba/turbe/;Turbe;turbe
+http://www.meetup.com/cities/ba/tuzla/;Tuzla;tuzla
+http://www.meetup.com/cities/ba/ugljevik/;Ugljevik;ugljevik
+http://www.meetup.com/cities/ba/ustikolina/;Ustikolina;ustikolina
+http://www.meetup.com/cities/ba/varesh/;Varesh;varesh
+http://www.meetup.com/cities/ba/varoshka_rijeka/;Varoshka Rijeka;varoshka_rijeka
+http://www.meetup.com/cities/ba/velagici/;Velagici;velagici
+http://www.meetup.com/cities/ba/velika_kladusha/;Velika Kladusha;velika_kladusha
+http://www.meetup.com/cities/ba/velika_obarska/;Velika Obarska;velika_obarska
+http://www.meetup.com/cities/ba/vidoshi/;Vidoshi;vidoshi
+http://www.meetup.com/cities/ba/visegr%C3%A1d/;Visegrád;visegr%C3%A1d
+http://www.meetup.com/cities/ba/visoko/;Visoko;visoko
+http://www.meetup.com/cities/ba/vitez/;Vitez;vitez
+http://www.meetup.com/cities/ba/vit%C3%ADna/;Vitína;vit%C3%ADna
+http://www.meetup.com/cities/ba/vlasenica/;Vlasenica;vlasenica
+http://www.meetup.com/cities/ba/vogoshca/;Vogoshca;vogoshca
+http://www.meetup.com/cities/ba/voljevac/;Voljevac;voljevac
+http://www.meetup.com/cities/ba/vozuca/;Vozuca;vozuca
+http://www.meetup.com/cities/ba/vrnograch/;Vrnograch;vrnograch
+http://www.meetup.com/cities/ba/zabrishce/;Zabrishce;zabrishce
+http://www.meetup.com/cities/ba/zavidovici/;Zavidovici;zavidovici
+http://www.meetup.com/cities/ba/zborishte/;Zborishte;zborishte
+http://www.meetup.com/cities/ba/zenica/;Zenica;zenica
+http://www.meetup.com/cities/ba/zheljezno_polje/;Zheljezno Polje;zheljezno_polje
+http://www.meetup.com/cities/ba/zhepche/;Zhepche;zhepche
+http://www.meetup.com/cities/ba/zhivinice/;Zhivinice;zhivinice
+http://www.meetup.com/cities/ba/zvornik/;Zvornik;zvornik

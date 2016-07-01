@@ -1,0 +1,580 @@
+http://www.meetup.com/cities/us/al/abbeville/;Abbeville;abbeville
+http://www.meetup.com/cities/us/al/abernant/;Abernant;abernant
+http://www.meetup.com/cities/us/al/adamsville/;Adamsville;adamsville
+http://www.meetup.com/cities/us/al/addison/;Addison;addison
+http://www.meetup.com/cities/us/al/adger/;Adger;adger
+http://www.meetup.com/cities/us/al/akron/;Akron;akron
+http://www.meetup.com/cities/us/al/alabaster/;Alabaster;alabaster
+http://www.meetup.com/cities/us/al/alberta/;Alberta;alberta
+http://www.meetup.com/cities/us/al/albertville/;Albertville;albertville
+http://www.meetup.com/cities/us/al/alexander_city/;Alexander City;alexander_city
+http://www.meetup.com/cities/us/al/alexandria/;Alexandria;alexandria
+http://www.meetup.com/cities/us/al/aliceville/;Aliceville;aliceville
+http://www.meetup.com/cities/us/al/allgood/;Allgood;allgood
+http://www.meetup.com/cities/us/al/alma/;Alma;alma
+http://www.meetup.com/cities/us/al/alpine/;Alpine;alpine
+http://www.meetup.com/cities/us/al/alton/;Alton;alton
+http://www.meetup.com/cities/us/al/altoona/;Altoona;altoona
+http://www.meetup.com/cities/us/al/andalusia/;Andalusia;andalusia
+http://www.meetup.com/cities/us/al/anderson/;Anderson;anderson
+http://www.meetup.com/cities/us/al/annemanie/;Annemanie;annemanie
+http://www.meetup.com/cities/us/al/anniston/;Anniston;anniston
+http://www.meetup.com/cities/us/al/arab/;Arab;arab
+http://www.meetup.com/cities/us/al/ardmore/;Ardmore;ardmore
+http://www.meetup.com/cities/us/al/ariton/;Ariton;ariton
+http://www.meetup.com/cities/us/al/arley/;Arley;arley
+http://www.meetup.com/cities/us/al/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/al/ashford/;Ashford;ashford
+http://www.meetup.com/cities/us/al/ashland/;Ashland;ashland
+http://www.meetup.com/cities/us/al/ashville/;Ashville;ashville
+http://www.meetup.com/cities/us/al/athens/;Athens;athens
+http://www.meetup.com/cities/us/al/atmore/;Atmore;atmore
+http://www.meetup.com/cities/us/al/attalla/;Attalla;attalla
+http://www.meetup.com/cities/us/al/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/al/auburn_university/;Auburn University;auburn_university
+http://www.meetup.com/cities/us/al/autaugaville/;Autaugaville;autaugaville
+http://www.meetup.com/cities/us/al/axis/;Axis;axis
+http://www.meetup.com/cities/us/al/baileyton/;Baileyton;baileyton
+http://www.meetup.com/cities/us/al/banks/;Banks;banks
+http://www.meetup.com/cities/us/al/bankston/;Bankston;bankston
+http://www.meetup.com/cities/us/al/bay_minette/;Bay Minette;bay_minette
+http://www.meetup.com/cities/us/al/bayou_la_batre/;Bayou La Batre;bayou_la_batre
+http://www.meetup.com/cities/us/al/bear_creek/;Bear Creek;bear_creek
+http://www.meetup.com/cities/us/al/beatrice/;Beatrice;beatrice
+http://www.meetup.com/cities/us/al/beaverton/;Beaverton;beaverton
+http://www.meetup.com/cities/us/al/belk/;Belk;belk
+http://www.meetup.com/cities/us/al/bellamy/;Bellamy;bellamy
+http://www.meetup.com/cities/us/al/belle_mina/;Belle Mina;belle_mina
+http://www.meetup.com/cities/us/al/bellwood/;Bellwood;bellwood
+http://www.meetup.com/cities/us/al/berry/;Berry;berry
+http://www.meetup.com/cities/us/al/bessemer/;Bessemer;bessemer
+http://www.meetup.com/cities/us/al/billingsley/;Billingsley;billingsley
+http://www.meetup.com/cities/us/al/birmingham/;Birmingham;birmingham
+http://www.meetup.com/cities/us/al/black/;Black;black
+http://www.meetup.com/cities/us/al/blountsville/;Blountsville;blountsville
+http://www.meetup.com/cities/us/al/boaz/;Boaz;boaz
+http://www.meetup.com/cities/us/al/boligee/;Boligee;boligee
+http://www.meetup.com/cities/us/al/bon_air/;Bon Air;bon_air
+http://www.meetup.com/cities/us/al/bon_secour/;Bon Secour;bon_secour
+http://www.meetup.com/cities/us/al/booth/;Booth;booth
+http://www.meetup.com/cities/us/al/boykin/;Boykin;boykin
+http://www.meetup.com/cities/us/al/brantley/;Brantley;brantley
+http://www.meetup.com/cities/us/al/bremen/;Bremen;bremen
+http://www.meetup.com/cities/us/al/brent/;Brent;brent
+http://www.meetup.com/cities/us/al/brewton/;Brewton;brewton
+http://www.meetup.com/cities/us/al/bridgeport/;Bridgeport;bridgeport
+http://www.meetup.com/cities/us/al/brierfield/;Brierfield;brierfield
+http://www.meetup.com/cities/us/al/brilliant/;Brilliant;brilliant
+http://www.meetup.com/cities/us/al/brooklyn/;Brooklyn;brooklyn
+http://www.meetup.com/cities/us/al/brookside/;Brookside;brookside
+http://www.meetup.com/cities/us/al/brookwood/;Brookwood;brookwood
+http://www.meetup.com/cities/us/al/brownsboro/;Brownsboro;brownsboro
+http://www.meetup.com/cities/us/al/brundidge/;Brundidge;brundidge
+http://www.meetup.com/cities/us/al/bryant/;Bryant;bryant
+http://www.meetup.com/cities/us/al/bucks/;Bucks;bucks
+http://www.meetup.com/cities/us/al/buhl/;Buhl;buhl
+http://www.meetup.com/cities/us/al/burnwell/;Burnwell;burnwell
+http://www.meetup.com/cities/us/al/butler/;Butler;butler
+http://www.meetup.com/cities/us/al/bynum/;Bynum;bynum
+http://www.meetup.com/cities/us/al/calera/;Calera;calera
+http://www.meetup.com/cities/us/al/calvert/;Calvert;calvert
+http://www.meetup.com/cities/us/al/camden/;Camden;camden
+http://www.meetup.com/cities/us/al/campbell/;Campbell;campbell
+http://www.meetup.com/cities/us/al/camp_hill/;Camp Hill;camp_hill
+http://www.meetup.com/cities/us/al/capshaw/;Capshaw;capshaw
+http://www.meetup.com/cities/us/al/carbon_hill/;Carbon Hill;carbon_hill
+http://www.meetup.com/cities/us/al/cardiff/;Cardiff;cardiff
+http://www.meetup.com/cities/us/al/carlton/;Carlton;carlton
+http://www.meetup.com/cities/us/al/carrollton/;Carrollton;carrollton
+http://www.meetup.com/cities/us/al/castleberry/;Castleberry;castleberry
+http://www.meetup.com/cities/us/al/catherine/;Catherine;catherine
+http://www.meetup.com/cities/us/al/cecil/;Cecil;cecil
+http://www.meetup.com/cities/us/al/cedar_bluff/;Cedar Bluff;cedar_bluff
+http://www.meetup.com/cities/us/al/centre/;Centre;centre
+http://www.meetup.com/cities/us/al/centreville/;Centreville;centreville
+http://www.meetup.com/cities/us/al/chancellor/;Chancellor;chancellor
+http://www.meetup.com/cities/us/al/chapman/;Chapman;chapman
+http://www.meetup.com/cities/us/al/chatom/;Chatom;chatom
+http://www.meetup.com/cities/us/al/chelsea/;Chelsea;chelsea
+http://www.meetup.com/cities/us/al/cherokee/;Cherokee;cherokee
+http://www.meetup.com/cities/us/al/childersburg/;Childersburg;childersburg
+http://www.meetup.com/cities/us/al/choccolocco/;Choccolocco;choccolocco
+http://www.meetup.com/cities/us/al/chunchula/;Chunchula;chunchula
+http://www.meetup.com/cities/us/al/citronelle/;Citronelle;citronelle
+http://www.meetup.com/cities/us/al/clanton/;Clanton;clanton
+http://www.meetup.com/cities/us/al/clay/;Clay;clay
+http://www.meetup.com/cities/us/al/clayton/;Clayton;clayton
+http://www.meetup.com/cities/us/al/cleveland/;Cleveland;cleveland
+http://www.meetup.com/cities/us/al/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/al/clio/;Clio;clio
+http://www.meetup.com/cities/us/al/clopton/;Clopton;clopton
+http://www.meetup.com/cities/us/al/cloverdale/;Cloverdale;cloverdale
+http://www.meetup.com/cities/us/al/coaling/;Coaling;coaling
+http://www.meetup.com/cities/us/al/coden/;Coden;coden
+http://www.meetup.com/cities/us/al/coffee_springs/;Coffee Springs;coffee_springs
+http://www.meetup.com/cities/us/al/coffeeville/;Coffeeville;coffeeville
+http://www.meetup.com/cities/us/al/coker/;Coker;coker
+http://www.meetup.com/cities/us/al/collinsville/;Collinsville;collinsville
+http://www.meetup.com/cities/us/al/columbia/;Columbia;columbia
+http://www.meetup.com/cities/us/al/columbiana/;Columbiana;columbiana
+http://www.meetup.com/cities/us/al/cook_springs/;Cook Springs;cook_springs
+http://www.meetup.com/cities/us/al/coosada/;Coosada;coosada
+http://www.meetup.com/cities/us/al/cordova/;Cordova;cordova
+http://www.meetup.com/cities/us/al/cottondale/;Cottondale;cottondale
+http://www.meetup.com/cities/us/al/cottonton/;Cottonton;cottonton
+http://www.meetup.com/cities/us/al/cottonwood/;Cottonwood;cottonwood
+http://www.meetup.com/cities/us/al/courtland/;Courtland;courtland
+http://www.meetup.com/cities/us/al/cowarts/;Cowarts;cowarts
+http://www.meetup.com/cities/us/al/coy/;Coy;coy
+http://www.meetup.com/cities/us/al/cragford/;Cragford;cragford
+http://www.meetup.com/cities/us/al/crane_hill/;Crane Hill;crane_hill
+http://www.meetup.com/cities/us/al/creola/;Creola;creola
+http://www.meetup.com/cities/us/al/cropwell/;Cropwell;cropwell
+http://www.meetup.com/cities/us/al/crossville/;Crossville;crossville
+http://www.meetup.com/cities/us/al/cuba/;Cuba;cuba
+http://www.meetup.com/cities/us/al/cullman/;Cullman;cullman
+http://www.meetup.com/cities/us/al/cusseta/;Cusseta;cusseta
+http://www.meetup.com/cities/us/al/dadeville/;Dadeville;dadeville
+http://www.meetup.com/cities/us/al/daleville/;Daleville;daleville
+http://www.meetup.com/cities/us/al/danville/;Danville;danville
+http://www.meetup.com/cities/us/al/daphne/;Daphne;daphne
+http://www.meetup.com/cities/us/al/dauphin_island/;Dauphin Island;dauphin_island
+http://www.meetup.com/cities/us/al/daviston/;Daviston;daviston
+http://www.meetup.com/cities/us/al/dawson/;Dawson;dawson
+http://www.meetup.com/cities/us/al/de_armanville/;De Armanville;de_armanville
+http://www.meetup.com/cities/us/al/deatsville/;Deatsville;deatsville
+http://www.meetup.com/cities/us/al/decatur/;Decatur;decatur
+http://www.meetup.com/cities/us/al/deer_park/;Deer Park;deer_park
+http://www.meetup.com/cities/us/al/delmar/;Delmar;delmar
+http://www.meetup.com/cities/us/al/delta/;Delta;delta
+http://www.meetup.com/cities/us/al/demopolis/;Demopolis;demopolis
+http://www.meetup.com/cities/us/al/detroit/;Detroit;detroit
+http://www.meetup.com/cities/us/al/dickinson/;Dickinson;dickinson
+http://www.meetup.com/cities/us/al/dixons_mills/;Dixons Mills;dixons_mills
+http://www.meetup.com/cities/us/al/docena/;Docena;docena
+http://www.meetup.com/cities/us/al/dolomite/;Dolomite;dolomite
+http://www.meetup.com/cities/us/al/dora/;Dora;dora
+http://www.meetup.com/cities/us/al/dothan/;Dothan;dothan
+http://www.meetup.com/cities/us/al/double_springs/;Double Springs;double_springs
+http://www.meetup.com/cities/us/al/douglas/;Douglas;douglas
+http://www.meetup.com/cities/us/al/dozier/;Dozier;dozier
+http://www.meetup.com/cities/us/al/duncanville/;Duncanville;duncanville
+http://www.meetup.com/cities/us/al/dutton/;Dutton;dutton
+http://www.meetup.com/cities/us/al/eastaboga/;Eastaboga;eastaboga
+http://www.meetup.com/cities/us/al/east_tallassee/;East Tallassee;east_tallassee
+http://www.meetup.com/cities/us/al/echola/;Echola;echola
+http://www.meetup.com/cities/us/al/eclectic/;Eclectic;eclectic
+http://www.meetup.com/cities/us/al/edwardsville/;Edwardsville;edwardsville
+http://www.meetup.com/cities/us/al/eight_mile/;Eight Mile;eight_mile
+http://www.meetup.com/cities/us/al/elba/;Elba;elba
+http://www.meetup.com/cities/us/al/elberta/;Elberta;elberta
+http://www.meetup.com/cities/us/al/eldridge/;Eldridge;eldridge
+http://www.meetup.com/cities/us/al/elkmont/;Elkmont;elkmont
+http://www.meetup.com/cities/us/al/elmore/;Elmore;elmore
+http://www.meetup.com/cities/us/al/elrod/;Elrod;elrod
+http://www.meetup.com/cities/us/al/emelle/;Emelle;emelle
+http://www.meetup.com/cities/us/al/empire/;Empire;empire
+http://www.meetup.com/cities/us/al/enterprise/;Enterprise;enterprise
+http://www.meetup.com/cities/us/al/epes/;Epes;epes
+http://www.meetup.com/cities/us/al/equality/;Equality;equality
+http://www.meetup.com/cities/us/al/estillfork/;Estillfork;estillfork
+http://www.meetup.com/cities/us/al/ethelsville/;Ethelsville;ethelsville
+http://www.meetup.com/cities/us/al/eufaula/;Eufaula;eufaula
+http://www.meetup.com/cities/us/al/eutaw/;Eutaw;eutaw
+http://www.meetup.com/cities/us/al/eva/;Eva;eva
+http://www.meetup.com/cities/us/al/evergreen/;Evergreen;evergreen
+http://www.meetup.com/cities/us/al/excel/;Excel;excel
+http://www.meetup.com/cities/us/al/fackler/;Fackler;fackler
+http://www.meetup.com/cities/us/al/fairfield/;Fairfield;fairfield
+http://www.meetup.com/cities/us/al/fairhope/;Fairhope;fairhope
+http://www.meetup.com/cities/us/al/falkville/;Falkville;falkville
+http://www.meetup.com/cities/us/al/faunsdale/;Faunsdale;faunsdale
+http://www.meetup.com/cities/us/al/fayette/;Fayette;fayette
+http://www.meetup.com/cities/us/al/fitzpatrick/;Fitzpatrick;fitzpatrick
+http://www.meetup.com/cities/us/al/five_points/;Five Points;five_points
+http://www.meetup.com/cities/us/al/flat_rock/;Flat Rock;flat_rock
+http://www.meetup.com/cities/us/al/flomaton/;Flomaton;flomaton
+http://www.meetup.com/cities/us/al/florala/;Florala;florala
+http://www.meetup.com/cities/us/al/florence/;Florence;florence
+http://www.meetup.com/cities/us/al/foley/;Foley;foley
+http://www.meetup.com/cities/us/al/forest_home/;Forest Home;forest_home
+http://www.meetup.com/cities/us/al/forkland/;Forkland;forkland
+http://www.meetup.com/cities/us/al/fort_davis/;Fort Davis;fort_davis
+http://www.meetup.com/cities/us/al/fort_deposit/;Fort Deposit;fort_deposit
+http://www.meetup.com/cities/us/al/fort_mitchell/;Fort Mitchell;fort_mitchell
+http://www.meetup.com/cities/us/al/fort_payne/;Fort Payne;fort_payne
+http://www.meetup.com/cities/us/al/fort_rucker/;Fort Rucker;fort_rucker
+http://www.meetup.com/cities/us/al/fosters/;Fosters;fosters
+http://www.meetup.com/cities/us/al/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/al/frankville/;Frankville;frankville
+http://www.meetup.com/cities/us/al/frisco_city/;Frisco City;frisco_city
+http://www.meetup.com/cities/us/al/fruitdale/;Fruitdale;fruitdale
+http://www.meetup.com/cities/us/al/fruithurst/;Fruithurst;fruithurst
+http://www.meetup.com/cities/us/al/fulton/;Fulton;fulton
+http://www.meetup.com/cities/us/al/fultondale/;Fultondale;fultondale
+http://www.meetup.com/cities/us/al/furman/;Furman;furman
+http://www.meetup.com/cities/us/al/fyffe/;Fyffe;fyffe
+http://www.meetup.com/cities/us/al/gadsden/;Gadsden;gadsden
+http://www.meetup.com/cities/us/al/gainestown/;Gainestown;gainestown
+http://www.meetup.com/cities/us/al/gainesville/;Gainesville;gainesville
+http://www.meetup.com/cities/us/al/gallant/;Gallant;gallant
+http://www.meetup.com/cities/us/al/gallion/;Gallion;gallion
+http://www.meetup.com/cities/us/al/gantt/;Gantt;gantt
+http://www.meetup.com/cities/us/al/garden_city/;Garden City;garden_city
+http://www.meetup.com/cities/us/al/gardendale/;Gardendale;gardendale
+http://www.meetup.com/cities/us/al/gaylesville/;Gaylesville;gaylesville
+http://www.meetup.com/cities/us/al/geneva/;Geneva;geneva
+http://www.meetup.com/cities/us/al/georgiana/;Georgiana;georgiana
+http://www.meetup.com/cities/us/al/geraldine/;Geraldine;geraldine
+http://www.meetup.com/cities/us/al/gilbertown/;Gilbertown;gilbertown
+http://www.meetup.com/cities/us/al/glen_allen/;Glen Allen;glen_allen
+http://www.meetup.com/cities/us/al/glenwood/;Glenwood;glenwood
+http://www.meetup.com/cities/us/al/goodsprings/;Goodsprings;goodsprings
+http://www.meetup.com/cities/us/al/goodwater/;Goodwater;goodwater
+http://www.meetup.com/cities/us/al/goodway/;Goodway;goodway
+http://www.meetup.com/cities/us/al/gordo/;Gordo;gordo
+http://www.meetup.com/cities/us/al/gordon/;Gordon;gordon
+http://www.meetup.com/cities/us/al/goshen/;Goshen;goshen
+http://www.meetup.com/cities/us/al/grady/;Grady;grady
+http://www.meetup.com/cities/us/al/graham/;Graham;graham
+http://www.meetup.com/cities/us/al/grand_bay/;Grand Bay;grand_bay
+http://www.meetup.com/cities/us/al/grant/;Grant;grant
+http://www.meetup.com/cities/us/al/graysville/;Graysville;graysville
+http://www.meetup.com/cities/us/al/green_pond/;Green Pond;green_pond
+http://www.meetup.com/cities/us/al/greensboro/;Greensboro;greensboro
+http://www.meetup.com/cities/us/al/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/al/grove_hill/;Grove Hill;grove_hill
+http://www.meetup.com/cities/us/al/groveoak/;Groveoak;groveoak
+http://www.meetup.com/cities/us/al/guin/;Guin;guin
+http://www.meetup.com/cities/us/al/gulf_shores/;Gulf Shores;gulf_shores
+http://www.meetup.com/cities/us/al/guntersville/;Guntersville;guntersville
+http://www.meetup.com/cities/us/al/gurley/;Gurley;gurley
+http://www.meetup.com/cities/us/al/hackleburg/;Hackleburg;hackleburg
+http://www.meetup.com/cities/us/al/haleyville/;Haleyville;haleyville
+http://www.meetup.com/cities/us/al/hamilton/;Hamilton;hamilton
+http://www.meetup.com/cities/us/al/hanceville/;Hanceville;hanceville
+http://www.meetup.com/cities/us/al/hardaway/;Hardaway;hardaway
+http://www.meetup.com/cities/us/al/harpersville/;Harpersville;harpersville
+http://www.meetup.com/cities/us/al/hartford/;Hartford;hartford
+http://www.meetup.com/cities/us/al/hartselle/;Hartselle;hartselle
+http://www.meetup.com/cities/us/al/harvest/;Harvest;harvest
+http://www.meetup.com/cities/us/al/hatchechubbee/;Hatchechubbee;hatchechubbee
+http://www.meetup.com/cities/us/al/hayden/;Hayden;hayden
+http://www.meetup.com/cities/us/al/hayneville/;Hayneville;hayneville
+http://www.meetup.com/cities/us/al/hazel_green/;Hazel Green;hazel_green
+http://www.meetup.com/cities/us/al/headland/;Headland;headland
+http://www.meetup.com/cities/us/al/heflin/;Heflin;heflin
+http://www.meetup.com/cities/us/al/helena/;Helena;helena
+http://www.meetup.com/cities/us/al/henagar/;Henagar;henagar
+http://www.meetup.com/cities/us/al/higdon/;Higdon;higdon
+http://www.meetup.com/cities/us/al/highland_home/;Highland Home;highland_home
+http://www.meetup.com/cities/us/al/hillsboro/;Hillsboro;hillsboro
+http://www.meetup.com/cities/us/al/hodges/;Hodges;hodges
+http://www.meetup.com/cities/us/al/hollins/;Hollins;hollins
+http://www.meetup.com/cities/us/al/holly_pond/;Holly Pond;holly_pond
+http://www.meetup.com/cities/us/al/hollytree/;Hollytree;hollytree
+http://www.meetup.com/cities/us/al/hollywood/;Hollywood;hollywood
+http://www.meetup.com/cities/us/al/holy_trinity/;Holy Trinity;holy_trinity
+http://www.meetup.com/cities/us/al/honoraville/;Honoraville;honoraville
+http://www.meetup.com/cities/us/al/hope_hull/;Hope Hull;hope_hull
+http://www.meetup.com/cities/us/al/horton/;Horton;horton
+http://www.meetup.com/cities/us/al/houston/;Houston;houston
+http://www.meetup.com/cities/us/al/huntsville/;Huntsville;huntsville
+http://www.meetup.com/cities/us/al/hurtsboro/;Hurtsboro;hurtsboro
+http://www.meetup.com/cities/us/al/huxford/;Huxford;huxford
+http://www.meetup.com/cities/us/al/ider/;Ider;ider
+http://www.meetup.com/cities/us/al/irvington/;Irvington;irvington
+http://www.meetup.com/cities/us/al/jachin/;Jachin;jachin
+http://www.meetup.com/cities/us/al/jack/;Jack;jack
+http://www.meetup.com/cities/us/al/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/al/jacksons_gap/;Jacksons Gap;jacksons_gap
+http://www.meetup.com/cities/us/al/jacksonville/;Jacksonville;jacksonville
+http://www.meetup.com/cities/us/al/jasper/;Jasper;jasper
+http://www.meetup.com/cities/us/al/jefferson/;Jefferson;jefferson
+http://www.meetup.com/cities/us/al/jemison/;Jemison;jemison
+http://www.meetup.com/cities/us/al/jones/;Jones;jones
+http://www.meetup.com/cities/us/al/joppa/;Joppa;joppa
+http://www.meetup.com/cities/us/al/kansas/;Kansas;kansas
+http://www.meetup.com/cities/us/al/kellerman/;Kellerman;kellerman
+http://www.meetup.com/cities/us/al/kellyton/;Kellyton;kellyton
+http://www.meetup.com/cities/us/al/kennedy/;Kennedy;kennedy
+http://www.meetup.com/cities/us/al/kent/;Kent;kent
+http://www.meetup.com/cities/us/al/killen/;Killen;killen
+http://www.meetup.com/cities/us/al/kimberly/;Kimberly;kimberly
+http://www.meetup.com/cities/us/al/kinston/;Kinston;kinston
+http://www.meetup.com/cities/us/al/knoxville/;Knoxville;knoxville
+http://www.meetup.com/cities/us/al/laceys_spring/;Laceys Spring;laceys_spring
+http://www.meetup.com/cities/us/al/lafayette/;Lafayette;lafayette
+http://www.meetup.com/cities/us/al/lanett/;Lanett;lanett
+http://www.meetup.com/cities/us/al/langston/;Langston;langston
+http://www.meetup.com/cities/us/al/lapine/;Lapine;lapine
+http://www.meetup.com/cities/us/al/lawley/;Lawley;lawley
+http://www.meetup.com/cities/us/al/leeds/;Leeds;leeds
+http://www.meetup.com/cities/us/al/leesburg/;Leesburg;leesburg
+http://www.meetup.com/cities/us/al/leighton/;Leighton;leighton
+http://www.meetup.com/cities/us/al/lenox/;Lenox;lenox
+http://www.meetup.com/cities/us/al/leroy/;Leroy;leroy
+http://www.meetup.com/cities/us/al/lester/;Lester;lester
+http://www.meetup.com/cities/us/al/letohatchee/;Letohatchee;letohatchee
+http://www.meetup.com/cities/us/al/lexington/;Lexington;lexington
+http://www.meetup.com/cities/us/al/lillian/;Lillian;lillian
+http://www.meetup.com/cities/us/al/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/al/linden/;Linden;linden
+http://www.meetup.com/cities/us/al/lineville/;Lineville;lineville
+http://www.meetup.com/cities/us/al/lisman/;Lisman;lisman
+http://www.meetup.com/cities/us/al/little_river/;Little River;little_river
+http://www.meetup.com/cities/us/al/livingston/;Livingston;livingston
+http://www.meetup.com/cities/us/al/loachapoka/;Loachapoka;loachapoka
+http://www.meetup.com/cities/us/al/lockhart/;Lockhart;lockhart
+http://www.meetup.com/cities/us/al/locust_fork/;Locust Fork;locust_fork
+http://www.meetup.com/cities/us/al/logan/;Logan;logan
+http://www.meetup.com/cities/us/al/louisville/;Louisville;louisville
+http://www.meetup.com/cities/us/al/lower_peach_tree/;Lower Peach Tree;lower_peach_tree
+http://www.meetup.com/cities/us/al/lowndesboro/;Lowndesboro;lowndesboro
+http://www.meetup.com/cities/us/al/loxley/;Loxley;loxley
+http://www.meetup.com/cities/us/al/luverne/;Luverne;luverne
+http://www.meetup.com/cities/us/al/lynn/;Lynn;lynn
+http://www.meetup.com/cities/us/al/madison/;Madison;madison
+http://www.meetup.com/cities/us/al/magnolia/;Magnolia;magnolia
+http://www.meetup.com/cities/us/al/magnolia_springs/;Magnolia Springs;magnolia_springs
+http://www.meetup.com/cities/us/al/malcolm/;Malcolm;malcolm
+http://www.meetup.com/cities/us/al/malvern/;Malvern;malvern
+http://www.meetup.com/cities/us/al/maplesville/;Maplesville;maplesville
+http://www.meetup.com/cities/us/al/marbury/;Marbury;marbury
+http://www.meetup.com/cities/us/al/margaret/;Margaret;margaret
+http://www.meetup.com/cities/us/al/marion/;Marion;marion
+http://www.meetup.com/cities/us/al/marion_junction/;Marion Junction;marion_junction
+http://www.meetup.com/cities/us/al/mathews/;Mathews;mathews
+http://www.meetup.com/cities/us/al/maylene/;Maylene;maylene
+http://www.meetup.com/cities/us/al/mc_calla/;Mc Calla;mc_calla
+http://www.meetup.com/cities/us/al/mc_intosh/;Mc Intosh;mc_intosh
+http://www.meetup.com/cities/us/al/mc_kenzie/;Mc Kenzie;mc_kenzie
+http://www.meetup.com/cities/us/al/mc_shan/;Mc Shan;mc_shan
+http://www.meetup.com/cities/us/al/mc_williams/;Mc Williams;mc_williams
+http://www.meetup.com/cities/us/al/megargel/;Megargel;megargel
+http://www.meetup.com/cities/us/al/melvin/;Melvin;melvin
+http://www.meetup.com/cities/us/al/mentone/;Mentone;mentone
+http://www.meetup.com/cities/us/al/meridianville/;Meridianville;meridianville
+http://www.meetup.com/cities/us/al/mexia/;Mexia;mexia
+http://www.meetup.com/cities/us/al/midland_city/;Midland City;midland_city
+http://www.meetup.com/cities/us/al/midway/;Midway;midway
+http://www.meetup.com/cities/us/al/millbrook/;Millbrook;millbrook
+http://www.meetup.com/cities/us/al/millerville/;Millerville;millerville
+http://www.meetup.com/cities/us/al/millport/;Millport;millport
+http://www.meetup.com/cities/us/al/millry/;Millry;millry
+http://www.meetup.com/cities/us/al/minter/;Minter;minter
+http://www.meetup.com/cities/us/al/mobile/;Mobile;mobile
+http://www.meetup.com/cities/us/al/monroeville/;Monroeville;monroeville
+http://www.meetup.com/cities/us/al/montevallo/;Montevallo;montevallo
+http://www.meetup.com/cities/us/al/montgomery/;Montgomery;montgomery
+http://www.meetup.com/cities/us/al/montrose/;Montrose;montrose
+http://www.meetup.com/cities/us/al/moody/;Moody;moody
+http://www.meetup.com/cities/us/al/mooresville/;Mooresville;mooresville
+http://www.meetup.com/cities/us/al/morris/;Morris;morris
+http://www.meetup.com/cities/us/al/morvin/;Morvin;morvin
+http://www.meetup.com/cities/us/al/moulton/;Moulton;moulton
+http://www.meetup.com/cities/us/al/moundville/;Moundville;moundville
+http://www.meetup.com/cities/us/al/mount_hope/;Mount Hope;mount_hope
+http://www.meetup.com/cities/us/al/mount_meigs/;Mount Meigs;mount_meigs
+http://www.meetup.com/cities/us/al/mount_olive/;Mount Olive;mount_olive
+http://www.meetup.com/cities/us/al/mount_vernon/;Mount Vernon;mount_vernon
+http://www.meetup.com/cities/us/al/mulga/;Mulga;mulga
+http://www.meetup.com/cities/us/al/munford/;Munford;munford
+http://www.meetup.com/cities/us/al/muscadine/;Muscadine;muscadine
+http://www.meetup.com/cities/us/al/muscle_shoals/;Muscle Shoals;muscle_shoals
+http://www.meetup.com/cities/us/al/myrtlewood/;Myrtlewood;myrtlewood
+http://www.meetup.com/cities/us/al/nanafalia/;Nanafalia;nanafalia
+http://www.meetup.com/cities/us/al/natural_bridge/;Natural Bridge;natural_bridge
+http://www.meetup.com/cities/us/al/nauvoo/;Nauvoo;nauvoo
+http://www.meetup.com/cities/us/al/needham/;Needham;needham
+http://www.meetup.com/cities/us/al/newbern/;Newbern;newbern
+http://www.meetup.com/cities/us/al/new_brockton/;New Brockton;new_brockton
+http://www.meetup.com/cities/us/al/new_castle/;New Castle;new_castle
+http://www.meetup.com/cities/us/al/new_hope/;New Hope;new_hope
+http://www.meetup.com/cities/us/al/new_market/;New Market;new_market
+http://www.meetup.com/cities/us/al/newton/;Newton;newton
+http://www.meetup.com/cities/us/al/newville/;Newville;newville
+http://www.meetup.com/cities/us/al/normal/;Normal;normal
+http://www.meetup.com/cities/us/al/northport/;Northport;northport
+http://www.meetup.com/cities/us/al/notasulga/;Notasulga;notasulga
+http://www.meetup.com/cities/us/al/oak_hill/;Oak Hill;oak_hill
+http://www.meetup.com/cities/us/al/oakman/;Oakman;oakman
+http://www.meetup.com/cities/us/al/odenville/;Odenville;odenville
+http://www.meetup.com/cities/us/al/ohatchee/;Ohatchee;ohatchee
+http://www.meetup.com/cities/us/al/oneonta/;Oneonta;oneonta
+http://www.meetup.com/cities/us/al/opelika/;Opelika;opelika
+http://www.meetup.com/cities/us/al/opp/;Opp;opp
+http://www.meetup.com/cities/us/al/orange_beach/;Orange Beach;orange_beach
+http://www.meetup.com/cities/us/al/orrville/;Orrville;orrville
+http://www.meetup.com/cities/us/al/owens_cross_roads/;Owens Cross Roads;owens_cross_roads
+http://www.meetup.com/cities/us/al/oxford/;Oxford;oxford
+http://www.meetup.com/cities/us/al/ozark/;Ozark;ozark
+http://www.meetup.com/cities/us/al/paint_rock/;Paint Rock;paint_rock
+http://www.meetup.com/cities/us/al/palmerdale/;Palmerdale;palmerdale
+http://www.meetup.com/cities/us/al/panola/;Panola;panola
+http://www.meetup.com/cities/us/al/pansey/;Pansey;pansey
+http://www.meetup.com/cities/us/al/parrish/;Parrish;parrish
+http://www.meetup.com/cities/us/al/pelham/;Pelham;pelham
+http://www.meetup.com/cities/us/al/pell_city/;Pell City;pell_city
+http://www.meetup.com/cities/us/al/pennington/;Pennington;pennington
+http://www.meetup.com/cities/us/al/perdido/;Perdido;perdido
+http://www.meetup.com/cities/us/al/perdue_hill/;Perdue Hill;perdue_hill
+http://www.meetup.com/cities/us/al/perote/;Perote;perote
+http://www.meetup.com/cities/us/al/peterman/;Peterman;peterman
+http://www.meetup.com/cities/us/al/peterson/;Peterson;peterson
+http://www.meetup.com/cities/us/al/petrey/;Petrey;petrey
+http://www.meetup.com/cities/us/al/phenix_city/;Phenix City;phenix_city
+http://www.meetup.com/cities/us/al/phil_campbell/;Phil Campbell;phil_campbell
+http://www.meetup.com/cities/us/al/piedmont/;Piedmont;piedmont
+http://www.meetup.com/cities/us/al/pike_road/;Pike Road;pike_road
+http://www.meetup.com/cities/us/al/pinckard/;Pinckard;pinckard
+http://www.meetup.com/cities/us/al/pine_apple/;Pine Apple;pine_apple
+http://www.meetup.com/cities/us/al/pine_hill/;Pine Hill;pine_hill
+http://www.meetup.com/cities/us/al/pine_level/;Pine Level;pine_level
+http://www.meetup.com/cities/us/al/pinson/;Pinson;pinson
+http://www.meetup.com/cities/us/al/pisgah/;Pisgah;pisgah
+http://www.meetup.com/cities/us/al/pittsview/;Pittsview;pittsview
+http://www.meetup.com/cities/us/al/plantersville/;Plantersville;plantersville
+http://www.meetup.com/cities/us/al/pleasant_grove/;Pleasant Grove;pleasant_grove
+http://www.meetup.com/cities/us/al/point_clear/;Point Clear;point_clear
+http://www.meetup.com/cities/us/al/prattville/;Prattville;prattville
+http://www.meetup.com/cities/us/al/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/al/quinton/;Quinton;quinton
+http://www.meetup.com/cities/us/al/ragland/;Ragland;ragland
+http://www.meetup.com/cities/us/al/rainbow_city/;Rainbow City;rainbow_city
+http://www.meetup.com/cities/us/al/rainsville/;Rainsville;rainsville
+http://www.meetup.com/cities/us/al/ralph/;Ralph;ralph
+http://www.meetup.com/cities/us/al/ramer/;Ramer;ramer
+http://www.meetup.com/cities/us/al/ranburne/;Ranburne;ranburne
+http://www.meetup.com/cities/us/al/randolph/;Randolph;randolph
+http://www.meetup.com/cities/us/al/range/;Range;range
+http://www.meetup.com/cities/us/al/red_bay/;Red Bay;red_bay
+http://www.meetup.com/cities/us/al/red_level/;Red Level;red_level
+http://www.meetup.com/cities/us/al/reform/;Reform;reform
+http://www.meetup.com/cities/us/al/remlap/;Remlap;remlap
+http://www.meetup.com/cities/us/al/repton/;Repton;repton
+http://www.meetup.com/cities/us/al/river_falls/;River Falls;river_falls
+http://www.meetup.com/cities/us/al/riverside/;Riverside;riverside
+http://www.meetup.com/cities/us/al/roanoke/;Roanoke;roanoke
+http://www.meetup.com/cities/us/al/robertsdale/;Robertsdale;robertsdale
+http://www.meetup.com/cities/us/al/rockford/;Rockford;rockford
+http://www.meetup.com/cities/us/al/rogersville/;Rogersville;rogersville
+http://www.meetup.com/cities/us/al/russellville/;Russellville;russellville
+http://www.meetup.com/cities/us/al/rutledge/;Rutledge;rutledge
+http://www.meetup.com/cities/us/al/ryland/;Ryland;ryland
+http://www.meetup.com/cities/us/al/safford/;Safford;safford
+http://www.meetup.com/cities/us/al/saginaw/;Saginaw;saginaw
+http://www.meetup.com/cities/us/al/saint_elmo/;Saint Elmo;saint_elmo
+http://www.meetup.com/cities/us/al/saint_stephens/;Saint Stephens;saint_stephens
+http://www.meetup.com/cities/us/al/salem/;Salem;salem
+http://www.meetup.com/cities/us/al/samantha/;Samantha;samantha
+http://www.meetup.com/cities/us/al/samson/;Samson;samson
+http://www.meetup.com/cities/us/al/saraland/;Saraland;saraland
+http://www.meetup.com/cities/us/al/sardis/;Sardis;sardis
+http://www.meetup.com/cities/us/al/satsuma/;Satsuma;satsuma
+http://www.meetup.com/cities/us/al/sawyerville/;Sawyerville;sawyerville
+http://www.meetup.com/cities/us/al/sayre/;Sayre;sayre
+http://www.meetup.com/cities/us/al/scottsboro/;Scottsboro;scottsboro
+http://www.meetup.com/cities/us/al/seale/;Seale;seale
+http://www.meetup.com/cities/us/al/section/;Section;section
+http://www.meetup.com/cities/us/al/selma/;Selma;selma
+http://www.meetup.com/cities/us/al/seminole/;Seminole;seminole
+http://www.meetup.com/cities/us/al/semmes/;Semmes;semmes
+http://www.meetup.com/cities/us/al/shannon/;Shannon;shannon
+http://www.meetup.com/cities/us/al/sheffield/;Sheffield;sheffield
+http://www.meetup.com/cities/us/al/shelby/;Shelby;shelby
+http://www.meetup.com/cities/us/al/shorter/;Shorter;shorter
+http://www.meetup.com/cities/us/al/shorterville/;Shorterville;shorterville
+http://www.meetup.com/cities/us/al/silas/;Silas;silas
+http://www.meetup.com/cities/us/al/siluria/;Siluria;siluria
+http://www.meetup.com/cities/us/al/silverhill/;Silverhill;silverhill
+http://www.meetup.com/cities/us/al/sipsey/;Sipsey;sipsey
+http://www.meetup.com/cities/us/al/skipperville/;Skipperville;skipperville
+http://www.meetup.com/cities/us/al/slocomb/;Slocomb;slocomb
+http://www.meetup.com/cities/us/al/smiths_station/;Smiths Station;smiths_station
+http://www.meetup.com/cities/us/al/somerville/;Somerville;somerville
+http://www.meetup.com/cities/us/al/spanish_fort/;Spanish Fort;spanish_fort
+http://www.meetup.com/cities/us/al/spring_garden/;Spring Garden;spring_garden
+http://www.meetup.com/cities/us/al/springville/;Springville;springville
+http://www.meetup.com/cities/us/al/spruce_pine/;Spruce Pine;spruce_pine
+http://www.meetup.com/cities/us/al/stanton/;Stanton;stanton
+http://www.meetup.com/cities/us/al/stapleton/;Stapleton;stapleton
+http://www.meetup.com/cities/us/al/steele/;Steele;steele
+http://www.meetup.com/cities/us/al/sterrett/;Sterrett;sterrett
+http://www.meetup.com/cities/us/al/stevenson/;Stevenson;stevenson
+http://www.meetup.com/cities/us/al/stockton/;Stockton;stockton
+http://www.meetup.com/cities/us/al/sulligent/;Sulligent;sulligent
+http://www.meetup.com/cities/us/al/sumiton/;Sumiton;sumiton
+http://www.meetup.com/cities/us/al/summerdale/;Summerdale;summerdale
+http://www.meetup.com/cities/us/al/sunflower/;Sunflower;sunflower
+http://www.meetup.com/cities/us/al/sweet_water/;Sweet Water;sweet_water
+http://www.meetup.com/cities/us/al/sycamore/;Sycamore;sycamore
+http://www.meetup.com/cities/us/al/sylacauga/;Sylacauga;sylacauga
+http://www.meetup.com/cities/us/al/sylvania/;Sylvania;sylvania
+http://www.meetup.com/cities/us/al/talladega/;Talladega;talladega
+http://www.meetup.com/cities/us/al/tallassee/;Tallassee;tallassee
+http://www.meetup.com/cities/us/al/tanner/;Tanner;tanner
+http://www.meetup.com/cities/us/al/theodore/;Theodore;theodore
+http://www.meetup.com/cities/us/al/thomaston/;Thomaston;thomaston
+http://www.meetup.com/cities/us/al/thomasville/;Thomasville;thomasville
+http://www.meetup.com/cities/us/al/thorsby/;Thorsby;thorsby
+http://www.meetup.com/cities/us/al/tibbie/;Tibbie;tibbie
+http://www.meetup.com/cities/us/al/titus/;Titus;titus
+http://www.meetup.com/cities/us/al/toney/;Toney;toney
+http://www.meetup.com/cities/us/al/town_creek/;Town Creek;town_creek
+http://www.meetup.com/cities/us/al/townley/;Townley;townley
+http://www.meetup.com/cities/us/al/toxey/;Toxey;toxey
+http://www.meetup.com/cities/us/al/trafford/;Trafford;trafford
+http://www.meetup.com/cities/us/al/trenton/;Trenton;trenton
+http://www.meetup.com/cities/us/al/trinity/;Trinity;trinity
+http://www.meetup.com/cities/us/al/troy/;Troy;troy
+http://www.meetup.com/cities/us/al/trussville/;Trussville;trussville
+http://www.meetup.com/cities/us/al/tuscaloosa/;Tuscaloosa;tuscaloosa
+http://www.meetup.com/cities/us/al/tuscumbia/;Tuscumbia;tuscumbia
+http://www.meetup.com/cities/us/al/tuskegee/;Tuskegee;tuskegee
+http://www.meetup.com/cities/us/al/tuskegee_institute/;Tuskegee Institute;tuskegee_institute
+http://www.meetup.com/cities/us/al/tyler/;Tyler;tyler
+http://www.meetup.com/cities/us/al/union_grove/;Union Grove;union_grove
+http://www.meetup.com/cities/us/al/union_springs/;Union Springs;union_springs
+http://www.meetup.com/cities/us/al/uniontown/;Uniontown;uniontown
+http://www.meetup.com/cities/us/al/uriah/;Uriah;uriah
+http://www.meetup.com/cities/us/al/valhermoso_springs/;Valhermoso Springs;valhermoso_springs
+http://www.meetup.com/cities/us/al/valley/;Valley;valley
+http://www.meetup.com/cities/us/al/valley_head/;Valley Head;valley_head
+http://www.meetup.com/cities/us/al/vance/;Vance;vance
+http://www.meetup.com/cities/us/al/vandiver/;Vandiver;vandiver
+http://www.meetup.com/cities/us/al/verbena/;Verbena;verbena
+http://www.meetup.com/cities/us/al/vernon/;Vernon;vernon
+http://www.meetup.com/cities/us/al/vina/;Vina;vina
+http://www.meetup.com/cities/us/al/vincent/;Vincent;vincent
+http://www.meetup.com/cities/us/al/vinegar_bend/;Vinegar Bend;vinegar_bend
+http://www.meetup.com/cities/us/al/vinemont/;Vinemont;vinemont
+http://www.meetup.com/cities/us/al/vredenburgh/;Vredenburgh;vredenburgh
+http://www.meetup.com/cities/us/al/wadley/;Wadley;wadley
+http://www.meetup.com/cities/us/al/wagarville/;Wagarville;wagarville
+http://www.meetup.com/cities/us/al/walnut_grove/;Walnut Grove;walnut_grove
+http://www.meetup.com/cities/us/al/ward/;Ward;ward
+http://www.meetup.com/cities/us/al/warrior/;Warrior;warrior
+http://www.meetup.com/cities/us/al/waterloo/;Waterloo;waterloo
+http://www.meetup.com/cities/us/al/watson/;Watson;watson
+http://www.meetup.com/cities/us/al/wattsville/;Wattsville;wattsville
+http://www.meetup.com/cities/us/al/waverly/;Waverly;waverly
+http://www.meetup.com/cities/us/al/weaver/;Weaver;weaver
+http://www.meetup.com/cities/us/al/webb/;Webb;webb
+http://www.meetup.com/cities/us/al/wedowee/;Wedowee;wedowee
+http://www.meetup.com/cities/us/al/wellington/;Wellington;wellington
+http://www.meetup.com/cities/us/al/weogufka/;Weogufka;weogufka
+http://www.meetup.com/cities/us/al/west_blocton/;West Blocton;west_blocton
+http://www.meetup.com/cities/us/al/west_greene/;West Greene;west_greene
+http://www.meetup.com/cities/us/al/westover/;Westover;westover
+http://www.meetup.com/cities/us/al/wetumpka/;Wetumpka;wetumpka
+http://www.meetup.com/cities/us/al/whatley/;Whatley;whatley
+http://www.meetup.com/cities/us/al/wilmer/;Wilmer;wilmer
+http://www.meetup.com/cities/us/al/wilsonville/;Wilsonville;wilsonville
+http://www.meetup.com/cities/us/al/wilton/;Wilton;wilton
+http://www.meetup.com/cities/us/al/winfield/;Winfield;winfield
+http://www.meetup.com/cities/us/al/wing/;Wing;wing
+http://www.meetup.com/cities/us/al/woodland/;Woodland;woodland
+http://www.meetup.com/cities/us/al/woodstock/;Woodstock;woodstock
+http://www.meetup.com/cities/us/al/woodville/;Woodville;woodville
+http://www.meetup.com/cities/us/al/york/;York;york

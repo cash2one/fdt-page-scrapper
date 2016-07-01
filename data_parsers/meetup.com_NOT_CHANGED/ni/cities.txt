@@ -1,0 +1,73 @@
+http://www.meetup.com/cities/ni/acoyapa/;Acoyapa;acoyapa
+http://www.meetup.com/cities/ni/bayt_lahm/;Bayt Lahm;bayt_lahm
+http://www.meetup.com/cities/ni/benito_ju%C3%A1rez/;Benito Juárez;benito_ju%C3%A1rez
+http://www.meetup.com/cities/ni/bluefields/;Bluefields;bluefields
+http://www.meetup.com/cities/ni/boaco/;Boaco;boaco
+http://www.meetup.com/cities/ni/bocana_de_paiwas/;Bocana de Paiwas;bocana_de_paiwas
+http://www.meetup.com/cities/ni/bonanza/;Bonanza;bonanza
+http://www.meetup.com/cities/ni/bugaba/;Bugaba;bugaba
+http://www.meetup.com/cities/ni/camoapa/;Camoapa;camoapa
+http://www.meetup.com/cities/ni/chiautzingo/;Chiautzingo;chiautzingo
+http://www.meetup.com/cities/ni/chichigalpa/;Chichigalpa;chichigalpa
+http://www.meetup.com/cities/ni/chinandega/;Chinandega;chinandega
+http://www.meetup.com/cities/ni/ciudad_dar%C3%ADo/;Ciudad Darío;ciudad_dar%C3%ADo
+http://www.meetup.com/cities/ni/condega/;Condega;condega
+http://www.meetup.com/cities/ni/corinto/;Corinto;corinto
+http://www.meetup.com/cities/ni/corn_island/;Corn Island;corn_island
+http://www.meetup.com/cities/ni/diriamba/;Diriamba;diriamba
+http://www.meetup.com/cities/ni/diriomo/;Diriomo;diriomo
+http://www.meetup.com/cities/ni/dolores/;Dolores;dolores
+http://www.meetup.com/cities/ni/el_j%C3%ADcaro/;El Jícaro;el_j%C3%ADcaro
+http://www.meetup.com/cities/ni/el_rama/;El Rama;el_rama
+http://www.meetup.com/cities/ni/el_sauce/;El Sauce;el_sauce
+http://www.meetup.com/cities/ni/el_viejo/;El Viejo;el_viejo
+http://www.meetup.com/cities/ni/estel%C3%AD/;Estelí;estel%C3%AD
+http://www.meetup.com/cities/ni/granada/;Granada;granada
+http://www.meetup.com/cities/ni/hueyotlipan/;Hueyotlipan;hueyotlipan
+http://www.meetup.com/cities/ni/jalapa/;Jalapa;jalapa
+http://www.meetup.com/cities/ni/jinotega/;Jinotega;jinotega
+http://www.meetup.com/cities/ni/jinotepe/;Jinotepe;jinotepe
+http://www.meetup.com/cities/ni/juigalpa/;Juigalpa;juigalpa
+http://www.meetup.com/cities/ni/laguna_de_perlas/;Laguna de Perlas;laguna_de_perlas
+http://www.meetup.com/cities/ni/la_paz_centro/;La Paz Centro;la_paz_centro
+http://www.meetup.com/cities/ni/larreynaga/;Larreynaga;larreynaga
+http://www.meetup.com/cities/ni/la_trinidad/;La Trinidad;la_trinidad
+http://www.meetup.com/cities/ni/le%C3%B3n/;León;le%C3%B3n
+http://www.meetup.com/cities/ni/magdalena_tequisistl%C3%A1n/;Magdalena Tequisistlán;magdalena_tequisistl%C3%A1n
+http://www.meetup.com/cities/ni/managua/;Managua;managua
+http://www.meetup.com/cities/ni/masatepe/;Masatepe;masatepe
+http://www.meetup.com/cities/ni/masaya/;Masaya;masaya
+http://www.meetup.com/cities/ni/matagalpa/;Matagalpa;matagalpa
+http://www.meetup.com/cities/ni/mateare/;Mateare;mateare
+http://www.meetup.com/cities/ni/matigu%C3%A1s/;Matiguás;matigu%C3%A1s
+http://www.meetup.com/cities/ni/nagarote/;Nagarote;nagarote
+http://www.meetup.com/cities/ni/nandaime/;Nandaime;nandaime
+http://www.meetup.com/cities/ni/nandasmo/;Nandasmo;nandasmo
+http://www.meetup.com/cities/ni/nindir%C3%AD/;Nindirí;nindir%C3%AD
+http://www.meetup.com/cities/ni/niquinohomo/;Niquinohomo;niquinohomo
+http://www.meetup.com/cities/ni/nueva_guinea/;Nueva Guinea;nueva_guinea
+http://www.meetup.com/cities/ni/ocotal/;Ocotal;ocotal
+http://www.meetup.com/cities/ni/puerto_cabezas/;Puerto Cabezas;puerto_cabezas
+http://www.meetup.com/cities/ni/puerto_moraz%C3%A1n/;Puerto Morazán;puerto_moraz%C3%A1n
+http://www.meetup.com/cities/ni/quilal%C3%AD/;Quilalí;quilal%C3%AD
+http://www.meetup.com/cities/ni/r%C3%ADo_blanco/;Río Blanco;r%C3%ADo_blanco
+http://www.meetup.com/cities/ni/rivas/;Rivas;rivas
+http://www.meetup.com/cities/ni/rosita/;Rosita;rosita
+http://www.meetup.com/cities/ni/san_isidro/;San Isidro;san_isidro
+http://www.meetup.com/cities/ni/san_jorge/;San Jorge;san_jorge
+http://www.meetup.com/cities/ni/san_juan_del_sur/;San Juan del Sur;san_juan_del_sur
+http://www.meetup.com/cities/ni/san_marcos/;San Marcos;san_marcos
+http://www.meetup.com/cities/ni/san_miguelito/;San Miguelito;san_miguelito
+http://www.meetup.com/cities/ni/san_rafael_del_sur/;San Rafael del Sur;san_rafael_del_sur
+http://www.meetup.com/cities/ni/santo_domingo/;Santo Domingo;santo_domingo
+http://www.meetup.com/cities/ni/s%C3%A9baco/;Sébaco;s%C3%A9baco
+http://www.meetup.com/cities/ni/siuna/;Siuna;siuna
+http://www.meetup.com/cities/ni/somotillo/;Somotillo;somotillo
+http://www.meetup.com/cities/ni/somoto/;Somoto;somoto
+http://www.meetup.com/cities/ni/telica/;Telica;telica
+http://www.meetup.com/cities/ni/ticuantepe/;Ticuantepe;ticuantepe
+http://www.meetup.com/cities/ni/tipitapa/;Tipitapa;tipitapa
+http://www.meetup.com/cities/ni/villa_sandino/;Villa Sandino;villa_sandino
+http://www.meetup.com/cities/ni/waslala/;Waslala;waslala
+http://www.meetup.com/cities/ni/wasp%C3%A1n/;Waspán;wasp%C3%A1n
+http://www.meetup.com/cities/ni/wiwil%C3%AD/;Wiwilí;wiwil%C3%AD

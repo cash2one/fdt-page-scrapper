@@ -1,0 +1,266 @@
+http://www.meetup.com/cities/us/az/aguila/;Aguila;aguila
+http://www.meetup.com/cities/us/az/ajo/;Ajo;ajo
+http://www.meetup.com/cities/us/az/alpine/;Alpine;alpine
+http://www.meetup.com/cities/us/az/amado/;Amado;amado
+http://www.meetup.com/cities/us/az/apache_junction/;Apache Junction;apache_junction
+http://www.meetup.com/cities/us/az/arivaca/;Arivaca;arivaca
+http://www.meetup.com/cities/us/az/arizona_city/;Arizona City;arizona_city
+http://www.meetup.com/cities/us/az/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/az/ash_fork/;Ash Fork;ash_fork
+http://www.meetup.com/cities/us/az/avondale/;Avondale;avondale
+http://www.meetup.com/cities/us/az/bagdad/;Bagdad;bagdad
+http://www.meetup.com/cities/us/az/bapchule/;Bapchule;bapchule
+http://www.meetup.com/cities/us/az/bellemont/;Bellemont;bellemont
+http://www.meetup.com/cities/us/az/benson/;Benson;benson
+http://www.meetup.com/cities/us/az/bisbee/;Bisbee;bisbee
+http://www.meetup.com/cities/us/az/black_canyon_city/;Black Canyon City;black_canyon_city
+http://www.meetup.com/cities/us/az/blue/;Blue;blue
+http://www.meetup.com/cities/us/az/blue_gap/;Blue Gap;blue_gap
+http://www.meetup.com/cities/us/az/bouse/;Bouse;bouse
+http://www.meetup.com/cities/us/az/bowie/;Bowie;bowie
+http://www.meetup.com/cities/us/az/buckeye/;Buckeye;buckeye
+http://www.meetup.com/cities/us/az/bullhead_city/;Bullhead City;bullhead_city
+http://www.meetup.com/cities/us/az/bylas/;Bylas;bylas
+http://www.meetup.com/cities/us/az/cameron/;Cameron;cameron
+http://www.meetup.com/cities/us/az/camp_verde/;Camp Verde;camp_verde
+http://www.meetup.com/cities/us/az/carefree/;Carefree;carefree
+http://www.meetup.com/cities/us/az/casa_grande/;Casa Grande;casa_grande
+http://www.meetup.com/cities/us/az/cashion/;Cashion;cashion
+http://www.meetup.com/cities/us/az/catalina/;Catalina;catalina
+http://www.meetup.com/cities/us/az/cave_creek/;Cave Creek;cave_creek
+http://www.meetup.com/cities/us/az/central/;Central;central
+http://www.meetup.com/cities/us/az/chambers/;Chambers;chambers
+http://www.meetup.com/cities/us/az/chandler/;Chandler;chandler
+http://www.meetup.com/cities/us/az/chandler_heights/;Chandler Heights;chandler_heights
+http://www.meetup.com/cities/us/az/chinle/;Chinle;chinle
+http://www.meetup.com/cities/us/az/chino_valley/;Chino Valley;chino_valley
+http://www.meetup.com/cities/us/az/chloride/;Chloride;chloride
+http://www.meetup.com/cities/us/az/cibecue/;Cibecue;cibecue
+http://www.meetup.com/cities/us/az/cibola/;Cibola;cibola
+http://www.meetup.com/cities/us/az/clarkdale/;Clarkdale;clarkdale
+http://www.meetup.com/cities/us/az/claypool/;Claypool;claypool
+http://www.meetup.com/cities/us/az/clay_springs/;Clay Springs;clay_springs
+http://www.meetup.com/cities/us/az/clifton/;Clifton;clifton
+http://www.meetup.com/cities/us/az/cochise/;Cochise;cochise
+http://www.meetup.com/cities/us/az/colorado_city/;Colorado City;colorado_city
+http://www.meetup.com/cities/us/az/concho/;Concho;concho
+http://www.meetup.com/cities/us/az/congress/;Congress;congress
+http://www.meetup.com/cities/us/az/coolidge/;Coolidge;coolidge
+http://www.meetup.com/cities/us/az/cornville/;Cornville;cornville
+http://www.meetup.com/cities/us/az/cortaro/;Cortaro;cortaro
+http://www.meetup.com/cities/us/az/cottonwood/;Cottonwood;cottonwood
+http://www.meetup.com/cities/us/az/crown_king/;Crown King;crown_king
+http://www.meetup.com/cities/us/az/dateland/;Dateland;dateland
+http://www.meetup.com/cities/us/az/dennehotso/;Dennehotso;dennehotso
+http://www.meetup.com/cities/us/az/dewey/;Dewey;dewey
+http://www.meetup.com/cities/us/az/dolan_springs/;Dolan Springs;dolan_springs
+http://www.meetup.com/cities/us/az/douglas/;Douglas;douglas
+http://www.meetup.com/cities/us/az/dragoon/;Dragoon;dragoon
+http://www.meetup.com/cities/us/az/duncan/;Duncan;duncan
+http://www.meetup.com/cities/us/az/eagar/;Eagar;eagar
+http://www.meetup.com/cities/us/az/eden/;Eden;eden
+http://www.meetup.com/cities/us/az/ehrenberg/;Ehrenberg;ehrenberg
+http://www.meetup.com/cities/us/az/elfrida/;Elfrida;elfrida
+http://www.meetup.com/cities/us/az/elgin/;Elgin;elgin
+http://www.meetup.com/cities/us/az/el_mirage/;El Mirage;el_mirage
+http://www.meetup.com/cities/us/az/eloy/;Eloy;eloy
+http://www.meetup.com/cities/us/az/flagstaff/;Flagstaff;flagstaff
+http://www.meetup.com/cities/us/az/florence/;Florence;florence
+http://www.meetup.com/cities/us/az/forest_lakes/;Forest Lakes;forest_lakes
+http://www.meetup.com/cities/us/az/fort_apache/;Fort Apache;fort_apache
+http://www.meetup.com/cities/us/az/fort_defiance/;Fort Defiance;fort_defiance
+http://www.meetup.com/cities/us/az/fort_huachuca/;Fort Huachuca;fort_huachuca
+http://www.meetup.com/cities/us/az/fort_mcdowell/;Fort McDowell;fort_mcdowell
+http://www.meetup.com/cities/us/az/fort_mohave/;Fort Mohave;fort_mohave
+http://www.meetup.com/cities/us/az/fort_thomas/;Fort Thomas;fort_thomas
+http://www.meetup.com/cities/us/az/fountain_hills/;Fountain Hills;fountain_hills
+http://www.meetup.com/cities/us/az/fredonia/;Fredonia;fredonia
+http://www.meetup.com/cities/us/az/gadsden/;Gadsden;gadsden
+http://www.meetup.com/cities/us/az/ganado/;Ganado;ganado
+http://www.meetup.com/cities/us/az/gila_bend/;Gila Bend;gila_bend
+http://www.meetup.com/cities/us/az/gilbert/;Gilbert;gilbert
+http://www.meetup.com/cities/us/az/glendale/;Glendale;glendale
+http://www.meetup.com/cities/us/az/glendale_luke_afb/;Glendale Luke AFB;glendale_luke_afb
+http://www.meetup.com/cities/us/az/globe/;Globe;globe
+http://www.meetup.com/cities/us/az/gold_canyon/;Gold Canyon;gold_canyon
+http://www.meetup.com/cities/us/az/golden_valley/;Golden Valley;golden_valley
+http://www.meetup.com/cities/us/az/goodyear/;Goodyear;goodyear
+http://www.meetup.com/cities/us/az/grand_canyon/;Grand Canyon;grand_canyon
+http://www.meetup.com/cities/us/az/gray_mountain/;Gray Mountain;gray_mountain
+http://www.meetup.com/cities/us/az/green_valley/;Green Valley;green_valley
+http://www.meetup.com/cities/us/az/greer/;Greer;greer
+http://www.meetup.com/cities/us/az/hackberry/;Hackberry;hackberry
+http://www.meetup.com/cities/us/az/happy_jack/;Happy Jack;happy_jack
+http://www.meetup.com/cities/us/az/hayden/;Hayden;hayden
+http://www.meetup.com/cities/us/az/heber/;Heber;heber
+http://www.meetup.com/cities/us/az/hereford/;Hereford;hereford
+http://www.meetup.com/cities/us/az/higley/;Higley;higley
+http://www.meetup.com/cities/us/az/holbrook/;Holbrook;holbrook
+http://www.meetup.com/cities/us/az/hotevilla/;Hotevilla;hotevilla
+http://www.meetup.com/cities/us/az/houck/;Houck;houck
+http://www.meetup.com/cities/us/az/huachuca_city/;Huachuca City;huachuca_city
+http://www.meetup.com/cities/us/az/hualapai/;Hualapai;hualapai
+http://www.meetup.com/cities/us/az/humboldt/;Humboldt;humboldt
+http://www.meetup.com/cities/us/az/indian_wells/;Indian Wells;indian_wells
+http://www.meetup.com/cities/us/az/iron_springs/;Iron Springs;iron_springs
+http://www.meetup.com/cities/us/az/jerome/;Jerome;jerome
+http://www.meetup.com/cities/us/az/joseph_city/;Joseph City;joseph_city
+http://www.meetup.com/cities/us/az/kaibeto/;Kaibeto;kaibeto
+http://www.meetup.com/cities/us/az/kayenta/;Kayenta;kayenta
+http://www.meetup.com/cities/us/az/keams_canyon/;Keams Canyon;keams_canyon
+http://www.meetup.com/cities/us/az/kearny/;Kearny;kearny
+http://www.meetup.com/cities/us/az/kingman/;Kingman;kingman
+http://www.meetup.com/cities/us/az/kirkland/;Kirkland;kirkland
+http://www.meetup.com/cities/us/az/kykotsmovi_village/;Kykotsmovi Village;kykotsmovi_village
+http://www.meetup.com/cities/us/az/lake_havasu_city/;Lake Havasu City;lake_havasu_city
+http://www.meetup.com/cities/us/az/lake_montezuma/;Lake Montezuma;lake_montezuma
+http://www.meetup.com/cities/us/az/lakeside/;Lakeside;lakeside
+http://www.meetup.com/cities/us/az/laveen/;Laveen;laveen
+http://www.meetup.com/cities/us/az/leupp/;Leupp;leupp
+http://www.meetup.com/cities/us/az/litchfield_park/;Litchfield Park;litchfield_park
+http://www.meetup.com/cities/us/az/littlefield/;Littlefield;littlefield
+http://www.meetup.com/cities/us/az/lukachukai/;Lukachukai;lukachukai
+http://www.meetup.com/cities/us/az/lukeville/;Lukeville;lukeville
+http://www.meetup.com/cities/us/az/lupton/;Lupton;lupton
+http://www.meetup.com/cities/us/az/mammoth/;Mammoth;mammoth
+http://www.meetup.com/cities/us/az/many_farms/;Many Farms;many_farms
+http://www.meetup.com/cities/us/az/marana/;Marana;marana
+http://www.meetup.com/cities/us/az/marble_canyon/;Marble Canyon;marble_canyon
+http://www.meetup.com/cities/us/az/maricopa/;Maricopa;maricopa
+http://www.meetup.com/cities/us/az/mayer/;Mayer;mayer
+http://www.meetup.com/cities/us/az/mcnary/;McNary;mcnary
+http://www.meetup.com/cities/us/az/mc_neal/;Mc Neal;mc_neal
+http://www.meetup.com/cities/us/az/meadview/;Meadview;meadview
+http://www.meetup.com/cities/us/az/mesa/;Mesa;mesa
+http://www.meetup.com/cities/us/az/miami/;Miami;miami
+http://www.meetup.com/cities/us/az/mohave_valley/;Mohave Valley;mohave_valley
+http://www.meetup.com/cities/us/az/morenci/;Morenci;morenci
+http://www.meetup.com/cities/us/az/mormon_lake/;Mormon Lake;mormon_lake
+http://www.meetup.com/cities/us/az/morristown/;Morristown;morristown
+http://www.meetup.com/cities/us/az/mount_lemmon/;Mount Lemmon;mount_lemmon
+http://www.meetup.com/cities/us/az/munds_park/;Munds Park;munds_park
+http://www.meetup.com/cities/us/az/naco/;Naco;naco
+http://www.meetup.com/cities/us/az/nazlini/;Nazlini;nazlini
+http://www.meetup.com/cities/us/az/new_river/;New River;new_river
+http://www.meetup.com/cities/us/az/nogales/;Nogales;nogales
+http://www.meetup.com/cities/us/az/north_rim/;North Rim;north_rim
+http://www.meetup.com/cities/us/az/nutrioso/;Nutrioso;nutrioso
+http://www.meetup.com/cities/us/az/oatman/;Oatman;oatman
+http://www.meetup.com/cities/us/az/oracle/;Oracle;oracle
+http://www.meetup.com/cities/us/az/overgaard/;Overgaard;overgaard
+http://www.meetup.com/cities/us/az/page/;Page;page
+http://www.meetup.com/cities/us/az/palo_verde/;Palo Verde;palo_verde
+http://www.meetup.com/cities/us/az/paradise_valley/;Paradise Valley;paradise_valley
+http://www.meetup.com/cities/us/az/parker/;Parker;parker
+http://www.meetup.com/cities/us/az/parks/;Parks;parks
+http://www.meetup.com/cities/us/az/patagonia/;Patagonia;patagonia
+http://www.meetup.com/cities/us/az/paulden/;Paulden;paulden
+http://www.meetup.com/cities/us/az/payson/;Payson;payson
+http://www.meetup.com/cities/us/az/peach_springs/;Peach Springs;peach_springs
+http://www.meetup.com/cities/us/az/pearce/;Pearce;pearce
+http://www.meetup.com/cities/us/az/peoria/;Peoria;peoria
+http://www.meetup.com/cities/us/az/peridot/;Peridot;peridot
+http://www.meetup.com/cities/us/az/petrified_forest_natl_pk/;Petrified Forest Natl Pk;petrified_forest_natl_pk
+http://www.meetup.com/cities/us/az/phoenix/;Phoenix;phoenix
+http://www.meetup.com/cities/us/az/picacho/;Picacho;picacho
+http://www.meetup.com/cities/us/az/pima/;Pima;pima
+http://www.meetup.com/cities/us/az/pine/;Pine;pine
+http://www.meetup.com/cities/us/az/pinedale/;Pinedale;pinedale
+http://www.meetup.com/cities/us/az/pinetop/;Pinetop;pinetop
+http://www.meetup.com/cities/us/az/pinon/;Pinon;pinon
+http://www.meetup.com/cities/us/az/pirtleville/;Pirtleville;pirtleville
+http://www.meetup.com/cities/us/az/polacca/;Polacca;polacca
+http://www.meetup.com/cities/us/az/pomerene/;Pomerene;pomerene
+http://www.meetup.com/cities/us/az/poston/;Poston;poston
+http://www.meetup.com/cities/us/az/prescott/;Prescott;prescott
+http://www.meetup.com/cities/us/az/prescott_valley/;Prescott Valley;prescott_valley
+http://www.meetup.com/cities/us/az/quartzsite/;Quartzsite;quartzsite
+http://www.meetup.com/cities/us/az/queen_creek/;Queen Creek;queen_creek
+http://www.meetup.com/cities/us/az/red_rock/;Red Rock;red_rock
+http://www.meetup.com/cities/us/az/red_valley/;Red Valley;red_valley
+http://www.meetup.com/cities/us/az/rillito/;Rillito;rillito
+http://www.meetup.com/cities/us/az/rimrock/;Rimrock;rimrock
+http://www.meetup.com/cities/us/az/rio_rico/;Rio Rico;rio_rico
+http://www.meetup.com/cities/us/az/rio_verde/;Rio Verde;rio_verde
+http://www.meetup.com/cities/us/az/rock_point/;Rock Point;rock_point
+http://www.meetup.com/cities/us/az/roll/;Roll;roll
+http://www.meetup.com/cities/us/az/roosevelt/;Roosevelt;roosevelt
+http://www.meetup.com/cities/us/az/round_rock/;Round Rock;round_rock
+http://www.meetup.com/cities/us/az/sacaton/;Sacaton;sacaton
+http://www.meetup.com/cities/us/az/safford/;Safford;safford
+http://www.meetup.com/cities/us/az/sahuarita/;Sahuarita;sahuarita
+http://www.meetup.com/cities/us/az/saint_david/;Saint David;saint_david
+http://www.meetup.com/cities/us/az/saint_johns/;Saint Johns;saint_johns
+http://www.meetup.com/cities/us/az/saint_michaels/;Saint Michaels;saint_michaels
+http://www.meetup.com/cities/us/az/salome/;Salome;salome
+http://www.meetup.com/cities/us/az/san_carlos/;San Carlos;san_carlos
+http://www.meetup.com/cities/us/az/sanders/;Sanders;sanders
+http://www.meetup.com/cities/us/az/san_luis/;San Luis;san_luis
+http://www.meetup.com/cities/us/az/san_manuel/;San Manuel;san_manuel
+http://www.meetup.com/cities/us/az/san_simon/;San Simon;san_simon
+http://www.meetup.com/cities/us/az/san_tan_valley/;San Tan Valley;san_tan_valley
+http://www.meetup.com/cities/us/az/sasabe/;Sasabe;sasabe
+http://www.meetup.com/cities/us/az/scottsdale/;Scottsdale;scottsdale
+http://www.meetup.com/cities/us/az/second_mesa/;Second Mesa;second_mesa
+http://www.meetup.com/cities/us/az/sedona/;Sedona;sedona
+http://www.meetup.com/cities/us/az/seligman/;Seligman;seligman
+http://www.meetup.com/cities/us/az/sells/;Sells;sells
+http://www.meetup.com/cities/us/az/shonto/;Shonto;shonto
+http://www.meetup.com/cities/us/az/show_low/;Show Low;show_low
+http://www.meetup.com/cities/us/az/sierra_vista/;Sierra Vista;sierra_vista
+http://www.meetup.com/cities/us/az/skull_valley/;Skull Valley;skull_valley
+http://www.meetup.com/cities/us/az/snowflake/;Snowflake;snowflake
+http://www.meetup.com/cities/us/az/solomon/;Solomon;solomon
+http://www.meetup.com/cities/us/az/somerton/;Somerton;somerton
+http://www.meetup.com/cities/us/az/sonoita/;Sonoita;sonoita
+http://www.meetup.com/cities/us/az/springerville/;Springerville;springerville
+http://www.meetup.com/cities/us/az/stanfield/;Stanfield;stanfield
+http://www.meetup.com/cities/us/az/sun_city/;Sun City;sun_city
+http://www.meetup.com/cities/us/az/sun_city_west/;Sun City West;sun_city_west
+http://www.meetup.com/cities/us/az/sun_valley/;Sun Valley;sun_valley
+http://www.meetup.com/cities/us/az/supai/;Supai;supai
+http://www.meetup.com/cities/us/az/superior/;Superior;superior
+http://www.meetup.com/cities/us/az/surprise/;Surprise;surprise
+http://www.meetup.com/cities/us/az/tacna/;Tacna;tacna
+http://www.meetup.com/cities/us/az/taylor/;Taylor;taylor
+http://www.meetup.com/cities/us/az/teec_nos_pos/;Teec Nos Pos;teec_nos_pos
+http://www.meetup.com/cities/us/az/tempe/;Tempe;tempe
+http://www.meetup.com/cities/us/az/temple_bar_marina/;Temple Bar Marina;temple_bar_marina
+http://www.meetup.com/cities/us/az/thatcher/;Thatcher;thatcher
+http://www.meetup.com/cities/us/az/tolleson/;Tolleson;tolleson
+http://www.meetup.com/cities/us/az/tombstone/;Tombstone;tombstone
+http://www.meetup.com/cities/us/az/tonalea/;Tonalea;tonalea
+http://www.meetup.com/cities/us/az/tonopah/;Tonopah;tonopah
+http://www.meetup.com/cities/us/az/tonto_basin/;Tonto Basin;tonto_basin
+http://www.meetup.com/cities/us/az/topawa/;Topawa;topawa
+http://www.meetup.com/cities/us/az/topock/;Topock;topock
+http://www.meetup.com/cities/us/az/tortilla_flat/;Tortilla Flat;tortilla_flat
+http://www.meetup.com/cities/us/az/tsaile/;Tsaile;tsaile
+http://www.meetup.com/cities/us/az/tubac/;Tubac;tubac
+http://www.meetup.com/cities/us/az/tuba_city/;Tuba City;tuba_city
+http://www.meetup.com/cities/us/az/tucson/;Tucson;tucson
+http://www.meetup.com/cities/us/az/tumacacori/;Tumacacori;tumacacori
+http://www.meetup.com/cities/us/az/vail/;Vail;vail
+http://www.meetup.com/cities/us/az/valentine/;Valentine;valentine
+http://www.meetup.com/cities/us/az/valley_farms/;Valley Farms;valley_farms
+http://www.meetup.com/cities/us/az/vernon/;Vernon;vernon
+http://www.meetup.com/cities/us/az/waddell/;Waddell;waddell
+http://www.meetup.com/cities/us/az/wellton/;Wellton;wellton
+http://www.meetup.com/cities/us/az/wenden/;Wenden;wenden
+http://www.meetup.com/cities/us/az/white_mountain_lake/;White Mountain Lake;white_mountain_lake
+http://www.meetup.com/cities/us/az/whiteriver/;Whiteriver;whiteriver
+http://www.meetup.com/cities/us/az/wickenburg/;Wickenburg;wickenburg
+http://www.meetup.com/cities/us/az/wikieup/;Wikieup;wikieup
+http://www.meetup.com/cities/us/az/willcox/;Willcox;willcox
+http://www.meetup.com/cities/us/az/williams/;Williams;williams
+http://www.meetup.com/cities/us/az/willow_beach/;Willow Beach;willow_beach
+http://www.meetup.com/cities/us/az/window_rock/;Window Rock;window_rock
+http://www.meetup.com/cities/us/az/winkelman/;Winkelman;winkelman
+http://www.meetup.com/cities/us/az/winslow/;Winslow;winslow
+http://www.meetup.com/cities/us/az/wittmann/;Wittmann;wittmann
+http://www.meetup.com/cities/us/az/woodruff/;Woodruff;woodruff
+http://www.meetup.com/cities/us/az/yarnell/;Yarnell;yarnell
+http://www.meetup.com/cities/us/az/young/;Young;young
+http://www.meetup.com/cities/us/az/youngtown/;Youngtown;youngtown
+http://www.meetup.com/cities/us/az/yucca/;Yucca;yucca
+http://www.meetup.com/cities/us/az/yuma/;Yuma;yuma

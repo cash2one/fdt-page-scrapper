@@ -1,0 +1,874 @@
+http://www.meetup.com/cities/gb/d8/allendale_cottages/;Allendale Cottages;allendale_cottages
+http://www.meetup.com/cities/gb/d8/annfield_plain/;Annfield Plain;annfield_plain
+http://www.meetup.com/cities/gb/d8/archdeacon_newton/;Archdeacon Newton;archdeacon_newton
+http://www.meetup.com/cities/gb/d8/auckland_park/;Auckland Park;auckland_park
+http://www.meetup.com/cities/gb/d8/aycliffe/;Aycliffe;aycliffe
+http://www.meetup.com/cities/gb/d8/aycliffe_business_park/;Aycliffe Business Park;aycliffe_business_park
+http://www.meetup.com/cities/gb/d8/aycliffe_industrial_estate/;Aycliffe Industrial Estate;aycliffe_industrial_estate
+http://www.meetup.com/cities/gb/d8/aycliffe_industrial_park/;Aycliffe Industrial Park;aycliffe_industrial_park
+http://www.meetup.com/cities/gb/d8/aykley_heads/;Aykley Heads;aykley_heads
+http://www.meetup.com/cities/gb/d8/baldersdale/;Baldersdale;baldersdale
+http://www.meetup.com/cities/gb/d8/barmpton/;Barmpton;barmpton
+http://www.meetup.com/cities/gb/d8/barnard_castle/;Barnard Castle;barnard_castle
+http://www.meetup.com/cities/gb/d8/bearpark/;Bearpark;bearpark
+http://www.meetup.com/cities/gb/d8/belasis_hall_technology_park/;Belasis Hall Technology Park;belasis_hall_technology_park
+http://www.meetup.com/cities/gb/d8/belmont/;Belmont;belmont
+http://www.meetup.com/cities/gb/d8/belmont_industrial_estate/;Belmont Industrial Estate;belmont_industrial_estate
+http://www.meetup.com/cities/gb/d8/billingham/;Billingham;billingham
+http://www.meetup.com/cities/gb/d8/billy_row/;Billy Row;billy_row
+http://www.meetup.com/cities/gb/d8/binchester/;Binchester;binchester
+http://www.meetup.com/cities/gb/d8/binchester_moor/;Binchester Moor;binchester_moor
+http://www.meetup.com/cities/gb/d8/bishop_auckland/;Bishop Auckland;bishop_auckland
+http://www.meetup.com/cities/gb/d8/bishop_middleham/;Bishop Middleham;bishop_middleham
+http://www.meetup.com/cities/gb/d8/bishopton/;Bishopton;bishopton
+http://www.meetup.com/cities/gb/d8/blackhall_colliery/;Blackhall Colliery;blackhall_colliery
+http://www.meetup.com/cities/gb/d8/blackhall_rocks/;Blackhall Rocks;blackhall_rocks
+http://www.meetup.com/cities/gb/d8/blackhill/;Blackhill;blackhill
+http://www.meetup.com/cities/gb/d8/bolam/;Bolam;bolam
+http://www.meetup.com/cities/gb/d8/boldron/;Boldron;boldron
+http://www.meetup.com/cities/gb/d8/bournmoor/;Bournmoor;bournmoor
+http://www.meetup.com/cities/gb/d8/bowburn/;Bowburn;bowburn
+http://www.meetup.com/cities/gb/d8/bowes/;Bowes;bowes
+http://www.meetup.com/cities/gb/d8/bradbury/;Bradbury;bradbury
+http://www.meetup.com/cities/gb/d8/brafferton/;Brafferton;brafferton
+http://www.meetup.com/cities/gb/d8/brancepeth/;Brancepeth;brancepeth
+http://www.meetup.com/cities/gb/d8/brandon/;Brandon;brandon
+http://www.meetup.com/cities/gb/d8/brandon_village/;Brandon Village;brandon_village
+http://www.meetup.com/cities/gb/d8/brasside/;Brasside;brasside
+http://www.meetup.com/cities/gb/d8/bridgehill/;Bridgehill;bridgehill
+http://www.meetup.com/cities/gb/d8/brierton/;Brierton;brierton
+http://www.meetup.com/cities/gb/d8/brignall/;Brignall;brignall
+http://www.meetup.com/cities/gb/d8/broompark/;Broompark;broompark
+http://www.meetup.com/cities/gb/d8/brotherlee/;Brotherlee;brotherlee
+http://www.meetup.com/cities/gb/d8/browney/;Browney;browney
+http://www.meetup.com/cities/gb/d8/brusselton/;Brusselton;brusselton
+http://www.meetup.com/cities/gb/d8/burnhope/;Burnhope;burnhope
+http://www.meetup.com/cities/gb/d8/butterknowle/;Butterknowle;butterknowle
+http://www.meetup.com/cities/gb/d8/byers_green/;Byers Green;byers_green
+http://www.meetup.com/cities/gb/d8/carlton/;Carlton;carlton
+http://www.meetup.com/cities/gb/d8/carrville/;Carrville;carrville
+http://www.meetup.com/cities/gb/d8/cassop/;Cassop;cassop
+http://www.meetup.com/cities/gb/d8/castle_dene/;Castle Dene;castle_dene
+http://www.meetup.com/cities/gb/d8/castle_eden/;Castle Eden;castle_eden
+http://www.meetup.com/cities/gb/d8/castleside/;Castleside;castleside
+http://www.meetup.com/cities/gb/d8/catchgate/;Catchgate;catchgate
+http://www.meetup.com/cities/gb/d8/chester_le_street/;Chester Le Street;chester_le_street
+http://www.meetup.com/cities/gb/d8/chester_moor/;Chester Moor;chester_moor
+http://www.meetup.com/cities/gb/d8/chilton/;Chilton;chilton
+http://www.meetup.com/cities/gb/d8/chilton_industrial_estate/;Chilton Industrial Estate;chilton_industrial_estate
+http://www.meetup.com/cities/gb/d8/claxton/;Claxton;claxton
+http://www.meetup.com/cities/gb/d8/cleasby/;Cleasby;cleasby
+http://www.meetup.com/cities/gb/d8/cleatlam/;Cleatlam;cleatlam
+http://www.meetup.com/cities/gb/d8/close_house/;Close House;close_house
+http://www.meetup.com/cities/gb/d8/coatham_mundeville/;Coatham Mundeville;coatham_mundeville
+http://www.meetup.com/cities/gb/d8/cockfield/;Cockfield;cockfield
+http://www.meetup.com/cities/gb/d8/cold_hesledon/;Cold Hesledon;cold_hesledon
+http://www.meetup.com/cities/gb/d8/copelaw/;Copelaw;copelaw
+http://www.meetup.com/cities/gb/d8/copley/;Copley;copley
+http://www.meetup.com/cities/gb/d8/cornriggs/;Cornriggs;cornriggs
+http://www.meetup.com/cities/gb/d8/cornsay/;Cornsay;cornsay
+http://www.meetup.com/cities/gb/d8/cornsay_colliery/;Cornsay Colliery;cornsay_colliery
+http://www.meetup.com/cities/gb/d8/coronation/;Coronation;coronation
+http://www.meetup.com/cities/gb/d8/cotherstone/;Cotherstone;cotherstone
+http://www.meetup.com/cities/gb/d8/coundon/;Coundon;coundon
+http://www.meetup.com/cities/gb/d8/coundon_gate/;Coundon Gate;coundon_gate
+http://www.meetup.com/cities/gb/d8/coundon_grange/;Coundon Grange;coundon_grange
+http://www.meetup.com/cities/gb/d8/cowpen_bewley/;Cowpen Bewley;cowpen_bewley
+http://www.meetup.com/cities/gb/d8/cowpen_lane_industrial_estate/;Cowpen Lane Industrial Estate;cowpen_lane_industrial_estate
+http://www.meetup.com/cities/gb/d8/cowshill/;Cowshill;cowshill
+http://www.meetup.com/cities/gb/d8/coxhoe/;Coxhoe;coxhoe
+http://www.meetup.com/cities/gb/d8/craghead/;Craghead;craghead
+http://www.meetup.com/cities/gb/d8/craghead_colliery_industrial_estate/;Craghead Colliery Industrial Estate;craghead_colliery_industrial_estate
+http://www.meetup.com/cities/gb/d8/croft_on_tees/;Croft on Tees;croft_on_tees
+http://www.meetup.com/cities/gb/d8/crook/;Crook;crook
+http://www.meetup.com/cities/gb/d8/crookhall/;Crookhall;crookhall
+http://www.meetup.com/cities/gb/d8/crossgate_moor/;Crossgate Moor;crossgate_moor
+http://www.meetup.com/cities/gb/d8/croxdale/;Croxdale;croxdale
+http://www.meetup.com/cities/gb/d8/daddry_shield/;Daddry Shield;daddry_shield
+http://www.meetup.com/cities/gb/d8/dalton-le-dale/;Dalton-le-Dale;dalton-le-dale
+http://www.meetup.com/cities/gb/d8/dalton_on_tees/;Dalton on Tees;dalton_on_tees
+http://www.meetup.com/cities/gb/d8/dalton_piercy/;Dalton Piercy;dalton_piercy
+http://www.meetup.com/cities/gb/d8/darlington/;Darlington;darlington
+http://www.meetup.com/cities/gb/d8/davy_lamp/;Davy Lamp;davy_lamp
+http://www.meetup.com/cities/gb/d8/dawdon/;Dawdon;dawdon
+http://www.meetup.com/cities/gb/d8/denton/;Denton;denton
+http://www.meetup.com/cities/gb/d8/dinsdale_park/;Dinsdale Park;dinsdale_park
+http://www.meetup.com/cities/gb/d8/dipton/;Dipton;dipton
+http://www.meetup.com/cities/gb/d8/dragonville/;Dragonville;dragonville
+http://www.meetup.com/cities/gb/d8/drum_industrial_estate/;Drum Industrial Estate;drum_industrial_estate
+http://www.meetup.com/cities/gb/d8/durham/;Durham;durham
+http://www.meetup.com/cities/gb/d8/durham_lane_industrial_park/;Durham Lane Industrial Park;durham_lane_industrial_park
+http://www.meetup.com/cities/gb/d8/durham_tees_valley_airport/;Durham Tees Valley Airport;durham_tees_valley_airport
+http://www.meetup.com/cities/gb/d8/eaglescliffe/;Eaglescliffe;eaglescliffe
+http://www.meetup.com/cities/gb/d8/easington/;Easington;easington
+http://www.meetup.com/cities/gb/d8/easington_colliery/;Easington Colliery;easington_colliery
+http://www.meetup.com/cities/gb/d8/easington_village/;Easington Village;easington_village
+http://www.meetup.com/cities/gb/d8/east_blackdene/;East Blackdene;east_blackdene
+http://www.meetup.com/cities/gb/d8/east_butsfield/;East Butsfield;east_butsfield
+http://www.meetup.com/cities/gb/d8/eastgate/;Eastgate;eastgate
+http://www.meetup.com/cities/gb/d8/east_hedley_hope/;East Hedley Hope;east_hedley_hope
+http://www.meetup.com/cities/gb/d8/east_howle/;East Howle;east_howle
+http://www.meetup.com/cities/gb/d8/edmondsley/;Edmondsley;edmondsley
+http://www.meetup.com/cities/gb/d8/edmundbyers/;Edmundbyers;edmundbyers
+http://www.meetup.com/cities/gb/d8/egglescliffe/;Egglescliffe;egglescliffe
+http://www.meetup.com/cities/gb/d8/eggleston/;Eggleston;eggleston
+http://www.meetup.com/cities/gb/d8/eldon/;Eldon;eldon
+http://www.meetup.com/cities/gb/d8/eldon_lane/;Eldon Lane;eldon_lane
+http://www.meetup.com/cities/gb/d8/elton/;Elton;elton
+http://www.meetup.com/cities/gb/d8/elwick/;Elwick;elwick
+http://www.meetup.com/cities/gb/d8/eryholme/;Eryholme;eryholme
+http://www.meetup.com/cities/gb/d8/escomb/;Escomb;escomb
+http://www.meetup.com/cities/gb/d8/esh/;Esh;esh
+http://www.meetup.com/cities/gb/d8/esh_winning/;Esh Winning;esh_winning
+http://www.meetup.com/cities/gb/d8/etherley/;Etherley;etherley
+http://www.meetup.com/cities/gb/d8/etherley_dene/;Etherley Dene;etherley_dene
+http://www.meetup.com/cities/gb/d8/etherley_grange/;Etherley Grange;etherley_grange
+http://www.meetup.com/cities/gb/d8/etherley_moor/;Etherley Moor;etherley_moor
+http://www.meetup.com/cities/gb/d8/evenwood/;Evenwood;evenwood
+http://www.meetup.com/cities/gb/d8/evenwood_gate/;Evenwood Gate;evenwood_gate
+http://www.meetup.com/cities/gb/d8/fairfield/;Fairfield;fairfield
+http://www.meetup.com/cities/gb/d8/faverdale/;Faverdale;faverdale
+http://www.meetup.com/cities/gb/d8/ferryhill/;Ferryhill;ferryhill
+http://www.meetup.com/cities/gb/d8/fir_tree/;Fir Tree;fir_tree
+http://www.meetup.com/cities/gb/d8/fishburn/;Fishburn;fishburn
+http://www.meetup.com/cities/gb/d8/forest_in_teesdale/;Forest in Teesdale;forest_in_teesdale
+http://www.meetup.com/cities/gb/d8/framwellgate_moor/;Framwellgate Moor;framwellgate_moor
+http://www.meetup.com/cities/gb/d8/frosterley/;Frosterley;frosterley
+http://www.meetup.com/cities/gb/d8/gainford/;Gainford;gainford
+http://www.meetup.com/cities/gb/d8/garmondsway/;Garmondsway;garmondsway
+http://www.meetup.com/cities/gb/d8/gilesgate/;Gilesgate;gilesgate
+http://www.meetup.com/cities/gb/d8/gilesgate_moor/;Gilesgate Moor;gilesgate_moor
+http://www.meetup.com/cities/gb/d8/gilmonby/;Gilmonby;gilmonby
+http://www.meetup.com/cities/gb/d8/girsby/;Girsby;girsby
+http://www.meetup.com/cities/gb/d8/grange_villa/;Grange Villa;grange_villa
+http://www.meetup.com/cities/gb/d8/great_burdon/;Great Burdon;great_burdon
+http://www.meetup.com/cities/gb/d8/greatham/;Greatham;greatham
+http://www.meetup.com/cities/gb/d8/great_lumley/;Great Lumley;great_lumley
+http://www.meetup.com/cities/gb/d8/great_stainton/;Great Stainton;great_stainton
+http://www.meetup.com/cities/gb/d8/greencroft/;Greencroft;greencroft
+http://www.meetup.com/cities/gb/d8/greencroft_industrial_park/;Greencroft Industrial Park;greencroft_industrial_park
+http://www.meetup.com/cities/gb/d8/greenhead/;Greenhead;greenhead
+http://www.meetup.com/cities/gb/d8/hamsterley/;Hamsterley;hamsterley
+http://www.meetup.com/cities/gb/d8/hanging_stone/;Hanging Stone;hanging_stone
+http://www.meetup.com/cities/gb/d8/hare_law/;Hare Law;hare_law
+http://www.meetup.com/cities/gb/d8/harperley/;Harperley;harperley
+http://www.meetup.com/cities/gb/d8/hart/;Hart;hart
+http://www.meetup.com/cities/gb/d8/hartlepool/;Hartlepool;hartlepool
+http://www.meetup.com/cities/gb/d8/hartside/;Hartside;hartside
+http://www.meetup.com/cities/gb/d8/hart_village/;Hart Village;hart_village
+http://www.meetup.com/cities/gb/d8/harwood/;Harwood;harwood
+http://www.meetup.com/cities/gb/d8/haswell/;Haswell;haswell
+http://www.meetup.com/cities/gb/d8/haswell_plough/;Haswell Plough;haswell_plough
+http://www.meetup.com/cities/gb/d8/hawthorn/;Hawthorn;hawthorn
+http://www.meetup.com/cities/gb/d8/headlam/;Headlam;headlam
+http://www.meetup.com/cities/gb/d8/hedley_hill/;Hedley Hill;hedley_hill
+http://www.meetup.com/cities/gb/d8/hedley_hope/;Hedley Hope;hedley_hope
+http://www.meetup.com/cities/gb/d8/heighington/;Heighington;heighington
+http://www.meetup.com/cities/gb/d8/heighington_lane_business_park/;Heighington Lane Business Park;heighington_lane_business_park
+http://www.meetup.com/cities/gb/d8/heighington_village/;Heighington Village;heighington_village
+http://www.meetup.com/cities/gb/d8/helmington_row/;Helmington Row;helmington_row
+http://www.meetup.com/cities/gb/d8/hesleden/;Hesleden;hesleden
+http://www.meetup.com/cities/gb/d8/hett/;Hett;hett
+http://www.meetup.com/cities/gb/d8/hett_hills/;Hett Hills;hett_hills
+http://www.meetup.com/cities/gb/d8/high_coniscliffe/;High Coniscliffe;high_coniscliffe
+http://www.meetup.com/cities/gb/d8/high_etherley/;High Etherley;high_etherley
+http://www.meetup.com/cities/gb/d8/high_flatts/;High Flatts;high_flatts
+http://www.meetup.com/cities/gb/d8/high_hesleden/;High Hesleden;high_hesleden
+http://www.meetup.com/cities/gb/d8/high_hold/;High Hold;high_hold
+http://www.meetup.com/cities/gb/d8/high_pittington/;High Pittington;high_pittington
+http://www.meetup.com/cities/gb/d8/high_shincliffe/;High Shincliffe;high_shincliffe
+http://www.meetup.com/cities/gb/d8/high_startforth/;High Startforth;high_startforth
+http://www.meetup.com/cities/gb/d8/high_westwood/;High Westwood;high_westwood
+http://www.meetup.com/cities/gb/d8/high_wham/;High Wham;high_wham
+http://www.meetup.com/cities/gb/d8/hilton/;Hilton;hilton
+http://www.meetup.com/cities/gb/d8/hobson/;Hobson;hobson
+http://www.meetup.com/cities/gb/d8/horden/;Horden;horden
+http://www.meetup.com/cities/gb/d8/houghall/;Houghall;houghall
+http://www.meetup.com/cities/gb/d8/houghton-le-side/;Houghton-le-Side;houghton-le-side
+http://www.meetup.com/cities/gb/d8/howden_le_wear/;Howden le Wear;howden_le_wear
+http://www.meetup.com/cities/gb/d8/hunderthwaite/;Hunderthwaite;hunderthwaite
+http://www.meetup.com/cities/gb/d8/hunstanworth/;Hunstanworth;hunstanworth
+http://www.meetup.com/cities/gb/d8/huntshieldford/;Huntshieldford;huntshieldford
+http://www.meetup.com/cities/gb/d8/hunwick/;Hunwick;hunwick
+http://www.meetup.com/cities/gb/d8/hurworth/;Hurworth;hurworth
+http://www.meetup.com/cities/gb/d8/hurworth_moor/;Hurworth Moor;hurworth_moor
+http://www.meetup.com/cities/gb/d8/hurworth_place/;Hurworth Place;hurworth_place
+http://www.meetup.com/cities/gb/d8/hutton_henry/;Hutton Henry;hutton_henry
+http://www.meetup.com/cities/gb/d8/hutton_magna/;Hutton Magna;hutton_magna
+http://www.meetup.com/cities/gb/d8/ingleton/;Ingleton;ingleton
+http://www.meetup.com/cities/gb/d8/ireshopeburn/;Ireshopeburn;ireshopeburn
+http://www.meetup.com/cities/gb/d8/iveston/;Iveston;iveston
+http://www.meetup.com/cities/gb/d8/kelloe/;Kelloe;kelloe
+http://www.meetup.com/cities/gb/d8/killerby/;Killerby;killerby
+http://www.meetup.com/cities/gb/d8/kimblesworth/;Kimblesworth;kimblesworth
+http://www.meetup.com/cities/gb/d8/kinninvie/;Kinninvie;kinninvie
+http://www.meetup.com/cities/gb/d8/kip_hill/;Kip Hill;kip_hill
+http://www.meetup.com/cities/gb/d8/kirk_merrington/;Kirk Merrington;kirk_merrington
+http://www.meetup.com/cities/gb/d8/knitsley/;Knitsley;knitsley
+http://www.meetup.com/cities/gb/d8/lambton_park/;Lambton Park;lambton_park
+http://www.meetup.com/cities/gb/d8/lanchester/;Lanchester;lanchester
+http://www.meetup.com/cities/gb/d8/lanehead/;Lanehead;lanehead
+http://www.meetup.com/cities/gb/d8/langleydale/;Langleydale;langleydale
+http://www.meetup.com/cities/gb/d8/langley_moor/;Langley Moor;langley_moor
+http://www.meetup.com/cities/gb/d8/langley_park/;Langley Park;langley_park
+http://www.meetup.com/cities/gb/d8/langton/;Langton;langton
+http://www.meetup.com/cities/gb/d8/lartington/;Lartington;lartington
+http://www.meetup.com/cities/gb/d8/leadgate/;Leadgate;leadgate
+http://www.meetup.com/cities/gb/d8/leamside/;Leamside;leamside
+http://www.meetup.com/cities/gb/d8/leasingthorne/;Leasingthorne;leasingthorne
+http://www.meetup.com/cities/gb/d8/leeholme/;Leeholme;leeholme
+http://www.meetup.com/cities/gb/d8/lintz_green/;Lintz Green;lintz_green
+http://www.meetup.com/cities/gb/d8/little_newsham/;Little Newsham;little_newsham
+http://www.meetup.com/cities/gb/d8/little_stainton/;Little Stainton;little_stainton
+http://www.meetup.com/cities/gb/d8/littlethorpe/;Littlethorpe;littlethorpe
+http://www.meetup.com/cities/gb/d8/littletown/;Littletown;littletown
+http://www.meetup.com/cities/gb/d8/long_newton/;Long Newton;long_newton
+http://www.meetup.com/cities/gb/d8/low_coniscliffe/;Low Coniscliffe;low_coniscliffe
+http://www.meetup.com/cities/gb/d8/low_dinsdale/;Low Dinsdale;low_dinsdale
+http://www.meetup.com/cities/gb/d8/low_etherley/;Low Etherley;low_etherley
+http://www.meetup.com/cities/gb/d8/low_pittington/;Low Pittington;low_pittington
+http://www.meetup.com/cities/gb/d8/low_urpeth/;Low Urpeth;low_urpeth
+http://www.meetup.com/cities/gb/d8/low_westwood/;Low Westwood;low_westwood
+http://www.meetup.com/cities/gb/d8/low_wham/;Low Wham;low_wham
+http://www.meetup.com/cities/gb/d8/low_willington_industrial_estate/;Low Willington Industrial Estate;low_willington_industrial_estate
+http://www.meetup.com/cities/gb/d8/ludworth/;Ludworth;ludworth
+http://www.meetup.com/cities/gb/d8/lumley_links/;Lumley Links;lumley_links
+http://www.meetup.com/cities/gb/d8/lumley_park/;Lumley Park;lumley_park
+http://www.meetup.com/cities/gb/d8/maiden_law/;Maiden Law;maiden_law
+http://www.meetup.com/cities/gb/d8/mainsforth/;Mainsforth;mainsforth
+http://www.meetup.com/cities/gb/d8/malton/;Malton;malton
+http://www.meetup.com/cities/gb/d8/manfield/;Manfield;manfield
+http://www.meetup.com/cities/gb/d8/marwood/;Marwood;marwood
+http://www.meetup.com/cities/gb/d8/meadowfield/;Meadowfield;meadowfield
+http://www.meetup.com/cities/gb/d8/meadowfield_industrial_estate/;Meadowfield Industrial Estate;meadowfield_industrial_estate
+http://www.meetup.com/cities/gb/d8/medomsley/;Medomsley;medomsley
+http://www.meetup.com/cities/gb/d8/medomsley_edge/;Medomsley Edge;medomsley_edge
+http://www.meetup.com/cities/gb/d8/merrybent/;Merrybent;merrybent
+http://www.meetup.com/cities/gb/d8/metal_bridge/;Metal Bridge;metal_bridge
+http://www.meetup.com/cities/gb/d8/mickleton/;Mickleton;mickleton
+http://www.meetup.com/cities/gb/d8/middlestone/;Middlestone;middlestone
+http://www.meetup.com/cities/gb/d8/middlestone_moor/;Middlestone Moor;middlestone_moor
+http://www.meetup.com/cities/gb/d8/middleton-in-teesdale/;Middleton-in-Teesdale;middleton-in-teesdale
+http://www.meetup.com/cities/gb/d8/middleton_one_row/;Middleton One Row;middleton_one_row
+http://www.meetup.com/cities/gb/d8/middleton_st_george/;Middleton St George;middleton_st_george
+http://www.meetup.com/cities/gb/d8/middridge/;Middridge;middridge
+http://www.meetup.com/cities/gb/d8/monk_hesleden/;Monk Hesleden;monk_hesleden
+http://www.meetup.com/cities/gb/d8/moorside/;Moorside;moorside
+http://www.meetup.com/cities/gb/d8/mordon/;Mordon;mordon
+http://www.meetup.com/cities/gb/d8/morley/;Morley;morley
+http://www.meetup.com/cities/gb/d8/morton_tinmouth/;Morton Tinmouth;morton_tinmouth
+http://www.meetup.com/cities/gb/d8/neasham/;Neasham;neasham
+http://www.meetup.com/cities/gb/d8/nettlesworth/;Nettlesworth;nettlesworth
+http://www.meetup.com/cities/gb/d8/nevilles_cross/;Nevilles Cross;nevilles_cross
+http://www.meetup.com/cities/gb/d8/newbiggin/;Newbiggin;newbiggin
+http://www.meetup.com/cities/gb/d8/new_brancepeth/;New Brancepeth;new_brancepeth
+http://www.meetup.com/cities/gb/d8/new_coundon/;New Coundon;new_coundon
+http://www.meetup.com/cities/gb/d8/new_durham/;New Durham;new_durham
+http://www.meetup.com/cities/gb/d8/newfield/;Newfield;newfield
+http://www.meetup.com/cities/gb/d8/new_kyo/;New Kyo;new_kyo
+http://www.meetup.com/cities/gb/d8/new_lambton/;New Lambton;new_lambton
+http://www.meetup.com/cities/gb/d8/newton_aycliffe/;Newton Aycliffe;newton_aycliffe
+http://www.meetup.com/cities/gb/d8/newton_bewley/;Newton Bewley;newton_bewley
+http://www.meetup.com/cities/gb/d8/newtown/;Newtown;newtown
+http://www.meetup.com/cities/gb/d8/north_bitchburn/;North Bitchburn;north_bitchburn
+http://www.meetup.com/cities/gb/d8/north_east_industrial_estate/;North East Industrial Estate;north_east_industrial_estate
+http://www.meetup.com/cities/gb/d8/north_tees_industrial_estate/;North Tees Industrial Estate;north_tees_industrial_estate
+http://www.meetup.com/cities/gb/d8/north_west_industrial_estate/;North West Industrial Estate;north_west_industrial_estate
+http://www.meetup.com/cities/gb/d8/norton/;Norton;norton
+http://www.meetup.com/cities/gb/d8/oakenshaw/;Oakenshaw;oakenshaw
+http://www.meetup.com/cities/gb/d8/old_cassop/;Old Cassop;old_cassop
+http://www.meetup.com/cities/gb/d8/old_eldon/;Old Eldon;old_eldon
+http://www.meetup.com/cities/gb/d8/old_pit/;Old Pit;old_pit
+http://www.meetup.com/cities/gb/d8/old_quarrington/;Old Quarrington;old_quarrington
+http://www.meetup.com/cities/gb/d8/old_shotton/;Old Shotton;old_shotton
+http://www.meetup.com/cities/gb/d8/old_south_moor/;Old South Moor;old_south_moor
+http://www.meetup.com/cities/gb/d8/ouston/;Ouston;ouston
+http://www.meetup.com/cities/gb/d8/over_dinsdale/;Over Dinsdale;over_dinsdale
+http://www.meetup.com/cities/gb/d8/ovington/;Ovington;ovington
+http://www.meetup.com/cities/gb/d8/oxhill/;Oxhill;oxhill
+http://www.meetup.com/cities/gb/d8/page_bank/;Page Bank;page_bank
+http://www.meetup.com/cities/gb/d8/park_view_industrial_estate/;Park View Industrial Estate;park_view_industrial_estate
+http://www.meetup.com/cities/gb/d8/pelaw_grange/;Pelaw Grange;pelaw_grange
+http://www.meetup.com/cities/gb/d8/pelton/;Pelton;pelton
+http://www.meetup.com/cities/gb/d8/pelton_fell/;Pelton Fell;pelton_fell
+http://www.meetup.com/cities/gb/d8/perkinsville/;Perkinsville;perkinsville
+http://www.meetup.com/cities/gb/d8/peterlee/;Peterlee;peterlee
+http://www.meetup.com/cities/gb/d8/picktree/;Picktree;picktree
+http://www.meetup.com/cities/gb/d8/piercebridge/;Piercebridge;piercebridge
+http://www.meetup.com/cities/gb/d8/pity_me/;Pity Me;pity_me
+http://www.meetup.com/cities/gb/d8/plawsworth/;Plawsworth;plawsworth
+http://www.meetup.com/cities/gb/d8/plawsworth_gate/;Plawsworth Gate;plawsworth_gate
+http://www.meetup.com/cities/gb/d8/port_clarence/;Port Clarence;port_clarence
+http://www.meetup.com/cities/gb/d8/portrack_interchange_business_park/;Portrack Interchange Business Park;portrack_interchange_business_park
+http://www.meetup.com/cities/gb/d8/preston_farm_business_park/;Preston Farm Business Park;preston_farm_business_park
+http://www.meetup.com/cities/gb/d8/preston_farm_industrial_estate/;Preston Farm Industrial Estate;preston_farm_industrial_estate
+http://www.meetup.com/cities/gb/d8/preston_le_skerne/;Preston le Skerne;preston_le_skerne
+http://www.meetup.com/cities/gb/d8/quaking_houses/;Quaking Houses;quaking_houses
+http://www.meetup.com/cities/gb/d8/quarrington_hill/;Quarrington Hill;quarrington_hill
+http://www.meetup.com/cities/gb/d8/quebec/;Quebec;quebec
+http://www.meetup.com/cities/gb/d8/queens_meadow_business_park/;Queens Meadow Business Park;queens_meadow_business_park
+http://www.meetup.com/cities/gb/d8/rainton_gate/;Rainton Gate;rainton_gate
+http://www.meetup.com/cities/gb/d8/ramshaw/;Ramshaw;ramshaw
+http://www.meetup.com/cities/gb/d8/redmarshall/;Redmarshall;redmarshall
+http://www.meetup.com/cities/gb/d8/redworth/;Redworth;redworth
+http://www.meetup.com/cities/gb/d8/roddymoor/;Roddymoor;roddymoor
+http://www.meetup.com/cities/gb/d8/rokeby/;Rokeby;rokeby
+http://www.meetup.com/cities/gb/d8/romaldkirk/;Romaldkirk;romaldkirk
+http://www.meetup.com/cities/gb/d8/rookhope/;Rookhope;rookhope
+http://www.meetup.com/cities/gb/d8/rowley/;Rowley;rowley
+http://www.meetup.com/cities/gb/d8/running_waters/;Running Waters;running_waters
+http://www.meetup.com/cities/gb/d8/rushyford/;Rushyford;rushyford
+http://www.meetup.com/cities/gb/d8/sacriston/;Sacriston;sacriston
+http://www.meetup.com/cities/gb/d8/sadberge/;Sadberge;sadberge
+http://www.meetup.com/cities/gb/d8/satley/;Satley;satley
+http://www.meetup.com/cities/gb/d8/scargill/;Scargill;scargill
+http://www.meetup.com/cities/gb/d8/school_aycliffe/;School Aycliffe;school_aycliffe
+http://www.meetup.com/cities/gb/d8/seaham/;Seaham;seaham
+http://www.meetup.com/cities/gb/d8/seaham_grange_industrial_estate/;Seaham Grange Industrial Estate;seaham_grange_industrial_estate
+http://www.meetup.com/cities/gb/d8/seal_sands/;Seal Sands;seal_sands
+http://www.meetup.com/cities/gb/d8/seaton_carew/;Seaton Carew;seaton_carew
+http://www.meetup.com/cities/gb/d8/sedgefield/;Sedgefield;sedgefield
+http://www.meetup.com/cities/gb/d8/shadforth/;Shadforth;shadforth
+http://www.meetup.com/cities/gb/d8/sheraton/;Sheraton;sheraton
+http://www.meetup.com/cities/gb/d8/sherburn/;Sherburn;sherburn
+http://www.meetup.com/cities/gb/d8/sherburn_hill/;Sherburn Hill;sherburn_hill
+http://www.meetup.com/cities/gb/d8/sherburn_house/;Sherburn House;sherburn_house
+http://www.meetup.com/cities/gb/d8/sherburn_village/;Sherburn Village;sherburn_village
+http://www.meetup.com/cities/gb/d8/shield_row/;Shield Row;shield_row
+http://www.meetup.com/cities/gb/d8/shildon/;Shildon;shildon
+http://www.meetup.com/cities/gb/d8/shincliffe/;Shincliffe;shincliffe
+http://www.meetup.com/cities/gb/d8/shotton_colliery/;Shotton Colliery;shotton_colliery
+http://www.meetup.com/cities/gb/d8/south_church/;South Church;south_church
+http://www.meetup.com/cities/gb/d8/south_church_enterprise_park/;South Church Enterprise Park;south_church_enterprise_park
+http://www.meetup.com/cities/gb/d8/south_cleatlam/;South Cleatlam;south_cleatlam
+http://www.meetup.com/cities/gb/d8/south_hetton/;South Hetton;south_hetton
+http://www.meetup.com/cities/gb/d8/south_moor/;South Moor;south_moor
+http://www.meetup.com/cities/gb/d8/south_pelaw/;South Pelaw;south_pelaw
+http://www.meetup.com/cities/gb/d8/southside/;Southside;southside
+http://www.meetup.com/cities/gb/d8/south_west_industrial_estate/;South West Industrial Estate;south_west_industrial_estate
+http://www.meetup.com/cities/gb/d8/spennymoor/;Spennymoor;spennymoor
+http://www.meetup.com/cities/gb/d8/staindrop/;Staindrop;staindrop
+http://www.meetup.com/cities/gb/d8/stainton/;Stainton;stainton
+http://www.meetup.com/cities/gb/d8/stainton_grove/;Stainton Grove;stainton_grove
+http://www.meetup.com/cities/gb/d8/stanhope/;Stanhope;stanhope
+http://www.meetup.com/cities/gb/d8/stanley/;Stanley;stanley
+http://www.meetup.com/cities/gb/d8/stapleton/;Stapleton;stapleton
+http://www.meetup.com/cities/gb/d8/startforth/;Startforth;startforth
+http://www.meetup.com/cities/gb/d8/station_town/;Station Town;station_town
+http://www.meetup.com/cities/gb/d8/st_helen_auckland/;St Helen Auckland;st_helen_auckland
+http://www.meetup.com/cities/gb/d8/stillington/;Stillington;stillington
+http://www.meetup.com/cities/gb/d8/st_johns_chapel/;St Johns Chapel;st_johns_chapel
+http://www.meetup.com/cities/gb/d8/stockton-on-tees/;Stockton-on-Tees;stockton-on-tees
+http://www.meetup.com/cities/gb/d8/stonebridge/;Stonebridge;stonebridge
+http://www.meetup.com/cities/gb/d8/streatlam/;Streatlam;streatlam
+http://www.meetup.com/cities/gb/d8/summerhouse/;Summerhouse;summerhouse
+http://www.meetup.com/cities/gb/d8/sunderland_bridge/;Sunderland Bridge;sunderland_bridge
+http://www.meetup.com/cities/gb/d8/sunniside/;Sunniside;sunniside
+http://www.meetup.com/cities/gb/d8/sunnybrow/;Sunnybrow;sunnybrow
+http://www.meetup.com/cities/gb/d8/tanfield/;Tanfield;tanfield
+http://www.meetup.com/cities/gb/d8/tanfield_lea/;Tanfield Lea;tanfield_lea
+http://www.meetup.com/cities/gb/d8/tan_hills/;Tan Hills;tan_hills
+http://www.meetup.com/cities/gb/d8/tantobie/;Tantobie;tantobie
+http://www.meetup.com/cities/gb/d8/templetown/;Templetown;templetown
+http://www.meetup.com/cities/gb/d8/the_grove/;The Grove;the_grove
+http://www.meetup.com/cities/gb/d8/the_headland/;The Headland;the_headland
+http://www.meetup.com/cities/gb/d8/the_middles/;The Middles;the_middles
+http://www.meetup.com/cities/gb/d8/thinford/;Thinford;thinford
+http://www.meetup.com/cities/gb/d8/thornley/;Thornley;thornley
+http://www.meetup.com/cities/gb/d8/thorpe_larches/;Thorpe Larches;thorpe_larches
+http://www.meetup.com/cities/gb/d8/thorpe_thewles/;Thorpe Thewles;thorpe_thewles
+http://www.meetup.com/cities/gb/d8/tindale_crescent/;Tindale Crescent;tindale_crescent
+http://www.meetup.com/cities/gb/d8/todhills/;Todhills;todhills
+http://www.meetup.com/cities/gb/d8/toft_hill/;Toft Hill;toft_hill
+http://www.meetup.com/cities/gb/d8/toronto/;Toronto;toronto
+http://www.meetup.com/cities/gb/d8/tow_law/;Tow Law;tow_law
+http://www.meetup.com/cities/gb/d8/townfield/;Townfield;townfield
+http://www.meetup.com/cities/gb/d8/trimdon/;Trimdon;trimdon
+http://www.meetup.com/cities/gb/d8/trimdon_colliery/;Trimdon Colliery;trimdon_colliery
+http://www.meetup.com/cities/gb/d8/trimdon_grange/;Trimdon Grange;trimdon_grange
+http://www.meetup.com/cities/gb/d8/trimdon_station/;Trimdon Station;trimdon_station
+http://www.meetup.com/cities/gb/d8/tudhoe_colliery/;Tudhoe Colliery;tudhoe_colliery
+http://www.meetup.com/cities/gb/d8/tudhoe_village/;Tudhoe Village;tudhoe_village
+http://www.meetup.com/cities/gb/d8/tursdale/;Tursdale;tursdale
+http://www.meetup.com/cities/gb/d8/urpeth/;Urpeth;urpeth
+http://www.meetup.com/cities/gb/d8/ushaw_moor/;Ushaw Moor;ushaw_moor
+http://www.meetup.com/cities/gb/d8/villa_real/;Villa Real;villa_real
+http://www.meetup.com/cities/gb/d8/wackerfield/;Wackerfield;wackerfield
+http://www.meetup.com/cities/gb/d8/waldridge/;Waldridge;waldridge
+http://www.meetup.com/cities/gb/d8/walworth/;Walworth;walworth
+http://www.meetup.com/cities/gb/d8/walworth_gate/;Walworth Gate;walworth_gate
+http://www.meetup.com/cities/gb/d8/waskerley/;Waskerley;waskerley
+http://www.meetup.com/cities/gb/d8/waterhouses/;Waterhouses;waterhouses
+http://www.meetup.com/cities/gb/d8/wearhead/;Wearhead;wearhead
+http://www.meetup.com/cities/gb/d8/wear_valley_junction/;Wear Valley Junction;wear_valley_junction
+http://www.meetup.com/cities/gb/d8/west_auckland/;West Auckland;west_auckland
+http://www.meetup.com/cities/gb/d8/west_blackdene/;West Blackdene;west_blackdene
+http://www.meetup.com/cities/gb/d8/west_butsfield/;West Butsfield;west_butsfield
+http://www.meetup.com/cities/gb/d8/west_cornforth/;West Cornforth;west_cornforth
+http://www.meetup.com/cities/gb/d8/westerton/;Westerton;westerton
+http://www.meetup.com/cities/gb/d8/westgate/;Westgate;westgate
+http://www.meetup.com/cities/gb/d8/west_kyo/;West Kyo;west_kyo
+http://www.meetup.com/cities/gb/d8/west_pelton/;West Pelton;west_pelton
+http://www.meetup.com/cities/gb/d8/west_rainton/;West Rainton;west_rainton
+http://www.meetup.com/cities/gb/d8/west_roddymoor/;West Roddymoor;west_roddymoor
+http://www.meetup.com/cities/gb/d8/west_sherburn/;West Sherburn;west_sherburn
+http://www.meetup.com/cities/gb/d8/westwick/;Westwick;westwick
+http://www.meetup.com/cities/gb/d8/wheatley_hill/;Wheatley Hill;wheatley_hill
+http://www.meetup.com/cities/gb/d8/whinney_hill/;Whinney Hill;whinney_hill
+http://www.meetup.com/cities/gb/d8/whitehouse_business_park/;Whitehouse Business Park;whitehouse_business_park
+http://www.meetup.com/cities/gb/d8/whitton_village/;Whitton Village;whitton_village
+http://www.meetup.com/cities/gb/d8/whitworth/;Whitworth;whitworth
+http://www.meetup.com/cities/gb/d8/whorlton/;Whorlton;whorlton
+http://www.meetup.com/cities/gb/d8/willington/;Willington;willington
+http://www.meetup.com/cities/gb/d8/windlestone/;Windlestone;windlestone
+http://www.meetup.com/cities/gb/d8/windmill/;Windmill;windmill
+http://www.meetup.com/cities/gb/d8/wingate/;Wingate;wingate
+http://www.meetup.com/cities/gb/d8/winston/;Winston;winston
+http://www.meetup.com/cities/gb/d8/winterton/;Winterton;winterton
+http://www.meetup.com/cities/gb/d8/witton_gilbert/;Witton Gilbert;witton_gilbert
+http://www.meetup.com/cities/gb/d8/witton_le_wear/;Witton le Wear;witton_le_wear
+http://www.meetup.com/cities/gb/d8/witton_park/;Witton Park;witton_park
+http://www.meetup.com/cities/gb/d8/wolsingham/;Wolsingham;wolsingham
+http://www.meetup.com/cities/gb/d8/wolviston/;Wolviston;wolviston
+http://www.meetup.com/cities/gb/d8/woodland/;Woodland;woodland
+http://www.meetup.com/cities/gb/d8/woodstone_village/;Woodstone Village;woodstone_village
+http://www.meetup.com/cities/gb/d8/wycliffe/;Wycliffe;wycliffe
+http://www.meetup.com/cities/gb/d8/wynyard/;Wynyard;wynyard
+http://www.meetup.com/cities/gb/d8/wynyard_business_park/;Wynyard Business Park;wynyard_business_park
+http://www.meetup.com/cities/gb/d8/allendale_cottages/;Allendale Cottages;allendale_cottages
+http://www.meetup.com/cities/gb/d8/annfield_plain/;Annfield Plain;annfield_plain
+http://www.meetup.com/cities/gb/d8/archdeacon_newton/;Archdeacon Newton;archdeacon_newton
+http://www.meetup.com/cities/gb/d8/auckland_park/;Auckland Park;auckland_park
+http://www.meetup.com/cities/gb/d8/aycliffe/;Aycliffe;aycliffe
+http://www.meetup.com/cities/gb/d8/aycliffe_business_park/;Aycliffe Business Park;aycliffe_business_park
+http://www.meetup.com/cities/gb/d8/aycliffe_industrial_estate/;Aycliffe Industrial Estate;aycliffe_industrial_estate
+http://www.meetup.com/cities/gb/d8/aycliffe_industrial_park/;Aycliffe Industrial Park;aycliffe_industrial_park
+http://www.meetup.com/cities/gb/d8/aykley_heads/;Aykley Heads;aykley_heads
+http://www.meetup.com/cities/gb/d8/baldersdale/;Baldersdale;baldersdale
+http://www.meetup.com/cities/gb/d8/barmpton/;Barmpton;barmpton
+http://www.meetup.com/cities/gb/d8/barnard_castle/;Barnard Castle;barnard_castle
+http://www.meetup.com/cities/gb/d8/bearpark/;Bearpark;bearpark
+http://www.meetup.com/cities/gb/d8/belasis_hall_technology_park/;Belasis Hall Technology Park;belasis_hall_technology_park
+http://www.meetup.com/cities/gb/d8/belmont/;Belmont;belmont
+http://www.meetup.com/cities/gb/d8/belmont_industrial_estate/;Belmont Industrial Estate;belmont_industrial_estate
+http://www.meetup.com/cities/gb/d8/billingham/;Billingham;billingham
+http://www.meetup.com/cities/gb/d8/billy_row/;Billy Row;billy_row
+http://www.meetup.com/cities/gb/d8/binchester/;Binchester;binchester
+http://www.meetup.com/cities/gb/d8/binchester_moor/;Binchester Moor;binchester_moor
+http://www.meetup.com/cities/gb/d8/bishop_auckland/;Bishop Auckland;bishop_auckland
+http://www.meetup.com/cities/gb/d8/bishop_middleham/;Bishop Middleham;bishop_middleham
+http://www.meetup.com/cities/gb/d8/bishopton/;Bishopton;bishopton
+http://www.meetup.com/cities/gb/d8/blackhall_colliery/;Blackhall Colliery;blackhall_colliery
+http://www.meetup.com/cities/gb/d8/blackhall_rocks/;Blackhall Rocks;blackhall_rocks
+http://www.meetup.com/cities/gb/d8/blackhill/;Blackhill;blackhill
+http://www.meetup.com/cities/gb/d8/bolam/;Bolam;bolam
+http://www.meetup.com/cities/gb/d8/boldron/;Boldron;boldron
+http://www.meetup.com/cities/gb/d8/bournmoor/;Bournmoor;bournmoor
+http://www.meetup.com/cities/gb/d8/bowburn/;Bowburn;bowburn
+http://www.meetup.com/cities/gb/d8/bowes/;Bowes;bowes
+http://www.meetup.com/cities/gb/d8/bradbury/;Bradbury;bradbury
+http://www.meetup.com/cities/gb/d8/brafferton/;Brafferton;brafferton
+http://www.meetup.com/cities/gb/d8/brancepeth/;Brancepeth;brancepeth
+http://www.meetup.com/cities/gb/d8/brandon/;Brandon;brandon
+http://www.meetup.com/cities/gb/d8/brandon_village/;Brandon Village;brandon_village
+http://www.meetup.com/cities/gb/d8/brasside/;Brasside;brasside
+http://www.meetup.com/cities/gb/d8/bridgehill/;Bridgehill;bridgehill
+http://www.meetup.com/cities/gb/d8/brierton/;Brierton;brierton
+http://www.meetup.com/cities/gb/d8/brignall/;Brignall;brignall
+http://www.meetup.com/cities/gb/d8/broompark/;Broompark;broompark
+http://www.meetup.com/cities/gb/d8/brotherlee/;Brotherlee;brotherlee
+http://www.meetup.com/cities/gb/d8/browney/;Browney;browney
+http://www.meetup.com/cities/gb/d8/brusselton/;Brusselton;brusselton
+http://www.meetup.com/cities/gb/d8/burnhope/;Burnhope;burnhope
+http://www.meetup.com/cities/gb/d8/butterknowle/;Butterknowle;butterknowle
+http://www.meetup.com/cities/gb/d8/byers_green/;Byers Green;byers_green
+http://www.meetup.com/cities/gb/d8/carlton/;Carlton;carlton
+http://www.meetup.com/cities/gb/d8/carrville/;Carrville;carrville
+http://www.meetup.com/cities/gb/d8/cassop/;Cassop;cassop
+http://www.meetup.com/cities/gb/d8/castle_dene/;Castle Dene;castle_dene
+http://www.meetup.com/cities/gb/d8/castle_eden/;Castle Eden;castle_eden
+http://www.meetup.com/cities/gb/d8/castleside/;Castleside;castleside
+http://www.meetup.com/cities/gb/d8/catchgate/;Catchgate;catchgate
+http://www.meetup.com/cities/gb/d8/chester_le_street/;Chester Le Street;chester_le_street
+http://www.meetup.com/cities/gb/d8/chester_moor/;Chester Moor;chester_moor
+http://www.meetup.com/cities/gb/d8/chilton/;Chilton;chilton
+http://www.meetup.com/cities/gb/d8/chilton_industrial_estate/;Chilton Industrial Estate;chilton_industrial_estate
+http://www.meetup.com/cities/gb/d8/claxton/;Claxton;claxton
+http://www.meetup.com/cities/gb/d8/cleasby/;Cleasby;cleasby
+http://www.meetup.com/cities/gb/d8/cleatlam/;Cleatlam;cleatlam
+http://www.meetup.com/cities/gb/d8/close_house/;Close House;close_house
+http://www.meetup.com/cities/gb/d8/coatham_mundeville/;Coatham Mundeville;coatham_mundeville
+http://www.meetup.com/cities/gb/d8/cockfield/;Cockfield;cockfield
+http://www.meetup.com/cities/gb/d8/cold_hesledon/;Cold Hesledon;cold_hesledon
+http://www.meetup.com/cities/gb/d8/copelaw/;Copelaw;copelaw
+http://www.meetup.com/cities/gb/d8/copley/;Copley;copley
+http://www.meetup.com/cities/gb/d8/cornriggs/;Cornriggs;cornriggs
+http://www.meetup.com/cities/gb/d8/cornsay/;Cornsay;cornsay
+http://www.meetup.com/cities/gb/d8/cornsay_colliery/;Cornsay Colliery;cornsay_colliery
+http://www.meetup.com/cities/gb/d8/coronation/;Coronation;coronation
+http://www.meetup.com/cities/gb/d8/cotherstone/;Cotherstone;cotherstone
+http://www.meetup.com/cities/gb/d8/coundon/;Coundon;coundon
+http://www.meetup.com/cities/gb/d8/coundon_gate/;Coundon Gate;coundon_gate
+http://www.meetup.com/cities/gb/d8/coundon_grange/;Coundon Grange;coundon_grange
+http://www.meetup.com/cities/gb/d8/cowpen_bewley/;Cowpen Bewley;cowpen_bewley
+http://www.meetup.com/cities/gb/d8/cowpen_lane_industrial_estate/;Cowpen Lane Industrial Estate;cowpen_lane_industrial_estate
+http://www.meetup.com/cities/gb/d8/cowshill/;Cowshill;cowshill
+http://www.meetup.com/cities/gb/d8/coxhoe/;Coxhoe;coxhoe
+http://www.meetup.com/cities/gb/d8/craghead/;Craghead;craghead
+http://www.meetup.com/cities/gb/d8/craghead_colliery_industrial_estate/;Craghead Colliery Industrial Estate;craghead_colliery_industrial_estate
+http://www.meetup.com/cities/gb/d8/croft_on_tees/;Croft on Tees;croft_on_tees
+http://www.meetup.com/cities/gb/d8/crook/;Crook;crook
+http://www.meetup.com/cities/gb/d8/crookhall/;Crookhall;crookhall
+http://www.meetup.com/cities/gb/d8/crossgate_moor/;Crossgate Moor;crossgate_moor
+http://www.meetup.com/cities/gb/d8/croxdale/;Croxdale;croxdale
+http://www.meetup.com/cities/gb/d8/daddry_shield/;Daddry Shield;daddry_shield
+http://www.meetup.com/cities/gb/d8/dalton-le-dale/;Dalton-le-Dale;dalton-le-dale
+http://www.meetup.com/cities/gb/d8/dalton_on_tees/;Dalton on Tees;dalton_on_tees
+http://www.meetup.com/cities/gb/d8/dalton_piercy/;Dalton Piercy;dalton_piercy
+http://www.meetup.com/cities/gb/d8/darlington/;Darlington;darlington
+http://www.meetup.com/cities/gb/d8/davy_lamp/;Davy Lamp;davy_lamp
+http://www.meetup.com/cities/gb/d8/dawdon/;Dawdon;dawdon
+http://www.meetup.com/cities/gb/d8/denton/;Denton;denton
+http://www.meetup.com/cities/gb/d8/dinsdale_park/;Dinsdale Park;dinsdale_park
+http://www.meetup.com/cities/gb/d8/dipton/;Dipton;dipton
+http://www.meetup.com/cities/gb/d8/dragonville/;Dragonville;dragonville
+http://www.meetup.com/cities/gb/d8/drum_industrial_estate/;Drum Industrial Estate;drum_industrial_estate
+http://www.meetup.com/cities/gb/d8/durham/;Durham;durham
+http://www.meetup.com/cities/gb/d8/durham_lane_industrial_park/;Durham Lane Industrial Park;durham_lane_industrial_park
+http://www.meetup.com/cities/gb/d8/durham_tees_valley_airport/;Durham Tees Valley Airport;durham_tees_valley_airport
+http://www.meetup.com/cities/gb/d8/eaglescliffe/;Eaglescliffe;eaglescliffe
+http://www.meetup.com/cities/gb/d8/easington/;Easington;easington
+http://www.meetup.com/cities/gb/d8/easington_colliery/;Easington Colliery;easington_colliery
+http://www.meetup.com/cities/gb/d8/easington_village/;Easington Village;easington_village
+http://www.meetup.com/cities/gb/d8/east_blackdene/;East Blackdene;east_blackdene
+http://www.meetup.com/cities/gb/d8/east_butsfield/;East Butsfield;east_butsfield
+http://www.meetup.com/cities/gb/d8/eastgate/;Eastgate;eastgate
+http://www.meetup.com/cities/gb/d8/east_hedley_hope/;East Hedley Hope;east_hedley_hope
+http://www.meetup.com/cities/gb/d8/east_howle/;East Howle;east_howle
+http://www.meetup.com/cities/gb/d8/edmondsley/;Edmondsley;edmondsley
+http://www.meetup.com/cities/gb/d8/edmundbyers/;Edmundbyers;edmundbyers
+http://www.meetup.com/cities/gb/d8/egglescliffe/;Egglescliffe;egglescliffe
+http://www.meetup.com/cities/gb/d8/eggleston/;Eggleston;eggleston
+http://www.meetup.com/cities/gb/d8/eldon/;Eldon;eldon
+http://www.meetup.com/cities/gb/d8/eldon_lane/;Eldon Lane;eldon_lane
+http://www.meetup.com/cities/gb/d8/elton/;Elton;elton
+http://www.meetup.com/cities/gb/d8/elwick/;Elwick;elwick
+http://www.meetup.com/cities/gb/d8/eryholme/;Eryholme;eryholme
+http://www.meetup.com/cities/gb/d8/escomb/;Escomb;escomb
+http://www.meetup.com/cities/gb/d8/esh/;Esh;esh
+http://www.meetup.com/cities/gb/d8/esh_winning/;Esh Winning;esh_winning
+http://www.meetup.com/cities/gb/d8/etherley/;Etherley;etherley
+http://www.meetup.com/cities/gb/d8/etherley_dene/;Etherley Dene;etherley_dene
+http://www.meetup.com/cities/gb/d8/etherley_grange/;Etherley Grange;etherley_grange
+http://www.meetup.com/cities/gb/d8/etherley_moor/;Etherley Moor;etherley_moor
+http://www.meetup.com/cities/gb/d8/evenwood/;Evenwood;evenwood
+http://www.meetup.com/cities/gb/d8/evenwood_gate/;Evenwood Gate;evenwood_gate
+http://www.meetup.com/cities/gb/d8/fairfield/;Fairfield;fairfield
+http://www.meetup.com/cities/gb/d8/faverdale/;Faverdale;faverdale
+http://www.meetup.com/cities/gb/d8/ferryhill/;Ferryhill;ferryhill
+http://www.meetup.com/cities/gb/d8/fir_tree/;Fir Tree;fir_tree
+http://www.meetup.com/cities/gb/d8/fishburn/;Fishburn;fishburn
+http://www.meetup.com/cities/gb/d8/forest_in_teesdale/;Forest in Teesdale;forest_in_teesdale
+http://www.meetup.com/cities/gb/d8/framwellgate_moor/;Framwellgate Moor;framwellgate_moor
+http://www.meetup.com/cities/gb/d8/frosterley/;Frosterley;frosterley
+http://www.meetup.com/cities/gb/d8/gainford/;Gainford;gainford
+http://www.meetup.com/cities/gb/d8/garmondsway/;Garmondsway;garmondsway
+http://www.meetup.com/cities/gb/d8/gilesgate/;Gilesgate;gilesgate
+http://www.meetup.com/cities/gb/d8/gilesgate_moor/;Gilesgate Moor;gilesgate_moor
+http://www.meetup.com/cities/gb/d8/gilmonby/;Gilmonby;gilmonby
+http://www.meetup.com/cities/gb/d8/girsby/;Girsby;girsby
+http://www.meetup.com/cities/gb/d8/grange_villa/;Grange Villa;grange_villa
+http://www.meetup.com/cities/gb/d8/great_burdon/;Great Burdon;great_burdon
+http://www.meetup.com/cities/gb/d8/greatham/;Greatham;greatham
+http://www.meetup.com/cities/gb/d8/great_lumley/;Great Lumley;great_lumley
+http://www.meetup.com/cities/gb/d8/great_stainton/;Great Stainton;great_stainton
+http://www.meetup.com/cities/gb/d8/greencroft/;Greencroft;greencroft
+http://www.meetup.com/cities/gb/d8/greencroft_industrial_park/;Greencroft Industrial Park;greencroft_industrial_park
+http://www.meetup.com/cities/gb/d8/greenhead/;Greenhead;greenhead
+http://www.meetup.com/cities/gb/d8/hamsterley/;Hamsterley;hamsterley
+http://www.meetup.com/cities/gb/d8/hanging_stone/;Hanging Stone;hanging_stone
+http://www.meetup.com/cities/gb/d8/hare_law/;Hare Law;hare_law
+http://www.meetup.com/cities/gb/d8/harperley/;Harperley;harperley
+http://www.meetup.com/cities/gb/d8/hart/;Hart;hart
+http://www.meetup.com/cities/gb/d8/hartlepool/;Hartlepool;hartlepool
+http://www.meetup.com/cities/gb/d8/hartside/;Hartside;hartside
+http://www.meetup.com/cities/gb/d8/hart_village/;Hart Village;hart_village
+http://www.meetup.com/cities/gb/d8/harwood/;Harwood;harwood
+http://www.meetup.com/cities/gb/d8/haswell/;Haswell;haswell
+http://www.meetup.com/cities/gb/d8/haswell_plough/;Haswell Plough;haswell_plough
+http://www.meetup.com/cities/gb/d8/hawthorn/;Hawthorn;hawthorn
+http://www.meetup.com/cities/gb/d8/headlam/;Headlam;headlam
+http://www.meetup.com/cities/gb/d8/hedley_hill/;Hedley Hill;hedley_hill
+http://www.meetup.com/cities/gb/d8/hedley_hope/;Hedley Hope;hedley_hope
+http://www.meetup.com/cities/gb/d8/heighington/;Heighington;heighington
+http://www.meetup.com/cities/gb/d8/heighington_lane_business_park/;Heighington Lane Business Park;heighington_lane_business_park
+http://www.meetup.com/cities/gb/d8/heighington_village/;Heighington Village;heighington_village
+http://www.meetup.com/cities/gb/d8/helmington_row/;Helmington Row;helmington_row
+http://www.meetup.com/cities/gb/d8/hesleden/;Hesleden;hesleden
+http://www.meetup.com/cities/gb/d8/hett/;Hett;hett
+http://www.meetup.com/cities/gb/d8/hett_hills/;Hett Hills;hett_hills
+http://www.meetup.com/cities/gb/d8/high_coniscliffe/;High Coniscliffe;high_coniscliffe
+http://www.meetup.com/cities/gb/d8/high_etherley/;High Etherley;high_etherley
+http://www.meetup.com/cities/gb/d8/high_flatts/;High Flatts;high_flatts
+http://www.meetup.com/cities/gb/d8/high_hesleden/;High Hesleden;high_hesleden
+http://www.meetup.com/cities/gb/d8/high_hold/;High Hold;high_hold
+http://www.meetup.com/cities/gb/d8/high_pittington/;High Pittington;high_pittington
+http://www.meetup.com/cities/gb/d8/high_shincliffe/;High Shincliffe;high_shincliffe
+http://www.meetup.com/cities/gb/d8/high_startforth/;High Startforth;high_startforth
+http://www.meetup.com/cities/gb/d8/high_westwood/;High Westwood;high_westwood
+http://www.meetup.com/cities/gb/d8/high_wham/;High Wham;high_wham
+http://www.meetup.com/cities/gb/d8/hilton/;Hilton;hilton
+http://www.meetup.com/cities/gb/d8/hobson/;Hobson;hobson
+http://www.meetup.com/cities/gb/d8/horden/;Horden;horden
+http://www.meetup.com/cities/gb/d8/houghall/;Houghall;houghall
+http://www.meetup.com/cities/gb/d8/houghton-le-side/;Houghton-le-Side;houghton-le-side
+http://www.meetup.com/cities/gb/d8/howden_le_wear/;Howden le Wear;howden_le_wear
+http://www.meetup.com/cities/gb/d8/hunderthwaite/;Hunderthwaite;hunderthwaite
+http://www.meetup.com/cities/gb/d8/hunstanworth/;Hunstanworth;hunstanworth
+http://www.meetup.com/cities/gb/d8/huntshieldford/;Huntshieldford;huntshieldford
+http://www.meetup.com/cities/gb/d8/hunwick/;Hunwick;hunwick
+http://www.meetup.com/cities/gb/d8/hurworth/;Hurworth;hurworth
+http://www.meetup.com/cities/gb/d8/hurworth_moor/;Hurworth Moor;hurworth_moor
+http://www.meetup.com/cities/gb/d8/hurworth_place/;Hurworth Place;hurworth_place
+http://www.meetup.com/cities/gb/d8/hutton_henry/;Hutton Henry;hutton_henry
+http://www.meetup.com/cities/gb/d8/hutton_magna/;Hutton Magna;hutton_magna
+http://www.meetup.com/cities/gb/d8/ingleton/;Ingleton;ingleton
+http://www.meetup.com/cities/gb/d8/ireshopeburn/;Ireshopeburn;ireshopeburn
+http://www.meetup.com/cities/gb/d8/iveston/;Iveston;iveston
+http://www.meetup.com/cities/gb/d8/kelloe/;Kelloe;kelloe
+http://www.meetup.com/cities/gb/d8/killerby/;Killerby;killerby
+http://www.meetup.com/cities/gb/d8/kimblesworth/;Kimblesworth;kimblesworth
+http://www.meetup.com/cities/gb/d8/kinninvie/;Kinninvie;kinninvie
+http://www.meetup.com/cities/gb/d8/kip_hill/;Kip Hill;kip_hill
+http://www.meetup.com/cities/gb/d8/kirk_merrington/;Kirk Merrington;kirk_merrington
+http://www.meetup.com/cities/gb/d8/knitsley/;Knitsley;knitsley
+http://www.meetup.com/cities/gb/d8/lambton_park/;Lambton Park;lambton_park
+http://www.meetup.com/cities/gb/d8/lanchester/;Lanchester;lanchester
+http://www.meetup.com/cities/gb/d8/lanehead/;Lanehead;lanehead
+http://www.meetup.com/cities/gb/d8/langleydale/;Langleydale;langleydale
+http://www.meetup.com/cities/gb/d8/langley_moor/;Langley Moor;langley_moor
+http://www.meetup.com/cities/gb/d8/langley_park/;Langley Park;langley_park
+http://www.meetup.com/cities/gb/d8/langton/;Langton;langton
+http://www.meetup.com/cities/gb/d8/lartington/;Lartington;lartington
+http://www.meetup.com/cities/gb/d8/leadgate/;Leadgate;leadgate
+http://www.meetup.com/cities/gb/d8/leamside/;Leamside;leamside
+http://www.meetup.com/cities/gb/d8/leasingthorne/;Leasingthorne;leasingthorne
+http://www.meetup.com/cities/gb/d8/leeholme/;Leeholme;leeholme
+http://www.meetup.com/cities/gb/d8/lintz_green/;Lintz Green;lintz_green
+http://www.meetup.com/cities/gb/d8/little_newsham/;Little Newsham;little_newsham
+http://www.meetup.com/cities/gb/d8/little_stainton/;Little Stainton;little_stainton
+http://www.meetup.com/cities/gb/d8/littlethorpe/;Littlethorpe;littlethorpe
+http://www.meetup.com/cities/gb/d8/littletown/;Littletown;littletown
+http://www.meetup.com/cities/gb/d8/long_newton/;Long Newton;long_newton
+http://www.meetup.com/cities/gb/d8/low_coniscliffe/;Low Coniscliffe;low_coniscliffe
+http://www.meetup.com/cities/gb/d8/low_dinsdale/;Low Dinsdale;low_dinsdale
+http://www.meetup.com/cities/gb/d8/low_etherley/;Low Etherley;low_etherley
+http://www.meetup.com/cities/gb/d8/low_pittington/;Low Pittington;low_pittington
+http://www.meetup.com/cities/gb/d8/low_urpeth/;Low Urpeth;low_urpeth
+http://www.meetup.com/cities/gb/d8/low_westwood/;Low Westwood;low_westwood
+http://www.meetup.com/cities/gb/d8/low_wham/;Low Wham;low_wham
+http://www.meetup.com/cities/gb/d8/low_willington_industrial_estate/;Low Willington Industrial Estate;low_willington_industrial_estate
+http://www.meetup.com/cities/gb/d8/ludworth/;Ludworth;ludworth
+http://www.meetup.com/cities/gb/d8/lumley_links/;Lumley Links;lumley_links
+http://www.meetup.com/cities/gb/d8/lumley_park/;Lumley Park;lumley_park
+http://www.meetup.com/cities/gb/d8/maiden_law/;Maiden Law;maiden_law
+http://www.meetup.com/cities/gb/d8/mainsforth/;Mainsforth;mainsforth
+http://www.meetup.com/cities/gb/d8/malton/;Malton;malton
+http://www.meetup.com/cities/gb/d8/manfield/;Manfield;manfield
+http://www.meetup.com/cities/gb/d8/marwood/;Marwood;marwood
+http://www.meetup.com/cities/gb/d8/meadowfield/;Meadowfield;meadowfield
+http://www.meetup.com/cities/gb/d8/meadowfield_industrial_estate/;Meadowfield Industrial Estate;meadowfield_industrial_estate
+http://www.meetup.com/cities/gb/d8/medomsley/;Medomsley;medomsley
+http://www.meetup.com/cities/gb/d8/medomsley_edge/;Medomsley Edge;medomsley_edge
+http://www.meetup.com/cities/gb/d8/merrybent/;Merrybent;merrybent
+http://www.meetup.com/cities/gb/d8/metal_bridge/;Metal Bridge;metal_bridge
+http://www.meetup.com/cities/gb/d8/mickleton/;Mickleton;mickleton
+http://www.meetup.com/cities/gb/d8/middlestone/;Middlestone;middlestone
+http://www.meetup.com/cities/gb/d8/middlestone_moor/;Middlestone Moor;middlestone_moor
+http://www.meetup.com/cities/gb/d8/middleton-in-teesdale/;Middleton-in-Teesdale;middleton-in-teesdale
+http://www.meetup.com/cities/gb/d8/middleton_one_row/;Middleton One Row;middleton_one_row
+http://www.meetup.com/cities/gb/d8/middleton_st_george/;Middleton St George;middleton_st_george
+http://www.meetup.com/cities/gb/d8/middridge/;Middridge;middridge
+http://www.meetup.com/cities/gb/d8/monk_hesleden/;Monk Hesleden;monk_hesleden
+http://www.meetup.com/cities/gb/d8/moorside/;Moorside;moorside
+http://www.meetup.com/cities/gb/d8/mordon/;Mordon;mordon
+http://www.meetup.com/cities/gb/d8/morley/;Morley;morley
+http://www.meetup.com/cities/gb/d8/morton_tinmouth/;Morton Tinmouth;morton_tinmouth
+http://www.meetup.com/cities/gb/d8/neasham/;Neasham;neasham
+http://www.meetup.com/cities/gb/d8/nettlesworth/;Nettlesworth;nettlesworth
+http://www.meetup.com/cities/gb/d8/nevilles_cross/;Nevilles Cross;nevilles_cross
+http://www.meetup.com/cities/gb/d8/newbiggin/;Newbiggin;newbiggin
+http://www.meetup.com/cities/gb/d8/new_brancepeth/;New Brancepeth;new_brancepeth
+http://www.meetup.com/cities/gb/d8/new_coundon/;New Coundon;new_coundon
+http://www.meetup.com/cities/gb/d8/new_durham/;New Durham;new_durham
+http://www.meetup.com/cities/gb/d8/newfield/;Newfield;newfield
+http://www.meetup.com/cities/gb/d8/new_kyo/;New Kyo;new_kyo
+http://www.meetup.com/cities/gb/d8/new_lambton/;New Lambton;new_lambton
+http://www.meetup.com/cities/gb/d8/newton_aycliffe/;Newton Aycliffe;newton_aycliffe
+http://www.meetup.com/cities/gb/d8/newton_bewley/;Newton Bewley;newton_bewley
+http://www.meetup.com/cities/gb/d8/newtown/;Newtown;newtown
+http://www.meetup.com/cities/gb/d8/north_bitchburn/;North Bitchburn;north_bitchburn
+http://www.meetup.com/cities/gb/d8/north_east_industrial_estate/;North East Industrial Estate;north_east_industrial_estate
+http://www.meetup.com/cities/gb/d8/north_tees_industrial_estate/;North Tees Industrial Estate;north_tees_industrial_estate
+http://www.meetup.com/cities/gb/d8/north_west_industrial_estate/;North West Industrial Estate;north_west_industrial_estate
+http://www.meetup.com/cities/gb/d8/norton/;Norton;norton
+http://www.meetup.com/cities/gb/d8/oakenshaw/;Oakenshaw;oakenshaw
+http://www.meetup.com/cities/gb/d8/old_cassop/;Old Cassop;old_cassop
+http://www.meetup.com/cities/gb/d8/old_eldon/;Old Eldon;old_eldon
+http://www.meetup.com/cities/gb/d8/old_pit/;Old Pit;old_pit
+http://www.meetup.com/cities/gb/d8/old_quarrington/;Old Quarrington;old_quarrington
+http://www.meetup.com/cities/gb/d8/old_shotton/;Old Shotton;old_shotton
+http://www.meetup.com/cities/gb/d8/old_south_moor/;Old South Moor;old_south_moor
+http://www.meetup.com/cities/gb/d8/ouston/;Ouston;ouston
+http://www.meetup.com/cities/gb/d8/over_dinsdale/;Over Dinsdale;over_dinsdale
+http://www.meetup.com/cities/gb/d8/ovington/;Ovington;ovington
+http://www.meetup.com/cities/gb/d8/oxhill/;Oxhill;oxhill
+http://www.meetup.com/cities/gb/d8/page_bank/;Page Bank;page_bank
+http://www.meetup.com/cities/gb/d8/park_view_industrial_estate/;Park View Industrial Estate;park_view_industrial_estate
+http://www.meetup.com/cities/gb/d8/pelaw_grange/;Pelaw Grange;pelaw_grange
+http://www.meetup.com/cities/gb/d8/pelton/;Pelton;pelton
+http://www.meetup.com/cities/gb/d8/pelton_fell/;Pelton Fell;pelton_fell
+http://www.meetup.com/cities/gb/d8/perkinsville/;Perkinsville;perkinsville
+http://www.meetup.com/cities/gb/d8/peterlee/;Peterlee;peterlee
+http://www.meetup.com/cities/gb/d8/picktree/;Picktree;picktree
+http://www.meetup.com/cities/gb/d8/piercebridge/;Piercebridge;piercebridge
+http://www.meetup.com/cities/gb/d8/pity_me/;Pity Me;pity_me
+http://www.meetup.com/cities/gb/d8/plawsworth/;Plawsworth;plawsworth
+http://www.meetup.com/cities/gb/d8/plawsworth_gate/;Plawsworth Gate;plawsworth_gate
+http://www.meetup.com/cities/gb/d8/port_clarence/;Port Clarence;port_clarence
+http://www.meetup.com/cities/gb/d8/portrack_interchange_business_park/;Portrack Interchange Business Park;portrack_interchange_business_park
+http://www.meetup.com/cities/gb/d8/preston_farm_business_park/;Preston Farm Business Park;preston_farm_business_park
+http://www.meetup.com/cities/gb/d8/preston_farm_industrial_estate/;Preston Farm Industrial Estate;preston_farm_industrial_estate
+http://www.meetup.com/cities/gb/d8/preston_le_skerne/;Preston le Skerne;preston_le_skerne
+http://www.meetup.com/cities/gb/d8/quaking_houses/;Quaking Houses;quaking_houses
+http://www.meetup.com/cities/gb/d8/quarrington_hill/;Quarrington Hill;quarrington_hill
+http://www.meetup.com/cities/gb/d8/quebec/;Quebec;quebec
+http://www.meetup.com/cities/gb/d8/queens_meadow_business_park/;Queens Meadow Business Park;queens_meadow_business_park
+http://www.meetup.com/cities/gb/d8/rainton_gate/;Rainton Gate;rainton_gate
+http://www.meetup.com/cities/gb/d8/ramshaw/;Ramshaw;ramshaw
+http://www.meetup.com/cities/gb/d8/redmarshall/;Redmarshall;redmarshall
+http://www.meetup.com/cities/gb/d8/redworth/;Redworth;redworth
+http://www.meetup.com/cities/gb/d8/roddymoor/;Roddymoor;roddymoor
+http://www.meetup.com/cities/gb/d8/rokeby/;Rokeby;rokeby
+http://www.meetup.com/cities/gb/d8/romaldkirk/;Romaldkirk;romaldkirk
+http://www.meetup.com/cities/gb/d8/rookhope/;Rookhope;rookhope
+http://www.meetup.com/cities/gb/d8/rowley/;Rowley;rowley
+http://www.meetup.com/cities/gb/d8/running_waters/;Running Waters;running_waters
+http://www.meetup.com/cities/gb/d8/rushyford/;Rushyford;rushyford
+http://www.meetup.com/cities/gb/d8/sacriston/;Sacriston;sacriston
+http://www.meetup.com/cities/gb/d8/sadberge/;Sadberge;sadberge
+http://www.meetup.com/cities/gb/d8/satley/;Satley;satley
+http://www.meetup.com/cities/gb/d8/scargill/;Scargill;scargill
+http://www.meetup.com/cities/gb/d8/school_aycliffe/;School Aycliffe;school_aycliffe
+http://www.meetup.com/cities/gb/d8/seaham/;Seaham;seaham
+http://www.meetup.com/cities/gb/d8/seaham_grange_industrial_estate/;Seaham Grange Industrial Estate;seaham_grange_industrial_estate
+http://www.meetup.com/cities/gb/d8/seal_sands/;Seal Sands;seal_sands
+http://www.meetup.com/cities/gb/d8/seaton_carew/;Seaton Carew;seaton_carew
+http://www.meetup.com/cities/gb/d8/sedgefield/;Sedgefield;sedgefield
+http://www.meetup.com/cities/gb/d8/shadforth/;Shadforth;shadforth
+http://www.meetup.com/cities/gb/d8/sheraton/;Sheraton;sheraton
+http://www.meetup.com/cities/gb/d8/sherburn/;Sherburn;sherburn
+http://www.meetup.com/cities/gb/d8/sherburn_hill/;Sherburn Hill;sherburn_hill
+http://www.meetup.com/cities/gb/d8/sherburn_house/;Sherburn House;sherburn_house
+http://www.meetup.com/cities/gb/d8/sherburn_village/;Sherburn Village;sherburn_village
+http://www.meetup.com/cities/gb/d8/shield_row/;Shield Row;shield_row
+http://www.meetup.com/cities/gb/d8/shildon/;Shildon;shildon
+http://www.meetup.com/cities/gb/d8/shincliffe/;Shincliffe;shincliffe
+http://www.meetup.com/cities/gb/d8/shotton_colliery/;Shotton Colliery;shotton_colliery
+http://www.meetup.com/cities/gb/d8/south_church/;South Church;south_church
+http://www.meetup.com/cities/gb/d8/south_church_enterprise_park/;South Church Enterprise Park;south_church_enterprise_park
+http://www.meetup.com/cities/gb/d8/south_cleatlam/;South Cleatlam;south_cleatlam
+http://www.meetup.com/cities/gb/d8/south_hetton/;South Hetton;south_hetton
+http://www.meetup.com/cities/gb/d8/south_moor/;South Moor;south_moor
+http://www.meetup.com/cities/gb/d8/south_pelaw/;South Pelaw;south_pelaw
+http://www.meetup.com/cities/gb/d8/southside/;Southside;southside
+http://www.meetup.com/cities/gb/d8/south_west_industrial_estate/;South West Industrial Estate;south_west_industrial_estate
+http://www.meetup.com/cities/gb/d8/spennymoor/;Spennymoor;spennymoor
+http://www.meetup.com/cities/gb/d8/staindrop/;Staindrop;staindrop
+http://www.meetup.com/cities/gb/d8/stainton/;Stainton;stainton
+http://www.meetup.com/cities/gb/d8/stainton_grove/;Stainton Grove;stainton_grove
+http://www.meetup.com/cities/gb/d8/stanhope/;Stanhope;stanhope
+http://www.meetup.com/cities/gb/d8/stanley/;Stanley;stanley
+http://www.meetup.com/cities/gb/d8/stapleton/;Stapleton;stapleton
+http://www.meetup.com/cities/gb/d8/startforth/;Startforth;startforth
+http://www.meetup.com/cities/gb/d8/station_town/;Station Town;station_town
+http://www.meetup.com/cities/gb/d8/st_helen_auckland/;St Helen Auckland;st_helen_auckland
+http://www.meetup.com/cities/gb/d8/stillington/;Stillington;stillington
+http://www.meetup.com/cities/gb/d8/st_johns_chapel/;St Johns Chapel;st_johns_chapel
+http://www.meetup.com/cities/gb/d8/stockton-on-tees/;Stockton-on-Tees;stockton-on-tees
+http://www.meetup.com/cities/gb/d8/stonebridge/;Stonebridge;stonebridge
+http://www.meetup.com/cities/gb/d8/streatlam/;Streatlam;streatlam
+http://www.meetup.com/cities/gb/d8/summerhouse/;Summerhouse;summerhouse
+http://www.meetup.com/cities/gb/d8/sunderland_bridge/;Sunderland Bridge;sunderland_bridge
+http://www.meetup.com/cities/gb/d8/sunniside/;Sunniside;sunniside
+http://www.meetup.com/cities/gb/d8/sunnybrow/;Sunnybrow;sunnybrow
+http://www.meetup.com/cities/gb/d8/tanfield/;Tanfield;tanfield
+http://www.meetup.com/cities/gb/d8/tanfield_lea/;Tanfield Lea;tanfield_lea
+http://www.meetup.com/cities/gb/d8/tan_hills/;Tan Hills;tan_hills
+http://www.meetup.com/cities/gb/d8/tantobie/;Tantobie;tantobie
+http://www.meetup.com/cities/gb/d8/templetown/;Templetown;templetown
+http://www.meetup.com/cities/gb/d8/the_grove/;The Grove;the_grove
+http://www.meetup.com/cities/gb/d8/the_headland/;The Headland;the_headland
+http://www.meetup.com/cities/gb/d8/the_middles/;The Middles;the_middles
+http://www.meetup.com/cities/gb/d8/thinford/;Thinford;thinford
+http://www.meetup.com/cities/gb/d8/thornley/;Thornley;thornley
+http://www.meetup.com/cities/gb/d8/thorpe_larches/;Thorpe Larches;thorpe_larches
+http://www.meetup.com/cities/gb/d8/thorpe_thewles/;Thorpe Thewles;thorpe_thewles
+http://www.meetup.com/cities/gb/d8/tindale_crescent/;Tindale Crescent;tindale_crescent
+http://www.meetup.com/cities/gb/d8/todhills/;Todhills;todhills
+http://www.meetup.com/cities/gb/d8/toft_hill/;Toft Hill;toft_hill
+http://www.meetup.com/cities/gb/d8/toronto/;Toronto;toronto
+http://www.meetup.com/cities/gb/d8/tow_law/;Tow Law;tow_law
+http://www.meetup.com/cities/gb/d8/townfield/;Townfield;townfield
+http://www.meetup.com/cities/gb/d8/trimdon/;Trimdon;trimdon
+http://www.meetup.com/cities/gb/d8/trimdon_colliery/;Trimdon Colliery;trimdon_colliery
+http://www.meetup.com/cities/gb/d8/trimdon_grange/;Trimdon Grange;trimdon_grange
+http://www.meetup.com/cities/gb/d8/trimdon_station/;Trimdon Station;trimdon_station
+http://www.meetup.com/cities/gb/d8/tudhoe_colliery/;Tudhoe Colliery;tudhoe_colliery
+http://www.meetup.com/cities/gb/d8/tudhoe_village/;Tudhoe Village;tudhoe_village
+http://www.meetup.com/cities/gb/d8/tursdale/;Tursdale;tursdale
+http://www.meetup.com/cities/gb/d8/urpeth/;Urpeth;urpeth
+http://www.meetup.com/cities/gb/d8/ushaw_moor/;Ushaw Moor;ushaw_moor
+http://www.meetup.com/cities/gb/d8/villa_real/;Villa Real;villa_real
+http://www.meetup.com/cities/gb/d8/wackerfield/;Wackerfield;wackerfield
+http://www.meetup.com/cities/gb/d8/waldridge/;Waldridge;waldridge
+http://www.meetup.com/cities/gb/d8/walworth/;Walworth;walworth
+http://www.meetup.com/cities/gb/d8/walworth_gate/;Walworth Gate;walworth_gate
+http://www.meetup.com/cities/gb/d8/waskerley/;Waskerley;waskerley
+http://www.meetup.com/cities/gb/d8/waterhouses/;Waterhouses;waterhouses
+http://www.meetup.com/cities/gb/d8/wearhead/;Wearhead;wearhead
+http://www.meetup.com/cities/gb/d8/wear_valley_junction/;Wear Valley Junction;wear_valley_junction
+http://www.meetup.com/cities/gb/d8/west_auckland/;West Auckland;west_auckland
+http://www.meetup.com/cities/gb/d8/west_blackdene/;West Blackdene;west_blackdene
+http://www.meetup.com/cities/gb/d8/west_butsfield/;West Butsfield;west_butsfield
+http://www.meetup.com/cities/gb/d8/west_cornforth/;West Cornforth;west_cornforth
+http://www.meetup.com/cities/gb/d8/westerton/;Westerton;westerton
+http://www.meetup.com/cities/gb/d8/westgate/;Westgate;westgate
+http://www.meetup.com/cities/gb/d8/west_kyo/;West Kyo;west_kyo
+http://www.meetup.com/cities/gb/d8/west_pelton/;West Pelton;west_pelton
+http://www.meetup.com/cities/gb/d8/west_rainton/;West Rainton;west_rainton
+http://www.meetup.com/cities/gb/d8/west_roddymoor/;West Roddymoor;west_roddymoor
+http://www.meetup.com/cities/gb/d8/west_sherburn/;West Sherburn;west_sherburn
+http://www.meetup.com/cities/gb/d8/westwick/;Westwick;westwick
+http://www.meetup.com/cities/gb/d8/wheatley_hill/;Wheatley Hill;wheatley_hill
+http://www.meetup.com/cities/gb/d8/whinney_hill/;Whinney Hill;whinney_hill
+http://www.meetup.com/cities/gb/d8/whitehouse_business_park/;Whitehouse Business Park;whitehouse_business_park
+http://www.meetup.com/cities/gb/d8/whitton_village/;Whitton Village;whitton_village
+http://www.meetup.com/cities/gb/d8/whitworth/;Whitworth;whitworth
+http://www.meetup.com/cities/gb/d8/whorlton/;Whorlton;whorlton
+http://www.meetup.com/cities/gb/d8/willington/;Willington;willington
+http://www.meetup.com/cities/gb/d8/windlestone/;Windlestone;windlestone
+http://www.meetup.com/cities/gb/d8/windmill/;Windmill;windmill
+http://www.meetup.com/cities/gb/d8/wingate/;Wingate;wingate
+http://www.meetup.com/cities/gb/d8/winston/;Winston;winston
+http://www.meetup.com/cities/gb/d8/winterton/;Winterton;winterton
+http://www.meetup.com/cities/gb/d8/witton_gilbert/;Witton Gilbert;witton_gilbert
+http://www.meetup.com/cities/gb/d8/witton_le_wear/;Witton le Wear;witton_le_wear
+http://www.meetup.com/cities/gb/d8/witton_park/;Witton Park;witton_park
+http://www.meetup.com/cities/gb/d8/wolsingham/;Wolsingham;wolsingham
+http://www.meetup.com/cities/gb/d8/wolviston/;Wolviston;wolviston
+http://www.meetup.com/cities/gb/d8/woodland/;Woodland;woodland
+http://www.meetup.com/cities/gb/d8/woodstone_village/;Woodstone Village;woodstone_village
+http://www.meetup.com/cities/gb/d8/wycliffe/;Wycliffe;wycliffe
+http://www.meetup.com/cities/gb/d8/wynyard/;Wynyard;wynyard
+http://www.meetup.com/cities/gb/d8/wynyard_business_park/;Wynyard Business Park;wynyard_business_park

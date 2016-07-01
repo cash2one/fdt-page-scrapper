@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/gb/im/abbeylands/;Abbeylands;abbeylands
+http://www.meetup.com/cities/gb/im/agneash/;Agneash;agneash
+http://www.meetup.com/cities/gb/im/balthane/;Balthane;balthane
+http://www.meetup.com/cities/gb/im/churchtown/;Churchtown;churchtown
+http://www.meetup.com/cities/gb/im/colby/;Colby;colby
+http://www.meetup.com/cities/gb/im/cooil/;Cooil;cooil
+http://www.meetup.com/cities/gb/im/cregneash/;Cregneash;cregneash
+http://www.meetup.com/cities/gb/im/dalby/;Dalby;dalby
+http://www.meetup.com/cities/gb/im/derbyhaven/;Derbyhaven;derbyhaven
+http://www.meetup.com/cities/gb/im/dogmills/;Dogmills;dogmills
+http://www.meetup.com/cities/gb/im/dreemskerry/;Dreemskerry;dreemskerry
+http://www.meetup.com/cities/gb/im/fairy_cottage/;Fairy Cottage;fairy_cottage
+http://www.meetup.com/cities/gb/im/fort_island/;Fort Island;fort_island
+http://www.meetup.com/cities/gb/im/glen_auldyn/;Glen Auldyn;glen_auldyn
+http://www.meetup.com/cities/gb/im/glen_chass/;Glen Chass;glen_chass
+http://www.meetup.com/cities/gb/im/glen_duff/;Glen Duff;glen_duff
+http://www.meetup.com/cities/gb/im/glen_maye/;Glen Maye;glen_maye
+http://www.meetup.com/cities/gb/im/glen_mona/;Glen Mona;glen_mona
+http://www.meetup.com/cities/gb/im/glen_roy/;Glen Roy;glen_roy
+http://www.meetup.com/cities/gb/im/glen_rushen/;Glen Rushen;glen_rushen
+http://www.meetup.com/cities/gb/im/glen_tramman/;Glen Tramman;glen_tramman
+http://www.meetup.com/cities/gb/im/glen_vine/;Glen Vine;glen_vine
+http://www.meetup.com/cities/gb/im/glen_wyllin/;Glen Wyllin;glen_wyllin
+http://www.meetup.com/cities/gb/im/great_meadow/;Great Meadow;great_meadow
+http://www.meetup.com/cities/gb/im/kentraugh/;Kentraugh;kentraugh
+http://www.meetup.com/cities/gb/im/kerroogarroo/;Kerroogarroo;kerroogarroo
+http://www.meetup.com/cities/gb/im/kerrowmoar/;Kerrowmoar;kerrowmoar
+http://www.meetup.com/cities/gb/im/knocksharry/;Knocksharry;knocksharry
+http://www.meetup.com/cities/gb/im/little_london/;Little London;little_london
+http://www.meetup.com/cities/gb/im/lower_foxdale/;Lower Foxdale;lower_foxdale
+http://www.meetup.com/cities/gb/im/maughold/;Maughold;maughold
+http://www.meetup.com/cities/gb/im/patrick_village/;Patrick Village;patrick_village
+http://www.meetup.com/cities/gb/im/pooilvaaish/;Pooilvaaish;pooilvaaish
+http://www.meetup.com/cities/gb/im/poortown/;Poortown;poortown
+http://www.meetup.com/cities/gb/im/port_e_vullen/;Port E Vullen;port_e_vullen
+http://www.meetup.com/cities/gb/im/port_erin/;Port Erin;port_erin
+http://www.meetup.com/cities/gb/im/raggatt/;Raggatt;raggatt
+http://www.meetup.com/cities/gb/im/ramsey/;Ramsey;ramsey
+http://www.meetup.com/cities/gb/im/regaby/;Regaby;regaby
+http://www.meetup.com/cities/gb/im/rencell/;Rencell;rencell
+http://www.meetup.com/cities/gb/im/rhencullen/;Rhencullen;rhencullen
+http://www.meetup.com/cities/gb/im/scarlett/;Scarlett;scarlett
+http://www.meetup.com/cities/gb/im/south_cape/;South Cape;south_cape
+http://www.meetup.com/cities/gb/im/st_judes/;St Judes;st_judes
+http://www.meetup.com/cities/gb/im/st_marks/;St Marks;st_marks
+http://www.meetup.com/cities/gb/im/strandhall/;Strandhall;strandhall
+http://www.meetup.com/cities/gb/im/strang/;Strang;strang
+http://www.meetup.com/cities/gb/im/sulby/;Sulby;sulby
+http://www.meetup.com/cities/gb/im/surby/;Surby;surby
+http://www.meetup.com/cities/gb/im/west_baldwin/;West Baldwin;west_baldwin
+http://www.meetup.com/cities/gb/im/abbeylands/;Abbeylands;abbeylands
+http://www.meetup.com/cities/gb/im/agneash/;Agneash;agneash
+http://www.meetup.com/cities/gb/im/balthane/;Balthane;balthane
+http://www.meetup.com/cities/gb/im/churchtown/;Churchtown;churchtown
+http://www.meetup.com/cities/gb/im/colby/;Colby;colby
+http://www.meetup.com/cities/gb/im/cooil/;Cooil;cooil
+http://www.meetup.com/cities/gb/im/cregneash/;Cregneash;cregneash
+http://www.meetup.com/cities/gb/im/dalby/;Dalby;dalby
+http://www.meetup.com/cities/gb/im/derbyhaven/;Derbyhaven;derbyhaven
+http://www.meetup.com/cities/gb/im/dogmills/;Dogmills;dogmills
+http://www.meetup.com/cities/gb/im/dreemskerry/;Dreemskerry;dreemskerry
+http://www.meetup.com/cities/gb/im/fairy_cottage/;Fairy Cottage;fairy_cottage
+http://www.meetup.com/cities/gb/im/fort_island/;Fort Island;fort_island
+http://www.meetup.com/cities/gb/im/glen_auldyn/;Glen Auldyn;glen_auldyn
+http://www.meetup.com/cities/gb/im/glen_chass/;Glen Chass;glen_chass
+http://www.meetup.com/cities/gb/im/glen_duff/;Glen Duff;glen_duff
+http://www.meetup.com/cities/gb/im/glen_maye/;Glen Maye;glen_maye
+http://www.meetup.com/cities/gb/im/glen_mona/;Glen Mona;glen_mona
+http://www.meetup.com/cities/gb/im/glen_roy/;Glen Roy;glen_roy
+http://www.meetup.com/cities/gb/im/glen_rushen/;Glen Rushen;glen_rushen
+http://www.meetup.com/cities/gb/im/glen_tramman/;Glen Tramman;glen_tramman
+http://www.meetup.com/cities/gb/im/glen_vine/;Glen Vine;glen_vine
+http://www.meetup.com/cities/gb/im/glen_wyllin/;Glen Wyllin;glen_wyllin
+http://www.meetup.com/cities/gb/im/great_meadow/;Great Meadow;great_meadow
+http://www.meetup.com/cities/gb/im/kentraugh/;Kentraugh;kentraugh
+http://www.meetup.com/cities/gb/im/kerroogarroo/;Kerroogarroo;kerroogarroo
+http://www.meetup.com/cities/gb/im/kerrowmoar/;Kerrowmoar;kerrowmoar
+http://www.meetup.com/cities/gb/im/knocksharry/;Knocksharry;knocksharry
+http://www.meetup.com/cities/gb/im/little_london/;Little London;little_london
+http://www.meetup.com/cities/gb/im/lower_foxdale/;Lower Foxdale;lower_foxdale
+http://www.meetup.com/cities/gb/im/maughold/;Maughold;maughold
+http://www.meetup.com/cities/gb/im/patrick_village/;Patrick Village;patrick_village
+http://www.meetup.com/cities/gb/im/pooilvaaish/;Pooilvaaish;pooilvaaish
+http://www.meetup.com/cities/gb/im/poortown/;Poortown;poortown
+http://www.meetup.com/cities/gb/im/port_e_vullen/;Port E Vullen;port_e_vullen
+http://www.meetup.com/cities/gb/im/port_erin/;Port Erin;port_erin
+http://www.meetup.com/cities/gb/im/raggatt/;Raggatt;raggatt
+http://www.meetup.com/cities/gb/im/ramsey/;Ramsey;ramsey
+http://www.meetup.com/cities/gb/im/regaby/;Regaby;regaby
+http://www.meetup.com/cities/gb/im/rencell/;Rencell;rencell
+http://www.meetup.com/cities/gb/im/rhencullen/;Rhencullen;rhencullen
+http://www.meetup.com/cities/gb/im/scarlett/;Scarlett;scarlett
+http://www.meetup.com/cities/gb/im/south_cape/;South Cape;south_cape
+http://www.meetup.com/cities/gb/im/st_judes/;St Judes;st_judes
+http://www.meetup.com/cities/gb/im/st_marks/;St Marks;st_marks
+http://www.meetup.com/cities/gb/im/strandhall/;Strandhall;strandhall
+http://www.meetup.com/cities/gb/im/strang/;Strang;strang
+http://www.meetup.com/cities/gb/im/sulby/;Sulby;sulby
+http://www.meetup.com/cities/gb/im/surby/;Surby;surby
+http://www.meetup.com/cities/gb/im/west_baldwin/;West Baldwin;west_baldwin

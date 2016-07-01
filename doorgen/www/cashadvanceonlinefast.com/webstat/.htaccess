@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/cashadvanceonlinefast.com/webstat"
+AuthUserFile /home/user/etc/1058049.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

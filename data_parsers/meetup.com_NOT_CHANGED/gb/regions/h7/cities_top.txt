@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/gb/h7/allington/;Allington;allington
+http://www.meetup.com/cities/gb/h7/barrow_haven/;Barrow Haven;barrow_haven
+http://www.meetup.com/cities/gb/h7/barrowby/;Barrowby;barrowby
+http://www.meetup.com/cities/gb/h7/barrowby_stenwith/;Barrowby Stenwith;barrowby_stenwith
+http://www.meetup.com/cities/gb/h7/boston/;Boston;boston
+http://www.meetup.com/cities/gb/h7/brigg/;Brigg;brigg
+http://www.meetup.com/cities/gb/h7/burton_pedwardine/;Burton Pedwardine;burton_pedwardine
+http://www.meetup.com/cities/gb/h7/burton_waters/;Burton Waters;burton_waters
+http://www.meetup.com/cities/gb/h7/burton-upon-stather/;Burton-upon-Stather;burton-upon-stather
+http://www.meetup.com/cities/gb/h7/cleethorpes/;Cleethorpes;cleethorpes
+http://www.meetup.com/cities/gb/h7/conisholme/;Conisholme;conisholme
+http://www.meetup.com/cities/gb/h7/cranwell_village/;Cranwell Village;cranwell_village
+http://www.meetup.com/cities/gb/h7/deepdale/;Deepdale;deepdale
+http://www.meetup.com/cities/gb/h7/digby/;Digby;digby
+http://www.meetup.com/cities/gb/h7/east_ferry/;East Ferry;east_ferry
+http://www.meetup.com/cities/gb/h7/east_firsby/;East Firsby;east_firsby
+http://www.meetup.com/cities/gb/h7/fenton/;Fenton;fenton
+http://www.meetup.com/cities/gb/h7/folkingham/;Folkingham;folkingham
+http://www.meetup.com/cities/gb/h7/garwick/;Garwick;garwick
+http://www.meetup.com/cities/gb/h7/grantham/;Grantham;grantham
+http://www.meetup.com/cities/gb/h7/grimoldby/;Grimoldby;grimoldby
+http://www.meetup.com/cities/gb/h7/grimsby/;Grimsby;grimsby
+http://www.meetup.com/cities/gb/h7/kelstern/;Kelstern;kelstern
+http://www.meetup.com/cities/gb/h7/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/gb/h7/little_hale/;Little Hale;little_hale
+http://www.meetup.com/cities/gb/h7/little_hale_fen/;Little Hale Fen;little_hale_fen
+http://www.meetup.com/cities/gb/h7/louth/;Louth;louth
+http://www.meetup.com/cities/gb/h7/luddington/;Luddington;luddington
+http://www.meetup.com/cities/gb/h7/ludford/;Ludford;ludford
+http://www.meetup.com/cities/gb/h7/mablethorpe/;Mablethorpe;mablethorpe
+http://www.meetup.com/cities/gb/h7/marston/;Marston;marston
+http://www.meetup.com/cities/gb/h7/moorby/;Moorby;moorby
+http://www.meetup.com/cities/gb/h7/muckton/;Muckton;muckton
+http://www.meetup.com/cities/gb/h7/navenby/;Navenby;navenby
+http://www.meetup.com/cities/gb/h7/north_hykeham/;North Hykeham;north_hykeham
+http://www.meetup.com/cities/gb/h7/north_somercotes/;North Somercotes;north_somercotes
+http://www.meetup.com/cities/gb/h7/saxilby/;Saxilby;saxilby
+http://www.meetup.com/cities/gb/h7/scunthorpe/;Scunthorpe;scunthorpe
+http://www.meetup.com/cities/gb/h7/shepeau_stow/;Shepeau Stow;shepeau_stow
+http://www.meetup.com/cities/gb/h7/skegness/;Skegness;skegness
+http://www.meetup.com/cities/gb/h7/skidbrooke/;Skidbrooke;skidbrooke
+http://www.meetup.com/cities/gb/h7/sleaford/;Sleaford;sleaford
+http://www.meetup.com/cities/gb/h7/spalding/;Spalding;spalding
+http://www.meetup.com/cities/gb/h7/stamford/;Stamford;stamford
+http://www.meetup.com/cities/gb/h7/sudbrook/;Sudbrook;sudbrook
+http://www.meetup.com/cities/gb/h7/swaton/;Swaton;swaton
+http://www.meetup.com/cities/gb/h7/syston/;Syston;syston
+http://www.meetup.com/cities/gb/h7/thornton/;Thornton;thornton
+http://www.meetup.com/cities/gb/h7/tinwell/;Tinwell;tinwell
+http://www.meetup.com/cities/gb/h7/winceby/;Winceby;winceby
+http://www.meetup.com/cities/gb/h7/allington/;Allington;allington
+http://www.meetup.com/cities/gb/h7/barrow_haven/;Barrow Haven;barrow_haven
+http://www.meetup.com/cities/gb/h7/barrowby/;Barrowby;barrowby
+http://www.meetup.com/cities/gb/h7/barrowby_stenwith/;Barrowby Stenwith;barrowby_stenwith
+http://www.meetup.com/cities/gb/h7/boston/;Boston;boston
+http://www.meetup.com/cities/gb/h7/brigg/;Brigg;brigg
+http://www.meetup.com/cities/gb/h7/burton_pedwardine/;Burton Pedwardine;burton_pedwardine
+http://www.meetup.com/cities/gb/h7/burton_waters/;Burton Waters;burton_waters
+http://www.meetup.com/cities/gb/h7/burton-upon-stather/;Burton-upon-Stather;burton-upon-stather
+http://www.meetup.com/cities/gb/h7/cleethorpes/;Cleethorpes;cleethorpes
+http://www.meetup.com/cities/gb/h7/conisholme/;Conisholme;conisholme
+http://www.meetup.com/cities/gb/h7/cranwell_village/;Cranwell Village;cranwell_village
+http://www.meetup.com/cities/gb/h7/deepdale/;Deepdale;deepdale
+http://www.meetup.com/cities/gb/h7/digby/;Digby;digby
+http://www.meetup.com/cities/gb/h7/east_ferry/;East Ferry;east_ferry
+http://www.meetup.com/cities/gb/h7/east_firsby/;East Firsby;east_firsby
+http://www.meetup.com/cities/gb/h7/fenton/;Fenton;fenton
+http://www.meetup.com/cities/gb/h7/folkingham/;Folkingham;folkingham
+http://www.meetup.com/cities/gb/h7/garwick/;Garwick;garwick
+http://www.meetup.com/cities/gb/h7/grantham/;Grantham;grantham
+http://www.meetup.com/cities/gb/h7/grimoldby/;Grimoldby;grimoldby
+http://www.meetup.com/cities/gb/h7/grimsby/;Grimsby;grimsby
+http://www.meetup.com/cities/gb/h7/kelstern/;Kelstern;kelstern
+http://www.meetup.com/cities/gb/h7/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/gb/h7/little_hale/;Little Hale;little_hale
+http://www.meetup.com/cities/gb/h7/little_hale_fen/;Little Hale Fen;little_hale_fen
+http://www.meetup.com/cities/gb/h7/louth/;Louth;louth
+http://www.meetup.com/cities/gb/h7/luddington/;Luddington;luddington
+http://www.meetup.com/cities/gb/h7/ludford/;Ludford;ludford
+http://www.meetup.com/cities/gb/h7/mablethorpe/;Mablethorpe;mablethorpe
+http://www.meetup.com/cities/gb/h7/marston/;Marston;marston
+http://www.meetup.com/cities/gb/h7/moorby/;Moorby;moorby
+http://www.meetup.com/cities/gb/h7/muckton/;Muckton;muckton
+http://www.meetup.com/cities/gb/h7/navenby/;Navenby;navenby
+http://www.meetup.com/cities/gb/h7/north_hykeham/;North Hykeham;north_hykeham
+http://www.meetup.com/cities/gb/h7/north_somercotes/;North Somercotes;north_somercotes
+http://www.meetup.com/cities/gb/h7/saxilby/;Saxilby;saxilby
+http://www.meetup.com/cities/gb/h7/scunthorpe/;Scunthorpe;scunthorpe
+http://www.meetup.com/cities/gb/h7/shepeau_stow/;Shepeau Stow;shepeau_stow
+http://www.meetup.com/cities/gb/h7/skegness/;Skegness;skegness
+http://www.meetup.com/cities/gb/h7/skidbrooke/;Skidbrooke;skidbrooke
+http://www.meetup.com/cities/gb/h7/sleaford/;Sleaford;sleaford
+http://www.meetup.com/cities/gb/h7/spalding/;Spalding;spalding
+http://www.meetup.com/cities/gb/h7/stamford/;Stamford;stamford
+http://www.meetup.com/cities/gb/h7/sudbrook/;Sudbrook;sudbrook
+http://www.meetup.com/cities/gb/h7/swaton/;Swaton;swaton
+http://www.meetup.com/cities/gb/h7/syston/;Syston;syston
+http://www.meetup.com/cities/gb/h7/thornton/;Thornton;thornton
+http://www.meetup.com/cities/gb/h7/tinwell/;Tinwell;tinwell
+http://www.meetup.com/cities/gb/h7/winceby/;Winceby;winceby

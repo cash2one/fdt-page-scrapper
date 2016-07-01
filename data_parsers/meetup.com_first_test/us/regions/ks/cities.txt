@@ -1,0 +1,634 @@
+http://www.meetup.com/cities/us/ks/abbyville/;Abbyville;abbyville
+http://www.meetup.com/cities/us/ks/abilene/;Abilene;abilene
+http://www.meetup.com/cities/us/ks/admire/;Admire;admire
+http://www.meetup.com/cities/us/ks/agenda/;Agenda;agenda
+http://www.meetup.com/cities/us/ks/agra/;Agra;agra
+http://www.meetup.com/cities/us/ks/albert/;Albert;albert
+http://www.meetup.com/cities/us/ks/alden/;Alden;alden
+http://www.meetup.com/cities/us/ks/alexander/;Alexander;alexander
+http://www.meetup.com/cities/us/ks/allen/;Allen;allen
+http://www.meetup.com/cities/us/ks/alma/;Alma;alma
+http://www.meetup.com/cities/us/ks/almena/;Almena;almena
+http://www.meetup.com/cities/us/ks/altamont/;Altamont;altamont
+http://www.meetup.com/cities/us/ks/alta_vista/;Alta Vista;alta_vista
+http://www.meetup.com/cities/us/ks/alton/;Alton;alton
+http://www.meetup.com/cities/us/ks/altoona/;Altoona;altoona
+http://www.meetup.com/cities/us/ks/americus/;Americus;americus
+http://www.meetup.com/cities/us/ks/andale/;Andale;andale
+http://www.meetup.com/cities/us/ks/andover/;Andover;andover
+http://www.meetup.com/cities/us/ks/anthony/;Anthony;anthony
+http://www.meetup.com/cities/us/ks/arcadia/;Arcadia;arcadia
+http://www.meetup.com/cities/us/ks/argonia/;Argonia;argonia
+http://www.meetup.com/cities/us/ks/arkansas_city/;Arkansas City;arkansas_city
+http://www.meetup.com/cities/us/ks/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/ks/arma/;Arma;arma
+http://www.meetup.com/cities/us/ks/arnold/;Arnold;arnold
+http://www.meetup.com/cities/us/ks/ashland/;Ashland;ashland
+http://www.meetup.com/cities/us/ks/assaria/;Assaria;assaria
+http://www.meetup.com/cities/us/ks/atchison/;Atchison;atchison
+http://www.meetup.com/cities/us/ks/athol/;Athol;athol
+http://www.meetup.com/cities/us/ks/atlanta/;Atlanta;atlanta
+http://www.meetup.com/cities/us/ks/attica/;Attica;attica
+http://www.meetup.com/cities/us/ks/atwood/;Atwood;atwood
+http://www.meetup.com/cities/us/ks/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/ks/augusta/;Augusta;augusta
+http://www.meetup.com/cities/us/ks/aurora/;Aurora;aurora
+http://www.meetup.com/cities/us/ks/axtell/;Axtell;axtell
+http://www.meetup.com/cities/us/ks/baileyville/;Baileyville;baileyville
+http://www.meetup.com/cities/us/ks/baldwin_city/;Baldwin City;baldwin_city
+http://www.meetup.com/cities/us/ks/barnard/;Barnard;barnard
+http://www.meetup.com/cities/us/ks/barnes/;Barnes;barnes
+http://www.meetup.com/cities/us/ks/bartlett/;Bartlett;bartlett
+http://www.meetup.com/cities/us/ks/basehor/;Basehor;basehor
+http://www.meetup.com/cities/us/ks/baxter_springs/;Baxter Springs;baxter_springs
+http://www.meetup.com/cities/us/ks/bazine/;Bazine;bazine
+http://www.meetup.com/cities/us/ks/beattie/;Beattie;beattie
+http://www.meetup.com/cities/us/ks/beaumont/;Beaumont;beaumont
+http://www.meetup.com/cities/us/ks/beeler/;Beeler;beeler
+http://www.meetup.com/cities/us/ks/belle_plaine/;Belle Plaine;belle_plaine
+http://www.meetup.com/cities/us/ks/belleville/;Belleville;belleville
+http://www.meetup.com/cities/us/ks/beloit/;Beloit;beloit
+http://www.meetup.com/cities/us/ks/belpre/;Belpre;belpre
+http://www.meetup.com/cities/us/ks/belvue/;Belvue;belvue
+http://www.meetup.com/cities/us/ks/bendena/;Bendena;bendena
+http://www.meetup.com/cities/us/ks/benedict/;Benedict;benedict
+http://www.meetup.com/cities/us/ks/bennington/;Bennington;bennington
+http://www.meetup.com/cities/us/ks/bentley/;Bentley;bentley
+http://www.meetup.com/cities/us/ks/benton/;Benton;benton
+http://www.meetup.com/cities/us/ks/bern/;Bern;bern
+http://www.meetup.com/cities/us/ks/berryton/;Berryton;berryton
+http://www.meetup.com/cities/us/ks/beverly/;Beverly;beverly
+http://www.meetup.com/cities/us/ks/bird_city/;Bird City;bird_city
+http://www.meetup.com/cities/us/ks/bison/;Bison;bison
+http://www.meetup.com/cities/us/ks/blue_mound/;Blue Mound;blue_mound
+http://www.meetup.com/cities/us/ks/blue_rapids/;Blue Rapids;blue_rapids
+http://www.meetup.com/cities/us/ks/bluff_city/;Bluff City;bluff_city
+http://www.meetup.com/cities/us/ks/bogue/;Bogue;bogue
+http://www.meetup.com/cities/us/ks/bonner_springs/;Bonner Springs;bonner_springs
+http://www.meetup.com/cities/us/ks/bremen/;Bremen;bremen
+http://www.meetup.com/cities/us/ks/brewster/;Brewster;brewster
+http://www.meetup.com/cities/us/ks/bronson/;Bronson;bronson
+http://www.meetup.com/cities/us/ks/brookville/;Brookville;brookville
+http://www.meetup.com/cities/us/ks/brownell/;Brownell;brownell
+http://www.meetup.com/cities/us/ks/bucklin/;Bucklin;bucklin
+http://www.meetup.com/cities/us/ks/bucyrus/;Bucyrus;bucyrus
+http://www.meetup.com/cities/us/ks/buffalo/;Buffalo;buffalo
+http://www.meetup.com/cities/us/ks/buhler/;Buhler;buhler
+http://www.meetup.com/cities/us/ks/bunker_hill/;Bunker Hill;bunker_hill
+http://www.meetup.com/cities/us/ks/burden/;Burden;burden
+http://www.meetup.com/cities/us/ks/burdett/;Burdett;burdett
+http://www.meetup.com/cities/us/ks/burdick/;Burdick;burdick
+http://www.meetup.com/cities/us/ks/burlingame/;Burlingame;burlingame
+http://www.meetup.com/cities/us/ks/burlington/;Burlington;burlington
+http://www.meetup.com/cities/us/ks/burns/;Burns;burns
+http://www.meetup.com/cities/us/ks/burr_oak/;Burr Oak;burr_oak
+http://www.meetup.com/cities/us/ks/burrton/;Burrton;burrton
+http://www.meetup.com/cities/us/ks/bushton/;Bushton;bushton
+http://www.meetup.com/cities/us/ks/byers/;Byers;byers
+http://www.meetup.com/cities/us/ks/caldwell/;Caldwell;caldwell
+http://www.meetup.com/cities/us/ks/cambridge/;Cambridge;cambridge
+http://www.meetup.com/cities/us/ks/caney/;Caney;caney
+http://www.meetup.com/cities/us/ks/canton/;Canton;canton
+http://www.meetup.com/cities/us/ks/carbondale/;Carbondale;carbondale
+http://www.meetup.com/cities/us/ks/cassoday/;Cassoday;cassoday
+http://www.meetup.com/cities/us/ks/catharine/;Catharine;catharine
+http://www.meetup.com/cities/us/ks/cawker_city/;Cawker City;cawker_city
+http://www.meetup.com/cities/us/ks/cedar/;Cedar;cedar
+http://www.meetup.com/cities/us/ks/cedar_point/;Cedar Point;cedar_point
+http://www.meetup.com/cities/us/ks/cedar_vale/;Cedar Vale;cedar_vale
+http://www.meetup.com/cities/us/ks/centerville/;Centerville;centerville
+http://www.meetup.com/cities/us/ks/centralia/;Centralia;centralia
+http://www.meetup.com/cities/us/ks/chanute/;Chanute;chanute
+http://www.meetup.com/cities/us/ks/chapman/;Chapman;chapman
+http://www.meetup.com/cities/us/ks/chase/;Chase;chase
+http://www.meetup.com/cities/us/ks/chautauqua/;Chautauqua;chautauqua
+http://www.meetup.com/cities/us/ks/cheney/;Cheney;cheney
+http://www.meetup.com/cities/us/ks/cherokee/;Cherokee;cherokee
+http://www.meetup.com/cities/us/ks/cherryvale/;Cherryvale;cherryvale
+http://www.meetup.com/cities/us/ks/chetopa/;Chetopa;chetopa
+http://www.meetup.com/cities/us/ks/cimarron/;Cimarron;cimarron
+http://www.meetup.com/cities/us/ks/circleville/;Circleville;circleville
+http://www.meetup.com/cities/us/ks/claflin/;Claflin;claflin
+http://www.meetup.com/cities/us/ks/clay_center/;Clay Center;clay_center
+http://www.meetup.com/cities/us/ks/clayton/;Clayton;clayton
+http://www.meetup.com/cities/us/ks/clearview_city/;Clearview City;clearview_city
+http://www.meetup.com/cities/us/ks/clearwater/;Clearwater;clearwater
+http://www.meetup.com/cities/us/ks/clifton/;Clifton;clifton
+http://www.meetup.com/cities/us/ks/clyde/;Clyde;clyde
+http://www.meetup.com/cities/us/ks/coats/;Coats;coats
+http://www.meetup.com/cities/us/ks/coffeyville/;Coffeyville;coffeyville
+http://www.meetup.com/cities/us/ks/colby/;Colby;colby
+http://www.meetup.com/cities/us/ks/coldwater/;Coldwater;coldwater
+http://www.meetup.com/cities/us/ks/collyer/;Collyer;collyer
+http://www.meetup.com/cities/us/ks/colony/;Colony;colony
+http://www.meetup.com/cities/us/ks/columbus/;Columbus;columbus
+http://www.meetup.com/cities/us/ks/colwich/;Colwich;colwich
+http://www.meetup.com/cities/us/ks/concordia/;Concordia;concordia
+http://www.meetup.com/cities/us/ks/conway_springs/;Conway Springs;conway_springs
+http://www.meetup.com/cities/us/ks/coolidge/;Coolidge;coolidge
+http://www.meetup.com/cities/us/ks/copeland/;Copeland;copeland
+http://www.meetup.com/cities/us/ks/corning/;Corning;corning
+http://www.meetup.com/cities/us/ks/cottonwood_falls/;Cottonwood Falls;cottonwood_falls
+http://www.meetup.com/cities/us/ks/council_grove/;Council Grove;council_grove
+http://www.meetup.com/cities/us/ks/courtland/;Courtland;courtland
+http://www.meetup.com/cities/us/ks/crestline/;Crestline;crestline
+http://www.meetup.com/cities/us/ks/cuba/;Cuba;cuba
+http://www.meetup.com/cities/us/ks/cummings/;Cummings;cummings
+http://www.meetup.com/cities/us/ks/cunningham/;Cunningham;cunningham
+http://www.meetup.com/cities/us/ks/damar/;Damar;damar
+http://www.meetup.com/cities/us/ks/danville/;Danville;danville
+http://www.meetup.com/cities/us/ks/dearing/;Dearing;dearing
+http://www.meetup.com/cities/us/ks/deerfield/;Deerfield;deerfield
+http://www.meetup.com/cities/us/ks/delia/;Delia;delia
+http://www.meetup.com/cities/us/ks/delphos/;Delphos;delphos
+http://www.meetup.com/cities/us/ks/denison/;Denison;denison
+http://www.meetup.com/cities/us/ks/dennis/;Dennis;dennis
+http://www.meetup.com/cities/us/ks/denton/;Denton;denton
+http://www.meetup.com/cities/us/ks/derby/;Derby;derby
+http://www.meetup.com/cities/us/ks/de_soto/;De Soto;de_soto
+http://www.meetup.com/cities/us/ks/dexter/;Dexter;dexter
+http://www.meetup.com/cities/us/ks/dighton/;Dighton;dighton
+http://www.meetup.com/cities/us/ks/dodge_city/;Dodge City;dodge_city
+http://www.meetup.com/cities/us/ks/dorrance/;Dorrance;dorrance
+http://www.meetup.com/cities/us/ks/douglass/;Douglass;douglass
+http://www.meetup.com/cities/us/ks/dover/;Dover;dover
+http://www.meetup.com/cities/us/ks/downs/;Downs;downs
+http://www.meetup.com/cities/us/ks/dresden/;Dresden;dresden
+http://www.meetup.com/cities/us/ks/durham/;Durham;durham
+http://www.meetup.com/cities/us/ks/dwight/;Dwight;dwight
+http://www.meetup.com/cities/us/ks/easton/;Easton;easton
+http://www.meetup.com/cities/us/ks/edgerton/;Edgerton;edgerton
+http://www.meetup.com/cities/us/ks/edna/;Edna;edna
+http://www.meetup.com/cities/us/ks/edson/;Edson;edson
+http://www.meetup.com/cities/us/ks/edwardsville/;Edwardsville;edwardsville
+http://www.meetup.com/cities/us/ks/effingham/;Effingham;effingham
+http://www.meetup.com/cities/us/ks/elbing/;Elbing;elbing
+http://www.meetup.com/cities/us/ks/el_dorado/;El Dorado;el_dorado
+http://www.meetup.com/cities/us/ks/elk_city/;Elk City;elk_city
+http://www.meetup.com/cities/us/ks/elk_falls/;Elk Falls;elk_falls
+http://www.meetup.com/cities/us/ks/elkhart/;Elkhart;elkhart
+http://www.meetup.com/cities/us/ks/ellinwood/;Ellinwood;ellinwood
+http://www.meetup.com/cities/us/ks/ellis/;Ellis;ellis
+http://www.meetup.com/cities/us/ks/ellsworth/;Ellsworth;ellsworth
+http://www.meetup.com/cities/us/ks/elmdale/;Elmdale;elmdale
+http://www.meetup.com/cities/us/ks/elsmore/;Elsmore;elsmore
+http://www.meetup.com/cities/us/ks/elwood/;Elwood;elwood
+http://www.meetup.com/cities/us/ks/emmett/;Emmett;emmett
+http://www.meetup.com/cities/us/ks/emporia/;Emporia;emporia
+http://www.meetup.com/cities/us/ks/englewood/;Englewood;englewood
+http://www.meetup.com/cities/us/ks/ensign/;Ensign;ensign
+http://www.meetup.com/cities/us/ks/enterprise/;Enterprise;enterprise
+http://www.meetup.com/cities/us/ks/erie/;Erie;erie
+http://www.meetup.com/cities/us/ks/esbon/;Esbon;esbon
+http://www.meetup.com/cities/us/ks/eskridge/;Eskridge;eskridge
+http://www.meetup.com/cities/us/ks/eudora/;Eudora;eudora
+http://www.meetup.com/cities/us/ks/eureka/;Eureka;eureka
+http://www.meetup.com/cities/us/ks/everest/;Everest;everest
+http://www.meetup.com/cities/us/ks/fairview/;Fairview;fairview
+http://www.meetup.com/cities/us/ks/fall_river/;Fall River;fall_river
+http://www.meetup.com/cities/us/ks/falun/;Falun;falun
+http://www.meetup.com/cities/us/ks/farlington/;Farlington;farlington
+http://www.meetup.com/cities/us/ks/florence/;Florence;florence
+http://www.meetup.com/cities/us/ks/fontana/;Fontana;fontana
+http://www.meetup.com/cities/us/ks/ford/;Ford;ford
+http://www.meetup.com/cities/us/ks/formoso/;Formoso;formoso
+http://www.meetup.com/cities/us/ks/fort_dodge/;Fort Dodge;fort_dodge
+http://www.meetup.com/cities/us/ks/fort_leavenworth/;Fort Leavenworth;fort_leavenworth
+http://www.meetup.com/cities/us/ks/fort_riley/;Fort Riley;fort_riley
+http://www.meetup.com/cities/us/ks/fort_scott/;Fort Scott;fort_scott
+http://www.meetup.com/cities/us/ks/fostoria/;Fostoria;fostoria
+http://www.meetup.com/cities/us/ks/fowler/;Fowler;fowler
+http://www.meetup.com/cities/us/ks/frankfort/;Frankfort;frankfort
+http://www.meetup.com/cities/us/ks/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/ks/fredonia/;Fredonia;fredonia
+http://www.meetup.com/cities/us/ks/freeport/;Freeport;freeport
+http://www.meetup.com/cities/us/ks/frontenac/;Frontenac;frontenac
+http://www.meetup.com/cities/us/ks/fulton/;Fulton;fulton
+http://www.meetup.com/cities/us/ks/galena/;Galena;galena
+http://www.meetup.com/cities/us/ks/galesburg/;Galesburg;galesburg
+http://www.meetup.com/cities/us/ks/galva/;Galva;galva
+http://www.meetup.com/cities/us/ks/garden_city/;Garden City;garden_city
+http://www.meetup.com/cities/us/ks/garden_plain/;Garden Plain;garden_plain
+http://www.meetup.com/cities/us/ks/gardner/;Gardner;gardner
+http://www.meetup.com/cities/us/ks/garfield/;Garfield;garfield
+http://www.meetup.com/cities/us/ks/garland/;Garland;garland
+http://www.meetup.com/cities/us/ks/garnett/;Garnett;garnett
+http://www.meetup.com/cities/us/ks/gas/;Gas;gas
+http://www.meetup.com/cities/us/ks/gaylord/;Gaylord;gaylord
+http://www.meetup.com/cities/us/ks/gem/;Gem;gem
+http://www.meetup.com/cities/us/ks/geneseo/;Geneseo;geneseo
+http://www.meetup.com/cities/us/ks/geuda_springs/;Geuda Springs;geuda_springs
+http://www.meetup.com/cities/us/ks/girard/;Girard;girard
+http://www.meetup.com/cities/us/ks/glade/;Glade;glade
+http://www.meetup.com/cities/us/ks/glasco/;Glasco;glasco
+http://www.meetup.com/cities/us/ks/glen_elder/;Glen Elder;glen_elder
+http://www.meetup.com/cities/us/ks/goddard/;Goddard;goddard
+http://www.meetup.com/cities/us/ks/goessel/;Goessel;goessel
+http://www.meetup.com/cities/us/ks/goff/;Goff;goff
+http://www.meetup.com/cities/us/ks/goodland/;Goodland;goodland
+http://www.meetup.com/cities/us/ks/gorham/;Gorham;gorham
+http://www.meetup.com/cities/us/ks/gove/;Gove;gove
+http://www.meetup.com/cities/us/ks/grainfield/;Grainfield;grainfield
+http://www.meetup.com/cities/us/ks/grantville/;Grantville;grantville
+http://www.meetup.com/cities/us/ks/great_bend/;Great Bend;great_bend
+http://www.meetup.com/cities/us/ks/greeley/;Greeley;greeley
+http://www.meetup.com/cities/us/ks/green/;Green;green
+http://www.meetup.com/cities/us/ks/greenleaf/;Greenleaf;greenleaf
+http://www.meetup.com/cities/us/ks/greensburg/;Greensburg;greensburg
+http://www.meetup.com/cities/us/ks/greenwich/;Greenwich;greenwich
+http://www.meetup.com/cities/us/ks/grenola/;Grenola;grenola
+http://www.meetup.com/cities/us/ks/gridley/;Gridley;gridley
+http://www.meetup.com/cities/us/ks/grinnell/;Grinnell;grinnell
+http://www.meetup.com/cities/us/ks/gypsum/;Gypsum;gypsum
+http://www.meetup.com/cities/us/ks/haddam/;Haddam;haddam
+http://www.meetup.com/cities/us/ks/halstead/;Halstead;halstead
+http://www.meetup.com/cities/us/ks/hamilton/;Hamilton;hamilton
+http://www.meetup.com/cities/us/ks/hanover/;Hanover;hanover
+http://www.meetup.com/cities/us/ks/hanston/;Hanston;hanston
+http://www.meetup.com/cities/us/ks/hardtner/;Hardtner;hardtner
+http://www.meetup.com/cities/us/ks/harper/;Harper;harper
+http://www.meetup.com/cities/us/ks/hartford/;Hartford;hartford
+http://www.meetup.com/cities/us/ks/harveyville/;Harveyville;harveyville
+http://www.meetup.com/cities/us/ks/havana/;Havana;havana
+http://www.meetup.com/cities/us/ks/haven/;Haven;haven
+http://www.meetup.com/cities/us/ks/havensville/;Havensville;havensville
+http://www.meetup.com/cities/us/ks/haviland/;Haviland;haviland
+http://www.meetup.com/cities/us/ks/hays/;Hays;hays
+http://www.meetup.com/cities/us/ks/haysville/;Haysville;haysville
+http://www.meetup.com/cities/us/ks/hazelton/;Hazelton;hazelton
+http://www.meetup.com/cities/us/ks/healy/;Healy;healy
+http://www.meetup.com/cities/us/ks/hepler/;Hepler;hepler
+http://www.meetup.com/cities/us/ks/herington/;Herington;herington
+http://www.meetup.com/cities/us/ks/herndon/;Herndon;herndon
+http://www.meetup.com/cities/us/ks/hesston/;Hesston;hesston
+http://www.meetup.com/cities/us/ks/hiawatha/;Hiawatha;hiawatha
+http://www.meetup.com/cities/us/ks/highland/;Highland;highland
+http://www.meetup.com/cities/us/ks/hill_city/;Hill City;hill_city
+http://www.meetup.com/cities/us/ks/hillsboro/;Hillsboro;hillsboro
+http://www.meetup.com/cities/us/ks/hillsdale/;Hillsdale;hillsdale
+http://www.meetup.com/cities/us/ks/hoisington/;Hoisington;hoisington
+http://www.meetup.com/cities/us/ks/holcomb/;Holcomb;holcomb
+http://www.meetup.com/cities/us/ks/hollenberg/;Hollenberg;hollenberg
+http://www.meetup.com/cities/us/ks/holton/;Holton;holton
+http://www.meetup.com/cities/us/ks/holyrood/;Holyrood;holyrood
+http://www.meetup.com/cities/us/ks/home/;Home;home
+http://www.meetup.com/cities/us/ks/hope/;Hope;hope
+http://www.meetup.com/cities/us/ks/horton/;Horton;horton
+http://www.meetup.com/cities/us/ks/howard/;Howard;howard
+http://www.meetup.com/cities/us/ks/hoxie/;Hoxie;hoxie
+http://www.meetup.com/cities/us/ks/hoyt/;Hoyt;hoyt
+http://www.meetup.com/cities/us/ks/hudson/;Hudson;hudson
+http://www.meetup.com/cities/us/ks/hugoton/;Hugoton;hugoton
+http://www.meetup.com/cities/us/ks/humboldt/;Humboldt;humboldt
+http://www.meetup.com/cities/us/ks/hunter/;Hunter;hunter
+http://www.meetup.com/cities/us/ks/hutchinson/;Hutchinson;hutchinson
+http://www.meetup.com/cities/us/ks/independence/;Independence;independence
+http://www.meetup.com/cities/us/ks/ingalls/;Ingalls;ingalls
+http://www.meetup.com/cities/us/ks/inman/;Inman;inman
+http://www.meetup.com/cities/us/ks/iola/;Iola;iola
+http://www.meetup.com/cities/us/ks/isabel/;Isabel;isabel
+http://www.meetup.com/cities/us/ks/iuka/;Iuka;iuka
+http://www.meetup.com/cities/us/ks/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/ks/jennings/;Jennings;jennings
+http://www.meetup.com/cities/us/ks/jetmore/;Jetmore;jetmore
+http://www.meetup.com/cities/us/ks/jewell/;Jewell;jewell
+http://www.meetup.com/cities/us/ks/johnson/;Johnson;johnson
+http://www.meetup.com/cities/us/ks/junction_city/;Junction City;junction_city
+http://www.meetup.com/cities/us/ks/kanopolis/;Kanopolis;kanopolis
+http://www.meetup.com/cities/us/ks/kanorado/;Kanorado;kanorado
+http://www.meetup.com/cities/us/ks/kansas_city/;Kansas City;kansas_city
+http://www.meetup.com/cities/us/ks/kechi/;Kechi;kechi
+http://www.meetup.com/cities/us/ks/kendall/;Kendall;kendall
+http://www.meetup.com/cities/us/ks/kensington/;Kensington;kensington
+http://www.meetup.com/cities/us/ks/kincaid/;Kincaid;kincaid
+http://www.meetup.com/cities/us/ks/kingman/;Kingman;kingman
+http://www.meetup.com/cities/us/ks/kinsley/;Kinsley;kinsley
+http://www.meetup.com/cities/us/ks/kiowa/;Kiowa;kiowa
+http://www.meetup.com/cities/us/ks/kirwin/;Kirwin;kirwin
+http://www.meetup.com/cities/us/ks/kismet/;Kismet;kismet
+http://www.meetup.com/cities/us/ks/la_crosse/;La Crosse;la_crosse
+http://www.meetup.com/cities/us/ks/lacygne/;Lacygne;lacygne
+http://www.meetup.com/cities/us/ks/la_harpe/;La Harpe;la_harpe
+http://www.meetup.com/cities/us/ks/lake_city/;Lake City;lake_city
+http://www.meetup.com/cities/us/ks/lakin/;Lakin;lakin
+http://www.meetup.com/cities/us/ks/lamont/;Lamont;lamont
+http://www.meetup.com/cities/us/ks/lancaster/;Lancaster;lancaster
+http://www.meetup.com/cities/us/ks/lane/;Lane;lane
+http://www.meetup.com/cities/us/ks/lansing/;Lansing;lansing
+http://www.meetup.com/cities/us/ks/larned/;Larned;larned
+http://www.meetup.com/cities/us/ks/latham/;Latham;latham
+http://www.meetup.com/cities/us/ks/lawrence/;Lawrence;lawrence
+http://www.meetup.com/cities/us/ks/leavenworth/;Leavenworth;leavenworth
+http://www.meetup.com/cities/us/ks/leawood/;Leawood;leawood
+http://www.meetup.com/cities/us/ks/lebanon/;Lebanon;lebanon
+http://www.meetup.com/cities/us/ks/lebo/;Lebo;lebo
+http://www.meetup.com/cities/us/ks/lecompton/;Lecompton;lecompton
+http://www.meetup.com/cities/us/ks/lehigh/;Lehigh;lehigh
+http://www.meetup.com/cities/us/ks/lenexa/;Lenexa;lenexa
+http://www.meetup.com/cities/us/ks/lenora/;Lenora;lenora
+http://www.meetup.com/cities/us/ks/leon/;Leon;leon
+http://www.meetup.com/cities/us/ks/leonardville/;Leonardville;leonardville
+http://www.meetup.com/cities/us/ks/leoti/;Leoti;leoti
+http://www.meetup.com/cities/us/ks/le_roy/;Le Roy;le_roy
+http://www.meetup.com/cities/us/ks/levant/;Levant;levant
+http://www.meetup.com/cities/us/ks/lewis/;Lewis;lewis
+http://www.meetup.com/cities/us/ks/liberal/;Liberal;liberal
+http://www.meetup.com/cities/us/ks/liberty/;Liberty;liberty
+http://www.meetup.com/cities/us/ks/liebenthal/;Liebenthal;liebenthal
+http://www.meetup.com/cities/us/ks/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/ks/lincolnville/;Lincolnville;lincolnville
+http://www.meetup.com/cities/us/ks/lindsborg/;Lindsborg;lindsborg
+http://www.meetup.com/cities/us/ks/linn/;Linn;linn
+http://www.meetup.com/cities/us/ks/linwood/;Linwood;linwood
+http://www.meetup.com/cities/us/ks/little_river/;Little River;little_river
+http://www.meetup.com/cities/us/ks/logan/;Logan;logan
+http://www.meetup.com/cities/us/ks/longford/;Longford;longford
+http://www.meetup.com/cities/us/ks/long_island/;Long Island;long_island
+http://www.meetup.com/cities/us/ks/longton/;Longton;longton
+http://www.meetup.com/cities/us/ks/lorraine/;Lorraine;lorraine
+http://www.meetup.com/cities/us/ks/lost_springs/;Lost Springs;lost_springs
+http://www.meetup.com/cities/us/ks/louisburg/;Louisburg;louisburg
+http://www.meetup.com/cities/us/ks/lucas/;Lucas;lucas
+http://www.meetup.com/cities/us/ks/ludell/;Ludell;ludell
+http://www.meetup.com/cities/us/ks/luray/;Luray;luray
+http://www.meetup.com/cities/us/ks/lyndon/;Lyndon;lyndon
+http://www.meetup.com/cities/us/ks/lyons/;Lyons;lyons
+http://www.meetup.com/cities/us/ks/macksville/;Macksville;macksville
+http://www.meetup.com/cities/us/ks/madison/;Madison;madison
+http://www.meetup.com/cities/us/ks/mahaska/;Mahaska;mahaska
+http://www.meetup.com/cities/us/ks/maize/;Maize;maize
+http://www.meetup.com/cities/us/ks/manhattan/;Manhattan;manhattan
+http://www.meetup.com/cities/us/ks/mankato/;Mankato;mankato
+http://www.meetup.com/cities/us/ks/manter/;Manter;manter
+http://www.meetup.com/cities/us/ks/maple_city/;Maple City;maple_city
+http://www.meetup.com/cities/us/ks/maple_hill/;Maple Hill;maple_hill
+http://www.meetup.com/cities/us/ks/mapleton/;Mapleton;mapleton
+http://www.meetup.com/cities/us/ks/marienthal/;Marienthal;marienthal
+http://www.meetup.com/cities/us/ks/marion/;Marion;marion
+http://www.meetup.com/cities/us/ks/marquette/;Marquette;marquette
+http://www.meetup.com/cities/us/ks/marysville/;Marysville;marysville
+http://www.meetup.com/cities/us/ks/matfield_green/;Matfield Green;matfield_green
+http://www.meetup.com/cities/us/ks/mayetta/;Mayetta;mayetta
+http://www.meetup.com/cities/us/ks/mayfield/;Mayfield;mayfield
+http://www.meetup.com/cities/us/ks/mcconnell_afb/;McConnell AFB;mcconnell_afb
+http://www.meetup.com/cities/us/ks/mc_cracken/;Mc Cracken;mc_cracken
+http://www.meetup.com/cities/us/ks/mc_cune/;Mc Cune;mc_cune
+http://www.meetup.com/cities/us/ks/mc_donald/;Mc Donald;mc_donald
+http://www.meetup.com/cities/us/ks/mc_farland/;Mc Farland;mc_farland
+http://www.meetup.com/cities/us/ks/mc_louth/;Mc Louth;mc_louth
+http://www.meetup.com/cities/us/ks/mcpherson/;McPherson;mcpherson
+http://www.meetup.com/cities/us/ks/meade/;Meade;meade
+http://www.meetup.com/cities/us/ks/medicine_lodge/;Medicine Lodge;medicine_lodge
+http://www.meetup.com/cities/us/ks/melvern/;Melvern;melvern
+http://www.meetup.com/cities/us/ks/meriden/;Meriden;meriden
+http://www.meetup.com/cities/us/ks/milan/;Milan;milan
+http://www.meetup.com/cities/us/ks/milford/;Milford;milford
+http://www.meetup.com/cities/us/ks/milton/;Milton;milton
+http://www.meetup.com/cities/us/ks/miltonvale/;Miltonvale;miltonvale
+http://www.meetup.com/cities/us/ks/minneapolis/;Minneapolis;minneapolis
+http://www.meetup.com/cities/us/ks/minneola/;Minneola;minneola
+http://www.meetup.com/cities/us/ks/mission/;Mission;mission
+http://www.meetup.com/cities/us/ks/moline/;Moline;moline
+http://www.meetup.com/cities/us/ks/montezuma/;Montezuma;montezuma
+http://www.meetup.com/cities/us/ks/monument/;Monument;monument
+http://www.meetup.com/cities/us/ks/moran/;Moran;moran
+http://www.meetup.com/cities/us/ks/morganville/;Morganville;morganville
+http://www.meetup.com/cities/us/ks/morland/;Morland;morland
+http://www.meetup.com/cities/us/ks/morrill/;Morrill;morrill
+http://www.meetup.com/cities/us/ks/morrowville/;Morrowville;morrowville
+http://www.meetup.com/cities/us/ks/moscow/;Moscow;moscow
+http://www.meetup.com/cities/us/ks/mound_city/;Mound City;mound_city
+http://www.meetup.com/cities/us/ks/moundridge/;Moundridge;moundridge
+http://www.meetup.com/cities/us/ks/mound_valley/;Mound Valley;mound_valley
+http://www.meetup.com/cities/us/ks/mount_hope/;Mount Hope;mount_hope
+http://www.meetup.com/cities/us/ks/mulberry/;Mulberry;mulberry
+http://www.meetup.com/cities/us/ks/mullinville/;Mullinville;mullinville
+http://www.meetup.com/cities/us/ks/mulvane/;Mulvane;mulvane
+http://www.meetup.com/cities/us/ks/munden/;Munden;munden
+http://www.meetup.com/cities/us/ks/murdock/;Murdock;murdock
+http://www.meetup.com/cities/us/ks/muscotah/;Muscotah;muscotah
+http://www.meetup.com/cities/us/ks/narka/;Narka;narka
+http://www.meetup.com/cities/us/ks/nashville/;Nashville;nashville
+http://www.meetup.com/cities/us/ks/natoma/;Natoma;natoma
+http://www.meetup.com/cities/us/ks/neal/;Neal;neal
+http://www.meetup.com/cities/us/ks/nekoma/;Nekoma;nekoma
+http://www.meetup.com/cities/us/ks/neodesha/;Neodesha;neodesha
+http://www.meetup.com/cities/us/ks/neosho_falls/;Neosho Falls;neosho_falls
+http://www.meetup.com/cities/us/ks/neosho_rapids/;Neosho Rapids;neosho_rapids
+http://www.meetup.com/cities/us/ks/ness_city/;Ness City;ness_city
+http://www.meetup.com/cities/us/ks/netawaka/;Netawaka;netawaka
+http://www.meetup.com/cities/us/ks/new_albany/;New Albany;new_albany
+http://www.meetup.com/cities/us/ks/new_cambria/;New Cambria;new_cambria
+http://www.meetup.com/cities/us/ks/new_century/;New Century;new_century
+http://www.meetup.com/cities/us/ks/newton/;Newton;newton
+http://www.meetup.com/cities/us/ks/nickerson/;Nickerson;nickerson
+http://www.meetup.com/cities/us/ks/niotaze/;Niotaze;niotaze
+http://www.meetup.com/cities/us/ks/norcatur/;Norcatur;norcatur
+http://www.meetup.com/cities/us/ks/north_newton/;North Newton;north_newton
+http://www.meetup.com/cities/us/ks/norton/;Norton;norton
+http://www.meetup.com/cities/us/ks/nortonville/;Nortonville;nortonville
+http://www.meetup.com/cities/us/ks/norway/;Norway;norway
+http://www.meetup.com/cities/us/ks/norwich/;Norwich;norwich
+http://www.meetup.com/cities/us/ks/oakley/;Oakley;oakley
+http://www.meetup.com/cities/us/ks/oberlin/;Oberlin;oberlin
+http://www.meetup.com/cities/us/ks/offerle/;Offerle;offerle
+http://www.meetup.com/cities/us/ks/ogallah/;Ogallah;ogallah
+http://www.meetup.com/cities/us/ks/ogden/;Ogden;ogden
+http://www.meetup.com/cities/us/ks/oketo/;Oketo;oketo
+http://www.meetup.com/cities/us/ks/olathe/;Olathe;olathe
+http://www.meetup.com/cities/us/ks/olmitz/;Olmitz;olmitz
+http://www.meetup.com/cities/us/ks/olpe/;Olpe;olpe
+http://www.meetup.com/cities/us/ks/olsburg/;Olsburg;olsburg
+http://www.meetup.com/cities/us/ks/onaga/;Onaga;onaga
+http://www.meetup.com/cities/us/ks/oneida/;Oneida;oneida
+http://www.meetup.com/cities/us/ks/opolis/;Opolis;opolis
+http://www.meetup.com/cities/us/ks/osage_city/;Osage City;osage_city
+http://www.meetup.com/cities/us/ks/osawatomie/;Osawatomie;osawatomie
+http://www.meetup.com/cities/us/ks/osborne/;Osborne;osborne
+http://www.meetup.com/cities/us/ks/oskaloosa/;Oskaloosa;oskaloosa
+http://www.meetup.com/cities/us/ks/oswego/;Oswego;oswego
+http://www.meetup.com/cities/us/ks/otis/;Otis;otis
+http://www.meetup.com/cities/us/ks/ottawa/;Ottawa;ottawa
+http://www.meetup.com/cities/us/ks/overbrook/;Overbrook;overbrook
+http://www.meetup.com/cities/us/ks/overland_park/;Overland Park;overland_park
+http://www.meetup.com/cities/us/ks/oxford/;Oxford;oxford
+http://www.meetup.com/cities/us/ks/ozawkie/;Ozawkie;ozawkie
+http://www.meetup.com/cities/us/ks/palco/;Palco;palco
+http://www.meetup.com/cities/us/ks/palmer/;Palmer;palmer
+http://www.meetup.com/cities/us/ks/paola/;Paola;paola
+http://www.meetup.com/cities/us/ks/paradise/;Paradise;paradise
+http://www.meetup.com/cities/us/ks/park/;Park;park
+http://www.meetup.com/cities/us/ks/parker/;Parker;parker
+http://www.meetup.com/cities/us/ks/parsons/;Parsons;parsons
+http://www.meetup.com/cities/us/ks/partridge/;Partridge;partridge
+http://www.meetup.com/cities/us/ks/pawnee_rock/;Pawnee Rock;pawnee_rock
+http://www.meetup.com/cities/us/ks/paxico/;Paxico;paxico
+http://www.meetup.com/cities/us/ks/peabody/;Peabody;peabody
+http://www.meetup.com/cities/us/ks/peck/;Peck;peck
+http://www.meetup.com/cities/us/ks/penokee/;Penokee;penokee
+http://www.meetup.com/cities/us/ks/perry/;Perry;perry
+http://www.meetup.com/cities/us/ks/peru/;Peru;peru
+http://www.meetup.com/cities/us/ks/pfeifer/;Pfeifer;pfeifer
+http://www.meetup.com/cities/us/ks/phillipsburg/;Phillipsburg;phillipsburg
+http://www.meetup.com/cities/us/ks/piedmont/;Piedmont;piedmont
+http://www.meetup.com/cities/us/ks/pierceville/;Pierceville;pierceville
+http://www.meetup.com/cities/us/ks/piqua/;Piqua;piqua
+http://www.meetup.com/cities/us/ks/pittsburg/;Pittsburg;pittsburg
+http://www.meetup.com/cities/us/ks/plains/;Plains;plains
+http://www.meetup.com/cities/us/ks/plainville/;Plainville;plainville
+http://www.meetup.com/cities/us/ks/pleasanton/;Pleasanton;pleasanton
+http://www.meetup.com/cities/us/ks/plevna/;Plevna;plevna
+http://www.meetup.com/cities/us/ks/pomona/;Pomona;pomona
+http://www.meetup.com/cities/us/ks/portis/;Portis;portis
+http://www.meetup.com/cities/us/ks/potter/;Potter;potter
+http://www.meetup.com/cities/us/ks/potwin/;Potwin;potwin
+http://www.meetup.com/cities/us/ks/powhattan/;Powhattan;powhattan
+http://www.meetup.com/cities/us/ks/prairie_view/;Prairie View;prairie_view
+http://www.meetup.com/cities/us/ks/prairie_village/;Prairie Village;prairie_village
+http://www.meetup.com/cities/us/ks/pratt/;Pratt;pratt
+http://www.meetup.com/cities/us/ks/prescott/;Prescott;prescott
+http://www.meetup.com/cities/us/ks/pretty_prairie/;Pretty Prairie;pretty_prairie
+http://www.meetup.com/cities/us/ks/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/ks/protection/;Protection;protection
+http://www.meetup.com/cities/us/ks/quenemo/;Quenemo;quenemo
+http://www.meetup.com/cities/us/ks/quinter/;Quinter;quinter
+http://www.meetup.com/cities/us/ks/ramona/;Ramona;ramona
+http://www.meetup.com/cities/us/ks/randall/;Randall;randall
+http://www.meetup.com/cities/us/ks/randolph/;Randolph;randolph
+http://www.meetup.com/cities/us/ks/ransom/;Ransom;ransom
+http://www.meetup.com/cities/us/ks/rantoul/;Rantoul;rantoul
+http://www.meetup.com/cities/us/ks/raymond/;Raymond;raymond
+http://www.meetup.com/cities/us/ks/reading/;Reading;reading
+http://www.meetup.com/cities/us/ks/redfield/;Redfield;redfield
+http://www.meetup.com/cities/us/ks/republic/;Republic;republic
+http://www.meetup.com/cities/us/ks/rexford/;Rexford;rexford
+http://www.meetup.com/cities/us/ks/richfield/;Richfield;richfield
+http://www.meetup.com/cities/us/ks/richmond/;Richmond;richmond
+http://www.meetup.com/cities/us/ks/riley/;Riley;riley
+http://www.meetup.com/cities/us/ks/riverton/;Riverton;riverton
+http://www.meetup.com/cities/us/ks/robinson/;Robinson;robinson
+http://www.meetup.com/cities/us/ks/rock/;Rock;rock
+http://www.meetup.com/cities/us/ks/rolla/;Rolla;rolla
+http://www.meetup.com/cities/us/ks/rosalia/;Rosalia;rosalia
+http://www.meetup.com/cities/us/ks/rose_hill/;Rose Hill;rose_hill
+http://www.meetup.com/cities/us/ks/rossville/;Rossville;rossville
+http://www.meetup.com/cities/us/ks/roxbury/;Roxbury;roxbury
+http://www.meetup.com/cities/us/ks/rozel/;Rozel;rozel
+http://www.meetup.com/cities/us/ks/rush_center/;Rush Center;rush_center
+http://www.meetup.com/cities/us/ks/russell/;Russell;russell
+http://www.meetup.com/cities/us/ks/sabetha/;Sabetha;sabetha
+http://www.meetup.com/cities/us/ks/saint_francis/;Saint Francis;saint_francis
+http://www.meetup.com/cities/us/ks/saint_george/;Saint George;saint_george
+http://www.meetup.com/cities/us/ks/saint_john/;Saint John;saint_john
+http://www.meetup.com/cities/us/ks/saint_marys/;Saint Marys;saint_marys
+http://www.meetup.com/cities/us/ks/saint_paul/;Saint Paul;saint_paul
+http://www.meetup.com/cities/us/ks/salina/;Salina;salina
+http://www.meetup.com/cities/us/ks/satanta/;Satanta;satanta
+http://www.meetup.com/cities/us/ks/savonburg/;Savonburg;savonburg
+http://www.meetup.com/cities/us/ks/sawyer/;Sawyer;sawyer
+http://www.meetup.com/cities/us/ks/scammon/;Scammon;scammon
+http://www.meetup.com/cities/us/ks/scandia/;Scandia;scandia
+http://www.meetup.com/cities/us/ks/schoenchen/;Schoenchen;schoenchen
+http://www.meetup.com/cities/us/ks/scott_city/;Scott City;scott_city
+http://www.meetup.com/cities/us/ks/scranton/;Scranton;scranton
+http://www.meetup.com/cities/us/ks/sedan/;Sedan;sedan
+http://www.meetup.com/cities/us/ks/sedgwick/;Sedgwick;sedgwick
+http://www.meetup.com/cities/us/ks/selden/;Selden;selden
+http://www.meetup.com/cities/us/ks/seneca/;Seneca;seneca
+http://www.meetup.com/cities/us/ks/severy/;Severy;severy
+http://www.meetup.com/cities/us/ks/sharon/;Sharon;sharon
+http://www.meetup.com/cities/us/ks/sharon_springs/;Sharon Springs;sharon_springs
+http://www.meetup.com/cities/us/ks/shawnee/;Shawnee;shawnee
+http://www.meetup.com/cities/us/ks/shawnee_mission/;Shawnee Mission;shawnee_mission
+http://www.meetup.com/cities/us/ks/silver_lake/;Silver Lake;silver_lake
+http://www.meetup.com/cities/us/ks/simpson/;Simpson;simpson
+http://www.meetup.com/cities/us/ks/smith_center/;Smith Center;smith_center
+http://www.meetup.com/cities/us/ks/soldier/;Soldier;soldier
+http://www.meetup.com/cities/us/ks/solomon/;Solomon;solomon
+http://www.meetup.com/cities/us/ks/south_haven/;South Haven;south_haven
+http://www.meetup.com/cities/us/ks/south_hutchinson/;South Hutchinson;south_hutchinson
+http://www.meetup.com/cities/us/ks/spearville/;Spearville;spearville
+http://www.meetup.com/cities/us/ks/spivey/;Spivey;spivey
+http://www.meetup.com/cities/us/ks/spring_hill/;Spring Hill;spring_hill
+http://www.meetup.com/cities/us/ks/stafford/;Stafford;stafford
+http://www.meetup.com/cities/us/ks/stark/;Stark;stark
+http://www.meetup.com/cities/us/ks/sterling/;Sterling;sterling
+http://www.meetup.com/cities/us/ks/stilwell/;Stilwell;stilwell
+http://www.meetup.com/cities/us/ks/stockton/;Stockton;stockton
+http://www.meetup.com/cities/us/ks/strong_city/;Strong City;strong_city
+http://www.meetup.com/cities/us/ks/sublette/;Sublette;sublette
+http://www.meetup.com/cities/us/ks/summerfield/;Summerfield;summerfield
+http://www.meetup.com/cities/us/ks/sun_city/;Sun City;sun_city
+http://www.meetup.com/cities/us/ks/sycamore/;Sycamore;sycamore
+http://www.meetup.com/cities/us/ks/sylvan_grove/;Sylvan Grove;sylvan_grove
+http://www.meetup.com/cities/us/ks/sylvia/;Sylvia;sylvia
+http://www.meetup.com/cities/us/ks/syracuse/;Syracuse;syracuse
+http://www.meetup.com/cities/us/ks/talmage/;Talmage;talmage
+http://www.meetup.com/cities/us/ks/tampa/;Tampa;tampa
+http://www.meetup.com/cities/us/ks/tecumseh/;Tecumseh;tecumseh
+http://www.meetup.com/cities/us/ks/tescott/;Tescott;tescott
+http://www.meetup.com/cities/us/ks/thayer/;Thayer;thayer
+http://www.meetup.com/cities/us/ks/tipton/;Tipton;tipton
+http://www.meetup.com/cities/us/ks/tonganoxie/;Tonganoxie;tonganoxie
+http://www.meetup.com/cities/us/ks/topeka/;Topeka;topeka
+http://www.meetup.com/cities/us/ks/toronto/;Toronto;toronto
+http://www.meetup.com/cities/us/ks/towanda/;Towanda;towanda
+http://www.meetup.com/cities/us/ks/treece/;Treece;treece
+http://www.meetup.com/cities/us/ks/tribune/;Tribune;tribune
+http://www.meetup.com/cities/us/ks/troy/;Troy;troy
+http://www.meetup.com/cities/us/ks/turon/;Turon;turon
+http://www.meetup.com/cities/us/ks/tyro/;Tyro;tyro
+http://www.meetup.com/cities/us/ks/udall/;Udall;udall
+http://www.meetup.com/cities/us/ks/ulysses/;Ulysses;ulysses
+http://www.meetup.com/cities/us/ks/uniontown/;Uniontown;uniontown
+http://www.meetup.com/cities/us/ks/utica/;Utica;utica
+http://www.meetup.com/cities/us/ks/valley_center/;Valley Center;valley_center
+http://www.meetup.com/cities/us/ks/valley_falls/;Valley Falls;valley_falls
+http://www.meetup.com/cities/us/ks/vassar/;Vassar;vassar
+http://www.meetup.com/cities/us/ks/vermillion/;Vermillion;vermillion
+http://www.meetup.com/cities/us/ks/victoria/;Victoria;victoria
+http://www.meetup.com/cities/us/ks/viola/;Viola;viola
+http://www.meetup.com/cities/us/ks/virgil/;Virgil;virgil
+http://www.meetup.com/cities/us/ks/wakarusa/;Wakarusa;wakarusa
+http://www.meetup.com/cities/us/ks/wakeeney/;Wakeeney;wakeeney
+http://www.meetup.com/cities/us/ks/wakefield/;Wakefield;wakefield
+http://www.meetup.com/cities/us/ks/waldo/;Waldo;waldo
+http://www.meetup.com/cities/us/ks/waldron/;Waldron;waldron
+http://www.meetup.com/cities/us/ks/walker/;Walker;walker
+http://www.meetup.com/cities/us/ks/wallace/;Wallace;wallace
+http://www.meetup.com/cities/us/ks/walnut/;Walnut;walnut
+http://www.meetup.com/cities/us/ks/walton/;Walton;walton
+http://www.meetup.com/cities/us/ks/wamego/;Wamego;wamego
+http://www.meetup.com/cities/us/ks/washington/;Washington;washington
+http://www.meetup.com/cities/us/ks/waterville/;Waterville;waterville
+http://www.meetup.com/cities/us/ks/wathena/;Wathena;wathena
+http://www.meetup.com/cities/us/ks/waverly/;Waverly;waverly
+http://www.meetup.com/cities/us/ks/webber/;Webber;webber
+http://www.meetup.com/cities/us/ks/weir/;Weir;weir
+http://www.meetup.com/cities/us/ks/welda/;Welda;welda
+http://www.meetup.com/cities/us/ks/wellington/;Wellington;wellington
+http://www.meetup.com/cities/us/ks/wellsville/;Wellsville;wellsville
+http://www.meetup.com/cities/us/ks/weskan/;Weskan;weskan
+http://www.meetup.com/cities/us/ks/west_mineral/;West Mineral;west_mineral
+http://www.meetup.com/cities/us/ks/westmoreland/;Westmoreland;westmoreland
+http://www.meetup.com/cities/us/ks/westphalia/;Westphalia;westphalia
+http://www.meetup.com/cities/us/ks/wetmore/;Wetmore;wetmore
+http://www.meetup.com/cities/us/ks/white_city/;White City;white_city
+http://www.meetup.com/cities/us/ks/white_cloud/;White Cloud;white_cloud
+http://www.meetup.com/cities/us/ks/whitewater/;Whitewater;whitewater
+http://www.meetup.com/cities/us/ks/whiting/;Whiting;whiting
+http://www.meetup.com/cities/us/ks/wichita/;Wichita;wichita
+http://www.meetup.com/cities/us/ks/williamsburg/;Williamsburg;williamsburg
+http://www.meetup.com/cities/us/ks/wilmore/;Wilmore;wilmore
+http://www.meetup.com/cities/us/ks/wilsey/;Wilsey;wilsey
+http://www.meetup.com/cities/us/ks/wilson/;Wilson;wilson
+http://www.meetup.com/cities/us/ks/winchester/;Winchester;winchester
+http://www.meetup.com/cities/us/ks/windom/;Windom;windom
+http://www.meetup.com/cities/us/ks/winfield/;Winfield;winfield
+http://www.meetup.com/cities/us/ks/winona/;Winona;winona
+http://www.meetup.com/cities/us/ks/woodbine/;Woodbine;woodbine
+http://www.meetup.com/cities/us/ks/woodston/;Woodston;woodston
+http://www.meetup.com/cities/us/ks/wright/;Wright;wright
+http://www.meetup.com/cities/us/ks/yates_center/;Yates Center;yates_center
+http://www.meetup.com/cities/us/ks/yoder/;Yoder;yoder
+http://www.meetup.com/cities/us/ks/zenda/;Zenda;zenda

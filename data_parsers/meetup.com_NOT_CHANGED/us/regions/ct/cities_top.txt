@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/us/ct/bethel/;Bethel;bethel
+http://www.meetup.com/cities/us/ct/branford/;Branford;branford
+http://www.meetup.com/cities/us/ct/bridgeport/;Bridgeport;bridgeport
+http://www.meetup.com/cities/us/ct/bristol/;Bristol;bristol
+http://www.meetup.com/cities/us/ct/danbury/;Danbury;danbury
+http://www.meetup.com/cities/us/ct/east_hartford/;East Hartford;east_hartford
+http://www.meetup.com/cities/us/ct/east_haven/;East Haven;east_haven
+http://www.meetup.com/cities/us/ct/enfield/;Enfield;enfield
+http://www.meetup.com/cities/us/ct/fairfield/;Fairfield;fairfield
+http://www.meetup.com/cities/us/ct/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/ct/glastonbury/;Glastonbury;glastonbury
+http://www.meetup.com/cities/us/ct/greenwich/;Greenwich;greenwich
+http://www.meetup.com/cities/us/ct/groton/;Groton;groton
+http://www.meetup.com/cities/us/ct/guilford/;Guilford;guilford
+http://www.meetup.com/cities/us/ct/hamden/;Hamden;hamden
+http://www.meetup.com/cities/us/ct/hartford/;Hartford;hartford
+http://www.meetup.com/cities/us/ct/jewett_city/;Jewett City;jewett_city
+http://www.meetup.com/cities/us/ct/manchester/;Manchester;manchester
+http://www.meetup.com/cities/us/ct/meriden/;Meriden;meriden
+http://www.meetup.com/cities/us/ct/middletown/;Middletown;middletown
+http://www.meetup.com/cities/us/ct/milford/;Milford;milford
+http://www.meetup.com/cities/us/ct/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/ct/naugatuck/;Naugatuck;naugatuck
+http://www.meetup.com/cities/us/ct/new_britain/;New Britain;new_britain
+http://www.meetup.com/cities/us/ct/new_canaan/;New Canaan;new_canaan
+http://www.meetup.com/cities/us/ct/new_haven/;New Haven;new_haven
+http://www.meetup.com/cities/us/ct/new_london/;New London;new_london
+http://www.meetup.com/cities/us/ct/new_milford/;New Milford;new_milford
+http://www.meetup.com/cities/us/ct/newington/;Newington;newington
+http://www.meetup.com/cities/us/ct/newtown/;Newtown;newtown
+http://www.meetup.com/cities/us/ct/norwalk/;Norwalk;norwalk
+http://www.meetup.com/cities/us/ct/norwich/;Norwich;norwich
+http://www.meetup.com/cities/us/ct/ridgefield/;Ridgefield;ridgefield
+http://www.meetup.com/cities/us/ct/rocky_hill/;Rocky Hill;rocky_hill
+http://www.meetup.com/cities/us/ct/shelton/;Shelton;shelton
+http://www.meetup.com/cities/us/ct/south_windsor/;South Windsor;south_windsor
+http://www.meetup.com/cities/us/ct/southington/;Southington;southington
+http://www.meetup.com/cities/us/ct/stamford/;Stamford;stamford
+http://www.meetup.com/cities/us/ct/stratford/;Stratford;stratford
+http://www.meetup.com/cities/us/ct/torrington/;Torrington;torrington
+http://www.meetup.com/cities/us/ct/trumbull/;Trumbull;trumbull
+http://www.meetup.com/cities/us/ct/vernon_rockville/;Vernon Rockville;vernon_rockville
+http://www.meetup.com/cities/us/ct/wallingford/;Wallingford;wallingford
+http://www.meetup.com/cities/us/ct/waterbury/;Waterbury;waterbury
+http://www.meetup.com/cities/us/ct/west_hartford/;West Hartford;west_hartford
+http://www.meetup.com/cities/us/ct/west_haven/;West Haven;west_haven
+http://www.meetup.com/cities/us/ct/westport/;Westport;westport
+http://www.meetup.com/cities/us/ct/wethersfield/;Wethersfield;wethersfield
+http://www.meetup.com/cities/us/ct/wilton/;Wilton;wilton
+http://www.meetup.com/cities/us/ct/windsor/;Windsor;windsor
+http://www.meetup.com/cities/us/ct/bethel/;Bethel;bethel
+http://www.meetup.com/cities/us/ct/branford/;Branford;branford
+http://www.meetup.com/cities/us/ct/bridgeport/;Bridgeport;bridgeport
+http://www.meetup.com/cities/us/ct/bristol/;Bristol;bristol
+http://www.meetup.com/cities/us/ct/danbury/;Danbury;danbury
+http://www.meetup.com/cities/us/ct/east_hartford/;East Hartford;east_hartford
+http://www.meetup.com/cities/us/ct/east_haven/;East Haven;east_haven
+http://www.meetup.com/cities/us/ct/enfield/;Enfield;enfield
+http://www.meetup.com/cities/us/ct/fairfield/;Fairfield;fairfield
+http://www.meetup.com/cities/us/ct/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/ct/glastonbury/;Glastonbury;glastonbury
+http://www.meetup.com/cities/us/ct/greenwich/;Greenwich;greenwich
+http://www.meetup.com/cities/us/ct/groton/;Groton;groton
+http://www.meetup.com/cities/us/ct/guilford/;Guilford;guilford
+http://www.meetup.com/cities/us/ct/hamden/;Hamden;hamden
+http://www.meetup.com/cities/us/ct/hartford/;Hartford;hartford
+http://www.meetup.com/cities/us/ct/jewett_city/;Jewett City;jewett_city
+http://www.meetup.com/cities/us/ct/manchester/;Manchester;manchester
+http://www.meetup.com/cities/us/ct/meriden/;Meriden;meriden
+http://www.meetup.com/cities/us/ct/middletown/;Middletown;middletown
+http://www.meetup.com/cities/us/ct/milford/;Milford;milford
+http://www.meetup.com/cities/us/ct/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/ct/naugatuck/;Naugatuck;naugatuck
+http://www.meetup.com/cities/us/ct/new_britain/;New Britain;new_britain
+http://www.meetup.com/cities/us/ct/new_canaan/;New Canaan;new_canaan
+http://www.meetup.com/cities/us/ct/new_haven/;New Haven;new_haven
+http://www.meetup.com/cities/us/ct/new_london/;New London;new_london
+http://www.meetup.com/cities/us/ct/new_milford/;New Milford;new_milford
+http://www.meetup.com/cities/us/ct/newington/;Newington;newington
+http://www.meetup.com/cities/us/ct/newtown/;Newtown;newtown
+http://www.meetup.com/cities/us/ct/norwalk/;Norwalk;norwalk
+http://www.meetup.com/cities/us/ct/norwich/;Norwich;norwich
+http://www.meetup.com/cities/us/ct/ridgefield/;Ridgefield;ridgefield
+http://www.meetup.com/cities/us/ct/rocky_hill/;Rocky Hill;rocky_hill
+http://www.meetup.com/cities/us/ct/shelton/;Shelton;shelton
+http://www.meetup.com/cities/us/ct/south_windsor/;South Windsor;south_windsor
+http://www.meetup.com/cities/us/ct/southington/;Southington;southington
+http://www.meetup.com/cities/us/ct/stamford/;Stamford;stamford
+http://www.meetup.com/cities/us/ct/stratford/;Stratford;stratford
+http://www.meetup.com/cities/us/ct/torrington/;Torrington;torrington
+http://www.meetup.com/cities/us/ct/trumbull/;Trumbull;trumbull
+http://www.meetup.com/cities/us/ct/vernon_rockville/;Vernon Rockville;vernon_rockville
+http://www.meetup.com/cities/us/ct/wallingford/;Wallingford;wallingford
+http://www.meetup.com/cities/us/ct/waterbury/;Waterbury;waterbury
+http://www.meetup.com/cities/us/ct/west_hartford/;West Hartford;west_hartford
+http://www.meetup.com/cities/us/ct/west_haven/;West Haven;west_haven
+http://www.meetup.com/cities/us/ct/westport/;Westport;westport
+http://www.meetup.com/cities/us/ct/wethersfield/;Wethersfield;wethersfield
+http://www.meetup.com/cities/us/ct/wilton/;Wilton;wilton
+http://www.meetup.com/cities/us/ct/windsor/;Windsor;windsor

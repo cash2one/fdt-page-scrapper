@@ -1,0 +1,2484 @@
+http://www.meetup.com/cities/us/ca/acampo/;Acampo;acampo
+http://www.meetup.com/cities/us/ca/acton/;Acton;acton
+http://www.meetup.com/cities/us/ca/adelanto/;Adelanto;adelanto
+http://www.meetup.com/cities/us/ca/adin/;Adin;adin
+http://www.meetup.com/cities/us/ca/agoura_hills/;Agoura Hills;agoura_hills
+http://www.meetup.com/cities/us/ca/aguanga/;Aguanga;aguanga
+http://www.meetup.com/cities/us/ca/ahwahnee/;Ahwahnee;ahwahnee
+http://www.meetup.com/cities/us/ca/alameda/;Alameda;alameda
+http://www.meetup.com/cities/us/ca/alamo/;Alamo;alamo
+http://www.meetup.com/cities/us/ca/albany/;Albany;albany
+http://www.meetup.com/cities/us/ca/albion/;Albion;albion
+http://www.meetup.com/cities/us/ca/alderpoint/;Alderpoint;alderpoint
+http://www.meetup.com/cities/us/ca/alhambra/;Alhambra;alhambra
+http://www.meetup.com/cities/us/ca/aliso_viejo/;Aliso Viejo;aliso_viejo
+http://www.meetup.com/cities/us/ca/alleghany/;Alleghany;alleghany
+http://www.meetup.com/cities/us/ca/alpaugh/;Alpaugh;alpaugh
+http://www.meetup.com/cities/us/ca/alpine/;Alpine;alpine
+http://www.meetup.com/cities/us/ca/alta/;Alta;alta
+http://www.meetup.com/cities/us/ca/altadena/;Altadena;altadena
+http://www.meetup.com/cities/us/ca/altaville/;Altaville;altaville
+http://www.meetup.com/cities/us/ca/alturas/;Alturas;alturas
+http://www.meetup.com/cities/us/ca/alviso/;Alviso;alviso
+http://www.meetup.com/cities/us/ca/amador_city/;Amador City;amador_city
+http://www.meetup.com/cities/us/ca/amboy/;Amboy;amboy
+http://www.meetup.com/cities/us/ca/american_canyon/;American Canyon;american_canyon
+http://www.meetup.com/cities/us/ca/anaheim/;Anaheim;anaheim
+http://www.meetup.com/cities/us/ca/anderson/;Anderson;anderson
+http://www.meetup.com/cities/us/ca/angels_camp/;Angels Camp;angels_camp
+http://www.meetup.com/cities/us/ca/angelus_oaks/;Angelus Oaks;angelus_oaks
+http://www.meetup.com/cities/us/ca/angwin/;Angwin;angwin
+http://www.meetup.com/cities/us/ca/annapolis/;Annapolis;annapolis
+http://www.meetup.com/cities/us/ca/antelope/;Antelope;antelope
+http://www.meetup.com/cities/us/ca/antioch/;Antioch;antioch
+http://www.meetup.com/cities/us/ca/anza/;Anza;anza
+http://www.meetup.com/cities/us/ca/applegate/;Applegate;applegate
+http://www.meetup.com/cities/us/ca/apple_valley/;Apple Valley;apple_valley
+http://www.meetup.com/cities/us/ca/aptos/;Aptos;aptos
+http://www.meetup.com/cities/us/ca/arbuckle/;Arbuckle;arbuckle
+http://www.meetup.com/cities/us/ca/arcadia/;Arcadia;arcadia
+http://www.meetup.com/cities/us/ca/arcata/;Arcata;arcata
+http://www.meetup.com/cities/us/ca/armona/;Armona;armona
+http://www.meetup.com/cities/us/ca/arnold/;Arnold;arnold
+http://www.meetup.com/cities/us/ca/aromas/;Aromas;aromas
+http://www.meetup.com/cities/us/ca/arroyo_grande/;Arroyo Grande;arroyo_grande
+http://www.meetup.com/cities/us/ca/artesia/;Artesia;artesia
+http://www.meetup.com/cities/us/ca/artois/;Artois;artois
+http://www.meetup.com/cities/us/ca/arvin/;Arvin;arvin
+http://www.meetup.com/cities/us/ca/atascadero/;Atascadero;atascadero
+http://www.meetup.com/cities/us/ca/atherton/;Atherton;atherton
+http://www.meetup.com/cities/us/ca/atwater/;Atwater;atwater
+http://www.meetup.com/cities/us/ca/atwood/;Atwood;atwood
+http://www.meetup.com/cities/us/ca/auberry/;Auberry;auberry
+http://www.meetup.com/cities/us/ca/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/ca/avalon/;Avalon;avalon
+http://www.meetup.com/cities/us/ca/avenal/;Avenal;avenal
+http://www.meetup.com/cities/us/ca/avery/;Avery;avery
+http://www.meetup.com/cities/us/ca/avila_beach/;Avila Beach;avila_beach
+http://www.meetup.com/cities/us/ca/azusa/;Azusa;azusa
+http://www.meetup.com/cities/us/ca/badger/;Badger;badger
+http://www.meetup.com/cities/us/ca/baker/;Baker;baker
+http://www.meetup.com/cities/us/ca/bakersfield/;Bakersfield;bakersfield
+http://www.meetup.com/cities/us/ca/baldwin_park/;Baldwin Park;baldwin_park
+http://www.meetup.com/cities/us/ca/ballico/;Ballico;ballico
+http://www.meetup.com/cities/us/ca/bangor/;Bangor;bangor
+http://www.meetup.com/cities/us/ca/banning/;Banning;banning
+http://www.meetup.com/cities/us/ca/bard/;Bard;bard
+http://www.meetup.com/cities/us/ca/barstow/;Barstow;barstow
+http://www.meetup.com/cities/us/ca/bass_lake/;Bass Lake;bass_lake
+http://www.meetup.com/cities/us/ca/bayside/;Bayside;bayside
+http://www.meetup.com/cities/us/ca/beale_afb/;Beale AFB;beale_afb
+http://www.meetup.com/cities/us/ca/beaumont/;Beaumont;beaumont
+http://www.meetup.com/cities/us/ca/beckwourth/;Beckwourth;beckwourth
+http://www.meetup.com/cities/us/ca/belden/;Belden;belden
+http://www.meetup.com/cities/us/ca/bell/;Bell;bell
+http://www.meetup.com/cities/us/ca/bella_vista/;Bella Vista;bella_vista
+http://www.meetup.com/cities/us/ca/bellflower/;Bellflower;bellflower
+http://www.meetup.com/cities/us/ca/bell_gardens/;Bell Gardens;bell_gardens
+http://www.meetup.com/cities/us/ca/belmont/;Belmont;belmont
+http://www.meetup.com/cities/us/ca/belvedere_tiburon/;Belvedere Tiburon;belvedere_tiburon
+http://www.meetup.com/cities/us/ca/benicia/;Benicia;benicia
+http://www.meetup.com/cities/us/ca/ben_lomond/;Ben Lomond;ben_lomond
+http://www.meetup.com/cities/us/ca/benton/;Benton;benton
+http://www.meetup.com/cities/us/ca/berkeley/;Berkeley;berkeley
+http://www.meetup.com/cities/us/ca/berry_creek/;Berry Creek;berry_creek
+http://www.meetup.com/cities/us/ca/bethel_island/;Bethel Island;bethel_island
+http://www.meetup.com/cities/us/ca/beverly_hills/;Beverly Hills;beverly_hills
+http://www.meetup.com/cities/us/ca/bieber/;Bieber;bieber
+http://www.meetup.com/cities/us/ca/big_bar/;Big Bar;big_bar
+http://www.meetup.com/cities/us/ca/big_bear_city/;Big Bear City;big_bear_city
+http://www.meetup.com/cities/us/ca/big_bear_lake/;Big Bear Lake;big_bear_lake
+http://www.meetup.com/cities/us/ca/big_bend/;Big Bend;big_bend
+http://www.meetup.com/cities/us/ca/big_creek/;Big Creek;big_creek
+http://www.meetup.com/cities/us/ca/biggs/;Biggs;biggs
+http://www.meetup.com/cities/us/ca/big_oak_flat/;Big Oak Flat;big_oak_flat
+http://www.meetup.com/cities/us/ca/big_pine/;Big Pine;big_pine
+http://www.meetup.com/cities/us/ca/big_sur/;Big Sur;big_sur
+http://www.meetup.com/cities/us/ca/biola/;Biola;biola
+http://www.meetup.com/cities/us/ca/birds_landing/;Birds Landing;birds_landing
+http://www.meetup.com/cities/us/ca/bishop/;Bishop;bishop
+http://www.meetup.com/cities/us/ca/blairsden-graeagle/;Blairsden-Graeagle;blairsden-graeagle
+http://www.meetup.com/cities/us/ca/blocksburg/;Blocksburg;blocksburg
+http://www.meetup.com/cities/us/ca/bloomington/;Bloomington;bloomington
+http://www.meetup.com/cities/us/ca/blue_jay/;Blue Jay;blue_jay
+http://www.meetup.com/cities/us/ca/blue_lake/;Blue Lake;blue_lake
+http://www.meetup.com/cities/us/ca/blythe/;Blythe;blythe
+http://www.meetup.com/cities/us/ca/bodega/;Bodega;bodega
+http://www.meetup.com/cities/us/ca/bodega_bay/;Bodega Bay;bodega_bay
+http://www.meetup.com/cities/us/ca/bodfish/;Bodfish;bodfish
+http://www.meetup.com/cities/us/ca/bolinas/;Bolinas;bolinas
+http://www.meetup.com/cities/us/ca/bonita/;Bonita;bonita
+http://www.meetup.com/cities/us/ca/bonsall/;Bonsall;bonsall
+http://www.meetup.com/cities/us/ca/boonville/;Boonville;boonville
+http://www.meetup.com/cities/us/ca/boron/;Boron;boron
+http://www.meetup.com/cities/us/ca/borrego_springs/;Borrego Springs;borrego_springs
+http://www.meetup.com/cities/us/ca/boulder_creek/;Boulder Creek;boulder_creek
+http://www.meetup.com/cities/us/ca/boulevard/;Boulevard;boulevard
+http://www.meetup.com/cities/us/ca/boyes_hot_springs/;Boyes Hot Springs;boyes_hot_springs
+http://www.meetup.com/cities/us/ca/bradley/;Bradley;bradley
+http://www.meetup.com/cities/us/ca/brandeis/;Brandeis;brandeis
+http://www.meetup.com/cities/us/ca/branscomb/;Branscomb;branscomb
+http://www.meetup.com/cities/us/ca/brawley/;Brawley;brawley
+http://www.meetup.com/cities/us/ca/brea/;Brea;brea
+http://www.meetup.com/cities/us/ca/brentwood/;Brentwood;brentwood
+http://www.meetup.com/cities/us/ca/bridgeport/;Bridgeport;bridgeport
+http://www.meetup.com/cities/us/ca/bridgeville/;Bridgeville;bridgeville
+http://www.meetup.com/cities/us/ca/brisbane/;Brisbane;brisbane
+http://www.meetup.com/cities/us/ca/brookdale/;Brookdale;brookdale
+http://www.meetup.com/cities/us/ca/brooks/;Brooks;brooks
+http://www.meetup.com/cities/us/ca/browns_valley/;Browns Valley;browns_valley
+http://www.meetup.com/cities/us/ca/brownsville/;Brownsville;brownsville
+http://www.meetup.com/cities/us/ca/bryn_mawr/;Bryn Mawr;bryn_mawr
+http://www.meetup.com/cities/us/ca/buellton/;Buellton;buellton
+http://www.meetup.com/cities/us/ca/buena_park/;Buena Park;buena_park
+http://www.meetup.com/cities/us/ca/burbank/;Burbank;burbank
+http://www.meetup.com/cities/us/ca/burlingame/;Burlingame;burlingame
+http://www.meetup.com/cities/us/ca/burney/;Burney;burney
+http://www.meetup.com/cities/us/ca/burnt_ranch/;Burnt Ranch;burnt_ranch
+http://www.meetup.com/cities/us/ca/burrel/;Burrel;burrel
+http://www.meetup.com/cities/us/ca/burson/;Burson;burson
+http://www.meetup.com/cities/us/ca/butte_city/;Butte City;butte_city
+http://www.meetup.com/cities/us/ca/buttonwillow/;Buttonwillow;buttonwillow
+http://www.meetup.com/cities/us/ca/byron/;Byron;byron
+http://www.meetup.com/cities/us/ca/cabazon/;Cabazon;cabazon
+http://www.meetup.com/cities/us/ca/calabasas/;Calabasas;calabasas
+http://www.meetup.com/cities/us/ca/calexico/;Calexico;calexico
+http://www.meetup.com/cities/us/ca/caliente/;Caliente;caliente
+http://www.meetup.com/cities/us/ca/california_city/;California City;california_city
+http://www.meetup.com/cities/us/ca/california_hot_springs/;California Hot Springs;california_hot_springs
+http://www.meetup.com/cities/us/ca/calimesa/;Calimesa;calimesa
+http://www.meetup.com/cities/us/ca/calipatria/;Calipatria;calipatria
+http://www.meetup.com/cities/us/ca/calistoga/;Calistoga;calistoga
+http://www.meetup.com/cities/us/ca/callahan/;Callahan;callahan
+http://www.meetup.com/cities/us/ca/calpella/;Calpella;calpella
+http://www.meetup.com/cities/us/ca/calpine/;Calpine;calpine
+http://www.meetup.com/cities/us/ca/camarillo/;Camarillo;camarillo
+http://www.meetup.com/cities/us/ca/cambria/;Cambria;cambria
+http://www.meetup.com/cities/us/ca/camino/;Camino;camino
+http://www.meetup.com/cities/us/ca/campbell/;Campbell;campbell
+http://www.meetup.com/cities/us/ca/camp_meeker/;Camp Meeker;camp_meeker
+http://www.meetup.com/cities/us/ca/camp_nelson/;Camp Nelson;camp_nelson
+http://www.meetup.com/cities/us/ca/campo/;Campo;campo
+http://www.meetup.com/cities/us/ca/campo_seco/;Campo Seco;campo_seco
+http://www.meetup.com/cities/us/ca/camp_pendleton/;Camp Pendleton;camp_pendleton
+http://www.meetup.com/cities/us/ca/camptonville/;Camptonville;camptonville
+http://www.meetup.com/cities/us/ca/canby/;Canby;canby
+http://www.meetup.com/cities/us/ca/canoga_park/;Canoga Park;canoga_park
+http://www.meetup.com/cities/us/ca/cantil/;Cantil;cantil
+http://www.meetup.com/cities/us/ca/cantua_creek/;Cantua Creek;cantua_creek
+http://www.meetup.com/cities/us/ca/canyon/;Canyon;canyon
+http://www.meetup.com/cities/us/ca/canyon_country/;Canyon Country;canyon_country
+http://www.meetup.com/cities/us/ca/canyon_dam/;Canyon Dam;canyon_dam
+http://www.meetup.com/cities/us/ca/capay/;Capay;capay
+http://www.meetup.com/cities/us/ca/capistrano_beach/;Capistrano Beach;capistrano_beach
+http://www.meetup.com/cities/us/ca/capitola/;Capitola;capitola
+http://www.meetup.com/cities/us/ca/cardiff_by_the_sea/;Cardiff by the Sea;cardiff_by_the_sea
+http://www.meetup.com/cities/us/ca/carlotta/;Carlotta;carlotta
+http://www.meetup.com/cities/us/ca/carlsbad/;Carlsbad;carlsbad
+http://www.meetup.com/cities/us/ca/carmel/;Carmel;carmel
+http://www.meetup.com/cities/us/ca/carmel_by_the_sea/;Carmel by the Sea;carmel_by_the_sea
+http://www.meetup.com/cities/us/ca/carmel_valley/;Carmel Valley;carmel_valley
+http://www.meetup.com/cities/us/ca/carmichael/;Carmichael;carmichael
+http://www.meetup.com/cities/us/ca/carnelian_bay/;Carnelian Bay;carnelian_bay
+http://www.meetup.com/cities/us/ca/carpinteria/;Carpinteria;carpinteria
+http://www.meetup.com/cities/us/ca/carson/;Carson;carson
+http://www.meetup.com/cities/us/ca/caruthers/;Caruthers;caruthers
+http://www.meetup.com/cities/us/ca/casmalia/;Casmalia;casmalia
+http://www.meetup.com/cities/us/ca/caspar/;Caspar;caspar
+http://www.meetup.com/cities/us/ca/cassel/;Cassel;cassel
+http://www.meetup.com/cities/us/ca/castaic/;Castaic;castaic
+http://www.meetup.com/cities/us/ca/castella/;Castella;castella
+http://www.meetup.com/cities/us/ca/castro_valley/;Castro Valley;castro_valley
+http://www.meetup.com/cities/us/ca/castroville/;Castroville;castroville
+http://www.meetup.com/cities/us/ca/cathedral_city/;Cathedral City;cathedral_city
+http://www.meetup.com/cities/us/ca/catheys_valley/;Catheys Valley;catheys_valley
+http://www.meetup.com/cities/us/ca/cayucos/;Cayucos;cayucos
+http://www.meetup.com/cities/us/ca/cazadero/;Cazadero;cazadero
+http://www.meetup.com/cities/us/ca/cedar_glen/;Cedar Glen;cedar_glen
+http://www.meetup.com/cities/us/ca/cedarpines_park/;Cedarpines Park;cedarpines_park
+http://www.meetup.com/cities/us/ca/cedar_ridge/;Cedar Ridge;cedar_ridge
+http://www.meetup.com/cities/us/ca/cedarville/;Cedarville;cedarville
+http://www.meetup.com/cities/us/ca/ceres/;Ceres;ceres
+http://www.meetup.com/cities/us/ca/cerritos/;Cerritos;cerritos
+http://www.meetup.com/cities/us/ca/challenge/;Challenge;challenge
+http://www.meetup.com/cities/us/ca/chatsworth/;Chatsworth;chatsworth
+http://www.meetup.com/cities/us/ca/chester/;Chester;chester
+http://www.meetup.com/cities/us/ca/chicago_park/;Chicago Park;chicago_park
+http://www.meetup.com/cities/us/ca/chico/;Chico;chico
+http://www.meetup.com/cities/us/ca/chilcoot/;Chilcoot;chilcoot
+http://www.meetup.com/cities/us/ca/chinese_camp/;Chinese Camp;chinese_camp
+http://www.meetup.com/cities/us/ca/chino/;Chino;chino
+http://www.meetup.com/cities/us/ca/chino_hills/;Chino Hills;chino_hills
+http://www.meetup.com/cities/us/ca/chowchilla/;Chowchilla;chowchilla
+http://www.meetup.com/cities/us/ca/chualar/;Chualar;chualar
+http://www.meetup.com/cities/us/ca/chula_vista/;Chula Vista;chula_vista
+http://www.meetup.com/cities/us/ca/cima/;Cima;cima
+http://www.meetup.com/cities/us/ca/citrus_heights/;Citrus Heights;citrus_heights
+http://www.meetup.com/cities/us/ca/city_of_industry/;City of Industry;city_of_industry
+http://www.meetup.com/cities/us/ca/claremont/;Claremont;claremont
+http://www.meetup.com/cities/us/ca/clarksburg/;Clarksburg;clarksburg
+http://www.meetup.com/cities/us/ca/clayton/;Clayton;clayton
+http://www.meetup.com/cities/us/ca/clearlake/;Clearlake;clearlake
+http://www.meetup.com/cities/us/ca/clearlake_oaks/;Clearlake Oaks;clearlake_oaks
+http://www.meetup.com/cities/us/ca/clearlake_park/;Clearlake Park;clearlake_park
+http://www.meetup.com/cities/us/ca/clements/;Clements;clements
+http://www.meetup.com/cities/us/ca/clio/;Clio;clio
+http://www.meetup.com/cities/us/ca/clipper_mills/;Clipper Mills;clipper_mills
+http://www.meetup.com/cities/us/ca/cloverdale/;Cloverdale;cloverdale
+http://www.meetup.com/cities/us/ca/clovis/;Clovis;clovis
+http://www.meetup.com/cities/us/ca/coachella/;Coachella;coachella
+http://www.meetup.com/cities/us/ca/coalinga/;Coalinga;coalinga
+http://www.meetup.com/cities/us/ca/coarsegold/;Coarsegold;coarsegold
+http://www.meetup.com/cities/us/ca/cobb/;Cobb;cobb
+http://www.meetup.com/cities/us/ca/coleville/;Coleville;coleville
+http://www.meetup.com/cities/us/ca/colfax/;Colfax;colfax
+http://www.meetup.com/cities/us/ca/coloma/;Coloma;coloma
+http://www.meetup.com/cities/us/ca/colton/;Colton;colton
+http://www.meetup.com/cities/us/ca/columbia/;Columbia;columbia
+http://www.meetup.com/cities/us/ca/colusa/;Colusa;colusa
+http://www.meetup.com/cities/us/ca/comptche/;Comptche;comptche
+http://www.meetup.com/cities/us/ca/compton/;Compton;compton
+http://www.meetup.com/cities/us/ca/concord/;Concord;concord
+http://www.meetup.com/cities/us/ca/cool/;Cool;cool
+http://www.meetup.com/cities/us/ca/copperopolis/;Copperopolis;copperopolis
+http://www.meetup.com/cities/us/ca/corcoran/;Corcoran;corcoran
+http://www.meetup.com/cities/us/ca/corning/;Corning;corning
+http://www.meetup.com/cities/us/ca/corona/;Corona;corona
+http://www.meetup.com/cities/us/ca/corona_del_mar/;Corona del Mar;corona_del_mar
+http://www.meetup.com/cities/us/ca/coronado/;Coronado;coronado
+http://www.meetup.com/cities/us/ca/corte_madera/;Corte Madera;corte_madera
+http://www.meetup.com/cities/us/ca/costa_mesa/;Costa Mesa;costa_mesa
+http://www.meetup.com/cities/us/ca/cotati/;Cotati;cotati
+http://www.meetup.com/cities/us/ca/cottonwood/;Cottonwood;cottonwood
+http://www.meetup.com/cities/us/ca/coulterville/;Coulterville;coulterville
+http://www.meetup.com/cities/us/ca/courtland/;Courtland;courtland
+http://www.meetup.com/cities/us/ca/covelo/;Covelo;covelo
+http://www.meetup.com/cities/us/ca/covina/;Covina;covina
+http://www.meetup.com/cities/us/ca/coyote/;Coyote;coyote
+http://www.meetup.com/cities/us/ca/crescent_city/;Crescent City;crescent_city
+http://www.meetup.com/cities/us/ca/crescent_mills/;Crescent Mills;crescent_mills
+http://www.meetup.com/cities/us/ca/cressey/;Cressey;cressey
+http://www.meetup.com/cities/us/ca/crestline/;Crestline;crestline
+http://www.meetup.com/cities/us/ca/creston/;Creston;creston
+http://www.meetup.com/cities/us/ca/crest_park/;Crest Park;crest_park
+http://www.meetup.com/cities/us/ca/crockett/;Crockett;crockett
+http://www.meetup.com/cities/us/ca/crows_landing/;Crows Landing;crows_landing
+http://www.meetup.com/cities/us/ca/culver_city/;Culver City;culver_city
+http://www.meetup.com/cities/us/ca/cupertino/;Cupertino;cupertino
+http://www.meetup.com/cities/us/ca/cutler/;Cutler;cutler
+http://www.meetup.com/cities/us/ca/cutten/;Cutten;cutten
+http://www.meetup.com/cities/us/ca/cypress/;Cypress;cypress
+http://www.meetup.com/cities/us/ca/daggett/;Daggett;daggett
+http://www.meetup.com/cities/us/ca/daly_city/;Daly City;daly_city
+http://www.meetup.com/cities/us/ca/dana_point/;Dana Point;dana_point
+http://www.meetup.com/cities/us/ca/danville/;Danville;danville
+http://www.meetup.com/cities/us/ca/dardanelle/;Dardanelle;dardanelle
+http://www.meetup.com/cities/us/ca/darwin/;Darwin;darwin
+http://www.meetup.com/cities/us/ca/davenport/;Davenport;davenport
+http://www.meetup.com/cities/us/ca/davis/;Davis;davis
+http://www.meetup.com/cities/us/ca/davis_creek/;Davis Creek;davis_creek
+http://www.meetup.com/cities/us/ca/death_valley/;Death Valley;death_valley
+http://www.meetup.com/cities/us/ca/deer_park/;Deer Park;deer_park
+http://www.meetup.com/cities/us/ca/delano/;Delano;delano
+http://www.meetup.com/cities/us/ca/delhi/;Delhi;delhi
+http://www.meetup.com/cities/us/ca/del_mar/;Del Mar;del_mar
+http://www.meetup.com/cities/us/ca/del_rey/;Del Rey;del_rey
+http://www.meetup.com/cities/us/ca/denair/;Denair;denair
+http://www.meetup.com/cities/us/ca/descanso/;Descanso;descanso
+http://www.meetup.com/cities/us/ca/desert_center/;Desert Center;desert_center
+http://www.meetup.com/cities/us/ca/desert_hot_springs/;Desert Hot Springs;desert_hot_springs
+http://www.meetup.com/cities/us/ca/diablo/;Diablo;diablo
+http://www.meetup.com/cities/us/ca/diamond_bar/;Diamond Bar;diamond_bar
+http://www.meetup.com/cities/us/ca/diamond_springs/;Diamond Springs;diamond_springs
+http://www.meetup.com/cities/us/ca/dillon_beach/;Dillon Beach;dillon_beach
+http://www.meetup.com/cities/us/ca/dinuba/;Dinuba;dinuba
+http://www.meetup.com/cities/us/ca/discovery_bay/;Discovery Bay;discovery_bay
+http://www.meetup.com/cities/us/ca/dixon/;Dixon;dixon
+http://www.meetup.com/cities/us/ca/dobbins/;Dobbins;dobbins
+http://www.meetup.com/cities/us/ca/dodgertown/;Dodgertown;dodgertown
+http://www.meetup.com/cities/us/ca/dorris/;Dorris;dorris
+http://www.meetup.com/cities/us/ca/dos_palos/;Dos Palos;dos_palos
+http://www.meetup.com/cities/us/ca/dos_rios/;Dos Rios;dos_rios
+http://www.meetup.com/cities/us/ca/douglas_city/;Douglas City;douglas_city
+http://www.meetup.com/cities/us/ca/douglas_flat/;Douglas Flat;douglas_flat
+http://www.meetup.com/cities/us/ca/downey/;Downey;downey
+http://www.meetup.com/cities/us/ca/downieville/;Downieville;downieville
+http://www.meetup.com/cities/us/ca/doyle/;Doyle;doyle
+http://www.meetup.com/cities/us/ca/drytown/;Drytown;drytown
+http://www.meetup.com/cities/us/ca/duarte/;Duarte;duarte
+http://www.meetup.com/cities/us/ca/dublin/;Dublin;dublin
+http://www.meetup.com/cities/us/ca/ducor/;Ducor;ducor
+http://www.meetup.com/cities/us/ca/dulzura/;Dulzura;dulzura
+http://www.meetup.com/cities/us/ca/duncans_mills/;Duncans Mills;duncans_mills
+http://www.meetup.com/cities/us/ca/dunlap/;Dunlap;dunlap
+http://www.meetup.com/cities/us/ca/dunnigan/;Dunnigan;dunnigan
+http://www.meetup.com/cities/us/ca/dunsmuir/;Dunsmuir;dunsmuir
+http://www.meetup.com/cities/us/ca/durham/;Durham;durham
+http://www.meetup.com/cities/us/ca/dutch_flat/;Dutch Flat;dutch_flat
+http://www.meetup.com/cities/us/ca/eagleville/;Eagleville;eagleville
+http://www.meetup.com/cities/us/ca/earlimart/;Earlimart;earlimart
+http://www.meetup.com/cities/us/ca/earp/;Earp;earp
+http://www.meetup.com/cities/us/ca/east_irvine/;East Irvine;east_irvine
+http://www.meetup.com/cities/us/ca/echo_lake/;Echo Lake;echo_lake
+http://www.meetup.com/cities/us/ca/edison/;Edison;edison
+http://www.meetup.com/cities/us/ca/edwards/;Edwards;edwards
+http://www.meetup.com/cities/us/ca/el_cajon/;El Cajon;el_cajon
+http://www.meetup.com/cities/us/ca/el_centro/;El Centro;el_centro
+http://www.meetup.com/cities/us/ca/el_cerrito/;El Cerrito;el_cerrito
+http://www.meetup.com/cities/us/ca/el_dorado/;El Dorado;el_dorado
+http://www.meetup.com/cities/us/ca/el_dorado_hills/;El Dorado Hills;el_dorado_hills
+http://www.meetup.com/cities/us/ca/eldridge/;Eldridge;eldridge
+http://www.meetup.com/cities/us/ca/el_granada/;El Granada;el_granada
+http://www.meetup.com/cities/us/ca/elk/;Elk;elk
+http://www.meetup.com/cities/us/ca/elk_creek/;Elk Creek;elk_creek
+http://www.meetup.com/cities/us/ca/elk_grove/;Elk Grove;elk_grove
+http://www.meetup.com/cities/us/ca/elmira/;Elmira;elmira
+http://www.meetup.com/cities/us/ca/el_monte/;El Monte;el_monte
+http://www.meetup.com/cities/us/ca/el_nido/;El Nido;el_nido
+http://www.meetup.com/cities/us/ca/el_portal/;El Portal;el_portal
+http://www.meetup.com/cities/us/ca/el_segundo/;El Segundo;el_segundo
+http://www.meetup.com/cities/us/ca/el_sobrante/;El Sobrante;el_sobrante
+http://www.meetup.com/cities/us/ca/el_toro/;El Toro;el_toro
+http://www.meetup.com/cities/us/ca/el_verano/;El Verano;el_verano
+http://www.meetup.com/cities/us/ca/elverta/;Elverta;elverta
+http://www.meetup.com/cities/us/ca/emeryville/;Emeryville;emeryville
+http://www.meetup.com/cities/us/ca/emigrant_gap/;Emigrant Gap;emigrant_gap
+http://www.meetup.com/cities/us/ca/empire/;Empire;empire
+http://www.meetup.com/cities/us/ca/encinitas/;Encinitas;encinitas
+http://www.meetup.com/cities/us/ca/encino/;Encino;encino
+http://www.meetup.com/cities/us/ca/escalon/;Escalon;escalon
+http://www.meetup.com/cities/us/ca/escondido/;Escondido;escondido
+http://www.meetup.com/cities/us/ca/esparto/;Esparto;esparto
+http://www.meetup.com/cities/us/ca/essex/;Essex;essex
+http://www.meetup.com/cities/us/ca/etna/;Etna;etna
+http://www.meetup.com/cities/us/ca/eureka/;Eureka;eureka
+http://www.meetup.com/cities/us/ca/exeter/;Exeter;exeter
+http://www.meetup.com/cities/us/ca/fairfax/;Fairfax;fairfax
+http://www.meetup.com/cities/us/ca/fairfield/;Fairfield;fairfield
+http://www.meetup.com/cities/us/ca/fair_oaks/;Fair Oaks;fair_oaks
+http://www.meetup.com/cities/us/ca/fallbrook/;Fallbrook;fallbrook
+http://www.meetup.com/cities/us/ca/fall_river_mills/;Fall River Mills;fall_river_mills
+http://www.meetup.com/cities/us/ca/farmersville/;Farmersville;farmersville
+http://www.meetup.com/cities/us/ca/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/ca/fawnskin/;Fawnskin;fawnskin
+http://www.meetup.com/cities/us/ca/feather_falls/;Feather Falls;feather_falls
+http://www.meetup.com/cities/us/ca/fellows/;Fellows;fellows
+http://www.meetup.com/cities/us/ca/felton/;Felton;felton
+http://www.meetup.com/cities/us/ca/ferndale/;Ferndale;ferndale
+http://www.meetup.com/cities/us/ca/fiddletown/;Fiddletown;fiddletown
+http://www.meetup.com/cities/us/ca/fields_landing/;Fields Landing;fields_landing
+http://www.meetup.com/cities/us/ca/fillmore/;Fillmore;fillmore
+http://www.meetup.com/cities/us/ca/finley/;Finley;finley
+http://www.meetup.com/cities/us/ca/firebaugh/;Firebaugh;firebaugh
+http://www.meetup.com/cities/us/ca/fish_camp/;Fish Camp;fish_camp
+http://www.meetup.com/cities/us/ca/five_points/;Five Points;five_points
+http://www.meetup.com/cities/us/ca/floriston/;Floriston;floriston
+http://www.meetup.com/cities/us/ca/flournoy/;Flournoy;flournoy
+http://www.meetup.com/cities/us/ca/folsom/;Folsom;folsom
+http://www.meetup.com/cities/us/ca/fontana/;Fontana;fontana
+http://www.meetup.com/cities/us/ca/foothill_ranch/;Foothill Ranch;foothill_ranch
+http://www.meetup.com/cities/us/ca/forbestown/;Forbestown;forbestown
+http://www.meetup.com/cities/us/ca/forest_falls/;Forest Falls;forest_falls
+http://www.meetup.com/cities/us/ca/foresthill/;Foresthill;foresthill
+http://www.meetup.com/cities/us/ca/forest_knolls/;Forest Knolls;forest_knolls
+http://www.meetup.com/cities/us/ca/forest_ranch/;Forest Ranch;forest_ranch
+http://www.meetup.com/cities/us/ca/forestville/;Forestville;forestville
+http://www.meetup.com/cities/us/ca/forks_of_salmon/;Forks of Salmon;forks_of_salmon
+http://www.meetup.com/cities/us/ca/fort_bidwell/;Fort Bidwell;fort_bidwell
+http://www.meetup.com/cities/us/ca/fort_bragg/;Fort Bragg;fort_bragg
+http://www.meetup.com/cities/us/ca/fort_dick/;Fort Dick;fort_dick
+http://www.meetup.com/cities/us/ca/fort_irwin/;Fort Irwin;fort_irwin
+http://www.meetup.com/cities/us/ca/fort_jones/;Fort Jones;fort_jones
+http://www.meetup.com/cities/us/ca/fortuna/;Fortuna;fortuna
+http://www.meetup.com/cities/us/ca/fountain_valley/;Fountain Valley;fountain_valley
+http://www.meetup.com/cities/us/ca/fowler/;Fowler;fowler
+http://www.meetup.com/cities/us/ca/frazier_park/;Frazier Park;frazier_park
+http://www.meetup.com/cities/us/ca/freedom/;Freedom;freedom
+http://www.meetup.com/cities/us/ca/fremont/;Fremont;fremont
+http://www.meetup.com/cities/us/ca/french_camp/;French Camp;french_camp
+http://www.meetup.com/cities/us/ca/french_gulch/;French Gulch;french_gulch
+http://www.meetup.com/cities/us/ca/fresno/;Fresno;fresno
+http://www.meetup.com/cities/us/ca/friant/;Friant;friant
+http://www.meetup.com/cities/us/ca/fullerton/;Fullerton;fullerton
+http://www.meetup.com/cities/us/ca/fulton/;Fulton;fulton
+http://www.meetup.com/cities/us/ca/galt/;Galt;galt
+http://www.meetup.com/cities/us/ca/garberville/;Garberville;garberville
+http://www.meetup.com/cities/us/ca/gardena/;Gardena;gardena
+http://www.meetup.com/cities/us/ca/garden_grove/;Garden Grove;garden_grove
+http://www.meetup.com/cities/us/ca/garden_valley/;Garden Valley;garden_valley
+http://www.meetup.com/cities/us/ca/gasquet/;Gasquet;gasquet
+http://www.meetup.com/cities/us/ca/gazelle/;Gazelle;gazelle
+http://www.meetup.com/cities/us/ca/georgetown/;Georgetown;georgetown
+http://www.meetup.com/cities/us/ca/gerber/;Gerber;gerber
+http://www.meetup.com/cities/us/ca/geyserville/;Geyserville;geyserville
+http://www.meetup.com/cities/us/ca/gilroy/;Gilroy;gilroy
+http://www.meetup.com/cities/us/ca/glencoe/;Glencoe;glencoe
+http://www.meetup.com/cities/us/ca/glendale/;Glendale;glendale
+http://www.meetup.com/cities/us/ca/glendora/;Glendora;glendora
+http://www.meetup.com/cities/us/ca/glen_ellen/;Glen Ellen;glen_ellen
+http://www.meetup.com/cities/us/ca/glenhaven/;Glenhaven;glenhaven
+http://www.meetup.com/cities/us/ca/glenn/;Glenn;glenn
+http://www.meetup.com/cities/us/ca/glennville/;Glennville;glennville
+http://www.meetup.com/cities/us/ca/gold_run/;Gold Run;gold_run
+http://www.meetup.com/cities/us/ca/goleta/;Goleta;goleta
+http://www.meetup.com/cities/us/ca/gonzales/;Gonzales;gonzales
+http://www.meetup.com/cities/us/ca/goodyears_bar/;Goodyears Bar;goodyears_bar
+http://www.meetup.com/cities/us/ca/goshen/;Goshen;goshen
+http://www.meetup.com/cities/us/ca/granada_hills/;Granada Hills;granada_hills
+http://www.meetup.com/cities/us/ca/grand_terrace/;Grand Terrace;grand_terrace
+http://www.meetup.com/cities/us/ca/granite_bay/;Granite Bay;granite_bay
+http://www.meetup.com/cities/us/ca/grass_valley/;Grass Valley;grass_valley
+http://www.meetup.com/cities/us/ca/graton/;Graton;graton
+http://www.meetup.com/cities/us/ca/greenbrae/;Greenbrae;greenbrae
+http://www.meetup.com/cities/us/ca/greenfield/;Greenfield;greenfield
+http://www.meetup.com/cities/us/ca/green_valley_lake/;Green Valley Lake;green_valley_lake
+http://www.meetup.com/cities/us/ca/greenview/;Greenview;greenview
+http://www.meetup.com/cities/us/ca/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/ca/greenwood/;Greenwood;greenwood
+http://www.meetup.com/cities/us/ca/grenada/;Grenada;grenada
+http://www.meetup.com/cities/us/ca/gridley/;Gridley;gridley
+http://www.meetup.com/cities/us/ca/grimes/;Grimes;grimes
+http://www.meetup.com/cities/us/ca/grizzly_flats/;Grizzly Flats;grizzly_flats
+http://www.meetup.com/cities/us/ca/groveland/;Groveland;groveland
+http://www.meetup.com/cities/us/ca/grover_beach/;Grover Beach;grover_beach
+http://www.meetup.com/cities/us/ca/guadalupe/;Guadalupe;guadalupe
+http://www.meetup.com/cities/us/ca/gualala/;Gualala;gualala
+http://www.meetup.com/cities/us/ca/guasti/;Guasti;guasti
+http://www.meetup.com/cities/us/ca/guatay/;Guatay;guatay
+http://www.meetup.com/cities/us/ca/guerneville/;Guerneville;guerneville
+http://www.meetup.com/cities/us/ca/guinda/;Guinda;guinda
+http://www.meetup.com/cities/us/ca/gustine/;Gustine;gustine
+http://www.meetup.com/cities/us/ca/hacienda_heights/;Hacienda Heights;hacienda_heights
+http://www.meetup.com/cities/us/ca/half_moon_bay/;Half Moon Bay;half_moon_bay
+http://www.meetup.com/cities/us/ca/hamilton_city/;Hamilton City;hamilton_city
+http://www.meetup.com/cities/us/ca/hanford/;Hanford;hanford
+http://www.meetup.com/cities/us/ca/happy_camp/;Happy Camp;happy_camp
+http://www.meetup.com/cities/us/ca/harbor_city/;Harbor City;harbor_city
+http://www.meetup.com/cities/us/ca/harmony/;Harmony;harmony
+http://www.meetup.com/cities/us/ca/hat_creek/;Hat Creek;hat_creek
+http://www.meetup.com/cities/us/ca/hathaway_pines/;Hathaway Pines;hathaway_pines
+http://www.meetup.com/cities/us/ca/hawaiian_gardens/;Hawaiian Gardens;hawaiian_gardens
+http://www.meetup.com/cities/us/ca/hawthorne/;Hawthorne;hawthorne
+http://www.meetup.com/cities/us/ca/hayfork/;Hayfork;hayfork
+http://www.meetup.com/cities/us/ca/hayward/;Hayward;hayward
+http://www.meetup.com/cities/us/ca/healdsburg/;Healdsburg;healdsburg
+http://www.meetup.com/cities/us/ca/heber/;Heber;heber
+http://www.meetup.com/cities/us/ca/helendale/;Helendale;helendale
+http://www.meetup.com/cities/us/ca/helm/;Helm;helm
+http://www.meetup.com/cities/us/ca/hemet/;Hemet;hemet
+http://www.meetup.com/cities/us/ca/herald/;Herald;herald
+http://www.meetup.com/cities/us/ca/hercules/;Hercules;hercules
+http://www.meetup.com/cities/us/ca/herlong/;Herlong;herlong
+http://www.meetup.com/cities/us/ca/hermosa_beach/;Hermosa Beach;hermosa_beach
+http://www.meetup.com/cities/us/ca/hesperia/;Hesperia;hesperia
+http://www.meetup.com/cities/us/ca/hickman/;Hickman;hickman
+http://www.meetup.com/cities/us/ca/hidden_valley_lake/;Hidden Valley Lake;hidden_valley_lake
+http://www.meetup.com/cities/us/ca/highland/;Highland;highland
+http://www.meetup.com/cities/us/ca/hilmar/;Hilmar;hilmar
+http://www.meetup.com/cities/us/ca/hinkley/;Hinkley;hinkley
+http://www.meetup.com/cities/us/ca/hollister/;Hollister;hollister
+http://www.meetup.com/cities/us/ca/holt/;Holt;holt
+http://www.meetup.com/cities/us/ca/holtville/;Holtville;holtville
+http://www.meetup.com/cities/us/ca/holy_city/;Holy City;holy_city
+http://www.meetup.com/cities/us/ca/homeland/;Homeland;homeland
+http://www.meetup.com/cities/us/ca/homewood/;Homewood;homewood
+http://www.meetup.com/cities/us/ca/honeydew/;Honeydew;honeydew
+http://www.meetup.com/cities/us/ca/hood/;Hood;hood
+http://www.meetup.com/cities/us/ca/hoopa/;Hoopa;hoopa
+http://www.meetup.com/cities/us/ca/hopland/;Hopland;hopland
+http://www.meetup.com/cities/us/ca/hornbrook/;Hornbrook;hornbrook
+http://www.meetup.com/cities/us/ca/hornitos/;Hornitos;hornitos
+http://www.meetup.com/cities/us/ca/hughson/;Hughson;hughson
+http://www.meetup.com/cities/us/ca/hume/;Hume;hume
+http://www.meetup.com/cities/us/ca/huntington_beach/;Huntington Beach;huntington_beach
+http://www.meetup.com/cities/us/ca/huntington_park/;Huntington Park;huntington_park
+http://www.meetup.com/cities/us/ca/huron/;Huron;huron
+http://www.meetup.com/cities/us/ca/hyampom/;Hyampom;hyampom
+http://www.meetup.com/cities/us/ca/hydesville/;Hydesville;hydesville
+http://www.meetup.com/cities/us/ca/idyllwild/;Idyllwild;idyllwild
+http://www.meetup.com/cities/us/ca/igo/;Igo;igo
+http://www.meetup.com/cities/us/ca/imperial/;Imperial;imperial
+http://www.meetup.com/cities/us/ca/imperial_beach/;Imperial Beach;imperial_beach
+http://www.meetup.com/cities/us/ca/independence/;Independence;independence
+http://www.meetup.com/cities/us/ca/indian_wells/;Indian Wells;indian_wells
+http://www.meetup.com/cities/us/ca/indio/;Indio;indio
+http://www.meetup.com/cities/us/ca/inglewood/;Inglewood;inglewood
+http://www.meetup.com/cities/us/ca/inverness/;Inverness;inverness
+http://www.meetup.com/cities/us/ca/inyokern/;Inyokern;inyokern
+http://www.meetup.com/cities/us/ca/ione/;Ione;ione
+http://www.meetup.com/cities/us/ca/irvine/;Irvine;irvine
+http://www.meetup.com/cities/us/ca/isleton/;Isleton;isleton
+http://www.meetup.com/cities/us/ca/ivanhoe/;Ivanhoe;ivanhoe
+http://www.meetup.com/cities/us/ca/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/ca/jacumba/;Jacumba;jacumba
+http://www.meetup.com/cities/us/ca/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/ca/jamul/;Jamul;jamul
+http://www.meetup.com/cities/us/ca/janesville/;Janesville;janesville
+http://www.meetup.com/cities/us/ca/jenner/;Jenner;jenner
+http://www.meetup.com/cities/us/ca/johannesburg/;Johannesburg;johannesburg
+http://www.meetup.com/cities/us/ca/jolon/;Jolon;jolon
+http://www.meetup.com/cities/us/ca/joshua_tree/;Joshua Tree;joshua_tree
+http://www.meetup.com/cities/us/ca/julian/;Julian;julian
+http://www.meetup.com/cities/us/ca/junction_city/;Junction City;junction_city
+http://www.meetup.com/cities/us/ca/june_lake/;June Lake;june_lake
+http://www.meetup.com/cities/us/ca/kaweah/;Kaweah;kaweah
+http://www.meetup.com/cities/us/ca/keeler/;Keeler;keeler
+http://www.meetup.com/cities/us/ca/keene/;Keene;keene
+http://www.meetup.com/cities/us/ca/kelseyville/;Kelseyville;kelseyville
+http://www.meetup.com/cities/us/ca/kentfield/;Kentfield;kentfield
+http://www.meetup.com/cities/us/ca/kenwood/;Kenwood;kenwood
+http://www.meetup.com/cities/us/ca/kerman/;Kerman;kerman
+http://www.meetup.com/cities/us/ca/kernville/;Kernville;kernville
+http://www.meetup.com/cities/us/ca/kettleman_city/;Kettleman City;kettleman_city
+http://www.meetup.com/cities/us/ca/keyes/;Keyes;keyes
+http://www.meetup.com/cities/us/ca/king_city/;King City;king_city
+http://www.meetup.com/cities/us/ca/kings_beach/;Kings Beach;kings_beach
+http://www.meetup.com/cities/us/ca/kingsburg/;Kingsburg;kingsburg
+http://www.meetup.com/cities/us/ca/kings_canyon_national_pk/;Kings Canyon National Pk;kings_canyon_national_pk
+http://www.meetup.com/cities/us/ca/kirkwood/;Kirkwood;kirkwood
+http://www.meetup.com/cities/us/ca/kit_carson/;Kit Carson;kit_carson
+http://www.meetup.com/cities/us/ca/klamath/;Klamath;klamath
+http://www.meetup.com/cities/us/ca/klamath_river/;Klamath River;klamath_river
+http://www.meetup.com/cities/us/ca/kneeland/;Kneeland;kneeland
+http://www.meetup.com/cities/us/ca/knightsen/;Knightsen;knightsen
+http://www.meetup.com/cities/us/ca/knights_landing/;Knights Landing;knights_landing
+http://www.meetup.com/cities/us/ca/korbel/;Korbel;korbel
+http://www.meetup.com/cities/us/ca/kyburz/;Kyburz;kyburz
+http://www.meetup.com/cities/us/ca/la_canada_flintridge/;La Canada Flintridge;la_canada_flintridge
+http://www.meetup.com/cities/us/ca/la_crescenta/;La Crescenta;la_crescenta
+http://www.meetup.com/cities/us/ca/ladera_ranch/;Ladera Ranch;ladera_ranch
+http://www.meetup.com/cities/us/ca/lafayette/;Lafayette;lafayette
+http://www.meetup.com/cities/us/ca/la_grange/;La Grange;la_grange
+http://www.meetup.com/cities/us/ca/laguna_beach/;Laguna Beach;laguna_beach
+http://www.meetup.com/cities/us/ca/laguna_hills/;Laguna Hills;laguna_hills
+http://www.meetup.com/cities/us/ca/laguna_niguel/;Laguna Niguel;laguna_niguel
+http://www.meetup.com/cities/us/ca/laguna_woods/;Laguna Woods;laguna_woods
+http://www.meetup.com/cities/us/ca/lagunitas/;Lagunitas;lagunitas
+http://www.meetup.com/cities/us/ca/la_habra/;La Habra;la_habra
+http://www.meetup.com/cities/us/ca/la_honda/;La Honda;la_honda
+http://www.meetup.com/cities/us/ca/la_jolla/;La Jolla;la_jolla
+http://www.meetup.com/cities/us/ca/lake_arrowhead/;Lake Arrowhead;lake_arrowhead
+http://www.meetup.com/cities/us/ca/lake_city/;Lake City;lake_city
+http://www.meetup.com/cities/us/ca/lake_elsinore/;Lake Elsinore;lake_elsinore
+http://www.meetup.com/cities/us/ca/lake_forest/;Lake Forest;lake_forest
+http://www.meetup.com/cities/us/ca/lakehead/;Lakehead;lakehead
+http://www.meetup.com/cities/us/ca/lake_hughes/;Lake Hughes;lake_hughes
+http://www.meetup.com/cities/us/ca/lake_isabella/;Lake Isabella;lake_isabella
+http://www.meetup.com/cities/us/ca/lakeport/;Lakeport;lakeport
+http://www.meetup.com/cities/us/ca/lakeshore/;Lakeshore;lakeshore
+http://www.meetup.com/cities/us/ca/lakeside/;Lakeside;lakeside
+http://www.meetup.com/cities/us/ca/lakewood/;Lakewood;lakewood
+http://www.meetup.com/cities/us/ca/la_mesa/;La Mesa;la_mesa
+http://www.meetup.com/cities/us/ca/la_mirada/;La Mirada;la_mirada
+http://www.meetup.com/cities/us/ca/lamont/;Lamont;lamont
+http://www.meetup.com/cities/us/ca/lancaster/;Lancaster;lancaster
+http://www.meetup.com/cities/us/ca/landers/;Landers;landers
+http://www.meetup.com/cities/us/ca/la_palma/;La Palma;la_palma
+http://www.meetup.com/cities/us/ca/la_puente/;La Puente;la_puente
+http://www.meetup.com/cities/us/ca/la_quinta/;La Quinta;la_quinta
+http://www.meetup.com/cities/us/ca/larkspur/;Larkspur;larkspur
+http://www.meetup.com/cities/us/ca/lathrop/;Lathrop;lathrop
+http://www.meetup.com/cities/us/ca/laton/;Laton;laton
+http://www.meetup.com/cities/us/ca/la_verne/;La Verne;la_verne
+http://www.meetup.com/cities/us/ca/lawndale/;Lawndale;lawndale
+http://www.meetup.com/cities/us/ca/laytonville/;Laytonville;laytonville
+http://www.meetup.com/cities/us/ca/lebec/;Lebec;lebec
+http://www.meetup.com/cities/us/ca/lee_vining/;Lee Vining;lee_vining
+http://www.meetup.com/cities/us/ca/leggett/;Leggett;leggett
+http://www.meetup.com/cities/us/ca/le_grand/;Le Grand;le_grand
+http://www.meetup.com/cities/us/ca/lemon_cove/;Lemon Cove;lemon_cove
+http://www.meetup.com/cities/us/ca/lemon_grove/;Lemon Grove;lemon_grove
+http://www.meetup.com/cities/us/ca/lemoore/;Lemoore;lemoore
+http://www.meetup.com/cities/us/ca/lewiston/;Lewiston;lewiston
+http://www.meetup.com/cities/us/ca/likely/;Likely;likely
+http://www.meetup.com/cities/us/ca/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/ca/lincoln_acres/;Lincoln Acres;lincoln_acres
+http://www.meetup.com/cities/us/ca/linden/;Linden;linden
+http://www.meetup.com/cities/us/ca/lindsay/;Lindsay;lindsay
+http://www.meetup.com/cities/us/ca/litchfield/;Litchfield;litchfield
+http://www.meetup.com/cities/us/ca/little_lake/;Little Lake;little_lake
+http://www.meetup.com/cities/us/ca/little_river/;Little River;little_river
+http://www.meetup.com/cities/us/ca/littlerock/;Littlerock;littlerock
+http://www.meetup.com/cities/us/ca/live_oak/;Live Oak;live_oak
+http://www.meetup.com/cities/us/ca/livermore/;Livermore;livermore
+http://www.meetup.com/cities/us/ca/livingston/;Livingston;livingston
+http://www.meetup.com/cities/us/ca/llano/;Llano;llano
+http://www.meetup.com/cities/us/ca/lockeford/;Lockeford;lockeford
+http://www.meetup.com/cities/us/ca/lockwood/;Lockwood;lockwood
+http://www.meetup.com/cities/us/ca/lodi/;Lodi;lodi
+http://www.meetup.com/cities/us/ca/loleta/;Loleta;loleta
+http://www.meetup.com/cities/us/ca/loma_linda/;Loma Linda;loma_linda
+http://www.meetup.com/cities/us/ca/loma_mar/;Loma Mar;loma_mar
+http://www.meetup.com/cities/us/ca/lomita/;Lomita;lomita
+http://www.meetup.com/cities/us/ca/lompoc/;Lompoc;lompoc
+http://www.meetup.com/cities/us/ca/lone_pine/;Lone Pine;lone_pine
+http://www.meetup.com/cities/us/ca/long_barn/;Long Barn;long_barn
+http://www.meetup.com/cities/us/ca/long_beach/;Long Beach;long_beach
+http://www.meetup.com/cities/us/ca/lookout/;Lookout;lookout
+http://www.meetup.com/cities/us/ca/loomis/;Loomis;loomis
+http://www.meetup.com/cities/us/ca/los_alamitos/;Los Alamitos;los_alamitos
+http://www.meetup.com/cities/us/ca/los_alamos/;Los Alamos;los_alamos
+http://www.meetup.com/cities/us/ca/los_altos/;Los Altos;los_altos
+http://www.meetup.com/cities/us/ca/los_angeles/;Los Angeles;los_angeles
+http://www.meetup.com/cities/us/ca/los_banos/;Los Banos;los_banos
+http://www.meetup.com/cities/us/ca/los_gatos/;Los Gatos;los_gatos
+http://www.meetup.com/cities/us/ca/los_molinos/;Los Molinos;los_molinos
+http://www.meetup.com/cities/us/ca/los_olivos/;Los Olivos;los_olivos
+http://www.meetup.com/cities/us/ca/los_osos/;Los Osos;los_osos
+http://www.meetup.com/cities/us/ca/lost_hills/;Lost Hills;lost_hills
+http://www.meetup.com/cities/us/ca/lotus/;Lotus;lotus
+http://www.meetup.com/cities/us/ca/lower_lake/;Lower Lake;lower_lake
+http://www.meetup.com/cities/us/ca/loyalton/;Loyalton;loyalton
+http://www.meetup.com/cities/us/ca/lucerne/;Lucerne;lucerne
+http://www.meetup.com/cities/us/ca/lucerne_valley/;Lucerne Valley;lucerne_valley
+http://www.meetup.com/cities/us/ca/ludlow/;Ludlow;ludlow
+http://www.meetup.com/cities/us/ca/lynwood/;Lynwood;lynwood
+http://www.meetup.com/cities/us/ca/lytle_creek/;Lytle Creek;lytle_creek
+http://www.meetup.com/cities/us/ca/macdoel/;Macdoel;macdoel
+http://www.meetup.com/cities/us/ca/madeline/;Madeline;madeline
+http://www.meetup.com/cities/us/ca/madera/;Madera;madera
+http://www.meetup.com/cities/us/ca/madison/;Madison;madison
+http://www.meetup.com/cities/us/ca/mad_river/;Mad River;mad_river
+http://www.meetup.com/cities/us/ca/magalia/;Magalia;magalia
+http://www.meetup.com/cities/us/ca/malibu/;Malibu;malibu
+http://www.meetup.com/cities/us/ca/mammoth_lakes/;Mammoth Lakes;mammoth_lakes
+http://www.meetup.com/cities/us/ca/manchester/;Manchester;manchester
+http://www.meetup.com/cities/us/ca/manhattan_beach/;Manhattan Beach;manhattan_beach
+http://www.meetup.com/cities/us/ca/manteca/;Manteca;manteca
+http://www.meetup.com/cities/us/ca/manton/;Manton;manton
+http://www.meetup.com/cities/us/ca/march_air_reserve_base/;March Air Reserve Base;march_air_reserve_base
+http://www.meetup.com/cities/us/ca/maricopa/;Maricopa;maricopa
+http://www.meetup.com/cities/us/ca/marina/;Marina;marina
+http://www.meetup.com/cities/us/ca/marina_del_rey/;Marina del Rey;marina_del_rey
+http://www.meetup.com/cities/us/ca/mariposa/;Mariposa;mariposa
+http://www.meetup.com/cities/us/ca/markleeville/;Markleeville;markleeville
+http://www.meetup.com/cities/us/ca/marshall/;Marshall;marshall
+http://www.meetup.com/cities/us/ca/martell/;Martell;martell
+http://www.meetup.com/cities/us/ca/martinez/;Martinez;martinez
+http://www.meetup.com/cities/us/ca/marysville/;Marysville;marysville
+http://www.meetup.com/cities/us/ca/mather/;Mather;mather
+http://www.meetup.com/cities/us/ca/maxwell/;Maxwell;maxwell
+http://www.meetup.com/cities/us/ca/maywood/;Maywood;maywood
+http://www.meetup.com/cities/us/ca/mcarthur/;McArthur;mcarthur
+http://www.meetup.com/cities/us/ca/mcclellan/;McClellan;mcclellan
+http://www.meetup.com/cities/us/ca/mccloud/;McCloud;mccloud
+http://www.meetup.com/cities/us/ca/mc_farland/;Mc Farland;mc_farland
+http://www.meetup.com/cities/us/ca/mckinleyville/;McKinleyville;mckinleyville
+http://www.meetup.com/cities/us/ca/mc_kittrick/;Mc Kittrick;mc_kittrick
+http://www.meetup.com/cities/us/ca/meadow_valley/;Meadow Valley;meadow_valley
+http://www.meetup.com/cities/us/ca/meadow_vista/;Meadow Vista;meadow_vista
+http://www.meetup.com/cities/us/ca/mecca/;Mecca;mecca
+http://www.meetup.com/cities/us/ca/mendocino/;Mendocino;mendocino
+http://www.meetup.com/cities/us/ca/mendota/;Mendota;mendota
+http://www.meetup.com/cities/us/ca/menifee/;Menifee;menifee
+http://www.meetup.com/cities/us/ca/menlo_park/;Menlo Park;menlo_park
+http://www.meetup.com/cities/us/ca/mentone/;Mentone;mentone
+http://www.meetup.com/cities/us/ca/merced/;Merced;merced
+http://www.meetup.com/cities/us/ca/meridian/;Meridian;meridian
+http://www.meetup.com/cities/us/ca/middletown/;Middletown;middletown
+http://www.meetup.com/cities/us/ca/midpines/;Midpines;midpines
+http://www.meetup.com/cities/us/ca/midway_city/;Midway City;midway_city
+http://www.meetup.com/cities/us/ca/milford/;Milford;milford
+http://www.meetup.com/cities/us/ca/millbrae/;Millbrae;millbrae
+http://www.meetup.com/cities/us/ca/mill_creek/;Mill Creek;mill_creek
+http://www.meetup.com/cities/us/ca/mill_valley/;Mill Valley;mill_valley
+http://www.meetup.com/cities/us/ca/millville/;Millville;millville
+http://www.meetup.com/cities/us/ca/milpitas/;Milpitas;milpitas
+http://www.meetup.com/cities/us/ca/mineral/;Mineral;mineral
+http://www.meetup.com/cities/us/ca/mira_loma/;Mira Loma;mira_loma
+http://www.meetup.com/cities/us/ca/miramonte/;Miramonte;miramonte
+http://www.meetup.com/cities/us/ca/miranda/;Miranda;miranda
+http://www.meetup.com/cities/us/ca/mission_hills/;Mission Hills;mission_hills
+http://www.meetup.com/cities/us/ca/mission_viejo/;Mission Viejo;mission_viejo
+http://www.meetup.com/cities/us/ca/mi_wuk_village/;Mi Wuk Village;mi_wuk_village
+http://www.meetup.com/cities/us/ca/moccasin/;Moccasin;moccasin
+http://www.meetup.com/cities/us/ca/modesto/;Modesto;modesto
+http://www.meetup.com/cities/us/ca/mojave/;Mojave;mojave
+http://www.meetup.com/cities/us/ca/mokelumne_hill/;Mokelumne Hill;mokelumne_hill
+http://www.meetup.com/cities/us/ca/mono_hot_springs/;Mono Hot Springs;mono_hot_springs
+http://www.meetup.com/cities/us/ca/monrovia/;Monrovia;monrovia
+http://www.meetup.com/cities/us/ca/montague/;Montague;montague
+http://www.meetup.com/cities/us/ca/montara/;Montara;montara
+http://www.meetup.com/cities/us/ca/montclair/;Montclair;montclair
+http://www.meetup.com/cities/us/ca/montebello/;Montebello;montebello
+http://www.meetup.com/cities/us/ca/monterey/;Monterey;monterey
+http://www.meetup.com/cities/us/ca/monterey_park/;Monterey Park;monterey_park
+http://www.meetup.com/cities/us/ca/monte_rio/;Monte Rio;monte_rio
+http://www.meetup.com/cities/us/ca/montgomery_creek/;Montgomery Creek;montgomery_creek
+http://www.meetup.com/cities/us/ca/montrose/;Montrose;montrose
+http://www.meetup.com/cities/us/ca/moorpark/;Moorpark;moorpark
+http://www.meetup.com/cities/us/ca/moraga/;Moraga;moraga
+http://www.meetup.com/cities/us/ca/moreno_valley/;Moreno Valley;moreno_valley
+http://www.meetup.com/cities/us/ca/morgan_hill/;Morgan Hill;morgan_hill
+http://www.meetup.com/cities/us/ca/morongo_valley/;Morongo Valley;morongo_valley
+http://www.meetup.com/cities/us/ca/morro_bay/;Morro Bay;morro_bay
+http://www.meetup.com/cities/us/ca/moss_beach/;Moss Beach;moss_beach
+http://www.meetup.com/cities/us/ca/moss_landing/;Moss Landing;moss_landing
+http://www.meetup.com/cities/us/ca/mountain_center/;Mountain Center;mountain_center
+http://www.meetup.com/cities/us/ca/mountain_pass/;Mountain Pass;mountain_pass
+http://www.meetup.com/cities/us/ca/mountain_ranch/;Mountain Ranch;mountain_ranch
+http://www.meetup.com/cities/us/ca/mountain_view/;Mountain View;mountain_view
+http://www.meetup.com/cities/us/ca/mount_aukum/;Mount Aukum;mount_aukum
+http://www.meetup.com/cities/us/ca/mount_hamilton/;Mount Hamilton;mount_hamilton
+http://www.meetup.com/cities/us/ca/mount_hermon/;Mount Hermon;mount_hermon
+http://www.meetup.com/cities/us/ca/mount_laguna/;Mount Laguna;mount_laguna
+http://www.meetup.com/cities/us/ca/mount_shasta/;Mount Shasta;mount_shasta
+http://www.meetup.com/cities/us/ca/mount_wilson/;Mount Wilson;mount_wilson
+http://www.meetup.com/cities/us/ca/mt_baldy/;Mt Baldy;mt_baldy
+http://www.meetup.com/cities/us/ca/murphys/;Murphys;murphys
+http://www.meetup.com/cities/us/ca/murrieta/;Murrieta;murrieta
+http://www.meetup.com/cities/us/ca/myers_flat/;Myers Flat;myers_flat
+http://www.meetup.com/cities/us/ca/napa/;Napa;napa
+http://www.meetup.com/cities/us/ca/national_city/;National City;national_city
+http://www.meetup.com/cities/us/ca/navarro/;Navarro;navarro
+http://www.meetup.com/cities/us/ca/needles/;Needles;needles
+http://www.meetup.com/cities/us/ca/nelson/;Nelson;nelson
+http://www.meetup.com/cities/us/ca/nevada_city/;Nevada City;nevada_city
+http://www.meetup.com/cities/us/ca/new_almaden/;New Almaden;new_almaden
+http://www.meetup.com/cities/us/ca/newark/;Newark;newark
+http://www.meetup.com/cities/us/ca/newberry_springs/;Newberry Springs;newberry_springs
+http://www.meetup.com/cities/us/ca/newbury_park/;Newbury Park;newbury_park
+http://www.meetup.com/cities/us/ca/newcastle/;Newcastle;newcastle
+http://www.meetup.com/cities/us/ca/new_cuyama/;New Cuyama;new_cuyama
+http://www.meetup.com/cities/us/ca/newhall/;Newhall;newhall
+http://www.meetup.com/cities/us/ca/newman/;Newman;newman
+http://www.meetup.com/cities/us/ca/newport_beach/;Newport Beach;newport_beach
+http://www.meetup.com/cities/us/ca/newport_coast/;Newport Coast;newport_coast
+http://www.meetup.com/cities/us/ca/nicasio/;Nicasio;nicasio
+http://www.meetup.com/cities/us/ca/nice/;Nice;nice
+http://www.meetup.com/cities/us/ca/nicolaus/;Nicolaus;nicolaus
+http://www.meetup.com/cities/us/ca/niland/;Niland;niland
+http://www.meetup.com/cities/us/ca/nipomo/;Nipomo;nipomo
+http://www.meetup.com/cities/us/ca/nipton/;Nipton;nipton
+http://www.meetup.com/cities/us/ca/norco/;Norco;norco
+http://www.meetup.com/cities/us/ca/norden/;Norden;norden
+http://www.meetup.com/cities/us/ca/north_fork/;North Fork;north_fork
+http://www.meetup.com/cities/us/ca/north_highlands/;North Highlands;north_highlands
+http://www.meetup.com/cities/us/ca/north_hills/;North Hills;north_hills
+http://www.meetup.com/cities/us/ca/north_hollywood/;North Hollywood;north_hollywood
+http://www.meetup.com/cities/us/ca/north_palm_springs/;North Palm Springs;north_palm_springs
+http://www.meetup.com/cities/us/ca/northridge/;Northridge;northridge
+http://www.meetup.com/cities/us/ca/north_san_juan/;North San Juan;north_san_juan
+http://www.meetup.com/cities/us/ca/norwalk/;Norwalk;norwalk
+http://www.meetup.com/cities/us/ca/novato/;Novato;novato
+http://www.meetup.com/cities/us/ca/nubieber/;Nubieber;nubieber
+http://www.meetup.com/cities/us/ca/nuevo/;Nuevo;nuevo
+http://www.meetup.com/cities/us/ca/oakdale/;Oakdale;oakdale
+http://www.meetup.com/cities/us/ca/oakhurst/;Oakhurst;oakhurst
+http://www.meetup.com/cities/us/ca/oakland/;Oakland;oakland
+http://www.meetup.com/cities/us/ca/oakley/;Oakley;oakley
+http://www.meetup.com/cities/us/ca/oak_park/;Oak Park;oak_park
+http://www.meetup.com/cities/us/ca/oak_run/;Oak Run;oak_run
+http://www.meetup.com/cities/us/ca/oak_view/;Oak View;oak_view
+http://www.meetup.com/cities/us/ca/oakville/;Oakville;oakville
+http://www.meetup.com/cities/us/ca/obrien/;Obrien;obrien
+http://www.meetup.com/cities/us/ca/occidental/;Occidental;occidental
+http://www.meetup.com/cities/us/ca/oceano/;Oceano;oceano
+http://www.meetup.com/cities/us/ca/oceanside/;Oceanside;oceanside
+http://www.meetup.com/cities/us/ca/ocotillo/;Ocotillo;ocotillo
+http://www.meetup.com/cities/us/ca/ojai/;Ojai;ojai
+http://www.meetup.com/cities/us/ca/olancha/;Olancha;olancha
+http://www.meetup.com/cities/us/ca/old_station/;Old Station;old_station
+http://www.meetup.com/cities/us/ca/olema/;Olema;olema
+http://www.meetup.com/cities/us/ca/olivehurst/;Olivehurst;olivehurst
+http://www.meetup.com/cities/us/ca/olympic_valley/;Olympic Valley;olympic_valley
+http://www.meetup.com/cities/us/ca/o_neals/;O Neals;o_neals
+http://www.meetup.com/cities/us/ca/ontario/;Ontario;ontario
+http://www.meetup.com/cities/us/ca/onyx/;Onyx;onyx
+http://www.meetup.com/cities/us/ca/orange/;Orange;orange
+http://www.meetup.com/cities/us/ca/orange_cove/;Orange Cove;orange_cove
+http://www.meetup.com/cities/us/ca/orangevale/;Orangevale;orangevale
+http://www.meetup.com/cities/us/ca/oregon_house/;Oregon House;oregon_house
+http://www.meetup.com/cities/us/ca/orick/;Orick;orick
+http://www.meetup.com/cities/us/ca/orinda/;Orinda;orinda
+http://www.meetup.com/cities/us/ca/orland/;Orland;orland
+http://www.meetup.com/cities/us/ca/orleans/;Orleans;orleans
+http://www.meetup.com/cities/us/ca/oro_grande/;Oro Grande;oro_grande
+http://www.meetup.com/cities/us/ca/orosi/;Orosi;orosi
+http://www.meetup.com/cities/us/ca/oroville/;Oroville;oroville
+http://www.meetup.com/cities/us/ca/oxnard/;Oxnard;oxnard
+http://www.meetup.com/cities/us/ca/pacifica/;Pacifica;pacifica
+http://www.meetup.com/cities/us/ca/pacific_grove/;Pacific Grove;pacific_grove
+http://www.meetup.com/cities/us/ca/pacific_palisades/;Pacific Palisades;pacific_palisades
+http://www.meetup.com/cities/us/ca/pacoima/;Pacoima;pacoima
+http://www.meetup.com/cities/us/ca/paicines/;Paicines;paicines
+http://www.meetup.com/cities/us/ca/pala/;Pala;pala
+http://www.meetup.com/cities/us/ca/palermo/;Palermo;palermo
+http://www.meetup.com/cities/us/ca/palmdale/;Palmdale;palmdale
+http://www.meetup.com/cities/us/ca/palm_desert/;Palm Desert;palm_desert
+http://www.meetup.com/cities/us/ca/palm_springs/;Palm Springs;palm_springs
+http://www.meetup.com/cities/us/ca/palo_alto/;Palo Alto;palo_alto
+http://www.meetup.com/cities/us/ca/palo_cedro/;Palo Cedro;palo_cedro
+http://www.meetup.com/cities/us/ca/palomar_mountain/;Palomar Mountain;palomar_mountain
+http://www.meetup.com/cities/us/ca/palos_verdes_peninsula/;Palos Verdes Peninsula;palos_verdes_peninsula
+http://www.meetup.com/cities/us/ca/palo_verde/;Palo Verde;palo_verde
+http://www.meetup.com/cities/us/ca/panorama_city/;Panorama City;panorama_city
+http://www.meetup.com/cities/us/ca/paradise/;Paradise;paradise
+http://www.meetup.com/cities/us/ca/paramount/;Paramount;paramount
+http://www.meetup.com/cities/us/ca/parker_dam/;Parker Dam;parker_dam
+http://www.meetup.com/cities/us/ca/parlier/;Parlier;parlier
+http://www.meetup.com/cities/us/ca/pasadena/;Pasadena;pasadena
+http://www.meetup.com/cities/us/ca/paskenta/;Paskenta;paskenta
+http://www.meetup.com/cities/us/ca/paso_robles/;Paso Robles;paso_robles
+http://www.meetup.com/cities/us/ca/patterson/;Patterson;patterson
+http://www.meetup.com/cities/us/ca/patton/;Patton;patton
+http://www.meetup.com/cities/us/ca/pauma_valley/;Pauma Valley;pauma_valley
+http://www.meetup.com/cities/us/ca/paynes_creek/;Paynes Creek;paynes_creek
+http://www.meetup.com/cities/us/ca/pearblossom/;Pearblossom;pearblossom
+http://www.meetup.com/cities/us/ca/pebble_beach/;Pebble Beach;pebble_beach
+http://www.meetup.com/cities/us/ca/penngrove/;Penngrove;penngrove
+http://www.meetup.com/cities/us/ca/penn_valley/;Penn Valley;penn_valley
+http://www.meetup.com/cities/us/ca/penryn/;Penryn;penryn
+http://www.meetup.com/cities/us/ca/perris/;Perris;perris
+http://www.meetup.com/cities/us/ca/pescadero/;Pescadero;pescadero
+http://www.meetup.com/cities/us/ca/petaluma/;Petaluma;petaluma
+http://www.meetup.com/cities/us/ca/petrolia/;Petrolia;petrolia
+http://www.meetup.com/cities/us/ca/phelan/;Phelan;phelan
+http://www.meetup.com/cities/us/ca/phillipsville/;Phillipsville;phillipsville
+http://www.meetup.com/cities/us/ca/philo/;Philo;philo
+http://www.meetup.com/cities/us/ca/pico_rivera/;Pico Rivera;pico_rivera
+http://www.meetup.com/cities/us/ca/piedmont/;Piedmont;piedmont
+http://www.meetup.com/cities/us/ca/piedra/;Piedra;piedra
+http://www.meetup.com/cities/us/ca/piercy/;Piercy;piercy
+http://www.meetup.com/cities/us/ca/pilot_hill/;Pilot Hill;pilot_hill
+http://www.meetup.com/cities/us/ca/pinecrest/;Pinecrest;pinecrest
+http://www.meetup.com/cities/us/ca/pine_grove/;Pine Grove;pine_grove
+http://www.meetup.com/cities/us/ca/pine_valley/;Pine Valley;pine_valley
+http://www.meetup.com/cities/us/ca/pinole/;Pinole;pinole
+http://www.meetup.com/cities/us/ca/pinon_hills/;Pinon Hills;pinon_hills
+http://www.meetup.com/cities/us/ca/pioneer/;Pioneer;pioneer
+http://www.meetup.com/cities/us/ca/pioneertown/;Pioneertown;pioneertown
+http://www.meetup.com/cities/us/ca/piru/;Piru;piru
+http://www.meetup.com/cities/us/ca/pismo_beach/;Pismo Beach;pismo_beach
+http://www.meetup.com/cities/us/ca/pittsburg/;Pittsburg;pittsburg
+http://www.meetup.com/cities/us/ca/pixley/;Pixley;pixley
+http://www.meetup.com/cities/us/ca/placentia/;Placentia;placentia
+http://www.meetup.com/cities/us/ca/placerville/;Placerville;placerville
+http://www.meetup.com/cities/us/ca/planada/;Planada;planada
+http://www.meetup.com/cities/us/ca/platina/;Platina;platina
+http://www.meetup.com/cities/us/ca/playa_del_rey/;Playa del Rey;playa_del_rey
+http://www.meetup.com/cities/us/ca/playa_vista/;Playa Vista;playa_vista
+http://www.meetup.com/cities/us/ca/pleasant_grove/;Pleasant Grove;pleasant_grove
+http://www.meetup.com/cities/us/ca/pleasant_hill/;Pleasant Hill;pleasant_hill
+http://www.meetup.com/cities/us/ca/pleasanton/;Pleasanton;pleasanton
+http://www.meetup.com/cities/us/ca/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/ca/point_arena/;Point Arena;point_arena
+http://www.meetup.com/cities/us/ca/point_mugu_nawc/;Point Mugu NAWC;point_mugu_nawc
+http://www.meetup.com/cities/us/ca/point_reyes_station/;Point Reyes Station;point_reyes_station
+http://www.meetup.com/cities/us/ca/pollock_pines/;Pollock Pines;pollock_pines
+http://www.meetup.com/cities/us/ca/pomona/;Pomona;pomona
+http://www.meetup.com/cities/us/ca/pope_valley/;Pope Valley;pope_valley
+http://www.meetup.com/cities/us/ca/port_costa/;Port Costa;port_costa
+http://www.meetup.com/cities/us/ca/porter_ranch/;Porter Ranch;porter_ranch
+http://www.meetup.com/cities/us/ca/porterville/;Porterville;porterville
+http://www.meetup.com/cities/us/ca/port_hueneme/;Port Hueneme;port_hueneme
+http://www.meetup.com/cities/us/ca/port_hueneme_cbc_base/;Port Hueneme CBC Base;port_hueneme_cbc_base
+http://www.meetup.com/cities/us/ca/portola/;Portola;portola
+http://www.meetup.com/cities/us/ca/portola_valley/;Portola Valley;portola_valley
+http://www.meetup.com/cities/us/ca/posey/;Posey;posey
+http://www.meetup.com/cities/us/ca/potrero/;Potrero;potrero
+http://www.meetup.com/cities/us/ca/potter_valley/;Potter Valley;potter_valley
+http://www.meetup.com/cities/us/ca/poway/;Poway;poway
+http://www.meetup.com/cities/us/ca/prather/;Prather;prather
+http://www.meetup.com/cities/us/ca/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/ca/proberta/;Proberta;proberta
+http://www.meetup.com/cities/us/ca/quail_valley/;Quail Valley;quail_valley
+http://www.meetup.com/cities/us/ca/quincy/;Quincy;quincy
+http://www.meetup.com/cities/us/ca/rackerby/;Rackerby;rackerby
+http://www.meetup.com/cities/us/ca/rail_road_flat/;Rail Road Flat;rail_road_flat
+http://www.meetup.com/cities/us/ca/raisin_city/;Raisin City;raisin_city
+http://www.meetup.com/cities/us/ca/ramona/;Ramona;ramona
+http://www.meetup.com/cities/us/ca/ranchita/;Ranchita;ranchita
+http://www.meetup.com/cities/us/ca/rancho_cordova/;Rancho Cordova;rancho_cordova
+http://www.meetup.com/cities/us/ca/rancho_cucamonga/;Rancho Cucamonga;rancho_cucamonga
+http://www.meetup.com/cities/us/ca/rancho_mirage/;Rancho Mirage;rancho_mirage
+http://www.meetup.com/cities/us/ca/rancho_palos_verdes/;Rancho Palos Verdes;rancho_palos_verdes
+http://www.meetup.com/cities/us/ca/rancho_santa_fe/;Rancho Santa Fe;rancho_santa_fe
+http://www.meetup.com/cities/us/ca/rancho_santa_margarita/;Rancho Santa Margarita;rancho_santa_margarita
+http://www.meetup.com/cities/us/ca/randsburg/;Randsburg;randsburg
+http://www.meetup.com/cities/us/ca/ravendale/;Ravendale;ravendale
+http://www.meetup.com/cities/us/ca/raymond/;Raymond;raymond
+http://www.meetup.com/cities/us/ca/red_bluff/;Red Bluff;red_bluff
+http://www.meetup.com/cities/us/ca/redcrest/;Redcrest;redcrest
+http://www.meetup.com/cities/us/ca/redding/;Redding;redding
+http://www.meetup.com/cities/us/ca/redlands/;Redlands;redlands
+http://www.meetup.com/cities/us/ca/red_mountain/;Red Mountain;red_mountain
+http://www.meetup.com/cities/us/ca/redondo_beach/;Redondo Beach;redondo_beach
+http://www.meetup.com/cities/us/ca/redway/;Redway;redway
+http://www.meetup.com/cities/us/ca/redwood_city/;Redwood City;redwood_city
+http://www.meetup.com/cities/us/ca/redwood_estates/;Redwood Estates;redwood_estates
+http://www.meetup.com/cities/us/ca/redwood_valley/;Redwood Valley;redwood_valley
+http://www.meetup.com/cities/us/ca/reedley/;Reedley;reedley
+http://www.meetup.com/cities/us/ca/represa/;Represa;represa
+http://www.meetup.com/cities/us/ca/rescue/;Rescue;rescue
+http://www.meetup.com/cities/us/ca/reseda/;Reseda;reseda
+http://www.meetup.com/cities/us/ca/rialto/;Rialto;rialto
+http://www.meetup.com/cities/us/ca/richgrove/;Richgrove;richgrove
+http://www.meetup.com/cities/us/ca/richmond/;Richmond;richmond
+http://www.meetup.com/cities/us/ca/richvale/;Richvale;richvale
+http://www.meetup.com/cities/us/ca/ridgecrest/;Ridgecrest;ridgecrest
+http://www.meetup.com/cities/us/ca/rimforest/;Rimforest;rimforest
+http://www.meetup.com/cities/us/ca/rio_dell/;Rio Dell;rio_dell
+http://www.meetup.com/cities/us/ca/rio_linda/;Rio Linda;rio_linda
+http://www.meetup.com/cities/us/ca/rio_nido/;Rio Nido;rio_nido
+http://www.meetup.com/cities/us/ca/rio_oso/;Rio Oso;rio_oso
+http://www.meetup.com/cities/us/ca/rio_vista/;Rio Vista;rio_vista
+http://www.meetup.com/cities/us/ca/ripon/;Ripon;ripon
+http://www.meetup.com/cities/us/ca/riverbank/;Riverbank;riverbank
+http://www.meetup.com/cities/us/ca/riverdale/;Riverdale;riverdale
+http://www.meetup.com/cities/us/ca/river_pines/;River Pines;river_pines
+http://www.meetup.com/cities/us/ca/riverside/;Riverside;riverside
+http://www.meetup.com/cities/us/ca/robbins/;Robbins;robbins
+http://www.meetup.com/cities/us/ca/rocklin/;Rocklin;rocklin
+http://www.meetup.com/cities/us/ca/rodeo/;Rodeo;rodeo
+http://www.meetup.com/cities/us/ca/rohnert_park/;Rohnert Park;rohnert_park
+http://www.meetup.com/cities/us/ca/rosamond/;Rosamond;rosamond
+http://www.meetup.com/cities/us/ca/rosemead/;Rosemead;rosemead
+http://www.meetup.com/cities/us/ca/roseville/;Roseville;roseville
+http://www.meetup.com/cities/us/ca/ross/;Ross;ross
+http://www.meetup.com/cities/us/ca/rough_and_ready/;Rough and Ready;rough_and_ready
+http://www.meetup.com/cities/us/ca/round_mountain/;Round Mountain;round_mountain
+http://www.meetup.com/cities/us/ca/rowland_heights/;Rowland Heights;rowland_heights
+http://www.meetup.com/cities/us/ca/rumsey/;Rumsey;rumsey
+http://www.meetup.com/cities/us/ca/running_springs/;Running Springs;running_springs
+http://www.meetup.com/cities/us/ca/rutherford/;Rutherford;rutherford
+http://www.meetup.com/cities/us/ca/ryde/;Ryde;ryde
+http://www.meetup.com/cities/us/ca/sacramento/;Sacramento;sacramento
+http://www.meetup.com/cities/us/ca/saint_helena/;Saint Helena;saint_helena
+http://www.meetup.com/cities/us/ca/salida/;Salida;salida
+http://www.meetup.com/cities/us/ca/salinas/;Salinas;salinas
+http://www.meetup.com/cities/us/ca/salton_city/;Salton City;salton_city
+http://www.meetup.com/cities/us/ca/salyer/;Salyer;salyer
+http://www.meetup.com/cities/us/ca/samoa/;Samoa;samoa
+http://www.meetup.com/cities/us/ca/san_andreas/;San Andreas;san_andreas
+http://www.meetup.com/cities/us/ca/san_anselmo/;San Anselmo;san_anselmo
+http://www.meetup.com/cities/us/ca/san_ardo/;San Ardo;san_ardo
+http://www.meetup.com/cities/us/ca/san_bernardino/;San Bernardino;san_bernardino
+http://www.meetup.com/cities/us/ca/san_bruno/;San Bruno;san_bruno
+http://www.meetup.com/cities/us/ca/san_carlos/;San Carlos;san_carlos
+http://www.meetup.com/cities/us/ca/san_clemente/;San Clemente;san_clemente
+http://www.meetup.com/cities/us/ca/san_diego/;San Diego;san_diego
+http://www.meetup.com/cities/us/ca/san_dimas/;San Dimas;san_dimas
+http://www.meetup.com/cities/us/ca/san_fernando/;San Fernando;san_fernando
+http://www.meetup.com/cities/us/ca/san_francisco/;San Francisco;san_francisco
+http://www.meetup.com/cities/us/ca/san_gabriel/;San Gabriel;san_gabriel
+http://www.meetup.com/cities/us/ca/sanger/;Sanger;sanger
+http://www.meetup.com/cities/us/ca/san_geronimo/;San Geronimo;san_geronimo
+http://www.meetup.com/cities/us/ca/san_gregorio/;San Gregorio;san_gregorio
+http://www.meetup.com/cities/us/ca/san_jacinto/;San Jacinto;san_jacinto
+http://www.meetup.com/cities/us/ca/san_joaquin/;San Joaquin;san_joaquin
+http://www.meetup.com/cities/us/ca/san_jose/;San Jose;san_jose
+http://www.meetup.com/cities/us/ca/san_juan_bautista/;San Juan Bautista;san_juan_bautista
+http://www.meetup.com/cities/us/ca/san_juan_capistrano/;San Juan Capistrano;san_juan_capistrano
+http://www.meetup.com/cities/us/ca/san_leandro/;San Leandro;san_leandro
+http://www.meetup.com/cities/us/ca/san_lorenzo/;San Lorenzo;san_lorenzo
+http://www.meetup.com/cities/us/ca/san_lucas/;San Lucas;san_lucas
+http://www.meetup.com/cities/us/ca/san_luis_obispo/;San Luis Obispo;san_luis_obispo
+http://www.meetup.com/cities/us/ca/san_luis_rey/;San Luis Rey;san_luis_rey
+http://www.meetup.com/cities/us/ca/san_marcos/;San Marcos;san_marcos
+http://www.meetup.com/cities/us/ca/san_marino/;San Marino;san_marino
+http://www.meetup.com/cities/us/ca/san_martin/;San Martin;san_martin
+http://www.meetup.com/cities/us/ca/san_mateo/;San Mateo;san_mateo
+http://www.meetup.com/cities/us/ca/san_miguel/;San Miguel;san_miguel
+http://www.meetup.com/cities/us/ca/san_pablo/;San Pablo;san_pablo
+http://www.meetup.com/cities/us/ca/san_pedro/;San Pedro;san_pedro
+http://www.meetup.com/cities/us/ca/san_quentin/;San Quentin;san_quentin
+http://www.meetup.com/cities/us/ca/san_rafael/;San Rafael;san_rafael
+http://www.meetup.com/cities/us/ca/san_ramon/;San Ramon;san_ramon
+http://www.meetup.com/cities/us/ca/san_simeon/;San Simeon;san_simeon
+http://www.meetup.com/cities/us/ca/santa_ana/;Santa Ana;santa_ana
+http://www.meetup.com/cities/us/ca/santa_barbara/;Santa Barbara;santa_barbara
+http://www.meetup.com/cities/us/ca/santa_clara/;Santa Clara;santa_clara
+http://www.meetup.com/cities/us/ca/santa_clarita/;Santa Clarita;santa_clarita
+http://www.meetup.com/cities/us/ca/santa_cruz/;Santa Cruz;santa_cruz
+http://www.meetup.com/cities/us/ca/santa_fe_springs/;Santa Fe Springs;santa_fe_springs
+http://www.meetup.com/cities/us/ca/santa_margarita/;Santa Margarita;santa_margarita
+http://www.meetup.com/cities/us/ca/santa_maria/;Santa Maria;santa_maria
+http://www.meetup.com/cities/us/ca/santa_monica/;Santa Monica;santa_monica
+http://www.meetup.com/cities/us/ca/santa_paula/;Santa Paula;santa_paula
+http://www.meetup.com/cities/us/ca/santa_rita_park/;Santa Rita Park;santa_rita_park
+http://www.meetup.com/cities/us/ca/santa_rosa/;Santa Rosa;santa_rosa
+http://www.meetup.com/cities/us/ca/santa_ynez/;Santa Ynez;santa_ynez
+http://www.meetup.com/cities/us/ca/santa_ysabel/;Santa Ysabel;santa_ysabel
+http://www.meetup.com/cities/us/ca/santee/;Santee;santee
+http://www.meetup.com/cities/us/ca/san_ysidro/;San Ysidro;san_ysidro
+http://www.meetup.com/cities/us/ca/saratoga/;Saratoga;saratoga
+http://www.meetup.com/cities/us/ca/sausalito/;Sausalito;sausalito
+http://www.meetup.com/cities/us/ca/scotia/;Scotia;scotia
+http://www.meetup.com/cities/us/ca/scott_bar/;Scott Bar;scott_bar
+http://www.meetup.com/cities/us/ca/scotts_valley/;Scotts Valley;scotts_valley
+http://www.meetup.com/cities/us/ca/seal_beach/;Seal Beach;seal_beach
+http://www.meetup.com/cities/us/ca/seaside/;Seaside;seaside
+http://www.meetup.com/cities/us/ca/sebastopol/;Sebastopol;sebastopol
+http://www.meetup.com/cities/us/ca/seeley/;Seeley;seeley
+http://www.meetup.com/cities/us/ca/seiad_valley/;Seiad Valley;seiad_valley
+http://www.meetup.com/cities/us/ca/selma/;Selma;selma
+http://www.meetup.com/cities/us/ca/sequoia_national_park/;Sequoia National Park;sequoia_national_park
+http://www.meetup.com/cities/us/ca/shafter/;Shafter;shafter
+http://www.meetup.com/cities/us/ca/shandon/;Shandon;shandon
+http://www.meetup.com/cities/us/ca/shasta/;Shasta;shasta
+http://www.meetup.com/cities/us/ca/shasta_lake/;Shasta Lake;shasta_lake
+http://www.meetup.com/cities/us/ca/shaver_lake/;Shaver Lake;shaver_lake
+http://www.meetup.com/cities/us/ca/sheep_ranch/;Sheep Ranch;sheep_ranch
+http://www.meetup.com/cities/us/ca/sheridan/;Sheridan;sheridan
+http://www.meetup.com/cities/us/ca/sherman_oaks/;Sherman Oaks;sherman_oaks
+http://www.meetup.com/cities/us/ca/shingle_springs/;Shingle Springs;shingle_springs
+http://www.meetup.com/cities/us/ca/shingletown/;Shingletown;shingletown
+http://www.meetup.com/cities/us/ca/shoshone/;Shoshone;shoshone
+http://www.meetup.com/cities/us/ca/sierra_city/;Sierra City;sierra_city
+http://www.meetup.com/cities/us/ca/sierra_madre/;Sierra Madre;sierra_madre
+http://www.meetup.com/cities/us/ca/sierraville/;Sierraville;sierraville
+http://www.meetup.com/cities/us/ca/signal_hill/;Signal Hill;signal_hill
+http://www.meetup.com/cities/us/ca/silverado/;Silverado;silverado
+http://www.meetup.com/cities/us/ca/simi_valley/;Simi Valley;simi_valley
+http://www.meetup.com/cities/us/ca/skyforest/;Skyforest;skyforest
+http://www.meetup.com/cities/us/ca/sloughhouse/;Sloughhouse;sloughhouse
+http://www.meetup.com/cities/us/ca/smartville/;Smartville;smartville
+http://www.meetup.com/cities/us/ca/smith_river/;Smith River;smith_river
+http://www.meetup.com/cities/us/ca/snelling/;Snelling;snelling
+http://www.meetup.com/cities/us/ca/soda_springs/;Soda Springs;soda_springs
+http://www.meetup.com/cities/us/ca/solana_beach/;Solana Beach;solana_beach
+http://www.meetup.com/cities/us/ca/soledad/;Soledad;soledad
+http://www.meetup.com/cities/us/ca/solvang/;Solvang;solvang
+http://www.meetup.com/cities/us/ca/somerset/;Somerset;somerset
+http://www.meetup.com/cities/us/ca/somes_bar/;Somes Bar;somes_bar
+http://www.meetup.com/cities/us/ca/somis/;Somis;somis
+http://www.meetup.com/cities/us/ca/sonoma/;Sonoma;sonoma
+http://www.meetup.com/cities/us/ca/sonora/;Sonora;sonora
+http://www.meetup.com/cities/us/ca/soquel/;Soquel;soquel
+http://www.meetup.com/cities/us/ca/soulsbyville/;Soulsbyville;soulsbyville
+http://www.meetup.com/cities/us/ca/south_dos_palos/;South Dos Palos;south_dos_palos
+http://www.meetup.com/cities/us/ca/south_el_monte/;South El Monte;south_el_monte
+http://www.meetup.com/cities/us/ca/south_gate/;South Gate;south_gate
+http://www.meetup.com/cities/us/ca/south_lake_tahoe/;South Lake Tahoe;south_lake_tahoe
+http://www.meetup.com/cities/us/ca/south_pasadena/;South Pasadena;south_pasadena
+http://www.meetup.com/cities/us/ca/south_san_francisco/;South San Francisco;south_san_francisco
+http://www.meetup.com/cities/us/ca/spreckels/;Spreckels;spreckels
+http://www.meetup.com/cities/us/ca/spring_valley/;Spring Valley;spring_valley
+http://www.meetup.com/cities/us/ca/springville/;Springville;springville
+http://www.meetup.com/cities/us/ca/squaw_valley/;Squaw Valley;squaw_valley
+http://www.meetup.com/cities/us/ca/standard/;Standard;standard
+http://www.meetup.com/cities/us/ca/standish/;Standish;standish
+http://www.meetup.com/cities/us/ca/stanford/;Stanford;stanford
+http://www.meetup.com/cities/us/ca/stanton/;Stanton;stanton
+http://www.meetup.com/cities/us/ca/stevenson_ranch/;Stevenson Ranch;stevenson_ranch
+http://www.meetup.com/cities/us/ca/stevinson/;Stevinson;stevinson
+http://www.meetup.com/cities/us/ca/stewarts_point/;Stewarts Point;stewarts_point
+http://www.meetup.com/cities/us/ca/stinson_beach/;Stinson Beach;stinson_beach
+http://www.meetup.com/cities/us/ca/stirling_city/;Stirling City;stirling_city
+http://www.meetup.com/cities/us/ca/stockton/;Stockton;stockton
+http://www.meetup.com/cities/us/ca/stonyford/;Stonyford;stonyford
+http://www.meetup.com/cities/us/ca/storrie/;Storrie;storrie
+http://www.meetup.com/cities/us/ca/stratford/;Stratford;stratford
+http://www.meetup.com/cities/us/ca/strathmore/;Strathmore;strathmore
+http://www.meetup.com/cities/us/ca/strawberry/;Strawberry;strawberry
+http://www.meetup.com/cities/us/ca/strawberry_valley/;Strawberry Valley;strawberry_valley
+http://www.meetup.com/cities/us/ca/studio_city/;Studio City;studio_city
+http://www.meetup.com/cities/us/ca/sugarloaf/;Sugarloaf;sugarloaf
+http://www.meetup.com/cities/us/ca/suisun_city/;Suisun City;suisun_city
+http://www.meetup.com/cities/us/ca/sultana/;Sultana;sultana
+http://www.meetup.com/cities/us/ca/summerland/;Summerland;summerland
+http://www.meetup.com/cities/us/ca/sun_city/;Sun City;sun_city
+http://www.meetup.com/cities/us/ca/sunland/;Sunland;sunland
+http://www.meetup.com/cities/us/ca/sunnyvale/;Sunnyvale;sunnyvale
+http://www.meetup.com/cities/us/ca/sunol/;Sunol;sunol
+http://www.meetup.com/cities/us/ca/sunset_beach/;Sunset Beach;sunset_beach
+http://www.meetup.com/cities/us/ca/sun_valley/;Sun Valley;sun_valley
+http://www.meetup.com/cities/us/ca/surfside/;Surfside;surfside
+http://www.meetup.com/cities/us/ca/susanville/;Susanville;susanville
+http://www.meetup.com/cities/us/ca/sutter/;Sutter;sutter
+http://www.meetup.com/cities/us/ca/sutter_creek/;Sutter Creek;sutter_creek
+http://www.meetup.com/cities/us/ca/sylmar/;Sylmar;sylmar
+http://www.meetup.com/cities/us/ca/taft/;Taft;taft
+http://www.meetup.com/cities/us/ca/tahoe_city/;Tahoe City;tahoe_city
+http://www.meetup.com/cities/us/ca/tahoe_vista/;Tahoe Vista;tahoe_vista
+http://www.meetup.com/cities/us/ca/tahoma/;Tahoma;tahoma
+http://www.meetup.com/cities/us/ca/talmage/;Talmage;talmage
+http://www.meetup.com/cities/us/ca/tarzana/;Tarzana;tarzana
+http://www.meetup.com/cities/us/ca/taylorsville/;Taylorsville;taylorsville
+http://www.meetup.com/cities/us/ca/tecate/;Tecate;tecate
+http://www.meetup.com/cities/us/ca/tecopa/;Tecopa;tecopa
+http://www.meetup.com/cities/us/ca/tehachapi/;Tehachapi;tehachapi
+http://www.meetup.com/cities/us/ca/tehama/;Tehama;tehama
+http://www.meetup.com/cities/us/ca/temecula/;Temecula;temecula
+http://www.meetup.com/cities/us/ca/temple_city/;Temple City;temple_city
+http://www.meetup.com/cities/us/ca/templeton/;Templeton;templeton
+http://www.meetup.com/cities/us/ca/termo/;Termo;termo
+http://www.meetup.com/cities/us/ca/terra_bella/;Terra Bella;terra_bella
+http://www.meetup.com/cities/us/ca/thermal/;Thermal;thermal
+http://www.meetup.com/cities/us/ca/the_sea_ranch/;The Sea Ranch;the_sea_ranch
+http://www.meetup.com/cities/us/ca/thornton/;Thornton;thornton
+http://www.meetup.com/cities/us/ca/thousand_oaks/;Thousand Oaks;thousand_oaks
+http://www.meetup.com/cities/us/ca/thousand_palms/;Thousand Palms;thousand_palms
+http://www.meetup.com/cities/us/ca/three_rivers/;Three Rivers;three_rivers
+http://www.meetup.com/cities/us/ca/tipton/;Tipton;tipton
+http://www.meetup.com/cities/us/ca/tollhouse/;Tollhouse;tollhouse
+http://www.meetup.com/cities/us/ca/toluca_lake/;Toluca Lake;toluca_lake
+http://www.meetup.com/cities/us/ca/tomales/;Tomales;tomales
+http://www.meetup.com/cities/us/ca/topanga/;Topanga;topanga
+http://www.meetup.com/cities/us/ca/topaz/;Topaz;topaz
+http://www.meetup.com/cities/us/ca/torrance/;Torrance;torrance
+http://www.meetup.com/cities/us/ca/trabuco_canyon/;Trabuco Canyon;trabuco_canyon
+http://www.meetup.com/cities/us/ca/tracy/;Tracy;tracy
+http://www.meetup.com/cities/us/ca/tranquillity/;Tranquillity;tranquillity
+http://www.meetup.com/cities/us/ca/traver/;Traver;traver
+http://www.meetup.com/cities/us/ca/travis_afb/;Travis AFB;travis_afb
+http://www.meetup.com/cities/us/ca/tres_pinos/;Tres Pinos;tres_pinos
+http://www.meetup.com/cities/us/ca/trinidad/;Trinidad;trinidad
+http://www.meetup.com/cities/us/ca/trinity_center/;Trinity Center;trinity_center
+http://www.meetup.com/cities/us/ca/trona/;Trona;trona
+http://www.meetup.com/cities/us/ca/truckee/;Truckee;truckee
+http://www.meetup.com/cities/us/ca/tujunga/;Tujunga;tujunga
+http://www.meetup.com/cities/us/ca/tulare/;Tulare;tulare
+http://www.meetup.com/cities/us/ca/tulelake/;Tulelake;tulelake
+http://www.meetup.com/cities/us/ca/tuolumne/;Tuolumne;tuolumne
+http://www.meetup.com/cities/us/ca/tupman/;Tupman;tupman
+http://www.meetup.com/cities/us/ca/turlock/;Turlock;turlock
+http://www.meetup.com/cities/us/ca/tustin/;Tustin;tustin
+http://www.meetup.com/cities/us/ca/twain/;Twain;twain
+http://www.meetup.com/cities/us/ca/twain_harte/;Twain Harte;twain_harte
+http://www.meetup.com/cities/us/ca/twentynine_palms/;Twentynine Palms;twentynine_palms
+http://www.meetup.com/cities/us/ca/twin_bridges/;Twin Bridges;twin_bridges
+http://www.meetup.com/cities/us/ca/twin_peaks/;Twin Peaks;twin_peaks
+http://www.meetup.com/cities/us/ca/ukiah/;Ukiah;ukiah
+http://www.meetup.com/cities/us/ca/union_city/;Union City;union_city
+http://www.meetup.com/cities/us/ca/universal_city/;Universal City;universal_city
+http://www.meetup.com/cities/us/ca/upland/;Upland;upland
+http://www.meetup.com/cities/us/ca/upper_lake/;Upper Lake;upper_lake
+http://www.meetup.com/cities/us/ca/vacaville/;Vacaville;vacaville
+http://www.meetup.com/cities/us/ca/valencia/;Valencia;valencia
+http://www.meetup.com/cities/us/ca/vallecito/;Vallecito;vallecito
+http://www.meetup.com/cities/us/ca/vallejo/;Vallejo;vallejo
+http://www.meetup.com/cities/us/ca/valley_center/;Valley Center;valley_center
+http://www.meetup.com/cities/us/ca/valley_ford/;Valley Ford;valley_ford
+http://www.meetup.com/cities/us/ca/valley_springs/;Valley Springs;valley_springs
+http://www.meetup.com/cities/us/ca/valley_village/;Valley Village;valley_village
+http://www.meetup.com/cities/us/ca/valyermo/;Valyermo;valyermo
+http://www.meetup.com/cities/us/ca/van_nuys/;Van Nuys;van_nuys
+http://www.meetup.com/cities/us/ca/venice/;Venice;venice
+http://www.meetup.com/cities/us/ca/ventura/;Ventura;ventura
+http://www.meetup.com/cities/us/ca/verdugo_city/;Verdugo City;verdugo_city
+http://www.meetup.com/cities/us/ca/vernalis/;Vernalis;vernalis
+http://www.meetup.com/cities/us/ca/victor/;Victor;victor
+http://www.meetup.com/cities/us/ca/victorville/;Victorville;victorville
+http://www.meetup.com/cities/us/ca/vidal/;Vidal;vidal
+http://www.meetup.com/cities/us/ca/villa_grande/;Villa Grande;villa_grande
+http://www.meetup.com/cities/us/ca/villa_park/;Villa Park;villa_park
+http://www.meetup.com/cities/us/ca/vina/;Vina;vina
+http://www.meetup.com/cities/us/ca/vineburg/;Vineburg;vineburg
+http://www.meetup.com/cities/us/ca/vinton/;Vinton;vinton
+http://www.meetup.com/cities/us/ca/visalia/;Visalia;visalia
+http://www.meetup.com/cities/us/ca/vista/;Vista;vista
+http://www.meetup.com/cities/us/ca/volcano/;Volcano;volcano
+http://www.meetup.com/cities/us/ca/wallace/;Wallace;wallace
+http://www.meetup.com/cities/us/ca/walnut/;Walnut;walnut
+http://www.meetup.com/cities/us/ca/walnut_creek/;Walnut Creek;walnut_creek
+http://www.meetup.com/cities/us/ca/walnut_grove/;Walnut Grove;walnut_grove
+http://www.meetup.com/cities/us/ca/warner_springs/;Warner Springs;warner_springs
+http://www.meetup.com/cities/us/ca/wasco/;Wasco;wasco
+http://www.meetup.com/cities/us/ca/washington/;Washington;washington
+http://www.meetup.com/cities/us/ca/waterford/;Waterford;waterford
+http://www.meetup.com/cities/us/ca/watsonville/;Watsonville;watsonville
+http://www.meetup.com/cities/us/ca/waukena/;Waukena;waukena
+http://www.meetup.com/cities/us/ca/weaverville/;Weaverville;weaverville
+http://www.meetup.com/cities/us/ca/weed/;Weed;weed
+http://www.meetup.com/cities/us/ca/weimar/;Weimar;weimar
+http://www.meetup.com/cities/us/ca/weldon/;Weldon;weldon
+http://www.meetup.com/cities/us/ca/wendel/;Wendel;wendel
+http://www.meetup.com/cities/us/ca/weott/;Weott;weott
+http://www.meetup.com/cities/us/ca/west_covina/;West Covina;west_covina
+http://www.meetup.com/cities/us/ca/west_hills/;West Hills;west_hills
+http://www.meetup.com/cities/us/ca/west_hollywood/;West Hollywood;west_hollywood
+http://www.meetup.com/cities/us/ca/westlake_village/;Westlake Village;westlake_village
+http://www.meetup.com/cities/us/ca/westley/;Westley;westley
+http://www.meetup.com/cities/us/ca/westminster/;Westminster;westminster
+http://www.meetup.com/cities/us/ca/westmorland/;Westmorland;westmorland
+http://www.meetup.com/cities/us/ca/west_point/;West Point;west_point
+http://www.meetup.com/cities/us/ca/westport/;Westport;westport
+http://www.meetup.com/cities/us/ca/west_sacramento/;West Sacramento;west_sacramento
+http://www.meetup.com/cities/us/ca/westwood/;Westwood;westwood
+http://www.meetup.com/cities/us/ca/wheatland/;Wheatland;wheatland
+http://www.meetup.com/cities/us/ca/whiskeytown/;Whiskeytown;whiskeytown
+http://www.meetup.com/cities/us/ca/whitethorn/;Whitethorn;whitethorn
+http://www.meetup.com/cities/us/ca/whitewater/;Whitewater;whitewater
+http://www.meetup.com/cities/us/ca/whitmore/;Whitmore;whitmore
+http://www.meetup.com/cities/us/ca/whittier/;Whittier;whittier
+http://www.meetup.com/cities/us/ca/wildomar/;Wildomar;wildomar
+http://www.meetup.com/cities/us/ca/williams/;Williams;williams
+http://www.meetup.com/cities/us/ca/willits/;Willits;willits
+http://www.meetup.com/cities/us/ca/willow_creek/;Willow Creek;willow_creek
+http://www.meetup.com/cities/us/ca/willows/;Willows;willows
+http://www.meetup.com/cities/us/ca/wilmington/;Wilmington;wilmington
+http://www.meetup.com/cities/us/ca/wilseyville/;Wilseyville;wilseyville
+http://www.meetup.com/cities/us/ca/wilton/;Wilton;wilton
+http://www.meetup.com/cities/us/ca/winchester/;Winchester;winchester
+http://www.meetup.com/cities/us/ca/windsor/;Windsor;windsor
+http://www.meetup.com/cities/us/ca/winnetka/;Winnetka;winnetka
+http://www.meetup.com/cities/us/ca/winterhaven/;Winterhaven;winterhaven
+http://www.meetup.com/cities/us/ca/winters/;Winters;winters
+http://www.meetup.com/cities/us/ca/winton/;Winton;winton
+http://www.meetup.com/cities/us/ca/wishon/;Wishon;wishon
+http://www.meetup.com/cities/us/ca/witter_springs/;Witter Springs;witter_springs
+http://www.meetup.com/cities/us/ca/wofford_heights/;Wofford Heights;wofford_heights
+http://www.meetup.com/cities/us/ca/woodacre/;Woodacre;woodacre
+http://www.meetup.com/cities/us/ca/woodbridge/;Woodbridge;woodbridge
+http://www.meetup.com/cities/us/ca/woodlake/;Woodlake;woodlake
+http://www.meetup.com/cities/us/ca/woodland/;Woodland;woodland
+http://www.meetup.com/cities/us/ca/woodland_hills/;Woodland Hills;woodland_hills
+http://www.meetup.com/cities/us/ca/woody/;Woody;woody
+http://www.meetup.com/cities/us/ca/wrightwood/;Wrightwood;wrightwood
+http://www.meetup.com/cities/us/ca/yermo/;Yermo;yermo
+http://www.meetup.com/cities/us/ca/yettem/;Yettem;yettem
+http://www.meetup.com/cities/us/ca/yolo/;Yolo;yolo
+http://www.meetup.com/cities/us/ca/yorba_linda/;Yorba Linda;yorba_linda
+http://www.meetup.com/cities/us/ca/yorkville/;Yorkville;yorkville
+http://www.meetup.com/cities/us/ca/yosemite_national_park/;Yosemite National Park;yosemite_national_park
+http://www.meetup.com/cities/us/ca/yountville/;Yountville;yountville
+http://www.meetup.com/cities/us/ca/yreka/;Yreka;yreka
+http://www.meetup.com/cities/us/ca/yuba_city/;Yuba City;yuba_city
+http://www.meetup.com/cities/us/ca/yucaipa/;Yucaipa;yucaipa
+http://www.meetup.com/cities/us/ca/yucca_valley/;Yucca Valley;yucca_valley
+http://www.meetup.com/cities/us/ca/zamora/;Zamora;zamora
+http://www.meetup.com/cities/us/ca/zenia/;Zenia;zenia
+http://www.meetup.com/cities/us/ca/acampo/;Acampo;acampo
+http://www.meetup.com/cities/us/ca/acton/;Acton;acton
+http://www.meetup.com/cities/us/ca/adelanto/;Adelanto;adelanto
+http://www.meetup.com/cities/us/ca/adin/;Adin;adin
+http://www.meetup.com/cities/us/ca/agoura_hills/;Agoura Hills;agoura_hills
+http://www.meetup.com/cities/us/ca/aguanga/;Aguanga;aguanga
+http://www.meetup.com/cities/us/ca/ahwahnee/;Ahwahnee;ahwahnee
+http://www.meetup.com/cities/us/ca/alameda/;Alameda;alameda
+http://www.meetup.com/cities/us/ca/alamo/;Alamo;alamo
+http://www.meetup.com/cities/us/ca/albany/;Albany;albany
+http://www.meetup.com/cities/us/ca/albion/;Albion;albion
+http://www.meetup.com/cities/us/ca/alderpoint/;Alderpoint;alderpoint
+http://www.meetup.com/cities/us/ca/alhambra/;Alhambra;alhambra
+http://www.meetup.com/cities/us/ca/aliso_viejo/;Aliso Viejo;aliso_viejo
+http://www.meetup.com/cities/us/ca/alleghany/;Alleghany;alleghany
+http://www.meetup.com/cities/us/ca/alpaugh/;Alpaugh;alpaugh
+http://www.meetup.com/cities/us/ca/alpine/;Alpine;alpine
+http://www.meetup.com/cities/us/ca/alta/;Alta;alta
+http://www.meetup.com/cities/us/ca/altadena/;Altadena;altadena
+http://www.meetup.com/cities/us/ca/altaville/;Altaville;altaville
+http://www.meetup.com/cities/us/ca/alturas/;Alturas;alturas
+http://www.meetup.com/cities/us/ca/alviso/;Alviso;alviso
+http://www.meetup.com/cities/us/ca/amador_city/;Amador City;amador_city
+http://www.meetup.com/cities/us/ca/amboy/;Amboy;amboy
+http://www.meetup.com/cities/us/ca/american_canyon/;American Canyon;american_canyon
+http://www.meetup.com/cities/us/ca/anaheim/;Anaheim;anaheim
+http://www.meetup.com/cities/us/ca/anderson/;Anderson;anderson
+http://www.meetup.com/cities/us/ca/angels_camp/;Angels Camp;angels_camp
+http://www.meetup.com/cities/us/ca/angelus_oaks/;Angelus Oaks;angelus_oaks
+http://www.meetup.com/cities/us/ca/angwin/;Angwin;angwin
+http://www.meetup.com/cities/us/ca/annapolis/;Annapolis;annapolis
+http://www.meetup.com/cities/us/ca/antelope/;Antelope;antelope
+http://www.meetup.com/cities/us/ca/antioch/;Antioch;antioch
+http://www.meetup.com/cities/us/ca/anza/;Anza;anza
+http://www.meetup.com/cities/us/ca/applegate/;Applegate;applegate
+http://www.meetup.com/cities/us/ca/apple_valley/;Apple Valley;apple_valley
+http://www.meetup.com/cities/us/ca/aptos/;Aptos;aptos
+http://www.meetup.com/cities/us/ca/arbuckle/;Arbuckle;arbuckle
+http://www.meetup.com/cities/us/ca/arcadia/;Arcadia;arcadia
+http://www.meetup.com/cities/us/ca/arcata/;Arcata;arcata
+http://www.meetup.com/cities/us/ca/armona/;Armona;armona
+http://www.meetup.com/cities/us/ca/arnold/;Arnold;arnold
+http://www.meetup.com/cities/us/ca/aromas/;Aromas;aromas
+http://www.meetup.com/cities/us/ca/arroyo_grande/;Arroyo Grande;arroyo_grande
+http://www.meetup.com/cities/us/ca/artesia/;Artesia;artesia
+http://www.meetup.com/cities/us/ca/artois/;Artois;artois
+http://www.meetup.com/cities/us/ca/arvin/;Arvin;arvin
+http://www.meetup.com/cities/us/ca/atascadero/;Atascadero;atascadero
+http://www.meetup.com/cities/us/ca/atherton/;Atherton;atherton
+http://www.meetup.com/cities/us/ca/atwater/;Atwater;atwater
+http://www.meetup.com/cities/us/ca/atwood/;Atwood;atwood
+http://www.meetup.com/cities/us/ca/auberry/;Auberry;auberry
+http://www.meetup.com/cities/us/ca/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/ca/avalon/;Avalon;avalon
+http://www.meetup.com/cities/us/ca/avenal/;Avenal;avenal
+http://www.meetup.com/cities/us/ca/avery/;Avery;avery
+http://www.meetup.com/cities/us/ca/avila_beach/;Avila Beach;avila_beach
+http://www.meetup.com/cities/us/ca/azusa/;Azusa;azusa
+http://www.meetup.com/cities/us/ca/badger/;Badger;badger
+http://www.meetup.com/cities/us/ca/baker/;Baker;baker
+http://www.meetup.com/cities/us/ca/bakersfield/;Bakersfield;bakersfield
+http://www.meetup.com/cities/us/ca/baldwin_park/;Baldwin Park;baldwin_park
+http://www.meetup.com/cities/us/ca/ballico/;Ballico;ballico
+http://www.meetup.com/cities/us/ca/bangor/;Bangor;bangor
+http://www.meetup.com/cities/us/ca/banning/;Banning;banning
+http://www.meetup.com/cities/us/ca/bard/;Bard;bard
+http://www.meetup.com/cities/us/ca/barstow/;Barstow;barstow
+http://www.meetup.com/cities/us/ca/bass_lake/;Bass Lake;bass_lake
+http://www.meetup.com/cities/us/ca/bayside/;Bayside;bayside
+http://www.meetup.com/cities/us/ca/beale_afb/;Beale AFB;beale_afb
+http://www.meetup.com/cities/us/ca/beaumont/;Beaumont;beaumont
+http://www.meetup.com/cities/us/ca/beckwourth/;Beckwourth;beckwourth
+http://www.meetup.com/cities/us/ca/belden/;Belden;belden
+http://www.meetup.com/cities/us/ca/bell/;Bell;bell
+http://www.meetup.com/cities/us/ca/bella_vista/;Bella Vista;bella_vista
+http://www.meetup.com/cities/us/ca/bellflower/;Bellflower;bellflower
+http://www.meetup.com/cities/us/ca/bell_gardens/;Bell Gardens;bell_gardens
+http://www.meetup.com/cities/us/ca/belmont/;Belmont;belmont
+http://www.meetup.com/cities/us/ca/belvedere_tiburon/;Belvedere Tiburon;belvedere_tiburon
+http://www.meetup.com/cities/us/ca/benicia/;Benicia;benicia
+http://www.meetup.com/cities/us/ca/ben_lomond/;Ben Lomond;ben_lomond
+http://www.meetup.com/cities/us/ca/benton/;Benton;benton
+http://www.meetup.com/cities/us/ca/berkeley/;Berkeley;berkeley
+http://www.meetup.com/cities/us/ca/berry_creek/;Berry Creek;berry_creek
+http://www.meetup.com/cities/us/ca/bethel_island/;Bethel Island;bethel_island
+http://www.meetup.com/cities/us/ca/beverly_hills/;Beverly Hills;beverly_hills
+http://www.meetup.com/cities/us/ca/bieber/;Bieber;bieber
+http://www.meetup.com/cities/us/ca/big_bar/;Big Bar;big_bar
+http://www.meetup.com/cities/us/ca/big_bear_city/;Big Bear City;big_bear_city
+http://www.meetup.com/cities/us/ca/big_bear_lake/;Big Bear Lake;big_bear_lake
+http://www.meetup.com/cities/us/ca/big_bend/;Big Bend;big_bend
+http://www.meetup.com/cities/us/ca/big_creek/;Big Creek;big_creek
+http://www.meetup.com/cities/us/ca/biggs/;Biggs;biggs
+http://www.meetup.com/cities/us/ca/big_oak_flat/;Big Oak Flat;big_oak_flat
+http://www.meetup.com/cities/us/ca/big_pine/;Big Pine;big_pine
+http://www.meetup.com/cities/us/ca/big_sur/;Big Sur;big_sur
+http://www.meetup.com/cities/us/ca/biola/;Biola;biola
+http://www.meetup.com/cities/us/ca/birds_landing/;Birds Landing;birds_landing
+http://www.meetup.com/cities/us/ca/bishop/;Bishop;bishop
+http://www.meetup.com/cities/us/ca/blairsden-graeagle/;Blairsden-Graeagle;blairsden-graeagle
+http://www.meetup.com/cities/us/ca/blocksburg/;Blocksburg;blocksburg
+http://www.meetup.com/cities/us/ca/bloomington/;Bloomington;bloomington
+http://www.meetup.com/cities/us/ca/blue_jay/;Blue Jay;blue_jay
+http://www.meetup.com/cities/us/ca/blue_lake/;Blue Lake;blue_lake
+http://www.meetup.com/cities/us/ca/blythe/;Blythe;blythe
+http://www.meetup.com/cities/us/ca/bodega/;Bodega;bodega
+http://www.meetup.com/cities/us/ca/bodega_bay/;Bodega Bay;bodega_bay
+http://www.meetup.com/cities/us/ca/bodfish/;Bodfish;bodfish
+http://www.meetup.com/cities/us/ca/bolinas/;Bolinas;bolinas
+http://www.meetup.com/cities/us/ca/bonita/;Bonita;bonita
+http://www.meetup.com/cities/us/ca/bonsall/;Bonsall;bonsall
+http://www.meetup.com/cities/us/ca/boonville/;Boonville;boonville
+http://www.meetup.com/cities/us/ca/boron/;Boron;boron
+http://www.meetup.com/cities/us/ca/borrego_springs/;Borrego Springs;borrego_springs
+http://www.meetup.com/cities/us/ca/boulder_creek/;Boulder Creek;boulder_creek
+http://www.meetup.com/cities/us/ca/boulevard/;Boulevard;boulevard
+http://www.meetup.com/cities/us/ca/boyes_hot_springs/;Boyes Hot Springs;boyes_hot_springs
+http://www.meetup.com/cities/us/ca/bradley/;Bradley;bradley
+http://www.meetup.com/cities/us/ca/brandeis/;Brandeis;brandeis
+http://www.meetup.com/cities/us/ca/branscomb/;Branscomb;branscomb
+http://www.meetup.com/cities/us/ca/brawley/;Brawley;brawley
+http://www.meetup.com/cities/us/ca/brea/;Brea;brea
+http://www.meetup.com/cities/us/ca/brentwood/;Brentwood;brentwood
+http://www.meetup.com/cities/us/ca/bridgeport/;Bridgeport;bridgeport
+http://www.meetup.com/cities/us/ca/bridgeville/;Bridgeville;bridgeville
+http://www.meetup.com/cities/us/ca/brisbane/;Brisbane;brisbane
+http://www.meetup.com/cities/us/ca/brookdale/;Brookdale;brookdale
+http://www.meetup.com/cities/us/ca/brooks/;Brooks;brooks
+http://www.meetup.com/cities/us/ca/browns_valley/;Browns Valley;browns_valley
+http://www.meetup.com/cities/us/ca/brownsville/;Brownsville;brownsville
+http://www.meetup.com/cities/us/ca/bryn_mawr/;Bryn Mawr;bryn_mawr
+http://www.meetup.com/cities/us/ca/buellton/;Buellton;buellton
+http://www.meetup.com/cities/us/ca/buena_park/;Buena Park;buena_park
+http://www.meetup.com/cities/us/ca/burbank/;Burbank;burbank
+http://www.meetup.com/cities/us/ca/burlingame/;Burlingame;burlingame
+http://www.meetup.com/cities/us/ca/burney/;Burney;burney
+http://www.meetup.com/cities/us/ca/burnt_ranch/;Burnt Ranch;burnt_ranch
+http://www.meetup.com/cities/us/ca/burrel/;Burrel;burrel
+http://www.meetup.com/cities/us/ca/burson/;Burson;burson
+http://www.meetup.com/cities/us/ca/butte_city/;Butte City;butte_city
+http://www.meetup.com/cities/us/ca/buttonwillow/;Buttonwillow;buttonwillow
+http://www.meetup.com/cities/us/ca/byron/;Byron;byron
+http://www.meetup.com/cities/us/ca/cabazon/;Cabazon;cabazon
+http://www.meetup.com/cities/us/ca/calabasas/;Calabasas;calabasas
+http://www.meetup.com/cities/us/ca/calexico/;Calexico;calexico
+http://www.meetup.com/cities/us/ca/caliente/;Caliente;caliente
+http://www.meetup.com/cities/us/ca/california_city/;California City;california_city
+http://www.meetup.com/cities/us/ca/california_hot_springs/;California Hot Springs;california_hot_springs
+http://www.meetup.com/cities/us/ca/calimesa/;Calimesa;calimesa
+http://www.meetup.com/cities/us/ca/calipatria/;Calipatria;calipatria
+http://www.meetup.com/cities/us/ca/calistoga/;Calistoga;calistoga
+http://www.meetup.com/cities/us/ca/callahan/;Callahan;callahan
+http://www.meetup.com/cities/us/ca/calpella/;Calpella;calpella
+http://www.meetup.com/cities/us/ca/calpine/;Calpine;calpine
+http://www.meetup.com/cities/us/ca/camarillo/;Camarillo;camarillo
+http://www.meetup.com/cities/us/ca/cambria/;Cambria;cambria
+http://www.meetup.com/cities/us/ca/camino/;Camino;camino
+http://www.meetup.com/cities/us/ca/campbell/;Campbell;campbell
+http://www.meetup.com/cities/us/ca/camp_meeker/;Camp Meeker;camp_meeker
+http://www.meetup.com/cities/us/ca/camp_nelson/;Camp Nelson;camp_nelson
+http://www.meetup.com/cities/us/ca/campo/;Campo;campo
+http://www.meetup.com/cities/us/ca/campo_seco/;Campo Seco;campo_seco
+http://www.meetup.com/cities/us/ca/camp_pendleton/;Camp Pendleton;camp_pendleton
+http://www.meetup.com/cities/us/ca/camptonville/;Camptonville;camptonville
+http://www.meetup.com/cities/us/ca/canby/;Canby;canby
+http://www.meetup.com/cities/us/ca/canoga_park/;Canoga Park;canoga_park
+http://www.meetup.com/cities/us/ca/cantil/;Cantil;cantil
+http://www.meetup.com/cities/us/ca/cantua_creek/;Cantua Creek;cantua_creek
+http://www.meetup.com/cities/us/ca/canyon/;Canyon;canyon
+http://www.meetup.com/cities/us/ca/canyon_country/;Canyon Country;canyon_country
+http://www.meetup.com/cities/us/ca/canyon_dam/;Canyon Dam;canyon_dam
+http://www.meetup.com/cities/us/ca/capay/;Capay;capay
+http://www.meetup.com/cities/us/ca/capistrano_beach/;Capistrano Beach;capistrano_beach
+http://www.meetup.com/cities/us/ca/capitola/;Capitola;capitola
+http://www.meetup.com/cities/us/ca/cardiff_by_the_sea/;Cardiff by the Sea;cardiff_by_the_sea
+http://www.meetup.com/cities/us/ca/carlotta/;Carlotta;carlotta
+http://www.meetup.com/cities/us/ca/carlsbad/;Carlsbad;carlsbad
+http://www.meetup.com/cities/us/ca/carmel/;Carmel;carmel
+http://www.meetup.com/cities/us/ca/carmel_by_the_sea/;Carmel by the Sea;carmel_by_the_sea
+http://www.meetup.com/cities/us/ca/carmel_valley/;Carmel Valley;carmel_valley
+http://www.meetup.com/cities/us/ca/carmichael/;Carmichael;carmichael
+http://www.meetup.com/cities/us/ca/carnelian_bay/;Carnelian Bay;carnelian_bay
+http://www.meetup.com/cities/us/ca/carpinteria/;Carpinteria;carpinteria
+http://www.meetup.com/cities/us/ca/carson/;Carson;carson
+http://www.meetup.com/cities/us/ca/caruthers/;Caruthers;caruthers
+http://www.meetup.com/cities/us/ca/casmalia/;Casmalia;casmalia
+http://www.meetup.com/cities/us/ca/caspar/;Caspar;caspar
+http://www.meetup.com/cities/us/ca/cassel/;Cassel;cassel
+http://www.meetup.com/cities/us/ca/castaic/;Castaic;castaic
+http://www.meetup.com/cities/us/ca/castella/;Castella;castella
+http://www.meetup.com/cities/us/ca/castro_valley/;Castro Valley;castro_valley
+http://www.meetup.com/cities/us/ca/castroville/;Castroville;castroville
+http://www.meetup.com/cities/us/ca/cathedral_city/;Cathedral City;cathedral_city
+http://www.meetup.com/cities/us/ca/catheys_valley/;Catheys Valley;catheys_valley
+http://www.meetup.com/cities/us/ca/cayucos/;Cayucos;cayucos
+http://www.meetup.com/cities/us/ca/cazadero/;Cazadero;cazadero
+http://www.meetup.com/cities/us/ca/cedar_glen/;Cedar Glen;cedar_glen
+http://www.meetup.com/cities/us/ca/cedarpines_park/;Cedarpines Park;cedarpines_park
+http://www.meetup.com/cities/us/ca/cedar_ridge/;Cedar Ridge;cedar_ridge
+http://www.meetup.com/cities/us/ca/cedarville/;Cedarville;cedarville
+http://www.meetup.com/cities/us/ca/ceres/;Ceres;ceres
+http://www.meetup.com/cities/us/ca/cerritos/;Cerritos;cerritos
+http://www.meetup.com/cities/us/ca/challenge/;Challenge;challenge
+http://www.meetup.com/cities/us/ca/chatsworth/;Chatsworth;chatsworth
+http://www.meetup.com/cities/us/ca/chester/;Chester;chester
+http://www.meetup.com/cities/us/ca/chicago_park/;Chicago Park;chicago_park
+http://www.meetup.com/cities/us/ca/chico/;Chico;chico
+http://www.meetup.com/cities/us/ca/chilcoot/;Chilcoot;chilcoot
+http://www.meetup.com/cities/us/ca/chinese_camp/;Chinese Camp;chinese_camp
+http://www.meetup.com/cities/us/ca/chino/;Chino;chino
+http://www.meetup.com/cities/us/ca/chino_hills/;Chino Hills;chino_hills
+http://www.meetup.com/cities/us/ca/chowchilla/;Chowchilla;chowchilla
+http://www.meetup.com/cities/us/ca/chualar/;Chualar;chualar
+http://www.meetup.com/cities/us/ca/chula_vista/;Chula Vista;chula_vista
+http://www.meetup.com/cities/us/ca/cima/;Cima;cima
+http://www.meetup.com/cities/us/ca/citrus_heights/;Citrus Heights;citrus_heights
+http://www.meetup.com/cities/us/ca/city_of_industry/;City of Industry;city_of_industry
+http://www.meetup.com/cities/us/ca/claremont/;Claremont;claremont
+http://www.meetup.com/cities/us/ca/clarksburg/;Clarksburg;clarksburg
+http://www.meetup.com/cities/us/ca/clayton/;Clayton;clayton
+http://www.meetup.com/cities/us/ca/clearlake/;Clearlake;clearlake
+http://www.meetup.com/cities/us/ca/clearlake_oaks/;Clearlake Oaks;clearlake_oaks
+http://www.meetup.com/cities/us/ca/clearlake_park/;Clearlake Park;clearlake_park
+http://www.meetup.com/cities/us/ca/clements/;Clements;clements
+http://www.meetup.com/cities/us/ca/clio/;Clio;clio
+http://www.meetup.com/cities/us/ca/clipper_mills/;Clipper Mills;clipper_mills
+http://www.meetup.com/cities/us/ca/cloverdale/;Cloverdale;cloverdale
+http://www.meetup.com/cities/us/ca/clovis/;Clovis;clovis
+http://www.meetup.com/cities/us/ca/coachella/;Coachella;coachella
+http://www.meetup.com/cities/us/ca/coalinga/;Coalinga;coalinga
+http://www.meetup.com/cities/us/ca/coarsegold/;Coarsegold;coarsegold
+http://www.meetup.com/cities/us/ca/cobb/;Cobb;cobb
+http://www.meetup.com/cities/us/ca/coleville/;Coleville;coleville
+http://www.meetup.com/cities/us/ca/colfax/;Colfax;colfax
+http://www.meetup.com/cities/us/ca/coloma/;Coloma;coloma
+http://www.meetup.com/cities/us/ca/colton/;Colton;colton
+http://www.meetup.com/cities/us/ca/columbia/;Columbia;columbia
+http://www.meetup.com/cities/us/ca/colusa/;Colusa;colusa
+http://www.meetup.com/cities/us/ca/comptche/;Comptche;comptche
+http://www.meetup.com/cities/us/ca/compton/;Compton;compton
+http://www.meetup.com/cities/us/ca/concord/;Concord;concord
+http://www.meetup.com/cities/us/ca/cool/;Cool;cool
+http://www.meetup.com/cities/us/ca/copperopolis/;Copperopolis;copperopolis
+http://www.meetup.com/cities/us/ca/corcoran/;Corcoran;corcoran
+http://www.meetup.com/cities/us/ca/corning/;Corning;corning
+http://www.meetup.com/cities/us/ca/corona/;Corona;corona
+http://www.meetup.com/cities/us/ca/corona_del_mar/;Corona del Mar;corona_del_mar
+http://www.meetup.com/cities/us/ca/coronado/;Coronado;coronado
+http://www.meetup.com/cities/us/ca/corte_madera/;Corte Madera;corte_madera
+http://www.meetup.com/cities/us/ca/costa_mesa/;Costa Mesa;costa_mesa
+http://www.meetup.com/cities/us/ca/cotati/;Cotati;cotati
+http://www.meetup.com/cities/us/ca/cottonwood/;Cottonwood;cottonwood
+http://www.meetup.com/cities/us/ca/coulterville/;Coulterville;coulterville
+http://www.meetup.com/cities/us/ca/courtland/;Courtland;courtland
+http://www.meetup.com/cities/us/ca/covelo/;Covelo;covelo
+http://www.meetup.com/cities/us/ca/covina/;Covina;covina
+http://www.meetup.com/cities/us/ca/coyote/;Coyote;coyote
+http://www.meetup.com/cities/us/ca/crescent_city/;Crescent City;crescent_city
+http://www.meetup.com/cities/us/ca/crescent_mills/;Crescent Mills;crescent_mills
+http://www.meetup.com/cities/us/ca/cressey/;Cressey;cressey
+http://www.meetup.com/cities/us/ca/crestline/;Crestline;crestline
+http://www.meetup.com/cities/us/ca/creston/;Creston;creston
+http://www.meetup.com/cities/us/ca/crest_park/;Crest Park;crest_park
+http://www.meetup.com/cities/us/ca/crockett/;Crockett;crockett
+http://www.meetup.com/cities/us/ca/crows_landing/;Crows Landing;crows_landing
+http://www.meetup.com/cities/us/ca/culver_city/;Culver City;culver_city
+http://www.meetup.com/cities/us/ca/cupertino/;Cupertino;cupertino
+http://www.meetup.com/cities/us/ca/cutler/;Cutler;cutler
+http://www.meetup.com/cities/us/ca/cutten/;Cutten;cutten
+http://www.meetup.com/cities/us/ca/cypress/;Cypress;cypress
+http://www.meetup.com/cities/us/ca/daggett/;Daggett;daggett
+http://www.meetup.com/cities/us/ca/daly_city/;Daly City;daly_city
+http://www.meetup.com/cities/us/ca/dana_point/;Dana Point;dana_point
+http://www.meetup.com/cities/us/ca/danville/;Danville;danville
+http://www.meetup.com/cities/us/ca/dardanelle/;Dardanelle;dardanelle
+http://www.meetup.com/cities/us/ca/darwin/;Darwin;darwin
+http://www.meetup.com/cities/us/ca/davenport/;Davenport;davenport
+http://www.meetup.com/cities/us/ca/davis/;Davis;davis
+http://www.meetup.com/cities/us/ca/davis_creek/;Davis Creek;davis_creek
+http://www.meetup.com/cities/us/ca/death_valley/;Death Valley;death_valley
+http://www.meetup.com/cities/us/ca/deer_park/;Deer Park;deer_park
+http://www.meetup.com/cities/us/ca/delano/;Delano;delano
+http://www.meetup.com/cities/us/ca/delhi/;Delhi;delhi
+http://www.meetup.com/cities/us/ca/del_mar/;Del Mar;del_mar
+http://www.meetup.com/cities/us/ca/del_rey/;Del Rey;del_rey
+http://www.meetup.com/cities/us/ca/denair/;Denair;denair
+http://www.meetup.com/cities/us/ca/descanso/;Descanso;descanso
+http://www.meetup.com/cities/us/ca/desert_center/;Desert Center;desert_center
+http://www.meetup.com/cities/us/ca/desert_hot_springs/;Desert Hot Springs;desert_hot_springs
+http://www.meetup.com/cities/us/ca/diablo/;Diablo;diablo
+http://www.meetup.com/cities/us/ca/diamond_bar/;Diamond Bar;diamond_bar
+http://www.meetup.com/cities/us/ca/diamond_springs/;Diamond Springs;diamond_springs
+http://www.meetup.com/cities/us/ca/dillon_beach/;Dillon Beach;dillon_beach
+http://www.meetup.com/cities/us/ca/dinuba/;Dinuba;dinuba
+http://www.meetup.com/cities/us/ca/discovery_bay/;Discovery Bay;discovery_bay
+http://www.meetup.com/cities/us/ca/dixon/;Dixon;dixon
+http://www.meetup.com/cities/us/ca/dobbins/;Dobbins;dobbins
+http://www.meetup.com/cities/us/ca/dodgertown/;Dodgertown;dodgertown
+http://www.meetup.com/cities/us/ca/dorris/;Dorris;dorris
+http://www.meetup.com/cities/us/ca/dos_palos/;Dos Palos;dos_palos
+http://www.meetup.com/cities/us/ca/dos_rios/;Dos Rios;dos_rios
+http://www.meetup.com/cities/us/ca/douglas_city/;Douglas City;douglas_city
+http://www.meetup.com/cities/us/ca/douglas_flat/;Douglas Flat;douglas_flat
+http://www.meetup.com/cities/us/ca/downey/;Downey;downey
+http://www.meetup.com/cities/us/ca/downieville/;Downieville;downieville
+http://www.meetup.com/cities/us/ca/doyle/;Doyle;doyle
+http://www.meetup.com/cities/us/ca/drytown/;Drytown;drytown
+http://www.meetup.com/cities/us/ca/duarte/;Duarte;duarte
+http://www.meetup.com/cities/us/ca/dublin/;Dublin;dublin
+http://www.meetup.com/cities/us/ca/ducor/;Ducor;ducor
+http://www.meetup.com/cities/us/ca/dulzura/;Dulzura;dulzura
+http://www.meetup.com/cities/us/ca/duncans_mills/;Duncans Mills;duncans_mills
+http://www.meetup.com/cities/us/ca/dunlap/;Dunlap;dunlap
+http://www.meetup.com/cities/us/ca/dunnigan/;Dunnigan;dunnigan
+http://www.meetup.com/cities/us/ca/dunsmuir/;Dunsmuir;dunsmuir
+http://www.meetup.com/cities/us/ca/durham/;Durham;durham
+http://www.meetup.com/cities/us/ca/dutch_flat/;Dutch Flat;dutch_flat
+http://www.meetup.com/cities/us/ca/eagleville/;Eagleville;eagleville
+http://www.meetup.com/cities/us/ca/earlimart/;Earlimart;earlimart
+http://www.meetup.com/cities/us/ca/earp/;Earp;earp
+http://www.meetup.com/cities/us/ca/east_irvine/;East Irvine;east_irvine
+http://www.meetup.com/cities/us/ca/echo_lake/;Echo Lake;echo_lake
+http://www.meetup.com/cities/us/ca/edison/;Edison;edison
+http://www.meetup.com/cities/us/ca/edwards/;Edwards;edwards
+http://www.meetup.com/cities/us/ca/el_cajon/;El Cajon;el_cajon
+http://www.meetup.com/cities/us/ca/el_centro/;El Centro;el_centro
+http://www.meetup.com/cities/us/ca/el_cerrito/;El Cerrito;el_cerrito
+http://www.meetup.com/cities/us/ca/el_dorado/;El Dorado;el_dorado
+http://www.meetup.com/cities/us/ca/el_dorado_hills/;El Dorado Hills;el_dorado_hills
+http://www.meetup.com/cities/us/ca/eldridge/;Eldridge;eldridge
+http://www.meetup.com/cities/us/ca/el_granada/;El Granada;el_granada
+http://www.meetup.com/cities/us/ca/elk/;Elk;elk
+http://www.meetup.com/cities/us/ca/elk_creek/;Elk Creek;elk_creek
+http://www.meetup.com/cities/us/ca/elk_grove/;Elk Grove;elk_grove
+http://www.meetup.com/cities/us/ca/elmira/;Elmira;elmira
+http://www.meetup.com/cities/us/ca/el_monte/;El Monte;el_monte
+http://www.meetup.com/cities/us/ca/el_nido/;El Nido;el_nido
+http://www.meetup.com/cities/us/ca/el_portal/;El Portal;el_portal
+http://www.meetup.com/cities/us/ca/el_segundo/;El Segundo;el_segundo
+http://www.meetup.com/cities/us/ca/el_sobrante/;El Sobrante;el_sobrante
+http://www.meetup.com/cities/us/ca/el_toro/;El Toro;el_toro
+http://www.meetup.com/cities/us/ca/el_verano/;El Verano;el_verano
+http://www.meetup.com/cities/us/ca/elverta/;Elverta;elverta
+http://www.meetup.com/cities/us/ca/emeryville/;Emeryville;emeryville
+http://www.meetup.com/cities/us/ca/emigrant_gap/;Emigrant Gap;emigrant_gap
+http://www.meetup.com/cities/us/ca/empire/;Empire;empire
+http://www.meetup.com/cities/us/ca/encinitas/;Encinitas;encinitas
+http://www.meetup.com/cities/us/ca/encino/;Encino;encino
+http://www.meetup.com/cities/us/ca/escalon/;Escalon;escalon
+http://www.meetup.com/cities/us/ca/escondido/;Escondido;escondido
+http://www.meetup.com/cities/us/ca/esparto/;Esparto;esparto
+http://www.meetup.com/cities/us/ca/essex/;Essex;essex
+http://www.meetup.com/cities/us/ca/etna/;Etna;etna
+http://www.meetup.com/cities/us/ca/eureka/;Eureka;eureka
+http://www.meetup.com/cities/us/ca/exeter/;Exeter;exeter
+http://www.meetup.com/cities/us/ca/fairfax/;Fairfax;fairfax
+http://www.meetup.com/cities/us/ca/fairfield/;Fairfield;fairfield
+http://www.meetup.com/cities/us/ca/fair_oaks/;Fair Oaks;fair_oaks
+http://www.meetup.com/cities/us/ca/fallbrook/;Fallbrook;fallbrook
+http://www.meetup.com/cities/us/ca/fall_river_mills/;Fall River Mills;fall_river_mills
+http://www.meetup.com/cities/us/ca/farmersville/;Farmersville;farmersville
+http://www.meetup.com/cities/us/ca/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/ca/fawnskin/;Fawnskin;fawnskin
+http://www.meetup.com/cities/us/ca/feather_falls/;Feather Falls;feather_falls
+http://www.meetup.com/cities/us/ca/fellows/;Fellows;fellows
+http://www.meetup.com/cities/us/ca/felton/;Felton;felton
+http://www.meetup.com/cities/us/ca/ferndale/;Ferndale;ferndale
+http://www.meetup.com/cities/us/ca/fiddletown/;Fiddletown;fiddletown
+http://www.meetup.com/cities/us/ca/fields_landing/;Fields Landing;fields_landing
+http://www.meetup.com/cities/us/ca/fillmore/;Fillmore;fillmore
+http://www.meetup.com/cities/us/ca/finley/;Finley;finley
+http://www.meetup.com/cities/us/ca/firebaugh/;Firebaugh;firebaugh
+http://www.meetup.com/cities/us/ca/fish_camp/;Fish Camp;fish_camp
+http://www.meetup.com/cities/us/ca/five_points/;Five Points;five_points
+http://www.meetup.com/cities/us/ca/floriston/;Floriston;floriston
+http://www.meetup.com/cities/us/ca/flournoy/;Flournoy;flournoy
+http://www.meetup.com/cities/us/ca/folsom/;Folsom;folsom
+http://www.meetup.com/cities/us/ca/fontana/;Fontana;fontana
+http://www.meetup.com/cities/us/ca/foothill_ranch/;Foothill Ranch;foothill_ranch
+http://www.meetup.com/cities/us/ca/forbestown/;Forbestown;forbestown
+http://www.meetup.com/cities/us/ca/forest_falls/;Forest Falls;forest_falls
+http://www.meetup.com/cities/us/ca/foresthill/;Foresthill;foresthill
+http://www.meetup.com/cities/us/ca/forest_knolls/;Forest Knolls;forest_knolls
+http://www.meetup.com/cities/us/ca/forest_ranch/;Forest Ranch;forest_ranch
+http://www.meetup.com/cities/us/ca/forestville/;Forestville;forestville
+http://www.meetup.com/cities/us/ca/forks_of_salmon/;Forks of Salmon;forks_of_salmon
+http://www.meetup.com/cities/us/ca/fort_bidwell/;Fort Bidwell;fort_bidwell
+http://www.meetup.com/cities/us/ca/fort_bragg/;Fort Bragg;fort_bragg
+http://www.meetup.com/cities/us/ca/fort_dick/;Fort Dick;fort_dick
+http://www.meetup.com/cities/us/ca/fort_irwin/;Fort Irwin;fort_irwin
+http://www.meetup.com/cities/us/ca/fort_jones/;Fort Jones;fort_jones
+http://www.meetup.com/cities/us/ca/fortuna/;Fortuna;fortuna
+http://www.meetup.com/cities/us/ca/fountain_valley/;Fountain Valley;fountain_valley
+http://www.meetup.com/cities/us/ca/fowler/;Fowler;fowler
+http://www.meetup.com/cities/us/ca/frazier_park/;Frazier Park;frazier_park
+http://www.meetup.com/cities/us/ca/freedom/;Freedom;freedom
+http://www.meetup.com/cities/us/ca/fremont/;Fremont;fremont
+http://www.meetup.com/cities/us/ca/french_camp/;French Camp;french_camp
+http://www.meetup.com/cities/us/ca/french_gulch/;French Gulch;french_gulch
+http://www.meetup.com/cities/us/ca/fresno/;Fresno;fresno
+http://www.meetup.com/cities/us/ca/friant/;Friant;friant
+http://www.meetup.com/cities/us/ca/fullerton/;Fullerton;fullerton
+http://www.meetup.com/cities/us/ca/fulton/;Fulton;fulton
+http://www.meetup.com/cities/us/ca/galt/;Galt;galt
+http://www.meetup.com/cities/us/ca/garberville/;Garberville;garberville
+http://www.meetup.com/cities/us/ca/gardena/;Gardena;gardena
+http://www.meetup.com/cities/us/ca/garden_grove/;Garden Grove;garden_grove
+http://www.meetup.com/cities/us/ca/garden_valley/;Garden Valley;garden_valley
+http://www.meetup.com/cities/us/ca/gasquet/;Gasquet;gasquet
+http://www.meetup.com/cities/us/ca/gazelle/;Gazelle;gazelle
+http://www.meetup.com/cities/us/ca/georgetown/;Georgetown;georgetown
+http://www.meetup.com/cities/us/ca/gerber/;Gerber;gerber
+http://www.meetup.com/cities/us/ca/geyserville/;Geyserville;geyserville
+http://www.meetup.com/cities/us/ca/gilroy/;Gilroy;gilroy
+http://www.meetup.com/cities/us/ca/glencoe/;Glencoe;glencoe
+http://www.meetup.com/cities/us/ca/glendale/;Glendale;glendale
+http://www.meetup.com/cities/us/ca/glendora/;Glendora;glendora
+http://www.meetup.com/cities/us/ca/glen_ellen/;Glen Ellen;glen_ellen
+http://www.meetup.com/cities/us/ca/glenhaven/;Glenhaven;glenhaven
+http://www.meetup.com/cities/us/ca/glenn/;Glenn;glenn
+http://www.meetup.com/cities/us/ca/glennville/;Glennville;glennville
+http://www.meetup.com/cities/us/ca/gold_run/;Gold Run;gold_run
+http://www.meetup.com/cities/us/ca/goleta/;Goleta;goleta
+http://www.meetup.com/cities/us/ca/gonzales/;Gonzales;gonzales
+http://www.meetup.com/cities/us/ca/goodyears_bar/;Goodyears Bar;goodyears_bar
+http://www.meetup.com/cities/us/ca/goshen/;Goshen;goshen
+http://www.meetup.com/cities/us/ca/granada_hills/;Granada Hills;granada_hills
+http://www.meetup.com/cities/us/ca/grand_terrace/;Grand Terrace;grand_terrace
+http://www.meetup.com/cities/us/ca/granite_bay/;Granite Bay;granite_bay
+http://www.meetup.com/cities/us/ca/grass_valley/;Grass Valley;grass_valley
+http://www.meetup.com/cities/us/ca/graton/;Graton;graton
+http://www.meetup.com/cities/us/ca/greenbrae/;Greenbrae;greenbrae
+http://www.meetup.com/cities/us/ca/greenfield/;Greenfield;greenfield
+http://www.meetup.com/cities/us/ca/green_valley_lake/;Green Valley Lake;green_valley_lake
+http://www.meetup.com/cities/us/ca/greenview/;Greenview;greenview
+http://www.meetup.com/cities/us/ca/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/ca/greenwood/;Greenwood;greenwood
+http://www.meetup.com/cities/us/ca/grenada/;Grenada;grenada
+http://www.meetup.com/cities/us/ca/gridley/;Gridley;gridley
+http://www.meetup.com/cities/us/ca/grimes/;Grimes;grimes
+http://www.meetup.com/cities/us/ca/grizzly_flats/;Grizzly Flats;grizzly_flats
+http://www.meetup.com/cities/us/ca/groveland/;Groveland;groveland
+http://www.meetup.com/cities/us/ca/grover_beach/;Grover Beach;grover_beach
+http://www.meetup.com/cities/us/ca/guadalupe/;Guadalupe;guadalupe
+http://www.meetup.com/cities/us/ca/gualala/;Gualala;gualala
+http://www.meetup.com/cities/us/ca/guasti/;Guasti;guasti
+http://www.meetup.com/cities/us/ca/guatay/;Guatay;guatay
+http://www.meetup.com/cities/us/ca/guerneville/;Guerneville;guerneville
+http://www.meetup.com/cities/us/ca/guinda/;Guinda;guinda
+http://www.meetup.com/cities/us/ca/gustine/;Gustine;gustine
+http://www.meetup.com/cities/us/ca/hacienda_heights/;Hacienda Heights;hacienda_heights
+http://www.meetup.com/cities/us/ca/half_moon_bay/;Half Moon Bay;half_moon_bay
+http://www.meetup.com/cities/us/ca/hamilton_city/;Hamilton City;hamilton_city
+http://www.meetup.com/cities/us/ca/hanford/;Hanford;hanford
+http://www.meetup.com/cities/us/ca/happy_camp/;Happy Camp;happy_camp
+http://www.meetup.com/cities/us/ca/harbor_city/;Harbor City;harbor_city
+http://www.meetup.com/cities/us/ca/harmony/;Harmony;harmony
+http://www.meetup.com/cities/us/ca/hat_creek/;Hat Creek;hat_creek
+http://www.meetup.com/cities/us/ca/hathaway_pines/;Hathaway Pines;hathaway_pines
+http://www.meetup.com/cities/us/ca/hawaiian_gardens/;Hawaiian Gardens;hawaiian_gardens
+http://www.meetup.com/cities/us/ca/hawthorne/;Hawthorne;hawthorne
+http://www.meetup.com/cities/us/ca/hayfork/;Hayfork;hayfork
+http://www.meetup.com/cities/us/ca/hayward/;Hayward;hayward
+http://www.meetup.com/cities/us/ca/healdsburg/;Healdsburg;healdsburg
+http://www.meetup.com/cities/us/ca/heber/;Heber;heber
+http://www.meetup.com/cities/us/ca/helendale/;Helendale;helendale
+http://www.meetup.com/cities/us/ca/helm/;Helm;helm
+http://www.meetup.com/cities/us/ca/hemet/;Hemet;hemet
+http://www.meetup.com/cities/us/ca/herald/;Herald;herald
+http://www.meetup.com/cities/us/ca/hercules/;Hercules;hercules
+http://www.meetup.com/cities/us/ca/herlong/;Herlong;herlong
+http://www.meetup.com/cities/us/ca/hermosa_beach/;Hermosa Beach;hermosa_beach
+http://www.meetup.com/cities/us/ca/hesperia/;Hesperia;hesperia
+http://www.meetup.com/cities/us/ca/hickman/;Hickman;hickman
+http://www.meetup.com/cities/us/ca/hidden_valley_lake/;Hidden Valley Lake;hidden_valley_lake
+http://www.meetup.com/cities/us/ca/highland/;Highland;highland
+http://www.meetup.com/cities/us/ca/hilmar/;Hilmar;hilmar
+http://www.meetup.com/cities/us/ca/hinkley/;Hinkley;hinkley
+http://www.meetup.com/cities/us/ca/hollister/;Hollister;hollister
+http://www.meetup.com/cities/us/ca/holt/;Holt;holt
+http://www.meetup.com/cities/us/ca/holtville/;Holtville;holtville
+http://www.meetup.com/cities/us/ca/holy_city/;Holy City;holy_city
+http://www.meetup.com/cities/us/ca/homeland/;Homeland;homeland
+http://www.meetup.com/cities/us/ca/homewood/;Homewood;homewood
+http://www.meetup.com/cities/us/ca/honeydew/;Honeydew;honeydew
+http://www.meetup.com/cities/us/ca/hood/;Hood;hood
+http://www.meetup.com/cities/us/ca/hoopa/;Hoopa;hoopa
+http://www.meetup.com/cities/us/ca/hopland/;Hopland;hopland
+http://www.meetup.com/cities/us/ca/hornbrook/;Hornbrook;hornbrook
+http://www.meetup.com/cities/us/ca/hornitos/;Hornitos;hornitos
+http://www.meetup.com/cities/us/ca/hughson/;Hughson;hughson
+http://www.meetup.com/cities/us/ca/hume/;Hume;hume
+http://www.meetup.com/cities/us/ca/huntington_beach/;Huntington Beach;huntington_beach
+http://www.meetup.com/cities/us/ca/huntington_park/;Huntington Park;huntington_park
+http://www.meetup.com/cities/us/ca/huron/;Huron;huron
+http://www.meetup.com/cities/us/ca/hyampom/;Hyampom;hyampom
+http://www.meetup.com/cities/us/ca/hydesville/;Hydesville;hydesville
+http://www.meetup.com/cities/us/ca/idyllwild/;Idyllwild;idyllwild
+http://www.meetup.com/cities/us/ca/igo/;Igo;igo
+http://www.meetup.com/cities/us/ca/imperial/;Imperial;imperial
+http://www.meetup.com/cities/us/ca/imperial_beach/;Imperial Beach;imperial_beach
+http://www.meetup.com/cities/us/ca/independence/;Independence;independence
+http://www.meetup.com/cities/us/ca/indian_wells/;Indian Wells;indian_wells
+http://www.meetup.com/cities/us/ca/indio/;Indio;indio
+http://www.meetup.com/cities/us/ca/inglewood/;Inglewood;inglewood
+http://www.meetup.com/cities/us/ca/inverness/;Inverness;inverness
+http://www.meetup.com/cities/us/ca/inyokern/;Inyokern;inyokern
+http://www.meetup.com/cities/us/ca/ione/;Ione;ione
+http://www.meetup.com/cities/us/ca/irvine/;Irvine;irvine
+http://www.meetup.com/cities/us/ca/isleton/;Isleton;isleton
+http://www.meetup.com/cities/us/ca/ivanhoe/;Ivanhoe;ivanhoe
+http://www.meetup.com/cities/us/ca/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/ca/jacumba/;Jacumba;jacumba
+http://www.meetup.com/cities/us/ca/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/ca/jamul/;Jamul;jamul
+http://www.meetup.com/cities/us/ca/janesville/;Janesville;janesville
+http://www.meetup.com/cities/us/ca/jenner/;Jenner;jenner
+http://www.meetup.com/cities/us/ca/johannesburg/;Johannesburg;johannesburg
+http://www.meetup.com/cities/us/ca/jolon/;Jolon;jolon
+http://www.meetup.com/cities/us/ca/joshua_tree/;Joshua Tree;joshua_tree
+http://www.meetup.com/cities/us/ca/julian/;Julian;julian
+http://www.meetup.com/cities/us/ca/junction_city/;Junction City;junction_city
+http://www.meetup.com/cities/us/ca/june_lake/;June Lake;june_lake
+http://www.meetup.com/cities/us/ca/kaweah/;Kaweah;kaweah
+http://www.meetup.com/cities/us/ca/keeler/;Keeler;keeler
+http://www.meetup.com/cities/us/ca/keene/;Keene;keene
+http://www.meetup.com/cities/us/ca/kelseyville/;Kelseyville;kelseyville
+http://www.meetup.com/cities/us/ca/kentfield/;Kentfield;kentfield
+http://www.meetup.com/cities/us/ca/kenwood/;Kenwood;kenwood
+http://www.meetup.com/cities/us/ca/kerman/;Kerman;kerman
+http://www.meetup.com/cities/us/ca/kernville/;Kernville;kernville
+http://www.meetup.com/cities/us/ca/kettleman_city/;Kettleman City;kettleman_city
+http://www.meetup.com/cities/us/ca/keyes/;Keyes;keyes
+http://www.meetup.com/cities/us/ca/king_city/;King City;king_city
+http://www.meetup.com/cities/us/ca/kings_beach/;Kings Beach;kings_beach
+http://www.meetup.com/cities/us/ca/kingsburg/;Kingsburg;kingsburg
+http://www.meetup.com/cities/us/ca/kings_canyon_national_pk/;Kings Canyon National Pk;kings_canyon_national_pk
+http://www.meetup.com/cities/us/ca/kirkwood/;Kirkwood;kirkwood
+http://www.meetup.com/cities/us/ca/kit_carson/;Kit Carson;kit_carson
+http://www.meetup.com/cities/us/ca/klamath/;Klamath;klamath
+http://www.meetup.com/cities/us/ca/klamath_river/;Klamath River;klamath_river
+http://www.meetup.com/cities/us/ca/kneeland/;Kneeland;kneeland
+http://www.meetup.com/cities/us/ca/knightsen/;Knightsen;knightsen
+http://www.meetup.com/cities/us/ca/knights_landing/;Knights Landing;knights_landing
+http://www.meetup.com/cities/us/ca/korbel/;Korbel;korbel
+http://www.meetup.com/cities/us/ca/kyburz/;Kyburz;kyburz
+http://www.meetup.com/cities/us/ca/la_canada_flintridge/;La Canada Flintridge;la_canada_flintridge
+http://www.meetup.com/cities/us/ca/la_crescenta/;La Crescenta;la_crescenta
+http://www.meetup.com/cities/us/ca/ladera_ranch/;Ladera Ranch;ladera_ranch
+http://www.meetup.com/cities/us/ca/lafayette/;Lafayette;lafayette
+http://www.meetup.com/cities/us/ca/la_grange/;La Grange;la_grange
+http://www.meetup.com/cities/us/ca/laguna_beach/;Laguna Beach;laguna_beach
+http://www.meetup.com/cities/us/ca/laguna_hills/;Laguna Hills;laguna_hills
+http://www.meetup.com/cities/us/ca/laguna_niguel/;Laguna Niguel;laguna_niguel
+http://www.meetup.com/cities/us/ca/laguna_woods/;Laguna Woods;laguna_woods
+http://www.meetup.com/cities/us/ca/lagunitas/;Lagunitas;lagunitas
+http://www.meetup.com/cities/us/ca/la_habra/;La Habra;la_habra
+http://www.meetup.com/cities/us/ca/la_honda/;La Honda;la_honda
+http://www.meetup.com/cities/us/ca/la_jolla/;La Jolla;la_jolla
+http://www.meetup.com/cities/us/ca/lake_arrowhead/;Lake Arrowhead;lake_arrowhead
+http://www.meetup.com/cities/us/ca/lake_city/;Lake City;lake_city
+http://www.meetup.com/cities/us/ca/lake_elsinore/;Lake Elsinore;lake_elsinore
+http://www.meetup.com/cities/us/ca/lake_forest/;Lake Forest;lake_forest
+http://www.meetup.com/cities/us/ca/lakehead/;Lakehead;lakehead
+http://www.meetup.com/cities/us/ca/lake_hughes/;Lake Hughes;lake_hughes
+http://www.meetup.com/cities/us/ca/lake_isabella/;Lake Isabella;lake_isabella
+http://www.meetup.com/cities/us/ca/lakeport/;Lakeport;lakeport
+http://www.meetup.com/cities/us/ca/lakeshore/;Lakeshore;lakeshore
+http://www.meetup.com/cities/us/ca/lakeside/;Lakeside;lakeside
+http://www.meetup.com/cities/us/ca/lakewood/;Lakewood;lakewood
+http://www.meetup.com/cities/us/ca/la_mesa/;La Mesa;la_mesa
+http://www.meetup.com/cities/us/ca/la_mirada/;La Mirada;la_mirada
+http://www.meetup.com/cities/us/ca/lamont/;Lamont;lamont
+http://www.meetup.com/cities/us/ca/lancaster/;Lancaster;lancaster
+http://www.meetup.com/cities/us/ca/landers/;Landers;landers
+http://www.meetup.com/cities/us/ca/la_palma/;La Palma;la_palma
+http://www.meetup.com/cities/us/ca/la_puente/;La Puente;la_puente
+http://www.meetup.com/cities/us/ca/la_quinta/;La Quinta;la_quinta
+http://www.meetup.com/cities/us/ca/larkspur/;Larkspur;larkspur
+http://www.meetup.com/cities/us/ca/lathrop/;Lathrop;lathrop
+http://www.meetup.com/cities/us/ca/laton/;Laton;laton
+http://www.meetup.com/cities/us/ca/la_verne/;La Verne;la_verne
+http://www.meetup.com/cities/us/ca/lawndale/;Lawndale;lawndale
+http://www.meetup.com/cities/us/ca/laytonville/;Laytonville;laytonville
+http://www.meetup.com/cities/us/ca/lebec/;Lebec;lebec
+http://www.meetup.com/cities/us/ca/lee_vining/;Lee Vining;lee_vining
+http://www.meetup.com/cities/us/ca/leggett/;Leggett;leggett
+http://www.meetup.com/cities/us/ca/le_grand/;Le Grand;le_grand
+http://www.meetup.com/cities/us/ca/lemon_cove/;Lemon Cove;lemon_cove
+http://www.meetup.com/cities/us/ca/lemon_grove/;Lemon Grove;lemon_grove
+http://www.meetup.com/cities/us/ca/lemoore/;Lemoore;lemoore
+http://www.meetup.com/cities/us/ca/lewiston/;Lewiston;lewiston
+http://www.meetup.com/cities/us/ca/likely/;Likely;likely
+http://www.meetup.com/cities/us/ca/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/ca/lincoln_acres/;Lincoln Acres;lincoln_acres
+http://www.meetup.com/cities/us/ca/linden/;Linden;linden
+http://www.meetup.com/cities/us/ca/lindsay/;Lindsay;lindsay
+http://www.meetup.com/cities/us/ca/litchfield/;Litchfield;litchfield
+http://www.meetup.com/cities/us/ca/little_lake/;Little Lake;little_lake
+http://www.meetup.com/cities/us/ca/little_river/;Little River;little_river
+http://www.meetup.com/cities/us/ca/littlerock/;Littlerock;littlerock
+http://www.meetup.com/cities/us/ca/live_oak/;Live Oak;live_oak
+http://www.meetup.com/cities/us/ca/livermore/;Livermore;livermore
+http://www.meetup.com/cities/us/ca/livingston/;Livingston;livingston
+http://www.meetup.com/cities/us/ca/llano/;Llano;llano
+http://www.meetup.com/cities/us/ca/lockeford/;Lockeford;lockeford
+http://www.meetup.com/cities/us/ca/lockwood/;Lockwood;lockwood
+http://www.meetup.com/cities/us/ca/lodi/;Lodi;lodi
+http://www.meetup.com/cities/us/ca/loleta/;Loleta;loleta
+http://www.meetup.com/cities/us/ca/loma_linda/;Loma Linda;loma_linda
+http://www.meetup.com/cities/us/ca/loma_mar/;Loma Mar;loma_mar
+http://www.meetup.com/cities/us/ca/lomita/;Lomita;lomita
+http://www.meetup.com/cities/us/ca/lompoc/;Lompoc;lompoc
+http://www.meetup.com/cities/us/ca/lone_pine/;Lone Pine;lone_pine
+http://www.meetup.com/cities/us/ca/long_barn/;Long Barn;long_barn
+http://www.meetup.com/cities/us/ca/long_beach/;Long Beach;long_beach
+http://www.meetup.com/cities/us/ca/lookout/;Lookout;lookout
+http://www.meetup.com/cities/us/ca/loomis/;Loomis;loomis
+http://www.meetup.com/cities/us/ca/los_alamitos/;Los Alamitos;los_alamitos
+http://www.meetup.com/cities/us/ca/los_alamos/;Los Alamos;los_alamos
+http://www.meetup.com/cities/us/ca/los_altos/;Los Altos;los_altos
+http://www.meetup.com/cities/us/ca/los_angeles/;Los Angeles;los_angeles
+http://www.meetup.com/cities/us/ca/los_banos/;Los Banos;los_banos
+http://www.meetup.com/cities/us/ca/los_gatos/;Los Gatos;los_gatos
+http://www.meetup.com/cities/us/ca/los_molinos/;Los Molinos;los_molinos
+http://www.meetup.com/cities/us/ca/los_olivos/;Los Olivos;los_olivos
+http://www.meetup.com/cities/us/ca/los_osos/;Los Osos;los_osos
+http://www.meetup.com/cities/us/ca/lost_hills/;Lost Hills;lost_hills
+http://www.meetup.com/cities/us/ca/lotus/;Lotus;lotus
+http://www.meetup.com/cities/us/ca/lower_lake/;Lower Lake;lower_lake
+http://www.meetup.com/cities/us/ca/loyalton/;Loyalton;loyalton
+http://www.meetup.com/cities/us/ca/lucerne/;Lucerne;lucerne
+http://www.meetup.com/cities/us/ca/lucerne_valley/;Lucerne Valley;lucerne_valley
+http://www.meetup.com/cities/us/ca/ludlow/;Ludlow;ludlow
+http://www.meetup.com/cities/us/ca/lynwood/;Lynwood;lynwood
+http://www.meetup.com/cities/us/ca/lytle_creek/;Lytle Creek;lytle_creek
+http://www.meetup.com/cities/us/ca/macdoel/;Macdoel;macdoel
+http://www.meetup.com/cities/us/ca/madeline/;Madeline;madeline
+http://www.meetup.com/cities/us/ca/madera/;Madera;madera
+http://www.meetup.com/cities/us/ca/madison/;Madison;madison
+http://www.meetup.com/cities/us/ca/mad_river/;Mad River;mad_river
+http://www.meetup.com/cities/us/ca/magalia/;Magalia;magalia
+http://www.meetup.com/cities/us/ca/malibu/;Malibu;malibu
+http://www.meetup.com/cities/us/ca/mammoth_lakes/;Mammoth Lakes;mammoth_lakes
+http://www.meetup.com/cities/us/ca/manchester/;Manchester;manchester
+http://www.meetup.com/cities/us/ca/manhattan_beach/;Manhattan Beach;manhattan_beach
+http://www.meetup.com/cities/us/ca/manteca/;Manteca;manteca
+http://www.meetup.com/cities/us/ca/manton/;Manton;manton
+http://www.meetup.com/cities/us/ca/march_air_reserve_base/;March Air Reserve Base;march_air_reserve_base
+http://www.meetup.com/cities/us/ca/maricopa/;Maricopa;maricopa
+http://www.meetup.com/cities/us/ca/marina/;Marina;marina
+http://www.meetup.com/cities/us/ca/marina_del_rey/;Marina del Rey;marina_del_rey
+http://www.meetup.com/cities/us/ca/mariposa/;Mariposa;mariposa
+http://www.meetup.com/cities/us/ca/markleeville/;Markleeville;markleeville
+http://www.meetup.com/cities/us/ca/marshall/;Marshall;marshall
+http://www.meetup.com/cities/us/ca/martell/;Martell;martell
+http://www.meetup.com/cities/us/ca/martinez/;Martinez;martinez
+http://www.meetup.com/cities/us/ca/marysville/;Marysville;marysville
+http://www.meetup.com/cities/us/ca/mather/;Mather;mather
+http://www.meetup.com/cities/us/ca/maxwell/;Maxwell;maxwell
+http://www.meetup.com/cities/us/ca/maywood/;Maywood;maywood
+http://www.meetup.com/cities/us/ca/mcarthur/;McArthur;mcarthur
+http://www.meetup.com/cities/us/ca/mcclellan/;McClellan;mcclellan
+http://www.meetup.com/cities/us/ca/mccloud/;McCloud;mccloud
+http://www.meetup.com/cities/us/ca/mc_farland/;Mc Farland;mc_farland
+http://www.meetup.com/cities/us/ca/mckinleyville/;McKinleyville;mckinleyville
+http://www.meetup.com/cities/us/ca/mc_kittrick/;Mc Kittrick;mc_kittrick
+http://www.meetup.com/cities/us/ca/meadow_valley/;Meadow Valley;meadow_valley
+http://www.meetup.com/cities/us/ca/meadow_vista/;Meadow Vista;meadow_vista
+http://www.meetup.com/cities/us/ca/mecca/;Mecca;mecca
+http://www.meetup.com/cities/us/ca/mendocino/;Mendocino;mendocino
+http://www.meetup.com/cities/us/ca/mendota/;Mendota;mendota
+http://www.meetup.com/cities/us/ca/menifee/;Menifee;menifee
+http://www.meetup.com/cities/us/ca/menlo_park/;Menlo Park;menlo_park
+http://www.meetup.com/cities/us/ca/mentone/;Mentone;mentone
+http://www.meetup.com/cities/us/ca/merced/;Merced;merced
+http://www.meetup.com/cities/us/ca/meridian/;Meridian;meridian
+http://www.meetup.com/cities/us/ca/middletown/;Middletown;middletown
+http://www.meetup.com/cities/us/ca/midpines/;Midpines;midpines
+http://www.meetup.com/cities/us/ca/midway_city/;Midway City;midway_city
+http://www.meetup.com/cities/us/ca/milford/;Milford;milford
+http://www.meetup.com/cities/us/ca/millbrae/;Millbrae;millbrae
+http://www.meetup.com/cities/us/ca/mill_creek/;Mill Creek;mill_creek
+http://www.meetup.com/cities/us/ca/mill_valley/;Mill Valley;mill_valley
+http://www.meetup.com/cities/us/ca/millville/;Millville;millville
+http://www.meetup.com/cities/us/ca/milpitas/;Milpitas;milpitas
+http://www.meetup.com/cities/us/ca/mineral/;Mineral;mineral
+http://www.meetup.com/cities/us/ca/mira_loma/;Mira Loma;mira_loma
+http://www.meetup.com/cities/us/ca/miramonte/;Miramonte;miramonte
+http://www.meetup.com/cities/us/ca/miranda/;Miranda;miranda
+http://www.meetup.com/cities/us/ca/mission_hills/;Mission Hills;mission_hills
+http://www.meetup.com/cities/us/ca/mission_viejo/;Mission Viejo;mission_viejo
+http://www.meetup.com/cities/us/ca/mi_wuk_village/;Mi Wuk Village;mi_wuk_village
+http://www.meetup.com/cities/us/ca/moccasin/;Moccasin;moccasin
+http://www.meetup.com/cities/us/ca/modesto/;Modesto;modesto
+http://www.meetup.com/cities/us/ca/mojave/;Mojave;mojave
+http://www.meetup.com/cities/us/ca/mokelumne_hill/;Mokelumne Hill;mokelumne_hill
+http://www.meetup.com/cities/us/ca/mono_hot_springs/;Mono Hot Springs;mono_hot_springs
+http://www.meetup.com/cities/us/ca/monrovia/;Monrovia;monrovia
+http://www.meetup.com/cities/us/ca/montague/;Montague;montague
+http://www.meetup.com/cities/us/ca/montara/;Montara;montara
+http://www.meetup.com/cities/us/ca/montclair/;Montclair;montclair
+http://www.meetup.com/cities/us/ca/montebello/;Montebello;montebello
+http://www.meetup.com/cities/us/ca/monterey/;Monterey;monterey
+http://www.meetup.com/cities/us/ca/monterey_park/;Monterey Park;monterey_park
+http://www.meetup.com/cities/us/ca/monte_rio/;Monte Rio;monte_rio
+http://www.meetup.com/cities/us/ca/montgomery_creek/;Montgomery Creek;montgomery_creek
+http://www.meetup.com/cities/us/ca/montrose/;Montrose;montrose
+http://www.meetup.com/cities/us/ca/moorpark/;Moorpark;moorpark
+http://www.meetup.com/cities/us/ca/moraga/;Moraga;moraga
+http://www.meetup.com/cities/us/ca/moreno_valley/;Moreno Valley;moreno_valley
+http://www.meetup.com/cities/us/ca/morgan_hill/;Morgan Hill;morgan_hill
+http://www.meetup.com/cities/us/ca/morongo_valley/;Morongo Valley;morongo_valley
+http://www.meetup.com/cities/us/ca/morro_bay/;Morro Bay;morro_bay
+http://www.meetup.com/cities/us/ca/moss_beach/;Moss Beach;moss_beach
+http://www.meetup.com/cities/us/ca/moss_landing/;Moss Landing;moss_landing
+http://www.meetup.com/cities/us/ca/mountain_center/;Mountain Center;mountain_center
+http://www.meetup.com/cities/us/ca/mountain_pass/;Mountain Pass;mountain_pass
+http://www.meetup.com/cities/us/ca/mountain_ranch/;Mountain Ranch;mountain_ranch
+http://www.meetup.com/cities/us/ca/mountain_view/;Mountain View;mountain_view
+http://www.meetup.com/cities/us/ca/mount_aukum/;Mount Aukum;mount_aukum
+http://www.meetup.com/cities/us/ca/mount_hamilton/;Mount Hamilton;mount_hamilton
+http://www.meetup.com/cities/us/ca/mount_hermon/;Mount Hermon;mount_hermon
+http://www.meetup.com/cities/us/ca/mount_laguna/;Mount Laguna;mount_laguna
+http://www.meetup.com/cities/us/ca/mount_shasta/;Mount Shasta;mount_shasta
+http://www.meetup.com/cities/us/ca/mount_wilson/;Mount Wilson;mount_wilson
+http://www.meetup.com/cities/us/ca/mt_baldy/;Mt Baldy;mt_baldy
+http://www.meetup.com/cities/us/ca/murphys/;Murphys;murphys
+http://www.meetup.com/cities/us/ca/murrieta/;Murrieta;murrieta
+http://www.meetup.com/cities/us/ca/myers_flat/;Myers Flat;myers_flat
+http://www.meetup.com/cities/us/ca/napa/;Napa;napa
+http://www.meetup.com/cities/us/ca/national_city/;National City;national_city
+http://www.meetup.com/cities/us/ca/navarro/;Navarro;navarro
+http://www.meetup.com/cities/us/ca/needles/;Needles;needles
+http://www.meetup.com/cities/us/ca/nelson/;Nelson;nelson
+http://www.meetup.com/cities/us/ca/nevada_city/;Nevada City;nevada_city
+http://www.meetup.com/cities/us/ca/new_almaden/;New Almaden;new_almaden
+http://www.meetup.com/cities/us/ca/newark/;Newark;newark
+http://www.meetup.com/cities/us/ca/newberry_springs/;Newberry Springs;newberry_springs
+http://www.meetup.com/cities/us/ca/newbury_park/;Newbury Park;newbury_park
+http://www.meetup.com/cities/us/ca/newcastle/;Newcastle;newcastle
+http://www.meetup.com/cities/us/ca/new_cuyama/;New Cuyama;new_cuyama
+http://www.meetup.com/cities/us/ca/newhall/;Newhall;newhall
+http://www.meetup.com/cities/us/ca/newman/;Newman;newman
+http://www.meetup.com/cities/us/ca/newport_beach/;Newport Beach;newport_beach
+http://www.meetup.com/cities/us/ca/newport_coast/;Newport Coast;newport_coast
+http://www.meetup.com/cities/us/ca/nicasio/;Nicasio;nicasio
+http://www.meetup.com/cities/us/ca/nice/;Nice;nice
+http://www.meetup.com/cities/us/ca/nicolaus/;Nicolaus;nicolaus
+http://www.meetup.com/cities/us/ca/niland/;Niland;niland
+http://www.meetup.com/cities/us/ca/nipomo/;Nipomo;nipomo
+http://www.meetup.com/cities/us/ca/nipton/;Nipton;nipton
+http://www.meetup.com/cities/us/ca/norco/;Norco;norco
+http://www.meetup.com/cities/us/ca/norden/;Norden;norden
+http://www.meetup.com/cities/us/ca/north_fork/;North Fork;north_fork
+http://www.meetup.com/cities/us/ca/north_highlands/;North Highlands;north_highlands
+http://www.meetup.com/cities/us/ca/north_hills/;North Hills;north_hills
+http://www.meetup.com/cities/us/ca/north_hollywood/;North Hollywood;north_hollywood
+http://www.meetup.com/cities/us/ca/north_palm_springs/;North Palm Springs;north_palm_springs
+http://www.meetup.com/cities/us/ca/northridge/;Northridge;northridge
+http://www.meetup.com/cities/us/ca/north_san_juan/;North San Juan;north_san_juan
+http://www.meetup.com/cities/us/ca/norwalk/;Norwalk;norwalk
+http://www.meetup.com/cities/us/ca/novato/;Novato;novato
+http://www.meetup.com/cities/us/ca/nubieber/;Nubieber;nubieber
+http://www.meetup.com/cities/us/ca/nuevo/;Nuevo;nuevo
+http://www.meetup.com/cities/us/ca/oakdale/;Oakdale;oakdale
+http://www.meetup.com/cities/us/ca/oakhurst/;Oakhurst;oakhurst
+http://www.meetup.com/cities/us/ca/oakland/;Oakland;oakland
+http://www.meetup.com/cities/us/ca/oakley/;Oakley;oakley
+http://www.meetup.com/cities/us/ca/oak_park/;Oak Park;oak_park
+http://www.meetup.com/cities/us/ca/oak_run/;Oak Run;oak_run
+http://www.meetup.com/cities/us/ca/oak_view/;Oak View;oak_view
+http://www.meetup.com/cities/us/ca/oakville/;Oakville;oakville
+http://www.meetup.com/cities/us/ca/obrien/;Obrien;obrien
+http://www.meetup.com/cities/us/ca/occidental/;Occidental;occidental
+http://www.meetup.com/cities/us/ca/oceano/;Oceano;oceano
+http://www.meetup.com/cities/us/ca/oceanside/;Oceanside;oceanside
+http://www.meetup.com/cities/us/ca/ocotillo/;Ocotillo;ocotillo
+http://www.meetup.com/cities/us/ca/ojai/;Ojai;ojai
+http://www.meetup.com/cities/us/ca/olancha/;Olancha;olancha
+http://www.meetup.com/cities/us/ca/old_station/;Old Station;old_station
+http://www.meetup.com/cities/us/ca/olema/;Olema;olema
+http://www.meetup.com/cities/us/ca/olivehurst/;Olivehurst;olivehurst
+http://www.meetup.com/cities/us/ca/olympic_valley/;Olympic Valley;olympic_valley
+http://www.meetup.com/cities/us/ca/o_neals/;O Neals;o_neals
+http://www.meetup.com/cities/us/ca/ontario/;Ontario;ontario
+http://www.meetup.com/cities/us/ca/onyx/;Onyx;onyx
+http://www.meetup.com/cities/us/ca/orange/;Orange;orange
+http://www.meetup.com/cities/us/ca/orange_cove/;Orange Cove;orange_cove
+http://www.meetup.com/cities/us/ca/orangevale/;Orangevale;orangevale
+http://www.meetup.com/cities/us/ca/oregon_house/;Oregon House;oregon_house
+http://www.meetup.com/cities/us/ca/orick/;Orick;orick
+http://www.meetup.com/cities/us/ca/orinda/;Orinda;orinda
+http://www.meetup.com/cities/us/ca/orland/;Orland;orland
+http://www.meetup.com/cities/us/ca/orleans/;Orleans;orleans
+http://www.meetup.com/cities/us/ca/oro_grande/;Oro Grande;oro_grande
+http://www.meetup.com/cities/us/ca/orosi/;Orosi;orosi
+http://www.meetup.com/cities/us/ca/oroville/;Oroville;oroville
+http://www.meetup.com/cities/us/ca/oxnard/;Oxnard;oxnard
+http://www.meetup.com/cities/us/ca/pacifica/;Pacifica;pacifica
+http://www.meetup.com/cities/us/ca/pacific_grove/;Pacific Grove;pacific_grove
+http://www.meetup.com/cities/us/ca/pacific_palisades/;Pacific Palisades;pacific_palisades
+http://www.meetup.com/cities/us/ca/pacoima/;Pacoima;pacoima
+http://www.meetup.com/cities/us/ca/paicines/;Paicines;paicines
+http://www.meetup.com/cities/us/ca/pala/;Pala;pala
+http://www.meetup.com/cities/us/ca/palermo/;Palermo;palermo
+http://www.meetup.com/cities/us/ca/palmdale/;Palmdale;palmdale
+http://www.meetup.com/cities/us/ca/palm_desert/;Palm Desert;palm_desert
+http://www.meetup.com/cities/us/ca/palm_springs/;Palm Springs;palm_springs
+http://www.meetup.com/cities/us/ca/palo_alto/;Palo Alto;palo_alto
+http://www.meetup.com/cities/us/ca/palo_cedro/;Palo Cedro;palo_cedro
+http://www.meetup.com/cities/us/ca/palomar_mountain/;Palomar Mountain;palomar_mountain
+http://www.meetup.com/cities/us/ca/palos_verdes_peninsula/;Palos Verdes Peninsula;palos_verdes_peninsula
+http://www.meetup.com/cities/us/ca/palo_verde/;Palo Verde;palo_verde
+http://www.meetup.com/cities/us/ca/panorama_city/;Panorama City;panorama_city
+http://www.meetup.com/cities/us/ca/paradise/;Paradise;paradise
+http://www.meetup.com/cities/us/ca/paramount/;Paramount;paramount
+http://www.meetup.com/cities/us/ca/parker_dam/;Parker Dam;parker_dam
+http://www.meetup.com/cities/us/ca/parlier/;Parlier;parlier
+http://www.meetup.com/cities/us/ca/pasadena/;Pasadena;pasadena
+http://www.meetup.com/cities/us/ca/paskenta/;Paskenta;paskenta
+http://www.meetup.com/cities/us/ca/paso_robles/;Paso Robles;paso_robles
+http://www.meetup.com/cities/us/ca/patterson/;Patterson;patterson
+http://www.meetup.com/cities/us/ca/patton/;Patton;patton
+http://www.meetup.com/cities/us/ca/pauma_valley/;Pauma Valley;pauma_valley
+http://www.meetup.com/cities/us/ca/paynes_creek/;Paynes Creek;paynes_creek
+http://www.meetup.com/cities/us/ca/pearblossom/;Pearblossom;pearblossom
+http://www.meetup.com/cities/us/ca/pebble_beach/;Pebble Beach;pebble_beach
+http://www.meetup.com/cities/us/ca/penngrove/;Penngrove;penngrove
+http://www.meetup.com/cities/us/ca/penn_valley/;Penn Valley;penn_valley
+http://www.meetup.com/cities/us/ca/penryn/;Penryn;penryn
+http://www.meetup.com/cities/us/ca/perris/;Perris;perris
+http://www.meetup.com/cities/us/ca/pescadero/;Pescadero;pescadero
+http://www.meetup.com/cities/us/ca/petaluma/;Petaluma;petaluma
+http://www.meetup.com/cities/us/ca/petrolia/;Petrolia;petrolia
+http://www.meetup.com/cities/us/ca/phelan/;Phelan;phelan
+http://www.meetup.com/cities/us/ca/phillipsville/;Phillipsville;phillipsville
+http://www.meetup.com/cities/us/ca/philo/;Philo;philo
+http://www.meetup.com/cities/us/ca/pico_rivera/;Pico Rivera;pico_rivera
+http://www.meetup.com/cities/us/ca/piedmont/;Piedmont;piedmont
+http://www.meetup.com/cities/us/ca/piedra/;Piedra;piedra
+http://www.meetup.com/cities/us/ca/piercy/;Piercy;piercy
+http://www.meetup.com/cities/us/ca/pilot_hill/;Pilot Hill;pilot_hill
+http://www.meetup.com/cities/us/ca/pinecrest/;Pinecrest;pinecrest
+http://www.meetup.com/cities/us/ca/pine_grove/;Pine Grove;pine_grove
+http://www.meetup.com/cities/us/ca/pine_valley/;Pine Valley;pine_valley
+http://www.meetup.com/cities/us/ca/pinole/;Pinole;pinole
+http://www.meetup.com/cities/us/ca/pinon_hills/;Pinon Hills;pinon_hills
+http://www.meetup.com/cities/us/ca/pioneer/;Pioneer;pioneer
+http://www.meetup.com/cities/us/ca/pioneertown/;Pioneertown;pioneertown
+http://www.meetup.com/cities/us/ca/piru/;Piru;piru
+http://www.meetup.com/cities/us/ca/pismo_beach/;Pismo Beach;pismo_beach
+http://www.meetup.com/cities/us/ca/pittsburg/;Pittsburg;pittsburg
+http://www.meetup.com/cities/us/ca/pixley/;Pixley;pixley
+http://www.meetup.com/cities/us/ca/placentia/;Placentia;placentia
+http://www.meetup.com/cities/us/ca/placerville/;Placerville;placerville
+http://www.meetup.com/cities/us/ca/planada/;Planada;planada
+http://www.meetup.com/cities/us/ca/platina/;Platina;platina
+http://www.meetup.com/cities/us/ca/playa_del_rey/;Playa del Rey;playa_del_rey
+http://www.meetup.com/cities/us/ca/playa_vista/;Playa Vista;playa_vista
+http://www.meetup.com/cities/us/ca/pleasant_grove/;Pleasant Grove;pleasant_grove
+http://www.meetup.com/cities/us/ca/pleasant_hill/;Pleasant Hill;pleasant_hill
+http://www.meetup.com/cities/us/ca/pleasanton/;Pleasanton;pleasanton
+http://www.meetup.com/cities/us/ca/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/ca/point_arena/;Point Arena;point_arena
+http://www.meetup.com/cities/us/ca/point_mugu_nawc/;Point Mugu NAWC;point_mugu_nawc
+http://www.meetup.com/cities/us/ca/point_reyes_station/;Point Reyes Station;point_reyes_station
+http://www.meetup.com/cities/us/ca/pollock_pines/;Pollock Pines;pollock_pines
+http://www.meetup.com/cities/us/ca/pomona/;Pomona;pomona
+http://www.meetup.com/cities/us/ca/pope_valley/;Pope Valley;pope_valley
+http://www.meetup.com/cities/us/ca/port_costa/;Port Costa;port_costa
+http://www.meetup.com/cities/us/ca/porter_ranch/;Porter Ranch;porter_ranch
+http://www.meetup.com/cities/us/ca/porterville/;Porterville;porterville
+http://www.meetup.com/cities/us/ca/port_hueneme/;Port Hueneme;port_hueneme
+http://www.meetup.com/cities/us/ca/port_hueneme_cbc_base/;Port Hueneme CBC Base;port_hueneme_cbc_base
+http://www.meetup.com/cities/us/ca/portola/;Portola;portola
+http://www.meetup.com/cities/us/ca/portola_valley/;Portola Valley;portola_valley
+http://www.meetup.com/cities/us/ca/posey/;Posey;posey
+http://www.meetup.com/cities/us/ca/potrero/;Potrero;potrero
+http://www.meetup.com/cities/us/ca/potter_valley/;Potter Valley;potter_valley
+http://www.meetup.com/cities/us/ca/poway/;Poway;poway
+http://www.meetup.com/cities/us/ca/prather/;Prather;prather
+http://www.meetup.com/cities/us/ca/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/ca/proberta/;Proberta;proberta
+http://www.meetup.com/cities/us/ca/quail_valley/;Quail Valley;quail_valley
+http://www.meetup.com/cities/us/ca/quincy/;Quincy;quincy
+http://www.meetup.com/cities/us/ca/rackerby/;Rackerby;rackerby
+http://www.meetup.com/cities/us/ca/rail_road_flat/;Rail Road Flat;rail_road_flat
+http://www.meetup.com/cities/us/ca/raisin_city/;Raisin City;raisin_city
+http://www.meetup.com/cities/us/ca/ramona/;Ramona;ramona
+http://www.meetup.com/cities/us/ca/ranchita/;Ranchita;ranchita
+http://www.meetup.com/cities/us/ca/rancho_cordova/;Rancho Cordova;rancho_cordova
+http://www.meetup.com/cities/us/ca/rancho_cucamonga/;Rancho Cucamonga;rancho_cucamonga
+http://www.meetup.com/cities/us/ca/rancho_mirage/;Rancho Mirage;rancho_mirage
+http://www.meetup.com/cities/us/ca/rancho_palos_verdes/;Rancho Palos Verdes;rancho_palos_verdes
+http://www.meetup.com/cities/us/ca/rancho_santa_fe/;Rancho Santa Fe;rancho_santa_fe
+http://www.meetup.com/cities/us/ca/rancho_santa_margarita/;Rancho Santa Margarita;rancho_santa_margarita
+http://www.meetup.com/cities/us/ca/randsburg/;Randsburg;randsburg
+http://www.meetup.com/cities/us/ca/ravendale/;Ravendale;ravendale
+http://www.meetup.com/cities/us/ca/raymond/;Raymond;raymond
+http://www.meetup.com/cities/us/ca/red_bluff/;Red Bluff;red_bluff
+http://www.meetup.com/cities/us/ca/redcrest/;Redcrest;redcrest
+http://www.meetup.com/cities/us/ca/redding/;Redding;redding
+http://www.meetup.com/cities/us/ca/redlands/;Redlands;redlands
+http://www.meetup.com/cities/us/ca/red_mountain/;Red Mountain;red_mountain
+http://www.meetup.com/cities/us/ca/redondo_beach/;Redondo Beach;redondo_beach
+http://www.meetup.com/cities/us/ca/redway/;Redway;redway
+http://www.meetup.com/cities/us/ca/redwood_city/;Redwood City;redwood_city
+http://www.meetup.com/cities/us/ca/redwood_estates/;Redwood Estates;redwood_estates
+http://www.meetup.com/cities/us/ca/redwood_valley/;Redwood Valley;redwood_valley
+http://www.meetup.com/cities/us/ca/reedley/;Reedley;reedley
+http://www.meetup.com/cities/us/ca/represa/;Represa;represa
+http://www.meetup.com/cities/us/ca/rescue/;Rescue;rescue
+http://www.meetup.com/cities/us/ca/reseda/;Reseda;reseda
+http://www.meetup.com/cities/us/ca/rialto/;Rialto;rialto
+http://www.meetup.com/cities/us/ca/richgrove/;Richgrove;richgrove
+http://www.meetup.com/cities/us/ca/richmond/;Richmond;richmond
+http://www.meetup.com/cities/us/ca/richvale/;Richvale;richvale
+http://www.meetup.com/cities/us/ca/ridgecrest/;Ridgecrest;ridgecrest
+http://www.meetup.com/cities/us/ca/rimforest/;Rimforest;rimforest
+http://www.meetup.com/cities/us/ca/rio_dell/;Rio Dell;rio_dell
+http://www.meetup.com/cities/us/ca/rio_linda/;Rio Linda;rio_linda
+http://www.meetup.com/cities/us/ca/rio_nido/;Rio Nido;rio_nido
+http://www.meetup.com/cities/us/ca/rio_oso/;Rio Oso;rio_oso
+http://www.meetup.com/cities/us/ca/rio_vista/;Rio Vista;rio_vista
+http://www.meetup.com/cities/us/ca/ripon/;Ripon;ripon
+http://www.meetup.com/cities/us/ca/riverbank/;Riverbank;riverbank
+http://www.meetup.com/cities/us/ca/riverdale/;Riverdale;riverdale
+http://www.meetup.com/cities/us/ca/river_pines/;River Pines;river_pines
+http://www.meetup.com/cities/us/ca/riverside/;Riverside;riverside
+http://www.meetup.com/cities/us/ca/robbins/;Robbins;robbins
+http://www.meetup.com/cities/us/ca/rocklin/;Rocklin;rocklin
+http://www.meetup.com/cities/us/ca/rodeo/;Rodeo;rodeo
+http://www.meetup.com/cities/us/ca/rohnert_park/;Rohnert Park;rohnert_park
+http://www.meetup.com/cities/us/ca/rosamond/;Rosamond;rosamond
+http://www.meetup.com/cities/us/ca/rosemead/;Rosemead;rosemead
+http://www.meetup.com/cities/us/ca/roseville/;Roseville;roseville
+http://www.meetup.com/cities/us/ca/ross/;Ross;ross
+http://www.meetup.com/cities/us/ca/rough_and_ready/;Rough and Ready;rough_and_ready
+http://www.meetup.com/cities/us/ca/round_mountain/;Round Mountain;round_mountain
+http://www.meetup.com/cities/us/ca/rowland_heights/;Rowland Heights;rowland_heights
+http://www.meetup.com/cities/us/ca/rumsey/;Rumsey;rumsey
+http://www.meetup.com/cities/us/ca/running_springs/;Running Springs;running_springs
+http://www.meetup.com/cities/us/ca/rutherford/;Rutherford;rutherford
+http://www.meetup.com/cities/us/ca/ryde/;Ryde;ryde
+http://www.meetup.com/cities/us/ca/sacramento/;Sacramento;sacramento
+http://www.meetup.com/cities/us/ca/saint_helena/;Saint Helena;saint_helena
+http://www.meetup.com/cities/us/ca/salida/;Salida;salida
+http://www.meetup.com/cities/us/ca/salinas/;Salinas;salinas
+http://www.meetup.com/cities/us/ca/salton_city/;Salton City;salton_city
+http://www.meetup.com/cities/us/ca/salyer/;Salyer;salyer
+http://www.meetup.com/cities/us/ca/samoa/;Samoa;samoa
+http://www.meetup.com/cities/us/ca/san_andreas/;San Andreas;san_andreas
+http://www.meetup.com/cities/us/ca/san_anselmo/;San Anselmo;san_anselmo
+http://www.meetup.com/cities/us/ca/san_ardo/;San Ardo;san_ardo
+http://www.meetup.com/cities/us/ca/san_bernardino/;San Bernardino;san_bernardino
+http://www.meetup.com/cities/us/ca/san_bruno/;San Bruno;san_bruno
+http://www.meetup.com/cities/us/ca/san_carlos/;San Carlos;san_carlos
+http://www.meetup.com/cities/us/ca/san_clemente/;San Clemente;san_clemente
+http://www.meetup.com/cities/us/ca/san_diego/;San Diego;san_diego
+http://www.meetup.com/cities/us/ca/san_dimas/;San Dimas;san_dimas
+http://www.meetup.com/cities/us/ca/san_fernando/;San Fernando;san_fernando
+http://www.meetup.com/cities/us/ca/san_francisco/;San Francisco;san_francisco
+http://www.meetup.com/cities/us/ca/san_gabriel/;San Gabriel;san_gabriel
+http://www.meetup.com/cities/us/ca/sanger/;Sanger;sanger
+http://www.meetup.com/cities/us/ca/san_geronimo/;San Geronimo;san_geronimo
+http://www.meetup.com/cities/us/ca/san_gregorio/;San Gregorio;san_gregorio
+http://www.meetup.com/cities/us/ca/san_jacinto/;San Jacinto;san_jacinto
+http://www.meetup.com/cities/us/ca/san_joaquin/;San Joaquin;san_joaquin
+http://www.meetup.com/cities/us/ca/san_jose/;San Jose;san_jose
+http://www.meetup.com/cities/us/ca/san_juan_bautista/;San Juan Bautista;san_juan_bautista
+http://www.meetup.com/cities/us/ca/san_juan_capistrano/;San Juan Capistrano;san_juan_capistrano
+http://www.meetup.com/cities/us/ca/san_leandro/;San Leandro;san_leandro
+http://www.meetup.com/cities/us/ca/san_lorenzo/;San Lorenzo;san_lorenzo
+http://www.meetup.com/cities/us/ca/san_lucas/;San Lucas;san_lucas
+http://www.meetup.com/cities/us/ca/san_luis_obispo/;San Luis Obispo;san_luis_obispo
+http://www.meetup.com/cities/us/ca/san_luis_rey/;San Luis Rey;san_luis_rey
+http://www.meetup.com/cities/us/ca/san_marcos/;San Marcos;san_marcos
+http://www.meetup.com/cities/us/ca/san_marino/;San Marino;san_marino
+http://www.meetup.com/cities/us/ca/san_martin/;San Martin;san_martin
+http://www.meetup.com/cities/us/ca/san_mateo/;San Mateo;san_mateo
+http://www.meetup.com/cities/us/ca/san_miguel/;San Miguel;san_miguel
+http://www.meetup.com/cities/us/ca/san_pablo/;San Pablo;san_pablo
+http://www.meetup.com/cities/us/ca/san_pedro/;San Pedro;san_pedro
+http://www.meetup.com/cities/us/ca/san_quentin/;San Quentin;san_quentin
+http://www.meetup.com/cities/us/ca/san_rafael/;San Rafael;san_rafael
+http://www.meetup.com/cities/us/ca/san_ramon/;San Ramon;san_ramon
+http://www.meetup.com/cities/us/ca/san_simeon/;San Simeon;san_simeon
+http://www.meetup.com/cities/us/ca/santa_ana/;Santa Ana;santa_ana
+http://www.meetup.com/cities/us/ca/santa_barbara/;Santa Barbara;santa_barbara
+http://www.meetup.com/cities/us/ca/santa_clara/;Santa Clara;santa_clara
+http://www.meetup.com/cities/us/ca/santa_clarita/;Santa Clarita;santa_clarita
+http://www.meetup.com/cities/us/ca/santa_cruz/;Santa Cruz;santa_cruz
+http://www.meetup.com/cities/us/ca/santa_fe_springs/;Santa Fe Springs;santa_fe_springs
+http://www.meetup.com/cities/us/ca/santa_margarita/;Santa Margarita;santa_margarita
+http://www.meetup.com/cities/us/ca/santa_maria/;Santa Maria;santa_maria
+http://www.meetup.com/cities/us/ca/santa_monica/;Santa Monica;santa_monica
+http://www.meetup.com/cities/us/ca/santa_paula/;Santa Paula;santa_paula
+http://www.meetup.com/cities/us/ca/santa_rita_park/;Santa Rita Park;santa_rita_park
+http://www.meetup.com/cities/us/ca/santa_rosa/;Santa Rosa;santa_rosa
+http://www.meetup.com/cities/us/ca/santa_ynez/;Santa Ynez;santa_ynez
+http://www.meetup.com/cities/us/ca/santa_ysabel/;Santa Ysabel;santa_ysabel
+http://www.meetup.com/cities/us/ca/santee/;Santee;santee
+http://www.meetup.com/cities/us/ca/san_ysidro/;San Ysidro;san_ysidro
+http://www.meetup.com/cities/us/ca/saratoga/;Saratoga;saratoga
+http://www.meetup.com/cities/us/ca/sausalito/;Sausalito;sausalito
+http://www.meetup.com/cities/us/ca/scotia/;Scotia;scotia
+http://www.meetup.com/cities/us/ca/scott_bar/;Scott Bar;scott_bar
+http://www.meetup.com/cities/us/ca/scotts_valley/;Scotts Valley;scotts_valley
+http://www.meetup.com/cities/us/ca/seal_beach/;Seal Beach;seal_beach
+http://www.meetup.com/cities/us/ca/seaside/;Seaside;seaside
+http://www.meetup.com/cities/us/ca/sebastopol/;Sebastopol;sebastopol
+http://www.meetup.com/cities/us/ca/seeley/;Seeley;seeley
+http://www.meetup.com/cities/us/ca/seiad_valley/;Seiad Valley;seiad_valley
+http://www.meetup.com/cities/us/ca/selma/;Selma;selma
+http://www.meetup.com/cities/us/ca/sequoia_national_park/;Sequoia National Park;sequoia_national_park
+http://www.meetup.com/cities/us/ca/shafter/;Shafter;shafter
+http://www.meetup.com/cities/us/ca/shandon/;Shandon;shandon
+http://www.meetup.com/cities/us/ca/shasta/;Shasta;shasta
+http://www.meetup.com/cities/us/ca/shasta_lake/;Shasta Lake;shasta_lake
+http://www.meetup.com/cities/us/ca/shaver_lake/;Shaver Lake;shaver_lake
+http://www.meetup.com/cities/us/ca/sheep_ranch/;Sheep Ranch;sheep_ranch
+http://www.meetup.com/cities/us/ca/sheridan/;Sheridan;sheridan
+http://www.meetup.com/cities/us/ca/sherman_oaks/;Sherman Oaks;sherman_oaks
+http://www.meetup.com/cities/us/ca/shingle_springs/;Shingle Springs;shingle_springs
+http://www.meetup.com/cities/us/ca/shingletown/;Shingletown;shingletown
+http://www.meetup.com/cities/us/ca/shoshone/;Shoshone;shoshone
+http://www.meetup.com/cities/us/ca/sierra_city/;Sierra City;sierra_city
+http://www.meetup.com/cities/us/ca/sierra_madre/;Sierra Madre;sierra_madre
+http://www.meetup.com/cities/us/ca/sierraville/;Sierraville;sierraville
+http://www.meetup.com/cities/us/ca/signal_hill/;Signal Hill;signal_hill
+http://www.meetup.com/cities/us/ca/silverado/;Silverado;silverado
+http://www.meetup.com/cities/us/ca/simi_valley/;Simi Valley;simi_valley
+http://www.meetup.com/cities/us/ca/skyforest/;Skyforest;skyforest
+http://www.meetup.com/cities/us/ca/sloughhouse/;Sloughhouse;sloughhouse
+http://www.meetup.com/cities/us/ca/smartville/;Smartville;smartville
+http://www.meetup.com/cities/us/ca/smith_river/;Smith River;smith_river
+http://www.meetup.com/cities/us/ca/snelling/;Snelling;snelling
+http://www.meetup.com/cities/us/ca/soda_springs/;Soda Springs;soda_springs
+http://www.meetup.com/cities/us/ca/solana_beach/;Solana Beach;solana_beach
+http://www.meetup.com/cities/us/ca/soledad/;Soledad;soledad
+http://www.meetup.com/cities/us/ca/solvang/;Solvang;solvang
+http://www.meetup.com/cities/us/ca/somerset/;Somerset;somerset
+http://www.meetup.com/cities/us/ca/somes_bar/;Somes Bar;somes_bar
+http://www.meetup.com/cities/us/ca/somis/;Somis;somis
+http://www.meetup.com/cities/us/ca/sonoma/;Sonoma;sonoma
+http://www.meetup.com/cities/us/ca/sonora/;Sonora;sonora
+http://www.meetup.com/cities/us/ca/soquel/;Soquel;soquel
+http://www.meetup.com/cities/us/ca/soulsbyville/;Soulsbyville;soulsbyville
+http://www.meetup.com/cities/us/ca/south_dos_palos/;South Dos Palos;south_dos_palos
+http://www.meetup.com/cities/us/ca/south_el_monte/;South El Monte;south_el_monte
+http://www.meetup.com/cities/us/ca/south_gate/;South Gate;south_gate
+http://www.meetup.com/cities/us/ca/south_lake_tahoe/;South Lake Tahoe;south_lake_tahoe
+http://www.meetup.com/cities/us/ca/south_pasadena/;South Pasadena;south_pasadena
+http://www.meetup.com/cities/us/ca/south_san_francisco/;South San Francisco;south_san_francisco
+http://www.meetup.com/cities/us/ca/spreckels/;Spreckels;spreckels
+http://www.meetup.com/cities/us/ca/spring_valley/;Spring Valley;spring_valley
+http://www.meetup.com/cities/us/ca/springville/;Springville;springville
+http://www.meetup.com/cities/us/ca/squaw_valley/;Squaw Valley;squaw_valley
+http://www.meetup.com/cities/us/ca/standard/;Standard;standard
+http://www.meetup.com/cities/us/ca/standish/;Standish;standish
+http://www.meetup.com/cities/us/ca/stanford/;Stanford;stanford
+http://www.meetup.com/cities/us/ca/stanton/;Stanton;stanton
+http://www.meetup.com/cities/us/ca/stevenson_ranch/;Stevenson Ranch;stevenson_ranch
+http://www.meetup.com/cities/us/ca/stevinson/;Stevinson;stevinson
+http://www.meetup.com/cities/us/ca/stewarts_point/;Stewarts Point;stewarts_point
+http://www.meetup.com/cities/us/ca/stinson_beach/;Stinson Beach;stinson_beach
+http://www.meetup.com/cities/us/ca/stirling_city/;Stirling City;stirling_city
+http://www.meetup.com/cities/us/ca/stockton/;Stockton;stockton
+http://www.meetup.com/cities/us/ca/stonyford/;Stonyford;stonyford
+http://www.meetup.com/cities/us/ca/storrie/;Storrie;storrie
+http://www.meetup.com/cities/us/ca/stratford/;Stratford;stratford
+http://www.meetup.com/cities/us/ca/strathmore/;Strathmore;strathmore
+http://www.meetup.com/cities/us/ca/strawberry/;Strawberry;strawberry
+http://www.meetup.com/cities/us/ca/strawberry_valley/;Strawberry Valley;strawberry_valley
+http://www.meetup.com/cities/us/ca/studio_city/;Studio City;studio_city
+http://www.meetup.com/cities/us/ca/sugarloaf/;Sugarloaf;sugarloaf
+http://www.meetup.com/cities/us/ca/suisun_city/;Suisun City;suisun_city
+http://www.meetup.com/cities/us/ca/sultana/;Sultana;sultana
+http://www.meetup.com/cities/us/ca/summerland/;Summerland;summerland
+http://www.meetup.com/cities/us/ca/sun_city/;Sun City;sun_city
+http://www.meetup.com/cities/us/ca/sunland/;Sunland;sunland
+http://www.meetup.com/cities/us/ca/sunnyvale/;Sunnyvale;sunnyvale
+http://www.meetup.com/cities/us/ca/sunol/;Sunol;sunol
+http://www.meetup.com/cities/us/ca/sunset_beach/;Sunset Beach;sunset_beach
+http://www.meetup.com/cities/us/ca/sun_valley/;Sun Valley;sun_valley
+http://www.meetup.com/cities/us/ca/surfside/;Surfside;surfside
+http://www.meetup.com/cities/us/ca/susanville/;Susanville;susanville
+http://www.meetup.com/cities/us/ca/sutter/;Sutter;sutter
+http://www.meetup.com/cities/us/ca/sutter_creek/;Sutter Creek;sutter_creek
+http://www.meetup.com/cities/us/ca/sylmar/;Sylmar;sylmar
+http://www.meetup.com/cities/us/ca/taft/;Taft;taft
+http://www.meetup.com/cities/us/ca/tahoe_city/;Tahoe City;tahoe_city
+http://www.meetup.com/cities/us/ca/tahoe_vista/;Tahoe Vista;tahoe_vista
+http://www.meetup.com/cities/us/ca/tahoma/;Tahoma;tahoma
+http://www.meetup.com/cities/us/ca/talmage/;Talmage;talmage
+http://www.meetup.com/cities/us/ca/tarzana/;Tarzana;tarzana
+http://www.meetup.com/cities/us/ca/taylorsville/;Taylorsville;taylorsville
+http://www.meetup.com/cities/us/ca/tecate/;Tecate;tecate
+http://www.meetup.com/cities/us/ca/tecopa/;Tecopa;tecopa
+http://www.meetup.com/cities/us/ca/tehachapi/;Tehachapi;tehachapi
+http://www.meetup.com/cities/us/ca/tehama/;Tehama;tehama
+http://www.meetup.com/cities/us/ca/temecula/;Temecula;temecula
+http://www.meetup.com/cities/us/ca/temple_city/;Temple City;temple_city
+http://www.meetup.com/cities/us/ca/templeton/;Templeton;templeton
+http://www.meetup.com/cities/us/ca/termo/;Termo;termo
+http://www.meetup.com/cities/us/ca/terra_bella/;Terra Bella;terra_bella
+http://www.meetup.com/cities/us/ca/thermal/;Thermal;thermal
+http://www.meetup.com/cities/us/ca/the_sea_ranch/;The Sea Ranch;the_sea_ranch
+http://www.meetup.com/cities/us/ca/thornton/;Thornton;thornton
+http://www.meetup.com/cities/us/ca/thousand_oaks/;Thousand Oaks;thousand_oaks
+http://www.meetup.com/cities/us/ca/thousand_palms/;Thousand Palms;thousand_palms
+http://www.meetup.com/cities/us/ca/three_rivers/;Three Rivers;three_rivers
+http://www.meetup.com/cities/us/ca/tipton/;Tipton;tipton
+http://www.meetup.com/cities/us/ca/tollhouse/;Tollhouse;tollhouse
+http://www.meetup.com/cities/us/ca/toluca_lake/;Toluca Lake;toluca_lake
+http://www.meetup.com/cities/us/ca/tomales/;Tomales;tomales
+http://www.meetup.com/cities/us/ca/topanga/;Topanga;topanga
+http://www.meetup.com/cities/us/ca/topaz/;Topaz;topaz
+http://www.meetup.com/cities/us/ca/torrance/;Torrance;torrance
+http://www.meetup.com/cities/us/ca/trabuco_canyon/;Trabuco Canyon;trabuco_canyon
+http://www.meetup.com/cities/us/ca/tracy/;Tracy;tracy
+http://www.meetup.com/cities/us/ca/tranquillity/;Tranquillity;tranquillity
+http://www.meetup.com/cities/us/ca/traver/;Traver;traver
+http://www.meetup.com/cities/us/ca/travis_afb/;Travis AFB;travis_afb
+http://www.meetup.com/cities/us/ca/tres_pinos/;Tres Pinos;tres_pinos
+http://www.meetup.com/cities/us/ca/trinidad/;Trinidad;trinidad
+http://www.meetup.com/cities/us/ca/trinity_center/;Trinity Center;trinity_center
+http://www.meetup.com/cities/us/ca/trona/;Trona;trona
+http://www.meetup.com/cities/us/ca/truckee/;Truckee;truckee
+http://www.meetup.com/cities/us/ca/tujunga/;Tujunga;tujunga
+http://www.meetup.com/cities/us/ca/tulare/;Tulare;tulare
+http://www.meetup.com/cities/us/ca/tulelake/;Tulelake;tulelake
+http://www.meetup.com/cities/us/ca/tuolumne/;Tuolumne;tuolumne
+http://www.meetup.com/cities/us/ca/tupman/;Tupman;tupman
+http://www.meetup.com/cities/us/ca/turlock/;Turlock;turlock
+http://www.meetup.com/cities/us/ca/tustin/;Tustin;tustin
+http://www.meetup.com/cities/us/ca/twain/;Twain;twain
+http://www.meetup.com/cities/us/ca/twain_harte/;Twain Harte;twain_harte
+http://www.meetup.com/cities/us/ca/twentynine_palms/;Twentynine Palms;twentynine_palms
+http://www.meetup.com/cities/us/ca/twin_bridges/;Twin Bridges;twin_bridges
+http://www.meetup.com/cities/us/ca/twin_peaks/;Twin Peaks;twin_peaks
+http://www.meetup.com/cities/us/ca/ukiah/;Ukiah;ukiah
+http://www.meetup.com/cities/us/ca/union_city/;Union City;union_city
+http://www.meetup.com/cities/us/ca/universal_city/;Universal City;universal_city
+http://www.meetup.com/cities/us/ca/upland/;Upland;upland
+http://www.meetup.com/cities/us/ca/upper_lake/;Upper Lake;upper_lake
+http://www.meetup.com/cities/us/ca/vacaville/;Vacaville;vacaville
+http://www.meetup.com/cities/us/ca/valencia/;Valencia;valencia
+http://www.meetup.com/cities/us/ca/vallecito/;Vallecito;vallecito
+http://www.meetup.com/cities/us/ca/vallejo/;Vallejo;vallejo
+http://www.meetup.com/cities/us/ca/valley_center/;Valley Center;valley_center
+http://www.meetup.com/cities/us/ca/valley_ford/;Valley Ford;valley_ford
+http://www.meetup.com/cities/us/ca/valley_springs/;Valley Springs;valley_springs
+http://www.meetup.com/cities/us/ca/valley_village/;Valley Village;valley_village
+http://www.meetup.com/cities/us/ca/valyermo/;Valyermo;valyermo
+http://www.meetup.com/cities/us/ca/van_nuys/;Van Nuys;van_nuys
+http://www.meetup.com/cities/us/ca/venice/;Venice;venice
+http://www.meetup.com/cities/us/ca/ventura/;Ventura;ventura
+http://www.meetup.com/cities/us/ca/verdugo_city/;Verdugo City;verdugo_city
+http://www.meetup.com/cities/us/ca/vernalis/;Vernalis;vernalis
+http://www.meetup.com/cities/us/ca/victor/;Victor;victor
+http://www.meetup.com/cities/us/ca/victorville/;Victorville;victorville
+http://www.meetup.com/cities/us/ca/vidal/;Vidal;vidal
+http://www.meetup.com/cities/us/ca/villa_grande/;Villa Grande;villa_grande
+http://www.meetup.com/cities/us/ca/villa_park/;Villa Park;villa_park
+http://www.meetup.com/cities/us/ca/vina/;Vina;vina
+http://www.meetup.com/cities/us/ca/vineburg/;Vineburg;vineburg
+http://www.meetup.com/cities/us/ca/vinton/;Vinton;vinton
+http://www.meetup.com/cities/us/ca/visalia/;Visalia;visalia
+http://www.meetup.com/cities/us/ca/vista/;Vista;vista
+http://www.meetup.com/cities/us/ca/volcano/;Volcano;volcano
+http://www.meetup.com/cities/us/ca/wallace/;Wallace;wallace
+http://www.meetup.com/cities/us/ca/walnut/;Walnut;walnut
+http://www.meetup.com/cities/us/ca/walnut_creek/;Walnut Creek;walnut_creek
+http://www.meetup.com/cities/us/ca/walnut_grove/;Walnut Grove;walnut_grove
+http://www.meetup.com/cities/us/ca/warner_springs/;Warner Springs;warner_springs
+http://www.meetup.com/cities/us/ca/wasco/;Wasco;wasco
+http://www.meetup.com/cities/us/ca/washington/;Washington;washington
+http://www.meetup.com/cities/us/ca/waterford/;Waterford;waterford
+http://www.meetup.com/cities/us/ca/watsonville/;Watsonville;watsonville
+http://www.meetup.com/cities/us/ca/waukena/;Waukena;waukena
+http://www.meetup.com/cities/us/ca/weaverville/;Weaverville;weaverville
+http://www.meetup.com/cities/us/ca/weed/;Weed;weed
+http://www.meetup.com/cities/us/ca/weimar/;Weimar;weimar
+http://www.meetup.com/cities/us/ca/weldon/;Weldon;weldon
+http://www.meetup.com/cities/us/ca/wendel/;Wendel;wendel
+http://www.meetup.com/cities/us/ca/weott/;Weott;weott
+http://www.meetup.com/cities/us/ca/west_covina/;West Covina;west_covina
+http://www.meetup.com/cities/us/ca/west_hills/;West Hills;west_hills
+http://www.meetup.com/cities/us/ca/west_hollywood/;West Hollywood;west_hollywood
+http://www.meetup.com/cities/us/ca/westlake_village/;Westlake Village;westlake_village
+http://www.meetup.com/cities/us/ca/westley/;Westley;westley
+http://www.meetup.com/cities/us/ca/westminster/;Westminster;westminster
+http://www.meetup.com/cities/us/ca/westmorland/;Westmorland;westmorland
+http://www.meetup.com/cities/us/ca/west_point/;West Point;west_point
+http://www.meetup.com/cities/us/ca/westport/;Westport;westport
+http://www.meetup.com/cities/us/ca/west_sacramento/;West Sacramento;west_sacramento
+http://www.meetup.com/cities/us/ca/westwood/;Westwood;westwood
+http://www.meetup.com/cities/us/ca/wheatland/;Wheatland;wheatland
+http://www.meetup.com/cities/us/ca/whiskeytown/;Whiskeytown;whiskeytown
+http://www.meetup.com/cities/us/ca/whitethorn/;Whitethorn;whitethorn
+http://www.meetup.com/cities/us/ca/whitewater/;Whitewater;whitewater
+http://www.meetup.com/cities/us/ca/whitmore/;Whitmore;whitmore
+http://www.meetup.com/cities/us/ca/whittier/;Whittier;whittier
+http://www.meetup.com/cities/us/ca/wildomar/;Wildomar;wildomar
+http://www.meetup.com/cities/us/ca/williams/;Williams;williams
+http://www.meetup.com/cities/us/ca/willits/;Willits;willits
+http://www.meetup.com/cities/us/ca/willow_creek/;Willow Creek;willow_creek
+http://www.meetup.com/cities/us/ca/willows/;Willows;willows
+http://www.meetup.com/cities/us/ca/wilmington/;Wilmington;wilmington
+http://www.meetup.com/cities/us/ca/wilseyville/;Wilseyville;wilseyville
+http://www.meetup.com/cities/us/ca/wilton/;Wilton;wilton
+http://www.meetup.com/cities/us/ca/winchester/;Winchester;winchester
+http://www.meetup.com/cities/us/ca/windsor/;Windsor;windsor
+http://www.meetup.com/cities/us/ca/winnetka/;Winnetka;winnetka
+http://www.meetup.com/cities/us/ca/winterhaven/;Winterhaven;winterhaven
+http://www.meetup.com/cities/us/ca/winters/;Winters;winters
+http://www.meetup.com/cities/us/ca/winton/;Winton;winton
+http://www.meetup.com/cities/us/ca/wishon/;Wishon;wishon
+http://www.meetup.com/cities/us/ca/witter_springs/;Witter Springs;witter_springs
+http://www.meetup.com/cities/us/ca/wofford_heights/;Wofford Heights;wofford_heights
+http://www.meetup.com/cities/us/ca/woodacre/;Woodacre;woodacre
+http://www.meetup.com/cities/us/ca/woodbridge/;Woodbridge;woodbridge
+http://www.meetup.com/cities/us/ca/woodlake/;Woodlake;woodlake
+http://www.meetup.com/cities/us/ca/woodland/;Woodland;woodland
+http://www.meetup.com/cities/us/ca/woodland_hills/;Woodland Hills;woodland_hills
+http://www.meetup.com/cities/us/ca/woody/;Woody;woody
+http://www.meetup.com/cities/us/ca/wrightwood/;Wrightwood;wrightwood
+http://www.meetup.com/cities/us/ca/yermo/;Yermo;yermo
+http://www.meetup.com/cities/us/ca/yettem/;Yettem;yettem
+http://www.meetup.com/cities/us/ca/yolo/;Yolo;yolo
+http://www.meetup.com/cities/us/ca/yorba_linda/;Yorba Linda;yorba_linda
+http://www.meetup.com/cities/us/ca/yorkville/;Yorkville;yorkville
+http://www.meetup.com/cities/us/ca/yosemite_national_park/;Yosemite National Park;yosemite_national_park
+http://www.meetup.com/cities/us/ca/yountville/;Yountville;yountville
+http://www.meetup.com/cities/us/ca/yreka/;Yreka;yreka
+http://www.meetup.com/cities/us/ca/yuba_city/;Yuba City;yuba_city
+http://www.meetup.com/cities/us/ca/yucaipa/;Yucaipa;yucaipa
+http://www.meetup.com/cities/us/ca/yucca_valley/;Yucca Valley;yucca_valley
+http://www.meetup.com/cities/us/ca/zamora/;Zamora;zamora
+http://www.meetup.com/cities/us/ca/zenia/;Zenia;zenia

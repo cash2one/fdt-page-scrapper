@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/cu/abreus/;Abreus;abreus
+http://www.meetup.com/cities/cu/agramonte/;Agramonte;agramonte
+http://www.meetup.com/cities/cu/aguacate/;Aguacate;aguacate
+http://www.meetup.com/cities/cu/alacranes/;Alacranes;alacranes
+http://www.meetup.com/cities/cu/alqu%C3%ADzar/;Alquízar;alqu%C3%ADzar
+http://www.meetup.com/cities/cu/ameca/;Ameca;ameca
+http://www.meetup.com/cities/cu/antilla/;Antilla;antilla
+http://www.meetup.com/cities/cu/artemisa/;Artemisa;artemisa
+http://www.meetup.com/cities/cu/bataban%C3%B3/;Batabanó;bataban%C3%B3
+http://www.meetup.com/cities/cu/bayamo/;Bayamo;bayamo
+http://www.meetup.com/cities/cu/bolondr%C3%B3n/;Bolondrón;bolondr%C3%B3n
+http://www.meetup.com/cities/cu/buenos_aires/;Buenos Aires;buenos_aires
+http://www.meetup.com/cities/cu/b%C3%A1guanos/;Báguanos;b%C3%A1guanos
+http://www.meetup.com/cities/cu/caba%C3%B1as/;Cabañas;caba%C3%B1as
+http://www.meetup.com/cities/cu/cacocum/;Cacocum;cacocum
+http://www.meetup.com/cities/cu/calabazar_de_sagua/;Calabazar de Sagua;calabazar_de_sagua
+http://www.meetup.com/cities/cu/camag%C3%BCey/;Camagüey;camag%C3%BCey
+http://www.meetup.com/cities/cu/camajuan%C3%AD/;Camajuaní;camajuan%C3%AD
+http://www.meetup.com/cities/cu/candel%C3%A1ria/;Candelária;candel%C3%A1ria
+http://www.meetup.com/cities/cu/caney/;Caney;caney
+http://www.meetup.com/cities/cu/carlos_manuel_de_c%C3%A9spedes/;Carlos Manuel de Céspedes;carlos_manuel_de_c%C3%A9spedes
+http://www.meetup.com/cities/cu/carlos_rojas/;Carlos Rojas;carlos_rojas
+http://www.meetup.com/cities/cu/ciego_de_%C3%A1vila/;Ciego de Ávila;ciego_de_%C3%A1vila
+http://www.meetup.com/cities/cu/cienfuegos/;Cienfuegos;cienfuegos
+http://www.meetup.com/cities/cu/cifuentes/;Cifuentes;cifuentes
+http://www.meetup.com/cities/cu/guant%C3%A1namo/;Guantánamo;guant%C3%A1namo
+http://www.meetup.com/cities/cu/havana/;Havana;havana
+http://www.meetup.com/cities/cu/holgu%C3%ADn/;Holguín;holgu%C3%ADn
+http://www.meetup.com/cities/cu/juan_gualberto_g%C3%B3mez/;Juan Gualberto Gómez;juan_gualberto_g%C3%B3mez
+http://www.meetup.com/cities/cu/los_arabos/;Los Arabos;los_arabos
+http://www.meetup.com/cities/cu/manat%C3%AD/;Manatí;manat%C3%AD
+http://www.meetup.com/cities/cu/manicaragua/;Manicaragua;manicaragua
+http://www.meetup.com/cities/cu/mantova/;Mantova;mantova
+http://www.meetup.com/cities/cu/mart%C3%AD/;Martí;mart%C3%AD
+http://www.meetup.com/cities/cu/matanzas/;Matanzas;matanzas
+http://www.meetup.com/cities/cu/m%C3%A1ximo_g%C3%B3mez/;Máximo Gómez;m%C3%A1ximo_g%C3%B3mez
+http://www.meetup.com/cities/cu/nuevitas/;Nuevitas;nuevitas
+http://www.meetup.com/cities/cu/pedro_betancourt/;Pedro Betancourt;pedro_betancourt
+http://www.meetup.com/cities/cu/pil%C3%B3n/;Pilón;pil%C3%B3n
+http://www.meetup.com/cities/cu/pinar_del_r%C3%ADo/;Pinar del Río;pinar_del_r%C3%ADo
+http://www.meetup.com/cities/cu/placetas/;Placetas;placetas
+http://www.meetup.com/cities/cu/quemado_de_g%C3%BCines/;Quemado de Güines;quemado_de_g%C3%BCines
+http://www.meetup.com/cities/cu/sagua_la_grande/;Sagua la Grande;sagua_la_grande
+http://www.meetup.com/cities/cu/san_juan_y_mart%C3%ADnez/;San Juan y Martínez;san_juan_y_mart%C3%ADnez
+http://www.meetup.com/cities/cu/santa_f%C3%A9/;Santa Fé;santa_f%C3%A9
+http://www.meetup.com/cities/cu/santiago_de_cuba/;Santiago de Cuba;santiago_de_cuba
+http://www.meetup.com/cities/cu/songo-la_maya/;Songo-La Maya;songo-la_maya
+http://www.meetup.com/cities/cu/varadero/;Varadero;varadero
+http://www.meetup.com/cities/cu/zaza_del_medio/;Zaza del Medio;zaza_del_medio
+http://www.meetup.com/cities/cu/zulueta/;Zulueta;zulueta

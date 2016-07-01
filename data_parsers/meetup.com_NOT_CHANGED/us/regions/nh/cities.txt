@@ -1,0 +1,510 @@
+http://www.meetup.com/cities/us/nh/acworth/;Acworth;acworth
+http://www.meetup.com/cities/us/nh/alstead/;Alstead;alstead
+http://www.meetup.com/cities/us/nh/alton/;Alton;alton
+http://www.meetup.com/cities/us/nh/alton_bay/;Alton Bay;alton_bay
+http://www.meetup.com/cities/us/nh/amherst/;Amherst;amherst
+http://www.meetup.com/cities/us/nh/andover/;Andover;andover
+http://www.meetup.com/cities/us/nh/antrim/;Antrim;antrim
+http://www.meetup.com/cities/us/nh/ashland/;Ashland;ashland
+http://www.meetup.com/cities/us/nh/ashuelot/;Ashuelot;ashuelot
+http://www.meetup.com/cities/us/nh/atkinson/;Atkinson;atkinson
+http://www.meetup.com/cities/us/nh/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/nh/barnstead/;Barnstead;barnstead
+http://www.meetup.com/cities/us/nh/barrington/;Barrington;barrington
+http://www.meetup.com/cities/us/nh/bartlett/;Bartlett;bartlett
+http://www.meetup.com/cities/us/nh/bath/;Bath;bath
+http://www.meetup.com/cities/us/nh/bedford/;Bedford;bedford
+http://www.meetup.com/cities/us/nh/belmont/;Belmont;belmont
+http://www.meetup.com/cities/us/nh/bennington/;Bennington;bennington
+http://www.meetup.com/cities/us/nh/berlin/;Berlin;berlin
+http://www.meetup.com/cities/us/nh/bethlehem/;Bethlehem;bethlehem
+http://www.meetup.com/cities/us/nh/bow/;Bow;bow
+http://www.meetup.com/cities/us/nh/bradford/;Bradford;bradford
+http://www.meetup.com/cities/us/nh/bretton_woods/;Bretton Woods;bretton_woods
+http://www.meetup.com/cities/us/nh/bristol/;Bristol;bristol
+http://www.meetup.com/cities/us/nh/brookline/;Brookline;brookline
+http://www.meetup.com/cities/us/nh/campton/;Campton;campton
+http://www.meetup.com/cities/us/nh/canaan/;Canaan;canaan
+http://www.meetup.com/cities/us/nh/candia/;Candia;candia
+http://www.meetup.com/cities/us/nh/canterbury/;Canterbury;canterbury
+http://www.meetup.com/cities/us/nh/center_barnstead/;Center Barnstead;center_barnstead
+http://www.meetup.com/cities/us/nh/center_conway/;Center Conway;center_conway
+http://www.meetup.com/cities/us/nh/center_harbor/;Center Harbor;center_harbor
+http://www.meetup.com/cities/us/nh/center_ossipee/;Center Ossipee;center_ossipee
+http://www.meetup.com/cities/us/nh/center_sandwich/;Center Sandwich;center_sandwich
+http://www.meetup.com/cities/us/nh/center_strafford/;Center Strafford;center_strafford
+http://www.meetup.com/cities/us/nh/center_tuftonboro/;Center Tuftonboro;center_tuftonboro
+http://www.meetup.com/cities/us/nh/charlestown/;Charlestown;charlestown
+http://www.meetup.com/cities/us/nh/chester/;Chester;chester
+http://www.meetup.com/cities/us/nh/chesterfield/;Chesterfield;chesterfield
+http://www.meetup.com/cities/us/nh/chichester/;Chichester;chichester
+http://www.meetup.com/cities/us/nh/chocorua/;Chocorua;chocorua
+http://www.meetup.com/cities/us/nh/claremont/;Claremont;claremont
+http://www.meetup.com/cities/us/nh/colebrook/;Colebrook;colebrook
+http://www.meetup.com/cities/us/nh/concord/;Concord;concord
+http://www.meetup.com/cities/us/nh/contoocook/;Contoocook;contoocook
+http://www.meetup.com/cities/us/nh/conway/;Conway;conway
+http://www.meetup.com/cities/us/nh/cornish/;Cornish;cornish
+http://www.meetup.com/cities/us/nh/cornish_flat/;Cornish Flat;cornish_flat
+http://www.meetup.com/cities/us/nh/danbury/;Danbury;danbury
+http://www.meetup.com/cities/us/nh/danville/;Danville;danville
+http://www.meetup.com/cities/us/nh/deerfield/;Deerfield;deerfield
+http://www.meetup.com/cities/us/nh/derry/;Derry;derry
+http://www.meetup.com/cities/us/nh/dover/;Dover;dover
+http://www.meetup.com/cities/us/nh/drewsville/;Drewsville;drewsville
+http://www.meetup.com/cities/us/nh/dublin/;Dublin;dublin
+http://www.meetup.com/cities/us/nh/dunbarton/;Dunbarton;dunbarton
+http://www.meetup.com/cities/us/nh/durham/;Durham;durham
+http://www.meetup.com/cities/us/nh/east_andover/;East Andover;east_andover
+http://www.meetup.com/cities/us/nh/east_candia/;East Candia;east_candia
+http://www.meetup.com/cities/us/nh/east_derry/;East Derry;east_derry
+http://www.meetup.com/cities/us/nh/east_hampstead/;East Hampstead;east_hampstead
+http://www.meetup.com/cities/us/nh/east_kingston/;East Kingston;east_kingston
+http://www.meetup.com/cities/us/nh/east_wakefield/;East Wakefield;east_wakefield
+http://www.meetup.com/cities/us/nh/eaton_center/;Eaton Center;eaton_center
+http://www.meetup.com/cities/us/nh/effingham/;Effingham;effingham
+http://www.meetup.com/cities/us/nh/elkins/;Elkins;elkins
+http://www.meetup.com/cities/us/nh/enfield/;Enfield;enfield
+http://www.meetup.com/cities/us/nh/enfield_center/;Enfield Center;enfield_center
+http://www.meetup.com/cities/us/nh/epping/;Epping;epping
+http://www.meetup.com/cities/us/nh/epsom/;Epsom;epsom
+http://www.meetup.com/cities/us/nh/errol/;Errol;errol
+http://www.meetup.com/cities/us/nh/etna/;Etna;etna
+http://www.meetup.com/cities/us/nh/exeter/;Exeter;exeter
+http://www.meetup.com/cities/us/nh/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/nh/fitzwilliam/;Fitzwilliam;fitzwilliam
+http://www.meetup.com/cities/us/nh/francestown/;Francestown;francestown
+http://www.meetup.com/cities/us/nh/franconia/;Franconia;franconia
+http://www.meetup.com/cities/us/nh/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/nh/freedom/;Freedom;freedom
+http://www.meetup.com/cities/us/nh/fremont/;Fremont;fremont
+http://www.meetup.com/cities/us/nh/georges_mills/;Georges Mills;georges_mills
+http://www.meetup.com/cities/us/nh/gilford/;Gilford;gilford
+http://www.meetup.com/cities/us/nh/gilmanton/;Gilmanton;gilmanton
+http://www.meetup.com/cities/us/nh/gilmanton_iron_works/;Gilmanton Iron Works;gilmanton_iron_works
+http://www.meetup.com/cities/us/nh/gilsum/;Gilsum;gilsum
+http://www.meetup.com/cities/us/nh/glen/;Glen;glen
+http://www.meetup.com/cities/us/nh/glencliff/;Glencliff;glencliff
+http://www.meetup.com/cities/us/nh/goffstown/;Goffstown;goffstown
+http://www.meetup.com/cities/us/nh/gorham/;Gorham;gorham
+http://www.meetup.com/cities/us/nh/goshen/;Goshen;goshen
+http://www.meetup.com/cities/us/nh/grafton/;Grafton;grafton
+http://www.meetup.com/cities/us/nh/grantham/;Grantham;grantham
+http://www.meetup.com/cities/us/nh/greenfield/;Greenfield;greenfield
+http://www.meetup.com/cities/us/nh/greenland/;Greenland;greenland
+http://www.meetup.com/cities/us/nh/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/nh/groveton/;Groveton;groveton
+http://www.meetup.com/cities/us/nh/guild/;Guild;guild
+http://www.meetup.com/cities/us/nh/hampstead/;Hampstead;hampstead
+http://www.meetup.com/cities/us/nh/hampton/;Hampton;hampton
+http://www.meetup.com/cities/us/nh/hampton_falls/;Hampton Falls;hampton_falls
+http://www.meetup.com/cities/us/nh/hancock/;Hancock;hancock
+http://www.meetup.com/cities/us/nh/hanover/;Hanover;hanover
+http://www.meetup.com/cities/us/nh/harrisville/;Harrisville;harrisville
+http://www.meetup.com/cities/us/nh/haverhill/;Haverhill;haverhill
+http://www.meetup.com/cities/us/nh/hebron/;Hebron;hebron
+http://www.meetup.com/cities/us/nh/henniker/;Henniker;henniker
+http://www.meetup.com/cities/us/nh/hill/;Hill;hill
+http://www.meetup.com/cities/us/nh/hillsborough/;Hillsborough;hillsborough
+http://www.meetup.com/cities/us/nh/hinsdale/;Hinsdale;hinsdale
+http://www.meetup.com/cities/us/nh/holderness/;Holderness;holderness
+http://www.meetup.com/cities/us/nh/hollis/;Hollis;hollis
+http://www.meetup.com/cities/us/nh/hooksett/;Hooksett;hooksett
+http://www.meetup.com/cities/us/nh/hudson/;Hudson;hudson
+http://www.meetup.com/cities/us/nh/intervale/;Intervale;intervale
+http://www.meetup.com/cities/us/nh/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/nh/jaffrey/;Jaffrey;jaffrey
+http://www.meetup.com/cities/us/nh/jefferson/;Jefferson;jefferson
+http://www.meetup.com/cities/us/nh/kearsarge/;Kearsarge;kearsarge
+http://www.meetup.com/cities/us/nh/keene/;Keene;keene
+http://www.meetup.com/cities/us/nh/kingston/;Kingston;kingston
+http://www.meetup.com/cities/us/nh/laconia/;Laconia;laconia
+http://www.meetup.com/cities/us/nh/lancaster/;Lancaster;lancaster
+http://www.meetup.com/cities/us/nh/lebanon/;Lebanon;lebanon
+http://www.meetup.com/cities/us/nh/lee/;Lee;lee
+http://www.meetup.com/cities/us/nh/lempster/;Lempster;lempster
+http://www.meetup.com/cities/us/nh/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/nh/lisbon/;Lisbon;lisbon
+http://www.meetup.com/cities/us/nh/litchfield/;Litchfield;litchfield
+http://www.meetup.com/cities/us/nh/littleton/;Littleton;littleton
+http://www.meetup.com/cities/us/nh/lochmere/;Lochmere;lochmere
+http://www.meetup.com/cities/us/nh/londonderry/;Londonderry;londonderry
+http://www.meetup.com/cities/us/nh/loudon/;Loudon;loudon
+http://www.meetup.com/cities/us/nh/lyme/;Lyme;lyme
+http://www.meetup.com/cities/us/nh/lyme_center/;Lyme Center;lyme_center
+http://www.meetup.com/cities/us/nh/lyndeborough/;Lyndeborough;lyndeborough
+http://www.meetup.com/cities/us/nh/madbury/;Madbury;madbury
+http://www.meetup.com/cities/us/nh/madison/;Madison;madison
+http://www.meetup.com/cities/us/nh/manchester/;Manchester;manchester
+http://www.meetup.com/cities/us/nh/marlborough/;Marlborough;marlborough
+http://www.meetup.com/cities/us/nh/marlow/;Marlow;marlow
+http://www.meetup.com/cities/us/nh/melvin_village/;Melvin Village;melvin_village
+http://www.meetup.com/cities/us/nh/meredith/;Meredith;meredith
+http://www.meetup.com/cities/us/nh/meriden/;Meriden;meriden
+http://www.meetup.com/cities/us/nh/merrimack/;Merrimack;merrimack
+http://www.meetup.com/cities/us/nh/milan/;Milan;milan
+http://www.meetup.com/cities/us/nh/milford/;Milford;milford
+http://www.meetup.com/cities/us/nh/milton/;Milton;milton
+http://www.meetup.com/cities/us/nh/milton_mills/;Milton Mills;milton_mills
+http://www.meetup.com/cities/us/nh/mirror_lake/;Mirror Lake;mirror_lake
+http://www.meetup.com/cities/us/nh/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/nh/mont_vernon/;Mont Vernon;mont_vernon
+http://www.meetup.com/cities/us/nh/moultonborough/;Moultonborough;moultonborough
+http://www.meetup.com/cities/us/nh/mount_washington/;Mount Washington;mount_washington
+http://www.meetup.com/cities/us/nh/nashua/;Nashua;nashua
+http://www.meetup.com/cities/us/nh/nelson/;Nelson;nelson
+http://www.meetup.com/cities/us/nh/new_boston/;New Boston;new_boston
+http://www.meetup.com/cities/us/nh/newbury/;Newbury;newbury
+http://www.meetup.com/cities/us/nh/new_castle/;New Castle;new_castle
+http://www.meetup.com/cities/us/nh/new_durham/;New Durham;new_durham
+http://www.meetup.com/cities/us/nh/newfields/;Newfields;newfields
+http://www.meetup.com/cities/us/nh/new_hampton/;New Hampton;new_hampton
+http://www.meetup.com/cities/us/nh/newington/;Newington;newington
+http://www.meetup.com/cities/us/nh/new_ipswich/;New Ipswich;new_ipswich
+http://www.meetup.com/cities/us/nh/new_london/;New London;new_london
+http://www.meetup.com/cities/us/nh/newmarket/;Newmarket;newmarket
+http://www.meetup.com/cities/us/nh/newport/;Newport;newport
+http://www.meetup.com/cities/us/nh/newton/;Newton;newton
+http://www.meetup.com/cities/us/nh/newton_junction/;Newton Junction;newton_junction
+http://www.meetup.com/cities/us/nh/north_conway/;North Conway;north_conway
+http://www.meetup.com/cities/us/nh/north_hampton/;North Hampton;north_hampton
+http://www.meetup.com/cities/us/nh/north_haverhill/;North Haverhill;north_haverhill
+http://www.meetup.com/cities/us/nh/north_salem/;North Salem;north_salem
+http://www.meetup.com/cities/us/nh/north_sandwich/;North Sandwich;north_sandwich
+http://www.meetup.com/cities/us/nh/north_stratford/;North Stratford;north_stratford
+http://www.meetup.com/cities/us/nh/north_sutton/;North Sutton;north_sutton
+http://www.meetup.com/cities/us/nh/north_walpole/;North Walpole;north_walpole
+http://www.meetup.com/cities/us/nh/northwood/;Northwood;northwood
+http://www.meetup.com/cities/us/nh/north_woodstock/;North Woodstock;north_woodstock
+http://www.meetup.com/cities/us/nh/nottingham/;Nottingham;nottingham
+http://www.meetup.com/cities/us/nh/orford/;Orford;orford
+http://www.meetup.com/cities/us/nh/ossipee/;Ossipee;ossipee
+http://www.meetup.com/cities/us/nh/pelham/;Pelham;pelham
+http://www.meetup.com/cities/us/nh/peterborough/;Peterborough;peterborough
+http://www.meetup.com/cities/us/nh/piermont/;Piermont;piermont
+http://www.meetup.com/cities/us/nh/pike/;Pike;pike
+http://www.meetup.com/cities/us/nh/pittsburg/;Pittsburg;pittsburg
+http://www.meetup.com/cities/us/nh/pittsfield/;Pittsfield;pittsfield
+http://www.meetup.com/cities/us/nh/plainfield/;Plainfield;plainfield
+http://www.meetup.com/cities/us/nh/plaistow/;Plaistow;plaistow
+http://www.meetup.com/cities/us/nh/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/nh/portsmouth/;Portsmouth;portsmouth
+http://www.meetup.com/cities/us/nh/randolph/;Randolph;randolph
+http://www.meetup.com/cities/us/nh/raymond/;Raymond;raymond
+http://www.meetup.com/cities/us/nh/rindge/;Rindge;rindge
+http://www.meetup.com/cities/us/nh/rochester/;Rochester;rochester
+http://www.meetup.com/cities/us/nh/rollinsford/;Rollinsford;rollinsford
+http://www.meetup.com/cities/us/nh/rumney/;Rumney;rumney
+http://www.meetup.com/cities/us/nh/rye/;Rye;rye
+http://www.meetup.com/cities/us/nh/rye_beach/;Rye Beach;rye_beach
+http://www.meetup.com/cities/us/nh/salem/;Salem;salem
+http://www.meetup.com/cities/us/nh/salisbury/;Salisbury;salisbury
+http://www.meetup.com/cities/us/nh/sanbornton/;Sanbornton;sanbornton
+http://www.meetup.com/cities/us/nh/sanbornville/;Sanbornville;sanbornville
+http://www.meetup.com/cities/us/nh/sandown/;Sandown;sandown
+http://www.meetup.com/cities/us/nh/seabrook/;Seabrook;seabrook
+http://www.meetup.com/cities/us/nh/silver_lake/;Silver Lake;silver_lake
+http://www.meetup.com/cities/us/nh/somersworth/;Somersworth;somersworth
+http://www.meetup.com/cities/us/nh/south_acworth/;South Acworth;south_acworth
+http://www.meetup.com/cities/us/nh/south_newbury/;South Newbury;south_newbury
+http://www.meetup.com/cities/us/nh/south_sutton/;South Sutton;south_sutton
+http://www.meetup.com/cities/us/nh/south_tamworth/;South Tamworth;south_tamworth
+http://www.meetup.com/cities/us/nh/spofford/;Spofford;spofford
+http://www.meetup.com/cities/us/nh/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/nh/stinson_lake/;Stinson Lake;stinson_lake
+http://www.meetup.com/cities/us/nh/stoddard/;Stoddard;stoddard
+http://www.meetup.com/cities/us/nh/strafford/;Strafford;strafford
+http://www.meetup.com/cities/us/nh/stratham/;Stratham;stratham
+http://www.meetup.com/cities/us/nh/sugar_hill/;Sugar Hill;sugar_hill
+http://www.meetup.com/cities/us/nh/sullivan/;Sullivan;sullivan
+http://www.meetup.com/cities/us/nh/sunapee/;Sunapee;sunapee
+http://www.meetup.com/cities/us/nh/suncook/;Suncook;suncook
+http://www.meetup.com/cities/us/nh/swanzey/;Swanzey;swanzey
+http://www.meetup.com/cities/us/nh/tamworth/;Tamworth;tamworth
+http://www.meetup.com/cities/us/nh/temple/;Temple;temple
+http://www.meetup.com/cities/us/nh/thornton/;Thornton;thornton
+http://www.meetup.com/cities/us/nh/tilton/;Tilton;tilton
+http://www.meetup.com/cities/us/nh/troy/;Troy;troy
+http://www.meetup.com/cities/us/nh/twin_mountain/;Twin Mountain;twin_mountain
+http://www.meetup.com/cities/us/nh/union/;Union;union
+http://www.meetup.com/cities/us/nh/walpole/;Walpole;walpole
+http://www.meetup.com/cities/us/nh/warner/;Warner;warner
+http://www.meetup.com/cities/us/nh/warren/;Warren;warren
+http://www.meetup.com/cities/us/nh/washington/;Washington;washington
+http://www.meetup.com/cities/us/nh/waterville_valley/;Waterville Valley;waterville_valley
+http://www.meetup.com/cities/us/nh/weare/;Weare;weare
+http://www.meetup.com/cities/us/nh/wentworth/;Wentworth;wentworth
+http://www.meetup.com/cities/us/nh/west_chesterfield/;West Chesterfield;west_chesterfield
+http://www.meetup.com/cities/us/nh/west_lebanon/;West Lebanon;west_lebanon
+http://www.meetup.com/cities/us/nh/westmoreland/;Westmoreland;westmoreland
+http://www.meetup.com/cities/us/nh/west_nottingham/;West Nottingham;west_nottingham
+http://www.meetup.com/cities/us/nh/west_ossipee/;West Ossipee;west_ossipee
+http://www.meetup.com/cities/us/nh/west_peterborough/;West Peterborough;west_peterborough
+http://www.meetup.com/cities/us/nh/west_stewartstown/;West Stewartstown;west_stewartstown
+http://www.meetup.com/cities/us/nh/west_swanzey/;West Swanzey;west_swanzey
+http://www.meetup.com/cities/us/nh/whitefield/;Whitefield;whitefield
+http://www.meetup.com/cities/us/nh/wilmot/;Wilmot;wilmot
+http://www.meetup.com/cities/us/nh/wilton/;Wilton;wilton
+http://www.meetup.com/cities/us/nh/winchester/;Winchester;winchester
+http://www.meetup.com/cities/us/nh/windham/;Windham;windham
+http://www.meetup.com/cities/us/nh/winnisquam/;Winnisquam;winnisquam
+http://www.meetup.com/cities/us/nh/wolfeboro/;Wolfeboro;wolfeboro
+http://www.meetup.com/cities/us/nh/wolfeboro_falls/;Wolfeboro Falls;wolfeboro_falls
+http://www.meetup.com/cities/us/nh/wonalancet/;Wonalancet;wonalancet
+http://www.meetup.com/cities/us/nh/woodstock/;Woodstock;woodstock
+http://www.meetup.com/cities/us/nh/woodsville/;Woodsville;woodsville
+http://www.meetup.com/cities/us/nh/acworth/;Acworth;acworth
+http://www.meetup.com/cities/us/nh/alstead/;Alstead;alstead
+http://www.meetup.com/cities/us/nh/alton/;Alton;alton
+http://www.meetup.com/cities/us/nh/alton_bay/;Alton Bay;alton_bay
+http://www.meetup.com/cities/us/nh/amherst/;Amherst;amherst
+http://www.meetup.com/cities/us/nh/andover/;Andover;andover
+http://www.meetup.com/cities/us/nh/antrim/;Antrim;antrim
+http://www.meetup.com/cities/us/nh/ashland/;Ashland;ashland
+http://www.meetup.com/cities/us/nh/ashuelot/;Ashuelot;ashuelot
+http://www.meetup.com/cities/us/nh/atkinson/;Atkinson;atkinson
+http://www.meetup.com/cities/us/nh/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/nh/barnstead/;Barnstead;barnstead
+http://www.meetup.com/cities/us/nh/barrington/;Barrington;barrington
+http://www.meetup.com/cities/us/nh/bartlett/;Bartlett;bartlett
+http://www.meetup.com/cities/us/nh/bath/;Bath;bath
+http://www.meetup.com/cities/us/nh/bedford/;Bedford;bedford
+http://www.meetup.com/cities/us/nh/belmont/;Belmont;belmont
+http://www.meetup.com/cities/us/nh/bennington/;Bennington;bennington
+http://www.meetup.com/cities/us/nh/berlin/;Berlin;berlin
+http://www.meetup.com/cities/us/nh/bethlehem/;Bethlehem;bethlehem
+http://www.meetup.com/cities/us/nh/bow/;Bow;bow
+http://www.meetup.com/cities/us/nh/bradford/;Bradford;bradford
+http://www.meetup.com/cities/us/nh/bretton_woods/;Bretton Woods;bretton_woods
+http://www.meetup.com/cities/us/nh/bristol/;Bristol;bristol
+http://www.meetup.com/cities/us/nh/brookline/;Brookline;brookline
+http://www.meetup.com/cities/us/nh/campton/;Campton;campton
+http://www.meetup.com/cities/us/nh/canaan/;Canaan;canaan
+http://www.meetup.com/cities/us/nh/candia/;Candia;candia
+http://www.meetup.com/cities/us/nh/canterbury/;Canterbury;canterbury
+http://www.meetup.com/cities/us/nh/center_barnstead/;Center Barnstead;center_barnstead
+http://www.meetup.com/cities/us/nh/center_conway/;Center Conway;center_conway
+http://www.meetup.com/cities/us/nh/center_harbor/;Center Harbor;center_harbor
+http://www.meetup.com/cities/us/nh/center_ossipee/;Center Ossipee;center_ossipee
+http://www.meetup.com/cities/us/nh/center_sandwich/;Center Sandwich;center_sandwich
+http://www.meetup.com/cities/us/nh/center_strafford/;Center Strafford;center_strafford
+http://www.meetup.com/cities/us/nh/center_tuftonboro/;Center Tuftonboro;center_tuftonboro
+http://www.meetup.com/cities/us/nh/charlestown/;Charlestown;charlestown
+http://www.meetup.com/cities/us/nh/chester/;Chester;chester
+http://www.meetup.com/cities/us/nh/chesterfield/;Chesterfield;chesterfield
+http://www.meetup.com/cities/us/nh/chichester/;Chichester;chichester
+http://www.meetup.com/cities/us/nh/chocorua/;Chocorua;chocorua
+http://www.meetup.com/cities/us/nh/claremont/;Claremont;claremont
+http://www.meetup.com/cities/us/nh/colebrook/;Colebrook;colebrook
+http://www.meetup.com/cities/us/nh/concord/;Concord;concord
+http://www.meetup.com/cities/us/nh/contoocook/;Contoocook;contoocook
+http://www.meetup.com/cities/us/nh/conway/;Conway;conway
+http://www.meetup.com/cities/us/nh/cornish/;Cornish;cornish
+http://www.meetup.com/cities/us/nh/cornish_flat/;Cornish Flat;cornish_flat
+http://www.meetup.com/cities/us/nh/danbury/;Danbury;danbury
+http://www.meetup.com/cities/us/nh/danville/;Danville;danville
+http://www.meetup.com/cities/us/nh/deerfield/;Deerfield;deerfield
+http://www.meetup.com/cities/us/nh/derry/;Derry;derry
+http://www.meetup.com/cities/us/nh/dover/;Dover;dover
+http://www.meetup.com/cities/us/nh/drewsville/;Drewsville;drewsville
+http://www.meetup.com/cities/us/nh/dublin/;Dublin;dublin
+http://www.meetup.com/cities/us/nh/dunbarton/;Dunbarton;dunbarton
+http://www.meetup.com/cities/us/nh/durham/;Durham;durham
+http://www.meetup.com/cities/us/nh/east_andover/;East Andover;east_andover
+http://www.meetup.com/cities/us/nh/east_candia/;East Candia;east_candia
+http://www.meetup.com/cities/us/nh/east_derry/;East Derry;east_derry
+http://www.meetup.com/cities/us/nh/east_hampstead/;East Hampstead;east_hampstead
+http://www.meetup.com/cities/us/nh/east_kingston/;East Kingston;east_kingston
+http://www.meetup.com/cities/us/nh/east_wakefield/;East Wakefield;east_wakefield
+http://www.meetup.com/cities/us/nh/eaton_center/;Eaton Center;eaton_center
+http://www.meetup.com/cities/us/nh/effingham/;Effingham;effingham
+http://www.meetup.com/cities/us/nh/elkins/;Elkins;elkins
+http://www.meetup.com/cities/us/nh/enfield/;Enfield;enfield
+http://www.meetup.com/cities/us/nh/enfield_center/;Enfield Center;enfield_center
+http://www.meetup.com/cities/us/nh/epping/;Epping;epping
+http://www.meetup.com/cities/us/nh/epsom/;Epsom;epsom
+http://www.meetup.com/cities/us/nh/errol/;Errol;errol
+http://www.meetup.com/cities/us/nh/etna/;Etna;etna
+http://www.meetup.com/cities/us/nh/exeter/;Exeter;exeter
+http://www.meetup.com/cities/us/nh/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/nh/fitzwilliam/;Fitzwilliam;fitzwilliam
+http://www.meetup.com/cities/us/nh/francestown/;Francestown;francestown
+http://www.meetup.com/cities/us/nh/franconia/;Franconia;franconia
+http://www.meetup.com/cities/us/nh/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/nh/freedom/;Freedom;freedom
+http://www.meetup.com/cities/us/nh/fremont/;Fremont;fremont
+http://www.meetup.com/cities/us/nh/georges_mills/;Georges Mills;georges_mills
+http://www.meetup.com/cities/us/nh/gilford/;Gilford;gilford
+http://www.meetup.com/cities/us/nh/gilmanton/;Gilmanton;gilmanton
+http://www.meetup.com/cities/us/nh/gilmanton_iron_works/;Gilmanton Iron Works;gilmanton_iron_works
+http://www.meetup.com/cities/us/nh/gilsum/;Gilsum;gilsum
+http://www.meetup.com/cities/us/nh/glen/;Glen;glen
+http://www.meetup.com/cities/us/nh/glencliff/;Glencliff;glencliff
+http://www.meetup.com/cities/us/nh/goffstown/;Goffstown;goffstown
+http://www.meetup.com/cities/us/nh/gorham/;Gorham;gorham
+http://www.meetup.com/cities/us/nh/goshen/;Goshen;goshen
+http://www.meetup.com/cities/us/nh/grafton/;Grafton;grafton
+http://www.meetup.com/cities/us/nh/grantham/;Grantham;grantham
+http://www.meetup.com/cities/us/nh/greenfield/;Greenfield;greenfield
+http://www.meetup.com/cities/us/nh/greenland/;Greenland;greenland
+http://www.meetup.com/cities/us/nh/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/nh/groveton/;Groveton;groveton
+http://www.meetup.com/cities/us/nh/guild/;Guild;guild
+http://www.meetup.com/cities/us/nh/hampstead/;Hampstead;hampstead
+http://www.meetup.com/cities/us/nh/hampton/;Hampton;hampton
+http://www.meetup.com/cities/us/nh/hampton_falls/;Hampton Falls;hampton_falls
+http://www.meetup.com/cities/us/nh/hancock/;Hancock;hancock
+http://www.meetup.com/cities/us/nh/hanover/;Hanover;hanover
+http://www.meetup.com/cities/us/nh/harrisville/;Harrisville;harrisville
+http://www.meetup.com/cities/us/nh/haverhill/;Haverhill;haverhill
+http://www.meetup.com/cities/us/nh/hebron/;Hebron;hebron
+http://www.meetup.com/cities/us/nh/henniker/;Henniker;henniker
+http://www.meetup.com/cities/us/nh/hill/;Hill;hill
+http://www.meetup.com/cities/us/nh/hillsborough/;Hillsborough;hillsborough
+http://www.meetup.com/cities/us/nh/hinsdale/;Hinsdale;hinsdale
+http://www.meetup.com/cities/us/nh/holderness/;Holderness;holderness
+http://www.meetup.com/cities/us/nh/hollis/;Hollis;hollis
+http://www.meetup.com/cities/us/nh/hooksett/;Hooksett;hooksett
+http://www.meetup.com/cities/us/nh/hudson/;Hudson;hudson
+http://www.meetup.com/cities/us/nh/intervale/;Intervale;intervale
+http://www.meetup.com/cities/us/nh/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/nh/jaffrey/;Jaffrey;jaffrey
+http://www.meetup.com/cities/us/nh/jefferson/;Jefferson;jefferson
+http://www.meetup.com/cities/us/nh/kearsarge/;Kearsarge;kearsarge
+http://www.meetup.com/cities/us/nh/keene/;Keene;keene
+http://www.meetup.com/cities/us/nh/kingston/;Kingston;kingston
+http://www.meetup.com/cities/us/nh/laconia/;Laconia;laconia
+http://www.meetup.com/cities/us/nh/lancaster/;Lancaster;lancaster
+http://www.meetup.com/cities/us/nh/lebanon/;Lebanon;lebanon
+http://www.meetup.com/cities/us/nh/lee/;Lee;lee
+http://www.meetup.com/cities/us/nh/lempster/;Lempster;lempster
+http://www.meetup.com/cities/us/nh/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/nh/lisbon/;Lisbon;lisbon
+http://www.meetup.com/cities/us/nh/litchfield/;Litchfield;litchfield
+http://www.meetup.com/cities/us/nh/littleton/;Littleton;littleton
+http://www.meetup.com/cities/us/nh/lochmere/;Lochmere;lochmere
+http://www.meetup.com/cities/us/nh/londonderry/;Londonderry;londonderry
+http://www.meetup.com/cities/us/nh/loudon/;Loudon;loudon
+http://www.meetup.com/cities/us/nh/lyme/;Lyme;lyme
+http://www.meetup.com/cities/us/nh/lyme_center/;Lyme Center;lyme_center
+http://www.meetup.com/cities/us/nh/lyndeborough/;Lyndeborough;lyndeborough
+http://www.meetup.com/cities/us/nh/madbury/;Madbury;madbury
+http://www.meetup.com/cities/us/nh/madison/;Madison;madison
+http://www.meetup.com/cities/us/nh/manchester/;Manchester;manchester
+http://www.meetup.com/cities/us/nh/marlborough/;Marlborough;marlborough
+http://www.meetup.com/cities/us/nh/marlow/;Marlow;marlow
+http://www.meetup.com/cities/us/nh/melvin_village/;Melvin Village;melvin_village
+http://www.meetup.com/cities/us/nh/meredith/;Meredith;meredith
+http://www.meetup.com/cities/us/nh/meriden/;Meriden;meriden
+http://www.meetup.com/cities/us/nh/merrimack/;Merrimack;merrimack
+http://www.meetup.com/cities/us/nh/milan/;Milan;milan
+http://www.meetup.com/cities/us/nh/milford/;Milford;milford
+http://www.meetup.com/cities/us/nh/milton/;Milton;milton
+http://www.meetup.com/cities/us/nh/milton_mills/;Milton Mills;milton_mills
+http://www.meetup.com/cities/us/nh/mirror_lake/;Mirror Lake;mirror_lake
+http://www.meetup.com/cities/us/nh/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/nh/mont_vernon/;Mont Vernon;mont_vernon
+http://www.meetup.com/cities/us/nh/moultonborough/;Moultonborough;moultonborough
+http://www.meetup.com/cities/us/nh/mount_washington/;Mount Washington;mount_washington
+http://www.meetup.com/cities/us/nh/nashua/;Nashua;nashua
+http://www.meetup.com/cities/us/nh/nelson/;Nelson;nelson
+http://www.meetup.com/cities/us/nh/new_boston/;New Boston;new_boston
+http://www.meetup.com/cities/us/nh/newbury/;Newbury;newbury
+http://www.meetup.com/cities/us/nh/new_castle/;New Castle;new_castle
+http://www.meetup.com/cities/us/nh/new_durham/;New Durham;new_durham
+http://www.meetup.com/cities/us/nh/newfields/;Newfields;newfields
+http://www.meetup.com/cities/us/nh/new_hampton/;New Hampton;new_hampton
+http://www.meetup.com/cities/us/nh/newington/;Newington;newington
+http://www.meetup.com/cities/us/nh/new_ipswich/;New Ipswich;new_ipswich
+http://www.meetup.com/cities/us/nh/new_london/;New London;new_london
+http://www.meetup.com/cities/us/nh/newmarket/;Newmarket;newmarket
+http://www.meetup.com/cities/us/nh/newport/;Newport;newport
+http://www.meetup.com/cities/us/nh/newton/;Newton;newton
+http://www.meetup.com/cities/us/nh/newton_junction/;Newton Junction;newton_junction
+http://www.meetup.com/cities/us/nh/north_conway/;North Conway;north_conway
+http://www.meetup.com/cities/us/nh/north_hampton/;North Hampton;north_hampton
+http://www.meetup.com/cities/us/nh/north_haverhill/;North Haverhill;north_haverhill
+http://www.meetup.com/cities/us/nh/north_salem/;North Salem;north_salem
+http://www.meetup.com/cities/us/nh/north_sandwich/;North Sandwich;north_sandwich
+http://www.meetup.com/cities/us/nh/north_stratford/;North Stratford;north_stratford
+http://www.meetup.com/cities/us/nh/north_sutton/;North Sutton;north_sutton
+http://www.meetup.com/cities/us/nh/north_walpole/;North Walpole;north_walpole
+http://www.meetup.com/cities/us/nh/northwood/;Northwood;northwood
+http://www.meetup.com/cities/us/nh/north_woodstock/;North Woodstock;north_woodstock
+http://www.meetup.com/cities/us/nh/nottingham/;Nottingham;nottingham
+http://www.meetup.com/cities/us/nh/orford/;Orford;orford
+http://www.meetup.com/cities/us/nh/ossipee/;Ossipee;ossipee
+http://www.meetup.com/cities/us/nh/pelham/;Pelham;pelham
+http://www.meetup.com/cities/us/nh/peterborough/;Peterborough;peterborough
+http://www.meetup.com/cities/us/nh/piermont/;Piermont;piermont
+http://www.meetup.com/cities/us/nh/pike/;Pike;pike
+http://www.meetup.com/cities/us/nh/pittsburg/;Pittsburg;pittsburg
+http://www.meetup.com/cities/us/nh/pittsfield/;Pittsfield;pittsfield
+http://www.meetup.com/cities/us/nh/plainfield/;Plainfield;plainfield
+http://www.meetup.com/cities/us/nh/plaistow/;Plaistow;plaistow
+http://www.meetup.com/cities/us/nh/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/nh/portsmouth/;Portsmouth;portsmouth
+http://www.meetup.com/cities/us/nh/randolph/;Randolph;randolph
+http://www.meetup.com/cities/us/nh/raymond/;Raymond;raymond
+http://www.meetup.com/cities/us/nh/rindge/;Rindge;rindge
+http://www.meetup.com/cities/us/nh/rochester/;Rochester;rochester
+http://www.meetup.com/cities/us/nh/rollinsford/;Rollinsford;rollinsford
+http://www.meetup.com/cities/us/nh/rumney/;Rumney;rumney
+http://www.meetup.com/cities/us/nh/rye/;Rye;rye
+http://www.meetup.com/cities/us/nh/rye_beach/;Rye Beach;rye_beach
+http://www.meetup.com/cities/us/nh/salem/;Salem;salem
+http://www.meetup.com/cities/us/nh/salisbury/;Salisbury;salisbury
+http://www.meetup.com/cities/us/nh/sanbornton/;Sanbornton;sanbornton
+http://www.meetup.com/cities/us/nh/sanbornville/;Sanbornville;sanbornville
+http://www.meetup.com/cities/us/nh/sandown/;Sandown;sandown
+http://www.meetup.com/cities/us/nh/seabrook/;Seabrook;seabrook
+http://www.meetup.com/cities/us/nh/silver_lake/;Silver Lake;silver_lake
+http://www.meetup.com/cities/us/nh/somersworth/;Somersworth;somersworth
+http://www.meetup.com/cities/us/nh/south_acworth/;South Acworth;south_acworth
+http://www.meetup.com/cities/us/nh/south_newbury/;South Newbury;south_newbury
+http://www.meetup.com/cities/us/nh/south_sutton/;South Sutton;south_sutton
+http://www.meetup.com/cities/us/nh/south_tamworth/;South Tamworth;south_tamworth
+http://www.meetup.com/cities/us/nh/spofford/;Spofford;spofford
+http://www.meetup.com/cities/us/nh/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/nh/stinson_lake/;Stinson Lake;stinson_lake
+http://www.meetup.com/cities/us/nh/stoddard/;Stoddard;stoddard
+http://www.meetup.com/cities/us/nh/strafford/;Strafford;strafford
+http://www.meetup.com/cities/us/nh/stratham/;Stratham;stratham
+http://www.meetup.com/cities/us/nh/sugar_hill/;Sugar Hill;sugar_hill
+http://www.meetup.com/cities/us/nh/sullivan/;Sullivan;sullivan
+http://www.meetup.com/cities/us/nh/sunapee/;Sunapee;sunapee
+http://www.meetup.com/cities/us/nh/suncook/;Suncook;suncook
+http://www.meetup.com/cities/us/nh/swanzey/;Swanzey;swanzey
+http://www.meetup.com/cities/us/nh/tamworth/;Tamworth;tamworth
+http://www.meetup.com/cities/us/nh/temple/;Temple;temple
+http://www.meetup.com/cities/us/nh/thornton/;Thornton;thornton
+http://www.meetup.com/cities/us/nh/tilton/;Tilton;tilton
+http://www.meetup.com/cities/us/nh/troy/;Troy;troy
+http://www.meetup.com/cities/us/nh/twin_mountain/;Twin Mountain;twin_mountain
+http://www.meetup.com/cities/us/nh/union/;Union;union
+http://www.meetup.com/cities/us/nh/walpole/;Walpole;walpole
+http://www.meetup.com/cities/us/nh/warner/;Warner;warner
+http://www.meetup.com/cities/us/nh/warren/;Warren;warren
+http://www.meetup.com/cities/us/nh/washington/;Washington;washington
+http://www.meetup.com/cities/us/nh/waterville_valley/;Waterville Valley;waterville_valley
+http://www.meetup.com/cities/us/nh/weare/;Weare;weare
+http://www.meetup.com/cities/us/nh/wentworth/;Wentworth;wentworth
+http://www.meetup.com/cities/us/nh/west_chesterfield/;West Chesterfield;west_chesterfield
+http://www.meetup.com/cities/us/nh/west_lebanon/;West Lebanon;west_lebanon
+http://www.meetup.com/cities/us/nh/westmoreland/;Westmoreland;westmoreland
+http://www.meetup.com/cities/us/nh/west_nottingham/;West Nottingham;west_nottingham
+http://www.meetup.com/cities/us/nh/west_ossipee/;West Ossipee;west_ossipee
+http://www.meetup.com/cities/us/nh/west_peterborough/;West Peterborough;west_peterborough
+http://www.meetup.com/cities/us/nh/west_stewartstown/;West Stewartstown;west_stewartstown
+http://www.meetup.com/cities/us/nh/west_swanzey/;West Swanzey;west_swanzey
+http://www.meetup.com/cities/us/nh/whitefield/;Whitefield;whitefield
+http://www.meetup.com/cities/us/nh/wilmot/;Wilmot;wilmot
+http://www.meetup.com/cities/us/nh/wilton/;Wilton;wilton
+http://www.meetup.com/cities/us/nh/winchester/;Winchester;winchester
+http://www.meetup.com/cities/us/nh/windham/;Windham;windham
+http://www.meetup.com/cities/us/nh/winnisquam/;Winnisquam;winnisquam
+http://www.meetup.com/cities/us/nh/wolfeboro/;Wolfeboro;wolfeboro
+http://www.meetup.com/cities/us/nh/wolfeboro_falls/;Wolfeboro Falls;wolfeboro_falls
+http://www.meetup.com/cities/us/nh/wonalancet/;Wonalancet;wonalancet
+http://www.meetup.com/cities/us/nh/woodstock/;Woodstock;woodstock
+http://www.meetup.com/cities/us/nh/woodsville/;Woodsville;woodsville

@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/us/ri/albion/;Albion;albion
+http://www.meetup.com/cities/us/ri/ashaway/;Ashaway;ashaway
+http://www.meetup.com/cities/us/ri/barrington/;Barrington;barrington
+http://www.meetup.com/cities/us/ri/bristol/;Bristol;bristol
+http://www.meetup.com/cities/us/ri/carolina/;Carolina;carolina
+http://www.meetup.com/cities/us/ri/central_falls/;Central Falls;central_falls
+http://www.meetup.com/cities/us/ri/charlestown/;Charlestown;charlestown
+http://www.meetup.com/cities/us/ri/chepachet/;Chepachet;chepachet
+http://www.meetup.com/cities/us/ri/coventry/;Coventry;coventry
+http://www.meetup.com/cities/us/ri/cranston/;Cranston;cranston
+http://www.meetup.com/cities/us/ri/cumberland/;Cumberland;cumberland
+http://www.meetup.com/cities/us/ri/east_greenwich/;East Greenwich;east_greenwich
+http://www.meetup.com/cities/us/ri/east_providence/;East Providence;east_providence
+http://www.meetup.com/cities/us/ri/exeter/;Exeter;exeter
+http://www.meetup.com/cities/us/ri/foster/;Foster;foster
+http://www.meetup.com/cities/us/ri/greene/;Greene;greene
+http://www.meetup.com/cities/us/ri/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/ri/harrisville/;Harrisville;harrisville
+http://www.meetup.com/cities/us/ri/hope/;Hope;hope
+http://www.meetup.com/cities/us/ri/hope_valley/;Hope Valley;hope_valley
+http://www.meetup.com/cities/us/ri/jamestown/;Jamestown;jamestown
+http://www.meetup.com/cities/us/ri/johnston/;Johnston;johnston
+http://www.meetup.com/cities/us/ri/kingston/;Kingston;kingston
+http://www.meetup.com/cities/us/ri/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/ri/little_compton/;Little Compton;little_compton
+http://www.meetup.com/cities/us/ri/manville/;Manville;manville
+http://www.meetup.com/cities/us/ri/middletown/;Middletown;middletown
+http://www.meetup.com/cities/us/ri/narragansett/;Narragansett;narragansett
+http://www.meetup.com/cities/us/ri/newport/;Newport;newport
+http://www.meetup.com/cities/us/ri/north_kingstown/;North Kingstown;north_kingstown
+http://www.meetup.com/cities/us/ri/north_providence/;North Providence;north_providence
+http://www.meetup.com/cities/us/ri/north_scituate/;North Scituate;north_scituate
+http://www.meetup.com/cities/us/ri/north_smithfield/;North Smithfield;north_smithfield
+http://www.meetup.com/cities/us/ri/pascoag/;Pascoag;pascoag
+http://www.meetup.com/cities/us/ri/pawtucket/;Pawtucket;pawtucket
+http://www.meetup.com/cities/us/ri/portsmouth/;Portsmouth;portsmouth
+http://www.meetup.com/cities/us/ri/providence/;Providence;providence
+http://www.meetup.com/cities/us/ri/riverside/;Riverside;riverside
+http://www.meetup.com/cities/us/ri/rumford/;Rumford;rumford
+http://www.meetup.com/cities/us/ri/saunderstown/;Saunderstown;saunderstown
+http://www.meetup.com/cities/us/ri/smithfield/;Smithfield;smithfield
+http://www.meetup.com/cities/us/ri/tiverton/;Tiverton;tiverton
+http://www.meetup.com/cities/us/ri/wakefield/;Wakefield;wakefield
+http://www.meetup.com/cities/us/ri/warren/;Warren;warren
+http://www.meetup.com/cities/us/ri/warwick/;Warwick;warwick
+http://www.meetup.com/cities/us/ri/west_greenwich/;West Greenwich;west_greenwich
+http://www.meetup.com/cities/us/ri/west_kingston/;West Kingston;west_kingston
+http://www.meetup.com/cities/us/ri/west_warwick/;West Warwick;west_warwick
+http://www.meetup.com/cities/us/ri/westerly/;Westerly;westerly
+http://www.meetup.com/cities/us/ri/woonsocket/;Woonsocket;woonsocket

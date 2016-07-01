@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/gb/f7/archenfield/;Archenfield;archenfield
+http://www.meetup.com/cities/gb/f7/ashperton/;Ashperton;ashperton
+http://www.meetup.com/cities/gb/f7/beechgrove/;Beechgrove;beechgrove
+http://www.meetup.com/cities/gb/f7/bishopstone/;Bishopstone;bishopstone
+http://www.meetup.com/cities/gb/f7/bishopswood/;Bishopswood;bishopswood
+http://www.meetup.com/cities/gb/f7/bridge_sollars/;Bridge Sollars;bridge_sollars
+http://www.meetup.com/cities/gb/f7/bridstow/;Bridstow;bridstow
+http://www.meetup.com/cities/gb/f7/brierley/;Brierley;brierley
+http://www.meetup.com/cities/gb/f7/brierley_hill/;Brierley Hill;brierley_hill
+http://www.meetup.com/cities/gb/f7/buckton/;Buckton;buckton
+http://www.meetup.com/cities/gb/f7/checkley/;Checkley;checkley
+http://www.meetup.com/cities/gb/f7/clifford/;Clifford;clifford
+http://www.meetup.com/cities/gb/f7/craswall/;Craswall;craswall
+http://www.meetup.com/cities/gb/f7/cross_keys/;Cross Keys;cross_keys
+http://www.meetup.com/cities/gb/f7/deepdean/;Deepdean;deepdean
+http://www.meetup.com/cities/gb/f7/deerfold/;Deerfold;deerfold
+http://www.meetup.com/cities/gb/f7/didley/;Didley;didley
+http://www.meetup.com/cities/gb/f7/dilwyn/;Dilwyn;dilwyn
+http://www.meetup.com/cities/gb/f7/downton_castle/;Downton Castle;downton_castle
+http://www.meetup.com/cities/gb/f7/downton-on-the-rock/;Downton-on-the-Rock;downton-on-the-rock
+http://www.meetup.com/cities/gb/f7/elton/;Elton;elton
+http://www.meetup.com/cities/gb/f7/eye/;Eye;eye
+http://www.meetup.com/cities/gb/f7/eyton/;Eyton;eyton
+http://www.meetup.com/cities/gb/f7/garway/;Garway;garway
+http://www.meetup.com/cities/gb/f7/garway_hill/;Garway Hill;garway_hill
+http://www.meetup.com/cities/gb/f7/gorsty/;Gorsty;gorsty
+http://www.meetup.com/cities/gb/f7/great_doward/;Great Doward;great_doward
+http://www.meetup.com/cities/gb/f7/harewood_end/;Harewood End;harewood_end
+http://www.meetup.com/cities/gb/f7/hereford/;Hereford;hereford
+http://www.meetup.com/cities/gb/f7/huntington/;Huntington;huntington
+http://www.meetup.com/cities/gb/f7/kingstone/;Kingstone;kingstone
+http://www.meetup.com/cities/gb/f7/leddington/;Leddington;leddington
+http://www.meetup.com/cities/gb/f7/lincoln_hill/;Lincoln Hill;lincoln_hill
+http://www.meetup.com/cities/gb/f7/llancloudy/;Llancloudy;llancloudy
+http://www.meetup.com/cities/gb/f7/longhope/;Longhope;longhope
+http://www.meetup.com/cities/gb/f7/lower_grove_common/;Lower Grove Common;lower_grove_common
+http://www.meetup.com/cities/gb/f7/mahollem/;Mahollem;mahollem
+http://www.meetup.com/cities/gb/f7/marston/;Marston;marston
+http://www.meetup.com/cities/gb/f7/moorhampton/;Moorhampton;moorhampton
+http://www.meetup.com/cities/gb/f7/phocle_green/;Phocle Green;phocle_green
+http://www.meetup.com/cities/gb/f7/ross-on-wye/;Ross-on-Wye;ross-on-wye
+http://www.meetup.com/cities/gb/f7/symonds_yat/;Symonds Yat;symonds_yat
+http://www.meetup.com/cities/gb/f7/upper_colwall/;Upper Colwall;upper_colwall
+http://www.meetup.com/cities/gb/f7/upper_dormington/;Upper Dormington;upper_dormington
+http://www.meetup.com/cities/gb/f7/vowchurch/;Vowchurch;vowchurch
+http://www.meetup.com/cities/gb/f7/welsh_newton/;Welsh Newton;welsh_newton
+http://www.meetup.com/cities/gb/f7/welsh_newton_common/;Welsh Newton Common;welsh_newton_common
+http://www.meetup.com/cities/gb/f7/westhide/;Westhide;westhide
+http://www.meetup.com/cities/gb/f7/westhill/;Westhill;westhill
+http://www.meetup.com/cities/gb/f7/westhope/;Westhope;westhope
+http://www.meetup.com/cities/gb/f7/archenfield/;Archenfield;archenfield
+http://www.meetup.com/cities/gb/f7/ashperton/;Ashperton;ashperton
+http://www.meetup.com/cities/gb/f7/beechgrove/;Beechgrove;beechgrove
+http://www.meetup.com/cities/gb/f7/bishopstone/;Bishopstone;bishopstone
+http://www.meetup.com/cities/gb/f7/bishopswood/;Bishopswood;bishopswood
+http://www.meetup.com/cities/gb/f7/bridge_sollars/;Bridge Sollars;bridge_sollars
+http://www.meetup.com/cities/gb/f7/bridstow/;Bridstow;bridstow
+http://www.meetup.com/cities/gb/f7/brierley/;Brierley;brierley
+http://www.meetup.com/cities/gb/f7/brierley_hill/;Brierley Hill;brierley_hill
+http://www.meetup.com/cities/gb/f7/buckton/;Buckton;buckton
+http://www.meetup.com/cities/gb/f7/checkley/;Checkley;checkley
+http://www.meetup.com/cities/gb/f7/clifford/;Clifford;clifford
+http://www.meetup.com/cities/gb/f7/craswall/;Craswall;craswall
+http://www.meetup.com/cities/gb/f7/cross_keys/;Cross Keys;cross_keys
+http://www.meetup.com/cities/gb/f7/deepdean/;Deepdean;deepdean
+http://www.meetup.com/cities/gb/f7/deerfold/;Deerfold;deerfold
+http://www.meetup.com/cities/gb/f7/didley/;Didley;didley
+http://www.meetup.com/cities/gb/f7/dilwyn/;Dilwyn;dilwyn
+http://www.meetup.com/cities/gb/f7/downton_castle/;Downton Castle;downton_castle
+http://www.meetup.com/cities/gb/f7/downton-on-the-rock/;Downton-on-the-Rock;downton-on-the-rock
+http://www.meetup.com/cities/gb/f7/elton/;Elton;elton
+http://www.meetup.com/cities/gb/f7/eye/;Eye;eye
+http://www.meetup.com/cities/gb/f7/eyton/;Eyton;eyton
+http://www.meetup.com/cities/gb/f7/garway/;Garway;garway
+http://www.meetup.com/cities/gb/f7/garway_hill/;Garway Hill;garway_hill
+http://www.meetup.com/cities/gb/f7/gorsty/;Gorsty;gorsty
+http://www.meetup.com/cities/gb/f7/great_doward/;Great Doward;great_doward
+http://www.meetup.com/cities/gb/f7/harewood_end/;Harewood End;harewood_end
+http://www.meetup.com/cities/gb/f7/hereford/;Hereford;hereford
+http://www.meetup.com/cities/gb/f7/huntington/;Huntington;huntington
+http://www.meetup.com/cities/gb/f7/kingstone/;Kingstone;kingstone
+http://www.meetup.com/cities/gb/f7/leddington/;Leddington;leddington
+http://www.meetup.com/cities/gb/f7/lincoln_hill/;Lincoln Hill;lincoln_hill
+http://www.meetup.com/cities/gb/f7/llancloudy/;Llancloudy;llancloudy
+http://www.meetup.com/cities/gb/f7/longhope/;Longhope;longhope
+http://www.meetup.com/cities/gb/f7/lower_grove_common/;Lower Grove Common;lower_grove_common
+http://www.meetup.com/cities/gb/f7/mahollem/;Mahollem;mahollem
+http://www.meetup.com/cities/gb/f7/marston/;Marston;marston
+http://www.meetup.com/cities/gb/f7/moorhampton/;Moorhampton;moorhampton
+http://www.meetup.com/cities/gb/f7/phocle_green/;Phocle Green;phocle_green
+http://www.meetup.com/cities/gb/f7/ross-on-wye/;Ross-on-Wye;ross-on-wye
+http://www.meetup.com/cities/gb/f7/symonds_yat/;Symonds Yat;symonds_yat
+http://www.meetup.com/cities/gb/f7/upper_colwall/;Upper Colwall;upper_colwall
+http://www.meetup.com/cities/gb/f7/upper_dormington/;Upper Dormington;upper_dormington
+http://www.meetup.com/cities/gb/f7/vowchurch/;Vowchurch;vowchurch
+http://www.meetup.com/cities/gb/f7/welsh_newton/;Welsh Newton;welsh_newton
+http://www.meetup.com/cities/gb/f7/welsh_newton_common/;Welsh Newton Common;welsh_newton_common
+http://www.meetup.com/cities/gb/f7/westhide/;Westhide;westhide
+http://www.meetup.com/cities/gb/f7/westhill/;Westhill;westhill
+http://www.meetup.com/cities/gb/f7/westhope/;Westhope;westhope

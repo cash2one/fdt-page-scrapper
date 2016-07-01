@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/us/ga/acworth/;Acworth;acworth
+http://www.meetup.com/cities/us/ga/albany/;Albany;albany
+http://www.meetup.com/cities/us/ga/alpharetta/;Alpharetta;alpharetta
+http://www.meetup.com/cities/us/ga/athens/;Athens;athens
+http://www.meetup.com/cities/us/ga/atlanta/;Atlanta;atlanta
+http://www.meetup.com/cities/us/ga/augusta/;Augusta;augusta
+http://www.meetup.com/cities/us/ga/austell/;Austell;austell
+http://www.meetup.com/cities/us/ga/brunswick/;Brunswick;brunswick
+http://www.meetup.com/cities/us/ga/buford/;Buford;buford
+http://www.meetup.com/cities/us/ga/canton/;Canton;canton
+http://www.meetup.com/cities/us/ga/cartersville/;Cartersville;cartersville
+http://www.meetup.com/cities/us/ga/columbus/;Columbus;columbus
+http://www.meetup.com/cities/us/ga/conyers/;Conyers;conyers
+http://www.meetup.com/cities/us/ga/covington/;Covington;covington
+http://www.meetup.com/cities/us/ga/cumming/;Cumming;cumming
+http://www.meetup.com/cities/us/ga/dacula/;Dacula;dacula
+http://www.meetup.com/cities/us/ga/dallas/;Dallas;dallas
+http://www.meetup.com/cities/us/ga/decatur/;Decatur;decatur
+http://www.meetup.com/cities/us/ga/douglasville/;Douglasville;douglasville
+http://www.meetup.com/cities/us/ga/duluth/;Duluth;duluth
+http://www.meetup.com/cities/us/ga/fayetteville/;Fayetteville;fayetteville
+http://www.meetup.com/cities/us/ga/flowery_branch/;Flowery Branch;flowery_branch
+http://www.meetup.com/cities/us/ga/gainesville/;Gainesville;gainesville
+http://www.meetup.com/cities/us/ga/jonesboro/;Jonesboro;jonesboro
+http://www.meetup.com/cities/us/ga/kennesaw/;Kennesaw;kennesaw
+http://www.meetup.com/cities/us/ga/lawrenceville/;Lawrenceville;lawrenceville
+http://www.meetup.com/cities/us/ga/lilburn/;Lilburn;lilburn
+http://www.meetup.com/cities/us/ga/lithonia/;Lithonia;lithonia
+http://www.meetup.com/cities/us/ga/loganville/;Loganville;loganville
+http://www.meetup.com/cities/us/ga/mableton/;Mableton;mableton
+http://www.meetup.com/cities/us/ga/macon/;Macon;macon
+http://www.meetup.com/cities/us/ga/marietta/;Marietta;marietta
+http://www.meetup.com/cities/us/ga/mcdonough/;McDonough;mcdonough
+http://www.meetup.com/cities/us/ga/newnan/;Newnan;newnan
+http://www.meetup.com/cities/us/ga/norcross/;Norcross;norcross
+http://www.meetup.com/cities/us/ga/peachtree_city/;Peachtree City;peachtree_city
+http://www.meetup.com/cities/us/ga/powder_springs/;Powder Springs;powder_springs
+http://www.meetup.com/cities/us/ga/riverdale/;Riverdale;riverdale
+http://www.meetup.com/cities/us/ga/roswell/;Roswell;roswell
+http://www.meetup.com/cities/us/ga/savannah/;Savannah;savannah
+http://www.meetup.com/cities/us/ga/smyrna/;Smyrna;smyrna
+http://www.meetup.com/cities/us/ga/snellville/;Snellville;snellville
+http://www.meetup.com/cities/us/ga/stockbridge/;Stockbridge;stockbridge
+http://www.meetup.com/cities/us/ga/stone_mountain/;Stone Mountain;stone_mountain
+http://www.meetup.com/cities/us/ga/suwanee/;Suwanee;suwanee
+http://www.meetup.com/cities/us/ga/tucker/;Tucker;tucker
+http://www.meetup.com/cities/us/ga/upatoi/;Upatoi;upatoi
+http://www.meetup.com/cities/us/ga/valdosta/;Valdosta;valdosta
+http://www.meetup.com/cities/us/ga/warner_robins/;Warner Robins;warner_robins
+http://www.meetup.com/cities/us/ga/woodstock/;Woodstock;woodstock
+http://www.meetup.com/cities/us/ga/acworth/;Acworth;acworth
+http://www.meetup.com/cities/us/ga/albany/;Albany;albany
+http://www.meetup.com/cities/us/ga/alpharetta/;Alpharetta;alpharetta
+http://www.meetup.com/cities/us/ga/athens/;Athens;athens
+http://www.meetup.com/cities/us/ga/atlanta/;Atlanta;atlanta
+http://www.meetup.com/cities/us/ga/augusta/;Augusta;augusta
+http://www.meetup.com/cities/us/ga/austell/;Austell;austell
+http://www.meetup.com/cities/us/ga/brunswick/;Brunswick;brunswick
+http://www.meetup.com/cities/us/ga/buford/;Buford;buford
+http://www.meetup.com/cities/us/ga/canton/;Canton;canton
+http://www.meetup.com/cities/us/ga/cartersville/;Cartersville;cartersville
+http://www.meetup.com/cities/us/ga/columbus/;Columbus;columbus
+http://www.meetup.com/cities/us/ga/conyers/;Conyers;conyers
+http://www.meetup.com/cities/us/ga/covington/;Covington;covington
+http://www.meetup.com/cities/us/ga/cumming/;Cumming;cumming
+http://www.meetup.com/cities/us/ga/dacula/;Dacula;dacula
+http://www.meetup.com/cities/us/ga/dallas/;Dallas;dallas
+http://www.meetup.com/cities/us/ga/decatur/;Decatur;decatur
+http://www.meetup.com/cities/us/ga/douglasville/;Douglasville;douglasville
+http://www.meetup.com/cities/us/ga/duluth/;Duluth;duluth
+http://www.meetup.com/cities/us/ga/fayetteville/;Fayetteville;fayetteville
+http://www.meetup.com/cities/us/ga/flowery_branch/;Flowery Branch;flowery_branch
+http://www.meetup.com/cities/us/ga/gainesville/;Gainesville;gainesville
+http://www.meetup.com/cities/us/ga/jonesboro/;Jonesboro;jonesboro
+http://www.meetup.com/cities/us/ga/kennesaw/;Kennesaw;kennesaw
+http://www.meetup.com/cities/us/ga/lawrenceville/;Lawrenceville;lawrenceville
+http://www.meetup.com/cities/us/ga/lilburn/;Lilburn;lilburn
+http://www.meetup.com/cities/us/ga/lithonia/;Lithonia;lithonia
+http://www.meetup.com/cities/us/ga/loganville/;Loganville;loganville
+http://www.meetup.com/cities/us/ga/mableton/;Mableton;mableton
+http://www.meetup.com/cities/us/ga/macon/;Macon;macon
+http://www.meetup.com/cities/us/ga/marietta/;Marietta;marietta
+http://www.meetup.com/cities/us/ga/mcdonough/;McDonough;mcdonough
+http://www.meetup.com/cities/us/ga/newnan/;Newnan;newnan
+http://www.meetup.com/cities/us/ga/norcross/;Norcross;norcross
+http://www.meetup.com/cities/us/ga/peachtree_city/;Peachtree City;peachtree_city
+http://www.meetup.com/cities/us/ga/powder_springs/;Powder Springs;powder_springs
+http://www.meetup.com/cities/us/ga/riverdale/;Riverdale;riverdale
+http://www.meetup.com/cities/us/ga/roswell/;Roswell;roswell
+http://www.meetup.com/cities/us/ga/savannah/;Savannah;savannah
+http://www.meetup.com/cities/us/ga/smyrna/;Smyrna;smyrna
+http://www.meetup.com/cities/us/ga/snellville/;Snellville;snellville
+http://www.meetup.com/cities/us/ga/stockbridge/;Stockbridge;stockbridge
+http://www.meetup.com/cities/us/ga/stone_mountain/;Stone Mountain;stone_mountain
+http://www.meetup.com/cities/us/ga/suwanee/;Suwanee;suwanee
+http://www.meetup.com/cities/us/ga/tucker/;Tucker;tucker
+http://www.meetup.com/cities/us/ga/upatoi/;Upatoi;upatoi
+http://www.meetup.com/cities/us/ga/valdosta/;Valdosta;valdosta
+http://www.meetup.com/cities/us/ga/warner_robins/;Warner Robins;warner_robins
+http://www.meetup.com/cities/us/ga/woodstock/;Woodstock;woodstock

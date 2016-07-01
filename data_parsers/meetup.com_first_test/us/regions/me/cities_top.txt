@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/us/me/alfred/;Alfred;alfred
+http://www.meetup.com/cities/us/me/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/me/augusta/;Augusta;augusta
+http://www.meetup.com/cities/us/me/bangor/;Bangor;bangor
+http://www.meetup.com/cities/us/me/bath/;Bath;bath
+http://www.meetup.com/cities/us/me/belfast/;Belfast;belfast
+http://www.meetup.com/cities/us/me/berwick/;Berwick;berwick
+http://www.meetup.com/cities/us/me/biddeford/;Biddeford;biddeford
+http://www.meetup.com/cities/us/me/bowdoinham/;Bowdoinham;bowdoinham
+http://www.meetup.com/cities/us/me/brewer/;Brewer;brewer
+http://www.meetup.com/cities/us/me/bridgton/;Bridgton;bridgton
+http://www.meetup.com/cities/us/me/brunswick/;Brunswick;brunswick
+http://www.meetup.com/cities/us/me/cape_elizabeth/;Cape Elizabeth;cape_elizabeth
+http://www.meetup.com/cities/us/me/cumberland_center/;Cumberland Center;cumberland_center
+http://www.meetup.com/cities/us/me/eliot/;Eliot;eliot
+http://www.meetup.com/cities/us/me/ellsworth/;Ellsworth;ellsworth
+http://www.meetup.com/cities/us/me/falmouth/;Falmouth;falmouth
+http://www.meetup.com/cities/us/me/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/me/freeport/;Freeport;freeport
+http://www.meetup.com/cities/us/me/gardiner/;Gardiner;gardiner
+http://www.meetup.com/cities/us/me/gorham/;Gorham;gorham
+http://www.meetup.com/cities/us/me/gray/;Gray;gray
+http://www.meetup.com/cities/us/me/kennebunk/;Kennebunk;kennebunk
+http://www.meetup.com/cities/us/me/kennebunkport/;Kennebunkport;kennebunkport
+http://www.meetup.com/cities/us/me/kittery/;Kittery;kittery
+http://www.meetup.com/cities/us/me/lewiston/;Lewiston;lewiston
+http://www.meetup.com/cities/us/me/monmouth/;Monmouth;monmouth
+http://www.meetup.com/cities/us/me/naples/;Naples;naples
+http://www.meetup.com/cities/us/me/new_gloucester/;New Gloucester;new_gloucester
+http://www.meetup.com/cities/us/me/north_berwick/;North Berwick;north_berwick
+http://www.meetup.com/cities/us/me/old_orchard_beach/;Old Orchard Beach;old_orchard_beach
+http://www.meetup.com/cities/us/me/orono/;Orono;orono
+http://www.meetup.com/cities/us/me/portland/;Portland;portland
+http://www.meetup.com/cities/us/me/presque_isle/;Presque Isle;presque_isle
+http://www.meetup.com/cities/us/me/rockland/;Rockland;rockland
+http://www.meetup.com/cities/us/me/saco/;Saco;saco
+http://www.meetup.com/cities/us/me/sanford/;Sanford;sanford
+http://www.meetup.com/cities/us/me/scarborough/;Scarborough;scarborough
+http://www.meetup.com/cities/us/me/south_berwick/;South Berwick;south_berwick
+http://www.meetup.com/cities/us/me/south_portland/;South Portland;south_portland
+http://www.meetup.com/cities/us/me/standish/;Standish;standish
+http://www.meetup.com/cities/us/me/surry/;Surry;surry
+http://www.meetup.com/cities/us/me/topsham/;Topsham;topsham
+http://www.meetup.com/cities/us/me/vassalboro/;Vassalboro;vassalboro
+http://www.meetup.com/cities/us/me/waterville/;Waterville;waterville
+http://www.meetup.com/cities/us/me/wells/;Wells;wells
+http://www.meetup.com/cities/us/me/westbrook/;Westbrook;westbrook
+http://www.meetup.com/cities/us/me/windham/;Windham;windham
+http://www.meetup.com/cities/us/me/yarmouth/;Yarmouth;yarmouth
+http://www.meetup.com/cities/us/me/york/;York;york

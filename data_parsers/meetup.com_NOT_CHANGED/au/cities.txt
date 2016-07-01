@@ -1,0 +1,304 @@
+http://www.meetup.com/cities/au/adelaide/;Adelaide;adelaide
+http://www.meetup.com/cities/au/airlie_beach/;Airlie Beach;airlie_beach
+http://www.meetup.com/cities/au/albany/;Albany;albany
+http://www.meetup.com/cities/au/albany_creek/;Albany Creek;albany_creek
+http://www.meetup.com/cities/au/albury-wodonga/;Albury-Wodonga;albury-wodonga
+http://www.meetup.com/cities/au/alice_springs/;Alice Springs;alice_springs
+http://www.meetup.com/cities/au/alyangula/;Alyangula;alyangula
+http://www.meetup.com/cities/au/ararat/;Ararat;ararat
+http://www.meetup.com/cities/au/armidale/;Armidale;armidale
+http://www.meetup.com/cities/au/aspley/;Aspley;aspley
+http://www.meetup.com/cities/au/atherton/;Atherton;atherton
+http://www.meetup.com/cities/au/australind/;Australind;australind
+http://www.meetup.com/cities/au/avarua/;Avarua;avarua
+http://www.meetup.com/cities/au/ayr/;Ayr;ayr
+http://www.meetup.com/cities/au/bacchus_marsh/;Bacchus Marsh;bacchus_marsh
+http://www.meetup.com/cities/au/bairnsdale/;Bairnsdale;bairnsdale
+http://www.meetup.com/cities/au/ballarat/;Ballarat;ballarat
+http://www.meetup.com/cities/au/ballina/;Ballina;ballina
+http://www.meetup.com/cities/au/batemans_bay/;Batemans Bay;batemans_bay
+http://www.meetup.com/cities/au/bathurst/;Bathurst;bathurst
+http://www.meetup.com/cities/au/bavigne/;Bavigne;bavigne
+http://www.meetup.com/cities/au/beachmere/;Beachmere;beachmere
+http://www.meetup.com/cities/au/bega/;Bega;bega
+http://www.meetup.com/cities/au/benalla/;Benalla;benalla
+http://www.meetup.com/cities/au/bendigo/;Bendigo;bendigo
+http://www.meetup.com/cities/au/berowra/;Berowra;berowra
+http://www.meetup.com/cities/au/berwick/;Berwick;berwick
+http://www.meetup.com/cities/au/biloela/;Biloela;biloela
+http://www.meetup.com/cities/au/blackburn/;Blackburn;blackburn
+http://www.meetup.com/cities/au/blacktown/;Blacktown;blacktown
+http://www.meetup.com/cities/au/blackwater/;Blackwater;blackwater
+http://www.meetup.com/cities/au/bondi_beach/;Bondi Beach;bondi_beach
+http://www.meetup.com/cities/au/bongaree/;Bongaree;bongaree
+http://www.meetup.com/cities/au/boorowa/;Boorowa;boorowa
+http://www.meetup.com/cities/au/boronia/;Boronia;boronia
+http://www.meetup.com/cities/au/bowral/;Bowral;bowral
+http://www.meetup.com/cities/au/bray_park/;Bray Park;bray_park
+http://www.meetup.com/cities/au/bribie_island/;Bribie Island;bribie_island
+http://www.meetup.com/cities/au/bridgewater-gagebrook/;Bridgewater-Gagebrook;bridgewater-gagebrook
+http://www.meetup.com/cities/au/brisbane/;Brisbane;brisbane
+http://www.meetup.com/cities/au/broome/;Broome;broome
+http://www.meetup.com/cities/au/buderim/;Buderim;buderim
+http://www.meetup.com/cities/au/bunbury/;Bunbury;bunbury
+http://www.meetup.com/cities/au/bundaberg/;Bundaberg;bundaberg
+http://www.meetup.com/cities/au/burnie-devonport/;Burnie-Devonport;burnie-devonport
+http://www.meetup.com/cities/au/burpengary/;Burpengary;burpengary
+http://www.meetup.com/cities/au/busselton/;Busselton;busselton
+http://www.meetup.com/cities/au/byron_bay/;Byron Bay;byron_bay
+http://www.meetup.com/cities/au/caboolture/;Caboolture;caboolture
+http://www.meetup.com/cities/au/cairns/;Cairns;cairns
+http://www.meetup.com/cities/au/cairns_northern_beaches/;Cairns Northern Beaches;cairns_northern_beaches
+http://www.meetup.com/cities/au/caloundra/;Caloundra;caloundra
+http://www.meetup.com/cities/au/camden_haven/;Camden Haven;camden_haven
+http://www.meetup.com/cities/au/campbelltown/;Campbelltown;campbelltown
+http://www.meetup.com/cities/au/canberra/;Canberra;canberra
+http://www.meetup.com/cities/au/carnarvon/;Carnarvon;carnarvon
+http://www.meetup.com/cities/au/carrum_downs/;Carrum Downs;carrum_downs
+http://www.meetup.com/cities/au/carseldine/;Carseldine;carseldine
+http://www.meetup.com/cities/au/casino/;Casino;casino
+http://www.meetup.com/cities/au/castle_hill/;Castle Hill;castle_hill
+http://www.meetup.com/cities/au/castlemaine/;Castlemaine;castlemaine
+http://www.meetup.com/cities/au/central_coast/;Central Coast;central_coast
+http://www.meetup.com/cities/au/cessnock/;Cessnock;cessnock
+http://www.meetup.com/cities/au/charters_towers/;Charters Towers;charters_towers
+http://www.meetup.com/cities/au/clarence/;Clarence;clarence
+http://www.meetup.com/cities/au/clifton_springs/;Clifton Springs;clifton_springs
+http://www.meetup.com/cities/au/coffs_harbour/;Coffs Harbour;coffs_harbour
+http://www.meetup.com/cities/au/colac/;Colac;colac
+http://www.meetup.com/cities/au/collie/;Collie;collie
+http://www.meetup.com/cities/au/coolum_beach/;Coolum Beach;coolum_beach
+http://www.meetup.com/cities/au/cooma/;Cooma;cooma
+http://www.meetup.com/cities/au/coonawarra/;Coonawarra;coonawarra
+http://www.meetup.com/cities/au/cootamundra/;Cootamundra;cootamundra
+http://www.meetup.com/cities/au/corowa-wahgunyah/;Corowa-Wahgunyah;corowa-wahgunyah
+http://www.meetup.com/cities/au/cowra/;Cowra;cowra
+http://www.meetup.com/cities/au/crafers-bridgewater/;Crafers-Bridgewater;crafers-bridgewater
+http://www.meetup.com/cities/au/craigieburn/;Craigieburn;craigieburn
+http://www.meetup.com/cities/au/cranbourne/;Cranbourne;cranbourne
+http://www.meetup.com/cities/au/creswick/;Creswick;creswick
+http://www.meetup.com/cities/au/crib_point/;Crib Point;crib_point
+http://www.meetup.com/cities/au/dalby/;Dalby;dalby
+http://www.meetup.com/cities/au/dandenong_ranges/;Dandenong Ranges;dandenong_ranges
+http://www.meetup.com/cities/au/darwin/;Darwin;darwin
+http://www.meetup.com/cities/au/daylesford/;Daylesford;daylesford
+http://www.meetup.com/cities/au/deception_bay/;Deception Bay;deception_bay
+http://www.meetup.com/cities/au/dee_why/;Dee Why;dee_why
+http://www.meetup.com/cities/au/deniliquin/;Deniliquin;deniliquin
+http://www.meetup.com/cities/au/devonport/;Devonport;devonport
+http://www.meetup.com/cities/au/dubbo/;Dubbo;dubbo
+http://www.meetup.com/cities/au/eatons_hill/;Eatons Hill;eatons_hill
+http://www.meetup.com/cities/au/echuca-moama/;Echuca-Moama;echuca-moama
+http://www.meetup.com/cities/au/eden/;Eden;eden
+http://www.meetup.com/cities/au/eltham/;Eltham;eltham
+http://www.meetup.com/cities/au/emerald/;Emerald;emerald
+http://www.meetup.com/cities/au/epping/;Epping;epping
+http://www.meetup.com/cities/au/erina/;Erina;erina
+http://www.meetup.com/cities/au/esp%C3%A9rance/;Espérance;esp%C3%A9rance
+http://www.meetup.com/cities/au/essendon/;Essendon;essendon
+http://www.meetup.com/cities/au/ferntree_gully/;Ferntree Gully;ferntree_gully
+http://www.meetup.com/cities/au/flinders/;Flinders;flinders
+http://www.meetup.com/cities/au/forbes/;Forbes;forbes
+http://www.meetup.com/cities/au/forster-tuncurry/;Forster-Tuncurry;forster-tuncurry
+http://www.meetup.com/cities/au/frankston/;Frankston;frankston
+http://www.meetup.com/cities/au/freshwater_creek/;Freshwater Creek;freshwater_creek
+http://www.meetup.com/cities/au/galiwinku/;Galiwinku;galiwinku
+http://www.meetup.com/cities/au/gatton/;Gatton;gatton
+http://www.meetup.com/cities/au/gawler/;Gawler;gawler
+http://www.meetup.com/cities/au/geelong/;Geelong;geelong
+http://www.meetup.com/cities/au/geraldton/;Geraldton;geraldton
+http://www.meetup.com/cities/au/gisborne/;Gisborne;gisborne
+http://www.meetup.com/cities/au/gladstone/;Gladstone;gladstone
+http://www.meetup.com/cities/au/glenbrook/;Glenbrook;glenbrook
+http://www.meetup.com/cities/au/glenn_innes/;Glenn Innes;glenn_innes
+http://www.meetup.com/cities/au/glenorchy/;Glenorchy;glenorchy
+http://www.meetup.com/cities/au/gold_coast/;Gold Coast;gold_coast
+http://www.meetup.com/cities/au/gosford/;Gosford;gosford
+http://www.meetup.com/cities/au/goulburn/;Goulburn;goulburn
+http://www.meetup.com/cities/au/grafton/;Grafton;grafton
+http://www.meetup.com/cities/au/griffith/;Griffith;griffith
+http://www.meetup.com/cities/au/gunnedah/;Gunnedah;gunnedah
+http://www.meetup.com/cities/au/gympie/;Gympie;gympie
+http://www.meetup.com/cities/au/hamilton/;Hamilton;hamilton
+http://www.meetup.com/cities/au/hampton/;Hampton;hampton
+http://www.meetup.com/cities/au/hastings/;Hastings;hastings
+http://www.meetup.com/cities/au/healesville/;Healesville;healesville
+http://www.meetup.com/cities/au/helensvale/;Helensvale;helensvale
+http://www.meetup.com/cities/au/hervey_bay/;Hervey Bay;hervey_bay
+http://www.meetup.com/cities/au/hobart/;Hobart;hobart
+http://www.meetup.com/cities/au/horsham/;Horsham;horsham
+http://www.meetup.com/cities/au/howard_springs/;Howard Springs;howard_springs
+http://www.meetup.com/cities/au/humpty_doo-macminns_lagoon/;Humpty Doo-MacMinns Lagoon;humpty_doo-macminns_lagoon
+http://www.meetup.com/cities/au/ingham/;Ingham;ingham
+http://www.meetup.com/cities/au/innisfail/;Innisfail;innisfail
+http://www.meetup.com/cities/au/inverell/;Inverell;inverell
+http://www.meetup.com/cities/au/ipswich/;Ipswich;ipswich
+http://www.meetup.com/cities/au/jabiru/;Jabiru;jabiru
+http://www.meetup.com/cities/au/joondalup/;Joondalup;joondalup
+http://www.meetup.com/cities/au/kabwe/;Kabwe;kabwe
+http://www.meetup.com/cities/au/kalgoorlie-boulder/;Kalgoorlie-Boulder;kalgoorlie-boulder
+http://www.meetup.com/cities/au/karratha/;Karratha;karratha
+http://www.meetup.com/cities/au/katherine/;Katherine;katherine
+http://www.meetup.com/cities/au/katoomba-wentworth_falls/;Katoomba-Wentworth Falls;katoomba-wentworth_falls
+http://www.meetup.com/cities/au/kawana_waters/;Kawana Waters;kawana_waters
+http://www.meetup.com/cities/au/kempsey/;Kempsey;kempsey
+http://www.meetup.com/cities/au/kiama/;Kiama;kiama
+http://www.meetup.com/cities/au/kingaroy/;Kingaroy;kingaroy
+http://www.meetup.com/cities/au/kingston-blackmans_bay/;Kingston-Blackmans Bay;kingston-blackmans_bay
+http://www.meetup.com/cities/au/kununurra/;Kununurra;kununurra
+http://www.meetup.com/cities/au/kurri_kurri/;Kurri Kurri;kurri_kurri
+http://www.meetup.com/cities/au/kwinana/;Kwinana;kwinana
+http://www.meetup.com/cities/au/kyabram/;Kyabram;kyabram
+http://www.meetup.com/cities/au/kyneton/;Kyneton;kyneton
+http://www.meetup.com/cities/au/lakes_entrance/;Lakes Entrance;lakes_entrance
+http://www.meetup.com/cities/au/lane_cove/;Lane Cove;lane_cove
+http://www.meetup.com/cities/au/lara/;Lara;lara
+http://www.meetup.com/cities/au/launceston/;Launceston;launceston
+http://www.meetup.com/cities/au/lawson-hazelbrook/;Lawson-Hazelbrook;lawson-hazelbrook
+http://www.meetup.com/cities/au/leeton/;Leeton;leeton
+http://www.meetup.com/cities/au/lemon_tree_passage/;Lemon Tree Passage;lemon_tree_passage
+http://www.meetup.com/cities/au/leopold/;Leopold;leopold
+http://www.meetup.com/cities/au/lismore/;Lismore;lismore
+http://www.meetup.com/cities/au/lithgow/;Lithgow;lithgow
+http://www.meetup.com/cities/au/liverpool/;Liverpool;liverpool
+http://www.meetup.com/cities/au/logan/;Logan;logan
+http://www.meetup.com/cities/au/mackay/;Mackay;mackay
+http://www.meetup.com/cities/au/maitland/;Maitland;maitland
+http://www.meetup.com/cities/au/maleny/;Maleny;maleny
+http://www.meetup.com/cities/au/mandurah/;Mandurah;mandurah
+http://www.meetup.com/cities/au/maningrida/;Maningrida;maningrida
+http://www.meetup.com/cities/au/mareeba/;Mareeba;mareeba
+http://www.meetup.com/cities/au/margaret_river/;Margaret River;margaret_river
+http://www.meetup.com/cities/au/maroochydore-mooloolaba/;Maroochydore-Mooloolaba;maroochydore-mooloolaba
+http://www.meetup.com/cities/au/maryborough%2C_queensland/;Maryborough, Queensland;maryborough%2C_queensland
+http://www.meetup.com/cities/au/maryborough%2C_victoria/;Maryborough, Victoria;maryborough%2C_victoria
+http://www.meetup.com/cities/au/medowie/;Medowie;medowie
+http://www.meetup.com/cities/au/melbourne/;Melbourne;melbourne
+http://www.meetup.com/cities/au/melton/;Melton;melton
+http://www.meetup.com/cities/au/merimbula/;Merimbula;merimbula
+http://www.meetup.com/cities/au/mildura/;Mildura;mildura
+http://www.meetup.com/cities/au/milingimbi/;Milingimbi;milingimbi
+http://www.meetup.com/cities/au/mittagong/;Mittagong;mittagong
+http://www.meetup.com/cities/au/moe-yallourn/;Moe-Yallourn;moe-yallourn
+http://www.meetup.com/cities/au/moranbah/;Moranbah;moranbah
+http://www.meetup.com/cities/au/morayfield/;Morayfield;morayfield
+http://www.meetup.com/cities/au/moree/;Moree;moree
+http://www.meetup.com/cities/au/morisset/;Morisset;morisset
+http://www.meetup.com/cities/au/mornington/;Mornington;mornington
+http://www.meetup.com/cities/au/morwell/;Morwell;morwell
+http://www.meetup.com/cities/au/moss_vale/;Moss Vale;moss_vale
+http://www.meetup.com/cities/au/mount_barker/;Mount Barker;mount_barker
+http://www.meetup.com/cities/au/mount_cotton/;Mount Cotton;mount_cotton
+http://www.meetup.com/cities/au/mount_dandenong/;Mount Dandenong;mount_dandenong
+http://www.meetup.com/cities/au/mount_gambier/;Mount Gambier;mount_gambier
+http://www.meetup.com/cities/au/mount_isa/;Mount Isa;mount_isa
+http://www.meetup.com/cities/au/mudgee/;Mudgee;mudgee
+http://www.meetup.com/cities/au/murray_bridge/;Murray Bridge;murray_bridge
+http://www.meetup.com/cities/au/murrumba_downs/;Murrumba Downs;murrumba_downs
+http://www.meetup.com/cities/au/murwillumbah/;Murwillumbah;murwillumbah
+http://www.meetup.com/cities/au/muswellbrook/;Muswellbrook;muswellbrook
+http://www.meetup.com/cities/au/nambour/;Nambour;nambour
+http://www.meetup.com/cities/au/nambucca_heads/;Nambucca Heads;nambucca_heads
+http://www.meetup.com/cities/au/narrabri/;Narrabri;narrabri
+http://www.meetup.com/cities/au/narre_warren/;Narre Warren;narre_warren
+http://www.meetup.com/cities/au/nelson_bay/;Nelson Bay;nelson_bay
+http://www.meetup.com/cities/au/nerang/;Nerang;nerang
+http://www.meetup.com/cities/au/newcastle/;Newcastle;newcastle
+http://www.meetup.com/cities/au/new_norfolk/;New Norfolk;new_norfolk
+http://www.meetup.com/cities/au/nguiu/;Nguiu;nguiu
+http://www.meetup.com/cities/au/ngukurr/;Ngukurr;ngukurr
+http://www.meetup.com/cities/au/nhulunbuy/;Nhulunbuy;nhulunbuy
+http://www.meetup.com/cities/au/noosa_heads/;Noosa Heads;noosa_heads
+http://www.meetup.com/cities/au/norfolk_island/;Norfolk Island;norfolk_island
+http://www.meetup.com/cities/au/northam/;Northam;northam
+http://www.meetup.com/cities/au/northcote/;Northcote;northcote
+http://www.meetup.com/cities/au/ocean_grove-barwon_heads/;Ocean Grove-Barwon Heads;ocean_grove-barwon_heads
+http://www.meetup.com/cities/au/orange/;Orange;orange
+http://www.meetup.com/cities/au/pakenham/;Pakenham;pakenham
+http://www.meetup.com/cities/au/parkes/;Parkes;parkes
+http://www.meetup.com/cities/au/parramatta/;Parramatta;parramatta
+http://www.meetup.com/cities/au/penrith/;Penrith;penrith
+http://www.meetup.com/cities/au/perth/;Perth;perth
+http://www.meetup.com/cities/au/point_cook/;Point Cook;point_cook
+http://www.meetup.com/cities/au/port_augusta/;Port Augusta;port_augusta
+http://www.meetup.com/cities/au/port_hedland/;Port Hedland;port_hedland
+http://www.meetup.com/cities/au/port_keats/;Port Keats;port_keats
+http://www.meetup.com/cities/au/portland/;Portland;portland
+http://www.meetup.com/cities/au/port_laoise/;Port Laoise;port_laoise
+http://www.meetup.com/cities/au/port_lincoln/;Port Lincoln;port_lincoln
+http://www.meetup.com/cities/au/port_macquarie/;Port Macquarie;port_macquarie
+http://www.meetup.com/cities/au/port_pirie/;Port Pirie;port_pirie
+http://www.meetup.com/cities/au/queanbeyan/;Queanbeyan;queanbeyan
+http://www.meetup.com/cities/au/raymond_terrace/;Raymond Terrace;raymond_terrace
+http://www.meetup.com/cities/au/redcliffe/;Redcliffe;redcliffe
+http://www.meetup.com/cities/au/renmark/;Renmark;renmark
+http://www.meetup.com/cities/au/richmond-windsor/;Richmond-Windsor;richmond-windsor
+http://www.meetup.com/cities/au/riddells_creek/;Riddells Creek;riddells_creek
+http://www.meetup.com/cities/au/rockhampton/;Rockhampton;rockhampton
+http://www.meetup.com/cities/au/rockingham/;Rockingham;rockingham
+http://www.meetup.com/cities/au/roebourne/;Roebourne;roebourne
+http://www.meetup.com/cities/au/roma/;Roma;roma
+http://www.meetup.com/cities/au/rye/;Rye;rye
+http://www.meetup.com/cities/au/sale/;Sale;sale
+http://www.meetup.com/cities/au/sandringham/;Sandringham;sandringham
+http://www.meetup.com/cities/au/san_remo/;San Remo;san_remo
+http://www.meetup.com/cities/au/sawtell/;Sawtell;sawtell
+http://www.meetup.com/cities/au/seymour/;Seymour;seymour
+http://www.meetup.com/cities/au/shailer_park/;Shailer Park;shailer_park
+http://www.meetup.com/cities/au/shepparton-mooroopna/;Shepparton-Mooroopna;shepparton-mooroopna
+http://www.meetup.com/cities/au/shoalhaven/;Shoalhaven;shoalhaven
+http://www.meetup.com/cities/au/singleton/;Singleton;singleton
+http://www.meetup.com/cities/au/somerville/;Somerville;somerville
+http://www.meetup.com/cities/au/springfield_lakes/;Springfield Lakes;springfield_lakes
+http://www.meetup.com/cities/au/springwood/;Springwood;springwood
+http://www.meetup.com/cities/au/stanthorpe/;Stanthorpe;stanthorpe
+http://www.meetup.com/cities/au/stawell/;Stawell;stawell
+http://www.meetup.com/cities/au/st_kilda/;St Kilda;st_kilda
+http://www.meetup.com/cities/au/strathpine/;Strathpine;strathpine
+http://www.meetup.com/cities/au/sunbury/;Sunbury;sunbury
+http://www.meetup.com/cities/au/sunshine_coast/;Sunshine Coast;sunshine_coast
+http://www.meetup.com/cities/au/sutherland/;Sutherland;sutherland
+http://www.meetup.com/cities/au/swan_hill/;Swan Hill;swan_hill
+http://www.meetup.com/cities/au/sydney/;Sydney;sydney
+http://www.meetup.com/cities/au/tahmoor/;Tahmoor;tahmoor
+http://www.meetup.com/cities/au/tamworth/;Tamworth;tamworth
+http://www.meetup.com/cities/au/taree/;Taree;taree
+http://www.meetup.com/cities/au/tarneit/;Tarneit;tarneit
+http://www.meetup.com/cities/au/temora/;Temora;temora
+http://www.meetup.com/cities/au/tennant_creek/;Tennant Creek;tennant_creek
+http://www.meetup.com/cities/au/tewantin-noosa/;Tewantin-Noosa;tewantin-noosa
+http://www.meetup.com/cities/au/toowoomba/;Toowoomba;toowoomba
+http://www.meetup.com/cities/au/torquay/;Torquay;torquay
+http://www.meetup.com/cities/au/townsville/;Townsville;townsville
+http://www.meetup.com/cities/au/trafalgar/;Trafalgar;trafalgar
+http://www.meetup.com/cities/au/traralgon/;Traralgon;traralgon
+http://www.meetup.com/cities/au/tumut/;Tumut;tumut
+http://www.meetup.com/cities/au/tuross_head/;Tuross Head;tuross_head
+http://www.meetup.com/cities/au/tweed_heads/;Tweed Heads;tweed_heads
+http://www.meetup.com/cities/au/ulladulla/;Ulladulla;ulladulla
+http://www.meetup.com/cities/au/ulverstone/;Ulverstone;ulverstone
+http://www.meetup.com/cities/au/victor_harbor/;Victor Harbor;victor_harbor
+http://www.meetup.com/cities/au/victoria_point/;Victoria Point;victoria_point
+http://www.meetup.com/cities/au/wagga_wagga/;Wagga Wagga;wagga_wagga
+http://www.meetup.com/cities/au/wangaratta/;Wangaratta;wangaratta
+http://www.meetup.com/cities/au/wangi-rathmines/;Wangi-Rathmines;wangi-rathmines
+http://www.meetup.com/cities/au/warburton/;Warburton;warburton
+http://www.meetup.com/cities/au/warner/;Warner;warner
+http://www.meetup.com/cities/au/warragul/;Warragul;warragul
+http://www.meetup.com/cities/au/warrnambool/;Warrnambool;warrnambool
+http://www.meetup.com/cities/au/warwick/;Warwick;warwick
+http://www.meetup.com/cities/au/wellington/;Wellington;wellington
+http://www.meetup.com/cities/au/west_pennant_hills/;West Pennant Hills;west_pennant_hills
+http://www.meetup.com/cities/au/west_wyalong/;West Wyalong;west_wyalong
+http://www.meetup.com/cities/au/whyalla/;Whyalla;whyalla
+http://www.meetup.com/cities/au/wollongong/;Wollongong;wollongong
+http://www.meetup.com/cities/au/wonthaggi/;Wonthaggi;wonthaggi
+http://www.meetup.com/cities/au/woodside/;Woodside;woodside
+http://www.meetup.com/cities/au/yarra_glen/;Yarra Glen;yarra_glen
+http://www.meetup.com/cities/au/yarra_valley_/;Yarra Valley;yarra_valley_
+http://www.meetup.com/cities/au/yarrawonga-mulwala/;Yarrawonga-Mulwala;yarrawonga-mulwala
+http://www.meetup.com/cities/au/yass/;Yass;yass
+http://www.meetup.com/cities/au/yea/;Yea;yea
+http://www.meetup.com/cities/au/yeppoon/;Yeppoon;yeppoon
+http://www.meetup.com/cities/au/young/;Young;young
+http://www.meetup.com/cities/au/yulara/;Yulara;yulara

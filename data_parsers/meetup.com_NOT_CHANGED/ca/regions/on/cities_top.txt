@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/ca/on/ajax/;Ajax;ajax
+http://www.meetup.com/cities/ca/on/aurora/;Aurora;aurora
+http://www.meetup.com/cities/ca/on/barrie/;Barrie;barrie
+http://www.meetup.com/cities/ca/on/bowmanville/;Bowmanville;bowmanville
+http://www.meetup.com/cities/ca/on/brampton/;Brampton;brampton
+http://www.meetup.com/cities/ca/on/brantford/;Brantford;brantford
+http://www.meetup.com/cities/ca/on/burlington/;Burlington;burlington
+http://www.meetup.com/cities/ca/on/cambridge/;Cambridge;cambridge
+http://www.meetup.com/cities/ca/on/concord/;Concord;concord
+http://www.meetup.com/cities/ca/on/dundas/;Dundas;dundas
+http://www.meetup.com/cities/ca/on/east_york/;East York;east_york
+http://www.meetup.com/cities/ca/on/etobicoke/;Etobicoke;etobicoke
+http://www.meetup.com/cities/ca/on/georgetown/;Georgetown;georgetown
+http://www.meetup.com/cities/ca/on/gloucester/;Gloucester;gloucester
+http://www.meetup.com/cities/ca/on/guelph/;Guelph;guelph
+http://www.meetup.com/cities/ca/on/hamilton/;Hamilton;hamilton
+http://www.meetup.com/cities/ca/on/kanata/;Kanata;kanata
+http://www.meetup.com/cities/ca/on/kingston/;Kingston;kingston
+http://www.meetup.com/cities/ca/on/kitchener/;Kitchener;kitchener
+http://www.meetup.com/cities/ca/on/london/;London;london
+http://www.meetup.com/cities/ca/on/maple/;Maple;maple
+http://www.meetup.com/cities/ca/on/markham/;Markham;markham
+http://www.meetup.com/cities/ca/on/milton/;Milton;milton
+http://www.meetup.com/cities/ca/on/mississauga/;Mississauga;mississauga
+http://www.meetup.com/cities/ca/on/nepean/;Nepean;nepean
+http://www.meetup.com/cities/ca/on/newmarket/;Newmarket;newmarket
+http://www.meetup.com/cities/ca/on/niagara_falls/;Niagara Falls;niagara_falls
+http://www.meetup.com/cities/ca/on/north_york/;North York;north_york
+http://www.meetup.com/cities/ca/on/oakville/;Oakville;oakville
+http://www.meetup.com/cities/ca/on/orangeville/;Orangeville;orangeville
+http://www.meetup.com/cities/ca/on/orl%C3%A9ans/;Orléans;orl%C3%A9ans
+http://www.meetup.com/cities/ca/on/oshawa/;Oshawa;oshawa
+http://www.meetup.com/cities/ca/on/ottawa/;Ottawa;ottawa
+http://www.meetup.com/cities/ca/on/peterborough/;Peterborough;peterborough
+http://www.meetup.com/cities/ca/on/pickering/;Pickering;pickering
+http://www.meetup.com/cities/ca/on/richmond_hill/;Richmond Hill;richmond_hill
+http://www.meetup.com/cities/ca/on/sarnia/;Sarnia;sarnia
+http://www.meetup.com/cities/ca/on/scarborough/;Scarborough;scarborough
+http://www.meetup.com/cities/ca/on/st_catharines/;St Catharines;st_catharines
+http://www.meetup.com/cities/ca/on/stittsville/;Stittsville;stittsville
+http://www.meetup.com/cities/ca/on/stoney_creek/;Stoney Creek;stoney_creek
+http://www.meetup.com/cities/ca/on/sudbury/;Sudbury;sudbury
+http://www.meetup.com/cities/ca/on/thornhill/;Thornhill;thornhill
+http://www.meetup.com/cities/ca/on/thunder_bay/;Thunder Bay;thunder_bay
+http://www.meetup.com/cities/ca/on/toronto/;Toronto;toronto
+http://www.meetup.com/cities/ca/on/waterloo/;Waterloo;waterloo
+http://www.meetup.com/cities/ca/on/whitby/;Whitby;whitby
+http://www.meetup.com/cities/ca/on/windsor/;Windsor;windsor
+http://www.meetup.com/cities/ca/on/woodbridge/;Woodbridge;woodbridge
+http://www.meetup.com/cities/ca/on/york/;York;york

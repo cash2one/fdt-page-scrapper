@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/vn/bac_can/;Bac Can;bac_can
+http://www.meetup.com/cities/vn/bac_giang/;Bac Giang;bac_giang
+http://www.meetup.com/cities/vn/bac_lieu/;Bac Lieu;bac_lieu
+http://www.meetup.com/cities/vn/bac_ninh/;Bac Ninh;bac_ninh
+http://www.meetup.com/cities/vn/bien_hoa/;Bien Hoa;bien_hoa
+http://www.meetup.com/cities/vn/bien_san/;Bien San;bien_san
+http://www.meetup.com/cities/vn/buon_me_thuot/;Buon Me Thuot;buon_me_thuot
+http://www.meetup.com/cities/vn/ca_mau/;Ca Mau;ca_mau
+http://www.meetup.com/cities/vn/cam_pha/;Cam Pha;cam_pha
+http://www.meetup.com/cities/vn/cam_ranh/;Cam Ranh;cam_ranh
+http://www.meetup.com/cities/vn/can_tho/;Can Tho;can_tho
+http://www.meetup.com/cities/vn/da_lat/;Da Lat;da_lat
+http://www.meetup.com/cities/vn/da_nang/;Da Nang;da_nang
+http://www.meetup.com/cities/vn/dien_bien/;Dien Bien;dien_bien
+http://www.meetup.com/cities/vn/dong_ha/;Dong Ha;dong_ha
+http://www.meetup.com/cities/vn/dong_xoai/;Dong Xoai;dong_xoai
+http://www.meetup.com/cities/vn/ha_dong/;Ha Dong;ha_dong
+http://www.meetup.com/cities/vn/ha_noi/;Ha Noi;ha_noi
+http://www.meetup.com/cities/vn/ha_tinh/;Ha Tinh;ha_tinh
+http://www.meetup.com/cities/vn/hai_duong/;Hai Duong;hai_duong
+http://www.meetup.com/cities/vn/hai_phong/;Hai Phong;hai_phong
+http://www.meetup.com/cities/vn/hoa_binh/;Hoa Binh;hoa_binh
+http://www.meetup.com/cities/vn/hoi_an/;Hoi An;hoi_an
+http://www.meetup.com/cities/vn/hue/;Hue;hue
+http://www.meetup.com/cities/vn/lao_cai/;Lao Cai;lao_cai
+http://www.meetup.com/cities/vn/long_xuyen/;Long Xuyen;long_xuyen
+http://www.meetup.com/cities/vn/my_tho/;My Tho;my_tho
+http://www.meetup.com/cities/vn/nam_dinh/;Nam Dinh;nam_dinh
+http://www.meetup.com/cities/vn/nha_trang/;Nha Trang;nha_trang
+http://www.meetup.com/cities/vn/phan_thiet/;Phan Thiet;phan_thiet
+http://www.meetup.com/cities/vn/play_cu/;Play Cu;play_cu
+http://www.meetup.com/cities/vn/quang_ngai/;Quang Ngai;quang_ngai
+http://www.meetup.com/cities/vn/qui_nhon/;Qui Nhon;qui_nhon
+http://www.meetup.com/cities/vn/rach_gia/;Rach Gia;rach_gia
+http://www.meetup.com/cities/vn/soc_trang/;Soc Trang;soc_trang
+http://www.meetup.com/cities/vn/song_be/;Song Be;song_be
+http://www.meetup.com/cities/vn/tam_ky/;Tam Ky;tam_ky
+http://www.meetup.com/cities/vn/tay_ninh/;Tay Ninh;tay_ninh
+http://www.meetup.com/cities/vn/thai_binh/;Thai Binh;thai_binh
+http://www.meetup.com/cities/vn/thai_nguyen/;Thai Nguyen;thai_nguyen
+http://www.meetup.com/cities/vn/thanh_hoa/;Thanh Hoa;thanh_hoa
+http://www.meetup.com/cities/vn/thanh_pho_ho_chi_minh/;Thanh Pho Ho Chi Minh;thanh_pho_ho_chi_minh
+http://www.meetup.com/cities/vn/tra_vinh/;Tra Vinh;tra_vinh
+http://www.meetup.com/cities/vn/tuy_hoa/;Tuy Hoa;tuy_hoa
+http://www.meetup.com/cities/vn/tuyen_quang/;Tuyen Quang;tuyen_quang
+http://www.meetup.com/cities/vn/viet_tri/;Viet Tri;viet_tri
+http://www.meetup.com/cities/vn/vinh/;Vinh;vinh
+http://www.meetup.com/cities/vn/vinh_long/;Vinh Long;vinh_long
+http://www.meetup.com/cities/vn/vung_tau/;Vung Tau;vung_tau
+http://www.meetup.com/cities/vn/yen_bai/;Yen Bai;yen_bai

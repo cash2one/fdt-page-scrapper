@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/ca/nb/alma/;Alma;alma
+http://www.meetup.com/cities/ca/nb/ammon/;Ammon;ammon
+http://www.meetup.com/cities/ca/nb/bathurst/;Bathurst;bathurst
+http://www.meetup.com/cities/ca/nb/baxters_corner/;Baxters Corner;baxters_corner
+http://www.meetup.com/cities/ca/nb/belledune/;Belledune;belledune
+http://www.meetup.com/cities/ca/nb/burton/;Burton;burton
+http://www.meetup.com/cities/ca/nb/campbellton/;Campbellton;campbellton
+http://www.meetup.com/cities/ca/nb/chamcook/;Chamcook;chamcook
+http://www.meetup.com/cities/ca/nb/charters_settlement/;Charters Settlement;charters_settlement
+http://www.meetup.com/cities/ca/nb/chipman/;Chipman;chipman
+http://www.meetup.com/cities/ca/nb/dalhousie/;Dalhousie;dalhousie
+http://www.meetup.com/cities/ca/nb/dieppe/;Dieppe;dieppe
+http://www.meetup.com/cities/ca/nb/douglas/;Douglas;douglas
+http://www.meetup.com/cities/ca/nb/edmundston/;Edmundston;edmundston
+http://www.meetup.com/cities/ca/nb/fredericton/;Fredericton;fredericton
+http://www.meetup.com/cities/ca/nb/grand_bay-westfield/;Grand Bay-Westfield;grand_bay-westfield
+http://www.meetup.com/cities/ca/nb/grand_manan/;Grand Manan;grand_manan
+http://www.meetup.com/cities/ca/nb/grand-barachois/;Grand-Barachois;grand-barachois
+http://www.meetup.com/cities/ca/nb/hampton/;Hampton;hampton
+http://www.meetup.com/cities/ca/nb/hanwell/;Hanwell;hanwell
+http://www.meetup.com/cities/ca/nb/hillsborough/;Hillsborough;hillsborough
+http://www.meetup.com/cities/ca/nb/irishtown/;Irishtown;irishtown
+http://www.meetup.com/cities/ca/nb/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/ca/nb/maugerville/;Maugerville;maugerville
+http://www.meetup.com/cities/ca/nb/memramcook/;Memramcook;memramcook
+http://www.meetup.com/cities/ca/nb/minto/;Minto;minto
+http://www.meetup.com/cities/ca/nb/miramichi/;Miramichi;miramichi
+http://www.meetup.com/cities/ca/nb/moncton/;Moncton;moncton
+http://www.meetup.com/cities/ca/nb/new_jersey/;New Jersey;new_jersey
+http://www.meetup.com/cities/ca/nb/new_maryland/;New Maryland;new_maryland
+http://www.meetup.com/cities/ca/nb/oromocto/;Oromocto;oromocto
+http://www.meetup.com/cities/ca/nb/pennfield/;Pennfield;pennfield
+http://www.meetup.com/cities/ca/nb/quispamsis/;Quispamsis;quispamsis
+http://www.meetup.com/cities/ca/nb/riverview/;Riverview;riverview
+http://www.meetup.com/cities/ca/nb/rothesay/;Rothesay;rothesay
+http://www.meetup.com/cities/ca/nb/rusagonis/;Rusagonis;rusagonis
+http://www.meetup.com/cities/ca/nb/sackville/;Sackville;sackville
+http://www.meetup.com/cities/ca/nb/saint_john/;Saint John;saint_john
+http://www.meetup.com/cities/ca/nb/saint-fran%C3%A7ois-de-madawaska/;Saint-François-de-Madawaska;saint-fran%C3%A7ois-de-madawaska
+http://www.meetup.com/cities/ca/nb/saint-jacques/;Saint-Jacques;saint-jacques
+http://www.meetup.com/cities/ca/nb/salisbury/;Salisbury;salisbury
+http://www.meetup.com/cities/ca/nb/shediac/;Shediac;shediac
+http://www.meetup.com/cities/ca/nb/shediac_cape/;Shediac Cape;shediac_cape
+http://www.meetup.com/cities/ca/nb/st_stephen/;St Stephen;st_stephen
+http://www.meetup.com/cities/ca/nb/sussex/;Sussex;sussex
+http://www.meetup.com/cities/ca/nb/tracadie-sheila/;Tracadie-Sheila;tracadie-sheila
+http://www.meetup.com/cities/ca/nb/upper_coverdale/;Upper Coverdale;upper_coverdale
+http://www.meetup.com/cities/ca/nb/waterville-sunbury/;Waterville-Sunbury;waterville-sunbury
+http://www.meetup.com/cities/ca/nb/woodstock/;Woodstock;woodstock
+http://www.meetup.com/cities/ca/nb/zealand/;Zealand;zealand

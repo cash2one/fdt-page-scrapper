@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/es/a_coru%C3%B1a/;A Coruña;a_coru%C3%B1a
+http://www.meetup.com/cities/es/abar%C3%A1n/;Abarán;abar%C3%A1n
+http://www.meetup.com/cities/es/alacant/;Alacant;alacant
+http://www.meetup.com/cities/es/almer%C3%ADa/;Almería;almer%C3%ADa
+http://www.meetup.com/cities/es/arona/;Arona;arona
+http://www.meetup.com/cities/es/badajoz/;Badajoz;badajoz
+http://www.meetup.com/cities/es/badalona/;Badalona;badalona
+http://www.meetup.com/cities/es/barcelona/;Barcelona;barcelona
+http://www.meetup.com/cities/es/bilbao/;Bilbao;bilbao
+http://www.meetup.com/cities/es/cantabria/;Cantabria;cantabria
+http://www.meetup.com/cities/es/cartagena/;Cartagena;cartagena
+http://www.meetup.com/cities/es/castell%C3%B3/;Castelló;castell%C3%B3
+http://www.meetup.com/cities/es/c%C3%A1diz/;Cádiz;c%C3%A1diz
+http://www.meetup.com/cities/es/donostia/;Donostia;donostia
+http://www.meetup.com/cities/es/estepona/;Estepona;estepona
+http://www.meetup.com/cities/es/fuengirola/;Fuengirola;fuengirola
+http://www.meetup.com/cities/es/gij%C3%B3n/;Gijón;gij%C3%B3n
+http://www.meetup.com/cities/es/girona/;Girona;girona
+http://www.meetup.com/cities/es/granada/;Granada;granada
+http://www.meetup.com/cities/es/huelva/;Huelva;huelva
+http://www.meetup.com/cities/es/la_rioja/;La Rioja;la_rioja
+http://www.meetup.com/cities/es/las_palmas/;Las Palmas;las_palmas
+http://www.meetup.com/cities/es/le%C3%B3n/;León;le%C3%B3n
+http://www.meetup.com/cities/es/lleida/;Lleida;lleida
+http://www.meetup.com/cities/es/madrid/;Madrid;madrid
+http://www.meetup.com/cities/es/marbella/;Marbella;marbella
+http://www.meetup.com/cities/es/murcia/;Murcia;murcia
+http://www.meetup.com/cities/es/m%C3%A1laga/;Málaga;m%C3%A1laga
+http://www.meetup.com/cities/es/ourense/;Ourense;ourense
+http://www.meetup.com/cities/es/oviedo/;Oviedo;oviedo
+http://www.meetup.com/cities/es/palma/;Palma;palma
+http://www.meetup.com/cities/es/pamplona/;Pamplona;pamplona
+http://www.meetup.com/cities/es/puerto_del_rosario/;Puerto del Rosario;puerto_del_rosario
+http://www.meetup.com/cities/es/rota/;Rota;rota
+http://www.meetup.com/cities/es/sabadell/;Sabadell;sabadell
+http://www.meetup.com/cities/es/salamanca/;Salamanca;salamanca
+http://www.meetup.com/cities/es/sant_cugat_del_vall%C3%A8s/;Sant Cugat del Vallès;sant_cugat_del_vall%C3%A8s
+http://www.meetup.com/cities/es/santa_cruz_de_tenerife/;Santa Cruz de Tenerife;santa_cruz_de_tenerife
+http://www.meetup.com/cities/es/santiago_de_compostela/;Santiago de Compostela;santiago_de_compostela
+http://www.meetup.com/cities/es/sevilla/;Sevilla;sevilla
+http://www.meetup.com/cities/es/sitges/;Sitges;sitges
+http://www.meetup.com/cities/es/tarragona/;Tarragona;tarragona
+http://www.meetup.com/cities/es/terrassa/;Terrassa;terrassa
+http://www.meetup.com/cities/es/toledo/;Toledo;toledo
+http://www.meetup.com/cities/es/torrevieja/;Torrevieja;torrevieja
+http://www.meetup.com/cities/es/valencia/;Valencia;valencia
+http://www.meetup.com/cities/es/valladolid/;Valladolid;valladolid
+http://www.meetup.com/cities/es/vigo/;Vigo;vigo
+http://www.meetup.com/cities/es/vitoria/;Vitoria;vitoria
+http://www.meetup.com/cities/es/zaragoza/;Zaragoza;zaragoza

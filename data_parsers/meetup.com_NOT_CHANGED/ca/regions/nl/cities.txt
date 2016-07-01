@@ -1,0 +1,451 @@
+http://www.meetup.com/cities/ca/nl/aguathuna/;Aguathuna;aguathuna
+http://www.meetup.com/cities/ca/nl/anchor_point/;Anchor Point;anchor_point
+http://www.meetup.com/cities/ca/nl/aquaforte/;Aquaforte;aquaforte
+http://www.meetup.com/cities/ca/nl/arnolds_cove/;Arnolds Cove;arnolds_cove
+http://www.meetup.com/cities/ca/nl/aspen_cove/;Aspen Cove;aspen_cove
+http://www.meetup.com/cities/ca/nl/avondale/;Avondale;avondale
+http://www.meetup.com/cities/ca/nl/badger/;Badger;badger
+http://www.meetup.com/cities/ca/nl/badgers_quay/;Badgers Quay;badgers_quay
+http://www.meetup.com/cities/ca/nl/baie_verte/;Baie Verte;baie_verte
+http://www.meetup.com/cities/ca/nl/baine_harbour/;Baine Harbour;baine_harbour
+http://www.meetup.com/cities/ca/nl/barachois_brook/;Barachois Brook;barachois_brook
+http://www.meetup.com/cities/ca/nl/bartletts_harbour/;Bartletts Harbour;bartletts_harbour
+http://www.meetup.com/cities/ca/nl/bauline/;Bauline;bauline
+http://www.meetup.com/cities/ca/nl/bay_bulls/;Bay Bulls;bay_bulls
+http://www.meetup.com/cities/ca/nl/bay_de_verde/;Bay de Verde;bay_de_verde
+http://www.meetup.com/cities/ca/nl/bay_l%27argent/;Bay l'Argent;bay_l%27argent
+http://www.meetup.com/cities/ca/nl/bay_roberts/;Bay Roberts;bay_roberts
+http://www.meetup.com/cities/ca/nl/baytona/;Baytona;baytona
+http://www.meetup.com/cities/ca/nl/beaumont/;Beaumont;beaumont
+http://www.meetup.com/cities/ca/nl/bellburns/;Bellburns;bellburns
+http://www.meetup.com/cities/ca/nl/belleoram/;Belleoram;belleoram
+http://www.meetup.com/cities/ca/nl/bellevue/;Bellevue;bellevue
+http://www.meetup.com/cities/ca/nl/bell_island/;Bell Island;bell_island
+http://www.meetup.com/cities/ca/nl/bell_island_front/;Bell Island Front;bell_island_front
+http://www.meetup.com/cities/ca/nl/benoits_cove/;Benoits Cove;benoits_cove
+http://www.meetup.com/cities/ca/nl/benton/;Benton;benton
+http://www.meetup.com/cities/ca/nl/bide_arm/;Bide Arm;bide_arm
+http://www.meetup.com/cities/ca/nl/birchy_bay/;Birchy Bay;birchy_bay
+http://www.meetup.com/cities/ca/nl/birchy_head/;Birchy Head;birchy_head
+http://www.meetup.com/cities/ca/nl/bird_cove/;Bird Cove;bird_cove
+http://www.meetup.com/cities/ca/nl/bishops_falls/;Bishops Falls;bishops_falls
+http://www.meetup.com/cities/ca/nl/black_duck_cove/;Black Duck Cove;black_duck_cove
+http://www.meetup.com/cities/ca/nl/black_duck_siding/;Black Duck Siding;black_duck_siding
+http://www.meetup.com/cities/ca/nl/black_tickle/;Black Tickle;black_tickle
+http://www.meetup.com/cities/ca/nl/blaketown/;Blaketown;blaketown
+http://www.meetup.com/cities/ca/nl/bloomfield/;Bloomfield;bloomfield
+http://www.meetup.com/cities/ca/nl/boat_harbour_west/;Boat Harbour West;boat_harbour_west
+http://www.meetup.com/cities/ca/nl/bonavista/;Bonavista;bonavista
+http://www.meetup.com/cities/ca/nl/bonne_bay/;Bonne Bay;bonne_bay
+http://www.meetup.com/cities/ca/nl/bonne_bay_pond/;Bonne Bay Pond;bonne_bay_pond
+http://www.meetup.com/cities/ca/nl/botwood/;Botwood;botwood
+http://www.meetup.com/cities/ca/nl/boyds_cove/;Boyds Cove;boyds_cove
+http://www.meetup.com/cities/ca/nl/branch/;Branch;branch
+http://www.meetup.com/cities/ca/nl/brents_cove/;Brents Cove;brents_cove
+http://www.meetup.com/cities/ca/nl/bridgeport/;Bridgeport;bridgeport
+http://www.meetup.com/cities/ca/nl/brighton/;Brighton;brighton
+http://www.meetup.com/cities/ca/nl/brigus/;Brigus;brigus
+http://www.meetup.com/cities/ca/nl/brigus_junction/;Brigus Junction;brigus_junction
+http://www.meetup.com/cities/ca/nl/broad_cove_bdv/;Broad Cove Bdv;broad_cove_bdv
+http://www.meetup.com/cities/ca/nl/brookfield/;Brookfield;brookfield
+http://www.meetup.com/cities/ca/nl/brownsdale/;Brownsdale;brownsdale
+http://www.meetup.com/cities/ca/nl/buchans/;Buchans;buchans
+http://www.meetup.com/cities/ca/nl/buchans_junction/;Buchans Junction;buchans_junction
+http://www.meetup.com/cities/ca/nl/bunyans_cove/;Bunyans Cove;bunyans_cove
+http://www.meetup.com/cities/ca/nl/burgeo/;Burgeo;burgeo
+http://www.meetup.com/cities/ca/nl/burgoynes_cove/;Burgoynes Cove;burgoynes_cove
+http://www.meetup.com/cities/ca/nl/burin/;Burin;burin
+http://www.meetup.com/cities/ca/nl/burin_bay_arm/;Burin Bay Arm;burin_bay_arm
+http://www.meetup.com/cities/ca/nl/burlington/;Burlington;burlington
+http://www.meetup.com/cities/ca/nl/burnside/;Burnside;burnside
+http://www.meetup.com/cities/ca/nl/burnt_islands_blp/;Burnt Islands Blp;burnt_islands_blp
+http://www.meetup.com/cities/ca/nl/burnt_point_bdv/;Burnt Point Bdv;burnt_point_bdv
+http://www.meetup.com/cities/ca/nl/calvert/;Calvert;calvert
+http://www.meetup.com/cities/ca/nl/campbellton/;Campbellton;campbellton
+http://www.meetup.com/cities/ca/nl/cannings_cove/;Cannings Cove;cannings_cove
+http://www.meetup.com/cities/ca/nl/cape_broyle/;Cape Broyle;cape_broyle
+http://www.meetup.com/cities/ca/nl/cape_freels_north/;Cape Freels North;cape_freels_north
+http://www.meetup.com/cities/ca/nl/cape_ray/;Cape Ray;cape_ray
+http://www.meetup.com/cities/ca/nl/cape_st_george/;Cape St George;cape_st_george
+http://www.meetup.com/cities/ca/nl/caplin_cove_bdv/;Caplin Cove Bdv;caplin_cove_bdv
+http://www.meetup.com/cities/ca/nl/cappahayden/;Cappahayden;cappahayden
+http://www.meetup.com/cities/ca/nl/carbonear/;Carbonear;carbonear
+http://www.meetup.com/cities/ca/nl/carmanville/;Carmanville;carmanville
+http://www.meetup.com/cities/ca/nl/carters_cove/;Carters Cove;carters_cove
+http://www.meetup.com/cities/ca/nl/cartwright/;Cartwright;cartwright
+http://www.meetup.com/cities/ca/nl/cartyville/;Cartyville;cartyville
+http://www.meetup.com/cities/ca/nl/castors_river/;Castors River;castors_river
+http://www.meetup.com/cities/ca/nl/catalina/;Catalina;catalina
+http://www.meetup.com/cities/ca/nl/cavendish/;Cavendish;cavendish
+http://www.meetup.com/cities/ca/nl/chance_cove/;Chance Cove;chance_cove
+http://www.meetup.com/cities/ca/nl/change_islands/;Change Islands;change_islands
+http://www.meetup.com/cities/ca/nl/channel-port-aux-basques/;Channel-Port-aux-Basques;channel-port-aux-basques
+http://www.meetup.com/cities/ca/nl/chapel_arm/;Chapel Arm;chapel_arm
+http://www.meetup.com/cities/ca/nl/chapel_cove/;Chapel Cove;chapel_cove
+http://www.meetup.com/cities/ca/nl/charleston/;Charleston;charleston
+http://www.meetup.com/cities/ca/nl/charlottetown/;Charlottetown;charlottetown
+http://www.meetup.com/cities/ca/nl/charlottetown_lab/;Charlottetown LAB;charlottetown_lab
+http://www.meetup.com/cities/ca/nl/churchill_falls/;Churchill Falls;churchill_falls
+http://www.meetup.com/cities/ca/nl/clarenville/;Clarenville;clarenville
+http://www.meetup.com/cities/ca/nl/clarkes_beach/;Clarkes Beach;clarkes_beach
+http://www.meetup.com/cities/ca/nl/coachmans_cove/;Coachmans Cove;coachmans_cove
+http://www.meetup.com/cities/ca/nl/codroy/;Codroy;codroy
+http://www.meetup.com/cities/ca/nl/coleys_point_south/;Coleys Point South;coleys_point_south
+http://www.meetup.com/cities/ca/nl/colinet/;Colinet;colinet
+http://www.meetup.com/cities/ca/nl/colliers_riverhead/;Colliers Riverhead;colliers_riverhead
+http://www.meetup.com/cities/ca/nl/come_by_chance/;Come by Chance;come_by_chance
+http://www.meetup.com/cities/ca/nl/comfort_cove-newstead/;Comfort Cove-Newstead;comfort_cove-newstead
+http://www.meetup.com/cities/ca/nl/conception_bay_south/;Conception Bay South;conception_bay_south
+http://www.meetup.com/cities/ca/nl/conception_harbour/;Conception Harbour;conception_harbour
+http://www.meetup.com/cities/ca/nl/conche/;Conche;conche
+http://www.meetup.com/cities/ca/nl/conne_river/;Conne River;conne_river
+http://www.meetup.com/cities/ca/nl/cooks_harbour/;Cooks Harbour;cooks_harbour
+http://www.meetup.com/cities/ca/nl/coombs_cove/;Coombs Cove;coombs_cove
+http://www.meetup.com/cities/ca/nl/cormack/;Cormack;cormack
+http://www.meetup.com/cities/ca/nl/corner_brook/;Corner Brook;corner_brook
+http://www.meetup.com/cities/ca/nl/cottlesville/;Cottlesville;cottlesville
+http://www.meetup.com/cities/ca/nl/cottrells_cove/;Cottrells Cove;cottrells_cove
+http://www.meetup.com/cities/ca/nl/cow_head/;Cow Head;cow_head
+http://www.meetup.com/cities/ca/nl/coxs_cove/;Coxs Cove;coxs_cove
+http://www.meetup.com/cities/ca/nl/creston/;Creston;creston
+http://www.meetup.com/cities/ca/nl/creston_north/;Creston North;creston_north
+http://www.meetup.com/cities/ca/nl/croque/;Croque;croque
+http://www.meetup.com/cities/ca/nl/cupids/;Cupids;cupids
+http://www.meetup.com/cities/ca/nl/daniels_harbour/;Daniels Harbour;daniels_harbour
+http://www.meetup.com/cities/ca/nl/deadmans_bay/;Deadmans Bay;deadmans_bay
+http://www.meetup.com/cities/ca/nl/deep_bay/;Deep Bay;deep_bay
+http://www.meetup.com/cities/ca/nl/deer_lake/;Deer Lake;deer_lake
+http://www.meetup.com/cities/ca/nl/dildo/;Dildo;dildo
+http://www.meetup.com/cities/ca/nl/dover/;Dover;dover
+http://www.meetup.com/cities/ca/nl/doyles/;Doyles;doyles
+http://www.meetup.com/cities/ca/nl/duntara/;Duntara;duntara
+http://www.meetup.com/cities/ca/nl/dunville/;Dunville;dunville
+http://www.meetup.com/cities/ca/nl/durrell/;Durrell;durrell
+http://www.meetup.com/cities/ca/nl/eastport/;Eastport;eastport
+http://www.meetup.com/cities/ca/nl/eddies_cove/;Eddies Cove;eddies_cove
+http://www.meetup.com/cities/ca/nl/eddies_cove_west/;Eddies Cove West;eddies_cove_west
+http://www.meetup.com/cities/ca/nl/elliston/;Elliston;elliston
+http://www.meetup.com/cities/ca/nl/embree/;Embree;embree
+http://www.meetup.com/cities/ca/nl/englee/;Englee;englee
+http://www.meetup.com/cities/ca/nl/english_harbour_east/;English Harbour East;english_harbour_east
+http://www.meetup.com/cities/ca/nl/english_harbour_west/;English Harbour West;english_harbour_west
+http://www.meetup.com/cities/ca/nl/epworth/;Epworth;epworth
+http://www.meetup.com/cities/ca/nl/fair_haven/;Fair Haven;fair_haven
+http://www.meetup.com/cities/ca/nl/fermeuse/;Fermeuse;fermeuse
+http://www.meetup.com/cities/ca/nl/ferryland/;Ferryland;ferryland
+http://www.meetup.com/cities/ca/nl/flatrock/;Flatrock;flatrock
+http://www.meetup.com/cities/ca/nl/fleur_de_lys/;Fleur de Lys;fleur_de_lys
+http://www.meetup.com/cities/ca/nl/flowers_cove/;Flowers Cove;flowers_cove
+http://www.meetup.com/cities/ca/nl/fogo/;Fogo;fogo
+http://www.meetup.com/cities/ca/nl/forteau/;Forteau;forteau
+http://www.meetup.com/cities/ca/nl/fortune/;Fortune;fortune
+http://www.meetup.com/cities/ca/nl/fox_harbour_pb/;Fox Harbour PB;fox_harbour_pb
+http://www.meetup.com/cities/ca/nl/fran%C3%A7ois/;François;fran%C3%A7ois
+http://www.meetup.com/cities/ca/nl/frederickton/;Frederickton;frederickton
+http://www.meetup.com/cities/ca/nl/frenchmans_cove_boi/;Frenchmans Cove Boi;frenchmans_cove_boi
+http://www.meetup.com/cities/ca/nl/frenchmans_cove_fb/;Frenchmans Cove FB;frenchmans_cove_fb
+http://www.meetup.com/cities/ca/nl/freshwater_pb/;Freshwater PB;freshwater_pb
+http://www.meetup.com/cities/ca/nl/gallants/;Gallants;gallants
+http://www.meetup.com/cities/ca/nl/gambo/;Gambo;gambo
+http://www.meetup.com/cities/ca/nl/gambo_south/;Gambo South;gambo_south
+http://www.meetup.com/cities/ca/nl/gander/;Gander;gander
+http://www.meetup.com/cities/ca/nl/gander_bay/;Gander Bay;gander_bay
+http://www.meetup.com/cities/ca/nl/gander_bay_south/;Gander Bay South;gander_bay_south
+http://www.meetup.com/cities/ca/nl/garden_cove_pb/;Garden Cove PB;garden_cove_pb
+http://www.meetup.com/cities/ca/nl/garnish/;Garnish;garnish
+http://www.meetup.com/cities/ca/nl/gaultois/;Gaultois;gaultois
+http://www.meetup.com/cities/ca/nl/glenwood/;Glenwood;glenwood
+http://www.meetup.com/cities/ca/nl/glovertown/;Glovertown;glovertown
+http://www.meetup.com/cities/ca/nl/glovertown_south/;Glovertown South;glovertown_south
+http://www.meetup.com/cities/ca/nl/gooseberry_cove/;Gooseberry Cove;gooseberry_cove
+http://www.meetup.com/cities/ca/nl/goulds/;Goulds;goulds
+http://www.meetup.com/cities/ca/nl/grand_bank/;Grand Bank;grand_bank
+http://www.meetup.com/cities/ca/nl/grand_bay_east/;Grand Bay East;grand_bay_east
+http://www.meetup.com/cities/ca/nl/grand_beach/;Grand Beach;grand_beach
+http://www.meetup.com/cities/ca/nl/grand_bruit/;Grand Bruit;grand_bruit
+http://www.meetup.com/cities/ca/nl/grand_falls-windsor/;Grand Falls-Windsor;grand_falls-windsor
+http://www.meetup.com/cities/ca/nl/grand_le_pierre/;Grand le Pierre;grand_le_pierre
+http://www.meetup.com/cities/ca/nl/grates_cove/;Grates Cove;grates_cove
+http://www.meetup.com/cities/ca/nl/great_brehat/;Great Brehat;great_brehat
+http://www.meetup.com/cities/ca/nl/green_island_brook/;Green Island Brook;green_island_brook
+http://www.meetup.com/cities/ca/nl/green_island_cove/;Green Island Cove;green_island_cove
+http://www.meetup.com/cities/ca/nl/greens_harbour/;Greens Harbour;greens_harbour
+http://www.meetup.com/cities/ca/nl/greenspond/;Greenspond;greenspond
+http://www.meetup.com/cities/ca/nl/grey_river/;Grey River;grey_river
+http://www.meetup.com/cities/ca/nl/hampden/;Hampden;hampden
+http://www.meetup.com/cities/ca/nl/hants_harbour/;Hants Harbour;hants_harbour
+http://www.meetup.com/cities/ca/nl/happy_valley-goose_bay/;Happy Valley-Goose Bay;happy_valley-goose_bay
+http://www.meetup.com/cities/ca/nl/harbour_breton/;Harbour Breton;harbour_breton
+http://www.meetup.com/cities/ca/nl/harbour_grace/;Harbour Grace;harbour_grace
+http://www.meetup.com/cities/ca/nl/harbour_grace_south/;Harbour Grace South;harbour_grace_south
+http://www.meetup.com/cities/ca/nl/harbour_main/;Harbour Main;harbour_main
+http://www.meetup.com/cities/ca/nl/harbour_mille/;Harbour Mille;harbour_mille
+http://www.meetup.com/cities/ca/nl/harbour_round/;Harbour Round;harbour_round
+http://www.meetup.com/cities/ca/nl/hare_bay_bb/;Hare Bay BB;hare_bay_bb
+http://www.meetup.com/cities/ca/nl/harrys_harbour/;Harrys Harbour;harrys_harbour
+http://www.meetup.com/cities/ca/nl/hawkes_bay/;Hawkes Bay;hawkes_bay
+http://www.meetup.com/cities/ca/nl/head_bay_d%27espoir/;Head Bay d'Espoir;head_bay_d%27espoir
+http://www.meetup.com/cities/ca/nl/heart%27s_content/;Heart's Content;heart%27s_content
+http://www.meetup.com/cities/ca/nl/heart%27s_delight/;Heart's Delight;heart%27s_delight
+http://www.meetup.com/cities/ca/nl/heart%27s_desire/;Heart's Desire;heart%27s_desire
+http://www.meetup.com/cities/ca/nl/heatherton/;Heatherton;heatherton
+http://www.meetup.com/cities/ca/nl/hermitage/;Hermitage;hermitage
+http://www.meetup.com/cities/ca/nl/herring_neck/;Herring Neck;herring_neck
+http://www.meetup.com/cities/ca/nl/hickmans_harbour/;Hickmans Harbour;hickmans_harbour
+http://www.meetup.com/cities/ca/nl/highlands/;Highlands;highlands
+http://www.meetup.com/cities/ca/nl/hillgrade/;Hillgrade;hillgrade
+http://www.meetup.com/cities/ca/nl/hillview/;Hillview;hillview
+http://www.meetup.com/cities/ca/nl/hodges_cove/;Hodges Cove;hodges_cove
+http://www.meetup.com/cities/ca/nl/holyrood/;Holyrood;holyrood
+http://www.meetup.com/cities/ca/nl/hopeall/;Hopeall;hopeall
+http://www.meetup.com/cities/ca/nl/hopedale/;Hopedale;hopedale
+http://www.meetup.com/cities/ca/nl/horwood/;Horwood;horwood
+http://www.meetup.com/cities/ca/nl/howley/;Howley;howley
+http://www.meetup.com/cities/ca/nl/indian_bay_bb/;Indian Bay BB;indian_bay_bb
+http://www.meetup.com/cities/ca/nl/island_harbour/;Island Harbour;island_harbour
+http://www.meetup.com/cities/ca/nl/isle-aux-morts/;Isle-aux-Morts;isle-aux-morts
+http://www.meetup.com/cities/ca/nl/islington/;Islington;islington
+http://www.meetup.com/cities/ca/nl/jacksons_arm/;Jacksons Arm;jacksons_arm
+http://www.meetup.com/cities/ca/nl/jacksons_cove/;Jacksons Cove;jacksons_cove
+http://www.meetup.com/cities/ca/nl/jeffreys/;Jeffreys;jeffreys
+http://www.meetup.com/cities/ca/nl/jerseyside/;Jerseyside;jerseyside
+http://www.meetup.com/cities/ca/nl/jobs_cove/;Jobs Cove;jobs_cove
+http://www.meetup.com/cities/ca/nl/joe_batts_arm/;Joe Batts Arm;joe_batts_arm
+http://www.meetup.com/cities/ca/nl/keels/;Keels;keels
+http://www.meetup.com/cities/ca/nl/kilbride/;Kilbride;kilbride
+http://www.meetup.com/cities/ca/nl/kings_cove/;Kings Cove;kings_cove
+http://www.meetup.com/cities/ca/nl/kings_point/;Kings Point;kings_point
+http://www.meetup.com/cities/ca/nl/kippens/;Kippens;kippens
+http://www.meetup.com/cities/ca/nl/knights_cove/;Knights Cove;knights_cove
+http://www.meetup.com/cities/ca/nl/l%27anse_au_clair/;L'Anse au Clair;l%27anse_au_clair
+http://www.meetup.com/cities/ca/nl/l%27anse_au_loup/;L'Anse au Loup;l%27anse_au_loup
+http://www.meetup.com/cities/ca/nl/labrador_city/;Labrador City;labrador_city
+http://www.meetup.com/cities/ca/nl/ladle_cove/;Ladle Cove;ladle_cove
+http://www.meetup.com/cities/ca/nl/lamaline/;Lamaline;lamaline
+http://www.meetup.com/cities/ca/nl/lance_cove/;Lance Cove;lance_cove
+http://www.meetup.com/cities/ca/nl/la_poile/;La Poile;la_poile
+http://www.meetup.com/cities/ca/nl/lark_harbour/;Lark Harbour;lark_harbour
+http://www.meetup.com/cities/ca/nl/la_scie/;La Scie;la_scie
+http://www.meetup.com/cities/ca/nl/laurenceton/;Laurenceton;laurenceton
+http://www.meetup.com/cities/ca/nl/lawn/;Lawn;lawn
+http://www.meetup.com/cities/ca/nl/leading_tickles/;Leading Tickles;leading_tickles
+http://www.meetup.com/cities/ca/nl/lethbridge/;Lethbridge;lethbridge
+http://www.meetup.com/cities/ca/nl/lewins_cove/;Lewins Cove;lewins_cove
+http://www.meetup.com/cities/ca/nl/lewisporte/;Lewisporte;lewisporte
+http://www.meetup.com/cities/ca/nl/little_bay_east/;Little Bay East;little_bay_east
+http://www.meetup.com/cities/ca/nl/little_bay_islands/;Little Bay Islands;little_bay_islands
+http://www.meetup.com/cities/ca/nl/little_bay_ndb/;Little Bay NDB;little_bay_ndb
+http://www.meetup.com/cities/ca/nl/little_bay_pb/;Little Bay PB;little_bay_pb
+http://www.meetup.com/cities/ca/nl/little_burnt_bay/;Little Burnt Bay;little_burnt_bay
+http://www.meetup.com/cities/ca/nl/little_catalina/;Little Catalina;little_catalina
+http://www.meetup.com/cities/ca/nl/little_harbour_east_pb/;Little Harbour East PB;little_harbour_east_pb
+http://www.meetup.com/cities/ca/nl/little_hearts_ease/;Little Hearts Ease;little_hearts_ease
+http://www.meetup.com/cities/ca/nl/little_st_lawrence/;Little St Lawrence;little_st_lawrence
+http://www.meetup.com/cities/ca/nl/lodge_bay/;Lodge Bay;lodge_bay
+http://www.meetup.com/cities/ca/nl/logy_bay/;Logy Bay;logy_bay
+http://www.meetup.com/cities/ca/nl/long_harbour/;Long Harbour;long_harbour
+http://www.meetup.com/cities/ca/nl/loon_bay/;Loon Bay;loon_bay
+http://www.meetup.com/cities/ca/nl/lourdes/;Lourdes;lourdes
+http://www.meetup.com/cities/ca/nl/lower_island_cove/;Lower Island Cove;lower_island_cove
+http://www.meetup.com/cities/ca/nl/lumsden/;Lumsden;lumsden
+http://www.meetup.com/cities/ca/nl/main_brook/;Main Brook;main_brook
+http://www.meetup.com/cities/ca/nl/main_point/;Main Point;main_point
+http://www.meetup.com/cities/ca/nl/makinsons/;Makinsons;makinsons
+http://www.meetup.com/cities/ca/nl/makkovik/;Makkovik;makkovik
+http://www.meetup.com/cities/ca/nl/marys_harbour/;Marys Harbour;marys_harbour
+http://www.meetup.com/cities/ca/nl/marystown/;Marystown;marystown
+http://www.meetup.com/cities/ca/nl/marysvale/;Marysvale;marysvale
+http://www.meetup.com/cities/ca/nl/massey_drive/;Massey Drive;massey_drive
+http://www.meetup.com/cities/ca/nl/mccallum/;McCallum;mccallum
+http://www.meetup.com/cities/ca/nl/melrose/;Melrose;melrose
+http://www.meetup.com/cities/ca/nl/middle_arm_gb/;Middle Arm GB;middle_arm_gb
+http://www.meetup.com/cities/ca/nl/middle_cove/;Middle Cove;middle_cove
+http://www.meetup.com/cities/ca/nl/miles_cove/;Miles Cove;miles_cove
+http://www.meetup.com/cities/ca/nl/millertown/;Millertown;millertown
+http://www.meetup.com/cities/ca/nl/milltown/;Milltown;milltown
+http://www.meetup.com/cities/ca/nl/mings_bight/;Mings Bight;mings_bight
+http://www.meetup.com/cities/ca/nl/mobile/;Mobile;mobile
+http://www.meetup.com/cities/ca/nl/monkstown/;Monkstown;monkstown
+http://www.meetup.com/cities/ca/nl/moretons_harbour/;Moretons Harbour;moretons_harbour
+http://www.meetup.com/cities/ca/nl/mount_arlington_heights/;Mount Arlington Heights;mount_arlington_heights
+http://www.meetup.com/cities/ca/nl/mount_carmel/;Mount Carmel;mount_carmel
+http://www.meetup.com/cities/ca/nl/mount_moriah/;Mount Moriah;mount_moriah
+http://www.meetup.com/cities/ca/nl/mount_pearl/;Mount Pearl;mount_pearl
+http://www.meetup.com/cities/ca/nl/mud_lake/;Mud Lake;mud_lake
+http://www.meetup.com/cities/ca/nl/musgrave_harbour/;Musgrave Harbour;musgrave_harbour
+http://www.meetup.com/cities/ca/nl/musgravetown/;Musgravetown;musgravetown
+http://www.meetup.com/cities/ca/nl/nain/;Nain;nain
+http://www.meetup.com/cities/ca/nl/natuashish/;Natuashish;natuashish
+http://www.meetup.com/cities/ca/nl/new_chelsea/;New Chelsea;new_chelsea
+http://www.meetup.com/cities/ca/nl/new_harbour_tb/;New Harbour TB;new_harbour_tb
+http://www.meetup.com/cities/ca/nl/newmans_cove/;Newmans Cove;newmans_cove
+http://www.meetup.com/cities/ca/nl/new_melbourne/;New Melbourne;new_melbourne
+http://www.meetup.com/cities/ca/nl/new_perlican/;New Perlican;new_perlican
+http://www.meetup.com/cities/ca/nl/newtown/;Newtown;newtown
+http://www.meetup.com/cities/ca/nl/nippers_harbour/;Nippers Harbour;nippers_harbour
+http://www.meetup.com/cities/ca/nl/noels_pond/;Noels Pond;noels_pond
+http://www.meetup.com/cities/ca/nl/normans_cove/;Normans Cove;normans_cove
+http://www.meetup.com/cities/ca/nl/norris_arm/;Norris Arm;norris_arm
+http://www.meetup.com/cities/ca/nl/norris_arm_northside/;Norris Arm Northside;norris_arm_northside
+http://www.meetup.com/cities/ca/nl/norris_point/;Norris Point;norris_point
+http://www.meetup.com/cities/ca/nl/northern_bay/;Northern Bay;northern_bay
+http://www.meetup.com/cities/ca/nl/north_harbour_pb/;North Harbour PB;north_harbour_pb
+http://www.meetup.com/cities/ca/nl/north_harbour_smb/;North Harbour SMB;north_harbour_smb
+http://www.meetup.com/cities/ca/nl/north_valley/;North Valley;north_valley
+http://www.meetup.com/cities/ca/nl/north_west_brook/;North West Brook;north_west_brook
+http://www.meetup.com/cities/ca/nl/north_west_river/;North West River;north_west_river
+http://www.meetup.com/cities/ca/nl/ochre_pit_cove/;Ochre Pit Cove;ochre_pit_cove
+http://www.meetup.com/cities/ca/nl/old_perlican/;Old Perlican;old_perlican
+http://www.meetup.com/cities/ca/nl/old_shop/;Old Shop;old_shop
+http://www.meetup.com/cities/ca/nl/open_hall/;Open Hall;open_hall
+http://www.meetup.com/cities/ca/nl/outer_cove/;Outer Cove;outer_cove
+http://www.meetup.com/cities/ca/nl/pacquet/;Pacquet;pacquet
+http://www.meetup.com/cities/ca/nl/paradise/;Paradise;paradise
+http://www.meetup.com/cities/ca/nl/paradise_river/;Paradise River;paradise_river
+http://www.meetup.com/cities/ca/nl/parkers_cove/;Parkers Cove;parkers_cove
+http://www.meetup.com/cities/ca/nl/parsons_pond/;Parsons Pond;parsons_pond
+http://www.meetup.com/cities/ca/nl/pasadena/;Pasadena;pasadena
+http://www.meetup.com/cities/ca/nl/peterview/;Peterview;peterview
+http://www.meetup.com/cities/ca/nl/petit_forte/;Petit Forte;petit_forte
+http://www.meetup.com/cities/ca/nl/petty_harbour/;Petty Harbour;petty_harbour
+http://www.meetup.com/cities/ca/nl/pilleys_island/;Pilleys Island;pilleys_island
+http://www.meetup.com/cities/ca/nl/placentia/;Placentia;placentia
+http://www.meetup.com/cities/ca/nl/plate_cove_east/;Plate Cove East;plate_cove_east
+http://www.meetup.com/cities/ca/nl/plate_cove_west/;Plate Cove West;plate_cove_west
+http://www.meetup.com/cities/ca/nl/plum_point/;Plum Point;plum_point
+http://www.meetup.com/cities/ca/nl/point_leamington/;Point Leamington;point_leamington
+http://www.meetup.com/cities/ca/nl/point_of_bay/;Point of Bay;point_of_bay
+http://www.meetup.com/cities/ca/nl/pollards_point/;Pollards Point;pollards_point
+http://www.meetup.com/cities/ca/nl/pools_cove/;Pools Cove;pools_cove
+http://www.meetup.com/cities/ca/nl/pools_island/;Pools Island;pools_island
+http://www.meetup.com/cities/ca/nl/port_albert/;Port Albert;port_albert
+http://www.meetup.com/cities/ca/nl/port_anson/;Port Anson;port_anson
+http://www.meetup.com/cities/ca/nl/port_au_choix/;Port au Choix;port_au_choix
+http://www.meetup.com/cities/ca/nl/port_au_port/;Port au Port;port_au_port
+http://www.meetup.com/cities/ca/nl/port_blandford/;Port Blandford;port_blandford
+http://www.meetup.com/cities/ca/nl/port_de_grave/;Port de Grave;port_de_grave
+http://www.meetup.com/cities/ca/nl/port_hope_simpson/;Port Hope Simpson;port_hope_simpson
+http://www.meetup.com/cities/ca/nl/portland_creek/;Portland Creek;portland_creek
+http://www.meetup.com/cities/ca/nl/port_rexton/;Port Rexton;port_rexton
+http://www.meetup.com/cities/ca/nl/port_saunders/;Port Saunders;port_saunders
+http://www.meetup.com/cities/ca/nl/portugal_cove-st_philips/;Portugal Cove-St Philips;portugal_cove-st_philips
+http://www.meetup.com/cities/ca/nl/port_union/;Port Union;port_union
+http://www.meetup.com/cities/ca/nl/postville/;Postville;postville
+http://www.meetup.com/cities/ca/nl/pouch_cove/;Pouch Cove;pouch_cove
+http://www.meetup.com/cities/ca/nl/pound_cove/;Pound Cove;pound_cove
+http://www.meetup.com/cities/ca/nl/princeton/;Princeton;princeton
+http://www.meetup.com/cities/ca/nl/pynn%27s_brook/;Pynn's Brook;pynn%27s_brook
+http://www.meetup.com/cities/ca/nl/raleigh/;Raleigh;raleigh
+http://www.meetup.com/cities/ca/nl/ramea/;Ramea;ramea
+http://www.meetup.com/cities/ca/nl/rattling_brook/;Rattling Brook;rattling_brook
+http://www.meetup.com/cities/ca/nl/red_bay/;Red Bay;red_bay
+http://www.meetup.com/cities/ca/nl/red_harbour_pb/;Red Harbour PB;red_harbour_pb
+http://www.meetup.com/cities/ca/nl/red_head_cove/;Red Head Cove;red_head_cove
+http://www.meetup.com/cities/ca/nl/reefs_harbour/;Reefs Harbour;reefs_harbour
+http://www.meetup.com/cities/ca/nl/reidville/;Reidville;reidville
+http://www.meetup.com/cities/ca/nl/rencontre_east/;Rencontre East;rencontre_east
+http://www.meetup.com/cities/ca/nl/renews/;Renews;renews
+http://www.meetup.com/cities/ca/nl/rigolet/;Rigolet;rigolet
+http://www.meetup.com/cities/ca/nl/riverhead_harbour_grace/;Riverhead Harbour Grace;riverhead_harbour_grace
+http://www.meetup.com/cities/ca/nl/river_of_ponds/;River of Ponds;river_of_ponds
+http://www.meetup.com/cities/ca/nl/roberts_arm/;Roberts Arm;roberts_arm
+http://www.meetup.com/cities/ca/nl/robinsons/;Robinsons;robinsons
+http://www.meetup.com/cities/ca/nl/rocky_harbour/;Rocky Harbour;rocky_harbour
+http://www.meetup.com/cities/ca/nl/roddickton/;Roddickton;roddickton
+http://www.meetup.com/cities/ca/nl/rodgers_cove/;Rodgers Cove;rodgers_cove
+http://www.meetup.com/cities/ca/nl/rose_blanche/;Rose Blanche;rose_blanche
+http://www.meetup.com/cities/ca/nl/round_harbour_gb/;Round Harbour GB;round_harbour_gb
+http://www.meetup.com/cities/ca/nl/rushoon/;Rushoon;rushoon
+http://www.meetup.com/cities/ca/nl/sallys_cove/;Sallys Cove;sallys_cove
+http://www.meetup.com/cities/ca/nl/salmon_cove_bdv/;Salmon Cove Bdv;salmon_cove_bdv
+http://www.meetup.com/cities/ca/nl/salvage/;Salvage;salvage
+http://www.meetup.com/cities/ca/nl/sandringham/;Sandringham;sandringham
+http://www.meetup.com/cities/ca/nl/sandy_cove/;Sandy Cove;sandy_cove
+http://www.meetup.com/cities/ca/nl/seal_cove_fb/;Seal Cove FB;seal_cove_fb
+http://www.meetup.com/cities/ca/nl/seal_cove_wb/;Seal Cove WB;seal_cove_wb
+http://www.meetup.com/cities/ca/nl/seldom/;Seldom;seldom
+http://www.meetup.com/cities/ca/nl/shalloway_cove/;Shalloway Cove;shalloway_cove
+http://www.meetup.com/cities/ca/nl/shea_heights/;Shea Heights;shea_heights
+http://www.meetup.com/cities/ca/nl/shearstown/;Shearstown;shearstown
+http://www.meetup.com/cities/ca/nl/ship_harbour_pb/;Ship Harbour PB;ship_harbour_pb
+http://www.meetup.com/cities/ca/nl/shoe_cove/;Shoe Cove;shoe_cove
+http://www.meetup.com/cities/ca/nl/snooks_arm/;Snooks Arm;snooks_arm
+http://www.meetup.com/cities/ca/nl/sops_arm/;Sops Arm;sops_arm
+http://www.meetup.com/cities/ca/nl/south_branch/;South Branch;south_branch
+http://www.meetup.com/cities/ca/nl/south_brook_gb/;South Brook GB;south_brook_gb
+http://www.meetup.com/cities/ca/nl/south_dildo/;South Dildo;south_dildo
+http://www.meetup.com/cities/ca/nl/south_east_bight/;South East Bight;south_east_bight
+http://www.meetup.com/cities/ca/nl/southern_bay/;Southern Bay;southern_bay
+http://www.meetup.com/cities/ca/nl/southern_harbour_pb/;Southern Harbour PB;southern_harbour_pb
+http://www.meetup.com/cities/ca/nl/south_river/;South River;south_river
+http://www.meetup.com/cities/ca/nl/spaniards_bay/;Spaniards Bay;spaniards_bay
+http://www.meetup.com/cities/ca/nl/springdale/;Springdale;springdale
+http://www.meetup.com/cities/ca/nl/st._anthony/;St. Anthony;st._anthony
+http://www.meetup.com/cities/ca/nl/st._john%27s/;St. John's;st._john%27s
+http://www.meetup.com/cities/ca/nl/stag_harbour/;Stag Harbour;stag_harbour
+http://www.meetup.com/cities/ca/nl/st_albans/;St Albans;st_albans
+http://www.meetup.com/cities/ca/nl/st_andrews/;St Andrews;st_andrews
+http://www.meetup.com/cities/ca/nl/st_anthony_east/;St Anthony East;st_anthony_east
+http://www.meetup.com/cities/ca/nl/st_bernards-jacques_fontaine/;St Bernards-Jacques Fontaine;st_bernards-jacques_fontaine
+http://www.meetup.com/cities/ca/nl/st_brendans/;St Brendans;st_brendans
+http://www.meetup.com/cities/ca/nl/st_brides/;St Brides;st_brides
+http://www.meetup.com/cities/ca/nl/st_chads/;St Chads;st_chads
+http://www.meetup.com/cities/ca/nl/st_davids/;St Davids;st_davids
+http://www.meetup.com/cities/ca/nl/stephenville/;Stephenville;stephenville
+http://www.meetup.com/cities/ca/nl/stephenville_crossing/;Stephenville Crossing;stephenville_crossing
+http://www.meetup.com/cities/ca/nl/st_fintans/;St Fintans;st_fintans
+http://www.meetup.com/cities/ca/nl/st_georges/;St Georges;st_georges
+http://www.meetup.com/cities/ca/nl/st_josephs_sal/;St Josephs Sal;st_josephs_sal
+http://www.meetup.com/cities/ca/nl/st_judes/;St Judes;st_judes
+http://www.meetup.com/cities/ca/nl/st_juliens/;St Juliens;st_juliens
+http://www.meetup.com/cities/ca/nl/st_lawrence/;St Lawrence;st_lawrence
+http://www.meetup.com/cities/ca/nl/st_lewis/;St Lewis;st_lewis
+http://www.meetup.com/cities/ca/nl/st_lunaire-griquet/;St Lunaire-Griquet;st_lunaire-griquet
+http://www.meetup.com/cities/ca/nl/st_marys/;St Marys;st_marys
+http://www.meetup.com/cities/ca/nl/stoneville/;Stoneville;stoneville
+http://www.meetup.com/cities/ca/nl/st_pauls/;St Pauls;st_pauls
+http://www.meetup.com/cities/ca/nl/st_shotts/;St Shotts;st_shotts
+http://www.meetup.com/cities/ca/nl/st_vincents/;St Vincents;st_vincents
+http://www.meetup.com/cities/ca/nl/summerford/;Summerford;summerford
+http://www.meetup.com/cities/ca/nl/summerville/;Summerville;summerville
+http://www.meetup.com/cities/ca/nl/sunnyside/;Sunnyside;sunnyside
+http://www.meetup.com/cities/ca/nl/sweet_bay/;Sweet Bay;sweet_bay
+http://www.meetup.com/cities/ca/nl/swift_current/;Swift Current;swift_current
+http://www.meetup.com/cities/ca/nl/templeman/;Templeman;templeman
+http://www.meetup.com/cities/ca/nl/terrenceville/;Terrenceville;terrenceville
+http://www.meetup.com/cities/ca/nl/tickle_cove/;Tickle Cove;tickle_cove
+http://www.meetup.com/cities/ca/nl/tilting/;Tilting;tilting
+http://www.meetup.com/cities/ca/nl/tizzards_harbour/;Tizzards Harbour;tizzards_harbour
+http://www.meetup.com/cities/ca/nl/torbay/;Torbay;torbay
+http://www.meetup.com/cities/ca/nl/tors_cove/;Tors Cove;tors_cove
+http://www.meetup.com/cities/ca/nl/traytown/;Traytown;traytown
+http://www.meetup.com/cities/ca/nl/trepassey/;Trepassey;trepassey
+http://www.meetup.com/cities/ca/nl/trinity_bb/;Trinity BB;trinity_bb
+http://www.meetup.com/cities/ca/nl/trinity_tb/;Trinity TB;trinity_tb
+http://www.meetup.com/cities/ca/nl/triton/;Triton;triton
+http://www.meetup.com/cities/ca/nl/trout_river/;Trout River;trout_river
+http://www.meetup.com/cities/ca/nl/turks_cove/;Turks Cove;turks_cove
+http://www.meetup.com/cities/ca/nl/twillingate/;Twillingate;twillingate
+http://www.meetup.com/cities/ca/nl/upper_island_cove/;Upper Island Cove;upper_island_cove
+http://www.meetup.com/cities/ca/nl/valley_pond/;Valley Pond;valley_pond
+http://www.meetup.com/cities/ca/nl/victoria_cb/;Victoria Cb;victoria_cb
+http://www.meetup.com/cities/ca/nl/victoria_cove/;Victoria Cove;victoria_cove
+http://www.meetup.com/cities/ca/nl/wabush/;Wabush;wabush
+http://www.meetup.com/cities/ca/nl/wareham-centreville/;Wareham-Centreville;wareham-centreville
+http://www.meetup.com/cities/ca/nl/wesleyville/;Wesleyville;wesleyville
+http://www.meetup.com/cities/ca/nl/west_bay_centre/;West Bay Centre;west_bay_centre
+http://www.meetup.com/cities/ca/nl/western_bay/;Western Bay;western_bay
+http://www.meetup.com/cities/ca/nl/westport/;Westport;westport
+http://www.meetup.com/cities/ca/nl/west_st_modeste/;West St Modeste;west_st_modeste
+http://www.meetup.com/cities/ca/nl/whitbourne/;Whitbourne;whitbourne
+http://www.meetup.com/cities/ca/nl/whiteway/;Whiteway;whiteway
+http://www.meetup.com/cities/ca/nl/wild_cove_wb/;Wild Cove Wb;wild_cove_wb
+http://www.meetup.com/cities/ca/nl/williams_harbour/;Williams Harbour;williams_harbour
+http://www.meetup.com/cities/ca/nl/wiltondale/;Wiltondale;wiltondale
+http://www.meetup.com/cities/ca/nl/wings_point/;Wings Point;wings_point
+http://www.meetup.com/cities/ca/nl/winterland/;Winterland;winterland
+http://www.meetup.com/cities/ca/nl/winterton/;Winterton;winterton
+http://www.meetup.com/cities/ca/nl/witless_bay/;Witless Bay;witless_bay
+http://www.meetup.com/cities/ca/nl/woodfords/;Woodfords;woodfords
+http://www.meetup.com/cities/ca/nl/woodstock/;Woodstock;woodstock
+http://www.meetup.com/cities/ca/nl/york_harbour/;York Harbour;york_harbour

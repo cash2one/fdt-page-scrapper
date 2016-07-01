@@ -1,0 +1,31 @@
+Stock Option Basics
+Definition:
+A stock option is a contract between two parties in which the stock option buyer (holder) purchases the right (but not the obligation) to buy/sell 100 shares of an underlying stock at a predetermined price from/to the option seller (writer) within a fixed period of time.
+
+Option Contract Specifications
+The following terms are specified in an option contract.
+
+Option Type
+The two types of stock options are puts and calls. Call options confers the buyer the right to buy the underlying stock while put options give him the rights to sell them.
+
+Strike Price
+The strike price is the price at which the underlying asset is to be bought or sold when the option is exercised. It's relation to the market value of the underlying asset affects the moneyness of the option and is a major determinant of the option's premium.
+
+Premium
+In exchange for the rights conferred by the option, the option buyer have to pay the option seller a premium for carrying on the risk that comes with the obligation. The option premium depends on the strike price, volatility of the underlying, as well as the time remaining to expiration.
+
+Expiration Date
+Option contracts are wasting assets and all options expire after a period of time. Once the stock option expires, the right to exercise no longer exists and the stock option becomes worthless. The expiration month is specified for each option contract. The specific date on which expiration occurs depends on the type of option. For instance, stock options listed in the United States expire on the third Friday of the expiration month.
+
+Option Style
+An option contract can be either american style or european style. The manner in which options can be exercised also depends on the style of the option. American style options can be exercised anytime before expiration while european style options can only be exercise on expiration date itself. All of the stock options currently traded in the marketplaces are american-style options.
+
+Underlying Asset
+The underlying asset is the security which the option seller has the obligation to deliver to or purchase from the option holder in the event the option is exercised. In the case of stock options, the underlying asset refers to the shares of a specific company. Options are also available for other types of securities such as currencies, indices and commodities.
+
+Contract Multiplier
+The contract multiplier states the quantity of the underlying asset that needs to be delivered in the event the option is exercised. For stock options, each contract covers 100 shares.
+
+The Options Market
+Participants in the options market buy and sell call and put options. Those who buy options are called holders. Sellers of options are called writers. Option holders are said to have long positions, and writers are said to have short positions.
+

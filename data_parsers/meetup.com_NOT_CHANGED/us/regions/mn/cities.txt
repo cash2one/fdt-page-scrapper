@@ -1,0 +1,1618 @@
+http://www.meetup.com/cities/us/mn/ada/;Ada;ada
+http://www.meetup.com/cities/us/mn/adams/;Adams;adams
+http://www.meetup.com/cities/us/mn/adolph/;Adolph;adolph
+http://www.meetup.com/cities/us/mn/adrian/;Adrian;adrian
+http://www.meetup.com/cities/us/mn/afton/;Afton;afton
+http://www.meetup.com/cities/us/mn/ah_gwah_ching/;Ah Gwah Ching;ah_gwah_ching
+http://www.meetup.com/cities/us/mn/aitkin/;Aitkin;aitkin
+http://www.meetup.com/cities/us/mn/akeley/;Akeley;akeley
+http://www.meetup.com/cities/us/mn/albany/;Albany;albany
+http://www.meetup.com/cities/us/mn/alberta/;Alberta;alberta
+http://www.meetup.com/cities/us/mn/albert_lea/;Albert Lea;albert_lea
+http://www.meetup.com/cities/us/mn/albertville/;Albertville;albertville
+http://www.meetup.com/cities/us/mn/alborn/;Alborn;alborn
+http://www.meetup.com/cities/us/mn/alden/;Alden;alden
+http://www.meetup.com/cities/us/mn/aldrich/;Aldrich;aldrich
+http://www.meetup.com/cities/us/mn/alexandria/;Alexandria;alexandria
+http://www.meetup.com/cities/us/mn/almelund/;Almelund;almelund
+http://www.meetup.com/cities/us/mn/alpha/;Alpha;alpha
+http://www.meetup.com/cities/us/mn/altura/;Altura;altura
+http://www.meetup.com/cities/us/mn/alvarado/;Alvarado;alvarado
+http://www.meetup.com/cities/us/mn/amboy/;Amboy;amboy
+http://www.meetup.com/cities/us/mn/andover/;Andover;andover
+http://www.meetup.com/cities/us/mn/angle_inlet/;Angle Inlet;angle_inlet
+http://www.meetup.com/cities/us/mn/angora/;Angora;angora
+http://www.meetup.com/cities/us/mn/annandale/;Annandale;annandale
+http://www.meetup.com/cities/us/mn/anoka/;Anoka;anoka
+http://www.meetup.com/cities/us/mn/appleton/;Appleton;appleton
+http://www.meetup.com/cities/us/mn/arco/;Arco;arco
+http://www.meetup.com/cities/us/mn/argyle/;Argyle;argyle
+http://www.meetup.com/cities/us/mn/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/mn/ashby/;Ashby;ashby
+http://www.meetup.com/cities/us/mn/askov/;Askov;askov
+http://www.meetup.com/cities/us/mn/atwater/;Atwater;atwater
+http://www.meetup.com/cities/us/mn/audubon/;Audubon;audubon
+http://www.meetup.com/cities/us/mn/aurora/;Aurora;aurora
+http://www.meetup.com/cities/us/mn/austin/;Austin;austin
+http://www.meetup.com/cities/us/mn/avoca/;Avoca;avoca
+http://www.meetup.com/cities/us/mn/avon/;Avon;avon
+http://www.meetup.com/cities/us/mn/babbitt/;Babbitt;babbitt
+http://www.meetup.com/cities/us/mn/backus/;Backus;backus
+http://www.meetup.com/cities/us/mn/badger/;Badger;badger
+http://www.meetup.com/cities/us/mn/bagley/;Bagley;bagley
+http://www.meetup.com/cities/us/mn/balaton/;Balaton;balaton
+http://www.meetup.com/cities/us/mn/barnesville/;Barnesville;barnesville
+http://www.meetup.com/cities/us/mn/barnum/;Barnum;barnum
+http://www.meetup.com/cities/us/mn/barrett/;Barrett;barrett
+http://www.meetup.com/cities/us/mn/barry/;Barry;barry
+http://www.meetup.com/cities/us/mn/battle_lake/;Battle Lake;battle_lake
+http://www.meetup.com/cities/us/mn/baudette/;Baudette;baudette
+http://www.meetup.com/cities/us/mn/baxter/;Baxter;baxter
+http://www.meetup.com/cities/us/mn/bayport/;Bayport;bayport
+http://www.meetup.com/cities/us/mn/beardsley/;Beardsley;beardsley
+http://www.meetup.com/cities/us/mn/beaver_bay/;Beaver Bay;beaver_bay
+http://www.meetup.com/cities/us/mn/beaver_creek/;Beaver Creek;beaver_creek
+http://www.meetup.com/cities/us/mn/becker/;Becker;becker
+http://www.meetup.com/cities/us/mn/bejou/;Bejou;bejou
+http://www.meetup.com/cities/us/mn/belgrade/;Belgrade;belgrade
+http://www.meetup.com/cities/us/mn/belle_plaine/;Belle Plaine;belle_plaine
+http://www.meetup.com/cities/us/mn/bellingham/;Bellingham;bellingham
+http://www.meetup.com/cities/us/mn/beltrami/;Beltrami;beltrami
+http://www.meetup.com/cities/us/mn/belview/;Belview;belview
+http://www.meetup.com/cities/us/mn/bemidji/;Bemidji;bemidji
+http://www.meetup.com/cities/us/mn/bena/;Bena;bena
+http://www.meetup.com/cities/us/mn/benedict/;Benedict;benedict
+http://www.meetup.com/cities/us/mn/benson/;Benson;benson
+http://www.meetup.com/cities/us/mn/bertha/;Bertha;bertha
+http://www.meetup.com/cities/us/mn/bethel/;Bethel;bethel
+http://www.meetup.com/cities/us/mn/bigelow/;Bigelow;bigelow
+http://www.meetup.com/cities/us/mn/big_falls/;Big Falls;big_falls
+http://www.meetup.com/cities/us/mn/bigfork/;Bigfork;bigfork
+http://www.meetup.com/cities/us/mn/big_lake/;Big Lake;big_lake
+http://www.meetup.com/cities/us/mn/bingham_lake/;Bingham Lake;bingham_lake
+http://www.meetup.com/cities/us/mn/birchdale/;Birchdale;birchdale
+http://www.meetup.com/cities/us/mn/bird_island/;Bird Island;bird_island
+http://www.meetup.com/cities/us/mn/biwabik/;Biwabik;biwabik
+http://www.meetup.com/cities/us/mn/blackduck/;Blackduck;blackduck
+http://www.meetup.com/cities/us/mn/blomkest/;Blomkest;blomkest
+http://www.meetup.com/cities/us/mn/blooming_prairie/;Blooming Prairie;blooming_prairie
+http://www.meetup.com/cities/us/mn/blue_earth/;Blue Earth;blue_earth
+http://www.meetup.com/cities/us/mn/bluffton/;Bluffton;bluffton
+http://www.meetup.com/cities/us/mn/bock/;Bock;bock
+http://www.meetup.com/cities/us/mn/borup/;Borup;borup
+http://www.meetup.com/cities/us/mn/bovey/;Bovey;bovey
+http://www.meetup.com/cities/us/mn/bowlus/;Bowlus;bowlus
+http://www.meetup.com/cities/us/mn/bowstring/;Bowstring;bowstring
+http://www.meetup.com/cities/us/mn/boyd/;Boyd;boyd
+http://www.meetup.com/cities/us/mn/braham/;Braham;braham
+http://www.meetup.com/cities/us/mn/brainerd/;Brainerd;brainerd
+http://www.meetup.com/cities/us/mn/brandon/;Brandon;brandon
+http://www.meetup.com/cities/us/mn/breckenridge/;Breckenridge;breckenridge
+http://www.meetup.com/cities/us/mn/brewster/;Brewster;brewster
+http://www.meetup.com/cities/us/mn/bricelyn/;Bricelyn;bricelyn
+http://www.meetup.com/cities/us/mn/brimson/;Brimson;brimson
+http://www.meetup.com/cities/us/mn/britt/;Britt;britt
+http://www.meetup.com/cities/us/mn/brook_park/;Brook Park;brook_park
+http://www.meetup.com/cities/us/mn/brooks/;Brooks;brooks
+http://www.meetup.com/cities/us/mn/brookston/;Brookston;brookston
+http://www.meetup.com/cities/us/mn/brooten/;Brooten;brooten
+http://www.meetup.com/cities/us/mn/browerville/;Browerville;browerville
+http://www.meetup.com/cities/us/mn/brownsdale/;Brownsdale;brownsdale
+http://www.meetup.com/cities/us/mn/browns_valley/;Browns Valley;browns_valley
+http://www.meetup.com/cities/us/mn/brownsville/;Brownsville;brownsville
+http://www.meetup.com/cities/us/mn/brownton/;Brownton;brownton
+http://www.meetup.com/cities/us/mn/bruno/;Bruno;bruno
+http://www.meetup.com/cities/us/mn/buckman/;Buckman;buckman
+http://www.meetup.com/cities/us/mn/buffalo/;Buffalo;buffalo
+http://www.meetup.com/cities/us/mn/buffalo_lake/;Buffalo Lake;buffalo_lake
+http://www.meetup.com/cities/us/mn/buhl/;Buhl;buhl
+http://www.meetup.com/cities/us/mn/burnsville/;Burnsville;burnsville
+http://www.meetup.com/cities/us/mn/burtrum/;Burtrum;burtrum
+http://www.meetup.com/cities/us/mn/butterfield/;Butterfield;butterfield
+http://www.meetup.com/cities/us/mn/byron/;Byron;byron
+http://www.meetup.com/cities/us/mn/caledonia/;Caledonia;caledonia
+http://www.meetup.com/cities/us/mn/callaway/;Callaway;callaway
+http://www.meetup.com/cities/us/mn/calumet/;Calumet;calumet
+http://www.meetup.com/cities/us/mn/cambridge/;Cambridge;cambridge
+http://www.meetup.com/cities/us/mn/campbell/;Campbell;campbell
+http://www.meetup.com/cities/us/mn/canby/;Canby;canby
+http://www.meetup.com/cities/us/mn/cannon_falls/;Cannon Falls;cannon_falls
+http://www.meetup.com/cities/us/mn/canton/;Canton;canton
+http://www.meetup.com/cities/us/mn/canyon/;Canyon;canyon
+http://www.meetup.com/cities/us/mn/carlos/;Carlos;carlos
+http://www.meetup.com/cities/us/mn/carlton/;Carlton;carlton
+http://www.meetup.com/cities/us/mn/carver/;Carver;carver
+http://www.meetup.com/cities/us/mn/cass_lake/;Cass Lake;cass_lake
+http://www.meetup.com/cities/us/mn/castle_rock/;Castle Rock;castle_rock
+http://www.meetup.com/cities/us/mn/cedar/;Cedar;cedar
+http://www.meetup.com/cities/us/mn/center_city/;Center City;center_city
+http://www.meetup.com/cities/us/mn/ceylon/;Ceylon;ceylon
+http://www.meetup.com/cities/us/mn/champlin/;Champlin;champlin
+http://www.meetup.com/cities/us/mn/chandler/;Chandler;chandler
+http://www.meetup.com/cities/us/mn/chanhassen/;Chanhassen;chanhassen
+http://www.meetup.com/cities/us/mn/chaska/;Chaska;chaska
+http://www.meetup.com/cities/us/mn/chatfield/;Chatfield;chatfield
+http://www.meetup.com/cities/us/mn/chisago_city/;Chisago City;chisago_city
+http://www.meetup.com/cities/us/mn/chisholm/;Chisholm;chisholm
+http://www.meetup.com/cities/us/mn/chokio/;Chokio;chokio
+http://www.meetup.com/cities/us/mn/circle_pines/;Circle Pines;circle_pines
+http://www.meetup.com/cities/us/mn/clara_city/;Clara City;clara_city
+http://www.meetup.com/cities/us/mn/claremont/;Claremont;claremont
+http://www.meetup.com/cities/us/mn/clarissa/;Clarissa;clarissa
+http://www.meetup.com/cities/us/mn/clarkfield/;Clarkfield;clarkfield
+http://www.meetup.com/cities/us/mn/clarks_grove/;Clarks Grove;clarks_grove
+http://www.meetup.com/cities/us/mn/clearbrook/;Clearbrook;clearbrook
+http://www.meetup.com/cities/us/mn/clear_lake/;Clear Lake;clear_lake
+http://www.meetup.com/cities/us/mn/clearwater/;Clearwater;clearwater
+http://www.meetup.com/cities/us/mn/clements/;Clements;clements
+http://www.meetup.com/cities/us/mn/cleveland/;Cleveland;cleveland
+http://www.meetup.com/cities/us/mn/climax/;Climax;climax
+http://www.meetup.com/cities/us/mn/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/mn/clitherall/;Clitherall;clitherall
+http://www.meetup.com/cities/us/mn/clontarf/;Clontarf;clontarf
+http://www.meetup.com/cities/us/mn/cloquet/;Cloquet;cloquet
+http://www.meetup.com/cities/us/mn/cohasset/;Cohasset;cohasset
+http://www.meetup.com/cities/us/mn/cokato/;Cokato;cokato
+http://www.meetup.com/cities/us/mn/cold_spring/;Cold Spring;cold_spring
+http://www.meetup.com/cities/us/mn/coleraine/;Coleraine;coleraine
+http://www.meetup.com/cities/us/mn/collegeville/;Collegeville;collegeville
+http://www.meetup.com/cities/us/mn/cologne/;Cologne;cologne
+http://www.meetup.com/cities/us/mn/comfrey/;Comfrey;comfrey
+http://www.meetup.com/cities/us/mn/comstock/;Comstock;comstock
+http://www.meetup.com/cities/us/mn/conger/;Conger;conger
+http://www.meetup.com/cities/us/mn/cook/;Cook;cook
+http://www.meetup.com/cities/us/mn/correll/;Correll;correll
+http://www.meetup.com/cities/us/mn/cosmos/;Cosmos;cosmos
+http://www.meetup.com/cities/us/mn/cottage_grove/;Cottage Grove;cottage_grove
+http://www.meetup.com/cities/us/mn/cotton/;Cotton;cotton
+http://www.meetup.com/cities/us/mn/cottonwood/;Cottonwood;cottonwood
+http://www.meetup.com/cities/us/mn/courtland/;Courtland;courtland
+http://www.meetup.com/cities/us/mn/crane_lake/;Crane Lake;crane_lake
+http://www.meetup.com/cities/us/mn/cromwell/;Cromwell;cromwell
+http://www.meetup.com/cities/us/mn/crookston/;Crookston;crookston
+http://www.meetup.com/cities/us/mn/crosby/;Crosby;crosby
+http://www.meetup.com/cities/us/mn/crosslake/;Crosslake;crosslake
+http://www.meetup.com/cities/us/mn/crystal_bay/;Crystal Bay;crystal_bay
+http://www.meetup.com/cities/us/mn/currie/;Currie;currie
+http://www.meetup.com/cities/us/mn/cushing/;Cushing;cushing
+http://www.meetup.com/cities/us/mn/cyrus/;Cyrus;cyrus
+http://www.meetup.com/cities/us/mn/dakota/;Dakota;dakota
+http://www.meetup.com/cities/us/mn/dalbo/;Dalbo;dalbo
+http://www.meetup.com/cities/us/mn/dalton/;Dalton;dalton
+http://www.meetup.com/cities/us/mn/danube/;Danube;danube
+http://www.meetup.com/cities/us/mn/danvers/;Danvers;danvers
+http://www.meetup.com/cities/us/mn/darfur/;Darfur;darfur
+http://www.meetup.com/cities/us/mn/darwin/;Darwin;darwin
+http://www.meetup.com/cities/us/mn/dassel/;Dassel;dassel
+http://www.meetup.com/cities/us/mn/dawson/;Dawson;dawson
+http://www.meetup.com/cities/us/mn/dayton/;Dayton;dayton
+http://www.meetup.com/cities/us/mn/deer_creek/;Deer Creek;deer_creek
+http://www.meetup.com/cities/us/mn/deer_river/;Deer River;deer_river
+http://www.meetup.com/cities/us/mn/deerwood/;Deerwood;deerwood
+http://www.meetup.com/cities/us/mn/delano/;Delano;delano
+http://www.meetup.com/cities/us/mn/delavan/;Delavan;delavan
+http://www.meetup.com/cities/us/mn/dennison/;Dennison;dennison
+http://www.meetup.com/cities/us/mn/dent/;Dent;dent
+http://www.meetup.com/cities/us/mn/detroit_lakes/;Detroit Lakes;detroit_lakes
+http://www.meetup.com/cities/us/mn/dexter/;Dexter;dexter
+http://www.meetup.com/cities/us/mn/dilworth/;Dilworth;dilworth
+http://www.meetup.com/cities/us/mn/dodge_center/;Dodge Center;dodge_center
+http://www.meetup.com/cities/us/mn/donaldson/;Donaldson;donaldson
+http://www.meetup.com/cities/us/mn/donnelly/;Donnelly;donnelly
+http://www.meetup.com/cities/us/mn/dover/;Dover;dover
+http://www.meetup.com/cities/us/mn/dovray/;Dovray;dovray
+http://www.meetup.com/cities/us/mn/duluth/;Duluth;duluth
+http://www.meetup.com/cities/us/mn/dumont/;Dumont;dumont
+http://www.meetup.com/cities/us/mn/dundas/;Dundas;dundas
+http://www.meetup.com/cities/us/mn/dunnell/;Dunnell;dunnell
+http://www.meetup.com/cities/us/mn/eagle_bend/;Eagle Bend;eagle_bend
+http://www.meetup.com/cities/us/mn/eagle_lake/;Eagle Lake;eagle_lake
+http://www.meetup.com/cities/us/mn/east_grand_forks/;East Grand Forks;east_grand_forks
+http://www.meetup.com/cities/us/mn/easton/;Easton;easton
+http://www.meetup.com/cities/us/mn/echo/;Echo;echo
+http://www.meetup.com/cities/us/mn/eden_prairie/;Eden Prairie;eden_prairie
+http://www.meetup.com/cities/us/mn/eden_valley/;Eden Valley;eden_valley
+http://www.meetup.com/cities/us/mn/edgerton/;Edgerton;edgerton
+http://www.meetup.com/cities/us/mn/effie/;Effie;effie
+http://www.meetup.com/cities/us/mn/eitzen/;Eitzen;eitzen
+http://www.meetup.com/cities/us/mn/elbow_lake/;Elbow Lake;elbow_lake
+http://www.meetup.com/cities/us/mn/elgin/;Elgin;elgin
+http://www.meetup.com/cities/us/mn/elizabeth/;Elizabeth;elizabeth
+http://www.meetup.com/cities/us/mn/elko/;Elko;elko
+http://www.meetup.com/cities/us/mn/elk_river/;Elk River;elk_river
+http://www.meetup.com/cities/us/mn/elkton/;Elkton;elkton
+http://www.meetup.com/cities/us/mn/ellendale/;Ellendale;ellendale
+http://www.meetup.com/cities/us/mn/ellsworth/;Ellsworth;ellsworth
+http://www.meetup.com/cities/us/mn/elmore/;Elmore;elmore
+http://www.meetup.com/cities/us/mn/elrosa/;Elrosa;elrosa
+http://www.meetup.com/cities/us/mn/ely/;Ely;ely
+http://www.meetup.com/cities/us/mn/elysian/;Elysian;elysian
+http://www.meetup.com/cities/us/mn/embarrass/;Embarrass;embarrass
+http://www.meetup.com/cities/us/mn/emily/;Emily;emily
+http://www.meetup.com/cities/us/mn/emmons/;Emmons;emmons
+http://www.meetup.com/cities/us/mn/erhard/;Erhard;erhard
+http://www.meetup.com/cities/us/mn/erskine/;Erskine;erskine
+http://www.meetup.com/cities/us/mn/esko/;Esko;esko
+http://www.meetup.com/cities/us/mn/essig/;Essig;essig
+http://www.meetup.com/cities/us/mn/euclid/;Euclid;euclid
+http://www.meetup.com/cities/us/mn/evansville/;Evansville;evansville
+http://www.meetup.com/cities/us/mn/eveleth/;Eveleth;eveleth
+http://www.meetup.com/cities/us/mn/excelsior/;Excelsior;excelsior
+http://www.meetup.com/cities/us/mn/eyota/;Eyota;eyota
+http://www.meetup.com/cities/us/mn/fairfax/;Fairfax;fairfax
+http://www.meetup.com/cities/us/mn/fairmont/;Fairmont;fairmont
+http://www.meetup.com/cities/us/mn/faribault/;Faribault;faribault
+http://www.meetup.com/cities/us/mn/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/mn/farwell/;Farwell;farwell
+http://www.meetup.com/cities/us/mn/federal_dam/;Federal Dam;federal_dam
+http://www.meetup.com/cities/us/mn/felton/;Felton;felton
+http://www.meetup.com/cities/us/mn/fergus_falls/;Fergus Falls;fergus_falls
+http://www.meetup.com/cities/us/mn/fertile/;Fertile;fertile
+http://www.meetup.com/cities/us/mn/fifty_lakes/;Fifty Lakes;fifty_lakes
+http://www.meetup.com/cities/us/mn/finland/;Finland;finland
+http://www.meetup.com/cities/us/mn/finlayson/;Finlayson;finlayson
+http://www.meetup.com/cities/us/mn/fisher/;Fisher;fisher
+http://www.meetup.com/cities/us/mn/flensburg/;Flensburg;flensburg
+http://www.meetup.com/cities/us/mn/flom/;Flom;flom
+http://www.meetup.com/cities/us/mn/floodwood/;Floodwood;floodwood
+http://www.meetup.com/cities/us/mn/foley/;Foley;foley
+http://www.meetup.com/cities/us/mn/forbes/;Forbes;forbes
+http://www.meetup.com/cities/us/mn/forest_lake/;Forest Lake;forest_lake
+http://www.meetup.com/cities/us/mn/foreston/;Foreston;foreston
+http://www.meetup.com/cities/us/mn/fort_ripley/;Fort Ripley;fort_ripley
+http://www.meetup.com/cities/us/mn/fosston/;Fosston;fosston
+http://www.meetup.com/cities/us/mn/fountain/;Fountain;fountain
+http://www.meetup.com/cities/us/mn/foxhome/;Foxhome;foxhome
+http://www.meetup.com/cities/us/mn/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/mn/frazee/;Frazee;frazee
+http://www.meetup.com/cities/us/mn/freeborn/;Freeborn;freeborn
+http://www.meetup.com/cities/us/mn/freeport/;Freeport;freeport
+http://www.meetup.com/cities/us/mn/frontenac/;Frontenac;frontenac
+http://www.meetup.com/cities/us/mn/frost/;Frost;frost
+http://www.meetup.com/cities/us/mn/fulda/;Fulda;fulda
+http://www.meetup.com/cities/us/mn/garden_city/;Garden City;garden_city
+http://www.meetup.com/cities/us/mn/garfield/;Garfield;garfield
+http://www.meetup.com/cities/us/mn/garrison/;Garrison;garrison
+http://www.meetup.com/cities/us/mn/garvin/;Garvin;garvin
+http://www.meetup.com/cities/us/mn/gary/;Gary;gary
+http://www.meetup.com/cities/us/mn/gatzke/;Gatzke;gatzke
+http://www.meetup.com/cities/us/mn/gaylord/;Gaylord;gaylord
+http://www.meetup.com/cities/us/mn/geneva/;Geneva;geneva
+http://www.meetup.com/cities/us/mn/georgetown/;Georgetown;georgetown
+http://www.meetup.com/cities/us/mn/ghent/;Ghent;ghent
+http://www.meetup.com/cities/us/mn/gibbon/;Gibbon;gibbon
+http://www.meetup.com/cities/us/mn/gilbert/;Gilbert;gilbert
+http://www.meetup.com/cities/us/mn/gilman/;Gilman;gilman
+http://www.meetup.com/cities/us/mn/glencoe/;Glencoe;glencoe
+http://www.meetup.com/cities/us/mn/glenville/;Glenville;glenville
+http://www.meetup.com/cities/us/mn/glenwood/;Glenwood;glenwood
+http://www.meetup.com/cities/us/mn/glyndon/;Glyndon;glyndon
+http://www.meetup.com/cities/us/mn/gonvick/;Gonvick;gonvick
+http://www.meetup.com/cities/us/mn/goodhue/;Goodhue;goodhue
+http://www.meetup.com/cities/us/mn/goodland/;Goodland;goodland
+http://www.meetup.com/cities/us/mn/goodridge/;Goodridge;goodridge
+http://www.meetup.com/cities/us/mn/good_thunder/;Good Thunder;good_thunder
+http://www.meetup.com/cities/us/mn/graceville/;Graceville;graceville
+http://www.meetup.com/cities/us/mn/granada/;Granada;granada
+http://www.meetup.com/cities/us/mn/grand_marais/;Grand Marais;grand_marais
+http://www.meetup.com/cities/us/mn/grand_meadow/;Grand Meadow;grand_meadow
+http://www.meetup.com/cities/us/mn/grand_portage/;Grand Portage;grand_portage
+http://www.meetup.com/cities/us/mn/grand_rapids/;Grand Rapids;grand_rapids
+http://www.meetup.com/cities/us/mn/grandy/;Grandy;grandy
+http://www.meetup.com/cities/us/mn/granite_falls/;Granite Falls;granite_falls
+http://www.meetup.com/cities/us/mn/grasston/;Grasston;grasston
+http://www.meetup.com/cities/us/mn/greenbush/;Greenbush;greenbush
+http://www.meetup.com/cities/us/mn/green_isle/;Green Isle;green_isle
+http://www.meetup.com/cities/us/mn/greenwald/;Greenwald;greenwald
+http://www.meetup.com/cities/us/mn/grey_eagle/;Grey Eagle;grey_eagle
+http://www.meetup.com/cities/us/mn/grove_city/;Grove City;grove_city
+http://www.meetup.com/cities/us/mn/grygla/;Grygla;grygla
+http://www.meetup.com/cities/us/mn/gully/;Gully;gully
+http://www.meetup.com/cities/us/mn/hackensack/;Hackensack;hackensack
+http://www.meetup.com/cities/us/mn/hallock/;Hallock;hallock
+http://www.meetup.com/cities/us/mn/halma/;Halma;halma
+http://www.meetup.com/cities/us/mn/halstad/;Halstad;halstad
+http://www.meetup.com/cities/us/mn/hamburg/;Hamburg;hamburg
+http://www.meetup.com/cities/us/mn/hamel/;Hamel;hamel
+http://www.meetup.com/cities/us/mn/hampton/;Hampton;hampton
+http://www.meetup.com/cities/us/mn/hancock/;Hancock;hancock
+http://www.meetup.com/cities/us/mn/hanley_falls/;Hanley Falls;hanley_falls
+http://www.meetup.com/cities/us/mn/hanover/;Hanover;hanover
+http://www.meetup.com/cities/us/mn/hanska/;Hanska;hanska
+http://www.meetup.com/cities/us/mn/hardwick/;Hardwick;hardwick
+http://www.meetup.com/cities/us/mn/harmony/;Harmony;harmony
+http://www.meetup.com/cities/us/mn/harris/;Harris;harris
+http://www.meetup.com/cities/us/mn/hartland/;Hartland;hartland
+http://www.meetup.com/cities/us/mn/hastings/;Hastings;hastings
+http://www.meetup.com/cities/us/mn/hawley/;Hawley;hawley
+http://www.meetup.com/cities/us/mn/hayfield/;Hayfield;hayfield
+http://www.meetup.com/cities/us/mn/hayward/;Hayward;hayward
+http://www.meetup.com/cities/us/mn/hector/;Hector;hector
+http://www.meetup.com/cities/us/mn/henderson/;Henderson;henderson
+http://www.meetup.com/cities/us/mn/hendricks/;Hendricks;hendricks
+http://www.meetup.com/cities/us/mn/hendrum/;Hendrum;hendrum
+http://www.meetup.com/cities/us/mn/henning/;Henning;henning
+http://www.meetup.com/cities/us/mn/henriette/;Henriette;henriette
+http://www.meetup.com/cities/us/mn/herman/;Herman;herman
+http://www.meetup.com/cities/us/mn/heron_lake/;Heron Lake;heron_lake
+http://www.meetup.com/cities/us/mn/hewitt/;Hewitt;hewitt
+http://www.meetup.com/cities/us/mn/hibbing/;Hibbing;hibbing
+http://www.meetup.com/cities/us/mn/hill_city/;Hill City;hill_city
+http://www.meetup.com/cities/us/mn/hillman/;Hillman;hillman
+http://www.meetup.com/cities/us/mn/hills/;Hills;hills
+http://www.meetup.com/cities/us/mn/hinckley/;Hinckley;hinckley
+http://www.meetup.com/cities/us/mn/hines/;Hines;hines
+http://www.meetup.com/cities/us/mn/hitterdal/;Hitterdal;hitterdal
+http://www.meetup.com/cities/us/mn/hoffman/;Hoffman;hoffman
+http://www.meetup.com/cities/us/mn/hokah/;Hokah;hokah
+http://www.meetup.com/cities/us/mn/holdingford/;Holdingford;holdingford
+http://www.meetup.com/cities/us/mn/holland/;Holland;holland
+http://www.meetup.com/cities/us/mn/hollandale/;Hollandale;hollandale
+http://www.meetup.com/cities/us/mn/holloway/;Holloway;holloway
+http://www.meetup.com/cities/us/mn/holmes_city/;Holmes City;holmes_city
+http://www.meetup.com/cities/us/mn/holyoke/;Holyoke;holyoke
+http://www.meetup.com/cities/us/mn/homer/;Homer;homer
+http://www.meetup.com/cities/us/mn/hope/;Hope;hope
+http://www.meetup.com/cities/us/mn/hopkins/;Hopkins;hopkins
+http://www.meetup.com/cities/us/mn/houston/;Houston;houston
+http://www.meetup.com/cities/us/mn/hovland/;Hovland;hovland
+http://www.meetup.com/cities/us/mn/howard_lake/;Howard Lake;howard_lake
+http://www.meetup.com/cities/us/mn/hoyt_lakes/;Hoyt Lakes;hoyt_lakes
+http://www.meetup.com/cities/us/mn/hugo/;Hugo;hugo
+http://www.meetup.com/cities/us/mn/humboldt/;Humboldt;humboldt
+http://www.meetup.com/cities/us/mn/huntley/;Huntley;huntley
+http://www.meetup.com/cities/us/mn/hutchinson/;Hutchinson;hutchinson
+http://www.meetup.com/cities/us/mn/ihlen/;Ihlen;ihlen
+http://www.meetup.com/cities/us/mn/international_falls/;International Falls;international_falls
+http://www.meetup.com/cities/us/mn/inver_grove_heights/;Inver Grove Heights;inver_grove_heights
+http://www.meetup.com/cities/us/mn/iona/;Iona;iona
+http://www.meetup.com/cities/us/mn/iron/;Iron;iron
+http://www.meetup.com/cities/us/mn/ironton/;Ironton;ironton
+http://www.meetup.com/cities/us/mn/isabella/;Isabella;isabella
+http://www.meetup.com/cities/us/mn/isanti/;Isanti;isanti
+http://www.meetup.com/cities/us/mn/isle/;Isle;isle
+http://www.meetup.com/cities/us/mn/ivanhoe/;Ivanhoe;ivanhoe
+http://www.meetup.com/cities/us/mn/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/mn/jacobson/;Jacobson;jacobson
+http://www.meetup.com/cities/us/mn/janesville/;Janesville;janesville
+http://www.meetup.com/cities/us/mn/jasper/;Jasper;jasper
+http://www.meetup.com/cities/us/mn/jeffers/;Jeffers;jeffers
+http://www.meetup.com/cities/us/mn/jenkins/;Jenkins;jenkins
+http://www.meetup.com/cities/us/mn/jordan/;Jordan;jordan
+http://www.meetup.com/cities/us/mn/kabetogama/;Kabetogama;kabetogama
+http://www.meetup.com/cities/us/mn/kanaranzi/;Kanaranzi;kanaranzi
+http://www.meetup.com/cities/us/mn/kandiyohi/;Kandiyohi;kandiyohi
+http://www.meetup.com/cities/us/mn/karlstad/;Karlstad;karlstad
+http://www.meetup.com/cities/us/mn/kasota/;Kasota;kasota
+http://www.meetup.com/cities/us/mn/kasson/;Kasson;kasson
+http://www.meetup.com/cities/us/mn/keewatin/;Keewatin;keewatin
+http://www.meetup.com/cities/us/mn/kelliher/;Kelliher;kelliher
+http://www.meetup.com/cities/us/mn/kellogg/;Kellogg;kellogg
+http://www.meetup.com/cities/us/mn/kennedy/;Kennedy;kennedy
+http://www.meetup.com/cities/us/mn/kenneth/;Kenneth;kenneth
+http://www.meetup.com/cities/us/mn/kensington/;Kensington;kensington
+http://www.meetup.com/cities/us/mn/kent/;Kent;kent
+http://www.meetup.com/cities/us/mn/kenyon/;Kenyon;kenyon
+http://www.meetup.com/cities/us/mn/kerkhoven/;Kerkhoven;kerkhoven
+http://www.meetup.com/cities/us/mn/kerrick/;Kerrick;kerrick
+http://www.meetup.com/cities/us/mn/kettle_river/;Kettle River;kettle_river
+http://www.meetup.com/cities/us/mn/kiester/;Kiester;kiester
+http://www.meetup.com/cities/us/mn/kilkenny/;Kilkenny;kilkenny
+http://www.meetup.com/cities/us/mn/kimball/;Kimball;kimball
+http://www.meetup.com/cities/us/mn/kinney/;Kinney;kinney
+http://www.meetup.com/cities/us/mn/knife_river/;Knife River;knife_river
+http://www.meetup.com/cities/us/mn/la_crescent/;La Crescent;la_crescent
+http://www.meetup.com/cities/us/mn/lafayette/;Lafayette;lafayette
+http://www.meetup.com/cities/us/mn/lake_benton/;Lake Benton;lake_benton
+http://www.meetup.com/cities/us/mn/lake_bronson/;Lake Bronson;lake_bronson
+http://www.meetup.com/cities/us/mn/lake_city/;Lake City;lake_city
+http://www.meetup.com/cities/us/mn/lake_crystal/;Lake Crystal;lake_crystal
+http://www.meetup.com/cities/us/mn/lake_elmo/;Lake Elmo;lake_elmo
+http://www.meetup.com/cities/us/mn/lakefield/;Lakefield;lakefield
+http://www.meetup.com/cities/us/mn/lake_george/;Lake George;lake_george
+http://www.meetup.com/cities/us/mn/lake_hubert/;Lake Hubert;lake_hubert
+http://www.meetup.com/cities/us/mn/lakeland/;Lakeland;lakeland
+http://www.meetup.com/cities/us/mn/lake_lillian/;Lake Lillian;lake_lillian
+http://www.meetup.com/cities/us/mn/lake_park/;Lake Park;lake_park
+http://www.meetup.com/cities/us/mn/lakeville/;Lakeville;lakeville
+http://www.meetup.com/cities/us/mn/lake_wilson/;Lake Wilson;lake_wilson
+http://www.meetup.com/cities/us/mn/lamberton/;Lamberton;lamberton
+http://www.meetup.com/cities/us/mn/lancaster/;Lancaster;lancaster
+http://www.meetup.com/cities/us/mn/lanesboro/;Lanesboro;lanesboro
+http://www.meetup.com/cities/us/mn/lansing/;Lansing;lansing
+http://www.meetup.com/cities/us/mn/laporte/;Laporte;laporte
+http://www.meetup.com/cities/us/mn/la_salle/;La Salle;la_salle
+http://www.meetup.com/cities/us/mn/lastrup/;Lastrup;lastrup
+http://www.meetup.com/cities/us/mn/le_center/;Le Center;le_center
+http://www.meetup.com/cities/us/mn/lengby/;Lengby;lengby
+http://www.meetup.com/cities/us/mn/leonard/;Leonard;leonard
+http://www.meetup.com/cities/us/mn/leota/;Leota;leota
+http://www.meetup.com/cities/us/mn/le_roy/;Le Roy;le_roy
+http://www.meetup.com/cities/us/mn/lester_prairie/;Lester Prairie;lester_prairie
+http://www.meetup.com/cities/us/mn/le_sueur/;Le Sueur;le_sueur
+http://www.meetup.com/cities/us/mn/lewiston/;Lewiston;lewiston
+http://www.meetup.com/cities/us/mn/lewisville/;Lewisville;lewisville
+http://www.meetup.com/cities/us/mn/lindstrom/;Lindstrom;lindstrom
+http://www.meetup.com/cities/us/mn/lismore/;Lismore;lismore
+http://www.meetup.com/cities/us/mn/litchfield/;Litchfield;litchfield
+http://www.meetup.com/cities/us/mn/little_falls/;Little Falls;little_falls
+http://www.meetup.com/cities/us/mn/littlefork/;Littlefork;littlefork
+http://www.meetup.com/cities/us/mn/loman/;Loman;loman
+http://www.meetup.com/cities/us/mn/long_lake/;Long Lake;long_lake
+http://www.meetup.com/cities/us/mn/long_prairie/;Long Prairie;long_prairie
+http://www.meetup.com/cities/us/mn/longville/;Longville;longville
+http://www.meetup.com/cities/us/mn/lonsdale/;Lonsdale;lonsdale
+http://www.meetup.com/cities/us/mn/loretto/;Loretto;loretto
+http://www.meetup.com/cities/us/mn/lowry/;Lowry;lowry
+http://www.meetup.com/cities/us/mn/lucan/;Lucan;lucan
+http://www.meetup.com/cities/us/mn/lutsen/;Lutsen;lutsen
+http://www.meetup.com/cities/us/mn/luverne/;Luverne;luverne
+http://www.meetup.com/cities/us/mn/lyle/;Lyle;lyle
+http://www.meetup.com/cities/us/mn/lynd/;Lynd;lynd
+http://www.meetup.com/cities/us/mn/mabel/;Mabel;mabel
+http://www.meetup.com/cities/us/mn/madelia/;Madelia;madelia
+http://www.meetup.com/cities/us/mn/madison/;Madison;madison
+http://www.meetup.com/cities/us/mn/madison_lake/;Madison Lake;madison_lake
+http://www.meetup.com/cities/us/mn/magnolia/;Magnolia;magnolia
+http://www.meetup.com/cities/us/mn/mahnomen/;Mahnomen;mahnomen
+http://www.meetup.com/cities/us/mn/makinen/;Makinen;makinen
+http://www.meetup.com/cities/us/mn/mankato/;Mankato;mankato
+http://www.meetup.com/cities/us/mn/mantorville/;Mantorville;mantorville
+http://www.meetup.com/cities/us/mn/maple_lake/;Maple Lake;maple_lake
+http://www.meetup.com/cities/us/mn/maple_plain/;Maple Plain;maple_plain
+http://www.meetup.com/cities/us/mn/mapleton/;Mapleton;mapleton
+http://www.meetup.com/cities/us/mn/marble/;Marble;marble
+http://www.meetup.com/cities/us/mn/marcell/;Marcell;marcell
+http://www.meetup.com/cities/us/mn/margie/;Margie;margie
+http://www.meetup.com/cities/us/mn/marietta/;Marietta;marietta
+http://www.meetup.com/cities/us/mn/marine_on_saint_croix/;Marine on Saint Croix;marine_on_saint_croix
+http://www.meetup.com/cities/us/mn/marshall/;Marshall;marshall
+http://www.meetup.com/cities/us/mn/max/;Max;max
+http://www.meetup.com/cities/us/mn/mayer/;Mayer;mayer
+http://www.meetup.com/cities/us/mn/maynard/;Maynard;maynard
+http://www.meetup.com/cities/us/mn/mazeppa/;Mazeppa;mazeppa
+http://www.meetup.com/cities/us/mn/mc_grath/;Mc Grath;mc_grath
+http://www.meetup.com/cities/us/mn/mcgregor/;McGregor;mcgregor
+http://www.meetup.com/cities/us/mn/mcintosh/;McIntosh;mcintosh
+http://www.meetup.com/cities/us/mn/meadowlands/;Meadowlands;meadowlands
+http://www.meetup.com/cities/us/mn/medford/;Medford;medford
+http://www.meetup.com/cities/us/mn/melrose/;Melrose;melrose
+http://www.meetup.com/cities/us/mn/melrude/;Melrude;melrude
+http://www.meetup.com/cities/us/mn/menahga/;Menahga;menahga
+http://www.meetup.com/cities/us/mn/mendota/;Mendota;mendota
+http://www.meetup.com/cities/us/mn/mentor/;Mentor;mentor
+http://www.meetup.com/cities/us/mn/merrifield/;Merrifield;merrifield
+http://www.meetup.com/cities/us/mn/middle_river/;Middle River;middle_river
+http://www.meetup.com/cities/us/mn/milaca/;Milaca;milaca
+http://www.meetup.com/cities/us/mn/milan/;Milan;milan
+http://www.meetup.com/cities/us/mn/millville/;Millville;millville
+http://www.meetup.com/cities/us/mn/milroy/;Milroy;milroy
+http://www.meetup.com/cities/us/mn/miltona/;Miltona;miltona
+http://www.meetup.com/cities/us/mn/minneapolis/;Minneapolis;minneapolis
+http://www.meetup.com/cities/us/mn/minneota/;Minneota;minneota
+http://www.meetup.com/cities/us/mn/minnesota_city/;Minnesota City;minnesota_city
+http://www.meetup.com/cities/us/mn/minnesota_lake/;Minnesota Lake;minnesota_lake
+http://www.meetup.com/cities/us/mn/minnetonka/;Minnetonka;minnetonka
+http://www.meetup.com/cities/us/mn/minnetonka_beach/;Minnetonka Beach;minnetonka_beach
+http://www.meetup.com/cities/us/mn/mizpah/;Mizpah;mizpah
+http://www.meetup.com/cities/us/mn/montevideo/;Montevideo;montevideo
+http://www.meetup.com/cities/us/mn/montgomery/;Montgomery;montgomery
+http://www.meetup.com/cities/us/mn/monticello/;Monticello;monticello
+http://www.meetup.com/cities/us/mn/montrose/;Montrose;montrose
+http://www.meetup.com/cities/us/mn/moorhead/;Moorhead;moorhead
+http://www.meetup.com/cities/us/mn/moose_lake/;Moose Lake;moose_lake
+http://www.meetup.com/cities/us/mn/mora/;Mora;mora
+http://www.meetup.com/cities/us/mn/morgan/;Morgan;morgan
+http://www.meetup.com/cities/us/mn/morris/;Morris;morris
+http://www.meetup.com/cities/us/mn/morristown/;Morristown;morristown
+http://www.meetup.com/cities/us/mn/morton/;Morton;morton
+http://www.meetup.com/cities/us/mn/motley/;Motley;motley
+http://www.meetup.com/cities/us/mn/mound/;Mound;mound
+http://www.meetup.com/cities/us/mn/mountain_iron/;Mountain Iron;mountain_iron
+http://www.meetup.com/cities/us/mn/mountain_lake/;Mountain Lake;mountain_lake
+http://www.meetup.com/cities/us/mn/murdock/;Murdock;murdock
+http://www.meetup.com/cities/us/mn/nashua/;Nashua;nashua
+http://www.meetup.com/cities/us/mn/nashwauk/;Nashwauk;nashwauk
+http://www.meetup.com/cities/us/mn/navarre/;Navarre;navarre
+http://www.meetup.com/cities/us/mn/naytahwaush/;Naytahwaush;naytahwaush
+http://www.meetup.com/cities/us/mn/nelson/;Nelson;nelson
+http://www.meetup.com/cities/us/mn/nerstrand/;Nerstrand;nerstrand
+http://www.meetup.com/cities/us/mn/nett_lake/;Nett Lake;nett_lake
+http://www.meetup.com/cities/us/mn/nevis/;Nevis;nevis
+http://www.meetup.com/cities/us/mn/new_auburn/;New Auburn;new_auburn
+http://www.meetup.com/cities/us/mn/newfolden/;Newfolden;newfolden
+http://www.meetup.com/cities/us/mn/new_germany/;New Germany;new_germany
+http://www.meetup.com/cities/us/mn/new_london/;New London;new_london
+http://www.meetup.com/cities/us/mn/new_market/;New Market;new_market
+http://www.meetup.com/cities/us/mn/new_munich/;New Munich;new_munich
+http://www.meetup.com/cities/us/mn/newport/;Newport;newport
+http://www.meetup.com/cities/us/mn/new_prague/;New Prague;new_prague
+http://www.meetup.com/cities/us/mn/new_richland/;New Richland;new_richland
+http://www.meetup.com/cities/us/mn/new_ulm/;New Ulm;new_ulm
+http://www.meetup.com/cities/us/mn/new_york_mills/;New York Mills;new_york_mills
+http://www.meetup.com/cities/us/mn/nicollet/;Nicollet;nicollet
+http://www.meetup.com/cities/us/mn/nielsville/;Nielsville;nielsville
+http://www.meetup.com/cities/us/mn/nimrod/;Nimrod;nimrod
+http://www.meetup.com/cities/us/mn/nisswa/;Nisswa;nisswa
+http://www.meetup.com/cities/us/mn/norcross/;Norcross;norcross
+http://www.meetup.com/cities/us/mn/north_branch/;North Branch;north_branch
+http://www.meetup.com/cities/us/mn/northfield/;Northfield;northfield
+http://www.meetup.com/cities/us/mn/northome/;Northome;northome
+http://www.meetup.com/cities/us/mn/northrop/;Northrop;northrop
+http://www.meetup.com/cities/us/mn/norwood/;Norwood;norwood
+http://www.meetup.com/cities/us/mn/norwood_young_america/;Norwood Young America;norwood_young_america
+http://www.meetup.com/cities/us/mn/noyes/;Noyes;noyes
+http://www.meetup.com/cities/us/mn/oak_island/;Oak Island;oak_island
+http://www.meetup.com/cities/us/mn/oak_park/;Oak Park;oak_park
+http://www.meetup.com/cities/us/mn/odessa/;Odessa;odessa
+http://www.meetup.com/cities/us/mn/odin/;Odin;odin
+http://www.meetup.com/cities/us/mn/ogema/;Ogema;ogema
+http://www.meetup.com/cities/us/mn/ogilvie/;Ogilvie;ogilvie
+http://www.meetup.com/cities/us/mn/okabena/;Okabena;okabena
+http://www.meetup.com/cities/us/mn/oklee/;Oklee;oklee
+http://www.meetup.com/cities/us/mn/olivia/;Olivia;olivia
+http://www.meetup.com/cities/us/mn/onamia/;Onamia;onamia
+http://www.meetup.com/cities/us/mn/ormsby/;Ormsby;ormsby
+http://www.meetup.com/cities/us/mn/oronoco/;Oronoco;oronoco
+http://www.meetup.com/cities/us/mn/orr/;Orr;orr
+http://www.meetup.com/cities/us/mn/ortonville/;Ortonville;ortonville
+http://www.meetup.com/cities/us/mn/osage/;Osage;osage
+http://www.meetup.com/cities/us/mn/osakis/;Osakis;osakis
+http://www.meetup.com/cities/us/mn/oslo/;Oslo;oslo
+http://www.meetup.com/cities/us/mn/osseo/;Osseo;osseo
+http://www.meetup.com/cities/us/mn/ostrander/;Ostrander;ostrander
+http://www.meetup.com/cities/us/mn/ottertail/;Ottertail;ottertail
+http://www.meetup.com/cities/us/mn/outing/;Outing;outing
+http://www.meetup.com/cities/us/mn/owatonna/;Owatonna;owatonna
+http://www.meetup.com/cities/us/mn/palisade/;Palisade;palisade
+http://www.meetup.com/cities/us/mn/parkers_prairie/;Parkers Prairie;parkers_prairie
+http://www.meetup.com/cities/us/mn/park_rapids/;Park Rapids;park_rapids
+http://www.meetup.com/cities/us/mn/paynesville/;Paynesville;paynesville
+http://www.meetup.com/cities/us/mn/pease/;Pease;pease
+http://www.meetup.com/cities/us/mn/pelican_rapids/;Pelican Rapids;pelican_rapids
+http://www.meetup.com/cities/us/mn/pemberton/;Pemberton;pemberton
+http://www.meetup.com/cities/us/mn/pengilly/;Pengilly;pengilly
+http://www.meetup.com/cities/us/mn/pennington/;Pennington;pennington
+http://www.meetup.com/cities/us/mn/pennock/;Pennock;pennock
+http://www.meetup.com/cities/us/mn/pequot_lakes/;Pequot Lakes;pequot_lakes
+http://www.meetup.com/cities/us/mn/perham/;Perham;perham
+http://www.meetup.com/cities/us/mn/perley/;Perley;perley
+http://www.meetup.com/cities/us/mn/peterson/;Peterson;peterson
+http://www.meetup.com/cities/us/mn/pierz/;Pierz;pierz
+http://www.meetup.com/cities/us/mn/pillager/;Pillager;pillager
+http://www.meetup.com/cities/us/mn/pine_city/;Pine City;pine_city
+http://www.meetup.com/cities/us/mn/pine_island/;Pine Island;pine_island
+http://www.meetup.com/cities/us/mn/pine_river/;Pine River;pine_river
+http://www.meetup.com/cities/us/mn/pipestone/;Pipestone;pipestone
+http://www.meetup.com/cities/us/mn/plainview/;Plainview;plainview
+http://www.meetup.com/cities/us/mn/plato/;Plato;plato
+http://www.meetup.com/cities/us/mn/plummer/;Plummer;plummer
+http://www.meetup.com/cities/us/mn/ponemah/;Ponemah;ponemah
+http://www.meetup.com/cities/us/mn/ponsford/;Ponsford;ponsford
+http://www.meetup.com/cities/us/mn/porter/;Porter;porter
+http://www.meetup.com/cities/us/mn/preston/;Preston;preston
+http://www.meetup.com/cities/us/mn/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/mn/prinsburg/;Prinsburg;prinsburg
+http://www.meetup.com/cities/us/mn/prior_lake/;Prior Lake;prior_lake
+http://www.meetup.com/cities/us/mn/puposky/;Puposky;puposky
+http://www.meetup.com/cities/us/mn/racine/;Racine;racine
+http://www.meetup.com/cities/us/mn/randall/;Randall;randall
+http://www.meetup.com/cities/us/mn/randolph/;Randolph;randolph
+http://www.meetup.com/cities/us/mn/ranier/;Ranier;ranier
+http://www.meetup.com/cities/us/mn/raymond/;Raymond;raymond
+http://www.meetup.com/cities/us/mn/reading/;Reading;reading
+http://www.meetup.com/cities/us/mn/reads_landing/;Reads Landing;reads_landing
+http://www.meetup.com/cities/us/mn/redby/;Redby;redby
+http://www.meetup.com/cities/us/mn/redlake/;Redlake;redlake
+http://www.meetup.com/cities/us/mn/red_lake_falls/;Red Lake Falls;red_lake_falls
+http://www.meetup.com/cities/us/mn/red_wing/;Red Wing;red_wing
+http://www.meetup.com/cities/us/mn/redwood_falls/;Redwood Falls;redwood_falls
+http://www.meetup.com/cities/us/mn/remer/;Remer;remer
+http://www.meetup.com/cities/us/mn/renville/;Renville;renville
+http://www.meetup.com/cities/us/mn/revere/;Revere;revere
+http://www.meetup.com/cities/us/mn/rice/;Rice;rice
+http://www.meetup.com/cities/us/mn/richmond/;Richmond;richmond
+http://www.meetup.com/cities/us/mn/richville/;Richville;richville
+http://www.meetup.com/cities/us/mn/richwood/;Richwood;richwood
+http://www.meetup.com/cities/us/mn/rochert/;Rochert;rochert
+http://www.meetup.com/cities/us/mn/rochester/;Rochester;rochester
+http://www.meetup.com/cities/us/mn/rock_creek/;Rock Creek;rock_creek
+http://www.meetup.com/cities/us/mn/rockford/;Rockford;rockford
+http://www.meetup.com/cities/us/mn/rockville/;Rockville;rockville
+http://www.meetup.com/cities/us/mn/rogers/;Rogers;rogers
+http://www.meetup.com/cities/us/mn/rollingstone/;Rollingstone;rollingstone
+http://www.meetup.com/cities/us/mn/roosevelt/;Roosevelt;roosevelt
+http://www.meetup.com/cities/us/mn/roscoe/;Roscoe;roscoe
+http://www.meetup.com/cities/us/mn/roseau/;Roseau;roseau
+http://www.meetup.com/cities/us/mn/rose_creek/;Rose Creek;rose_creek
+http://www.meetup.com/cities/us/mn/rosemount/;Rosemount;rosemount
+http://www.meetup.com/cities/us/mn/rothsay/;Rothsay;rothsay
+http://www.meetup.com/cities/us/mn/round_lake/;Round Lake;round_lake
+http://www.meetup.com/cities/us/mn/royalton/;Royalton;royalton
+http://www.meetup.com/cities/us/mn/rush_city/;Rush City;rush_city
+http://www.meetup.com/cities/us/mn/rushford/;Rushford;rushford
+http://www.meetup.com/cities/us/mn/rushmore/;Rushmore;rushmore
+http://www.meetup.com/cities/us/mn/russell/;Russell;russell
+http://www.meetup.com/cities/us/mn/ruthton/;Ruthton;ruthton
+http://www.meetup.com/cities/us/mn/sabin/;Sabin;sabin
+http://www.meetup.com/cities/us/mn/sacred_heart/;Sacred Heart;sacred_heart
+http://www.meetup.com/cities/us/mn/saginaw/;Saginaw;saginaw
+http://www.meetup.com/cities/us/mn/saint_bonifacius/;Saint Bonifacius;saint_bonifacius
+http://www.meetup.com/cities/us/mn/saint_charles/;Saint Charles;saint_charles
+http://www.meetup.com/cities/us/mn/saint_clair/;Saint Clair;saint_clair
+http://www.meetup.com/cities/us/mn/saint_cloud/;Saint Cloud;saint_cloud
+http://www.meetup.com/cities/us/mn/saint_francis/;Saint Francis;saint_francis
+http://www.meetup.com/cities/us/mn/saint_hilaire/;Saint Hilaire;saint_hilaire
+http://www.meetup.com/cities/us/mn/saint_james/;Saint James;saint_james
+http://www.meetup.com/cities/us/mn/saint_joseph/;Saint Joseph;saint_joseph
+http://www.meetup.com/cities/us/mn/saint_martin/;Saint Martin;saint_martin
+http://www.meetup.com/cities/us/mn/saint_michael/;Saint Michael;saint_michael
+http://www.meetup.com/cities/us/mn/saint_paul/;Saint Paul;saint_paul
+http://www.meetup.com/cities/us/mn/saint_paul_park/;Saint Paul Park;saint_paul_park
+http://www.meetup.com/cities/us/mn/saint_peter/;Saint Peter;saint_peter
+http://www.meetup.com/cities/us/mn/saint_stephen/;Saint Stephen;saint_stephen
+http://www.meetup.com/cities/us/mn/saint_vincent/;Saint Vincent;saint_vincent
+http://www.meetup.com/cities/us/mn/salol/;Salol;salol
+http://www.meetup.com/cities/us/mn/sanborn/;Sanborn;sanborn
+http://www.meetup.com/cities/us/mn/sandstone/;Sandstone;sandstone
+http://www.meetup.com/cities/us/mn/santiago/;Santiago;santiago
+http://www.meetup.com/cities/us/mn/sargeant/;Sargeant;sargeant
+http://www.meetup.com/cities/us/mn/sartell/;Sartell;sartell
+http://www.meetup.com/cities/us/mn/sauk_centre/;Sauk Centre;sauk_centre
+http://www.meetup.com/cities/us/mn/sauk_rapids/;Sauk Rapids;sauk_rapids
+http://www.meetup.com/cities/us/mn/savage/;Savage;savage
+http://www.meetup.com/cities/us/mn/sawyer/;Sawyer;sawyer
+http://www.meetup.com/cities/us/mn/scandia/;Scandia;scandia
+http://www.meetup.com/cities/us/mn/schroeder/;Schroeder;schroeder
+http://www.meetup.com/cities/us/mn/seaforth/;Seaforth;seaforth
+http://www.meetup.com/cities/us/mn/searles/;Searles;searles
+http://www.meetup.com/cities/us/mn/sebeka/;Sebeka;sebeka
+http://www.meetup.com/cities/us/mn/shafer/;Shafer;shafer
+http://www.meetup.com/cities/us/mn/shakopee/;Shakopee;shakopee
+http://www.meetup.com/cities/us/mn/shelly/;Shelly;shelly
+http://www.meetup.com/cities/us/mn/sherburn/;Sherburn;sherburn
+http://www.meetup.com/cities/us/mn/shevlin/;Shevlin;shevlin
+http://www.meetup.com/cities/us/mn/side_lake/;Side Lake;side_lake
+http://www.meetup.com/cities/us/mn/silver_bay/;Silver Bay;silver_bay
+http://www.meetup.com/cities/us/mn/silver_creek/;Silver Creek;silver_creek
+http://www.meetup.com/cities/us/mn/silver_lake/;Silver Lake;silver_lake
+http://www.meetup.com/cities/us/mn/slayton/;Slayton;slayton
+http://www.meetup.com/cities/us/mn/sleepy_eye/;Sleepy Eye;sleepy_eye
+http://www.meetup.com/cities/us/mn/solway/;Solway;solway
+http://www.meetup.com/cities/us/mn/soudan/;Soudan;soudan
+http://www.meetup.com/cities/us/mn/south_haven/;South Haven;south_haven
+http://www.meetup.com/cities/us/mn/south_international_falls/;South International Falls;south_international_falls
+http://www.meetup.com/cities/us/mn/south_saint_paul/;South Saint Paul;south_saint_paul
+http://www.meetup.com/cities/us/mn/spicer/;Spicer;spicer
+http://www.meetup.com/cities/us/mn/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/mn/spring_grove/;Spring Grove;spring_grove
+http://www.meetup.com/cities/us/mn/spring_lake/;Spring Lake;spring_lake
+http://www.meetup.com/cities/us/mn/spring_park/;Spring Park;spring_park
+http://www.meetup.com/cities/us/mn/spring_valley/;Spring Valley;spring_valley
+http://www.meetup.com/cities/us/mn/squaw_lake/;Squaw Lake;squaw_lake
+http://www.meetup.com/cities/us/mn/stacy/;Stacy;stacy
+http://www.meetup.com/cities/us/mn/stanchfield/;Stanchfield;stanchfield
+http://www.meetup.com/cities/us/mn/staples/;Staples;staples
+http://www.meetup.com/cities/us/mn/starbuck/;Starbuck;starbuck
+http://www.meetup.com/cities/us/mn/steen/;Steen;steen
+http://www.meetup.com/cities/us/mn/stephen/;Stephen;stephen
+http://www.meetup.com/cities/us/mn/stewart/;Stewart;stewart
+http://www.meetup.com/cities/us/mn/stewartville/;Stewartville;stewartville
+http://www.meetup.com/cities/us/mn/stillwater/;Stillwater;stillwater
+http://www.meetup.com/cities/us/mn/stockton/;Stockton;stockton
+http://www.meetup.com/cities/us/mn/storden/;Storden;storden
+http://www.meetup.com/cities/us/mn/strandquist/;Strandquist;strandquist
+http://www.meetup.com/cities/us/mn/strathcona/;Strathcona;strathcona
+http://www.meetup.com/cities/us/mn/sturgeon_lake/;Sturgeon Lake;sturgeon_lake
+http://www.meetup.com/cities/us/mn/sunburg/;Sunburg;sunburg
+http://www.meetup.com/cities/us/mn/swan_river/;Swan River;swan_river
+http://www.meetup.com/cities/us/mn/swanville/;Swanville;swanville
+http://www.meetup.com/cities/us/mn/swatara/;Swatara;swatara
+http://www.meetup.com/cities/us/mn/swift/;Swift;swift
+http://www.meetup.com/cities/us/mn/taconite/;Taconite;taconite
+http://www.meetup.com/cities/us/mn/talmoon/;Talmoon;talmoon
+http://www.meetup.com/cities/us/mn/tamarack/;Tamarack;tamarack
+http://www.meetup.com/cities/us/mn/taopi/;Taopi;taopi
+http://www.meetup.com/cities/us/mn/taunton/;Taunton;taunton
+http://www.meetup.com/cities/us/mn/taylors_falls/;Taylors Falls;taylors_falls
+http://www.meetup.com/cities/us/mn/tenstrike/;Tenstrike;tenstrike
+http://www.meetup.com/cities/us/mn/thief_river_falls/;Thief River Falls;thief_river_falls
+http://www.meetup.com/cities/us/mn/tintah/;Tintah;tintah
+http://www.meetup.com/cities/us/mn/tofte/;Tofte;tofte
+http://www.meetup.com/cities/us/mn/tower/;Tower;tower
+http://www.meetup.com/cities/us/mn/tracy/;Tracy;tracy
+http://www.meetup.com/cities/us/mn/trail/;Trail;trail
+http://www.meetup.com/cities/us/mn/trimont/;Trimont;trimont
+http://www.meetup.com/cities/us/mn/trosky/;Trosky;trosky
+http://www.meetup.com/cities/us/mn/truman/;Truman;truman
+http://www.meetup.com/cities/us/mn/twig/;Twig;twig
+http://www.meetup.com/cities/us/mn/twin_lakes/;Twin Lakes;twin_lakes
+http://www.meetup.com/cities/us/mn/twin_valley/;Twin Valley;twin_valley
+http://www.meetup.com/cities/us/mn/two_harbors/;Two Harbors;two_harbors
+http://www.meetup.com/cities/us/mn/tyler/;Tyler;tyler
+http://www.meetup.com/cities/us/mn/ulen/;Ulen;ulen
+http://www.meetup.com/cities/us/mn/underwood/;Underwood;underwood
+http://www.meetup.com/cities/us/mn/upsala/;Upsala;upsala
+http://www.meetup.com/cities/us/mn/utica/;Utica;utica
+http://www.meetup.com/cities/us/mn/vergas/;Vergas;vergas
+http://www.meetup.com/cities/us/mn/vermillion/;Vermillion;vermillion
+http://www.meetup.com/cities/us/mn/verndale/;Verndale;verndale
+http://www.meetup.com/cities/us/mn/vernon_center/;Vernon Center;vernon_center
+http://www.meetup.com/cities/us/mn/vesta/;Vesta;vesta
+http://www.meetup.com/cities/us/mn/victoria/;Victoria;victoria
+http://www.meetup.com/cities/us/mn/viking/;Viking;viking
+http://www.meetup.com/cities/us/mn/villard/;Villard;villard
+http://www.meetup.com/cities/us/mn/vining/;Vining;vining
+http://www.meetup.com/cities/us/mn/virginia/;Virginia;virginia
+http://www.meetup.com/cities/us/mn/wabasha/;Wabasha;wabasha
+http://www.meetup.com/cities/us/mn/wabasso/;Wabasso;wabasso
+http://www.meetup.com/cities/us/mn/waconia/;Waconia;waconia
+http://www.meetup.com/cities/us/mn/wadena/;Wadena;wadena
+http://www.meetup.com/cities/us/mn/wahkon/;Wahkon;wahkon
+http://www.meetup.com/cities/us/mn/waite_park/;Waite Park;waite_park
+http://www.meetup.com/cities/us/mn/waldorf/;Waldorf;waldorf
+http://www.meetup.com/cities/us/mn/walker/;Walker;walker
+http://www.meetup.com/cities/us/mn/walnut_grove/;Walnut Grove;walnut_grove
+http://www.meetup.com/cities/us/mn/waltham/;Waltham;waltham
+http://www.meetup.com/cities/us/mn/wanamingo/;Wanamingo;wanamingo
+http://www.meetup.com/cities/us/mn/wanda/;Wanda;wanda
+http://www.meetup.com/cities/us/mn/wannaska/;Wannaska;wannaska
+http://www.meetup.com/cities/us/mn/warba/;Warba;warba
+http://www.meetup.com/cities/us/mn/warren/;Warren;warren
+http://www.meetup.com/cities/us/mn/warroad/;Warroad;warroad
+http://www.meetup.com/cities/us/mn/warsaw/;Warsaw;warsaw
+http://www.meetup.com/cities/us/mn/waseca/;Waseca;waseca
+http://www.meetup.com/cities/us/mn/waskish/;Waskish;waskish
+http://www.meetup.com/cities/us/mn/watertown/;Watertown;watertown
+http://www.meetup.com/cities/us/mn/waterville/;Waterville;waterville
+http://www.meetup.com/cities/us/mn/watkins/;Watkins;watkins
+http://www.meetup.com/cities/us/mn/watson/;Watson;watson
+http://www.meetup.com/cities/us/mn/waubun/;Waubun;waubun
+http://www.meetup.com/cities/us/mn/waverly/;Waverly;waverly
+http://www.meetup.com/cities/us/mn/wayzata/;Wayzata;wayzata
+http://www.meetup.com/cities/us/mn/webster/;Webster;webster
+http://www.meetup.com/cities/us/mn/welch/;Welch;welch
+http://www.meetup.com/cities/us/mn/welcome/;Welcome;welcome
+http://www.meetup.com/cities/us/mn/wells/;Wells;wells
+http://www.meetup.com/cities/us/mn/wendell/;Wendell;wendell
+http://www.meetup.com/cities/us/mn/westbrook/;Westbrook;westbrook
+http://www.meetup.com/cities/us/mn/west_concord/;West Concord;west_concord
+http://www.meetup.com/cities/us/mn/west_union/;West Union;west_union
+http://www.meetup.com/cities/us/mn/wheaton/;Wheaton;wheaton
+http://www.meetup.com/cities/us/mn/white_earth/;White Earth;white_earth
+http://www.meetup.com/cities/us/mn/willernie/;Willernie;willernie
+http://www.meetup.com/cities/us/mn/williams/;Williams;williams
+http://www.meetup.com/cities/us/mn/willmar/;Willmar;willmar
+http://www.meetup.com/cities/us/mn/willow_river/;Willow River;willow_river
+http://www.meetup.com/cities/us/mn/wilmont/;Wilmont;wilmont
+http://www.meetup.com/cities/us/mn/wilton/;Wilton;wilton
+http://www.meetup.com/cities/us/mn/windom/;Windom;windom
+http://www.meetup.com/cities/us/mn/winger/;Winger;winger
+http://www.meetup.com/cities/us/mn/winnebago/;Winnebago;winnebago
+http://www.meetup.com/cities/us/mn/winona/;Winona;winona
+http://www.meetup.com/cities/us/mn/winsted/;Winsted;winsted
+http://www.meetup.com/cities/us/mn/winthrop/;Winthrop;winthrop
+http://www.meetup.com/cities/us/mn/winton/;Winton;winton
+http://www.meetup.com/cities/us/mn/wirt/;Wirt;wirt
+http://www.meetup.com/cities/us/mn/wolf_lake/;Wolf Lake;wolf_lake
+http://www.meetup.com/cities/us/mn/wolverton/;Wolverton;wolverton
+http://www.meetup.com/cities/us/mn/wood_lake/;Wood Lake;wood_lake
+http://www.meetup.com/cities/us/mn/woodstock/;Woodstock;woodstock
+http://www.meetup.com/cities/us/mn/worthington/;Worthington;worthington
+http://www.meetup.com/cities/us/mn/wrenshall/;Wrenshall;wrenshall
+http://www.meetup.com/cities/us/mn/wright/;Wright;wright
+http://www.meetup.com/cities/us/mn/wykoff/;Wykoff;wykoff
+http://www.meetup.com/cities/us/mn/wyoming/;Wyoming;wyoming
+http://www.meetup.com/cities/us/mn/young_america/;Young America;young_america
+http://www.meetup.com/cities/us/mn/zimmerman/;Zimmerman;zimmerman
+http://www.meetup.com/cities/us/mn/zumbro_falls/;Zumbro Falls;zumbro_falls
+http://www.meetup.com/cities/us/mn/zumbrota/;Zumbrota;zumbrota
+http://www.meetup.com/cities/us/mn/ada/;Ada;ada
+http://www.meetup.com/cities/us/mn/adams/;Adams;adams
+http://www.meetup.com/cities/us/mn/adolph/;Adolph;adolph
+http://www.meetup.com/cities/us/mn/adrian/;Adrian;adrian
+http://www.meetup.com/cities/us/mn/afton/;Afton;afton
+http://www.meetup.com/cities/us/mn/ah_gwah_ching/;Ah Gwah Ching;ah_gwah_ching
+http://www.meetup.com/cities/us/mn/aitkin/;Aitkin;aitkin
+http://www.meetup.com/cities/us/mn/akeley/;Akeley;akeley
+http://www.meetup.com/cities/us/mn/albany/;Albany;albany
+http://www.meetup.com/cities/us/mn/alberta/;Alberta;alberta
+http://www.meetup.com/cities/us/mn/albert_lea/;Albert Lea;albert_lea
+http://www.meetup.com/cities/us/mn/albertville/;Albertville;albertville
+http://www.meetup.com/cities/us/mn/alborn/;Alborn;alborn
+http://www.meetup.com/cities/us/mn/alden/;Alden;alden
+http://www.meetup.com/cities/us/mn/aldrich/;Aldrich;aldrich
+http://www.meetup.com/cities/us/mn/alexandria/;Alexandria;alexandria
+http://www.meetup.com/cities/us/mn/almelund/;Almelund;almelund
+http://www.meetup.com/cities/us/mn/alpha/;Alpha;alpha
+http://www.meetup.com/cities/us/mn/altura/;Altura;altura
+http://www.meetup.com/cities/us/mn/alvarado/;Alvarado;alvarado
+http://www.meetup.com/cities/us/mn/amboy/;Amboy;amboy
+http://www.meetup.com/cities/us/mn/andover/;Andover;andover
+http://www.meetup.com/cities/us/mn/angle_inlet/;Angle Inlet;angle_inlet
+http://www.meetup.com/cities/us/mn/angora/;Angora;angora
+http://www.meetup.com/cities/us/mn/annandale/;Annandale;annandale
+http://www.meetup.com/cities/us/mn/anoka/;Anoka;anoka
+http://www.meetup.com/cities/us/mn/appleton/;Appleton;appleton
+http://www.meetup.com/cities/us/mn/arco/;Arco;arco
+http://www.meetup.com/cities/us/mn/argyle/;Argyle;argyle
+http://www.meetup.com/cities/us/mn/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/mn/ashby/;Ashby;ashby
+http://www.meetup.com/cities/us/mn/askov/;Askov;askov
+http://www.meetup.com/cities/us/mn/atwater/;Atwater;atwater
+http://www.meetup.com/cities/us/mn/audubon/;Audubon;audubon
+http://www.meetup.com/cities/us/mn/aurora/;Aurora;aurora
+http://www.meetup.com/cities/us/mn/austin/;Austin;austin
+http://www.meetup.com/cities/us/mn/avoca/;Avoca;avoca
+http://www.meetup.com/cities/us/mn/avon/;Avon;avon
+http://www.meetup.com/cities/us/mn/babbitt/;Babbitt;babbitt
+http://www.meetup.com/cities/us/mn/backus/;Backus;backus
+http://www.meetup.com/cities/us/mn/badger/;Badger;badger
+http://www.meetup.com/cities/us/mn/bagley/;Bagley;bagley
+http://www.meetup.com/cities/us/mn/balaton/;Balaton;balaton
+http://www.meetup.com/cities/us/mn/barnesville/;Barnesville;barnesville
+http://www.meetup.com/cities/us/mn/barnum/;Barnum;barnum
+http://www.meetup.com/cities/us/mn/barrett/;Barrett;barrett
+http://www.meetup.com/cities/us/mn/barry/;Barry;barry
+http://www.meetup.com/cities/us/mn/battle_lake/;Battle Lake;battle_lake
+http://www.meetup.com/cities/us/mn/baudette/;Baudette;baudette
+http://www.meetup.com/cities/us/mn/baxter/;Baxter;baxter
+http://www.meetup.com/cities/us/mn/bayport/;Bayport;bayport
+http://www.meetup.com/cities/us/mn/beardsley/;Beardsley;beardsley
+http://www.meetup.com/cities/us/mn/beaver_bay/;Beaver Bay;beaver_bay
+http://www.meetup.com/cities/us/mn/beaver_creek/;Beaver Creek;beaver_creek
+http://www.meetup.com/cities/us/mn/becker/;Becker;becker
+http://www.meetup.com/cities/us/mn/bejou/;Bejou;bejou
+http://www.meetup.com/cities/us/mn/belgrade/;Belgrade;belgrade
+http://www.meetup.com/cities/us/mn/belle_plaine/;Belle Plaine;belle_plaine
+http://www.meetup.com/cities/us/mn/bellingham/;Bellingham;bellingham
+http://www.meetup.com/cities/us/mn/beltrami/;Beltrami;beltrami
+http://www.meetup.com/cities/us/mn/belview/;Belview;belview
+http://www.meetup.com/cities/us/mn/bemidji/;Bemidji;bemidji
+http://www.meetup.com/cities/us/mn/bena/;Bena;bena
+http://www.meetup.com/cities/us/mn/benedict/;Benedict;benedict
+http://www.meetup.com/cities/us/mn/benson/;Benson;benson
+http://www.meetup.com/cities/us/mn/bertha/;Bertha;bertha
+http://www.meetup.com/cities/us/mn/bethel/;Bethel;bethel
+http://www.meetup.com/cities/us/mn/bigelow/;Bigelow;bigelow
+http://www.meetup.com/cities/us/mn/big_falls/;Big Falls;big_falls
+http://www.meetup.com/cities/us/mn/bigfork/;Bigfork;bigfork
+http://www.meetup.com/cities/us/mn/big_lake/;Big Lake;big_lake
+http://www.meetup.com/cities/us/mn/bingham_lake/;Bingham Lake;bingham_lake
+http://www.meetup.com/cities/us/mn/birchdale/;Birchdale;birchdale
+http://www.meetup.com/cities/us/mn/bird_island/;Bird Island;bird_island
+http://www.meetup.com/cities/us/mn/biwabik/;Biwabik;biwabik
+http://www.meetup.com/cities/us/mn/blackduck/;Blackduck;blackduck
+http://www.meetup.com/cities/us/mn/blomkest/;Blomkest;blomkest
+http://www.meetup.com/cities/us/mn/blooming_prairie/;Blooming Prairie;blooming_prairie
+http://www.meetup.com/cities/us/mn/blue_earth/;Blue Earth;blue_earth
+http://www.meetup.com/cities/us/mn/bluffton/;Bluffton;bluffton
+http://www.meetup.com/cities/us/mn/bock/;Bock;bock
+http://www.meetup.com/cities/us/mn/borup/;Borup;borup
+http://www.meetup.com/cities/us/mn/bovey/;Bovey;bovey
+http://www.meetup.com/cities/us/mn/bowlus/;Bowlus;bowlus
+http://www.meetup.com/cities/us/mn/bowstring/;Bowstring;bowstring
+http://www.meetup.com/cities/us/mn/boyd/;Boyd;boyd
+http://www.meetup.com/cities/us/mn/braham/;Braham;braham
+http://www.meetup.com/cities/us/mn/brainerd/;Brainerd;brainerd
+http://www.meetup.com/cities/us/mn/brandon/;Brandon;brandon
+http://www.meetup.com/cities/us/mn/breckenridge/;Breckenridge;breckenridge
+http://www.meetup.com/cities/us/mn/brewster/;Brewster;brewster
+http://www.meetup.com/cities/us/mn/bricelyn/;Bricelyn;bricelyn
+http://www.meetup.com/cities/us/mn/brimson/;Brimson;brimson
+http://www.meetup.com/cities/us/mn/britt/;Britt;britt
+http://www.meetup.com/cities/us/mn/brook_park/;Brook Park;brook_park
+http://www.meetup.com/cities/us/mn/brooks/;Brooks;brooks
+http://www.meetup.com/cities/us/mn/brookston/;Brookston;brookston
+http://www.meetup.com/cities/us/mn/brooten/;Brooten;brooten
+http://www.meetup.com/cities/us/mn/browerville/;Browerville;browerville
+http://www.meetup.com/cities/us/mn/brownsdale/;Brownsdale;brownsdale
+http://www.meetup.com/cities/us/mn/browns_valley/;Browns Valley;browns_valley
+http://www.meetup.com/cities/us/mn/brownsville/;Brownsville;brownsville
+http://www.meetup.com/cities/us/mn/brownton/;Brownton;brownton
+http://www.meetup.com/cities/us/mn/bruno/;Bruno;bruno
+http://www.meetup.com/cities/us/mn/buckman/;Buckman;buckman
+http://www.meetup.com/cities/us/mn/buffalo/;Buffalo;buffalo
+http://www.meetup.com/cities/us/mn/buffalo_lake/;Buffalo Lake;buffalo_lake
+http://www.meetup.com/cities/us/mn/buhl/;Buhl;buhl
+http://www.meetup.com/cities/us/mn/burnsville/;Burnsville;burnsville
+http://www.meetup.com/cities/us/mn/burtrum/;Burtrum;burtrum
+http://www.meetup.com/cities/us/mn/butterfield/;Butterfield;butterfield
+http://www.meetup.com/cities/us/mn/byron/;Byron;byron
+http://www.meetup.com/cities/us/mn/caledonia/;Caledonia;caledonia
+http://www.meetup.com/cities/us/mn/callaway/;Callaway;callaway
+http://www.meetup.com/cities/us/mn/calumet/;Calumet;calumet
+http://www.meetup.com/cities/us/mn/cambridge/;Cambridge;cambridge
+http://www.meetup.com/cities/us/mn/campbell/;Campbell;campbell
+http://www.meetup.com/cities/us/mn/canby/;Canby;canby
+http://www.meetup.com/cities/us/mn/cannon_falls/;Cannon Falls;cannon_falls
+http://www.meetup.com/cities/us/mn/canton/;Canton;canton
+http://www.meetup.com/cities/us/mn/canyon/;Canyon;canyon
+http://www.meetup.com/cities/us/mn/carlos/;Carlos;carlos
+http://www.meetup.com/cities/us/mn/carlton/;Carlton;carlton
+http://www.meetup.com/cities/us/mn/carver/;Carver;carver
+http://www.meetup.com/cities/us/mn/cass_lake/;Cass Lake;cass_lake
+http://www.meetup.com/cities/us/mn/castle_rock/;Castle Rock;castle_rock
+http://www.meetup.com/cities/us/mn/cedar/;Cedar;cedar
+http://www.meetup.com/cities/us/mn/center_city/;Center City;center_city
+http://www.meetup.com/cities/us/mn/ceylon/;Ceylon;ceylon
+http://www.meetup.com/cities/us/mn/champlin/;Champlin;champlin
+http://www.meetup.com/cities/us/mn/chandler/;Chandler;chandler
+http://www.meetup.com/cities/us/mn/chanhassen/;Chanhassen;chanhassen
+http://www.meetup.com/cities/us/mn/chaska/;Chaska;chaska
+http://www.meetup.com/cities/us/mn/chatfield/;Chatfield;chatfield
+http://www.meetup.com/cities/us/mn/chisago_city/;Chisago City;chisago_city
+http://www.meetup.com/cities/us/mn/chisholm/;Chisholm;chisholm
+http://www.meetup.com/cities/us/mn/chokio/;Chokio;chokio
+http://www.meetup.com/cities/us/mn/circle_pines/;Circle Pines;circle_pines
+http://www.meetup.com/cities/us/mn/clara_city/;Clara City;clara_city
+http://www.meetup.com/cities/us/mn/claremont/;Claremont;claremont
+http://www.meetup.com/cities/us/mn/clarissa/;Clarissa;clarissa
+http://www.meetup.com/cities/us/mn/clarkfield/;Clarkfield;clarkfield
+http://www.meetup.com/cities/us/mn/clarks_grove/;Clarks Grove;clarks_grove
+http://www.meetup.com/cities/us/mn/clearbrook/;Clearbrook;clearbrook
+http://www.meetup.com/cities/us/mn/clear_lake/;Clear Lake;clear_lake
+http://www.meetup.com/cities/us/mn/clearwater/;Clearwater;clearwater
+http://www.meetup.com/cities/us/mn/clements/;Clements;clements
+http://www.meetup.com/cities/us/mn/cleveland/;Cleveland;cleveland
+http://www.meetup.com/cities/us/mn/climax/;Climax;climax
+http://www.meetup.com/cities/us/mn/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/mn/clitherall/;Clitherall;clitherall
+http://www.meetup.com/cities/us/mn/clontarf/;Clontarf;clontarf
+http://www.meetup.com/cities/us/mn/cloquet/;Cloquet;cloquet
+http://www.meetup.com/cities/us/mn/cohasset/;Cohasset;cohasset
+http://www.meetup.com/cities/us/mn/cokato/;Cokato;cokato
+http://www.meetup.com/cities/us/mn/cold_spring/;Cold Spring;cold_spring
+http://www.meetup.com/cities/us/mn/coleraine/;Coleraine;coleraine
+http://www.meetup.com/cities/us/mn/collegeville/;Collegeville;collegeville
+http://www.meetup.com/cities/us/mn/cologne/;Cologne;cologne
+http://www.meetup.com/cities/us/mn/comfrey/;Comfrey;comfrey
+http://www.meetup.com/cities/us/mn/comstock/;Comstock;comstock
+http://www.meetup.com/cities/us/mn/conger/;Conger;conger
+http://www.meetup.com/cities/us/mn/cook/;Cook;cook
+http://www.meetup.com/cities/us/mn/correll/;Correll;correll
+http://www.meetup.com/cities/us/mn/cosmos/;Cosmos;cosmos
+http://www.meetup.com/cities/us/mn/cottage_grove/;Cottage Grove;cottage_grove
+http://www.meetup.com/cities/us/mn/cotton/;Cotton;cotton
+http://www.meetup.com/cities/us/mn/cottonwood/;Cottonwood;cottonwood
+http://www.meetup.com/cities/us/mn/courtland/;Courtland;courtland
+http://www.meetup.com/cities/us/mn/crane_lake/;Crane Lake;crane_lake
+http://www.meetup.com/cities/us/mn/cromwell/;Cromwell;cromwell
+http://www.meetup.com/cities/us/mn/crookston/;Crookston;crookston
+http://www.meetup.com/cities/us/mn/crosby/;Crosby;crosby
+http://www.meetup.com/cities/us/mn/crosslake/;Crosslake;crosslake
+http://www.meetup.com/cities/us/mn/crystal_bay/;Crystal Bay;crystal_bay
+http://www.meetup.com/cities/us/mn/currie/;Currie;currie
+http://www.meetup.com/cities/us/mn/cushing/;Cushing;cushing
+http://www.meetup.com/cities/us/mn/cyrus/;Cyrus;cyrus
+http://www.meetup.com/cities/us/mn/dakota/;Dakota;dakota
+http://www.meetup.com/cities/us/mn/dalbo/;Dalbo;dalbo
+http://www.meetup.com/cities/us/mn/dalton/;Dalton;dalton
+http://www.meetup.com/cities/us/mn/danube/;Danube;danube
+http://www.meetup.com/cities/us/mn/danvers/;Danvers;danvers
+http://www.meetup.com/cities/us/mn/darfur/;Darfur;darfur
+http://www.meetup.com/cities/us/mn/darwin/;Darwin;darwin
+http://www.meetup.com/cities/us/mn/dassel/;Dassel;dassel
+http://www.meetup.com/cities/us/mn/dawson/;Dawson;dawson
+http://www.meetup.com/cities/us/mn/dayton/;Dayton;dayton
+http://www.meetup.com/cities/us/mn/deer_creek/;Deer Creek;deer_creek
+http://www.meetup.com/cities/us/mn/deer_river/;Deer River;deer_river
+http://www.meetup.com/cities/us/mn/deerwood/;Deerwood;deerwood
+http://www.meetup.com/cities/us/mn/delano/;Delano;delano
+http://www.meetup.com/cities/us/mn/delavan/;Delavan;delavan
+http://www.meetup.com/cities/us/mn/dennison/;Dennison;dennison
+http://www.meetup.com/cities/us/mn/dent/;Dent;dent
+http://www.meetup.com/cities/us/mn/detroit_lakes/;Detroit Lakes;detroit_lakes
+http://www.meetup.com/cities/us/mn/dexter/;Dexter;dexter
+http://www.meetup.com/cities/us/mn/dilworth/;Dilworth;dilworth
+http://www.meetup.com/cities/us/mn/dodge_center/;Dodge Center;dodge_center
+http://www.meetup.com/cities/us/mn/donaldson/;Donaldson;donaldson
+http://www.meetup.com/cities/us/mn/donnelly/;Donnelly;donnelly
+http://www.meetup.com/cities/us/mn/dover/;Dover;dover
+http://www.meetup.com/cities/us/mn/dovray/;Dovray;dovray
+http://www.meetup.com/cities/us/mn/duluth/;Duluth;duluth
+http://www.meetup.com/cities/us/mn/dumont/;Dumont;dumont
+http://www.meetup.com/cities/us/mn/dundas/;Dundas;dundas
+http://www.meetup.com/cities/us/mn/dunnell/;Dunnell;dunnell
+http://www.meetup.com/cities/us/mn/eagle_bend/;Eagle Bend;eagle_bend
+http://www.meetup.com/cities/us/mn/eagle_lake/;Eagle Lake;eagle_lake
+http://www.meetup.com/cities/us/mn/east_grand_forks/;East Grand Forks;east_grand_forks
+http://www.meetup.com/cities/us/mn/easton/;Easton;easton
+http://www.meetup.com/cities/us/mn/echo/;Echo;echo
+http://www.meetup.com/cities/us/mn/eden_prairie/;Eden Prairie;eden_prairie
+http://www.meetup.com/cities/us/mn/eden_valley/;Eden Valley;eden_valley
+http://www.meetup.com/cities/us/mn/edgerton/;Edgerton;edgerton
+http://www.meetup.com/cities/us/mn/effie/;Effie;effie
+http://www.meetup.com/cities/us/mn/eitzen/;Eitzen;eitzen
+http://www.meetup.com/cities/us/mn/elbow_lake/;Elbow Lake;elbow_lake
+http://www.meetup.com/cities/us/mn/elgin/;Elgin;elgin
+http://www.meetup.com/cities/us/mn/elizabeth/;Elizabeth;elizabeth
+http://www.meetup.com/cities/us/mn/elko/;Elko;elko
+http://www.meetup.com/cities/us/mn/elk_river/;Elk River;elk_river
+http://www.meetup.com/cities/us/mn/elkton/;Elkton;elkton
+http://www.meetup.com/cities/us/mn/ellendale/;Ellendale;ellendale
+http://www.meetup.com/cities/us/mn/ellsworth/;Ellsworth;ellsworth
+http://www.meetup.com/cities/us/mn/elmore/;Elmore;elmore
+http://www.meetup.com/cities/us/mn/elrosa/;Elrosa;elrosa
+http://www.meetup.com/cities/us/mn/ely/;Ely;ely
+http://www.meetup.com/cities/us/mn/elysian/;Elysian;elysian
+http://www.meetup.com/cities/us/mn/embarrass/;Embarrass;embarrass
+http://www.meetup.com/cities/us/mn/emily/;Emily;emily
+http://www.meetup.com/cities/us/mn/emmons/;Emmons;emmons
+http://www.meetup.com/cities/us/mn/erhard/;Erhard;erhard
+http://www.meetup.com/cities/us/mn/erskine/;Erskine;erskine
+http://www.meetup.com/cities/us/mn/esko/;Esko;esko
+http://www.meetup.com/cities/us/mn/essig/;Essig;essig
+http://www.meetup.com/cities/us/mn/euclid/;Euclid;euclid
+http://www.meetup.com/cities/us/mn/evansville/;Evansville;evansville
+http://www.meetup.com/cities/us/mn/eveleth/;Eveleth;eveleth
+http://www.meetup.com/cities/us/mn/excelsior/;Excelsior;excelsior
+http://www.meetup.com/cities/us/mn/eyota/;Eyota;eyota
+http://www.meetup.com/cities/us/mn/fairfax/;Fairfax;fairfax
+http://www.meetup.com/cities/us/mn/fairmont/;Fairmont;fairmont
+http://www.meetup.com/cities/us/mn/faribault/;Faribault;faribault
+http://www.meetup.com/cities/us/mn/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/mn/farwell/;Farwell;farwell
+http://www.meetup.com/cities/us/mn/federal_dam/;Federal Dam;federal_dam
+http://www.meetup.com/cities/us/mn/felton/;Felton;felton
+http://www.meetup.com/cities/us/mn/fergus_falls/;Fergus Falls;fergus_falls
+http://www.meetup.com/cities/us/mn/fertile/;Fertile;fertile
+http://www.meetup.com/cities/us/mn/fifty_lakes/;Fifty Lakes;fifty_lakes
+http://www.meetup.com/cities/us/mn/finland/;Finland;finland
+http://www.meetup.com/cities/us/mn/finlayson/;Finlayson;finlayson
+http://www.meetup.com/cities/us/mn/fisher/;Fisher;fisher
+http://www.meetup.com/cities/us/mn/flensburg/;Flensburg;flensburg
+http://www.meetup.com/cities/us/mn/flom/;Flom;flom
+http://www.meetup.com/cities/us/mn/floodwood/;Floodwood;floodwood
+http://www.meetup.com/cities/us/mn/foley/;Foley;foley
+http://www.meetup.com/cities/us/mn/forbes/;Forbes;forbes
+http://www.meetup.com/cities/us/mn/forest_lake/;Forest Lake;forest_lake
+http://www.meetup.com/cities/us/mn/foreston/;Foreston;foreston
+http://www.meetup.com/cities/us/mn/fort_ripley/;Fort Ripley;fort_ripley
+http://www.meetup.com/cities/us/mn/fosston/;Fosston;fosston
+http://www.meetup.com/cities/us/mn/fountain/;Fountain;fountain
+http://www.meetup.com/cities/us/mn/foxhome/;Foxhome;foxhome
+http://www.meetup.com/cities/us/mn/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/mn/frazee/;Frazee;frazee
+http://www.meetup.com/cities/us/mn/freeborn/;Freeborn;freeborn
+http://www.meetup.com/cities/us/mn/freeport/;Freeport;freeport
+http://www.meetup.com/cities/us/mn/frontenac/;Frontenac;frontenac
+http://www.meetup.com/cities/us/mn/frost/;Frost;frost
+http://www.meetup.com/cities/us/mn/fulda/;Fulda;fulda
+http://www.meetup.com/cities/us/mn/garden_city/;Garden City;garden_city
+http://www.meetup.com/cities/us/mn/garfield/;Garfield;garfield
+http://www.meetup.com/cities/us/mn/garrison/;Garrison;garrison
+http://www.meetup.com/cities/us/mn/garvin/;Garvin;garvin
+http://www.meetup.com/cities/us/mn/gary/;Gary;gary
+http://www.meetup.com/cities/us/mn/gatzke/;Gatzke;gatzke
+http://www.meetup.com/cities/us/mn/gaylord/;Gaylord;gaylord
+http://www.meetup.com/cities/us/mn/geneva/;Geneva;geneva
+http://www.meetup.com/cities/us/mn/georgetown/;Georgetown;georgetown
+http://www.meetup.com/cities/us/mn/ghent/;Ghent;ghent
+http://www.meetup.com/cities/us/mn/gibbon/;Gibbon;gibbon
+http://www.meetup.com/cities/us/mn/gilbert/;Gilbert;gilbert
+http://www.meetup.com/cities/us/mn/gilman/;Gilman;gilman
+http://www.meetup.com/cities/us/mn/glencoe/;Glencoe;glencoe
+http://www.meetup.com/cities/us/mn/glenville/;Glenville;glenville
+http://www.meetup.com/cities/us/mn/glenwood/;Glenwood;glenwood
+http://www.meetup.com/cities/us/mn/glyndon/;Glyndon;glyndon
+http://www.meetup.com/cities/us/mn/gonvick/;Gonvick;gonvick
+http://www.meetup.com/cities/us/mn/goodhue/;Goodhue;goodhue
+http://www.meetup.com/cities/us/mn/goodland/;Goodland;goodland
+http://www.meetup.com/cities/us/mn/goodridge/;Goodridge;goodridge
+http://www.meetup.com/cities/us/mn/good_thunder/;Good Thunder;good_thunder
+http://www.meetup.com/cities/us/mn/graceville/;Graceville;graceville
+http://www.meetup.com/cities/us/mn/granada/;Granada;granada
+http://www.meetup.com/cities/us/mn/grand_marais/;Grand Marais;grand_marais
+http://www.meetup.com/cities/us/mn/grand_meadow/;Grand Meadow;grand_meadow
+http://www.meetup.com/cities/us/mn/grand_portage/;Grand Portage;grand_portage
+http://www.meetup.com/cities/us/mn/grand_rapids/;Grand Rapids;grand_rapids
+http://www.meetup.com/cities/us/mn/grandy/;Grandy;grandy
+http://www.meetup.com/cities/us/mn/granite_falls/;Granite Falls;granite_falls
+http://www.meetup.com/cities/us/mn/grasston/;Grasston;grasston
+http://www.meetup.com/cities/us/mn/greenbush/;Greenbush;greenbush
+http://www.meetup.com/cities/us/mn/green_isle/;Green Isle;green_isle
+http://www.meetup.com/cities/us/mn/greenwald/;Greenwald;greenwald
+http://www.meetup.com/cities/us/mn/grey_eagle/;Grey Eagle;grey_eagle
+http://www.meetup.com/cities/us/mn/grove_city/;Grove City;grove_city
+http://www.meetup.com/cities/us/mn/grygla/;Grygla;grygla
+http://www.meetup.com/cities/us/mn/gully/;Gully;gully
+http://www.meetup.com/cities/us/mn/hackensack/;Hackensack;hackensack
+http://www.meetup.com/cities/us/mn/hallock/;Hallock;hallock
+http://www.meetup.com/cities/us/mn/halma/;Halma;halma
+http://www.meetup.com/cities/us/mn/halstad/;Halstad;halstad
+http://www.meetup.com/cities/us/mn/hamburg/;Hamburg;hamburg
+http://www.meetup.com/cities/us/mn/hamel/;Hamel;hamel
+http://www.meetup.com/cities/us/mn/hampton/;Hampton;hampton
+http://www.meetup.com/cities/us/mn/hancock/;Hancock;hancock
+http://www.meetup.com/cities/us/mn/hanley_falls/;Hanley Falls;hanley_falls
+http://www.meetup.com/cities/us/mn/hanover/;Hanover;hanover
+http://www.meetup.com/cities/us/mn/hanska/;Hanska;hanska
+http://www.meetup.com/cities/us/mn/hardwick/;Hardwick;hardwick
+http://www.meetup.com/cities/us/mn/harmony/;Harmony;harmony
+http://www.meetup.com/cities/us/mn/harris/;Harris;harris
+http://www.meetup.com/cities/us/mn/hartland/;Hartland;hartland
+http://www.meetup.com/cities/us/mn/hastings/;Hastings;hastings
+http://www.meetup.com/cities/us/mn/hawley/;Hawley;hawley
+http://www.meetup.com/cities/us/mn/hayfield/;Hayfield;hayfield
+http://www.meetup.com/cities/us/mn/hayward/;Hayward;hayward
+http://www.meetup.com/cities/us/mn/hector/;Hector;hector
+http://www.meetup.com/cities/us/mn/henderson/;Henderson;henderson
+http://www.meetup.com/cities/us/mn/hendricks/;Hendricks;hendricks
+http://www.meetup.com/cities/us/mn/hendrum/;Hendrum;hendrum
+http://www.meetup.com/cities/us/mn/henning/;Henning;henning
+http://www.meetup.com/cities/us/mn/henriette/;Henriette;henriette
+http://www.meetup.com/cities/us/mn/herman/;Herman;herman
+http://www.meetup.com/cities/us/mn/heron_lake/;Heron Lake;heron_lake
+http://www.meetup.com/cities/us/mn/hewitt/;Hewitt;hewitt
+http://www.meetup.com/cities/us/mn/hibbing/;Hibbing;hibbing
+http://www.meetup.com/cities/us/mn/hill_city/;Hill City;hill_city
+http://www.meetup.com/cities/us/mn/hillman/;Hillman;hillman
+http://www.meetup.com/cities/us/mn/hills/;Hills;hills
+http://www.meetup.com/cities/us/mn/hinckley/;Hinckley;hinckley
+http://www.meetup.com/cities/us/mn/hines/;Hines;hines
+http://www.meetup.com/cities/us/mn/hitterdal/;Hitterdal;hitterdal
+http://www.meetup.com/cities/us/mn/hoffman/;Hoffman;hoffman
+http://www.meetup.com/cities/us/mn/hokah/;Hokah;hokah
+http://www.meetup.com/cities/us/mn/holdingford/;Holdingford;holdingford
+http://www.meetup.com/cities/us/mn/holland/;Holland;holland
+http://www.meetup.com/cities/us/mn/hollandale/;Hollandale;hollandale
+http://www.meetup.com/cities/us/mn/holloway/;Holloway;holloway
+http://www.meetup.com/cities/us/mn/holmes_city/;Holmes City;holmes_city
+http://www.meetup.com/cities/us/mn/holyoke/;Holyoke;holyoke
+http://www.meetup.com/cities/us/mn/homer/;Homer;homer
+http://www.meetup.com/cities/us/mn/hope/;Hope;hope
+http://www.meetup.com/cities/us/mn/hopkins/;Hopkins;hopkins
+http://www.meetup.com/cities/us/mn/houston/;Houston;houston
+http://www.meetup.com/cities/us/mn/hovland/;Hovland;hovland
+http://www.meetup.com/cities/us/mn/howard_lake/;Howard Lake;howard_lake
+http://www.meetup.com/cities/us/mn/hoyt_lakes/;Hoyt Lakes;hoyt_lakes
+http://www.meetup.com/cities/us/mn/hugo/;Hugo;hugo
+http://www.meetup.com/cities/us/mn/humboldt/;Humboldt;humboldt
+http://www.meetup.com/cities/us/mn/huntley/;Huntley;huntley
+http://www.meetup.com/cities/us/mn/hutchinson/;Hutchinson;hutchinson
+http://www.meetup.com/cities/us/mn/ihlen/;Ihlen;ihlen
+http://www.meetup.com/cities/us/mn/international_falls/;International Falls;international_falls
+http://www.meetup.com/cities/us/mn/inver_grove_heights/;Inver Grove Heights;inver_grove_heights
+http://www.meetup.com/cities/us/mn/iona/;Iona;iona
+http://www.meetup.com/cities/us/mn/iron/;Iron;iron
+http://www.meetup.com/cities/us/mn/ironton/;Ironton;ironton
+http://www.meetup.com/cities/us/mn/isabella/;Isabella;isabella
+http://www.meetup.com/cities/us/mn/isanti/;Isanti;isanti
+http://www.meetup.com/cities/us/mn/isle/;Isle;isle
+http://www.meetup.com/cities/us/mn/ivanhoe/;Ivanhoe;ivanhoe
+http://www.meetup.com/cities/us/mn/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/mn/jacobson/;Jacobson;jacobson
+http://www.meetup.com/cities/us/mn/janesville/;Janesville;janesville
+http://www.meetup.com/cities/us/mn/jasper/;Jasper;jasper
+http://www.meetup.com/cities/us/mn/jeffers/;Jeffers;jeffers
+http://www.meetup.com/cities/us/mn/jenkins/;Jenkins;jenkins
+http://www.meetup.com/cities/us/mn/jordan/;Jordan;jordan
+http://www.meetup.com/cities/us/mn/kabetogama/;Kabetogama;kabetogama
+http://www.meetup.com/cities/us/mn/kanaranzi/;Kanaranzi;kanaranzi
+http://www.meetup.com/cities/us/mn/kandiyohi/;Kandiyohi;kandiyohi
+http://www.meetup.com/cities/us/mn/karlstad/;Karlstad;karlstad
+http://www.meetup.com/cities/us/mn/kasota/;Kasota;kasota
+http://www.meetup.com/cities/us/mn/kasson/;Kasson;kasson
+http://www.meetup.com/cities/us/mn/keewatin/;Keewatin;keewatin
+http://www.meetup.com/cities/us/mn/kelliher/;Kelliher;kelliher
+http://www.meetup.com/cities/us/mn/kellogg/;Kellogg;kellogg
+http://www.meetup.com/cities/us/mn/kennedy/;Kennedy;kennedy
+http://www.meetup.com/cities/us/mn/kenneth/;Kenneth;kenneth
+http://www.meetup.com/cities/us/mn/kensington/;Kensington;kensington
+http://www.meetup.com/cities/us/mn/kent/;Kent;kent
+http://www.meetup.com/cities/us/mn/kenyon/;Kenyon;kenyon
+http://www.meetup.com/cities/us/mn/kerkhoven/;Kerkhoven;kerkhoven
+http://www.meetup.com/cities/us/mn/kerrick/;Kerrick;kerrick
+http://www.meetup.com/cities/us/mn/kettle_river/;Kettle River;kettle_river
+http://www.meetup.com/cities/us/mn/kiester/;Kiester;kiester
+http://www.meetup.com/cities/us/mn/kilkenny/;Kilkenny;kilkenny
+http://www.meetup.com/cities/us/mn/kimball/;Kimball;kimball
+http://www.meetup.com/cities/us/mn/kinney/;Kinney;kinney
+http://www.meetup.com/cities/us/mn/knife_river/;Knife River;knife_river
+http://www.meetup.com/cities/us/mn/la_crescent/;La Crescent;la_crescent
+http://www.meetup.com/cities/us/mn/lafayette/;Lafayette;lafayette
+http://www.meetup.com/cities/us/mn/lake_benton/;Lake Benton;lake_benton
+http://www.meetup.com/cities/us/mn/lake_bronson/;Lake Bronson;lake_bronson
+http://www.meetup.com/cities/us/mn/lake_city/;Lake City;lake_city
+http://www.meetup.com/cities/us/mn/lake_crystal/;Lake Crystal;lake_crystal
+http://www.meetup.com/cities/us/mn/lake_elmo/;Lake Elmo;lake_elmo
+http://www.meetup.com/cities/us/mn/lakefield/;Lakefield;lakefield
+http://www.meetup.com/cities/us/mn/lake_george/;Lake George;lake_george
+http://www.meetup.com/cities/us/mn/lake_hubert/;Lake Hubert;lake_hubert
+http://www.meetup.com/cities/us/mn/lakeland/;Lakeland;lakeland
+http://www.meetup.com/cities/us/mn/lake_lillian/;Lake Lillian;lake_lillian
+http://www.meetup.com/cities/us/mn/lake_park/;Lake Park;lake_park
+http://www.meetup.com/cities/us/mn/lakeville/;Lakeville;lakeville
+http://www.meetup.com/cities/us/mn/lake_wilson/;Lake Wilson;lake_wilson
+http://www.meetup.com/cities/us/mn/lamberton/;Lamberton;lamberton
+http://www.meetup.com/cities/us/mn/lancaster/;Lancaster;lancaster
+http://www.meetup.com/cities/us/mn/lanesboro/;Lanesboro;lanesboro
+http://www.meetup.com/cities/us/mn/lansing/;Lansing;lansing
+http://www.meetup.com/cities/us/mn/laporte/;Laporte;laporte
+http://www.meetup.com/cities/us/mn/la_salle/;La Salle;la_salle
+http://www.meetup.com/cities/us/mn/lastrup/;Lastrup;lastrup
+http://www.meetup.com/cities/us/mn/le_center/;Le Center;le_center
+http://www.meetup.com/cities/us/mn/lengby/;Lengby;lengby
+http://www.meetup.com/cities/us/mn/leonard/;Leonard;leonard
+http://www.meetup.com/cities/us/mn/leota/;Leota;leota
+http://www.meetup.com/cities/us/mn/le_roy/;Le Roy;le_roy
+http://www.meetup.com/cities/us/mn/lester_prairie/;Lester Prairie;lester_prairie
+http://www.meetup.com/cities/us/mn/le_sueur/;Le Sueur;le_sueur
+http://www.meetup.com/cities/us/mn/lewiston/;Lewiston;lewiston
+http://www.meetup.com/cities/us/mn/lewisville/;Lewisville;lewisville
+http://www.meetup.com/cities/us/mn/lindstrom/;Lindstrom;lindstrom
+http://www.meetup.com/cities/us/mn/lismore/;Lismore;lismore
+http://www.meetup.com/cities/us/mn/litchfield/;Litchfield;litchfield
+http://www.meetup.com/cities/us/mn/little_falls/;Little Falls;little_falls
+http://www.meetup.com/cities/us/mn/littlefork/;Littlefork;littlefork
+http://www.meetup.com/cities/us/mn/loman/;Loman;loman
+http://www.meetup.com/cities/us/mn/long_lake/;Long Lake;long_lake
+http://www.meetup.com/cities/us/mn/long_prairie/;Long Prairie;long_prairie
+http://www.meetup.com/cities/us/mn/longville/;Longville;longville
+http://www.meetup.com/cities/us/mn/lonsdale/;Lonsdale;lonsdale
+http://www.meetup.com/cities/us/mn/loretto/;Loretto;loretto
+http://www.meetup.com/cities/us/mn/lowry/;Lowry;lowry
+http://www.meetup.com/cities/us/mn/lucan/;Lucan;lucan
+http://www.meetup.com/cities/us/mn/lutsen/;Lutsen;lutsen
+http://www.meetup.com/cities/us/mn/luverne/;Luverne;luverne
+http://www.meetup.com/cities/us/mn/lyle/;Lyle;lyle
+http://www.meetup.com/cities/us/mn/lynd/;Lynd;lynd
+http://www.meetup.com/cities/us/mn/mabel/;Mabel;mabel
+http://www.meetup.com/cities/us/mn/madelia/;Madelia;madelia
+http://www.meetup.com/cities/us/mn/madison/;Madison;madison
+http://www.meetup.com/cities/us/mn/madison_lake/;Madison Lake;madison_lake
+http://www.meetup.com/cities/us/mn/magnolia/;Magnolia;magnolia
+http://www.meetup.com/cities/us/mn/mahnomen/;Mahnomen;mahnomen
+http://www.meetup.com/cities/us/mn/makinen/;Makinen;makinen
+http://www.meetup.com/cities/us/mn/mankato/;Mankato;mankato
+http://www.meetup.com/cities/us/mn/mantorville/;Mantorville;mantorville
+http://www.meetup.com/cities/us/mn/maple_lake/;Maple Lake;maple_lake
+http://www.meetup.com/cities/us/mn/maple_plain/;Maple Plain;maple_plain
+http://www.meetup.com/cities/us/mn/mapleton/;Mapleton;mapleton
+http://www.meetup.com/cities/us/mn/marble/;Marble;marble
+http://www.meetup.com/cities/us/mn/marcell/;Marcell;marcell
+http://www.meetup.com/cities/us/mn/margie/;Margie;margie
+http://www.meetup.com/cities/us/mn/marietta/;Marietta;marietta
+http://www.meetup.com/cities/us/mn/marine_on_saint_croix/;Marine on Saint Croix;marine_on_saint_croix
+http://www.meetup.com/cities/us/mn/marshall/;Marshall;marshall
+http://www.meetup.com/cities/us/mn/max/;Max;max
+http://www.meetup.com/cities/us/mn/mayer/;Mayer;mayer
+http://www.meetup.com/cities/us/mn/maynard/;Maynard;maynard
+http://www.meetup.com/cities/us/mn/mazeppa/;Mazeppa;mazeppa
+http://www.meetup.com/cities/us/mn/mc_grath/;Mc Grath;mc_grath
+http://www.meetup.com/cities/us/mn/mcgregor/;McGregor;mcgregor
+http://www.meetup.com/cities/us/mn/mcintosh/;McIntosh;mcintosh
+http://www.meetup.com/cities/us/mn/meadowlands/;Meadowlands;meadowlands
+http://www.meetup.com/cities/us/mn/medford/;Medford;medford
+http://www.meetup.com/cities/us/mn/melrose/;Melrose;melrose
+http://www.meetup.com/cities/us/mn/melrude/;Melrude;melrude
+http://www.meetup.com/cities/us/mn/menahga/;Menahga;menahga
+http://www.meetup.com/cities/us/mn/mendota/;Mendota;mendota
+http://www.meetup.com/cities/us/mn/mentor/;Mentor;mentor
+http://www.meetup.com/cities/us/mn/merrifield/;Merrifield;merrifield
+http://www.meetup.com/cities/us/mn/middle_river/;Middle River;middle_river
+http://www.meetup.com/cities/us/mn/milaca/;Milaca;milaca
+http://www.meetup.com/cities/us/mn/milan/;Milan;milan
+http://www.meetup.com/cities/us/mn/millville/;Millville;millville
+http://www.meetup.com/cities/us/mn/milroy/;Milroy;milroy
+http://www.meetup.com/cities/us/mn/miltona/;Miltona;miltona
+http://www.meetup.com/cities/us/mn/minneapolis/;Minneapolis;minneapolis
+http://www.meetup.com/cities/us/mn/minneota/;Minneota;minneota
+http://www.meetup.com/cities/us/mn/minnesota_city/;Minnesota City;minnesota_city
+http://www.meetup.com/cities/us/mn/minnesota_lake/;Minnesota Lake;minnesota_lake
+http://www.meetup.com/cities/us/mn/minnetonka/;Minnetonka;minnetonka
+http://www.meetup.com/cities/us/mn/minnetonka_beach/;Minnetonka Beach;minnetonka_beach
+http://www.meetup.com/cities/us/mn/mizpah/;Mizpah;mizpah
+http://www.meetup.com/cities/us/mn/montevideo/;Montevideo;montevideo
+http://www.meetup.com/cities/us/mn/montgomery/;Montgomery;montgomery
+http://www.meetup.com/cities/us/mn/monticello/;Monticello;monticello
+http://www.meetup.com/cities/us/mn/montrose/;Montrose;montrose
+http://www.meetup.com/cities/us/mn/moorhead/;Moorhead;moorhead
+http://www.meetup.com/cities/us/mn/moose_lake/;Moose Lake;moose_lake
+http://www.meetup.com/cities/us/mn/mora/;Mora;mora
+http://www.meetup.com/cities/us/mn/morgan/;Morgan;morgan
+http://www.meetup.com/cities/us/mn/morris/;Morris;morris
+http://www.meetup.com/cities/us/mn/morristown/;Morristown;morristown
+http://www.meetup.com/cities/us/mn/morton/;Morton;morton
+http://www.meetup.com/cities/us/mn/motley/;Motley;motley
+http://www.meetup.com/cities/us/mn/mound/;Mound;mound
+http://www.meetup.com/cities/us/mn/mountain_iron/;Mountain Iron;mountain_iron
+http://www.meetup.com/cities/us/mn/mountain_lake/;Mountain Lake;mountain_lake
+http://www.meetup.com/cities/us/mn/murdock/;Murdock;murdock
+http://www.meetup.com/cities/us/mn/nashua/;Nashua;nashua
+http://www.meetup.com/cities/us/mn/nashwauk/;Nashwauk;nashwauk
+http://www.meetup.com/cities/us/mn/navarre/;Navarre;navarre
+http://www.meetup.com/cities/us/mn/naytahwaush/;Naytahwaush;naytahwaush
+http://www.meetup.com/cities/us/mn/nelson/;Nelson;nelson
+http://www.meetup.com/cities/us/mn/nerstrand/;Nerstrand;nerstrand
+http://www.meetup.com/cities/us/mn/nett_lake/;Nett Lake;nett_lake
+http://www.meetup.com/cities/us/mn/nevis/;Nevis;nevis
+http://www.meetup.com/cities/us/mn/new_auburn/;New Auburn;new_auburn
+http://www.meetup.com/cities/us/mn/newfolden/;Newfolden;newfolden
+http://www.meetup.com/cities/us/mn/new_germany/;New Germany;new_germany
+http://www.meetup.com/cities/us/mn/new_london/;New London;new_london
+http://www.meetup.com/cities/us/mn/new_market/;New Market;new_market
+http://www.meetup.com/cities/us/mn/new_munich/;New Munich;new_munich
+http://www.meetup.com/cities/us/mn/newport/;Newport;newport
+http://www.meetup.com/cities/us/mn/new_prague/;New Prague;new_prague
+http://www.meetup.com/cities/us/mn/new_richland/;New Richland;new_richland
+http://www.meetup.com/cities/us/mn/new_ulm/;New Ulm;new_ulm
+http://www.meetup.com/cities/us/mn/new_york_mills/;New York Mills;new_york_mills
+http://www.meetup.com/cities/us/mn/nicollet/;Nicollet;nicollet
+http://www.meetup.com/cities/us/mn/nielsville/;Nielsville;nielsville
+http://www.meetup.com/cities/us/mn/nimrod/;Nimrod;nimrod
+http://www.meetup.com/cities/us/mn/nisswa/;Nisswa;nisswa
+http://www.meetup.com/cities/us/mn/norcross/;Norcross;norcross
+http://www.meetup.com/cities/us/mn/north_branch/;North Branch;north_branch
+http://www.meetup.com/cities/us/mn/northfield/;Northfield;northfield
+http://www.meetup.com/cities/us/mn/northome/;Northome;northome
+http://www.meetup.com/cities/us/mn/northrop/;Northrop;northrop
+http://www.meetup.com/cities/us/mn/norwood/;Norwood;norwood
+http://www.meetup.com/cities/us/mn/norwood_young_america/;Norwood Young America;norwood_young_america
+http://www.meetup.com/cities/us/mn/noyes/;Noyes;noyes
+http://www.meetup.com/cities/us/mn/oak_island/;Oak Island;oak_island
+http://www.meetup.com/cities/us/mn/oak_park/;Oak Park;oak_park
+http://www.meetup.com/cities/us/mn/odessa/;Odessa;odessa
+http://www.meetup.com/cities/us/mn/odin/;Odin;odin
+http://www.meetup.com/cities/us/mn/ogema/;Ogema;ogema
+http://www.meetup.com/cities/us/mn/ogilvie/;Ogilvie;ogilvie
+http://www.meetup.com/cities/us/mn/okabena/;Okabena;okabena
+http://www.meetup.com/cities/us/mn/oklee/;Oklee;oklee
+http://www.meetup.com/cities/us/mn/olivia/;Olivia;olivia
+http://www.meetup.com/cities/us/mn/onamia/;Onamia;onamia
+http://www.meetup.com/cities/us/mn/ormsby/;Ormsby;ormsby
+http://www.meetup.com/cities/us/mn/oronoco/;Oronoco;oronoco
+http://www.meetup.com/cities/us/mn/orr/;Orr;orr
+http://www.meetup.com/cities/us/mn/ortonville/;Ortonville;ortonville
+http://www.meetup.com/cities/us/mn/osage/;Osage;osage
+http://www.meetup.com/cities/us/mn/osakis/;Osakis;osakis
+http://www.meetup.com/cities/us/mn/oslo/;Oslo;oslo
+http://www.meetup.com/cities/us/mn/osseo/;Osseo;osseo
+http://www.meetup.com/cities/us/mn/ostrander/;Ostrander;ostrander
+http://www.meetup.com/cities/us/mn/ottertail/;Ottertail;ottertail
+http://www.meetup.com/cities/us/mn/outing/;Outing;outing
+http://www.meetup.com/cities/us/mn/owatonna/;Owatonna;owatonna
+http://www.meetup.com/cities/us/mn/palisade/;Palisade;palisade
+http://www.meetup.com/cities/us/mn/parkers_prairie/;Parkers Prairie;parkers_prairie
+http://www.meetup.com/cities/us/mn/park_rapids/;Park Rapids;park_rapids
+http://www.meetup.com/cities/us/mn/paynesville/;Paynesville;paynesville
+http://www.meetup.com/cities/us/mn/pease/;Pease;pease
+http://www.meetup.com/cities/us/mn/pelican_rapids/;Pelican Rapids;pelican_rapids
+http://www.meetup.com/cities/us/mn/pemberton/;Pemberton;pemberton
+http://www.meetup.com/cities/us/mn/pengilly/;Pengilly;pengilly
+http://www.meetup.com/cities/us/mn/pennington/;Pennington;pennington
+http://www.meetup.com/cities/us/mn/pennock/;Pennock;pennock
+http://www.meetup.com/cities/us/mn/pequot_lakes/;Pequot Lakes;pequot_lakes
+http://www.meetup.com/cities/us/mn/perham/;Perham;perham
+http://www.meetup.com/cities/us/mn/perley/;Perley;perley
+http://www.meetup.com/cities/us/mn/peterson/;Peterson;peterson
+http://www.meetup.com/cities/us/mn/pierz/;Pierz;pierz
+http://www.meetup.com/cities/us/mn/pillager/;Pillager;pillager
+http://www.meetup.com/cities/us/mn/pine_city/;Pine City;pine_city
+http://www.meetup.com/cities/us/mn/pine_island/;Pine Island;pine_island
+http://www.meetup.com/cities/us/mn/pine_river/;Pine River;pine_river
+http://www.meetup.com/cities/us/mn/pipestone/;Pipestone;pipestone
+http://www.meetup.com/cities/us/mn/plainview/;Plainview;plainview
+http://www.meetup.com/cities/us/mn/plato/;Plato;plato
+http://www.meetup.com/cities/us/mn/plummer/;Plummer;plummer
+http://www.meetup.com/cities/us/mn/ponemah/;Ponemah;ponemah
+http://www.meetup.com/cities/us/mn/ponsford/;Ponsford;ponsford
+http://www.meetup.com/cities/us/mn/porter/;Porter;porter
+http://www.meetup.com/cities/us/mn/preston/;Preston;preston
+http://www.meetup.com/cities/us/mn/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/mn/prinsburg/;Prinsburg;prinsburg
+http://www.meetup.com/cities/us/mn/prior_lake/;Prior Lake;prior_lake
+http://www.meetup.com/cities/us/mn/puposky/;Puposky;puposky
+http://www.meetup.com/cities/us/mn/racine/;Racine;racine
+http://www.meetup.com/cities/us/mn/randall/;Randall;randall
+http://www.meetup.com/cities/us/mn/randolph/;Randolph;randolph
+http://www.meetup.com/cities/us/mn/ranier/;Ranier;ranier
+http://www.meetup.com/cities/us/mn/raymond/;Raymond;raymond
+http://www.meetup.com/cities/us/mn/reading/;Reading;reading
+http://www.meetup.com/cities/us/mn/reads_landing/;Reads Landing;reads_landing
+http://www.meetup.com/cities/us/mn/redby/;Redby;redby
+http://www.meetup.com/cities/us/mn/redlake/;Redlake;redlake
+http://www.meetup.com/cities/us/mn/red_lake_falls/;Red Lake Falls;red_lake_falls
+http://www.meetup.com/cities/us/mn/red_wing/;Red Wing;red_wing
+http://www.meetup.com/cities/us/mn/redwood_falls/;Redwood Falls;redwood_falls
+http://www.meetup.com/cities/us/mn/remer/;Remer;remer
+http://www.meetup.com/cities/us/mn/renville/;Renville;renville
+http://www.meetup.com/cities/us/mn/revere/;Revere;revere
+http://www.meetup.com/cities/us/mn/rice/;Rice;rice
+http://www.meetup.com/cities/us/mn/richmond/;Richmond;richmond
+http://www.meetup.com/cities/us/mn/richville/;Richville;richville
+http://www.meetup.com/cities/us/mn/richwood/;Richwood;richwood
+http://www.meetup.com/cities/us/mn/rochert/;Rochert;rochert
+http://www.meetup.com/cities/us/mn/rochester/;Rochester;rochester
+http://www.meetup.com/cities/us/mn/rock_creek/;Rock Creek;rock_creek
+http://www.meetup.com/cities/us/mn/rockford/;Rockford;rockford
+http://www.meetup.com/cities/us/mn/rockville/;Rockville;rockville
+http://www.meetup.com/cities/us/mn/rogers/;Rogers;rogers
+http://www.meetup.com/cities/us/mn/rollingstone/;Rollingstone;rollingstone
+http://www.meetup.com/cities/us/mn/roosevelt/;Roosevelt;roosevelt
+http://www.meetup.com/cities/us/mn/roscoe/;Roscoe;roscoe
+http://www.meetup.com/cities/us/mn/roseau/;Roseau;roseau
+http://www.meetup.com/cities/us/mn/rose_creek/;Rose Creek;rose_creek
+http://www.meetup.com/cities/us/mn/rosemount/;Rosemount;rosemount
+http://www.meetup.com/cities/us/mn/rothsay/;Rothsay;rothsay
+http://www.meetup.com/cities/us/mn/round_lake/;Round Lake;round_lake
+http://www.meetup.com/cities/us/mn/royalton/;Royalton;royalton
+http://www.meetup.com/cities/us/mn/rush_city/;Rush City;rush_city
+http://www.meetup.com/cities/us/mn/rushford/;Rushford;rushford
+http://www.meetup.com/cities/us/mn/rushmore/;Rushmore;rushmore
+http://www.meetup.com/cities/us/mn/russell/;Russell;russell
+http://www.meetup.com/cities/us/mn/ruthton/;Ruthton;ruthton
+http://www.meetup.com/cities/us/mn/sabin/;Sabin;sabin
+http://www.meetup.com/cities/us/mn/sacred_heart/;Sacred Heart;sacred_heart
+http://www.meetup.com/cities/us/mn/saginaw/;Saginaw;saginaw
+http://www.meetup.com/cities/us/mn/saint_bonifacius/;Saint Bonifacius;saint_bonifacius
+http://www.meetup.com/cities/us/mn/saint_charles/;Saint Charles;saint_charles
+http://www.meetup.com/cities/us/mn/saint_clair/;Saint Clair;saint_clair
+http://www.meetup.com/cities/us/mn/saint_cloud/;Saint Cloud;saint_cloud
+http://www.meetup.com/cities/us/mn/saint_francis/;Saint Francis;saint_francis
+http://www.meetup.com/cities/us/mn/saint_hilaire/;Saint Hilaire;saint_hilaire
+http://www.meetup.com/cities/us/mn/saint_james/;Saint James;saint_james
+http://www.meetup.com/cities/us/mn/saint_joseph/;Saint Joseph;saint_joseph
+http://www.meetup.com/cities/us/mn/saint_martin/;Saint Martin;saint_martin
+http://www.meetup.com/cities/us/mn/saint_michael/;Saint Michael;saint_michael
+http://www.meetup.com/cities/us/mn/saint_paul/;Saint Paul;saint_paul
+http://www.meetup.com/cities/us/mn/saint_paul_park/;Saint Paul Park;saint_paul_park
+http://www.meetup.com/cities/us/mn/saint_peter/;Saint Peter;saint_peter
+http://www.meetup.com/cities/us/mn/saint_stephen/;Saint Stephen;saint_stephen
+http://www.meetup.com/cities/us/mn/saint_vincent/;Saint Vincent;saint_vincent
+http://www.meetup.com/cities/us/mn/salol/;Salol;salol
+http://www.meetup.com/cities/us/mn/sanborn/;Sanborn;sanborn
+http://www.meetup.com/cities/us/mn/sandstone/;Sandstone;sandstone
+http://www.meetup.com/cities/us/mn/santiago/;Santiago;santiago
+http://www.meetup.com/cities/us/mn/sargeant/;Sargeant;sargeant
+http://www.meetup.com/cities/us/mn/sartell/;Sartell;sartell
+http://www.meetup.com/cities/us/mn/sauk_centre/;Sauk Centre;sauk_centre
+http://www.meetup.com/cities/us/mn/sauk_rapids/;Sauk Rapids;sauk_rapids
+http://www.meetup.com/cities/us/mn/savage/;Savage;savage
+http://www.meetup.com/cities/us/mn/sawyer/;Sawyer;sawyer
+http://www.meetup.com/cities/us/mn/scandia/;Scandia;scandia
+http://www.meetup.com/cities/us/mn/schroeder/;Schroeder;schroeder
+http://www.meetup.com/cities/us/mn/seaforth/;Seaforth;seaforth
+http://www.meetup.com/cities/us/mn/searles/;Searles;searles
+http://www.meetup.com/cities/us/mn/sebeka/;Sebeka;sebeka
+http://www.meetup.com/cities/us/mn/shafer/;Shafer;shafer
+http://www.meetup.com/cities/us/mn/shakopee/;Shakopee;shakopee
+http://www.meetup.com/cities/us/mn/shelly/;Shelly;shelly
+http://www.meetup.com/cities/us/mn/sherburn/;Sherburn;sherburn
+http://www.meetup.com/cities/us/mn/shevlin/;Shevlin;shevlin
+http://www.meetup.com/cities/us/mn/side_lake/;Side Lake;side_lake
+http://www.meetup.com/cities/us/mn/silver_bay/;Silver Bay;silver_bay
+http://www.meetup.com/cities/us/mn/silver_creek/;Silver Creek;silver_creek
+http://www.meetup.com/cities/us/mn/silver_lake/;Silver Lake;silver_lake
+http://www.meetup.com/cities/us/mn/slayton/;Slayton;slayton
+http://www.meetup.com/cities/us/mn/sleepy_eye/;Sleepy Eye;sleepy_eye
+http://www.meetup.com/cities/us/mn/solway/;Solway;solway
+http://www.meetup.com/cities/us/mn/soudan/;Soudan;soudan
+http://www.meetup.com/cities/us/mn/south_haven/;South Haven;south_haven
+http://www.meetup.com/cities/us/mn/south_international_falls/;South International Falls;south_international_falls
+http://www.meetup.com/cities/us/mn/south_saint_paul/;South Saint Paul;south_saint_paul
+http://www.meetup.com/cities/us/mn/spicer/;Spicer;spicer
+http://www.meetup.com/cities/us/mn/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/mn/spring_grove/;Spring Grove;spring_grove
+http://www.meetup.com/cities/us/mn/spring_lake/;Spring Lake;spring_lake
+http://www.meetup.com/cities/us/mn/spring_park/;Spring Park;spring_park
+http://www.meetup.com/cities/us/mn/spring_valley/;Spring Valley;spring_valley
+http://www.meetup.com/cities/us/mn/squaw_lake/;Squaw Lake;squaw_lake
+http://www.meetup.com/cities/us/mn/stacy/;Stacy;stacy
+http://www.meetup.com/cities/us/mn/stanchfield/;Stanchfield;stanchfield
+http://www.meetup.com/cities/us/mn/staples/;Staples;staples
+http://www.meetup.com/cities/us/mn/starbuck/;Starbuck;starbuck
+http://www.meetup.com/cities/us/mn/steen/;Steen;steen
+http://www.meetup.com/cities/us/mn/stephen/;Stephen;stephen
+http://www.meetup.com/cities/us/mn/stewart/;Stewart;stewart
+http://www.meetup.com/cities/us/mn/stewartville/;Stewartville;stewartville
+http://www.meetup.com/cities/us/mn/stillwater/;Stillwater;stillwater
+http://www.meetup.com/cities/us/mn/stockton/;Stockton;stockton
+http://www.meetup.com/cities/us/mn/storden/;Storden;storden
+http://www.meetup.com/cities/us/mn/strandquist/;Strandquist;strandquist
+http://www.meetup.com/cities/us/mn/strathcona/;Strathcona;strathcona
+http://www.meetup.com/cities/us/mn/sturgeon_lake/;Sturgeon Lake;sturgeon_lake
+http://www.meetup.com/cities/us/mn/sunburg/;Sunburg;sunburg
+http://www.meetup.com/cities/us/mn/swan_river/;Swan River;swan_river
+http://www.meetup.com/cities/us/mn/swanville/;Swanville;swanville
+http://www.meetup.com/cities/us/mn/swatara/;Swatara;swatara
+http://www.meetup.com/cities/us/mn/swift/;Swift;swift
+http://www.meetup.com/cities/us/mn/taconite/;Taconite;taconite
+http://www.meetup.com/cities/us/mn/talmoon/;Talmoon;talmoon
+http://www.meetup.com/cities/us/mn/tamarack/;Tamarack;tamarack
+http://www.meetup.com/cities/us/mn/taopi/;Taopi;taopi
+http://www.meetup.com/cities/us/mn/taunton/;Taunton;taunton
+http://www.meetup.com/cities/us/mn/taylors_falls/;Taylors Falls;taylors_falls
+http://www.meetup.com/cities/us/mn/tenstrike/;Tenstrike;tenstrike
+http://www.meetup.com/cities/us/mn/thief_river_falls/;Thief River Falls;thief_river_falls
+http://www.meetup.com/cities/us/mn/tintah/;Tintah;tintah
+http://www.meetup.com/cities/us/mn/tofte/;Tofte;tofte
+http://www.meetup.com/cities/us/mn/tower/;Tower;tower
+http://www.meetup.com/cities/us/mn/tracy/;Tracy;tracy
+http://www.meetup.com/cities/us/mn/trail/;Trail;trail
+http://www.meetup.com/cities/us/mn/trimont/;Trimont;trimont
+http://www.meetup.com/cities/us/mn/trosky/;Trosky;trosky
+http://www.meetup.com/cities/us/mn/truman/;Truman;truman
+http://www.meetup.com/cities/us/mn/twig/;Twig;twig
+http://www.meetup.com/cities/us/mn/twin_lakes/;Twin Lakes;twin_lakes
+http://www.meetup.com/cities/us/mn/twin_valley/;Twin Valley;twin_valley
+http://www.meetup.com/cities/us/mn/two_harbors/;Two Harbors;two_harbors
+http://www.meetup.com/cities/us/mn/tyler/;Tyler;tyler
+http://www.meetup.com/cities/us/mn/ulen/;Ulen;ulen
+http://www.meetup.com/cities/us/mn/underwood/;Underwood;underwood
+http://www.meetup.com/cities/us/mn/upsala/;Upsala;upsala
+http://www.meetup.com/cities/us/mn/utica/;Utica;utica
+http://www.meetup.com/cities/us/mn/vergas/;Vergas;vergas
+http://www.meetup.com/cities/us/mn/vermillion/;Vermillion;vermillion
+http://www.meetup.com/cities/us/mn/verndale/;Verndale;verndale
+http://www.meetup.com/cities/us/mn/vernon_center/;Vernon Center;vernon_center
+http://www.meetup.com/cities/us/mn/vesta/;Vesta;vesta
+http://www.meetup.com/cities/us/mn/victoria/;Victoria;victoria
+http://www.meetup.com/cities/us/mn/viking/;Viking;viking
+http://www.meetup.com/cities/us/mn/villard/;Villard;villard
+http://www.meetup.com/cities/us/mn/vining/;Vining;vining
+http://www.meetup.com/cities/us/mn/virginia/;Virginia;virginia
+http://www.meetup.com/cities/us/mn/wabasha/;Wabasha;wabasha
+http://www.meetup.com/cities/us/mn/wabasso/;Wabasso;wabasso
+http://www.meetup.com/cities/us/mn/waconia/;Waconia;waconia
+http://www.meetup.com/cities/us/mn/wadena/;Wadena;wadena
+http://www.meetup.com/cities/us/mn/wahkon/;Wahkon;wahkon
+http://www.meetup.com/cities/us/mn/waite_park/;Waite Park;waite_park
+http://www.meetup.com/cities/us/mn/waldorf/;Waldorf;waldorf
+http://www.meetup.com/cities/us/mn/walker/;Walker;walker
+http://www.meetup.com/cities/us/mn/walnut_grove/;Walnut Grove;walnut_grove
+http://www.meetup.com/cities/us/mn/waltham/;Waltham;waltham
+http://www.meetup.com/cities/us/mn/wanamingo/;Wanamingo;wanamingo
+http://www.meetup.com/cities/us/mn/wanda/;Wanda;wanda
+http://www.meetup.com/cities/us/mn/wannaska/;Wannaska;wannaska
+http://www.meetup.com/cities/us/mn/warba/;Warba;warba
+http://www.meetup.com/cities/us/mn/warren/;Warren;warren
+http://www.meetup.com/cities/us/mn/warroad/;Warroad;warroad
+http://www.meetup.com/cities/us/mn/warsaw/;Warsaw;warsaw
+http://www.meetup.com/cities/us/mn/waseca/;Waseca;waseca
+http://www.meetup.com/cities/us/mn/waskish/;Waskish;waskish
+http://www.meetup.com/cities/us/mn/watertown/;Watertown;watertown
+http://www.meetup.com/cities/us/mn/waterville/;Waterville;waterville
+http://www.meetup.com/cities/us/mn/watkins/;Watkins;watkins
+http://www.meetup.com/cities/us/mn/watson/;Watson;watson
+http://www.meetup.com/cities/us/mn/waubun/;Waubun;waubun
+http://www.meetup.com/cities/us/mn/waverly/;Waverly;waverly
+http://www.meetup.com/cities/us/mn/wayzata/;Wayzata;wayzata
+http://www.meetup.com/cities/us/mn/webster/;Webster;webster
+http://www.meetup.com/cities/us/mn/welch/;Welch;welch
+http://www.meetup.com/cities/us/mn/welcome/;Welcome;welcome
+http://www.meetup.com/cities/us/mn/wells/;Wells;wells
+http://www.meetup.com/cities/us/mn/wendell/;Wendell;wendell
+http://www.meetup.com/cities/us/mn/westbrook/;Westbrook;westbrook
+http://www.meetup.com/cities/us/mn/west_concord/;West Concord;west_concord
+http://www.meetup.com/cities/us/mn/west_union/;West Union;west_union
+http://www.meetup.com/cities/us/mn/wheaton/;Wheaton;wheaton
+http://www.meetup.com/cities/us/mn/white_earth/;White Earth;white_earth
+http://www.meetup.com/cities/us/mn/willernie/;Willernie;willernie
+http://www.meetup.com/cities/us/mn/williams/;Williams;williams
+http://www.meetup.com/cities/us/mn/willmar/;Willmar;willmar
+http://www.meetup.com/cities/us/mn/willow_river/;Willow River;willow_river
+http://www.meetup.com/cities/us/mn/wilmont/;Wilmont;wilmont
+http://www.meetup.com/cities/us/mn/wilton/;Wilton;wilton
+http://www.meetup.com/cities/us/mn/windom/;Windom;windom
+http://www.meetup.com/cities/us/mn/winger/;Winger;winger
+http://www.meetup.com/cities/us/mn/winnebago/;Winnebago;winnebago
+http://www.meetup.com/cities/us/mn/winona/;Winona;winona
+http://www.meetup.com/cities/us/mn/winsted/;Winsted;winsted
+http://www.meetup.com/cities/us/mn/winthrop/;Winthrop;winthrop
+http://www.meetup.com/cities/us/mn/winton/;Winton;winton
+http://www.meetup.com/cities/us/mn/wirt/;Wirt;wirt
+http://www.meetup.com/cities/us/mn/wolf_lake/;Wolf Lake;wolf_lake
+http://www.meetup.com/cities/us/mn/wolverton/;Wolverton;wolverton
+http://www.meetup.com/cities/us/mn/wood_lake/;Wood Lake;wood_lake
+http://www.meetup.com/cities/us/mn/woodstock/;Woodstock;woodstock
+http://www.meetup.com/cities/us/mn/worthington/;Worthington;worthington
+http://www.meetup.com/cities/us/mn/wrenshall/;Wrenshall;wrenshall
+http://www.meetup.com/cities/us/mn/wright/;Wright;wright
+http://www.meetup.com/cities/us/mn/wykoff/;Wykoff;wykoff
+http://www.meetup.com/cities/us/mn/wyoming/;Wyoming;wyoming
+http://www.meetup.com/cities/us/mn/young_america/;Young America;young_america
+http://www.meetup.com/cities/us/mn/zimmerman/;Zimmerman;zimmerman
+http://www.meetup.com/cities/us/mn/zumbro_falls/;Zumbro Falls;zumbro_falls
+http://www.meetup.com/cities/us/mn/zumbrota/;Zumbrota;zumbrota

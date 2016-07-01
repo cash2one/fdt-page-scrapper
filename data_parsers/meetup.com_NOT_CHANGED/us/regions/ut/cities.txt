@@ -1,0 +1,251 @@
+http://www.meetup.com/cities/us/ut/alpine/;Alpine;alpine
+http://www.meetup.com/cities/us/ut/altamont/;Altamont;altamont
+http://www.meetup.com/cities/us/ut/alton/;Alton;alton
+http://www.meetup.com/cities/us/ut/altonah/;Altonah;altonah
+http://www.meetup.com/cities/us/ut/american_fork/;American Fork;american_fork
+http://www.meetup.com/cities/us/ut/aneth/;Aneth;aneth
+http://www.meetup.com/cities/us/ut/annabella/;Annabella;annabella
+http://www.meetup.com/cities/us/ut/antimony/;Antimony;antimony
+http://www.meetup.com/cities/us/ut/aurora/;Aurora;aurora
+http://www.meetup.com/cities/us/ut/axtell/;Axtell;axtell
+http://www.meetup.com/cities/us/ut/bear_river_city/;Bear River City;bear_river_city
+http://www.meetup.com/cities/us/ut/beaver/;Beaver;beaver
+http://www.meetup.com/cities/us/ut/beryl/;Beryl;beryl
+http://www.meetup.com/cities/us/ut/bicknell/;Bicknell;bicknell
+http://www.meetup.com/cities/us/ut/bingham_canyon/;Bingham Canyon;bingham_canyon
+http://www.meetup.com/cities/us/ut/blanding/;Blanding;blanding
+http://www.meetup.com/cities/us/ut/bluebell/;Bluebell;bluebell
+http://www.meetup.com/cities/us/ut/bluff/;Bluff;bluff
+http://www.meetup.com/cities/us/ut/bonanza/;Bonanza;bonanza
+http://www.meetup.com/cities/us/ut/boulder/;Boulder;boulder
+http://www.meetup.com/cities/us/ut/bountiful/;Bountiful;bountiful
+http://www.meetup.com/cities/us/ut/brian_head/;Brian Head;brian_head
+http://www.meetup.com/cities/us/ut/brigham_city/;Brigham City;brigham_city
+http://www.meetup.com/cities/us/ut/bryce/;Bryce;bryce
+http://www.meetup.com/cities/us/ut/cache_junction/;Cache Junction;cache_junction
+http://www.meetup.com/cities/us/ut/cannonville/;Cannonville;cannonville
+http://www.meetup.com/cities/us/ut/castle_dale/;Castle Dale;castle_dale
+http://www.meetup.com/cities/us/ut/cedar_city/;Cedar City;cedar_city
+http://www.meetup.com/cities/us/ut/cedar_valley/;Cedar Valley;cedar_valley
+http://www.meetup.com/cities/us/ut/centerfield/;Centerfield;centerfield
+http://www.meetup.com/cities/us/ut/centerville/;Centerville;centerville
+http://www.meetup.com/cities/us/ut/central/;Central;central
+http://www.meetup.com/cities/us/ut/chester/;Chester;chester
+http://www.meetup.com/cities/us/ut/circleville/;Circleville;circleville
+http://www.meetup.com/cities/us/ut/cisco/;Cisco;cisco
+http://www.meetup.com/cities/us/ut/clarkston/;Clarkston;clarkston
+http://www.meetup.com/cities/us/ut/clawson/;Clawson;clawson
+http://www.meetup.com/cities/us/ut/clearfield/;Clearfield;clearfield
+http://www.meetup.com/cities/us/ut/cleveland/;Cleveland;cleveland
+http://www.meetup.com/cities/us/ut/coalville/;Coalville;coalville
+http://www.meetup.com/cities/us/ut/collinston/;Collinston;collinston
+http://www.meetup.com/cities/us/ut/corinne/;Corinne;corinne
+http://www.meetup.com/cities/us/ut/cornish/;Cornish;cornish
+http://www.meetup.com/cities/us/ut/croydon/;Croydon;croydon
+http://www.meetup.com/cities/us/ut/dammeron_valley/;Dammeron Valley;dammeron_valley
+http://www.meetup.com/cities/us/ut/delta/;Delta;delta
+http://www.meetup.com/cities/us/ut/deweyville/;Deweyville;deweyville
+http://www.meetup.com/cities/us/ut/draper/;Draper;draper
+http://www.meetup.com/cities/us/ut/duchesne/;Duchesne;duchesne
+http://www.meetup.com/cities/us/ut/duck_creek_village/;Duck Creek Village;duck_creek_village
+http://www.meetup.com/cities/us/ut/dugway/;Dugway;dugway
+http://www.meetup.com/cities/us/ut/dutch_john/;Dutch John;dutch_john
+http://www.meetup.com/cities/us/ut/eagle_mountain/;Eagle Mountain;eagle_mountain
+http://www.meetup.com/cities/us/ut/east_carbon/;East Carbon;east_carbon
+http://www.meetup.com/cities/us/ut/echo/;Echo;echo
+http://www.meetup.com/cities/us/ut/eden/;Eden;eden
+http://www.meetup.com/cities/us/ut/elberta/;Elberta;elberta
+http://www.meetup.com/cities/us/ut/elmo/;Elmo;elmo
+http://www.meetup.com/cities/us/ut/elsinore/;Elsinore;elsinore
+http://www.meetup.com/cities/us/ut/emery/;Emery;emery
+http://www.meetup.com/cities/us/ut/enterprise/;Enterprise;enterprise
+http://www.meetup.com/cities/us/ut/ephraim/;Ephraim;ephraim
+http://www.meetup.com/cities/us/ut/escalante/;Escalante;escalante
+http://www.meetup.com/cities/us/ut/eureka/;Eureka;eureka
+http://www.meetup.com/cities/us/ut/fairview/;Fairview;fairview
+http://www.meetup.com/cities/us/ut/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/ut/fayette/;Fayette;fayette
+http://www.meetup.com/cities/us/ut/ferron/;Ferron;ferron
+http://www.meetup.com/cities/us/ut/fielding/;Fielding;fielding
+http://www.meetup.com/cities/us/ut/fillmore/;Fillmore;fillmore
+http://www.meetup.com/cities/us/ut/fort_duchesne/;Fort Duchesne;fort_duchesne
+http://www.meetup.com/cities/us/ut/fountain_green/;Fountain Green;fountain_green
+http://www.meetup.com/cities/us/ut/fruitland/;Fruitland;fruitland
+http://www.meetup.com/cities/us/ut/garden_city/;Garden City;garden_city
+http://www.meetup.com/cities/us/ut/garland/;Garland;garland
+http://www.meetup.com/cities/us/ut/garrison/;Garrison;garrison
+http://www.meetup.com/cities/us/ut/glendale/;Glendale;glendale
+http://www.meetup.com/cities/us/ut/glenwood/;Glenwood;glenwood
+http://www.meetup.com/cities/us/ut/goshen/;Goshen;goshen
+http://www.meetup.com/cities/us/ut/grantsville/;Grantsville;grantsville
+http://www.meetup.com/cities/us/ut/green_river/;Green River;green_river
+http://www.meetup.com/cities/us/ut/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/ut/greenwich/;Greenwich;greenwich
+http://www.meetup.com/cities/us/ut/grouse_creek/;Grouse Creek;grouse_creek
+http://www.meetup.com/cities/us/ut/gunlock/;Gunlock;gunlock
+http://www.meetup.com/cities/us/ut/gunnison/;Gunnison;gunnison
+http://www.meetup.com/cities/us/ut/hanksville/;Hanksville;hanksville
+http://www.meetup.com/cities/us/ut/hanna/;Hanna;hanna
+http://www.meetup.com/cities/us/ut/hatch/;Hatch;hatch
+http://www.meetup.com/cities/us/ut/heber_city/;Heber City;heber_city
+http://www.meetup.com/cities/us/ut/helper/;Helper;helper
+http://www.meetup.com/cities/us/ut/henefer/;Henefer;henefer
+http://www.meetup.com/cities/us/ut/henrieville/;Henrieville;henrieville
+http://www.meetup.com/cities/us/ut/herriman/;Herriman;herriman
+http://www.meetup.com/cities/us/ut/hildale/;Hildale;hildale
+http://www.meetup.com/cities/us/ut/hill_afb/;Hill AFB;hill_afb
+http://www.meetup.com/cities/us/ut/hinckley/;Hinckley;hinckley
+http://www.meetup.com/cities/us/ut/holden/;Holden;holden
+http://www.meetup.com/cities/us/ut/honeyville/;Honeyville;honeyville
+http://www.meetup.com/cities/us/ut/hooper/;Hooper;hooper
+http://www.meetup.com/cities/us/ut/howell/;Howell;howell
+http://www.meetup.com/cities/us/ut/huntington/;Huntington;huntington
+http://www.meetup.com/cities/us/ut/huntsville/;Huntsville;huntsville
+http://www.meetup.com/cities/us/ut/hurricane/;Hurricane;hurricane
+http://www.meetup.com/cities/us/ut/hyde_park/;Hyde Park;hyde_park
+http://www.meetup.com/cities/us/ut/hyrum/;Hyrum;hyrum
+http://www.meetup.com/cities/us/ut/ibapah/;Ibapah;ibapah
+http://www.meetup.com/cities/us/ut/ivins/;Ivins;ivins
+http://www.meetup.com/cities/us/ut/jensen/;Jensen;jensen
+http://www.meetup.com/cities/us/ut/joseph/;Joseph;joseph
+http://www.meetup.com/cities/us/ut/junction/;Junction;junction
+http://www.meetup.com/cities/us/ut/kamas/;Kamas;kamas
+http://www.meetup.com/cities/us/ut/kanab/;Kanab;kanab
+http://www.meetup.com/cities/us/ut/kanarraville/;Kanarraville;kanarraville
+http://www.meetup.com/cities/us/ut/kanosh/;Kanosh;kanosh
+http://www.meetup.com/cities/us/ut/kaysville/;Kaysville;kaysville
+http://www.meetup.com/cities/us/ut/kenilworth/;Kenilworth;kenilworth
+http://www.meetup.com/cities/us/ut/kingston/;Kingston;kingston
+http://www.meetup.com/cities/us/ut/koosharem/;Koosharem;koosharem
+http://www.meetup.com/cities/us/ut/lake_powell/;Lake Powell;lake_powell
+http://www.meetup.com/cities/us/ut/laketown/;Laketown;laketown
+http://www.meetup.com/cities/us/ut/lapoint/;Lapoint;lapoint
+http://www.meetup.com/cities/us/ut/la_sal/;La Sal;la_sal
+http://www.meetup.com/cities/us/ut/la_verkin/;La Verkin;la_verkin
+http://www.meetup.com/cities/us/ut/layton/;Layton;layton
+http://www.meetup.com/cities/us/ut/leamington/;Leamington;leamington
+http://www.meetup.com/cities/us/ut/leeds/;Leeds;leeds
+http://www.meetup.com/cities/us/ut/lehi/;Lehi;lehi
+http://www.meetup.com/cities/us/ut/levan/;Levan;levan
+http://www.meetup.com/cities/us/ut/lewiston/;Lewiston;lewiston
+http://www.meetup.com/cities/us/ut/lindon/;Lindon;lindon
+http://www.meetup.com/cities/us/ut/loa/;Loa;loa
+http://www.meetup.com/cities/us/ut/logan/;Logan;logan
+http://www.meetup.com/cities/us/ut/lyman/;Lyman;lyman
+http://www.meetup.com/cities/us/ut/lynndyl/;Lynndyl;lynndyl
+http://www.meetup.com/cities/us/ut/magna/;Magna;magna
+http://www.meetup.com/cities/us/ut/manila/;Manila;manila
+http://www.meetup.com/cities/us/ut/manti/;Manti;manti
+http://www.meetup.com/cities/us/ut/mantua/;Mantua;mantua
+http://www.meetup.com/cities/us/ut/mapleton/;Mapleton;mapleton
+http://www.meetup.com/cities/us/ut/marysvale/;Marysvale;marysvale
+http://www.meetup.com/cities/us/ut/mayfield/;Mayfield;mayfield
+http://www.meetup.com/cities/us/ut/meadow/;Meadow;meadow
+http://www.meetup.com/cities/us/ut/mendon/;Mendon;mendon
+http://www.meetup.com/cities/us/ut/mexican_hat/;Mexican Hat;mexican_hat
+http://www.meetup.com/cities/us/ut/midvale/;Midvale;midvale
+http://www.meetup.com/cities/us/ut/midway/;Midway;midway
+http://www.meetup.com/cities/us/ut/milford/;Milford;milford
+http://www.meetup.com/cities/us/ut/millville/;Millville;millville
+http://www.meetup.com/cities/us/ut/minersville/;Minersville;minersville
+http://www.meetup.com/cities/us/ut/moab/;Moab;moab
+http://www.meetup.com/cities/us/ut/modena/;Modena;modena
+http://www.meetup.com/cities/us/ut/mona/;Mona;mona
+http://www.meetup.com/cities/us/ut/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/ut/montezuma_creek/;Montezuma Creek;montezuma_creek
+http://www.meetup.com/cities/us/ut/monticello/;Monticello;monticello
+http://www.meetup.com/cities/us/ut/monument_valley/;Monument Valley;monument_valley
+http://www.meetup.com/cities/us/ut/morgan/;Morgan;morgan
+http://www.meetup.com/cities/us/ut/moroni/;Moroni;moroni
+http://www.meetup.com/cities/us/ut/mountain_home/;Mountain Home;mountain_home
+http://www.meetup.com/cities/us/ut/mount_carmel/;Mount Carmel;mount_carmel
+http://www.meetup.com/cities/us/ut/mount_pleasant/;Mount Pleasant;mount_pleasant
+http://www.meetup.com/cities/us/ut/murray/;Murray;murray
+http://www.meetup.com/cities/us/ut/myton/;Myton;myton
+http://www.meetup.com/cities/us/ut/neola/;Neola;neola
+http://www.meetup.com/cities/us/ut/nephi/;Nephi;nephi
+http://www.meetup.com/cities/us/ut/newcastle/;Newcastle;newcastle
+http://www.meetup.com/cities/us/ut/new_harmony/;New Harmony;new_harmony
+http://www.meetup.com/cities/us/ut/newton/;Newton;newton
+http://www.meetup.com/cities/us/ut/north_salt_lake/;North Salt Lake;north_salt_lake
+http://www.meetup.com/cities/us/ut/oak_city/;Oak City;oak_city
+http://www.meetup.com/cities/us/ut/oakley/;Oakley;oakley
+http://www.meetup.com/cities/us/ut/ogden/;Ogden;ogden
+http://www.meetup.com/cities/us/ut/orangeville/;Orangeville;orangeville
+http://www.meetup.com/cities/us/ut/orderville/;Orderville;orderville
+http://www.meetup.com/cities/us/ut/orem/;Orem;orem
+http://www.meetup.com/cities/us/ut/panguitch/;Panguitch;panguitch
+http://www.meetup.com/cities/us/ut/paradise/;Paradise;paradise
+http://www.meetup.com/cities/us/ut/paragonah/;Paragonah;paragonah
+http://www.meetup.com/cities/us/ut/park_city/;Park City;park_city
+http://www.meetup.com/cities/us/ut/park_valley/;Park Valley;park_valley
+http://www.meetup.com/cities/us/ut/parowan/;Parowan;parowan
+http://www.meetup.com/cities/us/ut/payson/;Payson;payson
+http://www.meetup.com/cities/us/ut/peoa/;Peoa;peoa
+http://www.meetup.com/cities/us/ut/pine_valley/;Pine Valley;pine_valley
+http://www.meetup.com/cities/us/ut/pleasant_grove/;Pleasant Grove;pleasant_grove
+http://www.meetup.com/cities/us/ut/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/ut/portage/;Portage;portage
+http://www.meetup.com/cities/us/ut/price/;Price;price
+http://www.meetup.com/cities/us/ut/providence/;Providence;providence
+http://www.meetup.com/cities/us/ut/provo/;Provo;provo
+http://www.meetup.com/cities/us/ut/randlett/;Randlett;randlett
+http://www.meetup.com/cities/us/ut/randolph/;Randolph;randolph
+http://www.meetup.com/cities/us/ut/redmond/;Redmond;redmond
+http://www.meetup.com/cities/us/ut/richfield/;Richfield;richfield
+http://www.meetup.com/cities/us/ut/richmond/;Richmond;richmond
+http://www.meetup.com/cities/us/ut/riverside/;Riverside;riverside
+http://www.meetup.com/cities/us/ut/riverton/;Riverton;riverton
+http://www.meetup.com/cities/us/ut/rockville/;Rockville;rockville
+http://www.meetup.com/cities/us/ut/roosevelt/;Roosevelt;roosevelt
+http://www.meetup.com/cities/us/ut/roy/;Roy;roy
+http://www.meetup.com/cities/us/ut/rush_valley/;Rush Valley;rush_valley
+http://www.meetup.com/cities/us/ut/saint_george/;Saint George;saint_george
+http://www.meetup.com/cities/us/ut/salem/;Salem;salem
+http://www.meetup.com/cities/us/ut/salina/;Salina;salina
+http://www.meetup.com/cities/us/ut/salt_lake_city/;Salt Lake City;salt_lake_city
+http://www.meetup.com/cities/us/ut/sandy/;Sandy;sandy
+http://www.meetup.com/cities/us/ut/santa_clara/;Santa Clara;santa_clara
+http://www.meetup.com/cities/us/ut/santaquin/;Santaquin;santaquin
+http://www.meetup.com/cities/us/ut/saratoga_springs/;Saratoga Springs;saratoga_springs
+http://www.meetup.com/cities/us/ut/scipio/;Scipio;scipio
+http://www.meetup.com/cities/us/ut/sevier/;Sevier;sevier
+http://www.meetup.com/cities/us/ut/sigurd/;Sigurd;sigurd
+http://www.meetup.com/cities/us/ut/smithfield/;Smithfield;smithfield
+http://www.meetup.com/cities/us/ut/snowville/;Snowville;snowville
+http://www.meetup.com/cities/us/ut/south_jordan/;South Jordan;south_jordan
+http://www.meetup.com/cities/us/ut/spanish_fork/;Spanish Fork;spanish_fork
+http://www.meetup.com/cities/us/ut/spring_city/;Spring City;spring_city
+http://www.meetup.com/cities/us/ut/springdale/;Springdale;springdale
+http://www.meetup.com/cities/us/ut/springville/;Springville;springville
+http://www.meetup.com/cities/us/ut/sterling/;Sterling;sterling
+http://www.meetup.com/cities/us/ut/stockton/;Stockton;stockton
+http://www.meetup.com/cities/us/ut/summit/;Summit;summit
+http://www.meetup.com/cities/us/ut/sunnyside/;Sunnyside;sunnyside
+http://www.meetup.com/cities/us/ut/syracuse/;Syracuse;syracuse
+http://www.meetup.com/cities/us/ut/tabiona/;Tabiona;tabiona
+http://www.meetup.com/cities/us/ut/talmage/;Talmage;talmage
+http://www.meetup.com/cities/us/ut/teasdale/;Teasdale;teasdale
+http://www.meetup.com/cities/us/ut/thompson/;Thompson;thompson
+http://www.meetup.com/cities/us/ut/tooele/;Tooele;tooele
+http://www.meetup.com/cities/us/ut/toquerville/;Toquerville;toquerville
+http://www.meetup.com/cities/us/ut/torrey/;Torrey;torrey
+http://www.meetup.com/cities/us/ut/tremonton/;Tremonton;tremonton
+http://www.meetup.com/cities/us/ut/trenton/;Trenton;trenton
+http://www.meetup.com/cities/us/ut/tridell/;Tridell;tridell
+http://www.meetup.com/cities/us/ut/tropic/;Tropic;tropic
+http://www.meetup.com/cities/us/ut/vernal/;Vernal;vernal
+http://www.meetup.com/cities/us/ut/vernon/;Vernon;vernon
+http://www.meetup.com/cities/us/ut/veyo/;Veyo;veyo
+http://www.meetup.com/cities/us/ut/virgin/;Virgin;virgin
+http://www.meetup.com/cities/us/ut/wales/;Wales;wales
+http://www.meetup.com/cities/us/ut/wallsburg/;Wallsburg;wallsburg
+http://www.meetup.com/cities/us/ut/washington/;Washington;washington
+http://www.meetup.com/cities/us/ut/wellington/;Wellington;wellington
+http://www.meetup.com/cities/us/ut/wellsville/;Wellsville;wellsville
+http://www.meetup.com/cities/us/ut/wendover/;Wendover;wendover
+http://www.meetup.com/cities/us/ut/west_jordan/;West Jordan;west_jordan
+http://www.meetup.com/cities/us/ut/whiterocks/;Whiterocks;whiterocks
+http://www.meetup.com/cities/us/ut/willard/;Willard;willard
+http://www.meetup.com/cities/us/ut/woodruff/;Woodruff;woodruff
+http://www.meetup.com/cities/us/ut/woods_cross/;Woods Cross;woods_cross

@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/us/va/alexandria/;Alexandria;alexandria
+http://www.meetup.com/cities/us/va/annandale/;Annandale;annandale
+http://www.meetup.com/cities/us/va/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/va/ashburn/;Ashburn;ashburn
+http://www.meetup.com/cities/us/va/blacksburg/;Blacksburg;blacksburg
+http://www.meetup.com/cities/us/va/bristow/;Bristow;bristow
+http://www.meetup.com/cities/us/va/burke/;Burke;burke
+http://www.meetup.com/cities/us/va/centreville/;Centreville;centreville
+http://www.meetup.com/cities/us/va/chantilly/;Chantilly;chantilly
+http://www.meetup.com/cities/us/va/charlottesville/;Charlottesville;charlottesville
+http://www.meetup.com/cities/us/va/chesapeake/;Chesapeake;chesapeake
+http://www.meetup.com/cities/us/va/chester/;Chester;chester
+http://www.meetup.com/cities/us/va/chesterfield/;Chesterfield;chesterfield
+http://www.meetup.com/cities/us/va/danville/;Danville;danville
+http://www.meetup.com/cities/us/va/dumfries/;Dumfries;dumfries
+http://www.meetup.com/cities/us/va/fairfax/;Fairfax;fairfax
+http://www.meetup.com/cities/us/va/falls_church/;Falls Church;falls_church
+http://www.meetup.com/cities/us/va/fredericksburg/;Fredericksburg;fredericksburg
+http://www.meetup.com/cities/us/va/gainesville/;Gainesville;gainesville
+http://www.meetup.com/cities/us/va/glen_allen/;Glen Allen;glen_allen
+http://www.meetup.com/cities/us/va/hampton/;Hampton;hampton
+http://www.meetup.com/cities/us/va/harrisonburg/;Harrisonburg;harrisonburg
+http://www.meetup.com/cities/us/va/haymarket/;Haymarket;haymarket
+http://www.meetup.com/cities/us/va/herndon/;Herndon;herndon
+http://www.meetup.com/cities/us/va/leesburg/;Leesburg;leesburg
+http://www.meetup.com/cities/us/va/lorton/;Lorton;lorton
+http://www.meetup.com/cities/us/va/lynchburg/;Lynchburg;lynchburg
+http://www.meetup.com/cities/us/va/manassas/;Manassas;manassas
+http://www.meetup.com/cities/us/va/mc_lean/;Mc Lean;mc_lean
+http://www.meetup.com/cities/us/va/mechanicsville/;Mechanicsville;mechanicsville
+http://www.meetup.com/cities/us/va/midlothian/;Midlothian;midlothian
+http://www.meetup.com/cities/us/va/newport_news/;Newport News;newport_news
+http://www.meetup.com/cities/us/va/norfolk/;Norfolk;norfolk
+http://www.meetup.com/cities/us/va/oakton/;Oakton;oakton
+http://www.meetup.com/cities/us/va/portsmouth/;Portsmouth;portsmouth
+http://www.meetup.com/cities/us/va/powhatan/;Powhatan;powhatan
+http://www.meetup.com/cities/us/va/reston/;Reston;reston
+http://www.meetup.com/cities/us/va/richmond/;Richmond;richmond
+http://www.meetup.com/cities/us/va/roanoke/;Roanoke;roanoke
+http://www.meetup.com/cities/us/va/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/va/stafford/;Stafford;stafford
+http://www.meetup.com/cities/us/va/sterling/;Sterling;sterling
+http://www.meetup.com/cities/us/va/suffolk/;Suffolk;suffolk
+http://www.meetup.com/cities/us/va/vienna/;Vienna;vienna
+http://www.meetup.com/cities/us/va/virginia_beach/;Virginia Beach;virginia_beach
+http://www.meetup.com/cities/us/va/warrenton/;Warrenton;warrenton
+http://www.meetup.com/cities/us/va/williamsburg/;Williamsburg;williamsburg
+http://www.meetup.com/cities/us/va/winchester/;Winchester;winchester
+http://www.meetup.com/cities/us/va/woodbridge/;Woodbridge;woodbridge
+http://www.meetup.com/cities/us/va/yorktown/;Yorktown;yorktown

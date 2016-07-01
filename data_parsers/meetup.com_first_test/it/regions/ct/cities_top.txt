@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/it/ct/aci_bonaccorsi/;Aci Bonaccorsi;aci_bonaccorsi
+http://www.meetup.com/cities/it/ct/aci_castello/;Aci Castello;aci_castello
+http://www.meetup.com/cities/it/ct/aci_catena/;Aci Catena;aci_catena
+http://www.meetup.com/cities/it/ct/aci_sant%27antonio/;Aci Sant'Antonio;aci_sant%27antonio
+http://www.meetup.com/cities/it/ct/acireale/;Acireale;acireale
+http://www.meetup.com/cities/it/ct/adrano/;Adrano;adrano
+http://www.meetup.com/cities/it/ct/belpasso/;Belpasso;belpasso
+http://www.meetup.com/cities/it/ct/biancavilla/;Biancavilla;biancavilla
+http://www.meetup.com/cities/it/ct/bronte/;Bronte;bronte
+http://www.meetup.com/cities/it/ct/caltagirone/;Caltagirone;caltagirone
+http://www.meetup.com/cities/it/ct/camporotondo_etneo/;Camporotondo Etneo;camporotondo_etneo
+http://www.meetup.com/cities/it/ct/castel_di_iudica/;Castel di Iudica;castel_di_iudica
+http://www.meetup.com/cities/it/ct/castiglione_di_sicilia/;Castiglione di Sicilia;castiglione_di_sicilia
+http://www.meetup.com/cities/it/ct/catania/;Catania;catania
+http://www.meetup.com/cities/it/ct/fiumefreddo_di_sicilia/;Fiumefreddo di Sicilia;fiumefreddo_di_sicilia
+http://www.meetup.com/cities/it/ct/giarre/;Giarre;giarre
+http://www.meetup.com/cities/it/ct/grammichele/;Grammichele;grammichele
+http://www.meetup.com/cities/it/ct/gravina_di_catania/;Gravina di Catania;gravina_di_catania
+http://www.meetup.com/cities/it/ct/licodia_eubea/;Licodia Eubea;licodia_eubea
+http://www.meetup.com/cities/it/ct/linguaglossa/;Linguaglossa;linguaglossa
+http://www.meetup.com/cities/it/ct/maniace/;Maniace;maniace
+http://www.meetup.com/cities/it/ct/mascali/;Mascali;mascali
+http://www.meetup.com/cities/it/ct/mascalucia/;Mascalucia;mascalucia
+http://www.meetup.com/cities/it/ct/mazzarrone/;Mazzarrone;mazzarrone
+http://www.meetup.com/cities/it/ct/militello_in_val_di_catania/;Militello in Val di Catania;militello_in_val_di_catania
+http://www.meetup.com/cities/it/ct/mineo/;Mineo;mineo
+http://www.meetup.com/cities/it/ct/misterbianco/;Misterbianco;misterbianco
+http://www.meetup.com/cities/it/ct/motta_sant%27anastasia/;Motta Sant'Anastasia;motta_sant%27anastasia
+http://www.meetup.com/cities/it/ct/nicolosi/;Nicolosi;nicolosi
+http://www.meetup.com/cities/it/ct/palagonia/;Palagonia;palagonia
+http://www.meetup.com/cities/it/ct/patern%C3%B2/;Paternò;patern%C3%B2
+http://www.meetup.com/cities/it/ct/pedara/;Pedara;pedara
+http://www.meetup.com/cities/it/ct/piedimonte_etneo/;Piedimonte Etneo;piedimonte_etneo
+http://www.meetup.com/cities/it/ct/raddusa/;Raddusa;raddusa
+http://www.meetup.com/cities/it/ct/ragalna/;Ragalna;ragalna
+http://www.meetup.com/cities/it/ct/randazzo/;Randazzo;randazzo
+http://www.meetup.com/cities/it/ct/riposto/;Riposto;riposto
+http://www.meetup.com/cities/it/ct/san_cono/;San Cono;san_cono
+http://www.meetup.com/cities/it/ct/san_giovanni_la_punta/;San Giovanni la Punta;san_giovanni_la_punta
+http://www.meetup.com/cities/it/ct/san_gregorio_di_catania/;San Gregorio di Catania;san_gregorio_di_catania
+http://www.meetup.com/cities/it/ct/san_michele_di_ganzaria/;San Michele di Ganzaria;san_michele_di_ganzaria
+http://www.meetup.com/cities/it/ct/san_pietro_clarenza/;San Pietro Clarenza;san_pietro_clarenza
+http://www.meetup.com/cities/it/ct/sant%27agata_li_battiati/;Sant'Agata li Battiati;sant%27agata_li_battiati
+http://www.meetup.com/cities/it/ct/santa_maria_di_licodia/;Santa Maria di Licodia;santa_maria_di_licodia
+http://www.meetup.com/cities/it/ct/santa_venerina/;Santa Venerina;santa_venerina
+http://www.meetup.com/cities/it/ct/scordia/;Scordia;scordia
+http://www.meetup.com/cities/it/ct/tremestieri_etneo/;Tremestieri Etneo;tremestieri_etneo
+http://www.meetup.com/cities/it/ct/valverde/;Valverde;valverde
+http://www.meetup.com/cities/it/ct/viagrande/;Viagrande;viagrande
+http://www.meetup.com/cities/it/ct/zafferana_etnea/;Zafferana Etnea;zafferana_etnea

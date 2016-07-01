@@ -1,0 +1,13 @@
+http://www.meetup.com/cities/ca/ab/;Alberta;ab
+http://www.meetup.com/cities/ca/bc/;British Columbia;bc
+http://www.meetup.com/cities/ca/mb/;Manitoba;mb
+http://www.meetup.com/cities/ca/nb/;New Brunswick;nb
+http://www.meetup.com/cities/ca/nl/;Newfoundland and Labrador;nl
+http://www.meetup.com/cities/ca/nt/;Northwest Territories;nt
+http://www.meetup.com/cities/ca/ns/;Nova Scotia;ns
+http://www.meetup.com/cities/ca/nu/;Nunavut;nu
+http://www.meetup.com/cities/ca/on/;Ontario;on
+http://www.meetup.com/cities/ca/pe/;Prince Edward Island;pe
+http://www.meetup.com/cities/ca/qc/;Quebec;qc
+http://www.meetup.com/cities/ca/sk/;Saskatchewan;sk
+http://www.meetup.com/cities/ca/yt/;Yukon Territory;yt

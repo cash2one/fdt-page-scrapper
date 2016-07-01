@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/gb/w3/aith/;Aith;aith
+http://www.meetup.com/cities/gb/w3/baltasound/;Baltasound;baltasound
+http://www.meetup.com/cities/gb/w3/bigton/;Bigton;bigton
+http://www.meetup.com/cities/gb/w3/bixter/;Bixter;bixter
+http://www.meetup.com/cities/gb/w3/brae/;Brae;brae
+http://www.meetup.com/cities/gb/w3/bressay/;Bressay;bressay
+http://www.meetup.com/cities/gb/w3/brettabister/;Brettabister;brettabister
+http://www.meetup.com/cities/gb/w3/brough/;Brough;brough
+http://www.meetup.com/cities/gb/w3/camb/;Camb;camb
+http://www.meetup.com/cities/gb/w3/cullivoe/;Cullivoe;cullivoe
+http://www.meetup.com/cities/gb/w3/cunningsburgh/;Cunningsburgh;cunningsburgh
+http://www.meetup.com/cities/gb/w3/east_isle/;East Isle;east_isle
+http://www.meetup.com/cities/gb/w3/eshaness/;Eshaness;eshaness
+http://www.meetup.com/cities/gb/w3/fair_isle/;Fair Isle;fair_isle
+http://www.meetup.com/cities/gb/w3/fetlar/;Fetlar;fetlar
+http://www.meetup.com/cities/gb/w3/foula/;Foula;foula
+http://www.meetup.com/cities/gb/w3/garderhouse/;Garderhouse;garderhouse
+http://www.meetup.com/cities/gb/w3/girlsta/;Girlsta;girlsta
+http://www.meetup.com/cities/gb/w3/gott/;Gott;gott
+http://www.meetup.com/cities/gb/w3/gulberwick/;Gulberwick;gulberwick
+http://www.meetup.com/cities/gb/w3/gutcher/;Gutcher;gutcher
+http://www.meetup.com/cities/gb/w3/hamar/;Hamar;hamar
+http://www.meetup.com/cities/gb/w3/hamnavoe/;Hamnavoe;hamnavoe
+http://www.meetup.com/cities/gb/w3/haroldswick/;Haroldswick;haroldswick
+http://www.meetup.com/cities/gb/w3/heylor/;Heylor;heylor
+http://www.meetup.com/cities/gb/w3/hillswick/;Hillswick;hillswick
+http://www.meetup.com/cities/gb/w3/lerwick/;Lerwick;lerwick
+http://www.meetup.com/cities/gb/w3/levenwick/;Levenwick;levenwick
+http://www.meetup.com/cities/gb/w3/lochend/;Lochend;lochend
+http://www.meetup.com/cities/gb/w3/mossbank/;Mossbank;mossbank
+http://www.meetup.com/cities/gb/w3/ollaberry/;Ollaberry;ollaberry
+http://www.meetup.com/cities/gb/w3/quarff/;Quarff;quarff
+http://www.meetup.com/cities/gb/w3/reawick/;Reawick;reawick
+http://www.meetup.com/cities/gb/w3/sandness/;Sandness;sandness
+http://www.meetup.com/cities/gb/w3/sandwick/;Sandwick;sandwick
+http://www.meetup.com/cities/gb/w3/scalloway/;Scalloway;scalloway
+http://www.meetup.com/cities/gb/w3/scousburgh/;Scousburgh;scousburgh
+http://www.meetup.com/cities/gb/w3/sullom/;Sullom;sullom
+http://www.meetup.com/cities/gb/w3/sumburgh_airport/;Sumburgh Airport;sumburgh_airport
+http://www.meetup.com/cities/gb/w3/symbister/;Symbister;symbister
+http://www.meetup.com/cities/gb/w3/tresta/;Tresta;tresta
+http://www.meetup.com/cities/gb/w3/ulsta/;Ulsta;ulsta
+http://www.meetup.com/cities/gb/w3/upper_sound/;Upper Sound;upper_sound
+http://www.meetup.com/cities/gb/w3/virkie/;Virkie;virkie
+http://www.meetup.com/cities/gb/w3/voe/;Voe;voe
+http://www.meetup.com/cities/gb/w3/walls/;Walls;walls
+http://www.meetup.com/cities/gb/w3/west_isle/;West Isle;west_isle
+http://www.meetup.com/cities/gb/w3/west_sandwick/;West Sandwick;west_sandwick
+http://www.meetup.com/cities/gb/w3/wester_quarff/;Wester Quarff;wester_quarff
+http://www.meetup.com/cities/gb/w3/westshore/;Westshore;westshore
+http://www.meetup.com/cities/gb/w3/aith/;Aith;aith
+http://www.meetup.com/cities/gb/w3/baltasound/;Baltasound;baltasound
+http://www.meetup.com/cities/gb/w3/bigton/;Bigton;bigton
+http://www.meetup.com/cities/gb/w3/bixter/;Bixter;bixter
+http://www.meetup.com/cities/gb/w3/brae/;Brae;brae
+http://www.meetup.com/cities/gb/w3/bressay/;Bressay;bressay
+http://www.meetup.com/cities/gb/w3/brettabister/;Brettabister;brettabister
+http://www.meetup.com/cities/gb/w3/brough/;Brough;brough
+http://www.meetup.com/cities/gb/w3/camb/;Camb;camb
+http://www.meetup.com/cities/gb/w3/cullivoe/;Cullivoe;cullivoe
+http://www.meetup.com/cities/gb/w3/cunningsburgh/;Cunningsburgh;cunningsburgh
+http://www.meetup.com/cities/gb/w3/east_isle/;East Isle;east_isle
+http://www.meetup.com/cities/gb/w3/eshaness/;Eshaness;eshaness
+http://www.meetup.com/cities/gb/w3/fair_isle/;Fair Isle;fair_isle
+http://www.meetup.com/cities/gb/w3/fetlar/;Fetlar;fetlar
+http://www.meetup.com/cities/gb/w3/foula/;Foula;foula
+http://www.meetup.com/cities/gb/w3/garderhouse/;Garderhouse;garderhouse
+http://www.meetup.com/cities/gb/w3/girlsta/;Girlsta;girlsta
+http://www.meetup.com/cities/gb/w3/gott/;Gott;gott
+http://www.meetup.com/cities/gb/w3/gulberwick/;Gulberwick;gulberwick
+http://www.meetup.com/cities/gb/w3/gutcher/;Gutcher;gutcher
+http://www.meetup.com/cities/gb/w3/hamar/;Hamar;hamar
+http://www.meetup.com/cities/gb/w3/hamnavoe/;Hamnavoe;hamnavoe
+http://www.meetup.com/cities/gb/w3/haroldswick/;Haroldswick;haroldswick
+http://www.meetup.com/cities/gb/w3/heylor/;Heylor;heylor
+http://www.meetup.com/cities/gb/w3/hillswick/;Hillswick;hillswick
+http://www.meetup.com/cities/gb/w3/lerwick/;Lerwick;lerwick
+http://www.meetup.com/cities/gb/w3/levenwick/;Levenwick;levenwick
+http://www.meetup.com/cities/gb/w3/lochend/;Lochend;lochend
+http://www.meetup.com/cities/gb/w3/mossbank/;Mossbank;mossbank
+http://www.meetup.com/cities/gb/w3/ollaberry/;Ollaberry;ollaberry
+http://www.meetup.com/cities/gb/w3/quarff/;Quarff;quarff
+http://www.meetup.com/cities/gb/w3/reawick/;Reawick;reawick
+http://www.meetup.com/cities/gb/w3/sandness/;Sandness;sandness
+http://www.meetup.com/cities/gb/w3/sandwick/;Sandwick;sandwick
+http://www.meetup.com/cities/gb/w3/scalloway/;Scalloway;scalloway
+http://www.meetup.com/cities/gb/w3/scousburgh/;Scousburgh;scousburgh
+http://www.meetup.com/cities/gb/w3/sullom/;Sullom;sullom
+http://www.meetup.com/cities/gb/w3/sumburgh_airport/;Sumburgh Airport;sumburgh_airport
+http://www.meetup.com/cities/gb/w3/symbister/;Symbister;symbister
+http://www.meetup.com/cities/gb/w3/tresta/;Tresta;tresta
+http://www.meetup.com/cities/gb/w3/ulsta/;Ulsta;ulsta
+http://www.meetup.com/cities/gb/w3/upper_sound/;Upper Sound;upper_sound
+http://www.meetup.com/cities/gb/w3/virkie/;Virkie;virkie
+http://www.meetup.com/cities/gb/w3/voe/;Voe;voe
+http://www.meetup.com/cities/gb/w3/walls/;Walls;walls
+http://www.meetup.com/cities/gb/w3/west_isle/;West Isle;west_isle
+http://www.meetup.com/cities/gb/w3/west_sandwick/;West Sandwick;west_sandwick
+http://www.meetup.com/cities/gb/w3/wester_quarff/;Wester Quarff;wester_quarff
+http://www.meetup.com/cities/gb/w3/westshore/;Westshore;westshore

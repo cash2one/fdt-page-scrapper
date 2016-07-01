@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/us/ar/alexander/;Alexander;alexander
+http://www.meetup.com/cities/us/ar/arkadelphia/;Arkadelphia;arkadelphia
+http://www.meetup.com/cities/us/ar/batesville/;Batesville;batesville
+http://www.meetup.com/cities/us/ar/bella_vista/;Bella Vista;bella_vista
+http://www.meetup.com/cities/us/ar/benton/;Benton;benton
+http://www.meetup.com/cities/us/ar/bentonville/;Bentonville;bentonville
+http://www.meetup.com/cities/us/ar/blytheville/;Blytheville;blytheville
+http://www.meetup.com/cities/us/ar/bryant/;Bryant;bryant
+http://www.meetup.com/cities/us/ar/cabot/;Cabot;cabot
+http://www.meetup.com/cities/us/ar/camden/;Camden;camden
+http://www.meetup.com/cities/us/ar/centerton/;Centerton;centerton
+http://www.meetup.com/cities/us/ar/conway/;Conway;conway
+http://www.meetup.com/cities/us/ar/el_dorado/;El Dorado;el_dorado
+http://www.meetup.com/cities/us/ar/eureka_springs/;Eureka Springs;eureka_springs
+http://www.meetup.com/cities/us/ar/fayetteville/;Fayetteville;fayetteville
+http://www.meetup.com/cities/us/ar/fort_smith/;Fort Smith;fort_smith
+http://www.meetup.com/cities/us/ar/greenbrier/;Greenbrier;greenbrier
+http://www.meetup.com/cities/us/ar/greenwood/;Greenwood;greenwood
+http://www.meetup.com/cities/us/ar/harrison/;Harrison;harrison
+http://www.meetup.com/cities/us/ar/heber_springs/;Heber Springs;heber_springs
+http://www.meetup.com/cities/us/ar/hot_springs_national_park/;Hot Springs National Park;hot_springs_national_park
+http://www.meetup.com/cities/us/ar/hot_springs_village/;Hot Springs Village;hot_springs_village
+http://www.meetup.com/cities/us/ar/jacksonville/;Jacksonville;jacksonville
+http://www.meetup.com/cities/us/ar/jonesboro/;Jonesboro;jonesboro
+http://www.meetup.com/cities/us/ar/little_rock/;Little Rock;little_rock
+http://www.meetup.com/cities/us/ar/lowell/;Lowell;lowell
+http://www.meetup.com/cities/us/ar/mabelvale/;Mabelvale;mabelvale
+http://www.meetup.com/cities/us/ar/malvern/;Malvern;malvern
+http://www.meetup.com/cities/us/ar/marion/;Marion;marion
+http://www.meetup.com/cities/us/ar/maumelle/;Maumelle;maumelle
+http://www.meetup.com/cities/us/ar/mena/;Mena;mena
+http://www.meetup.com/cities/us/ar/monticello/;Monticello;monticello
+http://www.meetup.com/cities/us/ar/mountain_home/;Mountain Home;mountain_home
+http://www.meetup.com/cities/us/ar/north_little_rock/;North Little Rock;north_little_rock
+http://www.meetup.com/cities/us/ar/ozark/;Ozark;ozark
+http://www.meetup.com/cities/us/ar/paragould/;Paragould;paragould
+http://www.meetup.com/cities/us/ar/pine_bluff/;Pine Bluff;pine_bluff
+http://www.meetup.com/cities/us/ar/pocahontas/;Pocahontas;pocahontas
+http://www.meetup.com/cities/us/ar/prairie_grove/;Prairie Grove;prairie_grove
+http://www.meetup.com/cities/us/ar/rogers/;Rogers;rogers
+http://www.meetup.com/cities/us/ar/russellville/;Russellville;russellville
+http://www.meetup.com/cities/us/ar/searcy/;Searcy;searcy
+http://www.meetup.com/cities/us/ar/sherwood/;Sherwood;sherwood
+http://www.meetup.com/cities/us/ar/siloam_springs/;Siloam Springs;siloam_springs
+http://www.meetup.com/cities/us/ar/springdale/;Springdale;springdale
+http://www.meetup.com/cities/us/ar/texarkana/;Texarkana;texarkana
+http://www.meetup.com/cities/us/ar/van_buren/;Van Buren;van_buren
+http://www.meetup.com/cities/us/ar/vilonia/;Vilonia;vilonia
+http://www.meetup.com/cities/us/ar/west_memphis/;West Memphis;west_memphis
+http://www.meetup.com/cities/us/ar/white_hall/;White Hall;white_hall
+http://www.meetup.com/cities/us/ar/alexander/;Alexander;alexander
+http://www.meetup.com/cities/us/ar/arkadelphia/;Arkadelphia;arkadelphia
+http://www.meetup.com/cities/us/ar/batesville/;Batesville;batesville
+http://www.meetup.com/cities/us/ar/bella_vista/;Bella Vista;bella_vista
+http://www.meetup.com/cities/us/ar/benton/;Benton;benton
+http://www.meetup.com/cities/us/ar/bentonville/;Bentonville;bentonville
+http://www.meetup.com/cities/us/ar/blytheville/;Blytheville;blytheville
+http://www.meetup.com/cities/us/ar/bryant/;Bryant;bryant
+http://www.meetup.com/cities/us/ar/cabot/;Cabot;cabot
+http://www.meetup.com/cities/us/ar/camden/;Camden;camden
+http://www.meetup.com/cities/us/ar/centerton/;Centerton;centerton
+http://www.meetup.com/cities/us/ar/conway/;Conway;conway
+http://www.meetup.com/cities/us/ar/el_dorado/;El Dorado;el_dorado
+http://www.meetup.com/cities/us/ar/eureka_springs/;Eureka Springs;eureka_springs
+http://www.meetup.com/cities/us/ar/fayetteville/;Fayetteville;fayetteville
+http://www.meetup.com/cities/us/ar/fort_smith/;Fort Smith;fort_smith
+http://www.meetup.com/cities/us/ar/greenbrier/;Greenbrier;greenbrier
+http://www.meetup.com/cities/us/ar/greenwood/;Greenwood;greenwood
+http://www.meetup.com/cities/us/ar/harrison/;Harrison;harrison
+http://www.meetup.com/cities/us/ar/heber_springs/;Heber Springs;heber_springs
+http://www.meetup.com/cities/us/ar/hot_springs_national_park/;Hot Springs National Park;hot_springs_national_park
+http://www.meetup.com/cities/us/ar/hot_springs_village/;Hot Springs Village;hot_springs_village
+http://www.meetup.com/cities/us/ar/jacksonville/;Jacksonville;jacksonville
+http://www.meetup.com/cities/us/ar/jonesboro/;Jonesboro;jonesboro
+http://www.meetup.com/cities/us/ar/little_rock/;Little Rock;little_rock
+http://www.meetup.com/cities/us/ar/lowell/;Lowell;lowell
+http://www.meetup.com/cities/us/ar/mabelvale/;Mabelvale;mabelvale
+http://www.meetup.com/cities/us/ar/malvern/;Malvern;malvern
+http://www.meetup.com/cities/us/ar/marion/;Marion;marion
+http://www.meetup.com/cities/us/ar/maumelle/;Maumelle;maumelle
+http://www.meetup.com/cities/us/ar/mena/;Mena;mena
+http://www.meetup.com/cities/us/ar/monticello/;Monticello;monticello
+http://www.meetup.com/cities/us/ar/mountain_home/;Mountain Home;mountain_home
+http://www.meetup.com/cities/us/ar/north_little_rock/;North Little Rock;north_little_rock
+http://www.meetup.com/cities/us/ar/ozark/;Ozark;ozark
+http://www.meetup.com/cities/us/ar/paragould/;Paragould;paragould
+http://www.meetup.com/cities/us/ar/pine_bluff/;Pine Bluff;pine_bluff
+http://www.meetup.com/cities/us/ar/pocahontas/;Pocahontas;pocahontas
+http://www.meetup.com/cities/us/ar/prairie_grove/;Prairie Grove;prairie_grove
+http://www.meetup.com/cities/us/ar/rogers/;Rogers;rogers
+http://www.meetup.com/cities/us/ar/russellville/;Russellville;russellville
+http://www.meetup.com/cities/us/ar/searcy/;Searcy;searcy
+http://www.meetup.com/cities/us/ar/sherwood/;Sherwood;sherwood
+http://www.meetup.com/cities/us/ar/siloam_springs/;Siloam Springs;siloam_springs
+http://www.meetup.com/cities/us/ar/springdale/;Springdale;springdale
+http://www.meetup.com/cities/us/ar/texarkana/;Texarkana;texarkana
+http://www.meetup.com/cities/us/ar/van_buren/;Van Buren;van_buren
+http://www.meetup.com/cities/us/ar/vilonia/;Vilonia;vilonia
+http://www.meetup.com/cities/us/ar/west_memphis/;West Memphis;west_memphis
+http://www.meetup.com/cities/us/ar/white_hall/;White Hall;white_hall

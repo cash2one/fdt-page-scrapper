@@ -1,0 +1,528 @@
+http://www.meetup.com/cities/us/ne/abie/;Abie;abie
+http://www.meetup.com/cities/us/ne/adams/;Adams;adams
+http://www.meetup.com/cities/us/ne/ainsworth/;Ainsworth;ainsworth
+http://www.meetup.com/cities/us/ne/albion/;Albion;albion
+http://www.meetup.com/cities/us/ne/alda/;Alda;alda
+http://www.meetup.com/cities/us/ne/alexandria/;Alexandria;alexandria
+http://www.meetup.com/cities/us/ne/allen/;Allen;allen
+http://www.meetup.com/cities/us/ne/alliance/;Alliance;alliance
+http://www.meetup.com/cities/us/ne/alma/;Alma;alma
+http://www.meetup.com/cities/us/ne/alvo/;Alvo;alvo
+http://www.meetup.com/cities/us/ne/amelia/;Amelia;amelia
+http://www.meetup.com/cities/us/ne/ames/;Ames;ames
+http://www.meetup.com/cities/us/ne/amherst/;Amherst;amherst
+http://www.meetup.com/cities/us/ne/angora/;Angora;angora
+http://www.meetup.com/cities/us/ne/anselmo/;Anselmo;anselmo
+http://www.meetup.com/cities/us/ne/ansley/;Ansley;ansley
+http://www.meetup.com/cities/us/ne/arapahoe/;Arapahoe;arapahoe
+http://www.meetup.com/cities/us/ne/arcadia/;Arcadia;arcadia
+http://www.meetup.com/cities/us/ne/archer/;Archer;archer
+http://www.meetup.com/cities/us/ne/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/ne/arnold/;Arnold;arnold
+http://www.meetup.com/cities/us/ne/arthur/;Arthur;arthur
+http://www.meetup.com/cities/us/ne/ashby/;Ashby;ashby
+http://www.meetup.com/cities/us/ne/ashland/;Ashland;ashland
+http://www.meetup.com/cities/us/ne/ashton/;Ashton;ashton
+http://www.meetup.com/cities/us/ne/atkinson/;Atkinson;atkinson
+http://www.meetup.com/cities/us/ne/atlanta/;Atlanta;atlanta
+http://www.meetup.com/cities/us/ne/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/ne/aurora/;Aurora;aurora
+http://www.meetup.com/cities/us/ne/avoca/;Avoca;avoca
+http://www.meetup.com/cities/us/ne/axtell/;Axtell;axtell
+http://www.meetup.com/cities/us/ne/ayr/;Ayr;ayr
+http://www.meetup.com/cities/us/ne/bancroft/;Bancroft;bancroft
+http://www.meetup.com/cities/us/ne/barneston/;Barneston;barneston
+http://www.meetup.com/cities/us/ne/bartlett/;Bartlett;bartlett
+http://www.meetup.com/cities/us/ne/bartley/;Bartley;bartley
+http://www.meetup.com/cities/us/ne/bassett/;Bassett;bassett
+http://www.meetup.com/cities/us/ne/battle_creek/;Battle Creek;battle_creek
+http://www.meetup.com/cities/us/ne/bayard/;Bayard;bayard
+http://www.meetup.com/cities/us/ne/beatrice/;Beatrice;beatrice
+http://www.meetup.com/cities/us/ne/beaver_city/;Beaver City;beaver_city
+http://www.meetup.com/cities/us/ne/beaver_crossing/;Beaver Crossing;beaver_crossing
+http://www.meetup.com/cities/us/ne/bee/;Bee;bee
+http://www.meetup.com/cities/us/ne/beemer/;Beemer;beemer
+http://www.meetup.com/cities/us/ne/belden/;Belden;belden
+http://www.meetup.com/cities/us/ne/belgrade/;Belgrade;belgrade
+http://www.meetup.com/cities/us/ne/bellevue/;Bellevue;bellevue
+http://www.meetup.com/cities/us/ne/bellwood/;Bellwood;bellwood
+http://www.meetup.com/cities/us/ne/belvidere/;Belvidere;belvidere
+http://www.meetup.com/cities/us/ne/benedict/;Benedict;benedict
+http://www.meetup.com/cities/us/ne/benkelman/;Benkelman;benkelman
+http://www.meetup.com/cities/us/ne/bennet/;Bennet;bennet
+http://www.meetup.com/cities/us/ne/bennington/;Bennington;bennington
+http://www.meetup.com/cities/us/ne/bertrand/;Bertrand;bertrand
+http://www.meetup.com/cities/us/ne/big_springs/;Big Springs;big_springs
+http://www.meetup.com/cities/us/ne/bingham/;Bingham;bingham
+http://www.meetup.com/cities/us/ne/bladen/;Bladen;bladen
+http://www.meetup.com/cities/us/ne/blair/;Blair;blair
+http://www.meetup.com/cities/us/ne/bloomfield/;Bloomfield;bloomfield
+http://www.meetup.com/cities/us/ne/bloomington/;Bloomington;bloomington
+http://www.meetup.com/cities/us/ne/blue_hill/;Blue Hill;blue_hill
+http://www.meetup.com/cities/us/ne/blue_springs/;Blue Springs;blue_springs
+http://www.meetup.com/cities/us/ne/boelus/;Boelus;boelus
+http://www.meetup.com/cities/us/ne/boys_town/;Boys Town;boys_town
+http://www.meetup.com/cities/us/ne/bradshaw/;Bradshaw;bradshaw
+http://www.meetup.com/cities/us/ne/brady/;Brady;brady
+http://www.meetup.com/cities/us/ne/brainard/;Brainard;brainard
+http://www.meetup.com/cities/us/ne/brewster/;Brewster;brewster
+http://www.meetup.com/cities/us/ne/bridgeport/;Bridgeport;bridgeport
+http://www.meetup.com/cities/us/ne/bristow/;Bristow;bristow
+http://www.meetup.com/cities/us/ne/broadwater/;Broadwater;broadwater
+http://www.meetup.com/cities/us/ne/brock/;Brock;brock
+http://www.meetup.com/cities/us/ne/broken_bow/;Broken Bow;broken_bow
+http://www.meetup.com/cities/us/ne/brownville/;Brownville;brownville
+http://www.meetup.com/cities/us/ne/brule/;Brule;brule
+http://www.meetup.com/cities/us/ne/bruning/;Bruning;bruning
+http://www.meetup.com/cities/us/ne/bruno/;Bruno;bruno
+http://www.meetup.com/cities/us/ne/brunswick/;Brunswick;brunswick
+http://www.meetup.com/cities/us/ne/burchard/;Burchard;burchard
+http://www.meetup.com/cities/us/ne/burr/;Burr;burr
+http://www.meetup.com/cities/us/ne/burwell/;Burwell;burwell
+http://www.meetup.com/cities/us/ne/bushnell/;Bushnell;bushnell
+http://www.meetup.com/cities/us/ne/butte/;Butte;butte
+http://www.meetup.com/cities/us/ne/byron/;Byron;byron
+http://www.meetup.com/cities/us/ne/cairo/;Cairo;cairo
+http://www.meetup.com/cities/us/ne/callaway/;Callaway;callaway
+http://www.meetup.com/cities/us/ne/cambridge/;Cambridge;cambridge
+http://www.meetup.com/cities/us/ne/campbell/;Campbell;campbell
+http://www.meetup.com/cities/us/ne/carleton/;Carleton;carleton
+http://www.meetup.com/cities/us/ne/carroll/;Carroll;carroll
+http://www.meetup.com/cities/us/ne/cedar_bluffs/;Cedar Bluffs;cedar_bluffs
+http://www.meetup.com/cities/us/ne/cedar_creek/;Cedar Creek;cedar_creek
+http://www.meetup.com/cities/us/ne/cedar_rapids/;Cedar Rapids;cedar_rapids
+http://www.meetup.com/cities/us/ne/center/;Center;center
+http://www.meetup.com/cities/us/ne/central_city/;Central City;central_city
+http://www.meetup.com/cities/us/ne/ceresco/;Ceresco;ceresco
+http://www.meetup.com/cities/us/ne/chadron/;Chadron;chadron
+http://www.meetup.com/cities/us/ne/chambers/;Chambers;chambers
+http://www.meetup.com/cities/us/ne/champion/;Champion;champion
+http://www.meetup.com/cities/us/ne/chapman/;Chapman;chapman
+http://www.meetup.com/cities/us/ne/chappell/;Chappell;chappell
+http://www.meetup.com/cities/us/ne/chester/;Chester;chester
+http://www.meetup.com/cities/us/ne/clarks/;Clarks;clarks
+http://www.meetup.com/cities/us/ne/clarkson/;Clarkson;clarkson
+http://www.meetup.com/cities/us/ne/clatonia/;Clatonia;clatonia
+http://www.meetup.com/cities/us/ne/clay_center/;Clay Center;clay_center
+http://www.meetup.com/cities/us/ne/clearwater/;Clearwater;clearwater
+http://www.meetup.com/cities/us/ne/cody/;Cody;cody
+http://www.meetup.com/cities/us/ne/coleridge/;Coleridge;coleridge
+http://www.meetup.com/cities/us/ne/colon/;Colon;colon
+http://www.meetup.com/cities/us/ne/columbus/;Columbus;columbus
+http://www.meetup.com/cities/us/ne/comstock/;Comstock;comstock
+http://www.meetup.com/cities/us/ne/concord/;Concord;concord
+http://www.meetup.com/cities/us/ne/cook/;Cook;cook
+http://www.meetup.com/cities/us/ne/cordova/;Cordova;cordova
+http://www.meetup.com/cities/us/ne/cortland/;Cortland;cortland
+http://www.meetup.com/cities/us/ne/cozad/;Cozad;cozad
+http://www.meetup.com/cities/us/ne/crab_orchard/;Crab Orchard;crab_orchard
+http://www.meetup.com/cities/us/ne/craig/;Craig;craig
+http://www.meetup.com/cities/us/ne/crawford/;Crawford;crawford
+http://www.meetup.com/cities/us/ne/creighton/;Creighton;creighton
+http://www.meetup.com/cities/us/ne/creston/;Creston;creston
+http://www.meetup.com/cities/us/ne/crete/;Crete;crete
+http://www.meetup.com/cities/us/ne/crofton/;Crofton;crofton
+http://www.meetup.com/cities/us/ne/crookston/;Crookston;crookston
+http://www.meetup.com/cities/us/ne/culbertson/;Culbertson;culbertson
+http://www.meetup.com/cities/us/ne/curtis/;Curtis;curtis
+http://www.meetup.com/cities/us/ne/dakota_city/;Dakota City;dakota_city
+http://www.meetup.com/cities/us/ne/dalton/;Dalton;dalton
+http://www.meetup.com/cities/us/ne/danbury/;Danbury;danbury
+http://www.meetup.com/cities/us/ne/dannebrog/;Dannebrog;dannebrog
+http://www.meetup.com/cities/us/ne/davenport/;Davenport;davenport
+http://www.meetup.com/cities/us/ne/davey/;Davey;davey
+http://www.meetup.com/cities/us/ne/david_city/;David City;david_city
+http://www.meetup.com/cities/us/ne/dawson/;Dawson;dawson
+http://www.meetup.com/cities/us/ne/daykin/;Daykin;daykin
+http://www.meetup.com/cities/us/ne/decatur/;Decatur;decatur
+http://www.meetup.com/cities/us/ne/denton/;Denton;denton
+http://www.meetup.com/cities/us/ne/deshler/;Deshler;deshler
+http://www.meetup.com/cities/us/ne/deweese/;Deweese;deweese
+http://www.meetup.com/cities/us/ne/de_witt/;De Witt;de_witt
+http://www.meetup.com/cities/us/ne/dickens/;Dickens;dickens
+http://www.meetup.com/cities/us/ne/diller/;Diller;diller
+http://www.meetup.com/cities/us/ne/dix/;Dix;dix
+http://www.meetup.com/cities/us/ne/dixon/;Dixon;dixon
+http://www.meetup.com/cities/us/ne/dodge/;Dodge;dodge
+http://www.meetup.com/cities/us/ne/doniphan/;Doniphan;doniphan
+http://www.meetup.com/cities/us/ne/dorchester/;Dorchester;dorchester
+http://www.meetup.com/cities/us/ne/douglas/;Douglas;douglas
+http://www.meetup.com/cities/us/ne/du_bois/;Du Bois;du_bois
+http://www.meetup.com/cities/us/ne/dunbar/;Dunbar;dunbar
+http://www.meetup.com/cities/us/ne/duncan/;Duncan;duncan
+http://www.meetup.com/cities/us/ne/dunning/;Dunning;dunning
+http://www.meetup.com/cities/us/ne/dwight/;Dwight;dwight
+http://www.meetup.com/cities/us/ne/eagle/;Eagle;eagle
+http://www.meetup.com/cities/us/ne/eddyville/;Eddyville;eddyville
+http://www.meetup.com/cities/us/ne/edgar/;Edgar;edgar
+http://www.meetup.com/cities/us/ne/edison/;Edison;edison
+http://www.meetup.com/cities/us/ne/elba/;Elba;elba
+http://www.meetup.com/cities/us/ne/elgin/;Elgin;elgin
+http://www.meetup.com/cities/us/ne/elk_creek/;Elk Creek;elk_creek
+http://www.meetup.com/cities/us/ne/elkhorn/;Elkhorn;elkhorn
+http://www.meetup.com/cities/us/ne/ellsworth/;Ellsworth;ellsworth
+http://www.meetup.com/cities/us/ne/elm_creek/;Elm Creek;elm_creek
+http://www.meetup.com/cities/us/ne/elmwood/;Elmwood;elmwood
+http://www.meetup.com/cities/us/ne/elsie/;Elsie;elsie
+http://www.meetup.com/cities/us/ne/elsmere/;Elsmere;elsmere
+http://www.meetup.com/cities/us/ne/elwood/;Elwood;elwood
+http://www.meetup.com/cities/us/ne/elyria/;Elyria;elyria
+http://www.meetup.com/cities/us/ne/emerson/;Emerson;emerson
+http://www.meetup.com/cities/us/ne/emmet/;Emmet;emmet
+http://www.meetup.com/cities/us/ne/enders/;Enders;enders
+http://www.meetup.com/cities/us/ne/endicott/;Endicott;endicott
+http://www.meetup.com/cities/us/ne/ericson/;Ericson;ericson
+http://www.meetup.com/cities/us/ne/eustis/;Eustis;eustis
+http://www.meetup.com/cities/us/ne/ewing/;Ewing;ewing
+http://www.meetup.com/cities/us/ne/exeter/;Exeter;exeter
+http://www.meetup.com/cities/us/ne/fairbury/;Fairbury;fairbury
+http://www.meetup.com/cities/us/ne/fairfield/;Fairfield;fairfield
+http://www.meetup.com/cities/us/ne/fairmont/;Fairmont;fairmont
+http://www.meetup.com/cities/us/ne/falls_city/;Falls City;falls_city
+http://www.meetup.com/cities/us/ne/farnam/;Farnam;farnam
+http://www.meetup.com/cities/us/ne/farwell/;Farwell;farwell
+http://www.meetup.com/cities/us/ne/filley/;Filley;filley
+http://www.meetup.com/cities/us/ne/firth/;Firth;firth
+http://www.meetup.com/cities/us/ne/fordyce/;Fordyce;fordyce
+http://www.meetup.com/cities/us/ne/fort_calhoun/;Fort Calhoun;fort_calhoun
+http://www.meetup.com/cities/us/ne/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/ne/fremont/;Fremont;fremont
+http://www.meetup.com/cities/us/ne/friend/;Friend;friend
+http://www.meetup.com/cities/us/ne/fullerton/;Fullerton;fullerton
+http://www.meetup.com/cities/us/ne/funk/;Funk;funk
+http://www.meetup.com/cities/us/ne/garland/;Garland;garland
+http://www.meetup.com/cities/us/ne/geneva/;Geneva;geneva
+http://www.meetup.com/cities/us/ne/genoa/;Genoa;genoa
+http://www.meetup.com/cities/us/ne/gering/;Gering;gering
+http://www.meetup.com/cities/us/ne/gibbon/;Gibbon;gibbon
+http://www.meetup.com/cities/us/ne/gilead/;Gilead;gilead
+http://www.meetup.com/cities/us/ne/giltner/;Giltner;giltner
+http://www.meetup.com/cities/us/ne/glenvil/;Glenvil;glenvil
+http://www.meetup.com/cities/us/ne/goehner/;Goehner;goehner
+http://www.meetup.com/cities/us/ne/gordon/;Gordon;gordon
+http://www.meetup.com/cities/us/ne/gothenburg/;Gothenburg;gothenburg
+http://www.meetup.com/cities/us/ne/grafton/;Grafton;grafton
+http://www.meetup.com/cities/us/ne/grand_island/;Grand Island;grand_island
+http://www.meetup.com/cities/us/ne/grant/;Grant;grant
+http://www.meetup.com/cities/us/ne/greeley/;Greeley;greeley
+http://www.meetup.com/cities/us/ne/greenwood/;Greenwood;greenwood
+http://www.meetup.com/cities/us/ne/gresham/;Gresham;gresham
+http://www.meetup.com/cities/us/ne/gretna/;Gretna;gretna
+http://www.meetup.com/cities/us/ne/guide_rock/;Guide Rock;guide_rock
+http://www.meetup.com/cities/us/ne/gurley/;Gurley;gurley
+http://www.meetup.com/cities/us/ne/hadar/;Hadar;hadar
+http://www.meetup.com/cities/us/ne/haigler/;Haigler;haigler
+http://www.meetup.com/cities/us/ne/hallam/;Hallam;hallam
+http://www.meetup.com/cities/us/ne/halsey/;Halsey;halsey
+http://www.meetup.com/cities/us/ne/hampton/;Hampton;hampton
+http://www.meetup.com/cities/us/ne/hardy/;Hardy;hardy
+http://www.meetup.com/cities/us/ne/harrisburg/;Harrisburg;harrisburg
+http://www.meetup.com/cities/us/ne/harrison/;Harrison;harrison
+http://www.meetup.com/cities/us/ne/hartington/;Hartington;hartington
+http://www.meetup.com/cities/us/ne/harvard/;Harvard;harvard
+http://www.meetup.com/cities/us/ne/hastings/;Hastings;hastings
+http://www.meetup.com/cities/us/ne/hayes_center/;Hayes Center;hayes_center
+http://www.meetup.com/cities/us/ne/hay_springs/;Hay Springs;hay_springs
+http://www.meetup.com/cities/us/ne/hazard/;Hazard;hazard
+http://www.meetup.com/cities/us/ne/heartwell/;Heartwell;heartwell
+http://www.meetup.com/cities/us/ne/hebron/;Hebron;hebron
+http://www.meetup.com/cities/us/ne/hemingford/;Hemingford;hemingford
+http://www.meetup.com/cities/us/ne/henderson/;Henderson;henderson
+http://www.meetup.com/cities/us/ne/hendley/;Hendley;hendley
+http://www.meetup.com/cities/us/ne/herman/;Herman;herman
+http://www.meetup.com/cities/us/ne/hershey/;Hershey;hershey
+http://www.meetup.com/cities/us/ne/hickman/;Hickman;hickman
+http://www.meetup.com/cities/us/ne/hildreth/;Hildreth;hildreth
+http://www.meetup.com/cities/us/ne/holbrook/;Holbrook;holbrook
+http://www.meetup.com/cities/us/ne/holdrege/;Holdrege;holdrege
+http://www.meetup.com/cities/us/ne/holstein/;Holstein;holstein
+http://www.meetup.com/cities/us/ne/homer/;Homer;homer
+http://www.meetup.com/cities/us/ne/hooper/;Hooper;hooper
+http://www.meetup.com/cities/us/ne/hordville/;Hordville;hordville
+http://www.meetup.com/cities/us/ne/hoskins/;Hoskins;hoskins
+http://www.meetup.com/cities/us/ne/howells/;Howells;howells
+http://www.meetup.com/cities/us/ne/hubbard/;Hubbard;hubbard
+http://www.meetup.com/cities/us/ne/hubbell/;Hubbell;hubbell
+http://www.meetup.com/cities/us/ne/humboldt/;Humboldt;humboldt
+http://www.meetup.com/cities/us/ne/humphrey/;Humphrey;humphrey
+http://www.meetup.com/cities/us/ne/hyannis/;Hyannis;hyannis
+http://www.meetup.com/cities/us/ne/imperial/;Imperial;imperial
+http://www.meetup.com/cities/us/ne/inavale/;Inavale;inavale
+http://www.meetup.com/cities/us/ne/indianola/;Indianola;indianola
+http://www.meetup.com/cities/us/ne/inland/;Inland;inland
+http://www.meetup.com/cities/us/ne/inman/;Inman;inman
+http://www.meetup.com/cities/us/ne/ithaca/;Ithaca;ithaca
+http://www.meetup.com/cities/us/ne/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/ne/jansen/;Jansen;jansen
+http://www.meetup.com/cities/us/ne/johnson/;Johnson;johnson
+http://www.meetup.com/cities/us/ne/johnstown/;Johnstown;johnstown
+http://www.meetup.com/cities/us/ne/julian/;Julian;julian
+http://www.meetup.com/cities/us/ne/juniata/;Juniata;juniata
+http://www.meetup.com/cities/us/ne/kearney/;Kearney;kearney
+http://www.meetup.com/cities/us/ne/kenesaw/;Kenesaw;kenesaw
+http://www.meetup.com/cities/us/ne/kennard/;Kennard;kennard
+http://www.meetup.com/cities/us/ne/keystone/;Keystone;keystone
+http://www.meetup.com/cities/us/ne/kilgore/;Kilgore;kilgore
+http://www.meetup.com/cities/us/ne/kimball/;Kimball;kimball
+http://www.meetup.com/cities/us/ne/lakeside/;Lakeside;lakeside
+http://www.meetup.com/cities/us/ne/laurel/;Laurel;laurel
+http://www.meetup.com/cities/us/ne/la_vista/;La Vista;la_vista
+http://www.meetup.com/cities/us/ne/lawrence/;Lawrence;lawrence
+http://www.meetup.com/cities/us/ne/lebanon/;Lebanon;lebanon
+http://www.meetup.com/cities/us/ne/leigh/;Leigh;leigh
+http://www.meetup.com/cities/us/ne/lemoyne/;Lemoyne;lemoyne
+http://www.meetup.com/cities/us/ne/lewellen/;Lewellen;lewellen
+http://www.meetup.com/cities/us/ne/lewiston/;Lewiston;lewiston
+http://www.meetup.com/cities/us/ne/lexington/;Lexington;lexington
+http://www.meetup.com/cities/us/ne/liberty/;Liberty;liberty
+http://www.meetup.com/cities/us/ne/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/ne/lindsay/;Lindsay;lindsay
+http://www.meetup.com/cities/us/ne/linwood/;Linwood;linwood
+http://www.meetup.com/cities/us/ne/lisco/;Lisco;lisco
+http://www.meetup.com/cities/us/ne/litchfield/;Litchfield;litchfield
+http://www.meetup.com/cities/us/ne/lodgepole/;Lodgepole;lodgepole
+http://www.meetup.com/cities/us/ne/long_pine/;Long Pine;long_pine
+http://www.meetup.com/cities/us/ne/loomis/;Loomis;loomis
+http://www.meetup.com/cities/us/ne/lorton/;Lorton;lorton
+http://www.meetup.com/cities/us/ne/louisville/;Louisville;louisville
+http://www.meetup.com/cities/us/ne/loup_city/;Loup City;loup_city
+http://www.meetup.com/cities/us/ne/lyman/;Lyman;lyman
+http://www.meetup.com/cities/us/ne/lynch/;Lynch;lynch
+http://www.meetup.com/cities/us/ne/lyons/;Lyons;lyons
+http://www.meetup.com/cities/us/ne/macy/;Macy;macy
+http://www.meetup.com/cities/us/ne/madison/;Madison;madison
+http://www.meetup.com/cities/us/ne/madrid/;Madrid;madrid
+http://www.meetup.com/cities/us/ne/magnet/;Magnet;magnet
+http://www.meetup.com/cities/us/ne/malcolm/;Malcolm;malcolm
+http://www.meetup.com/cities/us/ne/malmo/;Malmo;malmo
+http://www.meetup.com/cities/us/ne/manley/;Manley;manley
+http://www.meetup.com/cities/us/ne/marquette/;Marquette;marquette
+http://www.meetup.com/cities/us/ne/marsland/;Marsland;marsland
+http://www.meetup.com/cities/us/ne/martell/;Martell;martell
+http://www.meetup.com/cities/us/ne/maskell/;Maskell;maskell
+http://www.meetup.com/cities/us/ne/mason_city/;Mason City;mason_city
+http://www.meetup.com/cities/us/ne/max/;Max;max
+http://www.meetup.com/cities/us/ne/maxwell/;Maxwell;maxwell
+http://www.meetup.com/cities/us/ne/maywood/;Maywood;maywood
+http://www.meetup.com/cities/us/ne/mc_cook/;Mc Cook;mc_cook
+http://www.meetup.com/cities/us/ne/mc_cool_junction/;Mc Cool Junction;mc_cool_junction
+http://www.meetup.com/cities/us/ne/mcgrew/;McGrew;mcgrew
+http://www.meetup.com/cities/us/ne/mclean/;McLean;mclean
+http://www.meetup.com/cities/us/ne/mead/;Mead;mead
+http://www.meetup.com/cities/us/ne/meadow_grove/;Meadow Grove;meadow_grove
+http://www.meetup.com/cities/us/ne/melbeta/;Melbeta;melbeta
+http://www.meetup.com/cities/us/ne/memphis/;Memphis;memphis
+http://www.meetup.com/cities/us/ne/merna/;Merna;merna
+http://www.meetup.com/cities/us/ne/merriman/;Merriman;merriman
+http://www.meetup.com/cities/us/ne/milford/;Milford;milford
+http://www.meetup.com/cities/us/ne/miller/;Miller;miller
+http://www.meetup.com/cities/us/ne/milligan/;Milligan;milligan
+http://www.meetup.com/cities/us/ne/mills/;Mills;mills
+http://www.meetup.com/cities/us/ne/minatare/;Minatare;minatare
+http://www.meetup.com/cities/us/ne/minden/;Minden;minden
+http://www.meetup.com/cities/us/ne/mitchell/;Mitchell;mitchell
+http://www.meetup.com/cities/us/ne/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/ne/moorefield/;Moorefield;moorefield
+http://www.meetup.com/cities/us/ne/morrill/;Morrill;morrill
+http://www.meetup.com/cities/us/ne/morse_bluff/;Morse Bluff;morse_bluff
+http://www.meetup.com/cities/us/ne/mullen/;Mullen;mullen
+http://www.meetup.com/cities/us/ne/murdock/;Murdock;murdock
+http://www.meetup.com/cities/us/ne/murray/;Murray;murray
+http://www.meetup.com/cities/us/ne/naper/;Naper;naper
+http://www.meetup.com/cities/us/ne/naponee/;Naponee;naponee
+http://www.meetup.com/cities/us/ne/nebraska_city/;Nebraska City;nebraska_city
+http://www.meetup.com/cities/us/ne/nehawka/;Nehawka;nehawka
+http://www.meetup.com/cities/us/ne/neligh/;Neligh;neligh
+http://www.meetup.com/cities/us/ne/nelson/;Nelson;nelson
+http://www.meetup.com/cities/us/ne/nemaha/;Nemaha;nemaha
+http://www.meetup.com/cities/us/ne/nenzel/;Nenzel;nenzel
+http://www.meetup.com/cities/us/ne/newcastle/;Newcastle;newcastle
+http://www.meetup.com/cities/us/ne/newman_grove/;Newman Grove;newman_grove
+http://www.meetup.com/cities/us/ne/newport/;Newport;newport
+http://www.meetup.com/cities/us/ne/nickerson/;Nickerson;nickerson
+http://www.meetup.com/cities/us/ne/niobrara/;Niobrara;niobrara
+http://www.meetup.com/cities/us/ne/norfolk/;Norfolk;norfolk
+http://www.meetup.com/cities/us/ne/north_bend/;North Bend;north_bend
+http://www.meetup.com/cities/us/ne/north_loup/;North Loup;north_loup
+http://www.meetup.com/cities/us/ne/north_platte/;North Platte;north_platte
+http://www.meetup.com/cities/us/ne/oak/;Oak;oak
+http://www.meetup.com/cities/us/ne/oakdale/;Oakdale;oakdale
+http://www.meetup.com/cities/us/ne/oakland/;Oakland;oakland
+http://www.meetup.com/cities/us/ne/oconto/;Oconto;oconto
+http://www.meetup.com/cities/us/ne/odell/;Odell;odell
+http://www.meetup.com/cities/us/ne/odessa/;Odessa;odessa
+http://www.meetup.com/cities/us/ne/offutt_a_f_b/;Offutt A F B;offutt_a_f_b
+http://www.meetup.com/cities/us/ne/ogallala/;Ogallala;ogallala
+http://www.meetup.com/cities/us/ne/ohiowa/;Ohiowa;ohiowa
+http://www.meetup.com/cities/us/ne/omaha/;Omaha;omaha
+http://www.meetup.com/cities/us/ne/oneill/;Oneill;oneill
+http://www.meetup.com/cities/us/ne/ong/;Ong;ong
+http://www.meetup.com/cities/us/ne/orchard/;Orchard;orchard
+http://www.meetup.com/cities/us/ne/ord/;Ord;ord
+http://www.meetup.com/cities/us/ne/orleans/;Orleans;orleans
+http://www.meetup.com/cities/us/ne/osceola/;Osceola;osceola
+http://www.meetup.com/cities/us/ne/oshkosh/;Oshkosh;oshkosh
+http://www.meetup.com/cities/us/ne/osmond/;Osmond;osmond
+http://www.meetup.com/cities/us/ne/otoe/;Otoe;otoe
+http://www.meetup.com/cities/us/ne/overton/;Overton;overton
+http://www.meetup.com/cities/us/ne/oxford/;Oxford;oxford
+http://www.meetup.com/cities/us/ne/page/;Page;page
+http://www.meetup.com/cities/us/ne/palisade/;Palisade;palisade
+http://www.meetup.com/cities/us/ne/palmer/;Palmer;palmer
+http://www.meetup.com/cities/us/ne/palmyra/;Palmyra;palmyra
+http://www.meetup.com/cities/us/ne/panama/;Panama;panama
+http://www.meetup.com/cities/us/ne/papillion/;Papillion;papillion
+http://www.meetup.com/cities/us/ne/parks/;Parks;parks
+http://www.meetup.com/cities/us/ne/pawnee_city/;Pawnee City;pawnee_city
+http://www.meetup.com/cities/us/ne/paxton/;Paxton;paxton
+http://www.meetup.com/cities/us/ne/pender/;Pender;pender
+http://www.meetup.com/cities/us/ne/peru/;Peru;peru
+http://www.meetup.com/cities/us/ne/petersburg/;Petersburg;petersburg
+http://www.meetup.com/cities/us/ne/phillips/;Phillips;phillips
+http://www.meetup.com/cities/us/ne/pickrell/;Pickrell;pickrell
+http://www.meetup.com/cities/us/ne/pierce/;Pierce;pierce
+http://www.meetup.com/cities/us/ne/pilger/;Pilger;pilger
+http://www.meetup.com/cities/us/ne/plainview/;Plainview;plainview
+http://www.meetup.com/cities/us/ne/platte_center/;Platte Center;platte_center
+http://www.meetup.com/cities/us/ne/plattsmouth/;Plattsmouth;plattsmouth
+http://www.meetup.com/cities/us/ne/pleasant_dale/;Pleasant Dale;pleasant_dale
+http://www.meetup.com/cities/us/ne/pleasanton/;Pleasanton;pleasanton
+http://www.meetup.com/cities/us/ne/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/ne/polk/;Polk;polk
+http://www.meetup.com/cities/us/ne/ponca/;Ponca;ponca
+http://www.meetup.com/cities/us/ne/potter/;Potter;potter
+http://www.meetup.com/cities/us/ne/prague/;Prague;prague
+http://www.meetup.com/cities/us/ne/primrose/;Primrose;primrose
+http://www.meetup.com/cities/us/ne/purdum/;Purdum;purdum
+http://www.meetup.com/cities/us/ne/ragan/;Ragan;ragan
+http://www.meetup.com/cities/us/ne/randolph/;Randolph;randolph
+http://www.meetup.com/cities/us/ne/ravenna/;Ravenna;ravenna
+http://www.meetup.com/cities/us/ne/raymond/;Raymond;raymond
+http://www.meetup.com/cities/us/ne/red_cloud/;Red Cloud;red_cloud
+http://www.meetup.com/cities/us/ne/republican_city/;Republican City;republican_city
+http://www.meetup.com/cities/us/ne/reynolds/;Reynolds;reynolds
+http://www.meetup.com/cities/us/ne/rising_city/;Rising City;rising_city
+http://www.meetup.com/cities/us/ne/riverdale/;Riverdale;riverdale
+http://www.meetup.com/cities/us/ne/riverton/;Riverton;riverton
+http://www.meetup.com/cities/us/ne/roca/;Roca;roca
+http://www.meetup.com/cities/us/ne/rockville/;Rockville;rockville
+http://www.meetup.com/cities/us/ne/rogers/;Rogers;rogers
+http://www.meetup.com/cities/us/ne/rosalie/;Rosalie;rosalie
+http://www.meetup.com/cities/us/ne/roseland/;Roseland;roseland
+http://www.meetup.com/cities/us/ne/royal/;Royal;royal
+http://www.meetup.com/cities/us/ne/rulo/;Rulo;rulo
+http://www.meetup.com/cities/us/ne/rushville/;Rushville;rushville
+http://www.meetup.com/cities/us/ne/ruskin/;Ruskin;ruskin
+http://www.meetup.com/cities/us/ne/saint_edward/;Saint Edward;saint_edward
+http://www.meetup.com/cities/us/ne/saint_helena/;Saint Helena;saint_helena
+http://www.meetup.com/cities/us/ne/saint_libory/;Saint Libory;saint_libory
+http://www.meetup.com/cities/us/ne/saint_paul/;Saint Paul;saint_paul
+http://www.meetup.com/cities/us/ne/salem/;Salem;salem
+http://www.meetup.com/cities/us/ne/sargent/;Sargent;sargent
+http://www.meetup.com/cities/us/ne/saronville/;Saronville;saronville
+http://www.meetup.com/cities/us/ne/schuyler/;Schuyler;schuyler
+http://www.meetup.com/cities/us/ne/scotia/;Scotia;scotia
+http://www.meetup.com/cities/us/ne/scottsbluff/;Scottsbluff;scottsbluff
+http://www.meetup.com/cities/us/ne/scribner/;Scribner;scribner
+http://www.meetup.com/cities/us/ne/seneca/;Seneca;seneca
+http://www.meetup.com/cities/us/ne/seward/;Seward;seward
+http://www.meetup.com/cities/us/ne/shelby/;Shelby;shelby
+http://www.meetup.com/cities/us/ne/shelton/;Shelton;shelton
+http://www.meetup.com/cities/us/ne/shickley/;Shickley;shickley
+http://www.meetup.com/cities/us/ne/shubert/;Shubert;shubert
+http://www.meetup.com/cities/us/ne/sidney/;Sidney;sidney
+http://www.meetup.com/cities/us/ne/silver_creek/;Silver Creek;silver_creek
+http://www.meetup.com/cities/us/ne/smithfield/;Smithfield;smithfield
+http://www.meetup.com/cities/us/ne/snyder/;Snyder;snyder
+http://www.meetup.com/cities/us/ne/south_bend/;South Bend;south_bend
+http://www.meetup.com/cities/us/ne/south_sioux_city/;South Sioux City;south_sioux_city
+http://www.meetup.com/cities/us/ne/spalding/;Spalding;spalding
+http://www.meetup.com/cities/us/ne/sparks/;Sparks;sparks
+http://www.meetup.com/cities/us/ne/spencer/;Spencer;spencer
+http://www.meetup.com/cities/us/ne/sprague/;Sprague;sprague
+http://www.meetup.com/cities/us/ne/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/ne/springview/;Springview;springview
+http://www.meetup.com/cities/us/ne/stamford/;Stamford;stamford
+http://www.meetup.com/cities/us/ne/stanton/;Stanton;stanton
+http://www.meetup.com/cities/us/ne/staplehurst/;Staplehurst;staplehurst
+http://www.meetup.com/cities/us/ne/stapleton/;Stapleton;stapleton
+http://www.meetup.com/cities/us/ne/st_columbans/;St Columbans;st_columbans
+http://www.meetup.com/cities/us/ne/steele_city/;Steele City;steele_city
+http://www.meetup.com/cities/us/ne/steinauer/;Steinauer;steinauer
+http://www.meetup.com/cities/us/ne/stella/;Stella;stella
+http://www.meetup.com/cities/us/ne/sterling/;Sterling;sterling
+http://www.meetup.com/cities/us/ne/stockville/;Stockville;stockville
+http://www.meetup.com/cities/us/ne/strang/;Strang;strang
+http://www.meetup.com/cities/us/ne/stratton/;Stratton;stratton
+http://www.meetup.com/cities/us/ne/stromsburg/;Stromsburg;stromsburg
+http://www.meetup.com/cities/us/ne/stuart/;Stuart;stuart
+http://www.meetup.com/cities/us/ne/sumner/;Sumner;sumner
+http://www.meetup.com/cities/us/ne/superior/;Superior;superior
+http://www.meetup.com/cities/us/ne/surprise/;Surprise;surprise
+http://www.meetup.com/cities/us/ne/sutherland/;Sutherland;sutherland
+http://www.meetup.com/cities/us/ne/sutton/;Sutton;sutton
+http://www.meetup.com/cities/us/ne/swanton/;Swanton;swanton
+http://www.meetup.com/cities/us/ne/syracuse/;Syracuse;syracuse
+http://www.meetup.com/cities/us/ne/table_rock/;Table Rock;table_rock
+http://www.meetup.com/cities/us/ne/talmage/;Talmage;talmage
+http://www.meetup.com/cities/us/ne/taylor/;Taylor;taylor
+http://www.meetup.com/cities/us/ne/tecumseh/;Tecumseh;tecumseh
+http://www.meetup.com/cities/us/ne/tekamah/;Tekamah;tekamah
+http://www.meetup.com/cities/us/ne/thedford/;Thedford;thedford
+http://www.meetup.com/cities/us/ne/thurston/;Thurston;thurston
+http://www.meetup.com/cities/us/ne/tilden/;Tilden;tilden
+http://www.meetup.com/cities/us/ne/tobias/;Tobias;tobias
+http://www.meetup.com/cities/us/ne/trenton/;Trenton;trenton
+http://www.meetup.com/cities/us/ne/trumbull/;Trumbull;trumbull
+http://www.meetup.com/cities/us/ne/tryon/;Tryon;tryon
+http://www.meetup.com/cities/us/ne/uehling/;Uehling;uehling
+http://www.meetup.com/cities/us/ne/ulysses/;Ulysses;ulysses
+http://www.meetup.com/cities/us/ne/unadilla/;Unadilla;unadilla
+http://www.meetup.com/cities/us/ne/union/;Union;union
+http://www.meetup.com/cities/us/ne/upland/;Upland;upland
+http://www.meetup.com/cities/us/ne/utica/;Utica;utica
+http://www.meetup.com/cities/us/ne/valentine/;Valentine;valentine
+http://www.meetup.com/cities/us/ne/valley/;Valley;valley
+http://www.meetup.com/cities/us/ne/valparaiso/;Valparaiso;valparaiso
+http://www.meetup.com/cities/us/ne/venango/;Venango;venango
+http://www.meetup.com/cities/us/ne/verdigre/;Verdigre;verdigre
+http://www.meetup.com/cities/us/ne/verdon/;Verdon;verdon
+http://www.meetup.com/cities/us/ne/virginia/;Virginia;virginia
+http://www.meetup.com/cities/us/ne/waco/;Waco;waco
+http://www.meetup.com/cities/us/ne/wahoo/;Wahoo;wahoo
+http://www.meetup.com/cities/us/ne/wakefield/;Wakefield;wakefield
+http://www.meetup.com/cities/us/ne/wallace/;Wallace;wallace
+http://www.meetup.com/cities/us/ne/walthill/;Walthill;walthill
+http://www.meetup.com/cities/us/ne/walton/;Walton;walton
+http://www.meetup.com/cities/us/ne/washington/;Washington;washington
+http://www.meetup.com/cities/us/ne/waterbury/;Waterbury;waterbury
+http://www.meetup.com/cities/us/ne/waterloo/;Waterloo;waterloo
+http://www.meetup.com/cities/us/ne/wauneta/;Wauneta;wauneta
+http://www.meetup.com/cities/us/ne/wausa/;Wausa;wausa
+http://www.meetup.com/cities/us/ne/waverly/;Waverly;waverly
+http://www.meetup.com/cities/us/ne/wayne/;Wayne;wayne
+http://www.meetup.com/cities/us/ne/weeping_water/;Weeping Water;weeping_water
+http://www.meetup.com/cities/us/ne/wellfleet/;Wellfleet;wellfleet
+http://www.meetup.com/cities/us/ne/western/;Western;western
+http://www.meetup.com/cities/us/ne/westerville/;Westerville;westerville
+http://www.meetup.com/cities/us/ne/weston/;Weston;weston
+http://www.meetup.com/cities/us/ne/west_point/;West Point;west_point
+http://www.meetup.com/cities/us/ne/whiteclay/;Whiteclay;whiteclay
+http://www.meetup.com/cities/us/ne/whitman/;Whitman;whitman
+http://www.meetup.com/cities/us/ne/whitney/;Whitney;whitney
+http://www.meetup.com/cities/us/ne/wilber/;Wilber;wilber
+http://www.meetup.com/cities/us/ne/wilcox/;Wilcox;wilcox
+http://www.meetup.com/cities/us/ne/willow_island/;Willow Island;willow_island
+http://www.meetup.com/cities/us/ne/wilsonville/;Wilsonville;wilsonville
+http://www.meetup.com/cities/us/ne/winnebago/;Winnebago;winnebago
+http://www.meetup.com/cities/us/ne/winnetoon/;Winnetoon;winnetoon
+http://www.meetup.com/cities/us/ne/winside/;Winside;winside
+http://www.meetup.com/cities/us/ne/winslow/;Winslow;winslow
+http://www.meetup.com/cities/us/ne/wisner/;Wisner;wisner
+http://www.meetup.com/cities/us/ne/wolbach/;Wolbach;wolbach
+http://www.meetup.com/cities/us/ne/wood_lake/;Wood Lake;wood_lake
+http://www.meetup.com/cities/us/ne/wood_river/;Wood River;wood_river
+http://www.meetup.com/cities/us/ne/wymore/;Wymore;wymore
+http://www.meetup.com/cities/us/ne/wynot/;Wynot;wynot
+http://www.meetup.com/cities/us/ne/york/;York;york
+http://www.meetup.com/cities/us/ne/yutan/;Yutan;yutan

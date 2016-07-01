@@ -1,0 +1,479 @@
+http://www.meetup.com/cities/hn/achiotal/;Achiotal;achiotal
+http://www.meetup.com/cities/hn/agalteca/;Agalteca;agalteca
+http://www.meetup.com/cities/hn/agua_azul_rancho/;Agua Azul Rancho;agua_azul_rancho
+http://www.meetup.com/cities/hn/agua_azul_sierra/;Agua Azul Sierra;agua_azul_sierra
+http://www.meetup.com/cities/hn/agua_blanca_sur/;Agua Blanca Sur;agua_blanca_sur
+http://www.meetup.com/cities/hn/aguacaliente/;Aguacaliente;aguacaliente
+http://www.meetup.com/cities/hn/agua_caliente/;Agua Caliente;agua_caliente
+http://www.meetup.com/cities/hn/agua_caliente_de_linaca/;Agua Caliente de Linaca;agua_caliente_de_linaca
+http://www.meetup.com/cities/hn/agua_dulcita/;Agua Dulcita;agua_dulcita
+http://www.meetup.com/cities/hn/agua_fr%C3%ADa/;Agua Fría;agua_fr%C3%ADa
+http://www.meetup.com/cities/hn/agualote/;Agualote;agualote
+http://www.meetup.com/cities/hn/aguas_del_padre/;Aguas del Padre;aguas_del_padre
+http://www.meetup.com/cities/hn/ahu%C3%A1s/;Ahuás;ahu%C3%A1s
+http://www.meetup.com/cities/hn/ajuterique/;Ajuterique;ajuterique
+http://www.meetup.com/cities/hn/alubar%C3%A9n/;Alubarén;alubar%C3%A9n
+http://www.meetup.com/cities/hn/amapala/;Amapala;amapala
+http://www.meetup.com/cities/hn/antigua_ocotepeque/;Antigua Ocotepeque;antigua_ocotepeque
+http://www.meetup.com/cities/hn/apacilagua/;Apacilagua;apacilagua
+http://www.meetup.com/cities/hn/arada/;Arada;arada
+http://www.meetup.com/cities/hn/aramecina/;Aramecina;aramecina
+http://www.meetup.com/cities/hn/araul%C3%AD/;Araulí;araul%C3%AD
+http://www.meetup.com/cities/hn/arim%C3%ADs/;Arimís;arim%C3%ADs
+http://www.meetup.com/cities/hn/arizona/;Arizona;arizona
+http://www.meetup.com/cities/hn/armenia/;Armenia;armenia
+http://www.meetup.com/cities/hn/armenta/;Armenta;armenta
+http://www.meetup.com/cities/hn/atenas_de_san_crist%C3%B3bal/;Atenas de San Cristóbal;atenas_de_san_crist%C3%B3bal
+http://www.meetup.com/cities/hn/atima/;Atima;atima
+http://www.meetup.com/cities/hn/auka/;Auka;auka
+http://www.meetup.com/cities/hn/ayapa/;Ayapa;ayapa
+http://www.meetup.com/cities/hn/azacualpa/;Azacualpa;azacualpa
+http://www.meetup.com/cities/hn/bajamar/;Bajamar;bajamar
+http://www.meetup.com/cities/hn/b%C3%A1lsamo_oriental/;Bálsamo Oriental;b%C3%A1lsamo_oriental
+http://www.meetup.com/cities/hn/baracoa/;Baracoa;baracoa
+http://www.meetup.com/cities/hn/barra_patuca/;Barra Patuca;barra_patuca
+http://www.meetup.com/cities/hn/bejuco/;Bejuco;bejuco
+http://www.meetup.com/cities/hn/bel%C3%A9n_gualcho/;Belén Gualcho;bel%C3%A9n_gualcho
+http://www.meetup.com/cities/hn/berl%C3%ADn/;Berlín;berl%C3%ADn
+http://www.meetup.com/cities/hn/bodega_de_los_tangos/;Bodega de Los Tangos;bodega_de_los_tangos
+http://www.meetup.com/cities/hn/bonito_oriental/;Bonito Oriental;bonito_oriental
+http://www.meetup.com/cities/hn/brisas_del_cal%C3%A1n/;Brisas del Calán;brisas_del_cal%C3%A1n
+http://www.meetup.com/cities/hn/brus_laguna/;Brus Laguna;brus_laguna
+http://www.meetup.com/cities/hn/buenos_aires/;Buenos Aires;buenos_aires
+http://www.meetup.com/cities/hn/bugaba/;Bugaba;bugaba
+http://www.meetup.com/cities/hn/cabo_san_lucas/;Cabo San Lucas;cabo_san_lucas
+http://www.meetup.com/cities/hn/callejones/;Callejones;callejones
+http://www.meetup.com/cities/hn/camalote/;Camalote;camalote
+http://www.meetup.com/cities/hn/camasca/;Camasca;camasca
+http://www.meetup.com/cities/hn/campamento/;Campamento;campamento
+http://www.meetup.com/cities/hn/ca%C3%B1averal/;Cañaveral;ca%C3%B1averal
+http://www.meetup.com/cities/hn/cane/;Cane;cane
+http://www.meetup.com/cities/hn/carbajales/;Carbajales;carbajales
+http://www.meetup.com/cities/hn/carbonales/;Carbonales;carbonales
+http://www.meetup.com/cities/hn/casa_quemada/;Casa Quemada;casa_quemada
+http://www.meetup.com/cities/hn/catacamas/;Catacamas;catacamas
+http://www.meetup.com/cities/hn/cede%C3%B1o/;Cedeño;cede%C3%B1o
+http://www.meetup.com/cities/hn/ceguaca/;Ceguaca;ceguaca
+http://www.meetup.com/cities/hn/cerro_blanco/;Cerro Blanco;cerro_blanco
+http://www.meetup.com/cities/hn/cerro_grande/;Cerro Grande;cerro_grande
+http://www.meetup.com/cities/hn/chalmeca/;Chalmeca;chalmeca
+http://www.meetup.com/cities/hn/chiapa/;Chiapa;chiapa
+http://www.meetup.com/cities/hn/chiautzingo/;Chiautzingo;chiautzingo
+http://www.meetup.com/cities/hn/chiquila/;Chiquila;chiquila
+http://www.meetup.com/cities/hn/chirinos/;Chirinos;chirinos
+http://www.meetup.com/cities/hn/chivana/;Chivana;chivana
+http://www.meetup.com/cities/hn/choloma/;Choloma;choloma
+http://www.meetup.com/cities/hn/choluteca/;Choluteca;choluteca
+http://www.meetup.com/cities/hn/chotepe/;Chotepe;chotepe
+http://www.meetup.com/cities/hn/cofrad%C3%ADa/;Cofradía;cofrad%C3%ADa
+http://www.meetup.com/cities/hn/cololaca/;Cololaca;cololaca
+http://www.meetup.com/cities/hn/colombia/;Colombia;colombia
+http://www.meetup.com/cities/hn/comayagua/;Comayagua;comayagua
+http://www.meetup.com/cities/hn/concepci%C3%B3n_de_guasistagua/;Concepción de Guasistagua;concepci%C3%B3n_de_guasistagua
+http://www.meetup.com/cities/hn/concepcion_de_la_barranca/;Concepcion de La Barranca;concepcion_de_la_barranca
+http://www.meetup.com/cities/hn/concepci%C3%B3n_del_norte/;Concepción del Norte;concepci%C3%B3n_del_norte
+http://www.meetup.com/cities/hn/concepci%C3%B3n_del_sur/;Concepción del Sur;concepci%C3%B3n_del_sur
+http://www.meetup.com/cities/hn/concepci%C3%B3n_de_mar%C3%ADa/;Concepción de María;concepci%C3%B3n_de_mar%C3%ADa
+http://www.meetup.com/cities/hn/conc%C3%B3rdia/;Concórdia;conc%C3%B3rdia
+http://www.meetup.com/cities/hn/cop%C3%A1n/;Copán;cop%C3%A1n
+http://www.meetup.com/cities/hn/corinto/;Corinto;corinto
+http://www.meetup.com/cities/hn/corocito/;Corocito;corocito
+http://www.meetup.com/cities/hn/corozal/;Corozal;corozal
+http://www.meetup.com/cities/hn/corquin/;Corquin;corquin
+http://www.meetup.com/cities/hn/correderos/;Correderos;correderos
+http://www.meetup.com/cities/hn/coyoles/;Coyoles;coyoles
+http://www.meetup.com/cities/hn/coyoles_central/;Coyoles Central;coyoles_central
+http://www.meetup.com/cities/hn/cuaca_vieja/;Cuaca Vieja;cuaca_vieja
+http://www.meetup.com/cities/hn/cubulero/;Cubulero;cubulero
+http://www.meetup.com/cities/hn/cucuyagua/;Cucuyagua;cucuyagua
+http://www.meetup.com/cities/hn/cusuna/;Cusuna;cusuna
+http://www.meetup.com/cities/hn/cuyal%C3%AD/;Cuyalí;cuyal%C3%AD
+http://www.meetup.com/cities/hn/cuyamel/;Cuyamel;cuyamel
+http://www.meetup.com/cities/hn/danli/;Danli;danli
+http://www.meetup.com/cities/hn/distrito_central/;Distrito Central;distrito_central
+http://www.meetup.com/cities/hn/dolores/;Dolores;dolores
+http://www.meetup.com/cities/hn/donostia/;Donostia;donostia
+http://www.meetup.com/cities/hn/dulce_nombre/;Dulce Nombre;dulce_nombre
+http://www.meetup.com/cities/hn/dulce_nombre_de_culm%C3%AD/;Dulce Nombre de Culmí;dulce_nombre_de_culm%C3%AD
+http://www.meetup.com/cities/hn/duyure/;Duyure;duyure
+http://www.meetup.com/cities/hn/el_arenal/;El Arenal;el_arenal
+http://www.meetup.com/cities/hn/el_b%C3%A1lsamo/;El Bálsamo;el_b%C3%A1lsamo
+http://www.meetup.com/cities/hn/el_benque/;El Benque;el_benque
+http://www.meetup.com/cities/hn/el_buen_pastor/;El Buen Pastor;el_buen_pastor
+http://www.meetup.com/cities/hn/el_caimito/;El Caimito;el_caimito
+http://www.meetup.com/cities/hn/el_carril/;El Carril;el_carril
+http://www.meetup.com/cities/hn/el_chichicaste/;El Chichicaste;el_chichicaste
+http://www.meetup.com/cities/hn/el_chimbo/;El Chimbo;el_chimbo
+http://www.meetup.com/cities/hn/el_ciruelo/;El Ciruelo;el_ciruelo
+http://www.meetup.com/cities/hn/el_corozal/;El Corozal;el_corozal
+http://www.meetup.com/cities/hn/el_corpus/;El Corpus;el_corpus
+http://www.meetup.com/cities/hn/el_derrumbo/;El Derrumbo;el_derrumbo
+http://www.meetup.com/cities/hn/el_durazno/;El Durazno;el_durazno
+http://www.meetup.com/cities/hn/el_ed%C3%A9n/;El Edén;el_ed%C3%A9n
+http://www.meetup.com/cities/hn/el_ermita%C3%B1o/;El Ermitaño;el_ermita%C3%B1o
+http://www.meetup.com/cities/hn/el_escanito/;El Escanito;el_escanito
+http://www.meetup.com/cities/hn/el_esca%C3%B1o_de_tepale/;El Escaño de Tepale;el_esca%C3%B1o_de_tepale
+http://www.meetup.com/cities/hn/el_granzal/;El Granzal;el_granzal
+http://www.meetup.com/cities/hn/el_guante/;El Guante;el_guante
+http://www.meetup.com/cities/hn/el_guantillo/;El Guantillo;el_guantillo
+http://www.meetup.com/cities/hn/el_guapinol/;El Guapinol;el_guapinol
+http://www.meetup.com/cities/hn/el_guayabito/;El Guayabito;el_guayabito
+http://www.meetup.com/cities/hn/el_guayabo/;El Guayabo;el_guayabo
+http://www.meetup.com/cities/hn/el_higuero/;El Higuero;el_higuero
+http://www.meetup.com/cities/hn/el%C3%ADxir/;Elíxir;el%C3%ADxir
+http://www.meetup.com/cities/hn/el_jicarito/;El Jicarito;el_jicarito
+http://www.meetup.com/cities/hn/el_jocomico/;El Jocomico;el_jocomico
+http://www.meetup.com/cities/hn/el_juncal/;El Juncal;el_juncal
+http://www.meetup.com/cities/hn/el_llano/;El Llano;el_llano
+http://www.meetup.com/cities/hn/el_lolo/;El Lolo;el_lolo
+http://www.meetup.com/cities/hn/el_mara%C3%B1%C3%B3n/;El Marañón;el_mara%C3%B1%C3%B3n
+http://www.meetup.com/cities/hn/el_milagro/;El Milagro;el_milagro
+http://www.meetup.com/cities/hn/el_mochito/;El Mochito;el_mochito
+http://www.meetup.com/cities/hn/el_negrito/;El Negrito;el_negrito
+http://www.meetup.com/cities/hn/el_n%C3%ADspero/;El Níspero;el_n%C3%ADspero
+http://www.meetup.com/cities/hn/el_obraje/;El Obraje;el_obraje
+http://www.meetup.com/cities/hn/el_ocote/;El Ocote;el_ocote
+http://www.meetup.com/cities/hn/el_ocotillo/;El Ocotillo;el_ocotillo
+http://www.meetup.com/cities/hn/el_ocot%C3%B3n/;El Ocotón;el_ocot%C3%B3n
+http://www.meetup.com/cities/hn/el_olingo/;El Olingo;el_olingo
+http://www.meetup.com/cities/hn/el_olivar/;El Olivar;el_olivar
+http://www.meetup.com/cities/hn/el_para%C3%ADso/;El Paraíso;el_para%C3%ADso
+http://www.meetup.com/cities/hn/el_pedernal/;El Pedernal;el_pedernal
+http://www.meetup.com/cities/hn/el_perico/;El Perico;el_perico
+http://www.meetup.com/cities/hn/el_pescadero/;El Pescadero;el_pescadero
+http://www.meetup.com/cities/hn/el_pino/;El Pino;el_pino
+http://www.meetup.com/cities/hn/el_puente/;El Puente;el_puente
+http://www.meetup.com/cities/hn/el_rancho/;El Rancho;el_rancho
+http://www.meetup.com/cities/hn/el_rinc%C3%B3n/;El Rincón;el_rinc%C3%B3n
+http://www.meetup.com/cities/hn/el_rodeo/;El Rodeo;el_rodeo
+http://www.meetup.com/cities/hn/el_rosario/;El Rosario;el_rosario
+http://www.meetup.com/cities/hn/el_rusio/;El Rusio;el_rusio
+http://www.meetup.com/cities/hn/el_sauce/;El Sauce;el_sauce
+http://www.meetup.com/cities/hn/el_socorro/;El Socorro;el_socorro
+http://www.meetup.com/cities/hn/el_suyatal/;El Suyatal;el_suyatal
+http://www.meetup.com/cities/hn/el_tabl%C3%B3n/;El Tablón;el_tabl%C3%B3n
+http://www.meetup.com/cities/hn/el_terrero/;El Terrero;el_terrero
+http://www.meetup.com/cities/hn/el_tigre/;El Tigre;el_tigre
+http://www.meetup.com/cities/hn/el_tizatillo/;El Tizatillo;el_tizatillo
+http://www.meetup.com/cities/hn/el_tr%C3%A1nsito/;El Tránsito;el_tr%C3%A1nsito
+http://www.meetup.com/cities/hn/el_triunfo/;El Triunfo;el_triunfo
+http://www.meetup.com/cities/hn/el_triunfo_de_la_cruz/;El Triunfo de La Cruz;el_triunfo_de_la_cruz
+http://www.meetup.com/cities/hn/el_tular/;El Tular;el_tular
+http://www.meetup.com/cities/hn/emilio_carranza/;Emilio Carranza;emilio_carranza
+http://www.meetup.com/cities/hn/erandique/;Erandique;erandique
+http://www.meetup.com/cities/hn/esparta/;Esparta;esparta
+http://www.meetup.com/cities/hn/esqu%C3%ADas/;Esquías;esqu%C3%ADas
+http://www.meetup.com/cities/hn/etla/;Etla;etla
+http://www.meetup.com/cities/hn/flores/;Flores;flores
+http://www.meetup.com/cities/hn/florida/;Florida;florida
+http://www.meetup.com/cities/hn/francia/;Francia;francia
+http://www.meetup.com/cities/hn/french_harbor/;French Harbor;french_harbor
+http://www.meetup.com/cities/hn/froyl%C3%A1n_turcios/;Froylán Turcios;froyl%C3%A1n_turcios
+http://www.meetup.com/cities/hn/germania/;Germania;germania
+http://www.meetup.com/cities/hn/goascor%C3%A1n/;Goascorán;goascor%C3%A1n
+http://www.meetup.com/cities/hn/gracias/;Gracias;gracias
+http://www.meetup.com/cities/hn/guacamaya/;Guacamaya;guacamaya
+http://www.meetup.com/cities/hn/guaimaca/;Guaimaca;guaimaca
+http://www.meetup.com/cities/hn/gualaco/;Gualaco;gualaco
+http://www.meetup.com/cities/hn/gualjoco/;Gualjoco;gualjoco
+http://www.meetup.com/cities/hn/guanaja/;Guanaja;guanaja
+http://www.meetup.com/cities/hn/guarizama/;Guarizama;guarizama
+http://www.meetup.com/cities/hn/guastatoya/;Guastatoya;guastatoya
+http://www.meetup.com/cities/hn/guata/;Guata;guata
+http://www.meetup.com/cities/hn/guatemalita/;Guatemalita;guatemalita
+http://www.meetup.com/cities/hn/guayape/;Guayape;guayape
+http://www.meetup.com/cities/hn/guaymitas/;Guaymitas;guaymitas
+http://www.meetup.com/cities/hn/g%C3%BCinope/;Güinope;g%C3%BCinope
+http://www.meetup.com/cities/hn/hicaque/;Hicaque;hicaque
+http://www.meetup.com/cities/hn/huamantla/;Huamantla;huamantla
+http://www.meetup.com/cities/hn/ilama/;Ilama;ilama
+http://www.meetup.com/cities/hn/intibuc%C3%A1/;Intibucá;intibuc%C3%A1
+http://www.meetup.com/cities/hn/iralaya/;Iralaya;iralaya
+http://www.meetup.com/cities/hn/jacaleapa/;Jacaleapa;jacaleapa
+http://www.meetup.com/cities/hn/jamalteca/;Jamalteca;jamalteca
+http://www.meetup.com/cities/hn/jardines/;Jardines;jardines
+http://www.meetup.com/cities/hn/jeric%C3%B3/;Jericó;jeric%C3%B3
+http://www.meetup.com/cities/hn/jes%C3%BAs_de_otoro/;Jesús de Otoro;jes%C3%BAs_de_otoro
+http://www.meetup.com/cities/hn/j%C3%ADcaro_gal%C3%A1n/;Jícaro Galán;j%C3%ADcaro_gal%C3%A1n
+http://www.meetup.com/cities/hn/jiquinlaca/;Jiquinlaca;jiquinlaca
+http://www.meetup.com/cities/hn/joc%C3%B3n/;Jocón;joc%C3%B3n
+http://www.meetup.com/cities/hn/joconal/;Joconal;joconal
+http://www.meetup.com/cities/hn/jos%C3%A9_santos_guardiola/;José Santos Guardiola;jos%C3%A9_santos_guardiola
+http://www.meetup.com/cities/hn/jutiapa/;Jutiapa;jutiapa
+http://www.meetup.com/cities/hn/juticalpa/;Juticalpa;juticalpa
+http://www.meetup.com/cities/hn/jutiquile/;Jutiquile;jutiquile
+http://www.meetup.com/cities/hn/kil%C3%B3metro_setenta_y_uno/;Kilómetro Setenta y Uno;kil%C3%B3metro_setenta_y_uno
+http://www.meetup.com/cities/hn/kino/;Kino;kino
+http://www.meetup.com/cities/hn/la_brea/;La Brea;la_brea
+http://www.meetup.com/cities/hn/la_bueso/;La Bueso;la_bueso
+http://www.meetup.com/cities/hn/la_campana/;La Campana;la_campana
+http://www.meetup.com/cities/hn/la_ceiba/;La Ceiba;la_ceiba
+http://www.meetup.com/cities/hn/la_colorada/;La Colorada;la_colorada
+http://www.meetup.com/cities/hn/la_criba/;La Criba;la_criba
+http://www.meetup.com/cities/hn/la_cuesta_dos/;La Cuesta Dos;la_cuesta_dos
+http://www.meetup.com/cities/hn/la_curva/;La Curva;la_curva
+http://www.meetup.com/cities/hn/la_empalizada/;La Empalizada;la_empalizada
+http://www.meetup.com/cities/hn/la_encarnaci%C3%B3n/;La Encarnación;la_encarnaci%C3%B3n
+http://www.meetup.com/cities/hn/la_entrada/;La Entrada;la_entrada
+http://www.meetup.com/cities/hn/la_ermita/;La Ermita;la_ermita
+http://www.meetup.com/cities/hn/la_esperanza/;La Esperanza;la_esperanza
+http://www.meetup.com/cities/hn/la_estancia/;La Estancia;la_estancia
+http://www.meetup.com/cities/hn/la_flecha/;La Flecha;la_flecha
+http://www.meetup.com/cities/hn/la_florida/;La Florida;la_florida
+http://www.meetup.com/cities/hn/la_guacamaya/;La Guacamaya;la_guacamaya
+http://www.meetup.com/cities/hn/la_guama/;La Guama;la_guama
+http://www.meetup.com/cities/hn/lagunas/;Lagunas;lagunas
+http://www.meetup.com/cities/hn/laguna_seca/;Laguna Seca;laguna_seca
+http://www.meetup.com/cities/hn/laguna_verde/;Laguna Verde;laguna_verde
+http://www.meetup.com/cities/hn/la_jigua/;La Jigua;la_jigua
+http://www.meetup.com/cities/hn/la_jutosa/;La Jutosa;la_jutosa
+http://www.meetup.com/cities/hn/la_labor/;La Labor;la_labor
+http://www.meetup.com/cities/hn/la_laguna_del_pedernal/;La Laguna del Pedernal;la_laguna_del_pedernal
+http://www.meetup.com/cities/hn/la_lima/;La Lima;la_lima
+http://www.meetup.com/cities/hn/laman%C3%AD/;Lamaní;laman%C3%AD
+http://www.meetup.com/cities/hn/la_masica/;La Masica;la_masica
+http://www.meetup.com/cities/hn/la_mina/;La Mina;la_mina
+http://www.meetup.com/cities/hn/langue/;Langue;langue
+http://www.meetup.com/cities/hn/la_paz/;La Paz;la_paz
+http://www.meetup.com/cities/hn/la_playona/;La Playona;la_playona
+http://www.meetup.com/cities/hn/la_reina/;La Reina;la_reina
+http://www.meetup.com/cities/hn/la_rosa/;La Rosa;la_rosa
+http://www.meetup.com/cities/hn/la_sabana/;La Sabana;la_sabana
+http://www.meetup.com/cities/hn/las_animas/;Las Animas;las_animas
+http://www.meetup.com/cities/hn/la_sarrosa/;La Sarrosa;la_sarrosa
+http://www.meetup.com/cities/hn/las_choapas/;Las Choapas;las_choapas
+http://www.meetup.com/cities/hn/las_lajas/;Las Lajas;las_lajas
+http://www.meetup.com/cities/hn/las_mercedes/;Las Mercedes;las_mercedes
+http://www.meetup.com/cities/hn/las_tapias/;Las Tapias;las_tapias
+http://www.meetup.com/cities/hn/las_tejeras/;Las Tejeras;las_tejeras
+http://www.meetup.com/cities/hn/la_tajeada/;La Tajeada;la_tajeada
+http://www.meetup.com/cities/hn/la_trinidad/;La Trinidad;la_trinidad
+http://www.meetup.com/cities/hn/la_uni%C3%B3n/;La Unión;la_uni%C3%B3n
+http://www.meetup.com/cities/hn/la_virtud/;La Virtud;la_virtud
+http://www.meetup.com/cities/hn/la_zumbadora/;La Zumbadora;la_zumbadora
+http://www.meetup.com/cities/hn/lejaman%C3%AD/;Lejamaní;lejaman%C3%AD
+http://www.meetup.com/cities/hn/lepaera/;Lepaera;lepaera
+http://www.meetup.com/cities/hn/lepaterique/;Lepaterique;lepaterique
+http://www.meetup.com/cities/hn/lim%C3%B3n/;Limón;lim%C3%B3n
+http://www.meetup.com/cities/hn/liure/;Liure;liure
+http://www.meetup.com/cities/hn/llano_largo/;Llano Largo;llano_largo
+http://www.meetup.com/cities/hn/loma_alta/;Loma Alta;loma_alta
+http://www.meetup.com/cities/hn/lomitas/;Lomitas;lomitas
+http://www.meetup.com/cities/hn/los_caminos/;Los Caminos;los_caminos
+http://www.meetup.com/cities/hn/los_llanitos/;Los Llanitos;los_llanitos
+http://www.meetup.com/cities/hn/los_naranjos/;Los Naranjos;los_naranjos
+http://www.meetup.com/cities/hn/los_planes/;Los Planes;los_planes
+http://www.meetup.com/cities/hn/los_tangos/;Los Tangos;los_tangos
+http://www.meetup.com/cities/hn/luzern/;Luzern;luzern
+http://www.meetup.com/cities/hn/macholoa/;Macholoa;macholoa
+http://www.meetup.com/cities/hn/macuelizo/;Macuelizo;macuelizo
+http://www.meetup.com/cities/hn/magdalena_tequisistl%C3%A1n/;Magdalena Tequisistlán;magdalena_tequisistl%C3%A1n
+http://www.meetup.com/cities/hn/mandasta/;Mandasta;mandasta
+http://www.meetup.com/cities/hn/mangulile/;Mangulile;mangulile
+http://www.meetup.com/cities/hn/manto/;Manto;manto
+http://www.meetup.com/cities/hn/marale/;Marale;marale
+http://www.meetup.com/cities/hn/marcala/;Marcala;marcala
+http://www.meetup.com/cities/hn/marcovia/;Marcovia;marcovia
+http://www.meetup.com/cities/hn/mata_de_pl%C3%A1tano/;Mata de Plátano;mata_de_pl%C3%A1tano
+http://www.meetup.com/cities/hn/mateo/;Mateo;mateo
+http://www.meetup.com/cities/hn/me%C3%A1mbar/;Meámbar;me%C3%A1mbar
+http://www.meetup.com/cities/hn/mercedes/;Mercedes;mercedes
+http://www.meetup.com/cities/hn/mezapa/;Mezapa;mezapa
+http://www.meetup.com/cities/hn/mezapita/;Mezapita;mezapita
+http://www.meetup.com/cities/hn/minas_de_oro/;Minas de Oro;minas_de_oro
+http://www.meetup.com/cities/hn/mojim%C3%A1n/;Mojimán;mojim%C3%A1n
+http://www.meetup.com/cities/hn/monjar%C3%A1s/;Monjarás;monjar%C3%A1s
+http://www.meetup.com/cities/hn/monte_placentero/;Monte Placentero;monte_placentero
+http://www.meetup.com/cities/hn/monterrey/;Monterrey;monterrey
+http://www.meetup.com/cities/hn/moraz%C3%A1n/;Morazán;moraz%C3%A1n
+http://www.meetup.com/cities/hn/morocel%C3%AD/;Morocelí;morocel%C3%AD
+http://www.meetup.com/cities/hn/morolica/;Morolica;morolica
+http://www.meetup.com/cities/hn/nacaome/;Nacaome;nacaome
+http://www.meetup.com/cities/hn/naco/;Naco;naco
+http://www.meetup.com/cities/hn/namasig%C3%BCe/;Namasigüe;namasig%C3%BCe
+http://www.meetup.com/cities/hn/naranjito/;Naranjito;naranjito
+http://www.meetup.com/cities/hn/nombre_de_jes%C3%BAs/;Nombre de Jesús;nombre_de_jes%C3%BAs
+http://www.meetup.com/cities/hn/nueva_armenia/;Nueva Armenia;nueva_armenia
+http://www.meetup.com/cities/hn/nueva_esperanza/;Nueva Esperanza;nueva_esperanza
+http://www.meetup.com/cities/hn/nueva_florida/;Nueva Florida;nueva_florida
+http://www.meetup.com/cities/hn/nueva_granada/;Nueva Granada;nueva_granada
+http://www.meetup.com/cities/hn/nuevo_celilac/;Nuevo Celilac;nuevo_celilac
+http://www.meetup.com/cities/hn/nuevo_chamelec%C3%B3n/;Nuevo Chamelecón;nuevo_chamelec%C3%B3n
+http://www.meetup.com/cities/hn/nuevo_jalapa/;Nuevo Jalapa;nuevo_jalapa
+http://www.meetup.com/cities/hn/ocote_paulino/;Ocote Paulino;ocote_paulino
+http://www.meetup.com/cities/hn/ocotepeque/;Ocotepeque;ocotepeque
+http://www.meetup.com/cities/hn/ojo_de_%C3%A1gua/;Ojo de Água;ojo_de_%C3%A1gua
+http://www.meetup.com/cities/hn/ojojona/;Ojojona;ojojona
+http://www.meetup.com/cities/hn/ojos_de_agua/;Ojos de Agua;ojos_de_agua
+http://www.meetup.com/cities/hn/olanchito/;Olanchito;olanchito
+http://www.meetup.com/cities/hn/omoa/;Omoa;omoa
+http://www.meetup.com/cities/hn/orica/;Orica;orica
+http://www.meetup.com/cities/hn/orocuina/;Orocuina;orocuina
+http://www.meetup.com/cities/hn/orop%C3%A9ndolas/;Oropéndolas;orop%C3%A9ndolas
+http://www.meetup.com/cities/hn/oropol%C3%AD/;Oropolí;oropol%C3%AD
+http://www.meetup.com/cities/hn/ostum%C3%A1n/;Ostumán;ostum%C3%A1n
+http://www.meetup.com/cities/hn/palkaka/;Palkaka;palkaka
+http://www.meetup.com/cities/hn/palo_pintado/;Palo Pintado;palo_pintado
+http://www.meetup.com/cities/hn/paptalaya/;Paptalaya;paptalaya
+http://www.meetup.com/cities/hn/paujiles/;Paujiles;paujiles
+http://www.meetup.com/cities/hn/pe%C3%B1a_blanca/;Peña Blanca;pe%C3%B1a_blanca
+http://www.meetup.com/cities/hn/pespire/;Pespire;pespire
+http://www.meetup.com/cities/hn/petoa/;Petoa;petoa
+http://www.meetup.com/cities/hn/piedras_amarillas/;Piedras Amarillas;piedras_amarillas
+http://www.meetup.com/cities/hn/pimienta/;Pimienta;pimienta
+http://www.meetup.com/cities/hn/pinalejo/;Pinalejo;pinalejo
+http://www.meetup.com/cities/hn/portillo_de_gonz%C3%A1lez/;Portillo de González;portillo_de_gonz%C3%A1lez
+http://www.meetup.com/cities/hn/potrerillos/;Potrerillos;potrerillos
+http://www.meetup.com/cities/hn/prieta/;Prieta;prieta
+http://www.meetup.com/cities/hn/protecci%C3%B3n/;Protección;protecci%C3%B3n
+http://www.meetup.com/cities/hn/pueblo_nuevo/;Pueblo Nuevo;pueblo_nuevo
+http://www.meetup.com/cities/hn/puente_alto/;Puente Alto;puente_alto
+http://www.meetup.com/cities/hn/puerto_castilla/;Puerto Castilla;puerto_castilla
+http://www.meetup.com/cities/hn/puerto_cort%C3%A9s/;Puerto Cortés;puerto_cort%C3%A9s
+http://www.meetup.com/cities/hn/puerto_lempira/;Puerto Lempira;puerto_lempira
+http://www.meetup.com/cities/hn/punta_de_piedra/;Punta de Piedra;punta_de_piedra
+http://www.meetup.com/cities/hn/punta_ocote/;Punta Ocote;punta_ocote
+http://www.meetup.com/cities/hn/punuare/;Punuare;punuare
+http://www.meetup.com/cities/hn/quebrada_de_arena/;Quebrada de Arena;quebrada_de_arena
+http://www.meetup.com/cities/hn/quebrada_de_yoro/;Quebrada de Yoro;quebrada_de_yoro
+http://www.meetup.com/cities/hn/quebrada_larga/;Quebrada Larga;quebrada_larga
+http://www.meetup.com/cities/hn/quebrada_seca/;Quebrada Seca;quebrada_seca
+http://www.meetup.com/cities/hn/quezailica/;Quezailica;quezailica
+http://www.meetup.com/cities/hn/quimist%C3%A1n/;Quimistán;quimist%C3%A1n
+http://www.meetup.com/cities/hn/rancho_grande/;Rancho Grande;rancho_grande
+http://www.meetup.com/cities/hn/reitoca/;Reitoca;reitoca
+http://www.meetup.com/cities/hn/rinc%C3%B3n_de_nicol%C3%A1s_romero/;Rincón de Nicolás Romero;rinc%C3%B3n_de_nicol%C3%A1s_romero
+http://www.meetup.com/cities/hn/r%C3%ADo_abajo/;Río Abajo;r%C3%ADo_abajo
+http://www.meetup.com/cities/hn/r%C3%ADo_amarillo/;Río Amarillo;r%C3%ADo_amarillo
+http://www.meetup.com/cities/hn/r%C3%ADo_arriba/;Río Arriba;r%C3%ADo_arriba
+http://www.meetup.com/cities/hn/r%C3%ADo_blanquito/;Río Blanquito;r%C3%ADo_blanquito
+http://www.meetup.com/cities/hn/r%C3%ADo_bonito/;Río Bonito;r%C3%ADo_bonito
+http://www.meetup.com/cities/hn/r%C3%ADo_chiquito/;Río Chiquito;r%C3%ADo_chiquito
+http://www.meetup.com/cities/hn/r%C3%ADo_esteban/;Río Esteban;r%C3%ADo_esteban
+http://www.meetup.com/cities/hn/r%C3%ADo_lindo/;Río Lindo;r%C3%ADo_lindo
+http://www.meetup.com/cities/hn/roat%C3%A1n/;Roatán;roat%C3%A1n
+http://www.meetup.com/cities/hn/sab%C3%A1/;Sabá;sab%C3%A1
+http://www.meetup.com/cities/hn/sabana_abajo/;Sabana Abajo;sabana_abajo
+http://www.meetup.com/cities/hn/sabanagrande/;Sabanagrande;sabanagrande
+http://www.meetup.com/cities/hn/salam%C3%A1/;Salamá;salam%C3%A1
+http://www.meetup.com/cities/hn/sambo_creek/;Sambo Creek;sambo_creek
+http://www.meetup.com/cities/hn/san_antonio/;San Antonio;san_antonio
+http://www.meetup.com/cities/hn/san_antonio_de_cort%C3%A9s/;San Antonio de Cortés;san_antonio_de_cort%C3%A9s
+http://www.meetup.com/cities/hn/san_antonio_de_la_cuesta/;San Antonio de La Cuesta;san_antonio_de_la_cuesta
+http://www.meetup.com/cities/hn/san_antonio_del_norte/;San Antonio del Norte;san_antonio_del_norte
+http://www.meetup.com/cities/hn/san_buenaventura/;San Buenaventura;san_buenaventura
+http://www.meetup.com/cities/hn/san_diego/;San Diego;san_diego
+http://www.meetup.com/cities/hn/sandy_bay/;Sandy Bay;sandy_bay
+http://www.meetup.com/cities/hn/san_esteban/;San Esteban;san_esteban
+http://www.meetup.com/cities/hn/san_fernando/;San Fernando;san_fernando
+http://www.meetup.com/cities/hn/san_francisco_de_becerra/;San Francisco de Becerra;san_francisco_de_becerra
+http://www.meetup.com/cities/hn/san_francisco_de_cones/;San Francisco de Cones;san_francisco_de_cones
+http://www.meetup.com/cities/hn/san_francisco_de_coray/;San Francisco de Coray;san_francisco_de_coray
+http://www.meetup.com/cities/hn/san_francisco_de_la_paz/;San Francisco de La Paz;san_francisco_de_la_paz
+http://www.meetup.com/cities/hn/san_francisco_del_valle/;San Francisco del Valle;san_francisco_del_valle
+http://www.meetup.com/cities/hn/san_francisco_de_ojuera/;San Francisco de Ojuera;san_francisco_de_ojuera
+http://www.meetup.com/cities/hn/san_francisco_de_yojoa/;San Francisco de Yojoa;san_francisco_de_yojoa
+http://www.meetup.com/cities/hn/san_ignacio/;San Ignacio;san_ignacio
+http://www.meetup.com/cities/hn/san_jeronimito/;San Jeronimito;san_jeronimito
+http://www.meetup.com/cities/hn/san_joaqu%C3%ADn/;San Joaquín;san_joaqu%C3%ADn
+http://www.meetup.com/cities/hn/san_jos%C3%A9_de_colinas/;San José de Colinas;san_jos%C3%A9_de_colinas
+http://www.meetup.com/cities/hn/san_jos%C3%A9_de_comayagua/;San José de Comayagua;san_jos%C3%A9_de_comayagua
+http://www.meetup.com/cities/hn/san_jos%C3%A9_de_cort%C3%A9s/;San José de Cortés;san_jos%C3%A9_de_cort%C3%A9s
+http://www.meetup.com/cities/hn/san_jos%C3%A9_del_boquer%C3%B3n/;San José del Boquerón;san_jos%C3%A9_del_boquer%C3%B3n
+http://www.meetup.com/cities/hn/san_jos%C3%A9_de_los_arroyos/;San José de los Arroyos;san_jos%C3%A9_de_los_arroyos
+http://www.meetup.com/cities/hn/san_jos%C3%A9_del_potrero/;San José del Potrero;san_jos%C3%A9_del_potrero
+http://www.meetup.com/cities/hn/san_jos%C3%A9_de_oriente/;San José de Oriente;san_jos%C3%A9_de_oriente
+http://www.meetup.com/cities/hn/san_jos%C3%A9_de_pane/;San José de Pane;san_jos%C3%A9_de_pane
+http://www.meetup.com/cities/hn/san_jos%C3%A9_de_r%C3%ADo_tinto/;San José de Río Tinto;san_jos%C3%A9_de_r%C3%ADo_tinto
+http://www.meetup.com/cities/hn/san_jos%C3%A9_de_tarros/;San José de Tarros;san_jos%C3%A9_de_tarros
+http://www.meetup.com/cities/hn/san_juan/;San Juan;san_juan
+http://www.meetup.com/cities/hn/san_juancito/;San Juancito;san_juancito
+http://www.meetup.com/cities/hn/san_juan_de_flores/;San Juan de Flores;san_juan_de_flores
+http://www.meetup.com/cities/hn/san_juan_de_opoa/;San Juan de Opoa;san_juan_de_opoa
+http://www.meetup.com/cities/hn/san_juan_de_planes/;San Juan de Planes;san_juan_de_planes
+http://www.meetup.com/cities/hn/san_juan_pueblo/;San Juan Pueblo;san_juan_pueblo
+http://www.meetup.com/cities/hn/san_luis_de_planes/;San Luis de Planes;san_luis_de_planes
+http://www.meetup.com/cities/hn/san_manuel/;San Manuel;san_manuel
+http://www.meetup.com/cities/hn/san_marcos/;San Marcos;san_marcos
+http://www.meetup.com/cities/hn/san_marcos_de_col%C3%B3n/;San Marcos de Colón;san_marcos_de_col%C3%B3n
+http://www.meetup.com/cities/hn/san_mat%C3%ADas/;San Matías;san_mat%C3%ADas
+http://www.meetup.com/cities/hn/san_pedro_de_tutule/;San Pedro de Tutule;san_pedro_de_tutule
+http://www.meetup.com/cities/hn/san_pedro_sula/;San Pedro Sula;san_pedro_sula
+http://www.meetup.com/cities/hn/san_pedro_zacapa/;San Pedro Zacapa;san_pedro_zacapa
+http://www.meetup.com/cities/hn/san_sebasti%C3%A1n_villanueva/;San Sebastián Villanueva;san_sebasti%C3%A1n_villanueva
+http://www.meetup.com/cities/hn/santa_ana/;Santa Ana;santa_ana
+http://www.meetup.com/cities/hn/santa_ana_de_yusguare/;Santa Ana de Yusguare;santa_ana_de_yusguare
+http://www.meetup.com/cities/hn/santa_cruz/;Santa Cruz;santa_cruz
+http://www.meetup.com/cities/hn/santa_cruz_de_guayape/;Santa Cruz de Guayape;santa_cruz_de_guayape
+http://www.meetup.com/cities/hn/santa_cruz_de_yojoa/;Santa Cruz de Yojoa;santa_cruz_de_yojoa
+http://www.meetup.com/cities/hn/santa_fe/;Santa Fe;santa_fe
+http://www.meetup.com/cities/hn/santa_mar%C3%ADa_del_real/;Santa María del Real;santa_mar%C3%ADa_del_real
+http://www.meetup.com/cities/hn/santa_rita/;Santa Rita;santa_rita
+http://www.meetup.com/cities/hn/santa_rosa_de_agu%C3%A1n/;Santa Rosa de Aguán;santa_rosa_de_agu%C3%A1n
+http://www.meetup.com/cities/hn/santa_rosa_de_cop%C3%A1n/;Santa Rosa de Copán;santa_rosa_de_cop%C3%A1n
+http://www.meetup.com/cities/hn/santiago_de_puringla/;Santiago de Puringla;santiago_de_puringla
+http://www.meetup.com/cities/hn/san_vicente_centenario/;San Vicente Centenario;san_vicente_centenario
+http://www.meetup.com/cities/hn/sapadril_abajo/;Sapadril Abajo;sapadril_abajo
+http://www.meetup.com/cities/hn/savannah_bight/;Savannah Bight;savannah_bight
+http://www.meetup.com/cities/hn/sensenti/;Sensenti;sensenti
+http://www.meetup.com/cities/hn/siempre_viva/;Siempre Viva;siempre_viva
+http://www.meetup.com/cities/hn/siguatepeque/;Siguatepeque;siguatepeque
+http://www.meetup.com/cities/hn/silca/;Silca;silca
+http://www.meetup.com/cities/hn/sinuapa/;Sinuapa;sinuapa
+http://www.meetup.com/cities/hn/sonaguera/;Sonaguera;sonaguera
+http://www.meetup.com/cities/hn/subirana/;Subirana;subirana
+http://www.meetup.com/cities/hn/sula/;Sula;sula
+http://www.meetup.com/cities/hn/sulaco/;Sulaco;sulaco
+http://www.meetup.com/cities/hn/suyapa_de_le%C3%A1n/;Suyapa de Leán;suyapa_de_le%C3%A1n
+http://www.meetup.com/cities/hn/talanga/;Talanga;talanga
+http://www.meetup.com/cities/hn/t%C3%A1mara/;Támara;t%C3%A1mara
+http://www.meetup.com/cities/hn/taragual/;Taragual;taragual
+http://www.meetup.com/cities/hn/taujica/;Taujica;taujica
+http://www.meetup.com/cities/hn/taulab%C3%A9/;Taulabé;taulab%C3%A9
+http://www.meetup.com/cities/hn/teguajinal/;Teguajinal;teguajinal
+http://www.meetup.com/cities/hn/tegucigalpa/;Tegucigalpa;tegucigalpa
+http://www.meetup.com/cities/hn/tegucigalpita/;Tegucigalpita;tegucigalpita
+http://www.meetup.com/cities/hn/tela/;Tela;tela
+http://www.meetup.com/cities/hn/tepanguare/;Tepanguare;tepanguare
+http://www.meetup.com/cities/hn/tepusteca/;Tepusteca;tepusteca
+http://www.meetup.com/cities/hn/teupasenti/;Teupasenti;teupasenti
+http://www.meetup.com/cities/hn/tex%C3%ADguat/;Texíguat;tex%C3%ADguat
+http://www.meetup.com/cities/hn/tikiuraya/;Tikiuraya;tikiuraya
+http://www.meetup.com/cities/hn/tocoa/;Tocoa;tocoa
+http://www.meetup.com/cities/hn/toloa_adentro/;Toloa Adentro;toloa_adentro
+http://www.meetup.com/cities/hn/tornab%C3%A9/;Tornabé;tornab%C3%A9
+http://www.meetup.com/cities/hn/toyos/;Toyos;toyos
+http://www.meetup.com/cities/hn/trascerros/;Trascerros;trascerros
+http://www.meetup.com/cities/hn/traves%C3%ADa/;Travesía;traves%C3%ADa
+http://www.meetup.com/cities/hn/trinidad/;Trinidad;trinidad
+http://www.meetup.com/cities/hn/trinidad_de_cop%C3%A1n/;Trinidad de Copán;trinidad_de_cop%C3%A1n
+http://www.meetup.com/cities/hn/trinidad_de_quebradas/;Trinidad de Quebradas;trinidad_de_quebradas
+http://www.meetup.com/cities/hn/trojas/;Trojas;trojas
+http://www.meetup.com/cities/hn/trojes/;Trojes;trojes
+http://www.meetup.com/cities/hn/trujillo/;Trujillo;trujillo
+http://www.meetup.com/cities/hn/urraco/;Urraco;urraco
+http://www.meetup.com/cities/hn/urrutia/;Urrutia;urrutia
+http://www.meetup.com/cities/hn/utila/;Utila;utila
+http://www.meetup.com/cities/hn/vallecillo/;Vallecillo;vallecillo
+http://www.meetup.com/cities/hn/valle_de_angeles/;Valle de Angeles;valle_de_angeles
+http://www.meetup.com/cities/hn/veracruz/;Veracruz;veracruz
+http://www.meetup.com/cities/hn/victoria/;Victoria;victoria
+http://www.meetup.com/cities/hn/villa_de_san_antonio/;Villa de San Antonio;villa_de_san_antonio
+http://www.meetup.com/cities/hn/villa_de_san_francisco/;Villa de San Francisco;villa_de_san_francisco
+http://www.meetup.com/cities/hn/villa_madero/;Villa Madero;villa_madero
+http://www.meetup.com/cities/hn/vivistorio/;Vivistorio;vivistorio
+http://www.meetup.com/cities/hn/waksma/;Waksma;waksma
+http://www.meetup.com/cities/hn/wampusirpi/;Wampusirpi;wampusirpi
+http://www.meetup.com/cities/hn/wawina/;Wawina;wawina
+http://www.meetup.com/cities/hn/yaguacire/;Yaguacire;yaguacire
+http://www.meetup.com/cities/hn/yamaranguila/;Yamaranguila;yamaranguila
+http://www.meetup.com/cities/hn/yaruchel/;Yaruchel;yaruchel
+http://www.meetup.com/cities/hn/yarumela/;Yarumela;yarumela
+http://www.meetup.com/cities/hn/yojoa/;Yojoa;yojoa
+http://www.meetup.com/cities/hn/yorito/;Yorito;yorito
+http://www.meetup.com/cities/hn/yoro/;Yoro;yoro
+http://www.meetup.com/cities/hn/yuscar%C3%A1n/;Yuscarán;yuscar%C3%A1n
+http://www.meetup.com/cities/hn/zambrano/;Zambrano;zambrano
+http://www.meetup.com/cities/hn/zamora/;Zamora;zamora
+http://www.meetup.com/cities/hn/zapotal_del_norte/;Zapotal del Norte;zapotal_del_norte
+http://www.meetup.com/cities/hn/zopilotepe/;Zopilotepe;zopilotepe

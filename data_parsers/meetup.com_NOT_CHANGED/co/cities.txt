@@ -1,0 +1,438 @@
+http://www.meetup.com/cities/co/abaiang/;Abaiang;abaiang
+http://www.meetup.com/cities/co/abejorral/;Abejorral;abejorral
+http://www.meetup.com/cities/co/abrego/;Abrego;abrego
+http://www.meetup.com/cities/co/acac%C3%ADas/;Acacías;acac%C3%ADas
+http://www.meetup.com/cities/co/aguachica/;Aguachica;aguachica
+http://www.meetup.com/cities/co/aguadas/;Aguadas;aguadas
+http://www.meetup.com/cities/co/agua_de_dios/;Agua de Dios;agua_de_dios
+http://www.meetup.com/cities/co/aguazul/;Aguazul;aguazul
+http://www.meetup.com/cities/co/agust%C3%ADn_codazzi/;Agustín Codazzi;agust%C3%ADn_codazzi
+http://www.meetup.com/cities/co/aipe/;Aipe;aipe
+http://www.meetup.com/cities/co/alb%C3%A1n/;Albán;alb%C3%A1n
+http://www.meetup.com/cities/co/alcal%C3%A1/;Alcalá;alcal%C3%A1
+http://www.meetup.com/cities/co/algeciras/;Algeciras;algeciras
+http://www.meetup.com/cities/co/amag%C3%A1/;Amagá;amag%C3%A1
+http://www.meetup.com/cities/co/amalfi/;Amalfi;amalfi
+http://www.meetup.com/cities/co/ambalema/;Ambalema;ambalema
+http://www.meetup.com/cities/co/ancuy%C3%A1/;Ancuyá;ancuy%C3%A1
+http://www.meetup.com/cities/co/andaluc%C3%ADa/;Andalucía;andaluc%C3%ADa
+http://www.meetup.com/cities/co/andes/;Andes;andes
+http://www.meetup.com/cities/co/anserma/;Anserma;anserma
+http://www.meetup.com/cities/co/ansermanuevo/;Ansermanuevo;ansermanuevo
+http://www.meetup.com/cities/co/antioquia/;Antioquia;antioquia
+http://www.meetup.com/cities/co/apartad%C3%B3/;Apartadó;apartad%C3%B3
+http://www.meetup.com/cities/co/aquitania/;Aquitania;aquitania
+http://www.meetup.com/cities/co/aracataca/;Aracataca;aracataca
+http://www.meetup.com/cities/co/aranzaz%C3%BA/;Aranzazú;aranzaz%C3%BA
+http://www.meetup.com/cities/co/arauca/;Arauca;arauca
+http://www.meetup.com/cities/co/arauquita/;Arauquita;arauquita
+http://www.meetup.com/cities/co/arboletes/;Arboletes;arboletes
+http://www.meetup.com/cities/co/ariguan%C3%AD/;Ariguaní;ariguan%C3%AD
+http://www.meetup.com/cities/co/arjona/;Arjona;arjona
+http://www.meetup.com/cities/co/armenia/;Armenia;armenia
+http://www.meetup.com/cities/co/astrea/;Astrea;astrea
+http://www.meetup.com/cities/co/ayapel/;Ayapel;ayapel
+http://www.meetup.com/cities/co/azcatepec/;Azcatepec;azcatepec
+http://www.meetup.com/cities/co/baranoa/;Baranoa;baranoa
+http://www.meetup.com/cities/co/barbacoas/;Barbacoas;barbacoas
+http://www.meetup.com/cities/co/barbosa/;Barbosa;barbosa
+http://www.meetup.com/cities/co/barrancabermeja/;Barrancabermeja;barrancabermeja
+http://www.meetup.com/cities/co/barrancas/;Barrancas;barrancas
+http://www.meetup.com/cities/co/barranco_de_loba/;Barranco de Loba;barranco_de_loba
+http://www.meetup.com/cities/co/barranquilla/;Barranquilla;barranquilla
+http://www.meetup.com/cities/co/becerril/;Becerril;becerril
+http://www.meetup.com/cities/co/belalc%C3%A1zar/;Belalcázar;belalc%C3%A1zar
+http://www.meetup.com/cities/co/bello/;Bello;bello
+http://www.meetup.com/cities/co/benito_ju%C3%A1rez/;Benito Juárez;benito_ju%C3%A1rez
+http://www.meetup.com/cities/co/bogot%C3%A1/;Bogotá;bogot%C3%A1
+http://www.meetup.com/cities/co/bol%C3%ADvar/;Bolívar;bol%C3%ADvar
+http://www.meetup.com/cities/co/bosconia/;Bosconia;bosconia
+http://www.meetup.com/cities/co/bucaramanga/;Bucaramanga;bucaramanga
+http://www.meetup.com/cities/co/buenaventura/;Buenaventura;buenaventura
+http://www.meetup.com/cities/co/buenavista/;Buenavista;buenavista
+http://www.meetup.com/cities/co/buga/;Buga;buga
+http://www.meetup.com/cities/co/bugalagrande/;Bugalagrande;bugalagrande
+http://www.meetup.com/cities/co/caicedonia/;Caicedonia;caicedonia
+http://www.meetup.com/cities/co/cajamarca/;Cajamarca;cajamarca
+http://www.meetup.com/cities/co/cajic%C3%A1/;Cajicá;cajic%C3%A1
+http://www.meetup.com/cities/co/calamar/;Calamar;calamar
+http://www.meetup.com/cities/co/calarc%C3%A1/;Calarcá;calarc%C3%A1
+http://www.meetup.com/cities/co/caldas/;Caldas;caldas
+http://www.meetup.com/cities/co/calera/;Calera;calera
+http://www.meetup.com/cities/co/cali/;Cali;cali
+http://www.meetup.com/cities/co/campoalegre/;Campoalegre;campoalegre
+http://www.meetup.com/cities/co/campo_de_la_cruz/;Campo de la Cruz;campo_de_la_cruz
+http://www.meetup.com/cities/co/ca%C3%B1asgordas/;Cañasgordas;ca%C3%B1asgordas
+http://www.meetup.com/cities/co/candel%C3%A1ria/;Candelária;candel%C3%A1ria
+http://www.meetup.com/cities/co/c%C3%A1queza/;Cáqueza;c%C3%A1queza
+http://www.meetup.com/cities/co/carmen_de_apical%C3%A1/;Carmen de Apicalá;carmen_de_apical%C3%A1
+http://www.meetup.com/cities/co/carmen_de_viboral/;Carmen de Viboral;carmen_de_viboral
+http://www.meetup.com/cities/co/cartagena/;Cartagena;cartagena
+http://www.meetup.com/cities/co/cartagena_del_chaira/;Cartagena del Chaira;cartagena_del_chaira
+http://www.meetup.com/cities/co/cartago/;Cartago;cartago
+http://www.meetup.com/cities/co/caucasia/;Caucasia;caucasia
+http://www.meetup.com/cities/co/ceret%C3%A9/;Cereté;ceret%C3%A9
+http://www.meetup.com/cities/co/cerro_san_antonio/;Cerro San Antonio;cerro_san_antonio
+http://www.meetup.com/cities/co/chaparral/;Chaparral;chaparral
+http://www.meetup.com/cities/co/charal%C3%A1/;Charalá;charal%C3%A1
+http://www.meetup.com/cities/co/ch%C3%ADa/;Chía;ch%C3%ADa
+http://www.meetup.com/cities/co/chiconcuac/;Chiconcuac;chiconcuac
+http://www.meetup.com/cities/co/chigorod%C3%B3/;Chigorodó;chigorod%C3%B3
+http://www.meetup.com/cities/co/chimichagua/;Chimichagua;chimichagua
+http://www.meetup.com/cities/co/chin%C3%A1cota/;Chinácota;chin%C3%A1cota
+http://www.meetup.com/cities/co/chinchin%C3%A1/;Chinchiná;chinchin%C3%A1
+http://www.meetup.com/cities/co/chin%C3%BA/;Chinú;chin%C3%BA
+http://www.meetup.com/cities/co/chiquinquir%C3%A1/;Chiquinquirá;chiquinquir%C3%A1
+http://www.meetup.com/cities/co/chiriguan%C3%A1/;Chiriguaná;chiriguan%C3%A1
+http://www.meetup.com/cities/co/chivolo/;Chivolo;chivolo
+http://www.meetup.com/cities/co/chocont%C3%A1/;Chocontá;chocont%C3%A1
+http://www.meetup.com/cities/co/ci%C3%A9naga/;Ciénaga;ci%C3%A9naga
+http://www.meetup.com/cities/co/ci%C3%A9naga_de_oro/;Ciénaga de Oro;ci%C3%A9naga_de_oro
+http://www.meetup.com/cities/co/cimitarra/;Cimitarra;cimitarra
+http://www.meetup.com/cities/co/circasia/;Circasia;circasia
+http://www.meetup.com/cities/co/cisneros/;Cisneros;cisneros
+http://www.meetup.com/cities/co/cocorn%C3%A1/;Cocorná;cocorn%C3%A1
+http://www.meetup.com/cities/co/colombia/;Colombia;colombia
+http://www.meetup.com/cities/co/colon/;Colon;colon
+http://www.meetup.com/cities/co/conc%C3%B3rdia/;Concórdia;conc%C3%B3rdia
+http://www.meetup.com/cities/co/condoto/;Condoto;condoto
+http://www.meetup.com/cities/co/convenci%C3%B3n/;Convención;convenci%C3%B3n
+http://www.meetup.com/cities/co/copacabana/;Copacabana;copacabana
+http://www.meetup.com/cities/co/c%C3%B3rdoba/;Córdoba;c%C3%B3rdoba
+http://www.meetup.com/cities/co/corinto/;Corinto;corinto
+http://www.meetup.com/cities/co/corozal/;Corozal;corozal
+http://www.meetup.com/cities/co/cota/;Cota;cota
+http://www.meetup.com/cities/co/c%C3%BAcuta/;Cúcuta;c%C3%BAcuta
+http://www.meetup.com/cities/co/cumaral/;Cumaral;cumaral
+http://www.meetup.com/cities/co/cumbal/;Cumbal;cumbal
+http://www.meetup.com/cities/co/curillo/;Curillo;curillo
+http://www.meetup.com/cities/co/curuman%C3%AD/;Curumaní;curuman%C3%AD
+http://www.meetup.com/cities/co/dabeiba/;Dabeiba;dabeiba
+http://www.meetup.com/cities/co/dagua/;Dagua;dagua
+http://www.meetup.com/cities/co/dari%C3%A9n/;Darién;dari%C3%A9n
+http://www.meetup.com/cities/co/dolores/;Dolores;dolores
+http://www.meetup.com/cities/co/don_mat%C3%ADas/;Don Matías;don_mat%C3%ADas
+http://www.meetup.com/cities/co/donostia/;Donostia;donostia
+http://www.meetup.com/cities/co/dos_quebradas/;Dos Quebradas;dos_quebradas
+http://www.meetup.com/cities/co/duitama/;Duitama;duitama
+http://www.meetup.com/cities/co/el_bagre/;El Bagre;el_bagre
+http://www.meetup.com/cities/co/el_banco/;El Banco;el_banco
+http://www.meetup.com/cities/co/el_bordo/;El Bordo;el_bordo
+http://www.meetup.com/cities/co/el_carmen_de_bol%C3%ADvar/;El Carmen de Bolívar;el_carmen_de_bol%C3%ADvar
+http://www.meetup.com/cities/co/el_cerrito/;El Cerrito;el_cerrito
+http://www.meetup.com/cities/co/el_charco/;El Charco;el_charco
+http://www.meetup.com/cities/co/el_colegio/;El Colegio;el_colegio
+http://www.meetup.com/cities/co/el_copey/;El Copey;el_copey
+http://www.meetup.com/cities/co/el_doncello/;El Doncello;el_doncello
+http://www.meetup.com/cities/co/el_dovio/;El Dovio;el_dovio
+http://www.meetup.com/cities/co/el_espinal/;El Espinal;el_espinal
+http://www.meetup.com/cities/co/el_molino/;El Molino;el_molino
+http://www.meetup.com/cities/co/el_paujil/;El Paujil;el_paujil
+http://www.meetup.com/cities/co/el_pi%C3%B1%C3%B3n/;El Piñón;el_pi%C3%B1%C3%B3n
+http://www.meetup.com/cities/co/el_play%C3%B3n/;El Playón;el_play%C3%B3n
+http://www.meetup.com/cities/co/el_tambo/;El Tambo;el_tambo
+http://www.meetup.com/cities/co/el_zulia/;El Zulia;el_zulia
+http://www.meetup.com/cities/co/emilio_carranza/;Emilio Carranza;emilio_carranza
+http://www.meetup.com/cities/co/envigado/;Envigado;envigado
+http://www.meetup.com/cities/co/etla/;Etla;etla
+http://www.meetup.com/cities/co/facatativ%C3%A1/;Facatativá;facatativ%C3%A1
+http://www.meetup.com/cities/co/fal%C3%A1n/;Falán;fal%C3%A1n
+http://www.meetup.com/cities/co/filandia/;Filandia;filandia
+http://www.meetup.com/cities/co/flandes/;Flandes;flandes
+http://www.meetup.com/cities/co/florencia/;Florencia;florencia
+http://www.meetup.com/cities/co/florida/;Florida;florida
+http://www.meetup.com/cities/co/floridablanca/;Floridablanca;floridablanca
+http://www.meetup.com/cities/co/fonseca/;Fonseca;fonseca
+http://www.meetup.com/cities/co/fredonia/;Fredonia;fredonia
+http://www.meetup.com/cities/co/fresno/;Fresno;fresno
+http://www.meetup.com/cities/co/frontino/;Frontino;frontino
+http://www.meetup.com/cities/co/fundaci%C3%B3n/;Fundación;fundaci%C3%B3n
+http://www.meetup.com/cities/co/funza/;Funza;funza
+http://www.meetup.com/cities/co/fusagasug%C3%A1/;Fusagasugá;fusagasug%C3%A1
+http://www.meetup.com/cities/co/galapa/;Galapa;galapa
+http://www.meetup.com/cities/co/galeras/;Galeras;galeras
+http://www.meetup.com/cities/co/gamarra/;Gamarra;gamarra
+http://www.meetup.com/cities/co/garagoa/;Garagoa;garagoa
+http://www.meetup.com/cities/co/garz%C3%B3n/;Garzón;garz%C3%B3n
+http://www.meetup.com/cities/co/gen%C3%A8ve/;Genève;gen%C3%A8ve
+http://www.meetup.com/cities/co/gigante/;Gigante;gigante
+http://www.meetup.com/cities/co/girardot/;Girardot;girardot
+http://www.meetup.com/cities/co/girardota/;Girardota;girardota
+http://www.meetup.com/cities/co/gir%C3%B3n/;Girón;gir%C3%B3n
+http://www.meetup.com/cities/co/granada/;Granada;granada
+http://www.meetup.com/cities/co/guacar%C3%AD/;Guacarí;guacar%C3%AD
+http://www.meetup.com/cities/co/guaduas/;Guaduas;guaduas
+http://www.meetup.com/cities/co/guaitarilla/;Guaitarilla;guaitarilla
+http://www.meetup.com/cities/co/guamal/;Guamal;guamal
+http://www.meetup.com/cities/co/guamo/;Guamo;guamo
+http://www.meetup.com/cities/co/guap%C3%AD/;Guapí;guap%C3%AD
+http://www.meetup.com/cities/co/guaranda/;Guaranda;guaranda
+http://www.meetup.com/cities/co/guarne/;Guarne;guarne
+http://www.meetup.com/cities/co/guateque/;Guateque;guateque
+http://www.meetup.com/cities/co/guayabal/;Guayabal;guayabal
+http://www.meetup.com/cities/co/honda/;Honda;honda
+http://www.meetup.com/cities/co/huaxpaltepec/;Huaxpaltepec;huaxpaltepec
+http://www.meetup.com/cities/co/hueyotlipan/;Hueyotlipan;hueyotlipan
+http://www.meetup.com/cities/co/ibagu%C3%A9/;Ibagué;ibagu%C3%A9
+http://www.meetup.com/cities/co/in%C3%ADrida/;Inírida;in%C3%ADrida
+http://www.meetup.com/cities/co/ipiales/;Ipiales;ipiales
+http://www.meetup.com/cities/co/istmina/;Istmina;istmina
+http://www.meetup.com/cities/co/itag%C3%BC%C3%AD/;Itagüí;itag%C3%BC%C3%AD
+http://www.meetup.com/cities/co/ituango/;Ituango;ituango
+http://www.meetup.com/cities/co/jamund%C3%AD/;Jamundí;jamund%C3%AD
+http://www.meetup.com/cities/co/jard%C3%ADn/;Jardín;jard%C3%ADn
+http://www.meetup.com/cities/co/jeric%C3%B3/;Jericó;jeric%C3%B3
+http://www.meetup.com/cities/co/juan_de_acosta/;Juan de Acosta;juan_de_acosta
+http://www.meetup.com/cities/co/la_ceja/;La Ceja;la_ceja
+http://www.meetup.com/cities/co/la_cruz/;La Cruz;la_cruz
+http://www.meetup.com/cities/co/la_dorada/;La Dorada;la_dorada
+http://www.meetup.com/cities/co/la_estrella/;La Estrella;la_estrella
+http://www.meetup.com/cities/co/la_gloria/;La Gloria;la_gloria
+http://www.meetup.com/cities/co/la_jagua_ibirico/;La Jagua Ibirico;la_jagua_ibirico
+http://www.meetup.com/cities/co/la_mesa/;La Mesa;la_mesa
+http://www.meetup.com/cities/co/la_palma/;La Palma;la_palma
+http://www.meetup.com/cities/co/la_plata/;La Plata;la_plata
+http://www.meetup.com/cities/co/la_tebaida/;La Tebaida;la_tebaida
+http://www.meetup.com/cities/co/la_uni%C3%B3n/;La Unión;la_uni%C3%B3n
+http://www.meetup.com/cities/co/la_victoria/;La Victoria;la_victoria
+http://www.meetup.com/cities/co/la_virginia/;La Virginia;la_virginia
+http://www.meetup.com/cities/co/lebrija/;Lebrija;lebrija
+http://www.meetup.com/cities/co/leiva/;Leiva;leiva
+http://www.meetup.com/cities/co/l%C3%A9rida/;Lérida;l%C3%A9rida
+http://www.meetup.com/cities/co/leticia/;Leticia;leticia
+http://www.meetup.com/cities/co/l%C3%ADbano/;Líbano;l%C3%ADbano
+http://www.meetup.com/cities/co/lorica/;Lorica;lorica
+http://www.meetup.com/cities/co/los_palmitos/;Los Palmitos;los_palmitos
+http://www.meetup.com/cities/co/los_patios/;Los Patios;los_patios
+http://www.meetup.com/cities/co/luruaco/;Luruaco;luruaco
+http://www.meetup.com/cities/co/madrid/;Madrid;madrid
+http://www.meetup.com/cities/co/magangu%C3%A9/;Magangué;magangu%C3%A9
+http://www.meetup.com/cities/co/mahates/;Mahates;mahates
+http://www.meetup.com/cities/co/maicao/;Maicao;maicao
+http://www.meetup.com/cities/co/majagual/;Majagual;majagual
+http://www.meetup.com/cities/co/m%C3%A1laga/;Málaga;m%C3%A1laga
+http://www.meetup.com/cities/co/malambo/;Malambo;malambo
+http://www.meetup.com/cities/co/manat%C3%AD/;Manatí;manat%C3%AD
+http://www.meetup.com/cities/co/manaure/;Manaure;manaure
+http://www.meetup.com/cities/co/man%C3%AD/;Maní;man%C3%AD
+http://www.meetup.com/cities/co/manizales/;Manizales;manizales
+http://www.meetup.com/cities/co/manzanares/;Manzanares;manzanares
+http://www.meetup.com/cities/co/mar%C3%ADa_la_baja/;María la Baja;mar%C3%ADa_la_baja
+http://www.meetup.com/cities/co/marinilla/;Marinilla;marinilla
+http://www.meetup.com/cities/co/mariquita/;Mariquita;mariquita
+http://www.meetup.com/cities/co/marquetalia/;Marquetalia;marquetalia
+http://www.meetup.com/cities/co/marseille/;Marseille;marseille
+http://www.meetup.com/cities/co/medell%C3%ADn/;Medellín;medell%C3%ADn
+http://www.meetup.com/cities/co/melgar/;Melgar;melgar
+http://www.meetup.com/cities/co/miranda/;Miranda;miranda
+http://www.meetup.com/cities/co/mistrat%C3%B3/;Mistrató;mistrat%C3%B3
+http://www.meetup.com/cities/co/mit%C3%BA/;Mitú;mit%C3%BA
+http://www.meetup.com/cities/co/mocoa/;Mocoa;mocoa
+http://www.meetup.com/cities/co/momil/;Momil;momil
+http://www.meetup.com/cities/co/momp%C3%B3s/;Mompós;momp%C3%B3s
+http://www.meetup.com/cities/co/moniquir%C3%A1/;Moniquirá;moniquir%C3%A1
+http://www.meetup.com/cities/co/montel%C3%ADbano/;Montelíbano;montel%C3%ADbano
+http://www.meetup.com/cities/co/montenegro/;Montenegro;montenegro
+http://www.meetup.com/cities/co/monter%C3%ADa/;Montería;monter%C3%ADa
+http://www.meetup.com/cities/co/monterrey/;Monterrey;monterrey
+http://www.meetup.com/cities/co/mosquera/;Mosquera;mosquera
+http://www.meetup.com/cities/co/muzo/;Muzo;muzo
+http://www.meetup.com/cities/co/natagaima/;Natagaima;natagaima
+http://www.meetup.com/cities/co/nech%C3%AD/;Nechí;nech%C3%AD
+http://www.meetup.com/cities/co/necocl%C3%AD/;Necoclí;necocl%C3%AD
+http://www.meetup.com/cities/co/neira/;Neira;neira
+http://www.meetup.com/cities/co/neiva/;Neiva;neiva
+http://www.meetup.com/cities/co/obando/;Obando;obando
+http://www.meetup.com/cities/co/oca%C3%B1a/;Ocaña;oca%C3%B1a
+http://www.meetup.com/cities/co/olaya_herrera/;Olaya Herrera;olaya_herrera
+http://www.meetup.com/cities/co/orito/;Orito;orito
+http://www.meetup.com/cities/co/ortega/;Ortega;ortega
+http://www.meetup.com/cities/co/ovejas/;Ovejas;ovejas
+http://www.meetup.com/cities/co/pacho/;Pacho;pacho
+http://www.meetup.com/cities/co/p%C3%A1cora/;Pácora;p%C3%A1cora
+http://www.meetup.com/cities/co/pailitas/;Pailitas;pailitas
+http://www.meetup.com/cities/co/paipa/;Paipa;paipa
+http://www.meetup.com/cities/co/palermo/;Palermo;palermo
+http://www.meetup.com/cities/co/palestina/;Palestina;palestina
+http://www.meetup.com/cities/co/palmar_de_varela/;Palmar de Varela;palmar_de_varela
+http://www.meetup.com/cities/co/palmira/;Palmira;palmira
+http://www.meetup.com/cities/co/pamplona/;Pamplona;pamplona
+http://www.meetup.com/cities/co/pasto/;Pasto;pasto
+http://www.meetup.com/cities/co/paz_de_ariporo/;Paz de Ariporo;paz_de_ariporo
+http://www.meetup.com/cities/co/pelaya/;Pelaya;pelaya
+http://www.meetup.com/cities/co/pe%C3%B1ol/;Peñol;pe%C3%B1ol
+http://www.meetup.com/cities/co/pensilvania/;Pensilvania;pensilvania
+http://www.meetup.com/cities/co/pereira/;Pereira;pereira
+http://www.meetup.com/cities/co/pesca/;Pesca;pesca
+http://www.meetup.com/cities/co/piedecuesta/;Piedecuesta;piedecuesta
+http://www.meetup.com/cities/co/piendam%C3%B3/;Piendamó;piendam%C3%B3
+http://www.meetup.com/cities/co/pijao/;Pijao;pijao
+http://www.meetup.com/cities/co/pitalito/;Pitalito;pitalito
+http://www.meetup.com/cities/co/pivijay/;Pivijay;pivijay
+http://www.meetup.com/cities/co/planadas/;Planadas;planadas
+http://www.meetup.com/cities/co/planeta_rica/;Planeta Rica;planeta_rica
+http://www.meetup.com/cities/co/plato/;Plato;plato
+http://www.meetup.com/cities/co/polo_nuevo/;Polo Nuevo;polo_nuevo
+http://www.meetup.com/cities/co/ponedera/;Ponedera;ponedera
+http://www.meetup.com/cities/co/popay%C3%A1n/;Popayán;popay%C3%A1n
+http://www.meetup.com/cities/co/pradera/;Pradera;pradera
+http://www.meetup.com/cities/co/pueblo_nuevo/;Pueblo Nuevo;pueblo_nuevo
+http://www.meetup.com/cities/co/pueblorrico/;Pueblorrico;pueblorrico
+http://www.meetup.com/cities/co/puente_nacional/;Puente Nacional;puente_nacional
+http://www.meetup.com/cities/co/puerto_as%C3%ADs/;Puerto Asís;puerto_as%C3%ADs
+http://www.meetup.com/cities/co/puerto_berr%C3%ADo/;Puerto Berrío;puerto_berr%C3%ADo
+http://www.meetup.com/cities/co/puerto_boyac%C3%A1/;Puerto Boyacá;puerto_boyac%C3%A1
+http://www.meetup.com/cities/co/puerto_carre%C3%B1o/;Puerto Carreño;puerto_carre%C3%B1o
+http://www.meetup.com/cities/co/puerto_colombia/;Puerto Colombia;puerto_colombia
+http://www.meetup.com/cities/co/puerto_legu%C3%ADzamo/;Puerto Leguízamo;puerto_legu%C3%ADzamo
+http://www.meetup.com/cities/co/puerto_l%C3%B3pez/;Puerto López;puerto_l%C3%B3pez
+http://www.meetup.com/cities/co/puerto_rico/;Puerto Rico;puerto_rico
+http://www.meetup.com/cities/co/puerto_salgar/;Puerto Salgar;puerto_salgar
+http://www.meetup.com/cities/co/puerto_tejada/;Puerto Tejada;puerto_tejada
+http://www.meetup.com/cities/co/puerto_wilches/;Puerto Wilches;puerto_wilches
+http://www.meetup.com/cities/co/pupiales/;Pupiales;pupiales
+http://www.meetup.com/cities/co/purificaci%C3%B3n/;Purificación;purificaci%C3%B3n
+http://www.meetup.com/cities/co/pur%C3%ADsima/;Purísima;pur%C3%ADsima
+http://www.meetup.com/cities/co/quibd%C3%B3/;Quibdó;quibd%C3%B3
+http://www.meetup.com/cities/co/quimbaya/;Quimbaya;quimbaya
+http://www.meetup.com/cities/co/quinch%C3%ADa/;Quinchía;quinch%C3%ADa
+http://www.meetup.com/cities/co/remedios/;Remedios;remedios
+http://www.meetup.com/cities/co/remolino/;Remolino;remolino
+http://www.meetup.com/cities/co/repel%C3%B3n/;Repelón;repel%C3%B3n
+http://www.meetup.com/cities/co/restrepo/;Restrepo;restrepo
+http://www.meetup.com/cities/co/retiro/;Retiro;retiro
+http://www.meetup.com/cities/co/r%C3%ADo_de_oro/;Río de Oro;r%C3%ADo_de_oro
+http://www.meetup.com/cities/co/riofr%C3%ADo/;Riofrío;riofr%C3%ADo
+http://www.meetup.com/cities/co/r%C3%ADohacha/;Ríohacha;r%C3%ADohacha
+http://www.meetup.com/cities/co/r%C3%ADonegro/;Ríonegro;r%C3%ADonegro
+http://www.meetup.com/cities/co/r%C3%ADosucio/;Ríosucio;r%C3%ADosucio
+http://www.meetup.com/cities/co/r%C3%ADo_viejo/;Río Viejo;r%C3%ADo_viejo
+http://www.meetup.com/cities/co/risaralda/;Risaralda;risaralda
+http://www.meetup.com/cities/co/rivera/;Rivera;rivera
+http://www.meetup.com/cities/co/roldanillo/;Roldanillo;roldanillo
+http://www.meetup.com/cities/co/rovira/;Rovira;rovira
+http://www.meetup.com/cities/co/sabana_de_torres/;Sabana de Torres;sabana_de_torres
+http://www.meetup.com/cities/co/sabanagrande/;Sabanagrande;sabanagrande
+http://www.meetup.com/cities/co/sabanalarga/;Sabanalarga;sabanalarga
+http://www.meetup.com/cities/co/sabaneta/;Sabaneta;sabaneta
+http://www.meetup.com/cities/co/sahag%C3%BAn/;Sahagún;sahag%C3%BAn
+http://www.meetup.com/cities/co/salamina/;Salamina;salamina
+http://www.meetup.com/cities/co/salda%C3%B1a/;Saldaña;salda%C3%B1a
+http://www.meetup.com/cities/co/salkar/;Salkar;salkar
+http://www.meetup.com/cities/co/saman%C3%A1/;Samaná;saman%C3%A1
+http://www.meetup.com/cities/co/samaniego/;Samaniego;samaniego
+http://www.meetup.com/cities/co/sampu%C3%A9s/;Sampués;sampu%C3%A9s
+http://www.meetup.com/cities/co/san_alberto/;San Alberto;san_alberto
+http://www.meetup.com/cities/co/san_antero/;San Antero;san_antero
+http://www.meetup.com/cities/co/san_antonio/;San Antonio;san_antonio
+http://www.meetup.com/cities/co/san_benito_abad/;San Benito Abad;san_benito_abad
+http://www.meetup.com/cities/co/san_bernardo_viento/;San Bernardo Viento;san_bernardo_viento
+http://www.meetup.com/cities/co/san_diego/;San Diego;san_diego
+http://www.meetup.com/cities/co/sandon%C3%A1/;Sandoná;sandon%C3%A1
+http://www.meetup.com/cities/co/san_estanislao/;San Estanislao;san_estanislao
+http://www.meetup.com/cities/co/san_gil/;San Gil;san_gil
+http://www.meetup.com/cities/co/san_jos%C3%A9_del_guaviare/;San José del Guaviare;san_jos%C3%A9_del_guaviare
+http://www.meetup.com/cities/co/san_juan_de_betulia/;San Juan de Betulia;san_juan_de_betulia
+http://www.meetup.com/cities/co/san_juan_del_c%C3%A9sar/;San Juan del César;san_juan_del_c%C3%A9sar
+http://www.meetup.com/cities/co/san_juan_de_urab%C3%A1/;San Juan de Urabá;san_juan_de_urab%C3%A1
+http://www.meetup.com/cities/co/san_juan_nepomuceno/;San Juan Nepomuceno;san_juan_nepomuceno
+http://www.meetup.com/cities/co/san_marcos/;San Marcos;san_marcos
+http://www.meetup.com/cities/co/san_mart%C3%ADn_de_loba/;San Martín de Loba;san_mart%C3%ADn_de_loba
+http://www.meetup.com/cities/co/san_onofre/;San Onofre;san_onofre
+http://www.meetup.com/cities/co/san_pablo/;San Pablo;san_pablo
+http://www.meetup.com/cities/co/san_pedro/;San Pedro;san_pedro
+http://www.meetup.com/cities/co/san_pedro_de_urab%C3%A1/;San Pedro de Urabá;san_pedro_de_urab%C3%A1
+http://www.meetup.com/cities/co/san_pelayo/;San Pelayo;san_pelayo
+http://www.meetup.com/cities/co/san_rafael/;San Rafael;san_rafael
+http://www.meetup.com/cities/co/san_roque/;San Roque;san_roque
+http://www.meetup.com/cities/co/san_sebasti%C3%A1n_villanueva/;San Sebastián Villanueva;san_sebasti%C3%A1n_villanueva
+http://www.meetup.com/cities/co/santa_ana/;Santa Ana;santa_ana
+http://www.meetup.com/cities/co/santa_catalina/;Santa Catalina;santa_catalina
+http://www.meetup.com/cities/co/santa_marta/;Santa Marta;santa_marta
+http://www.meetup.com/cities/co/santander_de_quilichao/;Santander de Quilichao;santander_de_quilichao
+http://www.meetup.com/cities/co/santa_rosa/;Santa Rosa;santa_rosa
+http://www.meetup.com/cities/co/santa_rosa_de_cabal/;Santa Rosa de Cabal;santa_rosa_de_cabal
+http://www.meetup.com/cities/co/santa_rosa_de_osos/;Santa Rosa de Osos;santa_rosa_de_osos
+http://www.meetup.com/cities/co/santa_rosa_de_viterbo/;Santa Rosa de Viterbo;santa_rosa_de_viterbo
+http://www.meetup.com/cities/co/santu%C3%A1rio/;Santuário;santu%C3%A1rio
+http://www.meetup.com/cities/co/san_vicente_de_chucur%C3%AD/;San Vicente de Chucurí;san_vicente_de_chucur%C3%AD
+http://www.meetup.com/cities/co/san_vicente_del_caguan/;San Vicente del Caguan;san_vicente_del_caguan
+http://www.meetup.com/cities/co/san_zen%C3%B3n/;San Zenón;san_zen%C3%B3n
+http://www.meetup.com/cities/co/saravena/;Saravena;saravena
+http://www.meetup.com/cities/co/sardinata/;Sardinata;sardinata
+http://www.meetup.com/cities/co/segovia/;Segovia;segovia
+http://www.meetup.com/cities/co/serula/;Serula;serula
+http://www.meetup.com/cities/co/sevilla/;Sevilla;sevilla
+http://www.meetup.com/cities/co/sibundoy/;Sibundoy;sibundoy
+http://www.meetup.com/cities/co/silvania/;Silvania;silvania
+http://www.meetup.com/cities/co/silvia/;Silvia;silvia
+http://www.meetup.com/cities/co/simit%C3%AD/;Simití;simit%C3%AD
+http://www.meetup.com/cities/co/sinc%C3%A9/;Sincé;sinc%C3%A9
+http://www.meetup.com/cities/co/sincelejo/;Sincelejo;sincelejo
+http://www.meetup.com/cities/co/sitionuevo/;Sitionuevo;sitionuevo
+http://www.meetup.com/cities/co/soacha/;Soacha;soacha
+http://www.meetup.com/cities/co/soat%C3%A1/;Soatá;soat%C3%A1
+http://www.meetup.com/cities/co/sogamoso/;Sogamoso;sogamoso
+http://www.meetup.com/cities/co/soledad/;Soledad;soledad
+http://www.meetup.com/cities/co/sons%C3%B3n/;Sonsón;sons%C3%B3n
+http://www.meetup.com/cities/co/sopetr%C3%A1n/;Sopetrán;sopetr%C3%A1n
+http://www.meetup.com/cities/co/soplaviento/;Soplaviento;soplaviento
+http://www.meetup.com/cities/co/sop%C3%B3/;Sopó;sop%C3%B3
+http://www.meetup.com/cities/co/suan/;Suan;suan
+http://www.meetup.com/cities/co/sucre/;Sucre;sucre
+http://www.meetup.com/cities/co/sup%C3%ADa/;Supía;sup%C3%ADa
+http://www.meetup.com/cities/co/tad%C3%B3/;Tadó;tad%C3%B3
+http://www.meetup.com/cities/co/talaigua_nuevo/;Talaigua Nuevo;talaigua_nuevo
+http://www.meetup.com/cities/co/tame/;Tame;tame
+http://www.meetup.com/cities/co/t%C3%A1mesis/;Támesis;t%C3%A1mesis
+http://www.meetup.com/cities/co/taraz%C3%A1/;Tarazá;taraz%C3%A1
+http://www.meetup.com/cities/co/tenerife/;Tenerife;tenerife
+http://www.meetup.com/cities/co/tib%C3%BA/;Tibú;tib%C3%BA
+http://www.meetup.com/cities/co/tierralta/;Tierralta;tierralta
+http://www.meetup.com/cities/co/timan%C3%A1/;Timaná;timan%C3%A1
+http://www.meetup.com/cities/co/timb%C3%ADo/;Timbío;timb%C3%ADo
+http://www.meetup.com/cities/co/tocaima/;Tocaima;tocaima
+http://www.meetup.com/cities/co/toledo/;Toledo;toledo
+http://www.meetup.com/cities/co/tol%C3%BA/;Tolú;tol%C3%BA
+http://www.meetup.com/cities/co/toro/;Toro;toro
+http://www.meetup.com/cities/co/trujillo/;Trujillo;trujillo
+http://www.meetup.com/cities/co/tubar%C3%A1/;Tubará;tubar%C3%A1
+http://www.meetup.com/cities/co/tulu%C3%A1/;Tuluá;tulu%C3%A1
+http://www.meetup.com/cities/co/tumaco/;Tumaco;tumaco
+http://www.meetup.com/cities/co/tunja/;Tunja;tunja
+http://www.meetup.com/cities/co/t%C3%BAquerres/;Túquerres;t%C3%BAquerres
+http://www.meetup.com/cities/co/turbaco/;Turbaco;turbaco
+http://www.meetup.com/cities/co/turban%C3%A1/;Turbaná;turban%C3%A1
+http://www.meetup.com/cities/co/turbo/;Turbo;turbo
+http://www.meetup.com/cities/co/ubat%C3%A9/;Ubaté;ubat%C3%A9
+http://www.meetup.com/cities/co/uribia/;Uribia;uribia
+http://www.meetup.com/cities/co/urrao/;Urrao;urrao
+http://www.meetup.com/cities/co/urumita/;Urumita;urumita
+http://www.meetup.com/cities/co/usiacur%C3%AD/;Usiacurí;usiacur%C3%AD
+http://www.meetup.com/cities/co/valencia/;Valencia;valencia
+http://www.meetup.com/cities/co/valledupar/;Valledupar;valledupar
+http://www.meetup.com/cities/co/v%C3%A9lez/;Vélez;v%C3%A9lez
+http://www.meetup.com/cities/co/venadillo/;Venadillo;venadillo
+http://www.meetup.com/cities/co/venecia/;Venecia;venecia
+http://www.meetup.com/cities/co/versalles/;Versalles;versalles
+http://www.meetup.com/cities/co/vijes/;Vijes;vijes
+http://www.meetup.com/cities/co/villa_del_rosario/;Villa del Rosario;villa_del_rosario
+http://www.meetup.com/cities/co/villamar%C3%ADa/;Villamaría;villamar%C3%ADa
+http://www.meetup.com/cities/co/villapinz%C3%B3n/;Villapinzón;villapinz%C3%B3n
+http://www.meetup.com/cities/co/villavicencio/;Villavicencio;villavicencio
+http://www.meetup.com/cities/co/villeta/;Villeta;villeta
+http://www.meetup.com/cities/co/viot%C3%A1/;Viotá;viot%C3%A1
+http://www.meetup.com/cities/co/viterbo/;Viterbo;viterbo
+http://www.meetup.com/cities/co/yaguar%C3%A1/;Yaguará;yaguar%C3%A1
+http://www.meetup.com/cities/co/yarumal/;Yarumal;yarumal
+http://www.meetup.com/cities/co/yolomb%C3%B3/;Yolombó;yolomb%C3%B3
+http://www.meetup.com/cities/co/yond%C3%B3/;Yondó;yond%C3%B3
+http://www.meetup.com/cities/co/yopal/;Yopal;yopal
+http://www.meetup.com/cities/co/yotoco/;Yotoco;yotoco
+http://www.meetup.com/cities/co/yumbo/;Yumbo;yumbo
+http://www.meetup.com/cities/co/zacamulpa/;Zacamulpa;zacamulpa
+http://www.meetup.com/cities/co/zambrano/;Zambrano;zambrano
+http://www.meetup.com/cities/co/zapatoca/;Zapatoca;zapatoca
+http://www.meetup.com/cities/co/zaragoza/;Zaragoza;zaragoza
+http://www.meetup.com/cities/co/zarzal/;Zarzal;zarzal
+http://www.meetup.com/cities/co/zipaquir%C3%A1/;Zipaquirá;zipaquir%C3%A1

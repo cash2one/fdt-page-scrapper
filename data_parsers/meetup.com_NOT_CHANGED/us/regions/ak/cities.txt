@@ -1,0 +1,458 @@
+http://www.meetup.com/cities/us/ak/adak/;Adak;adak
+http://www.meetup.com/cities/us/ak/akiachak/;Akiachak;akiachak
+http://www.meetup.com/cities/us/ak/akiak/;Akiak;akiak
+http://www.meetup.com/cities/us/ak/akutan/;Akutan;akutan
+http://www.meetup.com/cities/us/ak/alakanuk/;Alakanuk;alakanuk
+http://www.meetup.com/cities/us/ak/aleknagik/;Aleknagik;aleknagik
+http://www.meetup.com/cities/us/ak/allakaket/;Allakaket;allakaket
+http://www.meetup.com/cities/us/ak/ambler/;Ambler;ambler
+http://www.meetup.com/cities/us/ak/anaktuvuk_pass/;Anaktuvuk Pass;anaktuvuk_pass
+http://www.meetup.com/cities/us/ak/anchorage/;Anchorage;anchorage
+http://www.meetup.com/cities/us/ak/anchor_point/;Anchor Point;anchor_point
+http://www.meetup.com/cities/us/ak/anderson/;Anderson;anderson
+http://www.meetup.com/cities/us/ak/angoon/;Angoon;angoon
+http://www.meetup.com/cities/us/ak/aniak/;Aniak;aniak
+http://www.meetup.com/cities/us/ak/anvik/;Anvik;anvik
+http://www.meetup.com/cities/us/ak/arctic_village/;Arctic Village;arctic_village
+http://www.meetup.com/cities/us/ak/atka/;Atka;atka
+http://www.meetup.com/cities/us/ak/atqasuk/;Atqasuk;atqasuk
+http://www.meetup.com/cities/us/ak/auke_bay/;Auke Bay;auke_bay
+http://www.meetup.com/cities/us/ak/barrow/;Barrow;barrow
+http://www.meetup.com/cities/us/ak/beaver/;Beaver;beaver
+http://www.meetup.com/cities/us/ak/bethel/;Bethel;bethel
+http://www.meetup.com/cities/us/ak/bettles_field/;Bettles Field;bettles_field
+http://www.meetup.com/cities/us/ak/big_lake/;Big Lake;big_lake
+http://www.meetup.com/cities/us/ak/brevig_mission/;Brevig Mission;brevig_mission
+http://www.meetup.com/cities/us/ak/buckland/;Buckland;buckland
+http://www.meetup.com/cities/us/ak/cantwell/;Cantwell;cantwell
+http://www.meetup.com/cities/us/ak/central/;Central;central
+http://www.meetup.com/cities/us/ak/chalkyitsik/;Chalkyitsik;chalkyitsik
+http://www.meetup.com/cities/us/ak/chefornak/;Chefornak;chefornak
+http://www.meetup.com/cities/us/ak/chevak/;Chevak;chevak
+http://www.meetup.com/cities/us/ak/chicken/;Chicken;chicken
+http://www.meetup.com/cities/us/ak/chignik/;Chignik;chignik
+http://www.meetup.com/cities/us/ak/chignik_lagoon/;Chignik Lagoon;chignik_lagoon
+http://www.meetup.com/cities/us/ak/chignik_lake/;Chignik Lake;chignik_lake
+http://www.meetup.com/cities/us/ak/chitina/;Chitina;chitina
+http://www.meetup.com/cities/us/ak/chugiak/;Chugiak;chugiak
+http://www.meetup.com/cities/us/ak/circle/;Circle;circle
+http://www.meetup.com/cities/us/ak/clam_gulch/;Clam Gulch;clam_gulch
+http://www.meetup.com/cities/us/ak/clarks_point/;Clarks Point;clarks_point
+http://www.meetup.com/cities/us/ak/clear/;Clear;clear
+http://www.meetup.com/cities/us/ak/coffman_cove/;Coffman Cove;coffman_cove
+http://www.meetup.com/cities/us/ak/cold_bay/;Cold Bay;cold_bay
+http://www.meetup.com/cities/us/ak/cooper_landing/;Cooper Landing;cooper_landing
+http://www.meetup.com/cities/us/ak/copper_center/;Copper Center;copper_center
+http://www.meetup.com/cities/us/ak/cordova/;Cordova;cordova
+http://www.meetup.com/cities/us/ak/craig/;Craig;craig
+http://www.meetup.com/cities/us/ak/crooked_creek/;Crooked Creek;crooked_creek
+http://www.meetup.com/cities/us/ak/deering/;Deering;deering
+http://www.meetup.com/cities/us/ak/delta_junction/;Delta Junction;delta_junction
+http://www.meetup.com/cities/us/ak/denali_national_park/;Denali National Park;denali_national_park
+http://www.meetup.com/cities/us/ak/dillingham/;Dillingham;dillingham
+http://www.meetup.com/cities/us/ak/douglas/;Douglas;douglas
+http://www.meetup.com/cities/us/ak/dutch_harbor/;Dutch Harbor;dutch_harbor
+http://www.meetup.com/cities/us/ak/eagle/;Eagle;eagle
+http://www.meetup.com/cities/us/ak/eagle_river/;Eagle River;eagle_river
+http://www.meetup.com/cities/us/ak/eek/;Eek;eek
+http://www.meetup.com/cities/us/ak/egegik/;Egegik;egegik
+http://www.meetup.com/cities/us/ak/eielson_afb/;Eielson AFB;eielson_afb
+http://www.meetup.com/cities/us/ak/ekwok/;Ekwok;ekwok
+http://www.meetup.com/cities/us/ak/elfin_cove/;Elfin Cove;elfin_cove
+http://www.meetup.com/cities/us/ak/elim/;Elim;elim
+http://www.meetup.com/cities/us/ak/elmendorf_afb/;Elmendorf AFB;elmendorf_afb
+http://www.meetup.com/cities/us/ak/emmonak/;Emmonak;emmonak
+http://www.meetup.com/cities/us/ak/ester/;Ester;ester
+http://www.meetup.com/cities/us/ak/fairbanks/;Fairbanks;fairbanks
+http://www.meetup.com/cities/us/ak/false_pass/;False Pass;false_pass
+http://www.meetup.com/cities/us/ak/fort_greely/;Fort Greely;fort_greely
+http://www.meetup.com/cities/us/ak/fort_richardson/;Fort Richardson;fort_richardson
+http://www.meetup.com/cities/us/ak/fort_wainwright/;Fort Wainwright;fort_wainwright
+http://www.meetup.com/cities/us/ak/fort_yukon/;Fort Yukon;fort_yukon
+http://www.meetup.com/cities/us/ak/gakona/;Gakona;gakona
+http://www.meetup.com/cities/us/ak/galena/;Galena;galena
+http://www.meetup.com/cities/us/ak/gambell/;Gambell;gambell
+http://www.meetup.com/cities/us/ak/girdwood/;Girdwood;girdwood
+http://www.meetup.com/cities/us/ak/glennallen/;Glennallen;glennallen
+http://www.meetup.com/cities/us/ak/goodnews_bay/;Goodnews Bay;goodnews_bay
+http://www.meetup.com/cities/us/ak/grayling/;Grayling;grayling
+http://www.meetup.com/cities/us/ak/gustavus/;Gustavus;gustavus
+http://www.meetup.com/cities/us/ak/haines/;Haines;haines
+http://www.meetup.com/cities/us/ak/healy/;Healy;healy
+http://www.meetup.com/cities/us/ak/holy_cross/;Holy Cross;holy_cross
+http://www.meetup.com/cities/us/ak/homer/;Homer;homer
+http://www.meetup.com/cities/us/ak/hoonah/;Hoonah;hoonah
+http://www.meetup.com/cities/us/ak/hooper_bay/;Hooper Bay;hooper_bay
+http://www.meetup.com/cities/us/ak/hope/;Hope;hope
+http://www.meetup.com/cities/us/ak/houston/;Houston;houston
+http://www.meetup.com/cities/us/ak/hughes/;Hughes;hughes
+http://www.meetup.com/cities/us/ak/huslia/;Huslia;huslia
+http://www.meetup.com/cities/us/ak/hydaburg/;Hydaburg;hydaburg
+http://www.meetup.com/cities/us/ak/hyder/;Hyder;hyder
+http://www.meetup.com/cities/us/ak/iliamna/;Iliamna;iliamna
+http://www.meetup.com/cities/us/ak/indian/;Indian;indian
+http://www.meetup.com/cities/us/ak/juneau/;Juneau;juneau
+http://www.meetup.com/cities/us/ak/kake/;Kake;kake
+http://www.meetup.com/cities/us/ak/kaktovik/;Kaktovik;kaktovik
+http://www.meetup.com/cities/us/ak/kalskag/;Kalskag;kalskag
+http://www.meetup.com/cities/us/ak/kaltag/;Kaltag;kaltag
+http://www.meetup.com/cities/us/ak/karluk/;Karluk;karluk
+http://www.meetup.com/cities/us/ak/kasigluk/;Kasigluk;kasigluk
+http://www.meetup.com/cities/us/ak/kasilof/;Kasilof;kasilof
+http://www.meetup.com/cities/us/ak/kenai/;Kenai;kenai
+http://www.meetup.com/cities/us/ak/ketchikan/;Ketchikan;ketchikan
+http://www.meetup.com/cities/us/ak/kiana/;Kiana;kiana
+http://www.meetup.com/cities/us/ak/king_cove/;King Cove;king_cove
+http://www.meetup.com/cities/us/ak/king_salmon/;King Salmon;king_salmon
+http://www.meetup.com/cities/us/ak/kipnuk/;Kipnuk;kipnuk
+http://www.meetup.com/cities/us/ak/kivalina/;Kivalina;kivalina
+http://www.meetup.com/cities/us/ak/klawock/;Klawock;klawock
+http://www.meetup.com/cities/us/ak/kobuk/;Kobuk;kobuk
+http://www.meetup.com/cities/us/ak/kodiak/;Kodiak;kodiak
+http://www.meetup.com/cities/us/ak/kongiganak/;Kongiganak;kongiganak
+http://www.meetup.com/cities/us/ak/kotlik/;Kotlik;kotlik
+http://www.meetup.com/cities/us/ak/kotzebue/;Kotzebue;kotzebue
+http://www.meetup.com/cities/us/ak/koyuk/;Koyuk;koyuk
+http://www.meetup.com/cities/us/ak/koyukuk/;Koyukuk;koyukuk
+http://www.meetup.com/cities/us/ak/kwethluk/;Kwethluk;kwethluk
+http://www.meetup.com/cities/us/ak/kwigillingok/;Kwigillingok;kwigillingok
+http://www.meetup.com/cities/us/ak/lake_minchumina/;Lake Minchumina;lake_minchumina
+http://www.meetup.com/cities/us/ak/larsen_bay/;Larsen Bay;larsen_bay
+http://www.meetup.com/cities/us/ak/levelock/;Levelock;levelock
+http://www.meetup.com/cities/us/ak/lower_kalskag/;Lower Kalskag;lower_kalskag
+http://www.meetup.com/cities/us/ak/manley_hot_springs/;Manley Hot Springs;manley_hot_springs
+http://www.meetup.com/cities/us/ak/manokotak/;Manokotak;manokotak
+http://www.meetup.com/cities/us/ak/marshall/;Marshall;marshall
+http://www.meetup.com/cities/us/ak/mc_grath/;Mc Grath;mc_grath
+http://www.meetup.com/cities/us/ak/mekoryuk/;Mekoryuk;mekoryuk
+http://www.meetup.com/cities/us/ak/metlakatla/;Metlakatla;metlakatla
+http://www.meetup.com/cities/us/ak/meyers_chuck/;Meyers Chuck;meyers_chuck
+http://www.meetup.com/cities/us/ak/minto/;Minto;minto
+http://www.meetup.com/cities/us/ak/moose_pass/;Moose Pass;moose_pass
+http://www.meetup.com/cities/us/ak/mountain_village/;Mountain Village;mountain_village
+http://www.meetup.com/cities/us/ak/naknek/;Naknek;naknek
+http://www.meetup.com/cities/us/ak/napakiak/;Napakiak;napakiak
+http://www.meetup.com/cities/us/ak/nenana/;Nenana;nenana
+http://www.meetup.com/cities/us/ak/new_stuyahok/;New Stuyahok;new_stuyahok
+http://www.meetup.com/cities/us/ak/nightmute/;Nightmute;nightmute
+http://www.meetup.com/cities/us/ak/nikiski/;Nikiski;nikiski
+http://www.meetup.com/cities/us/ak/nikolai/;Nikolai;nikolai
+http://www.meetup.com/cities/us/ak/nikolski/;Nikolski;nikolski
+http://www.meetup.com/cities/us/ak/ninilchik/;Ninilchik;ninilchik
+http://www.meetup.com/cities/us/ak/noatak/;Noatak;noatak
+http://www.meetup.com/cities/us/ak/nome/;Nome;nome
+http://www.meetup.com/cities/us/ak/nondalton/;Nondalton;nondalton
+http://www.meetup.com/cities/us/ak/noorvik/;Noorvik;noorvik
+http://www.meetup.com/cities/us/ak/north_pole/;North Pole;north_pole
+http://www.meetup.com/cities/us/ak/northway/;Northway;northway
+http://www.meetup.com/cities/us/ak/nuiqsut/;Nuiqsut;nuiqsut
+http://www.meetup.com/cities/us/ak/nulato/;Nulato;nulato
+http://www.meetup.com/cities/us/ak/nunam_iqua/;Nunam Iqua;nunam_iqua
+http://www.meetup.com/cities/us/ak/nunapitchuk/;Nunapitchuk;nunapitchuk
+http://www.meetup.com/cities/us/ak/old_harbor/;Old Harbor;old_harbor
+http://www.meetup.com/cities/us/ak/ouzinkie/;Ouzinkie;ouzinkie
+http://www.meetup.com/cities/us/ak/palmer/;Palmer;palmer
+http://www.meetup.com/cities/us/ak/pedro_bay/;Pedro Bay;pedro_bay
+http://www.meetup.com/cities/us/ak/pelican/;Pelican;pelican
+http://www.meetup.com/cities/us/ak/perryville/;Perryville;perryville
+http://www.meetup.com/cities/us/ak/petersburg/;Petersburg;petersburg
+http://www.meetup.com/cities/us/ak/pilot_point/;Pilot Point;pilot_point
+http://www.meetup.com/cities/us/ak/pilot_station/;Pilot Station;pilot_station
+http://www.meetup.com/cities/us/ak/platinum/;Platinum;platinum
+http://www.meetup.com/cities/us/ak/point_baker/;Point Baker;point_baker
+http://www.meetup.com/cities/us/ak/point_hope/;Point Hope;point_hope
+http://www.meetup.com/cities/us/ak/point_lay/;Point Lay;point_lay
+http://www.meetup.com/cities/us/ak/port_alexander/;Port Alexander;port_alexander
+http://www.meetup.com/cities/us/ak/port_alsworth/;Port Alsworth;port_alsworth
+http://www.meetup.com/cities/us/ak/port_heiden/;Port Heiden;port_heiden
+http://www.meetup.com/cities/us/ak/port_lions/;Port Lions;port_lions
+http://www.meetup.com/cities/us/ak/prudhoe_bay/;Prudhoe Bay;prudhoe_bay
+http://www.meetup.com/cities/us/ak/quinhagak/;Quinhagak;quinhagak
+http://www.meetup.com/cities/us/ak/rampart/;Rampart;rampart
+http://www.meetup.com/cities/us/ak/red_devil/;Red Devil;red_devil
+http://www.meetup.com/cities/us/ak/ruby/;Ruby;ruby
+http://www.meetup.com/cities/us/ak/russian_mission/;Russian Mission;russian_mission
+http://www.meetup.com/cities/us/ak/saint_george_island/;Saint George Island;saint_george_island
+http://www.meetup.com/cities/us/ak/saint_marys/;Saint Marys;saint_marys
+http://www.meetup.com/cities/us/ak/saint_michael/;Saint Michael;saint_michael
+http://www.meetup.com/cities/us/ak/saint_paul_island/;Saint Paul Island;saint_paul_island
+http://www.meetup.com/cities/us/ak/salcha/;Salcha;salcha
+http://www.meetup.com/cities/us/ak/sand_point/;Sand Point;sand_point
+http://www.meetup.com/cities/us/ak/savoonga/;Savoonga;savoonga
+http://www.meetup.com/cities/us/ak/scammon_bay/;Scammon Bay;scammon_bay
+http://www.meetup.com/cities/us/ak/selawik/;Selawik;selawik
+http://www.meetup.com/cities/us/ak/seldovia/;Seldovia;seldovia
+http://www.meetup.com/cities/us/ak/seward/;Seward;seward
+http://www.meetup.com/cities/us/ak/shageluk/;Shageluk;shageluk
+http://www.meetup.com/cities/us/ak/shaktoolik/;Shaktoolik;shaktoolik
+http://www.meetup.com/cities/us/ak/shishmaref/;Shishmaref;shishmaref
+http://www.meetup.com/cities/us/ak/shungnak/;Shungnak;shungnak
+http://www.meetup.com/cities/us/ak/sitka/;Sitka;sitka
+http://www.meetup.com/cities/us/ak/skagway/;Skagway;skagway
+http://www.meetup.com/cities/us/ak/skwentna/;Skwentna;skwentna
+http://www.meetup.com/cities/us/ak/sleetmute/;Sleetmute;sleetmute
+http://www.meetup.com/cities/us/ak/soldotna/;Soldotna;soldotna
+http://www.meetup.com/cities/us/ak/south_naknek/;South Naknek;south_naknek
+http://www.meetup.com/cities/us/ak/stebbins/;Stebbins;stebbins
+http://www.meetup.com/cities/us/ak/sterling/;Sterling;sterling
+http://www.meetup.com/cities/us/ak/stevens_village/;Stevens Village;stevens_village
+http://www.meetup.com/cities/us/ak/sutton/;Sutton;sutton
+http://www.meetup.com/cities/us/ak/takotna/;Takotna;takotna
+http://www.meetup.com/cities/us/ak/talkeetna/;Talkeetna;talkeetna
+http://www.meetup.com/cities/us/ak/tanacross/;Tanacross;tanacross
+http://www.meetup.com/cities/us/ak/tanana/;Tanana;tanana
+http://www.meetup.com/cities/us/ak/tatitlek/;Tatitlek;tatitlek
+http://www.meetup.com/cities/us/ak/teller/;Teller;teller
+http://www.meetup.com/cities/us/ak/tenakee_springs/;Tenakee Springs;tenakee_springs
+http://www.meetup.com/cities/us/ak/thorne_bay/;Thorne Bay;thorne_bay
+http://www.meetup.com/cities/us/ak/togiak/;Togiak;togiak
+http://www.meetup.com/cities/us/ak/tok/;Tok;tok
+http://www.meetup.com/cities/us/ak/toksook_bay/;Toksook Bay;toksook_bay
+http://www.meetup.com/cities/us/ak/trapper_creek/;Trapper Creek;trapper_creek
+http://www.meetup.com/cities/us/ak/tuluksak/;Tuluksak;tuluksak
+http://www.meetup.com/cities/us/ak/tuntutuliak/;Tuntutuliak;tuntutuliak
+http://www.meetup.com/cities/us/ak/tununak/;Tununak;tununak
+http://www.meetup.com/cities/us/ak/two_rivers/;Two Rivers;two_rivers
+http://www.meetup.com/cities/us/ak/tyonek/;Tyonek;tyonek
+http://www.meetup.com/cities/us/ak/unalakleet/;Unalakleet;unalakleet
+http://www.meetup.com/cities/us/ak/unalaska/;Unalaska;unalaska
+http://www.meetup.com/cities/us/ak/valdez/;Valdez;valdez
+http://www.meetup.com/cities/us/ak/venetie/;Venetie;venetie
+http://www.meetup.com/cities/us/ak/wainwright/;Wainwright;wainwright
+http://www.meetup.com/cities/us/ak/wales/;Wales;wales
+http://www.meetup.com/cities/us/ak/ward_cove/;Ward Cove;ward_cove
+http://www.meetup.com/cities/us/ak/wasilla/;Wasilla;wasilla
+http://www.meetup.com/cities/us/ak/white_mountain/;White Mountain;white_mountain
+http://www.meetup.com/cities/us/ak/whittier/;Whittier;whittier
+http://www.meetup.com/cities/us/ak/willow/;Willow;willow
+http://www.meetup.com/cities/us/ak/wrangell/;Wrangell;wrangell
+http://www.meetup.com/cities/us/ak/yakutat/;Yakutat;yakutat
+http://www.meetup.com/cities/us/ak/adak/;Adak;adak
+http://www.meetup.com/cities/us/ak/akiachak/;Akiachak;akiachak
+http://www.meetup.com/cities/us/ak/akiak/;Akiak;akiak
+http://www.meetup.com/cities/us/ak/akutan/;Akutan;akutan
+http://www.meetup.com/cities/us/ak/alakanuk/;Alakanuk;alakanuk
+http://www.meetup.com/cities/us/ak/aleknagik/;Aleknagik;aleknagik
+http://www.meetup.com/cities/us/ak/allakaket/;Allakaket;allakaket
+http://www.meetup.com/cities/us/ak/ambler/;Ambler;ambler
+http://www.meetup.com/cities/us/ak/anaktuvuk_pass/;Anaktuvuk Pass;anaktuvuk_pass
+http://www.meetup.com/cities/us/ak/anchorage/;Anchorage;anchorage
+http://www.meetup.com/cities/us/ak/anchor_point/;Anchor Point;anchor_point
+http://www.meetup.com/cities/us/ak/anderson/;Anderson;anderson
+http://www.meetup.com/cities/us/ak/angoon/;Angoon;angoon
+http://www.meetup.com/cities/us/ak/aniak/;Aniak;aniak
+http://www.meetup.com/cities/us/ak/anvik/;Anvik;anvik
+http://www.meetup.com/cities/us/ak/arctic_village/;Arctic Village;arctic_village
+http://www.meetup.com/cities/us/ak/atka/;Atka;atka
+http://www.meetup.com/cities/us/ak/atqasuk/;Atqasuk;atqasuk
+http://www.meetup.com/cities/us/ak/auke_bay/;Auke Bay;auke_bay
+http://www.meetup.com/cities/us/ak/barrow/;Barrow;barrow
+http://www.meetup.com/cities/us/ak/beaver/;Beaver;beaver
+http://www.meetup.com/cities/us/ak/bethel/;Bethel;bethel
+http://www.meetup.com/cities/us/ak/bettles_field/;Bettles Field;bettles_field
+http://www.meetup.com/cities/us/ak/big_lake/;Big Lake;big_lake
+http://www.meetup.com/cities/us/ak/brevig_mission/;Brevig Mission;brevig_mission
+http://www.meetup.com/cities/us/ak/buckland/;Buckland;buckland
+http://www.meetup.com/cities/us/ak/cantwell/;Cantwell;cantwell
+http://www.meetup.com/cities/us/ak/central/;Central;central
+http://www.meetup.com/cities/us/ak/chalkyitsik/;Chalkyitsik;chalkyitsik
+http://www.meetup.com/cities/us/ak/chefornak/;Chefornak;chefornak
+http://www.meetup.com/cities/us/ak/chevak/;Chevak;chevak
+http://www.meetup.com/cities/us/ak/chicken/;Chicken;chicken
+http://www.meetup.com/cities/us/ak/chignik/;Chignik;chignik
+http://www.meetup.com/cities/us/ak/chignik_lagoon/;Chignik Lagoon;chignik_lagoon
+http://www.meetup.com/cities/us/ak/chignik_lake/;Chignik Lake;chignik_lake
+http://www.meetup.com/cities/us/ak/chitina/;Chitina;chitina
+http://www.meetup.com/cities/us/ak/chugiak/;Chugiak;chugiak
+http://www.meetup.com/cities/us/ak/circle/;Circle;circle
+http://www.meetup.com/cities/us/ak/clam_gulch/;Clam Gulch;clam_gulch
+http://www.meetup.com/cities/us/ak/clarks_point/;Clarks Point;clarks_point
+http://www.meetup.com/cities/us/ak/clear/;Clear;clear
+http://www.meetup.com/cities/us/ak/coffman_cove/;Coffman Cove;coffman_cove
+http://www.meetup.com/cities/us/ak/cold_bay/;Cold Bay;cold_bay
+http://www.meetup.com/cities/us/ak/cooper_landing/;Cooper Landing;cooper_landing
+http://www.meetup.com/cities/us/ak/copper_center/;Copper Center;copper_center
+http://www.meetup.com/cities/us/ak/cordova/;Cordova;cordova
+http://www.meetup.com/cities/us/ak/craig/;Craig;craig
+http://www.meetup.com/cities/us/ak/crooked_creek/;Crooked Creek;crooked_creek
+http://www.meetup.com/cities/us/ak/deering/;Deering;deering
+http://www.meetup.com/cities/us/ak/delta_junction/;Delta Junction;delta_junction
+http://www.meetup.com/cities/us/ak/denali_national_park/;Denali National Park;denali_national_park
+http://www.meetup.com/cities/us/ak/dillingham/;Dillingham;dillingham
+http://www.meetup.com/cities/us/ak/douglas/;Douglas;douglas
+http://www.meetup.com/cities/us/ak/dutch_harbor/;Dutch Harbor;dutch_harbor
+http://www.meetup.com/cities/us/ak/eagle/;Eagle;eagle
+http://www.meetup.com/cities/us/ak/eagle_river/;Eagle River;eagle_river
+http://www.meetup.com/cities/us/ak/eek/;Eek;eek
+http://www.meetup.com/cities/us/ak/egegik/;Egegik;egegik
+http://www.meetup.com/cities/us/ak/eielson_afb/;Eielson AFB;eielson_afb
+http://www.meetup.com/cities/us/ak/ekwok/;Ekwok;ekwok
+http://www.meetup.com/cities/us/ak/elfin_cove/;Elfin Cove;elfin_cove
+http://www.meetup.com/cities/us/ak/elim/;Elim;elim
+http://www.meetup.com/cities/us/ak/elmendorf_afb/;Elmendorf AFB;elmendorf_afb
+http://www.meetup.com/cities/us/ak/emmonak/;Emmonak;emmonak
+http://www.meetup.com/cities/us/ak/ester/;Ester;ester
+http://www.meetup.com/cities/us/ak/fairbanks/;Fairbanks;fairbanks
+http://www.meetup.com/cities/us/ak/false_pass/;False Pass;false_pass
+http://www.meetup.com/cities/us/ak/fort_greely/;Fort Greely;fort_greely
+http://www.meetup.com/cities/us/ak/fort_richardson/;Fort Richardson;fort_richardson
+http://www.meetup.com/cities/us/ak/fort_wainwright/;Fort Wainwright;fort_wainwright
+http://www.meetup.com/cities/us/ak/fort_yukon/;Fort Yukon;fort_yukon
+http://www.meetup.com/cities/us/ak/gakona/;Gakona;gakona
+http://www.meetup.com/cities/us/ak/galena/;Galena;galena
+http://www.meetup.com/cities/us/ak/gambell/;Gambell;gambell
+http://www.meetup.com/cities/us/ak/girdwood/;Girdwood;girdwood
+http://www.meetup.com/cities/us/ak/glennallen/;Glennallen;glennallen
+http://www.meetup.com/cities/us/ak/goodnews_bay/;Goodnews Bay;goodnews_bay
+http://www.meetup.com/cities/us/ak/grayling/;Grayling;grayling
+http://www.meetup.com/cities/us/ak/gustavus/;Gustavus;gustavus
+http://www.meetup.com/cities/us/ak/haines/;Haines;haines
+http://www.meetup.com/cities/us/ak/healy/;Healy;healy
+http://www.meetup.com/cities/us/ak/holy_cross/;Holy Cross;holy_cross
+http://www.meetup.com/cities/us/ak/homer/;Homer;homer
+http://www.meetup.com/cities/us/ak/hoonah/;Hoonah;hoonah
+http://www.meetup.com/cities/us/ak/hooper_bay/;Hooper Bay;hooper_bay
+http://www.meetup.com/cities/us/ak/hope/;Hope;hope
+http://www.meetup.com/cities/us/ak/houston/;Houston;houston
+http://www.meetup.com/cities/us/ak/hughes/;Hughes;hughes
+http://www.meetup.com/cities/us/ak/huslia/;Huslia;huslia
+http://www.meetup.com/cities/us/ak/hydaburg/;Hydaburg;hydaburg
+http://www.meetup.com/cities/us/ak/hyder/;Hyder;hyder
+http://www.meetup.com/cities/us/ak/iliamna/;Iliamna;iliamna
+http://www.meetup.com/cities/us/ak/indian/;Indian;indian
+http://www.meetup.com/cities/us/ak/juneau/;Juneau;juneau
+http://www.meetup.com/cities/us/ak/kake/;Kake;kake
+http://www.meetup.com/cities/us/ak/kaktovik/;Kaktovik;kaktovik
+http://www.meetup.com/cities/us/ak/kalskag/;Kalskag;kalskag
+http://www.meetup.com/cities/us/ak/kaltag/;Kaltag;kaltag
+http://www.meetup.com/cities/us/ak/karluk/;Karluk;karluk
+http://www.meetup.com/cities/us/ak/kasigluk/;Kasigluk;kasigluk
+http://www.meetup.com/cities/us/ak/kasilof/;Kasilof;kasilof
+http://www.meetup.com/cities/us/ak/kenai/;Kenai;kenai
+http://www.meetup.com/cities/us/ak/ketchikan/;Ketchikan;ketchikan
+http://www.meetup.com/cities/us/ak/kiana/;Kiana;kiana
+http://www.meetup.com/cities/us/ak/king_cove/;King Cove;king_cove
+http://www.meetup.com/cities/us/ak/king_salmon/;King Salmon;king_salmon
+http://www.meetup.com/cities/us/ak/kipnuk/;Kipnuk;kipnuk
+http://www.meetup.com/cities/us/ak/kivalina/;Kivalina;kivalina
+http://www.meetup.com/cities/us/ak/klawock/;Klawock;klawock
+http://www.meetup.com/cities/us/ak/kobuk/;Kobuk;kobuk
+http://www.meetup.com/cities/us/ak/kodiak/;Kodiak;kodiak
+http://www.meetup.com/cities/us/ak/kongiganak/;Kongiganak;kongiganak
+http://www.meetup.com/cities/us/ak/kotlik/;Kotlik;kotlik
+http://www.meetup.com/cities/us/ak/kotzebue/;Kotzebue;kotzebue
+http://www.meetup.com/cities/us/ak/koyuk/;Koyuk;koyuk
+http://www.meetup.com/cities/us/ak/koyukuk/;Koyukuk;koyukuk
+http://www.meetup.com/cities/us/ak/kwethluk/;Kwethluk;kwethluk
+http://www.meetup.com/cities/us/ak/kwigillingok/;Kwigillingok;kwigillingok
+http://www.meetup.com/cities/us/ak/lake_minchumina/;Lake Minchumina;lake_minchumina
+http://www.meetup.com/cities/us/ak/larsen_bay/;Larsen Bay;larsen_bay
+http://www.meetup.com/cities/us/ak/levelock/;Levelock;levelock
+http://www.meetup.com/cities/us/ak/lower_kalskag/;Lower Kalskag;lower_kalskag
+http://www.meetup.com/cities/us/ak/manley_hot_springs/;Manley Hot Springs;manley_hot_springs
+http://www.meetup.com/cities/us/ak/manokotak/;Manokotak;manokotak
+http://www.meetup.com/cities/us/ak/marshall/;Marshall;marshall
+http://www.meetup.com/cities/us/ak/mc_grath/;Mc Grath;mc_grath
+http://www.meetup.com/cities/us/ak/mekoryuk/;Mekoryuk;mekoryuk
+http://www.meetup.com/cities/us/ak/metlakatla/;Metlakatla;metlakatla
+http://www.meetup.com/cities/us/ak/meyers_chuck/;Meyers Chuck;meyers_chuck
+http://www.meetup.com/cities/us/ak/minto/;Minto;minto
+http://www.meetup.com/cities/us/ak/moose_pass/;Moose Pass;moose_pass
+http://www.meetup.com/cities/us/ak/mountain_village/;Mountain Village;mountain_village
+http://www.meetup.com/cities/us/ak/naknek/;Naknek;naknek
+http://www.meetup.com/cities/us/ak/napakiak/;Napakiak;napakiak
+http://www.meetup.com/cities/us/ak/nenana/;Nenana;nenana
+http://www.meetup.com/cities/us/ak/new_stuyahok/;New Stuyahok;new_stuyahok
+http://www.meetup.com/cities/us/ak/nightmute/;Nightmute;nightmute
+http://www.meetup.com/cities/us/ak/nikiski/;Nikiski;nikiski
+http://www.meetup.com/cities/us/ak/nikolai/;Nikolai;nikolai
+http://www.meetup.com/cities/us/ak/nikolski/;Nikolski;nikolski
+http://www.meetup.com/cities/us/ak/ninilchik/;Ninilchik;ninilchik
+http://www.meetup.com/cities/us/ak/noatak/;Noatak;noatak
+http://www.meetup.com/cities/us/ak/nome/;Nome;nome
+http://www.meetup.com/cities/us/ak/nondalton/;Nondalton;nondalton
+http://www.meetup.com/cities/us/ak/noorvik/;Noorvik;noorvik
+http://www.meetup.com/cities/us/ak/north_pole/;North Pole;north_pole
+http://www.meetup.com/cities/us/ak/northway/;Northway;northway
+http://www.meetup.com/cities/us/ak/nuiqsut/;Nuiqsut;nuiqsut
+http://www.meetup.com/cities/us/ak/nulato/;Nulato;nulato
+http://www.meetup.com/cities/us/ak/nunam_iqua/;Nunam Iqua;nunam_iqua
+http://www.meetup.com/cities/us/ak/nunapitchuk/;Nunapitchuk;nunapitchuk
+http://www.meetup.com/cities/us/ak/old_harbor/;Old Harbor;old_harbor
+http://www.meetup.com/cities/us/ak/ouzinkie/;Ouzinkie;ouzinkie
+http://www.meetup.com/cities/us/ak/palmer/;Palmer;palmer
+http://www.meetup.com/cities/us/ak/pedro_bay/;Pedro Bay;pedro_bay
+http://www.meetup.com/cities/us/ak/pelican/;Pelican;pelican
+http://www.meetup.com/cities/us/ak/perryville/;Perryville;perryville
+http://www.meetup.com/cities/us/ak/petersburg/;Petersburg;petersburg
+http://www.meetup.com/cities/us/ak/pilot_point/;Pilot Point;pilot_point
+http://www.meetup.com/cities/us/ak/pilot_station/;Pilot Station;pilot_station
+http://www.meetup.com/cities/us/ak/platinum/;Platinum;platinum
+http://www.meetup.com/cities/us/ak/point_baker/;Point Baker;point_baker
+http://www.meetup.com/cities/us/ak/point_hope/;Point Hope;point_hope
+http://www.meetup.com/cities/us/ak/point_lay/;Point Lay;point_lay
+http://www.meetup.com/cities/us/ak/port_alexander/;Port Alexander;port_alexander
+http://www.meetup.com/cities/us/ak/port_alsworth/;Port Alsworth;port_alsworth
+http://www.meetup.com/cities/us/ak/port_heiden/;Port Heiden;port_heiden
+http://www.meetup.com/cities/us/ak/port_lions/;Port Lions;port_lions
+http://www.meetup.com/cities/us/ak/prudhoe_bay/;Prudhoe Bay;prudhoe_bay
+http://www.meetup.com/cities/us/ak/quinhagak/;Quinhagak;quinhagak
+http://www.meetup.com/cities/us/ak/rampart/;Rampart;rampart
+http://www.meetup.com/cities/us/ak/red_devil/;Red Devil;red_devil
+http://www.meetup.com/cities/us/ak/ruby/;Ruby;ruby
+http://www.meetup.com/cities/us/ak/russian_mission/;Russian Mission;russian_mission
+http://www.meetup.com/cities/us/ak/saint_george_island/;Saint George Island;saint_george_island
+http://www.meetup.com/cities/us/ak/saint_marys/;Saint Marys;saint_marys
+http://www.meetup.com/cities/us/ak/saint_michael/;Saint Michael;saint_michael
+http://www.meetup.com/cities/us/ak/saint_paul_island/;Saint Paul Island;saint_paul_island
+http://www.meetup.com/cities/us/ak/salcha/;Salcha;salcha
+http://www.meetup.com/cities/us/ak/sand_point/;Sand Point;sand_point
+http://www.meetup.com/cities/us/ak/savoonga/;Savoonga;savoonga
+http://www.meetup.com/cities/us/ak/scammon_bay/;Scammon Bay;scammon_bay
+http://www.meetup.com/cities/us/ak/selawik/;Selawik;selawik
+http://www.meetup.com/cities/us/ak/seldovia/;Seldovia;seldovia
+http://www.meetup.com/cities/us/ak/seward/;Seward;seward
+http://www.meetup.com/cities/us/ak/shageluk/;Shageluk;shageluk
+http://www.meetup.com/cities/us/ak/shaktoolik/;Shaktoolik;shaktoolik
+http://www.meetup.com/cities/us/ak/shishmaref/;Shishmaref;shishmaref
+http://www.meetup.com/cities/us/ak/shungnak/;Shungnak;shungnak
+http://www.meetup.com/cities/us/ak/sitka/;Sitka;sitka
+http://www.meetup.com/cities/us/ak/skagway/;Skagway;skagway
+http://www.meetup.com/cities/us/ak/skwentna/;Skwentna;skwentna
+http://www.meetup.com/cities/us/ak/sleetmute/;Sleetmute;sleetmute
+http://www.meetup.com/cities/us/ak/soldotna/;Soldotna;soldotna
+http://www.meetup.com/cities/us/ak/south_naknek/;South Naknek;south_naknek
+http://www.meetup.com/cities/us/ak/stebbins/;Stebbins;stebbins
+http://www.meetup.com/cities/us/ak/sterling/;Sterling;sterling
+http://www.meetup.com/cities/us/ak/stevens_village/;Stevens Village;stevens_village
+http://www.meetup.com/cities/us/ak/sutton/;Sutton;sutton
+http://www.meetup.com/cities/us/ak/takotna/;Takotna;takotna
+http://www.meetup.com/cities/us/ak/talkeetna/;Talkeetna;talkeetna
+http://www.meetup.com/cities/us/ak/tanacross/;Tanacross;tanacross
+http://www.meetup.com/cities/us/ak/tanana/;Tanana;tanana
+http://www.meetup.com/cities/us/ak/tatitlek/;Tatitlek;tatitlek
+http://www.meetup.com/cities/us/ak/teller/;Teller;teller
+http://www.meetup.com/cities/us/ak/tenakee_springs/;Tenakee Springs;tenakee_springs
+http://www.meetup.com/cities/us/ak/thorne_bay/;Thorne Bay;thorne_bay
+http://www.meetup.com/cities/us/ak/togiak/;Togiak;togiak
+http://www.meetup.com/cities/us/ak/tok/;Tok;tok
+http://www.meetup.com/cities/us/ak/toksook_bay/;Toksook Bay;toksook_bay
+http://www.meetup.com/cities/us/ak/trapper_creek/;Trapper Creek;trapper_creek
+http://www.meetup.com/cities/us/ak/tuluksak/;Tuluksak;tuluksak
+http://www.meetup.com/cities/us/ak/tuntutuliak/;Tuntutuliak;tuntutuliak
+http://www.meetup.com/cities/us/ak/tununak/;Tununak;tununak
+http://www.meetup.com/cities/us/ak/two_rivers/;Two Rivers;two_rivers
+http://www.meetup.com/cities/us/ak/tyonek/;Tyonek;tyonek
+http://www.meetup.com/cities/us/ak/unalakleet/;Unalakleet;unalakleet
+http://www.meetup.com/cities/us/ak/unalaska/;Unalaska;unalaska
+http://www.meetup.com/cities/us/ak/valdez/;Valdez;valdez
+http://www.meetup.com/cities/us/ak/venetie/;Venetie;venetie
+http://www.meetup.com/cities/us/ak/wainwright/;Wainwright;wainwright
+http://www.meetup.com/cities/us/ak/wales/;Wales;wales
+http://www.meetup.com/cities/us/ak/ward_cove/;Ward Cove;ward_cove
+http://www.meetup.com/cities/us/ak/wasilla/;Wasilla;wasilla
+http://www.meetup.com/cities/us/ak/white_mountain/;White Mountain;white_mountain
+http://www.meetup.com/cities/us/ak/whittier/;Whittier;whittier
+http://www.meetup.com/cities/us/ak/willow/;Willow;willow
+http://www.meetup.com/cities/us/ak/wrangell/;Wrangell;wrangell
+http://www.meetup.com/cities/us/ak/yakutat/;Yakutat;yakutat

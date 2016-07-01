@@ -1,0 +1,461 @@
+http://www.meetup.com/cities/us/me/abbot/;Abbot;abbot
+http://www.meetup.com/cities/us/me/acton/;Acton;acton
+http://www.meetup.com/cities/us/me/addison/;Addison;addison
+http://www.meetup.com/cities/us/me/albion/;Albion;albion
+http://www.meetup.com/cities/us/me/alfred/;Alfred;alfred
+http://www.meetup.com/cities/us/me/alna/;Alna;alna
+http://www.meetup.com/cities/us/me/andover/;Andover;andover
+http://www.meetup.com/cities/us/me/anson/;Anson;anson
+http://www.meetup.com/cities/us/me/ashland/;Ashland;ashland
+http://www.meetup.com/cities/us/me/athens/;Athens;athens
+http://www.meetup.com/cities/us/me/auburn/;Auburn;auburn
+http://www.meetup.com/cities/us/me/augusta/;Augusta;augusta
+http://www.meetup.com/cities/us/me/aurora/;Aurora;aurora
+http://www.meetup.com/cities/us/me/bailey_island/;Bailey Island;bailey_island
+http://www.meetup.com/cities/us/me/baileyville/;Baileyville;baileyville
+http://www.meetup.com/cities/us/me/bangor/;Bangor;bangor
+http://www.meetup.com/cities/us/me/bar_harbor/;Bar Harbor;bar_harbor
+http://www.meetup.com/cities/us/me/bar_mills/;Bar Mills;bar_mills
+http://www.meetup.com/cities/us/me/bass_harbor/;Bass Harbor;bass_harbor
+http://www.meetup.com/cities/us/me/bath/;Bath;bath
+http://www.meetup.com/cities/us/me/beals/;Beals;beals
+http://www.meetup.com/cities/us/me/belfast/;Belfast;belfast
+http://www.meetup.com/cities/us/me/belgrade/;Belgrade;belgrade
+http://www.meetup.com/cities/us/me/belgrade_lakes/;Belgrade Lakes;belgrade_lakes
+http://www.meetup.com/cities/us/me/benedicta/;Benedicta;benedicta
+http://www.meetup.com/cities/us/me/bernard/;Bernard;bernard
+http://www.meetup.com/cities/us/me/berwick/;Berwick;berwick
+http://www.meetup.com/cities/us/me/bethel/;Bethel;bethel
+http://www.meetup.com/cities/us/me/biddeford/;Biddeford;biddeford
+http://www.meetup.com/cities/us/me/biddeford_pool/;Biddeford Pool;biddeford_pool
+http://www.meetup.com/cities/us/me/bingham/;Bingham;bingham
+http://www.meetup.com/cities/us/me/birch_harbor/;Birch Harbor;birch_harbor
+http://www.meetup.com/cities/us/me/blaine/;Blaine;blaine
+http://www.meetup.com/cities/us/me/blue_hill/;Blue Hill;blue_hill
+http://www.meetup.com/cities/us/me/boothbay/;Boothbay;boothbay
+http://www.meetup.com/cities/us/me/boothbay_harbor/;Boothbay Harbor;boothbay_harbor
+http://www.meetup.com/cities/us/me/bowdoin/;Bowdoin;bowdoin
+http://www.meetup.com/cities/us/me/bowdoinham/;Bowdoinham;bowdoinham
+http://www.meetup.com/cities/us/me/bradford/;Bradford;bradford
+http://www.meetup.com/cities/us/me/bradley/;Bradley;bradley
+http://www.meetup.com/cities/us/me/bremen/;Bremen;bremen
+http://www.meetup.com/cities/us/me/brewer/;Brewer;brewer
+http://www.meetup.com/cities/us/me/bridgewater/;Bridgewater;bridgewater
+http://www.meetup.com/cities/us/me/bridgton/;Bridgton;bridgton
+http://www.meetup.com/cities/us/me/bristol/;Bristol;bristol
+http://www.meetup.com/cities/us/me/brooklin/;Brooklin;brooklin
+http://www.meetup.com/cities/us/me/brooks/;Brooks;brooks
+http://www.meetup.com/cities/us/me/brooksville/;Brooksville;brooksville
+http://www.meetup.com/cities/us/me/brookton/;Brookton;brookton
+http://www.meetup.com/cities/us/me/brownfield/;Brownfield;brownfield
+http://www.meetup.com/cities/us/me/brownville/;Brownville;brownville
+http://www.meetup.com/cities/us/me/brownville_junction/;Brownville Junction;brownville_junction
+http://www.meetup.com/cities/us/me/brunswick/;Brunswick;brunswick
+http://www.meetup.com/cities/us/me/bryant_pond/;Bryant Pond;bryant_pond
+http://www.meetup.com/cities/us/me/buckfield/;Buckfield;buckfield
+http://www.meetup.com/cities/us/me/bucksport/;Bucksport;bucksport
+http://www.meetup.com/cities/us/me/burlington/;Burlington;burlington
+http://www.meetup.com/cities/us/me/burnham/;Burnham;burnham
+http://www.meetup.com/cities/us/me/bustins_island/;Bustins Island;bustins_island
+http://www.meetup.com/cities/us/me/buxton/;Buxton;buxton
+http://www.meetup.com/cities/us/me/calais/;Calais;calais
+http://www.meetup.com/cities/us/me/cambridge/;Cambridge;cambridge
+http://www.meetup.com/cities/us/me/camden/;Camden;camden
+http://www.meetup.com/cities/us/me/canaan/;Canaan;canaan
+http://www.meetup.com/cities/us/me/canton/;Canton;canton
+http://www.meetup.com/cities/us/me/cape_elizabeth/;Cape Elizabeth;cape_elizabeth
+http://www.meetup.com/cities/us/me/cape_neddick/;Cape Neddick;cape_neddick
+http://www.meetup.com/cities/us/me/cape_porpoise/;Cape Porpoise;cape_porpoise
+http://www.meetup.com/cities/us/me/caratunk/;Caratunk;caratunk
+http://www.meetup.com/cities/us/me/caribou/;Caribou;caribou
+http://www.meetup.com/cities/us/me/carmel/;Carmel;carmel
+http://www.meetup.com/cities/us/me/casco/;Casco;casco
+http://www.meetup.com/cities/us/me/castine/;Castine;castine
+http://www.meetup.com/cities/us/me/center_lovell/;Center Lovell;center_lovell
+http://www.meetup.com/cities/us/me/chamberlain/;Chamberlain;chamberlain
+http://www.meetup.com/cities/us/me/charleston/;Charleston;charleston
+http://www.meetup.com/cities/us/me/chebeague_island/;Chebeague Island;chebeague_island
+http://www.meetup.com/cities/us/me/cherryfield/;Cherryfield;cherryfield
+http://www.meetup.com/cities/us/me/china_village/;China Village;china_village
+http://www.meetup.com/cities/us/me/clayton_lake/;Clayton Lake;clayton_lake
+http://www.meetup.com/cities/us/me/cliff_island/;Cliff Island;cliff_island
+http://www.meetup.com/cities/us/me/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/me/columbia_falls/;Columbia Falls;columbia_falls
+http://www.meetup.com/cities/us/me/coopers_mills/;Coopers Mills;coopers_mills
+http://www.meetup.com/cities/us/me/corea/;Corea;corea
+http://www.meetup.com/cities/us/me/corinna/;Corinna;corinna
+http://www.meetup.com/cities/us/me/corinth/;Corinth;corinth
+http://www.meetup.com/cities/us/me/cornish/;Cornish;cornish
+http://www.meetup.com/cities/us/me/cranberry_isles/;Cranberry Isles;cranberry_isles
+http://www.meetup.com/cities/us/me/crouseville/;Crouseville;crouseville
+http://www.meetup.com/cities/us/me/cumberland_center/;Cumberland Center;cumberland_center
+http://www.meetup.com/cities/us/me/cumberland_foreside/;Cumberland Foreside;cumberland_foreside
+http://www.meetup.com/cities/us/me/cushing/;Cushing;cushing
+http://www.meetup.com/cities/us/me/cutler/;Cutler;cutler
+http://www.meetup.com/cities/us/me/damariscotta/;Damariscotta;damariscotta
+http://www.meetup.com/cities/us/me/danforth/;Danforth;danforth
+http://www.meetup.com/cities/us/me/danville/;Danville;danville
+http://www.meetup.com/cities/us/me/deer_isle/;Deer Isle;deer_isle
+http://www.meetup.com/cities/us/me/denmark/;Denmark;denmark
+http://www.meetup.com/cities/us/me/dennysville/;Dennysville;dennysville
+http://www.meetup.com/cities/us/me/detroit/;Detroit;detroit
+http://www.meetup.com/cities/us/me/dexter/;Dexter;dexter
+http://www.meetup.com/cities/us/me/dixfield/;Dixfield;dixfield
+http://www.meetup.com/cities/us/me/dixmont/;Dixmont;dixmont
+http://www.meetup.com/cities/us/me/dover_foxcroft/;Dover Foxcroft;dover_foxcroft
+http://www.meetup.com/cities/us/me/dresden/;Dresden;dresden
+http://www.meetup.com/cities/us/me/dryden/;Dryden;dryden
+http://www.meetup.com/cities/us/me/durham/;Durham;durham
+http://www.meetup.com/cities/us/me/eagle_lake/;Eagle Lake;eagle_lake
+http://www.meetup.com/cities/us/me/east_andover/;East Andover;east_andover
+http://www.meetup.com/cities/us/me/east_baldwin/;East Baldwin;east_baldwin
+http://www.meetup.com/cities/us/me/east_blue_hill/;East Blue Hill;east_blue_hill
+http://www.meetup.com/cities/us/me/east_boothbay/;East Boothbay;east_boothbay
+http://www.meetup.com/cities/us/me/east_dixfield/;East Dixfield;east_dixfield
+http://www.meetup.com/cities/us/me/east_livermore/;East Livermore;east_livermore
+http://www.meetup.com/cities/us/me/east_machias/;East Machias;east_machias
+http://www.meetup.com/cities/us/me/east_millinocket/;East Millinocket;east_millinocket
+http://www.meetup.com/cities/us/me/east_newport/;East Newport;east_newport
+http://www.meetup.com/cities/us/me/easton/;Easton;easton
+http://www.meetup.com/cities/us/me/east_orland/;East Orland;east_orland
+http://www.meetup.com/cities/us/me/east_parsonsfield/;East Parsonsfield;east_parsonsfield
+http://www.meetup.com/cities/us/me/east_poland/;East Poland;east_poland
+http://www.meetup.com/cities/us/me/eastport/;Eastport;eastport
+http://www.meetup.com/cities/us/me/east_vassalboro/;East Vassalboro;east_vassalboro
+http://www.meetup.com/cities/us/me/east_waterboro/;East Waterboro;east_waterboro
+http://www.meetup.com/cities/us/me/east_wilton/;East Wilton;east_wilton
+http://www.meetup.com/cities/us/me/east_winthrop/;East Winthrop;east_winthrop
+http://www.meetup.com/cities/us/me/eddington/;Eddington;eddington
+http://www.meetup.com/cities/us/me/edgecomb/;Edgecomb;edgecomb
+http://www.meetup.com/cities/us/me/eliot/;Eliot;eliot
+http://www.meetup.com/cities/us/me/ellsworth/;Ellsworth;ellsworth
+http://www.meetup.com/cities/us/me/estcourt_station/;Estcourt Station;estcourt_station
+http://www.meetup.com/cities/us/me/etna/;Etna;etna
+http://www.meetup.com/cities/us/me/eustis/;Eustis;eustis
+http://www.meetup.com/cities/us/me/exeter/;Exeter;exeter
+http://www.meetup.com/cities/us/me/fairfield/;Fairfield;fairfield
+http://www.meetup.com/cities/us/me/falmouth/;Falmouth;falmouth
+http://www.meetup.com/cities/us/me/farmingdale/;Farmingdale;farmingdale
+http://www.meetup.com/cities/us/me/farmington/;Farmington;farmington
+http://www.meetup.com/cities/us/me/farmington_falls/;Farmington Falls;farmington_falls
+http://www.meetup.com/cities/us/me/fort_fairfield/;Fort Fairfield;fort_fairfield
+http://www.meetup.com/cities/us/me/fort_kent/;Fort Kent;fort_kent
+http://www.meetup.com/cities/us/me/fort_kent_mills/;Fort Kent Mills;fort_kent_mills
+http://www.meetup.com/cities/us/me/frankfort/;Frankfort;frankfort
+http://www.meetup.com/cities/us/me/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/me/freedom/;Freedom;freedom
+http://www.meetup.com/cities/us/me/freeport/;Freeport;freeport
+http://www.meetup.com/cities/us/me/frenchboro/;Frenchboro;frenchboro
+http://www.meetup.com/cities/us/me/frenchville/;Frenchville;frenchville
+http://www.meetup.com/cities/us/me/friendship/;Friendship;friendship
+http://www.meetup.com/cities/us/me/fryeburg/;Fryeburg;fryeburg
+http://www.meetup.com/cities/us/me/gardiner/;Gardiner;gardiner
+http://www.meetup.com/cities/us/me/garland/;Garland;garland
+http://www.meetup.com/cities/us/me/georgetown/;Georgetown;georgetown
+http://www.meetup.com/cities/us/me/glen_cove/;Glen Cove;glen_cove
+http://www.meetup.com/cities/us/me/gorham/;Gorham;gorham
+http://www.meetup.com/cities/us/me/gouldsboro/;Gouldsboro;gouldsboro
+http://www.meetup.com/cities/us/me/grand_isle/;Grand Isle;grand_isle
+http://www.meetup.com/cities/us/me/grand_lake_stream/;Grand Lake Stream;grand_lake_stream
+http://www.meetup.com/cities/us/me/gray/;Gray;gray
+http://www.meetup.com/cities/us/me/greenbush/;Greenbush;greenbush
+http://www.meetup.com/cities/us/me/greene/;Greene;greene
+http://www.meetup.com/cities/us/me/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/me/greenville_junction/;Greenville Junction;greenville_junction
+http://www.meetup.com/cities/us/me/greenwood/;Greenwood;greenwood
+http://www.meetup.com/cities/us/me/guilford/;Guilford;guilford
+http://www.meetup.com/cities/us/me/hallowell/;Hallowell;hallowell
+http://www.meetup.com/cities/us/me/hampden/;Hampden;hampden
+http://www.meetup.com/cities/us/me/hancock/;Hancock;hancock
+http://www.meetup.com/cities/us/me/hanover/;Hanover;hanover
+http://www.meetup.com/cities/us/me/harborside/;Harborside;harborside
+http://www.meetup.com/cities/us/me/harmony/;Harmony;harmony
+http://www.meetup.com/cities/us/me/harpswell/;Harpswell;harpswell
+http://www.meetup.com/cities/us/me/harrington/;Harrington;harrington
+http://www.meetup.com/cities/us/me/harrison/;Harrison;harrison
+http://www.meetup.com/cities/us/me/hartland/;Hartland;hartland
+http://www.meetup.com/cities/us/me/hebron/;Hebron;hebron
+http://www.meetup.com/cities/us/me/hinckley/;Hinckley;hinckley
+http://www.meetup.com/cities/us/me/hiram/;Hiram;hiram
+http://www.meetup.com/cities/us/me/holden/;Holden;holden
+http://www.meetup.com/cities/us/me/hollis_center/;Hollis Center;hollis_center
+http://www.meetup.com/cities/us/me/hope/;Hope;hope
+http://www.meetup.com/cities/us/me/houlton/;Houlton;houlton
+http://www.meetup.com/cities/us/me/howland/;Howland;howland
+http://www.meetup.com/cities/us/me/hudson/;Hudson;hudson
+http://www.meetup.com/cities/us/me/hulls_cove/;Hulls Cove;hulls_cove
+http://www.meetup.com/cities/us/me/island_falls/;Island Falls;island_falls
+http://www.meetup.com/cities/us/me/isle_au_haut/;Isle au Haut;isle_au_haut
+http://www.meetup.com/cities/us/me/isle_of_springs/;Isle of Springs;isle_of_springs
+http://www.meetup.com/cities/us/me/islesboro/;Islesboro;islesboro
+http://www.meetup.com/cities/us/me/islesford/;Islesford;islesford
+http://www.meetup.com/cities/us/me/jackman/;Jackman;jackman
+http://www.meetup.com/cities/us/me/jay/;Jay;jay
+http://www.meetup.com/cities/us/me/jefferson/;Jefferson;jefferson
+http://www.meetup.com/cities/us/me/jonesboro/;Jonesboro;jonesboro
+http://www.meetup.com/cities/us/me/jonesport/;Jonesport;jonesport
+http://www.meetup.com/cities/us/me/kenduskeag/;Kenduskeag;kenduskeag
+http://www.meetup.com/cities/us/me/kennebunk/;Kennebunk;kennebunk
+http://www.meetup.com/cities/us/me/kennebunkport/;Kennebunkport;kennebunkport
+http://www.meetup.com/cities/us/me/kents_hill/;Kents Hill;kents_hill
+http://www.meetup.com/cities/us/me/kingfield/;Kingfield;kingfield
+http://www.meetup.com/cities/us/me/kingman/;Kingman;kingman
+http://www.meetup.com/cities/us/me/kittery/;Kittery;kittery
+http://www.meetup.com/cities/us/me/kittery_point/;Kittery Point;kittery_point
+http://www.meetup.com/cities/us/me/lagrange/;Lagrange;lagrange
+http://www.meetup.com/cities/us/me/lambert_lake/;Lambert Lake;lambert_lake
+http://www.meetup.com/cities/us/me/lebanon/;Lebanon;lebanon
+http://www.meetup.com/cities/us/me/lee/;Lee;lee
+http://www.meetup.com/cities/us/me/leeds/;Leeds;leeds
+http://www.meetup.com/cities/us/me/levant/;Levant;levant
+http://www.meetup.com/cities/us/me/lewiston/;Lewiston;lewiston
+http://www.meetup.com/cities/us/me/liberty/;Liberty;liberty
+http://www.meetup.com/cities/us/me/limerick/;Limerick;limerick
+http://www.meetup.com/cities/us/me/limestone/;Limestone;limestone
+http://www.meetup.com/cities/us/me/limington/;Limington;limington
+http://www.meetup.com/cities/us/me/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/me/lincolnville/;Lincolnville;lincolnville
+http://www.meetup.com/cities/us/me/lincolnville_center/;Lincolnville Center;lincolnville_center
+http://www.meetup.com/cities/us/me/lisbon/;Lisbon;lisbon
+http://www.meetup.com/cities/us/me/lisbon_falls/;Lisbon Falls;lisbon_falls
+http://www.meetup.com/cities/us/me/litchfield/;Litchfield;litchfield
+http://www.meetup.com/cities/us/me/little_deer_isle/;Little Deer Isle;little_deer_isle
+http://www.meetup.com/cities/us/me/livermore/;Livermore;livermore
+http://www.meetup.com/cities/us/me/livermore_falls/;Livermore Falls;livermore_falls
+http://www.meetup.com/cities/us/me/long_island/;Long Island;long_island
+http://www.meetup.com/cities/us/me/lovell/;Lovell;lovell
+http://www.meetup.com/cities/us/me/lubec/;Lubec;lubec
+http://www.meetup.com/cities/us/me/machias/;Machias;machias
+http://www.meetup.com/cities/us/me/machiasport/;Machiasport;machiasport
+http://www.meetup.com/cities/us/me/madawaska/;Madawaska;madawaska
+http://www.meetup.com/cities/us/me/madison/;Madison;madison
+http://www.meetup.com/cities/us/me/manchester/;Manchester;manchester
+http://www.meetup.com/cities/us/me/mapleton/;Mapleton;mapleton
+http://www.meetup.com/cities/us/me/mars_hill/;Mars Hill;mars_hill
+http://www.meetup.com/cities/us/me/matinicus/;Matinicus;matinicus
+http://www.meetup.com/cities/us/me/mattawamkeag/;Mattawamkeag;mattawamkeag
+http://www.meetup.com/cities/us/me/mechanic_falls/;Mechanic Falls;mechanic_falls
+http://www.meetup.com/cities/us/me/meddybemps/;Meddybemps;meddybemps
+http://www.meetup.com/cities/us/me/medway/;Medway;medway
+http://www.meetup.com/cities/us/me/mexico/;Mexico;mexico
+http://www.meetup.com/cities/us/me/milbridge/;Milbridge;milbridge
+http://www.meetup.com/cities/us/me/milford/;Milford;milford
+http://www.meetup.com/cities/us/me/millinocket/;Millinocket;millinocket
+http://www.meetup.com/cities/us/me/milo/;Milo;milo
+http://www.meetup.com/cities/us/me/minot/;Minot;minot
+http://www.meetup.com/cities/us/me/monhegan/;Monhegan;monhegan
+http://www.meetup.com/cities/us/me/monmouth/;Monmouth;monmouth
+http://www.meetup.com/cities/us/me/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/me/monson/;Monson;monson
+http://www.meetup.com/cities/us/me/monticello/;Monticello;monticello
+http://www.meetup.com/cities/us/me/moody/;Moody;moody
+http://www.meetup.com/cities/us/me/morrill/;Morrill;morrill
+http://www.meetup.com/cities/us/me/mount_desert/;Mount Desert;mount_desert
+http://www.meetup.com/cities/us/me/mount_vernon/;Mount Vernon;mount_vernon
+http://www.meetup.com/cities/us/me/naples/;Naples;naples
+http://www.meetup.com/cities/us/me/newcastle/;Newcastle;newcastle
+http://www.meetup.com/cities/us/me/newfield/;Newfield;newfield
+http://www.meetup.com/cities/us/me/new_gloucester/;New Gloucester;new_gloucester
+http://www.meetup.com/cities/us/me/new_harbor/;New Harbor;new_harbor
+http://www.meetup.com/cities/us/me/new_limerick/;New Limerick;new_limerick
+http://www.meetup.com/cities/us/me/newport/;Newport;newport
+http://www.meetup.com/cities/us/me/new_portland/;New Portland;new_portland
+http://www.meetup.com/cities/us/me/newry/;Newry;newry
+http://www.meetup.com/cities/us/me/new_sharon/;New Sharon;new_sharon
+http://www.meetup.com/cities/us/me/new_sweden/;New Sweden;new_sweden
+http://www.meetup.com/cities/us/me/new_vineyard/;New Vineyard;new_vineyard
+http://www.meetup.com/cities/us/me/nobleboro/;Nobleboro;nobleboro
+http://www.meetup.com/cities/us/me/norridgewock/;Norridgewock;norridgewock
+http://www.meetup.com/cities/us/me/north_anson/;North Anson;north_anson
+http://www.meetup.com/cities/us/me/north_berwick/;North Berwick;north_berwick
+http://www.meetup.com/cities/us/me/north_bridgton/;North Bridgton;north_bridgton
+http://www.meetup.com/cities/us/me/northeast_harbor/;Northeast Harbor;northeast_harbor
+http://www.meetup.com/cities/us/me/north_haven/;North Haven;north_haven
+http://www.meetup.com/cities/us/me/north_jay/;North Jay;north_jay
+http://www.meetup.com/cities/us/me/north_monmouth/;North Monmouth;north_monmouth
+http://www.meetup.com/cities/us/me/north_turner/;North Turner;north_turner
+http://www.meetup.com/cities/us/me/north_vassalboro/;North Vassalboro;north_vassalboro
+http://www.meetup.com/cities/us/me/north_waterboro/;North Waterboro;north_waterboro
+http://www.meetup.com/cities/us/me/north_waterford/;North Waterford;north_waterford
+http://www.meetup.com/cities/us/me/north_yarmouth/;North Yarmouth;north_yarmouth
+http://www.meetup.com/cities/us/me/norway/;Norway;norway
+http://www.meetup.com/cities/us/me/oakfield/;Oakfield;oakfield
+http://www.meetup.com/cities/us/me/oakland/;Oakland;oakland
+http://www.meetup.com/cities/us/me/ocean_park/;Ocean Park;ocean_park
+http://www.meetup.com/cities/us/me/ogunquit/;Ogunquit;ogunquit
+http://www.meetup.com/cities/us/me/olamon/;Olamon;olamon
+http://www.meetup.com/cities/us/me/old_orchard_beach/;Old Orchard Beach;old_orchard_beach
+http://www.meetup.com/cities/us/me/old_town/;Old Town;old_town
+http://www.meetup.com/cities/us/me/oquossoc/;Oquossoc;oquossoc
+http://www.meetup.com/cities/us/me/orient/;Orient;orient
+http://www.meetup.com/cities/us/me/orland/;Orland;orland
+http://www.meetup.com/cities/us/me/orono/;Orono;orono
+http://www.meetup.com/cities/us/me/orrington/;Orrington;orrington
+http://www.meetup.com/cities/us/me/orrs_island/;Orrs Island;orrs_island
+http://www.meetup.com/cities/us/me/owls_head/;Owls Head;owls_head
+http://www.meetup.com/cities/us/me/oxbow/;Oxbow;oxbow
+http://www.meetup.com/cities/us/me/oxford/;Oxford;oxford
+http://www.meetup.com/cities/us/me/palermo/;Palermo;palermo
+http://www.meetup.com/cities/us/me/palmyra/;Palmyra;palmyra
+http://www.meetup.com/cities/us/me/paris/;Paris;paris
+http://www.meetup.com/cities/us/me/parsonsfield/;Parsonsfield;parsonsfield
+http://www.meetup.com/cities/us/me/passadumkeag/;Passadumkeag;passadumkeag
+http://www.meetup.com/cities/us/me/patten/;Patten;patten
+http://www.meetup.com/cities/us/me/peaks_island/;Peaks Island;peaks_island
+http://www.meetup.com/cities/us/me/pemaquid/;Pemaquid;pemaquid
+http://www.meetup.com/cities/us/me/pembroke/;Pembroke;pembroke
+http://www.meetup.com/cities/us/me/penobscot/;Penobscot;penobscot
+http://www.meetup.com/cities/us/me/perham/;Perham;perham
+http://www.meetup.com/cities/us/me/perry/;Perry;perry
+http://www.meetup.com/cities/us/me/peru/;Peru;peru
+http://www.meetup.com/cities/us/me/phillips/;Phillips;phillips
+http://www.meetup.com/cities/us/me/phippsburg/;Phippsburg;phippsburg
+http://www.meetup.com/cities/us/me/pittsfield/;Pittsfield;pittsfield
+http://www.meetup.com/cities/us/me/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/me/poland/;Poland;poland
+http://www.meetup.com/cities/us/me/portage/;Portage;portage
+http://www.meetup.com/cities/us/me/port_clyde/;Port Clyde;port_clyde
+http://www.meetup.com/cities/us/me/porter/;Porter;porter
+http://www.meetup.com/cities/us/me/portland/;Portland;portland
+http://www.meetup.com/cities/us/me/pownal/;Pownal;pownal
+http://www.meetup.com/cities/us/me/presque_isle/;Presque Isle;presque_isle
+http://www.meetup.com/cities/us/me/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/me/prospect_harbor/;Prospect Harbor;prospect_harbor
+http://www.meetup.com/cities/us/me/randolph/;Randolph;randolph
+http://www.meetup.com/cities/us/me/rangeley/;Rangeley;rangeley
+http://www.meetup.com/cities/us/me/raymond/;Raymond;raymond
+http://www.meetup.com/cities/us/me/readfield/;Readfield;readfield
+http://www.meetup.com/cities/us/me/richmond/;Richmond;richmond
+http://www.meetup.com/cities/us/me/robbinston/;Robbinston;robbinston
+http://www.meetup.com/cities/us/me/rockland/;Rockland;rockland
+http://www.meetup.com/cities/us/me/rockport/;Rockport;rockport
+http://www.meetup.com/cities/us/me/rockwood/;Rockwood;rockwood
+http://www.meetup.com/cities/us/me/round_pond/;Round Pond;round_pond
+http://www.meetup.com/cities/us/me/roxbury/;Roxbury;roxbury
+http://www.meetup.com/cities/us/me/rumford/;Rumford;rumford
+http://www.meetup.com/cities/us/me/rumford_center/;Rumford Center;rumford_center
+http://www.meetup.com/cities/us/me/sabattus/;Sabattus;sabattus
+http://www.meetup.com/cities/us/me/saco/;Saco;saco
+http://www.meetup.com/cities/us/me/saint_agatha/;Saint Agatha;saint_agatha
+http://www.meetup.com/cities/us/me/saint_albans/;Saint Albans;saint_albans
+http://www.meetup.com/cities/us/me/saint_david/;Saint David;saint_david
+http://www.meetup.com/cities/us/me/saint_francis/;Saint Francis;saint_francis
+http://www.meetup.com/cities/us/me/salsbury_cove/;Salsbury Cove;salsbury_cove
+http://www.meetup.com/cities/us/me/sandy_point/;Sandy Point;sandy_point
+http://www.meetup.com/cities/us/me/sanford/;Sanford;sanford
+http://www.meetup.com/cities/us/me/sangerville/;Sangerville;sangerville
+http://www.meetup.com/cities/us/me/sargentville/;Sargentville;sargentville
+http://www.meetup.com/cities/us/me/scarborough/;Scarborough;scarborough
+http://www.meetup.com/cities/us/me/seal_cove/;Seal Cove;seal_cove
+http://www.meetup.com/cities/us/me/seal_harbor/;Seal Harbor;seal_harbor
+http://www.meetup.com/cities/us/me/searsmont/;Searsmont;searsmont
+http://www.meetup.com/cities/us/me/searsport/;Searsport;searsport
+http://www.meetup.com/cities/us/me/sebago/;Sebago;sebago
+http://www.meetup.com/cities/us/me/sebago_lake/;Sebago Lake;sebago_lake
+http://www.meetup.com/cities/us/me/sebasco_estates/;Sebasco Estates;sebasco_estates
+http://www.meetup.com/cities/us/me/sebec/;Sebec;sebec
+http://www.meetup.com/cities/us/me/sedgwick/;Sedgwick;sedgwick
+http://www.meetup.com/cities/us/me/shapleigh/;Shapleigh;shapleigh
+http://www.meetup.com/cities/us/me/shawmut/;Shawmut;shawmut
+http://www.meetup.com/cities/us/me/sheridan/;Sheridan;sheridan
+http://www.meetup.com/cities/us/me/sherman/;Sherman;sherman
+http://www.meetup.com/cities/us/me/shirley_mills/;Shirley Mills;shirley_mills
+http://www.meetup.com/cities/us/me/sinclair/;Sinclair;sinclair
+http://www.meetup.com/cities/us/me/skowhegan/;Skowhegan;skowhegan
+http://www.meetup.com/cities/us/me/smithfield/;Smithfield;smithfield
+http://www.meetup.com/cities/us/me/smyrna_mills/;Smyrna Mills;smyrna_mills
+http://www.meetup.com/cities/us/me/solon/;Solon;solon
+http://www.meetup.com/cities/us/me/sorrento/;Sorrento;sorrento
+http://www.meetup.com/cities/us/me/south_berwick/;South Berwick;south_berwick
+http://www.meetup.com/cities/us/me/south_bristol/;South Bristol;south_bristol
+http://www.meetup.com/cities/us/me/south_casco/;South Casco;south_casco
+http://www.meetup.com/cities/us/me/south_china/;South China;south_china
+http://www.meetup.com/cities/us/me/south_freeport/;South Freeport;south_freeport
+http://www.meetup.com/cities/us/me/south_gardiner/;South Gardiner;south_gardiner
+http://www.meetup.com/cities/us/me/south_paris/;South Paris;south_paris
+http://www.meetup.com/cities/us/me/southport/;Southport;southport
+http://www.meetup.com/cities/us/me/south_portland/;South Portland;south_portland
+http://www.meetup.com/cities/us/me/south_thomaston/;South Thomaston;south_thomaston
+http://www.meetup.com/cities/us/me/southwest_harbor/;Southwest Harbor;southwest_harbor
+http://www.meetup.com/cities/us/me/south_windham/;South Windham;south_windham
+http://www.meetup.com/cities/us/me/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/me/springvale/;Springvale;springvale
+http://www.meetup.com/cities/us/me/spruce_head/;Spruce Head;spruce_head
+http://www.meetup.com/cities/us/me/squirrel_island/;Squirrel Island;squirrel_island
+http://www.meetup.com/cities/us/me/stacyville/;Stacyville;stacyville
+http://www.meetup.com/cities/us/me/standish/;Standish;standish
+http://www.meetup.com/cities/us/me/steep_falls/;Steep Falls;steep_falls
+http://www.meetup.com/cities/us/me/stetson/;Stetson;stetson
+http://www.meetup.com/cities/us/me/steuben/;Steuben;steuben
+http://www.meetup.com/cities/us/me/stillwater/;Stillwater;stillwater
+http://www.meetup.com/cities/us/me/stockholm/;Stockholm;stockholm
+http://www.meetup.com/cities/us/me/stockton_springs/;Stockton Springs;stockton_springs
+http://www.meetup.com/cities/us/me/stoneham/;Stoneham;stoneham
+http://www.meetup.com/cities/us/me/stonington/;Stonington;stonington
+http://www.meetup.com/cities/us/me/stratton/;Stratton;stratton
+http://www.meetup.com/cities/us/me/strong/;Strong;strong
+http://www.meetup.com/cities/us/me/sullivan/;Sullivan;sullivan
+http://www.meetup.com/cities/us/me/sumner/;Sumner;sumner
+http://www.meetup.com/cities/us/me/sunset/;Sunset;sunset
+http://www.meetup.com/cities/us/me/surry/;Surry;surry
+http://www.meetup.com/cities/us/me/swans_island/;Swans Island;swans_island
+http://www.meetup.com/cities/us/me/temple/;Temple;temple
+http://www.meetup.com/cities/us/me/tenants_harbor/;Tenants Harbor;tenants_harbor
+http://www.meetup.com/cities/us/me/thomaston/;Thomaston;thomaston
+http://www.meetup.com/cities/us/me/thorndike/;Thorndike;thorndike
+http://www.meetup.com/cities/us/me/topsfield/;Topsfield;topsfield
+http://www.meetup.com/cities/us/me/topsham/;Topsham;topsham
+http://www.meetup.com/cities/us/me/trevett/;Trevett;trevett
+http://www.meetup.com/cities/us/me/troy/;Troy;troy
+http://www.meetup.com/cities/us/me/turner/;Turner;turner
+http://www.meetup.com/cities/us/me/union/;Union;union
+http://www.meetup.com/cities/us/me/unity/;Unity;unity
+http://www.meetup.com/cities/us/me/van_buren/;Van Buren;van_buren
+http://www.meetup.com/cities/us/me/vanceboro/;Vanceboro;vanceboro
+http://www.meetup.com/cities/us/me/vassalboro/;Vassalboro;vassalboro
+http://www.meetup.com/cities/us/me/vienna/;Vienna;vienna
+http://www.meetup.com/cities/us/me/vinalhaven/;Vinalhaven;vinalhaven
+http://www.meetup.com/cities/us/me/waite/;Waite;waite
+http://www.meetup.com/cities/us/me/waldoboro/;Waldoboro;waldoboro
+http://www.meetup.com/cities/us/me/wallagrass/;Wallagrass;wallagrass
+http://www.meetup.com/cities/us/me/walpole/;Walpole;walpole
+http://www.meetup.com/cities/us/me/warren/;Warren;warren
+http://www.meetup.com/cities/us/me/washburn/;Washburn;washburn
+http://www.meetup.com/cities/us/me/washington/;Washington;washington
+http://www.meetup.com/cities/us/me/waterboro/;Waterboro;waterboro
+http://www.meetup.com/cities/us/me/waterford/;Waterford;waterford
+http://www.meetup.com/cities/us/me/waterville/;Waterville;waterville
+http://www.meetup.com/cities/us/me/wayne/;Wayne;wayne
+http://www.meetup.com/cities/us/me/weld/;Weld;weld
+http://www.meetup.com/cities/us/me/wells/;Wells;wells
+http://www.meetup.com/cities/us/me/wesley/;Wesley;wesley
+http://www.meetup.com/cities/us/me/west_baldwin/;West Baldwin;west_baldwin
+http://www.meetup.com/cities/us/me/west_bethel/;West Bethel;west_bethel
+http://www.meetup.com/cities/us/me/west_boothbay_harbor/;West Boothbay Harbor;west_boothbay_harbor
+http://www.meetup.com/cities/us/me/westbrook/;Westbrook;westbrook
+http://www.meetup.com/cities/us/me/west_enfield/;West Enfield;west_enfield
+http://www.meetup.com/cities/us/me/west_farmington/;West Farmington;west_farmington
+http://www.meetup.com/cities/us/me/westfield/;Westfield;westfield
+http://www.meetup.com/cities/us/me/west_forks/;West Forks;west_forks
+http://www.meetup.com/cities/us/me/west_kennebunk/;West Kennebunk;west_kennebunk
+http://www.meetup.com/cities/us/me/west_minot/;West Minot;west_minot
+http://www.meetup.com/cities/us/me/west_newfield/;West Newfield;west_newfield
+http://www.meetup.com/cities/us/me/west_paris/;West Paris;west_paris
+http://www.meetup.com/cities/us/me/west_poland/;West Poland;west_poland
+http://www.meetup.com/cities/us/me/west_rockport/;West Rockport;west_rockport
+http://www.meetup.com/cities/us/me/whitefield/;Whitefield;whitefield
+http://www.meetup.com/cities/us/me/whiting/;Whiting;whiting
+http://www.meetup.com/cities/us/me/wilton/;Wilton;wilton
+http://www.meetup.com/cities/us/me/windham/;Windham;windham
+http://www.meetup.com/cities/us/me/windsor/;Windsor;windsor
+http://www.meetup.com/cities/us/me/winn/;Winn;winn
+http://www.meetup.com/cities/us/me/winter_harbor/;Winter Harbor;winter_harbor
+http://www.meetup.com/cities/us/me/winterport/;Winterport;winterport
+http://www.meetup.com/cities/us/me/winthrop/;Winthrop;winthrop
+http://www.meetup.com/cities/us/me/wiscasset/;Wiscasset;wiscasset
+http://www.meetup.com/cities/us/me/woolwich/;Woolwich;woolwich
+http://www.meetup.com/cities/us/me/wytopitlock/;Wytopitlock;wytopitlock
+http://www.meetup.com/cities/us/me/yarmouth/;Yarmouth;yarmouth
+http://www.meetup.com/cities/us/me/york/;York;york
+http://www.meetup.com/cities/us/me/york_beach/;York Beach;york_beach
+http://www.meetup.com/cities/us/me/york_harbor/;York Harbor;york_harbor

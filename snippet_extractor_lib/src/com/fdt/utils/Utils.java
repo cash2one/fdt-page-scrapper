@@ -11,6 +11,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -224,6 +229,19 @@ public class Utils {
 			} catch (IOException ex) {
 				log.error("Error during closing output stream",ex);
 			}
+		}
+	}
+	
+	public static void replaceStrInFile(String str2Replace, String replacement, String filePath) {
+		try {
+			Path path = Paths.get(filePath);
+			Charset charset = StandardCharsets.UTF_8;
+
+			String content = new String(Files.readAllBytes(path), charset);
+			content = content.replaceAll(str2Replace, replacement);
+			Files.write(path, content.getBytes(charset));
+		} catch (IOException ex) {
+			log.error("Error during saving string to file",ex);
 		}
 	}
 }

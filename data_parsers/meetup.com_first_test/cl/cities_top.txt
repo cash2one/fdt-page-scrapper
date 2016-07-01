@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/cl/ancud/;Ancud;ancud
+http://www.meetup.com/cities/cl/angol/;Angol;angol
+http://www.meetup.com/cities/cl/antofagasta/;Antofagasta;antofagasta
+http://www.meetup.com/cities/cl/arica/;Arica;arica
+http://www.meetup.com/cities/cl/calama/;Calama;calama
+http://www.meetup.com/cities/cl/calera/;Calera;calera
+http://www.meetup.com/cities/cl/castro/;Castro;castro
+http://www.meetup.com/cities/cl/chiguayante/;Chiguayante;chiguayante
+http://www.meetup.com/cities/cl/chill%C3%A1n/;Chillán;chill%C3%A1n
+http://www.meetup.com/cities/cl/coihaique/;Coihaique;coihaique
+http://www.meetup.com/cities/cl/concepci%C3%B3n/;Concepción;concepci%C3%B3n
+http://www.meetup.com/cities/cl/copiap%C3%B3/;Copiapó;copiap%C3%B3
+http://www.meetup.com/cities/cl/coquimbo/;Coquimbo;coquimbo
+http://www.meetup.com/cities/cl/coronel/;Coronel;coronel
+http://www.meetup.com/cities/cl/curic%C3%B3/;Curicó;curic%C3%B3
+http://www.meetup.com/cities/cl/iquique/;Iquique;iquique
+http://www.meetup.com/cities/cl/la_serena/;La Serena;la_serena
+http://www.meetup.com/cities/cl/la_uni%C3%B3n/;La Unión;la_uni%C3%B3n
+http://www.meetup.com/cities/cl/linares/;Linares;linares
+http://www.meetup.com/cities/cl/los_andes/;Los Andes;los_andes
+http://www.meetup.com/cities/cl/los_%C3%A1ngeles/;Los Ángeles;los_%C3%A1ngeles
+http://www.meetup.com/cities/cl/melipilla/;Melipilla;melipilla
+http://www.meetup.com/cities/cl/osorno/;Osorno;osorno
+http://www.meetup.com/cities/cl/ovalle/;Ovalle;ovalle
+http://www.meetup.com/cities/cl/pe%C3%B1aflor/;Peñaflor;pe%C3%B1aflor
+http://www.meetup.com/cities/cl/puente_alto/;Puente Alto;puente_alto
+http://www.meetup.com/cities/cl/puerto_montt/;Puerto Montt;puerto_montt
+http://www.meetup.com/cities/cl/puerto_varas/;Puerto Varas;puerto_varas
+http://www.meetup.com/cities/cl/punta_arenas/;Punta Arenas;punta_arenas
+http://www.meetup.com/cities/cl/quillota/;Quillota;quillota
+http://www.meetup.com/cities/cl/quilpu%C3%A9/;Quilpué;quilpu%C3%A9
+http://www.meetup.com/cities/cl/rancagua/;Rancagua;rancagua
+http://www.meetup.com/cities/cl/rengo/;Rengo;rengo
+http://www.meetup.com/cities/cl/san_antonio/;San Antonio;san_antonio
+http://www.meetup.com/cities/cl/san_bernardo_viento/;San Bernardo Viento;san_bernardo_viento
+http://www.meetup.com/cities/cl/san_felipe/;San Felipe;san_felipe
+http://www.meetup.com/cities/cl/san_fernando/;San Fernando;san_fernando
+http://www.meetup.com/cities/cl/san_pedro_de_la_paz/;San Pedro de la Paz;san_pedro_de_la_paz
+http://www.meetup.com/cities/cl/santa_cruz/;Santa Cruz;santa_cruz
+http://www.meetup.com/cities/cl/santiago/;Santiago;santiago
+http://www.meetup.com/cities/cl/talagante/;Talagante;talagante
+http://www.meetup.com/cities/cl/talca/;Talca;talca
+http://www.meetup.com/cities/cl/talcahuano/;Talcahuano;talcahuano
+http://www.meetup.com/cities/cl/temuco/;Temuco;temuco
+http://www.meetup.com/cities/cl/tom%C3%A9/;Tomé;tom%C3%A9
+http://www.meetup.com/cities/cl/valdivia/;Valdivia;valdivia
+http://www.meetup.com/cities/cl/valpara%C3%ADso/;Valparaíso;valpara%C3%ADso
+http://www.meetup.com/cities/cl/villa_alemana/;Villa Alemana;villa_alemana
+http://www.meetup.com/cities/cl/villarica/;Villarica;villarica
+http://www.meetup.com/cities/cl/vi%C3%B1a_del_mar/;Viña del Mar;vi%C3%B1a_del_mar

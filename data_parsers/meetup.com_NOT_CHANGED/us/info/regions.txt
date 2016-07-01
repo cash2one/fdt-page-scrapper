@@ -1,0 +1,92 @@
+http://www.meetup.com/cities/us/al/;Alabama;al
+http://www.meetup.com/cities/us/ak/;Alaska;ak
+http://www.meetup.com/cities/us/az/;Arizona;az
+http://www.meetup.com/cities/us/ar/;Arkansas;ar
+http://www.meetup.com/cities/us/ca/;California;ca
+http://www.meetup.com/cities/us/co/;Colorado;co
+http://www.meetup.com/cities/us/ct/;Connecticut;ct
+http://www.meetup.com/cities/us/de/;Delaware;de
+http://www.meetup.com/cities/us/dc/;District of Columbia;dc
+http://www.meetup.com/cities/us/fl/;Florida;fl
+http://www.meetup.com/cities/us/ga/;Georgia;ga
+http://www.meetup.com/cities/us/hi/;Hawaii;hi
+http://www.meetup.com/cities/us/id/;Idaho;id
+http://www.meetup.com/cities/us/il/;Illinois;il
+http://www.meetup.com/cities/us/in/;Indiana;in
+http://www.meetup.com/cities/us/ia/;Iowa;ia
+http://www.meetup.com/cities/us/ks/;Kansas;ks
+http://www.meetup.com/cities/us/ky/;Kentucky;ky
+http://www.meetup.com/cities/us/la/;Louisiana;la
+http://www.meetup.com/cities/us/me/;Maine;me
+http://www.meetup.com/cities/us/md/;Maryland;md
+http://www.meetup.com/cities/us/ma/;Massachusetts;ma
+http://www.meetup.com/cities/us/mi/;Michigan;mi
+http://www.meetup.com/cities/us/mn/;Minnesota;mn
+http://www.meetup.com/cities/us/ms/;Mississippi;ms
+http://www.meetup.com/cities/us/mo/;Missouri;mo
+http://www.meetup.com/cities/us/mt/;Montana;mt
+http://www.meetup.com/cities/us/ne/;Nebraska;ne
+http://www.meetup.com/cities/us/nv/;Nevada;nv
+http://www.meetup.com/cities/us/nh/;New Hampshire;nh
+http://www.meetup.com/cities/us/nj/;New Jersey;nj
+http://www.meetup.com/cities/us/nm/;New Mexico;nm
+http://www.meetup.com/cities/us/ny/;New York;ny
+http://www.meetup.com/cities/us/nc/;North Carolina;nc
+http://www.meetup.com/cities/us/nd/;North Dakota;nd
+http://www.meetup.com/cities/us/oh/;Ohio;oh
+http://www.meetup.com/cities/us/ok/;Oklahoma;ok
+http://www.meetup.com/cities/us/or/;Oregon;or
+http://www.meetup.com/cities/us/pa/;Pennsylvania;pa
+http://www.meetup.com/cities/us/al/;Alabama;al
+http://www.meetup.com/cities/us/ak/;Alaska;ak
+http://www.meetup.com/cities/us/az/;Arizona;az
+http://www.meetup.com/cities/us/ar/;Arkansas;ar
+http://www.meetup.com/cities/us/ca/;California;ca
+http://www.meetup.com/cities/us/co/;Colorado;co
+http://www.meetup.com/cities/us/ct/;Connecticut;ct
+http://www.meetup.com/cities/us/de/;Delaware;de
+http://www.meetup.com/cities/us/dc/;District of Columbia;dc
+http://www.meetup.com/cities/us/fl/;Florida;fl
+http://www.meetup.com/cities/us/ga/;Georgia;ga
+http://www.meetup.com/cities/us/hi/;Hawaii;hi
+http://www.meetup.com/cities/us/id/;Idaho;id
+http://www.meetup.com/cities/us/il/;Illinois;il
+http://www.meetup.com/cities/us/in/;Indiana;in
+http://www.meetup.com/cities/us/ia/;Iowa;ia
+http://www.meetup.com/cities/us/ks/;Kansas;ks
+http://www.meetup.com/cities/us/ky/;Kentucky;ky
+http://www.meetup.com/cities/us/la/;Louisiana;la
+http://www.meetup.com/cities/us/me/;Maine;me
+http://www.meetup.com/cities/us/md/;Maryland;md
+http://www.meetup.com/cities/us/ma/;Massachusetts;ma
+http://www.meetup.com/cities/us/mi/;Michigan;mi
+http://www.meetup.com/cities/us/mn/;Minnesota;mn
+http://www.meetup.com/cities/us/ms/;Mississippi;ms
+http://www.meetup.com/cities/us/mo/;Missouri;mo
+http://www.meetup.com/cities/us/mt/;Montana;mt
+http://www.meetup.com/cities/us/ne/;Nebraska;ne
+http://www.meetup.com/cities/us/nv/;Nevada;nv
+http://www.meetup.com/cities/us/nh/;New Hampshire;nh
+http://www.meetup.com/cities/us/nj/;New Jersey;nj
+http://www.meetup.com/cities/us/nm/;New Mexico;nm
+http://www.meetup.com/cities/us/ny/;New York;ny
+http://www.meetup.com/cities/us/nc/;North Carolina;nc
+http://www.meetup.com/cities/us/nd/;North Dakota;nd
+http://www.meetup.com/cities/us/oh/;Ohio;oh
+http://www.meetup.com/cities/us/ok/;Oklahoma;ok
+http://www.meetup.com/cities/us/or/;Oregon;or
+http://www.meetup.com/cities/us/pa/;Pennsylvania;pa
+http://www.meetup.com/cities/us/pr/;Puerto Rico;pr
+http://www.meetup.com/cities/us/ri/;Rhode Island;ri
+http://www.meetup.com/cities/us/sc/;South Carolina;sc
+http://www.meetup.com/cities/us/sd/;South Dakota;sd
+http://www.meetup.com/cities/us/tn/;Tennessee;tn
+http://www.meetup.com/cities/us/tx/;Texas;tx
+http://www.meetup.com/cities/us/ut/;Utah;ut
+http://www.meetup.com/cities/us/vt/;Vermont;vt
+http://www.meetup.com/cities/us/vi/;Virgin Islands;vi
+http://www.meetup.com/cities/us/va/;Virginia;va
+http://www.meetup.com/cities/us/wa/;Washington;wa
+http://www.meetup.com/cities/us/wv/;West Virginia;wv
+http://www.meetup.com/cities/us/wi/;Wisconsin;wi
+http://www.meetup.com/cities/us/wy/;Wyoming;wy

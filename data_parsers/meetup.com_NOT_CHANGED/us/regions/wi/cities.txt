@@ -1,0 +1,753 @@
+http://www.meetup.com/cities/us/wi/abbotsford/;Abbotsford;abbotsford
+http://www.meetup.com/cities/us/wi/abrams/;Abrams;abrams
+http://www.meetup.com/cities/us/wi/adams/;Adams;adams
+http://www.meetup.com/cities/us/wi/adell/;Adell;adell
+http://www.meetup.com/cities/us/wi/afton/;Afton;afton
+http://www.meetup.com/cities/us/wi/albany/;Albany;albany
+http://www.meetup.com/cities/us/wi/algoma/;Algoma;algoma
+http://www.meetup.com/cities/us/wi/allenton/;Allenton;allenton
+http://www.meetup.com/cities/us/wi/alma/;Alma;alma
+http://www.meetup.com/cities/us/wi/alma_center/;Alma Center;alma_center
+http://www.meetup.com/cities/us/wi/almena/;Almena;almena
+http://www.meetup.com/cities/us/wi/almond/;Almond;almond
+http://www.meetup.com/cities/us/wi/altoona/;Altoona;altoona
+http://www.meetup.com/cities/us/wi/amberg/;Amberg;amberg
+http://www.meetup.com/cities/us/wi/amery/;Amery;amery
+http://www.meetup.com/cities/us/wi/amherst/;Amherst;amherst
+http://www.meetup.com/cities/us/wi/amherst_junction/;Amherst Junction;amherst_junction
+http://www.meetup.com/cities/us/wi/aniwa/;Aniwa;aniwa
+http://www.meetup.com/cities/us/wi/antigo/;Antigo;antigo
+http://www.meetup.com/cities/us/wi/appleton/;Appleton;appleton
+http://www.meetup.com/cities/us/wi/arcadia/;Arcadia;arcadia
+http://www.meetup.com/cities/us/wi/arena/;Arena;arena
+http://www.meetup.com/cities/us/wi/argonne/;Argonne;argonne
+http://www.meetup.com/cities/us/wi/argyle/;Argyle;argyle
+http://www.meetup.com/cities/us/wi/arkansaw/;Arkansaw;arkansaw
+http://www.meetup.com/cities/us/wi/arkdale/;Arkdale;arkdale
+http://www.meetup.com/cities/us/wi/arlington/;Arlington;arlington
+http://www.meetup.com/cities/us/wi/armstrong_creek/;Armstrong Creek;armstrong_creek
+http://www.meetup.com/cities/us/wi/arpin/;Arpin;arpin
+http://www.meetup.com/cities/us/wi/ashippun/;Ashippun;ashippun
+http://www.meetup.com/cities/us/wi/ashland/;Ashland;ashland
+http://www.meetup.com/cities/us/wi/athelstane/;Athelstane;athelstane
+http://www.meetup.com/cities/us/wi/athens/;Athens;athens
+http://www.meetup.com/cities/us/wi/auburndale/;Auburndale;auburndale
+http://www.meetup.com/cities/us/wi/augusta/;Augusta;augusta
+http://www.meetup.com/cities/us/wi/avalon/;Avalon;avalon
+http://www.meetup.com/cities/us/wi/avoca/;Avoca;avoca
+http://www.meetup.com/cities/us/wi/babcock/;Babcock;babcock
+http://www.meetup.com/cities/us/wi/bagley/;Bagley;bagley
+http://www.meetup.com/cities/us/wi/baileys_harbor/;Baileys Harbor;baileys_harbor
+http://www.meetup.com/cities/us/wi/baldwin/;Baldwin;baldwin
+http://www.meetup.com/cities/us/wi/balsam_lake/;Balsam Lake;balsam_lake
+http://www.meetup.com/cities/us/wi/bancroft/;Bancroft;bancroft
+http://www.meetup.com/cities/us/wi/bangor/;Bangor;bangor
+http://www.meetup.com/cities/us/wi/baraboo/;Baraboo;baraboo
+http://www.meetup.com/cities/us/wi/barneveld/;Barneveld;barneveld
+http://www.meetup.com/cities/us/wi/barron/;Barron;barron
+http://www.meetup.com/cities/us/wi/barronett/;Barronett;barronett
+http://www.meetup.com/cities/us/wi/bassett/;Bassett;bassett
+http://www.meetup.com/cities/us/wi/bay_city/;Bay City;bay_city
+http://www.meetup.com/cities/us/wi/bayfield/;Bayfield;bayfield
+http://www.meetup.com/cities/us/wi/bear_creek/;Bear Creek;bear_creek
+http://www.meetup.com/cities/us/wi/beaver_dam/;Beaver Dam;beaver_dam
+http://www.meetup.com/cities/us/wi/beetown/;Beetown;beetown
+http://www.meetup.com/cities/us/wi/beldenville/;Beldenville;beldenville
+http://www.meetup.com/cities/us/wi/belgium/;Belgium;belgium
+http://www.meetup.com/cities/us/wi/belleville/;Belleville;belleville
+http://www.meetup.com/cities/us/wi/belmont/;Belmont;belmont
+http://www.meetup.com/cities/us/wi/beloit/;Beloit;beloit
+http://www.meetup.com/cities/us/wi/benet_lake/;Benet Lake;benet_lake
+http://www.meetup.com/cities/us/wi/benoit/;Benoit;benoit
+http://www.meetup.com/cities/us/wi/benton/;Benton;benton
+http://www.meetup.com/cities/us/wi/berlin/;Berlin;berlin
+http://www.meetup.com/cities/us/wi/big_bend/;Big Bend;big_bend
+http://www.meetup.com/cities/us/wi/big_falls/;Big Falls;big_falls
+http://www.meetup.com/cities/us/wi/birchwood/;Birchwood;birchwood
+http://www.meetup.com/cities/us/wi/birnamwood/;Birnamwood;birnamwood
+http://www.meetup.com/cities/us/wi/black_creek/;Black Creek;black_creek
+http://www.meetup.com/cities/us/wi/black_earth/;Black Earth;black_earth
+http://www.meetup.com/cities/us/wi/black_river_falls/;Black River Falls;black_river_falls
+http://www.meetup.com/cities/us/wi/blair/;Blair;blair
+http://www.meetup.com/cities/us/wi/blanchardville/;Blanchardville;blanchardville
+http://www.meetup.com/cities/us/wi/blenker/;Blenker;blenker
+http://www.meetup.com/cities/us/wi/bloomer/;Bloomer;bloomer
+http://www.meetup.com/cities/us/wi/bloomington/;Bloomington;bloomington
+http://www.meetup.com/cities/us/wi/blue_mounds/;Blue Mounds;blue_mounds
+http://www.meetup.com/cities/us/wi/blue_river/;Blue River;blue_river
+http://www.meetup.com/cities/us/wi/bonduel/;Bonduel;bonduel
+http://www.meetup.com/cities/us/wi/boscobel/;Boscobel;boscobel
+http://www.meetup.com/cities/us/wi/boulder_junction/;Boulder Junction;boulder_junction
+http://www.meetup.com/cities/us/wi/bowler/;Bowler;bowler
+http://www.meetup.com/cities/us/wi/boyceville/;Boyceville;boyceville
+http://www.meetup.com/cities/us/wi/boyd/;Boyd;boyd
+http://www.meetup.com/cities/us/wi/brandon/;Brandon;brandon
+http://www.meetup.com/cities/us/wi/brantwood/;Brantwood;brantwood
+http://www.meetup.com/cities/us/wi/briggsville/;Briggsville;briggsville
+http://www.meetup.com/cities/us/wi/brill/;Brill;brill
+http://www.meetup.com/cities/us/wi/brillion/;Brillion;brillion
+http://www.meetup.com/cities/us/wi/bristol/;Bristol;bristol
+http://www.meetup.com/cities/us/wi/brodhead/;Brodhead;brodhead
+http://www.meetup.com/cities/us/wi/brokaw/;Brokaw;brokaw
+http://www.meetup.com/cities/us/wi/brookfield/;Brookfield;brookfield
+http://www.meetup.com/cities/us/wi/brooklyn/;Brooklyn;brooklyn
+http://www.meetup.com/cities/us/wi/brownsville/;Brownsville;brownsville
+http://www.meetup.com/cities/us/wi/browntown/;Browntown;browntown
+http://www.meetup.com/cities/us/wi/bruce/;Bruce;bruce
+http://www.meetup.com/cities/us/wi/brule/;Brule;brule
+http://www.meetup.com/cities/us/wi/brussels/;Brussels;brussels
+http://www.meetup.com/cities/us/wi/bryant/;Bryant;bryant
+http://www.meetup.com/cities/us/wi/burlington/;Burlington;burlington
+http://www.meetup.com/cities/us/wi/burnett/;Burnett;burnett
+http://www.meetup.com/cities/us/wi/butler/;Butler;butler
+http://www.meetup.com/cities/us/wi/butte_des_morts/;Butte des Morts;butte_des_morts
+http://www.meetup.com/cities/us/wi/butternut/;Butternut;butternut
+http://www.meetup.com/cities/us/wi/cable/;Cable;cable
+http://www.meetup.com/cities/us/wi/cadott/;Cadott;cadott
+http://www.meetup.com/cities/us/wi/caledonia/;Caledonia;caledonia
+http://www.meetup.com/cities/us/wi/cambria/;Cambria;cambria
+http://www.meetup.com/cities/us/wi/cambridge/;Cambridge;cambridge
+http://www.meetup.com/cities/us/wi/cameron/;Cameron;cameron
+http://www.meetup.com/cities/us/wi/campbellsport/;Campbellsport;campbellsport
+http://www.meetup.com/cities/us/wi/camp_douglas/;Camp Douglas;camp_douglas
+http://www.meetup.com/cities/us/wi/camp_lake/;Camp Lake;camp_lake
+http://www.meetup.com/cities/us/wi/caroline/;Caroline;caroline
+http://www.meetup.com/cities/us/wi/cascade/;Cascade;cascade
+http://www.meetup.com/cities/us/wi/casco/;Casco;casco
+http://www.meetup.com/cities/us/wi/cashton/;Cashton;cashton
+http://www.meetup.com/cities/us/wi/cassville/;Cassville;cassville
+http://www.meetup.com/cities/us/wi/cataract/;Cataract;cataract
+http://www.meetup.com/cities/us/wi/catawba/;Catawba;catawba
+http://www.meetup.com/cities/us/wi/cazenovia/;Cazenovia;cazenovia
+http://www.meetup.com/cities/us/wi/cecil/;Cecil;cecil
+http://www.meetup.com/cities/us/wi/cedarburg/;Cedarburg;cedarburg
+http://www.meetup.com/cities/us/wi/cedar_grove/;Cedar Grove;cedar_grove
+http://www.meetup.com/cities/us/wi/centuria/;Centuria;centuria
+http://www.meetup.com/cities/us/wi/chaseburg/;Chaseburg;chaseburg
+http://www.meetup.com/cities/us/wi/chetek/;Chetek;chetek
+http://www.meetup.com/cities/us/wi/chili/;Chili;chili
+http://www.meetup.com/cities/us/wi/chilton/;Chilton;chilton
+http://www.meetup.com/cities/us/wi/chippewa_falls/;Chippewa Falls;chippewa_falls
+http://www.meetup.com/cities/us/wi/clam_lake/;Clam Lake;clam_lake
+http://www.meetup.com/cities/us/wi/clayton/;Clayton;clayton
+http://www.meetup.com/cities/us/wi/clear_lake/;Clear Lake;clear_lake
+http://www.meetup.com/cities/us/wi/cleveland/;Cleveland;cleveland
+http://www.meetup.com/cities/us/wi/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/wi/clintonville/;Clintonville;clintonville
+http://www.meetup.com/cities/us/wi/clyman/;Clyman;clyman
+http://www.meetup.com/cities/us/wi/cobb/;Cobb;cobb
+http://www.meetup.com/cities/us/wi/cochrane/;Cochrane;cochrane
+http://www.meetup.com/cities/us/wi/colby/;Colby;colby
+http://www.meetup.com/cities/us/wi/coleman/;Coleman;coleman
+http://www.meetup.com/cities/us/wi/colfax/;Colfax;colfax
+http://www.meetup.com/cities/us/wi/colgate/;Colgate;colgate
+http://www.meetup.com/cities/us/wi/collins/;Collins;collins
+http://www.meetup.com/cities/us/wi/coloma/;Coloma;coloma
+http://www.meetup.com/cities/us/wi/columbus/;Columbus;columbus
+http://www.meetup.com/cities/us/wi/combined_locks/;Combined Locks;combined_locks
+http://www.meetup.com/cities/us/wi/comstock/;Comstock;comstock
+http://www.meetup.com/cities/us/wi/conover/;Conover;conover
+http://www.meetup.com/cities/us/wi/conrath/;Conrath;conrath
+http://www.meetup.com/cities/us/wi/coon_valley/;Coon Valley;coon_valley
+http://www.meetup.com/cities/us/wi/cornell/;Cornell;cornell
+http://www.meetup.com/cities/us/wi/cornucopia/;Cornucopia;cornucopia
+http://www.meetup.com/cities/us/wi/cottage_grove/;Cottage Grove;cottage_grove
+http://www.meetup.com/cities/us/wi/couderay/;Couderay;couderay
+http://www.meetup.com/cities/us/wi/crandon/;Crandon;crandon
+http://www.meetup.com/cities/us/wi/crivitz/;Crivitz;crivitz
+http://www.meetup.com/cities/us/wi/cross_plains/;Cross Plains;cross_plains
+http://www.meetup.com/cities/us/wi/cuba_city/;Cuba City;cuba_city
+http://www.meetup.com/cities/us/wi/cudahy/;Cudahy;cudahy
+http://www.meetup.com/cities/us/wi/cumberland/;Cumberland;cumberland
+http://www.meetup.com/cities/us/wi/curtiss/;Curtiss;curtiss
+http://www.meetup.com/cities/us/wi/cushing/;Cushing;cushing
+http://www.meetup.com/cities/us/wi/custer/;Custer;custer
+http://www.meetup.com/cities/us/wi/dale/;Dale;dale
+http://www.meetup.com/cities/us/wi/dallas/;Dallas;dallas
+http://www.meetup.com/cities/us/wi/dalton/;Dalton;dalton
+http://www.meetup.com/cities/us/wi/danbury/;Danbury;danbury
+http://www.meetup.com/cities/us/wi/dane/;Dane;dane
+http://www.meetup.com/cities/us/wi/darien/;Darien;darien
+http://www.meetup.com/cities/us/wi/darlington/;Darlington;darlington
+http://www.meetup.com/cities/us/wi/deerbrook/;Deerbrook;deerbrook
+http://www.meetup.com/cities/us/wi/deerfield/;Deerfield;deerfield
+http://www.meetup.com/cities/us/wi/deer_park/;Deer Park;deer_park
+http://www.meetup.com/cities/us/wi/de_forest/;De Forest;de_forest
+http://www.meetup.com/cities/us/wi/delafield/;Delafield;delafield
+http://www.meetup.com/cities/us/wi/delavan/;Delavan;delavan
+http://www.meetup.com/cities/us/wi/dellwood/;Dellwood;dellwood
+http://www.meetup.com/cities/us/wi/denmark/;Denmark;denmark
+http://www.meetup.com/cities/us/wi/de_pere/;De Pere;de_pere
+http://www.meetup.com/cities/us/wi/de_soto/;De Soto;de_soto
+http://www.meetup.com/cities/us/wi/dickeyville/;Dickeyville;dickeyville
+http://www.meetup.com/cities/us/wi/dodge/;Dodge;dodge
+http://www.meetup.com/cities/us/wi/dodgeville/;Dodgeville;dodgeville
+http://www.meetup.com/cities/us/wi/dorchester/;Dorchester;dorchester
+http://www.meetup.com/cities/us/wi/dousman/;Dousman;dousman
+http://www.meetup.com/cities/us/wi/downing/;Downing;downing
+http://www.meetup.com/cities/us/wi/downsville/;Downsville;downsville
+http://www.meetup.com/cities/us/wi/doylestown/;Doylestown;doylestown
+http://www.meetup.com/cities/us/wi/dresser/;Dresser;dresser
+http://www.meetup.com/cities/us/wi/drummond/;Drummond;drummond
+http://www.meetup.com/cities/us/wi/dunbar/;Dunbar;dunbar
+http://www.meetup.com/cities/us/wi/durand/;Durand;durand
+http://www.meetup.com/cities/us/wi/eagle/;Eagle;eagle
+http://www.meetup.com/cities/us/wi/eagle_river/;Eagle River;eagle_river
+http://www.meetup.com/cities/us/wi/east_ellsworth/;East Ellsworth;east_ellsworth
+http://www.meetup.com/cities/us/wi/eastman/;Eastman;eastman
+http://www.meetup.com/cities/us/wi/east_troy/;East Troy;east_troy
+http://www.meetup.com/cities/us/wi/eau_claire/;Eau Claire;eau_claire
+http://www.meetup.com/cities/us/wi/eau_galle/;Eau Galle;eau_galle
+http://www.meetup.com/cities/us/wi/eden/;Eden;eden
+http://www.meetup.com/cities/us/wi/edgar/;Edgar;edgar
+http://www.meetup.com/cities/us/wi/edgerton/;Edgerton;edgerton
+http://www.meetup.com/cities/us/wi/edgewater/;Edgewater;edgewater
+http://www.meetup.com/cities/us/wi/edmund/;Edmund;edmund
+http://www.meetup.com/cities/us/wi/egg_harbor/;Egg Harbor;egg_harbor
+http://www.meetup.com/cities/us/wi/eland/;Eland;eland
+http://www.meetup.com/cities/us/wi/elcho/;Elcho;elcho
+http://www.meetup.com/cities/us/wi/elderon/;Elderon;elderon
+http://www.meetup.com/cities/us/wi/eldorado/;Eldorado;eldorado
+http://www.meetup.com/cities/us/wi/eleva/;Eleva;eleva
+http://www.meetup.com/cities/us/wi/elkhart_lake/;Elkhart Lake;elkhart_lake
+http://www.meetup.com/cities/us/wi/elkhorn/;Elkhorn;elkhorn
+http://www.meetup.com/cities/us/wi/elk_mound/;Elk Mound;elk_mound
+http://www.meetup.com/cities/us/wi/ellison_bay/;Ellison Bay;ellison_bay
+http://www.meetup.com/cities/us/wi/ellsworth/;Ellsworth;ellsworth
+http://www.meetup.com/cities/us/wi/elm_grove/;Elm Grove;elm_grove
+http://www.meetup.com/cities/us/wi/elmwood/;Elmwood;elmwood
+http://www.meetup.com/cities/us/wi/elroy/;Elroy;elroy
+http://www.meetup.com/cities/us/wi/elton/;Elton;elton
+http://www.meetup.com/cities/us/wi/embarrass/;Embarrass;embarrass
+http://www.meetup.com/cities/us/wi/endeavor/;Endeavor;endeavor
+http://www.meetup.com/cities/us/wi/ephraim/;Ephraim;ephraim
+http://www.meetup.com/cities/us/wi/ettrick/;Ettrick;ettrick
+http://www.meetup.com/cities/us/wi/eureka/;Eureka;eureka
+http://www.meetup.com/cities/us/wi/evansville/;Evansville;evansville
+http://www.meetup.com/cities/us/wi/exeland/;Exeland;exeland
+http://www.meetup.com/cities/us/wi/fairchild/;Fairchild;fairchild
+http://www.meetup.com/cities/us/wi/fairwater/;Fairwater;fairwater
+http://www.meetup.com/cities/us/wi/fall_creek/;Fall Creek;fall_creek
+http://www.meetup.com/cities/us/wi/fall_river/;Fall River;fall_river
+http://www.meetup.com/cities/us/wi/fence/;Fence;fence
+http://www.meetup.com/cities/us/wi/fennimore/;Fennimore;fennimore
+http://www.meetup.com/cities/us/wi/ferryville/;Ferryville;ferryville
+http://www.meetup.com/cities/us/wi/fifield/;Fifield;fifield
+http://www.meetup.com/cities/us/wi/fish_creek/;Fish Creek;fish_creek
+http://www.meetup.com/cities/us/wi/florence/;Florence;florence
+http://www.meetup.com/cities/us/wi/fond_du_lac/;Fond du Lac;fond_du_lac
+http://www.meetup.com/cities/us/wi/fontana/;Fontana;fontana
+http://www.meetup.com/cities/us/wi/footville/;Footville;footville
+http://www.meetup.com/cities/us/wi/forest_junction/;Forest Junction;forest_junction
+http://www.meetup.com/cities/us/wi/forestville/;Forestville;forestville
+http://www.meetup.com/cities/us/wi/fort_atkinson/;Fort Atkinson;fort_atkinson
+http://www.meetup.com/cities/us/wi/fountain_city/;Fountain City;fountain_city
+http://www.meetup.com/cities/us/wi/foxboro/;Foxboro;foxboro
+http://www.meetup.com/cities/us/wi/fox_lake/;Fox Lake;fox_lake
+http://www.meetup.com/cities/us/wi/francis_creek/;Francis Creek;francis_creek
+http://www.meetup.com/cities/us/wi/franklin/;Franklin;franklin
+http://www.meetup.com/cities/us/wi/franksville/;Franksville;franksville
+http://www.meetup.com/cities/us/wi/frederic/;Frederic;frederic
+http://www.meetup.com/cities/us/wi/fredonia/;Fredonia;fredonia
+http://www.meetup.com/cities/us/wi/freedom/;Freedom;freedom
+http://www.meetup.com/cities/us/wi/fremont/;Fremont;fremont
+http://www.meetup.com/cities/us/wi/friendship/;Friendship;friendship
+http://www.meetup.com/cities/us/wi/friesland/;Friesland;friesland
+http://www.meetup.com/cities/us/wi/galesville/;Galesville;galesville
+http://www.meetup.com/cities/us/wi/galloway/;Galloway;galloway
+http://www.meetup.com/cities/us/wi/gays_mills/;Gays Mills;gays_mills
+http://www.meetup.com/cities/us/wi/genesee_depot/;Genesee Depot;genesee_depot
+http://www.meetup.com/cities/us/wi/genoa/;Genoa;genoa
+http://www.meetup.com/cities/us/wi/genoa_city/;Genoa City;genoa_city
+http://www.meetup.com/cities/us/wi/germantown/;Germantown;germantown
+http://www.meetup.com/cities/us/wi/gile/;Gile;gile
+http://www.meetup.com/cities/us/wi/gillett/;Gillett;gillett
+http://www.meetup.com/cities/us/wi/gilman/;Gilman;gilman
+http://www.meetup.com/cities/us/wi/gilmanton/;Gilmanton;gilmanton
+http://www.meetup.com/cities/us/wi/gleason/;Gleason;gleason
+http://www.meetup.com/cities/us/wi/glenbeulah/;Glenbeulah;glenbeulah
+http://www.meetup.com/cities/us/wi/glen_flora/;Glen Flora;glen_flora
+http://www.meetup.com/cities/us/wi/glen_haven/;Glen Haven;glen_haven
+http://www.meetup.com/cities/us/wi/glenwood_city/;Glenwood City;glenwood_city
+http://www.meetup.com/cities/us/wi/glidden/;Glidden;glidden
+http://www.meetup.com/cities/us/wi/goodman/;Goodman;goodman
+http://www.meetup.com/cities/us/wi/gordon/;Gordon;gordon
+http://www.meetup.com/cities/us/wi/gotham/;Gotham;gotham
+http://www.meetup.com/cities/us/wi/grafton/;Grafton;grafton
+http://www.meetup.com/cities/us/wi/grand_marsh/;Grand Marsh;grand_marsh
+http://www.meetup.com/cities/us/wi/grand_view/;Grand View;grand_view
+http://www.meetup.com/cities/us/wi/granton/;Granton;granton
+http://www.meetup.com/cities/us/wi/grantsburg/;Grantsburg;grantsburg
+http://www.meetup.com/cities/us/wi/gratiot/;Gratiot;gratiot
+http://www.meetup.com/cities/us/wi/green_bay/;Green Bay;green_bay
+http://www.meetup.com/cities/us/wi/greenbush/;Greenbush;greenbush
+http://www.meetup.com/cities/us/wi/greendale/;Greendale;greendale
+http://www.meetup.com/cities/us/wi/green_lake/;Green Lake;green_lake
+http://www.meetup.com/cities/us/wi/greenleaf/;Greenleaf;greenleaf
+http://www.meetup.com/cities/us/wi/green_valley/;Green Valley;green_valley
+http://www.meetup.com/cities/us/wi/greenville/;Greenville;greenville
+http://www.meetup.com/cities/us/wi/greenwood/;Greenwood;greenwood
+http://www.meetup.com/cities/us/wi/gresham/;Gresham;gresham
+http://www.meetup.com/cities/us/wi/hager_city/;Hager City;hager_city
+http://www.meetup.com/cities/us/wi/hales_corners/;Hales Corners;hales_corners
+http://www.meetup.com/cities/us/wi/hammond/;Hammond;hammond
+http://www.meetup.com/cities/us/wi/hancock/;Hancock;hancock
+http://www.meetup.com/cities/us/wi/hannibal/;Hannibal;hannibal
+http://www.meetup.com/cities/us/wi/hanover/;Hanover;hanover
+http://www.meetup.com/cities/us/wi/harshaw/;Harshaw;harshaw
+http://www.meetup.com/cities/us/wi/hartford/;Hartford;hartford
+http://www.meetup.com/cities/us/wi/hartland/;Hartland;hartland
+http://www.meetup.com/cities/us/wi/hatley/;Hatley;hatley
+http://www.meetup.com/cities/us/wi/haugen/;Haugen;haugen
+http://www.meetup.com/cities/us/wi/hawkins/;Hawkins;hawkins
+http://www.meetup.com/cities/us/wi/hawthorne/;Hawthorne;hawthorne
+http://www.meetup.com/cities/us/wi/hayward/;Hayward;hayward
+http://www.meetup.com/cities/us/wi/hazel_green/;Hazel Green;hazel_green
+http://www.meetup.com/cities/us/wi/hazelhurst/;Hazelhurst;hazelhurst
+http://www.meetup.com/cities/us/wi/heafford_junction/;Heafford Junction;heafford_junction
+http://www.meetup.com/cities/us/wi/helenville/;Helenville;helenville
+http://www.meetup.com/cities/us/wi/herbster/;Herbster;herbster
+http://www.meetup.com/cities/us/wi/hertel/;Hertel;hertel
+http://www.meetup.com/cities/us/wi/hewitt/;Hewitt;hewitt
+http://www.meetup.com/cities/us/wi/high_bridge/;High Bridge;high_bridge
+http://www.meetup.com/cities/us/wi/highland/;Highland;highland
+http://www.meetup.com/cities/us/wi/hilbert/;Hilbert;hilbert
+http://www.meetup.com/cities/us/wi/hillpoint/;Hillpoint;hillpoint
+http://www.meetup.com/cities/us/wi/hillsboro/;Hillsboro;hillsboro
+http://www.meetup.com/cities/us/wi/hingham/;Hingham;hingham
+http://www.meetup.com/cities/us/wi/hixton/;Hixton;hixton
+http://www.meetup.com/cities/us/wi/holcombe/;Holcombe;holcombe
+http://www.meetup.com/cities/us/wi/hollandale/;Hollandale;hollandale
+http://www.meetup.com/cities/us/wi/holmen/;Holmen;holmen
+http://www.meetup.com/cities/us/wi/honey_creek/;Honey Creek;honey_creek
+http://www.meetup.com/cities/us/wi/horicon/;Horicon;horicon
+http://www.meetup.com/cities/us/wi/hortonville/;Hortonville;hortonville
+http://www.meetup.com/cities/us/wi/houlton/;Houlton;houlton
+http://www.meetup.com/cities/us/wi/hubertus/;Hubertus;hubertus
+http://www.meetup.com/cities/us/wi/hudson/;Hudson;hudson
+http://www.meetup.com/cities/us/wi/humbird/;Humbird;humbird
+http://www.meetup.com/cities/us/wi/hurley/;Hurley;hurley
+http://www.meetup.com/cities/us/wi/hustisford/;Hustisford;hustisford
+http://www.meetup.com/cities/us/wi/hustler/;Hustler;hustler
+http://www.meetup.com/cities/us/wi/independence/;Independence;independence
+http://www.meetup.com/cities/us/wi/iola/;Iola;iola
+http://www.meetup.com/cities/us/wi/irma/;Irma;irma
+http://www.meetup.com/cities/us/wi/iron_belt/;Iron Belt;iron_belt
+http://www.meetup.com/cities/us/wi/iron_ridge/;Iron Ridge;iron_ridge
+http://www.meetup.com/cities/us/wi/iron_river/;Iron River;iron_river
+http://www.meetup.com/cities/us/wi/ixonia/;Ixonia;ixonia
+http://www.meetup.com/cities/us/wi/jackson/;Jackson;jackson
+http://www.meetup.com/cities/us/wi/janesville/;Janesville;janesville
+http://www.meetup.com/cities/us/wi/jefferson/;Jefferson;jefferson
+http://www.meetup.com/cities/us/wi/jim_falls/;Jim Falls;jim_falls
+http://www.meetup.com/cities/us/wi/johnson_creek/;Johnson Creek;johnson_creek
+http://www.meetup.com/cities/us/wi/juda/;Juda;juda
+http://www.meetup.com/cities/us/wi/jump_river/;Jump River;jump_river
+http://www.meetup.com/cities/us/wi/junction_city/;Junction City;junction_city
+http://www.meetup.com/cities/us/wi/juneau/;Juneau;juneau
+http://www.meetup.com/cities/us/wi/kansasville/;Kansasville;kansasville
+http://www.meetup.com/cities/us/wi/kaukauna/;Kaukauna;kaukauna
+http://www.meetup.com/cities/us/wi/kellnersville/;Kellnersville;kellnersville
+http://www.meetup.com/cities/us/wi/kendall/;Kendall;kendall
+http://www.meetup.com/cities/us/wi/kennan/;Kennan;kennan
+http://www.meetup.com/cities/us/wi/kenosha/;Kenosha;kenosha
+http://www.meetup.com/cities/us/wi/keshena/;Keshena;keshena
+http://www.meetup.com/cities/us/wi/kewaskum/;Kewaskum;kewaskum
+http://www.meetup.com/cities/us/wi/kewaunee/;Kewaunee;kewaunee
+http://www.meetup.com/cities/us/wi/kiel/;Kiel;kiel
+http://www.meetup.com/cities/us/wi/kieler/;Kieler;kieler
+http://www.meetup.com/cities/us/wi/kimberly/;Kimberly;kimberly
+http://www.meetup.com/cities/us/wi/king/;King;king
+http://www.meetup.com/cities/us/wi/kingston/;Kingston;kingston
+http://www.meetup.com/cities/us/wi/knapp/;Knapp;knapp
+http://www.meetup.com/cities/us/wi/kohler/;Kohler;kohler
+http://www.meetup.com/cities/us/wi/krakow/;Krakow;krakow
+http://www.meetup.com/cities/us/wi/lac_du_flambeau/;Lac du Flambeau;lac_du_flambeau
+http://www.meetup.com/cities/us/wi/la_crosse/;La Crosse;la_crosse
+http://www.meetup.com/cities/us/wi/ladysmith/;Ladysmith;ladysmith
+http://www.meetup.com/cities/us/wi/la_farge/;La Farge;la_farge
+http://www.meetup.com/cities/us/wi/lake_delton/;Lake Delton;lake_delton
+http://www.meetup.com/cities/us/wi/lake_geneva/;Lake Geneva;lake_geneva
+http://www.meetup.com/cities/us/wi/lake_mills/;Lake Mills;lake_mills
+http://www.meetup.com/cities/us/wi/lake_nebagamon/;Lake Nebagamon;lake_nebagamon
+http://www.meetup.com/cities/us/wi/lake_tomahawk/;Lake Tomahawk;lake_tomahawk
+http://www.meetup.com/cities/us/wi/lakewood/;Lakewood;lakewood
+http://www.meetup.com/cities/us/wi/lancaster/;Lancaster;lancaster
+http://www.meetup.com/cities/us/wi/land_o_lakes/;Land O Lakes;land_o_lakes
+http://www.meetup.com/cities/us/wi/lannon/;Lannon;lannon
+http://www.meetup.com/cities/us/wi/laona/;Laona;laona
+http://www.meetup.com/cities/us/wi/la_pointe/;La Pointe;la_pointe
+http://www.meetup.com/cities/us/wi/larsen/;Larsen;larsen
+http://www.meetup.com/cities/us/wi/la_valle/;La Valle;la_valle
+http://www.meetup.com/cities/us/wi/lebanon/;Lebanon;lebanon
+http://www.meetup.com/cities/us/wi/lena/;Lena;lena
+http://www.meetup.com/cities/us/wi/leopolis/;Leopolis;leopolis
+http://www.meetup.com/cities/us/wi/lime_ridge/;Lime Ridge;lime_ridge
+http://www.meetup.com/cities/us/wi/linden/;Linden;linden
+http://www.meetup.com/cities/us/wi/little_chute/;Little Chute;little_chute
+http://www.meetup.com/cities/us/wi/little_suamico/;Little Suamico;little_suamico
+http://www.meetup.com/cities/us/wi/livingston/;Livingston;livingston
+http://www.meetup.com/cities/us/wi/lodi/;Lodi;lodi
+http://www.meetup.com/cities/us/wi/loganville/;Loganville;loganville
+http://www.meetup.com/cities/us/wi/lomira/;Lomira;lomira
+http://www.meetup.com/cities/us/wi/lone_rock/;Lone Rock;lone_rock
+http://www.meetup.com/cities/us/wi/long_lake/;Long Lake;long_lake
+http://www.meetup.com/cities/us/wi/lowell/;Lowell;lowell
+http://www.meetup.com/cities/us/wi/loyal/;Loyal;loyal
+http://www.meetup.com/cities/us/wi/lublin/;Lublin;lublin
+http://www.meetup.com/cities/us/wi/luck/;Luck;luck
+http://www.meetup.com/cities/us/wi/luxemburg/;Luxemburg;luxemburg
+http://www.meetup.com/cities/us/wi/lyndon_station/;Lyndon Station;lyndon_station
+http://www.meetup.com/cities/us/wi/lynxville/;Lynxville;lynxville
+http://www.meetup.com/cities/us/wi/lyons/;Lyons;lyons
+http://www.meetup.com/cities/us/wi/madison/;Madison;madison
+http://www.meetup.com/cities/us/wi/maiden_rock/;Maiden Rock;maiden_rock
+http://www.meetup.com/cities/us/wi/malone/;Malone;malone
+http://www.meetup.com/cities/us/wi/manawa/;Manawa;manawa
+http://www.meetup.com/cities/us/wi/manitowish_waters/;Manitowish Waters;manitowish_waters
+http://www.meetup.com/cities/us/wi/manitowoc/;Manitowoc;manitowoc
+http://www.meetup.com/cities/us/wi/maple/;Maple;maple
+http://www.meetup.com/cities/us/wi/maplewood/;Maplewood;maplewood
+http://www.meetup.com/cities/us/wi/marathon/;Marathon;marathon
+http://www.meetup.com/cities/us/wi/marengo/;Marengo;marengo
+http://www.meetup.com/cities/us/wi/maribel/;Maribel;maribel
+http://www.meetup.com/cities/us/wi/marinette/;Marinette;marinette
+http://www.meetup.com/cities/us/wi/marion/;Marion;marion
+http://www.meetup.com/cities/us/wi/markesan/;Markesan;markesan
+http://www.meetup.com/cities/us/wi/marquette/;Marquette;marquette
+http://www.meetup.com/cities/us/wi/marshall/;Marshall;marshall
+http://www.meetup.com/cities/us/wi/marshfield/;Marshfield;marshfield
+http://www.meetup.com/cities/us/wi/mason/;Mason;mason
+http://www.meetup.com/cities/us/wi/mather/;Mather;mather
+http://www.meetup.com/cities/us/wi/mattoon/;Mattoon;mattoon
+http://www.meetup.com/cities/us/wi/mauston/;Mauston;mauston
+http://www.meetup.com/cities/us/wi/mayville/;Mayville;mayville
+http://www.meetup.com/cities/us/wi/mazomanie/;Mazomanie;mazomanie
+http://www.meetup.com/cities/us/wi/mc_farland/;Mc Farland;mc_farland
+http://www.meetup.com/cities/us/wi/mc_naughton/;Mc Naughton;mc_naughton
+http://www.meetup.com/cities/us/wi/medford/;Medford;medford
+http://www.meetup.com/cities/us/wi/mellen/;Mellen;mellen
+http://www.meetup.com/cities/us/wi/melrose/;Melrose;melrose
+http://www.meetup.com/cities/us/wi/menasha/;Menasha;menasha
+http://www.meetup.com/cities/us/wi/menomonee_falls/;Menomonee Falls;menomonee_falls
+http://www.meetup.com/cities/us/wi/menomonie/;Menomonie;menomonie
+http://www.meetup.com/cities/us/wi/mequon/;Mequon;mequon
+http://www.meetup.com/cities/us/wi/mercer/;Mercer;mercer
+http://www.meetup.com/cities/us/wi/merrill/;Merrill;merrill
+http://www.meetup.com/cities/us/wi/merrillan/;Merrillan;merrillan
+http://www.meetup.com/cities/us/wi/merrimac/;Merrimac;merrimac
+http://www.meetup.com/cities/us/wi/merton/;Merton;merton
+http://www.meetup.com/cities/us/wi/middleton/;Middleton;middleton
+http://www.meetup.com/cities/us/wi/mikana/;Mikana;mikana
+http://www.meetup.com/cities/us/wi/milladore/;Milladore;milladore
+http://www.meetup.com/cities/us/wi/millston/;Millston;millston
+http://www.meetup.com/cities/us/wi/milltown/;Milltown;milltown
+http://www.meetup.com/cities/us/wi/milton/;Milton;milton
+http://www.meetup.com/cities/us/wi/milwaukee/;Milwaukee;milwaukee
+http://www.meetup.com/cities/us/wi/mindoro/;Mindoro;mindoro
+http://www.meetup.com/cities/us/wi/mineral_point/;Mineral Point;mineral_point
+http://www.meetup.com/cities/us/wi/minocqua/;Minocqua;minocqua
+http://www.meetup.com/cities/us/wi/minong/;Minong;minong
+http://www.meetup.com/cities/us/wi/mishicot/;Mishicot;mishicot
+http://www.meetup.com/cities/us/wi/mondovi/;Mondovi;mondovi
+http://www.meetup.com/cities/us/wi/monroe/;Monroe;monroe
+http://www.meetup.com/cities/us/wi/montello/;Montello;montello
+http://www.meetup.com/cities/us/wi/montfort/;Montfort;montfort
+http://www.meetup.com/cities/us/wi/monticello/;Monticello;monticello
+http://www.meetup.com/cities/us/wi/montreal/;Montreal;montreal
+http://www.meetup.com/cities/us/wi/morrisonville/;Morrisonville;morrisonville
+http://www.meetup.com/cities/us/wi/mosinee/;Mosinee;mosinee
+http://www.meetup.com/cities/us/wi/mountain/;Mountain;mountain
+http://www.meetup.com/cities/us/wi/mount_calvary/;Mount Calvary;mount_calvary
+http://www.meetup.com/cities/us/wi/mount_hope/;Mount Hope;mount_hope
+http://www.meetup.com/cities/us/wi/mount_horeb/;Mount Horeb;mount_horeb
+http://www.meetup.com/cities/us/wi/mount_sterling/;Mount Sterling;mount_sterling
+http://www.meetup.com/cities/us/wi/mukwonago/;Mukwonago;mukwonago
+http://www.meetup.com/cities/us/wi/muscoda/;Muscoda;muscoda
+http://www.meetup.com/cities/us/wi/muskego/;Muskego;muskego
+http://www.meetup.com/cities/us/wi/nashotah/;Nashotah;nashotah
+http://www.meetup.com/cities/us/wi/necedah/;Necedah;necedah
+http://www.meetup.com/cities/us/wi/neenah/;Neenah;neenah
+http://www.meetup.com/cities/us/wi/neillsville/;Neillsville;neillsville
+http://www.meetup.com/cities/us/wi/nekoosa/;Nekoosa;nekoosa
+http://www.meetup.com/cities/us/wi/nelson/;Nelson;nelson
+http://www.meetup.com/cities/us/wi/nelsonville/;Nelsonville;nelsonville
+http://www.meetup.com/cities/us/wi/neopit/;Neopit;neopit
+http://www.meetup.com/cities/us/wi/neosho/;Neosho;neosho
+http://www.meetup.com/cities/us/wi/neshkoro/;Neshkoro;neshkoro
+http://www.meetup.com/cities/us/wi/new_auburn/;New Auburn;new_auburn
+http://www.meetup.com/cities/us/wi/new_berlin/;New Berlin;new_berlin
+http://www.meetup.com/cities/us/wi/newburg/;Newburg;newburg
+http://www.meetup.com/cities/us/wi/new_franken/;New Franken;new_franken
+http://www.meetup.com/cities/us/wi/new_glarus/;New Glarus;new_glarus
+http://www.meetup.com/cities/us/wi/new_holstein/;New Holstein;new_holstein
+http://www.meetup.com/cities/us/wi/new_lisbon/;New Lisbon;new_lisbon
+http://www.meetup.com/cities/us/wi/new_london/;New London;new_london
+http://www.meetup.com/cities/us/wi/new_munster/;New Munster;new_munster
+http://www.meetup.com/cities/us/wi/new_richmond/;New Richmond;new_richmond
+http://www.meetup.com/cities/us/wi/newton/;Newton;newton
+http://www.meetup.com/cities/us/wi/niagara/;Niagara;niagara
+http://www.meetup.com/cities/us/wi/nichols/;Nichols;nichols
+http://www.meetup.com/cities/us/wi/north_freedom/;North Freedom;north_freedom
+http://www.meetup.com/cities/us/wi/north_lake/;North Lake;north_lake
+http://www.meetup.com/cities/us/wi/north_prairie/;North Prairie;north_prairie
+http://www.meetup.com/cities/us/wi/norwalk/;Norwalk;norwalk
+http://www.meetup.com/cities/us/wi/oak_creek/;Oak Creek;oak_creek
+http://www.meetup.com/cities/us/wi/oakdale/;Oakdale;oakdale
+http://www.meetup.com/cities/us/wi/oakfield/;Oakfield;oakfield
+http://www.meetup.com/cities/us/wi/oconomowoc/;Oconomowoc;oconomowoc
+http://www.meetup.com/cities/us/wi/oconto/;Oconto;oconto
+http://www.meetup.com/cities/us/wi/oconto_falls/;Oconto Falls;oconto_falls
+http://www.meetup.com/cities/us/wi/odanah/;Odanah;odanah
+http://www.meetup.com/cities/us/wi/ogdensburg/;Ogdensburg;ogdensburg
+http://www.meetup.com/cities/us/wi/ogema/;Ogema;ogema
+http://www.meetup.com/cities/us/wi/ojibwa/;Ojibwa;ojibwa
+http://www.meetup.com/cities/us/wi/okauchee/;Okauchee;okauchee
+http://www.meetup.com/cities/us/wi/omro/;Omro;omro
+http://www.meetup.com/cities/us/wi/onalaska/;Onalaska;onalaska
+http://www.meetup.com/cities/us/wi/oneida/;Oneida;oneida
+http://www.meetup.com/cities/us/wi/ontario/;Ontario;ontario
+http://www.meetup.com/cities/us/wi/oostburg/;Oostburg;oostburg
+http://www.meetup.com/cities/us/wi/oregon/;Oregon;oregon
+http://www.meetup.com/cities/us/wi/orfordville/;Orfordville;orfordville
+http://www.meetup.com/cities/us/wi/osceola/;Osceola;osceola
+http://www.meetup.com/cities/us/wi/oshkosh/;Oshkosh;oshkosh
+http://www.meetup.com/cities/us/wi/osseo/;Osseo;osseo
+http://www.meetup.com/cities/us/wi/owen/;Owen;owen
+http://www.meetup.com/cities/us/wi/oxford/;Oxford;oxford
+http://www.meetup.com/cities/us/wi/packwaukee/;Packwaukee;packwaukee
+http://www.meetup.com/cities/us/wi/palmyra/;Palmyra;palmyra
+http://www.meetup.com/cities/us/wi/pardeeville/;Pardeeville;pardeeville
+http://www.meetup.com/cities/us/wi/park_falls/;Park Falls;park_falls
+http://www.meetup.com/cities/us/wi/patch_grove/;Patch Grove;patch_grove
+http://www.meetup.com/cities/us/wi/pearson/;Pearson;pearson
+http://www.meetup.com/cities/us/wi/pelican_lake/;Pelican Lake;pelican_lake
+http://www.meetup.com/cities/us/wi/pell_lake/;Pell Lake;pell_lake
+http://www.meetup.com/cities/us/wi/pembine/;Pembine;pembine
+http://www.meetup.com/cities/us/wi/pepin/;Pepin;pepin
+http://www.meetup.com/cities/us/wi/peshtigo/;Peshtigo;peshtigo
+http://www.meetup.com/cities/us/wi/pewaukee/;Pewaukee;pewaukee
+http://www.meetup.com/cities/us/wi/phelps/;Phelps;phelps
+http://www.meetup.com/cities/us/wi/phillips/;Phillips;phillips
+http://www.meetup.com/cities/us/wi/phlox/;Phlox;phlox
+http://www.meetup.com/cities/us/wi/pickerel/;Pickerel;pickerel
+http://www.meetup.com/cities/us/wi/pickett/;Pickett;pickett
+http://www.meetup.com/cities/us/wi/pigeon_falls/;Pigeon Falls;pigeon_falls
+http://www.meetup.com/cities/us/wi/pine_river/;Pine River;pine_river
+http://www.meetup.com/cities/us/wi/pittsville/;Pittsville;pittsville
+http://www.meetup.com/cities/us/wi/plain/;Plain;plain
+http://www.meetup.com/cities/us/wi/plainfield/;Plainfield;plainfield
+http://www.meetup.com/cities/us/wi/platteville/;Platteville;platteville
+http://www.meetup.com/cities/us/wi/pleasant_prairie/;Pleasant Prairie;pleasant_prairie
+http://www.meetup.com/cities/us/wi/plover/;Plover;plover
+http://www.meetup.com/cities/us/wi/plum_city/;Plum City;plum_city
+http://www.meetup.com/cities/us/wi/plymouth/;Plymouth;plymouth
+http://www.meetup.com/cities/us/wi/poplar/;Poplar;poplar
+http://www.meetup.com/cities/us/wi/portage/;Portage;portage
+http://www.meetup.com/cities/us/wi/port_edwards/;Port Edwards;port_edwards
+http://www.meetup.com/cities/us/wi/porterfield/;Porterfield;porterfield
+http://www.meetup.com/cities/us/wi/port_washington/;Port Washington;port_washington
+http://www.meetup.com/cities/us/wi/port_wing/;Port Wing;port_wing
+http://www.meetup.com/cities/us/wi/potosi/;Potosi;potosi
+http://www.meetup.com/cities/us/wi/potter/;Potter;potter
+http://www.meetup.com/cities/us/wi/pound/;Pound;pound
+http://www.meetup.com/cities/us/wi/powers_lake/;Powers Lake;powers_lake
+http://www.meetup.com/cities/us/wi/poynette/;Poynette;poynette
+http://www.meetup.com/cities/us/wi/poy_sippi/;Poy Sippi;poy_sippi
+http://www.meetup.com/cities/us/wi/prairie_du_chien/;Prairie du Chien;prairie_du_chien
+http://www.meetup.com/cities/us/wi/prairie_du_sac/;Prairie du Sac;prairie_du_sac
+http://www.meetup.com/cities/us/wi/prairie_farm/;Prairie Farm;prairie_farm
+http://www.meetup.com/cities/us/wi/prentice/;Prentice;prentice
+http://www.meetup.com/cities/us/wi/prescott/;Prescott;prescott
+http://www.meetup.com/cities/us/wi/presque_isle/;Presque Isle;presque_isle
+http://www.meetup.com/cities/us/wi/princeton/;Princeton;princeton
+http://www.meetup.com/cities/us/wi/pulaski/;Pulaski;pulaski
+http://www.meetup.com/cities/us/wi/racine/;Racine;racine
+http://www.meetup.com/cities/us/wi/radisson/;Radisson;radisson
+http://www.meetup.com/cities/us/wi/randolph/;Randolph;randolph
+http://www.meetup.com/cities/us/wi/random_lake/;Random Lake;random_lake
+http://www.meetup.com/cities/us/wi/readfield/;Readfield;readfield
+http://www.meetup.com/cities/us/wi/readstown/;Readstown;readstown
+http://www.meetup.com/cities/us/wi/redgranite/;Redgranite;redgranite
+http://www.meetup.com/cities/us/wi/reedsburg/;Reedsburg;reedsburg
+http://www.meetup.com/cities/us/wi/reedsville/;Reedsville;reedsville
+http://www.meetup.com/cities/us/wi/reeseville/;Reeseville;reeseville
+http://www.meetup.com/cities/us/wi/rewey/;Rewey;rewey
+http://www.meetup.com/cities/us/wi/rhinelander/;Rhinelander;rhinelander
+http://www.meetup.com/cities/us/wi/rib_lake/;Rib Lake;rib_lake
+http://www.meetup.com/cities/us/wi/rice_lake/;Rice Lake;rice_lake
+http://www.meetup.com/cities/us/wi/richfield/;Richfield;richfield
+http://www.meetup.com/cities/us/wi/richland_center/;Richland Center;richland_center
+http://www.meetup.com/cities/us/wi/ridgeland/;Ridgeland;ridgeland
+http://www.meetup.com/cities/us/wi/ridgeway/;Ridgeway;ridgeway
+http://www.meetup.com/cities/us/wi/ringle/;Ringle;ringle
+http://www.meetup.com/cities/us/wi/rio/;Rio;rio
+http://www.meetup.com/cities/us/wi/ripon/;Ripon;ripon
+http://www.meetup.com/cities/us/wi/river_falls/;River Falls;river_falls
+http://www.meetup.com/cities/us/wi/roberts/;Roberts;roberts
+http://www.meetup.com/cities/us/wi/rochester/;Rochester;rochester
+http://www.meetup.com/cities/us/wi/rock_falls/;Rock Falls;rock_falls
+http://www.meetup.com/cities/us/wi/rockland/;Rockland;rockland
+http://www.meetup.com/cities/us/wi/rock_springs/;Rock Springs;rock_springs
+http://www.meetup.com/cities/us/wi/rosendale/;Rosendale;rosendale
+http://www.meetup.com/cities/us/wi/rosholt/;Rosholt;rosholt
+http://www.meetup.com/cities/us/wi/rothschild/;Rothschild;rothschild
+http://www.meetup.com/cities/us/wi/rubicon/;Rubicon;rubicon
+http://www.meetup.com/cities/us/wi/rudolph/;Rudolph;rudolph
+http://www.meetup.com/cities/us/wi/saint_cloud/;Saint Cloud;saint_cloud
+http://www.meetup.com/cities/us/wi/saint_croix_falls/;Saint Croix Falls;saint_croix_falls
+http://www.meetup.com/cities/us/wi/saint_germain/;Saint Germain;saint_germain
+http://www.meetup.com/cities/us/wi/saint_nazianz/;Saint Nazianz;saint_nazianz
+http://www.meetup.com/cities/us/wi/salem/;Salem;salem
+http://www.meetup.com/cities/us/wi/sand_creek/;Sand Creek;sand_creek
+http://www.meetup.com/cities/us/wi/sarona/;Sarona;sarona
+http://www.meetup.com/cities/us/wi/sauk_city/;Sauk City;sauk_city
+http://www.meetup.com/cities/us/wi/saukville/;Saukville;saukville
+http://www.meetup.com/cities/us/wi/saxeville/;Saxeville;saxeville
+http://www.meetup.com/cities/us/wi/saxon/;Saxon;saxon
+http://www.meetup.com/cities/us/wi/sayner/;Sayner;sayner
+http://www.meetup.com/cities/us/wi/scandinavia/;Scandinavia;scandinavia
+http://www.meetup.com/cities/us/wi/schofield/;Schofield;schofield
+http://www.meetup.com/cities/us/wi/seneca/;Seneca;seneca
+http://www.meetup.com/cities/us/wi/sextonville/;Sextonville;sextonville
+http://www.meetup.com/cities/us/wi/seymour/;Seymour;seymour
+http://www.meetup.com/cities/us/wi/sharon/;Sharon;sharon
+http://www.meetup.com/cities/us/wi/shawano/;Shawano;shawano
+http://www.meetup.com/cities/us/wi/sheboygan/;Sheboygan;sheboygan
+http://www.meetup.com/cities/us/wi/sheboygan_falls/;Sheboygan Falls;sheboygan_falls
+http://www.meetup.com/cities/us/wi/sheldon/;Sheldon;sheldon
+http://www.meetup.com/cities/us/wi/shell_lake/;Shell Lake;shell_lake
+http://www.meetup.com/cities/us/wi/sherwood/;Sherwood;sherwood
+http://www.meetup.com/cities/us/wi/shiocton/;Shiocton;shiocton
+http://www.meetup.com/cities/us/wi/shullsburg/;Shullsburg;shullsburg
+http://www.meetup.com/cities/us/wi/silver_lake/;Silver Lake;silver_lake
+http://www.meetup.com/cities/us/wi/sinsinawa/;Sinsinawa;sinsinawa
+http://www.meetup.com/cities/us/wi/siren/;Siren;siren
+http://www.meetup.com/cities/us/wi/sister_bay/;Sister Bay;sister_bay
+http://www.meetup.com/cities/us/wi/slinger/;Slinger;slinger
+http://www.meetup.com/cities/us/wi/sobieski/;Sobieski;sobieski
+http://www.meetup.com/cities/us/wi/soldiers_grove/;Soldiers Grove;soldiers_grove
+http://www.meetup.com/cities/us/wi/solon_springs/;Solon Springs;solon_springs
+http://www.meetup.com/cities/us/wi/somers/;Somers;somers
+http://www.meetup.com/cities/us/wi/somerset/;Somerset;somerset
+http://www.meetup.com/cities/us/wi/south_milwaukee/;South Milwaukee;south_milwaukee
+http://www.meetup.com/cities/us/wi/south_range/;South Range;south_range
+http://www.meetup.com/cities/us/wi/south_wayne/;South Wayne;south_wayne
+http://www.meetup.com/cities/us/wi/sparta/;Sparta;sparta
+http://www.meetup.com/cities/us/wi/spencer/;Spencer;spencer
+http://www.meetup.com/cities/us/wi/spooner/;Spooner;spooner
+http://www.meetup.com/cities/us/wi/springbrook/;Springbrook;springbrook
+http://www.meetup.com/cities/us/wi/springfield/;Springfield;springfield
+http://www.meetup.com/cities/us/wi/spring_green/;Spring Green;spring_green
+http://www.meetup.com/cities/us/wi/spring_valley/;Spring Valley;spring_valley
+http://www.meetup.com/cities/us/wi/stanley/;Stanley;stanley
+http://www.meetup.com/cities/us/wi/star_lake/;Star Lake;star_lake
+http://www.meetup.com/cities/us/wi/star_prairie/;Star Prairie;star_prairie
+http://www.meetup.com/cities/us/wi/stetsonville/;Stetsonville;stetsonville
+http://www.meetup.com/cities/us/wi/steuben/;Steuben;steuben
+http://www.meetup.com/cities/us/wi/stevens_point/;Stevens Point;stevens_point
+http://www.meetup.com/cities/us/wi/stitzer/;Stitzer;stitzer
+http://www.meetup.com/cities/us/wi/stockbridge/;Stockbridge;stockbridge
+http://www.meetup.com/cities/us/wi/stockholm/;Stockholm;stockholm
+http://www.meetup.com/cities/us/wi/stoddard/;Stoddard;stoddard
+http://www.meetup.com/cities/us/wi/stone_lake/;Stone Lake;stone_lake
+http://www.meetup.com/cities/us/wi/stoughton/;Stoughton;stoughton
+http://www.meetup.com/cities/us/wi/stratford/;Stratford;stratford
+http://www.meetup.com/cities/us/wi/strum/;Strum;strum
+http://www.meetup.com/cities/us/wi/sturgeon_bay/;Sturgeon Bay;sturgeon_bay
+http://www.meetup.com/cities/us/wi/sturtevant/;Sturtevant;sturtevant
+http://www.meetup.com/cities/us/wi/suamico/;Suamico;suamico
+http://www.meetup.com/cities/us/wi/sullivan/;Sullivan;sullivan
+http://www.meetup.com/cities/us/wi/summit_lake/;Summit Lake;summit_lake
+http://www.meetup.com/cities/us/wi/sun_prairie/;Sun Prairie;sun_prairie
+http://www.meetup.com/cities/us/wi/superior/;Superior;superior
+http://www.meetup.com/cities/us/wi/suring/;Suring;suring
+http://www.meetup.com/cities/us/wi/sussex/;Sussex;sussex
+http://www.meetup.com/cities/us/wi/taylor/;Taylor;taylor
+http://www.meetup.com/cities/us/wi/theresa/;Theresa;theresa
+http://www.meetup.com/cities/us/wi/thiensville/;Thiensville;thiensville
+http://www.meetup.com/cities/us/wi/thorp/;Thorp;thorp
+http://www.meetup.com/cities/us/wi/three_lakes/;Three Lakes;three_lakes
+http://www.meetup.com/cities/us/wi/tigerton/;Tigerton;tigerton
+http://www.meetup.com/cities/us/wi/tilleda/;Tilleda;tilleda
+http://www.meetup.com/cities/us/wi/tisch_mills/;Tisch Mills;tisch_mills
+http://www.meetup.com/cities/us/wi/tomah/;Tomah;tomah
+http://www.meetup.com/cities/us/wi/tomahawk/;Tomahawk;tomahawk
+http://www.meetup.com/cities/us/wi/tony/;Tony;tony
+http://www.meetup.com/cities/us/wi/townsend/;Townsend;townsend
+http://www.meetup.com/cities/us/wi/trego/;Trego;trego
+http://www.meetup.com/cities/us/wi/trempealeau/;Trempealeau;trempealeau
+http://www.meetup.com/cities/us/wi/trevor/;Trevor;trevor
+http://www.meetup.com/cities/us/wi/tripoli/;Tripoli;tripoli
+http://www.meetup.com/cities/us/wi/tunnel_city/;Tunnel City;tunnel_city
+http://www.meetup.com/cities/us/wi/turtle_lake/;Turtle Lake;turtle_lake
+http://www.meetup.com/cities/us/wi/twin_lakes/;Twin Lakes;twin_lakes
+http://www.meetup.com/cities/us/wi/two_rivers/;Two Rivers;two_rivers
+http://www.meetup.com/cities/us/wi/union_center/;Union Center;union_center
+http://www.meetup.com/cities/us/wi/union_grove/;Union Grove;union_grove
+http://www.meetup.com/cities/us/wi/unity/;Unity;unity
+http://www.meetup.com/cities/us/wi/upson/;Upson;upson
+http://www.meetup.com/cities/us/wi/valders/;Valders;valders
+http://www.meetup.com/cities/us/wi/van_dyne/;Van Dyne;van_dyne
+http://www.meetup.com/cities/us/wi/verona/;Verona;verona
+http://www.meetup.com/cities/us/wi/vesper/;Vesper;vesper
+http://www.meetup.com/cities/us/wi/viola/;Viola;viola
+http://www.meetup.com/cities/us/wi/viroqua/;Viroqua;viroqua
+http://www.meetup.com/cities/us/wi/wabeno/;Wabeno;wabeno
+http://www.meetup.com/cities/us/wi/waldo/;Waldo;waldo
+http://www.meetup.com/cities/us/wi/wales/;Wales;wales
+http://www.meetup.com/cities/us/wi/walworth/;Walworth;walworth
+http://www.meetup.com/cities/us/wi/warrens/;Warrens;warrens
+http://www.meetup.com/cities/us/wi/wascott/;Wascott;wascott
+http://www.meetup.com/cities/us/wi/washburn/;Washburn;washburn
+http://www.meetup.com/cities/us/wi/washington_island/;Washington Island;washington_island
+http://www.meetup.com/cities/us/wi/waterford/;Waterford;waterford
+http://www.meetup.com/cities/us/wi/waterloo/;Waterloo;waterloo
+http://www.meetup.com/cities/us/wi/watertown/;Watertown;watertown
+http://www.meetup.com/cities/us/wi/waukau/;Waukau;waukau
+http://www.meetup.com/cities/us/wi/waukesha/;Waukesha;waukesha
+http://www.meetup.com/cities/us/wi/waunakee/;Waunakee;waunakee
+http://www.meetup.com/cities/us/wi/waupaca/;Waupaca;waupaca
+http://www.meetup.com/cities/us/wi/waupun/;Waupun;waupun
+http://www.meetup.com/cities/us/wi/wausau/;Wausau;wausau
+http://www.meetup.com/cities/us/wi/wausaukee/;Wausaukee;wausaukee
+http://www.meetup.com/cities/us/wi/wautoma/;Wautoma;wautoma
+http://www.meetup.com/cities/us/wi/wauzeka/;Wauzeka;wauzeka
+http://www.meetup.com/cities/us/wi/webster/;Webster;webster
+http://www.meetup.com/cities/us/wi/west_bend/;West Bend;west_bend
+http://www.meetup.com/cities/us/wi/westboro/;Westboro;westboro
+http://www.meetup.com/cities/us/wi/westby/;Westby;westby
+http://www.meetup.com/cities/us/wi/westfield/;Westfield;westfield
+http://www.meetup.com/cities/us/wi/west_salem/;West Salem;west_salem
+http://www.meetup.com/cities/us/wi/weyauwega/;Weyauwega;weyauwega
+http://www.meetup.com/cities/us/wi/weyerhaeuser/;Weyerhaeuser;weyerhaeuser
+http://www.meetup.com/cities/us/wi/wheeler/;Wheeler;wheeler
+http://www.meetup.com/cities/us/wi/whitehall/;Whitehall;whitehall
+http://www.meetup.com/cities/us/wi/white_lake/;White Lake;white_lake
+http://www.meetup.com/cities/us/wi/whitelaw/;Whitelaw;whitelaw
+http://www.meetup.com/cities/us/wi/whitewater/;Whitewater;whitewater
+http://www.meetup.com/cities/us/wi/wild_rose/;Wild Rose;wild_rose
+http://www.meetup.com/cities/us/wi/willard/;Willard;willard
+http://www.meetup.com/cities/us/wi/williams_bay/;Williams Bay;williams_bay
+http://www.meetup.com/cities/us/wi/wilmot/;Wilmot;wilmot
+http://www.meetup.com/cities/us/wi/wilson/;Wilson;wilson
+http://www.meetup.com/cities/us/wi/wilton/;Wilton;wilton
+http://www.meetup.com/cities/us/wi/windsor/;Windsor;windsor
+http://www.meetup.com/cities/us/wi/winnebago/;Winnebago;winnebago
+http://www.meetup.com/cities/us/wi/winneconne/;Winneconne;winneconne
+http://www.meetup.com/cities/us/wi/winter/;Winter;winter
+http://www.meetup.com/cities/us/wi/wisconsin_dells/;Wisconsin Dells;wisconsin_dells
+http://www.meetup.com/cities/us/wi/wisconsin_rapids/;Wisconsin Rapids;wisconsin_rapids
+http://www.meetup.com/cities/us/wi/withee/;Withee;withee
+http://www.meetup.com/cities/us/wi/wittenberg/;Wittenberg;wittenberg
+http://www.meetup.com/cities/us/wi/wonewoc/;Wonewoc;wonewoc
+http://www.meetup.com/cities/us/wi/woodford/;Woodford;woodford
+http://www.meetup.com/cities/us/wi/woodland/;Woodland;woodland
+http://www.meetup.com/cities/us/wi/woodman/;Woodman;woodman
+http://www.meetup.com/cities/us/wi/woodruff/;Woodruff;woodruff
+http://www.meetup.com/cities/us/wi/woodville/;Woodville;woodville
+http://www.meetup.com/cities/us/wi/woodworth/;Woodworth;woodworth
+http://www.meetup.com/cities/us/wi/wrightstown/;Wrightstown;wrightstown
+http://www.meetup.com/cities/us/wi/wyocena/;Wyocena;wyocena
+http://www.meetup.com/cities/us/wi/zachow/;Zachow;zachow
+http://www.meetup.com/cities/us/wi/zenda/;Zenda;zenda

@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/gb/t6/aberchirder/;Aberchirder;aberchirder
+http://www.meetup.com/cities/gb/t6/aboyne/;Aboyne;aboyne
+http://www.meetup.com/cities/gb/t6/alford/;Alford;alford
+http://www.meetup.com/cities/gb/t6/arbuthnott/;Arbuthnott;arbuthnott
+http://www.meetup.com/cities/gb/t6/ardallie/;Ardallie;ardallie
+http://www.meetup.com/cities/gb/t6/ballater/;Ballater;ballater
+http://www.meetup.com/cities/gb/t6/balmedie/;Balmedie;balmedie
+http://www.meetup.com/cities/gb/t6/banchory/;Banchory;banchory
+http://www.meetup.com/cities/gb/t6/banff/;Banff;banff
+http://www.meetup.com/cities/gb/t6/birkhall/;Birkhall;birkhall
+http://www.meetup.com/cities/gb/t6/boddam/;Boddam;boddam
+http://www.meetup.com/cities/gb/t6/cairnbulg/;Cairnbulg;cairnbulg
+http://www.meetup.com/cities/gb/t6/carnousie/;Carnousie;carnousie
+http://www.meetup.com/cities/gb/t6/crathes/;Crathes;crathes
+http://www.meetup.com/cities/gb/t6/crathie/;Crathie;crathie
+http://www.meetup.com/cities/gb/t6/echt/;Echt;echt
+http://www.meetup.com/cities/gb/t6/ellon/;Ellon;ellon
+http://www.meetup.com/cities/gb/t6/fyvie/;Fyvie;fyvie
+http://www.meetup.com/cities/gb/t6/glenbervie/;Glenbervie;glenbervie
+http://www.meetup.com/cities/gb/t6/glenbuchat/;Glenbuchat;glenbuchat
+http://www.meetup.com/cities/gb/t6/gourdon/;Gourdon;gourdon
+http://www.meetup.com/cities/gb/t6/harlaw_road_industrial_estate/;Harlaw Road Industrial Estate;harlaw_road_industrial_estate
+http://www.meetup.com/cities/gb/t6/huntly/;Huntly;huntly
+http://www.meetup.com/cities/gb/t6/insch/;Insch;insch
+http://www.meetup.com/cities/gb/t6/inverallochy/;Inverallochy;inverallochy
+http://www.meetup.com/cities/gb/t6/inverurie/;Inverurie;inverurie
+http://www.meetup.com/cities/gb/t6/johnshaven/;Johnshaven;johnshaven
+http://www.meetup.com/cities/gb/t6/kemnay/;Kemnay;kemnay
+http://www.meetup.com/cities/gb/t6/laurencekirk/;Laurencekirk;laurencekirk
+http://www.meetup.com/cities/gb/t6/longhaven/;Longhaven;longhaven
+http://www.meetup.com/cities/gb/t6/longhill/;Longhill;longhill
+http://www.meetup.com/cities/gb/t6/macduff/;Macduff;macduff
+http://www.meetup.com/cities/gb/t6/new_deer/;New Deer;new_deer
+http://www.meetup.com/cities/gb/t6/new_pitsligo/;New Pitsligo;new_pitsligo
+http://www.meetup.com/cities/gb/t6/newmachar/;Newmachar;newmachar
+http://www.meetup.com/cities/gb/t6/newtonhill/;Newtonhill;newtonhill
+http://www.meetup.com/cities/gb/t6/nigg/;Nigg;nigg
+http://www.meetup.com/cities/gb/t6/park/;Park;park
+http://www.meetup.com/cities/gb/t6/pennan/;Pennan;pennan
+http://www.meetup.com/cities/gb/t6/peterhead/;Peterhead;peterhead
+http://www.meetup.com/cities/gb/t6/portlethen/;Portlethen;portlethen
+http://www.meetup.com/cities/gb/t6/rosehearty/;Rosehearty;rosehearty
+http://www.meetup.com/cities/gb/t6/st_katherines/;St Katherines;st_katherines
+http://www.meetup.com/cities/gb/t6/stonehaven/;Stonehaven;stonehaven
+http://www.meetup.com/cities/gb/t6/turriff/;Turriff;turriff
+http://www.meetup.com/cities/gb/t6/westhill/;Westhill;westhill
+http://www.meetup.com/cities/gb/t6/westhill_industrial_estate/;Westhill Industrial Estate;westhill_industrial_estate
+http://www.meetup.com/cities/gb/t6/whitehills/;Whitehills;whitehills
+http://www.meetup.com/cities/gb/t6/ythanbank/;Ythanbank;ythanbank
+http://www.meetup.com/cities/gb/t6/ythanwells/;Ythanwells;ythanwells
+http://www.meetup.com/cities/gb/t6/aberchirder/;Aberchirder;aberchirder
+http://www.meetup.com/cities/gb/t6/aboyne/;Aboyne;aboyne
+http://www.meetup.com/cities/gb/t6/alford/;Alford;alford
+http://www.meetup.com/cities/gb/t6/arbuthnott/;Arbuthnott;arbuthnott
+http://www.meetup.com/cities/gb/t6/ardallie/;Ardallie;ardallie
+http://www.meetup.com/cities/gb/t6/ballater/;Ballater;ballater
+http://www.meetup.com/cities/gb/t6/balmedie/;Balmedie;balmedie
+http://www.meetup.com/cities/gb/t6/banchory/;Banchory;banchory
+http://www.meetup.com/cities/gb/t6/banff/;Banff;banff
+http://www.meetup.com/cities/gb/t6/birkhall/;Birkhall;birkhall
+http://www.meetup.com/cities/gb/t6/boddam/;Boddam;boddam
+http://www.meetup.com/cities/gb/t6/cairnbulg/;Cairnbulg;cairnbulg
+http://www.meetup.com/cities/gb/t6/carnousie/;Carnousie;carnousie
+http://www.meetup.com/cities/gb/t6/crathes/;Crathes;crathes
+http://www.meetup.com/cities/gb/t6/crathie/;Crathie;crathie
+http://www.meetup.com/cities/gb/t6/echt/;Echt;echt
+http://www.meetup.com/cities/gb/t6/ellon/;Ellon;ellon
+http://www.meetup.com/cities/gb/t6/fyvie/;Fyvie;fyvie
+http://www.meetup.com/cities/gb/t6/glenbervie/;Glenbervie;glenbervie
+http://www.meetup.com/cities/gb/t6/glenbuchat/;Glenbuchat;glenbuchat
+http://www.meetup.com/cities/gb/t6/gourdon/;Gourdon;gourdon
+http://www.meetup.com/cities/gb/t6/harlaw_road_industrial_estate/;Harlaw Road Industrial Estate;harlaw_road_industrial_estate
+http://www.meetup.com/cities/gb/t6/huntly/;Huntly;huntly
+http://www.meetup.com/cities/gb/t6/insch/;Insch;insch
+http://www.meetup.com/cities/gb/t6/inverallochy/;Inverallochy;inverallochy
+http://www.meetup.com/cities/gb/t6/inverurie/;Inverurie;inverurie
+http://www.meetup.com/cities/gb/t6/johnshaven/;Johnshaven;johnshaven
+http://www.meetup.com/cities/gb/t6/kemnay/;Kemnay;kemnay
+http://www.meetup.com/cities/gb/t6/laurencekirk/;Laurencekirk;laurencekirk
+http://www.meetup.com/cities/gb/t6/longhaven/;Longhaven;longhaven
+http://www.meetup.com/cities/gb/t6/longhill/;Longhill;longhill
+http://www.meetup.com/cities/gb/t6/macduff/;Macduff;macduff
+http://www.meetup.com/cities/gb/t6/new_deer/;New Deer;new_deer
+http://www.meetup.com/cities/gb/t6/new_pitsligo/;New Pitsligo;new_pitsligo
+http://www.meetup.com/cities/gb/t6/newmachar/;Newmachar;newmachar
+http://www.meetup.com/cities/gb/t6/newtonhill/;Newtonhill;newtonhill
+http://www.meetup.com/cities/gb/t6/nigg/;Nigg;nigg
+http://www.meetup.com/cities/gb/t6/park/;Park;park
+http://www.meetup.com/cities/gb/t6/pennan/;Pennan;pennan
+http://www.meetup.com/cities/gb/t6/peterhead/;Peterhead;peterhead
+http://www.meetup.com/cities/gb/t6/portlethen/;Portlethen;portlethen
+http://www.meetup.com/cities/gb/t6/rosehearty/;Rosehearty;rosehearty
+http://www.meetup.com/cities/gb/t6/st_katherines/;St Katherines;st_katherines
+http://www.meetup.com/cities/gb/t6/stonehaven/;Stonehaven;stonehaven
+http://www.meetup.com/cities/gb/t6/turriff/;Turriff;turriff
+http://www.meetup.com/cities/gb/t6/westhill/;Westhill;westhill
+http://www.meetup.com/cities/gb/t6/westhill_industrial_estate/;Westhill Industrial Estate;westhill_industrial_estate
+http://www.meetup.com/cities/gb/t6/whitehills/;Whitehills;whitehills
+http://www.meetup.com/cities/gb/t6/ythanbank/;Ythanbank;ythanbank
+http://www.meetup.com/cities/gb/t6/ythanwells/;Ythanwells;ythanwells

@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/us/md/annapolis/;Annapolis;annapolis
+http://www.meetup.com/cities/us/md/baltimore/;Baltimore;baltimore
+http://www.meetup.com/cities/us/md/bel_air/;Bel Air;bel_air
+http://www.meetup.com/cities/us/md/bethesda/;Bethesda;bethesda
+http://www.meetup.com/cities/us/md/bowie/;Bowie;bowie
+http://www.meetup.com/cities/us/md/catonsville/;Catonsville;catonsville
+http://www.meetup.com/cities/us/md/chevy_chase/;Chevy Chase;chevy_chase
+http://www.meetup.com/cities/us/md/clinton/;Clinton;clinton
+http://www.meetup.com/cities/us/md/cockeysville/;Cockeysville;cockeysville
+http://www.meetup.com/cities/us/md/college_park/;College Park;college_park
+http://www.meetup.com/cities/us/md/columbia/;Columbia;columbia
+http://www.meetup.com/cities/us/md/crofton/;Crofton;crofton
+http://www.meetup.com/cities/us/md/cumberland/;Cumberland;cumberland
+http://www.meetup.com/cities/us/md/dundalk/;Dundalk;dundalk
+http://www.meetup.com/cities/us/md/elkridge/;Elkridge;elkridge
+http://www.meetup.com/cities/us/md/ellicott_city/;Ellicott City;ellicott_city
+http://www.meetup.com/cities/us/md/fort_washington/;Fort Washington;fort_washington
+http://www.meetup.com/cities/us/md/frederick/;Frederick;frederick
+http://www.meetup.com/cities/us/md/gaithersburg/;Gaithersburg;gaithersburg
+http://www.meetup.com/cities/us/md/germantown/;Germantown;germantown
+http://www.meetup.com/cities/us/md/glen_burnie/;Glen Burnie;glen_burnie
+http://www.meetup.com/cities/us/md/greenbelt/;Greenbelt;greenbelt
+http://www.meetup.com/cities/us/md/gwynn_oak/;Gwynn Oak;gwynn_oak
+http://www.meetup.com/cities/us/md/hagerstown/;Hagerstown;hagerstown
+http://www.meetup.com/cities/us/md/halethorpe/;Halethorpe;halethorpe
+http://www.meetup.com/cities/us/md/hyattsville/;Hyattsville;hyattsville
+http://www.meetup.com/cities/us/md/kensington/;Kensington;kensington
+http://www.meetup.com/cities/us/md/laurel/;Laurel;laurel
+http://www.meetup.com/cities/us/md/lutherville_timonium/;Lutherville Timonium;lutherville_timonium
+http://www.meetup.com/cities/us/md/montgomery_village/;Montgomery Village;montgomery_village
+http://www.meetup.com/cities/us/md/nottingham/;Nottingham;nottingham
+http://www.meetup.com/cities/us/md/odenton/;Odenton;odenton
+http://www.meetup.com/cities/us/md/olney/;Olney;olney
+http://www.meetup.com/cities/us/md/owings_mills/;Owings Mills;owings_mills
+http://www.meetup.com/cities/us/md/parkville/;Parkville;parkville
+http://www.meetup.com/cities/us/md/pasadena/;Pasadena;pasadena
+http://www.meetup.com/cities/us/md/pikesville/;Pikesville;pikesville
+http://www.meetup.com/cities/us/md/potomac/;Potomac;potomac
+http://www.meetup.com/cities/us/md/reisterstown/;Reisterstown;reisterstown
+http://www.meetup.com/cities/us/md/rockville/;Rockville;rockville
+http://www.meetup.com/cities/us/md/salisbury/;Salisbury;salisbury
+http://www.meetup.com/cities/us/md/severn/;Severn;severn
+http://www.meetup.com/cities/us/md/silver_spring/;Silver Spring;silver_spring
+http://www.meetup.com/cities/us/md/sykesville/;Sykesville;sykesville
+http://www.meetup.com/cities/us/md/takoma_park/;Takoma Park;takoma_park
+http://www.meetup.com/cities/us/md/temple_hills/;Temple Hills;temple_hills
+http://www.meetup.com/cities/us/md/towson/;Towson;towson
+http://www.meetup.com/cities/us/md/upper_marlboro/;Upper Marlboro;upper_marlboro
+http://www.meetup.com/cities/us/md/waldorf/;Waldorf;waldorf
+http://www.meetup.com/cities/us/md/westminster/;Westminster;westminster

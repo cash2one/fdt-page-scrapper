@@ -1,0 +1,100 @@
+http://www.meetup.com/cities/us/de/bear/;Bear;bear
+http://www.meetup.com/cities/us/de/bethany_beach/;Bethany Beach;bethany_beach
+http://www.meetup.com/cities/us/de/bethel/;Bethel;bethel
+http://www.meetup.com/cities/us/de/bridgeville/;Bridgeville;bridgeville
+http://www.meetup.com/cities/us/de/camden_wyoming/;Camden Wyoming;camden_wyoming
+http://www.meetup.com/cities/us/de/cheswold/;Cheswold;cheswold
+http://www.meetup.com/cities/us/de/claymont/;Claymont;claymont
+http://www.meetup.com/cities/us/de/clayton/;Clayton;clayton
+http://www.meetup.com/cities/us/de/dagsboro/;Dagsboro;dagsboro
+http://www.meetup.com/cities/us/de/delaware_city/;Delaware City;delaware_city
+http://www.meetup.com/cities/us/de/delmar/;Delmar;delmar
+http://www.meetup.com/cities/us/de/dover/;Dover;dover
+http://www.meetup.com/cities/us/de/dover_afb/;Dover AFB;dover_afb
+http://www.meetup.com/cities/us/de/ellendale/;Ellendale;ellendale
+http://www.meetup.com/cities/us/de/felton/;Felton;felton
+http://www.meetup.com/cities/us/de/fenwick_island/;Fenwick Island;fenwick_island
+http://www.meetup.com/cities/us/de/frankford/;Frankford;frankford
+http://www.meetup.com/cities/us/de/frederica/;Frederica;frederica
+http://www.meetup.com/cities/us/de/georgetown/;Georgetown;georgetown
+http://www.meetup.com/cities/us/de/greenwood/;Greenwood;greenwood
+http://www.meetup.com/cities/us/de/harbeson/;Harbeson;harbeson
+http://www.meetup.com/cities/us/de/harrington/;Harrington;harrington
+http://www.meetup.com/cities/us/de/hartly/;Hartly;hartly
+http://www.meetup.com/cities/us/de/hockessin/;Hockessin;hockessin
+http://www.meetup.com/cities/us/de/houston/;Houston;houston
+http://www.meetup.com/cities/us/de/laurel/;Laurel;laurel
+http://www.meetup.com/cities/us/de/lewes/;Lewes;lewes
+http://www.meetup.com/cities/us/de/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/de/magnolia/;Magnolia;magnolia
+http://www.meetup.com/cities/us/de/marydel/;Marydel;marydel
+http://www.meetup.com/cities/us/de/middletown/;Middletown;middletown
+http://www.meetup.com/cities/us/de/milford/;Milford;milford
+http://www.meetup.com/cities/us/de/millsboro/;Millsboro;millsboro
+http://www.meetup.com/cities/us/de/millville/;Millville;millville
+http://www.meetup.com/cities/us/de/milton/;Milton;milton
+http://www.meetup.com/cities/us/de/new_castle/;New Castle;new_castle
+http://www.meetup.com/cities/us/de/newark/;Newark;newark
+http://www.meetup.com/cities/us/de/ocean_view/;Ocean View;ocean_view
+http://www.meetup.com/cities/us/de/port_penn/;Port Penn;port_penn
+http://www.meetup.com/cities/us/de/rehoboth_beach/;Rehoboth Beach;rehoboth_beach
+http://www.meetup.com/cities/us/de/rockland/;Rockland;rockland
+http://www.meetup.com/cities/us/de/saint_georges/;Saint Georges;saint_georges
+http://www.meetup.com/cities/us/de/seaford/;Seaford;seaford
+http://www.meetup.com/cities/us/de/selbyville/;Selbyville;selbyville
+http://www.meetup.com/cities/us/de/smyrna/;Smyrna;smyrna
+http://www.meetup.com/cities/us/de/townsend/;Townsend;townsend
+http://www.meetup.com/cities/us/de/viola/;Viola;viola
+http://www.meetup.com/cities/us/de/wilmington/;Wilmington;wilmington
+http://www.meetup.com/cities/us/de/woodside/;Woodside;woodside
+http://www.meetup.com/cities/us/de/yorklyn/;Yorklyn;yorklyn
+http://www.meetup.com/cities/us/de/bear/;Bear;bear
+http://www.meetup.com/cities/us/de/bethany_beach/;Bethany Beach;bethany_beach
+http://www.meetup.com/cities/us/de/bethel/;Bethel;bethel
+http://www.meetup.com/cities/us/de/bridgeville/;Bridgeville;bridgeville
+http://www.meetup.com/cities/us/de/camden_wyoming/;Camden Wyoming;camden_wyoming
+http://www.meetup.com/cities/us/de/cheswold/;Cheswold;cheswold
+http://www.meetup.com/cities/us/de/claymont/;Claymont;claymont
+http://www.meetup.com/cities/us/de/clayton/;Clayton;clayton
+http://www.meetup.com/cities/us/de/dagsboro/;Dagsboro;dagsboro
+http://www.meetup.com/cities/us/de/delaware_city/;Delaware City;delaware_city
+http://www.meetup.com/cities/us/de/delmar/;Delmar;delmar
+http://www.meetup.com/cities/us/de/dover/;Dover;dover
+http://www.meetup.com/cities/us/de/dover_afb/;Dover AFB;dover_afb
+http://www.meetup.com/cities/us/de/ellendale/;Ellendale;ellendale
+http://www.meetup.com/cities/us/de/felton/;Felton;felton
+http://www.meetup.com/cities/us/de/fenwick_island/;Fenwick Island;fenwick_island
+http://www.meetup.com/cities/us/de/frankford/;Frankford;frankford
+http://www.meetup.com/cities/us/de/frederica/;Frederica;frederica
+http://www.meetup.com/cities/us/de/georgetown/;Georgetown;georgetown
+http://www.meetup.com/cities/us/de/greenwood/;Greenwood;greenwood
+http://www.meetup.com/cities/us/de/harbeson/;Harbeson;harbeson
+http://www.meetup.com/cities/us/de/harrington/;Harrington;harrington
+http://www.meetup.com/cities/us/de/hartly/;Hartly;hartly
+http://www.meetup.com/cities/us/de/hockessin/;Hockessin;hockessin
+http://www.meetup.com/cities/us/de/houston/;Houston;houston
+http://www.meetup.com/cities/us/de/laurel/;Laurel;laurel
+http://www.meetup.com/cities/us/de/lewes/;Lewes;lewes
+http://www.meetup.com/cities/us/de/lincoln/;Lincoln;lincoln
+http://www.meetup.com/cities/us/de/magnolia/;Magnolia;magnolia
+http://www.meetup.com/cities/us/de/marydel/;Marydel;marydel
+http://www.meetup.com/cities/us/de/middletown/;Middletown;middletown
+http://www.meetup.com/cities/us/de/milford/;Milford;milford
+http://www.meetup.com/cities/us/de/millsboro/;Millsboro;millsboro
+http://www.meetup.com/cities/us/de/millville/;Millville;millville
+http://www.meetup.com/cities/us/de/milton/;Milton;milton
+http://www.meetup.com/cities/us/de/new_castle/;New Castle;new_castle
+http://www.meetup.com/cities/us/de/newark/;Newark;newark
+http://www.meetup.com/cities/us/de/ocean_view/;Ocean View;ocean_view
+http://www.meetup.com/cities/us/de/port_penn/;Port Penn;port_penn
+http://www.meetup.com/cities/us/de/rehoboth_beach/;Rehoboth Beach;rehoboth_beach
+http://www.meetup.com/cities/us/de/rockland/;Rockland;rockland
+http://www.meetup.com/cities/us/de/saint_georges/;Saint Georges;saint_georges
+http://www.meetup.com/cities/us/de/seaford/;Seaford;seaford
+http://www.meetup.com/cities/us/de/selbyville/;Selbyville;selbyville
+http://www.meetup.com/cities/us/de/smyrna/;Smyrna;smyrna
+http://www.meetup.com/cities/us/de/townsend/;Townsend;townsend
+http://www.meetup.com/cities/us/de/viola/;Viola;viola
+http://www.meetup.com/cities/us/de/wilmington/;Wilmington;wilmington
+http://www.meetup.com/cities/us/de/woodside/;Woodside;woodside
+http://www.meetup.com/cities/us/de/yorklyn/;Yorklyn;yorklyn

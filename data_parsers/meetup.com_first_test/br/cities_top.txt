@@ -1,0 +1,50 @@
+http://www.meetup.com/cities/br/abadiania/;Abadiania;abadiania
+http://www.meetup.com/cities/br/americana/;Americana;americana
+http://www.meetup.com/cities/br/an%C3%A1polis/;Anápolis;an%C3%A1polis
+http://www.meetup.com/cities/br/bauru/;Bauru;bauru
+http://www.meetup.com/cities/br/belo_horizonte/;Belo Horizonte;belo_horizonte
+http://www.meetup.com/cities/br/bel%C3%A9m_de_s%C3%A3o_francisco/;Belém de São Francisco;bel%C3%A9m_de_s%C3%A3o_francisco
+http://www.meetup.com/cities/br/blumenau/;Blumenau;blumenau
+http://www.meetup.com/cities/br/bras%C3%ADlia/;Brasília;bras%C3%ADlia
+http://www.meetup.com/cities/br/campina_grande/;Campina Grande;campina_grande
+http://www.meetup.com/cities/br/campinas/;Campinas;campinas
+http://www.meetup.com/cities/br/campo_grande/;Campo Grande;campo_grande
+http://www.meetup.com/cities/br/cascavel/;Cascavel;cascavel
+http://www.meetup.com/cities/br/chapec%C3%B3/;Chapecó;chapec%C3%B3
+http://www.meetup.com/cities/br/crici%C3%BAma/;Criciúma;crici%C3%BAma
+http://www.meetup.com/cities/br/cuiab%C3%A1/;Cuiabá;cuiab%C3%A1
+http://www.meetup.com/cities/br/curitiba/;Curitiba;curitiba
+http://www.meetup.com/cities/br/florian%C3%B3polis/;Florianópolis;florian%C3%B3polis
+http://www.meetup.com/cities/br/fortaleza/;Fortaleza;fortaleza
+http://www.meetup.com/cities/br/goiana/;Goiana;goiana
+http://www.meetup.com/cities/br/goiania/;Goiania;goiania
+http://www.meetup.com/cities/br/ipatinga/;Ipatinga;ipatinga
+http://www.meetup.com/cities/br/itaja%C3%AD/;Itajaí;itaja%C3%AD
+http://www.meetup.com/cities/br/joinville/;Joinville;joinville
+http://www.meetup.com/cities/br/jo%C3%A3o_pessoa/;João Pessoa;jo%C3%A3o_pessoa
+http://www.meetup.com/cities/br/juiz_de_fora/;Juiz de Fora;juiz_de_fora
+http://www.meetup.com/cities/br/londrina/;Londrina;londrina
+http://www.meetup.com/cities/br/macei%C3%B3/;Maceió;macei%C3%B3
+http://www.meetup.com/cities/br/manaus/;Manaus;manaus
+http://www.meetup.com/cities/br/maring%C3%A1/;Maringá;maring%C3%A1
+http://www.meetup.com/cities/br/natal/;Natal;natal
+http://www.meetup.com/cities/br/niter%C3%B3i/;Niterói;niter%C3%B3i
+http://www.meetup.com/cities/br/paran%C3%A1/;Paraná;paran%C3%A1
+http://www.meetup.com/cities/br/porto_alegre/;Porto Alegre;porto_alegre
+http://www.meetup.com/cities/br/porto_velho/;Porto Velho;porto_velho
+http://www.meetup.com/cities/br/recife/;Recife;recife
+http://www.meetup.com/cities/br/ribeir%C3%A3o_preto/;Ribeirão Preto;ribeir%C3%A3o_preto
+http://www.meetup.com/cities/br/rio_de_janeiro/;Rio de Janeiro;rio_de_janeiro
+http://www.meetup.com/cities/br/salvador/;Salvador;salvador
+http://www.meetup.com/cities/br/santo_andr%C3%A9/;Santo André;santo_andr%C3%A9
+http://www.meetup.com/cities/br/santos/;Santos;santos
+http://www.meetup.com/cities/br/s%C3%A3o_bernardo_do_campo/;São Bernardo do Campo;s%C3%A3o_bernardo_do_campo
+http://www.meetup.com/cities/br/s%C3%A3o_jos%C3%A9/;São José;s%C3%A3o_jos%C3%A9
+http://www.meetup.com/cities/br/s%C3%A3o_jos%C3%A9_do_rio_preto/;São José do Rio Preto;s%C3%A3o_jos%C3%A9_do_rio_preto
+http://www.meetup.com/cities/br/s%C3%A3o_jos%C3%A9_dos_campos/;São José dos Campos;s%C3%A3o_jos%C3%A9_dos_campos
+http://www.meetup.com/cities/br/s%C3%A3o_paulo/;São Paulo;s%C3%A3o_paulo
+http://www.meetup.com/cities/br/tubar%C3%A3o/;Tubarão;tubar%C3%A3o
+http://www.meetup.com/cities/br/uberlandia/;Uberlandia;uberlandia
+http://www.meetup.com/cities/br/vila_velha/;Vila Velha;vila_velha
+http://www.meetup.com/cities/br/vit%C3%B3ria/;Vitória;vit%C3%B3ria
+http://www.meetup.com/cities/br/volta_redonda/;Volta Redonda;volta_redonda

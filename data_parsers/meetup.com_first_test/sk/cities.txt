@@ -1,0 +1,129 @@
+http://www.meetup.com/cities/sk/b%C3%A1novce/;Bánovce;b%C3%A1novce
+http://www.meetup.com/cities/sk/bansk%C3%A1_bystrica/;Banská Bystrica;bansk%C3%A1_bystrica
+http://www.meetup.com/cities/sk/bansk%C3%A1_shtiavnica/;Banská Shtiavnica;bansk%C3%A1_shtiavnica
+http://www.meetup.com/cities/sk/bardejov/;Bardejov;bardejov
+http://www.meetup.com/cities/sk/bojnice/;Bojnice;bojnice
+http://www.meetup.com/cities/sk/bratislava/;Bratislava;bratislava
+http://www.meetup.com/cities/sk/brezno/;Brezno;brezno
+http://www.meetup.com/cities/sk/brezov%C3%A1_pod_bradlom/;Brezová pod Bradlom;brezov%C3%A1_pod_bradlom
+http://www.meetup.com/cities/sk/bytcha/;Bytcha;bytcha
+http://www.meetup.com/cities/sk/chadca/;Chadca;chadca
+http://www.meetup.com/cities/sk/chierna_nad_tisou/;Chierna nad Tisou;chierna_nad_tisou
+http://www.meetup.com/cities/sk/detva/;Detva;detva
+http://www.meetup.com/cities/sk/dobshin%C3%A1/;Dobshiná;dobshin%C3%A1
+http://www.meetup.com/cities/sk/doln%C3%BD_kub%C3%ADn/;Dolný Kubín;doln%C3%BD_kub%C3%ADn
+http://www.meetup.com/cities/sk/dubnica/;Dubnica;dubnica
+http://www.meetup.com/cities/sk/dunajsk%C3%A1_streda/;Dunajská Streda;dunajsk%C3%A1_streda
+http://www.meetup.com/cities/sk/fil%27akovo/;Fil'akovo;fil%27akovo
+http://www.meetup.com/cities/sk/galanta/;Galanta;galanta
+http://www.meetup.com/cities/sk/gbely/;Gbely;gbely
+http://www.meetup.com/cities/sk/gelnica/;Gelnica;gelnica
+http://www.meetup.com/cities/sk/giraltovce/;Giraltovce;giraltovce
+http://www.meetup.com/cities/sk/handlov%C3%A1/;Handlová;handlov%C3%A1
+http://www.meetup.com/cities/sk/hlohovec/;Hlohovec;hlohovec
+http://www.meetup.com/cities/sk/hn%C3%BAsht%27a/;Hnúsht'a;hn%C3%BAsht%27a
+http://www.meetup.com/cities/sk/hol%C3%ADch/;Holích;hol%C3%ADch
+http://www.meetup.com/cities/sk/hrinov%C3%A1/;Hrinová;hrinov%C3%A1
+http://www.meetup.com/cities/sk/humenn%C3%A9/;Humenné;humenn%C3%A9
+http://www.meetup.com/cities/sk/hurbanovo/;Hurbanovo;hurbanovo
+http://www.meetup.com/cities/sk/ilava/;Ilava;ilava
+http://www.meetup.com/cities/sk/kaliningrad/;Kaliningrad;kaliningrad
+http://www.meetup.com/cities/sk/kezhmarok/;Kezhmarok;kezhmarok
+http://www.meetup.com/cities/sk/kol%C3%A1rovo/;Kolárovo;kol%C3%A1rovo
+http://www.meetup.com/cities/sk/kom%C3%A1rno/;Komárno;kom%C3%A1rno
+http://www.meetup.com/cities/sk/ko%C5%A1ice/;Košice;ko%C5%A1ice
+http://www.meetup.com/cities/sk/kr%C3%A1l%27ovsk%C3%BD_chlmec/;Král'ovský Chlmec;kr%C3%A1l%27ovsk%C3%BD_chlmec
+http://www.meetup.com/cities/sk/kremnica/;Kremnica;kremnica
+http://www.meetup.com/cities/sk/krompachy/;Krompachy;krompachy
+http://www.meetup.com/cities/sk/krupina/;Krupina;krupina
+http://www.meetup.com/cities/sk/kysuck%C3%A9_nov%C3%A9_mesto/;Kysucké Nové Mesto;kysuck%C3%A9_nov%C3%A9_mesto
+http://www.meetup.com/cities/sk/leopoldov/;Leopoldov;leopoldov
+http://www.meetup.com/cities/sk/levice/;Levice;levice
+http://www.meetup.com/cities/sk/levocha/;Levocha;levocha
+http://www.meetup.com/cities/sk/lipany/;Lipany;lipany
+http://www.meetup.com/cities/sk/liptovsk%C3%BD_hr%C3%A1dok/;Liptovský Hrádok;liptovsk%C3%BD_hr%C3%A1dok
+http://www.meetup.com/cities/sk/liptovsk%C3%BD_mikul%C3%A1sh/;Liptovský Mikulásh;liptovsk%C3%BD_mikul%C3%A1sh
+http://www.meetup.com/cities/sk/luchenec/;Luchenec;luchenec
+http://www.meetup.com/cities/sk/malacky/;Malacky;malacky
+http://www.meetup.com/cities/sk/martin/;Martin;martin
+http://www.meetup.com/cities/sk/medzev/;Medzev;medzev
+http://www.meetup.com/cities/sk/medzilaborce/;Medzilaborce;medzilaborce
+http://www.meetup.com/cities/sk/michalovce/;Michalovce;michalovce
+http://www.meetup.com/cities/sk/modra/;Modra;modra
+http://www.meetup.com/cities/sk/moldava_nad_bodvou/;Moldava nad Bodvou;moldava_nad_bodvou
+http://www.meetup.com/cities/sk/myjava/;Myjava;myjava
+http://www.meetup.com/cities/sk/n%C3%A1mestovo/;Námestovo;n%C3%A1mestovo
+http://www.meetup.com/cities/sk/nemshov%C3%A1/;Nemshová;nemshov%C3%A1
+http://www.meetup.com/cities/sk/nitra/;Nitra;nitra
+http://www.meetup.com/cities/sk/nov%C3%A1_dubnica/;Nová Dubnica;nov%C3%A1_dubnica
+http://www.meetup.com/cities/sk/nov%C3%A1ky/;Nováky;nov%C3%A1ky
+http://www.meetup.com/cities/sk/nov%C3%A9_mesto/;Nové Mesto;nov%C3%A9_mesto
+http://www.meetup.com/cities/sk/nov%C3%A9_z%C3%A1mky/;Nové Zámky;nov%C3%A9_z%C3%A1mky
+http://www.meetup.com/cities/sk/partiz%C3%A1nske/;Partizánske;partiz%C3%A1nske
+http://www.meetup.com/cities/sk/pezinok/;Pezinok;pezinok
+http://www.meetup.com/cities/sk/piesht%27any/;Piesht'any;piesht%27any
+http://www.meetup.com/cities/sk/podol%C3%ADnec/;Podolínec;podol%C3%ADnec
+http://www.meetup.com/cities/sk/polt%C3%A1r/;Poltár;polt%C3%A1r
+http://www.meetup.com/cities/sk/poprad/;Poprad;poprad
+http://www.meetup.com/cities/sk/povazhsk%C3%A1_bystrica/;Povazhská Bystrica;povazhsk%C3%A1_bystrica
+http://www.meetup.com/cities/sk/preshov/;Preshov;preshov
+http://www.meetup.com/cities/sk/prievidza/;Prievidza;prievidza
+http://www.meetup.com/cities/sk/p%C3%BAchov/;Púchov;p%C3%BAchov
+http://www.meetup.com/cities/sk/rajec/;Rajec;rajec
+http://www.meetup.com/cities/sk/rasnov/;Rasnov;rasnov
+http://www.meetup.com/cities/sk/rev%C3%BAca/;Revúca;rev%C3%BAca
+http://www.meetup.com/cities/sk/rimavsk%C3%A1_sobota/;Rimavská Sobota;rimavsk%C3%A1_sobota
+http://www.meetup.com/cities/sk/ruzhomberok/;Ruzhomberok;ruzhomberok
+http://www.meetup.com/cities/sk/sabinov/;Sabinov;sabinov
+http://www.meetup.com/cities/sk/sechovce/;Sechovce;sechovce
+http://www.meetup.com/cities/sk/senec/;Senec;senec
+http://www.meetup.com/cities/sk/senica/;Senica;senica
+http://www.meetup.com/cities/sk/sered%27/;Sered';sered%27
+http://www.meetup.com/cities/sk/shahy/;Shahy;shahy
+http://www.meetup.com/cities/sk/shal%27a/;Shal'a;shal%27a
+http://www.meetup.com/cities/sk/shamor%C3%ADn/;Shamorín;shamor%C3%ADn
+http://www.meetup.com/cities/sk/sht%C3%BArovo/;Shtúrovo;sht%C3%BArovo
+http://www.meetup.com/cities/sk/shurany/;Shurany;shurany
+http://www.meetup.com/cities/sk/skalica/;Skalica;skalica
+http://www.meetup.com/cities/sk/sl%C3%A1dkovichovo/;Sládkovichovo;sl%C3%A1dkovichovo
+http://www.meetup.com/cities/sk/sliach/;Sliach;sliach
+http://www.meetup.com/cities/sk/snina/;Snina;snina
+http://www.meetup.com/cities/sk/sobrance/;Sobrance;sobrance
+http://www.meetup.com/cities/sk/spishsk%C3%A1_bel%C3%A1/;Spishská Belá;spishsk%C3%A1_bel%C3%A1
+http://www.meetup.com/cities/sk/spishsk%C3%A1_nov%C3%A1_ves/;Spishská Nová Ves;spishsk%C3%A1_nov%C3%A1_ves
+http://www.meetup.com/cities/sk/spishsk%C3%A9_podhradie/;Spishské Podhradie;spishsk%C3%A9_podhradie
+http://www.meetup.com/cities/sk/star%C3%A1_l%27ubovna/;Stará L'ubovna;star%C3%A1_l%27ubovna
+http://www.meetup.com/cities/sk/star%C3%A1_tur%C3%A1/;Stará Turá;star%C3%A1_tur%C3%A1
+http://www.meetup.com/cities/sk/str%C3%A1zhske/;Strázhske;str%C3%A1zhske
+http://www.meetup.com/cities/sk/stropkov/;Stropkov;stropkov
+http://www.meetup.com/cities/sk/stupava/;Stupava;stupava
+http://www.meetup.com/cities/sk/sv%C3%A4t%C3%BD_jur/;Svätý Jur;sv%C3%A4t%C3%BD_jur
+http://www.meetup.com/cities/sk/svidnik/;Svidnik;svidnik
+http://www.meetup.com/cities/sk/svit/;Svit;svit
+http://www.meetup.com/cities/sk/svod%C3%ADn/;Svodín;svod%C3%ADn
+http://www.meetup.com/cities/sk/tisovec/;Tisovec;tisovec
+http://www.meetup.com/cities/sk/tlmache/;Tlmache;tlmache
+http://www.meetup.com/cities/sk/topol%27chany/;Topol'chany;topol%27chany
+http://www.meetup.com/cities/sk/tornal%27a/;Tornal'a;tornal%27a
+http://www.meetup.com/cities/sk/trebishov/;Trebishov;trebishov
+http://www.meetup.com/cities/sk/trenchianske_teplice/;Trenchianske Teplice;trenchianske_teplice
+http://www.meetup.com/cities/sk/trench%C3%ADn/;Trenchín;trench%C3%ADn
+http://www.meetup.com/cities/sk/trnava/;Trnava;trnava
+http://www.meetup.com/cities/sk/trsten%C3%A1/;Trstená;trsten%C3%A1
+http://www.meetup.com/cities/sk/turchiansk%C3%A9_teplice/;Turchianské Teplice;turchiansk%C3%A9_teplice
+http://www.meetup.com/cities/sk/turzovka/;Turzovka;turzovka
+http://www.meetup.com/cities/sk/tvrdosh%C3%ADn/;Tvrdoshín;tvrdosh%C3%ADn
+http://www.meetup.com/cities/sk/vel%27k%C3%A9_kapushany/;Vel'ké Kapushany;vel%27k%C3%A9_kapushany
+http://www.meetup.com/cities/sk/vel%27k%C3%BD_krt%C3%ADsh/;Vel'ký Krtísh;vel%27k%C3%BD_krt%C3%ADsh
+http://www.meetup.com/cities/sk/vel%27k%C3%BD_meder/;Vel'ký Meder;vel%27k%C3%BD_meder
+http://www.meetup.com/cities/sk/vel%27k%C3%BD_sharish/;Vel'ký Sharish;vel%27k%C3%BD_sharish
+http://www.meetup.com/cities/sk/vr%C3%A1ble/;Vráble;vr%C3%A1ble
+http://www.meetup.com/cities/sk/vranov/;Vranov;vranov
+http://www.meetup.com/cities/sk/vrbov%C3%A9/;Vrbové;vrbov%C3%A9
+http://www.meetup.com/cities/sk/vr%C3%BAtky/;Vrútky;vr%C3%BAtky
+http://www.meetup.com/cities/sk/zharnovica/;Zharnovica;zharnovica
+http://www.meetup.com/cities/sk/zheliezovce/;Zheliezovce;zheliezovce
+http://www.meetup.com/cities/sk/zhiar/;Zhiar;zhiar
+http://www.meetup.com/cities/sk/zhilina/;Zhilina;zhilina
+http://www.meetup.com/cities/sk/zlat%C3%A9_moravce/;Zlaté Moravce;zlat%C3%A9_moravce
+http://www.meetup.com/cities/sk/zvolen/;Zvolen;zvolen
