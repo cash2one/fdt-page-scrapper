@@ -36,13 +36,13 @@
 	*/
 	
 	#Параметр тайтла линка штата для списка штатов
-	define("STATE_LINK_TITLE", "USA Installment Loans [STATE_NAME]");
+	define("CATEGORY_LINK_TITLE", "USA Installment Loans [CATEGORY_NAME]");
 	
 	#Параметр тайтла линка города для списка городов на странице штата
-	define("CITY_LIST_LINK_TITLE", "USA Installment Loans [CITY_NAME] [STATE_ABBR]");
+	define("CITY_LIST_LINK_TITLE", "USA Installment Loans [CITY_NAME] [CATEGORY_ABBR]");
 	
 	#Параметр тайтла линка города для списка ближайщих городов на странице город
-	define("CITY_CLOSE_LIST_LINK_TITLE", "USA Installment Loans [CITY_NAME] [STATE_ABBR] [ZIP_CODE]");
+	define("CITY_CLOSE_LIST_LINK_TITLE", "USA Installment Loans [CITY_NAME] [CATEGORY_ABBR] [ZIP_CODE]");
 	
 	
 	#Main page title
@@ -58,27 +58,27 @@
 	
 	
 	#State page title
-	define("STATE_PAGE_TITLE", "Online Installment [STATE_NAME] Loans | USA money");
+	define("CATEGORY_PAGE_TITLE", "[CATEGORY_PAGE_TITLE]");
 	#State meta description
-	define("STATE_META_DESCRIPTION", "Need some Installment Loans within the state of [STATE_NAME]? Looking for Instant Approval Installment Loans Online? No credit check direct lenders in [CITY_COUNT] cities of [STATE_ABBR] USA. Get Your Cash TODAY!");
+	define("CATEGORY_META_DESCRIPTION", "[CATEGORY_META_DESCRIPTION]");
 	#State meta keywords
-	define("STATE_META_KEYWORDS", "[STATE_ABBR] Payday Installment Loans, bad credit ok, Long/Short term loans [STATE_NAME], easy personal credit, best direct lenders [STATE_ABBR], instant approval in [STATE_NAME] USA");
+	define("CATEGORY_META_KEYWORDS", "[CATEGORY_META_KEYWORDS]");
 	#Контент для тэга H1
-	define("STATE_PAGE_H1", "Installment Loans in [STATE_NAME] USA");
+	define("CATEGORY_PAGE_H1", "Installment Loans in [CATEGORY_NAME] USA");
 	#Контент для тэга H2
-	define("STATE_PAGE_H2", "Get Your Money TODAY!, [STATE_ABBR] USA");
+	define("CATEGORY_PAGE_H2", "Get Your Money TODAY!, [CATEGORY_ABBR] USA");
 
 	
 	#City page title
-	define("CITY_PAGE_TITLE", "Installment Loans [CITY_NAME] [COUNTRY] [STATE_ABBR] | USA Personal Loans");
+	define("CITY_PAGE_TITLE", "Installment Loans [CITY_NAME] [COUNTRY] [CATEGORY_ABBR] | USA Personal Loans");
 	#City meta description
-	define("CITY_META_DESCRIPTION", "Need some Guaranteed Installment Loans Cash within 50 miles of [CITY_NAME] [STATE_NAME] near you? Looking for no credit check payday direct lenders Online? Instant Approval Installment Loans in [STATE_ABBR]. Get Your Easy MONEY Today!");
+	define("CITY_META_DESCRIPTION", "Need some Guaranteed Installment Loans Cash within 50 miles of [CITY_NAME] [CATEGORY_NAME] near you? Looking for no credit check payday direct lenders Online? Instant Approval Installment Loans in [CATEGORY_ABBR]. Get Your Easy MONEY Today!");
 	#City meta keywords
-	define("CITY_META_KEYWORDS", "Installment loans, bad credit ok, Long/Short term loans, easy personal credit, best direct lenders, instant approval in [STATE_ABBR], [CITY_NAME], [CLOUDS]");
+	define("CITY_META_KEYWORDS", "Installment loans, bad credit ok, Long/Short term loans, easy personal credit, best direct lenders, instant approval in [CATEGORY_ABBR], [CITY_NAME], [CLOUDS]");
 	#Контент для тэга H1
-	define("CITY_PAGE_H1", "Online Installment Loans [CITY_NAME], [STATE_ABBR]");
+	define("CITY_PAGE_H1", "Online Installment Loans [CITY_NAME], [CATEGORY_ABBR]");
 	#Контент для тэга H2
-	define("CITY_PAGE_H2", "Get Your Cash NOW! in [CITY_NAME], [STATE_NAME] [ZIP_CODE] Guaranteed Payment");
+	define("CITY_PAGE_H2", "Get Your Cash NOW! in [CITY_NAME], [CATEGORY_NAME] [ZIP_CODE] Guaranteed Payment");
 	
 	#FAQ page title
 	define("FAQ_PAGE_TITLE", "Frequently Asked Questions about Installment Loans in the USA");

@@ -1,0 +1,5 @@
+2016-03-30 12:42:44,077-DEBUG(ScrapperTaskRunner.java:107)-Append to previous result: false
+2016-03-30 12:42:46,190-DEBUG(TaskFactory.java:191)-Starting load domain list...
+2016-03-30 12:42:52,097-DEBUG(TaskFactory.java:236)-Domain list LOADED.
+2016-03-30 12:43:38,122-DEBUG(TaskFactory.java:162)-Skipped task count:0
+2016-03-30 12:43:38,123-DEBUG(TaskFactory.java:173)-Task for execution count:3628

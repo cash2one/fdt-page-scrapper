@@ -1,0 +1,135 @@
+.navigation_top {
+    background: #222222 url("/images/bkgd_diag.png") repeat scroll 0 0;
+	border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 60px;
+    min-height: 60px;
+    width: 1270px;
+	margin: 0px 14px;
+    color: #fff;
+	font-size: 13px;
+}
+
+.navigation_bottom{
+    background: #222222 url("/images/bkgd_diag.png") repeat scroll 0 0;
+	border-bottom: 1px solid #fff;
+    height: 50px;
+    min-height: 50px;
+    color: #fff;
+	font-size: 13px;
+}
+
+.menu_style_1{
+	/*border-bottom: 10px solid #00A9E7;*/
+	box-shadow: 0px 10px 0px 0px #00A9E7;
+}
+
+a.menu_style_1:hover, a.menu_style_1:active, a.menu_style_1:focus{
+	box-shadow: 0px 10px 0px 0px #00A9E7;
+	border-top-left-radius: 8px;
+	/*border-bottom: 10px solid #00A9E7;
+	border-top-left-radius: 8px;*/
+}
+
+.menu_style_2{
+	/*border-bottom: 10px solid #C0D901;*/
+	box-shadow: 0px 10px 0px 0px #C0D901;
+}
+
+a.menu_style_2:hover, a.menu_style_2:active, a.menu_style_2:focus{
+	/*border-bottom: 10px solid #C0D901;
+	border-top-left-radius: 8px;*/
+	box-shadow: 0px 10px 0px 0px #c0d901;
+}
+
+.menu_style_3{
+	/*border-bottom: 10px solid #FCDE00;*/
+	box-shadow: 0px 10px 0px 0px #FCDE00;
+}
+
+a.menu_style_3:hover, a.menu_style_3:active, a.menu_style_3:focus{
+	/*border-bottom: 10px solid #FCDE00;*/
+	box-shadow: 0px 10px 0px 0px #FCDE00;
+}
+
+.menu_style_4{
+	/*border-bottom: 10px solid #FA931C;*/
+	box-shadow: 0px 10px 0px 0px #FA931C;
+}
+
+a.menu_style_4:hover, a.menu_style_4:active, a.menu_style_4:focus{
+	/*border-bottom: 10px solid #FA931C;*/
+	box-shadow: 0px 10px 0px 0px #FA931C;
+}
+
+.menu_style_5{
+	/*border-bottom: 10px solid #F91400;*/
+	box-shadow: 0px 10px 0px 0px #F91400;
+}
+
+a.menu_style_5:hover, a.menu_style_5:active, a.menu_style_5:focus{
+	/*border-bottom: 10px solid #F91400;*/
+	box-shadow: 0px 10px 0px 0px #F91400;
+}
+
+.menu_style_6{
+	/*border-bottom: 10px solid #F6C695;*/
+	box-shadow: 0px 10px 0px 0px #F6C695;
+}
+
+a.menu_style_6:hover, a.menu_style_6:active, a.menu_style_6:focus{
+	/*border-bottom: 10px solid #FC8004;*/
+	box-shadow: 0px 10px 0px 0px #F6C695;
+}
+
+ul.nav, ul.mobile_nav {
+    display: inline;
+    font-size: 1.16em;
+    font-weight: bold;
+    line-height: 1.16em;
+    list-style: outside none none;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus, ul.mobile_nav a:hover {
+    background: #000000 url("/images/bkgd_diag.png") repeat scroll 0 0;
+    color: #fff;
+}
+
+ul.nav a, ul.nav a:visited, ul.mobile_nav a {
+    border-right: 1px solid #fff;
+	/*border-left: 1px solid #fff;*/
+    display: block;
+    float: left;
+    height: 10px;
+    overflow: hidden;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-shadow: 0 0 5px #666666;
+	color: #fff;
+}
+
+ul.nav a.neworder, ul.nav a.neworder:visited, ul.mobile_nav a.basket {
+    background: #bbcf29 url("/images/bkgd_diag.png") repeat-x scroll 0 0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+ul.nav a.neworder:hover, ul.nav a.neworder:active, ul.nav a.neworder:focus, ul.mobile_nav a.basket:hover {
+    background: #aabe18 url("/images/bkgd_diag.png") repeat-x scroll 0 0;
+}
+
+ul.nav a.newrefill, ul.nav a.newrefill:visited, ul.mobile_nav a.search {
+    background: #f16321 url("/images/bkgd_diag.png") repeat scroll 0 0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+ul.nav a.newrefill:hover, ul.nav a.newrefill:active, ul.nav a.newrefill:focus, ul.mobile_nav a.search:hover {
+    background: #e84d15 url("/images/bkgd_diag.png") repeat scroll 0 0;
+}
+
+.text_16{
+    font-size: 1.333em;
+}
+
+a.city {
+    color: #f16321;
+}

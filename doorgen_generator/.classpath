@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="var" path="FDT_LIBS/commons-collections-3.2.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/commons-httpclient-3.1.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/commons-io-2.0.1.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/commons-lang-2.4.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/commons-logging-1.1.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/htmlcleaner-2.2.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/httpclient-4.1.2.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/httpcore-4.1.2.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/jsoup-1.7.1-sources.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/jsoup-1.7.1.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/jtidy-r938.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/log4j-1.2.15.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/velocity-1.7.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/snippet_extractor_lib"/>
-	<classpathentry kind="var" path="FDT_LIBS/json-rpc-1.0.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/proxy_factory"/>
-	<classpathentry kind="var" path="FDT_LIBS/mysql-connector-java-5.1.37.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/snippet_utils.jar"/>
-	<classpathentry kind="var" path="FDT_LIBS/snippet_extractor_lib.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/doorgen_poller"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>

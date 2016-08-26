@@ -1,0 +1,412 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;vertical-align:baseline;margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+table{border-collapse:collapse;border-spacing:0}
+img { border-width:0; }
+:focus { outline:none; } 
+
+/*@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}*/
+/* latin */
+@font-face {
+  font-family: 'Sigmar One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sigmar One'), local('SigmarOne'), url("/files/SigmarOne.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Droid';
+    src: url("/files/Droid.ttf")
+}
+@font-face {
+    font-family: 'Droid';
+    font-weight: bold;
+    src: url("/files/DroidBold.ttf")
+}
+
+@font-face {
+  font-family: 'Nobile';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nobile'), local('Nobile-Regular'), url("/files/Nobile400.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Nobile';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nobile Bold'), local('Nobile-Bold'), url("/files/Nobile700.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url("/files/RobotoSlab400.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url("/files/RobotoSlab700.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url("/files/Proxima Nova Regular.otf")
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v11/yg0glPPxXUISnKUejCX4qfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v11/pEobIV_lL25TKBpqVI_a2w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(https://fonts.gstatic.com/s/oswald/v11/dI-qzxlKVQA6TUC5RKSb3xJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(https://fonts.gstatic.com/s/oswald/v11/bH7276GfdCjMjApa_dkG6VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body { 
+	font-size:12px;
+	font-family: Droid,Arial,Helvetica,sans-serif;
+	color:#444; 
+	/*** ЦВЕТ фона под картинкой, если не загрузилась картинка ***/
+	background:#F3F3F3 url("/images/grass_.jpg") no-repeat fixed;
+	background-size: 100%;	
+	text-rendering: optimizeLegibility;
+}
+
+a { 
+	/*** ЦВЕТ ССЫЛОК ***/
+	color:#CE0000; 
+	text-decoration:none; 
+} 
+
+a:hover { 
+	text-decoration:underline; 
+}
+h1, h2, h3, h4, h5, h6 { 
+	margin:0 0 13px 0; 
+	padding:8px 0 0 0;
+	color:#333; 
+	line-height:1.1em;
+}
+h1, h2, h3 {
+	margin-left:-1px;
+}
+h1 {
+	font-size:30px;
+	line-height:1.0em;
+	/**Отступы между символами **/
+	letter-spacing:0px;
+	margin-bottom:20px;
+	margin-left:20px;
+}
+h2 {
+	font-size:25px;
+	line-height:1.1em;
+	/**Отступы между символами **/
+	letter-spacing:0px;
+}
+h3 {
+	font-size:16px;
+	line-height:1.1em;
+	/*** ЦВЕТ States We Serve ***/
+	color:#444;
+}
+h4 {
+	font-size:18px;
+}
+h5 {
+	font-size:16px;
+}
+h6 {
+	font-size:14px;
+	margin-bottom:5px;
+	line-height:1.25em;
+}
+p { 
+	margin:0 0 13px 0; 
+	line-height:1.33em; 
+}
+ol { 
+	padding:0 0 5px 10px;
+	margin:0 0 5px 10px;
+}
+ol li {
+	margin:0 0 5px 0; 
+	line-height:1.33em;
+}
+ul { 
+	padding:0 0 5px 0;
+	margin:0 0 5px 0;
+	list-style:none;
+}
+ul li { 
+	/*Отступ всего меню*/
+	margin:0px 0px 15px 0px;
+	line-height:0.93em;
+	/*padding:0px 0px 0px 0px;*/
+}
+
+div.hr {
+	height:1px;
+	overflow:hidden;
+	border-bottom:1px solid #d0d0d0;
+	padding-top:15px;
+	margin-bottom:20px;
+}
+
+.main-container {
+	width:1300px;
+	padding:0 3px;
+	margin:0 auto;
+	background:url(images/cnt_shdw.png) 0 0 repeat-y;
+}
+.main-box {
+	width:1300px;
+	background:#F3F3F3;
+}
+
+
+.header {
+	background:url(images/header_background.jpg) 100% 0% no-repeat;
+	height:86px;
+	position:relative;
+}
+.site-name {
+	padding: 12px 10px 3px 15px;
+	background:#F3F3F3;
+}
+			
+.site-name h1 {
+	font: bold 30px Droid,Arial,Helvetica,sans-serif;
+	/*** ЦВЕТ ГЛАВНОГО ЗАГОЛОВКА ***/
+	color: #000000;
+	letter-spacing: 0.1em;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #f8faf5;
+}
+
+.tagline {
+	padding: 0px 0px 0px 15px;
+}	
+
+
+.mainnav {
+	width:100%;
+	height:42px;
+	position:relative;
+	background:url("/images/mainnav_bg.gif") repeat-x;
+}
+.mainnav ul {
+	padding:0 0 0 15px;
+	margin:0;
+	list-style:none;
+}
+.mainnav ul li {
+	float:left;
+	height:42px;
+	position:relative;
+	padding:0;
+	margin:0;
+	background:none;
+}
+.mainnav ul li a {
+	display:block;
+	height:30px;
+	float:left;
+	font-size:16px;	
+	color:#FFFFFF;
+	padding:12px 15px 0 15px;
+	line-height:1;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+	
+.content-container {
+	background:url(images/count_background.gif) 0 1px repeat-x;
+	width:1270px;
+	padding:15px;
+	clear: both;
+}
+.content {
+	float:left;
+	width:1005px;
+}
+.sidebar {
+	float:right;
+	padding-bottom:50px;
+	width:250px;
+}
+	
+
+
+.sidebar-box {
+	padding:11px 14px;
+	border:1px solid #d0d0d0;
+	margin-bottom:12px;
+}
+.sidebar-box .box-title {
+	color: #444444;
+	font-size:16px;
+	padding:0;
+}
+
+.rightnav {
+	padding:10px 14px;
+	/*** ЦВЕТ фона под ссылками ***/
+	/*background:#fce083;*/
+	background:#F6CB56;
+}
+.rightnav ul {
+	padding:0;
+	margin:0;
+}
+.rightnav ul li {
+	padding:0;
+	margin:0 0 5px 0;
+	background:none;
+	/*** ЦВЕТ количества городов ***/
+	color: #444444;
+}
+.rightnav ul li, .rightnav ul li a {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.post-entry {
+	font-family: 'Proxima Nova Regular', sans-serif;
+	background:#fff url("/images/item_background.gif") repeat-x;
+	border:1px solid #d0d0d0;
+	padding:0px 45px 15px 45px;
+	margin-bottom:-15px;
+	font-weight: 400;
+	/**letter-spacing: 0.07em;**/
+	line-height: 1.55;
+}
+
+.post-entry .post {
+	min-height:110px;
+	height:auto !important;
+	height:110px;
+	position:relative;
+	/*margin-top: 30px;*/
+}
+
+
+.post-entry h2 {
+	font-family: 'Roboto Slab', serif;
+	font-size:18px; 
+	padding:20px 3px 10px 3px;
+	margin:0;
+	font-weight:bold;
+}
+
+.post-entry h3 {
+	font-family: 'Roboto Slab', serif;
+	padding:20px 3px 10px 3px;
+	margin:0;
+	font-weight:bold;
+}
+
+.post-entry p {padding:0 3px 0 3px;}
+
+.post-entry .post p {
+	/*margin: -20px 0 13px;*/
+}
+
+
+
+.footer {
+    background-color: #FFFFFF;
+	width:100%;
+	color:#fff;
+}
+.footer a {
+	color:#c2dd82;
+}
+.footer .copyright {
+	height: 110px;
+	background:#222222 url("/images/bkgd_diag.png") repeat scroll 0 0;
+	border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+	padding:13px 0 0 15px;
+	line-height:1.33em;
+}
+.footer .footer-links {
+	margin-top: 70px;
+	clear: both;
+}
+
+.footer .copyright span {
+	padding:0 5px;
+	font-size:16px;
+	color:#7ca740;
+}
+
+.footer-widget {padding: 10px; clear: both;}
+.footer-widget div, .footer-widget form {padding: 15px 0 15px 15px;}
+.footer-widget ul {padding: 15px 0; margin: 0;}
+.widget-footer {width: 300px; float: left;}
+
+#design-credits {width: 1070px;font-size: 10px;text-align: right;}
+.clear {clear: both;}
+
+.auto-resizable-iframe {
+  max-width: 80%;
+  margin: 0px auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 90%;
+}

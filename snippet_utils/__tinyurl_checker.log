@@ -1,0 +1,521 @@
+2016-04-22 15:19:58,875-ERROR(MailRuIsAliveChecker.java:86)-Error occured during replacer executor: 
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.fdt.snippetutils.MailRuIsAliveChecker.execute(MailRuIsAliveChecker.java:112)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.main(MailRuIsAliveChecker.java:82)
+2016-04-22 15:22:04,256-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 1
+2016-04-22 15:22:04,378- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 999
+2016-04-22 15:22:04,379-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:22:05,228-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 2
+2016-04-22 15:22:05,235- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 998
+2016-04-22 15:22:05,235-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:22:11,280-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:23:02,788-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 1
+2016-04-22 15:23:02,912- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 999
+2016-04-22 15:23:02,912-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:23:03,929-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 2
+2016-04-22 15:23:03,931- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 998
+2016-04-22 15:23:03,932-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:23:04,455-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 3
+2016-04-22 15:23:04,458- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 997
+2016-04-22 15:23:04,460-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:23:07,923-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:24:12,157-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:24:15,877-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 4
+2016-04-22 15:24:15,878-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 5
+2016-04-22 15:24:15,878-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 6
+2016-04-22 15:24:15,879-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 7
+2016-04-22 15:24:15,879-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 8
+2016-04-22 15:24:15,880-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 9
+2016-04-22 15:24:15,891-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 10
+2016-04-22 15:24:15,892-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 11
+2016-04-22 15:24:15,892-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 12
+2016-04-22 15:24:15,893-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 13
+2016-04-22 15:24:15,894-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 14
+2016-04-22 15:24:15,894-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 15
+2016-04-22 15:24:15,949-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 16
+2016-04-22 15:24:15,950-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 17
+2016-04-22 15:24:15,951-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 18
+2016-04-22 15:24:15,952-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 19
+2016-04-22 15:24:15,952-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 20
+2016-04-22 15:24:15,952-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 21
+2016-04-22 15:24:15,934- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 996
+2016-04-22 15:24:15,960-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,960- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 995
+2016-04-22 15:24:15,961-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,961- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 994
+2016-04-22 15:24:15,961-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,961- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 993
+2016-04-22 15:24:15,961-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,962- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 992
+2016-04-22 15:24:15,962-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,962- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 991
+2016-04-22 15:24:15,962-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,963- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 990
+2016-04-22 15:24:15,963-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,965-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 22
+2016-04-22 15:24:15,965- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 989
+2016-04-22 15:24:15,970-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,971-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 23
+2016-04-22 15:24:15,971- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 988
+2016-04-22 15:24:15,971-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,972- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 987
+2016-04-22 15:24:15,992-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,993- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 986
+2016-04-22 15:24:15,994-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,994- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 985
+2016-04-22 15:24:15,995-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,972-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 24
+2016-04-22 15:24:15,998- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 984
+2016-04-22 15:24:15,998-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:15,999- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 983
+2016-04-22 15:24:15,999-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,000-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 25
+2016-04-22 15:24:16,000- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 982
+2016-04-22 15:24:16,001-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,001-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 26
+2016-04-22 15:24:16,001- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 981
+2016-04-22 15:24:16,001-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,002-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 27
+2016-04-22 15:24:16,003- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 980
+2016-04-22 15:24:16,003-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,003-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 28
+2016-04-22 15:24:16,004- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 979
+2016-04-22 15:24:16,004-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,004-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 29
+2016-04-22 15:24:16,004- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 978
+2016-04-22 15:24:16,004-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,006-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 30
+2016-04-22 15:24:16,006- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 977
+2016-04-22 15:24:16,006-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 31
+2016-04-22 15:24:16,006-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,008-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 32
+2016-04-22 15:24:16,009-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 33
+2016-04-22 15:24:16,010-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 34
+2016-04-22 15:24:16,010-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 35
+2016-04-22 15:24:16,011-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 36
+2016-04-22 15:24:16,012-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 37
+2016-04-22 15:24:16,012-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 38
+2016-04-22 15:24:16,013-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 39
+2016-04-22 15:24:16,014-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 40
+2016-04-22 15:24:16,014-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 41
+2016-04-22 15:24:16,015-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 42
+2016-04-22 15:24:16,016-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 43
+2016-04-22 15:24:16,016- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 976
+2016-04-22 15:24:16,016-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,017- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 975
+2016-04-22 15:24:16,017-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,017- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 974
+2016-04-22 15:24:16,017-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,019- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 973
+2016-04-22 15:24:16,019-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,019- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 972
+2016-04-22 15:24:16,019-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,019- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 971
+2016-04-22 15:24:16,023-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,024- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 970
+2016-04-22 15:24:16,024-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,024- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 969
+2016-04-22 15:24:16,024-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,024- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 968
+2016-04-22 15:24:16,025-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,027-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 44
+2016-04-22 15:24:16,031-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 45
+2016-04-22 15:24:16,031-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 46
+2016-04-22 15:24:16,032-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 47
+2016-04-22 15:24:16,033-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 48
+2016-04-22 15:24:16,033-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 49
+2016-04-22 15:24:16,036-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 50
+2016-04-22 15:24:16,036-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 51
+2016-04-22 15:24:16,037-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 52
+2016-04-22 15:24:16,039-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 53
+2016-04-22 15:24:16,041-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 54
+2016-04-22 15:24:16,042-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 55
+2016-04-22 15:24:16,043-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 56
+2016-04-22 15:24:16,044-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 57
+2016-04-22 15:24:16,044-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 58
+2016-04-22 15:24:16,044-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 59
+2016-04-22 15:24:16,045-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 60
+2016-04-22 15:24:16,045-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 61
+2016-04-22 15:24:16,046-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 62
+2016-04-22 15:24:16,046-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 63
+2016-04-22 15:24:16,047-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 64
+2016-04-22 15:24:16,047-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 65
+2016-04-22 15:24:16,048-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 66
+2016-04-22 15:24:16,048-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 67
+2016-04-22 15:24:16,049-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 68
+2016-04-22 15:24:16,050-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 69
+2016-04-22 15:24:16,050-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 70
+2016-04-22 15:24:16,051-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 71
+2016-04-22 15:24:16,051-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 72
+2016-04-22 15:24:16,052- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 967
+2016-04-22 15:24:16,052-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,053-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 73
+2016-04-22 15:24:16,053-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 74
+2016-04-22 15:24:16,054-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 75
+2016-04-22 15:24:16,054-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 76
+2016-04-22 15:24:16,055-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 77
+2016-04-22 15:24:16,055-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 78
+2016-04-22 15:24:16,055-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 79
+2016-04-22 15:24:16,056-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 80
+2016-04-22 15:24:16,052- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 966
+2016-04-22 15:24:16,056-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 81
+2016-04-22 15:24:16,057- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 965
+2016-04-22 15:24:16,057-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,057-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,058- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 964
+2016-04-22 15:24:16,058-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,057-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 82
+2016-04-22 15:24:16,058- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 963
+2016-04-22 15:24:16,072-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,073- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 962
+2016-04-22 15:24:16,073-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,073- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 961
+2016-04-22 15:24:16,073-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,074- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 960
+2016-04-22 15:24:16,074-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,074- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 959
+2016-04-22 15:24:16,074-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,074- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 958
+2016-04-22 15:24:16,075-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,075- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 957
+2016-04-22 15:24:16,075-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,075-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 83
+2016-04-22 15:24:16,075- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 956
+2016-04-22 15:24:16,076-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,076-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 84
+2016-04-22 15:24:16,076-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 85
+2016-04-22 15:24:16,076- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 955
+2016-04-22 15:24:16,078-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,078- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 954
+2016-04-22 15:24:16,079-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,079- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 953
+2016-04-22 15:24:16,079-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,080- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 952
+2016-04-22 15:24:16,080-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,080- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 951
+2016-04-22 15:24:16,080-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,080- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 950
+2016-04-22 15:24:16,081-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,081- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 949
+2016-04-22 15:24:16,081-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,081- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 948
+2016-04-22 15:24:16,081-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,077-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 86
+2016-04-22 15:24:16,089- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 947
+2016-04-22 15:24:16,089-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,089- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 946
+2016-04-22 15:24:16,089-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,090-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 87
+2016-04-22 15:24:16,091- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 945
+2016-04-22 15:24:16,091-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,092-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 88
+2016-04-22 15:24:16,092- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 944
+2016-04-22 15:24:16,092-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,092-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 89
+2016-04-22 15:24:16,092- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 943
+2016-04-22 15:24:16,093-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,093- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 942
+2016-04-22 15:24:16,094-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,093-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 90
+2016-04-22 15:24:16,094- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 941
+2016-04-22 15:24:16,094-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,094- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 940
+2016-04-22 15:24:16,095-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,095-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 91
+2016-04-22 15:24:16,095- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 939
+2016-04-22 15:24:16,095-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,095-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 92
+2016-04-22 15:24:16,096- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 938
+2016-04-22 15:24:16,096-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,096-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 93
+2016-04-22 15:24:16,096- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 937
+2016-04-22 15:24:16,097-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,097-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 94
+2016-04-22 15:24:16,097- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 936
+2016-04-22 15:24:16,098-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,098-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 95
+2016-04-22 15:24:16,099- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 935
+2016-04-22 15:24:16,099-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,099- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 934
+2016-04-22 15:24:16,099-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,099-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 96
+2016-04-22 15:24:16,100- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 933
+2016-04-22 15:24:16,100-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,100- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 932
+2016-04-22 15:24:16,101-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,101- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 931
+2016-04-22 15:24:16,100-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 97
+2016-04-22 15:24:16,101- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 930
+2016-04-22 15:24:16,102-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,102-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 98
+2016-04-22 15:24:16,102- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 929
+2016-04-22 15:24:16,102-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,103-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 99
+2016-04-22 15:24:16,103- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 928
+2016-04-22 15:24:16,103-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,103-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 100
+2016-04-22 15:24:16,104- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 927
+2016-04-22 15:24:16,104-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,104- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 926
+2016-04-22 15:24:16,104-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,101-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,105- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 925
+2016-04-22 15:24:16,118-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,120- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 924
+2016-04-22 15:24:16,120-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,121- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 923
+2016-04-22 15:24:16,136- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 922
+2016-04-22 15:24:16,136-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,136-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,137- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 921
+2016-04-22 15:24:16,137-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,138- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 920
+2016-04-22 15:24:16,138-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,138- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 919
+2016-04-22 15:24:16,138-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,139- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 918
+2016-04-22 15:24:16,139-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,141- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 917
+2016-04-22 15:24:16,142-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,142- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 916
+2016-04-22 15:24:16,142-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,142- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 915
+2016-04-22 15:24:16,142-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,147- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 914
+2016-04-22 15:24:16,147-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,149- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 913
+2016-04-22 15:24:16,149-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,150- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 912
+2016-04-22 15:24:16,150-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,156- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 911
+2016-04-22 15:24:16,156-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,156- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 910
+2016-04-22 15:24:16,157-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,157- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 909
+2016-04-22 15:24:16,158-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,158- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 908
+2016-04-22 15:24:16,158-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,159- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 907
+2016-04-22 15:24:16,159-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,178- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 906
+2016-04-22 15:24:16,178-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,190- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 905
+2016-04-22 15:24:16,190-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,191- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 904
+2016-04-22 15:24:16,191-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,192- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 903
+2016-04-22 15:24:16,193-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,193- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 902
+2016-04-22 15:24:16,193-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,193- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 901
+2016-04-22 15:24:16,193-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:16,193- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 900
+2016-04-22 15:24:16,193-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:24:21,514-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:25:25,274- WARN(MailRuIsAliveChecker.java:171)-Error occured during checking URL: freesmangare@mail.ru
+javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:992)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:559)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:787)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.checkMail4Live(MailRuIsAliveChecker.java:222)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.access$4(MailRuIsAliveChecker.java:188)
+	at com.fdt.snippetutils.MailRuIsAliveChecker$MailRuCheckerThread.run(MailRuIsAliveChecker.java:166)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	... 13 more
+2016-04-22 15:25:25,288- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 900
+2016-04-22 15:25:25,289-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:25:25,289-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:25:44,485- WARN(MailRuIsAliveChecker.java:171)-Error occured during checking URL: cunseagalmi@mail.ru
+java.net.SocketException: Unexpected end of file from server
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:792)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:789)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.checkMail4Live(MailRuIsAliveChecker.java:222)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.access$4(MailRuIsAliveChecker.java:188)
+	at com.fdt.snippetutils.MailRuIsAliveChecker$MailRuCheckerThread.run(MailRuIsAliveChecker.java:166)
+2016-04-22 15:25:44,486- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 900
+2016-04-22 15:25:44,486-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:25:44,486-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:25:50,759-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:25:58,695-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:25:59,306-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:00,000-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:00,528-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:01,429-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:01,846-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:02,307-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:02,823-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:03,301-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:03,583- WARN(MailRuIsAliveChecker.java:171)-Error occured during checking URL: coultmetugo@mail.ru
+javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:992)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:559)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.checkMail4Live(MailRuIsAliveChecker.java:215)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.access$4(MailRuIsAliveChecker.java:188)
+	at com.fdt.snippetutils.MailRuIsAliveChecker$MailRuCheckerThread.run(MailRuIsAliveChecker.java:166)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	... 11 more
+2016-04-22 15:26:03,583- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 900
+2016-04-22 15:26:03,583-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:26:03,583-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:03,904-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:05,555-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:05,584- WARN(MailRuIsAliveChecker.java:171)-Error occured during checking URL: conscompkecom@mail.ru
+javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:992)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:559)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.followRedirect0(HttpURLConnection.java:2659)
+	at sun.net.www.protocol.http.HttpURLConnection.followRedirect(HttpURLConnection.java:2584)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1770)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.checkMail4Live(MailRuIsAliveChecker.java:222)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.access$4(MailRuIsAliveChecker.java:188)
+	at com.fdt.snippetutils.MailRuIsAliveChecker$MailRuCheckerThread.run(MailRuIsAliveChecker.java:166)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	... 14 more
+2016-04-22 15:26:05,584- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 900
+2016-04-22 15:26:05,585-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:26:05,585-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:06,039-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:06,872- WARN(MailRuIsAliveChecker.java:171)-Error occured during checking URL: rochdatipear@mail.ru
+javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:992)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:559)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.checkMail4Live(MailRuIsAliveChecker.java:215)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.access$4(MailRuIsAliveChecker.java:188)
+	at com.fdt.snippetutils.MailRuIsAliveChecker$MailRuCheckerThread.run(MailRuIsAliveChecker.java:166)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.read(InputRecord.java:505)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	... 11 more
+2016-04-22 15:26:06,873- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 900
+2016-04-22 15:26:06,873-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:26:06,873-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:08,115-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:08,735-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:10,249-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:10,714-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:10,957-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:11,200-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:11,903-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:11,926- WARN(MailRuIsAliveChecker.java:171)-Error occured during checking URL: robacktelli@mail.ru
+javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No subject alternative DNS name matching auth.mail.ru found.
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1509)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:559)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.checkMail4Live(MailRuIsAliveChecker.java:215)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.access$4(MailRuIsAliveChecker.java:188)
+	at com.fdt.snippetutils.MailRuIsAliveChecker$MailRuCheckerThread.run(MailRuIsAliveChecker.java:166)
+Caused by: java.security.cert.CertificateException: No subject alternative DNS name matching auth.mail.ru found.
+	at sun.security.util.HostnameChecker.matchDNS(HostnameChecker.java:204)
+	at sun.security.util.HostnameChecker.match(HostnameChecker.java:95)
+	at sun.security.ssl.X509TrustManagerImpl.checkIdentity(X509TrustManagerImpl.java:455)
+	at sun.security.ssl.X509TrustManagerImpl.checkIdentity(X509TrustManagerImpl.java:436)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:200)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1491)
+	... 15 more
+2016-04-22 15:26:11,926- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 900
+2016-04-22 15:26:11,926-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:26:11,926-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:12,789-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:26:13,419-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:29:04,160-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 1
+2016-04-22 15:29:04,227- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 999
+2016-04-22 15:29:04,227-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:29:04,882-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:29:48,617-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 1
+2016-04-22 15:29:48,709- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 999
+2016-04-22 15:29:48,710-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:29:49,337-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:30:50,543- WARN(MailRuIsAliveChecker.java:171)-Error occured during checking URL: freesmangare@mail.ru
+javax.net.ssl.SSLException: SSL peer shut down incorrectly
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:596)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:532)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:559)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1283)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1258)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:250)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.checkMail4Live(MailRuIsAliveChecker.java:215)
+	at com.fdt.snippetutils.MailRuIsAliveChecker.access$4(MailRuIsAliveChecker.java:188)
+	at com.fdt.snippetutils.MailRuIsAliveChecker$MailRuCheckerThread.run(MailRuIsAliveChecker.java:166)
+2016-04-22 15:30:50,547- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 999
+2016-04-22 15:30:50,547-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:30:50,547-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:31:15,761-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 1
+2016-04-22 15:31:15,952- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 999
+2016-04-22 15:31:15,959-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:31:16,640-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:33:15,309-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 1
+2016-04-22 15:33:15,332- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 999
+2016-04-22 15:33:15,333-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:33:15,962-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:33:27,544-DEBUG(MailRuIsAliveChecker.java:397)-Current thread count: 1
+2016-04-22 15:33:27,558- INFO(ProxyFactory.java:155)-NOT USED proxy servers: 999
+2016-04-22 15:33:27,558-TRACE(MailRuIsAliveChecker.java:164)-Starting checking url
+2016-04-22 15:33:28,460-TRACE(MailRuIsAliveChecker.java:195)-Connection created.
+2016-04-22 15:34:06,301-DEBUG(MailRuIsAliveChecker.java:402)-Current thread count: 0
+2016-04-22 15:34:06,340-DEBUG(MailRuIsAliveChecker.java:306)-Saving to success list..
+2016-04-22 15:34:06,384- WARN(MailRuIsAliveChecker.java:381)-Error occured during saving collection string to file mail_ru_alive.txt
+2016-04-22 15:34:06,384-DEBUG(MailRuIsAliveChecker.java:308)-Saving to invalid list..
+2016-04-22 15:34:06,385- WARN(MailRuIsAliveChecker.java:381)-Error occured during saving collection string to file mail_ru_failed.txt
+2016-04-22 15:34:06,386-DEBUG(MailRuIsAliveChecker.java:310)-Saving to recheck list..
+2016-04-22 15:34:06,387- WARN(MailRuIsAliveChecker.java:381)-Error occured during saving collection string to file mail_ru_recheck.txt

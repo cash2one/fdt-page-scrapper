@@ -23279,3 +23279,254 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -1
 2016-02-04 09:48:34,940-DEBUG(DoorgenPoolerRunner.java:276)-Task: null
 2016-02-04 09:48:35,440-DEBUG(DoorgenPoolerRunner.java:274)-Try to get request from RequestFactory queue.
 2016-02-04 09:48:35,440-DEBUG(DoorgenPoolerRunner.java:276)-Task: null
+2016-06-01 13:37:47,520-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 13:37:52,460-FATAL(DoorgenPoolerFilesRunner.java:145)-Error during snippet pooler initialization
+java.sql.SQLException: Access denied for user 'usapersonalloans'@'86.57.154.130' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3870)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3806)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1686)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1207)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2254)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2285)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2084)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:795)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:327)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerFilesRunner.getConnection(DoorgenPoolerFilesRunner.java:159)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerFilesRunner.initPooler(DoorgenPoolerFilesRunner.java:121)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerFilesRunner.<init>(DoorgenPoolerFilesRunner.java:142)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:10)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 13:38:46,148-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 13:42:19,969-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 13:47:18,730-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 13:50:07,188-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 14:59:34,886-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:00:17,373-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:03:17,214-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:03:42,620-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:08:41,649-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:13:07,956-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:17:32,735-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:19:22,525-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:27:37,851-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:30:19,097-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:31:38,906-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:35:31,320-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:36:26,329-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:37:34,820-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 15:38:32,378-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 16:01:34,932-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 16:28:23,972-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 16:29:05,753-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 16:29:58,715-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 16:30:47,649-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 16:31:10,481-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 16:33:28,344-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
+2016-06-01 16:42:04,210-FATAL(DoorgenPoolerSnippetsRunner.java:215)-Error during snippet pooler initialization
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.initPooler(DoorgenPoolerSnippetsRunner.java:134)
+	at com.fdt.doorgen.key.pooler.runner.DoorgenPoolerSnippetsRunner.<init>(DoorgenPoolerSnippetsRunner.java:212)
+	at com.fdt.doorgen.key.pooler.content.PoolerType.<clinit>(PoolerType.java:8)
+	at com.fdt.doorgen.key.pooler.PoolersRunner.main(PoolersRunner.java:48)
