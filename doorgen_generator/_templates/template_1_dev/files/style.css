@@ -458,7 +458,7 @@ div.hr {
     font: 900 54px "Fjalla One";
     height: 96px;
     letter-spacing: -1px;
-    margin: 40px auto 4px !important;
+    margin: 0px auto 4px !important;
     max-width: 940px;
     overflow: visible;
     padding-top: 11px;
