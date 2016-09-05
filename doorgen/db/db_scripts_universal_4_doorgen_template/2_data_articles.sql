@@ -1,12 +1,16 @@
 DROP TABLE IF EXISTS article_content;
 DROP TABLE IF EXISTS article_tmpl;
 
-
 CREATE TABLE IF NOT EXISTS article_tmpl (
 	tmpl_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	titleOrig VARCHAR(255) NOT NULL,
 	title VARCHAR(255) NOT NULL,
+	description VARCHAR(4095),
+	keywords VARCHAR(4095),
 	url VARCHAR(255) NOT NULL,
 	text VARCHAR(65535) NOT NULL,
+	ratingCount FLOAT,
+	reviewCount INT,
 	upd_dt TIMESTAMP,
 	CONSTRAINT uc_url_title UNIQUE (url, title)
 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci;

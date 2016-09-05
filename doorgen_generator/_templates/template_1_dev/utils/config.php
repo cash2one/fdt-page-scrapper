@@ -13,7 +13,7 @@
 	define("DB_NAME", "binaryoptionshowtotrade");
 	
 	#Параметр названия сайта.
-	define("SITE_NAME", "BinaryOptionsHowToTrade.com");
+	define("SITE_NAME", "EssayBoss.org");
 	
 	/*
 	
@@ -36,13 +36,15 @@
 	*/
 	
 	#Параметр тайтла линка штата для списка штатов
-	define("CATEGORY_LINK_TITLE", "USA Installment Loans [CATEGORY_NAME]");
+	define("CATEGORY_LINK_TITLE", "Buy [CATEGORY_NAME] Online");
 	
 	#Параметр тайтла линка города для списка городов на странице штата
-	define("CITY_LIST_LINK_TITLE", "USA Installment Loans [CITY_NAME] [CATEGORY_ABBR]");
+	#define("CITY_LIST_LINK_TITLE", "USA Installment Loans [ITEM_NAME] [CATEGORY_ABBR]");
+	define("CITY_LIST_LINK_TITLE", "[ITEM_NAME]");
 	
 	#Параметр тайтла линка города для списка ближайщих городов на странице город
-	define("CITY_CLOSE_LIST_LINK_TITLE", "USA Installment Loans [CITY_NAME] [CATEGORY_ABBR] [ZIP_CODE]");
+	#define("CITY_CLOSE_LIST_LINK_TITLE", "USA Installment Loans [ITEM_NAME] [CATEGORY_ABBR] [ZIP_CODE]");
+	define("CITY_CLOSE_LIST_LINK_TITLE", "[ITEM_NAME]");
 	
 	
 	#Main page title
@@ -50,9 +52,9 @@
 	#Main page meta description
 	define("MAIN_PAGE_META_DESCRIPTION", "EssayBoss - Lets See What We Can Do With Your Essay | Custom Writing Service");
 	#Main page  meta keywords
-	define("MAIN_PAGE_META_KEYWORDS", "Buy Essay Online, Essay Writing Service, Write My Essay, Buy Essay Papers");
+	define("MAIN_PAGE_META_KEYWORDS", "EssayBoss Custom Writing Service, Write My Essay & Paper, Do My Assignment & Homework, Writing Term & Research Papers, Professional Writing Content Company, Type My Persuasive & Reflective Essay For Me, Descriptive & Argumentative Essay, College & Expository Essay Help.");
 	#Контент для тэга H1
-	define("MAIN_PAGE_H1", "<font face=\"Sigmar One\">Essay<font color=\"#FF0000\">Boss</font></font> - Custom Writing Service");
+	define("MAIN_PAGE_H1", "<font style=\"700 35px/32px geo\">ESSAY<font color=\"#EB4141\">BOSS</font></font> - Custom Writing Service");
 	#Контент для тэга H2
 	define("MAIN_PAGE_H2", "[SITE_NAME] About Us");
 	
@@ -64,7 +66,7 @@
 	#State meta keywords
 	define("CATEGORY_META_KEYWORDS", "[CATEGORY_META_KEYWORDS]");
 	#Контент для тэга H1
-	define("CATEGORY_PAGE_H1", "Installment Loans in [CATEGORY_NAME] USA");
+	define("CATEGORY_PAGE_H1", "Buy [CATEGORY_NAME] Online");
 	#Контент для тэга H2
 	define("CATEGORY_PAGE_H2", "Get Your Money TODAY!, [CATEGORY_ABBR] USA");
 
@@ -114,4 +116,47 @@
 	define("ARTICLES_LIST_META_DESCRIPTION", "Articles: EssayBoss");
 	#Articles meta keywords
 	define("ARTICLES_LIST_META_KEYWORDS", "Articles");
+	
+	#Disclaimer page title
+	define("DISCLAIMER_LIST_PAGE_TITLE", "EssayBoss: Disclaimer");
+	#Disclaimer meta description
+	define("DISCLAIMER_LIST_META_DESCRIPTION", "Disclaimer: EssayBoss");
+	#Disclaimer meta keywords
+	define("DISCLAIMER_LIST_META_KEYWORDS", "Disclaimer");
+	
+	#TERMSOFUSE page title
+	define("TERMSOFUSE_LIST_PAGE_TITLE", "EssayBoss: Terms of Use");
+	#TERMSOFUSE meta description
+	define("TERMSOFUSE_LIST_META_DESCRIPTION","Terms of Use: EssayBoss");
+	#TERMSOFUSE meta keywords
+	define("TERMSOFUSE_LIST_META_KEYWORDS","Terms of Use");
+	
+	#REVISIONPOLICY page title
+	define("REVISIONPOLICY_LIST_PAGE_TITLE", "EssayBoss: Revision Policy");
+	#REVISIONPOLICY meta description
+	define("REVISIONPOLICY_LIST_META_DESCRIPTION","Revision Policy: EssayBoss");
+	#REVISIONPOLICY meta keywords
+	define("REVISIONPOLICY_LIST_META_KEYWORDS","Revision Policy");
+		
+	#PRIVACYPOLICY page title
+	define("PRIVACYPOLICY_LIST_PAGE_TITLE", "EssayBoss: Privacy Policy");
+	#PRIVACYPOLICY meta description
+	define("PRIVACYPOLICY_LIST_META_DESCRIPTION","Privacy Policy: EssayBoss");
+	#PRIVACYPOLICY meta keywords
+	define("PRIVACYPOLICY_LIST_META_KEYWORDS","Privacy Policy");
+	
+	#COOKIEPOLICY page title
+	define("COOKIEPOLICY_LIST_PAGE_TITLE", "EssayBoss: Cookie Policy");
+	#COOKIEPOLICY meta description
+	define("COOKIEPOLICY_LIST_META_DESCRIPTION","Cookie Policy: EssayBoss");
+	#COOKIEPOLICY meta keywords
+	define("COOKIEPOLICY_LIST_META_KEYWORDS","Cookie Policy");
+	
+	#MONEYBACKGUARANTEE page title
+	define("MONEYBACKGUARANTEE_LIST_PAGE_TITLE", "EssayBoss: Money Back Guarantee");
+	#MONEYBACKGUARANTEE meta description
+	define("MONEYBACKGUARANTEE_LIST_META_DESCRIPTION","Money Back Guarantee: EssayBoss");
+	#MONEYBACKGUARANTEE meta keywords
+	define("MONEYBACKGUARANTEE_LIST_META_KEYWORDS","Money Back Guarantee");
+
 ?>

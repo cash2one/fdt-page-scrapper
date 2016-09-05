@@ -200,7 +200,7 @@ div.hr {
 	width:1300px;
 	padding:0 3px;
 	margin:0 auto;
-	background:url(images/cnt_shdw.png) 0 0 repeat-y;
+	background:url(/images/cnt_shdw.png) 0 0 repeat-y;
 }
 .main-box {
 	width:1300px;
@@ -209,7 +209,7 @@ div.hr {
 
 
 .header {
-	background:url(images/header_background.jpg) 100% 0% no-repeat;
+	background:url(/images/header_background.jpg) 100% 0% no-repeat;
 	height:86px;
 	position:relative;
 }
@@ -264,7 +264,7 @@ div.hr {
 
 	
 .content-container {
-	background:url(images/count_background.gif) 0 1px repeat-x;
+	background:url(/images/count_background.gif) 0 1px repeat-x;
 	width:1270px;
 	padding:15px;
 	clear: both;

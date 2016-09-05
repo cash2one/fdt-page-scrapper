@@ -7,32 +7,40 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import org.apache.log4j.Logger;
 
 public class ArticleTemplateDao extends DaoCommon {
 	private static final Logger log = Logger.getLogger(ArticleTemplateDao.class);
+	
+	private static final Random rnd = new Random();
 
 	public ArticleTemplateDao(Connection connection) {
 		super(connection);
 	}
 
 
-	public int insertTemplate(String title, String url, String tmpl){
+	public int insertTemplate(String titleOrig, String title, String url, String tmpl, String description, String keywords){
 		PreparedStatement prStmt = null;
 		ResultSet rs = null;
 		int pcId = -1;
 		try {
 			prStmt = connection.prepareStatement(
-					" INSERT INTO article_tmpl ( title, url, text, upd_dt) " +
-					" SELECT ?, ?, ?, now()" + 
+					" INSERT INTO article_tmpl ( titleOrig, title, url, text, description, keywords, ratingCount, reviewCount, upd_dt) " +
+					" SELECT ?, ?, ?, ?, ?, ?, ?, ?, now()" + 
 					" ON DUPLICATE KEY UPDATE text = ?, upd_dt = now()",
 					Statement.RETURN_GENERATED_KEYS);
 
-			prStmt.setString(1, title);
-			prStmt.setString(2, url);
-			prStmt.setString(3, tmpl);
+			prStmt.setString(1, titleOrig);
+			prStmt.setString(2, title);
+			prStmt.setString(3, url);
 			prStmt.setString(4, tmpl);
+			prStmt.setString(5, description);
+			prStmt.setString(6, keywords);
+			prStmt.setFloat(7, ((float)4.11 + ((float)rnd.nextInt(40)/100)));
+			prStmt.setInt(8, 5 + rnd.nextInt(10));
+			prStmt.setString(9, tmpl);
 
 			prStmt.executeUpdate();
 

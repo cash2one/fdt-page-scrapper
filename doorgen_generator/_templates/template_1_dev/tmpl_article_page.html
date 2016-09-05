@@ -1,7 +1,19 @@
 <div style="line-height:20px; font-size:15px;">
-[PROMO_BUTTON]
+[PROMO_BLOCK]
 <h2>[SITE_NAME] - [ARTICLE_TITLE]</h2>
 <br>
 <h3>[ARTICLE_TITLE]</h3>
 [ARTICLE_BODY]
+<br>
+<span itemscope itemtype="http://schema.org/Review">
+    <span itemprop="name">[keyword]</span><br>
+  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">EssayBoss</span><br>
+  </span>	
+    <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+        Average Rating: <span itemprop="ratingValue">[nums]</span><br>
+        Votes: <span itemprop="ratingCount">[numr]</span><br>
+        Reviews: <span itemprop="reviewCount">[numr]</span><br>
+  </span>
+</span>
 </div>

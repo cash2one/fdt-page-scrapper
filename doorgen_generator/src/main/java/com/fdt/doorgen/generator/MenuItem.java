@@ -14,6 +14,8 @@ public class MenuItem {
 	
 	private String pageMetaDescription;
 	
+	private String tmplPageLabel;
+	
 	private String contentFile;
 	
 	//TODO Make it configurable in future if need
@@ -77,6 +79,14 @@ public class MenuItem {
 
 	public void setContentFile(String contentFile) {
 		this.contentFile = contentFile;
+	}
+	
+	public String getTmplLabel() {
+		return tmplPageLabel;
+	}
+
+	public void setTmplPageLabel(String tmplPageLabel) {
+		this.tmplPageLabel = tmplPageLabel;
 	}
 
 	@Override

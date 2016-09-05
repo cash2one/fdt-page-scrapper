@@ -73,6 +73,9 @@ public class CustomParser {
 					else if(childNodes.item(j).getNodeName().equals("page_meta_keywords")){
 						menuItem.setPageMetaKeywords(childNodes.item(j).getTextContent());
 					}
+					else if(childNodes.item(j).getNodeName().equals("tmpl_page_label")){
+						menuItem.setTmplPageLabel(childNodes.item(j).getTextContent());
+					}
 				}
 
 				menuItems.add(menuItem);
