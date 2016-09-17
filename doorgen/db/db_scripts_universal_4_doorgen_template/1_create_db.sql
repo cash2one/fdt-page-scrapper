@@ -14,8 +14,12 @@ CREATE TABLE IF NOT EXISTS category (
 	meta_description VARCHAR(2048) NOT NULL,
 	tmpl_text VARCHAR(65535) NOT NULL,
 	generated_text VARCHAR(65535) NOT NULL,
+	ratingCount FLOAT,
+	reviewCount INT,
+	voteCount INT,
 	upd_flg TINYINT(1) DEFAULT 0,	
 	post_dt TIMESTAMP,
+	upd_rating_dt TIMESTAMP,
 	upd_dt TIMESTAMP
 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
@@ -34,8 +38,12 @@ CREATE TABLE IF NOT EXISTS item (
 	country VARCHAR(255),
 	tmpl_text VARCHAR(65535) NOT NULL,
 	generated_text VARCHAR(65535) NOT NULL,
+	ratingCount FLOAT,
+	reviewCount INT,
+	voteCount INT,
 	upd_flg TINYINT(1) DEFAULT 0,	
 	post_dt TIMESTAMP,
+	upd_rating_dt TIMESTAMP,
 	upd_dt TIMESTAMP,
 	CONSTRAINT FOREIGN KEY (category_id) REFERENCES category (category_id) ON DELETE CASCADE ON UPDATE CASCADE,
 	UNIQUE KEY item_name (item_name,category_id)
@@ -49,3 +57,4 @@ CREATE TABLE IF NOT EXISTS neighbor_item (
 	CONSTRAINT FOREIGN KEY (item_id) REFERENCES item (item_id) ON DELETE CASCADE ON UPDATE CASCADE,
 	CONSTRAINT FOREIGN KEY (neighbor_item_id) REFERENCES item (item_id) ON DELETE CASCADE ON UPDATE CASCADE
 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+

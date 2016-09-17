@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /application/
+Disallow: /txt/
+Disallow: /utils/
+Disallow: /webstat/
+Disallow: /app/
+Disallow: /menu_map/
+Disallow: /files/
+Disallow: /images/
+Disallow: /menu_pages/
+
+Disallow: *.html
+Host: essayboss.org
+Sitemap: http://essayboss.org/sitemap.xml

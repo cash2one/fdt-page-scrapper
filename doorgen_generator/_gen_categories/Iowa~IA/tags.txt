@@ -1,0 +1,937 @@
+Ackley~Ackley~~Ackley, Hardin county, IA 50601, USA~42.552;-93.0526~US-IA~42.552,-93.0526~42.55200000~-93.05260000~50601~Hardin county~~~4.1200004~2445~3748
+Ackworth~Ackworth~~Ackworth, Warren county, IA 50001, USA~41.3814;-93.3988~US-IA~41.3814,-93.3988~41.38140000~-93.39880000~50001~Warren county~~~4.11~1947~2097
+Adair~Adair~~Adair, Adair county, IA 50002, USA~41.4993;-94.6475~US-IA~41.4993,-94.6475~41.49930000~-94.64750000~50002~Adair county~~~4.11~1897~3564
+Adel~Adel~~Adel, Dallas county, IA 50003, USA~41.6145;-94.0202~US-IA~41.6145,-94.0202~41.61450000~-94.02020000~50003~Dallas county~~~4.4300003~1596~3897
+Afton~Afton~~Afton, Union county, IA 50830, USA~41.0257;-94.1977~US-IA~41.0257,-94.1977~41.02570000~-94.19770000~50830~Union county~~~4.4300003~2280~2474
+Agency~Agency~~Agency, Wapello county, IA 52530, USA~40.9947;-92.3054~US-IA~40.9947,-92.3054~40.99470000~-92.30540000~52530~Wapello county~~~4.46~2636~3328
+Ainsworth~Ainsworth~~Ainsworth, Washington county, IA 52201, USA~41.2918;-91.5521~US-IA~41.2918,-91.5521~41.29180000~-91.55210000~52201~Washington county~~~4.44~2440~2483
+Akron~Akron~~Akron, Plymouth county, IA 51001, USA~42.8335;-96.5296~US-IA~42.8335,-96.5296~42.83350000~-96.52960000~51001~Plymouth county~~~4.38~2848~3883
+Albert City~Albert-City~~Albert City, Buena Vista county, IA 50510, USA~42.7849;-94.9628~US-IA~42.7849,-94.9628~42.78490000~-94.96280000~50510~Buena Vista county~~~4.21~2727~3397
+Albia~Albia~~Albia, Monroe county, IA 52531, USA~41.0869;-92.7288~US-IA~41.0869,-92.7288~41.08690000~-92.72880000~52531~Monroe county~~~4.4100003~1333~3008
+Albion~Albion~~Albion, Marshall county, IA 50005, USA~42.1211;-93.0132~US-IA~42.1211,-93.0132~42.12110000~-93.01320000~50005~Marshall county~~~4.37~2317~3140
+Alburnett~Alburnett~~Alburnett, Linn county, IA 52202, USA~42.1559;-91.6321~US-IA~42.1559,-91.6321~42.15590000~-91.63210000~52202~Linn county~~~4.17~2132~4000
+Alden~Alden~~Alden, Hardin county, IA 50006, USA~42.5188;-93.3722~US-IA~42.5188,-93.3722~42.51880000~-93.37220000~50006~Hardin county~~~4.32~2629~2178
+Alexander~Alexander~~Alexander, Franklin county, IA 50420, USA~42.8198;-93.4397~US-IA~42.8198,-93.4397~42.81980000~-93.43970000~50420~Franklin county~~~4.42~2535~3538
+Algona~Algona~~Algona, Kossuth county, IA 50511, USA~43.0724;-94.2295~US-IA~43.0724,-94.2295~43.07240000~-94.22950000~50511~Kossuth county~~~4.34~1557~2968
+Alleman~Alleman~~Alleman, Polk county, IA 50007, USA~41.8178;-93.6109~US-IA~41.8178,-93.6109~41.81780000~-93.61090000~50007~Polk county~~~4.38~1683~2799
+Allerton~Allerton~~Allerton, Wayne county, IA 50008, USA~40.6744;-93.3821~US-IA~40.6744,-93.3821~40.67440000~-93.38210000~50008~Wayne county~~~4.3900003~2575~3196
+Allison~Allison~~Allison, Butler county, IA 50602, USA~42.7583;-92.799~US-IA~42.7583,-92.799~42.75830000~-92.79900000~50602~Butler county~~~4.4900002~2866~2549
+Alta Vista~Alta-Vista~~Alta Vista, Chickasaw county, IA 50603, USA~43.1488;-92.4358~US-IA~43.1488,-92.4358~43.14880000~-92.43580000~50603~Chickasaw county~~~4.1600003~1640~4653
+Alta~Alta~~Alta, Buena Vista county, IA 51002, USA~42.6726;-95.3045~US-IA~42.6726,-95.3045~42.67260000~-95.30450000~51002~Buena Vista county~~~4.28~1928~2724
+Alton~Alton~~Alton, Sioux county, IA 51003, USA~42.9878;-96.0114~US-IA~42.9878,-96.0114~42.98780000~-96.01140000~51003~Sioux county~~~4.23~2177~3813
+Altoona~Altoona~~Altoona, Polk county, IA 50009, USA~41.6492;-93.4692~US-IA~41.6492,-93.4692~41.64920000~-93.46920000~50009~Polk county~~~4.23~1926~2837
+Alvord~Alvord~~Alvord, Lyon county, IA 51230, USA~43.3034;-96.2843~US-IA~43.3034,-96.2843~43.30340000~-96.28430000~51230~Lyon county~~~4.5~2125~2574
+Amana~Amana~~Amana, Iowa county, IA 52203, USA~41.8042;-91.8679~US-IA~41.8042,-91.8679~41.80420000~-91.86790000~52203~Iowa county~~~4.2400002~1327~2522
+Ames~Ames~~Ames, Story county, IA 50010, USA~42.0296;-93.6402~US-IA~42.0296,-93.6402~42.02960000~-93.64020000~50010~Story county~~~4.25~2821~3136
+Anamosa~Anamosa~~Anamosa, Jones county, IA 52205, USA~42.1135;-91.2952~US-IA~42.1135,-91.2952~42.11350000~-91.29520000~52205~Jones county~~~4.34~2123~2467
+Andover~Andover~~Andover, Clinton county, IA 52701, USA~41.9873;-90.2399~US-IA~41.9873,-90.2399~41.98730000~-90.23990000~52701~Clinton county~~~4.33~2441~4349
+Andrew~Andrew~~Andrew, Jackson county, IA 52030, USA~42.165;-90.606~US-IA~42.165,-90.606~42.16500000~-90.60600000~52030~Jackson county~~~4.27~1443~3339
+Anita~Anita~~Anita, Cass county, IA 50020, USA~41.4441;-94.7652~US-IA~41.4441,-94.7652~41.44410000~-94.76520000~50020~Cass county~~~4.44~2045~4999
+Ankeny~Ankeny~~Ankeny, Polk county, IA 50021, USA~41.7241;-93.6097~US-IA~41.7241,-93.6097~41.72410000~-93.60970000~50021~Polk county~~~4.38~2309~4621
+Anthon~Anthon~~Anthon, Woodbury county, IA 51004, USA~42.3872;-95.8833~US-IA~42.3872,-95.8833~42.38720000~-95.88330000~51004~Woodbury county~~~4.4700003~2331~2608
+Aplington~Aplington~~Aplington, Butler county, IA 50604, USA~42.5816;-92.8801~US-IA~42.5816,-92.8801~42.58160000~-92.88010000~50604~Butler county~~~4.35~2044~4659
+Arcadia~Arcadia~~Arcadia, Carroll county, IA 51430, USA~42.0902;-95.0449~US-IA~42.0902,-95.0449~42.09020000~-95.04490000~51430~Carroll county~~~4.3~2761~2167
+Archer~Archer~~Archer, Obrien county, IA 51231, USA~43.1154;-95.7458~US-IA~43.1154,-95.7458~43.11540000~-95.74580000~51231~Obrien county~~~4.2200003~2176~3941
+Aredale~Aredale~~Aredale, Butler county, IA 50605, USA~42.837;-93.0035~US-IA~42.837,-93.0035~42.83700000~-93.00350000~50605~Butler county~~~4.4700003~2998~2829
+Argyle~Argyle~~Argyle, Lee county, IA 52619, USA~40.5647;-91.5799~US-IA~40.5647,-91.5799~40.56470000~-91.57990000~52619~Lee county~~~4.1400003~2779~2347
+Arion~Arion~~Arion, Crawford county, IA 51520, USA~41.9492;-95.4633~US-IA~41.9492,-95.4633~41.94920000~-95.46330000~51520~Crawford county~~~4.32~2571~3757
+Arispe~Arispe~~Arispe, Union county, IA 50831, USA~40.9853;-94.0713~US-IA~40.9853,-94.0713~40.98530000~-94.07130000~50831~Union county~~~4.2400002~1900~3311
+Arlington~Arlington~~Arlington, Fayette county, IA 50606, USA~42.7686;-91.6939~US-IA~42.7686,-91.6939~42.76860000~-91.69390000~50606~Fayette county~~~4.2000003~1834~2316
+Armstrong~Armstrong~~Armstrong, Emmet county, IA 50514, USA~43.3955;-94.4863~US-IA~43.3955,-94.4863~43.39550000~-94.48630000~50514~Emmet county~~~4.17~1965~3193
+Arnolds Park~Arnolds-Park~~Arnolds Park, Dickinson county, IA 51331, USA~43.3646;-95.1335~US-IA~43.3646,-95.1335~43.36460000~-95.13350000~51331~Dickinson county~~~4.28~2543~2972
+Arthur~Arthur~~Arthur, Ida county, IA 51431, USA~42.3367;-95.345~US-IA~42.3367,-95.345~42.33670000~-95.34500000~51431~Ida county~~~4.3900003~1133~3203
+Ashton~Ashton~~Ashton, Osceola county, IA 51232, USA~43.3121;-95.7847~US-IA~43.3121,-95.7847~43.31210000~-95.78470000~51232~Osceola county~~~4.36~1109~2408
+Aspinwall~Aspinwall~~Aspinwall, Crawford county, IA 51432, USA~41.9117;-95.135~US-IA~41.9117,-95.135~41.91170000~-95.13500000~51432~Crawford county~~~4.38~1185~2461
+Atalissa~Atalissa~~Atalissa, Muscatine county, IA 52720, USA~41.5691;-91.162~US-IA~41.5691,-91.162~41.56910000~-91.16200000~52720~Muscatine county~~~4.35~1232~4542
+Atkins~Atkins~~Atkins, Benton county, IA 52206, USA~42.006;-91.8719~US-IA~42.006,-91.8719~42.00600000~-91.87190000~52206~Benton county~~~4.19~1737~2018
+Atlantic~Atlantic~~Atlantic, Cass county, IA 50022, USA~41.4;-95.0095~US-IA~41.4,-95.0095~41.40000000~-95.00950000~50022~Cass county~~~4.4900002~2684~2370
+Auburn~Auburn~~Auburn, Sac county, IA 51433, USA~42.2712;-94.8917~US-IA~42.2712,-94.8917~42.27120000~-94.89170000~51433~Sac county~~~4.27~1262~4551
+Audubon~Audubon~~Audubon, Audubon county, IA 50025, USA~41.7261;-94.9186~US-IA~41.7261,-94.9186~41.72610000~-94.91860000~50025~Audubon county~~~4.4700003~1102~3180
+Aurelia~Aurelia~~Aurelia, Cherokee county, IA 51005, USA~42.7159;-95.4354~US-IA~42.7159,-95.4354~42.71590000~-95.43540000~51005~Cherokee county~~~4.35~1047~2373
+Aurora~Aurora~~Aurora, Buchanan county, IA 50607, USA~42.6237;-91.7334~US-IA~42.6237,-91.7334~42.62370000~-91.73340000~50607~Buchanan county~~~4.11~2030~2794
+Austinville~Austinville~~Austinville, Butler county, IA 50608, USA~42.5992;-92.966~US-IA~42.5992,-92.966~42.59920000~-92.96600000~50608~Butler county~~~4.15~2958~3190
+Avoca~Avoca~~Avoca, Pottawattamie county, IA 51521, USA~41.4775;-95.3396~US-IA~41.4775,-95.3396~41.47750000~-95.33960000~51521~Pottawattamie county~~~4.26~2628~2546
+Ayrshire~Ayrshire~~Ayrshire, Palo Alto county, IA 50515, USA~43.0375;-94.8358~US-IA~43.0375,-94.8358~43.03750000~-94.83580000~50515~Palo Alto county~~~4.19~1241~4737
+Badger~Badger~~Badger, Webster county, IA 50516, USA~42.6028;-94.1505~US-IA~42.6028,-94.1505~42.60280000~-94.15050000~50516~Webster county~~~4.19~2576~3235
+Bagley~Bagley~~Bagley, Guthrie county, IA 50026, USA~41.8197;-94.4562~US-IA~41.8197,-94.4562~41.81970000~-94.45620000~50026~Guthrie county~~~4.23~1032~3210
+Baldwin~Baldwin~~Baldwin, Jackson county, IA 52207, USA~42.0724;-90.8204~US-IA~42.0724,-90.8204~42.07240000~-90.82040000~52207~Jackson county~~~4.17~2269~3003
+Bancroft~Bancroft~~Bancroft, Kossuth county, IA 50517, USA~43.2928;-94.2164~US-IA~43.2928,-94.2164~43.29280000~-94.21640000~50517~Kossuth county~~~4.25~1694~2062
+Barnes City~Barnes-City~~Barnes City, Mahaska county, IA 50027, USA~41.5076;-92.4735~US-IA~41.5076,-92.4735~41.50760000~-92.47350000~50027~Mahaska county~~~4.15~1900~3817
+Barnum~Barnum~~Barnum, Webster county, IA 50518, USA~42.5096;-94.3652~US-IA~42.5096,-94.3652~42.50960000~-94.36520000~50518~Webster county~~~4.46~1429~3761
+Batavia~Batavia~~Batavia, Jefferson county, IA 52533, USA~40.9978;-92.1593~US-IA~40.9978,-92.1593~40.99780000~-92.15930000~52533~Jefferson county~~~4.25~2590~2949
+Battle Creek~Battle-Creek~~Battle Creek, Ida county, IA 51006, USA~42.3255;-95.5905~US-IA~42.3255,-95.5905~42.32550000~-95.59050000~51006~Ida county~~~4.42~1294~4319
+Baxter~Baxter~~Baxter, Jasper county, IA 50028, USA~41.8203;-93.1483~US-IA~41.8203,-93.1483~41.82030000~-93.14830000~50028~Jasper county~~~4.38~1482~2809
+Bayard~Bayard~~Bayard, Guthrie county, IA 50029, USA~41.8532;-94.5588~US-IA~41.8532,-94.5588~41.85320000~-94.55880000~50029~Guthrie county~~~4.35~1914~4287
+Beacon~Beacon~~Beacon, Mahaska county, IA 52534, USA~41.2774;-92.6839~US-IA~41.2774,-92.6839~41.27740000~-92.68390000~52534~Mahaska county~~~4.2000003~2758~2537
+Beaman~Beaman~~Beaman, Grundy county, IA 50609, USA~42.2227;-92.8201~US-IA~42.2227,-92.8201~42.22270000~-92.82010000~50609~Grundy county~~~4.26~2747~2275
+Beaver~Beaver~~Beaver, Boone county, IA 50031, USA~42.0369;-94.1059~US-IA~42.0369,-94.1059~42.03690000~-94.10590000~50031~Boone county~~~4.25~1689~4295
+Bedford~Bedford~~Bedford, Taylor county, IA 50833, USA~40.7058;-94.7589~US-IA~40.7058,-94.7589~40.70580000~-94.75890000~50833~Taylor county~~~4.28~1926~4414
+Belle Plaine~Belle-Plaine~~Belle Plaine, Benton county, IA 52208, USA~41.8988;-92.2749~US-IA~41.8988,-92.2749~41.89880000~-92.27490000~52208~Benton county~~~4.23~1945~2995
+Bellevue~Bellevue~~Bellevue, Jackson county, IA 52031, USA~42.2592;-90.429~US-IA~42.2592,-90.429~42.25920000~-90.42900000~52031~Jackson county~~~4.25~2568~4441
+Belmond~Belmond~~Belmond, Wright county, IA 50421, USA~42.8464;-93.6143~US-IA~42.8464,-93.6143~42.84640000~-93.61430000~50421~Wright county~~~4.46~1120~3356
+Bennett~Bennett~~Bennett, Cedar county, IA 52721, USA~41.7434;-90.9716~US-IA~41.7434,-90.9716~41.74340000~-90.97160000~52721~Cedar county~~~4.23~1201~4062
+Benton~Benton~~Benton, Ringgold county, IA 50835, USA~40.7284;-94.3968~US-IA~40.7284,-94.3968~40.72840000~-94.39680000~50835~Ringgold county~~~4.44~2740~2242
+Bernard~Bernard~~Bernard, Dubuque county, IA 52032, USA~42.3343;-90.8354~US-IA~42.3343,-90.8354~42.33430000~-90.83540000~52032~Dubuque county~~~4.26~1745~4242
+Berwick~Berwick~~Berwick, Polk county, IA 50032, USA~41.6664;-93.5446~US-IA~41.6664,-93.5446~41.66640000~-93.54460000~50032~Polk county~~~4.25~2054~2820
+Bettendorf~Bettendorf~~Bettendorf, Scott county, IA 52722, USA~41.5672;-90.462~US-IA~41.5672,-90.462~41.56720000~-90.46200000~52722~Scott county~~~4.17~2568~3815
+Bevington~Bevington~~Bevington, Madison county, IA 50033, USA~41.3594;-93.7922~US-IA~41.3594,-93.7922~41.35940000~-93.79220000~50033~Madison county~~~4.4~1058~3708
+Birmingham~Birmingham~~Birmingham, Van Buren county, IA 52535, USA~40.8542;-91.9482~US-IA~40.8542,-91.9482~40.85420000~-91.94820000~52535~Van Buren county~~~4.4500003~2480~3336
+Blairsburg~Blairsburg~~Blairsburg, Hamilton county, IA 50034, USA~42.4806;-93.6431~US-IA~42.4806,-93.6431~42.48060000~-93.64310000~50034~Hamilton county~~~4.32~2776~3402
+Blairstown~Blairstown~~Blairstown, Benton county, IA 52209, USA~41.9071;-92.082~US-IA~41.9071,-92.082~41.90710000~-92.08200000~52209~Benton county~~~4.1600003~2384~2258
+Blakesburg~Blakesburg~~Blakesburg, Wapello county, IA 52536, USA~40.9606;-92.6357~US-IA~40.9606,-92.6357~40.96060000~-92.63570000~52536~Wapello county~~~4.4~2581~3240
+Blanchard~Blanchard~~Blanchard, Page county, IA 51630, USA~40.6002;-95.2082~US-IA~40.6002,-95.2082~40.60020000~-95.20820000~51630~Page county~~~4.4500003~1327~2733
+Blencoe~Blencoe~~Blencoe, Monona county, IA 51523, USA~41.9325;-96.0827~US-IA~41.9325,-96.0827~41.93250000~-96.08270000~51523~Monona county~~~4.33~2897~3558
+Blockton~Blockton~~Blockton, Taylor county, IA 50836, USA~40.6482;-94.5308~US-IA~40.6482,-94.5308~40.64820000~-94.53080000~50836~Taylor county~~~4.5~2733~3455
+Bloomfield~Bloomfield~~Bloomfield, Davis county, IA 52537, USA~40.7327;-92.4141~US-IA~40.7327,-92.4141~40.73270000~-92.41410000~52537~Davis county~~~4.13~1880~2056
+Blue Grass~Blue-Grass~~Blue Grass, Scott county, IA 52726, USA~41.4982;-90.7572~US-IA~41.4982,-90.7572~41.49820000~-90.75720000~52726~Scott county~~~4.19~1798~2982
+Bode~Bode~~Bode, Humboldt county, IA 50519, USA~42.8652;-94.2839~US-IA~42.8652,-94.2839~42.86520000~-94.28390000~50519~Humboldt county~~~4.36~2252~3221
+Bonaparte~Bonaparte~~Bonaparte, Van Buren county, IA 52620, USA~40.6988;-91.802~US-IA~40.6988,-91.802~40.69880000~-91.80200000~52620~Van Buren county~~~4.32~1622~2447
+Bondurant~Bondurant~~Bondurant, Polk county, IA 50035, USA~41.7247;-93.4471~US-IA~41.7247,-93.4471~41.72470000~-93.44710000~50035~Polk county~~~4.4~1032~2202
+Boone~Boone~~Boone, Boone county, IA 50036, USA~42.0613;-93.8874~US-IA~42.0613,-93.8874~42.06130000~-93.88740000~50036~Boone county~~~4.42~2251~4477
+Booneville~Booneville~~Booneville, Dallas county, IA 50038, USA~41.5398;-93.8853~US-IA~41.5398,-93.8853~41.53980000~-93.88530000~50038~Dallas county~~~4.2400002~2781~2155
+Bouton~Bouton~~Bouton, Dallas county, IA 50039, USA~41.8526;-94.007~US-IA~41.8526,-94.007~41.85260000~-94.00700000~50039~Dallas county~~~4.36~2161~4834
+Boxholm~Boxholm~~Boxholm, Boone county, IA 50040, USA~42.1665;-94.1067~US-IA~42.1665,-94.1067~42.16650000~-94.10670000~50040~Boone county~~~4.2000003~1131~4274
+Boyden~Boyden~~Boyden, Sioux county, IA 51234, USA~43.1941;-96.0042~US-IA~43.1941,-96.0042~43.19410000~-96.00420000~51234~Sioux county~~~4.21~1945~2373
+Braddyville~Braddyville~~Braddyville, Page county, IA 51631, USA~40.611;-94.9691~US-IA~40.611,-94.9691~40.61100000~-94.96910000~51631~Page county~~~4.2000003~1606~3623
+Bradford~Bradford~~Bradford, Franklin county, IA 50041, USA~42.6012;-93.2043~US-IA~42.6012,-93.2043~42.60120000~-93.20430000~50041~Franklin county~~~4.4700003~2174~2219
+Bradgate~Bradgate~~Bradgate, Humboldt county, IA 50520, USA~42.7932;-94.3852~US-IA~42.7932,-94.3852~42.79320000~-94.38520000~50520~Humboldt county~~~4.3900003~2801~3799
+Brandon~Brandon~~Brandon, Buchanan county, IA 52210, USA~42.3142;-92.0055~US-IA~42.3142,-92.0055~42.31420000~-92.00550000~52210~Buchanan county~~~4.35~2886~4191
+Brayton~Brayton~~Brayton, Audubon county, IA 50042, USA~41.5534;-94.9835~US-IA~41.5534,-94.9835~41.55340000~-94.98350000~50042~Audubon county~~~4.2000003~1902~4259
+Breda~Breda~~Breda, Carroll county, IA 51436, USA~42.1854;-94.9745~US-IA~42.1854,-94.9745~42.18540000~-94.97450000~51436~Carroll county~~~4.4~1625~4904
+Bridgewater~Bridgewater~~Bridgewater, Adair county, IA 50837, USA~41.18;-94.6417~US-IA~41.18,-94.6417~41.18000000~-94.64170000~50837~Adair county~~~4.13~2782~3544
+Brighton~Brighton~~Brighton, Washington county, IA 52540, USA~41.174;-91.8232~US-IA~41.174,-91.8232~41.17400000~-91.82320000~52540~Washington county~~~4.36~2078~4403
+Bristow~Bristow~~Bristow, Butler county, IA 50611, USA~42.7741;-92.9056~US-IA~42.7741,-92.9056~42.77410000~-92.90560000~50611~Butler county~~~4.1200004~1508~2847
+Britt~Britt~~Britt, Hancock county, IA 50423, USA~43.0952;-93.7998~US-IA~43.0952,-93.7998~43.09520000~-93.79980000~50423~Hancock county~~~4.1400003~2936~2231
+Bronson~Bronson~~Bronson, Woodbury county, IA 51007, USA~42.4148;-96.2132~US-IA~42.4148,-96.2132~42.41480000~-96.21320000~51007~Woodbury county~~~4.42~2097~2665
+Brooklyn~Brooklyn~~Brooklyn, Poweshiek county, IA 52211, USA~41.7291;-92.4455~US-IA~41.7291,-92.4455~41.72910000~-92.44550000~52211~Poweshiek county~~~4.44~1134~2987
+Brunsville~Brunsville~~Brunsville, Plymouth county, IA 51008, USA~42.8095;-96.2686~US-IA~42.8095,-96.2686~42.80950000~-96.26860000~51008~Plymouth county~~~4.29~1194~3034
+Bryant~Bryant~~Bryant, Clinton county, IA 52727, USA~41.9735;-90.3427~US-IA~41.9735,-90.3427~41.97350000~-90.34270000~52727~Clinton county~~~4.1400003~2918~4666
+Buckeye~Buckeye~~Buckeye, Hardin county, IA 50043, USA~42.5203;-93.3758~US-IA~42.5203,-93.3758~42.52030000~-93.37580000~50043~Hardin county~~~4.25~1750~2559
+Buckingham~Buckingham~~Buckingham, Tama county, IA 50612, USA~42.3108;-92.3767~US-IA~42.3108,-92.3767~42.31080000~-92.37670000~50612~Tama county~~~4.1200004~2934~2665
+Buffalo Center~Buffalo-Center~~Buffalo Center, Winnebago county, IA 50424, USA~43.388;-93.9501~US-IA~43.388,-93.9501~43.38800000~-93.95010000~50424~Winnebago county~~~4.26~1494~2660
+Buffalo~Buffalo~~Buffalo, Scott county, IA 52728, USA~41.4545;-90.7264~US-IA~41.4545,-90.7264~41.45450000~-90.72640000~52728~Scott county~~~4.15~1123~4083
+Burlington~Burlington~~Burlington, Des Moines county, IA 52601, USA~40.8061;-91.1207~US-IA~40.8061,-91.1207~40.80610000~-91.12070000~52601~Des Moines county~~~4.46~1279~2893
+Burnside~Burnside~~Burnside, Webster county, IA 50521, USA~42.3364;-94.1113~US-IA~42.3364,-94.1113~42.33640000~-94.11130000~50521~Webster county~~~4.25~2710~3617
+Burt~Burt~~Burt, Kossuth county, IA 50522, USA~43.1978;-94.2221~US-IA~43.1978,-94.2221~43.19780000~-94.22210000~50522~Kossuth county~~~4.31~1786~4475
+Bussey~Bussey~~Bussey, Marion county, IA 50044, USA~41.2044;-92.8842~US-IA~41.2044,-92.8842~41.20440000~-92.88420000~50044~Marion county~~~4.1800003~1202~4347
+Calamus~Calamus~~Calamus, Clinton county, IA 52729, USA~41.8286;-90.7565~US-IA~41.8286,-90.7565~41.82860000~-90.75650000~52729~Clinton county~~~4.28~1945~2602
+Callender~Callender~~Callender, Webster county, IA 50523, USA~42.3607;-94.292~US-IA~42.3607,-94.292~42.36070000~-94.29200000~50523~Webster county~~~4.2000003~1419~4872
+Calmar~Calmar~~Calmar, Winneshiek county, IA 52132, USA~43.1841;-91.872~US-IA~43.1841,-91.872~43.18410000~-91.87200000~52132~Winneshiek county~~~4.15~1580~2456
+Calumet~Calumet~~Calumet, Obrien county, IA 51009, USA~42.9452;-95.5502~US-IA~42.9452,-95.5502~42.94520000~-95.55020000~51009~Obrien county~~~4.31~1766~2182
+Camanche~Camanche~~Camanche, Clinton county, IA 52730, USA~41.7858;-90.2617~US-IA~41.7858,-90.2617~41.78580000~-90.26170000~52730~Clinton county~~~4.4300003~2146~4584
+Cambridge~Cambridge~~Cambridge, Story county, IA 50046, USA~41.9013;-93.5328~US-IA~41.9013,-93.5328~41.90130000~-93.53280000~50046~Story county~~~4.4100003~1310~4723
+Cantril~Cantril~~Cantril, Van Buren county, IA 52542, USA~40.6428;-92.0704~US-IA~40.6428,-92.0704~40.64280000~-92.07040000~52542~Van Buren county~~~4.31~2984~4085
+Carbon~Carbon~~Carbon, Adams county, IA 50839, USA~40.9403;-94.871~US-IA~40.9403,-94.871~40.94030000~-94.87100000~50839~Adams county~~~4.26~2897~2625
+Carlisle~Carlisle~~Carlisle, Warren county, IA 50047, USA~41.478;-93.4768~US-IA~41.478,-93.4768~41.47800000~-93.47680000~50047~Warren county~~~4.11~1008~4963
+Carpenter~Carpenter~~Carpenter, Mitchell county, IA 50426, USA~43.4314;-92.9136~US-IA~43.4314,-92.9136~43.43140000~-92.91360000~50426~Mitchell county~~~4.1200004~2545~2988
+Carroll~Carroll~~Carroll, Carroll county, IA 51401, USA~42.0472;-94.8652~US-IA~42.0472,-94.8652~42.04720000~-94.86520000~51401~Carroll county~~~4.19~1433~2997
+Carson~Carson~~Carson, Pottawattamie county, IA 51525, USA~41.238;-95.4174~US-IA~41.238,-95.4174~41.23800000~-95.41740000~51525~Pottawattamie county~~~4.36~1905~2908
+Carter Lake~Carter-Lake~~Carter Lake, Pottawattamie county, IA 51510, USA~41.2917;-95.9101~US-IA~41.2917,-95.9101~41.29170000~-95.91010000~51510~Pottawattamie county~~~4.38~1749~4659
+Cascade~Cascade~~Cascade, Dubuque county, IA 52033, USA~42.3108;-91.0055~US-IA~42.3108,-91.0055~42.31080000~-91.00550000~52033~Dubuque county~~~4.29~1183~3118
+Casey~Casey~~Casey, Guthrie county, IA 50048, USA~41.4882;-94.4306~US-IA~41.4882,-94.4306~41.48820000~-94.43060000~50048~Guthrie county~~~4.36~2655~4864
+Castalia~Castalia~~Castalia, Winneshiek county, IA 52133, USA~43.1669;-91.6624~US-IA~43.1669,-91.6624~43.16690000~-91.66240000~52133~Winneshiek county~~~4.38~2016~4219
+Castana~Castana~~Castana, Monona county, IA 51010, USA~42.0711;-95.9114~US-IA~42.0711,-95.9114~42.07110000~-95.91140000~51010~Monona county~~~4.13~1878~4806
+Cedar Falls~Cedar-Falls~~Cedar Falls, Black Hawk county, IA 50613, USA~42.5293;-92.4513~US-IA~42.5293,-92.4513~42.52930000~-92.45130000~50613~Black Hawk county~~~4.13~2152~4785
+Cedar Rapids~Cedar-Rapids~~Cedar Rapids, Linn county, IA 52401, USA~41.9748;-91.6609~US-IA~41.9748,-91.6609~41.97480000~-91.66090000~52401~Linn county~~~4.11~2595~3586
+Cedar~Cedar~~Cedar, Mahaska county, IA 52543, USA~41.2046;-92.5006~US-IA~41.2046,-92.5006~41.20460000~-92.50060000~52543~Mahaska county~~~4.1600003~1887~3694
+Center Junction~Center-Junction~~Center Junction, Jones county, IA 52212, USA~42.0784;-91.0733~US-IA~42.0784,-91.0733~42.07840000~-91.07330000~52212~Jones county~~~4.17~2882~3518
+Center Point~Center-Point~~Center Point, Linn county, IA 52213, USA~42.1924;-91.7571~US-IA~42.1924,-91.7571~42.19240000~-91.75710000~52213~Linn county~~~4.26~1598~2073
+Centerville~Centerville~~Centerville, Appanoose county, IA 52544, USA~40.7275;-92.8651~US-IA~40.7275,-92.8651~40.72750000~-92.86510000~52544~Appanoose county~~~4.38~2415~4422
+Central City~Central-City~~Central City, Linn county, IA 52214, USA~42.1811;-91.4914~US-IA~42.1811,-91.4914~42.18110000~-91.49140000~52214~Linn county~~~4.1600003~2551~4681
+Chapin~Chapin~~Chapin, Franklin county, IA 50427, USA~42.8392;-93.222~US-IA~42.8392,-93.222~42.83920000~-93.22200000~50427~Franklin county~~~4.44~2999~4132
+Chariton~Chariton~~Chariton, Lucas county, IA 50049, USA~41.0187;-93.3114~US-IA~41.0187,-93.3114~41.01870000~-93.31140000~50049~Lucas county~~~4.4500003~2119~3057
+Charles City~Charles-City~~Charles City, Floyd county, IA 50616, USA~43.0633;-92.6711~US-IA~43.0633,-92.6711~43.06330000~-92.67110000~50616~Floyd county~~~4.13~1330~4149
+Charlotte~Charlotte~~Charlotte, Clinton county, IA 52731, USA~41.963;-90.4711~US-IA~41.963,-90.4711~41.96300000~-90.47110000~52731~Clinton county~~~4.29~1654~3111
+Charter Oak~Charter-Oak~~Charter Oak, Crawford county, IA 51439, USA~42.0677;-95.5914~US-IA~42.0677,-95.5914~42.06770000~-95.59140000~51439~Crawford county~~~4.1200004~1768~3127
+Chatsworth~Chatsworth~~Chatsworth, Sioux county, IA 51011, USA~43.0148;-96.4316~US-IA~43.0148,-96.4316~43.01480000~-96.43160000~51011~Sioux county~~~4.11~1144~3108
+Chelsea~Chelsea~~Chelsea, Tama county, IA 52215, USA~41.9186;-92.3938~US-IA~41.9186,-92.3938~41.91860000~-92.39380000~52215~Tama county~~~4.17~1399~2397
+Cherokee~Cherokee~~Cherokee, Cherokee county, IA 51012, USA~42.7497;-95.5549~US-IA~42.7497,-95.5549~42.74970000~-95.55490000~51012~Cherokee county~~~4.34~1514~4320
+Chester~Chester~~Chester, Howard county, IA 52134, USA~43.4657;-92.4335~US-IA~43.4657,-92.4335~43.46570000~-92.43350000~52134~Howard county~~~4.27~1875~2596
+Chillicothe~Chillicothe~~Chillicothe, Wapello county, IA 52548, USA~41.07;-92.5414~US-IA~41.07,-92.5414~41.07000000~-92.54140000~52548~Wapello county~~~4.4900002~2562~3812
+Churdan~Churdan~~Churdan, Greene county, IA 50050, USA~42.1308;-94.4619~US-IA~42.1308,-94.4619~42.13080000~-94.46190000~50050~Greene county~~~4.4100003~1757~2232
+Cincinnati~Cincinnati~~Cincinnati, Appanoose county, IA 52549, USA~40.6343;-92.9238~US-IA~40.6343,-92.9238~40.63430000~-92.92380000~52549~Appanoose county~~~4.4~2803~3754
+Clare~Clare~~Clare, Webster county, IA 50524, USA~42.5889;-94.3447~US-IA~42.5889,-94.3447~42.58890000~-94.34470000~50524~Webster county~~~4.3~1623~2659
+Clarence~Clarence~~Clarence, Cedar county, IA 52216, USA~41.8812;-91.0611~US-IA~41.8812,-91.0611~41.88120000~-91.06110000~52216~Cedar county~~~4.4100003~1363~4803
+Clarinda~Clarinda~~Clarinda, Page county, IA 51632, USA~40.7361;-95.039~US-IA~40.7361,-95.039~40.73610000~-95.03900000~51632~Page county~~~4.33~1961~2051
+Clarion~Clarion~~Clarion, Wright county, IA 50525, USA~42.7296;-93.7338~US-IA~42.7296,-93.7338~42.72960000~-93.73380000~50525~Wright county~~~4.44~1314~4932
+Clarksville~Clarksville~~Clarksville, Butler county, IA 50619, USA~42.779;-92.6654~US-IA~42.779,-92.6654~42.77900000~-92.66540000~50619~Butler county~~~4.32~2905~3771
+Clear Lake~Clear-Lake~~Clear Lake, Cerro Gordo county, IA 50428, USA~43.1383;-93.3845~US-IA~43.1383,-93.3845~43.13830000~-93.38450000~50428~Cerro Gordo county~~~4.26~2723~2727
+Clearfield~Clearfield~~Clearfield, Taylor county, IA 50840, USA~40.8006;-94.4786~US-IA~40.8006,-94.4786~40.80060000~-94.47860000~50840~Taylor county~~~4.48~2960~4687
+Cleghorn~Cleghorn~~Cleghorn, Cherokee county, IA 51014, USA~42.8087;-95.7092~US-IA~42.8087,-95.7092~42.80870000~-95.70920000~51014~Cherokee county~~~4.4700003~1009~4197
+Clemons~Clemons~~Clemons, Marshall county, IA 50051, USA~42.1315;-93.145~US-IA~42.1315,-93.145~42.13150000~-93.14500000~50051~Marshall county~~~4.27~1599~3490
+Clermont~Clermont~~Clermont, Fayette county, IA 52135, USA~43.0045;-91.6606~US-IA~43.0045,-91.6606~43.00450000~-91.66060000~52135~Fayette county~~~4.1200004~2562~3242
+Climbing Hill~Climbing-Hill~~Climbing Hill, Woodbury county, IA 51015, USA~42.3479;-96.0934~US-IA~42.3479,-96.0934~42.34790000~-96.09340000~51015~Woodbury county~~~4.2200003~1722~2016
+Clinton~Clinton~~Clinton, Clinton county, IA 52732, USA~41.849;-90.2087~US-IA~41.849,-90.2087~41.84900000~-90.20870000~52732~Clinton county~~~4.27~1303~3612
+Clio~Clio~~Clio, Wayne county, IA 50052, USA~40.6801;-93.499~US-IA~40.6801,-93.499~40.68010000~-93.49900000~50052~Wayne county~~~4.4300003~2781~4596
+Clive~Clive~~Clive, Polk county, IA 50325, USA~41.605;-93.7477~US-IA~41.605,-93.7477~41.60500000~-93.74770000~50325~Polk county~~~4.33~2179~3702
+Clutier~Clutier~~Clutier, Tama county, IA 52217, USA~42.0791;-92.4024~US-IA~42.0791,-92.4024~42.07910000~-92.40240000~52217~Tama county~~~4.3900003~2841~4527
+Coggon~Coggon~~Coggon, Linn county, IA 52218, USA~42.2786;-91.5401~US-IA~42.2786,-91.5401~42.27860000~-91.54010000~52218~Linn county~~~4.27~1666~4833
+Coin~Coin~~Coin, Page county, IA 51636, USA~40.6585;-95.2341~US-IA~40.6585,-95.2341~40.65850000~-95.23410000~51636~Page county~~~4.46~1412~2022
+Colesburg~Colesburg~~Colesburg, Delaware county, IA 52035, USA~42.635;-91.2005~US-IA~42.635,-91.2005~42.63500000~-91.20050000~52035~Delaware county~~~4.31~1503~2688
+Colfax~Colfax~~Colfax, Jasper county, IA 50054, USA~41.6814;-93.2679~US-IA~41.6814,-93.2679~41.68140000~-93.26790000~50054~Jasper county~~~4.48~2240~2870
+College Springs~College-Springs~~College Springs, Page county, IA 51637, USA~40.6203;-95.1098~US-IA~40.6203,-95.1098~40.62030000~-95.10980000~51637~Page county~~~4.35~1816~4714
+Collins~Collins~~Collins, Story county, IA 50055, USA~41.9033;-93.3069~US-IA~41.9033,-93.3069~41.90330000~-93.30690000~50055~Story county~~~4.1200004~2019~4318
+Colo~Colo~~Colo, Story county, IA 50056, USA~42.0177;-93.3157~US-IA~42.0177,-93.3157~42.01770000~-93.31570000~50056~Story county~~~4.11~2385~2427
+Columbia~Columbia~~Columbia, Marion county, IA 50057, USA~41.1824;-93.1574~US-IA~41.1824,-93.1574~41.18240000~-93.15740000~50057~Marion county~~~4.44~2759~2344
+Columbus City~Columbus-City~~Columbus City, Louisa county, IA 52737, USA~41.2649;-91.3701~US-IA~41.2649,-91.3701~41.26490000~-91.37010000~52737~Louisa county~~~4.4700003~2466~2448
+Columbus Junction~Columbus-Junction~~Columbus Junction, Louisa county, IA 52738, USA~41.2826;-91.3822~US-IA~41.2826,-91.3822~41.28260000~-91.38220000~52738~Louisa county~~~4.4700003~1917~4010
+Colwell~Colwell~~Colwell, Floyd county, IA 50620, USA~43.0685;-92.7115~US-IA~43.0685,-92.7115~43.06850000~-92.71150000~50620~Floyd county~~~4.33~1153~3204
+Conesville~Conesville~~Conesville, Muscatine county, IA 52739, USA~41.3836;-91.3505~US-IA~41.3836,-91.3505~41.38360000~-91.35050000~52739~Muscatine county~~~4.1800003~2691~4514
+Conrad~Conrad~~Conrad, Grundy county, IA 50621, USA~42.2281;-92.8744~US-IA~42.2281,-92.8744~42.22810000~-92.87440000~50621~Grundy county~~~4.23~2639~2336
+Conroy~Conroy~~Conroy, Iowa county, IA 52220, USA~41.7438;-91.9662~US-IA~41.7438,-91.9662~41.74380000~-91.96620000~52220~Iowa county~~~4.15~2930~3427
+Coon Rapids~Coon-Rapids~~Coon Rapids, Carroll county, IA 50058, USA~41.8779;-94.6803~US-IA~41.8779,-94.6803~41.87790000~-94.68030000~50058~Carroll county~~~4.1400003~1495~3390
+Cooper~Cooper~~Cooper, Greene county, IA 50059, USA~41.8996;-94.3395~US-IA~41.8996,-94.3395~41.89960000~-94.33950000~50059~Greene county~~~4.2200003~2875~2050
+Coralville~Coralville~~Coralville, Johnson county, IA 52241, USA~41.6802;-91.5777~US-IA~41.6802,-91.5777~41.68020000~-91.57770000~52241~Johnson county~~~4.31~2058~4511
+Corning~Corning~~Corning, Adams county, IA 50841, USA~41.0049;-94.7429~US-IA~41.0049,-94.7429~41.00490000~-94.74290000~50841~Adams county~~~4.29~1425~4166
+Correctionville~Correctionville~~Correctionville, Woodbury county, IA 51016, USA~42.4781;-95.7826~US-IA~42.4781,-95.7826~42.47810000~-95.78260000~51016~Woodbury county~~~4.15~1766~2243
+Corwith~Corwith~~Corwith, Hancock county, IA 50430, USA~42.9931;-93.9531~US-IA~42.9931,-93.9531~42.99310000~-93.95310000~50430~Hancock county~~~4.4900002~2733~3442
+Corydon~Corydon~~Corydon, Wayne county, IA 50060, USA~40.758;-93.3187~US-IA~40.758,-93.3187~40.75800000~-93.31870000~50060~Wayne county~~~4.37~1536~2165
+Coulter~Coulter~~Coulter, Franklin county, IA 50431, USA~42.736;-93.3681~US-IA~42.736,-93.3681~42.73600000~-93.36810000~50431~Franklin county~~~4.4900002~1091~3366
+Council Bluffs~Council-Bluffs~~Council Bluffs, Pottawattamie county, IA 51501, USA~41.2549;-95.8528~US-IA~41.2549,-95.8528~41.25490000~-95.85280000~51501~Pottawattamie county~~~4.11~2059~3370
+Crawfordsville~Crawfordsville~~Crawfordsville, Washington county, IA 52621, USA~41.2126;-91.537~US-IA~41.2126,-91.537~41.21260000~-91.53700000~52621~Washington county~~~4.31~1543~3113
+Crescent~Crescent~~Crescent, Pottawattamie county, IA 51526, USA~41.3648;-95.8504~US-IA~41.3648,-95.8504~41.36480000~-95.85040000~51526~Pottawattamie county~~~4.42~2265~3338
+Cresco~Cresco~~Cresco, Howard county, IA 52136, USA~43.3761;-92.1146~US-IA~43.3761,-92.1146~43.37610000~-92.11460000~52136~Howard county~~~4.4300003~2010~3304
+Creston~Creston~~Creston, Union county, IA 50801, USA~41.0575;-94.4034~US-IA~41.0575,-94.4034~41.05750000~-94.40340000~50801~Union county~~~4.19~1705~4017
+Cromwell~Cromwell~~Cromwell, Union county, IA 50842, USA~41.0782;-94.3919~US-IA~41.0782,-94.3919~41.07820000~-94.39190000~50842~Union county~~~4.37~1723~4279
+Crystal Lake~Crystal-Lake~~Crystal Lake, Hancock county, IA 50432, USA~43.2255;-93.791~US-IA~43.2255,-93.791~43.22550000~-93.79100000~50432~Hancock county~~~4.19~2329~2246
+Cumberland~Cumberland~~Cumberland, Cass county, IA 50843, USA~41.2455;-94.8707~US-IA~41.2455,-94.8707~41.24550000~-94.87070000~50843~Cass county~~~4.35~2975~2315
+Cumming~Cumming~~Cumming, Warren county, IA 50061, USA~41.4893;-93.7539~US-IA~41.4893,-93.7539~41.48930000~-93.75390000~50061~Warren county~~~4.27~1418~4871
+Curlew~Curlew~~Curlew, Palo Alto county, IA 50527, USA~42.9599;-94.8247~US-IA~42.9599,-94.8247~42.95990000~-94.82470000~50527~Palo Alto county~~~4.1200004~1826~2940
+Cushing~Cushing~~Cushing, Woodbury county, IA 51018, USA~42.4649;-95.6789~US-IA~42.4649,-95.6789~42.46490000~-95.67890000~51018~Woodbury county~~~4.4100003~2443~4420
+Cylinder~Cylinder~~Cylinder, Palo Alto county, IA 50528, USA~43.0902;-94.5506~US-IA~43.0902,-94.5506~43.09020000~-94.55060000~50528~Palo Alto county~~~4.21~2163~2723
+Dakota City~Dakota-City~~Dakota City, Humboldt county, IA 50529, USA~42.7187;-94.1972~US-IA~42.7187,-94.1972~42.71870000~-94.19720000~50529~Humboldt county~~~4.17~1516~4683
+Dallas Center~Dallas-Center~~Dallas Center, Dallas county, IA 50063, USA~41.6902;-93.9677~US-IA~41.6902,-93.9677~41.69020000~-93.96770000~50063~Dallas county~~~4.4500003~2250~4612
+Dallas~Dallas~~Dallas, Marion county, IA 50062, USA~41.2327;-93.2375~US-IA~41.2327,-93.2375~41.23270000~-93.23750000~50062~Marion county~~~4.37~2642~2639
+Dana~Dana~~Dana, Greene county, IA 50064, USA~42.1069;-94.2271~US-IA~42.1069,-94.2271~42.10690000~-94.22710000~50064~Greene county~~~4.13~1157~4218
+Danbury~Danbury~~Danbury, Woodbury county, IA 51019, USA~42.2615;-95.7843~US-IA~42.2615,-95.7843~42.26150000~-95.78430000~51019~Woodbury county~~~4.42~1853~4171
+Danville~Danville~~Danville, Des Moines county, IA 52623, USA~40.8656;-91.3128~US-IA~40.8656,-91.3128~40.86560000~-91.31280000~52623~Des Moines county~~~4.26~2258~4792
+Davenport~Davenport~~Davenport, Scott county, IA 52801, USA~41.5223;-90.5776~US-IA~41.5223,-90.5776~41.52230000~-90.57760000~52801~Scott county~~~4.31~2709~4228
+Davis City~Davis-City~~Davis City, Decatur county, IA 50065, USA~40.6395;-93.8121~US-IA~40.6395,-93.8121~40.63950000~-93.81210000~50065~Decatur county~~~4.42~2026~3226
+Dawson~Dawson~~Dawson, Dallas county, IA 50066, USA~41.82;-94.22~US-IA~41.82,-94.22~41.82000000~-94.22000000~50066~Dallas county~~~4.37~2653~2796
+Dayton~Dayton~~Dayton, Webster county, IA 50530, USA~42.2684;-94.0627~US-IA~42.2684,-94.0627~42.26840000~-94.06270000~50530~Webster county~~~4.2200003~1034~3540
+De Soto~De-Soto~~De Soto, Dallas county, IA 50069, USA~41.5298;-94.0628~US-IA~41.5298,-94.0628~41.52980000~-94.06280000~50069~Dallas county~~~4.37~1742~3536
+De Witt~De-Witt~~De Witt, Clinton county, IA 52742, USA~41.8235;-90.4602~US-IA~41.8235,-90.4602~41.82350000~-90.46020000~52742~Clinton county~~~4.42~1778~3363
+Decatur~Decatur~~Decatur, Decatur county, IA 50067, USA~40.7684;-93.843~US-IA~40.7684,-93.843~40.76840000~-93.84300000~50067~Decatur county~~~4.32~1735~4865
+Decorah~Decorah~~Decorah, Winneshiek county, IA 52101, USA~43.392;-91.8827~US-IA~43.392,-91.8827~43.39200000~-91.88270000~52101~Winneshiek county~~~4.5~1873~3497
+Dedham~Dedham~~Dedham, Carroll county, IA 51440, USA~41.9084;-94.8202~US-IA~41.9084,-94.8202~41.90840000~-94.82020000~51440~Carroll county~~~4.32~2694~4337
+Deep River~Deep-River~~Deep River, Poweshiek county, IA 52222, USA~41.5973;-92.3193~US-IA~41.5973,-92.3193~41.59730000~-92.31930000~52222~Poweshiek county~~~4.27~1439~2364
+Defiance~Defiance~~Defiance, Shelby county, IA 51527, USA~41.8273;-95.3416~US-IA~41.8273,-95.3416~41.82730000~-95.34160000~51527~Shelby county~~~4.23~1412~3150
+Delaware~Delaware~~Delaware, Delaware county, IA 52036, USA~42.4837;-91.2673~US-IA~42.4837,-91.2673~42.48370000~-91.26730000~52036~Delaware county~~~4.2000003~2143~2182
+Delhi~Delhi~~Delhi, Delaware county, IA 52223, USA~42.4298;-91.3302~US-IA~42.4298,-91.3302~42.42980000~-91.33020000~52223~Delaware county~~~4.25~1159~2385
+Delmar~Delmar~~Delmar, Clinton county, IA 52037, USA~42.0011;-90.6095~US-IA~42.0011,-90.6095~42.00110000~-90.60950000~52037~Clinton county~~~4.4900002~2424~2801
+Deloit~Deloit~~Deloit, Crawford county, IA 51441, USA~42.0948;-95.3437~US-IA~42.0948,-95.3437~42.09480000~-95.34370000~51441~Crawford county~~~4.19~1620~4547
+Delta~Delta~~Delta, Keokuk county, IA 52550, USA~41.302;-92.3513~US-IA~41.302,-92.3513~41.30200000~-92.35130000~52550~Keokuk county~~~4.36~2442~4672
+Denison~Denison~~Denison, Crawford county, IA 51442, USA~42.0214;-95.3465~US-IA~42.0214,-95.3465~42.02140000~-95.34650000~51442~Crawford county~~~4.27~2022~4936
+Denmark~Denmark~~Denmark, Lee county, IA 52624, USA~40.7427;-91.3401~US-IA~40.7427,-91.3401~40.74270000~-91.34010000~52624~Lee county~~~4.33~1491~2745
+Denver~Denver~~Denver, Bremer county, IA 50622, USA~42.6691;-92.3342~US-IA~42.6691,-92.3342~42.66910000~-92.33420000~50622~Bremer county~~~4.2400002~2513~4229
+Derby~Derby~~Derby, Lucas county, IA 50068, USA~40.9432;-93.4981~US-IA~40.9432,-93.4981~40.94320000~-93.49810000~50068~Lucas county~~~4.29~2716~4027
+Des Moines~Des-Moines~~Des Moines, Polk county, IA 50301, USA~41.6038;-93.6317~US-IA~41.6038,-93.6317~41.60380000~-93.63170000~50301~Polk county~~~4.33~1044~4719
+Dewar~Dewar~~Dewar, Black Hawk county, IA 50623, USA~42.5276;-92.213~US-IA~42.5276,-92.213~42.52760000~-92.21300000~50623~Black Hawk county~~~4.33~1944~2257
+Dexter~Dexter~~Dexter, Dallas county, IA 50070, USA~41.5182;-94.2268~US-IA~41.5182,-94.2268~41.51820000~-94.22680000~50070~Dallas county~~~4.4700003~1514~2007
+Diagonal~Diagonal~~Diagonal, Ringgold county, IA 50845, USA~40.836;-94.3581~US-IA~40.836,-94.3581~40.83600000~-94.35810000~50845~Ringgold county~~~4.38~1322~4372
+Dickens~Dickens~~Dickens, Clay county, IA 51333, USA~43.1704;-94.971~US-IA~43.1704,-94.971~43.17040000~-94.97100000~51333~Clay county~~~4.4~1545~2849
+Dike~Dike~~Dike, Grundy county, IA 50624, USA~42.4058;-92.6843~US-IA~42.4058,-92.6843~42.40580000~-92.68430000~50624~Grundy county~~~4.34~2554~2290
+Dixon~Dixon~~Dixon, Scott county, IA 52745, USA~41.7703;-90.8261~US-IA~41.7703,-90.8261~41.77030000~-90.82610000~52745~Scott county~~~4.42~1073~3792
+Dolliver~Dolliver~~Dolliver, Emmet county, IA 50531, USA~43.4622;-94.6203~US-IA~43.4622,-94.6203~43.46220000~-94.62030000~50531~Emmet county~~~4.28~2247~3644
+Donahue~Donahue~~Donahue, Scott county, IA 52746, USA~41.7113;-90.6789~US-IA~41.7113,-90.6789~41.71130000~-90.67890000~52746~Scott county~~~4.3900003~2996~2596
+Donnellson~Donnellson~~Donnellson, Lee county, IA 52625, USA~40.6532;-91.5507~US-IA~40.6532,-91.5507~40.65320000~-91.55070000~52625~Lee county~~~4.27~1129~4051
+Doon~Doon~~Doon, Lyon county, IA 51235, USA~43.2761;-96.2291~US-IA~43.2761,-96.2291~43.27610000~-96.22910000~51235~Lyon county~~~4.23~1018~3422
+Dorchester~Dorchester~~Dorchester, Allamakee county, IA 52140, USA~43.4353;-91.5131~US-IA~43.4353,-91.5131~43.43530000~-91.51310000~52140~Allamakee county~~~4.13~1135~3739
+Douds~Douds~~Douds, Van Buren county, IA 52551, USA~40.8033;-92.0466~US-IA~40.8033,-92.0466~40.80330000~-92.04660000~52551~Van Buren county~~~4.27~2587~2383
+Dougherty~Dougherty~~Dougherty, Cerro Gordo county, IA 50433, USA~42.9221;-93.0419~US-IA~42.9221,-93.0419~42.92210000~-93.04190000~50433~Cerro Gordo county~~~4.27~2538~2955
+Dow City~Dow-City~~Dow City, Crawford county, IA 51528, USA~41.9257;-95.4764~US-IA~41.9257,-95.4764~41.92570000~-95.47640000~51528~Crawford county~~~4.28~1241~2888
+Dows~Dows~~Dows, Wright county, IA 50071, USA~42.654;-93.5021~US-IA~42.654,-93.5021~42.65400000~-93.50210000~50071~Wright county~~~4.42~1257~3728
+Drakesville~Drakesville~~Drakesville, Davis county, IA 52552, USA~40.777;-92.4557~US-IA~40.777,-92.4557~40.77700000~-92.45570000~52552~Davis county~~~4.3900003~1171~2980
+Dubuque~Dubuque~~Dubuque, Dubuque county, IA 52001, USA~42.5575;-90.6908~US-IA~42.5575,-90.6908~42.55750000~-90.69080000~52001~Dubuque county~~~4.1800003~1103~3670
+Dumont~Dumont~~Dumont, Butler county, IA 50625, USA~42.7614;-92.9806~US-IA~42.7614,-92.9806~42.76140000~-92.98060000~50625~Butler county~~~4.26~1822~2905
+Duncombe~Duncombe~~Duncombe, Webster county, IA 50532, USA~42.4701;-93.9933~US-IA~42.4701,-93.9933~42.47010000~-93.99330000~50532~Webster county~~~4.4900002~2141~2976
+Dundee~Dundee~~Dundee, Delaware county, IA 52038, USA~42.5782;-91.5492~US-IA~42.5782,-91.5492~42.57820000~-91.54920000~52038~Delaware county~~~4.4700003~1699~2141
+Dunkerton~Dunkerton~~Dunkerton, Black Hawk county, IA 50626, USA~42.5772;-92.168~US-IA~42.5772,-92.168~42.57720000~-92.16800000~50626~Black Hawk county~~~4.29~2955~3323
+Dunlap~Dunlap~~Dunlap, Harrison county, IA 51529, USA~41.8523;-95.6077~US-IA~41.8523,-95.6077~41.85230000~-95.60770000~51529~Harrison county~~~4.29~2119~3008
+Durango~Durango~~Durango, Dubuque county, IA 52039, USA~42.5405;-90.8393~US-IA~42.5405,-90.8393~42.54050000~-90.83930000~52039~Dubuque county~~~4.37~2123~4795
+Durant~Durant~~Durant, Cedar county, IA 52747, USA~41.6004;-90.9094~US-IA~41.6004,-90.9094~41.60040000~-90.90940000~52747~Cedar county~~~4.13~1443~3947
+Dyersville~Dyersville~~Dyersville, Dubuque county, IA 52040, USA~42.4925;-91.0803~US-IA~42.4925,-91.0803~42.49250000~-91.08030000~52040~Dubuque county~~~4.29~2885~3743
+Dysart~Dysart~~Dysart, Tama county, IA 52224, USA~42.1688;-92.3073~US-IA~42.1688,-92.3073~42.16880000~-92.30730000~52224~Tama county~~~4.4700003~1451~4388
+Eagle Grove~Eagle-Grove~~Eagle Grove, Wright county, IA 50533, USA~42.6632;-93.9023~US-IA~42.6632,-93.9023~42.66320000~-93.90230000~50533~Wright county~~~4.35~2772~4678
+Earlham~Earlham~~Earlham, Madison county, IA 50072, USA~41.4917;-94.1226~US-IA~41.4917,-94.1226~41.49170000~-94.12260000~50072~Madison county~~~4.2000003~1667~3090
+Earling~Earling~~Earling, Shelby county, IA 51530, USA~41.773;-95.418~US-IA~41.773,-95.418~41.77300000~-95.41800000~51530~Shelby county~~~4.5~2581~3992
+Earlville~Earlville~~Earlville, Delaware county, IA 52041, USA~42.4807;-91.2714~US-IA~42.4807,-91.2714~42.48070000~-91.27140000~52041~Delaware county~~~4.2000003~2119~3563
+Early~Early~~Early, Sac county, IA 50535, USA~42.4547;-95.0925~US-IA~42.4547,-95.0925~42.45470000~-95.09250000~50535~Sac county~~~4.4300003~1467~3734
+Eddyville~Eddyville~~Eddyville, Wapello county, IA 52553, USA~41.1558;-92.6351~US-IA~41.1558,-92.6351~41.15580000~-92.63510000~52553~Wapello county~~~4.5~1266~2857
+Edgewood~Edgewood~~Edgewood, Clayton county, IA 52042, USA~42.6492;-91.4~US-IA~42.6492,-91.4~42.64920000~-91.40000000~52042~Clayton county~~~4.25~1381~3961
+Elberon~Elberon~~Elberon, Tama county, IA 52225, USA~42.0117;-92.3503~US-IA~42.0117,-92.3503~42.01170000~-92.35030000~52225~Tama county~~~4.17~2671~4379
+Eldon~Eldon~~Eldon, Wapello county, IA 52554, USA~40.917;-92.2211~US-IA~40.917,-92.2211~40.91700000~-92.22110000~52554~Wapello county~~~4.17~1436~2867
+Eldora~Eldora~~Eldora, Hardin county, IA 50627, USA~42.3663;-93.0953~US-IA~42.3663,-93.0953~42.36630000~-93.09530000~50627~Hardin county~~~4.4300003~2309~2198
+Eldridge~Eldridge~~Eldridge, Scott county, IA 52748, USA~41.6639;-90.5567~US-IA~41.6639,-90.5567~41.66390000~-90.55670000~52748~Scott county~~~4.2400002~1158~3855
+Elgin~Elgin~~Elgin, Fayette county, IA 52141, USA~42.9588;-91.6365~US-IA~42.9588,-91.6365~42.95880000~-91.63650000~52141~Fayette county~~~4.15~1130~3586
+Elk Horn~Elk-Horn~~Elk Horn, Shelby county, IA 51531, USA~41.5951;-95.0604~US-IA~41.5951,-95.0604~41.59510000~-95.06040000~51531~Shelby county~~~4.38~1877~2060
+Elkader~Elkader~~Elkader, Clayton county, IA 52043, USA~42.8562;-91.4046~US-IA~42.8562,-91.4046~42.85620000~-91.40460000~52043~Clayton county~~~4.2400002~1241~2007
+Elkhart~Elkhart~~Elkhart, Polk county, IA 50073, USA~41.7895;-93.5152~US-IA~41.7895,-93.5152~41.78950000~-93.51520000~50073~Polk county~~~4.1800003~1450~2773
+Elkport~Elkport~~Elkport, Clayton county, IA 52044, USA~42.739;-91.2789~US-IA~42.739,-91.2789~42.73900000~-91.27890000~52044~Clayton county~~~4.21~2354~2416
+Elliott~Elliott~~Elliott, Montgomery county, IA 51532, USA~41.1527;-95.1628~US-IA~41.1527,-95.1628~41.15270000~-95.16280000~51532~Montgomery county~~~4.4700003~1578~3004
+Ellston~Ellston~~Ellston, Ringgold county, IA 50074, USA~40.8522;-94.0748~US-IA~40.8522,-94.0748~40.85220000~-94.07480000~50074~Ringgold county~~~4.21~2575~3891
+Ellsworth~Ellsworth~~Ellsworth, Hamilton county, IA 50075, USA~42.3134;-93.5807~US-IA~42.3134,-93.5807~42.31340000~-93.58070000~50075~Hamilton county~~~4.28~1306~2161
+Elma~Elma~~Elma, Howard county, IA 50628, USA~43.2453;-92.4391~US-IA~43.2453,-92.4391~43.24530000~-92.43910000~50628~Howard county~~~4.1800003~1423~4644
+Ely~Ely~~Ely, Linn county, IA 52227, USA~41.8962;-91.5674~US-IA~41.8962,-91.5674~41.89620000~-91.56740000~52227~Linn county~~~4.4100003~2555~4697
+Emerson~Emerson~~Emerson, Mills county, IA 51533, USA~41.0189;-95.4039~US-IA~41.0189,-95.4039~41.01890000~-95.40390000~51533~Mills county~~~4.4900002~1657~2872
+Emmetsburg~Emmetsburg~~Emmetsburg, Palo Alto county, IA 50536, USA~43.1085;-94.6788~US-IA~43.1085,-94.6788~43.10850000~-94.67880000~50536~Palo Alto county~~~4.1800003~2358~3114
+Epworth~Epworth~~Epworth, Dubuque county, IA 52045, USA~42.4408;-90.9287~US-IA~42.4408,-90.9287~42.44080000~-90.92870000~52045~Dubuque county~~~4.32~1608~4915
+Essex~Essex~~Essex, Page county, IA 51638, USA~40.8354;-95.302~US-IA~40.8354,-95.302~40.83540000~-95.30200000~51638~Page county~~~4.1400003~1993~2773
+Estherville~Estherville~~Estherville, Emmet county, IA 51334, USA~43.4075;-94.8241~US-IA~43.4075,-94.8241~43.40750000~-94.82410000~51334~Emmet county~~~4.4~2302~4014
+Evansdale~Evansdale~~Evansdale, Black Hawk county, IA 50707, USA~42.4829;-92.2771~US-IA~42.4829,-92.2771~42.48290000~-92.27710000~50707~Black Hawk county~~~4.2200003~2801~4341
+Everly~Everly~~Everly, Clay county, IA 51338, USA~43.1587;-95.3273~US-IA~43.1587,-95.3273~43.15870000~-95.32730000~51338~Clay county~~~4.36~1165~3117
+Exira~Exira~~Exira, Audubon county, IA 50076, USA~41.5908;-94.8749~US-IA~41.5908,-94.8749~41.59080000~-94.87490000~50076~Audubon county~~~4.32~2030~4372
+Exline~Exline~~Exline, Appanoose county, IA 52555, USA~40.6468;-92.8447~US-IA~40.6468,-92.8447~40.64680000~-92.84470000~52555~Appanoose county~~~4.37~2383~4425
+Fairbank~Fairbank~~Fairbank, Buchanan county, IA 50629, USA~42.6393;-92.0486~US-IA~42.6393,-92.0486~42.63930000~-92.04860000~50629~Buchanan county~~~4.15~2166~2036
+Fairfax~Fairfax~~Fairfax, Linn county, IA 52228, USA~41.9111;-91.7825~US-IA~41.9111,-91.7825~41.91110000~-91.78250000~52228~Linn county~~~4.34~2508~2033
+Fairfield~Fairfield~~Fairfield, Jefferson county, IA 52556, USA~41.0052;-91.9687~US-IA~41.0052,-91.9687~41.00520000~-91.96870000~52556~Jefferson county~~~4.1600003~2259~2193
+Farley~Farley~~Farley, Dubuque county, IA 52046, USA~42.4535;-91.0095~US-IA~42.4535,-91.0095~42.45350000~-91.00950000~52046~Dubuque county~~~4.4300003~2317~3060
+Farmersburg~Farmersburg~~Farmersburg, Clayton county, IA 52047, USA~42.9473;-91.3116~US-IA~42.9473,-91.3116~42.94730000~-91.31160000~52047~Clayton county~~~4.34~2045~4035
+Farmington~Farmington~~Farmington, Van Buren county, IA 52626, USA~40.6495;-91.7459~US-IA~40.6495,-91.7459~40.64950000~-91.74590000~52626~Van Buren county~~~4.2200003~1174~3600
+Farnhamville~Farnhamville~~Farnhamville, Calhoun county, IA 50538, USA~42.28;-94.4055~US-IA~42.28,-94.4055~42.28000000~-94.40550000~50538~Calhoun county~~~4.42~2019~2652
+Farragut~Farragut~~Farragut, Fremont county, IA 51639, USA~40.7213;-95.4804~US-IA~40.7213,-95.4804~40.72130000~-95.48040000~51639~Fremont county~~~4.17~2640~3977
+Fayette~Fayette~~Fayette, Fayette county, IA 52142, USA~42.8573;-91.8096~US-IA~42.8573,-91.8096~42.85730000~-91.80960000~52142~Fayette county~~~4.4~1456~2040
+Fenton~Fenton~~Fenton, Kossuth county, IA 50539, USA~43.217;-94.4111~US-IA~43.217,-94.4111~43.21700000~-94.41110000~50539~Kossuth county~~~4.2200003~2004~4335
+Ferguson~Ferguson~~Ferguson, Marshall county, IA 50078, USA~41.9409;-92.8673~US-IA~41.9409,-92.8673~41.94090000~-92.86730000~50078~Marshall county~~~4.48~2741~3589
+Fertile~Fertile~~Fertile, Worth county, IA 50434, USA~43.2634;-93.4215~US-IA~43.2634,-93.4215~43.26340000~-93.42150000~50434~Worth county~~~4.4500003~2365~2502
+Floris~Floris~~Floris, Davis county, IA 52560, USA~40.855;-92.2949~US-IA~40.855,-92.2949~40.85500000~-92.29490000~52560~Davis county~~~4.1200004~2578~3397
+Floyd~Floyd~~Floyd, Floyd county, IA 50435, USA~43.1271;-92.7369~US-IA~43.1271,-92.7369~43.12710000~-92.73690000~50435~Floyd county~~~4.2000003~1956~4949
+Fonda~Fonda~~Fonda, Pocahontas county, IA 50540, USA~42.5862;-94.8441~US-IA~42.5862,-94.8441~42.58620000~-94.84410000~50540~Pocahontas county~~~4.4900002~2159~3414
+Fontanelle~Fontanelle~~Fontanelle, Adair county, IA 50846, USA~41.2935;-94.5628~US-IA~41.2935,-94.5628~41.29350000~-94.56280000~50846~Adair county~~~4.17~2925~4874
+Forest City~Forest-City~~Forest City, Winnebago county, IA 50436, USA~43.2645;-93.6449~US-IA~43.2645,-93.6449~43.26450000~-93.64490000~50436~Winnebago county~~~4.4700003~1670~3605
+Fort Atkinson~Fort-Atkinson~~Fort Atkinson, Winneshiek county, IA 52144, USA~43.1436;-91.932~US-IA~43.1436,-91.932~43.14360000~-91.93200000~52144~Winneshiek county~~~4.1600003~1378~2020
+Fort Dodge~Fort-Dodge~~Fort Dodge, Webster county, IA 50501, USA~42.5066;-94.177~US-IA~42.5066,-94.177~42.50660000~-94.17700000~50501~Webster county~~~4.13~1871~2168
+Fort Madison~Fort-Madison~~Fort Madison, Lee county, IA 52627, USA~40.6321;-91.3356~US-IA~40.6321,-91.3356~40.63210000~-91.33560000~52627~Lee county~~~4.4300003~2349~3158
+Fostoria~Fostoria~~Fostoria, Clay county, IA 51340, USA~43.2125;-95.2102~US-IA~43.2125,-95.2102~43.21250000~-95.21020000~51340~Clay county~~~4.25~1781~4631
+Fredericksburg~Fredericksburg~~Fredericksburg, Chickasaw county, IA 50630, USA~42.9684;-92.1973~US-IA~42.9684,-92.1973~42.96840000~-92.19730000~50630~Chickasaw county~~~4.27~2269~2356
+Frederika~Frederika~~Frederika, Bremer county, IA 50631, USA~42.8018;-92.2685~US-IA~42.8018,-92.2685~42.80180000~-92.26850000~50631~Bremer county~~~4.15~1692~3436
+Fremont~Fremont~~Fremont, Mahaska county, IA 52561, USA~41.2125;-92.4355~US-IA~41.2125,-92.4355~41.21250000~-92.43550000~52561~Mahaska county~~~4.2400002~2622~2919
+Fruitland~Fruitland~~Fruitland, Muscatine county, IA 52749, USA~41.3568;-91.124~US-IA~41.3568,-91.124~41.35680000~-91.12400000~52749~Muscatine county~~~4.46~1921~3947
+Galt~Galt~~Galt, Wright county, IA 50101, USA~42.6887;-93.5961~US-IA~42.6887,-93.5961~42.68870000~-93.59610000~50101~Wright county~~~4.38~1584~2131
+Galva~Galva~~Galva, Ida county, IA 51020, USA~42.5056;-95.4146~US-IA~42.5056,-95.4146~42.50560000~-95.41460000~51020~Ida county~~~4.15~2690~3020
+Garber~Garber~~Garber, Clayton county, IA 52048, USA~42.7481;-91.2486~US-IA~42.7481,-91.2486~42.74810000~-91.24860000~52048~Clayton county~~~4.3900003~1218~4240
+Garden City~Garden-City~~Garden City, Hardin county, IA 50102, USA~42.2536;-93.4039~US-IA~42.2536,-93.4039~42.25360000~-93.40390000~50102~Hardin county~~~4.4300003~2750~3079
+Garden Grove~Garden-Grove~~Garden Grove, Decatur county, IA 50103, USA~40.7179;-93.6148~US-IA~40.7179,-93.6148~40.71790000~-93.61480000~50103~Decatur county~~~4.4100003~1361~4112
+Garnavillo~Garnavillo~~Garnavillo, Clayton county, IA 52049, USA~42.8727;-91.2292~US-IA~42.8727,-91.2292~42.87270000~-91.22920000~52049~Clayton county~~~4.42~1747~3365
+Garner~Garner~~Garner, Hancock county, IA 50438, USA~43.1143;-93.5537~US-IA~43.1143,-93.5537~43.11430000~-93.55370000~50438~Hancock county~~~4.1200004~2825~3789
+Garrison~Garrison~~Garrison, Benton county, IA 52229, USA~42.1427;-92.1402~US-IA~42.1427,-92.1402~42.14270000~-92.14020000~52229~Benton county~~~4.37~2136~2373
+Garwin~Garwin~~Garwin, Tama county, IA 50632, USA~42.0954;-92.6742~US-IA~42.0954,-92.6742~42.09540000~-92.67420000~50632~Tama county~~~4.32~2194~2495
+Geneva~Geneva~~Geneva, Franklin county, IA 50633, USA~42.6763;-93.1318~US-IA~42.6763,-93.1318~42.67630000~-93.13180000~50633~Franklin county~~~4.23~1633~4180
+George~George~~George, Lyon county, IA 51237, USA~43.3464;-96.0048~US-IA~43.3464,-96.0048~43.34640000~-96.00480000~51237~Lyon county~~~4.42~2287~3906
+Gibson~Gibson~~Gibson, Keokuk county, IA 50104, USA~41.4659;-92.3528~US-IA~41.4659,-92.3528~41.46590000~-92.35280000~50104~Keokuk county~~~4.1200004~1303~3557
+Gifford~Gifford~~Gifford, Hardin county, IA 50259, USA~42.2533;-93.0599~US-IA~42.2533,-93.0599~42.25330000~-93.05990000~50259~Hardin county~~~4.4100003~2457~3318
+Gilbert~Gilbert~~Gilbert, Story county, IA 50105, USA~42.1042;-93.649~US-IA~42.1042,-93.649~42.10420000~-93.64900000~50105~Story county~~~4.23~2480~2979
+Gilbertville~Gilbertville~~Gilbertville, Black Hawk county, IA 50634, USA~42.4159;-92.2157~US-IA~42.4159,-92.2157~42.41590000~-92.21570000~50634~Black Hawk county~~~4.35~2411~2011
+Gillett Grove~Gillett-Grove~~Gillett Grove, Clay county, IA 51341, USA~43.0378;-95.032~US-IA~43.0378,-95.032~43.03780000~-95.03200000~51341~Clay county~~~4.4900002~2518~2009
+Gilman~Gilman~~Gilman, Marshall county, IA 50106, USA~41.9003;-92.8248~US-IA~41.9003,-92.8248~41.90030000~-92.82480000~50106~Marshall county~~~4.4100003~2854~2925
+Gilmore City~Gilmore-City~~Gilmore City, Humboldt county, IA 50541, USA~42.7177;-94.425~US-IA~42.7177,-94.425~42.71770000~-94.42500000~50541~Humboldt county~~~4.4100003~1953~2454
+Gladbrook~Gladbrook~~Gladbrook, Tama county, IA 50635, USA~42.184;-92.7117~US-IA~42.184,-92.7117~42.18400000~-92.71170000~50635~Tama county~~~4.28~1933~2917
+Glenwood~Glenwood~~Glenwood, Mills county, IA 51534, USA~41.0475;-95.7425~US-IA~41.0475,-95.7425~41.04750000~-95.74250000~51534~Mills county~~~4.17~1643~2346
+Glidden~Glidden~~Glidden, Carroll county, IA 51443, USA~42.0606;-94.7293~US-IA~42.0606,-94.7293~42.06060000~-94.72930000~51443~Carroll county~~~4.29~1561~2717
+Goldfield~Goldfield~~Goldfield, Wright county, IA 50542, USA~42.734;-93.9211~US-IA~42.734,-93.9211~42.73400000~-93.92110000~50542~Wright county~~~4.4900002~2178~2966
+Goodell~Goodell~~Goodell, Hancock county, IA 50439, USA~42.9221;-93.6171~US-IA~42.9221,-93.6171~42.92210000~-93.61710000~50439~Hancock county~~~4.4900002~1947~4922
+Goose Lake~Goose-Lake~~Goose Lake, Clinton county, IA 52750, USA~41.9938;-90.4111~US-IA~41.9938,-90.4111~41.99380000~-90.41110000~52750~Clinton county~~~4.1200004~1912~3206
+Gowrie~Gowrie~~Gowrie, Webster county, IA 50543, USA~42.2783;-94.289~US-IA~42.2783,-94.289~42.27830000~-94.28900000~50543~Webster county~~~4.36~1782~4375
+Graettinger~Graettinger~~Graettinger, Palo Alto county, IA 51342, USA~43.2373;-94.7539~US-IA~43.2373,-94.7539~43.23730000~-94.75390000~51342~Palo Alto county~~~4.36~2473~2657
+Grafton~Grafton~~Grafton, Worth county, IA 50440, USA~43.3288;-93.0724~US-IA~43.3288,-93.0724~43.32880000~-93.07240000~50440~Worth county~~~4.15~2065~2875
+Grand Junction~Grand-Junction~~Grand Junction, Greene county, IA 50107, USA~42.0323;-94.232~US-IA~42.0323,-94.232~42.03230000~-94.23200000~50107~Greene county~~~4.23~1704~2019
+Grand Mound~Grand-Mound~~Grand Mound, Clinton county, IA 52751, USA~41.8444;-90.6777~US-IA~41.8444,-90.6777~41.84440000~-90.67770000~52751~Clinton county~~~4.1800003~2702~4372
+Grand River~Grand-River~~Grand River, Decatur county, IA 50108, USA~40.8092;-93.9586~US-IA~40.8092,-93.9586~40.80920000~-93.95860000~50108~Decatur county~~~4.4100003~2553~3885
+Grandview~Grandview~~Grandview, Louisa county, IA 52752, USA~41.2797;-91.1882~US-IA~41.2797,-91.1882~41.27970000~-91.18820000~52752~Louisa county~~~4.2400002~1149~3542
+Granger~Granger~~Granger, Dallas county, IA 50109, USA~41.7619;-93.7745~US-IA~41.7619,-93.7745~41.76190000~-93.77450000~50109~Dallas county~~~4.19~2941~2236
+Grant~Grant~~Grant, Montgomery county, IA 50847, USA~41.1121;-94.9848~US-IA~41.1121,-94.9848~41.11210000~-94.98480000~50847~Montgomery county~~~4.32~1539~3308
+Granville~Granville~~Granville, Sioux county, IA 51022, USA~42.9837;-95.9036~US-IA~42.9837,-95.9036~42.98370000~-95.90360000~51022~Sioux county~~~4.38~2275~2295
+Gravity~Gravity~~Gravity, Taylor county, IA 50848, USA~40.755;-94.7425~US-IA~40.755,-94.7425~40.75500000~-94.74250000~50848~Taylor county~~~4.33~2684~3383
+Gray~Gray~~Gray, Audubon county, IA 50110, USA~41.8375;-94.9765~US-IA~41.8375,-94.9765~41.83750000~-94.97650000~50110~Audubon county~~~4.32~2509~2637
+Greeley~Greeley~~Greeley, Delaware county, IA 52050, USA~42.6029;-91.3084~US-IA~42.6029,-91.3084~42.60290000~-91.30840000~52050~Delaware county~~~4.2400002~1439~2671
+Greene~Greene~~Greene, Butler county, IA 50636, USA~42.8976;-92.8056~US-IA~42.8976,-92.8056~42.89760000~-92.80560000~50636~Butler county~~~4.46~2566~3692
+Greenfield~Greenfield~~Greenfield, Adair county, IA 50849, USA~41.3087;-94.4617~US-IA~41.3087,-94.4617~41.30870000~-94.46170000~50849~Adair county~~~4.46~2987~2740
+Greenville~Greenville~~Greenville, Clay county, IA 51343, USA~43.0413;-95.0326~US-IA~43.0413,-95.0326~43.04130000~-95.03260000~51343~Clay county~~~4.4100003~2661~3294
+Grimes~Grimes~~Grimes, Polk county, IA 50111, USA~41.6853;-93.7821~US-IA~41.6853,-93.7821~41.68530000~-93.78210000~50111~Polk county~~~4.2200003~2474~4145
+Grinnell~Grinnell~~Grinnell, Poweshiek county, IA 50112, USA~41.7673;-92.765~US-IA~41.7673,-92.765~41.76730000~-92.76500000~50112~Poweshiek county~~~4.19~2410~3123
+Griswold~Griswold~~Griswold, Cass county, IA 51535, USA~41.2363;-95.1393~US-IA~41.2363,-95.1393~41.23630000~-95.13930000~51535~Cass county~~~4.15~1781~4225
+Grundy Center~Grundy-Center~~Grundy Center, Grundy county, IA 50638, USA~42.3603;-92.7738~US-IA~42.3603,-92.7738~42.36030000~-92.77380000~50638~Grundy county~~~4.4500003~1278~2897
+Gruver~Gruver~~Gruver, Emmet county, IA 51344, USA~43.3961;-94.7502~US-IA~43.3961,-94.7502~43.39610000~-94.75020000~51344~Emmet county~~~4.4~1647~3563
+Guernsey~Guernsey~~Guernsey, Poweshiek county, IA 52221, USA~41.6487;-92.3419~US-IA~41.6487,-92.3419~41.64870000~-92.34190000~52221~Poweshiek county~~~4.29~2527~2341
+Guthrie Center~Guthrie-Center~~Guthrie Center, Guthrie county, IA 50115, USA~41.6774;-94.5~US-IA~41.6774,-94.5~41.67740000~-94.50000000~50115~Guthrie county~~~4.4300003~2621~3739
+Guttenberg~Guttenberg~~Guttenberg, Clayton county, IA 52052, USA~42.711;-91.0787~US-IA~42.711,-91.0787~42.71100000~-91.07870000~52052~Clayton county~~~4.2400002~2979~4993
+Halbur~Halbur~~Halbur, Carroll county, IA 51444, USA~42.0083;-94.9738~US-IA~42.0083,-94.9738~42.00830000~-94.97380000~51444~Carroll county~~~4.38~2049~4324
+Hamburg~Hamburg~~Hamburg, Fremont county, IA 51640, USA~40.6367;-95.6539~US-IA~40.6367,-95.6539~40.63670000~-95.65390000~51640~Fremont county~~~4.31~1003~3762
+Hamilton~Hamilton~~Hamilton, Marion county, IA 50116, USA~41.1762;-92.93~US-IA~41.1762,-92.93~41.17620000~-92.93000000~50116~Marion county~~~4.4300003~2592~4400
+Hamlin~Hamlin~~Hamlin, Audubon county, IA 50117, USA~41.6468;-94.919~US-IA~41.6468,-94.919~41.64680000~-94.91900000~50117~Audubon county~~~4.44~2732~3329
+Hampton~Hampton~~Hampton, Franklin county, IA 50441, USA~42.7454;-93.2081~US-IA~42.7454,-93.2081~42.74540000~-93.20810000~50441~Franklin county~~~4.4500003~2711~4462
+Hancock~Hancock~~Hancock, Pottawattamie county, IA 51536, USA~41.3895;-95.3571~US-IA~41.3895,-95.3571~41.38950000~-95.35710000~51536~Pottawattamie county~~~4.2400002~2169~4954
+Hanlontown~Hanlontown~~Hanlontown, Worth county, IA 50444, USA~43.2798;-93.3776~US-IA~43.2798,-93.3776~43.27980000~-93.37760000~50444~Worth county~~~4.17~2753~2611
+Harcourt~Harcourt~~Harcourt, Webster county, IA 50544, USA~42.2636;-94.1782~US-IA~42.2636,-94.1782~42.26360000~-94.17820000~50544~Webster county~~~4.3900003~1628~4932
+Hardy~Hardy~~Hardy, Humboldt county, IA 50545, USA~42.8075;-94.0539~US-IA~42.8075,-94.0539~42.80750000~-94.05390000~50545~Humboldt county~~~4.2200003~1065~4580
+Harlan~Harlan~~Harlan, Shelby county, IA 51537, USA~41.6518;-95.3276~US-IA~41.6518,-95.3276~41.65180000~-95.32760000~51537~Shelby county~~~4.1400003~2565~2565
+Harper~Harper~~Harper, Keokuk county, IA 52231, USA~41.3776;-92.0255~US-IA~41.3776,-92.0255~41.37760000~-92.02550000~52231~Keokuk county~~~4.23~2985~4942
+Harpers Ferry~Harpers-Ferry~~Harpers Ferry, Allamakee county, IA 52146, USA~43.2014;-91.1474~US-IA~43.2014,-91.1474~43.20140000~-91.14740000~52146~Allamakee county~~~4.34~1534~4743
+Harris~Harris~~Harris, Osceola county, IA 51345, USA~43.4447;-95.4343~US-IA~43.4447,-95.4343~43.44470000~-95.43430000~51345~Osceola county~~~4.1200004~2158~3592
+Hartford~Hartford~~Hartford, Warren county, IA 50118, USA~41.4617;-93.3897~US-IA~41.4617,-93.3897~41.46170000~-93.38970000~50118~Warren county~~~4.1800003~1388~4815
+Hartley~Hartley~~Hartley, Obrien county, IA 51346, USA~43.1835;-95.4784~US-IA~43.1835,-95.4784~43.18350000~-95.47840000~51346~Obrien county~~~4.2000003~2305~4257
+Hartwick~Hartwick~~Hartwick, Poweshiek county, IA 52232, USA~41.8199;-92.3569~US-IA~41.8199,-92.3569~41.81990000~-92.35690000~52232~Poweshiek county~~~4.4300003~1398~4673
+Harvey~Harvey~~Harvey, Marion county, IA 50119, USA~41.3176;-92.9306~US-IA~41.3176,-92.9306~41.31760000~-92.93060000~50119~Marion county~~~4.4300003~2732~3067
+Hastings~Hastings~~Hastings, Mills county, IA 51540, USA~41.0193;-95.5009~US-IA~41.0193,-95.5009~41.01930000~-95.50090000~51540~Mills county~~~4.4900002~2122~2075
+Havelock~Havelock~~Havelock, Pocahontas county, IA 50546, USA~42.8428;-94.7345~US-IA~42.8428,-94.7345~42.84280000~-94.73450000~50546~Pocahontas county~~~4.2400002~2967~4520
+Haverhill~Haverhill~~Haverhill, Marshall county, IA 50120, USA~41.9309;-92.979~US-IA~41.9309,-92.979~41.93090000~-92.97900000~50120~Marshall county~~~4.1600003~1051~2171
+Hawarden~Hawarden~~Hawarden, Sioux county, IA 51023, USA~43.0007;-96.4806~US-IA~43.0007,-96.4806~43.00070000~-96.48060000~51023~Sioux county~~~4.29~1876~2349
+Hawkeye~Hawkeye~~Hawkeye, Fayette county, IA 52147, USA~42.9404;-91.9482~US-IA~42.9404,-91.9482~42.94040000~-91.94820000~52147~Fayette county~~~4.32~2723~4899
+Hayesville~Hayesville~~Hayesville, Keokuk county, IA 52562, USA~41.3326;-92.1819~US-IA~41.3326,-92.1819~41.33260000~-92.18190000~52562~Keokuk county~~~4.4~2275~4482
+Hazleton~Hazleton~~Hazleton, Buchanan county, IA 50641, USA~42.6172;-91.9038~US-IA~42.6172,-91.9038~42.61720000~-91.90380000~50641~Buchanan county~~~4.25~1659~4594
+Hedrick~Hedrick~~Hedrick, Keokuk county, IA 52563, USA~41.1823;-92.2847~US-IA~41.1823,-92.2847~41.18230000~-92.28470000~52563~Keokuk county~~~4.23~2863~3916
+Henderson~Henderson~~Henderson, Mills county, IA 51541, USA~41.1415;-95.4312~US-IA~41.1415,-95.4312~41.14150000~-95.43120000~51541~Mills county~~~4.1800003~1388~2754
+Hiawatha~Hiawatha~~Hiawatha, Linn county, IA 52233, USA~42.0401;-91.6762~US-IA~42.0401,-91.6762~42.04010000~-91.67620000~52233~Linn county~~~4.13~1420~3804
+Highlandville~Highlandville~~Highlandville, Winneshiek county, IA 52149, USA~43.3054;-91.7899~US-IA~43.3054,-91.7899~43.30540000~-91.78990000~52149~Winneshiek county~~~4.4900002~2430~2573
+Hills~Hills~~Hills, Johnson county, IA 52235, USA~41.553;-91.5323~US-IA~41.553,-91.5323~41.55300000~-91.53230000~52235~Johnson county~~~4.2400002~1457~4954
+Hillsboro~Hillsboro~~Hillsboro, Henry county, IA 52630, USA~40.8278;-91.7082~US-IA~40.8278,-91.7082~40.82780000~-91.70820000~52630~Henry county~~~4.25~2059~2430
+Hinton~Hinton~~Hinton, Plymouth county, IA 51024, USA~42.6212;-96.296~US-IA~42.6212,-96.296~42.62120000~-96.29600000~51024~Plymouth county~~~4.2200003~1619~3356
+Holland~Holland~~Holland, Grundy county, IA 50642, USA~42.4007;-92.8003~US-IA~42.4007,-92.8003~42.40070000~-92.80030000~50642~Grundy county~~~4.25~1684~3139
+Holstein~Holstein~~Holstein, Ida county, IA 51025, USA~42.485;-95.5458~US-IA~42.485,-95.5458~42.48500000~-95.54580000~51025~Ida county~~~4.26~1760~3574
+Holy Cross~Holy-Cross~~Holy Cross, Dubuque county, IA 52053, USA~42.5914;-90.9638~US-IA~42.5914,-90.9638~42.59140000~-90.96380000~52053~Dubuque county~~~4.37~2017~4894
+Homestead~Homestead~~Homestead, Iowa county, IA 52236, USA~41.7254;-91.8866~US-IA~41.7254,-91.8866~41.72540000~-91.88660000~52236~Iowa county~~~4.38~1618~2266
+Honey Creek~Honey-Creek~~Honey Creek, Pottawattamie county, IA 51542, USA~41.477;-95.9204~US-IA~41.477,-95.9204~41.47700000~-95.92040000~51542~Pottawattamie county~~~4.4100003~2658~4605
+Hopkinton~Hopkinton~~Hopkinton, Delaware county, IA 52237, USA~42.3201;-91.1273~US-IA~42.3201,-91.1273~42.32010000~-91.12730000~52237~Delaware county~~~4.4900002~1977~2276
+Hornick~Hornick~~Hornick, Woodbury county, IA 51026, USA~42.3491;-96.0653~US-IA~42.3491,-96.0653~42.34910000~-96.06530000~51026~Woodbury county~~~4.37~1520~3196
+Hospers~Hospers~~Hospers, Sioux county, IA 51238, USA~43.07;-95.9045~US-IA~43.07,-95.9045~43.07000000~-95.90450000~51238~Sioux county~~~4.1600003~2649~2561
+Houghton~Houghton~~Houghton, Lee county, IA 52631, USA~40.7709;-91.6611~US-IA~40.7709,-91.6611~40.77090000~-91.66110000~52631~Lee county~~~4.35~1790~4460
+Hubbard~Hubbard~~Hubbard, Hardin county, IA 50122, USA~42.3053;-93.2973~US-IA~42.3053,-93.2973~42.30530000~-93.29730000~50122~Hardin county~~~4.33~2728~3903
+Hudson~Hudson~~Hudson, Black Hawk county, IA 50643, USA~42.3831;-92.4613~US-IA~42.3831,-92.4613~42.38310000~-92.46130000~50643~Black Hawk county~~~4.4~1455~4886
+Hull~Hull~~Hull, Sioux county, IA 51239, USA~43.1926;-96.1305~US-IA~43.1926,-96.1305~43.19260000~-96.13050000~51239~Sioux county~~~4.1400003~1870~4636
+Humboldt~Humboldt~~Humboldt, Humboldt county, IA 50548, USA~42.7229;-94.2201~US-IA~42.7229,-94.2201~42.72290000~-94.22010000~50548~Humboldt county~~~4.1400003~2804~2193
+Humeston~Humeston~~Humeston, Wayne county, IA 50123, USA~40.8469;-93.5035~US-IA~40.8469,-93.5035~40.84690000~-93.50350000~50123~Wayne county~~~4.29~1594~2740
+Huxley~Huxley~~Huxley, Story county, IA 50124, USA~41.8976;-93.605~US-IA~41.8976,-93.605~41.89760000~-93.60500000~50124~Story county~~~4.3900003~1939~4815
+Ida Grove~Ida-Grove~~Ida Grove, Ida county, IA 51445, USA~42.3418;-95.4653~US-IA~42.3418,-95.4653~42.34180000~-95.46530000~51445~Ida county~~~4.4~1192~2740
+Imogene~Imogene~~Imogene, Fremont county, IA 51645, USA~40.8792;-95.4263~US-IA~40.8792,-95.4263~40.87920000~-95.42630000~51645~Fremont county~~~4.44~2089~2903
+Independence~Independence~~Independence, Buchanan county, IA 50644, USA~42.469;-91.8958~US-IA~42.469,-91.8958~42.46900000~-91.89580000~50644~Buchanan county~~~4.4300003~2456~3475
+Indianola~Indianola~~Indianola, Warren county, IA 50125, USA~41.315;-93.572~US-IA~41.315,-93.572~41.31500000~-93.57200000~50125~Warren county~~~4.42~2945~3925
+Inwood~Inwood~~Inwood, Lyon county, IA 51240, USA~43.3054;-96.4291~US-IA~43.3054,-96.4291~43.30540000~-96.42910000~51240~Lyon county~~~4.33~2367~2254
+Ionia~Ionia~~Ionia, Chickasaw county, IA 50645, USA~43.0471;-92.4852~US-IA~43.0471,-92.4852~43.04710000~-92.48520000~50645~Chickasaw county~~~4.4100003~1524~4277
+Iowa City~Iowa-City~~Iowa City, Johnson county, IA 52240, USA~41.658;-91.5281~US-IA~41.658,-91.5281~41.65800000~-91.52810000~52240~Johnson county~~~4.27~2778~2718
+Iowa Falls~Iowa-Falls~~Iowa Falls, Hardin county, IA 50126, USA~42.5122;-93.2914~US-IA~42.5122,-93.2914~42.51220000~-93.29140000~50126~Hardin county~~~4.37~1063~2647
+Ira~Ira~~Ira, Jasper county, IA 50127, USA~41.7345;-93.1703~US-IA~41.7345,-93.1703~41.73450000~-93.17030000~50127~Jasper county~~~4.3~2779~3882
+Ireton~Ireton~~Ireton, Sioux county, IA 51027, USA~42.9755;-96.3178~US-IA~42.9755,-96.3178~42.97550000~-96.31780000~51027~Sioux county~~~4.32~2612~4821
+Irwin~Irwin~~Irwin, Shelby county, IA 51446, USA~41.7911;-95.2101~US-IA~41.7911,-95.2101~41.79110000~-95.21010000~51446~Shelby county~~~4.3900003~1534~3644
+Jamaica~Jamaica~~Jamaica, Guthrie county, IA 50128, USA~41.8333;-94.3389~US-IA~41.8333,-94.3389~41.83330000~-94.33890000~50128~Guthrie county~~~4.2200003~1921~4885
+Janesville~Janesville~~Janesville, Bremer county, IA 50647, USA~42.6326;-92.4955~US-IA~42.6326,-92.4955~42.63260000~-92.49550000~50647~Bremer county~~~4.4700003~2335~2263
+Jefferson~Jefferson~~Jefferson, Greene county, IA 50129, USA~42.0124;-94.3783~US-IA~42.0124,-94.3783~42.01240000~-94.37830000~50129~Greene county~~~4.28~2612~4459
+Jesup~Jesup~~Jesup, Buchanan county, IA 50648, USA~42.4587;-92.0632~US-IA~42.4587,-92.0632~42.45870000~-92.06320000~50648~Buchanan county~~~4.13~1356~3462
+Jewell~Jewell~~Jewell, Hamilton county, IA 50130, USA~42.3048;-93.64~US-IA~42.3048,-93.64~42.30480000~-93.64000000~50130~Hamilton county~~~4.1400003~2336~4660
+Johnston~Johnston~~Johnston, Polk county, IA 50131, USA~41.6826;-93.7096~US-IA~41.6826,-93.7096~41.68260000~-93.70960000~50131~Polk county~~~4.48~2617~4387
+Joice~Joice~~Joice, Worth county, IA 50446, USA~43.3615;-93.4541~US-IA~43.3615,-93.4541~43.36150000~-93.45410000~50446~Worth county~~~4.48~2115~3387
+Jolley~Jolley~~Jolley, Calhoun county, IA 50551, USA~42.5126;-94.7458~US-IA~42.5126,-94.7458~42.51260000~-94.74580000~50551~Calhoun county~~~4.4~1440~2079
+Kalona~Kalona~~Kalona, Washington county, IA 52247, USA~41.4873;-91.7079~US-IA~41.4873,-91.7079~41.48730000~-91.70790000~52247~Washington county~~~4.2400002~2029~4005
+Kamrar~Kamrar~~Kamrar, Hamilton county, IA 50132, USA~42.3902;-93.7303~US-IA~42.3902,-93.7303~42.39020000~-93.73030000~50132~Hamilton county~~~4.4~1247~4271
+Kanawha~Kanawha~~Kanawha, Hancock county, IA 50447, USA~42.9357;-93.7905~US-IA~42.9357,-93.7905~42.93570000~-93.79050000~50447~Hancock county~~~4.4300003~1976~4836
+Kellerton~Kellerton~~Kellerton, Ringgold county, IA 50133, USA~40.649;-94.0708~US-IA~40.649,-94.0708~40.64900000~-94.07080000~50133~Ringgold county~~~4.21~1019~4995
+Kelley~Kelley~~Kelley, Story county, IA 50134, USA~41.9404;-93.6606~US-IA~41.9404,-93.6606~41.94040000~-93.66060000~50134~Story county~~~4.33~1283~3048
+Kellogg~Kellogg~~Kellogg, Jasper county, IA 50135, USA~41.731;-92.9201~US-IA~41.731,-92.9201~41.73100000~-92.92010000~50135~Jasper county~~~4.48~2928~2871
+Kensett~Kensett~~Kensett, Worth county, IA 50448, USA~43.3564;-93.2271~US-IA~43.3564,-93.2271~43.35640000~-93.22710000~50448~Worth county~~~4.44~2106~3714
+Keokuk~Keokuk~~Keokuk, Lee county, IA 52632, USA~40.4728;-91.4486~US-IA~40.4728,-91.4486~40.47280000~-91.44860000~52632~Lee county~~~4.4900002~2718~4982
+Keosauqua~Keosauqua~~Keosauqua, Van Buren county, IA 52565, USA~40.735;-91.961~US-IA~40.735,-91.961~40.73500000~-91.96100000~52565~Van Buren county~~~4.1400003~1971~3546
+Keota~Keota~~Keota, Keokuk county, IA 52248, USA~41.3635;-91.9542~US-IA~41.3635,-91.9542~41.36350000~-91.95420000~52248~Keokuk county~~~4.23~2382~2144
+Kesley~Kesley~~Kesley, Butler county, IA 50649, USA~42.6873;-92.8496~US-IA~42.6873,-92.8496~42.68730000~-92.84960000~50649~Butler county~~~4.2200003~2437~2027
+Keswick~Keswick~~Keswick, Keokuk county, IA 50136, USA~41.4699;-92.244~US-IA~41.4699,-92.244~41.46990000~-92.24400000~50136~Keokuk county~~~4.4100003~1852~2093
+Keystone~Keystone~~Keystone, Benton county, IA 52249, USA~42.0024;-92.202~US-IA~42.0024,-92.202~42.00240000~-92.20200000~52249~Benton county~~~4.35~1914~2512
+Killduff~Killduff~~Killduff, Jasper county, IA 50137, USA~41.7218;-93.0339~US-IA~41.7218,-93.0339~41.72180000~-93.03390000~50137~Jasper county~~~4.34~2684~2307
+Kimballton~Kimballton~~Kimballton, Audubon county, IA 51543, USA~41.6442;-95.0324~US-IA~41.6442,-95.0324~41.64420000~-95.03240000~51543~Audubon county~~~4.1600003~1536~2217
+Kingsley~Kingsley~~Kingsley, Plymouth county, IA 51028, USA~42.6319;-96.0612~US-IA~42.6319,-96.0612~42.63190000~-96.06120000~51028~Plymouth county~~~4.42~2115~3809
+Kirkman~Kirkman~~Kirkman, Shelby county, IA 51447, USA~41.7299;-95.2648~US-IA~41.7299,-95.2648~41.72990000~-95.26480000~51447~Shelby county~~~4.1400003~1301~3832
+Kirkville~Kirkville~~Kirkville, Wapello county, IA 52566, USA~41.1197;-92.4643~US-IA~41.1197,-92.4643~41.11970000~-92.46430000~52566~Wapello county~~~4.4900002~1233~2470
+Kiron~Kiron~~Kiron, Crawford county, IA 51448, USA~42.188;-95.3179~US-IA~42.188,-95.3179~42.18800000~-95.31790000~51448~Crawford county~~~4.44~2035~2095
+Klemme~Klemme~~Klemme, Hancock county, IA 50449, USA~43.0458;-93.4759~US-IA~43.0458,-93.4759~43.04580000~-93.47590000~50449~Hancock county~~~4.1600003~2159~4230
+Knierim~Knierim~~Knierim, Calhoun county, IA 50552, USA~42.4574;-94.4591~US-IA~42.4574,-94.4591~42.45740000~-94.45910000~50552~Calhoun county~~~4.48~1117~3715
+Knoxville~Knoxville~~Knoxville, Marion county, IA 50138, USA~41.3203;-93.1035~US-IA~41.3203,-93.1035~41.32030000~-93.10350000~50138~Marion county~~~4.19~2784~2306
+La Motte~La-Motte~~La Motte, Jackson county, IA 52054, USA~42.3793;-90.6702~US-IA~42.3793,-90.6702~42.37930000~-90.67020000~52054~Jackson county~~~4.42~1037~2123
+La Porte City~La-Porte-City~~La Porte City, Black Hawk county, IA 50651, USA~42.3338;-92.1944~US-IA~42.3338,-92.1944~42.33380000~-92.19440000~50651~Black Hawk county~~~4.26~2947~4492
+Lacona~Lacona~~Lacona, Warren county, IA 50139, USA~41.1969;-93.3941~US-IA~41.1969,-93.3941~41.19690000~-93.39410000~50139~Warren county~~~4.37~2630~4817
+Ladora~Ladora~~Ladora, Iowa county, IA 52251, USA~41.7605;-92.197~US-IA~41.7605,-92.197~41.76050000~-92.19700000~52251~Iowa county~~~4.19~1530~2431
+Lake City~Lake-City~~Lake City, Calhoun county, IA 51449, USA~42.2714;-94.7352~US-IA~42.2714,-94.7352~42.27140000~-94.73520000~51449~Calhoun county~~~4.4100003~2460~3760
+Lake Mills~Lake-Mills~~Lake Mills, Winnebago county, IA 50450, USA~43.4211;-93.5329~US-IA~43.4211,-93.5329~43.42110000~-93.53290000~50450~Winnebago county~~~4.27~1837~4141
+Lake Park~Lake-Park~~Lake Park, Dickinson county, IA 51347, USA~43.4484;-95.3311~US-IA~43.4484,-95.3311~43.44840000~-95.33110000~51347~Dickinson county~~~4.2400002~1802~4313
+Lake View~Lake-View~~Lake View, Sac county, IA 51450, USA~42.3047;-95.0454~US-IA~42.3047,-95.0454~42.30470000~-95.04540000~51450~Sac county~~~4.44~2091~4580
+Lakota~Lakota~~Lakota, Kossuth county, IA 50451, USA~43.4104;-94.0535~US-IA~43.4104,-94.0535~43.41040000~-94.05350000~50451~Kossuth county~~~4.33~2845~4766
+Lamoni~Lamoni~~Lamoni, Decatur county, IA 50140, USA~40.6222;-93.932~US-IA~40.6222,-93.932~40.62220000~-93.93200000~50140~Decatur county~~~4.28~1165~2836
+Lamont~Lamont~~Lamont, Buchanan county, IA 50650, USA~42.6003;-91.6439~US-IA~42.6003,-91.6439~42.60030000~-91.64390000~50650~Buchanan county~~~4.28~1500~3026
+Lanesboro~Lanesboro~~Lanesboro, Carroll county, IA 51451, USA~42.1841;-94.694~US-IA~42.1841,-94.694~42.18410000~-94.69400000~51451~Carroll county~~~4.3900003~1748~4868
+Langworthy~Langworthy~~Langworthy, Jones county, IA 52252, USA~42.1942;-91.2252~US-IA~42.1942,-91.2252~42.19420000~-91.22520000~52252~Jones county~~~4.15~2667~3528
+Lansing~Lansing~~Lansing, Allamakee county, IA 52151, USA~43.3591;-91.2219~US-IA~43.3591,-91.2219~43.35910000~-91.22190000~52151~Allamakee county~~~4.37~2729~2943
+Larchwood~Larchwood~~Larchwood, Lyon county, IA 51241, USA~43.4535;-96.435~US-IA~43.4535,-96.435~43.45350000~-96.43500000~51241~Lyon county~~~4.34~1727~2435
+Larrabee~Larrabee~~Larrabee, Cherokee county, IA 51029, USA~42.8626;-95.5441~US-IA~42.8626,-95.5441~42.86260000~-95.54410000~51029~Cherokee county~~~4.4500003~2115~2611
+Latimer~Latimer~~Latimer, Franklin county, IA 50452, USA~42.7752;-93.3212~US-IA~42.7752,-93.3212~42.77520000~-93.32120000~50452~Franklin county~~~4.3~2972~4753
+Laurel~Laurel~~Laurel, Marshall county, IA 50141, USA~41.8882;-92.9427~US-IA~41.8882,-92.9427~41.88820000~-92.94270000~50141~Marshall county~~~4.11~2904~4002
+Laurens~Laurens~~Laurens, Pocahontas county, IA 50554, USA~42.8498;-94.8493~US-IA~42.8498,-94.8493~42.84980000~-94.84930000~50554~Pocahontas county~~~4.11~1437~4380
+Lawler~Lawler~~Lawler, Chickasaw county, IA 52154, USA~43.1019;-92.1389~US-IA~43.1019,-92.1389~43.10190000~-92.13890000~52154~Chickasaw county~~~4.1600003~1412~2334
+Lawton~Lawton~~Lawton, Woodbury county, IA 51030, USA~42.4797;-96.1857~US-IA~42.4797,-96.1857~42.47970000~-96.18570000~51030~Woodbury county~~~4.31~1582~4946
+Le Claire~Le-Claire~~Le Claire, Scott county, IA 52753, USA~41.6069;-90.3709~US-IA~41.6069,-90.3709~41.60690000~-90.37090000~52753~Scott county~~~4.44~1330~3333
+Le Grand~Le-Grand~~Le Grand, Marshall county, IA 50142, USA~42.0052;-92.7757~US-IA~42.0052,-92.7757~42.00520000~-92.77570000~50142~Marshall county~~~4.35~1563~2792
+Le Mars~Le-Mars~~Le Mars, Plymouth county, IA 51031, USA~42.7866;-96.1726~US-IA~42.7866,-96.1726~42.78660000~-96.17260000~51031~Plymouth county~~~4.11~1147~3297
+Ledyard~Ledyard~~Ledyard, Kossuth county, IA 50556, USA~43.4409;-94.1484~US-IA~43.4409,-94.1484~43.44090000~-94.14840000~50556~Kossuth county~~~4.4500003~2472~2107
+Lehigh~Lehigh~~Lehigh, Webster county, IA 50557, USA~42.4702;-93.9871~US-IA~42.4702,-93.9871~42.47020000~-93.98710000~50557~Webster county~~~4.38~2393~4736
+Leighton~Leighton~~Leighton, Mahaska county, IA 50143, USA~41.3761;-92.8163~US-IA~41.3761,-92.8163~41.37610000~-92.81630000~50143~Mahaska county~~~4.1800003~1426~2936
+Leland~Leland~~Leland, Winnebago county, IA 50453, USA~43.3383;-93.6334~US-IA~43.3383,-93.6334~43.33830000~-93.63340000~50453~Winnebago county~~~4.26~1688~3978
+Lenox~Lenox~~Lenox, Taylor county, IA 50851, USA~40.8821;-94.561~US-IA~40.8821,-94.561~40.88210000~-94.56100000~50851~Taylor county~~~4.2400002~1429~2941
+Leon~Leon~~Leon, Decatur county, IA 50144, USA~40.7409;-93.7451~US-IA~40.7409,-93.7451~40.74090000~-93.74510000~50144~Decatur county~~~4.1400003~2861~2505
+Lester~Lester~~Lester, Lyon county, IA 51242, USA~43.438;-96.3316~US-IA~43.438,-96.3316~43.43800000~-96.33160000~51242~Lyon county~~~4.3~1665~2156
+Letts~Letts~~Letts, Louisa county, IA 52754, USA~41.3283;-91.235~US-IA~41.3283,-91.235~41.32830000~-91.23500000~52754~Louisa county~~~4.36~1135~4012
+Lewis~Lewis~~Lewis, Cass county, IA 51544, USA~41.3046;-95.0867~US-IA~41.3046,-95.0867~41.30460000~-95.08670000~51544~Cass county~~~4.2000003~2403~3369
+Liberty Center~Liberty-Center~~Liberty Center, Warren county, IA 50145, USA~41.2067;-93.4987~US-IA~41.2067,-93.4987~41.20670000~-93.49870000~50145~Warren county~~~4.13~1242~4448
+Libertyville~Libertyville~~Libertyville, Jefferson county, IA 52567, USA~40.9563;-92.049~US-IA~40.9563,-92.049~40.95630000~-92.04900000~52567~Jefferson county~~~4.17~1943~4144
+Lidderdale~Lidderdale~~Lidderdale, Carroll county, IA 51452, USA~42.1258;-94.7837~US-IA~42.1258,-94.7837~42.12580000~-94.78370000~51452~Carroll county~~~4.28~1850~3647
+Lime Springs~Lime-Springs~~Lime Springs, Howard county, IA 52155, USA~43.4531;-92.2822~US-IA~43.4531,-92.2822~43.45310000~-92.28220000~52155~Howard county~~~4.36~2385~4064
+Lincoln~Lincoln~~Lincoln, Tama county, IA 50652, USA~42.2654;-92.6898~US-IA~42.2654,-92.6898~42.26540000~-92.68980000~50652~Tama county~~~4.29~1070~2698
+Linden~Linden~~Linden, Dallas county, IA 50146, USA~41.6418;-94.2714~US-IA~41.6418,-94.2714~41.64180000~-94.27140000~50146~Dallas county~~~4.28~2150~4721
+Lineville~Lineville~~Lineville, Wayne county, IA 50147, USA~40.5797;-93.5237~US-IA~40.5797,-93.5237~40.57970000~-93.52370000~50147~Wayne county~~~4.46~1476~2907
+Linn Grove~Linn-Grove~~Linn Grove, Buena Vista county, IA 51033, USA~42.8868;-95.247~US-IA~42.8868,-95.247~42.88680000~-95.24700000~51033~Buena Vista county~~~4.25~1007~4743
+Lisbon~Lisbon~~Lisbon, Linn county, IA 52253, USA~41.9162;-91.3835~US-IA~41.9162,-91.3835~41.91620000~-91.38350000~52253~Linn county~~~4.34~1650~4105
+Liscomb~Liscomb~~Liscomb, Marshall county, IA 50148, USA~42.1843;-93~US-IA~42.1843,-93~42.18430000~-93.00000000~50148~Marshall county~~~4.46~2682~2428
+Little Cedar~Little-Cedar~~Little Cedar, Mitchell county, IA 50454, USA~43.3908;-92.7327~US-IA~43.3908,-92.7327~43.39080000~-92.73270000~50454~Mitchell county~~~4.38~2125~2795
+Little Rock~Little-Rock~~Little Rock, Lyon county, IA 51243, USA~43.4678;-95.9175~US-IA~43.4678,-95.9175~43.46780000~-95.91750000~51243~Lyon county~~~4.4900002~1190~4582
+Little Sioux~Little-Sioux~~Little Sioux, Harrison county, IA 51545, USA~41.8071;-96.0246~US-IA~41.8071,-96.0246~41.80710000~-96.02460000~51545~Harrison county~~~4.1200004~1023~4596
+Livermore~Livermore~~Livermore, Humboldt county, IA 50558, USA~42.8662;-94.1837~US-IA~42.8662,-94.1837~42.86620000~-94.18370000~50558~Humboldt county~~~4.2000003~2511~4705
+Lockridge~Lockridge~~Lockridge, Jefferson county, IA 52635, USA~40.9977;-91.7523~US-IA~40.9977,-91.7523~40.99770000~-91.75230000~52635~Jefferson county~~~4.1200004~2124~2423
+Logan~Logan~~Logan, Harrison county, IA 51546, USA~41.6487;-95.7891~US-IA~41.6487,-95.7891~41.64870000~-95.78910000~51546~Harrison county~~~4.2200003~1392~2669
+Lohrville~Lohrville~~Lohrville, Calhoun county, IA 51453, USA~42.2721;-94.5402~US-IA~42.2721,-94.5402~42.27210000~-94.54020000~51453~Calhoun county~~~4.34~1634~3714
+Lone Rock~Lone-Rock~~Lone Rock, Kossuth county, IA 50559, USA~43.2234;-94.3208~US-IA~43.2234,-94.3208~43.22340000~-94.32080000~50559~Kossuth county~~~4.29~1688~2553
+Lone Tree~Lone-Tree~~Lone Tree, Johnson county, IA 52755, USA~41.4836;-91.4286~US-IA~41.4836,-91.4286~41.48360000~-91.42860000~52755~Johnson county~~~4.44~2653~2779
+Long Grove~Long-Grove~~Long Grove, Scott county, IA 52756, USA~41.7215;-90.5496~US-IA~41.7215,-90.5496~41.72150000~-90.54960000~52756~Scott county~~~4.28~1946~4746
+Lorimor~Lorimor~~Lorimor, Union county, IA 50149, USA~41.1111;-94.0731~US-IA~41.1111,-94.0731~41.11110000~-94.07310000~50149~Union county~~~4.33~2166~4809
+Lost Nation~Lost-Nation~~Lost Nation, Clinton county, IA 52254, USA~41.9665;-90.8176~US-IA~41.9665,-90.8176~41.96650000~-90.81760000~52254~Clinton county~~~4.34~1972~4473
+Lovilia~Lovilia~~Lovilia, Monroe county, IA 50150, USA~41.1328;-92.9066~US-IA~41.1328,-92.9066~41.13280000~-92.90660000~50150~Monroe county~~~4.17~1007~4299
+Low Moor~Low-Moor~~Low Moor, Clinton county, IA 52757, USA~41.8382;-90.4789~US-IA~41.8382,-90.4789~41.83820000~-90.47890000~52757~Clinton county~~~4.3~1950~2794
+Lowden~Lowden~~Lowden, Cedar county, IA 52255, USA~41.8604;-90.9285~US-IA~41.8604,-90.9285~41.86040000~-90.92850000~52255~Cedar county~~~4.26~1941~4677
+Lu Verne~Lu-Verne~~Lu Verne, Kossuth county, IA 50560, USA~42.9128;-94.0846~US-IA~42.9128,-94.0846~42.91280000~-94.08460000~50560~Kossuth county~~~4.2400002~1316~4993
+Luana~Luana~~Luana, Clayton county, IA 52156, USA~43.0564;-91.3923~US-IA~43.0564,-91.3923~43.05640000~-91.39230000~52156~Clayton county~~~4.4900002~1153~3144
+Lucas~Lucas~~Lucas, Lucas county, IA 50151, USA~41.1773;-93.5384~US-IA~41.1773,-93.5384~41.17730000~-93.53840000~50151~Lucas county~~~4.4700003~1397~4307
+Luther~Luther~~Luther, Boone county, IA 50152, USA~41.9949;-93.8626~US-IA~41.9949,-93.8626~41.99490000~-93.86260000~50152~Boone county~~~4.1800003~1394~2739
+Luxemburg~Luxemburg~~Luxemburg, Dubuque county, IA 52056, USA~42.6115;-91.0835~US-IA~42.6115,-91.0835~42.61150000~-91.08350000~52056~Dubuque county~~~4.1800003~1136~4086
+Luzerne~Luzerne~~Luzerne, Benton county, IA 52257, USA~41.9033;-92.1783~US-IA~41.9033,-92.1783~41.90330000~-92.17830000~52257~Benton county~~~4.36~2546~2933
+Lynnville~Lynnville~~Lynnville, Jasper county, IA 50153, USA~41.5781;-92.7835~US-IA~41.5781,-92.7835~41.57810000~-92.78350000~50153~Jasper county~~~4.32~1121~3251
+Lytton~Lytton~~Lytton, Calhoun county, IA 50561, USA~42.426;-94.8622~US-IA~42.426,-94.8622~42.42600000~-94.86220000~50561~Calhoun county~~~4.11~1566~2789
+Macedonia~Macedonia~~Macedonia, Pottawattamie county, IA 51549, USA~41.1891;-95.4251~US-IA~41.1891,-95.4251~41.18910000~-95.42510000~51549~Pottawattamie county~~~4.15~1248~3032
+Macksburg~Macksburg~~Macksburg, Madison county, IA 50155, USA~41.213;-94.1844~US-IA~41.213,-94.1844~41.21300000~-94.18440000~50155~Madison county~~~4.4500003~1339~3691
+Madrid~Madrid~~Madrid, Boone county, IA 50156, USA~41.8756;-93.8194~US-IA~41.8756,-93.8194~41.87560000~-93.81940000~50156~Boone county~~~4.27~1679~4647
+Magnolia~Magnolia~~Magnolia, Harrison county, IA 51550, USA~41.6431;-95.7886~US-IA~41.6431,-95.7886~41.64310000~-95.78860000~51550~Harrison county~~~4.4~1309~4632
+Malcom~Malcom~~Malcom, Poweshiek county, IA 50157, USA~41.6122;-92.5312~US-IA~41.6122,-92.5312~41.61220000~-92.53120000~50157~Poweshiek county~~~4.4500003~1423~2234
+Mallard~Mallard~~Mallard, Palo Alto county, IA 50562, USA~42.9441;-94.6793~US-IA~42.9441,-94.6793~42.94410000~-94.67930000~50562~Palo Alto county~~~4.19~1874~2379
+Malvern~Malvern~~Malvern, Mills county, IA 51551, USA~41.003;-95.5854~US-IA~41.003,-95.5854~41.00300000~-95.58540000~51551~Mills county~~~4.42~2115~2699
+Manchester~Manchester~~Manchester, Delaware county, IA 52057, USA~42.4858;-91.4583~US-IA~42.4858,-91.4583~42.48580000~-91.45830000~52057~Delaware county~~~4.15~1564~4417
+Manilla~Manilla~~Manilla, Crawford county, IA 51454, USA~41.9035;-95.2496~US-IA~41.9035,-95.2496~41.90350000~-95.24960000~51454~Crawford county~~~4.4~2482~3628
+Manly~Manly~~Manly, Worth county, IA 50456, USA~43.2889;-93.2012~US-IA~43.2889,-93.2012~43.28890000~-93.20120000~50456~Worth county~~~4.33~1925~3978
+Manning~Manning~~Manning, Carroll county, IA 51455, USA~41.9073;-95.0644~US-IA~41.9073,-95.0644~41.90730000~-95.06440000~51455~Carroll county~~~4.36~1446~2810
+Manson~Manson~~Manson, Calhoun county, IA 50563, USA~42.5301;-94.5376~US-IA~42.5301,-94.5376~42.53010000~-94.53760000~50563~Calhoun county~~~4.32~1850~2766
+Mapleton~Mapleton~~Mapleton, Monona county, IA 51034, USA~42.1608;-95.806~US-IA~42.1608,-95.806~42.16080000~-95.80600000~51034~Monona county~~~4.34~1663~3806
+Maquoketa~Maquoketa~~Maquoketa, Jackson county, IA 52060, USA~42.0712;-90.6608~US-IA~42.0712,-90.6608~42.07120000~-90.66080000~52060~Jackson county~~~4.4900002~2792~2671
+Marathon~Marathon~~Marathon, Buena Vista county, IA 50565, USA~42.8599;-94.984~US-IA~42.8599,-94.984~42.85990000~-94.98400000~50565~Buena Vista county~~~4.3~2802~4330
+Marble Rock~Marble-Rock~~Marble Rock, Floyd county, IA 50653, USA~42.9662;-92.881~US-IA~42.9662,-92.881~42.96620000~-92.88100000~50653~Floyd county~~~4.42~1320~2416
+Marcus~Marcus~~Marcus, Cherokee county, IA 51035, USA~42.8197;-95.804~US-IA~42.8197,-95.804~42.81970000~-95.80400000~51035~Cherokee county~~~4.31~2305~4451
+Marengo~Marengo~~Marengo, Iowa county, IA 52301, USA~41.7976;-92.0815~US-IA~41.7976,-92.0815~41.79760000~-92.08150000~52301~Iowa county~~~4.1400003~1108~4601
+Marion~Marion~~Marion, Linn county, IA 52302, USA~42.0434;-91.5931~US-IA~42.0434,-91.5931~42.04340000~-91.59310000~52302~Linn county~~~4.27~1926~3247
+Marne~Marne~~Marne, Cass county, IA 51552, USA~41.4506;-95.1079~US-IA~41.4506,-95.1079~41.45060000~-95.10790000~51552~Cass county~~~4.37~1862~4437
+Marquette~Marquette~~Marquette, Clayton county, IA 52158, USA~43.0611;-91.2174~US-IA~43.0611,-91.2174~43.06110000~-91.21740000~52158~Clayton county~~~4.1200004~1568~2815
+Marshalltown~Marshalltown~~Marshalltown, Marshall county, IA 50158, USA~42.0559;-92.9406~US-IA~42.0559,-92.9406~42.05590000~-92.94060000~50158~Marshall county~~~4.2400002~2725~2797
+Martelle~Martelle~~Martelle, Jones county, IA 52305, USA~42.0119;-91.3878~US-IA~42.0119,-91.3878~42.01190000~-91.38780000~52305~Jones county~~~4.32~1020~2241
+Martensdale~Martensdale~~Martensdale, Warren county, IA 50160, USA~41.3753;-93.741~US-IA~41.3753,-93.741~41.37530000~-93.74100000~50160~Warren county~~~4.42~1748~2291
+Martinsburg~Martinsburg~~Martinsburg, Keokuk county, IA 52568, USA~41.2039;-92.1602~US-IA~41.2039,-92.1602~41.20390000~-92.16020000~52568~Keokuk county~~~4.21~2518~3399
+Mason City~Mason-City~~Mason City, Cerro Gordo county, IA 50401, USA~43.1494;-93.198~US-IA~43.1494,-93.198~43.14940000~-93.19800000~50401~Cerro Gordo county~~~4.35~2039~2403
+Masonville~Masonville~~Masonville, Delaware county, IA 50654, USA~42.511;-91.549~US-IA~42.511,-91.549~42.51100000~-91.54900000~50654~Delaware county~~~4.37~2767~4092
+Massena~Massena~~Massena, Cass county, IA 50853, USA~41.2534;-94.7687~US-IA~41.2534,-94.7687~41.25340000~-94.76870000~50853~Cass county~~~4.23~1305~4313
+Matlock~Matlock~~Matlock, Sioux county, IA 51244, USA~43.2157;-95.979~US-IA~43.2157,-95.979~43.21570000~-95.97900000~51244~Sioux county~~~4.4100003~2357~4268
+Maurice~Maurice~~Maurice, Sioux county, IA 51036, USA~42.9646;-96.181~US-IA~42.9646,-96.181~42.96460000~-96.18100000~51036~Sioux county~~~4.1600003~2022~2368
+Maxwell~Maxwell~~Maxwell, Story county, IA 50161, USA~41.8811;-93.4117~US-IA~41.8811,-93.4117~41.88110000~-93.41170000~50161~Story county~~~4.28~2402~2195
+Maynard~Maynard~~Maynard, Fayette county, IA 50655, USA~42.7747;-91.8818~US-IA~42.7747,-91.8818~42.77470000~-91.88180000~50655~Fayette county~~~4.2400002~2220~3207
+Mc Callsburg~Mc-Callsburg~~Mc Callsburg, Story county, IA 50154, USA~42.1656;-93.3896~US-IA~42.1656,-93.3896~42.16560000~-93.38960000~50154~Story county~~~4.11~1053~4756
+Mc Causland~Mc-Causland~~Mc Causland, Scott county, IA 52758, USA~41.7457;-90.4475~US-IA~41.7457,-90.4475~41.74570000~-90.44750000~52758~Scott county~~~4.2000003~2392~3863
+Mc Clelland~Mc-Clelland~~Mc Clelland, Pottawattamie county, IA 51548, USA~41.3034;-95.6725~US-IA~41.3034,-95.6725~41.30340000~-95.67250000~51548~Pottawattamie county~~~4.1600003~1220~4865
+Mc Gregor~Mc-Gregor~~Mc Gregor, Clayton county, IA 52157, USA~43.0215;-91.1794~US-IA~43.0215,-91.1794~43.02150000~-91.17940000~52157~Clayton county~~~4.32~1781~4981
+Mc Intire~Mc-Intire~~Mc Intire, Mitchell county, IA 50455, USA~43.465;-92.6129~US-IA~43.465,-92.6129~43.46500000~-92.61290000~50455~Mitchell county~~~4.4700003~1249~4797
+Mechanicsville~Mechanicsville~~Mechanicsville, Cedar county, IA 52306, USA~41.9023;-91.255~US-IA~41.9023,-91.255~41.90230000~-91.25500000~52306~Cedar county~~~4.15~2639~3545
+Mediapolis~Mediapolis~~Mediapolis, Des Moines county, IA 52637, USA~41.0076;-91.0979~US-IA~41.0076,-91.0979~41.00760000~-91.09790000~52637~Des Moines county~~~4.26~2567~4397
+Melbourne~Melbourne~~Melbourne, Marshall county, IA 50162, USA~41.9292;-93.0678~US-IA~41.9292,-93.0678~41.92920000~-93.06780000~50162~Marshall county~~~4.1400003~1735~2320
+Melcher~Melcher~~Melcher, Marion county, IA 50163, USA~41.2253;-93.2387~US-IA~41.2253,-93.2387~41.22530000~-93.23870000~50163~Marion county~~~4.31~1313~4767
+Melrose~Melrose~~Melrose, Monroe county, IA 52569, USA~40.9752;-93.0525~US-IA~40.9752,-93.0525~40.97520000~-93.05250000~52569~Monroe county~~~4.28~2440~3165
+Melvin~Melvin~~Melvin, Osceola county, IA 51350, USA~43.278;-95.5651~US-IA~43.278,-95.5651~43.27800000~-95.56510000~51350~Osceola county~~~4.37~1574~2496
+Menlo~Menlo~~Menlo, Guthrie county, IA 50164, USA~41.558;-94.4167~US-IA~41.558,-94.4167~41.55800000~-94.41670000~50164~Guthrie county~~~4.35~1477~4225
+Meriden~Meriden~~Meriden, Cherokee county, IA 51037, USA~42.7948;-95.6322~US-IA~42.7948,-95.6322~42.79480000~-95.63220000~51037~Cherokee county~~~4.32~1307~2509
+Merrill~Merrill~~Merrill, Plymouth county, IA 51038, USA~42.7249;-96.2483~US-IA~42.7249,-96.2483~42.72490000~-96.24830000~51038~Plymouth county~~~4.4700003~2371~3521
+Meservey~Meservey~~Meservey, Cerro Gordo county, IA 50457, USA~42.931;-93.4667~US-IA~42.931,-93.4667~42.93100000~-93.46670000~50457~Cerro Gordo county~~~4.36~2046~3949
+Middle Amana~Middle-Amana~~Middle Amana, Iowa county, IA 52307, USA~41.8001;-91.8958~US-IA~41.8001,-91.8958~41.80010000~-91.89580000~52307~Iowa county~~~4.15~2869~2352
+Middletown~Middletown~~Middletown, Des Moines county, IA 52638, USA~40.8247;-91.2626~US-IA~40.8247,-91.2626~40.82470000~-91.26260000~52638~Des Moines county~~~4.28~2788~4791
+Miles~Miles~~Miles, Jackson county, IA 52064, USA~42.0818;-90.3265~US-IA~42.0818,-90.3265~42.08180000~-90.32650000~52064~Jackson county~~~4.44~2837~2398
+Milford~Milford~~Milford, Dickinson county, IA 51351, USA~43.3235;-95.1697~US-IA~43.3235,-95.1697~43.32350000~-95.16970000~51351~Dickinson county~~~4.13~2958~4805
+Millersburg~Millersburg~~Millersburg, Iowa county, IA 52308, USA~41.5738;-92.16~US-IA~41.5738,-92.16~41.57380000~-92.16000000~52308~Iowa county~~~4.44~2125~2485
+Millerton~Millerton~~Millerton, Wayne county, IA 50165, USA~40.8561;-93.2711~US-IA~40.8561,-93.2711~40.85610000~-93.27110000~50165~Wayne county~~~4.46~2924~3136
+Milo~Milo~~Milo, Warren county, IA 50166, USA~41.281;-93.4249~US-IA~41.281,-93.4249~41.28100000~-93.42490000~50166~Warren county~~~4.19~2201~4955
+Milton~Milton~~Milton, Van Buren county, IA 52570, USA~40.6763;-92.1383~US-IA~40.6763,-92.1383~40.67630000~-92.13830000~52570~Van Buren county~~~4.4500003~1584~2389
+Minburn~Minburn~~Minburn, Dallas county, IA 50167, USA~41.7577;-94.0246~US-IA~41.7577,-94.0246~41.75770000~-94.02460000~50167~Dallas county~~~4.35~1729~3495
+Minden~Minden~~Minden, Pottawattamie county, IA 51553, USA~41.4674;-95.5442~US-IA~41.4674,-95.5442~41.46740000~-95.54420000~51553~Pottawattamie county~~~4.21~2037~3135
+Mineola~Mineola~~Mineola, Mills county, IA 51554, USA~41.1423;-95.6928~US-IA~41.1423,-95.6928~41.14230000~-95.69280000~51554~Mills county~~~4.5~1239~2224
+Mingo~Mingo~~Mingo, Jasper county, IA 50168, USA~41.8001;-93.2859~US-IA~41.8001,-93.2859~41.80010000~-93.28590000~50168~Jasper county~~~4.1600003~2129~3094
+Missouri Valley~Missouri-Valley~~Missouri Valley, Harrison county, IA 51555, USA~41.5623;-95.8904~US-IA~41.5623,-95.8904~41.56230000~-95.89040000~51555~Harrison county~~~4.27~1055~3053
+Mitchellville~Mitchellville~~Mitchellville, Polk county, IA 50169, USA~41.6656;-93.3676~US-IA~41.6656,-93.3676~41.66560000~-93.36760000~50169~Polk county~~~4.1400003~1612~2523
+Modale~Modale~~Modale, Harrison county, IA 51556, USA~41.6186;-96.0091~US-IA~41.6186,-96.0091~41.61860000~-96.00910000~51556~Harrison county~~~4.11~2790~3003
+Mondamin~Mondamin~~Mondamin, Harrison county, IA 51557, USA~41.7101;-96.0245~US-IA~41.7101,-96.0245~41.71010000~-96.02450000~51557~Harrison county~~~4.1800003~1188~3096
+Monmouth~Monmouth~~Monmouth, Jackson county, IA 52309, USA~42.0823;-90.8706~US-IA~42.0823,-90.8706~42.08230000~-90.87060000~52309~Jackson county~~~4.33~2511~4129
+Monona~Monona~~Monona, Clayton county, IA 52159, USA~43.0493;-91.3888~US-IA~43.0493,-91.3888~43.04930000~-91.38880000~52159~Clayton county~~~4.25~2233~3600
+Monroe~Monroe~~Monroe, Jasper county, IA 50170, USA~41.5238;-93.1035~US-IA~41.5238,-93.1035~41.52380000~-93.10350000~50170~Jasper county~~~4.1200004~2989~4872
+Montezuma~Montezuma~~Montezuma, Poweshiek county, IA 50171, USA~41.5849;-92.5253~US-IA~41.5849,-92.5253~41.58490000~-92.52530000~50171~Poweshiek county~~~4.15~1113~4090
+Monticello~Monticello~~Monticello, Jones county, IA 52310, USA~42.24;-91.1893~US-IA~42.24,-91.1893~42.24000000~-91.18930000~52310~Jones county~~~4.4100003~2034~4916
+Montour~Montour~~Montour, Tama county, IA 50173, USA~41.9473;-92.7078~US-IA~41.9473,-92.7078~41.94730000~-92.70780000~50173~Tama county~~~4.15~1577~4561
+Montpelier~Montpelier~~Montpelier, Muscatine county, IA 52759, USA~41.4613;-90.8083~US-IA~41.4613,-90.8083~41.46130000~-90.80830000~52759~Muscatine county~~~4.4500003~1225~2282
+Montrose~Montrose~~Montrose, Lee county, IA 52639, USA~40.5283;-91.413~US-IA~40.5283,-91.413~40.52830000~-91.41300000~52639~Lee county~~~4.1200004~1077~4337
+Moorhead~Moorhead~~Moorhead, Monona county, IA 51558, USA~41.9282;-95.8526~US-IA~41.9282,-95.8526~41.92820000~-95.85260000~51558~Monona county~~~4.4300003~1486~4628
+Moorland~Moorland~~Moorland, Webster county, IA 50566, USA~42.4454;-94.2903~US-IA~42.4454,-94.2903~42.44540000~-94.29030000~50566~Webster county~~~4.46~1603~4482
+Moravia~Moravia~~Moravia, Appanoose county, IA 52571, USA~40.8856;-92.8606~US-IA~40.8856,-92.8606~40.88560000~-92.86060000~52571~Appanoose county~~~4.27~1251~2038
+Morley~Morley~~Morley, Jones county, IA 52312, USA~42.004;-91.2445~US-IA~42.004,-91.2445~42.00400000~-91.24450000~52312~Jones county~~~4.32~2067~4988
+Morning Sun~Morning-Sun~~Morning Sun, Louisa county, IA 52640, USA~41.094;-91.2528~US-IA~41.094,-91.2528~41.09400000~-91.25280000~52640~Louisa county~~~4.42~2011~4033
+Morrison~Morrison~~Morrison, Grundy county, IA 50657, USA~42.3705;-92.7911~US-IA~42.3705,-92.7911~42.37050000~-92.79110000~50657~Grundy county~~~4.5~1248~2435
+Moscow~Moscow~~Moscow, Muscatine county, IA 52760, USA~41.5806;-91.0503~US-IA~41.5806,-91.0503~41.58060000~-91.05030000~52760~Muscatine county~~~4.26~2984~4495
+Moulton~Moulton~~Moulton, Appanoose county, IA 52572, USA~40.6894;-92.6842~US-IA~40.6894,-92.6842~40.68940000~-92.68420000~52572~Appanoose county~~~4.27~2496~3738
+Mount Auburn~Mount-Auburn~~Mount Auburn, Benton county, IA 52313, USA~42.2566;-92.1711~US-IA~42.2566,-92.1711~42.25660000~-92.17110000~52313~Benton county~~~4.3~1142~2567
+Mount Ayr~Mount-Ayr~~Mount Ayr, Ringgold county, IA 50854, USA~40.7148;-94.237~US-IA~40.7148,-94.237~40.71480000~-94.23700000~50854~Ringgold county~~~4.26~1229~2018
+Mount Pleasant~Mount-Pleasant~~Mount Pleasant, Henry county, IA 52641, USA~40.9684;-91.5489~US-IA~40.9684,-91.5489~40.96840000~-91.54890000~52641~Henry county~~~4.17~2349~4574
+Mount Sterling~Mount-Sterling~~Mount Sterling, Van Buren county, IA 52573, USA~40.6178;-91.9319~US-IA~40.6178,-91.9319~40.61780000~-91.93190000~52573~Van Buren county~~~4.4900002~2125~2752
+Mount Union~Mount-Union~~Mount Union, Henry county, IA 52644, USA~41.0323;-91.4269~US-IA~41.0323,-91.4269~41.03230000~-91.42690000~52644~Henry county~~~4.5~2664~3358
+Mount Vernon~Mount-Vernon~~Mount Vernon, Linn county, IA 52314, USA~41.9367;-91.4383~US-IA~41.9367,-91.4383~41.93670000~-91.43830000~52314~Linn county~~~4.11~1666~3709
+Moville~Moville~~Moville, Woodbury county, IA 51039, USA~42.4891;-96.0702~US-IA~42.4891,-96.0702~42.48910000~-96.07020000~51039~Woodbury county~~~4.31~1463~2712
+Murray~Murray~~Murray, Clarke county, IA 50174, USA~41.0409;-93.9492~US-IA~41.0409,-93.9492~41.04090000~-93.94920000~50174~Clarke county~~~4.42~2676~2705
+Muscatine~Muscatine~~Muscatine, Muscatine county, IA 52761, USA~41.4358;-90.9044~US-IA~41.4358,-90.9044~41.43580000~-90.90440000~52761~Muscatine county~~~4.4~1353~4252
+Mystic~Mystic~~Mystic, Appanoose county, IA 52574, USA~40.7964;-92.9287~US-IA~40.7964,-92.9287~40.79640000~-92.92870000~52574~Appanoose county~~~4.19~1597~4731
+Nashua~Nashua~~Nashua, Chickasaw county, IA 50658, USA~42.9491;-92.5399~US-IA~42.9491,-92.5399~42.94910000~-92.53990000~50658~Chickasaw county~~~4.28~2028~4034
+Nemaha~Nemaha~~Nemaha, Sac county, IA 50567, USA~42.5165;-95.0922~US-IA~42.5165,-95.0922~42.51650000~-95.09220000~50567~Sac county~~~4.34~1684~4835
+Neola~Neola~~Neola, Pottawattamie county, IA 51559, USA~41.4551;-95.6172~US-IA~41.4551,-95.6172~41.45510000~-95.61720000~51559~Pottawattamie county~~~4.1600003~2542~4980
+Nevada~Nevada~~Nevada, Story county, IA 50201, USA~42.0183;-93.451~US-IA~42.0183,-93.451~42.01830000~-93.45100000~50201~Story county~~~4.21~2305~2615
+New Albin~New-Albin~~New Albin, Allamakee county, IA 52160, USA~43.4952;-91.2848~US-IA~43.4952,-91.2848~43.49520000~-91.28480000~52160~Allamakee county~~~4.5~1824~2304
+New Hampton~New-Hampton~~New Hampton, Chickasaw county, IA 50659, USA~43.0622;-92.3144~US-IA~43.0622,-92.3144~43.06220000~-92.31440000~50659~Chickasaw county~~~4.48~2881~2363
+New Hartford~New-Hartford~~New Hartford, Butler county, IA 50660, USA~42.585;-92.6491~US-IA~42.585,-92.6491~42.58500000~-92.64910000~50660~Butler county~~~4.32~2596~3775
+New Liberty~New-Liberty~~New Liberty, Scott county, IA 52765, USA~41.7279;-90.8625~US-IA~41.7279,-90.8625~41.72790000~-90.86250000~52765~Scott county~~~4.13~2049~2856
+New London~New-London~~New London, Henry county, IA 52645, USA~40.9238;-91.4018~US-IA~40.9238,-91.4018~40.92380000~-91.40180000~52645~Henry county~~~4.25~1142~4113
+New Market~New-Market~~New Market, Taylor county, IA 51646, USA~40.7333;-94.9013~US-IA~40.7333,-94.9013~40.73330000~-94.90130000~51646~Taylor county~~~4.1400003~1357~3734
+New Providence~New-Providence~~New Providence, Hardin county, IA 50206, USA~42.1982;-93.1885~US-IA~42.1982,-93.1885~42.19820000~-93.18850000~50206~Hardin county~~~4.4700003~1905~3433
+New Sharon~New-Sharon~~New Sharon, Mahaska county, IA 50207, USA~41.4677;-92.6496~US-IA~41.4677,-92.6496~41.46770000~-92.64960000~50207~Mahaska county~~~4.32~1074~4920
+New Vienna~New-Vienna~~New Vienna, Dubuque county, IA 52065, USA~42.5601;-91.088~US-IA~42.5601,-91.088~42.56010000~-91.08800000~52065~Dubuque county~~~4.4100003~1130~4559
+New Virginia~New-Virginia~~New Virginia, Warren county, IA 50210, USA~41.2052;-93.6706~US-IA~41.2052,-93.6706~41.20520000~-93.67060000~50210~Warren county~~~4.1200004~1963~4756
+Newell~Newell~~Newell, Buena Vista county, IA 50568, USA~42.6051;-95.0051~US-IA~42.6051,-95.0051~42.60510000~-95.00510000~50568~Buena Vista county~~~4.1800003~2686~4526
+Newhall~Newhall~~Newhall, Benton county, IA 52315, USA~41.9939;-91.9676~US-IA~41.9939,-91.9676~41.99390000~-91.96760000~52315~Benton county~~~4.19~2052~4679
+Newton~Newton~~Newton, Jasper county, IA 50208, USA~41.6971;-93.0469~US-IA~41.6971,-93.0469~41.69710000~-93.04690000~50208~Jasper county~~~4.1800003~2513~3795
+Nichols~Nichols~~Nichols, Muscatine county, IA 52766, USA~41.4793;-91.3054~US-IA~41.4793,-91.3054~41.47930000~-91.30540000~52766~Muscatine county~~~4.1600003~1145~4330
+Nodaway~Nodaway~~Nodaway, Adams county, IA 50857, USA~40.9437;-94.8742~US-IA~40.9437,-94.8742~40.94370000~-94.87420000~50857~Adams county~~~4.48~1962~4954
+Nora Springs~Nora-Springs~~Nora Springs, Floyd county, IA 50458, USA~43.1291;-92.996~US-IA~43.1291,-92.996~43.12910000~-92.99600000~50458~Floyd county~~~4.38~1177~4531
+North Buena Vista~North-Buena-Vista~~North Buena Vista, Clayton county, IA 52066, USA~42.6721;-90.9671~US-IA~42.6721,-90.9671~42.67210000~-90.96710000~52066~Clayton county~~~4.31~1813~4735
+North English~North-English~~North English, Iowa county, IA 52316, USA~41.518;-92.0804~US-IA~41.518,-92.0804~41.51800000~-92.08040000~52316~Iowa county~~~4.3900003~1604~2684
+North Liberty~North-Liberty~~North Liberty, Johnson county, IA 52317, USA~41.7433;-91.6005~US-IA~41.7433,-91.6005~41.74330000~-91.60050000~52317~Johnson county~~~4.5~1142~4992
+North Washington~North-Washington~~North Washington, Chickasaw county, IA 50661, USA~43.0576;-92.3127~US-IA~43.0576,-92.3127~43.05760000~-92.31270000~50661~Chickasaw county~~~4.35~2871~3855
+Northboro~Northboro~~Northboro, Page county, IA 51647, USA~40.6067;-95.2918~US-IA~40.6067,-95.2918~40.60670000~-95.29180000~51647~Page county~~~4.33~1816~4339
+Northwood~Northwood~~Northwood, Worth county, IA 50459, USA~43.4445;-93.2177~US-IA~43.4445,-93.2177~43.44450000~-93.21770000~50459~Worth county~~~4.33~1695~4364
+Norwalk~Norwalk~~Norwalk, Warren county, IA 50211, USA~41.4642;-93.6871~US-IA~41.4642,-93.6871~41.46420000~-93.68710000~50211~Warren county~~~4.26~1985~4722
+Norway~Norway~~Norway, Benton county, IA 52318, USA~41.9043;-91.9184~US-IA~41.9043,-91.9184~41.90430000~-91.91840000~52318~Benton county~~~4.4700003~2272~3029
+Oakdale~Oakdale~~Oakdale, Johnson county, IA 52319, USA~41.7165;-91.6208~US-IA~41.7165,-91.6208~41.71650000~-91.62080000~52319~Johnson county~~~4.2400002~1035~3777
+Oakland~Oakland~~Oakland, Pottawattamie county, IA 51560, USA~41.3064;-95.3927~US-IA~41.3064,-95.3927~41.30640000~-95.39270000~51560~Pottawattamie county~~~4.2000003~1814~3290
+Oakville~Oakville~~Oakville, Louisa county, IA 52646, USA~41.0973;-91.0433~US-IA~41.0973,-91.0433~41.09730000~-91.04330000~52646~Louisa county~~~4.29~1896~4191
+Ocheyedan~Ocheyedan~~Ocheyedan, Osceola county, IA 51354, USA~43.416;-95.5333~US-IA~43.416,-95.5333~43.41600000~-95.53330000~51354~Osceola county~~~4.29~1962~2345
+Odebolt~Odebolt~~Odebolt, Sac county, IA 51458, USA~42.3102;-95.2491~US-IA~42.3102,-95.2491~42.31020000~-95.24910000~51458~Sac county~~~4.27~1874~3277
+Oelwein~Oelwein~~Oelwein, Fayette county, IA 50662, USA~42.6784;-91.9119~US-IA~42.6784,-91.9119~42.67840000~-91.91190000~50662~Fayette county~~~4.31~2391~3600
+Ogden~Ogden~~Ogden, Boone county, IA 50212, USA~42.0408;-94.0275~US-IA~42.0408,-94.0275~42.04080000~-94.02750000~50212~Boone county~~~4.35~1892~4594
+Okoboji~Okoboji~~Okoboji, Dickinson county, IA 51355, USA~43.3792;-95.1638~US-IA~43.3792,-95.1638~43.37920000~-95.16380000~51355~Dickinson county~~~4.27~2673~4923
+Olds~Olds~~Olds, Henry county, IA 52647, USA~41.1196;-91.5427~US-IA~41.1196,-91.5427~41.11960000~-91.54270000~52647~Henry county~~~4.48~1823~3020
+Olin~Olin~~Olin, Jones county, IA 52320, USA~42.0049;-91.1376~US-IA~42.0049,-91.1376~42.00490000~-91.13760000~52320~Jones county~~~4.34~2327~2858
+Ollie~Ollie~~Ollie, Keokuk county, IA 52576, USA~41.2037;-92.1614~US-IA~41.2037,-92.1614~41.20370000~-92.16140000~52576~Keokuk county~~~4.19~1735~4223
+Onawa~Onawa~~Onawa, Monona county, IA 51040, USA~42.0289;-96.0982~US-IA~42.0289,-96.0982~42.02890000~-96.09820000~51040~Monona county~~~4.11~2417~4513
+Onslow~Onslow~~Onslow, Jones county, IA 52321, USA~42.1272;-90.9587~US-IA~42.1272,-90.9587~42.12720000~-90.95870000~52321~Jones county~~~4.3900003~1424~3686
+Oran~Oran~~Oran, Fayette county, IA 50664, USA~42.7106;-91.8771~US-IA~42.7106,-91.8771~42.71060000~-91.87710000~50664~Fayette county~~~4.3900003~2489~4465
+Orange City~Orange-City~~Orange City, Sioux county, IA 51041, USA~43.0018;-96.0581~US-IA~43.0018,-96.0581~43.00180000~-96.05810000~51041~Sioux county~~~4.21~1100~2767
+Orchard~Orchard~~Orchard, Mitchell county, IA 50460, USA~43.2369;-92.6842~US-IA~43.2369,-92.6842~43.23690000~-92.68420000~50460~Mitchell county~~~4.31~1144~3175
+Orient~Orient~~Orient, Adair county, IA 50858, USA~41.2047;-94.4224~US-IA~41.2047,-94.4224~41.20470000~-94.42240000~50858~Adair county~~~4.32~2880~4383
+Osage~Osage~~Osage, Mitchell county, IA 50461, USA~43.2867;-92.8101~US-IA~43.2867,-92.8101~43.28670000~-92.81010000~50461~Mitchell county~~~4.3~2083~3858
+Osceola~Osceola~~Osceola, Clarke county, IA 50213, USA~41.0367;-93.7639~US-IA~41.0367,-93.7639~41.03670000~-93.76390000~50213~Clarke county~~~4.48~1346~4012
+Oskaloosa~Oskaloosa~~Oskaloosa, Mahaska county, IA 52577, USA~41.2866;-92.6003~US-IA~41.2866,-92.6003~41.28660000~-92.60030000~52577~Mahaska county~~~4.17~1216~2436
+Ossian~Ossian~~Ossian, Winneshiek county, IA 52161, USA~43.1726;-91.8186~US-IA~43.1726,-91.8186~43.17260000~-91.81860000~52161~Winneshiek county~~~4.29~1646~4655
+Otho~Otho~~Otho, Webster county, IA 50569, USA~42.4304;-94.162~US-IA~42.4304,-94.162~42.43040000~-94.16200000~50569~Webster county~~~4.42~1315~3278
+Otley~Otley~~Otley, Marion county, IA 50214, USA~41.4592;-93.0386~US-IA~41.4592,-93.0386~41.45920000~-93.03860000~50214~Marion county~~~4.27~1437~4337
+Oto~Oto~~Oto, Woodbury county, IA 51044, USA~42.2813;-95.8936~US-IA~42.2813,-95.8936~42.28130000~-95.89360000~51044~Woodbury county~~~4.4500003~1107~4651
+Ottosen~Ottosen~~Ottosen, Humboldt county, IA 50570, USA~42.8953;-94.3792~US-IA~42.8953,-94.3792~42.89530000~-94.37920000~50570~Humboldt county~~~4.34~1477~3619
+Ottumwa~Ottumwa~~Ottumwa, Wapello county, IA 52501, USA~41.0182;-92.4165~US-IA~41.0182,-92.4165~41.01820000~-92.41650000~52501~Wapello county~~~4.36~1079~4991
+Oxford Junction~Oxford-Junction~~Oxford Junction, Jones county, IA 52323, USA~41.99;-90.9785~US-IA~41.99,-90.9785~41.99000000~-90.97850000~52323~Jones county~~~4.31~2642~2336
+Oxford~Oxford~~Oxford, Johnson county, IA 52322, USA~41.7221;-91.7856~US-IA~41.7221,-91.7856~41.72210000~-91.78560000~52322~Johnson county~~~4.44~1759~4802
+Oyens~Oyens~~Oyens, Plymouth county, IA 51045, USA~42.8228;-96.0578~US-IA~42.8228,-96.0578~42.82280000~-96.05780000~51045~Plymouth county~~~4.32~1344~4595
+Pacific Junction~Pacific-Junction~~Pacific Junction, Mills county, IA 51561, USA~41.0209;-95.7977~US-IA~41.0209,-95.7977~41.02090000~-95.79770000~51561~Mills county~~~4.5~2449~2756
+Packwood~Packwood~~Packwood, Jefferson county, IA 52580, USA~41.1184;-92.0619~US-IA~41.1184,-92.0619~41.11840000~-92.06190000~52580~Jefferson county~~~4.4900002~2549~4526
+Palmer~Palmer~~Palmer, Pocahontas county, IA 50571, USA~42.6337;-94.5978~US-IA~42.6337,-94.5978~42.63370000~-94.59780000~50571~Pocahontas county~~~4.31~2786~3698
+Palo~Palo~~Palo, Linn county, IA 52324, USA~42.0521;-91.7925~US-IA~42.0521,-91.7925~42.05210000~-91.79250000~52324~Linn county~~~4.4900002~1808~2986
+Panama~Panama~~Panama, Shelby county, IA 51562, USA~41.7271;-95.4743~US-IA~41.7271,-95.4743~41.72710000~-95.47430000~51562~Shelby county~~~4.38~1072~3963
+Panora~Panora~~Panora, Guthrie county, IA 50216, USA~41.6922;-94.3626~US-IA~41.6922,-94.3626~41.69220000~-94.36260000~50216~Guthrie county~~~4.3~1209~3404
+Parkersburg~Parkersburg~~Parkersburg, Butler county, IA 50665, USA~42.5795;-92.7882~US-IA~42.5795,-92.7882~42.57950000~-92.78820000~50665~Butler county~~~4.46~1672~2260
+Parnell~Parnell~~Parnell, Iowa county, IA 52325, USA~41.5542;-92.0049~US-IA~41.5542,-92.0049~41.55420000~-92.00490000~52325~Iowa county~~~4.13~2901~2453
+Paton~Paton~~Paton, Greene county, IA 50217, USA~42.1624;-94.2552~US-IA~42.1624,-94.2552~42.16240000~-94.25520000~50217~Greene county~~~4.21~1491~3514
+Patterson~Patterson~~Patterson, Madison county, IA 50218, USA~41.3742;-93.8742~US-IA~41.3742,-93.8742~41.37420000~-93.87420000~50218~Madison county~~~4.48~1259~2883
+Paullina~Paullina~~Paullina, Obrien county, IA 51046, USA~42.9746;-95.7063~US-IA~42.9746,-95.7063~42.97460000~-95.70630000~51046~Obrien county~~~4.4300003~2231~4708
+Pella~Pella~~Pella, Marion county, IA 50219, USA~41.4083;-92.9146~US-IA~41.4083,-92.9146~41.40830000~-92.91460000~50219~Marion county~~~4.34~1598~3931
+Peosta~Peosta~~Peosta, Dubuque county, IA 52068, USA~42.4316;-90.7994~US-IA~42.4316,-90.7994~42.43160000~-90.79940000~52068~Dubuque county~~~4.34~2961~2625
+Percival~Percival~~Percival, Fremont county, IA 51648, USA~40.7516;-95.8096~US-IA~40.7516,-95.8096~40.75160000~-95.80960000~51648~Fremont county~~~4.2200003~2067~3906
+Perry~Perry~~Perry, Dallas county, IA 50220, USA~41.8406;-94.0987~US-IA~41.8406,-94.0987~41.84060000~-94.09870000~50220~Dallas county~~~4.15~2612~4525
+Persia~Persia~~Persia, Harrison county, IA 51563, USA~41.5786;-95.5713~US-IA~41.5786,-95.5713~41.57860000~-95.57130000~51563~Harrison county~~~4.1800003~1527~2692
+Peru~Peru~~Peru, Madison county, IA 50222, USA~41.2042;-93.9425~US-IA~41.2042,-93.9425~41.20420000~-93.94250000~50222~Madison county~~~4.38~1260~4622
+Peterson~Peterson~~Peterson, Clay county, IA 51047, USA~42.919;-95.3396~US-IA~42.919,-95.3396~42.91900000~-95.33960000~51047~Clay county~~~4.4~1521~4604
+Pierson~Pierson~~Pierson, Woodbury county, IA 51048, USA~42.5434;-95.8679~US-IA~42.5434,-95.8679~42.54340000~-95.86790000~51048~Woodbury county~~~4.23~1255~2210
+Pilot Grove~Pilot-Grove~~Pilot Grove, Lee county, IA 52648, USA~40.7703;-91.5476~US-IA~40.7703,-91.5476~40.77030000~-91.54760000~52648~Lee county~~~4.3~2165~3236
+Pilot Mound~Pilot-Mound~~Pilot Mound, Boone county, IA 50223, USA~42.1675;-94.0106~US-IA~42.1675,-94.0106~42.16750000~-94.01060000~50223~Boone county~~~4.31~1259~4285
+Pisgah~Pisgah~~Pisgah, Harrison county, IA 51564, USA~41.8331;-95.9226~US-IA~41.8331,-95.9226~41.83310000~-95.92260000~51564~Harrison county~~~4.4~1160~2834
+Plainfield~Plainfield~~Plainfield, Bremer county, IA 50666, USA~42.8459;-92.5355~US-IA~42.8459,-92.5355~42.84590000~-92.53550000~50666~Bremer county~~~4.19~1874~3484
+Plano~Plano~~Plano, Appanoose county, IA 52581, USA~40.7836;-93.0364~US-IA~40.7836,-93.0364~40.78360000~-93.03640000~52581~Appanoose county~~~4.4~2359~2599
+Pleasant Valley~Pleasant-Valley~~Pleasant Valley, Scott county, IA 52767, USA~41.5692;-90.4239~US-IA~41.5692,-90.4239~41.56920000~-90.42390000~52767~Scott county~~~4.34~2141~4892
+Pleasantville~Pleasantville~~Pleasantville, Marion county, IA 50225, USA~41.3883;-93.2719~US-IA~41.3883,-93.2719~41.38830000~-93.27190000~50225~Marion county~~~4.29~1921~3672
+Plover~Plover~~Plover, Pocahontas county, IA 50573, USA~42.866;-94.6201~US-IA~42.866,-94.6201~42.86600000~-94.62010000~50573~Pocahontas county~~~4.4500003~2296~4340
+Plymouth~Plymouth~~Plymouth, Cerro Gordo county, IA 50464, USA~43.2474;-93.1246~US-IA~43.2474,-93.1246~43.24740000~-93.12460000~50464~Cerro Gordo county~~~4.1400003~2259~3143
+Pocahontas~Pocahontas~~Pocahontas, Pocahontas county, IA 50574, USA~42.7333;-94.6713~US-IA~42.7333,-94.6713~42.73330000~-94.67130000~50574~Pocahontas county~~~4.46~2787~3543
+Polk City~Polk-City~~Polk City, Polk county, IA 50226, USA~41.7834;-93.7055~US-IA~41.7834,-93.7055~41.78340000~-93.70550000~50226~Polk county~~~4.4900002~2950~2147
+Pomeroy~Pomeroy~~Pomeroy, Calhoun county, IA 50575, USA~42.5175;-94.7634~US-IA~42.5175,-94.7634~42.51750000~-94.76340000~50575~Calhoun county~~~4.17~2033~2839
+Popejoy~Popejoy~~Popejoy, Franklin county, IA 50227, USA~42.5994;-93.4375~US-IA~42.5994,-93.4375~42.59940000~-93.43750000~50227~Franklin county~~~4.42~2723~4417
+Portsmouth~Portsmouth~~Portsmouth, Shelby county, IA 51565, USA~41.6469;-95.5002~US-IA~41.6469,-95.5002~41.64690000~-95.50020000~51565~Shelby county~~~4.3900003~2159~4422
+Postville~Postville~~Postville, Allamakee county, IA 52162, USA~43.0455;-91.566~US-IA~43.0455,-91.566~43.04550000~-91.56600000~52162~Allamakee county~~~4.19~2337~2951
+Prairie City~Prairie-City~~Prairie City, Jasper county, IA 50228, USA~41.5986;-93.2361~US-IA~41.5986,-93.2361~41.59860000~-93.23610000~50228~Jasper county~~~4.23~2658~2737
+Prairieburg~Prairieburg~~Prairieburg, Linn county, IA 52219, USA~42.2374;-91.4277~US-IA~42.2374,-91.4277~42.23740000~-91.42770000~52219~Linn county~~~4.46~1428~4447
+Prescott~Prescott~~Prescott, Adams county, IA 50859, USA~41.0267;-94.5263~US-IA~41.0267,-94.5263~41.02670000~-94.52630000~50859~Adams county~~~4.28~1632~2480
+Preston~Preston~~Preston, Jackson county, IA 52069, USA~42.0508;-90.3942~US-IA~42.0508,-90.3942~42.05080000~-90.39420000~52069~Jackson county~~~4.1600003~2585~3958
+Primghar~Primghar~~Primghar, Obrien county, IA 51245, USA~43.0834;-95.6412~US-IA~43.0834,-95.6412~43.08340000~-95.64120000~51245~Obrien county~~~4.4100003~2130~3960
+Princeton~Princeton~~Princeton, Scott county, IA 52768, USA~41.6857;-90.3826~US-IA~41.6857,-90.3826~41.68570000~-90.38260000~52768~Scott county~~~4.36~1667~4047
+Prole~Prole~~Prole, Warren county, IA 50229, USA~41.3615;-93.7186~US-IA~41.3615,-93.7186~41.36150000~-93.71860000~50229~Warren county~~~4.1400003~1703~4819
+Promise City~Promise-City~~Promise City, Wayne county, IA 52583, USA~40.7658;-93.1552~US-IA~40.7658,-93.1552~40.76580000~-93.15520000~52583~Wayne county~~~4.19~1473~3636
+Protivin~Protivin~~Protivin, Howard county, IA 52163, USA~43.3611;-92.168~US-IA~43.3611,-92.168~43.36110000~-92.16800000~52163~Howard county~~~4.34~1567~2326
+Pulaski~Pulaski~~Pulaski, Davis county, IA 52584, USA~40.6956;-92.2358~US-IA~40.6956,-92.2358~40.69560000~-92.23580000~52584~Davis county~~~4.11~1979~4641
+Quasqueton~Quasqueton~~Quasqueton, Buchanan county, IA 52326, USA~42.3951;-91.7565~US-IA~42.3951,-91.7565~42.39510000~-91.75650000~52326~Buchanan county~~~4.37~1482~4258
+Quimby~Quimby~~Quimby, Cherokee county, IA 51049, USA~42.6276;-95.6412~US-IA~42.6276,-95.6412~42.62760000~-95.64120000~51049~Cherokee county~~~4.27~2214~3967
+Radcliffe~Radcliffe~~Radcliffe, Hardin county, IA 50230, USA~42.3185;-93.431~US-IA~42.3185,-93.431~42.31850000~-93.43100000~50230~Hardin county~~~4.44~2808~3370
+Rake~Rake~~Rake, Winnebago county, IA 50465, USA~43.4673;-93.9104~US-IA~43.4673,-93.9104~43.46730000~-93.91040000~50465~Winnebago county~~~4.1400003~1030~2389
+Ralston~Ralston~~Ralston, Carroll county, IA 51459, USA~42.0788;-94.5677~US-IA~42.0788,-94.5677~42.07880000~-94.56770000~51459~Carroll county~~~4.48~1823~3011
+Randalia~Randalia~~Randalia, Fayette county, IA 52164, USA~42.8624;-91.8861~US-IA~42.8624,-91.8861~42.86240000~-91.88610000~52164~Fayette county~~~4.28~1562~4843
+Randall~Randall~~Randall, Hamilton county, IA 50231, USA~42.254;-93.6389~US-IA~42.254,-93.6389~42.25400000~-93.63890000~50231~Hamilton county~~~4.21~1180~4612
+Randolph~Randolph~~Randolph, Fremont county, IA 51649, USA~40.8708;-95.567~US-IA~40.8708,-95.567~40.87080000~-95.56700000~51649~Fremont county~~~4.46~2886~2404
+Raymond~Raymond~~Raymond, Black Hawk county, IA 50667, USA~42.4698;-92.2224~US-IA~42.4698,-92.2224~42.46980000~-92.22240000~50667~Black Hawk county~~~4.17~1293~3531
+Readlyn~Readlyn~~Readlyn, Bremer county, IA 50668, USA~42.7038;-92.2258~US-IA~42.7038,-92.2258~42.70380000~-92.22580000~50668~Bremer county~~~4.15~2938~4939
+Reasnor~Reasnor~~Reasnor, Jasper county, IA 50232, USA~41.5871;-93.0193~US-IA~41.5871,-93.0193~41.58710000~-93.01930000~50232~Jasper county~~~4.23~2152~4355
+Red Oak~Red-Oak~~Red Oak, Montgomery county, IA 51566, USA~41.0095;-95.2234~US-IA~41.0095,-95.2234~41.00950000~-95.22340000~51566~Montgomery county~~~4.3900003~2071~3574
+Redding~Redding~~Redding, Ringgold county, IA 50860, USA~40.6052;-94.3566~US-IA~40.6052,-94.3566~40.60520000~-94.35660000~50860~Ringgold county~~~4.27~1141~4031
+Redfield~Redfield~~Redfield, Dallas county, IA 50233, USA~41.5514;-94.1825~US-IA~41.5514,-94.1825~41.55140000~-94.18250000~50233~Dallas county~~~4.4300003~1504~2028
+Reinbeck~Reinbeck~~Reinbeck, Grundy county, IA 50669, USA~42.317;-92.571~US-IA~42.317,-92.571~42.31700000~-92.57100000~50669~Grundy county~~~4.33~2998~3325
+Rembrandt~Rembrandt~~Rembrandt, Buena Vista county, IA 50576, USA~42.827;-95.1651~US-IA~42.827,-95.1651~42.82700000~-95.16510000~50576~Buena Vista county~~~4.4~1773~2369
+Remsen~Remsen~~Remsen, Plymouth county, IA 51050, USA~42.8139;-95.9713~US-IA~42.8139,-95.9713~42.81390000~-95.97130000~51050~Plymouth county~~~4.5~1157~2777
+Renwick~Renwick~~Renwick, Humboldt county, IA 50577, USA~42.8279;-93.9802~US-IA~42.8279,-93.9802~42.82790000~-93.98020000~50577~Humboldt county~~~4.37~2942~4988
+Rhodes~Rhodes~~Rhodes, Marshall county, IA 50234, USA~41.909;-93.1823~US-IA~41.909,-93.1823~41.90900000~-93.18230000~50234~Marshall county~~~4.3900003~2553~2370
+Riceville~Riceville~~Riceville, Howard county, IA 50466, USA~43.3653;-92.5513~US-IA~43.3653,-92.5513~43.36530000~-92.55130000~50466~Howard county~~~4.35~1517~3074
+Richland~Richland~~Richland, Keokuk county, IA 52585, USA~41.183;-91.9915~US-IA~41.183,-91.9915~41.18300000~-91.99150000~52585~Keokuk county~~~4.37~1876~2468
+Ricketts~Ricketts~~Ricketts, Crawford county, IA 51460, USA~42.1302;-95.5739~US-IA~42.1302,-95.5739~42.13020000~-95.57390000~51460~Crawford county~~~4.36~2656~3527
+Ridgeway~Ridgeway~~Ridgeway, Winneshiek county, IA 52165, USA~43.2938;-91.9887~US-IA~43.2938,-91.9887~43.29380000~-91.98870000~52165~Winneshiek county~~~4.25~1518~3062
+Ringsted~Ringsted~~Ringsted, Emmet county, IA 50578, USA~43.2361;-94.3191~US-IA~43.2361,-94.3191~43.23610000~-94.31910000~50578~Emmet county~~~4.1200004~2530~2700
+Rippey~Rippey~~Rippey, Greene county, IA 50235, USA~41.9323;-94.2026~US-IA~41.9323,-94.2026~41.93230000~-94.20260000~50235~Greene county~~~4.34~2704~3918
+Riverside~Riverside~~Riverside, Washington county, IA 52327, USA~41.4832;-91.5824~US-IA~41.4832,-91.5824~41.48320000~-91.58240000~52327~Washington county~~~4.46~1780~3761
+Riverton~Riverton~~Riverton, Fremont county, IA 51650, USA~40.6878;-95.5694~US-IA~40.6878,-95.5694~40.68780000~-95.56940000~51650~Fremont county~~~4.36~2757~2001
+Robins~Robins~~Robins, Linn county, IA 52328, USA~42.0748;-91.6654~US-IA~42.0748,-91.6654~42.07480000~-91.66540000~52328~Linn county~~~4.3~2533~3310
+Rock Falls~Rock-Falls~~Rock Falls, Cerro Gordo county, IA 50467, USA~43.2079;-93.0855~US-IA~43.2079,-93.0855~43.20790000~-93.08550000~50467~Cerro Gordo county~~~4.2200003~1725~4096
+Rock Rapids~Rock-Rapids~~Rock Rapids, Lyon county, IA 51246, USA~43.4221;-96.248~US-IA~43.4221,-96.248~43.42210000~-96.24800000~51246~Lyon county~~~4.23~2641~2175
+Rock Valley~Rock-Valley~~Rock Valley, Sioux county, IA 51247, USA~43.2052;-96.2911~US-IA~43.2052,-96.2911~43.20520000~-96.29110000~51247~Sioux county~~~4.19~2038~3164
+Rockford~Rockford~~Rockford, Floyd county, IA 50468, USA~43.0558;-92.9449~US-IA~43.0558,-92.9449~43.05580000~-92.94490000~50468~Floyd county~~~4.2400002~2128~3569
+Rockwell City~Rockwell-City~~Rockwell City, Calhoun county, IA 50579, USA~42.394;-94.6307~US-IA~42.394,-94.6307~42.39400000~-94.63070000~50579~Calhoun county~~~4.48~2944~3084
+Rockwell~Rockwell~~Rockwell, Cerro Gordo county, IA 50469, USA~43.0123;-93.3145~US-IA~43.0123,-93.3145~43.01230000~-93.31450000~50469~Cerro Gordo county~~~4.32~2393~4255
+Rodney~Rodney~~Rodney, Monona county, IA 51051, USA~42.2045;-95.9516~US-IA~42.2045,-95.9516~42.20450000~-95.95160000~51051~Monona county~~~4.32~2279~4347
+Roland~Roland~~Roland, Story county, IA 50236, USA~42.1659;-93.4992~US-IA~42.1659,-93.4992~42.16590000~-93.49920000~50236~Story county~~~4.31~1721~4272
+Rolfe~Rolfe~~Rolfe, Pocahontas county, IA 50581, USA~42.813;-94.5296~US-IA~42.813,-94.5296~42.81300000~-94.52960000~50581~Pocahontas county~~~4.33~2417~4650
+Rome~Rome~~Rome, Henry county, IA 52642, USA~40.9815;-91.6809~US-IA~40.9815,-91.6809~40.98150000~-91.68090000~52642~Henry county~~~4.21~2917~2808
+Rose Hill~Rose-Hill~~Rose Hill, Mahaska county, IA 52586, USA~41.1801;-92.3135~US-IA~41.1801,-92.3135~41.18010000~-92.31350000~52586~Mahaska county~~~4.28~1138~2114
+Rowan~Rowan~~Rowan, Wright county, IA 50470, USA~42.7401;-93.5452~US-IA~42.7401,-93.5452~42.74010000~-93.54520000~50470~Wright county~~~4.4500003~1615~3632
+Rowley~Rowley~~Rowley, Buchanan county, IA 52329, USA~42.3686;-91.8444~US-IA~42.3686,-91.8444~42.36860000~-91.84440000~52329~Buchanan county~~~4.1800003~1191~2640
+Royal~Royal~~Royal, Clay county, IA 51357, USA~43.0388;-95.237~US-IA~43.0388,-95.237~43.03880000~-95.23700000~51357~Clay county~~~4.31~1764~4660
+Rudd~Rudd~~Rudd, Floyd county, IA 50471, USA~43.1276;-92.9052~US-IA~43.1276,-92.9052~43.12760000~-92.90520000~50471~Floyd county~~~4.31~2476~3341
+Runnells~Runnells~~Runnells, Polk county, IA 50237, USA~41.546;-93.4002~US-IA~41.546,-93.4002~41.54600000~-93.40020000~50237~Polk county~~~4.46~1787~3984
+Russell~Russell~~Russell, Lucas county, IA 50238, USA~40.984;-93.1995~US-IA~40.984,-93.1995~40.98400000~-93.19950000~50238~Lucas county~~~4.1800003~1348~4373
+Ruthven~Ruthven~~Ruthven, Palo Alto county, IA 51358, USA~43.1314;-94.8999~US-IA~43.1314,-94.8999~43.13140000~-94.89990000~51358~Palo Alto county~~~4.33~2232~4753
+Rutland~Rutland~~Rutland, Humboldt county, IA 50582, USA~42.7576;-94.2917~US-IA~42.7576,-94.2917~42.75760000~-94.29170000~50582~Humboldt county~~~4.2200003~2696~3496
+Ryan~Ryan~~Ryan, Delaware county, IA 52330, USA~42.3501;-91.482~US-IA~42.3501,-91.482~42.35010000~-91.48200000~52330~Delaware county~~~4.19~1517~3155
+Sabula~Sabula~~Sabula, Jackson county, IA 52070, USA~42.0707;-90.1743~US-IA~42.0707,-90.1743~42.07070000~-90.17430000~52070~Jackson county~~~4.42~2729~4761
+Sac City~Sac-City~~Sac City, Sac county, IA 50583, USA~42.4193;-94.9937~US-IA~42.4193,-94.9937~42.41930000~-94.99370000~50583~Sac county~~~4.2200003~2053~3943
+Saint Ansgar~Saint-Ansgar~~Saint Ansgar, Mitchell county, IA 50472, USA~43.3778;-92.9157~US-IA~43.3778,-92.9157~43.37780000~-92.91570000~50472~Mitchell county~~~4.23~1987~3080
+Saint Anthony~Saint-Anthony~~Saint Anthony, Marshall county, IA 50239, USA~42.1309;-93.1987~US-IA~42.1309,-93.1987~42.13090000~-93.19870000~50239~Marshall county~~~4.3900003~1689~4648
+Saint Charles~Saint-Charles~~Saint Charles, Madison county, IA 50240, USA~41.3006;-93.7441~US-IA~41.3006,-93.7441~41.30060000~-93.74410000~50240~Madison county~~~4.2400002~1596~3372
+Saint Donatus~Saint-Donatus~~Saint Donatus, Jackson county, IA 52071, USA~42.3369;-90.4948~US-IA~42.3369,-90.4948~42.33690000~-90.49480000~52071~Jackson county~~~4.1600003~2718~3212
+Saint Lucas~Saint-Lucas~~Saint Lucas, Fayette county, IA 52166, USA~43.065;-91.9321~US-IA~43.065,-91.9321~43.06500000~-91.93210000~52166~Fayette county~~~4.36~2465~4132
+Saint Marys~Saint-Marys~~Saint Marys, Warren county, IA 50241, USA~41.307;-93.7338~US-IA~41.307,-93.7338~41.30700000~-93.73380000~50241~Warren county~~~4.46~1493~3180
+Saint Olaf~Saint-Olaf~~Saint Olaf, Clayton county, IA 52072, USA~42.9511;-91.4267~US-IA~42.9511,-91.4267~42.95110000~-91.42670000~52072~Clayton county~~~4.36~1630~3592
+Saint Paul~Saint-Paul~~Saint Paul, Lee county, IA 52657, USA~40.7688;-91.5417~US-IA~40.7688,-91.5417~40.76880000~-91.54170000~52657~Lee county~~~4.28~2133~3970
+Salem~Salem~~Salem, Henry county, IA 52649, USA~40.8555;-91.6226~US-IA~40.8555,-91.6226~40.85550000~-91.62260000~52649~Henry county~~~4.17~2253~3028
+Salix~Salix~~Salix, Woodbury county, IA 51052, USA~42.3042;-96.2753~US-IA~42.3042,-96.2753~42.30420000~-96.27530000~51052~Woodbury county~~~4.29~1769~4894
+Sanborn~Sanborn~~Sanborn, Obrien county, IA 51248, USA~43.1815;-95.655~US-IA~43.1815,-95.655~43.18150000~-95.65500000~51248~Obrien county~~~4.4300003~2993~4197
+Scarville~Scarville~~Scarville, Winnebago county, IA 50473, USA~43.4666;-93.6524~US-IA~43.4666,-93.6524~43.46660000~-93.65240000~50473~Winnebago county~~~4.4900002~1591~4289
+Schaller~Schaller~~Schaller, Sac county, IA 51053, USA~42.4976;-95.2949~US-IA~42.4976,-95.2949~42.49760000~-95.29490000~51053~Sac county~~~4.42~1287~4291
+Schleswig~Schleswig~~Schleswig, Crawford county, IA 51461, USA~42.1633;-95.4354~US-IA~42.1633,-95.4354~42.16330000~-95.43540000~51461~Crawford county~~~4.13~2427~2392
+Scranton~Scranton~~Scranton, Greene county, IA 51462, USA~42.0236;-94.5428~US-IA~42.0236,-94.5428~42.02360000~-94.54280000~51462~Greene county~~~4.21~1598~3016
+Searsboro~Searsboro~~Searsboro, Poweshiek county, IA 50242, USA~41.5554;-92.6979~US-IA~41.5554,-92.6979~41.55540000~-92.69790000~50242~Poweshiek county~~~4.25~2667~2961
+Selma~Selma~~Selma, Van Buren county, IA 52588, USA~40.8575;-92.1233~US-IA~40.8575,-92.1233~40.85750000~-92.12330000~52588~Van Buren county~~~4.37~2206~4052
+Sergeant Bluff~Sergeant-Bluff~~Sergeant Bluff, Woodbury county, IA 51054, USA~42.4071;-96.3574~US-IA~42.4071,-96.3574~42.40710000~-96.35740000~51054~Woodbury county~~~4.4100003~1420~4238
+Seymour~Seymour~~Seymour, Wayne county, IA 52590, USA~40.6815;-93.1206~US-IA~40.6815,-93.1206~40.68150000~-93.12060000~52590~Wayne county~~~4.29~2156~2848
+Shambaugh~Shambaugh~~Shambaugh, Page county, IA 51651, USA~40.6808;-95.0639~US-IA~40.6808,-95.0639~40.68080000~-95.06390000~51651~Page county~~~4.46~1933~4591
+Shannon City~Shannon-City~~Shannon City, Union county, IA 50861, USA~40.9395;-94.2394~US-IA~40.9395,-94.2394~40.93950000~-94.23940000~50861~Union county~~~4.1600003~1077~4287
+Sharpsburg~Sharpsburg~~Sharpsburg, Taylor county, IA 50862, USA~40.8011;-94.6361~US-IA~40.8011,-94.6361~40.80110000~-94.63610000~50862~Taylor county~~~4.2200003~1404~2599
+Sheffield~Sheffield~~Sheffield, Franklin county, IA 50475, USA~42.8914;-93.2181~US-IA~42.8914,-93.2181~42.89140000~-93.21810000~50475~Franklin county~~~4.29~2612~4439
+Shelby~Shelby~~Shelby, Pottawattamie county, IA 51570, USA~41.519;-95.4524~US-IA~41.519,-95.4524~41.51900000~-95.45240000~51570~Pottawattamie county~~~4.3~2163~3640
+Sheldahl~Sheldahl~~Sheldahl, Polk county, IA 50243, USA~41.8647;-93.6911~US-IA~41.8647,-93.6911~41.86470000~-93.69110000~50243~Polk county~~~4.4~1754~2351
+Sheldon~Sheldon~~Sheldon, Obrien county, IA 51201, USA~43.1848;-95.8478~US-IA~43.1848,-95.8478~43.18480000~-95.84780000~51201~Obrien county~~~4.4100003~1902~4537
+Shell Rock~Shell-Rock~~Shell Rock, Butler county, IA 50670, USA~42.7101;-92.5813~US-IA~42.7101,-92.5813~42.71010000~-92.58130000~50670~Butler county~~~4.35~2552~2160
+Shellsburg~Shellsburg~~Shellsburg, Benton county, IA 52332, USA~42.0957;-91.87~US-IA~42.0957,-91.87~42.09570000~-91.87000000~52332~Benton county~~~4.1800003~1012~4404
+Shenandoah~Shenandoah~~Shenandoah, Page county, IA 51601, USA~40.7589;-95.3704~US-IA~40.7589,-95.3704~40.75890000~-95.37040000~51601~Page county~~~4.4700003~2811~4298
+Sherrill~Sherrill~~Sherrill, Dubuque county, IA 52073, USA~42.6133;-90.8115~US-IA~42.6133,-90.8115~42.61330000~-90.81150000~52073~Dubuque county~~~4.2000003~2768~4434
+Sibley~Sibley~~Sibley, Osceola county, IA 51249, USA~43.4039;-95.7469~US-IA~43.4039,-95.7469~43.40390000~-95.74690000~51249~Osceola county~~~4.44~1964~4162
+Sidney~Sidney~~Sidney, Fremont county, IA 51652, USA~40.7484;-95.6485~US-IA~40.7484,-95.6485~40.74840000~-95.64850000~51652~Fremont county~~~4.4900002~2775~4601
+Sigourney~Sigourney~~Sigourney, Keokuk county, IA 52591, USA~41.3321;-92.2061~US-IA~41.3321,-92.2061~41.33210000~-92.20610000~52591~Keokuk county~~~4.4~1706~3267
+Silver City~Silver-City~~Silver City, Mills county, IA 51571, USA~41.1138;-95.6337~US-IA~41.1138,-95.6337~41.11380000~-95.63370000~51571~Mills county~~~4.34~1875~2601
+Sioux Center~Sioux-Center~~Sioux Center, Sioux county, IA 51250, USA~43.0792;-96.1751~US-IA~43.0792,-96.1751~43.07920000~-96.17510000~51250~Sioux county~~~4.19~2436~4376
+Sioux City~Sioux-City~~Sioux City, Woodbury county, IA 51101, USA~42.4944;-96.3951~US-IA~42.4944,-96.3951~42.49440000~-96.39510000~51101~Woodbury county~~~4.34~2919~2792
+Sioux Rapids~Sioux-Rapids~~Sioux Rapids, Buena Vista county, IA 50585, USA~42.9054;-95.1453~US-IA~42.9054,-95.1453~42.90540000~-95.14530000~50585~Buena Vista county~~~4.17~2888~3184
+Slater~Slater~~Slater, Story county, IA 50244, USA~41.8815;-93.6795~US-IA~41.8815,-93.6795~41.88150000~-93.67950000~50244~Story county~~~4.25~1514~3828
+Sloan~Sloan~~Sloan, Woodbury county, IA 51055, USA~42.2368;-96.2266~US-IA~42.2368,-96.2266~42.23680000~-96.22660000~51055~Woodbury county~~~4.31~2837~3203
+Smithland~Smithland~~Smithland, Woodbury county, IA 51056, USA~42.2253;-95.9344~US-IA~42.2253,-95.9344~42.22530000~-95.93440000~51056~Woodbury county~~~4.23~1497~4157
+Soldier~Soldier~~Soldier, Monona county, IA 51572, USA~41.9847;-95.7822~US-IA~41.9847,-95.7822~41.98470000~-95.78220000~51572~Monona county~~~4.37~1814~3939
+Solon~Solon~~Solon, Johnson county, IA 52333, USA~41.8039;-91.5158~US-IA~41.8039,-91.5158~41.80390000~-91.51580000~52333~Johnson county~~~4.15~2074~2971
+Somers~Somers~~Somers, Calhoun county, IA 50586, USA~42.3775;-94.4296~US-IA~42.3775,-94.4296~42.37750000~-94.42960000~50586~Calhoun county~~~4.4700003~2000~4950
+South Amana~South-Amana~~South Amana, Iowa county, IA 52334, USA~41.758;-91.9275~US-IA~41.758,-91.9275~41.75800000~-91.92750000~52334~Iowa county~~~4.4500003~1632~2991
+South English~South-English~~South English, Keokuk county, IA 52335, USA~41.4696;-92.1163~US-IA~41.4696,-92.1163~41.46960000~-92.11630000~52335~Keokuk county~~~4.36~1598~3119
+Spencer~Spencer~~Spencer, Clay county, IA 51301, USA~43.1446;-95.1442~US-IA~43.1446,-95.1442~43.14460000~-95.14420000~51301~Clay county~~~4.37~1542~4922
+Sperry~Sperry~~Sperry, Des Moines county, IA 52650, USA~40.9431;-91.1806~US-IA~40.9431,-91.1806~40.94310000~-91.18060000~52650~Des Moines county~~~4.34~1680~2068
+Spillville~Spillville~~Spillville, Winneshiek county, IA 52168, USA~43.2018;-91.9482~US-IA~43.2018,-91.9482~43.20180000~-91.94820000~52168~Winneshiek county~~~4.1600003~1750~2655
+Spirit Lake~Spirit-Lake~~Spirit Lake, Dickinson county, IA 51360, USA~43.4194;-95.1329~US-IA~43.4194,-95.1329~43.41940000~-95.13290000~51360~Dickinson county~~~4.1600003~1976~2009
+Spragueville~Spragueville~~Spragueville, Jackson county, IA 52074, USA~42.075;-90.4902~US-IA~42.075,-90.4902~42.07500000~-90.49020000~52074~Jackson county~~~4.2400002~1836~4221
+Springbrook~Springbrook~~Springbrook, Jackson county, IA 52075, USA~42.1667;-90.4915~US-IA~42.1667,-90.4915~42.16670000~-90.49150000~52075~Jackson county~~~4.31~1068~4641
+Springville~Springville~~Springville, Linn county, IA 52336, USA~42.0947;-91.4626~US-IA~42.0947,-91.4626~42.09470000~-91.46260000~52336~Linn county~~~4.36~1247~4316
+Stacyville~Stacyville~~Stacyville, Mitchell county, IA 50476, USA~43.4419;-92.7824~US-IA~43.4419,-92.7824~43.44190000~-92.78240000~50476~Mitchell county~~~4.46~2338~3801
+Stanhope~Stanhope~~Stanhope, Hamilton county, IA 50246, USA~42.2857;-93.7917~US-IA~42.2857,-93.7917~42.28570000~-93.79170000~50246~Hamilton county~~~4.1400003~1385~2364
+Stanley~Stanley~~Stanley, Buchanan county, IA 50671, USA~42.6417;-91.8098~US-IA~42.6417,-91.8098~42.64170000~-91.80980000~50671~Buchanan county~~~4.1400003~1519~4124
+Stanton~Stanton~~Stanton, Montgomery county, IA 51573, USA~40.9806;-95.1011~US-IA~40.9806,-95.1011~40.98060000~-95.10110000~51573~Montgomery county~~~4.23~2147~2740
+Stanwood~Stanwood~~Stanwood, Cedar county, IA 52337, USA~41.8907;-91.1479~US-IA~41.8907,-91.1479~41.89070000~-91.14790000~52337~Cedar county~~~4.23~2464~3875
+State Center~State-Center~~State Center, Marshall county, IA 50247, USA~42.0151;-93.1618~US-IA~42.0151,-93.1618~42.01510000~-93.16180000~50247~Marshall county~~~4.1200004~1165~4598
+Steamboat Rock~Steamboat-Rock~~Steamboat Rock, Hardin county, IA 50672, USA~42.4077;-93.0679~US-IA~42.4077,-93.0679~42.40770000~-93.06790000~50672~Hardin county~~~4.25~1197~3757
+Stockport~Stockport~~Stockport, Van Buren county, IA 52651, USA~40.8597;-91.8343~US-IA~40.8597,-91.8343~40.85970000~-91.83430000~52651~Van Buren county~~~4.35~2175~3943
+Stockton~Stockton~~Stockton, Muscatine county, IA 52769, USA~41.6545;-90.8357~US-IA~41.6545,-90.8357~41.65450000~-90.83570000~52769~Muscatine county~~~4.1600003~2953~2382
+Storm Lake~Storm-Lake~~Storm Lake, Buena Vista county, IA 50588, USA~42.641;-95.2025~US-IA~42.641,-95.2025~42.64100000~-95.20250000~50588~Buena Vista county~~~4.46~1474~4066
+Story City~Story-City~~Story City, Story county, IA 50248, USA~42.1801;-93.5916~US-IA~42.1801,-93.5916~42.18010000~-93.59160000~50248~Story county~~~4.19~1960~4464
+Stout~Stout~~Stout, Grundy county, IA 50673, USA~42.5806;-92.7588~US-IA~42.5806,-92.7588~42.58060000~-92.75880000~50673~Grundy county~~~4.1600003~2466~3718
+Stratford~Stratford~~Stratford, Hamilton county, IA 50249, USA~42.2724;-93.9275~US-IA~42.2724,-93.9275~42.27240000~-93.92750000~50249~Hamilton county~~~4.37~2907~2857
+Strawberry Point~Strawberry-Point~~Strawberry Point, Clayton county, IA 52076, USA~42.7043;-91.5124~US-IA~42.7043,-91.5124~42.70430000~-91.51240000~52076~Clayton county~~~4.1600003~2184~2529
+Stuart~Stuart~~Stuart, Guthrie county, IA 50250, USA~41.502;-94.3165~US-IA~41.502,-94.3165~41.50200000~-94.31650000~50250~Guthrie county~~~4.44~1368~2349
+Sully~Sully~~Sully, Jasper county, IA 50251, USA~41.576;-92.8425~US-IA~41.576,-92.8425~41.57600000~-92.84250000~50251~Jasper county~~~4.23~2775~3953
+Sumner~Sumner~~Sumner, Bremer county, IA 50674, USA~42.85;-92.101~US-IA~42.85,-92.101~42.85000000~-92.10100000~50674~Bremer county~~~4.3~2749~2461
+Superior~Superior~~Superior, Dickinson county, IA 51363, USA~43.4625;-94.9701~US-IA~43.4625,-94.9701~43.46250000~-94.97010000~51363~Dickinson county~~~4.33~2670~2056
+Sutherland~Sutherland~~Sutherland, Obrien county, IA 51058, USA~42.9703;-95.4985~US-IA~42.9703,-95.4985~42.97030000~-95.49850000~51058~Obrien county~~~4.1400003~1953~4586
+Swaledale~Swaledale~~Swaledale, Cerro Gordo county, IA 50477, USA~42.9518;-93.3139~US-IA~42.9518,-93.3139~42.95180000~-93.31390000~50477~Cerro Gordo county~~~4.4900002~2908~3077
+Swan~Swan~~Swan, Marion county, IA 50252, USA~41.4434;-93.3512~US-IA~41.4434,-93.3512~41.44340000~-93.35120000~50252~Marion county~~~4.2000003~2811~4276
+Swea City~Swea-City~~Swea City, Kossuth county, IA 50590, USA~43.3824;-94.3092~US-IA~43.3824,-94.3092~43.38240000~-94.30920000~50590~Kossuth county~~~4.23~2053~2146
+Swedesburg~Swedesburg~~Swedesburg, Henry county, IA 52652, USA~41.1192;-91.5402~US-IA~41.1192,-91.5402~41.11920000~-91.54020000~52652~Henry county~~~4.2200003~1317~3046
+Swisher~Swisher~~Swisher, Johnson county, IA 52338, USA~41.8487;-91.697~US-IA~41.8487,-91.697~41.84870000~-91.69700000~52338~Johnson county~~~4.31~2678~3819
+Tabor~Tabor~~Tabor, Fremont county, IA 51653, USA~40.8964;-95.6714~US-IA~40.8964,-95.6714~40.89640000~-95.67140000~51653~Fremont county~~~4.44~2679~2483
+Tama~Tama~~Tama, Tama county, IA 52339, USA~41.9663;-92.5732~US-IA~41.9663,-92.5732~41.96630000~-92.57320000~52339~Tama county~~~4.1200004~2766~3899
+Teeds Grove~Teeds-Grove~~Teeds Grove, Clinton county, IA 52771, USA~42.0115;-90.245~US-IA~42.0115,-90.245~42.01150000~-90.24500000~52771~Clinton county~~~4.1800003~2786~3060
+Templeton~Templeton~~Templeton, Carroll county, IA 51463, USA~41.9087;-94.9175~US-IA~41.9087,-94.9175~41.90870000~-94.91750000~51463~Carroll county~~~4.27~2247~4421
+Terril~Terril~~Terril, Dickinson county, IA 51364, USA~43.2994;-94.97~US-IA~43.2994,-94.97~43.29940000~-94.97000000~51364~Dickinson county~~~4.46~2899~4063
+Thayer~Thayer~~Thayer, Union county, IA 50254, USA~40.9852;-94.0721~US-IA~40.9852,-94.0721~40.98520000~-94.07210000~50254~Union county~~~4.4~2261~4727
+Thompson~Thompson~~Thompson, Winnebago county, IA 50478, USA~43.3685;-93.7713~US-IA~43.3685,-93.7713~43.36850000~-93.77130000~50478~Winnebago county~~~4.2000003~1902~4850
+Thor~Thor~~Thor, Humboldt county, IA 50591, USA~42.6864;-94.0479~US-IA~42.6864,-94.0479~42.68640000~-94.04790000~50591~Humboldt county~~~4.27~2213~3131
+Thornburg~Thornburg~~Thornburg, Keokuk county, IA 50255, USA~41.4677;-92.3543~US-IA~41.4677,-92.3543~41.46770000~-92.35430000~50255~Keokuk county~~~4.25~1396~4929
+Thornton~Thornton~~Thornton, Cerro Gordo county, IA 50479, USA~42.9435;-93.3808~US-IA~42.9435,-93.3808~42.94350000~-93.38080000~50479~Cerro Gordo county~~~4.4~2769~2346
+Thurman~Thurman~~Thurman, Fremont county, IA 51654, USA~40.821;-95.7506~US-IA~40.821,-95.7506~40.82100000~-95.75060000~51654~Fremont county~~~4.4100003~2902~3612
+Tiffin~Tiffin~~Tiffin, Johnson county, IA 52340, USA~41.7099;-91.6662~US-IA~41.7099,-91.6662~41.70990000~-91.66620000~52340~Johnson county~~~4.3900003~1056~4740
+Tingley~Tingley~~Tingley, Ringgold county, IA 50863, USA~40.8511;-94.1906~US-IA~40.8511,-94.1906~40.85110000~-94.19060000~50863~Ringgold county~~~4.3~1176~4855
+Tipton~Tipton~~Tipton, Cedar county, IA 52772, USA~41.7883;-91.1312~US-IA~41.7883,-91.1312~41.78830000~-91.13120000~52772~Cedar county~~~4.36~2979~4081
+Titonka~Titonka~~Titonka, Kossuth county, IA 50480, USA~43.2384;-94.0393~US-IA~43.2384,-94.0393~43.23840000~-94.03930000~50480~Kossuth county~~~4.17~1358~3064
+Toddville~Toddville~~Toddville, Linn county, IA 52341, USA~42.1088;-91.7369~US-IA~42.1088,-91.7369~42.10880000~-91.73690000~52341~Linn county~~~4.4100003~1368~2632
+Toeterville~Toeterville~~Toeterville, Mitchell county, IA 50481, USA~43.3783;-92.9186~US-IA~43.3783,-92.9186~43.37830000~-92.91860000~50481~Mitchell county~~~4.38~2352~4194
+Toledo~Toledo~~Toledo, Tama county, IA 52342, USA~41.9907;-92.5757~US-IA~41.9907,-92.5757~41.99070000~-92.57570000~52342~Tama county~~~4.3~2944~4231
+Tracy~Tracy~~Tracy, Marion county, IA 50256, USA~41.2831;-92.8719~US-IA~41.2831,-92.8719~41.28310000~-92.87190000~50256~Marion county~~~4.11~2378~4792
+Traer~Traer~~Traer, Tama county, IA 50675, USA~42.1912;-92.4772~US-IA~42.1912,-92.4772~42.19120000~-92.47720000~50675~Tama county~~~4.17~2064~3529
+Treynor~Treynor~~Treynor, Pottawattamie county, IA 51575, USA~41.23;-95.6066~US-IA~41.23,-95.6066~41.23000000~-95.60660000~51575~Pottawattamie county~~~4.34~2242~2533
+Tripoli~Tripoli~~Tripoli, Bremer county, IA 50676, USA~42.8064;-92.2594~US-IA~42.8064,-92.2594~42.80640000~-92.25940000~50676~Bremer county~~~4.29~2291~2802
+Troy Mills~Troy-Mills~~Troy Mills, Linn county, IA 52344, USA~42.292;-91.6856~US-IA~42.292,-91.6856~42.29200000~-91.68560000~52344~Linn county~~~4.2000003~2819~2343
+Truesdale~Truesdale~~Truesdale, Buena Vista county, IA 50592, USA~42.7304;-95.1816~US-IA~42.7304,-95.1816~42.73040000~-95.18160000~50592~Buena Vista county~~~4.4300003~1099~2505
+Truro~Truro~~Truro, Madison county, IA 50257, USA~41.2095;-93.8467~US-IA~41.2095,-93.8467~41.20950000~-93.84670000~50257~Madison county~~~4.4700003~2270~4088
+Udell~Udell~~Udell, Appanoose county, IA 52593, USA~40.8205;-92.6975~US-IA~40.8205,-92.6975~40.82050000~-92.69750000~52593~Appanoose county~~~4.33~2059~4324
+Underwood~Underwood~~Underwood, Pottawattamie county, IA 51576, USA~41.3173;-95.7081~US-IA~41.3173,-95.7081~41.31730000~-95.70810000~51576~Pottawattamie county~~~4.28~1501~4025
+Union~Union~~Union, Hardin county, IA 50258, USA~42.1723;-93.0846~US-IA~42.1723,-93.0846~42.17230000~-93.08460000~50258~Hardin county~~~4.17~1529~4678
+Unionville~Unionville~~Unionville, Appanoose county, IA 52594, USA~40.8532;-92.6966~US-IA~40.8532,-92.6966~40.85320000~-92.69660000~52594~Appanoose county~~~4.42~2537~3034
+University Park~University-Park~~University Park, Mahaska county, IA 52595, USA~41.2856;-92.6205~US-IA~41.2856,-92.6205~41.28560000~-92.62050000~52595~Mahaska county~~~4.4~2357~4686
+Urbana~Urbana~~Urbana, Benton county, IA 52345, USA~42.2236;-91.8751~US-IA~42.2236,-91.8751~42.22360000~-91.87510000~52345~Benton county~~~4.3~2429~3939
+Urbandale~Urbandale~~Urbandale, Polk county, IA 50322, USA~41.6259;-93.7347~US-IA~41.6259,-93.7347~41.62590000~-93.73470000~50322~Polk county~~~4.26~2167~3218
+Ute~Ute~~Ute, Monona county, IA 51060, USA~42.0509;-95.7079~US-IA~42.0509,-95.7079~42.05090000~-95.70790000~51060~Monona county~~~4.15~1615~4740
+Vail~Vail~~Vail, Crawford county, IA 51465, USA~42.0641;-95.2032~US-IA~42.0641,-95.2032~42.06410000~-95.20320000~51465~Crawford county~~~4.3900003~1951~4758
+Van Horne~Van-Horne~~Van Horne, Benton county, IA 52346, USA~42.0234;-92.0797~US-IA~42.0234,-92.0797~42.02340000~-92.07970000~52346~Benton county~~~4.26~2240~3859
+Van Meter~Van-Meter~~Van Meter, Dallas county, IA 50261, USA~41.5262;-93.9557~US-IA~41.5262,-93.9557~41.52620000~-93.95570000~50261~Dallas county~~~4.37~1049~4536
+Van Wert~Van-Wert~~Van Wert, Decatur county, IA 50262, USA~40.8546;-93.8466~US-IA~40.8546,-93.8466~40.85460000~-93.84660000~50262~Decatur county~~~4.25~2121~2928
+Varina~Varina~~Varina, Pocahontas county, IA 50593, USA~42.6308;-94.8167~US-IA~42.6308,-94.8167~42.63080000~-94.81670000~50593~Pocahontas county~~~4.37~1314~3187
+Ventura~Ventura~~Ventura, Cerro Gordo county, IA 50482, USA~43.127;-93.4744~US-IA~43.127,-93.4744~43.12700000~-93.47440000~50482~Cerro Gordo county~~~4.48~2238~4037
+Victor~Victor~~Victor, Iowa county, IA 52347, USA~41.7291;-92.2946~US-IA~41.7291,-92.2946~41.72910000~-92.29460000~52347~Iowa county~~~4.4700003~2189~2400
+Villisca~Villisca~~Villisca, Montgomery county, IA 50864, USA~40.9264;-94.9747~US-IA~40.9264,-94.9747~40.92640000~-94.97470000~50864~Montgomery county~~~4.1400003~1271~3982
+Vincent~Vincent~~Vincent, Webster county, IA 50594, USA~42.5899;-94.0188~US-IA~42.5899,-94.0188~42.58990000~-94.01880000~50594~Webster county~~~4.33~1106~4814
+Vining~Vining~~Vining, Tama county, IA 52348, USA~41.9746;-92.365~US-IA~41.9746,-92.365~41.97460000~-92.36500000~52348~Tama county~~~4.27~2388~2354
+Vinton~Vinton~~Vinton, Benton county, IA 52349, USA~42.166;-92.0194~US-IA~42.166,-92.0194~42.16600000~-92.01940000~52349~Benton county~~~4.2400002~1573~4187
+Viola~Viola~~Viola, Linn county, IA 52350, USA~42.0908;-91.3832~US-IA~42.0908,-91.3832~42.09080000~-91.38320000~52350~Linn county~~~4.42~1999~2414
+Volga~Volga~~Volga, Clayton county, IA 52077, USA~42.8045;-91.5411~US-IA~42.8045,-91.5411~42.80450000~-91.54110000~52077~Clayton county~~~4.11~2396~2801
+Wadena~Wadena~~Wadena, Fayette county, IA 52169, USA~42.8393;-91.6528~US-IA~42.8393,-91.6528~42.83930000~-91.65280000~52169~Fayette county~~~4.4700003~2744~2086
+Walcott~Walcott~~Walcott, Scott county, IA 52773, USA~41.6365;-90.7589~US-IA~41.6365,-90.7589~41.63650000~-90.75890000~52773~Scott county~~~4.4500003~2488~3553
+Walford~Walford~~Walford, Benton county, IA 52351, USA~41.9059;-91.8908~US-IA~41.9059,-91.8908~41.90590000~-91.89080000~52351~Benton county~~~4.29~2956~4175
+Walker~Walker~~Walker, Linn county, IA 52352, USA~42.2692;-91.7603~US-IA~42.2692,-91.7603~42.26920000~-91.76030000~52352~Linn county~~~4.23~1204~3404
+Wall Lake~Wall-Lake~~Wall Lake, Sac county, IA 51466, USA~42.2713;-95.0905~US-IA~42.2713,-95.0905~42.27130000~-95.09050000~51466~Sac county~~~4.4900002~2159~2685
+Wallingford~Wallingford~~Wallingford, Emmet county, IA 51365, USA~43.2969;-94.8543~US-IA~43.2969,-94.8543~43.29690000~-94.85430000~51365~Emmet county~~~4.23~1661~4871
+Walnut~Walnut~~Walnut, Pottawattamie county, IA 51577, USA~41.4784;-95.2193~US-IA~41.4784,-95.2193~41.47840000~-95.21930000~51577~Pottawattamie county~~~4.42~2027~2547
+Wapello~Wapello~~Wapello, Louisa county, IA 52653, USA~41.1795;-91.1881~US-IA~41.1795,-91.1881~41.17950000~-91.18810000~52653~Louisa county~~~4.29~1825~3874
+Washington~Washington~~Washington, Washington county, IA 52353, USA~41.2991;-91.6886~US-IA~41.2991,-91.6886~41.29910000~-91.68860000~52353~Washington county~~~4.1800003~2594~3258
+Washta~Washta~~Washta, Cherokee county, IA 51061, USA~42.5778;-95.7261~US-IA~42.5778,-95.7261~42.57780000~-95.72610000~51061~Cherokee county~~~4.1800003~2462~4094
+Waterloo~Waterloo~~Waterloo, Black Hawk county, IA 50701, USA~42.4784;-92.3679~US-IA~42.4784,-92.3679~42.47840000~-92.36790000~50701~Black Hawk county~~~4.46~2262~3349
+Waterville~Waterville~~Waterville, Allamakee county, IA 52170, USA~43.2716;-91.2583~US-IA~43.2716,-91.2583~43.27160000~-91.25830000~52170~Allamakee county~~~4.37~1294~3555
+Watkins~Watkins~~Watkins, Benton county, IA 52354, USA~41.9043;-92.0062~US-IA~41.9043,-92.0062~41.90430000~-92.00620000~52354~Benton county~~~4.3900003~1511~4061
+Waucoma~Waucoma~~Waucoma, Fayette county, IA 52171, USA~43.0585;-91.9906~US-IA~43.0585,-91.9906~43.05850000~-91.99060000~52171~Fayette county~~~4.1600003~1117~4990
+Waukee~Waukee~~Waukee, Dallas county, IA 50263, USA~41.6027;-93.8691~US-IA~41.6027,-93.8691~41.60270000~-93.86910000~50263~Dallas county~~~4.19~1244~3937
+Waukon~Waukon~~Waukon, Allamakee county, IA 52172, USA~43.2714;-91.4772~US-IA~43.2714,-91.4772~43.27140000~-91.47720000~52172~Allamakee county~~~4.4~1959~3771
+Waverly~Waverly~~Waverly, Bremer county, IA 50677, USA~42.7162;-92.4256~US-IA~42.7162,-92.4256~42.71620000~-92.42560000~50677~Bremer county~~~4.4100003~1732~2680
+Wayland~Wayland~~Wayland, Henry county, IA 52654, USA~41.1454;-91.6641~US-IA~41.1454,-91.6641~41.14540000~-91.66410000~52654~Henry county~~~4.1200004~1038~4865
+Webb~Webb~~Webb, Clay county, IA 51366, USA~43.0638;-95.2835~US-IA~43.0638,-95.2835~43.06380000~-95.28350000~51366~Clay county~~~4.48~2897~3870
+Webster City~Webster-City~~Webster City, Hamilton county, IA 50595, USA~42.4609;-93.8297~US-IA~42.4609,-93.8297~42.46090000~-93.82970000~50595~Hamilton county~~~4.42~2245~2369
+Webster~Webster~~Webster, Keokuk county, IA 52355, USA~41.4361;-92.1892~US-IA~41.4361,-92.1892~41.43610000~-92.18920000~52355~Keokuk county~~~4.28~2757~4533
+Weldon~Weldon~~Weldon, Decatur county, IA 50264, USA~40.8577;-93.7281~US-IA~40.8577,-93.7281~40.85770000~-93.72810000~50264~Decatur county~~~4.34~1673~4283
+Wellman~Wellman~~Wellman, Washington county, IA 52356, USA~41.4705;-91.8324~US-IA~41.4705,-91.8324~41.47050000~-91.83240000~52356~Washington county~~~4.1400003~2327~3674
+Wellsburg~Wellsburg~~Wellsburg, Grundy county, IA 50680, USA~42.4338;-92.9271~US-IA~42.4338,-92.9271~42.43380000~-92.92710000~50680~Grundy county~~~4.19~2991~2690
+Welton~Welton~~Welton, Muscatine county, IA 52774, USA~41.9052;-90.6094~US-IA~41.9052,-90.6094~41.90520000~-90.60940000~52774~Muscatine county~~~4.1400003~1175~2070
+Wesley~Wesley~~Wesley, Kossuth county, IA 50483, USA~43.0841;-93.9938~US-IA~43.0841,-93.9938~43.08410000~-93.99380000~50483~Kossuth county~~~4.36~2497~4639
+West Bend~West-Bend~~West Bend, Palo Alto county, IA 50597, USA~42.9629;-94.4459~US-IA~42.9629,-94.4459~42.96290000~-94.44590000~50597~Palo Alto county~~~4.2400002~2087~2274
+West Branch~West-Branch~~West Branch, Cedar county, IA 52358, USA~41.6754;-91.3467~US-IA~41.6754,-91.3467~41.67540000~-91.34670000~52358~Cedar county~~~4.36~1062~3412
+West Burlington~West-Burlington~~West Burlington, Des Moines county, IA 52655, USA~40.8267;-91.1657~US-IA~40.8267,-91.1657~40.82670000~-91.16570000~52655~Des Moines county~~~4.2200003~1989~2570
+West Chester~West-Chester~~West Chester, Washington county, IA 52359, USA~41.3775;-91.8813~US-IA~41.3775,-91.8813~41.37750000~-91.88130000~52359~Washington county~~~4.32~1167~4469
+West Des Moines~West-Des-Moines~~West Des Moines, Polk county, IA 50265, USA~41.5832;-93.7569~US-IA~41.5832,-93.7569~41.58320000~-93.75690000~50265~Polk county~~~4.1400003~1233~4084
+West Grove~West-Grove~~West Grove, Davis county, IA 52538, USA~40.7182;-92.5595~US-IA~40.7182,-92.5595~40.71820000~-92.55950000~52538~Davis county~~~4.1400003~2565~4167
+West Liberty~West-Liberty~~West Liberty, Muscatine county, IA 52776, USA~41.5755;-91.2613~US-IA~41.5755,-91.2613~41.57550000~-91.26130000~52776~Muscatine county~~~4.38~1062~2825
+West Point~West-Point~~West Point, Lee county, IA 52656, USA~40.7167;-91.4546~US-IA~40.7167,-91.4546~40.71670000~-91.45460000~52656~Lee county~~~4.38~1036~4112
+West Union~West-Union~~West Union, Fayette county, IA 52175, USA~42.9697;-91.8008~US-IA~42.9697,-91.8008~42.96970000~-91.80080000~52175~Fayette county~~~4.23~1575~4316
+Westfield~Westfield~~Westfield, Plymouth county, IA 51062, USA~42.7102;-96.4862~US-IA~42.7102,-96.4862~42.71020000~-96.48620000~51062~Plymouth county~~~4.38~2970~4758
+Westgate~Westgate~~Westgate, Fayette county, IA 50681, USA~42.8192;-92.0242~US-IA~42.8192,-92.0242~42.81920000~-92.02420000~50681~Fayette county~~~4.3900003~1553~4539
+Westphalia~Westphalia~~Westphalia, Shelby county, IA 51578, USA~41.7185;-95.3952~US-IA~41.7185,-95.3952~41.71850000~-95.39520000~51578~Shelby county~~~4.31~2151~2763
+Westside~Westside~~Westside, Crawford county, IA 51467, USA~42.0747;-95.1011~US-IA~42.0747,-95.1011~42.07470000~-95.10110000~51467~Crawford county~~~4.4300003~2385~3303
+Wever~Wever~~Wever, Lee county, IA 52658, USA~40.6839;-91.1996~US-IA~40.6839,-91.1996~40.68390000~-91.19960000~52658~Lee county~~~4.2000003~2285~2812
+What Cheer~What-Cheer~~What Cheer, Keokuk county, IA 50268, USA~41.3779;-92.3536~US-IA~41.3779,-92.3536~41.37790000~-92.35360000~50268~Keokuk county~~~4.48~1600~4210
+Wheatland~Wheatland~~Wheatland, Clinton county, IA 52777, USA~41.8329;-90.8406~US-IA~41.8329,-90.8406~41.83290000~-90.84060000~52777~Clinton county~~~4.23~1675~4658
+Whiting~Whiting~~Whiting, Monona county, IA 51063, USA~42.1262;-96.1524~US-IA~42.1262,-96.1524~42.12620000~-96.15240000~51063~Monona county~~~4.1800003~1746~2256
+Whittemore~Whittemore~~Whittemore, Kossuth county, IA 50598, USA~43.0623;-94.4241~US-IA~43.0623,-94.4241~43.06230000~-94.42410000~50598~Kossuth county~~~4.27~1603~4866
+Whitten~Whitten~~Whitten, Hardin county, IA 50269, USA~42.2516;-93.0616~US-IA~42.2516,-93.0616~42.25160000~-93.06160000~50269~Hardin county~~~4.26~2170~4689
+Williams~Williams~~Williams, Hamilton county, IA 50271, USA~42.4885;-93.5424~US-IA~42.4885,-93.5424~42.48850000~-93.54240000~50271~Hamilton county~~~4.28~1220~4022
+Williamsburg~Williamsburg~~Williamsburg, Iowa county, IA 52361, USA~41.6615;-92.0152~US-IA~41.6615,-92.0152~41.66150000~-92.01520000~52361~Iowa county~~~4.19~2768~3381
+Williamson~Williamson~~Williamson, Lucas county, IA 50272, USA~41.1145;-93.2683~US-IA~41.1145,-93.2683~41.11450000~-93.26830000~50272~Lucas county~~~4.42~2022~4302
+Wilton~Wilton~~Wilton, Muscatine county, IA 52778, USA~41.5903;-91.0193~US-IA~41.5903,-91.0193~41.59030000~-91.01930000~52778~Muscatine county~~~4.19~1765~3600
+Winfield~Winfield~~Winfield, Henry county, IA 52659, USA~41.1268;-91.4366~US-IA~41.1268,-91.4366~41.12680000~-91.43660000~52659~Henry county~~~4.31~1095~4770
+Winterset~Winterset~~Winterset, Madison county, IA 50273, USA~41.3327;-94.0133~US-IA~41.3327,-94.0133~41.33270000~-94.01330000~50273~Madison county~~~4.11~1641~4708
+Winthrop~Winthrop~~Winthrop, Buchanan county, IA 50682, USA~42.4746;-91.7356~US-IA~42.4746,-91.7356~42.47460000~-91.73560000~50682~Buchanan county~~~4.32~1244~4798
+Wiota~Wiota~~Wiota, Cass county, IA 50274, USA~41.4028;-94.8899~US-IA~41.4028,-94.8899~41.40280000~-94.88990000~50274~Cass county~~~4.37~1695~3735
+Woden~Woden~~Woden, Hancock county, IA 50484, USA~43.2296;-93.9079~US-IA~43.2296,-93.9079~43.22960000~-93.90790000~50484~Hancock county~~~4.15~2003~2379
+Woodbine~Woodbine~~Woodbine, Harrison county, IA 51579, USA~41.7462;-95.6978~US-IA~41.7462,-95.6978~41.74620000~-95.69780000~51579~Harrison county~~~4.25~1033~3080
+Woodburn~Woodburn~~Woodburn, Clarke county, IA 50275, USA~40.9838;-93.6169~US-IA~40.9838,-93.6169~40.98380000~-93.61690000~50275~Clarke county~~~4.3~1225~2706
+Woodward~Woodward~~Woodward, Dallas county, IA 50276, USA~41.8519;-93.9243~US-IA~41.8519,-93.9243~41.85190000~-93.92430000~50276~Dallas county~~~4.35~1989~2603
+Woolstock~Woolstock~~Woolstock, Wright county, IA 50599, USA~42.6014;-93.7954~US-IA~42.6014,-93.7954~42.60140000~-93.79540000~50599~Wright county~~~4.37~2895~4524
+Worthington~Worthington~~Worthington, Dubuque county, IA 52078, USA~42.3932;-91.1026~US-IA~42.3932,-91.1026~42.39320000~-91.10260000~52078~Dubuque county~~~4.11~2353~2426
+Wyoming~Wyoming~~Wyoming, Jones county, IA 52362, USA~42.062;-91.0043~US-IA~42.062,-91.0043~42.06200000~-91.00430000~52362~Jones county~~~4.46~2987~3864
+Yale~Yale~~Yale, Guthrie county, IA 50277, USA~41.774;-94.3592~US-IA~41.774,-94.3592~41.77400000~-94.35920000~50277~Guthrie county~~~4.4~2148~4185
+Yarmouth~Yarmouth~~Yarmouth, Des Moines county, IA 52660, USA~41.0322;-91.3147~US-IA~41.0322,-91.3147~41.03220000~-91.31470000~52660~Des Moines county~~~4.27~2777~4383
+Yorktown~Yorktown~~Yorktown, Page county, IA 51656, USA~40.732;-95.1547~US-IA~40.732,-95.1547~40.73200000~-95.15470000~51656~Page county~~~4.1600003~1866~4197
+Zearing~Zearing~~Zearing, Story county, IA 50278, USA~42.1613;-93.3076~US-IA~42.1613,-93.3076~42.16130000~-93.30760000~50278~Story county~~~4.17~2457~2585
+Zwingle~Zwingle~~Zwingle, Dubuque county, IA 52079, USA~42.3092;-90.7223~US-IA~42.3092,-90.7223~42.30920000~-90.72230000~52079~Dubuque county~~~4.35~2949~4573

@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Random;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
@@ -16,6 +17,8 @@ import com.fdt.utils.Utils;
 public class CategoryDao extends DaoCommon{
 	
 	private static final Logger log = Logger.getLogger(CategoryDao.class);
+	
+	private static final Random rnd = new Random();
 	
 	public CategoryDao(Connection connection) {
 		super(connection);
@@ -53,8 +56,8 @@ public class CategoryDao extends DaoCommon{
 		int[] result = null;
 		try {
 			prprStatement = connection.prepareStatement(""
-					+ " INSERT INTO category (category_name, category_name_latin, abbr, title, meta_keywords, meta_description, tmpl_text, generated_text, upd_flg, post_dt, upd_dt) "
-					+ " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, now(), now()) ");
+					+ " INSERT INTO category (category_name, category_name_latin, abbr, title, meta_keywords, meta_description, tmpl_text, generated_text,ratingCount,reviewCount,voteCount, upd_flg, post_dt, upd_dt) "
+					+ " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now(), now()) ");
 
 			for (Category category : categories) {
 				prprStatement.setString(1, category.getCategoryName());
@@ -65,7 +68,10 @@ public class CategoryDao extends DaoCommon{
 				prprStatement.setString(6, category.getMetaDesc());
 				prprStatement.setString(7, category.getTmplText());
 				prprStatement.setString(8, category.getGenText());
-				prprStatement.setBoolean(9, category.isUpdated());
+				prprStatement.setFloat(9, ((float)4.11 + ((float)rnd.nextInt(40)/100)));
+				prprStatement.setInt(10,1);
+				prprStatement.setInt(11, 5 + rnd.nextInt(10));
+				prprStatement.setBoolean(12, category.isUpdated());
 				prprStatement.addBatch();
 			}
 			

@@ -61,7 +61,7 @@ public class DoorgenGeneratorRunner {
 	private static final String MENU_FILE_LABEL = "menu_file";
 	private static final String CATEGORIES_FOLDER_LABEL = "categories_folder";
 
-	private static final String CONNECTION_STRING_LABEL = "connection_string";
+	public static final String CONNECTION_STRING_LABEL = "connection_string";
 
 	private File menuFile;
 

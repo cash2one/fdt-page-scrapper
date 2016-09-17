@@ -1,26 +1,25 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
-        <groupId>com.fdt.scrapper</groupId>
+		<groupId>com.fdt.scrapper</groupId>
 		<artifactId>parent</artifactId>
 		<version>1.0</version>
 	</parent>
-	
+
 	<artifactId>doorgen_poller</artifactId>
 	<packaging>jar</packaging>
-	
+
 	<name>doorgen_poller</name>
-	
+
 	<url></url>
 	<dependencies>
 		<dependency>
-		    <groupId>com.fdt.scrapper</groupId>
-		    <artifactId>snippet_extractor_lib</artifactId>
-		    <version>1.0</version>
+			<groupId>com.fdt.scrapper</groupId>
+			<artifactId>snippet_extractor_lib</artifactId>
+			<version>1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -90,6 +89,22 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

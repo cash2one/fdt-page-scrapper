@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<menu>
+	<header>
+		<menu_item>
+			<label>About Us</label>
+			<href>/</href>
+			<style_class>menu_style_1</style_class>
+			<file>./tmpl_main_block.html</file>
+			<page_title>MAIN_PAGE_TITLE</page_title>
+			<page_meta_description>MAIN_PAGE_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>MAIN_PAGE_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+		<menu_item>
+			<label>FAQ</label>
+			<href>faq</href>
+			<style_class>menu_style_2</style_class>
+			<file>./menu_pages/tmpl_faq.html</file>
+			<page_title>FAQ_PAGE_TITLE</page_title>
+			<page_meta_description>FAQ_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>FAQ_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+		<menu_item>
+			<label>Contact</label>
+			<href>contact</href>
+			<style_class>menu_style_3</style_class>
+			<file>./menu_pages/tmpl_contact.html</file>
+			<page_title>CONTACT_PAGE_TITLE</page_title>
+			<page_meta_description>CONTACT_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>CONTACT_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+		<menu_item>
+			<label>Lending Policy</label>
+			<href>policy</href>
+			<style_class>menu_style_4</style_class>
+			<file>./menu_pages/tmpl_policy.html</file>
+			<page_title>POLICY_PAGE_TITLE</page_title>
+			<page_meta_description>POLICY_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>POLICY_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+		<menu_item>
+			<label>Articles</label>
+			<href>articles</href>
+			<style_class>menu_style_3</style_class>
+			<file>./menu_pages/tmpl_articles.html</file>
+			<page_title>ARTICLES_LIST_PAGE_TITLE</page_title>
+			<page_meta_description>ARTICLES_LIST_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>ARTICLES_LIST_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label>ARTICLES_LIST_PAGE</tmpl_page_label>
+		</menu_item>
+		<menu_item>
+			<label>Order Now</label>
+			<href>order-now</href>
+			<style_class>menu_style_4</style_class>
+			<file>./menu_pages/tmpl_order_now.html</file>
+			<page_title>APPLY_PAGE_TITLE</page_title>
+			<page_meta_description>APPLY_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>APPLY_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+	</header>
+	<footer>
+		<menu_item>
+			<label>Disclaimer</label>
+			<href>disclaimer</href>
+			<file>./menu_pages/tmpl_disclaimer.html</file>
+			<page_title>DISCLAIMER_LIST_PAGE_TITLE</page_title>
+			<page_meta_description>DISCLAIMER_LIST_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>DISCLAIMER_LIST_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+		<menu_item>
+			<label>Terms of Use</label>
+			<href>terms-of-use</href>
+			<file>./menu_pages/tmpl_terms_of_use.html</file>
+			<page_title>TERMSOFUSE_LIST_PAGE_TITLE</page_title>
+			<page_meta_description>TERMSOFUSE_LIST_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>TERMSOFUSE_LIST_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+		<menu_item>
+			<label>Revision Policy</label>
+			<href>revision-policy</href>
+			<file>./menu_pages/tmpl_revision_policy.html</file>
+			<page_title>REVISIONPOLICY_LIST_PAGE_TITLE</page_title>
+			<page_meta_description>REVISIONPOLICY_LIST_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>REVISIONPOLICY_LIST_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+		<menu_item>
+			<label>Privacy Policy</label>
+			<href>privacy-policy</href>
+			<file>./menu_pages/tmpl_privacy_policy.html</file>
+			<page_title>PRIVACYPOLICY_LIST_PAGE_TITLE</page_title>
+			<page_meta_description>PRIVACYPOLICY_LIST_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>PRIVACYPOLICY_LIST_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+		<menu_item>
+			<label>Cookie Policy</label>
+			<href>cookie-policy</href>
+			<file>./menu_pages/tmpl_cookie_policy.html</file>
+			<page_title>COOKIEPOLICY_LIST_PAGE_TITLE</page_title>
+			<page_meta_description>COOKIEPOLICY_LIST_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>COOKIEPOLICY_LIST_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+		<menu_item>
+			<label>Money Back Guarantee</label>
+			<href>money-back-guarantee</href>
+			<file>./menu_pages/tmpl_money_back_guarantee.html</file>
+			<page_title>MONEYBACKGUARANTEE_LIST_PAGE_TITLE</page_title>
+			<page_meta_description>MONEYBACKGUARANTEE_LIST_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>MONEYBACKGUARANTEE_LIST_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+	</footer>
+</menu>

@@ -1,0 +1,634 @@
+Abbyville~Abbyville~~Abbyville, Reno county, KS 67510, USA~38.0054;-98.2081~US-KS~38.0054,-98.2081~38.00540000~-98.20810000~67510~Reno county~~~4.3900003~2145~4463
+Abilene~Abilene~~Abilene, Dickinson county, KS 67410, USA~38.9211;-97.2201~US-KS~38.9211,-97.2201~38.92110000~-97.22010000~67410~Dickinson county~~~4.35~1711~3907
+Admire~Admire~~Admire, Lyon county, KS 66830, USA~38.6386;-96.0991~US-KS~38.6386,-96.0991~38.63860000~-96.09910000~66830~Lyon county~~~4.1400003~2512~3721
+Agenda~Agenda~~Agenda, Republic county, KS 66930, USA~39.6947;-97.4262~US-KS~39.6947,-97.4262~39.69470000~-97.42620000~66930~Republic county~~~4.4300003~1662~2407
+Agra~Agra~~Agra, Phillips county, KS 67621, USA~39.875;-99.1376~US-KS~39.875,-99.1376~39.87500000~-99.13760000~67621~Phillips county~~~4.1200004~1496~3338
+Albert~Albert~~Albert, Barton county, KS 67511, USA~38.4518;-99.0107~US-KS~38.4518,-99.0107~38.45180000~-99.01070000~67511~Barton county~~~4.31~1953~4910
+Alden~Alden~~Alden, Rice county, KS 67512, USA~38.2405;-98.3109~US-KS~38.2405,-98.3109~38.24050000~-98.31090000~67512~Rice county~~~4.2200003~1603~3277
+Alexander~Alexander~~Alexander, Rush county, KS 67513, USA~38.4688;-99.5522~US-KS~38.4688,-99.5522~38.46880000~-99.55220000~67513~Rush county~~~4.42~1546~3003
+Allen~Allen~~Allen, Lyon county, KS 66833, USA~38.6415;-96.2536~US-KS~38.6415,-96.2536~38.64150000~-96.25360000~66833~Lyon county~~~4.2400002~2672~2187
+Alma~Alma~~Alma, Wabaunsee county, KS 66401, USA~38.9637;-96.2423~US-KS~38.9637,-96.2423~38.96370000~-96.24230000~66401~Wabaunsee county~~~4.44~2557~4764
+Almena~Almena~~Almena, Norton county, KS 67622, USA~39.8935;-99.7073~US-KS~39.8935,-99.7073~39.89350000~-99.70730000~67622~Norton county~~~4.1200004~2854~4301
+Alta Vista~Alta-Vista~~Alta Vista, Wabaunsee county, KS 66834, USA~38.8667;-96.4882~US-KS~38.8667,-96.4882~38.86670000~-96.48820000~66834~Wabaunsee county~~~4.5~2114~2522
+Altamont~Altamont~~Altamont, Labette county, KS 67330, USA~37.1974;-95.3034~US-KS~37.1974,-95.3034~37.19740000~-95.30340000~67330~Labette county~~~4.4~2361~4205
+Alton~Alton~~Alton, Osborne county, KS 67623, USA~39.453;-98.9576~US-KS~39.453,-98.9576~39.45300000~-98.95760000~67623~Osborne county~~~4.1400003~1281~4650
+Altoona~Altoona~~Altoona, Wilson county, KS 66710, USA~37.5204;-95.6586~US-KS~37.5204,-95.6586~37.52040000~-95.65860000~66710~Wilson county~~~4.1800003~1438~2610
+Americus~Americus~~Americus, Lyon county, KS 66835, USA~38.5053;-96.2632~US-KS~38.5053,-96.2632~38.50530000~-96.26320000~66835~Lyon county~~~4.4900002~2188~2400
+Andale~Andale~~Andale, Sedgwick county, KS 67001, USA~37.7872;-97.6331~US-KS~37.7872,-97.6331~37.78720000~-97.63310000~67001~Sedgwick county~~~4.15~2382~2875
+Andover~Andover~~Andover, Butler county, KS 67002, USA~37.7;-97.1383~US-KS~37.7,-97.1383~37.70000000~-97.13830000~67002~Butler county~~~4.4500003~2276~2779
+Anthony~Anthony~~Anthony, Harper county, KS 67003, USA~37.156;-98.0292~US-KS~37.156,-98.0292~37.15600000~-98.02920000~67003~Harper county~~~4.3~2831~2290
+Arcadia~Arcadia~~Arcadia, Crawford county, KS 66711, USA~37.6256;-94.7018~US-KS~37.6256,-94.7018~37.62560000~-94.70180000~66711~Crawford county~~~4.26~2057~3180
+Argonia~Argonia~~Argonia, Sumner county, KS 67004, USA~37.2657;-97.7659~US-KS~37.2657,-97.7659~37.26570000~-97.76590000~67004~Sumner county~~~4.4700003~1506~3884
+Arkansas City~Arkansas-City~~Arkansas City, Cowley county, KS 67005, USA~37.071;-97.0597~US-KS~37.071,-97.0597~37.07100000~-97.05970000~67005~Cowley county~~~4.1400003~1435~3150
+Arlington~Arlington~~Arlington, Reno county, KS 67514, USA~37.8847;-98.1855~US-KS~37.8847,-98.1855~37.88470000~-98.18550000~67514~Reno county~~~4.1800003~1115~3894
+Arma~Arma~~Arma, Crawford county, KS 66712, USA~37.567;-94.7293~US-KS~37.567,-94.7293~37.56700000~-94.72930000~66712~Crawford county~~~4.26~1013~3559
+Arnold~Arnold~~Arnold, Ness county, KS 67515, USA~38.6089;-100.007~US-KS~38.6089,-100.007~38.60890000~-100.00700000~67515~Ness county~~~4.23~1426~2996
+Ashland~Ashland~~Ashland, Clark county, KS 67831, USA~37.1891;-99.7709~US-KS~37.1891,-99.7709~37.18910000~-99.77090000~67831~Clark county~~~4.1200004~1856~4209
+Assaria~Assaria~~Assaria, Saline county, KS 67416, USA~38.6696;-97.5831~US-KS~38.6696,-97.5831~38.66960000~-97.58310000~67416~Saline county~~~4.5~2939~4829
+Atchison~Atchison~~Atchison, Atchison county, KS 66002, USA~39.562;-95.1291~US-KS~39.562,-95.1291~39.56200000~-95.12910000~66002~Atchison county~~~4.1200004~1103~4290
+Athol~Athol~~Athol, Smith county, KS 66932, USA~39.8103;-98.5573~US-KS~39.8103,-98.5573~39.81030000~-98.55730000~66932~Smith county~~~4.4300003~1280~4853
+Atlanta~Atlanta~~Atlanta, Cowley county, KS 67008, USA~37.431;-96.7684~US-KS~37.431,-96.7684~37.43100000~-96.76840000~67008~Cowley county~~~4.35~2821~2526
+Attica~Attica~~Attica, Harper county, KS 67009, USA~37.2431;-98.2268~US-KS~37.2431,-98.2268~37.24310000~-98.22680000~67009~Harper county~~~4.4900002~1812~3258
+Atwood~Atwood~~Atwood, Rawlins county, KS 67730, USA~39.8109;-101.039~US-KS~39.8109,-101.039~39.81090000~-101.03900000~67730~Rawlins county~~~4.5~1840~3768
+Auburn~Auburn~~Auburn, Shawnee county, KS 66402, USA~38.9076;-95.8298~US-KS~38.9076,-95.8298~38.90760000~-95.82980000~66402~Shawnee county~~~4.4300003~1841~4044
+Augusta~Augusta~~Augusta, Butler county, KS 67010, USA~37.6915;-96.9761~US-KS~37.6915,-96.9761~37.69150000~-96.97610000~67010~Butler county~~~4.42~2895~4345
+Aurora~Aurora~~Aurora, Cloud county, KS 67417, USA~39.4121;-97.512~US-KS~39.4121,-97.512~39.41210000~-97.51200000~67417~Cloud county~~~4.1200004~2785~3793
+Axtell~Axtell~~Axtell, Marshall county, KS 66403, USA~39.8717;-96.2581~US-KS~39.8717,-96.2581~39.87170000~-96.25810000~66403~Marshall county~~~4.15~1520~2588
+Baileyville~Baileyville~~Baileyville, Nemaha county, KS 66404, USA~39.8426;-96.1849~US-KS~39.8426,-96.1849~39.84260000~-96.18490000~66404~Nemaha county~~~4.34~2957~4751
+Baldwin City~Baldwin-City~~Baldwin City, Douglas county, KS 66006, USA~38.7769;-95.1878~US-KS~38.7769,-95.1878~38.77690000~-95.18780000~66006~Douglas county~~~4.36~1111~3562
+Barnard~Barnard~~Barnard, Lincoln county, KS 67418, USA~39.1781;-98.0983~US-KS~39.1781,-98.0983~39.17810000~-98.09830000~67418~Lincoln county~~~4.48~1888~2951
+Barnes~Barnes~~Barnes, Washington county, KS 66933, USA~39.6542;-96.8623~US-KS~39.6542,-96.8623~39.65420000~-96.86230000~66933~Washington county~~~4.38~1852~4008
+Bartlett~Bartlett~~Bartlett, Labette county, KS 67332, USA~37.0625;-95.2108~US-KS~37.0625,-95.2108~37.06250000~-95.21080000~67332~Labette county~~~4.3900003~1640~3244
+Basehor~Basehor~~Basehor, Leavenworth county, KS 66007, USA~39.1364;-94.932~US-KS~39.1364,-94.932~39.13640000~-94.93200000~66007~Leavenworth county~~~4.34~1843~3334
+Baxter Springs~Baxter-Springs~~Baxter Springs, Cherokee county, KS 66713, USA~37.0227;-94.7392~US-KS~37.0227,-94.7392~37.02270000~-94.73920000~66713~Cherokee county~~~4.3~2323~2656
+Bazine~Bazine~~Bazine, Ness county, KS 67516, USA~38.4785;-99.697~US-KS~38.4785,-99.697~38.47850000~-99.69700000~67516~Ness county~~~4.25~1339~2507
+Beattie~Beattie~~Beattie, Marshall county, KS 66406, USA~39.8616;-96.4204~US-KS~39.8616,-96.4204~39.86160000~-96.42040000~66406~Marshall county~~~4.4~2329~2756
+Beaumont~Beaumont~~Beaumont, Butler county, KS 67012, USA~37.6589;-96.534~US-KS~37.6589,-96.534~37.65890000~-96.53400000~67012~Butler county~~~4.3900003~1274~3340
+Beeler~Beeler~~Beeler, Ness county, KS 67518, USA~38.4756;-100.15~US-KS~38.4756,-100.15~38.47560000~-100.15000000~67518~Ness county~~~4.36~2556~4307
+Belle Plaine~Belle-Plaine~~Belle Plaine, Sumner county, KS 67013, USA~37.3958;-97.2776~US-KS~37.3958,-97.2776~37.39580000~-97.27760000~67013~Sumner county~~~4.3900003~2231~3541
+Belleville~Belleville~~Belleville, Republic county, KS 66935, USA~39.8227;-97.6308~US-KS~39.8227,-97.6308~39.82270000~-97.63080000~66935~Republic county~~~4.5~1343~4230
+Beloit~Beloit~~Beloit, Mitchell county, KS 67420, USA~39.4511;-98.1101~US-KS~39.4511,-98.1101~39.45110000~-98.11010000~67420~Mitchell county~~~4.4900002~2892~3255
+Belpre~Belpre~~Belpre, Edwards county, KS 67519, USA~37.9243;-99.0908~US-KS~37.9243,-99.0908~37.92430000~-99.09080000~67519~Edwards county~~~4.31~1196~2328
+Belvue~Belvue~~Belvue, Pottawatomie county, KS 66407, USA~39.2432;-96.1742~US-KS~39.2432,-96.1742~39.24320000~-96.17420000~66407~Pottawatomie county~~~4.2200003~1919~2232
+Bendena~Bendena~~Bendena, Doniphan county, KS 66008, USA~39.7027;-95.1795~US-KS~39.7027,-95.1795~39.70270000~-95.17950000~66008~Doniphan county~~~4.46~1379~3961
+Benedict~Benedict~~Benedict, Wilson county, KS 66714, USA~37.6359;-95.6349~US-KS~37.6359,-95.6349~37.63590000~-95.63490000~66714~Wilson county~~~4.1600003~1208~4448
+Bennington~Bennington~~Bennington, Ottawa county, KS 67422, USA~39.0327;-97.5942~US-KS~39.0327,-97.5942~39.03270000~-97.59420000~67422~Ottawa county~~~4.36~1249~2314
+Bentley~Bentley~~Bentley, Sedgwick county, KS 67016, USA~37.89;-97.5176~US-KS~37.89,-97.5176~37.89000000~-97.51760000~67016~Sedgwick county~~~4.2400002~2115~3118
+Benton~Benton~~Benton, Butler county, KS 67017, USA~37.7892;-97.1101~US-KS~37.7892,-97.1101~37.78920000~-97.11010000~67017~Butler county~~~4.2200003~1718~3505
+Bern~Bern~~Bern, Nemaha county, KS 66408, USA~39.9558;-95.955~US-KS~39.9558,-95.955~39.95580000~-95.95500000~66408~Nemaha county~~~4.1400003~2704~2252
+Berryton~Berryton~~Berryton, Shawnee county, KS 66409, USA~38.9235;-95.5916~US-KS~38.9235,-95.5916~38.92350000~-95.59160000~66409~Shawnee county~~~4.29~2387~4752
+Beverly~Beverly~~Beverly, Lincoln county, KS 67423, USA~38.9588;-97.9808~US-KS~38.9588,-97.9808~38.95880000~-97.98080000~67423~Lincoln county~~~4.2200003~2193~3258
+Bird City~Bird-City~~Bird City, Cheyenne county, KS 67731, USA~39.7498;-101.535~US-KS~39.7498,-101.535~39.74980000~-101.53500000~67731~Cheyenne county~~~4.1400003~2016~4218
+Bison~Bison~~Bison, Rush county, KS 67520, USA~38.5188;-99.1991~US-KS~38.5188,-99.1991~38.51880000~-99.19910000~67520~Rush county~~~4.35~2992~3033
+Blue Mound~Blue-Mound~~Blue Mound, Linn county, KS 66010, USA~38.0958;-95.0045~US-KS~38.0958,-95.0045~38.09580000~-95.00450000~66010~Linn county~~~4.1600003~1251~2222
+Blue Rapids~Blue-Rapids~~Blue Rapids, Marshall county, KS 66411, USA~39.6839;-96.6594~US-KS~39.6839,-96.6594~39.68390000~-96.65940000~66411~Marshall county~~~4.2200003~1940~2757
+Bluff City~Bluff-City~~Bluff City, Harper county, KS 67018, USA~37.0704;-97.8775~US-KS~37.0704,-97.8775~37.07040000~-97.87750000~67018~Harper county~~~4.15~2650~4201
+Bogue~Bogue~~Bogue, Graham county, KS 67625, USA~39.4182;-99.6775~US-KS~39.4182,-99.6775~39.41820000~-99.67750000~67625~Graham county~~~4.26~2884~2497
+Bonner Springs~Bonner-Springs~~Bonner Springs, Wyandotte county, KS 66012, USA~39.0733;-94.8846~US-KS~39.0733,-94.8846~39.07330000~-94.88460000~66012~Wyandotte county~~~4.44~1928~3409
+Bremen~Bremen~~Bremen, Marshall county, KS 66412, USA~39.8729;-96.7469~US-KS~39.8729,-96.7469~39.87290000~-96.74690000~66412~Marshall county~~~4.33~1045~2399
+Brewster~Brewster~~Brewster, Thomas county, KS 67732, USA~39.3613;-101.375~US-KS~39.3613,-101.375~39.36130000~-101.37500000~67732~Thomas county~~~4.4500003~2881~2623
+Bronson~Bronson~~Bronson, Bourbon county, KS 66716, USA~37.9454;-94.9995~US-KS~37.9454,-94.9995~37.94540000~-94.99950000~66716~Bourbon county~~~4.28~1199~3657
+Brookville~Brookville~~Brookville, Saline county, KS 67425, USA~38.8216;-97.8591~US-KS~38.8216,-97.8591~38.82160000~-97.85910000~67425~Saline county~~~4.2000003~2511~2768
+Brownell~Brownell~~Brownell, Ness county, KS 67521, USA~38.6227;-99.6975~US-KS~38.6227,-99.6975~38.62270000~-99.69750000~67521~Ness county~~~4.46~2416~3687
+Bucklin~Bucklin~~Bucklin, Ford county, KS 67834, USA~37.5502;-99.635~US-KS~37.5502,-99.635~37.55020000~-99.63500000~67834~Ford county~~~4.1600003~1264~2712
+Bucyrus~Bucyrus~~Bucyrus, Miami county, KS 66013, USA~38.7826;-94.6991~US-KS~38.7826,-94.6991~38.78260000~-94.69910000~66013~Miami county~~~4.48~1888~4841
+Buffalo~Buffalo~~Buffalo, Wilson county, KS 66717, USA~37.6893;-95.7237~US-KS~37.6893,-95.7237~37.68930000~-95.72370000~66717~Wilson county~~~4.13~1733~2127
+Buhler~Buhler~~Buhler, Reno county, KS 67522, USA~38.1355;-97.7778~US-KS~38.1355,-97.7778~38.13550000~-97.77780000~67522~Reno county~~~4.4500003~1393~3920
+Bunker Hill~Bunker-Hill~~Bunker Hill, Russell county, KS 67626, USA~38.8397;-98.6712~US-KS~38.8397,-98.6712~38.83970000~-98.67120000~67626~Russell county~~~4.2400002~2320~4314
+Burden~Burden~~Burden, Cowley county, KS 67019, USA~37.3216;-96.753~US-KS~37.3216,-96.753~37.32160000~-96.75300000~67019~Cowley county~~~4.1200004~2952~3816
+Burdett~Burdett~~Burdett, Pawnee county, KS 67523, USA~38.262;-99.5192~US-KS~38.262,-99.5192~38.26200000~-99.51920000~67523~Pawnee county~~~4.19~1035~2813
+Burdick~Burdick~~Burdick, Morris county, KS 66838, USA~38.5673;-96.8203~US-KS~38.5673,-96.8203~38.56730000~-96.82030000~66838~Morris county~~~4.4900002~2879~2705
+Burlingame~Burlingame~~Burlingame, Osage county, KS 66413, USA~38.753;-95.8238~US-KS~38.753,-95.8238~38.75300000~-95.82380000~66413~Osage county~~~4.34~1702~4857
+Burlington~Burlington~~Burlington, Coffey county, KS 66839, USA~38.1952;-95.744~US-KS~38.1952,-95.744~38.19520000~-95.74400000~66839~Coffey county~~~4.1200004~2367~2275
+Burns~Burns~~Burns, Marion county, KS 66840, USA~38.086;-96.8841~US-KS~38.086,-96.8841~38.08600000~-96.88410000~66840~Marion county~~~4.4~1662~2854
+Burr Oak~Burr-Oak~~Burr Oak, Jewell county, KS 66936, USA~39.9163;-98.3856~US-KS~39.9163,-98.3856~39.91630000~-98.38560000~66936~Jewell county~~~4.4500003~1373~4120
+Burrton~Burrton~~Burrton, Harvey county, KS 67020, USA~38.028;-97.5575~US-KS~38.028,-97.5575~38.02800000~-97.55750000~67020~Harvey county~~~4.1600003~1810~4182
+Bushton~Bushton~~Bushton, Rice county, KS 67427, USA~38.513;-98.3955~US-KS~38.513,-98.3955~38.51300000~-98.39550000~67427~Rice county~~~4.21~2861~4122
+Byers~Byers~~Byers, Pratt county, KS 67021, USA~37.7793;-98.9072~US-KS~37.7793,-98.9072~37.77930000~-98.90720000~67021~Pratt county~~~4.1400003~1640~2667
+Caldwell~Caldwell~~Caldwell, Sumner county, KS 67022, USA~37.0405;-97.6156~US-KS~37.0405,-97.6156~37.04050000~-97.61560000~67022~Sumner county~~~4.4900002~1418~2315
+Cambridge~Cambridge~~Cambridge, Cowley county, KS 67023, USA~37.1815;-96.7173~US-KS~37.1815,-96.7173~37.18150000~-96.71730000~67023~Cowley county~~~4.2200003~1080~2048
+Caney~Caney~~Caney, Montgomery county, KS 67333, USA~37.0143;-95.9319~US-KS~37.0143,-95.9319~37.01430000~-95.93190000~67333~Montgomery county~~~4.3~1613~3407
+Canton~Canton~~Canton, McPherson county, KS 67428, USA~38.3855;-97.4283~US-KS~38.3855,-97.4283~38.38550000~-97.42830000~67428~McPherson county~~~4.4300003~1488~4693
+Carbondale~Carbondale~~Carbondale, Osage county, KS 66414, USA~38.8199;-95.6918~US-KS~38.8199,-95.6918~38.81990000~-95.69180000~66414~Osage county~~~4.42~2006~2676
+Cassoday~Cassoday~~Cassoday, Butler county, KS 66842, USA~38.0302;-96.6515~US-KS~38.0302,-96.6515~38.03020000~-96.65150000~66842~Butler county~~~4.4700003~1924~4322
+Catharine~Catharine~~Catharine, Ellis county, KS 67627, USA~38.9839;-99.2055~US-KS~38.9839,-99.2055~38.98390000~-99.20550000~67627~Ellis county~~~4.35~2597~2284
+Cawker City~Cawker-City~~Cawker City, Mitchell county, KS 67430, USA~39.503;-98.3836~US-KS~39.503,-98.3836~39.50300000~-98.38360000~67430~Mitchell county~~~4.27~1954~2666
+Cedar Point~Cedar-Point~~Cedar Point, Chase county, KS 66843, USA~38.2875;-96.7491~US-KS~38.2875,-96.7491~38.28750000~-96.74910000~66843~Chase county~~~4.36~1373~4728
+Cedar Vale~Cedar-Vale~~Cedar Vale, Chautauqua county, KS 67024, USA~37.1068;-96.4996~US-KS~37.1068,-96.4996~37.10680000~-96.49960000~67024~Chautauqua county~~~4.23~1239~4036
+Cedar~Cedar~~Cedar, Smith county, KS 67628, USA~39.6625;-98.9272~US-KS~39.6625,-98.9272~39.66250000~-98.92720000~67628~Smith county~~~4.38~2776~4056
+Centerville~Centerville~~Centerville, Anderson county, KS 66014, USA~38.2113;-94.9862~US-KS~38.2113,-94.9862~38.21130000~-94.98620000~66014~Anderson county~~~4.17~2851~2751
+Centralia~Centralia~~Centralia, Nemaha county, KS 66415, USA~39.7261;-96.1291~US-KS~39.7261,-96.1291~39.72610000~-96.12910000~66415~Nemaha county~~~4.1200004~1879~4435
+Chanute~Chanute~~Chanute, Neosho county, KS 66720, USA~37.6408;-95.465~US-KS~37.6408,-95.465~37.64080000~-95.46500000~66720~Neosho county~~~4.34~2337~3405
+Chapman~Chapman~~Chapman, Dickinson county, KS 67431, USA~38.9719;-97.022~US-KS~38.9719,-97.022~38.97190000~-97.02200000~67431~Dickinson county~~~4.36~2597~4158
+Chase~Chase~~Chase, Rice county, KS 67524, USA~38.3586;-98.3181~US-KS~38.3586,-98.3181~38.35860000~-98.31810000~67524~Rice county~~~4.3900003~2844~4900
+Chautauqua~Chautauqua~~Chautauqua, Chautauqua county, KS 67334, USA~37.0218;-96.1773~US-KS~37.0218,-96.1773~37.02180000~-96.17730000~67334~Chautauqua county~~~4.2200003~1365~4386
+Cheney~Cheney~~Cheney, Sedgwick county, KS 67025, USA~37.629;-97.7788~US-KS~37.629,-97.7788~37.62900000~-97.77880000~67025~Sedgwick county~~~4.33~2978~2077
+Cherokee~Cherokee~~Cherokee, Crawford county, KS 66724, USA~37.3425;-94.8302~US-KS~37.3425,-94.8302~37.34250000~-94.83020000~66724~Crawford county~~~4.1600003~1953~3186
+Cherryvale~Cherryvale~~Cherryvale, Montgomery county, KS 67335, USA~37.2645;-95.5514~US-KS~37.2645,-95.5514~37.26450000~-95.55140000~67335~Montgomery county~~~4.36~2154~3989
+Chetopa~Chetopa~~Chetopa, Labette county, KS 67336, USA~37.0376;-95.0909~US-KS~37.0376,-95.0909~37.03760000~-95.09090000~67336~Labette county~~~4.1600003~2672~4198
+Cimarron~Cimarron~~Cimarron, Gray county, KS 67835, USA~37.9046;-100.333~US-KS~37.9046,-100.333~37.90460000~-100.33300000~67835~Gray county~~~4.4500003~2537~2608
+Circleville~Circleville~~Circleville, Jackson county, KS 66416, USA~39.5075;-95.8596~US-KS~39.5075,-95.8596~39.50750000~-95.85960000~66416~Jackson county~~~4.31~2871~3169
+Claflin~Claflin~~Claflin, Barton county, KS 67525, USA~38.5246;-98.535~US-KS~38.5246,-98.535~38.52460000~-98.53500000~67525~Barton county~~~4.29~1191~3429
+Clay Center~Clay-Center~~Clay Center, Clay county, KS 67432, USA~39.3825;-97.1202~US-KS~39.3825,-97.1202~39.38250000~-97.12020000~67432~Clay county~~~4.34~1842~3145
+Clayton~Clayton~~Clayton, Norton county, KS 67629, USA~39.6788;-100.296~US-KS~39.6788,-100.296~39.67880000~-100.29600000~67629~Norton county~~~4.21~2016~3359
+Clearview City~Clearview-City~~Clearview City, Johnson county, KS 66019, USA~38.9454;-95.0027~US-KS~38.9454,-95.0027~38.94540000~-95.00270000~66019~Johnson county~~~4.25~2905~3876
+Clearwater~Clearwater~~Clearwater, Sedgwick county, KS 67026, USA~37.5393;-97.4933~US-KS~37.5393,-97.4933~37.53930000~-97.49330000~67026~Sedgwick county~~~4.28~2736~4918
+Clifton~Clifton~~Clifton, Washington county, KS 66937, USA~39.5634;-97.279~US-KS~39.5634,-97.279~39.56340000~-97.27900000~66937~Washington county~~~4.11~2592~2015
+Clyde~Clyde~~Clyde, Cloud county, KS 66938, USA~39.5934;-97.3968~US-KS~39.5934,-97.3968~39.59340000~-97.39680000~66938~Cloud county~~~4.26~2298~3680
+Coats~Coats~~Coats, Pratt county, KS 67028, USA~37.5142;-98.9021~US-KS~37.5142,-98.9021~37.51420000~-98.90210000~67028~Pratt county~~~4.1600003~1798~4976
+Coffeyville~Coffeyville~~Coffeyville, Montgomery county, KS 67337, USA~37.0396;-95.6307~US-KS~37.0396,-95.6307~37.03960000~-95.63070000~67337~Montgomery county~~~4.21~2747~4516
+Colby~Colby~~Colby, Thomas county, KS 67701, USA~39.3947;-101.047~US-KS~39.3947,-101.047~39.39470000~-101.04700000~67701~Thomas county~~~4.25~2439~4068
+Coldwater~Coldwater~~Coldwater, Comanche county, KS 67029, USA~37.2683;-99.3206~US-KS~37.2683,-99.3206~37.26830000~-99.32060000~67029~Comanche county~~~4.27~1682~3117
+Collyer~Collyer~~Collyer, Trego county, KS 67631, USA~38.9165;-100.058~US-KS~38.9165,-100.058~38.91650000~-100.05800000~67631~Trego county~~~4.15~1764~4678
+Colony~Colony~~Colony, Anderson county, KS 66015, USA~38.0722;-95.3639~US-KS~38.0722,-95.3639~38.07220000~-95.36390000~66015~Anderson county~~~4.4700003~1436~4856
+Columbus~Columbus~~Columbus, Cherokee county, KS 66725, USA~37.1674;-94.8445~US-KS~37.1674,-94.8445~37.16740000~-94.84450000~66725~Cherokee county~~~4.2000003~2010~3045
+Colwich~Colwich~~Colwich, Sedgwick county, KS 67030, USA~37.7572;-97.5328~US-KS~37.7572,-97.5328~37.75720000~-97.53280000~67030~Sedgwick county~~~4.11~2506~3394
+Concordia~Concordia~~Concordia, Cloud county, KS 66901, USA~39.5677;-97.6602~US-KS~39.5677,-97.6602~39.56770000~-97.66020000~66901~Cloud county~~~4.4100003~1344~2442
+Conway Springs~Conway-Springs~~Conway Springs, Sumner county, KS 67031, USA~37.389;-97.6447~US-KS~37.389,-97.6447~37.38900000~-97.64470000~67031~Sumner county~~~4.31~2619~4008
+Coolidge~Coolidge~~Coolidge, Hamilton county, KS 67836, USA~38.0379;-102.01~US-KS~38.0379,-102.01~38.03790000~-102.01000000~67836~Hamilton county~~~4.23~1302~4140
+Copeland~Copeland~~Copeland, Gray county, KS 67837, USA~37.5428;-100.628~US-KS~37.5428,-100.628~37.54280000~-100.62800000~67837~Gray county~~~4.2200003~1236~3767
+Corning~Corning~~Corning, Nemaha county, KS 66417, USA~39.6409;-96.0947~US-KS~39.6409,-96.0947~39.64090000~-96.09470000~66417~Nemaha county~~~4.19~2297~3754
+Cottonwood Falls~Cottonwood-Falls~~Cottonwood Falls, Chase county, KS 66845, USA~38.3659;-96.5459~US-KS~38.3659,-96.5459~38.36590000~-96.54590000~66845~Chase county~~~4.4700003~1836~2613
+Council Grove~Council-Grove~~Council Grove, Morris county, KS 66846, USA~38.6608;-96.4891~US-KS~38.6608,-96.4891~38.66080000~-96.48910000~66846~Morris county~~~4.29~2452~2845
+Courtland~Courtland~~Courtland, Republic county, KS 66939, USA~39.7845;-97.8953~US-KS~39.7845,-97.8953~39.78450000~-97.89530000~66939~Republic county~~~4.27~1832~2798
+Crestline~Crestline~~Crestline, Cherokee county, KS 66728, USA~37.1584;-94.67~US-KS~37.1584,-94.67~37.15840000~-94.67000000~66728~Cherokee county~~~4.48~2916~4917
+Cuba~Cuba~~Cuba, Republic county, KS 66940, USA~39.7862;-97.4236~US-KS~39.7862,-97.4236~39.78620000~-97.42360000~66940~Republic county~~~4.21~2948~3749
+Cummings~Cummings~~Cummings, Atchison county, KS 66016, USA~39.4823;-95.2941~US-KS~39.4823,-95.2941~39.48230000~-95.29410000~66016~Atchison county~~~4.2000003~2293~3319
+Cunningham~Cunningham~~Cunningham, Kingman county, KS 67035, USA~37.6667;-98.4026~US-KS~37.6667,-98.4026~37.66670000~-98.40260000~67035~Kingman county~~~4.2000003~1868~4822
+Damar~Damar~~Damar, Rooks county, KS 67632, USA~39.3208;-99.5887~US-KS~39.3208,-99.5887~39.32080000~-99.58870000~67632~Rooks county~~~4.25~1793~3085
+Danville~Danville~~Danville, Harper county, KS 67036, USA~37.2557;-97.8675~US-KS~37.2557,-97.8675~37.25570000~-97.86750000~67036~Harper county~~~4.2400002~1052~2695
+De Soto~De-Soto~~De Soto, Johnson county, KS 66018, USA~38.9704;-94.9676~US-KS~38.9704,-94.9676~38.97040000~-94.96760000~66018~Johnson county~~~4.1600003~1219~4928
+Dearing~Dearing~~Dearing, Montgomery county, KS 67340, USA~37.0587;-95.714~US-KS~37.0587,-95.714~37.05870000~-95.71400000~67340~Montgomery county~~~4.34~1185~3045
+Deerfield~Deerfield~~Deerfield, Kearny county, KS 67838, USA~37.9832;-101.13~US-KS~37.9832,-101.13~37.98320000~-101.13000000~67838~Kearny county~~~4.46~1747~3563
+Delia~Delia~~Delia, Jackson county, KS 66418, USA~39.2853;-95.9556~US-KS~39.2853,-95.9556~39.28530000~-95.95560000~66418~Jackson county~~~4.4500003~1357~4198
+Delphos~Delphos~~Delphos, Ottawa county, KS 67436, USA~39.2751;-97.763~US-KS~39.2751,-97.763~39.27510000~-97.76300000~67436~Ottawa county~~~4.31~2956~2745
+Denison~Denison~~Denison, Jackson county, KS 66419, USA~39.462;-95.7427~US-KS~39.462,-95.7427~39.46200000~-95.74270000~66419~Jackson county~~~4.13~2760~2691
+Dennis~Dennis~~Dennis, Labette county, KS 67341, USA~37.3189;-95.4142~US-KS~37.3189,-95.4142~37.31890000~-95.41420000~67341~Labette county~~~4.1200004~2292~2797
+Denton~Denton~~Denton, Doniphan county, KS 66017, USA~39.7328;-95.2697~US-KS~39.7328,-95.2697~39.73280000~-95.26970000~66017~Doniphan county~~~4.2400002~1935~3013
+Derby~Derby~~Derby, Sedgwick county, KS 67037, USA~37.5572;-97.2432~US-KS~37.5572,-97.2432~37.55720000~-97.24320000~67037~Sedgwick county~~~4.28~1298~2522
+Dexter~Dexter~~Dexter, Cowley county, KS 67038, USA~37.1814;-96.7147~US-KS~37.1814,-96.7147~37.18140000~-96.71470000~67038~Cowley county~~~4.4700003~1432~3435
+Dighton~Dighton~~Dighton, Lane county, KS 67839, USA~38.4625;-100.435~US-KS~38.4625,-100.435~38.46250000~-100.43500000~67839~Lane county~~~4.2000003~2527~3119
+Dodge City~Dodge-City~~Dodge City, Ford county, KS 67801, USA~37.7578;-100.019~US-KS~37.7578,-100.019~37.75780000~-100.01900000~67801~Ford county~~~4.13~1655~2081
+Dorrance~Dorrance~~Dorrance, Russell county, KS 67634, USA~38.8462;-98.5862~US-KS~38.8462,-98.5862~38.84620000~-98.58620000~67634~Russell county~~~4.4300003~1109~2459
+Douglass~Douglass~~Douglass, Butler county, KS 67039, USA~37.5149;-97.0105~US-KS~37.5149,-97.0105~37.51490000~-97.01050000~67039~Butler county~~~4.32~1842~2788
+Dover~Dover~~Dover, Shawnee county, KS 66420, USA~38.9705;-95.9328~US-KS~38.9705,-95.9328~38.97050000~-95.93280000~66420~Shawnee county~~~4.21~2960~3348
+Downs~Downs~~Downs, Osborne county, KS 67437, USA~39.5044;-98.5453~US-KS~39.5044,-98.5453~39.50440000~-98.54530000~67437~Osborne county~~~4.13~2884~2749
+Dresden~Dresden~~Dresden, Decatur county, KS 67635, USA~39.6126;-100.377~US-KS~39.6126,-100.377~39.61260000~-100.37700000~67635~Decatur county~~~4.32~2665~3888
+Durham~Durham~~Durham, Marion county, KS 67438, USA~38.485;-97.2236~US-KS~38.485,-97.2236~38.48500000~-97.22360000~67438~Marion county~~~4.37~1147~3614
+Dwight~Dwight~~Dwight, Morris county, KS 66849, USA~38.8283;-96.5636~US-KS~38.8283,-96.5636~38.82830000~-96.56360000~66849~Morris county~~~4.23~2031~2447
+Easton~Easton~~Easton, Leavenworth county, KS 66020, USA~39.3466;-95.1163~US-KS~39.3466,-95.1163~39.34660000~-95.11630000~66020~Leavenworth county~~~4.46~1885~2567
+Edgerton~Edgerton~~Edgerton, Johnson county, KS 66021, USA~38.7695;-95.0008~US-KS~38.7695,-95.0008~38.76950000~-95.00080000~66021~Johnson county~~~4.28~2475~4431
+Edna~Edna~~Edna, Labette county, KS 67342, USA~37.0645;-95.3575~US-KS~37.0645,-95.3575~37.06450000~-95.35750000~67342~Labette county~~~4.4100003~1502~2016
+Edson~Edson~~Edson, Sherman county, KS 67733, USA~39.3504;-101.499~US-KS~39.3504,-101.499~39.35040000~-101.49900000~67733~Sherman county~~~4.1200004~2691~2138
+Edwardsville~Edwardsville~~Edwardsville, Wyandotte county, KS 66113, USA~39.0611;-94.8194~US-KS~39.0611,-94.8194~39.06110000~-94.81940000~66113~Wyandotte county~~~4.11~2929~2928
+Effingham~Effingham~~Effingham, Atchison county, KS 66023, USA~39.4862;-95.452~US-KS~39.4862,-95.452~39.48620000~-95.45200000~66023~Atchison county~~~4.46~2934~4263
+El Dorado~El-Dorado~~El Dorado, Butler county, KS 67042, USA~37.8218;-96.8651~US-KS~37.8218,-96.8651~37.82180000~-96.86510000~67042~Butler county~~~4.31~2708~3333
+Elbing~Elbing~~Elbing, Butler county, KS 67041, USA~38.0555;-97.1246~US-KS~38.0555,-97.1246~38.05550000~-97.12460000~67041~Butler county~~~4.28~2057~2786
+Elk City~Elk-City~~Elk City, Montgomery county, KS 67344, USA~37.2882;-95.9115~US-KS~37.2882,-95.9115~37.28820000~-95.91150000~67344~Montgomery county~~~4.4300003~2003~2969
+Elk Falls~Elk-Falls~~Elk Falls, Elk county, KS 67345, USA~37.3847;-96.2716~US-KS~37.3847,-96.2716~37.38470000~-96.27160000~67345~Elk county~~~4.5~1436~2056
+Elkhart~Elkhart~~Elkhart, Morton county, KS 67950, USA~37.0006;-101.903~US-KS~37.0006,-101.903~37.00060000~-101.90300000~67950~Morton county~~~4.31~2280~4815
+Ellinwood~Ellinwood~~Ellinwood, Barton county, KS 67526, USA~38.358;-98.5811~US-KS~38.358,-98.5811~38.35800000~-98.58110000~67526~Barton county~~~4.36~2012~2373
+Ellis~Ellis~~Ellis, Ellis county, KS 67637, USA~38.9383;-99.5622~US-KS~38.9383,-99.5622~38.93830000~-99.56220000~67637~Ellis county~~~4.2000003~1913~3929
+Ellsworth~Ellsworth~~Ellsworth, Ellsworth county, KS 67439, USA~38.7327;-98.2257~US-KS~38.7327,-98.2257~38.73270000~-98.22570000~67439~Ellsworth county~~~4.32~1112~2683
+Elmdale~Elmdale~~Elmdale, Chase county, KS 66850, USA~38.3803;-96.7139~US-KS~38.3803,-96.7139~38.38030000~-96.71390000~66850~Chase county~~~4.28~1972~4443
+Elsmore~Elsmore~~Elsmore, Allen county, KS 66732, USA~37.8162;-95.1572~US-KS~37.8162,-95.1572~37.81620000~-95.15720000~66732~Allen county~~~4.35~2327~3378
+Elwood~Elwood~~Elwood, Doniphan county, KS 66024, USA~39.7581;-94.8775~US-KS~39.7581,-94.8775~39.75810000~-94.87750000~66024~Doniphan county~~~4.23~1657~3796
+Emmett~Emmett~~Emmett, Pottawatomie county, KS 66422, USA~39.309;-96.0561~US-KS~39.309,-96.0561~39.30900000~-96.05610000~66422~Pottawatomie county~~~4.27~2472~4909
+Emporia~Emporia~~Emporia, Lyon county, KS 66801, USA~38.4093;-96.1891~US-KS~38.4093,-96.1891~38.40930000~-96.18910000~66801~Lyon county~~~4.1400003~1626~4507
+Englewood~Englewood~~Englewood, Clark county, KS 67840, USA~37.0386;-99.9821~US-KS~37.0386,-99.9821~37.03860000~-99.98210000~67840~Clark county~~~4.5~1934~3788
+Ensign~Ensign~~Ensign, Gray county, KS 67841, USA~37.6522;-100.231~US-KS~37.6522,-100.231~37.65220000~-100.23100000~67841~Gray county~~~4.31~1288~2151
+Enterprise~Enterprise~~Enterprise, Dickinson county, KS 67441, USA~38.9035;-97.1155~US-KS~38.9035,-97.1155~38.90350000~-97.11550000~67441~Dickinson county~~~4.37~1472~4308
+Erie~Erie~~Erie, Neosho county, KS 66733, USA~37.5677;-95.2444~US-KS~37.5677,-95.2444~37.56770000~-95.24440000~66733~Neosho county~~~4.11~2792~3930
+Esbon~Esbon~~Esbon, Jewell county, KS 66941, USA~39.8251;-98.4292~US-KS~39.8251,-98.4292~39.82510000~-98.42920000~66941~Jewell county~~~4.15~2820~3250
+Eskridge~Eskridge~~Eskridge, Wabaunsee county, KS 66423, USA~38.8582;-96.1048~US-KS~38.8582,-96.1048~38.85820000~-96.10480000~66423~Wabaunsee county~~~4.4300003~1559~2182
+Eudora~Eudora~~Eudora, Douglas county, KS 66025, USA~38.9419;-95.1015~US-KS~38.9419,-95.1015~38.94190000~-95.10150000~66025~Douglas county~~~4.36~1921~2693
+Eureka~Eureka~~Eureka, Greenwood county, KS 67045, USA~37.8432;-96.3119~US-KS~37.8432,-96.3119~37.84320000~-96.31190000~67045~Greenwood county~~~4.5~2387~2138
+Everest~Everest~~Everest, Brown county, KS 66424, USA~39.7075;-95.3968~US-KS~39.7075,-95.3968~39.70750000~-95.39680000~66424~Brown county~~~4.4500003~1822~2429
+Fairview~Fairview~~Fairview, Brown county, KS 66425, USA~39.8484;-95.7044~US-KS~39.8484,-95.7044~39.84840000~-95.70440000~66425~Brown county~~~4.19~2483~2855
+Fall River~Fall-River~~Fall River, Greenwood county, KS 67047, USA~37.6098;-96.0284~US-KS~37.6098,-96.0284~37.60980000~-96.02840000~67047~Greenwood county~~~4.27~2079~2921
+Falun~Falun~~Falun, Saline county, KS 67442, USA~38.6568;-97.7306~US-KS~38.6568,-97.7306~38.65680000~-97.73060000~67442~Saline county~~~4.17~1942~2657
+Farlington~Farlington~~Farlington, Crawford county, KS 66734, USA~37.618;-94.8634~US-KS~37.618,-94.8634~37.61800000~-94.86340000~66734~Crawford county~~~4.34~1516~4431
+Florence~Florence~~Florence, Marion county, KS 66851, USA~38.2412;-96.9267~US-KS~38.2412,-96.9267~38.24120000~-96.92670000~66851~Marion county~~~4.3~2721~2736
+Fontana~Fontana~~Fontana, Miami county, KS 66026, USA~38.3963;-94.8742~US-KS~38.3963,-94.8742~38.39630000~-94.87420000~66026~Miami county~~~4.23~1625~2459
+Ford~Ford~~Ford, Ford county, KS 67842, USA~37.6341;-99.7555~US-KS~37.6341,-99.7555~37.63410000~-99.75550000~67842~Ford county~~~4.21~2623~4130
+Formoso~Formoso~~Formoso, Jewell county, KS 66942, USA~39.7753;-97.9941~US-KS~39.7753,-97.9941~39.77530000~-97.99410000~66942~Jewell county~~~4.38~1776~3525
+Fort Dodge~Fort-Dodge~~Fort Dodge, Ford county, KS 67843, USA~37.6656;-99.9445~US-KS~37.6656,-99.9445~37.66560000~-99.94450000~67843~Ford county~~~4.4900002~1468~3219
+Fort Leavenworth~Fort-Leavenworth~~Fort Leavenworth, Leavenworth county, KS 66027, USA~39.3614;-94.9237~US-KS~39.3614,-94.9237~39.36140000~-94.92370000~66027~Leavenworth county~~~4.28~2651~3648
+Fort Riley~Fort-Riley~~Fort Riley, Geary county, KS 66442, USA~39.0566;-96.7702~US-KS~39.0566,-96.7702~39.05660000~-96.77020000~66442~Geary county~~~4.3900003~1375~2655
+Fort Scott~Fort-Scott~~Fort Scott, Bourbon county, KS 66701, USA~37.8227;-94.7015~US-KS~37.8227,-94.7015~37.82270000~-94.70150000~66701~Bourbon county~~~4.1200004~2896~2737
+Fostoria~Fostoria~~Fostoria, Pottawatomie county, KS 66426, USA~39.4273;-96.4914~US-KS~39.4273,-96.4914~39.42730000~-96.49140000~66426~Pottawatomie county~~~4.35~1524~2883
+Fowler~Fowler~~Fowler, Meade county, KS 67844, USA~37.3825;-100.195~US-KS~37.3825,-100.195~37.38250000~-100.19500000~67844~Meade county~~~4.36~1047~2130
+Frankfort~Frankfort~~Frankfort, Marshall county, KS 66427, USA~39.7053;-96.4157~US-KS~39.7053,-96.4157~39.70530000~-96.41570000~66427~Marshall county~~~4.35~2436~2291
+Franklin~Franklin~~Franklin, Crawford county, KS 66735, USA~37.526;-94.7124~US-KS~37.526,-94.7124~37.52600000~-94.71240000~66735~Crawford county~~~4.23~1167~3255
+Fredonia~Fredonia~~Fredonia, Wilson county, KS 66736, USA~37.5351;-95.823~US-KS~37.5351,-95.823~37.53510000~-95.82300000~66736~Wilson county~~~4.29~1771~2391
+Freeport~Freeport~~Freeport, Harper county, KS 67049, USA~37.1796;-97.8578~US-KS~37.1796,-97.8578~37.17960000~-97.85780000~67049~Harper county~~~4.2000003~2811~4418
+Frontenac~Frontenac~~Frontenac, Crawford county, KS 66763, USA~37.452;-94.6964~US-KS~37.452,-94.6964~37.45200000~-94.69640000~66763~Crawford county~~~4.37~2413~3510
+Fulton~Fulton~~Fulton, Bourbon county, KS 66738, USA~38.0092;-94.7182~US-KS~38.0092,-94.7182~38.00920000~-94.71820000~66738~Bourbon county~~~4.4300003~1856~3682
+Galena~Galena~~Galena, Cherokee county, KS 66739, USA~37.0694;-94.6334~US-KS~37.0694,-94.6334~37.06940000~-94.63340000~66739~Cherokee county~~~4.3900003~2870~3972
+Galesburg~Galesburg~~Galesburg, Neosho county, KS 66740, USA~37.4676;-95.3097~US-KS~37.4676,-95.3097~37.46760000~-95.30970000~66740~Neosho county~~~4.28~1811~2817
+Galva~Galva~~Galva, McPherson county, KS 67443, USA~38.3865;-97.5507~US-KS~38.3865,-97.5507~38.38650000~-97.55070000~67443~McPherson county~~~4.2200003~1650~2298
+Garden City~Garden-City~~Garden City, Finney county, KS 67846, USA~37.9734;-100.85~US-KS~37.9734,-100.85~37.97340000~-100.85000000~67846~Finney county~~~4.4700003~2594~2546
+Garden Plain~Garden-Plain~~Garden Plain, Sedgwick county, KS 67050, USA~37.6717;-97.6751~US-KS~37.6717,-97.6751~37.67170000~-97.67510000~67050~Sedgwick county~~~4.3~1781~4487
+Gardner~Gardner~~Gardner, Johnson county, KS 66030, USA~38.815;-94.9331~US-KS~38.815,-94.9331~38.81500000~-94.93310000~66030~Johnson county~~~4.48~2054~4794
+Garfield~Garfield~~Garfield, Pawnee county, KS 67529, USA~38.0766;-99.2442~US-KS~38.0766,-99.2442~38.07660000~-99.24420000~67529~Pawnee county~~~4.27~1013~3426
+Garland~Garland~~Garland, Bourbon county, KS 66741, USA~37.715;-94.6831~US-KS~37.715,-94.6831~37.71500000~-94.68310000~66741~Bourbon county~~~4.27~2592~4933
+Garnett~Garnett~~Garnett, Anderson county, KS 66032, USA~38.2826;-95.2411~US-KS~38.2826,-95.2411~38.28260000~-95.24110000~66032~Anderson county~~~4.25~1944~3344
+Gas~Gas~~Gas, Allen county, KS 66742, USA~37.9242;-95.3475~US-KS~37.9242,-95.3475~37.92420000~-95.34750000~66742~Allen county~~~4.31~1494~3070
+Gaylord~Gaylord~~Gaylord, Smith county, KS 67638, USA~39.658;-98.7815~US-KS~39.658,-98.7815~39.65800000~-98.78150000~67638~Smith county~~~4.13~2177~2089
+Gem~Gem~~Gem, Thomas county, KS 67734, USA~39.4393;-100.884~US-KS~39.4393,-100.884~39.43930000~-100.88400000~67734~Thomas county~~~4.26~1112~3311
+Geneseo~Geneseo~~Geneseo, Rice county, KS 67444, USA~38.5165;-98.1518~US-KS~38.5165,-98.1518~38.51650000~-98.15180000~67444~Rice county~~~4.5~1959~3771
+Geuda Springs~Geuda-Springs~~Geuda Springs, Sumner county, KS 67051, USA~37.0615;-97.1692~US-KS~37.0615,-97.1692~37.06150000~-97.16920000~67051~Sumner county~~~4.1600003~1848~4693
+Girard~Girard~~Girard, Crawford county, KS 66743, USA~37.507;-94.864~US-KS~37.507,-94.864~37.50700000~-94.86400000~66743~Crawford county~~~4.11~2613~4152
+Glade~Glade~~Glade, Phillips county, KS 67639, USA~39.6441;-99.2886~US-KS~39.6441,-99.2886~39.64410000~-99.28860000~67639~Phillips county~~~4.2200003~2452~2198
+Glasco~Glasco~~Glasco, Cloud county, KS 67445, USA~39.3595;-97.8366~US-KS~39.3595,-97.8366~39.35950000~-97.83660000~67445~Cloud county~~~4.25~1237~4113
+Glen Elder~Glen-Elder~~Glen Elder, Mitchell county, KS 67446, USA~39.499;-98.3054~US-KS~39.499,-98.3054~39.49900000~-98.30540000~67446~Mitchell county~~~4.28~1164~4637
+Goddard~Goddard~~Goddard, Sedgwick county, KS 67052, USA~37.6569;-97.58~US-KS~37.6569,-97.58~37.65690000~-97.58000000~67052~Sedgwick county~~~4.44~1109~4312
+Goessel~Goessel~~Goessel, Marion county, KS 67053, USA~38.2478;-97.3527~US-KS~38.2478,-97.3527~38.24780000~-97.35270000~67053~Marion county~~~4.1200004~1582~4439
+Goff~Goff~~Goff, Nemaha county, KS 66428, USA~39.652;-95.9576~US-KS~39.652,-95.9576~39.65200000~-95.95760000~66428~Nemaha county~~~4.1200004~1402~4132
+Goodland~Goodland~~Goodland, Sherman county, KS 67735, USA~39.3488;-101.712~US-KS~39.3488,-101.712~39.34880000~-101.71200000~67735~Sherman county~~~4.28~2206~4121
+Gorham~Gorham~~Gorham, Russell county, KS 67640, USA~38.88;-99.0187~US-KS~38.88,-99.0187~38.88000000~-99.01870000~67640~Russell county~~~4.33~2581~2968
+Gove~Gove~~Gove, Gove county, KS 67736, USA~38.8562;-100.502~US-KS~38.8562,-100.502~38.85620000~-100.50200000~67736~Gove county~~~4.35~1557~4479
+Grainfield~Grainfield~~Grainfield, Gove county, KS 67737, USA~39.1109;-100.464~US-KS~39.1109,-100.464~39.11090000~-100.46400000~67737~Gove county~~~4.42~2803~3159
+Grantville~Grantville~~Grantville, Jefferson county, KS 66429, USA~39.094;-95.5278~US-KS~39.094,-95.5278~39.09400000~-95.52780000~66429~Jefferson county~~~4.4~2098~2633
+Great Bend~Great-Bend~~Great Bend, Barton county, KS 67530, USA~38.3688;-98.7767~US-KS~38.3688,-98.7767~38.36880000~-98.77670000~67530~Barton county~~~4.4700003~1755~2064
+Greeley~Greeley~~Greeley, Anderson county, KS 66033, USA~38.3673;-95.1262~US-KS~38.3673,-95.1262~38.36730000~-95.12620000~66033~Anderson county~~~4.38~1684~3431
+Green~Green~~Green, Clay county, KS 67447, USA~39.4293;-97.0023~US-KS~39.4293,-97.0023~39.42930000~-97.00230000~67447~Clay county~~~4.3900003~1087~2765
+Greenleaf~Greenleaf~~Greenleaf, Washington county, KS 66943, USA~39.7264;-96.9773~US-KS~39.7264,-96.9773~39.72640000~-96.97730000~66943~Washington county~~~4.4900002~1446~4249
+Greensburg~Greensburg~~Greensburg, Kiowa county, KS 67054, USA~37.6049;-99.2949~US-KS~37.6049,-99.2949~37.60490000~-99.29490000~67054~Kiowa county~~~4.27~2537~3131
+Greenwich~Greenwich~~Greenwich, Sedgwick county, KS 67055, USA~37.7814;-97.2029~US-KS~37.7814,-97.2029~37.78140000~-97.20290000~67055~Sedgwick county~~~4.34~2474~4784
+Grenola~Grenola~~Grenola, Elk county, KS 67346, USA~37.3464;-96.4497~US-KS~37.3464,-96.4497~37.34640000~-96.44970000~67346~Elk county~~~4.4100003~2416~3712
+Gridley~Gridley~~Gridley, Coffey county, KS 66852, USA~38.0959;-95.8822~US-KS~38.0959,-95.8822~38.09590000~-95.88220000~66852~Coffey county~~~4.35~2584~2856
+Grinnell~Grinnell~~Grinnell, Gove county, KS 67738, USA~39.1231;-100.631~US-KS~39.1231,-100.631~39.12310000~-100.63100000~67738~Gove county~~~4.23~1772~3299
+Gypsum~Gypsum~~Gypsum, Saline county, KS 67448, USA~38.7028;-97.4242~US-KS~38.7028,-97.4242~38.70280000~-97.42420000~67448~Saline county~~~4.4500003~2269~2462
+Haddam~Haddam~~Haddam, Washington county, KS 66944, USA~39.8557;-97.3029~US-KS~39.8557,-97.3029~39.85570000~-97.30290000~66944~Washington county~~~4.1600003~1859~3811
+Halstead~Halstead~~Halstead, Harvey county, KS 67056, USA~38.0007;-97.509~US-KS~38.0007,-97.509~38.00070000~-97.50900000~67056~Harvey county~~~4.19~1936~3295
+Hamilton~Hamilton~~Hamilton, Greenwood county, KS 66853, USA~37.9865;-96.1998~US-KS~37.9865,-96.1998~37.98650000~-96.19980000~66853~Greenwood county~~~4.34~1740~4598
+Hanover~Hanover~~Hanover, Washington county, KS 66945, USA~39.8896;-96.8878~US-KS~39.8896,-96.8878~39.88960000~-96.88780000~66945~Washington county~~~4.13~2160~2916
+Hanston~Hanston~~Hanston, Hodgeman county, KS 67849, USA~38.1238;-99.7133~US-KS~38.1238,-99.7133~38.12380000~-99.71330000~67849~Hodgeman county~~~4.13~2661~4698
+Hardtner~Hardtner~~Hardtner, Barber county, KS 67057, USA~37.0163;-98.6483~US-KS~37.0163,-98.6483~37.01630000~-98.64830000~67057~Barber county~~~4.33~2081~2866
+Harper~Harper~~Harper, Harper county, KS 67058, USA~37.2859;-98.0261~US-KS~37.2859,-98.0261~37.28590000~-98.02610000~67058~Harper county~~~4.36~1656~3887
+Hartford~Hartford~~Hartford, Lyon county, KS 66854, USA~38.3071;-95.957~US-KS~38.3071,-95.957~38.30710000~-95.95700000~66854~Lyon county~~~4.4900002~1212~2020
+Harveyville~Harveyville~~Harveyville, Wabaunsee county, KS 66431, USA~38.7918;-95.9614~US-KS~38.7918,-95.9614~38.79180000~-95.96140000~66431~Wabaunsee county~~~4.1600003~1195~2149
+Havana~Havana~~Havana, Montgomery county, KS 67347, USA~37.0943;-95.9413~US-KS~37.0943,-95.9413~37.09430000~-95.94130000~67347~Montgomery county~~~4.11~2272~4983
+Haven~Haven~~Haven, Reno county, KS 67543, USA~37.9151;-97.7892~US-KS~37.9151,-97.7892~37.91510000~-97.78920000~67543~Reno county~~~4.23~1061~2758
+Havensville~Havensville~~Havensville, Pottawatomie county, KS 66432, USA~39.518;-96.1204~US-KS~39.518,-96.1204~39.51800000~-96.12040000~66432~Pottawatomie county~~~4.31~1203~2057
+Haviland~Haviland~~Haviland, Kiowa county, KS 67059, USA~37.6165;-99.1048~US-KS~37.6165,-99.1048~37.61650000~-99.10480000~67059~Kiowa county~~~4.29~1221~2317
+Hays~Hays~~Hays, Ellis county, KS 67601, USA~38.82;-99.4087~US-KS~38.82,-99.4087~38.82000000~-99.40870000~67601~Ellis county~~~4.46~2271~4153
+Haysville~Haysville~~Haysville, Sedgwick county, KS 67060, USA~37.5651;-97.351~US-KS~37.5651,-97.351~37.56510000~-97.35100000~67060~Sedgwick county~~~4.26~2507~3688
+Hazelton~Hazelton~~Hazelton, Barber county, KS 67061, USA~37.1243;-98.4042~US-KS~37.1243,-98.4042~37.12430000~-98.40420000~67061~Barber county~~~4.34~1176~4171
+Healy~Healy~~Healy, Lane county, KS 67850, USA~38.4831;-100.614~US-KS~38.4831,-100.614~38.48310000~-100.61400000~67850~Lane county~~~4.32~2919~4357
+Hepler~Hepler~~Hepler, Crawford county, KS 66746, USA~37.6535;-95.0167~US-KS~37.6535,-95.0167~37.65350000~-95.01670000~66746~Crawford county~~~4.4100003~1595~2833
+Herington~Herington~~Herington, Dickinson county, KS 67449, USA~38.689;-96.9922~US-KS~38.689,-96.9922~38.68900000~-96.99220000~67449~Dickinson county~~~4.48~1060~4235
+Herndon~Herndon~~Herndon, Rawlins county, KS 67739, USA~39.8915;-100.828~US-KS~39.8915,-100.828~39.89150000~-100.82800000~67739~Rawlins county~~~4.4700003~1187~4615
+Hesston~Hesston~~Hesston, Harvey county, KS 67062, USA~38.1389;-97.4309~US-KS~38.1389,-97.4309~38.13890000~-97.43090000~67062~Harvey county~~~4.37~2876~2202
+Hiawatha~Hiawatha~~Hiawatha, Brown county, KS 66434, USA~39.8543;-95.5343~US-KS~39.8543,-95.5343~39.85430000~-95.53430000~66434~Brown county~~~4.2400002~1080~4217
+Highland~Highland~~Highland, Doniphan county, KS 66035, USA~39.8606;-95.2663~US-KS~39.8606,-95.2663~39.86060000~-95.26630000~66035~Doniphan county~~~4.2200003~2826~4201
+Hill City~Hill-City~~Hill City, Graham county, KS 67642, USA~39.3648;-99.8437~US-KS~39.3648,-99.8437~39.36480000~-99.84370000~67642~Graham county~~~4.1200004~1961~3096
+Hillsboro~Hillsboro~~Hillsboro, Marion county, KS 67063, USA~38.3518;-97.2025~US-KS~38.3518,-97.2025~38.35180000~-97.20250000~67063~Marion county~~~4.37~1761~2710
+Hillsdale~Hillsdale~~Hillsdale, Miami county, KS 66036, USA~38.6623;-94.852~US-KS~38.6623,-94.852~38.66230000~-94.85200000~66036~Miami county~~~4.17~1206~2261
+Hoisington~Hoisington~~Hoisington, Barton county, KS 67544, USA~38.6077;-98.8402~US-KS~38.6077,-98.8402~38.60770000~-98.84020000~67544~Barton county~~~4.33~2739~3662
+Holcomb~Holcomb~~Holcomb, Finney county, KS 67851, USA~38.0053;-100.984~US-KS~38.0053,-100.984~38.00530000~-100.98400000~67851~Finney county~~~4.28~1393~4718
+Hollenberg~Hollenberg~~Hollenberg, Washington county, KS 66946, USA~39.9557;-96.9721~US-KS~39.9557,-96.9721~39.95570000~-96.97210000~66946~Washington county~~~4.4100003~2947~4559
+Holton~Holton~~Holton, Jackson county, KS 66436, USA~39.4655;-95.7402~US-KS~39.4655,-95.7402~39.46550000~-95.74020000~66436~Jackson county~~~4.4700003~1156~2888
+Holyrood~Holyrood~~Holyrood, Ellsworth county, KS 67450, USA~38.5881;-98.4142~US-KS~38.5881,-98.4142~38.58810000~-98.41420000~67450~Ellsworth county~~~4.38~2708~3124
+Home~Home~~Home, Marshall county, KS 66438, USA~39.8391;-96.5238~US-KS~39.8391,-96.5238~39.83910000~-96.52380000~66438~Marshall county~~~4.1800003~2714~4114
+Hope~Hope~~Hope, Dickinson county, KS 67451, USA~38.6794;-97.1077~US-KS~38.6794,-97.1077~38.67940000~-97.10770000~67451~Dickinson county~~~4.26~1086~2701
+Horton~Horton~~Horton, Brown county, KS 66439, USA~39.6637;-95.5266~US-KS~39.6637,-95.5266~39.66370000~-95.52660000~66439~Brown county~~~4.4900002~1194~2023
+Howard~Howard~~Howard, Elk county, KS 67349, USA~37.5135;-96.2319~US-KS~37.5135,-96.2319~37.51350000~-96.23190000~67349~Elk county~~~4.2000003~1032~4667
+Hoxie~Hoxie~~Hoxie, Sheridan county, KS 67740, USA~39.3528;-100.164~US-KS~39.3528,-100.164~39.35280000~-100.16400000~67740~Sheridan county~~~4.4100003~2624~3971
+Hoyt~Hoyt~~Hoyt, Jackson county, KS 66440, USA~39.2477;-95.7047~US-KS~39.2477,-95.7047~39.24770000~-95.70470000~66440~Jackson county~~~4.4900002~1274~4456
+Hudson~Hudson~~Hudson, Stafford county, KS 67545, USA~38.1732;-98.5815~US-KS~38.1732,-98.5815~38.17320000~-98.58150000~67545~Stafford county~~~4.2200003~1437~3293
+Hugoton~Hugoton~~Hugoton, Stevens county, KS 67951, USA~37.1757;-101.346~US-KS~37.1757,-101.346~37.17570000~-101.34600000~67951~Stevens county~~~4.21~2964~3702
+Humboldt~Humboldt~~Humboldt, Allen county, KS 66748, USA~37.8123;-95.4338~US-KS~37.8123,-95.4338~37.81230000~-95.43380000~66748~Allen county~~~4.13~2613~2689
+Hunter~Hunter~~Hunter, Mitchell county, KS 67452, USA~39.2643;-98.4327~US-KS~39.2643,-98.4327~39.26430000~-98.43270000~67452~Mitchell county~~~4.33~1146~4977
+Hutchinson~Hutchinson~~Hutchinson, Reno county, KS 67501, USA~38.0562;-97.9122~US-KS~38.0562,-97.9122~38.05620000~-97.91220000~67501~Reno county~~~4.2400002~1923~4971
+Independence~Independence~~Independence, Montgomery county, KS 67301, USA~37.2256;-95.714~US-KS~37.2256,-95.714~37.22560000~-95.71400000~67301~Montgomery county~~~4.1800003~2609~2640
+Ingalls~Ingalls~~Ingalls, Gray county, KS 67853, USA~37.9584;-100.526~US-KS~37.9584,-100.526~37.95840000~-100.52600000~67853~Gray county~~~4.4100003~1573~4011
+Inman~Inman~~Inman, McPherson county, KS 67546, USA~38.2285;-97.772~US-KS~38.2285,-97.772~38.22850000~-97.77200000~67546~McPherson county~~~4.28~1083~2272
+Iola~Iola~~Iola, Allen county, KS 66749, USA~37.9265;-95.4028~US-KS~37.9265,-95.4028~37.92650000~-95.40280000~66749~Allen county~~~4.34~2222~4707
+Isabel~Isabel~~Isabel, Barber county, KS 67065, USA~37.4272;-98.522~US-KS~37.4272,-98.522~37.42720000~-98.52200000~67065~Barber county~~~4.37~1868~2333
+Iuka~Iuka~~Iuka, Pratt county, KS 67066, USA~37.7558;-98.7405~US-KS~37.7558,-98.7405~37.75580000~-98.74050000~67066~Pratt county~~~4.29~2427~3366
+Jamestown~Jamestown~~Jamestown, Cloud county, KS 66948, USA~39.6006;-97.8573~US-KS~39.6006,-97.8573~39.60060000~-97.85730000~66948~Cloud county~~~4.35~2927~2339
+Jennings~Jennings~~Jennings, Decatur county, KS 67643, USA~39.6778;-100.294~US-KS~39.6778,-100.294~39.67780000~-100.29400000~67643~Decatur county~~~4.23~2445~3009
+Jetmore~Jetmore~~Jetmore, Hodgeman county, KS 67854, USA~38.081;-99.8941~US-KS~38.081,-99.8941~38.08100000~-99.89410000~67854~Hodgeman county~~~4.1600003~1718~4788
+Jewell~Jewell~~Jewell, Jewell county, KS 66949, USA~39.6722;-98.1088~US-KS~39.6722,-98.1088~39.67220000~-98.10880000~66949~Jewell county~~~4.19~2024~3764
+Johnson~Johnson~~Johnson, Stanton county, KS 67855, USA~37.5719;-101.715~US-KS~37.5719,-101.715~37.57190000~-101.71500000~67855~Stanton county~~~4.3~2973~2423
+Junction City~Junction-City~~Junction City, Geary county, KS 66441, USA~39.0268;-96.8363~US-KS~39.0268,-96.8363~39.02680000~-96.83630000~66441~Geary county~~~4.4~2837~3614
+Kanopolis~Kanopolis~~Kanopolis, Ellsworth county, KS 67454, USA~38.7096;-98.1583~US-KS~38.7096,-98.1583~38.70960000~-98.15830000~67454~Ellsworth county~~~4.19~1851~3410
+Kanorado~Kanorado~~Kanorado, Sherman county, KS 67741, USA~39.3391;-102.036~US-KS~39.3391,-102.036~39.33910000~-102.03600000~67741~Sherman county~~~4.29~1626~2415
+Kansas City~Kansas-City~~Kansas City, Wyandotte county, KS 66101, USA~39.1192;-94.627~US-KS~39.1192,-94.627~39.11920000~-94.62700000~66101~Wyandotte county~~~4.11~2429~4743
+Kechi~Kechi~~Kechi, Sedgwick county, KS 67067, USA~37.7708;-97.2932~US-KS~37.7708,-97.2932~37.77080000~-97.29320000~67067~Sedgwick county~~~4.42~2935~3225
+Kendall~Kendall~~Kendall, Hamilton county, KS 67857, USA~37.9337;-101.542~US-KS~37.9337,-101.542~37.93370000~-101.54200000~67857~Hamilton county~~~4.1200004~2505~3354
+Kensington~Kensington~~Kensington, Smith county, KS 66951, USA~39.7664;-99.0333~US-KS~39.7664,-99.0333~39.76640000~-99.03330000~66951~Smith county~~~4.4500003~1473~4746
+Kincaid~Kincaid~~Kincaid, Anderson county, KS 66039, USA~38.103;-95.129~US-KS~38.103,-95.129~38.10300000~-95.12900000~66039~Anderson county~~~4.11~2540~2346
+Kingman~Kingman~~Kingman, Kingman county, KS 67068, USA~37.5228;-97.9891~US-KS~37.5228,-97.9891~37.52280000~-97.98910000~67068~Kingman county~~~4.34~2530~2811
+Kinsley~Kinsley~~Kinsley, Edwards county, KS 67547, USA~37.9253;-99.4083~US-KS~37.9253,-99.4083~37.92530000~-99.40830000~67547~Edwards county~~~4.23~2551~2224
+Kiowa~Kiowa~~Kiowa, Barber county, KS 67070, USA~37.0139;-98.4836~US-KS~37.0139,-98.4836~37.01390000~-98.48360000~67070~Barber county~~~4.34~2213~4963
+Kirwin~Kirwin~~Kirwin, Phillips county, KS 67644, USA~39.6538;-99.1259~US-KS~39.6538,-99.1259~39.65380000~-99.12590000~67644~Phillips county~~~4.1600003~2802~4906
+Kismet~Kismet~~Kismet, Seward county, KS 67859, USA~37.205;-100.702~US-KS~37.205,-100.702~37.20500000~-100.70200000~67859~Seward county~~~4.1400003~2369~4615
+La Crosse~La-Crosse~~La Crosse, Rush county, KS 67548, USA~38.5297;-99.306~US-KS~38.5297,-99.306~38.52970000~-99.30600000~67548~Rush county~~~4.46~1959~4668
+La Harpe~La-Harpe~~La Harpe, Allen county, KS 66751, USA~37.9173;-95.314~US-KS~37.9173,-95.314~37.91730000~-95.31400000~66751~Allen county~~~4.27~2796~4838
+Lacygne~Lacygne~~Lacygne, Linn county, KS 66040, USA~38.3566;-94.741~US-KS~38.3566,-94.741~38.35660000~-94.74100000~66040~Linn county~~~4.26~1380~2775
+Lake City~Lake-City~~Lake City, Barber county, KS 67071, USA~37.3351;-98.8034~US-KS~37.3351,-98.8034~37.33510000~-98.80340000~67071~Barber county~~~4.26~2631~4363
+Lakin~Lakin~~Lakin, Kearny county, KS 67860, USA~37.9442;-101.258~US-KS~37.9442,-101.258~37.94420000~-101.25800000~67860~Kearny county~~~4.1800003~1265~3275
+Lamont~Lamont~~Lamont, Greenwood county, KS 66855, USA~38.1169;-96.0225~US-KS~38.1169,-96.0225~38.11690000~-96.02250000~66855~Greenwood county~~~4.4300003~2672~4985
+Lancaster~Lancaster~~Lancaster, Atchison county, KS 66041, USA~39.6031;-95.3259~US-KS~39.6031,-95.3259~39.60310000~-95.32590000~66041~Atchison county~~~4.2400002~2178~4498
+Lane~Lane~~Lane, Franklin county, KS 66042, USA~38.4392;-95.0858~US-KS~38.4392,-95.0858~38.43920000~-95.08580000~66042~Franklin county~~~4.19~2350~2054
+Lansing~Lansing~~Lansing, Leavenworth county, KS 66043, USA~39.2536;-94.9011~US-KS~39.2536,-94.9011~39.25360000~-94.90110000~66043~Leavenworth county~~~4.23~2038~3321
+Larned~Larned~~Larned, Pawnee county, KS 67550, USA~38.1883;-99.1207~US-KS~38.1883,-99.1207~38.18830000~-99.12070000~67550~Pawnee county~~~4.1600003~1670~4543
+Latham~Latham~~Latham, Butler county, KS 67072, USA~37.5358;-96.6427~US-KS~37.5358,-96.6427~37.53580000~-96.64270000~67072~Butler county~~~4.1200004~2790~3726
+Lawrence~Lawrence~~Lawrence, Douglas county, KS 66044, USA~38.9625;-95.2545~US-KS~38.9625,-95.2545~38.96250000~-95.25450000~66044~Douglas county~~~4.19~1686~2863
+Le Roy~Le-Roy~~Le Roy, Coffey county, KS 66857, USA~38.0832;-95.6309~US-KS~38.0832,-95.6309~38.08320000~-95.63090000~66857~Coffey county~~~4.23~2791~2891
+Leavenworth~Leavenworth~~Leavenworth, Leavenworth county, KS 66048, USA~39.3066;-94.9284~US-KS~39.3066,-94.9284~39.30660000~-94.92840000~66048~Leavenworth county~~~4.1600003~1569~4596
+Leawood~Leawood~~Leawood, Johnson county, KS 66206, USA~38.9508;-94.626~US-KS~38.9508,-94.626~38.95080000~-94.62600000~66206~Johnson county~~~4.1400003~2078~4154
+Lebanon~Lebanon~~Lebanon, Smith county, KS 66952, USA~39.8134;-98.5554~US-KS~39.8134,-98.5554~39.81340000~-98.55540000~66952~Smith county~~~4.42~2594~4727
+Lebo~Lebo~~Lebo, Coffey county, KS 66856, USA~38.3892;-95.8447~US-KS~38.3892,-95.8447~38.38920000~-95.84470000~66856~Coffey county~~~4.2200003~1047~3152
+Lecompton~Lecompton~~Lecompton, Shawnee county, KS 66050, USA~39.0399;-95.4023~US-KS~39.0399,-95.4023~39.03990000~-95.40230000~66050~Shawnee county~~~4.26~1678~4172
+Lehigh~Lehigh~~Lehigh, Marion county, KS 67073, USA~38.3759;-97.3044~US-KS~38.3759,-97.3044~38.37590000~-97.30440000~67073~Marion county~~~4.11~2767~3418
+Lenexa~Lenexa~~Lenexa, Johnson county, KS 66215, USA~38.9492;-94.7425~US-KS~38.9492,-94.7425~38.94920000~-94.74250000~66215~Johnson county~~~4.21~1143~2332
+Lenora~Lenora~~Lenora, Norton county, KS 67645, USA~39.6105;-100.001~US-KS~39.6105,-100.001~39.61050000~-100.00100000~67645~Norton county~~~4.4300003~1867~2063
+Leon~Leon~~Leon, Butler county, KS 67074, USA~37.6925;-96.7843~US-KS~37.6925,-96.7843~37.69250000~-96.78430000~67074~Butler county~~~4.1400003~2145~4456
+Leonardville~Leonardville~~Leonardville, Riley county, KS 66449, USA~39.3604;-96.832~US-KS~39.3604,-96.832~39.36040000~-96.83200000~66449~Riley county~~~4.46~1791~3028
+Leoti~Leoti~~Leoti, Wichita county, KS 67861, USA~38.4839;-101.357~US-KS~38.4839,-101.357~38.48390000~-101.35700000~67861~Wichita county~~~4.15~2309~3522
+Levant~Levant~~Levant, Thomas county, KS 67743, USA~39.3759;-101.225~US-KS~39.3759,-101.225~39.37590000~-101.22500000~67743~Thomas county~~~4.23~2405~4715
+Lewis~Lewis~~Lewis, Edwards county, KS 67552, USA~37.9358;-99.2551~US-KS~37.9358,-99.2551~37.93580000~-99.25510000~67552~Edwards county~~~4.25~2165~4079
+Liberal~Liberal~~Liberal, Seward county, KS 67901, USA~37.0419;-100.929~US-KS~37.0419,-100.929~37.04190000~-100.92900000~67901~Seward county~~~4.2000003~2199~4743
+Liberty~Liberty~~Liberty, Montgomery county, KS 67351, USA~37.1597;-95.6008~US-KS~37.1597,-95.6008~37.15970000~-95.60080000~67351~Montgomery county~~~4.4900002~1535~3671
+Liebenthal~Liebenthal~~Liebenthal, Rush county, KS 67553, USA~38.6536;-99.3217~US-KS~38.6536,-99.3217~38.65360000~-99.32170000~67553~Rush county~~~4.1400003~1199~4547
+Lincoln~Lincoln~~Lincoln, Lincoln county, KS 67455, USA~39.0359;-98.1446~US-KS~39.0359,-98.1446~39.03590000~-98.14460000~67455~Lincoln county~~~4.48~1130~3932
+Lincolnville~Lincolnville~~Lincolnville, Marion county, KS 66858, USA~38.4853;-96.9579~US-KS~38.4853,-96.9579~38.48530000~-96.95790000~66858~Marion county~~~4.4500003~2891~2501
+Lindsborg~Lindsborg~~Lindsborg, McPherson county, KS 67456, USA~38.5732;-97.6742~US-KS~38.5732,-97.6742~38.57320000~-97.67420000~67456~McPherson county~~~4.3~1039~3866
+Linn~Linn~~Linn, Washington county, KS 66953, USA~39.6864;-97.0745~US-KS~39.6864,-97.0745~39.68640000~-97.07450000~66953~Washington county~~~4.42~2291~2918
+Linwood~Linwood~~Linwood, Leavenworth county, KS 66052, USA~39.0009;-95.0383~US-KS~39.0009,-95.0383~39.00090000~-95.03830000~66052~Leavenworth county~~~4.15~1327~2042
+Little River~Little-River~~Little River, Rice county, KS 67457, USA~38.3948;-98.0124~US-KS~38.3948,-98.0124~38.39480000~-98.01240000~67457~Rice county~~~4.21~2654~3186
+Logan~Logan~~Logan, Phillips county, KS 67646, USA~39.6662;-99.5688~US-KS~39.6662,-99.5688~39.66620000~-99.56880000~67646~Phillips county~~~4.48~1866~4536
+Long Island~Long-Island~~Long Island, Phillips county, KS 67647, USA~39.9594;-99.5566~US-KS~39.9594,-99.5566~39.95940000~-99.55660000~67647~Phillips county~~~4.32~1452~2171
+Longford~Longford~~Longford, Clay county, KS 67458, USA~39.1696;-97.3308~US-KS~39.1696,-97.3308~39.16960000~-97.33080000~67458~Clay county~~~4.29~1384~2745
+Longton~Longton~~Longton, Elk county, KS 67352, USA~37.4261;-96.0703~US-KS~37.4261,-96.0703~37.42610000~-96.07030000~67352~Elk county~~~4.1800003~1869~4877
+Lorraine~Lorraine~~Lorraine, Ellsworth county, KS 67459, USA~38.5668;-98.3178~US-KS~38.5668,-98.3178~38.56680000~-98.31780000~67459~Ellsworth county~~~4.48~1387~4596
+Lost Springs~Lost-Springs~~Lost Springs, Marion county, KS 66859, USA~38.5664;-96.9869~US-KS~38.5664,-96.9869~38.56640000~-96.98690000~66859~Marion county~~~4.4300003~1856~3750
+Louisburg~Louisburg~~Louisburg, Miami county, KS 66053, USA~38.6229;-94.6752~US-KS~38.6229,-94.6752~38.62290000~-94.67520000~66053~Miami county~~~4.2400002~1521~2635
+Lucas~Lucas~~Lucas, Russell county, KS 67648, USA~39.0612;-98.5378~US-KS~39.0612,-98.5378~39.06120000~-98.53780000~67648~Russell county~~~4.32~1183~4876
+Ludell~Ludell~~Ludell, Rawlins county, KS 67744, USA~39.8711;-100.941~US-KS~39.8711,-100.941~39.87110000~-100.94100000~67744~Rawlins county~~~4.46~2979~3857
+Luray~Luray~~Luray, Russell county, KS 67649, USA~39.0499;-98.6492~US-KS~39.0499,-98.6492~39.04990000~-98.64920000~67649~Russell county~~~4.29~1317~2286
+Lyndon~Lyndon~~Lyndon, Osage county, KS 66451, USA~38.611;-95.685~US-KS~38.611,-95.685~38.61100000~-95.68500000~66451~Osage county~~~4.1600003~2744~4144
+Lyons~Lyons~~Lyons, Rice county, KS 67554, USA~38.3457;-98.2061~US-KS~38.3457,-98.2061~38.34570000~-98.20610000~67554~Rice county~~~4.1600003~2880~3853
+Macksville~Macksville~~Macksville, Stafford county, KS 67557, USA~37.9568;-98.9725~US-KS~37.9568,-98.9725~37.95680000~-98.97250000~67557~Stafford county~~~4.1400003~1269~2638
+Madison~Madison~~Madison, Greenwood county, KS 66860, USA~38.1364;-96.1342~US-KS~38.1364,-96.1342~38.13640000~-96.13420000~66860~Greenwood county~~~4.29~2836~4811
+Mahaska~Mahaska~~Mahaska, Washington county, KS 66955, USA~39.9584;-97.3121~US-KS~39.9584,-97.3121~39.95840000~-97.31210000~66955~Washington county~~~4.33~2993~3978
+Maize~Maize~~Maize, Sedgwick county, KS 67101, USA~37.7758;-97.4702~US-KS~37.7758,-97.4702~37.77580000~-97.47020000~67101~Sedgwick county~~~4.46~1952~4728
+Manhattan~Manhattan~~Manhattan, Riley county, KS 66502, USA~39.1974;-96.5973~US-KS~39.1974,-96.5973~39.19740000~-96.59730000~66502~Riley county~~~4.11~2711~3743
+Mankato~Mankato~~Mankato, Jewell county, KS 66956, USA~39.7897;-98.2119~US-KS~39.7897,-98.2119~39.78970000~-98.21190000~66956~Jewell county~~~4.42~1959~2108
+Manter~Manter~~Manter, Stanton county, KS 67862, USA~37.5248;-101.882~US-KS~37.5248,-101.882~37.52480000~-101.88200000~67862~Stanton county~~~4.42~1788~2063
+Maple City~Maple-City~~Maple City, Cowley county, KS 67102, USA~37.0757;-96.7875~US-KS~37.0757,-96.7875~37.07570000~-96.78750000~67102~Cowley county~~~4.17~1331~2408
+Maple Hill~Maple-Hill~~Maple Hill, Wabaunsee county, KS 66507, USA~39.0849;-96.0271~US-KS~39.0849,-96.0271~39.08490000~-96.02710000~66507~Wabaunsee county~~~4.44~2524~4211
+Mapleton~Mapleton~~Mapleton, Bourbon county, KS 66754, USA~38.0174;-94.8768~US-KS~38.0174,-94.8768~38.01740000~-94.87680000~66754~Bourbon county~~~4.46~1427~3886
+Marienthal~Marienthal~~Marienthal, Wichita county, KS 67863, USA~38.4858;-101.037~US-KS~38.4858,-101.037~38.48580000~-101.03700000~67863~Wichita county~~~4.28~2154~4801
+Marion~Marion~~Marion, Marion county, KS 66861, USA~38.3489;-97.016~US-KS~38.3489,-97.016~38.34890000~-97.01600000~66861~Marion county~~~4.46~2367~2921
+Marquette~Marquette~~Marquette, McPherson county, KS 67464, USA~38.5574;-97.8342~US-KS~38.5574,-97.8342~38.55740000~-97.83420000~67464~McPherson county~~~4.15~1111~3230
+Marysville~Marysville~~Marysville, Marshall county, KS 66508, USA~39.8464;-96.6453~US-KS~39.8464,-96.6453~39.84640000~-96.64530000~66508~Marshall county~~~4.46~1706~2433
+Matfield Green~Matfield-Green~~Matfield Green, Chase county, KS 66862, USA~38.1434;-96.4976~US-KS~38.1434,-96.4976~38.14340000~-96.49760000~66862~Chase county~~~4.4~1574~4363
+Mayetta~Mayetta~~Mayetta, Jackson county, KS 66509, USA~39.3399;-95.717~US-KS~39.3399,-95.717~39.33990000~-95.71700000~66509~Jackson county~~~4.21~1188~4268
+Mayfield~Mayfield~~Mayfield, Sumner county, KS 67103, USA~37.2568;-97.5305~US-KS~37.2568,-97.5305~37.25680000~-97.53050000~67103~Sumner county~~~4.3~2577~3348
+Mc Cracken~Mc-Cracken~~Mc Cracken, Rush county, KS 67556, USA~38.5854;-99.5734~US-KS~38.5854,-99.5734~38.58540000~-99.57340000~67556~Rush county~~~4.2200003~1848~4436
+Mc Cune~Mc-Cune~~Mc Cune, Crawford county, KS 66753, USA~37.3525;-95.0211~US-KS~37.3525,-95.0211~37.35250000~-95.02110000~66753~Crawford county~~~4.33~2790~3754
+Mc Donald~Mc-Donald~~Mc Donald, Rawlins county, KS 67745, USA~39.7859;-101.297~US-KS~39.7859,-101.297~39.78590000~-101.29700000~67745~Rawlins county~~~4.44~2228~4477
+Mc Farland~Mc-Farland~~Mc Farland, Wabaunsee county, KS 66501, USA~39.0521;-96.2373~US-KS~39.0521,-96.2373~39.05210000~-96.23730000~66501~Wabaunsee county~~~4.1200004~2483~3512
+Mc Louth~Mc-Louth~~Mc Louth, Jefferson county, KS 66054, USA~39.193;-95.2067~US-KS~39.193,-95.2067~39.19300000~-95.20670000~66054~Jefferson county~~~4.35~2416~3584
+Mcconnell Afb~Mcconnell-Afb~~McConnell AFB, Sedgwick county, KS 67221, USA~37.6325;-97.2503~US-KS~37.6325,-97.2503~37.63250000~-97.25030000~67221~Sedgwick county~~~4.34~1305~2277
+Mcpherson~Mcpherson~~McPherson, McPherson county, KS 67460, USA~38.3872;-97.6565~US-KS~38.3872,-97.6565~38.38720000~-97.65650000~67460~McPherson county~~~4.5~2601~2150
+Meade~Meade~~Meade, Meade county, KS 67864, USA~37.284;-100.339~US-KS~37.284,-100.339~37.28400000~-100.33900000~67864~Meade county~~~4.2000003~1351~4975
+Medicine Lodge~Medicine-Lodge~~Medicine Lodge, Barber county, KS 67104, USA~37.2835;-98.5783~US-KS~37.2835,-98.5783~37.28350000~-98.57830000~67104~Barber county~~~4.4900002~2522~3930
+Melvern~Melvern~~Melvern, Osage county, KS 66510, USA~38.5066;-95.6353~US-KS~38.5066,-95.6353~38.50660000~-95.63530000~66510~Osage county~~~4.4500003~1939~3202
+Meriden~Meriden~~Meriden, Jefferson county, KS 66512, USA~39.1883;-95.5692~US-KS~39.1883,-95.5692~39.18830000~-95.56920000~66512~Jefferson county~~~4.4300003~2468~2397
+Milan~Milan~~Milan, Sumner county, KS 67105, USA~37.2578;-97.6753~US-KS~37.2578,-97.6753~37.25780000~-97.67530000~67105~Sumner county~~~4.15~2752~2021
+Milford~Milford~~Milford, Geary county, KS 66514, USA~39.1733;-96.9145~US-KS~39.1733,-96.9145~39.17330000~-96.91450000~66514~Geary county~~~4.4300003~1491~2410
+Milton~Milton~~Milton, Sumner county, KS 67106, USA~37.4279;-97.75~US-KS~37.4279,-97.75~37.42790000~-97.75000000~67106~Sumner county~~~4.32~1227~2543
+Miltonvale~Miltonvale~~Miltonvale, Cloud county, KS 67466, USA~39.3482;-97.4533~US-KS~39.3482,-97.4533~39.34820000~-97.45330000~67466~Cloud county~~~4.42~2704~3354
+Minneapolis~Minneapolis~~Minneapolis, Ottawa county, KS 67467, USA~39.1251;-97.7037~US-KS~39.1251,-97.7037~39.12510000~-97.70370000~67467~Ottawa county~~~4.32~2002~4595
+Minneola~Minneola~~Minneola, Clark county, KS 67865, USA~37.4212;-99.917~US-KS~37.4212,-99.917~37.42120000~-99.91700000~67865~Clark county~~~4.4900002~1097~4248
+Mission~Mission~~Mission, Johnson county, KS 66201, USA~38.969;-94.6761~US-KS~38.969,-94.6761~38.96900000~-94.67610000~66201~Johnson county~~~4.4500003~1071~3867
+Moline~Moline~~Moline, Elk county, KS 67353, USA~37.3671;-96.3014~US-KS~37.3671,-96.3014~37.36710000~-96.30140000~67353~Elk county~~~4.13~2667~3203
+Montezuma~Montezuma~~Montezuma, Gray county, KS 67867, USA~37.594;-100.442~US-KS~37.594,-100.442~37.59400000~-100.44200000~67867~Gray county~~~4.3~1555~4938
+Monument~Monument~~Monument, Logan county, KS 67747, USA~38.9601;-101.064~US-KS~38.9601,-101.064~38.96010000~-101.06400000~67747~Logan county~~~4.28~2186~4973
+Moran~Moran~~Moran, Allen county, KS 66755, USA~37.9436;-95.1503~US-KS~37.9436,-95.1503~37.94360000~-95.15030000~66755~Allen county~~~4.37~2278~4431
+Morganville~Morganville~~Morganville, Clay county, KS 67468, USA~39.4877;-97.2717~US-KS~39.4877,-97.2717~39.48770000~-97.27170000~67468~Clay county~~~4.4900002~1717~3521
+Morland~Morland~~Morland, Graham county, KS 67650, USA~39.3377;-100.071~US-KS~39.3377,-100.071~39.33770000~-100.07100000~67650~Graham county~~~4.21~1432~4192
+Morrill~Morrill~~Morrill, Brown county, KS 66515, USA~39.9509;-95.7275~US-KS~39.9509,-95.7275~39.95090000~-95.72750000~66515~Brown county~~~4.4500003~2288~2543
+Morrowville~Morrowville~~Morrowville, Washington county, KS 66958, USA~39.8429;-97.1696~US-KS~39.8429,-97.1696~39.84290000~-97.16960000~66958~Washington county~~~4.25~2124~2300
+Moscow~Moscow~~Moscow, Stevens county, KS 67952, USA~37.3125;-101.294~US-KS~37.3125,-101.294~37.31250000~-101.29400000~67952~Stevens county~~~4.3~2640~2372
+Mound City~Mound-City~~Mound City, Linn county, KS 66056, USA~38.1423;-94.8088~US-KS~38.1423,-94.8088~38.14230000~-94.80880000~66056~Linn county~~~4.17~2229~4270
+Mound Valley~Mound-Valley~~Mound Valley, Labette county, KS 67354, USA~37.2084;-95.4497~US-KS~37.2084,-95.4497~37.20840000~-95.44970000~67354~Labette county~~~4.28~2803~3182
+Moundridge~Moundridge~~Moundridge, McPherson county, KS 67107, USA~38.2052;-97.5207~US-KS~38.2052,-97.5207~38.20520000~-97.52070000~67107~McPherson county~~~4.23~2195~4729
+Mount Hope~Mount-Hope~~Mount Hope, Sedgwick county, KS 67108, USA~37.8594;-97.6635~US-KS~37.8594,-97.6635~37.85940000~-97.66350000~67108~Sedgwick county~~~4.4500003~1227~2033
+Mulberry~Mulberry~~Mulberry, Crawford county, KS 66756, USA~37.5496;-94.6792~US-KS~37.5496,-94.6792~37.54960000~-94.67920000~66756~Crawford county~~~4.1600003~2660~2290
+Mullinville~Mullinville~~Mullinville, Kiowa county, KS 67109, USA~37.5886;-99.4599~US-KS~37.5886,-99.4599~37.58860000~-99.45990000~67109~Kiowa county~~~4.3~2483~2747
+Mulvane~Mulvane~~Mulvane, Sedgwick county, KS 67110, USA~37.4883;-97.2498~US-KS~37.4883,-97.2498~37.48830000~-97.24980000~67110~Sedgwick county~~~4.21~2477~3289
+Munden~Munden~~Munden, Republic county, KS 66959, USA~39.9019;-97.5345~US-KS~39.9019,-97.5345~39.90190000~-97.53450000~66959~Republic county~~~4.29~2387~2788
+Murdock~Murdock~~Murdock, Kingman county, KS 67111, USA~37.6037;-97.9733~US-KS~37.6037,-97.9733~37.60370000~-97.97330000~67111~Kingman county~~~4.44~2958~2158
+Muscotah~Muscotah~~Muscotah, Atchison county, KS 66058, USA~39.5982;-95.49~US-KS~39.5982,-95.49~39.59820000~-95.49000000~66058~Atchison county~~~4.1400003~2473~3008
+Narka~Narka~~Narka, Republic county, KS 66960, USA~39.9595;-97.4225~US-KS~39.9595,-97.4225~39.95950000~-97.42250000~66960~Republic county~~~4.11~1903~2104
+Nashville~Nashville~~Nashville, Kingman county, KS 67112, USA~37.4256;-98.4113~US-KS~37.4256,-98.4113~37.42560000~-98.41130000~67112~Kingman county~~~4.21~1552~3217
+Natoma~Natoma~~Natoma, Osborne county, KS 67651, USA~39.1885;-99.0242~US-KS~39.1885,-99.0242~39.18850000~-99.02420000~67651~Osborne county~~~4.26~2078~3758
+Neal~Neal~~Neal, Greenwood county, KS 66863, USA~37.8384;-96.0786~US-KS~37.8384,-96.0786~37.83840000~-96.07860000~66863~Greenwood county~~~4.1200004~2689~4650
+Nekoma~Nekoma~~Nekoma, Rush county, KS 67559, USA~38.4151;-99.4175~US-KS~38.4151,-99.4175~38.41510000~-99.41750000~67559~Rush county~~~4.26~1080~3121
+Neodesha~Neodesha~~Neodesha, Wilson county, KS 66757, USA~37.4282;-95.6809~US-KS~37.4282,-95.6809~37.42820000~-95.68090000~66757~Wilson county~~~4.35~1569~4470
+Neosho Falls~Neosho-Falls~~Neosho Falls, Coffey county, KS 66758, USA~37.9727;-95.5535~US-KS~37.9727,-95.5535~37.97270000~-95.55350000~66758~Coffey county~~~4.5~2698~2255
+Neosho Rapids~Neosho-Rapids~~Neosho Rapids, Lyon county, KS 66864, USA~38.3978;-96.0253~US-KS~38.3978,-96.0253~38.39780000~-96.02530000~66864~Lyon county~~~4.44~1774~4514
+Ness City~Ness-City~~Ness City, Ness county, KS 67560, USA~38.4553;-99.9055~US-KS~38.4553,-99.9055~38.45530000~-99.90550000~67560~Ness county~~~4.1200004~2279~3501
+Netawaka~Netawaka~~Netawaka, Jackson county, KS 66516, USA~39.6074;-95.7344~US-KS~39.6074,-95.7344~39.60740000~-95.73440000~66516~Jackson county~~~4.11~1180~3195
+New Albany~New-Albany~~New Albany, Wilson county, KS 66759, USA~37.5677;-95.9402~US-KS~37.5677,-95.9402~37.56770000~-95.94020000~66759~Wilson county~~~4.42~1701~3049
+New Cambria~New-Cambria~~New Cambria, Saline county, KS 67470, USA~38.9058;-97.4987~US-KS~38.9058,-97.4987~38.90580000~-97.49870000~67470~Saline county~~~4.2200003~2242~2987
+New Century~New-Century~~New Century, Johnson county, KS 66031, USA~38.8137;-94.9291~US-KS~38.8137,-94.9291~38.81370000~-94.92910000~66031~Johnson county~~~4.2400002~1746~4897
+Newton~Newton~~Newton, Harvey county, KS 67114, USA~38.0463;-97.3506~US-KS~38.0463,-97.3506~38.04630000~-97.35060000~67114~Harvey county~~~4.26~2061~3850
+Nickerson~Nickerson~~Nickerson, Reno county, KS 67561, USA~38.1443;-98.0804~US-KS~38.1443,-98.0804~38.14430000~-98.08040000~67561~Reno county~~~4.17~1127~4163
+Niotaze~Niotaze~~Niotaze, Chautauqua county, KS 67355, USA~37.0127;-95.9242~US-KS~37.0127,-95.9242~37.01270000~-95.92420000~67355~Chautauqua county~~~4.44~2160~3230
+Norcatur~Norcatur~~Norcatur, Decatur county, KS 67653, USA~39.838;-100.19~US-KS~39.838,-100.19~39.83800000~-100.19000000~67653~Decatur county~~~4.28~1804~2268
+North Newton~North-Newton~~North Newton, Harvey county, KS 67117, USA~38.1341;-97.3216~US-KS~38.1341,-97.3216~38.13410000~-97.32160000~67117~Harvey county~~~4.1800003~2593~3217
+Norton~Norton~~Norton, Norton county, KS 67654, USA~39.8349;-99.8894~US-KS~39.8349,-99.8894~39.83490000~-99.88940000~67654~Norton county~~~4.46~1430~2390
+Nortonville~Nortonville~~Nortonville, Jefferson county, KS 66060, USA~39.4201;-95.3308~US-KS~39.4201,-95.3308~39.42010000~-95.33080000~66060~Jefferson county~~~4.33~2904~3689
+Norway~Norway~~Norway, Republic county, KS 66961, USA~39.699;-97.8298~US-KS~39.699,-97.8298~39.69900000~-97.82980000~66961~Republic county~~~4.2200003~1815~4260
+Norwich~Norwich~~Norwich, Kingman county, KS 67118, USA~37.456;-97.8465~US-KS~37.456,-97.8465~37.45600000~-97.84650000~67118~Kingman county~~~4.4~2598~4340
+Oakley~Oakley~~Oakley, Logan county, KS 67748, USA~39.1253;-100.853~US-KS~39.1253,-100.853~39.12530000~-100.85300000~67748~Logan county~~~4.11~1637~4001
+Oberlin~Oberlin~~Oberlin, Decatur county, KS 67749, USA~39.8206;-100.531~US-KS~39.8206,-100.531~39.82060000~-100.53100000~67749~Decatur county~~~4.28~2806~3918
+Offerle~Offerle~~Offerle, Edwards county, KS 67563, USA~37.8698;-99.5158~US-KS~37.8698,-99.5158~37.86980000~-99.51580000~67563~Edwards county~~~4.2400002~1824~4141
+Ogallah~Ogallah~~Ogallah, Trego county, KS 67656, USA~38.9131;-99.6886~US-KS~38.9131,-99.6886~38.91310000~-99.68860000~67656~Trego county~~~4.4100003~1338~4697
+Ogden~Ogden~~Ogden, Riley county, KS 66517, USA~39.1141;-96.7082~US-KS~39.1141,-96.7082~39.11410000~-96.70820000~66517~Riley county~~~4.26~2658~2336
+Oketo~Oketo~~Oketo, Marshall county, KS 66518, USA~39.961;-96.6351~US-KS~39.961,-96.6351~39.96100000~-96.63510000~66518~Marshall county~~~4.36~2416~2342
+Olathe~Olathe~~Olathe, Johnson county, KS 66051, USA~38.8806;-94.8175~US-KS~38.8806,-94.8175~38.88060000~-94.81750000~66051~Johnson county~~~4.38~1632~3189
+Olmitz~Olmitz~~Olmitz, Barton county, KS 67564, USA~38.5656;-98.9165~US-KS~38.5656,-98.9165~38.56560000~-98.91650000~67564~Barton county~~~4.4300003~2647~2508
+Olpe~Olpe~~Olpe, Lyon county, KS 66865, USA~38.2463;-96.2514~US-KS~38.2463,-96.2514~38.24630000~-96.25140000~66865~Lyon county~~~4.1800003~1094~4696
+Olsburg~Olsburg~~Olsburg, Pottawatomie county, KS 66520, USA~39.4152;-96.5991~US-KS~39.4152,-96.5991~39.41520000~-96.59910000~66520~Pottawatomie county~~~4.15~2931~4741
+Onaga~Onaga~~Onaga, Pottawatomie county, KS 66521, USA~39.4913;-96.1715~US-KS~39.4913,-96.1715~39.49130000~-96.17150000~66521~Pottawatomie county~~~4.31~2759~2087
+Oneida~Oneida~~Oneida, Nemaha county, KS 66522, USA~39.8713;-95.9572~US-KS~39.8713,-95.9572~39.87130000~-95.95720000~66522~Nemaha county~~~4.2200003~2239~4826
+Opolis~Opolis~~Opolis, Crawford county, KS 66760, USA~37.3472;-94.6197~US-KS~37.3472,-94.6197~37.34720000~-94.61970000~66760~Crawford county~~~4.38~2972~4674
+Osage City~Osage-City~~Osage City, Osage county, KS 66523, USA~38.632;-95.8272~US-KS~38.632,-95.8272~38.63200000~-95.82720000~66523~Osage county~~~4.19~2209~4409
+Osawatomie~Osawatomie~~Osawatomie, Miami county, KS 66064, USA~38.4749;-94.9739~US-KS~38.4749,-94.9739~38.47490000~-94.97390000~66064~Miami county~~~4.21~1195~2730
+Osborne~Osborne~~Osborne, Osborne county, KS 67473, USA~39.4435;-98.6999~US-KS~39.4435,-98.6999~39.44350000~-98.69990000~67473~Osborne county~~~4.27~1344~2097
+Oskaloosa~Oskaloosa~~Oskaloosa, Jefferson county, KS 66066, USA~39.2136;-95.3146~US-KS~39.2136,-95.3146~39.21360000~-95.31460000~66066~Jefferson county~~~4.5~2924~4522
+Oswego~Oswego~~Oswego, Labette county, KS 67356, USA~37.1893;-95.1382~US-KS~37.1893,-95.1382~37.18930000~-95.13820000~67356~Labette county~~~4.38~2144~4748
+Otis~Otis~~Otis, Rush county, KS 67565, USA~38.5349;-99.0521~US-KS~38.5349,-99.0521~38.53490000~-99.05210000~67565~Rush county~~~4.4900002~1687~2453
+Ottawa~Ottawa~~Ottawa, Franklin county, KS 66067, USA~38.6076;-95.2676~US-KS~38.6076,-95.2676~38.60760000~-95.26760000~66067~Franklin county~~~4.28~1182~2309
+Overbrook~Overbrook~~Overbrook, Osage county, KS 66524, USA~38.7738;-95.5588~US-KS~38.7738,-95.5588~38.77380000~-95.55880000~66524~Osage county~~~4.26~1673~3885
+Overland Park~Overland-Park~~Overland Park, Johnson county, KS 66204, USA~38.9925;-94.6829~US-KS~38.9925,-94.6829~38.99250000~-94.68290000~66204~Johnson county~~~4.33~1178~3794
+Oxford~Oxford~~Oxford, Sumner county, KS 67119, USA~37.2762;-97.1703~US-KS~37.2762,-97.1703~37.27620000~-97.17030000~67119~Sumner county~~~4.15~2648~3898
+Ozawkie~Ozawkie~~Ozawkie, Jefferson county, KS 66070, USA~39.205;-95.4494~US-KS~39.205,-95.4494~39.20500000~-95.44940000~66070~Jefferson county~~~4.35~1377~4086
+Palco~Palco~~Palco, Rooks county, KS 67657, USA~39.2529;-99.5606~US-KS~39.2529,-99.5606~39.25290000~-99.56060000~67657~Rooks county~~~4.17~2798~4588
+Palmer~Palmer~~Palmer, Washington county, KS 66962, USA~39.6104;-97.0895~US-KS~39.6104,-97.0895~39.61040000~-97.08950000~66962~Washington county~~~4.3900003~2981~4267
+Paola~Paola~~Paola, Miami county, KS 66071, USA~38.5772;-94.8705~US-KS~38.5772,-94.8705~38.57720000~-94.87050000~66071~Miami county~~~4.5~1833~3716
+Paradise~Paradise~~Paradise, Russell county, KS 67658, USA~39.0454;-98.9284~US-KS~39.0454,-98.9284~39.04540000~-98.92840000~67658~Russell county~~~4.4700003~2290~2349
+Park~Park~~Park, Gove county, KS 67751, USA~39.064;-100.233~US-KS~39.064,-100.233~39.06400000~-100.23300000~67751~Gove county~~~4.1200004~2272~4913
+Parker~Parker~~Parker, Linn county, KS 66072, USA~38.3272;-94.9907~US-KS~38.3272,-94.9907~38.32720000~-94.99070000~66072~Linn county~~~4.1200004~1367~2809
+Parsons~Parsons~~Parsons, Labette county, KS 67357, USA~37.3393;-95.2681~US-KS~37.3393,-95.2681~37.33930000~-95.26810000~67357~Labette county~~~4.4500003~2262~2334
+Partridge~Partridge~~Partridge, Reno county, KS 67566, USA~37.9642;-98.0906~US-KS~37.9642,-98.0906~37.96420000~-98.09060000~67566~Reno county~~~4.1600003~1486~4030
+Pawnee Rock~Pawnee-Rock~~Pawnee Rock, Barton county, KS 67567, USA~38.3037;-98.9734~US-KS~38.3037,-98.9734~38.30370000~-98.97340000~67567~Barton county~~~4.25~2292~4316
+Paxico~Paxico~~Paxico, Wabaunsee county, KS 66526, USA~39.07;-96.1689~US-KS~39.07,-96.1689~39.07000000~-96.16890000~66526~Wabaunsee county~~~4.26~2128~3348
+Peabody~Peabody~~Peabody, Marion county, KS 66866, USA~38.1709;-97.1094~US-KS~38.1709,-97.1094~38.17090000~-97.10940000~66866~Marion county~~~4.23~1510~4969
+Peck~Peck~~Peck, Sumner county, KS 67120, USA~37.5008;-97.386~US-KS~37.5008,-97.386~37.50080000~-97.38600000~67120~Sumner county~~~4.36~2799~4224
+Penokee~Penokee~~Penokee, Graham county, KS 67659, USA~39.3927;-99.9289~US-KS~39.3927,-99.9289~39.39270000~-99.92890000~67659~Graham county~~~4.15~2440~4752
+Perry~Perry~~Perry, Jefferson county, KS 66073, USA~39.0756;-95.393~US-KS~39.0756,-95.393~39.07560000~-95.39300000~66073~Jefferson county~~~4.38~2507~2226
+Peru~Peru~~Peru, Chautauqua county, KS 67360, USA~37.055;-96.1545~US-KS~37.055,-96.1545~37.05500000~-96.15450000~67360~Chautauqua county~~~4.34~1643~3042
+Pfeifer~Pfeifer~~Pfeifer, Ellis county, KS 67660, USA~38.7317;-99.1453~US-KS~38.7317,-99.1453~38.73170000~-99.14530000~67660~Ellis county~~~4.33~1802~4920
+Phillipsburg~Phillipsburg~~Phillipsburg, Phillips county, KS 67661, USA~39.757;-99.3256~US-KS~39.757,-99.3256~39.75700000~-99.32560000~67661~Phillips county~~~4.11~1271~3200
+Piedmont~Piedmont~~Piedmont, Greenwood county, KS 67122, USA~37.6356;-96.4098~US-KS~37.6356,-96.4098~37.63560000~-96.40980000~67122~Greenwood county~~~4.4~2106~3077
+Pierceville~Pierceville~~Pierceville, Finney county, KS 67868, USA~37.8328;-100.695~US-KS~37.8328,-100.695~37.83280000~-100.69500000~67868~Finney county~~~4.23~2843~2038
+Piqua~Piqua~~Piqua, Woodson county, KS 66761, USA~37.8656;-95.5893~US-KS~37.8656,-95.5893~37.86560000~-95.58930000~66761~Woodson county~~~4.42~1298~3652
+Pittsburg~Pittsburg~~Pittsburg, Crawford county, KS 66762, USA~37.4123;-94.6984~US-KS~37.4123,-94.6984~37.41230000~-94.69840000~66762~Crawford county~~~4.44~2830~4265
+Plains~Plains~~Plains, Meade county, KS 67869, USA~37.2601;-100.592~US-KS~37.2601,-100.592~37.26010000~-100.59200000~67869~Meade county~~~4.3900003~2805~4868
+Plainville~Plainville~~Plainville, Rooks county, KS 67663, USA~39.2329;-99.3031~US-KS~39.2329,-99.3031~39.23290000~-99.30310000~67663~Rooks county~~~4.1600003~2250~3275
+Pleasanton~Pleasanton~~Pleasanton, Linn county, KS 66075, USA~38.1744;-94.7096~US-KS~38.1744,-94.7096~38.17440000~-94.70960000~66075~Linn county~~~4.38~1504~2644
+Plevna~Plevna~~Plevna, Reno county, KS 67568, USA~37.9851;-98.3017~US-KS~37.9851,-98.3017~37.98510000~-98.30170000~67568~Reno county~~~4.4300003~2291~3452
+Pomona~Pomona~~Pomona, Franklin county, KS 66076, USA~38.6081;-95.4517~US-KS~38.6081,-95.4517~38.60810000~-95.45170000~66076~Franklin county~~~4.19~1623~2155
+Portis~Portis~~Portis, Osborne county, KS 67474, USA~39.5222;-98.7116~US-KS~39.5222,-98.7116~39.52220000~-98.71160000~67474~Osborne county~~~4.42~1575~3044
+Potter~Potter~~Potter, Atchison county, KS 66077, USA~39.4225;-95.1431~US-KS~39.4225,-95.1431~39.42250000~-95.14310000~66077~Atchison county~~~4.44~1268~3435
+Potwin~Potwin~~Potwin, Butler county, KS 67123, USA~37.9375;-97.0165~US-KS~37.9375,-97.0165~37.93750000~-97.01650000~67123~Butler county~~~4.11~2924~3786
+Powhattan~Powhattan~~Powhattan, Brown county, KS 66527, USA~39.7617;-95.6333~US-KS~39.7617,-95.6333~39.76170000~-95.63330000~66527~Brown county~~~4.4500003~1006~3278
+Prairie View~Prairie-View~~Prairie View, Phillips county, KS 67664, USA~39.8346;-99.5701~US-KS~39.8346,-99.5701~39.83460000~-99.57010000~67664~Phillips county~~~4.1400003~1115~3336
+Prairie Village~Prairie-Village~~Prairie Village, Johnson county, KS 66208, USA~38.9972;-94.6327~US-KS~38.9972,-94.6327~38.99720000~-94.63270000~66208~Johnson county~~~4.4300003~1155~3317
+Pratt~Pratt~~Pratt, Pratt county, KS 67124, USA~37.6482;-98.7385~US-KS~37.6482,-98.7385~37.64820000~-98.73850000~67124~Pratt county~~~4.5~2837~4907
+Prescott~Prescott~~Prescott, Linn county, KS 66767, USA~38.1804;-94.7044~US-KS~38.1804,-94.7044~38.18040000~-94.70440000~66767~Linn county~~~4.4900002~1285~4240
+Pretty Prairie~Pretty-Prairie~~Pretty Prairie, Reno county, KS 67570, USA~37.7869;-97.9416~US-KS~37.7869,-97.9416~37.78690000~-97.94160000~67570~Reno county~~~4.1200004~1817~3904
+Princeton~Princeton~~Princeton, Franklin county, KS 66078, USA~38.4901;-95.2761~US-KS~38.4901,-95.2761~38.49010000~-95.27610000~66078~Franklin county~~~4.37~2806~2937
+Protection~Protection~~Protection, Comanche county, KS 67127, USA~37.1989;-99.4857~US-KS~37.1989,-99.4857~37.19890000~-99.48570000~67127~Comanche county~~~4.25~1923~2235
+Quenemo~Quenemo~~Quenemo, Osage county, KS 66528, USA~38.5826;-95.5298~US-KS~38.5826,-95.5298~38.58260000~-95.52980000~66528~Osage county~~~4.21~2616~2610
+Quinter~Quinter~~Quinter, Gove county, KS 67752, USA~38.9155;-100.242~US-KS~38.9155,-100.242~38.91550000~-100.24200000~67752~Gove county~~~4.1200004~1271~2372
+Ramona~Ramona~~Ramona, Marion county, KS 67475, USA~38.5663;-97.0976~US-KS~38.5663,-97.0976~38.56630000~-97.09760000~67475~Marion county~~~4.11~1492~3853
+Randall~Randall~~Randall, Jewell county, KS 66963, USA~39.6102;-98.1001~US-KS~39.6102,-98.1001~39.61020000~-98.10010000~66963~Jewell county~~~4.38~1726~2451
+Randolph~Randolph~~Randolph, Riley county, KS 66554, USA~39.4193;-96.7713~US-KS~39.4193,-96.7713~39.41930000~-96.77130000~66554~Riley county~~~4.42~1035~2782
+Ransom~Ransom~~Ransom, Ness county, KS 67572, USA~38.6363;-99.9345~US-KS~38.6363,-99.9345~38.63630000~-99.93450000~67572~Ness county~~~4.17~2707~4482
+Rantoul~Rantoul~~Rantoul, Franklin county, KS 66079, USA~38.548;-95.0975~US-KS~38.548,-95.0975~38.54800000~-95.09750000~66079~Franklin county~~~4.42~2612~4201
+Raymond~Raymond~~Raymond, Rice county, KS 67573, USA~38.263;-98.4189~US-KS~38.263,-98.4189~38.26300000~-98.41890000~67573~Rice county~~~4.4300003~1235~4985
+Reading~Reading~~Reading, Lyon county, KS 66868, USA~38.5421;-96.0209~US-KS~38.5421,-96.0209~38.54210000~-96.02090000~66868~Lyon county~~~4.3900003~1343~4419
+Redfield~Redfield~~Redfield, Bourbon county, KS 66769, USA~37.8605;-94.8318~US-KS~37.8605,-94.8318~37.86050000~-94.83180000~66769~Bourbon county~~~4.11~2649~2946
+Republic~Republic~~Republic, Republic county, KS 66964, USA~39.9231;-97.8254~US-KS~39.9231,-97.8254~39.92310000~-97.82540000~66964~Republic county~~~4.37~2011~2468
+Rexford~Rexford~~Rexford, Thomas county, KS 67753, USA~39.4132;-100.742~US-KS~39.4132,-100.742~39.41320000~-100.74200000~67753~Thomas county~~~4.34~1998~2124
+Richfield~Richfield~~Richfield, Morton county, KS 67953, USA~37.2832;-101.736~US-KS~37.2832,-101.736~37.28320000~-101.73600000~67953~Morton county~~~4.3~2666~2811
+Richmond~Richmond~~Richmond, Franklin county, KS 66080, USA~38.4027;-95.2531~US-KS~38.4027,-95.2531~38.40270000~-95.25310000~66080~Franklin county~~~4.25~1834~2712
+Riley~Riley~~Riley, Riley county, KS 66531, USA~39.2945;-96.813~US-KS~39.2945,-96.813~39.29450000~-96.81300000~66531~Riley county~~~4.44~1029~3612
+Riverton~Riverton~~Riverton, Cherokee county, KS 66770, USA~37.1022;-94.6699~US-KS~37.1022,-94.6699~37.10220000~-94.66990000~66770~Cherokee county~~~4.4~2910~2095
+Robinson~Robinson~~Robinson, Brown county, KS 66532, USA~39.8169;-95.3938~US-KS~39.8169,-95.3938~39.81690000~-95.39380000~66532~Brown county~~~4.3~2106~2551
+Rock~Rock~~Rock, Cowley county, KS 67131, USA~37.4302;-96.9313~US-KS~37.4302,-96.9313~37.43020000~-96.93130000~67131~Cowley county~~~4.1600003~2447~3710
+Rolla~Rolla~~Rolla, Morton county, KS 67954, USA~37.1171;-101.631~US-KS~37.1171,-101.631~37.11710000~-101.63100000~67954~Morton county~~~4.5~2794~3498
+Rosalia~Rosalia~~Rosalia, Butler county, KS 67132, USA~37.7818;-96.6224~US-KS~37.7818,-96.6224~37.78180000~-96.62240000~67132~Butler county~~~4.27~1994~2143
+Rose Hill~Rose-Hill~~Rose Hill, Butler county, KS 67133, USA~37.575;-97.1317~US-KS~37.575,-97.1317~37.57500000~-97.13170000~67133~Butler county~~~4.32~1294~3243
+Rossville~Rossville~~Rossville, Shawnee county, KS 66533, USA~39.1527;-95.9652~US-KS~39.1527,-95.9652~39.15270000~-95.96520000~66533~Shawnee county~~~4.2000003~1315~2230
+Roxbury~Roxbury~~Roxbury, McPherson county, KS 67476, USA~38.4909;-97.4378~US-KS~38.4909,-97.4378~38.49090000~-97.43780000~67476~McPherson county~~~4.29~2184~4771
+Rozel~Rozel~~Rozel, Pawnee county, KS 67574, USA~37.9298;-99.4109~US-KS~37.9298,-99.4109~37.92980000~-99.41090000~67574~Pawnee county~~~4.25~1769~4036
+Rush Center~Rush-Center~~Rush Center, Rush county, KS 67575, USA~38.4637;-99.3126~US-KS~38.4637,-99.3126~38.46370000~-99.31260000~67575~Rush county~~~4.46~2281~4965
+Russell~Russell~~Russell, Russell county, KS 67665, USA~38.8913;-98.8584~US-KS~38.8913,-98.8584~38.89130000~-98.85840000~67665~Russell county~~~4.17~1879~4977
+Sabetha~Sabetha~~Sabetha, Nemaha county, KS 66534, USA~39.9012;-95.7974~US-KS~39.9012,-95.7974~39.90120000~-95.79740000~66534~Nemaha county~~~4.37~1440~2145
+Saint Francis~Saint-Francis~~Saint Francis, Cheyenne county, KS 67756, USA~39.7748;-101.81~US-KS~39.7748,-101.81~39.77480000~-101.81000000~67756~Cheyenne county~~~4.23~1016~2154
+Saint George~Saint-George~~Saint George, Pottawatomie county, KS 66535, USA~39.225;-96.438~US-KS~39.225,-96.438~39.22500000~-96.43800000~66535~Pottawatomie county~~~4.1400003~1133~4441
+Saint John~Saint-John~~Saint John, Stafford county, KS 67576, USA~38.0037;-98.7615~US-KS~38.0037,-98.7615~38.00370000~-98.76150000~67576~Stafford county~~~4.37~1704~2519
+Saint Marys~Saint-Marys~~Saint Marys, Pottawatomie county, KS 66536, USA~39.1944;-96.0648~US-KS~39.1944,-96.0648~39.19440000~-96.06480000~66536~Pottawatomie county~~~4.4700003~1527~3160
+Saint Paul~Saint-Paul~~Saint Paul, Neosho county, KS 66771, USA~37.5173;-95.1692~US-KS~37.5173,-95.1692~37.51730000~-95.16920000~66771~Neosho county~~~4.27~2572~3066
+Salina~Salina~~Salina, Saline county, KS 67401, USA~38.8299;-97.6162~US-KS~38.8299,-97.6162~38.82990000~-97.61620000~67401~Saline county~~~4.29~2024~2833
+Satanta~Satanta~~Satanta, Haskell county, KS 67870, USA~37.4486;-101.012~US-KS~37.4486,-101.012~37.44860000~-101.01200000~67870~Haskell county~~~4.29~1828~3636
+Savonburg~Savonburg~~Savonburg, Allen county, KS 66772, USA~37.7558;-95.1597~US-KS~37.7558,-95.1597~37.75580000~-95.15970000~66772~Allen county~~~4.4300003~1859~3566
+Sawyer~Sawyer~~Sawyer, Pratt county, KS 67134, USA~37.5153;-98.6266~US-KS~37.5153,-98.6266~37.51530000~-98.62660000~67134~Pratt county~~~4.1400003~2990~3370
+Scammon~Scammon~~Scammon, Cherokee county, KS 66773, USA~37.2673;-94.8537~US-KS~37.2673,-94.8537~37.26730000~-94.85370000~66773~Cherokee county~~~4.23~1669~4320
+Scandia~Scandia~~Scandia, Republic county, KS 66966, USA~39.796;-97.7848~US-KS~39.796,-97.7848~39.79600000~-97.78480000~66966~Republic county~~~4.42~2690~4259
+Schoenchen~Schoenchen~~Schoenchen, Ellis county, KS 67667, USA~38.714;-99.331~US-KS~38.714,-99.331~38.71400000~-99.33100000~67667~Ellis county~~~4.4100003~2998~4186
+Scott City~Scott-City~~Scott City, Scott county, KS 67871, USA~38.479;-100.891~US-KS~38.479,-100.891~38.47900000~-100.89100000~67871~Scott county~~~4.42~2477~2708
+Scranton~Scranton~~Scranton, Osage county, KS 66537, USA~38.7807;-95.7362~US-KS~38.7807,-95.7362~38.78070000~-95.73620000~66537~Osage county~~~4.19~2857~3132
+Sedan~Sedan~~Sedan, Chautauqua county, KS 67361, USA~37.1276;-96.1848~US-KS~37.1276,-96.1848~37.12760000~-96.18480000~67361~Chautauqua county~~~4.4700003~2535~4090
+Sedgwick~Sedgwick~~Sedgwick, Harvey county, KS 67135, USA~37.8942;-97.4382~US-KS~37.8942,-97.4382~37.89420000~-97.43820000~67135~Harvey county~~~4.5~1187~2125
+Selden~Selden~~Selden, Sheridan county, KS 67757, USA~39.5385;-100.565~US-KS~39.5385,-100.565~39.53850000~-100.56500000~67757~Sheridan county~~~4.28~1463~3782
+Seneca~Seneca~~Seneca, Nemaha county, KS 66538, USA~39.8366;-96.0611~US-KS~39.8366,-96.0611~39.83660000~-96.06110000~66538~Nemaha county~~~4.44~1184~4946
+Severy~Severy~~Severy, Greenwood county, KS 67137, USA~37.6472;-96.2269~US-KS~37.6472,-96.2269~37.64720000~-96.22690000~67137~Greenwood county~~~4.2400002~1373~2130
+Sharon Springs~Sharon-Springs~~Sharon Springs, Wallace county, KS 67758, USA~38.9019;-101.747~US-KS~38.9019,-101.747~38.90190000~-101.74700000~67758~Wallace county~~~4.25~2372~2214
+Sharon~Sharon~~Sharon, Barber county, KS 67138, USA~37.2516;-98.4154~US-KS~37.2516,-98.4154~37.25160000~-98.41540000~67138~Barber county~~~4.46~1673~3158
+Shawnee Mission~Shawnee-Mission~~Shawnee Mission, Johnson county, KS 66250, USA~38.9551;-94.7866~US-KS~38.9551,-94.7866~38.95510000~-94.78660000~66250~Johnson county~~~4.11~2156~3885
+Shawnee~Shawnee~~Shawnee, Johnson county, KS 66203, USA~39.0178;-94.6969~US-KS~39.0178,-94.6969~39.01780000~-94.69690000~66203~Johnson county~~~4.34~1959~2857
+Silver Lake~Silver-Lake~~Silver Lake, Shawnee county, KS 66539, USA~39.1422;-95.8655~US-KS~39.1422,-95.8655~39.14220000~-95.86550000~66539~Shawnee county~~~4.1800003~2412~2360
+Simpson~Simpson~~Simpson, Mitchell county, KS 67478, USA~39.3828;-97.9333~US-KS~39.3828,-97.9333~39.38280000~-97.93330000~67478~Mitchell county~~~4.1200004~2830~2249
+Smith Center~Smith-Center~~Smith Center, Smith county, KS 66967, USA~39.7794;-98.7831~US-KS~39.7794,-98.7831~39.77940000~-98.78310000~66967~Smith county~~~4.4100003~2674~2296
+Soldier~Soldier~~Soldier, Jackson county, KS 66540, USA~39.5363;-95.9655~US-KS~39.5363,-95.9655~39.53630000~-95.96550000~66540~Jackson county~~~4.1800003~2648~2070
+Solomon~Solomon~~Solomon, Dickinson county, KS 67480, USA~38.918;-97.3711~US-KS~38.918,-97.3711~38.91800000~-97.37110000~67480~Dickinson county~~~4.35~1399~4151
+South Haven~South-Haven~~South Haven, Sumner county, KS 67140, USA~37.0933;-97.3504~US-KS~37.0933,-97.3504~37.09330000~-97.35040000~67140~Sumner county~~~4.4100003~1356~3744
+South Hutchinson~South-Hutchinson~~South Hutchinson, Reno county, KS 67505, USA~38.0194;-97.9733~US-KS~38.0194,-97.9733~38.01940000~-97.97330000~67505~Reno county~~~4.17~2825~4819
+Spearville~Spearville~~Spearville, Ford county, KS 67876, USA~37.8462;-99.757~US-KS~37.8462,-99.757~37.84620000~-99.75700000~67876~Ford county~~~4.36~1962~2144
+Spivey~Spivey~~Spivey, Kingman county, KS 67142, USA~37.4264;-98.1905~US-KS~37.4264,-98.1905~37.42640000~-98.19050000~67142~Kingman county~~~4.31~2211~2025
+Spring Hill~Spring-Hill~~Spring Hill, Johnson county, KS 66083, USA~38.7321;-94.8087~US-KS~38.7321,-94.8087~38.73210000~-94.80870000~66083~Johnson county~~~4.37~1601~2166
+Stafford~Stafford~~Stafford, Stafford county, KS 67578, USA~37.9631;-98.5986~US-KS~37.9631,-98.5986~37.96310000~-98.59860000~67578~Stafford county~~~4.34~2359~3371
+Stark~Stark~~Stark, Neosho county, KS 66775, USA~37.688;-95.1279~US-KS~37.688,-95.1279~37.68800000~-95.12790000~66775~Neosho county~~~4.34~1747~4587
+Sterling~Sterling~~Sterling, Rice county, KS 67579, USA~38.2106;-98.2069~US-KS~38.2106,-98.2069~38.21060000~-98.20690000~67579~Rice county~~~4.1800003~2818~4848
+Stilwell~Stilwell~~Stilwell, Johnson county, KS 66085, USA~38.8002;-94.6473~US-KS~38.8002,-94.6473~38.80020000~-94.64730000~66085~Johnson county~~~4.4500003~2213~4882
+Stockton~Stockton~~Stockton, Rooks county, KS 67669, USA~39.4363;-99.2708~US-KS~39.4363,-99.2708~39.43630000~-99.27080000~67669~Rooks county~~~4.34~1970~4649
+Strong City~Strong-City~~Strong City, Chase county, KS 66869, USA~38.3952;-96.5365~US-KS~38.3952,-96.5365~38.39520000~-96.53650000~66869~Chase county~~~4.37~2938~2505
+Sublette~Sublette~~Sublette, Haskell county, KS 67877, USA~37.484;-100.842~US-KS~37.484,-100.842~37.48400000~-100.84200000~67877~Haskell county~~~4.29~1079~2443
+Summerfield~Summerfield~~Summerfield, Marshall county, KS 66541, USA~39.9566;-96.2971~US-KS~39.9566,-96.2971~39.95660000~-96.29710000~66541~Marshall county~~~4.23~1888~3028
+Sun City~Sun-City~~Sun City, Barber county, KS 67143, USA~37.3986;-98.9006~US-KS~37.3986,-98.9006~37.39860000~-98.90060000~67143~Barber county~~~4.2200003~2136~2540
+Sycamore~Sycamore~~Sycamore, Montgomery county, KS 67363, USA~37.3288;-95.7145~US-KS~37.3288,-95.7145~37.32880000~-95.71450000~67363~Montgomery county~~~4.2000003~2927~4553
+Sylvan Grove~Sylvan-Grove~~Sylvan Grove, Lincoln county, KS 67481, USA~39.0463;-98.3767~US-KS~39.0463,-98.3767~39.04630000~-98.37670000~67481~Lincoln county~~~4.26~1634~3205
+Sylvia~Sylvia~~Sylvia, Reno county, KS 67581, USA~37.9606;-98.4054~US-KS~37.9606,-98.4054~37.96060000~-98.40540000~67581~Reno county~~~4.4~1204~3767
+Syracuse~Syracuse~~Syracuse, Hamilton county, KS 67878, USA~37.9845;-101.748~US-KS~37.9845,-101.748~37.98450000~-101.74800000~67878~Hamilton county~~~4.31~1588~3481
+Talmage~Talmage~~Talmage, Dickinson county, KS 67482, USA~39.0092;-97.3171~US-KS~39.0092,-97.3171~39.00920000~-97.31710000~67482~Dickinson county~~~4.32~1985~3951
+Tampa~Tampa~~Tampa, Marion county, KS 67483, USA~38.5643;-97.2037~US-KS~38.5643,-97.2037~38.56430000~-97.20370000~67483~Marion county~~~4.11~2496~3910
+Tecumseh~Tecumseh~~Tecumseh, Shawnee county, KS 66542, USA~39.0204;-95.5535~US-KS~39.0204,-95.5535~39.02040000~-95.55350000~66542~Shawnee county~~~4.4500003~1389~3507
+Tescott~Tescott~~Tescott, Ottawa county, KS 67484, USA~38.9874;-97.7885~US-KS~38.9874,-97.7885~38.98740000~-97.78850000~67484~Ottawa county~~~4.1600003~2775~3856
+Thayer~Thayer~~Thayer, Neosho county, KS 66776, USA~37.4894;-95.4767~US-KS~37.4894,-95.4767~37.48940000~-95.47670000~66776~Neosho county~~~4.25~2018~4143
+Tipton~Tipton~~Tipton, Mitchell county, KS 67485, USA~39.3404;-98.4723~US-KS~39.3404,-98.4723~39.34040000~-98.47230000~67485~Mitchell county~~~4.29~2939~2366
+Tonganoxie~Tonganoxie~~Tonganoxie, Leavenworth county, KS 66086, USA~39.1072;-95.0883~US-KS~39.1072,-95.0883~39.10720000~-95.08830000~66086~Leavenworth county~~~4.27~1580~2037
+Topeka~Topeka~~Topeka, Shawnee county, KS 66601, USA~39.0571;-95.6765~US-KS~39.0571,-95.6765~39.05710000~-95.67650000~66601~Shawnee county~~~4.35~2470~2514
+Toronto~Toronto~~Toronto, Woodson county, KS 66777, USA~37.8008;-95.9477~US-KS~37.8008,-95.9477~37.80080000~-95.94770000~66777~Woodson county~~~4.4~1342~2327
+Towanda~Towanda~~Towanda, Butler county, KS 67144, USA~37.7958;-96.9998~US-KS~37.7958,-96.9998~37.79580000~-96.99980000~67144~Butler county~~~4.5~1282~3065
+Treece~Treece~~Treece, Cherokee county, KS 66778, USA~37.0036;-94.845~US-KS~37.0036,-94.845~37.00360000~-94.84500000~66778~Cherokee county~~~4.35~2170~4740
+Tribune~Tribune~~Tribune, Greeley county, KS 67879, USA~38.4751;-101.749~US-KS~38.4751,-101.749~38.47510000~-101.74900000~67879~Greeley county~~~4.25~2429~2382
+Troy~Troy~~Troy, Doniphan county, KS 66087, USA~39.7805;-95.0886~US-KS~39.7805,-95.0886~39.78050000~-95.08860000~66087~Doniphan county~~~4.48~2849~2681
+Turon~Turon~~Turon, Reno county, KS 67583, USA~37.8074;-98.4274~US-KS~37.8074,-98.4274~37.80740000~-98.42740000~67583~Reno county~~~4.19~2189~2708
+Tyro~Tyro~~Tyro, Montgomery county, KS 67364, USA~37.0391;-95.821~US-KS~37.0391,-95.821~37.03910000~-95.82100000~67364~Montgomery county~~~4.21~1633~4961
+Udall~Udall~~Udall, Cowley county, KS 67146, USA~37.3852;-97.1231~US-KS~37.3852,-97.1231~37.38520000~-97.12310000~67146~Cowley county~~~4.1600003~1207~2524
+Ulysses~Ulysses~~Ulysses, Grant county, KS 67880, USA~37.5835;-101.359~US-KS~37.5835,-101.359~37.58350000~-101.35900000~67880~Grant county~~~4.34~2846~4122
+Uniontown~Uniontown~~Uniontown, Bourbon county, KS 66779, USA~37.7658;-94.9911~US-KS~37.7658,-94.9911~37.76580000~-94.99110000~66779~Bourbon county~~~4.1200004~2825~2494
+Utica~Utica~~Utica, Ness county, KS 67584, USA~38.6437;-100.175~US-KS~38.6437,-100.175~38.64370000~-100.17500000~67584~Ness county~~~4.15~1967~3619
+Valley Center~Valley-Center~~Valley Center, Sedgwick county, KS 67147, USA~37.8413;-97.3397~US-KS~37.8413,-97.3397~37.84130000~-97.33970000~67147~Sedgwick county~~~4.32~2049~4392
+Valley Falls~Valley-Falls~~Valley Falls, Jefferson county, KS 66088, USA~39.3449;-95.461~US-KS~39.3449,-95.461~39.34490000~-95.46100000~66088~Jefferson county~~~4.2200003~1412~3793
+Vassar~Vassar~~Vassar, Osage county, KS 66543, USA~38.649;-95.6211~US-KS~38.649,-95.6211~38.64900000~-95.62110000~66543~Osage county~~~4.33~2340~3803
+Vermillion~Vermillion~~Vermillion, Marshall county, KS 66544, USA~39.6912;-96.2837~US-KS~39.6912,-96.2837~39.69120000~-96.28370000~66544~Marshall county~~~4.4300003~2571~2790
+Victoria~Victoria~~Victoria, Ellis county, KS 67671, USA~38.8516;-99.1474~US-KS~38.8516,-99.1474~38.85160000~-99.14740000~67671~Ellis county~~~4.3900003~2979~3719
+Viola~Viola~~Viola, Sedgwick county, KS 67149, USA~37.5543;-97.6055~US-KS~37.5543,-97.6055~37.55430000~-97.60550000~67149~Sedgwick county~~~4.1600003~1508~3927
+Virgil~Virgil~~Virgil, Greenwood county, KS 66870, USA~37.8699;-96.0366~US-KS~37.8699,-96.0366~37.86990000~-96.03660000~66870~Greenwood county~~~4.38~2157~3586
+Wakarusa~Wakarusa~~Wakarusa, Shawnee county, KS 66546, USA~38.8942;-95.7108~US-KS~38.8942,-95.7108~38.89420000~-95.71080000~66546~Shawnee county~~~4.4300003~1842~2359
+Wakeeney~Wakeeney~~Wakeeney, Trego county, KS 67672, USA~38.9874;-99.8801~US-KS~38.9874,-99.8801~38.98740000~-99.88010000~67672~Trego county~~~4.19~1442~4959
+Wakefield~Wakefield~~Wakefield, Clay county, KS 67487, USA~39.2177;-97.018~US-KS~39.2177,-97.018~39.21770000~-97.01800000~67487~Clay county~~~4.38~2695~4080
+Waldo~Waldo~~Waldo, Russell county, KS 67673, USA~39.0452;-98.762~US-KS~39.0452,-98.762~39.04520000~-98.76200000~67673~Russell county~~~4.4300003~2002~4583
+Waldron~Waldron~~Waldron, Harper county, KS 67150, USA~37.0821;-98.2395~US-KS~37.0821,-98.2395~37.08210000~-98.23950000~67150~Harper county~~~4.34~2130~4966
+Walker~Walker~~Walker, Ellis county, KS 67674, USA~38.8654;-99.0767~US-KS~38.8654,-99.0767~38.86540000~-99.07670000~67674~Ellis county~~~4.46~2109~4647
+Wallace~Wallace~~Wallace, Wallace county, KS 67761, USA~38.9173;-101.565~US-KS~38.9173,-101.565~38.91730000~-101.56500000~67761~Wallace county~~~4.27~2147~2548
+Walnut~Walnut~~Walnut, Crawford county, KS 66780, USA~37.6005;-95.0812~US-KS~37.6005,-95.0812~37.60050000~-95.08120000~66780~Crawford county~~~4.2200003~1341~3571
+Walton~Walton~~Walton, Harvey county, KS 67151, USA~38.1172;-97.2552~US-KS~38.1172,-97.2552~38.11720000~-97.25520000~67151~Harvey county~~~4.1600003~1836~3119
+Wamego~Wamego~~Wamego, Pottawatomie county, KS 66547, USA~39.2112;-96.3168~US-KS~39.2112,-96.3168~39.21120000~-96.31680000~66547~Pottawatomie county~~~4.36~2778~4152
+Washington~Washington~~Washington, Washington county, KS 66968, USA~39.816;-97.0514~US-KS~39.816,-97.0514~39.81600000~-97.05140000~66968~Washington county~~~4.15~2612~4333
+Waterville~Waterville~~Waterville, Marshall county, KS 66548, USA~39.689;-96.7492~US-KS~39.689,-96.7492~39.68900000~-96.74920000~66548~Marshall county~~~4.19~2293~3407
+Wathena~Wathena~~Wathena, Doniphan county, KS 66090, USA~39.7624;-94.9481~US-KS~39.7624,-94.9481~39.76240000~-94.94810000~66090~Doniphan county~~~4.4100003~2849~2125
+Waverly~Waverly~~Waverly, Coffey county, KS 66871, USA~38.3874;-95.5968~US-KS~38.3874,-95.5968~38.38740000~-95.59680000~66871~Coffey county~~~4.32~2277~3931
+Webber~Webber~~Webber, Jewell county, KS 66970, USA~39.9148;-97.9868~US-KS~39.9148,-97.9868~39.91480000~-97.98680000~66970~Jewell county~~~4.23~1855~4924
+Weir~Weir~~Weir, Cherokee county, KS 66781, USA~37.298;-94.755~US-KS~37.298,-94.755~37.29800000~-94.75500000~66781~Cherokee county~~~4.1400003~2903~4753
+Welda~Welda~~Welda, Anderson county, KS 66091, USA~38.1694;-95.2956~US-KS~38.1694,-95.2956~38.16940000~-95.29560000~66091~Anderson county~~~4.11~2027~4413
+Wellington~Wellington~~Wellington, Sumner county, KS 67152, USA~37.269;-97.3943~US-KS~37.269,-97.3943~37.26900000~-97.39430000~67152~Sumner county~~~4.13~1484~3810
+Wellsville~Wellsville~~Wellsville, Franklin county, KS 66092, USA~38.6959;-95.1494~US-KS~38.6959,-95.1494~38.69590000~-95.14940000~66092~Franklin county~~~4.35~2922~2282
+Weskan~Weskan~~Weskan, Wallace county, KS 67762, USA~38.8857;-101.947~US-KS~38.8857,-101.947~38.88570000~-101.94700000~67762~Wallace county~~~4.4900002~2150~4638
+West Mineral~West-Mineral~~West Mineral, Cherokee county, KS 66782, USA~37.2861;-94.9245~US-KS~37.2861,-94.9245~37.28610000~-94.92450000~66782~Cherokee county~~~4.42~2628~2524
+Westmoreland~Westmoreland~~Westmoreland, Pottawatomie county, KS 66549, USA~39.4742;-96.416~US-KS~39.4742,-96.416~39.47420000~-96.41600000~66549~Pottawatomie county~~~4.1800003~2674~2170
+Westphalia~Westphalia~~Westphalia, Anderson county, KS 66093, USA~38.1528;-95.4566~US-KS~38.1528,-95.4566~38.15280000~-95.45660000~66093~Anderson county~~~4.17~2352~4625
+Wetmore~Wetmore~~Wetmore, Nemaha county, KS 66550, USA~39.6531;-95.8467~US-KS~39.6531,-95.8467~39.65310000~-95.84670000~66550~Nemaha county~~~4.48~2509~3598
+White City~White-City~~White City, Morris county, KS 66872, USA~38.7974;-96.734~US-KS~38.7974,-96.734~38.79740000~-96.73400000~66872~Morris county~~~4.26~1948~3125
+White Cloud~White-Cloud~~White Cloud, Doniphan county, KS 66094, USA~39.9449;-95.2869~US-KS~39.9449,-95.2869~39.94490000~-95.28690000~66094~Doniphan county~~~4.4500003~2726~3501
+Whitewater~Whitewater~~Whitewater, Butler county, KS 67154, USA~37.9645;-97.1429~US-KS~37.9645,-97.1429~37.96450000~-97.14290000~67154~Butler county~~~4.4500003~1946~2317
+Whiting~Whiting~~Whiting, Jackson county, KS 66552, USA~39.6128;-95.6219~US-KS~39.6128,-95.6219~39.61280000~-95.62190000~66552~Jackson county~~~4.2400002~2887~4614
+Wichita~Wichita~~Wichita, Sedgwick county, KS 67201, USA~37.6882;-97.343~US-KS~37.6882,-97.343~37.68820000~-97.34300000~67201~Sedgwick county~~~4.33~1531~4418
+Williamsburg~Williamsburg~~Williamsburg, Franklin county, KS 66095, USA~38.4806;-95.4649~US-KS~38.4806,-95.4649~38.48060000~-95.46490000~66095~Franklin county~~~4.1600003~1255~4894
+Wilmore~Wilmore~~Wilmore, Comanche county, KS 67155, USA~37.3351;-99.2095~US-KS~37.3351,-99.2095~37.33510000~-99.20950000~67155~Comanche county~~~4.5~1360~3722
+Wilsey~Wilsey~~Wilsey, Morris county, KS 66873, USA~38.6544;-96.6935~US-KS~38.6544,-96.6935~38.65440000~-96.69350000~66873~Morris county~~~4.48~2176~2726
+Wilson~Wilson~~Wilson, Ellsworth county, KS 67490, USA~38.8222;-98.4761~US-KS~38.8222,-98.4761~38.82220000~-98.47610000~67490~Ellsworth county~~~4.15~2685~2374
+Winchester~Winchester~~Winchester, Jefferson county, KS 66097, USA~39.3047;-95.2747~US-KS~39.3047,-95.2747~39.30470000~-95.27470000~66097~Jefferson county~~~4.42~2974~2205
+Windom~Windom~~Windom, McPherson county, KS 67491, USA~38.3862;-97.9062~US-KS~38.3862,-97.9062~38.38620000~-97.90620000~67491~McPherson county~~~4.4900002~2580~4163
+Winfield~Winfield~~Winfield, Cowley county, KS 67156, USA~37.2328;-96.9548~US-KS~37.2328,-96.9548~37.23280000~-96.95480000~67156~Cowley county~~~4.4~1795~3907
+Winona~Winona~~Winona, Logan county, KS 67764, USA~39.0464;-101.228~US-KS~39.0464,-101.228~39.04640000~-101.22800000~67764~Logan county~~~4.1800003~2741~2499
+Woodbine~Woodbine~~Woodbine, Dickinson county, KS 67492, USA~38.8305;-96.969~US-KS~38.8305,-96.969~38.83050000~-96.96900000~67492~Dickinson county~~~4.1200004~1280~2866
+Woodston~Woodston~~Woodston, Rooks county, KS 67675, USA~39.4378;-99.1003~US-KS~39.4378,-99.1003~39.43780000~-99.10030000~67675~Rooks county~~~4.2000003~1432~3157
+Wright~Wright~~Wright, Ford county, KS 67882, USA~37.8223;-99.9323~US-KS~37.8223,-99.9323~37.82230000~-99.93230000~67882~Ford county~~~4.3~2615~4768
+Yates Center~Yates-Center~~Yates Center, Woodson county, KS 66783, USA~37.8816;-95.7286~US-KS~37.8816,-95.7286~37.88160000~-95.72860000~66783~Woodson county~~~4.42~2066~3358
+Yoder~Yoder~~Yoder, Reno county, KS 67585, USA~37.9431;-97.8686~US-KS~37.9431,-97.8686~37.94310000~-97.86860000~67585~Reno county~~~4.37~1287~2253
+Zenda~Zenda~~Zenda, Kingman county, KS 67159, USA~37.4286;-98.2999~US-KS~37.4286,-98.2999~37.42860000~-98.29990000~67159~Kingman county~~~4.31~1919~4222

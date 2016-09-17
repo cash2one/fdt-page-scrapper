@@ -90,6 +90,7 @@ ul.nav, ul.mobile_nav {
     list-style: outside none none;
     margin-bottom: 15px;
     text-transform: uppercase;
+	padding: 0 0 5px 0px;
 }
 
 ul.nav a:hover, ul.nav a:active, ul.nav a:focus, ul.mobile_nav a:hover {

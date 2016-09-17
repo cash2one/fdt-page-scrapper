@@ -97,6 +97,7 @@ public class ArticlesPosterUpdaterRunner {
 
 		oneDayLoad = Boolean.valueOf(args[1]);
 
+		/*использовать ли новую структуру папок со статьями*/
 		useNewFolderStructure = Boolean.valueOf(args[2]);
 		
 
@@ -266,7 +267,10 @@ public class ArticlesPosterUpdaterRunner {
 		Collections.shuffle(tmplWoCntntIds);
 
 		for(List<String> tmpl : tmplWoCntntIds){
+			//0 - количество дней, 1 - количество новостей
+			//получаем в какой день постить новость
 			int rndDayCnt = postInterval[0] * (idxCnt/postInterval[1]) + rnd.nextInt(postInterval[0]);
+			//получаем время, в которое постить новость
 			postTime = DoorUtils.getRndNormalDistTime() + startOtDay + DoorUtils.DAY_MIL_SEC_CNT * (rndDayCnt);
 
 			//post/add new article content
@@ -279,7 +283,9 @@ public class ArticlesPosterUpdaterRunner {
 
 			idxCnt++;
 
-			if(oneDayLoad && idxCnt/postInterval[1] >= 1){
+			
+			// Если нам надо загрузить один день
+			if(oneDayLoad && idxCnt/(postInterval[1]/postInterval[0]) >= 1){
 				break;
 			}
 		}
@@ -308,6 +314,13 @@ public class ArticlesPosterUpdaterRunner {
 		return artCntntDAO.deleteDeprecatedPageContent();
 	}
 
+	/**
+	 * 
+	 * @param postIntervalStr
+	 * @return переодичность с которой новости будут появляться, int[0]:int[1]  
+		формат такой, первое число int[0] - кол-во дней
+		второе int[1] - количество новостей которые будут появляться за int[0] дней
+	 */
 	private int[] readPostInterval(String postIntervalStr){
 		int[] result = new int[]{1,1};
 

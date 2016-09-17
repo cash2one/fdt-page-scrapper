@@ -1,0 +1,255 @@
+Acworth~Acworth~~Acworth, Sullivan county, NH 03601, USA~43.2422;-72.3862~US-NH~43.2422,-72.3862~43.24220000~-72.38620000~03601~Sullivan county~~~4.42~2118~2629
+Alstead~Alstead~~Alstead, Cheshire county, NH 03602, USA~43.1544;-72.3046~US-NH~43.1544,-72.3046~43.15440000~-72.30460000~03602~Cheshire county~~~4.4100003~1037~2055
+Alton Bay~Alton-Bay~~Alton Bay, Belknap county, NH 03810, USA~43.4812;-71.2476~US-NH~43.4812,-71.2476~43.48120000~-71.24760000~03810~Belknap county~~~4.17~2377~3169
+Alton~Alton~~Alton, Belknap county, NH 03809, USA~43.4732;-71.2404~US-NH~43.4732,-71.2404~43.47320000~-71.24040000~03809~Belknap county~~~4.15~2374~4409
+Amherst~Amherst~~Amherst, Hillsborough county, NH 03031, USA~42.8603;-71.6085~US-NH~42.8603,-71.6085~42.86030000~-71.60850000~03031~Hillsborough county~~~4.13~2138~3021
+Andover~Andover~~Andover, Merrimack county, NH 03216, USA~43.4344;-71.7735~US-NH~43.4344,-71.7735~43.43440000~-71.77350000~03216~Merrimack county~~~4.29~2487~3000
+Antrim~Antrim~~Antrim, Hillsborough county, NH 03440, USA~43.0368;-71.946~US-NH~43.0368,-71.946~43.03680000~-71.94600000~03440~Hillsborough county~~~4.34~1503~4245
+Ashland~Ashland~~Ashland, Grafton county, NH 03217, USA~43.6932;-71.6315~US-NH~43.6932,-71.6315~43.69320000~-71.63150000~03217~Grafton county~~~4.28~1675~4448
+Ashuelot~Ashuelot~~Ashuelot, Cheshire county, NH 03441, USA~42.7852;-72.4336~US-NH~42.7852,-72.4336~42.78520000~-72.43360000~03441~Cheshire county~~~4.1600003~2623~2337
+Atkinson~Atkinson~~Atkinson, Rockingham county, NH 03811, USA~42.8386;-71.1593~US-NH~42.8386,-71.1593~42.83860000~-71.15930000~03811~Rockingham county~~~4.38~1516~4053
+Auburn~Auburn~~Auburn, Rockingham county, NH 03032, USA~42.9974;-71.3516~US-NH~42.9974,-71.3516~42.99740000~-71.35160000~03032~Rockingham county~~~4.31~2338~2974
+Barnstead~Barnstead~~Barnstead, Belknap county, NH 03218, USA~43.3672;-71.2923~US-NH~43.3672,-71.2923~43.36720000~-71.29230000~03218~Belknap county~~~4.2000003~2456~2889
+Barrington~Barrington~~Barrington, Strafford county, NH 03825, USA~43.2108;-71.0285~US-NH~43.2108,-71.0285~43.21080000~-71.02850000~03825~Strafford county~~~4.2400002~1580~2109
+Bartlett~Bartlett~~Bartlett, Carroll county, NH 03812, USA~44.0887;-71.2802~US-NH~44.0887,-71.2802~44.08870000~-71.28020000~03812~Carroll county~~~4.1400003~2715~2935
+Bath~Bath~~Bath, Grafton county, NH 03740, USA~44.1806;-71.9519~US-NH~44.1806,-71.9519~44.18060000~-71.95190000~03740~Grafton county~~~4.44~1224~3511
+Bedford~Bedford~~Bedford, Hillsborough county, NH 03110, USA~42.9436;-71.5212~US-NH~42.9436,-71.5212~42.94360000~-71.52120000~03110~Hillsborough county~~~4.48~1099~3829
+Belmont~Belmont~~Belmont, Belknap county, NH 03220, USA~43.4721;-71.4741~US-NH~43.4721,-71.4741~43.47210000~-71.47410000~03220~Belknap county~~~4.2200003~2511~4611
+Bennington~Bennington~~Bennington, Hillsborough county, NH 03442, USA~43.0015;-71.9244~US-NH~43.0015,-71.9244~43.00150000~-71.92440000~03442~Hillsborough county~~~4.27~2532~4816
+Berlin~Berlin~~Berlin, Coos county, NH 03570, USA~44.4763;-71.1768~US-NH~44.4763,-71.1768~44.47630000~-71.17680000~03570~Coos county~~~4.4300003~2182~4092
+Bethlehem~Bethlehem~~Bethlehem, Grafton county, NH 03574, USA~44.2901;-71.6625~US-NH~44.2901,-71.6625~44.29010000~-71.66250000~03574~Grafton county~~~4.48~1506~2610
+Bow~Bow~~Bow, Merrimack county, NH 03304, USA~43.1396;-71.5457~US-NH~43.1396,-71.5457~43.13960000~-71.54570000~03304~Merrimack county~~~4.13~1544~4574
+Bradford~Bradford~~Bradford, Merrimack county, NH 03221, USA~43.3058;-71.9887~US-NH~43.3058,-71.9887~43.30580000~-71.98870000~03221~Merrimack county~~~4.4700003~2168~4490
+Bretton Woods~Bretton-Woods~~Bretton Woods, Coos county, NH 03575, USA~44.2584;-71.4404~US-NH~44.2584,-71.4404~44.25840000~-71.44040000~03575~Coos county~~~4.1800003~1916~3844
+Bristol~Bristol~~Bristol, Grafton county, NH 03222, USA~43.6066;-71.7399~US-NH~43.6066,-71.7399~43.60660000~-71.73990000~03222~Grafton county~~~4.29~2105~2226
+Brookline~Brookline~~Brookline, Hillsborough county, NH 03033, USA~42.7391;-71.6778~US-NH~42.7391,-71.6778~42.73910000~-71.67780000~03033~Hillsborough county~~~4.27~2903~4960
+Campton~Campton~~Campton, Grafton county, NH 03223, USA~43.8762;-71.6797~US-NH~43.8762,-71.6797~43.87620000~-71.67970000~03223~Grafton county~~~4.31~1909~2517
+Canaan~Canaan~~Canaan, Grafton county, NH 03741, USA~43.6637;-72.0044~US-NH~43.6637,-72.0044~43.66370000~-72.00440000~03741~Grafton county~~~4.4300003~1595~3884
+Candia~Candia~~Candia, Rockingham county, NH 03034, USA~43.0501;-71.3056~US-NH~43.0501,-71.3056~43.05010000~-71.30560000~03034~Rockingham county~~~4.19~1766~4834
+Canterbury~Canterbury~~Canterbury, Merrimack county, NH 03224, USA~43.3392;-71.5624~US-NH~43.3392,-71.5624~43.33920000~-71.56240000~03224~Merrimack county~~~4.1600003~2826~2907
+Center Barnstead~Center-Barnstead~~Center Barnstead, Belknap county, NH 03225, USA~43.3794;-71.2311~US-NH~43.3794,-71.2311~43.37940000~-71.23110000~03225~Belknap county~~~4.1400003~2624~4394
+Center Conway~Center-Conway~~Center Conway, Carroll county, NH 03813, USA~44.1632;-71.0123~US-NH~44.1632,-71.0123~44.16320000~-71.01230000~03813~Carroll county~~~4.1200004~2792~4529
+Center Harbor~Center-Harbor~~Center Harbor, Belknap county, NH 03226, USA~43.7152;-71.4926~US-NH~43.7152,-71.4926~43.71520000~-71.49260000~03226~Belknap county~~~4.15~2334~4627
+Center Ossipee~Center-Ossipee~~Center Ossipee, Carroll county, NH 03814, USA~43.7498;-71.1052~US-NH~43.7498,-71.1052~43.74980000~-71.10520000~03814~Carroll county~~~4.1200004~2814~3014
+Center Sandwich~Center-Sandwich~~Center Sandwich, Carroll county, NH 03227, USA~43.8344;-71.4771~US-NH~43.8344,-71.4771~43.83440000~-71.47710000~03227~Carroll county~~~4.2200003~1247~2870
+Center Strafford~Center-Strafford~~Center Strafford, Strafford county, NH 03815, USA~43.2583;-71.1151~US-NH~43.2583,-71.1151~43.25830000~-71.11510000~03815~Strafford county~~~4.2400002~2051~3565
+Center Tuftonboro~Center-Tuftonboro~~Center Tuftonboro, Carroll county, NH 03816, USA~43.6566;-71.2517~US-NH~43.6566,-71.2517~43.65660000~-71.25170000~03816~Carroll county~~~4.17~2009~2585
+Charlestown~Charlestown~~Charlestown, Sullivan county, NH 03603, USA~43.2361;-72.4267~US-NH~43.2361,-72.4267~43.23610000~-72.42670000~03603~Sullivan county~~~4.34~1145~2949
+Chester~Chester~~Chester, Rockingham county, NH 03036, USA~42.9666;-71.24~US-NH~42.9666,-71.24~42.96660000~-71.24000000~03036~Rockingham county~~~4.11~1382~4125
+Chesterfield~Chesterfield~~Chesterfield, Cheshire county, NH 03443, USA~42.8898;-72.4629~US-NH~42.8898,-72.4629~42.88980000~-72.46290000~03443~Cheshire county~~~4.3~2322~2131
+Chichester~Chichester~~Chichester, Merrimack county, NH 03258, USA~43.2794;-71.4104~US-NH~43.2794,-71.4104~43.27940000~-71.41040000~03258~Merrimack county~~~4.1600003~2249~3069
+Chocorua~Chocorua~~Chocorua, Carroll county, NH 03817, USA~43.8942;-71.2389~US-NH~43.8942,-71.2389~43.89420000~-71.23890000~03817~Carroll county~~~4.5~1593~4068
+Claremont~Claremont~~Claremont, Sullivan county, NH 03743, USA~43.3688;-72.3458~US-NH~43.3688,-72.3458~43.36880000~-72.34580000~03743~Sullivan county~~~4.11~1623~3444
+Colebrook~Colebrook~~Colebrook, Coos county, NH 03576, USA~44.8924;-71.4985~US-NH~44.8924,-71.4985~44.89240000~-71.49850000~03576~Coos county~~~4.13~1803~4077
+Concord~Concord~~Concord, Merrimack county, NH 03301, USA~43.2388;-71.511~US-NH~43.2388,-71.511~43.23880000~-71.51100000~03301~Merrimack county~~~4.29~2961~2305
+Contoocook~Contoocook~~Contoocook, Merrimack county, NH 03229, USA~43.2032;-71.6731~US-NH~43.2032,-71.6731~43.20320000~-71.67310000~03229~Merrimack county~~~4.1200004~2532~4925
+Conway~Conway~~Conway, Carroll county, NH 03818, USA~43.9253;-71.1346~US-NH~43.9253,-71.1346~43.92530000~-71.13460000~03818~Carroll county~~~4.3~2366~2746
+Cornish Flat~Cornish-Flat~~Cornish Flat, Sullivan county, NH 03746, USA~43.4966;-72.28~US-NH~43.4966,-72.28~43.49660000~-72.28000000~03746~Sullivan county~~~4.42~1929~2921
+Cornish~Cornish~~Cornish, Sullivan county, NH 03745, USA~43.5278;-72.3684~US-NH~43.5278,-72.3684~43.52780000~-72.36840000~03745~Sullivan county~~~4.3~1833~3647
+Danbury~Danbury~~Danbury, Merrimack county, NH 03230, USA~43.5121;-71.8685~US-NH~43.5121,-71.8685~43.51210000~-71.86850000~03230~Merrimack county~~~4.2400002~2772~3141
+Danville~Danville~~Danville, Rockingham county, NH 03819, USA~42.9191;-71.117~US-NH~42.9191,-71.117~42.91910000~-71.11700000~03819~Rockingham county~~~4.2200003~1378~3275
+Deerfield~Deerfield~~Deerfield, Rockingham county, NH 03037, USA~43.1409;-71.2473~US-NH~43.1409,-71.2473~43.14090000~-71.24730000~03037~Rockingham county~~~4.4~1511~4891
+Derry~Derry~~Derry, Rockingham county, NH 03038, USA~42.8882;-71.299~US-NH~42.8882,-71.299~42.88820000~-71.29900000~03038~Rockingham county~~~4.17~1974~2951
+Dover~Dover~~Dover, Strafford county, NH 03820, USA~43.1857;-70.9136~US-NH~43.1857,-70.9136~43.18570000~-70.91360000~03820~Strafford county~~~4.4100003~1685~4894
+Drewsville~Drewsville~~Drewsville, Cheshire county, NH 03604, USA~43.129;-72.392~US-NH~43.129,-72.392~43.12900000~-72.39200000~03604~Cheshire county~~~4.11~1999~3281
+Dublin~Dublin~~Dublin, Cheshire county, NH 03444, USA~42.8969;-72.0425~US-NH~42.8969,-72.0425~42.89690000~-72.04250000~03444~Cheshire county~~~4.31~1338~4366
+Dunbarton~Dunbarton~~Dunbarton, Merrimack county, NH 03046, USA~43.1014;-71.6188~US-NH~43.1014,-71.6188~43.10140000~-71.61880000~03046~Merrimack county~~~4.42~2286~4372
+Durham~Durham~~Durham, Strafford county, NH 03824, USA~43.1304;-70.9767~US-NH~43.1304,-70.9767~43.13040000~-70.97670000~03824~Strafford county~~~4.42~2021~4221
+East Andover~East-Andover~~East Andover, Merrimack county, NH 03231, USA~43.4801;-71.7682~US-NH~43.4801,-71.7682~43.48010000~-71.76820000~03231~Merrimack county~~~4.1400003~2520~4104
+East Candia~East-Candia~~East Candia, Rockingham county, NH 03040, USA~43.0455;-71.2471~US-NH~43.0455,-71.2471~43.04550000~-71.24710000~03040~Rockingham county~~~4.4100003~1670~3756
+East Derry~East-Derry~~East Derry, Rockingham county, NH 03041, USA~42.8896;-71.2971~US-NH~42.8896,-71.2971~42.88960000~-71.29710000~03041~Rockingham county~~~4.11~1586~3033
+East Hampstead~East-Hampstead~~East Hampstead, Rockingham county, NH 03826, USA~42.8903;-71.1379~US-NH~42.8903,-71.1379~42.89030000~-71.13790000~03826~Rockingham county~~~4.4100003~2704~2332
+East Kingston~East-Kingston~~East Kingston, Rockingham county, NH 03827, USA~42.9114;-70.9834~US-NH~42.9114,-70.9834~42.91140000~-70.98340000~03827~Rockingham county~~~4.23~1250~4605
+East Wakefield~East-Wakefield~~East Wakefield, Carroll county, NH 03830, USA~43.5681;-71.0306~US-NH~43.5681,-71.0306~43.56810000~-71.03060000~03830~Carroll county~~~4.21~2152~2949
+Eaton Center~Eaton-Center~~Eaton Center, Carroll county, NH 03832, USA~43.9117;-71.0837~US-NH~43.9117,-71.0837~43.91170000~-71.08370000~03832~Carroll county~~~4.46~1149~4437
+Effingham~Effingham~~Effingham, Carroll county, NH 03882, USA~43.7155;-71.0047~US-NH~43.7155,-71.0047~43.71550000~-71.00470000~03882~Carroll county~~~4.23~1631~3379
+Elkins~Elkins~~Elkins, Merrimack county, NH 03233, USA~43.4203;-71.9387~US-NH~43.4203,-71.9387~43.42030000~-71.93870000~03233~Merrimack county~~~4.3~2194~4436
+Enfield Center~Enfield-Center~~Enfield Center, Grafton county, NH 03749, USA~43.5892;-72.1104~US-NH~43.5892,-72.1104~43.58920000~-72.11040000~03749~Grafton county~~~4.31~2115~4788
+Enfield~Enfield~~Enfield, Grafton county, NH 03748, USA~43.6329;-72.1354~US-NH~43.6329,-72.1354~43.63290000~-72.13540000~03748~Grafton county~~~4.48~2321~2136
+Epping~Epping~~Epping, Rockingham county, NH 03042, USA~43.0479;-71.0767~US-NH~43.0479,-71.0767~43.04790000~-71.07670000~03042~Rockingham county~~~4.4900002~1204~4520
+Epsom~Epsom~~Epsom, Merrimack county, NH 03234, USA~43.2147;-71.3534~US-NH~43.2147,-71.3534~43.21470000~-71.35340000~03234~Merrimack county~~~4.4300003~2992~2533
+Errol~Errol~~Errol, Coos county, NH 03579, USA~44.7753;-71.1758~US-NH~44.7753,-71.1758~44.77530000~-71.17580000~03579~Coos county~~~4.31~1121~3027
+Etna~Etna~~Etna, Grafton county, NH 03750, USA~43.715;-72.2115~US-NH~43.715,-72.2115~43.71500000~-72.21150000~03750~Grafton county~~~4.4500003~2810~3690
+Exeter~Exeter~~Exeter, Rockingham county, NH 03833, USA~42.9775;-70.9923~US-NH~42.9775,-70.9923~42.97750000~-70.99230000~03833~Rockingham county~~~4.25~1835~3230
+Farmington~Farmington~~Farmington, Strafford county, NH 03835, USA~43.3859;-71.0611~US-NH~43.3859,-71.0611~43.38590000~-71.06110000~03835~Strafford county~~~4.34~1485~3009
+Fitzwilliam~Fitzwilliam~~Fitzwilliam, Cheshire county, NH 03447, USA~42.7522;-72.1478~US-NH~42.7522,-72.1478~42.75220000~-72.14780000~03447~Cheshire county~~~4.23~1584~4345
+Francestown~Francestown~~Francestown, Hillsborough county, NH 03043, USA~43.0022;-71.8663~US-NH~43.0022,-71.8663~43.00220000~-71.86630000~03043~Hillsborough county~~~4.35~2290~2559
+Franconia~Franconia~~Franconia, Grafton county, NH 03580, USA~44.2285;-71.7499~US-NH~44.2285,-71.7499~44.22850000~-71.74990000~03580~Grafton county~~~4.29~1719~4170
+Franklin~Franklin~~Franklin, Merrimack county, NH 03235, USA~43.4379;-71.6647~US-NH~43.4379,-71.6647~43.43790000~-71.66470000~03235~Merrimack county~~~4.3900003~1736~2637
+Freedom~Freedom~~Freedom, Carroll county, NH 03836, USA~43.8214;-71.0884~US-NH~43.8214,-71.0884~43.82140000~-71.08840000~03836~Carroll county~~~4.25~2734~4233
+Fremont~Fremont~~Fremont, Rockingham county, NH 03044, USA~42.9732;-71.1123~US-NH~42.9732,-71.1123~42.97320000~-71.11230000~03044~Rockingham county~~~4.13~2300~4808
+Georges Mills~Georges-Mills~~Georges Mills, Sullivan county, NH 03751, USA~43.4324;-72.0699~US-NH~43.4324,-72.0699~43.43240000~-72.06990000~03751~Sullivan county~~~4.2400002~2815~3305
+Gilford~Gilford~~Gilford, Belknap county, NH 03249, USA~43.5466;-71.404~US-NH~43.5466,-71.404~43.54660000~-71.40400000~03249~Belknap county~~~4.4900002~2934~3107
+Gilmanton Iron Works~Gilmanton-Iron-Works~~Gilmanton Iron Works, Belknap county, NH 03837, USA~43.4312;-71.2994~US-NH~43.4312,-71.2994~43.43120000~-71.29940000~03837~Belknap county~~~4.37~2171~2203
+Gilmanton~Gilmanton~~Gilmanton, Belknap county, NH 03237, USA~43.4159;-71.4062~US-NH~43.4159,-71.4062~43.41590000~-71.40620000~03237~Belknap county~~~4.4500003~2965~3241
+Gilsum~Gilsum~~Gilsum, Cheshire county, NH 03448, USA~43.0414;-72.2655~US-NH~43.0414,-72.2655~43.04140000~-72.26550000~03448~Cheshire county~~~4.31~2444~2830
+Glen~Glen~~Glen, Carroll county, NH 03838, USA~44.0997;-71.2062~US-NH~44.0997,-71.2062~44.09970000~-71.20620000~03838~Carroll county~~~4.2200003~1127~2880
+Glencliff~Glencliff~~Glencliff, Grafton county, NH 03238, USA~43.9796;-71.8965~US-NH~43.9796,-71.8965~43.97960000~-71.89650000~03238~Grafton county~~~4.4~1682~3089
+Goffstown~Goffstown~~Goffstown, Hillsborough county, NH 03045, USA~43.0592;-71.5794~US-NH~43.0592,-71.5794~43.05920000~-71.57940000~03045~Hillsborough county~~~4.3~1277~4890
+Gorham~Gorham~~Gorham, Coos county, NH 03581, USA~44.4006;-71.1927~US-NH~44.4006,-71.1927~44.40060000~-71.19270000~03581~Coos county~~~4.35~1049~3712
+Goshen~Goshen~~Goshen, Sullivan county, NH 03752, USA~43.2863;-72.1135~US-NH~43.2863,-72.1135~43.28630000~-72.11350000~03752~Sullivan county~~~4.2000003~1981~2111
+Grafton~Grafton~~Grafton, Grafton county, NH 03240, USA~43.5733;-71.971~US-NH~43.5733,-71.971~43.57330000~-71.97100000~03240~Grafton county~~~4.4900002~2492~3695
+Grantham~Grantham~~Grantham, Sullivan county, NH 03753, USA~43.5278;-72.1372~US-NH~43.5278,-72.1372~43.52780000~-72.13720000~03753~Sullivan county~~~4.13~1292~3637
+Greenfield~Greenfield~~Greenfield, Hillsborough county, NH 03047, USA~42.952;-71.9098~US-NH~42.952,-71.9098~42.95200000~-71.90980000~03047~Hillsborough county~~~4.21~2719~2328
+Greenland~Greenland~~Greenland, Rockingham county, NH 03840, USA~43.0378;-70.8464~US-NH~43.0378,-70.8464~43.03780000~-70.84640000~03840~Rockingham county~~~4.23~1119~2576
+Greenville~Greenville~~Greenville, Hillsborough county, NH 03048, USA~42.7456;-71.7822~US-NH~42.7456,-71.7822~42.74560000~-71.78220000~03048~Hillsborough county~~~4.3~1385~3805
+Groveton~Groveton~~Groveton, Coos county, NH 03582, USA~44.6002;-71.5107~US-NH~44.6002,-71.5107~44.60020000~-71.51070000~03582~Coos county~~~4.19~2232~3268
+Guild~Guild~~Guild, Sullivan county, NH 03754, USA~43.3764;-72.133~US-NH~43.3764,-72.133~43.37640000~-72.13300000~03754~Sullivan county~~~4.1600003~1539~2985
+Hampstead~Hampstead~~Hampstead, Rockingham county, NH 03841, USA~42.8814;-71.1787~US-NH~42.8814,-71.1787~42.88140000~-71.17870000~03841~Rockingham county~~~4.2000003~2403~4373
+Hampton Falls~Hampton-Falls~~Hampton Falls, Rockingham county, NH 03844, USA~42.9245;-70.886~US-NH~42.9245,-70.886~42.92450000~-70.88600000~03844~Rockingham county~~~4.35~1907~3352
+Hampton~Hampton~~Hampton, Rockingham county, NH 03842, USA~42.9326;-70.8239~US-NH~42.9326,-70.8239~42.93260000~-70.82390000~03842~Rockingham county~~~4.4900002~1131~4428
+Hancock~Hancock~~Hancock, Hillsborough county, NH 03449, USA~42.9657;-71.9583~US-NH~42.9657,-71.9583~42.96570000~-71.95830000~03449~Hillsborough county~~~4.48~1622~4609
+Hanover~Hanover~~Hanover, Grafton county, NH 03755, USA~43.7114;-72.2706~US-NH~43.7114,-72.2706~43.71140000~-72.27060000~03755~Grafton county~~~4.4100003~2482~2971
+Harrisville~Harrisville~~Harrisville, Cheshire county, NH 03450, USA~42.9393;-72.089~US-NH~42.9393,-72.089~42.93930000~-72.08900000~03450~Cheshire county~~~4.28~2073~4268
+Haverhill~Haverhill~~Haverhill, Grafton county, NH 03765, USA~44.0426;-72.0618~US-NH~44.0426,-72.0618~44.04260000~-72.06180000~03765~Grafton county~~~4.38~2185~4842
+Hebron~Hebron~~Hebron, Grafton county, NH 03241, USA~43.7126;-71.8755~US-NH~43.7126,-71.8755~43.71260000~-71.87550000~03241~Grafton county~~~4.15~2208~3892
+Henniker~Henniker~~Henniker, Merrimack county, NH 03242, USA~43.1727;-71.8198~US-NH~43.1727,-71.8198~43.17270000~-71.81980000~03242~Merrimack county~~~4.4700003~2972~4112
+Hill~Hill~~Hill, Merrimack county, NH 03243, USA~43.5113;-71.7607~US-NH~43.5113,-71.7607~43.51130000~-71.76070000~03243~Merrimack county~~~4.4~1357~3325
+Hillsborough~Hillsborough~~Hillsborough, Hillsborough county, NH 03244, USA~43.1328;-71.9295~US-NH~43.1328,-71.9295~43.13280000~-71.92950000~03244~Hillsborough county~~~4.4100003~1320~2047
+Hinsdale~Hinsdale~~Hinsdale, Cheshire county, NH 03451, USA~42.7998;-72.5011~US-NH~42.7998,-72.5011~42.79980000~-72.50110000~03451~Cheshire county~~~4.1600003~1345~4496
+Holderness~Holderness~~Holderness, Grafton county, NH 03245, USA~43.6989;-71.5511~US-NH~43.6989,-71.5511~43.69890000~-71.55110000~03245~Grafton county~~~4.37~1076~3854
+Hollis~Hollis~~Hollis, Hillsborough county, NH 03049, USA~42.7505;-71.5777~US-NH~42.7505,-71.5777~42.75050000~-71.57770000~03049~Hillsborough county~~~4.2200003~1219~2941
+Hooksett~Hooksett~~Hooksett, Merrimack county, NH 03106, USA~43.0566;-71.4486~US-NH~43.0566,-71.4486~43.05660000~-71.44860000~03106~Merrimack county~~~4.3900003~2929~3883
+Hudson~Hudson~~Hudson, Hillsborough county, NH 03051, USA~42.7698;-71.4204~US-NH~42.7698,-71.4204~42.76980000~-71.42040000~03051~Hillsborough county~~~4.1200004~2812~2387
+Intervale~Intervale~~Intervale, Carroll county, NH 03845, USA~44.0757;-71.1318~US-NH~44.0757,-71.1318~44.07570000~-71.13180000~03845~Carroll county~~~4.1800003~1198~3611
+Jackson~Jackson~~Jackson, Carroll county, NH 03846, USA~44.1843;-71.1896~US-NH~44.1843,-71.1896~44.18430000~-71.18960000~03846~Carroll county~~~4.36~1439~2015
+Jaffrey~Jaffrey~~Jaffrey, Cheshire county, NH 03452, USA~42.8141;-72.0317~US-NH~42.8141,-72.0317~42.81410000~-72.03170000~03452~Cheshire county~~~4.33~1836~3588
+Jefferson~Jefferson~~Jefferson, Coos county, NH 03583, USA~44.3944;-71.4329~US-NH~44.3944,-71.4329~44.39440000~-71.43290000~03583~Coos county~~~4.25~2569~2554
+Kearsarge~Kearsarge~~Kearsarge, Carroll county, NH 03847, USA~44.0728;-71.133~US-NH~44.0728,-71.133~44.07280000~-71.13300000~03847~Carroll county~~~4.3~1709~4500
+Keene~Keene~~Keene, Cheshire county, NH 03431, USA~42.939;-72.2858~US-NH~42.939,-72.2858~42.93900000~-72.28580000~03431~Cheshire county~~~4.42~1777~4161
+Kingston~Kingston~~Kingston, Rockingham county, NH 03848, USA~42.9198;-71.0644~US-NH~42.9198,-71.0644~42.91980000~-71.06440000~03848~Rockingham county~~~4.13~2608~2906
+Laconia~Laconia~~Laconia, Belknap county, NH 03246, USA~43.551;-71.4276~US-NH~43.551,-71.4276~43.55100000~-71.42760000~03246~Belknap county~~~4.5~1839~3811
+Lancaster~Lancaster~~Lancaster, Coos county, NH 03584, USA~44.4886;-71.5674~US-NH~44.4886,-71.5674~44.48860000~-71.56740000~03584~Coos county~~~4.46~1969~2669
+Lebanon~Lebanon~~Lebanon, Grafton county, NH 03756, USA~43.637;-72.2524~US-NH~43.637,-72.2524~43.63700000~-72.25240000~03756~Grafton county~~~4.2200003~2695~2177
+Lee~Lee~~Lee, Strafford county, NH 03861, USA~43.0982;-71.0421~US-NH~43.0982,-71.0421~43.09820000~-71.04210000~03861~Strafford county~~~4.3~1408~3417
+Lempster~Lempster~~Lempster, Sullivan county, NH 03605, USA~43.2127;-72.1611~US-NH~43.2127,-72.1611~43.21270000~-72.16110000~03605~Sullivan county~~~4.17~2339~4699
+Lincoln~Lincoln~~Lincoln, Grafton county, NH 03251, USA~44.0461;-71.6599~US-NH~44.0461,-71.6599~44.04610000~-71.65990000~03251~Grafton county~~~4.11~2292~3358
+Lisbon~Lisbon~~Lisbon, Grafton county, NH 03585, USA~44.2106;-71.904~US-NH~44.2106,-71.904~44.21060000~-71.90400000~03585~Grafton county~~~4.5~2072~4614
+Litchfield~Litchfield~~Litchfield, Hillsborough county, NH 03052, USA~42.8465;-71.4592~US-NH~42.8465,-71.4592~42.84650000~-71.45920000~03052~Hillsborough county~~~4.34~2362~4722
+Littleton~Littleton~~Littleton, Grafton county, NH 03561, USA~44.3081;-71.7711~US-NH~44.3081,-71.7711~44.30810000~-71.77110000~03561~Grafton county~~~4.33~2153~4187
+Lochmere~Lochmere~~Lochmere, Belknap county, NH 03252, USA~43.4713;-71.5385~US-NH~43.4713,-71.5385~43.47130000~-71.53850000~03252~Belknap county~~~4.4500003~2061~3037
+Londonderry~Londonderry~~Londonderry, Rockingham county, NH 03053, USA~42.8671;-71.3776~US-NH~42.8671,-71.3776~42.86710000~-71.37760000~03053~Rockingham county~~~4.4~1745~4911
+Loudon~Loudon~~Loudon, Merrimack county, NH 03307, USA~43.2865;-71.4674~US-NH~43.2865,-71.4674~43.28650000~-71.46740000~03307~Merrimack county~~~4.38~2113~4271
+Lyme Center~Lyme-Center~~Lyme Center, Grafton county, NH 03769, USA~43.7947;-72.0656~US-NH~43.7947,-72.0656~43.79470000~-72.06560000~03769~Grafton county~~~4.2400002~2813~4139
+Lyme~Lyme~~Lyme, Grafton county, NH 03768, USA~43.7731;-72.1643~US-NH~43.7731,-72.1643~43.77310000~-72.16430000~03768~Grafton county~~~4.33~2310~3971
+Lyndeborough~Lyndeborough~~Lyndeborough, Hillsborough county, NH 03082, USA~42.9032;-71.7787~US-NH~42.9032,-71.7787~42.90320000~-71.77870000~03082~Hillsborough county~~~4.46~2454~2839
+Madbury~Madbury~~Madbury, Strafford county, NH 03823, USA~43.191;-70.8922~US-NH~43.191,-70.8922~43.19100000~-70.89220000~03823~Strafford county~~~4.4100003~2980~3936
+Madison~Madison~~Madison, Carroll county, NH 03849, USA~43.8904;-71.117~US-NH~43.8904,-71.117~43.89040000~-71.11700000~03849~Carroll county~~~4.42~2453~2721
+Manchester~Manchester~~Manchester, Hillsborough county, NH 03101, USA~42.9883;-71.4653~US-NH~42.9883,-71.4653~42.98830000~-71.46530000~03101~Hillsborough county~~~4.13~2240~3285
+Marlborough~Marlborough~~Marlborough, Cheshire county, NH 03455, USA~42.896;-72.1894~US-NH~42.896,-72.1894~42.89600000~-72.18940000~03455~Cheshire county~~~4.4500003~1678~3319
+Marlow~Marlow~~Marlow, Cheshire county, NH 03456, USA~43.1303;-72.2158~US-NH~43.1303,-72.2158~43.13030000~-72.21580000~03456~Cheshire county~~~4.2000003~1070~4631
+Melvin Village~Melvin-Village~~Melvin Village, Carroll county, NH 03850, USA~43.6919;-71.2961~US-NH~43.6919,-71.2961~43.69190000~-71.29610000~03850~Carroll county~~~4.32~1566~3619
+Meredith~Meredith~~Meredith, Belknap county, NH 03253, USA~43.6004;-71.4856~US-NH~43.6004,-71.4856~43.60040000~-71.48560000~03253~Belknap county~~~4.44~1086~3952
+Meriden~Meriden~~Meriden, Sullivan county, NH 03770, USA~43.517;-72.2789~US-NH~43.517,-72.2789~43.51700000~-72.27890000~03770~Sullivan county~~~4.11~1699~4006
+Merrimack~Merrimack~~Merrimack, Hillsborough county, NH 03054, USA~42.863;-71.517~US-NH~42.863,-71.517~42.86300000~-71.51700000~03054~Hillsborough county~~~4.5~2788~2372
+Milan~Milan~~Milan, Coos county, NH 03588, USA~44.6399;-71.1485~US-NH~44.6399,-71.1485~44.63990000~-71.14850000~03588~Coos county~~~4.38~2632~4904
+Milford~Milford~~Milford, Hillsborough county, NH 03055, USA~42.8299;-71.6595~US-NH~42.8299,-71.6595~42.82990000~-71.65950000~03055~Hillsborough county~~~4.26~1974~2897
+Milton Mills~Milton-Mills~~Milton Mills, Strafford county, NH 03852, USA~43.5046;-70.9781~US-NH~43.5046,-70.9781~43.50460000~-70.97810000~03852~Strafford county~~~4.34~1181~4059
+Milton~Milton~~Milton, Strafford county, NH 03851, USA~43.4423;-71.0157~US-NH~43.4423,-71.0157~43.44230000~-71.01570000~03851~Strafford county~~~4.48~1286~2046
+Mirror Lake~Mirror-Lake~~Mirror Lake, Carroll county, NH 03853, USA~43.6215;-71.2795~US-NH~43.6215,-71.2795~43.62150000~-71.27950000~03853~Carroll county~~~4.35~2488~3613
+Monroe~Monroe~~Monroe, Grafton county, NH 03771, USA~44.2712;-72.0255~US-NH~44.2712,-72.0255~44.27120000~-72.02550000~03771~Grafton county~~~4.3~2523~2744
+Mont Vernon~Mont-Vernon~~Mont Vernon, Hillsborough county, NH 03057, USA~42.8981;-71.6779~US-NH~42.8981,-71.6779~42.89810000~-71.67790000~03057~Hillsborough county~~~4.48~1427~4507
+Moultonborough~Moultonborough~~Moultonborough, Carroll county, NH 03254, USA~43.6714;-71.3785~US-NH~43.6714,-71.3785~43.67140000~-71.37850000~03254~Carroll county~~~4.4300003~2116~4279
+Mount Washington~Mount-Washington~~Mount Washington, Coos county, NH 03589, USA~44.3479;-71.5518~US-NH~44.3479,-71.5518~44.34790000~-71.55180000~03589~Coos county~~~4.35~2818~4588
+Nashua~Nashua~~Nashua, Hillsborough county, NH 03060, USA~42.7591;-71.4676~US-NH~42.7591,-71.4676~42.75910000~-71.46760000~03060~Hillsborough county~~~4.4700003~1359~4023
+Nelson~Nelson~~Nelson, Cheshire county, NH 03457, USA~43.0029;-72.145~US-NH~43.0029,-72.145~43.00290000~-72.14500000~03457~Cheshire county~~~4.2200003~1557~3878
+New Boston~New-Boston~~New Boston, Hillsborough county, NH 03070, USA~42.9783;-71.6967~US-NH~42.9783,-71.6967~42.97830000~-71.69670000~03070~Hillsborough county~~~4.4900002~1067~3907
+New Castle~New-Castle~~New Castle, Rockingham county, NH 03854, USA~43.0688;-70.7199~US-NH~43.0688,-70.7199~43.06880000~-70.71990000~03854~Rockingham county~~~4.17~2088~3016
+New Durham~New-Durham~~New Durham, Strafford county, NH 03855, USA~43.4405;-71.15~US-NH~43.4405,-71.15~43.44050000~-71.15000000~03855~Strafford county~~~4.13~2718~4284
+New Hampton~New-Hampton~~New Hampton, Belknap county, NH 03256, USA~43.6151;-71.4675~US-NH~43.6151,-71.4675~43.61510000~-71.46750000~03256~Belknap county~~~4.21~1872~2203
+New Ipswich~New-Ipswich~~New Ipswich, Hillsborough county, NH 03071, USA~42.7763;-71.885~US-NH~42.7763,-71.885~42.77630000~-71.88500000~03071~Hillsborough county~~~4.31~2976~4029
+New London~New-London~~New London, Merrimack county, NH 03257, USA~43.419;-71.9934~US-NH~43.419,-71.9934~43.41900000~-71.99340000~03257~Merrimack county~~~4.32~2762~2861
+Newbury~Newbury~~Newbury, Merrimack county, NH 03255, USA~43.3201;-72.0278~US-NH~43.3201,-72.0278~43.32010000~-72.02780000~03255~Merrimack county~~~4.13~2509~4680
+Newfields~Newfields~~Newfields, Rockingham county, NH 03856, USA~43.0379;-70.9373~US-NH~43.0379,-70.9373~43.03790000~-70.93730000~03856~Rockingham county~~~4.1800003~2024~2659
+Newington~Newington~~Newington, Strafford county, NH 03805, USA~43.2391;-70.8242~US-NH~43.2391,-70.8242~43.23910000~-70.82420000~03805~Strafford county~~~4.2200003~2913~2357
+Newmarket~Newmarket~~Newmarket, Rockingham county, NH 03857, USA~43.0774;-70.9403~US-NH~43.0774,-70.9403~43.07740000~-70.94030000~03857~Rockingham county~~~4.4~2595~2283
+Newport~Newport~~Newport, Sullivan county, NH 03773, USA~43.3696;-72.1586~US-NH~43.3696,-72.1586~43.36960000~-72.15860000~03773~Sullivan county~~~4.48~2857~4746
+Newton Junction~Newton-Junction~~Newton Junction, Rockingham county, NH 03859, USA~42.8672;-71.066~US-NH~42.8672,-71.066~42.86720000~-71.06600000~03859~Rockingham county~~~4.4300003~1475~3859
+Newton~Newton~~Newton, Rockingham county, NH 03858, USA~42.8712;-71.0458~US-NH~42.8712,-71.0458~42.87120000~-71.04580000~03858~Rockingham county~~~4.17~2165~2779
+North Conway~North-Conway~~North Conway, Carroll county, NH 03860, USA~44.0413;-71.1314~US-NH~44.0413,-71.1314~44.04130000~-71.13140000~03860~Carroll county~~~4.29~1813~3969
+North Hampton~North-Hampton~~North Hampton, Rockingham county, NH 03862, USA~42.9764;-70.8209~US-NH~42.9764,-70.8209~42.97640000~-70.82090000~03862~Rockingham county~~~4.48~2372~2612
+North Haverhill~North-Haverhill~~North Haverhill, Grafton county, NH 03774, USA~44.0843;-72.0259~US-NH~44.0843,-72.0259~44.08430000~-72.02590000~03774~Grafton county~~~4.34~1888~4146
+North Salem~North-Salem~~North Salem, Rockingham county, NH 03073, USA~42.835;-71.2242~US-NH~42.835,-71.2242~42.83500000~-71.22420000~03073~Rockingham county~~~4.4700003~1648~4185
+North Sandwich~North-Sandwich~~North Sandwich, Carroll county, NH 03259, USA~43.8626;-71.3798~US-NH~43.8626,-71.3798~43.86260000~-71.37980000~03259~Carroll county~~~4.26~1161~3158
+North Stratford~North-Stratford~~North Stratford, Coos county, NH 03590, USA~44.7192;-71.4658~US-NH~44.7192,-71.4658~44.71920000~-71.46580000~03590~Coos county~~~4.25~1201~2496
+North Sutton~North-Sutton~~North Sutton, Merrimack county, NH 03260, USA~43.3658;-71.9392~US-NH~43.3658,-71.9392~43.36580000~-71.93920000~03260~Merrimack county~~~4.3900003~2875~4394
+North Walpole~North-Walpole~~North Walpole, Cheshire county, NH 03609, USA~43.1414;-72.4451~US-NH~43.1414,-72.4451~43.14140000~-72.44510000~03609~Cheshire county~~~4.4~2209~3072
+North Woodstock~North-Woodstock~~North Woodstock, Grafton county, NH 03262, USA~44.0332;-71.6872~US-NH~44.0332,-71.6872~44.03320000~-71.68720000~03262~Grafton county~~~4.36~2766~3515
+Northwood~Northwood~~Northwood, Rockingham county, NH 03261, USA~43.1942;-71.1887~US-NH~43.1942,-71.1887~43.19420000~-71.18870000~03261~Rockingham county~~~4.4~2825~2752
+Nottingham~Nottingham~~Nottingham, Rockingham county, NH 03290, USA~43.0927;-71.1188~US-NH~43.0927,-71.1188~43.09270000~-71.11880000~03290~Rockingham county~~~4.1800003~2451~2555
+Orford~Orford~~Orford, Grafton county, NH 03777, USA~43.8956;-72.0668~US-NH~43.8956,-72.0668~43.89560000~-72.06680000~03777~Grafton county~~~4.3900003~2095~2257
+Ossipee~Ossipee~~Ossipee, Carroll county, NH 03864, USA~43.6927;-71.1137~US-NH~43.6927,-71.1137~43.69270000~-71.11370000~03864~Carroll county~~~4.34~2133~3997
+Pelham~Pelham~~Pelham, Hillsborough county, NH 03076, USA~42.7335;-71.3241~US-NH~42.7335,-71.3241~42.73350000~-71.32410000~03076~Hillsborough county~~~4.5~2894~3600
+Peterborough~Peterborough~~Peterborough, Hillsborough county, NH 03458, USA~42.8867;-71.9471~US-NH~42.8867,-71.9471~42.88670000~-71.94710000~03458~Hillsborough county~~~4.31~2035~4107
+Piermont~Piermont~~Piermont, Grafton county, NH 03779, USA~43.976;-72.0932~US-NH~43.976,-72.0932~43.97600000~-72.09320000~03779~Grafton county~~~4.11~1253~2462
+Pike~Pike~~Pike, Grafton county, NH 03780, USA~43.9999;-72.0002~US-NH~43.9999,-72.0002~43.99990000~-72.00020000~03780~Grafton county~~~4.27~2590~2343
+Pittsburg~Pittsburg~~Pittsburg, Coos county, NH 03592, USA~45.1133;-71.2545~US-NH~45.1133,-71.2545~45.11330000~-71.25450000~03592~Coos county~~~4.28~1044~3714
+Pittsfield~Pittsfield~~Pittsfield, Merrimack county, NH 03263, USA~43.2971;-71.3318~US-NH~43.2971,-71.3318~43.29710000~-71.33180000~03263~Merrimack county~~~4.4300003~1889~3842
+Plainfield~Plainfield~~Plainfield, Sullivan county, NH 03781, USA~43.3812;-72.1772~US-NH~43.3812,-72.1772~43.38120000~-72.17720000~03781~Sullivan county~~~4.4300003~2408~2428
+Plaistow~Plaistow~~Plaistow, Rockingham county, NH 03865, USA~42.839;-71.0919~US-NH~42.839,-71.0919~42.83900000~-71.09190000~03865~Rockingham county~~~4.1600003~2009~4509
+Plymouth~Plymouth~~Plymouth, Grafton county, NH 03264, USA~43.7534;-71.6938~US-NH~43.7534,-71.6938~43.75340000~-71.69380000~03264~Grafton county~~~4.5~2935~3453
+Portsmouth~Portsmouth~~Portsmouth, Rockingham county, NH 03801, USA~43.0672;-70.7841~US-NH~43.0672,-70.7841~43.06720000~-70.78410000~03801~Rockingham county~~~4.27~2415~4649
+Randolph~Randolph~~Randolph, Coos county, NH 03593, USA~44.4753;-71.1777~US-NH~44.4753,-71.1777~44.47530000~-71.17770000~03593~Coos county~~~4.29~2454~3680
+Raymond~Raymond~~Raymond, Rockingham county, NH 03077, USA~43.0348;-71.1928~US-NH~43.0348,-71.1928~43.03480000~-71.19280000~03077~Rockingham county~~~4.2400002~2052~3339
+Rindge~Rindge~~Rindge, Cheshire county, NH 03461, USA~42.7454;-72.0191~US-NH~42.7454,-72.0191~42.74540000~-72.01910000~03461~Cheshire county~~~4.15~1967~4449
+Rochester~Rochester~~Rochester, Strafford county, NH 03839, USA~43.2656;-71.0104~US-NH~43.2656,-71.0104~43.26560000~-71.01040000~03839~Strafford county~~~4.44~1363~3546
+Rollinsford~Rollinsford~~Rollinsford, Strafford county, NH 03869, USA~43.2318;-70.8297~US-NH~43.2318,-70.8297~43.23180000~-70.82970000~03869~Strafford county~~~4.34~1095~2964
+Rumney~Rumney~~Rumney, Grafton county, NH 03266, USA~43.7875;-71.8551~US-NH~43.7875,-71.8551~43.78750000~-71.85510000~03266~Grafton county~~~4.17~2213~4997
+Rye Beach~Rye-Beach~~Rye Beach, Rockingham county, NH 03871, USA~42.992;-70.761~US-NH~42.992,-70.761~42.99200000~-70.76100000~03871~Rockingham county~~~4.4900002~1655~2651
+Rye~Rye~~Rye, Rockingham county, NH 03870, USA~43.007;-70.7673~US-NH~43.007,-70.7673~43.00700000~-70.76730000~03870~Rockingham county~~~4.3~1709~4714
+Salem~Salem~~Salem, Rockingham county, NH 03079, USA~42.7904;-71.2198~US-NH~42.7904,-71.2198~42.79040000~-71.21980000~03079~Rockingham county~~~4.34~2056~3956
+Salisbury~Salisbury~~Salisbury, Merrimack county, NH 03268, USA~43.3353;-71.4591~US-NH~43.3353,-71.4591~43.33530000~-71.45910000~03268~Merrimack county~~~4.11~1228~4224
+Sanbornton~Sanbornton~~Sanbornton, Belknap county, NH 03269, USA~43.5444;-71.6231~US-NH~43.5444,-71.6231~43.54440000~-71.62310000~03269~Belknap county~~~4.1400003~2165~3976
+Sanbornville~Sanbornville~~Sanbornville, Carroll county, NH 03872, USA~43.5517;-71.0158~US-NH~43.5517,-71.0158~43.55170000~-71.01580000~03872~Carroll county~~~4.26~2077~3842
+Sandown~Sandown~~Sandown, Rockingham county, NH 03873, USA~42.9297;-71.1862~US-NH~42.9297,-71.1862~42.92970000~-71.18620000~03873~Rockingham county~~~4.3~1179~4305
+Seabrook~Seabrook~~Seabrook, Rockingham county, NH 03874, USA~42.8911;-70.8579~US-NH~42.8911,-70.8579~42.89110000~-70.85790000~03874~Rockingham county~~~4.17~2704~2886
+Silver Lake~Silver-Lake~~Silver Lake, Carroll county, NH 03875, USA~43.8496;-71.1762~US-NH~43.8496,-71.1762~43.84960000~-71.17620000~03875~Carroll county~~~4.2200003~1675~3473
+Somersworth~Somersworth~~Somersworth, Strafford county, NH 03878, USA~43.2539;-70.8734~US-NH~43.2539,-70.8734~43.25390000~-70.87340000~03878~Strafford county~~~4.27~1319~4357
+South Acworth~South-Acworth~~South Acworth, Sullivan county, NH 03607, USA~43.1762;-72.3323~US-NH~43.1762,-72.3323~43.17620000~-72.33230000~03607~Sullivan county~~~4.2200003~1459~3105
+South Newbury~South-Newbury~~South Newbury, Merrimack county, NH 03272, USA~43.2964;-71.9956~US-NH~43.2964,-71.9956~43.29640000~-71.99560000~03272~Merrimack county~~~4.4~2667~4112
+South Sutton~South-Sutton~~South Sutton, Merrimack county, NH 03273, USA~43.3213;-71.9364~US-NH~43.3213,-71.9364~43.32130000~-71.93640000~03273~Merrimack county~~~4.3~2004~2259
+South Tamworth~South-Tamworth~~South Tamworth, Carroll county, NH 03883, USA~43.8396;-71.314~US-NH~43.8396,-71.314~43.83960000~-71.31400000~03883~Carroll county~~~4.1800003~1836~3067
+Spofford~Spofford~~Spofford, Cheshire county, NH 03462, USA~42.9055;-72.4032~US-NH~42.9055,-72.4032~42.90550000~-72.40320000~03462~Cheshire county~~~4.25~1139~2578
+Springfield~Springfield~~Springfield, Sullivan county, NH 03284, USA~43.4864;-72.0564~US-NH~43.4864,-72.0564~43.48640000~-72.05640000~03284~Sullivan county~~~4.42~2043~2100
+Stinson Lake~Stinson-Lake~~Stinson Lake, Grafton county, NH 03274, USA~43.8591;-71.8023~US-NH~43.8591,-71.8023~43.85910000~-71.80230000~03274~Grafton county~~~4.31~2770~2585
+Stoddard~Stoddard~~Stoddard, Cheshire county, NH 03464, USA~43.092;-72.0869~US-NH~43.092,-72.0869~43.09200000~-72.08690000~03464~Cheshire county~~~4.17~2558~4740
+Strafford~Strafford~~Strafford, Strafford county, NH 03884, USA~43.2328;-71.1317~US-NH~43.2328,-71.1317~43.23280000~-71.13170000~03884~Strafford county~~~4.11~2335~3265
+Stratham~Stratham~~Stratham, Rockingham county, NH 03885, USA~43.0173;-70.8971~US-NH~43.0173,-70.8971~43.01730000~-70.89710000~03885~Rockingham county~~~4.1200004~1967~2750
+Sugar Hill~Sugar-Hill~~Sugar Hill, Grafton county, NH 03586, USA~44.2214;-71.8191~US-NH~44.2214,-71.8191~44.22140000~-71.81910000~03586~Grafton county~~~4.33~1868~4544
+Sullivan~Sullivan~~Sullivan, Cheshire county, NH 03445, USA~42.9959;-72.1915~US-NH~42.9959,-72.1915~42.99590000~-72.19150000~03445~Cheshire county~~~4.42~2199~3593
+Sunapee~Sunapee~~Sunapee, Sullivan county, NH 03782, USA~43.3896;-72.0914~US-NH~43.3896,-72.0914~43.38960000~-72.09140000~03782~Sullivan county~~~4.15~2515~3203
+Suncook~Suncook~~Suncook, Merrimack county, NH 03275, USA~43.1732;-71.4037~US-NH~43.1732,-71.4037~43.17320000~-71.40370000~03275~Merrimack county~~~4.5~2436~4924
+Swanzey~Swanzey~~Swanzey, Cheshire county, NH 03446, USA~42.8541;-72.2608~US-NH~42.8541,-72.2608~42.85410000~-72.26080000~03446~Cheshire county~~~4.4700003~2364~2917
+Tamworth~Tamworth~~Tamworth, Carroll county, NH 03886, USA~43.8736;-71.2858~US-NH~43.8736,-71.2858~43.87360000~-71.28580000~03886~Carroll county~~~4.48~2815~3043
+Temple~Temple~~Temple, Hillsborough county, NH 03084, USA~42.8235;-71.8454~US-NH~42.8235,-71.8454~42.82350000~-71.84540000~03084~Hillsborough county~~~4.5~1544~4103
+Thornton~Thornton~~Thornton, Grafton county, NH 03285, USA~43.8772;-71.6763~US-NH~43.8772,-71.6763~43.87720000~-71.67630000~03285~Grafton county~~~4.44~1954~4554
+Tilton~Tilton~~Tilton, Belknap county, NH 03276, USA~43.4564;-71.57~US-NH~43.4564,-71.57~43.45640000~-71.57000000~03276~Belknap county~~~4.48~2846~3238
+Troy~Troy~~Troy, Cheshire county, NH 03465, USA~42.8267;-72.181~US-NH~42.8267,-72.181~42.82670000~-72.18100000~03465~Cheshire county~~~4.28~1488~3974
+Twin Mountain~Twin-Mountain~~Twin Mountain, Coos county, NH 03595, USA~44.2711;-71.5415~US-NH~44.2711,-71.5415~44.27110000~-71.54150000~03595~Coos county~~~4.33~2717~4846
+Union~Union~~Union, Carroll county, NH 03887, USA~43.4621;-71.0751~US-NH~43.4621,-71.0751~43.46210000~-71.07510000~03887~Carroll county~~~4.42~1295~4844
+Walpole~Walpole~~Walpole, Cheshire county, NH 03608, USA~43.0702;-72.4072~US-NH~43.0702,-72.4072~43.07020000~-72.40720000~03608~Cheshire county~~~4.15~2796~4018
+Warner~Warner~~Warner, Merrimack county, NH 03278, USA~43.279;-71.804~US-NH~43.279,-71.804~43.27900000~-71.80400000~03278~Merrimack county~~~4.35~2352~2904
+Warren~Warren~~Warren, Grafton county, NH 03279, USA~43.9648;-71.8827~US-NH~43.9648,-71.8827~43.96480000~-71.88270000~03279~Grafton county~~~4.23~2443~3768
+Washington~Washington~~Washington, Sullivan county, NH 03280, USA~43.168;-72.0733~US-NH~43.168,-72.0733~43.16800000~-72.07330000~03280~Sullivan county~~~4.5~1271~4795
+Waterville Valley~Waterville-Valley~~Waterville Valley, Grafton county, NH 03215, USA~43.9519;-71.5003~US-NH~43.9519,-71.5003~43.95190000~-71.50030000~03215~Grafton county~~~4.25~2862~4631
+Weare~Weare~~Weare, Hillsborough county, NH 03281, USA~43.0851;-71.7248~US-NH~43.0851,-71.7248~43.08510000~-71.72480000~03281~Hillsborough county~~~4.19~1859~3683
+Wentworth~Wentworth~~Wentworth, Grafton county, NH 03282, USA~43.8629;-71.9319~US-NH~43.8629,-71.9319~43.86290000~-71.93190000~03282~Grafton county~~~4.3~2649~4173
+West Chesterfield~West-Chesterfield~~West Chesterfield, Cheshire county, NH 03466, USA~42.8711;-72.5166~US-NH~42.8711,-72.5166~42.87110000~-72.51660000~03466~Cheshire county~~~4.42~2861~4687
+West Lebanon~West-Lebanon~~West Lebanon, Grafton county, NH 03784, USA~43.6524;-72.3042~US-NH~43.6524,-72.3042~43.65240000~-72.30420000~03784~Grafton county~~~4.25~2791~2256
+West Nottingham~West-Nottingham~~West Nottingham, Rockingham county, NH 03291, USA~43.1731;-71.1367~US-NH~43.1731,-71.1367~43.17310000~-71.13670000~03291~Rockingham county~~~4.13~1458~2474
+West Ossipee~West-Ossipee~~West Ossipee, Carroll county, NH 03890, USA~43.8385;-71.2016~US-NH~43.8385,-71.2016~43.83850000~-71.20160000~03890~Carroll county~~~4.1600003~2343~2317
+West Peterborough~West-Peterborough~~West Peterborough, Hillsborough county, NH 03468, USA~42.8717;-71.9697~US-NH~42.8717,-71.9697~42.87170000~-71.96970000~03468~Hillsborough county~~~4.2400002~1258~4923
+West Stewartstown~West-Stewartstown~~West Stewartstown, Coos county, NH 03597, USA~44.9928;-71.5345~US-NH~44.9928,-71.5345~44.99280000~-71.53450000~03597~Coos county~~~4.17~1234~3832
+West Swanzey~West-Swanzey~~West Swanzey, Cheshire county, NH 03469, USA~42.8642;-72.3281~US-NH~42.8642,-72.3281~42.86420000~-72.32810000~03469~Cheshire county~~~4.1200004~1764~3071
+Westmoreland~Westmoreland~~Westmoreland, Cheshire county, NH 03467, USA~42.9568;-72.4228~US-NH~42.9568,-72.4228~42.95680000~-72.42280000~03467~Cheshire county~~~4.26~1583~3532
+Whitefield~Whitefield~~Whitefield, Coos county, NH 03598, USA~44.3762;-71.6186~US-NH~44.3762,-71.6186~44.37620000~-71.61860000~03598~Coos county~~~4.1400003~1912~4999
+Wilmot~Wilmot~~Wilmot, Merrimack county, NH 03287, USA~43.444;-71.9123~US-NH~43.444,-71.9123~43.44400000~-71.91230000~03287~Merrimack county~~~4.15~1491~2974
+Wilton~Wilton~~Wilton, Hillsborough county, NH 03086, USA~42.8379;-71.7437~US-NH~42.8379,-71.7437~42.83790000~-71.74370000~03086~Hillsborough county~~~4.28~2383~4979
+Winchester~Winchester~~Winchester, Cheshire county, NH 03470, USA~42.7856;-72.3348~US-NH~42.7856,-72.3348~42.78560000~-72.33480000~03470~Cheshire county~~~4.21~2734~2845
+Windham~Windham~~Windham, Rockingham county, NH 03087, USA~42.8014;-71.3036~US-NH~42.8014,-71.3036~42.80140000~-71.30360000~03087~Rockingham county~~~4.27~1426~2095
+Winnisquam~Winnisquam~~Winnisquam, Belknap county, NH 03289, USA~43.488;-71.5272~US-NH~43.488,-71.5272~43.48800000~-71.52720000~03289~Belknap county~~~4.33~1954~4310
+Wolfeboro Falls~Wolfeboro-Falls~~Wolfeboro Falls, Carroll county, NH 03896, USA~43.5879;-71.2076~US-NH~43.5879,-71.2076~43.58790000~-71.20760000~03896~Carroll county~~~4.31~2148~3623
+Wolfeboro~Wolfeboro~~Wolfeboro, Carroll county, NH 03894, USA~43.5872;-71.22~US-NH~43.5872,-71.22~43.58720000~-71.22000000~03894~Carroll county~~~4.34~1896~4218
+Wonalancet~Wonalancet~~Wonalancet, Carroll county, NH 03897, USA~43.9066;-71.3475~US-NH~43.9066,-71.3475~43.90660000~-71.34750000~03897~Carroll county~~~4.44~2259~4769
+Woodstock~Woodstock~~Woodstock, Grafton county, NH 03293, USA~43.9788;-71.6868~US-NH~43.9788,-71.6868~43.97880000~-71.68680000~03293~Grafton county~~~4.3900003~1946~3905
+Woodsville~Woodsville~~Woodsville, Grafton county, NH 03785, USA~44.1494;-72.0346~US-NH~44.1494,-72.0346~44.14940000~-72.03460000~03785~Grafton county~~~4.4900002~2204~3174

@@ -53,34 +53,41 @@ public class CategoryItemDao extends DaoCommon{
 		int[] result = null;
 		try {
 			prprStatement = connection.prepareStatement(""
-					+ " INSERT INTO item (category_id, item_name, item_name_latin, geo_placename, geo_position, geo_category, ICBM, lat, lng, zip_code, country, tmpl_text, generated_text, upd_flg, post_dt, upd_dt) "
-					+ " SELECT ct.category_id, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now(), now() FROM category ct WHERE ct.category_name = ? ");
+					+ " INSERT INTO item (category_id, item_name, item_name_latin, geo_placename, geo_position, geo_category, ICBM, lat, lng, zip_code, country, tmpl_text, generated_text, ratingCount, reviewCount, voteCount, upd_flg, post_dt, upd_dt) "
+					+ " SELECT ct.category_id,  ?, ?, ?, ?, ?, ?,  ?, ?,  ?, ?,  ?, ?,  ?, ?, ?,  ?,  now(), now() FROM category ct WHERE ct.category_name = ? ");
 
 			for (Category category : categoriesList.keySet()) {
 				for(Item item : categoriesList.get(category)){
-					prprStatement.setString(1, item.getKey());
-					prprStatement.setString(2, Category.makeUrlKey(item.getKey()));
-					prprStatement.setNull(3, Types.VARCHAR);
-					prprStatement.setNull(4, Types.VARCHAR);
-					prprStatement.setNull(5, Types.VARCHAR);
-					prprStatement.setNull(6, Types.VARCHAR);
+					prprStatement.setString(1, item.getItem_name());
+					prprStatement.setString(2, item.getItem_name_latin());
+					prprStatement.setString(3, item.getGeo_placename());
+					prprStatement.setString(4, item.getGeo_position());
+					prprStatement.setString(5, item.getGeo_category());
+					prprStatement.setString(6, item.getICBM());
 
 
-					prprStatement.setNull(7, Types.DECIMAL);
-					prprStatement.setNull(8, Types.DECIMAL);
+					prprStatement.setBigDecimal(7, item.getLat());
+					prprStatement.setBigDecimal(8, item.getLng());
 					
-					prprStatement.setNull(9, Types.VARCHAR);
-					prprStatement.setNull(10, Types.VARCHAR);
+					prprStatement.setString(9, item.getZip_code());
+					prprStatement.setString(10, item.getCountry());
 
-					prprStatement.setString(11, "");
-					prprStatement.setString(12, "");
+					prprStatement.setString(11, item.getTmpl_text());
+					prprStatement.setString(12, item.getGenerated_text());
 					
-					prprStatement.setBoolean(13, false);
-					prprStatement.setString(14, category.getCategoryName());
+					prprStatement.setDouble(13, item.getRatingCount());
+					prprStatement.setInt(14,item.getReviewCount());
+					prprStatement.setInt(15, item.getVoteCount());
+					
+					prprStatement.setBoolean(16, false);
+					
+					prprStatement.setString(17, category.getCategoryName());
 					prprStatement.addBatch();
 				}
+				
+				result = prprStatement.executeBatch();
 			}
-
+			
 			result = prprStatement.executeBatch();
 
 		} catch (SQLException e) {

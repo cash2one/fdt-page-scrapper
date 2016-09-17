@@ -27,8 +27,8 @@ public class ArticleTemplateDao extends DaoCommon {
 		int pcId = -1;
 		try {
 			prStmt = connection.prepareStatement(
-					" INSERT INTO article_tmpl ( titleOrig, title, url, text, description, keywords, ratingCount, reviewCount, upd_dt) " +
-					" SELECT ?, ?, ?, ?, ?, ?, ?, ?, now()" + 
+					" INSERT INTO article_tmpl ( titleOrig, title, url, text, description, keywords, ratingCount, reviewCount, voteCount, upd_dt) " +
+					" SELECT ?, ?, ?, ?, ?, ?, ?, ?, ?, now()" + 
 					" ON DUPLICATE KEY UPDATE text = ?, upd_dt = now()",
 					Statement.RETURN_GENERATED_KEYS);
 
@@ -39,8 +39,9 @@ public class ArticleTemplateDao extends DaoCommon {
 			prStmt.setString(5, description);
 			prStmt.setString(6, keywords);
 			prStmt.setFloat(7, ((float)4.11 + ((float)rnd.nextInt(40)/100)));
-			prStmt.setInt(8, 5 + rnd.nextInt(10));
-			prStmt.setString(9, tmpl);
+			prStmt.setInt(8,1);
+			prStmt.setInt(9, 5 + rnd.nextInt(10));
+			prStmt.setString(10, tmpl);
 
 			prStmt.executeUpdate();
 

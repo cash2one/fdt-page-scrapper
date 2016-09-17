@@ -121,17 +121,20 @@ public class Category {
 
 		Category cat = new Category();
 
-		cat.catName = String.valueOf(catFolder.getName());
+		cat.catName = catFolder.getName().split("~",2)[0];
 		
 		if(catUrls.containsKey(cat.catName)){
 			cat.catLatinName = makeUrlKey(catUrls.get(cat.catName));
 		}else{
-			cat.catLatinName = makeUrlKey(catFolder.getName());
+			cat.catLatinName = makeUrlKey(cat.catName);
 		}
 		//TODO Fill title
 		cat.title = Utils.fillTemplate(titleTmpl, cat.catName, preTitles, DoorgenGeneratorRunner.PRETITLES_REGEXP);
 		//cat.title = String.valueOf(catFolder.getName());
-		cat.abbr = String.valueOf(makeUrlKey(catFolder.getName()));
+		cat.abbr = catFolder.getName().split("~",2)[1];
+		if(cat.abbr == null || cat.abbr.trim().isEmpty()){
+			cat.abbr = cat.catName;
+		}
 		//TODO Fill
 		cat.metaKeywords = Utils.fillTemplate(metaKeyWordsTmpl, cat.catName, preTitles, DoorgenGeneratorRunner.PRETITLES_REGEXP);
 		//TODO Fill

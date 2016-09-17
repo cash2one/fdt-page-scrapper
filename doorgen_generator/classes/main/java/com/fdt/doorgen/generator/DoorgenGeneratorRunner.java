@@ -41,13 +41,14 @@ import com.fdt.utils.Utils;
 @Configuration
 //@EnableAutoConfiguration
 @ComponentScan(basePackages = "com.fdt", excludeFilters={
-		@ComponentScan.Filter(type=FilterType.ASSIGNABLE_TYPE, value = com.fdt.scrapper.proxy.ProxyFactory.class)
+		@ComponentScan.Filter(type=FilterType.ASSIGNABLE_TYPE, value = com.fdt.scrapper.proxy.ProxyFactory.class),
+		@ComponentScan.Filter(type=FilterType.ASSIGNABLE_TYPE, value = com.fdt.doorgen.key.pooler.articles.ArticlesPosterUpdaterRunner.class)
 })
 @PropertySource(value="file:${config.file}",ignoreResourceNotFound = true)
 public class DoorgenGeneratorRunner {
 
 	public static final String PRETITLES_REGEXP = "onestringpage";
-	private static final String PRETITLES_W_IDX_REGEXP = PRETITLES_REGEXP + "(\\d)?";
+	private static final String PRETITLES_W_IDX_REGEXP = PRETITLES_REGEXP + "(\\d)";
 	private static final String PRETITLES_FILE_NAMES_REGEXP =PRETITLES_W_IDX_REGEXP +".txt";
 
 	private static final Logger log = Logger.getLogger(DoorgenGeneratorRunner.class);
@@ -60,7 +61,7 @@ public class DoorgenGeneratorRunner {
 	private static final String MENU_FILE_LABEL = "menu_file";
 	private static final String CATEGORIES_FOLDER_LABEL = "categories_folder";
 
-	private static final String CONNECTION_STRING_LABEL = "connection_string";
+	public static final String CONNECTION_STRING_LABEL = "connection_string";
 
 	private File menuFile;
 
@@ -73,6 +74,8 @@ public class DoorgenGeneratorRunner {
 	private File mainTmplFile;
 
 	private HashMap<Integer,List<String>> preTitles;
+	
+	private HashMap<String,String> catUrls;
 
 	private String titleTmpl;
 
@@ -156,7 +159,9 @@ public class DoorgenGeneratorRunner {
 			//Загрузаем темплейты для тайтла, дискрипшна и кейвордов
 			loadPageMetaData(categoriesFolder.getParentFile());
 			//Загружаем данные для претайтлов
-			loadPreTtls(categoriesFolder.getParentFile());
+			preTitles = Utils.loadPreTtls(categoriesFolder.getParentFile(), PRETITLES_FILE_NAMES_REGEXP);
+			//Загружаем список урлов для категорий
+			loadCatUrls(categoriesFolder.getParentFile());
 			//TODO Load categories and their configs
 			//TODO Uncomment
 			loadAndGenerateCategoriesContent();
@@ -184,7 +189,7 @@ public class DoorgenGeneratorRunner {
 				//TODO Загружаем тэги, которые будут отображаться внизу страницы категорий
 				List<Item> tagsItems = loadTagItems(catFolder);
 				//TODO Load category
-				Category category = Category.parseCategory(catFolder, tagsItems, titleTmpl, metaDescrTmpl, metaKeyWordsTmpl, preTitles);
+				Category category = Category.parseCategory(catFolder, tagsItems, titleTmpl, metaDescrTmpl, metaKeyWordsTmpl, preTitles, catUrls);
 
 				categoriesList.put(category, tagsItems);
 			}
@@ -225,31 +230,15 @@ public class DoorgenGeneratorRunner {
 		metaKeyWordsTmpl = keys.get(2);
 	}
 
-	private void loadPreTtls(File pretitlesFolder){
+	private void loadCatUrls(File mainFolder){
 
-		FilenameFilter flNmFilter = new FilenameFilter() {
-
-			@Override
-			public boolean accept(File dir, String name) {
-				return dir.isFile() && name.matches(PRETITLES_FILE_NAMES_REGEXP);
-			}
-		};
-
-		for(File preTtlFl : pretitlesFolder.listFiles(flNmFilter)){
-			preTitles.put(getFileIdx(preTtlFl.getName()), Utils.loadFileAsStrList(preTtlFl));
+		catUrls = new HashMap<String,String>();
+		
+		for(String catUrl : Utils.loadFileAsStrList(new File(mainFolder,"categories_urls.txt"))){
+			String[] urlPar = catUrl.split("~", 2);
+			catUrls.put(urlPar[0].trim(), urlPar[1].trim());
 		}
 
-	}
-
-	private int getFileIdx(String fileName)
-	{
-		Pattern ptrn = Pattern.compile(PRETITLES_FILE_NAMES_REGEXP);
-		Matcher m = ptrn.matcher(fileName); 
-		if(m.find()){
-			return Integer.valueOf(m.group(1));
-		}else{
-			return 0;
-		}
 	}
 
 	private void generateSiteStructure() throws IOException{
@@ -278,7 +267,7 @@ public class DoorgenGeneratorRunner {
 		menuMapFile.delete();
 
 		for(MenuItem mi : allMenuItems){
-			Utils.appendStringToFile(String.format("%s=%s^%s^%s^%s", mi.getHref(),  mi.getContentFile(), mi.getPageTitle(), mi.getPageMetaKeywords(), mi.getPageMetaDescription() ), menuMapFile);
+			Utils.appendStringToFile(String.format("%s=%s^%s^%s^%s^%s", mi.getHref(),  mi.getContentFile(), mi.getPageTitle(), mi.getPageMetaKeywords(), mi.getPageMetaDescription(), mi.getTmplLabel()),menuMapFile);
 		}
 
 	}

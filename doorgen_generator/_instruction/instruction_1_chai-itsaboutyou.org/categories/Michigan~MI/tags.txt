@@ -1,0 +1,885 @@
+Acme~Acme~~Acme, Grand Traverse county, MI 49610, USA~44.793;-85.4946~US-MI~44.793,-85.4946~44.79300000~-85.49460000~49610~Grand Traverse county~~~4.1200004~2455~4828
+Ada~Ada~~Ada, Kent county, MI 49301, USA~42.9552;-85.4714~US-MI~42.9552,-85.4714~42.95520000~-85.47140000~49301~Kent county~~~4.46~1339~3404
+Addison~Addison~~Addison, Lenawee county, MI 49220, USA~42.0032;-84.3196~US-MI~42.0032,-84.3196~42.00320000~-84.31960000~49220~Lenawee county~~~4.4300003~1154~3416
+Adrian~Adrian~~Adrian, Lenawee county, MI 49221, USA~41.9042;-84.0507~US-MI~41.9042,-84.0507~41.90420000~-84.05070000~49221~Lenawee county~~~4.31~2024~4705
+Afton~Afton~~Afton, Cheboygan county, MI 49705, USA~45.3631;-84.4742~US-MI~45.3631,-84.4742~45.36310000~-84.47420000~49705~Cheboygan county~~~4.35~2650~2400
+Ahmeek~Ahmeek~~Ahmeek, Keweenaw county, MI 49901, USA~47.2954;-88.3959~US-MI~47.2954,-88.3959~47.29540000~-88.39590000~49901~Keweenaw county~~~4.19~1434~4172
+Akron~Akron~~Akron, Tuscola county, MI 48701, USA~43.5885;-83.5492~US-MI~43.5885,-83.5492~43.58850000~-83.54920000~48701~Tuscola county~~~4.31~1185~3286
+Alanson~Alanson~~Alanson, Emmet county, MI 49706, USA~45.4458;-84.8015~US-MI~45.4458,-84.8015~45.44580000~-84.80150000~49706~Emmet county~~~4.1800003~2461~4879
+Alba~Alba~~Alba, Antrim county, MI 49611, USA~44.958;-84.8998~US-MI~44.958,-84.8998~44.95800000~-84.89980000~49611~Antrim county~~~4.37~1213~2877
+Albion~Albion~~Albion, Calhoun county, MI 49224, USA~42.2617;-84.7618~US-MI~42.2617,-84.7618~42.26170000~-84.76180000~49224~Calhoun county~~~4.26~2621~4754
+Alden~Alden~~Alden, Antrim county, MI 49612, USA~44.8935;-85.2657~US-MI~44.8935,-85.2657~44.89350000~-85.26570000~49612~Antrim county~~~4.26~1920~3763
+Alger~Alger~~Alger, Arenac county, MI 48610, USA~44.1249;-84.0882~US-MI~44.1249,-84.0882~44.12490000~-84.08820000~48610~Arenac county~~~4.2400002~2006~3303
+Algonac~Algonac~~Algonac, Saint Clair county, MI 48001, USA~42.6385;-82.5827~US-MI~42.6385,-82.5827~42.63850000~-82.58270000~48001~Saint Clair county~~~4.33~1489~2136
+Allegan~Allegan~~Allegan, Allegan county, MI 49010, USA~42.5319;-85.8672~US-MI~42.5319,-85.8672~42.53190000~-85.86720000~49010~Allegan county~~~4.46~1773~3186
+Allen Park~Allen-Park~~Allen Park, Wayne county, MI 48101, USA~42.2533;-83.2083~US-MI~42.2533,-83.2083~42.25330000~-83.20830000~48101~Wayne county~~~4.17~2824~3204
+Allen~Allen~~Allen, Hillsdale county, MI 49227, USA~41.9499;-84.7682~US-MI~41.9499,-84.7682~41.94990000~-84.76820000~49227~Hillsdale county~~~4.31~1211~2879
+Allendale~Allendale~~Allendale, Ottawa county, MI 49401, USA~42.9744;-85.9301~US-MI~42.9744,-85.9301~42.97440000~-85.93010000~49401~Ottawa county~~~4.5~2855~4014
+Allenton~Allenton~~Allenton, Saint Clair county, MI 48002, USA~42.9083;-82.8831~US-MI~42.9083,-82.8831~42.90830000~-82.88310000~48002~Saint Clair county~~~4.37~1652~3216
+Allouez~Allouez~~Allouez, Keweenaw county, MI 49805, USA~47.285;-88.4083~US-MI~47.285,-88.4083~47.28500000~-88.40830000~49805~Keweenaw county~~~4.33~1484~2292
+Alma~Alma~~Alma, Gratiot county, MI 48801, USA~43.3758;-84.6646~US-MI~43.3758,-84.6646~43.37580000~-84.66460000~48801~Gratiot county~~~4.28~2970~4335
+Almont~Almont~~Almont, Lapeer county, MI 48003, USA~42.9238;-83.0431~US-MI~42.9238,-83.0431~42.92380000~-83.04310000~48003~Lapeer county~~~4.4900002~1681~3962
+Alpena~Alpena~~Alpena, Alpena county, MI 49707, USA~45.0756;-83.4781~US-MI~45.0756,-83.4781~45.07560000~-83.47810000~49707~Alpena county~~~4.27~2233~2438
+Alpha~Alpha~~Alpha, Iron county, MI 49902, USA~46.0171;-88.305~US-MI~46.0171,-88.305~46.01710000~-88.30500000~49902~Iron county~~~4.1600003~2629~2091
+Alto~Alto~~Alto, Kent county, MI 49302, USA~42.8298;-85.4222~US-MI~42.8298,-85.4222~42.82980000~-85.42220000~49302~Kent county~~~4.25~2096~3198
+Amasa~Amasa~~Amasa, Iron county, MI 49903, USA~46.238;-88.4411~US-MI~46.238,-88.4411~46.23800000~-88.44110000~49903~Iron county~~~4.29~2716~4151
+Anchorville~Anchorville~~Anchorville, Saint Clair county, MI 48004, USA~42.7137;-82.6822~US-MI~42.7137,-82.6822~42.71370000~-82.68220000~48004~Saint Clair county~~~4.1200004~2958~2352
+Ann Arbor~Ann-Arbor~~Ann Arbor, Washtenaw county, MI 48103, USA~42.2708;-83.8087~US-MI~42.2708,-83.8087~42.27080000~-83.80870000~48103~Washtenaw county~~~4.2200003~1359~2562
+Applegate~Applegate~~Applegate, Sanilac county, MI 48401, USA~43.3564;-82.647~US-MI~43.3564,-82.647~43.35640000~-82.64700000~48401~Sanilac county~~~4.11~1960~2789
+Arcadia~Arcadia~~Arcadia, Manistee county, MI 49613, USA~44.4807;-86.2177~US-MI~44.4807,-86.2177~44.48070000~-86.21770000~49613~Manistee county~~~4.48~1122~2082
+Argyle~Argyle~~Argyle, Sanilac county, MI 48410, USA~43.5642;-82.9284~US-MI~43.5642,-82.9284~43.56420000~-82.92840000~48410~Sanilac county~~~4.48~1873~3268
+Armada~Armada~~Armada, Macomb county, MI 48005, USA~42.8473;-82.92~US-MI~42.8473,-82.92~42.84730000~-82.92000000~48005~Macomb county~~~4.15~1114~3639
+Arnold~Arnold~~Arnold, Marquette county, MI 49819, USA~46.0499;-87.493~US-MI~46.0499,-87.493~46.04990000~-87.49300000~49819~Marquette county~~~4.4500003~1292~2211
+Ashley~Ashley~~Ashley, Gratiot county, MI 48806, USA~43.1744;-84.5042~US-MI~43.1744,-84.5042~43.17440000~-84.50420000~48806~Gratiot county~~~4.48~1302~4822
+Athens~Athens~~Athens, Calhoun county, MI 49011, USA~42.0986;-85.2198~US-MI~42.0986,-85.2198~42.09860000~-85.21980000~49011~Calhoun county~~~4.17~1686~4390
+Atlanta~Atlanta~~Atlanta, Montmorency county, MI 49709, USA~44.9917;-84.1441~US-MI~44.9917,-84.1441~44.99170000~-84.14410000~49709~Montmorency county~~~4.1400003~1974~4748
+Atlantic Mine~Atlantic-Mine~~Atlantic Mine, Houghton county, MI 49905, USA~47.0664;-88.653~US-MI~47.0664,-88.653~47.06640000~-88.65300000~49905~Houghton county~~~4.1800003~1470~4455
+Atlas~Atlas~~Atlas, Genesee county, MI 48411, USA~42.9303;-83.5447~US-MI~42.9303,-83.5447~42.93030000~-83.54470000~48411~Genesee county~~~4.3900003~2656~4172
+Attica~Attica~~Attica, Lapeer county, MI 48412, USA~43.0754;-83.1716~US-MI~43.0754,-83.1716~43.07540000~-83.17160000~48412~Lapeer county~~~4.4100003~1270~2913
+Au Gres~Au-Gres~~Au Gres, Arenac county, MI 48703, USA~44.0603;-83.6441~US-MI~44.0603,-83.6441~44.06030000~-83.64410000~48703~Arenac county~~~4.2400002~2766~3111
+Au Train~Au-Train~~Au Train, Alger county, MI 49806, USA~46.4304;-86.8384~US-MI~46.4304,-86.8384~46.43040000~-86.83840000~49806~Alger county~~~4.29~1787~2045
+Auburn Hills~Auburn-Hills~~Auburn Hills, Oakland county, MI 48321, USA~42.6743;-83.2424~US-MI~42.6743,-83.2424~42.67430000~-83.24240000~48321~Oakland county~~~4.2400002~1664~4086
+Auburn~Auburn~~Auburn, Bay county, MI 48611, USA~43.6191;-84.0893~US-MI~43.6191,-84.0893~43.61910000~-84.08930000~48611~Bay county~~~4.1600003~2366~2290
+Augusta~Augusta~~Augusta, Kalamazoo county, MI 49012, USA~42.356;-85.3471~US-MI~42.356,-85.3471~42.35600000~-85.34710000~49012~Kalamazoo county~~~4.28~2238~4613
+Avoca~Avoca~~Avoca, Saint Clair county, MI 48006, USA~43.0649;-82.6887~US-MI~43.0649,-82.6887~43.06490000~-82.68870000~48006~Saint Clair county~~~4.29~1189~3688
+Azalia~Azalia~~Azalia, Monroe county, MI 48110, USA~42.0155;-83.6688~US-MI~42.0155,-83.6688~42.01550000~-83.66880000~48110~Monroe county~~~4.1400003~1654~4975
+Bad Axe~Bad-Axe~~Bad Axe, Huron county, MI 48413, USA~43.8044;-82.9969~US-MI~43.8044,-82.9969~43.80440000~-82.99690000~48413~Huron county~~~4.26~1582~2534
+Bailey~Bailey~~Bailey, Muskegon county, MI 49303, USA~43.2765;-85.8416~US-MI~43.2765,-85.8416~43.27650000~-85.84160000~49303~Muskegon county~~~4.44~2615~3600
+Baldwin~Baldwin~~Baldwin, Lake county, MI 49304, USA~43.8971;-85.8537~US-MI~43.8971,-85.8537~43.89710000~-85.85370000~49304~Lake county~~~4.2000003~2114~4119
+Bancroft~Bancroft~~Bancroft, Shiawassee county, MI 48414, USA~42.8663;-84.0746~US-MI~42.8663,-84.0746~42.86630000~-84.07460000~48414~Shiawassee county~~~4.42~2248~4978
+Bangor~Bangor~~Bangor, Van Buren county, MI 49013, USA~42.3049;-86.1166~US-MI~42.3049,-86.1166~42.30490000~-86.11660000~49013~Van Buren county~~~4.4500003~1028~3868
+Bannister~Bannister~~Bannister, Gratiot county, MI 48807, USA~43.141;-84.4246~US-MI~43.141,-84.4246~43.14100000~-84.42460000~48807~Gratiot county~~~4.42~2888~4986
+Baraga~Baraga~~Baraga, Baraga county, MI 49908, USA~46.7843;-88.4936~US-MI~46.7843,-88.4936~46.78430000~-88.49360000~49908~Baraga county~~~4.2200003~1885~3427
+Barbeau~Barbeau~~Barbeau, Chippewa county, MI 49710, USA~46.4866;-84.3761~US-MI~46.4866,-84.3761~46.48660000~-84.37610000~49710~Chippewa county~~~4.48~1797~3533
+Bark River~Bark-River~~Bark River, Delta county, MI 49807, USA~45.6984;-87.236~US-MI~45.6984,-87.236~45.69840000~-87.23600000~49807~Delta county~~~4.48~2957~4557
+Baroda~Baroda~~Baroda, Berrien county, MI 49101, USA~41.9477;-86.4847~US-MI~41.9477,-86.4847~41.94770000~-86.48470000~49101~Berrien county~~~4.2400002~2031~2293
+Barryton~Barryton~~Barryton, Mecosta county, MI 49305, USA~43.7494;-85.1694~US-MI~43.7494,-85.1694~43.74940000~-85.16940000~49305~Mecosta county~~~4.3~2608~4964
+Barton City~Barton-City~~Barton City, Alcona county, MI 48705, USA~44.6787;-83.6323~US-MI~44.6787,-83.6323~44.67870000~-83.63230000~48705~Alcona county~~~4.23~2222~2121
+Bath~Bath~~Bath, Clinton county, MI 48808, USA~42.8182;-84.4606~US-MI~42.8182,-84.4606~42.81820000~-84.46060000~48808~Clinton county~~~4.32~1632~2150
+Battle Creek~Battle-Creek~~Battle Creek, Calhoun county, MI 49014, USA~42.3126;-85.1066~US-MI~42.3126,-85.1066~42.31260000~-85.10660000~49014~Calhoun county~~~4.1200004~1781~3386
+Bay City~Bay-City~~Bay City, Bay county, MI 48706, USA~43.608;-83.919~US-MI~43.608,-83.919~43.60800000~-83.91900000~48706~Bay county~~~4.27~1459~2068
+Bay Port~Bay-Port~~Bay Port, Huron county, MI 48720, USA~43.8274;-83.355~US-MI~43.8274,-83.355~43.82740000~-83.35500000~48720~Huron county~~~4.44~1595~4248
+Bay Shore~Bay-Shore~~Bay Shore, Charlevoix county, MI 49711, USA~45.3583;-85.0972~US-MI~45.3583,-85.0972~45.35830000~-85.09720000~49711~Charlevoix county~~~4.29~1070~3296
+Bear Lake~Bear-Lake~~Bear Lake, Manistee county, MI 49614, USA~44.4231;-86.1263~US-MI~44.4231,-86.1263~44.42310000~-86.12630000~49614~Manistee county~~~4.32~1009~3202
+Beaver Island~Beaver-Island~~Beaver Island, Charlevoix county, MI 49782, USA~45.6667;-85.55~US-MI~45.6667,-85.55~45.66670000~-85.55000000~49782~Charlevoix county~~~4.4900002~2525~2420
+Beaverton~Beaverton~~Beaverton, Gladwin county, MI 48612, USA~43.876;-84.4197~US-MI~43.876,-84.4197~43.87600000~-84.41970000~48612~Gladwin county~~~4.4300003~2387~4667
+Bedford~Bedford~~Bedford, Calhoun county, MI 49020, USA~42.3955;-85.2331~US-MI~42.3955,-85.2331~42.39550000~-85.23310000~49020~Calhoun county~~~4.17~2738~3183
+Belding~Belding~~Belding, Ionia county, MI 48809, USA~43.0772;-85.2284~US-MI~43.0772,-85.2284~43.07720000~-85.22840000~48809~Ionia county~~~4.35~1675~4819
+Bellaire~Bellaire~~Bellaire, Antrim county, MI 49615, USA~44.9668;-85.2131~US-MI~44.9668,-85.2131~44.96680000~-85.21310000~49615~Antrim county~~~4.2000003~1005~4276
+Belleville~Belleville~~Belleville, Wayne county, MI 48111, USA~42.1742;-83.4896~US-MI~42.1742,-83.4896~42.17420000~-83.48960000~48111~Wayne county~~~4.17~1853~3990
+Bellevue~Bellevue~~Bellevue, Eaton county, MI 49021, USA~42.4656;-85.0099~US-MI~42.4656,-85.0099~42.46560000~-85.00990000~49021~Eaton county~~~4.17~2570~4926
+Belmont~Belmont~~Belmont, Kent county, MI 49306, USA~43.0777;-85.5877~US-MI~43.0777,-85.5877~43.07770000~-85.58770000~49306~Kent county~~~4.3~1673~4939
+Bentley~Bentley~~Bentley, Bay county, MI 48613, USA~43.9357;-84.112~US-MI~43.9357,-84.112~43.93570000~-84.11200000~48613~Bay county~~~4.2400002~2620~3182
+Benton Harbor~Benton-Harbor~~Benton Harbor, Berrien county, MI 49022, USA~42.111;-86.404~US-MI~42.111,-86.404~42.11100000~-86.40400000~49022~Berrien county~~~4.1600003~2107~3105
+Benzonia~Benzonia~~Benzonia, Benzie county, MI 49616, USA~44.5886;-86.0972~US-MI~44.5886,-86.0972~44.58860000~-86.09720000~49616~Benzie county~~~4.37~2263~4147
+Bergland~Bergland~~Bergland, Ontonagon county, MI 49910, USA~46.5911;-89.5664~US-MI~46.5911,-89.5664~46.59110000~-89.56640000~49910~Ontonagon county~~~4.38~1296~2730
+Berkley~Berkley~~Berkley, Oakland county, MI 48072, USA~42.5022;-83.1858~US-MI~42.5022,-83.1858~42.50220000~-83.18580000~48072~Oakland county~~~4.35~2619~2690
+Berrien Center~Berrien-Center~~Berrien Center, Berrien county, MI 49102, USA~41.9541;-86.2762~US-MI~41.9541,-86.2762~41.95410000~-86.27620000~49102~Berrien county~~~4.48~2430~4388
+Berrien Springs~Berrien-Springs~~Berrien Springs, Berrien county, MI 49103, USA~41.9402;-86.3498~US-MI~41.9402,-86.3498~41.94020000~-86.34980000~49103~Berrien county~~~4.34~2942~3237
+Bessemer~Bessemer~~Bessemer, Gogebic county, MI 49911, USA~46.4767;-90.052~US-MI~46.4767,-90.052~46.47670000~-90.05200000~49911~Gogebic county~~~4.1800003~2008~4983
+Beulah~Beulah~~Beulah, Benzie county, MI 49617, USA~44.6445;-86.0552~US-MI~44.6445,-86.0552~44.64450000~-86.05520000~49617~Benzie county~~~4.4300003~1467~2501
+Big Bay~Big-Bay~~Big Bay, Marquette county, MI 49808, USA~46.8158;-87.7285~US-MI~46.8158,-87.7285~46.81580000~-87.72850000~49808~Marquette county~~~4.2200003~1372~4871
+Big Rapids~Big-Rapids~~Big Rapids, Mecosta county, MI 49307, USA~43.6977;-85.4682~US-MI~43.6977,-85.4682~43.69770000~-85.46820000~49307~Mecosta county~~~4.48~1716~4420
+Birch Run~Birch-Run~~Birch Run, Saginaw county, MI 48415, USA~43.2667;-83.7926~US-MI~43.2667,-83.7926~43.26670000~-83.79260000~48415~Saginaw county~~~4.17~2938~3874
+Birmingham~Birmingham~~Birmingham, Oakland county, MI 48009, USA~42.5446;-83.2139~US-MI~42.5446,-83.2139~42.54460000~-83.21390000~48009~Oakland county~~~4.44~1990~3411
+Bitely~Bitely~~Bitely, Newaygo county, MI 49309, USA~43.7409;-85.8708~US-MI~43.7409,-85.8708~43.74090000~-85.87080000~49309~Newaygo county~~~4.1200004~2198~4149
+Black River~Black-River~~Black River, Alcona county, MI 48721, USA~44.7967;-83.3244~US-MI~44.7967,-83.3244~44.79670000~-83.32440000~48721~Alcona county~~~4.46~2248~3177
+Blanchard~Blanchard~~Blanchard, Isabella county, MI 49310, USA~43.5192;-85.0107~US-MI~43.5192,-85.0107~43.51920000~-85.01070000~49310~Isabella county~~~4.4300003~1710~4945
+Blissfield~Blissfield~~Blissfield, Lenawee county, MI 49228, USA~41.8194;-83.8758~US-MI~41.8194,-83.8758~41.81940000~-83.87580000~49228~Lenawee county~~~4.33~1393~4484
+Bloomfield Hills~Bloomfield-Hills~~Bloomfield Hills, Oakland county, MI 48301, USA~42.5418;-83.282~US-MI~42.5418,-83.282~42.54180000~-83.28200000~48301~Oakland county~~~4.13~2206~4284
+Bloomingdale~Bloomingdale~~Bloomingdale, Van Buren county, MI 49026, USA~42.3735;-85.9713~US-MI~42.3735,-85.9713~42.37350000~-85.97130000~49026~Van Buren county~~~4.4100003~1895~4236
+Boon~Boon~~Boon, Wexford county, MI 49618, USA~44.301;-85.592~US-MI~44.301,-85.592~44.30100000~-85.59200000~49618~Wexford county~~~4.4100003~1398~3370
+Boyne City~Boyne-City~~Boyne City, Charlevoix county, MI 49712, USA~45.2213;-85.0263~US-MI~45.2213,-85.0263~45.22130000~-85.02630000~49712~Charlevoix county~~~4.11~2339~4723
+Boyne Falls~Boyne-Falls~~Boyne Falls, Charlevoix county, MI 49713, USA~45.1928;-84.8598~US-MI~45.1928,-84.8598~45.19280000~-84.85980000~49713~Charlevoix county~~~4.44~1421~4827
+Bradley~Bradley~~Bradley, Allegan county, MI 49311, USA~42.6386;-85.6461~US-MI~42.6386,-85.6461~42.63860000~-85.64610000~49311~Allegan county~~~4.2000003~1625~4021
+Branch~Branch~~Branch, Mason county, MI 49402, USA~43.9201;-86.0673~US-MI~43.9201,-86.0673~43.92010000~-86.06730000~49402~Mason county~~~4.1800003~2431~4388
+Brant~Brant~~Brant, Saginaw county, MI 48614, USA~43.2467;-84.2946~US-MI~43.2467,-84.2946~43.24670000~-84.29460000~48614~Saginaw county~~~4.23~2638~2130
+Breckenridge~Breckenridge~~Breckenridge, Gratiot county, MI 48615, USA~43.3917;-84.4829~US-MI~43.3917,-84.4829~43.39170000~-84.48290000~48615~Gratiot county~~~4.2400002~2809~2895
+Breedsville~Breedsville~~Breedsville, Van Buren county, MI 49027, USA~42.3525;-86.0633~US-MI~42.3525,-86.0633~42.35250000~-86.06330000~49027~Van Buren county~~~4.5~1484~3241
+Brethren~Brethren~~Brethren, Manistee county, MI 49619, USA~44.307;-86.0246~US-MI~44.307,-86.0246~44.30700000~-86.02460000~49619~Manistee county~~~4.21~1214~4658
+Bridgeport~Bridgeport~~Bridgeport, Saginaw county, MI 48722, USA~43.3508;-83.8515~US-MI~43.3508,-83.8515~43.35080000~-83.85150000~48722~Saginaw county~~~4.33~2479~3010
+Bridgewater~Bridgewater~~Bridgewater, Washtenaw county, MI 48115, USA~42.1605;-83.9213~US-MI~42.1605,-83.9213~42.16050000~-83.92130000~48115~Washtenaw county~~~4.29~1581~2922
+Bridgman~Bridgman~~Bridgman, Berrien county, MI 49106, USA~41.9422;-86.5519~US-MI~41.9422,-86.5519~41.94220000~-86.55190000~49106~Berrien county~~~4.4~2514~2045
+Brighton~Brighton~~Brighton, Livingston county, MI 48114, USA~42.53;-83.7828~US-MI~42.53,-83.7828~42.53000000~-83.78280000~48114~Livingston county~~~4.4500003~2704~2557
+Brimley~Brimley~~Brimley, Chippewa county, MI 49715, USA~46.397;-84.5947~US-MI~46.397,-84.5947~46.39700000~-84.59470000~49715~Chippewa county~~~4.46~1533~2279
+Britton~Britton~~Britton, Lenawee county, MI 49229, USA~41.9842;-83.8395~US-MI~41.9842,-83.8395~41.98420000~-83.83950000~49229~Lenawee county~~~4.34~1995~4178
+Brohman~Brohman~~Brohman, Newaygo county, MI 49312, USA~43.6896;-85.7948~US-MI~43.6896,-85.7948~43.68960000~-85.79480000~49312~Newaygo county~~~4.38~2212~3729
+Bronson~Bronson~~Bronson, Branch county, MI 49028, USA~41.8482;-85.1921~US-MI~41.8482,-85.1921~41.84820000~-85.19210000~49028~Branch county~~~4.4500003~1394~2677
+Brooklyn~Brooklyn~~Brooklyn, Jackson county, MI 49230, USA~42.1035;-84.2455~US-MI~42.1035,-84.2455~42.10350000~-84.24550000~49230~Jackson county~~~4.32~1171~2113
+Brown City~Brown-City~~Brown City, Sanilac county, MI 48416, USA~43.2258;-82.9459~US-MI~43.2258,-82.9459~43.22580000~-82.94590000~48416~Sanilac county~~~4.11~2660~3571
+Bruce Crossing~Bruce-Crossing~~Bruce Crossing, Ontonagon county, MI 49912, USA~46.5387;-89.2027~US-MI~46.5387,-89.2027~46.53870000~-89.20270000~49912~Ontonagon county~~~4.2000003~2635~4131
+Brutus~Brutus~~Brutus, Emmet county, MI 49716, USA~45.5047;-84.7726~US-MI~45.5047,-84.7726~45.50470000~-84.77260000~49716~Emmet county~~~4.48~1543~4452
+Buchanan~Buchanan~~Buchanan, Berrien county, MI 49107, USA~41.8318;-86.4029~US-MI~41.8318,-86.4029~41.83180000~-86.40290000~49107~Berrien county~~~4.34~2179~3157
+Buckley~Buckley~~Buckley, Wexford county, MI 49620, USA~44.5486;-85.717~US-MI~44.5486,-85.717~44.54860000~-85.71700000~49620~Wexford county~~~4.11~2144~3113
+Burlington~Burlington~~Burlington, Calhoun county, MI 49029, USA~42.1351;-85.089~US-MI~42.1351,-85.089~42.13510000~-85.08900000~49029~Calhoun county~~~4.1800003~1342~3908
+Burnips~Burnips~~Burnips, Allegan county, MI 49314, USA~42.7311;-85.8511~US-MI~42.7311,-85.8511~42.73110000~-85.85110000~49314~Allegan county~~~4.36~1792~3175
+Burr Oak~Burr-Oak~~Burr Oak, Saint Joseph county, MI 49030, USA~41.859;-85.3352~US-MI~41.859,-85.3352~41.85900000~-85.33520000~49030~Saint Joseph county~~~4.5~2129~2075
+Burt Lake~Burt-Lake~~Burt Lake, Cheboygan county, MI 49717, USA~45.4356;-84.6969~US-MI~45.4356,-84.6969~45.43560000~-84.69690000~49717~Cheboygan county~~~4.2400002~1792~2933
+Burt~Burt~~Burt, Saginaw county, MI 48417, USA~43.2569;-83.9345~US-MI~43.2569,-83.9345~43.25690000~-83.93450000~48417~Saginaw county~~~4.1600003~1669~3903
+Burton~Burton~~Burton, Genesee county, MI 48509, USA~43.0249;-83.6043~US-MI~43.0249,-83.6043~43.02490000~-83.60430000~48509~Genesee county~~~4.29~2479~3530
+Byron Center~Byron-Center~~Byron Center, Kent county, MI 49315, USA~42.8054;-85.7038~US-MI~42.8054,-85.7038~42.80540000~-85.70380000~49315~Kent county~~~4.38~2016~2897
+Byron~Byron~~Byron, Shiawassee county, MI 48418, USA~42.8112;-83.9794~US-MI~42.8112,-83.9794~42.81120000~-83.97940000~48418~Shiawassee county~~~4.19~2664~3026
+Cadillac~Cadillac~~Cadillac, Wexford county, MI 49601, USA~44.2567;-85.4452~US-MI~44.2567,-85.4452~44.25670000~-85.44520000~49601~Wexford county~~~4.37~2113~2861
+Caledonia~Caledonia~~Caledonia, Kent county, MI 49316, USA~42.787;-85.5463~US-MI~42.787,-85.5463~42.78700000~-85.54630000~49316~Kent county~~~4.17~2892~4415
+Calumet~Calumet~~Calumet, Houghton county, MI 49913, USA~47.2419;-88.4506~US-MI~47.2419,-88.4506~47.24190000~-88.45060000~49913~Houghton county~~~4.31~2947~3237
+Camden~Camden~~Camden, Hillsdale county, MI 49232, USA~41.7397;-84.6527~US-MI~41.7397,-84.6527~41.73970000~-84.65270000~49232~Hillsdale county~~~4.42~1858~3492
+Cannonsburg~Cannonsburg~~Cannonsburg, Kent county, MI 49317, USA~43.1306;-85.4824~US-MI~43.1306,-85.4824~43.13060000~-85.48240000~49317~Kent county~~~4.19~1934~4486
+Canton~Canton~~Canton, Wayne county, MI 48187, USA~42.3318;-83.4776~US-MI~42.3318,-83.4776~42.33180000~-83.47760000~48187~Wayne county~~~4.11~1873~2227
+Capac~Capac~~Capac, Saint Clair county, MI 48014, USA~43.024;-82.9243~US-MI~43.024,-82.9243~43.02400000~-82.92430000~48014~Saint Clair county~~~4.4900002~1451~3496
+Carleton~Carleton~~Carleton, Monroe county, MI 48117, USA~42.0524;-83.4107~US-MI~42.0524,-83.4107~42.05240000~-83.41070000~48117~Monroe county~~~4.11~2357~3037
+Carney~Carney~~Carney, Menominee county, MI 49812, USA~45.5816;-87.5592~US-MI~45.5816,-87.5592~45.58160000~-87.55920000~49812~Menominee county~~~4.4~1183~4514
+Caro~Caro~~Caro, Tuscola county, MI 48723, USA~43.4861;-83.3895~US-MI~43.4861,-83.3895~43.48610000~-83.38950000~48723~Tuscola county~~~4.48~1818~4501
+Carp Lake~Carp-Lake~~Carp Lake, Emmet county, MI 49718, USA~45.6999;-84.7924~US-MI~45.6999,-84.7924~45.69990000~-84.79240000~49718~Emmet county~~~4.1200004~1362~3286
+Carrollton~Carrollton~~Carrollton, Saginaw county, MI 48724, USA~43.4618;-83.926~US-MI~43.4618,-83.926~43.46180000~-83.92600000~48724~Saginaw county~~~4.32~2380~2997
+Carson City~Carson-City~~Carson City, Montcalm county, MI 48811, USA~43.1813;-84.8681~US-MI~43.1813,-84.8681~43.18130000~-84.86810000~48811~Montcalm county~~~4.32~2652~2797
+Carsonville~Carsonville~~Carsonville, Sanilac county, MI 48419, USA~43.4347;-82.6315~US-MI~43.4347,-82.6315~43.43470000~-82.63150000~48419~Sanilac county~~~4.4900002~2893~3420
+Casco~Casco~~Casco, Saint Clair county, MI 48064, USA~42.7676;-82.6724~US-MI~42.7676,-82.6724~42.76760000~-82.67240000~48064~Saint Clair county~~~4.4500003~1577~2715
+Caseville~Caseville~~Caseville, Huron county, MI 48725, USA~43.948;-83.2342~US-MI~43.948,-83.2342~43.94800000~-83.23420000~48725~Huron county~~~4.42~1435~4573
+Casnovia~Casnovia~~Casnovia, Muskegon county, MI 49318, USA~43.235;-85.8224~US-MI~43.235,-85.8224~43.23500000~-85.82240000~49318~Muskegon county~~~4.15~2402~4391
+Caspian~Caspian~~Caspian, Iron county, MI 49915, USA~46.0668;-88.6277~US-MI~46.0668,-88.6277~46.06680000~-88.62770000~49915~Iron county~~~4.2000003~2656~3083
+Cass City~Cass-City~~Cass City, Tuscola county, MI 48726, USA~43.5928;-83.1999~US-MI~43.5928,-83.1999~43.59280000~-83.19990000~48726~Tuscola county~~~4.29~2923~2560
+Cassopolis~Cassopolis~~Cassopolis, Cass county, MI 49031, USA~41.9035;-85.9895~US-MI~41.9035,-85.9895~41.90350000~-85.98950000~49031~Cass county~~~4.2000003~1396~2150
+Cedar Lake~Cedar-Lake~~Cedar Lake, Montcalm county, MI 48812, USA~43.4047;-84.9764~US-MI~43.4047,-84.9764~43.40470000~-84.97640000~48812~Montcalm county~~~4.4300003~2735~4747
+Cedar Springs~Cedar-Springs~~Cedar Springs, Kent county, MI 49319, USA~43.2242;-85.5368~US-MI~43.2242,-85.5368~43.22420000~-85.53680000~49319~Kent county~~~4.35~1792~2580
+Cedar~Cedar~~Cedar, Leelanau county, MI 49621, USA~44.8624;-85.7834~US-MI~44.8624,-85.7834~44.86240000~-85.78340000~49621~Leelanau county~~~4.19~2422~2180
+Cedarville~Cedarville~~Cedarville, Mackinac county, MI 49719, USA~45.9249;-84.399~US-MI~45.9249,-84.399~45.92490000~-84.39900000~49719~Mackinac county~~~4.21~1807~3108
+Cement City~Cement-City~~Cement City, Lenawee county, MI 49233, USA~42.0515;-84.3798~US-MI~42.0515,-84.3798~42.05150000~-84.37980000~49233~Lenawee county~~~4.2200003~2704~4000
+Center Line~Center-Line~~Center Line, Macomb county, MI 48015, USA~42.4802;-83.0251~US-MI~42.4802,-83.0251~42.48020000~-83.02510000~48015~Macomb county~~~4.3900003~2133~3470
+Central Lake~Central-Lake~~Central Lake, Antrim county, MI 49622, USA~45.0756;-85.2602~US-MI~45.0756,-85.2602~45.07560000~-85.26020000~49622~Antrim county~~~4.29~2185~2678
+Centreville~Centreville~~Centreville, Saint Joseph county, MI 49032, USA~41.9194;-85.5006~US-MI~41.9194,-85.5006~41.91940000~-85.50060000~49032~Saint Joseph county~~~4.32~2639~4890
+Ceresco~Ceresco~~Ceresco, Calhoun county, MI 49033, USA~42.2257;-85.0964~US-MI~42.2257,-85.0964~42.22570000~-85.09640000~49033~Calhoun county~~~4.26~2257~3931
+Champion~Champion~~Champion, Marquette county, MI 49814, USA~46.5093;-87.8381~US-MI~46.5093,-87.8381~46.50930000~-87.83810000~49814~Marquette county~~~4.25~1484~2781
+Channing~Channing~~Channing, Dickinson county, MI 49815, USA~46.1574;-88.0736~US-MI~46.1574,-88.0736~46.15740000~-88.07360000~49815~Dickinson county~~~4.4900002~1576~4935
+Charlevoix~Charlevoix~~Charlevoix, Charlevoix county, MI 49720, USA~45.2794;-85.2705~US-MI~45.2794,-85.2705~45.27940000~-85.27050000~49720~Charlevoix county~~~4.1200004~1609~2832
+Charlotte~Charlotte~~Charlotte, Eaton county, MI 48813, USA~42.5724;-84.838~US-MI~42.5724,-84.838~42.57240000~-84.83800000~48813~Eaton county~~~4.2200003~1833~2925
+Chase~Chase~~Chase, Lake county, MI 49623, USA~43.8957;-85.6363~US-MI~43.8957,-85.6363~43.89570000~-85.63630000~49623~Lake county~~~4.2200003~1189~4293
+Chassell~Chassell~~Chassell, Houghton county, MI 49916, USA~47.0266;-88.5277~US-MI~47.0266,-88.5277~47.02660000~-88.52770000~49916~Houghton county~~~4.34~2113~2973
+Chatham~Chatham~~Chatham, Alger county, MI 49816, USA~46.2885;-86.7602~US-MI~46.2885,-86.7602~46.28850000~-86.76020000~49816~Alger county~~~4.44~1671~4553
+Cheboygan~Cheboygan~~Cheboygan, Cheboygan county, MI 49721, USA~45.5931;-84.4716~US-MI~45.5931,-84.4716~45.59310000~-84.47160000~49721~Cheboygan county~~~4.46~1896~3472
+Chelsea~Chelsea~~Chelsea, Washtenaw county, MI 48118, USA~42.3174;-84.0303~US-MI~42.3174,-84.0303~42.31740000~-84.03030000~48118~Washtenaw county~~~4.38~2979~3738
+Chesaning~Chesaning~~Chesaning, Saginaw county, MI 48616, USA~43.1912;-84.1184~US-MI~43.1912,-84.1184~43.19120000~-84.11840000~48616~Saginaw county~~~4.4500003~1201~3979
+Chippewa Lake~Chippewa-Lake~~Chippewa Lake, Mecosta county, MI 49320, USA~43.7623;-85.2877~US-MI~43.7623,-85.2877~43.76230000~-85.28770000~49320~Mecosta county~~~4.1800003~2467~3451
+Clare~Clare~~Clare, Clare county, MI 48617, USA~43.8624;-84.7347~US-MI~43.8624,-84.7347~43.86240000~-84.73470000~48617~Clare county~~~4.4700003~1798~3876
+Clarklake~Clarklake~~Clarklake, Jackson county, MI 49234, USA~42.1199;-84.3485~US-MI~42.1199,-84.3485~42.11990000~-84.34850000~49234~Jackson county~~~4.4100003~2763~2023
+Clarkston~Clarkston~~Clarkston, Oakland county, MI 48346, USA~42.7224;-83.4182~US-MI~42.7224,-83.4182~42.72240000~-83.41820000~48346~Oakland county~~~4.26~2336~2932
+Clarksville~Clarksville~~Clarksville, Ionia county, MI 48815, USA~42.8445;-85.2472~US-MI~42.8445,-85.2472~42.84450000~-85.24720000~48815~Ionia county~~~4.13~1751~2914
+Clawson~Clawson~~Clawson, Oakland county, MI 48017, USA~42.5354;-83.1518~US-MI~42.5354,-83.1518~42.53540000~-83.15180000~48017~Oakland county~~~4.3900003~1202~2784
+Clayton~Clayton~~Clayton, Lenawee county, MI 49235, USA~41.8666;-84.2113~US-MI~41.8666,-84.2113~41.86660000~-84.21130000~49235~Lenawee county~~~4.4500003~2317~2633
+Clifford~Clifford~~Clifford, Lapeer county, MI 48727, USA~43.3065;-83.1766~US-MI~43.3065,-83.1766~43.30650000~-83.17660000~48727~Lapeer county~~~4.48~2892~3951
+Climax~Climax~~Climax, Kalamazoo county, MI 49034, USA~42.2324;-85.3458~US-MI~42.2324,-85.3458~42.23240000~-85.34580000~49034~Kalamazoo county~~~4.35~2152~4357
+Clinton Township~Clinton-Township~~Clinton Township, Macomb county, MI 48035, USA~42.553;-82.9119~US-MI~42.553,-82.9119~42.55300000~-82.91190000~48035~Macomb county~~~4.2000003~2619~3539
+Clinton~Clinton~~Clinton, Lenawee county, MI 49236, USA~42.0666;-83.9576~US-MI~42.0666,-83.9576~42.06660000~-83.95760000~49236~Lenawee county~~~4.23~2598~3464
+Clio~Clio~~Clio, Genesee county, MI 48420, USA~43.1742;-83.7198~US-MI~43.1742,-83.7198~43.17420000~-83.71980000~48420~Genesee county~~~4.4900002~2494~2636
+Cloverdale~Cloverdale~~Cloverdale, Barry county, MI 49035, USA~42.5527;-85.3852~US-MI~42.5527,-85.3852~42.55270000~-85.38520000~49035~Barry county~~~4.21~2618~3892
+Cohoctah~Cohoctah~~Cohoctah, Livingston county, MI 48816, USA~42.7588;-83.9485~US-MI~42.7588,-83.9485~42.75880000~-83.94850000~48816~Livingston county~~~4.28~2758~3018
+Coldwater~Coldwater~~Coldwater, Branch county, MI 49036, USA~41.9081;-85.0148~US-MI~41.9081,-85.0148~41.90810000~-85.01480000~49036~Branch county~~~4.37~1502~2433
+Coleman~Coleman~~Coleman, Midland county, MI 48618, USA~43.7445;-84.5469~US-MI~43.7445,-84.5469~43.74450000~-84.54690000~48618~Midland county~~~4.1200004~1086~4829
+Coloma~Coloma~~Coloma, Berrien county, MI 49038, USA~42.2031;-86.3268~US-MI~42.2031,-86.3268~42.20310000~-86.32680000~49038~Berrien county~~~4.23~1798~4811
+Colon~Colon~~Colon, Saint Joseph county, MI 49040, USA~41.9571;-85.3312~US-MI~41.9571,-85.3312~41.95710000~-85.33120000~49040~Saint Joseph county~~~4.5~2645~2564
+Columbiaville~Columbiaville~~Columbiaville, Lapeer county, MI 48421, USA~43.1508;-83.3823~US-MI~43.1508,-83.3823~43.15080000~-83.38230000~48421~Lapeer county~~~4.4500003~1606~3347
+Columbus~Columbus~~Columbus, Saint Clair county, MI 48063, USA~42.8479;-82.676~US-MI~42.8479,-82.676~42.84790000~-82.67600000~48063~Saint Clair county~~~4.4900002~2940~3745
+Comins~Comins~~Comins, Oscoda county, MI 48619, USA~44.8036;-84.038~US-MI~44.8036,-84.038~44.80360000~-84.03800000~48619~Oscoda county~~~4.25~1728~4574
+Commerce Township~Commerce-Township~~Commerce Township, Oakland county, MI 48382, USA~42.5836;-83.5003~US-MI~42.5836,-83.5003~42.58360000~-83.50030000~48382~Oakland county~~~4.17~1944~4912
+Comstock Park~Comstock-Park~~Comstock Park, Kent county, MI 49321, USA~43.0582;-85.6649~US-MI~43.0582,-85.6649~43.05820000~-85.66490000~49321~Kent county~~~4.29~2113~4100
+Comstock~Comstock~~Comstock, Kalamazoo county, MI 49041, USA~42.2849;-85.5113~US-MI~42.2849,-85.5113~42.28490000~-85.51130000~49041~Kalamazoo county~~~4.2200003~1510~2427
+Concord~Concord~~Concord, Jackson county, MI 49237, USA~42.1716;-84.6463~US-MI~42.1716,-84.6463~42.17160000~-84.64630000~49237~Jackson county~~~4.21~2460~2595
+Conklin~Conklin~~Conklin, Ottawa county, MI 49403, USA~43.1362;-85.8569~US-MI~43.1362,-85.8569~43.13620000~-85.85690000~49403~Ottawa county~~~4.4100003~2939~3968
+Constantine~Constantine~~Constantine, Saint Joseph county, MI 49042, USA~41.8525;-85.6627~US-MI~41.8525,-85.6627~41.85250000~-85.66270000~49042~Saint Joseph county~~~4.3~1212~4039
+Conway~Conway~~Conway, Emmet county, MI 49722, USA~45.4198;-84.8651~US-MI~45.4198,-84.8651~45.41980000~-84.86510000~49722~Emmet county~~~4.4~2904~3568
+Cooks~Cooks~~Cooks, Schoolcraft county, MI 49817, USA~45.9109;-86.5248~US-MI~45.9109,-86.5248~45.91090000~-86.52480000~49817~Schoolcraft county~~~4.1200004~1945~3717
+Coopersville~Coopersville~~Coopersville, Ottawa county, MI 49404, USA~43.0668;-85.9346~US-MI~43.0668,-85.9346~43.06680000~-85.93460000~49404~Ottawa county~~~4.23~1316~2326
+Copemish~Copemish~~Copemish, Manistee county, MI 49625, USA~44.4477;-85.8864~US-MI~44.4477,-85.8864~44.44770000~-85.88640000~49625~Manistee county~~~4.15~2145~3613
+Copper City~Copper-City~~Copper City, Houghton county, MI 49917, USA~47.2842;-88.3859~US-MI~47.2842,-88.3859~47.28420000~-88.38590000~49917~Houghton county~~~4.46~2220~4549
+Copper Harbor~Copper-Harbor~~Copper Harbor, Keweenaw county, MI 49918, USA~47.4701;-87.8877~US-MI~47.4701,-87.8877~47.47010000~-87.88770000~49918~Keweenaw county~~~4.3900003~1838~2635
+Coral~Coral~~Coral, Montcalm county, MI 49322, USA~43.3579;-85.3629~US-MI~43.3579,-85.3629~43.35790000~-85.36290000~49322~Montcalm county~~~4.5~2943~4717
+Cornell~Cornell~~Cornell, Delta county, MI 49818, USA~45.9091;-87.2007~US-MI~45.9091,-87.2007~45.90910000~-87.20070000~49818~Delta county~~~4.19~1182~4949
+Corunna~Corunna~~Corunna, Shiawassee county, MI 48817, USA~43.006;-84.0652~US-MI~43.006,-84.0652~43.00600000~-84.06520000~48817~Shiawassee county~~~4.4700003~2326~4439
+Covert~Covert~~Covert, Van Buren county, MI 49043, USA~42.294;-86.2727~US-MI~42.294,-86.2727~42.29400000~-86.27270000~49043~Van Buren county~~~4.32~1032~4462
+Covington~Covington~~Covington, Baraga county, MI 49919, USA~46.5483;-88.5137~US-MI~46.5483,-88.5137~46.54830000~-88.51370000~49919~Baraga county~~~4.17~1440~3282
+Cross Village~Cross-Village~~Cross Village, Emmet county, MI 49723, USA~45.63;-85.0234~US-MI~45.63,-85.0234~45.63000000~-85.02340000~49723~Emmet county~~~4.23~2747~4289
+Croswell~Croswell~~Croswell, Sanilac county, MI 48422, USA~43.2683;-82.632~US-MI~43.2683,-82.632~43.26830000~-82.63200000~48422~Sanilac county~~~4.34~2819~4029
+Crystal Falls~Crystal-Falls~~Crystal Falls, Iron county, MI 49920, USA~46.1048;-88.349~US-MI~46.1048,-88.349~46.10480000~-88.34900000~49920~Iron county~~~4.19~1341~3736
+Crystal~Crystal~~Crystal, Montcalm county, MI 48818, USA~43.2711;-84.9099~US-MI~43.2711,-84.9099~43.27110000~-84.90990000~48818~Montcalm county~~~4.48~2493~3656
+Curran~Curran~~Curran, Alcona county, MI 48728, USA~44.7283;-83.8096~US-MI~44.7283,-83.8096~44.72830000~-83.80960000~48728~Alcona county~~~4.27~1745~2615
+Curtis~Curtis~~Curtis, Mackinac county, MI 49820, USA~46.1981;-85.8205~US-MI~46.1981,-85.8205~46.19810000~-85.82050000~49820~Mackinac county~~~4.38~1879~4305
+Custer~Custer~~Custer, Mason county, MI 49405, USA~43.9273;-86.2019~US-MI~43.9273,-86.2019~43.92730000~-86.20190000~49405~Mason county~~~4.1200004~2754~4366
+Dafter~Dafter~~Dafter, Chippewa county, MI 49724, USA~46.3443;-84.4159~US-MI~46.3443,-84.4159~46.34430000~-84.41590000~49724~Chippewa county~~~4.33~1933~3547
+Daggett~Daggett~~Daggett, Menominee county, MI 49821, USA~45.4525;-87.5947~US-MI~45.4525,-87.5947~45.45250000~-87.59470000~49821~Menominee county~~~4.19~2782~3161
+Dansville~Dansville~~Dansville, Ingham county, MI 48819, USA~42.5473;-84.2794~US-MI~42.5473,-84.2794~42.54730000~-84.27940000~48819~Ingham county~~~4.2400002~1177~3053
+Davisburg~Davisburg~~Davisburg, Oakland county, MI 48350, USA~42.7429;-83.5309~US-MI~42.7429,-83.5309~42.74290000~-83.53090000~48350~Oakland county~~~4.2200003~2944~3348
+Davison~Davison~~Davison, Genesee county, MI 48423, USA~43.03;-83.524~US-MI~43.03,-83.524~43.03000000~-83.52400000~48423~Genesee county~~~4.32~2185~3524
+De Tour Village~De-Tour-Village~~De Tour Village, Chippewa county, MI 49725, USA~45.985;-83.9038~US-MI~45.985,-83.9038~45.98500000~-83.90380000~49725~Chippewa county~~~4.42~1182~3161
+Dearborn Heights~Dearborn-Heights~~Dearborn Heights, Wayne county, MI 48125, USA~42.2759;-83.2636~US-MI~42.2759,-83.2636~42.27590000~-83.26360000~48125~Wayne county~~~4.25~1157~3104
+Dearborn~Dearborn~~Dearborn, Wayne county, MI 48120, USA~42.3064;-83.1733~US-MI~42.3064,-83.1733~42.30640000~-83.17330000~48120~Wayne county~~~4.21~1805~2560
+Decatur~Decatur~~Decatur, Van Buren county, MI 49045, USA~42.1198;-85.9986~US-MI~42.1198,-85.9986~42.11980000~-85.99860000~49045~Van Buren county~~~4.32~1670~3531
+Decker~Decker~~Decker, Sanilac county, MI 48426, USA~43.505;-83.0652~US-MI~43.505,-83.0652~43.50500000~-83.06520000~48426~Sanilac county~~~4.27~1532~2244
+Deckerville~Deckerville~~Deckerville, Sanilac county, MI 48427, USA~43.5302;-82.7066~US-MI~43.5302,-82.7066~43.53020000~-82.70660000~48427~Sanilac county~~~4.42~2277~3520
+Deerfield~Deerfield~~Deerfield, Lenawee county, MI 49238, USA~41.8967;-83.7975~US-MI~41.8967,-83.7975~41.89670000~-83.79750000~49238~Lenawee county~~~4.33~1327~3701
+Deerton~Deerton~~Deerton, Alger county, MI 49822, USA~46.4492;-87.0063~US-MI~46.4492,-87.0063~46.44920000~-87.00630000~49822~Alger county~~~4.1800003~1764~3426
+Deford~Deford~~Deford, Tuscola county, MI 48729, USA~43.4919;-83.1838~US-MI~43.4919,-83.1838~43.49190000~-83.18380000~48729~Tuscola county~~~4.29~1246~3130
+Delton~Delton~~Delton, Barry county, MI 49046, USA~42.5162;-85.4005~US-MI~42.5162,-85.4005~42.51620000~-85.40050000~49046~Barry county~~~4.46~2851~2290
+Detroit~Detroit~~Detroit, Wayne county, MI 48201, USA~42.3464;-83.061~US-MI~42.3464,-83.061~42.34640000~-83.06100000~48201~Wayne county~~~4.1600003~1842~3085
+Dewitt~Dewitt~~Dewitt, Clinton county, MI 48820, USA~42.8466;-84.5903~US-MI~42.8466,-84.5903~42.84660000~-84.59030000~48820~Clinton county~~~4.36~2606~3469
+Dexter~Dexter~~Dexter, Washtenaw county, MI 48130, USA~42.3537;-83.8974~US-MI~42.3537,-83.8974~42.35370000~-83.89740000~48130~Washtenaw county~~~4.25~1191~4472
+Dimondale~Dimondale~~Dimondale, Eaton county, MI 48821, USA~42.6489;-84.6456~US-MI~42.6489,-84.6456~42.64890000~-84.64560000~48821~Eaton county~~~4.23~2822~3228
+Dodgeville~Dodgeville~~Dodgeville, Houghton county, MI 49921, USA~47.0904;-88.581~US-MI~47.0904,-88.581~47.09040000~-88.58100000~49921~Houghton county~~~4.3900003~2754~2395
+Dollar Bay~Dollar-Bay~~Dollar Bay, Houghton county, MI 49922, USA~47.1212;-88.5035~US-MI~47.1212,-88.5035~47.12120000~-88.50350000~49922~Houghton county~~~4.1400003~1494~3727
+Dorr~Dorr~~Dorr, Allegan county, MI 49323, USA~42.7211;-85.7799~US-MI~42.7211,-85.7799~42.72110000~-85.77990000~49323~Allegan county~~~4.26~1710~3675
+Douglas~Douglas~~Douglas, Allegan county, MI 49406, USA~42.6396;-86.214~US-MI~42.6396,-86.214~42.63960000~-86.21400000~49406~Allegan county~~~4.13~1824~4189
+Dowagiac~Dowagiac~~Dowagiac, Cass county, MI 49047, USA~41.9975;-86.1114~US-MI~41.9975,-86.1114~41.99750000~-86.11140000~49047~Cass county~~~4.4500003~1836~3516
+Dowling~Dowling~~Dowling, Barry county, MI 49050, USA~42.4976;-85.2414~US-MI~42.4976,-85.2414~42.49760000~-85.24140000~49050~Barry county~~~4.2400002~2324~4816
+Drayton Plains~Drayton-Plains~~Drayton Plains, Oakland county, MI 48330, USA~42.6836;-83.3772~US-MI~42.6836,-83.3772~42.68360000~-83.37720000~48330~Oakland county~~~4.33~2101~3169
+Drummond Island~Drummond-Island~~Drummond Island, Chippewa county, MI 49726, USA~45.9982;-83.7159~US-MI~45.9982,-83.7159~45.99820000~-83.71590000~49726~Chippewa county~~~4.25~1945~2019
+Dryden~Dryden~~Dryden, Lapeer county, MI 48428, USA~42.9368;-83.1434~US-MI~42.9368,-83.1434~42.93680000~-83.14340000~48428~Lapeer county~~~4.19~1431~3488
+Dundee~Dundee~~Dundee, Monroe county, MI 48131, USA~41.9658;-83.6685~US-MI~41.9658,-83.6685~41.96580000~-83.66850000~48131~Monroe county~~~4.4~2611~2786
+Durand~Durand~~Durand, Shiawassee county, MI 48429, USA~42.9095;-83.9918~US-MI~42.9095,-83.9918~42.90950000~-83.99180000~48429~Shiawassee county~~~4.27~1804~4989
+Eagle~Eagle~~Eagle, Clinton county, MI 48822, USA~42.976;-84.5352~US-MI~42.976,-84.5352~42.97600000~-84.53520000~48822~Clinton county~~~4.2400002~1427~3971
+East China~East-China~~East China, Saint Clair county, MI 48054, USA~42.7672;-82.5409~US-MI~42.7672,-82.5409~42.76720000~-82.54090000~48054~Saint Clair county~~~4.44~1752~3218
+East Jordan~East-Jordan~~East Jordan, Charlevoix county, MI 49727, USA~45.1757;-85.1325~US-MI~45.1757,-85.1325~45.17570000~-85.13250000~49727~Charlevoix county~~~4.4~1456~2235
+East Lansing~East-Lansing~~East Lansing, Ingham county, MI 48823, USA~42.7454;-84.4706~US-MI~42.7454,-84.4706~42.74540000~-84.47060000~48823~Ingham county~~~4.17~2924~4518
+East Leroy~East-Leroy~~East Leroy, Calhoun county, MI 49051, USA~42.1912;-85.2365~US-MI~42.1912,-85.2365~42.19120000~-85.23650000~49051~Calhoun county~~~4.1800003~1091~2646
+East Tawas~East-Tawas~~East Tawas, Iosco county, MI 48730, USA~44.3088;-83.4711~US-MI~44.3088,-83.4711~44.30880000~-83.47110000~48730~Iosco county~~~4.21~2106~3553
+Eastlake~Eastlake~~Eastlake, Manistee county, MI 49626, USA~44.2445;-86.2947~US-MI~44.2445,-86.2947~44.24450000~-86.29470000~49626~Manistee county~~~4.13~2648~3476
+Eastpointe~Eastpointe~~Eastpointe, Macomb county, MI 48021, USA~42.4639;-82.9462~US-MI~42.4639,-82.9462~42.46390000~-82.94620000~48021~Macomb county~~~4.11~1049~4549
+Eastport~Eastport~~Eastport, Antrim county, MI 49627, USA~45.0882;-85.3106~US-MI~45.0882,-85.3106~45.08820000~-85.31060000~49627~Antrim county~~~4.26~1807~3647
+Eaton Rapids~Eaton-Rapids~~Eaton Rapids, Eaton county, MI 48827, USA~42.5086;-84.6687~US-MI~42.5086,-84.6687~42.50860000~-84.66870000~48827~Eaton county~~~4.34~1539~2345
+Eau Claire~Eau-Claire~~Eau Claire, Berrien county, MI 49111, USA~42.0169;-86.3011~US-MI~42.0169,-86.3011~42.01690000~-86.30110000~49111~Berrien county~~~4.4300003~1654~4263
+Eben Junction~Eben-Junction~~Eben Junction, Alger county, MI 49825, USA~46.3534;-87.0335~US-MI~46.3534,-87.0335~46.35340000~-87.03350000~49825~Alger county~~~4.4~2647~2634
+Eckerman~Eckerman~~Eckerman, Chippewa county, MI 49728, USA~46.3325;-85.177~US-MI~46.3325,-85.177~46.33250000~-85.17700000~49728~Chippewa county~~~4.3900003~1537~3002
+Ecorse~Ecorse~~Ecorse, Wayne county, MI 48229, USA~42.2523;-83.1447~US-MI~42.2523,-83.1447~42.25230000~-83.14470000~48229~Wayne county~~~4.4500003~1499~4891
+Edenville~Edenville~~Edenville, Midland county, MI 48620, USA~43.7999;-84.388~US-MI~43.7999,-84.388~43.79990000~-84.38800000~48620~Midland county~~~4.28~2926~3239
+Edmore~Edmore~~Edmore, Montcalm county, MI 48829, USA~43.3988;-85.0281~US-MI~43.3988,-85.0281~43.39880000~-85.02810000~48829~Montcalm county~~~4.3~1126~3954
+Edwardsburg~Edwardsburg~~Edwardsburg, Cass county, MI 49112, USA~41.7974;-86.0407~US-MI~41.7974,-86.0407~41.79740000~-86.04070000~49112~Cass county~~~4.48~1983~4374
+Elberta~Elberta~~Elberta, Benzie county, MI 49628, USA~44.6177;-86.2257~US-MI~44.6177,-86.2257~44.61770000~-86.22570000~49628~Benzie county~~~4.35~2656~4412
+Elk Rapids~Elk-Rapids~~Elk Rapids, Antrim county, MI 49629, USA~44.9046;-85.3995~US-MI~44.9046,-85.3995~44.90460000~-85.39950000~49629~Antrim county~~~4.32~1121~3673
+Elkton~Elkton~~Elkton, Huron county, MI 48731, USA~43.833;-83.1589~US-MI~43.833,-83.1589~43.83300000~-83.15890000~48731~Huron county~~~4.26~2112~2279
+Ellsworth~Ellsworth~~Ellsworth, Antrim county, MI 49729, USA~45.1453;-85.2119~US-MI~45.1453,-85.2119~45.14530000~-85.21190000~49729~Antrim county~~~4.2200003~2638~2900
+Elm Hall~Elm-Hall~~Elm Hall, Gratiot county, MI 48830, USA~43.3626;-84.8341~US-MI~43.3626,-84.8341~43.36260000~-84.83410000~48830~Gratiot county~~~4.13~2300~4789
+Elmira~Elmira~~Elmira, Otsego county, MI 49730, USA~44.9501;-84.8834~US-MI~44.9501,-84.8834~44.95010000~-84.88340000~49730~Otsego county~~~4.23~2533~2544
+Elsie~Elsie~~Elsie, Clinton county, MI 48831, USA~43.0899;-84.4277~US-MI~43.0899,-84.4277~43.08990000~-84.42770000~48831~Clinton county~~~4.19~2279~2932
+Elwell~Elwell~~Elwell, Gratiot county, MI 48832, USA~43.4078;-84.7713~US-MI~43.4078,-84.7713~43.40780000~-84.77130000~48832~Gratiot county~~~4.4300003~1978~4296
+Emmett~Emmett~~Emmett, Saint Clair county, MI 48022, USA~43.023;-82.8141~US-MI~43.023,-82.8141~43.02300000~-82.81410000~48022~Saint Clair county~~~4.4~1135~4280
+Empire~Empire~~Empire, Leelanau county, MI 49630, USA~44.8375;-86.0321~US-MI~44.8375,-86.0321~44.83750000~-86.03210000~49630~Leelanau county~~~4.1800003~2712~4821
+Engadine~Engadine~~Engadine, Mackinac county, MI 49827, USA~46.2087;-85.5955~US-MI~46.2087,-85.5955~46.20870000~-85.59550000~49827~Mackinac county~~~4.32~1925~4964
+Erie~Erie~~Erie, Monroe county, MI 48133, USA~41.7825;-83.4907~US-MI~41.7825,-83.4907~41.78250000~-83.49070000~48133~Monroe county~~~4.4~1547~4804
+Escanaba~Escanaba~~Escanaba, Delta county, MI 49829, USA~45.7497;-87.0968~US-MI~45.7497,-87.0968~45.74970000~-87.09680000~49829~Delta county~~~4.42~2865~3379
+Essexville~Essexville~~Essexville, Bay county, MI 48732, USA~43.6055;-83.8227~US-MI~43.6055,-83.8227~43.60550000~-83.82270000~48732~Bay county~~~4.4~2793~3117
+Eureka~Eureka~~Eureka, Clinton county, MI 48833, USA~43.1033;-84.5072~US-MI~43.1033,-84.5072~43.10330000~-84.50720000~48833~Clinton county~~~4.44~1892~3990
+Evart~Evart~~Evart, Osceola county, MI 49631, USA~43.8937;-85.2675~US-MI~43.8937,-85.2675~43.89370000~-85.26750000~49631~Osceola county~~~4.1200004~1599~4381
+Ewen~Ewen~~Ewen, Ontonagon county, MI 49925, USA~46.5394;-89.3817~US-MI~46.5394,-89.3817~46.53940000~-89.38170000~49925~Ontonagon county~~~4.4100003~1768~3804
+Fair Haven~Fair-Haven~~Fair Haven, Saint Clair county, MI 48023, USA~42.6889;-82.6693~US-MI~42.6889,-82.6693~42.68890000~-82.66930000~48023~Saint Clair county~~~4.37~1579~4413
+Fairgrove~Fairgrove~~Fairgrove, Tuscola county, MI 48733, USA~43.5331;-83.5934~US-MI~43.5331,-83.5934~43.53310000~-83.59340000~48733~Tuscola county~~~4.19~2212~2254
+Fairview~Fairview~~Fairview, Oscoda county, MI 48621, USA~44.7238;-84.0377~US-MI~44.7238,-84.0377~44.72380000~-84.03770000~48621~Oscoda county~~~4.1600003~2183~2854
+Falmouth~Falmouth~~Falmouth, Missaukee county, MI 49632, USA~44.2561;-85.0245~US-MI~44.2561,-85.0245~44.25610000~-85.02450000~49632~Missaukee county~~~4.17~1503~2639
+Farmington~Farmington~~Farmington, Oakland county, MI 48331, USA~42.5051;-83.4086~US-MI~42.5051,-83.4086~42.50510000~-83.40860000~48331~Oakland county~~~4.37~2319~2016
+Farwell~Farwell~~Farwell, Clare county, MI 48622, USA~43.8631;-84.8681~US-MI~43.8631,-84.8681~43.86310000~-84.86810000~48622~Clare county~~~4.19~2083~3419
+Felch~Felch~~Felch, Dickinson county, MI 49831, USA~45.9984;-87.8269~US-MI~45.9984,-87.8269~45.99840000~-87.82690000~49831~Dickinson county~~~4.31~1400~3521
+Fennville~Fennville~~Fennville, Allegan county, MI 49408, USA~42.5672;-86.1262~US-MI~42.5672,-86.1262~42.56720000~-86.12620000~49408~Allegan county~~~4.42~2959~3583
+Fenton~Fenton~~Fenton, Genesee county, MI 48430, USA~42.8145;-83.7159~US-MI~42.8145,-83.7159~42.81450000~-83.71590000~48430~Genesee county~~~4.3~1765~4201
+Fenwick~Fenwick~~Fenwick, Montcalm county, MI 48834, USA~43.1462;-85.0485~US-MI~43.1462,-85.0485~43.14620000~-85.04850000~48834~Montcalm county~~~4.17~1007~3161
+Ferndale~Ferndale~~Ferndale, Oakland county, MI 48220, USA~42.4588;-83.1386~US-MI~42.4588,-83.1386~42.45880000~-83.13860000~48220~Oakland county~~~4.42~1399~2045
+Ferrysburg~Ferrysburg~~Ferrysburg, Ottawa county, MI 49409, USA~43.083;-86.2137~US-MI~43.083,-86.2137~43.08300000~-86.21370000~49409~Ottawa county~~~4.4500003~2766~3296
+Fife Lake~Fife-Lake~~Fife Lake, Kalkaska county, MI 49633, USA~44.5642;-85.1909~US-MI~44.5642,-85.1909~44.56420000~-85.19090000~49633~Kalkaska county~~~4.29~2711~4299
+Filer City~Filer-City~~Filer City, Manistee county, MI 49634, USA~44.2145;-86.2889~US-MI~44.2145,-86.2889~44.21450000~-86.28890000~49634~Manistee county~~~4.13~1792~2827
+Filion~Filion~~Filion, Huron county, MI 48432, USA~43.9045;-82.9987~US-MI~43.9045,-82.9987~43.90450000~-82.99870000~48432~Huron county~~~4.4900002~2265~2570
+Flat Rock~Flat-Rock~~Flat Rock, Wayne county, MI 48134, USA~42.1078;-83.2814~US-MI~42.1078,-83.2814~42.10780000~-83.28140000~48134~Wayne county~~~4.4100003~1853~3431
+Flint~Flint~~Flint, Genesee county, MI 48501, USA~42.9662;-83.7778~US-MI~42.9662,-83.7778~42.96620000~-83.77780000~48501~Genesee county~~~4.15~1562~3661
+Flushing~Flushing~~Flushing, Genesee county, MI 48433, USA~43.0689;-83.8372~US-MI~43.0689,-83.8372~43.06890000~-83.83720000~48433~Genesee county~~~4.36~2073~4167
+Forestville~Forestville~~Forestville, Sanilac county, MI 48434, USA~43.6578;-82.6095~US-MI~43.6578,-82.6095~43.65780000~-82.60950000~48434~Sanilac county~~~4.1400003~1549~3751
+Fort Gratiot~Fort-Gratiot~~Fort Gratiot, Saint Clair county, MI 48059, USA~43.0756;-82.48~US-MI~43.0756,-82.48~43.07560000~-82.48000000~48059~Saint Clair county~~~4.2200003~2984~3574
+Foster City~Foster-City~~Foster City, Dickinson county, MI 49834, USA~46.0837;-87.7782~US-MI~46.0837,-87.7782~46.08370000~-87.77820000~49834~Dickinson county~~~4.4900002~2042~2058
+Fostoria~Fostoria~~Fostoria, Tuscola county, MI 48435, USA~43.2608;-83.3829~US-MI~43.2608,-83.3829~43.26080000~-83.38290000~48435~Tuscola county~~~4.5~2342~3581
+Fountain~Fountain~~Fountain, Mason county, MI 49410, USA~44.0165;-86.1352~US-MI~44.0165,-86.1352~44.01650000~-86.13520000~49410~Mason county~~~4.11~2464~4389
+Fowler~Fowler~~Fowler, Clinton county, MI 48835, USA~43.0101;-84.75~US-MI~43.0101,-84.75~43.01010000~-84.75000000~48835~Clinton county~~~4.37~1774~4167
+Fowlerville~Fowlerville~~Fowlerville, Livingston county, MI 48836, USA~42.6638;-84.069~US-MI~42.6638,-84.069~42.66380000~-84.06900000~48836~Livingston county~~~4.42~1128~2758
+Frankenmuth~Frankenmuth~~Frankenmuth, Saginaw county, MI 48734, USA~43.3406;-83.7476~US-MI~43.3406,-83.7476~43.34060000~-83.74760000~48734~Saginaw county~~~4.33~1848~4213
+Frankfort~Frankfort~~Frankfort, Benzie county, MI 49635, USA~44.632;-86.2147~US-MI~44.632,-86.2147~44.63200000~-86.21470000~49635~Benzie county~~~4.27~2244~2741
+Franklin~Franklin~~Franklin, Oakland county, MI 48025, USA~42.5232;-83.2658~US-MI~42.5232,-83.2658~42.52320000~-83.26580000~48025~Oakland county~~~4.1800003~2200~3667
+Fraser~Fraser~~Fraser, Macomb county, MI 48026, USA~42.5342;-82.951~US-MI~42.5342,-82.951~42.53420000~-82.95100000~48026~Macomb county~~~4.36~1131~3253
+Frederic~Frederic~~Frederic, Crawford county, MI 49733, USA~44.7959;-84.7234~US-MI~44.7959,-84.7234~44.79590000~-84.72340000~49733~Crawford county~~~4.25~1779~3957
+Free Soil~Free-Soil~~Free Soil, Mason county, MI 49411, USA~44.1102;-86.2385~US-MI~44.1102,-86.2385~44.11020000~-86.23850000~49411~Mason county~~~4.37~2277~4996
+Freeland~Freeland~~Freeland, Saginaw county, MI 48623, USA~43.5018;-84.1282~US-MI~43.5018,-84.1282~43.50180000~-84.12820000~48623~Saginaw county~~~4.31~2350~4606
+Freeport~Freeport~~Freeport, Barry county, MI 49325, USA~42.7482;-85.3082~US-MI~42.7482,-85.3082~42.74820000~-85.30820000~49325~Barry county~~~4.1800003~1033~3446
+Fremont~Fremont~~Fremont, Newaygo county, MI 49412, USA~43.4665;-85.948~US-MI~43.4665,-85.948~43.46650000~-85.94800000~49412~Newaygo county~~~4.13~1890~3972
+Frontier~Frontier~~Frontier, Hillsdale county, MI 49239, USA~41.7939;-84.6231~US-MI~41.7939,-84.6231~41.79390000~-84.62310000~49239~Hillsdale county~~~4.21~2929~4424
+Fruitport~Fruitport~~Fruitport, Muskegon county, MI 49415, USA~43.144;-86.1348~US-MI~43.144,-86.1348~43.14400000~-86.13480000~49415~Muskegon county~~~4.1400003~1836~2194
+Fulton~Fulton~~Fulton, Kalamazoo county, MI 49052, USA~42.1071;-85.3396~US-MI~42.1071,-85.3396~42.10710000~-85.33960000~49052~Kalamazoo county~~~4.27~1465~3292
+Gaastra~Gaastra~~Gaastra, Iron county, MI 49927, USA~46.0515;-88.589~US-MI~46.0515,-88.589~46.05150000~-88.58900000~49927~Iron county~~~4.1400003~2377~3398
+Gagetown~Gagetown~~Gagetown, Tuscola county, MI 48735, USA~43.6497;-83.2731~US-MI~43.6497,-83.2731~43.64970000~-83.27310000~48735~Tuscola county~~~4.28~1402~2340
+Gaines~Gaines~~Gaines, Genesee county, MI 48436, USA~42.8661;-83.8755~US-MI~42.8661,-83.8755~42.86610000~-83.87550000~48436~Genesee county~~~4.11~2107~4342
+Galesburg~Galesburg~~Galesburg, Kalamazoo county, MI 49053, USA~42.2898;-85.4203~US-MI~42.2898,-85.4203~42.28980000~-85.42030000~49053~Kalamazoo county~~~4.3~2046~2172
+Galien~Galien~~Galien, Berrien county, MI 49113, USA~41.7991;-86.5155~US-MI~41.7991,-86.5155~41.79910000~-86.51550000~49113~Berrien county~~~4.1600003~1648~2797
+Garden City~Garden-City~~Garden City, Wayne county, MI 48135, USA~42.3243;-83.3386~US-MI~42.3243,-83.3386~42.32430000~-83.33860000~48135~Wayne county~~~4.4700003~1154~3270
+Garden~Garden~~Garden, Delta county, MI 49835, USA~45.7369;-86.5916~US-MI~45.7369,-86.5916~45.73690000~-86.59160000~49835~Delta county~~~4.2000003~1364~3434
+Gaylord~Gaylord~~Gaylord, Otsego county, MI 49734, USA~45.0261;-84.673~US-MI~45.0261,-84.673~45.02610000~-84.67300000~49734~Otsego county~~~4.4700003~1241~3562
+Genesee~Genesee~~Genesee, Genesee county, MI 48437, USA~43.1043;-83.6387~US-MI~43.1043,-83.6387~43.10430000~-83.63870000~48437~Genesee county~~~4.31~2616~3192
+Germfask~Germfask~~Germfask, Schoolcraft county, MI 49836, USA~46.2437;-85.9287~US-MI~46.2437,-85.9287~46.24370000~-85.92870000~49836~Schoolcraft county~~~4.2200003~1563~4584
+Gilford~Gilford~~Gilford, Tuscola county, MI 48736, USA~43.4948;-83.6165~US-MI~43.4948,-83.6165~43.49480000~-83.61650000~48736~Tuscola county~~~4.4700003~1303~4609
+Gladstone~Gladstone~~Gladstone, Delta county, MI 49837, USA~45.8801;-87.0476~US-MI~45.8801,-87.0476~45.88010000~-87.04760000~49837~Delta county~~~4.1400003~1300~4021
+Gladwin~Gladwin~~Gladwin, Gladwin county, MI 48624, USA~44.0361;-84.4574~US-MI~44.0361,-84.4574~44.03610000~-84.45740000~48624~Gladwin county~~~4.2000003~2958~2418
+Glen Arbor~Glen-Arbor~~Glen Arbor, Leelanau county, MI 49636, USA~44.891;-85.964~US-MI~44.891,-85.964~44.89100000~-85.96400000~49636~Leelanau county~~~4.1800003~2321~2219
+Glenn~Glenn~~Glenn, Allegan county, MI 49416, USA~42.522;-86.2326~US-MI~42.522,-86.2326~42.52200000~-86.23260000~49416~Allegan county~~~4.3~2257~3491
+Glennie~Glennie~~Glennie, Alcona county, MI 48737, USA~44.5497;-83.7057~US-MI~44.5497,-83.7057~44.54970000~-83.70570000~48737~Alcona county~~~4.23~2431~2523
+Gobles~Gobles~~Gobles, Van Buren county, MI 49055, USA~42.3638;-85.8713~US-MI~42.3638,-85.8713~42.36380000~-85.87130000~49055~Van Buren county~~~4.4900002~2885~2146
+Goetzville~Goetzville~~Goetzville, Chippewa county, MI 49736, USA~46.095;-84.067~US-MI~46.095,-84.067~46.09500000~-84.06700000~49736~Chippewa county~~~4.17~1709~2968
+Good Hart~Good-Hart~~Good Hart, Emmet county, MI 49737, USA~45.5628;-85.097~US-MI~45.5628,-85.097~45.56280000~-85.09700000~49737~Emmet county~~~4.17~2339~3508
+Goodells~Goodells~~Goodells, Saint Clair county, MI 48027, USA~42.9817;-82.6605~US-MI~42.9817,-82.6605~42.98170000~-82.66050000~48027~Saint Clair county~~~4.44~1602~3847
+Goodrich~Goodrich~~Goodrich, Genesee county, MI 48438, USA~42.9104;-83.5079~US-MI~42.9104,-83.5079~42.91040000~-83.50790000~48438~Genesee county~~~4.2200003~2361~3074
+Gould City~Gould-City~~Gould City, Mackinac county, MI 49838, USA~46.0694;-85.7327~US-MI~46.0694,-85.7327~46.06940000~-85.73270000~49838~Mackinac county~~~4.1400003~2769~4737
+Gowen~Gowen~~Gowen, Kent county, MI 49326, USA~43.235;-85.3404~US-MI~43.235,-85.3404~43.23500000~-85.34040000~49326~Kent county~~~4.15~1799~4237
+Grand Blanc~Grand-Blanc~~Grand Blanc, Genesee county, MI 48439, USA~42.9267;-83.638~US-MI~42.9267,-83.638~42.92670000~-83.63800000~48439~Genesee county~~~4.3900003~1237~2406
+Grand Haven~Grand-Haven~~Grand Haven, Ottawa county, MI 49417, USA~43.0355;-86.1838~US-MI~43.0355,-86.1838~43.03550000~-86.18380000~49417~Ottawa county~~~4.1400003~1079~4071
+Grand Junction~Grand-Junction~~Grand Junction, Van Buren county, MI 49056, USA~42.3752;-86.0594~US-MI~42.3752,-86.0594~42.37520000~-86.05940000~49056~Van Buren county~~~4.2400002~2162~3309
+Grand Ledge~Grand-Ledge~~Grand Ledge, Eaton county, MI 48837, USA~42.7419;-84.7438~US-MI~42.7419,-84.7438~42.74190000~-84.74380000~48837~Eaton county~~~4.35~1478~2014
+Grand Marais~Grand-Marais~~Grand Marais, Alger county, MI 49839, USA~46.5887;-86.0469~US-MI~46.5887,-86.0469~46.58870000~-86.04690000~49839~Alger county~~~4.37~1639~3617
+Grand Rapids~Grand-Rapids~~Grand Rapids, Kent county, MI 49501, USA~42.9649;-85.6585~US-MI~42.9649,-85.6585~42.96490000~-85.65850000~49501~Kent county~~~4.34~2353~4781
+Grandville~Grandville~~Grandville, Kent county, MI 49418, USA~42.8962;-85.7561~US-MI~42.8962,-85.7561~42.89620000~-85.75610000~49418~Kent county~~~4.44~1614~3641
+Grant~Grant~~Grant, Newaygo county, MI 49327, USA~43.3418;-85.8301~US-MI~43.3418,-85.8301~43.34180000~-85.83010000~49327~Newaygo county~~~4.32~1148~4358
+Grass Lake~Grass-Lake~~Grass Lake, Jackson county, MI 49240, USA~42.2833;-84.2007~US-MI~42.2833,-84.2007~42.28330000~-84.20070000~49240~Jackson county~~~4.4500003~2465~4028
+Grawn~Grawn~~Grawn, Grand Traverse county, MI 49637, USA~44.6335;-85.7068~US-MI~44.6335,-85.7068~44.63350000~-85.70680000~49637~Grand Traverse county~~~4.17~1925~2635
+Grayling~Grayling~~Grayling, Crawford county, MI 49738, USA~44.6604;-84.7276~US-MI~44.6604,-84.7276~44.66040000~-84.72760000~49738~Crawford county~~~4.31~1698~4690
+Greenbush~Greenbush~~Greenbush, Alcona county, MI 48738, USA~44.5654;-83.3323~US-MI~44.5654,-83.3323~44.56540000~-83.33230000~48738~Alcona county~~~4.48~2276~4977
+Greenland~Greenland~~Greenland, Ontonagon county, MI 49929, USA~46.7826;-89.0951~US-MI~46.7826,-89.0951~46.78260000~-89.09510000~49929~Ontonagon county~~~4.2200003~2398~2165
+Greenville~Greenville~~Greenville, Montcalm county, MI 48838, USA~43.1901;-85.2473~US-MI~43.1901,-85.2473~43.19010000~-85.24730000~48838~Montcalm county~~~4.26~1702~2234
+Gregory~Gregory~~Gregory, Livingston county, MI 48137, USA~42.4684;-84.0659~US-MI~42.4684,-84.0659~42.46840000~-84.06590000~48137~Livingston county~~~4.4300003~2495~3896
+Grosse Ile~Grosse-Ile~~Grosse Ile, Wayne county, MI 48138, USA~42.1343;-83.1537~US-MI~42.1343,-83.1537~42.13430000~-83.15370000~48138~Wayne county~~~4.3900003~2504~4492
+Grosse Pointe~Grosse-Pointe~~Grosse Pointe, Wayne county, MI 48230, USA~42.3946;-82.9185~US-MI~42.3946,-82.9185~42.39460000~-82.91850000~48230~Wayne county~~~4.4700003~1010~3520
+Gulliver~Gulliver~~Gulliver, Schoolcraft county, MI 49840, USA~46.1136;-86.0081~US-MI~46.1136,-86.0081~46.11360000~-86.00810000~49840~Schoolcraft county~~~4.4700003~1146~4605
+Gwinn~Gwinn~~Gwinn, Marquette county, MI 49841, USA~46.3238;-87.4804~US-MI~46.3238,-87.4804~46.32380000~-87.48040000~49841~Marquette county~~~4.5~1362~3461
+Hadley~Hadley~~Hadley, Lapeer county, MI 48440, USA~42.9542;-83.4007~US-MI~42.9542,-83.4007~42.95420000~-83.40070000~48440~Lapeer county~~~4.31~1368~3614
+Hagar Shores~Hagar-Shores~~Hagar Shores, Berrien county, MI 49039, USA~42.2;-86.3333~US-MI~42.2,-86.3333~42.20000000~-86.33330000~49039~Berrien county~~~4.2400002~2828~2254
+Hale~Hale~~Hale, Iosco county, MI 48739, USA~44.3987;-83.8139~US-MI~44.3987,-83.8139~44.39870000~-83.81390000~48739~Iosco county~~~4.3~2107~3622
+Hamburg~Hamburg~~Hamburg, Livingston county, MI 48139, USA~42.454;-83.8113~US-MI~42.454,-83.8113~42.45400000~-83.81130000~48139~Livingston county~~~4.2400002~1542~2627
+Hamilton~Hamilton~~Hamilton, Allegan county, MI 49419, USA~42.6863;-85.9845~US-MI~42.6863,-85.9845~42.68630000~-85.98450000~49419~Allegan county~~~4.1600003~2388~4390
+Hamtramck~Hamtramck~~Hamtramck, Wayne county, MI 48212, USA~42.4084;-83.0583~US-MI~42.4084,-83.0583~42.40840000~-83.05830000~48212~Wayne county~~~4.46~1474~2750
+Hancock~Hancock~~Hancock, Houghton county, MI 49930, USA~47.1447;-88.5268~US-MI~47.1447,-88.5268~47.14470000~-88.52680000~49930~Houghton county~~~4.2200003~2178~4366
+Hanover~Hanover~~Hanover, Jackson county, MI 49241, USA~42.1059;-84.6044~US-MI~42.1059,-84.6044~42.10590000~-84.60440000~49241~Jackson county~~~4.42~1071~3212
+Harbert~Harbert~~Harbert, Berrien county, MI 49115, USA~41.8751;-86.6309~US-MI~41.8751,-86.6309~41.87510000~-86.63090000~49115~Berrien county~~~4.3~2828~4260
+Harbor Beach~Harbor-Beach~~Harbor Beach, Huron county, MI 48441, USA~43.8092;-82.6867~US-MI~43.8092,-82.6867~43.80920000~-82.68670000~48441~Huron county~~~4.37~1856~4659
+Harbor Springs~Harbor-Springs~~Harbor Springs, Emmet county, MI 49740, USA~45.5315;-85.0046~US-MI~45.5315,-85.0046~45.53150000~-85.00460000~49740~Emmet county~~~4.36~2566~4727
+Harper Woods~Harper-Woods~~Harper Woods, Wayne county, MI 48225, USA~42.4377;-82.9409~US-MI~42.4377,-82.9409~42.43770000~-82.94090000~48225~Wayne county~~~4.21~1004~3012
+Harrietta~Harrietta~~Harrietta, Wexford county, MI 49638, USA~44.292;-85.7274~US-MI~44.292,-85.7274~44.29200000~-85.72740000~49638~Wexford county~~~4.3900003~1211~4885
+Harris~Harris~~Harris, Menominee county, MI 49845, USA~45.7029;-87.3473~US-MI~45.7029,-87.3473~45.70290000~-87.34730000~49845~Menominee county~~~4.15~2260~3813
+Harrison Township~Harrison-Township~~Harrison Township, Macomb county, MI 48045, USA~42.6094;-82.8357~US-MI~42.6094,-82.8357~42.60940000~-82.83570000~48045~Macomb county~~~4.32~2747~3831
+Harrison~Harrison~~Harrison, Clare county, MI 48625, USA~44.0414;-84.8071~US-MI~44.0414,-84.8071~44.04140000~-84.80710000~48625~Clare county~~~4.33~1122~3569
+Harrisville~Harrisville~~Harrisville, Alcona county, MI 48740, USA~44.6587;-83.3585~US-MI~44.6587,-83.3585~44.65870000~-83.35850000~48740~Alcona county~~~4.31~2156~2536
+Harsens Island~Harsens-Island~~Harsens Island, Saint Clair county, MI 48028, USA~42.5777;-82.6021~US-MI~42.5777,-82.6021~42.57770000~-82.60210000~48028~Saint Clair county~~~4.17~1952~2947
+Hart~Hart~~Hart, Oceana county, MI 49420, USA~43.7035;-86.3596~US-MI~43.7035,-86.3596~43.70350000~-86.35960000~49420~Oceana county~~~4.1600003~1630~3547
+Hartford~Hartford~~Hartford, Van Buren county, MI 49057, USA~42.194;-86.1702~US-MI~42.194,-86.1702~42.19400000~-86.17020000~49057~Van Buren county~~~4.19~2777~2812
+Hartland~Hartland~~Hartland, Livingston county, MI 48353, USA~42.6242;-83.7077~US-MI~42.6242,-83.7077~42.62420000~-83.70770000~48353~Livingston county~~~4.1800003~1260~3983
+Haslett~Haslett~~Haslett, Ingham county, MI 48840, USA~42.7518;-84.3956~US-MI~42.7518,-84.3956~42.75180000~-84.39560000~48840~Ingham county~~~4.21~2197~4901
+Hastings~Hastings~~Hastings, Barry county, MI 49058, USA~42.6399;-85.2948~US-MI~42.6399,-85.2948~42.63990000~-85.29480000~49058~Barry county~~~4.1600003~2150~2126
+Hawks~Hawks~~Hawks, Presque Isle county, MI 49743, USA~45.2942;-83.8735~US-MI~45.2942,-83.8735~45.29420000~-83.87350000~49743~Presque Isle county~~~4.33~1788~3144
+Hazel Park~Hazel-Park~~Hazel Park, Oakland county, MI 48030, USA~42.4605;-83.0969~US-MI~42.4605,-83.0969~42.46050000~-83.09690000~48030~Oakland county~~~4.46~1511~2508
+Hemlock~Hemlock~~Hemlock, Saginaw county, MI 48626, USA~43.4102;-84.2236~US-MI~43.4102,-84.2236~43.41020000~-84.22360000~48626~Saginaw county~~~4.34~2657~3807
+Henderson~Henderson~~Henderson, Shiawassee county, MI 48841, USA~43.1002;-84.2274~US-MI~43.1002,-84.2274~43.10020000~-84.22740000~48841~Shiawassee county~~~4.19~1420~4324
+Hermansville~Hermansville~~Hermansville, Menominee county, MI 49847, USA~45.7521;-87.6423~US-MI~45.7521,-87.6423~45.75210000~-87.64230000~49847~Menominee county~~~4.1600003~2569~3735
+Herron~Herron~~Herron, Alpena county, MI 49744, USA~44.9923;-83.664~US-MI~44.9923,-83.664~44.99230000~-83.66400000~49744~Alpena county~~~4.26~1543~2273
+Hersey~Hersey~~Hersey, Osceola county, MI 49639, USA~43.852;-85.4098~US-MI~43.852,-85.4098~43.85200000~-85.40980000~49639~Osceola county~~~4.48~1261~4745
+Hesperia~Hesperia~~Hesperia, Oceana county, MI 49421, USA~43.6129;-86.0635~US-MI~43.6129,-86.0635~43.61290000~-86.06350000~49421~Oceana county~~~4.1800003~2163~3832
+Hessel~Hessel~~Hessel, Mackinac county, MI 49745, USA~46.0258;-84.3275~US-MI~46.0258,-84.3275~46.02580000~-84.32750000~49745~Mackinac county~~~4.42~1946~3268
+Hickory Corners~Hickory-Corners~~Hickory Corners, Barry county, MI 49060, USA~42.4362;-85.4007~US-MI~42.4362,-85.4007~42.43620000~-85.40070000~49060~Barry county~~~4.15~2014~2403
+Higgins Lake~Higgins-Lake~~Higgins Lake, Roscommon county, MI 48627, USA~44.442;-84.7436~US-MI~44.442,-84.7436~44.44200000~-84.74360000~48627~Roscommon county~~~4.4100003~1614~2428
+Highland Park~Highland-Park~~Highland Park, Wayne county, MI 48203, USA~42.424;-83.1019~US-MI~42.424,-83.1019~42.42400000~-83.10190000~48203~Wayne county~~~4.3900003~1595~2334
+Highland~Highland~~Highland, Oakland county, MI 48356, USA~42.65;-83.5826~US-MI~42.65,-83.5826~42.65000000~-83.58260000~48356~Oakland county~~~4.35~2358~3204
+Hillman~Hillman~~Hillman, Montmorency county, MI 49746, USA~45.0661;-83.8438~US-MI~45.0661,-83.8438~45.06610000~-83.84380000~49746~Montmorency county~~~4.4900002~2396~4044
+Hillsdale~Hillsdale~~Hillsdale, Hillsdale county, MI 49242, USA~41.9012;-84.6202~US-MI~41.9012,-84.6202~41.90120000~-84.62020000~49242~Hillsdale county~~~4.42~1966~2791
+Holland~Holland~~Holland, Ottawa county, MI 49422, USA~42.7868;-86.1091~US-MI~42.7868,-86.1091~42.78680000~-86.10910000~49422~Ottawa county~~~4.37~1065~4958
+Holly~Holly~~Holly, Oakland county, MI 48442, USA~42.7926;-83.6096~US-MI~42.7926,-83.6096~42.79260000~-83.60960000~48442~Oakland county~~~4.1800003~1953~4190
+Holt~Holt~~Holt, Ingham county, MI 48842, USA~42.6405;-84.5287~US-MI~42.6405,-84.5287~42.64050000~-84.52870000~48842~Ingham county~~~4.5~1299~3002
+Holton~Holton~~Holton, Muskegon county, MI 49425, USA~43.4252;-86.1052~US-MI~43.4252,-86.1052~43.42520000~-86.10520000~49425~Muskegon county~~~4.4~2990~4335
+Homer~Homer~~Homer, Calhoun county, MI 49245, USA~42.151;-84.8118~US-MI~42.151,-84.8118~42.15100000~-84.81180000~49245~Calhoun county~~~4.4700003~2489~3502
+Honor~Honor~~Honor, Benzie county, MI 49640, USA~44.7038;-86.0602~US-MI~44.7038,-86.0602~44.70380000~-86.06020000~49640~Benzie county~~~4.11~1012~3986
+Hope~Hope~~Hope, Midland county, MI 48628, USA~43.7802;-84.3316~US-MI~43.7802,-84.3316~43.78020000~-84.33160000~48628~Midland county~~~4.28~2848~4112
+Hopkins~Hopkins~~Hopkins, Allegan county, MI 49328, USA~42.6302;-85.7505~US-MI~42.6302,-85.7505~42.63020000~-85.75050000~49328~Allegan county~~~4.38~1699~2012
+Horton~Horton~~Horton, Jackson county, MI 49246, USA~42.1183;-84.5018~US-MI~42.1183,-84.5018~42.11830000~-84.50180000~49246~Jackson county~~~4.27~2396~2923
+Houghton Lake Heights~Houghton-Lake-Heights~~Houghton Lake Heights, Roscommon county, MI 48630, USA~44.3254;-84.7743~US-MI~44.3254,-84.7743~44.32540000~-84.77430000~48630~Roscommon county~~~4.19~1457~4695
+Houghton Lake~Houghton-Lake~~Houghton Lake, Roscommon county, MI 48629, USA~44.3253;-84.737~US-MI~44.3253,-84.737~44.32530000~-84.73700000~48629~Roscommon county~~~4.4100003~1676~3487
+Houghton~Houghton~~Houghton, Houghton county, MI 49931, USA~47.1152;-88.5634~US-MI~47.1152,-88.5634~47.11520000~-88.56340000~49931~Houghton county~~~4.34~1169~4407
+Howard City~Howard-City~~Howard City, Montcalm county, MI 49329, USA~43.4125;-85.4597~US-MI~43.4125,-85.4597~43.41250000~-85.45970000~49329~Montcalm county~~~4.42~2069~4347
+Howell~Howell~~Howell, Livingston county, MI 48843, USA~42.6209;-83.9191~US-MI~42.6209,-83.9191~42.62090000~-83.91910000~48843~Livingston county~~~4.21~2670~2661
+Hubbard Lake~Hubbard-Lake~~Hubbard Lake, Alpena county, MI 49747, USA~44.8921;-83.6111~US-MI~44.8921,-83.6111~44.89210000~-83.61110000~49747~Alpena county~~~4.4100003~1224~3617
+Hubbardston~Hubbardston~~Hubbardston, Ionia county, MI 48845, USA~43.0929;-84.8682~US-MI~43.0929,-84.8682~43.09290000~-84.86820000~48845~Ionia county~~~4.32~2112~4849
+Hubbell~Hubbell~~Hubbell, Houghton county, MI 49934, USA~47.1753;-88.4304~US-MI~47.1753,-88.4304~47.17530000~-88.43040000~49934~Houghton county~~~4.4500003~1221~2562
+Hudson~Hudson~~Hudson, Lenawee county, MI 49247, USA~41.8531;-84.33~US-MI~41.8531,-84.33~41.85310000~-84.33000000~49247~Lenawee county~~~4.4100003~1908~4625
+Hudsonville~Hudsonville~~Hudsonville, Ottawa county, MI 49426, USA~42.8756;-85.877~US-MI~42.8756,-85.877~42.87560000~-85.87700000~49426~Ottawa county~~~4.31~2686~3380
+Hulbert~Hulbert~~Hulbert, Chippewa county, MI 49748, USA~46.3556;-85.1561~US-MI~46.3556,-85.1561~46.35560000~-85.15610000~49748~Chippewa county~~~4.23~1714~3391
+Huntington Woods~Huntington-Woods~~Huntington Woods, Oakland county, MI 48070, USA~42.48;-83.1666~US-MI~42.48,-83.1666~42.48000000~-83.16660000~48070~Oakland county~~~4.4700003~2495~2664
+Ida~Ida~~Ida, Monroe county, MI 48140, USA~41.8758;-83.5803~US-MI~41.8758,-83.5803~41.87580000~-83.58030000~48140~Monroe county~~~4.44~1996~4031
+Idlewild~Idlewild~~Idlewild, Lake county, MI 49642, USA~43.8895;-85.7825~US-MI~43.8895,-85.7825~43.88950000~-85.78250000~49642~Lake county~~~4.2400002~1484~3679
+Imlay City~Imlay-City~~Imlay City, Lapeer county, MI 48444, USA~43.0553;-83.0706~US-MI~43.0553,-83.0706~43.05530000~-83.07060000~48444~Lapeer county~~~4.1600003~2855~2329
+Indian River~Indian-River~~Indian River, Cheboygan county, MI 49749, USA~45.4253;-84.5885~US-MI~45.4253,-84.5885~45.42530000~-84.58850000~49749~Cheboygan county~~~4.11~2318~3499
+Ingalls~Ingalls~~Ingalls, Menominee county, MI 49848, USA~45.3793;-87.6135~US-MI~45.3793,-87.6135~45.37930000~-87.61350000~49848~Menominee county~~~4.25~2399~3939
+Inkster~Inkster~~Inkster, Wayne county, MI 48141, USA~42.2924;-83.317~US-MI~42.2924,-83.317~42.29240000~-83.31700000~48141~Wayne county~~~4.4900002~1075~4883
+Interlochen~Interlochen~~Interlochen, Grand Traverse county, MI 49643, USA~44.6512;-85.8386~US-MI~44.6512,-85.8386~44.65120000~-85.83860000~49643~Grand Traverse county~~~4.38~2006~4802
+Ionia~Ionia~~Ionia, Ionia county, MI 48846, USA~42.9854;-85.0641~US-MI~42.9854,-85.0641~42.98540000~-85.06410000~48846~Ionia county~~~4.2400002~1068~4798
+Iron Mountain~Iron-Mountain~~Iron Mountain, Dickinson county, MI 49801, USA~45.8179;-88.0666~US-MI~45.8179,-88.0666~45.81790000~-88.06660000~49801~Dickinson county~~~4.4700003~1775~4680
+Iron River~Iron-River~~Iron River, Iron county, MI 49935, USA~46.1068;-88.6571~US-MI~46.1068,-88.6571~46.10680000~-88.65710000~49935~Iron county~~~4.13~2469~3016
+Irons~Irons~~Irons, Lake county, MI 49644, USA~44.1659;-85.9584~US-MI~44.1659,-85.9584~44.16590000~-85.95840000~49644~Lake county~~~4.4700003~1599~3601
+Ironwood~Ironwood~~Ironwood, Gogebic county, MI 49938, USA~46.4566;-90.1565~US-MI~46.4566,-90.1565~46.45660000~-90.15650000~49938~Gogebic county~~~4.33~1636~4334
+Ishpeming~Ishpeming~~Ishpeming, Marquette county, MI 49849, USA~46.4952;-87.7256~US-MI~46.4952,-87.7256~46.49520000~-87.72560000~49849~Marquette county~~~4.28~1470~2530
+Ithaca~Ithaca~~Ithaca, Gratiot county, MI 48847, USA~43.2711;-84.5923~US-MI~43.2711,-84.5923~43.27110000~-84.59230000~48847~Gratiot county~~~4.2400002~2214~3114
+Jackson~Jackson~~Jackson, Jackson county, MI 49201, USA~42.2486;-84.385~US-MI~42.2486,-84.385~42.24860000~-84.38500000~49201~Jackson county~~~4.33~1049~3302
+Jamestown~Jamestown~~Jamestown, Ottawa county, MI 49427, USA~42.8271;-85.8469~US-MI~42.8271,-85.8469~42.82710000~-85.84690000~49427~Ottawa county~~~4.19~2831~2245
+Jasper~Jasper~~Jasper, Lenawee county, MI 49248, USA~41.7672;-84.012~US-MI~41.7672,-84.012~41.76720000~-84.01200000~49248~Lenawee county~~~4.38~1746~3328
+Jeddo~Jeddo~~Jeddo, Saint Clair county, MI 48032, USA~43.1732;-82.5933~US-MI~43.1732,-82.5933~43.17320000~-82.59330000~48032~Saint Clair county~~~4.35~1809~3127
+Jenison~Jenison~~Jenison, Ottawa county, MI 49428, USA~42.9075;-85.8303~US-MI~42.9075,-85.8303~42.90750000~-85.83030000~49428~Ottawa county~~~4.2400002~1453~2520
+Jerome~Jerome~~Jerome, Hillsdale county, MI 49249, USA~42.0434;-84.4452~US-MI~42.0434,-84.4452~42.04340000~-84.44520000~49249~Hillsdale county~~~4.33~1589~4652
+Johannesburg~Johannesburg~~Johannesburg, Otsego county, MI 49751, USA~44.9768;-84.4492~US-MI~44.9768,-84.4492~44.97680000~-84.44920000~49751~Otsego county~~~4.1800003~1291~3001
+Jones~Jones~~Jones, Cass county, MI 49061, USA~41.8814;-85.8257~US-MI~41.8814,-85.8257~41.88140000~-85.82570000~49061~Cass county~~~4.28~1506~2879
+Jonesville~Jonesville~~Jonesville, Hillsdale county, MI 49250, USA~42.0096;-84.6301~US-MI~42.0096,-84.6301~42.00960000~-84.63010000~49250~Hillsdale county~~~4.29~1814~4898
+Kalamazoo~Kalamazoo~~Kalamazoo, Kalamazoo county, MI 49001, USA~42.2639;-85.464~US-MI~42.2639,-85.464~42.26390000~-85.46400000~49001~Kalamazoo county~~~4.4300003~1553~4874
+Kaleva~Kaleva~~Kaleva, Manistee county, MI 49645, USA~44.3653;-86.0387~US-MI~44.3653,-86.0387~44.36530000~-86.03870000~49645~Manistee county~~~4.1400003~2234~2376
+Kalkaska~Kalkaska~~Kalkaska, Kalkaska county, MI 49646, USA~44.7377;-85.0813~US-MI~44.7377,-85.0813~44.73770000~-85.08130000~49646~Kalkaska county~~~4.32~1179~4712
+Kawkawlin~Kawkawlin~~Kawkawlin, Bay county, MI 48631, USA~43.6766;-83.9896~US-MI~43.6766,-83.9896~43.67660000~-83.98960000~48631~Bay county~~~4.17~2095~3037
+Kearsarge~Kearsarge~~Kearsarge, Houghton county, MI 49942, USA~47.2695;-88.4168~US-MI~47.2695,-88.4168~47.26950000~-88.41680000~49942~Houghton county~~~4.23~2208~4356
+Keego Harbor~Keego-Harbor~~Keego Harbor, Oakland county, MI 48320, USA~42.6094;-83.3456~US-MI~42.6094,-83.3456~42.60940000~-83.34560000~48320~Oakland county~~~4.32~1654~3275
+Kendall~Kendall~~Kendall, Van Buren county, MI 49062, USA~42.3609;-85.8155~US-MI~42.3609,-85.8155~42.36090000~-85.81550000~49062~Van Buren county~~~4.48~1271~2892
+Kent City~Kent-City~~Kent City, Kent county, MI 49330, USA~43.2386;-85.7251~US-MI~43.2386,-85.7251~43.23860000~-85.72510000~49330~Kent county~~~4.4~1727~4544
+Kewadin~Kewadin~~Kewadin, Antrim county, MI 49648, USA~44.9262;-85.3545~US-MI~44.9262,-85.3545~44.92620000~-85.35450000~49648~Antrim county~~~4.34~2555~4568
+Kincheloe~Kincheloe~~Kincheloe, Chippewa county, MI 49784, USA~46.2589;-84.3814~US-MI~46.2589,-84.3814~46.25890000~-84.38140000~49784~Chippewa county~~~4.33~1301~4917
+Kinde~Kinde~~Kinde, Huron county, MI 48445, USA~43.9492;-83.0044~US-MI~43.9492,-83.0044~43.94920000~-83.00440000~48445~Huron county~~~4.3~1251~4840
+Kingsford~Kingsford~~Kingsford, Dickinson county, MI 49802, USA~45.8188;-88.0678~US-MI~45.8188,-88.0678~45.81880000~-88.06780000~49802~Dickinson county~~~4.4900002~2506~3693
+Kingsley~Kingsley~~Kingsley, Grand Traverse county, MI 49649, USA~44.576;-85.5443~US-MI~44.576,-85.5443~44.57600000~-85.54430000~49649~Grand Traverse county~~~4.38~1384~3571
+Kingston~Kingston~~Kingston, Tuscola county, MI 48741, USA~43.4052;-83.1754~US-MI~43.4052,-83.1754~43.40520000~-83.17540000~48741~Tuscola county~~~4.44~2060~3676
+Kinross~Kinross~~Kinross, Chippewa county, MI 49752, USA~46.3649;-84.8444~US-MI~46.3649,-84.8444~46.36490000~-84.84440000~49752~Chippewa county~~~4.4300003~1413~3035
+La Salle~La-Salle~~La Salle, Monroe county, MI 48145, USA~41.8479;-83.4553~US-MI~41.8479,-83.4553~41.84790000~-83.45530000~48145~Monroe county~~~4.1800003~2783~3989
+Lachine~Lachine~~Lachine, Alpena county, MI 49753, USA~45.0574;-83.7475~US-MI~45.0574,-83.7475~45.05740000~-83.74750000~49753~Alpena county~~~4.48~2520~3530
+Lacota~Lacota~~Lacota, Van Buren county, MI 49063, USA~42.4135;-86.1312~US-MI~42.4135,-86.1312~42.41350000~-86.13120000~49063~Van Buren county~~~4.31~2573~4917
+Laingsburg~Laingsburg~~Laingsburg, Shiawassee county, MI 48848, USA~42.8845;-84.3283~US-MI~42.8845,-84.3283~42.88450000~-84.32830000~48848~Shiawassee county~~~4.4700003~1853~3160
+Lake Ann~Lake-Ann~~Lake Ann, Benzie county, MI 49650, USA~44.7472;-85.8771~US-MI~44.7472,-85.8771~44.74720000~-85.87710000~49650~Benzie county~~~4.4900002~2754~4018
+Lake City~Lake-City~~Lake City, Missaukee county, MI 49651, USA~44.3866;-85.1454~US-MI~44.3866,-85.1454~44.38660000~-85.14540000~49651~Missaukee county~~~4.1400003~2049~2473
+Lake George~Lake-George~~Lake George, Clare county, MI 48633, USA~43.9802;-84.9061~US-MI~43.9802,-84.9061~43.98020000~-84.90610000~48633~Clare county~~~4.36~1524~4364
+Lake Leelanau~Lake-Leelanau~~Lake Leelanau, Leelanau county, MI 49653, USA~44.9898;-85.7357~US-MI~44.9898,-85.7357~44.98980000~-85.73570000~49653~Leelanau county~~~4.36~1055~2897
+Lake Linden~Lake-Linden~~Lake Linden, Houghton county, MI 49945, USA~47.1748;-88.4108~US-MI~47.1748,-88.4108~47.17480000~-88.41080000~49945~Houghton county~~~4.4500003~1725~4324
+Lake Odessa~Lake-Odessa~~Lake Odessa, Ionia county, MI 48849, USA~42.8044;-85.1395~US-MI~42.8044,-85.1395~42.80440000~-85.13950000~48849~Ionia county~~~4.4300003~2580~3614
+Lake Orion~Lake-Orion~~Lake Orion, Oakland county, MI 48359, USA~42.7223;-83.2779~US-MI~42.7223,-83.2779~42.72230000~-83.27790000~48359~Oakland county~~~4.25~2116~4001
+Lake~Lake~~Lake, Clare county, MI 48632, USA~43.8952;-85.0055~US-MI~43.8952,-85.0055~43.89520000~-85.00550000~48632~Clare county~~~4.31~2602~3073
+Lakeland~Lakeland~~Lakeland, Livingston county, MI 48143, USA~42.4567;-83.8974~US-MI~42.4567,-83.8974~42.45670000~-83.89740000~48143~Livingston county~~~4.4300003~2800~3309
+Lakeside~Lakeside~~Lakeside, Berrien county, MI 49116, USA~41.8486;-86.6702~US-MI~41.8486,-86.6702~41.84860000~-86.67020000~49116~Berrien county~~~4.48~2338~2665
+Lakeview~Lakeview~~Lakeview, Montcalm county, MI 48850, USA~43.4268;-85.2498~US-MI~43.4268,-85.2498~43.42680000~-85.24980000~48850~Montcalm county~~~4.19~2171~3228
+Lakeville~Lakeville~~Lakeville, Oakland county, MI 48366, USA~42.8217;-83.1522~US-MI~42.8217,-83.1522~42.82170000~-83.15220000~48366~Oakland county~~~4.28~2666~3725
+Lambertville~Lambertville~~Lambertville, Monroe county, MI 48144, USA~41.7535;-83.6273~US-MI~41.7535,-83.6273~41.75350000~-83.62730000~48144~Monroe county~~~4.4500003~1403~3975
+Lamont~Lamont~~Lamont, Ottawa county, MI 49430, USA~43.0067;-85.8951~US-MI~43.0067,-85.8951~43.00670000~-85.89510000~49430~Ottawa county~~~4.4~1760~4275
+Lanse~Lanse~~Lanse, Baraga county, MI 49946, USA~46.7597;-88.4093~US-MI~46.7597,-88.4093~46.75970000~-88.40930000~49946~Baraga county~~~4.34~1784~4658
+Lansing~Lansing~~Lansing, Ingham county, MI 48901, USA~42.7323;-84.5533~US-MI~42.7323,-84.5533~42.73230000~-84.55330000~48901~Ingham county~~~4.44~1233~4528
+Lapeer~Lapeer~~Lapeer, Lapeer county, MI 48446, USA~43.056;-83.3279~US-MI~43.056,-83.3279~43.05600000~-83.32790000~48446~Lapeer county~~~4.46~2252~2454
+Lawrence~Lawrence~~Lawrence, Van Buren county, MI 49064, USA~42.2164;-86.0516~US-MI~42.2164,-86.0516~42.21640000~-86.05160000~49064~Van Buren county~~~4.3900003~1282~3072
+Lawton~Lawton~~Lawton, Van Buren county, MI 49065, USA~42.149;-85.8387~US-MI~42.149,-85.8387~42.14900000~-85.83870000~49065~Van Buren county~~~4.37~1822~3728
+Leland~Leland~~Leland, Leelanau county, MI 49654, USA~45.0251;-85.7524~US-MI~45.0251,-85.7524~45.02510000~-85.75240000~49654~Leelanau county~~~4.1400003~1788~2073
+Lennon~Lennon~~Lennon, Genesee county, MI 48449, USA~42.9964;-83.9496~US-MI~42.9964,-83.9496~42.99640000~-83.94960000~48449~Genesee county~~~4.25~1377~3079
+Leonard~Leonard~~Leonard, Oakland county, MI 48367, USA~42.8447;-83.1407~US-MI~42.8447,-83.1407~42.84470000~-83.14070000~48367~Oakland county~~~4.23~2252~4434
+Leonidas~Leonidas~~Leonidas, Saint Joseph county, MI 49066, USA~42.0339;-85.3553~US-MI~42.0339,-85.3553~42.03390000~-85.35530000~49066~Saint Joseph county~~~4.13~2896~4124
+Leroy~Leroy~~Leroy, Osceola county, MI 49655, USA~44.0495;-85.4439~US-MI~44.0495,-85.4439~44.04950000~-85.44390000~49655~Osceola county~~~4.32~2410~4906
+Leslie~Leslie~~Leslie, Ingham county, MI 49251, USA~42.4663;-84.4171~US-MI~42.4663,-84.4171~42.46630000~-84.41710000~49251~Ingham county~~~4.1600003~1748~3159
+Levering~Levering~~Levering, Emmet county, MI 49755, USA~45.6445;-84.8404~US-MI~45.6445,-84.8404~45.64450000~-84.84040000~49755~Emmet county~~~4.48~2619~2843
+Lewiston~Lewiston~~Lewiston, Montmorency county, MI 49756, USA~44.8076;-84.2739~US-MI~44.8076,-84.2739~44.80760000~-84.27390000~49756~Montmorency county~~~4.38~2687~2500
+Lexington~Lexington~~Lexington, Sanilac county, MI 48450, USA~43.2479;-82.5292~US-MI~43.2479,-82.5292~43.24790000~-82.52920000~48450~Sanilac county~~~4.4~2655~2718
+Lincoln Park~Lincoln-Park~~Lincoln Park, Wayne county, MI 48146, USA~42.2456;-83.1802~US-MI~42.2456,-83.1802~42.24560000~-83.18020000~48146~Wayne county~~~4.17~2886~4672
+Lincoln~Lincoln~~Lincoln, Alcona county, MI 48742, USA~44.7292;-83.4396~US-MI~44.7292,-83.4396~44.72920000~-83.43960000~48742~Alcona county~~~4.26~2395~3367
+Linden~Linden~~Linden, Genesee county, MI 48451, USA~42.8136;-83.802~US-MI~42.8136,-83.802~42.81360000~-83.80200000~48451~Genesee county~~~4.4900002~2475~3222
+Linwood~Linwood~~Linwood, Bay county, MI 48634, USA~43.7496;-84.0402~US-MI~43.7496,-84.0402~43.74960000~-84.04020000~48634~Bay county~~~4.36~2973~3599
+Litchfield~Litchfield~~Litchfield, Hillsdale county, MI 49252, USA~42.0316;-84.7669~US-MI~42.0316,-84.7669~42.03160000~-84.76690000~49252~Hillsdale county~~~4.27~2017~3885
+Little Lake~Little-Lake~~Little Lake, Marquette county, MI 49833, USA~46.2866;-87.3331~US-MI~46.2866,-87.3331~46.28660000~-87.33310000~49833~Marquette county~~~4.25~1419~4868
+Livonia~Livonia~~Livonia, Wayne county, MI 48150, USA~42.3666;-83.3706~US-MI~42.3666,-83.3706~42.36660000~-83.37060000~48150~Wayne county~~~4.3900003~1357~3440
+Long Lake~Long-Lake~~Long Lake, Iosco county, MI 48743, USA~44.4297;-83.8773~US-MI~44.4297,-83.8773~44.42970000~-83.87730000~48743~Iosco county~~~4.5~1100~2330
+Loretto~Loretto~~Loretto, Dickinson county, MI 49852, USA~45.7815;-87.8167~US-MI~45.7815,-87.8167~45.78150000~-87.81670000~49852~Dickinson county~~~4.2200003~2710~4943
+Lowell~Lowell~~Lowell, Kent county, MI 49331, USA~42.9485;-85.3591~US-MI~42.9485,-85.3591~42.94850000~-85.35910000~49331~Kent county~~~4.4500003~2292~3047
+Ludington~Ludington~~Ludington, Mason county, MI 49431, USA~43.9671;-86.4195~US-MI~43.9671,-86.4195~43.96710000~-86.41950000~49431~Mason county~~~4.2400002~2550~2305
+Luna Pier~Luna-Pier~~Luna Pier, Monroe county, MI 48157, USA~41.8163;-83.4403~US-MI~41.8163,-83.4403~41.81630000~-83.44030000~48157~Monroe county~~~4.37~1768~4097
+Lupton~Lupton~~Lupton, Ogemaw county, MI 48635, USA~44.4029;-83.9888~US-MI~44.4029,-83.9888~44.40290000~-83.98880000~48635~Ogemaw county~~~4.25~2231~3919
+Luther~Luther~~Luther, Lake county, MI 49656, USA~44.0566;-85.6875~US-MI~44.0566,-85.6875~44.05660000~-85.68750000~49656~Lake county~~~4.44~2303~2284
+Luzerne~Luzerne~~Luzerne, Oscoda county, MI 48636, USA~44.6375;-84.2526~US-MI~44.6375,-84.2526~44.63750000~-84.25260000~48636~Oscoda county~~~4.5~1391~3452
+Lyons~Lyons~~Lyons, Ionia county, MI 48851, USA~42.9568;-84.9431~US-MI~42.9568,-84.9431~42.95680000~-84.94310000~48851~Ionia county~~~4.4500003~1136~4132
+Macatawa~Macatawa~~Macatawa, Ottawa county, MI 49434, USA~42.7665;-86.208~US-MI~42.7665,-86.208~42.76650000~-86.20800000~49434~Ottawa county~~~4.46~1243~4099
+Mackinac Island~Mackinac-Island~~Mackinac Island, Mackinac county, MI 49757, USA~45.8597;-84.6155~US-MI~45.8597,-84.6155~45.85970000~-84.61550000~49757~Mackinac county~~~4.3~1516~2010
+Mackinaw City~Mackinaw-City~~Mackinaw City, Cheboygan county, MI 49701, USA~45.7775;-84.7541~US-MI~45.7775,-84.7541~45.77750000~-84.75410000~49701~Cheboygan county~~~4.2000003~1813~3197
+Macomb~Macomb~~Macomb, Macomb county, MI 48042, USA~42.6841;-82.9187~US-MI~42.6841,-82.9187~42.68410000~-82.91870000~48042~Macomb county~~~4.33~1911~3852
+Madison Heights~Madison-Heights~~Madison Heights, Oakland county, MI 48071, USA~42.5043;-83.105~US-MI~42.5043,-83.105~42.50430000~-83.10500000~48071~Oakland county~~~4.4900002~2020~4750
+Mancelona~Mancelona~~Mancelona, Antrim county, MI 49659, USA~44.9135;-85.0396~US-MI~44.9135,-85.0396~44.91350000~-85.03960000~49659~Antrim county~~~4.19~2967~2145
+Manchester~Manchester~~Manchester, Washtenaw county, MI 48158, USA~42.1625;-84.02~US-MI~42.1625,-84.02~42.16250000~-84.02000000~48158~Washtenaw county~~~4.26~1400~4485
+Manistee~Manistee~~Manistee, Manistee county, MI 49660, USA~44.1764;-86.2096~US-MI~44.1764,-86.2096~44.17640000~-86.20960000~49660~Manistee county~~~4.2000003~1483~3054
+Manistique~Manistique~~Manistique, Schoolcraft county, MI 49854, USA~46.0097;-86.2788~US-MI~46.0097,-86.2788~46.00970000~-86.27880000~49854~Schoolcraft county~~~4.46~1287~2856
+Manitou Beach~Manitou-Beach~~Manitou Beach, Lenawee county, MI 49253, USA~41.974;-84.2768~US-MI~41.974,-84.2768~41.97400000~-84.27680000~49253~Lenawee county~~~4.28~1933~4361
+Manton~Manton~~Manton, Wexford county, MI 49663, USA~44.4202;-85.4324~US-MI~44.4202,-85.4324~44.42020000~-85.43240000~49663~Wexford county~~~4.1800003~2311~2776
+Maple City~Maple-City~~Maple City, Leelanau county, MI 49664, USA~44.8789;-85.8894~US-MI~44.8789,-85.8894~44.87890000~-85.88940000~49664~Leelanau county~~~4.4900002~2410~4663
+Maple Rapids~Maple-Rapids~~Maple Rapids, Clinton county, MI 48853, USA~43.1022;-84.6889~US-MI~43.1022,-84.6889~43.10220000~-84.68890000~48853~Clinton county~~~4.4900002~1615~3676
+Marcellus~Marcellus~~Marcellus, Cass county, MI 49067, USA~42.016;-85.8356~US-MI~42.016,-85.8356~42.01600000~-85.83560000~49067~Cass county~~~4.36~2213~4440
+Marenisco~Marenisco~~Marenisco, Gogebic county, MI 49947, USA~46.3758;-89.594~US-MI~46.3758,-89.594~46.37580000~-89.59400000~49947~Gogebic county~~~4.1200004~1251~2711
+Marine City~Marine-City~~Marine City, Saint Clair county, MI 48039, USA~42.719;-82.5217~US-MI~42.719,-82.5217~42.71900000~-82.52170000~48039~Saint Clair county~~~4.13~2396~3232
+Marion~Marion~~Marion, Osceola county, MI 49665, USA~44.0942;-85.1781~US-MI~44.0942,-85.1781~44.09420000~-85.17810000~49665~Osceola county~~~4.23~2774~2287
+Marlette~Marlette~~Marlette, Sanilac county, MI 48453, USA~43.3393;-83.0378~US-MI~43.3393,-83.0378~43.33930000~-83.03780000~48453~Sanilac county~~~4.1800003~2819~4727
+Marne~Marne~~Marne, Ottawa county, MI 49435, USA~43.024;-85.8375~US-MI~43.024,-85.8375~43.02400000~-85.83750000~49435~Ottawa county~~~4.4~1366~3936
+Marquette~Marquette~~Marquette, Marquette county, MI 49855, USA~46.55;-87.4~US-MI~46.55,-87.4~46.55000000~-87.40000000~49855~Marquette county~~~4.1600003~2228~4432
+Marshall~Marshall~~Marshall, Calhoun county, MI 49068, USA~42.2682;-84.943~US-MI~42.2682,-84.943~42.26820000~-84.94300000~49068~Calhoun county~~~4.1800003~2458~2198
+Martin~Martin~~Martin, Allegan county, MI 49070, USA~42.5413;-85.6344~US-MI~42.5413,-85.6344~42.54130000~-85.63440000~49070~Allegan county~~~4.29~2975~3506
+Marysville~Marysville~~Marysville, Saint Clair county, MI 48040, USA~42.9147;-82.481~US-MI~42.9147,-82.481~42.91470000~-82.48100000~48040~Saint Clair county~~~4.4100003~2822~2689
+Mason~Mason~~Mason, Ingham county, MI 48854, USA~42.5841;-84.4377~US-MI~42.5841,-84.4377~42.58410000~-84.43770000~48854~Ingham county~~~4.31~2839~3074
+Mass City~Mass-City~~Mass City, Ontonagon county, MI 49948, USA~46.7256;-89.0321~US-MI~46.7256,-89.0321~46.72560000~-89.03210000~49948~Ontonagon county~~~4.11~1535~3704
+Mattawan~Mattawan~~Mattawan, Van Buren county, MI 49071, USA~42.2345;-85.7914~US-MI~42.2345,-85.7914~42.23450000~-85.79140000~49071~Van Buren county~~~4.4300003~2762~2771
+Maybee~Maybee~~Maybee, Monroe county, MI 48159, USA~42.0212;-83.543~US-MI~42.0212,-83.543~42.02120000~-83.54300000~48159~Monroe county~~~4.31~1251~4732
+Mayfield~Mayfield~~Mayfield, Grand Traverse county, MI 49666, USA~44.598;-85.5344~US-MI~44.598,-85.5344~44.59800000~-85.53440000~49666~Grand Traverse county~~~4.4900002~1175~3291
+Mayville~Mayville~~Mayville, Tuscola county, MI 48744, USA~43.355;-83.3615~US-MI~43.355,-83.3615~43.35500000~-83.36150000~48744~Tuscola county~~~4.32~2943~4082
+Mc Bain~Mc-Bain~~Mc Bain, Missaukee county, MI 49657, USA~44.2194;-85.1933~US-MI~44.2194,-85.1933~44.21940000~-85.19330000~49657~Missaukee county~~~4.4~2489~2538
+Mc Millan~Mc-Millan~~Mc Millan, Luce county, MI 49853, USA~46.3712;-85.7387~US-MI~46.3712,-85.7387~46.37120000~-85.73870000~49853~Luce county~~~4.26~1570~3469
+Mcbrides~Mcbrides~~McBrides, Montcalm county, MI 48852, USA~43.3507;-85.0507~US-MI~43.3507,-85.0507~43.35070000~-85.05070000~48852~Montcalm county~~~4.35~1824~4225
+Mears~Mears~~Mears, Oceana county, MI 49436, USA~43.682;-86.4647~US-MI~43.682,-86.4647~43.68200000~-86.46470000~49436~Oceana county~~~4.13~1027~2226
+Mecosta~Mecosta~~Mecosta, Mecosta county, MI 49332, USA~43.6383;-85.2483~US-MI~43.6383,-85.2483~43.63830000~-85.24830000~49332~Mecosta county~~~4.4700003~1330~3251
+Melvin~Melvin~~Melvin, Sanilac county, MI 48454, USA~43.1996;-82.822~US-MI~43.1996,-82.822~43.19960000~-82.82200000~48454~Sanilac county~~~4.34~1148~2864
+Melvindale~Melvindale~~Melvindale, Wayne county, MI 48122, USA~42.2776;-83.1816~US-MI~42.2776,-83.1816~42.27760000~-83.18160000~48122~Wayne county~~~4.19~1049~4898
+Memphis~Memphis~~Memphis, Saint Clair county, MI 48041, USA~42.9244;-82.7813~US-MI~42.9244,-82.7813~42.92440000~-82.78130000~48041~Saint Clair county~~~4.3900003~2132~2130
+Mendon~Mendon~~Mendon, Saint Joseph county, MI 49072, USA~42.0066;-85.4602~US-MI~42.0066,-85.4602~42.00660000~-85.46020000~49072~Saint Joseph county~~~4.3~1212~3012
+Menominee~Menominee~~Menominee, Menominee county, MI 49858, USA~45.1231;-87.6153~US-MI~45.1231,-87.6153~45.12310000~-87.61530000~49858~Menominee county~~~4.35~1183~3638
+Merrill~Merrill~~Merrill, Saginaw county, MI 48637, USA~43.3978;-84.3223~US-MI~43.3978,-84.3223~43.39780000~-84.32230000~48637~Saginaw county~~~4.38~1630~2887
+Merritt~Merritt~~Merritt, Missaukee county, MI 49667, USA~44.344;-84.9306~US-MI~44.344,-84.9306~44.34400000~-84.93060000~49667~Missaukee county~~~4.36~1995~4582
+Mesick~Mesick~~Mesick, Wexford county, MI 49668, USA~44.4084;-85.7094~US-MI~44.4084,-85.7094~44.40840000~-85.70940000~49668~Wexford county~~~4.4300003~2444~3697
+Metamora~Metamora~~Metamora, Lapeer county, MI 48455, USA~42.9413;-83.3086~US-MI~42.9413,-83.3086~42.94130000~-83.30860000~48455~Lapeer county~~~4.1400003~1560~3270
+Michigamme~Michigamme~~Michigamme, Marquette county, MI 49861, USA~46.5315;-88.0863~US-MI~46.5315,-88.0863~46.53150000~-88.08630000~49861~Marquette county~~~4.2200003~1826~2868
+Michigan Center~Michigan-Center~~Michigan Center, Jackson county, MI 49254, USA~42.2277;-84.3247~US-MI~42.2277,-84.3247~42.22770000~-84.32470000~49254~Jackson county~~~4.15~1113~3416
+Middleton~Middleton~~Middleton, Gratiot county, MI 48856, USA~43.1982;-84.7379~US-MI~43.1982,-84.7379~43.19820000~-84.73790000~48856~Gratiot county~~~4.46~1490~3094
+Middleville~Middleville~~Middleville, Barry county, MI 49333, USA~42.6845;-85.4521~US-MI~42.6845,-85.4521~42.68450000~-85.45210000~49333~Barry county~~~4.17~2371~4857
+Midland~Midland~~Midland, Midland county, MI 48640, USA~43.6305;-84.2747~US-MI~43.6305,-84.2747~43.63050000~-84.27470000~48640~Midland county~~~4.44~1770~3862
+Mikado~Mikado~~Mikado, Alcona county, MI 48745, USA~44.5776;-83.4561~US-MI~44.5776,-83.4561~44.57760000~-83.45610000~48745~Alcona county~~~4.4900002~1148~4008
+Milan~Milan~~Milan, Monroe county, MI 48160, USA~42.1105;-83.6842~US-MI~42.1105,-83.6842~42.11050000~-83.68420000~48160~Monroe county~~~4.19~2602~2528
+Milford~Milford~~Milford, Oakland county, MI 48380, USA~42.586;-83.6507~US-MI~42.586,-83.6507~42.58600000~-83.65070000~48380~Oakland county~~~4.4~1400~3414
+Millersburg~Millersburg~~Millersburg, Presque Isle county, MI 49759, USA~45.437;-84.1007~US-MI~45.437,-84.1007~45.43700000~-84.10070000~49759~Presque Isle county~~~4.2200003~2764~4241
+Millington~Millington~~Millington, Tuscola county, MI 48746, USA~43.2783;-83.5382~US-MI~43.2783,-83.5382~43.27830000~-83.53820000~48746~Tuscola county~~~4.1800003~1271~4937
+Minden City~Minden-City~~Minden City, Sanilac county, MI 48456, USA~43.6663;-82.7388~US-MI~43.6663,-82.7388~43.66630000~-82.73880000~48456~Sanilac county~~~4.31~1415~3984
+Mio~Mio~~Mio, Oscoda county, MI 48647, USA~44.6593;-84.1157~US-MI~44.6593,-84.1157~44.65930000~-84.11570000~48647~Oscoda county~~~4.29~2539~3724
+Mohawk~Mohawk~~Mohawk, Keweenaw county, MI 49950, USA~47.3165;-88.3448~US-MI~47.3165,-88.3448~47.31650000~-88.34480000~49950~Keweenaw county~~~4.21~2702~3996
+Moline~Moline~~Moline, Allegan county, MI 49335, USA~42.7375;-85.6625~US-MI~42.7375,-85.6625~42.73750000~-85.66250000~49335~Allegan county~~~4.29~2245~3437
+Monroe~Monroe~~Monroe, Monroe county, MI 48161, USA~41.9091;-83.4701~US-MI~41.9091,-83.4701~41.90910000~-83.47010000~48161~Monroe county~~~4.19~2787~2590
+Montague~Montague~~Montague, Muskegon county, MI 49437, USA~43.4215;-86.3604~US-MI~43.4215,-86.3604~43.42150000~-86.36040000~49437~Muskegon county~~~4.27~1335~2759
+Montgomery~Montgomery~~Montgomery, Branch county, MI 49255, USA~41.7827;-84.8831~US-MI~41.7827,-84.8831~41.78270000~-84.88310000~49255~Branch county~~~4.38~2034~3138
+Montrose~Montrose~~Montrose, Genesee county, MI 48457, USA~43.1781;-83.8831~US-MI~43.1781,-83.8831~43.17810000~-83.88310000~48457~Genesee county~~~4.1800003~2594~2795
+Moran~Moran~~Moran, Mackinac county, MI 49760, USA~46.0434;-84.9738~US-MI~46.0434,-84.9738~46.04340000~-84.97380000~49760~Mackinac county~~~4.1600003~2330~2406
+Morenci~Morenci~~Morenci, Lenawee county, MI 49256, USA~41.7437;-84.2172~US-MI~41.7437,-84.2172~41.74370000~-84.21720000~49256~Lenawee county~~~4.32~2255~4531
+Morley~Morley~~Morley, Mecosta county, MI 49336, USA~43.5065;-85.4259~US-MI~43.5065,-85.4259~43.50650000~-85.42590000~49336~Mecosta county~~~4.11~2551~2559
+Morrice~Morrice~~Morrice, Shiawassee county, MI 48857, USA~42.8441;-84.1602~US-MI~42.8441,-84.1602~42.84410000~-84.16020000~48857~Shiawassee county~~~4.4500003~2686~2567
+Moscow~Moscow~~Moscow, Hillsdale county, MI 49257, USA~42.0511;-84.509~US-MI~42.0511,-84.509~42.05110000~-84.50900000~49257~Hillsdale county~~~4.48~1838~3130
+Mosherville~Mosherville~~Mosherville, Hillsdale county, MI 49258, USA~42.0587;-84.6564~US-MI~42.0587,-84.6564~42.05870000~-84.65640000~49258~Hillsdale county~~~4.3900003~1690~3076
+Mount Clemens~Mount-Clemens~~Mount Clemens, Macomb county, MI 48043, USA~42.5971;-82.8817~US-MI~42.5971,-82.8817~42.59710000~-82.88170000~48043~Macomb county~~~4.4500003~1666~3588
+Mount Morris~Mount-Morris~~Mount Morris, Genesee county, MI 48458, USA~43.1139;-83.6891~US-MI~43.1139,-83.6891~43.11390000~-83.68910000~48458~Genesee county~~~4.28~2375~4775
+Mount Pleasant~Mount-Pleasant~~Mount Pleasant, Isabella county, MI 48804, USA~43.6061;-84.6885~US-MI~43.6061,-84.6885~43.60610000~-84.68850000~48804~Isabella county~~~4.4500003~1867~4764
+Muir~Muir~~Muir, Ionia county, MI 48860, USA~43.032;-84.9221~US-MI~43.032,-84.9221~43.03200000~-84.92210000~48860~Ionia county~~~4.13~1137~2262
+Mullett Lake~Mullett-Lake~~Mullett Lake, Cheboygan county, MI 49761, USA~45.5608;-84.5238~US-MI~45.5608,-84.5238~45.56080000~-84.52380000~49761~Cheboygan county~~~4.48~2995~2737
+Mulliken~Mulliken~~Mulliken, Eaton county, MI 48861, USA~42.7237;-84.9244~US-MI~42.7237,-84.9244~42.72370000~-84.92440000~48861~Eaton county~~~4.46~2105~3037
+Munger~Munger~~Munger, Bay county, MI 48747, USA~43.5249;-83.7566~US-MI~43.5249,-83.7566~43.52490000~-83.75660000~48747~Bay county~~~4.42~1507~2846
+Munising~Munising~~Munising, Alger county, MI 49862, USA~46.4164;-86.624~US-MI~46.4164,-86.624~46.41640000~-86.62400000~49862~Alger county~~~4.4300003~1279~4697
+Munith~Munith~~Munith, Jackson county, MI 49259, USA~42.3813;-84.2603~US-MI~42.3813,-84.2603~42.38130000~-84.26030000~49259~Jackson county~~~4.11~1404~4229
+Muskegon~Muskegon~~Muskegon, Muskegon county, MI 49440, USA~43.2325;-86.2513~US-MI~43.2325,-86.2513~43.23250000~-86.25130000~49440~Muskegon county~~~4.2400002~2349~3928
+Nadeau~Nadeau~~Nadeau, Menominee county, MI 49863, USA~45.6072;-87.5492~US-MI~45.6072,-87.5492~45.60720000~-87.54920000~49863~Menominee county~~~4.4300003~2780~4312
+Nahma~Nahma~~Nahma, Delta county, MI 49864, USA~45.8416;-86.6643~US-MI~45.8416,-86.6643~45.84160000~-86.66430000~49864~Delta county~~~4.1800003~1277~3605
+Napoleon~Napoleon~~Napoleon, Jackson county, MI 49261, USA~42.246;-84.4046~US-MI~42.246,-84.4046~42.24600000~-84.40460000~49261~Jackson county~~~4.35~1284~3875
+Nashville~Nashville~~Nashville, Barry county, MI 49073, USA~42.5858;-85.1226~US-MI~42.5858,-85.1226~42.58580000~-85.12260000~49073~Barry county~~~4.1800003~1892~4996
+National City~National-City~~National City, Iosco county, MI 48748, USA~44.3003;-83.6749~US-MI~44.3003,-83.6749~44.30030000~-83.67490000~48748~Iosco county~~~4.11~1742~4421
+National Mine~National-Mine~~National Mine, Marquette county, MI 49865, USA~46.4577;-87.6818~US-MI~46.4577,-87.6818~46.45770000~-87.68180000~49865~Marquette county~~~4.4500003~2688~4868
+Naubinway~Naubinway~~Naubinway, Mackinac county, MI 49762, USA~46.1473;-85.4032~US-MI~46.1473,-85.4032~46.14730000~-85.40320000~49762~Mackinac county~~~4.19~1921~3716
+Nazareth~Nazareth~~Nazareth, Kalamazoo county, MI 49074, USA~42.2881;-85.5987~US-MI~42.2881,-85.5987~42.28810000~-85.59870000~49074~Kalamazoo county~~~4.31~2406~3562
+Negaunee~Negaunee~~Negaunee, Marquette county, MI 49866, USA~46.5132;-87.5906~US-MI~46.5132,-87.5906~46.51320000~-87.59060000~49866~Marquette county~~~4.26~1345~2418
+New Baltimore~New-Baltimore~~New Baltimore, Macomb county, MI 48047, USA~42.6742;-82.7806~US-MI~42.6742,-82.7806~42.67420000~-82.78060000~48047~Macomb county~~~4.32~1000~2733
+New Boston~New-Boston~~New Boston, Wayne county, MI 48164, USA~42.1294;-83.3904~US-MI~42.1294,-83.3904~42.12940000~-83.39040000~48164~Wayne county~~~4.34~1276~4404
+New Buffalo~New-Buffalo~~New Buffalo, Berrien county, MI 49117, USA~41.787;-86.7541~US-MI~41.787,-86.7541~41.78700000~-86.75410000~49117~Berrien county~~~4.4900002~2724~2554
+New Era~New-Era~~New Era, Oceana county, MI 49446, USA~43.5616;-86.3573~US-MI~43.5616,-86.3573~43.56160000~-86.35730000~49446~Oceana county~~~4.31~2891~3092
+New Haven~New-Haven~~New Haven, Macomb county, MI 48048, USA~42.7381;-82.801~US-MI~42.7381,-82.801~42.73810000~-82.80100000~48048~Macomb county~~~4.3~1583~3341
+New Hudson~New-Hudson~~New Hudson, Oakland county, MI 48165, USA~42.5062;-83.6262~US-MI~42.5062,-83.6262~42.50620000~-83.62620000~48165~Oakland county~~~4.17~1701~4172
+New Lothrop~New-Lothrop~~New Lothrop, Shiawassee county, MI 48460, USA~43.1086;-83.9961~US-MI~43.1086,-83.9961~43.10860000~-83.99610000~48460~Shiawassee county~~~4.4300003~2238~2084
+New Troy~New-Troy~~New Troy, Berrien county, MI 49119, USA~41.8781;-86.5503~US-MI~41.8781,-86.5503~41.87810000~-86.55030000~49119~Berrien county~~~4.4900002~1889~2342
+Newaygo~Newaygo~~Newaygo, Newaygo county, MI 49337, USA~43.4377;-85.7404~US-MI~43.4377,-85.7404~43.43770000~-85.74040000~49337~Newaygo county~~~4.15~1251~2905
+Newberry~Newberry~~Newberry, Luce county, MI 49868, USA~46.3447;-85.5081~US-MI~46.3447,-85.5081~46.34470000~-85.50810000~49868~Luce county~~~4.31~2719~3195
+Newport~Newport~~Newport, Monroe county, MI 48166, USA~41.9774;-83.2842~US-MI~41.9774,-83.2842~41.97740000~-83.28420000~48166~Monroe county~~~4.1800003~1209~4806
+Niles~Niles~~Niles, Berrien county, MI 49120, USA~41.8219;-86.2587~US-MI~41.8219,-86.2587~41.82190000~-86.25870000~49120~Berrien county~~~4.37~2011~4884
+Nisula~Nisula~~Nisula, Houghton county, MI 49952, USA~46.6338;-88.8803~US-MI~46.6338,-88.8803~46.63380000~-88.88030000~49952~Houghton county~~~4.23~1690~2071
+North Adams~North-Adams~~North Adams, Hillsdale county, MI 49262, USA~41.9625;-84.4901~US-MI~41.9625,-84.4901~41.96250000~-84.49010000~49262~Hillsdale county~~~4.2000003~2510~3616
+North Branch~North-Branch~~North Branch, Lapeer county, MI 48461, USA~43.2114;-83.2129~US-MI~43.2114,-83.2129~43.21140000~-83.21290000~48461~Lapeer county~~~4.35~2569~2663
+North Star~North-Star~~North Star, Gratiot county, MI 48862, USA~43.2464;-84.5464~US-MI~43.2464,-84.5464~43.24640000~-84.54640000~48862~Gratiot county~~~4.4300003~1922~2382
+North Street~North-Street~~North Street, Saint Clair county, MI 48049, USA~43.0363;-82.5746~US-MI~43.0363,-82.5746~43.03630000~-82.57460000~48049~Saint Clair county~~~4.19~2024~4243
+Northport~Northport~~Northport, Leelanau county, MI 49670, USA~45.1325;-85.6117~US-MI~45.1325,-85.6117~45.13250000~-85.61170000~49670~Leelanau county~~~4.46~1397~3695
+Northville~Northville~~Northville, Wayne county, MI 48167, USA~42.4222;-83.4701~US-MI~42.4222,-83.4701~42.42220000~-83.47010000~48167~Wayne county~~~4.4~2639~2770
+Norvell~Norvell~~Norvell, Jackson county, MI 49263, USA~42.1592;-84.1846~US-MI~42.1592,-84.1846~42.15920000~-84.18460000~49263~Jackson county~~~4.11~1167~2292
+Norway~Norway~~Norway, Dickinson county, MI 49870, USA~45.7854;-87.9019~US-MI~45.7854,-87.9019~45.78540000~-87.90190000~49870~Dickinson county~~~4.4700003~2647~2893
+Nottawa~Nottawa~~Nottawa, Saint Joseph county, MI 49075, USA~41.9192;-85.4475~US-MI~41.9192,-85.4475~41.91920000~-85.44750000~49075~Saint Joseph county~~~4.35~1572~4110
+Novi~Novi~~Novi, Oakland county, MI 48374, USA~42.4708;-83.5235~US-MI~42.4708,-83.5235~42.47080000~-83.52350000~48374~Oakland county~~~4.46~2391~2590
+Nunica~Nunica~~Nunica, Ottawa county, MI 49448, USA~43.0801;-86.0838~US-MI~43.0801,-86.0838~43.08010000~-86.08380000~49448~Ottawa county~~~4.31~1825~4147
+Oak Grove~Oak-Grove~~Oak Grove, Livingston county, MI 48863, USA~42.6979;-83.9286~US-MI~42.6979,-83.9286~42.69790000~-83.92860000~48863~Livingston county~~~4.4300003~1579~2952
+Oak Park~Oak-Park~~Oak Park, Oakland county, MI 48237, USA~42.4655;-83.1974~US-MI~42.4655,-83.1974~42.46550000~-83.19740000~48237~Oakland county~~~4.36~1974~2508
+Oakland~Oakland~~Oakland, Oakland county, MI 48363, USA~42.7643;-83.1665~US-MI~42.7643,-83.1665~42.76430000~-83.16650000~48363~Oakland county~~~4.38~1545~4786
+Oakley~Oakley~~Oakley, Saginaw county, MI 48649, USA~43.1513;-84.2019~US-MI~43.1513,-84.2019~43.15130000~-84.20190000~48649~Saginaw county~~~4.2000003~1465~2386
+Oden~Oden~~Oden, Emmet county, MI 49764, USA~45.4238;-84.8236~US-MI~45.4238,-84.8236~45.42380000~-84.82360000~49764~Emmet county~~~4.27~1991~2126
+Okemos~Okemos~~Okemos, Ingham county, MI 48805, USA~42.7075;-84.415~US-MI~42.7075,-84.415~42.70750000~-84.41500000~48805~Ingham county~~~4.1800003~2912~4318
+Old Mission~Old-Mission~~Old Mission, Grand Traverse county, MI 49673, USA~44.9546;-85.4886~US-MI~44.9546,-85.4886~44.95460000~-85.48860000~49673~Grand Traverse county~~~4.44~2338~3069
+Olivet~Olivet~~Olivet, Eaton county, MI 49076, USA~42.4551;-84.908~US-MI~42.4551,-84.908~42.45510000~-84.90800000~49076~Eaton county~~~4.34~1561~3556
+Omena~Omena~~Omena, Leelanau county, MI 49674, USA~45.0632;-85.6215~US-MI~45.0632,-85.6215~45.06320000~-85.62150000~49674~Leelanau county~~~4.13~1385~3712
+Omer~Omer~~Omer, Arenac county, MI 48749, USA~44.056;-83.8957~US-MI~44.056,-83.8957~44.05600000~-83.89570000~48749~Arenac county~~~4.25~2108~2807
+Onaway~Onaway~~Onaway, Presque Isle county, MI 49765, USA~45.3725;-84.2086~US-MI~45.3725,-84.2086~45.37250000~-84.20860000~49765~Presque Isle county~~~4.2000003~2039~3155
+Onekama~Onekama~~Onekama, Manistee county, MI 49675, USA~44.3688;-86.2183~US-MI~44.3688,-86.2183~44.36880000~-86.21830000~49675~Manistee county~~~4.4500003~1326~3610
+Onondaga~Onondaga~~Onondaga, Ingham county, MI 49264, USA~42.4537;-84.5533~US-MI~42.4537,-84.5533~42.45370000~-84.55330000~49264~Ingham county~~~4.37~1126~4810
+Onsted~Onsted~~Onsted, Lenawee county, MI 49265, USA~42.0142;-84.173~US-MI~42.0142,-84.173~42.01420000~-84.17300000~49265~Lenawee county~~~4.29~1677~2843
+Ontonagon~Ontonagon~~Ontonagon, Ontonagon county, MI 49953, USA~46.8556;-89.3158~US-MI~46.8556,-89.3158~46.85560000~-89.31580000~49953~Ontonagon county~~~4.4100003~2238~3114
+Orleans~Orleans~~Orleans, Ionia county, MI 48865, USA~43.0849;-85.1168~US-MI~43.0849,-85.1168~43.08490000~-85.11680000~48865~Ionia county~~~4.46~2951~4235
+Ortonville~Ortonville~~Ortonville, Oakland county, MI 48462, USA~42.8384;-83.4282~US-MI~42.8384,-83.4282~42.83840000~-83.42820000~48462~Oakland county~~~4.28~2091~3916
+Oscoda~Oscoda~~Oscoda, Iosco county, MI 48750, USA~44.4483;-83.3804~US-MI~44.4483,-83.3804~44.44830000~-83.38040000~48750~Iosco county~~~4.4500003~2005~4839
+Oshtemo~Oshtemo~~Oshtemo, Kalamazoo county, MI 49077, USA~42.2555;-85.677~US-MI~42.2555,-85.677~42.25550000~-85.67700000~49077~Kalamazoo county~~~4.1600003~1072~2020
+Osseo~Osseo~~Osseo, Hillsdale county, MI 49266, USA~41.8513;-84.5483~US-MI~41.8513,-84.5483~41.85130000~-84.54830000~49266~Hillsdale county~~~4.42~2935~4307
+Ossineke~Ossineke~~Ossineke, Alpena county, MI 49766, USA~44.921;-83.4619~US-MI~44.921,-83.4619~44.92100000~-83.46190000~49766~Alpena county~~~4.3~1368~4764
+Otisville~Otisville~~Otisville, Genesee county, MI 48463, USA~43.1545;-83.519~US-MI~43.1545,-83.519~43.15450000~-83.51900000~48463~Genesee county~~~4.27~1595~2480
+Otsego~Otsego~~Otsego, Allegan county, MI 49078, USA~42.4688;-85.7137~US-MI~42.4688,-85.7137~42.46880000~-85.71370000~49078~Allegan county~~~4.5~2742~4584
+Ottawa Lake~Ottawa-Lake~~Ottawa Lake, Monroe county, MI 49267, USA~41.7582;-83.6923~US-MI~41.7582,-83.6923~41.75820000~-83.69230000~49267~Monroe county~~~4.13~2733~2974
+Otter Lake~Otter-Lake~~Otter Lake, Lapeer county, MI 48464, USA~43.2141;-83.4251~US-MI~43.2141,-83.4251~43.21410000~-83.42510000~48464~Lapeer county~~~4.1800003~2898~2111
+Ovid~Ovid~~Ovid, Clinton county, MI 48866, USA~43.0059;-84.3995~US-MI~43.0059,-84.3995~43.00590000~-84.39950000~48866~Clinton county~~~4.37~1551~4565
+Owendale~Owendale~~Owendale, Huron county, MI 48754, USA~43.7335;-83.2444~US-MI~43.7335,-83.2444~43.73350000~-83.24440000~48754~Huron county~~~4.4700003~1783~3033
+Owosso~Owosso~~Owosso, Shiawassee county, MI 48867, USA~43.0046;-84.1842~US-MI~43.0046,-84.1842~43.00460000~-84.18420000~48867~Shiawassee county~~~4.4300003~2475~4408
+Oxford~Oxford~~Oxford, Oakland county, MI 48370, USA~42.8433;-83.198~US-MI~42.8433,-83.198~42.84330000~-83.19800000~48370~Oakland county~~~4.4500003~2204~4439
+Painesdale~Painesdale~~Painesdale, Houghton county, MI 49955, USA~47.0432;-88.6715~US-MI~47.0432,-88.6715~47.04320000~-88.67150000~49955~Houghton county~~~4.11~1767~3227
+Palmer~Palmer~~Palmer, Marquette county, MI 49871, USA~46.4401;-87.5901~US-MI~46.4401,-87.5901~46.44010000~-87.59010000~49871~Marquette county~~~4.46~1556~2551
+Palms~Palms~~Palms, Sanilac county, MI 48465, USA~43.6292;-82.6315~US-MI~43.6292,-82.6315~43.62920000~-82.63150000~48465~Sanilac county~~~4.37~2188~2443
+Palmyra~Palmyra~~Palmyra, Lenawee county, MI 49268, USA~41.8718;-83.9327~US-MI~41.8718,-83.9327~41.87180000~-83.93270000~49268~Lenawee county~~~4.31~1802~3982
+Palo~Palo~~Palo, Ionia county, MI 48870, USA~43.1075;-84.9876~US-MI~43.1075,-84.9876~43.10750000~-84.98760000~48870~Ionia county~~~4.4500003~2475~2108
+Paradise~Paradise~~Paradise, Chippewa county, MI 49768, USA~46.5922;-85.1292~US-MI~46.5922,-85.1292~46.59220000~-85.12920000~49768~Chippewa county~~~4.4900002~1480~2740
+Paris~Paris~~Paris, Mecosta county, MI 49338, USA~43.7827;-85.5118~US-MI~43.7827,-85.5118~43.78270000~-85.51180000~49338~Mecosta county~~~4.28~1991~2835
+Parma~Parma~~Parma, Jackson county, MI 49269, USA~42.2794;-84.5847~US-MI~42.2794,-84.5847~42.27940000~-84.58470000~49269~Jackson county~~~4.1400003~2171~2025
+Paw Paw~Paw-Paw~~Paw Paw, Van Buren county, MI 49079, USA~42.2313;-85.9028~US-MI~42.2313,-85.9028~42.23130000~-85.90280000~49079~Van Buren county~~~4.4100003~2676~3724
+Peck~Peck~~Peck, Sanilac county, MI 48466, USA~43.275;-82.8118~US-MI~43.275,-82.8118~43.27500000~-82.81180000~48466~Sanilac county~~~4.38~2232~2190
+Pelkie~Pelkie~~Pelkie, Houghton county, MI 49958, USA~46.7296;-88.644~US-MI~46.7296,-88.644~46.72960000~-88.64400000~49958~Houghton county~~~4.1200004~2297~2617
+Pellston~Pellston~~Pellston, Emmet county, MI 49769, USA~45.5686;-84.8746~US-MI~45.5686,-84.8746~45.56860000~-84.87460000~49769~Emmet county~~~4.4100003~2746~4393
+Pentwater~Pentwater~~Pentwater, Oceana county, MI 49449, USA~43.7968;-86.3713~US-MI~43.7968,-86.3713~43.79680000~-86.37130000~49449~Oceana county~~~4.3~1660~3209
+Perkins~Perkins~~Perkins, Delta county, MI 49872, USA~45.9974;-87.0926~US-MI~45.9974,-87.0926~45.99740000~-87.09260000~49872~Delta county~~~4.34~2907~2754
+Perrinton~Perrinton~~Perrinton, Gratiot county, MI 48871, USA~43.1575;-84.6809~US-MI~43.1575,-84.6809~43.15750000~-84.68090000~48871~Gratiot county~~~4.15~2392~3082
+Perronville~Perronville~~Perronville, Menominee county, MI 49873, USA~45.873;-87.4987~US-MI~45.873,-87.4987~45.87300000~-87.49870000~49873~Menominee county~~~4.44~1880~2531
+Perry~Perry~~Perry, Shiawassee county, MI 48872, USA~42.8162;-84.2264~US-MI~42.8162,-84.2264~42.81620000~-84.22640000~48872~Shiawassee county~~~4.2400002~1446~3956
+Petersburg~Petersburg~~Petersburg, Monroe county, MI 49270, USA~41.873;-83.6804~US-MI~41.873,-83.6804~41.87300000~-83.68040000~49270~Monroe county~~~4.2200003~1821~3618
+Petoskey~Petoskey~~Petoskey, Emmet county, MI 49770, USA~45.3566;-84.9303~US-MI~45.3566,-84.9303~45.35660000~-84.93030000~49770~Emmet county~~~4.27~1242~4732
+Pewamo~Pewamo~~Pewamo, Ionia county, MI 48873, USA~42.9799;-84.8559~US-MI~42.9799,-84.8559~42.97990000~-84.85590000~48873~Ionia county~~~4.42~1697~4032
+Pickford~Pickford~~Pickford, Chippewa county, MI 49774, USA~46.1687;-84.1817~US-MI~46.1687,-84.1817~46.16870000~-84.18170000~49774~Chippewa county~~~4.48~2902~3130
+Pierson~Pierson~~Pierson, Montcalm county, MI 49339, USA~43.3311;-85.4815~US-MI~43.3311,-85.4815~43.33110000~-85.48150000~49339~Montcalm county~~~4.28~2702~3109
+Pigeon~Pigeon~~Pigeon, Huron county, MI 48755, USA~43.8542;-83.2896~US-MI~43.8542,-83.2896~43.85420000~-83.28960000~48755~Huron county~~~4.5~1804~4941
+Pinckney~Pinckney~~Pinckney, Livingston county, MI 48169, USA~42.4591;-83.934~US-MI~42.4591,-83.934~42.45910000~-83.93400000~48169~Livingston county~~~4.2400002~1425~4559
+Pinconning~Pinconning~~Pinconning, Bay county, MI 48650, USA~43.8477;-83.9907~US-MI~43.8477,-83.9907~43.84770000~-83.99070000~48650~Bay county~~~4.23~2866~4761
+Pittsford~Pittsford~~Pittsford, Hillsdale county, MI 49271, USA~41.836;-84.4614~US-MI~41.836,-84.4614~41.83600000~-84.46140000~49271~Hillsdale county~~~4.4300003~2762~4132
+Plainwell~Plainwell~~Plainwell, Allegan county, MI 49080, USA~42.4563;-85.6289~US-MI~42.4563,-85.6289~42.45630000~-85.62890000~49080~Allegan county~~~4.38~1655~4592
+Pleasant Lake~Pleasant-Lake~~Pleasant Lake, Jackson county, MI 49272, USA~42.3962;-84.3443~US-MI~42.3962,-84.3443~42.39620000~-84.34430000~49272~Jackson county~~~4.38~1449~3247
+Pleasant Ridge~Pleasant-Ridge~~Pleasant Ridge, Oakland county, MI 48069, USA~42.4716;-83.1415~US-MI~42.4716,-83.1415~42.47160000~-83.14150000~48069~Oakland county~~~4.2400002~2655~4440
+Plymouth~Plymouth~~Plymouth, Wayne county, MI 48170, USA~42.3691;-83.5203~US-MI~42.3691,-83.5203~42.36910000~-83.52030000~48170~Wayne county~~~4.46~1742~4021
+Pointe Aux Pins~Pointe-Aux-Pins~~Pointe Aux Pins, Mackinac county, MI 49775, USA~45.7644;-84.4673~US-MI~45.7644,-84.4673~45.76440000~-84.46730000~49775~Mackinac county~~~4.3~1349~4309
+Pompeii~Pompeii~~Pompeii, Gratiot county, MI 48874, USA~43.1831;-84.6031~US-MI~43.1831,-84.6031~43.18310000~-84.60310000~48874~Gratiot county~~~4.1600003~2331~2393
+Pontiac~Pontiac~~Pontiac, Oakland county, MI 48340, USA~42.6725;-83.2887~US-MI~42.6725,-83.2887~42.67250000~-83.28870000~48340~Oakland county~~~4.31~2096~4192
+Port Austin~Port-Austin~~Port Austin, Huron county, MI 48467, USA~44.0087;-82.9808~US-MI~44.0087,-82.9808~44.00870000~-82.98080000~48467~Huron county~~~4.28~2766~3800
+Port Hope~Port-Hope~~Port Hope, Huron county, MI 48468, USA~43.9482;-82.7817~US-MI~43.9482,-82.7817~43.94820000~-82.78170000~48468~Huron county~~~4.4100003~2682~2627
+Port Huron~Port-Huron~~Port Huron, Saint Clair county, MI 48060, USA~42.9861;-82.4675~US-MI~42.9861,-82.4675~42.98610000~-82.46750000~48060~Saint Clair county~~~4.5~2614~3131
+Port Sanilac~Port-Sanilac~~Port Sanilac, Sanilac county, MI 48469, USA~43.4768;-82.5737~US-MI~43.4768,-82.5737~43.47680000~-82.57370000~48469~Sanilac county~~~4.33~1521~3152
+Portage~Portage~~Portage, Kalamazoo county, MI 49002, USA~42.2044;-85.5987~US-MI~42.2044,-85.5987~42.20440000~-85.59870000~49002~Kalamazoo county~~~4.48~1773~4894
+Portland~Portland~~Portland, Ionia county, MI 48875, USA~42.8602;-84.931~US-MI~42.8602,-84.931~42.86020000~-84.93100000~48875~Ionia county~~~4.13~2550~4589
+Posen~Posen~~Posen, Presque Isle county, MI 49776, USA~45.259;-83.6878~US-MI~45.259,-83.6878~45.25900000~-83.68780000~49776~Presque Isle county~~~4.42~2184~2832
+Potterville~Potterville~~Potterville, Eaton county, MI 48876, USA~42.6391;-84.7374~US-MI~42.6391,-84.7374~42.63910000~-84.73740000~48876~Eaton county~~~4.26~1754~4464
+Powers~Powers~~Powers, Menominee county, MI 49874, USA~45.6903;-87.5~US-MI~45.6903,-87.5~45.69030000~-87.50000000~49874~Menominee county~~~4.25~2546~2153
+Prescott~Prescott~~Prescott, Ogemaw county, MI 48756, USA~44.1833;-84.0353~US-MI~44.1833,-84.0353~44.18330000~-84.03530000~48756~Ogemaw county~~~4.11~2559~4630
+Presque Isle~Presque-Isle~~Presque Isle, Presque Isle county, MI 49777, USA~45.3235;-83.4888~US-MI~45.3235,-83.4888~45.32350000~-83.48880000~49777~Presque Isle county~~~4.31~1830~2155
+Prudenville~Prudenville~~Prudenville, Roscommon county, MI 48651, USA~44.2981;-84.6649~US-MI~44.2981,-84.6649~44.29810000~-84.66490000~48651~Roscommon county~~~4.13~1959~3156
+Pullman~Pullman~~Pullman, Allegan county, MI 49450, USA~42.4809;-86.0773~US-MI~42.4809,-86.0773~42.48090000~-86.07730000~49450~Allegan county~~~4.29~2171~4574
+Quincy~Quincy~~Quincy, Branch county, MI 49082, USA~41.9456;-84.886~US-MI~41.9456,-84.886~41.94560000~-84.88600000~49082~Branch county~~~4.34~2084~2026
+Quinnesec~Quinnesec~~Quinnesec, Dickinson county, MI 49876, USA~45.8036;-87.9912~US-MI~45.8036,-87.9912~45.80360000~-87.99120000~49876~Dickinson county~~~4.15~1970~2435
+Ralph~Ralph~~Ralph, Dickinson county, MI 49877, USA~46.1085;-87.7844~US-MI~46.1085,-87.7844~46.10850000~-87.78440000~49877~Dickinson county~~~4.2000003~1163~2148
+Ramsay~Ramsay~~Ramsay, Gogebic county, MI 49959, USA~46.4784;-89.9917~US-MI~46.4784,-89.9917~46.47840000~-89.99170000~49959~Gogebic county~~~4.23~1033~3198
+Rapid City~Rapid-City~~Rapid City, Kalkaska county, MI 49676, USA~44.8218;-85.2638~US-MI~44.8218,-85.2638~44.82180000~-85.26380000~49676~Kalkaska county~~~4.13~1429~4451
+Rapid River~Rapid-River~~Rapid River, Delta county, MI 49878, USA~45.8977;-86.8997~US-MI~45.8977,-86.8997~45.89770000~-86.89970000~49878~Delta county~~~4.46~2898~4376
+Ravenna~Ravenna~~Ravenna, Muskegon county, MI 49451, USA~43.2054;-85.9589~US-MI~43.2054,-85.9589~43.20540000~-85.95890000~49451~Muskegon county~~~4.28~2700~3741
+Ray~Ray~~Ray, Macomb county, MI 48096, USA~42.7615;-82.9271~US-MI~42.7615,-82.9271~42.76150000~-82.92710000~48096~Macomb county~~~4.25~1840~2284
+Reading~Reading~~Reading, Hillsdale county, MI 49274, USA~41.8457;-84.7607~US-MI~41.8457,-84.7607~41.84570000~-84.76070000~49274~Hillsdale county~~~4.11~2919~2733
+Redford~Redford~~Redford, Wayne county, MI 48239, USA~42.3767;-83.2851~US-MI~42.3767,-83.2851~42.37670000~-83.28510000~48239~Wayne county~~~4.17~2016~2997
+Reed City~Reed-City~~Reed City, Osceola county, MI 49677, USA~43.8998;-85.5114~US-MI~43.8998,-85.5114~43.89980000~-85.51140000~49677~Osceola county~~~4.28~1633~4559
+Reese~Reese~~Reese, Tuscola county, MI 48757, USA~43.4631;-83.6716~US-MI~43.4631,-83.6716~43.46310000~-83.67160000~48757~Tuscola county~~~4.35~1634~3825
+Remus~Remus~~Remus, Mecosta county, MI 49340, USA~43.618;-85.1389~US-MI~43.618,-85.1389~43.61800000~-85.13890000~49340~Mecosta county~~~4.1800003~1564~3631
+Republic~Republic~~Republic, Marquette county, MI 49879, USA~46.2789;-88.137~US-MI~46.2789,-88.137~46.27890000~-88.13700000~49879~Marquette county~~~4.26~2218~4166
+Rhodes~Rhodes~~Rhodes, Gladwin county, MI 48652, USA~43.8682;-84.2134~US-MI~43.8682,-84.2134~43.86820000~-84.21340000~48652~Gladwin county~~~4.34~1904~2484
+Richland~Richland~~Richland, Kalamazoo county, MI 49083, USA~42.3766;-85.4473~US-MI~42.3766,-85.4473~42.37660000~-85.44730000~49083~Kalamazoo county~~~4.4900002~1743~3523
+Richmond~Richmond~~Richmond, Macomb county, MI 48062, USA~42.8438;-82.7983~US-MI~42.8438,-82.7983~42.84380000~-82.79830000~48062~Macomb county~~~4.2400002~2487~2383
+Richville~Richville~~Richville, Tuscola county, MI 48758, USA~43.4066;-83.6733~US-MI~43.4066,-83.6733~43.40660000~-83.67330000~48758~Tuscola county~~~4.1400003~2975~2705
+Riga~Riga~~Riga, Lenawee county, MI 49276, USA~41.7922;-83.809~US-MI~41.7922,-83.809~41.79220000~-83.80900000~49276~Lenawee county~~~4.5~1532~4696
+River Rouge~River-Rouge~~River Rouge, Wayne county, MI 48218, USA~42.3314;-83.0458~US-MI~42.3314,-83.0458~42.33140000~-83.04580000~48218~Wayne county~~~4.27~1587~2179
+Riverdale~Riverdale~~Riverdale, Gratiot county, MI 48877, USA~43.402;-84.8384~US-MI~43.402,-84.8384~43.40200000~-84.83840000~48877~Gratiot county~~~4.3900003~1733~4744
+Riverside~Riverside~~Riverside, Berrien county, MI 49084, USA~42.183;-86.3808~US-MI~42.183,-86.3808~42.18300000~-86.38080000~49084~Berrien county~~~4.25~1163~4834
+Riverview~Riverview~~Riverview, Wayne county, MI 48193, USA~42.1769;-83.1932~US-MI~42.1769,-83.1932~42.17690000~-83.19320000~48193~Wayne county~~~4.29~1427~4530
+Rives Junction~Rives-Junction~~Rives Junction, Jackson county, MI 49277, USA~42.3885;-84.4664~US-MI~42.3885,-84.4664~42.38850000~-84.46640000~49277~Jackson county~~~4.3~1779~3333
+Rochester~Rochester~~Rochester, Oakland county, MI 48306, USA~42.7248;-83.1498~US-MI~42.7248,-83.1498~42.72480000~-83.14980000~48306~Oakland county~~~4.2000003~1472~4842
+Rock~Rock~~Rock, Delta county, MI 49880, USA~46.0382;-87.1758~US-MI~46.0382,-87.1758~46.03820000~-87.17580000~49880~Delta county~~~4.19~1225~3711
+Rockford~Rockford~~Rockford, Kent county, MI 49341, USA~43.1147;-85.5118~US-MI~43.1147,-85.5118~43.11470000~-85.51180000~49341~Kent county~~~4.33~2798~3471
+Rockland~Rockland~~Rockland, Ontonagon county, MI 49960, USA~46.7423;-89.1835~US-MI~46.7423,-89.1835~46.74230000~-89.18350000~49960~Ontonagon county~~~4.17~1198~2346
+Rockwood~Rockwood~~Rockwood, Wayne county, MI 48173, USA~42.0731;-83.2231~US-MI~42.0731,-83.2231~42.07310000~-83.22310000~48173~Wayne county~~~4.36~1478~3622
+Rodney~Rodney~~Rodney, Mecosta county, MI 49342, USA~43.6982;-85.3115~US-MI~43.6982,-85.3115~43.69820000~-85.31150000~49342~Mecosta county~~~4.2000003~1515~2283
+Rogers City~Rogers-City~~Rogers City, Presque Isle county, MI 49779, USA~45.4162;-83.8576~US-MI~45.4162,-83.8576~45.41620000~-83.85760000~49779~Presque Isle county~~~4.35~2392~4862
+Romeo~Romeo~~Romeo, Macomb county, MI 48065, USA~42.8408;-83.0325~US-MI~42.8408,-83.0325~42.84080000~-83.03250000~48065~Macomb county~~~4.35~1236~2097
+Romulus~Romulus~~Romulus, Wayne county, MI 48174, USA~42.2152;-83.3447~US-MI~42.2152,-83.3447~42.21520000~-83.34470000~48174~Wayne county~~~4.1800003~2655~4221
+Roscommon~Roscommon~~Roscommon, Roscommon county, MI 48653, USA~44.4661;-84.6783~US-MI~44.4661,-84.6783~44.46610000~-84.67830000~48653~Roscommon county~~~4.42~1600~3430
+Rose City~Rose-City~~Rose City, Ogemaw county, MI 48654, USA~44.433;-84.1222~US-MI~44.433,-84.1222~44.43300000~-84.12220000~48654~Ogemaw county~~~4.29~1241~4741
+Rosebush~Rosebush~~Rosebush, Isabella county, MI 48878, USA~43.7131;-84.7716~US-MI~43.7131,-84.7716~43.71310000~-84.77160000~48878~Isabella county~~~4.32~1854~3444
+Roseville~Roseville~~Roseville, Macomb county, MI 48066, USA~42.5036;-82.937~US-MI~42.5036,-82.937~42.50360000~-82.93700000~48066~Macomb county~~~4.4700003~1460~2965
+Rothbury~Rothbury~~Rothbury, Oceana county, MI 49452, USA~43.5136;-86.3054~US-MI~43.5136,-86.3054~43.51360000~-86.30540000~49452~Oceana county~~~4.11~2314~2882
+Royal Oak~Royal-Oak~~Royal Oak, Oakland county, MI 48067, USA~42.4919;-83.1407~US-MI~42.4919,-83.1407~42.49190000~-83.14070000~48067~Oakland county~~~4.38~1556~4878
+Rudyard~Rudyard~~Rudyard, Chippewa county, MI 49780, USA~46.1852;-84.4837~US-MI~46.1852,-84.4837~46.18520000~-84.48370000~49780~Chippewa county~~~4.4300003~2930~3422
+Rumely~Rumely~~Rumely, Alger county, MI 49826, USA~46.3426;-86.921~US-MI~46.3426,-86.921~46.34260000~-86.92100000~49826~Alger county~~~4.48~1827~4263
+Ruth~Ruth~~Ruth, Huron county, MI 48470, USA~43.7328;-82.7494~US-MI~43.7328,-82.7494~43.73280000~-82.74940000~48470~Huron county~~~4.2200003~1313~3344
+Saginaw~Saginaw~~Saginaw, Saginaw county, MI 48601, USA~43.4054;-83.9007~US-MI~43.4054,-83.9007~43.40540000~-83.90070000~48601~Saginaw county~~~4.37~1252~3982
+Sagola~Sagola~~Sagola, Dickinson county, MI 49881, USA~46.0689;-88.0647~US-MI~46.0689,-88.0647~46.06890000~-88.06470000~49881~Dickinson county~~~4.3~1785~4865
+Saint Charles~Saint-Charles~~Saint Charles, Saginaw county, MI 48655, USA~43.2953;-84.1637~US-MI~43.2953,-84.1637~43.29530000~-84.16370000~48655~Saginaw county~~~4.46~2056~3288
+Saint Clair Shores~Saint-Clair-Shores~~Saint Clair Shores, Macomb county, MI 48080, USA~42.4659;-82.9039~US-MI~42.4659,-82.9039~42.46590000~-82.90390000~48080~Macomb county~~~4.4300003~2257~2170
+Saint Clair~Saint-Clair~~Saint Clair, Saint Clair county, MI 48079, USA~42.8539;-82.5471~US-MI~42.8539,-82.5471~42.85390000~-82.54710000~48079~Saint Clair county~~~4.4100003~1278~3212
+Saint Helen~Saint-Helen~~Saint Helen, Roscommon county, MI 48656, USA~44.3643;-84.4303~US-MI~44.3643,-84.4303~44.36430000~-84.43030000~48656~Roscommon county~~~4.28~2791~4462
+Saint Ignace~Saint-Ignace~~Saint Ignace, Mackinac county, MI 49781, USA~45.8793;-84.7318~US-MI~45.8793,-84.7318~45.87930000~-84.73180000~49781~Mackinac county~~~4.21~2238~4610
+Saint Johns~Saint-Johns~~Saint Johns, Clinton county, MI 48879, USA~42.9993;-84.5754~US-MI~42.9993,-84.5754~42.99930000~-84.57540000~48879~Clinton county~~~4.26~1748~4227
+Saint Joseph~Saint-Joseph~~Saint Joseph, Berrien county, MI 49085, USA~42.0681;-86.4755~US-MI~42.0681,-86.4755~42.06810000~-86.47550000~49085~Berrien county~~~4.17~2439~3417
+Saint Louis~Saint-Louis~~Saint Louis, Gratiot county, MI 48880, USA~43.4094;-84.5991~US-MI~43.4094,-84.5991~43.40940000~-84.59910000~48880~Gratiot county~~~4.4~2030~3078
+Salem~Salem~~Salem, Washtenaw county, MI 48175, USA~42.4083;-83.5775~US-MI~42.4083,-83.5775~42.40830000~-83.57750000~48175~Washtenaw county~~~4.2000003~2187~2677
+Saline~Saline~~Saline, Washtenaw county, MI 48176, USA~42.1652;-83.7869~US-MI~42.1652,-83.7869~42.16520000~-83.78690000~48176~Washtenaw county~~~4.4~1173~3033
+Samaria~Samaria~~Samaria, Monroe county, MI 48177, USA~41.8114;-83.5766~US-MI~41.8114,-83.5766~41.81140000~-83.57660000~48177~Monroe county~~~4.4300003~2397~3305
+Sand Creek~Sand-Creek~~Sand Creek, Lenawee county, MI 49279, USA~41.7811;-84.1021~US-MI~41.7811,-84.1021~41.78110000~-84.10210000~49279~Lenawee county~~~4.2400002~1831~3660
+Sand Lake~Sand-Lake~~Sand Lake, Kent county, MI 49343, USA~43.2799;-85.4773~US-MI~43.2799,-85.4773~43.27990000~-85.47730000~49343~Kent county~~~4.29~2530~4528
+Sandusky~Sandusky~~Sandusky, Sanilac county, MI 48471, USA~43.4201;-82.8516~US-MI~43.4201,-82.8516~43.42010000~-82.85160000~48471~Sanilac county~~~4.1400003~1434~2346
+Sanford~Sanford~~Sanford, Midland county, MI 48657, USA~43.7032;-84.3937~US-MI~43.7032,-84.3937~43.70320000~-84.39370000~48657~Midland county~~~4.11~2507~2589
+Saranac~Saranac~~Saranac, Ionia county, MI 48881, USA~42.9273;-85.2087~US-MI~42.9273,-85.2087~42.92730000~-85.20870000~48881~Ionia county~~~4.34~2646~4245
+Saugatuck~Saugatuck~~Saugatuck, Allegan county, MI 49453, USA~42.6631;-86.1857~US-MI~42.6631,-86.1857~42.66310000~-86.18570000~49453~Allegan county~~~4.42~1274~3534
+Sault Sainte Marie~Sault-Sainte-Marie~~Sault Sainte Marie, Chippewa county, MI 49783, USA~46.4785;-84.3552~US-MI~46.4785,-84.3552~46.47850000~-84.35520000~49783~Chippewa county~~~4.19~2708~2965
+Sawyer~Sawyer~~Sawyer, Berrien county, MI 49125, USA~41.8886;-86.5941~US-MI~41.8886,-86.5941~41.88860000~-86.59410000~49125~Berrien county~~~4.26~1629~2075
+Schoolcraft~Schoolcraft~~Schoolcraft, Kalamazoo county, MI 49087, USA~42.1197;-85.6735~US-MI~42.1197,-85.6735~42.11970000~-85.67350000~49087~Kalamazoo county~~~4.23~2626~3375
+Scotts~Scotts~~Scotts, Kalamazoo county, MI 49088, USA~42.1867;-85.4218~US-MI~42.1867,-85.4218~42.18670000~-85.42180000~49088~Kalamazoo county~~~4.35~1909~4871
+Scottville~Scottville~~Scottville, Mason county, MI 49454, USA~43.9417;-86.2868~US-MI~43.9417,-86.2868~43.94170000~-86.28680000~49454~Mason county~~~4.26~1676~3392
+Sears~Sears~~Sears, Osceola county, MI 49679, USA~43.8631;-85.1585~US-MI~43.8631,-85.1585~43.86310000~-85.15850000~49679~Osceola county~~~4.4100003~1131~4060
+Sebewaing~Sebewaing~~Sebewaing, Huron county, MI 48759, USA~43.7322;-83.413~US-MI~43.7322,-83.413~43.73220000~-83.41300000~48759~Huron county~~~4.13~1830~2486
+Seney~Seney~~Seney, Schoolcraft county, MI 49883, USA~46.4205;-86.0511~US-MI~46.4205,-86.0511~46.42050000~-86.05110000~49883~Schoolcraft county~~~4.1400003~1124~4925
+Shaftsburg~Shaftsburg~~Shaftsburg, Shiawassee county, MI 48882, USA~42.8099;-84.2954~US-MI~42.8099,-84.2954~42.80990000~-84.29540000~48882~Shiawassee county~~~4.1400003~1205~3920
+Shelby~Shelby~~Shelby, Oceana county, MI 49455, USA~43.6003;-86.3619~US-MI~43.6003,-86.3619~43.60030000~-86.36190000~49455~Oceana county~~~4.2400002~1531~4001
+Shelbyville~Shelbyville~~Shelbyville, Allegan county, MI 49344, USA~42.6014;-85.6131~US-MI~42.6014,-85.6131~42.60140000~-85.61310000~49344~Allegan county~~~4.3~2479~4358
+Shepherd~Shepherd~~Shepherd, Isabella county, MI 48883, USA~43.5239;-84.7314~US-MI~43.5239,-84.7314~43.52390000~-84.73140000~48883~Isabella county~~~4.36~1998~2263
+Sheridan~Sheridan~~Sheridan, Montcalm county, MI 48884, USA~43.2116;-85.0525~US-MI~43.2116,-85.0525~43.21160000~-85.05250000~48884~Montcalm county~~~4.4100003~2545~4439
+Sherwood~Sherwood~~Sherwood, Branch county, MI 49089, USA~42.0093;-85.2287~US-MI~42.0093,-85.2287~42.00930000~-85.22870000~49089~Branch county~~~4.23~1143~3634
+Shingleton~Shingleton~~Shingleton, Alger county, MI 49884, USA~46.355;-86.4524~US-MI~46.355,-86.4524~46.35500000~-86.45240000~49884~Alger county~~~4.15~1722~4898
+Sidnaw~Sidnaw~~Sidnaw, Houghton county, MI 49961, USA~46.5053;-88.7314~US-MI~46.5053,-88.7314~46.50530000~-88.73140000~49961~Houghton county~~~4.4500003~1959~3134
+Sidney~Sidney~~Sidney, Montcalm county, MI 48885, USA~43.2519;-85.1433~US-MI~43.2519,-85.1433~43.25190000~-85.14330000~48885~Montcalm county~~~4.2000003~2522~3597
+Silverwood~Silverwood~~Silverwood, Lapeer county, MI 48760, USA~43.3216;-83.2472~US-MI~43.3216,-83.2472~43.32160000~-83.24720000~48760~Lapeer county~~~4.2400002~2725~3276
+Six Lakes~Six-Lakes~~Six Lakes, Montcalm county, MI 48886, USA~43.4168;-85.1619~US-MI~43.4168,-85.1619~43.41680000~-85.16190000~48886~Montcalm county~~~4.2000003~2689~4386
+Skandia~Skandia~~Skandia, Marquette county, MI 49885, USA~46.3498;-87.2512~US-MI~46.3498,-87.2512~46.34980000~-87.25120000~49885~Marquette county~~~4.33~1046~3810
+Skanee~Skanee~~Skanee, Baraga county, MI 49962, USA~46.8714;-88.1638~US-MI~46.8714,-88.1638~46.87140000~-88.16380000~49962~Baraga county~~~4.48~1975~3457
+Smiths Creek~Smiths-Creek~~Smiths Creek, Saint Clair county, MI 48074, USA~42.9442;-82.5599~US-MI~42.9442,-82.5599~42.94420000~-82.55990000~48074~Saint Clair county~~~4.32~2092~3981
+Smyrna~Smyrna~~Smyrna, Ionia county, MI 48887, USA~43.0624;-85.2627~US-MI~43.0624,-85.2627~43.06240000~-85.26270000~48887~Ionia county~~~4.3900003~2091~4411
+Snover~Snover~~Snover, Sanilac county, MI 48472, USA~43.5212;-82.9563~US-MI~43.5212,-82.9563~43.52120000~-82.95630000~48472~Sanilac county~~~4.2000003~1863~3560
+Sodus~Sodus~~Sodus, Berrien county, MI 49126, USA~42.0368;-86.3697~US-MI~42.0368,-86.3697~42.03680000~-86.36970000~49126~Berrien county~~~4.34~2624~3522
+Somerset Center~Somerset-Center~~Somerset Center, Hillsdale county, MI 49282, USA~42.0522;-84.4181~US-MI~42.0522,-84.4181~42.05220000~-84.41810000~49282~Hillsdale county~~~4.2400002~1131~3782
+Somerset~Somerset~~Somerset, Hillsdale county, MI 49281, USA~42.0519;-84.3829~US-MI~42.0519,-84.3829~42.05190000~-84.38290000~49281~Hillsdale county~~~4.1600003~2917~2768
+South Boardman~South-Boardman~~South Boardman, Kalkaska county, MI 49680, USA~44.6331;-85.2435~US-MI~44.6331,-85.2435~44.63310000~-85.24350000~49680~Kalkaska county~~~4.44~1944~2498
+South Branch~South-Branch~~South Branch, Ogemaw county, MI 48761, USA~44.4751;-83.916~US-MI~44.4751,-83.916~44.47510000~-83.91600000~48761~Ogemaw county~~~4.37~1687~3126
+South Haven~South-Haven~~South Haven, Van Buren county, MI 49090, USA~42.387;-86.2582~US-MI~42.387,-86.2582~42.38700000~-86.25820000~49090~Van Buren county~~~4.28~2573~2805
+South Lyon~South-Lyon~~South Lyon, Oakland county, MI 48178, USA~42.4476;-83.6624~US-MI~42.4476,-83.6624~42.44760000~-83.66240000~48178~Oakland county~~~4.31~1128~4374
+South Range~South-Range~~South Range, Houghton county, MI 49963, USA~47.0674;-88.6428~US-MI~47.0674,-88.6428~47.06740000~-88.64280000~49963~Houghton county~~~4.17~1544~4634
+South Rockwood~South-Rockwood~~South Rockwood, Monroe county, MI 48179, USA~42.0517;-83.2589~US-MI~42.0517,-83.2589~42.05170000~-83.25890000~48179~Monroe county~~~4.4100003~2492~2229
+Southfield~Southfield~~Southfield, Oakland county, MI 48033, USA~42.4723;-83.294~US-MI~42.4723,-83.294~42.47230000~-83.29400000~48033~Oakland county~~~4.2400002~1729~3430
+Southgate~Southgate~~Southgate, Wayne county, MI 48195, USA~42.2053;-83.207~US-MI~42.2053,-83.207~42.20530000~-83.20700000~48195~Wayne county~~~4.37~2609~3125
+Spalding~Spalding~~Spalding, Menominee county, MI 49886, USA~45.697;-87.5046~US-MI~45.697,-87.5046~45.69700000~-87.50460000~49886~Menominee county~~~4.48~2706~2820
+Sparta~Sparta~~Sparta, Kent county, MI 49345, USA~43.1617;-85.6944~US-MI~43.1617,-85.6944~43.16170000~-85.69440000~49345~Kent county~~~4.33~1013~3862
+Spring Arbor~Spring-Arbor~~Spring Arbor, Jackson county, MI 49283, USA~42.2096;-84.5478~US-MI~42.2096,-84.5478~42.20960000~-84.54780000~49283~Jackson county~~~4.25~1246~2245
+Spring Lake~Spring-Lake~~Spring Lake, Ottawa county, MI 49456, USA~43.0865;-86.1893~US-MI~43.0865,-86.1893~43.08650000~-86.18930000~49456~Ottawa county~~~4.25~2415~2722
+Springport~Springport~~Springport, Jackson county, MI 49284, USA~42.379;-84.6662~US-MI~42.379,-84.6662~42.37900000~-84.66620000~49284~Jackson county~~~4.13~1696~4536
+Spruce~Spruce~~Spruce, Alcona county, MI 48762, USA~44.7936;-83.5194~US-MI~44.7936,-83.5194~44.79360000~-83.51940000~48762~Alcona county~~~4.34~2398~3223
+Stambaugh~Stambaugh~~Stambaugh, Iron county, MI 49964, USA~46.0815;-88.6298~US-MI~46.0815,-88.6298~46.08150000~-88.62980000~49964~Iron county~~~4.48~2059~2337
+Standish~Standish~~Standish, Arenac county, MI 48658, USA~43.9771;-83.9346~US-MI~43.9771,-83.9346~43.97710000~-83.93460000~48658~Arenac county~~~4.15~2324~4457
+Stanton~Stanton~~Stanton, Montcalm county, MI 48888, USA~43.3025;-85.11~US-MI~43.3025,-85.11~43.30250000~-85.11000000~48888~Montcalm county~~~4.1200004~1938~4290
+Stanwood~Stanwood~~Stanwood, Mecosta county, MI 49346, USA~43.5901;-85.3619~US-MI~43.5901,-85.3619~43.59010000~-85.36190000~49346~Mecosta county~~~4.23~1436~4115
+Stephenson~Stephenson~~Stephenson, Menominee county, MI 49887, USA~45.4147;-87.6154~US-MI~45.4147,-87.6154~45.41470000~-87.61540000~49887~Menominee county~~~4.3~2196~3023
+Sterling Heights~Sterling-Heights~~Sterling Heights, Macomb county, MI 48310, USA~42.5664;-83.068~US-MI~42.5664,-83.068~42.56640000~-83.06800000~48310~Macomb county~~~4.19~1331~3415
+Sterling~Sterling~~Sterling, Arenac county, MI 48659, USA~44.0643;-84.0253~US-MI~44.0643,-84.0253~44.06430000~-84.02530000~48659~Arenac county~~~4.28~2582~2086
+Stevensville~Stevensville~~Stevensville, Berrien county, MI 49127, USA~42.0168;-86.516~US-MI~42.0168,-86.516~42.01680000~-86.51600000~49127~Berrien county~~~4.25~1201~3980
+Stockbridge~Stockbridge~~Stockbridge, Ingham county, MI 49285, USA~42.4666;-84.2132~US-MI~42.4666,-84.2132~42.46660000~-84.21320000~49285~Ingham county~~~4.2000003~1216~4744
+Strongs~Strongs~~Strongs, Chippewa county, MI 49790, USA~46.3577;-84.9678~US-MI~46.3577,-84.9678~46.35770000~-84.96780000~49790~Chippewa county~~~4.36~1643~3781
+Sturgis~Sturgis~~Sturgis, Saint Joseph county, MI 49091, USA~41.8147;-85.4314~US-MI~41.8147,-85.4314~41.81470000~-85.43140000~49091~Saint Joseph county~~~4.4~2026~4443
+Sumner~Sumner~~Sumner, Gratiot county, MI 48889, USA~43.2927;-84.7999~US-MI~43.2927,-84.7999~43.29270000~-84.79990000~48889~Gratiot county~~~4.4300003~2052~2673
+Sunfield~Sunfield~~Sunfield, Eaton county, MI 48890, USA~42.749;-84.9907~US-MI~42.749,-84.9907~42.74900000~-84.99070000~48890~Eaton county~~~4.5~2312~4826
+Suttons Bay~Suttons-Bay~~Suttons Bay, Leelanau county, MI 49682, USA~44.9672;-85.6399~US-MI~44.9672,-85.6399~44.96720000~-85.63990000~49682~Leelanau county~~~4.1200004~2246~3096
+Swartz Creek~Swartz-Creek~~Swartz Creek, Genesee county, MI 48473, USA~42.9421;-83.828~US-MI~42.9421,-83.828~42.94210000~-83.82800000~48473~Genesee county~~~4.42~1606~2131
+Sylvan Beach~Sylvan-Beach~~Sylvan Beach, Muskegon county, MI 49463, USA~43.3706;-86.4232~US-MI~43.3706,-86.4232~43.37060000~-86.42320000~49463~Muskegon county~~~4.28~2472~2642
+Tawas City~Tawas-City~~Tawas City, Iosco county, MI 48763, USA~44.2658;-83.5634~US-MI~44.2658,-83.5634~44.26580000~-83.56340000~48763~Iosco county~~~4.17~2361~2767
+Taylor~Taylor~~Taylor, Wayne county, MI 48180, USA~42.2343;-83.2693~US-MI~42.2343,-83.2693~42.23430000~-83.26930000~48180~Wayne county~~~4.28~2072~3757
+Tecumseh~Tecumseh~~Tecumseh, Lenawee county, MI 49286, USA~42.0105;-83.9437~US-MI~42.0105,-83.9437~42.01050000~-83.94370000~49286~Lenawee county~~~4.29~1406~2156
+Tekonsha~Tekonsha~~Tekonsha, Calhoun county, MI 49092, USA~42.1025;-84.9808~US-MI~42.1025,-84.9808~42.10250000~-84.98080000~49092~Calhoun county~~~4.21~1357~3782
+Temperance~Temperance~~Temperance, Monroe county, MI 48182, USA~41.7889;-83.5714~US-MI~41.7889,-83.5714~41.78890000~-83.57140000~48182~Monroe county~~~4.2400002~1089~2693
+Thompsonville~Thompsonville~~Thompsonville, Benzie county, MI 49683, USA~44.499;-85.9972~US-MI~44.499,-85.9972~44.49900000~-85.99720000~49683~Benzie county~~~4.4500003~1151~4345
+Three Oaks~Three-Oaks~~Three Oaks, Berrien county, MI 49128, USA~41.8225;-86.6165~US-MI~41.8225,-86.6165~41.82250000~-86.61650000~49128~Berrien county~~~4.2200003~2683~3782
+Three Rivers~Three-Rivers~~Three Rivers, Saint Joseph county, MI 49093, USA~41.9604;-85.637~US-MI~41.9604,-85.637~41.96040000~-85.63700000~49093~Saint Joseph county~~~4.42~1520~2270
+Tipton~Tipton~~Tipton, Lenawee county, MI 49287, USA~42.0293;-84.0866~US-MI~42.0293,-84.0866~42.02930000~-84.08660000~49287~Lenawee county~~~4.2400002~1792~2795
+Toivola~Toivola~~Toivola, Houghton county, MI 49965, USA~46.9399;-88.8534~US-MI~46.9399,-88.8534~46.93990000~-88.85340000~49965~Houghton county~~~4.26~1132~3567
+Topinabee~Topinabee~~Topinabee, Cheboygan county, MI 49791, USA~45.4857;-84.5963~US-MI~45.4857,-84.5963~45.48570000~-84.59630000~49791~Cheboygan county~~~4.4700003~1793~4369
+Tower~Tower~~Tower, Cheboygan county, MI 49792, USA~45.367;-84.3062~US-MI~45.367,-84.3062~45.36700000~-84.30620000~49792~Cheboygan county~~~4.1200004~1444~4251
+Traverse City~Traverse-City~~Traverse City, Grand Traverse county, MI 49684, USA~44.7735;-85.7036~US-MI~44.7735,-85.7036~44.77350000~-85.70360000~49684~Grand Traverse county~~~4.1200004~1133~4932
+Trenary~Trenary~~Trenary, Alger county, MI 49891, USA~46.2028;-86.8663~US-MI~46.2028,-86.8663~46.20280000~-86.86630000~49891~Alger county~~~4.42~2515~4698
+Trenton~Trenton~~Trenton, Wayne county, MI 48183, USA~42.1344;-83.2159~US-MI~42.1344,-83.2159~42.13440000~-83.21590000~48183~Wayne county~~~4.4100003~1572~3938
+Trout Creek~Trout-Creek~~Trout Creek, Ontonagon county, MI 49967, USA~46.4768;-89.008~US-MI~46.4768,-89.008~46.47680000~-89.00800000~49967~Ontonagon county~~~4.1200004~1011~3339
+Trout Lake~Trout-Lake~~Trout Lake, Chippewa county, MI 49793, USA~46.1934;-85.0159~US-MI~46.1934,-85.0159~46.19340000~-85.01590000~49793~Chippewa county~~~4.1600003~2162~3114
+Troy~Troy~~Troy, Oakland county, MI 48007, USA~42.581;-83.1457~US-MI~42.581,-83.1457~42.58100000~-83.14570000~48007~Oakland county~~~4.25~2269~4234
+Trufant~Trufant~~Trufant, Montcalm county, MI 49347, USA~43.3181;-85.3441~US-MI~43.3181,-85.3441~43.31810000~-85.34410000~49347~Montcalm county~~~4.37~2604~4578
+Turner~Turner~~Turner, Arenac county, MI 48765, USA~44.1309;-83.7205~US-MI~44.1309,-83.7205~44.13090000~-83.72050000~48765~Arenac county~~~4.28~1772~3242
+Tuscola~Tuscola~~Tuscola, Tuscola county, MI 48769, USA~43.3105;-83.6185~US-MI~43.3105,-83.6185~43.31050000~-83.61850000~48769~Tuscola county~~~4.13~2570~2448
+Tustin~Tustin~~Tustin, Osceola county, MI 49688, USA~44.1137;-85.4309~US-MI~44.1137,-85.4309~44.11370000~-85.43090000~49688~Osceola county~~~4.46~2351~3683
+Twin Lake~Twin-Lake~~Twin Lake, Muskegon county, MI 49457, USA~43.3598;-86.1762~US-MI~43.3598,-86.1762~43.35980000~-86.17620000~49457~Muskegon county~~~4.1400003~2032~4916
+Twining~Twining~~Twining, Arenac county, MI 48766, USA~44.1193;-83.853~US-MI~44.1193,-83.853~44.11930000~-83.85300000~48766~Arenac county~~~4.3900003~1122~4155
+Ubly~Ubly~~Ubly, Huron county, MI 48475, USA~43.7145;-82.9445~US-MI~43.7145,-82.9445~43.71450000~-82.94450000~48475~Huron county~~~4.4700003~1245~4237
+Union City~Union-City~~Union City, Branch county, MI 49094, USA~42.0401;-85.1148~US-MI~42.0401,-85.1148~42.04010000~-85.11480000~49094~Branch county~~~4.2400002~2127~2856
+Union Lake~Union-Lake~~Union Lake, Oakland county, MI 48387, USA~42.6123;-83.4478~US-MI~42.6123,-83.4478~42.61230000~-83.44780000~48387~Oakland county~~~4.2200003~2536~2561
+Union Pier~Union-Pier~~Union Pier, Berrien county, MI 49129, USA~41.8257;-86.6886~US-MI~41.8257,-86.6886~41.82570000~-86.68860000~49129~Berrien county~~~4.17~1941~4302
+Union~Union~~Union, Cass county, MI 49130, USA~41.7853;-85.8526~US-MI~41.7853,-85.8526~41.78530000~-85.85260000~49130~Cass county~~~4.1200004~1254~4058
+Unionville~Unionville~~Unionville, Tuscola county, MI 48767, USA~43.6445;-83.4703~US-MI~43.6445,-83.4703~43.64450000~-83.47030000~48767~Tuscola county~~~4.4300003~2603~3999
+University Center~University-Center~~University Center, Bay county, MI 48710, USA~43.5618;-83.9875~US-MI~43.5618,-83.9875~43.56180000~-83.98750000~48710~Bay county~~~4.5~1811~4466
+Utica~Utica~~Utica, Macomb county, MI 48315, USA~42.6656;-82.9959~US-MI~42.6656,-82.9959~42.66560000~-82.99590000~48315~Macomb county~~~4.4900002~2728~3628
+Vandalia~Vandalia~~Vandalia, Cass county, MI 49095, USA~41.9033;-85.8859~US-MI~41.9033,-85.8859~41.90330000~-85.88590000~49095~Cass county~~~4.33~1859~4264
+Vanderbilt~Vanderbilt~~Vanderbilt, Otsego county, MI 49795, USA~45.1449;-84.6262~US-MI~45.1449,-84.6262~45.14490000~-84.62620000~49795~Otsego county~~~4.3900003~2941~4278
+Vassar~Vassar~~Vassar, Tuscola county, MI 48768, USA~43.3688;-83.5749~US-MI~43.3688,-83.5749~43.36880000~-83.57490000~48768~Tuscola county~~~4.2000003~1407~3730
+Vermontville~Vermontville~~Vermontville, Eaton county, MI 49096, USA~42.6348;-85.0146~US-MI~42.6348,-85.0146~42.63480000~-85.01460000~49096~Eaton county~~~4.1800003~1752~2479
+Vernon~Vernon~~Vernon, Shiawassee county, MI 48476, USA~42.9392;-84.0279~US-MI~42.9392,-84.0279~42.93920000~-84.02790000~48476~Shiawassee county~~~4.42~2147~3680
+Vestaburg~Vestaburg~~Vestaburg, Montcalm county, MI 48891, USA~43.3958;-84.918~US-MI~43.3958,-84.918~43.39580000~-84.91800000~48891~Montcalm county~~~4.32~2855~2690
+Vicksburg~Vicksburg~~Vicksburg, Kalamazoo county, MI 49097, USA~42.1202;-85.5063~US-MI~42.1202,-85.5063~42.12020000~-85.50630000~49097~Kalamazoo county~~~4.1200004~2863~4125
+Vulcan~Vulcan~~Vulcan, Dickinson county, MI 49892, USA~45.7831;-87.8699~US-MI~45.7831,-87.8699~45.78310000~-87.86990000~49892~Dickinson county~~~4.25~1053~4477
+Wakefield~Wakefield~~Wakefield, Gogebic county, MI 49968, USA~46.4783;-89.9366~US-MI~46.4783,-89.9366~46.47830000~-89.93660000~49968~Gogebic county~~~4.46~2390~2503
+Waldron~Waldron~~Waldron, Hillsdale county, MI 49288, USA~41.7315;-84.4386~US-MI~41.7315,-84.4386~41.73150000~-84.43860000~49288~Hillsdale county~~~4.17~2416~2480
+Walhalla~Walhalla~~Walhalla, Mason county, MI 49458, USA~43.9439;-86.0992~US-MI~43.9439,-86.0992~43.94390000~-86.09920000~49458~Mason county~~~4.4300003~2719~2792
+Walkerville~Walkerville~~Walkerville, Oceana county, MI 49459, USA~43.7414;-86.0085~US-MI~43.7414,-86.0085~43.74140000~-86.00850000~49459~Oceana county~~~4.4~1767~2883
+Wallace~Wallace~~Wallace, Menominee county, MI 49893, USA~45.3348;-87.6099~US-MI~45.3348,-87.6099~45.33480000~-87.60990000~49893~Menominee county~~~4.44~1381~3900
+Walled Lake~Walled-Lake~~Walled Lake, Oakland county, MI 48390, USA~42.5512;-83.4774~US-MI~42.5512,-83.4774~42.55120000~-83.47740000~48390~Oakland county~~~4.34~2624~4092
+Walloon Lake~Walloon-Lake~~Walloon Lake, Charlevoix county, MI 49796, USA~45.2643;-84.9332~US-MI~45.2643,-84.9332~45.26430000~-84.93320000~49796~Charlevoix county~~~4.13~1116~2694
+Warren~Warren~~Warren, Macomb county, MI 48088, USA~42.5158;-82.9812~US-MI~42.5158,-82.9812~42.51580000~-82.98120000~48088~Macomb county~~~4.48~2063~2967
+Washington~Washington~~Washington, Macomb county, MI 48094, USA~42.7345;-82.9981~US-MI~42.7345,-82.9981~42.73450000~-82.99810000~48094~Macomb county~~~4.3~1562~2985
+Waterford~Waterford~~Waterford, Oakland county, MI 48327, USA~42.648;-83.4073~US-MI~42.648,-83.4073~42.64800000~-83.40730000~48327~Oakland county~~~4.2400002~1349~2326
+Waters~Waters~~Waters, Otsego county, MI 49797, USA~44.8683;-84.67~US-MI~44.8683,-84.67~44.86830000~-84.67000000~49797~Otsego county~~~4.25~2200~3741
+Watersmeet~Watersmeet~~Watersmeet, Gogebic county, MI 49969, USA~46.2689;-89.1743~US-MI~46.2689,-89.1743~46.26890000~-89.17430000~49969~Gogebic county~~~4.28~1024~3471
+Watervliet~Watervliet~~Watervliet, Berrien county, MI 49098, USA~42.1871;-86.2561~US-MI~42.1871,-86.2561~42.18710000~-86.25610000~49098~Berrien county~~~4.25~2627~4571
+Watton~Watton~~Watton, Baraga county, MI 49970, USA~46.5023;-88.6203~US-MI~46.5023,-88.6203~46.50230000~-88.62030000~49970~Baraga county~~~4.28~2923~3092
+Wayland~Wayland~~Wayland, Allegan county, MI 49348, USA~42.6801;-85.6348~US-MI~42.6801,-85.6348~42.68010000~-85.63480000~49348~Allegan county~~~4.23~1106~2099
+Wayne~Wayne~~Wayne, Wayne county, MI 48184, USA~42.2755;-83.3827~US-MI~42.2755,-83.3827~42.27550000~-83.38270000~48184~Wayne county~~~4.42~2616~4270
+Webberville~Webberville~~Webberville, Ingham county, MI 48892, USA~42.6484;-84.1737~US-MI~42.6484,-84.1737~42.64840000~-84.17370000~48892~Ingham county~~~4.4700003~1783~3967
+Weidman~Weidman~~Weidman, Isabella county, MI 48893, USA~43.6717;-84.9884~US-MI~43.6717,-84.9884~43.67170000~-84.98840000~48893~Isabella county~~~4.13~2153~2706
+Wells~Wells~~Wells, Delta county, MI 49894, USA~45.7784;-87.075~US-MI~45.7784,-87.075~45.77840000~-87.07500000~49894~Delta county~~~4.38~1274~4385
+Wellston~Wellston~~Wellston, Manistee county, MI 49689, USA~44.2129;-85.9371~US-MI~44.2129,-85.9371~44.21290000~-85.93710000~49689~Manistee county~~~4.21~1673~2685
+West Bloomfield~West-Bloomfield~~West Bloomfield, Oakland county, MI 48322, USA~42.5453;-83.3824~US-MI~42.5453,-83.3824~42.54530000~-83.38240000~48322~Oakland county~~~4.4100003~1906~3802
+West Branch~West-Branch~~West Branch, Ogemaw county, MI 48661, USA~44.289;-84.219~US-MI~44.289,-84.219~44.28900000~-84.21900000~48661~Ogemaw county~~~4.23~1382~3678
+West Olive~West-Olive~~West Olive, Ottawa county, MI 49460, USA~42.928;-86.1086~US-MI~42.928,-86.1086~42.92800000~-86.10860000~49460~Ottawa county~~~4.25~1130~3826
+Westland~Westland~~Westland, Wayne county, MI 48185, USA~42.3415;-83.3971~US-MI~42.3415,-83.3971~42.34150000~-83.39710000~48185~Wayne county~~~4.38~2990~2894
+Weston~Weston~~Weston, Lenawee county, MI 49289, USA~41.7728;-84.0981~US-MI~41.7728,-84.0981~41.77280000~-84.09810000~49289~Lenawee county~~~4.28~1445~3276
+Westphalia~Westphalia~~Westphalia, Clinton county, MI 48894, USA~42.9286;-84.7957~US-MI~42.9286,-84.7957~42.92860000~-84.79570000~48894~Clinton county~~~4.3~2272~3311
+Wetmore~Wetmore~~Wetmore, Alger county, MI 49895, USA~46.3747;-86.6183~US-MI~46.3747,-86.6183~46.37470000~-86.61830000~49895~Alger county~~~4.36~1768~4064
+Wheeler~Wheeler~~Wheeler, Gratiot county, MI 48662, USA~43.3887;-84.4167~US-MI~43.3887,-84.4167~43.38870000~-84.41670000~48662~Gratiot county~~~4.2400002~2579~4171
+White Cloud~White-Cloud~~White Cloud, Newaygo county, MI 49349, USA~43.5617;-85.7522~US-MI~43.5617,-85.7522~43.56170000~-85.75220000~49349~Newaygo county~~~4.31~2030~3121
+White Lake~White-Lake~~White Lake, Oakland county, MI 48383, USA~42.6588;-83.5427~US-MI~42.6588,-83.5427~42.65880000~-83.54270000~48383~Oakland county~~~4.36~1341~3254
+White Pigeon~White-Pigeon~~White Pigeon, Saint Joseph county, MI 49099, USA~41.7934;-85.6612~US-MI~41.7934,-85.6612~41.79340000~-85.66120000~49099~Saint Joseph county~~~4.1600003~2625~3180
+White Pine~White-Pine~~White Pine, Ontonagon county, MI 49971, USA~46.7573;-89.5811~US-MI~46.7573,-89.5811~46.75730000~-89.58110000~49971~Ontonagon county~~~4.34~1949~4678
+Whitehall~Whitehall~~Whitehall, Muskegon county, MI 49461, USA~43.385;-86.3408~US-MI~43.385,-86.3408~43.38500000~-86.34080000~49461~Muskegon county~~~4.3~1535~3869
+Whitmore Lake~Whitmore-Lake~~Whitmore Lake, Washtenaw county, MI 48189, USA~42.3999;-83.7716~US-MI~42.3999,-83.7716~42.39990000~-83.77160000~48189~Washtenaw county~~~4.46~1784~3340
+Whittaker~Whittaker~~Whittaker, Washtenaw county, MI 48190, USA~42.1262;-83.5939~US-MI~42.1262,-83.5939~42.12620000~-83.59390000~48190~Washtenaw county~~~4.31~1848~3631
+Whittemore~Whittemore~~Whittemore, Iosco county, MI 48770, USA~44.2346;-83.8114~US-MI~44.2346,-83.8114~44.23460000~-83.81140000~48770~Iosco county~~~4.31~1945~2195
+Williamsburg~Williamsburg~~Williamsburg, Grand Traverse county, MI 49690, USA~44.789;-85.4298~US-MI~44.789,-85.4298~44.78900000~-85.42980000~49690~Grand Traverse county~~~4.2200003~1650~3771
+Williamston~Williamston~~Williamston, Ingham county, MI 48895, USA~42.6895;-84.2868~US-MI~42.6895,-84.2868~42.68950000~-84.28680000~48895~Ingham county~~~4.29~1825~4850
+Willis~Willis~~Willis, Washtenaw county, MI 48191, USA~42.1309;-83.5705~US-MI~42.1309,-83.5705~42.13090000~-83.57050000~48191~Washtenaw county~~~4.29~2069~3026
+Wilson~Wilson~~Wilson, Menominee county, MI 49896, USA~45.6578;-87.3976~US-MI~45.6578,-87.3976~45.65780000~-87.39760000~49896~Menominee county~~~4.4900002~1885~2185
+Winn~Winn~~Winn, Isabella county, MI 48896, USA~43.5273;-84.9017~US-MI~43.5273,-84.9017~43.52730000~-84.90170000~48896~Isabella county~~~4.13~1009~3985
+Wixom~Wixom~~Wixom, Oakland county, MI 48393, USA~42.5181;-83.5425~US-MI~42.5181,-83.5425~42.51810000~-83.54250000~48393~Oakland county~~~4.33~2697~2144
+Wolverine~Wolverine~~Wolverine, Cheboygan county, MI 49799, USA~45.2678;-84.5887~US-MI~45.2678,-84.5887~45.26780000~-84.58870000~49799~Cheboygan county~~~4.37~2322~4846
+Woodland~Woodland~~Woodland, Barry county, MI 48897, USA~42.7076;-85.1296~US-MI~42.7076,-85.1296~42.70760000~-85.12960000~48897~Barry county~~~4.1200004~2433~2926
+Wyandotte~Wyandotte~~Wyandotte, Wayne county, MI 48192, USA~42.1975;-83.1852~US-MI~42.1975,-83.1852~42.19750000~-83.18520000~48192~Wayne county~~~4.2200003~2859~3162
+Wyoming~Wyoming~~Wyoming, Kent county, MI 49509, USA~42.8839;-85.7062~US-MI~42.8839,-85.7062~42.88390000~-85.70620000~49509~Kent county~~~4.25~1185~2421
+Yale~Yale~~Yale, Saint Clair county, MI 48097, USA~43.1162;-82.794~US-MI~43.1162,-82.794~43.11620000~-82.79400000~48097~Saint Clair county~~~4.1200004~2118~4897
+Ypsilanti~Ypsilanti~~Ypsilanti, Washtenaw county, MI 48197, USA~42.2331;-83.6238~US-MI~42.2331,-83.6238~42.23310000~-83.62380000~48197~Washtenaw county~~~4.13~2833~3048
+Zeeland~Zeeland~~Zeeland, Ottawa county, MI 49464, USA~42.8669;-85.9686~US-MI~42.8669,-85.9686~42.86690000~-85.96860000~49464~Ottawa county~~~4.2200003~1754~4465
