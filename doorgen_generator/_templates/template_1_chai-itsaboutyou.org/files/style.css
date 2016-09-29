@@ -657,6 +657,10 @@ div.hr {
     background-color: #FFFFFF;
 	width:100%;
 	color:#fff;
+	/*overflow: hidden;
+    padding: 30px 0 0;
+    position: relative;
+    z-index: auto;*/
 }
 .footer a {
 	color:#c2dd82;
@@ -817,4 +821,106 @@ div.hr {
 	font-size: 25px;
 	text-transform: uppercase;
 }
+.toggle-block > ul{
+	margin: 10px 0;
+	padding: 0 0 5px 0px;
+}
 
+.toggle-list {
+    margin: 10px 0;
+}
+
+.toggle-list > li {
+    margin: 0;
+}
+.toggle-list > li::before {
+    display: none;
+}
+.toggle-list .hide {
+    display: none;
+}
+.toggle-list > li + li .toggle-link {
+    border-top: 0 none;
+}
+.toggle-link {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    cursor: pointer;
+	font-weight: 400; 
+	color: #000000; 
+	font-family:Fjalla One; 
+	line-height: 1.5em; 
+	font-size: 25px;
+	text-transform: uppercase;
+	margin: 0;
+    padding: 15px 60px 15px 30px;
+    position: relative;
+}
+
+.toggle-link h3{
+	font-weight: 400; 
+	color: #000000; 
+	font-family:Fjalla One; 
+	line-height: 1.5em; 
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+/*.toggle-link {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    color: #0075a3;
+    cursor: pointer;
+    font-family: "Roboto","Roboto Slab",serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 15px 60px 15px 30px;
+    position: relative;
+}*/
+
+.toggle-list > li:last-of-type .toggle-link {
+    border-bottom: 1px solid #fff;
+}
+.toggle-link:hover {
+    background-color: #eff5f9;
+}
+.toggle-link::before {
+    background: rgba(0, 0, 0, 0) url("/images/sprite-icon.svg") no-repeat scroll -155px -187px;
+    content: "";
+    display: block;
+    height: 10px;
+    margin-top: -5px;
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    width: 16px;
+}
+.no-svg .toggle-link::before {
+    background-image: url("/img/sprite-icon.png");
+}
+.active .toggle-link {
+    /*background-color: #dfedf3;
+    border-bottom: 1px solid #fff;
+    border-color: #dfedf3 #dfedf3 #fff;
+    font-weight: bold;*/
+}
+.active .toggle-link::before {
+    background-position: -138px -187px;
+}
+.toggle-content {
+    /*background-color: #eff5f9;
+	color: #464646;*/
+    border-bottom: 1px solid #fff;
+    box-sizing: content-box;
+    
+    padding: 15px 30px;
+}
+.toggle-content p {
+    margin-bottom: 10px;
+}
+.toggle-content ul, .toggle-content ol {
+    margin: 10px 0 10px 30px;
+}
+.toggle-content ol li::before {
+    display: none;
+}

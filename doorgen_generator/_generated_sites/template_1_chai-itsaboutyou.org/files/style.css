@@ -396,14 +396,15 @@ body {
 	font-size:12px;
 	font-family: Droid,Arial,Helvetica,sans-serif;
 	color:#444; 
-	/*** ЦВЕТ фона под картинкой, если не загрузилась картинка ***/
-	background:#F3F3F3 url("/images/grass_.jpg") no-repeat fixed;
+	/*** Р¦Р’Р•Рў С„РѕРЅР° РїРѕРґ РєР°СЂС‚РёРЅРєРѕР№, РµСЃР»Рё РЅРµ Р·Р°РіСЂСѓР·РёР»Р°СЃСЊ РєР°СЂС‚РёРЅРєР° ***/
+	background:#F3F3F3;
+	/*background:#F3F3F3 url("/images/grass_.jpg") no-repeat fixed;*/
 	background-size: 100%;	
 	text-rendering: optimizeLegibility;
 }
 
 a { 
-	/*** ЦВЕТ ССЫЛОК ***/
+	/*** Р¦Р’Р•Рў РЎРЎР«Р›РћРљ ***/
 	/*color:#EB4141; */
 	color:#000000;
 	text-decoration:none; 
@@ -424,7 +425,7 @@ h1, h2, h3 {
 h1 {
 	font-size:30px;
 	line-height:1.0em;
-	/**Отступы между символами **/
+	/**РћС‚СЃС‚СѓРїС‹ РјРµР¶РґСѓ СЃРёРјРІРѕР»Р°РјРё **/
 	letter-spacing:0px;
 	margin-bottom:20px;
 	margin-left:20px;
@@ -432,13 +433,13 @@ h1 {
 h2 {
 	font-size:25px;
 	line-height:1.1em;
-	/**Отступы между символами **/
+	/**РћС‚СЃС‚СѓРїС‹ РјРµР¶РґСѓ СЃРёРјРІРѕР»Р°РјРё **/
 	letter-spacing:0px;
 }
 h3 {
 	font-size:16px;
 	line-height:1.1em;
-	/*** ЦВЕТ States We Serve ***/
+	/*** Р¦Р’Р•Рў States We Serve ***/
 	color:#444;
 }
 h4 {
@@ -470,7 +471,7 @@ ul {
 	/*list-style:none;*/
 }
 ul li { 
-	/*Отступ всего меню*/
+	/*РћС‚СЃС‚СѓРї РІСЃРµРіРѕ РјРµРЅСЋ*/
 	margin:0px 0px 15px 0px;
 	line-height:0.93em;
 	/*padding:0px 0px 0px 0px;*/
@@ -509,7 +510,7 @@ div.hr {
 .site-name h1 {
 	font: bold 40px Passion One,Arial,Helvetica,sans-serif;
 	/**font: bold 40px Fjalla One,Arial,Helvetica,sans-serif;*/
-	/*** ЦВЕТ ГЛАВНОГО ЗАГОЛОВКА ***/
+	/*** Р¦Р’Р•Рў Р“Р›РђР’РќРћР“Рћ Р—РђР“РћР›РћР’РљРђ ***/
 	color: #000000;
 	letter-spacing: 0.0em;
     text-decoration: none;
@@ -525,7 +526,7 @@ div.hr {
 	width:100%;
 	height:42px;
 	position:relative;
-	background:url("/images/mainnav_bg.gif") repeat-x;
+	background:url(/images/mainnav_bg.gif) repeat-x;
 }
 .mainnav ul {
 	padding:0 0 0 15px;
@@ -585,7 +586,7 @@ div.hr {
 
 .rightnav {
 	padding:10px 14px;
-	/*** ЦВЕТ фона под ссылками ***/
+	/*** Р¦Р’Р•Рў С„РѕРЅР° РїРѕРґ СЃСЃС‹Р»РєР°РјРё ***/
 	background:#ffce00;
 	/*background:#F6CB56;*/
 	/*background: #fff url("/images/item_background.gif") repeat-x scroll 0 0;*/
@@ -600,7 +601,7 @@ div.hr {
 	padding:0;
 	margin:0 0 5px 0;
 	background:none;
-	/*** ЦВЕТ количества городов ***/
+	/*** Р¦Р’Р•Рў РєРѕР»РёС‡РµСЃС‚РІР° РіРѕСЂРѕРґРѕРІ ***/
 	color: #444444;
 }
 .rightnav ul li, .rightnav ul li a {
@@ -612,7 +613,7 @@ div.hr {
 
 .post-entry {
 	font-family: 'Proxima Nova Regular', sans-serif;
-	background:#fff url("/images/item_background.gif") repeat-x;
+	background:#fff url(/images/item_background.gif) repeat-x;
 	border:1px solid #d0d0d0;
 	padding:0px 45px 15px 45px;
 	margin-bottom:-15px;
@@ -663,7 +664,7 @@ div.hr {
 }
 .footer .copyright {
 	height: 110px;
-	background:#222222 url("/images/bkgd_diag.png") repeat scroll 0 0;
+	background:#222222 url(/images/bkgd_diag.png) repeat scroll 0 0;
 	border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
 	padding:13px 0 0 15px;
@@ -761,7 +762,7 @@ div.hr {
 }
 
 .video {
-    background-image: url("/images/video.png");
+    background-image: url(/images/video.png);
     background-size: cover;
     clear: both;
     display: block;
@@ -808,7 +809,7 @@ div.hr {
 	font-size: 20px;
 }
 
-/*текст для поэм*/
+/*С‚РµРєСЃС‚ РґР»СЏ РїРѕСЌРј*/
 .poem_srt{
 	font-weight: 400; 
 	color: #000000; 

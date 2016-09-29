@@ -29,33 +29,34 @@ function engdate($d, $format = 'jS \of F h:i:s A', $offset = -8)
 
 function fillItemInfo($con, $url_region, $url_city, $template)
 {
-	global $state_name, $state_abbr, $page_title,$page_meta_keywords,$page_meta_description,$page_meta_placename,$page_meta_position;
+	#echo "Starting...";
+	global $state_name, $state_abbr, $page_title,$page_meta_keywords,$page_meta_description,$page_meta_placename,$page_meta_position,$item_name, $keyword, $ratingCount, $reviewCount, $voteCount;
 	global $page_meta_region,$page_meta_icbm,$city_name,$geo_placename,$geo_position,$icbm,$geo_region,$zip_code,$country,$clouds;
 	$result_array = array();
-	$query_case_list = 	" SELECT c.item_name, item_name_latin, c.geo_placename, c.geo_position, c.geo_region, c.ICBM, c.zip_code, c.country, r.region_name, r.abbr " .
-						" FROM item c LEFT JOIN region r ON c.region_id = r.region_id " .
+	$query_case_list = 	" SELECT c.item_name, c.item_name_latin, c.geo_placename, c.geo_position, c.geo_category, c.ICBM, c.zip_code, c.country, r.category_name, r.abbr, c.ratingCount, c.reviewCount, c.voteCount, c.text " .
+						" FROM item c LEFT JOIN category r ON c.category_id = r.category_id " .
 						" WHERE LOWER(r.category_name_latin) = LOWER(?) AND LOWER(c.item_name_latin) = LOWER(?)  "; 
 	
 	//$query_case_list = "SELECT c.item_name, c.item_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.category_name_latin, unix_timestamp(cp.posted_time), r.region_id, cp.anchor_name FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND cp.city_page_key = ? AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time <= now()";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
 	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "ss", $url_region, $url_city)) {
-		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
-
+	
 	/* instead of bind_result: */
 	#echo "get result...";
-	if(!mysqli_stmt_bind_result($stmt, $city_name_int,$city_name_latin_int,$geo_placename_int, $geo_position_int, $geo_region_int, $ICBM_int, $zip_code_int, $country_int, $region_name_int, $abbr_int)){
-		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	if(!mysqli_stmt_bind_result($stmt, $city_name_int,$city_name_latin_int,$geo_placename_int, $geo_position_int, $geo_region_int, $ICBM_int, $zip_code_int, $country_int, $region_name_int, $abbr_int, $ratingCount, $reviewCount, $voteCount, $text_int)){
+		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	
@@ -68,13 +69,20 @@ function fillItemInfo($con, $url_region, $url_city, $template)
 		$zip_code = $zip_code_int;
 		$country = $country_int;
 		
+		$ratingCount = number_format($ratingCount, 2, '.', '');
+		
 		$state_name = $region_name_int;
 		$state_abbr = $abbr_int;
+		
+		$keyword = $item_name.', ' .$state_name;
 	
 		$page_meta_placename = "<meta name=\"geo.placename\" content=\"$geo_placename\" />";
 		$page_meta_position = "<meta name=\"geo.position\" content=\"$geo_position\" />";
 		$page_meta_region = "<meta name=\"geo.region\" content=\"$geo_region\" />";
-		$page_meta_icbm = "<meta name=\"ICBM\" content=\"$ICBM\" />";
+		$page_meta_icbm = "<meta name=\"ICBM\" content=\"$icbm\" />";
+		
+		
+		$template=preg_replace("/\[ITEM_GEN_TEXT\]/", $text_int, $template);
 	}else{
 		return null;
 	}
@@ -95,9 +103,11 @@ function fillItemInfo($con, $url_region, $url_city, $template)
 		
 		$citiesListSrt = $citiesListSrt." ".$v["cityName"]." $abbr,";
 		
-		$citiesListHtml = $citiesListHtml . "<li>•&nbsp;&nbsp;<a href=\"/$category_name_latin/$cityNameLatin/\" title=\"".CITY_CLOSE_LIST_LINK_TITLE."\">$cityName, $abbr</a></li>";
+		$citiesListHtml = $citiesListHtml . "<li>&nbsp;&nbsp;<a href=\"/".ucwords($category_name_latin,"-")."/".ucwords($cityNameLatin,"-")."/\" title=\"".CITY_CLOSE_LIST_LINK_TITLE."\">$cityName, $abbr</a></li>";
 		
-		$citiesListHtml = preg_replace("/\[item_name\]/", $cityName , $citiesListHtml);
+		$citiesListHtml = preg_replace("/\[ITEM_NAME\]/", $cityName , $citiesListHtml);
+		$citiesListHtml = preg_replace("/\[STATE_NAME\]/", $cityNameLatin , $citiesListHtml);
+		$citiesListHtml = preg_replace("/\[CITY_NAME\]/", $cityName , $citiesListHtml);
 		$citiesListHtml = preg_replace("/\[CATEGORY_ABBR\]/", $abbr , $citiesListHtml);
 		$citiesListHtml = preg_replace("/\[ZIP_CODE\]/", $zipCode , $citiesListHtml);
 	}
@@ -113,14 +123,14 @@ function getClosestCitiesList($con, $url_region, $url_city)
 {
 	$result_array = array();
 	$query_case_list = " SELECT c.item_name, c.item_name_latin, r.abbr, c.zip_code, r.category_name_latin " .
-				" FROM  city c, neighbor_city nc, region r WHERE c.city_id = nc.neighbor_city_id AND r.region_id = c.region_id AND " . 
-				" nc.city_id = ( " .
-				" SELECT c.city_id " .
-				" FROM city c, region r " .
-				" WHERE c.region_id = r.region_id  AND LOWER(r.category_name_latin) LIKE LOWER(?) AND LOWER(c.item_name_latin) LIKE LOWER(?)) ";
+				" FROM  item c, neighbor_item nc, category r WHERE c.item_id = nc.neighbor_item_id AND r.category_id = c.category_id AND " . 
+				" nc.item_id = ( " .
+				" SELECT c.item_id " .
+				" FROM item c, category r " .
+				" WHERE c.category_id = r.category_id  AND LOWER(r.category_name_latin) LIKE LOWER(?) AND LOWER(c.item_name_latin) LIKE LOWER(?)) ";
 
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 		print_r(error_get_last());
 	}
 	//set values
@@ -162,7 +172,8 @@ function fillCategoryList($con, $template)
 {
 	global $page_title,$page_meta_keywords,$page_meta_description;
 	
-	$result = mysqli_query($con,"SELECT r.category_name_latin, r.category_name, r.abbr FROM category r  ORDER BY r.category_name");
+	$result = mysqli_query($con,"SELECT COUNT(1) item_count, r.category_name_latin, r.category_name, r.abbr FROM item c LEFT JOIN category r ON c.category_id = r.category_id GROUP BY r.category_id ORDER BY r.category_name");
+	//$result = mysqli_query($con,"SELECT r.category_name_latin, r.category_name, r.abbr FROM category r  ORDER BY r.category_name");
 
 	$categoryName;
 	$categoryNameLatin;
@@ -173,7 +184,9 @@ function fillCategoryList($con, $template)
 		global $categoryName, $categoryNameLatin;
 		$categoryName = $row['category_name'];
 		$categoryNameLatin = $row['category_name_latin'];
-		$categories = $categories."<li class=\"page_item\"><a href=\"/$categoryNameLatin/\" title=\"".CATEGORY_LINK_TITLE."\">$categoryName</a></li>\r\n";
+		//$regions = $regions."<li class=\"page_item\"><a href=\"/$regionNameLatin/\" title=\"".STATE_LINK_TITLE."\">$regionName</a> (" . $row['city_count'] . " cities)</li>\r\n";
+		//$categories = $categories."<li class=\"page_item\"><a href=\"/$categoryNameLatin/\" title=\"".CATEGORY_LINK_TITLE."\">$categoryName</a></li>\r\n";
+		$categories = $categories."<li class=\"page_item\"><a href=\"/".ucwords($categoryNameLatin,"-")."/\" title=\"".CATEGORY_LINK_TITLE."\">$categoryName</a> (" . $row['item_count'] . " cities)</li>\r\n";
 		$categories = preg_replace("/\[CATEGORY_NAME\]/", $categoryName , $categories);
 		$categories = preg_replace("/\[CATEGORY_ABBR\]/", $categoryName , $categories);
 	}
@@ -336,8 +349,8 @@ function fillCategoriesList($con, $categoryNameLatin, $template)
 			$i = 0;
 		}
 		
-		$cities = $cities."<td style=\"line-height:20px; font-size:15px;\" align=\"left\" valign=\"top\"><a href=\"\" title=\"".CITY_LIST_LINK_TITLE."\" >#". $item_name ."</a><br></td>";
-		//$cities = $cities."<td style=\"line-height:20px; font-size:15px;\" align=\"left\" valign=\"top\">•&nbsp; <a href=\"/"  .$category_name_latin . "/" . $item_name_latin ."\" title=\"".CITY_LIST_LINK_TITLE."\" >". $item_name ."</a><br></td>";
+		//$cities = $cities."<td style=\"line-height:20px; font-size:15px;\" align=\"left\" valign=\"top\"><a href=\"\" title=\"".CITY_LIST_LINK_TITLE."\" >#". $item_name ."</a><br></td>";
+		$cities = $cities."<td style=\"line-height:20px; font-size:15px;\" align=\"left\" valign=\"top\">•&nbsp; <a href=\"/"  .ucwords($category_name_latin,"-") . "/" . ucwords($item_name_latin,"-") ."\" title=\"".CITY_LIST_LINK_TITLE."\" >". $item_name ."</a><br></td>";
 		$cities = preg_replace("/\[ITEM_NAME\]/", $item_name , $cities);
 		$cities = preg_replace("/\[CATEGORY_NAME\]/", $category_name , $cities);
 		$cities = preg_replace("/\[CATEGORY_ABBR\]/", $abbr , $cities);
@@ -356,15 +369,87 @@ function fillCategoriesList($con, $categoryNameLatin, $template)
 	return $template;
 }
 
+function fillTagsList($con, $parentNameLatin, $parentType, $template)
+{
+	global $page_title,$page_meta_keywords,$page_meta_description, $state_name, $state_abbr, $state_city_count;
+	
+	$count = 0;
+	
+	if($parentType == "CATEGORY"){
+		$query_case_list = 	" SELECT t.tag_value " .
+							" FROM tag t LEFT OUTER JOIN category i ON t.parent_id = i.category_id " .
+							" WHERE t.parent_type='CATEGORY' AND ( i.category_name_latin = ? OR t.parent_id = 0) ";
+	}
+	if($parentType == "ITEM"){
+		$query_case_list = 	" SELECT t.tag_value " .
+							" FROM tag t LEFT OUTER JOIN item i ON t.parent_id = i.item_id " .
+							" WHERE t.parent_type='ITEM' AND ( i.item_name_latin = ? OR t.parent_id = 0) ";
+	}
+	
+	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+	//set values
+	#echo "set value...";
+	if (!mysqli_stmt_bind_param($stmt, "s", $parentNameLatin)) {
+		#echo "fillTagsList: Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+
+	#echo "execute...";
+	if (!mysqli_stmt_execute($stmt)){
+		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+
+	/* instead of bind_result: */
+	#echo "get result...";
+	if(!mysqli_stmt_bind_result($stmt, $tag_value)){
+		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+	}
+	
+	if(!mysqli_stmt_fetch($stmt)) {
+		$template=preg_replace("/\[CITIES_LIST\]/", "", $template);
+		return $template;
+	}
+	
+	$i = 0;
+	do{
+		$count++;
+		if($i == 0){
+			$cities = $cities. "<tr>";
+		}elseif($i == 3){
+			$cities = $cities. "</tr><tr>";
+			$i = 0;
+		}
+		
+		$cities = $cities."<td style=\"line-height:20px; font-size:15px;\" align=\"left\" valign=\"top\"><a href=\"\" title=\"".$tag_value."\" >#". $tag_value ."</a><br></td>";
+		//$cities = $cities."<td style=\"line-height:20px; font-size:15px;\" align=\"left\" valign=\"top\">•&nbsp; <a href=\"/"  .$category_name_latin . "/" . $item_name_latin ."\" title=\"".CITY_LIST_LINK_TITLE."\" >". $item_name ."</a><br></td>";
+		//$cities = preg_replace("/\[ITEM_NAME\]/", $item_name , $cities);
+		//$cities = preg_replace("/\[CATEGORY_NAME\]/", $category_name , $cities);
+		//$cities = preg_replace("/\[CATEGORY_ABBR\]/", $abbr , $cities);
+		
+		$i = $i + 1;
+	}while(mysqli_stmt_fetch($stmt));
+	
+	$state_city_count = $count;
+	
+	$cities = $cities. "</tr>";
+	
+	$template=preg_replace("/\[TAGS_LIST\]/", $cities, $template);
+	
+	mysqli_stmt_close($stmt);
+
+	return $template;
+}
+
 function fillCategoryPageContent($con, $categoryNameLatin, $template)
 {	
 	global $page_title, $page_meta_description, $page_meta_keywords, $page_h1, $page_h2, $state_name, $state_abbr, $keyword, $ratingCount, $reviewCount, $voteCount;;
 
-	$query_case_list = 	" SELECT r.category_name, r.category_name_latin, r.abbr, r.generated_text, r.title, r.meta_description, r.meta_keywords, r.ratingCount, r.reviewCount, r.voteCount " .
+	$query_case_list = 	" SELECT r.category_name, r.category_name_latin, r.abbr, r.text, r.title, r.meta_description, r.meta_keywords, r.ratingCount, r.reviewCount, r.voteCount " .
 						" FROM category r " .
 						" WHERE LOWER(r.category_name_latin) = LOWER(?) ";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed fillCategoryPageContent: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
@@ -379,23 +464,25 @@ function fillCategoryPageContent($con, $categoryNameLatin, $template)
 
 	/* instead of bind_result: */
 	#echo "get result...";
-	if(!mysqli_stmt_bind_result($stmt, $category_name, $category_name_latin, $abbr, $generated_text, $title, $meta_description, $meta_keywords, $ratingCount, $reviewCount, $voteCount)){
+	if(!mysqli_stmt_bind_result($stmt, $category_name, $category_name_latin, $abbr, $text, $title, $meta_description, $meta_keywords, $ratingCount, $reviewCount, $voteCount)){
 		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	if(mysqli_stmt_fetch($stmt)) {
+		//fix issue with data
+		$template=preg_replace("/\[CATEGORY_GEN_TEXT\]/", $text, $template);
+		$template=preg_replace("/\[CITY_NAME\]/", "[CATEGORY_NAME]", $template);
 		$template = preg_replace("/\[CATEGORY_NAME\]/", $category_name, $template);
 		$template = preg_replace("/\[CATEGORY_ABBR\]/", $abbr, $template);
-		$template=preg_replace("/\[CATEGORY_GEN_TEXT\]/", $generated_text, $template);
 		
 		$keyword = $category_name;
 		$ratingCount = number_format($ratingCount, 2, '.', '');
 		$state_name = $category_name;
 		$state_abbr = $abbr;
 		
-		$page_title=preg_replace("/\[CATEGORY_PAGE_TITLE\]/", $title, $page_title);
-		$page_meta_description=preg_replace("/\[CATEGORY_META_DESCRIPTION\]/", $meta_description, $page_meta_description);
-		$page_meta_keywords=preg_replace("/\[CATEGORY_META_KEYWORDS\]/", $meta_keywords, $page_meta_keywords);
+		$page_title=preg_replace("/\[STATE_PAGE_TITLE\]/", $title, $page_title);
+		$page_meta_description=preg_replace("/\[STATE_META_DESCRIPTION\]/", $meta_description, $page_meta_description);
+		$page_meta_keywords=preg_replace("/\[STATE_META_KEYWORDS\]/", $meta_keywords, $page_meta_keywords);
 	}else{
 		return null;
 	}
@@ -473,6 +560,16 @@ function loadMapping($filePath){
 	return  $menu_mapping;
 }
 
+function fireCall404(){
+	#echo $_SERVER['DOCUMENT_ROOT'].'/404.php';
+	#echo "<br>404 fire call<br/>";
+	header("HTTP/1.x 404 Not Found");
+	header("Status: 404 Not Found");
+	#echo "redirecting";
+	@require_once($_SERVER['DOCUMENT_ROOT'].'/404.php');
+	exit();
+}
+
 //заводим массивы ключей и городов
 $CITY_NEWS_PER_PAGE=10;
 $current_page="MAIN_PAGE";
@@ -487,7 +584,7 @@ $current_page="MAIN_PAGE";
 $url = $_SERVER["REQUEST_URI"];
 #$url = "/altayskiy-kray/";
 #echo "REQUEST_URI: ".$url.'<br>';
-preg_match("/[\-a-zA-Z0-9_]+\/[\-a-zA-Z0-9_]*/",$url,$request_uri);
+preg_match("/[\-a-zA-Z0-9_]+(\/)?[\-a-zA-Z0-9_]*/",$url,$request_uri);
 #echo "request_uri".$request_uri[0].'<br>';
 #echo $request_uri[0].'<br>';
 
@@ -533,6 +630,8 @@ $page_meta_position = "";
 $page_meta_region = "";
 $page_meta_icbm = "";
 
+$text = "";
+
 $page_h1 = "";
 $page_h2 = "";
 
@@ -559,15 +658,15 @@ $page_h2 = MAIN_PAGE_H2;
 $menu_mapping = loadMapping("./menu_map/menu_map.ini");
 
 #var_dump($menu_mapping);
-
 #$current_page = "MAIN_PAGE";
 #$tmpl_file_name="tmpl_main_block.html";
 
-if($menu_mapping[$url_region] && !$url_city || (!$url_region && $menu_mapping["/"])){
+if(isset($menu_mapping[$url_region]) && empty($url_city) || (empty($url_region) && $menu_mapping["/"])){
+//if(isset($menu_mapping[$url_region]) && empty($url_city)){
 	
 	#echo "read menu mapping<br>";
 	
-	if(!$url_region){
+	if(empty($url_region)){
 		$url_region = "/";
 	}
 	
@@ -598,11 +697,13 @@ elseif($url_city && $url_region){
 	$current_page = "CITY_PAGE";
 	$tmpl_file_name="tmpl_city.html";
 } 
-elseif(!$url_city && $url_region){
+elseif(empty($url_city) && $url_region){
 	$current_page = "REGION_PAGE";
 	$tmpl_file_name="tmpl_region.html";
-} 
-elseif($url_region && $url_city){
+}else{
+	fireCall404();
+}
+/*elseif($url_region && $url_city){
 	#echo "Main page determined";
 	$current_page = "MAIN_PAGE";
 }
@@ -610,13 +711,13 @@ elseif(($url_city == 'index.php' || $url_city == '') && !$url_region){
 	$current_page = "MAIN_PAGE";
 	$tmpl_file_name="tmpl_main_block.html";
 }
-/*else{
+else{
 	#echo "Can't determine page";
 	$current_page = "MAIN_PAGE";
 	$tmpl_file_name="tmpl_main_block.html";
 }*/
 
-#echo "tmpl_file_name ='" . $tmpl_file_name . "'";
+#echo "tmpl_file_name ='" . $tmpl_file_name . "'<br>";
 
 $tmpl_inner = file_get_contents($tmpl_file_name);
 $template  = fillCategoryList($con, $template);
@@ -624,33 +725,37 @@ $template  = fillCategoryList($con, $template);
 #echo "current_page: " . $current_page . "<br>";
 
 if($current_page == "REGION_PAGE"){
-	#echo "Region page";
-	$page_title = CATEGORY_PAGE_TITLE;
-	$page_meta_description = CATEGORY_META_DESCRIPTION;
-	$page_meta_keywords = CATEGORY_META_KEYWORDS;
+	#echo "Set up Region page...<br/>";
+	$page_title = STATE_PAGE_TITLE;
+	$page_meta_description = STATE_META_DESCRIPTION;
+	$page_meta_keywords = STATE_META_KEYWORDS;
 	
-	$page_h1 = CATEGORY_PAGE_H1;
-	$page_h2 = CATEGORY_PAGE_H2;
+	$page_h1 = STATE_PAGE_H1;
+	$page_h2 = STATE_PAGE_H2;
 	
 	$tmpl_inner = fillCategoriesList($con, $url_region, $tmpl_inner);
 	$tmpl_inner = fillCategoryPageContent($con, $url_region, $tmpl_inner);
+	$tmpl_inner = fillTagsList($con, $url_region, "CATEGORY", $tmpl_inner);
 	
 	if($tmpl_inner == null){
-		$page_title = MAIN_PAGE_TITLE;
+		fireCall404();
+		/*$page_title = MAIN_PAGE_TITLE;
 		$page_meta_description = MAIN_PAGE_META_DESCRIPTION;
 		$page_meta_keywords = MAIN_PAGE_META_KEYWORDS;
 		
 		$page_h1 = MAIN_PAGE_H1;
 		$page_h2 = MAIN_PAGE_H2;
-		$tmpl_inner = file_get_contents("tmpl_main_block.html");
+		$tmpl_inner = file_get_contents("tmpl_main_block.html");*/
 	}
 }
 elseif($current_page == "CITY_PAGE"){
 	//get city page info
 	$tmpl_inner = fillItemInfo($con,$url_region, $url_city, $tmpl_inner);
+	$tmpl_inner = fillTagsList($con, $url_city, "ITEM", $tmpl_inner);
 	
 	if($tmpl_inner == null){
-		$tmpl_inner = file_get_contents("tmpl_main_block.html");
+		fireCall404();
+		//$tmpl_inner = file_get_contents("tmpl_main_block.html");
 	}
 	
 	$page_title = CITY_PAGE_TITLE;
@@ -665,7 +770,8 @@ elseif($current_page == "ARTICLES_LIST_PAGE"){
 	$tmpl_inner = fillArticleList($con, $tmpl_inner);
 	
 	if($tmpl_inner == null){
-		$tmpl_inner = file_get_contents("tmpl_main_block.html");
+		//$tmpl_inner = file_get_contents("tmpl_main_block.html");
+		fireCall404();
 	}
 	
 	$page_title = ARTICLES_LIST_PAGE_TITLE;
@@ -677,7 +783,8 @@ elseif($current_page == "ARTICLE_PAGE"){
 	$tmpl_inner = fillArticle($con, $url_city, $tmpl_inner);
 	
 	if($tmpl_inner == null){
-		$tmpl_inner = file_get_contents("tmpl_main_block.html");
+		//$tmpl_inner = file_get_contents("tmpl_main_block.html");
+		fireCall404();
 	}
 }
 
@@ -698,9 +805,15 @@ $template=preg_replace("/\[CITY_PPOSITION\]/", $page_meta_position, $template);
 $template=preg_replace("/\[CITY_REGION\]/", $page_meta_region, $template);
 $template=preg_replace("/\[META_ICBM\]/", $page_meta_icbm, $template);
 
+$template=preg_replace("/\[STATE_NAME\]/", $state_name, $template);
 $template=preg_replace("/\[CATEGORY_NAME\]/", $state_name, $template);
+$template=preg_replace("/\[STATE_ABBR\]/", $state_abbr, $template);
 $template=preg_replace("/\[CATEGORY_ABBR\]/", $state_abbr, $template);
+
+$template=preg_replace("/\[CITY_NAME\]/", $item_name, $template);
 $template=preg_replace("/\[item_name\]/", $item_name, $template);
+
+
 $template=preg_replace("/\[GEO_PLACENAME\]/", $geo_placename, $template);
 $template=preg_replace("/\[GEO_POSITION\]/", $geo_position, $template);
 $template=preg_replace("/\[ICBM\]/", $icbm, $template);
@@ -722,6 +835,9 @@ $template=preg_replace("/\[PROMO_BLOCK_FOOTER\]/", $promo_block_footer , $templa
 
 $promo_button = file_get_contents("tmpl_promo_button.html");
 $template=preg_replace("/\[PROMO_BUTTON\]/", $promo_button , $template);
+
+$rating_tmpl= file_get_contents("tmpl_rating.html");
+$template=preg_replace("/\[RATING\]/", $rating_tmpl , $template);
 
 $order_button = file_get_contents("tmpl_order_now_button.html");
 $template=preg_replace("/\[ORDER_BUTTON\]/", $order_button , $template);

@@ -1,6 +1,6 @@
-Order deny,allow
-deny from all
-Allow from 86.57.154.130 136.243.11.100 193.58.255 93.84 93.85 37.44.110.246 46.53.194.103 178.121.244.177 46.216.181.42 178.121
+#Order deny,allow
+#deny from all
+#Allow from 86.57.154.130 136.243.11.100 193.58.255 93.84 93.85 37.44.110.246 46.53.194.103 178.121.244.177 46.216.181.42 178.121
  
 Options All -Indexes
  
@@ -12,6 +12,9 @@ AddDefaultCharset UTF-8
 DirectoryIndex index.php
 
 ErrorDocument 404 /404.php
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 
 RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]

@@ -38,24 +38,24 @@ function fillItemInfo($con, $url_region, $url_city, $template)
 	
 	//$query_case_list = "SELECT c.item_name, c.item_name_latin, ek.key_value, ek.key_value_latin, r.region_name, r.category_name_latin, unix_timestamp(cp.posted_time), r.region_id, cp.anchor_name FROM `city` c, `city_page` cp, `region` r, `extra_key` ek WHERE 1 AND cp.city_page_key = ? AND c.city_id = cp.city_id AND c.region_id = r.region_id AND ek.key_id = cp.key_id AND cp.posted_time <= now()";
 	if (!($stmt = mysqli_prepare($con,$query_case_list))) {
-		echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Prepare failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	//set values
 	#echo "set value...";
 	$id=1;
 	if (!mysqli_stmt_bind_param($stmt, "ss", $url_region, $url_city)) {
-		echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Binding parameters failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	#echo "execute...";
 	if (!mysqli_stmt_execute($stmt)){
-		echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Execution failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 
 	/* instead of bind_result: */
 	#echo "get result...";
 	if(!mysqli_stmt_bind_result($stmt, $city_name_int,$city_name_latin_int,$geo_placename_int, $geo_position_int, $geo_region_int, $ICBM_int, $zip_code_int, $country_int, $region_name_int, $abbr_int)){
-		echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
+		#echo "Getting results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
 	}
 	
 	
@@ -74,7 +74,7 @@ function fillItemInfo($con, $url_region, $url_city, $template)
 		$page_meta_placename = "<meta name=\"geo.placename\" content=\"$geo_placename\" />";
 		$page_meta_position = "<meta name=\"geo.position\" content=\"$geo_position\" />";
 		$page_meta_region = "<meta name=\"geo.region\" content=\"$geo_region\" />";
-		$page_meta_icbm = "<meta name=\"ICBM\" content=\"$ICBM\" />";
+		$page_meta_icbm = "<meta name=\"ICBM\" content=\"$icbm\" />";
 	}else{
 		return null;
 	}
@@ -473,6 +473,16 @@ function loadMapping($filePath){
 	return  $menu_mapping;
 }
 
+function fireCall404(){
+	#echo $_SERVER['DOCUMENT_ROOT'].'/404.php';
+	#echo "<br>404 fire call<br/>";
+	header("HTTP/1.x 404 Not Found");
+	header("Status: 404 Not Found");
+	#echo "redirecting";
+	@require_once($_SERVER['DOCUMENT_ROOT'].'/404.php');
+	exit();
+}
+
 //заводим массивы ключей и городов
 $CITY_NEWS_PER_PAGE=10;
 $current_page="MAIN_PAGE";
@@ -487,12 +497,15 @@ $current_page="MAIN_PAGE";
 $url = $_SERVER["REQUEST_URI"];
 #$url = "/altayskiy-kray/";
 #echo "REQUEST_URI: ".$url.'<br>';
-preg_match("/[\-a-zA-Z0-9_]+\/[\-a-zA-Z0-9_]*/",$url,$request_uri);
+preg_match("/[\-a-zA-Z0-9_]+(\/)?[\-a-zA-Z0-9_]*/",$url,$request_uri);
 #echo "request_uri".$request_uri[0].'<br>';
 #echo $request_uri[0].'<br>';
 
 $url_region = "";
 $url_city = "";
+
+#var_dump($request_uri);
+
 if(count($request_uri)>=1){
 	list($url_region,$url_city) = explode('/', $request_uri[0]);
 }
@@ -563,11 +576,12 @@ $menu_mapping = loadMapping("./menu_map/menu_map.ini");
 #$current_page = "MAIN_PAGE";
 #$tmpl_file_name="tmpl_main_block.html";
 
-if($menu_mapping[$url_region] && !$url_city || (!$url_region && $menu_mapping["/"])){
+if(isset($menu_mapping[$url_region]) && empty($url_city) || (empty($url_region) && $menu_mapping["/"])){
+//if(isset($menu_mapping[$url_region]) && empty($url_city)){
 	
 	#echo "read menu mapping<br>";
 	
-	if(!$url_region){
+	if(empty($url_region)){
 		$url_region = "/";
 	}
 	
@@ -588,27 +602,12 @@ elseif($url_region == 'articles' && $url_city){
 	#echo "One article page";
 	$current_page = "ARTICLE_PAGE";
 	$tmpl_file_name="tmpl_article_page.html";	
-}
-/*elseif($url_region == 'articles' && !$url_city){
-	echo "Articles list found";
-	$current_page = "ARTICLES_LIST_PAGE";
-	#$tmpl_file_name="tmpl_articles.html";	
-}*/
-elseif($url_city && $url_region){
-	$current_page = "CITY_PAGE";
-	$tmpl_file_name="tmpl_city.html";
 } 
-elseif(!$url_city && $url_region){
+elseif(empty($url_city) && $url_region){
 	$current_page = "REGION_PAGE";
 	$tmpl_file_name="tmpl_region.html";
-} 
-elseif($url_region && $url_city){
-	#echo "Main page determined";
-	$current_page = "MAIN_PAGE";
-}
-elseif(($url_city == 'index.php' || $url_city == '') && !$url_region){
-	$current_page = "MAIN_PAGE";
-	$tmpl_file_name="tmpl_main_block.html";
+}else{
+	fireCall404();
 }
 /*else{
 	#echo "Can't determine page";
@@ -618,10 +617,10 @@ elseif(($url_city == 'index.php' || $url_city == '') && !$url_region){
 
 #echo "tmpl_file_name ='" . $tmpl_file_name . "'";
 
+#echo "current_page: " . $current_page . "<br>";
+
 $tmpl_inner = file_get_contents($tmpl_file_name);
 $template  = fillCategoryList($con, $template);
-
-#echo "current_page: " . $current_page . "<br>";
 
 if($current_page == "REGION_PAGE"){
 	#echo "Region page";
@@ -636,13 +635,15 @@ if($current_page == "REGION_PAGE"){
 	$tmpl_inner = fillCategoryPageContent($con, $url_region, $tmpl_inner);
 	
 	if($tmpl_inner == null){
-		$page_title = MAIN_PAGE_TITLE;
+	
+		fireCall404();
+		/*$page_title = MAIN_PAGE_TITLE;
 		$page_meta_description = MAIN_PAGE_META_DESCRIPTION;
 		$page_meta_keywords = MAIN_PAGE_META_KEYWORDS;
 		
 		$page_h1 = MAIN_PAGE_H1;
 		$page_h2 = MAIN_PAGE_H2;
-		$tmpl_inner = file_get_contents("tmpl_main_block.html");
+		$tmpl_inner = file_get_contents("tmpl_main_block.html");*/
 	}
 }
 elseif($current_page == "CITY_PAGE"){
@@ -650,7 +651,8 @@ elseif($current_page == "CITY_PAGE"){
 	$tmpl_inner = fillItemInfo($con,$url_region, $url_city, $tmpl_inner);
 	
 	if($tmpl_inner == null){
-		$tmpl_inner = file_get_contents("tmpl_main_block.html");
+		fireCall404();
+		//$tmpl_inner = file_get_contents("tmpl_main_block.html");
 	}
 	
 	$page_title = CITY_PAGE_TITLE;
@@ -665,7 +667,8 @@ elseif($current_page == "ARTICLES_LIST_PAGE"){
 	$tmpl_inner = fillArticleList($con, $tmpl_inner);
 	
 	if($tmpl_inner == null){
-		$tmpl_inner = file_get_contents("tmpl_main_block.html");
+		fireCall404();
+		//$tmpl_inner = file_get_contents("tmpl_main_block.html");
 	}
 	
 	$page_title = ARTICLES_LIST_PAGE_TITLE;
@@ -677,7 +680,9 @@ elseif($current_page == "ARTICLE_PAGE"){
 	$tmpl_inner = fillArticle($con, $url_city, $tmpl_inner);
 	
 	if($tmpl_inner == null){
-		$tmpl_inner = file_get_contents("tmpl_main_block.html");
+		fireCall404();
+		//$tmpl_inner = file_get_contents("tmpl_main_block.html");
+		
 	}
 }
 
@@ -697,6 +702,8 @@ $template=preg_replace("/\[CITY_PLACENAME\]/", $page_meta_placename, $template);
 $template=preg_replace("/\[CITY_PPOSITION\]/", $page_meta_position, $template);
 $template=preg_replace("/\[CITY_REGION\]/", $page_meta_region, $template);
 $template=preg_replace("/\[META_ICBM\]/", $page_meta_icbm, $template);
+$template=preg_replace("/\[META_ROBOTS\]/", $page_meta_robots, $template);
+
 
 $template=preg_replace("/\[CATEGORY_NAME\]/", $state_name, $template);
 $template=preg_replace("/\[CATEGORY_ABBR\]/", $state_abbr, $template);

@@ -1,10 +1,14 @@
 User-agent: *
 Disallow: /application/
-Disallow: /news_content/
 Disallow: /txt/
 Disallow: /utils/
 Disallow: /webstat/
 Disallow: /app/
 Disallow: /menu_map/
+Disallow: /files/
+Disallow: /images/
+Disallow: /menu_pages/
+
 Disallow: *.html
-Host: usacashadvanceonlinefast.com
+Host: chai-itsaboutyou.org
+Sitemap: http://chai-itsaboutyou.org/sitemap.xml

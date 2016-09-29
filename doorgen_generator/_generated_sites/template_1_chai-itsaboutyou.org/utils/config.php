@@ -4,13 +4,13 @@
 
 	#Параметр md5 пароля для доступа к панели управления.
 	#password
-	define("DB_USER_NAME", "bohowtotrade");
+	define("DB_USER_NAME", "essaybossorg");
 
 	#Параметр корня сайта.
 	define("DB_USER_PWD", "lol200");
 
 	#Параметр названия сайта.
-	define("DB_NAME", "binaryoptionshowtotrade");
+	define("DB_NAME", "essaybossorg");
 	
 	#Параметр названия сайта.
 	define("SITE_NAME", "EssayBoss.org");
@@ -158,5 +158,16 @@
 	define("MONEYBACKGUARANTEE_LIST_META_DESCRIPTION","Money Back Guarantee: EssayBoss");
 	#MONEYBACKGUARANTEE meta keywords
 	define("MONEYBACKGUARANTEE_LIST_META_KEYWORDS","Money Back Guarantee");
+	
+	#Main page title
+	define("PAGE_404_TITLE", "Page not found");
+	#Main page meta description
+	define("PAGE_404_META_DESCRIPTION", "EssayBoss - Born To Write Essays For You | Custom Writing Service");
+	#Main page  meta keywords
+	define("PAGE_404_META_KEYWORDS", "EssayBoss Custom Writing Service, Write My Essay & Paper, Do My Assignment & Homework, Writing Term & Research Papers, Type My Persuasive & Reflective Essay, Descriptive & Argumentative Essay, College & Expository Essay Help, Professional content writers.");
+	#Контент для тэга H1
+	define("PAGE_404_H1", "<font size=\"60px\">ESSAY<font color=\"#EB4141\">BOSS</font></font> - Custom Writing Service");
+	#Контент для тэга H2
+	define("PAGE_404_H2", "[SITE_NAME] Oops...Page NOT FOUND");
 
 ?>

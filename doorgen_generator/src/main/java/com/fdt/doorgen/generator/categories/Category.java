@@ -1,15 +1,15 @@
 package com.fdt.doorgen.generator.categories;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.WordUtils;
-
 import com.fdt.doorgen.generator.DoorgenGeneratorRunner;
+import com.fdt.doorgen.generator.categories.Tag.CategoryParentType;
 import com.fdt.utils.Utils;
+import com.mysql.fabric.xmlrpc.base.Array;
 
 public class Category {
 
@@ -29,14 +29,19 @@ public class Category {
 
 	private String abbr;
 	private String title;
+	private String titleTmpl;
 	private String metaKeywords;
+	private String metaKeywordsTmpl;
 	private String metaDesc;
+	private String metaDescTmpl;
 
 	//category page content
-	private String tmplText;
-	private String genText;
+	private String textTmpl;
+	private String text;
 	private boolean isUpdated;
 
+	private List<Tag> tags = new ArrayList<Tag>();
+	
 	private static Random rnd = new Random();
 
 	public int getId() {
@@ -91,20 +96,32 @@ public class Category {
 		this.title = title;
 	}
 
-	public String getTmplText() {
-		return tmplText;
+	public String getTextTmpl() {
+		return textTmpl;
 	}
 
 	public void setTmplText(String tmplText) {
-		this.tmplText = tmplText;
+		this.textTmpl = tmplText;
 	}
 
-	public String getGenText() {
-		return genText;
+	public String getText() {
+		return text;
+	}
+
+	public String getTitleTmpl() {
+		return titleTmpl;
+	}
+
+	public String getMetaKeywordsTmpl() {
+		return metaKeywordsTmpl;
+	}
+
+	public String getMetaDescTmpl() {
+		return metaDescTmpl;
 	}
 
 	public void setGenText(String genText) {
-		this.genText = genText;
+		this.text = genText;
 	}
 
 	public boolean isUpdated() {
@@ -114,14 +131,20 @@ public class Category {
 	public void setUpdated(boolean isUpdated) {
 		this.isUpdated = isUpdated;
 	}
+	
+	public List<Tag> getTags() {
+		return tags;
+	}
 
-	public static Category parseCategory(File catFolder, List<Item> tagItems, String titleTmpl, String metaDescrTmpl, String metaKeyWordsTmpl, HashMap<Integer,List<String>> preTitles, HashMap<String,String> catUrls) {
+	public static Category parseCategory(File catFolder, String titleTmpl, String metaDescrTmpl, String metaKeyWordsTmpl, HashMap<Integer,List<String>> preTitles, HashMap<String,String> catUrls) {
 		// TODO Handle synonym case
 		String catContent = Utils.loadFileAsString(new File(catFolder,"main.txt"));
 
 		Category cat = new Category();
 
-		cat.catName = catFolder.getName().split("~",2)[0];
+		String[] abbrArr = catFolder.getName().split("~",2);
+		
+		cat.catName = abbrArr[0];
 		
 		if(catUrls.containsKey(cat.catName)){
 			cat.catLatinName = makeUrlKey(catUrls.get(cat.catName));
@@ -129,20 +152,34 @@ public class Category {
 			cat.catLatinName = makeUrlKey(cat.catName);
 		}
 		//TODO Fill title
-		cat.title = Utils.fillTemplate(titleTmpl, cat.catName, preTitles, DoorgenGeneratorRunner.PRETITLES_REGEXP);
+		cat.titleTmpl = titleTmpl;
+		cat.title = Utils.synonymizeText(Utils.fillTemplate(titleTmpl, cat.catName, preTitles, DoorgenGeneratorRunner.PRETITLES_REGEXP));
+		
 		//cat.title = String.valueOf(catFolder.getName());
-		cat.abbr = catFolder.getName().split("~",2)[1];
-		if(cat.abbr == null || cat.abbr.trim().isEmpty()){
+		if(abbrArr.length > 1 && abbrArr[1] != null && !abbrArr[1].trim().isEmpty()){
+			cat.abbr = abbrArr[1].trim();
+		}else{
 			cat.abbr = cat.catName;
 		}
-		//TODO Fill
-		cat.metaKeywords = Utils.fillTemplate(metaKeyWordsTmpl, cat.catName, preTitles, DoorgenGeneratorRunner.PRETITLES_REGEXP);
-		//TODO Fill
-		cat.metaDesc = Utils.fillTemplate(metaDescrTmpl, cat.catName, preTitles, DoorgenGeneratorRunner.PRETITLES_REGEXP);
-		cat.tmplText = catContent;
-		cat.genText = catContent;
-		cat.isUpdated = false;
 
+		//TODO Fill
+		cat.metaKeywordsTmpl = metaKeyWordsTmpl;
+		cat.metaKeywords = Utils.synonymizeText(Utils.fillTemplate(metaKeyWordsTmpl, cat.catName, preTitles, DoorgenGeneratorRunner.PRETITLES_REGEXP));
+		//TODO Fill
+		cat.metaDescTmpl = metaDescrTmpl;
+		cat.metaDesc = Utils.synonymizeText(Utils.fillTemplate(metaDescrTmpl, cat.catName, preTitles, DoorgenGeneratorRunner.PRETITLES_REGEXP));
+		
+		cat.textTmpl = catContent;
+		cat.text = Utils.synonymizeText(Utils.fillTemplate(catContent, cat.catName, preTitles, DoorgenGeneratorRunner.PRETITLES_REGEXP));
+		
+		cat.isUpdated = false;
+		
+		//load current category tags
+		File tagFile = new File(catFolder,"tags.txt");
+		if(tagFile.exists() && tagFile.isFile()){
+			cat.tags = Tag.loadTags(tagFile, -1, CategoryParentType.CATEGORY, cat.catName, preTitles);
+		}
+		
 		return cat;
 	}
 

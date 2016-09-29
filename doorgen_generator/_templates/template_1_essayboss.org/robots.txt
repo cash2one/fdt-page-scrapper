@@ -11,4 +11,4 @@ Disallow: /menu_pages/
 
 Disallow: *.html
 Host: essayboss.org
-Sitemap: http://essayboss.org/sitemap.xml
+Sitemap: https://essayboss.org/sitemap.xml

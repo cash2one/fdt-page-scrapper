@@ -717,7 +717,7 @@ $template=preg_replace("/\[COUNTRY\]/", $country, $template);
 $template=preg_replace("/\[CLOUDS\]/", $clouds, $template);
 $template=preg_replace("/\[CITY_COUNT\]/", $state_city_count, $template);
 
-$template=preg_replace("/\[CANONICAL_LINK\]/", "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"], $template);
+$template=preg_replace("/\[CANONICAL_LINK\]/", "https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"], $template);
 
 $template=preg_replace("/\[SITE_NAME\]/", SITE_NAME, $template);
 

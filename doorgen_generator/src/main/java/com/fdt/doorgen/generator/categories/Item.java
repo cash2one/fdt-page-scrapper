@@ -16,8 +16,8 @@ public class Item {
 	private BigDecimal lng;
 	private String zip_code;
 	private String country;
-	private String tmpl_text;
-	private String generated_text;
+	private String text;
+	private String text_tmpl;
 	private Double ratingCount;
 	private int reviewCount;
 	private int voteCount;
@@ -38,8 +38,8 @@ public class Item {
 		newItem.lng = new BigDecimal(!values[8].isEmpty()?values[8]:"0");
 		newItem.zip_code = values[9];
 		newItem.country = values[10];
-		newItem.tmpl_text = values[11];
-		newItem.generated_text = values[12];
+		newItem.text = values[11];
+		newItem.text_tmpl = values[12];
 		newItem.ratingCount = Double.valueOf(!values[13].isEmpty()?values[13]:"0");
 		newItem.reviewCount = Integer.valueOf(!values[14].isEmpty()?values[14]:"0");
 		newItem.voteCount = Integer.valueOf(!values[15].isEmpty()?values[15]:"0");
@@ -94,14 +94,6 @@ public class Item {
 		return country;
 	}
 
-	public String getTmpl_text() {
-		return tmpl_text;
-	}
-
-	public String getGenerated_text() {
-		return generated_text;
-	}
-
 	public Double getRatingCount() {
 		return ratingCount;
 	}
@@ -112,5 +104,21 @@ public class Item {
 
 	public int getVoteCount() {
 		return voteCount;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public String getText_tmpl() {
+		return text_tmpl;
+	}
+
+	public void setText_tmpl(String text_tmpl) {
+		this.text_tmpl = text_tmpl;
 	} 
 }

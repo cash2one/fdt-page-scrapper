@@ -56,22 +56,25 @@ public class CategoryDao extends DaoCommon{
 		int[] result = null;
 		try {
 			prprStatement = connection.prepareStatement(""
-					+ " INSERT INTO category (category_name, category_name_latin, abbr, title, meta_keywords, meta_description, tmpl_text, generated_text,ratingCount,reviewCount,voteCount, upd_flg, post_dt, upd_dt) "
-					+ " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now(), now()) ");
+					+ " INSERT INTO category (category_name, category_name_latin, abbr, title, title_tmpl, meta_keywords, meta_keywords_tmpl, meta_description, meta_description_tmpl, text, text_tmpl, ratingCount,reviewCount,voteCount, upd_flg, post_dt, upd_dt) "
+					+ " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now(), now()) ");
 
 			for (Category category : categories) {
 				prprStatement.setString(1, category.getCategoryName());
 				prprStatement.setString(2, category.getCategoryLatin());
 				prprStatement.setString(3, category.getAbbr());
 				prprStatement.setString(4, category.getTitle());
-				prprStatement.setString(5, category.getMetaKeywords());
-				prprStatement.setString(6, category.getMetaDesc());
-				prprStatement.setString(7, category.getTmplText());
-				prprStatement.setString(8, category.getGenText());
-				prprStatement.setFloat(9, ((float)4.11 + ((float)rnd.nextInt(40)/100)));
-				prprStatement.setInt(10,1);
-				prprStatement.setInt(11, 5 + rnd.nextInt(10));
-				prprStatement.setBoolean(12, category.isUpdated());
+				prprStatement.setString(5, category.getTitleTmpl());
+				prprStatement.setString(6, category.getMetaKeywords());
+				prprStatement.setString(7, category.getMetaKeywordsTmpl());
+				prprStatement.setString(8, category.getMetaDesc());
+				prprStatement.setString(9, category.getMetaDescTmpl());
+				prprStatement.setString(10, category.getText());
+				prprStatement.setString(11, category.getTextTmpl());
+				prprStatement.setFloat(12, ((float)4.11 + ((float)rnd.nextInt(40)/100)));
+				prprStatement.setInt(13,1);
+				prprStatement.setInt(14, 5 + rnd.nextInt(10));
+				prprStatement.setBoolean(15, category.isUpdated());
 				prprStatement.addBatch();
 			}
 			

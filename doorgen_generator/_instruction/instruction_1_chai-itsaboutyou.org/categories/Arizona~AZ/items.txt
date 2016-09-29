@@ -1,0 +1,264 @@
+Aguila~Aguila~~Aguila, Maricopa county, AZ 85320, USA~33.9277;-113.177~US-AZ~33.9277,-113.177~33.92770000~-113.17700000~85320~Maricopa county~~~4.3900003~1058~4290
+Ajo~Ajo~~Ajo, Pima county, AZ 85321, USA~32.3858;-112.866~US-AZ~32.3858,-112.866~32.38580000~-112.86600000~85321~Pima county~~~4.4500003~2567~2705
+Alpine~Alpine~~Alpine, Apache county, AZ 85920, USA~33.8158;-109.202~US-AZ~33.8158,-109.202~33.81580000~-109.20200000~85920~Apache county~~~4.26~2937~2608
+Amado~Amado~~Amado, Santa Cruz county, AZ 85645, USA~31.5686;-111.052~US-AZ~31.5686,-111.052~31.56860000~-111.05200000~85645~Santa Cruz county~~~4.2400002~2686~3247
+Apache Junction~Apache-Junction~~Apache Junction, Pinal county, AZ 85217, USA~33.3286;-111.328~US-AZ~33.3286,-111.328~33.32860000~-111.32800000~85217~Pinal county~~~4.1800003~1341~2570
+Arivaca~Arivaca~~Arivaca, Pima county, AZ 85601, USA~31.578;-111.33~US-AZ~31.578,-111.33~31.57800000~-111.33000000~85601~Pima county~~~4.21~1674~3380
+Arizona City~Arizona-City~~Arizona City, Pinal county, AZ 85223, USA~32.7653;-111.659~US-AZ~32.7653,-111.659~32.76530000~-111.65900000~85223~Pinal county~~~4.34~2190~4667
+Arlington~Arlington~~Arlington, Maricopa county, AZ 85322, USA~33.3046;-112.781~US-AZ~33.3046,-112.781~33.30460000~-112.78100000~85322~Maricopa county~~~4.35~1692~2818
+Ash Fork~Ash-Fork~~Ash Fork, Yavapai county, AZ 86320, USA~35.1843;-112.63~US-AZ~35.1843,-112.63~35.18430000~-112.63000000~86320~Yavapai county~~~4.48~2585~2551
+Avondale~Avondale~~Avondale, Maricopa county, AZ 85323, USA~33.4293;-112.345~US-AZ~33.4293,-112.345~33.42930000~-112.34500000~85323~Maricopa county~~~4.36~2067~4935
+Bagdad~Bagdad~~Bagdad, Yavapai county, AZ 86321, USA~34.5783;-113.174~US-AZ~34.5783,-113.174~34.57830000~-113.17400000~86321~Yavapai county~~~4.5~2133~3085
+Bapchule~Bapchule~~Bapchule, Pinal county, AZ 85221, USA~33.1365;-111.875~US-AZ~33.1365,-111.875~33.13650000~-111.87500000~85221~Pinal county~~~4.31~2970~3430
+Bellemont~Bellemont~~Bellemont, Coconino county, AZ 86015, USA~35.1981;-111.651~US-AZ~35.1981,-111.651~35.19810000~-111.65100000~86015~Coconino county~~~4.11~2456~4139
+Benson~Benson~~Benson, Cochise county, AZ 85602, USA~31.9654;-110.297~US-AZ~31.9654,-110.297~31.96540000~-110.29700000~85602~Cochise county~~~4.1800003~2528~3411
+Bisbee~Bisbee~~Bisbee, Cochise county, AZ 85603, USA~31.4588;-109.946~US-AZ~31.4588,-109.946~31.45880000~-109.94600000~85603~Cochise county~~~4.26~1530~2636
+Black Canyon City~Black-Canyon-City~~Black Canyon City, Yavapai county, AZ 85324, USA~34.0859;-112.142~US-AZ~34.0859,-112.142~34.08590000~-112.14200000~85324~Yavapai county~~~4.25~2549~2362
+Blue Gap~Blue-Gap~~Blue Gap, Navajo county, AZ 86520, USA~36.0657;-110.085~US-AZ~36.0657,-110.085~36.06570000~-110.08500000~86520~Navajo county~~~4.4100003~1443~2904
+Blue~Blue~~Blue, Greenlee county, AZ 85922, USA~33.5806;-109.097~US-AZ~33.5806,-109.097~33.58060000~-109.09700000~85922~Greenlee county~~~4.32~1870~2706
+Bouse~Bouse~~Bouse, La Paz county, AZ 85325, USA~33.9318;-114.004~US-AZ~33.9318,-114.004~33.93180000~-114.00400000~85325~La Paz county~~~4.37~1621~2371
+Bowie~Bowie~~Bowie, Cochise county, AZ 85605, USA~32.1634;-109.335~US-AZ~32.1634,-109.335~32.16340000~-109.33500000~85605~Cochise county~~~4.1600003~2174~4508
+Buckeye~Buckeye~~Buckeye, Maricopa county, AZ 85326, USA~33.3826;-112.568~US-AZ~33.3826,-112.568~33.38260000~-112.56800000~85326~Maricopa county~~~4.4~2155~2178
+Bullhead City~Bullhead-City~~Bullhead City, Mohave county, AZ 86429, USA~35.1592;-114.477~US-AZ~35.1592,-114.477~35.15920000~-114.47700000~86429~Mohave county~~~4.32~2665~4625
+Bylas~Bylas~~Bylas, Graham county, AZ 85530, USA~33.1054;-110.226~US-AZ~33.1054,-110.226~33.10540000~-110.22600000~85530~Graham county~~~4.1800003~2706~4682
+Cameron~Cameron~~Cameron, Coconino county, AZ 86020, USA~35.8482;-111.431~US-AZ~35.8482,-111.431~35.84820000~-111.43100000~86020~Coconino county~~~4.5~2599~3439
+Camp Verde~Camp-Verde~~Camp Verde, Yavapai county, AZ 86322, USA~34.5572;-111.834~US-AZ~34.5572,-111.834~34.55720000~-111.83400000~86322~Yavapai county~~~4.36~1478~2250
+Carefree~Carefree~~Carefree, Maricopa county, AZ 85377, USA~33.8233;-111.905~US-AZ~33.8233,-111.905~33.82330000~-111.90500000~85377~Maricopa county~~~4.2400002~2408~4439
+Casa Grande~Casa-Grande~~Casa Grande, Pinal county, AZ 85222, USA~32.8931;-111.734~US-AZ~32.8931,-111.734~32.89310000~-111.73400000~85222~Pinal county~~~4.48~1395~4160
+Cashion~Cashion~~Cashion, Maricopa county, AZ 85329, USA~33.4277;-112.305~US-AZ~33.4277,-112.305~33.42770000~-112.30500000~85329~Maricopa county~~~4.5~1136~2951
+Catalina~Catalina~~Catalina, Pima county, AZ 85738, USA~32.2217;-110.926~US-AZ~32.2217,-110.926~32.22170000~-110.92600000~85738~Pima county~~~4.32~1486~3041
+Cave Creek~Cave-Creek~~Cave Creek, Maricopa county, AZ 85327, USA~33.8265;-111.963~US-AZ~33.8265,-111.963~33.82650000~-111.96300000~85327~Maricopa county~~~4.13~1835~4823
+Central~Central~~Central, Graham county, AZ 85531, USA~32.8666;-109.789~US-AZ~32.8666,-109.789~32.86660000~-109.78900000~85531~Graham county~~~4.29~2170~2824
+Chambers~Chambers~~Chambers, Apache county, AZ 86502, USA~35.4194;-109.496~US-AZ~35.4194,-109.496~35.41940000~-109.49600000~86502~Apache county~~~4.21~1220~3329
+Chandler Heights~Chandler-Heights~~Chandler Heights, Maricopa county, AZ 85227, USA~33.2119;-111.686~US-AZ~33.2119,-111.686~33.21190000~-111.68600000~85227~Maricopa county~~~4.25~2573~2903
+Chandler~Chandler~~Chandler, Maricopa county, AZ 85224, USA~33.3213;-111.878~US-AZ~33.3213,-111.878~33.32130000~-111.87800000~85224~Maricopa county~~~4.29~2970~4721
+Chinle~Chinle~~Chinle, Apache county, AZ 86503, USA~36.1595;-109.582~US-AZ~36.1595,-109.582~36.15950000~-109.58200000~86503~Apache county~~~4.5~2844~3950
+Chino Valley~Chino-Valley~~Chino Valley, Yavapai county, AZ 86323, USA~34.7703;-112.472~US-AZ~34.7703,-112.472~34.77030000~-112.47200000~86323~Yavapai county~~~4.1200004~2860~4199
+Chloride~Chloride~~Chloride, Mohave county, AZ 86431, USA~35.1979;-114.033~US-AZ~35.1979,-114.033~35.19790000~-114.03300000~86431~Mohave county~~~4.5~2893~2350
+Cibecue~Cibecue~~Cibecue, Navajo county, AZ 85911, USA~34.0467;-110.485~US-AZ~34.0467,-110.485~34.04670000~-110.48500000~85911~Navajo county~~~4.46~1428~3196
+Cibola~Cibola~~Cibola, La Paz county, AZ 85328, USA~33.5335;-114.433~US-AZ~33.5335,-114.433~33.53350000~-114.43300000~85328~La Paz county~~~4.2200003~2071~4580
+Clarkdale~Clarkdale~~Clarkdale, Yavapai county, AZ 86324, USA~34.7594;-112.118~US-AZ~34.7594,-112.118~34.75940000~-112.11800000~86324~Yavapai county~~~4.27~1463~2415
+Clay Springs~Clay-Springs~~Clay Springs, Navajo county, AZ 85923, USA~34.3604;-110.296~US-AZ~34.3604,-110.296~34.36040000~-110.29600000~85923~Navajo county~~~4.4500003~2275~2135
+Claypool~Claypool~~Claypool, Gila county, AZ 85532, USA~33.412;-110.832~US-AZ~33.412,-110.832~33.41200000~-110.83200000~85532~Gila county~~~4.11~1208~4712
+Clifton~Clifton~~Clifton, Greenlee county, AZ 85533, USA~33.0454;-109.295~US-AZ~33.0454,-109.295~33.04540000~-109.29500000~85533~Greenlee county~~~4.37~1549~2237
+Cochise~Cochise~~Cochise, Cochise county, AZ 85606, USA~32.0064;-109.88~US-AZ~32.0064,-109.88~32.00640000~-109.88000000~85606~Cochise county~~~4.15~1132~3499
+Colorado City~Colorado-City~~Colorado City, Mohave county, AZ 86021, USA~36.9898;-112.977~US-AZ~36.9898,-112.977~36.98980000~-112.97700000~86021~Mohave county~~~4.2400002~2948~4384
+Concho~Concho~~Concho, Apache county, AZ 85924, USA~34.4286;-109.689~US-AZ~34.4286,-109.689~34.42860000~-109.68900000~85924~Apache county~~~4.2000003~1451~3056
+Congress~Congress~~Congress, Yavapai county, AZ 85332, USA~34.1641;-112.857~US-AZ~34.1641,-112.857~34.16410000~-112.85700000~85332~Yavapai county~~~4.36~2241~3005
+Coolidge~Coolidge~~Coolidge, Pinal county, AZ 85228, USA~32.974;-111.518~US-AZ~32.974,-111.518~32.97400000~-111.51800000~85228~Pinal county~~~4.31~1173~4076
+Cornville~Cornville~~Cornville, Yavapai county, AZ 86325, USA~34.7242;-111.912~US-AZ~34.7242,-111.912~34.72420000~-111.91200000~86325~Yavapai county~~~4.3900003~2551~4343
+Cortaro~Cortaro~~Cortaro, Pima county, AZ 85652, USA~32.3849;-111.114~US-AZ~32.3849,-111.114~32.38490000~-111.11400000~85652~Pima county~~~4.4500003~1807~4716
+Cottonwood~Cottonwood~~Cottonwood, Yavapai county, AZ 86326, USA~34.718;-112.006~US-AZ~34.718,-112.006~34.71800000~-112.00600000~86326~Yavapai county~~~4.5~2247~2323
+Crown King~Crown-King~~Crown King, Yavapai county, AZ 86343, USA~34.219;-112.306~US-AZ~34.219,-112.306~34.21900000~-112.30600000~86343~Yavapai county~~~4.4900002~2848~2817
+Dateland~Dateland~~Dateland, Yuma county, AZ 85333, USA~32.8772;-113.427~US-AZ~32.8772,-113.427~32.87720000~-113.42700000~85333~Yuma county~~~4.44~2241~3174
+Dennehotso~Dennehotso~~Dennehotso, Apache county, AZ 86535, USA~36.7414;-109.853~US-AZ~36.7414,-109.853~36.74140000~-109.85300000~86535~Apache county~~~4.4~2404~2963
+Dewey~Dewey~~Dewey, Yavapai county, AZ 86327, USA~34.554;-112.268~US-AZ~34.554,-112.268~34.55400000~-112.26800000~86327~Yavapai county~~~4.37~1361~4805
+Dolan Springs~Dolan-Springs~~Dolan Springs, Mohave county, AZ 86441, USA~35.5713;-114.312~US-AZ~35.5713,-114.312~35.57130000~-114.31200000~86441~Mohave county~~~4.21~1836~2804
+Douglas~Douglas~~Douglas, Cochise county, AZ 85607, USA~31.3516;-109.544~US-AZ~31.3516,-109.544~31.35160000~-109.54400000~85607~Cochise county~~~4.4~1159~2500
+Dragoon~Dragoon~~Dragoon, Cochise county, AZ 85609, USA~32.0299;-110.048~US-AZ~32.0299,-110.048~32.02990000~-110.04800000~85609~Cochise county~~~4.37~2102~3415
+Duncan~Duncan~~Duncan, Greenlee county, AZ 85534, USA~32.7147;-109.1~US-AZ~32.7147,-109.1~32.71470000~-109.10000000~85534~Greenlee county~~~4.31~1708~3126
+Eagar~Eagar~~Eagar, Apache county, AZ 85925, USA~34.1195;-109.29~US-AZ~34.1195,-109.29~34.11950000~-109.29000000~85925~Apache county~~~4.1400003~2518~4564
+Eden~Eden~~Eden, Graham county, AZ 85535, USA~32.9762;-109.9~US-AZ~32.9762,-109.9~32.97620000~-109.90000000~85535~Graham county~~~4.2000003~2229~3341
+Ehrenberg~Ehrenberg~~Ehrenberg, La Paz county, AZ 85334, USA~33.621;-114.497~US-AZ~33.621,-114.497~33.62100000~-114.49700000~85334~La Paz county~~~4.4900002~1931~2843
+El Mirage~El-Mirage~~El Mirage, Maricopa county, AZ 85335, USA~33.6135;-112.318~US-AZ~33.6135,-112.318~33.61350000~-112.31800000~85335~Maricopa county~~~4.21~2049~3479
+Elfrida~Elfrida~~Elfrida, Cochise county, AZ 85610, USA~31.7191;-109.464~US-AZ~31.7191,-109.464~31.71910000~-109.46400000~85610~Cochise county~~~4.19~1030~4485
+Elgin~Elgin~~Elgin, Santa Cruz county, AZ 85611, USA~31.6154;-110.515~US-AZ~31.6154,-110.515~31.61540000~-110.51500000~85611~Santa Cruz county~~~4.17~2245~2343
+Eloy~Eloy~~Eloy, Pinal county, AZ 85231, USA~32.7272;-111.583~US-AZ~32.7272,-111.583~32.72720000~-111.58300000~85231~Pinal county~~~4.26~2479~3631
+Flagstaff~Flagstaff~~Flagstaff, Coconino county, AZ 86001, USA~35.14;-111.634~US-AZ~35.14,-111.634~35.14000000~-111.63400000~86001~Coconino county~~~4.2000003~2128~3399
+Florence~Florence~~Florence, Pinal county, AZ 85232, USA~33.028;-111.369~US-AZ~33.028,-111.369~33.02800000~-111.36900000~85232~Pinal county~~~4.29~1106~4252
+Forest Lakes~Forest-Lakes~~Forest Lakes, Coconino county, AZ 85931, USA~34.626;-111.112~US-AZ~34.626,-111.112~34.62600000~-111.11200000~85931~Coconino county~~~4.33~2612~4953
+Fort Apache~Fort-Apache~~Fort Apache, Navajo county, AZ 85926, USA~33.7895;-109.99~US-AZ~33.7895,-109.99~33.78950000~-109.99000000~85926~Navajo county~~~4.48~1414~2308
+Fort Defiance~Fort-Defiance~~Fort Defiance, Apache county, AZ 86504, USA~35.7471;-109.071~US-AZ~35.7471,-109.071~35.74710000~-109.07100000~86504~Apache county~~~4.3900003~2608~3768
+Fort Huachuca~Fort-Huachuca~~Fort Huachuca, Cochise county, AZ 85613, USA~31.5518;-110.347~US-AZ~31.5518,-110.347~31.55180000~-110.34700000~85613~Cochise county~~~4.4300003~2981~2815
+Fort Mcdowell~Fort-Mcdowell~~Fort McDowell, Maricopa county, AZ 85264, USA~33.6254;-111.662~US-AZ~33.6254,-111.662~33.62540000~-111.66200000~85264~Maricopa county~~~4.1600003~2694~3721
+Fort Mohave~Fort-Mohave~~Fort Mohave, Mohave county, AZ 86426, USA~35.0017;-114.563~US-AZ~35.0017,-114.563~35.00170000~-114.56300000~86426~Mohave county~~~4.2400002~2885~2155
+Fort Thomas~Fort-Thomas~~Fort Thomas, Graham county, AZ 85536, USA~32.9947;-109.975~US-AZ~32.9947,-109.975~32.99470000~-109.97500000~85536~Graham county~~~4.1600003~1417~3192
+Fountain Hills~Fountain-Hills~~Fountain Hills, Maricopa county, AZ 85268, USA~33.609;-111.73~US-AZ~33.609,-111.73~33.60900000~-111.73000000~85268~Maricopa county~~~4.26~1253~4850
+Fredonia~Fredonia~~Fredonia, Coconino county, AZ 86022, USA~36.9458;-112.53~US-AZ~36.9458,-112.53~36.94580000~-112.53000000~86022~Coconino county~~~4.26~1521~3050
+Gadsden~Gadsden~~Gadsden, Yuma county, AZ 85336, USA~32.5516;-114.773~US-AZ~32.5516,-114.773~32.55160000~-114.77300000~85336~Yuma county~~~4.36~2182~4142
+Ganado~Ganado~~Ganado, Apache county, AZ 86505, USA~35.6061;-109.456~US-AZ~35.6061,-109.456~35.60610000~-109.45600000~86505~Apache county~~~4.33~1051~3568
+Gila Bend~Gila-Bend~~Gila Bend, Maricopa county, AZ 85337, USA~32.9846;-112.679~US-AZ~32.9846,-112.679~32.98460000~-112.67900000~85337~Maricopa county~~~4.48~2775~2821
+Gilbert~Gilbert~~Gilbert, Maricopa county, AZ 85233, USA~33.3557;-111.804~US-AZ~33.3557,-111.804~33.35570000~-111.80400000~85233~Maricopa county~~~4.26~2030~2527
+Glendale Luke Afb~Glendale-Luke-Afb~~Glendale Luke AFB, Maricopa county, AZ 85309, USA~33.5383;-112.37~US-AZ~33.5383,-112.37~33.53830000~-112.37000000~85309~Maricopa county~~~4.21~1870~4081
+Glendale~Glendale~~Glendale, Maricopa county, AZ 85301, USA~33.5363;-112.177~US-AZ~33.5363,-112.177~33.53630000~-112.17700000~85301~Maricopa county~~~4.31~1824~2685
+Globe~Globe~~Globe, Gila county, AZ 85501, USA~33.3941;-110.783~US-AZ~33.3941,-110.783~33.39410000~-110.78300000~85501~Gila county~~~4.15~2584~3177
+Golden Valley~Golden-Valley~~Golden Valley, Mohave county, AZ 86413, USA~35.2206;-114.219~US-AZ~35.2206,-114.219~35.22060000~-114.21900000~86413~Mohave county~~~4.2000003~1476~2631
+Goodyear~Goodyear~~Goodyear, Maricopa county, AZ 85338, USA~33.4347;-112.384~US-AZ~33.4347,-112.384~33.43470000~-112.38400000~85338~Maricopa county~~~4.4~2213~3339
+Grand Canyon~Grand-Canyon~~Grand Canyon, Coconino county, AZ 86023, USA~36.0544;-112.139~US-AZ~36.0544,-112.139~36.05440000~-112.13900000~86023~Coconino county~~~4.11~2645~2825
+Gray Mountain~Gray-Mountain~~Gray Mountain, Coconino county, AZ 86016, USA~35.747;-111.475~US-AZ~35.747,-111.475~35.74700000~-111.47500000~86016~Coconino county~~~4.4500003~1043~3282
+Green Valley~Green-Valley~~Green Valley, Pima county, AZ 85614, USA~31.8591;-111~US-AZ~31.8591,-111~31.85910000~-111.00000000~85614~Pima county~~~4.4~1638~3709
+Greer~Greer~~Greer, Apache county, AZ 85927, USA~34.0133;-109.458~US-AZ~34.0133,-109.458~34.01330000~-109.45800000~85927~Apache county~~~4.23~2186~3071
+Hackberry~Hackberry~~Hackberry, Mohave county, AZ 86411, USA~35.3694;-113.727~US-AZ~35.3694,-113.727~35.36940000~-113.72700000~86411~Mohave county~~~4.1400003~2175~3581
+Happy Jack~Happy-Jack~~Happy Jack, Coconino county, AZ 86024, USA~34.6629;-111.479~US-AZ~34.6629,-111.479~34.66290000~-111.47900000~86024~Coconino county~~~4.4100003~2336~2991
+Hayden~Hayden~~Hayden, Gila county, AZ 85235, USA~33.0758;-110.799~US-AZ~33.0758,-110.799~33.07580000~-110.79900000~85235~Gila county~~~4.2000003~2708~4548
+Heber~Heber~~Heber, Navajo county, AZ 85928, USA~34.429;-110.543~US-AZ~34.429,-110.543~34.42900000~-110.54300000~85928~Navajo county~~~4.23~1816~2423
+Hereford~Hereford~~Hereford, Cochise county, AZ 85615, USA~31.4029;-110.207~US-AZ~31.4029,-110.207~31.40290000~-110.20700000~85615~Cochise county~~~4.15~1248~2501
+Higley~Higley~~Higley, Maricopa county, AZ 85236, USA~33.3303;-111.697~US-AZ~33.3303,-111.697~33.33030000~-111.69700000~85236~Maricopa county~~~4.42~2872~3494
+Holbrook~Holbrook~~Holbrook, Navajo county, AZ 86025, USA~34.9067;-110.159~US-AZ~34.9067,-110.159~34.90670000~-110.15900000~86025~Navajo county~~~4.28~2023~3590
+Hotevilla~Hotevilla~~Hotevilla, Navajo county, AZ 86030, USA~35.9214;-110.673~US-AZ~35.9214,-110.673~35.92140000~-110.67300000~86030~Navajo county~~~4.48~2897~3848
+Houck~Houck~~Houck, Apache county, AZ 86506, USA~35.3891;-109.283~US-AZ~35.3891,-109.283~35.38910000~-109.28300000~86506~Apache county~~~4.4300003~1073~2680
+Huachuca City~Huachuca-City~~Huachuca City, Cochise county, AZ 85616, USA~31.6804;-110.317~US-AZ~31.6804,-110.317~31.68040000~-110.31700000~85616~Cochise county~~~4.34~2043~2643
+Hualapai~Hualapai~~Hualapai, Mohave county, AZ 86412, USA~35.5031;-113.882~US-AZ~35.5031,-113.882~35.50310000~-113.88200000~86412~Mohave county~~~4.4100003~2174~4279
+Humboldt~Humboldt~~Humboldt, Yavapai county, AZ 86329, USA~34.5052;-112.223~US-AZ~34.5052,-112.223~34.50520000~-112.22300000~86329~Yavapai county~~~4.25~2493~2687
+Indian Wells~Indian-Wells~~Indian Wells, Navajo county, AZ 86031, USA~35.4047;-110.086~US-AZ~35.4047,-110.086~35.40470000~-110.08600000~86031~Navajo county~~~4.33~2290~2323
+Iron Springs~Iron-Springs~~Iron Springs, Yavapai county, AZ 86330, USA~34.58;-112.56~US-AZ~34.58,-112.56~34.58000000~-112.56000000~86330~Yavapai county~~~4.32~2067~2591
+Jerome~Jerome~~Jerome, Yavapai county, AZ 86331, USA~34.75;-112.106~US-AZ~34.75,-112.106~34.75000000~-112.10600000~86331~Yavapai county~~~4.44~2173~3593
+Joseph City~Joseph-City~~Joseph City, Navajo county, AZ 86032, USA~34.9643;-110.331~US-AZ~34.9643,-110.331~34.96430000~-110.33100000~86032~Navajo county~~~4.26~2039~2610
+Kaibeto~Kaibeto~~Kaibeto, Coconino county, AZ 86053, USA~36.59;-111.07~US-AZ~36.59,-111.07~36.59000000~-111.07000000~86053~Coconino county~~~4.1600003~2438~3553
+Kayenta~Kayenta~~Kayenta, Navajo county, AZ 86033, USA~36.6307;-110.278~US-AZ~36.6307,-110.278~36.63070000~-110.27800000~86033~Navajo county~~~4.34~2401~3029
+Keams Canyon~Keams-Canyon~~Keams Canyon, Navajo county, AZ 86034, USA~35.7776;-110.172~US-AZ~35.7776,-110.172~35.77760000~-110.17200000~86034~Navajo county~~~4.4500003~1820~4581
+Kearny~Kearny~~Kearny, Pinal county, AZ 85237, USA~33.1259;-110.936~US-AZ~33.1259,-110.936~33.12590000~-110.93600000~85237~Pinal county~~~4.44~1292~3819
+Kingman~Kingman~~Kingman, Mohave county, AZ 86401, USA~35.524;-113.993~US-AZ~35.524,-113.993~35.52400000~-113.99300000~86401~Mohave county~~~4.23~2851~2113
+Kirkland~Kirkland~~Kirkland, Yavapai county, AZ 86332, USA~34.4331;-112.6~US-AZ~34.4331,-112.6~34.43310000~-112.60000000~86332~Yavapai county~~~4.48~2056~4488
+Kykotsmovi Village~Kykotsmovi-Village~~Kykotsmovi Village, Navajo county, AZ 86039, USA~35.6528;-110.494~US-AZ~35.6528,-110.494~35.65280000~-110.49400000~86039~Navajo county~~~4.21~2150~3867
+Lake Havasu City~Lake-Havasu-City~~Lake Havasu City, Mohave county, AZ 86403, USA~34.4871;-114.33~US-AZ~34.4871,-114.33~34.48710000~-114.33000000~86403~Mohave county~~~4.1200004~2905~3855
+Lake Montezuma~Lake-Montezuma~~Lake Montezuma, Yavapai county, AZ 86342, USA~34.6309;-111.777~US-AZ~34.6309,-111.777~34.63090000~-111.77700000~86342~Yavapai county~~~4.23~2045~4556
+Lakeside~Lakeside~~Lakeside, Navajo county, AZ 85929, USA~34.1225;-109.947~US-AZ~34.1225,-109.947~34.12250000~-109.94700000~85929~Navajo county~~~4.37~1714~2377
+Laveen~Laveen~~Laveen, Maricopa county, AZ 85339, USA~33.3506;-112.199~US-AZ~33.3506,-112.199~33.35060000~-112.19900000~85339~Maricopa county~~~4.2000003~1903~2000
+Leupp~Leupp~~Leupp, Coconino county, AZ 86035, USA~35.2881;-111.037~US-AZ~35.2881,-111.037~35.28810000~-111.03700000~86035~Coconino county~~~4.29~1896~2573
+Litchfield Park~Litchfield-Park~~Litchfield Park, Maricopa county, AZ 85340, USA~33.498;-112.377~US-AZ~33.498,-112.377~33.49800000~-112.37700000~85340~Maricopa county~~~4.48~2106~2210
+Littlefield~Littlefield~~Littlefield, Mohave county, AZ 86432, USA~36.8833;-113.933~US-AZ~36.8833,-113.933~36.88330000~-113.93300000~86432~Mohave county~~~4.48~2119~2718
+Lukachukai~Lukachukai~~Lukachukai, Apache county, AZ 86507, USA~36.4326;-109.239~US-AZ~36.4326,-109.239~36.43260000~-109.23900000~86507~Apache county~~~4.3900003~2304~3867
+Lukeville~Lukeville~~Lukeville, Pima county, AZ 85341, USA~31.881;-112.815~US-AZ~31.881,-112.815~31.88100000~-112.81500000~85341~Pima county~~~4.19~1216~4905
+Lupton~Lupton~~Lupton, Apache county, AZ 86508, USA~35.35;-109.05~US-AZ~35.35,-109.05~35.35000000~-109.05000000~86508~Apache county~~~4.38~1272~3976
+Mammoth~Mammoth~~Mammoth, Pinal county, AZ 85618, USA~32.7064;-110.655~US-AZ~32.7064,-110.655~32.70640000~-110.65500000~85618~Pinal county~~~4.1600003~1004~3165
+Many Farms~Many-Farms~~Many Farms, Apache county, AZ 86538, USA~36.4532;-109.582~US-AZ~36.4532,-109.582~36.45320000~-109.58200000~86538~Apache county~~~4.5~1831~3771
+Marana~Marana~~Marana, Pima county, AZ 85653, USA~32.4147;-111.295~US-AZ~32.4147,-111.295~32.41470000~-111.29500000~85653~Pima county~~~4.13~1710~3696
+Marble Canyon~Marble-Canyon~~Marble Canyon, Coconino county, AZ 86036, USA~36.9218;-111.451~US-AZ~36.9218,-111.451~36.92180000~-111.45100000~86036~Coconino county~~~4.31~1619~4088
+Maricopa~Maricopa~~Maricopa, Pinal county, AZ 85238, USA~33.0858;-112.031~US-AZ~33.0858,-112.031~33.08580000~-112.03100000~85238~Pinal county~~~4.15~2103~2854
+Mayer~Mayer~~Mayer, Yavapai county, AZ 86333, USA~34.3163;-112.121~US-AZ~34.3163,-112.121~34.31630000~-112.12100000~86333~Yavapai county~~~4.1400003~2303~4687
+Mc Neal~Mc-Neal~~Mc Neal, Cochise county, AZ 85617, USA~31.5239;-109.683~US-AZ~31.5239,-109.683~31.52390000~-109.68300000~85617~Cochise county~~~4.26~2796~2854
+Mcnary~Mcnary~~McNary, Apache county, AZ 85930, USA~33.9839;-109.746~US-AZ~33.9839,-109.746~33.98390000~-109.74600000~85930~Apache county~~~4.4300003~2412~3293
+Meadview~Meadview~~Meadview, Mohave county, AZ 86444, USA~35.8686;-114.313~US-AZ~35.8686,-114.313~35.86860000~-114.31300000~86444~Mohave county~~~4.13~1893~3247
+Mesa~Mesa~~Mesa, Maricopa county, AZ 85201, USA~33.4305;-111.841~US-AZ~33.4305,-111.841~33.43050000~-111.84100000~85201~Maricopa county~~~4.48~1958~4387
+Miami~Miami~~Miami, Gila county, AZ 85539, USA~33.4084;-110.868~US-AZ~33.4084,-110.868~33.40840000~-110.86800000~85539~Gila county~~~4.37~1076~3114
+Mohave Valley~Mohave-Valley~~Mohave Valley, Mohave county, AZ 86440, USA~34.9089;-114.541~US-AZ~34.9089,-114.541~34.90890000~-114.54100000~86440~Mohave county~~~4.2400002~1612~2801
+Morenci~Morenci~~Morenci, Greenlee county, AZ 85540, USA~33.0459;-109.326~US-AZ~33.0459,-109.326~33.04590000~-109.32600000~85540~Greenlee county~~~4.2000003~1692~4969
+Mormon Lake~Mormon-Lake~~Mormon Lake, Coconino county, AZ 86038, USA~34.9441;-111.428~US-AZ~34.9441,-111.428~34.94410000~-111.42800000~86038~Coconino county~~~4.38~1669~3579
+Morristown~Morristown~~Morristown, Maricopa county, AZ 85342, USA~33.8503;-112.609~US-AZ~33.8503,-112.609~33.85030000~-112.60900000~85342~Maricopa county~~~4.28~1688~2043
+Mount Lemmon~Mount-Lemmon~~Mount Lemmon, Pima county, AZ 85619, USA~32.4271;-110.8~US-AZ~32.4271,-110.8~32.42710000~-110.80000000~85619~Pima county~~~4.1600003~2223~3637
+Munds Park~Munds-Park~~Munds Park, Coconino county, AZ 86017, USA~34.9462;-111.638~US-AZ~34.9462,-111.638~34.94620000~-111.63800000~86017~Coconino county~~~4.11~2443~2329
+Naco~Naco~~Naco, Cochise county, AZ 85620, USA~31.3402;-109.941~US-AZ~31.3402,-109.941~31.34020000~-109.94100000~85620~Cochise county~~~4.3~2322~3038
+Nazlini~Nazlini~~Nazlini, Apache county, AZ 86540, USA~35.6073;-109.461~US-AZ~35.6073,-109.461~35.60730000~-109.46100000~86540~Apache county~~~4.26~1850~3819
+New River~New-River~~New River, Maricopa county, AZ 85087, USA~33.9152;-112.137~US-AZ~33.9152,-112.137~33.91520000~-112.13700000~85087~Maricopa county~~~4.4~2452~2317
+Nogales~Nogales~~Nogales, Santa Cruz county, AZ 85621, USA~31.3826;-110.942~US-AZ~31.3826,-110.942~31.38260000~-110.94200000~85621~Santa Cruz county~~~4.27~2388~3370
+North Rim~North-Rim~~North Rim, Coconino county, AZ 86052, USA~36.2126;-112.058~US-AZ~36.2126,-112.058~36.21260000~-112.05800000~86052~Coconino county~~~4.1200004~2041~4921
+Nutrioso~Nutrioso~~Nutrioso, Apache county, AZ 85932, USA~33.9545;-109.21~US-AZ~33.9545,-109.21~33.95450000~-109.21000000~85932~Apache county~~~4.13~1435~2305
+Oatman~Oatman~~Oatman, Mohave county, AZ 86433, USA~35.0279;-114.382~US-AZ~35.0279,-114.382~35.02790000~-114.38200000~86433~Mohave county~~~4.4700003~2856~4621
+Oracle~Oracle~~Oracle, Pinal county, AZ 85623, USA~32.6166;-110.794~US-AZ~32.6166,-110.794~32.61660000~-110.79400000~85623~Pinal county~~~4.23~1066~4549
+Overgaard~Overgaard~~Overgaard, Navajo county, AZ 85933, USA~34.3896;-110.552~US-AZ~34.3896,-110.552~34.38960000~-110.55200000~85933~Navajo county~~~4.32~1008~3446
+Page~Page~~Page, Coconino county, AZ 86040, USA~36.9137;-111.467~US-AZ~36.9137,-111.467~36.91370000~-111.46700000~86040~Coconino county~~~4.5~2779~4148
+Palo Verde~Palo-Verde~~Palo Verde, Maricopa county, AZ 85343, USA~33.3312;-112.703~US-AZ~33.3312,-112.703~33.33120000~-112.70300000~85343~Maricopa county~~~4.1600003~2539~4908
+Paradise Valley~Paradise-Valley~~Paradise Valley, Maricopa county, AZ 85253, USA~33.546;-111.968~US-AZ~33.546,-111.968~33.54600000~-111.96800000~85253~Maricopa county~~~4.33~1604~4947
+Parker~Parker~~Parker, La Paz county, AZ 85344, USA~34.1553;-114.263~US-AZ~34.1553,-114.263~34.15530000~-114.26300000~85344~La Paz county~~~4.35~1505~4928
+Parks~Parks~~Parks, Coconino county, AZ 86018, USA~35.2605;-111.947~US-AZ~35.2605,-111.947~35.26050000~-111.94700000~86018~Coconino county~~~4.29~2900~4171
+Patagonia~Patagonia~~Patagonia, Santa Cruz county, AZ 85624, USA~31.5323;-110.747~US-AZ~31.5323,-110.747~31.53230000~-110.74700000~85624~Santa Cruz county~~~4.21~1091~4972
+Paulden~Paulden~~Paulden, Yavapai county, AZ 86334, USA~34.8856;-112.467~US-AZ~34.8856,-112.467~34.88560000~-112.46700000~86334~Yavapai county~~~4.31~1221~3410
+Payson~Payson~~Payson, Gila county, AZ 85541, USA~34.2036;-111.29~US-AZ~34.2036,-111.29~34.20360000~-111.29000000~85541~Gila county~~~4.28~1578~4893
+Peach Springs~Peach-Springs~~Peach Springs, Mohave county, AZ 86434, USA~35.5743;-113.492~US-AZ~35.5743,-113.492~35.57430000~-113.49200000~86434~Mohave county~~~4.4500003~2603~3810
+Pearce~Pearce~~Pearce, Cochise county, AZ 85625, USA~31.9356;-109.804~US-AZ~31.9356,-109.804~31.93560000~-109.80400000~85625~Cochise county~~~4.4100003~1590~3139
+Peoria~Peoria~~Peoria, Maricopa county, AZ 85345, USA~33.5695;-112.246~US-AZ~33.5695,-112.246~33.56950000~-112.24600000~85345~Maricopa county~~~4.2000003~1774~3275
+Peridot~Peridot~~Peridot, Gila county, AZ 85542, USA~33.3152;-110.452~US-AZ~33.3152,-110.452~33.31520000~-110.45200000~85542~Gila county~~~4.35~2504~2400
+Petrified Forest Natl Pk~Petrified-Forest-Natl-Pk~~Petrified Forest Natl Pk, Apache county, AZ 86028, USA~34.7914;-109.879~US-AZ~34.7914,-109.879~34.79140000~-109.87900000~86028~Apache county~~~4.37~2524~4470
+Phoenix~Phoenix~~Phoenix, Maricopa county, AZ 85001, USA~33.4492;-112.069~US-AZ~33.4492,-112.069~33.44920000~-112.06900000~85001~Maricopa county~~~4.25~2028~3289
+Picacho~Picacho~~Picacho, Pinal county, AZ 85241, USA~32.7127;-111.503~US-AZ~32.7127,-111.503~32.71270000~-111.50300000~85241~Pinal county~~~4.42~1082~4134
+Pima~Pima~~Pima, Graham county, AZ 85543, USA~32.8837;-109.833~US-AZ~32.8837,-109.833~32.88370000~-109.83300000~85543~Graham county~~~4.33~1626~4369
+Pine~Pine~~Pine, Gila county, AZ 85544, USA~34.3965;-111.454~US-AZ~34.3965,-111.454~34.39650000~-111.45400000~85544~Gila county~~~4.1400003~2280~2945
+Pinedale~Pinedale~~Pinedale, Navajo county, AZ 85934, USA~34.3063;-110.248~US-AZ~34.3063,-110.248~34.30630000~-110.24800000~85934~Navajo county~~~4.1600003~1753~4903
+Pinetop~Pinetop~~Pinetop, Navajo county, AZ 85935, USA~34.1221;-109.926~US-AZ~34.1221,-109.926~34.12210000~-109.92600000~85935~Navajo county~~~4.2000003~1389~3619
+Pinon~Pinon~~Pinon, Navajo county, AZ 86510, USA~35.9591;-110.309~US-AZ~35.9591,-110.309~35.95910000~-110.30900000~86510~Navajo county~~~4.17~2569~3707
+Pirtleville~Pirtleville~~Pirtleville, Cochise county, AZ 85626, USA~31.3593;-109.573~US-AZ~31.3593,-109.573~31.35930000~-109.57300000~85626~Cochise county~~~4.17~2294~3720
+Polacca~Polacca~~Polacca, Navajo county, AZ 86042, USA~35.9674;-110.431~US-AZ~35.9674,-110.431~35.96740000~-110.43100000~86042~Navajo county~~~4.1200004~1264~2496
+Pomerene~Pomerene~~Pomerene, Cochise county, AZ 85627, USA~32.1759;-110.257~US-AZ~32.1759,-110.257~32.17590000~-110.25700000~85627~Cochise county~~~4.34~2689~3410
+Poston~Poston~~Poston, La Paz county, AZ 85371, USA~33.9579;-114.414~US-AZ~33.9579,-114.414~33.95790000~-114.41400000~85371~La Paz county~~~4.32~2877~3840
+Prescott Valley~Prescott-Valley~~Prescott Valley, Yavapai county, AZ 86312, USA~34.6166;-112.326~US-AZ~34.6166,-112.326~34.61660000~-112.32600000~86312~Yavapai county~~~4.4100003~2460~2177
+Prescott~Prescott~~Prescott, Yavapai county, AZ 86301, USA~34.5851;-112.459~US-AZ~34.5851,-112.459~34.58510000~-112.45900000~86301~Yavapai county~~~4.4900002~1739~3294
+Quartzsite~Quartzsite~~Quartzsite, La Paz county, AZ 85346, USA~33.6667;-114.215~US-AZ~33.6667,-114.215~33.66670000~-114.21500000~85346~La Paz county~~~4.37~1541~4413
+Queen Creek~Queen-Creek~~Queen Creek, Maricopa county, AZ 85240, USA~33.2563;-111.533~US-AZ~33.2563,-111.533~33.25630000~-111.53300000~85240~Maricopa county~~~4.13~1475~4900
+Red Rock~Red-Rock~~Red Rock, Pinal county, AZ 85245, USA~32.5722;-111.375~US-AZ~32.5722,-111.375~32.57220000~-111.37500000~85245~Pinal county~~~4.37~2192~3898
+Red Valley~Red-Valley~~Red Valley, Apache county, AZ 86544, USA~36.7501;-109.366~US-AZ~36.7501,-109.366~36.75010000~-109.36600000~86544~Apache county~~~4.26~1583~3284
+Rillito~Rillito~~Rillito, Pima county, AZ 85654, USA~32.4227;-111.105~US-AZ~32.4227,-111.105~32.42270000~-111.10500000~85654~Pima county~~~4.1800003~2364~2729
+Rimrock~Rimrock~~Rimrock, Yavapai county, AZ 86335, USA~34.6425;-111.782~US-AZ~34.6425,-111.782~34.64250000~-111.78200000~86335~Yavapai county~~~4.4500003~1970~4676
+Rio Rico~Rio-Rico~~Rio Rico, Santa Cruz county, AZ 85648, USA~31.4863;-111.003~US-AZ~31.4863,-111.003~31.48630000~-111.00300000~85648~Santa Cruz county~~~4.35~2680~3749
+Rio Verde~Rio-Verde~~Rio Verde, Maricopa county, AZ 85263, USA~33.7225;-111.675~US-AZ~33.7225,-111.675~33.72250000~-111.67500000~85263~Maricopa county~~~4.4700003~1430~4588
+Rock Point~Rock-Point~~Rock Point, Apache county, AZ 86545, USA~36.7184;-109.623~US-AZ~36.7184,-109.623~36.71840000~-109.62300000~86545~Apache county~~~4.2000003~2039~4341
+Roll~Roll~~Roll, Yuma county, AZ 85347, USA~32.7496;-113.912~US-AZ~32.7496,-113.912~32.74960000~-113.91200000~85347~Yuma county~~~4.13~2804~4490
+Roosevelt~Roosevelt~~Roosevelt, Gila county, AZ 85545, USA~33.619;-111~US-AZ~33.619,-111~33.61900000~-111.00000000~85545~Gila county~~~4.33~2706~2047
+Round Rock~Round-Rock~~Round Rock, Apache county, AZ 86547, USA~36.5138;-109.469~US-AZ~36.5138,-109.469~36.51380000~-109.46900000~86547~Apache county~~~4.2200003~2557~3381
+Sacaton~Sacaton~~Sacaton, Pinal county, AZ 85247, USA~33.0769;-111.749~US-AZ~33.0769,-111.749~33.07690000~-111.74900000~85247~Pinal county~~~4.33~2327~2314
+Safford~Safford~~Safford, Graham county, AZ 85546, USA~32.8095;-109.716~US-AZ~32.8095,-109.716~32.80950000~-109.71600000~85546~Graham county~~~4.37~2105~4031
+Sahuarita~Sahuarita~~Sahuarita, Pima county, AZ 85629, USA~31.9521;-110.997~US-AZ~31.9521,-110.997~31.95210000~-110.99700000~85629~Pima county~~~4.3~1673~4200
+Saint David~Saint-David~~Saint David, Cochise county, AZ 85630, USA~31.9214;-110.234~US-AZ~31.9214,-110.234~31.92140000~-110.23400000~85630~Cochise county~~~4.25~1476~4394
+Saint Johns~Saint-Johns~~Saint Johns, Apache county, AZ 85936, USA~34.5063;-109.378~US-AZ~34.5063,-109.378~34.50630000~-109.37800000~85936~Apache county~~~4.2200003~1641~4097
+Saint Michaels~Saint-Michaels~~Saint Michaels, Apache county, AZ 86511, USA~35.8539;-109.299~US-AZ~35.8539,-109.299~35.85390000~-109.29900000~86511~Apache county~~~4.46~1951~4068
+Salome~Salome~~Salome, La Paz county, AZ 85348, USA~33.8465;-113.607~US-AZ~33.8465,-113.607~33.84650000~-113.60700000~85348~La Paz county~~~4.21~2669~4204
+San Carlos~San-Carlos~~San Carlos, Gila county, AZ 85550, USA~33.365;-110.458~US-AZ~33.365,-110.458~33.36500000~-110.45800000~85550~Gila county~~~4.2400002~1213~4018
+San Luis~San-Luis~~San Luis, Yuma county, AZ 85349, USA~32.4993;-114.782~US-AZ~32.4993,-114.782~32.49930000~-114.78200000~85349~Yuma county~~~4.3~1927~2162
+San Manuel~San-Manuel~~San Manuel, Pinal county, AZ 85631, USA~32.5929;-110.615~US-AZ~32.5929,-110.615~32.59290000~-110.61500000~85631~Pinal county~~~4.32~1941~4670
+San Simon~San-Simon~~San Simon, Cochise county, AZ 85632, USA~32.1776;-109.38~US-AZ~32.1776,-109.38~32.17760000~-109.38000000~85632~Cochise county~~~4.26~2677~2559
+Sanders~Sanders~~Sanders, Apache county, AZ 86512, USA~35.2063;-109.333~US-AZ~35.2063,-109.333~35.20630000~-109.33300000~86512~Apache county~~~4.28~1844~2151
+Sasabe~Sasabe~~Sasabe, Pima county, AZ 85633, USA~31.4866;-111.544~US-AZ~31.4866,-111.544~31.48660000~-111.54400000~85633~Pima county~~~4.29~1809~4377
+Scottsdale~Scottsdale~~Scottsdale, Maricopa county, AZ 85250, USA~33.5231;-111.907~US-AZ~33.5231,-111.907~33.52310000~-111.90700000~85250~Maricopa county~~~4.1800003~1046~3788
+Second Mesa~Second-Mesa~~Second Mesa, Navajo county, AZ 86043, USA~35.805;-110.492~US-AZ~35.805,-110.492~35.80500000~-110.49200000~86043~Navajo county~~~4.2200003~2172~2007
+Sedona~Sedona~~Sedona, Yavapai county, AZ 86336, USA~34.8404;-111.797~US-AZ~34.8404,-111.797~34.84040000~-111.79700000~86336~Yavapai county~~~4.25~1061~2621
+Seligman~Seligman~~Seligman, Yavapai county, AZ 86337, USA~35.3302;-112.875~US-AZ~35.3302,-112.875~35.33020000~-112.87500000~86337~Yavapai county~~~4.34~1902~3971
+Sells~Sells~~Sells, Pima county, AZ 85634, USA~31.91;-111.88~US-AZ~31.91,-111.88~31.91000000~-111.88000000~85634~Pima county~~~4.31~2763~3240
+Shonto~Shonto~~Shonto, Navajo county, AZ 86054, USA~36.5929;-110.657~US-AZ~36.5929,-110.657~36.59290000~-110.65700000~86054~Navajo county~~~4.21~2445~2426
+Show Low~Show-Low~~Show Low, Navajo county, AZ 85901, USA~34.2415;-110.077~US-AZ~34.2415,-110.077~34.24150000~-110.07700000~85901~Navajo county~~~4.4700003~2340~3106
+Sierra Vista~Sierra-Vista~~Sierra Vista, Cochise county, AZ 85635, USA~31.5286;-110.26~US-AZ~31.5286,-110.26~31.52860000~-110.26000000~85635~Cochise county~~~4.27~2058~4775
+Skull Valley~Skull-Valley~~Skull Valley, Yavapai county, AZ 86338, USA~34.5546;-112.711~US-AZ~34.5546,-112.711~34.55460000~-112.71100000~86338~Yavapai county~~~4.5~1921~2879
+Snowflake~Snowflake~~Snowflake, Navajo county, AZ 85937, USA~34.5109;-110.095~US-AZ~34.5109,-110.095~34.51090000~-110.09500000~85937~Navajo county~~~4.48~1525~4208
+Solomon~Solomon~~Solomon, Graham county, AZ 85551, USA~32.8169;-109.626~US-AZ~32.8169,-109.626~32.81690000~-109.62600000~85551~Graham county~~~4.44~1982~3973
+Somerton~Somerton~~Somerton, Yuma county, AZ 85350, USA~32.597;-114.691~US-AZ~32.597,-114.691~32.59700000~-114.69100000~85350~Yuma county~~~4.5~2548~3977
+Sonoita~Sonoita~~Sonoita, Santa Cruz county, AZ 85637, USA~31.6222;-110.706~US-AZ~31.6222,-110.706~31.62220000~-110.70600000~85637~Santa Cruz county~~~4.29~2369~4734
+Springerville~Springerville~~Springerville, Apache county, AZ 85938, USA~34.133;-109.28~US-AZ~34.133,-109.28~34.13300000~-109.28000000~85938~Apache county~~~4.13~1339~2635
+Stanfield~Stanfield~~Stanfield, Pinal county, AZ 85272, USA~32.9301;-111.976~US-AZ~32.9301,-111.976~32.93010000~-111.97600000~85272~Pinal county~~~4.1600003~2037~4540
+Sun City West~Sun-City-West~~Sun City West, Maricopa county, AZ 85375, USA~33.6618;-112.345~US-AZ~33.6618,-112.345~33.66180000~-112.34500000~85375~Maricopa county~~~4.13~2395~2848
+Sun City~Sun-City~~Sun City, Maricopa county, AZ 85351, USA~33.6048;-112.279~US-AZ~33.6048,-112.279~33.60480000~-112.27900000~85351~Maricopa county~~~4.2000003~1926~2995
+Sun Valley~Sun-Valley~~Sun Valley, Navajo county, AZ 86029, USA~34.9806;-110.057~US-AZ~34.9806,-110.057~34.98060000~-110.05700000~86029~Navajo county~~~4.34~2262~2475
+Supai~Supai~~Supai, Coconino county, AZ 86435, USA~36.1142;-112.523~US-AZ~36.1142,-112.523~36.11420000~-112.52300000~86435~Coconino county~~~4.38~1297~3006
+Superior~Superior~~Superior, Pinal county, AZ 85273, USA~33.2048;-111.17~US-AZ~33.2048,-111.17~33.20480000~-111.17000000~85273~Pinal county~~~4.19~1117~3752
+Surprise~Surprise~~Surprise, Maricopa county, AZ 85374, USA~33.6299;-112.35~US-AZ~33.6299,-112.35~33.62990000~-112.35000000~85374~Maricopa county~~~4.17~2272~2492
+Tacna~Tacna~~Tacna, Yuma county, AZ 85352, USA~32.7019;-113.967~US-AZ~32.7019,-113.967~32.70190000~-113.96700000~85352~Yuma county~~~4.17~1428~3294
+Taylor~Taylor~~Taylor, Navajo county, AZ 85939, USA~34.4585;-110.08~US-AZ~34.4585,-110.08~34.45850000~-110.08000000~85939~Navajo county~~~4.5~2938~3385
+Teec Nos Pos~Teec-Nos-Pos~~Teec Nos Pos, Apache county, AZ 86514, USA~36.7507;-109.364~US-AZ~36.7507,-109.364~36.75070000~-109.36400000~86514~Apache county~~~4.25~1381~3874
+Tempe~Tempe~~Tempe, Maricopa county, AZ 85280, USA~33.4068;-111.927~US-AZ~33.4068,-111.927~33.40680000~-111.92700000~85280~Maricopa county~~~4.2000003~2863~3414
+Temple Bar Marina~Temple-Bar-Marina~~Temple Bar Marina, Mohave county, AZ 86443, USA~36.0244;-114.298~US-AZ~36.0244,-114.298~36.02440000~-114.29800000~86443~Mohave county~~~4.46~1195~4740
+Thatcher~Thatcher~~Thatcher, Graham county, AZ 85552, USA~32.8307;-109.761~US-AZ~32.8307,-109.761~32.83070000~-109.76100000~85552~Graham county~~~4.21~2540~3713
+Tolleson~Tolleson~~Tolleson, Maricopa county, AZ 85353, USA~33.4136;-112.274~US-AZ~33.4136,-112.274~33.41360000~-112.27400000~85353~Maricopa county~~~4.4500003~1544~2384
+Tombstone~Tombstone~~Tombstone, Cochise county, AZ 85638, USA~31.7098;-110.064~US-AZ~31.7098,-110.064~31.70980000~-110.06400000~85638~Cochise county~~~4.33~2611~3485
+Tonalea~Tonalea~~Tonalea, Coconino county, AZ 86044, USA~35.9664;-110.877~US-AZ~35.9664,-110.877~35.96640000~-110.87700000~86044~Coconino county~~~4.2000003~1766~2960
+Tonopah~Tonopah~~Tonopah, Maricopa county, AZ 85354, USA~33.4753;-112.879~US-AZ~33.4753,-112.879~33.47530000~-112.87900000~85354~Maricopa county~~~4.1800003~1546~3879
+Tonto Basin~Tonto-Basin~~Tonto Basin, Gila county, AZ 85553, USA~34.0903;-111.171~US-AZ~34.0903,-111.171~34.09030000~-111.17100000~85553~Gila county~~~4.33~2276~2077
+Topawa~Topawa~~Topawa, Pima county, AZ 85639, USA~31.8119;-111.83~US-AZ~31.8119,-111.83~31.81190000~-111.83000000~85639~Pima county~~~4.4500003~2088~3332
+Topock~Topock~~Topock, Mohave county, AZ 86436, USA~34.7783;-114.484~US-AZ~34.7783,-114.484~34.77830000~-114.48400000~86436~Mohave county~~~4.4700003~1590~3138
+Tortilla Flat~Tortilla-Flat~~Tortilla Flat, Maricopa county, AZ 85290, USA~33.7366;-111.563~US-AZ~33.7366,-111.563~33.73660000~-111.56300000~85290~Maricopa county~~~4.27~2811~3577
+Tsaile~Tsaile~~Tsaile, Apache county, AZ 86556, USA~36.3263;-109.268~US-AZ~36.3263,-109.268~36.32630000~-109.26800000~86556~Apache county~~~4.1600003~1869~3665
+Tuba City~Tuba-City~~Tuba City, Coconino county, AZ 86045, USA~36.134;-111.242~US-AZ~36.134,-111.242~36.13400000~-111.24200000~86045~Coconino county~~~4.4700003~2982~2441
+Tubac~Tubac~~Tubac, Santa Cruz county, AZ 85646, USA~31.6091;-111.051~US-AZ~31.6091,-111.051~31.60910000~-111.05100000~85646~Santa Cruz county~~~4.27~1706~2474
+Tucson~Tucson~~Tucson, Pima county, AZ 85701, USA~32.2182;-110.972~US-AZ~32.2182,-110.972~32.21820000~-110.97200000~85701~Pima county~~~4.2000003~2106~3348
+Tumacacori~Tumacacori~~Tumacacori, Santa Cruz county, AZ 85640, USA~31.5969;-111.048~US-AZ~31.5969,-111.048~31.59690000~-111.04800000~85640~Santa Cruz county~~~4.3900003~2556~3859
+Vail~Vail~~Vail, Pima county, AZ 85641, USA~31.984;-110.689~US-AZ~31.984,-110.689~31.98400000~-110.68900000~85641~Pima county~~~4.3900003~1966~3176
+Valentine~Valentine~~Valentine, Mohave county, AZ 86437, USA~35.3843;-113.658~US-AZ~35.3843,-113.658~35.38430000~-113.65800000~86437~Mohave county~~~4.25~2340~3830
+Valley Farms~Valley-Farms~~Valley Farms, Pinal county, AZ 85291, USA~32.9831;-111.444~US-AZ~32.9831,-111.444~32.98310000~-111.44400000~85291~Pinal county~~~4.5~2704~4507
+Vernon~Vernon~~Vernon, Apache county, AZ 85940, USA~34.2559;-109.693~US-AZ~34.2559,-109.693~34.25590000~-109.69300000~85940~Apache county~~~4.26~1357~3792
+Waddell~Waddell~~Waddell, Maricopa county, AZ 85355, USA~33.5682;-112.436~US-AZ~33.5682,-112.436~33.56820000~-112.43600000~85355~Maricopa county~~~4.3~1289~4353
+Wellton~Wellton~~Wellton, Yuma county, AZ 85356, USA~32.6859;-114.089~US-AZ~32.6859,-114.089~32.68590000~-114.08900000~85356~Yuma county~~~4.27~2946~2779
+Wenden~Wenden~~Wenden, La Paz county, AZ 85357, USA~33.8215;-113.539~US-AZ~33.8215,-113.539~33.82150000~-113.53900000~85357~La Paz county~~~4.25~1957~4162
+White Mountain Lake~White-Mountain-Lake~~White Mountain Lake, Navajo county, AZ 85912, USA~34.3223;-110.076~US-AZ~34.3223,-110.076~34.32230000~-110.07600000~85912~Navajo county~~~4.1600003~2108~3225
+Whiteriver~Whiteriver~~Whiteriver, Navajo county, AZ 85941, USA~33.8048;-109.996~US-AZ~33.8048,-109.996~33.80480000~-109.99600000~85941~Navajo county~~~4.26~2226~4600
+Wickenburg~Wickenburg~~Wickenburg, Maricopa county, AZ 85358, USA~33.9631;-112.747~US-AZ~33.9631,-112.747~33.96310000~-112.74700000~85358~Maricopa county~~~4.21~1949~3002
+Wikieup~Wikieup~~Wikieup, Mohave county, AZ 85360, USA~34.6552;-113.755~US-AZ~34.6552,-113.755~34.65520000~-113.75500000~85360~Mohave county~~~4.4~2348~3020
+Willcox~Willcox~~Willcox, Cochise county, AZ 85643, USA~32.3617;-109.887~US-AZ~32.3617,-109.887~32.36170000~-109.88700000~85643~Cochise county~~~4.4~2709~4001
+Williams~Williams~~Williams, Coconino county, AZ 86046, USA~35.2897;-112.162~US-AZ~35.2897,-112.162~35.28970000~-112.16200000~86046~Coconino county~~~4.2000003~2683~2616
+Willow Beach~Willow-Beach~~Willow Beach, Mohave county, AZ 86445, USA~35.7318;-114.379~US-AZ~35.7318,-114.379~35.73180000~-114.37900000~86445~Mohave county~~~4.36~2826~2529
+Window Rock~Window-Rock~~Window Rock, Apache county, AZ 86515, USA~35.661;-109.102~US-AZ~35.661,-109.102~35.66100000~-109.10200000~86515~Apache county~~~4.34~2740~2437
+Winkelman~Winkelman~~Winkelman, Gila county, AZ 85292, USA~32.9356;-110.739~US-AZ~32.9356,-110.739~32.93560000~-110.73900000~85292~Gila county~~~4.34~1838~4468
+Winslow~Winslow~~Winslow, Navajo county, AZ 86047, USA~35.2754;-110.316~US-AZ~35.2754,-110.316~35.27540000~-110.31600000~86047~Navajo county~~~4.1600003~1428~2924
+Wittmann~Wittmann~~Wittmann, Maricopa county, AZ 85361, USA~33.753;-112.511~US-AZ~33.753,-112.511~33.75300000~-112.51100000~85361~Maricopa county~~~4.35~1795~3698
+Woodruff~Woodruff~~Woodruff, Navajo county, AZ 85942, USA~34.7821;-110.045~US-AZ~34.7821,-110.045~34.78210000~-110.04500000~85942~Navajo county~~~4.19~2099~3357
+Yarnell~Yarnell~~Yarnell, Yavapai county, AZ 85362, USA~34.2397;-112.753~US-AZ~34.2397,-112.753~34.23970000~-112.75300000~85362~Yavapai county~~~4.5~2777~4564
+Young~Young~~Young, Gila county, AZ 85554, USA~34.0893;-111.17~US-AZ~34.0893,-111.17~34.08930000~-111.17000000~85554~Gila county~~~4.4~2080~2794
+Youngtown~Youngtown~~Youngtown, Maricopa county, AZ 85363, USA~33.5928;-112.302~US-AZ~33.5928,-112.302~33.59280000~-112.30200000~85363~Maricopa county~~~4.4100003~2569~2058
+Yucca~Yucca~~Yucca, Mohave county, AZ 86438, USA~34.8752;-114.152~US-AZ~34.8752,-114.152~34.87520000~-114.15200000~86438~Mohave county~~~4.36~2311~3970
+Yuma~Yuma~~Yuma, Yuma county, AZ 85364, USA~32.7011;-114.647~US-AZ~32.7011,-114.647~32.70110000~-114.64700000~85364~Yuma county~~~4.3~2083~2685

@@ -1,7 +1,6 @@
 package com.fdt.doorgen.generator;
 
 import java.io.File;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,8 +12,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import javax.annotation.PostConstruct;
 
@@ -32,8 +29,11 @@ import org.springframework.context.annotation.PropertySource;
 import com.fdt.doorgen.generator.categories.Category;
 import com.fdt.doorgen.generator.categories.CategoryConfigInfo;
 import com.fdt.doorgen.generator.categories.Item;
+import com.fdt.doorgen.generator.categories.Tag;
+import com.fdt.doorgen.generator.categories.Tag.CategoryParentType;
 import com.fdt.doorgen.generator.dao.CategoryDao;
 import com.fdt.doorgen.generator.dao.CategoryItemDao;
+import com.fdt.doorgen.generator.dao.CategoryTagDao;
 import com.fdt.doorgen.generator.xmlparser.CustomParser;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.utils.Utils;
@@ -60,6 +60,9 @@ public class DoorgenGeneratorRunner {
 	private static final String OUTPUT_FOLDER_LABEL = "output_folder";
 	private static final String MENU_FILE_LABEL = "menu_file";
 	private static final String CATEGORIES_FOLDER_LABEL = "categories_folder";
+	
+	private static final String PATH_2_FILE_W_DEF_TAGS_4_CATS_LABEL = "path_2_file_w_def_tags_4_cat";
+	private static final String PATH_2_FILE_W_DEF_TAGS_4_ITEMS_LABEL = "path_2_file_w_def_tags_4_items";
 
 	public static final String CONNECTION_STRING_LABEL = "connection_string";
 
@@ -72,16 +75,29 @@ public class DoorgenGeneratorRunner {
 	private File categoriesFolder;
 
 	private File mainTmplFile;
+	
+	private File path2DefTags4Cats;
+	
+	private File path2DefTags4Items;
 
 	private HashMap<Integer,List<String>> preTitles;
 	
 	private HashMap<String,String> catUrls;
 
-	private String titleTmpl;
-
-	private String metaDescrTmpl;
-
-	private String metaKeyWordsTmpl;
+	
+	//categories
+	private String titleTmplCats;
+	private String metaDescrTmplCats;
+	private String metaKeyWordsTmplCats;
+	
+	//items
+	private String titleTmplItems;
+	private String metaDescrTmplItems;
+	private String metaKeyWordsTmplItems;
+	
+	private List<Tag> defTags4Cats;
+	
+	private List<Tag> defTags4Items;
 
 	private CategoryConfigInfo catConfig;
 
@@ -98,6 +114,7 @@ public class DoorgenGeneratorRunner {
 
 	private CategoryDao categoryDao;
 	private CategoryItemDao categoryItemDao;
+	private CategoryTagDao categoryTagDao;
 
 	//---------------------REPLACE_LABELS------------------------------------
 	private static final String TOP_MENU_LABEL="\\[TOP_MENU\\]";
@@ -144,6 +161,10 @@ public class DoorgenGeneratorRunner {
 		this.mainTmplFile = new File(this.outputFolder, "tmpl_main.html");
 
 		this.categoriesFolder = new File(ConfigManager.getInstance().getProperty(CATEGORIES_FOLDER_LABEL));
+		
+		this.path2DefTags4Cats = new File(ConfigManager.getInstance().getProperty(PATH_2_FILE_W_DEF_TAGS_4_CATS_LABEL));
+		
+		this.path2DefTags4Items = new File(ConfigManager.getInstance().getProperty(PATH_2_FILE_W_DEF_TAGS_4_ITEMS_LABEL));
 
 		catConfig = new CategoryConfigInfo(ConfigManager.getInstance());
 
@@ -151,18 +172,26 @@ public class DoorgenGeneratorRunner {
 
 		categoryDao = new CategoryDao(connection);
 		categoryItemDao = new CategoryItemDao(connection);
+		categoryTagDao = new CategoryTagDao(connection);
 	}
 
 	private void executeGenerator() throws Exception{
 		try{
 			generateSiteStructure();
-			//Загрузаем темплейты для тайтла, дискрипшна и кейвордов
-			loadPageMetaData(categoriesFolder.getParentFile());
+			//Загрузаем темплейты для тайтла, дискрипшна и кейвордов для categories
+			loadPageMetaData4Cats(categoriesFolder.getParentFile());
+			//Загрузаем темплейты для тайтла, дискрипшна и кейвордов для items
+			loadPageMetaData4Items(categoriesFolder.getParentFile());
 			//Загружаем данные для претайтлов
 			preTitles = Utils.loadPreTtls(categoriesFolder.getParentFile(), PRETITLES_FILE_NAMES_REGEXP);
 			//Загружаем список урлов для категорий
 			loadCatUrls(categoriesFolder.getParentFile());
-			//TODO Load categories and their configs
+			//load default tags categories
+			defTags4Cats = Tag.loadTags(new File(categoriesFolder.getParentFile(),path2DefTags4Cats.getName()), 0, CategoryParentType.CATEGORY, "", preTitles);
+			//load default tags categories
+			defTags4Items = Tag.loadTags(new File(categoriesFolder.getParentFile(),path2DefTags4Items.getName()), 0, CategoryParentType.ITEM, "", preTitles);
+			
+			//TODO Load categories, items and their configs
 			//TODO Uncomment
 			loadAndGenerateCategoriesContent();
 
@@ -182,52 +211,79 @@ public class DoorgenGeneratorRunner {
 		//Clean data base
 		categoryDao.deleteAllCategories();
 		categoryItemDao.deleteAllItems();
+		categoryTagDao.deleteAllTags();
+		
+		//TODO Load default tags
+		
 
 		//Load data structure
 		for(File catFolder : this.categoriesFolder.listFiles()){
 			if(catFolder.isDirectory()){
-				//TODO Загружаем тэги, которые будут отображаться внизу страницы категорий
-				List<Item> tagsItems = loadTagItems(catFolder);
 				//TODO Load category
-				Category category = Category.parseCategory(catFolder, tagsItems, titleTmpl, metaDescrTmpl, metaKeyWordsTmpl, preTitles, catUrls);
-
-				categoriesList.put(category, tagsItems);
+				Category category = Category.parseCategory(catFolder, titleTmplCats, metaDescrTmplCats, metaKeyWordsTmplCats, preTitles, catUrls);
+							
+				//load items and save them whit category
+				categoriesList.put(category, loadCatItems(catFolder));
 			}
 		}
 
 		int[] addedElements = null;
 		//Save data to DB
 		addedElements = categoryDao.insertCategories(categoriesList.keySet());
+		
+		int catIdx = 0;
+		for(Category cat : categoriesList.keySet()){
+			categoryTagDao.insertTags(cat.getTags(), addedElements[catIdx++]);
+		}
+		
 		addedElements = categoryItemDao.insertItems(categoriesList);
+		
+		addedElements = categoryTagDao.insertTags(defTags4Cats,0);
+		addedElements = categoryTagDao.insertTags(defTags4Items,0);
 
 		//TODO Make changes in index.php
 
 	}
 
-	private List<Item> loadTagItems(File catFolder){
-		List<Item> catItems = new ArrayList<Item>();
+	//load catagery items
+	private List<Item> loadCatItems(File catFolder){
+		List<Item> items = new ArrayList<Item>();
 
-		File tagFile = new File(catFolder, "tags.txt");
+		File itemFile = new File(catFolder, "items.txt");
+		
+		String itemContentTmpl = Utils.loadFileAsString(new File(catFolder.getParentFile().getParentFile(),"items_main_tmpl.txt"));
 
-		if(tagFile.exists()){
+		if(itemFile.exists() && itemFile.isFile()){
 
-			List<String> keys = Utils.loadFileAsStrList(new File(catFolder, "tags.txt"));
+			List<String> itemLst = Utils.loadFileAsStrList(new File(catFolder, "items.txt"));
 
-			for(String key : keys){
-				catItems.add(Item.parseItem(key));
+			for(String itemStr : itemLst){
+				Item parcedItem = Item.parseItem(itemStr);
+				parcedItem.setText_tmpl(itemContentTmpl);
+				parcedItem.setText(Utils.synonymizeText(Utils.fillTemplate(itemContentTmpl, "", preTitles, DoorgenGeneratorRunner.PRETITLES_REGEXP)));
+				items.add(parcedItem);
 			}
 		}
 
-		return catItems;
+		return items;
 	}
 
-	private void loadPageMetaData(File mainFolder){
+	private void loadPageMetaData4Cats(File mainFolder){
 
-		List<String> keys = Utils.loadFileAsStrList(new File(mainFolder, "metacategories.txt"));
+		List<String> keys = Utils.loadFileAsStrList(new File(mainFolder, "metacategories_categories.txt"), true);
 
-		titleTmpl = keys.get(0);
-		metaDescrTmpl = keys.get(1);
-		metaKeyWordsTmpl = keys.get(2);
+		titleTmplCats = keys.get(0);
+		metaDescrTmplCats = keys.get(1);
+		metaKeyWordsTmplCats = keys.get(2);
+	}
+	
+	private void loadPageMetaData4Items(File mainFolder){
+
+		List<String> keys = Utils.loadFileAsStrList(new File(mainFolder, "metacategories_items.txt"), true);
+
+		titleTmplItems = keys.get(0);
+		metaDescrTmplItems = keys.get(1);
+		metaKeyWordsTmplItems = keys.get(2);
 	}
 
 	private void loadCatUrls(File mainFolder){

@@ -7,4 +7,5 @@ Disallow: /webstat/
 Disallow: /app/
 Disallow: /menu_map/
 Disallow: *.html
-Host: usacashadvanceonlinefast.com
+Host: essayboss.org
+Sitemap: http://essayboss.org/sitemap.xml

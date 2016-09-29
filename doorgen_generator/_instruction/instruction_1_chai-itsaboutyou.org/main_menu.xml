@@ -32,6 +32,15 @@
 			<tmpl_page_label></tmpl_page_label>
 		</menu_item>
 		<menu_item>
+			<label>Terms of Use</label>
+			<href>terms-of-use</href>
+			<file>./menu_pages/tmpl_terms_of_use.html</file>
+			<page_title>TERMSOFUSE_LIST_PAGE_TITLE</page_title>
+			<page_meta_description>TERMSOFUSE_LIST_META_DESCRIPTION</page_meta_description>
+			<page_meta_keywords>TERMSOFUSE_LIST_META_KEYWORDS</page_meta_keywords>
+			<tmpl_page_label></tmpl_page_label>
+		</menu_item>
+		<!-- <menu_item>
 			<label>Lending Policy</label>
 			<href>policy</href>
 			<style_class>menu_style_4</style_class>
@@ -61,8 +70,10 @@
 			<page_meta_keywords>APPLY_META_KEYWORDS</page_meta_keywords>
 			<tmpl_page_label></tmpl_page_label>
 		</menu_item>
+		 -->
 	</header>
 	<footer>
+		<!-- 
 		<menu_item>
 			<label>Disclaimer</label>
 			<href>disclaimer</href>
@@ -117,5 +128,6 @@
 			<page_meta_keywords>MONEYBACKGUARANTEE_LIST_META_KEYWORDS</page_meta_keywords>
 			<tmpl_page_label></tmpl_page_label>
 		</menu_item>
+		 -->
 	</footer>
 </menu>

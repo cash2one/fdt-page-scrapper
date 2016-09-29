@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -17,6 +18,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 import java.util.regex.Matcher;
@@ -261,5 +263,48 @@ public class Utils {
 		text = text.replaceAll("\r\n", "</br>\r\n");
 
 		return text;
+	}
+	
+
+	public static String fillTemplate(String template, String keyWord, HashMap<Integer,List<String>> preTitles, String PRETITLES_REGEXP){
+
+		//TODO Fill template
+		String output = template.replaceAll("\\[keyword\\]", keyWord);
+
+		for(int idx : preTitles.keySet()){
+			int prettlLstSz = preTitles.get(idx).size();
+			output = output.replaceAll("\\["+ PRETITLES_REGEXP + idx + "\\]", preTitles.get(idx).get(rnd.nextInt(prettlLstSz)));
+		}
+
+		return output;
+	}
+	
+	public static HashMap<Integer,List<String>> loadPreTtls(File pretitlesFolder, final String PRETITLES_FILE_NAMES_REGEXP){
+
+		HashMap<Integer,List<String>> preTitles = new HashMap<Integer,List<String>>();
+		
+		FilenameFilter flNmFilter = new FilenameFilter() {
+
+			@Override
+			public boolean accept(File dir, String name) {
+				return new File(dir,name).isFile() && name.matches(PRETITLES_FILE_NAMES_REGEXP);
+			}
+		};
+
+		for(File preTtlFl : pretitlesFolder.listFiles(flNmFilter)){
+			preTitles.put(getFileIdx(preTtlFl.getName(), PRETITLES_FILE_NAMES_REGEXP), Utils.loadFileAsStrList(preTtlFl));
+		}
+
+		return preTitles;
+	}
+	
+
+	private static int getFileIdx(String fileName, String PRETITLES_FILE_NAMES_REGEXP)
+	{
+		Pattern ptrn = Pattern.compile(PRETITLES_FILE_NAMES_REGEXP);
+		Matcher m = ptrn.matcher(fileName); 
+		m.find();
+		
+		return Integer.valueOf(m.group(1));
 	}
 }

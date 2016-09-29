@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 
 import com.fdt.doorgen.generator.categories.Category;
 import com.fdt.doorgen.generator.categories.Item;
+import com.fdt.doorgen.generator.categories.Tag;
 import com.fdt.doorgen.key.pooler.dao.DaoCommon;
 
 public class CategoryItemDao extends DaoCommon{
@@ -53,7 +54,7 @@ public class CategoryItemDao extends DaoCommon{
 		int[] result = null;
 		try {
 			prprStatement = connection.prepareStatement(""
-					+ " INSERT INTO item (category_id, item_name, item_name_latin, geo_placename, geo_position, geo_category, ICBM, lat, lng, zip_code, country, tmpl_text, generated_text, ratingCount, reviewCount, voteCount, upd_flg, post_dt, upd_dt) "
+					+ " INSERT INTO item (category_id, item_name, item_name_latin, geo_placename, geo_position, geo_category, ICBM, lat, lng, zip_code, country, text, text_tmpl, ratingCount, reviewCount, voteCount, upd_flg, post_dt, upd_dt) "
 					+ " SELECT ct.category_id,  ?, ?, ?, ?, ?, ?,  ?, ?,  ?, ?,  ?, ?,  ?, ?, ?,  ?,  now(), now() FROM category ct WHERE ct.category_name = ? ");
 
 			for (Category category : categoriesList.keySet()) {
@@ -72,8 +73,8 @@ public class CategoryItemDao extends DaoCommon{
 					prprStatement.setString(9, item.getZip_code());
 					prprStatement.setString(10, item.getCountry());
 
-					prprStatement.setString(11, item.getTmpl_text());
-					prprStatement.setString(12, item.getGenerated_text());
+					prprStatement.setString(11, item.getText());
+					prprStatement.setString(12, item.getText_tmpl());
 					
 					prprStatement.setDouble(13, item.getRatingCount());
 					prprStatement.setInt(14,item.getReviewCount());
