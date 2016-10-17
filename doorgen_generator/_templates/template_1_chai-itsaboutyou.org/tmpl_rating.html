@@ -1,13 +1,15 @@
 <script type="text/javascript">
 $(function(){
-	$('.toggle-list .toggle-content').load('/rating',null,function(){$('.toggle-list .toggle-content').hide()});
+	$('.toggle-list .toggle-content').hide();
 });
  </script>
 <div class="toggle-block">
 <ul class="toggle-list" style="list-style: outside none none;">
 	<li class="" onclick="if($('.toggle-list > li').attr('class') == 'active'){$('.toggle-list > li').removeClass('active');$('.toggle-list > li > .toggle-content').hide();}else{$('.toggle-list > li').addClass('active');$('.toggle-list > li > .toggle-content').show();}">
 	<div class="toggle-link"><h3>See all reviews here</h3></div>
-	<div class="toggle-content"></div>
+	<div class="toggle-content">
+	[RATING_FROM_FILE]
+	</div>
 	</li>
 <ul>
 </div>

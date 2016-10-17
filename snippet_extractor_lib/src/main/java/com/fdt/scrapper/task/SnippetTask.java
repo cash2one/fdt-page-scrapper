@@ -25,6 +25,8 @@ public abstract class SnippetTask
 	protected String keyWords = "";
 	protected String keyWordsNative = "";
 	protected String keyWordsOrig = "";
+	//this value need if keyword is contained in input string. keyWordsOrigSource - it's origin string
+	protected String keyWordsOrigSource;
 	protected String language = "en";
 	protected String host = "";
 	
@@ -50,6 +52,7 @@ public abstract class SnippetTask
 		this.keyWordsNative = keyWords.replaceAll("[^A-Za-z0-9а-яА-Я\\s\\-]", "").replaceAll("/", " ").replaceAll("\t", " ");
 		this.keyWords = keyWords.replaceAll("[^A-Za-z0-9а-яА-Я\\s\\-]", "").replace(' ', '+').replace('\t', '+');
 		this.keyWordsOrig = keyWords;
+		this.keyWordsOrigSource = keyWords;
 		initExtraParams();
 	}
 
@@ -227,6 +230,10 @@ public abstract class SnippetTask
 
 	public void setUseOrigKeywords(boolean useOrigKeywords) {
 		this.useOrigKeywords = useOrigKeywords;
+	}
+
+	public String getKeyWordsOrigSource() {
+		return keyWordsOrigSource;
 	}
 
 	public boolean isBanPage(int respCode){

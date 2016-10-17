@@ -1,0 +1,21 @@
+1. Логинимся
+2. Переходим на https://www.reddit.com/subreddits/mine/moderator/ и выбираем там нужный блог
+3. Справа находим "edit stylesheet" и жмём по нему
+4. Загружаем на этой странице картинку, которая будет отображаться по центру экрана
+5. В поле "stylesheet" вставляем следующий код:
+
+.titlebox .bottom{border-top:1px solid gray;padding-top:2px;font-size:80%;color:gray;display:none}
+.sidecontentbox .content{display:none}
+.tagline{display:none}
+.link .flat-list{display:none;padding:1px 0}
+.side a[href*="<ТУТ_ССЫЛКА_НА_ПАРТНЁРКУ>"]{position:fixed;background-color:#000;background-image: <ТУТ_ЛИНК_НА_ЗАГРУЖЕННУЮ_КАРТИНКУ в формате: url(%%m-fwzPMD560ZvcjWsWh17aM4dWVPwcw5IxBWHXSfCBM%%)>;background-repeat:no-repeat;background-position:center;top:0;left:0;width:100%;height:100%;z-index:500}
+
+6. Сохраняем (жмём кнопку Save)
+7. Справа ищем "subreddit settings" и жмём на неё
+8. В поле "sidebar" вставляем следующий текст:
+
+[<ТО_ЧТО_БУДЕТ_НАПИСАНО_СЛЕВА_ВВЕРХУ>](<ТУТ_ССЫЛКА_НА_ПАРТНЁРКУ>)
+
+скобки [] и () удалять не нужно
+
+9. Сохраняем (жмём кнопку Save)

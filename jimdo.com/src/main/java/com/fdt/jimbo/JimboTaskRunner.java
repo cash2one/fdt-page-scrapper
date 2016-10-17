@@ -43,8 +43,11 @@ import com.fdt.utils.Utils;
  */
 @Configuration
 @EnableAutoConfiguration
+
 @ComponentScan(basePackages = "com.fdt")
+
 @PropertySource("classpath:config.ini")
+@PropertySource(value="file:${config.file}",ignoreResourceNotFound = true)
 public class JimboTaskRunner 
 {
 	private static final Logger log = Logger.getLogger(JimboTaskRunner.class);

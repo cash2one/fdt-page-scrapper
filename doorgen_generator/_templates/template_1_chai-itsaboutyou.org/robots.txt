@@ -11,4 +11,4 @@ Disallow: /menu_pages/
 
 Disallow: *.html
 Host: chai-itsaboutyou.org
-Sitemap: http://chai-itsaboutyou.org/sitemap.xml
+Sitemap: https://chai-itsaboutyou.org/sitemap.xml

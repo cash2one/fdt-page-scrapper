@@ -804,6 +804,7 @@ $template=preg_replace("/\[CITY_PLACENAME\]/", $page_meta_placename, $template);
 $template=preg_replace("/\[CITY_PPOSITION\]/", $page_meta_position, $template);
 $template=preg_replace("/\[CITY_REGION\]/", $page_meta_region, $template);
 $template=preg_replace("/\[META_ICBM\]/", $page_meta_icbm, $template);
+$template=preg_replace("/\[META_ROBOTS\]/", $page_meta_robots, $template);
 
 $template=preg_replace("/\[STATE_NAME\]/", $state_name, $template);
 $template=preg_replace("/\[CATEGORY_NAME\]/", $state_name, $template);
@@ -823,7 +824,7 @@ $template=preg_replace("/\[COUNTRY\]/", $country, $template);
 $template=preg_replace("/\[CLOUDS\]/", $clouds, $template);
 $template=preg_replace("/\[CITY_COUNT\]/", $state_city_count, $template);
 
-$template=preg_replace("/\[CANONICAL_LINK\]/", "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"], $template);
+$template=preg_replace("/\[CANONICAL_LINK\]/", "https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"], $template);
 
 $template=preg_replace("/\[SITE_NAME\]/", SITE_NAME, $template);
 
@@ -838,6 +839,9 @@ $template=preg_replace("/\[PROMO_BUTTON\]/", $promo_button , $template);
 
 $rating_tmpl= file_get_contents("tmpl_rating.html");
 $template=preg_replace("/\[RATING\]/", $rating_tmpl , $template);
+
+$rating_content= file_get_contents("rating");
+$template=preg_replace("/\[RATING_FROM_FILE\]/", $rating_content , $template);
 
 $order_button = file_get_contents("tmpl_order_now_button.html");
 $template=preg_replace("/\[ORDER_BUTTON\]/", $order_button , $template);

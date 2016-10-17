@@ -41,11 +41,15 @@ public class SiteMapGenerator
 
 			File utlsFile = new File("txt/urls.txt");
 			File outputFile = new File("sitemap_gen.xml");
+			File articleFile = null;
 			
 			int minUrlsCnt = 900;
 			int maxUrlsCnt = 1000;
 
 			switch(args.length) {
+			case 5:{
+				articleFile = new File(args[4]);
+			}
 			case 4:{
 				outputFile = new File(args[3]);
 			}
@@ -66,6 +70,13 @@ public class SiteMapGenerator
 			HashSet<String> urlsSet = new HashSet<String>(urls);
 			urls = new ArrayList<String>(urlsSet);
 			
+			List<String> articleUrls = new ArrayList<String>();
+			
+			if(articleFile != null && articleFile.exists())
+			{
+				articleUrls = Utils.loadFileAsStrList(articleFile);
+			}
+			
 			Collections.shuffle(urls);
 
 			//get sitemap
@@ -76,6 +87,17 @@ public class SiteMapGenerator
 
 			strBuf.append(XML_HEADER);
 
+			//Load all article files
+			for(int i = 0; i < articleUrls.size(); i++){
+				strBuf.append(
+						String.format(
+								XML_BOTY_TMPL, 
+								articleUrls.get(i),
+								lastModDate
+								)
+						);
+			}
+			
 			for(int i = 0; i < rndCount && urls.size() > i ; i++){
 				strBuf.append(
 						String.format(

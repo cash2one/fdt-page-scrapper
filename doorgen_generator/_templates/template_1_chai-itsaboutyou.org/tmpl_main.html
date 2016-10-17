@@ -7,94 +7,83 @@
 [CITY_PPOSITION]
 [CITY_REGION]
 [META_ICBM]
+[META_ROBOTS]
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="/files/style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/files/extra.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/files/mapcanvas.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/files/prm_style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/files/prm_style_2.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/files/TaSjHbdMC.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/files/iNZVdcfESv.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/files/c01gPImfQ.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/files/lQAMfcEuCnVU.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/files/DrdivTKnt.css" type="text/css" media="screen">
 <link rel="canonical" href="[CANONICAL_LINK]">
 <script src="/app/jquery.js"></script>
 <script async src="//cdn-library.su/plusonet/lib/plusonet-3.8.min.js"></script>
-<script>
-"use strict";
-(window.plusonet = window.plusonet || []).push(function(){
-
-  plusonet.sl.name           = "universal-7"; // Название шаблона
-  plusonet.sl.coverage       = "site";        // охват разблокировки замков
-  plusonet.sl.time.trigShare = 86400 * 30;    // Сколько времени не будет появляться социальный замок (указывать в секундах)
-  plusonet.sl.time.trigTimer = 86400 * 7;     // Сколько времени не будет появляться социальный замок после окончания таймера
-  plusonet.sl.time.trigCross = 86400 * 1;     // Сколько времени не будет появляться социальный замок после закрытия на крестик
-  
-  plusonet.sl.callback       = "";            // код, который вызывается после успешного расшаривания
-  plusonet.sl.html           = "<style> .plusonet-tpl-sl-universal-7 { text-align: center; margin: 5px 5px 20px; } .plusonet-tpl-sl-universal-7 .plusonet-modal { position: relative; display: inline-block; max-width: 675px; width: 80%; min-width: 200px; box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3); color: #000; text-align: left; animation: fade .8s; background-color: #136cbc; padding: 60px 10px 10px; } .plusonet-tpl-sl-universal-7 .plusonet-img { position: absolute; top: 7px; left: 50%; margin-left: -40px; background: url('data:image/png;base64,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') no-repeat center; height: 59px; width: 87px; } .plusonet-tpl-sl-universal-7 .plusonet-text { padding: 10px; font-size: 12px; text-align: center; color: #fff; } .plusonet-tpl-sl-universal-7 .plusonet-header { font-size: 20px; font-weight: bold; } .plusonet-tpl-sl-universal-7 .plusonet-paragraph { margin: 10px 0; } .plusonet-tpl-sl-universal-7 .plusonet-generator-sb { text-align: center; padding:10px; background: #4c75bc; border-radius: 10px; border: 1px solid #456bac; } </style><div class=\"plusonet-tpl-sl-universal-7 plusonet-css-global\"><div class=\"plusonet-modal\" style=\"background-color: rgb(19, 108, 188);\"><div class=\"plusonet-img\"></div><div class=\"plusonet-text\"><div class=\"plusonet-header\" style=\"font-family: Verdana, Geneva, sans-serif; font-size: 20px; font-weight: 700; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: center;\">REAL VISITORS - NO BOTS!</div><div class=\"plusonet-paragraph generator-elem-active\" style=\"font-family: Verdana, Geneva, sans-serif; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: center;\">KNOCK! KNOCK! WILL YOU UNLOCK ? SHARE THIS PAGE FOR APPROVE!</div></div><div class=\"plusonet-generator-sb\"><style>.plusonet-btn-counter-5-r50 { display: inline-block; font-size: 0; } .plusonet-btn-counter-5-r50 .plusonet-social-elem { display: inline-block; margin: 2px; } .plusonet-btn-counter-5-r50 .plusonet-background { width: 105px; padding-top: 3px; } .plusonet-btn-counter-5-r50 .plusonet-social-url { cursor: pointer; height: 100%; width: 100%; } .plusonet-btn-counter-5-r50 .plusonet-ico { position: relative; width: 50px; height: 50px; border-radius: 100%; margin: 3px auto 0; } .plusonet-btn-counter-5-r50 .plusonet-name { font-size: 16px; color: #fff; text-align: center; } .plusonet-btn-counter-5-r50 .plusonet-social-count { font-size: 16px; color: #fff; text-align: center; padding-bottom: 3px; } .plusonet-btn-counter-5-r50 .plusonet-box { position: absolute; top: 30%; left: 30%; right: 30%; bottom: 30%; } .plusonet-btn-counter-5-r50 .plusonet-svg { width: 100%; height: 100%; fill: #fff; } .plusonet-btn-counter-5-r50 .plusonet-vk .plusonet-background { background: #4c75a3; } .plusonet-btn-counter-5-r50 .plusonet-vk .plusonet-ico { background: #456a93; } .plusonet-btn-counter-5-r50 .plusonet-ok .plusonet-background { background: #f59038; } .plusonet-btn-counter-5-r50 .plusonet-ok .plusonet-ico { background: #dd8233; } .plusonet-btn-counter-5-r50 .plusonet-fb .plusonet-background { background: #3a579a; } .plusonet-btn-counter-5-r50 .plusonet-fb .plusonet-ico { background: #344e8b; } .plusonet-btn-counter-5-r50 .plusonet-tw .plusonet-background { background: #00abf0; } .plusonet-btn-counter-5-r50 .plusonet-tw .plusonet-ico { background: #009ad8; } .plusonet-btn-counter-5-r50 .plusonet-gp .plusonet-background { background: #df4a32; } .plusonet-btn-counter-5-r50 .plusonet-gp .plusonet-ico { background: #c9432d; } .plusonet-btn-counter-5-r50 .plusonet-yt .plusonet-background { background: #df4a32; } .plusonet-btn-counter-5-r50 .plusonet-yt .plusonet-ico { background: #E93131; } .plusonet-btn-counter-5-r50 .plusonet-mm .plusonet-background { background: #f59038; } .plusonet-btn-counter-5-r50 .plusonet-mm .plusonet-ico { background: #dd8233; }</style><div class=\"plusonet-btn-counter-5-r50\"><div class=\"plusonet-social-elem plusonet-fb\" data-elem=\"btn\" data-network=\"fb\" data-action=\"share\"><div class=\"plusonet-social-url\"><div class=\"plusonet-background\"><div class=\"plusonet-ico\"><div class=\"plusonet-box\"><svg class=\"plusonet-svg\" viewBox=\"-269 392.2 56.7 56.7\"><path d=\"M-227.5,410.6h-9v-5.9c0-2.2,1.5-2.7,2.5-2.7c1,0,6.3,0,6.3,0v-9.7l-8.7,0c-9.7,0-11.9,7.2-11.9,11.9v6.5h-5.6v10h5.6 c0,12.8,0,28.3,0,28.3h11.8c0,0,0-15.6,0-28.3h7.9L-227.5,410.6z\"></path></svg></div></div><div class=\"plusonet-name\">Facebook</div><div class=\"plusonet-social-count\">0</div></div></div></div><div class=\"plusonet-none\"></div><div class=\"plusonet-social-elem plusonet-tw\" data-elem=\"btn\" data-network=\"tw\" data-action=\"share\"><div class=\"plusonet-social-url\"><div class=\"plusonet-background\"><div class=\"plusonet-ico\"><div class=\"plusonet-box\"><svg class=\"plusonet-svg\" viewBox=\"-269 392.2 56.7 56.7\"><path d=\"M-212.3,403c-2.1,0.9-4.3,1.6-6.7,1.8c2.4-1.4,4.2-3.7,5.1-6.4c-2.2,1.3-4.7,2.3-7.4,2.8c-2.1-2.3-5.1-3.7-8.5-3.7 c-6.4,0-11.6,5.2-11.6,11.6c0,0.9,0.1,1.8,0.3,2.7c-9.7-0.5-18.2-5.1-24-12.2c-1,1.7-1.6,3.7-1.6,5.8c0,4,2.1,7.6,5.2,9.7 c-1.9-0.1-3.7-0.6-5.3-1.5c0,0,0,0.1,0,0.1c0,5.6,4,10.3,9.3,11.4c-1,0.3-2,0.4-3.1,0.4c-0.8,0-1.5-0.1-2.2-0.2 c1.5,4.6,5.8,8,10.9,8.1c-4,3.1-9,5-14.4,5c-0.9,0-1.9-0.1-2.8-0.2c5.1,3.3,11.3,5.2,17.8,5.2c21.4,0,33.1-17.7,33.1-33.1 c0-0.5,0-1,0-1.5C-215.8,407.3-213.9,405.3-212.3,403z\" class=\"\"></path></svg></div></div><div class=\"plusonet-name\">Twitter</div><div class=\"plusonet-social-count\">0</div></div></div></div><div class=\"plusonet-none\"></div><div class=\"plusonet-social-elem plusonet-gp\" data-elem=\"btn\" data-network=\"gp\" data-action=\"share\"><div class=\"plusonet-social-url\"><div class=\"plusonet-background\"><div class=\"plusonet-ico\"><div class=\"plusonet-box\"><svg class=\"plusonet-svg\" viewBox=\"0 0 32 32\"><path d=\"M19.81,0.76c0,0-6.997,0-9.393,0c-4.297,0-8.343,3.016-8.343,6.786c0,3.852,2.929,6.848,7.301,6.848 c0.305,0,0.6-0.069,0.89-0.09c-0.286,0.541-0.485,1.123-0.485,1.758c0,1.071,0.574,1.926,1.301,2.635 c-0.546,0-1.08,0.008-1.661,0.008C4.098,18.706,0,22.094,0,25.609c0,3.462,4.492,5.63,9.815,5.63c6.069,0,9.422-3.447,9.422-6.909 c0-2.775-0.82-4.439-3.351-6.234c-0.867-0.611-2.523-2.103-2.523-2.981c0-1.027,0.293-1.533,1.841-2.743 c1.583-1.237,2.706-2.714,2.706-4.741c0-2.409-1.036-5.349-3.052-5.349h3.429L19.81,0.76z M16.657,23.73 c0.073,0.323,0.117,0.654,0.117,0.989c0,2.798-1.806,4.984-6.979,4.984c-3.68,0-6.336-2.328-6.336-5.126 c0-2.741,3.296-5.026,6.978-4.984c0.856,0.009,1.658,0.148,2.383,0.379C14.818,21.364,16.25,22.149,16.657,23.73z M10.763,13.294 c-2.47-0.072-4.818-2.763-5.243-6.004c-0.425-3.246,1.231-5.728,3.7-5.655c2.469,0.076,4.818,2.679,5.243,5.922 C14.889,10.799,13.233,13.367,10.763,13.294z\"></path><polygon points=\"27.429,12.94 27.429,8.369 24.381,8.369 24.381,12.94 19.81,12.94 19.81,15.988 24.381,15.988 24.381,20.559 27.429,20.559 27.429,15.988 32,15.988 32,12.94 \"></polygon></svg></div></div><div class=\"plusonet-name\">Google+</div><div class=\"plusonet-social-count\">0</div></div></div></div><div class=\"plusonet-none\"></div></div></div></div></div>"; // HTML код модального окна
-
-  setTimeout(function(){
-    plusonet.sl.run();                        // Запуск скрипта
-  }, 10);
-  
-});
-</script>
+<script async src="//cdn-library.su/plusonet/lib/files/1648.js"></script>
 </head>
 
 <body class="home" >
-	<div class="main-container">
+	<div class="kLSlOEI5dGYrqF8">
 		
-		<div class="main-box">
+		<div class="JOA2FC">
 			
-			<div class="header">
-				<div class="site-name">
+			<div class="FxEn37g0AeIN5so">
+				<div class="tMHUDJCl4sfQ">
 				<h1>[PAGE_H1]</h1>
 					<div style="margin: -35px 0 0 75px;">
-						<img height="25" width="auto" border="0" src="/images/5_stars.png"/>
+						<img height="25" width="auto" border="0" src="/images/Gc3T5rq6VaM.png"/>
 					</div>
 				</div>
 			</div>
 			
-			<div id="navigation_top" class="navigation_top">
-			<ul class="nav">
-				[TOP_MENU]
+			<div id="navigation_top" class="oNG8D3BX9F">
+			<ul class="MRmxAFzb8V">
+				<li class="page_item"><a href="/" class="KWPkvg">About Us</a></li>
+<li class="page_item"><a href="/faq/" class="lau4oRO5fVjZir">FAQ</a></li>
+<li class="page_item"><a href="/contact/" class="MA7isGLFyt">Contact</a></li>
+<li class="page_item"><a href="/terms-of-use/" class="null">Terms of Use</a></li>
+
 			</ul>
 			</div>		
-			<div class="content-container">
-				<div class="content">
-					<div class="post-entry">
-					<div id="post" class="post">
+			<div class="e6spaZ">
+				<div class="dKCux3tqgThi">
+					<div class="QWMIzmAiHNwhY">
+					<div id="post" class="QANclYLxa2KkoO">
 					<br>
 					[MAIN_BLOCK]
 					</div>
-					<div class="clear"></div>
+					<div class="dHvYCgp"></div>
 					</div>		
 				</div>
 
-				<div class="sidebar">
+				<div class="ru85X3FpCs7yl">
 				<div class="sidebar-box rightnav">
-				<h3 class="box-title">Sex<font color="#000000">Today</font>: Categories</h3>
+				<h3 class="db89T2uazqJHdZj">Sex<font color="#000000">Today</font>: Categories</h3>
 				<ul>
 					[STATES_LIST]
 				</ul>
 				</div>
 				</div>
-
-				<div class="clear"></div>
-				
+				<div class="dHvYCgp"></div>
 			</div>
-			<div id="navigation_bottom" class="navigation_bottom">
-			<ul class="nav">
-				[BOTTOM_MENU]
+			<div id="navigation_bottom" class="oCzZsu">
+			<ul class="MRmxAFzb8V">
+				
 			</ul>
 			</div>
-			<div class="footer">
-			<div class="clear"></div>
-				<div class="copyright">
-					<!--div class="footer-links">&nbsp;</div-->
-					<div id="design-credits">SexToday - PRIVATE DATING CLUB USA - Copyright ©2016</div>
+			<div class="F4Q3Cd">
+			<div class="dHvYCgp"></div>
+				<div class="eD8qcaBp1woVEP">
+					
+					<div id="voav6Kl">chai-itsaboutyou - PRIVATE DATING CLUB USA - Copyright ©2016</div>
 					<br>
 				</div>
 			</div>
 		</div>		
 	</div>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57d7ff2a2fe1b58f"></script>
+
+</body>
 </html>

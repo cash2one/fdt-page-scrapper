@@ -3057,3 +3057,172 @@ java.lang.NullPointerException
 2016-09-02 12:17:28,989- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=15, title='FULLY! Write My Essay Article By EssayBoss', url='write-my-essay'] was successfully added
 2016-09-02 12:17:29,135- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=16, title='MUST-SEE! Write My Speech Article By EssayBoss', url='write-my-speech'] was successfully added
 2016-09-02 12:17:33,408- INFO(ArticlesPosterUpdaterRunner.java:169)-0 deprecated records were deleted from table
+2016-09-06 12:58:36,907- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=17, title='BEST SELLER: Annotated Bibliography Maker Custom Paper Service.', url='annotated-bibliography-maker'] was successfully added
+2016-09-06 12:58:37,256- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=18, title='SENSATION ON FIRE: Book Summary Help Custom Paper Service.', url='book-summary-help'] was successfully added
+2016-09-06 12:58:37,394- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=19, title='OPEN YOUR EYES: Buy Book Reports Custom Paper Service.', url='buy-book-reports'] was successfully added
+2016-09-06 12:58:37,526- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=20, title='GOOD NEWS: Buy Book Review Custom Paper Service.', url='buy-book-review'] was successfully added
+2016-09-06 12:58:37,660- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=21, title='SEE WHAT HAPPENS NEXT: Buy Essays Online Custom Paper Service.', url='buy-essays-online'] was successfully added
+2016-09-06 12:58:37,877- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=22, title='UNCENSORED BY REQUESTS: Cheap Essays Custom Paper Service.', url='cheap-essays'] was successfully added
+2016-09-06 12:58:38,115- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=23, title='GOOGLE EXISTS FOR US: Do My Essay Custom Paper Service.', url='do-my-essay'] was successfully added
+2016-09-06 12:58:38,249- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=24, title='GOOD NEWS: Essay Help Custom Paper Service.', url='essay-help'] was successfully added
+2016-09-06 12:58:38,381- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=25, title='GOOD NEWS: Essay Writer Custom Paper Service.', url='essay-writer'] was successfully added
+2016-09-06 12:58:38,517- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=26, title='UNDERGROUND PRESENTS: Essays For Sale Custom Paper Service.', url='essays-for-sale'] was successfully added
+2016-09-06 12:58:38,653- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=27, title='UNDERGROUND PRESENTS: Pay For Essays Custom Paper Service.', url='pay-for-essays'] was successfully added
+2016-09-06 12:58:38,786- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=28, title='1.000.000 VIEWS: Psychology Essay Custom Paper Service.', url='psychology-essay'] was successfully added
+2016-09-06 12:58:38,923- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=29, title='OPEN YOUR EYES: Socoiology Essay Custom Paper Service.', url='socoiology-essay'] was successfully added
+2016-09-06 12:58:39,056- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=30, title='HIDDEN TRUTH ABOUT: Write My Book Report Custom Paper Service.', url='write-my-book-report'] was successfully added
+2016-09-06 12:58:39,195- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=31, title='SAVE YOUR TIME: Write My Essay Custom Paper Service.', url='write-my-essay'] was successfully added
+2016-09-06 12:58:39,329- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=32, title='GOOD NEWS: Write My Speech Custom Paper Service.', url='write-my-speech'] was successfully added
+2016-09-06 12:58:43,401- INFO(ArticlesPosterUpdaterRunner.java:169)-0 deprecated records were deleted from table
+2016-09-06 13:05:23,870- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=33, title='UNDERGROUND PRESENTS: Annotated Bibliography Maker Custom Paper Service.', url='annotated-bibliography-maker'] was successfully added
+2016-09-06 13:05:24,235- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='SENSATION ON FIRE: Book Summary Help Custom Paper Service.', url='book-summary-help'] was updated
+2016-09-06 13:05:24,429- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=35, title='REAL VISITORS! NO BOTS: Buy Book Reports Custom Paper Service.', url='buy-book-reports'] was successfully added
+2016-09-06 13:05:24,628- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=36, title='NO PICTURES - JUST TEXT: Buy Book Review Custom Paper Service.', url='buy-book-review'] was successfully added
+2016-09-06 13:05:24,850- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=37, title='BEST SELLER: Buy Essays Online Custom Paper Service.', url='buy-essays-online'] was successfully added
+2016-09-06 13:05:25,063- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=38, title='NO PICTURES - JUST TEXT: Cheap Essays Custom Paper Service.', url='cheap-essays'] was successfully added
+2016-09-06 13:05:25,287- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='GOOGLE EXISTS FOR US: Do My Essay Custom Paper Service.', url='do-my-essay'] was updated
+2016-09-06 13:05:25,513- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=40, title='NO PICTURES - JUST TEXT: Essay Help Custom Paper Service.', url='essay-help'] was successfully added
+2016-09-06 13:05:25,726- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=41, title='UPCOMING: Essay Writer Custom Paper Service.', url='essay-writer'] was successfully added
+2016-09-06 13:05:25,946- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=42, title='NOW! OR NEVER: Essays For Sale Custom Paper Service.', url='essays-for-sale'] was successfully added
+2016-09-06 13:05:26,163- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=43, title='CONTRATULATIONS: Pay For Essays Custom Paper Service.', url='pay-for-essays'] was successfully added
+2016-09-06 13:05:26,401- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=44, title='NOW! OR NEVER: Psychology Essay Custom Paper Service.', url='psychology-essay'] was successfully added
+2016-09-06 13:05:26,646- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=45, title='KNOCK! KNOCK! WILL YOU UNLOCK: Socoiology Essay Custom Paper Service.', url='socoiology-essay'] was successfully added
+2016-09-06 13:05:26,871- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=46, title='PUZZLE SOLVED: Write My Book Report Custom Paper Service.', url='write-my-book-report'] was successfully added
+2016-09-06 13:05:27,138- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=47, title='SEE WHAT HAPPENS NEXT: Write My Essay Custom Paper Service.', url='write-my-essay'] was successfully added
+2016-09-06 13:05:27,368- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=48, title='NOW! OR NEVER: Write My Speech Custom Paper Service.', url='write-my-speech'] was successfully added
+2016-09-06 13:12:33,781- INFO(ArticlesPosterUpdaterRunner.java:169)-0 deprecated records were deleted from table
+2016-09-06 13:13:44,052- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=49, title='NO PICTURES - JUST TEXT: Annotated Bibliography Maker Custom Paper Service.', url='annotated-bibliography-maker'] was successfully added
+2016-09-06 13:13:44,331- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=50, title='SAVE YOUR TIME: Book Summary Help Custom Paper Service.', url='book-summary-help'] was successfully added
+2016-09-06 13:13:44,463- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=51, title='SECRET REVEALED: Buy Book Reports Custom Paper Service.', url='buy-book-reports'] was successfully added
+2016-09-06 13:13:44,595- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=52, title='BLACK LETTERS WHITE SCREEN: Buy Book Review Custom Paper Service.', url='buy-book-review'] was successfully added
+2016-09-06 13:13:44,732- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=53, title='SAVE YOUR TIME: Buy Essays Online Custom Paper Service.', url='buy-essays-online'] was successfully added
+2016-09-06 13:13:45,017- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=54, title='12 POINTS GOES TO: Cheap Essays Custom Paper Service.', url='cheap-essays'] was successfully added
+2016-09-06 13:13:45,268- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=55, title='UNDERGROUND PRESENTS: Do My Essay Custom Paper Service.', url='do-my-essay'] was successfully added
+2016-09-06 13:13:45,485- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=56, title='SECRET REVEALED: Essay Help Custom Paper Service.', url='essay-help'] was successfully added
+2016-09-06 13:13:45,631- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=57, title='NOW! OR NEVER: Essay Writer Custom Paper Service.', url='essay-writer'] was successfully added
+2016-09-06 13:13:45,763- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=58, title='THE SHOKING TRUTH: Essays For Sale Custom Paper Service.', url='essays-for-sale'] was successfully added
+2016-09-06 13:13:45,896- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=59, title='FINAL CLICK: Pay For Essays Custom Paper Service.', url='pay-for-essays'] was successfully added
+2016-09-06 13:13:46,030- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=60, title='WRITERS DETECTED: Psychology Essay Custom Paper Service.', url='psychology-essay'] was successfully added
+2016-09-06 13:13:46,166- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='KNOCK! KNOCK! WILL YOU UNLOCK: Socoiology Essay Custom Paper Service.', url='socoiology-essay'] was updated
+2016-09-06 13:13:46,298- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=62, title='SAVE YOUR TIME: Write My Book Report Custom Paper Service.', url='write-my-book-report'] was successfully added
+2016-09-06 13:13:46,432- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=63, title='SENSATION ON FIRE: Write My Essay Custom Paper Service.', url='write-my-essay'] was successfully added
+2016-09-06 13:13:46,574- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=64, title='UNDERGROUND PRESENTS: Write My Speech Custom Paper Service.', url='write-my-speech'] was successfully added
+2016-09-06 13:13:50,767- INFO(ArticlesPosterUpdaterRunner.java:169)-0 deprecated records were deleted from table
+2016-09-06 13:14:57,593- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=65, title='THE SHOKING TRUTH: Annotated Bibliography Maker Custom Paper Service.', url='annotated-bibliography-maker'] was successfully added
+2016-09-06 13:15:01,084- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=66, title='WATCHING YOU: Book Summary Help Custom Paper Service.', url='book-summary-help'] was successfully added
+2016-09-06 13:15:01,277- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=67, title='GOOGLE EXISTS FOR US: Buy Book Reports Custom Paper Service.', url='buy-book-reports'] was successfully added
+2016-09-06 13:15:01,473- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=68, title='KNOCK! KNOCK! WILL YOU UNLOCK: Buy Book Review Custom Paper Service.', url='buy-book-review'] was successfully added
+2016-09-06 13:15:01,761- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=69, title='FINAL CLICK: Buy Essays Online Custom Paper Service.', url='buy-essays-online'] was successfully added
+2016-09-06 13:15:01,974- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=70, title='LEFT CORNER IS YOURS: Cheap Essays Custom Paper Service.', url='cheap-essays'] was successfully added
+2016-09-06 13:15:02,193- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=71, title='UPCOMING: Do My Essay Custom Paper Service.', url='do-my-essay'] was successfully added
+2016-09-06 13:15:02,412- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=72, title='UNLOCKED BY REQUESTS: Essay Help Custom Paper Service.', url='essay-help'] was successfully added
+2016-09-06 13:15:02,623- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=73, title='LEFT CORNER IS YOURS: Essay Writer Custom Paper Service.', url='essay-writer'] was successfully added
+2016-09-06 13:15:02,833- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=74, title='STOP SEARCHING NOW: Essays For Sale Custom Paper Service.', url='essays-for-sale'] was successfully added
+2016-09-06 13:15:03,048- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=75, title='STOP SEARCHING NOW: Pay For Essays Custom Paper Service.', url='pay-for-essays'] was successfully added
+2016-09-06 13:15:03,274- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=76, title='OPENED FOR VISITORS: Psychology Essay Custom Paper Service.', url='psychology-essay'] was successfully added
+2016-09-06 13:15:03,515- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=77, title='THEY SAY TODAY: Socoiology Essay Custom Paper Service.', url='socoiology-essay'] was successfully added
+2016-09-06 13:15:03,729- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=78, title='GOOD NEWS: Write My Book Report Custom Paper Service.', url='write-my-book-report'] was successfully added
+2016-09-06 13:15:03,954- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=79, title='OPEN YOUR EYES: Write My Essay Custom Paper Service.', url='write-my-essay'] was successfully added
+2016-09-06 13:15:04,170- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='UNDERGROUND PRESENTS: Write My Speech Custom Paper Service.', url='write-my-speech'] was updated
+2016-09-06 13:17:07,568- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=1, title='NO PAINTERS - JUST WRITERS: Annotated Bibliography Maker Custom Paper Service.', url='annotated-bibliography-maker'] was successfully added
+2016-09-06 13:17:07,826- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=2, title='NO PICTURES - JUST TEXT: Book Summary Help Custom Paper Service.', url='book-summary-help'] was successfully added
+2016-09-06 13:17:07,959- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=3, title='REAL VISITORS! NO BOTS: Buy Book Reports Custom Paper Service.', url='buy-book-reports'] was successfully added
+2016-09-06 13:17:08,092- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=4, title='GOOGLE EXISTS FOR US: Buy Book Review Custom Paper Service.', url='buy-book-review'] was successfully added
+2016-09-06 13:17:08,227- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=5, title='GOOD NEWS: Buy Essays Online Custom Paper Service.', url='buy-essays-online'] was successfully added
+2016-09-06 13:17:08,364- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=6, title='KNOCK! KNOCK! WILL YOU UNLOCK: Cheap Essays Custom Paper Service.', url='cheap-essays'] was successfully added
+2016-09-06 13:17:08,497- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=7, title='LEFT CORNER IS YOURS: Do My Essay Custom Paper Service.', url='do-my-essay'] was successfully added
+2016-09-06 13:17:08,630- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=8, title='SAVE YOUR TIME: Essay Help Custom Paper Service.', url='essay-help'] was successfully added
+2016-09-06 13:17:08,762- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=9, title='12 POINTS GOES TO: Essay Writer Custom Paper Service.', url='essay-writer'] was successfully added
+2016-09-06 13:17:08,894- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=10, title='WATCHING YOU: Essays For Sale Custom Paper Service.', url='essays-for-sale'] was successfully added
+2016-09-06 13:17:09,027- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=11, title='UNCENSORED BY REQUESTS: Pay For Essays Custom Paper Service.', url='pay-for-essays'] was successfully added
+2016-09-06 13:17:09,162- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=12, title='NOW! OR NEVER: Psychology Essay Custom Paper Service.', url='psychology-essay'] was successfully added
+2016-09-06 13:17:09,298- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=13, title='1.000.000 VIEWS: Socoiology Essay Custom Paper Service.', url='socoiology-essay'] was successfully added
+2016-09-06 13:17:09,431- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=14, title='LEFT CORNER IS YOURS: Write My Book Report Custom Paper Service.', url='write-my-book-report'] was successfully added
+2016-09-06 13:17:09,569- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=15, title='OPEN YOUR EYES: Write My Essay Custom Paper Service.', url='write-my-essay'] was successfully added
+2016-09-06 13:17:09,790- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=16, title='GOOGLE EXISTS FOR US: Write My Speech Custom Paper Service.', url='write-my-speech'] was successfully added
+2016-09-06 13:17:14,431- INFO(ArticlesPosterUpdaterRunner.java:169)-0 deprecated records were deleted from table
+2016-09-06 13:28:44,188- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='NIGHTMARE IS OVER: Annotated Bibliography Maker Custom Paper Service.', url='annotated-bibliography-maker'] was updated
+2016-09-06 13:28:44,560- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='THE SHOKING TRUTH: Book Summary Help Custom Paper Service.', url='book-summary-help'] was updated
+2016-09-06 13:28:44,729- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='SAVE YOUR TIME: Buy Book Reports Custom Paper Service.', url='buy-book-reports'] was updated
+2016-09-06 13:28:44,933- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='NO-LIMITS FOR ORDERS: Buy Book Review Custom Paper Service.', url='buy-book-review'] was updated
+2016-09-06 13:28:45,152- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='REAL VISITORS! NO BOTS: Buy Essays Online Custom Paper Service.', url='buy-essays-online'] was updated
+2016-09-06 13:28:45,325- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='UPCOMING: Cheap Essays Custom Paper Service.', url='cheap-essays'] was updated
+2016-09-06 13:28:45,513- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='OPENED FOR VISITORS: Do My Essay Custom Paper Service.', url='do-my-essay'] was updated
+2016-09-06 13:28:45,650- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='SAVE YOUR TIME: Essay Help Custom Paper Service.', url='essay-help'] was updated
+2016-09-06 13:28:45,793- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='KNOCK! KNOCK! WILL YOU UNLOCK: Essay Writer Custom Paper Service.', url='essay-writer'] was updated
+2016-09-06 13:28:45,930- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='BREATH BEFORE THIS: Essays For Sale Custom Paper Service.', url='essays-for-sale'] was updated
+2016-09-06 13:28:46,066- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='12 POINTS GOES TO: Pay For Essays Custom Paper Service.', url='pay-for-essays'] was updated
+2016-09-06 13:28:46,207- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='NO PAINTERS - JUST WRITERS: Psychology Essay Custom Paper Service.', url='psychology-essay'] was updated
+2016-09-06 13:28:46,346- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='BECAUSE YOU SEE: Socoiology Essay Custom Paper Service.', url='socoiology-essay'] was updated
+2016-09-06 13:28:46,482- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='SLEEPING WELL WITH: Write My Book Report Custom Paper Service.', url='write-my-book-report'] was updated
+2016-09-06 13:28:46,619- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='UNCENSORED BY REQUESTS: Write My Essay Custom Paper Service.', url='write-my-essay'] was updated
+2016-09-06 13:28:46,757- INFO(ArticlesPosterUpdaterRunner.java:345)-Template [title='BREATH BEFORE THIS: Write My Speech Custom Paper Service.', url='write-my-speech'] was updated
+2016-09-06 13:28:47,520- INFO(ArticlesPosterUpdaterRunner.java:169)-0 deprecated records were deleted from table
+2016-09-06 16:55:01,983- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=1, title='THE SHOKING TRUTH: Annotated Bibliography Maker Custom Paper Service.', url='annotated-bibliography-maker'] was successfully added
+2016-09-06 16:55:02,308- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=2, title='SECRET REVEALED: Book Summary Help Custom Paper Service.', url='book-summary-help'] was successfully added
+2016-09-06 16:55:02,448- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=3, title='NO MORE PAIN: Buy Book Reports Custom Paper Service.', url='buy-book-reports'] was successfully added
+2016-09-06 16:55:02,586- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=4, title='SECRET REVEALED: Buy Book Review Custom Paper Service.', url='buy-book-review'] was successfully added
+2016-09-06 16:55:02,726- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=5, title='NO MORE PAIN: Buy Essays Online Custom Paper Service.', url='buy-essays-online'] was successfully added
+2016-09-06 16:55:02,865- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=6, title='BLACK LETTERS WHITE SCREEN: Cheap Essays Custom Paper Service.', url='cheap-essays'] was successfully added
+2016-09-06 16:55:03,004- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=7, title='WATCHING YOU: Do My Essay Custom Paper Service.', url='do-my-essay'] was successfully added
+2016-09-06 16:55:03,143- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=8, title='OPENED FOR VISITORS: Essay Help Custom Paper Service.', url='essay-help'] was successfully added
+2016-09-06 16:55:03,281- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=9, title='BREATH BEFORE THIS: Essay Writer Custom Paper Service.', url='essay-writer'] was successfully added
+2016-09-06 16:55:03,421- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=10, title='THE SHOKING TRUTH: Essays For Sale Custom Paper Service.', url='essays-for-sale'] was successfully added
+2016-09-06 16:55:03,559- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=11, title='OPEN YOUR EYES: Pay For Essays Custom Paper Service.', url='pay-for-essays'] was successfully added
+2016-09-06 16:55:03,699- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=12, title='OPENED FOR VISITORS: Psychology Essay Custom Paper Service.', url='psychology-essay'] was successfully added
+2016-09-06 16:55:03,839- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=13, title='SEE WHAT HAPPENS NEXT: Socoiology Essay Custom Paper Service.', url='socoiology-essay'] was successfully added
+2016-09-06 16:55:03,977- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=14, title='BEST SELLER: Write My Book Report Custom Paper Service.', url='write-my-book-report'] was successfully added
+2016-09-06 16:55:04,116- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=15, title='REVOLUTION IN WRITING: Write My Essay Custom Paper Service.', url='write-my-essay'] was successfully added
+2016-09-06 16:55:04,271- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=16, title='BLACK LETTERS WHITE SCREEN: Write My Speech Custom Paper Service.', url='write-my-speech'] was successfully added
+2016-09-06 16:55:08,626- INFO(ArticlesPosterUpdaterRunner.java:169)-0 deprecated records were deleted from table
+2016-09-06 17:02:32,432- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=1, title='SAVE YOUR TIME: Annotated Bibliography Maker Article By EssayBoss.', url='annotated-bibliography-maker'] was successfully added
+2016-09-06 17:02:32,721- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=2, title='KNOCK! KNOCK! WILL YOU UNLOCK: Book Summary Help Article By EssayBoss.', url='book-summary-help'] was successfully added
+2016-09-06 17:02:32,863- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=3, title='NO-LIMITS FOR ORDERS: Buy Book Reports Article By EssayBoss.', url='buy-book-reports'] was successfully added
+2016-09-06 17:02:32,999- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=4, title='UPCOMING: Buy Book Review Article By EssayBoss.', url='buy-book-review'] was successfully added
+2016-09-06 17:02:33,137- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=5, title='BEST SELLER: Buy Essays Online Article By EssayBoss.', url='buy-essays-online'] was successfully added
+2016-09-06 17:02:33,276- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=6, title='BEST SELLER: Cheap Essays Article By EssayBoss.', url='cheap-essays'] was successfully added
+2016-09-06 17:02:33,422- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=7, title='NO PICTURES - JUST TEXT: Do My Essay Article By EssayBoss.', url='do-my-essay'] was successfully added
+2016-09-06 17:02:33,560- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=8, title='REAL VISITORS! NO BOTS: Essay Help Article By EssayBoss.', url='essay-help'] was successfully added
+2016-09-06 17:02:33,695- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=9, title='1.000.000 VIEWS: Essay Writer Article By EssayBoss.', url='essay-writer'] was successfully added
+2016-09-06 17:02:33,831- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=10, title='SENSATION ON FIRE: Essays For Sale Article By EssayBoss.', url='essays-for-sale'] was successfully added
+2016-09-06 17:02:33,968- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=11, title='BECAUSE YOU SEE: Pay For Essays Article By EssayBoss.', url='pay-for-essays'] was successfully added
+2016-09-06 17:02:34,105- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=12, title='WRITERS DETECTED: Psychology Essay Article By EssayBoss.', url='psychology-essay'] was successfully added
+2016-09-06 17:02:34,244- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=13, title='OPEN YOUR EYES: Socoiology Essay Article By EssayBoss.', url='socoiology-essay'] was successfully added
+2016-09-06 17:02:34,379- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=14, title='UNDERGROUND PRESENTS: Write My Book Report Article By EssayBoss.', url='write-my-book-report'] was successfully added
+2016-09-06 17:02:34,521- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=15, title='NO-LIMITS FOR ORDERS: Write My Essay Article By EssayBoss.', url='write-my-essay'] was successfully added
+2016-09-06 17:02:34,658- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=16, title='OPENED FOR VISITORS: Write My Speech Article By EssayBoss.', url='write-my-speech'] was successfully added
+2016-09-06 17:02:38,766- INFO(ArticlesPosterUpdaterRunner.java:169)-0 deprecated records were deleted from table
+2016-09-06 17:07:42,031- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=1, title='OPENED FOR VISITORS: Annotated Bibliography Maker Article By EssayBoss.', url='annotated-bibliography-maker'] was successfully added
+2016-09-06 17:07:42,307- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=2, title='BLACK LETTERS WHITE SCREEN: Book Summary Help Article By EssayBoss.', url='book-summary-help'] was successfully added
+2016-09-06 17:07:42,463- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=3, title='NO MORE PAIN: Buy Book Reports Article By EssayBoss.', url='buy-book-reports'] was successfully added
+2016-09-06 17:07:42,603- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=4, title='NO PAINTERS - JUST WRITERS: Buy Book Review Article By EssayBoss.', url='buy-book-review'] was successfully added
+2016-09-06 17:07:42,745- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=5, title='GOOD NEWS: Buy Essays Online Article By EssayBoss.', url='buy-essays-online'] was successfully added
+2016-09-06 17:07:42,890- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=6, title='BREATH BEFORE THIS: Cheap Essays Article By EssayBoss.', url='cheap-essays'] was successfully added
+2016-09-06 17:07:43,050- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=7, title='STOP SEARCHING NOW: Do My Essay Article By EssayBoss.', url='do-my-essay'] was successfully added
+2016-09-06 17:07:43,200- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=8, title='1.000.000 VIEWS: Essay Help Article By EssayBoss.', url='essay-help'] was successfully added
+2016-09-06 17:07:43,339- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=9, title='WRITERS DETECTED: Essay Writer Article By EssayBoss.', url='essay-writer'] was successfully added
+2016-09-06 17:07:43,484- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=10, title='HIDDEN TRUTH ABOUT: Essays For Sale Article By EssayBoss.', url='essays-for-sale'] was successfully added
+2016-09-06 17:07:43,626- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=11, title='UPCOMING: Pay For Essays Article By EssayBoss.', url='pay-for-essays'] was successfully added
+2016-09-06 17:07:43,766- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=12, title='NOW! OR NEVER: Psychology Essay Article By EssayBoss.', url='psychology-essay'] was successfully added
+2016-09-06 17:07:43,909- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=13, title='UNCENSORED BY REQUESTS: Socoiology Essay Article By EssayBoss.', url='socoiology-essay'] was successfully added
+2016-09-06 17:07:44,049- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=14, title='SENSATION ON FIRE: Write My Book Report Article By EssayBoss.', url='write-my-book-report'] was successfully added
+2016-09-06 17:07:44,194- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=15, title='LEFT CORNER IS YOURS: Write My Essay Article By EssayBoss.', url='write-my-essay'] was successfully added
+2016-09-06 17:07:44,334- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=16, title='SAVE YOUR TIME: Write My Speech Article By EssayBoss.', url='write-my-speech'] was successfully added
+2016-09-06 17:07:48,686- INFO(ArticlesPosterUpdaterRunner.java:169)-0 deprecated records were deleted from table
+2016-09-06 17:13:42,115- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=1, title='THE SHOKING TRUTH: Annotated Bibliography Maker Article By EssayBoss.', url='annotated-bibliography-maker'] was successfully added
+2016-09-06 17:13:42,392- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=2, title='BEST SELLER: Book Summary Help Article By EssayBoss.', url='book-summary-help'] was successfully added
+2016-09-06 17:13:42,543- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=3, title='BREATH BEFORE THIS: Buy Book Reports Article By EssayBoss.', url='buy-book-reports'] was successfully added
+2016-09-06 17:13:42,680- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=4, title='12 POINTS GOES TO: Buy Book Review Article By EssayBoss.', url='buy-book-review'] was successfully added
+2016-09-06 17:13:42,823- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=5, title='KNOCK! KNOCK! WILL YOU UNLOCK: Buy Essays Online Article By EssayBoss.', url='buy-essays-online'] was successfully added
+2016-09-06 17:13:42,964- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=6, title='SAVE YOUR TIME: Cheap Essays Article By EssayBoss.', url='cheap-essays'] was successfully added
+2016-09-06 17:13:43,107- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=7, title='KNOCK! KNOCK! WILL YOU UNLOCK: Do My Essay Article By EssayBoss.', url='do-my-essay'] was successfully added
+2016-09-06 17:13:43,245- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=8, title='KNOCK! KNOCK! WILL YOU UNLOCK: Essay Help Article By EssayBoss.', url='essay-help'] was successfully added
+2016-09-06 17:13:43,383- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=9, title='THE SHOKING TRUTH: Essay Writer Article By EssayBoss.', url='essay-writer'] was successfully added
+2016-09-06 17:13:43,521- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=10, title='WATCHING YOU: Essays For Sale Article By EssayBoss.', url='essays-for-sale'] was successfully added
+2016-09-06 17:13:43,661- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=11, title='SECRET REVEALED: Pay For Essays Article By EssayBoss.', url='pay-for-essays'] was successfully added
+2016-09-06 17:13:43,801- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=12, title='KNOCK! KNOCK! WILL YOU UNLOCK: Psychology Essay Article By EssayBoss.', url='psychology-essay'] was successfully added
+2016-09-06 17:13:43,941- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=13, title='SLEEPING WELL WITH: Socoiology Essay Article By EssayBoss.', url='socoiology-essay'] was successfully added
+2016-09-06 17:13:44,079- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=14, title='NO-LIMITS FOR ORDERS: Write My Book Report Article By EssayBoss.', url='write-my-book-report'] was successfully added
+2016-09-06 17:13:44,219- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=15, title='UNLOCKED BY REQUESTS: Write My Essay Article By EssayBoss.', url='write-my-essay'] was successfully added
+2016-09-06 17:13:44,358- INFO(ArticlesPosterUpdaterRunner.java:342)-Template [id=16, title='12 POINTS GOES TO: Write My Speech Article By EssayBoss.', url='write-my-speech'] was successfully added
+2016-09-06 17:13:48,611- INFO(ArticlesPosterUpdaterRunner.java:169)-0 deprecated records were deleted from table

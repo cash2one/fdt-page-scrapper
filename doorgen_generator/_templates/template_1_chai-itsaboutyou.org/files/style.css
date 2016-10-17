@@ -397,7 +397,8 @@ body {
 	font-family: Droid,Arial,Helvetica,sans-serif;
 	color:#444; 
 	/*** ЦВЕТ фона под картинкой, если не загрузилась картинка ***/
-	background:#F3F3F3 url("/images/grass_.jpg") no-repeat fixed;
+	/*background:#F3F3F3 url("/images/grass_.jpg") no-repeat fixed;*/
+	background:#F3F3F3;
 	background-size: 100%;	
 	text-rendering: optimizeLegibility;
 }

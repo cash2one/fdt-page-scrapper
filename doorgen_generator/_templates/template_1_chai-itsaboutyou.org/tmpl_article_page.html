@@ -5,17 +5,18 @@
 <h3>[DESCRIPTION]</h3>
 [ARTICLE_BODY]
 <br>
-<span itemscope itemtype="http://schema.org/Review">
-    <span itemprop="name">[keyword]</span><br>
-  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <span itemprop="name">EssayBoss</span><br>
-  </span>	
-    <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-        Average Rating: <span itemprop="ratingValue">[ratingCount]</span><br>
-        Votes: <span itemprop="ratingCount">[voteCount]</span><br>
-        Reviews: <span itemprop="reviewCount">[reviewCount]</span><br>
-  </span>
-</span>
+<div itemscope itemtype="http://schema.org/Product">
+  <span itemprop="name">[keyword]</span>
+  <div itemprop="aggregateRating"
+    itemscope itemtype="http://schema.org/AggregateRating">
+    <span itemprop="ratingValue">[ratingCount]</span>
+    out of <span itemprop="bestRating">5</span> stars
+    based on <span itemprop="ratingCount">[voteCount]</span> user ratings
+  </div>
+</div>
 </div>
 <br><br>
 [PROMO_BLOCK_FOOTER]
+
+
+
