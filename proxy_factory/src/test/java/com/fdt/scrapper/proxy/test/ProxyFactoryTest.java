@@ -12,7 +12,7 @@ import org.springframework.context.annotation.PropertySource;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan(basePackages = "com.fdt.scrapper.proxy")
-//@PropertySource("classpath:config.ini")
+@PropertySource(value="file:${config.file}",ignoreResourceNotFound = true)
 public class ProxyFactoryTest {
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(ProxyFactoryTest.class, args);
