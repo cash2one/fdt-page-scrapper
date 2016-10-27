@@ -71,7 +71,7 @@ public class DuplicateFileCleaner {
 			}
 		}
 
-		StringBuffer filesResult = new StringBuffer();
+		/*StringBuffer filesResult = new StringBuffer();
 
 		for(String fileKey : filesData.keySet()){
 			filesResult.append(fileKey).append("::");
@@ -79,17 +79,27 @@ public class DuplicateFileCleaner {
 				filesResult.append(file.getName()).append(";");
 			}
 			filesResult.append("\r\n");
-		}
+		}*/
 
-		Utils.saveStringToFile(filesResult.toString(), new File("baza.txt"), false);
-
-		cleanDuplicatedFiles(filesData);
+		String cleanedResultStr = cleanDuplicatedFiles(filesData);
+		
+		dummy.delete();
+		deleteDir.delete();
+		
+		Utils.saveStringToFile(cleanedResultStr, new File("baza.txt"), false);
 
 		return result;
 	}
 
-	private void cleanDuplicatedFiles(Map<String, List<File>> filesData){
+	private String cleanDuplicatedFiles(Map<String, List<File>> filesData){
+		
+		StringBuffer cleanedResultStr = new StringBuffer();
+		
 		for(String strKey : filesData.keySet()){
+			if(!"".equals(strKey)){
+				cleanedResultStr.append(strKey).append(";").append(filesData.get(strKey).get(0).getName()).append("\r\n");
+			}
+			
 			List<File> filesList = filesData.get(strKey);
 			filesList.remove(0);
 			while(filesList.size() > 0){
@@ -98,5 +108,7 @@ public class DuplicateFileCleaner {
 				filesList.remove(0);
 			}
 		}
+		
+		return cleanedResultStr.toString();
 	}
 }
