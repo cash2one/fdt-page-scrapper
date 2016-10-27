@@ -19,8 +19,9 @@
 		<module>doorgen_generator</module>
 		<module>doorgen_poller</module>
 		<module>key_site_cnt_getter</module>
-		<!-- module>snippet_utils</module>
-		<module>jimdo.com</module>
+		<module>sms-reg.com</module>
+		<module>snippet_utils</module>
+		<!--<module>jimdo.com</module>
 		-->
 		
 		<!--module>da</module>

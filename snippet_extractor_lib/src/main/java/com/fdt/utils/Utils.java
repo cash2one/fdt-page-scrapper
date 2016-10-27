@@ -134,6 +134,47 @@ public class Utils {
 	{
 		return loadFileAsString(inputFile, new ArrayList<Integer>());
 	}
+
+	public static synchronized String loadFileAsString(File inputFile, Integer firstStrIdx, Integer lastStrIdx)
+	{
+		StringBuffer output  = new StringBuffer();
+		
+		BufferedReader br = null;
+		int strIndex = 1;
+		
+		try {
+			br = new BufferedReader(new InputStreamReader( new FileInputStream(inputFile), "UTF8" ));
+
+			String line = br.readLine();
+
+			while(line != null)
+			{
+				if(firstStrIdx <= strIndex && strIndex <= lastStrIdx ){
+					output.append(line).append(Constants.LINE_FEED);
+				}
+				
+				line = br.readLine();
+				strIndex++;
+				
+				if(strIndex > lastStrIdx){
+					break;
+				}
+			}
+		} catch (FileNotFoundException e) {
+			log.error("Reading file: FileNotFoundException exception occured",e);
+		} catch (IOException e) {
+			log.error("Reading file: IOException exception occured", e);
+		} finally {
+			try {
+				if(br != null)
+					br.close();
+			} catch (Throwable e) {
+				log.warn("Error while initializtion", e);
+			}
+		}
+		return output.toString();
+	}
+
 	
 	public static synchronized String loadFileAsString(File inputFile, List<Integer> skipStrNum)
 	{
