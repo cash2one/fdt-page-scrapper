@@ -44,17 +44,19 @@ function fillArticleList($con)
 		$upd_flg = $row['upd_flg'];
 		$updTitle = "";
 		
-		if($cur_news_posted_time != engdate($post_dt,'jS \of F')){
+		/*if($cur_news_posted_time != engdate($post_dt,'jS \of F')){
 			$cur_news_posted_time = engdate($post_dt,'jS \of F');
 			$atricles = $atricles."<br/><h3>".$cur_news_posted_time."</h3>";
 		}
 		
 		if($upd_flg == 1){
 			 $updTitle = "Information updated | ";
-		}
+		}*/
 		
+
 		
-		$atricles = $atricles. "$mainUrl/articles/$url;" . $title .";".engdate($post_dt,'jS \of F, h:i:s A')."\r\n";
+		//$atricles = $atricles. "$mainUrl/articles/$url;" . $title .";".engdate($post_dt,'jS \of F, h:i:s A')."\r\n";
+		$atricles = $atricles. "http://$mainUrl/articles/$url/"."\r\n";
 		/*$atricles = preg_replace("/\[STATE_NAME\]/", $regionName , $atricles);
 		$atricles = preg_replace("/\[STATE_ABBR\]/", $regionName , $atricles);*/
 	}
@@ -64,10 +66,10 @@ function fillArticleList($con)
 }
 
 $con=mysqli_connect(DB_HOST,DB_USER_NAME,DB_USER_PWD,DB_NAME);
-echo "Connecting...";
+#echo "Connecting...";
 if (mysqli_connect_errno())
 {
-	echo "Failed to connect to MySQL: " . mysqli_connect_error();
+	#echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
 mysqli_query($con,"set character_set_client='utf8'");
@@ -76,7 +78,12 @@ mysqli_query($con,"set collation_connection='utf8_general_ci'");
 
 $template = fillArticleList($con);
 
+$file = 'articles_posted.txt';
+
+// Пишем содержимое обратно в файл
+file_put_contents($file, $template);
+
 mysqli_close($con);
 
-echo $template;	
+#echo $template;	
 ?>

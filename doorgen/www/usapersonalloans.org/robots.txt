@@ -6,4 +6,6 @@ Disallow: /utils/
 Disallow: /webstat/
 Disallow: /app/
 Disallow: *.html
-Host: usacashadvanceonlinefast.com
+Host: usapersonalloans.org
+
+Sitemap: http://usapersonalloans.org/sitemap.xml

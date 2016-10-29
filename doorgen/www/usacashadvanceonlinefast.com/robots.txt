@@ -7,3 +7,5 @@ Disallow: /webstat/
 Disallow: /app/
 Disallow: *.html
 Host: usacashadvanceonlinefast.com
+
+Sitemap: http://usacashadvanceonlinefast.com/sitemap.xml

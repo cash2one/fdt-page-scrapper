@@ -6,4 +6,6 @@ Disallow: /utils/
 Disallow: /webstat/
 Disallow: /app/
 Disallow: *.html
-Host: usacashadvanceonlinefast.com
+Host: usaonlinepaydayloans.net
+
+Sitemap: http://usaonlinepaydayloans.net/sitemap.xml

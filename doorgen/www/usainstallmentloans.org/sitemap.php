@@ -2,7 +2,11 @@
 
 error_reporting(E_ALL ^ E_NOTICE);
 
-exec("/usr/bin/java -Duser.timezone=\"EST\" -cp \"/home/user/soft/java/*\" com.fdt.doorgen.key.pooler.util.SiteMapGenerator txt/urls.txt 900 1000 \"./sitemap_gen.xml\"");
+include('get_articles_list.php');
+
+exec("/usr/bin/java -Duser.timezone=\"EST\" -cp \"/home/user/soft/java/*\" com.fdt.doorgen.key.pooler.util.SiteMapGenerator txt/urls.txt 30 30000 ./sitemap_gen.xml ./articles_posted.txt ");
+
+sleep(1);
 
 $outputFile ="sitemap_gen.xml";
 
