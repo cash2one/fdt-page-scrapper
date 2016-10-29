@@ -186,12 +186,12 @@ public class RandomTitleGenerator4Reddit {
 		}
 	}
 
-	private static interface IWordConverterAlgorithm
+	protected static interface IWordConverterAlgorithm
 	{
 		public String convert(String input);
 	}
 	
-	private static class EmptyConverter implements IWordConverterAlgorithm
+	protected static class EmptyConverter implements IWordConverterAlgorithm
 	{
 
 		@Override
@@ -200,7 +200,7 @@ public class RandomTitleGenerator4Reddit {
 		}
 	}
 
-	private static class AlgPointInserter implements IWordConverterAlgorithm{
+	protected static class AlgPointInserter implements IWordConverterAlgorithm{
 
 		@Override
 		public String convert(String input) {
@@ -218,7 +218,7 @@ public class RandomTitleGenerator4Reddit {
 		}
 	}
 
-	private static class AlgRndPointInserter implements IWordConverterAlgorithm{
+	protected static class AlgRndPointInserter implements IWordConverterAlgorithm{
 
 		@Override
 		public String convert(String input) {
@@ -240,7 +240,7 @@ public class RandomTitleGenerator4Reddit {
 		}
 	}
 
-	private static class AlgRndCaseCharsInserter implements IWordConverterAlgorithm{
+	protected static class AlgRndCaseCharsInserter implements IWordConverterAlgorithm{
 
 		@Override
 		public String convert(String input) {
@@ -258,7 +258,7 @@ public class RandomTitleGenerator4Reddit {
 		}
 	}
 
-	private static class AlgUpperCaseCharsInserter implements IWordConverterAlgorithm{
+	protected static class AlgUpperCaseCharsInserter implements IWordConverterAlgorithm{
 
 		@Override
 		public String convert(String input) {
@@ -266,7 +266,7 @@ public class RandomTitleGenerator4Reddit {
 		}
 	}
 
-	private static class AlgAppendRndCharsAtStartAndEndInserter implements IWordConverterAlgorithm{
+	protected static class AlgAppendRndCharsAtStartAndEndInserter implements IWordConverterAlgorithm{
 
 		@Override
 		public String convert(String input) {

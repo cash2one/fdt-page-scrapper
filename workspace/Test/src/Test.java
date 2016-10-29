@@ -12,6 +12,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 import java.util.TimeZone;
@@ -20,6 +21,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
+
+import com.fdt.utils.Utils;
 
 
 public class Test {
@@ -31,6 +34,8 @@ public class Test {
 
 	private volatile ArrayList<String> str = new  ArrayList<String>();
 	static int i;
+
+	private static Random rnd = new Random();
 
 	public static void main(String[] args) {
 
@@ -376,15 +381,15 @@ public class Test {
 		for(String str : args4Clean){
 			System.out.println(str);
 		}*/
-		
-		BufferedImage image;
+
+		/*BufferedImage image;
 		try {
 			image = ImageIO.read(new URL("https://upload.wikimedia.org/wikipedia/en/2/24/Lenna.png"));
 			Graphics g = image.getGraphics();
-			
+
 			Font myFont = new Font("Serif", Font.BOLD, 12);
 		    Font newFont = myFont.deriveFont(50F);
-		    
+
 		    g.setFont(newFont);
 		    g.drawString("Hello World! Veeeeeeeeeeeeee", 100, 100);
 		    g.drawString("eeeeeeeeeeeeeeery long text", 100, 150);
@@ -397,7 +402,44 @@ public class Test {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}	    
+		}	 */
+
+		/*int[] postInterval = new int[]{5,3};
+
+		int idxCnt = 0;
+
+		Random rnd = new Random();
+
+		for(int i = 0; i<10; i++){
+			int rndDayCnt = postInterval[0] * (idxCnt/postInterval[1]) + 1 + rnd.nextInt(postInterval[0]);
+			idxCnt++;
+			System.out.println(String.format("i=%d; idx=%d; rnd day=%d",i, idxCnt,rndDayCnt));
+		}*/
+		
+		//System.out.println(synonymizeText(Utils.loadFileAsString(new File("synonym.txt"))));
+		//System.out.println(String.format("%03d", 14));
+		
+		//System.out.println("test   space 33".trim().replace(" ", "-"));
+		
+		//System.out.println(",,,123,,123,".split(",").length);
+		
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		String strValue = (String) map.get("123");
+		strValue = (String) null;
+		System.out.println(strValue);
+	}
+
+	private static String synonymizeText(String text){
+		Pattern ptrn = Pattern.compile("(\\{([^\\{\\}]+)\\})");
+		Matcher mtch = ptrn.matcher(text);
+
+		while(mtch.find()){
+			String[] array = mtch.group(2).split("\\|");
+			text = text.replace(mtch.group(1), array[rnd.nextInt(array.length)]);
+			mtch = ptrn.matcher(text);
+		}
+
+		return text;
 	}
 
 	public static StringBuffer trimLastChars(String input, char char4Trim)

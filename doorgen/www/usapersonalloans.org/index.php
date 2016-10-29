@@ -74,7 +74,7 @@ function fillCityInfo($con, $url_region, $url_city, $template)
 		$page_meta_placename = "<meta name=\"geo.placename\" content=\"$geo_placename\" />";
 		$page_meta_position = "<meta name=\"geo.position\" content=\"$geo_position\" />";
 		$page_meta_region = "<meta name=\"geo.region\" content=\"$geo_region\" />";
-		$page_meta_icbm = "<meta name=\"ICBM\" content=\"$ICBM\" />";
+		$page_meta_icbm = "<meta name=\"ICBM\" content=\"$icbm\" />";
 	}else{
 		return null;
 	}
@@ -104,6 +104,8 @@ function fillCityInfo($con, $url_region, $url_city, $template)
 	
 	$template = preg_replace("/\[CLOSE_CITIES\]/", $citiesListHtml , $template);
 	
+	$template = preg_replace("/\[STATE_NAME_LATIN\]/", $url_region , $template);
+	$template = preg_replace("/\[CITY_NAME_LATIN\]/", $url_city , $template);
 	$clouds = trim($citiesListSrt, ",");
 	
 	return $template;
@@ -224,6 +226,8 @@ function fillArticleList($con, $template)
 			 $updTitle = "Information updated | ";
 		}
 		
+		$title = str_replace('$', '&#36;',$title);
+		
 		$atricles = $atricles."<a href=\"/articles/$url/\">".$updTitle. " " . $title ." (".engdate($post_dt,'jS \of F, h:i:s A').")</a></br>\r\n";
 		/*$atricles = preg_replace("/\[STATE_NAME\]/", $regionName , $atricles);
 		$atricles = preg_replace("/\[STATE_ABBR\]/", $regionName , $atricles);*/
@@ -267,13 +271,12 @@ function fillArticle($con, $url, $template)
 	}
 
 	if(mysqli_stmt_fetch($stmt)) {
+		$title = preg_quote($title);
 		$page_title = $title;
 		$page_meta_keywords = $title;
 		$page_meta_description = $title;
 
-		#echo " " . $title . " - " .$text;
-		
-		$template=preg_replace("/\[ARTICLE_TITLE\]/", $title, $template);
+		$template=preg_replace('/\[ARTICLE_TITLE\]/', preg_quote($page_title), $template);
 		$template=preg_replace("/\[ARTICLE_BODY\]/", $text, $template);
 	}else{
 		#echo "Fetching results failed: (" . mysqli_connect_errno() . ") " . mysqli_connect_error()."<br>";
@@ -346,6 +349,7 @@ function fillCitiesList($con, $stateNameLatin, $template)
 	$cities = $cities. "</tr>";
 	
 	$template=preg_replace("/\[CITIES_LIST\]/", $cities, $template);
+	$template = preg_replace("/\[STATE_NAME_LATIN\]/", $stateNameLatin , $template);
 	
 	$state_name = $region_name;
 	$state_abbr = $abbr;
@@ -435,7 +439,7 @@ $template = file_get_contents("tmpl_main.html");
 
 $template=preg_replace("/\[URL\]/",$_SERVER["HTTP_HOST"], $template);
 $template=preg_replace("/\[URLMAIN\]/",$_SERVER["HTTP_HOST"], $template);
-#$template=preg_replace("/\[HEADER_KEYS\]/",HEADER_KEYS, $template);
+$template=preg_replace("/\[HEADER_KEYS\]/",HEADER_KEYS, $template);
 
 //fetch regions
 $con=mysqli_connect(DB_HOST,DB_USER_NAME,DB_USER_PWD,DB_NAME);
