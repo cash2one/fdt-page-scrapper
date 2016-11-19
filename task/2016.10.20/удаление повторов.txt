@@ -1,0 +1,8 @@
+C:\zenno\soft\DM 3.2\tinyurl_processed_files 200r usa  вот 200к файлов
+
+берЄм с каждого файла 1ую строку и записываем строку и путь
+book_0.txt берЄм The Next Always: Book One of the Inn BoonsBoro Trilogy
+записываем как The Next Always: Book One of the Inn BoonsBoro Trilogy;C:\zenno\soft\DM 3.2\tinyurl_processed_files 200r\book_0.txt
+если будет к примеру 2ой такой файл The Next Always: Book One of the Inn BoonsBoro Trilogy;C:\zenno\soft\DM 3.2\tinyurl_processed_files 200r\book_20.txt
+его удал€ем, ну или удал€ютс€ все дубли и записываютс€ файлы без дублей
+ток кодировка ютф8 (чтобы там францию читало)

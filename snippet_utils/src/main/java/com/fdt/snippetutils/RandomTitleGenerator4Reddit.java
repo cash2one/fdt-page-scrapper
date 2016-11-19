@@ -239,6 +239,37 @@ public class RandomTitleGenerator4Reddit {
 			return strBuf.toString();
 		}
 	}
+	
+	protected static class AlgDivederByRndSpecSymblolsInserter implements IWordConverterAlgorithm{
+
+		@Override
+		public String convert(String input) {
+			StringBuffer strBuf = new StringBuffer();
+
+			int specSmblCnt = input.length() < 6?1:1+input.length()/5;
+			
+			List<Integer> idxList = new ArrayList<Integer>(); 
+			
+			for(int i = 0; i < specSmblCnt; i++){
+				idxList.add(rnd.nextInt(input.length()-1));
+			}
+			
+			int idxChar = 0;
+			
+			for(char oneChar : input.toCharArray()){
+				if(idxList.contains(idxChar)){
+					strBuf.append(oneChar).append(specSymbols[rnd.nextInt(specSymbols.length)]);
+				}else{
+					strBuf.append(oneChar);
+				}
+				
+				idxChar++;
+			}
+
+			return strBuf.toString();
+		}
+	}
+
 
 	protected static class AlgRndCaseCharsInserter implements IWordConverterAlgorithm{
 
