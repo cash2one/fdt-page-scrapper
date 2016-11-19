@@ -20,6 +20,7 @@ import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Matcher;
 
+import javax.annotation.PostConstruct;
 import javax.imageio.ImageIO;
 import javax.xml.xpath.XPathExpressionException;
 
@@ -27,12 +28,26 @@ import org.apache.commons.lang.WordUtils;
 import org.apache.http.NameValuePair;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.FilterType;
+import org.springframework.context.annotation.PropertySource;
 
+import com.fdt.dailymotion.VideoTaskRunner;
 import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.utils.Utils;
 
+@Configuration
+@EnableAutoConfiguration
+@ComponentScan(basePackages = "com.fdt", excludeFilters={
+		  @ComponentScan.Filter(type=FilterType.ASSIGNABLE_TYPE, value=VideoTaskRunner.class)})
+@PropertySource(value="file:${config.file}",ignoreResourceNotFound = true)
 public class ComplexVideoGenerator 
 {
 	static final Logger log = Logger.getLogger(ComplexVideoGenerator.class);
@@ -55,12 +70,13 @@ public class ComplexVideoGenerator
 
 	private String booksFolderPath;
 
-	private final File imagesFolder;
+	private File imagesFolder;
 
-	private final File outputFolder;
+	private File outputFolder;
 
-	private final File clickFile;
+	private File clickFile;
 
+	@Autowired
 	private ProxyFactory proxyFactory;
 
 	private AtomicInteger currentThreadCount = new AtomicInteger(0);
@@ -76,14 +92,31 @@ public class ComplexVideoGenerator
 	private ArrayList<File> booksFileList = new ArrayList<File>();
 
 	private static Random rnd = new Random();
+	
+	@Autowired
+	private ConfigManager cfgMgr;
 
 
 	public static void main(String[] args) {
 		DOMConfigurator.configure("log4j_complex_video_generator.xml");
 		try{
-			System.out.println("Working Directory = " +  System.getProperty("user.dir")); 
-			ComplexVideoGenerator checker = new ComplexVideoGenerator();
+			
+			System.out.println(System.getProperty("app.home"));
+			System.out.println("Working Directory = " + System.getProperty("user.dir"));
+			ApplicationContext ctx = SpringApplication.run(ComplexVideoGenerator.class, args);
+
+			System.out.println("Let's inspect the beans provided by Spring Boot:");
+
+			String[] beanNames = ctx.getBeanDefinitionNames();
+			Arrays.sort(beanNames);
+			for (String beanName : beanNames) {
+				System.out.println(beanName);
+			}
+			
+			DOMConfigurator.configure("log4j.xml");
+			ComplexVideoGenerator checker = ctx.getBean(ComplexVideoGenerator.class);
 			checker.execute();
+			
 		}catch(Exception e){
 			log.error("Error occured during replacer executor: ", e);
 			e.printStackTrace();
@@ -91,8 +124,13 @@ public class ComplexVideoGenerator
 		}
 	}
 
-	public ComplexVideoGenerator() throws IOException {
+	
+	public ComplexVideoGenerator(){
 		super();
+	}
+	
+	@PostConstruct
+	private void init() throws IOException{
 		this.booksFolderPath = ConfigManager.getInstance().getProperty(BOOKS_FOLDER_PATH_LABEL);
 
 		this.imagesFolder = new File(ConfigManager.getInstance().getProperty(IMAGES_FOLDER_PATH_LABEL));
