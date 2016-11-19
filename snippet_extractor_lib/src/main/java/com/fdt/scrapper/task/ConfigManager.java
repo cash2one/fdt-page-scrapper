@@ -34,9 +34,11 @@ public class ConfigManager
 		synchronized (this){ 
 			InputStream is = null;
 			try {
-				File configFile = new File("./config.ini");
-				if(!configFile.exists()){
+				File configFile = null;
+				if(System.getProperty("config.file") != null){
 					configFile = new File(System.getProperty("config.file"));
+				}else{
+					configFile = new File("./config.ini");
 				}
 				is = new FileInputStream(configFile);
 				//is = new FileInputStream(ClassLoader.getSystemClassLoader().getResource(System.getProperty("config.file")).getFile());

@@ -212,7 +212,7 @@ public class AudioSpeecherCreator {
 
 	private boolean generateSpeech(String sentence, Integer lang, Integer speed, String requestToken, File outputFolder, String fileName, Proxy proxy) throws Exception {
 		HttpURLConnection conn = null;
-		String requestUrl = "http://api.naturalreaders.com/v2/tts/?t=" + URLEncoder.encode(sentence,"UTF8") + "&r=1&s=1&requesttoken=" + requestToken;
+		String requestUrl = "http://api.naturalreaders.com/v2/tts/?t=" + URLEncoder.encode(sentence,"UTF8") + "&r="+lang.toString()+"&s="+ speed.toString() +"&requesttoken=" + requestToken;
 		try{
 			//post news
 			URL url = new URL(requestUrl);
@@ -222,7 +222,7 @@ public class AudioSpeecherCreator {
 			conn.setReadTimeout(120000);
 			conn.setConnectTimeout(120000);
 			conn.setRequestMethod("GET");
-			conn.setDoInput(true);
+			conn.setDoInput(false);
 			conn.setDoOutput(true);
 
 			conn.setRequestProperty("Host", "api.naturalreaders.com");
@@ -231,7 +231,7 @@ public class AudioSpeecherCreator {
 			conn.setRequestProperty("Accept", "aaudio/webm,audio/ogg,audio/wav,audio/*;q=0.9,application/ogg;q=0.7,video/*;q=0.6,*/*;q=0.5");
 			conn.setRequestProperty("Referer","http://www.naturalreaders.com/index.html");
 
-			ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(5);
+			/*ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(5);
 			nameValuePairs.add(new BasicNameValuePair("t", "\"" + sentence + "\""));
 			nameValuePairs.add(new BasicNameValuePair("r", lang.toString()));
 			nameValuePairs.add(new BasicNameValuePair("s", speed.toString()));
@@ -242,7 +242,7 @@ public class AudioSpeecherCreator {
 			writer.write(getQuery(nameValuePairs));
 			writer.flush();
 			writer.close();
-			os.close();
+			os.close();*/
 
 			//int code = conn.getResponseCode();
 

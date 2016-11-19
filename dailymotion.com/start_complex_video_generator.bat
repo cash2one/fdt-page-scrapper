@@ -1,3 +1,3 @@
 title "COMPLEX VIDEO GENERATOR v0.1"
-java -cp "../java/*" com.fdt.dailymotion.util.ComplexVideoGenerator config_complex_generator.ini
+java -Dconfig.file=config_complex_generator.ini -cp "../java_new/*" com.fdt.dailymotion.util.ComplexVideoGenerator
 pause 
