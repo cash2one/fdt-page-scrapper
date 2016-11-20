@@ -224,8 +224,6 @@ public class ComplexVideoGenerator
 		{
 			boolean isErrorExist = false;
 
-			ProxyConnector proxyConnector = null;
-
 			int repeatCount = 0;
 
 			//TODO Check that folder was created
@@ -235,10 +233,6 @@ public class ComplexVideoGenerator
 				do{
 					repeatCount++;
 					isErrorExist = false;
-					proxyConnector = proxyFactory.getRandomProxyConnector();
-
-					String proxyTypeStr = ConfigManager.getInstance().getProperty("proxy_type");
-					Proxy proxy = null;
 
 					try{
 						// Create private folder for book
@@ -289,13 +283,13 @@ public class ComplexVideoGenerator
 						log.warn("Error occured during generating video for file: " + bookFile.getName(), e);
 					}
 					finally{
-						if(proxyConnector != null){
-							proxyFactory.releaseProxy(proxyConnector);
-							proxyConnector = null;
-						}
 					}
 				}
 				while(isErrorExist && repeatCount <= 10);
+			}
+			catch(Exception e){
+				isErrorExist = true;
+				log.warn("Error occured during generating video for file: " + bookFile.getName(), e);
 			}finally{
 				//TODO if process was not successfull - delete private folder
 				generator.decThrdCnt();
@@ -318,7 +312,8 @@ public class ComplexVideoGenerator
 						voice,
 						speed,
 						audioOutFolder, 
-						this.maxThreadCount
+						this.maxThreadCount,
+						proxyFactory
 						);
 
 		checker.execute();

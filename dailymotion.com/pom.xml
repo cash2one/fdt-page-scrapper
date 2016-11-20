@@ -128,6 +128,22 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 							<overWriteIfNewer>true</overWriteIfNewer>
 						</configuration>
 					</execution>
+					<execution>
+						<id>build-classpath</id>
+			            <phase>clean</phase>
+			            <goals>
+			              <goal>build-classpath</goal>
+			            </goals>
+			            <configuration>
+			            	<outputFile>classpath4scripts</outputFile>
+			            	<pathSeparator>;</pathSeparator>
+			            	<regenerateFile>true</regenerateFile>
+			            	<prefix>C:/zenno/soft/java_new_new</prefix>
+			            	<fileSeparator>/</fileSeparator>
+			            	<includeTypes>jar</includeTypes>
+			              <!-- configure the plugin here -->
+			            </configuration>
+					</execution>
 				</executions>
 			</plugin>
 		</plugins>
@@ -138,6 +154,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
 	<repositories>
 		<repository>
 			<id>com.springsource.repository.bundles.release</id>

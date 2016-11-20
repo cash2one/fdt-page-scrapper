@@ -86,7 +86,7 @@ public class AudioSpeecherCreator {
 		}
 	}
 
-	public AudioSpeecherCreator(List<String> sentences, int audioVoice, int audioSpeed, File outputFolderPath, int maxThreadCount) throws IOException {
+	public AudioSpeecherCreator(List<String> sentences, int audioVoice, int audioSpeed, File outputFolderPath, int maxThreadCount, ProxyFactory proxyFactory) throws IOException {
 		super();
 		this.sentences = sentences;
 		this.outputFolder = outputFolderPath;
@@ -95,6 +95,8 @@ public class AudioSpeecherCreator {
 
 		this.audioVoice = audioVoice;
 		this.audioSpeed = audioSpeed;
+		
+		this.proxyFactory = proxyFactory;
 	}
 
 	private void incThrdCnt(){
@@ -222,7 +224,7 @@ public class AudioSpeecherCreator {
 			conn.setReadTimeout(120000);
 			conn.setConnectTimeout(120000);
 			conn.setRequestMethod("GET");
-			conn.setDoInput(false);
+			conn.setDoInput(true);
 			conn.setDoOutput(true);
 
 			conn.setRequestProperty("Host", "api.naturalreaders.com");

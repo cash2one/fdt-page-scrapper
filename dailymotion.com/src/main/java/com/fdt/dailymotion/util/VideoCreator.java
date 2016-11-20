@@ -16,8 +16,6 @@ import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
 import javax.sound.sampled.AudioFileFormat;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
@@ -570,6 +568,7 @@ public class VideoCreator {
 		Long microseconds = 0L;
 
 		AudioFileFormat fileFormat = AudioSystem.getAudioFileFormat(audioFile);
+		log.info(String.format("File '%s' has format '%s'", audioFile.getName(), fileFormat));
 		if (fileFormat instanceof TAudioFileFormat) {
 			Map<?, ?> properties = ((TAudioFileFormat) fileFormat).properties();
 			String key = "duration";

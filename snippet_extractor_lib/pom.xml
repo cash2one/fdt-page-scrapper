@@ -8,7 +8,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		<artifactId>parent</artifactId>
 		<version>1.0</version>
 	</parent>
-
+ 
 	<artifactId>snippet_extractor_lib</artifactId>
 	<packaging>jar</packaging>
 
@@ -150,6 +150,22 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 							<overWriteSnapshots>false</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
 						</configuration>
+					</execution>
+					<execution>
+						<id>build-classpath</id>
+			            <phase>clean</phase>
+			            <goals>
+			              <goal>build-classpath</goal>
+			            </goals>
+			            <configuration>
+			            	<outputFile>classpath4scripts</outputFile>
+			            	<pathSeparator>;</pathSeparator>
+			            	<regenerateFile>true</regenerateFile>
+			            	<prefix>C:/zenno/soft/java_new_new</prefix>
+			            	<fileSeparator>/</fileSeparator>
+			            	<includeTypes>jar</includeTypes>
+			              <!-- configure the plugin here -->
+			            </configuration>
 					</execution>
 				</executions>
 			</plugin>
