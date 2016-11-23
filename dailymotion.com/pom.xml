@@ -63,9 +63,21 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<version>1.0</version>
 		</dependency>
 		<dependency>
-			<groupId>javax.media</groupId>
-			<artifactId>jmf</artifactId>
-			<version>2.1.1e</version>
+		  <groupId>com.mpatric</groupId>
+		  <artifactId>mp3agic</artifactId>
+		  <version>0.8.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.humble/humble-video-all -->
+		<dependency>
+		    <groupId>io.humble</groupId>
+		    <artifactId>humble-video-all</artifactId>
+		    <version>0.2.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.humble/humble-video-arch-x86_64-w64-mingw32 -->
+		<dependency>
+		    <groupId>io.humble</groupId>
+		    <artifactId>humble-video-arch-x86_64-w64-mingw32</artifactId>
+		    <version>0.2.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.openimaj/xuggle-video -->
 		<dependency>

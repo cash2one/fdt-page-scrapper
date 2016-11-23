@@ -275,8 +275,8 @@ public class ComplexVideoGenerator
 						generateAudio(speech, audioVoice, audioSpeed, audioGenFolder);
 
 						//Generate video
-						VideoCreator.makeVideoByOrder(new File(this.privateFolder, "video.mp4").getAbsolutePath(), this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
-
+						//VideoCreator.makeVideoByOrder(new File(this.privateFolder, "video_new.mp4").getAbsolutePath(), this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
+						VideoCreator.recordScreen("video_new.mov","mov", this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
 					}
 					catch(Exception e){
 						isErrorExist = true;

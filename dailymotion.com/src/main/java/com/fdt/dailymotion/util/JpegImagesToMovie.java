@@ -1,6 +1,6 @@
-package com.fdt.dailymotion.util;
+/*package com.fdt.dailymotion.util;
 
-/*
+
  * @(#)JpegImagesToMovie.java   1.3 01/03/13
  *
  * Copyright (c) 1999-2001 Sun Microsystems, Inc. All Rights Reserved.
@@ -28,7 +28,7 @@ package com.fdt.dailymotion.util;
  * the design, construction, operation or maintenance of any nuclear
  * facility. Licensee represents and warrants that it will not use or
  * redistribute the Software for such purposes.
- */
+ 
 
 import java.awt.Dimension;
 import java.io.File;
@@ -64,10 +64,10 @@ import javax.media.protocol.PullBufferStream;
 
 import org.apache.log4j.Logger;
 
-/**
+*//**
  * This program takes a list of JPEG image files and convert them into a
  * QuickTime movie.
- */
+ *//*
 public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 	
 	private static final Logger log = Logger.getLogger(JpegImagesToMovie.class);
@@ -160,9 +160,9 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		return true;
 	}
 
-	/**
+	*//**
 	 * Create the DataSink.
-	 */
+	 *//*
 	DataSink createDataSink(Processor p, MediaLocator outML) {
 
 		DataSource ds;
@@ -190,10 +190,10 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 	Object waitSync = new Object();
 	boolean stateTransitionOK = true;
 
-	/**
+	*//**
 	 * Block until the processor has transitioned to the given state. Return
 	 * false if the transition failed.
-	 */
+	 *//*
 	boolean waitForState(Processor p, int state) {
 		synchronized (waitSync) {
 			try {
@@ -205,9 +205,9 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		return stateTransitionOK;
 	}
 
-	/**
+	*//**
 	 * Controller Listener.
-	 */
+	 *//*
 	public void controllerUpdate(ControllerEvent evt) {
 
 		if (evt instanceof ConfigureCompleteEvent
@@ -232,9 +232,9 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 	boolean fileDone = false;
 	boolean fileSuccess = true;
 
-	/**
+	*//**
 	 * Block until file writing is done.
-	 */
+	 *//*
 	boolean waitForFileDone() {
 		synchronized (waitFileSync) {
 			try {
@@ -246,9 +246,9 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		return fileSuccess;
 	}
 
-	/**
+	*//**
 	 * Event handler for the file writer.
-	 */
+	 *//*
 	public void dataSinkUpdate(DataSinkEvent evt) {
 
 		if (evt instanceof EndOfStreamEvent) {
@@ -265,7 +265,7 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		}
 	}
 
-	/*public static void main(String args[]) {
+	public static void main(String args[]) {
 
         if (args.length == 0)
             prUsage();
@@ -335,16 +335,16 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
         imageToMovie.doIt(width, height, frameRate, inputFiles, oml);
 
         System.exit(0);
-    }*/
+    }
 
 	static void prUsage() {
 		log.error("Usage: java JpegImagesToMovie -w <width> -h <height> -f <frame rate> -o <output URL> <input JPEG file 1> <input JPEG file 2> ...");
 		System.exit(-1);
 	}
 
-	/**
+	*//**
 	 * Create a media locator from the given string.
-	 */
+	 *//*
 	public static MediaLocator createMediaLocator(String url) {
 
 		MediaLocator ml;
@@ -370,10 +370,10 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 	// Inner classes.
 	// /////////////////////////////////////////////
 
-	/**
+	*//**
 	 * A DataSource to read from a list of JPEG image files and turn that into a
 	 * stream of JMF buffers. The DataSource is not seekable or positionable.
-	 */
+	 *//*
 	class ImageDataSource extends PullBufferDataSource {
 
 		ImageSourceStream streams[];
@@ -390,10 +390,10 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 			return null;
 		}
 
-		/**
+		*//**
 		 * Content type is of RAW since we are sending buffers of video frames
 		 * without a container format.
-		 */
+		 *//*
 		public String getContentType() {
 			return ContentDescriptor.RAW;
 		}
@@ -410,17 +410,17 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		public void stop() {
 		}
 
-		/**
+		*//**
 		 * Return the ImageSourceStreams.
-		 */
+		 *//*
 		public PullBufferStream[] getStreams() {
 			return streams;
 		}
 
-		/**
+		*//**
 		 * We could have derived the duration from the number of frames and
 		 * frame rate. But for the purpose of this program, it's not necessary.
-		 */
+		 *//*
 		public Time getDuration() {
 			return DURATION_UNKNOWN;
 		}
@@ -434,9 +434,9 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 		}
 	}
 
-	/**
+	*//**
 	 * The source stream to go along with ImageDataSource.
-	 */
+	 *//*
 	class ImageSourceStream implements PullBufferStream {
 
 		Vector images;
@@ -457,17 +457,17 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 					(float) frameRate);
 		}
 
-		/**
+		*//**
 		 * We should never need to block assuming data are read from files.
-		 */
+		 *//*
 		public boolean willReadBlock() {
 			return false;
 		}
 
-		/**
+		*//**
 		 * This is called from the Processor to read a frame worth of video
 		 * data.
-		 */
+		 *//*
 		public void read(Buffer buf) throws IOException {
 
 			// Check if we've finished all the frames.
@@ -517,9 +517,9 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 			raFile.close();
 		}
 
-		/**
+		*//**
 		 * Return the format of each video frame. That will be JPEG.
-		 */
+		 *//*
 		public Format getFormat() {
 			return format;
 		}
@@ -544,4 +544,4 @@ public class JpegImagesToMovie implements ControllerListener, DataSinkListener {
 			return null;
 		}
 	}
-}
+}*/

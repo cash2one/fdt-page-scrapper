@@ -1,4 +1,4 @@
-package com.fdt.dailymotion.util;
+/*package com.fdt.dailymotion.util;
 
 import javax.media.ConfigureCompleteEvent;
 import javax.media.ControllerEvent;
@@ -129,7 +129,7 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		videoProcessor.close();
 		audioProcessor.close();
 		processor.close();
-		/*File newFile = new File(tmpFileName.substring(5));
+		File newFile = new File(tmpFileName.substring(5));
 		File oldFile = new File(videoML.getURL().toString().substring(5)); 
 		//delete old file
 
@@ -137,7 +137,7 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		oldFile.delete();
 
 		//rename new file
-		FileUtils.moveFile(newFile, oldFile);*/
+		FileUtils.moveFile(newFile, oldFile);
 	}
 
 	Object waitFileSync = new Object();
@@ -146,9 +146,9 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 	Object waitSync = new Object();
 	boolean stateTransitionOK = true;
 
-	/**
+	*//**
 	 * Block until file writing is done.
-	 */
+	 *//*
 	boolean waitForFileDone() {
 		synchronized (waitFileSync) {
 			try {
@@ -160,9 +160,9 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		return fileSuccess;
 	}
 
-	/**
+	*//**
 	 * Event handler for the file writer.
-	 */
+	 *//*
 	public void dataSinkUpdate(DataSinkEvent evt) {
 
 		if (evt instanceof EndOfStreamEvent) {
@@ -199,4 +199,4 @@ public class AudioVideoMerger implements ControllerListener, DataSinkListener{
 		}
 
 	}
-}
+}*/

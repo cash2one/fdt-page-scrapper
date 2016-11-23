@@ -214,11 +214,11 @@ public class AudioSpeecherCreator {
 
 	private boolean generateSpeech(String sentence, Integer lang, Integer speed, String requestToken, File outputFolder, String fileName, Proxy proxy) throws Exception {
 		HttpURLConnection conn = null;
-		String requestUrl = "http://api.naturalreaders.com/v2/tts/?t=" + URLEncoder.encode(sentence,"UTF8") + "&r="+lang.toString()+"&s="+ speed.toString() +"&requesttoken=" + requestToken;
+		String requestUrl = "http://api.naturalreaders.com/v2/tts?t=" + URLEncoder.encode(sentence,"UTF8") + "&r="+lang.toString()+"&s="+ speed.toString() +"&requesttoken=" + requestToken;
 		try{
 			//post news
 			URL url = new URL(requestUrl);
-			HttpURLConnection.setFollowRedirects(false);
+			HttpURLConnection.setFollowRedirects(true);
 			conn = (HttpURLConnection) url.openConnection(proxy);
 			log.trace("Connection created.");
 			conn.setReadTimeout(120000);
@@ -230,8 +230,8 @@ public class AudioSpeecherCreator {
 			conn.setRequestProperty("Host", "api.naturalreaders.com");
 			conn.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0"); 
 			conn.setRequestProperty("Accept-Language", "en-US,en;q=0.9");
-			conn.setRequestProperty("Accept", "aaudio/webm,audio/ogg,audio/wav,audio/*;q=0.9,application/ogg;q=0.7,video/*;q=0.6,*/*;q=0.5");
-			conn.setRequestProperty("Referer","http://www.naturalreaders.com/index.html");
+			conn.setRequestProperty("Accept", "audio/webm,audio/ogg,audio/wav,audio/*;q=0.9,application/ogg;q=0.7,video/*;q=0.6,*/*;q=0.5");
+			conn.setRequestProperty("Referer","https://www.naturalreaders.com/index.html");
 
 			/*ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(5);
 			nameValuePairs.add(new BasicNameValuePair("t", "\"" + sentence + "\""));
