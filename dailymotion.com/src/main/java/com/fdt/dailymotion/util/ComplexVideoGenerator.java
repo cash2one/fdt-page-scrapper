@@ -42,11 +42,12 @@ import com.fdt.scrapper.proxy.ProxyConnector;
 import com.fdt.scrapper.proxy.ProxyFactory;
 import com.fdt.scrapper.task.ConfigManager;
 import com.fdt.utils.Utils;
+import com.xuggle.xuggler.Converter;
 
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan(basePackages = "com.fdt", excludeFilters={
-		  @ComponentScan.Filter(type=FilterType.ASSIGNABLE_TYPE, value=VideoTaskRunner.class)})
+		@ComponentScan.Filter(type=FilterType.ASSIGNABLE_TYPE, value=VideoTaskRunner.class)})
 @PropertySource(value="file:${config.file}",ignoreResourceNotFound = true)
 public class ComplexVideoGenerator 
 {
@@ -92,7 +93,7 @@ public class ComplexVideoGenerator
 	private ArrayList<File> booksFileList = new ArrayList<File>();
 
 	private static Random rnd = new Random();
-	
+
 	@Autowired
 	private ConfigManager cfgMgr;
 
@@ -100,7 +101,7 @@ public class ComplexVideoGenerator
 	public static void main(String[] args) {
 		DOMConfigurator.configure("log4j_complex_video_generator.xml");
 		try{
-			
+
 			System.out.println(System.getProperty("app.home"));
 			System.out.println("Working Directory = " + System.getProperty("user.dir"));
 			ApplicationContext ctx = SpringApplication.run(ComplexVideoGenerator.class, args);
@@ -112,11 +113,11 @@ public class ComplexVideoGenerator
 			for (String beanName : beanNames) {
 				System.out.println(beanName);
 			}
-			
+
 			DOMConfigurator.configure("log4j.xml");
 			ComplexVideoGenerator checker = ctx.getBean(ComplexVideoGenerator.class);
 			checker.execute();
-			
+
 		}catch(Exception e){
 			log.error("Error occured during replacer executor: ", e);
 			e.printStackTrace();
@@ -124,11 +125,11 @@ public class ComplexVideoGenerator
 		}
 	}
 
-	
+
 	public ComplexVideoGenerator(){
 		super();
 	}
-	
+
 	@PostConstruct
 	private void init() throws IOException{
 		this.booksFolderPath = ConfigManager.getInstance().getProperty(BOOKS_FOLDER_PATH_LABEL);
@@ -147,8 +148,8 @@ public class ComplexVideoGenerator
 
 		this.maxThreadCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
 	}
-	
-	
+
+
 
 	private void execute() throws IOException, InterruptedException
 	{
@@ -237,11 +238,11 @@ public class ComplexVideoGenerator
 					try{
 						// Create private folder for book
 						this.privateFolder.mkdir();
-						clearFolder(this.privateFolder);
+						//clearFolder(this.privateFolder);
 						this.audioGenFolder.mkdir();
-						clearFolder(this.audioGenFolder);
+						//clearFolder(this.audioGenFolder);
 						this.imagesGenFolder.mkdir();
-						clearFolder(this.imagesGenFolder);
+						//clearFolder(this.imagesGenFolder);
 
 						//Parse input book file
 						ArrayList<String> speech = parseBookFile(this.bookFile, this.clickFile, 150);
@@ -273,10 +274,13 @@ public class ComplexVideoGenerator
 
 						// Generate audio[1..n]
 						generateAudio(speech, audioVoice, audioSpeed, audioGenFolder);
-
-						//Generate video
+						//VideoCreator.makeVideoByOrder(new File(this.privateFolder, "video_new.mov").getAbsolutePath(), this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
+						VideoCreator.recordScreen(new File(this.privateFolder, "video_new.mov").getAbsolutePath(),null, this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
+						//VideoCreator.makeVideoByOrder("video_new_old_gen.mov", this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
+						//transcode(new File("video_new_old_gen.mov"), new File("video_new_old_gen_converted.mov"));
+						
 						//VideoCreator.makeVideoByOrder(new File(this.privateFolder, "video_new.mp4").getAbsolutePath(), this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
-						VideoCreator.recordScreen("video_new.mov","mov", this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
+
 					}
 					catch(Exception e){
 						isErrorExist = true;
@@ -295,6 +299,36 @@ public class ComplexVideoGenerator
 				generator.decThrdCnt();
 			}
 		}
+	}
+
+	public void transcode(File inputFile, File presetsFile) {
+		//This is the converter object we will use.
+		Converter converter = new Converter();
+
+		//These are the arguments to pass to the converter object.
+		//For H264 transcoding, the -vpreset option is very
+		//important. Here, presetsFile is a File object corresponding
+		//to a libx264 video presets file. These are in the
+		// /usr/local/share/ffmpeg directory.
+		String[] arguments = {
+				inputFile.getAbsolutePath(),
+				"-acodec", "libfaac",
+				"-asamplerate", "44100",
+				"-vcodec", "libx264",
+				//"-vpreset", presetsFile.getAbsolutePath(),
+				inputFile.getName() + ".mp4"
+		};
+
+		try {
+			//Finally, we run the transcoder with the options we provided.
+			converter.run(
+					converter.parseOptions(
+							converter.defineOptions(), arguments)
+					);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	/**

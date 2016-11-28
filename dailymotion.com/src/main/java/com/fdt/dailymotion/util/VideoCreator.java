@@ -31,13 +31,16 @@ import com.xuggle.xuggler.IAudioSamples;
 import com.xuggle.xuggler.ICodec;
 import com.xuggle.xuggler.IContainer;
 import com.xuggle.xuggler.IPacket;
+import com.xuggle.xuggler.IPixelFormat;
 import com.xuggle.xuggler.IStream;
 import com.xuggle.xuggler.IStreamCoder;
+import com.xuggle.xuggler.IVideoPicture;
+import com.xuggle.xuggler.video.ConverterFactory;
+import com.xuggle.xuggler.video.IConverter;
 
 import io.humble.video.AudioChannel.Layout;
 import io.humble.video.AudioFormat.Type;
 import io.humble.video.Codec;
-import io.humble.video.Codec.ID;
 import io.humble.video.Coder.Flag;
 import io.humble.video.Decoder;
 import io.humble.video.Demuxer;
@@ -50,6 +53,7 @@ import io.humble.video.MediaPacket;
 import io.humble.video.MediaPicture;
 import io.humble.video.Muxer;
 import io.humble.video.MuxerFormat;
+import io.humble.video.MuxerStream;
 import io.humble.video.PixelFormat;
 import io.humble.video.Rational;
 import io.humble.video.awt.MediaPictureConverter;
@@ -69,7 +73,7 @@ public class VideoCreator {
 	private static final Logger log = Logger.getLogger(VideoCreator.class);
 
 	private final static int audioStreamIndex = 1;
-	private final static int audioStreamId = 0;
+	private final static int audioStreamId = 1;
 	private final static int channelCount = 2;
 
 	//public final static int successBitrate = 262144;
@@ -90,9 +94,6 @@ public class VideoCreator {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-
-		File image;
-		File video;
 
 		if(args.length < 12){
 			System.out.println("НЕ хватает аргументов для запуска. Используйте слудующий порядок аргументов:\r\n" + 
@@ -332,7 +333,9 @@ public class VideoCreator {
 
 		int frameCount = (minDur + rnd.nextInt(maxDur-minDur + 1))*framePerSec;
 
-		writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, VIDEO_WIDTH, VIDEO_HEIGHT);
+		//old
+		//writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, VIDEO_WIDTH, VIDEO_HEIGHT);
+		writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_H264, VIDEO_WIDTH, VIDEO_HEIGHT);
 
 		//adding audion files
 		if(addAudio){
@@ -435,13 +438,10 @@ public class VideoCreator {
 		long startTime = System.currentTimeMillis();
 		IMediaWriter writer = ToolFactory.makeWriter(filePath);
 
-		Random rnd = new Random();
-		//framePerSec = 15;
-
-		writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_MPEG4, VIDEO_WIDTH, VIDEO_HEIGHT);
+		writer.addVideoStream(0, 0, ICodec.ID.CODEC_ID_FLV1, VIDEO_WIDTH, VIDEO_HEIGHT);
 
 		//adding audion files
-		//addAudios(audioFiles, writer);
+		addAudios(audioFiles, writer);
 
 		//for (int index = 0; index < SECONDS_TO_RUN_FOR * FRAME_RATE; index++) {
 		BufferedImage screen = null;
@@ -462,10 +462,13 @@ public class VideoCreator {
 
 			screen = ImageIO.read(imageFiles[i]);
 			bgrScreen = convertToType(screen, BufferedImage.TYPE_3BYTE_BGR);
-			screen = null;
 
-			for(int j = 0; j < frameCnt; j++){
-				writer.encodeVideo(0, bgrScreen, totalDur + j*frameDur, TimeUnit.MILLISECONDS);
+			IConverter converter = ConverterFactory.createConverter(bgrScreen, IPixelFormat.Type.YUV420P); 
+			IVideoPicture videoPic = converter.toPicture(bgrScreen, totalDur);
+
+			for(int j = 0; j < frameCnt; j=j+10){
+				videoPic.setTimeStamp((totalDur + j*frameDur)*1000L);
+				writer.encodeVideo(0, videoPic);
 			}
 
 			totalDur += durationAudio;
@@ -481,7 +484,8 @@ public class VideoCreator {
 		}
 
 		// tell the writer to close and write the trailer if needed
-		writer.setForceInterleave(false);
+		//writer.setForceInterleave(false);
+
 		writer.flush();
 		writer.close();
 		writer = null;
@@ -492,7 +496,6 @@ public class VideoCreator {
 
 		return new Integer[]{(int)totalDur, framePerSec};
 	}
-
 
 	/*private static void recordScreen(String filename, String formatname,
 			String codecname, int duration, int snapsPerSecond) throws AWTException, InterruptedException, IOException {*/
@@ -513,9 +516,10 @@ public class VideoCreator {
 		 */
 		final MuxerFormat format = muxer.getFormat();
 
-
+		//final Codec codec = Codec.findDecodingCodec(format.getDefaultVideoCodecId());
+		//final Codec codec = Codec.findEncodingCodec(ID.CODEC_ID_MSMPEG4V3);
 		final Codec codec = Codec.findEncodingCodec(format.getDefaultVideoCodecId());
-		//final Codec codec = Codec.findDecodingCodec(ID.CODEC_ID_MPEG2VIDEO);
+		//final Codec codec = Codec.findEncodingCodec(ID.CODEC_ID_MSMPEG4V3);
 		/**
 		 * Now that we know what codec, we need to create an encoder
 		 */
@@ -535,6 +539,8 @@ public class VideoCreator {
 		// We are going to use 420P as the format because that's what most video formats these days use
 		final PixelFormat.Type pixelformat = PixelFormat.Type.PIX_FMT_YUV420P;
 		encoder.setPixelFormat(pixelformat);
+		/*int numSFR = codec.getNumSupportedVideoFrameRates();
+		Rational testTimeBase1 = codec.getSupportedVideoFrameRate(1);*/
 		encoder.setTimeBase(framerate);
 		//encoder.setChannels(1);
 
@@ -546,17 +552,29 @@ public class VideoCreator {
 			if(findType == null) {
 				findType = type;
 			}
-			if(type == Type.SAMPLE_FMT_S16) {
+			if(type == Type.SAMPLE_FMT_S16P) {
 				findType = type;
 				break;
 			}
 		}
 
+
+		Integer sampleRate = null;
+		for(Integer rate : audioEncoder.getCodec().getSupportedAudioSampleRates()) {
+			if(sampleRate == null) {
+				sampleRate = rate;
+			}
+			if(rate == 22050) {
+				sampleRate = rate;
+				break;
+			}
+		}
+
+		int sampleRateFound = sampleRate;
+
 		log.info(findType.toString());
 
-		int sampleRate = 16000;
-
-		audioEncoder.setSampleRate(sampleRate);
+		audioEncoder.setSampleRate(sampleRateFound);
 		audioEncoder.setChannels(1);
 		audioEncoder.setChannelLayout(Layout.CH_LAYOUT_MONO);
 		audioEncoder.setSampleFormat(findType);
@@ -572,42 +590,43 @@ public class VideoCreator {
 		/** Open the encoder. */
 		encoder.open(null, null);
 
+		/** Make converter work correctly **/
+		audioEncoder.setTimeBase(encoder.getTimeBase());
 		/** Open audio encoder. */
 		audioEncoder.open(null, null);
-		
+
 		/** Add this stream to the muxer. */
 		muxer.addNewStream(encoder);
 
-		//add audio encoder
+		/** Add this audio stream to the muxer. */
 		muxer.addNewStream(audioEncoder);
 
 		/** And open the muxer for business. */
 		muxer.open(null, null);
 
-		
+
 		/** Next, we need to make sure we have the right MediaPicture format objects
 		 * to encode data with. Java (and most on-screen graphics programs) use some
 		 * variant of Red-Green-Blue image encoding (a.k.a. RGB or BGR). Most video
 		 * codecs use some variant of YCrCb formatting. So we're going to have to
 		 * convert. To do that, we'll introduce a MediaPictureConverter object later. object.
 		 */
-		MediaPictureConverter videoConverter = null;
 		final MediaPicture picture = MediaPicture.make(
 				encoder.getWidth(),
 				encoder.getHeight(),
 				pixelformat);
-		picture.setTimeBase(framerate);
+		picture.setTimeBase(Rational.make(1, framePerSec*2));
+		picture.setTimeStamp(0L);
 
 		/**
 		 * Start by creating a container object, in this case a demuxer since
 		 * we are reading, to get audio data from.
 		 */
 		Demuxer demuxer = Demuxer.make();
-
 		/*
 		 * Open the demuxer with the filename passed on.
 		 */
-		demuxer.open(audioFiles[0].getAbsolutePath(), null, false, true, null, null);
+		demuxer.open(audioFiles[3].getCanonicalPath(), null, false, true, null, null);
 
 		/*
 		 * Query how many streams the call to open found
@@ -646,6 +665,8 @@ public class VideoCreator {
 				audioDecoder.getChannelLayout(),
 				audioDecoder.getSampleFormat());
 
+		//audioDecoder.setTimeBase(Rational.make(1, audioDecoder.getSampleRate()));
+
 		/*
 		 * Now, we start walking through the container looking at each packet. This
 		 * is a decoding loop, and as you work with Humble you'll write a lot
@@ -656,12 +677,13 @@ public class VideoCreator {
 		 * unnecessary reallocation.
 		 */
 
-
 		/** Now begin our main loop of taking screen snaps.
 		 * We're going to encode and then write out any resulting packets. */
 		MediaPacket packetVideo = MediaPacket.make();
 
 		long totalAddedFrames = 0;
+
+		MediaPictureConverter videoConverter = null;
 
 		for (int i = 0; i < imageFiles.length; i++) {
 			/** Make the screen capture && convert image to TYPE_3BYTE_BGR */
@@ -674,98 +696,124 @@ public class VideoCreator {
 			if (videoConverter == null)
 				videoConverter = MediaPictureConverterFactory.createConverter(screen, picture);
 
-			for(int j = 0; j < (durationAudio / 1000.0) / framerate.getDouble(); j++){
-				videoConverter.toPicture(picture, screen, totalAddedFrames);
+			videoConverter.toPicture(picture, screen, totalAddedFrames);
+
+			for(int j = 0; j < (durationAudio / 1000.0) / (framerate.getDouble()); j++){
+				picture.setTimeStamp(totalAddedFrames);
+
+				do {
+					encoder.encode(packetVideo, picture);	
+					if (packetVideo.isComplete()){
+						muxer.write(packetVideo, false);
+					}
+				} while (packetVideo.isComplete());
+
 				totalAddedFrames++;
 			}
-
-			do {
-				encoder.encode(packetVideo, picture);	
-				if (packetVideo.isComplete())
-					muxer.write(packetVideo, false);
-			} while (packetVideo.isComplete());
 		}
+
 		/** Encoders, like decoders, sometimes cache pictures so it can do the right key-frame optimizations.
 		 * So, they need to be flushed as well. As with the decoders, the convention is to pass in a null
 		 * input until the output is not complete.
 		 */
 		do {
 			encoder.encode(packetVideo, null);
-			if (packetVideo.isComplete())
+
+			if (packetVideo.isComplete()){
 				muxer.write(packetVideo,  false);
+			}
+
 		} while (packetVideo.isComplete());
-		
-		final MediaAudioConverter converter =
-		        MediaAudioConverterFactory.createConverter(
-		            MediaAudioConverterFactory.DEFAULT_JAVA_AUDIO,
-		            samples);
 
 
-		
 		MediaPacket packetAudio = MediaPacket.make();
 		MediaPacket ioPacket = MediaPacket.make();
 
 		MediaAudio resampled = null;
 
-		/*for (int i = 0; i < audioFiles.length; i++) {
-			*//**
+		//audioDecoder.open(null, null);
+
+		long lastTimeStamp = 0;
+		long lastTimeStampTmp = 0;
+
+		for (int i = 0; i < audioFiles.length; i++) {
+			/**
 			 * Open the demuxer with the filename passed on.
-			 *//*
+			 */
 			demuxer = Demuxer.make();
 			demuxer.open(audioFiles[i].getCanonicalPath(), null, false, true, null, null);
 
+			audioDecoder = demuxer.getStream(0).getDecoder();
+			audioDecoder.open(null, null);
+
+			int bytesRead = 0;
+			int offset = 0;
+
 			while(demuxer.read(ioPacket) >= 0) {
-				if (ioPacket.getStreamIndex() == audioStreamId)
-				{
-					
-					 * A packet can actually contain multiple sets of samples (or frames of samples
-					 * in audio-decoding speak).  So, we may need to call decode audio multiple
-					 * times at different offsets in the packet's data.  We capture that here.
-					 
-					int offset = 0;
-					int bytesRead = 0;
-					do {
-						bytesRead += audioDecoder.decode(samples, ioPacket, offset);
+				/** A packet can actually contain multiple sets of samples (or frames of samples
+				 * in audio-decoding speak).  So, we may need to call decode audio multiple
+				 * times at different offsets in the packet's data.  We capture that here.
+				 */					 
+				offset = 0;
+				bytesRead = 0;
 
-						if (samples.isComplete()) {
-							if(samples.getSampleRate() != audioEncoder.getSampleRate()
-									|| samples.getFormat() != audioEncoder.getSampleFormat()
-									|| samples.getChannelLayout() != audioEncoder.getChannelLayout()) {
-								final MediaAudioResampler resampler = MediaAudioResampler.make(
-										audioEncoder.getChannelLayout(), audioEncoder.getSampleRate(), audioEncoder.getSampleFormat(),
-										samples.getChannelLayout(), samples.getSampleRate(), samples.getFormat());
-								resampler.open();
-								MediaAudio spl = MediaAudio.make(samples.getNumSamples(), audioEncoder.getSampleRate(), audioEncoder.getChannels(), audioEncoder.getChannelLayout(), audioEncoder.getSampleFormat());
-								resampler.resample(spl, samples);
-								log.info(spl.toString());
-								//log.info("{}", spl.getNumSamples());
-								//Assert.assertEquals(spl.getNumSamples(), samples.getNumSamples());
-								resampled = spl;
-							}else{
-								resampled = samples;
-							}
+				do {
 
-							do {
-								audioEncoder.encode(packetAudio, resampled);	
-								if (packetAudio.isComplete())
-									muxer.write(packetAudio, false);
-							} while (packetAudio.isComplete());
+					bytesRead += audioDecoder.decode(samples, ioPacket, offset);
+
+					if (samples.isComplete()) {
+						resampled = resample(audioEncoder, samples);
+						lastTimeStampTmp = resampled.getTimeStamp();
+
+						if(resampled.getTimeStamp() >= 0L){
+							resampled.setTimeStamp(resampled.getTimeStamp() + lastTimeStamp);
 						}
-						offset += bytesRead;
-					} while (offset < ioPacket.getSize());
-				}
+						audioEncoder.encodeAudio(packetAudio, resampled);	
+						if (packetAudio.isComplete()){
+							muxer.write(packetAudio, false);
+						}
+					}
+
+					offset += bytesRead;
+				} while (offset < ioPacket.getSize());
 			}
 
-			do {
-				audioEncoder.encode(packetAudio, resampled);	
-				if (packetAudio.isComplete())
-					muxer.write(packetAudio, false);
-			} while (packetAudio.isComplete());
+			lastTimeStamp += lastTimeStampTmp;
+
+			demuxer.close();
 		}
-		demuxer.close();*/
-		
+
+		do {
+			audioEncoder.encode(packetAudio, null);	
+
+			if (packetAudio.isComplete()){
+				muxer.write(packetAudio, false);
+			}
+		} while (packetAudio.isComplete());
+
+
 		/** Finally, let's clean up after ourselves. */
 		muxer.close();
+	}
+
+	private static MediaAudio resample(Encoder audioEncoder, MediaAudio samples) {
+		MediaAudio resampled;
+		if(samples.getSampleRate() != audioEncoder.getSampleRate()
+				|| !samples.getFormat().equals(audioEncoder.getSampleFormat())
+				|| !samples.getChannelLayout().equals(audioEncoder.getChannelLayout())) {
+			final MediaAudioResampler resampler = MediaAudioResampler.make(
+					audioEncoder.getChannelLayout(), audioEncoder.getSampleRate(), audioEncoder.getSampleFormat(),
+					samples.getChannelLayout(), samples.getSampleRate(), samples.getFormat());
+			resampler.open();
+			MediaAudio spl = MediaAudio.make(samples.getNumSamples(), audioEncoder.getSampleRate(), audioEncoder.getChannels(), audioEncoder.getChannelLayout(), audioEncoder.getSampleFormat());
+			resampler.resample(spl, samples);
+			//log.info("{}", spl.getNumSamples());
+			//Assert.assertEquals(spl.getNumSamples(), samples.getNumSamples());
+			resampled = spl;
+		}else{
+			resampled = samples;
+		}
+		return resampled;
 	}
 
 	public static void flvMp3Test() throws Exception {
@@ -822,7 +870,7 @@ public class VideoCreator {
 			samples = spl;
 		}
 		log.info(samples.toString());
-		
+
 		samples.setTimeStamp(0L);
 
 		// we only have one set of samples.
@@ -849,7 +897,9 @@ public class VideoCreator {
 	private static MediaAudio beepSamples() {
 		int sampleRate = 44100; // 44.1KHz
 		int sampleNum  = 44100; // 44100 samples(1sec)
-		int channel    = 2;     // 2channel(stereo)
+		int channel    = 1;     // 1channel(mono)
+		//old
+		//int channel    = 2;     // 2channel(stereo)
 		int tone       = 440;   // 440Hz tone.
 		int bit        = 16;    // 16bit
 		ByteBuffer buffer = ByteBuffer.allocate((int)sampleNum * bit * channel / 8);
@@ -865,7 +915,7 @@ public class VideoCreator {
 		buffer.flip();
 
 		log.info("data size for 1sec buffer.:" + buffer.remaining());
-		MediaAudio samples = MediaAudio.make(sampleNum, sampleRate, channel, Layout.CH_LAYOUT_STEREO, Type.SAMPLE_FMT_S16);
+		MediaAudio samples = MediaAudio.make(sampleNum, sampleRate, channel, Layout.CH_LAYOUT_MONO, Type.SAMPLE_FMT_S16);
 		samples.getData(0).put(buffer.array(), 0, 0, buffer.remaining());
 		//log.info("{}", samples.getDataPlaneSize(0)); // why this size is little bit bigger than original buffer?
 		samples.setComplete(true);
@@ -978,11 +1028,13 @@ public class VideoCreator {
 				int offset = 0;
 				int bytesRead = 0;
 				do {
+
 					bytesRead += audioDecoder.decode(samples, packet, offset);
 					if (samples.isComplete()) {
 						rawAudio = converter.toJavaAudio(rawAudio, samples);
 						audioFrame.play(rawAudio);
 					}
+
 					offset += bytesRead;
 				} while (offset < packet.getSize());
 			}
@@ -1057,7 +1109,9 @@ public class VideoCreator {
 
 		for(int i = 0; i < audioFiles.length; i++){
 
-			IAudioSamples samples = IAudioSamples.make(audioCoders[i].getSampleRate(), audioCoders[i].getChannels(),IAudioSamples.Format.FMT_S32);  
+			//old
+			//IAudioSamples samples = IAudioSamples.make(audioCoders[i].getSampleRate(), audioCoders[i].getChannels(),IAudioSamples.Format.FMT_S32);  
+			IAudioSamples samples = IAudioSamples.make(audioCoders[i].getSampleRate(), audioCoders[i].getChannels(),audioCoders[i].getSampleFormat());
 			IPacket packetaudio = IPacket.make();
 
 			int bytesDecodedaudio = -1;
@@ -1081,8 +1135,10 @@ public class VideoCreator {
 				{
 					bytesDecodedaudio = audioCoders[i].decodeAudio(samples,	packetaudio, offset);
 
-					if (bytesDecodedaudio < 0)
+					if (bytesDecodedaudio < 0){
+						//break;
 						throw new RuntimeException("could not detect audio");
+					}
 
 					offset += bytesDecodedaudio;
 					totalReadBites += bytesDecodedaudio;
@@ -1096,9 +1152,9 @@ public class VideoCreator {
 					}
 				}
 
-				if( totalReadBites > audioShiftTime + maxDurInSec*bitRate ){
+				/*if( totalReadBites > audioShiftTime + maxDurInSec*bitRate ){
 					break;
-				}
+				}*/
 			}
 
 			packetaudio = null;
@@ -1134,7 +1190,9 @@ public class VideoCreator {
 				throw new UnsupportedAudioFileException();
 			}*/
 			Mp3File mp3file = new Mp3File(audioFile);
-			duration = mp3file.getLengthInMilliseconds();
+			int bitrate = mp3file.getBitrate();
+			long length = mp3file.getLength();
+			duration = (long)8*length/bitrate;
 		}catch(IOException | UnsupportedTagException | InvalidDataException e){
 			log.error(String.format("File '%s' has format '%s'. Error:", audioFile.getName(), fileFormat), e);
 			throw e;
@@ -1164,6 +1222,25 @@ public class VideoCreator {
 		Random rnd = new Random();
 		int hardInt = duration/intCount;
 		return hardInt + (int)Math.pow(-1, rnd.nextInt(2)) * rnd.nextInt(hardInt+1)/10;
+	}
+
+	public static BufferedImage convertToType2(BufferedImage sourceImage,int targetType)
+	{
+		BufferedImage image;
+		// if the source image is already the target type, return the source image
+		if (sourceImage.getType() == targetType){
+			image = sourceImage;
+		}
+		// otherwise create a new image of the target type and draw the new
+		// image
+		else
+		{
+			image = new BufferedImage(sourceImage.getWidth(),
+					sourceImage.getHeight(), targetType);
+			image.getGraphics().drawImage(sourceImage, 0, 0, null);
+		}
+
+		return image;
 	}
 
 	public static BufferedImage convertToType(BufferedImage sourceImage, int targetType) {
