@@ -238,11 +238,11 @@ public class ComplexVideoGenerator
 					try{
 						// Create private folder for book
 						this.privateFolder.mkdir();
-						//clearFolder(this.privateFolder);
+						clearFolder(this.privateFolder);
 						this.audioGenFolder.mkdir();
-						//clearFolder(this.audioGenFolder);
+						clearFolder(this.audioGenFolder);
 						this.imagesGenFolder.mkdir();
-						//clearFolder(this.imagesGenFolder);
+						clearFolder(this.imagesGenFolder);
 
 						//Parse input book file
 						ArrayList<String> speech = parseBookFile(this.bookFile, this.clickFile, 150);

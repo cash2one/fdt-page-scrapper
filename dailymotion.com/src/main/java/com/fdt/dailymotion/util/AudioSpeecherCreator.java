@@ -246,13 +246,13 @@ public class AudioSpeecherCreator {
 			writer.close();
 			os.close();*/
 
-			//int code = conn.getResponseCode();
+			int code = conn.getResponseCode();
 
 			//TODO Get file index form params
 			saveResponseAsFile(conn, new File(outputFolder, fileName));
 			String fileResult = Utils.loadFileAsString( new File(outputFolder, fileName));
 			
-			if(fileResult.contains("\"rst\":\"ERROR_BUZY\"")){
+			if(code != 200 || fileResult.contains("\"rst\":\"ERROR_BUZY\"")){
 				throw new Exception("{\"rst\":\"ERROR_BUZY\"} for file:" + fileName);
 			}
 			

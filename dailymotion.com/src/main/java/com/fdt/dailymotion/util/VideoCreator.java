@@ -501,124 +501,6 @@ public class VideoCreator {
 			String codecname, int duration, int snapsPerSecond) throws AWTException, InterruptedException, IOException {*/
 	public static void recordScreen(String filename, String formatname, File[] imageFiles, File[] audioFiles, int framePerSec) throws Exception {
 		/**
-		 * Set up the AWT infrastructure to take screenshots of the desktop.
-		 */
-
-		final Rational framerate = Rational.make(1, framePerSec);
-
-		/** First we create a muxer using the passed in filename and formatname if given. */
-		final Muxer muxer = Muxer.make(filename, null, formatname);
-
-		/** Now, we need to decide what type of codec to use to encode video. Muxers
-		 * have limited sets of codecs they can use. We're going to pick the first one that
-		 * works, or if the user supplied a codec name, we're going to force-fit that
-		 * in instead.
-		 */
-		final MuxerFormat format = muxer.getFormat();
-
-		//final Codec codec = Codec.findDecodingCodec(format.getDefaultVideoCodecId());
-		//final Codec codec = Codec.findEncodingCodec(ID.CODEC_ID_MSMPEG4V3);
-		final Codec codec = Codec.findEncodingCodec(format.getDefaultVideoCodecId());
-		//final Codec codec = Codec.findEncodingCodec(ID.CODEC_ID_MSMPEG4V3);
-		/**
-		 * Now that we know what codec, we need to create an encoder
-		 */
-		Encoder encoder = Encoder.make(codec);
-
-		/**
-		 * Video encoders need to know at a minimum:
-		 *   width
-		 *   height
-		 *   pixel format
-		 * Some also need to know frame-rate (older codecs that had a fixed rate at which video files could
-		 * be written needed this). There are many other options you can set on an encoder, but we're
-		 * going to keep it simpler here.
-		 */
-		encoder.setWidth(VIDEO_WIDTH);
-		encoder.setHeight(VIDEO_HEIGHT);
-		// We are going to use 420P as the format because that's what most video formats these days use
-		final PixelFormat.Type pixelformat = PixelFormat.Type.PIX_FMT_YUV420P;
-		encoder.setPixelFormat(pixelformat);
-		/*int numSFR = codec.getNumSupportedVideoFrameRates();
-		Rational testTimeBase1 = codec.getSupportedVideoFrameRate(1);*/
-		encoder.setTimeBase(framerate);
-		//encoder.setChannels(1);
-
-		Encoder audioEncoder = Encoder.make(Codec.findEncodingCodec(Codec.ID.CODEC_ID_AAC));
-
-		Type findType = null;
-
-		for(Type type : audioEncoder.getCodec().getSupportedAudioFormats()) {
-			if(findType == null) {
-				findType = type;
-			}
-			if(type == Type.SAMPLE_FMT_S16P) {
-				findType = type;
-				break;
-			}
-		}
-
-
-		Integer sampleRate = null;
-		for(Integer rate : audioEncoder.getCodec().getSupportedAudioSampleRates()) {
-			if(sampleRate == null) {
-				sampleRate = rate;
-			}
-			if(rate == 22050) {
-				sampleRate = rate;
-				break;
-			}
-		}
-
-		int sampleRateFound = sampleRate;
-
-		log.info(findType.toString());
-
-		audioEncoder.setSampleRate(sampleRateFound);
-		audioEncoder.setChannels(1);
-		audioEncoder.setChannelLayout(Layout.CH_LAYOUT_MONO);
-		audioEncoder.setSampleFormat(findType);
-		audioEncoder.setFlag(Flag.FLAG_GLOBAL_HEADER, true);
-
-		/** An annoynace of some formats is that they need global (rather than per-stream) headers,
-		 * and in that case you have to tell the encoder. And since Encoders are decoupled from
-		 * Muxers, there is no easy way to know this beyond 
-		 */
-		if (format.getFlag(MuxerFormat.Flag.GLOBAL_HEADER))
-			encoder.setFlag(Encoder.Flag.FLAG_GLOBAL_HEADER, true);
-
-		/** Open the encoder. */
-		encoder.open(null, null);
-
-		/** Make converter work correctly **/
-		audioEncoder.setTimeBase(encoder.getTimeBase());
-		/** Open audio encoder. */
-		audioEncoder.open(null, null);
-
-		/** Add this stream to the muxer. */
-		muxer.addNewStream(encoder);
-
-		/** Add this audio stream to the muxer. */
-		muxer.addNewStream(audioEncoder);
-
-		/** And open the muxer for business. */
-		muxer.open(null, null);
-
-
-		/** Next, we need to make sure we have the right MediaPicture format objects
-		 * to encode data with. Java (and most on-screen graphics programs) use some
-		 * variant of Red-Green-Blue image encoding (a.k.a. RGB or BGR). Most video
-		 * codecs use some variant of YCrCb formatting. So we're going to have to
-		 * convert. To do that, we'll introduce a MediaPictureConverter object later. object.
-		 */
-		final MediaPicture picture = MediaPicture.make(
-				encoder.getWidth(),
-				encoder.getHeight(),
-				pixelformat);
-		picture.setTimeBase(Rational.make(1, framePerSec*2));
-		picture.setTimeStamp(0L);
-
-		/**
 		 * Start by creating a container object, in this case a demuxer since
 		 * we are reading, to get audio data from.
 		 */
@@ -664,6 +546,125 @@ public class VideoCreator {
 				audioDecoder.getChannels(),
 				audioDecoder.getChannelLayout(),
 				audioDecoder.getSampleFormat());
+		/**
+		 * Set up the AWT infrastructure to take screenshots of the desktop.
+		 */
+
+		final Rational framerate = Rational.make(1, framePerSec);
+
+		/** First we create a muxer using the passed in filename and formatname if given. */
+		final Muxer muxer = Muxer.make(filename, null, formatname);
+
+		/** Now, we need to decide what type of codec to use to encode video. Muxers
+		 * have limited sets of codecs they can use. We're going to pick the first one that
+		 * works, or if the user supplied a codec name, we're going to force-fit that
+		 * in instead.
+		 */
+		final MuxerFormat format = muxer.getFormat();
+
+		//final Codec codec = Codec.findDecodingCodec(format.getDefaultVideoCodecId());
+		//final Codec codec = Codec.findEncodingCodec(ID.CODEC_ID_MSMPEG4V3);
+		final Codec codec = Codec.findEncodingCodec(format.getDefaultVideoCodecId());
+		log.info(String.format("Codec %s for file %s", codec.toString(), filename));
+		//final Codec codec = Codec.findEncodingCodec(ID.CODEC_ID_MSMPEG4V3);
+		/**
+		 * Now that we know what codec, we need to create an encoder
+		 */
+		Encoder encoder = Encoder.make(codec);
+
+		/**
+		 * Video encoders need to know at a minimum:
+		 *   width
+		 *   height
+		 *   pixel format
+		 * Some also need to know frame-rate (older codecs that had a fixed rate at which video files could
+		 * be written needed this). There are many other options you can set on an encoder, but we're
+		 * going to keep it simpler here.
+		 */
+		encoder.setWidth(VIDEO_WIDTH);
+		encoder.setHeight(VIDEO_HEIGHT);
+		// We are going to use 420P as the format because that's what most video formats these days use
+		final PixelFormat.Type pixelformat = PixelFormat.Type.PIX_FMT_YUV420P;
+		encoder.setPixelFormat(pixelformat);
+		encoder.setTimeBase(framerate);
+
+		Encoder audioEncoder = Encoder.make(Codec.findEncodingCodec(Codec.ID.CODEC_ID_AAC));
+
+		Type findType = null;
+
+		for(Type type : audioEncoder.getCodec().getSupportedAudioFormats()) {
+			if(findType == null) {
+				findType = type;
+			}
+			if(type == Type.SAMPLE_FMT_S16P) {
+				findType = type;
+				break;
+			}
+		}
+
+
+		/*Integer sampleRate = null;
+		for(Integer rate : audioEncoder.getCodec().getSupportedAudioSampleRates()) {
+			if(sampleRate == null) {
+				sampleRate = rate;
+			}
+			if(rate == 16000) {
+				sampleRate = rate;
+				break;
+			}
+		}
+
+		int sampleRateFound = sampleRate;
+
+		log.info(findType.toString());*/
+
+		audioEncoder.setSampleRate(samples.getSampleRate());
+		audioEncoder.setChannels(samples.getChannels());
+		audioEncoder.setChannelLayout(samples.getChannelLayout());
+		audioEncoder.setSampleFormat(findType);
+		audioEncoder.setFlag(Flag.FLAG_GLOBAL_HEADER, true);
+
+		/** An annoynace of some formats is that they need global (rather than per-stream) headers,
+		 * and in that case you have to tell the encoder. And since Encoders are decoupled from
+		 * Muxers, there is no easy way to know this beyond 
+		 */
+		if (format.getFlag(MuxerFormat.Flag.GLOBAL_HEADER))
+			encoder.setFlag(Encoder.Flag.FLAG_GLOBAL_HEADER, true);
+
+		/** Open the encoder. */
+		encoder.open(null, null);
+		log.info(String.format("Time base for encoder %s : %s", encoder.toString(), encoder.getTimeBase().toString()));
+
+		/** Make converter work correctly **/
+		audioEncoder.setTimeBase(encoder.getTimeBase());
+		/** Open audio encoder. */
+		audioEncoder.open(null, null);
+		log.info(String.format("Time base for encoder %s : %s", audioEncoder.toString(), audioEncoder.getTimeBase().toString()));
+
+		/** Add this stream to the muxer. */
+		muxer.addNewStream(encoder);
+
+		/** Add this audio stream to the muxer. */
+		muxer.addNewStream(audioEncoder);
+
+		/** And open the muxer for business. */
+		muxer.open(null, null);
+
+
+		/** Next, we need to make sure we have the right MediaPicture format objects
+		 * to encode data with. Java (and most on-screen graphics programs) use some
+		 * variant of Red-Green-Blue image encoding (a.k.a. RGB or BGR). Most video
+		 * codecs use some variant of YCrCb formatting. So we're going to have to
+		 * convert. To do that, we'll introduce a MediaPictureConverter object later. object.
+		 */
+		final MediaPicture picture = MediaPicture.make(
+				encoder.getWidth(),
+				encoder.getHeight(),
+				pixelformat);
+		picture.setTimeBase(Rational.make(1, framePerSec*2));
+		picture.setTimeStamp(0L);
+
+		
 
 		//audioDecoder.setTimeBase(Rational.make(1, audioDecoder.getSampleRate()));
 
@@ -808,7 +809,7 @@ public class VideoCreator {
 			MediaAudio spl = MediaAudio.make(samples.getNumSamples(), audioEncoder.getSampleRate(), audioEncoder.getChannels(), audioEncoder.getChannelLayout(), audioEncoder.getSampleFormat());
 			resampler.resample(spl, samples);
 			//log.info("{}", spl.getNumSamples());
-			//Assert.assertEquals(spl.getNumSamples(), samples.getNumSamples());
+			Assert.assertEquals(spl.getNumSamples(), samples.getNumSamples());
 			resampled = spl;
 		}else{
 			resampled = samples;
