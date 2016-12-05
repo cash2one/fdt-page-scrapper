@@ -106,7 +106,6 @@ function fillCityInfo($con, $url_region, $url_city, $template)
 	
 	$template = preg_replace("/\[STATE_NAME_LATIN\]/", $url_region , $template);
 	$template = preg_replace("/\[CITY_NAME_LATIN\]/", $url_city , $template);
-	
 	$clouds = trim($citiesListSrt, ",");
 	
 	return $template;
@@ -406,6 +405,28 @@ function getMainPageInfo($con)
 	return $result_array;
 }
 
+function getTags()
+{
+	$tag_list = file('txt/tags.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+	
+	$i = 0;
+	$tags = "";
+	
+	foreach($tag_list as $tag){
+		if($i == 0){
+			$tags = $tags. "<tr>";
+		}elseif($i == 3){
+			$tags = $tags. "</tr><tr>";
+			$i = 0;
+		}
+		
+		$tags = $tags."<td style=\"line-height:20px; font-size:15px;\" align=\"left\" valign=\"top\"><a href=\"\" title=\"".$tag."\" >#". $tag ."</a><br></td>";
+		$i = $i + 1;
+	}
+	
+	return $tags;
+}
+
 //заводим массивы ключей и городов
 $CITY_NEWS_PER_PAGE=10;
 $current_page="MAIN_PAGE";
@@ -525,6 +546,54 @@ elseif($url_region == 'articles' && !$url_city){
 	$current_page = "ARTICLES_LIST_PAGE";
 	$tmpl_file_name="tmpl_articles.html";	
 }
+elseif($url_region == 'privacy'){
+	$current_page = "PRIVACY_PAGE";
+	$tmpl_file_name="tmpl_privacy.html";
+	
+	$page_title = PRIVACY_PAGE_TITLE;
+	$page_meta_description = PRIVACY_META_DESCRIPTION;
+	$page_meta_keywords = PRIVACY_META_KEYWORDS;	
+}
+elseif($url_region == 'terms'){
+	$current_page = "TERMS_PAGE";
+	$tmpl_file_name="tmpl_terms.html";
+	
+	$page_title = TERMS_PAGE_TITLE;
+	$page_meta_description = TERMS_META_DESCRIPTION;
+	$page_meta_keywords = TERMS_META_KEYWORDS;	
+}
+elseif($url_region == 'rates'){
+	$current_page = "RATES_PAGE";
+	$tmpl_file_name="tmpl_rates.html";
+	
+	$page_title = RATES_PAGE_TITLE;
+	$page_meta_description = RATES_META_DESCRIPTION;
+	$page_meta_keywords = RATES_META_KEYWORDS;	
+}
+elseif($url_region == 'econsent'){
+	$current_page = "ECONSENT_PAGE";
+	$tmpl_file_name="tmpl_econsent.html";
+	
+	$page_title = ECONSENT_PAGE_TITLE;
+	$page_meta_description = ECONSENT_META_DESCRIPTION;
+	$page_meta_keywords = ECONSENT_META_KEYWORDS;	
+}
+elseif($url_region == 'disclaimer'){
+	$current_page = "DISCLAIMER_PAGE";
+	$tmpl_file_name="tmpl_disclaimer.html";
+	
+	$page_title = DISCLAIMER_PAGE_TITLE;
+	$page_meta_description = DISCLAIMER_META_DESCRIPTION;
+	$page_meta_keywords = DISCLAIMER_META_KEYWORDS;	
+}
+elseif($url_region == 'marketing'){
+	$current_page = "MARKETING_PAGE";
+	$tmpl_file_name="tmpl_marketing.html";
+	
+	$page_title = MARKETING_PAGE_TITLE;
+	$page_meta_description = MARKETING_META_DESCRIPTION;
+	$page_meta_keywords = MARKETING_META_KEYWORDS;	
+}
 elseif($url_city && $url_region){
 	$current_page = "CITY_PAGE";
 	$tmpl_file_name="tmpl_city.html";
@@ -598,10 +667,13 @@ elseif($current_page == "ARTICLE_PAGE"){
 	}
 }
 
+$tags = getTags();
+
 $template=preg_replace("/\[MAIN_BLOCK\]/",$tmpl_inner, $template);
 
-
 $key_info = array();
+
+$template=preg_replace("/\[TAGS\]/", $tags, $template);
 
 $template=preg_replace("/\[PAGE_H1\]/", $page_h1, $template);
 $template=preg_replace("/\[PAGE_H2\]/", $page_h2, $template);

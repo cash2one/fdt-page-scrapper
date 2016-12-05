@@ -107,4 +107,54 @@
 	define("POLICY_META_DESCRIPTION", "Need extra cash in USA? Looking For Installment Loans? Get Your Cash!");
 	#Policy meta keywords
 	define("POLICY_META_KEYWORDS", "USA Installment loans, bad credit ok, Long/Short term loans, easy personal credit, best direct lenders, instant approval in USA");
+	
+	#Articles page title
+	define("ARTICLES_LIST_PAGE_TITLE", "Articles");
+	#Articles meta description
+	define("ARTICLES_LIST_META_DESCRIPTION", "Articles");
+	#Articles meta keywords
+	define("ARTICLES_LIST_META_KEYWORDS", "Articles");
+		
+	#Privacy Policy page title
+	define("PRIVACY_PAGE_TITLE", "Privacy Policy | Fast Money Online");
+	#Privacy meta description
+	define("PRIVACY_META_DESCRIPTION", "Need extra money in USA? Looking For Installment Loans? Get Your Cash!");
+	#Privacy meta keywords
+	define("PRIVACY_META_KEYWORDS", "USA Installment loans, bad credit ok, Long/Short term loans, easy personal credit, best direct lenders, instant approval in USA");
+	
+	#Terms of Use page title
+	define("TERMS_PAGE_TITLE", "Terms of Use | Fast Money Online");
+	#Terms of Use meta description
+	define("TERMS_META_DESCRIPTION", "Need extra money in USA? Looking For Installment Loans? Get Your Cash!");
+	#Terms of Use meta keywords
+	define("TERMS_META_KEYWORDS", "USA Installment loans, bad credit ok, Long/Short term loans, easy personal credit, best direct lenders, instant approval in USA");
+	
+	#Rates and Fees page title
+	define("RATES_PAGE_TITLE", "Rates and Fees | Fast Money Online");
+	#Rates and Fees Use meta description
+	define("RATES_META_DESCRIPTION", "Need extra money in USA? Looking For Installment Loans? Get Your Cash!");
+	#Rates and Fees Use meta keywords
+	define("RATES_META_KEYWORDS", "USA Installment loans, bad credit ok, Long/Short term loans, easy personal credit, best direct lenders, instant approval in USA");
+	
+	#E-Consent page title
+	define("ECONSENT_PAGE_TITLE", "Consent for Electronic Signatures, Records, Disclosures, Communication | Fast Money Online");
+	#E-Consent Use meta description
+	define("ECONSENT_META_DESCRIPTION", "Need extra money in USA? Looking For Installment Loans? Get Your Cash!");
+	#E-Consent Use meta keywords
+	define("ECONSENT_META_KEYWORDS", "USA Installment loans, bad credit ok, Long/Short term loans, easy personal credit, best direct lenders, instant approval in USA");
+	
+	#Disclaimer page title
+	define("DISCLAIMER_PAGE_TITLE", "Disclaimer and APR Representative | Fast Money Online");
+	#Rates and Fees Use meta description
+	define("DISCLAIMER_META_DESCRIPTION", "Need extra money in USA? Looking For Installment Loans? Get Your Cash!");
+	#Rates and Fees Use meta keywords
+	define("DISCLAIMER_META_KEYWORDS", "USA Installment loans, bad credit ok, Long/Short term loans, easy personal credit, best direct lenders, instant approval in USA");
+	
+	#Marketing Practices page title
+	define("MARKETING_PAGE_TITLE", "Marketing Practices | Fast Money Online");
+	#Marketing Practices Use meta description
+	define("MARKETING_META_DESCRIPTION", "Need extra money in USA? Looking For Installment Loans? Get Your Cash!");
+	#Marketing Practices Use meta keywords
+	define("MARKETING_META_KEYWORDS", "USA Installment loans, bad credit ok, Long/Short term loans, easy personal credit, best direct lenders, instant approval in USA");
+		
 ?>

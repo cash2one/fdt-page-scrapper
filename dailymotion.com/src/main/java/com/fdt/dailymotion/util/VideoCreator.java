@@ -680,8 +680,8 @@ public class VideoCreator {
 
 		/** Now begin our main loop of taking screen snaps.
 		 * We're going to encode and then write out any resulting packets. */
-		MediaPacket packetVideo = MediaPacket.make();
-
+		MediaPacket packetVideo = MediaPacket.make(8192*4);
+		
 		long totalAddedFrames = 0;
 
 		MediaPictureConverter videoConverter = null;

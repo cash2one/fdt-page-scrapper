@@ -107,4 +107,54 @@
 	define("POLICY_META_DESCRIPTION", "Need extra money in USA? Looking For Check Advance? Get Your CASH!");
 	#Policy meta keywords
 	define("POLICY_META_KEYWORDS", "USA Cash advance, payday loans, national cash America, merchant advance, paycheck cash, advance locations USA, instant approval in USA");
+	
+	#Articles page title
+	define("ARTICLES_LIST_PAGE_TITLE", "Articles");
+	#Articles meta description
+	define("ARTICLES_LIST_META_DESCRIPTION", "Articles");
+	#Articles meta keywords
+	define("ARTICLES_LIST_META_KEYWORDS", "Articles");
+	
+	#Privacy Policy page title
+	define("PRIVACY_PAGE_TITLE", "Privacy Policy | Fast Loans Online");
+	#Privacy meta description
+	define("PRIVACY_META_DESCRIPTION", "Need extra money in USA? Looking For Check Advance? Get Your CASH!");
+	#Privacy meta keywords
+	define("PRIVACY_META_KEYWORDS", "USA Cash advance, payday loans, national cash America, merchant advance, paycheck cash, advance locations USA, instant approval in USA");
+	
+	#Terms of Use page title
+	define("TERMS_PAGE_TITLE", "Terms of Use | Fast Loans Online");
+	#Terms of Use meta description
+	define("TERMS_META_DESCRIPTION", "Need extra money in USA? Looking For Check Advance? Get Your CASH!");
+	#Terms of Use meta keywords
+	define("TERMS_META_KEYWORDS", "USA Cash advance, payday loans, national cash America, merchant advance, paycheck cash, advance locations USA, instant approval in USA");
+	
+	#Rates and Fees page title
+	define("RATES_PAGE_TITLE", "Rates and Fees | Fast Loans Online");
+	#Rates and Fees Use meta description
+	define("RATES_META_DESCRIPTION", "Need extra money in USA? Looking For Check Advance? Get Your CASH!");
+	#Rates and Fees Use meta keywords
+	define("RATES_META_KEYWORDS", "USA Cash advance, payday loans, national cash America, merchant advance, paycheck cash, advance locations USA, instant approval in USA");
+	
+	#E-Consent page title
+	define("ECONSENT_PAGE_TITLE", "Consent for Electronic Signatures, Records, Disclosures, Communication | Fast Loans Online");
+	#E-Consent Use meta description
+	define("ECONSENT_META_DESCRIPTION", "Need extra money in USA? Looking For Check Advance? Get Your CASH!");
+	#E-Consent Use meta keywords
+	define("ECONSENT_META_KEYWORDS", "USA Cash advance, payday loans, national cash America, merchant advance, paycheck cash, advance locations USA, instant approval in USA");
+	
+	#Disclaimer page title
+	define("DISCLAIMER_PAGE_TITLE", "Disclaimer and APR Representative | Fast Loans Online");
+	#Rates and Fees Use meta description
+	define("DISCLAIMER_META_DESCRIPTION", "Need extra money in USA? Looking For Check Advance? Get Your CASH!");
+	#Rates and Fees Use meta keywords
+	define("DISCLAIMER_META_KEYWORDS", "USA Cash advance, payday loans, national cash America, merchant advance, paycheck cash, advance locations USA, instant approval in USA");
+	
+	#Marketing Practices page title
+	define("MARKETING_PAGE_TITLE", "Marketing Practices | Fast Loans Online");
+	#Marketing Practices Use meta description
+	define("MARKETING_META_DESCRIPTION", "Need extra money in USA? Looking For Check Advance? Get Your CASH!");
+	#Marketing Practices Use meta keywords
+	define("MARKETING_META_KEYWORDS", "USA Cash advance, payday loans, national cash America, merchant advance, paycheck cash, advance locations USA, instant approval in USA");
+		
 ?>

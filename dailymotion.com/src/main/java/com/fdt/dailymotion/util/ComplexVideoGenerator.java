@@ -68,6 +68,12 @@ public class ComplexVideoGenerator
 	private final static String AUDIO_SPEED_LABEL = "audio_speed";
 
 	private final static String MAX_THREAD_COUNT_LABEL = "max_thread_count";
+	
+	private final static String FRAME_PER_SEC_LABEL = "frame_per_sec";
+	
+	private final static String SUCCESS_FILE_MARKER = "success";
+	private final static String ERROR_FILE_MARKER = "error";
+	
 
 	private String booksFolderPath;
 
@@ -85,6 +91,8 @@ public class ComplexVideoGenerator
 	private byte audioVoice = 1;
 
 	private byte audioSpeed = 1;
+	
+	private int framePersec = 30;
 
 	private Integer maxThreadCount = 1;
 
@@ -93,6 +101,8 @@ public class ComplexVideoGenerator
 	private ArrayList<File> booksFileList = new ArrayList<File>();
 
 	private static Random rnd = new Random();
+	
+	private static boolean useOldVersion = true; 
 
 	@Autowired
 	private ConfigManager cfgMgr;
@@ -101,7 +111,11 @@ public class ComplexVideoGenerator
 	public static void main(String[] args) {
 		DOMConfigurator.configure("log4j_complex_video_generator.xml");
 		try{
-
+			
+			if(args.length > 0){
+				useOldVersion = !Boolean.parseBoolean(args[0]);
+			}
+			
 			System.out.println(System.getProperty("app.home"));
 			System.out.println("Working Directory = " + System.getProperty("user.dir"));
 			ApplicationContext ctx = SpringApplication.run(ComplexVideoGenerator.class, args);
@@ -145,6 +159,8 @@ public class ComplexVideoGenerator
 		this.audioVoice = Byte.valueOf(ConfigManager.getInstance().getProperty(AUDIO_VOICE_LABEL));
 
 		proxyFactory.setDelayProxy(1L);
+		
+		this.framePersec = Integer.valueOf(ConfigManager.getInstance().getProperty(FRAME_PER_SEC_LABEL));
 
 		this.maxThreadCount = Integer.valueOf(ConfigManager.getInstance().getProperty(MAX_THREAD_COUNT_LABEL));
 	}
@@ -274,12 +290,17 @@ public class ComplexVideoGenerator
 
 						// Generate audio[1..n]
 						generateAudio(speech, audioVoice, audioSpeed, audioGenFolder);
-						//VideoCreator.makeVideoByOrder(new File(this.privateFolder, "video_new.mov").getAbsolutePath(), this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
-						VideoCreator.recordScreen(new File(this.privateFolder, "video_new.mov").getAbsolutePath(),null, this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
+						if(useOldVersion){
+							VideoCreator.makeVideoByOrder(new File(this.privateFolder, "video_new.mov").getAbsolutePath(), this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), framePersec);
+						}else{
+							VideoCreator.recordScreen(new File(this.privateFolder, "video_new.mov").getAbsolutePath(),null, this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), framePersec);
+						}
 						//VideoCreator.makeVideoByOrder("video_new_old_gen.mov", this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
 						//transcode(new File("video_new_old_gen.mov"), new File("video_new_old_gen_converted.mov"));
 						
 						//VideoCreator.makeVideoByOrder(new File(this.privateFolder, "video_new.mp4").getAbsolutePath(), this.imagesGenFolder.listFiles(), this.audioGenFolder.listFiles(), 25);
+						
+						Utils.appendStringToFile("", new File(this.privateFolder, SUCCESS_FILE_MARKER));
 
 					}
 					catch(Exception e){
@@ -293,6 +314,7 @@ public class ComplexVideoGenerator
 			}
 			catch(Exception e){
 				isErrorExist = true;
+				Utils.appendStringToFile("", new File(this.privateFolder, ERROR_FILE_MARKER));
 				log.warn("Error occured during generating video for file: " + bookFile.getName(), e);
 			}finally{
 				//TODO if process was not successfull - delete private folder
@@ -301,7 +323,7 @@ public class ComplexVideoGenerator
 		}
 	}
 
-	public void transcode(File inputFile, File presetsFile) {
+	/*public void transcode(File inputFile, File presetsFile) {
 		//This is the converter object we will use.
 		Converter converter = new Converter();
 
@@ -329,7 +351,7 @@ public class ComplexVideoGenerator
 			e.printStackTrace();
 		}
 
-	}
+	}*/
 
 	/**
 	 * 
